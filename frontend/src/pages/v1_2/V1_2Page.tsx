@@ -8,6 +8,7 @@ import MedicalTerm from '../../components/MedicalTerm';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
 import PresetDatasetModal from './PresetDatasetModal';
+import SplitView from '../../components/SplitView';
 
 type StepStatus = 'waiting' | 'active' | 'done';
 type DocUrgency = 'normal' | 'caution' | 'concern' | 'urgent';
@@ -675,6 +676,7 @@ export default function V1_2Page() {
   const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
   const [sidebarRefresh, setSidebarRefresh] = useState(0);
   const [showPresetModal, setShowPresetModal] = useState(false);
+  const [showSplitView, setShowSplitView] = useState(false);
 
   const handleFiles = useCallback((selectedFiles: File[]) => {
     const invalid = selectedFiles.filter(f => {
@@ -974,6 +976,19 @@ export default function V1_2Page() {
               <div className="result-header">
                 <h2 className="result-title">Your Simplified Note</h2>
                 <span className="deleted-note">🔒 Deleted from servers</span>
+                {activeSavedId && (
+                  <button
+                    onClick={() => setShowSplitView(true)}
+                    style={{
+                      background: 'none', border: '1px solid var(--border)',
+                      borderRadius: 'var(--radius-pill)', padding: '6px 14px',
+                      fontSize: '0.8rem', cursor: 'pointer',
+                      color: 'var(--text-secondary)', fontFamily: 'Inter, sans-serif',
+                    }}
+                  >
+                    Show Original
+                  </button>
+                )}
               </div>
 
               <AppointmentNoteV12View result={result} />
@@ -1019,6 +1034,13 @@ export default function V1_2Page() {
           onProcessComplete={(_savedId, _name) => {
             setSidebarRefresh(r => r + 1);
           }}
+        />
+      )}
+      {showSplitView && result && activeSavedId && (
+        <SplitView
+          savedId={activeSavedId}
+          simplifiedContent={<AppointmentNoteV12View result={result} />}
+          onClose={() => setShowSplitView(false)}
         />
       )}
     </div>
