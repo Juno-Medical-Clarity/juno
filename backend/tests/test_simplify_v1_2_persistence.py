@@ -3,7 +3,7 @@ import json
 import sys
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import ANY, patch
 
 from flask import Flask
 
@@ -37,6 +37,16 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
             if block.startswith("data: "):
                 events.append(json.loads(block.removeprefix("data: ")))
         return events
+
+    def _docx_bytes(self, text):
+        from docx import Document
+
+        buffer = io.BytesIO()
+        document = Document()
+        document.add_paragraph(text)
+        document.save(buffer)
+        buffer.seek(0)
+        return buffer
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.simplify_v1_2.save_simplify_output", return_value="saved-123")
@@ -93,6 +103,129 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         self.assertEqual(saved_kwargs["user_id"], "user-1")
         self.assertEqual(saved_kwargs["source_filename"], "a.txt, b.txt")
         self.assertEqual(saved_kwargs["input_pdf_gcs"], "gs://bucket/input.pdf")
+
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("routes.simplify_v1_2.save_simplify_output", return_value="saved-123")
+    @patch("routes.simplify_v1_2.upload_combined_pdf", return_value="gs://bucket/input.pdf")
+    @patch("routes.simplify_v1_2.merge_pdfs", return_value=b"%PDF combined")
+    @patch("routes.simplify_v1_2.score_text", return_value={"score": 1})
+    @patch("routes.simplify_v1_2.build_glossary_from_simplified_text", return_value=[])
+    @patch(
+        "routes.simplify_v1_2.detect_terms",
+        return_value={
+            "substitution_candidates": [],
+            "preserve_and_define_terms": [],
+            "abbreviations": [],
+        },
+    )
+    @patch("routes.simplify_v1_2.V1_2Pipeline", return_value=FakePipeline())
+    def test_uploaded_docx_content_is_included_in_combined_pdf_artifact(
+        self,
+        _pipeline,
+        _detect_terms,
+        _glossary,
+        _score,
+        merge_pdfs,
+        upload_combined_pdf,
+        _save_simplify_output,
+        _verify_token,
+    ):
+        response = self.client.post(
+            "/simplify/v1-2",
+            headers={"Authorization": "Bearer token"},
+            data={"files": [(self._docx_bytes("docx clinical note"), "visit.docx")]},
+            content_type="multipart/form-data",
+        )
+
+        self.assertEqual(response.status_code, 200)
+        self._events_from_response(response)
+        merge_pdfs.assert_called_once_with([(b"docx clinical note", "visit.txt")])
+        upload_combined_pdf.assert_called_once_with(b"%PDF combined", "user-1")
+
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    def test_multi_file_upload_rejects_too_many_files(self, _verify_token):
+        with self.assertLogs("routes.simplify_v1_2", level="ERROR"):
+            response = self.client.post(
+                "/simplify/v1-2",
+                headers={"Authorization": "Bearer token"},
+                data={
+                    "files": [
+                        (io.BytesIO(f"note {index}".encode("utf-8")), f"{index}.txt")
+                        for index in range(11)
+                    ]
+                },
+                content_type="multipart/form-data",
+            )
+            events = self._events_from_response(response)
+
+        self.assertEqual(events[-1]["step"], "error")
+        self.assertIn("at most 10 files", events[-1]["error"])
+
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("routes.simplify_v1_2.MAX_AGGREGATE_FILE_BYTES", 10, create=True)
+    @patch("routes.simplify_v1_2.V1_2Pipeline", return_value=FakePipeline())
+    def test_multi_file_upload_rejects_aggregate_size_over_limit(
+        self, _pipeline, _verify_token
+    ):
+        with self.assertLogs("routes.simplify_v1_2", level="ERROR"):
+            response = self.client.post(
+                "/simplify/v1-2",
+                headers={"Authorization": "Bearer token"},
+                data={
+                    "files": [
+                        (io.BytesIO(b"abcdef"), "a.txt"),
+                        (io.BytesIO(b"ghijkl"), "b.txt"),
+                    ]
+                },
+                content_type="multipart/form-data",
+            )
+            events = self._events_from_response(response)
+
+        self.assertEqual(events[-1]["step"], "error")
+        self.assertIn("combined upload size exceeds", events[-1]["error"])
+
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("routes.simplify_v1_2.save_simplify_output")
+    @patch("routes.simplify_v1_2.upload_combined_pdf")
+    @patch("routes.simplify_v1_2.merge_pdfs", return_value=b"%PDF combined")
+    @patch("routes.simplify_v1_2._fetch_from_gcs", return_value=(b"stored note", "stored.txt"))
+    @patch("routes.simplify_v1_2.score_text", return_value={"score": 1})
+    @patch("routes.simplify_v1_2.build_glossary_from_simplified_text", return_value=[])
+    @patch(
+        "routes.simplify_v1_2.detect_terms",
+        return_value={
+            "substitution_candidates": [],
+            "preserve_and_define_terms": [],
+            "abbreviations": [],
+        },
+    )
+    @patch("routes.simplify_v1_2.V1_2Pipeline", return_value=FakePipeline())
+    def test_doc_id_input_is_processed_but_not_persisted(
+        self,
+        _pipeline,
+        _detect_terms,
+        _glossary,
+        _score,
+        _fetch_from_gcs,
+        merge_pdfs,
+        upload_combined_pdf,
+        save_simplify_output,
+        _verify_token,
+    ):
+        response = self.client.post(
+            "/simplify/v1-2",
+            headers={"Authorization": "Bearer token"},
+            data={"doc_id": "legacy-doc"},
+        )
+
+        events = self._events_from_response(response)
+        result_event = events[-1]
+        self.assertEqual(result_event["step"], "result")
+        self.assertIn("stored note", result_event["data"]["raw"]["text"])
+        self.assertNotIn("saved_id", result_event["data"])
+        merge_pdfs.assert_called_once_with(ANY)
+        upload_combined_pdf.assert_not_called()
+        save_simplify_output.assert_not_called()
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.simplify_v1_2.save_simplify_output", side_effect=RuntimeError("no firestore"))

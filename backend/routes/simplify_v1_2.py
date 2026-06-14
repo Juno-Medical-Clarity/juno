@@ -48,6 +48,8 @@ STEPS = {
 
 ALLOWED_EXTENSIONS = {"pdf", "txt", "docx"}
 MAX_FILE_BYTES = 10 * 1024 * 1024  # 10 MB
+MAX_FILE_COUNT = 10
+MAX_AGGREGATE_FILE_BYTES = 25 * 1024 * 1024  # 25 MB
 _GCS_BUCKET_NAME = os.environ.get("GCP_BUCKET_NAME", "")
 _UPLOAD_PREFIX = "simplify-uploads"
 
@@ -58,6 +60,7 @@ class ResolvedInput:
     source_description: str
     source_filename: str
     combined_pdf_bytes: bytes | None = None
+    source_kind: str = "upload"
 
 
 def _sse(payload: dict) -> str:
@@ -97,14 +100,22 @@ def _source_separator(filename: str) -> str:
     return f"\n\n--- Source: {filename} ---\n"
 
 
+def _text_artifact_filename(filename: str) -> str:
+    stem = filename.rsplit(".", 1)[0] if "." in filename else filename
+    return f"{stem}.txt"
+
+
 def _resolve_uploaded_files(uploads) -> ResolvedInput:
     files = [upload for upload in uploads if upload and upload.filename]
     if not files:
         raise ValueError("Uploaded file is missing a filename")
+    if len(files) > MAX_FILE_COUNT:
+        raise ValueError(f"Upload supports at most {MAX_FILE_COUNT} files")
 
     text_parts: list[str] = []
     merge_candidates: list[tuple[bytes, str]] = []
     filenames: list[str] = []
+    aggregate_bytes = 0
 
     for upload in files:
         filename = upload.filename
@@ -114,6 +125,10 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
         file_bytes = upload.read()
         if len(file_bytes) > MAX_FILE_BYTES:
             raise ValueError("File exceeds 10 MB limit")
+        aggregate_bytes += len(file_bytes)
+        if aggregate_bytes > MAX_AGGREGATE_FILE_BYTES:
+            limit_mb = MAX_AGGREGATE_FILE_BYTES // (1024 * 1024)
+            raise ValueError(f"combined upload size exceeds {limit_mb} MB limit")
 
         filenames.append(filename)
         extracted_text = _extract_text_from_bytes(file_bytes, filename)
@@ -122,6 +137,10 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
         ext = filename.rsplit(".", 1)[1].lower()
         if ext in {"pdf", "txt"}:
             merge_candidates.append((file_bytes, filename))
+        elif ext == "docx" and extracted_text.strip():
+            merge_candidates.append(
+                (extracted_text.encode("utf-8"), _text_artifact_filename(filename))
+            )
 
     combined_pdf_bytes = None
     if merge_candidates:
@@ -174,6 +193,7 @@ def _resolve_input() -> ResolvedInput:
             text=text_input,
             source_description="text_input",
             source_filename="text_input",
+            source_kind="text",
         )
 
     uploads = request.files.getlist("files")
@@ -203,6 +223,7 @@ def _resolve_input() -> ResolvedInput:
             source_description=f"doc:{doc_id}",
             source_filename=filename,
             combined_pdf_bytes=combined_pdf_bytes,
+            source_kind="doc_id",
         )
 
     raise ValueError("Request must include 'files', 'file', 'text', or 'doc_id'")
@@ -307,6 +328,10 @@ def _generate_stream(user_id: str):
             result["before_score"] = before_score
         if after_score is not None:
             result["after_score"] = after_score
+
+        if resolved.source_kind == "doc_id":
+            yield _sse({"step": "result", "data": result})
+            return
 
         try:
             input_pdf_gcs = None
