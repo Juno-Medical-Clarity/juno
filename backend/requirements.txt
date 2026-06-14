@@ -11,6 +11,8 @@ werkzeug==3.0.1
 pydub==0.25.1
 gunicorn
 PyPDF2==3.0.1
+pypdf
+reportlab
 python-docx
 textstat
 # scispaCy (optional — improves medical jargon detection in /simplify)

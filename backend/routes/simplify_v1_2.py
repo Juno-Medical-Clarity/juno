@@ -21,12 +21,15 @@ import io
 import json
 import logging
 import os
+from dataclasses import dataclass
 
 from flask import Blueprint, Response, request, stream_with_context
 from google.cloud import storage as gcs
 
 from simplify.v1_2.pipeline import V1_2Pipeline
+from utils.pdf_merge import merge_pdfs
 from utils.pdf_extract import extract_text_from_pdf
+from utils.save_output import save_simplify_output, upload_combined_pdf
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from utils.auth import verify_firebase_token
@@ -47,6 +50,14 @@ ALLOWED_EXTENSIONS = {"pdf", "txt", "docx"}
 MAX_FILE_BYTES = 10 * 1024 * 1024  # 10 MB
 _GCS_BUCKET_NAME = os.environ.get("GCP_BUCKET_NAME", "")
 _UPLOAD_PREFIX = "simplify-uploads"
+
+
+@dataclass
+class ResolvedInput:
+    text: str
+    source_description: str
+    source_filename: str
+    combined_pdf_bytes: bytes | None = None
 
 
 def _sse(payload: dict) -> str:
@@ -82,6 +93,52 @@ def _extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
     raise ValueError(f"Unsupported file extension: {ext}")
 
 
+def _source_separator(filename: str) -> str:
+    return f"\n\n--- Source: {filename} ---\n"
+
+
+def _resolve_uploaded_files(uploads) -> ResolvedInput:
+    files = [upload for upload in uploads if upload and upload.filename]
+    if not files:
+        raise ValueError("Uploaded file is missing a filename")
+
+    text_parts: list[str] = []
+    merge_candidates: list[tuple[bytes, str]] = []
+    filenames: list[str] = []
+
+    for upload in files:
+        filename = upload.filename
+        if not _allowed(filename):
+            raise ValueError("File must be PDF, TXT, or DOCX")
+
+        file_bytes = upload.read()
+        if len(file_bytes) > MAX_FILE_BYTES:
+            raise ValueError("File exceeds 10 MB limit")
+
+        filenames.append(filename)
+        extracted_text = _extract_text_from_bytes(file_bytes, filename)
+        text_parts.append(f"{_source_separator(filename)}{extracted_text.strip()}")
+
+        ext = filename.rsplit(".", 1)[1].lower()
+        if ext in {"pdf", "txt"}:
+            merge_candidates.append((file_bytes, filename))
+
+    combined_pdf_bytes = None
+    if merge_candidates:
+        try:
+            combined_pdf_bytes = merge_pdfs(merge_candidates)
+        except Exception:
+            logger.exception("simplify_v1_2: failed to merge input files - continuing without combined PDF")
+
+    source_filename = ", ".join(filenames)
+    return ResolvedInput(
+        text="\n".join(text_parts).strip(),
+        source_description=source_filename,
+        source_filename=source_filename,
+        combined_pdf_bytes=combined_pdf_bytes,
+    )
+
+
 def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     """Fetch uploaded file bytes from GCS by doc_id. Returns (bytes, filename)."""
     if not _GCS_BUCKET_NAME:
@@ -103,30 +160,27 @@ def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     return blob.download_as_bytes(), filename
 
 
-def _resolve_input() -> tuple[str, str]:
+def _resolve_input() -> ResolvedInput:
     """
-    Resolve input from the request. Returns (text, source_description).
+    Resolve input from the request.
 
-    Priority: text field > file field > doc_id.
+    Priority: text field > files/file field > doc_id.
     """
     json_data = request.get_json(silent=True) or {}
 
     text_input = (request.form.get("text") or json_data.get("text") or "").strip()
     if text_input:
-        return text_input, "text_input"
+        return ResolvedInput(
+            text=text_input,
+            source_description="text_input",
+            source_filename="text_input",
+        )
 
-    if "file" in request.files:
-        upload = request.files["file"]
-        if not upload.filename:
-            raise ValueError("Uploaded file is missing a filename")
-        if not _allowed(upload.filename):
-            raise ValueError("File must be PDF, TXT, or DOCX")
-
-        file_bytes = upload.read()
-        if len(file_bytes) > MAX_FILE_BYTES:
-            raise ValueError("File exceeds 10 MB limit")
-
-        return _extract_text_from_bytes(file_bytes, upload.filename), upload.filename
+    uploads = request.files.getlist("files")
+    if not uploads and "file" in request.files:
+        uploads = [request.files["file"]]
+    if uploads:
+        return _resolve_uploaded_files(uploads)
 
     doc_id = (request.form.get("doc_id") or json_data.get("doc_id") or "").strip()
     if doc_id:
@@ -135,9 +189,23 @@ def _resolve_input() -> tuple[str, str]:
             raise ValueError("Stored file must be PDF, TXT, or DOCX")
         if len(file_bytes) > MAX_FILE_BYTES:
             raise ValueError("Stored file exceeds 10 MB limit")
-        return _extract_text_from_bytes(file_bytes, filename), f"doc:{doc_id}"
 
-    raise ValueError("Request must include 'file', 'text', or 'doc_id'")
+        combined_pdf_bytes = None
+        ext = filename.rsplit(".", 1)[1].lower()
+        if ext in {"pdf", "txt"}:
+            try:
+                combined_pdf_bytes = merge_pdfs([(file_bytes, filename)])
+            except Exception:
+                logger.exception("simplify_v1_2: failed to merge stored input - continuing without combined PDF")
+
+        return ResolvedInput(
+            text=_extract_text_from_bytes(file_bytes, filename),
+            source_description=f"doc:{doc_id}",
+            source_filename=filename,
+            combined_pdf_bytes=combined_pdf_bytes,
+        )
+
+    raise ValueError("Request must include 'files', 'file', 'text', or 'doc_id'")
 
 
 def _score_or_none(text: str, label: str) -> dict | None:
@@ -148,22 +216,23 @@ def _score_or_none(text: str, label: str) -> dict | None:
         return None
 
 
-def _generate_stream():
+def _generate_stream(user_id: str):
     try:
         yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
         try:
-            text, source = _resolve_input()
+            resolved = _resolve_input()
         except Exception as exc:
             logger.exception("simplify_v1_2: input resolution failed")
             yield _sse({"step": "error", "error": f"Could not read input: {exc}"})
             return
 
+        text = resolved.text
         if not text.strip():
             yield _sse({"step": "error", "error": "Input appears to be empty or unreadable."})
             return
 
         yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
-        logger.info("simplify_v1_2: processing source=%s (%d chars)", source, len(text))
+        logger.info("simplify_v1_2: processing source=%s (%d chars)", resolved.source_description, len(text))
 
         try:
             pipeline = V1_2Pipeline()
@@ -239,6 +308,22 @@ def _generate_stream():
         if after_score is not None:
             result["after_score"] = after_score
 
+        try:
+            input_pdf_gcs = None
+            if resolved.combined_pdf_bytes:
+                input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
+
+            saved_id = save_simplify_output(
+                user_id=user_id,
+                name=resolved.source_description,
+                source_filename=resolved.source_filename,
+                input_pdf_gcs=input_pdf_gcs,
+                output_data=result,
+            )
+            result["saved_id"] = saved_id
+        except Exception:
+            logger.exception("simplify_v1_2: failed to save output - continuing without saved_id")
+
         yield _sse({"step": "result", "data": result})
 
     except Exception as exc:
@@ -250,9 +335,8 @@ def _generate_stream():
 @verify_firebase_token
 def simplify_v1_2(user_id: str):
     """Stream V1.2 simplification pipeline via SSE."""
-    _ = user_id
     return Response(
-        stream_with_context(_generate_stream()),
+        stream_with_context(_generate_stream(user_id)),
         content_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",
