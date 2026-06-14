@@ -7,6 +7,7 @@ import SignOutButton from '../../auth/SignOutButton';
 import MedicalTerm from '../../components/MedicalTerm';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
+import PresetDatasetModal from './PresetDatasetModal';
 
 type StepStatus = 'waiting' | 'active' | 'done';
 type DocUrgency = 'normal' | 'caution' | 'concern' | 'urgent';
@@ -664,7 +665,7 @@ function AppointmentNoteV12View({ result }: { result: AppointmentNote }) {
 export default function V1_2Page() {
   const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
-  const [file, setFile] = useState<File | null>(null);
+  const [files, setFiles] = useState<File[]>([]);
   const [textInput, setTextInput] = useState('');
   const [dragOver, setDragOver] = useState(false);
   const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
@@ -673,28 +674,25 @@ export default function V1_2Page() {
   const abortRef = useRef<AbortController | null>(null);
   const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
   const [sidebarRefresh, setSidebarRefresh] = useState(0);
+  const [showPresetModal, setShowPresetModal] = useState(false);
 
-  const handleFile = useCallback((selectedFile: File) => {
-    const extension = selectedFile.name.split('.').pop()?.toLowerCase();
-    if (!['pdf', 'txt', 'docx'].includes(extension ?? '')) {
-      setError('Please upload a PDF, .txt, or .docx file.');
+  const handleFiles = useCallback((selectedFiles: File[]) => {
+    const invalid = selectedFiles.filter(f => {
+      const ext = f.name.split('.').pop()?.toLowerCase();
+      return !['pdf', 'txt', 'docx'].includes(ext ?? '');
+    });
+    if (invalid.length > 0) {
+      setError(`Unsupported file type: ${invalid.map(f => f.name).join(', ')}. Use PDF, TXT, or DOCX.`);
       return;
     }
-
     setError(null);
-    setFile(selectedFile);
+    setFiles(selectedFiles);
   }, []);
-
-  const onFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedFile = event.target.files?.[0];
-    if (selectedFile) handleFile(selectedFile);
-  };
 
   const onDrop = (event: React.DragEvent<HTMLDivElement>) => {
     event.preventDefault();
     setDragOver(false);
-    const selectedFile = event.dataTransfer.files?.[0];
-    if (selectedFile) handleFile(selectedFile);
+    if (event.dataTransfer.files) handleFiles(Array.from(event.dataTransfer.files));
   };
 
   const updateStep = useCallback((stepId: number, status: StepStatus) => {
@@ -703,7 +701,7 @@ export default function V1_2Page() {
     );
   }, []);
 
-  const canSubmit = inputMode === 'file' ? Boolean(file) : textInput.trim().length > 0;
+  const canSubmit = inputMode === 'file' ? files.length > 0 : textInput.trim().length > 0;
 
   const handleSubmit = async () => {
     if (!canSubmit) return;
@@ -714,8 +712,8 @@ export default function V1_2Page() {
     setAppState('processing');
 
     const formData = new FormData();
-    if (inputMode === 'file' && file) {
-      formData.append('file', file);
+    if (inputMode === 'file') {
+      files.forEach(f => formData.append('files', f));
     } else {
       formData.append('text', textInput);
     }
@@ -809,7 +807,7 @@ export default function V1_2Page() {
 
   const handleReset = () => {
     abortRef.current?.abort();
-    setFile(null);
+    setFiles([]);
     setTextInput('');
     setSteps(INITIAL_STEPS.map(step => ({ ...step, status: 'waiting' })));
     setResult(null);
@@ -892,18 +890,25 @@ export default function V1_2Page() {
                     onDragLeave={() => setDragOver(false)}
                     onDrop={onDrop}
                   >
-                    <input type="file" accept=".pdf,.txt,.docx" onChange={onFileChange} />
+                    <input
+                      type="file"
+                      accept=".pdf,.txt,.docx"
+                      multiple
+                      onChange={e => {
+                        if (e.target.files) handleFiles(Array.from(e.target.files));
+                      }}
+                    />
                     <div className="upload-icon">📄</div>
-                    {file ? (
-                      <p className="upload-file-name">✓ {file.name}</p>
+                    {files.length > 0 ? (
+                      <div>
+                        {files.map(f => (
+                          <p key={f.name} className="upload-file-name">✓ {f.name}</p>
+                        ))}
+                      </div>
                     ) : (
                       <>
-                        <p className="upload-title">
-                          {dragOver ? 'Drop to upload' : 'Drag & drop your document here'}
-                        </p>
-                        <p className="upload-hint">
-                          PDF, TXT, or DOCX · Best for provider notes, appointment summaries, and SOAP notes
-                        </p>
+                        <p className="upload-title">Drag & drop your document(s) here</p>
+                        <p className="upload-hint">PDF, TXT, or DOCX · Multiple files = one combined process</p>
                       </>
                     )}
                   </div>
@@ -926,6 +931,18 @@ export default function V1_2Page() {
                 <button className="cta-btn" disabled={!canSubmit} onClick={handleSubmit}>
                   Simplify My Note →
                 </button>
+                <div style={{ textAlign: 'center', marginTop: '12px' }}>
+                  <button
+                    onClick={() => setShowPresetModal(true)}
+                    style={{
+                      background: 'none', border: 'none', color: 'var(--text-secondary)',
+                      fontSize: '0.8rem', cursor: 'pointer', fontFamily: 'Inter, sans-serif',
+                      textDecoration: 'underline',
+                    }}
+                  >
+                    Or run a preset dataset (multiple processes)
+                  </button>
+                </div>
               </div>
             </section>
           )}
@@ -996,6 +1013,14 @@ export default function V1_2Page() {
         </div>
       )}
       </div>
+      {showPresetModal && (
+        <PresetDatasetModal
+          onClose={() => setShowPresetModal(false)}
+          onProcessComplete={(_savedId, _name) => {
+            setSidebarRefresh(r => r + 1);
+          }}
+        />
+      )}
     </div>
   );
 }
