@@ -29,6 +29,7 @@ from simplify.v1_1.pipeline import V1_1Pipeline
 from utils.pdf_extract import extract_text_from_pdf
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
+from utils.auth import verify_firebase_token
 
 logger = logging.getLogger(__name__)
 
@@ -241,8 +242,10 @@ def _generate_stream():
 
 
 @simplify_v1_1_bp.route("/simplify/v1-1", methods=["POST"])
-def simplify_v1_1():
+@verify_firebase_token
+def simplify_v1_1(user_id: str):
     """Stream V1.1 simplification pipeline via SSE."""
+    _ = user_id
     return Response(
         stream_with_context(_generate_stream()),
         content_type="text/event-stream",

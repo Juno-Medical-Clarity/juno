@@ -24,6 +24,7 @@ from flask import Blueprint, request, Response, stream_with_context
 from routes.simplify_v1_1 import simplify_v1_1
 from routes.simplify_v1_2 import simplify_v1_2
 from simplify.v1.pipeline import V1Pipeline
+from utils.auth import verify_firebase_token
 from utils.pdf_extract import extract_text_from_pdf
 from utils.scoring import score_text
 
@@ -81,15 +82,19 @@ def _extract_text(file_bytes: bytes, filename: str) -> str:
 # ── Endpoints ─────────────────────────────────────────────────────────────────
 
 @simplify_bp.route("/simplify/v1", methods=["POST"])
-def simplify_document_v1():
+@verify_firebase_token
+def simplify_document_v1(user_id: str):
     """Stream V1 simplification pipeline progress + result via SSE."""
+    _ = user_id
 
     return _simplify_document_v1()
 
 
 @simplify_bp.route("/simplify", methods=["POST"])
-def simplify_document():
+@verify_firebase_token
+def simplify_document(user_id: str):
     """Stream simplification pipeline progress + result via SSE."""
+    _ = user_id
 
     if SIMPLIFY_DEFAULT_VERSION == "v1-2":
         return simplify_v1_2()
