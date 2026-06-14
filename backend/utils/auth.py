@@ -13,7 +13,10 @@ def verify_firebase_token(f):
         
         try:
             # Extract token from "Bearer <token>"
-            token = auth_header.split('Bearer ')[-1]
+            parts = auth_header.split(' ', 1)
+            if len(parts) != 2 or parts[0] != 'Bearer':
+                return jsonify({'error': 'Malformed Authorization header'}), 401
+            token = parts[1]
             
             # Verify the token
             decoded_token = auth.verify_id_token(token)
