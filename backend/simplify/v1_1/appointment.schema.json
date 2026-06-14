@@ -1,0 +1,37 @@
+{
+  "doc_type": "appointment_note",
+  "urgency": "normal|caution|concern|urgent",
+  "summary": "2-3 plain-language sentences",
+  "what_happened": {
+    "summary": "string",
+    "date": "string or null",
+    "reason": "string"
+  },
+  "what_it_means": {
+    "headline": "string",
+    "findings": [
+      {
+        "item": "string",
+        "urgency": "immediate|soon|routine|informational"
+      }
+    ]
+  },
+  "what_to_do": [
+    {
+      "text": "string - starts with an action verb",
+      "urgency": "immediate|soon|routine",
+      "category": "medication|appointment|lifestyle|monitoring|test|referral|home_instruction|warning_sign",
+      "why": "string or empty string"
+    }
+  ],
+  "low_priority": ["string"],
+  "follow_ups": ["string"],
+  "terms": {
+    "term_name": {
+      "definition": "string",
+      "source": "string"
+    }
+  },
+  "before_score": {},
+  "after_score": {}
+}

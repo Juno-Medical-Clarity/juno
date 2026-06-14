@@ -1,0 +1,95 @@
+{
+  "doc_type": "appointment_note",
+  "urgency": "normal|caution|concern|urgent",
+  "version": "1.2",
+  "summary": "3-sentence plain-language summary: sentence 1 = why the patient came in; sentence 2 = main clinical conclusion; sentence 3 = single most important next step",
+  "reason_for_visit": [
+    {
+      "reason": "plain-language reason for visit",
+      "description": "additional details in the patient's own words"
+    }
+  ],
+  "diagnosis": {
+    "main_conclusion": "doctor's overall clinical judgment in one plain-language sentence",
+    "changed_since_last_visit": "comparison to last visit if context available, else empty string",
+    "details": [
+      {
+        "title": "medical term exactly as used",
+        "plain_name": "plain-language name a 6th-grader would understand",
+        "description": "what this means explained in plain language",
+        "what_it_means_for_you": "1-2 sentences on real-world daily-life impact for this patient",
+        "severity": "high|medium|low"
+      }
+    ]
+  },
+  "medications": [
+    {
+      "title": "medication name and dose",
+      "plain_name": "common name e.g. blood pressure medication",
+      "why": "one sentence why this patient takes this medication, tied to their diagnosis",
+      "dosage": "string",
+      "frequency": "written out fully e.g. twice a day not BID",
+      "timing": "string",
+      "duration": "string",
+      "instructions": "string",
+      "side_effects_to_watch": "1-2 most common or serious side effects in plain language",
+      "importance": "high|low",
+      "source": "documents|recording|notes",
+      "change": false,
+      "change_description": "what changed if change is true, else empty string"
+    }
+  ],
+  "tests": [
+    {
+      "title": "test name",
+      "plain_name": "common name",
+      "why": "one sentence why this patient needs this test",
+      "description": "string",
+      "preparation": "preparation required or empty string",
+      "importance": "high|low",
+      "source": "documents|recording|notes"
+    }
+  ],
+  "procedures": [
+    {
+      "title": "procedure name",
+      "plain_name": "common name",
+      "why": "one sentence why this patient needs this",
+      "what_to_expect": "brief patient-facing description",
+      "timeframe": "string",
+      "importance": "high|low",
+      "source": "documents|recording|notes"
+    }
+  ],
+  "other": [
+    {
+      "title": "instruction title",
+      "why": "what happens if patient follows or does not follow this",
+      "steps": ["step 1", "step 2"],
+      "description": "for single-step instructions only",
+      "frequency": "string",
+      "duration": "string",
+      "importance": "high|low",
+      "source": "documents|recording|notes"
+    }
+  ],
+  "follow_up": [
+    {
+      "time_frame": "string",
+      "description": "string"
+    }
+  ],
+  "warning_signs": [
+    {
+      "symptom": "plain-language symptom name",
+      "what_it_might_mean": "brief context",
+      "what_to_do": "specific instruction: call your doctor, go to the ER, or this is a normal side effect",
+      "urgency": "emergency|call_doctor|monitor|normal_side_effect",
+      "related_to": "medication or condition name",
+      "importance": "high|low",
+      "source": "documents|recording|notes"
+    }
+  ],
+  "questions": ["question 1", "question 2", "question 3"],
+  "low_priority": ["string - items noted as normal, unremarkable, or informational"]
+}

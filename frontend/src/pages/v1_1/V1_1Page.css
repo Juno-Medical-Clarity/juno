@@ -1,0 +1,126 @@
+/* V1.1 specific styles - extends App.css globals */
+
+.input-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-tab {
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  transition: all 0.15s;
+}
+
+.input-tab.active {
+  background: var(--accent-violet);
+  color: #fff;
+  border-color: var(--accent-violet);
+}
+
+.text-input-area {
+  width: 100%;
+  min-height: 200px;
+  padding: 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  color: var(--text-primary);
+  font-family: Inter, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+}
+
+.text-input-area:focus {
+  outline: none;
+  border-color: var(--accent-violet);
+}
+
+.medical-term {
+  text-decoration: underline dotted var(--accent-violet);
+  text-underline-offset: 2px;
+  cursor: help;
+  color: inherit;
+}
+
+.medical-term:focus {
+  outline: 2px solid var(--accent-violet);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.medical-term-popover {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 10px 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.medical-term-popover-definition {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.medical-term-popover-image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  margin-bottom: 4px;
+  object-fit: contain;
+}
+
+.glossary-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.download-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.download-btn-json,
+.download-btn-pdf {
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  transition: opacity 0.15s;
+}
+
+.download-btn-json {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.download-btn-pdf {
+  background: var(--accent-violet);
+  color: #fff;
+}
+
+.download-btn-json:hover,
+.download-btn-pdf:hover {
+  opacity: 0.85;
+}

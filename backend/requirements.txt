@@ -1,0 +1,29 @@
+flask==3.0.0
+flask-cors==4.0.0
+firebase-admin==6.6.0
+google-cloud-firestore
+google-cloud-storage
+google-cloud-speech
+google-cloud-aiplatform
+google-cloud-vision
+python-dotenv==1.0.0
+werkzeug==3.0.1
+pydub==0.25.1
+gunicorn
+PyPDF2==3.0.1
+python-docx
+textstat
+# scispaCy (optional — improves medical jargon detection in /simplify)
+# Install model separately:
+#   pip install scispacy
+#   pip install https://s3-us-west-2.amazonaws.com/ai2-s3-scispacy/releases/v0.5.3/en_ner_bc5cdr_md-0.5.3.tar.gz
+
+# OpenTelemetry — tracing & session correlation
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-gcp-trace
+opentelemetry-instrumentation-flask
+opentelemetry-instrumentation-requests
+
+# Structured logging for Google Cloud
+google-cloud-logging
