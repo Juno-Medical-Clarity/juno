@@ -5,6 +5,8 @@ import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import SignOutButton from '../../auth/SignOutButton';
 import MedicalTerm from '../../components/MedicalTerm';
+import Sidebar from '../../components/Sidebar';
+import { getSavedOutput } from '../../api/savedOutputs';
 
 type StepStatus = 'waiting' | 'active' | 'done';
 type DocUrgency = 'normal' | 'caution' | 'concern' | 'urgent';
@@ -669,6 +671,8 @@ export default function V1_2Page() {
   const [result, setResult] = useState<AppointmentNote | null>(null);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+  const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
+  const [sidebarRefresh, setSidebarRefresh] = useState(0);
 
   const handleFile = useCallback((selectedFile: File) => {
     const extension = selectedFile.name.split('.').pop()?.toLowerCase();
@@ -751,7 +755,7 @@ export default function V1_2Page() {
             const event = JSON.parse(payload) as {
               step: number | 'result';
               status?: 'active' | 'done';
-              data?: AppointmentNote;
+              data?: AppointmentNote & { saved_id?: string };
               error?: string;
             };
 
@@ -760,6 +764,10 @@ export default function V1_2Page() {
             if (event.step === 'result' && event.data) {
               setResult(event.data);
               setAppState('result');
+              if (event.data.saved_id) {
+                setActiveSavedId(event.data.saved_id);
+                setSidebarRefresh(r => r + 1);
+              }
             } else if (typeof event.step === 'number' && event.status) {
               updateStep(event.step, event.status);
             }
@@ -807,10 +815,29 @@ export default function V1_2Page() {
     setResult(null);
     setError(null);
     setAppState('upload');
+    setActiveSavedId(null);
   };
 
+  async function handleSelectSaved(id: string) {
+    try {
+      const saved = await getSavedOutput(id);
+      setResult(saved.output_data as unknown as AppointmentNote);
+      setActiveSavedId(id);
+      setAppState('result');
+    } catch {
+      setError('Could not load saved output.');
+    }
+  }
+
   return (
-    <>
+    <div style={{ display: 'flex', minHeight: '100vh' }}>
+      <Sidebar
+        activeId={activeSavedId}
+        onSelect={handleSelectSaved}
+        onNew={handleReset}
+        refreshTrigger={sidebarRefresh}
+      />
+      <div style={{ flex: 1, marginLeft: '260px', minWidth: 0 }}>
       <div className="aurora-bg" aria-hidden="true">
         <div className="aurora-orb aurora-orb-1" />
         <div className="aurora-orb aurora-orb-2" />
@@ -968,6 +995,7 @@ export default function V1_2Page() {
           </div>
         </div>
       )}
-    </>
+      </div>
+    </div>
   );
 }
