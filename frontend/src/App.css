@@ -124,6 +124,15 @@ body {
   text-align: center;
 }
 
+.hero-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -138,6 +147,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 24px;
+}
+
+.hero-meta-row .hero-badge {
+  margin-bottom: 0;
 }
 
 .hero h1 {
@@ -176,6 +189,82 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   box-shadow: 0 4px 24px rgba(124, 58, 237, 0.08), 0 1px 4px rgba(0,0,0,0.04);
+}
+
+/* ============================================================
+   Auth
+   ============================================================ */
+.auth-page {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+.auth-card {
+  width: min(420px, 100%);
+  display: grid;
+  gap: 20px;
+  padding: 32px;
+}
+
+.auth-card h1 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.auth-copy {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.auth-field {
+  display: grid;
+  gap: 8px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.auth-field input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font: inherit;
+  font-weight: 500;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-field input:focus {
+  border-color: var(--border-hover);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+.sign-out-button {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 8px 12px;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.sign-out-button:hover {
+  border-color: var(--border-hover);
+  background: #ffffff;
+  color: var(--accent-violet);
 }
 
 /* ============================================================
@@ -1091,6 +1180,18 @@ body {
   margin: 0 auto;
 }
 
+.versions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.versions-header .eyebrow {
+  margin-bottom: 0;
+}
+
 .eyebrow {
   color: var(--accent-violet);
   font-size: 0.78rem;
@@ -1202,5 +1303,10 @@ body {
 @media (max-width: 640px) {
   .app-shell {
     padding: 40px 16px;
+  }
+
+  .versions-header {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }

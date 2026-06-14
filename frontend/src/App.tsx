@@ -5,8 +5,27 @@ import VersionsPage from './pages/VersionsPage';
 import V1Page from './pages/v1/V1Page';
 import V1_1Page from './pages/v1_1/V1_1Page';
 import V1_2Page from './pages/v1_2/V1_2Page';
+import { useAuth } from './auth/AuthContext';
+import LoginPage from './pages/LoginPage';
 
 export default function App() {
+  const { user, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <main className="auth-page">
+        <div className="auth-card glass-card">
+          <p className="eyebrow">Juno</p>
+          <h1>Loading...</h1>
+        </div>
+      </main>
+    );
+  }
+
+  if (!user) {
+    return <LoginPage />;
+  }
+
   return (
     <Routes>
       <Route path="/" element={<Navigate to={versionPath(DEFAULT_VERSION)} replace />} />

@@ -2,6 +2,8 @@ import '../v1_1/V1_1Page.css';
 import { useCallback, useRef, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
+import { authenticatedFetch } from '../../api/apiClient';
+import SignOutButton from '../../auth/SignOutButton';
 import MedicalTerm from '../../components/MedicalTerm';
 
 type StepStatus = 'waiting' | 'active' | 'done';
@@ -717,7 +719,7 @@ export default function V1_2Page() {
     abortRef.current = new AbortController();
 
     try {
-      const response = await fetch(`${API_URL}/simplify/v1-2`, {
+      const response = await authenticatedFetch(`${API_URL}/simplify/v1-2`, {
         method: 'POST',
         body: formData,
         signal: abortRef.current.signal,
@@ -818,13 +820,14 @@ export default function V1_2Page() {
       <div className="page-wrapper">
         <div className="container">
           <section className="hero">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'center', marginBottom: '8px' }}>
+            <div className="hero-meta-row">
               <div className="hero-badge">✦ AI-Powered Health Literacy</div>
               <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
                 <Link to="/versions" style={{ color: 'var(--accent-violet)', textDecoration: 'none' }}>v1.2</Link>
                 {' · '}
                 <Link to="/versions" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>all versions</Link>
               </span>
+              <SignOutButton />
             </div>
             <h1>Understand Your Appointment Note</h1>
             <p className="hero-sub">Built with experienced neuro professionals</p>

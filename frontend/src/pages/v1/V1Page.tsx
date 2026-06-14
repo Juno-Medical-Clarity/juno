@@ -1,5 +1,7 @@
 import { useState, useRef, useCallback, type ReactNode } from 'react';
 import { API_URL } from '../../api/firebase';
+import { authenticatedFetch } from '../../api/apiClient';
+import SignOutButton from '../../auth/SignOutButton';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -713,7 +715,7 @@ export default function V1Page() {
     abortRef.current = new AbortController();
 
     try {
-      const response = await fetch(`${API_URL}/simplify`, {
+      const response = await authenticatedFetch(`${API_URL}/simplify`, {
         method: 'POST',
         body: formData,
         signal: abortRef.current.signal,
@@ -807,7 +809,10 @@ export default function V1Page() {
 
           {/* ── Hero ── */}
           <section className="hero">
-            <div className="hero-badge">✦ AI-Powered Health Literacy</div>
+            <div className="hero-meta-row">
+              <div className="hero-badge">✦ AI-Powered Health Literacy</div>
+              <SignOutButton />
+            </div>
             <h1>Understand Your Medical Documents</h1>
             <p className="hero-sub">Built with experienced neuro professionals</p>
             <p className="hero-desc">
