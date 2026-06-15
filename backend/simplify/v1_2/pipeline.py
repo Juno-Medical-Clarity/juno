@@ -62,12 +62,22 @@ class V1_2Pipeline(SimplifyPipeline):
 
     def __init__(self):
         # Environment-driven model config keeps deployment/runtime configurable.
-        project_id = os.environ.get("GCP_PROJECT_ID", "")
-        location = os.environ.get("GCP_LOCATION", "us-central1")
         model_name = os.environ.get("VERTEX_AI_MODEL", "gemini-1.5-pro")
 
-        vertexai.init(project=project_id, location=location)
-        self._model = GenerativeModel(model_name)
+        # Choose backend based on available credentials.
+        if os.environ.get("GEMINI_API_KEY"):
+            from utils.gemini_client import GeminiAPIClient
+            self._gemini_client = GeminiAPIClient(model_name)
+            self._use_gemini_api = True
+            logger.info("pipeline: using Gemini API (google-generativeai)")
+        else:
+            self._use_gemini_api = False
+            project_id = os.environ.get("GCP_PROJECT_ID", "")
+            location = os.environ.get("GCP_LOCATION", "us-central1")
+            vertexai.init(project=project_id, location=location)
+            self._model = GenerativeModel(model_name)
+            logger.info("pipeline: using Vertex AI")
+
         # Safety blocking is disabled for deterministic backend handling; downstream
         # validation and prompt constraints enforce output shape/content.
         self._safety = {
@@ -84,6 +94,12 @@ class V1_2Pipeline(SimplifyPipeline):
         max_tokens: int = 8192,
     ) -> str:
         # Shared low-level model call used by all text-producing stages.
+        if self._use_gemini_api:
+            return self._gemini_client.generate_content(
+                prompt, temperature=temperature, max_tokens=max_tokens
+            )
+
+        # Vertex AI path.
         response = self._model.generate_content(
             prompt,
             generation_config=GenerationConfig(
