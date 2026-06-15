@@ -362,23 +362,21 @@ export default function V1_2Page() {
                   ← Simplify another note
                 </button>
               </div>
+
+              <div className="download-bar">
+                <div className="download-actions">
+                  <button className="download-btn-json" onClick={handleDownloadJson}>
+                    ↓ Download JSON
+                  </button>
+                  <button className="download-btn-pdf" onClick={handleDownloadPdf}>
+                    ↓ Download Report
+                  </button>
+                </div>
+              </div>
             </section>
           )}
         </div>
       </div>
-
-      {appState === 'result' && result && (
-        <div className="download-bar">
-          <div className="download-actions">
-            <button className="download-btn-json" onClick={handleDownloadJson}>
-              ↓ Download JSON
-            </button>
-            <button className="download-btn-pdf" onClick={handleDownloadPdf}>
-              ↓ Download Report
-            </button>
-          </div>
-        </div>
-      )}
       </div>
       {showPresetModal && (
         <PresetDatasetModal
