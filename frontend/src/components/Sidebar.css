@@ -2,14 +2,14 @@
   width: 260px;
   min-width: 220px;
   max-width: 300px;
-  height: 100vh;
+  height: calc(100vh - 48px);
   background: var(--surface);
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   position: fixed;
   left: 0;
-  top: 0;
+  top: 48px;
   z-index: 50;
   overflow: hidden;
 }
