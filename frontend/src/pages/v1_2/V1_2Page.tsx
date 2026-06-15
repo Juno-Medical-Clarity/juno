@@ -1,6 +1,7 @@
 import '../v1_1/V1_1Page.css';
 import { useCallback, useRef, useState } from 'react';
-import { API_URL } from '../../api/firebase';
+import { signOut } from 'firebase/auth';
+import { API_URL, firebaseAuth } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
@@ -200,6 +201,18 @@ export default function V1_2Page() {
         refreshTrigger={sidebarRefresh}
       />
       <div style={{ flex: 1, marginLeft: '260px', minWidth: 0 }}>
+      <button
+        onClick={() => signOut(firebaseAuth)}
+        style={{
+          position: 'fixed', top: '16px', right: '16px', zIndex: 100,
+          background: 'none', border: '1px solid var(--border)',
+          borderRadius: 'var(--radius-pill)', padding: '6px 14px',
+          fontSize: '0.8rem', color: 'var(--text-secondary)', cursor: 'pointer',
+          fontFamily: 'Inter, sans-serif',
+        }}
+      >
+        Sign out
+      </button>
       <div className="aurora-bg" aria-hidden="true">
         <div className="aurora-orb aurora-orb-1" />
         <div className="aurora-orb aurora-orb-2" />
