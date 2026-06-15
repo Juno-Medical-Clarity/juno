@@ -1,15 +1,10 @@
 import { Link } from 'react-router-dom';
 import { VERSIONS } from '../config';
-import SignOutButton from '../auth/SignOutButton';
 
 export default function VersionsPage() {
   return (
     <main className="app-shell">
       <section className="hero-section">
-        <div className="versions-header">
-          <p className="eyebrow">Juno Medical Document Simplifier</p>
-          <SignOutButton />
-        </div>
         <h1>Choose a version</h1>
         <div className="versions-table-wrap glass-card">
           <table className="versions-table">

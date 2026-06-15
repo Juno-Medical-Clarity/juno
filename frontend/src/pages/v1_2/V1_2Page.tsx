@@ -1,7 +1,6 @@
 import '../v1_1/V1_1Page.css';
 import { useCallback, useRef, useState } from 'react';
-import { signOut } from 'firebase/auth';
-import { API_URL, firebaseAuth } from '../../api/firebase';
+import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
@@ -10,6 +9,7 @@ import SplitView from '../../components/SplitView';
 import type { AppState, AppointmentNote, InputMode, PipelineStep, StepStatus } from '../../types/simplify';
 import AppointmentNoteV12View from '../../components/AppointmentNoteV12View';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
+import NavBar from '../../components/NavBar';
 
 const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
@@ -193,26 +193,16 @@ export default function V1_2Page() {
   }
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <NavBar onNew={handleReset} />
+      <div style={{ display: 'flex', flex: 1 }}>
       <Sidebar
         activeId={activeSavedId}
         onSelect={handleSelectSaved}
         onNew={handleReset}
         refreshTrigger={sidebarRefresh}
       />
-      <div style={{ flex: 1, marginLeft: '260px', minWidth: 0 }}>
-      <button
-        onClick={() => signOut(firebaseAuth)}
-        style={{
-          position: 'fixed', top: '16px', right: '16px', zIndex: 100,
-          background: 'none', border: '1px solid var(--border)',
-          borderRadius: 'var(--radius-pill)', padding: '6px 14px',
-          fontSize: '0.8rem', color: 'var(--text-secondary)', cursor: 'pointer',
-          fontFamily: 'Inter, sans-serif',
-        }}
-      >
-        Sign out
-      </button>
+      <div style={{ flex: 1, marginLeft: '260px', minWidth: 0, paddingTop: '48px' }}>
       <div className="aurora-bg" aria-hidden="true">
         <div className="aurora-orb aurora-orb-1" />
         <div className="aurora-orb aurora-orb-2" />
@@ -376,6 +366,7 @@ export default function V1_2Page() {
             </section>
           )}
         </div>
+      </div>
       </div>
       </div>
       {showPresetModal && (

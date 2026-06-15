@@ -3,7 +3,6 @@ import { useCallback, useRef, useState, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
-import SignOutButton from '../../auth/SignOutButton';
 import MedicalTerm from '../../components/MedicalTerm';
 
 type StepStatus = 'waiting' | 'active' | 'done';
@@ -618,7 +617,6 @@ export default function V1_1Page() {
                 {' · '}
                 <Link to="/versions" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>all versions</Link>
               </span>
-              <SignOutButton />
             </div>
             <h1>Understand Your Appointment Note</h1>
             <p className="hero-sub">Built with experienced neuro professionals</p>

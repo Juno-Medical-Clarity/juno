@@ -268,6 +268,79 @@ body {
 }
 
 /* ============================================================
+   Top Navigation Bar
+   ============================================================ */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.top-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-nav-logo {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--accent-violet);
+}
+
+.top-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-nav-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.top-nav-link:hover {
+  color: var(--accent-violet);
+  border-color: var(--border);
+  background: var(--surface-hover);
+}
+
+.top-nav-new-btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  color: #ffffff;
+  background: var(--accent-violet);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 5px 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.top-nav-new-btn:hover {
+  background: var(--accent-violet-dark);
+}
+
+/* ============================================================
    Upload Section
    ============================================================ */
 .upload-section {
@@ -1165,7 +1238,7 @@ body {
    ============================================================ */
 .app-shell {
   min-height: 100vh;
-  padding: 64px 24px;
+  padding: calc(48px + 40px) 24px 64px;
 }
 
 .hero-section {
