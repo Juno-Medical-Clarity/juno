@@ -1,4 +1,5 @@
 import logging
+import time
 import uuid
 import os
 
@@ -10,6 +11,8 @@ from routes import all_blueprints
 from config import initialize_firebase
 from logging_config import setup_logging
 from telemetry import init_telemetry
+from utils.juno_logger import JunoLogger, monotonic_ms
+from utils.juno_metrics import JunoMetrics
 
 # ---------------------------------------------------------------------------
 # Bootstrap logging FIRST so all subsequent log calls use structured output
@@ -69,11 +72,22 @@ def extract_session_id():
 
     g.session_id = session_id
 
+    # Record start time for request duration logging in after_request
+    g.request_start_ms = monotonic_ms()
+
     # Attach to the current OTel span as a searchable attribute
     current_span = trace.get_current_span()
     if current_span and current_span.is_recording():
         current_span.set_attribute("session.id", session_id)
         current_span.set_attribute("http.route", request.path)
+
+    # Log the start of every request (health checks excluded to avoid noise)
+    if request.path != "/health":
+        juno_logger = JunoLogger()
+        juno_logger.log_request_start(
+            method=request.method,
+            path=request.path,
+        )
 
 
 @app.after_request
@@ -82,6 +96,25 @@ def attach_session_id_header(response):
     session_id = getattr(g, "session_id", None)
     if session_id:
         response.headers["X-Session-Id"] = session_id
+
+    # Log request completion with total duration (skip health checks)
+    if request.path != "/health":
+        start_ms = getattr(g, "request_start_ms", None)
+        duration_ms = (monotonic_ms() - start_ms) if start_ms is not None else 0.0
+        juno_logger = JunoLogger()
+        juno_logger.log_request_end(
+            status_code=response.status_code,
+            duration_ms=duration_ms,
+        )
+        # Record request-level metrics (skip SSE routes — they emit their own metrics)
+        if response.content_type != "text/event-stream":
+            metrics = JunoMetrics()
+            metrics.record_latency("http_request", duration_ms, labels={
+                "method": request.method,
+                "path": request.path,
+                "status": str(response.status_code),
+            })
+
     return response
 
 

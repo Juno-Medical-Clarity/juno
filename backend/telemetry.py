@@ -44,10 +44,12 @@ def init_telemetry(flask_app):
     gcp_project_id = os.getenv("GCP_PROJECT_ID", "")
     is_production = os.getenv("K_SERVICE") is not None  # K_SERVICE is set on Cloud Run
 
-    # Resource identifies this service in Cloud Trace
+    # Resource identifies this service in Cloud Trace.
+    # SERVICE_VERSION should be set to the git SHA or semver on each deploy so
+    # version-segmented latency comparisons in Cloud Trace work correctly.
     resource = Resource.create({
         "service.name": os.getenv("K_SERVICE", "backend-processing"),
-        "service.version": "1.1.0",
+        "service.version": os.getenv("SERVICE_VERSION", "unknown"),
     })
 
     provider = TracerProvider(resource=resource)

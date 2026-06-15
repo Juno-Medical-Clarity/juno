@@ -30,6 +30,8 @@ from utils.pdf_extract import extract_text_from_pdf
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from utils.auth import verify_firebase_token
+from utils.juno_logger import JunoLogger, monotonic_ms
+from utils.juno_metrics import JunoMetrics
 
 logger = logging.getLogger(__name__)
 
@@ -147,12 +149,22 @@ def _score_or_none(text: str, label: str) -> dict | None:
 
 
 def _generate_stream():
+    juno_logger = JunoLogger(api_version="v1-1")
+    metrics = JunoMetrics()
+    pipeline_start = monotonic_ms()
+
     try:
         yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
+
+        # Step 1: Resolve input
+        juno_logger.log_step("read_input", "start")
+        t0 = monotonic_ms()
         try:
             text, source = _resolve_input()
         except Exception as exc:
-            logger.exception("simplify_v1_1: input resolution failed")
+            juno_logger.exception("simplify_v1_1: input resolution failed")
+            juno_logger.log_step("read_input", "error", extra={"error": str(exc)})
+            metrics.record_error(type(exc).__name__, "read_input", labels={"version": "v1-1"})
             yield _sse({"step": "error", "error": f"Could not read input: {exc}"})
             return
 
@@ -160,6 +172,15 @@ def _generate_stream():
             yield _sse({"step": "error", "error": "Input appears to be empty or unreadable."})
             return
 
+        # Infer source_kind from source string for labelling
+        source_kind = "doc_id" if source.startswith("doc:") else (
+            "text" if source == "text_input" else "file"
+        )
+        juno_logger.log_step(
+            "read_input", "done",
+            duration_ms=monotonic_ms() - t0,
+            extra={"source_kind": source_kind, "input_chars": len(text)},
+        )
         yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
         logger.info("simplify_v1_1: processing source=%s (%d chars)", source, len(text))
 
@@ -167,19 +188,27 @@ def _generate_stream():
 
         # Step 2: Term detection (deterministic; no LLM)
         yield _sse({"step": 2, "status": "active", "label": STEPS[2]})
+        juno_logger.log_step("find_medical_terms", "start")
+        t0 = monotonic_ms()
         try:
             term_data = detect_terms(text)
-        except Exception:
-            logger.exception("simplify_v1_1: term detection failed - continuing with empty terms")
+        except Exception as exc:
+            juno_logger.exception("simplify_v1_1: term detection failed - continuing with empty terms")
+            juno_logger.log_step("find_medical_terms", "error", extra={"error": str(exc)})
+            metrics.record_error(type(exc).__name__, "find_medical_terms", labels={"version": "v1-1"})
             term_data = {
                 "substitution_candidates": [],
                 "preserve_and_define_terms": [],
                 "abbreviations": [],
             }
+        else:
+            juno_logger.log_step("find_medical_terms", "done", duration_ms=monotonic_ms() - t0)
         yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
 
         # Step 3: Simplify language
         yield _sse({"step": 3, "status": "active", "label": STEPS[3]})
+        juno_logger.log_step("simplify_language", "start")
+        t0 = monotonic_ms()
         try:
             simplified = pipeline.simplify_language_with_term_plan(
                 text,
@@ -188,28 +217,42 @@ def _generate_stream():
                 term_data["abbreviations"],
             )
         except Exception as exc:
-            logger.exception("simplify_v1_1: simplification failed")
+            juno_logger.exception("simplify_v1_1: simplification failed")
+            juno_logger.log_step("simplify_language", "error", extra={"error": str(exc)})
+            metrics.record_error(type(exc).__name__, "simplify_language", labels={"version": "v1-1"})
             yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
             return
+        juno_logger.log_step("simplify_language", "done", duration_ms=monotonic_ms() - t0)
         yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
 
         # Step 4: Clarify actions and numbers
         yield _sse({"step": 4, "status": "active", "label": STEPS[4]})
+        juno_logger.log_step("clarify_actions", "start")
+        t0 = monotonic_ms()
         try:
             clarified = pipeline.clarify_and_action(simplified, term_data["abbreviations"])
-        except Exception:
-            logger.exception("simplify_v1_1: clarify step failed - using simplified text")
+        except Exception as exc:
+            juno_logger.exception("simplify_v1_1: clarify step failed - using simplified text")
+            juno_logger.log_step("clarify_actions", "error", extra={"error": str(exc)})
+            metrics.record_error(type(exc).__name__, "clarify_actions", labels={"version": "v1-1"})
             clarified = simplified
+        else:
+            juno_logger.log_step("clarify_actions", "done", duration_ms=monotonic_ms() - t0)
         yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
 
         # Step 5: Structure appointment note
         yield _sse({"step": 5, "status": "active", "label": STEPS[5]})
+        juno_logger.log_step("structure_note", "start")
+        t0 = monotonic_ms()
         try:
             structured = pipeline.structure_appointment_note(clarified)
         except Exception as exc:
-            logger.exception("simplify_v1_1: structuring failed")
+            juno_logger.exception("simplify_v1_1: structuring failed")
+            juno_logger.log_step("structure_note", "error", extra={"error": str(exc)})
+            metrics.record_error(type(exc).__name__, "structure_note", labels={"version": "v1-1"})
             yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
             return
+        juno_logger.log_step("structure_note", "done", duration_ms=monotonic_ms() - t0)
         yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
 
         terms_glossary = build_glossary_from_simplified_text(
@@ -234,10 +277,18 @@ def _generate_stream():
             result["after_score"] = after_score
         result.pop("questions", None)
 
+        total_ms = monotonic_ms() - pipeline_start
+        metrics.record_latency("simplify_pipeline", total_ms,
+                               labels={"version": "v1-1", "input_type": source_kind})
+        metrics.record_counter("simplify_request", labels={"version": "v1-1"})
+
         yield _sse({"step": "result", "data": result})
 
     except Exception as exc:
-        logger.exception("simplify_v1_1: unexpected pipeline error")
+        total_ms = monotonic_ms() - pipeline_start
+        juno_logger.exception("simplify_v1_1: unexpected pipeline error")
+        metrics.record_error(type(exc).__name__, "simplify_pipeline", labels={"version": "v1-1"})
+        metrics.record_latency("simplify_pipeline", total_ms, labels={"version": "v1-1", "status": "error"})
         yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
 
 
