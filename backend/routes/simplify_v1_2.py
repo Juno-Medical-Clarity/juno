@@ -237,6 +237,52 @@ def _score_or_none(text: str, label: str) -> dict | None:
         return None
 
 
+def _derive_output_name(result: dict, resolved: "ResolvedInput") -> str:
+    """
+    Derive a human-readable name for a saved output.
+
+    Priority:
+      1. reason_for_visit[0].reason  (from AI output)
+      2. diagnosis.main_conclusion   (first sentence, from AI output)
+      3. diagnosis.details[0].plain_name  (from AI output)
+      4. source filename stem        (for file uploads)
+      5. "Appointment"               (final fallback)
+    """
+    try:
+        rfv = result.get("reason_for_visit")
+        if rfv and isinstance(rfv, list):
+            reason = (rfv[0].get("reason") or "").strip()
+            if reason:
+                return reason.title()[:60]
+
+        diagnosis = result.get("diagnosis") or {}
+        main = (diagnosis.get("main_conclusion") or "").strip()
+        if main:
+            first_sentence = main.split(".")[0].strip()
+            if first_sentence:
+                return first_sentence[:60]
+
+        details = diagnosis.get("details")
+        if details and isinstance(details, list):
+            plain = (details[0].get("plain_name") or "").strip()
+            if plain:
+                return plain.title()[:60]
+    except Exception:
+        logger.exception("simplify_v1_2: failed to derive name from output - using fallback")
+
+    # Fallback: use filename stem if it's a real filename, not "text_input"
+    filename = resolved.source_filename or ""
+    if filename and filename != "text_input":
+        stem = filename.split(",")[0].strip()   # first file if multiple
+        if "." in stem:
+            stem = stem.rsplit(".", 1)[0]
+        stem = stem.replace("_", " ").replace("-", " ").strip()
+        if stem:
+            return stem.title()[:60]
+
+    return "Appointment"
+
+
 def _generate_stream(user_id: str):
     try:
         yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
@@ -340,7 +386,7 @@ def _generate_stream(user_id: str):
 
             saved_id = save_simplify_output(
                 user_id=user_id,
-                name=resolved.source_description,
+                name=_derive_output_name(result, resolved),
                 source_filename=resolved.source_filename,
                 input_pdf_gcs=input_pdf_gcs,
                 output_data=result,
