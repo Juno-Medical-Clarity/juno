@@ -33,3 +33,11 @@ frontend/.env
 serviceAccountKey.json
 *firebase-adminsdk*.json
 juno-medical-clarity-firebase-adminsdk-fbsvc-91f08cee6f.json
+
+# Generated preset-data copies in public/ (rebuilt on each deploy)
+frontend/public/preset-data/
+
+# Preset data files are intentionally tracked
+!preset-data/**/*.pdf
+!preset-data/**/*.txt
+!preset-data/**/*.docx
