@@ -1,9 +1,7 @@
 import '../v1_1/V1_1Page.css';
 import { useCallback, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
-import SignOutButton from '../../auth/SignOutButton';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
 import PresetDatasetModal from './PresetDatasetModal';
@@ -210,24 +208,6 @@ export default function V1_2Page() {
 
       <div className="page-wrapper">
         <div className="container">
-          <section className="hero">
-            <div className="hero-meta-row">
-              <div className="hero-badge">✦ AI-Powered Health Literacy</div>
-              <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-                <Link to="/versions" style={{ color: 'var(--accent-violet)', textDecoration: 'none' }}>v1.2</Link>
-                {' · '}
-                <Link to="/versions" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>all versions</Link>
-              </span>
-              <SignOutButton />
-            </div>
-            <h1>Understand Your Appointment Note</h1>
-            <p className="hero-sub">Built with experienced neuro professionals</p>
-            <p className="hero-desc">
-              Upload a provider note, appointment summary, or SOAP note.
-              Juno will turn it into plain-language next steps you can understand and follow.
-            </p>
-          </section>
-
           {appState === 'upload' && (
             <section className="upload-section">
               <div className="glass-card" style={{ padding: '32px' }}>
@@ -286,11 +266,6 @@ export default function V1_2Page() {
                     onChange={event => setTextInput(event.target.value)}
                   />
                 )}
-
-                <div className="privacy-note">
-                  <span className="privacy-note-icon">🔒</span>
-                  <span>Your data is deleted immediately after processing.</span>
-                </div>
 
                 {error && <div className="error-box">⚠ {error}</div>}
 
