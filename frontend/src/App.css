@@ -653,21 +653,14 @@ body {
 }
 
 /* ============================================================
-   Sticky Download Bar
+   Download Bar (end of report content, normal flow)
    ============================================================ */
 .download-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
-  padding: 16px 24px;
-  background: rgba(244, 242, 255, 0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(124, 58, 237, 0.15);
   display: flex;
   justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  padding: 0 24px;
 }
 
 .download-btn {
