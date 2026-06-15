@@ -24,7 +24,7 @@ export default function VersionsPage() {
               {VERSIONS.map(version => (
                 <tr key={version.id}>
                   <td>
-                    <Link className="version-table-link" to={version.path}>
+                    <Link className="version-table-link" to={`/version/${version.id}`}>
                       {version.label}
                     </Link>
                     {version.isDefault && (
