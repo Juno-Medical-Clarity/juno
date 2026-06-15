@@ -337,6 +337,12 @@ def _generate_stream(user_id: str):
             input_pdf_gcs = None
             if resolved.combined_pdf_bytes:
                 input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
+            elif resolved.source_kind not in ("text", "doc_id"):
+                logger.warning(
+                    "simplify_v1_2: combined_pdf_bytes is None for source_kind=%s — "
+                    "input PDF will not be stored",
+                    resolved.source_kind,
+                )
 
             saved_id = save_simplify_output(
                 user_id=user_id,

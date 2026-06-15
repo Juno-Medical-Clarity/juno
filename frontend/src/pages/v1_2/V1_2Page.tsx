@@ -328,7 +328,7 @@ export default function V1_2Page() {
               <div className="result-header">
                 <h2 className="result-title">Your Simplified Note</h2>
                 <span className="deleted-note">🔒 Deleted from servers</span>
-                {activeSavedId && (
+                {activeSavedId && inputMode === 'file' && (
                   <button
                     onClick={() => setShowSplitView(true)}
                     style={{

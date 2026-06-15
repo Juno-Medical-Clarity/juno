@@ -55,7 +55,7 @@ def save_simplify_output(
             "source_filename": source_filename,
             "created_at": now,
             "updated_at": now,
-            "input_pdf_gcs": input_pdf_gcs,
+            "input_pdf_gcs": input_pdf_gcs or "",
             "output_data": _without_raw(output_data),
         }
     )
