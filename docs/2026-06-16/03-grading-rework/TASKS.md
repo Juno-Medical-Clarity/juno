@@ -13,175 +13,183 @@ versioned, per the user's explicit "no version, always latest" instruction). `to
 produce `{"entries": [...], "enabled": bool, "graded_at": str | null}` with each entry as a flat dict.
 
 **Acceptance criteria:** Round-trips via `to_dict()`/`from_dict()`. `Grading()` (no args) produces
-`{"entries": [], "enabled": True, "graded_at": None}` (matches the dataclass defaults — note this
-default differs slightly from PRD's "disabled means enabled=False": the *default* enabled flag is
-`True` per "by default grading should be enabled", but an *empty* Grading before any scoring has run
-also looks like this; routes are responsible for setting `enabled=False` explicitly when the toggle
-is off, not relying on the bare default).
+`{"entries": [], "enabled": True, "graded_at": None}`.
 
 **Depends on:** Sub-project 1 Task 1 (`JsonModel` base class must exist).
 
 ---
 
-### Task 2 — `build_grading()` converter
+### Task 2 — `scoring_methods.py`: per-method score extraction
+
+**File:** `backend/utils/scoring_methods.py` (new file)
+
+Implement the six scorer functions and `compute_method_scores()` exactly per PRD.md §4's code sketch:
+- `score_smog(text)` — `textstat.smog_index`, `_grade_to_score` from `scoring.py`
+- `score_flesch_kincaid(text)` — `textstat.flesch_reading_ease` + `textstat.flesch_kincaid_grade`
+- `score_dale_chall(text)` — `textstat.dale_chall_readability_score` + `_dc_grade_range`
+- `score_pemat(dimensions)` — weighted combination of existing dimension scores (items 3,8,14,21-22,27-33)
+- `score_sam(dimensions)` — content + literacy_demand + layout_typography domains
+- `score_cdc_cci(dimensions)` — main_message + behavioral_recommendations + numbers + call_to_action
+- `compute_method_scores(text, dimensions)` — calls all six, returns a dict keyed by method name
+
+Each scorer returns a dict with a `"score"` key (0-100 normalized) plus method-specific breakdown
+keys (everything except `"score"` goes into `GradingEntry.grade_breakdown`).
+
+Import `_grade_to_score` from `utils.scoring` (it's already defined there — don't duplicate it).
+
+**Acceptance criteria:** Given a known text fixture, `compute_method_scores()` returns a dict with
+exactly the six method keys; each has a `"score"` key in [0, 100]; SMOG entry with < 30 sentences
+sets `insufficient_sample: True` and `score: 0`; FK entry's `score` equals `round(flesch_reading_ease)`
+clamped to [0, 100].
+
+**Depends on:** Sub-project 1 Task 1 (for `JsonModel`); `scoring.py` (imports `_grade_to_score`).
+
+---
+
+### Task 3 — `build_grading()` converter
 
 **File:** `backend/models/grading.py` (same file as Task 1)
 
-Implement `build_grading(before_score: dict | None, after_score: dict | None) -> Grading` exactly per
-PRD.md §4's code sketch. Import `score_text`'s output shape from `backend/utils/scoring.py` — do not
-modify `scoring.py` itself.
-
-⚠️ Before writing this, confirm with the user (PRD.md §8) whether "before" scoring should be kept. If
-they say drop it, this function takes only `after_score` and the `for target, score in (...)` loop
-becomes a single pass — a small change, don't block on it, just confirm the answer first since it
-changes the function signature.
-
-**Acceptance criteria:** Given the existing `score_text()` output fixtures (check `backend/tests/` for
-existing scoring tests to reuse as fixtures), `build_grading(before, after)` produces 16 entries (or 8
-if "before" is dropped) with correct `name`/`target`/`grade` values matching the source dicts exactly.
-
-**Depends on:** Task 1.
-
----
-
-### Task 3 — Wire `grading_enabled` toggle + `build_grading()` into the v1-2 route
-
-**File:** `backend/routes/simplify_v1_2.py`
-
-1. Read `grading_enabled = (request.form.get("grading_enabled", "true").lower() != "false")` (or JSON
-   equivalent for `doc_id` requests — match whatever pattern Sub-project 2 Task 1 used for reading
-   `version`).
-2. Where `before_score = _score_or_none(text, "before")` and `after_score = _score_or_none(clarified,
-   "after")` currently run unconditionally, gate both behind `if grading_enabled:` — when disabled,
-   leave both as `None` and skip the calls entirely (this is the actual compute saving from PRD.md
-   §4, not just hiding the result).
-3. Remove `before_score`/`after_score` from the dict passed into
-   `SimplifiedCarePlan.from_pipeline_result(...)` (per PRD.md §4 — they no longer live on the care
-   plan).
-4. Build `grading = build_grading(before_score, after_score) if grading_enabled else Grading(enabled=False)`.
-5. Pass `grading` into the `SimplifyOutput(...)` construction (replacing the Sub-project 1 stub
-   `Grading()`).
-
-**Acceptance criteria:** With `grading_enabled` omitted or `"true"`, response `grading.entries` has 16
-entries (or 8, per Task 2's confirmed scope) and `simplified_care_plan` has no `before_score`/
-`after_score` keys. With `grading_enabled="false"`, `grading == {"entries": [], "enabled": false,
-"graded_at": null}` and the route runs measurably faster (no `score_text()` calls — can verify via
-the existing per-step duration logging from Sub-project 1's `Metrics.step_durations_ms`, there should
-be no scoring-related step entries when disabled).
-
-**Depends on:** Tasks 1, 2; Sub-project 1 Tasks 5–7 (envelope must exist); Sub-project 2 Task 1 (for
-the form-vs-JSON field reading pattern to copy).
-
----
-
-### Task 4 — Apply the same wiring to v1 and v1-1 routes
-
-**Files:** `backend/routes/simplify.py`, `backend/routes/simplify_v1_1.py`
-
-Same change as Task 3, adapted to each route. v1 (`simplify.py`) currently computes `before_score`/
-`after_score` the same way (lines ~144–149, ~199–204) — same gating logic applies.
-
-**Acceptance criteria:** Same as Task 3, for each route.
-
-**Depends on:** Task 3 (copy the pattern once it's proven there).
-
----
-
-### Task 5 — New endpoint: `POST /simplify/grade`
-
-**File:** `backend/routes/simplify.py` (add to the existing blueprint, or a new `routes/grading.py` —
-implementer's call; if a new file, register its blueprint in `routes/__init__.py`)
-
-Implement exactly per PRD.md §4 "Manual re-run":
+Implement `build_grading()` with the updated signature per PRD.md §4:
 ```python
-@simplify_bp.route("/simplify/grade", methods=["POST"])
-@verify_firebase_token
-def grade_output(user_id: str):
-    body = request.get_json(silent=True) or {}
-    saved_id = body.get("saved_id")
-    if saved_id:
-        db = _db()  # reuse the pattern from saved_outputs.py
-        doc, err = _get_doc_or_403(db, saved_id, user_id)  # import/reuse from saved_outputs.py, don't duplicate
-        if err:
-            return err
-        data = doc.to_dict()
-        raw = data["output_data"]["simplified_care_plan"]["raw"]
-        before = score_text(raw["text"])
-        after = score_text(raw["clarified_text"])
-        grading = build_grading(before, after)
-        doc.reference.update({"output_data.grading": grading.to_dict(), "updated_at": ...})
-        return jsonify({"grading": grading.to_dict()})
-    text, clarified_text = body.get("text"), body.get("clarified_text")
-    if not text or not clarified_text:
-        return jsonify({"error": "Provide saved_id, or both text and clarified_text"}), 400
-    grading = build_grading(score_text(text), score_text(clarified_text))
-    return jsonify({"grading": grading.to_dict()})
+def build_grading(
+    before_score: dict | None, before_text: str | None,
+    after_score: dict | None, after_text: str | None,
+) -> Grading
 ```
-(Move `_get_doc_or_403` to a shared location, e.g. `backend/utils/firestore_helpers.py`, if it's
-currently private to `saved_outputs.py` — don't duplicate the ownership-check logic in two files.)
 
-**Acceptance criteria:** Per PRD.md §7's three route tests for this endpoint.
+For each target with a non-None score:
+1. Call `compute_method_scores(text, score["dimensions"])` to get the 6 method scores.
+2. Append one `GradingEntry` per method (name, target, grade=m["score"],
+   grade_breakdown={k:v for k,v if k != "score"}, reasoning=`_METHOD_REASONING[method_name]`).
+3. Append the `"combined"` entry: grade=score["composite"], grade_breakdown includes `grade_estimate`,
+   `label`, `word_count`, and the full `dimensions` dict (this is what powers the frontend's
+   "View full breakdown" bars).
+
+⚠️ Before writing, confirm with the user (PRD.md §8) whether "before" scoring should be kept.
+If they say drop it, this function takes only `after_score`/`after_text` — a small change, don't
+block on it, just confirm first since it changes the signature.
+
+**Acceptance criteria:** `build_grading(before_score, before_text, after_score, after_text)` produces
+14 entries (7 per target × 2 targets): 6 method entries + 1 combined, names are exactly
+`("smog", "flesch_kincaid", "dale_chall", "pemat", "sam", "cdc_cci", "combined")`. The combined
+entry's `grade_breakdown["dimensions"]` contains all 7 dimension dicts from `score_text()`. The SMOG
+entry's `grade_breakdown["grade"]` matches `textstat.smog_index(before_text)`.
 
 **Depends on:** Tasks 1, 2.
 
 ---
 
-### Task 6 — Frontend: grading toggle in `ConfigurationCard`
+### Task 4 — Wire `grading_enabled` toggle + `build_grading()` into the v1-2 route
+
+**File:** `backend/routes/simplify_v1_2.py`
+
+1. Read `grading_enabled = (request.form.get("grading_enabled", "true").lower() != "false")`.
+2. Gate both `score_text()` calls behind `if grading_enabled:` — when disabled, leave both as `None`
+   and skip calls entirely (actual compute saving per PRD.md §2, not just hidden in UI).
+3. Update the `build_grading()` call to pass text alongside score dicts (PRD.md §4 updated signature):
+   `build_grading(before_score, raw_text, after_score, clarified_text)`.
+4. Remove `before_score`/`after_score` from the dict passed into `SimplifiedCarePlan.from_pipeline_result(...)`.
+5. Build `grading = build_grading(...) if grading_enabled else Grading(enabled=False)`.
+6. Pass `grading` into `SimplifyOutput(...)`.
+
+**Acceptance criteria:** With `grading_enabled` omitted or `"true"`, response `grading.entries` has
+14 entries (or 7 if "before" is dropped) and `simplified_care_plan` has no `before_score`/
+`after_score` keys. With `grading_enabled="false"`, `grading == {"entries": [], "enabled": false, "graded_at": null}`.
+
+**Depends on:** Tasks 1–3; Sub-project 1 Tasks 5–7 (envelope must exist); Sub-project 2 Task 1.
+
+---
+
+### Task 5 — Apply the same wiring to v1 and v1-1 routes
+
+**Files:** `backend/routes/simplify.py`, `backend/routes/simplify_v1_1.py`
+
+Same change as Task 4, adapted to each route.
+
+**Acceptance criteria:** Same as Task 4, for each route.
+
+**Depends on:** Task 4 (copy the pattern once it's proven there).
+
+---
+
+### Task 6 — New endpoint: `POST /simplify/grade`
+
+**File:** `backend/routes/simplify.py` (add to the existing blueprint, or new `routes/grading.py` —
+implementer's call; if a new file, register its blueprint in `routes/__init__.py`)
+
+Implement exactly per PRD.md §4 "Manual re-run". When `saved_id` is given: fetch Firestore doc
+(reuse `_get_doc_or_403` from `saved_outputs.py` — move to `backend/utils/firestore_helpers.py` if
+currently private, don't duplicate), read `raw.text` + `raw.clarified_text`, call `score_text()` on
+both, build `Grading` via `build_grading(before, raw_text, after, clarified_text)`, overwrite
+`output_data.grading` in Firestore, return it. When `text`/`clarified_text` given directly: compute
+and return without persisting.
+
+**Acceptance criteria:** Per PRD.md §7's three route tests for this endpoint.
+
+**Depends on:** Tasks 1–3.
+
+---
+
+### Task 7 — Frontend: grading toggle in `ConfigurationCard`
 
 **File:** `frontend/src/components/ConfigurationCard.tsx` (from Sub-project 2 Task 4)
 
-Add a `gradingEnabled: boolean` / `onGradingEnabledChange` prop pair and a checkbox, default checked,
-above or below the version dropdown (implementer's call on layout). Wire the upload submit handler in
-`SimplifyPage.tsx` to send `grading_enabled` alongside `version`.
+Add a `gradingEnabled: boolean` / `onGradingEnabledChange` prop pair and a checkbox, default checked.
+Wire the upload submit handler in `SimplifyPage.tsx` to send `grading_enabled` alongside `version`.
 
-**Acceptance criteria:** Submitting with the box unchecked sends `grading_enabled=false`; the response
-has empty grading entries (verified via Task 3/4's backend behavior).
+**Acceptance criteria:** Submitting with the box unchecked sends `grading_enabled=false`; response has
+empty grading entries.
 
-**Depends on:** Sub-project 2 Task 4 (the card must exist); Task 3/4 (backend must read the field).
+**Depends on:** Sub-project 2 Task 4 (the card must exist); Tasks 4/5 (backend must read the field).
 
 ---
 
-### Task 7 — Frontend: `patientScoreFromGrading` selector + `ReadabilityCard` call-site update
+### Task 8 — Frontend: `patientScoreFromGrading` + `methodEntriesFromGrading` selectors
 
-**Files:** `frontend/src/utils/grading.ts` (new), `frontend/src/components/AppointmentNoteV12View.tsx`
+**File:** `frontend/src/utils/grading.ts` (new)
 
-1. In `grading.ts`:
-   ```ts
-   export function patientScoreFromGrading(grading: Grading, target: 'before' | 'after'): PatientScore | null {
-     const entries = grading.entries.filter(e => e.target === target);
-     if (entries.length === 0) return null;
-     const combined = entries.find(e => e.name === 'combined');
-     const dims = entries.filter(e => e.name !== 'combined');
-     return {
-       composite: combined?.grade ?? 0,
-       grade_estimate: combined?.grade_breakdown?.grade_estimate ?? 0,
-       label: combined?.grade_breakdown?.label ?? '',
-       word_count: combined?.grade_breakdown?.word_count ?? 0,
-       dimensions: Object.fromEntries(dims.map(d => [d.name, { score: d.grade, raw: d.grade_breakdown?.raw, label: d.grade_breakdown?.label, unit: d.grade_breakdown?.unit }])) as PatientScore['dimensions'],
-     };
-   }
-   ```
-2. At the call site (wherever `AppointmentNoteV12View` currently reads `result.before_score`/
-   `result.after_score` to decide whether to render `ReadabilityCard` — find via
-   `grep -n "before_score\|after_score" frontend/src/components/AppointmentNoteV12View.tsx`), replace
-   with `patientScoreFromGrading(output.grading, 'before')` / `'after'`, and only render
-   `ReadabilityCard` when both are non-null.
+Implement both selectors exactly per PRD.md §6:
+- `patientScoreFromGrading(grading, target)` — extracts `PatientScore` from the `combined` entry's
+  `grade_breakdown.dimensions`; returns `null` if entries empty.
+- `methodEntriesFromGrading(grading, target)` — returns the 6 non-combined entries for that target.
 
-**Acceptance criteria:** Visual output of `ReadabilityCard` is pixel-identical to before this change
-when grading is enabled; disappears entirely when grading is disabled. No changes needed inside
+**Depends on:** Task 4 (response shape must be stable); Sub-project 1 TS types for `Grading`/`GradingEntry`
+(or define minimal inline interfaces if those aren't ready yet).
+
+---
+
+### Task 9 — Frontend: update `ReadabilityCard` call-site + add method cards
+
+**File:** `frontend/src/components/AppointmentNoteV12View.tsx`
+
+1. At the call site (line ~181), replace `result.before_score`/`result.after_score` with
+   `patientScoreFromGrading(output.grading, 'before')` / `'after'`; only render `ReadabilityCard`
+   when both are non-null. `ReadabilityCard` itself is **not changed** — it still receives the same
+   `PatientScore` shape and renders identically.
+
+2. Below `ReadabilityCard`, render a `MethodGradingCards` component (new, in same file or a new
+   `MethodGradingCards.tsx`) that maps over `methodEntriesFromGrading(grading, 'after')` and renders
+   one card per method showing:
+   - Method name + color-coded score bubble (reuse `scoreColor()`)
+   - `grade_breakdown` sub-scores as a compact key → value list
+   - `reasoning` as a small footnote
+
+   For "before vs after" on method scores, show both targets side-by-side (same pattern as combined
+   card's before → after comparison) when both are available.
+
+**Acceptance criteria:** Combined card pixel-identical to pre-change when grading enabled. Six method
+cards appear below it. All cards disappear when grading disabled (empty entries). No changes inside
 `ReadabilityCard` itself.
 
-**Depends on:** Task 3 (response shape), Task 10's types (see below — actually depends on Sub-project
-1 Task 10/11 having defined `Grading`/`SimplifyOutput` TS types; if those aren't done yet, define the
-minimal `Grading`/`GradingEntry` TS interfaces inline here instead of blocking on it).
+**Depends on:** Tasks 6, 8.
 
 ---
 
-### Task 8 — Frontend: output-screen Configuration card with "Run Grading" button
+### Task 10 — Frontend: output-screen Configuration card with "Run Grading" button
 
-**File:** new component, e.g. `frontend/src/components/OutputGradingCard.tsx`, rendered in the result
-view below the report and above the existing sticky download bar (see the layout established by the
-"move download buttons" change — find the relevant container in the result page/component).
+**File:** `frontend/src/components/OutputGradingCard.tsx` (new), rendered in result view below
+the report and above the sticky download bar.
 
 ```tsx
 function OutputGradingCard({ output, onGraded }: { output: SimplifyOutput; onGraded: (g: Grading) => void }) {
@@ -207,28 +215,33 @@ function OutputGradingCard({ output, onGraded }: { output: SimplifyOutput; onGra
   );
 }
 ```
-(Match existing auth-header/fetch conventions used elsewhere in the page rather than inventing a new
-pattern — check how the SSE submit request sends its auth header and mirror it.)
+Match existing auth-header/fetch conventions used elsewhere.
 
-**Acceptance criteria:** Button is visible regardless of whether grading already ran. Clicking it
-updates the displayed `ReadabilityCard` with fresh scores (manual check via `/run`).
+**Acceptance criteria:** Button visible regardless of whether grading already ran. Clicking it updates
+both the combined `ReadabilityCard` and the six method cards with fresh scores.
 
-**Depends on:** Task 5, Task 7.
+**Depends on:** Task 6, Task 9.
 
 ---
 
-### Task 9 — Tests
+### Task 11 — Tests
 
-Cover PRD.md §7 in full: `build_grading()` unit test, three route tests for `/simplify/grade`, and the
-`grading_enabled=false` route test for at least the v1-2 route.
+Cover PRD.md §7 in full:
+- Unit tests for each function in `scoring_methods.py` with a known text fixture.
+- Unit test `build_grading()` — 14 entries with correct names/targets; combined entry has `dimensions`.
+- Route test: `grading_enabled=false` → empty entries on the v1-2 route.
+- Three route tests for `POST /simplify/grade` (saved_id path, text/clarified_text path, overwrite check).
 
-**Depends on:** Tasks 1–5.
+**Depends on:** Tasks 1–6.
 
 ---
 
 ## Summary of what requires you (not a dev agent)
 
-1. **Before Task 2:** confirm whether "before" (input-text) scoring should be kept alongside "after"
+1. **Before Task 3:** confirm whether "before" (input-text) scoring should be kept alongside "after"
    (report) scoring, or dropped now that grading is an explicit, named, toggleable concept.
-2. **Cosmetic, non-blocking:** review the output-screen Configuration card's copy/placement once Task
-   8 has a first pass — not required before starting, just before calling it final.
+2. **Optional (PRD.md §8):** confirm whether the three approximated tools (PEMAT, SAM, CDC CCI)
+   should all be shown, or only the directly-computable ones (SMOG, FK, Dale-Chall). Default: include
+   all six with honest "approximation" labels in `reasoning`.
+3. **Cosmetic, non-blocking:** review the output-screen Configuration card copy/placement once Task 10
+   has a first pass — not required before starting, just before calling it final.
