@@ -1,4 +1,4 @@
-import type { AppointmentNote } from '../types/simplify';
+import type { SimplifiedCarePlan } from '../types/envelope';
 
 export function escapeHtml(value: string): string {
   return value
@@ -9,7 +9,7 @@ export function escapeHtml(value: string): string {
     .replace(/'/g, '&#039;');
 }
 
-export function buildPdfHtml(result: AppointmentNote): string {
+export function buildPdfHtml(result: SimplifiedCarePlan): string {
   const sections: string[] = [];
   const h2 = (title: string) =>
     `<h2 style="font-size:16px;font-weight:600;color:#1a1a2e;margin:20px 0 10px;padding-bottom:6px;border-bottom:2px solid #E5E7EB;">${escapeHtml(title)}</h2>`;

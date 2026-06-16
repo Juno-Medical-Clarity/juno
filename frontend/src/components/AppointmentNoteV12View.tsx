@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from 'react';
-import type { AppointmentNote, PatientScore, PatientScoreDimension, TermsMap } from '../types/simplify';
+import type { PatientScore, PatientScoreDimension, TermsMap } from '../types/simplify';
+import type { SimplifiedCarePlan } from '../types/envelope';
 import MedicalTerm from './MedicalTerm';
 
 function scoreColor(composite: number): string {
@@ -158,7 +159,7 @@ function ReadabilityCard({ before, after }: { before: PatientScore; after: Patie
   );
 }
 
-export default function AppointmentNoteV12View({ result }: { result: AppointmentNote }) {
+export default function AppointmentNoteV12View({ result }: { result: SimplifiedCarePlan }) {
   const terms = result.terms ?? {};
   const withTerms = (text: string) => renderTextWithTerms(text, terms);
   const URGENCY_COLORS: Record<string, string> = {

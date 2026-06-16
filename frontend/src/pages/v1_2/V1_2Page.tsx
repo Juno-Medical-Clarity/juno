@@ -6,7 +6,9 @@ import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
 import PresetDatasetModal from './PresetDatasetModal';
 import SplitView from '../../components/SplitView';
-import type { AppState, AppointmentNote, InputMode, PipelineStep, StepStatus } from '../../types/simplify';
+import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/simplify';
+import type { SimplifyOutput } from '../../types/envelope';
+import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
 import AppointmentNoteV12View from '../../components/AppointmentNoteV12View';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import NavBar from '../../components/NavBar';
@@ -32,7 +34,7 @@ export default function V1_2Page() {
   const [textInput, setTextInput] = useState('');
   const [dragOver, setDragOver] = useState(false);
   const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
-  const [result, setResult] = useState<AppointmentNote | null>(null);
+  const [result, setResult] = useState<SimplifyOutput | null>(null);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
   const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
@@ -117,17 +119,19 @@ export default function V1_2Page() {
             const event = JSON.parse(payload) as {
               step: number | 'result';
               status?: 'active' | 'done';
-              data?: AppointmentNote & { saved_id?: string };
+              data?: unknown;
               error?: string;
             };
 
             if (event.error) throw new Error(event.error);
 
             if (event.step === 'result' && event.data) {
-              setResult(event.data);
+              const normalized = normalizeSimplifyOutput(event.data);
+              setResult(normalized);
               setAppState('result');
-              if (event.data.saved_id) {
-                setActiveSavedId(event.data.saved_id);
+              const savedId = normalized.metrics.saved_id;
+              if (savedId) {
+                setActiveSavedId(savedId);
                 setSidebarRefresh(r => r + 1);
               }
             } else if (typeof event.step === 'number' && event.status) {
@@ -159,7 +163,7 @@ export default function V1_2Page() {
 
   const handleDownloadPdf = () => {
     if (!result) return;
-    const html = buildPdfHtml(result);
+    const html = buildPdfHtml(result.simplified_care_plan);
     const printWindow = window.open('', '_blank');
     if (!printWindow) {
       setError('Could not open print window. Please allow pop-ups for this site.');
@@ -184,7 +188,7 @@ export default function V1_2Page() {
   async function handleSelectSaved(id: string) {
     try {
       const saved = await getSavedOutput(id);
-      setResult(saved.output_data as unknown as AppointmentNote);
+      setResult(normalizeSimplifyOutput(saved.output_data));
       setActiveSavedId(id);
       setAppState('result');
     } catch {
@@ -333,7 +337,13 @@ export default function V1_2Page() {
                 )}
               </div>
 
-              <AppointmentNoteV12View result={result} />
+              <AppointmentNoteV12View result={result.simplified_care_plan} />
+
+              {result.metrics.session_id && (
+                <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem' }}>
+                  Request ID: {result.metrics.session_id}
+                </div>
+              )}
 
               <div style={{ marginTop: '32px', textAlign: 'center' }}>
                 <button
@@ -380,7 +390,7 @@ export default function V1_2Page() {
       {showSplitView && result && activeSavedId && (
         <SplitView
           savedId={activeSavedId}
-          simplifiedContent={<AppointmentNoteV12View result={result} />}
+          simplifiedContent={<AppointmentNoteV12View result={result.simplified_care_plan} />}
           onClose={() => setShowSplitView(false)}
         />
       )}
