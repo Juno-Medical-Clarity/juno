@@ -61,9 +61,11 @@ class SimplifiedCarePlan(VersionedJsonModel):
             A new SimplifiedCarePlan instance.
 
         Raises:
-            KeyError: If "version" is not present in data.
-            ValueError: If the version string is not registered.
+            ValueError: If "version" is not present in data.
+            KeyError: If the version string is not registered.
         """
+        if "version" not in data:
+            raise ValueError(f"Missing 'version' key in data. Available keys: {list(data.keys())}")
         version = data["version"]
         rest = {k: v for k, v in data.items() if k != "version"}
         # Look up the registered class for this version (may differ in future).

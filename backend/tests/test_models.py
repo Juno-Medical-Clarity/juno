@@ -354,6 +354,13 @@ class TestSimplifiedCarePlan(unittest.TestCase):
         with self.assertRaises(KeyError):
             SimplifiedCarePlan.from_dict({"version": "9.9", "foo": "bar"})
 
+    def test_from_dict_missing_version_raises_value_error(self):
+        """from_dict with no 'version' key must raise ValueError."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        with self.assertRaises(ValueError):
+            SimplifiedCarePlan.from_dict({"doc_type": "appointment_note"})
+
     def test_registry_contains_all_three_versions(self):
         """All three versions must be registered in SimplifiedCarePlan._registry."""
         from backend.models.care_plan import SimplifiedCarePlan
