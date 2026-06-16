@@ -256,5 +256,131 @@ class TestGrading(unittest.TestCase):
         self.assertEqual(reconstructed, original)
 
 
+class TestSimplifiedCarePlan(unittest.TestCase):
+    """Tests for the SimplifiedCarePlan versioned model."""
+
+    # Minimal representative V1.2 pipeline output.
+    SAMPLE_V12 = {
+        "doc_type": "appointment_note",
+        "diagnosis": {"primary": "hypertension"},
+        "terms": ["BP", "systolic"],
+    }
+
+    # ------------------------------------------------------------------
+    # Acceptance criteria: from_pipeline_result -> to_dict round-trip
+    # ------------------------------------------------------------------
+
+    def test_v12_acceptance_criteria(self):
+        """from_pipeline_result('1.2', sample).to_dict() == {'version': '1.2', **sample}."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        result = SimplifiedCarePlan.from_pipeline_result("1.2", self.SAMPLE_V12).to_dict()
+        expected = {"version": "1.2", **self.SAMPLE_V12}
+        self.assertEqual(result, expected)
+
+    def test_v10_pipeline_result_roundtrip(self):
+        """Version 1.0 pipeline result serialises and flattens correctly."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        sample = {"raw_text": "Patient presents with...", "scores": {"accuracy": 0.9}}
+        result = SimplifiedCarePlan.from_pipeline_result("1.0", sample).to_dict()
+        self.assertEqual(result, {"version": "1.0", **sample})
+
+    def test_v11_pipeline_result_roundtrip(self):
+        """Version 1.1 pipeline result serialises and flattens correctly."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        sample = {"structured": True, "medications": ["metformin"]}
+        result = SimplifiedCarePlan.from_pipeline_result("1.1", sample).to_dict()
+        self.assertEqual(result, {"version": "1.1", **sample})
+
+    # ------------------------------------------------------------------
+    # from_dict reconstruction
+    # ------------------------------------------------------------------
+
+    def test_from_dict_reconstructs_correctly(self):
+        """from_dict splits 'version' from the rest and builds the object."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        flat = {"version": "1.2", **self.SAMPLE_V12}
+        obj = SimplifiedCarePlan.from_dict(flat)
+        self.assertEqual(obj.version, "1.2")
+        self.assertEqual(obj.data, self.SAMPLE_V12)
+
+    def test_from_dict_v10(self):
+        """from_dict works for version 1.0."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        flat = {"version": "1.0", "raw_text": "visit note"}
+        obj = SimplifiedCarePlan.from_dict(flat)
+        self.assertEqual(obj.version, "1.0")
+        self.assertEqual(obj.data, {"raw_text": "visit note"})
+
+    def test_from_dict_v11(self):
+        """from_dict works for version 1.1."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        flat = {"version": "1.1", "medications": ["aspirin"]}
+        obj = SimplifiedCarePlan.from_dict(flat)
+        self.assertEqual(obj.version, "1.1")
+        self.assertEqual(obj.data, {"medications": ["aspirin"]})
+
+    def test_full_roundtrip_v12(self):
+        """Full round-trip: from_pipeline_result -> to_dict -> from_dict -> to_dict."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        obj = SimplifiedCarePlan.from_pipeline_result("1.2", self.SAMPLE_V12)
+        flat = obj.to_dict()
+        reconstructed = SimplifiedCarePlan.from_dict(flat)
+        self.assertEqual(reconstructed.version, "1.2")
+        self.assertEqual(reconstructed.data, self.SAMPLE_V12)
+        self.assertEqual(reconstructed.to_dict(), flat)
+
+    def test_to_dict_flattening_no_nested_data_key(self):
+        """to_dict must NOT produce a nested 'data' key."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        obj = SimplifiedCarePlan.from_pipeline_result("1.2", self.SAMPLE_V12)
+        d = obj.to_dict()
+        self.assertNotIn("data", d)
+        self.assertIn("doc_type", d)
+        self.assertIn("diagnosis", d)
+        self.assertIn("terms", d)
+
+    def test_unknown_version_raises(self):
+        """from_dict with an unregistered version must raise KeyError."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        with self.assertRaises(KeyError):
+            SimplifiedCarePlan.from_dict({"version": "9.9", "foo": "bar"})
+
+    def test_registry_contains_all_three_versions(self):
+        """All three versions must be registered in SimplifiedCarePlan._registry."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        self.assertIn("1.0", SimplifiedCarePlan._registry)
+        self.assertIn("1.1", SimplifiedCarePlan._registry)
+        self.assertIn("1.2", SimplifiedCarePlan._registry)
+
+    def test_all_versions_map_to_same_class(self):
+        """All three registered versions must map to SimplifiedCarePlan."""
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        for version in ("1.0", "1.1", "1.2"):
+            self.assertIs(SimplifiedCarePlan._registry[version], SimplifiedCarePlan)
+
+    def test_inherits_versioned_json_model(self):
+        """SimplifiedCarePlan must be a VersionedJsonModel subclass."""
+        from backend.models.base import VersionedJsonModel
+        from backend.models.care_plan import SimplifiedCarePlan
+
+        obj = SimplifiedCarePlan.from_pipeline_result("1.2", self.SAMPLE_V12)
+        self.assertIsInstance(obj, VersionedJsonModel)
+
+    def test_package_export(self):
+        """SimplifiedCarePlan must be importable directly from backend.models."""
+        from backend.models import SimplifiedCarePlan  # noqa: F401
+
+
 if __name__ == "__main__":
     unittest.main()
