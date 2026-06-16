@@ -1,6 +1,10 @@
 import { useState, useRef, useCallback, type ReactNode } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
+import { SIMPLIFY_API_PATH } from '../../config';
+import { versionPath } from '../../router';
+import ConfigurationCard from '../../components/ConfigurationCard';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -660,7 +664,9 @@ function LegacyResultView({ result }: { result: LegacyResult }) {
 // ─── Main Component ───────────────────────────────────────────────────────────
 
 export default function V1Page() {
+  const navigate = useNavigate();
   const [appState, setAppState] = useState<AppState>('upload');
+  const [selectedVersion, setSelectedVersion] = useState('v1');
   const [file, setFile] = useState<File | null>(null);
   const [dragOver, setDragOver] = useState(false);
   const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
@@ -700,6 +706,11 @@ export default function V1Page() {
     );
   }, []);
 
+  const handleVersionChange = (versionId: string) => {
+    setSelectedVersion(versionId);
+    if (versionId !== 'v1') navigate(versionPath(versionId));
+  };
+
   const handleSubmit = async () => {
     if (!file) return;
 
@@ -710,11 +721,12 @@ export default function V1Page() {
 
     const formData = new FormData();
     formData.append('file', file);
+    formData.append('version', selectedVersion);
 
     abortRef.current = new AbortController();
 
     try {
-      const response = await authenticatedFetch(`${API_URL}/simplify`, {
+      const response = await authenticatedFetch(`${API_URL}${SIMPLIFY_API_PATH}`, {
         method: 'POST',
         body: formData,
         signal: abortRef.current.signal,
@@ -822,6 +834,7 @@ export default function V1Page() {
           {/* ── Upload ── */}
           {appState === 'upload' && (
             <section className="upload-section">
+              <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
               <div className="glass-card" style={{ padding: '32px' }}>
                 <div
                   className={`upload-zone ${dragOver ? 'drag-over' : ''}`}

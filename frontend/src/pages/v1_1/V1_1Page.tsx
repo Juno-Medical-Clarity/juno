@@ -1,9 +1,12 @@
 import './V1_1Page.css';
 import { useCallback, useRef, useState, type ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import MedicalTerm from '../../components/MedicalTerm';
+import ConfigurationCard from '../../components/ConfigurationCard';
+import { SIMPLIFY_API_PATH } from '../../config';
+import { versionPath } from '../../router';
 
 type StepStatus = 'waiting' | 'active' | 'done';
 type UrgencyLevel = 'immediate' | 'soon' | 'routine' | 'informational';
@@ -450,8 +453,10 @@ function AppointmentNoteV11View({ result }: { result: AppointmentNote }) {
 }
 
 export default function V1_1Page() {
+  const navigate = useNavigate();
   const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
+  const [selectedVersion, setSelectedVersion] = useState('v1-1');
   const [file, setFile] = useState<File | null>(null);
   const [textInput, setTextInput] = useState('');
   const [dragOver, setDragOver] = useState(false);
@@ -491,6 +496,11 @@ export default function V1_1Page() {
 
   const canSubmit = inputMode === 'file' ? Boolean(file) : textInput.trim().length > 0;
 
+  const handleVersionChange = (versionId: string) => {
+    setSelectedVersion(versionId);
+    if (versionId !== 'v1-1') navigate(versionPath(versionId));
+  };
+
   const handleSubmit = async () => {
     if (!canSubmit) return;
 
@@ -505,11 +515,12 @@ export default function V1_1Page() {
     } else {
       formData.append('text', textInput);
     }
+    formData.append('version', selectedVersion);
 
     abortRef.current = new AbortController();
 
     try {
-      const response = await authenticatedFetch(`${API_URL}/simplify/v1-1`, {
+      const response = await authenticatedFetch(`${API_URL}${SIMPLIFY_API_PATH}`, {
         method: 'POST',
         body: formData,
         signal: abortRef.current.signal,
@@ -628,6 +639,7 @@ export default function V1_1Page() {
 
           {appState === 'upload' && (
             <section className="upload-section">
+              <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
               <div className="glass-card" style={{ padding: '32px' }}>
                 <div className="input-tabs">
                   <button

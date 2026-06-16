@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
+import { SIMPLIFY_API_PATH } from '../../config';
 
 interface ManifestFile {
   name: string;
@@ -54,8 +55,9 @@ export default function PresetDatasetModal({ onClose, onProcessComplete }: Prese
     const files = await Promise.all(proc.files.map(fetchFileAsFile));
     const formData = new FormData();
     files.forEach(f => formData.append('files', f));
+    formData.append('version', 'v1-2');
 
-    const response = await authenticatedFetch(`${API_URL}/simplify/v1-2`, {
+    const response = await authenticatedFetch(`${API_URL}${SIMPLIFY_API_PATH}`, {
       method: 'POST',
       body: formData,
     });

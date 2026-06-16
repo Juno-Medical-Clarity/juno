@@ -1,5 +1,6 @@
 import '../v1_1/V1_1Page.css';
 import { useCallback, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import Sidebar from '../../components/Sidebar';
@@ -12,6 +13,9 @@ import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
 import AppointmentNoteV12View from '../../components/AppointmentNoteV12View';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import NavBar from '../../components/NavBar';
+import ConfigurationCard from '../../components/ConfigurationCard';
+import { SIMPLIFY_API_PATH } from '../../config';
+import { versionPath } from '../../router';
 
 const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
@@ -28,8 +32,10 @@ function stepIcon(status: StepStatus): string {
 }
 
 export default function V1_2Page() {
+  const navigate = useNavigate();
   const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
+  const [selectedVersion, setSelectedVersion] = useState('v1-2');
   const [files, setFiles] = useState<File[]>([]);
   const [textInput, setTextInput] = useState('');
   const [dragOver, setDragOver] = useState(false);
@@ -69,6 +75,11 @@ export default function V1_2Page() {
 
   const canSubmit = inputMode === 'file' ? files.length > 0 : textInput.trim().length > 0;
 
+  const handleVersionChange = (versionId: string) => {
+    setSelectedVersion(versionId);
+    if (versionId !== 'v1-2') navigate(versionPath(versionId));
+  };
+
   const handleSubmit = async () => {
     if (!canSubmit) return;
 
@@ -83,11 +94,12 @@ export default function V1_2Page() {
     } else {
       formData.append('text', textInput);
     }
+    formData.append('version', selectedVersion);
 
     abortRef.current = new AbortController();
 
     try {
-      const response = await authenticatedFetch(`${API_URL}/simplify/v1-2`, {
+      const response = await authenticatedFetch(`${API_URL}${SIMPLIFY_API_PATH}`, {
         method: 'POST',
         body: formData,
         signal: abortRef.current.signal,
@@ -217,6 +229,7 @@ export default function V1_2Page() {
         <div className="container">
           {appState === 'upload' && (
             <section className="upload-section">
+              <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
               <div className="glass-card" style={{ padding: '32px' }}>
                 <div className="input-tabs">
                   <button
