@@ -1,3 +1,5 @@
+import importlib
+import os
 import sys
 import unittest
 from pathlib import Path
@@ -64,6 +66,41 @@ class SimplifyVersionDispatchTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.get_json(), {"version": "default"})
         selected.assert_called_once_with()
+
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    def test_omitted_version_uses_latest_default_without_route_monkeypatch(self, _verify_token):
+        import config
+        import routes.simplify as simplify_module
+
+        try:
+            with patch.dict(os.environ, {}, clear=True), patch("dotenv.load_dotenv"):
+                importlib.reload(config)
+                importlib.reload(simplify_module)
+
+            app = Flask(__name__)
+            app.register_blueprint(simplify_module.simplify_bp)
+            client = app.test_client()
+
+            with patch.object(
+                simplify_module, "simplify_v1_2", return_value={"version": "latest"}
+            ) as selected, patch.object(
+                simplify_module, "simplify_v1_1", return_value={"version": "v1-1"}
+            ) as v1_1, patch.object(
+                simplify_module, "_simplify_document_v1", return_value={"version": "v1"}
+            ) as v1:
+                response = client.post(
+                    "/simplify",
+                    headers={"Authorization": "Bearer token"},
+                )
+
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.get_json(), {"version": "latest"})
+            selected.assert_called_once_with()
+            v1_1.assert_not_called()
+            v1.assert_not_called()
+        finally:
+            importlib.reload(config)
+            importlib.reload(simplify_module)
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_invalid_version_returns_400(self, _verify_token):
