@@ -12,6 +12,7 @@ export function normalizeSimplifyOutput(raw: any): SimplifyOutput {
   // Legacy flat shape: everything except saved_id is the care plan itself.
   const { saved_id, ...rest } = raw;
   return {
+    // pipeline_version uses route format ("v1"/"v1-1"/"v1-2"); care plan version uses schema format ("1.0"/"1.1"/"1.2")
     metrics: {
       session_id: '',
       pipeline_version: rest.version ?? 'v1',
