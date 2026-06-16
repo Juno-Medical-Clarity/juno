@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
+import { runBatch } from '../../api/datasets';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
 import SplitView from '../../components/SplitView';
@@ -27,10 +28,28 @@ const INITIAL_STEPS: PipelineStep[] = [
   { id: 5, label: 'Organizing your care plan', description: 'Structuring into sections that are easy to follow', status: 'waiting' },
 ];
 
+interface BatchProgress {
+  group: string;
+  input: string;
+  index: number;
+  total: number;
+  status: 'active' | 'pipeline' | 'done';
+}
+
 function stepIcon(status: StepStatus): string {
   if (status === 'done') return '✓';
   if (status === 'active') return '◉';
   return '○';
+}
+
+function resetSteps(): PipelineStep[] {
+  return INITIAL_STEPS.map(step => ({ ...step, status: 'waiting' }));
+}
+
+function outputHasInputPdf(output: SimplifyOutput): boolean {
+  return output.input.mode === 'file' && output.input.files.some(file => (
+    file.content_type === 'application/pdf' || file.filename.toLowerCase().endsWith('.pdf')
+  ));
 }
 
 export default function V1_2Page() {
@@ -50,12 +69,19 @@ export default function V1_2Page() {
   const [sidebarRefresh, setSidebarRefresh] = useState(0);
   const [showSplitView, setShowSplitView] = useState(false);
   const [presetDataSelection, setPresetDataSelection] = useState<BatchDatasetSelection[]>([]);
+  const [batchProgress, setBatchProgress] = useState<BatchProgress | null>(null);
+  const [batchOutputs, setBatchOutputs] = useState<SimplifyOutput[]>([]);
+  const [batchGroupIds, setBatchGroupIds] = useState<Record<string, string>>({});
+  const [selectedBatchIndex, setSelectedBatchIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const output = (location.state as VersionRouteState | null)?.output;
     if (!output || outputRouteVersionId(output) !== 'v1-2') return;
 
     setResult(output);
+    setBatchOutputs([]);
+    setBatchGroupIds({});
+    setSelectedBatchIndex(null);
     setAppState('result');
     const savedId = output.metrics.saved_id;
     if (savedId) {
@@ -90,7 +116,9 @@ export default function V1_2Page() {
     );
   }, []);
 
-  const canSubmit = inputMode === 'file' ? files.length > 0 : textInput.trim().length > 0;
+  const hasSingleRunInput = inputMode === 'file' ? files.length > 0 : textInput.trim().length > 0;
+  const hasPresetDataSelection = presetDataSelection.length > 0;
+  const canSubmit = hasPresetDataSelection || hasSingleRunInput;
   const presetDataSelectionCount = presetDataSelection.length;
 
   const handleVersionChange = (versionId: string) => {
@@ -103,8 +131,115 @@ export default function V1_2Page() {
 
     setError(null);
     setResult(null);
-    setSteps(INITIAL_STEPS.map(step => ({ ...step, status: 'waiting' })));
+    setBatchOutputs([]);
+    setBatchGroupIds({});
+    setSelectedBatchIndex(null);
+    setBatchProgress(null);
+    setActiveSavedId(null);
+    setShowSplitView(false);
+    setSteps(resetSteps());
     setAppState('processing');
+
+    abortRef.current = new AbortController();
+
+    if (hasPresetDataSelection) {
+      // ConfigurationCard currently exposes version selection only; no grading toggle is present.
+      const gradingEnabled = false;
+
+      try {
+        const response = await runBatch(
+          presetDataSelection,
+          selectedVersion,
+          gradingEnabled,
+          abortRef.current.signal,
+        );
+
+        if (!response.ok) {
+          const message = await response.text();
+          throw new Error(message || `Server error: ${response.status}`);
+        }
+
+        const reader = response.body!.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+        let currentBatchInputKey: string | null = null;
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split('\n');
+          buffer = lines.pop() ?? '';
+
+          for (const line of lines) {
+            if (!line.startsWith('data: ')) continue;
+            const payload = line.slice(6).trim();
+            if (!payload || payload === '[DONE]') continue;
+
+            let event: {
+              step: 'batch_progress' | 'batch_result' | 'error';
+              group?: string;
+              input?: string;
+              index?: number;
+              total?: number;
+              status?: 'active' | 'pipeline' | 'done';
+              event?: { step?: number | string; status?: StepStatus };
+              data?: { batch_group_ids?: Record<string, string>; outputs?: unknown[] };
+              error?: string;
+            };
+            try {
+              event = JSON.parse(payload);
+            } catch {
+              continue;
+            }
+
+            if (event.step === 'error') {
+              throw new Error(event.error || 'Batch processing failed.');
+            }
+
+            if (event.step === 'batch_progress') {
+              if (event.group && event.input && event.index && event.total && event.status) {
+                const inputKey = `${event.group}/${event.input}`;
+                if (event.status === 'active' || inputKey !== currentBatchInputKey) {
+                  currentBatchInputKey = inputKey;
+                  setSteps(resetSteps());
+                }
+                setBatchProgress({
+                  group: event.group,
+                  input: event.input,
+                  index: event.index,
+                  total: event.total,
+                  status: event.status,
+                });
+              }
+
+              if (event.event && typeof event.event.step === 'number' && event.event.status) {
+                updateStep(event.event.step, event.event.status);
+              }
+              continue;
+            }
+
+            if (event.step === 'batch_result') {
+              const outputs = (event.data?.outputs ?? []).map(output => normalizeSimplifyOutput(output));
+              setBatchOutputs(outputs);
+              setBatchGroupIds(event.data?.batch_group_ids ?? {});
+              setSelectedBatchIndex(outputs.length > 0 ? 0 : null);
+              setResult(outputs[0] ?? null);
+              setAppState('result');
+              const savedId = outputs[0]?.metrics.saved_id;
+              setActiveSavedId(savedId ?? null);
+              setSidebarRefresh(r => r + 1);
+            }
+          }
+        }
+      } catch (err: unknown) {
+        if (err instanceof Error && err.name === 'AbortError') return;
+        setError(err instanceof Error ? err.message : 'An unexpected error occurred.');
+        setAppState('upload');
+      }
+      return;
+    }
 
     const formData = new FormData();
     if (inputMode === 'file') {
@@ -113,8 +248,6 @@ export default function V1_2Page() {
       formData.append('text', textInput);
     }
     formData.append('version', selectedVersion);
-
-    abortRef.current = new AbortController();
 
     try {
       const response = await authenticatedFetch(`${API_URL}${SIMPLIFY_API_PATH}`, {
@@ -157,6 +290,9 @@ export default function V1_2Page() {
 
             if (event.step === 'result' && event.data) {
               const normalized = normalizeSimplifyOutput(event.data);
+              setBatchOutputs([]);
+              setBatchGroupIds({});
+              setSelectedBatchIndex(null);
               const routeVersionId = outputRouteVersionId(normalized);
               if (routeVersionId !== 'v1-2') {
                 navigate(versionPath(routeVersionId), {
@@ -216,11 +352,16 @@ export default function V1_2Page() {
     abortRef.current?.abort();
     setFiles([]);
     setTextInput('');
-    setSteps(INITIAL_STEPS.map(step => ({ ...step, status: 'waiting' })));
+    setSteps(resetSteps());
     setResult(null);
+    setBatchOutputs([]);
+    setBatchGroupIds({});
+    setSelectedBatchIndex(null);
+    setBatchProgress(null);
     setError(null);
     setAppState('upload');
     setActiveSavedId(null);
+    setShowSplitView(false);
   };
 
   async function handleSelectSaved(id: string) {
@@ -235,6 +376,9 @@ export default function V1_2Page() {
         return;
       }
       setResult(normalized);
+      setBatchOutputs([]);
+      setBatchGroupIds({});
+      setSelectedBatchIndex(null);
       setActiveSavedId(id);
       setAppState('result');
     } catch {
@@ -263,7 +407,6 @@ export default function V1_2Page() {
         <div className="container">
           {appState === 'upload' && (
             <section className="upload-section" data-preset-selection-count={presetDataSelectionCount}>
-              <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
               <div className="glass-card" style={{ padding: '32px' }}>
                 <div className="input-tabs">
                   <button
@@ -328,6 +471,7 @@ export default function V1_2Page() {
                 </button>
               </div>
               <PresetDataCard onSelectionChange={setPresetDataSelection} />
+              <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
             </section>
           )}
 
@@ -338,6 +482,21 @@ export default function V1_2Page() {
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '-8px', marginBottom: '16px' }}>
                   Finding medical terms, rewriting to plain language, and organizing your care plan.
                 </p>
+                {batchProgress && (
+                  <div style={{
+                    marginBottom: '20px',
+                    padding: '12px 14px',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius-md)',
+                    color: 'var(--text-secondary)',
+                    fontSize: '0.85rem',
+                  }}>
+                    <strong style={{ color: 'var(--text-primary)' }}>
+                      Input {batchProgress.index} of {batchProgress.total}
+                    </strong>
+                    <span> · {batchProgress.group} / {batchProgress.input}</span>
+                  </div>
+                )}
                 <div className="step-list">
                   {steps.map(step => (
                     <div className="step-item" key={step.id}>
@@ -358,7 +517,7 @@ export default function V1_2Page() {
               <div className="result-header">
                 <h2 className="result-title">Your Simplified Note</h2>
                 <span className="deleted-note">🔒 Deleted from servers</span>
-                {activeSavedId && inputMode === 'file' && (
+                {activeSavedId && result && outputHasInputPdf(result) && (
                   <button
                     onClick={() => setShowSplitView(true)}
                     style={{
@@ -372,6 +531,49 @@ export default function V1_2Page() {
                   </button>
                 )}
               </div>
+
+              {batchOutputs.length > 0 && (
+                <div className="glass-card" style={{ padding: '20px', marginBottom: '24px' }}>
+                  <p style={{ margin: 0, fontWeight: 700, color: 'var(--text-primary)' }}>
+                    {batchOutputs.length} report{batchOutputs.length === 1 ? '' : 's'} generated
+                  </p>
+                  {Object.keys(batchGroupIds).length > 0 && (
+                    <p style={{ margin: '6px 0 16px', color: 'var(--text-secondary)', fontSize: '0.8rem' }}>
+                      Batch groups: {Object.entries(batchGroupIds).map(([group, id]) => `${group}: ${id}`).join(', ')}
+                    </p>
+                  )}
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {batchOutputs.map((output, index) => {
+                      const savedId = output.metrics.saved_id;
+                      const isActive = selectedBatchIndex === index;
+                      return (
+                        <button
+                          key={savedId ?? index}
+                          type="button"
+                          onClick={() => {
+                            setSelectedBatchIndex(index);
+                            setResult(output);
+                            setActiveSavedId(savedId ?? null);
+                            setShowSplitView(false);
+                          }}
+                          style={{
+                            border: isActive ? '1px solid var(--accent-violet)' : '1px solid var(--border)',
+                            background: isActive ? 'rgba(124, 58, 237, 0.1)' : 'transparent',
+                            borderRadius: 'var(--radius-pill)',
+                            color: isActive ? 'var(--text-primary)' : 'var(--text-secondary)',
+                            cursor: 'pointer',
+                            fontFamily: 'Inter, sans-serif',
+                            fontSize: '0.8rem',
+                            padding: '7px 14px',
+                          }}
+                        >
+                          Report {index + 1}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
 
               <AppointmentNoteV12View result={result.simplified_care_plan} />
 
