@@ -19,7 +19,7 @@ import json
 import logging
 
 from config import SIMPLIFY_DEFAULT_VERSION
-from flask import Blueprint, request, Response, stream_with_context
+from flask import Blueprint, g, request, Response, stream_with_context
 
 from routes.simplify_v1_1 import simplify_v1_1
 from routes.simplify_v1_2 import simplify_v1_2
@@ -27,6 +27,11 @@ from simplify.v1.pipeline import V1Pipeline
 from utils.auth import verify_firebase_token
 from utils.pdf_extract import extract_text_from_pdf
 from utils.scoring import score_text
+from backend.models.metrics import Metrics
+from backend.models.input import Input
+from backend.models.grading import Grading
+from backend.models.care_plan import SimplifiedCarePlan
+from backend.models.envelope import SimplifyOutput
 
 logger = logging.getLogger(__name__)
 
@@ -221,7 +226,26 @@ def _simplify_document_v1():
                 result_payload["before_score"] = before_score
             if after_score is not None:
                 result_payload["after_score"] = after_score
-            yield _sse({"step": "result", "data": result_payload})
+
+            metrics = Metrics.start(
+                session_id=getattr(g, "session_id", ""),
+                pipeline_version="v1",
+                input_type="file",
+            )
+            try:
+                upload.seek(0)
+            except Exception:
+                pass
+            input_model = Input.from_file_uploads([upload])
+            grading = Grading()
+            care_plan = SimplifiedCarePlan.from_pipeline_result("1.0", result_payload)
+            output = SimplifyOutput(
+                metrics=metrics,
+                input=input_model,
+                grading=grading,
+                simplified_care_plan=care_plan,
+            )
+            yield _sse({"step": "result", "data": output.to_dict()})
 
         except Exception as exc:
             logger.exception("simplify: unexpected pipeline error")

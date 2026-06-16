@@ -22,7 +22,7 @@ import json
 import logging
 import os
 
-from flask import Blueprint, Response, request, stream_with_context
+from flask import Blueprint, Response, g, request, stream_with_context
 from google.cloud import storage as gcs
 
 from simplify.v1_1.pipeline import V1_1Pipeline
@@ -32,6 +32,11 @@ from utils.term_detection import build_glossary_from_simplified_text, detect_ter
 from utils.auth import verify_firebase_token
 from utils.juno_logger import JunoLogger, monotonic_ms
 from utils.juno_metrics import JunoMetrics
+from backend.models.metrics import Metrics
+from backend.models.input import Input
+from backend.models.grading import Grading
+from backend.models.care_plan import SimplifiedCarePlan
+from backend.models.envelope import SimplifyOutput
 
 logger = logging.getLogger(__name__)
 
@@ -150,7 +155,7 @@ def _score_or_none(text: str, label: str) -> dict | None:
 
 def _generate_stream():
     juno_logger = JunoLogger(api_version="v1-1")
-    metrics = JunoMetrics()
+    juno_metrics = JunoMetrics()
     pipeline_start = monotonic_ms()
 
     try:
@@ -164,7 +169,7 @@ def _generate_stream():
         except Exception as exc:
             juno_logger.exception("simplify_v1_1: input resolution failed")
             juno_logger.log_step("read_input", "error", extra={"error": str(exc)})
-            metrics.record_error(type(exc).__name__, "read_input", labels={"version": "v1-1"})
+            juno_metrics.record_error(type(exc).__name__, "read_input", labels={"version": "v1-1"})
             yield _sse({"step": "error", "error": f"Could not read input: {exc}"})
             return
 
@@ -195,7 +200,7 @@ def _generate_stream():
         except Exception as exc:
             juno_logger.exception("simplify_v1_1: term detection failed - continuing with empty terms")
             juno_logger.log_step("find_medical_terms", "error", extra={"error": str(exc)})
-            metrics.record_error(type(exc).__name__, "find_medical_terms", labels={"version": "v1-1"})
+            juno_metrics.record_error(type(exc).__name__, "find_medical_terms", labels={"version": "v1-1"})
             term_data = {
                 "substitution_candidates": [],
                 "preserve_and_define_terms": [],
@@ -219,7 +224,7 @@ def _generate_stream():
         except Exception as exc:
             juno_logger.exception("simplify_v1_1: simplification failed")
             juno_logger.log_step("simplify_language", "error", extra={"error": str(exc)})
-            metrics.record_error(type(exc).__name__, "simplify_language", labels={"version": "v1-1"})
+            juno_metrics.record_error(type(exc).__name__, "simplify_language", labels={"version": "v1-1"})
             yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
             return
         juno_logger.log_step("simplify_language", "done", duration_ms=monotonic_ms() - t0)
@@ -234,7 +239,7 @@ def _generate_stream():
         except Exception as exc:
             juno_logger.exception("simplify_v1_1: clarify step failed - using simplified text")
             juno_logger.log_step("clarify_actions", "error", extra={"error": str(exc)})
-            metrics.record_error(type(exc).__name__, "clarify_actions", labels={"version": "v1-1"})
+            juno_metrics.record_error(type(exc).__name__, "clarify_actions", labels={"version": "v1-1"})
             clarified = simplified
         else:
             juno_logger.log_step("clarify_actions", "done", duration_ms=monotonic_ms() - t0)
@@ -249,7 +254,7 @@ def _generate_stream():
         except Exception as exc:
             juno_logger.exception("simplify_v1_1: structuring failed")
             juno_logger.log_step("structure_note", "error", extra={"error": str(exc)})
-            metrics.record_error(type(exc).__name__, "structure_note", labels={"version": "v1-1"})
+            juno_metrics.record_error(type(exc).__name__, "structure_note", labels={"version": "v1-1"})
             yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
             return
         juno_logger.log_step("structure_note", "done", duration_ms=monotonic_ms() - t0)
@@ -262,7 +267,7 @@ def _generate_stream():
         before_score = _score_or_none(text, "before")
         after_score = _score_or_none(clarified, "after")
 
-        result = {
+        result_payload = {
             **structured,
             "terms": terms_glossary,
             "raw": {
@@ -272,23 +277,52 @@ def _generate_stream():
             },
         }
         if before_score is not None:
-            result["before_score"] = before_score
+            result_payload["before_score"] = before_score
         if after_score is not None:
-            result["after_score"] = after_score
-        result.pop("questions", None)
+            result_payload["after_score"] = after_score
+        result_payload.pop("questions", None)
 
         total_ms = monotonic_ms() - pipeline_start
-        metrics.record_latency("simplify_pipeline", total_ms,
-                               labels={"version": "v1-1", "input_type": source_kind})
-        metrics.record_counter("simplify_request", labels={"version": "v1-1"})
+        juno_metrics.record_latency("simplify_pipeline", total_ms,
+                                    labels={"version": "v1-1", "input_type": source_kind})
+        juno_metrics.record_counter("simplify_request", labels={"version": "v1-1"})
 
-        yield _sse({"step": "result", "data": result})
+        metrics = Metrics.start(
+            session_id=getattr(g, "session_id", ""),
+            pipeline_version="v1-1",
+            input_type=source_kind,
+        )
+        metrics.total_duration_ms = total_ms
+        if source_kind == "text":
+            input_model = Input.from_text(text)
+        elif source_kind == "doc_id":
+            raw_doc_id = source.removeprefix("doc:")
+            input_model = Input.from_doc_id(raw_doc_id)
+        else:
+            upload = request.files.get("file")
+            if upload:
+                try:
+                    upload.seek(0)
+                except Exception:
+                    pass
+                input_model = Input.from_file_uploads([upload])
+            else:
+                input_model = Input(mode="file")
+        grading = Grading()
+        care_plan = SimplifiedCarePlan.from_pipeline_result("1.1", result_payload)
+        output = SimplifyOutput(
+            metrics=metrics,
+            input=input_model,
+            grading=grading,
+            simplified_care_plan=care_plan,
+        )
+        yield _sse({"step": "result", "data": output.to_dict()})
 
     except Exception as exc:
         total_ms = monotonic_ms() - pipeline_start
         juno_logger.exception("simplify_v1_1: unexpected pipeline error")
-        metrics.record_error(type(exc).__name__, "simplify_pipeline", labels={"version": "v1-1"})
-        metrics.record_latency("simplify_pipeline", total_ms, labels={"version": "v1-1", "status": "error"})
+        juno_metrics.record_error(type(exc).__name__, "simplify_pipeline", labels={"version": "v1-1"})
+        juno_metrics.record_latency("simplify_pipeline", total_ms, labels={"version": "v1-1", "status": "error"})
         yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
 
 
