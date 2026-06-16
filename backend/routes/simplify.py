@@ -25,6 +25,7 @@ from routes.simplify_v1_1 import simplify_v1_1
 from routes.simplify_v1_2 import simplify_v1_2
 from simplify.v1.pipeline import V1Pipeline
 from utils.auth import verify_firebase_token
+from utils.juno_logger import monotonic_ms
 from utils.pdf_extract import extract_text_from_pdf
 from utils.scoring import score_text
 from backend.models.metrics import Metrics
@@ -131,10 +132,18 @@ def _simplify_document_v1():
     # ── Stream generator ──────────────────────────────────────────────────────
     def generate():
         pipeline = V1Pipeline()
+        pipeline_start = monotonic_ms()
+
+        metrics = Metrics.start(
+            session_id=getattr(g, "session_id", ""),
+            pipeline_version="v1",
+            input_type="file",
+        )
 
         try:
             # ── Step 1: Extract text ──────────────────────────────────────────
             yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
+            t0 = monotonic_ms()
             try:
                 text = _extract_text(file_bytes, filename)
             except Exception as exc:
@@ -144,6 +153,7 @@ def _simplify_document_v1():
             if not text.strip():
                 yield _sse({"step": "error", "error": "File appears to be empty or unreadable."})
                 return
+            metrics.step_durations_ms["extract_text"] = monotonic_ms() - t0
             yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
 
             # ── Score original text (silent — no SSE event) ───────────────────
@@ -155,15 +165,18 @@ def _simplify_document_v1():
 
             # ── Step 2: Classify document type ────────────────────────────────
             yield _sse({"step": 2, "status": "active", "label": STEPS[2]})
+            t0 = monotonic_ms()
             try:
                 classification = pipeline.classify_document(text)
                 doc_type = classification.get("doc_type", "appointment_note")
             except Exception:
                 logger.exception("simplify: document classification failed — defaulting to appointment_note")
                 doc_type = "appointment_note"
+            metrics.step_durations_ms["classify_document"] = monotonic_ms() - t0
             yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
 
             # ── Detect jargon (silent) ────────────────────────────────────────
+            t0 = monotonic_ms()
             try:
                 jargon_result = pipeline.detect_jargon(text)
                 medical_jargon = jargon_result["medical_jargon"]
@@ -172,33 +185,40 @@ def _simplify_document_v1():
                 logger.exception("simplify: jargon detection failed — continuing without jargon data")
                 medical_jargon = []
                 complex_terms  = []
+            metrics.step_durations_ms["detect_jargon"] = monotonic_ms() - t0
 
             # ── Step 3: Simplify language ─────────────────────────────────────
             yield _sse({"step": 3, "status": "active", "label": STEPS[3]})
+            t0 = monotonic_ms()
             try:
                 simplified = pipeline.simplify_language(text, medical_jargon, complex_terms)
             except Exception as exc:
                 logger.exception("simplify: language simplification failed")
                 yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
                 return
+            metrics.step_durations_ms["simplify_language"] = monotonic_ms() - t0
             yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
 
             # ── Step 4: Add definitions ───────────────────────────────────────
             yield _sse({"step": 4, "status": "active", "label": STEPS[4]})
+            t0 = monotonic_ms()
             try:
                 with_defs = pipeline.add_definitions(simplified, medical_jargon)
             except Exception as exc:
                 logger.exception("simplify: definition injection failed — using simplified text")
                 with_defs = simplified
+            metrics.step_durations_ms["add_definitions"] = monotonic_ms() - t0
             yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
 
             # ── Step 5: Clarify numbers and actions ───────────────────────────
             yield _sse({"step": 5, "status": "active", "label": STEPS[5]})
+            t0 = monotonic_ms()
             try:
                 clarified = pipeline.clarify_and_action(with_defs)
             except Exception as exc:
                 logger.exception("simplify: clarification step failed — using previous output")
                 clarified = with_defs
+            metrics.step_durations_ms["clarify_and_action"] = monotonic_ms() - t0
             yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
 
             # ── Score simplified text (silent — no SSE event) ─────────────────
@@ -211,12 +231,14 @@ def _simplify_document_v1():
             # ── Steps 6 + 7: Structure + questions ───────────────────────────
             yield _sse({"step": 6, "status": "active", "label": STEPS[6]})
             yield _sse({"step": 7, "status": "active", "label": STEPS[7]})
+            t0 = monotonic_ms()
             try:
                 structured = pipeline.structure_document(clarified, medical_jargon, doc_type)
             except Exception as exc:
                 logger.exception("simplify: document structuring failed")
                 yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
                 return
+            metrics.step_durations_ms["structure_document"] = monotonic_ms() - t0
             yield _sse({"step": 6, "status": "done", "label": STEPS[6]})
             yield _sse({"step": 7, "status": "done", "label": STEPS[7]})
 
@@ -227,11 +249,7 @@ def _simplify_document_v1():
             if after_score is not None:
                 result_payload["after_score"] = after_score
 
-            metrics = Metrics.start(
-                session_id=getattr(g, "session_id", ""),
-                pipeline_version="v1",
-                input_type="file",
-            )
+            metrics.total_duration_ms = monotonic_ms() - pipeline_start
             try:
                 upload.seek(0)
             except Exception:

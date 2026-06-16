@@ -158,6 +158,13 @@ def _generate_stream():
     juno_metrics = JunoMetrics()
     pipeline_start = monotonic_ms()
 
+    # Per-step duration accumulators (populated as each step completes)
+    read_input_ms: float = 0.0
+    find_medical_terms_ms: float | None = None
+    simplify_language_ms: float = 0.0
+    clarify_actions_ms: float | None = None
+    structure_note_ms: float = 0.0
+
     try:
         yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
 
@@ -181,9 +188,10 @@ def _generate_stream():
         source_kind = "doc_id" if source.startswith("doc:") else (
             "text" if source == "text_input" else "file"
         )
+        read_input_ms = monotonic_ms() - t0
         juno_logger.log_step(
             "read_input", "done",
-            duration_ms=monotonic_ms() - t0,
+            duration_ms=read_input_ms,
             extra={"source_kind": source_kind, "input_chars": len(text)},
         )
         yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
@@ -207,7 +215,8 @@ def _generate_stream():
                 "abbreviations": [],
             }
         else:
-            juno_logger.log_step("find_medical_terms", "done", duration_ms=monotonic_ms() - t0)
+            find_medical_terms_ms = monotonic_ms() - t0
+            juno_logger.log_step("find_medical_terms", "done", duration_ms=find_medical_terms_ms)
         yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
 
         # Step 3: Simplify language
@@ -227,7 +236,8 @@ def _generate_stream():
             juno_metrics.record_error(type(exc).__name__, "simplify_language", labels={"version": "v1-1"})
             yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
             return
-        juno_logger.log_step("simplify_language", "done", duration_ms=monotonic_ms() - t0)
+        simplify_language_ms = monotonic_ms() - t0
+        juno_logger.log_step("simplify_language", "done", duration_ms=simplify_language_ms)
         yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
 
         # Step 4: Clarify actions and numbers
@@ -242,7 +252,8 @@ def _generate_stream():
             juno_metrics.record_error(type(exc).__name__, "clarify_actions", labels={"version": "v1-1"})
             clarified = simplified
         else:
-            juno_logger.log_step("clarify_actions", "done", duration_ms=monotonic_ms() - t0)
+            clarify_actions_ms = monotonic_ms() - t0
+            juno_logger.log_step("clarify_actions", "done", duration_ms=clarify_actions_ms)
         yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
 
         # Step 5: Structure appointment note
@@ -257,7 +268,8 @@ def _generate_stream():
             juno_metrics.record_error(type(exc).__name__, "structure_note", labels={"version": "v1-1"})
             yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
             return
-        juno_logger.log_step("structure_note", "done", duration_ms=monotonic_ms() - t0)
+        structure_note_ms = monotonic_ms() - t0
+        juno_logger.log_step("structure_note", "done", duration_ms=structure_note_ms)
         yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
 
         terms_glossary = build_glossary_from_simplified_text(
@@ -293,6 +305,13 @@ def _generate_stream():
             input_type=source_kind,
         )
         metrics.total_duration_ms = total_ms
+        metrics.step_durations_ms["read_input"] = read_input_ms
+        if find_medical_terms_ms is not None:
+            metrics.step_durations_ms["find_medical_terms"] = find_medical_terms_ms
+        metrics.step_durations_ms["simplify_language"] = simplify_language_ms
+        if clarify_actions_ms is not None:
+            metrics.step_durations_ms["clarify_actions"] = clarify_actions_ms
+        metrics.step_durations_ms["structure_note"] = structure_note_ms
         if source_kind == "text":
             input_model = Input.from_text(text)
         elif source_kind == "doc_id":
