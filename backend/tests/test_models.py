@@ -10,6 +10,7 @@ BACKEND_DIR = Path(__file__).resolve().parents[1]
 if str(BACKEND_DIR) not in sys.path:
     sys.path.insert(0, str(BACKEND_DIR))
 
+from backend.models.grading import Grading
 from backend.models.input import Input, InputFile
 from backend.models.metrics import Metrics
 
@@ -237,6 +238,22 @@ class TestInput(unittest.TestCase):
         """Input with no files serializes and deserializes without error."""
         inp = Input(mode="file", files=[])
         self.assertEqual(Input.from_dict(inp.to_dict()), inp)
+
+
+class TestGrading(unittest.TestCase):
+    """Tests for the Grading stub model."""
+
+    def test_default_to_dict(self):
+        """Grading().to_dict() must equal {"entries": []}."""
+        self.assertEqual(Grading().to_dict(), {"entries": []})
+
+    def test_roundtrip(self):
+        """Grading round-trips correctly through to_dict/from_dict."""
+        original = Grading(entries=[{"term": "hypertension", "score": 0.9}])
+        d = original.to_dict()
+        self.assertEqual(d, {"entries": [{"term": "hypertension", "score": 0.9}]})
+        reconstructed = Grading.from_dict(d)
+        self.assertEqual(reconstructed, original)
 
 
 if __name__ == "__main__":
