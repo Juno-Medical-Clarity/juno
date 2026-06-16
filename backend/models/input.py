@@ -33,12 +33,20 @@ class Input(JsonModel):
         text:        The raw text content (when mode == "text").
         doc_id:      GCS document identifier (when mode == "doc_id").
         files:       List of file metadata objects (when mode == "file").
+        dataset_group: Dataset group name for batch dataset inputs.
+        dataset_input: Dataset input identifier for batch dataset inputs.
+        selected_files: Dataset file names selected for batch dataset inputs.
+        batch_group_id: Group-scoped identifier for a batch run.
     """
 
     mode: str  # "file" | "text" | "doc_id"
     text: str | None = None
     doc_id: str | None = None
     files: list[InputFile] = field(default_factory=list)
+    dataset_group: str | None = None
+    dataset_input: str | None = None
+    selected_files: list[str] | None = None
+    batch_group_id: str | None = None
 
     # ------------------------------------------------------------------
     # Constructor helpers
@@ -97,6 +105,25 @@ class Input(JsonModel):
         """
         return cls(mode="doc_id", doc_id=doc_id)
 
+    @classmethod
+    def from_batch_dataset(
+        cls,
+        text: str,
+        dataset_group: str,
+        dataset_input: str,
+        selected_files: list[str],
+        batch_group_id: str,
+    ) -> "Input":
+        """Create an Input from concatenated preset dataset text."""
+        return cls(
+            mode="text",
+            text=text,
+            dataset_group=dataset_group,
+            dataset_input=dataset_input,
+            selected_files=selected_files,
+            batch_group_id=batch_group_id,
+        )
+
     # ------------------------------------------------------------------
     # Serialization
     # ------------------------------------------------------------------
@@ -121,4 +148,8 @@ class Input(JsonModel):
             text=data.get("text"),
             doc_id=data.get("doc_id"),
             files=files,
+            dataset_group=data.get("dataset_group"),
+            dataset_input=data.get("dataset_input"),
+            selected_files=data.get("selected_files"),
+            batch_group_id=data.get("batch_group_id"),
         )

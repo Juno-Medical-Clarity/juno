@@ -239,6 +239,65 @@ class TestInput(unittest.TestCase):
         inp = Input(mode="file", files=[])
         self.assertEqual(Input.from_dict(inp.to_dict()), inp)
 
+    def test_missing_batch_dataset_fields_roundtrip_as_none(self):
+        """Existing serialized Input dictionaries leave batch metadata unset."""
+        reconstructed = Input.from_dict(
+            {
+                "mode": "text",
+                "text": "Hello, world!",
+                "doc_id": None,
+                "files": [],
+            }
+        )
+
+        self.assertIsNone(reconstructed.dataset_group)
+        self.assertIsNone(reconstructed.dataset_input)
+        self.assertIsNone(reconstructed.selected_files)
+        self.assertIsNone(reconstructed.batch_group_id)
+
+        d = reconstructed.to_dict()
+        self.assertIsNone(d["dataset_group"])
+        self.assertIsNone(d["dataset_input"])
+        self.assertIsNone(d["selected_files"])
+        self.assertIsNone(d["batch_group_id"])
+
+        self.assertEqual(Input.from_dict(d), reconstructed)
+
+    def test_from_batch_dataset_roundtrip(self):
+        """Input.from_batch_dataset preserves dataset metadata through JSON shape."""
+        inp = Input.from_batch_dataset(
+            text="Dataset text",
+            dataset_group="DocConv",
+            dataset_input="input-1",
+            selected_files=["visit.pdf", "notes.txt"],
+            batch_group_id="DocConv-20260616T120000Z",
+        )
+
+        self.assertEqual(inp.mode, "text")
+        self.assertEqual(inp.text, "Dataset text")
+        self.assertIsNone(inp.doc_id)
+        self.assertEqual(inp.files, [])
+        self.assertEqual(inp.dataset_group, "DocConv")
+        self.assertEqual(inp.dataset_input, "input-1")
+        self.assertEqual(inp.selected_files, ["visit.pdf", "notes.txt"])
+        self.assertEqual(inp.batch_group_id, "DocConv-20260616T120000Z")
+
+        d = inp.to_dict()
+        self.assertEqual(
+            d,
+            {
+                "mode": "text",
+                "text": "Dataset text",
+                "doc_id": None,
+                "files": [],
+                "dataset_group": "DocConv",
+                "dataset_input": "input-1",
+                "selected_files": ["visit.pdf", "notes.txt"],
+                "batch_group_id": "DocConv-20260616T120000Z",
+            },
+        )
+        self.assertEqual(Input.from_dict(d), inp)
+
 
 class TestGrading(unittest.TestCase):
     """Tests for the Grading stub model."""
