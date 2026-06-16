@@ -90,11 +90,11 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         events = self._events_from_response(response)
         result_event = events[-1]
         self.assertEqual(result_event["step"], "result")
-        self.assertEqual(result_event["data"]["saved_id"], "saved-123")
-        self.assertIn("first note", result_event["data"]["raw"]["text"])
-        self.assertIn("second note", result_event["data"]["raw"]["text"])
-        self.assertIn("Source: a.txt", result_event["data"]["raw"]["text"])
-        self.assertIn("Source: b.txt", result_event["data"]["raw"]["text"])
+        self.assertEqual(result_event["data"]["metrics"]["saved_id"], "saved-123")
+        self.assertIn("first note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        self.assertIn("second note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        self.assertIn("Source: a.txt", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        self.assertIn("Source: b.txt", result_event["data"]["simplified_care_plan"]["raw"]["text"])
 
         merge_pdfs.assert_called_once()
         upload_combined_pdf.assert_called_once_with(b"%PDF combined", "user-1")
@@ -144,7 +144,7 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_multi_file_upload_rejects_too_many_files(self, _verify_token):
-        with self.assertLogs("routes.simplify_v1_2", level="ERROR"):
+        with self.assertLogs("utils.juno_logger", level="ERROR"):
             response = self.client.post(
                 "/simplify/v1-2",
                 headers={"Authorization": "Bearer token"},
@@ -167,7 +167,7 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
     def test_multi_file_upload_rejects_aggregate_size_over_limit(
         self, _pipeline, _verify_token
     ):
-        with self.assertLogs("routes.simplify_v1_2", level="ERROR"):
+        with self.assertLogs("utils.juno_logger", level="ERROR"):
             response = self.client.post(
                 "/simplify/v1-2",
                 headers={"Authorization": "Bearer token"},
@@ -221,8 +221,8 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         events = self._events_from_response(response)
         result_event = events[-1]
         self.assertEqual(result_event["step"], "result")
-        self.assertIn("stored note", result_event["data"]["raw"]["text"])
-        self.assertNotIn("saved_id", result_event["data"])
+        self.assertIn("stored note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        self.assertIsNone(result_event["data"]["metrics"]["saved_id"])
         merge_pdfs.assert_called_once_with(ANY)
         upload_combined_pdf.assert_not_called()
         save_simplify_output.assert_not_called()
@@ -249,7 +249,7 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         save_simplify_output,
         _verify_token,
     ):
-        with self.assertLogs("routes.simplify_v1_2", level="ERROR") as logs:
+        with self.assertLogs("utils.juno_logger", level="ERROR") as logs:
             response = self.client.post(
                 "/simplify/v1-2",
                 headers={"Authorization": "Bearer token"},
@@ -260,7 +260,7 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         result_event = events[-1]
         self.assertEqual(result_event["step"], "result")
-        self.assertNotIn("saved_id", result_event["data"])
+        self.assertIsNone(result_event["data"]["metrics"]["saved_id"])
         save_simplify_output.assert_called_once()
         self.assertIn("failed to save output", "\n".join(logs.output))
 
