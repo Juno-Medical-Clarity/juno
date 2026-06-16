@@ -14,6 +14,8 @@ for path in (PROJECT_DIR, BACKEND_DIR):
         sys.path.insert(0, str(path))
 
 from routes import all_blueprints
+from backend.models.metrics import Metrics
+import routes.simplify_v1_2 as simplify_v1_2_module
 
 
 class FakePipeline:
@@ -41,6 +43,14 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
                 events.append(json.loads(block.removeprefix("data: ")))
         return events
 
+    def _events_from_chunks(self, chunks):
+        events = []
+        for chunk in chunks:
+            for block in chunk.strip().split("\n\n"):
+                if block.startswith("data: "):
+                    events.append(json.loads(block.removeprefix("data: ")))
+        return events
+
     def _docx_bytes(self, text):
         from docx import Document
 
@@ -50,6 +60,61 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         document.save(buffer)
         buffer.seek(0)
         return buffer
+
+    @patch("routes.simplify_v1_2.save_simplify_output")
+    @patch("routes.simplify_v1_2.score_text", return_value={"score": 1})
+    @patch("routes.simplify_v1_2.build_glossary_from_simplified_text", return_value=[])
+    @patch(
+        "routes.simplify_v1_2.detect_terms",
+        return_value={
+            "substitution_candidates": [],
+            "preserve_and_define_terms": [],
+            "abbreviations": [],
+        },
+    )
+    @patch("routes.simplify_v1_2.V1_2Pipeline", return_value=FakePipeline())
+    def test_run_v1_2_pipeline_direct_text_yields_steps_and_result_without_saving(
+        self,
+        _pipeline,
+        _detect_terms,
+        _glossary,
+        _score,
+        save_simplify_output,
+    ):
+        metrics = Metrics.start(
+            session_id="session-1",
+            pipeline_version="v1-2",
+            input_type="text",
+        )
+
+        events = self._events_from_chunks(
+            simplify_v1_2_module.run_v1_2_pipeline(
+                "plain note",
+                metrics,
+                grading_enabled=False,
+            )
+        )
+
+        self.assertEqual(
+            [(event["step"], event.get("status")) for event in events[:-1]],
+            [
+                (2, "active"),
+                (2, "done"),
+                (3, "active"),
+                (3, "done"),
+                (4, "active"),
+                (4, "done"),
+                (5, "active"),
+                (5, "done"),
+            ],
+        )
+        result_event = events[-1]
+        self.assertEqual(result_event["step"], "result")
+        self.assertEqual(result_event["data"]["input"]["mode"], "text")
+        self.assertEqual(result_event["data"]["input"]["text"], "plain note")
+        self.assertEqual(result_event["data"]["metrics"]["saved_id"], None)
+        self.assertIn("plain note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        save_simplify_output.assert_not_called()
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.simplify_v1_2.save_simplify_output", return_value="saved-123")

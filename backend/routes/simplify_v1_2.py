@@ -22,6 +22,7 @@ import json
 import logging
 import os
 from dataclasses import dataclass
+from typing import Generator
 
 from flask import Blueprint, Response, g, request, stream_with_context
 from google.cloud import storage as gcs
@@ -243,6 +244,36 @@ def _score_or_none(text: str, label: str) -> dict | None:
         return None
 
 
+def _input_model_from_resolved(resolved: ResolvedInput) -> Input:
+    if resolved.source_kind == "text":
+        return Input.from_text(resolved.text)
+    if resolved.source_kind == "doc_id":
+        raw_doc_id = resolved.source_description.removeprefix("doc:")
+        return Input.from_doc_id(raw_doc_id)
+
+    # file upload: reconstruct from request files (streams may be exhausted,
+    # from_file_uploads seeks them back to 0 after reading)
+    uploads = request.files.getlist("files")
+    if not uploads and "file" in request.files:
+        uploads = [request.files["file"]]
+    for upload in uploads:
+        try:
+            upload.seek(0)
+        except Exception:
+            pass
+    return Input.from_file_uploads(uploads)
+
+
+def _grading_enabled_from_request() -> bool:
+    json_data = request.get_json(silent=True) or {}
+    raw_value = request.form.get("grading_enabled")
+    if raw_value is None:
+        raw_value = json_data.get("grading_enabled", False)
+    if isinstance(raw_value, bool):
+        return raw_value
+    return str(raw_value).strip().lower() in {"1", "true", "yes", "on"}
+
+
 def _derive_output_name(result: dict, resolved: "ResolvedInput") -> str:
     """
     Derive a human-readable name for a saved output.
@@ -289,66 +320,12 @@ def _derive_output_name(result: dict, resolved: "ResolvedInput") -> str:
     return "Appointment"
 
 
-def _generate_stream(user_id: str):
+def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str, None, None]:
     juno_logger = JunoLogger(api_version="v1-2")
     juno_metrics = JunoMetrics()
     pipeline_start = monotonic_ms()
 
     try:
-        yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
-
-        # Step 1: Resolve input
-        juno_logger.log_step("read_input", "start")
-        t0 = monotonic_ms()
-        try:
-            resolved = _resolve_input()
-        except Exception as exc:
-            juno_logger.exception("simplify_v1_2: input resolution failed")
-            juno_logger.log_step("read_input", "error", extra={"error": str(exc)})
-            juno_metrics.record_error(type(exc).__name__, "read_input", labels={"version": "v1-2"})
-            yield _sse({"step": "error", "error": f"Could not read input: {exc}"})
-            return
-
-        text = resolved.text
-        if not text.strip():
-            yield _sse({"step": "error", "error": "Input appears to be empty or unreadable."})
-            return
-
-        # Build structured models now that source_kind is known
-        metrics = Metrics.start(
-            session_id=getattr(g, "session_id", user_id),
-            pipeline_version="v1-2",
-            input_type=resolved.source_kind,
-        )
-        if resolved.source_kind == "text":
-            input_model = Input.from_text(resolved.text)
-        elif resolved.source_kind == "doc_id":
-            # doc_id is stored in source_description as "doc:<id>"
-            raw_doc_id = resolved.source_description.removeprefix("doc:")
-            input_model = Input.from_doc_id(raw_doc_id)
-        else:
-            # file upload: reconstruct from request files (streams may be exhausted,
-            # from_file_uploads seeks them back to 0 after reading)
-            uploads = request.files.getlist("files")
-            if not uploads and "file" in request.files:
-                uploads = [request.files["file"]]
-            for upload in uploads:
-                try:
-                    upload.seek(0)
-                except Exception:
-                    pass
-            input_model = Input.from_file_uploads(uploads)
-
-        read_input_ms = monotonic_ms() - t0
-        juno_logger.log_step(
-            "read_input", "done",
-            duration_ms=read_input_ms,
-            extra={"source_kind": resolved.source_kind, "input_chars": len(text)},
-        )
-        metrics.step_durations_ms["read_input"] = read_input_ms
-        yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
-        logger.info("simplify_v1_2: processing source=%s (%d chars)", resolved.source_description, len(text))
-
         try:
             pipeline = V1_2Pipeline()
         except Exception as e:
@@ -452,69 +429,18 @@ def _generate_stream(user_id: str):
         })
         grading = Grading()
 
-        # _derive_output_name still needs a flat dict for name derivation
-        _result_for_name = {
-            **structured,
-            **({"before_score": before_score} if before_score is not None else {}),
-            **({"after_score": after_score} if after_score is not None else {}),
-        }
-
-        if resolved.source_kind == "doc_id":
-            total_ms = monotonic_ms() - pipeline_start
-            juno_metrics.record_latency("simplify_pipeline", total_ms,
-                                        labels={"version": "v1-2", "input_type": resolved.source_kind})
-            juno_metrics.record_counter("simplify_request", labels={"version": "v1-2"})
-            metrics.total_duration_ms = total_ms
-            output = SimplifyOutput(metrics=metrics, input=input_model, grading=grading, simplified_care_plan=care_plan)
-            yield _sse({"step": "result", "data": output.to_dict()})
-            return
-
-        # Capture total_duration_ms BEFORE saving so the Firestore document has a
-        # valid value.  The save step itself is excluded from the total; that is
-        # acceptable and simpler than a second Firestore write.
         total_ms = monotonic_ms() - pipeline_start
         juno_metrics.record_latency("simplify_pipeline", total_ms,
-                                    labels={"version": "v1-2", "input_type": resolved.source_kind})
+                                    labels={"version": "v1-2", "input_type": metrics.input_type})
         juno_metrics.record_counter("simplify_request", labels={"version": "v1-2"})
         metrics.total_duration_ms = total_ms
 
-        # Save output to Firestore / GCS
-        juno_logger.log_step("save_output", "start")
-        t0 = monotonic_ms()
-        try:
-            input_pdf_gcs = None
-            if resolved.combined_pdf_bytes:
-                input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
-            elif resolved.source_kind not in ("text", "doc_id"):
-                logger.warning(
-                    "simplify_v1_2: combined_pdf_bytes is None for source_kind=%s — "
-                    "input PDF will not be stored",
-                    resolved.source_kind,
-                )
-
-            # Build envelope with total_duration_ms already set; saved_id is not yet
-            # known so it stays null in the stored document (expected — docs don't
-            # store their own ID).
-            output = SimplifyOutput(metrics=metrics, input=input_model, grading=grading, simplified_care_plan=care_plan)
-            saved_id = save_simplify_output(
-                user_id=user_id,
-                name=_derive_output_name(_result_for_name, resolved),
-                source_filename=resolved.source_filename,
-                input_pdf_gcs=input_pdf_gcs,
-                output_data=output.to_dict(),
-            )
-            # Set saved_id AFTER the Firestore write so the SSE result carries it.
-            metrics.saved_id = saved_id
-            save_output_ms = monotonic_ms() - t0
-            juno_logger.log_step("save_output", "done",
-                                 duration_ms=save_output_ms,
-                                 extra={"saved_id": saved_id})
-            metrics.step_durations_ms["save_output"] = save_output_ms
-        except Exception as exc:
-            juno_logger.exception("simplify_v1_2: failed to save output - continuing without saved_id")
-            juno_logger.log_step("save_output", "error", extra={"error": str(exc)})
-
-        output = SimplifyOutput(metrics=metrics, input=input_model, grading=grading, simplified_care_plan=care_plan)
+        output = SimplifyOutput(
+            metrics=metrics,
+            input=Input.from_text(text),
+            grading=grading,
+            simplified_care_plan=care_plan,
+        )
         yield _sse({"step": "result", "data": output.to_dict()})
 
     except Exception as exc:
@@ -522,6 +448,103 @@ def _generate_stream(user_id: str):
         juno_logger.exception("simplify_v1_2: unexpected pipeline error")
         juno_metrics.record_error(type(exc).__name__, "simplify_pipeline", labels={"version": "v1-2"})
         juno_metrics.record_latency("simplify_pipeline", total_ms, labels={"version": "v1-2", "status": "error"})
+        yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
+
+
+def _payload_from_sse(chunk: str) -> dict | None:
+    if not chunk.startswith("data: "):
+        return None
+    return json.loads(chunk.removeprefix("data: ").strip())
+
+
+def _generate_stream(user_id: str):
+    juno_logger = JunoLogger(api_version="v1-2")
+    juno_metrics = JunoMetrics()
+
+    try:
+        yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
+
+        # Step 1: Resolve input
+        juno_logger.log_step("read_input", "start")
+        t0 = monotonic_ms()
+        try:
+            resolved = _resolve_input()
+        except Exception as exc:
+            juno_logger.exception("simplify_v1_2: input resolution failed")
+            juno_logger.log_step("read_input", "error", extra={"error": str(exc)})
+            juno_metrics.record_error(type(exc).__name__, "read_input", labels={"version": "v1-2"})
+            yield _sse({"step": "error", "error": f"Could not read input: {exc}"})
+            return
+
+        text = resolved.text
+        if not text.strip():
+            yield _sse({"step": "error", "error": "Input appears to be empty or unreadable."})
+            return
+
+        metrics = Metrics.start(
+            session_id=getattr(g, "session_id", user_id),
+            pipeline_version="v1-2",
+            input_type=resolved.source_kind,
+        )
+        input_model = _input_model_from_resolved(resolved)
+
+        read_input_ms = monotonic_ms() - t0
+        juno_logger.log_step(
+            "read_input", "done",
+            duration_ms=read_input_ms,
+            extra={"source_kind": resolved.source_kind, "input_chars": len(text)},
+        )
+        metrics.step_durations_ms["read_input"] = read_input_ms
+        yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
+        logger.info("simplify_v1_2: processing source=%s (%d chars)", resolved.source_description, len(text))
+        grading_enabled = _grading_enabled_from_request()
+
+        for chunk in run_v1_2_pipeline(text, metrics, grading_enabled=grading_enabled):
+            payload = _payload_from_sse(chunk)
+            if not payload or payload.get("step") != "result":
+                yield chunk
+                continue
+
+            result_data = payload["data"]
+            result_data["input"] = input_model.to_dict()
+
+            if resolved.source_kind != "doc_id":
+                juno_logger.log_step("save_output", "start")
+                t0 = monotonic_ms()
+                try:
+                    input_pdf_gcs = None
+                    if resolved.combined_pdf_bytes:
+                        input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
+                    elif resolved.source_kind not in ("text", "doc_id"):
+                        logger.warning(
+                            "simplify_v1_2: combined_pdf_bytes is None for source_kind=%s — "
+                            "input PDF will not be stored",
+                            resolved.source_kind,
+                        )
+
+                    care_plan_data = result_data.get("simplified_care_plan", {})
+                    saved_id = save_simplify_output(
+                        user_id=user_id,
+                        name=_derive_output_name(care_plan_data, resolved),
+                        source_filename=resolved.source_filename,
+                        input_pdf_gcs=input_pdf_gcs,
+                        output_data=result_data,
+                    )
+                    metrics.saved_id = saved_id
+                    save_output_ms = monotonic_ms() - t0
+                    juno_logger.log_step("save_output", "done",
+                                         duration_ms=save_output_ms,
+                                         extra={"saved_id": saved_id})
+                    metrics.step_durations_ms["save_output"] = save_output_ms
+                except Exception as exc:
+                    juno_logger.exception("simplify_v1_2: failed to save output - continuing without saved_id")
+                    juno_logger.log_step("save_output", "error", extra={"error": str(exc)})
+
+            result_data["metrics"] = metrics.to_dict()
+            yield _sse({"step": "result", "data": result_data})
+    except Exception as exc:
+        juno_logger.exception("simplify_v1_2: unexpected pipeline error")
+        juno_metrics.record_error(type(exc).__name__, "simplify_pipeline", labels={"version": "v1-2"})
         yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
 
 
