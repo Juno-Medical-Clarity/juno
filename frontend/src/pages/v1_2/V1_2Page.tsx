@@ -1,6 +1,6 @@
 import '../v1_1/V1_1Page.css';
-import { useCallback, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import Sidebar from '../../components/Sidebar';
@@ -15,7 +15,7 @@ import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import { SIMPLIFY_API_PATH } from '../../config';
-import { versionPath } from '../../router';
+import { versionPath, type VersionRouteState } from '../../router';
 import { outputRouteVersionId } from '../../utils/outputVersion';
 
 const INITIAL_STEPS: PipelineStep[] = [
@@ -34,6 +34,7 @@ function stepIcon(status: StepStatus): string {
 
 export default function V1_2Page() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
   const [selectedVersion, setSelectedVersion] = useState('v1-2');
@@ -48,6 +49,20 @@ export default function V1_2Page() {
   const [sidebarRefresh, setSidebarRefresh] = useState(0);
   const [showPresetModal, setShowPresetModal] = useState(false);
   const [showSplitView, setShowSplitView] = useState(false);
+
+  useEffect(() => {
+    const output = (location.state as VersionRouteState | null)?.output;
+    if (!output || outputRouteVersionId(output) !== 'v1-2') return;
+
+    setResult(output);
+    setAppState('result');
+    const savedId = output.metrics.saved_id;
+    if (savedId) {
+      setActiveSavedId(savedId);
+      setSidebarRefresh(r => r + 1);
+    }
+    navigate(location.pathname, { replace: true, state: null });
+  }, [location.pathname, location.state, navigate]);
 
   const handleFiles = useCallback((selectedFiles: File[]) => {
     const invalid = selectedFiles.filter(f => {
@@ -142,7 +157,10 @@ export default function V1_2Page() {
               const normalized = normalizeSimplifyOutput(event.data);
               const routeVersionId = outputRouteVersionId(normalized);
               if (routeVersionId !== 'v1-2') {
-                navigate(versionPath(routeVersionId));
+                navigate(versionPath(routeVersionId), {
+                  replace: true,
+                  state: { output: normalized } satisfies VersionRouteState,
+                });
                 return;
               }
               setResult(normalized);
@@ -206,7 +224,15 @@ export default function V1_2Page() {
   async function handleSelectSaved(id: string) {
     try {
       const saved = await getSavedOutput(id);
-      setResult(normalizeSimplifyOutput(saved.output_data));
+      const normalized = normalizeSimplifyOutput(saved.output_data);
+      const routeVersionId = outputRouteVersionId(normalized);
+      if (routeVersionId !== 'v1-2') {
+        navigate(versionPath(routeVersionId), {
+          state: { output: normalized } satisfies VersionRouteState,
+        });
+        return;
+      }
+      setResult(normalized);
       setActiveSavedId(id);
       setAppState('result');
     } catch {

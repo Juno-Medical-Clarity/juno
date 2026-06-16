@@ -1,9 +1,9 @@
-import { useState, useRef, useCallback, type ReactNode } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useRef, useCallback, useEffect, type ReactNode } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import { SIMPLIFY_API_PATH } from '../../config';
-import { versionPath } from '../../router';
+import { versionPath, type VersionRouteState } from '../../router';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
 import { outputRouteVersionId } from '../../utils/outputVersion';
@@ -667,6 +667,7 @@ function LegacyResultView({ result }: { result: LegacyResult }) {
 
 export default function V1Page() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [appState, setAppState] = useState<AppState>('upload');
   const [selectedVersion, setSelectedVersion] = useState('v1');
   const [file, setFile] = useState<File | null>(null);
@@ -675,6 +676,15 @@ export default function V1Page() {
   const [result, setResult] = useState<SimplifyResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    const output = (location.state as VersionRouteState | null)?.output;
+    if (!output || outputRouteVersionId(output) !== 'v1') return;
+
+    setResult(output.simplified_care_plan as unknown as SimplifyResult);
+    setAppState('result');
+    navigate(location.pathname, { replace: true, state: null });
+  }, [location.pathname, location.state, navigate]);
 
   // ── File handlers ──────────────────────────────────────────────────────────
 
@@ -771,7 +781,10 @@ export default function V1Page() {
               const normalized = normalizeSimplifyOutput(event.data);
               const routeVersionId = outputRouteVersionId(normalized);
               if (routeVersionId !== 'v1') {
-                navigate(versionPath(routeVersionId));
+                navigate(versionPath(routeVersionId), {
+                  replace: true,
+                  state: { output: normalized } satisfies VersionRouteState,
+                });
                 return;
               }
               setResult(normalized.simplified_care_plan as unknown as SimplifyResult);

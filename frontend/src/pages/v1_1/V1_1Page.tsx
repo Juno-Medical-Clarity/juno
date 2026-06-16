@@ -1,12 +1,12 @@
 import './V1_1Page.css';
-import { useCallback, useRef, useState, type ReactNode } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import MedicalTerm from '../../components/MedicalTerm';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import { SIMPLIFY_API_PATH } from '../../config';
-import { versionPath } from '../../router';
+import { versionPath, type VersionRouteState } from '../../router';
 import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
 import { outputRouteVersionId } from '../../utils/outputVersion';
 
@@ -456,6 +456,7 @@ function AppointmentNoteV11View({ result }: { result: AppointmentNote }) {
 
 export default function V1_1Page() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
   const [selectedVersion, setSelectedVersion] = useState('v1-1');
@@ -466,6 +467,15 @@ export default function V1_1Page() {
   const [result, setResult] = useState<AppointmentNote | null>(null);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    const output = (location.state as VersionRouteState | null)?.output;
+    if (!output || outputRouteVersionId(output) !== 'v1-1') return;
+
+    setResult(output.simplified_care_plan as unknown as AppointmentNote);
+    setAppState('result');
+    navigate(location.pathname, { replace: true, state: null });
+  }, [location.pathname, location.state, navigate]);
 
   const handleFile = useCallback((selectedFile: File) => {
     const extension = selectedFile.name.split('.').pop()?.toLowerCase();
@@ -564,7 +574,10 @@ export default function V1_1Page() {
               const normalized = normalizeSimplifyOutput(event.data);
               const routeVersionId = outputRouteVersionId(normalized);
               if (routeVersionId !== 'v1-1') {
-                navigate(versionPath(routeVersionId));
+                navigate(versionPath(routeVersionId), {
+                  replace: true,
+                  state: { output: normalized } satisfies VersionRouteState,
+                });
                 return;
               }
               setResult(normalized.simplified_care_plan as unknown as AppointmentNote);
