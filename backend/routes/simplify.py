@@ -50,6 +50,7 @@ STEPS = {
 }
 
 ALLOWED_EXTENSIONS = {"pdf", "txt", "docx"}
+ALLOWED_VERSIONS = {"v1", "v1-1", "v1-2"}
 MAX_FILE_BYTES = 10 * 1024 * 1024  # 10 MB
 
 
@@ -87,25 +88,22 @@ def _extract_text(file_bytes: bytes, filename: str) -> str:
 
 # ── Endpoints ─────────────────────────────────────────────────────────────────
 
-@simplify_bp.route("/simplify/v1", methods=["POST"])
-@verify_firebase_token
-def simplify_document_v1(user_id: str):
-    """Stream V1 simplification pipeline progress + result via SSE."""
-    _ = user_id
-
-    return _simplify_document_v1()
-
-
 @simplify_bp.route("/simplify", methods=["POST"])
 @verify_firebase_token
 def simplify_document(user_id: str):
     """Stream simplification pipeline progress + result via SSE."""
     _ = user_id
 
-    if SIMPLIFY_DEFAULT_VERSION == "v1-2":
+    json_body = request.get_json(silent=True) or {}
+    version = request.form.get("version") or json_body.get("version") or SIMPLIFY_DEFAULT_VERSION
+
+    if version not in ALLOWED_VERSIONS:
+        return {"error": f"Unknown version '{version}'"}, 400
+
+    if version == "v1-2":
         return simplify_v1_2()
 
-    if SIMPLIFY_DEFAULT_VERSION == "v1-1":
+    if version == "v1-1":
         return simplify_v1_1()
 
     return _simplify_document_v1()

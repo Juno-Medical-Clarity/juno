@@ -8,10 +8,12 @@ from unittest.mock import ANY, patch
 from flask import Flask
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
-if str(BACKEND_DIR) not in sys.path:
-    sys.path.insert(0, str(BACKEND_DIR))
+PROJECT_DIR = BACKEND_DIR.parent
+for path in (PROJECT_DIR, BACKEND_DIR):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
 
-from routes.simplify_v1_2 import simplify_v1_2_bp
+from routes import all_blueprints
 
 
 class FakePipeline:
@@ -28,7 +30,8 @@ class FakePipeline:
 class SimplifyV12PersistenceTest(unittest.TestCase):
     def setUp(self):
         app = Flask(__name__)
-        app.register_blueprint(simplify_v1_2_bp)
+        for blueprint in all_blueprints:
+            app.register_blueprint(blueprint)
         self.client = app.test_client()
 
     def _events_from_response(self, response):
@@ -75,9 +78,10 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         _verify_token,
     ):
         response = self.client.post(
-            "/simplify/v1-2",
+            "/simplify",
             headers={"Authorization": "Bearer token"},
             data={
+                "version": "v1-2",
                 "files": [
                     (io.BytesIO(b"first note"), "a.txt"),
                     (io.BytesIO(b"second note"), "b.txt"),
@@ -133,9 +137,12 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         _verify_token,
     ):
         response = self.client.post(
-            "/simplify/v1-2",
+            "/simplify",
             headers={"Authorization": "Bearer token"},
-            data={"files": [(self._docx_bytes("docx clinical note"), "visit.docx")]},
+            data={
+                "version": "v1-2",
+                "files": [(self._docx_bytes("docx clinical note"), "visit.docx")],
+            },
             content_type="multipart/form-data",
         )
 
@@ -148,9 +155,10 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
     def test_multi_file_upload_rejects_too_many_files(self, _verify_token):
         with self.assertLogs("utils.juno_logger", level="ERROR"):
             response = self.client.post(
-                "/simplify/v1-2",
+                "/simplify",
                 headers={"Authorization": "Bearer token"},
                 data={
+                    "version": "v1-2",
                     "files": [
                         (io.BytesIO(f"note {index}".encode("utf-8")), f"{index}.txt")
                         for index in range(11)
@@ -171,9 +179,10 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
     ):
         with self.assertLogs("utils.juno_logger", level="ERROR"):
             response = self.client.post(
-                "/simplify/v1-2",
+                "/simplify",
                 headers={"Authorization": "Bearer token"},
                 data={
+                    "version": "v1-2",
                     "files": [
                         (io.BytesIO(b"abcdef"), "a.txt"),
                         (io.BytesIO(b"ghijkl"), "b.txt"),
@@ -215,9 +224,9 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         _verify_token,
     ):
         response = self.client.post(
-            "/simplify/v1-2",
+            "/simplify",
             headers={"Authorization": "Bearer token"},
-            data={"doc_id": "legacy-doc"},
+            data={"version": "v1-2", "doc_id": "legacy-doc"},
         )
 
         events = self._events_from_response(response)
@@ -255,9 +264,9 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
     ):
         with self.assertLogs("utils.juno_logger", level="ERROR") as logs:
             response = self.client.post(
-                "/simplify/v1-2",
+                "/simplify",
                 headers={"Authorization": "Bearer token"},
-                data={"text": "plain note"},
+                data={"version": "v1-2", "text": "plain note"},
             )
             events = self._events_from_response(response)
 

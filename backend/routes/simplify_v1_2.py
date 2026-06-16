@@ -1,7 +1,7 @@
 """
-simplify_v1_2.py - V1.2 simplification route.
+simplify_v1_2.py - V1.2 simplification handler.
 
-POST /simplify/v1-2
+Invoked by POST /simplify with version=v1-2.
   Accepts one of:
     A) multipart/form-data with 'file' field (PDF, TXT, DOCX)
     B) multipart/form-data or application/json with 'text' field
@@ -32,7 +32,6 @@ from utils.pdf_extract import extract_text_from_pdf
 from utils.save_output import save_simplify_output, upload_combined_pdf
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
-from utils.auth import verify_firebase_token
 from utils.juno_logger import JunoLogger, monotonic_ms
 from utils.juno_metrics import JunoMetrics
 from backend.models.metrics import Metrics
@@ -526,10 +525,9 @@ def _generate_stream(user_id: str):
         yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
 
 
-@simplify_v1_2_bp.route("/simplify/v1-2", methods=["POST"])
-@verify_firebase_token
-def simplify_v1_2(user_id: str):
+def simplify_v1_2():
     """Stream V1.2 simplification pipeline via SSE."""
+    user_id = getattr(g, "user_id", "")
     return Response(
         stream_with_context(_generate_stream(user_id)),
         content_type="text/event-stream",
