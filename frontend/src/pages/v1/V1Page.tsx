@@ -5,6 +5,8 @@ import { authenticatedFetch } from '../../api/apiClient';
 import { SIMPLIFY_API_PATH } from '../../config';
 import { versionPath } from '../../router';
 import ConfigurationCard from '../../components/ConfigurationCard';
+import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
+import { outputRouteVersionId } from '../../utils/outputVersion';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -759,14 +761,20 @@ export default function V1Page() {
               step: number | 'result';
               status?: 'active' | 'done';
               label?: string;
-              data?: SimplifyResult;
+              data?: unknown;
               error?: string;
             };
 
             if (event.error) throw new Error(event.error);
 
             if (event.step === 'result' && event.data) {
-              setResult(event.data);
+              const normalized = normalizeSimplifyOutput(event.data);
+              const routeVersionId = outputRouteVersionId(normalized);
+              if (routeVersionId !== 'v1') {
+                navigate(versionPath(routeVersionId));
+                return;
+              }
+              setResult(normalized.simplified_care_plan as unknown as SimplifyResult);
               setAppState('result');
             } else if (typeof event.step === 'number' && event.status) {
               updateStep(event.step, event.status);

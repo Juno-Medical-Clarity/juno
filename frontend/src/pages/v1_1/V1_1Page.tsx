@@ -7,6 +7,8 @@ import MedicalTerm from '../../components/MedicalTerm';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import { SIMPLIFY_API_PATH } from '../../config';
 import { versionPath } from '../../router';
+import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
+import { outputRouteVersionId } from '../../utils/outputVersion';
 
 type StepStatus = 'waiting' | 'active' | 'done';
 type UrgencyLevel = 'immediate' | 'soon' | 'routine' | 'informational';
@@ -552,14 +554,20 @@ export default function V1_1Page() {
             const event = JSON.parse(payload) as {
               step: number | 'result';
               status?: 'active' | 'done';
-              data?: AppointmentNote;
+              data?: unknown;
               error?: string;
             };
 
             if (event.error) throw new Error(event.error);
 
             if (event.step === 'result' && event.data) {
-              setResult(event.data);
+              const normalized = normalizeSimplifyOutput(event.data);
+              const routeVersionId = outputRouteVersionId(normalized);
+              if (routeVersionId !== 'v1-1') {
+                navigate(versionPath(routeVersionId));
+                return;
+              }
+              setResult(normalized.simplified_care_plan as unknown as AppointmentNote);
               setAppState('result');
             } else if (typeof event.step === 'number' && event.status) {
               updateStep(event.step, event.status);

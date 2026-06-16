@@ -81,8 +81,8 @@ export default function PresetDatasetModal({ onClose, onProcessComplete }: Prese
         try {
           const event = JSON.parse(payload);
           if (event.error) throw new Error(event.error);
-          if (event.step === 'result' && event.data?.saved_id) {
-            savedId = event.data.saved_id as string;
+          if (event.step === 'result') {
+            savedId = event.data?.metrics?.saved_id ?? event.data?.saved_id ?? savedId;
           }
         } catch { /* skip */ }
       }

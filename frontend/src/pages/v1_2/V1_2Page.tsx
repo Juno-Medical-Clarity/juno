@@ -16,6 +16,7 @@ import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import { SIMPLIFY_API_PATH } from '../../config';
 import { versionPath } from '../../router';
+import { outputRouteVersionId } from '../../utils/outputVersion';
 
 const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
@@ -139,6 +140,11 @@ export default function V1_2Page() {
 
             if (event.step === 'result' && event.data) {
               const normalized = normalizeSimplifyOutput(event.data);
+              const routeVersionId = outputRouteVersionId(normalized);
+              if (routeVersionId !== 'v1-2') {
+                navigate(versionPath(routeVersionId));
+                return;
+              }
               setResult(normalized);
               setAppState('result');
               const savedId = normalized.metrics.saved_id;
