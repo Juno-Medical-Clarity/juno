@@ -1,0 +1,221 @@
+.preset-data-card {
+  margin-top: 16px;
+  padding: 16px 18px;
+}
+
+.preset-data-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.preset-data-card-title {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.preset-data-card-summary {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+.preset-data-toggle,
+.preset-data-view-button {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 10px;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.preset-data-toggle:hover,
+.preset-data-view-button:hover:not(:disabled) {
+  background: var(--surface-hover);
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.preset-data-view-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.preset-data-card-body {
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 14px;
+}
+
+.preset-data-status {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 8px 0;
+}
+
+.preset-data-status.error {
+  color: #b91c1c;
+}
+
+.preset-data-group {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.preset-data-group-main {
+  align-items: center;
+  background: rgba(124, 58, 237, 0.03);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  padding: 10px 12px;
+}
+
+.preset-data-group-label {
+  align-items: center;
+  color: var(--text-primary);
+  display: flex;
+  gap: 10px;
+  min-width: 0;
+}
+
+.preset-data-checkbox {
+  accent-color: var(--accent-violet);
+  height: 16px;
+  width: 16px;
+}
+
+.preset-data-group-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.preset-data-group-meta {
+  color: var(--text-secondary);
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.preset-data-tabs {
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px 0;
+}
+
+.preset-data-tab {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+}
+
+.preset-data-tab.active {
+  background: var(--accent-violet);
+  border-color: var(--accent-violet);
+  color: #ffffff;
+}
+
+.preset-data-list {
+  display: grid;
+  gap: 6px;
+  padding: 10px 12px 12px;
+}
+
+.preset-data-option {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  display: flex;
+  gap: 10px;
+  min-height: 34px;
+  padding: 5px 6px;
+}
+
+.preset-data-option:hover {
+  background: var(--surface-hover);
+  border-color: var(--border);
+}
+
+.preset-data-option-text {
+  flex: 1;
+  font-size: 0.84rem;
+  line-height: 1.35;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.preset-data-file-label {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  min-width: 0;
+}
+
+.preset-data-preview {
+  background: rgba(26, 19, 64, 0.03);
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 8px;
+  padding: 10px 12px 12px;
+}
+
+.preset-data-preview-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.preset-data-preview-title {
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.preset-data-preview-close {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 0.85rem;
+  padding: 2px 4px;
+}
+
+.preset-data-preview-content {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.76rem;
+  line-height: 1.55;
+  max-height: 220px;
+  overflow: auto;
+  padding: 10px;
+  white-space: pre-wrap;
+}

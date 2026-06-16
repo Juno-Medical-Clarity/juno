@@ -5,15 +5,16 @@ import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
-import PresetDatasetModal from './PresetDatasetModal';
 import SplitView from '../../components/SplitView';
 import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/simplify';
 import type { SimplifyOutput } from '../../types/envelope';
+import type { BatchDatasetSelection } from '../../types/datasets';
 import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
 import AppointmentNoteV12View from '../../components/AppointmentNoteV12View';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
+import PresetDataCard from '../../components/PresetDataCard';
 import { SIMPLIFY_API_PATH } from '../../config';
 import { versionPath, type VersionRouteState } from '../../router';
 import { outputRouteVersionId } from '../../utils/outputVersion';
@@ -47,8 +48,8 @@ export default function V1_2Page() {
   const abortRef = useRef<AbortController | null>(null);
   const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
   const [sidebarRefresh, setSidebarRefresh] = useState(0);
-  const [showPresetModal, setShowPresetModal] = useState(false);
   const [showSplitView, setShowSplitView] = useState(false);
+  const [presetDataSelection, setPresetDataSelection] = useState<BatchDatasetSelection[]>([]);
 
   useEffect(() => {
     const output = (location.state as VersionRouteState | null)?.output;
@@ -90,6 +91,7 @@ export default function V1_2Page() {
   }, []);
 
   const canSubmit = inputMode === 'file' ? files.length > 0 : textInput.trim().length > 0;
+  const presetDataSelectionCount = presetDataSelection.length;
 
   const handleVersionChange = (versionId: string) => {
     setSelectedVersion(versionId);
@@ -260,7 +262,7 @@ export default function V1_2Page() {
       <div className="page-wrapper">
         <div className="container">
           {appState === 'upload' && (
-            <section className="upload-section">
+            <section className="upload-section" data-preset-selection-count={presetDataSelectionCount}>
               <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
               <div className="glass-card" style={{ padding: '32px' }}>
                 <div className="input-tabs">
@@ -324,19 +326,8 @@ export default function V1_2Page() {
                 <button className="cta-btn" disabled={!canSubmit} onClick={handleSubmit}>
                   Simplify My Note →
                 </button>
-                <div style={{ textAlign: 'center', marginTop: '12px' }}>
-                  <button
-                    onClick={() => setShowPresetModal(true)}
-                    style={{
-                      background: 'none', border: 'none', color: 'var(--text-secondary)',
-                      fontSize: '0.8rem', cursor: 'pointer', fontFamily: 'Inter, sans-serif',
-                      textDecoration: 'underline',
-                    }}
-                  >
-                    Or run a preset dataset (multiple processes)
-                  </button>
-                </div>
               </div>
+              <PresetDataCard onSelectionChange={setPresetDataSelection} />
             </section>
           )}
 
@@ -424,14 +415,6 @@ export default function V1_2Page() {
       </div>
       </div>
       </div>
-      {showPresetModal && (
-        <PresetDatasetModal
-          onClose={() => setShowPresetModal(false)}
-          onProcessComplete={(_savedId, _name) => {
-            setSidebarRefresh(r => r + 1);
-          }}
-        />
-      )}
       {showSplitView && result && activeSavedId && (
         <SplitView
           savedId={activeSavedId}
