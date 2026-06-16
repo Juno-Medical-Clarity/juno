@@ -91,6 +91,8 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         result_event = events[-1]
         self.assertEqual(result_event["step"], "result")
         self.assertEqual(result_event["data"]["metrics"]["saved_id"], "saved-123")
+        self.assertIsNotNone(result_event["data"]["metrics"]["session_id"])
+        self.assertIsInstance(result_event["data"]["metrics"]["session_id"], str)
         self.assertIn("first note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
         self.assertIn("second note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
         self.assertIn("Source: a.txt", result_event["data"]["simplified_care_plan"]["raw"]["text"])
@@ -223,6 +225,8 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         self.assertEqual(result_event["step"], "result")
         self.assertIn("stored note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
         self.assertIsNone(result_event["data"]["metrics"]["saved_id"])
+        self.assertIsNotNone(result_event["data"]["metrics"]["session_id"])
+        self.assertIsInstance(result_event["data"]["metrics"]["session_id"], str)
         merge_pdfs.assert_called_once_with(ANY)
         upload_combined_pdf.assert_not_called()
         save_simplify_output.assert_not_called()
@@ -261,6 +265,8 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         result_event = events[-1]
         self.assertEqual(result_event["step"], "result")
         self.assertIsNone(result_event["data"]["metrics"]["saved_id"])
+        self.assertIsNotNone(result_event["data"]["metrics"]["session_id"])
+        self.assertIsInstance(result_event["data"]["metrics"]["session_id"], str)
         save_simplify_output.assert_called_once()
         self.assertIn("failed to save output", "\n".join(logs.output))
 
