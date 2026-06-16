@@ -7,6 +7,9 @@ export function isLegacyShape(data: any): boolean {
 }
 
 export function normalizeSimplifyOutput(raw: any): SimplifyOutput {
+  if (raw == null) {
+    throw new Error('normalizeSimplifyOutput: received null or undefined output data');
+  }
   if (!isLegacyShape(raw)) return raw as SimplifyOutput;
 
   // Legacy flat shape: everything except saved_id is the care plan itself.
