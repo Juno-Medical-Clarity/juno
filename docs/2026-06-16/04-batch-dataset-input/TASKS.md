@@ -213,7 +213,7 @@ or temporary on-screen state dump during development, removed before considering
 
 ### Task 9 — Frontend: wire batch submission into the upload screen
 
-**File:** `frontend/src/pages/simplify/SimplifyPage.tsx` (from Sub-project 2)
+**File:** `frontend/src/pages/v1_2/V1_2Page.tsx` (actual current upload screen for v1-2)
 
 1. Render `<PresetDataCard onSelectionChange={...} />` below the existing upload-data card and above
    the Configuration card.
