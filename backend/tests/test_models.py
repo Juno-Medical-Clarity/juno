@@ -389,5 +389,132 @@ class TestSimplifiedCarePlan(unittest.TestCase):
         from backend.models import SimplifiedCarePlan  # noqa: F401
 
 
+class TestSimplifyOutput(unittest.TestCase):
+    """Tests for SimplifyOutput envelope and is_legacy_shape helper."""
+
+    def _make_output(self):
+        """Build a representative SimplifyOutput instance."""
+        from backend.models.care_plan import SimplifiedCarePlan
+        from backend.models.envelope import SimplifyOutput
+
+        metrics = Metrics(
+            session_id="sess-001",
+            pipeline_version="v1-2",
+            input_type="file",
+            created_at="2026-06-16T12:00:00+00:00",
+            total_duration_ms=4213.5,
+            step_durations_ms={"find_medical_terms": 812.1},
+            saved_id="doc-42",
+        )
+        inp = Input(
+            mode="file",
+            files=[InputFile("visit.pdf", "application/pdf", 88210)],
+        )
+        grading = Grading(entries=[])
+        care_plan = SimplifiedCarePlan.from_pipeline_result(
+            "1.2",
+            {"doc_type": "appointment_note", "diagnosis": {"primary": "hypertension"}},
+        )
+        return SimplifyOutput(
+            metrics=metrics,
+            input=inp,
+            grading=grading,
+            simplified_care_plan=care_plan,
+        )
+
+    def test_to_dict_produces_exact_nested_shape(self):
+        """SimplifyOutput.to_dict() must produce the PRD §5 'After' top-level shape."""
+        from backend.models.envelope import SimplifyOutput
+
+        output = self._make_output()
+        d = output.to_dict()
+
+        # Top-level keys
+        self.assertIn("metrics", d)
+        self.assertIn("input", d)
+        self.assertIn("grading", d)
+        self.assertIn("simplified_care_plan", d)
+        self.assertEqual(set(d.keys()), {"metrics", "input", "grading", "simplified_care_plan"})
+
+    def test_to_dict_metrics_shape(self):
+        """metrics sub-dict must match Metrics.to_dict() output."""
+        output = self._make_output()
+        d = output.to_dict()
+
+        self.assertEqual(d["metrics"]["session_id"], "sess-001")
+        self.assertEqual(d["metrics"]["pipeline_version"], "v1-2")
+        self.assertEqual(d["metrics"]["input_type"], "file")
+        self.assertEqual(d["metrics"]["total_duration_ms"], 4213.5)
+        self.assertEqual(d["metrics"]["step_durations_ms"], {"find_medical_terms": 812.1})
+        self.assertEqual(d["metrics"]["saved_id"], "doc-42")
+
+    def test_to_dict_input_shape(self):
+        """input sub-dict must contain mode=file and one file entry."""
+        output = self._make_output()
+        d = output.to_dict()
+
+        self.assertEqual(d["input"]["mode"], "file")
+        self.assertEqual(len(d["input"]["files"]), 1)
+        self.assertEqual(d["input"]["files"][0]["filename"], "visit.pdf")
+        self.assertEqual(d["input"]["files"][0]["content_type"], "application/pdf")
+        self.assertEqual(d["input"]["files"][0]["size_bytes"], 88210)
+        self.assertIsNone(d["input"]["text"])
+        self.assertIsNone(d["input"]["doc_id"])
+
+    def test_to_dict_grading_shape(self):
+        """grading sub-dict must equal {'entries': []}."""
+        output = self._make_output()
+        d = output.to_dict()
+        self.assertEqual(d["grading"], {"entries": []})
+
+    def test_to_dict_care_plan_shape(self):
+        """simplified_care_plan sub-dict must be flat (no nested 'data' key)."""
+        output = self._make_output()
+        d = output.to_dict()
+
+        cp = d["simplified_care_plan"]
+        self.assertEqual(cp["version"], "1.2")
+        self.assertEqual(cp["doc_type"], "appointment_note")
+        self.assertEqual(cp["diagnosis"], {"primary": "hypertension"})
+        self.assertNotIn("data", cp)
+
+    def test_package_exports(self):
+        """SimplifyOutput and is_legacy_shape must be importable from backend.models."""
+        from backend.models import SimplifyOutput, is_legacy_shape  # noqa: F401
+
+    def test_is_legacy_shape_returns_true_for_flat_dict(self):
+        """is_legacy_shape must return True when 'simplified_care_plan' key is absent."""
+        from backend.models.envelope import is_legacy_shape
+
+        flat_legacy = {"session_id": "s", "doc_type": "note", "diagnosis": {}}
+        self.assertTrue(is_legacy_shape(flat_legacy))
+
+    def test_is_legacy_shape_returns_false_for_new_shape(self):
+        """is_legacy_shape must return False when 'simplified_care_plan' key is present."""
+        from backend.models.envelope import is_legacy_shape
+
+        new_shape = {
+            "metrics": {},
+            "input": {},
+            "grading": {},
+            "simplified_care_plan": {},
+        }
+        self.assertFalse(is_legacy_shape(new_shape))
+
+    def test_is_legacy_shape_empty_dict(self):
+        """is_legacy_shape must return True for an empty dict."""
+        from backend.models.envelope import is_legacy_shape
+
+        self.assertTrue(is_legacy_shape({}))
+
+    def test_simplify_output_inherits_json_model(self):
+        """SimplifyOutput must be a JsonModel subclass."""
+        from backend.models.base import JsonModel
+        from backend.models.envelope import SimplifyOutput
+
+        output = self._make_output()
+        self.assertIsInstance(output, JsonModel)
+
+
 if __name__ == "__main__":
     unittest.main()
