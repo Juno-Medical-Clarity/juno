@@ -10,7 +10,10 @@ order strictly, and stop at the flagged checkpoints.
 **File:** `backend/routes/simplify_v1_2.py`
 
 Refactor `_generate_stream(user_id)` into two pieces:
-1. `run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str, None, None]`
+1. Extract request/input resolution into a small helper that returns resolved text and input
+   metadata. This helper handles user-uploaded files/text for single runs; batch runs will build the
+   same resolved text shape from group/input selections before calling the executor.
+2. `run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str, None, None]`
    — everything from "Step 1: extract medical terms" onward in the current function body, parameterized
    on `text` instead of reading it from `resolved`/`request`. It still does its own SSE `yield`s for
    step progress, builds `SimplifiedCarePlan`/`Grading` as already wired in Sub-projects 1/3, and as
@@ -145,26 +148,27 @@ these as `None`).
 
 **File (new):** `backend/routes/batch.py`, registered in `backend/routes/__init__.py`
 
-⚠️ Before writing this, confirm the multi-group `batch_group_id` naming with the user (PRD.md §8) if
-not already confirmed.
-
 Implement per PRD.md §4 "Per-input execution" and "SSE shape for the batch endpoint":
 1. Parse `version`, `grading_enabled`, `selections` from the JSON body.
 2. Resolve `"inputs": "all"` against a fresh `list_datasets()` call (don't trust a stale client list).
-3. Compute `batch_group_id` (single-group vs multi-group naming per PRD.md §4/§8).
+3. Compute group-scoped batch identifiers using one timestamp per request:
+   `batch_group_id = f"{group}-{timestamp}"`. A multi-group request produces multiple identifiers,
+   one per group, never `Batch-<timestamp>`.
 4. Build a flat, ordered list of `(group, input_id, files)` tuples across all selections, sorted by
    group then input id.
 5. For each tuple, sequentially: read+extract+concatenate the selected files via Task 3/4's helpers,
    build `Metrics`/`Input` (using `Input.from_batch_dataset(...)` from Task 5), call the matching
    `run_v{version}_pipeline(...)` from Tasks 1–2, forward its SSE yields wrapped in the
    `batch_progress` envelope described in PRD.md §4, save the resulting `SimplifyOutput` individually
-   via the existing `save_simplify_output`, and collect it into a results list.
-6. After all inputs are processed, yield the final `batch_result` event with `batch_group_id` and all
-   collected outputs.
+   via the existing `save_simplify_output`, storing `dataset_group` and `batch_group_id` as top-level
+   metadata for that saved result, and collect it into a results list.
+6. After all inputs are processed, yield the final `batch_result` event with `batch_group_ids`
+   (a map of group name to group-scoped identifier) and all collected outputs.
 
 **Acceptance criteria:** Per PRD.md §7's batch route tests (use a stubbed/mocked pipeline executor in
 tests — don't make real LLM calls in automated tests; mock `run_v1_2_pipeline` etc. to return a fixed
-`SimplifyOutput` and assert call order + count).
+`SimplifyOutput` and assert call order + count). Multi-group tests must assert distinct
+group-scoped IDs, e.g. `GroupA-<timestamp>` and `GroupB-<timestamp>`.
 
 **Depends on:** Tasks 1, 2, 4, 5.
 
@@ -243,7 +247,8 @@ Cover PRD.md §7 in full, plus Task 1/2's behavior-neutrality tests.
 
 ## Summary of what requires you (not a dev agent)
 
-1. **Confirm multi-group `batch_group_id` naming** before Task 6.
-2. **Add a real populated dataset** under `preset-data/` before Task 9 can be manually verified
+1. **Add a real populated dataset** under `preset-data/` before Task 9 can be manually verified
    end-to-end (or explicitly approve using synthetic fixtures left in the repo for this purpose).
+2. **Post-deploy spot check:** metadata-based grouping has been checked now and can be spot checked
+   after deploy.
 3. **Recommended (not blocking):** review the Task 1 refactor before Tasks 5–9 build on top of it.

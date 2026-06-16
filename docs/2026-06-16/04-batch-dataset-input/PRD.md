@@ -54,9 +54,11 @@ the runs from one submission tagged so Sub-project 5 can group them in the outpu
 **Required refactor (beyond Sub-project 2's scope).** Today, each version's pipeline execution
 (per-step SSE yielding, scoring, structuring) lives inline inside a single Flask view function that
 also parses the incoming HTTP request (file uploads, form fields). To run the same pipeline N times in
-one batch request — once per selected input — that execution logic needs to be callable independently
-of parsing a fresh HTTP request each time. This sub-project extracts each version's core executor into
-a plain function, e.g. in `simplify_v1_2.py`:
+one batch request — once per selected input — request input resolution needs to be extracted first,
+then each individual process from the batch can be run through the same executor. The resolved input
+can come from a few files uploaded by a user, or from one or more group/individual process selections
+based on uploaded/preset data. This sub-project extracts each version's core executor into a plain
+function, e.g. in `simplify_v1_2.py`:
 ```python
 def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str, None, SimplifyOutput]:
     ...  # the existing step-by-step body of _generate_stream, minus the request-parsing prologue
@@ -124,12 +126,12 @@ POST /simplify/batch
 `"inputs": "all"` expands server-side to every input currently in that group (re-resolved at request
 time, not from a stale client-side list).
 
-**Batch identifier (assumption flagged for your confirmation).** Per your `DocConv-timestamp` example:
-when a batch's selections span exactly one group, `batch_group_id = f"{group}-{timestamp}"` (e.g.
-`DocConv-20260616153012`). When a batch spans multiple groups (the "across groups" case), there's no
-single group name to use — this PRD proposes `batch_group_id = f"Batch-{timestamp}"` for that case.
-You didn't specify a multi-group naming convention; flagged in TASKS.md as worth a quick confirmation
-before Task 6, easy to change either way.
+**Batch identifier.** A "batch" is group-scoped. Each selected group gets its own
+`batch_group_id = f"{group}-{timestamp}"` (e.g. `DocConv-20260616153012`). If one submission spans
+multiple groups, each group's outputs keep their own group-specific identifier (for example
+`DocConv-20260616153012` and `OtherDataset-20260616153012`), rather than being collapsed under a
+generic `Batch-<timestamp>` value. The output file/result also includes the dataset group identifier
+so downstream output history can keep results attached to the correct group.
 
 **Per-input execution.** For each selected input (in selection order, each group's inputs in sorted
 order, fully sequential — no concurrency): read the selected files via `read_dataset_file`, extract
@@ -144,6 +146,10 @@ Input(mode="batch_dataset", text=combined_text, dataset_group=group, dataset_inp
 (extends the Sub-project 1 `Input` model with four new optional fields — additive, no version bump
 needed per the established "Input is not versioned" rule).
 
+Each saved output also stores `dataset_group` and `batch_group_id` as top-level metadata alongside the
+output payload. The group value is metadata about the source/result; the backend does not interpret
+raw input bytes for this purpose.
+
 **No GCS-stored combined PDF for batch runs.** Manual uploads store a combined PDF of the original
 input in GCS so it can be re-downloaded later. Batch runs skip this — the source files already live
 permanently in `preset-data/` in the repo, so there's nothing additional worth duplicating into GCS.
@@ -155,7 +161,7 @@ Flagged as a deliberate scope reduction, not an oversight.
 ...(the same per-step events the single-run pipeline already emits, nested under this input)...
 { "step": "batch_progress", "input": "input-1", "index": 1, "total": 10, "status": "done" }
 ... (repeat per input) ...
-{ "step": "batch_result", "data": { "batch_group_id": "DocConv-20260616153012", "outputs": [ <SimplifyOutput>, ... ] } }
+{ "step": "batch_result", "data": { "batch_group_ids": { "DocConv": "DocConv-20260616153012" }, "outputs": [ <SimplifyOutput>, ... ] } }
 ```
 Each individual `SimplifyOutput` in `outputs` is also saved to Firestore individually (so Sub-project
 5's history view, and the existing single-output Sidebar/CRUD endpoints, work unchanged on each one) —
@@ -193,14 +199,14 @@ Plus the internal-only refactor described above (no URL changes to existing sing
 - Route test: `POST /simplify/batch` with a 2-input, single-group selection asserts 2 saved outputs
   created, both sharing the same `batch_group_id`, runs in input-sorted order (assert via a stub/mock
   pipeline that records call order, rather than real LLM calls in tests).
-- Route test: multi-group selection produces `Batch-<timestamp>` naming.
+- Route test: multi-group selection produces one group-scoped `batch_group_id` per selected group.
 - Frontend manual run: build a small local test dataset under `preset-data/` (e.g. 3 folders each with
   a `transcript.txt`+`notes.txt`), confirm the card lists it, selection/view/run all work end-to-end.
 
 ## 8. Manual Intervention Required From You
 
-- **Confirm the multi-group `batch_group_id` naming** (`Batch-<timestamp>` when selections span more
-  than one group) — §4, easy to change before Task 6 if you'd prefer something else.
+- **Post-deploy spot check:** the metadata interpretation has been checked and works now. A
+  post-deploy spot check is sufficient.
 - **Add real test data** under `preset-data/` before this can be manually verified end-to-end — the
   repo currently only has an empty placeholder (`preset-data/example/sample-note/.gitkeep`, no actual
   files). A dev agent can build synthetic fixtures for automated tests, but verifying the real UX
