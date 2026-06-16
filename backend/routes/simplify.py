@@ -17,6 +17,7 @@ File is held in memory only — never written to GCS or Firestore.
 import io
 import json
 import logging
+from typing import Generator
 
 from config import SIMPLIFY_DEFAULT_VERSION
 from flask import Blueprint, g, request, Response, stream_with_context
@@ -86,6 +87,128 @@ def _extract_text(file_bytes: bytes, filename: str) -> str:
     raise ValueError(f"Unsupported file extension: {ext}")
 
 
+def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str, None, None]:
+    _ = grading_enabled
+    pipeline_start = monotonic_ms()
+
+    try:
+        pipeline = V1Pipeline()
+
+        # ── Score original text (silent — no SSE event) ───────────────────
+        try:
+            before_score = score_text(text)
+        except Exception:
+            logger.exception("simplify: before-score failed — continuing without score")
+            before_score = None
+
+        # ── Step 2: Classify document type ────────────────────────────────
+        yield _sse({"step": 2, "status": "active", "label": STEPS[2]})
+        t0 = monotonic_ms()
+        try:
+            classification = pipeline.classify_document(text)
+            doc_type = classification.get("doc_type", "appointment_note")
+        except Exception:
+            logger.exception("simplify: document classification failed — defaulting to appointment_note")
+            doc_type = "appointment_note"
+        metrics.step_durations_ms["classify_document"] = monotonic_ms() - t0
+        yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
+
+        # ── Detect jargon (silent) ────────────────────────────────────────
+        t0 = monotonic_ms()
+        try:
+            jargon_result = pipeline.detect_jargon(text)
+            medical_jargon = jargon_result["medical_jargon"]
+            complex_terms = jargon_result["complex_terms"]
+        except Exception:
+            logger.exception("simplify: jargon detection failed — continuing without jargon data")
+            medical_jargon = []
+            complex_terms = []
+        metrics.step_durations_ms["detect_jargon"] = monotonic_ms() - t0
+
+        # ── Step 3: Simplify language ─────────────────────────────────────
+        yield _sse({"step": 3, "status": "active", "label": STEPS[3]})
+        t0 = monotonic_ms()
+        try:
+            simplified = pipeline.simplify_language(text, medical_jargon, complex_terms)
+        except Exception as exc:
+            logger.exception("simplify: language simplification failed")
+            yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
+            return
+        metrics.step_durations_ms["simplify_language"] = monotonic_ms() - t0
+        yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
+
+        # ── Step 4: Add definitions ───────────────────────────────────────
+        yield _sse({"step": 4, "status": "active", "label": STEPS[4]})
+        t0 = monotonic_ms()
+        try:
+            with_defs = pipeline.add_definitions(simplified, medical_jargon)
+        except Exception:
+            logger.exception("simplify: definition injection failed — using simplified text")
+            with_defs = simplified
+        metrics.step_durations_ms["add_definitions"] = monotonic_ms() - t0
+        yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
+
+        # ── Step 5: Clarify numbers and actions ───────────────────────────
+        yield _sse({"step": 5, "status": "active", "label": STEPS[5]})
+        t0 = monotonic_ms()
+        try:
+            clarified = pipeline.clarify_and_action(with_defs)
+        except Exception:
+            logger.exception("simplify: clarification step failed — using previous output")
+            clarified = with_defs
+        metrics.step_durations_ms["clarify_and_action"] = monotonic_ms() - t0
+        yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
+
+        # ── Score simplified text (silent — no SSE event) ─────────────────
+        try:
+            after_score = score_text(clarified)
+        except Exception:
+            logger.exception("simplify: after-score failed — continuing without score")
+            after_score = None
+
+        # ── Steps 6 + 7: Structure + questions ───────────────────────────
+        yield _sse({"step": 6, "status": "active", "label": STEPS[6]})
+        yield _sse({"step": 7, "status": "active", "label": STEPS[7]})
+        t0 = monotonic_ms()
+        try:
+            structured = pipeline.structure_document(clarified, medical_jargon, doc_type)
+        except Exception as exc:
+            logger.exception("simplify: document structuring failed")
+            yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
+            return
+        metrics.step_durations_ms["structure_document"] = monotonic_ms() - t0
+        yield _sse({"step": 6, "status": "done", "label": STEPS[6]})
+        yield _sse({"step": 7, "status": "done", "label": STEPS[7]})
+
+        # ── Final result ──────────────────────────────────────────────────
+        result_payload = {**structured}
+        if before_score is not None:
+            result_payload["before_score"] = before_score
+        if after_score is not None:
+            result_payload["after_score"] = after_score
+
+        metrics.total_duration_ms = monotonic_ms() - pipeline_start
+        grading = Grading()
+        care_plan = SimplifiedCarePlan.from_pipeline_result("1.0", result_payload)
+        output = SimplifyOutput(
+            metrics=metrics,
+            input=Input.from_text(text),
+            grading=grading,
+            simplified_care_plan=care_plan,
+        )
+        yield _sse({"step": "result", "data": output.to_dict()})
+
+    except Exception as exc:
+        logger.exception("simplify: unexpected pipeline error")
+        yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
+
+
+def _payload_from_sse(chunk: str) -> dict | None:
+    if not chunk.startswith("data: "):
+        return None
+    return json.loads(chunk.removeprefix("data: ").strip())
+
+
 # ── Endpoints ─────────────────────────────────────────────────────────────────
 
 @simplify_bp.route("/simplify", methods=["POST"])
@@ -134,9 +257,6 @@ def _simplify_document_v1():
 
     # ── Stream generator ──────────────────────────────────────────────────────
     def generate():
-        pipeline = V1Pipeline()
-        pipeline_start = monotonic_ms()
-
         metrics = Metrics.start(
             session_id=getattr(g, "session_id", ""),
             pipeline_version="v1",
@@ -159,114 +279,21 @@ def _simplify_document_v1():
             metrics.step_durations_ms["extract_text"] = monotonic_ms() - t0
             yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
 
-            # ── Score original text (silent — no SSE event) ───────────────────
-            try:
-                before_score = score_text(text)
-            except Exception:
-                logger.exception("simplify: before-score failed — continuing without score")
-                before_score = None
-
-            # ── Step 2: Classify document type ────────────────────────────────
-            yield _sse({"step": 2, "status": "active", "label": STEPS[2]})
-            t0 = monotonic_ms()
-            try:
-                classification = pipeline.classify_document(text)
-                doc_type = classification.get("doc_type", "appointment_note")
-            except Exception:
-                logger.exception("simplify: document classification failed — defaulting to appointment_note")
-                doc_type = "appointment_note"
-            metrics.step_durations_ms["classify_document"] = monotonic_ms() - t0
-            yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
-
-            # ── Detect jargon (silent) ────────────────────────────────────────
-            t0 = monotonic_ms()
-            try:
-                jargon_result = pipeline.detect_jargon(text)
-                medical_jargon = jargon_result["medical_jargon"]
-                complex_terms  = jargon_result["complex_terms"]
-            except Exception:
-                logger.exception("simplify: jargon detection failed — continuing without jargon data")
-                medical_jargon = []
-                complex_terms  = []
-            metrics.step_durations_ms["detect_jargon"] = monotonic_ms() - t0
-
-            # ── Step 3: Simplify language ─────────────────────────────────────
-            yield _sse({"step": 3, "status": "active", "label": STEPS[3]})
-            t0 = monotonic_ms()
-            try:
-                simplified = pipeline.simplify_language(text, medical_jargon, complex_terms)
-            except Exception as exc:
-                logger.exception("simplify: language simplification failed")
-                yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
-                return
-            metrics.step_durations_ms["simplify_language"] = monotonic_ms() - t0
-            yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
-
-            # ── Step 4: Add definitions ───────────────────────────────────────
-            yield _sse({"step": 4, "status": "active", "label": STEPS[4]})
-            t0 = monotonic_ms()
-            try:
-                with_defs = pipeline.add_definitions(simplified, medical_jargon)
-            except Exception as exc:
-                logger.exception("simplify: definition injection failed — using simplified text")
-                with_defs = simplified
-            metrics.step_durations_ms["add_definitions"] = monotonic_ms() - t0
-            yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
-
-            # ── Step 5: Clarify numbers and actions ───────────────────────────
-            yield _sse({"step": 5, "status": "active", "label": STEPS[5]})
-            t0 = monotonic_ms()
-            try:
-                clarified = pipeline.clarify_and_action(with_defs)
-            except Exception as exc:
-                logger.exception("simplify: clarification step failed — using previous output")
-                clarified = with_defs
-            metrics.step_durations_ms["clarify_and_action"] = monotonic_ms() - t0
-            yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
-
-            # ── Score simplified text (silent — no SSE event) ─────────────────
-            try:
-                after_score = score_text(clarified)
-            except Exception:
-                logger.exception("simplify: after-score failed — continuing without score")
-                after_score = None
-
-            # ── Steps 6 + 7: Structure + questions ───────────────────────────
-            yield _sse({"step": 6, "status": "active", "label": STEPS[6]})
-            yield _sse({"step": 7, "status": "active", "label": STEPS[7]})
-            t0 = monotonic_ms()
-            try:
-                structured = pipeline.structure_document(clarified, medical_jargon, doc_type)
-            except Exception as exc:
-                logger.exception("simplify: document structuring failed")
-                yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
-                return
-            metrics.step_durations_ms["structure_document"] = monotonic_ms() - t0
-            yield _sse({"step": 6, "status": "done", "label": STEPS[6]})
-            yield _sse({"step": 7, "status": "done", "label": STEPS[7]})
-
-            # ── Final result ──────────────────────────────────────────────────
-            result_payload = {**structured}
-            if before_score is not None:
-                result_payload["before_score"] = before_score
-            if after_score is not None:
-                result_payload["after_score"] = after_score
-
-            metrics.total_duration_ms = monotonic_ms() - pipeline_start
             try:
                 upload.seek(0)
             except Exception:
                 pass
             input_model = Input.from_file_uploads([upload])
-            grading = Grading()
-            care_plan = SimplifiedCarePlan.from_pipeline_result("1.0", result_payload)
-            output = SimplifyOutput(
-                metrics=metrics,
-                input=input_model,
-                grading=grading,
-                simplified_care_plan=care_plan,
-            )
-            yield _sse({"step": "result", "data": output.to_dict()})
+
+            for chunk in run_v1_pipeline(text, metrics, grading_enabled=False):
+                payload = _payload_from_sse(chunk)
+                if not payload or payload.get("step") != "result":
+                    yield chunk
+                    continue
+
+                result_data = payload["data"]
+                result_data["input"] = input_model.to_dict()
+                yield _sse({"step": "result", "data": result_data})
 
         except Exception as exc:
             logger.exception("simplify: unexpected pipeline error")
