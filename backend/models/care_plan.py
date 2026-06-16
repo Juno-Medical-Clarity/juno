@@ -73,9 +73,10 @@ class SimplifiedCarePlan(VersionedJsonModel):
         return registered_cls(version=version, data=rest)
 
 
-# Register the same class for all three supported versions.
-# Must call register() on SimplifiedCarePlan itself so that entries land in
-# SimplifiedCarePlan._registry (not VersionedJsonModel._registry).
-SimplifiedCarePlan = SimplifiedCarePlan.register("1.0")(SimplifiedCarePlan)
-SimplifiedCarePlan = SimplifiedCarePlan.register("1.1")(SimplifiedCarePlan)
-SimplifiedCarePlan = SimplifiedCarePlan.register("1.2")(SimplifiedCarePlan)
+# Register the same class for all three supported versions by writing directly
+# into the registry dict.  Using the register() decorator would set
+# SimplifiedCarePlan._is_registered = True on the class itself, which causes
+# VersionedJsonModel.from_dict to skip version dispatch and fall back to the
+# plain JsonModel.from_dict path — bypassing SimplifiedCarePlan.from_dict.
+for _version in ("1.0", "1.1", "1.2"):
+    SimplifiedCarePlan._registry[_version] = SimplifiedCarePlan

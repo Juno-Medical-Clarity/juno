@@ -18,7 +18,7 @@ export function normalizeSimplifyOutput(raw: any): SimplifyOutput {
     // pipeline_version uses route format ("v1"/"v1-1"/"v1-2"); care plan version uses schema format ("1.0"/"1.1"/"1.2")
     metrics: {
       session_id: '',
-      pipeline_version: rest.version ?? 'v1',
+      pipeline_version: 'v1',  // legacy documents don't carry pipeline version info
       input_type: 'file',
       created_at: '',
       total_duration_ms: null,

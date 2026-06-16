@@ -470,6 +470,15 @@ def _generate_stream(user_id: str):
             yield _sse({"step": "result", "data": output.to_dict()})
             return
 
+        # Capture total_duration_ms BEFORE saving so the Firestore document has a
+        # valid value.  The save step itself is excluded from the total; that is
+        # acceptable and simpler than a second Firestore write.
+        total_ms = monotonic_ms() - pipeline_start
+        juno_metrics.record_latency("simplify_pipeline", total_ms,
+                                    labels={"version": "v1-2", "input_type": resolved.source_kind})
+        juno_metrics.record_counter("simplify_request", labels={"version": "v1-2"})
+        metrics.total_duration_ms = total_ms
+
         # Save output to Firestore / GCS
         juno_logger.log_step("save_output", "start")
         t0 = monotonic_ms()
@@ -484,7 +493,9 @@ def _generate_stream(user_id: str):
                     resolved.source_kind,
                 )
 
-            # Build output envelope before saving (saved_id/total_duration_ms not yet set)
+            # Build envelope with total_duration_ms already set; saved_id is not yet
+            # known so it stays null in the stored document (expected — docs don't
+            # store their own ID).
             output = SimplifyOutput(metrics=metrics, input=input_model, grading=grading, simplified_care_plan=care_plan)
             saved_id = save_simplify_output(
                 user_id=user_id,
@@ -493,6 +504,7 @@ def _generate_stream(user_id: str):
                 input_pdf_gcs=input_pdf_gcs,
                 output_data=output.to_dict(),
             )
+            # Set saved_id AFTER the Firestore write so the SSE result carries it.
             metrics.saved_id = saved_id
             save_output_ms = monotonic_ms() - t0
             juno_logger.log_step("save_output", "done",
@@ -502,12 +514,6 @@ def _generate_stream(user_id: str):
         except Exception as exc:
             juno_logger.exception("simplify_v1_2: failed to save output - continuing without saved_id")
             juno_logger.log_step("save_output", "error", extra={"error": str(exc)})
-
-        total_ms = monotonic_ms() - pipeline_start
-        juno_metrics.record_latency("simplify_pipeline", total_ms,
-                                    labels={"version": "v1-2", "input_type": resolved.source_kind})
-        juno_metrics.record_counter("simplify_request", labels={"version": "v1-2"})
-        metrics.total_duration_ms = total_ms
 
         output = SimplifyOutput(metrics=metrics, input=input_model, grading=grading, simplified_care_plan=care_plan)
         yield _sse({"step": "result", "data": output.to_dict()})
