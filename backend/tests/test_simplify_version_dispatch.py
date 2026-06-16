@@ -114,6 +114,28 @@ class SimplifyVersionDispatchTest(unittest.TestCase):
         self.assertEqual(response.get_json(), {"error": "Unknown version 'v2'"})
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    def test_json_list_version_returns_400(self, _verify_token):
+        response = self.client.post(
+            "/simplify",
+            headers={"Authorization": "Bearer token"},
+            json={"version": ["v1-2"]},
+        )
+
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.get_json(), {"error": "Unknown version '['v1-2']'"})
+
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    def test_form_empty_version_returns_400(self, _verify_token):
+        response = self.client.post(
+            "/simplify",
+            headers={"Authorization": "Bearer token"},
+            data={"version": ""},
+        )
+
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.get_json(), {"error": "Unknown version ''"})
+
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_old_version_endpoints_return_404(self, _verify_token):
         for path in ("/simplify/v1", "/simplify/v1-1", "/simplify/v1-2"):
             with self.subTest(path=path):

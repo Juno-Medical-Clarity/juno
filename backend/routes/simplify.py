@@ -95,9 +95,14 @@ def simplify_document(user_id: str):
     _ = user_id
 
     json_body = request.get_json(silent=True) or {}
-    version = request.form.get("version") or json_body.get("version") or SIMPLIFY_DEFAULT_VERSION
+    if "version" in request.form:
+        version = request.form.get("version")
+    elif isinstance(json_body, dict) and "version" in json_body:
+        version = json_body.get("version")
+    else:
+        version = SIMPLIFY_DEFAULT_VERSION
 
-    if version not in ALLOWED_VERSIONS:
+    if not isinstance(version, str) or version not in ALLOWED_VERSIONS:
         return {"error": f"Unknown version '{version}'"}, 400
 
     if version == "v1-2":
