@@ -162,6 +162,26 @@ class TestVersionedJsonModel(unittest.TestCase):
         self.assertIs(ModelA._registry["1.0"], ModelAV1)
         self.assertIs(ModelB._registry["1.0"], ModelBV1)
 
+    def test_init_subclass_registry_isolation(self):
+        """Test that a fresh VersionedJsonModel subclass has its own empty registry
+        before any register() call (via __init_subclass__)."""
+
+        @dataclass
+        class FreshModel(VersionedJsonModel):
+            version: str
+
+        # Registry must be a fresh empty dict, NOT shared with VersionedJsonModel
+        self.assertIsInstance(FreshModel._registry, dict)
+        self.assertEqual(len(FreshModel._registry), 0)
+        self.assertIsNot(FreshModel._registry, VersionedJsonModel._registry)
+
+        @dataclass
+        class AnotherFreshModel(VersionedJsonModel):
+            version: str
+
+        # Two sibling subclasses must each have distinct registries
+        self.assertIsNot(FreshModel._registry, AnotherFreshModel._registry)
+
 
 if __name__ == "__main__":
     unittest.main()
