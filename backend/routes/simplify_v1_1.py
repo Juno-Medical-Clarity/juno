@@ -188,6 +188,29 @@ def _generate_stream():
         source_kind = "doc_id" if source.startswith("doc:") else (
             "text" if source == "text_input" else "file"
         )
+
+        # Build structured models now that source_kind is known
+        metrics = Metrics.start(
+            session_id=getattr(g, "session_id", ""),
+            pipeline_version="v1-1",
+            input_type=source_kind,
+        )
+        if source_kind == "text":
+            input_model = Input.from_text(text)
+        elif source_kind == "doc_id":
+            raw_doc_id = source.removeprefix("doc:")
+            input_model = Input.from_doc_id(raw_doc_id)
+        else:
+            upload = request.files.get("file")
+            if upload:
+                try:
+                    upload.seek(0)
+                except Exception:
+                    pass
+                input_model = Input.from_file_uploads([upload])
+            else:
+                input_model = Input(mode="file")
+
         read_input_ms = monotonic_ms() - t0
         juno_logger.log_step(
             "read_input", "done",
@@ -299,11 +322,6 @@ def _generate_stream():
                                     labels={"version": "v1-1", "input_type": source_kind})
         juno_metrics.record_counter("simplify_request", labels={"version": "v1-1"})
 
-        metrics = Metrics.start(
-            session_id=getattr(g, "session_id", ""),
-            pipeline_version="v1-1",
-            input_type=source_kind,
-        )
         metrics.total_duration_ms = total_ms
         metrics.step_durations_ms["read_input"] = read_input_ms
         if find_medical_terms_ms is not None:
@@ -312,21 +330,6 @@ def _generate_stream():
         if clarify_actions_ms is not None:
             metrics.step_durations_ms["clarify_actions"] = clarify_actions_ms
         metrics.step_durations_ms["structure_note"] = structure_note_ms
-        if source_kind == "text":
-            input_model = Input.from_text(text)
-        elif source_kind == "doc_id":
-            raw_doc_id = source.removeprefix("doc:")
-            input_model = Input.from_doc_id(raw_doc_id)
-        else:
-            upload = request.files.get("file")
-            if upload:
-                try:
-                    upload.seek(0)
-                except Exception:
-                    pass
-                input_model = Input.from_file_uploads([upload])
-            else:
-                input_model = Input(mode="file")
         grading = Grading()
         care_plan = SimplifiedCarePlan.from_pipeline_result("1.1", result_payload)
         output = SimplifyOutput(
