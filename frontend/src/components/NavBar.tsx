@@ -1,6 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { DEFAULT_VERSION } from '../config';
-import { versionPath } from '../router';
 
 interface NavBarProps {
   onNew?: () => void;
@@ -13,7 +11,7 @@ export default function NavBar({ onNew }: NavBarProps) {
     if (onNew) {
       onNew();
     } else {
-      navigate(versionPath(DEFAULT_VERSION));
+      navigate('/');
     }
   }
 
