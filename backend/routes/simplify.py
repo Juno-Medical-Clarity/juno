@@ -31,7 +31,7 @@ from utils.pdf_extract import extract_text_from_pdf
 from utils.scoring import score_text
 from backend.models.metrics import Metrics
 from backend.models.input import Input
-from backend.models.grading import Grading
+from backend.models.grading import Grading, build_grading
 from backend.models.care_plan import SimplifiedCarePlan
 from backend.models.envelope import SimplifyOutput
 
@@ -88,17 +88,19 @@ def _extract_text(file_bytes: bytes, filename: str) -> str:
 
 
 def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str, None, None]:
-    _ = grading_enabled
     pipeline_start = monotonic_ms()
 
     try:
         pipeline = V1Pipeline()
 
         # ── Score original text (silent — no SSE event) ───────────────────
-        try:
-            before_score = score_text(text)
-        except Exception:
-            logger.exception("simplify: before-score failed — continuing without score")
+        if grading_enabled:
+            try:
+                before_score = score_text(text)
+            except Exception:
+                logger.exception("simplify: before-score failed — continuing without score")
+                before_score = None
+        else:
             before_score = None
 
         # ── Step 2: Classify document type ────────────────────────────────
@@ -160,10 +162,13 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
         yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
 
         # ── Score simplified text (silent — no SSE event) ─────────────────
-        try:
-            after_score = score_text(clarified)
-        except Exception:
-            logger.exception("simplify: after-score failed — continuing without score")
+        if grading_enabled:
+            try:
+                after_score = score_text(clarified)
+            except Exception:
+                logger.exception("simplify: after-score failed — continuing without score")
+                after_score = None
+        else:
             after_score = None
 
         # ── Steps 6 + 7: Structure + questions ───────────────────────────
@@ -182,13 +187,12 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
 
         # ── Final result ──────────────────────────────────────────────────
         result_payload = {**structured}
-        if before_score is not None:
-            result_payload["before_score"] = before_score
-        if after_score is not None:
-            result_payload["after_score"] = after_score
 
         metrics.total_duration_ms = monotonic_ms() - pipeline_start
-        grading = Grading()
+        if grading_enabled:
+            grading = build_grading(before_score, text, after_score, clarified)
+        else:
+            grading = Grading(enabled=False)
         care_plan = SimplifiedCarePlan.from_pipeline_result("1.0", result_payload)
         output = SimplifyOutput(
             metrics=metrics,
@@ -285,7 +289,13 @@ def _simplify_document_v1():
                 pass
             input_model = Input.from_file_uploads([upload])
 
-            for chunk in run_v1_pipeline(text, metrics, grading_enabled=False):
+            json_data = request.get_json(silent=True) or {}
+            raw = request.form.get("grading_enabled")
+            if raw is None:
+                raw = json_data.get("grading_enabled", True)
+            grading_enabled_flag = raw if isinstance(raw, bool) else str(raw).strip().lower() in {"1", "true", "yes", "on"}
+
+            for chunk in run_v1_pipeline(text, metrics, grading_enabled=grading_enabled_flag):
                 payload = _payload_from_sse(chunk)
                 if not payload or payload.get("step") != "result":
                     yield chunk

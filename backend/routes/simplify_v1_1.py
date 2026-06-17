@@ -34,7 +34,7 @@ from utils.juno_logger import JunoLogger, monotonic_ms
 from utils.juno_metrics import JunoMetrics
 from backend.models.metrics import Metrics
 from backend.models.input import Input
-from backend.models.grading import Grading
+from backend.models.grading import Grading, build_grading
 from backend.models.care_plan import SimplifiedCarePlan
 from backend.models.envelope import SimplifyOutput
 
@@ -154,7 +154,6 @@ def _score_or_none(text: str, label: str) -> dict | None:
 
 
 def run_v1_1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str, None, None]:
-    _ = grading_enabled
     juno_logger = JunoLogger(api_version="v1-1")
     juno_metrics = JunoMetrics()
     pipeline_start = monotonic_ms()
@@ -245,8 +244,12 @@ def run_v1_1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
             clarified,
             term_data["preserve_and_define_terms"],
         )
-        before_score = _score_or_none(text, "before")
-        after_score = _score_or_none(clarified, "after")
+        if grading_enabled:
+            before_score = _score_or_none(text, "before")
+            after_score = _score_or_none(clarified, "after")
+        else:
+            before_score = None
+            after_score = None
 
         result_payload = {
             **structured,
@@ -257,10 +260,6 @@ def run_v1_1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
                 "clarified_text": clarified,
             },
         }
-        if before_score is not None:
-            result_payload["before_score"] = before_score
-        if after_score is not None:
-            result_payload["after_score"] = after_score
         result_payload.pop("questions", None)
 
         total_ms = monotonic_ms() - pipeline_start
@@ -275,7 +274,10 @@ def run_v1_1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
         if clarify_actions_ms is not None:
             metrics.step_durations_ms["clarify_actions"] = clarify_actions_ms
         metrics.step_durations_ms["structure_note"] = structure_note_ms
-        grading = Grading()
+        if grading_enabled:
+            grading = build_grading(before_score, text, after_score, clarified)
+        else:
+            grading = Grading(enabled=False)
         care_plan = SimplifiedCarePlan.from_pipeline_result("1.1", result_payload)
         output = SimplifyOutput(
             metrics=metrics,
@@ -359,7 +361,13 @@ def _generate_stream():
         yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
         logger.info("simplify_v1_1: processing source=%s (%d chars)", source, len(text))
 
-        for chunk in run_v1_1_pipeline(text, metrics, grading_enabled=False):
+        json_data = request.get_json(silent=True) or {}
+        raw = request.form.get("grading_enabled")
+        if raw is None:
+            raw = json_data.get("grading_enabled", True)
+        grading_enabled = raw if isinstance(raw, bool) else str(raw).strip().lower() in {"1", "true", "yes", "on"}
+
+        for chunk in run_v1_1_pipeline(text, metrics, grading_enabled=grading_enabled):
             payload = _payload_from_sse(chunk)
             if not payload or payload.get("step") != "result":
                 yield chunk
