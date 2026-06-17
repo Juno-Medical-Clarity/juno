@@ -68,6 +68,7 @@ def list_saved(user_id: str):
             'source_filename': data.get('source_filename', ''),
             'created_at': data['created_at'].isoformat() if data.get('created_at') else None,
             'updated_at': data['updated_at'].isoformat() if data.get('updated_at') else None,
+            'batch_group_id': data.get('batch_group_id'),
         })
     return jsonify({'outputs': results})
 
