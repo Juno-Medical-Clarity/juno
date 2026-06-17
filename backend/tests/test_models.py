@@ -300,19 +300,25 @@ class TestInput(unittest.TestCase):
 
 
 class TestGrading(unittest.TestCase):
-    """Tests for the Grading stub model."""
+    """Tests for the Grading model."""
 
     def test_default_to_dict(self):
-        """Grading().to_dict() must equal {"entries": []}."""
-        self.assertEqual(Grading().to_dict(), {"entries": []})
+        """Grading() produces the correct empty/enabled shape."""
+        self.assertEqual(Grading().to_dict(), {"entries": [], "enabled": True, "graded_at": None})
 
     def test_roundtrip(self):
         """Grading round-trips correctly through to_dict/from_dict."""
-        original = Grading(entries=[{"term": "hypertension", "score": 0.9}])
+        from backend.models.grading import GradingEntry
+        entry = GradingEntry(name="smog", target="after", grade=72.0,
+                             grade_breakdown={"grade": 9.5, "insufficient_sample": False},
+                             reasoning="SMOG grade")
+        original = Grading(entries=[entry], enabled=True, graded_at="2026-01-01T00:00:00+00:00")
         d = original.to_dict()
-        self.assertEqual(d, {"entries": [{"term": "hypertension", "score": 0.9}]})
+        self.assertEqual(d["entries"][0]["name"], "smog")
+        self.assertEqual(d["enabled"], True)
         reconstructed = Grading.from_dict(d)
-        self.assertEqual(reconstructed, original)
+        self.assertEqual(reconstructed.entries[0].name, "smog")
+        self.assertEqual(reconstructed.graded_at, "2026-01-01T00:00:00+00:00")
 
 
 class TestSimplifiedCarePlan(unittest.TestCase):
@@ -521,10 +527,10 @@ class TestSimplifyOutput(unittest.TestCase):
         self.assertIsNone(d["input"]["doc_id"])
 
     def test_to_dict_grading_shape(self):
-        """grading sub-dict must equal {'entries': []}."""
+        """grading sub-dict must have entries, enabled, and graded_at keys."""
         output = self._make_output()
         d = output.to_dict()
-        self.assertEqual(d["grading"], {"entries": []})
+        self.assertEqual(d["grading"], {"entries": [], "enabled": True, "graded_at": None})
 
     def test_to_dict_care_plan_shape(self):
         """simplified_care_plan sub-dict must be flat (no nested 'data' key)."""

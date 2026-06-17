@@ -84,23 +84,28 @@ class DatasetRoutesTest(unittest.TestCase):
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_preview_dataset_file_maps_missing_and_traversal_to_404(self, _verify_token):
-        matched_bad_paths = [
+        # These paths reach our handler (group/input/filename all parse as non-slash strings)
+        # and are rejected by our file-existence check with a JSON 404.
+        handler_rejected_paths = [
             "/simplify/datasets/DocConv/input-1/missing.txt",
             "/simplify/datasets/../input-1/notes.txt",
             "/simplify/datasets/DocConv/../notes.txt",
-            "/simplify/datasets/DocConv/input-1/..%2F..%2F..%2Fetc%2Fpasswd",
         ]
-
-        for path in matched_bad_paths:
+        for path in handler_rejected_paths:
             with self.subTest(path=path):
-                response = self.client.get(
-                    path,
-                    headers={"Authorization": "Bearer token"},
-                )
-
+                response = self.client.get(path, headers={"Authorization": "Bearer token"})
                 self.assertEqual(response.status_code, 404)
                 self.assertEqual(response.get_json(), {"error": "Not found"})
                 self.assertNotIn(str(self.root), response.get_data(as_text=True))
+
+        # URL-encoded slashes (%2F) in the filename segment: Flask decodes them before routing,
+        # producing a path with literal slashes. <string:filename> rejects slashes, so Flask
+        # returns a 404 before our handler is even invoked — a stronger rejection than our own.
+        url_encoded_traversal = "/simplify/datasets/DocConv/input-1/..%2F..%2F..%2Fetc%2Fpasswd"
+        with self.subTest(path=url_encoded_traversal):
+            response = self.client.get(url_encoded_traversal, headers={"Authorization": "Bearer token"})
+            self.assertEqual(response.status_code, 404)
+            self.assertNotIn(str(self.root), response.get_data(as_text=True))
 
     def test_dataset_routes_require_authorization_header(self):
         for path in (
