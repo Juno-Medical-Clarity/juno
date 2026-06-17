@@ -58,6 +58,7 @@ export default function V1_2Page() {
   const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
   const [selectedVersion, setSelectedVersion] = useState('v1-2');
+  const [gradingEnabled, setGradingEnabled] = useState(true);
   const [files, setFiles] = useState<File[]>([]);
   const [textInput, setTextInput] = useState('');
   const [dragOver, setDragOver] = useState(false);
@@ -143,9 +144,6 @@ export default function V1_2Page() {
     abortRef.current = new AbortController();
 
     if (hasPresetDataSelection) {
-      // ConfigurationCard currently exposes version selection only; no grading toggle is present.
-      const gradingEnabled = false;
-
       try {
         const response = await runBatch(
           presetDataSelection,
@@ -248,6 +246,7 @@ export default function V1_2Page() {
       formData.append('text', textInput);
     }
     formData.append('version', selectedVersion);
+    formData.append('grading_enabled', gradingEnabled.toString());
 
     try {
       const response = await authenticatedFetch(`${API_URL}${SIMPLIFY_API_PATH}`, {
@@ -471,7 +470,12 @@ export default function V1_2Page() {
                 </button>
               </div>
               <PresetDataCard onSelectionChange={setPresetDataSelection} />
-              <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
+              <ConfigurationCard
+                version={selectedVersion}
+                onVersionChange={handleVersionChange}
+                gradingEnabled={gradingEnabled}
+                onGradingEnabledChange={setGradingEnabled}
+              />
             </section>
           )}
 

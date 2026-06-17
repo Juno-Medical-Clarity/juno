@@ -460,6 +460,7 @@ export default function V1_1Page() {
   const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
   const [selectedVersion, setSelectedVersion] = useState('v1-1');
+  const [gradingEnabled, setGradingEnabled] = useState(true);
   const [file, setFile] = useState<File | null>(null);
   const [textInput, setTextInput] = useState('');
   const [dragOver, setDragOver] = useState(false);
@@ -528,6 +529,7 @@ export default function V1_1Page() {
       formData.append('text', textInput);
     }
     formData.append('version', selectedVersion);
+    formData.append('grading_enabled', gradingEnabled.toString());
 
     abortRef.current = new AbortController();
 
@@ -660,7 +662,12 @@ export default function V1_1Page() {
 
           {appState === 'upload' && (
             <section className="upload-section">
-              <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
+              <ConfigurationCard
+                version={selectedVersion}
+                onVersionChange={handleVersionChange}
+                gradingEnabled={gradingEnabled}
+                onGradingEnabledChange={setGradingEnabled}
+              />
               <div className="glass-card" style={{ padding: '32px' }}>
                 <div className="input-tabs">
                   <button

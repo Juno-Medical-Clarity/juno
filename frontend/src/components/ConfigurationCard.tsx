@@ -3,9 +3,11 @@ import { VERSIONS } from '../config';
 interface ConfigurationCardProps {
   version: string;
   onVersionChange: (id: string) => void;
+  gradingEnabled: boolean;
+  onGradingEnabledChange: (enabled: boolean) => void;
 }
 
-export default function ConfigurationCard({ version, onVersionChange }: ConfigurationCardProps) {
+export default function ConfigurationCard({ version, onVersionChange, gradingEnabled, onGradingEnabledChange }: ConfigurationCardProps) {
   const latestVersion = VERSIONS[VERSIONS.length - 1];
 
   return (
@@ -31,6 +33,16 @@ export default function ConfigurationCard({ version, onVersionChange }: Configur
           );
         })}
       </select>
+
+      <label className="configuration-label" style={{ marginTop: '12px' }}>
+        <input
+          type="checkbox"
+          checked={gradingEnabled}
+          onChange={e => onGradingEnabledChange(e.target.checked)}
+          style={{ marginRight: '8px' }}
+        />
+        Enable grading
+      </label>
     </div>
   );
 }

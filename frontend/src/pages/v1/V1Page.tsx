@@ -670,6 +670,7 @@ export default function V1Page() {
   const location = useLocation();
   const [appState, setAppState] = useState<AppState>('upload');
   const [selectedVersion, setSelectedVersion] = useState('v1');
+  const [gradingEnabled, setGradingEnabled] = useState(true);
   const [file, setFile] = useState<File | null>(null);
   const [dragOver, setDragOver] = useState(false);
   const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
@@ -734,6 +735,7 @@ export default function V1Page() {
     const formData = new FormData();
     formData.append('file', file);
     formData.append('version', selectedVersion);
+    formData.append('grading_enabled', gradingEnabled.toString());
 
     abortRef.current = new AbortController();
 
@@ -855,7 +857,12 @@ export default function V1Page() {
           {/* ── Upload ── */}
           {appState === 'upload' && (
             <section className="upload-section">
-              <ConfigurationCard version={selectedVersion} onVersionChange={handleVersionChange} />
+              <ConfigurationCard
+                version={selectedVersion}
+                onVersionChange={handleVersionChange}
+                gradingEnabled={gradingEnabled}
+                onGradingEnabledChange={setGradingEnabled}
+              />
               <div className="glass-card" style={{ padding: '32px' }}>
                 <div
                   className={`upload-zone ${dragOver ? 'drag-over' : ''}`}

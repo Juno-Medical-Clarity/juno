@@ -16,8 +16,18 @@ export interface Input {
   files: InputFile[];
 }
 
+export interface GradingEntry {
+  name: string;
+  target: 'before' | 'after';
+  grade: number;
+  grade_breakdown: Record<string, unknown> | null;
+  reasoning: string | null;
+}
+
 export interface Grading {
-  entries: unknown[];  // real schema arrives in sub-project 3
+  entries: GradingEntry[];
+  enabled: boolean;
+  graded_at: string | null;
 }
 
 export interface Metrics {
