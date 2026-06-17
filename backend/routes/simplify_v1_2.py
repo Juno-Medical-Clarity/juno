@@ -37,7 +37,7 @@ from utils.juno_logger import JunoLogger, monotonic_ms
 from utils.juno_metrics import JunoMetrics
 from backend.models.metrics import Metrics
 from backend.models.input import Input
-from backend.models.grading import Grading
+from backend.models.grading import Grading, build_grading
 from backend.models.care_plan import SimplifiedCarePlan
 from backend.models.envelope import SimplifyOutput
 
@@ -268,7 +268,7 @@ def _grading_enabled_from_request() -> bool:
     json_data = request.get_json(silent=True) or {}
     raw_value = request.form.get("grading_enabled")
     if raw_value is None:
-        raw_value = json_data.get("grading_enabled", False)
+        raw_value = json_data.get("grading_enabled", True)
     if isinstance(raw_value, bool):
         return raw_value
     return str(raw_value).strip().lower() in {"1", "true", "yes", "on"}
@@ -413,8 +413,12 @@ def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
             clarified,
             term_data["preserve_and_define_terms"],
         )
-        before_score = _score_or_none(text, "before")
-        after_score = _score_or_none(clarified, "after")
+        if grading_enabled:
+            before_score = _score_or_none(text, "before")
+            after_score = _score_or_none(clarified, "after")
+        else:
+            before_score = None
+            after_score = None
 
         care_plan = SimplifiedCarePlan.from_pipeline_result("1.2", {
             **structured,
@@ -424,10 +428,12 @@ def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
                 "simplified_text": simplified,
                 "clarified_text": clarified,
             },
-            **({"before_score": before_score} if before_score is not None else {}),
-            **({"after_score": after_score} if after_score is not None else {}),
         })
-        grading = Grading()
+
+        if grading_enabled:
+            grading = build_grading(before_score, text, after_score, clarified)
+        else:
+            grading = Grading(enabled=False)
 
         total_ms = monotonic_ms() - pipeline_start
         juno_metrics.record_latency("simplify_pipeline", total_ms,
