@@ -7,6 +7,7 @@ export interface SavedOutputMeta {
   source_filename: string;
   created_at: string;
   updated_at: string;
+  batch_group_id: string | null;
 }
 
 export interface SavedOutput extends SavedOutputMeta {
