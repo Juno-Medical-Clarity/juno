@@ -15,6 +15,7 @@ import AppointmentNoteV12View from '../../components/AppointmentNoteV12View';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
+import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
 import { SIMPLIFY_API_PATH, DEFAULT_VERSION, VERSIONS } from '../../config';
 import type { VersionRouteState } from '../../router';
@@ -573,6 +574,11 @@ export default function SimplifyPage() {
               )}
 
               <AppointmentNoteV12View result={result.simplified_care_plan} grading={result.grading} />
+
+              <OutputGradingCard
+                output={result}
+                onGraded={(newGrading) => setResult(prev => prev ? { ...prev, grading: newGrading } : prev)}
+              />
 
               {result.metrics.session_id && (
                 <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem' }}>
