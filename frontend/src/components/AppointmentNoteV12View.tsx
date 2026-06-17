@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import type { PatientScore, PatientScoreDimension, TermsMap } from '../types/simplify';
-import type { SimplifiedCarePlan } from '../types/envelope';
+import type { SimplifiedCarePlan, Grading } from '../types/envelope';
+import { patientScoreFromGrading, methodEntriesFromGrading } from '../utils/grading';
 import MedicalTerm from './MedicalTerm';
 
 function scoreColor(composite: number): string {
@@ -159,7 +160,70 @@ function ReadabilityCard({ before, after }: { before: PatientScore; after: Patie
   );
 }
 
-export default function AppointmentNoteV12View({ result }: { result: SimplifiedCarePlan }) {
+function MethodGradingCards({ grading }: { grading: Grading }) {
+  const afterEntries = methodEntriesFromGrading(grading, 'after');
+  const beforeEntries = methodEntriesFromGrading(grading, 'before');
+  if (afterEntries.length === 0) return null;
+
+  const METHOD_LABELS: Record<string, string> = {
+    smog: 'SMOG',
+    flesch_kincaid: 'Flesch-Kincaid',
+    dale_chall: 'Dale-Chall',
+    pemat: 'PEMAT',
+    sam: 'SAM',
+    cdc_cci: 'CDC Clear Comm.',
+  };
+
+  return (
+    <div className="method-grading-cards">
+      {afterEntries.map(afterEntry => {
+        const beforeEntry = beforeEntries.find(e => e.name === afterEntry.name);
+        return (
+          <div key={afterEntry.name} className="result-card score-card" style={{ marginTop: '8px' }}>
+            <div className="result-card-header">
+              <span className="result-card-title">
+                <span>{METHOD_LABELS[afterEntry.name] ?? afterEntry.name}</span>
+              </span>
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                {beforeEntry && (
+                  <span className={`score-bubble ${scoreColor(beforeEntry.grade)} score-bubble-sm`} style={{ fontSize: '0.75rem', padding: '2px 8px' }}>
+                    {Math.round(beforeEntry.grade)}
+                  </span>
+                )}
+                {beforeEntry && <span style={{ color: 'var(--text-secondary)' }}>→</span>}
+                <span className={`score-bubble ${scoreColor(afterEntry.grade)}`} style={{ fontSize: '0.85rem' }}>
+                  {Math.round(afterEntry.grade)}
+                </span>
+              </div>
+            </div>
+            {afterEntry.grade_breakdown && (
+              <div className="result-card-body" style={{ paddingTop: '8px' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                  {Object.entries(afterEntry.grade_breakdown).map(([k, v]) => (
+                    <span key={k}><strong>{k}:</strong> {String(v)}</span>
+                  ))}
+                </div>
+                {afterEntry.reasoning && (
+                  <p style={{ marginTop: '8px', fontSize: '0.75rem', color: 'var(--text-secondary)', fontStyle: 'italic' }}>
+                    {afterEntry.reasoning}
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+export default function AppointmentNoteV12View({
+  result,
+  grading,
+}: {
+  result: SimplifiedCarePlan;
+  grading: Grading;
+}) {
   const terms = result.terms ?? {};
   const withTerms = (text: string) => renderTextWithTerms(text, terms);
   const URGENCY_COLORS: Record<string, string> = {
@@ -178,9 +242,16 @@ export default function AppointmentNoteV12View({ result }: { result: SimplifiedC
 
   return (
     <div className="result-cards">
-      {result.before_score && result.after_score && (
-        <ReadabilityCard before={result.before_score} after={result.after_score} />
-      )}
+      {(() => {
+        const beforeScore = patientScoreFromGrading(grading, 'before');
+        const afterScore = patientScoreFromGrading(grading, 'after');
+        return beforeScore && afterScore ? (
+          <>
+            <ReadabilityCard before={beforeScore} after={afterScore} />
+            <MethodGradingCards grading={grading} />
+          </>
+        ) : null;
+      })()}
 
       {result.summary && (
         <div className="result-card" style={{ background: 'var(--surface-green-muted, #E8EDE3)' }}>

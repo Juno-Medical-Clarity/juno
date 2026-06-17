@@ -572,7 +572,7 @@ export default function SimplifyPage() {
                 </div>
               )}
 
-              <AppointmentNoteV12View result={result.simplified_care_plan} />
+              <AppointmentNoteV12View result={result.simplified_care_plan} grading={result.grading} />
 
               {result.metrics.session_id && (
                 <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem' }}>
@@ -617,7 +617,7 @@ export default function SimplifyPage() {
       {showSplitView && result && activeSavedId && (
         <SplitView
           savedId={activeSavedId}
-          simplifiedContent={<AppointmentNoteV12View result={result.simplified_care_plan} />}
+          simplifiedContent={<AppointmentNoteV12View result={result.simplified_care_plan} grading={result.grading} />}
           onClose={() => setShowSplitView(false)}
         />
       )}
