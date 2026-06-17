@@ -6,6 +6,7 @@ import {
   deleteSavedOutput,
   type SavedOutputMeta,
 } from '../api/savedOutputs';
+import { groupSavedOutputs } from '../utils/groupSavedOutputs';
 
 interface SidebarProps {
   activeId: string | null;
@@ -67,10 +68,72 @@ export default function Sidebar({ activeId, onSelect, onNew, refreshTrigger }: S
     setMenuOpenId(null);
   }
 
-  function formatDate(iso: string) {
-    const d = new Date(iso);
-    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  function renderRow(output: SavedOutputMeta) {
+    return (
+      <div
+        key={output.id}
+        className={`sidebar-item ${activeId === output.id ? 'active' : ''}`}
+        style={{ position: 'relative' }}
+        onClick={() => onSelect(output.id)}
+      >
+        <div className="sidebar-item-meta">
+          {renamingId === output.id ? (
+            <input
+              autoFocus
+              value={renameValue}
+              onChange={e => setRenameValue(e.target.value)}
+              onBlur={() => handleRename(output.id)}
+              onKeyDown={e => {
+                if (e.key === 'Enter') handleRename(output.id);
+                if (e.key === 'Escape') setRenamingId(null);
+              }}
+              onClick={e => e.stopPropagation()}
+              style={{
+                width: '100%', border: '1px solid var(--accent-violet)',
+                borderRadius: '4px', padding: '2px 6px', fontSize: '0.85rem',
+                fontFamily: 'Inter, sans-serif', background: 'var(--bg)',
+                color: 'var(--text-primary)',
+              }}
+            />
+          ) : (
+            <div className="sidebar-item-name">{output.name}</div>
+          )}
+        </div>
+        <button
+          className="sidebar-menu-btn"
+          onClick={e => {
+            e.stopPropagation();
+            setMenuOpenId(menuOpenId === output.id ? null : output.id);
+          }}
+        >
+          ⋯
+        </button>
+        {menuOpenId === output.id && (
+          <div className="sidebar-dropdown" ref={menuRef} onClick={e => e.stopPropagation()}>
+            <button
+              className="sidebar-dropdown-item"
+              onClick={() => {
+                setRenamingId(output.id);
+                setRenameValue(output.name);
+                setMenuOpenId(null);
+              }}
+            >
+              Rename
+            </button>
+            <button
+              className="sidebar-dropdown-item danger"
+              onClick={() => handleDelete(output.id)}
+            >
+              Delete
+            </button>
+          </div>
+        )}
+      </div>
+    );
   }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const grouped = !loading ? groupSavedOutputs(outputs) : [];
 
   return (
     <aside className="sidebar">
@@ -83,66 +146,24 @@ export default function Sidebar({ activeId, onSelect, onNew, refreshTrigger }: S
         {!loading && outputs.length === 0 && (
           <div className="sidebar-empty">No saved outputs yet.</div>
         )}
-        {outputs.map(output => (
-          <div
-            key={output.id}
-            className={`sidebar-item ${activeId === output.id ? 'active' : ''}`}
-            style={{ position: 'relative' }}
-            onClick={() => onSelect(output.id)}
-          >
-            <div className="sidebar-item-meta">
-              {renamingId === output.id ? (
-                <input
-                  autoFocus
-                  value={renameValue}
-                  onChange={e => setRenameValue(e.target.value)}
-                  onBlur={() => handleRename(output.id)}
-                  onKeyDown={e => {
-                    if (e.key === 'Enter') handleRename(output.id);
-                    if (e.key === 'Escape') setRenamingId(null);
-                  }}
-                  onClick={e => e.stopPropagation()}
-                  style={{
-                    width: '100%', border: '1px solid var(--accent-violet)',
-                    borderRadius: '4px', padding: '2px 6px', fontSize: '0.85rem',
-                    fontFamily: 'Inter, sans-serif', background: 'var(--bg)',
-                    color: 'var(--text-primary)',
-                  }}
-                />
-              ) : (
-                <div className="sidebar-item-name">{output.name}</div>
-              )}
-              <div className="sidebar-item-date">{formatDate(output.created_at)}</div>
+        {!loading && grouped.map(dateGroup => (
+          <div key={dateGroup.date}>
+            <div className="sidebar-date-header">
+              {new Date(dateGroup.date + 'T12:00:00').toLocaleDateString('en-US', {
+                month: 'long', day: 'numeric', year: 'numeric',
+              })}
             </div>
-            <button
-              className="sidebar-menu-btn"
-              onClick={e => {
-                e.stopPropagation();
-                setMenuOpenId(menuOpenId === output.id ? null : output.id);
-              }}
-            >
-              ⋯
-            </button>
-            {menuOpenId === output.id && (
-              <div className="sidebar-dropdown" ref={menuRef} onClick={e => e.stopPropagation()}>
-                <button
-                  className="sidebar-dropdown-item"
-                  onClick={() => {
-                    setRenamingId(output.id);
-                    setRenameValue(output.name);
-                    setMenuOpenId(null);
-                  }}
-                >
-                  Rename
-                </button>
-                <button
-                  className="sidebar-dropdown-item danger"
-                  onClick={() => handleDelete(output.id)}
-                >
-                  Delete
-                </button>
-              </div>
-            )}
+            {dateGroup.batches.map(batch => (
+              <details
+                key={batch.batch_group_id}
+                className="sidebar-batch-group"
+                open={dateGroup.date === today}
+              >
+                <summary className="sidebar-batch-header">{batch.batch_group_id}</summary>
+                {batch.items.map(output => renderRow(output))}
+              </details>
+            ))}
+            {dateGroup.standalone.map(output => renderRow(output))}
           </div>
         ))}
       </div>
