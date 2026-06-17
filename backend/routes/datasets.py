@@ -15,7 +15,7 @@ def list_datasets_route(user_id: str):
 
 
 @datasets_bp.route(
-    "/simplify/datasets/<group>/<input_id>/<path:filename>",
+    "/simplify/datasets/<group>/<input_id>/<string:filename>",
     methods=["GET"],
 )
 @verify_firebase_token
