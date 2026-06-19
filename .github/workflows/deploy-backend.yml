@@ -34,6 +34,7 @@ jobs:
         run: |
           gcloud builds submit \
             --project "$GCP_PROJECT_ID" \
+            --suppress-logs \
             --tag "$BACKEND_IMAGE" \
             ./backend
 
