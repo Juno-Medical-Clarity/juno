@@ -1,6 +1,12 @@
-import { useState, useRef, useCallback, type ReactNode } from 'react';
+import { useState, useRef, useCallback, useEffect, type ReactNode } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
+import { SIMPLIFY_API_PATH } from '../../config';
+import { versionPath, type VersionRouteState } from '../../router';
+import ConfigurationCard from '../../components/ConfigurationCard';
+import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
+import { outputRouteVersionId } from '../../utils/outputVersion';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -660,13 +666,26 @@ function LegacyResultView({ result }: { result: LegacyResult }) {
 // ─── Main Component ───────────────────────────────────────────────────────────
 
 export default function V1Page() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [appState, setAppState] = useState<AppState>('upload');
+  const [selectedVersion, setSelectedVersion] = useState('v1');
+  const [gradingEnabled, setGradingEnabled] = useState(true);
   const [file, setFile] = useState<File | null>(null);
   const [dragOver, setDragOver] = useState(false);
   const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
   const [result, setResult] = useState<SimplifyResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    const output = (location.state as VersionRouteState | null)?.output;
+    if (!output || outputRouteVersionId(output) !== 'v1') return;
+
+    setResult(output.simplified_care_plan as unknown as SimplifyResult);
+    setAppState('result');
+    navigate(location.pathname, { replace: true, state: null });
+  }, [location.pathname, location.state, navigate]);
 
   // ── File handlers ──────────────────────────────────────────────────────────
 
@@ -700,6 +719,11 @@ export default function V1Page() {
     );
   }, []);
 
+  const handleVersionChange = (versionId: string) => {
+    setSelectedVersion(versionId);
+    if (versionId !== 'v1') navigate(versionPath(versionId));
+  };
+
   const handleSubmit = async () => {
     if (!file) return;
 
@@ -710,11 +734,13 @@ export default function V1Page() {
 
     const formData = new FormData();
     formData.append('file', file);
+    formData.append('version', selectedVersion);
+    formData.append('grading_enabled', gradingEnabled.toString());
 
     abortRef.current = new AbortController();
 
     try {
-      const response = await authenticatedFetch(`${API_URL}/simplify`, {
+      const response = await authenticatedFetch(`${API_URL}${SIMPLIFY_API_PATH}`, {
         method: 'POST',
         body: formData,
         signal: abortRef.current.signal,
@@ -747,14 +773,23 @@ export default function V1Page() {
               step: number | 'result';
               status?: 'active' | 'done';
               label?: string;
-              data?: SimplifyResult;
+              data?: unknown;
               error?: string;
             };
 
             if (event.error) throw new Error(event.error);
 
             if (event.step === 'result' && event.data) {
-              setResult(event.data);
+              const normalized = normalizeSimplifyOutput(event.data);
+              const routeVersionId = outputRouteVersionId(normalized);
+              if (routeVersionId !== 'v1') {
+                navigate(versionPath(routeVersionId), {
+                  replace: true,
+                  state: { output: normalized } satisfies VersionRouteState,
+                });
+                return;
+              }
+              setResult(normalized.simplified_care_plan as unknown as SimplifyResult);
               setAppState('result');
             } else if (typeof event.step === 'number' && event.status) {
               updateStep(event.step, event.status);
@@ -822,6 +857,12 @@ export default function V1Page() {
           {/* ── Upload ── */}
           {appState === 'upload' && (
             <section className="upload-section">
+              <ConfigurationCard
+                version={selectedVersion}
+                onVersionChange={handleVersionChange}
+                gradingEnabled={gradingEnabled}
+                onGradingEnabledChange={setGradingEnabled}
+              />
               <div className="glass-card" style={{ padding: '32px' }}>
                 <div
                   className={`upload-zone ${dragOver ? 'drag-over' : ''}`}

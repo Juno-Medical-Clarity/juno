@@ -8,10 +8,14 @@ from unittest.mock import ANY, patch
 from flask import Flask
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
-if str(BACKEND_DIR) not in sys.path:
-    sys.path.insert(0, str(BACKEND_DIR))
+PROJECT_DIR = BACKEND_DIR.parent
+for path in (PROJECT_DIR, BACKEND_DIR):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
 
-from routes.simplify_v1_2 import simplify_v1_2_bp
+from routes import all_blueprints
+from backend.models.metrics import Metrics
+import routes.simplify_v1_2 as simplify_v1_2_module
 
 
 class FakePipeline:
@@ -28,7 +32,8 @@ class FakePipeline:
 class SimplifyV12PersistenceTest(unittest.TestCase):
     def setUp(self):
         app = Flask(__name__)
-        app.register_blueprint(simplify_v1_2_bp)
+        for blueprint in all_blueprints:
+            app.register_blueprint(blueprint)
         self.client = app.test_client()
 
     def _events_from_response(self, response):
@@ -36,6 +41,14 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         for block in response.get_data(as_text=True).strip().split("\n\n"):
             if block.startswith("data: "):
                 events.append(json.loads(block.removeprefix("data: ")))
+        return events
+
+    def _events_from_chunks(self, chunks):
+        events = []
+        for chunk in chunks:
+            for block in chunk.strip().split("\n\n"):
+                if block.startswith("data: "):
+                    events.append(json.loads(block.removeprefix("data: ")))
         return events
 
     def _docx_bytes(self, text):
@@ -48,11 +61,66 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         buffer.seek(0)
         return buffer
 
+    @patch("routes.simplify_v1_2.save_simplify_output")
+    @patch("routes.simplify_v1_2.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "Patient-friendly", "word_count": 100, "dimensions": {"grade_level": {"score": 70, "raw": 6.0, "label": "Grade Level", "unit": "grade"}, "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon Density", "unit": "proportion"}, "sentence_complexity": {"score": 70, "raw": 12.0, "label": "Sentence Length", "unit": "words/sentence"}, "passive_voice": {"score": 70, "raw": 0.1, "label": "Active Voice", "unit": "passive ratio"}, "actionability": {"score": 70, "raw": 0.05, "label": "Actionability", "unit": "you-rate"}, "numeracy_clarity": {"score": 70, "raw": 1.0, "label": "Numeric Clarity", "unit": "vague count"}, "structural_clarity": {"score": 70, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"}}})
+    @patch("routes.simplify_v1_2.build_glossary_from_simplified_text", return_value=[])
+    @patch(
+        "routes.simplify_v1_2.detect_terms",
+        return_value={
+            "substitution_candidates": [],
+            "preserve_and_define_terms": [],
+            "abbreviations": [],
+        },
+    )
+    @patch("routes.simplify_v1_2.V1_2Pipeline", return_value=FakePipeline())
+    def test_run_v1_2_pipeline_direct_text_yields_steps_and_result_without_saving(
+        self,
+        _pipeline,
+        _detect_terms,
+        _glossary,
+        _score,
+        save_simplify_output,
+    ):
+        metrics = Metrics.start(
+            session_id="session-1",
+            pipeline_version="v1-2",
+            input_type="text",
+        )
+
+        events = self._events_from_chunks(
+            simplify_v1_2_module.run_v1_2_pipeline(
+                "plain note",
+                metrics,
+                grading_enabled=False,
+            )
+        )
+
+        self.assertEqual(
+            [(event["step"], event.get("status")) for event in events[:-1]],
+            [
+                (2, "active"),
+                (2, "done"),
+                (3, "active"),
+                (3, "done"),
+                (4, "active"),
+                (4, "done"),
+                (5, "active"),
+                (5, "done"),
+            ],
+        )
+        result_event = events[-1]
+        self.assertEqual(result_event["step"], "result")
+        self.assertEqual(result_event["data"]["input"]["mode"], "text")
+        self.assertEqual(result_event["data"]["input"]["text"], "plain note")
+        self.assertEqual(result_event["data"]["metrics"]["saved_id"], None)
+        self.assertIn("plain note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        save_simplify_output.assert_not_called()
+
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.simplify_v1_2.save_simplify_output", return_value="saved-123")
     @patch("routes.simplify_v1_2.upload_combined_pdf", return_value="gs://bucket/input.pdf")
     @patch("routes.simplify_v1_2.merge_pdfs", return_value=b"%PDF combined")
-    @patch("routes.simplify_v1_2.score_text", return_value={"score": 1})
+    @patch("routes.simplify_v1_2.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "Patient-friendly", "word_count": 100, "dimensions": {"grade_level": {"score": 70, "raw": 6.0, "label": "Grade Level", "unit": "grade"}, "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon Density", "unit": "proportion"}, "sentence_complexity": {"score": 70, "raw": 12.0, "label": "Sentence Length", "unit": "words/sentence"}, "passive_voice": {"score": 70, "raw": 0.1, "label": "Active Voice", "unit": "passive ratio"}, "actionability": {"score": 70, "raw": 0.05, "label": "Actionability", "unit": "you-rate"}, "numeracy_clarity": {"score": 70, "raw": 1.0, "label": "Numeric Clarity", "unit": "vague count"}, "structural_clarity": {"score": 70, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"}}})
     @patch("routes.simplify_v1_2.build_glossary_from_simplified_text", return_value=[])
     @patch(
         "routes.simplify_v1_2.detect_terms",
@@ -75,9 +143,10 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         _verify_token,
     ):
         response = self.client.post(
-            "/simplify/v1-2",
+            "/simplify",
             headers={"Authorization": "Bearer token"},
             data={
+                "version": "v1-2",
                 "files": [
                     (io.BytesIO(b"first note"), "a.txt"),
                     (io.BytesIO(b"second note"), "b.txt"),
@@ -90,11 +159,13 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         events = self._events_from_response(response)
         result_event = events[-1]
         self.assertEqual(result_event["step"], "result")
-        self.assertEqual(result_event["data"]["saved_id"], "saved-123")
-        self.assertIn("first note", result_event["data"]["raw"]["text"])
-        self.assertIn("second note", result_event["data"]["raw"]["text"])
-        self.assertIn("Source: a.txt", result_event["data"]["raw"]["text"])
-        self.assertIn("Source: b.txt", result_event["data"]["raw"]["text"])
+        self.assertEqual(result_event["data"]["metrics"]["saved_id"], "saved-123")
+        self.assertIsNotNone(result_event["data"]["metrics"]["session_id"])
+        self.assertIsInstance(result_event["data"]["metrics"]["session_id"], str)
+        self.assertIn("first note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        self.assertIn("second note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        self.assertIn("Source: a.txt", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        self.assertIn("Source: b.txt", result_event["data"]["simplified_care_plan"]["raw"]["text"])
 
         merge_pdfs.assert_called_once()
         upload_combined_pdf.assert_called_once_with(b"%PDF combined", "user-1")
@@ -108,7 +179,7 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
     @patch("routes.simplify_v1_2.save_simplify_output", return_value="saved-123")
     @patch("routes.simplify_v1_2.upload_combined_pdf", return_value="gs://bucket/input.pdf")
     @patch("routes.simplify_v1_2.merge_pdfs", return_value=b"%PDF combined")
-    @patch("routes.simplify_v1_2.score_text", return_value={"score": 1})
+    @patch("routes.simplify_v1_2.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "Patient-friendly", "word_count": 100, "dimensions": {"grade_level": {"score": 70, "raw": 6.0, "label": "Grade Level", "unit": "grade"}, "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon Density", "unit": "proportion"}, "sentence_complexity": {"score": 70, "raw": 12.0, "label": "Sentence Length", "unit": "words/sentence"}, "passive_voice": {"score": 70, "raw": 0.1, "label": "Active Voice", "unit": "passive ratio"}, "actionability": {"score": 70, "raw": 0.05, "label": "Actionability", "unit": "you-rate"}, "numeracy_clarity": {"score": 70, "raw": 1.0, "label": "Numeric Clarity", "unit": "vague count"}, "structural_clarity": {"score": 70, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"}}})
     @patch("routes.simplify_v1_2.build_glossary_from_simplified_text", return_value=[])
     @patch(
         "routes.simplify_v1_2.detect_terms",
@@ -131,9 +202,12 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         _verify_token,
     ):
         response = self.client.post(
-            "/simplify/v1-2",
+            "/simplify",
             headers={"Authorization": "Bearer token"},
-            data={"files": [(self._docx_bytes("docx clinical note"), "visit.docx")]},
+            data={
+                "version": "v1-2",
+                "files": [(self._docx_bytes("docx clinical note"), "visit.docx")],
+            },
             content_type="multipart/form-data",
         )
 
@@ -144,11 +218,12 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_multi_file_upload_rejects_too_many_files(self, _verify_token):
-        with self.assertLogs("routes.simplify_v1_2", level="ERROR"):
+        with self.assertLogs("utils.juno_logger", level="ERROR"):
             response = self.client.post(
-                "/simplify/v1-2",
+                "/simplify",
                 headers={"Authorization": "Bearer token"},
                 data={
+                    "version": "v1-2",
                     "files": [
                         (io.BytesIO(f"note {index}".encode("utf-8")), f"{index}.txt")
                         for index in range(11)
@@ -167,11 +242,12 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
     def test_multi_file_upload_rejects_aggregate_size_over_limit(
         self, _pipeline, _verify_token
     ):
-        with self.assertLogs("routes.simplify_v1_2", level="ERROR"):
+        with self.assertLogs("utils.juno_logger", level="ERROR"):
             response = self.client.post(
-                "/simplify/v1-2",
+                "/simplify",
                 headers={"Authorization": "Bearer token"},
                 data={
+                    "version": "v1-2",
                     "files": [
                         (io.BytesIO(b"abcdef"), "a.txt"),
                         (io.BytesIO(b"ghijkl"), "b.txt"),
@@ -189,7 +265,7 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
     @patch("routes.simplify_v1_2.upload_combined_pdf")
     @patch("routes.simplify_v1_2.merge_pdfs", return_value=b"%PDF combined")
     @patch("routes.simplify_v1_2._fetch_from_gcs", return_value=(b"stored note", "stored.txt"))
-    @patch("routes.simplify_v1_2.score_text", return_value={"score": 1})
+    @patch("routes.simplify_v1_2.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "Patient-friendly", "word_count": 100, "dimensions": {"grade_level": {"score": 70, "raw": 6.0, "label": "Grade Level", "unit": "grade"}, "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon Density", "unit": "proportion"}, "sentence_complexity": {"score": 70, "raw": 12.0, "label": "Sentence Length", "unit": "words/sentence"}, "passive_voice": {"score": 70, "raw": 0.1, "label": "Active Voice", "unit": "passive ratio"}, "actionability": {"score": 70, "raw": 0.05, "label": "Actionability", "unit": "you-rate"}, "numeracy_clarity": {"score": 70, "raw": 1.0, "label": "Numeric Clarity", "unit": "vague count"}, "structural_clarity": {"score": 70, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"}}})
     @patch("routes.simplify_v1_2.build_glossary_from_simplified_text", return_value=[])
     @patch(
         "routes.simplify_v1_2.detect_terms",
@@ -213,23 +289,25 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         _verify_token,
     ):
         response = self.client.post(
-            "/simplify/v1-2",
+            "/simplify",
             headers={"Authorization": "Bearer token"},
-            data={"doc_id": "legacy-doc"},
+            data={"version": "v1-2", "doc_id": "legacy-doc"},
         )
 
         events = self._events_from_response(response)
         result_event = events[-1]
         self.assertEqual(result_event["step"], "result")
-        self.assertIn("stored note", result_event["data"]["raw"]["text"])
-        self.assertNotIn("saved_id", result_event["data"])
+        self.assertIn("stored note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
+        self.assertIsNone(result_event["data"]["metrics"]["saved_id"])
+        self.assertIsNotNone(result_event["data"]["metrics"]["session_id"])
+        self.assertIsInstance(result_event["data"]["metrics"]["session_id"], str)
         merge_pdfs.assert_called_once_with(ANY)
         upload_combined_pdf.assert_not_called()
         save_simplify_output.assert_not_called()
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.simplify_v1_2.save_simplify_output", side_effect=RuntimeError("no firestore"))
-    @patch("routes.simplify_v1_2.score_text", return_value={"score": 1})
+    @patch("routes.simplify_v1_2.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "Patient-friendly", "word_count": 100, "dimensions": {"grade_level": {"score": 70, "raw": 6.0, "label": "Grade Level", "unit": "grade"}, "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon Density", "unit": "proportion"}, "sentence_complexity": {"score": 70, "raw": 12.0, "label": "Sentence Length", "unit": "words/sentence"}, "passive_voice": {"score": 70, "raw": 0.1, "label": "Active Voice", "unit": "passive ratio"}, "actionability": {"score": 70, "raw": 0.05, "label": "Actionability", "unit": "you-rate"}, "numeracy_clarity": {"score": 70, "raw": 1.0, "label": "Numeric Clarity", "unit": "vague count"}, "structural_clarity": {"score": 70, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"}}})
     @patch("routes.simplify_v1_2.build_glossary_from_simplified_text", return_value=[])
     @patch(
         "routes.simplify_v1_2.detect_terms",
@@ -249,18 +327,20 @@ class SimplifyV12PersistenceTest(unittest.TestCase):
         save_simplify_output,
         _verify_token,
     ):
-        with self.assertLogs("routes.simplify_v1_2", level="ERROR") as logs:
+        with self.assertLogs("utils.juno_logger", level="ERROR") as logs:
             response = self.client.post(
-                "/simplify/v1-2",
+                "/simplify",
                 headers={"Authorization": "Bearer token"},
-                data={"text": "plain note"},
+                data={"version": "v1-2", "text": "plain note"},
             )
             events = self._events_from_response(response)
 
         self.assertEqual(response.status_code, 200)
         result_event = events[-1]
         self.assertEqual(result_event["step"], "result")
-        self.assertNotIn("saved_id", result_event["data"])
+        self.assertIsNone(result_event["data"]["metrics"]["saved_id"])
+        self.assertIsNotNone(result_event["data"]["metrics"]["session_id"])
+        self.assertIsInstance(result_event["data"]["metrics"]["session_id"], str)
         save_simplify_output.assert_called_once()
         self.assertIn("failed to save output", "\n".join(logs.output))
 

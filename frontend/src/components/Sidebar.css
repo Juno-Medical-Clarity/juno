@@ -141,3 +141,51 @@
   color: var(--text-secondary);
   font-size: 0.85rem;
 }
+
+.sidebar-date-header {
+  padding: 8px 12px 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
+  margin-top: 4px;
+}
+
+.sidebar-date-header:first-child {
+  border-top: none;
+  margin-top: 0;
+}
+
+.sidebar-batch-group {
+  margin: 0;
+}
+
+.sidebar-batch-header {
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+}
+
+.sidebar-batch-header::-webkit-details-marker {
+  display: none;
+}
+
+.sidebar-batch-header::before {
+  content: '▶';
+  font-size: 0.6rem;
+  transition: transform 0.15s;
+  flex-shrink: 0;
+}
+
+details[open] .sidebar-batch-header::before {
+  transform: rotate(90deg);
+}

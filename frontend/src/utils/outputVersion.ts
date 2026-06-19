@@ -1,0 +1,17 @@
+import type { SimplifyOutput } from '../types/envelope';
+
+const CARE_PLAN_VERSION_TO_ROUTE_ID: Record<string, string> = {
+  v1: 'v1',
+  'v1-1': 'v1-1',
+  'v1-2': 'v1-2',
+  '1.0': 'v1',
+  '1': 'v1',
+  '1.1': 'v1-1',
+  '1.2': 'v1-2',
+};
+
+export function outputRouteVersionId(output: SimplifyOutput): string {
+  return CARE_PLAN_VERSION_TO_ROUTE_ID[output.metrics.pipeline_version]
+    || CARE_PLAN_VERSION_TO_ROUTE_ID[output.simplified_care_plan.version]
+    || 'v1';
+}

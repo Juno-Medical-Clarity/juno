@@ -39,6 +39,31 @@ class SaveOutputTest(unittest.TestCase):
         self.assertEqual(payload["created_at"].tzinfo, timezone.utc)
         self.assertEqual(payload["updated_at"], payload["created_at"])
 
+    @patch("utils.save_output.uuid.uuid4")
+    @patch("utils.save_output.firestore.client")
+    def test_save_simplify_output_accepts_batch_metadata(
+        self, firestore_client, uuid4
+    ):
+        from utils.save_output import save_simplify_output
+
+        uuid4.return_value = "output-123"
+        doc_ref = MagicMock()
+        firestore_client.return_value.collection.return_value.document.return_value = doc_ref
+
+        save_simplify_output(
+            user_id="user-1",
+            name="Visit summary",
+            source_filename="notes.txt",
+            input_pdf_gcs=None,
+            output_data={"summary": "ok"},
+            dataset_group="DocConv",
+            batch_group_id="DocConv-20260616153012",
+        )
+
+        payload = doc_ref.set.call_args.args[0]
+        self.assertEqual(payload["dataset_group"], "DocConv")
+        self.assertEqual(payload["batch_group_id"], "DocConv-20260616153012")
+
     @patch.dict("utils.save_output.os.environ", {"GCP_BUCKET_NAME": "bucket", "GCP_PROJECT_ID": "project"})
     @patch("utils.save_output.uuid.uuid4")
     @patch("utils.save_output.gcs.Client")
