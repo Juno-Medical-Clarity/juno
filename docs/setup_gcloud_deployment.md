@@ -564,6 +564,16 @@ This command is authenticated as ...
 CLOUDSDK_CORE_PROJECT
 ```
 
+### Build is created but workflow fails while streaming logs
+
+If the build is created and later succeeds, but the GitHub step exits with a message like:
+
+```text
+This tool can only stream logs if you are Viewer/Owner of the project
+```
+
+the deploy service account can submit builds but cannot stream Cloud Build logs. The backend workflow uses `--suppress-logs` on `gcloud builds submit` so the command waits for build completion without streaming logs. Inspect build logs in Google Cloud Console or with a user account that has project viewer access.
+
 ### Artifact Registry push denied
 
 Grant `roles/artifactregistry.writer` to the Cloud Build service account that appears in the Cloud Build log.
