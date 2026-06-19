@@ -1,0 +1,53 @@
+name: Tag Production Deploy
+
+on:
+  workflow_run:
+    workflows: ["Deploy Backend", "Deploy Frontend"]
+    types: [completed]
+    branches: [deploy]
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  tag:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: deploy
+          fetch-depth: 0
+
+      - name: Tag production deploy after backend and frontend succeed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          REPO: ${{ github.repository }}
+        run: |
+          runs_json=$(gh api "repos/$REPO/actions/runs?head_sha=$HEAD_SHA&branch=deploy&per_page=100")
+          backend_conclusion=$(jq -r '.workflow_runs[] | select(.name == "Deploy Backend") | .conclusion' <<<"$runs_json" | head -n 1)
+          frontend_conclusion=$(jq -r '.workflow_runs[] | select(.name == "Deploy Frontend") | .conclusion' <<<"$runs_json" | head -n 1)
+
+          echo "Deploy Backend conclusion: ${backend_conclusion:-missing}"
+          echo "Deploy Frontend conclusion: ${frontend_conclusion:-missing}"
+
+          if [[ "$backend_conclusion" != "success" || "$frontend_conclusion" != "success" ]]; then
+            echo "Both deploy workflows have not succeeded for $HEAD_SHA yet. Skipping tag."
+            exit 0
+          fi
+
+          git fetch --tags origin
+          existing_tag=$(git tag --points-at "$HEAD_SHA" 'prod-*' | head -n 1)
+          if [[ -n "$existing_tag" ]]; then
+            echo "Production tag already exists for $HEAD_SHA: $existing_tag"
+            exit 0
+          fi
+
+          tag_name="prod-$(date -u +%Y%m%d-%H%M%S)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$tag_name" "$HEAD_SHA" -m "Production deploy $tag_name"
+          git push origin "$tag_name"
+          echo "Created production tag $tag_name for $HEAD_SHA"

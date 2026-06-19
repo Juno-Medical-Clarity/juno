@@ -460,7 +460,7 @@ entryPoint: ./frontend
 
 ## 15. First Backend Deploy
 
-The backend workflow runs on pushes to `deploy` when backend files or the backend workflow change.
+The backend workflow runs on every push to `deploy`. This keeps each production release tied to both a backend and frontend deploy result, even when one side has no code changes.
 
 To trigger from local git:
 
@@ -514,7 +514,53 @@ npm run build
 firebase deploy --only hosting --project "$PROJECT_ID"
 ```
 
-## 17. Post-Deploy Verification
+## 17. Production Tags
+
+After both `Deploy Backend` and `Deploy Frontend` succeed for the same `deploy` commit, the `Tag Production Deploy` workflow creates an annotated tag:
+
+```text
+prod-YYYYMMDD-HHMMSS
+```
+
+The tag points at the exact deployed commit. If the tag workflow runs twice for the same commit, it detects the existing `prod-*` tag and does not create a duplicate.
+
+List production tags:
+
+```bash
+git fetch --tags
+git tag --list 'prod-*' --sort=-creatordate
+```
+
+Show what is in a production tag:
+
+```bash
+git show --stat prod-YYYYMMDD-HHMMSS
+```
+
+## 18. Git-Based Rollback
+
+Use the rollback script to trigger a runtime rollback from a production tag:
+
+```bash
+scripts/rollback_to_tag.sh prod-YYYYMMDD-HHMMSS
+```
+
+The script:
+
+1. Fetches tags.
+2. Verifies the requested `prod-*` tag exists.
+3. Triggers the `Rollback Production` GitHub Actions workflow with the tag.
+
+The rollback workflow checks out the tag and redeploys backend and frontend from that tag. It does not change `main` or `deploy`.
+
+For emergency runtime rollback without a Git PR:
+
+- Cloud Run: use revision traffic rollback in the Cloud Run console or `gcloud run services update-traffic`.
+- Firebase Hosting: use Hosting release history rollback in the Firebase console.
+
+The Git rollback script is slower, but it keeps backend and frontend source state aligned.
+
+## 19. Post-Deploy Verification
 
 Backend:
 
@@ -547,7 +593,7 @@ gcloud logging read \
   --format json
 ```
 
-## 18. Common Failures
+## 20. Common Failures
 
 ### `gcloud.builds.submit PERMISSION_DENIED`
 
@@ -619,7 +665,7 @@ Grant the service account in `FIREBASE_SERVICE_ACCOUNT`:
 roles/firebasehosting.admin
 ```
 
-## 19. Cleanup Sensitive Local Files
+## 21. Cleanup Sensitive Local Files
 
 Remove downloaded JSON keys from your machine after adding them to GitHub or Secret Manager:
 
