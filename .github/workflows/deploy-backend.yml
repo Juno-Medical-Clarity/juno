@@ -10,6 +10,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      GCP_PROJECT_ID: juno-medical-clarity
+      GCP_REGION: us-central1
+      GCP_BUCKET_NAME: juno-medical-clarity-backend
+      BACKEND_IMAGE: us-central1-docker.pkg.dev/juno-medical-clarity/juno/simplify-backend
     steps:
       - uses: actions/checkout@v4
 
@@ -17,30 +22,35 @@ jobs:
         uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
+          project_id: ${{ env.GCP_PROJECT_ID }}
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
 
+      - name: Select backend GCP project
+        run: gcloud config set project "$GCP_PROJECT_ID"
+
       - name: Build and push Docker image
         run: |
           gcloud builds submit \
-            --tag gcr.io/juno-499419/simplify-backend \
+            --project "$GCP_PROJECT_ID" \
+            --tag "$BACKEND_IMAGE" \
             ./backend
 
       - name: Deploy to Cloud Run
         uses: google-github-actions/deploy-cloudrun@v2
         with:
           service: simplify-backend
-          image: gcr.io/juno-499419/simplify-backend
-          region: us-central1
+          image: ${{ env.BACKEND_IMAGE }}
+          region: ${{ env.GCP_REGION }}
           flags: >-
             --allow-unauthenticated
             --memory 2Gi
             --timeout 300
           env_vars: |
-            GCP_PROJECT_ID=juno-499419
-            GCP_BUCKET_NAME=juno-test-bucket
-            GCP_LOCATION=us-central1
+            GCP_PROJECT_ID=${{ env.GCP_PROJECT_ID }}
+            GCP_BUCKET_NAME=${{ env.GCP_BUCKET_NAME }}
+            GCP_LOCATION=${{ env.GCP_REGION }}
             VERTEX_AI_MODEL=gemini-3.5-flash
             SIMPLIFY_DEFAULT_VERSION=v1-2
             FIRESTORE_DATABASE_ID=(default)

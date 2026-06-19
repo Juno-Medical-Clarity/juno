@@ -2,7 +2,7 @@
 
 **Date:** June 2026  
 **Stack:** React 19 (Firebase Hosting) · Flask (Cloud Run) · Firestore · Google Cloud Storage  
-**GCP project:** `juno-499419` · **Firebase project:** `juno-medical-clarity` · **Region:** `us-central1`
+**GCP project:** `juno-medical-clarity` · **Firebase project:** `juno-medical-clarity` · **Region:** `us-central1`
 
 ---
 
@@ -160,7 +160,7 @@ With this in place, Cloud Trace will show:
 
 ### 2.4 Cloud Logging Query Syntax (Log Explorer)
 
-Log Explorer URL: `https://console.cloud.google.com/logs/query?project=juno-499419`
+Log Explorer URL: `https://console.cloud.google.com/logs/query?project=juno-medical-clarity`
 
 **Show all logs for a specific session:**
 ```
@@ -292,7 +292,7 @@ jsonPayload.total_duration_ms>5000
     JSON_VALUE(json_payload, '$.step_name') AS step_name,
     CAST(JSON_VALUE(json_payload, '$.duration_ms') AS INT64) AS duration_ms,
     timestamp
-  FROM `juno-499419.juno_logs.run_googleapis_com_stderr_*`
+  FROM `juno-medical-clarity.juno_logs.run_googleapis_com_stderr_*`
   WHERE timestamp > TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
     AND JSON_VALUE(json_payload, '$.status') = 'error'
   ORDER BY timestamp DESC
@@ -418,7 +418,7 @@ Apply the same step-name + duration_ms logging pattern as §6.3. The exact steps
 1. Go to Cloud Logging → Log Router → Create Sink
 2. Name: `juno-logs-bq`
 3. Destination: BigQuery dataset — create `juno_logs` in `us-central1`
-4. Filter: `resource.type="cloud_run_revision"` (optional: add `project_id="juno-499419"`)
+4. Filter: `resource.type="cloud_run_revision"` (optional: add `project_id="juno-medical-clarity"`)
 5. Enable partitioned tables: yes (by `_PARTITIONTIME`)
 6. Click Create
 
