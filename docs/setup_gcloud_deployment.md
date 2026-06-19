@@ -572,7 +572,7 @@ If the build is created and later succeeds, but the GitHub step exits with a mes
 This tool can only stream logs if you are Viewer/Owner of the project
 ```
 
-the deploy service account can submit builds but cannot stream Cloud Build logs. The backend workflow uses `--suppress-logs` on `gcloud builds submit` so the command waits for build completion without streaming logs. Inspect build logs in Google Cloud Console or with a user account that has project viewer access.
+the deploy service account can submit builds but cannot stream logs from the default Cloud Build logs bucket. The backend workflow uses `backend/cloudbuild.yaml`, which sets `options.logging: CLOUD_LOGGING_ONLY` so build logs are written to Cloud Logging instead of the default Cloud Storage logs bucket.
 
 ### Artifact Registry push denied
 

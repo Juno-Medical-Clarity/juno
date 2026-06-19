@@ -34,8 +34,8 @@ jobs:
         run: |
           gcloud builds submit \
             --project "$GCP_PROJECT_ID" \
-            --suppress-logs \
-            --tag "$BACKEND_IMAGE" \
+            --config ./backend/cloudbuild.yaml \
+            --substitutions "_BACKEND_IMAGE=$BACKEND_IMAGE" \
             ./backend
 
       - name: Deploy to Cloud Run
