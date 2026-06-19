@@ -62,7 +62,7 @@ That's it. No changes to `juno_logger.py` or `juno_metrics.py` are needed.
 
 ## Cloud Logging Queries (Log Explorer)
 
-URL: `https://console.cloud.google.com/logs/query?project=juno-499419`
+URL: `https://console.cloud.google.com/logs/query?project=juno-medical-clarity`
 
 **All logs for a specific session:**
 ```
@@ -152,7 +152,7 @@ SELECT
   JSON_VALUE(json_payload, '$.step_name') AS step_name,
   CAST(JSON_VALUE(json_payload, '$.duration_ms') AS FLOAT64) AS duration_ms,
   timestamp
-FROM `juno-499419.juno_logs.run_googleapis_com_stdout_*`
+FROM `juno-medical-clarity.juno_logs.run_googleapis_com_stdout_*`
 WHERE DATE(_PARTITIONTIME) = CURRENT_DATE()
 ORDER BY timestamp DESC
 ```
