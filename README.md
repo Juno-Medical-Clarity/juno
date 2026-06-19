@@ -44,6 +44,7 @@ npm run dev
 ## Deployment
 
 See `backend/README.md` for Cloud Run deployment and `frontend/README.md` for Firebase Hosting.
+See `docs/logging.md` for logging setup, developer logging conventions, and Cloud Logging queries.
 
 ## Required Environment Variables
 
