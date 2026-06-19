@@ -41,6 +41,8 @@ def save_simplify_output(
     source_filename: str,
     input_pdf_gcs: str | None,
     output_data: dict,
+    dataset_group: str | None = None,
+    batch_group_id: str | None = None,
 ) -> str:
     """Save a Simplify output document to Firestore and return its ID."""
     database_id = os.environ.get("FIRESTORE_DATABASE_ID", "(default)")
@@ -48,15 +50,19 @@ def save_simplify_output(
     now = datetime.now(timezone.utc)
 
     db = firestore.client(database_id=database_id)
-    db.collection("simplify_outputs").document(output_id).set(
-        {
-            "uid": user_id,
-            "name": name,
-            "source_filename": source_filename,
-            "created_at": now,
-            "updated_at": now,
-            "input_pdf_gcs": input_pdf_gcs or "",
-            "output_data": _without_raw(output_data),
-        }
-    )
+    payload = {
+        "uid": user_id,
+        "name": name,
+        "source_filename": source_filename,
+        "created_at": now,
+        "updated_at": now,
+        "input_pdf_gcs": input_pdf_gcs or "",
+        "output_data": _without_raw(output_data),
+    }
+    if dataset_group is not None:
+        payload["dataset_group"] = dataset_group
+    if batch_group_id is not None:
+        payload["batch_group_id"] = batch_group_id
+
+    db.collection("simplify_outputs").document(output_id).set(payload)
     return output_id

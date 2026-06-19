@@ -10,13 +10,16 @@ All routes except `/health` require `Authorization: Bearer <firebase_id_token>`.
 
 | Method | Path | Description |
 |---|---|---|
-| `POST` | `/simplify/v1-2` | Run V1.2 pipeline (SSE stream) |
-| `POST` | `/simplify/v1-1` | Run V1.1 pipeline (SSE stream) |
-| `POST` | `/simplify/v1` | Run V1 pipeline (SSE stream) |
+| `POST` | `/simplify` | Run the simplify pipeline (SSE stream) |
 
-**Request (v1-2):** `multipart/form-data`
+The `version` field is optional and can be sent as form metadata or in a JSON
+body. Supported values are `v1`, `v1-1`, and `v1-2`; omitting `version` uses
+the latest default, `v1-2`.
+
+**Request:** `multipart/form-data`
 - `files` — one or more PDF/TXT/DOCX files (max 10 files, 25 MB aggregate)
 - `text` — plain text input (alternative to files)
+- `version` — optional pipeline version (`v1`, `v1-1`, or `v1-2`; default `v1-2`)
 
 **SSE Event Stream:**
 ```
@@ -80,8 +83,8 @@ Create in Firebase Console → Firestore → Indexes → Add Composite Index.
 
 1. Create `simplify/v<X>/` with `__init__.py` and `pipeline.py`
 2. Subclass `SimplifyPipeline` from `simplify/interface.py`, implement `run(text) -> dict`
-3. Create `routes/simplify_v<X>.py` with one SSE route
-4. Register the blueprint in `routes/__init__.py`
+3. Add a version-specific handler module under `routes/`
+4. Register the version in the `/simplify` dispatcher
 
 ## Local Development
 

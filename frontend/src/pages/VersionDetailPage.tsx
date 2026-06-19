@@ -1,10 +1,9 @@
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { VERSIONS } from '../config';
 import SignOutButton from '../auth/SignOutButton';
 
 export default function VersionDetailPage() {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
 
   const version = VERSIONS.find(v => v.id === id);
 
@@ -55,14 +54,7 @@ export default function VersionDetailPage() {
               ))}
             </ol>
 
-            {/* Actions */}
             <div className="version-detail-actions">
-              <button
-                className="cta-btn"
-                onClick={() => navigate(version.path)}
-              >
-                Use this version →
-              </button>
               <Link className="version-detail-back" to="/versions" style={{ marginBottom: 0 }}>
                 ← Back to all versions
               </Link>
