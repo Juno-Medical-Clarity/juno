@@ -413,10 +413,14 @@ class TestSimplifiedCarePlan(unittest.TestCase):
         self.assertIn("terms", d)
 
     def test_unknown_version_raises(self):
-        """from_dict with an unregistered version must raise KeyError."""
+        """from_dict with an unregistered version must raise descriptive ValueError."""
         from backend.models.care_plan import SimplifiedCarePlan
 
-        with self.assertRaises(KeyError):
+        with self.assertRaisesRegex(
+            ValueError,
+            "Unknown version '9\\.9' for SimplifiedCarePlan\\. "
+            "Available versions: 1\\.0, 1\\.1, 1\\.2",
+        ):
             SimplifiedCarePlan.from_dict({"version": "9.9", "foo": "bar"})
 
     def test_from_dict_missing_version_raises_value_error(self):

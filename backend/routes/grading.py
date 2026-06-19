@@ -1,16 +1,14 @@
 """grading.py — Re-run grading on a saved or ephemeral simplify output."""
 
-import json
 import logging
 import os
-from datetime import datetime, timezone
 
 from flask import Blueprint, jsonify, request
 from firebase_admin import firestore
 
 from utils.auth import verify_firebase_token
 from utils.scoring import score_text
-from backend.models.grading import Grading, build_grading
+from backend.models.grading import build_grading
 
 logger = logging.getLogger(__name__)
 grading_bp = Blueprint("grading", __name__)

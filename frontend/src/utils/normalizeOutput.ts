@@ -26,7 +26,7 @@ export function normalizeSimplifyOutput(raw: any): SimplifyOutput {
       saved_id: saved_id ?? null,
     },
     input: { mode: 'file', files: [], text: null, doc_id: null },
-    grading: { entries: [] },
+    grading: { entries: [], enabled: false, graded_at: null },
     simplified_care_plan: { version: rest.version ?? '1.0', ...rest },
   };
 }

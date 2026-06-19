@@ -6,5 +6,6 @@ export interface VersionRouteState {
 }
 
 export function versionPath(versionId: string): string {
-  return VERSIONS.find(version => version.id === versionId)?.path ?? '/v1';
+  if (!VERSIONS.some(version => version.id === versionId)) return '/';
+  return `/?version=${encodeURIComponent(versionId)}`;
 }

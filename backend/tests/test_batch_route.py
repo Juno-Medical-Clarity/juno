@@ -246,6 +246,117 @@ class BatchRouteTest(unittest.TestCase):
         run_v1_1.assert_called_once()
         run_v1_2.assert_not_called()
 
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    def test_batch_rejects_too_many_runs_before_pipeline_work(self, _verify_token):
+        datasets = [{"group": "GroupA", "inputs": ["input-1", "input-2", "input-3"], "files": ["notes.txt"]}]
+
+        with (
+            patch("routes.batch.MAX_BATCH_RUNS", 2),
+            patch("routes.batch.list_datasets", return_value=datasets) as list_datasets,
+            patch("routes.batch._batch_timestamp") as batch_timestamp,
+            patch("routes.batch.read_dataset_file") as read_file,
+            patch("routes.batch.run_v1_2_pipeline") as executor,
+            patch("routes.batch.save_simplify_output") as save_output,
+        ):
+            response = self.client.post(
+                "/simplify/batch",
+                json={
+                    "version": "v1-2",
+                    "grading_enabled": False,
+                    "selections": [
+                        {"group": "GroupA", "inputs": "all", "files": ["notes.txt"]},
+                    ],
+                },
+                headers={"Authorization": "Bearer token"},
+            )
+            response_text = response.get_data(as_text=True)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            parse_sse(response_text),
+            [{"step": "error", "error": "Batch request exceeds maximum of 2 runs"}],
+        )
+        list_datasets.assert_called_once_with()
+        batch_timestamp.assert_not_called()
+        read_file.assert_not_called()
+        executor.assert_not_called()
+        save_output.assert_not_called()
+
+    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    def test_batch_continues_after_per_input_failures(self, _verify_token):
+        datasets = [
+            {
+                "group": "GroupA",
+                "inputs": ["empty", "pipeline-error", "missing-result", "success"],
+                "files": ["notes.txt"],
+            },
+        ]
+        read_bytes = {
+            ("GroupA", "empty", "notes.txt"): b"   ",
+            ("GroupA", "pipeline-error", "notes.txt"): b"pipeline-error notes",
+            ("GroupA", "missing-result", "notes.txt"): b"missing-result notes",
+            ("GroupA", "success", "notes.txt"): b"success notes",
+        }
+
+        def read_dataset_file(group, input_id, filename):
+            return read_bytes[(group, input_id, filename)]
+
+        def run_pipeline(text, metrics, grading_enabled):
+            if "pipeline-error" in text:
+                yield f"data: {json.dumps({'step': 'error', 'error': 'Pipeline failed for input'})}\n\n"
+                return
+            if "missing-result" in text:
+                yield f"data: {json.dumps({'step': 2, 'status': 'done'})}\n\n"
+                return
+            yield f"data: {json.dumps({'step': 'result', 'data': fixed_output('success')})}\n\n"
+
+        with (
+            patch("routes.batch._batch_timestamp", return_value="20260616153012"),
+            patch("routes.batch.list_datasets", return_value=datasets),
+            patch("routes.batch.read_dataset_file", side_effect=read_dataset_file),
+            patch("routes.batch.run_v1_2_pipeline", side_effect=run_pipeline) as executor,
+            patch("routes.batch.save_simplify_output", return_value="saved-success") as save_output,
+        ):
+            response = self.client.post(
+                "/simplify/batch",
+                json={
+                    "version": "v1-2",
+                    "grading_enabled": False,
+                    "selections": [
+                        {
+                            "group": "GroupA",
+                            "inputs": ["empty", "pipeline-error", "missing-result", "success"],
+                            "files": ["notes.txt"],
+                        },
+                    ],
+                },
+                headers={"Authorization": "Bearer token"},
+            )
+            response_text = response.get_data(as_text=True)
+
+        self.assertEqual(response.status_code, 200)
+        events = parse_sse(response_text)
+        self.assertFalse([event for event in events if event["step"] == "error"])
+
+        failures = [event for event in events if event["step"] == "batch_progress" and event.get("status") == "error"]
+        self.assertEqual(
+            [(event["input"], event["error"]) for event in failures],
+            [
+                ("empty", "Input appears to be empty or unreadable: GroupA/empty"),
+                ("missing-result", "Pipeline did not return a result: GroupA/missing-result"),
+                ("pipeline-error", "Pipeline failed for input"),
+            ],
+        )
+        self.assertEqual([event["index"] for event in failures], [1, 2, 3])
+        self.assertEqual([event["total"] for event in failures], [4, 4, 4])
+
+        final = events[-1]
+        self.assertEqual(final["step"], "batch_result")
+        self.assertEqual([output["metrics"]["saved_id"] for output in final["data"]["outputs"]], ["saved-success"])
+        self.assertEqual(final["data"]["outputs"][0]["input"]["dataset_input"], "success")
+        self.assertEqual(executor.call_count, 3)
+        save_output.assert_called_once()
+
 
 if __name__ == "__main__":
     unittest.main()

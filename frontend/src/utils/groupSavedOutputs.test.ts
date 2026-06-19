@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'vitest';
-import { groupSavedOutputs } from './groupSavedOutputs';
+import { afterAll, beforeAll, describe, it, expect, vi } from 'vitest';
+import { formatDateKey, groupSavedOutputs, localDateKey } from './groupSavedOutputs';
 import type { SavedOutputMeta } from './groupSavedOutputs';
 
 function makeOutput(overrides: Partial<SavedOutputMeta> & { id: string }): SavedOutputMeta {
@@ -27,6 +27,14 @@ const FIXTURE: SavedOutputMeta[] = [
 ];
 
 describe('groupSavedOutputs', () => {
+  beforeAll(() => {
+    vi.stubEnv('TZ', 'America/New_York');
+  });
+
+  afterAll(() => {
+    vi.unstubAllEnvs();
+  });
+
   it('produces two date groups in newest-first order', () => {
     const result = groupSavedOutputs(FIXTURE);
     expect(result).toHaveLength(2);
@@ -59,5 +67,18 @@ describe('groupSavedOutputs', () => {
 
   it('returns empty array for empty input', () => {
     expect(groupSavedOutputs([])).toEqual([]);
+  });
+
+  it('uses local dates instead of UTC dates when grouping timestamps', () => {
+    const result = groupSavedOutputs([
+      makeOutput({ id: 'late-evening-local', created_at: '2026-06-16T02:00:00Z' }),
+    ]);
+
+    expect(localDateKey(new Date('2026-06-16T02:00:00Z'))).toBe('2026-06-15');
+    expect(result[0].date).toBe('2026-06-15');
+  });
+
+  it('formats date keys by parsing date parts explicitly', () => {
+    expect(formatDateKey('2026-06-16')).toBe('June 16, 2026');
   });
 });

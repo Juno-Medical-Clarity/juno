@@ -18,6 +18,7 @@ from utils.save_output import save_simplify_output
 
 
 batch_bp = Blueprint("batch", __name__)
+MAX_BATCH_RUNS = 50
 
 
 def _sse(payload: dict) -> str:
@@ -91,11 +92,13 @@ def _resolve_requested_runs(selections: list[dict]) -> list[tuple[str, str, list
 
 def _combined_text_for_dataset_input(group: str, input_id: str, files: list[str]) -> str:
     parts: list[str] = []
+    has_text = False
     for filename in files:
         file_bytes = read_dataset_file(group, input_id, filename)
         text = _extract_text_from_bytes(file_bytes, filename).strip()
+        has_text = has_text or bool(text)
         parts.append(f"\n\n--- {filename} ---\n\n{text}")
-    return "".join(parts)
+    return "".join(parts) if has_text else ""
 
 
 def _output_name(output_data: dict, group: str, input_id: str) -> str:
@@ -108,6 +111,18 @@ def _output_name(output_data: dict, group: str, input_id: str) -> str:
     except Exception:
         pass
     return f"{group} {input_id}"[:60]
+
+
+def _batch_progress_error(group: str, input_id: str, index: int, total: int, error: str) -> dict:
+    return {
+        "step": "batch_progress",
+        "group": group,
+        "input": input_id,
+        "index": index,
+        "total": total,
+        "status": "error",
+        "error": error,
+    }
 
 
 @batch_bp.route("/simplify/batch", methods=["POST"])
@@ -133,14 +148,18 @@ def simplify_batch(user_id: str):
 
             grading_enabled = _grading_enabled(body.get("grading_enabled", False))
             pipeline = _pipeline_for_version(version)
-            timestamp = _batch_timestamp()
             runs = _resolve_requested_runs(selections)
+            total = len(runs)
+            if total > MAX_BATCH_RUNS:
+                yield _sse({"step": "error", "error": f"Batch request exceeds maximum of {MAX_BATCH_RUNS} runs"})
+                return
+
+            timestamp = _batch_timestamp()
             batch_group_ids = {
                 group: f"{group}-{timestamp}"
                 for group in sorted({group for group, _, _ in runs})
             }
             outputs: list[dict] = []
-            total = len(runs)
 
             for index, (group, input_id, files) in enumerate(runs, start=1):
                 batch_group_id = batch_group_ids[group]
@@ -153,10 +172,20 @@ def simplify_batch(user_id: str):
                     "status": "active",
                 })
 
-                text = _combined_text_for_dataset_input(group, input_id, files)
+                try:
+                    text = _combined_text_for_dataset_input(group, input_id, files)
+                except Exception as exc:
+                    yield _sse(_batch_progress_error(group, input_id, index, total, str(exc)))
+                    continue
                 if not text.strip():
-                    yield _sse({"step": "error", "error": f"Input appears to be empty or unreadable: {group}/{input_id}"})
-                    return
+                    yield _sse(_batch_progress_error(
+                        group,
+                        input_id,
+                        index,
+                        total,
+                        f"Input appears to be empty or unreadable: {group}/{input_id}",
+                    ))
+                    continue
 
                 metrics = Metrics.start(
                     session_id=getattr(g, "session_id", user_id),
@@ -172,16 +201,25 @@ def simplify_batch(user_id: str):
                 )
 
                 result_data = None
+                input_failed = False
                 for chunk in pipeline(text, metrics, grading_enabled):
                     payload = _payload_from_sse(chunk)
                     if not payload:
                         continue
                     if payload.get("step") == "result":
-                        result_data = payload["data"]
+                        result_data = payload.get("data")
                         continue
                     if payload.get("step") == "error":
-                        yield _sse(payload)
-                        return
+                        yield _sse(_batch_progress_error(
+                            group,
+                            input_id,
+                            index,
+                            total,
+                            payload.get("error") or f"Pipeline failed: {group}/{input_id}",
+                        ))
+                        result_data = None
+                        input_failed = True
+                        break
                     yield _sse({
                         "step": "batch_progress",
                         "group": group,
@@ -193,8 +231,15 @@ def simplify_batch(user_id: str):
                     })
 
                 if result_data is None:
-                    yield _sse({"step": "error", "error": f"Pipeline did not return a result: {group}/{input_id}"})
-                    return
+                    if not input_failed:
+                        yield _sse(_batch_progress_error(
+                            group,
+                            input_id,
+                            index,
+                            total,
+                            f"Pipeline did not return a result: {group}/{input_id}",
+                        ))
+                    continue
 
                 result_data["input"] = input_model.to_dict()
                 source_filename = ", ".join(files)

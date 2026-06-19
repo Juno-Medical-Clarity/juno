@@ -5,11 +5,32 @@ export interface SavedOutputMeta {
 export interface BatchGroup { batch_group_id: string; items: SavedOutputMeta[] }
 export interface DateGroup { date: string; batches: BatchGroup[]; standalone: SavedOutputMeta[] }
 
+function padDatePart(value: number): string {
+  return String(value).padStart(2, '0');
+}
+
+export function localDateKey(date: Date): string {
+  return [
+    date.getFullYear(),
+    padDatePart(date.getMonth() + 1),
+    padDatePart(date.getDate()),
+  ].join('-');
+}
+
+export function formatDateKey(dateKey: string): string {
+  const [year, month, day] = dateKey.split('-').map(Number);
+  return new Date(year, month - 1, day).toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  });
+}
+
 export function groupSavedOutputs(outputs: SavedOutputMeta[]): DateGroup[] {
   const dateOrder: string[] = [];
   const byDate = new Map<string, SavedOutputMeta[]>();
   for (const o of outputs) {
-    const date = o.created_at.slice(0, 10); // YYYY-MM-DD
+    const date = localDateKey(new Date(o.created_at));
     if (!byDate.has(date)) { byDate.set(date, []); dateOrder.push(date); }
     byDate.get(date)!.push(o);
   }

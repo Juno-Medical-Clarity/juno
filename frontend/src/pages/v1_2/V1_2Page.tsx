@@ -33,7 +33,8 @@ interface BatchProgress {
   input: string;
   index: number;
   total: number;
-  status: 'active' | 'pipeline' | 'done';
+  status: 'active' | 'pipeline' | 'done' | 'error';
+  error?: string;
 }
 
 function stepIcon(status: StepStatus): string {
@@ -181,7 +182,7 @@ export default function V1_2Page() {
               input?: string;
               index?: number;
               total?: number;
-              status?: 'active' | 'pipeline' | 'done';
+              status?: 'active' | 'pipeline' | 'done' | 'error';
               event?: { step?: number | string; status?: StepStatus };
               data?: { batch_group_ids?: Record<string, string>; outputs?: unknown[] };
               error?: string;
@@ -209,6 +210,7 @@ export default function V1_2Page() {
                   index: event.index,
                   total: event.total,
                   status: event.status,
+                  error: event.error,
                 });
               }
 
@@ -499,6 +501,9 @@ export default function V1_2Page() {
                       Input {batchProgress.index} of {batchProgress.total}
                     </strong>
                     <span> · {batchProgress.group} / {batchProgress.input}</span>
+                    {batchProgress.status === 'error' && batchProgress.error && (
+                      <div style={{ color: 'var(--error, #DC2626)', marginTop: '6px' }}>{batchProgress.error}</div>
+                    )}
                   </div>
                 )}
                 <div className="step-list">

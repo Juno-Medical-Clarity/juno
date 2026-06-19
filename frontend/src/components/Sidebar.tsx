@@ -6,7 +6,7 @@ import {
   deleteSavedOutput,
   type SavedOutputMeta,
 } from '../api/savedOutputs';
-import { groupSavedOutputs } from '../utils/groupSavedOutputs';
+import { formatDateKey, groupSavedOutputs, localDateKey } from '../utils/groupSavedOutputs';
 
 interface SidebarProps {
   activeId: string | null;
@@ -132,7 +132,7 @@ export default function Sidebar({ activeId, onSelect, onNew, refreshTrigger }: S
     );
   }
 
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localDateKey(new Date());
   const grouped = !loading ? groupSavedOutputs(outputs) : [];
 
   return (
@@ -149,9 +149,7 @@ export default function Sidebar({ activeId, onSelect, onNew, refreshTrigger }: S
         {!loading && grouped.map(dateGroup => (
           <div key={dateGroup.date}>
             <div className="sidebar-date-header">
-              {new Date(dateGroup.date + 'T12:00:00').toLocaleDateString('en-US', {
-                month: 'long', day: 'numeric', year: 'numeric',
-              })}
+              {formatDateKey(dateGroup.date)}
             </div>
             {dateGroup.batches.map(batch => (
               <details
