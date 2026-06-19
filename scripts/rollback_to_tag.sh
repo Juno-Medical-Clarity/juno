@@ -21,6 +21,14 @@ if [[ -z "$tag_name" || "$tag_name" == "-h" || "$tag_name" == "--help" ]]; then
   exit 0
 fi
 
+case "$tag_name" in
+  prod-*) ;;
+  *)
+    echo "Rollback tag must start with 'prod-': $tag_name" >&2
+    exit 1
+    ;;
+esac
+
 if ! command -v gh >/dev/null 2>&1; then
   echo "gh CLI is required to trigger the rollback workflow." >&2
   exit 1
