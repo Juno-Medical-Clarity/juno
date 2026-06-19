@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
-from backend.models.base import JsonModel
+from .base import JsonModel
 
 
 @dataclass

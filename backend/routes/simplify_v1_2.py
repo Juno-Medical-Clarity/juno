@@ -35,11 +35,11 @@ from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from utils.juno_logger import JunoLogger, monotonic_ms
 from utils.juno_metrics import JunoMetrics
-from backend.models.metrics import Metrics
-from backend.models.input import Input
-from backend.models.grading import Grading, build_grading
-from backend.models.care_plan import SimplifiedCarePlan
-from backend.models.envelope import SimplifyOutput
+from models.metrics import Metrics
+from models.input import Input
+from models.grading import Grading, build_grading
+from models.care_plan import SimplifiedCarePlan
+from models.envelope import SimplifyOutput
 
 logger = logging.getLogger(__name__)
 

@@ -8,7 +8,7 @@ from firebase_admin import firestore
 
 from utils.auth import verify_firebase_token
 from utils.scoring import score_text
-from backend.models.grading import build_grading
+from models.grading import build_grading
 
 logger = logging.getLogger(__name__)
 grading_bp = Blueprint("grading", __name__)

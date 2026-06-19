@@ -6,8 +6,8 @@ from typing import Callable, Generator
 
 from flask import Blueprint, Response, g, request, stream_with_context
 
-from backend.models.input import Input
-from backend.models.metrics import Metrics
+from models.input import Input
+from models.metrics import Metrics
 from config import SIMPLIFY_DEFAULT_VERSION
 from routes.simplify import ALLOWED_VERSIONS, run_v1_pipeline
 from routes.simplify_v1_1 import run_v1_1_pipeline

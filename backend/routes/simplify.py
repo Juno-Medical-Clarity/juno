@@ -29,11 +29,11 @@ from utils.auth import verify_firebase_token
 from utils.juno_logger import monotonic_ms
 from utils.pdf_extract import extract_text_from_pdf
 from utils.scoring import score_text
-from backend.models.metrics import Metrics
-from backend.models.input import Input
-from backend.models.grading import Grading, build_grading
-from backend.models.care_plan import SimplifiedCarePlan
-from backend.models.envelope import SimplifyOutput
+from models.metrics import Metrics
+from models.input import Input
+from models.grading import Grading, build_grading
+from models.care_plan import SimplifiedCarePlan
+from models.envelope import SimplifyOutput
 
 logger = logging.getLogger(__name__)
 

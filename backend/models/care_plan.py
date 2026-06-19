@@ -7,7 +7,7 @@ three times in the VersionedJsonModel registry.
 
 from dataclasses import dataclass
 
-from backend.models.base import VersionedJsonModel
+from .base import VersionedJsonModel
 
 
 @dataclass

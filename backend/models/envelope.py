@@ -2,11 +2,11 @@
 
 from dataclasses import dataclass
 
-from backend.models.base import JsonModel
-from backend.models.care_plan import SimplifiedCarePlan
-from backend.models.grading import Grading
-from backend.models.input import Input
-from backend.models.metrics import Metrics
+from .base import JsonModel
+from .care_plan import SimplifiedCarePlan
+from .grading import Grading
+from .input import Input
+from .metrics import Metrics
 
 
 @dataclass
