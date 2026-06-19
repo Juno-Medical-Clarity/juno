@@ -100,15 +100,16 @@ python app.py
 ## Cloud Run Deployment
 
 ```bash
-gcloud builds submit --tag gcr.io/<GCP_PROJECT_ID>/simplify-backend
+gcloud config set project juno-medical-clarity
+gcloud builds submit --project juno-medical-clarity --tag us-central1-docker.pkg.dev/juno-medical-clarity/juno/simplify-backend
 gcloud run deploy simplify-backend \
-  --image gcr.io/<GCP_PROJECT_ID>/simplify-backend \
+  --image us-central1-docker.pkg.dev/juno-medical-clarity/juno/simplify-backend \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated \
   --memory 2Gi \
   --timeout 300 \
-  --set-env-vars GCP_PROJECT_ID=<GCP_PROJECT_ID>,GCP_BUCKET_NAME=<GCP_BUCKET_NAME>,VERTEX_AI_MODEL=gemini-2.0-flash,SIMPLIFY_DEFAULT_VERSION=v1-2
+  --set-env-vars GCP_PROJECT_ID=juno-medical-clarity,GCP_BUCKET_NAME=juno-medical-clarity-backend,GCP_LOCATION=us-central1,VERTEX_AI_MODEL=gemini-3.5-flash,SIMPLIFY_DEFAULT_VERSION=v1-2,FIRESTORE_DATABASE_ID='(default)'
 ```
 
-Set the secret `FIREBASE_SERVICE_ACCOUNT_PATH` via Cloud Run secret manager or mount the JSON as a volume.
+For GitHub Actions, store a deploy service account JSON key in the `GCP_SA_KEY` repository secret. Store the Firebase Admin SDK JSON in Secret Manager as `firebase-service-account` so Cloud Run can inject `FIREBASE_SERVICE_ACCOUNT_JSON`.

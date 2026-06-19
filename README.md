@@ -49,8 +49,8 @@ See `backend/README.md` for Cloud Run deployment and `frontend/README.md` for Fi
 
 | Variable | Where | Description |
 |---|---|---|
-| `GCP_PROJECT_ID` | backend | Google Cloud project ID |
-| `GCP_BUCKET_NAME` | backend | GCS bucket for input PDFs |
+| `GCP_PROJECT_ID` | backend | Google Cloud/Firebase project ID (`juno-medical-clarity`) |
+| `GCP_BUCKET_NAME` | backend | GCS bucket for input PDFs (`juno-medical-clarity-backend`) |
 | `GCP_LOCATION` | backend | GCP region (default: us-central1) |
 | `VERTEX_AI_MODEL` | backend | Gemini model name |
 | `FIRESTORE_DATABASE_ID` | backend | Firestore database (default: `(default)`) |

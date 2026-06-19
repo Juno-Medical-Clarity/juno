@@ -1,7 +1,7 @@
 # Patient Share Link — Design & Implementation Analysis
 
 **Date:** 2026-06-15  
-**Project:** Juno (GCP: `juno-499419`, Firebase: `juno-medical-clarity`)  
+**Project:** Juno (GCP/Firebase: `juno-medical-clarity`)
 **Stack:** React 19 + Firebase Hosting / Flask + Google Cloud Run / Firestore / GCS  
 **Author:** Pre-implementation design analysis for founder decision
 
