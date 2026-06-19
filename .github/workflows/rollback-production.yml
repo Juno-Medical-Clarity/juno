@@ -1,0 +1,109 @@
+name: Rollback Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      prod_tag:
+        description: "Production tag to redeploy, for example prod-20260619-143512"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    env:
+      GCP_PROJECT_ID: juno-medical-clarity
+      GCP_REGION: us-central1
+      GCP_BUCKET_NAME: juno-medical-clarity-backend
+      BACKEND_IMAGE_BASE: us-central1-docker.pkg.dev/juno-medical-clarity/juno/simplify-backend
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.prod_tag }}
+
+      - name: Validate production tag
+        run: |
+          case "${{ inputs.prod_tag }}" in
+            prod-*) ;;
+            *)
+              echo "Rollback ref must be a prod-* tag."
+              exit 1
+              ;;
+          esac
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+          project_id: ${{ env.GCP_PROJECT_ID }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Build and push rollback backend image
+        run: |
+          image_tag=$(sed 's/[^A-Za-z0-9_.-]/-/g' <<<"${{ inputs.prod_tag }}")
+          backend_image="$BACKEND_IMAGE_BASE:$image_tag"
+          echo "BACKEND_IMAGE=$backend_image" >> "$GITHUB_ENV"
+
+          gcloud builds submit \
+            --project "$GCP_PROJECT_ID" \
+            --config ./backend/cloudbuild.yaml \
+            --substitutions "_BACKEND_IMAGE=$backend_image" \
+            ./backend
+
+      - name: Deploy rollback backend
+        uses: google-github-actions/deploy-cloudrun@v2
+        with:
+          service: simplify-backend
+          image: ${{ env.BACKEND_IMAGE }}
+          region: ${{ env.GCP_REGION }}
+          flags: >-
+            --allow-unauthenticated
+            --memory 2Gi
+            --timeout 300
+          env_vars: |
+            GCP_PROJECT_ID=${{ env.GCP_PROJECT_ID }}
+            GCP_BUCKET_NAME=${{ env.GCP_BUCKET_NAME }}
+            GCP_LOCATION=${{ env.GCP_REGION }}
+            VERTEX_AI_MODEL=gemini-3.5-flash
+            SIMPLIFY_DEFAULT_VERSION=v1-2
+            FIRESTORE_DATABASE_ID=(default)
+            GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
+          secrets: |
+            FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest
+
+      - name: Install frontend dependencies
+        run: npm ci
+        working-directory: frontend
+
+      - name: Build rollback frontend
+        run: npm run build
+        working-directory: frontend
+        env:
+          VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
+          VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.VITE_FIREBASE_STORAGE_BUCKET }}
+          VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
+          VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
+          VITE_API_PROCESSING_URL: ${{ secrets.VITE_API_PROCESSING_URL }}
+          VITE_DEFAULT_VERSION: v1-2
+
+      - name: Deploy rollback frontend
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: juno-medical-clarity
+          channelId: live
+          entryPoint: ./frontend

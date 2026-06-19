@@ -539,7 +539,7 @@ git show --stat prod-YYYYMMDD-HHMMSS
 
 ## 18. Git-Based Rollback
 
-Use the rollback script to create a rollback PR to `deploy` from a production tag:
+Use the rollback script to trigger a runtime rollback from a production tag:
 
 ```bash
 scripts/rollback_to_tag.sh prod-YYYYMMDD-HHMMSS
@@ -547,13 +547,11 @@ scripts/rollback_to_tag.sh prod-YYYYMMDD-HHMMSS
 
 The script:
 
-1. Fetches `origin/deploy` and tags.
-2. Creates a `rollback/<tag>-<timestamp>` branch from `origin/deploy`.
-3. Replaces tracked files with the exact tree from the tag.
-4. Commits and pushes the rollback branch.
-5. Opens a draft PR to `deploy`.
+1. Fetches tags.
+2. Verifies the requested `prod-*` tag exists.
+3. Triggers the `Rollback Production` GitHub Actions workflow with the tag.
 
-When that PR merges, the normal deploy workflows redeploy the tagged backend and frontend code state.
+The rollback workflow checks out the tag and redeploys backend and frontend from that tag. It does not change `main` or `deploy`.
 
 For emergency runtime rollback without a Git PR:
 
