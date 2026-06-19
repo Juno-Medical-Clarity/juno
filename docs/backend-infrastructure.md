@@ -100,3 +100,8 @@ Configuration is environment-variable driven. Important backend variables are do
 - `SIMPLIFY_DEFAULT_VERSION`
 
 The repo contains deployment configuration and runbooks, but no full infrastructure-as-code stack was found. Specifically, no Terraform, Pulumi, Kubernetes, or Docker Compose files were found. Google Cloud resources are described procedurally in `docs/setup_gcloud_deployment.md`; CI/CD is configured with GitHub Actions workflow YAML files and `backend/cloudbuild.yaml`.
+
+## Logging Runbook
+
+For logging setup, developer usage conventions, log-based metrics, and Cloud
+Logging query examples, see `docs/logging.md`.
