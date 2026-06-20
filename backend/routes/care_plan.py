@@ -27,6 +27,7 @@ from typing import Generator
 from flask import Blueprint, Response, g, request, stream_with_context
 from google.cloud import storage as gcs
 
+from config import CARE_PLAN_DEFAULT_VERSION
 from simplify.v1_2.pipeline import V1_2Pipeline
 from utils.pdf_merge import merge_pdfs
 from utils.pdf_extract import extract_text_from_pdf
@@ -34,6 +35,7 @@ try:
     from utils.save_output import save_care_plan_output, upload_combined_pdf
 except ImportError:
     from utils.save_output import save_simplify_output as save_care_plan_output, upload_combined_pdf
+from utils.auth import verify_firebase_token
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from utils.juno_logger import JunoLogger, monotonic_ms
@@ -464,7 +466,7 @@ def _payload_from_sse(chunk: str) -> dict | None:
     return json.loads(chunk.removeprefix("data: ").strip())
 
 
-def _care_plan_stream(user_id: str):
+def _care_plan_stream(user_id: str, version: str):
     juno_logger = JunoLogger(api_version="v1-2")
     juno_metrics = JunoMetrics()
 
@@ -490,7 +492,7 @@ def _care_plan_stream(user_id: str):
 
         metrics = Metrics.start(
             session_id=getattr(g, "session_id", user_id),
-            pipeline_version="v1-2",
+            pipeline_version=version,
             input_type=resolved.source_kind,
         )
         input_model = _input_model_from_resolved(resolved)
@@ -504,8 +506,9 @@ def _care_plan_stream(user_id: str):
         yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
         logger.info("care_plan: processing source=%s (%d chars)", resolved.source_description, len(text))
         grading_enabled = _grading_enabled_from_request()
+        pipeline = PIPELINES[version]
 
-        for chunk in run_care_plan_pipeline(text, metrics, grading_enabled=grading_enabled):
+        for chunk in pipeline(text, metrics, grading_enabled=grading_enabled):
             payload = _payload_from_sse(chunk)
             if not payload or payload.get("step") != "result":
                 yield chunk
@@ -553,11 +556,27 @@ def _care_plan_stream(user_id: str):
         yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
 
 
-def create_care_plan():
+PIPELINES = {"v1-2": run_care_plan_pipeline}
+ALLOWED_VERSIONS = set(PIPELINES)
+
+
+@care_plan_bp.route("/care_plan", methods=["POST"])
+@verify_firebase_token
+def create_care_plan(user_id: str):
     """Stream V1.2 care plan pipeline via SSE."""
-    user_id = getattr(g, "user_id", "")
+    json_body = request.get_json(silent=True) or {}
+    if "version" in request.form:
+        version = request.form.get("version")
+    elif isinstance(json_body, dict) and "version" in json_body:
+        version = json_body.get("version")
+    else:
+        version = CARE_PLAN_DEFAULT_VERSION
+
+    if not isinstance(version, str) or version not in ALLOWED_VERSIONS:
+        return {"error": f"Unknown version '{version}'"}, 400
+
     return Response(
-        stream_with_context(_care_plan_stream(user_id)),
+        stream_with_context(_care_plan_stream(getattr(g, "user_id", user_id), version)),
         content_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",
