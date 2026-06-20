@@ -12,7 +12,7 @@ if str(BACKEND_DIR) not in sys.path:
 class SaveOutputTest(unittest.TestCase):
     @patch("utils.save_output.uuid.uuid4")
     @patch("utils.save_output.firestore.client")
-    def test_save_simplify_output_strips_raw_and_uses_aware_datetimes(
+    def test_save_simplify_output_persists_raw_and_uses_aware_datetimes(
         self, firestore_client, uuid4
     ):
         from utils.save_output import save_simplify_output
@@ -21,17 +21,27 @@ class SaveOutputTest(unittest.TestCase):
         doc_ref = MagicMock()
         firestore_client.return_value.collection.return_value.document.return_value = doc_ref
 
+        output_data = {
+            "care_plan": {
+                "summary": "ok",
+                "raw": {"text": "secret-ish raw text"},
+            }
+        }
         saved_id = save_simplify_output(
             user_id="user-1",
             name="Visit summary",
             source_filename="a.pdf, b.txt",
             input_pdf_gcs="gs://bucket/simplify/user-1/inputs/input.pdf",
-            output_data={"summary": "ok", "raw": {"text": "secret-ish raw text"}},
+            output_data=output_data,
         )
 
         self.assertEqual(saved_id, "output-123")
         payload = doc_ref.set.call_args.args[0]
-        self.assertEqual(payload["output_data"], {"summary": "ok"})
+        self.assertIs(payload["output_data"], output_data)
+        self.assertEqual(
+            payload["output_data"]["care_plan"]["raw"],
+            {"text": "secret-ish raw text"},
+        )
         self.assertEqual(payload["uid"], "user-1")
         self.assertEqual(payload["source_filename"], "a.pdf, b.txt")
         self.assertIsInstance(payload["created_at"], datetime)

@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import copy
 import os
 import uuid
 from datetime import datetime, timezone
@@ -28,12 +27,6 @@ def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     return f"gs://{bucket_name}/{blob_name}"
 
 
-def _without_raw(output_data: dict) -> dict:
-    sanitized = copy.deepcopy(output_data)
-    sanitized.pop("raw", None)
-    return sanitized
-
-
 def save_simplify_output(
     *,
     user_id: str,
@@ -57,7 +50,7 @@ def save_simplify_output(
         "created_at": now,
         "updated_at": now,
         "input_pdf_gcs": input_pdf_gcs or "",
-        "output_data": _without_raw(output_data),
+        "output_data": output_data,
     }
     if dataset_group is not None:
         payload["dataset_group"] = dataset_group
