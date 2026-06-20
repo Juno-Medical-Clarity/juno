@@ -19,18 +19,8 @@ Steps:
 
 import json
 import logging
-import os
-import re
 
 from pydantic import ValidationError
-import vertexai
-from vertexai.preview.generative_models import (
-    FinishReason,
-    GenerationConfig,
-    GenerativeModel,
-    HarmBlockThreshold,
-    HarmCategory,
-)
 
 from models.care_plan import (
     CARE_PLAN_VERSION,
@@ -39,6 +29,7 @@ from models.care_plan import (
     CarePlanV1_2StructuredLLM,
 )
 from simplify.interface import CarePlanPipeline
+from utils.llm import LLMClient
 from utils.term_detection import (
     build_glossary_from_simplified_text,
     detect_terms,
@@ -55,41 +46,11 @@ _STRUCTURING_SCHEMA = json.dumps(
 )
 
 
-def _strip_json_fences(raw: str) -> str:
-    # Accept both raw JSON and markdown-fenced JSON from model outputs.
-    match = re.search(r"```(?:json)?\s*\n?(.*?)\n?```", raw, re.DOTALL)
-    return match.group(1).strip() if match else raw.strip()
-
-
 class V1_2Pipeline(CarePlanPipeline):
     """V1.2 care_plan pipeline with deterministic term detection."""
 
     def __init__(self):
-        # Environment-driven model config keeps deployment/runtime configurable.
-        model_name = os.environ.get("VERTEX_AI_MODEL", "gemini-1.5-pro")
-
-        # Choose backend based on available credentials.
-        if os.environ.get("GEMINI_API_KEY"):
-            from utils.gemini_client import GeminiAPIClient
-            self._gemini_client = GeminiAPIClient(model_name)
-            self._use_gemini_api = True
-            logger.info("pipeline: using Gemini API (google-generativeai)")
-        else:
-            self._use_gemini_api = False
-            project_id = os.environ.get("GCP_PROJECT_ID", "")
-            location = os.environ.get("GCP_LOCATION", "us-central1")
-            vertexai.init(project=project_id, location=location)
-            self._model = GenerativeModel(model_name)
-            logger.info("pipeline: using Vertex AI")
-
-        # Safety blocking is disabled for deterministic backend handling; downstream
-        # validation and prompt constraints enforce output shape/content.
-        self._safety = {
-            HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
-            HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
-            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
-            HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
-        }
+        self._llm = LLMClient()
 
     def _generate_text(
         self,
@@ -97,33 +58,8 @@ class V1_2Pipeline(CarePlanPipeline):
         temperature: float = 0.3,
         max_tokens: int = 8192,
     ) -> str:
-        # Shared low-level model call used by all text-producing stages.
-        if self._use_gemini_api:
-            return self._gemini_client.generate_content(
-                prompt, temperature=temperature, max_tokens=max_tokens
-            )
-
-        # Vertex AI path.
-        response = self._model.generate_content(
-            prompt,
-            generation_config=GenerationConfig(
-                temperature=temperature,
-                max_output_tokens=max_tokens,
-            ),
-            safety_settings=self._safety,
-        )
-        if not response.candidates:
-            raise RuntimeError("Model response blocked or no candidates")
-
-        candidate = response.candidates[0]
-        if (
-            hasattr(candidate, "finish_reason")
-            and candidate.finish_reason == FinishReason.MAX_TOKENS
-        ):
-            # Partial output can still be useful; caller handles downstream parsing.
-            logger.warning("V1_2Pipeline: hit max tokens; proceeding with partial output")
-
-        return response.text.strip()
+        # Delegate to shared LLM client.
+        return self._llm.generate_text(prompt, temperature=temperature, max_tokens=max_tokens)
 
     def _generate_json(
         self,
@@ -131,12 +67,8 @@ class V1_2Pipeline(CarePlanPipeline):
         temperature: float = 0.2,
         max_tokens: int = 8192,
     ) -> dict | list:
-        # Centralized JSON parsing path so fence handling stays consistent.
-        raw = self._generate_text(prompt, temperature, max_tokens)
-        try:
-            return json.loads(_strip_json_fences(raw))
-        except json.JSONDecodeError as e:
-            raise ValueError(f"LLM returned invalid JSON: {e}. Raw start: {raw[:200]!r}") from e
+        # Delegate to shared LLM client (includes fence-stripping and JSON parsing).
+        return self._llm.generate_json(prompt, temperature=temperature, max_tokens=max_tokens)
 
     def simplify_language_with_term_plan(
         self,
