@@ -21,8 +21,8 @@ import json
 import logging
 import os
 import re
-from pathlib import Path
 
+from pydantic import ValidationError
 import vertexai
 from vertexai.preview.generative_models import (
     FinishReason,
@@ -32,8 +32,13 @@ from vertexai.preview.generative_models import (
     HarmCategory,
 )
 
+from models.care_plan import (
+    CARE_PLAN_VERSION,
+    CarePlan,
+    CarePlanV1_2,
+    CarePlanV1_2StructuredLLM,
+)
 from simplify.interface import SimplifyPipeline
-from utils.scoring import score_text
 from utils.term_detection import (
     build_glossary_from_simplified_text,
     detect_terms,
@@ -44,9 +49,8 @@ from utils.term_detection import (
 
 logger = logging.getLogger(__name__)
 
-_STRUCTURING_SCHEMA_PATH = Path(__file__).with_name("appointment.schema.json")
 _STRUCTURING_SCHEMA = json.dumps(
-    json.loads(_STRUCTURING_SCHEMA_PATH.read_text(encoding="utf-8")),
+    CarePlanV1_2StructuredLLM.model_json_schema(),
     indent=2,
 )
 
@@ -235,40 +239,19 @@ JSON OUTPUT:"""
         if not isinstance(raw, dict):
             raise ValueError(f"Expected dict from structure step, got {type(raw)}")
 
-        # Backfill missing keys to keep response shape stable for API clients.
-        defaults = {
-            "doc_type": "appointment_note",
-            "urgency": "normal",
-            "version": "1.2",
-            "summary": "",
-            "reason_for_visit": [],
-            "diagnosis": {"main_conclusion": "", "changed_since_last_visit": "", "details": []},
-            "medications": [],
-            "tests": [],
-            "procedures": [],
-            "other": [],
-            "follow_up": [],
-            "warning_signs": [],
-            "questions": [],
-            "low_priority": [],
-        }
-        for key, value in defaults.items():
-            if key not in raw:
-                raw[key] = value
+        try:
+            model = CarePlanV1_2StructuredLLM.model_validate(raw)
+        except ValidationError as e:
+            raise ValueError(f"LLM structure output failed validation: {e}") from e
 
-        raw["doc_type"] = "appointment_note"
-        raw["version"] = "1.2"
-        return raw
+        return model.model_dump(mode="json")
 
-    def run(self, text: str) -> dict:
+    def run(self, text: str) -> CarePlanV1_2:
         """
         Run the full V1.2 pipeline.
 
-        Returns the Simplify V1.2 appointment_note JSON shape, plus a terms glossary.
+        Returns the typed Simplify V1.2 care-plan model.
         """
-        # Readability score before rewrite for quality telemetry.
-        before_score = score_text(text)
-
         # Deterministic detections are used to constrain rewrite behavior.
         term_data = detect_terms(text)
         substitution_candidates = term_data["substitution_candidates"]
@@ -283,8 +266,6 @@ JSON OUTPUT:"""
         )
         clarified = self.clarify_and_action(simplified, abbreviations)
         structured = self.structure_appointment_note(clarified)
-        # Readability score after rewrite for before/after comparison.
-        after_score = score_text(clarified)
         # Glossary contains only preserved terms still present in final text.
         terms_glossary = build_glossary_from_simplified_text(
             clarified,
@@ -302,8 +283,7 @@ JSON OUTPUT:"""
                 "clarified_text": clarified,
             },
         }
-        if before_score is not None:
-            result["before_score"] = before_score
-        if after_score is not None:
-            result["after_score"] = after_score
-        return result
+        care_plan = CarePlan.from_pipeline_result(CARE_PLAN_VERSION, result)
+        if not isinstance(care_plan, CarePlanV1_2):
+            raise TypeError(f"Expected CarePlanV1_2, got {type(care_plan).__name__}")
+        return care_plan
