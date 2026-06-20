@@ -10,7 +10,7 @@ from config import CARE_PLAN_DEFAULT_VERSION
 from models.envelope import CarePlanInternal
 from models.input import Input
 from models.metrics import Metrics
-from routes.care_plan import ALLOWED_VERSIONS, _extract_text_from_bytes, run_care_plan_pipeline
+from routes.care_plan import ALLOWED_VERSIONS, RESULT_SENTINEL, _extract_text_from_bytes, run_care_plan_pipeline
 from utils.firebase import verify_firebase_token, save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
 
@@ -197,13 +197,15 @@ def create_care_plan_batch(user_id: str):
                 result_data = None
                 input_failed = False
                 for chunk in pipeline(text, metrics, grading_enabled):
-                    if isinstance(chunk, tuple) and chunk and chunk[0] == "__result__":
-                        _, care_plan, grading, *_ = chunk
+                    if isinstance(chunk, tuple) and chunk and chunk[0] == RESULT_SENTINEL:
+                        _, care_plan, grading, _raw_text, _clarified_text, before_score, after_score = chunk
                         envelope = CarePlanInternal(
                             metrics=metrics,
                             input=input_model,
                             grading=grading,
                             care_plan=care_plan,
+                            before_score=before_score,
+                            after_score=after_score,
                         )
                         result_data = envelope.to_dict()
                         continue

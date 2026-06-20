@@ -10,7 +10,7 @@ Usage:
 
     logger = JunoLogger(function="http_request")
 
-    logger.log_request_start(method="POST", path="/simplify/v1-2", input_type="file")
+    logger.log_request_start(method="POST", path="/care_plan", input_type="file")
     logger.log_request_end(status_code=200, duration_ms=total_ms)
 
 Use `Markers.*.execute()` for operation timing; use JunoLogger only for free-text logs.
@@ -105,7 +105,7 @@ class JunoLogger:
 
         Args:
             method:     HTTP method, e.g. "POST".
-            path:       Request path, e.g. "/simplify/v1-2".
+            path:       Request path, e.g. "/care_plan".
             input_type: Resolved input kind — "file", "text", "doc_id", or None.
             extra:      Any additional fields.
         """
