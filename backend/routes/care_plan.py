@@ -49,6 +49,7 @@ from models.envelope import CarePlanInternal
 logger = logging.getLogger(__name__)
 
 care_plan_bp = Blueprint("care_plan", __name__)
+RESULT_SENTINEL = "__result__"
 
 STEPS = {
     1: "Reading your note",
@@ -325,7 +326,7 @@ def _derive_output_name(result: dict, resolved: "ResolvedInput") -> str:
     return "Appointment"
 
 
-def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str, None, None]:
+def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str | tuple, None, None]:
     juno_logger = JunoLogger(api_version="v1-2")
     juno_metrics = JunoMetrics()
     pipeline_start = monotonic_ms()
@@ -442,15 +443,9 @@ def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -
         juno_metrics.record_counter("care_plan_request", labels={"version": "v1-2"})
         metrics.total_duration_ms = total_ms
 
-        output = CarePlanInternal(
-            metrics=metrics,
-            input=Input.from_text(text),
-            grading=grading,
-            care_plan=care_plan,
-            before_score=before_score,
-            after_score=after_score,
-        )
-        yield _sse({"step": "result", "data": output.to_dict()})
+        # Non-SSE sentinel: the route intercepts these typed objects and is
+        # the only layer that composes/serializes the response envelope.
+        yield (RESULT_SENTINEL, care_plan, grading, text, clarified, before_score, after_score)
 
     except Exception as exc:
         total_ms = monotonic_ms() - pipeline_start
@@ -463,7 +458,10 @@ def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -
 def _payload_from_sse(chunk: str) -> dict | None:
     if not chunk.startswith("data: "):
         return None
-    return json.loads(chunk.removeprefix("data: ").strip())
+    try:
+        return json.loads(chunk.removeprefix("data: ").strip())
+    except json.JSONDecodeError:
+        return None
 
 
 def _care_plan_stream(user_id: str, version: str):
@@ -491,7 +489,7 @@ def _care_plan_stream(user_id: str, version: str):
             return
 
         metrics = Metrics.start(
-            session_id=getattr(g, "session_id", user_id),
+            session_id=getattr(g, "session_id", ""),
             pipeline_version=version,
             input_type=resolved.source_kind,
         )
@@ -508,48 +506,69 @@ def _care_plan_stream(user_id: str, version: str):
         grading_enabled = _grading_enabled_from_request()
         pipeline = PIPELINES[version]
 
+        pipeline_result = None
         for chunk in pipeline(text, metrics, grading_enabled=grading_enabled):
-            payload = _payload_from_sse(chunk)
-            if not payload or payload.get("step") != "result":
+            if isinstance(chunk, tuple) and chunk and chunk[0] == RESULT_SENTINEL:
+                pipeline_result = chunk
+                continue
+            if isinstance(chunk, str):
+                payload = _payload_from_sse(chunk)
+                if payload and payload.get("step") == "result":
+                    yield _sse({
+                        "step": "error",
+                        "error": "Pipeline result SSE is invalid; use the route result sentinel.",
+                    })
+                    return
                 yield chunk
                 continue
 
-            result_data = payload["data"]
-            result_data["input"] = input_model.to_dict()
+        if pipeline_result is None:
+            return
 
-            if resolved.source_kind != "doc_id":
-                juno_logger.log_step("save_output", "start")
-                t0 = monotonic_ms()
-                try:
-                    input_pdf_gcs = None
-                    if resolved.combined_pdf_bytes:
-                        input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
-                    elif resolved.source_kind not in ("text", "doc_id"):
-                        logger.warning(
-                            "care_plan: combined_pdf_bytes is None for source_kind=%s — "
-                            "input PDF will not be stored",
-                            resolved.source_kind,
-                        )
+        _, care_plan, grading, _raw_text, _clarified_text, before_score, after_score = pipeline_result
+        envelope = CarePlanInternal(
+            metrics=metrics,
+            input=input_model,
+            grading=grading,
+            care_plan=care_plan,
+            before_score=before_score,
+            after_score=after_score,
+        )
+        payload = envelope.to_dict()
 
-                    care_plan_data = result_data.get("care_plan", {})
-                    saved_id = save_care_plan_output(
-                        user_id=user_id,
-                        name=_derive_output_name(care_plan_data, resolved),
-                        source_filename=resolved.source_filename,
-                        input_pdf_gcs=input_pdf_gcs,
-                        output_data=result_data,
+        if resolved.source_kind != "doc_id":
+            juno_logger.log_step("save_output", "start")
+            t0 = monotonic_ms()
+            try:
+                input_pdf_gcs = None
+                if resolved.combined_pdf_bytes:
+                    input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
+                elif resolved.source_kind not in ("text", "doc_id"):
+                    logger.warning(
+                        "care_plan: combined_pdf_bytes is None for source_kind=%s — "
+                        "input PDF will not be stored",
+                        resolved.source_kind,
                     )
-                    metrics.saved_id = saved_id
-                    save_output_ms = monotonic_ms() - t0
-                    juno_logger.log_step("save_output", "done",
-                                         duration_ms=save_output_ms,
-                                         extra={"saved_id": saved_id})
-                except Exception as exc:
-                    juno_logger.exception("care_plan: failed to save output - continuing without saved_id")
-                    juno_logger.log_step("save_output", "error", extra={"error": str(exc)})
 
-            result_data["metrics"] = metrics.to_dict()
-            yield _sse({"step": "result", "data": result_data})
+                care_plan_data = payload.get("care_plan", {})
+                saved_id = save_care_plan_output(
+                    user_id=user_id,
+                    name=_derive_output_name(care_plan_data, resolved),
+                    source_filename=resolved.source_filename,
+                    input_pdf_gcs=input_pdf_gcs,
+                    output_data=payload,
+                )
+                metrics.saved_id = saved_id
+                payload["metrics"]["saved_id"] = metrics.saved_id
+                save_output_ms = monotonic_ms() - t0
+                juno_logger.log_step("save_output", "done",
+                                     duration_ms=save_output_ms,
+                                     extra={"saved_id": saved_id})
+            except Exception as exc:
+                juno_logger.exception("care_plan: failed to save output - continuing without saved_id")
+                juno_logger.log_step("save_output", "error", extra={"error": str(exc)})
+
+        yield _sse({"step": "result", "data": payload})
     except Exception as exc:
         juno_logger.exception("care_plan: unexpected pipeline error")
         juno_metrics.record_error(type(exc).__name__, "care_plan_pipeline", labels={"version": "v1-2"})
