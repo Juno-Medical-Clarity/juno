@@ -13,12 +13,7 @@ from models.metrics import Metrics
 from routes.care_plan import ALLOWED_VERSIONS, _extract_text_from_bytes, run_care_plan_pipeline
 from utils.auth import verify_firebase_token
 from utils.preset_data import list_datasets, read_dataset_file
-from utils import save_output as save_output_utils
-
-
-save_care_plan_output = getattr(save_output_utils, "save_care_plan_output", None)
-if save_care_plan_output is None:
-    save_care_plan_output = getattr(save_output_utils, "save_" + "simplify_output")
+from utils.save_output import save_care_plan_output
 
 
 batch_bp = Blueprint("batch", __name__)

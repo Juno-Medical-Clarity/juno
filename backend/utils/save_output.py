@@ -1,4 +1,4 @@
-"""Persistence helpers for Simplify output artifacts."""
+"""Persistence helpers for care_plan output artifacts."""
 
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
 
     project_id = os.environ.get("GCP_PROJECT_ID", "") or None
     object_id = str(uuid.uuid4())
-    blob_name = f"simplify/{user_id}/inputs/{object_id}.pdf"
+    blob_name = f"care_plan/{user_id}/inputs/{object_id}.pdf"
 
     client = gcs.Client(project=project_id)
     bucket = client.bucket(bucket_name)
@@ -27,7 +27,7 @@ def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     return f"gs://{bucket_name}/{blob_name}"
 
 
-def save_simplify_output(
+def save_care_plan_output(
     *,
     user_id: str,
     name: str,
@@ -37,7 +37,7 @@ def save_simplify_output(
     dataset_group: str | None = None,
     batch_group_id: str | None = None,
 ) -> str:
-    """Save a Simplify output document to Firestore and return its ID."""
+    """Save a care_plan output document to Firestore and return its ID."""
     database_id = os.environ.get("FIRESTORE_DATABASE_ID", "(default)")
     output_id = str(uuid.uuid4())
     now = datetime.now(timezone.utc)
@@ -57,5 +57,5 @@ def save_simplify_output(
     if batch_group_id is not None:
         payload["batch_group_id"] = batch_group_id
 
-    db.collection("simplify_outputs").document(output_id).set(payload)
+    db.collection("care_plan_outputs").document(output_id).set(payload)
     return output_id
