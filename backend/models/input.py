@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Any
+
+from pydantic import Field
 
 from .base import JsonModel
 
@@ -11,7 +12,9 @@ if TYPE_CHECKING:
     from werkzeug.datastructures import FileStorage
 
 
-@dataclass
+INPUT_VERSION = "1.0"
+
+
 class InputFile(JsonModel):
     """Metadata about a single uploaded file.
 
@@ -24,7 +27,6 @@ class InputFile(JsonModel):
     size_bytes: int
 
 
-@dataclass
 class Input(JsonModel):
     """Describes the source input for a pipeline run.
 
@@ -42,7 +44,7 @@ class Input(JsonModel):
     mode: str  # "file" | "text" | "doc_id"
     text: str | None = None
     doc_id: str | None = None
-    files: list[InputFile] = field(default_factory=list)
+    files: list[InputFile] = Field(default_factory=list)
     dataset_group: str | None = None
     dataset_input: str | None = None
     selected_files: list[str] | None = None
@@ -122,34 +124,4 @@ class Input(JsonModel):
             dataset_input=dataset_input,
             selected_files=selected_files,
             batch_group_id=batch_group_id,
-        )
-
-    # ------------------------------------------------------------------
-    # Serialization
-    # ------------------------------------------------------------------
-
-    @classmethod
-    def from_dict(cls, data: dict) -> "Input":
-        """Reconstruct an Input from a dictionary, handling nested InputFile objects.
-
-        Args:
-            data: Dictionary (e.g. from Firestore or to_dict()).
-
-        Returns:
-            Input instance with InputFile objects in files list.
-        """
-        files_raw = data.get("files", [])
-        files = [
-            InputFile.from_dict(f) if isinstance(f, dict) else f
-            for f in files_raw
-        ]
-        return cls(
-            mode=data.get("mode", ""),
-            text=data.get("text"),
-            doc_id=data.get("doc_id"),
-            files=files,
-            dataset_group=data.get("dataset_group"),
-            dataset_input=data.get("dataset_input"),
-            selected_files=data.get("selected_files"),
-            batch_group_id=data.get("batch_group_id"),
         )
