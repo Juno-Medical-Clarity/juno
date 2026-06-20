@@ -57,7 +57,7 @@ def fixed_output(input_label):
         },
         "input": {"mode": "text", "text": "executor placeholder", "files": []},
         "grading": {},
-        "simplified_care_plan": {
+        "care_plan": {
             "version": "1.2",
             "reason_for_visit": [{"reason": f"Visit {input_label}"}],
         },

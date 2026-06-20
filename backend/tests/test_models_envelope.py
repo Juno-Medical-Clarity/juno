@@ -1,6 +1,7 @@
 """Tests for the strict internal care-plan envelope model."""
 
 import importlib
+from pathlib import Path
 
 import pytest
 from pydantic import ValidationError
@@ -70,6 +71,27 @@ def test_care_plan_internal_serializes_with_care_plan_key_and_scores_present():
     assert "after_score" not in data["care_plan"]
 
 
+def test_care_plan_internal_accepts_route_v1_2_kwargs_and_serializes_care_plan_key():
+    from models.envelope import CarePlanInternal
+
+    model = CarePlanInternal(
+        metrics=_metrics(),
+        input=Input.from_text("Patient note"),
+        grading=Grading(),
+        care_plan=CarePlanV1_2(summary="Route shaped output"),
+        before_score={"composite": 60},
+        after_score={"composite": 90},
+    )
+
+    data = model.to_dict()
+
+    assert "care_plan" in data
+    assert "simplified_care_plan" not in data
+    assert data["care_plan"]["summary"] == "Route shaped output"
+    assert data["before_score"] == {"composite": 60}
+    assert data["after_score"] == {"composite": 90}
+
+
 def test_care_plan_internal_from_dict_requires_care_plan_key_without_alias():
     from models.envelope import CarePlanInternal
 
@@ -114,3 +136,19 @@ def test_is_legacy_shape_checks_for_care_plan_key():
 
     assert is_legacy_shape({"care_plan": {}}) is False
     assert is_legacy_shape({}) is True
+
+
+def test_model_consuming_routes_import_without_removed_aliases():
+    import routes.batch  # noqa: F401
+    import routes.grading  # noqa: F401
+    import routes.saved_outputs  # noqa: F401
+    import routes.simplify  # noqa: F401
+    import routes.simplify_v1_1  # noqa: F401
+    import routes.simplify_v1_2  # noqa: F401
+
+    routes_dir = Path(__file__).resolve().parents[1] / "routes"
+    for route_file in routes_dir.glob("*.py"):
+        text = route_file.read_text()
+        assert "SimplifiedCarePlan" not in text
+        assert "SimplifyOutput" not in text
+        assert "simplified_care_plan" not in text

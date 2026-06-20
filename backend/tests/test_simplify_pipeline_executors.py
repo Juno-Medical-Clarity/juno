@@ -10,7 +10,7 @@ for path in (PROJECT_DIR, BACKEND_DIR):
     if str(path) not in sys.path:
         sys.path.insert(0, str(path))
 
-from backend.models.metrics import Metrics
+from models.metrics import Metrics
 import routes.simplify as simplify_module
 import routes.simplify_v1_1 as simplify_v1_1_module
 
@@ -98,10 +98,10 @@ class SimplifyPipelineExecutorsTest(unittest.TestCase):
         self.assertEqual(result_event["data"]["input"]["mode"], "text")
         self.assertEqual(result_event["data"]["input"]["text"], "plain note")
         self.assertEqual(result_event["data"]["metrics"]["saved_id"], None)
-        self.assertIn("plain note", result_event["data"]["simplified_care_plan"]["summary"])
+        self.assertIn("plain note", result_event["data"]["care_plan"]["summary"])
 
     @patch("routes.simplify_v1_1.score_text", return_value={"score": 1})
-    @patch("routes.simplify_v1_1.build_glossary_from_simplified_text", return_value=[])
+    @patch("routes.simplify_v1_1.build_glossary_from_simplified_text", return_value={})
     @patch(
         "routes.simplify_v1_1.detect_terms",
         return_value={
@@ -150,8 +150,8 @@ class SimplifyPipelineExecutorsTest(unittest.TestCase):
         self.assertEqual(result_event["data"]["input"]["mode"], "text")
         self.assertEqual(result_event["data"]["input"]["text"], "plain note")
         self.assertEqual(result_event["data"]["metrics"]["saved_id"], None)
-        self.assertIn("plain note", result_event["data"]["simplified_care_plan"]["raw"]["text"])
-        self.assertNotIn("questions", result_event["data"]["simplified_care_plan"])
+        self.assertIn("plain note", result_event["data"]["care_plan"]["raw"]["text"])
+        self.assertNotIn("questions", result_event["data"]["care_plan"])
 
 
 if __name__ == "__main__":

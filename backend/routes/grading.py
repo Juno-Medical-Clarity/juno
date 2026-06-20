@@ -53,7 +53,7 @@ def run_grading(user_id: str):
 
         data = doc.to_dict()
         output_data = data.get("output_data", {})
-        raw = output_data.get("simplified_care_plan", {}).get("raw", {})
+        raw = output_data.get("care_plan", {}).get("raw", {})
         raw_text = raw.get("text") or ""
         clarified_text = raw.get("clarified_text") or ""
 

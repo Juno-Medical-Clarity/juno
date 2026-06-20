@@ -32,8 +32,6 @@ from utils.scoring import score_text
 from models.metrics import Metrics
 from models.input import Input
 from models.grading import Grading, build_grading
-from models.care_plan import SimplifiedCarePlan
-from models.envelope import SimplifyOutput
 
 logger = logging.getLogger(__name__)
 
@@ -112,7 +110,6 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
         except Exception:
             logger.exception("simplify: document classification failed — defaulting to appointment_note")
             doc_type = "appointment_note"
-        metrics.step_durations_ms["classify_document"] = monotonic_ms() - t0
         yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
 
         # ── Detect jargon (silent) ────────────────────────────────────────
@@ -125,7 +122,6 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
             logger.exception("simplify: jargon detection failed — continuing without jargon data")
             medical_jargon = []
             complex_terms = []
-        metrics.step_durations_ms["detect_jargon"] = monotonic_ms() - t0
 
         # ── Step 3: Simplify language ─────────────────────────────────────
         yield _sse({"step": 3, "status": "active", "label": STEPS[3]})
@@ -136,7 +132,6 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
             logger.exception("simplify: language simplification failed")
             yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
             return
-        metrics.step_durations_ms["simplify_language"] = monotonic_ms() - t0
         yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
 
         # ── Step 4: Add definitions ───────────────────────────────────────
@@ -147,7 +142,6 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
         except Exception:
             logger.exception("simplify: definition injection failed — using simplified text")
             with_defs = simplified
-        metrics.step_durations_ms["add_definitions"] = monotonic_ms() - t0
         yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
 
         # ── Step 5: Clarify numbers and actions ───────────────────────────
@@ -158,7 +152,6 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
         except Exception:
             logger.exception("simplify: clarification step failed — using previous output")
             clarified = with_defs
-        metrics.step_durations_ms["clarify_and_action"] = monotonic_ms() - t0
         yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
 
         # ── Score simplified text (silent — no SSE event) ─────────────────
@@ -181,7 +174,6 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
             logger.exception("simplify: document structuring failed")
             yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
             return
-        metrics.step_durations_ms["structure_document"] = monotonic_ms() - t0
         yield _sse({"step": 6, "status": "done", "label": STEPS[6]})
         yield _sse({"step": 7, "status": "done", "label": STEPS[7]})
 
@@ -193,14 +185,13 @@ def run_v1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gener
             grading = build_grading(before_score, text, after_score, clarified)
         else:
             grading = Grading(enabled=False)
-        care_plan = SimplifiedCarePlan.from_pipeline_result("1.0", result_payload)
-        output = SimplifyOutput(
-            metrics=metrics,
-            input=Input.from_text(text),
-            grading=grading,
-            simplified_care_plan=care_plan,
-        )
-        yield _sse({"step": "result", "data": output.to_dict()})
+        output = {
+            "metrics": metrics.to_dict(),
+            "input": Input.from_text(text).to_dict(),
+            "grading": grading.to_dict(),
+            "care_plan": {"version": "1.0", **result_payload},
+        }
+        yield _sse({"step": "result", "data": output})
 
     except Exception as exc:
         logger.exception("simplify: unexpected pipeline error")
@@ -280,7 +271,6 @@ def _simplify_document_v1():
             if not text.strip():
                 yield _sse({"step": "error", "error": "File appears to be empty or unreadable."})
                 return
-            metrics.step_durations_ms["extract_text"] = monotonic_ms() - t0
             yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
 
             try:

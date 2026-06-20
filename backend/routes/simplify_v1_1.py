@@ -35,8 +35,6 @@ from utils.juno_metrics import JunoMetrics
 from models.metrics import Metrics
 from models.input import Input
 from models.grading import Grading, build_grading
-from models.care_plan import SimplifiedCarePlan
-from models.envelope import SimplifyOutput
 
 logger = logging.getLogger(__name__)
 
@@ -268,24 +266,17 @@ def run_v1_1_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
         juno_metrics.record_counter("simplify_request", labels={"version": "v1-1"})
 
         metrics.total_duration_ms = total_ms
-        if find_medical_terms_ms is not None:
-            metrics.step_durations_ms["find_medical_terms"] = find_medical_terms_ms
-        metrics.step_durations_ms["simplify_language"] = simplify_language_ms
-        if clarify_actions_ms is not None:
-            metrics.step_durations_ms["clarify_actions"] = clarify_actions_ms
-        metrics.step_durations_ms["structure_note"] = structure_note_ms
         if grading_enabled:
             grading = build_grading(before_score, text, after_score, clarified)
         else:
             grading = Grading(enabled=False)
-        care_plan = SimplifiedCarePlan.from_pipeline_result("1.1", result_payload)
-        output = SimplifyOutput(
-            metrics=metrics,
-            input=Input.from_text(text),
-            grading=grading,
-            simplified_care_plan=care_plan,
-        )
-        yield _sse({"step": "result", "data": output.to_dict()})
+        output = {
+            "metrics": metrics.to_dict(),
+            "input": Input.from_text(text).to_dict(),
+            "grading": grading.to_dict(),
+            "care_plan": {"version": "1.1", **result_payload},
+        }
+        yield _sse({"step": "result", "data": output})
 
     except Exception as exc:
         total_ms = monotonic_ms() - pipeline_start
@@ -357,7 +348,6 @@ def _generate_stream():
             duration_ms=read_input_ms,
             extra={"source_kind": source_kind, "input_chars": len(text)},
         )
-        metrics.step_durations_ms["read_input"] = read_input_ms
         yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
         logger.info("simplify_v1_1: processing source=%s (%d chars)", source, len(text))
 

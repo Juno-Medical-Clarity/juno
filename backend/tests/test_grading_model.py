@@ -199,7 +199,7 @@ class TestGradeEndpoint(unittest.TestCase):
         mock_doc.to_dict.return_value = {
             "uid": "user-1",
             "output_data": {
-                "simplified_care_plan": {
+                "care_plan": {
                     "raw": {
                         "text": FIXTURE_TEXT,
                         "clarified_text": FIXTURE_CLARIFIED,

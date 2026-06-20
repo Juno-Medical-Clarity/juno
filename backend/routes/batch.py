@@ -103,7 +103,7 @@ def _combined_text_for_dataset_input(group: str, input_id: str, files: list[str]
 
 def _output_name(output_data: dict, group: str, input_id: str) -> str:
     try:
-        reasons = output_data.get("simplified_care_plan", {}).get("reason_for_visit", [])
+        reasons = output_data.get("care_plan", {}).get("reason_for_visit", [])
         if reasons and isinstance(reasons, list):
             reason = (reasons[0].get("reason") or "").strip()
             if reason:

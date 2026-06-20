@@ -38,8 +38,8 @@ from utils.juno_metrics import JunoMetrics
 from models.metrics import Metrics
 from models.input import Input
 from models.grading import Grading, build_grading
-from models.care_plan import SimplifiedCarePlan
-from models.envelope import SimplifyOutput
+from models.care_plan import CarePlan
+from models.envelope import CarePlanInternal
 
 logger = logging.getLogger(__name__)
 
@@ -350,7 +350,6 @@ def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
         else:
             find_medical_terms_ms = monotonic_ms() - t0
             juno_logger.log_step("find_medical_terms", "done", duration_ms=find_medical_terms_ms)
-            metrics.step_durations_ms["find_medical_terms"] = find_medical_terms_ms
         yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
 
         # Step 3: Simplify language
@@ -372,7 +371,6 @@ def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
             return
         simplify_language_ms = monotonic_ms() - t0
         juno_logger.log_step("simplify_language", "done", duration_ms=simplify_language_ms)
-        metrics.step_durations_ms["simplify_language"] = simplify_language_ms
         yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
 
         # Step 4: Clarify actions and numbers
@@ -389,7 +387,6 @@ def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
         else:
             clarify_actions_ms = monotonic_ms() - t0
             juno_logger.log_step("clarify_actions", "done", duration_ms=clarify_actions_ms)
-            metrics.step_durations_ms["clarify_actions"] = clarify_actions_ms
         yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
 
         # Step 5: Structure appointment note
@@ -406,7 +403,6 @@ def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
             return
         structure_note_ms = monotonic_ms() - t0
         juno_logger.log_step("structure_note", "done", duration_ms=structure_note_ms)
-        metrics.step_durations_ms["structure_note"] = structure_note_ms
         yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
 
         terms_glossary = build_glossary_from_simplified_text(
@@ -420,7 +416,7 @@ def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
             before_score = None
             after_score = None
 
-        care_plan = SimplifiedCarePlan.from_pipeline_result("1.2", {
+        care_plan = CarePlan.from_pipeline_result("1.2", {
             **structured,
             "terms": terms_glossary,
             "raw": {
@@ -441,11 +437,13 @@ def run_v1_2_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Gen
         juno_metrics.record_counter("simplify_request", labels={"version": "v1-2"})
         metrics.total_duration_ms = total_ms
 
-        output = SimplifyOutput(
+        output = CarePlanInternal(
             metrics=metrics,
             input=Input.from_text(text),
             grading=grading,
-            simplified_care_plan=care_plan,
+            care_plan=care_plan,
+            before_score=before_score,
+            after_score=after_score,
         )
         yield _sse({"step": "result", "data": output.to_dict()})
 
@@ -500,7 +498,6 @@ def _generate_stream(user_id: str):
             duration_ms=read_input_ms,
             extra={"source_kind": resolved.source_kind, "input_chars": len(text)},
         )
-        metrics.step_durations_ms["read_input"] = read_input_ms
         yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
         logger.info("simplify_v1_2: processing source=%s (%d chars)", resolved.source_description, len(text))
         grading_enabled = _grading_enabled_from_request()
@@ -528,7 +525,7 @@ def _generate_stream(user_id: str):
                             resolved.source_kind,
                         )
 
-                    care_plan_data = result_data.get("simplified_care_plan", {})
+                    care_plan_data = result_data.get("care_plan", {})
                     saved_id = save_simplify_output(
                         user_id=user_id,
                         name=_derive_output_name(care_plan_data, resolved),
@@ -541,7 +538,6 @@ def _generate_stream(user_id: str):
                     juno_logger.log_step("save_output", "done",
                                          duration_ms=save_output_ms,
                                          extra={"saved_id": saved_id})
-                    metrics.step_durations_ms["save_output"] = save_output_ms
                 except Exception as exc:
                     juno_logger.exception("simplify_v1_2: failed to save output - continuing without saved_id")
                     juno_logger.log_step("save_output", "error", extra={"error": str(exc)})
