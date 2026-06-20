@@ -1,161 +1,61 @@
-"""Base classes for JSON-serializable models with optional versioning."""
+"""Base classes for strict JSON-serializable Pydantic models."""
 
-import dataclasses
-import typing
-from typing import Any, Dict, Type, TypeVar
+from __future__ import annotations
+
+from typing import Any, ClassVar, Type, TypeVar
+
+from pydantic import BaseModel, ConfigDict
 
 T = TypeVar("T", bound="JsonModel")
-V = TypeVar("V", bound="VersionedJsonModel")
 
 
-class JsonModel:
-    """Base class for JSON-serializable models.
+class JsonModel(BaseModel):
+    """Strict Pydantic base for all backend models."""
 
-    Subclasses should use @dataclass decorator. Provides default implementations
-    of to_dict() and from_dict() for round-trip serialization.
-    """
+    model_config = ConfigDict(extra="forbid")
 
     def to_dict(self) -> dict:
-        """Convert instance to dictionary.
-
-        Default implementation uses dataclasses.asdict().
-        Subclasses may override for custom flattening logic.
-
-        Returns:
-            Dictionary representation of the instance.
-        """
-        return dataclasses.asdict(self)
+        """Convert the model to a JSON-native dictionary."""
+        return self.model_dump(mode="json")
 
     @classmethod
     def from_dict(cls: Type[T], data: dict) -> T:
-        """Create instance from dictionary.
-
-        Default implementation calls cls(**data).
-        Handles nested JsonModel instances by recursively calling from_dict.
-        Subclasses may override for custom deserialization logic.
-
-        Args:
-            data: Dictionary to deserialize from.
-
-        Returns:
-            New instance of this class.
-        """
-        # Get dataclass fields to handle nested JsonModel instances
-        if hasattr(cls, "__dataclass_fields__"):
-            # Use get_type_hints to resolve postponed/string annotations
-            try:
-                resolved_hints = typing.get_type_hints(cls)
-            except Exception:
-                resolved_hints = {}
-
-            reconstructed_data = {}
-            for key, value in data.items():
-                field_info = cls.__dataclass_fields__.get(key)
-                if field_info and isinstance(value, dict):
-                    # Use resolved type hint if available, fall back to field_info.type
-                    field_type = resolved_hints.get(key, field_info.type)
-                    # Handle Optional types
-                    if hasattr(field_type, "__origin__"):
-                        # This is a generic type like Optional[X]
-                        if hasattr(field_type, "__args__"):
-                            # Get the actual type from Optional/Union
-                            for arg in field_type.__args__:
-                                if arg is not type(None) and issubclass(arg, JsonModel):
-                                    field_type = arg
-                                    break
-                    if isinstance(field_type, type) and issubclass(field_type, JsonModel):
-                        reconstructed_data[key] = field_type.from_dict(value)
-                    else:
-                        reconstructed_data[key] = value
-                else:
-                    reconstructed_data[key] = value
-            return cls(**reconstructed_data)
-        return cls(**data)
+        """Validate a dictionary into this model class."""
+        return cls.model_validate(data)
 
 
-class VersionedJsonModel(JsonModel):
-    """Base class for versioned JSON models with version registry.
+VT = TypeVar("VT", bound="VersionedModel")
 
-    Subclasses should use @dataclass decorator and register their versions
-    using the @register(version_string) decorator.
 
-    Each direct subclass of VersionedJsonModel gets its own _registry
-    automatically via __init_subclass__.
-    """
+class VersionedModel(JsonModel):
+    """Mixin for model families dispatched by a ``version`` field."""
 
-    _registry: Dict[str, Type["VersionedJsonModel"]] = {}
+    version: str
+    _registry: ClassVar[dict[str, Type["VersionedModel"]]] = {}
+    version_value: ClassVar[str | None] = None
 
     def __init_subclass__(cls, **kwargs: Any) -> None:
-        """Give each direct subclass of VersionedJsonModel its own empty registry."""
         super().__init_subclass__(**kwargs)
-        # Only give a fresh registry to classes whose immediate parent is
-        # VersionedJsonModel (i.e. the "base" model classes), not to concrete
-        # registered subclasses whose parent is already a subclass.
-        if VersionedJsonModel in cls.__bases__:
+        if VersionedModel in cls.__bases__:
             cls._registry = {}
+        elif getattr(cls, "version_value", None) is not None:
+            cls._registry[cls.version_value] = cls
 
     @classmethod
-    def register(cls, version: str):
-        """Decorator to register a versioned subclass.
+    def from_dict(cls: Type[VT], data: dict) -> VT:
+        """Dispatch family-base validation to the subclass for ``data['version']``."""
+        if cls.version_value is not None:
+            return cls.model_validate(data)
 
-        Args:
-            version: Version string to register this class under.
+        version = data.get("version")
+        if version is None:
+            raise ValueError(f"Missing 'version' key for {cls.__name__}")
 
-        Returns:
-            Decorator function.
-
-        Example:
-            @MyVersionedModel.register("1.0")
-            @dataclass
-            class MyModelV1(MyVersionedModel):
-                pass
-        """
-
-        def decorator(klass: Type[V]) -> Type[V]:
-            cls._registry[version] = klass
-            # Mark as a concrete registered subclass so from_dict skips dispatch
-            klass._is_registered = True
-            return klass
-
-        return decorator
-
-    @classmethod
-    def from_dict(cls: Type[V], data: dict) -> V:
-        """Create instance from dictionary using version registry.
-
-        Reads data["version"], looks up the registered subclass,
-        and delegates to that subclass's from_dict().
-
-        If called directly on a concrete registered subclass, skips version
-        dispatch and falls back to JsonModel.from_dict.
-
-        Args:
-            data: Dictionary with at minimum a "version" key.
-
-        Returns:
-            New instance of the appropriate registered subclass.
-
-        Raises:
-            ValueError: If version is not registered or "version" key is missing.
-        """
-        # If this is a concrete registered subclass, skip version dispatch
-        if getattr(cls, "_is_registered", False):
-            return JsonModel.from_dict.__func__(cls, data)  # type: ignore[attr-defined]
-
-        if "version" not in data:
+        subclass = cls._registry.get(version)
+        if subclass is None:
+            available = ", ".join(sorted(cls._registry)) or "(none registered)"
             raise ValueError(
-                f"Missing 'version' key in data. Required for {cls.__name__}"
+                f"Unknown version {version!r} for {cls.__name__}. Available: {available}"
             )
 
-        version = data["version"]
-
-        if version not in cls._registry:
-            available = ", ".join(sorted(cls._registry.keys()))
-            raise ValueError(
-                f"Unknown version '{version}' for {cls.__name__}. "
-                f"Available versions: {available}"
-            )
-
-        subclass = cls._registry[version]
-        # Use JsonModel's from_dict directly on the concrete subclass to avoid recursion
-        return JsonModel.from_dict.__func__(subclass, data)  # type: ignore[attr-defined]
+        return subclass.model_validate(data)  # type: ignore[return-value]
