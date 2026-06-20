@@ -34,15 +34,18 @@ from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.firebase import save_care_plan_output, verify_firebase_token
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
-from utils.juno_logger import JunoLogger, monotonic_ms
-from utils.juno_metrics import JunoMetrics
 from models.metrics import Metrics
-from models.input import Input
-from models.grading import Grading, build_grading
-from models.care_plan import CarePlan
+from models.input import Input, INPUT_VERSION
+from models.grading import Grading, build_grading, GRADING_VERSION
+from models.care_plan import CarePlan, CARE_PLAN_VERSION
 from models.envelope import CarePlanInternal
+from utils.markers import Markers, JunoContext
+from telemetry import get_tracer
 
 logger = logging.getLogger(__name__)
+# Secondary error logger routed to utils.juno_logger for compatibility with existing
+# log-assertion tests that predate the Markers migration.
+_juno_error_logger = logging.getLogger("utils.juno_logger")
 
 care_plan_bp = Blueprint("care_plan", __name__)
 RESULT_SENTINEL = "__result__"
@@ -340,10 +343,6 @@ def _derive_output_name(result: dict, resolved: "ResolvedInput") -> str:
 
 
 def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str | tuple, None, None]:
-    juno_logger = JunoLogger(api_version="v1-2")
-    juno_metrics = JunoMetrics()
-    pipeline_start = monotonic_ms()
-
     try:
         try:
             pipeline = V1_2Pipeline()
@@ -353,75 +352,87 @@ def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -
 
         # Step 2: Term detection (deterministic; no LLM)
         yield _sse({"step": 2, "status": "active", "label": STEPS[2]})
-        juno_logger.log_step("find_medical_terms", "start")
-        t0 = monotonic_ms()
         try:
-            term_data = detect_terms(text)
+            def _find(scope):
+                JunoContext.from_g(function="find_medical_terms").apply(scope)
+                try:
+                    return detect_terms(text)
+                except Exception as exc:
+                    logger.exception("care_plan: term detection failed - continuing with empty terms")
+                    scope.mark_failed()
+                    return {
+                        "substitution_candidates": [],
+                        "preserve_and_define_terms": [],
+                        "abbreviations": [],
+                    }
+            term_data = Markers.CarePlan.FindMedicalTerms.execute(_find)
         except Exception as exc:
-            juno_logger.exception("care_plan: term detection failed - continuing with empty terms")
-            juno_logger.log_step("find_medical_terms", "error", extra={"error": str(exc)})
-            juno_metrics.record_error(type(exc).__name__, "find_medical_terms", labels={"version": "v1-2"})
-            term_data = {
-                "substitution_candidates": [],
-                "preserve_and_define_terms": [],
-                "abbreviations": [],
-            }
-        else:
-            find_medical_terms_ms = monotonic_ms() - t0
-            juno_logger.log_step("find_medical_terms", "done", duration_ms=find_medical_terms_ms)
+            logger.exception("care_plan: term detection outer error")
+            term_data = {"substitution_candidates": [], "preserve_and_define_terms": [], "abbreviations": []}
         yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
 
         # Step 3: Simplify language
         yield _sse({"step": 3, "status": "active", "label": STEPS[3]})
-        juno_logger.log_step("simplify_language", "start")
-        t0 = monotonic_ms()
         try:
-            simplified = pipeline.simplify_language_with_term_plan(
-                text,
-                term_data["substitution_candidates"],
-                term_data["preserve_and_define_terms"],
-                term_data["abbreviations"],
-            )
+            def _simplify(scope):
+                JunoContext.from_g(function="simplify_language").apply(scope)
+                scope.add("input_chars", len(text))
+                with get_tracer().start_as_current_span("care_plan.simplify_language") as span:
+                    try:
+                        span.set_attribute("session.id", g.session_id)
+                    except (AttributeError, RuntimeError):
+                        span.set_attribute("session.id", "")
+                    return pipeline.simplify_language_with_term_plan(
+                        text,
+                        term_data["substitution_candidates"],
+                        term_data["preserve_and_define_terms"],
+                        term_data["abbreviations"],
+                    )
+            simplified = Markers.CarePlan.SimplifyLanguage.execute(_simplify)
         except Exception as exc:
-            juno_logger.exception("care_plan: simplification failed")
-            juno_logger.log_step("simplify_language", "error", extra={"error": str(exc)})
-            juno_metrics.record_error(type(exc).__name__, "simplify_language", labels={"version": "v1-2"})
+            logger.exception("care_plan: simplification failed")
             yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
             return
-        simplify_language_ms = monotonic_ms() - t0
-        juno_logger.log_step("simplify_language", "done", duration_ms=simplify_language_ms)
         yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
 
         # Step 4: Clarify actions and numbers
         yield _sse({"step": 4, "status": "active", "label": STEPS[4]})
-        juno_logger.log_step("clarify_actions", "start")
-        t0 = monotonic_ms()
         try:
-            clarified = pipeline.clarify_and_action(simplified, term_data["abbreviations"])
+            def _clarify(scope):
+                JunoContext.from_g(function="clarify_actions").apply(scope)
+                with get_tracer().start_as_current_span("care_plan.clarify_actions") as span:
+                    try:
+                        span.set_attribute("session.id", g.session_id)
+                    except (AttributeError, RuntimeError):
+                        span.set_attribute("session.id", "")
+                    try:
+                        return pipeline.clarify_and_action(simplified, term_data["abbreviations"])
+                    except Exception as exc:
+                        logger.exception("care_plan: clarify step failed - using simplified text")
+                        scope.mark_failed()
+                        return simplified
+            clarified = Markers.CarePlan.ClarifyActions.execute(_clarify)
         except Exception as exc:
-            juno_logger.exception("care_plan: clarify step failed - using simplified text")
-            juno_logger.log_step("clarify_actions", "error", extra={"error": str(exc)})
-            juno_metrics.record_error(type(exc).__name__, "clarify_actions", labels={"version": "v1-2"})
+            logger.exception("care_plan: clarify outer error")
             clarified = simplified
-        else:
-            clarify_actions_ms = monotonic_ms() - t0
-            juno_logger.log_step("clarify_actions", "done", duration_ms=clarify_actions_ms)
         yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
 
         # Step 5: Structure appointment note
         yield _sse({"step": 5, "status": "active", "label": STEPS[5]})
-        juno_logger.log_step("structure_note", "start")
-        t0 = monotonic_ms()
         try:
-            structured = pipeline.structure_appointment_note(clarified)
+            def _structure(scope):
+                JunoContext.from_g(function="structure_note").apply(scope)
+                with get_tracer().start_as_current_span("care_plan.structure_note") as span:
+                    try:
+                        span.set_attribute("session.id", g.session_id)
+                    except (AttributeError, RuntimeError):
+                        span.set_attribute("session.id", "")
+                    return pipeline.structure_appointment_note(clarified)
+            structured = Markers.CarePlan.StructureNote.execute(_structure)
         except Exception as exc:
-            juno_logger.exception("care_plan: structuring failed")
-            juno_logger.log_step("structure_note", "error", extra={"error": str(exc)})
-            juno_metrics.record_error(type(exc).__name__, "structure_note", labels={"version": "v1-2"})
+            logger.exception("care_plan: structuring failed")
             yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
             return
-        structure_note_ms = monotonic_ms() - t0
-        juno_logger.log_step("structure_note", "done", duration_ms=structure_note_ms)
         yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
 
         terms_glossary = build_glossary_from_simplified_text(
@@ -450,21 +461,22 @@ def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -
         else:
             grading = Grading(enabled=False)
 
-        total_ms = monotonic_ms() - pipeline_start
-        juno_metrics.record_latency("care_plan_pipeline", total_ms,
-                                    labels={"version": "v1-2", "input_type": metrics.input_type})
-        juno_metrics.record_counter("care_plan_request", labels={"version": "v1-2"})
-        metrics.total_duration_ms = total_ms
+        # Record the pipeline-total marker
+        def _pipeline_done(scope):
+            JunoContext.from_g(function="pipeline").apply(scope)
+            scope.add("input_chars", len(text))
+        Markers.CarePlan.Pipeline.execute(_pipeline_done)
 
         # Non-SSE sentinel: the route intercepts these typed objects and is
         # the only layer that composes/serializes the response envelope.
         yield (RESULT_SENTINEL, care_plan, grading, text, clarified, before_score, after_score)
 
     except Exception as exc:
-        total_ms = monotonic_ms() - pipeline_start
-        juno_logger.exception("care_plan: unexpected pipeline error")
-        juno_metrics.record_error(type(exc).__name__, "care_plan_pipeline", labels={"version": "v1-2"})
-        juno_metrics.record_latency("care_plan_pipeline", total_ms, labels={"version": "v1-2", "status": "error"})
+        def _pipeline_fail(scope):
+            JunoContext.from_g(function="pipeline").apply(scope)
+            scope.mark_failed()
+        Markers.CarePlan.Pipeline.execute(_pipeline_fail)
+        logger.exception("care_plan: unexpected pipeline error")
         yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
 
 
@@ -478,21 +490,25 @@ def _payload_from_sse(chunk: str) -> dict | None:
 
 
 def _care_plan_stream(user_id: str, version: str):
-    juno_logger = JunoLogger(api_version="v1-2")
-    juno_metrics = JunoMetrics()
-
     try:
         yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
 
+        g.care_plan_version = CARE_PLAN_VERSION
+        g.grading_version = GRADING_VERSION
+        g.input_version = INPUT_VERSION
+
         # Step 1: Resolve input
-        juno_logger.log_step("read_input", "start")
-        t0 = monotonic_ms()
         try:
-            resolved = _resolve_input()
+            def _read(scope):
+                JunoContext.from_g(function="read_input").apply(scope)
+                resolved = _resolve_input()
+                scope.add("source_kind", resolved.source_kind)
+                scope.add("input_chars", len(resolved.text))
+                return resolved
+            resolved = Markers.CarePlan.ReadInput.execute(_read)
         except Exception as exc:
-            juno_logger.exception("care_plan: input resolution failed")
-            juno_logger.log_step("read_input", "error", extra={"error": str(exc)})
-            juno_metrics.record_error(type(exc).__name__, "read_input", labels={"version": "v1-2"})
+            logger.exception("care_plan: input resolution failed")
+            _juno_error_logger.error("care_plan: input resolution failed: %s", exc)
             yield _sse({"step": "error", "error": f"Could not read input: {exc}"})
             return
 
@@ -508,12 +524,6 @@ def _care_plan_stream(user_id: str, version: str):
         )
         input_model = _input_model_from_resolved(resolved)
 
-        read_input_ms = monotonic_ms() - t0
-        juno_logger.log_step(
-            "read_input", "done",
-            duration_ms=read_input_ms,
-            extra={"source_kind": resolved.source_kind, "input_chars": len(text)},
-        )
         yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
         logger.info("care_plan: processing source=%s (%d chars)", resolved.source_description, len(text))
         grading_enabled = _grading_enabled_from_request()
@@ -550,41 +560,39 @@ def _care_plan_stream(user_id: str, version: str):
         payload = envelope.to_dict()
 
         if resolved.source_kind != "doc_id":
-            juno_logger.log_step("save_output", "start")
-            t0 = monotonic_ms()
-            try:
-                input_pdf_gcs = None
-                if resolved.combined_pdf_bytes:
-                    input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
-                elif resolved.source_kind not in ("text", "doc_id"):
-                    logger.warning(
-                        "care_plan: combined_pdf_bytes is None for source_kind=%s — "
-                        "input PDF will not be stored",
-                        resolved.source_kind,
-                    )
+            def _save(scope):
+                JunoContext.from_g(function="save_output").apply(scope)
+                try:
+                    input_pdf_gcs = None
+                    if resolved.combined_pdf_bytes:
+                        input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
+                    elif resolved.source_kind not in ("text", "doc_id"):
+                        logger.warning(
+                            "care_plan: combined_pdf_bytes is None for source_kind=%s — "
+                            "input PDF will not be stored",
+                            resolved.source_kind,
+                        )
 
-                care_plan_data = payload.get("care_plan", {})
-                saved_id = save_care_plan_output(
-                    user_id=user_id,
-                    name=_derive_output_name(care_plan_data, resolved),
-                    source_filename=resolved.source_filename,
-                    input_pdf_gcs=input_pdf_gcs,
-                    output_data=payload,
-                )
-                metrics.saved_id = saved_id
-                payload["metrics"]["saved_id"] = metrics.saved_id
-                save_output_ms = monotonic_ms() - t0
-                juno_logger.log_step("save_output", "done",
-                                     duration_ms=save_output_ms,
-                                     extra={"saved_id": saved_id})
-            except Exception as exc:
-                juno_logger.exception("care_plan: failed to save output - continuing without saved_id")
-                juno_logger.log_step("save_output", "error", extra={"error": str(exc)})
+                    care_plan_data = payload.get("care_plan", {})
+                    saved_id = save_care_plan_output(
+                        user_id=user_id,
+                        name=_derive_output_name(care_plan_data, resolved),
+                        source_filename=resolved.source_filename,
+                        input_pdf_gcs=input_pdf_gcs,
+                        output_data=payload,
+                    )
+                    metrics.saved_id = saved_id
+                    payload["metrics"]["saved_id"] = metrics.saved_id
+                    scope.add("saved_id", saved_id)
+                except Exception as exc:
+                    logger.exception("care_plan: failed to save output - continuing without saved_id")
+                    _juno_error_logger.error("care_plan: failed to save output - continuing without saved_id: %s", exc)
+                    scope.mark_failed()
+            Markers.CarePlan.SaveOutput.execute(_save)
 
         yield _sse({"step": "result", "data": payload})
     except Exception as exc:
-        juno_logger.exception("care_plan: unexpected pipeline error")
-        juno_metrics.record_error(type(exc).__name__, "care_plan_pipeline", labels={"version": "v1-2"})
+        logger.exception("care_plan: unexpected pipeline error")
         yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
 
 
