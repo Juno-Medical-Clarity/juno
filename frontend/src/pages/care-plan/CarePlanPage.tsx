@@ -1,4 +1,4 @@
-import '../v1_1/V1_1Page.css';
+import './CarePlanPage.css';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
@@ -17,7 +17,7 @@ import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
-import { SIMPLIFY_API_PATH, DEFAULT_VERSION, VERSIONS } from '../../config';
+import { SIMPLIFY_API_PATH, DEFAULT_VERSION } from '../../config';
 import type { VersionRouteState } from '../../router';
 
 const INITIAL_STEPS: PipelineStep[] = [
@@ -53,12 +53,12 @@ function outputHasInputPdf(output: SimplifyOutput): boolean {
   ));
 }
 
-export default function SimplifyPage() {
+export default function CarePlanPage() {
   const navigate = useNavigate();
   const location = useLocation();
   const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
-  const [selectedVersion, setSelectedVersion] = useState(DEFAULT_VERSION);
+  const selectedVersion = DEFAULT_VERSION;
   const [gradingEnabled, setGradingEnabled] = useState(true);
   const [files, setFiles] = useState<File[]>([]);
   const [textInput, setTextInput] = useState('');
@@ -75,16 +75,6 @@ export default function SimplifyPage() {
   const [batchOutputs, setBatchOutputs] = useState<SimplifyOutput[]>([]);
   const [batchGroupIds, setBatchGroupIds] = useState<Record<string, string>>({});
   const [selectedBatchIndex, setSelectedBatchIndex] = useState<number | null>(null);
-
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const versionParam = params.get('version');
-    if (versionParam && VERSIONS.some(v => v.id === versionParam)) {
-      setSelectedVersion(versionParam);
-      navigate(location.pathname, { replace: true, state: location.state });
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // run once on mount
 
   useEffect(() => {
     const output = (location.state as VersionRouteState | null)?.output;
@@ -132,10 +122,6 @@ export default function SimplifyPage() {
   const hasPresetDataSelection = presetDataSelection.length > 0;
   const canSubmit = hasPresetDataSelection || hasSingleRunInput;
   const presetDataSelectionCount = presetDataSelection.length;
-
-  const handleVersionChange = (versionId: string) => {
-    setSelectedVersion(versionId);
-  };
 
   const handleSubmit = async () => {
     if (!canSubmit) return;
@@ -468,7 +454,7 @@ export default function SimplifyPage() {
               <PresetDataCard onSelectionChange={setPresetDataSelection} />
               <ConfigurationCard
                 version={selectedVersion}
-                onVersionChange={handleVersionChange}
+                onVersionChange={() => {}}
                 gradingEnabled={gradingEnabled}
                 onGradingEnabledChange={setGradingEnabled}
               />
