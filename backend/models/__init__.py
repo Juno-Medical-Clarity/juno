@@ -1,37 +1,24 @@
-"""Backend models package for JSON serialization and versioning."""
-
-from importlib import import_module
+"""Backend model exports."""
 
 from .base import JsonModel, VersionedModel
+from .care_plan import CarePlan, CarePlanV1_2, CarePlanV1_2StructuredLLM
+from .envelope import CarePlanInternal, is_legacy_shape
+from .grading import Grading, GradingEntry, build_grading
+from .input import Input, InputFile
+from .metrics import Metrics
 
 __all__ = [
+    "JsonModel",
+    "VersionedModel",
+    "CarePlan",
+    "CarePlanV1_2",
+    "CarePlanV1_2StructuredLLM",
+    "CarePlanInternal",
+    "is_legacy_shape",
     "Grading",
+    "GradingEntry",
+    "build_grading",
     "Input",
     "InputFile",
-    "JsonModel",
     "Metrics",
-    "SimplifiedCarePlan",
-    "SimplifyOutput",
-    "VersionedModel",
-    "is_legacy_shape",
 ]
-
-_LAZY_EXPORTS = {
-    "Grading": (".grading", "Grading"),
-    "Input": (".input", "Input"),
-    "InputFile": (".input", "InputFile"),
-    "Metrics": (".metrics", "Metrics"),
-    "SimplifiedCarePlan": (".care_plan", "SimplifiedCarePlan"),
-    "SimplifyOutput": (".envelope", "SimplifyOutput"),
-    "is_legacy_shape": (".envelope", "is_legacy_shape"),
-}
-
-
-def __getattr__(name: str):
-    if name not in _LAZY_EXPORTS:
-        raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
-
-    module_name, attribute = _LAZY_EXPORTS[name]
-    value = getattr(import_module(module_name, __name__), attribute)
-    globals()[name] = value
-    return value
