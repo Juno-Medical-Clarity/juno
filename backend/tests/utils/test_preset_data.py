@@ -1,82 +1,67 @@
-import sys
 import tempfile
-import unittest
 from pathlib import Path
 
-BACKEND_DIR = Path(__file__).resolve().parents[2]
-if str(BACKEND_DIR) not in sys.path:
-    sys.path.insert(0, str(BACKEND_DIR))
+import pytest
 
 
-class PresetDataTest(unittest.TestCase):
-    def setUp(self):
-        self.temp_dir = tempfile.TemporaryDirectory()
-        self.root = Path(self.temp_dir.name)
+@pytest.fixture
+def preset_root(monkeypatch):
+    """Create a temp preset-data tree and wire it into preset_data module."""
+    temp_dir = tempfile.TemporaryDirectory()
+    root = Path(temp_dir.name)
 
-        docconv_input_1 = self.root / "DocConv" / "input-1"
-        docconv_input_2 = self.root / "DocConv" / "input-2"
-        other_input = self.root / "OtherGroup" / "case-a"
+    docconv_input_1 = root / "DocConv" / "input-1"
+    docconv_input_2 = root / "DocConv" / "input-2"
+    other_input = root / "OtherGroup" / "case-a"
 
-        docconv_input_1.mkdir(parents=True)
-        docconv_input_2.mkdir(parents=True)
-        other_input.mkdir(parents=True)
+    docconv_input_1.mkdir(parents=True)
+    docconv_input_2.mkdir(parents=True)
+    other_input.mkdir(parents=True)
 
-        (docconv_input_1 / "notes.txt").write_bytes(b"input 1 notes")
-        (docconv_input_1 / "transcript.txt").write_bytes(b"input 1 transcript")
-        (docconv_input_2 / "input-2-only.txt").write_bytes(b"input 2 only")
-        (other_input / "summary.txt").write_bytes(b"summary")
-        (self.root / "DocConv" / "not-an-input.txt").write_text("ignored")
+    (docconv_input_1 / "notes.txt").write_bytes(b"input 1 notes")
+    (docconv_input_1 / "transcript.txt").write_bytes(b"input 1 transcript")
+    (docconv_input_2 / "input-2-only.txt").write_bytes(b"input 2 only")
+    (other_input / "summary.txt").write_bytes(b"summary")
+    (root / "DocConv" / "not-an-input.txt").write_text("ignored")
 
-        from utils import preset_data
+    from utils import preset_data
+    monkeypatch.setattr(preset_data, "PRESET_DATA_ROOT", root)
 
-        self.preset_data = preset_data
-        self.original_root = preset_data.PRESET_DATA_ROOT
-        preset_data.PRESET_DATA_ROOT = self.root
+    yield preset_data
 
-    def tearDown(self):
-        self.preset_data.PRESET_DATA_ROOT = self.original_root
-        self.temp_dir.cleanup()
-
-    def test_list_datasets_returns_sorted_groups_inputs_and_representative_files(self):
-        datasets = self.preset_data.list_datasets()
-
-        self.assertEqual(
-            datasets,
-            [
-                {
-                    "group": "DocConv",
-                    "inputs": ["input-1", "input-2"],
-                    "files": ["notes.txt", "transcript.txt"],
-                },
-                {
-                    "group": "OtherGroup",
-                    "inputs": ["case-a"],
-                    "files": ["summary.txt"],
-                },
-            ],
-        )
-
-    def test_read_dataset_file_reads_from_the_requested_input_folder(self):
-        content = self.preset_data.read_dataset_file(
-            "DocConv", "input-2", "input-2-only.txt"
-        )
-
-        self.assertEqual(content, b"input 2 only")
-
-    def test_read_dataset_file_rejects_mismatches_and_traversal(self):
-        bad_requests = [
-            ("../DocConv", "input-1", "notes.txt"),
-            ("DocConv", "../../../etc", "passwd"),
-            ("DocConv", "input-1", "../../../../etc/passwd"),
-            ("DocConv", "input-2", "notes.txt"),
-            ("Missing", "input-1", "notes.txt"),
-        ]
-
-        for group, input_id, filename in bad_requests:
-            with self.subTest(group=group, input_id=input_id, filename=filename):
-                with self.assertRaises(FileNotFoundError):
-                    self.preset_data.read_dataset_file(group, input_id, filename)
+    temp_dir.cleanup()
 
 
-if __name__ == "__main__":
-    unittest.main()
+def test_list_datasets_returns_sorted_groups_inputs_and_representative_files(preset_root):
+    datasets = preset_root.list_datasets()
+
+    assert datasets == [
+        {
+            "group": "DocConv",
+            "inputs": ["input-1", "input-2"],
+            "files": ["notes.txt", "transcript.txt"],
+        },
+        {
+            "group": "OtherGroup",
+            "inputs": ["case-a"],
+            "files": ["summary.txt"],
+        },
+    ]
+
+
+def test_read_dataset_file_reads_from_the_requested_input_folder(preset_root):
+    content = preset_root.read_dataset_file("DocConv", "input-2", "input-2-only.txt")
+
+    assert content == b"input 2 only"
+
+
+@pytest.mark.parametrize("group,input_id,filename", [
+    ("../DocConv", "input-1", "notes.txt"),
+    ("DocConv", "../../../etc", "passwd"),
+    ("DocConv", "input-1", "../../../../etc/passwd"),
+    ("DocConv", "input-2", "notes.txt"),
+    ("Missing", "input-1", "notes.txt"),
+])
+def test_read_dataset_file_rejects_mismatches_and_traversal(group, input_id, filename, preset_root):
+    with pytest.raises(FileNotFoundError):
+        preset_root.read_dataset_file(group, input_id, filename)
