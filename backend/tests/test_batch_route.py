@@ -27,7 +27,7 @@ class BatchRouteAuthTest(unittest.TestCase):
         self.client = create_app().test_client()
 
     def test_batch_route_requires_authorization_header(self):
-        response = self.client.post("/simplify/batch", json={})
+        response = self.client.post("/care_plan/batch", json={})
 
         self.assertEqual(response.status_code, 401)
         self.assertEqual(response.get_json(), {"error": "No authorization header"})
@@ -47,7 +47,7 @@ def parse_sse(response_or_text):
     return events
 
 
-def fixed_output(input_label):
+def fixed_output(input_label, group="GroupA", batch_group_id=None):
     return {
         "metrics": {
             "session_id": "session-1",
@@ -55,7 +55,16 @@ def fixed_output(input_label):
             "input_type": "batch_dataset",
             "created_at": "2026-06-16T00:00:00+00:00",
         },
-        "input": {"mode": "text", "text": "executor placeholder", "files": []},
+        "input": {
+            "mode": "text",
+            "text": "executor placeholder",
+            "files": [],
+            "doc_id": None,
+            "dataset_group": group,
+            "dataset_input": input_label,
+            "selected_files": None,
+            "batch_group_id": batch_group_id,
+        },
         "grading": {},
         "care_plan": {
             "version": "1.2",
@@ -88,23 +97,27 @@ class BatchRouteTest(unittest.TestCase):
 
         def run_pipeline(text, metrics, grading_enabled):
             executor_calls.append((text, metrics, grading_enabled))
-            input_label = text.splitlines()[2].split(" ")[1]
+            # text format: "\n\n--- notes.txt ---\n\nGroupA input-1 notes..."
+            parts = text.splitlines()[4].split(" ")
+            group = parts[0]
+            input_label = parts[1]
+            batch_group_id = f"{group}-20260616153012"
             yield f"data: {json.dumps({'step': 2, 'status': 'active'})}\n\n"
-            yield f"data: {json.dumps({'step': 'result', 'data': fixed_output(input_label)})}\n\n"
+            yield f"data: {json.dumps({'step': 'result', 'data': fixed_output(input_label, group=group, batch_group_id=batch_group_id)})}\n\n"
 
         with (
             patch("routes.batch._batch_timestamp", return_value="20260616153012", create=True),
             patch("routes.batch.list_datasets", return_value=datasets, create=True) as list_datasets,
             patch("routes.batch.read_dataset_file", side_effect=read_dataset_file, create=True) as read_file,
-            patch("routes.batch.run_v1_2_pipeline", side_effect=run_pipeline, create=True) as executor,
+            patch("routes.batch.run_care_plan_pipeline", side_effect=run_pipeline, create=True) as executor,
             patch(
-                "routes.batch.save_simplify_output",
+                "routes.batch.save_care_plan_output",
                 side_effect=["saved-a1", "saved-a2", "saved-b2"],
                 create=True,
             ) as save_output,
         ):
             response = self.client.post(
-                "/simplify/batch",
+                "/care_plan/batch",
                 json={
                     "version": "v1-2",
                     "grading_enabled": True,
@@ -196,7 +209,7 @@ class BatchRouteTest(unittest.TestCase):
             patch("routes.batch.list_datasets", return_value=[], create=True),
         ):
             response = self.client.post(
-                "/simplify/batch",
+                "/care_plan/batch",
                 json={
                     "version": "v1-2",
                     "grading_enabled": False,
@@ -212,39 +225,30 @@ class BatchRouteTest(unittest.TestCase):
         self.assertEqual(parse_sse(response_text), [{"step": "error", "error": "Dataset group not found: MissingGroup"}])
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
-    def test_batch_dispatches_requested_version_executor(self, _verify_token):
-        datasets = [{"group": "GroupA", "inputs": ["input-1"], "files": ["notes.txt"]}]
+    def test_batch_rejects_unknown_version_with_sse_error(self, _verify_token):
+        """Legacy versions v1 and v1-1 are no longer supported — must SSE-error."""
+        for version in ("v1", "v1-1"):
+            with self.subTest(version=version):
+                with (
+                    patch("routes.batch.list_datasets", return_value=[]),
+                ):
+                    response = self.client.post(
+                        "/care_plan/batch",
+                        json={
+                            "version": version,
+                            "grading_enabled": False,
+                            "selections": [
+                                {"group": "GroupA", "inputs": ["input-1"], "files": ["notes.txt"]},
+                            ],
+                        },
+                        headers={"Authorization": "Bearer token"},
+                    )
+                    response_text = response.get_data(as_text=True)
 
-        def run_pipeline(text, metrics, grading_enabled):
-            yield f"data: {json.dumps({'step': 'result', 'data': fixed_output('input-1')})}\n\n"
-
-        with (
-            patch("routes.batch._batch_timestamp", return_value="20260616153012"),
-            patch("routes.batch.list_datasets", return_value=datasets),
-            patch("routes.batch.read_dataset_file", return_value=b"GroupA input-1 notes"),
-            patch("routes.batch.run_v1_pipeline") as run_v1,
-            patch("routes.batch.run_v1_1_pipeline", side_effect=run_pipeline) as run_v1_1,
-            patch("routes.batch.run_v1_2_pipeline") as run_v1_2,
-            patch("routes.batch.save_simplify_output", return_value="saved-a1"),
-        ):
-            response = self.client.post(
-                "/simplify/batch",
-                json={
-                    "version": "v1-1",
-                    "grading_enabled": False,
-                    "selections": [
-                        {"group": "GroupA", "inputs": ["input-1"], "files": ["notes.txt"]},
-                    ],
-                },
-                headers={"Authorization": "Bearer token"},
-            )
-            response_text = response.get_data(as_text=True)
-
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(parse_sse(response_text)[-1]["step"], "batch_result")
-        run_v1.assert_not_called()
-        run_v1_1.assert_called_once()
-        run_v1_2.assert_not_called()
+                self.assertEqual(response.status_code, 200)
+                events = parse_sse(response_text)
+                self.assertEqual(events[0]["step"], "error")
+                self.assertIn(version, events[0]["error"])
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_batch_rejects_too_many_runs_before_pipeline_work(self, _verify_token):
@@ -255,11 +259,11 @@ class BatchRouteTest(unittest.TestCase):
             patch("routes.batch.list_datasets", return_value=datasets) as list_datasets,
             patch("routes.batch._batch_timestamp") as batch_timestamp,
             patch("routes.batch.read_dataset_file") as read_file,
-            patch("routes.batch.run_v1_2_pipeline") as executor,
-            patch("routes.batch.save_simplify_output") as save_output,
+            patch("routes.batch.run_care_plan_pipeline") as executor,
+            patch("routes.batch.save_care_plan_output") as save_output,
         ):
             response = self.client.post(
-                "/simplify/batch",
+                "/care_plan/batch",
                 json={
                     "version": "v1-2",
                     "grading_enabled": False,
@@ -314,11 +318,11 @@ class BatchRouteTest(unittest.TestCase):
             patch("routes.batch._batch_timestamp", return_value="20260616153012"),
             patch("routes.batch.list_datasets", return_value=datasets),
             patch("routes.batch.read_dataset_file", side_effect=read_dataset_file),
-            patch("routes.batch.run_v1_2_pipeline", side_effect=run_pipeline) as executor,
-            patch("routes.batch.save_simplify_output", return_value="saved-success") as save_output,
+            patch("routes.batch.run_care_plan_pipeline", side_effect=run_pipeline) as executor,
+            patch("routes.batch.save_care_plan_output", return_value="saved-success") as save_output,
         ):
             response = self.client.post(
-                "/simplify/batch",
+                "/care_plan/batch",
                 json={
                     "version": "v1-2",
                     "grading_enabled": False,

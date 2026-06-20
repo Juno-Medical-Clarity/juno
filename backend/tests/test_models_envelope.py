@@ -140,11 +140,9 @@ def test_is_legacy_shape_checks_for_care_plan_key():
 
 def test_model_consuming_routes_import_without_removed_aliases():
     import routes.batch  # noqa: F401
+    import routes.care_plan  # noqa: F401
     import routes.grading  # noqa: F401
     import routes.saved_outputs  # noqa: F401
-    import routes.simplify  # noqa: F401
-    import routes.simplify_v1_1  # noqa: F401
-    import routes.simplify_v1_2  # noqa: F401
 
     routes_dir = Path(__file__).resolve().parents[1] / "routes"
     for route_file in routes_dir.glob("*.py"):

@@ -20,20 +20,21 @@ def create_app():
     return app
 
 
-class SimplifyAuthTest(unittest.TestCase):
+class CarePlanAuthTest(unittest.TestCase):
     def setUp(self):
         self.client = create_app().test_client()
 
-    def test_simplify_routes_require_authorization_header(self):
-        for path in ("/simplify",):
+    def test_care_plan_route_requires_authorization_header(self):
+        for path in ("/care_plan",):
             with self.subTest(path=path):
                 response = self.client.post(path)
 
                 self.assertEqual(response.status_code, 401)
                 self.assertEqual(response.get_json(), {"error": "No authorization header"})
 
-    def test_old_version_endpoints_do_not_exist(self):
-        for path in ("/simplify/v1", "/simplify/v1-1", "/simplify/v1-2"):
+    def test_old_simplify_endpoints_do_not_exist(self):
+        """All /simplify* paths are hard-cut — unconditional 404."""
+        for path in ("/simplify", "/simplify/v1", "/simplify/v1-1", "/simplify/v1-2"):
             with self.subTest(path=path):
                 response = self.client.post(path)
 

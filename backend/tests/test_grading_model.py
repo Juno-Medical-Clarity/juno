@@ -13,7 +13,7 @@ for p in (PROJECT_DIR, BACKEND_DIR):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
-from backend.models.grading import Grading, GradingEntry, build_grading
+from models.grading import Grading, GradingEntry, build_grading
 from utils.scoring import score_text
 
 
@@ -122,7 +122,7 @@ class TestBuildGrading(unittest.TestCase):
 
 
 class TestGradeEndpoint(unittest.TestCase):
-    """Route tests for POST /simplify/grade."""
+    """Route tests for POST /care_plan/grade."""
 
     def setUp(self):
         from routes import all_blueprints
@@ -137,7 +137,7 @@ class TestGradeEndpoint(unittest.TestCase):
         with patch("routes.grading._score_safe") as mock_score:
             mock_score.return_value = score_text(FIXTURE_TEXT)
             response = self.client.post(
-                "/simplify/grade",
+                "/care_plan/grade",
                 headers={"Authorization": "Bearer token"},
                 json={"text": FIXTURE_TEXT, "clarified_text": FIXTURE_CLARIFIED},
             )
@@ -150,7 +150,7 @@ class TestGradeEndpoint(unittest.TestCase):
     def test_missing_body_returns_400(self, _):
         """POST with neither saved_id nor text returns 400."""
         response = self.client.post(
-            "/simplify/grade",
+            "/care_plan/grade",
             headers={"Authorization": "Bearer token"},
             json={},
         )
@@ -166,7 +166,7 @@ class TestGradeEndpoint(unittest.TestCase):
 
         with patch("routes.grading._db", return_value=mock_db):
             response = self.client.post(
-                "/simplify/grade",
+                "/care_plan/grade",
                 headers={"Authorization": "Bearer token"},
                 json={"saved_id": "nonexistent-id"},
             )
@@ -183,7 +183,7 @@ class TestGradeEndpoint(unittest.TestCase):
 
         with patch("routes.grading._db", return_value=mock_db):
             response = self.client.post(
-                "/simplify/grade",
+                "/care_plan/grade",
                 headers={"Authorization": "Bearer token"},
                 json={"saved_id": "someone-elses-id"},
             )
@@ -212,7 +212,7 @@ class TestGradeEndpoint(unittest.TestCase):
 
         with patch("routes.grading._db", return_value=mock_db):
             response = self.client.post(
-                "/simplify/grade",
+                "/care_plan/grade",
                 headers={"Authorization": "Bearer token"},
                 json={"saved_id": "valid-doc-id"},
             )

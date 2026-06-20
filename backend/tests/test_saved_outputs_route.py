@@ -37,7 +37,7 @@ class ListSavedBatchGroupIdTest(unittest.TestCase):
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.saved_outputs.firestore.client")
     def test_batch_group_id_round_trip(self, mock_firestore_client, _verify_token):
-        """GET /simplify/saved returns batch_group_id correctly for both cases."""
+        """GET /care_plan/saved returns batch_group_id correctly for both cases."""
         now = datetime(2026, 6, 16, 15, 0, 0, tzinfo=timezone.utc)
 
         doc_with_batch = _make_doc("output-1", {
@@ -67,7 +67,7 @@ class ListSavedBatchGroupIdTest(unittest.TestCase):
         ) = iter([doc_with_batch, doc_standalone])
 
         response = self.client.get(
-            "/simplify/saved",
+            "/care_plan/saved",
             headers={"Authorization": "Bearer token"},
         )
 

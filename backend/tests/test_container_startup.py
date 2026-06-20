@@ -46,7 +46,7 @@ class ContainerStartupTest(unittest.TestCase):
 
             client = app_module.app.test_client()
             response = client.open(
-                "/simplify/datasets",
+                "/care_plan/datasets",
                 method="OPTIONS",
                 headers={
                     "Origin": "https://juno-medical-clarity.web.app",
