@@ -9,6 +9,10 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./vitest.setup.ts'],
     css: false,
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'lcov'],
+    },
   },
   server: {
     allowedHosts: ['helene-unreconnoitred-overslowly.ngrok-free.dev'],
