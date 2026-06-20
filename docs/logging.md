@@ -1,414 +1,332 @@
-# Logging
+# Observability — Logging, Tracing, and Metrics
 
-This runbook covers how Juno logging is wired, how to add useful log lines, and
-how to find logs in Google Cloud.
+This document is the single home for all Juno observability. It covers the three
+correlation IDs, working trace queries, Metrics/Trace Explorer how-tos, the
+code-marker developer guide, and the full field reference.
 
-## What Gets Logged
+---
 
-Backend logs are the source of truth for production troubleshooting.
+## 1. The Three IDs — trace_id, span_id, session_id
 
-- Local backend logs are printed to the terminal in a readable text format.
-- Cloud Run backend logs are written to stdout as JSON and ingested by Cloud
-  Logging.
-- Backend request logs include an `X-Session-Id` correlation ID. The backend
-  accepts this header from the client or generates one, stores it on `flask.g`,
-  and echoes it back on the response.
-- OpenTelemetry traces are initialized at backend startup. In Cloud Run, traces
-  are exported to Cloud Trace when `GCP_PROJECT_ID` is set.
-- Frontend logs currently stay in the browser console. They are structured for a
-  future ingestion endpoint, but they are not sent to Cloud Logging today.
+Understanding the three identifiers prevents most debugging dead-ends.
 
-Key files:
+### trace_id
 
-- `backend/app.py` initializes logging, tracing, request start/end logs, session
-  IDs, and request latency metrics.
-- `backend/logging_config.py` controls local text output vs Cloud Run JSON
-  output.
-- `backend/telemetry.py` initializes OpenTelemetry and Cloud Trace export.
-- `backend/utils/juno_logger.py` provides the backend application logging helper.
-- `backend/utils/juno_metrics.py` records log-based metric events.
-- `frontend/src/utils/logger.ts` provides browser-only frontend logging.
-- `backend/utils/LOGGING.md` has lower-level backend helper examples and metric
-  filter patterns.
+A 32-hex-character ID for one whole request tree. OTel's `FlaskInstrumentor`
+mints it when the request arrives; every span and log line in that request
+carries the same `trace_id`. It is the "this single HTTP call" id.
 
-## Set Up Logging Infrastructure
+### span_id
 
-### Local Backend
+A 16-hex-character ID for one operation *inside* the trace. The root span (the
+HTTP request) has one; each child span (e.g. an outgoing Gemini call, a manual
+`simplify_language` span) has its own. A trace is a tree of spans. That is why
+you "see a bunch of span ids": one trace legitimately contains many.
 
-No separate logging service is required locally.
+### session_id
 
-```bash
-cd backend
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-python app.py
+Our application-level correlation id (`X-Session-Id`). The only one that spans
+multiple HTTP requests in the same user session.
+
+**Three scopes:**
+
+| ID | Scope | Set by | Lifetime |
+|---|---|---|---|
+| `trace_id` | One HTTP request | OTel `FlaskInstrumentor` (auto) | Ends when the request ends |
+| `span_id` | One operation within a request | OTel (auto) / manual spans | Sub-request |
+| `session_id` | A user session across many requests | Our `before_request` middleware | Entire session |
+
+A trace ends when the HTTP request ends; a session can contain dozens of traces.
+You cannot replace `session_id` with `trace_id` because `trace_id` resets on
+every request.
+
+### Should I share trace_id to the frontend?
+
+Yes. Both `X-Session-Id` (durable session) and `X-Trace-Id` (per-request) are
+now echoed as response headers.
+
+- **Frontend persists `session_id`** for the whole session and sends it on every
+  subsequent request so the backend can correlate all calls in the same session.
+- **Frontend captures `trace_id` per failed request** for support deep-links
+  ("this exact request failed") — paste the hex into query B or C in §2.
+
+Do not display raw IDs to end users; keep them in diagnostics and error reports
+only.
+
+---
+
+## 2. Logs Explorer: Find Logs for a Trace
+
+### Why the bare hex fails
+
+Cloud Logging indexes `LogEntry.trace` as a full resource path, not the bare
+hex. A bare hex query against the top-level field matches nothing.
+
+### Three working queries
+
+**Query A — canonical (full resource path, what GCP actually indexes):**
+
+```
+trace="projects/juno-medical-clarity/traces/YOUR_32_HEX_TRACE_ID"
+resource.type="cloud_run_revision"
 ```
 
-Local output uses the development formatter because `K_SERVICE` is not set:
+**Query B — bare hex via jsonPayload (we mirror it there too):**
 
-```text
-[2026-06-19 12:00:00,000] INFO routes.simplify_v1_2 - simplify_v1_2: processing source=file (1234 chars)
+```
+jsonPayload.trace_id="YOUR_32_HEX_TRACE_ID"
+resource.type="cloud_run_revision"
 ```
 
-Use `curl -i` when you need the generated session ID:
+**Query C — from the Trace waterfall (easiest path):**
 
-```bash
-curl -i http://localhost:8080/health
+Open Cloud Trace, find the trace, click **"View logs"** on any span. GCP builds
+query A automatically and opens Logs Explorer pre-filtered to that trace.
+
+Query A is the canonical form. Prefer query C when you already have the trace
+open. Use query B when you only have the hex and want to avoid typing the full
+path.
+
+---
+
+## 3. Trace Explorer: Query by session_id
+
+### How to find all spans for a session
+
+1. Go to `console.cloud.google.com/traces`.
+2. In the **Filter** field, enter:
+   ```
+   session.id = YOUR_SESSION_UUID
+   ```
+3. This returns every span across all requests in that session that carries
+   `session.id` — the whole session's trace tree.
+4. From any span, click **"View logs"** to jump to Logs Explorer filtered to
+   that trace. From a log line, click **"Run in Trace"** to jump to the span
+   waterfall.
+
+### How session.id gets onto spans
+
+The backend sets `session.id` on the root span in `before_request` and on
+manual child spans for LLM steps in the care_plan pipeline. This means every
+network call within a session carries the attribute and shows up in step 2
+above.
+
+---
+
+## 4. Metrics Explorer: Charting Pipeline Latency
+
+### View pipeline latency
+
+1. Go to **Google Cloud Console → Monitoring → Metrics Explorer**.
+2. **Resource**: `Cloud Run Revision`
+3. **Metric**: `logging.googleapis.com/user/marker_duration_ms`
+4. **Group by**: `operation`; **Aggregation**: `p50` / `p95` / `p99`
+5. Save as the **"Juno Pipeline Latency"** dashboard tile.
+
+### View error rate
+
+- **Metric**: `logging.googleapis.com/user/marker_op_count`
+- **Filter**: `success=false`
+- **Group by**: `operation`
+
+### View error count
+
+- **Metric**: `logging.googleapis.com/user/care_plan_errors`
+- **Group by**: `operation`
+
+### Creating the log-based metrics (Console-only — you must do this)
+
+Go to **Logging → Logs-based Metrics → Create metric**.
+
+Base filter for all three metrics:
+
+```
+resource.type="cloud_run_revision"
+AND jsonPayload.metric=true
+AND jsonPayload.metric_type="marker"
 ```
 
-For authenticated routes, pass a stable session ID while reproducing an issue:
+**`marker_duration_ms`** — Distribution metric:
+- **Field**: `jsonPayload.duration_ms`
+- **Labels**:
+  - `operation` → `jsonPayload.operation`
+  - `success` → `jsonPayload.success`
+  - `care_plan_version` → `jsonPayload.care_plan_version`
 
-```bash
-curl -H "X-Session-Id: debug-2026-06-19-001" \
-  -H "Authorization: Bearer $FIREBASE_ID_TOKEN" \
-  "$BACKEND_URL/simplify/saved"
-```
+**`marker_op_count`** — Counter metric:
+- **Labels**: `operation`, `success`, `outcome`
 
-### Cloud Run
+**`care_plan_errors`** — Counter metric:
+- **Extra filter**: add `AND jsonPayload.success=false`
+- **Label**: `operation`
 
-Cloud Run sets `K_SERVICE` automatically. That switches the backend formatter to
-JSON logs on stdout, which Cloud Logging ingests without a separate agent.
+---
 
-The backend deploy workflow configures the production logging context in
-`.github/workflows/deploy-backend.yml`:
+## 5. Code Markers: Adding Instrumentation
 
-```text
-GCP_PROJECT_ID=juno-medical-clarity
-GCP_BUCKET_NAME=juno-medical-clarity-backend
-GCP_LOCATION=us-central1
-VERTEX_AI_MODEL=gemini-3.5-flash
-SIMPLIFY_DEFAULT_VERSION=v1-2
-FIRESTORE_DATABASE_ID=(default)
-GEMINI_API_KEY=<GitHub secret>
-FIREBASE_SERVICE_ACCOUNT_JSON=<Secret Manager secret>
-```
+Code markers are the standard way to instrument an operation so it gets
+automatic timing, success/failure tracking, and metric emission.
 
-The Firebase Admin SDK JSON is stored in Secret Manager as
-`firebase-service-account` and injected into Cloud Run as
-`FIREBASE_SERVICE_ACCOUNT_JSON`.
-
-The deploy service account is configured through the GitHub secret `GCP_SA_KEY`.
-The Cloud Run runtime service account must be able to read Secret Manager,
-Firestore, GCS, Vertex AI or Gemini API dependencies, and write Cloud Trace.
-
-`backend/cloudbuild.yaml` sets:
-
-```yaml
-options:
-  logging: CLOUD_LOGGING_ONLY
-```
-
-That sends Cloud Build logs to Cloud Logging instead of the default build logs
-bucket. It avoids needing build-log bucket permissions just to stream build logs.
-
-### Cloud Trace
-
-`backend/telemetry.py` exports traces to Cloud Trace in production when both
-conditions are true:
-
-- `K_SERVICE` exists, meaning the app is running on Cloud Run.
-- `GCP_PROJECT_ID` is set.
-
-Set `SERVICE_VERSION` on Cloud Run when you want trace views grouped by deploy:
-
-```text
-SERVICE_VERSION=<git-sha>
-```
-
-The current deploy workflow does not set this variable. Without it, traces use
-`service.version=unknown`.
-
-### Log-Based Metrics
-
-The backend records metrics as structured log events through `JunoMetrics`.
-Create Cloud Monitoring log-based metrics from the filters in
-`backend/utils/LOGGING.md`.
-
-Recommended metrics:
-
-- `simplify_request_duration_ms`: distribution from `jsonPayload.duration_ms`.
-- `simplify_step_error_count`: counter grouped by error type and operation.
-- `simplify_request_count`: counter grouped by pipeline version.
-- `http_request`: latency for non-SSE HTTP responses from `backend/app.py`.
-
-## Use Logging In Code
-
-### Backend Request And Pipeline Logs
-
-Use `JunoLogger` for request, pipeline, and user-impacting workflow logs.
+### Wrap an operation
 
 ```python
-from utils.juno_logger import JunoLogger, monotonic_ms
+from utils.markers import Markers, JunoContext
 
-juno_logger = JunoLogger(api_version="v1-2")
+def _do(scope):
+    JunoContext.from_g(function="my_operation").apply(scope)
+    # optional: add custom dimensions
+    scope.add("input_chars", len(text))
+    # do the actual work
+    return do_my_work()
 
-juno_logger.log_step("simplify_language", "start")
-step_start_ms = monotonic_ms()
-try:
-    result = pipeline.simplify_language(text)
-except Exception as exc:
-    juno_logger.log_step(
-        "simplify_language",
-        "error",
-        extra={"error": str(exc)},
-    )
-    raise
-
-juno_logger.log_step(
-    "simplify_language",
-    "done",
-    duration_ms=monotonic_ms() - step_start_ms,
-)
+result = Markers.CarePlan.MyOperation.execute(_do)
 ```
 
-Use stable `snake_case` values for `step_name` and keep `extra` small. Do not
-log raw provider notes, patient text, Firebase tokens, service account JSON,
-signed URLs, or API keys.
+### Non-fatal fallback steps
 
-Expected backend log context includes:
-
-| Field | Meaning |
-| --- | --- |
-| `session_id` | Request/session correlation ID from `X-Session-Id` or backend fallback. |
-| `user_id` | Firebase UID set by auth middleware when present. |
-| `api_version` | Pipeline version passed to `JunoLogger`. |
-| `step_name` | Stable workflow step, such as `simplify_language`. |
-| `status` | Step status, usually `start`, `done`, `error`, or request `ok`. |
-| `duration_ms` | Step duration for pipeline steps. |
-| `total_duration_ms` | End-to-end request duration from `after_request`. |
-| `trace_id` / `span_id` | OpenTelemetry identifiers for Cloud Trace correlation. |
-
-Current caveat: `JunoLogger` and `JunoMetrics` attach these fields through the
-standard Python `extra` mechanism. If a field is missing in Cloud Logging,
-confirm the deployed `StructuredJsonFormatter` in `backend/logging_config.py`
-serializes that field into `jsonPayload`.
-
-For ordinary module diagnostics where request context is less important, the
-standard library logger is acceptable:
+For steps that can fail gracefully, catch inside `_do`, call `scope.mark_failed()`,
+and return the fallback value:
 
 ```python
-import logging
+def _do(scope):
+    JunoContext.from_g(function="my_step").apply(scope)
+    try:
+        return risky_operation()
+    except Exception:
+        logger.exception("step failed - using fallback")
+        scope.mark_failed()
+        return fallback_value
 
-logger = logging.getLogger(__name__)
-logger.warning("saved_outputs: missing input_pdf_gcs for doc_id=%s", doc_id)
+result = Markers.CarePlan.MyStep.execute(_do)
 ```
 
-Prefer `logger.exception(...)` inside `except` blocks so the traceback is
-available in logs.
+The marker records `success=false` and `outcome="Failed"` in the metric log
+line, then returns the fallback normally. The request does not fail.
 
-### Backend Metrics
+### Add a new marker to the registry
 
-Use `JunoMetrics` when the value should become a chart or alert.
+Edit `backend/utils/markers/markers.py`:
 
 ```python
-from utils.juno_metrics import JunoMetrics
-
-metrics = JunoMetrics()
-metrics.record_counter("simplify_request", labels={"version": "v1-2"})
-metrics.record_latency(
-    "simplify_pipeline",
-    total_ms,
-    labels={"version": "v1-2", "input_type": source_kind},
-)
-metrics.record_error(
-    type(exc).__name__,
-    "simplify_language",
-    labels={"version": "v1-2"},
-)
+class CarePlan:
+    @code_marker("care_plan.my_new_step")
+    class MyNewStep(CodeMarker): pass
 ```
 
-Use logs for diagnosis and metrics for aggregation. If you need both, emit both.
+The string argument becomes the `operation` field on every metric log line and
+span emitted by this marker. Use `snake_case` dot-separated names.
 
-### Frontend Logs
+### Testing with InMemorySink
 
-Use `frontend/src/utils/logger.ts` for browser diagnostics and UX events:
+```python
+from utils.markers import register_sink, InMemorySink, Markers
 
-```ts
-import { logger } from '../utils/logger';
-
-logger.logPageView('SimplifyPage');
-logger.logUserAction('submit_text', { inputLength: text.length });
-logger.error('simplify_request_failed', { status });
+sink = InMemorySink()
+register_sink(sink)
+Markers.CarePlan.SimplifyLanguage.execute(lambda s: None)
+assert sink.events[0]["name"] == "care_plan.simplify_language"
+assert sink.events[0]["success"] is True
 ```
 
-Set the backend session ID after reading the `X-Session-Id` response header so
-browser logs can be matched manually to backend logs:
+`InMemorySink` captures every marker event in memory. Register it before the
+call under test; inspect `sink.events` after. Unregister between tests if
+multiple test cases share the same sink.
 
-```ts
-const sessionId = response.headers.get('X-Session-Id');
-if (sessionId) {
-  logger.setSessionId(sessionId);
-}
-```
+---
 
-Production frontend logs are still browser-console logs. To troubleshoot a user
-issue in Cloud Logging, use the backend `session_id`, `user_id`, request path,
-and timestamp.
+## 6. jsonPayload Field Reference
 
-## Look Up Logs
+All fields below appear in `jsonPayload` in Cloud Logging.
 
-Set shell defaults:
+| Field | Source | Values | Notes |
+|---|---|---|---|
+| `severity` | Python log level | `INFO`, `WARNING`, `ERROR` | |
+| `message` | logger message | string | `"op_complete"` for markers, `"juno_metric"` for metric lines |
+| `session_id` | `flask.g.session_id` | UUID | Set by `before_request`; never a Firebase UID |
+| `user_id` | `flask.g.user_id` | Firebase UID | Always its own field; never used as `session_id` |
+| `function` | marker `JunoContext` | e.g. `"simplify_language"` | |
+| `care_plan_version` | `CARE_PLAN_VERSION` constant | `"1.2"` | |
+| `grading_version` | `GRADING_VERSION` constant | `"1.0"` | |
+| `input_version` | `INPUT_VERSION` constant | `"1.0"` | |
+| `operation` | marker name | e.g. `"care_plan.simplify_language"` | Present on marker events only |
+| `metric` | JunoSink | `true` | Present on metric log lines only |
+| `metric_type` | JunoSink | `"marker"` | |
+| `duration_ms` | marker auto-timer | float (ms) | Present on metric log lines |
+| `success` | marker outcome | bool | `true` = Succeeded |
+| `outcome` | marker outcome | `"Succeeded"` / `"Failed"` | |
+| `trace_id` | OTel | 32-hex string | Links to Cloud Trace |
+| `span_id` | OTel | 16-hex string | Links to specific span |
+| `logging.googleapis.com/trace` | OTel | `projects/.../traces/...` | Used by Logs Explorer "Run in Trace" |
+| `service` | `K_SERVICE` env var | e.g. `"juno-backend"` | |
+| `environment` | `K_SERVICE` presence | `"production"` / `"development"` | |
+
+**Removed field**: `api_version` was retired and replaced by three separate
+version fields: `function`, `care_plan_version`, `grading_version`, and
+`input_version`.
+
+---
+
+## 7. session_id Rules
+
+- `session_id` is **never** a Firebase UID. The `before_request` middleware sets
+  it from the `X-Session-Id` header (client-supplied) or generates a UUID when
+  the header is absent.
+- `user_id` is always its own separate field (`g.user_id`), set by
+  `@verify_firebase_token`.
+- **`X-Session-Id`**: Send on every request to correlate a session across
+  multiple HTTP calls. Read it from the first response and resend it on all
+  subsequent requests.
+- **`X-Trace-Id`**: Present on every non-SSE response. Capture it per failed
+  request for support deep-links ("this exact request failed").
+- Use `session_id` for "my whole session is broken" reports. Include `trace_id`
+  for "this one action failed."
+- Do not display raw IDs to end users; keep them in diagnostics and error
+  reports only.
+
+---
+
+## 8. gcloud Logging Recipes
 
 ```bash
-PROJECT_ID=juno-medical-clarity
-REGION=us-central1
-BACKEND_SERVICE=simplify-backend
-```
-
-Find the deployed backend URL:
-
-```bash
-gcloud run services describe "$BACKEND_SERVICE" \
-  --project "$PROJECT_ID" \
-  --region "$REGION" \
-  --format="value(status.url)"
-```
-
-Read recent Cloud Run logs:
-
-```bash
+# All logs for a session (most useful for support)
 gcloud logging read \
-  'resource.type="cloud_run_revision"
-   resource.labels.service_name="simplify-backend"' \
-  --project "$PROJECT_ID" \
-  --limit 50 \
-  --format json
+  'resource.type="cloud_run_revision" jsonPayload.session_id="YOUR_SESSION_UUID"' \
+  --project=juno-medical-clarity --limit=100 --format=json
+
+# All marker metric events (use for manual latency inspection)
+gcloud logging read \
+  'resource.type="cloud_run_revision" jsonPayload.metric=true jsonPayload.metric_type="marker"' \
+  --project=juno-medical-clarity --limit=50 --format=json
+
+# All failed operations
+gcloud logging read \
+  'resource.type="cloud_run_revision" jsonPayload.metric=true jsonPayload.success=false' \
+  --project=juno-medical-clarity --limit=50 --format=json
+
+# Logs for a specific trace (use full path — bare hex won't work)
+gcloud logging read \
+  'trace="projects/juno-medical-clarity/traces/YOUR_32_HEX"' \
+  --project=juno-medical-clarity --limit=100 --format=json
 ```
 
-Follow recent errors:
+---
 
-```bash
-gcloud logging tail \
-  'resource.type="cloud_run_revision"
-   resource.labels.service_name="simplify-backend"
-   severity>=ERROR' \
-  --project "$PROJECT_ID"
-```
+## 9. Manual Steps Required
 
-### Cloud Logging Query Recipes
+The following cannot be automated and must be done by a person in the Cloud
+Console or CI config.
 
-Open Logs Explorer:
-
-```text
-https://console.cloud.google.com/logs/query?project=juno-medical-clarity
-```
-
-All backend logs:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-```
-
-Recent errors:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-severity>=ERROR
-```
-
-One session:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-jsonPayload.session_id="<session-id>"
-```
-
-One Firebase user:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-jsonPayload.user_id="<firebase-uid>"
-```
-
-One route:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-jsonPayload.http_path="/simplify"
-```
-
-Request completions that returned errors:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-jsonPayload.step_name="request_end"
-jsonPayload.http_status_code>=400
-```
-
-Slow requests over 10 seconds:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-jsonPayload.step_name="request_end"
-jsonPayload.total_duration_ms>10000
-```
-
-Pipeline step failures:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-jsonPayload.message="pipeline_step"
-jsonPayload.status="error"
-```
-
-Failures in one step:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-jsonPayload.step_name="simplify_language"
-jsonPayload.status="error"
-```
-
-Pipeline latency metric events:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-jsonPayload.metric=true
-jsonPayload.metric_type="latency"
-jsonPayload.operation="simplify_pipeline"
-```
-
-Several filters above rely on structured fields emitted through `JunoLogger` or
-`JunoMetrics`. If a query returns no matches for a request you know happened,
-first search by `jsonPayload.session_id` or free text, then inspect the expanded
-`jsonPayload` to confirm which fields are present in the deployed revision.
-
-Cloud Build logs:
-
-```text
-resource.type="build"
-resource.labels.project_id="juno-medical-clarity"
-```
-
-Cloud Run revision deploy logs:
-
-```text
-resource.type="cloud_run_revision"
-resource.labels.service_name="simplify-backend"
-protoPayload.methodName=~"google.cloud.run"
-```
-
-## Troubleshooting
-
-- No Cloud Run logs: confirm the service is `simplify-backend`, the project is
-  `juno-medical-clarity`, and the query time range includes the request.
-- No structured fields in Logs Explorer: expand `jsonPayload`. If a field is not
-  present, check `backend/logging_config.py` and the exact deployed revision.
-- No `user_id`: the log likely happened before Firebase auth ran, on an
-  unauthenticated route, or outside a request context.
-- No trace link: confirm the deployed service has `GCP_PROJECT_ID` and that the
-  runtime service account can write Cloud Trace data.
-- No frontend logs in Cloud Logging: this is expected. Frontend logging currently
-  writes only to the browser console.
+1. **Create the 3 log-based metrics** in Cloud Console (see §4 above for filter
+   and label details).
+2. **Build the Metrics Explorer dashboard tiles** for pipeline latency, error
+   rate, and error count (see §4).
+3. **Confirm `session.id` span attribute appears in Trace Explorer**: send a
+   test request with an `X-Session-Id` header, then filter in Trace Explorer
+   with `session.id = YOUR_SESSION_UUID`.
+4. **IAM check**: confirm the Cloud Run runtime service account has
+   `roles/cloudtrace.agent`.
+5. **Deploy `SERVICE_VERSION`**: add
+   `--set-env-vars "SERVICE_VERSION=${GITHUB_SHA}"` to the `gcloud run deploy`
+   step in `.github/workflows/deploy-backend.yml` to stamp each revision with
+   its git SHA. The `backend/VERSION` file provides a semver fallback when this
+   env var is absent.
