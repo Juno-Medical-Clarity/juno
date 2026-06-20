@@ -1,13 +1,13 @@
 """
-simplify/v1_2/pipeline.py - V1.2 medical document simplification pipeline.
+simplify/v1_2/pipeline.py - V1.2 medical care_plan pipeline.
 
-Implements SimplifyPipeline. Key differences from V1:
+Implements CarePlanPipeline. Key differences from V1:
   - Deterministic term detection (AHRQ + Michigan + abbreviations) via JSON
   - No lab result support; appointment/SOAP notes only
   - No document classification LLM call
   - No scispaCy dependency
   - No parenthetical definitions in prose; compact terms glossary in output
-  - Simplify V1.2 appointment_note output, plus "terms" key
+  - Care plan V1.2 appointment_note output, plus "terms" key
 
 Steps:
   1. detect_terms
@@ -38,7 +38,7 @@ from models.care_plan import (
     CarePlanV1_2,
     CarePlanV1_2StructuredLLM,
 )
-from simplify.interface import SimplifyPipeline
+from simplify.interface import CarePlanPipeline
 from utils.term_detection import (
     build_glossary_from_simplified_text,
     detect_terms,
@@ -61,8 +61,8 @@ def _strip_json_fences(raw: str) -> str:
     return match.group(1).strip() if match else raw.strip()
 
 
-class V1_2Pipeline(SimplifyPipeline):
-    """V1.2 simplification pipeline with deterministic term detection."""
+class V1_2Pipeline(CarePlanPipeline):
+    """V1.2 care_plan pipeline with deterministic term detection."""
 
     def __init__(self):
         # Environment-driven model config keeps deployment/runtime configurable.
