@@ -188,7 +188,7 @@ def create_care_plan_batch(user_id: str):
                     continue
 
                 metrics = Metrics.start(
-                    session_id=getattr(g, "session_id", user_id),
+                    session_id=getattr(g, "session_id", ""),
                     pipeline_version=version,
                     input_type="batch_dataset",
                 )
@@ -262,7 +262,7 @@ def create_care_plan_batch(user_id: str):
                     batch_group_id=batch_group_id,
                 )
                 metrics.saved_id = saved_id
-                result_data["metrics"] = metrics.to_dict()
+                result_data["metrics"]["saved_id"] = metrics.saved_id
                 outputs.append(result_data)
 
                 yield _sse({

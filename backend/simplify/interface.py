@@ -19,7 +19,7 @@ class CarePlanPipeline(ABC):
     """
 
     @abstractmethod
-    def run(self, text: str) -> dict:
+    def run(self, text: str) -> "CarePlan":
         """
         Run the full pipeline on the input text.
 
