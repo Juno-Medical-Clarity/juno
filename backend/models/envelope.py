@@ -1,39 +1,43 @@
-"""SimplifyOutput envelope — top-level output shape for the simplify pipeline."""
+"""Internal care-plan envelope for pipeline output composition."""
 
-from dataclasses import dataclass
+from typing import Any
+
+from pydantic import field_serializer, field_validator
 
 from .base import JsonModel
-from .care_plan import SimplifiedCarePlan
+from .care_plan import CarePlan
 from .grading import Grading
 from .input import Input
 from .metrics import Metrics
 
 
-@dataclass
-class SimplifyOutput(JsonModel):
-    """Top-level output envelope for the simplify pipeline.
-
-    Wraps all pipeline outputs (metrics, input, grading, simplified_care_plan)
-    into a single serialisable structure matching PRD §5 "After" shape.
-    """
+class CarePlanInternal(JsonModel):
+    """Internal composite of care plan, metrics, input, grading, and scores."""
 
     metrics: Metrics
     input: Input
     grading: Grading
-    simplified_care_plan: SimplifiedCarePlan
+    care_plan: CarePlan
+    before_score: dict | None = None
+    after_score: dict | None = None
 
-    def to_dict(self) -> dict:
-        return {
-            "metrics": self.metrics.to_dict(),
-            "input": self.input.to_dict(),
-            "grading": self.grading.to_dict(),
-            "simplified_care_plan": self.simplified_care_plan.to_dict(),
-        }
+    @field_validator("care_plan", mode="before")
+    @classmethod
+    def _validate_care_plan(cls, value: Any) -> CarePlan:
+        if isinstance(value, CarePlan):
+            return value
+        if isinstance(value, dict):
+            return CarePlan.from_dict(value)
+        return value
+
+    @field_serializer("care_plan")
+    def _serialize_care_plan(self, value: CarePlan) -> dict:
+        return value.to_dict()
 
 
 def is_legacy_shape(data: dict) -> bool:
-    """Return True if *data* lacks the new-style 'simplified_care_plan' top-level key.
+    """Return True if *data* lacks the new-style 'care_plan' top-level key.
 
     Used to distinguish legacy flat outputs from the structured envelope format.
     """
-    return "simplified_care_plan" not in data
+    return "care_plan" not in data
