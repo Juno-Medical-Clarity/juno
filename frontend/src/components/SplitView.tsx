@@ -23,7 +23,7 @@ export default function SplitView({ savedId, simplifiedContent, onClose }: Split
   return (
     <div className="split-view-overlay">
       <div className="split-view-toolbar">
-        <span className="split-view-title">Compare: Original vs Simplified</span>
+        <span className="split-view-title">Compare: Original vs Care Plan</span>
         <button className="split-view-close" onClick={onClose}>✕ Close</button>
       </div>
       <div className="split-view-panels">
@@ -40,7 +40,7 @@ export default function SplitView({ savedId, simplifiedContent, onClose }: Split
           )}
         </div>
         <div className="split-view-panel">
-          <div className="split-view-panel-header">Simplified Output</div>
+          <div className="split-view-panel-header">Care Plan</div>
           <div className="split-view-simplified">
             {simplifiedContent}
           </div>

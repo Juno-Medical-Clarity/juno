@@ -35,7 +35,7 @@ export default function LoginPage() {
           <div>
             <p className="eyebrow">Juno</p>
             <h1>Sign in</h1>
-            <p className="auth-copy">Use your Juno account to simplify medical notes.</p>
+            <p className="auth-copy">Use your Juno account to create patient care plans.</p>
           </div>
 
           <label className="auth-field">

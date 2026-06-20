@@ -19,11 +19,12 @@ import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
 import { CARE_PLAN_API_PATH, DEFAULT_VERSION } from '../../config';
 import type { VersionRouteState } from '../../router';
+import { logger } from '../../utils/logger';
 
 const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
   { id: 2, label: 'Finding difficult and medical terms', description: 'Matching terms from AHRQ and medical dictionary', status: 'waiting' },
-  { id: 3, label: 'Simplifying language', description: 'Rewriting to a 6th-grade reading level', status: 'waiting' },
+  { id: 3, label: 'Rewriting to plain language', description: 'Rewriting to a 6th-grade reading level', status: 'waiting' },
   { id: 4, label: 'Clarifying actions and numbers', description: 'Active voice, plain action verbs, clear instructions', status: 'waiting' },
   { id: 5, label: 'Organizing your care plan', description: 'Structuring into sections that are easy to follow', status: 'waiting' },
 ];
@@ -153,6 +154,11 @@ export default function CarePlanPage() {
           throw new Error(message || `Server error: ${response.status}`);
         }
 
+        const sessionId = response.headers.get('X-Session-Id');
+        if (sessionId) logger.setSessionId(sessionId);
+        const traceId = response.headers.get('X-Trace-Id');
+        if (traceId) logger.info('care_plan_request', { traceId });
+
         const reader = response.body!.getReader();
         const decoder = new TextDecoder();
         let buffer = '';
@@ -257,6 +263,11 @@ export default function CarePlanPage() {
         throw new Error(message || `Server error: ${response.status}`);
       }
 
+      const sessionId = response.headers.get('X-Session-Id');
+      if (sessionId) logger.setSessionId(sessionId);
+      const traceId = response.headers.get('X-Trace-Id');
+      if (traceId) logger.info('care_plan_request', { traceId });
+
       const reader = response.body!.getReader();
       const decoder = new TextDecoder();
       let buffer = '';
@@ -318,7 +329,7 @@ export default function CarePlanPage() {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = 'simplified-document.json';
+    anchor.download = 'care-plan.json';
     anchor.click();
     URL.revokeObjectURL(url);
   };
@@ -448,7 +459,7 @@ export default function CarePlanPage() {
                 {error && <div className="error-box">⚠ {error}</div>}
 
                 <button className="cta-btn" disabled={!canSubmit} onClick={handleSubmit}>
-                  Simplify My Note →
+                  Create My Care Plan →
                 </button>
               </div>
               <PresetDataCard onSelectionChange={setPresetDataSelection} />
@@ -462,7 +473,7 @@ export default function CarePlanPage() {
           {appState === 'processing' && (
             <section className="progress-section">
               <div className="glass-card" style={{ padding: '32px' }}>
-                <p className="section-title">Simplifying your note...</p>
+                <p className="section-title">Creating your care plan…</p>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '-8px', marginBottom: '16px' }}>
                   Finding medical terms, rewriting to plain language, and organizing your care plan.
                 </p>
@@ -502,7 +513,7 @@ export default function CarePlanPage() {
           {appState === 'result' && result && (
             <section className="result-section">
               <div className="result-header">
-                <h2 className="result-title">Your Simplified Note</h2>
+                <h2 className="result-title">Your Care Plan</h2>
                 <span className="deleted-note">🔒 Deleted from servers</span>
                 {activeSavedId && result && outputHasInputPdf(result) && (
                   <button
@@ -589,7 +600,7 @@ export default function CarePlanPage() {
                     fontFamily: 'Inter, sans-serif',
                   }}
                 >
-                  ← Simplify another note
+                  ← Create another care plan
                 </button>
               </div>
 

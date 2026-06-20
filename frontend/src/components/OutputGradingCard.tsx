@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { API_URL } from '../api/firebase';
 import { authenticatedFetch } from '../api/apiClient';
 import type { CarePlanInternal, Grading } from '../types/envelope';
+import { logger } from '../utils/logger';
 
 interface OutputGradingCardProps {
   output: CarePlanInternal;
@@ -34,6 +35,9 @@ export default function OutputGradingCard({ output, onGraded }: OutputGradingCar
         const msg = await res.text();
         throw new Error(msg || `Server error: ${res.status}`);
       }
+
+      const sessionId = res.headers.get('X-Session-Id');
+      if (sessionId) logger.setSessionId(sessionId);
 
       const { grading } = await res.json();
       onGraded(grading);
