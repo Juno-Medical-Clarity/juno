@@ -24,7 +24,7 @@ export default function OutputGradingCard({ output, onGraded }: OutputGradingCar
             clarified_text: output.simplified_care_plan.raw?.clarified_text ?? '',
           };
 
-      const res = await authenticatedFetch(`${API_URL}/simplify/grade`, {
+      const res = await authenticatedFetch(`${API_URL}/care_plan/grade`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),

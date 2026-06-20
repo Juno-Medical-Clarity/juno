@@ -8,7 +8,7 @@ export interface DatasetFileContent {
 }
 
 export async function listDatasets(): Promise<Dataset[]> {
-  const res = await authenticatedFetch(`${API_URL}/simplify/datasets`);
+  const res = await authenticatedFetch(`${API_URL}/care_plan/datasets`);
   if (!res.ok) throw new Error(`Failed to list datasets: ${res.status}`);
   const json = await res.json();
   return json.datasets as Dataset[];
@@ -23,7 +23,7 @@ export async function getDatasetFileContent(
   const encodedInput = encodeURIComponent(input);
   const encodedFilename = encodeURIComponent(filename);
   const res = await authenticatedFetch(
-    `${API_URL}/simplify/datasets/${encodedGroup}/${encodedInput}/${encodedFilename}`,
+    `${API_URL}/care_plan/datasets/${encodedGroup}/${encodedInput}/${encodedFilename}`,
   );
   if (!res.ok) throw new Error(`Failed to get dataset file: ${res.status}`);
   return res.json();
@@ -35,7 +35,7 @@ export async function runBatch(
   gradingEnabled: boolean,
   signal?: AbortSignal,
 ): Promise<Response> {
-  return authenticatedFetch(`${API_URL}/simplify/batch`, {
+  return authenticatedFetch(`${API_URL}/care_plan/batch`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

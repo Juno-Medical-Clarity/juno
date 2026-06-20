@@ -16,20 +16,20 @@ export interface SavedOutput extends SavedOutputMeta {
 }
 
 export async function listSavedOutputs(): Promise<SavedOutputMeta[]> {
-  const res = await authenticatedFetch(`${API_URL}/simplify/saved`);
+  const res = await authenticatedFetch(`${API_URL}/care_plan/saved`);
   if (!res.ok) throw new Error(`Failed to list saved outputs: ${res.status}`);
   const json = await res.json();
   return json.outputs as SavedOutputMeta[];
 }
 
 export async function getSavedOutput(id: string): Promise<SavedOutput> {
-  const res = await authenticatedFetch(`${API_URL}/simplify/saved/${id}`);
+  const res = await authenticatedFetch(`${API_URL}/care_plan/saved/${id}`);
   if (!res.ok) throw new Error(`Failed to get saved output: ${res.status}`);
   return res.json();
 }
 
 export async function renameSavedOutput(id: string, name: string): Promise<void> {
-  const res = await authenticatedFetch(`${API_URL}/simplify/saved/${id}`, {
+  const res = await authenticatedFetch(`${API_URL}/care_plan/saved/${id}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name }),
@@ -38,14 +38,14 @@ export async function renameSavedOutput(id: string, name: string): Promise<void>
 }
 
 export async function deleteSavedOutput(id: string): Promise<void> {
-  const res = await authenticatedFetch(`${API_URL}/simplify/saved/${id}`, {
+  const res = await authenticatedFetch(`${API_URL}/care_plan/saved/${id}`, {
     method: 'DELETE',
   });
   if (!res.ok) throw new Error(`Failed to delete: ${res.status}`);
 }
 
 export async function getInputPdfUrl(id: string): Promise<string> {
-  const res = await authenticatedFetch(`${API_URL}/simplify/saved/${id}/input-pdf-url`);
+  const res = await authenticatedFetch(`${API_URL}/care_plan/saved/${id}/input-pdf-url`);
   if (!res.ok) throw new Error(`Failed to get PDF URL: ${res.status}`);
   const json = await res.json();
   return json.url as string;
