@@ -10,9 +10,10 @@ every PR to `main`.
   dataclass `to_dict`/`from_dict`. **Assumption:** SP1 keeps `JsonModel`/`VersionedJsonModel` as the
   base names (current code uses these); if SP1 renames them, update imports in `tests/models/`.
 - **SP2** — consolidated care-plan route. Tests must target **`/care_plan`** (and whatever the final
-  blueprint/handler names are), NOT `/simplify`. **Assumption:** the route mounts at `/care_plan`
-  with a single SSE handler replacing `simplify.py` + `simplify_v1_1.py` + `simplify_v1_2.py`. Where
-  the exact path is uncertain it is flagged below and in Open Questions.
+  blueprint/handler names are), NOT `/simplify`. The route mounts at `/care_plan` with a single SSE
+  handler replacing `simplify.py` + `simplify_v1_1.py` + `simplify_v1_2.py`.
+  **[RESOLVED — owner: SP2 route paths are LOCKED.]** Use the SP2-defined paths exactly as SP2 defines
+  them; do not re-litigate or change them. The assumed `/care_plan*` paths are settled.
 - **SP3** — utils deleted/merged. **Do NOT write tests for `vertex_ai`, `ocr`, `storage`** (deleted).
   `pdf_extract` + `pdf_merge` → merged into a single `pdf` util; `gemini_client` → `llm`/`gemini`;
   `firebase` helper consolidated. Tests target the merged modules.
@@ -65,10 +66,14 @@ land in `main` unverified.
 
 - **No Playwright / e2e / browser tests** (owner: "non-playwright testing, just basic testing").
 - **No live external services in CI** — Gemini/Vertex, Firebase/Firestore, and GCS are all mocked or
-  faked; CI uses no real credentials (see §4 mocking strategy + §9).
-- **Not rewriting source.** This is planning + test/CI only. (And during implementation, SP6 only
-  adds/moves test files and one workflow — no source edits.)
-- **Not enforcing a hard coverage % threshold initially** (proposed but optional — see §9).
+  faked; CI uses no real credentials (see §4 mocking strategy + §9). **Unit tests only — no live
+  integration tests now** (RESOLVED §9.2). The `tests/integration/` folder holds mock-based,
+  multi-layer tests (firebase patched, no network), not live-service tests.
+- **Not rewriting source.** This is planning + test/CI only. (SP6 only adds/moves/rewrites test files,
+  one workflow, and dev-dep/config — no app-logic source edits. The import-style standardization
+  RESOLVED §9.4 is the one exception: it normalizes import statements across source + tests to the
+  `8095933` convention.)
+- **Not enforcing a hard coverage % threshold** — coverage is REPORTING ONLY (RESOLVED §9.3).
 - **No load/perf testing.**
 
 ## 4. Architecture Decisions
@@ -216,11 +221,19 @@ def fake_firestore(monkeypatch):
     return db
 ```
 
-> Existing tests are `unittest.TestCase` style and run fine under pytest as-is — the move does NOT
-> require rewriting them to function style. New tests SHOULD use pytest function style + these
-> fixtures. (One mechanical follow-up: the `from backend.models...` vs `from models...` import styles
-> are inconsistent across current files; standardize on one in `conftest`'s sys.path setup so both
-> resolve — see Open Questions.)
+> **[RESOLVED — owner: convert ALL tests to pytest style.]** Existing tests are `unittest.TestCase`
+> style. They are **all converted** to pytest function style (no `unittest.TestCase` subclasses
+> remain): `setUp` → fixtures, `self.assertEqual(a, b)` → `assert a == b`, `assertRaises` →
+> `pytest.raises`, etc. New and converted tests use the shared fixtures (`app`, `client`, `auth_ok`,
+> `fake_firestore`, `parse_sse`).
+>
+> **[RESOLVED — owner: import-style standard.]** Standardize the whole codebase/tests on the
+> convention adopted in commit `8095933` ("Cors issue fix", which fixed a container/deploy import
+> failure): import from the **ROOT package path** — `from models.X import …` and `from utils.X import …`
+> (NEVER `from backend.models.X`/`from backend.utils.X`) — and use **relative imports within a
+> package** (e.g. inside `backend/models/envelope.py`: `from .base import JsonModel`). `conftest.py`
+> puts `BACKEND_DIR` on `sys.path` so `models.*`/`utils.*` resolve. All `from backend.…` imports in
+> tests are rewritten to this convention.
 
 ### 4.4 Testing approach for SSE-streaming routes
 
@@ -265,9 +278,17 @@ is emitted rather than a 500 with a half-stream.
 | **Firebase app init** (`config.initialize_firebase`) | `@patch("config.initialize_firebase", return_value=None)` — already used in `test_container_startup.py`. |
 | **Code-markers sink** (SP4) | Construct the marker with an `InMemorySink`; assert `sink.events` contains the expected `{name, duration_ms, success, dimensions}` dicts. No external sink. |
 
-**Net:** CI needs **no GCP/Firebase/Gemini credentials at all.** No Firebase emulator required (Option
-B in Open Questions if we later want it). Set dummy env vars in CI so any import-time config read
-doesn't crash (e.g. `GEMINI_API_KEY=test`, `GCP_PROJECT_ID=test`, `FIRESTORE_DATABASE_ID=(default)`).
+**Net:** CI needs **no GCP/Firebase/Gemini credentials at all.** Set dummy env vars in CI so any
+import-time config read doesn't crash (e.g. `GEMINI_API_KEY=test`, `GCP_PROJECT_ID=test`,
+`FIRESTORE_DATABASE_ID=(default)`).
+
+> **[RESOLVED — owner: unit tests only; mock/stub all external services; NO live calls and NO
+> integration tests now.]** Gemini/Vertex and Firestore are always mocked/stubbed — tests make **no**
+> real API/network calls. Live integration tests are explicitly out of scope for now (may revisit
+> later).
+> **[RESOLVED — owner: Firebase emulator NOT required now]** (may add later). Pure mocks only; no
+> emulator step in CI.
+> **[RESOLVED — owner: no CI secrets now]** (maybe later). No secret-dependent CI steps.
 
 ### 4.6 Frontend test stack
 
@@ -300,10 +321,15 @@ SDK. `fetch` is stubbed via `vi.spyOn(globalThis, 'fetch')`.
 
 New workflow `.github/workflows/ci.yml`, trigger `pull_request` → `main`, two parallel jobs
 (`backend`, `frontend`) matching existing-workflow conventions (Ubuntu runner, `actions/checkout@v4`,
-Node 20 + `npm ci` + npm cache keyed on `frontend/package-lock.json` per `deploy-frontend.yml`).
+`npm ci` + npm cache keyed on `frontend/package-lock.json` per `deploy-frontend.yml`).
 Backend job adds `actions/setup-python@v5` (Python **3.12**, matching the repo's `.venv/.../python3.12`)
 with pip cache. Full sample YAML in §7 / TASKS Task 9. Concurrency-cancel stale runs per branch. No
 secrets needed — all external services mocked; only dummy env vars set inline.
+
+> **[RESOLVED — owner: use Node 24 in CI.]** The owner repeatedly sees GitHub Actions' "Node.js 20 is
+> deprecated" warning (actions/checkout@v4, google-github-actions/auth@v2, deploy-cloudrun@v2,
+> setup-gcloud@v2 run on the Node 24 runtime). Target **Node 24** in `ci.yml`'s `actions/setup-node@v4`
+> (`node-version: '24'`). Python stays **3.12**.
 
 ## 5. API Change Summary
 
@@ -383,38 +409,53 @@ Test-only additions (no app source changes). Plan:
 
 ## 8. Manual Intervention Required From You
 
-1. **Enable branch protection on `main`** (GitHub → Settings → Branches → Add rule for `main`):
-   require the **CI** status checks (`backend` and `frontend` jobs from `ci.yml`) to pass before merge,
-   and require branches be up to date. **This required-check toggle is a GitHub setting a human must
-   flip — the workflow file alone does not enforce it.** (Tip: the check names only appear in the
-   dropdown after `ci.yml` has run at least once on a PR, so merge `ci.yml` first, then enable.)
-2. **No CI secrets needed** for tests (all external services mocked). Confirm we do **not** want CI to
-   run against real Firebase/Gemini — if you ever do, that requires adding `GEMINI_API_KEY` /
-   `firebase-service-account` secrets and is out of scope here.
-3. **Confirm Firebase emulator is NOT required** (default plan = pure mocks). Flip only if you want
-   integration tests against a real Firestore surface (adds `firebase-tools` + emulator step to CI).
-4. **Confirm Python 3.12 / Node 20** are the CI target versions (matched from the repo venv and
-   `deploy-frontend.yml`). Add a `requirements-dev.txt` (pytest, pytest-cov, reportlab, pypdf) or
-   confirm test deps live in `requirements.txt`.
+1. **Enable branch protection on `main`** — **[RESOLVED: DONE. Owner has already enabled branch
+   protection on `main`.]** Kept here for reference as an already-completed step. Once `ci.yml` has run
+   at least once on a PR, the `backend` / `frontend` check names appear in the GitHub Settings →
+   Branches dropdown and can be marked **required** (the protection rule itself is in place). No
+   further human action needed beyond selecting the new check names after the first CI run.
+2. **No CI secrets needed** — **[RESOLVED: confirmed, no secrets now (maybe later).]** All external
+   services are mocked; there are **no secret-dependent CI steps**. (If real Firebase/Gemini in CI is
+   ever wanted, that adds `GEMINI_API_KEY` / `firebase-service-account` secrets and is out of scope.)
+3. **Firebase emulator** — **[RESOLVED: NOT required now (maybe later).]** Default plan = pure mocks;
+   no emulator step in CI.
+4. **CI target versions** — **[RESOLVED: Python 3.12 + Node 24.]** Python 3.12 (repo venv); Node 24
+   (resolves the recurring "Node.js 20 is deprecated" Actions warning).
+5. **Test-dependency location** — **[RESOLVED (2026-06-20): separate `backend/requirements-dev.txt`.]**
+   Test/dev-only deps (`pytest`, `pytest-cov`, `reportlab`, `pypdf`) live in a new
+   `backend/requirements-dev.txt`, **not** in `backend/requirements.txt`. This keeps the Cloud Run
+   production image lean (test + PDF-generation deps are never shipped to prod). CI installs both
+   (`pip install -r requirements.txt -r requirements-dev.txt`); the deploy build installs only
+   `requirements.txt`.
 
-## 9. Open Questions
+## 9. Open Questions & Decisions
 
 1. **Final SP2 route paths.** Assumed `/care_plan`, `/care_plan/grade`, `/care_plan/batch`,
-   `/care_plan/saved`. If SP2 picks different names, route-test path strings need a one-line update.
+   `/care_plan/saved`.
+   **[RESOLVED — owner: SP2 route paths are LOCKED. Do not re-litigate or change them; proceed exactly
+   as SP2 defines. The assumed `/care_plan*` paths are settled.]**
 2. **Mocking Gemini/Vertex + Firestore in CI (no live creds).** Plan = monkeypatch SDK call sites +
-   `MagicMock` Firestore (§4.5). Alternative: Firebase emulator for closer-to-real Firestore — heavier,
-   only if integration realism is wanted. Decide per §8.3.
-3. **Coverage threshold.** Add `pytest-cov` + `--cov-fail-under=N` and a Vitest `coverage` gate, or
-   just report coverage without failing? Proposal: start reporting-only, ratchet a threshold later.
+   `MagicMock` Firestore (§4.5). Alternative: Firebase emulator.
+   **[RESOLVED — owner: mock/stub all external services; NO live calls and NO integration (live) tests
+   now (maybe later). Unit tests only. No Firebase emulator. No CI secrets.]**
+3. **Coverage threshold.** Add `--cov-fail-under=N` gate, or just report?
+   **[RESOLVED — owner: REPORTING ONLY for now — no enforced gate/threshold. Coverage is printed but
+   never fails the build.]**
 4. **Import-style standardization.** Current tests mix `from backend.models...` and `from models...`.
-   Pick one (proposal: `from models...`, with `BACKEND_DIR` on `sys.path`) so the conftest bootstrap
-   resolves both during the move. SP1 may settle this when it restructures the package.
-5. **Test data / fixtures.** Where do canonical sample care-plan dicts + a sample PDF live?
-   Proposal: `tests/fixtures/` shared across model/route/pipeline tests (avoids each test rebuilding
-   FakePipeline outputs by hand).
-6. **`unittest` vs pytest style.** Existing files are `unittest.TestCase` and run under pytest fine.
-   Leave them as-is on move (low-risk) and write new tests in pytest function style? Or convert all?
-   Proposal: leave existing, write new in pytest style.
+   **[RESOLVED — owner: standardize on the convention from commit `8095933`: ROOT package path
+   `from models.X` / `from utils.X` (NOT `backend.models.X`/`backend.utils.X`), and RELATIVE imports
+   within a package (`from .base import JsonModel`). Adopt/streamline across codebase + tests; rewrite
+   all `from backend.…` test imports. A dedicated task enforces/verifies this (incl. the
+   `test_container_startup.py` added in that commit, which catches the container/deploy import break
+   this convention fixes).]**
+5. **Test data / fixtures.** `tests/fixtures/` shared across model/route/pipeline tests.
+   **[RESOLVED — owner: approach is good — keep. Canonical sample dicts + sample PDF live in
+   `tests/fixtures/`.]**
+6. **`unittest` vs pytest style.**
+   **[RESOLVED — owner: CONVERT ALL tests to pytest function style. No `unittest.TestCase` subclasses
+   remain.]**
 7. **SSE in CI determinism.** Flask `test_client` buffers the full stream, so `parse_sse` is reliable;
-   no async timing involved. Confirm SP2's final route still uses Flask's generator-based SSE (not an
-   external async server) so this holds.
+   no async timing involved.
+   **[RESOLVED — owner: yes, use the proposed deterministic approach (buffered `test_client` +
+   `parse_sse`, FakePipeline injection so no LLM call). SP2's route uses Flask generator-based SSE, so
+   this holds.]**

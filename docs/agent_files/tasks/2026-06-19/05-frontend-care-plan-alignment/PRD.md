@@ -31,9 +31,9 @@ backend is collapsing to a single `care_plan` route running only the v1.2 pipeli
 - **`appointment` naming.** The owner wants `appointment`/`AppointmentNote` → `care_plan` across the
   frontend (the same intent as backend `appointment_id → care_plan`):
   `components/AppointmentNoteV12View.tsx`, the `AppointmentNote` interface in `types/simplify.ts`, and
-  the `import type { AppointmentNote }` in `types/envelope.ts`. (Note: the wire field `doc_type:
-  "appointment_note"` is the LLM's document-classification value and is **owned by SP1's model**, not
-  renamed here — see §4 and §9.)
+  the `import type { AppointmentNote }` in `types/envelope.ts`. The wire field `doc_type:
+  "appointment_note"` **is also changed → `"care_plan"`** (resolved; SP1 owns the backend/LLM side, SP5
+  updates the frontend literal in lockstep — see §4.6 and §9.4).
 
 - **Correlation headers are wired but inert.** `utils/logger.ts` exposes `setSessionId()`, but
   **nothing ever calls it** (verified). The envelope already carries `metrics.session_id` (rendered as
@@ -42,14 +42,14 @@ backend is collapsing to a single `care_plan` route running only the v1.2 pipeli
 
 ## 2. Goals
 
-1. **Remove the obsolete version surface.** Delete the three dead per-version pages and decide the
-   fate of the version chooser. After SP2 there is exactly one pipeline (`v1-2`); the UI should stop
-   presenting version as a user choice.
+1. **Remove the obsolete version surface.** Delete the three dead per-version pages and the dynamic
+   version chooser, but keep a static `VersionsPage` (owner extends it with future versions). After SP2
+   there is exactly one pipeline (`v1-2`); the UI stops presenting version as a user *choice* (§4.2).
 2. **Rename `simplify` → `care_plan`** across HTTP path strings, the path constant, the route
    folder/page/component name, and `simplify`-flavoured TS symbols — with a complete old→new map (§4).
 3. **Consume the new envelope cleanly.** Keep the app working against `CarePlanInternal.to_dict()`.
-   Handle the inner-key ambiguity (`simplified_care_plan` vs `care_plan`) so the frontend works
-   whether SP1/SP2 keep the legacy key (Phase 1 default) **or** flip it to `care_plan`.
+   The inner key is **`care_plan`** — the single decided key (no `simplified_care_plan`, no alias). Read
+   `output.care_plan` everywhere (§4.5).
 4. **Rename `appointment`/`AppointmentNote` → `care_plan`** in frontend component/type names.
 5. **Read correlation headers.** After each `/care_plan` response, read `X-Session-Id` (and
    `X-Trace-Id` if SP4 exposes it) and feed them to `logger.setSessionId()` / `logger`.
@@ -63,8 +63,10 @@ backend is collapsing to a single `care_plan` route running only the v1.2 pipeli
   the file/symbol and its prop/type imports.
 - **Not** writing the test suite — SP6 owns Vitest/RTL. This PRD only flags which pages/components/
   utils need tests after the change (§7).
-- **Not** changing the backend, the envelope wire keys, or the SSE event shapes — SP1/SP2 own those.
-  SP5 only *consumes* them.
+- **Not** changing the backend, the envelope wire-key *structure*, or the SSE event shapes — SP1/SP2
+  own those. SP5 only *consumes* them. (The `doc_type` literal value `appointment_note → care_plan` is
+  the one coordinated exception, owned by SP1 on the backend/LLM side; SP5 just matches the FE literal —
+  §4.6.)
 - **Not** building the `X-Trace-Id` plumbing on the backend — SP4 owns whether/how that header is
   emitted. SP5 reads it defensively if present.
 - **Not** migrating Firestore documents or the saved-output legacy-shape handling
@@ -83,30 +85,37 @@ backend is collapsing to a single `care_plan` route running only the v1.2 pipeli
 **Verification before deleting:** `grep -rn "V1Page\|V1_1Page\|V1_2Page" frontend/src` returns only
 self-references plus the CSS import (`V1_1Page.css`, handled in §4.3). Confirmed at planning time.
 
-### 4.2 Version-chooser decision (OPEN — see §9, default proposed here)
+### 4.2 Version-chooser decision (RESOLVED — see §9.2)
 
-Only `v1-2` survives. Proposed default: **collapse version to a non-user-facing constant; remove the
-chooser UI but keep `VERSIONS` as a single-entry array for labels/metadata.**
+Only `v1-2` survives. **Owner decision: DELETE the dynamic version chooser, but KEEP a static
+`VersionsPage`.** The owner will add more pipeline versions later (next is e.g. `V1_3`), so the page
+must be structured for trivial extension — a static, hand-maintained list that grows by appending an
+entry. Keep exactly as much scaffolding as that requires; no dynamic selection logic.
 
 - `config.ts`: reduce `VERSION_IDS` / `VERSIONS` to the single `v1-2` entry; keep
-  `DEFAULT_VERSION = 'v1-2'`. The `version` form field is still sent (value always `'v1-2'`) so the
-  backend contract is unchanged and SP2's `ALLOWED_VERSIONS = {"v1-2"}` accepts it.
+  `DEFAULT_VERSION = 'v1-2'` as the constant the submit form sends. The `version` form field is still
+  sent (value always `'v1-2'`) so the backend contract is unchanged and SP2's
+  `ALLOWED_VERSIONS = {"v1-2"}` accepts it. `VERSIONS` stays as a small static array — this is the
+  list `VersionsPage` renders and the owner extends when V1_3 lands (append a second entry).
 - `ConfigurationCard.tsx`: **remove the version `<select>`** (a one-option dropdown is dead UX); keep
-  the "Enable grading" checkbox. The component keeps the `version`/`onVersionChange` props as a no-op
-  for now **or** drops them (small judgement call — flagged in §9).
-- `VersionsPage.tsx` + `VersionDetailPage.tsx` + the `/versions` and `/version/:id` routes in
-  `App.tsx` + the "Versions" link in `NavBar.tsx`: **remove** (recommended — they describe pipelines
-  that no longer exist). Alternative: keep `VersionsPage` as a read-only "How it works" page. **Owner
-  decision — §9.**
+  the "Enable grading" checkbox. **Drop** the `version` / `onVersionChange` props entirely (nothing is
+  in production — no need to keep no-op props; the page sends `DEFAULT_VERSION` directly).
+- `VersionsPage.tsx`: **KEEP** as a static "How it works / versions" page that maps over
+  `config.ts`'s `VERSIONS` array. No dynamic chooser, no per-version pipeline routing — just a
+  read-only list. Keep the `/versions` route in `App.tsx` and the "Versions" link in `NavBar.tsx`.
+  Structure so adding V1_3 is a one-line append to `VERSIONS`.
+- `VersionDetailPage.tsx` + the `/version/:id` route: **DELETE** — the per-version *detail/chooser*
+  routing describes the dynamic chooser the owner is removing. (If a per-version detail view is wanted
+  later, the owner re-adds it alongside V1_3; not built now.)
 - `router.tsx` (`versionPath`, `VersionRouteState`) + `utils/outputVersion.ts`
   (`outputRouteVersionId`): `versionPath` and `outputRouteVersionId` exist only to route *between*
-  version pages. With one page, `versionPath` is unused after the dead pages are deleted (only
-  `SimplifyPage` reads `VersionRouteState.output`, never calls `versionPath`).
-  - **Keep:** `VersionRouteState` (still used by `SimplifyPage` for the saved/split-view → result
+  the deleted dynamic version pages.
+  - **Keep:** `VersionRouteState` (still used by `CarePlanPage` for the saved/split-view → result
     hand-off).
   - **Delete:** `versionPath()` (and its `router.test.ts`) and `utils/outputVersion.ts` +
-    `outputVersion` usages — all callers are the deleted pages. Verified: after deleting the three
-    pages, `grep versionPath`/`outputRouteVersionId` returns no live references.
+    `outputVersion` usages — all callers are the deleted dynamic pages. Verified: after deleting
+    `V1*Page` and `VersionDetailPage`, `grep versionPath`/`outputRouteVersionId` returns no live
+    references.
 
 ### 4.3 `V1_1Page.css` (shared stylesheet — must be preserved)
 
@@ -150,73 +159,57 @@ app's single working surface).
 | Type module | `types/simplify.ts` | `types/carePlan.ts` |
 | Normalizer fn | `normalizeSimplifyOutput` | `normalizeCarePlanOutput` |
 | Normalizer file | `utils/normalizeOutput.ts` | `utils/normalizeOutput.ts` (keep file name; rename fn) |
-| Envelope alias type | `SimplifyOutput` | `CarePlanInternal` (keep `SimplifyOutput` as a deprecated re-export alias for one cycle — mirrors SP1's backend alias) |
+| Envelope type | `SimplifyOutput` | `CarePlanInternal` (HARD RENAME — **no** deprecated alias; nothing is in production) |
 | Component file | `components/AppointmentNoteV12View.tsx` | `components/CarePlanView.tsx` |
 | Component symbol | `AppointmentNoteV12View` | `CarePlanView` |
 | Interface | `AppointmentNote` (in `types/simplify.ts`) | `CarePlanContent` (in `types/carePlan.ts`) |
 
-**UI copy** (cosmetic, non-blocking; align language with "care plan"): "Simplify My Note →",
-"Your Simplified Note", "Simplify another note", "Simplifying your note…", and the `<title>` /
-download filenames (`simplified-document.json`) can be reworded to "care plan" framing. Flagged in §9
-as owner copy review — not required for correctness.
+**UI copy** (RESOLVED — owner approves rewording; see §8.5/§9.5): reword user-facing strings to
+"care plan" framing: "Simplify My Note →" → "Create My Care Plan →", "Your Simplified Note" →
+"Your Care Plan", "Simplify another note" → "Create another care plan", "Simplifying your note…" →
+"Creating your care plan…", and the `<title>` / download filename `simplified-document.json` →
+`care-plan.json`. See §8.5 for the full copy map.
 
 > **Renames are mechanical but wide.** Do them with a symbol-rename refactor (or careful
 > find-replace + `tsc --noEmit`) so every import site updates. After deleting the dead pages (§4.1)
 > the only live consumers are `App.tsx`, the renamed page, `OutputGradingCard.tsx`, `SplitView`
 > (receives the rendered view as a child), and the `api/*` modules.
 
-### 4.5 Envelope consumption + the inner-key ambiguity (the important part)
+### 4.5 Envelope consumption — single decided inner key `care_plan` (RESOLVED, no ambiguity)
 
-**What SP1/SP2 actually decided (verified in their PRDs):**
-- The envelope class `SimplifyOutput` → `CarePlanInternal`. **JSON wire keys are unchanged**:
-  `{ metrics, input, grading, simplified_care_plan }`.
-- SP1 keeps the **serialized inner key as `simplified_care_plan`** via a Pydantic
-  `serialization_alias="simplified_care_plan"` while the Python attribute becomes `care_plan`, and
-  accepts **both** keys on input via `validation_alias=AliasChoices("care_plan",
-  "simplified_care_plan")`.
-- SP2's default is **keep `simplified_care_plan` in Phase 1** (wire stability); flipping the wire key
-  to `care_plan` is explicitly deferred to "a later phase, frontend in lockstep."
+**Owner decision (RESOLVED — see §9.1): there is NO inner-key ambiguity and NO alias.** The single
+decided inner key is **`care_plan`** ("care_plan everywhere"). FE and BE deploy in lockstep; nothing
+is in production, so there is no `simplified_care_plan` legacy key to support and no dual-accept
+aliasing to mirror. SP1/SP2 emit `care_plan`; SP5 reads `care_plan`.
 
-**Therefore SP5's stance:** the response key the frontend reads **today** is `simplified_care_plan`.
-But to be robust to (a) old saved Firestore docs, (b) a future SP2 flip to `care_plan`, and (c) SP1's
-dual-accept aliasing, SP5 must read the inner care plan **key-agnostically**.
+**What the envelope is:**
+- The envelope type is `CarePlanInternal`. JSON wire keys: `{ metrics, input, grading, care_plan }`.
+- The inner care-plan key is **`care_plan`** — the only key. No `simplified_care_plan` reads, writes,
+  or fallbacks anywhere in the frontend.
 
-**Decision — centralize key access in the normalizer.** `normalizeCarePlanOutput` (formerly
-`normalizeSimplifyOutput`) becomes the single place that resolves the inner key, and it always
-produces an envelope with a stable internal key. Two sub-options:
+**Decision — internal field is `care_plan`.** The TS `CarePlanInternal` type carries
+`care_plan: SimplifiedCarePlan`. All consumers (`CarePlanView`, `buildPdfHtml`, `OutputGradingCard`,
+`CarePlanPage`) read `output.care_plan`. `normalizeCarePlanOutput` (formerly `normalizeSimplifyOutput`)
+returns the envelope with the inner field named `care_plan`:
 
-- **Option A (recommended, lowest churn): keep the internal field name `simplified_care_plan`** in the
-  TS `CarePlanInternal` type, and have the normalizer accept either wire key:
-
-  ```ts
-  // utils/normalizeOutput.ts
-  export function normalizeCarePlanOutput(raw: any): CarePlanInternal {
-    if (raw == null) throw new Error('normalizeCarePlanOutput: null/undefined output');
-    // Resolve inner key from either alias (SP1/SP2 may emit `care_plan` or `simplified_care_plan`).
-    const innerKey = 'simplified_care_plan' in raw ? 'simplified_care_plan'
-                   : 'care_plan' in raw ? 'care_plan'
-                   : null;
-    if (innerKey) {
-      const plan = raw[innerKey];
-      return { ...raw, simplified_care_plan: plan };   // normalize to one internal key
-    }
-    // ...existing legacy flat-shape branch unchanged...
+```ts
+// utils/normalizeOutput.ts
+export function normalizeCarePlanOutput(raw: any): CarePlanInternal {
+  if (raw == null) throw new Error('normalizeCarePlanOutput: null/undefined output');
+  if ('care_plan' in raw) {
+    return { ...raw, care_plan: raw.care_plan };
   }
-  ```
-  All downstream consumers (`CarePlanView`, `buildPdfHtml`, `OutputGradingCard`) keep reading
-  `output.simplified_care_plan`. When SP2 flips the wire key, **only the normalizer changes** (one
-  line already handles it). Net frontend churn for the flip: zero.
+  // ...existing legacy flat-shape branch unchanged (old saved Firestore docs)...
+}
+```
 
-- **Option B: rename the internal field to `care_plan`** in the TS type and everywhere it's read, with
-  the normalizer mapping `simplified_care_plan → care_plan`. This is the "fully consistent" end state
-  but touches every read site (`CarePlanView`, `SimplifyPage`/`CarePlanPage`, `buildPdfHtml`,
-  `OutputGradingCard`, `SplitView` call sites). **Defer to whenever SP2 flips the wire key** —
-  pairing the internal rename with the wire flip keeps it one coordinated change instead of two.
+The **legacy flat-shape branch stays** only for old *saved Firestore documents* (per §3 Non-Goals) —
+that is a pre-existing saved-output concern, not the live envelope key. The live envelope key is
+`care_plan`, full stop.
 
-**Recommendation:** ship **Option A now** (key-agnostic normalizer, internal name stays
-`simplified_care_plan`). It satisfies "consume the new envelope" and de-risks the future flip without
-a large rename. Note in §9 that the Option B internal rename is the natural follow-up when SP2 flips
-the wire key.
+> **No `simplified_care_plan` anywhere.** Do not add a `simplified_care_plan` alias, fallback, or
+> deprecated re-export. The earlier "keep `simplified_care_plan` for one phase / read key-agnostically"
+> plan is **withdrawn** by owner decision.
 
 **`metrics.session_id`** is unchanged and already read (rendered as "Request ID"); keep it.
 
@@ -227,12 +220,13 @@ the wire key.
   inline result + inside `SplitView`).
 - `types/simplify.ts`'s `AppointmentNote` interface → `CarePlanContent` in `types/carePlan.ts`. Update
   `types/envelope.ts`'s `import type { AppointmentNote }` accordingly. The derived
-  `SimplifiedCarePlan = Omit<CarePlanContent,'version'> & { version: string }` keeps its name (it's
-  already "care plan"-named) **or** is renamed to match Option A/B — keep as `SimplifiedCarePlan` for
-  now.
-- **Do NOT rename** `doc_type: 'appointment_note'` — that's the LLM document-classification literal,
-  owned by SP1's `CarePlan` model. Leave the field and its literal value as-is (§9 notes SP1 owns any
-  future change there).
+  `SimplifiedCarePlan = Omit<CarePlanContent,'version'> & { version: string }` keeps its name (it is
+  already "care plan"-named and is the inner type of the `care_plan` field).
+- **CHANGE `doc_type: 'appointment_note'` → `doc_type: 'care_plan'`** (RESOLVED — see §9.4). The owner's
+  "appointment → care_plan everywhere" intent **does** apply to this wire literal; it is NOT left
+  unchanged. SP1 owns the backend `CarePlan` model + LLM-prompt side of this change; SP5 updates the
+  frontend type literal to `'care_plan'` to match. Coordinate so the FE literal and the SP1 model agree
+  (lockstep — nothing in production).
 
 ### 4.7 Correlation headers (`X-Session-Id` / `X-Trace-Id`)
 
@@ -253,18 +247,18 @@ fix. Prefer the **header** value; fall back to the envelope's `metrics.session_i
 "Request ID" display (the header is the correlation source of truth; the body value is the display
 value, and they should match).
 
-> **CORS caveat (manual — §8).** `X-Session-Id` / `X-Trace-Id` are non-simple headers; the browser
-> only exposes them to JS if the backend sends `Access-Control-Expose-Headers: X-Session-Id,
-> X-Trace-Id`. SP4/SP2 own the backend CORS config (there is an active `fixing-cors` branch). If those
-> headers aren't exposed, `response.headers.get(...)` returns `null` and the frontend silently falls
-> back to the body `session_id` — no crash, but no header correlation either.
+> **CORS (RESOLVED — §8.2).** `X-Session-Id` / `X-Trace-Id` are non-simple headers; the browser only
+> exposes them to JS if the backend sends `Access-Control-Expose-Headers: X-Session-Id, X-Trace-Id`.
+> **Owner decision: the backend WILL expose these headers** (SP4/SP2 CORS config; active `fixing-cors`
+> branch). SP5 still reads defensively — if a header is absent, `response.headers.get(...)` returns
+> `null` and the frontend falls back to the body `session_id` (no crash) — but the expected state is
+> headers present.
 
 ### 4.8 Router / Nav changes (summary)
 
-- `App.tsx`: import `CarePlanPage` (was `SimplifyPage`); remove `/versions` + `/version/:id` routes
-  and their imports (if version pages removed per §4.2/§9).
-- `NavBar.tsx`: remove the "Versions" `<Link to="/versions">` (if removed) — leaves "Juno" brand +
-  "+ New".
+- `App.tsx`: import `CarePlanPage` (was `SimplifyPage`); **keep** the `/versions` route (static
+  `VersionsPage`); **remove** the `/version/:id` route and the `VersionDetailPage` import (§4.2).
+- `NavBar.tsx`: **keep** the "Versions" `<Link to="/versions">` (static page survives).
 - `router.tsx`: keep `VersionRouteState`; remove `versionPath` (+ delete `router.test.ts` or replace
   with a SP6 test for whatever helper remains). `utils/outputVersion.ts` deleted.
 
@@ -292,7 +286,8 @@ changes — bodies and SSE event shapes are byte-identical; only **path strings*
 - `pages/v1/V1Page.tsx`, `pages/v1_1/V1_1Page.tsx`, `pages/v1_2/V1_2Page.tsx` (dead).
 - `utils/outputVersion.ts` (only the dead pages used `outputRouteVersionId`).
 - `router.test.ts` (tests the soon-deleted `versionPath`; SP6 replaces).
-- *(pending §9 owner call)* `pages/VersionsPage.tsx`, `pages/VersionDetailPage.tsx`.
+- `pages/VersionDetailPage.tsx` (dynamic per-version chooser routing — removed per §4.2).
+- **KEEP** `pages/VersionsPage.tsx` (static "versions / how it works" page — owner extends with V1_3).
 
 **MOVE / RENAME**
 - `pages/v1_1/V1_1Page.css` → `pages/care-plan/CarePlanPage.css` (live styles; keep contents).
@@ -301,27 +296,32 @@ changes — bodies and SSE event shapes are byte-identical; only **path strings*
 - `components/AppointmentNoteV12View.tsx` → `components/CarePlanView.tsx` (symbol `CarePlanView`).
 - `types/simplify.ts` → `types/carePlan.ts`; interface `AppointmentNote` → `CarePlanContent`.
 - `normalizeSimplifyOutput` → `normalizeCarePlanOutput` (file stays `utils/normalizeOutput.ts`).
-- `SimplifyOutput` type → `CarePlanInternal` (keep `SimplifyOutput` re-export alias one cycle).
+- `SimplifyOutput` type → `CarePlanInternal` (HARD RENAME — no re-export alias).
 
 **EDIT**
 - `config.ts`: rename `SIMPLIFY_API_PATH` → `CARE_PLAN_API_PATH = '/care_plan'`; collapse `VERSION_IDS`
-  / `VERSIONS` to the single `v1-2` entry; keep `DEFAULT_VERSION='v1-2'`.
-- `App.tsx`: import/render `CarePlanPage`; remove version routes + imports (per §9).
-- `NavBar.tsx`: remove "Versions" link (per §9).
+  to the single `v1-2` entry; keep `DEFAULT_VERSION='v1-2'`; **keep `VERSIONS` as a static array**
+  (single `v1-2` entry now; `VersionsPage` renders it and the owner appends V1_3 later — §4.2).
+  **Remove `VITE_DEFAULT_VERSION` usage** — the owner is removing the env var; `DEFAULT_VERSION`
+  becomes a plain `'v1-2'` constant (record this config change in the implementation `code.md` — §8.3).
+- `App.tsx`: import/render `CarePlanPage`; keep `/versions` route; remove `/version/:id` route +
+  `VersionDetailPage` import (§4.2/§4.8).
+- `NavBar.tsx`: **keep** the "Versions" link (static page survives).
 - `ConfigurationCard.tsx`: remove the version `<select>` + `VERSIONS` import; keep grading checkbox;
-  drop/neutralize `version`/`onVersionChange` props.
+  **drop** the `version`/`onVersionChange` props entirely (§4.2).
 - `api/datasets.ts`, `api/savedOutputs.ts`, `components/OutputGradingCard.tsx`: swap `/simplify*` →
   `/care_plan*` path strings (and use `CARE_PLAN_API_PATH` where a const fits).
-- `utils/normalizeOutput.ts`: rename fn; add the **key-agnostic inner-key resolution** (§4.5 Option A);
-  keep the legacy flat-shape branch.
+- `utils/normalizeOutput.ts`: rename fn; resolve the inner key as **`care_plan`** (the single decided
+  key — §4.5); keep the legacy flat-shape branch for old saved Firestore docs.
 - `utils/grading.ts`, `utils/buildPdfHtml.ts`: update type imports (`AppointmentNote`→`CarePlanContent`,
-  `types/simplify`→`types/carePlan`, `SimplifyOutput`→`CarePlanInternal`); no logic change.
+  `types/simplify`→`types/carePlan`, `SimplifyOutput`→`CarePlanInternal`) and any
+  `output.simplified_care_plan` reads → `output.care_plan`; no logic change.
 - `CarePlanPage.tsx` (renamed): use `CARE_PLAN_API_PATH`; render `CarePlanView`; call
-  `normalizeCarePlanOutput`; **add the `X-Session-Id`/`X-Trace-Id` header reads** after each fetch;
-  remove the now-defunct `?version=` mount effect + version-selection wiring (single version);
-  reword UI copy per §9 (optional).
-- `types/envelope.ts`: rename `SimplifyOutput`→`CarePlanInternal` (+alias); update the
-  `AppointmentNote`→`CarePlanContent` import; keep wire-key field `simplified_care_plan` (§4.5 A).
+  `normalizeCarePlanOutput`; read `output.care_plan`; **add the `X-Session-Id`/`X-Trace-Id` header
+  reads** after each fetch; remove the now-defunct `?version=` mount effect + version-selection wiring
+  (send `DEFAULT_VERSION` constant); **reword UI copy per §8.5**.
+- `types/envelope.ts`: rename `SimplifyOutput`→`CarePlanInternal` (no alias); update the
+  `AppointmentNote`→`CarePlanContent` import; inner field is `care_plan: SimplifiedCarePlan` (§4.5).
 
 **UNCHANGED (no edits)**
 - `Sidebar.tsx`, `SplitView.tsx`, `PresetDataCard.tsx`, `DatasetGroupRow.tsx`, `MedicalTerm.tsx`,
@@ -334,9 +334,9 @@ changes — bodies and SSE event shapes are byte-identical; only **path strings*
 
 After this sub-project, SP6 should add/adjust:
 
-- `utils/normalizeOutput.test.ts` — **extend**: assert key-agnostic resolution (input with
-  `care_plan` key, input with `simplified_care_plan` key, and legacy flat shape all normalize to one
-  internal `simplified_care_plan`). The existing legacy-grading test stays.
+- `utils/normalizeOutput.test.ts` — **extend**: assert the envelope with the `care_plan` inner key and
+  the legacy flat shape both normalize to an envelope with a populated `care_plan` field. (No
+  `simplified_care_plan` case — that key no longer exists.) The existing legacy-grading test stays.
 - `utils/grading.ts` — `patientScoreFromGrading` / `methodEntriesFromGrading` selectors (empty
   entries → `null`; combined+method extraction; before/after split).
 - `components/CarePlanView.tsx` (RTL) — renders summary/sections; readability + method cards appear
@@ -345,43 +345,76 @@ After this sub-project, SP6 should add/adjust:
   `text/clarified_text` body selection; `onGraded` updates.
 - `pages/care-plan/CarePlanPage.tsx` (RTL/integration) — SSE parse → result render; **reads
   `X-Session-Id` and calls `logger.setSessionId`**; sends `grading_enabled`.
-- `ConfigurationCard.tsx` — grading checkbox toggles (version select removed).
+- `ConfigurationCard.tsx` — grading checkbox toggles (version select + props removed).
+- `pages/VersionsPage.tsx` (RTL) — renders one row per `VERSIONS` entry (static list; trivially grows
+  when V1_3 is appended).
 - **Delete/replace** `router.test.ts` (its `versionPath` subject is removed).
 
 ## 8. Manual Intervention Required From You
 
-1. **Lockstep deploy (hard cut).** SP2's default is a hard path cut: once the backend serves
-   `/care_plan*` only, the old frontend 404s, and once this frontend ships, an old backend 404s.
-   **Deploy backend (SP2) and this frontend together**, or have SP2 keep `/simplify*` aliases live for
-   one release first (SP2 §9.1). You own release ordering.
-2. **`Access-Control-Expose-Headers` for `X-Session-Id` / `X-Trace-Id`.** The browser will not expose
-   these response headers to JS unless the backend sends them in `Access-Control-Expose-Headers`. This
-   is backend/SP4/SP2 CORS config (note the active `fixing-cors` branch). Without it, header
-   correlation silently no-ops (frontend falls back to the body `session_id`). Confirm the CORS config
-   exposes them.
-3. **`VITE_DEFAULT_VERSION` env var.** `config.ts` reads it. With one version it's effectively dead;
-   you can leave it (ignored) or remove it from `.env*` files. No deploy action strictly required.
-4. **No Firebase / `VITE_*` / deployed-URL changes** are needed by SP5 (`api/firebase.ts`,
-   `VITE_API_PROCESSING_URL` unchanged).
-5. **UI copy review** (cosmetic, §9): approve reworded "simplify"→"care plan" user-facing strings, or
-   keep current copy.
+1. **Lockstep deploy (RESOLVED — yes, hard cut).** FE + BE deploy **together**. Once the backend serves
+   `/care_plan*` only, the old frontend 404s, and once this frontend ships, an old backend 404s. **No
+   `/simplify*` aliases are kept** — nothing is in production, breaking changes are fine. Deploy SP2
+   (and SP1) with this frontend in the same release window. You own release ordering.
+2. **`Access-Control-Expose-Headers` for `X-Session-Id` / `X-Trace-Id` (RESOLVED — YES, expose them).**
+   The browser will not expose these response headers to JS unless the backend sends them in
+   `Access-Control-Expose-Headers`. **Owner decision: expose the session/trace headers** (e.g.
+   `Access-Control-Expose-Headers: X-Session-Id, X-Trace-Id`). This is backend/SP4/SP2 CORS config
+   (note the active `fixing-cors` branch); confirm it lists both headers so Task 8's reads work.
+3. **`VITE_DEFAULT_VERSION` env var (RESOLVED — owner WILL remove it).** `config.ts` currently reads it;
+   with a single version it is dead. **The owner is removing the env var.** `DEFAULT_VERSION` becomes a
+   plain `'v1-2'` constant in `config.ts` (no `import.meta.env.VITE_DEFAULT_VERSION`). **This
+   removal/config change MUST be recorded in the `code.md` run-summary produced at implementation
+   (dev-code) time** — note the env-var deletion and any `.env*` cleanup there.
+4. **No Firebase / `VITE_*` / deployed-URL changes** beyond §8.3 are needed by SP5 (`api/firebase.ts`,
+   `VITE_API_PROCESSING_URL` unchanged — leave them).
+5. **UI copy review (RESOLVED — reword approved).** The owner approves rewording user-facing
+   "simplify"/"note" strings to "care plan". See §8.5 for the copy map; apply it (not optional).
 
-## 9. Open Questions
+### 8.5 UI copy map (RESOLVED — apply)
 
-1. **Inner envelope key (the headline ambiguity).** SP1/SP2 default to keeping the wire key
-   `simplified_care_plan` (SP1 accepts both via `AliasChoices`; SP2 defers the flip). **SP5 assumes
-   `simplified_care_plan` is the live key and reads key-agnostically (§4.5 Option A).** If/when SP2
-   flips the wire key to `care_plan`, SP5 needs only the one-line normalizer change (Option A) — or
-   pairs the internal-field rename (Option B) with that flip. **Confirm: ship Option A now?**
-2. **Version chooser fate (§4.2).** Recommended: remove `VersionsPage`/`VersionDetailPage`, the
-   `/versions` + `/version/:id` routes, the NavBar "Versions" link, and `ConfigurationCard`'s version
-   `<select>` (only `v1-2` exists). Alternative: keep `VersionsPage` as a static "How it works" page.
-   **Owner call.** (Affects how much of `router.tsx`/`config.ts` is trimmed.)
-3. **Keep `SimplifyOutput`/`SimplifyPage` aliases for one cycle, or hard rename now?** Recommended:
-   hard rename internally (frontend has no external consumers of these symbols) but keep a
-   `SimplifyOutput` type re-export alias to mirror SP1's backend alias and ease review. **Owner call.**
-4. **`doc_type: 'appointment_note'`.** Left unchanged (LLM classification literal, SP1-owned). Confirm
-   the owner's "appointment→care_plan everywhere" intent applies to **frontend symbol names only**,
-   not this wire literal. (Renaming the literal is a coordinated SP1 model + LLM-prompt change, out of
-   SP5 scope.)
-5. **UI copy** (§8.5) — reword user-facing "simplify"/"note" strings to "care plan", or keep?
+Reword the user-facing strings in `CarePlanPage.tsx` (and the `<title>` / download filename):
+
+| Location | Old copy | New copy |
+|---|---|---|
+| Submit CTA | "Simplify My Note →" | "Create My Care Plan →" |
+| Result heading | "Your Simplified Note" | "Your Care Plan" |
+| Reset / new action | "Simplify another note" | "Create another care plan" |
+| In-progress status | "Simplifying your note…" | "Creating your care plan…" |
+| Document `<title>` | (current "simplify"-framed title) | "Juno — Care Plan" |
+| JSON download filename | `simplified-document.json` | `care-plan.json` |
+
+Keep any other surrounding copy that is already neutral. No behavioral change — strings only.
+
+## 9. Open Questions & Decisions
+
+1. **Inner envelope key (the headline ambiguity).**
+   **[RESOLVED: No ambiguity and no alias. The single decided inner key is `care_plan` ("care_plan
+   everywhere"). FE + BE deploy in lockstep; nothing is in production, so there is no
+   `simplified_care_plan` legacy wire key and no dual-accept aliasing to mirror. The earlier
+   "key-agnostic normalizer / Option A vs Option B / keep `simplified_care_plan` for a phase" plan is
+   withdrawn. SP5 reads `output.care_plan` everywhere; the normalizer's legacy flat-shape branch stays
+   only for old *saved Firestore docs* (§3 Non-Goal), not the live envelope. See §4.5.]**
+2. **Version chooser fate (§4.2).**
+   **[RESOLVED: DELETE the dynamic version chooser (the `<select>`, `VersionDetailPage`, `/version/:id`
+   route, `versionPath`, `outputVersion`). KEEP a static `VersionsPage` (route `/versions` + NavBar
+   link) that renders the static `VERSIONS` array. The owner will add more versions later (next:
+   V1_3); structure `VERSIONS` and the page so adding a version is a one-line append. Keep exactly as
+   much scaffolding as that requires — no dynamic selection logic. See §4.2/§4.8.]**
+3. **`SimplifyOutput` / `SimplifyPage` aliases — keep for a cycle or hard rename now?**
+   **[RESOLVED: HARD RENAME NOW. No deprecated aliases or re-exports. `SimplifyOutput` →
+   `CarePlanInternal`, `SimplifyPage` → `CarePlanPage`, etc., fully removed. Nothing is in production;
+   breaking changes are fine. See §4.4.]**
+4. **`doc_type: 'appointment_note'`.**
+   **[RESOLVED: CHANGE it to `'care_plan'` everywhere — it is NOT left unchanged. The owner's
+   "appointment → care_plan everywhere" intent applies to this wire literal too. SP1 owns the backend
+   `CarePlan` model + LLM-prompt side; SP5 updates the frontend type literal to `'care_plan'` to match,
+   coordinated in lockstep. See §4.6.]**
+5. **UI copy (§8.5) — reword or keep?**
+   **[RESOLVED: REWORD. The owner approves rewording user-facing "simplify"/"note" strings to "care
+   plan". Apply the copy map in §8.5 (not optional).]**
+
+### Recorded for implementation (`code.md`)
+- **`VITE_DEFAULT_VERSION` removal (§8.3).** The owner is removing this env var; `DEFAULT_VERSION`
+  becomes a plain `'v1-2'` constant. The env-var deletion and any `.env*` cleanup MUST be recorded in
+  the `code.md` run-summary produced at dev-code (implementation) time.

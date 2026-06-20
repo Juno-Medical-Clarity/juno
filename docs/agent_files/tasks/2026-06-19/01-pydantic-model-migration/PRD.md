@@ -31,7 +31,8 @@ The backend has a **hand-written serialization framework** instead of a real sch
 
 We want the **model to BE the schema** — like a C# DTO with a JSON converter plus validation:
 one Pydantic v2 class defines the shape, validates on construction, (de)serializes through itself,
-and generates the LLM's JSON schema. Strict (`extra="forbid"`) so LLM drift fails loudly.
+and generates the LLM's JSON schema. Strict (`extra="forbid"`) so LLM drift fails loudly. There are
+**no third-party writers** of these payloads, so strict everywhere is safe.
 
 Two correctness bugs surface from reading the current code, both fixed by SP1's locked decisions:
 
@@ -58,21 +59,24 @@ Two correctness bugs surface from reading the current code, both fixed by SP1's 
    unknown / renamed / extra fields raise `ValidationError`. Document the LLM-output interaction.
 4. **`raw` is part of the model and is SAVED** (kept in persisted Firestore output, not stripped).
 5. Rename the composite envelope `SimplifyOutput` → **`CarePlanInternal`** (internal composite of
-   `care_plan` + `metrics` + `input` + `grading`). Keep a thin `SimplifyOutput` alias for one
-   release so SP2 can migrate call-sites without a hard break.
+   `care_plan` + `metrics` + `input` + `grading`). Nothing is in production, so this is a hard
+   rename: **no `SimplifyOutput` alias** and no transitional shim — call-sites move to
+   `CarePlanInternal` directly (SP2 owns the route call-sites).
 6. **Drop `appointment.schema.json`.** Pydantic becomes the single source of truth; the v1.2 pipeline
    prompt generates its schema from `CarePlanV1_2.model_json_schema()` instead of reading the file.
 7. Define the **typed contract each layer returns** so SP2 can compose routes:
-   simplify pipeline → `CarePlanV1_2` (a `CarePlan` subclass), grading → `Grading`,
-   input resolution → `Input`, run telemetry → `Metrics`, the composite → `CarePlanInternal`.
+   simplify pipeline → `CarePlanV1_2` (`pipeline.run()` returns the typed model itself),
+   grading → `Grading`, input resolution → `Input`, run telemetry → `Metrics`,
+   the composite → `CarePlanInternal`.
 8. Write the **per-model unit-test plan/specs** (round-trip, strict-reject, version dispatch). SP1
    only authors specs in this doc; SP6 owns the broader test reorg + CI wiring.
 
 ## 3. Non-Goals
 
 - **Not** consolidating or renaming routes, and **not** doing the global `simplify → care_plan`
-  rename across routes/blueprints — that is **SP2**. SP1 only aligns *model* names
-  (`SimplifyOutput → CarePlanInternal`) and exposes the alias.
+  rename across routes/blueprints — that is **SP2**. SP1 aligns *model* names
+  (`SimplifyOutput → CarePlanInternal`) and **hard-flips the inner envelope/wire key to `care_plan`**
+  (the cross-cutting key decision; see §4.6) — there is no alias and no staged rename.
 - **Not** removing the `v1` / `v1_1` pipelines or their routes — that is **SP2/SP3**. SP1's
   `CarePlan` registry therefore only ships the **v1.2** concrete model, but the base/registry are
   version-agnostic so older/newer versions plug in.
@@ -80,8 +84,10 @@ Two correctness bugs surface from reading the current code, both fixed by SP1's 
   `Grading`/`GradingEntry`/`build_grading` shape; SP1 only re-expresses those classes in Pydantic
   with identical field names and output JSON.
 - **Not** changing the SSE protocol, the GCS/PDF flow, or auth.
-- **Not** building a Firestore data-migration runner. SP1 specifies the read-path back-compat
-  strategy and flags the migration as **manual** (see §8, §9).
+- **Not** building any Firestore data-migration machinery, and **not** writing legacy-handling code.
+  Per the owner directive nothing is in production and there is barely any data — old data is not a
+  concern. Reads stay tolerant (Optional `raw`) only because it costs nothing, not because a
+  migration path is owed (see §4.6, §9).
 
 ## 4. Architecture Decisions
 
@@ -99,7 +105,7 @@ pydantic>=2.7,<3
 ### 4.1 `models/base.py` — Pydantic base + version registry mixin
 
 Replace the dataclass `JsonModel`/`VersionedJsonModel` with a Pydantic base that carries the strict
-config and the back-compat serialization aliases, plus a generic **version-dispatch mixin** that
+config and the canonical `to_dict`/`from_dict` helpers, plus a generic **version-dispatch mixin** that
 any versioned model family can use.
 
 ```python
@@ -115,8 +121,9 @@ class JsonModel(BaseModel):
     """Strict Pydantic base for all backend models.
 
     extra="forbid"  -> reject unknown/renamed/extra fields (catches LLM drift).
-    The to_dict/from_dict shims keep the old call-sites working during the SP1→SP2
-    transition; new code should prefer model_dump()/model_validate() directly.
+    to_dict/from_dict are the project's canonical (de)serialize helpers and wrap
+    model_dump(mode="json") / model_validate. They are kept because call-sites use
+    them broadly, not as transitional shims.
     """
     model_config = ConfigDict(extra="forbid")
 
@@ -290,12 +297,18 @@ class CarePlan(VersionedModel):
     version: str
 
 
+# Module-level version constant — single source of truth for this model's version
+# string. Imported by SP4 (the `care_plan_version` log dimension) via
+# `from models.care_plan import CARE_PLAN_VERSION`.
+CARE_PLAN_VERSION = "1.2"
+
+
 # ---- concrete v1.2 --------------------------------------------------------
 class CarePlanV1_2(CarePlan):
-    version_value: ClassVar[str] = "1.2"
+    version_value: ClassVar[str] = CARE_PLAN_VERSION
 
-    doc_type: Literal["appointment_note"] = "appointment_note"
-    version: Literal["1.2"] = "1.2"
+    doc_type: Literal["care_plan"] = "care_plan"
+    version: Literal["1.2"] = CARE_PLAN_VERSION
     urgency: Literal["normal", "caution", "concern", "urgent"] = "normal"
     summary: str = ""
     reason_for_visit: list[ReasonForVisit] = Field(default_factory=list)
@@ -312,9 +325,9 @@ class CarePlanV1_2(CarePlan):
     raw: RawArtifacts | None = None   # kept + saved
 ```
 
-**Why `raw: RawArtifacts | None`** — the pipeline always populates it, but a re-validated saved doc
-written before this migration may lack it; Optional keeps reads tolerant while new writes always set
-it. (The save path no longer strips it — see §4.6.)
+**Why `raw: RawArtifacts | None`** — the pipeline always populates it; Optional simply keeps reads
+tolerant at zero cost (a stray old doc without `raw` still validates) without any migration
+machinery. New writes always set it. (The save path no longer strips it — see §4.6.)
 
 **LLM-schema generation for the structured fields.** The LLM's `structure_appointment_note` prompt
 needs only the *structured* part of the schema — NOT `terms`/`raw` (those are added by the pipeline
@@ -325,8 +338,8 @@ cannot drift:
 class CarePlanV1_2StructuredLLM(JsonModel):
     """The subset of CarePlanV1_2 the LLM is asked to produce.
     Identical field types to CarePlanV1_2 minus terms/raw (added post-LLM)."""
-    doc_type: Literal["appointment_note"] = "appointment_note"
-    version: Literal["1.2"] = "1.2"
+    doc_type: Literal["care_plan"] = "care_plan"
+    version: Literal["1.2"] = CARE_PLAN_VERSION
     urgency: Literal["normal", "caution", "concern", "urgent"] = "normal"
     summary: str = ""
     reason_for_visit: list[ReasonForVisit] = Field(default_factory=list)
@@ -369,21 +382,31 @@ Because the prompt schema is generated from the same model, the set of fields th
 produce is exactly the set the validator accepts — drift is structurally prevented at the source and
 caught at the sink.
 
-### 4.4 `models/grading.py` — re-express SP3 grading in Pydantic (no behavior change)
+### 4.4 `models/grading.py` — re-express SP3 grading in Pydantic (typed shell + open breakdown)
 
-`Grading` / `GradingEntry` keep identical field names and output JSON; only the base changes to
-Pydantic. `build_grading()` and `_METHOD_REASONING` are unchanged in logic. `GradingEntry`'s
-hand-written `to_dict`/`from_dict` are removed (the base provides them).
+Grades are modeled as a **LIST of grade entries** (`entries: list[GradingEntry]`), which is already
+the shape and is intentionally expandable as more grading types are added later. Each entry is a
+**common typed shell** — fields that stay constant across grading types (`name`, `target`, `grade`,
+and an optional human-readable `description`) — wrapping an **OPEN/flexible `grade_breakdown`** whose
+inner keys differ per grading type. `build_grading()` and `_METHOD_REASONING` are unchanged in logic.
+`GradingEntry`'s hand-written `to_dict`/`from_dict` are removed (the base provides them).
 
 ```python
 # backend/models/grading.py  (model portion)
 from pydantic import Field
 from .base import JsonModel
 
+# Module-level version constant for the grading data model — imported by SP4
+# (the `grading_version` log dimension) via `from models.grading import GRADING_VERSION`.
+GRADING_VERSION = "1.0"
+
 class GradingEntry(JsonModel):
+    # ---- typed shell: constant across grading types ----
     name: str
     target: Literal["before", "after"]
     grade: float
+    description: str | None = None      # optional per-grade human-readable note (varies, may be unset)
+    # ---- open/flexible: shape differs per grading type ----
     grade_breakdown: dict | None = None
     reasoning: str | None = None
 
@@ -393,23 +416,34 @@ class Grading(JsonModel):
     graded_at: str | None = None
 ```
 
-`grade_breakdown: dict | None` stays a loose `dict` (its keys vary per method; it is not a strict
-sub-schema). `build_grading()` constructs `GradingEntry(...)` exactly as today. `Grading()`
-(no args) still yields `{"entries": [], "enabled": True, "graded_at": None}`.
+`grade_breakdown: dict | None` is the **intentional open escape hatch** — its keys vary per grading
+type, so it is deliberately NOT a strict sub-schema even though `extra="forbid"` governs every other
+field. This is the resolved design for expanding grading types later: add fields to the typed shell
+only when they are constant across types; everything type-specific lives inside `grade_breakdown`.
+`build_grading()` constructs `GradingEntry(...)` exactly as today (it does not set `description`, so
+existing entries get `description=None`, which is omitted/None on the wire). `Grading()` (no args)
+still yields `{"entries": [], "enabled": True, "graded_at": None}`, and each entry now also carries
+`description` (None by default).
 
 ### 4.5 `models/input.py` & `models/metrics.py` — Pydantic, same fields
 
 `Input`, `InputFile`, `Metrics` become `JsonModel` subclasses with the same fields and the same
 classmethod constructors (`from_text`, `from_file_uploads`, `from_doc_id`, `from_batch_dataset`,
 `Metrics.start`). Hand-written `Input.from_dict` is removed (base handles nested `InputFile`).
-`Metrics.step_durations_ms` stays a `dict[str, float]` and is still mutated in place by the route —
-Pydantic models are mutable by default, so `metrics.step_durations_ms[...] = x` and
-`metrics.saved_id = ...` keep working.
+`models/input.py` also exposes a module-level constant `INPUT_VERSION = "1.0"` — imported by SP4
+(the `input_version` log dimension) via `from models.input import INPUT_VERSION`.
+
+**`Metrics.step_durations_ms` is REMOVED** (coordinated with SP4 §9.7): per-step durations are emitted
+exactly once via the SP4 code marker (the `marker_duration_ms` metric + `op_complete` timeline log),
+so a parallel per-step map in the serialized `Metrics` payload would duplicate that bookkeeping. Drop
+the `step_durations_ms` field from `Metrics`; the route no longer captures or assigns per-step
+durations. `Metrics` keeps its request-level fields (e.g. `total_duration_ms`, `saved_id`, version/input
+metadata); `metrics.saved_id = ...` still works (Pydantic models are mutable by default).
 
 One subtlety: `InputFile.from_file_uploads` reads `werkzeug` streams; keep it as a `@classmethod`
 exactly as today — Pydantic does not interfere with arbitrary classmethods.
 
-### 4.6 `models/envelope.py` — rename to `CarePlanInternal`; persist `raw`
+### 4.6 `models/envelope.py` — rename to `CarePlanInternal`; flip key to `care_plan`; persist `raw`
 
 ```python
 # backend/models/envelope.py
@@ -420,60 +454,64 @@ from .input import Input
 from .metrics import Metrics
 
 class CarePlanInternal(JsonModel):
-    """Internal composite of one pipeline run: care plan + run telemetry + input + grading."""
+    """Internal composite of one pipeline run: care plan + run telemetry + input + grading,
+    plus internal-only readability scores (before/after) that are NOT part of the care plan."""
     metrics: Metrics
     input: Input
     grading: Grading
-    care_plan: CarePlan            # was: simplified_care_plan: SimplifiedCarePlan
-
-# Back-compat alias for the SP1→SP2 transition window. SP2 removes it.
-SimplifyOutput = CarePlanInternal
+    care_plan: CarePlan                       # wire key: "care_plan" (hard flip)
+    before_score: dict | None = None          # internal-only; lives here, not in CarePlan
+    after_score: dict | None = None           # internal-only; lives here, not in CarePlan
 ```
 
-**Output-key decision (`simplified_care_plan` vs `care_plan`).** The persisted/serialized JSON key
-is the global `simplify → care_plan` rename, which is **SP2's** job (it touches routes, the saved
-read path, and SP5's frontend). To avoid SP1 shipping a breaking output-shape change before SP2 is
-ready, SP1 keeps the **serialized key as `simplified_care_plan`** by aliasing the field:
+**Output-key decision — RESOLVED: hard-flip the inner envelope/wire key to `care_plan` NOW.**
+This is the cross-cutting key decision that binds SP1/SP2/SP5: the inner key for care-plan content is
+`care_plan`, decided once. There is **NO `simplified_care_plan` alias**, no `AliasChoices`, no
+`serialization_alias`, and no staged "keep + alias now, flip later". The Python attribute and the
+serialized/persisted JSON key are both `care_plan`. The previous staged-rename plan is **overridden**.
 
 ```python
-    care_plan: CarePlan = Field(
-        serialization_alias="simplified_care_plan",
-        validation_alias=AliasChoices("care_plan", "simplified_care_plan"),
-    )
-    model_config = ConfigDict(extra="forbid", populate_by_name=True)
+    care_plan: CarePlan
+    model_config = ConfigDict(extra="forbid")   # no populate_by_name / alias needed
 ```
 
-This makes the Python attribute `care_plan` (aligned name) while the wire JSON stays
-`simplified_care_plan` (unchanged for the frontend until SP5). SP2 flips the serialization alias to
-`care_plan` and updates the frontend in lockstep. **Confirm this staging in §9.**
+`to_dict()` emits `care_plan` directly via the inherited `model_dump(mode="json")` — no `by_alias`
+handling required. SP2 (routes/saved read path) and SP5 (frontend) consume the `care_plan` key; there
+is no transitional window because nothing is in production.
+
+**`before_score`/`after_score` placement — RESOLVED.** These readability scores are run-internal and
+do **not** belong on the care plan. They are kept **out of `CarePlan`/`CarePlanV1_2`** and instead
+carried on `CarePlanInternal` (the internal composite). The care-plan model therefore has no score
+fields; the route/pipeline sets them on `CarePlanInternal` when present.
 
 `is_legacy_shape(data)` stays (used to distinguish old flat outputs); update its docstring to check
-for the `simplified_care_plan` key (the still-current wire key).
+for the `care_plan` key.
 
-**`raw` persistence fix.** `utils/save_output.py:_without_raw()` must be **removed** so `raw` is
-saved (locked decision #4). This is technically a SP1-adjacent change to a util — flagged for the
-dev in TASKS Task 7, and called out for the human in §8 because it changes what lands in Firestore.
+**`raw` persistence fix (locked).** `utils/save_output.py:_without_raw()` must be **removed** so `raw`
+is saved. This is a SP1-adjacent change to a util — flagged for the dev in TASKS Task 7 and called out
+for the human in §8 because it changes what lands in Firestore.
 
 ### 4.7 `models/__init__.py` — exports
 
-Export the new names and keep transitional aliases:
+Export the new names only. **No transitional aliases** (no `SimplifyOutput`, no `SimplifiedCarePlan`)
+— nothing is in production, breaking changes are fine, and we keep no dead shims:
 
 ```python
 from .base import JsonModel, VersionedModel
 from .care_plan import CarePlan, CarePlanV1_2, CarePlanV1_2StructuredLLM
-from .envelope import CarePlanInternal, SimplifyOutput, is_legacy_shape
+from .envelope import CarePlanInternal, is_legacy_shape
 from .grading import Grading, GradingEntry, build_grading
 from .input import Input, InputFile
 from .metrics import Metrics
-# Transitional alias so SP2 can migrate gradually:
-SimplifiedCarePlan = CarePlanV1_2  # NOTE: was a generic dict-wrapper; now the v1.2 model
 ```
 
-> ⚠️ `SimplifiedCarePlan` changes meaning: it was a `{version, data}` wrapper that accepted **any**
-> version 1.0/1.1/1.2; it is now the concrete v1.2 model. Call-sites that did
-> `SimplifiedCarePlan.from_pipeline_result("1.2", data)` must move to building `CarePlanV1_2`
-> (see §4.8). SP2 owns route call-sites; SP1 provides the alias + the constructor helper so the
-> transition is mechanical.
+> ⚠️ The old `SimplifiedCarePlan` `{version, data}` wrapper is **gone**, not aliased. Call-sites that
+> did `SimplifiedCarePlan.from_pipeline_result("1.2", data)` move to `CarePlan.from_pipeline_result`
+> (returns a validated `CarePlanV1_2`; see §4.8). Likewise `SimplifyOutput` is fully replaced by
+> `CarePlanInternal`. SP2 owns updating the route call-sites; SP1 provides the real names + the
+> constructor helper. Because the v1/v1_1 routes still import `SimplifiedCarePlan` today, SP1's
+> Task 10 makes the **mechanical** call-site swaps required to keep imports resolving (no behavior
+> change), since there is no alias to lean on.
 
 ### 4.8 Typed layer contracts (the SP2 hand-off)
 
@@ -481,11 +519,20 @@ These are the precise return types each layer exposes after SP1:
 
 | Layer | Function (current) | Returns after SP1 |
 |---|---|---|
-| Simplify pipeline | `V1_2Pipeline.run(text)` / route assembly | `CarePlanV1_2` |
+| Simplify pipeline | `V1_2Pipeline.run(text)` | `CarePlanV1_2` (the model itself — RESOLVED) |
 | Grading | `build_grading(before, before_text, after, after_text)` | `Grading` |
 | Input resolution | `_input_model_from_resolved(resolved)` | `Input` |
 | Run telemetry | `Metrics.start(...)` | `Metrics` |
 | Composite | route assembly | `CarePlanInternal` |
+
+**`pipeline.run()` — RESOLVED: use it, and it returns the model.** `V1_2Pipeline.run(text)` must
+return a `CarePlanV1_2` (built via `CarePlan.from_pipeline_result("1.2", {**structured, "terms":
+..., "raw": {...}})`), **not** a dict, and it must no longer fold `before_score`/`after_score` into
+the care-plan dict — those scores belong on `CarePlanInternal` (§4.6). Where the final
+`CarePlanInternal` composition physically lives (inside `run()` here, or in the route under SP2/SP3)
+is the implementer's call, but the contract is fixed: `run()` returns the typed `CarePlanV1_2`. This
+removes the prior "route inlines the steps; `run()` is dead/secondary" divergence — `run()` is the
+path, and it is typed.
 
 Construction helper to replace `SimplifiedCarePlan.from_pipeline_result`:
 
@@ -506,37 +553,43 @@ Route composition target (SP2 will write this; SP1 guarantees it type-checks):
 ```python
 internal = CarePlanInternal(
     metrics=metrics, input=input_model, grading=grading, care_plan=care_plan,
+    before_score=before_score, after_score=after_score,   # internal-only, optional
 )
-result = internal.to_dict()   # serialized ONCE; wire key still "simplified_care_plan"
+result = internal.to_dict()   # serialized ONCE; wire key is "care_plan"
 ```
 
 ## 5. API Change Summary
 
-SP1 is deliberately **output-shape-preserving on the wire** (the rename of the JSON key is SP2):
+SP1 **flips the inner care-plan key on the wire** (the cross-cutting key decision; nothing is in
+production so this is a hard, immediate change). The envelope key becomes `care_plan`:
 
 ```
-POST /simplify  (v1-2)   — unchanged response keys: { metrics, input, grading, simplified_care_plan }
+POST /simplify  (v1-2)   — response keys: { metrics, input, grading, care_plan }   (was simplified_care_plan)
 POST /simplify/grade     — unchanged: { grading }
-GET  /simplify/saved/<id>— unchanged response keys
+GET  /simplify/saved/<id>— response keys flip simplified_care_plan -> care_plan
 ```
 
-The one real, intended change in **persisted** data:
+> SP2 owns the route/blueprint `simplify → care_plan` rename and SP5 owns the frontend read of the
+> `care_plan` key. SP1 lands the model + envelope that emit `care_plan`; SP2/SP5 follow. There is no
+> alias bridging the two windows — they coordinate on the single decided key.
+
+Two real, intended changes in **persisted** data:
 
 ```
-Firestore simplify_outputs.output_data.simplified_care_plan
-  BEFORE: "raw" key STRIPPED before save (_without_raw)
-  AFTER:  "raw": { text, simplified_text, clarified_text }  is SAVED
+Firestore simplify_outputs.output_data
+  KEY:  simplified_care_plan  ->  care_plan   (hard flip, no alias)
+  raw:  BEFORE STRIPPED before save (_without_raw)  ->  AFTER SAVED
 ```
 
-Before/after of a persisted care plan (abridged):
+Before/after of a persisted output (abridged):
 
 ```jsonc
-// BEFORE (raw stripped on save)
+// BEFORE (old key + raw stripped on save)
 { "simplified_care_plan": { "version":"1.2", "doc_type":"appointment_note",
     "summary":"...", "terms": {...} } }            // no "raw"
 
-// AFTER
-{ "simplified_care_plan": { "version":"1.2", "doc_type":"appointment_note",
+// AFTER (new key + new doc_type + raw saved)
+{ "care_plan": { "version":"1.2", "doc_type":"care_plan",
     "summary":"...", "terms": {...},
     "raw": { "text":"...", "simplified_text":"...", "clarified_text":"..." } } }
 ```
@@ -547,14 +600,19 @@ silently persisting bad data.
 
 ## 6. Frontend Change Summary
 
-**No frontend changes are required by SP1** — the wire shape is preserved (key stays
-`simplified_care_plan`, all field names identical). SP5 owns the eventual `care_plan` key rename and
-can also drop `before_score?`/`after_score?` from `AppointmentNote` (those already moved into
-`Grading` under SP3; they are vestigial in `simplify.ts:103-104`).
+SP1 itself edits no frontend files, but because the inner key is **hard-flipped to `care_plan`**, the
+frontend must consume `care_plan` in lockstep — this is the SP1/SP2/SP5 cross-cutting key decision,
+not a staged rename. SP5 owns the frontend changes:
+- rename `SimplifyOutput.simplified_care_plan → care_plan` (and optionally `SimplifyOutput →
+  CarePlanInternal`) in `frontend/src/types/envelope.ts` / `simplify.ts`;
+- update the one reader at `frontend/src/components/OutputGradingCard.tsx` (`output.simplified_care_plan.raw?.text`)
+  to `output.care_plan.raw?.text`;
+- drop the vestigial `before_score?`/`after_score?` on `AppointmentNote` (`simplify.ts:103-104`) —
+  those scores moved into `Grading` under SP3 and (where still surfaced) live on `CarePlanInternal`,
+  never on the care plan.
 
-Note for SP5: `frontend/src/types/envelope.ts` already mirrors the envelope and is forward-compatible
-with these models. When SP2 flips the serialization alias to `care_plan`, SP5 renames
-`SimplifyOutput.simplified_care_plan → care_plan` and (optionally) `SimplifyOutput → CarePlanInternal`.
+There is no transitional window or alias: SP2 (backend routes) and SP5 (frontend) land the single
+`care_plan` key together.
 
 ## 7. Testing
 
@@ -572,7 +630,7 @@ SP1 authors specs; SP6 wires them into CI. Per-model `pytest` specs:
     (the real v1.2 sample output, including `terms` + `raw`).
   - Strict reject: a fixture with an extra top-level key (`"foo": 1`) raises `ValidationError`.
   - Strict reject nested: an extra key inside `medications[0]` raises `ValidationError`.
-  - Defaults: validating a minimal `{"version":"1.2","doc_type":"appointment_note"}` fills all list
+  - Defaults: validating a minimal `{"version":"1.2","doc_type":"care_plan"}` fills all list
     fields with `[]`, `diagnosis` with its default, `raw=None`.
   - `raw` survives round-trip (present in `model_dump`).
   - Schema generation: `CarePlanV1_2StructuredLLM.model_json_schema()` is a dict; its `properties`
@@ -585,73 +643,95 @@ SP1 authors specs; SP6 wires them into CI. Per-model `pytest` specs:
 - **Input / InputFile / Metrics**
   - Round-trip with nested `InputFile` list.
   - `Input.from_text/from_doc_id/from_file_uploads` produce the same dicts as today.
-  - `Metrics.start(...)` then mutate `step_durations_ms`/`saved_id` then `to_dict()` reflects
-    mutations (mutability preserved).
+  - `Metrics.start(...)` then mutate `total_duration_ms`/`saved_id` then `to_dict()` reflects
+    mutations (mutability preserved). `to_dict()` has **no** `step_durations_ms` key (field removed, §4.5).
 - **CarePlanInternal**
-  - Round-trip; serialized JSON has the key `simplified_care_plan` (alias), not `care_plan`.
-  - Validation accepts both `care_plan=` and `simplified_care_plan=` input (AliasChoices).
-- **Read-path back-compat (critical)**
-  - A legacy persisted doc that has the flat care plan **without `raw`** still
-    `model_validate`s (because `raw` is Optional) — proves old saved docs don't break the read path.
-  - A legacy doc whose care plan contains a now-removed/extra field (if any historical drift exists)
-    is handled per the §9 decision (lenient read vs strict) — test both the chosen behavior.
+  - Round-trip; serialized JSON has the key **`care_plan`** (no `simplified_care_plan` alias exists).
+  - `before_score`/`after_score` are accepted and round-trip on `CarePlanInternal`, and are **absent**
+    from the nested `care_plan` dict (scores live on the composite, not the care plan).
+- **Read-path tolerance (cheap, not a migration)**
+  - A persisted care plan **without `raw`** still `model_validate`s (because `raw` is Optional) — the
+    read path tolerates a stray old doc at zero cost. No migration machinery is tested or required;
+    per the owner directive old data is not a concern.
 
 ## 8. Manual Intervention Required From You
 
 1. **Pin Pydantic in `backend/requirements.txt`** (`pydantic>=2.7,<3`). It is currently only a
    transitive dependency; do not let the migration rely on that. (Dependency-contract change → human.)
-2. **Approve removing `_without_raw()` from `utils/save_output.py`** so `raw` is persisted. This
-   changes what lands in Firestore (slightly larger docs; includes the original source text). Confirm
-   there is no PHI/retention policy that requires stripping the original `raw.text` before storage —
-   if there is, we keep `_without_raw` and the saved-id re-grade path stays broken / must use a
-   different source. **This is the single most important confirmation in SP1.**
-3. **Decide the migration strategy for already-persisted Firestore docs** in the old flat shape
-   (see §9). Default plan: **no migration; tolerant reads** (Optional `raw`, lenient legacy read
-   path). If you want a one-time backfill (e.g. to make old docs re-gradable, which needs `raw`),
-   that is a separate manual script — out of SP1's automated scope; SP1 will provide the spec only
-   if you ask.
-4. **Confirm the staged-rename approach** in §4.6/§9: SP1 keeps the wire key `simplified_care_plan`
-   (only the Python attribute becomes `care_plan`), and SP2 flips the wire key + frontend together.
-   If you'd rather rename the wire key now, SP1 and SP5 must land together — say so and we re-plan.
+2. **Approve removing `_without_raw()` from `utils/save_output.py`** so `raw` is persisted. (LOCKED:
+   `raw` is kept and saved.) This changes what lands in Firestore (slightly larger docs; includes the
+   original source text). Confirm there is no PHI/retention policy that requires stripping
+   `raw.text` before storage. **This is the single most important confirmation in SP1.**
 
-## 9. Open Questions
+> Previously-manual items now RESOLVED by the owner, no longer requiring you:
+> - **Firestore data migration / legacy handling:** none. Nothing is in production and there is
+>   barely any data; old data is not a concern. Reads stay tolerant (Optional `raw`) at zero cost —
+>   no migration runner, no backfill, no legacy-fallback code. (was §8.3)
+> - **Staged `simplified_care_plan → care_plan` rename:** overridden. The inner key is hard-flipped
+>   to `care_plan` now, with no alias and no staged window; SP2 (routes) and SP5 (frontend) follow
+>   the single decided key. (was §8.4)
 
-1. **Migration of already-persisted outputs (old flat shape).** Historical `simplify_outputs` docs
-   were saved by the old code (e.g. `simplified_care_plan` is a flat dict, **no `raw`**, and may
-   predate the envelope entirely — `is_legacy_shape` exists precisely for pre-envelope docs). When
-   we add `extra="forbid"`, do we *ever* run these old docs through the new validators on read? Two
-   options:
-   - **(A) Tolerant reads (recommended):** `GET /simplify/saved/<id>` returns `output_data` as a raw
-     dict (it does today — `saved_outputs.py:90`), **never** re-validating through the model. Old
-     docs render as-is; only *new* writes are validated. Lowest risk, zero migration. The only place
-     that re-reads a saved care plan into logic is the re-grade endpoint, which only touches
-     `raw.text`/`raw.clarified_text` — and old docs lack `raw`, so re-grade of an old doc already
-     returns the "No source text found" 400 (`grading.py:60-61`). That is acceptable (old docs were
-     never re-gradable). **Need your confirmation that tolerant reads are acceptable.**
-   - **(B) Validate-on-read with a legacy fallback:** wrap reads in `model_validate`, and on
-     `ValidationError` fall back to returning the raw dict. More code, marginal benefit. Not
-     recommended.
-   My recommendation: **(A)**. Flagged in §8.3 as a human decision.
+## 9. Open Questions & Decisions
 
-2. **Strictness of `terms` and `raw`.** `terms` is a `dict[str, GlossaryTerm]` with strict
-   `GlossaryTerm` — but `terms` is built by our own deterministic code
-   (`build_glossary_from_simplified_text`), not the LLM, so strictness is safe. `raw` is also
-   ours. Both are strict. Confirm no third party writes extra keys into either.
+1. **Migration of already-persisted outputs (old flat shape).**
+   `[RESOLVED: No migration, no legacy-handling code. Nothing is in production and there is barely any
+   data — old data is not a concern. Reads stay tolerant only because it is free: GET
+   /simplify/saved/<id> returns output_data as a raw dict (saved_outputs.py:90) and never
+   re-validates, and raw is Optional so a stray old doc validates if it ever is run through a model.
+   No validate-on-read fallback, no backfill runner, no is_legacy_shape-driven migration path.]`
 
-3. **Is `before_score`/`after_score` truly gone from the care plan?** SP3 moved scores into
-   `Grading`; the pipeline no longer injects them into the care-plan dict (`pipeline.py` keeps them
-   only in its standalone `run()` return, which the v1-2 *route* does not use —
-   `simplify_v1_2.py:423-431` builds the care plan without scores). So `CarePlanV1_2` correctly has
-   no score fields. Confirm no other caller expects scores nested under the care plan. (Frontend
-   still declares vestigial `before_score?`/`after_score?` — harmless, SP5 cleans up.)
+2. **Strictness of `terms` and `raw`.**
+   `[RESOLVED: Strict (extra="forbid") is fine. There are NO third-party writers of these payloads —
+   terms is built by our deterministic build_glossary_from_simplified_text and raw is set by the
+   pipeline. raw is kept AND saved (locked). GlossaryTerm and RawArtifacts stay strict.]`
 
-4. **`grade_breakdown` typing.** Left as loose `dict | None` because its shape varies per scoring
-   method (SP3 design). If we later want strict per-method breakdown models, that's an additive SP
-   — out of scope now. Confirm loose dict is acceptable for the strict-everywhere goal (it is the
-   one intentional escape hatch).
+3. **`before_score`/`after_score` placement.**
+   `[RESOLVED: These live on the INTERNAL composite model CarePlanInternal, NOT on CarePlan/
+   CarePlanV1_2. The public/care-plan model has no score fields. See §4.6 — before_score/after_score
+   are optional fields on CarePlanInternal; the pipeline/route sets them there when present. The
+   frontend's vestigial before_score?/after_score? on AppointmentNote are dropped by SP5.]`
 
-5. **`pipeline.py.run()` vs route assembly divergence.** The standalone `V1_2Pipeline.run()` returns
-   a dict still containing `before_score`/`after_score` and is **not** the path the route uses
-   (the route inlines the steps). SP1 models the *route's* output. Should `run()` be brought in line
-   (return `CarePlanV1_2`) now, or left for SP2/SP3 dead-code cleanup? Recommendation: leave it;
-   note it as dead/secondary so SP3 can remove or align it. Flag for SP2/SP3.
+4. **`grade_breakdown` typing.**
+   `[RESOLVED: Grades are a LIST of entries (list[GradingEntry]), expandable as more grading types
+   are added. Each entry is a common typed shell — fields constant across grading types (name,
+   target, grade, and an optional description) — wrapping an OPEN/flexible grade_breakdown: dict |
+   None whose inner keys differ per grading type. grade_breakdown is the one intentional escape hatch
+   from extra="forbid". Future grading types add fields to the typed shell ONLY when constant across
+   types; everything type-specific goes inside grade_breakdown. See §4.4.]`
+
+5. **`pipeline.py.run()` vs route assembly.**
+   `[RESOLVED: USE pipeline.run(), and run() returns the typed model itself (CarePlanV1_2), not a
+   dict. run() must stop folding before_score/after_score into the care plan — those go on
+   CarePlanInternal (§4.6). Where the final CarePlanInternal composition physically lives (in run()
+   here vs the route under SP2/SP3) is the implementer's call, but the contract is fixed: run()
+   returns CarePlanV1_2. The old "route inlines steps; run() is dead/secondary" divergence is
+   eliminated. See §4.8.]`
+
+6. **Inner envelope/wire key for care-plan content (cross-cutting SP1/SP2/SP5).**
+   `[RESOLVED: Hard-flip to care_plan NOW. One decided key — no simplified_care_plan alias, no
+   AliasChoices/serialization_alias, no staged "keep + alias now, flip later". The Python attribute
+   and the serialized/persisted JSON key are both care_plan. SP2 (routes/saved read path) and SP5
+   (frontend) consume care_plan in lockstep; no transitional window. This overrides any earlier
+   staged-rename language in this PRD. See §4.6, §5, §6.]`
+
+7. **`doc_type` value (cross-cutting with SP5).**
+   `[RESOLVED (2026-06-20): doc_type changes from "appointment_note" to "care_plan" everywhere. The
+   backend model is the source of truth: CarePlanV1_2 and CarePlanV1_2StructuredLLM both pin
+   doc_type: Literal["care_plan"] = "care_plan", so the LLM is asked to produce (and the model
+   validates) doc_type="care_plan". SP5 matches the frontend literal in the same lockstep release.
+   See §4.2.]`
+
+8. **Module-level version constants for observability (cross-cutting with SP4).**
+   `[RESOLVED (2026-06-20): models expose module-level version constants as the single source of truth
+   for SP4's log dimensions — CARE_PLAN_VERSION = "1.2" (models/care_plan.py, used as the
+   CarePlanV1_2.version default and version_value), GRADING_VERSION = "1.0" (models/grading.py),
+   INPUT_VERSION = "1.0" (models/input.py). SP4 imports these via the root path
+   (from models.care_plan import CARE_PLAN_VERSION, etc.) and stamps g.care_plan_version /
+   g.grading_version / g.input_version. See §4.2, §4.4, §4.5.]`
+
+9. **`Metrics.step_durations_ms` (cross-cutting with SP4).**
+   `[RESOLVED (2026-06-20): REMOVED from the Metrics model. Per-step durations are emitted exactly
+   once by SP4's code marker (marker_duration_ms metric + op_complete timeline log); duplicating them
+   in the serialized Metrics payload is the bookkeeping SP4 deletes. The route no longer captures or
+   assigns per-step durations. Metrics keeps total_duration_ms / saved_id / version+input metadata.
+   See §4.5 and SP4 §9.7.]`

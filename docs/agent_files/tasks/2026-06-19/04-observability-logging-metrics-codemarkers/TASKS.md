@@ -4,7 +4,7 @@ Read `PRD.md` in this folder first. SP4 lands in **Phase 2** after SP1 (models +
 
 **Assumed interfaces (state up front, adapt if wrong):**
 - SP2 hands SP4 **one** instrumented route/pipeline (the `care_plan` route). Tasks below say "the care_plan route" — that is the SP2 file. Do not re-instrument deleted v1/v1-1 routes.
-- SP1 exposes per-function versions; assumed as importable constants `models.care_plan.CARE_PLAN_VERSION`, `models.grading.GRADING_VERSION`, `models.input.INPUT_VERSION`. If SP1 only has instance `.version`, pass the literal version strings the route already knows.
+- SP1 exposes module-level version constants `CARE_PLAN_VERSION` (`models/care_plan.py`), `GRADING_VERSION` (`models/grading.py`), `INPUT_VERSION` (`models/input.py`) — RESOLVED, PRD §9.3. Import via the root path (`from models.care_plan import CARE_PLAN_VERSION`, etc.; per SP6 import standard) and set `g.*_version` from them. No literal-string fallback.
 
 ---
 
@@ -184,7 +184,7 @@ yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
 
 Key points the implementer must preserve per step:
 - The marker **auto-times** (delete `t0`/`monotonic_ms()` pairs), **auto-sets** success/`OpOutcome` (delete the manual `log_step("...","done"/"error")` and `record_error`/`record_latency` calls), and **auto-emits** the metric+timeline lines via `JunoSink`.
-- `metrics.step_durations_ms[...]` (the `Metrics` model field used by the SSE result) is **still wanted** for the result envelope. Keep it by reading the duration off the scope or, simplest, capture it: have `_do` write into a local and assign after — OR (recommended) add a tiny helper `execute_timed(marker, action)` returning `(result, duration_ms)` so the route can still do `metrics.step_durations_ms["simplify_language"] = dur`. Add this helper to `marker.py` as a classmethod `execute_returning_duration` if the `Metrics` envelope must keep per-step durations. **Confirm with SP1/SP2 whether `Metrics.step_durations_ms` is still part of the output contract; if SP1 dropped it, omit this entirely.**
+- `metrics.step_durations_ms[...]` is **DROPPED from the output contract (PRD §9.7 RESOLVED).** Delete the `metrics.step_durations_ms[...] = ...` assignments entirely — do **not** preserve per-step durations in the SSE result envelope, and do **not** add any `execute_returning_duration` / `execute_timed` helper to `marker.py`. Per-step durations now live only in the `marker_duration_ms` metric + the `op_complete` timeline log line. SP1 removes the `step_durations_ms` field from the `Metrics` model; the route does no per-step duration capture.
 - Steps with a **non-fatal** failure today (`find_medical_terms`, `clarify_actions` fall back instead of returning) must keep falling back: catch inside `_do`, call `scope.mark_failed()`, and return the fallback value so the marker records `Failed` but the pipeline continues.
 
 Apply the same transform to all seven ops:
@@ -198,9 +198,9 @@ Apply the same transform to all seven ops:
 | save_output (~518-548) | `Markers.CarePlan.SaveOutput` | no (continues without saved_id → `mark_failed()`) |
 | whole pipeline total (~438-442) | `Markers.CarePlan.Pipeline` | wraps the run; replaces `record_latency("simplify_pipeline")` + `record_counter` |
 
-Delete the now-unused `juno_metrics = JunoMetrics()` locals in `run_v1_2_pipeline` and `_generate_stream` and the `juno_logger.log_step(...)` step calls (keep `juno_logger`/`logger` only for free-text `.exception()` context lines that aren't operation-scoped).
+**Delete all `JunoMetrics` usage (PRD §9.1 RESOLVED: delete, no shim).** Remove the `juno_metrics = JunoMetrics()` locals in `run_v1_2_pipeline` and `_generate_stream`, every `record_latency` / `record_counter` / `record_error` call, and the `JunoMetrics` import in this route. SP4 owns removal of all `JunoMetrics` call sites; SP3 deletes the `JunoMetrics` module itself — coordinate so neither a dangling import nor a dangling class remains. Also delete the `juno_logger.log_step(...)` step calls (keep `juno_logger`/`logger` only for free-text `.exception()` context lines that aren't operation-scoped).
 
-**Acceptance:** the route file contains **zero** `monotonic_ms()`-based per-step timing, **zero** `record_latency`/`record_error`/`record_counter` calls, and **zero** `log_step(...)` calls; each of the 7 ops emits exactly one marker event (verified with `InMemorySink` in a route test) carrying `function`, `care_plan_version`, `grading_version`, `input_version`, `session_id`, `user_id`; non-fatal steps emit `success=false` but the pipeline still produces a result. If `Metrics.step_durations_ms` is still in the contract, it is still populated.
+**Acceptance:** the route file contains **zero** `monotonic_ms()`-based per-step timing, **zero** `record_latency`/`record_error`/`record_counter` calls, **zero** `log_step(...)` calls, and **zero** `JunoMetrics` references; each of the 7 ops emits exactly one marker event (verified with `InMemorySink` in a route test) carrying `function`, `care_plan_version`, `grading_version`, `input_version`, `session_id`, `user_id`; non-fatal steps emit `success=false` but the pipeline still produces a result. The route file contains **zero** `metrics.step_durations_ms` assignments (field dropped per PRD §9.7). Backend-wide: `grep -rn "JunoMetrics\|record_latency\|record_counter\|record_error" backend/` returns nothing in SP4-owned files (any remaining hit is a `JunoMetrics` module-definition line that SP3 deletes — coordinate to leave no dangling import).
 
 **Depends on:** Tasks 1–6; SP1 (version constants); SP2 (the route).
 
@@ -230,7 +230,7 @@ Delete the now-unused `juno_metrics = JunoMetrics()` locals in `run_v1_2_pipelin
 
 1. Change `__init__(self, api_version=None)` → `__init__(self, function: str | None = None)`; store `self._function`.
 2. In `_base_fields()`: drop `api_version`; add `function` (`self._function`), `care_plan_version`, `grading_version`, `input_version` (each via `_g_field(...)`). Keep `session_id`, `user_id`, `service`, `environment`.
-3. `log_step` is now redundant with markers — **deprecate**: keep the method (so non-pipeline callers don't break) but the care_plan route stops calling it (Task 8). Add a docstring line: "Prefer `Markers.*.execute()` for operation timing; use JunoLogger for free-text logs."
+3. `log_step` is fully superseded by markers — **delete it** (owner directive: don't keep old/dead code; nothing is in production). Markers own all operation timing/outcome logging; the care_plan route already stops calling `log_step` (Task 8). Before deleting, `grep -rn "log_step" backend/` and remove any remaining callers (they should only be the SP2/v1-1 routes SP2 deletes). `JunoLogger` itself is **kept** for free-text logs (`.info` / `.exception`); add a class docstring line: "Use `Markers.*.execute()` for operation timing; use JunoLogger only for free-text logs."
 4. Update the `app.py` `log_request_start` call to `JunoLogger(function="http_request")`.
 
 **Acceptance:** a care_plan log line has `function`, `care_plan_version`, `grading_version`, `input_version` and **no** `api_version`. `grep -rn "api_version" backend/` returns only deliberate/legacy references (none in `juno_logger.py` or the care_plan route).
@@ -272,10 +272,32 @@ Rewrite/extend to cover, in this order:
 
 ---
 
+### Task 13 — Give `SERVICE_VERSION` a code-derived default (minimize the manual Cloud Run step)
+
+**File:** `backend/telemetry.py`
+
+Per PRD §8.1 (RESOLVED §9.6: prefer encoding the version in code/config so the manual step is minimized):
+
+1. Replace the `SERVICE_VERSION = os.environ.get("SERVICE_VERSION", "unknown")` read with a code-derived default so a deploy is stamped even with zero Cloud Run env config:
+   ```python
+   SERVICE_VERSION = os.environ.get("SERVICE_VERSION") or _build_version()
+   # _build_version(): a baked code constant (read a VERSION file or module __version__);
+   # falls back to "unknown" only if both env and constant are missing.
+   ```
+2. The residual deploy-time step (set `SERVICE_VERSION=${GITHUB_SHA}` in `.github/workflows/deploy-backend.yml`) stays **manual** and is documented in the Summary below + PRD §8.1.
+
+**Acceptance:** with no `SERVICE_VERSION` env var, `telemetry.SERVICE_VERSION` is the baked constant (not `"unknown"`); with the env var set it wins. Unit test both branches.
+
+> **code.md note (dev-code phase):** the run-summary `code.md` MUST record the concrete `SERVICE_VERSION` setup taken here — the `telemetry.py` code default added, the exact `deploy-backend.yml` env line, and the residual manual Cloud Run step (PRD §8.1) — so the deploy-time action isn't lost.
+
+**Depends on:** none (independent of markers).
+
+---
+
 ## Summary of what requires you (not a dev agent)
 
 1. **Cloud Console (cannot be coded):** create the 3 log-based metrics (PRD §8.2), build the Metrics Explorer dashboard (§8.3), save the Trace Explorer `session.id` filter (§8.4). Step-by-step lands in `docs/logging.md` (Task 12) — but the clicks are yours.
-2. **Deploy config:** set `SERVICE_VERSION` (git SHA) in `.github/workflows/deploy-backend.yml` so version-segmented Trace/metrics aren't flat `unknown` (PRD §8.1).
+2. **Deploy config:** set `SERVICE_VERSION=${GITHUB_SHA}` in the `gcloud run deploy` step of `.github/workflows/deploy-backend.yml` so version-segmented Trace/metrics aren't flat `unknown` (PRD §8.1). Task 13 adds a code-derived default in `telemetry.py` to minimize this; this remaining step pins the exact git SHA. **The dev-code phase must record the concrete setup (code default + deploy env line + this manual step) in `code.md`** (PRD §8.1, §9.6).
 3. **IAM verify:** confirm Cloud Run runtime SA has `roles/cloudtrace.agent`; check telemetry.py isn't logging an exporter-init warning (PRD §8.5).
-4. **Confirm two interfaces before Tasks 8/10:** (a) SP1's version source of truth (module constants vs instance `.version`) for `g.*_version`; (b) whether `Metrics.step_durations_ms` is still in the output contract (decides whether Task 8 keeps per-step duration capture).
-5. **Confirm SP3 disposition of `JunoMetrics`/`JunoLogger`** (delete vs deprecated shim) — PRD §9.1–9.2.
+4. **Two interfaces with SP1 — both RESOLVED (no action needed):** (a) version source of truth = module-level constants `CARE_PLAN_VERSION`/`GRADING_VERSION`/`INPUT_VERSION`, imported via root path and set on `g.*_version` (PRD §9.3); (b) `Metrics.step_durations_ms` is **dropped** from the output contract (PRD §9.7) — Task 8 does no per-step duration capture and SP1 removes the field from the `Metrics` model.
+5. **`JunoMetrics` disposition — RESOLVED (PRD §9.1): DELETE, no shim.** Not a confirm. SP4 deletes all `JunoMetrics` call sites (Tasks 7, 8); SP3 deletes the module. Coordinate timing with SP3 so no dangling import/class remains. `JunoLogger` is kept (PRD §9.2).

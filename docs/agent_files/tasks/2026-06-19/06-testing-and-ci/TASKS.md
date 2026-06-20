@@ -62,6 +62,9 @@ After moving, **fix the `sys.path` bootstrap** in each moved file: replace the p
 `Path(__file__).resolve().parents[1]` blocks with reliance on `conftest.py` (delete the block, or
 update `parents[N]` to the new depth). `parents` index changes because files are now one level deeper.
 
+> Import normalization + `unittest`→pytest conversion of these moved files is handled in **Task 11**
+> (owner-mandated, applies to all tests). This task only relocates + fixes the sys.path bootstrap.
+
 **Acceptance:** `python -m pytest tests/ -q` passes (same set of tests as before, just relocated);
 `test_simplify_version_dispatch.py` is gone.
 
@@ -73,7 +76,8 @@ update `parents[N]` to the new depth). `parents` index changes because files are
 `tests/simplify/test_pipeline_executors.py`, `tests/integration/test_care_plan_persistence.py`.
 
 1. Replace `/simplify` → `/care_plan` (and `/simplify/batch` → `/care_plan/batch` etc.) per SP2's
-   final paths. **Assumption:** `/care_plan*`. If SP2 differs, use its paths.
+   final paths. **SP2 route paths are LOCKED (PRD §9.1 RESOLVED) — use `/care_plan*` exactly as SP2
+   defines; do not change or re-litigate them.**
 2. In `test_care_plan_auth.py` keep the "legacy version endpoints 404" check, retargeted to assert
    `/simplify`, `/simplify/v1`, `/simplify/v1-1`, `/simplify/v1-2` all return 404 (proves SP2 removed
    them).
@@ -211,8 +215,20 @@ render via RTL without a real Firebase/network call; lockfile updated and commit
 
 ### Task 9 — CI workflow: `ci.yml` (backend pytest + frontend vitest on PR to main)
 
-**File:** `.github/workflows/ci.yml` (NEW). Conventions matched from existing workflows: Ubuntu,
-`actions/checkout@v4`, Node 20 + npm cache (from `deploy-frontend.yml`), Python 3.12 (repo venv).
+**Files:** `.github/workflows/ci.yml` (NEW) and `backend/requirements-dev.txt` (NEW). Conventions
+matched from existing workflows: Ubuntu, `actions/checkout@v4`, npm cache (from `deploy-frontend.yml`),
+Python 3.12 (repo venv). **Node 24** (PRD §4.7 / §8.4 RESOLVED — clears the recurring "Node.js 20 is
+deprecated" Actions warning).
+
+**First create `backend/requirements-dev.txt`** (PRD §8 item 5 RESOLVED) with the test/dev-only deps,
+kept out of `requirements.txt` so the prod image stays lean:
+
+```
+pytest
+pytest-cov
+reportlab
+pypdf
+```
 
 ```yaml
 name: CI
@@ -243,15 +259,15 @@ jobs:
         with:
           python-version: '3.12'
           cache: 'pip'
-          cache-dependency-path: backend/requirements.txt
+          cache-dependency-path: |
+            backend/requirements.txt
+            backend/requirements-dev.txt
 
       - name: Install dependencies
         working-directory: backend
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          # test-only deps (move to requirements-dev.txt if preferred):
-          pip install pytest pytest-cov reportlab pypdf
+          pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Run backend tests
         working-directory: backend
@@ -264,7 +280,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
 
@@ -279,8 +295,9 @@ jobs:
 
 Notes:
 - Two parallel jobs → both check names (`backend`, `frontend`) become selectable as required checks.
-- `reportlab`/`pypdf` are needed by `test_pdf.py` — confirm they're in `requirements.txt`; if not,
-  either add them there or to a new `backend/requirements-dev.txt` and `pip install -r` it.
+- Create `backend/requirements-dev.txt` with the test/dev-only deps (`pytest`, `pytest-cov`,
+  `reportlab`, `pypdf`) — RESOLVED, PRD §8 item 5. These stay **out** of `requirements.txt` so the
+  prod image stays lean; CI installs both files, the deploy build installs only `requirements.txt`.
 - No `secrets:` block — tests need none.
 
 **Acceptance:** opening a PR to `main` triggers `CI` with both jobs; both go green on a clean tree;
@@ -288,29 +305,64 @@ introducing a failing test turns the relevant job red and blocks (once branch pr
 
 ---
 
-### Task 10 — (Optional) coverage reporting
+### Task 10 — Coverage reporting (REPORTING ONLY)
 
 **Files:** `backend/pyproject.toml`, `frontend/vite.config.ts`, `ci.yml`.
 
-If the owner wants coverage (Open Q §3): add `--cov=. --cov-report=term-missing` to the pytest
-`addopts` and Vitest `coverage` (`@vitest/coverage-v8` devDep). Start **reporting-only** (no
-`--cov-fail-under`); ratchet a threshold in a later PR once a baseline exists.
+Owner decision (PRD §9.3 RESOLVED): coverage is **reporting only — no enforced gate/threshold.**
+Add `--cov=. --cov-report=term-missing` to the pytest `addopts` and Vitest `coverage`
+(`@vitest/coverage-v8` devDep). **Do NOT add `--cov-fail-under`** or any Vitest coverage threshold;
+the build must never fail on coverage. (A threshold may be ratcheted in a later PR once a baseline
+exists — out of scope now.)
 
-**Acceptance:** coverage summary printed in CI logs for both jobs; no build fails purely on coverage
-(until a threshold is intentionally added).
+**Acceptance:** coverage summary printed in CI logs for both jobs; no build fails purely on coverage.
+
+---
+
+### Task 11 — Standardize import style + convert ALL tests to pytest (owner-mandated)
+
+**Files:** all of `backend/tests/**` (moved + new), plus any source modules still using the old
+`from backend.…` import style. Verify with the existing `backend/tests/integration/test_container_startup.py`
+(added in commit `8095933`).
+
+This task encodes two owner directives (PRD §9.4 + §9.6 RESOLVED). It runs across every test file —
+do it after Tasks 2–7 have placed/created the files so it sweeps the final set.
+
+1. **Import-style standard** (from commit `8095933` "Cors issue fix", which fixed a container/deploy
+   import failure):
+   - Import from the **ROOT package path**: `from models.X import …` and `from utils.X import …`.
+     **Never** `from backend.models.X` / `from backend.utils.X`.
+   - Use **relative imports within a package** (e.g. inside `backend/models/envelope.py`:
+     `from .base import JsonModel`).
+   - Rewrite every `from backend.…` import in tests to this convention. `conftest.py` already puts
+     `BACKEND_DIR` on `sys.path` so `models.*` / `utils.*` resolve. Current offenders to fix on move:
+     `test_models_base.py`, `test_models.py`, `test_grading_model.py`,
+     `test_simplify_pipeline_executors.py`, `test_simplify_v1_2_persistence.py`.
+2. **Convert ALL tests to pytest function style** — no `unittest.TestCase` subclasses remain:
+   `class X(unittest.TestCase)` → plain functions; `setUp` → fixtures; `self.assertEqual(a, b)` →
+   `assert a == b`; `self.assertRaises(E)` → `with pytest.raises(E)`; `self.assertTrue/In/…` →
+   plain `assert`. Use the shared fixtures (`app`, `client`, `auth_ok`, `fake_firestore`, `parse_sse`)
+   in place of per-class helpers. Remove `if __name__ == "__main__": unittest.main()` tails.
+3. **Verify** the container/deploy import contract still holds:
+   `backend/tests/integration/test_container_startup.py` must pass (it imports `app` under the backend
+   workdir with firebase init patched — this is the regression guard for the `8095933` import fix).
+
+**Acceptance:** `grep -rn "from backend\." backend/tests backend/models backend/routes backend/utils`
+returns nothing; `grep -rn "unittest" backend/tests` returns nothing (no `unittest.TestCase`,
+`unittest.main`); `python -m pytest tests/ -q` passes including `test_container_startup.py`.
 
 ---
 
 ## Summary of what requires you (not a dev agent)
 
-1. **Enable branch protection on `main`** and mark the `CI` workflow's `backend` + `frontend` jobs as
-   **required** status checks (GitHub → Settings → Branches). The workflow file cannot make itself
-   required — this toggle is yours. Merge `ci.yml` first so the check names appear in the dropdown.
-2. **Confirm CI needs no secrets** (default: all external services mocked, no Firebase emulator). Say
-   so if you want CI to hit real Firebase/Gemini instead (adds secrets + scope).
-3. **Confirm CI target versions** — Python 3.12, Node 20 (matched from repo venv +
-   `deploy-frontend.yml`). And confirm whether test deps (`pytest`, `pytest-cov`, `reportlab`,
-   `pypdf`) go in `requirements.txt` or a new `requirements-dev.txt`.
-4. **Confirm SP2 final route paths** (assumed `/care_plan*`) — if different, route-test path strings
-   need a one-line update (Tasks 3, 7).
-5. **Decide coverage policy** (Task 10): reporting-only now, or enforce a threshold.
+1. **Branch protection on `main`** — **DONE** (owner already enabled it). After `ci.yml`'s first PR
+   run, just select the new `backend` + `frontend` check names in GitHub → Settings → Branches to mark
+   them required (the protection rule itself is in place). No other action.
+2. **CI secrets** — **RESOLVED: none needed now** (maybe later). All external services mocked; no
+   Firebase emulator; no secret-dependent steps.
+3. **CI target versions** — **RESOLVED: Python 3.12 + Node 24** (Node 24 clears the "Node.js 20 is
+   deprecated" Actions warning). Test deps — **RESOLVED: separate `backend/requirements-dev.txt`**
+   (`pytest`, `pytest-cov`, `reportlab`, `pypdf`); kept out of `requirements.txt` so the prod image
+   stays lean. A dev agent creates the file; no action from you.
+4. **SP2 final route paths** — **RESOLVED: LOCKED** at `/care_plan*` (PRD §9.1). No change needed.
+5. **Coverage policy** — **RESOLVED: reporting-only** (Task 10), no enforced threshold.

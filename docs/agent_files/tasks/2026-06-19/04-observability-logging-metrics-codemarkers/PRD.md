@@ -42,7 +42,7 @@ Juno's observability works but is hand-rolled, inconsistent, and has a security 
 
 ## 3. Non-Goals
 
-- **Not** rewriting the OTel/Cloud Trace transport in `telemetry.py` (it's fine; we add manual child spans + make `session.id` queryable, and read `SERVICE_VERSION` which is already wired).
+- **Not** rewriting the OTel/Cloud Trace transport in `telemetry.py` (it's fine; we add manual child spans + make `session.id` queryable). `SERVICE_VERSION` is already *read* by `telemetry.py`; SP4's only change there is giving it a code-derived default so it isn't `unknown` by default (§8.1) — not a transport rewrite.
 - **Not** adding manual child OTel spans for *every* step in this SP beyond what the markers naturally need — markers emit metrics/logs; we add child spans only where the flame-graph value is high (the LLM steps). Full per-step span coverage can be a follow-up.
 - **Not** changing the SSE protocol, the pipeline's clinical behavior, or grading math (SP3's territory).
 - **Not** building dashboards/alerts in code — Metrics Explorer charts, dashboards, and alert policies are Console steps (§8), because log-based metric creation is Console-only on GCP.
@@ -123,7 +123,7 @@ Operation→metric mapping (the 7 pipeline ops the owner listed + http + grading
 1. a **metric log line** (`jsonPayload.metric=true`, `metric_type="marker"`) that Metrics Explorer log-based metrics chart, and
 2. a **human-readable structured log line** (`message="op_complete"`) so the same event shows up on the session timeline in Logs Explorer.
 
-(Whether `JunoMetrics`/`JunoLogger` classes are deleted or kept as thin wrappers is coordinated with SP3 — SP4's position: **delete `JunoMetrics`' public methods' call sites**, keep `JunoLogger` for free-text/step logs that aren't operation-scoped. See §9.)
+**[DECIDED — see §9.1] `JunoMetrics` is deleted, not kept as a shim.** SP4 deletes every `JunoMetrics` call site (`record_latency` / `record_counter` / `record_error`); SP3 deletes the `JunoMetrics` module/class. No deprecated wrapper is kept (nothing is in production; no legacy handling). `JunoLogger` is **kept** for free-text / non-operation-scoped logs that aren't covered by markers.
 
 ```python
 # backend/utils/markers/sinks.py   (appended to the copied Sink/ConsoleSink/InMemorySink)
@@ -237,7 +237,7 @@ g.grading_version   = GRADING_VERSION    # from SP1 grading model
 g.input_version     = INPUT_VERSION      # from SP1 input model
 ```
 
-`JunoLogger.__init__(api_version=…)` becomes `__init__(function=…)`; `_base_fields()` drops `api_version` and adds `function` + the three `*_version` fields read from `g`. **Assumed SP1 interface:** each model exposes a module-level version constant (e.g. `models.grading.GRADING_VERSION`) or a `.version` attribute; if SP1 instead encodes version only on instances, the route passes the literal strings — either way the route is the single place that knows all three.
+`JunoLogger.__init__(api_version=…)` becomes `__init__(function=…)`; `_base_fields()` drops `api_version` and adds `function` + the three `*_version` fields read from `g`. **SP1 interface (RESOLVED, §9.3):** each model exposes a module-level version constant — `models.care_plan.CARE_PLAN_VERSION`, `models.grading.GRADING_VERSION`, `models.input.INPUT_VERSION` — which the route imports (root path) and sets on `g.*_version`. The route is the single place that knows all three.
 
 ### 4.6 The owner's questions — trace_id vs span_id vs session_id (answer all)
 
@@ -354,7 +354,31 @@ Wrap the three LLM steps (`simplify_language`, `clarify_actions`, `structure_not
 
 These cannot be done from code (log-based metric creation, Explorer setup, env, IAM are Console/deploy-config actions).
 
-1. **Set `SERVICE_VERSION` on Cloud Run** (git SHA or semver) in `.github/workflows/deploy-backend.yml` env — `telemetry.py` already reads it; today it's `unknown`, so version-segmented Trace/metrics are flat until set.
+1. **Set `SERVICE_VERSION` so Trace/metrics are version-segmented (today it's `unknown`).** `telemetry.py` already *reads* `SERVICE_VERSION`; it just needs a real value. **Minimize the manual step by encoding the version in code/config first, and only do the residual Cloud Run step that remains.**
+
+   **Step-by-step (do these in order):**
+   1. **Prefer a code/config default (minimizes manual work).** In `backend/telemetry.py`, read `SERVICE_VERSION` with a code-derived default instead of `"unknown"`:
+      ```python
+      # backend/telemetry.py
+      SERVICE_VERSION = os.environ.get("SERVICE_VERSION") or _build_version()
+      # _build_version(): a code constant baked at build time, e.g. read a VERSION file
+      # or a module-level __version__ constant. Falls back to "unknown" only if both miss.
+      ```
+      This means even with **zero** Cloud Run config, deploys are stamped with the baked constant — the manual step below only *upgrades* that to the exact git SHA.
+   2. **Pass the git SHA at deploy time (the residual manual step).** In `.github/workflows/deploy-backend.yml`, add `SERVICE_VERSION` to the Cloud Run deploy env from the workflow's commit SHA:
+      ```yaml
+      # .github/workflows/deploy-backend.yml — in the gcloud run deploy step
+      - run: |
+          gcloud run deploy juno-backend \
+            --image "$IMAGE" \
+            --region "$REGION" \
+            --set-env-vars "SERVICE_VERSION=${GITHUB_SHA}"
+      ```
+      (If the deploy uses `--update-env-vars` / a service YAML, set `SERVICE_VERSION=${GITHUB_SHA}` there instead.)
+   3. **One-off / out-of-band deploys (manual `gcloud`):** append `--update-env-vars SERVICE_VERSION=$(git rev-parse HEAD)` to the `gcloud run deploy` / `gcloud run services update` command.
+   4. **Verify:** after deploy, `gcloud run services describe juno-backend --region "$REGION" --format='value(spec.template.spec.containers[0].env)'` shows `SERVICE_VERSION=<sha>`; a test request's Trace/log lines carry the SHA (not `unknown`).
+
+   **IMPORTANT — record in `code.md`:** the dev-code (implementation) phase MUST capture the concrete `SERVICE_VERSION` setup actually taken (the code-default added to `telemetry.py`, the exact `deploy-backend.yml` env line, and the residual manual Cloud Run step) in the `code.md` run-summary artifact, so the deploy-time action is not lost between design and operations.
 2. **Create log-based metrics** (Logging → Logs-based Metrics → Create), all filtered `resource.type="cloud_run_revision"`:
    - **`marker_duration_ms`** — *Distribution*; filter `jsonPayload.metric=true AND jsonPayload.metric_type="marker"`; field `jsonPayload.duration_ms`; labels: `operation` (`jsonPayload.operation`), `success` (`jsonPayload.success`), `care_plan_version`.
    - **`marker_op_count`** — *Counter*; same filter; labels `operation`, `success`, `outcome`.
@@ -363,14 +387,16 @@ These cannot be done from code (log-based metric creation, Explorer setup, env, 
 3. **Metrics Explorer** (Monitoring → Metrics Explorer): select resource/metric `logging.googleapis.com/user/marker_duration_ms`, group by `operation`, aggregate p50/p95/p99; save to a "Juno Pipeline" dashboard (3 tiles: latency by op, op count by success, error count by op). Step-by-step copy goes in `docs/logging.md`.
 4. **Trace Explorer**: confirm the `session.id` span attribute appears (send a test request with `X-Session-Id`), then save a filter `session.id = <id>`. Document the round-trip (logs ↔ trace) buttons.
 5. **IAM sanity check**: the Cloud Run runtime SA needs `roles/cloudtrace.agent` (write traces) and `roles/logging.logWriter` (already implicit via stdout). No new IAM expected, but verify trace export isn't silently failing (telemetry.py logs a warning if the exporter fails).
-6. **Confirm the `*_version` source of truth from SP1** (a module constant vs instance attribute) so the route sets `g.*_version` from the right place (§4.5, §9).
+6. **`*_version` source of truth from SP1 — RESOLVED:** SP1 exposes module-level constants `CARE_PLAN_VERSION` / `GRADING_VERSION` / `INPUT_VERSION`; import them via the root path (`from models.care_plan import CARE_PLAN_VERSION`, etc.) and set `g.*_version` from them (§4.5, §9.3). No action beyond the import.
 
 ---
 
-## 9. Open Questions
+## 9. Open Questions & Decisions
 
-1. **SP3 coordination — delete vs keep `JunoMetrics`?** SP4's stance: retire `JunoMetrics`' call sites in favor of markers; keep the `metric=true` log shape (so existing log-based metrics keep working during migration). Should `JunoMetrics` the *class* be deleted now, or kept one release as a deprecated shim? (Recommend: keep as a thin shim that internally opens a marker, delete in a later cleanup.)
-2. **`JunoLogger.api_version` → `function`** is a signature change touching SP2's route and any other caller. Confirm SP2 hands SP4 the single instrumented route so we don't chase v1/v1-1 callers that SP2 may be deleting.
-3. **SP1 version constants** (Q in §8.6): exact import path for `care_plan_version` / `grading_version` / `input_version`. Assumed module-level constants; will adapt.
-4. **Async**: the pipeline is sync generators today; `execute_async` is ported but unused. Keep it for future Vertex async calls? (Recommend: yes, it's free.)
-5. **Sampling**: at higher volume, should the timeline `op_complete` log line be sampled while the metric line stays 100%? (Out of scope now; flag for scale.)
+1. **SP3 coordination — delete vs keep `JunoMetrics`?** **[RESOLVED: DELETE `JunoMetrics`.]** Nothing is in production; do not keep old/dead metrics code and do not keep a deprecated shim. The code-marker sink supersedes `JunoMetrics` entirely. **SP4 owns the removal of all `JunoMetrics` call sites** (`record_latency` / `record_counter` / `record_error`) in coordination with SP3's deletion of the `JunoMetrics` module: SP4 deletes the call sites; SP3 deletes the class/module. The `metric=true` log *shape* is preserved because `JunoSink` re-emits it (so log-based metrics still work) — but it now flows only through the marker `_emit` → `JunoSink`, never through `JunoMetrics`. `JunoLogger` is kept (only for free-text / non-operation-scoped logs).
+2. **`JunoLogger.api_version` → `function`** is a signature change touching SP2's route and any other caller. **[RESOLVED: YES — key logs by `function`.]** SP2 hands SP4 the single instrumented `care_plan` route; there is no need to chase per-version (`v1`, `v1_1`) callers — SP2 deletes those. `JunoLogger.__init__(api_version=…)` becomes `__init__(function=…)`.
+3. **SP1 version constants** — exact import path for `care_plan_version` / `grading_version` / `input_version`. **[RESOLVED (2026-06-20): module-level constants.]** SP1 exposes module-level version constants `CARE_PLAN_VERSION` (in `models/care_plan.py`), `GRADING_VERSION` (in `models/grading.py`), and `INPUT_VERSION` (in `models/input.py`); each model uses its constant as the `version` field default so the constant and the model never drift. The route imports them via the root package path — `from models.care_plan import CARE_PLAN_VERSION`, `from models.grading import GRADING_VERSION`, `from models.input import INPUT_VERSION` (per the SP6 import standard) — and sets `g.care_plan_version`/`g.grading_version`/`g.input_version` at request start. No literal-string fallback; the constants are the single source of truth. (SP1 adds these constants; see SP1 §4.)
+4. **Async**: the pipeline is sync generators today; `execute_async` is ported but unused. **[RESOLVED: KEEP async for now.]** `execute_async` stays in the copied `marker.py` for future Vertex async calls — it's free and copied verbatim, so no extra work.
+5. **Sampling**: at higher volume, should the timeline `op_complete` log line be sampled while the metric line stays 100%? **[RESOLVED: NO sampling.]** Not scaling for now; emit 100% of both the metric line and the timeline line. No sampling code is added.
+6. **`SERVICE_VERSION` on Cloud Run.** **[RESOLVED: YES — create log-based metrics and provide explicit step-by-step `SERVICE_VERSION` setup.]** The owner needs concrete, step-by-step instructions for setting `SERVICE_VERSION`; these are captured in §8.1. Prefer encoding `SERVICE_VERSION` in code/config (a code constant / env default) so the manual Cloud Run step is minimized; whatever remains manual is spelled out in §8.1. This setup **MUST also be recorded in the `code.md` run-summary** produced during the dev-code (implementation) phase, so the deploy-time action is not lost. Log-based metric creation (§8.2) is confirmed YES.
+7. **`Metrics.step_durations_ms` in the output contract?** **[RESOLVED (2026-06-20): DROP it from the output/response contract.]** Per-step durations are emitted exactly once via the code marker (`marker_duration_ms` distribution metric + the `op_complete` timeline log line), which is the whole point of SP4. Keeping a parallel `step_durations_ms` map inside the serialized `Metrics` payload would re-introduce the per-step bookkeeping SP4 deletes. So: remove `step_durations_ms` from the `Metrics` model and from the SSE result envelope; the route does **no** per-step duration capture and adds **no** `execute_returning_duration` helper. `Metrics` keeps only request-level fields (e.g. session/version/input metadata + total duration if already present). Per-step latency lives only in logs/metrics. (Coordinated with SP1, which drops the field from the `Metrics` model.)

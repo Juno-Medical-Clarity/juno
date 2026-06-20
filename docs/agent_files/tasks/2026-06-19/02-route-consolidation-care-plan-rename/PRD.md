@@ -79,9 +79,11 @@ removes the dead appointment plumbing.
   come from SP1. SP2 *uses* them.
 - **Not changing logging/`session_id` semantics.** SP4 owns observability. SP2 only removes the dead
   route-name (`appointment_id`) plumbing; SP4 owns the correct `session_id` fallback. (Boundary in §8.)
-- **Not renaming the Firestore collection data already in production.** The *code constant* may be
-  renamed but the on-disk collection name must stay stable unless a migration is scheduled (see §8/§9).
 - **Not implementing the frontend changes.** SP2 defines the contract; SP5 implements it.
+
+> **Owner note (2026-06-20):** "Not renaming the Firestore collection" is **withdrawn**. Nothing is in
+> production and there is no data to migrate, so SP2 renames the collection literal
+> `"simplify_outputs"` → `"care_plan_outputs"` directly (see §4.4, §8). No migration, no dual-read.
 
 ---
 
@@ -94,8 +96,7 @@ landing:
 
 ```python
 # models/care_plan.py (SP1)
-class CarePlan(VersionedJsonModel): ...          # pipeline-produced care plan (was SimplifiedCarePlan)
-class SimplifiedCarePlan(VersionedJsonModel): ...  # name SP1 keeps for the v1_2 structured result
+class SimplifiedCarePlan(VersionedJsonModel): ...  # name SP1 keeps for the v1_2 structured result type
     @classmethod
     def from_pipeline_result(cls, version: str, data: dict) -> "SimplifiedCarePlan"
     def to_dict(self) -> dict                      # {"version": ..., **data}
@@ -119,15 +120,20 @@ class CarePlanInternal(JsonModel):              # was SimplifyOutput
     metrics: Metrics
     input: Input
     grading: Grading
-    simplified_care_plan: SimplifiedCarePlan    # field name retained for response stability
+    care_plan: SimplifiedCarePlan               # inner wire key is `care_plan` (hard-flipped, see below)
     def to_dict(self) -> dict
 ```
 
 > **NOTE on the locked decision "`SimplifyOutput → CarePlanInternal`."** Today the envelope class is
 > `SimplifyOutput` in `models/envelope.py`. SP1 renames it to `CarePlanInternal`. SP2 imports and
-> composes `CarePlanInternal`. The **envelope's `to_dict()` JSON keys are unchanged**
-> (`metrics`/`input`/`grading`/`simplified_care_plan`) so the wire shape is stable for SP5. See §9 for
-> the open question on whether the inner `simplified_care_plan` key should also become `care_plan`.
+> composes `CarePlanInternal`.
+>
+> **CROSS-CUTTING DECISION (2026-06-20): inner wire key is `care_plan`.** The envelope's inner key for
+> the care-plan content is **`care_plan`**, not `simplified_care_plan`. This is a HARD FLIP applied NOW
+> across SP1/SP2/SP5 — there is **no `simplified_care_plan` alias**, one decided key only. The
+> envelope's `to_dict()` JSON keys are therefore `metrics`/`input`/`grading`/`care_plan`. Because
+> nothing is in production, the previous "keep `simplified_care_plan` for wire stability" stance is
+> overridden. SP1 owns the field name on the model; SP2 composes it; SP5 reads `care_plan`.
 
 ### 4.2 Consolidated route design
 
@@ -137,9 +143,24 @@ class CarePlanInternal(JsonModel):              # was SimplifyOutput
 `_input_model_from_resolved`, `_grading_enabled_from_request`, `_derive_output_name`, `_sse`,
 `run_care_plan_pipeline` [renamed from `run_v1_2_pipeline`], `ResolvedInput`).
 
-The `version` form/JSON field is still accepted for forward compatibility, but `ALLOWED_VERSIONS`
-collapses to `{"v1-2"}` and the default is `CARE_PLAN_DEFAULT_VERSION` (default `"v1-2"`). Unknown
-versions → `400`. There is **no dispatch** — v1/v1_1 are gone.
+The `version` field is **read from the request body** (form field or JSON key `version`) and selects
+how the care plan is serialized/produced. Today `ALLOWED_VERSIONS` collapses to `{"v1-2"}` and the
+default is `CARE_PLAN_DEFAULT_VERSION` (default `"v1-2"`). Unknown versions → `400`.
+
+**Extensibility (owner decision, 2026-06-20):** v1 and v1_1 are deleted, but the owner WILL add more
+versions/layers later (e.g. `v1-3`). The route must be built so adding the next version is a small,
+local change — NOT a re-architecture. Concretely:
+
+- The version comes from the **request body** (the frontend supplies it), validated against
+  `ALLOWED_VERSIONS`.
+- Selection of pipeline + serialization is driven by a single explicit mapping keyed by version, e.g.
+  a `PIPELINES = {"v1-2": run_care_plan_pipeline}` (or equivalent registry). Adding `v1-3` means: add
+  the new pipeline callable, add `"v1-3"` to `ALLOWED_VERSIONS`, add one entry to the mapping. No
+  branching `if version == ...` chains.
+- This is a **registry of one** today — deliberately. It is NOT the multi-module dispatcher of the old
+  `routes/simplify.py`; there is one route module (`routes/care_plan.py`) and one consolidated stream
+  function. Do **not** resurrect v1/v1_1-style separate route files for new versions; new versions add
+  a pipeline + a registry entry, not a new blueprint.
 
 ### 4.3 Composition flow (route = single composer + single serializer)
 
@@ -177,32 +198,41 @@ run_care_plan_pipeline(text, metrics, grading_enabled) -> yields typed layer out
      typed objects via a small closure/holder or yields a non-SSE marker the route intercepts — the
      route, not the pipeline, builds CarePlanInternal. Keep the pipeline free of envelope/serialize.)
 
-_care_plan_stream(user_id):                   # the ONLY composer + serializer
+_care_plan_stream(user_id, version):          # the ONLY composer + serializer
     resolved   = _resolve_input()             # input layer
     input_mdl  = _input_model_from_resolved(resolved)        # input layer -> Input
-    metrics    = Metrics.start(session_id=..., pipeline_version="v1-2", input_type=resolved.source_kind)
+    session_id = g.session_id                  # SP4 boundary: session_id only, never user_id fallback
+    metrics    = Metrics.start(session_id=session_id, pipeline_version=version,
+                               input_type=resolved.source_kind)
+    pipeline   = PIPELINES[version]             # registry lookup (extensibility, §4.2)
     # drive pipeline, forward step SSE events
     care_plan, grading, raw_text, clarified = run pipeline (typed outputs)
-    if resolved.source_kind != "doc_id":
-        metrics.saved_id = save_care_plan_output(... output_data=<serialized once below or pre-save>)
     envelope = CarePlanInternal(metrics=metrics, input=input_mdl, grading=grading,
-                                simplified_care_plan=care_plan)   # COMPOSE ONCE
-    yield _sse({"step": "result", "data": envelope.to_dict()})    # SERIALIZE ONCE
+                                care_plan=care_plan)          # COMPOSE ONCE (inner key `care_plan`)
+    if resolved.source_kind != "doc_id":
+        payload = envelope.to_dict()                          # SERIALIZE ONCE
+        metrics.saved_id = save_care_plan_output(... output_data=payload)  # persist from the SAME dict
+        payload["metrics"]["saved_id"] = metrics.saved_id     # reflect saved_id into the one payload
+        yield _sse({"step": "result", "data": payload})
+    else:
+        yield _sse({"step": "result", "data": envelope.to_dict()})   # doc_id path: not persisted
 ```
 
 Key rules enforced by this design:
 - The **pipeline returns its own typed model** (`SimplifiedCarePlan`) and the **grading layer returns
   `Grading`** and the **input layer returns `Input`**. The route does **not** build dicts by hand.
 - `CarePlanInternal` is constructed in exactly one place, with the real `Input` (no throwaway
-  `Input.from_text`), the real `Metrics` (already carrying `saved_id`), the real `Grading`.
-- `to_dict()` is called **once**, at the `result` step. No post-serialization patching.
-- **Save ordering:** `save_care_plan_output()` needs `saved_id` to land in `metrics` *before* the
-  single serialize. So the save happens before composing the envelope. The data persisted to Firestore
-  is derived from the typed pieces (the route can serialize the care-plan/grading portion for storage;
-  `save_output.py`'s `_without_raw` still strips `raw`). Compose-then-save-then-reserialize is the one
-  case where two serializations are unavoidable — acceptable because the *response* path serializes
-  once; the *persistence* path is separate. (Document this in the route; flagged in §9 if the team
-  wants a stricter single-serialize including persistence.)
+  `Input.from_text`), the real `Metrics`, the real `Grading`. The inner wire key is **`care_plan`**.
+- **Single-serialize including persistence (owner decision, 2026-06-20):** there is **one**
+  `to_dict()` call. The persisted Firestore payload is derived from the *same* dict produced for the
+  response — store-then-respond from one dict. `save_care_plan_output()` returns the `saved_id`, which
+  is written back into that single payload's `metrics` before the `result` event is yielded. No
+  separate serialization for persistence, no post-hoc `result_data["input"]`/`result_data["metrics"]`
+  rebuild. `save_output.py`'s `_without_raw` still strips `raw` from what it stores (it receives the
+  full payload and strips for storage only — the response keeps `raw`).
+- **Save ordering:** because `saved_id` must appear in the response `metrics`, the sequence is
+  compose → serialize once → save (passing the dict) → write the returned `saved_id` back into that
+  same dict → emit `result`. The `doc_id` source is the early-exit: no save, just serialize once.
 
 ### 4.4 Full rename map (old → new)
 
@@ -277,30 +307,40 @@ Key rules enforced by this design:
 | log prefixes `"simplify_v1_2: ..."`, `"simplify: ..."` | `"care_plan: ..."` |
 | docstring examples `path="/simplify/v1-2"` in `juno_logger.py`/`juno_metrics.py` | `path="/care_plan"` |
 
-> **SP4 boundary:** the metric/operation string renames touch `utils/juno_metrics.py` and
-> `utils/juno_logger.py` docstrings. SP2 proposes them in this map but **defers final wording to SP4**
-> if SP4 is restructuring those modules. At minimum, the *route-level* call sites
-> (`record_counter("care_plan_request")`, `record_latency("care_plan_pipeline")`) are renamed by SP2.
+> **Metric/operation string renames (owner decision, 2026-06-20):** create the NEW names; do **not**
+> preserve the old `simplify_*` series. The route-level call sites
+> (`record_counter("care_plan_request")`, `record_latency("care_plan_pipeline")`,
+> `record_error(..., "care_plan_pipeline", ...)`) are renamed by SP2. The docstring examples in
+> `utils/juno_metrics.py` / `utils/juno_logger.py` are coordinated with SP4 (which owns those module
+> internals); if SP4 has not restructured them by landing, SP2 updates the docstrings too. There is no
+> dual-emit and no old-name retention.
 
 **Term-detection / pipeline docstrings:** `utils/term_detection.py` line 2 and the v1_2 pipeline
 docstrings say "simplify pipeline" — cosmetic; rename to "care_plan pipeline" for consistency
 (non-load-bearing, low priority).
 
-**Firestore collection:** code references `db.collection("simplify_outputs")` in `save_output.py`,
-`grading.py`, `saved_outputs.py`. **Leave the literal collection name `"simplify_outputs"` unchanged**
-in Phase 1 (renaming it is a data migration, not a code refactor). See §8/§9.
+**Firestore collection (owner decision, 2026-06-20 — rename HERE):** code references
+`db.collection("simplify_outputs")` in `save_output.py`, `grading.py`, `saved_outputs.py`. Rename the
+literal to **`"care_plan_outputs"`** in all three. Nothing is in production and there is no data, so
+there is **no migration, no dual-read, no data copy** — just change the string. (This overrides the
+earlier "leave unchanged" stance.)
+
+**GCS blob prefix:** `save_output.py` uses a `simplify/{user_id}/inputs/...` blob prefix. Rename it to
+`care_plan/{user_id}/inputs/...` for consistency (no objects to migrate).
 
 ---
 
 ## 5. API Change Summary
 
 All changes are **path renames** of the `/simplify*` surface to `/care_plan*`; request/response
-bodies are unchanged except where noted. SSE shapes are byte-identical (same step events, same final
-`{"step":"result","data": <CarePlanInternal.to_dict()>}`).
+bodies are unchanged except where noted. SSE step events are unchanged, and the final event is
+`{"step":"result","data": <CarePlanInternal.to_dict()>}` — but the inner content key is now
+**`care_plan`** (was `simplified_care_plan`; hard flip, see §4.1). The top-level keys are
+`metrics`/`input`/`grading`/`care_plan`.
 
 | Endpoint (before) | Endpoint (after) | Request | Response |
 |---|---|---|---|
-| `POST /simplify` | `POST /care_plan` | multipart `files[]`/`file`/`text`/`doc_id`, `version` (optional, only `v1-2`), `grading_enabled` | SSE; final `data` = `CarePlanInternal.to_dict()` (keys unchanged) |
+| `POST /simplify` | `POST /care_plan` | multipart `files[]`/`file`/`text`/`doc_id`, `version` (from request body, default `v1-2`, only `v1-2` allowed today), `grading_enabled` | SSE; final `data` = `CarePlanInternal.to_dict()` (inner key `care_plan`) |
 | `POST /simplify/grade` | `POST /care_plan/grade` | JSON `{saved_id}` or `{text, clarified_text}` | `{ "grading": Grading.to_dict() }` |
 | `POST /simplify/batch` | `POST /care_plan/batch` | JSON `{version, selections, grading_enabled}` | SSE batch events |
 | `GET /simplify/datasets` | `GET /care_plan/datasets` | — | `{ "datasets": [...] }` |
@@ -314,7 +354,10 @@ bodies are unchanged except where noted. SSE shapes are byte-identical (same ste
 **Removed behavior:** `version=v1` and `version=v1-1` are no longer accepted → `400 {"error":"Unknown
 version 'v1'"}`. The `/` root endpoint no longer advertises non-existent `/appointments/*` routes.
 
-**Backward-compatibility for old `/simplify*` clients:** see §8 + §9 (alias vs. hard cut decision).
+**Backward-compatibility for old `/simplify*` clients:** none. **HARD CUT** (owner decision,
+2026-06-20) — no one uses `/simplify`, so there is **no alias and no redirect** from `/simplify*` to
+`/care_plan*`. The `/simplify*` paths simply 404 after this lands. Frontend (SP5) ships the new paths
+in lockstep (§6, §8).
 
 ---
 
@@ -335,9 +378,14 @@ The frontend already references these paths (verified in `frontend/src`):
 modules/symbols is SP5's call and does not affect the backend contract. SP2 only owns the **HTTP path
 strings** above.
 
-**Deploy coordination:** because the path change is a hard cut (default), the frontend must ship the
-new paths **in lockstep** with the backend deploy — or the backend must keep `/simplify*` aliases for
-one release (see §8/§9).
+**Inner key change SP5 must adopt:** the envelope's inner content key is now **`care_plan`** (was
+`simplified_care_plan`; hard flip, §4.1). Frontend consumers that read `data.simplified_care_plan`
+(e.g. `AppointmentNoteV12View.tsx`, `envelope.ts`) must read `data.care_plan`. There is no alias.
+
+**Deploy coordination (owner decision, 2026-06-20):** the path change AND the inner-key change are a
+**hard cut** — no aliases. The frontend MUST ship the new `/care_plan*` paths and read the `care_plan`
+inner key **in lockstep** with the backend deploy (deploy FE and BE together). There is no
+one-release alias window.
 
 ---
 
@@ -353,75 +401,88 @@ Rename files `test_simplify_*` → `test_care_plan_*` (SP6 confirms naming) and 
 New / updated route-level tests SP2 requires:
 
 1. **`POST /care_plan` happy path (text input):** 200 SSE; final `result.data` has top-level keys
-   `metrics`, `input`, `grading`, `simplified_care_plan`; `input` reflects the *real* resolved input
-   (text mode), NOT a throwaway — i.e. assert the composer used the resolved `Input`.
-2. **Single-serialize / single-compose invariant:** assert `metrics.saved_id` is present in the final
-   `result.data.metrics` for a saved (non-`doc_id`) run, proving `saved_id` was set before the one
-   serialize (no post-hoc `result_data["metrics"]` patch).
+   `metrics`, `input`, `grading`, `care_plan` (the inner key is `care_plan`, NOT
+   `simplified_care_plan` — assert `simplified_care_plan` is absent); `input` reflects the *real*
+   resolved input (text mode), NOT a throwaway — i.e. assert the composer used the resolved `Input`.
+2. **Single-serialize (incl. persistence) invariant:** assert `metrics.saved_id` is present in the
+   final `result.data.metrics` for a saved (non-`doc_id`) run, and that the persisted Firestore
+   payload is derived from the SAME dict (e.g. mock `save_care_plan_output`, assert it received a dict
+   with the `care_plan` inner key; assert no second `to_dict()` / no `result_data["metrics"]` rebuild).
 3. **`doc_id` path is not persisted:** a `doc_id`-sourced request yields a result with no Firestore
    write (mock `save_care_plan_output`, assert not called) — preserves the existing early-exit.
 4. **Version validation:** `version=v1` and `version=v1-1` → `400`; `version=v1-2` and omitted → 200.
-5. **Removed routes 404:** `POST /simplify`, `POST /simplify/grade`, `GET /simplify/saved` → 404
-   (or 200 if alias kept — gate the assertion on the §9 decision).
+5. **Removed routes 404 (hard cut):** `POST /simplify`, `POST /simplify/grade`, `GET /simplify/saved`
+   → 404. No alias exists; assert 404 unconditionally.
 6. **New paths reachable:** `POST /care_plan`, `POST /care_plan/grade`, `POST /care_plan/batch`,
    `GET /care_plan/datasets`, `GET /care_plan/saved` all auth-gated and routable.
-7. **`app.py` cleanup:** root `/` JSON no longer contains any `/appointments/*` key; a request to a
-   non-appointment route still gets a `session_id` (from `X-Session-Id` or generated UUID) — the
-   `appointment_id` branch removal does not break the fallback. (Coordinate exact assertion with SP4.)
+7. **`app.py` cleanup:** root `/` JSON no longer contains any `/appointments/*` key; a request still
+   gets a `session_id` from `X-Session-Id` (or a generated UUID when the header is absent) — and
+   **never** falls back to `user_id`. The `appointment_id` branch removal does not break the
+   header→UUID fallback. (SP4 boundary, §8.5.)
 8. **Batch uses the consolidated pipeline:** `POST /care_plan/batch` imports/calls
    `run_care_plan_pipeline` (the former `run_v1_2_pipeline`) and no longer references
    `run_v1_pipeline` / `run_v1_1_pipeline`.
 9. **`grade` endpoint reads from the renamed save helper / collection:** existing grading tests pass
-   against the new path.
+   against the new path and the renamed collection `"care_plan_outputs"`.
 
 ---
 
 ## 8. Manual Intervention Required From You
 
-1. **Deployed route names / live clients.** `/simplify*` is the current production surface. Decide
-   **hard cut vs. temporary alias** (default proposal: hard cut, frontend + backend deploy in
-   lockstep). If any non-Juno client (scripts, Postman, partners) calls `/simplify`, you must either
-   keep aliases (§9) or notify them. **You must confirm there are no external callers of `/simplify`
-   before the hard cut.**
+1. **Deployed route names / live clients — RESOLVED: HARD CUT.** No one uses `/simplify`, so SP2 does
+   a hard cut: no alias, no redirect for `/simplify*` → `/care_plan*`. The `/simplify*` paths 404 after
+   landing. No external-caller confirmation step is required (owner confirmed none).
 2. **Env var rename `SIMPLIFY_DEFAULT_VERSION` → `CARE_PLAN_DEFAULT_VERSION`.** This is a Cloud Run
    deploy-config change. Update the env var in the Cloud Run service / deploy manifest / `.env` /
    secrets at deploy time, or the new code falls back to the `"v1-2"` default and silently ignores the
    old var. **Action required by you in the deploy pipeline.**
-3. **Frontend lockstep deploy.** SP5 ships the new `/care_plan*` paths. Backend + frontend must deploy
-   together (or aliases must be live first). You coordinate the release ordering.
-4. **Firestore collection name.** Code keeps `"simplify_outputs"` (no data migration in Phase 1). If
-   you want the collection renamed to `care_plan_outputs`, that is a **separate, scheduled data
-   migration** (copy docs + dual-read window) — out of SP2 scope; flag if desired.
-5. **SP4 boundary — `session_id`.** SP2 removes the dead `appointment_id` branch in `before_request`
-   and the stale root-endpoint docs. SP2 does **not** redesign the `session_id` fallback — **SP4 owns
-   the correct fallback** (header → generated UUID, and any new semantics). Confirm SP4 has landed or
-   will land the fallback so the removal does not regress trace grouping.
-6. **Metric/operation string renames** (`simplify_pipeline` → `care_plan_pipeline`, etc.) will create
-   **new metric/log series**; old dashboards/alerts querying `simplify_*` will go silent. Update Cloud
-   Monitoring dashboards/alerts, or defer the metric-name half of the rename to SP4. **Your call.**
+3. **Frontend lockstep deploy — RESOLVED: YES.** SP5 ships the new `/care_plan*` paths AND the
+   `care_plan` inner key. Backend + frontend deploy **together** (no alias window exists). You
+   coordinate the simultaneous release.
+4. **Firestore collection name — RESOLVED: RENAME HERE.** Nothing is in production and there is no data
+   to migrate, so SP2 changes the collection literal `"simplify_outputs"` → `"care_plan_outputs"`
+   directly (and the GCS blob prefix `simplify/...` → `care_plan/...`). No migration, no dual-read, no
+   data copy. Nothing for you to do here beyond the deploy itself.
+5. **SP4 boundary — `session_id` — RESOLVED.** SP2 removes the dead `appointment_id` branch in
+   `before_request` and the stale root-endpoint docs. `session_id` is sourced from `X-Session-Id`
+   (header) → generated UUID; it **never** falls back to `user_id`. SP4 owns any further fallback
+   semantics. Confirm SP4 has landed/will land its fallback so removing the dead branch does not
+   regress trace grouping.
+6. **Metric/operation string renames — RESOLVED: NEW names, no old retention.**
+   (`simplify_request` → `care_plan_request`, `simplify_pipeline` → `care_plan_pipeline`, etc.) These
+   create **new** metric/log series; the old `simplify_*` series stop entirely (no dual-emit). Old
+   dashboards/alerts querying `simplify_*` will go silent — update Cloud Monitoring dashboards/alerts
+   to the new names. **Action required by you in Monitoring.**
 
 ---
 
-## 9. Open Questions
+## 9. Open Questions & Decisions
 
-1. **Hard cut vs. alias for `/simplify*`.** Default: hard cut. Alternative: register the old paths as
-   aliases (same view functions, both `/simplify` and `/care_plan` rules on the blueprint) for one
-   release, then remove. Aliasing is ~5 lines per route and de-risks the frontend lockstep. **Decision
-   needed** — it changes test #5 and §8.1. Recommendation: keep aliases for ONE release behind a
-   `CARE_PLAN_LEGACY_ALIASES` flag, then delete.
-2. **Inner key `simplified_care_plan`.** The envelope's inner key is `simplified_care_plan`. Should it
-   become `care_plan` for full naming consistency? That is a **response-shape change** that ripples to
-   SP5 (`AppointmentNoteV12View.tsx`, `envelope.ts`) and saved Firestore docs (read-time mapping).
-   Default: **keep `simplified_care_plan`** in Phase 1 (wire stability); revisit in a later phase.
-3. **Metric-name rename ownership.** Should SP2 rename `simplify_request`/`simplify_pipeline` now, or
-   leave them for SP4 to avoid double-touching `juno_metrics.py`? Default: SP2 renames the **route call
-   sites**; SP4 owns module internals/docstrings.
-4. **`save_simplify_output` rename vs. collection name.** Renaming the function is safe; the
-   *collection string* is not. Confirm we keep `"simplify_outputs"` as the collection literal (yes by
-   default).
-5. **Single-serialize including persistence.** §4.3 keeps persistence as a separate serialization from
-   the response. Acceptable? Or do we want the persisted payload derived from the same single
-   `to_dict()` call (store-then-respond from one dict)? Default: accept two (response path is single).
-6. **`CarePlanInternal` exact name from SP1.** If SP1 lands the envelope as something other than
-   `CarePlanInternal` (e.g. keeps `SimplifyOutput`), SP2 adjusts the import. Confirm SP1's final name
-   before landing.
+1. **Hard cut vs. alias for `/simplify*`.** `[RESOLVED: 2026-06-20 — HARD CUT.]` No one uses
+   `/simplify`. No alias, no redirect for `/simplify*` → `/care_plan*`. `/simplify*` paths 404 after
+   landing. Removes the alias task and the alias-gated branch of test #5; see §5, §6, §8.1.
+2. **Inner key `simplified_care_plan` → `care_plan`.** `[RESOLVED: 2026-06-20 — HARD FLIP to
+   `care_plan`.]` Cross-cutting decision across SP1/SP2/SP5. The envelope's inner content key is
+   `care_plan`; there is **no `simplified_care_plan` alias**, one key only. Nothing is in production so
+   wire stability is not a concern. SP1 owns the model field name; SP2 composes `care_plan=...`; SP5
+   reads `data.care_plan` (`AppointmentNoteV12View.tsx`, `envelope.ts`). See §4.1, §5, §6.
+3. **Metric-name rename ownership.** `[RESOLVED: 2026-06-20 — create NEW names; do not preserve old.]`
+   SP2 renames the route-level call sites (`care_plan_request`, `care_plan_pipeline`) and updates the
+   `juno_metrics.py`/`juno_logger.py` docstrings if SP4 hasn't restructured them by landing. No
+   dual-emit; old `simplify_*` series stop. SP4 owns module internals. See §4.4, §8.6.
+4. **`save_simplify_output` rename + collection name.** `[RESOLVED: 2026-06-20 — rename BOTH.]`
+   Function `save_simplify_output` → `save_care_plan_output`; collection literal `"simplify_outputs"` →
+   `"care_plan_outputs"`; GCS blob prefix `simplify/...` → `care_plan/...`. No data to migrate. See
+   §4.4, §8.4.
+5. **Single-serialize including persistence.** `[RESOLVED: 2026-06-20 — single serialize INCLUDING
+   persistence.]` The persisted payload is derived from the same single `to_dict()` call as the
+   response (store-then-respond from one dict; `saved_id` written back into that one payload). No
+   separate serialization for persistence. See §4.3.
+6. **`CarePlanInternal` exact name from SP1.** `[RESOLVED: 2026-06-20 — name is exactly
+   `CarePlanInternal`.]` SP2 imports `from models.envelope import CarePlanInternal`. No adjustment
+   needed.
+7. **Extensibility for future versions.** `[RESOLVED: 2026-06-20 — keep the design extensible.]` Even
+   though v1/v1_1 are deleted, more versions/layers WILL be added later. The version is supplied by the
+   frontend in the request body and selects pipeline + serialization via a single registry mapping
+   (`PIPELINES = {"v1-2": ...}`). Adding `v1-3` = add the pipeline + one registry entry + one
+   `ALLOWED_VERSIONS` member. Do NOT resurrect per-version route modules/blueprints. See §4.2.

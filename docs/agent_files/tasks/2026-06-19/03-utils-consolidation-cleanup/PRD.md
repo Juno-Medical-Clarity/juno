@@ -74,8 +74,9 @@ several modules are pure dead weight that confuses readers and inflates the depe
 |---|---|---|
 | `utils/pdf_extract.py` | `extract_text_from_pdf` | `utils/pdf.py` |
 | `utils/pdf_merge.py` | `merge_pdfs` (+ private `_txt_to_pdf`, `_append_pdf`) | `utils/pdf.py` |
-| `config.py` | `initialize_firebase` | `utils/firebase.py` (re-exported by `config.py` — see 4.3) |
-| `utils/save_output.py` | `save_simplify_output`, `upload_combined_pdf`, `_without_raw` | `utils/firebase.py` (Firestore part) / GCS helper stays GCS — see 4.3 |
+| `config.py` | `initialize_firebase` | `utils/firebase.py` (NO re-export; `app.py` + test repointed — see 4.3) |
+| `utils/save_output.py` | `save_simplify_output`, `_without_raw` | `utils/firebase.py` (Firestore) |
+| `utils/save_output.py` | `upload_combined_pdf` | `routes/simplify_v1_2.py` (its sole caller — no `utils/gcs.py`; see 4.3) |
 | `utils/auth.py` | `verify_firebase_token` | `utils/firebase.py` |
 | `routes/saved_outputs.py` | `_db`, `_get_doc_or_403` | `utils/firebase.py` (`firestore_client`, `get_owned_doc_or_403`) |
 | `routes/grading.py` | `_db`, `_get_doc_or_403` (duplicate) | use `utils/firebase.py` (delete the duplicates) |
@@ -83,8 +84,8 @@ several modules are pure dead weight that confuses readers and inflates the depe
 | `utils/gemini_client.py` | `GeminiAPIClient` | `utils/llm.py` |
 | `simplify/v1_2/pipeline.py` (inline Vertex client + Gemini switch in `__init__` / `_generate_text`) | — | `utils/llm.py` (`LLMClient`) |
 | `simplify/v1/pipeline.py`, `simplify/v1_1/pipeline.py` (inline Vertex client) | — | `utils/llm.py` (`LLMClient`) |
-| `utils/ocr.py` | `ocr_image`, `ocr_pdf`, `ocr_pdf_gcs` | **DELETED** (dead) |
-| `utils/storage.py` | `StorageService` | **DELETED** (dead — bonus finding, see 4.6) |
+| `utils/ocr.py` | `ocr_image`, `ocr_pdf`, `ocr_pdf_gcs` | **DELETED** (dead — owner confirmed) |
+| `utils/storage.py` | `StorageService` | **DELETED** (dead — owner confirmed, see 4.6) |
 | `utils/LOGGING.md` | — | **DELETED** (home is `docs/logging.md`, SP4) |
 
 > **Naming choice: `utils/llm.py`, not `utils/gemini.py`.** The module holds *both* the Gemini API
@@ -158,43 +159,36 @@ def save_simplify_output(*, user_id, name, source_filename, input_pdf_gcs, outpu
     """Persist a simplify output document to Firestore. Moved verbatim from save_output.py."""
 ```
 
-**GCS vs Firestore split (resolves an Open Question).** `utils/save_output.py` currently mixes two
-concerns: `save_simplify_output` (Firestore write) and `upload_combined_pdf` (GCS upload). `firebase.py`
-should own **Firestore-only** logic. The GCS upload is a Cloud Storage concern, not Firebase.
+**GCS vs Firestore split (RESOLVED by owner — no `utils/gcs.py`).** `utils/save_output.py` currently
+mixes two concerns: `save_simplify_output` (Firestore write) and `upload_combined_pdf` (GCS upload).
+`firebase.py` owns **Firestore-only** logic.
 
-- **Decision:** `save_simplify_output` and `_without_raw` move into `utils/firebase.py`.
-  `upload_combined_pdf` moves into a small **`utils/gcs.py`** module (single home for the
-  `gs://` upload/download/signed-URL helpers). This keeps `firebase.py` cohesive and gives the GCS code
-  scattered across `routes/saved_outputs.py` (delete + signed-URL), `routes/simplify_v1_2.py`,
-  `routes/simplify_v1_1.py` (`_fetch_from_gcs`), and the dead `utils/storage.py` a future home.
-- **Scope guard:** Creating `utils/gcs.py` and migrating `upload_combined_pdf` into it is **in scope**
-  (it's a clean lift). Migrating the routes' *inline* GCS blocks (`_fetch_from_gcs`, signed-URL
-  generation in `saved_outputs.py`) into `utils/gcs.py` is **optional / flagged as a follow-up** —
-  doing it now overlaps heavily with SP2's route work and risks merge conflicts. See §9 OQ-2. The
-  TASKS file marks the route-GCS migration as a separate, skippable task.
-- The dead `StorageService` in `utils/storage.py` is **not** revived into `utils/gcs.py`; it is deleted
-  (4.6). `utils/gcs.py` is built from the live `upload_combined_pdf` code instead.
+- **Decision (owner-directed clean-up):** `save_simplify_output` and `_without_raw` move into
+  `utils/firebase.py`. **`upload_combined_pdf` is relocated into `routes/simplify_v1_2.py`** — its sole
+  caller — rather than into a new `utils/gcs.py`. The owner directed `utils/gcs.py: DELETE`, i.e. do
+  not create a standalone one-function GCS utility module. Inlining `upload_combined_pdf` at its only
+  call site removes the last reason for `utils/save_output.py` to exist (which is then deleted).
+- The dead `StorageService` in `utils/storage.py` is deleted (4.6). No GCS helper module is created.
+- **Route-inline GCS migration is dropped** (was OQ-2's optional sub-question): with no `utils/gcs.py`
+  target, the `_fetch_from_gcs` / signed-URL blocks simply stay where they are. SP2 can revisit GCS
+  organization if it wants; SP3 does not.
 
 **`config.py` after the move.** `config.py` still loads `.env` and exposes the config constants
-(`GCP_PROJECT_ID`, `VERTEX_AI_MODEL`, etc.). To avoid breaking `app.py:11` (`from config import
-initialize_firebase`) and `tests/test_container_startup.py` which patches
-`config.initialize_firebase`, **re-export** the function:
+(`GCP_PROJECT_ID`, `VERTEX_AI_MODEL`, etc.). Per the owner directive (no one-line wrapper/re-export
+modules), `config.py` does **NOT** re-export `initialize_firebase`. Instead the two consumers are
+repointed directly to `utils.firebase`:
 
-```python
-# config.py
-from utils.firebase import initialize_firebase  # re-export; canonical impl lives in utils.firebase
-```
+- `app.py:11` → `from utils.firebase import initialize_firebase` (one-line edit; not a wrapper).
+- `tests/test_container_startup.py:16,44` → `patch("utils.firebase.initialize_firebase", ...)`.
 
-This keeps both `from config import initialize_firebase` and `patch("config.initialize_firebase")`
-working with zero churn in `app.py` or that test. (If SP2 prefers `app.py` to import directly from
-`utils.firebase`, that's a one-line change they can make — flagged in §8.)
+This deletes the `initialize_firebase` definition from `config.py` outright with no shim.
 
 **Import sites to update:**
 
 | File | Current | New |
 |---|---|---|
-| `app.py:11` | `from config import initialize_firebase` | unchanged (re-export) — or `from utils.firebase import initialize_firebase` |
-| `tests/test_container_startup.py:16,44` | `patch("config.initialize_firebase", ...)` | unchanged (re-export keeps name on `config`) |
+| `app.py:11` | `from config import initialize_firebase` | `from utils.firebase import initialize_firebase` |
+| `tests/test_container_startup.py:16,44` | `patch("config.initialize_firebase", ...)` | `patch("utils.firebase.initialize_firebase", ...)` |
 | `routes/saved_outputs.py:21` | `from utils.auth import verify_firebase_token` | `from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403` |
 | `routes/saved_outputs.py:34-48` | local `_db()` / `_get_doc_or_403()` | **delete**, call `firestore_client()` / `get_owned_doc_or_403(db, "simplify_outputs", ...)` |
 | `routes/grading.py:9` | `from utils.auth import verify_firebase_token` | `from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403` |
@@ -203,9 +197,9 @@ working with zero churn in `app.py` or that test. (If SP2 prefers `app.py` to im
 | `routes/datasets.py:4` | `from utils.auth import verify_firebase_token` | `from utils.firebase import verify_firebase_token` |
 | `routes/batch.py:15` | `from utils.auth import verify_firebase_token` | `from utils.firebase import verify_firebase_token` |
 | `routes/batch.py:17` | `from utils.save_output import save_simplify_output` | `from utils.firebase import save_simplify_output` |
-| `routes/simplify_v1_2.py:33` | `from utils.save_output import save_simplify_output, upload_combined_pdf` | `from utils.firebase import save_simplify_output` + `from utils.gcs import upload_combined_pdf` |
-| `tests/test_save_output.py:13-78` | patches `utils.save_output.*` | retarget to `utils.firebase.*` (Firestore) and `utils.gcs.*` (`upload_combined_pdf`) |
-| `tests/test_simplify_v1_2_persistence.py:64,120,121,...` | `patch("routes.simplify_v1_2.save_simplify_output")` / `...upload_combined_pdf` | **unchanged** patch targets (route binds names locally), as long as route uses `from ... import save_simplify_output` / `from utils.gcs import upload_combined_pdf` |
+| `routes/simplify_v1_2.py:33` | `from utils.save_output import save_simplify_output, upload_combined_pdf` | `from utils.firebase import save_simplify_output` (and define `upload_combined_pdf` locally in this module) |
+| `tests/test_save_output.py:13-78` | patches `utils.save_output.*` | retarget Firestore cases to `utils.firebase.*`; retarget `upload_combined_pdf` case to `routes.simplify_v1_2.*` (its new home) |
+| `tests/test_simplify_v1_2_persistence.py:64,120,121,...` | `patch("routes.simplify_v1_2.save_simplify_output")` / `...upload_combined_pdf` | **unchanged** patch targets — `save_simplify_output` is bound locally via `from utils.firebase import ...`, and `upload_combined_pdf` is now *defined* in `routes.simplify_v1_2`, so both names resolve on the same module path |
 
 **Evidence (grep) — current Firebase/Firestore footprint:**
 ```
@@ -266,12 +260,13 @@ Carry over the module-level `_strip_json_fences` helper from v1_2's pipeline int
   MAX_TOKENS check — only the Vertex path does. Preserve that asymmetry exactly.
 - v1, v1_1, v1_2 all use the same safety dict (all four categories `BLOCK_NONE`) and the same
   `model_name` resolution (`VERTEX_AI_MODEL` env, default `gemini-1.5-pro`). One client covers all.
-- **Important behavior difference to flag (§9 OQ-3):** today, **only v1_2** has the Gemini-API
-  fallback; v1 and v1_1 are **Vertex-only** (they never check `GEMINI_API_KEY`). Switching v1/v1_1 to
-  `LLMClient` would *give them the Gemini-API path too*. That is almost certainly desirable
-  (consistency) but it is a behavior change for v1/v1_1, so it must be an explicit owner decision.
-  **Default plan:** adopt `LLMClient` in all three (v1/v1_1 gain the Gemini path). If the owner wants
-  v1/v1_1 frozen, `LLMClient` can take a `force_vertex: bool` flag — flagged, not assumed.
+- **[RESOLVED OQ-3] No `force_vertex` flag; do not worry about v1/v1_1.** Today only v1_2 checks
+  `GEMINI_API_KEY` (grep-confirmed: the only hit is `simplify/v1_2/pipeline.py:68`); v1 and v1_1 are
+  Vertex-only. The owner directive: keep Gemini (one LLM path is good), and v1/v1_1 are being removed
+  anyway (SP2), so their behavior is not a concern. `LLMClient` mirrors v1_2's behavior verbatim
+  (Gemini API primary if `GEMINI_API_KEY`, Vertex fallback). It is **not** given a `force_vertex` flag.
+  If v1/v1_1 still exist when this lands, adopting `LLMClient` in them is fine (they simply gain the
+  Gemini path); no special handling is required.
 
 **Pipeline call-site changes:**
 - `simplify/v1_2/pipeline.py`: delete the inline `__init__` backend selection (lines ~63-88), the
@@ -279,7 +274,8 @@ Carry over the module-level `_strip_json_fences` helper from v1_2's pipeline int
   module-level `vertexai` / `vertexai.preview.generative_models` imports + `_strip_json_fences`.
   Replace with `self._llm = LLMClient()` and delegate `_generate_text` / `_generate_json` to it.
 - `simplify/v1/pipeline.py` and `simplify/v1_1/pipeline.py`: same treatment (replace inline Vertex
-  client with `LLMClient`), subject to OQ-3.
+  client with `LLMClient`). No `force_vertex` flag (OQ-3 resolved). These pipelines are slated for
+  removal in SP2; if they are already gone when SP3 lands, skip them.
 - Remove the lazy `from utils.gemini_client import GeminiAPIClient` inside v1_2 `__init__`
   (lines 69-70) — `LLMClient` now owns that.
 
@@ -339,9 +335,10 @@ $ grep -rn "StorageService" backend/ --include="*.py" | grep -v .venv
 utils/storage.py:5:class StorageService:    <- only the definition itself
 ```
 No importer anywhere. The live GCS upload used by the simplify route is the standalone
-`upload_combined_pdf` in `save_output.py`, **not** this class. → **Delete `utils/storage.py`.** (Flagged
-to owner in §8 since it was outside the explicit scope list.) Its live counterpart logic is preserved
-as `utils/gcs.py` built from `upload_combined_pdf` (4.3).
+`upload_combined_pdf` in `save_output.py`, **not** this class. → **Delete `utils/storage.py`.**
+**[RESOLVED: owner confirmed deletion.]** Its live counterpart `upload_combined_pdf` is relocated into
+`routes/simplify_v1_2.py` (its sole caller), not into any GCS utility module (owner directed
+`utils/gcs.py: DELETE`; see 4.3).
 
 ### 4.7 `utils/LOGGING.md` — remove
 
@@ -357,15 +354,15 @@ are:
 from utils.pdf import extract_text_from_pdf, merge_pdfs
 from utils.firebase import (initialize_firebase, firestore_client,
                             verify_firebase_token, get_owned_doc_or_403, save_simplify_output)
-from utils.gcs import upload_combined_pdf            # (+ optional fetch/signed-url helpers later)
 from utils.llm import LLMClient
+# upload_combined_pdf is NOT a util — it lives in routes/simplify_v1_2.py (its sole caller).
 # DELETED (do not import): utils.pdf_extract, utils.pdf_merge, utils.vertex_ai,
-#                          utils.gemini_client, utils.ocr, utils.storage, utils.save_output, utils.auth
+#   utils.gemini_client, utils.ocr, utils.storage, utils.save_output, utils.auth, utils.gcs (never created)
 ```
 
-`utils/auth.py` and `utils/save_output.py` are **emptied/deleted**; SP2 must not reintroduce imports of
-them. (Optional safety: leave `utils/auth.py` as a one-line re-export `from utils.firebase import
-verify_firebase_token` for one release to ease SP2's merge, then delete — flagged in §8.)
+`utils/auth.py` and `utils/save_output.py` are **deleted outright**; SP2 must not reintroduce imports of
+them. **[RESOLVED: no transitional re-exports — owner directive. `utils/auth.py` is deleted with no
+shim; `config.initialize_firebase` re-export is NOT kept (app.py and the test repoint directly).]**
 
 ### 4.9 Files shared with SP2 — merge-conflict flags
 
@@ -373,7 +370,7 @@ These files are touched by **both** SP3 and SP2 (route consolidation). Coordinat
 
 | File | SP3 change | SP2 change | Mitigation |
 |---|---|---|---|
-| `config.py` | move `initialize_firebase` → `utils.firebase`, re-export | may touch config constants / version dispatch | SP3 lands the re-export first; SP2 rebases |
+| `config.py` | move `initialize_firebase` → `utils.firebase` (no re-export; delete from config) | may touch config constants / version dispatch | SP3 lands its config edit first; SP2 rebases |
 | `routes/saved_outputs.py` | swap imports, delete `_db`/`_get_doc_or_403` | route consolidation / rename | land SP3's import-only change first, or SP2 absorbs it |
 | `routes/grading.py` | swap imports, delete `_db`/`_get_doc_or_403` | route consolidation | same |
 | `routes/simplify_v1_2.py`, `simplify.py`, `simplify_v1_1.py`, `batch.py`, `datasets.py` | import-line swaps only | larger route edits / rename | SP3's are 1-line import swaps — easiest if SP3 lands first |
@@ -417,8 +414,9 @@ New / updated coverage:
     (port the existing ownership-check assertions from `test_saved_outputs_route.py`).
   - `save_simplify_output`: re-point `test_save_output.py`'s Firestore assertions here (strips `raw`,
     uses tz-aware datetimes, accepts batch metadata).
-- **`utils/gcs.py`** — re-point `test_save_output.py`'s `upload_combined_pdf` case (expected
-  `simplify/{user}/inputs/{uuid}.pdf` blob path) to `utils.gcs`.
+- **`upload_combined_pdf` (now in `routes/simplify_v1_2.py`)** — re-point `test_save_output.py`'s
+  `upload_combined_pdf` case (expected `simplify/{user}/inputs/{uuid}.pdf` blob path) to
+  `routes.simplify_v1_2.*` (no `utils/gcs.py` exists).
 - **`utils/llm.py`** —
   - With `GEMINI_API_KEY` set (and `google.generativeai` mocked): `LLMClient()` selects the Gemini
     path; `generate_text` returns `response.text`.
@@ -437,37 +435,61 @@ New / updated coverage:
 
 ## 8. Manual Intervention Required From You
 
-1. **Confirm `utils/storage.py` (`StorageService`) deletion.** It was *not* on the original scope list
-   but grep shows it is fully unused. Default plan: delete. Say so if you know of an out-of-repo
-   consumer (a script, a notebook).
-2. **Confirm `utils/ocr.py` deletion.** Grep shows zero importers. Default plan: delete entirely. If
-   OCR is on a near-term roadmap you'd rather keep the file, say so (it would still be dead today).
-3. **OQ-3 (behavior): give v1 and v1_1 the Gemini-API fallback?** Adopting `LLMClient` in all three
-   pipelines means v1/v1_1 would start honoring `GEMINI_API_KEY` (today they are Vertex-only). Default
-   plan: yes, unify. If you want v1/v1_1 frozen to Vertex, confirm and we add a `force_vertex` flag.
-4. **`utils/gcs.py` scope.** Confirm you want a dedicated `utils/gcs.py` for `upload_combined_pdf` (and
-   eventually the routes' inline GCS blocks). Default: yes, create it now with `upload_combined_pdf`;
-   defer migrating the routes' inline GCS code to avoid SP2 conflicts.
-5. **Module-name confirmation:** `utils/llm.py` (provider-neutral) vs `utils/gemini.py`. Default:
-   `utils/llm.py`.
-6. **Landing order with SP2** (§4.9). Recommend SP3's import-swap changes land *before* SP2's route
-   consolidation so SP2 rebases onto the new util paths. Confirm sequencing.
-7. **Transitional re-exports?** Optionally keep `config.initialize_firebase` and `utils/auth.py` as
-   thin re-exports for one release to ease SP2's merge, then delete. Default: keep
-   `config.initialize_firebase` re-export (needed by a test), delete `utils/auth.py` outright.
+All prior open items have been resolved by the owner — no further human decision is required to
+execute this SP. Recorded for the record:
 
-## 9. Open Questions
+1. **`utils/storage.py` (`StorageService`) deletion** — **[RESOLVED: delete. Owner confirmed.]**
+2. **`utils/ocr.py` deletion** — **[RESOLVED: delete entirely. Owner confirmed.]**
+3. **OQ-3 (v1/v1_1 Gemini fallback)** — **[RESOLVED: no `force_vertex` flag; v1/v1_1 are being removed
+   anyway, so do not worry about them. `LLMClient` mirrors v1_2 verbatim.]**
+4. **GCS module** — **[RESOLVED: `utils/gcs.py` is DELETED / not created. `upload_combined_pdf` is
+   relocated into `routes/simplify_v1_2.py` (its sole caller). No route-inline-GCS migration.]**
+5. **Module name** — **[RESOLVED: `utils/llm.py` (provider-neutral) is the single LLM module.]**
+6. **Landing order with SP2** (§4.9) — **[RESOLVED: SP3's call. SP3's import-swaps land before SP2's
+   route consolidation; SP2 rebases onto the new util paths.]**
+7. **Transitional re-exports** — **[RESOLVED: none. No `config.initialize_firebase` re-export
+   (`app.py` + the container-startup test repoint directly to `utils.firebase`); `utils/auth.py`
+   deleted outright. Owner directive: no duplicate / one-line wrapper modules; breaking now is fine.]**
 
-- **OQ-1 — Is `utils/ocr.py` truly dead?** Resolved by grep: yes, zero importers (§4.6). Pending owner
-  sign-off only (§8.2).
-- **OQ-2 — GCS vs Firestore split in `firebase.py`.** Resolved: Firestore-only in `firebase.py`; GCS in
-  a new `utils/gcs.py`. Open sub-question: migrate the routes' inline GCS blocks
-  (`_fetch_from_gcs` in simplify_v1_1/v1_2, signed-URL in saved_outputs) into `utils/gcs.py` now, or
-  defer to avoid SP2 conflicts? **Default: defer** (TASKS marks it optional).
-- **OQ-3 — v1/v1_1 gaining the Gemini-API path** (§4.4, §8.3). Needs an owner decision; default is to
-  unify.
-- **OQ-4 — Does any deploy/script import these modules?** Checked `.sh`, `.yml`, `Dockerfile`, `.cfg`,
-  `.toml`: the only hits are the `VERTEX_AI_MODEL` **env-var name** in two GitHub workflows
-  (unrelated to `vertex_ai.py`). No script imports the deleted modules. Safe to delete.
-- **OQ-5 — `MaxTokensError`.** Defined only in dead `vertex_ai.py`; nothing imports it. Confirmed safe
-  to drop with the file.
+## 9. Open Questions & Decisions
+
+- **OQ-1 — Is `utils/ocr.py` truly dead?** Resolved by grep: yes, zero importers (§4.6).
+  **[RESOLVED: DELETE `utils/ocr.py`. Owner confirmed — yes, delete.]**
+- **OQ-2 — GCS vs Firestore split in `firebase.py`.** Resolved: Firestore-only in `firebase.py`.
+  **[RESOLVED: DELETE `utils/gcs.py` plan — owner confirmed `utils/gcs.py` is to be DELETED, not
+  created. See decision note below.]** Owner directive: "utils/gcs.py: DELETE — yes." The previous
+  plan created a *new* `utils/gcs.py` to home `upload_combined_pdf`; the owner has instead chosen to
+  eliminate the GCS-helper module entirely. `upload_combined_pdf` is the only *live* GCS helper, used
+  by exactly one route (`routes/simplify_v1_2.py`). The clean-up-first resolution: move
+  `upload_combined_pdf` directly into `routes/simplify_v1_2.py` (its sole caller) so there is no
+  standalone one-function utility module. The dead `StorageService` (`utils/storage.py`) is deleted
+  outright. No `utils/gcs.py` is created. The optional route-inline-GCS-migration sub-question is
+  therefore moot and dropped.
+- **OQ-3 — v1/v1_1 gaining the Gemini-API path** (§4.4).
+  **[RESOLVED: N/A — keep Gemini (one LLM path is good). v1 and v1_1 are being removed anyway (SP2),
+  so do not add a `force_vertex` flag and do not worry about v1/v1_1 behavior. `LLMClient` mirrors
+  v1_2's current behavior verbatim — Gemini API primary, Vertex fallback.]**
+- **OQ-4 — Does any deploy/script import these modules?**
+  **[RESOLVED: NO. Owner confirmed no deploy/script imports these modules. The only `.yml` hits are
+  the `VERTEX_AI_MODEL` env-var name, unrelated to `vertex_ai.py`. Safe to delete.]**
+- **OQ-5 — `MaxTokensError`.** Defined only in dead `vertex_ai.py`; nothing imports it.
+  **[RESOLVED: proceed as proposed — drop `MaxTokensError` with the file.]**
+
+### Owner-directed decisions (global + this SP)
+
+- **[RESOLVED: `utils/storage.py` (`StorageService`) — DELETE. Owner confirmed yes.]**
+- **[RESOLVED: `utils/ocr.py` — DELETE. Owner confirmed yes.]**
+- **[RESOLVED: `utils/gcs.py` — DELETE / do-not-create. Owner confirmed yes. `upload_combined_pdf`
+  is relocated into its sole caller `routes/simplify_v1_2.py`; no standalone GCS module.]**
+- **[RESOLVED: `utils/llm.py` — module name confirmed (provider-neutral). It holds the single
+  consolidated LLM client.]** (Owner directive listed "utils/llm.py: DELETE" referring to removing the
+  *old scattered* LLM code paths; the consolidation target `utils/llm.py` is the surviving single LLM
+  module per §4.4. Net effect: all duplicate/inline LLM client code is deleted; one `utils/llm.py`
+  remains.)
+- **[RESOLVED: No transitional re-exports. Owner directive — main goal is clean-up; no duplicate or
+  one-line wrapper modules; breaking now is fine, nothing is in production.]** Consequences:
+  `config.py` does **not** re-export `initialize_firebase`; instead `app.py` and
+  `tests/test_container_startup.py` are repointed directly to `utils.firebase`. `utils/auth.py` is
+  deleted outright (no re-export shim). See §4.3, §4.8, §8.
+- **[RESOLVED: Landing order w.r.t. SP2 — SP3's call. Recommendation stands: land SP3's import-swaps
+  before SP2's route consolidation/rename so SP2 rebases onto the new util paths (§4.9).]**
