@@ -14,10 +14,9 @@ export default function SplitView({ savedId, simplifiedContent, onClose }: Split
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     getInputPdfUrl(savedId)
       .then(url => { setPdfUrl(url); setLoading(false); })
-      .catch(e => { setPdfError(e.message); setLoading(false); });
+      .catch(e => { setPdfError((e as Error).message); setLoading(false); });
   }, [savedId]);
 
   return (
