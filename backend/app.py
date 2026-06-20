@@ -8,7 +8,7 @@ from flask_cors import CORS
 from opentelemetry import trace
 
 from routes import all_blueprints
-from config import initialize_firebase
+from utils.firebase import initialize_firebase
 from logging_config import setup_logging
 from telemetry import init_telemetry
 from utils.juno_logger import JunoLogger, monotonic_ms

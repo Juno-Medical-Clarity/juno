@@ -59,7 +59,7 @@ class CarePlanRouteModuleTest(unittest.TestCase):
         self.assertTrue(callable(module.create_care_plan))
         self.assertNotIn("simplify_v1_2", vars(module))
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_care_plan_omitted_version_defaults_to_sse_stream(self, _verify_token):
         with patch.object(care_plan_module, "_care_plan_stream", return_value=iter(["data: {}\n\n"])) as stream:
             response = self.client.post(
@@ -71,7 +71,7 @@ class CarePlanRouteModuleTest(unittest.TestCase):
         self.assertEqual(response.content_type, "text/event-stream")
         stream.assert_called_once_with("user-1", "v1-2")
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_care_plan_accepts_json_version_v1_2(self, _verify_token):
         with patch.object(care_plan_module, "_care_plan_stream", return_value=iter(["data: {}\n\n"])) as stream:
             response = self.client.post(
@@ -83,7 +83,7 @@ class CarePlanRouteModuleTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         stream.assert_called_once_with("user-1", "v1-2")
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_care_plan_accepts_form_version_v1_2(self, _verify_token):
         with patch.object(care_plan_module, "_care_plan_stream", return_value=iter(["data: {}\n\n"])) as stream:
             response = self.client.post(
@@ -95,7 +95,7 @@ class CarePlanRouteModuleTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         stream.assert_called_once_with("user-1", "v1-2")
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_care_plan_rejects_unknown_versions(self, _verify_token):
         for version in ("v1", "v1-1"):
             with self.subTest(version=version):
@@ -108,7 +108,7 @@ class CarePlanRouteModuleTest(unittest.TestCase):
                 self.assertEqual(response.status_code, 400)
                 self.assertEqual(response.get_json(), {"error": f"Unknown version '{version}'"})
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_care_plan_rejects_non_string_version(self, _verify_token):
         response = self.client.post(
             "/care_plan",
@@ -119,7 +119,7 @@ class CarePlanRouteModuleTest(unittest.TestCase):
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.get_json(), {"error": "Unknown version '['v1-2']'"})
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_care_plan_ignores_query_string_version(self, _verify_token):
         with patch.object(care_plan_module, "_care_plan_stream", return_value=iter(["data: {}\n\n"])) as stream:
             response = self.client.post(

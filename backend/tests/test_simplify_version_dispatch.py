@@ -25,7 +25,7 @@ class CarePlanVersionDispatchTest(unittest.TestCase):
     def setUp(self):
         self.client = create_app().test_client()
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_v1_version_returns_400(self, _verify_token):
         """v1 is no longer a valid version — must return 400."""
         response = self.client.post(
@@ -36,7 +36,7 @@ class CarePlanVersionDispatchTest(unittest.TestCase):
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.get_json(), {"error": "Unknown version 'v1'"})
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_v1_1_version_returns_400(self, _verify_token):
         """v1-1 is no longer a valid version — must return 400."""
         response = self.client.post(
@@ -47,7 +47,7 @@ class CarePlanVersionDispatchTest(unittest.TestCase):
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.get_json(), {"error": "Unknown version 'v1-1'"})
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_invalid_version_returns_400(self, _verify_token):
         response = self.client.post(
             "/care_plan",
@@ -57,7 +57,7 @@ class CarePlanVersionDispatchTest(unittest.TestCase):
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.get_json(), {"error": "Unknown version 'v2'"})
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_json_list_version_returns_400(self, _verify_token):
         response = self.client.post(
             "/care_plan",
@@ -67,7 +67,7 @@ class CarePlanVersionDispatchTest(unittest.TestCase):
         self.assertEqual(response.status_code, 400)
         self.assertEqual(response.get_json(), {"error": "Unknown version '['v1-2']'"})
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_form_empty_version_returns_400(self, _verify_token):
         response = self.client.post(
             "/care_plan",

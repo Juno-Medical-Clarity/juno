@@ -13,7 +13,7 @@ class ContainerStartupTest(unittest.TestCase):
             """
             from unittest.mock import patch
 
-            with patch("config.initialize_firebase", return_value=None):
+            with patch("utils.firebase.initialize_firebase", return_value=None):
                 import app  # noqa: F401
             """
         )
@@ -41,7 +41,7 @@ class ContainerStartupTest(unittest.TestCase):
             """
             from unittest.mock import patch
 
-            with patch("config.initialize_firebase", return_value=None):
+            with patch("utils.firebase.initialize_firebase", return_value=None):
                 import app as app_module
 
             client = app_module.app.test_client()

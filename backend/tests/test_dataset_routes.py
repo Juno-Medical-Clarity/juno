@@ -48,7 +48,7 @@ class DatasetRoutesTest(unittest.TestCase):
         self.preset_data.PRESET_DATA_ROOT = self.original_root
         self.temp_dir.cleanup()
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_list_datasets_returns_dataset_metadata(self, _verify_token):
         response = self.client.get(
             "/care_plan/datasets",
@@ -69,7 +69,7 @@ class DatasetRoutesTest(unittest.TestCase):
             },
         )
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_preview_dataset_file_returns_decoded_content(self, _verify_token):
         response = self.client.get(
             "/care_plan/datasets/DocConv/input-2/transcript.txt",
@@ -82,7 +82,7 @@ class DatasetRoutesTest(unittest.TestCase):
             {"filename": "transcript.txt", "content": "input 2 transcript"},
         )
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_preview_dataset_file_maps_missing_and_traversal_to_404(self, _verify_token):
         # These paths reach our handler (group/input/filename all parse as non-slash strings)
         # and are rejected by our file-existence check with a JSON 404.

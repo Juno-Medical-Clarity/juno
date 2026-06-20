@@ -31,8 +31,7 @@ from google.cloud import storage as gcs
 from config import CARE_PLAN_DEFAULT_VERSION
 from simplify.v1_2.pipeline import V1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
-from utils.firebase import save_care_plan_output
-from utils.auth import verify_firebase_token
+from utils.firebase import save_care_plan_output, verify_firebase_token
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from utils.juno_logger import JunoLogger, monotonic_ms

@@ -77,7 +77,7 @@ class BatchRouteTest(unittest.TestCase):
     def setUp(self):
         self.client = create_app().test_client()
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_batch_runs_in_sorted_order_expands_all_and_saves_metadata(self, _verify_token):
         datasets = [
             {"group": "GroupB", "inputs": ["input-2"], "files": ["notes.txt"]},
@@ -202,7 +202,7 @@ class BatchRouteTest(unittest.TestCase):
             ["GroupA-20260616153012", "GroupA-20260616153012", "GroupB-20260616153012"],
         )
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_batch_selection_errors_stream_sse_error_not_500(self, _verify_token):
         with (
             patch("routes.batch._batch_timestamp", return_value="20260616153012", create=True),
@@ -224,7 +224,7 @@ class BatchRouteTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(parse_sse(response_text), [{"step": "error", "error": "Dataset group not found: MissingGroup"}])
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_batch_rejects_unknown_version_with_sse_error(self, _verify_token):
         """Legacy versions v1 and v1-1 are no longer supported — must SSE-error."""
         for version in ("v1", "v1-1"):
@@ -250,7 +250,7 @@ class BatchRouteTest(unittest.TestCase):
                 self.assertEqual(events[0]["step"], "error")
                 self.assertIn(version, events[0]["error"])
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_batch_rejects_too_many_runs_before_pipeline_work(self, _verify_token):
         datasets = [{"group": "GroupA", "inputs": ["input-1", "input-2", "input-3"], "files": ["notes.txt"]}]
 
@@ -286,7 +286,7 @@ class BatchRouteTest(unittest.TestCase):
         executor.assert_not_called()
         save_output.assert_not_called()
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_batch_continues_after_per_input_failures(self, _verify_token):
         datasets = [
             {

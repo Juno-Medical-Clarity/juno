@@ -10,12 +10,12 @@ if str(BACKEND_DIR) not in sys.path:
 
 
 class SaveOutputTest(unittest.TestCase):
-    @patch("utils.save_output.uuid.uuid4")
-    @patch("utils.save_output.firestore.client")
+    @patch("utils.firebase.uuid.uuid4")
+    @patch("utils.firebase.firestore.client")
     def test_save_care_plan_output_persists_raw_and_uses_aware_datetimes(
         self, firestore_client, uuid4
     ):
-        from utils.save_output import save_care_plan_output
+        from utils.firebase import save_care_plan_output
 
         uuid4.return_value = "output-123"
         doc_ref = MagicMock()
@@ -51,12 +51,12 @@ class SaveOutputTest(unittest.TestCase):
         self.assertEqual(payload["created_at"].tzinfo, timezone.utc)
         self.assertEqual(payload["updated_at"], payload["created_at"])
 
-    @patch("utils.save_output.uuid.uuid4")
-    @patch("utils.save_output.firestore.client")
+    @patch("utils.firebase.uuid.uuid4")
+    @patch("utils.firebase.firestore.client")
     def test_save_care_plan_output_accepts_batch_metadata(
         self, firestore_client, uuid4
     ):
-        from utils.save_output import save_care_plan_output
+        from utils.firebase import save_care_plan_output
 
         uuid4.return_value = "output-123"
         doc_ref = MagicMock()

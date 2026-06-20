@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 
 from routes.care_plan import _extract_text_from_bytes
-from utils.auth import verify_firebase_token
+from utils.firebase import verify_firebase_token
 from utils.preset_data import list_datasets, read_dataset_file
 
 datasets_bp = Blueprint("datasets", __name__)

@@ -117,7 +117,7 @@ class CarePlanPersistenceTest(unittest.TestCase):
         self.assertEqual(tuple_chunks[0][0], "__result__")
         save_care_plan_output.assert_not_called()
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.care_plan.save_care_plan_output", return_value="saved-123")
     @patch("routes.care_plan.upload_combined_pdf", return_value="gs://bucket/input.pdf")
     @patch("routes.care_plan.merge_pdfs", return_value=b"%PDF combined")
@@ -179,7 +179,7 @@ class CarePlanPersistenceTest(unittest.TestCase):
         persisted_output = saved_kwargs["output_data"]
         self.assertEqual(persisted_output["metrics"]["saved_id"], "saved-123")
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.care_plan.save_care_plan_output", return_value="saved-123")
     @patch("routes.care_plan.upload_combined_pdf", return_value="gs://bucket/input.pdf")
     @patch("routes.care_plan.merge_pdfs", return_value=b"%PDF combined")
@@ -220,7 +220,7 @@ class CarePlanPersistenceTest(unittest.TestCase):
         merge_pdfs.assert_called_once_with([(b"docx clinical note", "visit.txt")])
         upload_combined_pdf.assert_called_once_with(b"%PDF combined", "user-1")
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_multi_file_upload_rejects_too_many_files(self, _verify_token):
         with self.assertLogs("utils.juno_logger", level="ERROR"):
             response = self.client.post(
@@ -240,7 +240,7 @@ class CarePlanPersistenceTest(unittest.TestCase):
         self.assertEqual(events[-1]["step"], "error")
         self.assertIn("at most 10 files", events[-1]["error"])
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.care_plan.MAX_AGGREGATE_FILE_BYTES", 10, create=True)
     @patch("routes.care_plan.V1_2Pipeline", return_value=FakePipeline())
     def test_multi_file_upload_rejects_aggregate_size_over_limit(
@@ -264,7 +264,7 @@ class CarePlanPersistenceTest(unittest.TestCase):
         self.assertEqual(events[-1]["step"], "error")
         self.assertIn("combined upload size exceeds", events[-1]["error"])
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.care_plan.save_care_plan_output")
     @patch("routes.care_plan.upload_combined_pdf")
     @patch("routes.care_plan.merge_pdfs", return_value=b"%PDF combined")
@@ -309,7 +309,7 @@ class CarePlanPersistenceTest(unittest.TestCase):
         upload_combined_pdf.assert_not_called()
         save_care_plan_output.assert_not_called()
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.care_plan.save_care_plan_output", side_effect=RuntimeError("no firestore"))
     @patch("routes.care_plan.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "Patient-friendly", "word_count": 100, "dimensions": {"grade_level": {"score": 70, "raw": 6.0, "label": "Grade Level", "unit": "grade"}, "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon Density", "unit": "proportion"}, "sentence_complexity": {"score": 70, "raw": 12.0, "label": "Sentence Length", "unit": "words/sentence"}, "passive_voice": {"score": 70, "raw": 0.1, "label": "Active Voice", "unit": "passive ratio"}, "actionability": {"score": 70, "raw": 0.05, "label": "Actionability", "unit": "you-rate"}, "numeracy_clarity": {"score": 70, "raw": 1.0, "label": "Numeric Clarity", "unit": "vague count"}, "structural_clarity": {"score": 70, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"}}})
     @patch("routes.care_plan.build_glossary_from_simplified_text", return_value={})

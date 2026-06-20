@@ -34,7 +34,7 @@ class ListSavedBatchGroupIdTest(unittest.TestCase):
     def setUp(self):
         self.client = create_app().test_client()
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     @patch("routes.saved_outputs.firestore.client")
     def test_batch_group_id_round_trip(self, mock_firestore_client, _verify_token):
         """GET /care_plan/saved returns batch_group_id correctly for both cases."""

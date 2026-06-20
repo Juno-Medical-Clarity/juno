@@ -18,7 +18,7 @@ from flask import Blueprint, jsonify, request
 from firebase_admin import firestore
 from google.cloud import storage as gcs
 
-from utils.auth import verify_firebase_token
+from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
 
 logger = logging.getLogger(__name__)
 saved_outputs_bp = Blueprint("saved_outputs", __name__)
@@ -31,28 +31,11 @@ _BUCKET_NAME = os.environ.get('GCP_BUCKET_NAME', '')
 # Create via Firebase console or firestore.indexes.json
 
 
-def _db():
-    db_id = os.environ.get('FIRESTORE_DATABASE_ID', '(default)')
-    return firestore.client(database_id=db_id)
-
-
-def _get_doc_or_403(db, doc_id: str, user_id: str):
-    """Fetch a saved_outputs document, verify ownership. Returns doc snapshot."""
-    ref = db.collection('care_plan_outputs').document(doc_id)
-    doc = ref.get()
-    if not doc.exists:
-        return None, (jsonify({'error': 'Not found'}), 404)
-    data = doc.to_dict()
-    if data.get('uid') != user_id:
-        return None, (jsonify({'error': 'Forbidden'}), 403)
-    return doc, None
-
-
 @saved_outputs_bp.route('/care_plan/saved', methods=['GET'])
 @verify_firebase_token
 def list_saved(user_id: str):
     """Return list of saved outputs for the authenticated user, newest first."""
-    db = _db()
+    db = firestore_client()
     docs = (
         db.collection('care_plan_outputs')
         .where('uid', '==', user_id)
@@ -77,8 +60,8 @@ def list_saved(user_id: str):
 @verify_firebase_token
 def get_saved(user_id: str, doc_id: str):
     """Return full output data for a single saved output."""
-    db = _db()
-    doc, err = _get_doc_or_403(db, doc_id, user_id)
+    db = firestore_client()
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id)
     if err:
         return err
     data = doc.to_dict()
@@ -96,8 +79,8 @@ def get_saved(user_id: str, doc_id: str):
 @verify_firebase_token
 def rename_saved(user_id: str, doc_id: str):
     """Rename a saved output. Body: {"name": "new name"}"""
-    db = _db()
-    doc, err = _get_doc_or_403(db, doc_id, user_id)
+    db = firestore_client()
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id)
     if err:
         return err
     body = request.get_json(silent=True) or {}
@@ -117,8 +100,8 @@ def rename_saved(user_id: str, doc_id: str):
 @verify_firebase_token
 def delete_saved(user_id: str, doc_id: str):
     """Delete a saved output and its GCS files."""
-    db = _db()
-    doc, err = _get_doc_or_403(db, doc_id, user_id)
+    db = firestore_client()
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id)
     if err:
         return err
     data = doc.to_dict()
@@ -145,8 +128,8 @@ def get_input_pdf_url(user_id: str, doc_id: str):
     Return a short-lived signed URL for the combined input PDF.
     Used by the Show Original split view.
     """
-    db = _db()
-    doc, err = _get_doc_or_403(db, doc_id, user_id)
+    db = firestore_client()
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id)
     if err:
         return err
     data = doc.to_dict()

@@ -11,9 +11,8 @@ from models.envelope import CarePlanInternal
 from models.input import Input
 from models.metrics import Metrics
 from routes.care_plan import ALLOWED_VERSIONS, _extract_text_from_bytes, run_care_plan_pipeline
-from utils.auth import verify_firebase_token
+from utils.firebase import verify_firebase_token, save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
-from utils.save_output import save_care_plan_output
 
 
 batch_bp = Blueprint("batch", __name__)

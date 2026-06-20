@@ -131,7 +131,7 @@ class TestGradeEndpoint(unittest.TestCase):
             self.app.register_blueprint(bp)
         self.client = self.app.test_client()
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_text_mode_returns_grading_no_firestore(self, _):
         """POST with text/clarified_text computes and returns Grading without persisting."""
         with patch("routes.grading._score_safe") as mock_score:
@@ -146,7 +146,7 @@ class TestGradeEndpoint(unittest.TestCase):
         self.assertIn("grading", data)
         self.assertIn("entries", data["grading"])
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_missing_body_returns_400(self, _):
         """POST with neither saved_id nor text returns 400."""
         response = self.client.post(
@@ -156,7 +156,7 @@ class TestGradeEndpoint(unittest.TestCase):
         )
         self.assertEqual(response.status_code, 400)
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_saved_id_not_found_returns_404(self, _):
         """POST with a saved_id not in Firestore returns 404."""
         mock_doc = MagicMock()
@@ -164,7 +164,7 @@ class TestGradeEndpoint(unittest.TestCase):
         mock_db = MagicMock()
         mock_db.collection.return_value.document.return_value.get.return_value = mock_doc
 
-        with patch("routes.grading._db", return_value=mock_db):
+        with patch("routes.grading.firestore_client", return_value=mock_db):
             response = self.client.post(
                 "/care_plan/grade",
                 headers={"Authorization": "Bearer token"},
@@ -172,7 +172,7 @@ class TestGradeEndpoint(unittest.TestCase):
             )
         self.assertEqual(response.status_code, 404)
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_saved_id_wrong_user_returns_403(self, _):
         """POST with a saved_id owned by another user returns 403."""
         mock_doc = MagicMock()
@@ -181,7 +181,7 @@ class TestGradeEndpoint(unittest.TestCase):
         mock_db = MagicMock()
         mock_db.collection.return_value.document.return_value.get.return_value = mock_doc
 
-        with patch("routes.grading._db", return_value=mock_db):
+        with patch("routes.grading.firestore_client", return_value=mock_db):
             response = self.client.post(
                 "/care_plan/grade",
                 headers={"Authorization": "Bearer token"},
@@ -189,7 +189,7 @@ class TestGradeEndpoint(unittest.TestCase):
             )
         self.assertEqual(response.status_code, 403)
 
-    @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
+    @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_saved_id_updates_firestore_and_returns_grading(self, _):
         """POST with valid saved_id overwrites Firestore grading and returns it."""
         mock_ref = MagicMock()
@@ -210,7 +210,7 @@ class TestGradeEndpoint(unittest.TestCase):
         mock_db = MagicMock()
         mock_db.collection.return_value.document.return_value.get.return_value = mock_doc
 
-        with patch("routes.grading._db", return_value=mock_db):
+        with patch("routes.grading.firestore_client", return_value=mock_db):
             response = self.client.post(
                 "/care_plan/grade",
                 headers={"Authorization": "Bearer token"},
