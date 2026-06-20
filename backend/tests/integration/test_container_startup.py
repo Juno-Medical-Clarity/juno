@@ -8,7 +8,7 @@ from pathlib import Path
 
 class ContainerStartupTest(unittest.TestCase):
     def test_app_imports_from_backend_workdir_layout(self):
-        backend_dir = Path(__file__).resolve().parents[1]
+        backend_dir = Path(__file__).resolve().parents[2]
         script = textwrap.dedent(
             """
             from unittest.mock import patch
@@ -36,7 +36,7 @@ class ContainerStartupTest(unittest.TestCase):
         )
 
     def test_preflight_includes_cors_headers(self):
-        backend_dir = Path(__file__).resolve().parents[1]
+        backend_dir = Path(__file__).resolve().parents[2]
         script = textwrap.dedent(
             """
             from unittest.mock import patch

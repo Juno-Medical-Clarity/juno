@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-BACKEND_DIR = Path(__file__).resolve().parents[1]
+BACKEND_DIR = Path(__file__).resolve().parents[2]
 
 
 def test_task5_removes_legacy_pipelines_and_renames_interface():

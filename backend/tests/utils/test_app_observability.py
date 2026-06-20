@@ -30,7 +30,7 @@ def test_register_sink_called():
 def test_junometrics_not_imported_in_app():
     """app.py must not import JunoMetrics (it has been replaced by Markers)."""
     app_source = open(__file__.replace(
-        "tests/test_sp4_app_observability.py", "app.py"
+        "tests/utils/test_app_observability.py", "app.py"
     )).read()
     assert "from utils.juno_metrics import JunoMetrics" not in app_source, (
         "JunoMetrics import should have been removed from app.py"
@@ -44,7 +44,7 @@ def test_junometrics_not_imported_in_app():
 def test_session_id_batch_no_user_id_fallback():
     """batch.py must not fall back to user_id when looking up session_id."""
     batch_source = open(__file__.replace(
-        "tests/test_sp4_app_observability.py", "routes/batch.py"
+        "tests/utils/test_app_observability.py", "routes/batch.py"
     )).read()
     assert 'getattr(g, "session_id", user_id)' not in batch_source, (
         'batch.py still falls back to user_id for session_id — remove the fallback'
@@ -63,7 +63,7 @@ def test_session_id_batch_no_user_id_fallback():
 def test_x_trace_id_cors_exposed():
     """app.py must expose X-Trace-Id via CORS."""
     app_source = open(__file__.replace(
-        "tests/test_sp4_app_observability.py", "app.py"
+        "tests/utils/test_app_observability.py", "app.py"
     )).read()
     assert "X-Trace-Id" in app_source, (
         "X-Trace-Id should appear in app.py CORS expose_headers"

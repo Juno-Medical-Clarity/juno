@@ -12,7 +12,7 @@ import os
 import sys
 
 # Ensure the backend package root is on sys.path when run directly
-_BACKEND_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_BACKEND_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 if _BACKEND_DIR not in sys.path:
     sys.path.insert(0, _BACKEND_DIR)
 

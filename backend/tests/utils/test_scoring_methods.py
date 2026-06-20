@@ -6,7 +6,7 @@ from pathlib import Path
 
 import textstat
 
-BACKEND_DIR = Path(__file__).resolve().parents[1]
+BACKEND_DIR = Path(__file__).resolve().parents[2]
 PROJECT_DIR = BACKEND_DIR.parent
 for p in (PROJECT_DIR, BACKEND_DIR):
     if str(p) not in sys.path:

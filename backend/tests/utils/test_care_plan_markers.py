@@ -7,7 +7,7 @@ These tests are "grep the source" tests and run without Flask.
 
 import pathlib
 
-_SRC = pathlib.Path(__file__).parent.parent / "routes" / "care_plan.py"
+_SRC = pathlib.Path(__file__).parent.parent.parent / "routes" / "care_plan.py"
 _SOURCE = _SRC.read_text()
 
 

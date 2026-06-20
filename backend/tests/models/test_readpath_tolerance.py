@@ -6,7 +6,7 @@ from pathlib import Path
 from models.care_plan import CarePlanV1_2
 
 
-FIXTURE_PATH = Path(__file__).parent / "fixtures" / "care_plan_v1_2.json"
+FIXTURE_PATH = Path(__file__).parents[1] / "fixtures" / "care_plan_v1_2.json"
 
 
 def test_care_plan_v1_2_without_raw_validates_for_free_read_tolerance():

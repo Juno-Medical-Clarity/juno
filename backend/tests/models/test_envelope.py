@@ -144,7 +144,7 @@ def test_model_consuming_routes_import_without_removed_aliases():
     import routes.grading  # noqa: F401
     import routes.saved_outputs  # noqa: F401
 
-    routes_dir = Path(__file__).resolve().parents[1] / "routes"
+    routes_dir = Path(__file__).resolve().parents[2] / "routes"
     for route_file in routes_dir.glob("*.py"):
         text = route_file.read_text()
         assert "SimplifiedCarePlan" not in text
