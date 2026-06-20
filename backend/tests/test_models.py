@@ -10,9 +10,9 @@ BACKEND_DIR = Path(__file__).resolve().parents[1]
 if str(BACKEND_DIR) not in sys.path:
     sys.path.insert(0, str(BACKEND_DIR))
 
-from backend.models.grading import Grading
-from backend.models.input import Input, InputFile
-from backend.models.metrics import Metrics
+from models.grading import Grading
+from models.input import Input, InputFile
+from models.metrics import Metrics
 
 
 class TestMetrics(unittest.TestCase):
@@ -34,7 +34,6 @@ class TestMetrics(unittest.TestCase):
         self.assertIn("T", d["created_at"])
         # defaults
         self.assertIsNone(d["total_duration_ms"])
-        self.assertEqual(d["step_durations_ms"], {})
         self.assertIsNone(d["saved_id"])
 
     def test_start_created_at_is_utc_iso8601(self):
@@ -52,7 +51,6 @@ class TestMetrics(unittest.TestCase):
             input_type="file",
             created_at="2026-06-16T12:00:00+00:00",
             total_duration_ms=4213.5,
-            step_durations_ms={"find_medical_terms": 812.1},
             saved_id="doc-999",
         )
         d = original.to_dict()
@@ -63,7 +61,6 @@ class TestMetrics(unittest.TestCase):
             "input_type": "file",
             "created_at": "2026-06-16T12:00:00+00:00",
             "total_duration_ms": 4213.5,
-            "step_durations_ms": {"find_medical_terms": 812.1},
             "saved_id": "doc-999",
         }
         self.assertEqual(d, expected)
@@ -72,22 +69,20 @@ class TestMetrics(unittest.TestCase):
         self.assertEqual(reconstructed, original)
 
     def test_mutable_fields_can_be_set_post_creation(self):
-        """Metrics is not frozen — durations and saved_id can be mutated."""
+        """Metrics is not frozen — duration and saved_id can be mutated."""
         m = Metrics.start("s", "v1", "doc_id")
         m.total_duration_ms = 100.0
-        m.step_durations_ms["step_a"] = 50.0
         m.saved_id = "doc-1"
 
         self.assertEqual(m.total_duration_ms, 100.0)
-        self.assertEqual(m.step_durations_ms, {"step_a": 50.0})
         self.assertEqual(m.saved_id, "doc-1")
 
     def test_metrics_inherits_json_model(self):
-        """Metrics must inherit from JsonModel, not VersionedJsonModel."""
-        from backend.models.base import JsonModel, VersionedJsonModel
+        """Metrics must inherit from JsonModel, not VersionedModel."""
+        from models.base import JsonModel, VersionedModel
 
         self.assertIsInstance(Metrics.start("s", "v1", "text"), JsonModel)
-        self.assertNotIsInstance(Metrics.start("s", "v1", "text"), VersionedJsonModel)
+        self.assertNotIsInstance(Metrics.start("s", "v1", "text"), VersionedModel)
 
 
 class TestInputFile(unittest.TestCase):
@@ -111,9 +106,9 @@ class TestInputFile(unittest.TestCase):
 
     def test_inherits_json_model(self):
         """InputFile must be a JsonModel subclass."""
-        from backend.models.base import JsonModel
+        from models.base import JsonModel
         self.assertIsInstance(
-            InputFile("f.pdf", "application/pdf", 100),
+            InputFile(filename="f.pdf", content_type="application/pdf", size_bytes=100),
             JsonModel,
         )
 
@@ -209,8 +204,8 @@ class TestInput(unittest.TestCase):
         original = Input(
             mode="file",
             files=[
-                InputFile("a.pdf", "application/pdf", 1024),
-                InputFile("b.txt", "text/plain", 256),
+                InputFile(filename="a.pdf", content_type="application/pdf", size_bytes=1024),
+                InputFile(filename="b.txt", content_type="text/plain", size_bytes=256),
             ],
         )
         d = original.to_dict()
@@ -231,7 +226,7 @@ class TestInput(unittest.TestCase):
 
     def test_inherits_json_model(self):
         """Input must be a JsonModel subclass."""
-        from backend.models.base import JsonModel
+        from models.base import JsonModel
         self.assertIsInstance(Input.from_text("x"), JsonModel)
 
     def test_empty_files_list_roundtrip(self):
@@ -308,7 +303,7 @@ class TestGrading(unittest.TestCase):
 
     def test_roundtrip(self):
         """Grading round-trips correctly through to_dict/from_dict."""
-        from backend.models.grading import GradingEntry
+        from models.grading import GradingEntry
         entry = GradingEntry(name="smog", target="after", grade=72.0,
                              grade_breakdown={"grade": 9.5, "insufficient_sample": False},
                              reasoning="SMOG grade")
@@ -321,150 +316,74 @@ class TestGrading(unittest.TestCase):
         self.assertEqual(reconstructed.graded_at, "2026-01-01T00:00:00+00:00")
 
 
-class TestSimplifiedCarePlan(unittest.TestCase):
-    """Tests for the SimplifiedCarePlan versioned model."""
+class TestCarePlanV1_2(unittest.TestCase):
+    """Tests for the current CarePlan v1.2 versioned model."""
 
-    # Minimal representative V1.2 pipeline output.
     SAMPLE_V12 = {
-        "doc_type": "appointment_note",
-        "diagnosis": {"primary": "hypertension"},
-        "terms": ["BP", "systolic"],
+        "doc_type": "care_plan",
+        "summary": "Take blood pressure medicine daily.",
+        "terms": {
+            "hypertension": {
+                "definition": "High blood pressure.",
+                "source": "provider note",
+            }
+        },
     }
 
-    # ------------------------------------------------------------------
-    # Acceptance criteria: from_pipeline_result -> to_dict round-trip
-    # ------------------------------------------------------------------
+    def test_from_pipeline_result_dispatches_to_v12_model(self):
+        """CarePlan.from_pipeline_result('1.2', sample) validates as CarePlanV1_2."""
+        from models.care_plan import CarePlan, CarePlanV1_2
 
-    def test_v12_acceptance_criteria(self):
-        """from_pipeline_result('1.2', sample).to_dict() == {'version': '1.2', **sample}."""
-        from backend.models.care_plan import SimplifiedCarePlan
+        result = CarePlan.from_pipeline_result("1.2", self.SAMPLE_V12)
 
-        result = SimplifiedCarePlan.from_pipeline_result("1.2", self.SAMPLE_V12).to_dict()
-        expected = {"version": "1.2", **self.SAMPLE_V12}
-        self.assertEqual(result, expected)
+        self.assertIsInstance(result, CarePlanV1_2)
+        self.assertEqual(result.to_dict()["version"], "1.2")
+        self.assertEqual(result.to_dict()["doc_type"], "care_plan")
+        self.assertEqual(result.to_dict()["summary"], self.SAMPLE_V12["summary"])
 
-    def test_v10_pipeline_result_roundtrip(self):
-        """Version 1.0 pipeline result serialises and flattens correctly."""
-        from backend.models.care_plan import SimplifiedCarePlan
-
-        sample = {"raw_text": "Patient presents with...", "scores": {"accuracy": 0.9}}
-        result = SimplifiedCarePlan.from_pipeline_result("1.0", sample).to_dict()
-        self.assertEqual(result, {"version": "1.0", **sample})
-
-    def test_v11_pipeline_result_roundtrip(self):
-        """Version 1.1 pipeline result serialises and flattens correctly."""
-        from backend.models.care_plan import SimplifiedCarePlan
-
-        sample = {"structured": True, "medications": ["metformin"]}
-        result = SimplifiedCarePlan.from_pipeline_result("1.1", sample).to_dict()
-        self.assertEqual(result, {"version": "1.1", **sample})
-
-    # ------------------------------------------------------------------
-    # from_dict reconstruction
-    # ------------------------------------------------------------------
-
-    def test_from_dict_reconstructs_correctly(self):
-        """from_dict splits 'version' from the rest and builds the object."""
-        from backend.models.care_plan import SimplifiedCarePlan
+    def test_from_dict_roundtrip(self):
+        """CarePlan.from_dict dispatches and round-trips through the v1.2 shape."""
+        from models.care_plan import CarePlan, CarePlanV1_2
 
         flat = {"version": "1.2", **self.SAMPLE_V12}
-        obj = SimplifiedCarePlan.from_dict(flat)
-        self.assertEqual(obj.version, "1.2")
-        self.assertEqual(obj.data, self.SAMPLE_V12)
+        obj = CarePlan.from_dict(flat)
 
-    def test_from_dict_v10(self):
-        """from_dict works for version 1.0."""
-        from backend.models.care_plan import SimplifiedCarePlan
-
-        flat = {"version": "1.0", "raw_text": "visit note"}
-        obj = SimplifiedCarePlan.from_dict(flat)
-        self.assertEqual(obj.version, "1.0")
-        self.assertEqual(obj.data, {"raw_text": "visit note"})
-
-    def test_from_dict_v11(self):
-        """from_dict works for version 1.1."""
-        from backend.models.care_plan import SimplifiedCarePlan
-
-        flat = {"version": "1.1", "medications": ["aspirin"]}
-        obj = SimplifiedCarePlan.from_dict(flat)
-        self.assertEqual(obj.version, "1.1")
-        self.assertEqual(obj.data, {"medications": ["aspirin"]})
-
-    def test_full_roundtrip_v12(self):
-        """Full round-trip: from_pipeline_result -> to_dict -> from_dict -> to_dict."""
-        from backend.models.care_plan import SimplifiedCarePlan
-
-        obj = SimplifiedCarePlan.from_pipeline_result("1.2", self.SAMPLE_V12)
-        flat = obj.to_dict()
-        reconstructed = SimplifiedCarePlan.from_dict(flat)
-        self.assertEqual(reconstructed.version, "1.2")
-        self.assertEqual(reconstructed.data, self.SAMPLE_V12)
-        self.assertEqual(reconstructed.to_dict(), flat)
-
-    def test_to_dict_flattening_no_nested_data_key(self):
-        """to_dict must NOT produce a nested 'data' key."""
-        from backend.models.care_plan import SimplifiedCarePlan
-
-        obj = SimplifiedCarePlan.from_pipeline_result("1.2", self.SAMPLE_V12)
-        d = obj.to_dict()
-        self.assertNotIn("data", d)
-        self.assertIn("doc_type", d)
-        self.assertIn("diagnosis", d)
-        self.assertIn("terms", d)
+        self.assertIsInstance(obj, CarePlanV1_2)
+        self.assertEqual(CarePlan.from_dict(obj.to_dict()), obj)
 
     def test_unknown_version_raises(self):
         """from_dict with an unregistered version must raise descriptive ValueError."""
-        from backend.models.care_plan import SimplifiedCarePlan
+        from models.care_plan import CarePlan
 
-        with self.assertRaisesRegex(
-            ValueError,
-            "Unknown version '9\\.9' for SimplifiedCarePlan\\. "
-            "Available versions: 1\\.0, 1\\.1, 1\\.2",
-        ):
-            SimplifiedCarePlan.from_dict({"version": "9.9", "foo": "bar"})
+        with self.assertRaisesRegex(ValueError, "Unknown version '9\\.9' for CarePlan"):
+            CarePlan.from_dict({"version": "9.9", "doc_type": "care_plan"})
 
-    def test_from_dict_missing_version_raises_value_error(self):
-        """from_dict with no 'version' key must raise ValueError."""
-        from backend.models.care_plan import SimplifiedCarePlan
+    def test_registry_contains_v12_model(self):
+        """The v1.2 model must be registered on the CarePlan family."""
+        from models.care_plan import CarePlan, CarePlanV1_2
 
-        with self.assertRaises(ValueError):
-            SimplifiedCarePlan.from_dict({"doc_type": "appointment_note"})
+        self.assertIs(CarePlan._registry["1.2"], CarePlanV1_2)
 
-    def test_registry_contains_all_three_versions(self):
-        """All three versions must be registered in SimplifiedCarePlan._registry."""
-        from backend.models.care_plan import SimplifiedCarePlan
+    def test_inherits_versioned_model(self):
+        """CarePlanV1_2 must be a VersionedModel subclass."""
+        from models.base import VersionedModel
+        from models.care_plan import CarePlan
 
-        self.assertIn("1.0", SimplifiedCarePlan._registry)
-        self.assertIn("1.1", SimplifiedCarePlan._registry)
-        self.assertIn("1.2", SimplifiedCarePlan._registry)
-
-    def test_all_versions_map_to_same_class(self):
-        """All three registered versions must map to SimplifiedCarePlan."""
-        from backend.models.care_plan import SimplifiedCarePlan
-
-        for version in ("1.0", "1.1", "1.2"):
-            self.assertIs(SimplifiedCarePlan._registry[version], SimplifiedCarePlan)
-
-    def test_inherits_versioned_json_model(self):
-        """SimplifiedCarePlan must be a VersionedJsonModel subclass."""
-        from backend.models.base import VersionedJsonModel
-        from backend.models.care_plan import SimplifiedCarePlan
-
-        obj = SimplifiedCarePlan.from_pipeline_result("1.2", self.SAMPLE_V12)
-        self.assertIsInstance(obj, VersionedJsonModel)
+        obj = CarePlan.from_pipeline_result("1.2", self.SAMPLE_V12)
+        self.assertIsInstance(obj, VersionedModel)
 
     def test_package_export(self):
-        """SimplifiedCarePlan must be importable directly from backend.models."""
-        from backend.models import SimplifiedCarePlan  # noqa: F401
+        """CarePlan and CarePlanV1_2 must be importable directly from models."""
+        from models import CarePlan, CarePlanV1_2  # noqa: F401
 
 
-class TestSimplifyOutput(unittest.TestCase):
-    """Tests for SimplifyOutput envelope and is_legacy_shape helper."""
+class TestCarePlanInternal(unittest.TestCase):
+    """Tests for CarePlanInternal envelope and is_legacy_shape helper."""
 
     def _make_output(self):
-        """Build a representative SimplifyOutput instance."""
-        from backend.models.care_plan import SimplifiedCarePlan
-        from backend.models.envelope import SimplifyOutput
+        """Build a representative CarePlanInternal instance."""
+        from models.care_plan import CarePlan
+        from models.envelope import CarePlanInternal
 
         metrics = Metrics(
             session_id="sess-001",
@@ -472,28 +391,32 @@ class TestSimplifyOutput(unittest.TestCase):
             input_type="file",
             created_at="2026-06-16T12:00:00+00:00",
             total_duration_ms=4213.5,
-            step_durations_ms={"find_medical_terms": 812.1},
             saved_id="doc-42",
         )
         inp = Input(
             mode="file",
-            files=[InputFile("visit.pdf", "application/pdf", 88210)],
+            files=[
+                InputFile(
+                    filename="visit.pdf",
+                    content_type="application/pdf",
+                    size_bytes=88210,
+                )
+            ],
         )
         grading = Grading(entries=[])
-        care_plan = SimplifiedCarePlan.from_pipeline_result(
+        care_plan = CarePlan.from_pipeline_result(
             "1.2",
-            {"doc_type": "appointment_note", "diagnosis": {"primary": "hypertension"}},
+            {"doc_type": "care_plan", "summary": "Take medicine daily."},
         )
-        return SimplifyOutput(
+        return CarePlanInternal(
             metrics=metrics,
             input=inp,
             grading=grading,
-            simplified_care_plan=care_plan,
+            care_plan=care_plan,
         )
 
     def test_to_dict_produces_exact_nested_shape(self):
-        """SimplifyOutput.to_dict() must produce the PRD §5 'After' top-level shape."""
-        from backend.models.envelope import SimplifyOutput
+        """CarePlanInternal.to_dict() must produce the current top-level shape."""
 
         output = self._make_output()
         d = output.to_dict()
@@ -502,8 +425,14 @@ class TestSimplifyOutput(unittest.TestCase):
         self.assertIn("metrics", d)
         self.assertIn("input", d)
         self.assertIn("grading", d)
-        self.assertIn("simplified_care_plan", d)
-        self.assertEqual(set(d.keys()), {"metrics", "input", "grading", "simplified_care_plan"})
+        self.assertIn("care_plan", d)
+        self.assertIn("before_score", d)
+        self.assertIn("after_score", d)
+        self.assertEqual(
+            set(d.keys()),
+            {"metrics", "input", "grading", "care_plan", "before_score", "after_score"},
+        )
+        self.assertNotIn("simplified_care_plan", d)
 
     def test_to_dict_metrics_shape(self):
         """metrics sub-dict must match Metrics.to_dict() output."""
@@ -514,7 +443,6 @@ class TestSimplifyOutput(unittest.TestCase):
         self.assertEqual(d["metrics"]["pipeline_version"], "v1-2")
         self.assertEqual(d["metrics"]["input_type"], "file")
         self.assertEqual(d["metrics"]["total_duration_ms"], 4213.5)
-        self.assertEqual(d["metrics"]["step_durations_ms"], {"find_medical_terms": 812.1})
         self.assertEqual(d["metrics"]["saved_id"], "doc-42")
 
     def test_to_dict_input_shape(self):
@@ -537,49 +465,48 @@ class TestSimplifyOutput(unittest.TestCase):
         self.assertEqual(d["grading"], {"entries": [], "enabled": True, "graded_at": None})
 
     def test_to_dict_care_plan_shape(self):
-        """simplified_care_plan sub-dict must be flat (no nested 'data' key)."""
+        """care_plan sub-dict must be the v1.2 care-plan shape."""
         output = self._make_output()
         d = output.to_dict()
 
-        cp = d["simplified_care_plan"]
+        cp = d["care_plan"]
         self.assertEqual(cp["version"], "1.2")
-        self.assertEqual(cp["doc_type"], "appointment_note")
-        self.assertEqual(cp["diagnosis"], {"primary": "hypertension"})
+        self.assertEqual(cp["doc_type"], "care_plan")
+        self.assertEqual(cp["summary"], "Take medicine daily.")
         self.assertNotIn("data", cp)
 
     def test_package_exports(self):
-        """SimplifyOutput and is_legacy_shape must be importable from backend.models."""
-        from backend.models import SimplifyOutput, is_legacy_shape  # noqa: F401
+        """CarePlanInternal and is_legacy_shape must be importable from models."""
+        from models import CarePlanInternal, is_legacy_shape  # noqa: F401
 
     def test_is_legacy_shape_returns_true_for_flat_dict(self):
-        """is_legacy_shape must return True when 'simplified_care_plan' key is absent."""
-        from backend.models.envelope import is_legacy_shape
+        """is_legacy_shape must return True when 'care_plan' key is absent."""
+        from models.envelope import is_legacy_shape
 
         flat_legacy = {"session_id": "s", "doc_type": "note", "diagnosis": {}}
         self.assertTrue(is_legacy_shape(flat_legacy))
 
     def test_is_legacy_shape_returns_false_for_new_shape(self):
-        """is_legacy_shape must return False when 'simplified_care_plan' key is present."""
-        from backend.models.envelope import is_legacy_shape
+        """is_legacy_shape must return False when 'care_plan' key is present."""
+        from models.envelope import is_legacy_shape
 
         new_shape = {
             "metrics": {},
             "input": {},
             "grading": {},
-            "simplified_care_plan": {},
+            "care_plan": {},
         }
         self.assertFalse(is_legacy_shape(new_shape))
 
     def test_is_legacy_shape_empty_dict(self):
         """is_legacy_shape must return True for an empty dict."""
-        from backend.models.envelope import is_legacy_shape
+        from models.envelope import is_legacy_shape
 
         self.assertTrue(is_legacy_shape({}))
 
-    def test_simplify_output_inherits_json_model(self):
-        """SimplifyOutput must be a JsonModel subclass."""
-        from backend.models.base import JsonModel
-        from backend.models.envelope import SimplifyOutput
+    def test_care_plan_internal_inherits_json_model(self):
+        """CarePlanInternal must be a JsonModel subclass."""
+        from models.base import JsonModel
 
         output = self._make_output()
         self.assertIsInstance(output, JsonModel)
