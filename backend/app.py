@@ -55,21 +55,10 @@ def extract_session_id():
     Determine the session_id for this request and store it on flask.g
     for use in route handlers, structured logging, and Cloud Trace.
 
-    Priority:
-    1. appointment_id from the URL path  — naturally groups every call
-       for the same appointment under one session in Cloud Trace / Logging.
-    2. X-Session-Id header sent by the client.
-    3. Auto-generated UUID (fallback for non-appointment routes).
+    Source: X-Session-Id request header, or a generated UUID if absent.
+    SP4 boundary: session_id never falls back to user_id.
     """
-    # Prefer the appointment_id embedded in the URL (available for all
-    # /appointments/<appointment_id>/… routes) so that every log line
-    # and trace span for a given appointment shares the same session_id.
-    appointment_id: str = (request.view_args or {}).get("appointment_id", "")
-    if appointment_id:
-        session_id = appointment_id
-    else:
-        session_id = request.headers.get("X-Session-Id", "") or str(uuid.uuid4())
-
+    session_id = request.headers.get("X-Session-Id", "") or str(uuid.uuid4())
     g.session_id = session_id
 
     # Record start time for request duration logging in after_request
@@ -142,20 +131,12 @@ def root():
         'name': 'Medical Scribe Processing API',
         'version': '1.1.0',
         'endpoints': {
-            'POST /appointments': 'Create an empty appointment',
-            'POST /appointments/{id}/upload-recording-new': 'Upload recording to GCS (no processing)',
-            'POST /appointments/{id}/upload-notes': 'Store plain text notes on appointment',
-            'POST /appointments/{id}/upload-document': 'Upload PDF document to GCS',
-            'POST /appointments/{id}/process': 'Process appointment (transcribe, extract PDF, summarize)',
-            'POST /appointments/{id}/audio-chunks': 'Upload audio chunk for transcription',
-            'POST /appointments/{id}/generate-questions': 'Generate patient questions',
-            'POST /appointments/{id}/finalize': 'Finalize appointment with full audio',
-            'POST /appointments/{id}/upload-recording': 'Upload and process full audio (legacy)',
-            'DELETE /appointments/{id}': 'Delete appointment and associated files',
-            'GET /appointments/search?q=<query>': 'Search appointments',
-            'POST /appointments/generate-questions-try': 'Generate questions (no auth)',
-            'POST /appointments/upload-recording-try': 'Upload recording + SOAP (no auth)',
-            'POST /appointments/upload-notes-try': 'Notes to SOAP (no auth)',
+            'POST /care_plan': 'Simplify a medical document into a care plan (SSE)',
+            'POST /care_plan/grade': 'Re-run grading on a saved or ephemeral care plan',
+            'POST /care_plan/batch': 'Batch-simplify dataset selections (SSE)',
+            'GET /care_plan/datasets': 'List preset datasets',
+            'GET /care_plan/saved': "List the user's saved care plans",
+            'GET /health': 'Health check',
         }
     }), 200
 
