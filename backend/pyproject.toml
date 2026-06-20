@@ -1,7 +1,7 @@
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
-addopts = "-ra"
+addopts = "-ra --import-mode=importlib"
 markers = [
   "integration: slower tests that exercise multiple layers",
 ]

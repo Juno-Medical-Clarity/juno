@@ -5,9 +5,15 @@ import pytest
 
 BACKEND_DIR = Path(__file__).resolve().parents[1]
 PROJECT_DIR = BACKEND_DIR.parent
-for p in (PROJECT_DIR, BACKEND_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
+
+# Ensure BACKEND_DIR is at position 0 so it shadows tests/routes, tests/models,
+# tests/utils when doing `from routes import ...` etc.  Simply checking
+# `if str(p) not in sys.path` is insufficient — pytest may have already added
+# BACKEND_DIR at a position *after* tests/, so we forcibly move it to the front.
+for p in (str(BACKEND_DIR), str(PROJECT_DIR)):
+    if p in sys.path:
+        sys.path.remove(p)
+    sys.path.insert(0, p)
 
 from flask import Flask
 from routes import all_blueprints
