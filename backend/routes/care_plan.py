@@ -63,7 +63,7 @@ MAX_FILE_BYTES = 10 * 1024 * 1024  # 10 MB
 MAX_FILE_COUNT = 10
 MAX_AGGREGATE_FILE_BYTES = 25 * 1024 * 1024  # 25 MB
 _GCS_BUCKET_NAME = os.environ.get("GCP_BUCKET_NAME", "")
-_UPLOAD_PREFIX = "simplify-uploads"
+_UPLOAD_PREFIX = "care_plan-uploads"
 
 
 def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
