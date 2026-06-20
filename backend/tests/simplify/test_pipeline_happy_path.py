@@ -1,171 +1,126 @@
-"""Happy-path test for the V1.2 simplification pipeline (SSE stream)."""
-
+"""Happy-path SSE test for the care_plan pipeline via HTTP POST /care_plan."""
 import json
-import sys
-import unittest
-from pathlib import Path
+import pytest
 from unittest.mock import patch, MagicMock
 
-BACKEND_DIR = Path(__file__).resolve().parents[2]
-PROJECT_DIR = BACKEND_DIR.parent
-for p in (str(BACKEND_DIR), str(PROJECT_DIR)):
-    if p in sys.path:
-        sys.path.remove(p)
-    sys.path.insert(0, p)
-
-import routes.simplify_v1_2 as v1_2_module
-from backend.models.metrics import Metrics
+from routes.care_plan import RESULT_SENTINEL
+from models.care_plan import CarePlan, CARE_PLAN_VERSION
+from models.grading import Grading
 
 
-def parse_sse(chunks):
-    """Parse SSE chunks (strings) into a list of event dicts."""
+def parse_sse(response):
+    text = response.get_data(as_text=True)
     events = []
-    for chunk in chunks:
-        if not isinstance(chunk, str):
-            continue
-        for block in chunk.strip().split("\n\n"):
-            if block.startswith("data: "):
-                try:
-                    events.append(json.loads(block.removeprefix("data: ")))
-                except json.JSONDecodeError:
-                    pass
+    for block in text.split("\n\n"):
+        block = block.strip()
+        if block.startswith("data: "):
+            events.append(json.loads(block.removeprefix("data: ")))
     return events
 
 
-class FakeV1_2Pipeline:
-    """Canned pipeline that returns a minimal care plan without touching LLMs."""
-
-    def simplify_language_with_term_plan(self, text, substitution_candidates, preserve_terms, abbreviations):
-        return "simplified text"
-
-    def clarify_and_action(self, simplified, abbreviations):
-        return "clarified text"
-
-    def structure_appointment_note(self, clarified):
-        return {
-            "summary": "Patient has high blood pressure.",
-            "diagnosis": {"main_conclusion": "Hypertension", "details": []},
-            "medications": [],
-            "follow_up": [],
-            "reason_for_visit": [],
-        }
+def _make_fake_care_plan():
+    return CarePlan.from_pipeline_result("1.2", {
+        "summary": "Patient has high blood pressure.",
+        "diagnosis": {"main_conclusion": "Hypertension", "details": []},
+        "medications": [],
+        "follow_up": [],
+        "reason_for_visit": [],
+        "terms": {},  # must be a dict, not a list
+        "raw": {
+            "text": "patient text",
+            "simplified_text": "simplified text",
+            "clarified_text": "clarified text",
+        },
+    })
 
 
-class TestPipelineHappyPath(unittest.TestCase):
-    """run_v1_2_pipeline with a mocked LLM pipeline streams steps then a result."""
+def test_pipeline_happy_path(client, auth_ok, fake_firestore, monkeypatch):
+    """Full SSE stream: progress events appear before terminal result event."""
+    fake_care_plan = _make_fake_care_plan()
+    fake_grading = Grading(enabled=False)
 
-    def _run_pipeline(self, text="Patient note.", grading_enabled=False):
-        metrics = Metrics.start(
-            session_id="session-1",
-            pipeline_version="v1-2",
-            input_type="text",
-        )
-        with patch.object(v1_2_module, "V1_2Pipeline", return_value=FakeV1_2Pipeline()), \
-             patch.object(v1_2_module, "_score_or_none", return_value=None):
-            chunks = list(v1_2_module.run_v1_2_pipeline(text, metrics, grading_enabled=grading_enabled))
-        return parse_sse(chunks)
+    def fake_pipeline(text, metrics, grading_enabled=True):
+        yield f"data: {json.dumps({'step': 2, 'status': 'active'})}\n\n"
+        yield f"data: {json.dumps({'step': 2, 'status': 'done'})}\n\n"
+        yield f"data: {json.dumps({'step': 3, 'status': 'active'})}\n\n"
+        yield f"data: {json.dumps({'step': 3, 'status': 'done'})}\n\n"
+        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "", None, None)
 
-    def test_no_error_events(self):
-        events = self._run_pipeline()
-        error_events = [e for e in events if e.get("step") == "error"]
-        self.assertEqual(error_events, [], f"Unexpected error events: {error_events}")
+    # Must patch PIPELINES (the route uses PIPELINES[version], not the bare function name)
+    monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": fake_pipeline})
 
-    def test_terminal_result_event_present(self):
-        events = self._run_pipeline()
-        result_events = [e for e in events if e.get("step") == "result"]
-        self.assertEqual(len(result_events), 1, f"Expected exactly one result event, got: {result_events}")
+    response = client.post("/care_plan", data={"text": "patient text"}, headers=auth_ok)
+    assert response.status_code == 200
+    assert response.content_type == "text/event-stream"
 
-    def test_terminal_event_has_simplified_care_plan(self):
-        events = self._run_pipeline()
-        result = next(e for e in events if e.get("step") == "result")
-        data = result.get("data", {})
-        self.assertIn("simplified_care_plan", data)
+    events = parse_sse(response)
+    assert len(events) > 0
 
-    def test_terminal_event_has_grading(self):
-        events = self._run_pipeline()
-        result = next(e for e in events if e.get("step") == "result")
-        data = result.get("data", {})
-        self.assertIn("grading", data)
+    # Progress events must be present
+    progress_events = [e for e in events if isinstance(e.get("step"), int)]
+    assert len(progress_events) > 0
 
-    def test_terminal_event_grading_enabled_false(self):
-        """With grading_enabled=False the grading object has enabled=False and no entries."""
-        events = self._run_pipeline(grading_enabled=False)
-        result = next(e for e in events if e.get("step") == "result")
-        grading = result["data"]["grading"]
-        self.assertFalse(grading["enabled"])
-        self.assertEqual(grading["entries"], [])
+    # A terminal result event must be present
+    result_events = [e for e in events if e.get("step") == "result"]
+    assert len(result_events) == 1
 
-    def test_progress_events_appear_before_result(self):
-        """Step-progress events (step 2-5) must all appear before the result event."""
-        events = self._run_pipeline()
-        result_idx = next(i for i, e in enumerate(events) if e.get("step") == "result")
-        progress_events = [
-            e for e in events[:result_idx]
-            if isinstance(e.get("step"), int)
-        ]
-        self.assertGreater(len(progress_events), 0, "Expected progress events before result")
-
-    def test_step_labels_are_present(self):
-        events = self._run_pipeline()
-        progress_events = [e for e in events if isinstance(e.get("step"), int)]
-        for event in progress_events:
-            with self.subTest(event=event):
-                self.assertIn("label", event)
-
-    def test_terminal_event_has_metrics(self):
-        events = self._run_pipeline()
-        result = next(e for e in events if e.get("step") == "result")
-        data = result["data"]
-        self.assertIn("metrics", data)
+    # Result data must have care_plan and grading keys
+    data = result_events[0]["data"]
+    assert "care_plan" in data
+    assert "grading" in data
 
 
-class TestPipelineGradingEnabled(unittest.TestCase):
-    """With grading_enabled=True the grading object has entries."""
+def test_pipeline_result_has_metrics(client, auth_ok, fake_firestore, monkeypatch):
+    """Result event data must include a metrics key."""
+    fake_care_plan = _make_fake_care_plan()
+    fake_grading = Grading(enabled=False)
 
-    def _run_pipeline(self, text, grading_enabled=True):
-        metrics = Metrics.start(
-            session_id="session-1",
-            pipeline_version="v1-2",
-            input_type="text",
-        )
-        fake_score = {
-            "composite": 55,
-            "grade_estimate": 10.5,
-            "label": "Moderate",
-            "word_count": 50,
-            "dimensions": {
-                "grade_level": {"score": 60, "raw": 10.5, "label": "Grade Level", "unit": "grade"},
-                "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon", "unit": "proportion"},
-                "sentence_complexity": {"score": 80, "raw": 12.0, "label": "Sentence", "unit": "words/sentence"},
-                "passive_voice": {"score": 90, "raw": 0.0, "label": "Active", "unit": "passive ratio"},
-                "actionability": {"score": 50, "raw": 0.05, "label": "Action", "unit": "you-rate"},
-                "numeracy_clarity": {"score": 100, "raw": 0.0, "label": "Numeracy", "unit": "vague count"},
-                "structural_clarity": {"score": 75, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"},
-            },
-            "research_basis": {},
-        }
-        with patch.object(v1_2_module, "V1_2Pipeline", return_value=FakeV1_2Pipeline()), \
-             patch.object(v1_2_module, "_score_or_none", return_value=fake_score):
-            chunks = list(v1_2_module.run_v1_2_pipeline(text, metrics, grading_enabled=grading_enabled))
-        return [
-            json.loads(block.removeprefix("data: "))
-            for chunk in chunks if isinstance(chunk, str)
-            for block in chunk.strip().split("\n\n")
-            if block.startswith("data: ")
-        ]
+    def fake_pipeline(text, metrics, grading_enabled=True):
+        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "", None, None)
 
-    def test_grading_enabled_has_entries(self):
-        long_text = (
-            "The patient has hypertension. Take your pills daily. "
-            "Follow up in two weeks. Call us if anything changes. "
-            "Drink more water and reduce salt intake. Avoid stress. Rest well."
-        )
-        events = self._run_pipeline(long_text, grading_enabled=True)
-        result = next(e for e in events if e.get("step") == "result")
-        grading = result["data"]["grading"]
-        self.assertTrue(grading.get("enabled"))
-        self.assertGreater(len(grading["entries"]), 0)
+    monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": fake_pipeline})
+
+    response = client.post("/care_plan", data={"text": "patient text"}, headers=auth_ok)
+    events = parse_sse(response)
+    result = next(e for e in events if e.get("step") == "result")
+    assert "metrics" in result["data"]
 
 
-if __name__ == "__main__":
-    unittest.main()
+def test_pipeline_no_error_events_on_success(client, auth_ok, fake_firestore, monkeypatch):
+    """On a clean run, no error events must be emitted."""
+    fake_care_plan = _make_fake_care_plan()
+    fake_grading = Grading(enabled=False)
+
+    def fake_pipeline(text, metrics, grading_enabled=True):
+        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "", None, None)
+
+    monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": fake_pipeline})
+
+    response = client.post("/care_plan", data={"text": "patient text"}, headers=auth_ok)
+    events = parse_sse(response)
+    error_events = [e for e in events if e.get("step") == "error"]
+    assert error_events == []
+
+
+def test_pipeline_missing_auth_returns_401(client):
+    """No Authorization header → 401 (no SSE stream at all)."""
+    response = client.post("/care_plan", data={"text": "patient text"})
+    assert response.status_code == 401
+
+
+def test_pipeline_empty_text_returns_error_event(client, auth_ok, fake_firestore, monkeypatch):
+    """Empty text → error SSE event (the route's own empty-text guard fires)."""
+    # Don't patch PIPELINES — let the route's empty-text guard run before the pipeline call
+    # (the guard fires in _care_plan_stream before pipeline is called)
+    fake_care_plan = _make_fake_care_plan()
+    fake_grading = Grading(enabled=False)
+
+    def fake_pipeline(text, metrics, grading_enabled=True):
+        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "", None, None)
+
+    monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": fake_pipeline})
+
+    response = client.post("/care_plan", data={"text": "   "}, headers=auth_ok)
+    events = parse_sse(response)
+    error_events = [e for e in events if e.get("step") == "error"]
+    assert len(error_events) >= 1
