@@ -76,11 +76,11 @@ class SaveOutputTest(unittest.TestCase):
         self.assertEqual(payload["dataset_group"], "DocConv")
         self.assertEqual(payload["batch_group_id"], "DocConv-20260616153012")
 
-    @patch.dict("utils.save_output.os.environ", {"GCP_BUCKET_NAME": "bucket", "GCP_PROJECT_ID": "project"})
-    @patch("utils.save_output.uuid.uuid4")
-    @patch("utils.save_output.gcs.Client")
+    @patch.dict("routes.care_plan.os.environ", {"GCP_BUCKET_NAME": "bucket", "GCP_PROJECT_ID": "project"})
+    @patch("routes.care_plan.uuid.uuid4")
+    @patch("routes.care_plan.gcs.Client")
     def test_upload_combined_pdf_uses_care_plan_gcs_path(self, gcs_client, uuid4):
-        from utils.save_output import upload_combined_pdf
+        from routes.care_plan import upload_combined_pdf
 
         uuid4.return_value = "input-456"
         blob = MagicMock()

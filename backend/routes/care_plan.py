@@ -21,6 +21,7 @@ import io
 import json
 import logging
 import os
+import uuid
 from dataclasses import dataclass
 from typing import Generator
 
@@ -30,7 +31,7 @@ from google.cloud import storage as gcs
 from config import CARE_PLAN_DEFAULT_VERSION
 from simplify.v1_2.pipeline import V1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
-from utils.save_output import save_care_plan_output, upload_combined_pdf
+from utils.firebase import save_care_plan_output
 from utils.auth import verify_firebase_token
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
@@ -61,6 +62,23 @@ MAX_FILE_COUNT = 10
 MAX_AGGREGATE_FILE_BYTES = 25 * 1024 * 1024  # 25 MB
 _GCS_BUCKET_NAME = os.environ.get("GCP_BUCKET_NAME", "")
 _UPLOAD_PREFIX = "simplify-uploads"
+
+
+def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
+    """Upload combined input PDF bytes and return a gs:// URI."""
+    bucket_name = os.environ.get("GCP_BUCKET_NAME", "")
+    if not bucket_name:
+        raise RuntimeError("GCP_BUCKET_NAME is not configured")
+
+    project_id = os.environ.get("GCP_PROJECT_ID", "") or None
+    object_id = str(uuid.uuid4())
+    blob_name = f"care_plan/{user_id}/inputs/{object_id}.pdf"
+
+    client = gcs.Client(project=project_id)
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(blob_name)
+    blob.upload_from_string(pdf_bytes, content_type="application/pdf")
+    return f"gs://{bucket_name}/{blob_name}"
 
 
 @dataclass
