@@ -518,7 +518,7 @@ def _care_plan_stream(user_id: str, version: str):
             return
 
         metrics = Metrics.start(
-            session_id=getattr(g, "session_id", ""),
+            session_id=g.session_id,
             pipeline_version=version,
             input_type=resolved.source_kind,
         )
