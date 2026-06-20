@@ -12,12 +12,13 @@ from utils.firebase import initialize_firebase
 from logging_config import setup_logging
 from telemetry import init_telemetry
 from utils.juno_logger import JunoLogger, monotonic_ms
-from utils.juno_metrics import JunoMetrics
 
 # ---------------------------------------------------------------------------
 # Bootstrap logging FIRST so all subsequent log calls use structured output
 # ---------------------------------------------------------------------------
 setup_logging()
+from utils.markers import register_sink, JunoSink, Markers, JunoContext
+register_sink(JunoSink())
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
@@ -26,7 +27,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Enable CORS for all routes (expose X-Session-Id so frontends can read it)
-CORS(app, expose_headers=["X-Session-Id"])
+CORS(app, expose_headers=["X-Session-Id", "X-Trace-Id"])
 
 # ---------------------------------------------------------------------------
 # Initialize OpenTelemetry (instruments Flask + outgoing HTTP)
@@ -86,6 +87,11 @@ def attach_session_id_header(response):
     if session_id:
         response.headers["X-Session-Id"] = session_id
 
+    # Attach X-Trace-Id header from the current OTel span
+    span_ctx = trace.get_current_span().get_span_context()
+    if span_ctx and span_ctx.is_valid:
+        response.headers["X-Trace-Id"] = format(span_ctx.trace_id, "032x")
+
     # Log request completion with total duration (skip health checks)
     if request.path != "/health":
         start_ms = getattr(g, "request_start_ms", None)
@@ -95,14 +101,17 @@ def attach_session_id_header(response):
             status_code=response.status_code,
             duration_ms=duration_ms,
         )
-        # Record request-level metrics (skip SSE routes — they emit their own metrics)
-        if response.content_type != "text/event-stream":
-            metrics = JunoMetrics()
-            metrics.record_latency("http_request", duration_ms, labels={
-                "method": request.method,
-                "path": request.path,
-                "status": str(response.status_code),
-            })
+        # Record request-level metrics via Markers (skip SSE routes — they emit their own)
+        if request.path != "/health" and response.content_type != "text/event-stream":
+            def _emit(scope):
+                JunoContext.from_g(function="http_request").apply(scope)
+                scope.add("http_method", request.method)
+                scope.add("http_path", request.path)
+                scope.add("http_status", str(response.status_code))
+                scope.add("duration_ms_observed", round(duration_ms, 1))
+                if response.status_code >= 500:
+                    scope.mark_failed()
+            Markers.Http.Request.execute(_emit)
 
     return response
 
