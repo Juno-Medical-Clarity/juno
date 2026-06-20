@@ -1,13 +1,13 @@
 """
-saved_outputs.py — CRUD endpoints for saved Simplify outputs.
+saved_outputs.py — CRUD endpoints for saved care plan outputs.
 
 All endpoints require Firebase auth (user_id from token).
 
-GET  /simplify/saved              — list user's saved outputs (metadata only)
-GET  /simplify/saved/<doc_id>     — get full output data for one saved output
-PATCH /simplify/saved/<doc_id>    — rename a saved output
-DELETE /simplify/saved/<doc_id>   — delete a saved output and its GCS files
-GET  /simplify/saved/<doc_id>/input-pdf-url — get a signed URL for the combined PDF
+GET  /care_plan/saved              — list user's saved outputs (metadata only)
+GET  /care_plan/saved/<doc_id>     — get full output data for one saved output
+PATCH /care_plan/saved/<doc_id>    — rename a saved output
+DELETE /care_plan/saved/<doc_id>   — delete a saved output and its GCS files
+GET  /care_plan/saved/<doc_id>/input-pdf-url — get a signed URL for the combined PDF
 """
 
 import logging
@@ -26,7 +26,7 @@ saved_outputs_bp = Blueprint("saved_outputs", __name__)
 _BUCKET_NAME = os.environ.get('GCP_BUCKET_NAME', '')
 
 # Firestore composite index required:
-# Collection: simplify_outputs
+# Collection: care_plan_outputs
 # Fields: uid ASC, created_at DESC
 # Create via Firebase console or firestore.indexes.json
 
@@ -38,7 +38,7 @@ def _db():
 
 def _get_doc_or_403(db, doc_id: str, user_id: str):
     """Fetch a saved_outputs document, verify ownership. Returns doc snapshot."""
-    ref = db.collection('simplify_outputs').document(doc_id)
+    ref = db.collection('care_plan_outputs').document(doc_id)
     doc = ref.get()
     if not doc.exists:
         return None, (jsonify({'error': 'Not found'}), 404)
@@ -48,13 +48,13 @@ def _get_doc_or_403(db, doc_id: str, user_id: str):
     return doc, None
 
 
-@saved_outputs_bp.route('/simplify/saved', methods=['GET'])
+@saved_outputs_bp.route('/care_plan/saved', methods=['GET'])
 @verify_firebase_token
 def list_saved(user_id: str):
     """Return list of saved outputs for the authenticated user, newest first."""
     db = _db()
     docs = (
-        db.collection('simplify_outputs')
+        db.collection('care_plan_outputs')
         .where('uid', '==', user_id)
         .order_by('created_at', direction=firestore.Query.DESCENDING)
         .stream()
@@ -73,7 +73,7 @@ def list_saved(user_id: str):
     return jsonify({'outputs': results})
 
 
-@saved_outputs_bp.route('/simplify/saved/<doc_id>', methods=['GET'])
+@saved_outputs_bp.route('/care_plan/saved/<doc_id>', methods=['GET'])
 @verify_firebase_token
 def get_saved(user_id: str, doc_id: str):
     """Return full output data for a single saved output."""
@@ -92,7 +92,7 @@ def get_saved(user_id: str, doc_id: str):
     })
 
 
-@saved_outputs_bp.route('/simplify/saved/<doc_id>', methods=['PATCH'])
+@saved_outputs_bp.route('/care_plan/saved/<doc_id>', methods=['PATCH'])
 @verify_firebase_token
 def rename_saved(user_id: str, doc_id: str):
     """Rename a saved output. Body: {"name": "new name"}"""
@@ -106,14 +106,14 @@ def rename_saved(user_id: str, doc_id: str):
         return jsonify({'error': 'name is required'}), 400
     if len(new_name) > 200:
         return jsonify({'error': 'name too long (max 200 chars)'}), 400
-    db.collection('simplify_outputs').document(doc_id).update({
+    db.collection('care_plan_outputs').document(doc_id).update({
         'name': new_name,
         'updated_at': datetime.now(timezone.utc),
     })
     return jsonify({'id': doc_id, 'name': new_name})
 
 
-@saved_outputs_bp.route('/simplify/saved/<doc_id>', methods=['DELETE'])
+@saved_outputs_bp.route('/care_plan/saved/<doc_id>', methods=['DELETE'])
 @verify_firebase_token
 def delete_saved(user_id: str, doc_id: str):
     """Delete a saved output and its GCS files."""
@@ -134,11 +134,11 @@ def delete_saved(user_id: str, doc_id: str):
         except Exception:
             logger.exception("delete_saved: failed to delete GCS file %s", gcs_uri)
 
-    db.collection('simplify_outputs').document(doc_id).delete()
+    db.collection('care_plan_outputs').document(doc_id).delete()
     return jsonify({'deleted': doc_id})
 
 
-@saved_outputs_bp.route('/simplify/saved/<doc_id>/input-pdf-url', methods=['GET'])
+@saved_outputs_bp.route('/care_plan/saved/<doc_id>/input-pdf-url', methods=['GET'])
 @verify_firebase_token
 def get_input_pdf_url(user_id: str, doc_id: str):
     """

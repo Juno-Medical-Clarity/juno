@@ -1,4 +1,4 @@
-"""grading.py — Re-run grading on a saved or ephemeral simplify output."""
+"""grading.py — Re-run grading on a saved or ephemeral care plan output."""
 
 import logging
 import os
@@ -20,7 +20,7 @@ def _db():
 
 
 def _get_doc_or_403(db, doc_id: str, user_id: str):
-    ref = db.collection("simplify_outputs").document(doc_id)
+    ref = db.collection("care_plan_outputs").document(doc_id)
     doc = ref.get()
     if not doc.exists:
         return None, (jsonify({"error": "Not found"}), 404)
@@ -30,10 +30,10 @@ def _get_doc_or_403(db, doc_id: str, user_id: str):
     return doc, None
 
 
-@grading_bp.route("/simplify/grade", methods=["POST"])
+@grading_bp.route("/care_plan/grade", methods=["POST"])
 @verify_firebase_token
-def run_grading(user_id: str):
-    """Re-run grading for a saved or ephemeral simplify output.
+def run_care_plan_grading(user_id: str):
+    """Re-run grading for a saved or ephemeral care plan output.
 
     Body (JSON):
       { "saved_id": "<uuid>" }

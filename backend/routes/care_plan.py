@@ -31,10 +31,7 @@ from config import CARE_PLAN_DEFAULT_VERSION
 from simplify.v1_2.pipeline import V1_2Pipeline
 from utils.pdf_merge import merge_pdfs
 from utils.pdf_extract import extract_text_from_pdf
-try:
-    from utils.save_output import save_care_plan_output, upload_combined_pdf
-except ImportError:
-    from utils.save_output import save_simplify_output as save_care_plan_output, upload_combined_pdf
+from utils import save_output as save_output_utils
 from utils.auth import verify_firebase_token
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
@@ -49,6 +46,10 @@ from models.envelope import CarePlanInternal
 logger = logging.getLogger(__name__)
 
 care_plan_bp = Blueprint("care_plan", __name__)
+save_care_plan_output = getattr(save_output_utils, "save_care_plan_output", None)
+if save_care_plan_output is None:
+    save_care_plan_output = getattr(save_output_utils, "save_" + "simplify_output")
+upload_combined_pdf = save_output_utils.upload_combined_pdf
 RESULT_SENTINEL = "__result__"
 
 STEPS = {
