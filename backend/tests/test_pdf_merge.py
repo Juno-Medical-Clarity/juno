@@ -21,7 +21,7 @@ class PdfMergeTest(unittest.TestCase):
 
     def test_merge_pdfs_combines_pdf_and_txt_inputs(self):
         from pypdf import PdfReader
-        from utils.pdf_merge import merge_pdfs
+        from utils.pdf import merge_pdfs
 
         merged = merge_pdfs(
             [
@@ -34,9 +34,9 @@ class PdfMergeTest(unittest.TestCase):
         self.assertEqual(len(reader.pages), 2)
 
     def test_merge_pdfs_raises_when_no_pages_are_mergeable(self):
-        from utils.pdf_merge import merge_pdfs
+        from utils.pdf import merge_pdfs
 
-        with self.assertLogs("utils.pdf_merge", level="WARNING"):
+        with self.assertLogs("utils.pdf", level="WARNING"):
             with self.assertRaises(ValueError):
                 merge_pdfs([(b"not supported", "image.png")])
 

@@ -29,8 +29,7 @@ from google.cloud import storage as gcs
 
 from config import CARE_PLAN_DEFAULT_VERSION
 from simplify.v1_2.pipeline import V1_2Pipeline
-from utils.pdf_merge import merge_pdfs
-from utils.pdf_extract import extract_text_from_pdf
+from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.save_output import save_care_plan_output, upload_combined_pdf
 from utils.auth import verify_firebase_token
 from utils.scoring import score_text
