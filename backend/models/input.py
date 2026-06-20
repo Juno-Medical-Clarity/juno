@@ -60,7 +60,7 @@ class Input(JsonModel):
 
         Reads each upload's stream to determine size_bytes, then resets the
         stream position with seek(0) so that downstream code (e.g. PDF-merge
-        logic in simplify_v1_2.py) can still read the bytes.
+        logic in care_plan.py) can still read the bytes.
 
         Args:
             uploads: List of werkzeug FileStorage objects. Each must expose
