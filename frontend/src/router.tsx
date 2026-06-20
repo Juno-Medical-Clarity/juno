@@ -1,5 +1,5 @@
-import type { SimplifyOutput } from './types/envelope';
+import type { CarePlanInternal } from './types/envelope';
 
 export interface VersionRouteState {
-  output?: SimplifyOutput;
+  output?: CarePlanInternal;
 }

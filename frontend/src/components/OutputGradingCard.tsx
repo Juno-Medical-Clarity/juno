@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { API_URL } from '../api/firebase';
 import { authenticatedFetch } from '../api/apiClient';
-import type { SimplifyOutput, Grading } from '../types/envelope';
+import type { CarePlanInternal, Grading } from '../types/envelope';
 
 interface OutputGradingCardProps {
-  output: SimplifyOutput;
+  output: CarePlanInternal;
   onGraded: (grading: Grading) => void;
 }
 
@@ -20,8 +20,8 @@ export default function OutputGradingCard({ output, onGraded }: OutputGradingCar
       const body = savedId
         ? { saved_id: savedId }
         : {
-            text: output.simplified_care_plan.raw?.text ?? '',
-            clarified_text: output.simplified_care_plan.raw?.clarified_text ?? '',
+            text: output.care_plan.raw?.text ?? '',
+            clarified_text: output.care_plan.raw?.clarified_text ?? '',
           };
 
       const res = await authenticatedFetch(`${API_URL}/care_plan/grade`, {

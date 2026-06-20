@@ -1,24 +1,23 @@
 // frontend/src/utils/normalizeOutput.ts
 
-import type { SimplifyOutput } from '../types/envelope';
+import type { CarePlanInternal } from '../types/envelope';
 
 export function isLegacyShape(data: any): boolean {
-  return !('simplified_care_plan' in data);
+  return !('care_plan' in data);
 }
 
-export function normalizeSimplifyOutput(raw: any): SimplifyOutput {
+export function normalizeCarePlanOutput(raw: any): CarePlanInternal {
   if (raw == null) {
-    throw new Error('normalizeSimplifyOutput: received null or undefined output data');
+    throw new Error('normalizeCarePlanOutput: received null or undefined output data');
   }
-  if (!isLegacyShape(raw)) return raw as SimplifyOutput;
+  if (!isLegacyShape(raw)) return raw as CarePlanInternal;
 
-  // Legacy flat shape: everything except saved_id is the care plan itself.
+  // Legacy flat shape: old saved Firestore documents without the envelope wrapper.
   const { saved_id, ...rest } = raw;
   return {
-    // pipeline_version uses route format ("v1"/"v1-1"/"v1-2"); care plan version uses schema format ("1.0"/"1.1"/"1.2")
     metrics: {
       session_id: '',
-      pipeline_version: 'v1',  // legacy documents don't carry pipeline version info
+      pipeline_version: 'v1',
       input_type: 'file',
       created_at: '',
       total_duration_ms: null,
@@ -27,6 +26,6 @@ export function normalizeSimplifyOutput(raw: any): SimplifyOutput {
     },
     input: { mode: 'file', files: [], text: null, doc_id: null },
     grading: { entries: [], enabled: false, graded_at: null },
-    simplified_care_plan: { version: rest.version ?? '1.0', ...rest },
+    care_plan: { version: rest.version ?? '1.0', ...rest },
   };
 }

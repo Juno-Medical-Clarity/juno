@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import type { PatientScore, PatientScoreDimension, TermsMap } from '../types/simplify';
+import type { PatientScore, PatientScoreDimension, TermsMap } from '../types/carePlan';
 import type { SimplifiedCarePlan, Grading } from '../types/envelope';
 import { patientScoreFromGrading, methodEntriesFromGrading } from '../utils/grading';
 import MedicalTerm from './MedicalTerm';
@@ -217,7 +217,7 @@ function MethodGradingCards({ grading }: { grading: Grading }) {
   );
 }
 
-export default function AppointmentNoteV12View({
+export default function CarePlanView({
   result,
   grading,
 }: {

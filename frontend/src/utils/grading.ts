@@ -1,5 +1,5 @@
 import type { Grading, GradingEntry } from '../types/envelope';
-import type { PatientScore } from '../types/simplify';
+import type { PatientScore } from '../types/carePlan';
 
 export function patientScoreFromGrading(grading: Grading, target: 'before' | 'after'): PatientScore | null {
   const combined = grading.entries.find(e => e.name === 'combined' && e.target === target);

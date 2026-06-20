@@ -75,8 +75,8 @@ export interface WarningSign {
   importance: 'high' | 'low';
 }
 
-export interface AppointmentNote {
-  doc_type: 'appointment_note';
+export interface CarePlanContent {
+  doc_type: 'care_plan';
   urgency: DocUrgency;
   version: '1.2';
   summary: string;

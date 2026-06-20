@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { normalizeSimplifyOutput } from './normalizeOutput';
+import { normalizeCarePlanOutput } from './normalizeOutput';
 
-describe('normalizeSimplifyOutput', () => {
+describe('normalizeCarePlanOutput', () => {
   it('fills required grading fields for legacy outputs', () => {
-    const output = normalizeSimplifyOutput({
+    const output = normalizeCarePlanOutput({
       saved_id: 'saved-1',
       version: '1.0',
       simplified_summary: 'summary',

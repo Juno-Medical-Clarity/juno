@@ -7,11 +7,11 @@ import { runBatch } from '../../api/datasets';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
 import SplitView from '../../components/SplitView';
-import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/simplify';
-import type { SimplifyOutput } from '../../types/envelope';
+import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/carePlan';
+import type { CarePlanInternal } from '../../types/envelope';
 import type { BatchDatasetSelection } from '../../types/datasets';
-import { normalizeSimplifyOutput } from '../../utils/normalizeOutput';
-import AppointmentNoteV12View from '../../components/AppointmentNoteV12View';
+import { normalizeCarePlanOutput } from '../../utils/normalizeOutput';
+import CarePlanView from '../../components/CarePlanView';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
@@ -47,7 +47,7 @@ function resetSteps(): PipelineStep[] {
   return INITIAL_STEPS.map(step => ({ ...step, status: 'waiting' }));
 }
 
-function outputHasInputPdf(output: SimplifyOutput): boolean {
+function outputHasInputPdf(output: CarePlanInternal): boolean {
   return output.input.mode === 'file' && output.input.files.some(file => (
     file.content_type === 'application/pdf' || file.filename.toLowerCase().endsWith('.pdf')
   ));
@@ -64,7 +64,7 @@ export default function CarePlanPage() {
   const [textInput, setTextInput] = useState('');
   const [dragOver, setDragOver] = useState(false);
   const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
-  const [result, setResult] = useState<SimplifyOutput | null>(null);
+  const [result, setResult] = useState<CarePlanInternal | null>(null);
   const [error, setError] = useState<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
   const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
@@ -72,7 +72,7 @@ export default function CarePlanPage() {
   const [showSplitView, setShowSplitView] = useState(false);
   const [presetDataSelection, setPresetDataSelection] = useState<BatchDatasetSelection[]>([]);
   const [batchProgress, setBatchProgress] = useState<BatchProgress | null>(null);
-  const [batchOutputs, setBatchOutputs] = useState<SimplifyOutput[]>([]);
+  const [batchOutputs, setBatchOutputs] = useState<CarePlanInternal[]>([]);
   const [batchGroupIds, setBatchGroupIds] = useState<Record<string, string>>({});
   const [selectedBatchIndex, setSelectedBatchIndex] = useState<number | null>(null);
 
@@ -216,7 +216,7 @@ export default function CarePlanPage() {
             }
 
             if (event.step === 'batch_result') {
-              const outputs = (event.data?.outputs ?? []).map(output => normalizeSimplifyOutput(output));
+              const outputs = (event.data?.outputs ?? []).map(output => normalizeCarePlanOutput(output));
               setBatchOutputs(outputs);
               setBatchGroupIds(event.data?.batch_group_ids ?? {});
               setSelectedBatchIndex(outputs.length > 0 ? 0 : null);
@@ -285,7 +285,7 @@ export default function CarePlanPage() {
             if (event.error) throw new Error(event.error);
 
             if (event.step === 'result' && event.data) {
-              const normalized = normalizeSimplifyOutput(event.data);
+              const normalized = normalizeCarePlanOutput(event.data);
               setBatchOutputs([]);
               setBatchGroupIds({});
               setSelectedBatchIndex(null);
@@ -325,7 +325,7 @@ export default function CarePlanPage() {
 
   const handleDownloadPdf = () => {
     if (!result) return;
-    const html = buildPdfHtml(result.simplified_care_plan);
+    const html = buildPdfHtml(result.care_plan);
     const printWindow = window.open('', '_blank');
     if (!printWindow) {
       setError('Could not open print window. Please allow pop-ups for this site.');
@@ -355,7 +355,7 @@ export default function CarePlanPage() {
   async function handleSelectSaved(id: string) {
     try {
       const saved = await getSavedOutput(id);
-      const normalized = normalizeSimplifyOutput(saved.output_data);
+      const normalized = normalizeCarePlanOutput(saved.output_data);
       setResult(normalized);
       setBatchOutputs([]);
       setBatchGroupIds({});
@@ -562,7 +562,7 @@ export default function CarePlanPage() {
                 </div>
               )}
 
-              <AppointmentNoteV12View result={result.simplified_care_plan} grading={result.grading} />
+              <CarePlanView result={result.care_plan} grading={result.grading} />
 
               <OutputGradingCard
                 output={result}
@@ -612,7 +612,7 @@ export default function CarePlanPage() {
       {showSplitView && result && activeSavedId && (
         <SplitView
           savedId={activeSavedId}
-          simplifiedContent={<AppointmentNoteV12View result={result.simplified_care_plan} grading={result.grading} />}
+          simplifiedContent={<CarePlanView result={result.care_plan} grading={result.grading} />}
           onClose={() => setShowSplitView(false)}
         />
       )}
