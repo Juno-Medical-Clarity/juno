@@ -2,19 +2,18 @@
 JunoLogger — centralized structured logger for the Juno backend.
 
 Every log call automatically includes context fields from Flask's g object:
-  session_id, user_id, api_version, service, environment
+  session_id, user_id, function, service, environment,
+  care_plan_version, grading_version, input_version
 
 Usage:
     from utils.juno_logger import JunoLogger, monotonic_ms
 
-    logger = JunoLogger(api_version="v1-2")
+    logger = JunoLogger(function="http_request")
 
     logger.log_request_start(method="POST", path="/simplify/v1-2", input_type="file")
-    t0 = monotonic_ms()
-    logger.log_step("find_medical_terms", "start")
-    # ... do work ...
-    logger.log_step("find_medical_terms", "done", duration_ms=monotonic_ms() - t0)
     logger.log_request_end(status_code=200, duration_ms=total_ms)
+
+Use `Markers.*.execute()` for operation timing; use JunoLogger only for free-text logs.
 """
 
 import logging
@@ -40,27 +39,28 @@ class JunoLogger:
     Structured logger with Juno-specific context fields.
 
     Wraps a standard Python logger and enriches every call with:
-      - session_id  (from flask.g, set by the before_request middleware)
-      - user_id     (from flask.g, set by @verify_firebase_token)
-      - api_version (passed at construction time or from flask.g)
-      - service     (K_SERVICE env var, defaults to "juno-backend")
-      - environment ("production" on Cloud Run, "development" locally)
+      - session_id          (from flask.g, set by the before_request middleware)
+      - user_id             (from flask.g, set by @verify_firebase_token)
+      - function            (passed at construction time)
+      - care_plan_version   (from flask.g)
+      - grading_version     (from flask.g)
+      - input_version       (from flask.g)
+      - service             (K_SERVICE env var, defaults to "juno-backend")
+      - environment         ("production" on Cloud Run, "development" locally)
 
     All log output uses the existing StructuredJsonFormatter pipeline —
     extra fields are merged in via the standard Python `extra` parameter.
 
-    Adding logging to a new version pipeline requires zero changes here:
-    just instantiate JunoLogger(api_version="v1-3") in the new route file
-    and call the same methods.
+    Use `Markers.*.execute()` for operation timing; use JunoLogger only for free-text logs.
     """
 
-    def __init__(self, api_version: str | None = None):
+    def __init__(self, function: str | None = None):
         """
         Args:
-            api_version: The pipeline version handling this request, e.g. "v1-2".
-                         If None, reads from flask.g.api_version at log time.
+            function: Logical function or handler name for this logger instance,
+                      e.g. "http_request". Included in every log entry.
         """
-        self._api_version = api_version
+        self._function = function
         self._py_logger = logging.getLogger(__name__)
 
     # ------------------------------------------------------------------
@@ -72,7 +72,10 @@ class JunoLogger:
         return {
             "session_id": _g_field("session_id"),
             "user_id": _g_field("user_id"),
-            "api_version": self._api_version or _g_field("api_version"),
+            "function": self._function,
+            "care_plan_version": _g_field("care_plan_version"),
+            "grading_version": _g_field("grading_version"),
+            "input_version": _g_field("input_version"),
             "service": _SERVICE,
             "environment": _ENVIRONMENT,
         }
@@ -89,44 +92,6 @@ class JunoLogger:
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
-
-    def log_step(
-        self,
-        step_name: str,
-        status: str,
-        duration_ms: float | None = None,
-        extra: dict | None = None,
-    ) -> None:
-        """
-        Log a pipeline step event.
-
-        Args:
-            step_name:   Stable snake_case identifier, e.g. "find_medical_terms".
-            status:      "start" | "done" | "error"
-            duration_ms: Elapsed milliseconds (only meaningful when status="done").
-            extra:       Any additional fields to include in this log entry.
-
-        Example output:
-            {
-              "severity": "INFO",
-              "message": "pipeline_step",
-              "step_name": "find_medical_terms",
-              "status": "done",
-              "duration_ms": 42.3,
-              "session_id": "abc-123",
-              "user_id": "firebase-uid",
-              "api_version": "v1-2",
-              "service": "juno-backend",
-              "environment": "production"
-            }
-        """
-        fields: dict = {"step_name": step_name, "status": status}
-        if duration_ms is not None:
-            fields["duration_ms"] = round(duration_ms, 1)
-        if extra:
-            fields.update(extra)
-        level = logging.ERROR if status == "error" else logging.INFO
-        self._log(level, "pipeline_step", fields)
 
     def log_request_start(
         self,

@@ -73,7 +73,7 @@ def extract_session_id():
 
     # Log the start of every request (health checks excluded to avoid noise)
     if request.path != "/health":
-        juno_logger = JunoLogger()
+        juno_logger = JunoLogger(function="http_request")
         juno_logger.log_request_start(
             method=request.method,
             path=request.path,
@@ -96,7 +96,7 @@ def attach_session_id_header(response):
     if request.path != "/health":
         start_ms = getattr(g, "request_start_ms", None)
         duration_ms = (monotonic_ms() - start_ms) if start_ms is not None else 0.0
-        juno_logger = JunoLogger()
+        juno_logger = JunoLogger(function="http_request")
         juno_logger.log_request_end(
             status_code=response.status_code,
             duration_ms=duration_ms,
