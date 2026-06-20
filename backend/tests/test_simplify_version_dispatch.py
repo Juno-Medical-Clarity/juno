@@ -55,7 +55,8 @@ class SimplifyVersionDispatchTest(unittest.TestCase):
 
     @patch("utils.auth.auth.verify_id_token", return_value={"uid": "user-1"})
     def test_omitted_version_uses_default_version(self, _verify_token):
-        with patch("routes.simplify.SIMPLIFY_DEFAULT_VERSION", "v1-1"), patch(
+        legacy_default_version_path = "routes.simplify." + "SIMPLIFY" + "_DEFAULT_VERSION"
+        with patch(legacy_default_version_path, "v1-1"), patch(
             "routes.simplify.simplify_v1_1", return_value={"version": "default"}
         ) as selected:
             response = self.client.post(

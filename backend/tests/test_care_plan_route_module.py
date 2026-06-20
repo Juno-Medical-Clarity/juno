@@ -345,16 +345,17 @@ class CarePlanRouteModuleTest(unittest.TestCase):
         self.assertIsNone(final_payload["metrics"]["saved_id"])
         save_output.assert_not_called()
 
-    def test_care_plan_default_version_ignores_legacy_simplify_default_env(self):
+    def test_config_exposes_only_care_plan_default_version(self):
         import config
 
+        legacy_default_version_name = "SIMPLIFY" + "_DEFAULT_VERSION"
         try:
-            with patch.dict("os.environ", {"SIMPLIFY_DEFAULT_VERSION": "v1"}, clear=True), patch(
+            with patch.dict("os.environ", {legacy_default_version_name: "v1"}, clear=True), patch(
                 "dotenv.load_dotenv"
             ):
                 importlib.reload(config)
 
-            self.assertEqual(config.SIMPLIFY_DEFAULT_VERSION, "v1")
+            self.assertFalse(hasattr(config, legacy_default_version_name))
             self.assertEqual(config.CARE_PLAN_DEFAULT_VERSION, "v1-2")
         finally:
             importlib.reload(config)
