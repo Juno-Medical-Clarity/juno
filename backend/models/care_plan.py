@@ -1,88 +1,160 @@
-"""SimplifiedCarePlan versioned model.
+"""Strict Pydantic care-plan models."""
 
-Carries the pipeline-produced dict across versions 1.0, 1.1, and 1.2.
-All three versions map to the same Python class; the class is registered
-three times in the VersionedJsonModel registry.
-"""
+from __future__ import annotations
 
-from dataclasses import dataclass
+from typing import ClassVar, Literal
 
-from .base import VersionedJsonModel
+from pydantic import Field
+
+from .base import JsonModel, VersionedModel
+
+CARE_PLAN_VERSION = "1.2"
+
+Source = Literal["documents", "recording", "notes"]
+Importance = Literal["high", "low"]
 
 
-@dataclass
-class SimplifiedCarePlan(VersionedJsonModel):
-    """Versioned wrapper around the pipeline-produced care plan dict.
+class ReasonForVisit(JsonModel):
+    reason: str = ""
+    description: str = ""
 
-    Attributes:
-        version: One of "1.0", "1.1", or "1.2".
-        data: The pipeline-produced dict (structured/terms/raw/scores fields).
-              Stored internally keyed as "data"; flattened on serialisation.
-    """
 
+class DiagnosisDetail(JsonModel):
+    title: str = ""
+    plain_name: str = ""
+    description: str = ""
+    what_it_means_for_you: str = ""
+    severity: Literal["high", "medium", "low"] | None = None
+
+
+class Diagnosis(JsonModel):
+    main_conclusion: str = ""
+    changed_since_last_visit: str = ""
+    details: list[DiagnosisDetail] = Field(default_factory=list)
+
+
+class Medication(JsonModel):
+    title: str = ""
+    plain_name: str = ""
+    why: str = ""
+    dosage: str = ""
+    frequency: str = ""
+    timing: str = ""
+    duration: str = ""
+    instructions: str = ""
+    side_effects_to_watch: str = ""
+    importance: Importance = "low"
+    source: Source | None = None
+    change: bool = False
+    change_description: str = ""
+
+
+class Test(JsonModel):
+    title: str = ""
+    plain_name: str = ""
+    why: str = ""
+    description: str = ""
+    preparation: str = ""
+    importance: Importance = "low"
+    source: Source | None = None
+
+
+class Procedure(JsonModel):
+    title: str = ""
+    plain_name: str = ""
+    why: str = ""
+    what_to_expect: str = ""
+    timeframe: str = ""
+    importance: Importance = "low"
+    source: Source | None = None
+
+
+class OtherInstruction(JsonModel):
+    title: str = ""
+    why: str = ""
+    steps: list[str] = Field(default_factory=list)
+    description: str = ""
+    frequency: str = ""
+    duration: str = ""
+    importance: Importance = "low"
+    source: Source | None = None
+
+
+class FollowUp(JsonModel):
+    time_frame: str = ""
+    description: str = ""
+
+
+class WarningSign(JsonModel):
+    symptom: str = ""
+    what_it_might_mean: str = ""
+    what_to_do: str = ""
+    urgency: Literal["emergency", "call_doctor", "monitor", "normal_side_effect"] = "monitor"
+    related_to: str = ""
+    importance: Importance = "low"
+    source: Source | None = None
+
+
+class GlossaryTerm(JsonModel):
+    definition: str
+    source: str
+    imgUrl: str | None = None
+    altText: str | None = None
+
+
+class RawArtifacts(JsonModel):
+    text: str
+    simplified_text: str
+    clarified_text: str
+
+
+class CarePlan(VersionedModel):
+    """Version-agnostic care-plan family base."""
+
+    doc_type: str
     version: str
-    data: dict
 
     @classmethod
-    def from_pipeline_result(cls, version: str, data: dict) -> "SimplifiedCarePlan":
-        """Construct from a pipeline output dict and an explicit version string.
-
-        Args:
-            version: One of "1.0", "1.1", "1.2".
-            data: The raw pipeline output dict (without a "version" key).
-
-        Returns:
-            A new SimplifiedCarePlan instance.
-        """
-        return cls(version=version, data=data)
-
-    def to_dict(self) -> dict:
-        """Serialise to a flat dict with "version" as a sibling of all data keys.
-
-        The frontend expects fields like doc_type, diagnosis, terms, etc. at the
-        top level alongside "version" — NOT nested under a "data" key.
-
-        Returns:
-            {"version": self.version, **self.data}
-        """
-        return {"version": self.version, **self.data}
-
-    @classmethod
-    def from_dict(cls, data: dict) -> "SimplifiedCarePlan":
-        """Deserialise from a flattened dict produced by to_dict().
-
-        Splits the incoming dict into the "version" field and everything else
-        (which becomes the internal data dict).
-
-        Args:
-            data: Flattened dict with at minimum a "version" key.
-
-        Returns:
-            A new SimplifiedCarePlan instance.
-
-        Raises:
-            ValueError: If "version" is not present in data.
-            ValueError: If the version string is not registered.
-        """
-        if "version" not in data:
-            raise ValueError(f"Missing 'version' key in data. Available keys: {list(data.keys())}")
-        version = data["version"]
-        rest = {k: v for k, v in data.items() if k != "version"}
-        if version not in cls._registry:
-            available = ", ".join(sorted(cls._registry.keys()))
-            raise ValueError(
-                f"Unknown version '{version}' for {cls.__name__}. "
-                f"Available versions: {available}"
-            )
-        # Look up the registered class for this version (may differ in future).
-        registered_cls = cls._registry[version]
-        return registered_cls(version=version, data=rest)
+    def from_pipeline_result(cls, version: str, data: dict) -> "CarePlan":
+        """Validate pipeline output against the concrete care-plan version."""
+        return cls.from_dict({**data, "version": version})
 
 
-# Register the same class for all three supported versions by writing directly
-# into the registry dict.  Using the register() decorator would set
-# SimplifiedCarePlan._is_registered = True on the class itself, which causes
-# VersionedJsonModel.from_dict to skip version dispatch and fall back to the
-# plain JsonModel.from_dict path — bypassing SimplifiedCarePlan.from_dict.
-for _version in ("1.0", "1.1", "1.2"):
-    SimplifiedCarePlan._registry[_version] = SimplifiedCarePlan
+class CarePlanV1_2(CarePlan):
+    version_value: ClassVar[str] = CARE_PLAN_VERSION
+
+    doc_type: Literal["care_plan"] = "care_plan"
+    version: Literal["1.2"] = CARE_PLAN_VERSION
+    urgency: Literal["normal", "caution", "concern", "urgent"] = "normal"
+    summary: str = ""
+    reason_for_visit: list[ReasonForVisit] = Field(default_factory=list)
+    diagnosis: Diagnosis = Field(default_factory=Diagnosis)
+    medications: list[Medication] = Field(default_factory=list)
+    tests: list[Test] = Field(default_factory=list)
+    procedures: list[Procedure] = Field(default_factory=list)
+    other: list[OtherInstruction] = Field(default_factory=list)
+    follow_up: list[FollowUp] = Field(default_factory=list)
+    warning_signs: list[WarningSign] = Field(default_factory=list)
+    questions: list[str] = Field(default_factory=list)
+    low_priority: list[str] = Field(default_factory=list)
+    terms: dict[str, GlossaryTerm] = Field(default_factory=dict)
+    raw: RawArtifacts | None = None
+
+
+class CarePlanV1_2StructuredLLM(JsonModel):
+    """LLM-facing v1.2 care-plan fields, excluding terms and raw artifacts."""
+
+    doc_type: Literal["care_plan"] = "care_plan"
+    version: Literal["1.2"] = CARE_PLAN_VERSION
+    urgency: Literal["normal", "caution", "concern", "urgent"] = "normal"
+    summary: str = ""
+    reason_for_visit: list[ReasonForVisit] = Field(default_factory=list)
+    diagnosis: Diagnosis = Field(default_factory=Diagnosis)
+    medications: list[Medication] = Field(default_factory=list)
+    tests: list[Test] = Field(default_factory=list)
+    procedures: list[Procedure] = Field(default_factory=list)
+    other: list[OtherInstruction] = Field(default_factory=list)
+    follow_up: list[FollowUp] = Field(default_factory=list)
+    warning_signs: list[WarningSign] = Field(default_factory=list)
+    questions: list[str] = Field(default_factory=list)
+    low_priority: list[str] = Field(default_factory=list)
