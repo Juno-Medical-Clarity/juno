@@ -17,7 +17,7 @@ import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
-import { SIMPLIFY_API_PATH, DEFAULT_VERSION } from '../../config';
+import { CARE_PLAN_API_PATH, DEFAULT_VERSION } from '../../config';
 import type { VersionRouteState } from '../../router';
 
 const INITIAL_STEPS: PipelineStep[] = [
@@ -246,7 +246,7 @@ export default function CarePlanPage() {
     formData.append('grading_enabled', gradingEnabled.toString());
 
     try {
-      const response = await authenticatedFetch(`${API_URL}${SIMPLIFY_API_PATH}`, {
+      const response = await authenticatedFetch(`${API_URL}${CARE_PLAN_API_PATH}`, {
         method: 'POST',
         body: formData,
         signal: abortRef.current.signal,
@@ -453,8 +453,6 @@ export default function CarePlanPage() {
               </div>
               <PresetDataCard onSelectionChange={setPresetDataSelection} />
               <ConfigurationCard
-                version={selectedVersion}
-                onVersionChange={() => {}}
                 gradingEnabled={gradingEnabled}
                 onGradingEnabledChange={setGradingEnabled}
               />

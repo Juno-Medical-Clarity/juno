@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import VersionsPage from './pages/VersionsPage';
-import VersionDetailPage from './pages/VersionDetailPage';
 import CarePlanPage from './pages/care-plan/CarePlanPage';
 import { useAuth } from './auth/AuthContext';
 import LoginPage from './pages/LoginPage';
@@ -28,7 +27,6 @@ export default function App() {
     <Routes>
       <Route element={<AuthLayout />}>
         <Route path="/versions" element={<VersionsPage />} />
-        <Route path="/version/:id" element={<VersionDetailPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
       {/* CarePlanPage manages its own NavBar */}

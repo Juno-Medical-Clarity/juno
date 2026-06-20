@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
 import { VERSIONS } from '../config';
 
 export default function VersionsPage() {
   return (
     <main className="app-shell">
       <section className="hero-section">
-        <h1>Choose a version</h1>
+        <h1>Pipeline versions</h1>
         <div className="versions-table-wrap glass-card">
           <table className="versions-table">
             <thead>
@@ -19,9 +18,7 @@ export default function VersionsPage() {
               {VERSIONS.map(version => (
                 <tr key={version.id}>
                   <td>
-                    <Link className="version-table-link" to={`/version/${version.id}`}>
-                      {version.label}
-                    </Link>
+                    <strong className="version-table-link">{version.label}</strong>
                     {version.isDefault && (
                       <span className="version-default-badge">Default</span>
                     )}
