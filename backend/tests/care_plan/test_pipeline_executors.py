@@ -37,7 +37,7 @@ def _events_from_chunks(chunks):
         "abbreviations": [],
     },
 )
-@patch("routes.care_plan.V1_2Pipeline", return_value=FakePipeline())
+@patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
 def test_run_care_plan_pipeline_direct_text_yields_steps_and_sentinel(
     _pipeline,
     _detect_terms,

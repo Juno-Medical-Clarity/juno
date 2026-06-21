@@ -4,9 +4,10 @@ import json
 
 import pytest
 
-from models.care_plan import CARE_PLAN_VERSION, CarePlanV1_2
-from simplify.v1_2 import pipeline as pipeline_module
-from simplify.v1_2.pipeline import V1_2Pipeline
+from models.care_plan import CARE_PLAN_VERSION
+from care_plan.v1_2 import pipeline as pipeline_module
+from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
+from care_plan.v1_2.models import CarePlanV1_2
 
 
 def test_structuring_schema_is_generated_from_structured_llm_model():
@@ -18,7 +19,7 @@ def test_structuring_schema_is_generated_from_structured_llm_model():
 
 
 def test_structure_appointment_note_validates_and_returns_json_model_dump():
-    pipeline = V1_2Pipeline.__new__(V1_2Pipeline)
+    pipeline = CarePlanV1_2Pipeline.__new__(CarePlanV1_2Pipeline)
     pipeline._generate_json = lambda *args, **kwargs: {"summary": "You came in for care."}
 
     structured = pipeline.structure_appointment_note("clarified text")
@@ -30,7 +31,7 @@ def test_structure_appointment_note_validates_and_returns_json_model_dump():
 
 
 def test_structure_appointment_note_rejects_extra_llm_key():
-    pipeline = V1_2Pipeline.__new__(V1_2Pipeline)
+    pipeline = CarePlanV1_2Pipeline.__new__(CarePlanV1_2Pipeline)
     pipeline._generate_json = lambda *args, **kwargs: {
         "summary": "You came in for care.",
         "unexpected": "drift",
@@ -41,7 +42,7 @@ def test_structure_appointment_note_rejects_extra_llm_key():
 
 
 def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
-    pipeline = V1_2Pipeline.__new__(V1_2Pipeline)
+    pipeline = CarePlanV1_2Pipeline.__new__(CarePlanV1_2Pipeline)
 
     monkeypatch.setattr(
         pipeline_module,
@@ -76,3 +77,29 @@ def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
     }
     assert "before_score" not in data
     assert "after_score" not in data
+
+
+def test_llm_schema_excludes_terms_and_raw():
+    from care_plan.v1_2.pipeline import _llm_schema
+    from care_plan.v1_2.models import CarePlanV1_2
+
+    schema = _llm_schema(CarePlanV1_2, {"terms", "raw"})
+    props = schema["properties"]
+
+    assert "terms" not in props
+    assert "raw" not in props
+    expected = set(CarePlanV1_2.model_fields) - {"terms", "raw"}
+    assert set(props) == expected
+
+
+def test_llm_schema_model_validate_without_terms_and_raw():
+    from care_plan.v1_2.models import CarePlanV1_2
+
+    model = CarePlanV1_2.model_validate(
+        {"doc_type": "care_plan", "version": "1.2", "summary": "You came in for care."}
+    )
+    dumped = model.model_dump(mode="json", exclude={"terms", "raw"})
+
+    assert "terms" not in dumped
+    assert "raw" not in dumped
+    assert dumped["summary"] == "You came in for care."

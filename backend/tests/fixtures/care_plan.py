@@ -41,8 +41,6 @@ SAMPLE_PIPELINE_OUTPUT = {
         "reason_for_visit": [{"reason": "Annual check-up"}],
         "summary": "You came in for your annual check-up.",
     },
-    "before_score": None,
-    "after_score": None,
 }
 
 

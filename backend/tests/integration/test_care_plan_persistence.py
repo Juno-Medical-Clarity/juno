@@ -61,7 +61,7 @@ def _docx_bytes(text):
         "abbreviations": [],
     },
 )
-@patch("routes.care_plan.V1_2Pipeline", return_value=FakePipeline())
+@patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
 def test_run_care_plan_pipeline_direct_text_yields_steps_and_result_sentinel(
     _pipeline,
     _detect_terms,
@@ -115,7 +115,7 @@ def test_run_care_plan_pipeline_direct_text_yields_steps_and_result_sentinel(
         "abbreviations": [],
     },
 )
-@patch("routes.care_plan.V1_2Pipeline", return_value=FakePipeline())
+@patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
 def test_multi_file_input_is_concatenated_and_saved_after_result(
     _pipeline,
     _detect_terms,
@@ -178,7 +178,7 @@ def test_multi_file_input_is_concatenated_and_saved_after_result(
         "abbreviations": [],
     },
 )
-@patch("routes.care_plan.V1_2Pipeline", return_value=FakePipeline())
+@patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
 def test_uploaded_docx_content_is_included_in_combined_pdf_artifact(
     _pipeline,
     _detect_terms,
@@ -229,7 +229,7 @@ def test_multi_file_upload_rejects_too_many_files(_verify_token, client, caplog)
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
 @patch("routes.care_plan.MAX_AGGREGATE_FILE_BYTES", 10, create=True)
-@patch("routes.care_plan.V1_2Pipeline", return_value=FakePipeline())
+@patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
 def test_multi_file_upload_rejects_aggregate_size_over_limit(_pipeline, _verify_token, client, caplog):
     with caplog.at_level(logging.ERROR, logger="utils.juno_logger"):
         response = client.post(
@@ -265,7 +265,7 @@ def test_multi_file_upload_rejects_aggregate_size_over_limit(_pipeline, _verify_
         "abbreviations": [],
     },
 )
-@patch("routes.care_plan.V1_2Pipeline", return_value=FakePipeline())
+@patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
 def test_doc_id_input_is_processed_but_not_persisted(
     _pipeline,
     _detect_terms,
@@ -308,7 +308,7 @@ def test_doc_id_input_is_processed_but_not_persisted(
         "abbreviations": [],
     },
 )
-@patch("routes.care_plan.V1_2Pipeline", return_value=FakePipeline())
+@patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
 def test_save_failure_returns_result_without_saved_id(
     _pipeline,
     _detect_terms,

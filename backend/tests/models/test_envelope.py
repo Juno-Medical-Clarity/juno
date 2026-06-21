@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from models.care_plan import CarePlanV1_2
+from care_plan.v1_2.models import CarePlanV1_2
 from models.grading import Grading
 from models.input import Input
 from models.metrics import Metrics
@@ -39,12 +39,10 @@ def _envelope_dict() -> dict:
         "input": Input.from_text("Patient note").to_dict(),
         "grading": Grading().to_dict(),
         "care_plan": _care_plan().to_dict(),
-        "before_score": None,
-        "after_score": None,
     }
 
 
-def test_care_plan_internal_serializes_with_care_plan_key_and_scores_present():
+def test_care_plan_internal_serializes_with_care_plan_key_and_scores_absent():
     from models.envelope import CarePlanInternal
 
     model = CarePlanInternal(
@@ -61,35 +59,26 @@ def test_care_plan_internal_serializes_with_care_plan_key_and_scores_present():
         "input",
         "grading",
         "care_plan",
-        "before_score",
-        "after_score",
     }
-    assert data["before_score"] is None
-    assert data["after_score"] is None
+    assert "before_score" not in data
+    assert "after_score" not in data
     assert "simplified_care_plan" not in data
     assert "before_score" not in data["care_plan"]
     assert "after_score" not in data["care_plan"]
 
 
-def test_care_plan_internal_accepts_route_v1_2_kwargs_and_serializes_care_plan_key():
+def test_care_plan_internal_rejects_extra_score_kwargs():
     from models.envelope import CarePlanInternal
 
-    model = CarePlanInternal(
-        metrics=_metrics(),
-        input=Input.from_text("Patient note"),
-        grading=Grading(),
-        care_plan=CarePlanV1_2(summary="Route shaped output"),
-        before_score={"composite": 60},
-        after_score={"composite": 90},
-    )
-
-    data = model.to_dict()
-
-    assert "care_plan" in data
-    assert "simplified_care_plan" not in data
-    assert data["care_plan"]["summary"] == "Route shaped output"
-    assert data["before_score"] == {"composite": 60}
-    assert data["after_score"] == {"composite": 90}
+    with pytest.raises((ValidationError, TypeError)):
+        CarePlanInternal(
+            metrics=_metrics(),
+            input=Input.from_text("Patient note"),
+            grading=Grading(),
+            care_plan=_care_plan(),
+            before_score={"composite": 60},
+            after_score={"composite": 90},
+        )
 
 
 def test_care_plan_internal_from_dict_requires_care_plan_key_without_alias():
@@ -105,21 +94,21 @@ def test_care_plan_internal_from_dict_requires_care_plan_key_without_alias():
         CarePlanInternal.from_dict(legacy_key_payload)
 
 
-def test_care_plan_internal_round_trips_composite_scores():
+def test_care_plan_internal_scores_are_absent_from_envelope():
     from models.envelope import CarePlanInternal
 
-    data = {
-        **_envelope_dict(),
-        "before_score": {"composite": 42, "label": "hard"},
-        "after_score": {"composite": 91, "label": "plain"},
-    }
+    model = CarePlanInternal(
+        metrics=_metrics(),
+        input=Input.from_text("Patient note"),
+        grading=Grading(),
+        care_plan=_care_plan(),
+    )
+    data = model.to_dict()
 
-    restored = CarePlanInternal.from_dict(data)
-
-    assert restored.to_dict()["before_score"] == {"composite": 42, "label": "hard"}
-    assert restored.to_dict()["after_score"] == {"composite": 91, "label": "plain"}
-    assert "before_score" not in restored.to_dict()["care_plan"]
-    assert "after_score" not in restored.to_dict()["care_plan"]
+    assert "before_score" not in data
+    assert "after_score" not in data
+    assert "before_score" not in data["care_plan"]
+    assert "after_score" not in data["care_plan"]
 
 
 def test_simplify_output_import_fails():
@@ -129,13 +118,6 @@ def test_simplify_output_import_fails():
         from models.envelope import SimplifyOutput  # noqa: F401
 
     assert not hasattr(envelope, "SimplifyOutput")
-
-
-def test_is_legacy_shape_checks_for_care_plan_key():
-    from models.envelope import is_legacy_shape
-
-    assert is_legacy_shape({"care_plan": {}}) is False
-    assert is_legacy_shape({}) is True
 
 
 def test_model_consuming_routes_import_without_removed_aliases():

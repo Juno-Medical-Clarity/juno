@@ -9,10 +9,8 @@ from pydantic import ValidationError
 from models.care_plan import (
     CARE_PLAN_VERSION,
     CarePlan,
-    CarePlanV1_2,
-    CarePlanV1_2StructuredLLM,
-    Diagnosis,
 )
+from care_plan.v1_2.models import CarePlanV1_2, Diagnosis
 
 
 FIXTURE_PATH = Path(__file__).parents[1] / "fixtures" / "care_plan_v1_2.json"
@@ -93,8 +91,11 @@ def test_care_plan_from_pipeline_result_validates_drift():
 
 
 def test_structured_llm_schema_properties_match_care_plan_structured_fields():
+    from care_plan.v1_2.pipeline import _llm_schema
+    from care_plan.v1_2.models import CarePlanV1_2
+
     care_plan_fields = set(CarePlanV1_2.model_fields)
     structured_fields = care_plan_fields - {"terms", "raw"}
-    schema_properties = set(CarePlanV1_2StructuredLLM.model_json_schema()["properties"])
+    schema_properties = set(_llm_schema(CarePlanV1_2, {"terms", "raw"})["properties"])
 
     assert schema_properties == structured_fields

@@ -139,8 +139,6 @@ def test_care_plan_stream_uses_registry_pipeline_for_version():
                     Grading(enabled=False),
                     "raw note",
                     "clarified note",
-                    None,
-                    None,
                 ),
             ]
         )
@@ -180,8 +178,6 @@ def test_care_plan_stream_without_session_id_does_not_fall_back_to_user_id():
                     Grading(enabled=False),
                     "raw note",
                     "clarified note",
-                    None,
-                    None,
                 )
             ]
         )
@@ -253,8 +249,6 @@ def test_care_plan_stream_composes_single_payload_and_saves_same_dict_for_non_do
                     grading,
                     "raw note",
                     "clarified note",
-                    {"before": 1},
-                    {"after": 2},
                 ),
             ]
         )
@@ -292,8 +286,8 @@ def test_care_plan_stream_composes_single_payload_and_saves_same_dict_for_non_do
     assert final_payload["metrics"]["pipeline_version"] == "v1-test"
     assert final_payload["metrics"]["input_type"] == "upload"
     assert final_payload["metrics"]["saved_id"] == "saved-123"
-    assert final_payload["before_score"] == {"before": 1}
-    assert final_payload["after_score"] == {"after": 2}
+    assert "before_score" not in final_payload
+    assert "after_score" not in final_payload
     assert save_output.call_args.kwargs["output_data"] is emitted_result_payloads[-1]
 
 
@@ -315,8 +309,6 @@ def test_care_plan_stream_doc_id_composes_result_without_saving():
                     Grading(enabled=False),
                     "raw note",
                     "clarified note",
-                    None,
-                    None,
                 )
             ]
         )
