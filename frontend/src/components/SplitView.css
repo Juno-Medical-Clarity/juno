@@ -82,3 +82,17 @@
   color: var(--text-secondary);
   font-size: 0.875rem;
 }
+
+.split-view-text-content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 16px;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.split-view-text-content pre {
+  margin: 0;
+  font-family: inherit;
+  color: var(--text-primary);
+}
