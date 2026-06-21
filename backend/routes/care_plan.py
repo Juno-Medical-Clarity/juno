@@ -342,7 +342,13 @@ def _derive_output_name(result: dict, resolved: "ResolvedInput") -> str:
     return "Appointment"
 
 
-def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str | tuple, None, None]:
+def run_care_plan_pipeline(
+    text: str,
+    metrics: Metrics,
+    grading_enabled: bool,
+    source_kind: str = "upload",
+    is_batch: bool = False,
+) -> Generator[str | tuple, None, None]:
     try:
         try:
             pipeline = CarePlanV1_2Pipeline()
