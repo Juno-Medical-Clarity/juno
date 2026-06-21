@@ -48,11 +48,11 @@ function resetSteps(): PipelineStep[] {
   return INITIAL_STEPS.map(step => ({ ...step, status: 'waiting' }));
 }
 
-function outputHasInputPdf(output: CarePlanInternal): boolean {
+export function outputHasInputPdf(output: CarePlanInternal): boolean {
   return output.input.mode === 'file' && output.input.pdf_gcs_url != null;
 }
 
-function outputHasInputText(output: CarePlanInternal): boolean {
+export function outputHasInputText(output: CarePlanInternal): boolean {
   return (output.input.mode === 'text' || output.input.mode === 'batch_dataset')
     && typeof output.input.text === 'string'
     && output.input.text.length > 0;
