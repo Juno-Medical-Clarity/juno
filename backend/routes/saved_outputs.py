@@ -71,7 +71,6 @@ def get_saved(user_id: str, doc_id: str):
         'source_filename': data.get('source_filename', ''),
         'created_at': data['created_at'].isoformat() if data.get('created_at') else None,
         'output_data': data.get('output_data', {}),
-        'input_pdf_gcs': data.get('input_pdf_gcs', ''),
     })
 
 
@@ -107,7 +106,10 @@ def delete_saved(user_id: str, doc_id: str):
     data = doc.to_dict()
 
     # Delete GCS file if present
-    gcs_uri = data.get('input_pdf_gcs', '')
+    gcs_uri = (
+        (data.get('output_data') or {}).get('input', {}).get('pdf_gcs_url')
+        or data.get('input_pdf_gcs', '')
+    )
     if gcs_uri and _BUCKET_NAME:
         try:
             client = gcs.Client(project=os.environ.get('GCP_PROJECT_ID') or None)
@@ -133,7 +135,11 @@ def get_input_pdf_url(user_id: str, doc_id: str):
     if err:
         return err
     data = doc.to_dict()
-    gcs_uri = data.get('input_pdf_gcs', '')
+    # Try new envelope location first (SP-11+); fall back to legacy top-level field for old docs.
+    gcs_uri = (
+        (data.get('output_data') or {}).get('input', {}).get('pdf_gcs_url')
+        or data.get('input_pdf_gcs', '')
+    )
     if not gcs_uri or not _BUCKET_NAME:
         return jsonify({'error': 'No input PDF stored for this output'}), 404
 
