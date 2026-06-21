@@ -1,6 +1,8 @@
 from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
+import pytest
+
 
 def _make_doc(doc_id: str, data: dict) -> MagicMock:
     """Return a mock Firestore document snapshot."""
@@ -8,6 +10,134 @@ def _make_doc(doc_id: str, data: dict) -> MagicMock:
     doc.id = doc_id
     doc.to_dict.return_value = data
     return doc
+
+
+def _make_owned_doc(data: dict) -> MagicMock:
+    """Return a doc that passes ownership check (uid=user-1, exists=True)."""
+    doc = _make_doc("doc-1", {"uid": "user-1", **data})
+    doc.exists = True
+    return doc
+
+
+def _wire_get_owned(mock_firestore_client, doc: MagicMock):
+    """Wire mock_firestore_client so get_owned_doc_or_403 fetches `doc`."""
+    mock_db = MagicMock()
+    mock_firestore_client.return_value = mock_db
+    mock_db.collection.return_value.document.return_value.get.return_value = doc
+    return mock_db
+
+
+# ---------------------------------------------------------------------------
+# get_input_pdf_url — tolerant read tests
+# ---------------------------------------------------------------------------
+
+
+@patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
+@patch("routes.saved_outputs.firestore.client")
+@patch("routes.saved_outputs.gcs.Client")
+@patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
+def test_get_input_pdf_url_new_path(mock_gcs_client, mock_firestore_client, _verify_token, client):
+    """Doc with output_data.input.pdf_gcs_url set → uses new path, returns signed URL."""
+    doc = _make_owned_doc({
+        "output_data": {"input": {"pdf_gcs_url": "gs://my-bucket/care_plan/user-1/inputs/abc.pdf"}},
+    })
+    _wire_get_owned(mock_firestore_client, doc)
+
+    mock_blob = MagicMock()
+    mock_blob.generate_signed_url.return_value = "https://signed.url/new-path"
+    mock_bucket = MagicMock()
+    mock_bucket.blob.return_value = mock_blob
+    mock_gcs_client.return_value.bucket.return_value = mock_bucket
+
+    response = client.get(
+        "/care_plan/saved/doc-1/input-pdf-url",
+        headers={"Authorization": "Bearer token"},
+    )
+
+    assert response.status_code == 200
+    assert response.get_json()["url"] == "https://signed.url/new-path"
+    mock_bucket.blob.assert_called_with("care_plan/user-1/inputs/abc.pdf")
+
+
+@patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
+@patch("routes.saved_outputs.firestore.client")
+@patch("routes.saved_outputs.gcs.Client")
+@patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
+def test_get_input_pdf_url_legacy_fallback(mock_gcs_client, mock_firestore_client, _verify_token, client):
+    """Doc with only top-level input_pdf_gcs set (legacy) → uses fallback, returns URL."""
+    doc = _make_owned_doc({
+        "input_pdf_gcs": "gs://my-bucket/care_plan/user-1/inputs/legacy.pdf",
+        # no output_data.input.pdf_gcs_url
+    })
+    _wire_get_owned(mock_firestore_client, doc)
+
+    mock_blob = MagicMock()
+    mock_blob.generate_signed_url.return_value = "https://signed.url/legacy"
+    mock_bucket = MagicMock()
+    mock_bucket.blob.return_value = mock_blob
+    mock_gcs_client.return_value.bucket.return_value = mock_bucket
+
+    response = client.get(
+        "/care_plan/saved/doc-1/input-pdf-url",
+        headers={"Authorization": "Bearer token"},
+    )
+
+    assert response.status_code == 200
+    assert response.get_json()["url"] == "https://signed.url/legacy"
+    mock_bucket.blob.assert_called_with("care_plan/user-1/inputs/legacy.pdf")
+
+
+@patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
+@patch("routes.saved_outputs.firestore.client")
+@patch("routes.saved_outputs.gcs.Client")
+@patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
+def test_get_input_pdf_url_new_path_takes_priority(mock_gcs_client, mock_firestore_client, _verify_token, client):
+    """Doc with both fields set → new path (output_data.input.pdf_gcs_url) takes priority."""
+    doc = _make_owned_doc({
+        "output_data": {"input": {"pdf_gcs_url": "gs://my-bucket/care_plan/user-1/inputs/new.pdf"}},
+        "input_pdf_gcs": "gs://my-bucket/care_plan/user-1/inputs/legacy.pdf",
+    })
+    _wire_get_owned(mock_firestore_client, doc)
+
+    mock_blob = MagicMock()
+    mock_blob.generate_signed_url.return_value = "https://signed.url/priority"
+    mock_bucket = MagicMock()
+    mock_bucket.blob.return_value = mock_blob
+    mock_gcs_client.return_value.bucket.return_value = mock_bucket
+
+    response = client.get(
+        "/care_plan/saved/doc-1/input-pdf-url",
+        headers={"Authorization": "Bearer token"},
+    )
+
+    assert response.status_code == 200
+    assert response.get_json()["url"] == "https://signed.url/priority"
+    # Must use the new path blob name, not the legacy one
+    mock_bucket.blob.assert_called_with("care_plan/user-1/inputs/new.pdf")
+
+
+@patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
+@patch("routes.saved_outputs.firestore.client")
+@patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
+def test_get_input_pdf_url_neither_set_returns_404(mock_firestore_client, _verify_token, client):
+    """Doc with neither field set → returns 404 with error message."""
+    doc = _make_owned_doc({
+        # no output_data, no input_pdf_gcs
+    })
+    _wire_get_owned(mock_firestore_client, doc)
+
+    response = client.get(
+        "/care_plan/saved/doc-1/input-pdf-url",
+        headers={"Authorization": "Bearer token"},
+    )
+
+    assert response.status_code == 404
+    assert "error" in response.get_json()
+
+
+# ---------------------------------------------------------------------------
+# Existing tests
+# ---------------------------------------------------------------------------
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})

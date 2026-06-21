@@ -271,3 +271,72 @@ def test_uses_firestore_database_id_from_env(mock_client, mock_uuid4):
     )
 
     mock_client.assert_called_with(database_id="custom-db")
+
+
+@patch("utils.firebase.uuid.uuid4")
+@patch("utils.firebase.firestore.client")
+def test_save_care_plan_output_rejects_input_pdf_gcs_kwarg(mock_client, mock_uuid4):
+    """Passing input_pdf_gcs= must raise TypeError (param was removed in SP-11)."""
+    import pytest
+    from utils.firebase import save_care_plan_output
+
+    mock_uuid4.return_value = "output-abc"
+    doc_ref = MagicMock()
+    mock_client.return_value.collection.return_value.document.return_value = doc_ref
+
+    with pytest.raises(TypeError):
+        save_care_plan_output(
+            user_id="user-1",
+            name="Visit",
+            source_filename="f.txt",
+            output_data={},
+            input_pdf_gcs=None,
+        )
+
+
+@patch("utils.firebase.uuid.uuid4")
+@patch("utils.firebase.firestore.client")
+def test_save_care_plan_output_payload_does_not_contain_input_pdf_gcs(mock_client, mock_uuid4):
+    """The Firestore document written must not have a top-level 'input_pdf_gcs' key."""
+    from utils.firebase import save_care_plan_output
+
+    mock_uuid4.return_value = "output-abc"
+    doc_ref = MagicMock()
+    mock_client.return_value.collection.return_value.document.return_value = doc_ref
+
+    save_care_plan_output(
+        user_id="user-1",
+        name="Visit",
+        source_filename="f.txt",
+        output_data={"input": {"pdf_gcs_url": "gs://bucket/file.pdf"}},
+    )
+
+    payload = doc_ref.set.call_args.args[0]
+    assert "input_pdf_gcs" not in payload
+
+
+@patch("utils.firebase.uuid.uuid4")
+@patch("utils.firebase.firestore.client")
+def test_save_care_plan_output_persists_output_data_verbatim(mock_client, mock_uuid4):
+    """output_data is written to Firestore verbatim, including nested input.pdf_gcs_url."""
+    from utils.firebase import save_care_plan_output
+
+    mock_uuid4.return_value = "output-abc"
+    doc_ref = MagicMock()
+    mock_client.return_value.collection.return_value.document.return_value = doc_ref
+
+    nested_output = {
+        "care_plan": {"summary": "all good"},
+        "input": {"pdf_gcs_url": "gs://my-bucket/care_plan/user-1/inputs/abc.pdf"},
+    }
+
+    save_care_plan_output(
+        user_id="user-1",
+        name="Visit",
+        source_filename="f.txt",
+        output_data=nested_output,
+    )
+
+    payload = doc_ref.set.call_args.args[0]
+    assert payload["output_data"] is nested_output
+    assert payload["output_data"]["input"]["pdf_gcs_url"] == "gs://my-bucket/care_plan/user-1/inputs/abc.pdf"

@@ -1,5 +1,5 @@
 import json
-from unittest.mock import call, patch
+from unittest.mock import MagicMock, call, patch
 
 import pytest
 
@@ -240,6 +240,59 @@ def test_batch_rejects_too_many_runs_before_pipeline_work(_verify_token, client)
     read_file.assert_not_called()
     executor.assert_not_called()
     save_output.assert_not_called()
+
+
+@patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
+def test_batch_save_care_plan_output_called_without_input_pdf_gcs(_verify_token, client):
+    """
+    Regression: batch route must never pass input_pdf_gcs kwarg to save_care_plan_output.
+    This kwarg was removed in SP-11 Task 1; passing it would raise TypeError.
+    """
+    datasets = [{"group": "GroupA", "inputs": ["input-1"], "files": ["notes.txt"]}]
+    read_bytes = {("GroupA", "input-1", "notes.txt"): b"GroupA input-1 notes"}
+
+    def read_dataset_file(group, input_id, filename):
+        return read_bytes[(group, input_id, filename)]
+
+    def run_pipeline(text, metrics, grading_enabled, **kwargs):
+        yield f"data: {json.dumps({'step': 'result', 'data': fixed_output('input-1', group='GroupA', batch_group_id='GroupA-20260616153012')})}\n\n"
+
+    save_kwargs_list = []
+
+    def capture_save(**kwargs):
+        save_kwargs_list.append(kwargs)
+        return "saved-regress"
+
+    fake_g = MagicMock()
+    fake_g.session_id = "session-1"
+    fake_g.user_id = "user-1"
+
+    with (
+        patch("routes.batch._batch_timestamp", return_value="20260616153012", create=True),
+        patch("routes.batch.list_datasets", return_value=datasets, create=True),
+        patch("routes.batch.read_dataset_file", side_effect=read_dataset_file, create=True),
+        patch("routes.batch.run_care_plan_pipeline", side_effect=run_pipeline, create=True),
+        patch("routes.batch.save_care_plan_output", side_effect=capture_save, create=True),
+        patch("routes.batch.g", fake_g),
+    ):
+        response = client.post(
+            "/care_plan/batch",
+            json={
+                "version": "v1-2",
+                "grading_enabled": False,
+                "selections": [{"group": "GroupA", "inputs": ["input-1"], "files": ["notes.txt"]}],
+            },
+            headers={"Authorization": "Bearer token"},
+        )
+        # Read the response body inside the patch context so streaming finishes
+        # while all mocks are still active.
+        response_text = response.get_data(as_text=True)
+
+    assert response.status_code == 200
+    events = parse_sse(response_text)
+    assert not any(e.get("step") == "error" for e in events), f"Unexpected error events: {events}"
+    assert len(save_kwargs_list) == 1
+    assert "input_pdf_gcs" not in save_kwargs_list[0]
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})

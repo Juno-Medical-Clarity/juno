@@ -333,6 +333,80 @@ def test_care_plan_stream_doc_id_composes_result_without_saving():
     save_output.assert_not_called()
 
 
+def test_care_plan_stream_save_block_sets_input_pdf_gcs_url_in_output_data():
+    """
+    After upload_combined_pdf returns a URI, the save block must:
+    1. Set output_data["input"]["pdf_gcs_url"] equal to that URI.
+    2. NOT include "input_pdf_gcs" at the Firestore doc root.
+    3. Emit a result SSE with data["input"]["pdf_gcs_url"] equal to that URI.
+    """
+    app = Flask(__name__)
+    MOCK_GCS_URI = "gs://my-bucket/care_plan/user-1/inputs/uuid.pdf"
+
+    resolved = care_plan_module.ResolvedInput(
+        text="uploaded note",
+        source_description="report.pdf",
+        source_filename="report.pdf",
+        combined_pdf_bytes=b"%PDF-1.4",
+        source_kind="upload",
+    )
+    # Use a real FileInput so pdf_gcs_url can be set on it
+    from models.input import FileInput, InputFile
+    input_model = FileInput(files=[InputFile(filename="report.pdf", content_type="application/pdf", size_bytes=8)])
+
+    pipeline = MagicMock(
+        return_value=iter(
+            [
+                (
+                    "__result__",
+                    fake_care_plan("pdf gcs url test"),
+                    care_plan_module.Grading(enabled=False),
+                    "raw note",
+                    "clarified note",
+                )
+            ]
+        )
+    )
+
+    save_output_calls = []
+
+    def capture_save(**kwargs):
+        save_output_calls.append(kwargs)
+        return "saved-xyz"
+
+    result_events = []
+    original_sse = care_plan_module._sse
+
+    def capture_sse(payload):
+        if payload.get("step") == "result":
+            result_events.append(payload)
+        return original_sse(payload)
+
+    with app.test_request_context("/care_plan", json={"grading_enabled": False}):
+        from flask import g
+        g.session_id = "session-1"
+        with patch.object(care_plan_module, "PIPELINES", {"v1-test": pipeline}), \
+             patch.object(care_plan_module, "_resolve_input", return_value=resolved), \
+             patch.object(care_plan_module, "_input_model_from_resolved", return_value=input_model), \
+             patch.object(care_plan_module, "upload_combined_pdf", return_value=MOCK_GCS_URI), \
+             patch.object(care_plan_module, "save_care_plan_output", side_effect=capture_save), \
+             patch.object(care_plan_module, "_sse", side_effect=capture_sse):
+            list(care_plan_module._care_plan_stream("user-1", "v1-test"))
+
+    assert len(save_output_calls) == 1
+    saved_output_data = save_output_calls[0]["output_data"]
+
+    # 1. output_data["input"]["pdf_gcs_url"] must equal the GCS URI
+    assert saved_output_data["input"]["pdf_gcs_url"] == MOCK_GCS_URI
+
+    # 2. Firestore doc root must NOT contain "input_pdf_gcs"
+    assert "input_pdf_gcs" not in save_output_calls[0]
+
+    # 3. The SSE result event data also contains input.pdf_gcs_url
+    assert len(result_events) == 1
+    assert result_events[0]["data"]["input"]["pdf_gcs_url"] == MOCK_GCS_URI
+
+
 def test_config_exposes_only_care_plan_default_version():
     import config
 
