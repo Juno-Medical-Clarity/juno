@@ -536,7 +536,7 @@ def _care_plan_stream(user_id: str, version: str):
         pipeline = PIPELINES[version]
 
         pipeline_result = None
-        for chunk in pipeline(text, metrics, grading_enabled=grading_enabled):
+        for chunk in pipeline(text, metrics, grading_enabled=grading_enabled, source_kind=resolved.source_kind):
             if isinstance(chunk, tuple) and chunk and chunk[0] == RESULT_SENTINEL:
                 pipeline_result = chunk
                 continue

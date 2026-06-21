@@ -18,7 +18,7 @@ def parse_sse(response):
 
 def test_pipeline_emits_error_event_on_failure(client, auth_ok, fake_firestore, monkeypatch):
     """If the pipeline emits an error event, it is relayed in the SSE stream."""
-    def failing_pipeline(text, metrics, grading_enabled=True):
+    def failing_pipeline(text, metrics, grading_enabled=True, **kwargs):
         yield f"data: {json.dumps({'step': 2, 'status': 'active'})}\n\n"
         yield f"data: {json.dumps({'step': 'error', 'error': 'boom'})}\n\n"
 
@@ -33,7 +33,7 @@ def test_pipeline_emits_error_event_on_failure(client, auth_ok, fake_firestore, 
 
 def test_pipeline_error_event_has_no_result(client, auth_ok, fake_firestore, monkeypatch):
     """If the pipeline emits an error event, no result event is present."""
-    def failing_pipeline(text, metrics, grading_enabled=True):
+    def failing_pipeline(text, metrics, grading_enabled=True, **kwargs):
         yield f"data: {json.dumps({'step': 'error', 'error': 'failure'})}\n\n"
 
     monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": failing_pipeline})
@@ -45,7 +45,7 @@ def test_pipeline_error_event_has_no_result(client, auth_ok, fake_firestore, mon
 
 def test_pipeline_raises_exception_yields_error(client, auth_ok, fake_firestore, monkeypatch):
     """If the pipeline raises an unhandled exception, an error SSE event is streamed."""
-    def raising_pipeline(text, metrics, grading_enabled=True):
+    def raising_pipeline(text, metrics, grading_enabled=True, **kwargs):
         yield f"data: {json.dumps({'step': 2, 'status': 'active'})}\n\n"
         raise RuntimeError("Unexpected crash")
 
@@ -58,7 +58,7 @@ def test_pipeline_raises_exception_yields_error(client, auth_ok, fake_firestore,
 
 def test_pipeline_progress_before_error(client, auth_ok, fake_firestore, monkeypatch):
     """Progress events streamed before the error event are preserved in the stream."""
-    def failing_pipeline(text, metrics, grading_enabled=True):
+    def failing_pipeline(text, metrics, grading_enabled=True, **kwargs):
         yield f"data: {json.dumps({'step': 2, 'status': 'active'})}\n\n"
         yield f"data: {json.dumps({'step': 2, 'status': 'done'})}\n\n"
         yield f"data: {json.dumps({'step': 'error', 'error': 'step 3 failed'})}\n\n"

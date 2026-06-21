@@ -156,7 +156,7 @@ def test_care_plan_stream_uses_registry_pipeline_for_version():
     registry_pipeline.assert_called_once()
     assert registry_pipeline.call_args.args[0] == "plain note"
     assert registry_pipeline.call_args.args[1].pipeline_version == "v1-test"
-    assert registry_pipeline.call_args.kwargs == {"grading_enabled": False}
+    assert registry_pipeline.call_args.kwargs == {"grading_enabled": False, "source_kind": "doc_id"}
     hard_coded_pipeline.assert_not_called()
     assert events[-1]["data"]["care_plan"]["summary"] == "from registry"
 
