@@ -125,7 +125,7 @@ class FileInput(JsonModel):
 class TextInput(JsonModel):
     """Input from plain text."""
     mode: Literal["text"] = "text"
-    text: str
+    text: str | None = None
 
 
 class DocIdInput(JsonModel):
@@ -201,7 +201,7 @@ The key change is **no stray Nones** and **exact fields per variant**.
   "dataset_group": null, "dataset_input": null, "selected_files": null, "batch_group_id": null }
 
 // NEW
-{ "mode": "text", "text": "Patient note" }
+{ "mode": "text", "text": "Patient note" }   // text may also be null (str | None)
 ```
 
 **DocIdInput (was `mode="doc_id"`):**
@@ -509,8 +509,8 @@ The existing tests assert the old all-Nones shape and must be replaced. New test
 
 **TextInput:**
 - `TextInput(text="Patient note").to_dict()` equals `{"mode": "text", "text": "Patient note"}` — exactly two keys.
-- `TextInput(text="x", doc_id="y")` raises `ValidationError`.
-- `TextInput(mode="text")` raises `ValidationError` (missing required `text`).
+- `TextInput().to_dict()` equals `{"mode": "text", "text": null}` — `text` defaults to `None`.
+- `TextInput(text="x", doc_id="y")` raises `ValidationError` (`doc_id` is an unknown field).
 
 **DocIdInput:**
 - `DocIdInput(doc_id="gs://bucket/x.pdf").to_dict()` equals `{"mode": "doc_id", "doc_id": "gs://bucket/x.pdf"}`.
@@ -564,30 +564,21 @@ Also add import smoke-tests for each new concrete type.
 
 ## 8. Manual Intervention Required From You
 
-1. **Review `mode: "batch_dataset"` breaking change.** The old `Input.from_batch_dataset` stored
-   `mode: "text"` in Firestore. After SP-08, `BatchDatasetInput` stores `mode: "batch_dataset"`.
-   Any existing Firestore documents that encode `mode: "text"` with dataset fields cannot be
-   re-validated through `CarePlanInternal` after this change. Per the locked no-legacy-data
-   decision this is intentional, but confirm you are comfortable with the batch-mode string flip
-   before merging.
+1. **`mode: "batch_dataset"` breaking change — CONFIRMED.** No old data exists; the mode
+   string flip is approved.
 
-2. **Frontend type-error sweep.** After updating `frontend/src/types/envelope.ts`, run
-   `npx tsc --noEmit` from `frontend/`. If any component accesses `input.text` or `input.doc_id`
-   without a `mode` guard, TypeScript will error. Fix those sites before the PR is considered
-   green. (Based on reading `CarePlanPage.tsx`, `outputHasInputPdf` is already safe; confirm no
-   other component has bare `input.doc_id` or `input.text` access.)
+2. **Frontend type-error sweep — YES, run it.** After updating `frontend/src/types/envelope.ts`,
+   run `npx tsc --noEmit` from `frontend/`. Fix any bare `input.text` / `input.doc_id` access
+   without a `mode` guard before the PR is green.
 
-3. **No `models/__init__.py` `__all__` auto-sync.** The `__all__` in `models/__init__.py` and the
-   assertion in `tests/models/test_exports.py` must be kept in lockstep manually — adding a new
-   input type later requires updating both. Note this for the project README or a future lint rule.
+3. **No `models/__init__.py` `__all__` auto-sync — NOTED.** Keep `__all__` and
+   `tests/models/test_exports.py` in lockstep manually.
 
 ## 9. Open Questions & Decisions
 
 1. **Should `TextInput.text` be `str` (required) or `str | None`?**
-   `[RESOLVED: str, required. TextInput only exists when there is text; an empty or null text
-   input is a caller error, not a valid state. If the pipeline produces empty text it should raise
-   before constructing TextInput. BatchDatasetInput.text is similarly required — the batch route
-   already guards for empty text before constructing the input model (batch.py:174-182).]`
+   `[RESOLVED: str | None — None is a valid value. Update field to `text: str | None = None`.
+   BatchDatasetInput.text stays required (`text: str`) since the batch route always provides text.]`
 
 2. **`mode="batch_dataset"` — is this an API contract change the frontend needs to handle?**
    `[RESOLVED: Yes, but the frontend does not currently branch on mode="batch_dataset". The

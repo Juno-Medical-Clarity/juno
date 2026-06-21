@@ -563,20 +563,14 @@ before; now the field is not written at all).
 
 ## 8. Manual Intervention Required From You
 
-1. **Confirm `input_pdf_gcs` is safe to remove from Firestore document roots.** After SP-11 lands,
-   new documents will not have this top-level field. The signed URL endpoint falls back to it for
-   old documents, so nothing breaks. But if any other system (reporting, data export, manual query)
-   reads `input_pdf_gcs` directly, you should know before we remove it.
+1. **`input_pdf_gcs` removal — CONFIRMED SAFE.** No other system reads this field directly.
+   Removal is approved; the tolerant fallback read in `saved_outputs.py` covers existing docs.
 
-2. **Confirm timing of SP-11 relative to SP-08 deploy.** SP-11 must land after SP-08 has shipped
-   `FileInput.pdf_gcs_url` (the stub field). If they land together in the same deploy, ensure
-   SP-08's model changes are evaluated first (import order / module load does not matter here since
-   it is the same process, but task ordering in the TASKS.md for the combined deploy matters).
+2. **Timing relative to SP-08 — CONFIRMED.** SP-11 lands after SP-08. Task ordering in TASKS.md
+   must reflect this; implementer to ensure SP-08 tasks are marked complete before SP-11 begins.
 
-3. **Review the `SplitView.css` addition.** The `.split-view-text-content` class controls how
-   original text is displayed in the left panel. Default suggested styles are `height: 100%;
-   overflow-y: auto; padding: 16px; font-size: 0.875rem; line-height: 1.6;`. Adjust to match your
-   design system before shipping.
+3. **`SplitView.css` addition — APPROVED.** Use suggested styles (`height: 100%; overflow-y: auto;
+   padding: 16px; font-size: 0.875rem; line-height: 1.6;`) as the default.
 
 ## 9. Open Questions & Decisions
 

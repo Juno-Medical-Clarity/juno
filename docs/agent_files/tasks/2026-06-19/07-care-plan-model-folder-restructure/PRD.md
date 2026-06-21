@@ -68,7 +68,7 @@ The current test suite is written against the old structure — tests import fro
 6. Delete `is_legacy_shape` from `envelope.py` and from `models/__init__.py`. Update the
    one test that asserts on it.
 7. Convert `_METHOD_REASONING` to `GradingMethodReason(str, Enum)` in `grading.py`.
-8. Promote `Grading` to `VersionedModel` with `grading_version_value = GRADING_VERSION`.
+8. ~~Promote `Grading` to `VersionedModel`~~ — **REMOVED**: `Grading` stays as `JsonModel` with no `version` field. See §4.9.
 9. Update all imports across routes, tests, and `models/__init__.py` to reflect the above.
 
 ## 3. Non-Goals
@@ -434,48 +434,22 @@ removing the separate hard-coded list. This is cleaner but is an implementer's c
 
 `GradingMethodReason` is added to `models/__init__.py` exports and `__all__`.
 
-### 4.9 `Grading` → `VersionedModel` subclass
+### 4.9 `Grading` — stays as `JsonModel`, no version field
 
-**Current:** `Grading(JsonModel)` — a plain `JsonModel`.
+**RESOLVED: Keep `Grading(JsonModel)` as-is. Do NOT add a `version` field and do NOT promote
+to `VersionedModel`.** Grading is singular — there is always exactly one version and it is
+always the latest. Each grading entry type (`smog`, `flesch_kincaid`, etc.) is optional in the
+`entries` list; if the backend does not include a type, the frontend simply does not display it.
+No versioning mechanism is needed.
 
-**New:**
-
+No wire-format change to `Grading`. `Grading().to_dict()` continues to emit:
 ```python
-# backend/models/grading.py
-
-class Grading(VersionedModel):
-    """Versioned grading result for a single pipeline run."""
-    grading_version_value: ClassVar[str] = GRADING_VERSION
-    version: str = GRADING_VERSION   # inherited required field, defaulted
-
-    entries: list[GradingEntry] = Field(default_factory=list)
-    enabled: bool = True
-    graded_at: str | None = None
+{"entries": [], "enabled": True, "graded_at": None}
 ```
 
-**Wire format change:** `Grading().to_dict()` will now emit `"version": "1.0"` in addition
-to `entries`, `enabled`, and `graded_at`. This changes the persisted `grading` sub-object
-in Firestore (a new `version` key) and the SSE result payload's `grading` field.
+The test at `tests/models/test_grading_model.py:29-30` requires **no update** for this change.
 
-**Impact:** The test at `tests/models/test_grading_model.py:29-30` asserts:
-```python
-assert Grading().to_dict() == {"entries": [], "enabled": True, "graded_at": None}
-```
-This assertion must be updated to:
-```python
-assert Grading().to_dict() == {"version": "1.0", "entries": [], "enabled": True, "graded_at": None}
-```
-
-`Grading` as a `VersionedModel` also registers itself in `VersionedModel._registry` via
-`__init_subclass__`. But `Grading` is a **direct subclass of `VersionedModel`** (not of a
-family base that itself subclasses `VersionedModel`) — this means it gets a **fresh, empty
-`_registry`** per the `__init_subclass__` logic in `base.py`. Since there is only one
-Grading version now, there is no dispatch call site to worry about; `Grading.from_dict`
-will call `model_validate` directly (the `version_value is not None` branch). If a future
-`GradingV1_1` is added, the family-base pattern applies the same way as `CarePlan`.
-
-**`build_grading` return:** No change. `Grading(entries=entries, enabled=True,
-graded_at=...)` still works — `version` has a default so it does not need to be passed.
+**`build_grading` return:** No change.
 
 ### 4.10 Test file updates
 
@@ -583,25 +557,11 @@ Scoring information is still fully present inside `grading.entries[*].grade` and
 `grading.entries[*].grade_breakdown`. No consumer reads `before_score`/`after_score`
 from the wire for display purposes.
 
-**2. `grading.version` added:**
-
-```jsonc
-// BEFORE
-{ "entries": [...], "enabled": true, "graded_at": "..." }
-
-// AFTER
-{ "version": "1.0", "entries": [...], "enabled": true, "graded_at": "..." }
-```
-
-This is a new key in the persisted Firestore `grading` sub-object and the SSE payload.
-The frontend ignores unknown keys so this is non-breaking on that side. Firestore reads
-are tolerant (locked decision); old docs without `version` validate because
-`VersionedModel.from_dict` dispatches on `version` only when called on a family base with
-no `version_value` — calling `Grading.from_dict(old_dict)` with missing `version` will
-fail. See Open Questions §9.1.
-
 **No other route changes.** The `POST /care_plan` and `POST /care_plan/batch` endpoint
 paths, SSE step sequence, and all other fields are unchanged.
+
+The `grading` wire shape is **unchanged** — `Grading` stays as `JsonModel` with no `version`
+field (§4.9).
 
 ## 6. Frontend Change Summary
 
@@ -632,11 +592,6 @@ created; existing tests are updated in place.
   - `build_grading(...)` entries have `reasoning` equal to the corresponding
     `GradingMethodReason` member's value.
 
-- **`Grading` as `VersionedModel` test** (update `tests/models/test_grading_model.py`):
-  - `Grading().to_dict()` includes `"version": "1.0"`.
-  - `Grading.from_dict({"version": "1.0", "entries": [], "enabled": True, "graded_at": None})`
-    round-trips correctly.
-
 - **Folder-rename structural tests** (update `tests/simplify/test_pipeline_interface.py`):
   - `backend/care_plan/v1_2/` exists.
   - `backend/simplify/` does NOT exist.
@@ -651,75 +606,43 @@ created; existing tests are updated in place.
 
 ## 8. Manual Intervention Required From You
 
-1. **Approve the `before_score`/`after_score` wire removal.** These two keys disappear
-   from the SSE result payload and from Firestore-persisted output docs. Confirm no
-   external consumer (batch tool, monitoring dashboard, downstream script) reads those
-   keys from the persisted output docs.
+1. **`before_score`/`after_score` wire removal — CONFIRMED.** No external consumer reads
+   these keys; removal is approved.
 
-2. **Approve adding `"version": "1.0"` to persisted `grading` sub-objects.** Firestore
-   `simplify_outputs.output_data.grading` gains a new `version` key. Old persisted docs
-   without it will fail `Grading.from_dict()` if that path is ever called on them directly.
-   Confirm the grading re-read path (if any) either does not call `Grading.from_dict` or
-   tolerates a missing `version` key. See Open Questions §9.1.
+2. ~~Approve adding `"version": "1.0"` to persisted grading sub-objects~~ — **REMOVED**:
+   `Grading` stays as `JsonModel` with no `version` field (§4.9).
 
-3. **Confirm no deploy config references `simplify/` by path.** Cloud Run's Dockerfile,
-   `cloudbuild.yaml`, or any startup script that copies or references
-   `backend/simplify/` must be updated. Check `backend/Dockerfile` and any CI config.
+3. **`simplify/` in deploy config — CONFIRMED.** No CI or deploy config references the old
+   path. Implementer may proceed with the rename.
 
 ## 9. Open Questions & Decisions
 
 1. **`Grading.from_dict` on old persisted docs without `"version"`.**
-   `[OPEN]` — The `VersionedModel.from_dict` dispatch branch raises `ValueError("Missing
-   'version' key")` when called on the family base with no `version_value`. Old Firestore
-   docs without `grading.version` would fail if read back through `Grading.from_dict`.
-   However, `routes/saved_outputs.py` reads `output_data` as a raw dict and does not
-   call `Grading.from_dict`. If no code path calls `Grading.from_dict` on persisted docs,
-   this is safe. Verify with `grep -rn "Grading.from_dict" backend/routes/`. If found,
-   either make `version` field optional with a default (`version: str = GRADING_VERSION`)
-   so `model_validate` fills it in, or keep `Grading` as a plain `JsonModel` and only
-   add the enum/version changes without the `VersionedModel` promotion.
+   `[RESOLVED: N/A]` — No old data exists. And `Grading` is not being promoted to
+   `VersionedModel` (§4.9), so `Grading.from_dict` behaviour is unchanged. No concern.
 
 2. **`care_plan/v1_2/models.py` import path for `CarePlanV1_2` in route tests.**
-   `[OPEN]` — Test files that create `CarePlanV1_2` directly (e.g.
-   `tests/simplify/test_pipeline_happy_path.py:22`, `tests/models/test_envelope.py:24`)
-   currently import `from models.care_plan import CarePlanV1_2`. After the move these
-   must import `from care_plan.v1_2.models import CarePlanV1_2`. Do a full audit of all
-   test files and non-pipeline files importing `CarePlanV1_2` directly before starting
-   the move.
+   `[RESOLVED: Audit before move]` — Run
+   `grep -rn "from models.care_plan import.*CarePlanV1_2" backend/` (and tests/) before
+   starting the file move. Update every hit to `from care_plan.v1_2.models import CarePlanV1_2`.
 
 3. **`simplify/` as a Python package name vs `care_plan/` collision with `models/care_plan.py`.**
    `[RESOLVED: No collision]` — `backend/care_plan/` is a package (directory with
    `__init__.py`), and `backend/models/care_plan.py` is a module. Python resolves them
-   separately: `import care_plan` finds the package; `from models.care_plan import ...`
-   finds the module under `models/`. Both can coexist in the same `sys.path` root
-   (`backend/`) with no conflict because one is `care_plan` (package) and the other is
-   `models.care_plan` (sub-module of `models`).
+   separately. If any actual collision is encountered during implementation, add a short
+   suffix to disambiguate (e.g. rename the colliding symbol).
 
 4. **`exclude_fields` / `_llm_schema` helper placement.**
-   `[OPEN]` — The helper can live as a private function in `care_plan/v1_2/pipeline.py`
-   (used only there) or as a shared utility in `utils/schema.py` (if future pipeline
-   versions also need to exclude fields from their schema). Since only one pipeline version
-   exists and SP-09 may reorganise the pipeline file, keeping it private in pipeline.py is
-   safer for now. Revisit if a v1.3 pipeline needs the same pattern.
+   `[RESOLVED: Keep private in `care_plan/v1_2/pipeline.py`]` — Only one pipeline version
+   uses it. Keep it as a private module function. Revisit if a v1.3 pipeline needs the same
+   pattern.
 
 5. **Test folder rename: `tests/simplify/` → `tests/care_plan/`.**
-   `[OPEN]` — The source folder is renamed `simplify/ → care_plan/` but the test folder
-   is `tests/simplify/`. For consistency, `tests/simplify/` should become `tests/care_plan/`.
-   This SP's scope includes updating the imports inside those files; whether to also rename
-   the test folder itself is left to the implementer. Renaming the test folder is a one-line
-   filesystem move with no logic impact.
+   `[RESOLVED: Yes, rename]` — Rename `tests/simplify/` → `tests/care_plan/` along with the
+   source folder rename. Update all imports inside those files accordingly.
 
 6. **`Grading` as its own family base vs. a direct `VersionedModel` subclass.**
-   `[OPEN]` — If `Grading` subclasses `VersionedModel` directly (no intermediate family
-   base), it gets its own `_registry` that starts empty. `Grading.from_dict` will hit the
-   `version_value is None` branch and try to dispatch — but there are no subclasses
-   registered, so it will raise. The correct resolution is to set `grading_version_value`
-   on `Grading` directly (making `Grading` a concrete implementation, not a family base).
-   That means `Grading.from_dict` calls `cls.model_validate(data)` directly. This works
-   but means adding a second Grading version would require converting `Grading` into a
-   family base and introducing `GradingV1_0` — more disruption than the `CarePlan` pattern.
-   Alternative: just add `version: str = GRADING_VERSION` as a plain field on the existing
-   `JsonModel`-based `Grading` without making it a `VersionedModel`. This satisfies the
-   wire-format goal (version appears in the dict) with zero dispatch complexity. Decide
-   before implementation which path to take. The recommendation is: **use `JsonModel` with
-   a plain `version` field** unless the owner confirms dispatch is needed now.
+   `[RESOLVED: Keep as `JsonModel`, no version field]` — `Grading` is singular and always
+   the latest. No version field is added. Each grading entry type is optional in `entries`;
+   if absent the frontend simply does not display it. `Grading` stays as `Grading(JsonModel)`
+   with no structural change from SP-07's perspective (only the Enum conversion in §4.8 applies).

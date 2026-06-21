@@ -379,15 +379,13 @@ the choice is stylistic. See §4.5.
 ## 9. Open Questions & Decisions
 
 1. **`src/api/index.ts` — name collision risk.**
-   [OPEN] The barrel uses `export * from` for all four api modules. If any two modules export a
-   symbol with the same name, TypeScript will error on ambiguous re-export. Before landing, run:
+   `[RESOLVED: Check and fix]` — Run:
    ```
    grep -n "^export" src/api/apiClient.ts src/api/datasets.ts src/api/firebase.ts src/api/savedOutputs.ts
    ```
-   and confirm no name appears in more than one file. If a collision exists, switch the
-   conflicting module to a namespace export: `export * as firebase from './firebase'`. The
-   resolution requires reading the actual export lists, which the implementer should verify during
-   execution.
+   If any name appears in more than one file, switch the conflicting module to a namespace export
+   (`export * as <name> from './<name>'`) or rename the conflicting symbol. Implementer must run
+   this check and fix any collision before landing.
 
 2. **Barrel adoption in production callers.**
    [DEFERRED] Whether `CarePlanPage.tsx`, `App.tsx`, and other consumers should be migrated to
