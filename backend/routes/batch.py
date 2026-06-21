@@ -11,6 +11,8 @@ from models.envelope import CarePlanInternal
 from models.input import BatchDatasetInput
 from models.metrics import Metrics
 from utils.constants import Constants
+
+MAX_BATCH_RUNS = Constants.MAX_BATCH_RUNS
 from routes.care_plan import _extract_text_from_bytes, run_care_plan_pipeline
 from utils.firebase import verify_firebase_token, save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
@@ -39,7 +41,7 @@ def _grading_enabled(raw_value) -> bool:
     return str(raw_value).strip().lower() in {"1", "true", "yes", "on"}
 
 
-def _pipeline_for_version(version: str) -> Callable[[str, Metrics, bool], Generator[str | tuple, None, None]]:
+def _pipeline_for_version(version: str) -> Callable[..., Generator[str | tuple, None, None]]:
     if version == Constants.PIPELINE_VERSION_V1_2:
         return run_care_plan_pipeline
     raise ValueError(f"Unknown version '{version}'")
@@ -144,8 +146,8 @@ def create_care_plan_batch(user_id: str):
             pipeline = _pipeline_for_version(version)
             runs = _resolve_requested_runs(selections)
             total = len(runs)
-            if total > Constants.MAX_BATCH_RUNS:
-                yield _sse({"step": "error", "error": f"Batch request exceeds maximum of {Constants.MAX_BATCH_RUNS} runs"})
+            if total > MAX_BATCH_RUNS:
+                yield _sse({"step": "error", "error": f"Batch request exceeds maximum of {MAX_BATCH_RUNS} runs"})
                 return
 
             timestamp = _batch_timestamp()
@@ -182,7 +184,7 @@ def create_care_plan_batch(user_id: str):
                     continue
 
                 metrics = Metrics.start(
-                    session_id=g.session_id,
+                    session_id=getattr(g, "session_id", ""),
                     pipeline_version=version,
                     input_type="batch_dataset",
                 )

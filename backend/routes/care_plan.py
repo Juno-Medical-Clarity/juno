@@ -30,6 +30,10 @@ from google.cloud import storage as gcs
 
 from config import CARE_PLAN_DEFAULT_VERSION
 from utils.constants import Constants
+
+RESULT_SENTINEL = Constants.RESULT_SENTINEL
+MAX_AGGREGATE_FILE_BYTES = Constants.MAX_AGGREGATE_FILE_BYTES
+
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.firebase import save_care_plan_output, verify_firebase_token
@@ -141,8 +145,8 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
         if len(file_bytes) > Constants.MAX_FILE_BYTES:
             raise ValueError("File exceeds 10 MB limit")
         aggregate_bytes += len(file_bytes)
-        if aggregate_bytes > Constants.MAX_AGGREGATE_FILE_BYTES:
-            limit_mb = Constants.MAX_AGGREGATE_FILE_BYTES // (1024 * 1024)
+        if aggregate_bytes > MAX_AGGREGATE_FILE_BYTES:
+            limit_mb = MAX_AGGREGATE_FILE_BYTES // (1024 * 1024)
             raise ValueError(f"combined upload size exceeds {limit_mb} MB limit")
 
         filenames.append(filename)

@@ -69,7 +69,7 @@ def test_batch_runs_in_sorted_order_expands_all_and_saves_metadata(_verify_token
     def read_dataset_file(group, input_id, filename):
         return read_bytes[(group, input_id, filename)]
 
-    def run_pipeline(text, metrics, grading_enabled):
+    def run_pipeline(text, metrics, grading_enabled, **kwargs):
         executor_calls.append((text, metrics, grading_enabled))
         # text format: "\n\n--- notes.txt ---\n\nGroupA input-1 notes..."
         parts = text.splitlines()[4].split(" ")
@@ -314,7 +314,7 @@ def test_batch_continues_after_per_input_failures(_verify_token, client):
     def read_dataset_file(group, input_id, filename):
         return read_bytes[(group, input_id, filename)]
 
-    def run_pipeline(text, metrics, grading_enabled):
+    def run_pipeline(text, metrics, grading_enabled, **kwargs):
         if "pipeline-error" in text:
             yield f"data: {json.dumps({'step': 'error', 'error': 'Pipeline failed for input'})}\n\n"
             return

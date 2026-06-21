@@ -39,12 +39,12 @@ def test_pipeline_happy_path(client, auth_ok, fake_firestore, monkeypatch):
     fake_care_plan = _make_fake_care_plan()
     fake_grading = Grading(enabled=False)
 
-    def fake_pipeline(text, metrics, grading_enabled=True):
+    def fake_pipeline(text, metrics, grading_enabled=True, **kwargs):
         yield f"data: {json.dumps({'step': 2, 'status': 'active'})}\n\n"
         yield f"data: {json.dumps({'step': 2, 'status': 'done'})}\n\n"
         yield f"data: {json.dumps({'step': 3, 'status': 'active'})}\n\n"
         yield f"data: {json.dumps({'step': 3, 'status': 'done'})}\n\n"
-        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "", None, None)
+        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "")
 
     # Must patch PIPELINES (the route uses PIPELINES[version], not the bare function name)
     monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": fake_pipeline})
@@ -75,8 +75,8 @@ def test_pipeline_result_has_metrics(client, auth_ok, fake_firestore, monkeypatc
     fake_care_plan = _make_fake_care_plan()
     fake_grading = Grading(enabled=False)
 
-    def fake_pipeline(text, metrics, grading_enabled=True):
-        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "", None, None)
+    def fake_pipeline(text, metrics, grading_enabled=True, **kwargs):
+        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "")
 
     monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": fake_pipeline})
 
@@ -91,8 +91,8 @@ def test_pipeline_no_error_events_on_success(client, auth_ok, fake_firestore, mo
     fake_care_plan = _make_fake_care_plan()
     fake_grading = Grading(enabled=False)
 
-    def fake_pipeline(text, metrics, grading_enabled=True):
-        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "", None, None)
+    def fake_pipeline(text, metrics, grading_enabled=True, **kwargs):
+        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "")
 
     monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": fake_pipeline})
 
@@ -115,8 +115,8 @@ def test_pipeline_empty_text_returns_error_event(client, auth_ok, fake_firestore
     fake_care_plan = _make_fake_care_plan()
     fake_grading = Grading(enabled=False)
 
-    def fake_pipeline(text, metrics, grading_enabled=True):
-        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "", None, None)
+    def fake_pipeline(text, metrics, grading_enabled=True, **kwargs):
+        yield (RESULT_SENTINEL, fake_care_plan, fake_grading, text, "")
 
     monkeypatch.setattr("routes.care_plan.PIPELINES", {"v1-2": fake_pipeline})
 

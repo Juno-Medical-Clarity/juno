@@ -13,7 +13,7 @@ def load_fixture() -> dict:
 
 
 # Minimal care-plan pipeline output dict matching the CarePlanInternal envelope shape.
-# Keys: metrics, input, grading, care_plan (plus optional before_score/after_score).
+# Keys: metrics, input, grading, care_plan.
 SAMPLE_PIPELINE_OUTPUT = {
     "metrics": {
         "session_id": "session-1",
