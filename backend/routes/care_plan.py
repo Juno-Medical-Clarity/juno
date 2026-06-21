@@ -471,6 +471,9 @@ def run_care_plan_pipeline(
         def _pipeline_done(scope):
             JunoContext.from_g(function="pipeline").apply(scope)
             scope.add("input_chars", len(text))
+            scope.add("source_kind", source_kind)
+            scope.add("grading_enabled", grading_enabled)
+            scope.add("is_batch", is_batch)
         Markers.CarePlan.Pipeline.execute(_pipeline_done)
 
         # Non-SSE sentinel: the route intercepts these typed objects and is
