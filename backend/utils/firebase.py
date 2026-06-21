@@ -103,7 +103,6 @@ def save_care_plan_output(
     user_id: str,
     name: str,
     source_filename: str,
-    input_pdf_gcs: str | None,
     output_data: dict,
     dataset_group: str | None = None,
     batch_group_id: str | None = None,
@@ -120,7 +119,6 @@ def save_care_plan_output(
         "source_filename": source_filename,
         "created_at": now,
         "updated_at": now,
-        "input_pdf_gcs": input_pdf_gcs or "",
         "output_data": output_data,
     }
     if dataset_group is not None:

@@ -177,7 +177,6 @@ def test_persists_to_firestore(mock_client, mock_uuid4):
         user_id="user-1",
         name="Visit summary",
         source_filename="file.pdf",
-        input_pdf_gcs="gs://bucket/care_plan/user-1/inputs/file.pdf",
         output_data={"care_plan": {"summary": "ok"}},
     )
 
@@ -200,7 +199,6 @@ def test_uses_tz_aware_datetimes(mock_client, mock_uuid4):
         user_id="user-1",
         name="Visit",
         source_filename="f.txt",
-        input_pdf_gcs=None,
         output_data={},
     )
 
@@ -224,7 +222,6 @@ def test_accepts_batch_metadata(mock_client, mock_uuid4):
         user_id="user-1",
         name="Visit",
         source_filename="notes.txt",
-        input_pdf_gcs=None,
         output_data={"summary": "ok"},
         dataset_group="DocConv",
         batch_group_id="DocConv-20260616153012",
@@ -248,7 +245,6 @@ def test_does_not_include_batch_fields_when_not_provided(mock_client, mock_uuid4
         user_id="user-1",
         name="Visit",
         source_filename="notes.txt",
-        input_pdf_gcs=None,
         output_data={},
     )
 
@@ -271,7 +267,6 @@ def test_uses_firestore_database_id_from_env(mock_client, mock_uuid4):
         user_id="user-1",
         name="Visit",
         source_filename="f.txt",
-        input_pdf_gcs=None,
         output_data={},
     )
 
