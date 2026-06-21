@@ -8,7 +8,7 @@ from pydantic import ValidationError
 
 from care_plan.v1_2.models import CarePlanV1_2
 from models.grading import Grading
-from models.input import Input
+from models.input import TextInput
 from models.metrics import Metrics
 
 
@@ -36,7 +36,7 @@ def _care_plan() -> CarePlanV1_2:
 def _envelope_dict() -> dict:
     return {
         "metrics": _metrics().to_dict(),
-        "input": Input.from_text("Patient note").to_dict(),
+        "input": TextInput(text="Patient note").to_dict(),
         "grading": Grading().to_dict(),
         "care_plan": _care_plan().to_dict(),
     }
@@ -47,7 +47,7 @@ def test_care_plan_internal_serializes_with_care_plan_key_and_scores_absent():
 
     model = CarePlanInternal(
         metrics=_metrics(),
-        input=Input.from_text("Patient note"),
+        input=TextInput(text="Patient note"),
         grading=Grading(),
         care_plan=_care_plan(),
     )
@@ -73,7 +73,7 @@ def test_care_plan_internal_rejects_extra_score_kwargs():
     with pytest.raises((ValidationError, TypeError)):
         CarePlanInternal(
             metrics=_metrics(),
-            input=Input.from_text("Patient note"),
+            input=TextInput(text="Patient note"),
             grading=Grading(),
             care_plan=_care_plan(),
             before_score={"composite": 60},
@@ -99,7 +99,7 @@ def test_care_plan_internal_scores_are_absent_from_envelope():
 
     model = CarePlanInternal(
         metrics=_metrics(),
-        input=Input.from_text("Patient note"),
+        input=TextInput(text="Patient note"),
         grading=Grading(),
         care_plan=_care_plan(),
     )

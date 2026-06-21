@@ -11,7 +11,7 @@ from flask import Flask, g
 from routes import care_plan as care_plan_module
 from models.care_plan import CarePlan
 from models.grading import Grading
-from models.input import Input
+from models.input import DocIdInput
 
 BACKEND_DIR = Path(__file__).resolve().parents[2]
 
@@ -236,7 +236,7 @@ def test_care_plan_stream_composes_single_payload_and_saves_same_dict_for_non_do
         combined_pdf_bytes=b"%PDF-1.4",
         source_kind="upload",
     )
-    input_model = Input.from_doc_id("resolved-input")
+    input_model = DocIdInput(doc_id="resolved-input")
     grading = Grading(enabled=False)
     step_chunk = care_plan_module._sse({"step": 2, "status": "done"})
     pipeline = MagicMock(
@@ -299,7 +299,7 @@ def test_care_plan_stream_doc_id_composes_result_without_saving():
         source_filename="stored.txt",
         source_kind="doc_id",
     )
-    input_model = Input.from_doc_id("abc")
+    input_model = DocIdInput(doc_id="abc")
     pipeline = MagicMock(
         return_value=iter(
             [
