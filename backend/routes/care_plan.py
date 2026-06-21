@@ -362,15 +362,20 @@ def run_care_plan_pipeline(
             def _find(scope):
                 JunoContext.from_g(function="find_medical_terms").apply(scope)
                 try:
-                    return detect_terms(text)
+                    result = detect_terms(text)
                 except Exception as exc:
                     logger.exception("care_plan: term detection failed - continuing with empty terms")
                     scope.mark_failed()
-                    return {
+                    result = {
                         "substitution_candidates": [],
                         "preserve_and_define_terms": [],
                         "abbreviations": [],
                     }
+                substitution_count = len(result.get("substitution_candidates", []))
+                preserve_count = len(result.get("preserve_and_define_terms", []))
+                scope.add("term_count", substitution_count + preserve_count)
+                scope.add("substitution_count", substitution_count)
+                return result
             term_data = Markers.CarePlan.FindMedicalTerms.execute(_find)
         except Exception as exc:
             logger.exception("care_plan: term detection outer error")
