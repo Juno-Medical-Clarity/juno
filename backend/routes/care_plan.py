@@ -35,7 +35,7 @@ from utils.firebase import save_care_plan_output, verify_firebase_token
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from models.metrics import Metrics
-from models.input import Input, INPUT_VERSION
+from models.input import FileInput, TextInput, DocIdInput, INPUT_VERSION
 from models.grading import Grading, build_grading, GRADING_VERSION
 from models.care_plan import CarePlan, CARE_PLAN_VERSION
 from models.envelope import CarePlanInternal
@@ -266,12 +266,12 @@ def _score_or_none(text: str, label: str) -> dict | None:
         return None
 
 
-def _input_model_from_resolved(resolved: ResolvedInput) -> Input:
+def _input_model_from_resolved(resolved: ResolvedInput) -> FileInput | TextInput | DocIdInput:
     if resolved.source_kind == "text":
-        return Input.from_text(resolved.text)
+        return TextInput(text=resolved.text)
     if resolved.source_kind == "doc_id":
         raw_doc_id = resolved.source_description.removeprefix("doc:")
-        return Input.from_doc_id(raw_doc_id)
+        return DocIdInput(doc_id=raw_doc_id)
 
     # file upload: reconstruct from request files (streams may be exhausted,
     # from_file_uploads seeks them back to 0 after reading)
@@ -283,7 +283,7 @@ def _input_model_from_resolved(resolved: ResolvedInput) -> Input:
             upload.seek(0)
         except Exception:
             pass
-    return Input.from_file_uploads(uploads)
+    return FileInput.from_file_uploads(uploads)
 
 
 def _grading_enabled_from_request() -> bool:
