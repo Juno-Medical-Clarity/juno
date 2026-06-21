@@ -98,35 +98,12 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
         medical_block = format_medical_terms_for_prompt(preserve_and_define_terms)
         abbrev_block = format_abbreviations_for_prompt(abbreviations)
 
-        prompt = f"""You are a health literacy expert helping rewrite a provider note for a patient.
-
-Rewrite the note so it is easier to understand at about a 6th-grade reading level.
-
-Use these plain-language replacement suggestions when they fit naturally in context:
-{sub_block}
-
-Preserve these medical terms exactly. Do not define them inline. They will be explained separately in the UI:
-{medical_block}
-
-Expand these abbreviations when they appear:
-{abbrev_block}
-
-Rules:
-1. Keep all medical facts from the source accurate.
-2. Do not add diagnosis, medical advice, urgency, prognosis, or treatment interpretation.
-3. Do not remove important information.
-4. Use short sentences (under 20 words where possible).
-5. Use active voice.
-6. Use "you" and "your."
-7. Do not include the patient's name, date of birth, address, insurance details, or other identifiers.
-8. Do not add parenthetical definitions.
-9. Do not return term annotations or spans.
-10. Output only the rewritten text; no preamble, no commentary.
-
-SOURCE NOTE:
-{text}
-
-REWRITTEN NOTE:"""
+        prompt = _SIMPLIFY_PROMPT.format(
+            sub_block=sub_block,
+            medical_block=medical_block,
+            abbrev_block=abbrev_block,
+            text=text,
+        )
         return self._generate_text(prompt, temperature=0.3, max_tokens=16384)
 
     def clarify_and_action(self, text: str, abbreviations: list[dict] | None = None) -> str:
