@@ -20,6 +20,7 @@ Steps:
 import copy
 import json
 import logging
+from pathlib import Path
 
 from pydantic import ValidationError
 
@@ -53,6 +54,12 @@ _STRUCTURING_SCHEMA = json.dumps(
     _llm_schema(CarePlanV1_2, exclude={"terms", "raw"}),
     indent=2,
 )
+
+_PROMPTS_DIR = Path(__file__).parent / "prompts"
+
+_SIMPLIFY_PROMPT  = (_PROMPTS_DIR / "simplify_language.txt").read_text(encoding="utf-8")
+_CLARIFY_PROMPT   = (_PROMPTS_DIR / "clarify_and_action.txt").read_text(encoding="utf-8")
+_STRUCTURE_PROMPT = (_PROMPTS_DIR / "structure_note.txt").read_text(encoding="utf-8")
 
 
 class CarePlanV1_2Pipeline(CarePlanPipeline):
