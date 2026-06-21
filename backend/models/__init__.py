@@ -3,7 +3,7 @@
 from .base import JsonModel, VersionedModel
 from .care_plan import CarePlan
 from .envelope import CarePlanInternal
-from .grading import Grading, GradingEntry, build_grading
+from .grading import Grading, GradingEntry, GradingMethodReason, build_grading
 from .input import Input, InputFile
 from .metrics import Metrics
 
@@ -14,6 +14,7 @@ __all__ = [
     "CarePlanInternal",
     "Grading",
     "GradingEntry",
+    "GradingMethodReason",
     "build_grading",
     "Input",
     "InputFile",
