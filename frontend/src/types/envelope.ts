@@ -9,12 +9,32 @@ export interface InputFile {
   size_bytes: number;
 }
 
-export interface Input {
-  mode: string;  // "file" | "text" | "doc_id"
-  text: string | null;
-  doc_id: string | null;
+export interface FileInput {
+  mode: 'file';
   files: InputFile[];
+  pdf_gcs_url: string | null;  // stub for SP-11 (Show Original)
 }
+
+export interface TextInput {
+  mode: 'text';
+  text: string | null;
+}
+
+export interface DocIdInput {
+  mode: 'doc_id';
+  doc_id: string;
+}
+
+export interface BatchDatasetInput {
+  mode: 'batch_dataset';
+  text: string;
+  dataset_group: string;
+  dataset_input: string;
+  selected_files: string[];
+  batch_group_id: string;
+}
+
+export type Input = FileInput | TextInput | DocIdInput | BatchDatasetInput;
 
 export interface GradingEntry {
   name: string;
