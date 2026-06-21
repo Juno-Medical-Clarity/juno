@@ -463,7 +463,15 @@ def run_care_plan_pipeline(
         })
 
         if grading_enabled:
-            grading = build_grading(before_score, text, after_score, clarified)
+            def _grade(scope):
+                JunoContext.from_g(function="grading").apply(scope)
+                result = build_grading(before_score, text, after_score, clarified)
+                scope.add("before_composite", (before_score or {}).get("composite", 0.0))
+                scope.add("after_composite", (after_score or {}).get("composite", 0.0))
+                method_names = {e.name for e in result.entries if e.name != "combined"}
+                scope.add("grading_method_count", len(method_names))
+                return result
+            grading = Markers.Grading.Run.execute(_grade)
         else:
             grading = Grading(enabled=False)
 
