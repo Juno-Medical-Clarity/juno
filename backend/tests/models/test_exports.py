@@ -5,8 +5,11 @@ def test_models_exports_new_model_names():
     import models
 
     from models import (  # noqa: F401
+        BatchDatasetInput,
         CarePlan,
         CarePlanInternal,
+        DocIdInput,
+        FileInput,
         Grading,
         GradingEntry,
         GradingMethodReason,
@@ -14,6 +17,7 @@ def test_models_exports_new_model_names():
         InputFile,
         JsonModel,
         Metrics,
+        TextInput,
         VersionedModel,
         build_grading,
     )
@@ -29,6 +33,10 @@ def test_models_exports_new_model_names():
         "build_grading",
         "Input",
         "InputFile",
+        "FileInput",
+        "TextInput",
+        "DocIdInput",
+        "BatchDatasetInput",
         "Metrics",
     ]
 
