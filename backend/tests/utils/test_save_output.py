@@ -23,7 +23,6 @@ def test_save_care_plan_output_persists_raw_and_uses_aware_datetimes(
         user_id="user-1",
         name="Visit summary",
         source_filename="a.pdf, b.txt",
-        input_pdf_gcs="gs://bucket/care_plan/user-1/inputs/input.pdf",
         output_data=output_data,
     )
 
@@ -56,7 +55,6 @@ def test_save_care_plan_output_accepts_batch_metadata(
         user_id="user-1",
         name="Visit summary",
         source_filename="notes.txt",
-        input_pdf_gcs=None,
         output_data={"summary": "ok"},
         dataset_group="DocConv",
         batch_group_id="DocConv-20260616153012",

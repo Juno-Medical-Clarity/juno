@@ -158,9 +158,10 @@ def test_multi_file_input_is_concatenated_and_saved_after_result(
     saved_kwargs = save_care_plan_output.call_args.kwargs
     assert saved_kwargs["user_id"] == "user-1"
     assert saved_kwargs["source_filename"] == "a.txt, b.txt"
-    assert saved_kwargs["input_pdf_gcs"] == "gs://bucket/input.pdf"
-    # Single-serialize: the persisted dict is the same object as the response payload
+    assert "input_pdf_gcs" not in saved_kwargs
+    # pdf_gcs_url now lives inside output_data.input (SP-11)
     persisted_output = saved_kwargs["output_data"]
+    assert persisted_output["input"]["pdf_gcs_url"] == "gs://bucket/input.pdf"
     assert persisted_output["metrics"]["saved_id"] == "saved-123"
 
 
