@@ -198,14 +198,12 @@ def create_care_plan_batch(user_id: str):
                 input_failed = False
                 for chunk in pipeline(text, metrics, grading_enabled):
                     if isinstance(chunk, tuple) and chunk and chunk[0] == RESULT_SENTINEL:
-                        _, care_plan, grading, _raw_text, _clarified_text, before_score, after_score = chunk
+                        _, care_plan, grading, _raw_text, _clarified_text = chunk
                         envelope = CarePlanInternal(
                             metrics=metrics,
                             input=input_model,
                             grading=grading,
                             care_plan=care_plan,
-                            before_score=before_score,
-                            after_score=after_score,
                         )
                         result_data = envelope.to_dict()
                         continue

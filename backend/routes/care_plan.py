@@ -29,7 +29,7 @@ from flask import Blueprint, Response, g, request, stream_with_context
 from google.cloud import storage as gcs
 
 from config import CARE_PLAN_DEFAULT_VERSION
-from simplify.v1_2.pipeline import V1_2Pipeline
+from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.firebase import save_care_plan_output, verify_firebase_token
 from utils.scoring import score_text
@@ -345,7 +345,7 @@ def _derive_output_name(result: dict, resolved: "ResolvedInput") -> str:
 def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -> Generator[str | tuple, None, None]:
     try:
         try:
-            pipeline = V1_2Pipeline()
+            pipeline = CarePlanV1_2Pipeline()
         except Exception as e:
             yield _sse({"step": "error", "error": f"Failed to initialize pipeline: {e}"})
             return
@@ -469,7 +469,7 @@ def run_care_plan_pipeline(text: str, metrics: Metrics, grading_enabled: bool) -
 
         # Non-SSE sentinel: the route intercepts these typed objects and is
         # the only layer that composes/serializes the response envelope.
-        yield (RESULT_SENTINEL, care_plan, grading, text, clarified, before_score, after_score)
+        yield (RESULT_SENTINEL, care_plan, grading, text, clarified)
 
     except Exception as exc:
         def _pipeline_fail(scope):
@@ -548,14 +548,12 @@ def _care_plan_stream(user_id: str, version: str):
         if pipeline_result is None:
             return
 
-        _, care_plan, grading, _raw_text, _clarified_text, before_score, after_score = pipeline_result
+        _, care_plan, grading, _raw_text, _clarified_text = pipeline_result
         envelope = CarePlanInternal(
             metrics=metrics,
             input=input_model,
             grading=grading,
             care_plan=care_plan,
-            before_score=before_score,
-            after_score=after_score,
         )
         payload = envelope.to_dict()
 
