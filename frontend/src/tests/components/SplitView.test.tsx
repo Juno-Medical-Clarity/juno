@@ -1,19 +1,19 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
-import SplitView from './SplitView';
+import SplitView from '../../components/SplitView';
 
 // Mock getInputPdfUrl so no real HTTP calls are made
-vi.mock('../api/savedOutputs', () => ({
+vi.mock('../../api/savedOutputs', () => ({
   getInputPdfUrl: vi.fn(),
 }));
 
 // Mock firebase so the module resolves without SDK initialisation
-vi.mock('../api/firebase', () => ({
+vi.mock('../../api/firebase', () => ({
   firebaseAuth: { currentUser: null },
   API_URL: 'http://localhost:8082',
 }));
 
-import { getInputPdfUrl } from '../api/savedOutputs';
+import { getInputPdfUrl } from '../../api/savedOutputs';
 const mockedGetInputPdfUrl = getInputPdfUrl as ReturnType<typeof vi.fn>;
 
 const noop = () => {};

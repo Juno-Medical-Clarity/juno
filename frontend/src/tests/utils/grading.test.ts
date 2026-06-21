@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { patientScoreFromGrading, methodEntriesFromGrading } from './grading';
-import type { Grading } from '../types/envelope';
+import { patientScoreFromGrading, methodEntriesFromGrading } from '../../utils/grading';
+import type { Grading } from '../../types/envelope';
 
 function makeDimensions() {
   return {

@@ -6,10 +6,10 @@
  */
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import CarePlanView from './CarePlanView';
-import type { SimplifiedCarePlan, Grading } from '../types/envelope';
+import CarePlanView from '../../components/CarePlanView';
+import type { SimplifiedCarePlan, Grading } from '../../types/envelope';
 
-vi.mock('../api/firebase', () => ({
+vi.mock('../../api/firebase', () => ({
   firebaseAuth: { currentUser: null },
   API_URL: 'http://localhost:8082',
 }));

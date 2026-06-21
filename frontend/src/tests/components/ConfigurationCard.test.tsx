@@ -1,10 +1,10 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import ConfigurationCard from './ConfigurationCard';
+import ConfigurationCard from '../../components/ConfigurationCard';
 
 // No firebase imports in ConfigurationCard, but mock for safety
-vi.mock('../api/firebase', () => ({
+vi.mock('../../api/firebase', () => ({
   firebaseAuth: { currentUser: null },
   API_URL: 'http://localhost:8082',
 }));

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { buildPdfHtml, escapeHtml } from './buildPdfHtml';
-import type { SimplifiedCarePlan } from '../types/envelope';
+import { buildPdfHtml, escapeHtml } from '../../utils/buildPdfHtml';
+import type { SimplifiedCarePlan } from '../../types/envelope';
 
 function makeMinimalPlan(overrides: Partial<SimplifiedCarePlan> = {}): SimplifiedCarePlan {
   return {

@@ -1,14 +1,14 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 // Mock firebase before importing anything that depends on it
-vi.mock('./firebase', () => ({
+vi.mock('../../api/firebase', () => ({
   firebaseAuth: {
     currentUser: { getIdToken: async () => 'test-token' },
   },
   API_URL: 'http://localhost:8082',
 }));
 
-import { listSavedOutputs, getSavedOutput, renameSavedOutput, deleteSavedOutput } from './savedOutputs';
+import { listSavedOutputs, getSavedOutput, renameSavedOutput, deleteSavedOutput } from '../../api/savedOutputs';
 
 function makeResponse(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body), {

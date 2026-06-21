@@ -1,6 +1,6 @@
 import { afterAll, beforeAll, describe, it, expect, vi } from 'vitest';
-import { formatDateKey, groupSavedOutputs, localDateKey } from './groupSavedOutputs';
-import type { SavedOutputMeta } from './groupSavedOutputs';
+import { formatDateKey, groupSavedOutputs, localDateKey } from '../../utils/groupSavedOutputs';
+import type { SavedOutputMeta } from '../../utils/groupSavedOutputs';
 
 function makeOutput(overrides: Partial<SavedOutputMeta> & { id: string }): SavedOutputMeta {
   return {

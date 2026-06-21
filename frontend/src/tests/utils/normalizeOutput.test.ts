@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { normalizeCarePlanOutput } from './normalizeOutput';
+import { normalizeCarePlanOutput } from '../../utils/normalizeOutput';
 
 describe('normalizeCarePlanOutput', () => {
   it('fills required grading fields for legacy outputs', () => {

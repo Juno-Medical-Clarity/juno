@@ -1,13 +1,13 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 // Mock firebase before importing apiClient so the module initializes with the mock
-vi.mock('./firebase', () => ({
+vi.mock('../../api/firebase', () => ({
   firebaseAuth: { currentUser: null },
   API_URL: 'http://localhost:8082',
 }));
 
-import { authenticatedFetch } from './apiClient';
-import * as firebaseModule from './firebase';
+import { authenticatedFetch } from '../../api/apiClient';
+import * as firebaseModule from '../../api/firebase';
 
 describe('authenticatedFetch', () => {
   let fetchSpy: ReturnType<typeof vi.spyOn>;

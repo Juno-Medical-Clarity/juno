@@ -1,11 +1,11 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import OutputGradingCard from './OutputGradingCard';
-import type { CarePlanInternal, Grading } from '../types/envelope';
+import OutputGradingCard from '../../components/OutputGradingCard';
+import type { CarePlanInternal, Grading } from '../../types/envelope';
 
 // Mock firebase so no real SDK initializes
-vi.mock('../api/firebase', () => ({
+vi.mock('../../api/firebase', () => ({
   firebaseAuth: {
     currentUser: { getIdToken: async () => 'test-token' },
   },

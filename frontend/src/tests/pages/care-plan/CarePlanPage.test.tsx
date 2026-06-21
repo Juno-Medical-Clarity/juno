@@ -6,11 +6,11 @@
  * These functions determine whether a "Show Original" button is surfaced.
  */
 import { describe, it, expect, vi } from 'vitest';
-import { outputHasInputPdf, outputHasInputText } from './CarePlanPage';
-import type { CarePlanInternal, SimplifiedCarePlan, Grading } from '../../types/envelope';
+import { outputHasInputPdf, outputHasInputText } from '../../../pages/care-plan/CarePlanPage';
+import type { CarePlanInternal, SimplifiedCarePlan, Grading } from '../../../types/envelope';
 
 // CarePlanPage imports heavy dependencies — mock them all so the module loads cleanly.
-vi.mock('../../api/firebase', () => ({
+vi.mock('../../../api/firebase', () => ({
   firebaseAuth: { currentUser: null },
   API_URL: 'http://localhost:8082',
 }));
@@ -20,20 +20,20 @@ vi.mock('react-router-dom', () => ({
   useNavigate: () => vi.fn(),
 }));
 
-vi.mock('../../api/savedOutputs', () => ({
+vi.mock('../../../api/savedOutputs', () => ({
   getSavedOutput: vi.fn(),
   getInputPdfUrl: vi.fn(),
 }));
 
-vi.mock('../../api/datasets', () => ({
+vi.mock('../../../api/datasets', () => ({
   runBatch: vi.fn(),
 }));
 
-vi.mock('../../api/apiClient', () => ({
+vi.mock('../../../api/apiClient', () => ({
   authenticatedFetch: vi.fn(),
 }));
 
-vi.mock('../../utils/logger', () => ({
+vi.mock('../../../utils/logger', () => ({
   logger: { setSessionId: vi.fn(), info: vi.fn() },
 }));
 
