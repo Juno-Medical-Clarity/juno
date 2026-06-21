@@ -17,7 +17,7 @@ import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
-import { CARE_PLAN_API_PATH, DEFAULT_VERSION } from '../../config';
+import { CARE_PLAN_API_PATH, DEFAULT_VERSION } from '../../constants';
 import type { VersionRouteState } from '../../router';
 import { logger } from '../../utils/logger';
 
