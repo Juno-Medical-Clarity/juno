@@ -74,13 +74,11 @@ describe('getSavedOutput', () => {
       updated_at: '2026-06-01T00:00:00Z',
       batch_group_id: null,
       output_data: {},
-      input_pdf_gcs: 'gs://bucket/path',
     };
     fetchSpy.mockResolvedValueOnce(makeResponse(mockOutput));
 
     const result = await getSavedOutput('xyz');
     expect(result.id).toBe('xyz');
-    expect(result.input_pdf_gcs).toBe('gs://bucket/path');
 
     const [url] = fetchSpy.mock.calls[0] as [string, unknown];
     expect(url).toContain('/care_plan/saved/xyz');

@@ -12,7 +12,6 @@ export interface SavedOutputMeta {
 
 export interface SavedOutput extends SavedOutputMeta {
   output_data: Record<string, unknown>;
-  input_pdf_gcs: string;
 }
 
 export async function listSavedOutputs(): Promise<SavedOutputMeta[]> {
