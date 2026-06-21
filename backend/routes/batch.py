@@ -196,7 +196,7 @@ def create_care_plan_batch(user_id: str):
 
                 result_data = None
                 input_failed = False
-                for chunk in pipeline(text, metrics, grading_enabled):
+                for chunk in pipeline(text, metrics, grading_enabled, is_batch=True, source_kind="batch_dataset"):
                     if isinstance(chunk, tuple) and chunk and chunk[0] == RESULT_SENTINEL:
                         _, care_plan, grading, _raw_text, _clarified_text = chunk
                         envelope = CarePlanInternal(
