@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import { listDatasets } from '../api/datasets';
-import type { BatchDatasetSelection, Dataset } from '../types/datasets';
-import DatasetGroupRow, { type DatasetGroupSelection } from './DatasetGroupRow';
+import { listDatasets } from '../../api/datasets';
+import type { BatchDatasetSelection, Dataset } from '../../types/datasets';
+import DatasetGroupRow, { type DatasetGroupSelection } from '../DatasetGroupRow';
 import './PresetDataCard.css';
 
 interface PresetDataCardProps {

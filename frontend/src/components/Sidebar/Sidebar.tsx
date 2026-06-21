@@ -5,8 +5,8 @@ import {
   renameSavedOutput,
   deleteSavedOutput,
   type SavedOutputMeta,
-} from '../api/savedOutputs';
-import { formatDateKey, groupSavedOutputs, localDateKey } from '../utils/groupSavedOutputs';
+} from '../../api/savedOutputs';
+import { formatDateKey, groupSavedOutputs, localDateKey } from '../../utils/groupSavedOutputs';
 
 interface SidebarProps {
   activeId: string | null;

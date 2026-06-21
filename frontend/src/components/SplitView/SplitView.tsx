@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './SplitView.css';
-import { getInputPdfUrl } from '../api/savedOutputs';
+import { getInputPdfUrl } from '../../api/savedOutputs';
 
 interface SplitViewProps {
   savedId: string | null;          // non-null → fetch signed URL for PDF iframe
