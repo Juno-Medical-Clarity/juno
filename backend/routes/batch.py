@@ -10,13 +10,13 @@ from config import CARE_PLAN_DEFAULT_VERSION
 from models.envelope import CarePlanInternal
 from models.input import BatchDatasetInput
 from models.metrics import Metrics
-from routes.care_plan import ALLOWED_VERSIONS, RESULT_SENTINEL, _extract_text_from_bytes, run_care_plan_pipeline
+from utils.constants import Constants
+from routes.care_plan import _extract_text_from_bytes, run_care_plan_pipeline
 from utils.firebase import verify_firebase_token, save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
 
 
 batch_bp = Blueprint("batch", __name__)
-MAX_BATCH_RUNS = 50
 
 
 def _sse(payload: dict) -> str:
@@ -40,7 +40,7 @@ def _grading_enabled(raw_value) -> bool:
 
 
 def _pipeline_for_version(version: str) -> Callable[[str, Metrics, bool], Generator[str | tuple, None, None]]:
-    if version == "v1-2":
+    if version == Constants.PIPELINE_VERSION_V1_2:
         return run_care_plan_pipeline
     raise ValueError(f"Unknown version '{version}'")
 
@@ -131,7 +131,7 @@ def create_care_plan_batch(user_id: str):
                 return
 
             version = body.get("version", CARE_PLAN_DEFAULT_VERSION)
-            if not isinstance(version, str) or version not in ALLOWED_VERSIONS:
+            if not isinstance(version, str) or version not in Constants.ALLOWED_VERSIONS:
                 yield _sse({"step": "error", "error": f"Unknown version '{version}'"})
                 return
 
@@ -144,8 +144,8 @@ def create_care_plan_batch(user_id: str):
             pipeline = _pipeline_for_version(version)
             runs = _resolve_requested_runs(selections)
             total = len(runs)
-            if total > MAX_BATCH_RUNS:
-                yield _sse({"step": "error", "error": f"Batch request exceeds maximum of {MAX_BATCH_RUNS} runs"})
+            if total > Constants.MAX_BATCH_RUNS:
+                yield _sse({"step": "error", "error": f"Batch request exceeds maximum of {Constants.MAX_BATCH_RUNS} runs"})
                 return
 
             timestamp = _batch_timestamp()
@@ -197,7 +197,7 @@ def create_care_plan_batch(user_id: str):
                 result_data = None
                 input_failed = False
                 for chunk in pipeline(text, metrics, grading_enabled, is_batch=True, source_kind="batch_dataset"):
-                    if isinstance(chunk, tuple) and chunk and chunk[0] == RESULT_SENTINEL:
+                    if isinstance(chunk, tuple) and chunk and chunk[0] == Constants.RESULT_SENTINEL:
                         _, care_plan, grading, _raw_text, _clarified_text = chunk
                         envelope = CarePlanInternal(
                             metrics=metrics,
