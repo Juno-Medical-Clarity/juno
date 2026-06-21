@@ -315,7 +315,7 @@ for chunk in pipeline(text, metrics, grading_enabled):
 
 **New:**
 ```python
-for chunk in pipeline(text, metrics, grading_enabled, is_batch=True):
+for chunk in pipeline(text, metrics, grading_enabled, is_batch=True, source_kind="batch_dataset"):
 ```
 
 No other changes to `routes/batch.py`. The batch route constructs its own `Metrics` and
@@ -526,13 +526,7 @@ No code changes are required for the above; they are Cloud Console configuration
    note on batch_dataset. See Open Q3 for a possible improvement.]`
 
 3. **Should batch runs set `source_kind="batch_dataset"` on the pipeline marker?**
-   `[OPEN: Currently the batch route does not pass source_kind, so it defaults to "upload" in
-   run_care_plan_pipeline. This is technically inaccurate — batch inputs come from preset datasets,
-   not user uploads. Options: (a) also add source_kind="batch_dataset" to the batch.py call-site
-   (one-line addition), or (b) leave the default since is_batch=True already identifies the batch
-   case and the combination "upload + is_batch=True" is not ambiguous in queries. Recommendation:
-   (a) is cleaner — the implementer should also pass source_kind="batch_dataset" from batch.py
-   and this PRD permits it as a low-risk addition to the batch call-site change in §4.6.]`
+   `[RESOLVED: (a) — also pass source_kind="batch_dataset" from routes/batch.py at the run_care_plan_pipeline call-site (§4.6). This is a one-line addition alongside is_batch=True and produces accurate dimensions in Cloud Monitoring queries.]`
 
 4. **`file_count` and `file_types` for the `doc_id` case — single file but `source_kind="doc_id"`.**
    `[RESOLVED: doc_id resolves to a single file fetched from GCS but we classify it as

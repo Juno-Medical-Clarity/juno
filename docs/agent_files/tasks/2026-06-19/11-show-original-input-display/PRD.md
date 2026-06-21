@@ -271,15 +271,24 @@ export interface DocIdInput {
   doc_id: string;
 }
 
-export type Input = FileInput | TextInput | DocIdInput;
+export interface BatchDatasetInput {
+  mode: 'batch_dataset';
+  text: string;
+  dataset_group: string;
+  dataset_input: string;
+  selected_files: string[];
+  batch_group_id: string;
+}
+
+export type Input = FileInput | TextInput | DocIdInput | BatchDatasetInput;
 ```
 
 `CarePlanInternal.input` changes from `Input` (old flat) to the new `Input` union. All callers that
 read `input.text`, `input.files`, or `input.mode` must narrow with a type guard or discriminant
 check.
 
-> Note: if SP-08 also ships a `batch_dataset` mode variant distinct from `TextInput`, use whatever
-> mode literal SP-08 decides. The FE type must match the backend wire exactly.
+SP-08 confirms `BatchDatasetInput` is a fourth distinct variant with `mode: "batch_dataset"`.
+The FE `Input` union includes all four variants to match the backend wire exactly.
 
 ### 4.7 `frontend/src/pages/care-plan/CarePlanPage.tsx` — update show-original conditions
 
@@ -305,7 +314,9 @@ function outputHasInputPdf(output: CarePlanInternal): boolean {
 
 ```typescript
 function outputHasInputText(output: CarePlanInternal): boolean {
-  return output.input.mode === 'text' && typeof output.input.text === 'string' && output.input.text.length > 0;
+  return (output.input.mode === 'text' || output.input.mode === 'batch_dataset')
+    && typeof output.input.text === 'string'
+    && output.input.text.length > 0;
 }
 ```
 
@@ -583,28 +594,13 @@ before; now the field is not written at all).
    (`outputHasInputPdf` and `outputHasInputText` both return false for that mode).
 
 2. **`batch_dataset` as a distinct mode vs. `TextInput` with extra fields.**
-   `[OPEN]` — SP-08 will resolve whether batch inputs use `mode: "batch_dataset"` as their own
-   discriminant value or `mode: "text"` with extra fields (`dataset_group`, `dataset_input`, etc.).
-   The current backend `Input.from_batch_dataset` sets `mode="text"` with extra fields. SP-11's
-   `outputHasInputText` checks `mode === 'text'`, which covers both plain text and batch inputs
-   under the current scheme. If SP-08 introduces `mode: "batch_dataset"`, SP-11 must add that
-   literal to `outputHasInputText` and add a `BatchDatasetInput` variant to the FE union.
-   **SP-11 implementer: confirm SP-08's decision before finalizing `envelope.ts`.**
+   `[RESOLVED: SP-08 introduces `mode: "batch_dataset"` as its own discriminant via `BatchDatasetInput`. The FE union must include `BatchDatasetInput` as a fourth variant alongside `FileInput`, `TextInput`, and `DocIdInput`. `outputHasInputText` in SP-11 must check BOTH `mode === 'text'` AND `mode === 'batch_dataset'` to show "Show Original" for both plain-text and batch-dataset inputs. The `Input` type alias in `envelope.ts` becomes `FileInput | TextInput | DocIdInput | BatchDatasetInput`.]`
 
 3. **Re-serialization timing in `care_plan.py` save block.**
-   `[OPEN]` — The current route calls `payload = envelope.to_dict()` at line 560 before entering
-   the `_save` closure. SP-11 requires `pdf_gcs_url` to be set on `input_model` **before**
-   serialization. The implementer must ensure `envelope.to_dict()` (or a fresh `input_model.to_dict()`
-   splice into the payload) is called after the mutation. The cleanest approach is to defer
-   `envelope.to_dict()` into the `_save` closure so the full payload (including `pdf_gcs_url`) is
-   produced atomically with the save. If moving the call creates SSE timing issues (the result SSE
-   also uses `payload`), the alternative is to update `payload["input"]["pdf_gcs_url"]` in-place
-   after the GCS upload — both are acceptable; choose whichever the dev finds cleaner.
+   `[RESOLVED: Defer `envelope.to_dict()` into the `_save` closure. Move the `payload = envelope.to_dict()` call to inside `_save`, after setting `input_model.pdf_gcs_url = gcs_uri`. This produces the full payload (including `pdf_gcs_url`) atomically with the save. The SSE result event must also use this deferred payload — verify that the `yield _sse({"step": "result", "data": payload})` at the end of the route references the same payload object produced inside `_save`.]`
 
 4. **SplitView CSS panel height for text mode.**
-   `[OPEN]` — The existing iframe panel fills its container via CSS. The new `<pre>` text panel
-   needs a matching height + scroll. The suggested rule is in §4.8 but has not been design-reviewed.
-   Confirm with the design system before shipping.
+   `[RESOLVED: Use the styles suggested in §4.8: `height: 100%; overflow-y: auto; padding: 16px; font-size: 0.875rem; line-height: 1.6;` for `.split-view-text-content`. This mirrors the iframe panel's scroll behavior. Will be reviewed after first deploy.]`
 
 5. **`SavedOutput.input_pdf_gcs` type in `savedOutputs.ts` for legacy reads.**
    `[RESOLVED: REMOVE IT]` — The FE `SavedOutput` interface had `input_pdf_gcs: string` as a
