@@ -8,7 +8,7 @@ from flask import Blueprint, Response, g, request, stream_with_context
 
 from config import CARE_PLAN_DEFAULT_VERSION
 from models.envelope import CarePlanInternal
-from models.input import Input
+from models.input import BatchDatasetInput
 from models.metrics import Metrics
 from routes.care_plan import ALLOWED_VERSIONS, RESULT_SENTINEL, _extract_text_from_bytes, run_care_plan_pipeline
 from utils.firebase import verify_firebase_token, save_care_plan_output
@@ -186,7 +186,7 @@ def create_care_plan_batch(user_id: str):
                     pipeline_version=version,
                     input_type="batch_dataset",
                 )
-                input_model = Input.from_batch_dataset(
+                input_model = BatchDatasetInput(
                     text=text,
                     dataset_group=group,
                     dataset_input=input_id,
