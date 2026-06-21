@@ -1,7 +1,7 @@
 """Backend model exports."""
 
 from .base import JsonModel, VersionedModel
-from .care_plan import CarePlan, CarePlanV1_2, CarePlanV1_2StructuredLLM
+from .care_plan import CarePlan
 from .envelope import CarePlanInternal, is_legacy_shape
 from .grading import Grading, GradingEntry, build_grading
 from .input import Input, InputFile
@@ -11,8 +11,6 @@ __all__ = [
     "JsonModel",
     "VersionedModel",
     "CarePlan",
-    "CarePlanV1_2",
-    "CarePlanV1_2StructuredLLM",
     "CarePlanInternal",
     "is_legacy_shape",
     "Grading",
