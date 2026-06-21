@@ -113,26 +113,13 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
                 f"- \"{a['term']}\" -> \"{a['expansion']}\""
                 for a in abbreviations[:30]
             )
-            abbreviation_section = f"""
-If any of these abbreviations remain in the text, expand them:
-{abbrev_list}
-"""
-        prompt = f"""You are a health literacy expert helping patients understand what they need to do.
-
-Review the text below and:
-1. Use active voice throughout.
-2. Address the patient as "you."
-3. Start every patient action with a clear verb: Take / Call / Schedule / Ask / Bring / Watch / Avoid / Continue / Stop.
-4. Do not fabricate numbers. Do not convert vague wording into exact numbers unless the source contains the exact number.
-5. Do not add urgency unless the source implies urgency.
-6. Do not create new medical advice.
-7. Break multi-step instructions into separate steps.
-8. Output only the improved text; no commentary, no headings.
-{abbreviation_section}
-TEXT:
-{text}
-
-IMPROVED TEXT:"""
+            abbreviation_section = (
+                f"\nIf any of these abbreviations remain in the text, expand them:\n{abbrev_list}\n"
+            )
+        prompt = _CLARIFY_PROMPT.format(
+            abbreviation_section=abbreviation_section,
+            text=text,
+        )
         return self._generate_text(prompt, temperature=0.2, max_tokens=16384)
 
     def structure_appointment_note(self, text: str) -> dict:
