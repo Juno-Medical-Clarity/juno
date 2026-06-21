@@ -588,28 +588,25 @@ def _care_plan_stream(user_id: str, version: str):
             grading=grading,
             care_plan=care_plan,
         )
-        payload = envelope.to_dict()
+        _payload_holder: list[dict] = []
 
         if resolved.source_kind != "doc_id":
             def _save(scope):
                 JunoContext.from_g(function="save_output").apply(scope)
                 try:
-                    input_pdf_gcs = None
                     if resolved.combined_pdf_bytes:
-                        input_pdf_gcs = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
-                    elif resolved.source_kind not in ("text", "doc_id"):
-                        logger.warning(
-                            "care_plan: combined_pdf_bytes is None for source_kind=%s — "
-                            "input PDF will not be stored",
-                            resolved.source_kind,
-                        )
+                        gcs_uri = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
+                        if isinstance(input_model, FileInput):
+                            input_model.pdf_gcs_url = gcs_uri
+
+                    payload = envelope.to_dict()
+                    _payload_holder.append(payload)
 
                     care_plan_data = payload.get("care_plan", {})
                     saved_id = save_care_plan_output(
                         user_id=user_id,
                         name=_derive_output_name(care_plan_data, resolved),
                         source_filename=resolved.source_filename,
-                        input_pdf_gcs=input_pdf_gcs,
                         output_data=payload,
                     )
                     metrics.saved_id = saved_id
@@ -620,7 +617,10 @@ def _care_plan_stream(user_id: str, version: str):
                     _juno_error_logger.error("care_plan: failed to save output - continuing without saved_id: %s", exc)
                     scope.mark_failed()
             Markers.CarePlan.SaveOutput.execute(_save)
+        else:
+            _payload_holder.append(envelope.to_dict())
 
+        payload = _payload_holder[0] if _payload_holder else envelope.to_dict()
         yield _sse({"step": "result", "data": payload})
     except Exception as exc:
         logger.exception("care_plan: unexpected pipeline error")
