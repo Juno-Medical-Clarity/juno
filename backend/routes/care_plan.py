@@ -521,6 +521,17 @@ def _care_plan_stream(user_id: str, version: str):
                 resolved = _resolve_input()
                 scope.add("source_kind", resolved.source_kind)
                 scope.add("input_chars", len(resolved.text))
+                if resolved.source_kind == "upload" and resolved.source_filename:
+                    filenames = [f.strip() for f in resolved.source_filename.split(",") if f.strip()]
+                    scope.add("file_count", len(filenames))
+                    extensions = ",".join(
+                        f.rsplit(".", 1)[1].lower() if "." in f else ""
+                        for f in filenames
+                    )
+                    scope.add("file_types", extensions)
+                else:
+                    scope.add("file_count", 0)
+                    scope.add("file_types", "")
                 return resolved
             resolved = Markers.CarePlan.ReadInput.execute(_read)
         except Exception as exc:
