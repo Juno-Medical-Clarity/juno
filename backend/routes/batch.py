@@ -250,7 +250,6 @@ def create_care_plan_batch(user_id: str):
                     user_id=user_id,
                     name=_output_name(result_data, group, input_id),
                     source_filename=source_filename,
-                    input_pdf_gcs=None,
                     output_data=result_data,
                     dataset_group=group,
                     batch_group_id=batch_group_id,
