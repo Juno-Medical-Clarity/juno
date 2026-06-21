@@ -1,3 +1,4 @@
+import enum
 from datetime import datetime, timezone
 from typing import Literal
 
@@ -24,14 +25,13 @@ class Grading(JsonModel):
     graded_at: str | None = None
 
 
-_METHOD_REASONING = {
-    "smog":           "SMOG (McLaughlin 1969) — counts polysyllabic words; designed for health materials",
-    "flesch_kincaid": "Flesch-Kincaid Reading Ease + Grade Level (1975) — sentence length × syllable load",
-    "dale_chall":     "Dale-Chall (1948/1995) — difficult words outside the 3,000 familiar-word list",
-    "pemat":          "PEMAT (AHRQ 2013) — automated approximation of items 3,8,14,21-22 (understandability) and 27-33 (actionability)",
-    "sam":            "SAM (Doak et al. 1996) — automated approximation of content, literacy demand, and layout/typography domains",
-    "cdc_cci":        "CDC Clear Communication Index — automated approximation of main message, behavioral recommendations, numbers, and call-to-action items",
-}
+class GradingMethodReason(str, enum.Enum):
+    smog           = "SMOG (McLaughlin 1969) — counts polysyllabic words; designed for health materials"
+    flesch_kincaid = "Flesch-Kincaid Reading Ease + Grade Level (1975) — sentence length × syllable load"
+    dale_chall     = "Dale-Chall (1948/1995) — difficult words outside the 3,000 familiar-word list"
+    pemat          = "PEMAT (AHRQ 2013) — automated approximation of items 3,8,14,21-22 (understandability) and 27-33 (actionability)"
+    sam            = "SAM (Doak et al. 1996) — automated approximation of content, literacy demand, and layout/typography domains"
+    cdc_cci        = "CDC Clear Communication Index — automated approximation of main message, behavioral recommendations, numbers, and call-to-action items"
 
 
 def build_grading(
@@ -56,7 +56,7 @@ def build_grading(
                 target=target,
                 grade=m["score"],
                 grade_breakdown=breakdown,
-                reasoning=_METHOD_REASONING[method_name],
+                reasoning=GradingMethodReason[method_name].value,
             ))
         entries.append(GradingEntry(
             name="combined",
