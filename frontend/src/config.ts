@@ -1,6 +1,4 @@
-export const CARE_PLAN_API_PATH = '/care_plan';
-
-export const DEFAULT_VERSION = 'v1-2';
+export { CARE_PLAN_API_PATH, DEFAULT_VERSION } from './constants';
 
 // Static list rendered by VersionsPage. Append a second entry (e.g. v1-3) to add a version later.
 export const VERSIONS = [
