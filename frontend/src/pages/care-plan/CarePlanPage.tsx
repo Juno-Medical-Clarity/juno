@@ -49,9 +49,13 @@ function resetSteps(): PipelineStep[] {
 }
 
 function outputHasInputPdf(output: CarePlanInternal): boolean {
-  return output.input.mode === 'file' && output.input.files.some(file => (
-    file.content_type === 'application/pdf' || file.filename.toLowerCase().endsWith('.pdf')
-  ));
+  return output.input.mode === 'file' && output.input.pdf_gcs_url != null;
+}
+
+function outputHasInputText(output: CarePlanInternal): boolean {
+  return (output.input.mode === 'text' || output.input.mode === 'batch_dataset')
+    && typeof output.input.text === 'string'
+    && output.input.text.length > 0;
 }
 
 export default function CarePlanPage() {
@@ -515,7 +519,7 @@ export default function CarePlanPage() {
               <div className="result-header">
                 <h2 className="result-title">Your Care Plan</h2>
                 <span className="deleted-note">🔒 Deleted from servers</span>
-                {activeSavedId && result && outputHasInputPdf(result) && (
+                {activeSavedId && result && (outputHasInputPdf(result) || outputHasInputText(result)) && (
                   <button
                     onClick={() => setShowSplitView(true)}
                     style={{
@@ -620,9 +624,14 @@ export default function CarePlanPage() {
       </div>
       </div>
       </div>
-      {showSplitView && result && activeSavedId && (
+      {showSplitView && result && (
         <SplitView
-          savedId={activeSavedId}
+          savedId={result.input.mode === 'file' ? activeSavedId : null}
+          originalText={
+            (result.input.mode === 'text' || result.input.mode === 'batch_dataset')
+              ? result.input.text ?? null
+              : null
+          }
           simplifiedContent={<CarePlanView result={result.care_plan} grading={result.grading} />}
           onClose={() => setShowSplitView(false)}
         />
