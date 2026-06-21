@@ -29,6 +29,7 @@ from flask import Blueprint, Response, g, request, stream_with_context
 from google.cloud import storage as gcs
 
 from config import CARE_PLAN_DEFAULT_VERSION
+from utils.constants import Constants
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.firebase import save_care_plan_output, verify_firebase_token
@@ -48,27 +49,12 @@ logger = logging.getLogger(__name__)
 _juno_error_logger = logging.getLogger("utils.juno_logger")
 
 care_plan_bp = Blueprint("care_plan", __name__)
-RESULT_SENTINEL = "__result__"
-
-STEPS = {
-    1: "Reading your note",
-    2: "Finding difficult and medical terms",
-    3: "Simplifying language",
-    4: "Clarifying actions and numbers",
-    5: "Organizing your care plan",
-}
-
-ALLOWED_EXTENSIONS = {"pdf", "txt", "docx"}
-MAX_FILE_BYTES = 10 * 1024 * 1024  # 10 MB
-MAX_FILE_COUNT = 10
-MAX_AGGREGATE_FILE_BYTES = 25 * 1024 * 1024  # 25 MB
-_GCS_BUCKET_NAME = os.environ.get("GCP_BUCKET_NAME", "")
 _UPLOAD_PREFIX = "care_plan-uploads"
 
 
 def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     """Upload combined input PDF bytes and return a gs:// URI."""
-    bucket_name = os.environ.get("GCP_BUCKET_NAME", "")
+    bucket_name = os.environ.get(Constants.GCS_BUCKET_ENV_VAR, "")
     if not bucket_name:
         raise RuntimeError("GCP_BUCKET_NAME is not configured")
 
@@ -98,7 +84,7 @@ def _sse(payload: dict) -> str:
 
 
 def _allowed(filename: str) -> bool:
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in Constants.ALLOWED_EXTENSIONS
 
 
 def _extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
@@ -138,8 +124,8 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
     files = [upload for upload in uploads if upload and upload.filename]
     if not files:
         raise ValueError("Uploaded file is missing a filename")
-    if len(files) > MAX_FILE_COUNT:
-        raise ValueError(f"Upload supports at most {MAX_FILE_COUNT} files")
+    if len(files) > Constants.MAX_FILE_COUNT:
+        raise ValueError(f"Upload supports at most {Constants.MAX_FILE_COUNT} files")
 
     text_parts: list[str] = []
     merge_candidates: list[tuple[bytes, str]] = []
@@ -152,11 +138,11 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
             raise ValueError("File must be PDF, TXT, or DOCX")
 
         file_bytes = upload.read()
-        if len(file_bytes) > MAX_FILE_BYTES:
+        if len(file_bytes) > Constants.MAX_FILE_BYTES:
             raise ValueError("File exceeds 10 MB limit")
         aggregate_bytes += len(file_bytes)
-        if aggregate_bytes > MAX_AGGREGATE_FILE_BYTES:
-            limit_mb = MAX_AGGREGATE_FILE_BYTES // (1024 * 1024)
+        if aggregate_bytes > Constants.MAX_AGGREGATE_FILE_BYTES:
+            limit_mb = Constants.MAX_AGGREGATE_FILE_BYTES // (1024 * 1024)
             raise ValueError(f"combined upload size exceeds {limit_mb} MB limit")
 
         filenames.append(filename)
@@ -189,12 +175,13 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
 
 def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     """Fetch uploaded file bytes from GCS by doc_id. Returns (bytes, filename)."""
-    if not _GCS_BUCKET_NAME:
+    _gcs_bucket_name = os.environ.get(Constants.GCS_BUCKET_ENV_VAR, "")
+    if not _gcs_bucket_name:
         raise RuntimeError("GCP_BUCKET_NAME is not configured")
 
     project_id = os.environ.get("GCP_PROJECT_ID", "")
     client = gcs.Client(project=project_id or None)
-    bucket = client.bucket(_GCS_BUCKET_NAME)
+    bucket = client.bucket(_gcs_bucket_name)
     prefix = f"{_UPLOAD_PREFIX}/{doc_id}/"
     blobs = list(bucket.list_blobs(prefix=prefix))
 
@@ -236,7 +223,7 @@ def _resolve_input() -> ResolvedInput:
         file_bytes, filename = _fetch_from_gcs(doc_id)
         if not _allowed(filename):
             raise ValueError("Stored file must be PDF, TXT, or DOCX")
-        if len(file_bytes) > MAX_FILE_BYTES:
+        if len(file_bytes) > Constants.MAX_FILE_BYTES:
             raise ValueError("Stored file exceeds 10 MB limit")
 
         combined_pdf_bytes = None
@@ -357,7 +344,7 @@ def run_care_plan_pipeline(
             return
 
         # Step 2: Term detection (deterministic; no LLM)
-        yield _sse({"step": 2, "status": "active", "label": STEPS[2]})
+        yield _sse({"step": 2, "status": "active", "label": Constants.STEPS[2]})
         try:
             def _find(scope):
                 JunoContext.from_g(function="find_medical_terms").apply(scope)
@@ -380,10 +367,10 @@ def run_care_plan_pipeline(
         except Exception as exc:
             logger.exception("care_plan: term detection outer error")
             term_data = {"substitution_candidates": [], "preserve_and_define_terms": [], "abbreviations": []}
-        yield _sse({"step": 2, "status": "done", "label": STEPS[2]})
+        yield _sse({"step": 2, "status": "done", "label": Constants.STEPS[2]})
 
         # Step 3: Simplify language
-        yield _sse({"step": 3, "status": "active", "label": STEPS[3]})
+        yield _sse({"step": 3, "status": "active", "label": Constants.STEPS[3]})
         try:
             def _simplify(scope):
                 JunoContext.from_g(function="simplify_language").apply(scope)
@@ -404,10 +391,10 @@ def run_care_plan_pipeline(
             logger.exception("care_plan: simplification failed")
             yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
             return
-        yield _sse({"step": 3, "status": "done", "label": STEPS[3]})
+        yield _sse({"step": 3, "status": "done", "label": Constants.STEPS[3]})
 
         # Step 4: Clarify actions and numbers
-        yield _sse({"step": 4, "status": "active", "label": STEPS[4]})
+        yield _sse({"step": 4, "status": "active", "label": Constants.STEPS[4]})
         try:
             def _clarify(scope):
                 JunoContext.from_g(function="clarify_actions").apply(scope)
@@ -426,10 +413,10 @@ def run_care_plan_pipeline(
         except Exception as exc:
             logger.exception("care_plan: clarify outer error")
             clarified = simplified
-        yield _sse({"step": 4, "status": "done", "label": STEPS[4]})
+        yield _sse({"step": 4, "status": "done", "label": Constants.STEPS[4]})
 
         # Step 5: Structure appointment note
-        yield _sse({"step": 5, "status": "active", "label": STEPS[5]})
+        yield _sse({"step": 5, "status": "active", "label": Constants.STEPS[5]})
         try:
             def _structure(scope):
                 JunoContext.from_g(function="structure_note").apply(scope)
@@ -444,7 +431,7 @@ def run_care_plan_pipeline(
             logger.exception("care_plan: structuring failed")
             yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
             return
-        yield _sse({"step": 5, "status": "done", "label": STEPS[5]})
+        yield _sse({"step": 5, "status": "done", "label": Constants.STEPS[5]})
 
         terms_glossary = build_glossary_from_simplified_text(
             clarified,
@@ -491,7 +478,7 @@ def run_care_plan_pipeline(
 
         # Non-SSE sentinel: the route intercepts these typed objects and is
         # the only layer that composes/serializes the response envelope.
-        yield (RESULT_SENTINEL, care_plan, grading, text, clarified)
+        yield (Constants.RESULT_SENTINEL, care_plan, grading, text, clarified)
 
     except Exception as exc:
         def _pipeline_fail(scope):
@@ -513,7 +500,7 @@ def _payload_from_sse(chunk: str) -> dict | None:
 
 def _care_plan_stream(user_id: str, version: str):
     try:
-        yield _sse({"step": 1, "status": "active", "label": STEPS[1]})
+        yield _sse({"step": 1, "status": "active", "label": Constants.STEPS[1]})
 
         g.care_plan_version = CARE_PLAN_VERSION
         g.grading_version = GRADING_VERSION
@@ -557,14 +544,14 @@ def _care_plan_stream(user_id: str, version: str):
         )
         input_model = _input_model_from_resolved(resolved)
 
-        yield _sse({"step": 1, "status": "done", "label": STEPS[1]})
+        yield _sse({"step": 1, "status": "done", "label": Constants.STEPS[1]})
         logger.info("care_plan: processing source=%s (%d chars)", resolved.source_description, len(text))
         grading_enabled = _grading_enabled_from_request()
         pipeline = PIPELINES[version]
 
         pipeline_result = None
         for chunk in pipeline(text, metrics, grading_enabled=grading_enabled, source_kind=resolved.source_kind):
-            if isinstance(chunk, tuple) and chunk and chunk[0] == RESULT_SENTINEL:
+            if isinstance(chunk, tuple) and chunk and chunk[0] == Constants.RESULT_SENTINEL:
                 pipeline_result = chunk
                 continue
             if isinstance(chunk, str):
@@ -627,8 +614,7 @@ def _care_plan_stream(user_id: str, version: str):
         yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
 
 
-PIPELINES = {"v1-2": run_care_plan_pipeline}
-ALLOWED_VERSIONS = set(PIPELINES)
+PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
 
 
 @care_plan_bp.route("/care_plan", methods=["POST"])
@@ -643,7 +629,7 @@ def create_care_plan(user_id: str):
     else:
         version = CARE_PLAN_DEFAULT_VERSION
 
-    if not isinstance(version, str) or version not in ALLOWED_VERSIONS:
+    if not isinstance(version, str) or version not in Constants.ALLOWED_VERSIONS:
         return {"error": f"Unknown version '{version}'"}, 400
 
     return Response(
