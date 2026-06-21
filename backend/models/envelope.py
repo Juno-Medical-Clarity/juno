@@ -18,9 +18,6 @@ class CarePlanInternal(JsonModel):
     input: Input
     grading: Grading
     care_plan: CarePlan
-    before_score: dict | None = None
-    after_score: dict | None = None
-
     @field_validator("care_plan", mode="before")
     @classmethod
     def _validate_care_plan(cls, value: Any) -> CarePlan:
@@ -33,11 +30,3 @@ class CarePlanInternal(JsonModel):
     @field_serializer("care_plan")
     def _serialize_care_plan(self, value: CarePlan) -> dict:
         return value.to_dict()
-
-
-def is_legacy_shape(data: dict) -> bool:
-    """Return True if *data* lacks the new-style 'care_plan' top-level key.
-
-    Used to distinguish legacy flat outputs from the structured envelope format.
-    """
-    return "care_plan" not in data
