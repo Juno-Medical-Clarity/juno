@@ -34,8 +34,13 @@ export function groupSavedOutputs(outputs: SavedOutputMeta[]): DateGroup[] {
     if (!byDate.has(date)) { byDate.set(date, []); dateOrder.push(date); }
     byDate.get(date)!.push(o);
   }
+  // Sort date groups newest-first
+  dateOrder.sort((a, b) => b.localeCompare(a));
   return dateOrder.map(date => {
-    const items = byDate.get(date)!;
+    // Sort items within each date group newest-first by created_at
+    const items = byDate.get(date)!.sort(
+      (a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+    );
     const batchOrder: string[] = [];
     const byBatch = new Map<string, SavedOutputMeta[]>();
     const standalone: SavedOutputMeta[] = [];
