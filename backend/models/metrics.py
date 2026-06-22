@@ -1,17 +1,15 @@
 """Metrics model for pipeline run telemetry."""
 
-from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
 from .base import JsonModel
 
 
-@dataclass
 class Metrics(JsonModel):
     """Tracks timing and metadata for a single pipeline run.
 
     Not versioned — always uses the latest shape. Mutated in-place as the
-    pipeline progresses (total_duration_ms, step_durations_ms, saved_id).
+    pipeline progresses (total_duration_ms, saved_id).
     """
 
     session_id: str
@@ -19,7 +17,6 @@ class Metrics(JsonModel):
     input_type: str  # "file" | "text" | "doc_id"
     created_at: str  # ISO8601
     total_duration_ms: float | None = None
-    step_durations_ms: dict[str, float] = field(default_factory=dict)
     saved_id: str | None = None
 
     @classmethod

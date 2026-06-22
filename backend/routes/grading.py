@@ -1,39 +1,22 @@
-"""grading.py — Re-run grading on a saved or ephemeral simplify output."""
+"""grading.py — Re-run grading on a saved or ephemeral care plan output."""
 
 import logging
 import os
 
 from flask import Blueprint, jsonify, request
-from firebase_admin import firestore
 
-from utils.auth import verify_firebase_token
+from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
 from utils.scoring import score_text
-from backend.models.grading import build_grading
+from models.grading import build_grading
 
 logger = logging.getLogger(__name__)
 grading_bp = Blueprint("grading", __name__)
 
 
-def _db():
-    db_id = os.environ.get("FIRESTORE_DATABASE_ID", "(default)")
-    return firestore.client(database_id=db_id)
-
-
-def _get_doc_or_403(db, doc_id: str, user_id: str):
-    ref = db.collection("simplify_outputs").document(doc_id)
-    doc = ref.get()
-    if not doc.exists:
-        return None, (jsonify({"error": "Not found"}), 404)
-    data = doc.to_dict()
-    if data.get("uid") != user_id:
-        return None, (jsonify({"error": "Forbidden"}), 403)
-    return doc, None
-
-
-@grading_bp.route("/simplify/grade", methods=["POST"])
+@grading_bp.route("/care_plan/grade", methods=["POST"])
 @verify_firebase_token
-def run_grading(user_id: str):
-    """Re-run grading for a saved or ephemeral simplify output.
+def run_care_plan_grading(user_id: str):
+    """Re-run grading for a saved or ephemeral care plan output.
 
     Body (JSON):
       { "saved_id": "<uuid>" }
@@ -46,14 +29,14 @@ def run_grading(user_id: str):
 
     saved_id = body.get("saved_id")
     if saved_id:
-        db = _db()
-        doc, err = _get_doc_or_403(db, saved_id, user_id)
+        db = firestore_client()
+        doc, err = get_owned_doc_or_403(db, "care_plan_outputs", saved_id, user_id)
         if err:
             return err
 
         data = doc.to_dict()
         output_data = data.get("output_data", {})
-        raw = output_data.get("simplified_care_plan", {}).get("raw", {})
+        raw = output_data.get("care_plan", {}).get("raw", {})
         raw_text = raw.get("text") or ""
         clarified_text = raw.get("clarified_text") or ""
 

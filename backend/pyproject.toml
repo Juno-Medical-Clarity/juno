@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra --import-mode=importlib --cov=. --cov-report=term-missing"
+markers = [
+  "integration: slower tests that exercise multiple layers",
+]

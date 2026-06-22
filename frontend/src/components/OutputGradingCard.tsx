@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { API_URL } from '../api/firebase';
 import { authenticatedFetch } from '../api/apiClient';
-import type { SimplifyOutput, Grading } from '../types/envelope';
+import type { CarePlanInternal, Grading } from '../types/envelope';
+import { logger } from '../utils/logger';
 
 interface OutputGradingCardProps {
-  output: SimplifyOutput;
+  output: CarePlanInternal;
   onGraded: (grading: Grading) => void;
 }
 
@@ -20,11 +21,11 @@ export default function OutputGradingCard({ output, onGraded }: OutputGradingCar
       const body = savedId
         ? { saved_id: savedId }
         : {
-            text: output.simplified_care_plan.raw?.text ?? '',
-            clarified_text: output.simplified_care_plan.raw?.clarified_text ?? '',
+            text: output.care_plan.raw?.text ?? '',
+            clarified_text: output.care_plan.raw?.clarified_text ?? '',
           };
 
-      const res = await authenticatedFetch(`${API_URL}/simplify/grade`, {
+      const res = await authenticatedFetch(`${API_URL}/care_plan/grade`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
@@ -34,6 +35,9 @@ export default function OutputGradingCard({ output, onGraded }: OutputGradingCar
         const msg = await res.text();
         throw new Error(msg || `Server error: ${res.status}`);
       }
+
+      const sessionId = res.headers.get('X-Session-Id');
+      if (sessionId) logger.setSessionId(sessionId);
 
       const { grading } = await res.json();
       onGraded(grading);

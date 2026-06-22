@@ -8,16 +8,17 @@ from flask_cors import CORS
 from opentelemetry import trace
 
 from routes import all_blueprints
-from config import initialize_firebase
+from utils.firebase import initialize_firebase
 from logging_config import setup_logging
 from telemetry import init_telemetry
 from utils.juno_logger import JunoLogger, monotonic_ms
-from utils.juno_metrics import JunoMetrics
 
 # ---------------------------------------------------------------------------
 # Bootstrap logging FIRST so all subsequent log calls use structured output
 # ---------------------------------------------------------------------------
 setup_logging()
+from utils.markers import register_sink, JunoSink, Markers, JunoContext
+register_sink(JunoSink())
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
@@ -26,7 +27,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Enable CORS for all routes (expose X-Session-Id so frontends can read it)
-CORS(app, expose_headers=["X-Session-Id"])
+CORS(app, expose_headers=["X-Session-Id", "X-Trace-Id"])
 
 # ---------------------------------------------------------------------------
 # Initialize OpenTelemetry (instruments Flask + outgoing HTTP)
@@ -55,21 +56,10 @@ def extract_session_id():
     Determine the session_id for this request and store it on flask.g
     for use in route handlers, structured logging, and Cloud Trace.
 
-    Priority:
-    1. appointment_id from the URL path  — naturally groups every call
-       for the same appointment under one session in Cloud Trace / Logging.
-    2. X-Session-Id header sent by the client.
-    3. Auto-generated UUID (fallback for non-appointment routes).
+    Source: X-Session-Id request header, or a generated UUID if absent.
+    SP4 boundary: session_id never falls back to user_id.
     """
-    # Prefer the appointment_id embedded in the URL (available for all
-    # /appointments/<appointment_id>/… routes) so that every log line
-    # and trace span for a given appointment shares the same session_id.
-    appointment_id: str = (request.view_args or {}).get("appointment_id", "")
-    if appointment_id:
-        session_id = appointment_id
-    else:
-        session_id = request.headers.get("X-Session-Id", "") or str(uuid.uuid4())
-
+    session_id = request.headers.get("X-Session-Id", "") or str(uuid.uuid4())
     g.session_id = session_id
 
     # Record start time for request duration logging in after_request
@@ -83,7 +73,7 @@ def extract_session_id():
 
     # Log the start of every request (health checks excluded to avoid noise)
     if request.path != "/health":
-        juno_logger = JunoLogger()
+        juno_logger = JunoLogger(function="http_request")
         juno_logger.log_request_start(
             method=request.method,
             path=request.path,
@@ -97,23 +87,31 @@ def attach_session_id_header(response):
     if session_id:
         response.headers["X-Session-Id"] = session_id
 
+    # Attach X-Trace-Id header from the current OTel span
+    span_ctx = trace.get_current_span().get_span_context()
+    if span_ctx and span_ctx.is_valid:
+        response.headers["X-Trace-Id"] = format(span_ctx.trace_id, "032x")
+
     # Log request completion with total duration (skip health checks)
     if request.path != "/health":
         start_ms = getattr(g, "request_start_ms", None)
         duration_ms = (monotonic_ms() - start_ms) if start_ms is not None else 0.0
-        juno_logger = JunoLogger()
+        juno_logger = JunoLogger(function="http_request")
         juno_logger.log_request_end(
             status_code=response.status_code,
             duration_ms=duration_ms,
         )
-        # Record request-level metrics (skip SSE routes — they emit their own metrics)
-        if response.content_type != "text/event-stream":
-            metrics = JunoMetrics()
-            metrics.record_latency("http_request", duration_ms, labels={
-                "method": request.method,
-                "path": request.path,
-                "status": str(response.status_code),
-            })
+        # Record request-level metrics via Markers (skip SSE routes — they emit their own)
+        if request.path != "/health" and response.content_type != "text/event-stream":
+            def _emit(scope):
+                JunoContext.from_g(function="http_request").apply(scope)
+                scope.add("http_method", request.method)
+                scope.add("http_path", request.path)
+                scope.add("http_status", str(response.status_code))
+                scope.add("duration_ms_observed", round(duration_ms, 1))
+                if response.status_code >= 500:
+                    scope.mark_failed()
+            Markers.Http.Request.execute(_emit)
 
     return response
 
@@ -142,20 +140,12 @@ def root():
         'name': 'Medical Scribe Processing API',
         'version': '1.1.0',
         'endpoints': {
-            'POST /appointments': 'Create an empty appointment',
-            'POST /appointments/{id}/upload-recording-new': 'Upload recording to GCS (no processing)',
-            'POST /appointments/{id}/upload-notes': 'Store plain text notes on appointment',
-            'POST /appointments/{id}/upload-document': 'Upload PDF document to GCS',
-            'POST /appointments/{id}/process': 'Process appointment (transcribe, extract PDF, summarize)',
-            'POST /appointments/{id}/audio-chunks': 'Upload audio chunk for transcription',
-            'POST /appointments/{id}/generate-questions': 'Generate patient questions',
-            'POST /appointments/{id}/finalize': 'Finalize appointment with full audio',
-            'POST /appointments/{id}/upload-recording': 'Upload and process full audio (legacy)',
-            'DELETE /appointments/{id}': 'Delete appointment and associated files',
-            'GET /appointments/search?q=<query>': 'Search appointments',
-            'POST /appointments/generate-questions-try': 'Generate questions (no auth)',
-            'POST /appointments/upload-recording-try': 'Upload recording + SOAP (no auth)',
-            'POST /appointments/upload-notes-try': 'Notes to SOAP (no auth)',
+            'POST /care_plan': 'Simplify a medical document into a care plan (SSE)',
+            'POST /care_plan/grade': 'Re-run grading on a saved or ephemeral care plan',
+            'POST /care_plan/batch': 'Batch-simplify dataset selections (SSE)',
+            'GET /care_plan/datasets': 'List preset datasets',
+            'GET /care_plan/saved': "List the user's saved care plans",
+            'GET /health': 'Health check',
         }
     }), 200
 

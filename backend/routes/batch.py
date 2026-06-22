@@ -1,4 +1,4 @@
-"""Batch dataset simplification route."""
+"""Batch dataset care plan route."""
 
 import json
 from datetime import datetime, timezone
@@ -6,19 +6,19 @@ from typing import Callable, Generator
 
 from flask import Blueprint, Response, g, request, stream_with_context
 
-from backend.models.input import Input
-from backend.models.metrics import Metrics
-from config import SIMPLIFY_DEFAULT_VERSION
-from routes.simplify import ALLOWED_VERSIONS, run_v1_pipeline
-from routes.simplify_v1_1 import run_v1_1_pipeline
-from routes.simplify_v1_2 import _extract_text_from_bytes, run_v1_2_pipeline
-from utils.auth import verify_firebase_token
+from config import CARE_PLAN_DEFAULT_VERSION
+from models.envelope import CarePlanInternal
+from models.input import BatchDatasetInput
+from models.metrics import Metrics
+from utils.constants import Constants
+
+MAX_BATCH_RUNS = Constants.MAX_BATCH_RUNS
+from routes.care_plan import _extract_text_from_bytes, run_care_plan_pipeline
+from utils.firebase import verify_firebase_token, save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
-from utils.save_output import save_simplify_output
 
 
 batch_bp = Blueprint("batch", __name__)
-MAX_BATCH_RUNS = 50
 
 
 def _sse(payload: dict) -> str:
@@ -41,13 +41,9 @@ def _grading_enabled(raw_value) -> bool:
     return str(raw_value).strip().lower() in {"1", "true", "yes", "on"}
 
 
-def _pipeline_for_version(version: str) -> Callable[[str, Metrics, bool], Generator[str, None, None]]:
-    if version == "v1":
-        return run_v1_pipeline
-    if version == "v1-1":
-        return run_v1_1_pipeline
-    if version == "v1-2":
-        return run_v1_2_pipeline
+def _pipeline_for_version(version: str) -> Callable[..., Generator[str | tuple, None, None]]:
+    if version == Constants.PIPELINE_VERSION_V1_2:
+        return run_care_plan_pipeline
     raise ValueError(f"Unknown version '{version}'")
 
 
@@ -103,7 +99,7 @@ def _combined_text_for_dataset_input(group: str, input_id: str, files: list[str]
 
 def _output_name(output_data: dict, group: str, input_id: str) -> str:
     try:
-        reasons = output_data.get("simplified_care_plan", {}).get("reason_for_visit", [])
+        reasons = output_data.get("care_plan", {}).get("reason_for_visit", [])
         if reasons and isinstance(reasons, list):
             reason = (reasons[0].get("reason") or "").strip()
             if reason:
@@ -125,10 +121,10 @@ def _batch_progress_error(group: str, input_id: str, index: int, total: int, err
     }
 
 
-@batch_bp.route("/simplify/batch", methods=["POST"])
+@batch_bp.route("/care_plan/batch", methods=["POST"])
 @verify_firebase_token
-def simplify_batch(user_id: str):
-    """Stream batch simplification progress via SSE."""
+def create_care_plan_batch(user_id: str):
+    """Stream batch care plan progress via SSE."""
     def generate():
         try:
             body = request.get_json(silent=True) or {}
@@ -136,8 +132,8 @@ def simplify_batch(user_id: str):
                 yield _sse({"step": "error", "error": "Request body must be a JSON object"})
                 return
 
-            version = body.get("version", SIMPLIFY_DEFAULT_VERSION)
-            if not isinstance(version, str) or version not in ALLOWED_VERSIONS:
+            version = body.get("version", CARE_PLAN_DEFAULT_VERSION)
+            if not isinstance(version, str) or version not in Constants.ALLOWED_VERSIONS:
                 yield _sse({"step": "error", "error": f"Unknown version '{version}'"})
                 return
 
@@ -188,11 +184,11 @@ def simplify_batch(user_id: str):
                     continue
 
                 metrics = Metrics.start(
-                    session_id=getattr(g, "session_id", user_id),
+                    session_id=getattr(g, "session_id", ""),
                     pipeline_version=version,
                     input_type="batch_dataset",
                 )
-                input_model = Input.from_batch_dataset(
+                input_model = BatchDatasetInput(
                     text=text,
                     dataset_group=group,
                     dataset_input=input_id,
@@ -202,7 +198,17 @@ def simplify_batch(user_id: str):
 
                 result_data = None
                 input_failed = False
-                for chunk in pipeline(text, metrics, grading_enabled):
+                for chunk in pipeline(text, metrics, grading_enabled, is_batch=True, source_kind="batch_dataset"):
+                    if isinstance(chunk, tuple) and chunk and chunk[0] == Constants.RESULT_SENTINEL:
+                        _, care_plan, grading, _raw_text, _clarified_text = chunk
+                        envelope = CarePlanInternal(
+                            metrics=metrics,
+                            input=input_model,
+                            grading=grading,
+                            care_plan=care_plan,
+                        )
+                        result_data = envelope.to_dict()
+                        continue
                     payload = _payload_from_sse(chunk)
                     if not payload:
                         continue
@@ -241,19 +247,17 @@ def simplify_batch(user_id: str):
                         ))
                     continue
 
-                result_data["input"] = input_model.to_dict()
                 source_filename = ", ".join(files)
-                saved_id = save_simplify_output(
+                saved_id = save_care_plan_output(
                     user_id=user_id,
                     name=_output_name(result_data, group, input_id),
                     source_filename=source_filename,
-                    input_pdf_gcs=None,
                     output_data=result_data,
                     dataset_group=group,
                     batch_group_id=batch_group_id,
                 )
                 metrics.saved_id = saved_id
-                result_data["metrics"] = metrics.to_dict()
+                result_data["metrics"]["saved_id"] = metrics.saved_id
                 outputs.append(result_data)
 
                 yield _sse({

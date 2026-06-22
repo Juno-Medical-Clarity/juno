@@ -1,7 +1,7 @@
 // frontend/src/types/envelope.ts
 // TypeScript types mirroring the backend output envelope models (01-core-output-envelope).
 
-import type { AppointmentNote } from './simplify';
+import type { CarePlanContent } from './carePlan';
 
 export interface InputFile {
   filename: string;
@@ -9,12 +9,32 @@ export interface InputFile {
   size_bytes: number;
 }
 
-export interface Input {
-  mode: string;  // "file" | "text" | "doc_id"
-  text: string | null;
-  doc_id: string | null;
+export interface FileInput {
+  mode: 'file';
   files: InputFile[];
+  pdf_gcs_url: string | null;  // stub for SP-11 (Show Original)
 }
+
+export interface TextInput {
+  mode: 'text';
+  text: string | null;
+}
+
+export interface DocIdInput {
+  mode: 'doc_id';
+  doc_id: string;
+}
+
+export interface BatchDatasetInput {
+  mode: 'batch_dataset';
+  text: string;
+  dataset_group: string;
+  dataset_input: string;
+  selected_files: string[];
+  batch_group_id: string;
+}
+
+export type Input = FileInput | TextInput | DocIdInput | BatchDatasetInput;
 
 export interface GradingEntry {
   name: string;
@@ -40,14 +60,14 @@ export interface Metrics {
   saved_id: string | null;
 }
 
-// SimplifiedCarePlan is the AppointmentNote shape with an overridden (widened) version field.
-// AppointmentNote.version is narrowed to '1.2'; here we widen it to string to accommodate
+// SimplifiedCarePlan is the CarePlanContent shape with an overridden (widened) version field.
+// CarePlanContent.version is narrowed to '1.2'; here we widen it to string to accommodate
 // future schema versions returned by the pipeline.
-export type SimplifiedCarePlan = Omit<AppointmentNote, 'version'> & { version: string };
+export type SimplifiedCarePlan = Omit<CarePlanContent, 'version'> & { version: string };
 
-export interface SimplifyOutput {
+export interface CarePlanInternal {
   metrics: Metrics;
   input: Input;
   grading: Grading;
-  simplified_care_plan: SimplifiedCarePlan;
+  care_plan: SimplifiedCarePlan;
 }

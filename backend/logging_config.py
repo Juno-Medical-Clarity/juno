@@ -29,6 +29,18 @@ import sys
 from opentelemetry import trace
 
 
+_EXTRA_KEYS = [
+    "user_id", "function", "care_plan_version", "grading_version", "input_version",
+    "operation", "metric", "metric_type", "duration_ms", "success", "outcome",
+    "step_name", "status", "http_method", "http_path", "http_status",
+    "http_status_code", "total_duration_ms", "saved_id", "input_chars",
+    "error", "labels", "duration_ms_observed", "OpOutcome",
+    "service", "environment",
+]
+
+_SENTINEL = object()
+
+
 class SessionIdFilter(logging.Filter):
     """
     Logging filter that automatically injects session_id from Flask's g context.
@@ -73,6 +85,12 @@ class StructuredJsonFormatter(logging.Formatter):
         session_id = getattr(record, "session_id", None)
         if session_id:
             log_entry["session_id"] = session_id
+
+        # Add whitelisted extra fields (marker events, version fields, metrics, etc.)
+        for key in _EXTRA_KEYS:
+            val = getattr(record, key, _SENTINEL)
+            if val is not _SENTINEL:
+                log_entry[key] = val
 
         # Add OpenTelemetry trace context
         span_context = trace.get_current_span().get_span_context()

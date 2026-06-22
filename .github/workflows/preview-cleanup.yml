@@ -1,0 +1,24 @@
+name: PR Preview Cleanup
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+          project_id: juno-medical-clarity
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Delete preview Cloud Run service
+        run: |
+          gcloud run services delete simplify-backend-pr-${{ github.event.pull_request.number }} \
+            --region us-central1 \
+            --project juno-medical-clarity \
+            --quiet 2>/dev/null || echo "Service not found, skipping"

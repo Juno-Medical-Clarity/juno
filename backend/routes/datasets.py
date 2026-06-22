@@ -1,13 +1,13 @@
 from flask import Blueprint, jsonify
 
-from routes.simplify_v1_2 import _extract_text_from_bytes
-from utils.auth import verify_firebase_token
+from routes.care_plan import _extract_text_from_bytes
+from utils.firebase import verify_firebase_token
 from utils.preset_data import list_datasets, read_dataset_file
 
 datasets_bp = Blueprint("datasets", __name__)
 
 
-@datasets_bp.route("/simplify/datasets", methods=["GET"])
+@datasets_bp.route("/care_plan/datasets", methods=["GET"])
 @verify_firebase_token
 def list_datasets_route(user_id: str):
     _ = user_id
@@ -15,7 +15,7 @@ def list_datasets_route(user_id: str):
 
 
 @datasets_bp.route(
-    "/simplify/datasets/<group>/<input_id>/<string:filename>",
+    "/care_plan/datasets/<group>/<input_id>/<string:filename>",
     methods=["GET"],
 )
 @verify_firebase_token

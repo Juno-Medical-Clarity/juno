@@ -1,5 +1,6 @@
 import textstat
 from utils.scoring import _grade_to_score
+from utils.constants import Constants
 
 
 def score_smog(text: str) -> dict:
@@ -91,11 +92,12 @@ def score_cdc_cci(dimensions: dict) -> dict:
 
 def compute_method_scores(text: str, dimensions: dict) -> dict:
     """Compute all six method-level scores for a given text + precomputed dimension dict."""
+    
     return {
-        "smog":           score_smog(text),
-        "flesch_kincaid": score_flesch_kincaid(text),
-        "dale_chall":     score_dale_chall(text),
-        "pemat":          score_pemat(dimensions),
-        "sam":            score_sam(dimensions),
-        "cdc_cci":        score_cdc_cci(dimensions),
+        Constants.GRADING_METHODS.SMOG:           score_smog(text),
+        Constants.GRADING_METHODS.FLESCH_KINCAID: score_flesch_kincaid(text),
+        Constants.GRADING_METHODS.DALE_CHALL:     score_dale_chall(text),
+        Constants.GRADING_METHODS.PEMAT:          score_pemat(dimensions),
+        Constants.GRADING_METHODS.SAM:            score_sam(dimensions),
+        Constants.GRADING_METHODS.CDC_CCI:        score_cdc_cci(dimensions),
     }

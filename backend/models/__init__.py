@@ -1,20 +1,28 @@
-"""Backend models package for JSON serialization and versioning."""
+"""Backend model exports."""
 
-from .base import JsonModel, VersionedJsonModel
-from .care_plan import SimplifiedCarePlan
-from .envelope import SimplifyOutput, is_legacy_shape
-from .grading import Grading
-from .input import Input, InputFile
+from .base import JsonModel, VersionedModel
+from .care_plan import CarePlan
+from .envelope import CarePlanInternal
+from .grading import Grading, GradingEntry, build_grading
+from .input import Input, InputFile, FileInput, TextInput, DocIdInput, BatchDatasetInput
 from .metrics import Metrics
-
+# Import models to trigger CarePlanV1_2 self-registration in CarePlan._registry.
+from .care_plan_versions.v1_2 import CarePlanV1_2  # noqa: F401
+    
 __all__ = [
+    "JsonModel",
+    "VersionedModel",
+    "CarePlan",
+    "CarePlanInternal",
     "Grading",
+    "GradingEntry",
+    "build_grading",
     "Input",
     "InputFile",
-    "JsonModel",
+    "FileInput",
+    "TextInput",
+    "DocIdInput",
+    "BatchDatasetInput",
     "Metrics",
-    "SimplifiedCarePlan",
-    "SimplifyOutput",
-    "VersionedJsonModel",
-    "is_legacy_shape",
+    "CarePlanV1_2",
 ]

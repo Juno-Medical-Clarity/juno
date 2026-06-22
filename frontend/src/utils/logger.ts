@@ -72,7 +72,7 @@ class Logger {
   /**
    * Log a page view. Call on route changes.
    *
-   * @param page  Human-readable page name, e.g. "SimplifyPage", "HistoryPage".
+   * @param page  Human-readable page name, e.g. "CarePlanPage", "HistoryPage".
    */
   logPageView(page: string): void {
     this._emit('info', 'page_view', { page });

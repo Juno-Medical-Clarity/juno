@@ -24,6 +24,19 @@ from opentelemetry.instrumentation.requests import RequestsInstrumentor
 
 logger = logging.getLogger(__name__)
 
+
+def _build_version() -> str:
+    """Read baked version constant from the VERSION file adjacent to this module."""
+    try:
+        import pathlib
+        version_file = pathlib.Path(__file__).parent / "VERSION"
+        return version_file.read_text().strip()
+    except Exception:
+        return "unknown"
+
+
+SERVICE_VERSION = os.environ.get("SERVICE_VERSION") or _build_version()
+
 _initialized = False
 
 
@@ -49,7 +62,7 @@ def init_telemetry(flask_app):
     # version-segmented latency comparisons in Cloud Trace work correctly.
     resource = Resource.create({
         "service.name": os.getenv("K_SERVICE", "backend-processing"),
-        "service.version": os.getenv("SERVICE_VERSION", "unknown"),
+        "service.version": SERVICE_VERSION,
     })
 
     provider = TracerProvider(resource=resource)
