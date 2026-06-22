@@ -81,6 +81,12 @@ export default function CarePlanPage() {
   const [gradingLoading, setGradingLoading] = useState(false);
   const [gradingError, setGradingError] = useState<string | null>(null);
 
+  // processingIds: wired from SP1's useJobStatuses hook.
+  // When SP1 lands, import useJobStatuses from '../../api/useJobStatuses'
+  // and compute this set from statuses Map (status === 'not_started' | 'processing').
+  // Until then, undefined causes Sidebar to show no spinners (graceful degradation).
+  const processingIds: Set<string> | undefined = undefined; // TODO: wire SP1
+
   useEffect(() => {
     const output = (location.state as VersionRouteState | null)?.output;
     if (!output) return;
@@ -252,8 +258,9 @@ export default function CarePlanPage() {
         activeId={activeSavedId}
         onSelect={handleSelectSaved}
         refreshTrigger={sidebarRefresh}
+        processingIds={processingIds}
       />
-      <div style={{ flex: 1, marginLeft: '260px', minWidth: 0, paddingTop: '48px' }}>
+      <div style={{ flex: 1, marginLeft: 'var(--sidebar-width, 240px)', minWidth: 0, paddingTop: 'calc(48px + 40px)' }}>
       <div className="aurora-bg" aria-hidden="true">
         <div className="aurora-orb aurora-orb-1" />
         <div className="aurora-orb aurora-orb-2" />
