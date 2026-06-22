@@ -85,17 +85,16 @@ describe('CarePlanView (formerly AppointmentNoteV12View)', () => {
     expect(screen.getByText('You are doing well.')).toBeInTheDocument();
   });
 
-  it('renders ReadabilityCard (combined scores) when grading has before+after combined entries', () => {
+  it('does not render ReadabilityCard even when grading has combined entries (moved out of CarePlanView)', () => {
     render(<CarePlanView result={makeMinimalCarePlan()} grading={makeGradingWithEntries()} />);
-    expect(screen.getByText('Readability')).toBeInTheDocument();
+    expect(screen.queryByText('Readability')).not.toBeInTheDocument();
   });
 
-  it('renders method grading cards when method entries present', () => {
+  it('does not render method grading cards even when method entries present (moved out of CarePlanView)', () => {
     render(<CarePlanView result={makeMinimalCarePlan()} grading={makeGradingWithEntries()} />);
-    // Method names are shown as labels
-    expect(screen.getByText('SMOG')).toBeInTheDocument();
-    expect(screen.getByText('Flesch-Kincaid')).toBeInTheDocument();
-    expect(screen.getByText('Dale-Chall')).toBeInTheDocument();
+    expect(screen.queryByText('SMOG')).not.toBeInTheDocument();
+    expect(screen.queryByText('Flesch-Kincaid')).not.toBeInTheDocument();
+    expect(screen.queryByText('Dale-Chall')).not.toBeInTheDocument();
   });
 
   it('does not render ReadabilityCard when grading entries are empty', () => {

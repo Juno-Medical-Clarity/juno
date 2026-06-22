@@ -16,6 +16,7 @@ from models.envelope import CarePlanInternal
 from models.input import TextInput, DocIdInput
 from models.metrics import Metrics
 from utils.constants import Constants
+from utils.error_codes import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
 worker_bp = Blueprint("worker", __name__)
@@ -24,6 +25,19 @@ SINGLE_JOB_INTERNAL_DEADLINE_S = 270
 BATCH_ITEM_INTERNAL_DEADLINE_S = 870
 
 PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
+
+# Map job-doc input_source_kind values onto the canonical Metrics.input_type
+# allowed values ("file" | "text" | "doc_id").
+_INPUT_TYPE_MAP = {
+    "upload": "file",
+    "batch_dataset": "text",
+    "doc_id": "doc_id",
+    "text": "text",
+}
+
+
+def _canonical_input_type(source_kind: str) -> str:
+    return _INPUT_TYPE_MAP.get(source_kind, "text")
 
 
 def _is_batch_item(job_doc: dict) -> bool:
@@ -39,8 +53,12 @@ def _resolve_input_from_job_doc(job_doc: dict) -> str:
     return job_doc.get("input_text") or ""
 
 
-def _build_error_data(code: str, message: str) -> dict:
-    return {"code": code, "message": message}
+def _build_error_data(code: ErrorCode, details_vars: dict | None = None) -> dict:
+    """Build the full SP2 ErrorDetail dict for a worker-originated failure.
+
+    Worker errors have no HTTP request context, so path is None.
+    """
+    return make_error_response(code, path=None, details_vars=details_vars).error.to_dict()
 
 
 @worker_bp.route("/internal/jobs/execute/<job_id>", methods=["POST"])
@@ -82,14 +100,14 @@ def execute_job(job_id: str):
         def _check_timeout(stage: int) -> bool:
             elapsed = time.monotonic() - start
             if elapsed > deadline_s:
-                fail_job(job_id, _build_error_data("JOB_TIMEOUT", "Job timed out"))
+                fail_job(job_id, _build_error_data(ErrorCode.JOB_TIMEOUT, {"stage": stage}))
                 logger.warning("worker: job %s timed out at stage %d after %.1fs", job_id, stage, elapsed)
                 return True
             return False
 
         text = _resolve_input_from_job_doc(job_doc)
         if not text.strip():
-            fail_job(job_id, _build_error_data("PIPELINE_ERROR", "Input text is empty"))
+            fail_job(job_id, _build_error_data(ErrorCode.INPUT_EMPTY))
             return "", 200
 
         version = job_doc.get("input_version", "v1-2")
@@ -102,12 +120,12 @@ def execute_job(job_id: str):
         metrics = Metrics.start(
             session_id=job_id,
             pipeline_version=version,
-            input_type=source_kind,
+            input_type=_canonical_input_type(source_kind),
         )
 
         current_stage = 1
         pipeline_result = None
-        pipeline_error: str | None = None
+        pipeline_error_data: dict | None = None
 
         for chunk in pipeline_fn(text, metrics, grading_enabled, source_kind=source_kind, is_batch=is_batch):
             if isinstance(chunk, tuple) and chunk and chunk[0] == Constants.RESULT_SENTINEL:
@@ -121,7 +139,9 @@ def execute_job(job_id: str):
                     continue
 
                 if payload.get("step") == "error":
-                    pipeline_error = payload.get("error") or "Pipeline failed"
+                    # Real pipeline emits {"step": "error", "error_data": {<ErrorDetail>}}.
+                    # Capture the full SP2 ErrorDetail dict so code/message/details are preserved.
+                    pipeline_error_data = payload.get("error_data") or None
                     break
 
                 step = payload.get("step")
@@ -132,12 +152,22 @@ def execute_job(job_id: str):
                         return "", 200
                     update_job_stage(job_id, current_stage)
 
-        if pipeline_error is not None:
-            fail_job(job_id, _build_error_data("PIPELINE_ERROR", pipeline_error))
+        if pipeline_error_data is not None:
+            # error_data is already a full SP2 ErrorDetail dict from the pipeline.
+            message = pipeline_error_data.get("message")
+            details = pipeline_error_data.get("details")
+            if message or details:
+                fail_job(job_id, pipeline_error_data)
+            else:
+                fail_job(job_id, _build_error_data(
+                    ErrorCode.PIPELINE_ERROR, {"detail": "Pipeline failed"}
+                ))
             return "", 200
 
         if pipeline_result is None:
-            fail_job(job_id, _build_error_data("PIPELINE_ERROR", "Pipeline returned no result"))
+            fail_job(job_id, _build_error_data(
+                ErrorCode.PIPELINE_ERROR, {"detail": "Pipeline returned no result"}
+            ))
             return "", 200
 
         _, care_plan, grading, _raw_text, _clarified_text = pipeline_result

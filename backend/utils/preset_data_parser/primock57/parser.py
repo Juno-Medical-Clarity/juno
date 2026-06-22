@@ -69,12 +69,12 @@ def _process_file(json_path: Path, dest_root: Path, overwrite: bool) -> str:
         return "error"
 
     complaint = data["presenting_complaint"]
-    if not isinstance(complaint, str) or complaint is None:
+    if not isinstance(complaint, str):
         print(f"WARNING: {json_path}: 'presenting_complaint' is not a string — coercing to empty string", file=sys.stderr)
         complaint = ""
 
     note = data["note"]
-    if not isinstance(note, str) or note is None:
+    if not isinstance(note, str):
         print(f"WARNING: {json_path}: 'note' is not a string — coercing to empty string", file=sys.stderr)
         note = ""
 

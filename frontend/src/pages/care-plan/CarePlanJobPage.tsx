@@ -32,7 +32,7 @@ export default function CarePlanJobPage() {
   if (loading) {
     return (
       <>
-        <NavBar onNew={() => window.location.assign('/')} />
+        <NavBar />
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--text-secondary)' }}>
           Loading…
         </div>
@@ -45,7 +45,7 @@ export default function CarePlanJobPage() {
       error.message?.toLowerCase().includes('missing or insufficient');
     return (
       <>
-        <NavBar onNew={() => window.location.assign('/')} />
+        <NavBar />
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
           {isPermission
             ? 'You do not have permission to view this care plan.'
@@ -58,7 +58,7 @@ export default function CarePlanJobPage() {
   if (!jobDoc) {
     return (
       <>
-        <NavBar onNew={() => window.location.assign('/')} />
+        <NavBar />
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--text-secondary)' }}>
           Care plan not found.
         </div>
@@ -70,7 +70,7 @@ export default function CarePlanJobPage() {
     const result = normalizeCarePlanOutput(jobDoc.output_data);
     return (
       <>
-        <NavBar onNew={() => window.location.assign('/')} />
+        <NavBar />
         <div style={{ maxWidth: '860px', margin: '0 auto', padding: '80px 32px 32px' }}>
           <CarePlanView result={result.care_plan} grading={result.grading} />
         </div>
@@ -82,7 +82,7 @@ export default function CarePlanJobPage() {
     const message = jobDoc.error_data?.message ?? 'An error occurred processing your care plan.';
     return (
       <>
-        <NavBar onNew={() => window.location.assign('/')} />
+        <NavBar />
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
           {message}
         </div>
@@ -93,7 +93,7 @@ export default function CarePlanJobPage() {
   const steps = stepsFromStage(jobDoc.stage);
   return (
     <>
-      <NavBar onNew={() => window.location.assign('/')} />
+      <NavBar />
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '80px 32px' }}>
         <div className="glass-card" style={{ padding: '32px' }}>
           <p className="section-title">Creating your care plan…</p>

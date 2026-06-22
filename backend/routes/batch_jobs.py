@@ -10,6 +10,7 @@ from utils.firebase import create_job_doc, verify_firebase_token
 from utils.cloud_tasks import enqueue_job
 from routes.batch import _resolve_requested_runs, _combined_text_for_dataset_input, _batch_timestamp
 from utils.constants import Constants
+from utils.error_codes import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
 batch_jobs_bp = Blueprint("batch_jobs", __name__)
@@ -20,11 +21,19 @@ batch_jobs_bp = Blueprint("batch_jobs", __name__)
 def create_care_plan_batch_jobs(user_id: str):
     body = request.get_json(silent=True) or {}
     if not isinstance(body, dict):
-        return jsonify({"error": "Request body must be a JSON object"}), 400
+        return make_error_response(
+            ErrorCode.INPUT_VALIDATION_ERROR,
+            request.path,
+            {"field": "body", "reason": "Request body must be a JSON object"},
+        ).to_dict(), 400
 
     selections = body.get("selections")
     if not isinstance(selections, list) or not selections:
-        return jsonify({"error": "Request must include selections"}), 400
+        return make_error_response(
+            ErrorCode.INPUT_VALIDATION_ERROR,
+            request.path,
+            {"field": "selections", "reason": "Request must include a non-empty selections list"},
+        ).to_dict(), 400
 
     version = body.get("version", "v1-2")
     grading_enabled_raw = body.get("grading_enabled", False)
@@ -34,10 +43,18 @@ def create_care_plan_batch_jobs(user_id: str):
     try:
         runs = _resolve_requested_runs(selections)
     except (ValueError, FileNotFoundError) as exc:
-        return jsonify({"error": str(exc)}), 400
+        return make_error_response(
+            ErrorCode.BATCH_INVALID_SELECTION,
+            request.path,
+            {"detail": str(exc)},
+        ).to_dict(), 400
 
     if len(runs) > Constants.MAX_BATCH_RUNS:
-        return jsonify({"error": f"Batch request exceeds maximum of {Constants.MAX_BATCH_RUNS} runs"}), 400
+        return make_error_response(
+            ErrorCode.BATCH_TOO_LARGE,
+            request.path,
+            {"count": len(runs), "max_runs": Constants.MAX_BATCH_RUNS},
+        ).to_dict(), 400
 
     batch_run_id = str(uuid.uuid4())
     timestamp = _batch_timestamp()
@@ -53,9 +70,13 @@ def create_care_plan_batch_jobs(user_id: str):
     for group, input_id, files in runs:
         try:
             text = _combined_text_for_dataset_input(group, input_id, files)
-        except Exception as exc:
+        except Exception:
             logger.exception("batch_jobs: failed to read dataset input %s/%s", group, input_id)
-            return jsonify({"error": f"Could not read dataset input {group}/{input_id}: {exc}"}), 400
+            return make_error_response(
+                ErrorCode.DATASET_NOT_FOUND,
+                request.path,
+                {"group": group, "input_id": input_id},
+            ).to_dict(), 400
 
         job_id = str(uuid.uuid4())
         batch_group_id = batch_group_ids[group]
@@ -97,7 +118,10 @@ def create_care_plan_batch_jobs(user_id: str):
             )
         except Exception:
             logger.exception("batch_jobs: failed to enqueue Cloud Task for job %s", job_id)
-            return jsonify({"error": f"Failed to enqueue job {job_id}"}), 500
+            return make_error_response(
+                ErrorCode.INTERNAL_ERROR,
+                request.path,
+            ).to_dict(), 500
 
         job_ids.append(job_id)
 

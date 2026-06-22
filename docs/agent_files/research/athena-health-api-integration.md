@@ -523,6 +523,83 @@ Athena's FHIR Subscription events are `id-only` — each event notification requ
 
 ---
 
+## Sandbox Bootstrap Guide
+
+*Added 2026-06-22 — findings from sandbox access research.*
+
+### Practice IDs
+
+| PracticeId | Purpose |
+|------------|---------|
+| `195900` | Ambulatory testing — use this for most APIs |
+| `1128700` | Hospital / Health System testing — inpatient/discharge APIs |
+| `80000` | PHR app testing — 3-legged OAuth / patient-facing flows |
+
+### Authentication (2-legged OAuth)
+
+Token endpoint: `POST https://api.preview.platform.athenahealth.com/oauth2/v1/token`
+
+Credentials go in HTTP **Basic Auth header** (`-u CLIENT_ID:CLIENT_SECRET`), NOT the POST body — a common gotcha. Scope: `athena/service/Athenanet.MDP.*`. Token lasts 300 seconds.
+
+```bash
+curl -s -X POST \
+  "https://api.preview.platform.athenahealth.com/oauth2/v1/token" \
+  -u "$CLIENT_ID:$CLIENT_SECRET" \
+  -d "grant_type=client_credentials" \
+  -d "scope=athena/service/Athenanet.MDP.*"
+```
+
+### Bootstrap Sequence (IDs from just practiceId)
+
+Athena does **not** publish a list of test patient/encounter IDs for practice 195900. IDs must be discovered via API. Three calls require zero other IDs:
+
+```
+practiceId + token
+    │
+    ├─► GET /v1/{practiceId}/departments       → departmentId list
+    ├─► GET /v1/{practiceId}/providers         → providerId list
+    ├─► GET /v1/{practiceId}/patients          → patientId list
+    │
+    └─► GET /v1/{practiceId}/appointments/booked?startdate=...&enddate=...
+              → returns appointmentId + patientId + departmentId + encounterId in one call
+                (encounterId is null if appointment was never checked out)
+    │
+    └─► GET /v1/{practiceId}/chart/encounter/{encounterId}/summary
+              → summaryhtml (Juno's primary PULL endpoint)
+```
+
+**The shortcut:** `GET /appointments/booked` with a wide date range returns `encounterId` directly on each appointment record — no separate encounters list call needed.
+
+### Known Test Data
+
+| Resource | Value | Notes |
+|----------|-------|-------|
+| Patient ID (try first) | `1` | Used in go-athenahealth SDK README as hello-world |
+| Patient ID (PHR practice 80000) | `14545` | May be stale — verify |
+| PHR test username | `phrtest_[...]@mailinator.com` | 3-legged OAuth only |
+| PHR test password | `Password1` | 3-legged OAuth only |
+
+### ID Requirements by Workflow
+
+| Workflow | IDs needed | How to get them |
+|----------|-----------|----------------|
+| Encounter summary | practiceId + encounterId | From booked appointments list |
+| Patient chart (meds, problems, labs) | practiceId + patientId | From patient list |
+| Lab results | practiceId + patientId + departmentId | Patient list + departments list |
+| Document upload (PUSH) | practiceId + patientId + departmentId | Patient list + departments list |
+| Secure message (PUSH) | practiceId + patientId | From patient list |
+
+### Common Errors
+
+| Error | Cause | Fix |
+|-------|-------|-----|
+| `401 Unauthorized` | Token expired (300s TTL) | Re-request token |
+| `403 Forbidden` | Wrong scope | Add `scope=athena/service/Athenanet.MDP.*` |
+| `encounterid` null on appointment | Visit never checked out | Look for appointments where `encounterstatus=CLOSED` |
+| No patients returned | Practice has no pre-seeded data | Try booked appointments with wide date range first |
+
+---
+
 ## Key Sources
 
 - Athenahealth FHIR Subscriptions GitHub: https://github.com/athenahealth/aone-fhir-subscriptions

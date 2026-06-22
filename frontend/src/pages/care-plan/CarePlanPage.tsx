@@ -2,22 +2,21 @@ import './CarePlanPage.css';
 import { useCallback, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
-import { authenticatedFetch } from '../../api/apiClient';
+import { authenticatedFetchJson } from '../../api/apiClient';
+import { ApiError } from '../../types/errors';
 import Sidebar from '../../components/Sidebar';
 import SplitView from '../../components/SplitView';
 import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/carePlan';
 import type { CarePlanInternal, Grading } from '../../types/envelope';
 import type { BatchDatasetSelection } from '../../types/datasets';
-import { normalizeCarePlanOutput } from '../../utils/normalizeOutput';
 import CarePlanView from '../../components/CarePlanView';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
-import { CARE_PLAN_API_PATH, DEFAULT_VERSION, carePlanPagePath } from '../../constants';
+import { DEFAULT_VERSION, carePlanPagePath } from '../../constants';
 import type { VersionRouteState } from '../../router';
-import { logger } from '../../utils/logger';
 import { createCarePlanJob, createBatchJobs } from '../../api/jobs';
 
 export const INITIAL_STEPS: PipelineStep[] = [
@@ -210,22 +209,21 @@ export default function CarePlanPage() {
             text: result.care_plan.raw?.text ?? '',
             clarified_text: result.care_plan.raw?.clarified_text ?? '',
           };
-      const res = await authenticatedFetch(`${API_URL}/care_plan/grade`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
-      });
-      if (!res.ok) {
-        // TODO(SP2): parse ApiError from '../types/errors' when SP2 merges.
-        const msg = await res.text();
-        throw new Error(msg || `Server error: ${res.status}`);
-      }
-      const sessionId = res.headers.get('X-Session-Id');
-      if (sessionId) logger.setSessionId(sessionId);
-      const { grading } = await res.json() as { grading: Grading };
+      const { grading } = await authenticatedFetchJson<{ grading: Grading }>(
+        `${API_URL}/care_plan/grade`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        },
+      );
       setResult(prev => prev ? { ...prev, grading } : prev);
     } catch (err: unknown) {
-      setGradingError(err instanceof Error ? err.message : 'Failed to run grading');
+      if (err instanceof ApiError) {
+        setGradingError(err.message);
+      } else {
+        setGradingError(err instanceof Error ? err.message : 'Failed to run grading');
+      }
     } finally {
       setGradingLoading(false);
     }

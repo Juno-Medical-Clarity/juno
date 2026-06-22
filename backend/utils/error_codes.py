@@ -30,6 +30,7 @@ class ErrorCode(StrEnum):
     STRUCTURING_FAILED      = "STRUCTURING_FAILED"
     # Timeout
     TIMEOUT                 = "TIMEOUT"
+    JOB_TIMEOUT             = "JOB_TIMEOUT"
     # Batch
     BATCH_TOO_LARGE         = "BATCH_TOO_LARGE"
     BATCH_INVALID_SELECTION = "BATCH_INVALID_SELECTION"
@@ -59,6 +60,7 @@ _REGISTRY: dict[ErrorCode, tuple[str, str]] = {
     ErrorCode.SIMPLIFICATION_FAILED:   ("Simplification step failed",                   "LLM simplification error: {detail}"),
     ErrorCode.STRUCTURING_FAILED:      ("Structuring step failed",                      "LLM structuring error: {detail}"),
     ErrorCode.TIMEOUT:                 ("Request timed out",                            "Operation exceeded time limit"),
+    ErrorCode.JOB_TIMEOUT:             ("Job timed out",                                "Job exceeded the worker time limit at stage {stage}"),
     ErrorCode.BATCH_TOO_LARGE:         ("Batch request too large",                      "Requested {count} runs; maximum is {max_runs}"),
     ErrorCode.BATCH_INVALID_SELECTION: ("Invalid batch selection",                      "{detail}"),
     ErrorCode.DATASET_NOT_FOUND:       ("Dataset not found",                            "Dataset {group}/{input_id} does not exist"),

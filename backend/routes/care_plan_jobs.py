@@ -17,6 +17,7 @@ from routes.care_plan import (
     _allowed,
 )
 from utils.constants import Constants
+from utils.error_codes import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
 care_plan_jobs_bp = Blueprint("care_plan_jobs", __name__)
@@ -84,7 +85,11 @@ def create_care_plan_job(user_id: str):
     try:
         input_fields = _resolve_input_for_job(user_id)
     except (ValueError, FileNotFoundError) as exc:
-        return jsonify({"error": str(exc)}), 400
+        return make_error_response(
+            ErrorCode.INPUT_VALIDATION_ERROR,
+            request.path,
+            {"field": "input", "reason": str(exc)},
+        ).to_dict(), 400
 
     job_id = str(uuid.uuid4())
     now = datetime.now(timezone.utc)
@@ -118,6 +123,9 @@ def create_care_plan_job(user_id: str):
         )
     except Exception:
         logger.exception("care_plan_jobs: failed to enqueue Cloud Task for job %s", job_id)
-        return jsonify({"error": "Failed to enqueue job"}), 500
+        return make_error_response(
+            ErrorCode.INTERNAL_ERROR,
+            request.path,
+        ).to_dict(), 500
 
     return jsonify({"job_id": job_id}), 202

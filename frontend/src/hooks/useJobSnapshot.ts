@@ -1,14 +1,23 @@
 import { useEffect, useState } from 'react';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { firebaseDb } from '../api/firebase';
+import type { ApiErrorDetail } from '../types/errors';
 
 export type JobStatus = 'not_started' | 'processing' | 'completed' | 'error';
+
+/**
+ * Worker-written error_data follows the SP2 ErrorDetail shape (code, message,
+ * details, timestamp, path). details/timestamp/path are optional here because
+ * older docs may have been written with just {code, message}.
+ */
+export type JobErrorData = Pick<ApiErrorDetail, 'code' | 'message'> &
+  Partial<Pick<ApiErrorDetail, 'details' | 'timestamp' | 'path'>>;
 
 export interface JobDoc {
   status: JobStatus;
   stage: number | null;
   output_data: Record<string, unknown> | null;
-  error_data: { code: string; message: string } | null;
+  error_data: JobErrorData | null;
   name: string;
   batch_run_id: string | null;
 }

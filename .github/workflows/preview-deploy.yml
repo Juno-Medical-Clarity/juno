@@ -60,7 +60,6 @@ jobs:
             VERTEX_AI_MODEL=gemini-3.5-flash
             SIMPLIFY_DEFAULT_VERSION=v1-2
             FIRESTORE_DATABASE_ID=(default)
-            GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
           secrets: |
             FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest
 

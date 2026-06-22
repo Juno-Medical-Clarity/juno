@@ -45,5 +45,6 @@ frontend/public/preset-data/
 !preset-data/**/*.docx
 
 # primock57 source download (large; run parser.py once to generate preset-data/ files)
-primock57/
+# Anchored to repo root so the generated preset-data/primock57/ output stays tracked.
 /primock57/
+.gstack/

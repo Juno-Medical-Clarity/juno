@@ -102,7 +102,17 @@ def test_pipeline_error_fails_job(
     mock_fs_client.return_value = mock_db
 
     def fake_pipeline_error(text, metrics, grading_enabled, source_kind="text", is_batch=False):
-        yield "data: " + json.dumps({"step": "error", "error": "Pipeline exploded"})
+        # Real SSE error shape: {"step": "error", "error_data": {<ErrorDetail>}}.
+        yield "data: " + json.dumps({
+            "step": "error",
+            "error_data": {
+                "code": "PIPELINE_ERROR",
+                "message": "Pipeline error",
+                "details": "Pipeline exploded",
+                "timestamp": "2026-06-22T00:00:00+00:00",
+                "path": "/care_plan",
+            },
+        })
 
     with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline_error(*a, **kw)}):
         resp = client_worker.post(
@@ -115,6 +125,43 @@ def test_pipeline_error_fails_job(
     fail_args = mock_fail.call_args
     error_data = fail_args.args[1]
     assert error_data["code"] == "PIPELINE_ERROR"
+    assert error_data["details"] == "Pipeline exploded"
+    mock_complete.assert_not_called()
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_timeout_fails_job_with_job_timeout_code(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker
+):
+    mock_get_doc.return_value = _make_job_doc()
+    mock_db = MagicMock()
+    mock_fs_client.return_value = mock_db
+
+    def fake_pipeline_slow(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        # Emit a stage transition so _check_timeout runs.
+        yield "data: " + json.dumps({"step": 2, "status": "active"})
+
+    # First monotonic() call records the start; the next (inside _check_timeout)
+    # jumps far past the single-job deadline so the timeout triggers.
+    from routes.worker import SINGLE_JOB_INTERNAL_DEADLINE_S
+    monotonic_values = iter([0.0, SINGLE_JOB_INTERNAL_DEADLINE_S + 100.0])
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline_slow(*a, **kw)}):
+        with patch("routes.worker.time.monotonic", side_effect=lambda: next(monotonic_values)):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1",
+                headers=QUEUE_HEADER,
+            )
+
+    assert resp.status_code == 200
+    mock_fail.assert_called_once()
+    error_data = mock_fail.call_args.args[1]
+    assert error_data["code"] == "JOB_TIMEOUT"
     mock_complete.assert_not_called()
 
 

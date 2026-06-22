@@ -94,7 +94,7 @@ function makeResult(overrides: Partial<CarePlanInternal> = {}): CarePlanInternal
       step_durations_ms: {},
       saved_id: null,
     },
-    input: { mode: 'text', text: 'Original', doc_id: null, files: [] },
+    input: { mode: 'text', text: 'Original' },
     grading: makeGrading(),
     care_plan: makeCarePlan(),
     ...overrides,
