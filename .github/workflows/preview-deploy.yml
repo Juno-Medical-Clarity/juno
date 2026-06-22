@@ -19,6 +19,9 @@ env:
 jobs:
   backend:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     outputs:
       url: ${{ steps.deploy.outputs.url }}
     steps:
