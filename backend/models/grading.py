@@ -48,7 +48,7 @@ def build_grading(
                 target=target,
                 grade=m["score"],
                 grade_breakdown=breakdown,
-                reasoning=Constants.GRADING_METHODS[method_name].description,
+                reasoning=Constants.GRADING_METHODS[method_name.upper()].value.description,
             ))
         entries.append(GradingEntry(
             name="combined",
