@@ -24,9 +24,9 @@ from pathlib import Path
 
 from pydantic import ValidationError
 
-from models.care_plan import CARE_PLAN_VERSION, CarePlan
+from models.care_plan import CarePlan
 from care_plan.interface import CarePlanPipeline
-from care_plan.v1_2.models import CarePlanV1_2
+from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
 from utils.llm import LLMClient
 from utils.term_detection import (
     build_glossary_from_simplified_text,
@@ -35,6 +35,7 @@ from utils.term_detection import (
     format_medical_terms_for_prompt,
     format_substitution_candidates_for_prompt,
 )
+from utils.constants import Constants
 
 logger = logging.getLogger(__name__)
 
@@ -172,7 +173,7 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
                 "clarified_text": clarified,
             },
         }
-        care_plan = CarePlan.from_pipeline_result(CARE_PLAN_VERSION, result)
+        care_plan = CarePlan.from_pipeline_result(Constants.CARE_PLAN_VERSIONS.V1_2.value, result)
         if not isinstance(care_plan, CarePlanV1_2):
             raise TypeError(f"Expected CarePlanV1_2, got {type(care_plan).__name__}")
         return care_plan

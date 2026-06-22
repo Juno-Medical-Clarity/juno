@@ -4,8 +4,9 @@ import pytest
 from unittest.mock import patch, MagicMock
 
 from routes.care_plan import RESULT_SENTINEL
-from models.care_plan import CarePlan, CARE_PLAN_VERSION
+from models.care_plan import CarePlan
 from models.grading import Grading
+from utils.constants import Constants
 
 
 def parse_sse(response):
@@ -19,7 +20,7 @@ def parse_sse(response):
 
 
 def _make_fake_care_plan():
-    return CarePlan.from_pipeline_result("1.2", {
+    return CarePlan.from_pipeline_result(Constants.CARE_PLAN_VERSIONS.V1_2.value, {
         "summary": "Patient has high blood pressure.",
         "diagnosis": {"main_conclusion": "Hypertension", "details": []},
         "medications": [],

@@ -4,11 +4,10 @@ import json
 
 import pytest
 
-from models.care_plan import CARE_PLAN_VERSION
 from care_plan.v1_2 import pipeline as pipeline_module
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
-from care_plan.v1_2.models import CarePlanV1_2
-
+from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
+from utils.constants import Constants
 
 def test_structuring_schema_is_generated_from_structured_llm_model():
     schema = json.loads(pipeline_module._STRUCTURING_SCHEMA)
@@ -25,7 +24,7 @@ def test_structure_appointment_note_validates_and_returns_json_model_dump():
     structured = pipeline.structure_appointment_note("clarified text")
 
     assert structured["doc_type"] == "care_plan"
-    assert structured["version"] == CARE_PLAN_VERSION
+    assert structured["version"] == Constants.CARE_PLAN_VERSIONS.V1_2.value
     assert structured["summary"] == "You came in for care."
     assert structured["reason_for_visit"] == []
 
@@ -62,7 +61,7 @@ def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
     pipeline.clarify_and_action = lambda simplified, abbreviations: "clarified"
     pipeline.structure_appointment_note = lambda clarified: {
         "doc_type": "care_plan",
-        "version": CARE_PLAN_VERSION,
+        "version": Constants.CARE_PLAN_VERSIONS.V1_2.value,
         "summary": "You came in for care.",
     }
 
@@ -81,7 +80,7 @@ def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
 
 def test_llm_schema_excludes_terms_and_raw():
     from care_plan.v1_2.pipeline import _llm_schema
-    from care_plan.v1_2.models import CarePlanV1_2
+    from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
 
     schema = _llm_schema(CarePlanV1_2, {"terms", "raw"})
     props = schema["properties"]
@@ -93,7 +92,7 @@ def test_llm_schema_excludes_terms_and_raw():
 
 
 def test_llm_schema_model_validate_without_terms_and_raw():
-    from care_plan.v1_2.models import CarePlanV1_2
+    from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
 
     model = CarePlanV1_2.model_validate(
         {"doc_type": "care_plan", "version": "1.2", "summary": "You came in for care."}

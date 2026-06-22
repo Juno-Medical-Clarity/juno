@@ -119,17 +119,3 @@ def test_build_grading_returns_same_entries_and_no_descriptions():
         ("combined", "after"),
     ]
     assert all(entry.description is None for entry in grading.entries)
-
-
-def test_grading_method_reason_enum_has_expected_members():
-    from models.grading import GradingMethodReason
-    assert set(GradingMethodReason.__members__) == {
-        "smog", "flesch_kincaid", "dale_chall", "pemat", "sam", "cdc_cci"
-    }
-
-
-def test_grading_method_reason_smog_value_matches_expected_string():
-    from models.grading import GradingMethodReason
-    assert GradingMethodReason["smog"].value == (
-        "SMOG (McLaughlin 1969) — counts polysyllabic words; designed for health materials"
-    )

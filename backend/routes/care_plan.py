@@ -42,7 +42,7 @@ from utils.term_detection import build_glossary_from_simplified_text, detect_ter
 from models.metrics import Metrics
 from models.input import FileInput, TextInput, DocIdInput, INPUT_VERSION
 from models.grading import Grading, build_grading, GRADING_VERSION
-from models.care_plan import CarePlan, CARE_PLAN_VERSION
+from models.care_plan import CarePlan
 from models.envelope import CarePlanInternal
 from utils.markers import Markers, JunoContext
 from telemetry import get_tracer
@@ -506,7 +506,7 @@ def _care_plan_stream(user_id: str, version: str):
     try:
         yield _sse({"step": 1, "status": "active", "label": Constants.STEPS[1]})
 
-        g.care_plan_version = CARE_PLAN_VERSION
+        g.care_plan_version = Constants.CARE_PLAN_VERSIONS.V1_2.value
         g.grading_version = GRADING_VERSION
         g.input_version = INPUT_VERSION
 

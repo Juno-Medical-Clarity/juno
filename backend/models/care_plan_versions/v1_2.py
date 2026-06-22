@@ -7,7 +7,8 @@ from typing import ClassVar, Literal
 from pydantic import Field
 
 from models.base import JsonModel
-from models.care_plan import CarePlan, CARE_PLAN_VERSION
+from models.care_plan import CarePlan
+from utils.constants import Constants
 
 Source = Literal["documents", "recording", "notes"]
 Importance = Literal["high", "low"]
@@ -108,10 +109,10 @@ class RawArtifacts(JsonModel):
 
 
 class CarePlanV1_2(CarePlan):
-    version_value: ClassVar[str] = CARE_PLAN_VERSION
+    version_value: ClassVar[str] = Constants.CARE_PLAN_VERSIONS.V1_2.value
 
     doc_type: Literal["care_plan"] = "care_plan"
-    version: Literal["1.2"] = CARE_PLAN_VERSION
+    version: Literal["1.2"] = Constants.CARE_PLAN_VERSIONS.V1_2.value
     urgency: Literal["normal", "caution", "concern", "urgent"] = "normal"
     summary: str = ""
     reason_for_visit: list[ReasonForVisit] = Field(default_factory=list)

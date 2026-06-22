@@ -3,10 +3,12 @@
 from .base import JsonModel, VersionedModel
 from .care_plan import CarePlan
 from .envelope import CarePlanInternal
-from .grading import Grading, GradingEntry, GradingMethodReason, build_grading
+from .grading import Grading, GradingEntry, build_grading
 from .input import Input, InputFile, FileInput, TextInput, DocIdInput, BatchDatasetInput
 from .metrics import Metrics
-
+# Import models to trigger CarePlanV1_2 self-registration in CarePlan._registry.
+from .care_plan_versions.v1_2 import CarePlanV1_2  # noqa: F401
+    
 __all__ = [
     "JsonModel",
     "VersionedModel",
@@ -14,7 +16,6 @@ __all__ = [
     "CarePlanInternal",
     "Grading",
     "GradingEntry",
-    "GradingMethodReason",
     "build_grading",
     "Input",
     "InputFile",
@@ -23,4 +24,5 @@ __all__ = [
     "DocIdInput",
     "BatchDatasetInput",
     "Metrics",
+    "CarePlanV1_2",
 ]

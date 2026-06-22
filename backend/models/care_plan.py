@@ -4,9 +4,6 @@ from __future__ import annotations
 
 from .base import VersionedModel
 
-CARE_PLAN_VERSION = "1.2"
-
-
 class CarePlan(VersionedModel):
     """Version-agnostic care-plan family base. Concrete versions live in care_plan/v*/models.py."""
 
