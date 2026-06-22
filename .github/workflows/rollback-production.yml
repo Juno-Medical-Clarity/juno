@@ -9,7 +9,9 @@ on:
         type: string
 
 permissions:
+  checks: write
   contents: read
+  statuses: write
 
 jobs:
   rollback:
