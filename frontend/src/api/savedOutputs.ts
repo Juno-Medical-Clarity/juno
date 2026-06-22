@@ -9,6 +9,7 @@ export interface SavedOutputMeta {
   created_at: string;
   updated_at: string;
   batch_group_id: string | null;
+  status?: 'not_started' | 'processing' | 'completed' | 'error';
 }
 
 export interface SavedOutput extends SavedOutputMeta {
