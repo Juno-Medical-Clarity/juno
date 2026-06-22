@@ -251,7 +251,6 @@ export default function CarePlanPage() {
       <Sidebar
         activeId={activeSavedId}
         onSelect={handleSelectSaved}
-        onNew={handleReset}
         refreshTrigger={sidebarRefresh}
       />
       <div style={{ flex: 1, marginLeft: '260px', minWidth: 0, paddingTop: '48px' }}>
