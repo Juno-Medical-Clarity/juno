@@ -7,7 +7,8 @@ from flask import Flask, jsonify, request, g
 from flask_cors import CORS
 from opentelemetry import trace
 
-from routes import all_blueprints
+import os as _os
+from routes import API_BLUEPRINTS, WORKER_BLUEPRINTS
 from utils.error_codes import make_error_response, ErrorCode
 from utils.firebase import initialize_firebase
 from logging_config import setup_logging
@@ -43,7 +44,9 @@ initialize_firebase()
 # ---------------------------------------------------------------------------
 # Register all route blueprints
 # ---------------------------------------------------------------------------
-for bp in all_blueprints:
+JUNO_MODE = _os.environ.get("JUNO_MODE", "api")
+_blueprints = WORKER_BLUEPRINTS if JUNO_MODE == "worker" else API_BLUEPRINTS
+for bp in _blueprints:
     app.register_blueprint(bp)
 
 
@@ -144,6 +147,8 @@ def root():
             'POST /care_plan': 'Simplify a medical document into a care plan (SSE)',
             'POST /care_plan/grade': 'Re-run grading on a saved or ephemeral care plan',
             'POST /care_plan/batch': 'Batch-simplify dataset selections (SSE)',
+            'POST /care_plan/jobs': 'Create a single async care-plan job',
+            'POST /care_plan/batch/jobs': 'Create async batch care-plan jobs',
             'GET /care_plan/datasets': 'List preset datasets',
             'GET /care_plan/saved': "List the user's saved care plans",
             'GET /health': 'Health check',

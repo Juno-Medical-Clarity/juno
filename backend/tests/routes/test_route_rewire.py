@@ -6,7 +6,7 @@ def test_routes_package_registers_care_plan_blueprints_and_new_paths_only():
     import routes
 
     assert [bp.name for bp in routes.all_blueprints] == [
-        "care_plan", "saved_outputs", "datasets", "batch", "grading"
+        "care_plan", "batch", "care_plan_jobs", "batch_jobs", "saved_outputs", "datasets", "grading"
     ]
 
     app = Flask(__name__)
@@ -23,6 +23,8 @@ def test_routes_package_registers_care_plan_blueprints_and_new_paths_only():
         "/care_plan/datasets/<group>/<input_id>/<string:filename>",
         "/care_plan/batch",
         "/care_plan/grade",
+        "/care_plan/jobs",
+        "/care_plan/batch/jobs",
     }
     assert expected_care_plan_rules.issubset(rules)
     assert not (
