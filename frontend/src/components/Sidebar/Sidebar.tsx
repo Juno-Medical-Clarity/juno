@@ -68,13 +68,18 @@ export default function Sidebar({ activeId, onSelect, onNew, refreshTrigger }: S
     setMenuOpenId(null);
   }
 
+  function isInProgress(output: SavedOutputMeta): boolean {
+    return output.status === 'not_started' || output.status === 'processing';
+  }
+
   function renderRow(output: SavedOutputMeta) {
+    const inProgress = isInProgress(output);
     return (
       <div
         key={output.id}
         className={`sidebar-item ${activeId === output.id ? 'active' : ''}`}
-        style={{ position: 'relative' }}
-        onClick={() => onSelect(output.id)}
+        style={{ position: 'relative', cursor: inProgress ? 'default' : 'pointer' }}
+        onClick={() => { if (!inProgress) onSelect(output.id); }}
       >
         <div className="sidebar-item-meta">
           {renamingId === output.id ? (
@@ -99,34 +104,52 @@ export default function Sidebar({ activeId, onSelect, onNew, refreshTrigger }: S
             <div className="sidebar-item-name">{output.name}</div>
           )}
         </div>
-        <button
-          className="sidebar-menu-btn"
-          onClick={e => {
-            e.stopPropagation();
-            setMenuOpenId(menuOpenId === output.id ? null : output.id);
-          }}
-        >
-          ⋯
-        </button>
-        {menuOpenId === output.id && (
-          <div className="sidebar-dropdown" ref={menuRef} onClick={e => e.stopPropagation()}>
+        {inProgress ? (
+          <span
+            className="sidebar-spinner"
+            aria-label="Processing"
+            style={{
+              display: 'inline-block',
+              width: '14px',
+              height: '14px',
+              border: '2px solid var(--accent-violet)',
+              borderTopColor: 'transparent',
+              borderRadius: '50%',
+              animation: 'spin 0.8s linear infinite',
+            }}
+          />
+        ) : (
+          <>
             <button
-              className="sidebar-dropdown-item"
-              onClick={() => {
-                setRenamingId(output.id);
-                setRenameValue(output.name);
-                setMenuOpenId(null);
+              className="sidebar-menu-btn"
+              onClick={e => {
+                e.stopPropagation();
+                setMenuOpenId(menuOpenId === output.id ? null : output.id);
               }}
             >
-              Rename
+              ⋯
             </button>
-            <button
-              className="sidebar-dropdown-item danger"
-              onClick={() => handleDelete(output.id)}
-            >
-              Delete
-            </button>
-          </div>
+            {menuOpenId === output.id && (
+              <div className="sidebar-dropdown" ref={menuRef} onClick={e => e.stopPropagation()}>
+                <button
+                  className="sidebar-dropdown-item"
+                  onClick={() => {
+                    setRenamingId(output.id);
+                    setRenameValue(output.name);
+                    setMenuOpenId(null);
+                  }}
+                >
+                  Rename
+                </button>
+                <button
+                  className="sidebar-dropdown-item danger"
+                  onClick={() => handleDelete(output.id)}
+                >
+                  Delete
+                </button>
+              </div>
+            )}
+          </>
         )}
       </div>
     );

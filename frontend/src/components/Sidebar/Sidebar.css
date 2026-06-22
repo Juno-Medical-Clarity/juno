@@ -189,3 +189,7 @@
 details[open] .sidebar-batch-header::before {
   transform: rotate(90deg);
 }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
