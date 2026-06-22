@@ -6,6 +6,8 @@ import CarePlanJobPage from './pages/care-plan/CarePlanJobPage';
 import { useAuth } from './auth/AuthContext';
 import LoginPage from './pages/LoginPage';
 import AuthLayout from './components/AuthLayout';
+import DocsPage from './pages/docs/DocsPage';
+import AlgorithmDocPage from './pages/docs/AlgorithmDocPage';
 
 export default function App() {
   const { user, loading } = useAuth();
@@ -30,6 +32,8 @@ export default function App() {
       <Route element={<AuthLayout />}>
         <Route path="/models" element={<ModelsPage />} />
         <Route path="/models/grading/:versionId" element={<GradingVersionDetailPage />} />
+        <Route path="/docs" element={<DocsPage />} />
+        <Route path="/docs/grading/:slug" element={<AlgorithmDocPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
       {/* CarePlanPage manages its own NavBar */}
