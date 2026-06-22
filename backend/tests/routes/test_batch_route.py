@@ -48,7 +48,9 @@ def test_batch_route_requires_authorization_header(client):
     response = client.post("/care_plan/batch", json={})
 
     assert response.status_code == 401
-    assert response.get_json() == {"error": "No authorization header"}
+    body = response.get_json()
+    assert body["status"] == "error"
+    assert body["error"]["code"] == "MISSING_AUTH_HEADER"
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})

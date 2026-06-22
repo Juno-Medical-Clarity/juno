@@ -31,6 +31,9 @@ def test_grade_missing_both_returns_400(client, auth_ok):
     resp = client.post("/care_plan/grade", json={}, headers=auth_ok)
     assert resp.status_code == 400
     assert "error" in resp.get_json()
+    body = resp.get_json()
+    assert body["status"] == "error"
+    assert body["error"]["code"] == "INPUT_VALIDATION_ERROR"
 
 
 def test_grade_disabled_returns_empty(client, auth_ok):
