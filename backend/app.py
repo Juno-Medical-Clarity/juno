@@ -8,6 +8,7 @@ from flask_cors import CORS
 from opentelemetry import trace
 
 from routes import all_blueprints
+from utils.error_codes import make_error_response, ErrorCode
 from utils.firebase import initialize_firebase
 from logging_config import setup_logging
 from telemetry import init_telemetry
@@ -156,11 +157,18 @@ def root():
 
 @app.errorhandler(404)
 def not_found(error):
-    return jsonify({'error': 'Endpoint not found'}), 404
+    return make_error_response(
+        ErrorCode.ENDPOINT_NOT_FOUND,
+        request.path,
+        {"method": request.method, "path": request.path},
+    ).to_dict(), 404
 
 @app.errorhandler(500)
 def internal_error(error):
-    return jsonify({'error': 'Internal server error'}), 500
+    return make_error_response(
+        ErrorCode.INTERNAL_ERROR,
+        request.path,
+    ).to_dict(), 500
 
 
 # ---------------------------------------------------------------------------
