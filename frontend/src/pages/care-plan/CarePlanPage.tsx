@@ -246,7 +246,7 @@ export default function CarePlanPage() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <NavBar onNew={handleReset} />
+      <NavBar />
       <div style={{ display: 'flex', flex: 1 }}>
       <Sidebar
         activeId={activeSavedId}
@@ -378,8 +378,16 @@ export default function CarePlanPage() {
           {appState === 'result' && result && (
             <section className="result-section">
               <div className="result-header">
-                <h2 className="result-title">Your Care Plan</h2>
-                <span className="deleted-note">🔒 Deleted from servers</span>
+                <div>
+                  <h2 className="result-title">Your Care Plan</h2>
+                  {result.metrics.created_at && (
+                    <p className="result-timestamp">
+                      Simplified on {new Date(result.metrics.created_at).toLocaleDateString('en-US', {
+                        month: 'long', day: 'numeric', year: 'numeric',
+                      })}
+                    </p>
+                  )}
+                </div>
                 {activeSavedId && result && (outputHasInputPdf(result) || outputHasInputText(result)) && (
                   <button
                     onClick={() => setShowSplitView(true)}
