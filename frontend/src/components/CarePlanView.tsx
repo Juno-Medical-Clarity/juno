@@ -96,6 +96,7 @@ function ResultCard({
   );
 }
 
+// TODO(SP5-cleanup): dead code after SP5 — remove in a separate cleanup task
 function ReadabilityCard({ before, after }: { before: PatientScore; after: PatientScore }) {
   const [expanded, setExpanded] = useState(false);
   const jargonBefore = `${Math.round(before.dimensions.jargon_density.raw * 100)}%`;
@@ -160,6 +161,7 @@ function ReadabilityCard({ before, after }: { before: PatientScore; after: Patie
   );
 }
 
+// TODO(SP5-cleanup): dead code after SP5 — remove in a separate cleanup task
 function MethodGradingCards({ grading }: { grading: Grading }) {
   const afterEntries = methodEntriesFromGrading(grading, 'after');
   const beforeEntries = methodEntriesFromGrading(grading, 'before');
@@ -242,17 +244,6 @@ export default function CarePlanView({
 
   return (
     <div className="result-cards">
-      {(() => {
-        const beforeScore = patientScoreFromGrading(grading, 'before');
-        const afterScore = patientScoreFromGrading(grading, 'after');
-        return beforeScore && afterScore ? (
-          <>
-            <ReadabilityCard before={beforeScore} after={afterScore} />
-            <MethodGradingCards grading={grading} />
-          </>
-        ) : null;
-      })()}
-
       {result.summary && (
         <div className="result-card" style={{ background: 'var(--surface-green-muted, #E8EDE3)' }}>
           <div className="result-card-body" style={{ paddingTop: '16px' }}>
