@@ -10,7 +10,7 @@ import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
 import SplitView from '../../components/SplitView';
 import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/carePlan';
-import type { CarePlanInternal } from '../../types/envelope';
+import type { CarePlanInternal, Grading } from '../../types/envelope';
 import type { BatchDatasetSelection } from '../../types/datasets';
 import { normalizeCarePlanOutput } from '../../utils/normalizeOutput';
 import CarePlanView from '../../components/CarePlanView';
@@ -82,6 +82,8 @@ export default function CarePlanPage() {
   const [batchOutputs, setBatchOutputs] = useState<CarePlanInternal[]>([]);
   const [batchGroupIds, setBatchGroupIds] = useState<Record<string, string>>({});
   const [selectedBatchIndex, setSelectedBatchIndex] = useState<number | null>(null);
+  const [gradingLoading, setGradingLoading] = useState(false);
+  const [gradingError, setGradingError] = useState<string | null>(null);
 
   useEffect(() => {
     const output = (location.state as VersionRouteState | null)?.output;
@@ -365,6 +367,39 @@ export default function CarePlanPage() {
     setTimeout(() => printWindow.print(), 500);
   };
 
+  async function handleRunGrading() {
+    if (!result) return;
+    setGradingLoading(true);
+    setGradingError(null);
+    try {
+      const savedId = result.metrics.saved_id;
+      const body = savedId
+        ? { saved_id: savedId }
+        : {
+            text: result.care_plan.raw?.text ?? '',
+            clarified_text: result.care_plan.raw?.clarified_text ?? '',
+          };
+      const res = await authenticatedFetch(`${API_URL}/care_plan/grade`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      if (!res.ok) {
+        // TODO(SP2): parse ApiError from '../types/errors' when SP2 merges.
+        const msg = await res.text();
+        throw new Error(msg || `Server error: ${res.status}`);
+      }
+      const sessionId = res.headers.get('X-Session-Id');
+      if (sessionId) logger.setSessionId(sessionId);
+      const { grading } = await res.json() as { grading: Grading };
+      setResult(prev => prev ? { ...prev, grading } : prev);
+    } catch (err: unknown) {
+      setGradingError(err instanceof Error ? err.message : 'Failed to run grading');
+    } finally {
+      setGradingLoading(false);
+    }
+  }
+
   const handleReset = () => {
     abortRef.current?.abort();
     setFiles([]);
@@ -593,11 +628,6 @@ export default function CarePlanPage() {
 
               <CarePlanView result={result.care_plan} grading={result.grading} />
 
-              <OutputGradingCard
-                output={result}
-                onGraded={(newGrading) => setResult(prev => prev ? { ...prev, grading: newGrading } : prev)}
-              />
-
               {result.metrics.session_id && (
                 <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem' }}>
                   Request ID: {result.metrics.session_id}
@@ -622,6 +652,11 @@ export default function CarePlanPage() {
                 </button>
               </div>
 
+              <OutputGradingCard
+                grading={result.grading}
+                error={gradingError}
+              />
+
               <div className="download-bar">
                 <div className="download-actions">
                   <button className="download-btn-json" onClick={handleDownloadJson}>
@@ -630,7 +665,19 @@ export default function CarePlanPage() {
                   <button className="download-btn-pdf" onClick={handleDownloadPdf}>
                     ↓ Download Report
                   </button>
+                  <button
+                    className="download-btn-grading"
+                    onClick={handleRunGrading}
+                    disabled={gradingLoading}
+                  >
+                    {gradingLoading ? 'Grading…' : '◎ Run Grading'}
+                  </button>
                 </div>
+                {gradingError && (
+                  <p style={{ marginTop: '6px', color: 'var(--error, #DC2626)', fontSize: '0.78rem', textAlign: 'center' }}>
+                    {gradingError}
+                  </p>
+                )}
               </div>
             </section>
           )}
