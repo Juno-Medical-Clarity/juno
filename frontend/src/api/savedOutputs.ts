@@ -1,4 +1,4 @@
-import { authenticatedFetch } from './apiClient';
+import { authenticatedFetchJson } from './apiClient';
 import { API_URL } from './firebase';
 import { SAVED_OUTPUTS_PATH, savedOutputPath, inputPdfUrlPath } from '../constants';
 
@@ -16,37 +16,29 @@ export interface SavedOutput extends SavedOutputMeta {
 }
 
 export async function listSavedOutputs(): Promise<SavedOutputMeta[]> {
-  const res = await authenticatedFetch(`${API_URL}${SAVED_OUTPUTS_PATH}`);
-  if (!res.ok) throw new Error(`Failed to list saved outputs: ${res.status}`);
-  const json = await res.json();
-  return json.outputs as SavedOutputMeta[];
+  const json = await authenticatedFetchJson<{ outputs: SavedOutputMeta[] }>(
+    `${API_URL}${SAVED_OUTPUTS_PATH}`,
+  );
+  return json.outputs;
 }
 
 export async function getSavedOutput(id: string): Promise<SavedOutput> {
-  const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}`);
-  if (!res.ok) throw new Error(`Failed to get saved output: ${res.status}`);
-  return res.json();
+  return authenticatedFetchJson<SavedOutput>(`${API_URL}${savedOutputPath(id)}`);
 }
 
 export async function renameSavedOutput(id: string, name: string): Promise<void> {
-  const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}`, {
+  await authenticatedFetchJson(`${API_URL}${savedOutputPath(id)}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name }),
   });
-  if (!res.ok) throw new Error(`Failed to rename: ${res.status}`);
 }
 
 export async function deleteSavedOutput(id: string): Promise<void> {
-  const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}`, {
-    method: 'DELETE',
-  });
-  if (!res.ok) throw new Error(`Failed to delete: ${res.status}`);
+  await authenticatedFetchJson(`${API_URL}${savedOutputPath(id)}`, { method: 'DELETE' });
 }
 
 export async function getInputPdfUrl(id: string): Promise<string> {
-  const res = await authenticatedFetch(`${API_URL}${inputPdfUrlPath(id)}`);
-  if (!res.ok) throw new Error(`Failed to get PDF URL: ${res.status}`);
-  const json = await res.json();
-  return json.url as string;
+  const json = await authenticatedFetchJson<{ url: string }>(`${API_URL}${inputPdfUrlPath(id)}`);
+  return json.url;
 }
