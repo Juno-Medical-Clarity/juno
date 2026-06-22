@@ -19,6 +19,7 @@ from firebase_admin import firestore
 from google.cloud import storage as gcs
 
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
+from utils.error_codes import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
 saved_outputs_bp = Blueprint("saved_outputs", __name__)
@@ -85,9 +86,17 @@ def rename_saved(user_id: str, doc_id: str):
     body = request.get_json(silent=True) or {}
     new_name = (body.get('name') or '').strip()
     if not new_name:
-        return jsonify({'error': 'name is required'}), 400
+        return make_error_response(
+            ErrorCode.INPUT_VALIDATION_ERROR,
+            f"/care_plan/saved/{doc_id}",
+            {"field": "name", "reason": "required"},
+        ).to_dict(), 400
     if len(new_name) > 200:
-        return jsonify({'error': 'name too long (max 200 chars)'}), 400
+        return make_error_response(
+            ErrorCode.INPUT_VALIDATION_ERROR,
+            f"/care_plan/saved/{doc_id}",
+            {"field": "name", "reason": "max 200 chars"},
+        ).to_dict(), 400
     db.collection('care_plan_outputs').document(doc_id).update({
         'name': new_name,
         'updated_at': datetime.now(timezone.utc),
@@ -141,7 +150,11 @@ def get_input_pdf_url(user_id: str, doc_id: str):
         or data.get('input_pdf_gcs', '')
     )
     if not gcs_uri or not _BUCKET_NAME:
-        return jsonify({'error': 'No input PDF stored for this output'}), 404
+        return make_error_response(
+            ErrorCode.PDF_URL_UNAVAILABLE,
+            f"/care_plan/saved/{doc_id}/input-pdf-url",
+            {"doc_id": doc_id},
+        ).to_dict(), 404
 
     try:
         client = gcs.Client(project=os.environ.get('GCP_PROJECT_ID') or None)
@@ -156,4 +169,7 @@ def get_input_pdf_url(user_id: str, doc_id: str):
         return jsonify({'url': signed_url})
     except Exception as e:
         logger.exception("get_input_pdf_url: failed to generate signed URL")
-        return jsonify({'error': f'Could not generate URL: {e}'}), 500
+        return make_error_response(
+            ErrorCode.INTERNAL_ERROR,
+            f"/care_plan/saved/{doc_id}/input-pdf-url",
+        ).to_dict(), 500
