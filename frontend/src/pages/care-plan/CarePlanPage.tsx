@@ -1,13 +1,9 @@
 import './CarePlanPage.css';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
-import { ApiError } from '../../types/errors';
-import type { ApiErrorDetail } from '../../types/errors';
-import { runBatch } from '../../api/datasets';
 import Sidebar from '../../components/Sidebar';
-import { getSavedOutput } from '../../api/savedOutputs';
 import SplitView from '../../components/SplitView';
 import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/carePlan';
 import type { CarePlanInternal, Grading } from '../../types/envelope';
@@ -19,9 +15,10 @@ import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
-import { CARE_PLAN_API_PATH, DEFAULT_VERSION } from '../../constants';
+import { CARE_PLAN_API_PATH, DEFAULT_VERSION, carePlanPagePath } from '../../constants';
 import type { VersionRouteState } from '../../router';
 import { logger } from '../../utils/logger';
+import { createCarePlanJob, createBatchJobs } from '../../api/jobs';
 
 export const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
@@ -73,7 +70,6 @@ export default function CarePlanPage() {
   const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
   const [result, setResult] = useState<CarePlanInternal | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const abortRef = useRef<AbortController | null>(null);
   const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
   const [sidebarRefresh, setSidebarRefresh] = useState(0);
   const [showSplitView, setShowSplitView] = useState(false);
@@ -121,12 +117,6 @@ export default function CarePlanPage() {
     if (event.dataTransfer.files) handleFiles(Array.from(event.dataTransfer.files));
   };
 
-  const updateStep = useCallback((stepId: number, status: StepStatus) => {
-    setSteps(currentSteps =>
-      currentSteps.map(step => (step.id === stepId ? { ...step, status } : step)),
-    );
-  }, []);
-
   const hasSingleRunInput = inputMode === 'file' ? files.length > 0 : textInput.trim().length > 0;
   const hasPresetDataSelection = presetDataSelection.length > 0;
   const canSubmit = hasPresetDataSelection || hasSingleRunInput;
@@ -143,114 +133,19 @@ export default function CarePlanPage() {
     setBatchProgress(null);
     setActiveSavedId(null);
     setShowSplitView(false);
-    setSteps(resetSteps());
-    setAppState('processing');
-
-    abortRef.current = new AbortController();
 
     if (hasPresetDataSelection) {
       try {
-        const response = await runBatch(
-          presetDataSelection,
-          selectedVersion,
-          gradingEnabled,
-          abortRef.current.signal,
-        );
-
-        if (!response.ok) {
-          const message = await response.text();
-          throw new Error(message || `Server error: ${response.status}`);
-        }
-
-        const sessionId = response.headers.get('X-Session-Id');
-        if (sessionId) logger.setSessionId(sessionId);
-        const traceId = response.headers.get('X-Trace-Id');
-        if (traceId) logger.info('care_plan_request', { traceId });
-
-        const reader = response.body!.getReader();
-        const decoder = new TextDecoder();
-        let buffer = '';
-        let currentBatchInputKey: string | null = null;
-
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-
-          buffer += decoder.decode(value, { stream: true });
-          const lines = buffer.split('\n');
-          buffer = lines.pop() ?? '';
-
-          for (const line of lines) {
-            if (!line.startsWith('data: ')) continue;
-            const payload = line.slice(6).trim();
-            if (!payload || payload === '[DONE]') continue;
-
-            let event: {
-              step: 'batch_progress' | 'batch_result' | 'error';
-              group?: string;
-              input?: string;
-              index?: number;
-              total?: number;
-              status?: 'active' | 'pipeline' | 'done' | 'error';
-              event?: { step?: number | string; status?: StepStatus };
-              data?: { batch_group_ids?: Record<string, string>; outputs?: unknown[] };
-              error?: string;
-              error_data?: unknown;
-            };
-            try {
-              event = JSON.parse(payload);
-            } catch {
-              continue;
-            }
-
-            if (event.step === 'error') {
-              if (event.error_data) {
-                const detail = event.error_data as ApiErrorDetail;
-                throw new ApiError(detail, null);
-              }
-              throw new Error((event.error as string | undefined) || 'Batch processing failed.');
-            }
-
-            if (event.step === 'batch_progress') {
-              if (event.group && event.input && event.index && event.total && event.status) {
-                const inputKey = `${event.group}/${event.input}`;
-                if (event.status === 'active' || inputKey !== currentBatchInputKey) {
-                  currentBatchInputKey = inputKey;
-                  setSteps(resetSteps());
-                }
-                setBatchProgress({
-                  group: event.group,
-                  input: event.input,
-                  index: event.index,
-                  total: event.total,
-                  status: event.status,
-                  error: event.error,
-                });
-              }
-
-              if (event.event && typeof event.event.step === 'number' && event.event.status) {
-                updateStep(event.event.step, event.event.status);
-              }
-              continue;
-            }
-
-            if (event.step === 'batch_result') {
-              const outputs = (event.data?.outputs ?? []).map(output => normalizeCarePlanOutput(output));
-              setBatchOutputs(outputs);
-              setBatchGroupIds(event.data?.batch_group_ids ?? {});
-              setSelectedBatchIndex(outputs.length > 0 ? 0 : null);
-              setResult(outputs[0] ?? null);
-              setAppState('result');
-              const savedId = outputs[0]?.metrics.saved_id;
-              setActiveSavedId(savedId ?? null);
-              setSidebarRefresh(r => r + 1);
-            }
-          }
+        const { job_ids } = await createBatchJobs({
+          selections: presetDataSelection,
+          version: selectedVersion,
+          grading_enabled: gradingEnabled,
+        });
+        if (job_ids.length > 0) {
+          navigate(carePlanPagePath(job_ids[0]));
         }
       } catch (err: unknown) {
-        if (err instanceof Error && err.name === 'AbortError') return;
-        setError(err instanceof ApiError || err instanceof Error ? err.message : 'An unexpected error occurred.');
-        setAppState('upload');
+        setError(err instanceof Error ? err.message : 'An unexpected error occurred.');
       }
       return;
     }
@@ -265,80 +160,10 @@ export default function CarePlanPage() {
     formData.append('grading_enabled', gradingEnabled.toString());
 
     try {
-      const response = await authenticatedFetch(`${API_URL}${CARE_PLAN_API_PATH}`, {
-        method: 'POST',
-        body: formData,
-        signal: abortRef.current.signal,
-      });
-
-      if (!response.ok) {
-        const message = await response.text();
-        throw new Error(message || `Server error: ${response.status}`);
-      }
-
-      const sessionId = response.headers.get('X-Session-Id');
-      if (sessionId) logger.setSessionId(sessionId);
-      const traceId = response.headers.get('X-Trace-Id');
-      if (traceId) logger.info('care_plan_request', { traceId });
-
-      const reader = response.body!.getReader();
-      const decoder = new TextDecoder();
-      let buffer = '';
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split('\n');
-        buffer = lines.pop() ?? '';
-
-        for (const line of lines) {
-          if (!line.startsWith('data: ')) continue;
-          const payload = line.slice(6).trim();
-          if (!payload || payload === '[DONE]') continue;
-
-          try {
-            const event = JSON.parse(payload) as {
-              step: number | 'result' | 'error';
-              status?: 'active' | 'done';
-              data?: unknown;
-              error?: string;
-              error_data?: unknown;
-            };
-
-            if (event.step === 'error' && event.error_data) {
-              const detail = event.error_data as ApiErrorDetail;
-              throw new ApiError(detail, null);
-            } else if (event.step === 'error' && event.error) {
-              // fallback for legacy shape during transition window
-              throw new Error(event.error as string);
-            }
-
-            if (event.step === 'result' && event.data) {
-              const normalized = normalizeCarePlanOutput(event.data);
-              setBatchOutputs([]);
-              setBatchGroupIds({});
-              setSelectedBatchIndex(null);
-              setResult(normalized);
-              setAppState('result');
-              const savedId = normalized.metrics.saved_id;
-              if (savedId) {
-                setActiveSavedId(savedId);
-                setSidebarRefresh(r => r + 1);
-              }
-            } else if (typeof event.step === 'number' && event.status) {
-              updateStep(event.step, event.status);
-            }
-          } catch {
-            // Skip malformed SSE lines.
-          }
-        }
-      }
+      const { job_id } = await createCarePlanJob(formData);
+      navigate(carePlanPagePath(job_id));
     } catch (err: unknown) {
-      if (err instanceof Error && err.name === 'AbortError') return;
-      setError(err instanceof ApiError || err instanceof Error ? err.message : 'An unexpected error occurred.');
-      setAppState('upload');
+      setError(err instanceof Error ? err.message : 'An unexpected error occurred.');
     }
   };
 
@@ -401,7 +226,6 @@ export default function CarePlanPage() {
   }
 
   const handleReset = () => {
-    abortRef.current?.abort();
     setFiles([]);
     setTextInput('');
     setSteps(resetSteps());
@@ -416,19 +240,8 @@ export default function CarePlanPage() {
     setShowSplitView(false);
   };
 
-  async function handleSelectSaved(id: string) {
-    try {
-      const saved = await getSavedOutput(id);
-      const normalized = normalizeCarePlanOutput(saved.output_data);
-      setResult(normalized);
-      setBatchOutputs([]);
-      setBatchGroupIds({});
-      setSelectedBatchIndex(null);
-      setActiveSavedId(id);
-      setAppState('result');
-    } catch {
-      setError('Could not load saved output.');
-    }
+  function handleSelectSaved(id: string) {
+    navigate(carePlanPagePath(id));
   }
 
   return (
