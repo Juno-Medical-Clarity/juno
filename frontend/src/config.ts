@@ -10,3 +10,68 @@ export const VERSIONS = [
     isDefault: true,
   },
 ] as const;
+
+export const GRADING_VERSIONS = [
+  {
+    id: 'v1-0',
+    label: 'Grading Version 1.0',
+    description: 'Multi-method readability and patient health literacy scoring. Computes six individual method scores and a combined composite score.',
+    methods: ['SMOG', 'Flesch-Kincaid', 'Dale-Chall', 'PEMAT', 'SAM', 'CDC CCI'],
+    isDefault: true,
+  },
+] as const;
+
+export const GRADING_VERSION_DETAILS = [
+  {
+    id: 'v1-0',
+    label: 'Grading Version 1.0',
+    description: 'Multi-method readability and patient health literacy scoring. Computes six individual method scores and a combined composite score.',
+    isDefault: true,
+    combinedDescription:
+      'The composite score is a weighted average of the six method scores, normalized to 0–100. A higher score means higher readability/accessibility. The grade_estimate and label fields describe the approximate reading-grade equivalent.',
+    methodDetails: [
+      {
+        id: 'smog',
+        label: 'SMOG',
+        description: 'Polysyllabic word count; designed for health materials (McLaughlin 1969).',
+        breakdownKeys: ['polysyllable_count', 'sentence_count', 'raw_grade'],
+        docsSlug: 'smog',
+      },
+      {
+        id: 'flesch_kincaid',
+        label: 'Flesch-Kincaid',
+        description: 'Sentence length × syllable load; Reading Ease + Grade Level (1975).',
+        breakdownKeys: ['reading_ease', 'grade_level', 'avg_sentence_length', 'avg_syllables_per_word'],
+        docsSlug: 'flesch-kincaid',
+      },
+      {
+        id: 'dale_chall',
+        label: 'Dale-Chall',
+        description: 'Difficult words outside the 3,000 familiar-word list (1948/1995).',
+        breakdownKeys: ['difficult_word_count', 'pct_difficult', 'raw_score'],
+        docsSlug: 'dale-chall',
+      },
+      {
+        id: 'pemat',
+        label: 'PEMAT',
+        description: 'Automated AHRQ approximation: understandability + actionability (2013).',
+        breakdownKeys: ['understandability', 'actionability'],
+        docsSlug: 'pemat',
+      },
+      {
+        id: 'sam',
+        label: 'SAM',
+        description: 'Content, literacy demand, and layout/typography domains (Doak et al. 1996).',
+        breakdownKeys: ['content_score', 'literacy_demand', 'layout_score'],
+        docsSlug: 'sam',
+      },
+      {
+        id: 'cdc_cci',
+        label: 'CDC CCI',
+        description: 'Main message, behavioral recommendations, numbers, call-to-action (CDC).',
+        breakdownKeys: ['main_message', 'behavioral_recommendations', 'numbers_score', 'call_to_action'],
+        docsSlug: 'cdc-cci',
+      },
+    ],
+  },
+] as const;
