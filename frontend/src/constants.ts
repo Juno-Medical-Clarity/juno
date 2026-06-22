@@ -12,3 +12,8 @@ export const datasetFilePath  = (group: string, input: string, file: string) =>
 
 export const DEFAULT_VERSION = 'v1-2';
 export { CARE_PLAN_PATH as CARE_PLAN_API_PATH };
+
+export const CARE_PLAN_JOBS_PATH = '/care_plan/jobs';
+export const CARE_PLAN_BATCH_JOBS_PATH = '/care_plan/batch/jobs';
+export const CARE_PLAN_PAGE_ROUTE = '/carePlan';
+export const carePlanPagePath = (id: string) => `/carePlan/${id}`;
