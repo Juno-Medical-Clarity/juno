@@ -15,7 +15,6 @@ pypdf
 reportlab
 python-docx
 textstat
-google-generativeai>=0.8.0
 pydantic>=2.7,<3
 # scispaCy (optional — improves medical jargon detection in /simplify)
 # Install model separately:

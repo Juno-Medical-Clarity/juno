@@ -1,15 +1,18 @@
 """
 tests/utils/test_llm.py — Tests for utils/llm.py (LLMClient).
 
-Covers:
-  1. Gemini API path selection and generate_text
-  2. Vertex AI path selection, safety settings, generate_text with MAX_TOKENS warning
-  3. generate_json: fenced JSON, raw JSON, invalid JSON
+Covers (Vertex AI path only — AI Studio path removed for HIPAA compliance):
+  1. Vertex AI initialisation: vertexai.init called, GenerativeModel instantiated
+  2. Safety settings applied with all four HarmCategory keys set to BLOCK_NONE
+  3. generate_text: returns stripped text, logs warning on MAX_TOKENS, raises on no candidates
+  4. generate_json: fenced JSON, raw JSON, list, invalid JSON raises ValueError
 """
 
 import json
 import sys
 import os
+import contextlib
+import logging
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -20,26 +23,8 @@ import pytest
 # ---------------------------------------------------------------------------
 
 @pytest.fixture
-def gemini_env():
-    """Set up Gemini API environment and mocks, clean up after."""
-    mock_genai = MagicMock()
-    mock_model = MagicMock()
-    mock_genai.GenerativeModel.return_value = mock_model
-    mock_genai_types = MagicMock()
-
-    with patch.dict("os.environ", {"GEMINI_API_KEY": "test-key"}, clear=False), \
-         patch.dict("sys.modules", {
-             "google.generativeai": mock_genai,
-             "google.generativeai.types": mock_genai_types,
-         }):
-        yield mock_genai, mock_model, mock_genai_types
-
-    sys.modules.pop("utils.llm", None)
-
-
-@pytest.fixture
 def vertex_env():
-    """Set up Vertex AI environment and mocks, clean up after."""
+    """Set up Vertex AI mocks and ensure GEMINI_API_KEY is absent."""
     mock_vertexai = MagicMock()
     mock_GenerativeModel = MagicMock()
     mock_HarmBlockThreshold = MagicMock()
@@ -61,99 +46,45 @@ def vertex_env():
     mock_preview_models.FinishReason = mock_FinishReason
     mock_preview_models.GenerationConfig = mock_GenerationConfig
 
-    original_key = os.environ.pop("GEMINI_API_KEY", None)
+    # Ensure the non-compliant key is never present during tests
+    env_override = {k: v for k, v in os.environ.items() if k != "GEMINI_API_KEY"}
 
-    with patch.dict("sys.modules", {
-        "vertexai": mock_vertexai,
-        "vertexai.preview": MagicMock(),
-        "vertexai.preview.generative_models": mock_preview_models,
-    }):
+    with patch.dict("os.environ", env_override, clear=True), \
+         patch.dict("sys.modules", {
+             "vertexai": mock_vertexai,
+             "vertexai.preview": MagicMock(),
+             "vertexai.preview.generative_models": mock_preview_models,
+         }):
         yield mock_vertexai, mock_GenerativeModel, mock_HarmBlockThreshold, mock_HarmCategory, mock_FinishReason, mock_preview_models
 
     sys.modules.pop("utils.llm", None)
-    if original_key is not None:
-        os.environ["GEMINI_API_KEY"] = original_key
 
 
-@pytest.fixture
-def genai_json_env():
-    """Set up Gemini environment for generate_json tests."""
-    mock_genai = MagicMock()
-    mock_model = MagicMock()
-    mock_genai.GenerativeModel.return_value = mock_model
-    mock_genai_types = MagicMock()
+@contextlib.contextmanager
+def _capture_logs(logger_name, level):
+    """Capture log messages from the named logger."""
+    records = []
 
-    original_key = os.environ.get("GEMINI_API_KEY")
-    os.environ["GEMINI_API_KEY"] = "test-key"
+    class _Handler(logging.Handler):
+        def emit(self, record):
+            records.append(self.format(record))
 
-    with patch.dict("sys.modules", {
-        "google.generativeai": mock_genai,
-        "google.generativeai.types": mock_genai_types,
-    }):
-        yield mock_genai, mock_model
-
-    sys.modules.pop("utils.llm", None)
-    if original_key is None:
-        os.environ.pop("GEMINI_API_KEY", None)
-    else:
-        os.environ["GEMINI_API_KEY"] = original_key
+    handler = _Handler()
+    handler.setLevel(getattr(logging, level))
+    log = logging.getLogger(logger_name)
+    orig_level = log.level
+    log.setLevel(getattr(logging, level))
+    log.addHandler(handler)
+    try:
+        yield records
+    finally:
+        log.removeHandler(handler)
+        log.setLevel(orig_level)
 
 
 # ---------------------------------------------------------------------------
-# Gemini path tests
+# Initialisation tests
 # ---------------------------------------------------------------------------
-
-def test_uses_gemini_api_flag(gemini_env):
-    from utils.llm import LLMClient
-    client = LLMClient()
-    assert client._use_gemini_api
-
-
-def test_configures_api_key(gemini_env):
-    mock_genai, mock_model, _ = gemini_env
-    from utils.llm import LLMClient
-    LLMClient()
-    mock_genai.configure.assert_called_once_with(api_key="test-key")
-
-
-def test_generate_text_returns_response_text(gemini_env):
-    mock_genai, mock_model, _ = gemini_env
-    mock_response = MagicMock()
-    mock_response.text = "hello from gemini"
-    mock_model.generate_content.return_value = mock_response
-
-    from utils.llm import LLMClient
-    client = LLMClient()
-    result = client.generate_text("test prompt")
-
-    assert result == "hello from gemini"
-    mock_model.generate_content.assert_called_once()
-
-
-def test_generate_text_no_safety_settings(gemini_env):
-    """Gemini path must NOT pass safety_settings to generate_content."""
-    mock_genai, mock_model, _ = gemini_env
-    mock_response = MagicMock()
-    mock_response.text = "output"
-    mock_model.generate_content.return_value = mock_response
-
-    from utils.llm import LLMClient
-    client = LLMClient()
-    client.generate_text("prompt")
-
-    call_kwargs = mock_model.generate_content.call_args[1]
-    assert "safety_settings" not in call_kwargs
-
-
-# ---------------------------------------------------------------------------
-# Vertex AI path tests
-# ---------------------------------------------------------------------------
-
-def test_uses_vertex_flag(vertex_env):
-    from utils.llm import LLMClient
-    client = LLMClient()
-    assert not client._use_gemini_api
-
 
 def test_inits_vertexai(vertex_env):
     mock_vertexai, *_ = vertex_env
@@ -163,7 +94,7 @@ def test_inits_vertexai(vertex_env):
 
 
 def test_safety_settings_applied(vertex_env):
-    """Vertex path must have a _safety dict with all 4 HarmCategory keys set to BLOCK_NONE."""
+    """_safety dict must have all 4 HarmCategory keys set to BLOCK_NONE."""
     from utils.llm import LLMClient
     client = LLMClient()
     assert isinstance(client._safety, dict)
@@ -172,13 +103,17 @@ def test_safety_settings_applied(vertex_env):
         assert v == "BLOCK_NONE"
 
 
+# ---------------------------------------------------------------------------
+# generate_text tests
+# ---------------------------------------------------------------------------
+
 def test_generate_text_returns_stripped_text(vertex_env):
     mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 
     mock_candidate = MagicMock()
-    mock_candidate.finish_reason = "OTHER"  # not MAX_TOKENS
+    mock_candidate.finish_reason = "OTHER"
     mock_FinishReason.MAX_TOKENS = "MAX_TOKENS"
 
     mock_response = MagicMock()
@@ -193,8 +128,28 @@ def test_generate_text_returns_stripped_text(vertex_env):
     assert result == "vertex output"
 
 
+def test_generate_text_passes_safety_settings(vertex_env):
+    """generate_text must always pass safety_settings to generate_content."""
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    mock_response = MagicMock()
+    mock_response.candidates = [MagicMock()]
+    mock_response.text = "output"
+    mock_model_instance.generate_content.return_value = mock_response
+
+    from utils.llm import LLMClient
+    client = LLMClient()
+    client.generate_text("prompt")
+
+    call_kwargs = mock_model_instance.generate_content.call_args[1]
+    assert "safety_settings" in call_kwargs
+    assert call_kwargs["safety_settings"] == client._safety
+
+
 def test_generate_text_max_tokens_logs_warning(vertex_env):
-    """When finish_reason == MAX_TOKENS, should log warning but still return partial text."""
+    """When finish_reason == MAX_TOKENS, log a warning but still return text."""
     mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
@@ -210,12 +165,7 @@ def test_generate_text_max_tokens_logs_warning(vertex_env):
 
     from utils.llm import LLMClient
     client = LLMClient()
-    import logging
-    with pytest.raises(Exception) if False else _noop():
-        pass
 
-    # Use caplog is not available here but we can use assertLogs-style via logging capture
-    import logging
     with _capture_logs("utils.llm", "WARNING") as captured:
         result = client.generate_text("test prompt")
 
@@ -242,12 +192,16 @@ def test_generate_text_no_candidates_raises(vertex_env):
 # generate_json tests
 # ---------------------------------------------------------------------------
 
-def test_generate_json_fenced_block(genai_json_env):
-    mock_genai, mock_model = genai_json_env
+def test_generate_json_fenced_block(vertex_env):
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
     payload = {"key": "value", "num": 42}
     mock_response = MagicMock()
+    mock_response.candidates = [MagicMock()]
     mock_response.text = f"```json\n{json.dumps(payload)}\n```"
-    mock_model.generate_content.return_value = mock_response
+    mock_model_instance.generate_content.return_value = mock_response
 
     from utils.llm import LLMClient
     client = LLMClient()
@@ -255,12 +209,16 @@ def test_generate_json_fenced_block(genai_json_env):
     assert result == payload
 
 
-def test_generate_json_raw_json(genai_json_env):
-    mock_genai, mock_model = genai_json_env
+def test_generate_json_raw_json(vertex_env):
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
     payload = {"a": 1}
     mock_response = MagicMock()
+    mock_response.candidates = [MagicMock()]
     mock_response.text = json.dumps(payload)
-    mock_model.generate_content.return_value = mock_response
+    mock_model_instance.generate_content.return_value = mock_response
 
     from utils.llm import LLMClient
     client = LLMClient()
@@ -268,62 +226,34 @@ def test_generate_json_raw_json(genai_json_env):
     assert result == payload
 
 
-def test_generate_json_invalid_raises_value_error(genai_json_env):
-    mock_genai, mock_model = genai_json_env
+def test_generate_json_returns_list(vertex_env):
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    payload = [1, 2, 3]
     mock_response = MagicMock()
+    mock_response.candidates = [MagicMock()]
+    mock_response.text = json.dumps(payload)
+    mock_model_instance.generate_content.return_value = mock_response
+
+    from utils.llm import LLMClient
+    client = LLMClient()
+    result = client.generate_json("prompt")
+    assert result == payload
+
+
+def test_generate_json_invalid_raises_value_error(vertex_env):
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    mock_response = MagicMock()
+    mock_response.candidates = [MagicMock()]
     mock_response.text = "not valid json {{{"
-    mock_model.generate_content.return_value = mock_response
+    mock_model_instance.generate_content.return_value = mock_response
 
     from utils.llm import LLMClient
     client = LLMClient()
     with pytest.raises(ValueError):
         client.generate_json("prompt")
-
-
-def test_generate_json_returns_list(genai_json_env):
-    mock_genai, mock_model = genai_json_env
-    payload = [1, 2, 3]
-    mock_response = MagicMock()
-    mock_response.text = json.dumps(payload)
-    mock_model.generate_content.return_value = mock_response
-
-    from utils.llm import LLMClient
-    client = LLMClient()
-    result = client.generate_json("prompt")
-    assert result == payload
-
-
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
-
-import contextlib
-import logging
-
-
-class _noop:
-    """No-op context manager."""
-    def __enter__(self): return self
-    def __exit__(self, *a): return False
-
-
-@contextlib.contextmanager
-def _capture_logs(logger_name, level):
-    """Capture log messages from the named logger."""
-    records = []
-
-    class _Handler(logging.Handler):
-        def emit(self, record):
-            records.append(self.format(record))
-
-    handler = _Handler()
-    handler.setLevel(getattr(logging, level))
-    logger = logging.getLogger(logger_name)
-    orig_level = logger.level
-    logger.setLevel(getattr(logging, level))
-    logger.addHandler(handler)
-    try:
-        yield records
-    finally:
-        logger.removeHandler(handler)
-        logger.setLevel(orig_level)
