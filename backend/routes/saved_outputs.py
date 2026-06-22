@@ -61,7 +61,7 @@ def list_saved(user_id: str):
 def get_saved(user_id: str, doc_id: str):
     """Return full output data for a single saved output."""
     db = firestore_client()
-    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id)
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id, path=request.path)
     if err:
         return err
     data = doc.to_dict()
@@ -79,7 +79,7 @@ def get_saved(user_id: str, doc_id: str):
 def rename_saved(user_id: str, doc_id: str):
     """Rename a saved output. Body: {"name": "new name"}"""
     db = firestore_client()
-    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id)
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id, path=request.path)
     if err:
         return err
     body = request.get_json(silent=True) or {}
@@ -100,7 +100,7 @@ def rename_saved(user_id: str, doc_id: str):
 def delete_saved(user_id: str, doc_id: str):
     """Delete a saved output and its GCS files."""
     db = firestore_client()
-    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id)
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id, path=request.path)
     if err:
         return err
     data = doc.to_dict()
@@ -131,7 +131,7 @@ def get_input_pdf_url(user_id: str, doc_id: str):
     Used by the Show Original split view.
     """
     db = firestore_client()
-    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id)
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id, path=request.path)
     if err:
         return err
     data = doc.to_dict()

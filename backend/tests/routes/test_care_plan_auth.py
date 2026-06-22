@@ -5,7 +5,9 @@ def test_care_plan_route_requires_authorization_header(client):
     response = client.post("/care_plan")
 
     assert response.status_code == 401
-    assert response.get_json() == {"error": "No authorization header"}
+    body = response.get_json()
+    assert body["status"] == "error"
+    assert body["error"]["code"] == "MISSING_AUTH_HEADER"
 
 
 @pytest.mark.parametrize("path", ["/simplify", "/simplify/v1", "/simplify/v1-1", "/simplify/v1-2"])

@@ -30,7 +30,7 @@ def run_care_plan_grading(user_id: str):
     saved_id = body.get("saved_id")
     if saved_id:
         db = firestore_client()
-        doc, err = get_owned_doc_or_403(db, "care_plan_outputs", saved_id, user_id)
+        doc, err = get_owned_doc_or_403(db, "care_plan_outputs", saved_id, user_id, path=request.path)
         if err:
             return err
 
