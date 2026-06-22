@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import VersionsPage from './pages/VersionsPage';
 import CarePlanPage from './pages/care-plan/CarePlanPage';
+import CarePlanJobPage from './pages/care-plan/CarePlanJobPage';
 import { useAuth } from './auth/AuthContext';
 import LoginPage from './pages/LoginPage';
 import AuthLayout from './components/AuthLayout';
@@ -31,6 +32,8 @@ export default function App() {
       </Route>
       {/* CarePlanPage manages its own NavBar */}
       <Route path="/" element={<CarePlanPage />} />
+      {/* CarePlanJobPage — async job status / result view */}
+      <Route path="/carePlan/:id" element={<CarePlanJobPage />} />
     </Routes>
   );
 }

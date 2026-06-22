@@ -23,7 +23,7 @@ import { CARE_PLAN_API_PATH, DEFAULT_VERSION } from '../../constants';
 import type { VersionRouteState } from '../../router';
 import { logger } from '../../utils/logger';
 
-const INITIAL_STEPS: PipelineStep[] = [
+export const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
   { id: 2, label: 'Finding difficult and medical terms', description: 'Matching terms from AHRQ and medical dictionary', status: 'waiting' },
   { id: 3, label: 'Rewriting to plain language', description: 'Rewriting to a 6th-grade reading level', status: 'waiting' },
