@@ -225,7 +225,7 @@ def test_multi_file_upload_rejects_too_many_files(_verify_token, client, caplog)
         events = _events_from_response(response)
 
     assert events[-1]["step"] == "error"
-    assert "at most 10 files" in events[-1]["error"]
+    assert "at most 10 files" in events[-1]["error_data"]["details"]
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
@@ -248,7 +248,7 @@ def test_multi_file_upload_rejects_aggregate_size_over_limit(_pipeline, _verify_
         events = _events_from_response(response)
 
     assert events[-1]["step"] == "error"
-    assert "combined upload size exceeds" in events[-1]["error"]
+    assert "combined upload size exceeds" in events[-1]["error_data"]["details"]
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
