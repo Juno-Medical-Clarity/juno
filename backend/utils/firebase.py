@@ -129,3 +129,46 @@ def save_care_plan_output(
 
     db.collection("care_plan_outputs").document(output_id).set(payload)
     return output_id
+
+
+def create_job_doc(*, user_id: str, job_id: str, payload: dict) -> None:
+    db = firestore_client()
+    db.collection("care_plan_outputs").document(job_id).set(payload)
+
+
+def update_job_stage(job_id: str, stage: int) -> None:
+    db = firestore_client()
+    db.collection("care_plan_outputs").document(job_id).update({
+        "stage": stage,
+        "updated_at": datetime.now(timezone.utc),
+    })
+
+
+def complete_job(job_id: str, output_data: dict, name: str) -> None:
+    now = datetime.now(timezone.utc)
+    db = firestore_client()
+    db.collection("care_plan_outputs").document(job_id).update({
+        "status": "completed",
+        "stage": 5,
+        "output_data": output_data,
+        "name": name,
+        "completed_at": now,
+        "updated_at": now,
+    })
+
+
+def fail_job(job_id: str, error_data: dict) -> None:
+    now = datetime.now(timezone.utc)
+    db = firestore_client()
+    db.collection("care_plan_outputs").document(job_id).update({
+        "status": "error",
+        "error_data": error_data,
+        "completed_at": now,
+        "updated_at": now,
+    })
+
+
+def get_job_doc(job_id: str) -> dict | None:
+    db = firestore_client()
+    doc = db.collection("care_plan_outputs").document(job_id).get()
+    return doc.to_dict() if doc.exists else None
