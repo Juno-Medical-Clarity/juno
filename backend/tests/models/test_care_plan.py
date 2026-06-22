@@ -8,7 +8,7 @@ from pydantic import ValidationError
 
 from models.care_plan import CarePlan
 from utils.constants import Constants
-from backend.models.care_plan_versions.v1_2 import CarePlanV1_2, Diagnosis
+from models.care_plan_versions.v1_2 import CarePlanV1_2, Diagnosis
 
 FIXTURE_PATH = Path(__file__).parents[1] / "fixtures" / "care_plan_v1_2.json"
 
@@ -89,7 +89,7 @@ def test_care_plan_from_pipeline_result_validates_drift():
 
 def test_structured_llm_schema_properties_match_care_plan_structured_fields():
     from care_plan.v1_2.pipeline import _llm_schema
-    from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
+    from models.care_plan_versions.v1_2 import CarePlanV1_2
 
     care_plan_fields = set(CarePlanV1_2.model_fields)
     structured_fields = care_plan_fields - {"terms", "raw"}

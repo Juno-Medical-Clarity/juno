@@ -156,7 +156,7 @@ def test_type_adapter_rejects_unknown_mode():
 # ---------------------------------------------------------------------------
 
 def _make_internal(input_obj):
-    from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
+    from models.care_plan_versions.v1_2 import CarePlanV1_2
     from models.envelope import CarePlanInternal
     from models.grading import Grading
     from models.metrics import Metrics

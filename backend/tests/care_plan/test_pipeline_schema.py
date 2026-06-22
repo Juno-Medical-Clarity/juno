@@ -6,8 +6,10 @@ import pytest
 
 from care_plan.v1_2 import pipeline as pipeline_module
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
-from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
+from models.care_plan_versions.v1_2 import CarePlanV1_2
 from utils.constants import Constants
+from care_plan.v1_2.pipeline import _llm_schema
+
 
 def test_structuring_schema_is_generated_from_structured_llm_model():
     schema = json.loads(pipeline_module._STRUCTURING_SCHEMA)
@@ -78,10 +80,7 @@ def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
     assert "after_score" not in data
 
 
-def test_llm_schema_excludes_terms_and_raw():
-    from care_plan.v1_2.pipeline import _llm_schema
-    from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
-
+def test_llm_schema_excludes_terms_and_raw():   
     schema = _llm_schema(CarePlanV1_2, {"terms", "raw"})
     props = schema["properties"]
 
@@ -92,8 +91,6 @@ def test_llm_schema_excludes_terms_and_raw():
 
 
 def test_llm_schema_model_validate_without_terms_and_raw():
-    from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
-
     model = CarePlanV1_2.model_validate(
         {"doc_type": "care_plan", "version": "1.2", "summary": "You came in for care."}
     )

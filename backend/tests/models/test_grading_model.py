@@ -6,6 +6,7 @@ from pydantic import ValidationError
 import models.grading as grading_models
 from models.grading import Grading, GradingEntry, build_grading
 from utils.scoring import score_text
+from utils.constants import Constants
 
 
 FIXTURE_TEXT = (
@@ -103,19 +104,19 @@ def test_build_grading_returns_same_entries_and_no_descriptions():
     grading = build_grading(before_score, FIXTURE_TEXT, after_score, FIXTURE_CLARIFIED)
 
     assert [(entry.name, entry.target) for entry in grading.entries] == [
-        ("smog", "before"),
-        ("flesch_kincaid", "before"),
-        ("dale_chall", "before"),
-        ("pemat", "before"),
-        ("sam", "before"),
-        ("cdc_cci", "before"),
+        (Constants.GRADING_METHODS.SMOG.value.value, "before"),
+        (Constants.GRADING_METHODS.FLESCH_KINCAID.value.value, "before"),
+        (Constants.GRADING_METHODS.DALE_CHALL.value.value, "before"),
+        (Constants.GRADING_METHODS.PEMAT.value.value, "before"),
+        (Constants.GRADING_METHODS.SAM.value.value, "before"),
+        (Constants.GRADING_METHODS.CDC_CCI.value.value, "before"),
         ("combined", "before"),
-        ("smog", "after"),
-        ("flesch_kincaid", "after"),
-        ("dale_chall", "after"),
-        ("pemat", "after"),
-        ("sam", "after"),
-        ("cdc_cci", "after"),
+        (Constants.GRADING_METHODS.SMOG.value.value, "after"),
+        (Constants.GRADING_METHODS.FLESCH_KINCAID.value.value, "after"),
+        (Constants.GRADING_METHODS.DALE_CHALL.value.value, "after"),
+        (Constants.GRADING_METHODS.PEMAT.value.value, "after"),
+        (Constants.GRADING_METHODS.SAM.value.value, "after"),
+        (Constants.GRADING_METHODS.CDC_CCI.value.value, "after"),
         ("combined", "after"),
     ]
     assert all(entry.description is None for entry in grading.entries)

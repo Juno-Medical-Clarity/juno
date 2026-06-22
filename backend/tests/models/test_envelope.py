@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
+from models.care_plan_versions.v1_2 import CarePlanV1_2
 from models.grading import Grading
 from models.input import TextInput
 from models.metrics import Metrics

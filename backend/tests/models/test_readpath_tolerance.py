@@ -3,7 +3,7 @@
 import json
 from pathlib import Path
 
-from backend.models.care_plan_versions.v1_2 import CarePlanV1_2
+from models.care_plan_versions.v1_2 import CarePlanV1_2
 
 
 FIXTURE_PATH = Path(__file__).parents[1] / "fixtures" / "care_plan_v1_2.json"

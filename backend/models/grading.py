@@ -40,15 +40,15 @@ def build_grading(
         if score is None or text is None:
             continue
         methods = compute_method_scores(text, score["dimensions"])
-        for method_name in ("smog", "flesch_kincaid", "dale_chall", "pemat", "sam", "cdc_cci"):
-            m = methods[method_name]
+        for method in Constants.GRADING_METHODS:
+            m = methods[method]
             breakdown = {k: v for k, v in m.items() if k != "score"}
             entries.append(GradingEntry(
-                name=method_name,
+                name=method.value.value,
                 target=target,
                 grade=m["score"],
                 grade_breakdown=breakdown,
-                reasoning=Constants.GRADING_METHODS[method_name.upper()].value.description,
+                reasoning=method.value.description,
             ))
         entries.append(GradingEntry(
             name="combined",
