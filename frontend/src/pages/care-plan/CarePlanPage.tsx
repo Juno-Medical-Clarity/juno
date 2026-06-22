@@ -3,6 +3,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
 import { authenticatedFetch } from '../../api/apiClient';
+import { ApiError } from '../../types/errors';
+import type { ApiErrorDetail } from '../../types/errors';
 import { runBatch } from '../../api/datasets';
 import Sidebar from '../../components/Sidebar';
 import { getSavedOutput } from '../../api/savedOutputs';
@@ -191,6 +193,7 @@ export default function CarePlanPage() {
               event?: { step?: number | string; status?: StepStatus };
               data?: { batch_group_ids?: Record<string, string>; outputs?: unknown[] };
               error?: string;
+              error_data?: unknown;
             };
             try {
               event = JSON.parse(payload);
@@ -199,7 +202,11 @@ export default function CarePlanPage() {
             }
 
             if (event.step === 'error') {
-              throw new Error(event.error || 'Batch processing failed.');
+              if (event.error_data) {
+                const detail = event.error_data as ApiErrorDetail;
+                throw new ApiError(detail, null);
+              }
+              throw new Error((event.error as string | undefined) || 'Batch processing failed.');
             }
 
             if (event.step === 'batch_progress') {
@@ -240,7 +247,7 @@ export default function CarePlanPage() {
         }
       } catch (err: unknown) {
         if (err instanceof Error && err.name === 'AbortError') return;
-        setError(err instanceof Error ? err.message : 'An unexpected error occurred.');
+        setError(err instanceof ApiError || err instanceof Error ? err.message : 'An unexpected error occurred.');
         setAppState('upload');
       }
       return;
@@ -291,13 +298,20 @@ export default function CarePlanPage() {
 
           try {
             const event = JSON.parse(payload) as {
-              step: number | 'result';
+              step: number | 'result' | 'error';
               status?: 'active' | 'done';
               data?: unknown;
               error?: string;
+              error_data?: unknown;
             };
 
-            if (event.error) throw new Error(event.error);
+            if (event.step === 'error' && event.error_data) {
+              const detail = event.error_data as ApiErrorDetail;
+              throw new ApiError(detail, null);
+            } else if (event.step === 'error' && event.error) {
+              // fallback for legacy shape during transition window
+              throw new Error(event.error as string);
+            }
 
             if (event.step === 'result' && event.data) {
               const normalized = normalizeCarePlanOutput(event.data);
@@ -321,7 +335,7 @@ export default function CarePlanPage() {
       }
     } catch (err: unknown) {
       if (err instanceof Error && err.name === 'AbortError') return;
-      setError(err instanceof Error ? err.message : 'An unexpected error occurred.');
+      setError(err instanceof ApiError || err instanceof Error ? err.message : 'An unexpected error occurred.');
       setAppState('upload');
     }
   };
