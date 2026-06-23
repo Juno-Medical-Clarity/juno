@@ -12,10 +12,12 @@ export default function NavBar({ isPublicView = false }: NavBarProps) {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
+    let mounted = true;
     if (!user) { setIsAdmin(false); return; }
-    user.getIdTokenResult().then(result => {
-      setIsAdmin(result.claims.admin === true);
-    });
+    user.getIdTokenResult()
+      .then(result => { if (mounted) setIsAdmin(result.claims.admin === true); })
+      .catch(() => { if (mounted) setIsAdmin(false); });
+    return () => { mounted = false; };
   }, [user]);
 
   return (

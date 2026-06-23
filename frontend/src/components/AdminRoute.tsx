@@ -7,10 +7,12 @@ export default function AdminRoute() {
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
 
   useEffect(() => {
+    let mounted = true;
     if (!user) { setIsAdmin(false); return; }
-    user.getIdTokenResult().then(result => {
-      setIsAdmin(result.claims.admin === true);
-    });
+    user.getIdTokenResult()
+      .then(result => { if (mounted) setIsAdmin(result.claims.admin === true); })
+      .catch(() => { if (mounted) setIsAdmin(false); });
+    return () => { mounted = false; };
   }, [user]);
 
   if (isAdmin === null) return <div>Loading...</div>;

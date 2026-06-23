@@ -201,7 +201,7 @@ export default function CarePlanJobPage() {
   }
 
   if (jobDoc.status === 'completed' && result) {
-    const hasInput = outputHasInputPdf(result) || outputHasInputText(result);
+    const hasInput = (!isPublicView && outputHasInputPdf(result)) || outputHasInputText(result);
     const sessionId = result.metrics.session_id ?? id ?? null;
     const traceId = jobDoc.trace_id;
     const sessionLogUrl = sessionId
@@ -302,13 +302,15 @@ export default function CarePlanJobPage() {
                       <button className="download-btn-pdf" onClick={handleDownloadPdf}>
                         ↓ Download Report
                       </button>
-                      <button
-                        className="download-btn-grading"
-                        onClick={handleRunGrading}
-                        disabled={gradingLoading}
-                      >
-                        {gradingLoading ? 'Grading…' : '◎ Run Grading'}
-                      </button>
+                      {!isPublicView && (
+                        <button
+                          className="download-btn-grading"
+                          onClick={handleRunGrading}
+                          disabled={gradingLoading}
+                        >
+                          {gradingLoading ? 'Grading…' : '◎ Run Grading'}
+                        </button>
+                      )}
                       {!isPublicView && (
                         <button
                           className="download-btn-note"
@@ -367,7 +369,7 @@ export default function CarePlanJobPage() {
         </div>
         {showSplitView && (
           <SplitView
-            savedId={result.input.mode === 'file' ? id ?? null : null}
+            savedId={!isPublicView && result.input.mode === 'file' ? id ?? null : null}
             originalText={
               (result.input.mode === 'text' || result.input.mode === 'batch_dataset')
                 ? result.input.text ?? null

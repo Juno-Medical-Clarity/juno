@@ -1,5 +1,6 @@
 import './CarePlanPage.css';
 import { useCallback, useState } from 'react';
+import type { DragEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../components/Sidebar';
 import type { InputMode, PipelineStep } from '../../types/carePlan';
@@ -59,7 +60,7 @@ export default function CarePlanPage() {
     setFiles(selectedFiles);
   }, []);
 
-  const onDrop = (event: React.DragEvent<HTMLDivElement>) => {
+  const onDrop = (event: DragEvent<HTMLDivElement>) => {
     event.preventDefault();
     setDragOver(false);
     if (event.dataTransfer.files) handleFiles(Array.from(event.dataTransfer.files));

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import type { CSSProperties } from 'react';
 import NavBar from '../components/NavBar';
 import { authenticatedFetchJson } from '../api/apiClient';
 import { API_URL } from '../api/firebase';
@@ -59,14 +60,14 @@ const QUICK_LINKS = [
   },
 ];
 
-const tdStyle: React.CSSProperties = {
+const tdStyle: CSSProperties = {
   padding: '6px 10px',
   borderBottom: '1px solid #ddd',
   fontSize: '0.85rem',
   verticalAlign: 'top',
 };
 
-const thStyle: React.CSSProperties = {
+const thStyle: CSSProperties = {
   ...tdStyle,
   fontWeight: 600,
   textAlign: 'left',
