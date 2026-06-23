@@ -80,10 +80,10 @@ def verify_firebase_token(f):
             # Also pass as a kwarg for route handlers that need it explicitly
             kwargs['user_id'] = user_id
 
-            return f(*args, **kwargs)
-
         except Exception as e:
             return make_error_response(ErrorCode.UNAUTHORIZED, request.path, {"detail": str(e)}).to_dict(), 401
+
+        return f(*args, **kwargs)
 
     return decorated_function
 

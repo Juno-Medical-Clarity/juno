@@ -327,16 +327,15 @@ export default function CarePlanPage() {
                 )}
 
                 {error && <div className="error-box">⚠ {error}</div>}
-
-                <button className="cta-btn" disabled={!canSubmit} onClick={handleSubmit}>
-                  Create My Care Plan →
-                </button>
               </div>
               <PresetDataCard onSelectionChange={setPresetDataSelection} />
               <ConfigurationCard
                 gradingEnabled={gradingEnabled}
                 onGradingEnabledChange={setGradingEnabled}
               />
+              <button className="cta-btn" disabled={!canSubmit} onClick={handleSubmit}>
+                Create My Care Plan →
+              </button>
             </section>
           )}
 
