@@ -222,3 +222,11 @@ details[open] .sidebar-batch-header::before {
   animation: sidebar-spin 0.7s linear infinite;
   flex-shrink: 0;
 }
+
+.sidebar-item--error .sidebar-item-name {
+  color: #DC2626;
+}
+
+.sidebar-item--in-progress .sidebar-item-name {
+  color: var(--text-secondary);
+}

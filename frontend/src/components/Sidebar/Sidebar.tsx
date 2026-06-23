@@ -101,10 +101,11 @@ export default function Sidebar({ activeId, onSelect, refreshTrigger, processing
     const inProgress = isInProgress(output);
     // processingIds prop takes precedence if provided; otherwise fall back to status field
     const isProcessing = processingIds ? processingIds.has(output.id) : inProgress;
+    const isError = output.status === 'error';
     return (
       <div
         key={output.id}
-        className={`sidebar-item ${activeId === output.id ? 'active' : ''}`}
+        className={`sidebar-item ${activeId === output.id ? 'active' : ''} ${isError ? 'sidebar-item--error' : ''} ${isProcessing ? 'sidebar-item--in-progress' : ''}`}
         style={{ position: 'relative', cursor: isProcessing ? 'default' : 'pointer' }}
         onClick={() => { if (!isProcessing) onSelect(output.id); }}
       >
