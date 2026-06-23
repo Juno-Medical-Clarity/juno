@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+import { onAuthStateChanged } from 'firebase/auth';
 import { doc, onSnapshot } from 'firebase/firestore';
-import { firebaseDb } from '../api/firebase';
+import { firebaseAuth, firebaseDb } from '../api/firebase';
 import type { ApiErrorDetail } from '../types/errors';
 
 export type JobStatus = 'not_started' | 'processing' | 'completed' | 'error';
@@ -20,6 +21,9 @@ export interface JobDoc {
   error_data: JobErrorData | null;
   name: string;
   batch_run_id: string | null;
+  shared: boolean;
+  comment: string;
+  trace_id: string | null;
 }
 
 export function useJobSnapshot(jobId: string | null): {
@@ -41,33 +45,55 @@ export function useJobSnapshot(jobId: string | null): {
     setLoading(true);
     setError(null);
 
-    const unsubscribe = onSnapshot(
-      doc(firebaseDb, 'care_plan_outputs', jobId),
-      (snapshot) => {
-        if (!snapshot.exists()) {
-          setJobDoc(null);
-          setError(null);
-          setLoading(false);
-          return;
-        }
-        const data = snapshot.data();
-        setJobDoc({
-          status: (data.status as JobStatus) ?? 'completed',
-          stage: data.stage ?? null,
-          output_data: data.output_data ?? null,
-          error_data: data.error_data ?? null,
-          name: data.name ?? '',
-          batch_run_id: data.batch_run_id ?? null,
-        });
-        setLoading(false);
-      },
-      (err) => {
-        setError(err);
-        setLoading(false);
-      },
-    );
+    let unsubscribeSnapshot: (() => void) | null = null;
 
-    return () => unsubscribe();
+    const subscribeToSnapshot = () => {
+      unsubscribeSnapshot = onSnapshot(
+        doc(firebaseDb, 'care_plan_outputs', jobId),
+        (snapshot) => {
+          if (!snapshot.exists()) {
+            setJobDoc(null);
+            setError(null);
+            setLoading(false);
+            return;
+          }
+          const data = snapshot.data();
+          setJobDoc({
+            status: (data.status as JobStatus) ?? 'completed',
+            stage: data.stage ?? null,
+            output_data: data.output_data ?? null,
+            error_data: data.error_data ?? null,
+            name: data.name ?? '',
+            batch_run_id: data.batch_run_id ?? null,
+            shared: data.shared ?? false,
+            comment: data.comment ?? '',
+            trace_id: data.trace_id ?? null,
+          });
+          setLoading(false);
+        },
+        (err) => {
+          setError(err);
+          setLoading(false);
+        },
+      );
+    };
+
+    const unsubscribeAuth = onAuthStateChanged(firebaseAuth, () => {
+      if (unsubscribeSnapshot) {
+        unsubscribeSnapshot();
+        unsubscribeSnapshot = null;
+      }
+      // Clear stale data before re-subscribing so private content is not
+      // left in the UI when the user signs out or switches accounts.
+      setJobDoc(null);
+      setError(null);
+      subscribeToSnapshot();
+    });
+
+    return () => {
+      if (unsubscribeSnapshot) unsubscribeSnapshot();
+      unsubscribeAuth();
+    };
   }, [jobId]);
 
   return { jobDoc, loading, error };

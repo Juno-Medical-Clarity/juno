@@ -5,6 +5,7 @@ import uuid
 from datetime import datetime, timezone
 
 from flask import Blueprint, g, jsonify, request
+from opentelemetry import trace as otel_trace
 
 from utils.firebase import create_job_doc, verify_firebase_token
 from utils.cloud_tasks import enqueue_job, require_env, MissingJobConfigError
@@ -94,6 +95,9 @@ def create_care_plan_job(user_id: str):
     job_id = str(uuid.uuid4())
     now = datetime.now(timezone.utc)
 
+    span_ctx = otel_trace.get_current_span().get_span_context()
+    trace_id = format(span_ctx.trace_id, '032x') if span_ctx.trace_id else None
+
     job_doc = {
         "uid": user_id,
         "name": "Processing…",
@@ -109,6 +113,9 @@ def create_care_plan_job(user_id: str):
         "batch_run_id": None,
         "batch_group_id": None,
         "dataset_group": None,
+        "shared": False,
+        "comment": "",
+        "trace_id": trace_id,
         **input_fields,
     }
     create_job_doc(user_id=user_id, job_id=job_id, payload=job_doc)

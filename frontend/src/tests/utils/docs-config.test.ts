@@ -12,11 +12,11 @@ describe('DOCS_SECTIONS', () => {
     });
   });
 
-  it('grading section has all six expected slugs', () => {
+  it('grading section has all expected slugs', () => {
     const grading = DOCS_SECTIONS.find(s => s.id === 'grading');
     expect(grading).toBeDefined();
     const slugs = grading!.entries.map(e => e.slug);
-    expect(slugs).toEqual(['smog', 'flesch-kincaid', 'dale-chall', 'pemat', 'sam', 'cdc-cci']);
+    expect(slugs).toEqual(['combined-scoring', 'smog', 'flesch-kincaid', 'dale-chall', 'pemat', 'sam', 'cdc-cci']);
   });
 
   it('all grading entries have non-empty slug, name, and content', () => {

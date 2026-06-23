@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 import json
+import logging
 import os
 import uuid
 from datetime import datetime, timezone
@@ -17,6 +18,8 @@ from utils.error_codes import make_error_response, ErrorCode
 from dotenv import load_dotenv
 
 load_dotenv()
+
+logger = logging.getLogger(__name__)
 
 
 def initialize_firebase():
@@ -80,10 +83,50 @@ def verify_firebase_token(f):
             # Also pass as a kwarg for route handlers that need it explicitly
             kwargs['user_id'] = user_id
 
-            return f(*args, **kwargs)
-
         except Exception as e:
             return make_error_response(ErrorCode.UNAUTHORIZED, request.path, {"detail": str(e)}).to_dict(), 401
+
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+
+def require_admin(f):
+    """Decorator to verify Firebase ID token and require the 'admin' custom claim."""
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        # OPTIONS preflight must pass through so flask-cors can attach CORS headers
+        if request.method == 'OPTIONS':
+            return '', 204
+
+        auth_header = request.headers.get('Authorization')
+
+        if not auth_header:
+            return make_error_response(ErrorCode.MISSING_AUTH_HEADER, request.path).to_dict(), 401
+
+        try:
+            # Extract token from "Bearer <token>"
+            parts = auth_header.split(' ', 1)
+            if len(parts) != 2 or parts[0] != 'Bearer':
+                return make_error_response(ErrorCode.MALFORMED_AUTH_HEADER, request.path).to_dict(), 401
+            token = parts[1]
+
+            # Verify the token
+            decoded_token = auth.verify_id_token(token)
+
+            # Check admin custom claim
+            if decoded_token.get('admin') is not True:
+                return make_error_response(ErrorCode.RESOURCE_FORBIDDEN, request.path).to_dict(), 403
+
+            user_id = decoded_token['uid']
+            g.user_id = user_id
+            kwargs['user_id'] = user_id
+
+        except Exception as e:
+            logger.warning("Admin token verification failed: %s", e)
+            return make_error_response(ErrorCode.UNAUTHORIZED, request.path).to_dict(), 401
+
+        return f(*args, **kwargs)
 
     return decorated_function
 

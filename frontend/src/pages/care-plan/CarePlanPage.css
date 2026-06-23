@@ -255,3 +255,117 @@
   opacity: 0.55;
   cursor: not-allowed;
 }
+
+/* ── Share button ─────────────────────────────────────────────── */
+
+.download-btn-share {
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  border: 1px solid #3b82f6;
+  background: transparent;
+  color: #3b82f6;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  transition: opacity 0.15s;
+}
+.download-btn-share:hover:not(:disabled) {
+  background: rgba(59, 130, 246, 0.06);
+}
+.download-btn-share:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ── Add Note button ──────────────────────────────────────────── */
+
+.download-btn-note {
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  transition: opacity 0.15s;
+}
+.download-btn-note:hover {
+  opacity: 0.75;
+}
+
+/* ── Inline comment / annotation area ────────────────────────── */
+
+.comment-area {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comment-area textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  color: var(--text-primary);
+  font-family: Inter, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+}
+.comment-area textarea:focus {
+  outline: none;
+  border-color: var(--accent-violet);
+}
+
+.comment-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.comment-save-btn {
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: var(--accent-violet);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  transition: opacity 0.15s;
+}
+.comment-save-btn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+.comment-save-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.comment-cancel-btn {
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  transition: opacity 0.15s;
+}
+.comment-cancel-btn:hover {
+  opacity: 0.75;
+}
