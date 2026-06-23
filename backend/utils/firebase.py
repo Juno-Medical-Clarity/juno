@@ -88,6 +88,45 @@ def verify_firebase_token(f):
     return decorated_function
 
 
+def require_admin(f):
+    """Decorator to verify Firebase ID token and require the 'admin' custom claim."""
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        # OPTIONS preflight must pass through so flask-cors can attach CORS headers
+        if request.method == 'OPTIONS':
+            return '', 204
+
+        auth_header = request.headers.get('Authorization')
+
+        if not auth_header:
+            return make_error_response(ErrorCode.MISSING_AUTH_HEADER, request.path).to_dict(), 401
+
+        try:
+            # Extract token from "Bearer <token>"
+            parts = auth_header.split(' ', 1)
+            if len(parts) != 2 or parts[0] != 'Bearer':
+                return make_error_response(ErrorCode.MALFORMED_AUTH_HEADER, request.path).to_dict(), 401
+            token = parts[1]
+
+            # Verify the token
+            decoded_token = auth.verify_id_token(token)
+
+            # Check admin custom claim
+            if decoded_token.get('admin') is not True:
+                return make_error_response(ErrorCode.RESOURCE_FORBIDDEN, request.path).to_dict(), 403
+
+            user_id = decoded_token['uid']
+            g.user_id = user_id
+            kwargs['user_id'] = user_id
+
+        except Exception as e:
+            return make_error_response(ErrorCode.UNAUTHORIZED, request.path, {"detail": str(e)}).to_dict(), 401
+
+        return f(*args, **kwargs)
+
+    return decorated_function
+
+
 def get_owned_doc_or_403(db, collection: str, doc_id: str, user_id: str, path: str | None = None):
     """Fetch a document from `collection`, verify ownership.
 

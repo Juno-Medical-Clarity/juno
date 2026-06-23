@@ -18,6 +18,7 @@ import PresetDataCard from '../../components/PresetDataCard';
 import { DEFAULT_VERSION, carePlanPagePath } from '../../constants';
 import type { VersionRouteState } from '../../router';
 import { createCarePlanJob, createBatchJobs } from '../../api/jobs';
+import { updateJobComment } from '../../api/savedOutputs';
 
 export const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
@@ -79,6 +80,11 @@ export default function CarePlanPage() {
   const [selectedBatchIndex, setSelectedBatchIndex] = useState<number | null>(null);
   const [gradingLoading, setGradingLoading] = useState(false);
   const [gradingError, setGradingError] = useState<string | null>(null);
+  const [showCommentArea, setShowCommentArea] = useState(false);
+  const [commentText, setCommentText] = useState('');
+  const [commentSaving, setCommentSaving] = useState(false);
+  const [commentSaved, setCommentSaved] = useState(false);
+  const [localComment, setLocalComment] = useState('');
 
   // processingIds: wired from SP1's useJobStatuses hook.
   // When SP1 lands, import useJobStatuses from '../../api/useJobStatuses'
@@ -229,6 +235,33 @@ export default function CarePlanPage() {
     }
   }
 
+  function handleToggleComment() {
+    if (!showCommentArea) {
+      setCommentText(localComment);
+      setCommentSaved(false);
+    }
+    setShowCommentArea(v => !v);
+  }
+
+  async function handleSaveComment() {
+    setCommentSaving(true);
+    try {
+      if (activeSavedId) {
+        await updateJobComment(activeSavedId, commentText);
+      }
+      setLocalComment(commentText);
+      setCommentSaved(true);
+      setTimeout(() => {
+        setCommentSaved(false);
+        setShowCommentArea(false);
+      }, 1500);
+    } catch {
+      // Keep area open on error so user can retry
+    } finally {
+      setCommentSaving(false);
+    }
+  }
+
   const handleReset = () => {
     setFiles([]);
     setTextInput('');
@@ -242,6 +275,9 @@ export default function CarePlanPage() {
     setAppState('upload');
     setActiveSavedId(null);
     setShowSplitView(false);
+    setShowCommentArea(false);
+    setCommentText('');
+    setLocalComment('');
   };
 
   function handleSelectSaved(id: string) {
@@ -496,11 +532,44 @@ export default function CarePlanPage() {
                   >
                     {gradingLoading ? 'Grading…' : '◎ Run Grading'}
                   </button>
+                  <button
+                    className="download-btn-note"
+                    onClick={handleToggleComment}
+                  >
+                    {showCommentArea
+                      ? 'Cancel Note'
+                      : (localComment ? '✏ Edit Note' : '✏ Add Note')}
+                  </button>
                 </div>
                 {gradingError && (
                   <p style={{ marginTop: '6px', color: 'var(--error, #DC2626)', fontSize: '0.78rem', textAlign: 'center' }}>
                     {gradingError}
                   </p>
+                )}
+                {showCommentArea && (
+                  <div className="comment-area">
+                    <textarea
+                      value={commentText}
+                      onChange={e => setCommentText(e.target.value)}
+                      placeholder="Add a note about this care plan…"
+                      maxLength={2000}
+                    />
+                    <div className="comment-actions">
+                      <button
+                        className="comment-cancel-btn"
+                        onClick={() => setShowCommentArea(false)}
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        className="comment-save-btn"
+                        onClick={handleSaveComment}
+                        disabled={commentSaving}
+                      >
+                        {commentSaved ? 'Saved!' : commentSaving ? 'Saving…' : 'Save'}
+                      </button>
+                    </div>
+                  </div>
                 )}
               </div>
             </section>

@@ -11,6 +11,7 @@ export interface DocsSection {
   entries: DocEntry[];
 }
 
+import combinedScoringMd from './docs/grading/combined-scoring.md?raw';
 import smogMd from './docs/grading/smog.md?raw';
 import fkMd from './docs/grading/flesch-kincaid.md?raw';
 import dcMd from './docs/grading/dale-chall.md?raw';
@@ -24,6 +25,7 @@ export const DOCS_SECTIONS: DocsSection[] = [
     title: 'Grading',
     basePath: '/docs/grading',
     entries: [
+      { slug: 'combined-scoring', name: 'Combined Score',              content: combinedScoringMd },
       { slug: 'smog',           name: 'SMOG',                         content: smogMd },
       { slug: 'flesch-kincaid', name: 'Flesch-Kincaid',               content: fkMd },
       { slug: 'dale-chall',     name: 'Dale-Chall',                   content: dcMd },

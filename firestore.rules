@@ -2,7 +2,8 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /care_plan_outputs/{docId} {
-      allow read: if request.auth != null && request.auth.uid == resource.data.uid;
+      allow read: if (request.auth != null && request.auth.uid == resource.data.uid)
+                   || resource.data.shared == true;
       allow write: if false;
     }
   }

@@ -38,6 +38,24 @@ export async function renameSavedOutput(id: string, name: string): Promise<void>
   if (!res.ok) throw new Error(`Failed to rename: ${res.status}`);
 }
 
+export async function updateJobComment(id: string, comment: string): Promise<void> {
+  const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ comment }),
+  });
+  if (!res.ok) throw new Error(`Failed to update comment: ${res.status}`);
+}
+
+export async function shareOutput(id: string, shared: boolean): Promise<void> {
+  const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}/share`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ shared }),
+  });
+  if (!res.ok) throw new Error('Failed to update share status');
+}
+
 export async function deleteSavedOutput(id: string): Promise<void> {
   // DELETE returns an empty body; use authenticatedFetch to avoid JSON parsing.
   const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}`, { method: 'DELETE' });

@@ -21,6 +21,9 @@ export interface JobDoc {
   error_data: JobErrorData | null;
   name: string;
   batch_run_id: string | null;
+  shared: boolean;
+  comment: string;
+  trace_id: string | null;
 }
 
 export function useJobSnapshot(jobId: string | null): {
@@ -44,18 +47,7 @@ export function useJobSnapshot(jobId: string | null): {
 
     let unsubscribeSnapshot: (() => void) | null = null;
 
-    const unsubscribeAuth = onAuthStateChanged(firebaseAuth, (user) => {
-      if (unsubscribeSnapshot) {
-        unsubscribeSnapshot();
-        unsubscribeSnapshot = null;
-      }
-
-      if (!user) {
-        setJobDoc(null);
-        setLoading(false);
-        return;
-      }
-
+    const subscribeToSnapshot = () => {
       unsubscribeSnapshot = onSnapshot(
         doc(firebaseDb, 'care_plan_outputs', jobId),
         (snapshot) => {
@@ -73,6 +65,9 @@ export function useJobSnapshot(jobId: string | null): {
             error_data: data.error_data ?? null,
             name: data.name ?? '',
             batch_run_id: data.batch_run_id ?? null,
+            shared: data.shared ?? false,
+            comment: data.comment ?? '',
+            trace_id: data.trace_id ?? null,
           });
           setLoading(false);
         },
@@ -81,6 +76,14 @@ export function useJobSnapshot(jobId: string | null): {
           setLoading(false);
         },
       );
+    };
+
+    const unsubscribeAuth = onAuthStateChanged(firebaseAuth, () => {
+      if (unsubscribeSnapshot) {
+        unsubscribeSnapshot();
+        unsubscribeSnapshot = null;
+      }
+      subscribeToSnapshot();
     });
 
     return () => {

@@ -6,6 +6,7 @@ from routes.grading import grading_bp
 from routes.care_plan_jobs import care_plan_jobs_bp
 from routes.batch_jobs import batch_jobs_bp
 from routes.worker import worker_bp
+from routes.admin import admin_bp
 
 # SSE routes kept for migration window; remove in SP3
 API_BLUEPRINTS = [
@@ -16,6 +17,7 @@ API_BLUEPRINTS = [
     saved_outputs_bp,
     datasets_bp,
     grading_bp,
+    admin_bp,
 ]
 
 WORKER_BLUEPRINTS = [

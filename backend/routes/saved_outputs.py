@@ -79,30 +79,59 @@ def get_saved(user_id: str, doc_id: str):
 @saved_outputs_bp.route('/care_plan/saved/<doc_id>', methods=['PATCH'])
 @verify_firebase_token
 def rename_saved(user_id: str, doc_id: str):
-    """Rename a saved output. Body: {"name": "new name"}"""
+    """Update a saved output. Body may include {"name": "new name"} and/or {"comment": "text"}."""
     db = firestore_client()
     doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id, path=request.path)
     if err:
         return err
     body = request.get_json(silent=True) or {}
-    new_name = (body.get('name') or '').strip()
-    if not new_name:
+
+    updates: dict = {'updated_at': datetime.now(timezone.utc)}
+
+    # Handle optional name update
+    if 'name' in body:
+        new_name = (body.get('name') or '').strip()
+        if not new_name:
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                f"/care_plan/saved/{doc_id}",
+                {"field": "name", "reason": "required"},
+            ).to_dict(), 400
+        if len(new_name) > 200:
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                f"/care_plan/saved/{doc_id}",
+                {"field": "name", "reason": "max 200 chars"},
+            ).to_dict(), 400
+        updates['name'] = new_name
+
+    # Handle optional comment update
+    if 'comment' in body:
+        comment = body.get('comment')
+        if not isinstance(comment, str):
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                f"/care_plan/saved/{doc_id}",
+                {"field": "comment", "reason": "must be a string"},
+            ).to_dict(), 400
+        if len(comment) > 2000:
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                f"/care_plan/saved/{doc_id}",
+                {"field": "comment", "reason": "max 2000 chars"},
+            ).to_dict(), 400
+        updates['comment'] = comment
+
+    if len(updates) == 1:
+        # Only updated_at was set — no actual fields were provided
         return make_error_response(
             ErrorCode.INPUT_VALIDATION_ERROR,
             f"/care_plan/saved/{doc_id}",
-            {"field": "name", "reason": "required"},
+            {"reason": "at least one of 'name' or 'comment' is required"},
         ).to_dict(), 400
-    if len(new_name) > 200:
-        return make_error_response(
-            ErrorCode.INPUT_VALIDATION_ERROR,
-            f"/care_plan/saved/{doc_id}",
-            {"field": "name", "reason": "max 200 chars"},
-        ).to_dict(), 400
-    db.collection('care_plan_outputs').document(doc_id).update({
-        'name': new_name,
-        'updated_at': datetime.now(timezone.utc),
-    })
-    return jsonify({'id': doc_id, 'name': new_name})
+
+    db.collection('care_plan_outputs').document(doc_id).update(updates)
+    return jsonify({'id': doc_id, **{k: v for k, v in updates.items() if k != 'updated_at'}})
 
 
 @saved_outputs_bp.route('/care_plan/saved/<doc_id>', methods=['DELETE'])
@@ -174,3 +203,25 @@ def get_input_pdf_url(user_id: str, doc_id: str):
             ErrorCode.INTERNAL_ERROR,
             f"/care_plan/saved/{doc_id}/input-pdf-url",
         ).to_dict(), 500
+
+
+@saved_outputs_bp.route('/care_plan/saved/<doc_id>/share', methods=['PATCH'])
+@verify_firebase_token
+def toggle_share(user_id: str, doc_id: str):
+    """Toggle the shared flag on a saved output. Body: {"shared": true|false}"""
+    db = firestore_client()
+    body = request.get_json(silent=True) or {}
+    shared = body.get('shared')
+    if not isinstance(shared, bool):
+        return make_error_response(
+            ErrorCode.INPUT_VALIDATION_ERROR,
+            f"/care_plan/saved/{doc_id}/share",
+            {"field": "shared", "reason": "must be a boolean"},
+        ).to_dict(), 400
+
+    doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id, path=request.path)
+    if err:
+        return err
+
+    db.collection('care_plan_outputs').document(doc_id).update({'shared': shared})
+    return jsonify({'shared': shared})

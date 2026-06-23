@@ -10,8 +10,10 @@ import OutputGradingCard from '../../components/OutputGradingCard';
 import SplitView from '../../components/SplitView';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import { authenticatedFetchJson } from '../../api/apiClient';
+import { shareOutput, updateJobComment } from '../../api/savedOutputs';
 import { ApiError } from '../../types/errors';
 import { API_URL } from '../../api/firebase';
+import { useAuth } from '../../auth/AuthContext';
 import type { CarePlanInternal, Grading } from '../../types/envelope';
 import { INITIAL_STEPS, outputHasInputPdf, outputHasInputText } from './CarePlanPage';
 import type { PipelineStep } from '../../types/carePlan';
@@ -38,17 +40,51 @@ function stepIcon(status: string): string {
 export default function CarePlanJobPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const { user, getIdToken } = useAuth();
   const { jobDoc, loading, error } = useJobSnapshot(id ?? null);
   const [result, setResult] = useState<CarePlanInternal | null>(null);
   const [gradingLoading, setGradingLoading] = useState(false);
   const [gradingError, setGradingError] = useState<string | null>(null);
   const [showSplitView, setShowSplitView] = useState(false);
+  const [shareLoading, setShareLoading] = useState(false);
+  const [showCommentArea, setShowCommentArea] = useState(false);
+  const [commentText, setCommentText] = useState('');
+  const [commentSaving, setCommentSaving] = useState(false);
+  const [commentSaved, setCommentSaved] = useState(false);
+
+  const isPublicView = !user;
 
   useEffect(() => {
     if (jobDoc?.status === 'completed' && jobDoc.output_data) {
       setResult(normalizeCarePlanOutput(jobDoc.output_data));
     }
   }, [jobDoc]);
+
+  // Sync commentText with jobDoc.comment when opening the textarea
+  function handleToggleComment() {
+    if (!showCommentArea) {
+      setCommentText(jobDoc?.comment ?? '');
+      setCommentSaved(false);
+    }
+    setShowCommentArea(v => !v);
+  }
+
+  async function handleSaveComment() {
+    if (!id) return;
+    setCommentSaving(true);
+    try {
+      await updateJobComment(id, commentText);
+      setCommentSaved(true);
+      setTimeout(() => {
+        setCommentSaved(false);
+        setShowCommentArea(false);
+      }, 1500);
+    } catch {
+      // Keep area open on error so user can retry
+    } finally {
+      setCommentSaving(false);
+    }
+  }
 
   function handleDownloadJson() {
     if (!result) return;
@@ -103,10 +139,23 @@ export default function CarePlanJobPage() {
     }
   }
 
+  async function handleToggleShare() {
+    if (!jobDoc || !user || !id) return;
+    setShareLoading(true);
+    try {
+      await getIdToken();
+      await shareOutput(id, !jobDoc.shared);
+    } catch (e) {
+      console.error('Failed to toggle share:', e);
+    } finally {
+      setShareLoading(false);
+    }
+  }
+
   if (loading) {
     return (
       <>
-        <NavBar />
+        <NavBar isPublicView={isPublicView} />
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--text-secondary)' }}>
           Loading…
         </div>
@@ -119,7 +168,7 @@ export default function CarePlanJobPage() {
       error.message?.toLowerCase().includes('missing or insufficient');
     return (
       <>
-        <NavBar />
+        <NavBar isPublicView={isPublicView} />
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
           {isPermission
             ? 'You do not have permission to view this care plan.'
@@ -132,7 +181,7 @@ export default function CarePlanJobPage() {
   if (!jobDoc) {
     return (
       <>
-        <NavBar />
+        <NavBar isPublicView={isPublicView} />
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--text-secondary)' }}>
           Care plan not found.
         </div>
@@ -140,18 +189,39 @@ export default function CarePlanJobPage() {
     );
   }
 
+  if (isPublicView && !jobDoc.shared) {
+    return (
+      <>
+        <NavBar isPublicView={isPublicView} />
+        <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
+          This care plan is private.
+        </div>
+      </>
+    );
+  }
+
   if (jobDoc.status === 'completed' && result) {
     const hasInput = outputHasInputPdf(result) || outputHasInputText(result);
+    const sessionId = result.metrics.session_id ?? id ?? null;
+    const traceId = jobDoc.trace_id;
+    const sessionLogUrl = sessionId
+      ? `https://console.cloud.google.com/logs/query;query=jsonPayload.session_id%3D"${sessionId}";project=juno-medical-clarity`
+      : null;
+    const traceUrl = traceId
+      ? `https://console.cloud.google.com/traces/list?project=juno-medical-clarity&tid=${traceId}`
+      : null;
     return (
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <NavBar />
+        <NavBar isPublicView={isPublicView} />
         <div style={{ display: 'flex', flex: 1 }}>
-          <Sidebar
-            activeId={id ?? null}
-            onSelect={(selectedId) => navigate(`/carePlan/${selectedId}`)}
-            refreshTrigger={0}
-          />
-          <div style={{ flex: 1, marginLeft: 'var(--sidebar-width, 240px)', minWidth: 0, paddingTop: 'calc(48px + 40px)' }}>
+          {!isPublicView && (
+            <Sidebar
+              activeId={id ?? null}
+              onSelect={(selectedId) => navigate(`/carePlan/${selectedId}`)}
+              refreshTrigger={0}
+            />
+          )}
+          <div style={{ flex: 1, marginLeft: isPublicView ? 0 : 'var(--sidebar-width, 240px)', minWidth: 0, paddingTop: 'calc(48px + 40px)' }}>
             <div className="page-wrapper">
               <div className="container">
                 <section className="result-section">
@@ -183,29 +253,44 @@ export default function CarePlanJobPage() {
 
                   <CarePlanView result={result.care_plan} grading={result.grading} />
 
-                  {result.metrics.session_id && (
-                    <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem' }}>
-                      Request ID: {result.metrics.session_id}
+                  {(sessionId || traceId) && (
+                    <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: '1.8' }}>
+                      {sessionId && (
+                        <div>
+                          Session ID:{' '}
+                          {sessionLogUrl
+                            ? <a href={sessionLogUrl} target="_blank" rel="noopener noreferrer">{sessionId}</a>
+                            : sessionId}
+                        </div>
+                      )}
+                      <div>
+                        Trace ID:{' '}
+                        {traceId && traceUrl
+                          ? <a href={traceUrl} target="_blank" rel="noopener noreferrer">{traceId}</a>
+                          : '—'}
+                      </div>
                     </div>
                   )}
 
-                  <div style={{ marginTop: '32px', textAlign: 'center' }}>
-                    <button
-                      onClick={() => navigate('/')}
-                      style={{
-                        background: 'none',
-                        border: '1px solid var(--border)',
-                        borderRadius: 'var(--radius-pill)',
-                        color: 'var(--text-secondary)',
-                        fontSize: '0.85rem',
-                        padding: '8px 20px',
-                        cursor: 'pointer',
-                        fontFamily: 'Inter, sans-serif',
-                      }}
-                    >
-                      ← Create another care plan
-                    </button>
-                  </div>
+                  {!isPublicView && (
+                    <div style={{ marginTop: '32px', textAlign: 'center' }}>
+                      <button
+                        onClick={() => navigate('/')}
+                        style={{
+                          background: 'none',
+                          border: '1px solid var(--border)',
+                          borderRadius: 'var(--radius-pill)',
+                          color: 'var(--text-secondary)',
+                          fontSize: '0.85rem',
+                          padding: '8px 20px',
+                          cursor: 'pointer',
+                          fontFamily: 'Inter, sans-serif',
+                        }}
+                      >
+                        ← Create another care plan
+                      </button>
+                    </div>
+                  )}
 
                   <OutputGradingCard grading={result.grading} error={gradingError} />
 
@@ -224,11 +309,55 @@ export default function CarePlanJobPage() {
                       >
                         {gradingLoading ? 'Grading…' : '◎ Run Grading'}
                       </button>
+                      {!isPublicView && (
+                        <button
+                          className="download-btn-note"
+                          onClick={handleToggleComment}
+                        >
+                          {showCommentArea
+                            ? 'Cancel Note'
+                            : (jobDoc.comment ? '✏ Edit Note' : '✏ Add Note')}
+                        </button>
+                      )}
+                      {user && (
+                        <button
+                          className="download-btn-share"
+                          onClick={handleToggleShare}
+                          disabled={shareLoading}
+                        >
+                          {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗 Share'}
+                        </button>
+                      )}
                     </div>
                     {gradingError && (
                       <p style={{ marginTop: '6px', color: 'var(--error, #DC2626)', fontSize: '0.78rem', textAlign: 'center' }}>
                         {gradingError}
                       </p>
+                    )}
+                    {showCommentArea && (
+                      <div className="comment-area">
+                        <textarea
+                          value={commentText}
+                          onChange={e => setCommentText(e.target.value)}
+                          placeholder="Add a note about this care plan…"
+                          maxLength={2000}
+                        />
+                        <div className="comment-actions">
+                          <button
+                            className="comment-cancel-btn"
+                            onClick={() => setShowCommentArea(false)}
+                          >
+                            Cancel
+                          </button>
+                          <button
+                            className="comment-save-btn"
+                            onClick={handleSaveComment}
+                            disabled={commentSaving}
+                          >
+                            {commentSaved ? 'Saved!' : commentSaving ? 'Saving…' : 'Save'}
+                          </button>
+                        </div>
+                      </div>
                     )}
                   </div>
                 </section>
@@ -256,7 +385,7 @@ export default function CarePlanJobPage() {
     const message = jobDoc.error_data?.message ?? 'An error occurred processing your care plan.';
     return (
       <>
-        <NavBar />
+        <NavBar isPublicView={isPublicView} />
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
           {message}
         </div>
@@ -267,7 +396,7 @@ export default function CarePlanJobPage() {
   const steps = stepsFromStage(jobDoc.stage);
   return (
     <>
-      <NavBar />
+      <NavBar isPublicView={isPublicView} />
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '80px 32px' }}>
         <div className="glass-card" style={{ padding: '32px' }}>
           <p className="section-title">Creating your care plan…</p>
