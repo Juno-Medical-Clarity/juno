@@ -26,10 +26,13 @@ from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from models.metrics import Metrics
-from models.grading import Grading, build_grading
+from models.grading import Grading, build_grading, GRADING_VERSION
 from models.care_plan import CarePlan
 from models.envelope import CarePlanInternal
+from models.input import INPUT_VERSION
 from utils.markers import Markers, JunoContext
+
+CARE_PLAN_VERSION = Constants.CARE_PLAN_VERSIONS.V1_2.value
 from utils.error_codes import make_error_response, ErrorCode
 from telemetry import get_tracer
 
@@ -40,6 +43,15 @@ _juno_error_logger = logging.getLogger("utils.juno_logger")
 
 care_plan_bp = Blueprint("care_plan", __name__)
 _UPLOAD_PREFIX = "care_plan-uploads"
+
+
+@care_plan_bp.route("/care_plan", methods=["POST"])
+def care_plan_sse_deprecated():
+    """Deprecated SSE endpoint — use POST /care_plan/jobs instead."""
+    from flask import jsonify
+    return jsonify({
+        "error": "This SSE endpoint has been removed. Use POST /care_plan/jobs instead."
+    }), 410
 
 
 def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
@@ -66,6 +78,12 @@ class ResolvedInput:
     source_filename: str
     combined_pdf_bytes: bytes | None = None
     source_kind: str = "upload"
+    file_count: int = 0
+    file_types: list = None
+
+    def __post_init__(self):
+        if self.file_types is None:
+            self.file_types = []
 
 
 def _sse(payload: dict) -> str:
@@ -159,12 +177,17 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
         except Exception:
             logger.exception("care_plan: failed to merge input files - continuing without combined PDF")
 
+    file_count = len(files)
+    file_types = sorted({f.filename.rsplit(".", 1)[1].lower() for f in files if "." in f.filename})
+
     source_filename = ", ".join(filenames)
     return ResolvedInput(
         text="\n".join(text_parts).strip(),
         source_description=source_filename,
         source_filename=source_filename,
         combined_pdf_bytes=combined_pdf_bytes,
+        file_count=file_count,
+        file_types=file_types,
     )
 
 

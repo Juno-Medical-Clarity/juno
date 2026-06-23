@@ -9,10 +9,20 @@ from utils.constants import Constants
 
 MAX_BATCH_RUNS = Constants.MAX_BATCH_RUNS
 from routes.care_plan import _extract_text_from_bytes, run_care_plan_pipeline
+from utils.firebase import save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
 
 
 batch_bp = Blueprint("batch", __name__)
+
+
+@batch_bp.route("/care_plan/batch", methods=["POST"])
+def care_plan_batch_sse_deprecated():
+    """Deprecated SSE batch endpoint — use POST /care_plan/batch/jobs instead."""
+    from flask import jsonify
+    return jsonify({
+        "error": "This SSE endpoint has been removed. Use POST /care_plan/batch/jobs instead."
+    }), 410
 
 
 def _batch_timestamp() -> str:
@@ -102,4 +112,16 @@ def _batch_progress_error(group: str, input_id: str, index: int, total: int, err
         "total": total,
         "status": "error",
         "error": error,
+    }
+
+
+def _pipeline_kwargs_for_batch() -> dict:
+    """Return the canonical keyword arguments for a batch pipeline invocation.
+
+    All batch executions pass ``is_batch=True`` and ``source_kind="batch_dataset"``
+    so that pipeline markers record the correct provenance dimensions.
+    """
+    return {
+        "is_batch": True,
+        "source_kind": "batch_dataset",
     }
