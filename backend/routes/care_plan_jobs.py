@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from flask import Blueprint, g, jsonify, request
 
 from utils.firebase import create_job_doc, verify_firebase_token
-from utils.cloud_tasks import enqueue_job
+from utils.cloud_tasks import enqueue_job, require_env, MissingJobConfigError
 from routes.care_plan import (
     _resolve_uploaded_files,
     upload_combined_pdf,
@@ -116,11 +116,19 @@ def create_care_plan_job(user_id: str):
     try:
         enqueue_job(
             job_id,
-            queue_name=os.environ["CLOUD_TASKS_QUEUE"],
-            worker_url=os.environ["WORKER_URL"],
-            service_account=os.environ["WORKER_SERVICE_ACCOUNT"],
+            queue_name=require_env("CLOUD_TASKS_QUEUE"),
+            worker_url=require_env("WORKER_URL"),
+            service_account=require_env("WORKER_SERVICE_ACCOUNT"),
             deadline_seconds=int(os.environ.get("JOB_TIMEOUT_SECONDS_SINGLE", "300")),
         )
+    except MissingJobConfigError:
+        logger.exception(
+            "care_plan_jobs: missing Cloud Tasks config; cannot enqueue job %s", job_id
+        )
+        return make_error_response(
+            ErrorCode.INTERNAL_ERROR,
+            request.path,
+        ).to_dict(), 500
     except Exception:
         logger.exception("care_plan_jobs: failed to enqueue Cloud Task for job %s", job_id)
         return make_error_response(

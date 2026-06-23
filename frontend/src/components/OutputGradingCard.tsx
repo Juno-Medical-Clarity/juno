@@ -32,7 +32,7 @@ function methodScoreLabel(group: MethodGroup): string {
   return '';
 }
 
-export default function OutputGradingCard({ grading, error: _error }: OutputGradingCardProps) {
+export default function OutputGradingCard({ grading }: OutputGradingCardProps) {
   const [topOpen, setTopOpen] = useState(false);
   const [openRows, setOpenRows] = useState<Set<string>>(new Set());
 

@@ -45,7 +45,21 @@ initialize_firebase()
 # Register all route blueprints
 # ---------------------------------------------------------------------------
 JUNO_MODE = _os.environ.get("JUNO_MODE", "api")
-_blueprints = WORKER_BLUEPRINTS if JUNO_MODE == "worker" else API_BLUEPRINTS
+if JUNO_MODE == "worker":
+    _blueprints = WORKER_BLUEPRINTS
+elif JUNO_MODE == "combined":
+    # Combined mode (used by ephemeral PR previews): a single service serves
+    # both the API routes (which enqueue Cloud Tasks) and the worker routes
+    # (which execute them), enqueuing tasks that call back into itself.
+    # Dedupe in case any blueprint is shared between the two lists.
+    _seen: set = set()
+    _blueprints = []
+    for bp in (*API_BLUEPRINTS, *WORKER_BLUEPRINTS):
+        if id(bp) not in _seen:
+            _seen.add(id(bp))
+            _blueprints.append(bp)
+else:
+    _blueprints = API_BLUEPRINTS
 for bp in _blueprints:
     app.register_blueprint(bp)
 

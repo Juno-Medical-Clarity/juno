@@ -45,6 +45,8 @@ export function useJobSnapshot(jobId: string | null): {
       doc(firebaseDb, 'care_plan_outputs', jobId),
       (snapshot) => {
         if (!snapshot.exists()) {
+          setJobDoc(null);
+          setError(null);
           setLoading(false);
           return;
         }

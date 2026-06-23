@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from flask import Blueprint, jsonify, request
 
 from utils.firebase import create_job_doc, verify_firebase_token
-from utils.cloud_tasks import enqueue_job
+from utils.cloud_tasks import enqueue_job, require_env, MissingJobConfigError
 from routes.batch import _resolve_requested_runs, _combined_text_for_dataset_input, _batch_timestamp
 from utils.constants import Constants
 from utils.error_codes import make_error_response, ErrorCode
@@ -110,12 +110,20 @@ def create_care_plan_batch_jobs(user_id: str):
         try:
             enqueue_job(
                 job_id,
-                queue_name=os.environ["CLOUD_TASKS_QUEUE"],
-                worker_url=os.environ["WORKER_URL"],
-                service_account=os.environ["WORKER_SERVICE_ACCOUNT"],
+                queue_name=require_env("CLOUD_TASKS_QUEUE"),
+                worker_url=require_env("WORKER_URL"),
+                service_account=require_env("WORKER_SERVICE_ACCOUNT"),
                 deadline_seconds=deadline_s,
                 batch_run_id=batch_run_id,
             )
+        except MissingJobConfigError:
+            logger.exception(
+                "batch_jobs: missing Cloud Tasks config; cannot enqueue job %s", job_id
+            )
+            return make_error_response(
+                ErrorCode.INTERNAL_ERROR,
+                request.path,
+            ).to_dict(), 500
         except Exception:
             logger.exception("batch_jobs: failed to enqueue Cloud Task for job %s", job_id)
             return make_error_response(

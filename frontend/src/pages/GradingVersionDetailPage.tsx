@@ -39,9 +39,9 @@ export default function GradingVersionDetailPage() {
               <h3 style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)' }}>
                 {method.label}
               </h3>
-              <a href={`/docs/grading/${method.docsSlug}`} className="top-nav-link">
+              <Link to={`/docs/grading/${method.docsSlug}`} className="top-nav-link">
                 Docs →
-              </a>
+              </Link>
             </div>
             <p style={{ marginTop: '8px', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               {method.description}

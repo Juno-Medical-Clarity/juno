@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { onAuthStateChanged } from 'firebase/auth';
 import { collection, onSnapshot, query, where } from 'firebase/firestore';
 import { firebaseAuth, firebaseDb } from './firebase';
 import type { JobStatus } from '../hooks/useJobSnapshot';
@@ -12,33 +13,47 @@ export function useJobStatuses(): { statuses: Map<string, JobStatus> } {
   const [statuses, setStatuses] = useState<Map<string, JobStatus>>(new Map());
 
   useEffect(() => {
-    const user = firebaseAuth.currentUser;
-    if (!user) {
-      setStatuses(new Map());
-      return;
-    }
+    // Re-subscribe whenever the auth state changes (login/logout) so statuses
+    // never go stale for the currently signed-in user.
+    let unsubscribeSnapshot: (() => void) | null = null;
 
-    const q = query(
-      collection(firebaseDb, 'care_plan_outputs'),
-      where('uid', '==', user.uid),
-    );
+    const unsubscribeAuth = onAuthStateChanged(firebaseAuth, (user) => {
+      // Tear down any subscription tied to the previous user.
+      if (unsubscribeSnapshot) {
+        unsubscribeSnapshot();
+        unsubscribeSnapshot = null;
+      }
 
-    const unsubscribe = onSnapshot(
-      q,
-      (snapshot) => {
-        const next = new Map<string, JobStatus>();
-        snapshot.forEach((docSnap) => {
-          const data = docSnap.data();
-          next.set(docSnap.id, (data.status as JobStatus) ?? 'completed');
-        });
-        setStatuses(next);
-      },
-      () => {
+      if (!user) {
         setStatuses(new Map());
-      },
-    );
+        return;
+      }
 
-    return () => unsubscribe();
+      const q = query(
+        collection(firebaseDb, 'care_plan_outputs'),
+        where('uid', '==', user.uid),
+      );
+
+      unsubscribeSnapshot = onSnapshot(
+        q,
+        (snapshot) => {
+          const next = new Map<string, JobStatus>();
+          snapshot.forEach((docSnap) => {
+            const data = docSnap.data();
+            next.set(docSnap.id, (data.status as JobStatus) ?? 'completed');
+          });
+          setStatuses(next);
+        },
+        () => {
+          setStatuses(new Map());
+        },
+      );
+    });
+
+    return () => {
+      if (unsubscribeSnapshot) unsubscribeSnapshot();
+      unsubscribeAuth();
+    };
   }, []);
 
   return { statuses };
