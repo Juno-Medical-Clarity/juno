@@ -1,68 +1,129 @@
 import { useState } from 'react';
-import { API_URL } from '../api/firebase';
-import { authenticatedFetch } from '../api/apiClient';
-import type { CarePlanInternal, Grading } from '../types/envelope';
-import { logger } from '../utils/logger';
+import type { Grading } from '../types/envelope';
+import { groupGradingEntries, combinedScoreLabel } from '../utils/grading';
+import type { MethodGroup } from '../utils/grading';
 
 interface OutputGradingCardProps {
-  output: CarePlanInternal;
-  onGraded: (grading: Grading) => void;
+  grading: Grading;
+  error: string | null;
 }
 
-export default function OutputGradingCard({ output, onGraded }: OutputGradingCardProps) {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+function BreakdownKV({ breakdown }: { breakdown: Record<string, unknown> }) {
+  const entries = Object.entries(breakdown).filter(
+    ([, v]) => typeof v !== 'object' || v === null
+  );
+  return (
+    <div className="grading-breakdown">
+      {entries.map(([k, v]) => (
+        <span key={k} className="grading-breakdown-item">
+          <strong>{k.replace(/_/g, ' ')}:</strong> {String(v)}
+        </span>
+      ))}
+    </div>
+  );
+}
 
-  async function runGrading() {
-    setLoading(true);
-    setError(null);
-    try {
-      const savedId = output.metrics.saved_id;
-      const body = savedId
-        ? { saved_id: savedId }
-        : {
-            text: output.care_plan.raw?.text ?? '',
-            clarified_text: output.care_plan.raw?.clarified_text ?? '',
-          };
+function methodScoreLabel(group: MethodGroup): string {
+  const before = group.before ? Math.round(group.before.grade) : null;
+  const after = group.after ? Math.round(group.after.grade) : null;
+  if (before !== null && after !== null) return `${before} → ${after}`;
+  if (after !== null) return `${after}`;
+  if (before !== null) return `${before}`;
+  return '';
+}
 
-      const res = await authenticatedFetch(`${API_URL}/care_plan/grade`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body),
-      });
+export default function OutputGradingCard({ grading }: OutputGradingCardProps) {
+  const [topOpen, setTopOpen] = useState(false);
+  const [openRows, setOpenRows] = useState<Set<string>>(new Set());
 
-      if (!res.ok) {
-        const msg = await res.text();
-        throw new Error(msg || `Server error: ${res.status}`);
-      }
+  const groups = groupGradingEntries(grading.entries);
+  const allExpanded = topOpen && groups.length > 0 && openRows.size === groups.length;
 
-      const sessionId = res.headers.get('X-Session-Id');
-      if (sessionId) logger.setSessionId(sessionId);
+  function toggleRow(name: string) {
+    setOpenRows(prev => {
+      const next = new Set(prev);
+      if (next.has(name)) next.delete(name);
+      else next.add(name);
+      return next;
+    });
+  }
 
-      const { grading } = await res.json();
-      onGraded(grading);
-    } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : 'Failed to run grading');
-    } finally {
-      setLoading(false);
+  function handleExpandCollapseAll(e: React.MouseEvent) {
+    e.stopPropagation();
+    if (allExpanded) {
+      setOpenRows(new Set());
+    } else {
+      setOpenRows(new Set(groups.map(g => g.name)));
+      setTopOpen(true);
     }
   }
 
   return (
-    <section className="glass-card configuration-card" style={{ marginTop: '24px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <h2 style={{ margin: 0, fontSize: '1rem', fontWeight: 600 }}>Grading</h2>
-        <button
-          onClick={runGrading}
-          disabled={loading}
-          className="download-btn-pdf"
-          style={{ padding: '8px 16px', fontSize: '0.85rem' }}
-        >
-          {loading ? 'Grading…' : 'Run Grading'}
+    <section className="glass-card grading-section">
+      <div className="grading-top-row" onClick={() => setTopOpen(o => !o)}>
+        <span className="grading-top-label">
+          <span className="grading-toggle-icon">{topOpen ? '▼' : '▶'}</span>
+          {combinedScoreLabel(groups)}
+        </span>
+        <button className="grading-collapse-all" onClick={handleExpandCollapseAll}>
+          {allExpanded ? 'Collapse All' : 'Expand All'}
         </button>
       </div>
-      {error && (
-        <p style={{ marginTop: '8px', color: 'var(--error, #DC2626)', fontSize: '0.8rem' }}>{error}</p>
+
+      {topOpen && (
+        <>
+          {groups.length === 0 ? (
+            <p className="grading-empty-note">
+              No grading data — click Run Grading to score this output.
+            </p>
+          ) : (
+            groups.map(group => {
+              const isOpen = openRows.has(group.name);
+              return (
+                <div key={group.name} className="grading-method-row">
+                  <div
+                    className="grading-method-header"
+                    onClick={() => toggleRow(group.name)}
+                  >
+                    <span className="grading-method-label">
+                      <span className="grading-toggle-icon">{isOpen ? '▼' : '▶'}</span>
+                      {group.label}
+                    </span>
+                    <span className="grading-method-score">{methodScoreLabel(group)}</span>
+                  </div>
+                  {isOpen && (
+                    <div>
+                      {group.before && group.after ? (
+                        <>
+                          <div className="grading-before-after-block">
+                            <div className="grading-target-label">before</div>
+                            {group.before.grade_breakdown && (
+                              <BreakdownKV breakdown={group.before.grade_breakdown as Record<string, unknown>} />
+                            )}
+                          </div>
+                          <div className="grading-before-after-block">
+                            <div className="grading-target-label">after</div>
+                            {group.after.grade_breakdown && (
+                              <BreakdownKV breakdown={group.after.grade_breakdown as Record<string, unknown>} />
+                            )}
+                          </div>
+                        </>
+                      ) : group.before ? (
+                        group.before.grade_breakdown && (
+                          <BreakdownKV breakdown={group.before.grade_breakdown as Record<string, unknown>} />
+                        )
+                      ) : group.after ? (
+                        group.after.grade_breakdown && (
+                          <BreakdownKV breakdown={group.after.grade_breakdown as Record<string, unknown>} />
+                        )
+                      ) : null}
+                    </div>
+                  )}
+                </div>
+              );
+            })
+          )}
+        </>
       )}
     </section>
   );

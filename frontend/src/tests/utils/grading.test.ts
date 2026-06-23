@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { patientScoreFromGrading, methodEntriesFromGrading } from '../../utils/grading';
+import { patientScoreFromGrading, methodEntriesFromGrading, groupGradingEntries, combinedScoreLabel } from '../../utils/grading';
+import type { MethodGroup } from '../../utils/grading';
 import type { Grading } from '../../types/envelope';
 
 function makeDimensions() {
@@ -135,5 +136,98 @@ describe('methodEntriesFromGrading', () => {
   it('returns empty array when entries are empty', () => {
     const grading: Grading = { entries: [], enabled: false, graded_at: null };
     expect(methodEntriesFromGrading(grading, 'after')).toEqual([]);
+  });
+});
+
+describe('groupGradingEntries', () => {
+  it('groups before and after by name', () => {
+    const grading = makeGradingWithCombined();
+    const groups = groupGradingEntries(grading.entries);
+    const fk = groups.find(g => g.name === 'flesch_kincaid');
+    expect(fk).toBeDefined();
+    expect(fk!.before).toBeDefined();
+    expect(fk!.after).toBeDefined();
+    expect(fk!.before!.target).toBe('before');
+    expect(fk!.after!.target).toBe('after');
+  });
+
+  it('returns in METHOD_ORDER order — combined first', () => {
+    const grading = makeGradingWithCombined();
+    const groups = groupGradingEntries(grading.entries);
+    expect(groups[0].name).toBe('combined');
+    expect(groups[groups.length - 1].name).toBe('cdc_cci');
+  });
+
+  it('handles entries with only after target', () => {
+    const entries = [
+      { name: 'smog', target: 'after' as const, grade: 70, grade_breakdown: null, reasoning: null },
+    ];
+    const groups = groupGradingEntries(entries);
+    expect(groups).toHaveLength(1);
+    expect(groups[0].before).toBeUndefined();
+    expect(groups[0].after).toBeDefined();
+  });
+
+  it('handles entries with only before target', () => {
+    const entries = [
+      { name: 'smog', target: 'before' as const, grade: 70, grade_breakdown: null, reasoning: null },
+    ];
+    const groups = groupGradingEntries(entries);
+    expect(groups).toHaveLength(1);
+    expect(groups[0].after).toBeUndefined();
+    expect(groups[0].before).toBeDefined();
+  });
+
+  it('places unknown method names after known ones', () => {
+    const entries = [
+      { name: 'custom_method', target: 'after' as const, grade: 70, grade_breakdown: null, reasoning: null },
+      { name: 'smog',          target: 'after' as const, grade: 65, grade_breakdown: null, reasoning: null },
+    ];
+    const groups = groupGradingEntries(entries);
+    expect(groups[0].name).toBe('smog');
+    expect(groups[1].name).toBe('custom_method');
+  });
+
+  it('returns empty array for empty input', () => {
+    expect(groupGradingEntries([])).toEqual([]);
+  });
+});
+
+describe('combinedScoreLabel', () => {
+  function makeGroups(before: number | null, after: number | null): MethodGroup[] {
+    const group: MethodGroup = {
+      name: 'combined',
+      label: 'Combined Score',
+      before: before !== null
+        ? { name: 'combined', target: 'before', grade: before, grade_breakdown: null, reasoning: null }
+        : undefined,
+      after: after !== null
+        ? { name: 'combined', target: 'after', grade: after, grade_breakdown: null, reasoning: null }
+        : undefined,
+    };
+    return [group];
+  }
+
+  it('returns "Score (X → Y)" when both targets present', () => {
+    expect(combinedScoreLabel(makeGroups(60, 78))).toBe('Score (60 → 78)');
+  });
+
+  it('returns "Score (Y)" when only after present', () => {
+    expect(combinedScoreLabel(makeGroups(null, 78))).toBe('Score (78)');
+  });
+
+  it('returns "Score (X)" when only before present', () => {
+    expect(combinedScoreLabel(makeGroups(60, null))).toBe('Score (60)');
+  });
+
+  it('returns "Score" when no combined entry', () => {
+    const groups: MethodGroup[] = [
+      { name: 'smog', label: 'SMOG', before: undefined, after: undefined },
+    ];
+    expect(combinedScoreLabel(groups)).toBe('Score');
+  });
+
+  it('rounds grades to integer (Math.round)', () => {
+    expect(combinedScoreLabel(makeGroups(null, 78.7))).toBe('Score (79)');
   });
 });

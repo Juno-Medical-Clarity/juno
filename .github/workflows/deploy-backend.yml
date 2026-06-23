@@ -27,31 +27,52 @@ jobs:
       - name: Select backend GCP project
         run: gcloud config set project "$GCP_PROJECT_ID"
 
-      - name: Build and push Docker image
+      - name: Build, push, and deploy juno-api + juno-worker
         run: |
           gcloud builds submit \
             --project "$GCP_PROJECT_ID" \
             --config ./backend/cloudbuild.yaml \
-            --substitutions "_BACKEND_IMAGE=$BACKEND_IMAGE" \
+            --substitutions "_BACKEND_IMAGE=$BACKEND_IMAGE,_REGION=$GCP_REGION" \
             ./backend
 
-      - name: Deploy to Cloud Run
-        uses: google-github-actions/deploy-cloudrun@v2
-        with:
-          service: simplify-backend
-          image: ${{ env.BACKEND_IMAGE }}
-          region: ${{ env.GCP_REGION }}
-          flags: >-
-            --allow-unauthenticated
-            --memory 2Gi
-            --timeout 300
-          env_vars: |
-            GCP_PROJECT_ID=${{ env.GCP_PROJECT_ID }}
-            GCP_BUCKET_NAME=${{ env.GCP_BUCKET_NAME }}
-            GCP_LOCATION=${{ env.GCP_REGION }}
-            VERTEX_AI_MODEL=gemini-3.5-flash
-            SIMPLIFY_DEFAULT_VERSION=v1-2
-            FIRESTORE_DATABASE_ID=(default)
-            GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
-          secrets: |
-            FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest
+      - name: Configure juno-api env vars and secrets
+        run: |
+          WORKER_URL=$(gcloud run services describe juno-worker \
+            --region "$GCP_REGION" --project "$GCP_PROJECT_ID" \
+            --format='value(status.url)')
+
+          gcloud run services update juno-api \
+            --region "$GCP_REGION" \
+            --project "$GCP_PROJECT_ID" \
+            --memory 2Gi \
+            --timeout 300 \
+            --set-env-vars "\
+GCP_PROJECT_ID=$GCP_PROJECT_ID,\
+GCP_BUCKET_NAME=$GCP_BUCKET_NAME,\
+GCP_LOCATION=$GCP_REGION,\
+VERTEX_AI_MODEL=gemini-3.5-flash,\
+SIMPLIFY_DEFAULT_VERSION=v1-2,\
+FIRESTORE_DATABASE_ID=(default),\
+CLOUD_TASKS_QUEUE=projects/$GCP_PROJECT_ID/locations/$GCP_REGION/queues/care-plan-jobs,\
+WORKER_URL=$WORKER_URL,\
+WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com,\
+JOB_TIMEOUT_SECONDS_SINGLE=300,\
+JOB_TIMEOUT_SECONDS_BATCH=900" \
+            --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest"
+
+      - name: Configure juno-worker env vars and secrets
+        run: |
+          gcloud run services update juno-worker \
+            --region "$GCP_REGION" \
+            --project "$GCP_PROJECT_ID" \
+            --memory 2Gi \
+            --timeout 900 \
+            --set-env-vars "\
+GCP_PROJECT_ID=$GCP_PROJECT_ID,\
+GCP_BUCKET_NAME=$GCP_BUCKET_NAME,\
+GCP_LOCATION=$GCP_REGION,\
+VERTEX_AI_MODEL=gemini-3.5-flash,\
+SIMPLIFY_DEFAULT_VERSION=v1-2,\
+FIRESTORE_DATABASE_ID=(default),\
+WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com" \
+            --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest"

@@ -94,7 +94,9 @@ def test_care_plan_rejects_unknown_versions(_verify_token, version, client):
     )
 
     assert response.status_code == 400
-    assert response.get_json() == {"error": f"Unknown version '{version}'"}
+    body = response.get_json()
+    assert body["status"] == "error"
+    assert body["error"]["code"] == "UNKNOWN_VERSION"
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
@@ -106,7 +108,9 @@ def test_care_plan_rejects_non_string_version(_verify_token, client):
     )
 
     assert response.status_code == 400
-    assert response.get_json() == {"error": "Unknown version '['v1-2']'"}
+    body = response.get_json()
+    assert body["status"] == "error"
+    assert body["error"]["code"] == "UNKNOWN_VERSION"
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})

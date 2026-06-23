@@ -11,7 +11,8 @@ from functools import wraps
 
 import firebase_admin
 from firebase_admin import auth, credentials, firestore
-from flask import g, jsonify, request
+from flask import g, request
+from utils.error_codes import make_error_response, ErrorCode
 
 from dotenv import load_dotenv
 
@@ -55,13 +56,13 @@ def verify_firebase_token(f):
         auth_header = request.headers.get('Authorization')
 
         if not auth_header:
-            return jsonify({'error': 'No authorization header'}), 401
+            return make_error_response(ErrorCode.MISSING_AUTH_HEADER, request.path).to_dict(), 401
 
         try:
             # Extract token from "Bearer <token>"
             parts = auth_header.split(' ', 1)
             if len(parts) != 2 or parts[0] != 'Bearer':
-                return jsonify({'error': 'Malformed Authorization header'}), 401
+                return make_error_response(ErrorCode.MALFORMED_AUTH_HEADER, request.path).to_dict(), 401
             token = parts[1]
 
             # Verify the token
@@ -78,12 +79,12 @@ def verify_firebase_token(f):
             return f(*args, **kwargs)
 
         except Exception as e:
-            return jsonify({'error': 'Invalid or expired token', 'details': str(e)}), 401
+            return make_error_response(ErrorCode.UNAUTHORIZED, request.path, {"detail": str(e)}).to_dict(), 401
 
     return decorated_function
 
 
-def get_owned_doc_or_403(db, collection: str, doc_id: str, user_id: str):
+def get_owned_doc_or_403(db, collection: str, doc_id: str, user_id: str, path: str | None = None):
     """Fetch a document from `collection`, verify ownership.
 
     Returns (doc, None) on success, or (None, (response, status_code)) on error.
@@ -91,10 +92,10 @@ def get_owned_doc_or_403(db, collection: str, doc_id: str, user_id: str):
     ref = db.collection(collection).document(doc_id)
     doc = ref.get()
     if not doc.exists:
-        return None, (jsonify({'error': 'Not found'}), 404)
+        return None, (make_error_response(ErrorCode.RESOURCE_NOT_FOUND, path, {"collection": collection, "doc_id": doc_id}).to_dict(), 404)
     data = doc.to_dict()
     if data.get('uid') != user_id:
-        return None, (jsonify({'error': 'Forbidden'}), 403)
+        return None, (make_error_response(ErrorCode.RESOURCE_FORBIDDEN, path, {"collection": collection, "doc_id": doc_id}).to_dict(), 403)
     return doc, None
 
 
@@ -128,3 +129,46 @@ def save_care_plan_output(
 
     db.collection("care_plan_outputs").document(output_id).set(payload)
     return output_id
+
+
+def create_job_doc(*, user_id: str, job_id: str, payload: dict) -> None:
+    db = firestore_client()
+    db.collection("care_plan_outputs").document(job_id).set(payload)
+
+
+def update_job_stage(job_id: str, stage: int) -> None:
+    db = firestore_client()
+    db.collection("care_plan_outputs").document(job_id).update({
+        "stage": stage,
+        "updated_at": datetime.now(timezone.utc),
+    })
+
+
+def complete_job(job_id: str, output_data: dict, name: str) -> None:
+    now = datetime.now(timezone.utc)
+    db = firestore_client()
+    db.collection("care_plan_outputs").document(job_id).update({
+        "status": "completed",
+        "stage": 5,
+        "output_data": output_data,
+        "name": name,
+        "completed_at": now,
+        "updated_at": now,
+    })
+
+
+def fail_job(job_id: str, error_data: dict) -> None:
+    now = datetime.now(timezone.utc)
+    db = firestore_client()
+    db.collection("care_plan_outputs").document(job_id).update({
+        "status": "error",
+        "error_data": error_data,
+        "completed_at": now,
+        "updated_at": now,
+    })
+
+
+def get_job_doc(job_id: str) -> dict | None:
+    db = firestore_client()
+    doc = db.collection("care_plan_outputs").document(job_id).get()
+    return doc.to_dict() if doc.exists else None

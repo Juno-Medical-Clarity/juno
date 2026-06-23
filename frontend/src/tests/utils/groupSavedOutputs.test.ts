@@ -81,4 +81,10 @@ describe('groupSavedOutputs', () => {
   it('formats date keys by parsing date parts explicitly', () => {
     expect(formatDateKey('2026-06-16')).toBe('June 16, 2026');
   });
+
+  it('sorts standalone items within a date group newest-first', () => {
+    const result = groupSavedOutputs(FIXTURE);
+    // s1 created_at 12:00, s2 created_at 11:00 — s1 should come first
+    expect(result[0].standalone.map(o => o.id)).toEqual(['s1', 's2']);
+  });
 });

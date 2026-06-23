@@ -133,6 +133,9 @@ def test_get_input_pdf_url_neither_set_returns_404(mock_firestore_client, _verif
 
     assert response.status_code == 404
     assert "error" in response.get_json()
+    body = response.get_json()
+    assert body["status"] == "error"
+    assert body["error"]["code"] == "PDF_URL_UNAVAILABLE"
 
 
 # ---------------------------------------------------------------------------

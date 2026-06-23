@@ -45,6 +45,7 @@ from models.grading import Grading, build_grading, GRADING_VERSION
 from models.care_plan import CarePlan
 from models.envelope import CarePlanInternal
 from utils.markers import Markers, JunoContext
+from utils.error_codes import make_error_response, ErrorCode
 from telemetry import get_tracer
 
 logger = logging.getLogger(__name__)
@@ -85,6 +86,11 @@ class ResolvedInput:
 def _sse(payload: dict) -> str:
     """Format a Python dict as an SSE data line."""
     return f"data: {json.dumps(payload)}\n\n"
+
+
+def _sse_error(code: ErrorCode, path: str, details_vars: dict | None = None) -> str:
+    resp = make_error_response(code, path=path, details_vars=details_vars)
+    return _sse({"step": "error", "error_data": resp.error.to_dict()})
 
 
 def _allowed(filename: str) -> bool:
@@ -344,7 +350,7 @@ def run_care_plan_pipeline(
         try:
             pipeline = CarePlanV1_2Pipeline()
         except Exception as e:
-            yield _sse({"step": "error", "error": f"Failed to initialize pipeline: {e}"})
+            yield _sse_error(ErrorCode.PIPELINE_INIT_ERROR, "/care_plan", {"detail": str(e)})
             return
 
         # Step 2: Term detection (deterministic; no LLM)
@@ -393,7 +399,7 @@ def run_care_plan_pipeline(
             simplified = Markers.CarePlan.SimplifyLanguage.execute(_simplify)
         except Exception as exc:
             logger.exception("care_plan: simplification failed")
-            yield _sse({"step": "error", "error": f"Simplification failed: {exc}"})
+            yield _sse_error(ErrorCode.SIMPLIFICATION_FAILED, "/care_plan", {"detail": str(exc)})
             return
         yield _sse({"step": 3, "status": "done", "label": Constants.STEPS[3]})
 
@@ -433,7 +439,7 @@ def run_care_plan_pipeline(
             structured = Markers.CarePlan.StructureNote.execute(_structure)
         except Exception as exc:
             logger.exception("care_plan: structuring failed")
-            yield _sse({"step": "error", "error": f"Structuring failed: {exc}"})
+            yield _sse_error(ErrorCode.STRUCTURING_FAILED, "/care_plan", {"detail": str(exc)})
             return
         yield _sse({"step": 5, "status": "done", "label": Constants.STEPS[5]})
 
@@ -490,7 +496,7 @@ def run_care_plan_pipeline(
             scope.mark_failed()
         Markers.CarePlan.Pipeline.execute(_pipeline_fail)
         logger.exception("care_plan: unexpected pipeline error")
-        yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
+        yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan", {"detail": str(exc)})
 
 
 def _payload_from_sse(chunk: str) -> dict | None:
@@ -533,12 +539,12 @@ def _care_plan_stream(user_id: str, version: str):
         except Exception as exc:
             logger.exception("care_plan: input resolution failed")
             _juno_error_logger.error("care_plan: input resolution failed: %s", exc)
-            yield _sse({"step": "error", "error": f"Could not read input: {exc}"})
+            yield _sse_error(ErrorCode.INPUT_VALIDATION_ERROR, "/care_plan", {"field": "input", "reason": str(exc)})
             return
 
         text = resolved.text
         if not text.strip():
-            yield _sse({"step": "error", "error": "Input appears to be empty or unreadable."})
+            yield _sse_error(ErrorCode.INPUT_EMPTY, "/care_plan")
             return
 
         metrics = Metrics.start(
@@ -561,10 +567,7 @@ def _care_plan_stream(user_id: str, version: str):
             if isinstance(chunk, str):
                 payload = _payload_from_sse(chunk)
                 if payload and payload.get("step") == "result":
-                    yield _sse({
-                        "step": "error",
-                        "error": "Pipeline result SSE is invalid; use the route result sentinel.",
-                    })
+                    yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan", {"detail": "Pipeline result SSE is invalid; use the route result sentinel."})
                     return
                 yield chunk
                 continue
@@ -615,7 +618,7 @@ def _care_plan_stream(user_id: str, version: str):
         yield _sse({"step": "result", "data": payload})
     except Exception as exc:
         logger.exception("care_plan: unexpected pipeline error")
-        yield _sse({"step": "error", "error": f"Pipeline error: {exc}"})
+        yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan", {"detail": str(exc)})
 
 
 PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
@@ -634,7 +637,11 @@ def create_care_plan(user_id: str):
         version = CARE_PLAN_DEFAULT_VERSION
 
     if not isinstance(version, str) or version not in Constants.ALLOWED_VERSIONS:
-        return {"error": f"Unknown version '{version}'"}, 400
+        return make_error_response(
+            ErrorCode.UNKNOWN_VERSION,
+            request.path,
+            {"version": version, "allowed": ", ".join(Constants.ALLOWED_VERSIONS)},
+        ).to_dict(), 400
 
     return Response(
         stream_with_context(_care_plan_stream(getattr(g, "user_id", user_id), version)),

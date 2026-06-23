@@ -5,6 +5,38 @@ steps:
       - --tag
       - $_BACKEND_IMAGE
       - .
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - $_BACKEND_IMAGE
+
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - run
+      - deploy
+      - juno-api
+      - --image=$_BACKEND_IMAGE
+      - --region=$_REGION
+      - --platform=managed
+      - --set-env-vars=JUNO_MODE=api
+      - --min-instances=1
+      - --allow-unauthenticated
+
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - run
+      - deploy
+      - juno-worker
+      - --image=$_BACKEND_IMAGE
+      - --region=$_REGION
+      - --platform=managed
+      - --set-env-vars=JUNO_MODE=worker
+      - --min-instances=0
+      - --max-instances=3
+      - --no-allow-unauthenticated
+      - --ingress=internal
+
 images:
   - $_BACKEND_IMAGE
 options:

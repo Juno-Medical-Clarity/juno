@@ -98,4 +98,6 @@ def test_dataset_routes_require_authorization_header(path, dataset_client):
     response = client.get(path)
 
     assert response.status_code == 401
-    assert response.get_json() == {"error": "No authorization header"}
+    body = response.get_json()
+    assert body["status"] == "error"
+    assert body["error"]["code"] == "MISSING_AUTH_HEADER"

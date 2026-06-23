@@ -48,7 +48,9 @@ def test_batch_route_requires_authorization_header(client):
     response = client.post("/care_plan/batch", json={})
 
     assert response.status_code == 401
-    assert response.get_json() == {"error": "No authorization header"}
+    body = response.get_json()
+    assert body["status"] == "error"
+    assert body["error"]["code"] == "MISSING_AUTH_HEADER"
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
@@ -181,7 +183,11 @@ def test_batch_selection_errors_stream_sse_error_not_500(_verify_token, client):
         response_text = response.get_data(as_text=True)
 
     assert response.status_code == 200
-    assert parse_sse(response_text) == [{"step": "error", "error": "Dataset group not found: MissingGroup"}]
+    events = parse_sse(response_text)
+    assert len(events) == 1
+    assert events[0]["step"] == "error"
+    assert events[0]["error_data"]["code"] == "BATCH_INVALID_SELECTION"
+    assert "MissingGroup" in events[0]["error_data"]["details"]
 
 
 @pytest.mark.parametrize("version", ["v1", "v1-1"])
@@ -205,7 +211,8 @@ def test_batch_rejects_unknown_version_with_sse_error(_verify_token, version, cl
     assert response.status_code == 200
     events = parse_sse(response_text)
     assert events[0]["step"] == "error"
-    assert version in events[0]["error"]
+    assert events[0]["error_data"]["code"] == "UNKNOWN_VERSION"
+    assert version in events[0]["error_data"]["details"]
 
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
@@ -234,7 +241,11 @@ def test_batch_rejects_too_many_runs_before_pipeline_work(_verify_token, client)
         response_text = response.get_data(as_text=True)
 
     assert response.status_code == 200
-    assert parse_sse(response_text) == [{"step": "error", "error": "Batch request exceeds maximum of 2 runs"}]
+    events = parse_sse(response_text)
+    assert len(events) == 1
+    assert events[0]["step"] == "error"
+    assert events[0]["error_data"]["code"] == "BATCH_TOO_LARGE"
+    assert events[0]["error_data"]["message"] == "Batch request too large"
     list_datasets.assert_called_once_with()
     batch_timestamp.assert_not_called()
     read_file.assert_not_called()

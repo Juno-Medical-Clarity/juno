@@ -1,27 +1,25 @@
 import './CarePlanPage.css';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/firebase';
-import { authenticatedFetch } from '../../api/apiClient';
-import { runBatch } from '../../api/datasets';
+import { authenticatedFetchJson } from '../../api/apiClient';
+import { ApiError } from '../../types/errors';
 import Sidebar from '../../components/Sidebar';
-import { getSavedOutput } from '../../api/savedOutputs';
 import SplitView from '../../components/SplitView';
 import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/carePlan';
-import type { CarePlanInternal } from '../../types/envelope';
+import type { CarePlanInternal, Grading } from '../../types/envelope';
 import type { BatchDatasetSelection } from '../../types/datasets';
-import { normalizeCarePlanOutput } from '../../utils/normalizeOutput';
 import CarePlanView from '../../components/CarePlanView';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
-import { CARE_PLAN_API_PATH, DEFAULT_VERSION } from '../../constants';
+import { DEFAULT_VERSION, carePlanPagePath } from '../../constants';
 import type { VersionRouteState } from '../../router';
-import { logger } from '../../utils/logger';
+import { createCarePlanJob, createBatchJobs } from '../../api/jobs';
 
-const INITIAL_STEPS: PipelineStep[] = [
+export const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
   { id: 2, label: 'Finding difficult and medical terms', description: 'Matching terms from AHRQ and medical dictionary', status: 'waiting' },
   { id: 3, label: 'Rewriting to plain language', description: 'Rewriting to a 6th-grade reading level', status: 'waiting' },
@@ -71,7 +69,6 @@ export default function CarePlanPage() {
   const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
   const [result, setResult] = useState<CarePlanInternal | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const abortRef = useRef<AbortController | null>(null);
   const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
   const [sidebarRefresh, setSidebarRefresh] = useState(0);
   const [showSplitView, setShowSplitView] = useState(false);
@@ -80,6 +77,14 @@ export default function CarePlanPage() {
   const [batchOutputs, setBatchOutputs] = useState<CarePlanInternal[]>([]);
   const [batchGroupIds, setBatchGroupIds] = useState<Record<string, string>>({});
   const [selectedBatchIndex, setSelectedBatchIndex] = useState<number | null>(null);
+  const [gradingLoading, setGradingLoading] = useState(false);
+  const [gradingError, setGradingError] = useState<string | null>(null);
+
+  // processingIds: wired from SP1's useJobStatuses hook.
+  // When SP1 lands, import useJobStatuses from '../../api/useJobStatuses'
+  // and compute this set from statuses Map (status === 'not_started' | 'processing').
+  // Until then, undefined causes Sidebar to show no spinners (graceful degradation).
+  const processingIds: Set<string> | undefined = undefined; // TODO: wire SP1
 
   useEffect(() => {
     const output = (location.state as VersionRouteState | null)?.output;
@@ -117,12 +122,6 @@ export default function CarePlanPage() {
     if (event.dataTransfer.files) handleFiles(Array.from(event.dataTransfer.files));
   };
 
-  const updateStep = useCallback((stepId: number, status: StepStatus) => {
-    setSteps(currentSteps =>
-      currentSteps.map(step => (step.id === stepId ? { ...step, status } : step)),
-    );
-  }, []);
-
   const hasSingleRunInput = inputMode === 'file' ? files.length > 0 : textInput.trim().length > 0;
   const hasPresetDataSelection = presetDataSelection.length > 0;
   const canSubmit = hasPresetDataSelection || hasSingleRunInput;
@@ -139,109 +138,19 @@ export default function CarePlanPage() {
     setBatchProgress(null);
     setActiveSavedId(null);
     setShowSplitView(false);
-    setSteps(resetSteps());
-    setAppState('processing');
-
-    abortRef.current = new AbortController();
 
     if (hasPresetDataSelection) {
       try {
-        const response = await runBatch(
-          presetDataSelection,
-          selectedVersion,
-          gradingEnabled,
-          abortRef.current.signal,
-        );
-
-        if (!response.ok) {
-          const message = await response.text();
-          throw new Error(message || `Server error: ${response.status}`);
-        }
-
-        const sessionId = response.headers.get('X-Session-Id');
-        if (sessionId) logger.setSessionId(sessionId);
-        const traceId = response.headers.get('X-Trace-Id');
-        if (traceId) logger.info('care_plan_request', { traceId });
-
-        const reader = response.body!.getReader();
-        const decoder = new TextDecoder();
-        let buffer = '';
-        let currentBatchInputKey: string | null = null;
-
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-
-          buffer += decoder.decode(value, { stream: true });
-          const lines = buffer.split('\n');
-          buffer = lines.pop() ?? '';
-
-          for (const line of lines) {
-            if (!line.startsWith('data: ')) continue;
-            const payload = line.slice(6).trim();
-            if (!payload || payload === '[DONE]') continue;
-
-            let event: {
-              step: 'batch_progress' | 'batch_result' | 'error';
-              group?: string;
-              input?: string;
-              index?: number;
-              total?: number;
-              status?: 'active' | 'pipeline' | 'done' | 'error';
-              event?: { step?: number | string; status?: StepStatus };
-              data?: { batch_group_ids?: Record<string, string>; outputs?: unknown[] };
-              error?: string;
-            };
-            try {
-              event = JSON.parse(payload);
-            } catch {
-              continue;
-            }
-
-            if (event.step === 'error') {
-              throw new Error(event.error || 'Batch processing failed.');
-            }
-
-            if (event.step === 'batch_progress') {
-              if (event.group && event.input && event.index && event.total && event.status) {
-                const inputKey = `${event.group}/${event.input}`;
-                if (event.status === 'active' || inputKey !== currentBatchInputKey) {
-                  currentBatchInputKey = inputKey;
-                  setSteps(resetSteps());
-                }
-                setBatchProgress({
-                  group: event.group,
-                  input: event.input,
-                  index: event.index,
-                  total: event.total,
-                  status: event.status,
-                  error: event.error,
-                });
-              }
-
-              if (event.event && typeof event.event.step === 'number' && event.event.status) {
-                updateStep(event.event.step, event.event.status);
-              }
-              continue;
-            }
-
-            if (event.step === 'batch_result') {
-              const outputs = (event.data?.outputs ?? []).map(output => normalizeCarePlanOutput(output));
-              setBatchOutputs(outputs);
-              setBatchGroupIds(event.data?.batch_group_ids ?? {});
-              setSelectedBatchIndex(outputs.length > 0 ? 0 : null);
-              setResult(outputs[0] ?? null);
-              setAppState('result');
-              const savedId = outputs[0]?.metrics.saved_id;
-              setActiveSavedId(savedId ?? null);
-              setSidebarRefresh(r => r + 1);
-            }
-          }
+        const { job_ids } = await createBatchJobs({
+          selections: presetDataSelection,
+          version: selectedVersion,
+          grading_enabled: gradingEnabled,
+        });
+        if (job_ids.length > 0) {
+          navigate(carePlanPagePath(job_ids[0]));
         }
       } catch (err: unknown) {
-        if (err instanceof Error && err.name === 'AbortError') return;
         setError(err instanceof Error ? err.message : 'An unexpected error occurred.');
-        setAppState('upload');
       }
       return;
     }
@@ -256,73 +165,10 @@ export default function CarePlanPage() {
     formData.append('grading_enabled', gradingEnabled.toString());
 
     try {
-      const response = await authenticatedFetch(`${API_URL}${CARE_PLAN_API_PATH}`, {
-        method: 'POST',
-        body: formData,
-        signal: abortRef.current.signal,
-      });
-
-      if (!response.ok) {
-        const message = await response.text();
-        throw new Error(message || `Server error: ${response.status}`);
-      }
-
-      const sessionId = response.headers.get('X-Session-Id');
-      if (sessionId) logger.setSessionId(sessionId);
-      const traceId = response.headers.get('X-Trace-Id');
-      if (traceId) logger.info('care_plan_request', { traceId });
-
-      const reader = response.body!.getReader();
-      const decoder = new TextDecoder();
-      let buffer = '';
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split('\n');
-        buffer = lines.pop() ?? '';
-
-        for (const line of lines) {
-          if (!line.startsWith('data: ')) continue;
-          const payload = line.slice(6).trim();
-          if (!payload || payload === '[DONE]') continue;
-
-          try {
-            const event = JSON.parse(payload) as {
-              step: number | 'result';
-              status?: 'active' | 'done';
-              data?: unknown;
-              error?: string;
-            };
-
-            if (event.error) throw new Error(event.error);
-
-            if (event.step === 'result' && event.data) {
-              const normalized = normalizeCarePlanOutput(event.data);
-              setBatchOutputs([]);
-              setBatchGroupIds({});
-              setSelectedBatchIndex(null);
-              setResult(normalized);
-              setAppState('result');
-              const savedId = normalized.metrics.saved_id;
-              if (savedId) {
-                setActiveSavedId(savedId);
-                setSidebarRefresh(r => r + 1);
-              }
-            } else if (typeof event.step === 'number' && event.status) {
-              updateStep(event.step, event.status);
-            }
-          } catch {
-            // Skip malformed SSE lines.
-          }
-        }
-      }
+      const { job_id } = await createCarePlanJob(formData);
+      navigate(carePlanPagePath(job_id));
     } catch (err: unknown) {
-      if (err instanceof Error && err.name === 'AbortError') return;
       setError(err instanceof Error ? err.message : 'An unexpected error occurred.');
-      setAppState('upload');
     }
   };
 
@@ -351,8 +197,39 @@ export default function CarePlanPage() {
     setTimeout(() => printWindow.print(), 500);
   };
 
+  async function handleRunGrading() {
+    if (!result) return;
+    setGradingLoading(true);
+    setGradingError(null);
+    try {
+      const savedId = result.metrics.saved_id;
+      const body = savedId
+        ? { saved_id: savedId }
+        : {
+            text: result.care_plan.raw?.text ?? '',
+            clarified_text: result.care_plan.raw?.clarified_text ?? '',
+          };
+      const { grading } = await authenticatedFetchJson<{ grading: Grading }>(
+        `${API_URL}/care_plan/grade`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        },
+      );
+      setResult(prev => prev ? { ...prev, grading } : prev);
+    } catch (err: unknown) {
+      if (err instanceof ApiError) {
+        setGradingError(err.message);
+      } else {
+        setGradingError(err instanceof Error ? err.message : 'Failed to run grading');
+      }
+    } finally {
+      setGradingLoading(false);
+    }
+  }
+
   const handleReset = () => {
-    abortRef.current?.abort();
     setFiles([]);
     setTextInput('');
     setSteps(resetSteps());
@@ -367,32 +244,21 @@ export default function CarePlanPage() {
     setShowSplitView(false);
   };
 
-  async function handleSelectSaved(id: string) {
-    try {
-      const saved = await getSavedOutput(id);
-      const normalized = normalizeCarePlanOutput(saved.output_data);
-      setResult(normalized);
-      setBatchOutputs([]);
-      setBatchGroupIds({});
-      setSelectedBatchIndex(null);
-      setActiveSavedId(id);
-      setAppState('result');
-    } catch {
-      setError('Could not load saved output.');
-    }
+  function handleSelectSaved(id: string) {
+    navigate(carePlanPagePath(id));
   }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <NavBar onNew={handleReset} />
+      <NavBar />
       <div style={{ display: 'flex', flex: 1 }}>
       <Sidebar
         activeId={activeSavedId}
         onSelect={handleSelectSaved}
-        onNew={handleReset}
         refreshTrigger={sidebarRefresh}
+        processingIds={processingIds}
       />
-      <div style={{ flex: 1, marginLeft: '260px', minWidth: 0, paddingTop: '48px' }}>
+      <div style={{ flex: 1, marginLeft: 'var(--sidebar-width, 240px)', minWidth: 0, paddingTop: 'calc(48px + 40px)' }}>
       <div className="aurora-bg" aria-hidden="true">
         <div className="aurora-orb aurora-orb-1" />
         <div className="aurora-orb aurora-orb-2" />
@@ -517,8 +383,16 @@ export default function CarePlanPage() {
           {appState === 'result' && result && (
             <section className="result-section">
               <div className="result-header">
-                <h2 className="result-title">Your Care Plan</h2>
-                <span className="deleted-note">🔒 Deleted from servers</span>
+                <div>
+                  <h2 className="result-title">Your Care Plan</h2>
+                  {result.metrics.created_at && (
+                    <p className="result-timestamp">
+                      Simplified on {new Date(result.metrics.created_at).toLocaleDateString('en-US', {
+                        month: 'long', day: 'numeric', year: 'numeric',
+                      })}
+                    </p>
+                  )}
+                </div>
                 {activeSavedId && result && (outputHasInputPdf(result) || outputHasInputText(result)) && (
                   <button
                     onClick={() => setShowSplitView(true)}
@@ -579,11 +453,6 @@ export default function CarePlanPage() {
 
               <CarePlanView result={result.care_plan} grading={result.grading} />
 
-              <OutputGradingCard
-                output={result}
-                onGraded={(newGrading) => setResult(prev => prev ? { ...prev, grading: newGrading } : prev)}
-              />
-
               {result.metrics.session_id && (
                 <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem' }}>
                   Request ID: {result.metrics.session_id}
@@ -608,6 +477,11 @@ export default function CarePlanPage() {
                 </button>
               </div>
 
+              <OutputGradingCard
+                grading={result.grading}
+                error={gradingError}
+              />
+
               <div className="download-bar">
                 <div className="download-actions">
                   <button className="download-btn-json" onClick={handleDownloadJson}>
@@ -616,7 +490,19 @@ export default function CarePlanPage() {
                   <button className="download-btn-pdf" onClick={handleDownloadPdf}>
                     ↓ Download Report
                   </button>
+                  <button
+                    className="download-btn-grading"
+                    onClick={handleRunGrading}
+                    disabled={gradingLoading}
+                  >
+                    {gradingLoading ? 'Grading…' : '◎ Run Grading'}
+                  </button>
                 </div>
+                {gradingError && (
+                  <p style={{ marginTop: '6px', color: 'var(--error, #DC2626)', fontSize: '0.78rem', textAlign: 'center' }}>
+                    {gradingError}
+                  </p>
+                )}
               </div>
             </section>
           )}

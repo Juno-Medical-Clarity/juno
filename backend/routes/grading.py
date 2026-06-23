@@ -4,6 +4,7 @@ import logging
 import os
 
 from flask import Blueprint, jsonify, request
+from utils.error_codes import make_error_response, ErrorCode
 
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
 from utils.scoring import score_text
@@ -30,7 +31,7 @@ def run_care_plan_grading(user_id: str):
     saved_id = body.get("saved_id")
     if saved_id:
         db = firestore_client()
-        doc, err = get_owned_doc_or_403(db, "care_plan_outputs", saved_id, user_id)
+        doc, err = get_owned_doc_or_403(db, "care_plan_outputs", saved_id, user_id, path=request.path)
         if err:
             return err
 
@@ -41,7 +42,11 @@ def run_care_plan_grading(user_id: str):
         clarified_text = raw.get("clarified_text") or ""
 
         if not raw_text:
-            return jsonify({"error": "No source text found in saved output"}), 400
+            return make_error_response(
+                ErrorCode.NO_SOURCE_TEXT,
+                request.path,
+                {"saved_id": saved_id},
+            ).to_dict(), 400
 
         before_score = _score_safe(raw_text, "before")
         after_score = _score_safe(clarified_text, "after") if clarified_text else None
@@ -55,7 +60,11 @@ def run_care_plan_grading(user_id: str):
     clarified_text = body.get("clarified_text", "").strip()
 
     if not text:
-        return jsonify({"error": "Provide either 'saved_id' or 'text'"}), 400
+        return make_error_response(
+            ErrorCode.INPUT_VALIDATION_ERROR,
+            request.path,
+            {"field": "text", "reason": "provide either 'saved_id' or 'text'"},
+        ).to_dict(), 400
 
     before_score = _score_safe(text, "before")
     after_score = _score_safe(clarified_text, "after") if clarified_text else None

@@ -1,6 +1,7 @@
 """Backend model exports."""
 
 from .base import JsonModel, VersionedModel
+from .errors import ApiResponse, ErrorDetail, StatusEnum
 from .care_plan import CarePlan
 from .envelope import CarePlanInternal
 from .grading import Grading, GradingEntry, build_grading
@@ -12,6 +13,9 @@ from .care_plan_versions.v1_2 import CarePlanV1_2  # noqa: F401
 __all__ = [
     "JsonModel",
     "VersionedModel",
+    "ApiResponse",
+    "ErrorDetail",
+    "StatusEnum",
     "CarePlan",
     "CarePlanInternal",
     "Grading",

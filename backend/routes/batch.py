@@ -14,6 +14,7 @@ from utils.constants import Constants
 
 MAX_BATCH_RUNS = Constants.MAX_BATCH_RUNS
 from routes.care_plan import _extract_text_from_bytes, run_care_plan_pipeline
+from utils.error_codes import make_error_response, ErrorCode
 from utils.firebase import verify_firebase_token, save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
 
@@ -23,6 +24,11 @@ batch_bp = Blueprint("batch", __name__)
 
 def _sse(payload: dict) -> str:
     return f"data: {json.dumps(payload)}\n\n"
+
+
+def _sse_error(code: ErrorCode, path: str, details_vars: dict | None = None) -> str:
+    resp = make_error_response(code, path=path, details_vars=details_vars)
+    return _sse({"step": "error", "error_data": resp.error.to_dict()})
 
 
 def _payload_from_sse(chunk: str) -> dict | None:
@@ -129,17 +135,17 @@ def create_care_plan_batch(user_id: str):
         try:
             body = request.get_json(silent=True) or {}
             if not isinstance(body, dict):
-                yield _sse({"step": "error", "error": "Request body must be a JSON object"})
+                yield _sse_error(ErrorCode.INPUT_VALIDATION_ERROR, "/care_plan/batch", {"field": "body", "reason": "must be a JSON object"})
                 return
 
             version = body.get("version", CARE_PLAN_DEFAULT_VERSION)
             if not isinstance(version, str) or version not in Constants.ALLOWED_VERSIONS:
-                yield _sse({"step": "error", "error": f"Unknown version '{version}'"})
+                yield _sse_error(ErrorCode.UNKNOWN_VERSION, "/care_plan/batch", {"version": version, "allowed": ", ".join(Constants.ALLOWED_VERSIONS)})
                 return
 
             selections = body.get("selections")
             if not isinstance(selections, list) or not selections:
-                yield _sse({"step": "error", "error": "Request must include selections"})
+                yield _sse_error(ErrorCode.INPUT_VALIDATION_ERROR, "/care_plan/batch", {"field": "selections", "reason": "required, must be a non-empty list"})
                 return
 
             grading_enabled = _grading_enabled(body.get("grading_enabled", False))
@@ -147,7 +153,7 @@ def create_care_plan_batch(user_id: str):
             runs = _resolve_requested_runs(selections)
             total = len(runs)
             if total > MAX_BATCH_RUNS:
-                yield _sse({"step": "error", "error": f"Batch request exceeds maximum of {MAX_BATCH_RUNS} runs"})
+                yield _sse_error(ErrorCode.BATCH_TOO_LARGE, "/care_plan/batch", {"count": total, "max_runs": MAX_BATCH_RUNS})
                 return
 
             timestamp = _batch_timestamp()
@@ -216,13 +222,12 @@ def create_care_plan_batch(user_id: str):
                         result_data = payload.get("data")
                         continue
                     if payload.get("step") == "error":
-                        yield _sse(_batch_progress_error(
-                            group,
-                            input_id,
-                            index,
-                            total,
-                            payload.get("error") or f"Pipeline failed: {group}/{input_id}",
-                        ))
+                        error_msg = (
+                            (payload.get("error_data") or {}).get("message")
+                            or payload.get("error")
+                            or f"Pipeline failed: {group}/{input_id}"
+                        )
+                        yield _sse(_batch_progress_error(group, input_id, index, total, error_msg))
                         result_data = None
                         input_failed = True
                         break
@@ -277,9 +282,9 @@ def create_care_plan_batch(user_id: str):
                 },
             })
         except (FileNotFoundError, ValueError) as exc:
-            yield _sse({"step": "error", "error": str(exc) or "Invalid batch selection"})
+            yield _sse_error(ErrorCode.BATCH_INVALID_SELECTION, "/care_plan/batch", {"detail": str(exc) or "Invalid batch selection"})
         except Exception as exc:
-            yield _sse({"step": "error", "error": f"Batch pipeline error: {exc}"})
+            yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan/batch", {"detail": str(exc)})
 
     return Response(
         stream_with_context(generate()),

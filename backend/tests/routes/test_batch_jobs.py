@@ -1,0 +1,127 @@
+"""TDD tests for POST /care_plan/batch/jobs."""
+import pytest
+from unittest.mock import MagicMock, patch
+from flask import Flask
+
+
+@pytest.fixture
+def app_with_batch_jobs():
+    from routes.batch_jobs import batch_jobs_bp
+    app = Flask(__name__)
+    app.register_blueprint(batch_jobs_bp)
+    return app
+
+
+@pytest.fixture
+def client_batch_jobs(app_with_batch_jobs):
+    return app_with_batch_jobs.test_client()
+
+
+@pytest.fixture
+def auth_ok(monkeypatch):
+    monkeypatch.setattr("utils.firebase.auth.verify_id_token", lambda *a, **k: {"uid": "user-1"})
+    return {"Authorization": "Bearer test-token"}
+
+
+VALID_SELECTIONS = [
+    {"group": "GroupA", "inputs": "all", "files": ["file1.txt"]},
+]
+
+MOCK_RUNS = [
+    ("GroupA", "input1", ["file1.txt"]),
+    ("GroupA", "input2", ["file1.txt"]),
+]
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.batch_jobs.enqueue_job")
+@patch("routes.batch_jobs.create_job_doc")
+@patch("routes.batch_jobs._combined_text_for_dataset_input", return_value="patient text")
+@patch("routes.batch_jobs._batch_timestamp", return_value="20260101120000")
+@patch("routes.batch_jobs._resolve_requested_runs", return_value=MOCK_RUNS)
+def test_valid_batch_returns_202(
+    mock_resolve, mock_ts, mock_combined, mock_create_doc, mock_enqueue,
+    client_batch_jobs, auth_ok
+):
+    resp = client_batch_jobs.post(
+        "/care_plan/batch/jobs",
+        json={"selections": VALID_SELECTIONS, "version": "v1-2"},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 202
+    body = resp.get_json()
+    assert "batch_run_id" in body
+    assert "job_ids" in body
+    assert len(body["job_ids"]) == 2
+
+    # All jobs share the same batch_run_id
+    calls = mock_create_doc.call_args_list
+    assert len(calls) == 2
+    batch_run_id = body["batch_run_id"]
+    for call in calls:
+        payload = call.kwargs["payload"]
+        assert payload["batch_run_id"] == batch_run_id
+        assert payload["status"] == "not_started"
+
+    # enqueue called with batch_run_id
+    enqueue_calls = mock_enqueue.call_args_list
+    assert len(enqueue_calls) == 2
+    for call in enqueue_calls:
+        assert call.kwargs["batch_run_id"] == batch_run_id
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.batch_jobs._resolve_requested_runs", side_effect=ValueError("Dataset group not found: BadGroup"))
+def test_unknown_dataset_group_returns_400(mock_resolve, client_batch_jobs, auth_ok):
+    resp = client_batch_jobs.post(
+        "/care_plan/batch/jobs",
+        json={"selections": [{"group": "BadGroup", "inputs": "all", "files": ["f.txt"]}]},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 400
+    body = resp.get_json()
+    assert "error" in body
+
+
+def test_unauthenticated_request_returns_401(client_batch_jobs):
+    resp = client_batch_jobs.post(
+        "/care_plan/batch/jobs",
+        json={"selections": VALID_SELECTIONS},
+    )
+    assert resp.status_code == 401
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+def test_missing_selections_returns_400(client_batch_jobs, auth_ok):
+    resp = client_batch_jobs.post(
+        "/care_plan/batch/jobs",
+        json={},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 400
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+def test_empty_selections_returns_400(client_batch_jobs, auth_ok):
+    resp = client_batch_jobs.post(
+        "/care_plan/batch/jobs",
+        json={"selections": []},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 400

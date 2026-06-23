@@ -1,14 +1,7 @@
 import { useState, type ReactNode } from 'react';
-import type { PatientScore, PatientScoreDimension, TermsMap } from '../types/carePlan';
+import type { TermsMap } from '../types/carePlan';
 import type { SimplifiedCarePlan, Grading } from '../types/envelope';
-import { patientScoreFromGrading, methodEntriesFromGrading } from '../utils/grading';
 import MedicalTerm from './MedicalTerm';
-
-function scoreColor(composite: number): string {
-  if (composite >= 70) return 'score-green';
-  if (composite >= 40) return 'score-amber';
-  return 'score-red';
-}
 
 function renderTextWithTerms(text: string, terms: TermsMap): ReactNode {
   if (!terms || Object.keys(terms).length === 0) return text;
@@ -96,130 +89,8 @@ function ResultCard({
   );
 }
 
-function ReadabilityCard({ before, after }: { before: PatientScore; after: PatientScore }) {
-  const [expanded, setExpanded] = useState(false);
-  const jargonBefore = `${Math.round(before.dimensions.jargon_density.raw * 100)}%`;
-  const jargonAfter = `${Math.round(after.dimensions.jargon_density.raw * 100)}%`;
-
-  return (
-    <div className="result-card score-card">
-      <div className="result-card-header">
-        <span className="result-card-title">
-          <span>📊</span>
-          <span>Readability</span>
-        </span>
-        {before.low_confidence && <span className="score-low-confidence">low confidence</span>}
-      </div>
-      <div className="result-card-body">
-        <div className="score-comparison">
-          <div className="score-side">
-            <div className={`score-bubble ${scoreColor(before.composite)}`}>{before.composite}</div>
-            <div className={`score-label-tag ${scoreColor(before.composite)}`}>{before.label}</div>
-            <div className="score-side-caption">Before</div>
-          </div>
-          <div className="score-arrow">→</div>
-          <div className="score-side">
-            <div className={`score-bubble ${scoreColor(after.composite)}`}>{after.composite}</div>
-            <div className={`score-label-tag ${scoreColor(after.composite)}`}>{after.label}</div>
-            <div className="score-side-caption">After</div>
-          </div>
-        </div>
-
-        <div className="score-highlights">
-          <span>Grade level: {before.grade_estimate} → {after.grade_estimate}</span>
-          <span>Jargon density: {jargonBefore} → {jargonAfter}</span>
-        </div>
-
-        <button className="score-expand-btn" onClick={() => setExpanded(current => !current)}>
-          {expanded ? 'Hide breakdown ▲' : 'View full breakdown ▼'}
-        </button>
-
-        {expanded && (
-          <div className="score-breakdown">
-            {(Object.entries(after.dimensions) as [keyof PatientScore['dimensions'], PatientScoreDimension][]).map(([key, dimension]) => {
-              const beforeDimension = before.dimensions[key];
-              return (
-                <div className="score-breakdown-row" key={key}>
-                  <span className="score-breakdown-label">{dimension.label}</span>
-                  <div className="score-breakdown-bars">
-                    <div className="score-bar-wrap">
-                      <div className={`score-bar ${scoreColor(beforeDimension.score)}`} style={{ width: `${beforeDimension.score}%` }} />
-                    </div>
-                    <div className="score-bar-wrap">
-                      <div className={`score-bar ${scoreColor(dimension.score)}`} style={{ width: `${dimension.score}%` }} />
-                    </div>
-                  </div>
-                  <span className="score-breakdown-vals">{beforeDimension.score} → {dimension.score}</span>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function MethodGradingCards({ grading }: { grading: Grading }) {
-  const afterEntries = methodEntriesFromGrading(grading, 'after');
-  const beforeEntries = methodEntriesFromGrading(grading, 'before');
-  if (afterEntries.length === 0) return null;
-
-  const METHOD_LABELS: Record<string, string> = {
-    smog: 'SMOG',
-    flesch_kincaid: 'Flesch-Kincaid',
-    dale_chall: 'Dale-Chall',
-    pemat: 'PEMAT',
-    sam: 'SAM',
-    cdc_cci: 'CDC Clear Comm.',
-  };
-
-  return (
-    <div className="method-grading-cards">
-      {afterEntries.map(afterEntry => {
-        const beforeEntry = beforeEntries.find(e => e.name === afterEntry.name);
-        return (
-          <div key={afterEntry.name} className="result-card score-card" style={{ marginTop: '8px' }}>
-            <div className="result-card-header">
-              <span className="result-card-title">
-                <span>{METHOD_LABELS[afterEntry.name] ?? afterEntry.name}</span>
-              </span>
-              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                {beforeEntry && (
-                  <span className={`score-bubble ${scoreColor(beforeEntry.grade)} score-bubble-sm`} style={{ fontSize: '0.75rem', padding: '2px 8px' }}>
-                    {Math.round(beforeEntry.grade)}
-                  </span>
-                )}
-                {beforeEntry && <span style={{ color: 'var(--text-secondary)' }}>→</span>}
-                <span className={`score-bubble ${scoreColor(afterEntry.grade)}`} style={{ fontSize: '0.85rem' }}>
-                  {Math.round(afterEntry.grade)}
-                </span>
-              </div>
-            </div>
-            {afterEntry.grade_breakdown && (
-              <div className="result-card-body" style={{ paddingTop: '8px' }}>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                  {Object.entries(afterEntry.grade_breakdown).map(([k, v]) => (
-                    <span key={k}><strong>{k}:</strong> {String(v)}</span>
-                  ))}
-                </div>
-                {afterEntry.reasoning && (
-                  <p style={{ marginTop: '8px', fontSize: '0.75rem', color: 'var(--text-secondary)', fontStyle: 'italic' }}>
-                    {afterEntry.reasoning}
-                  </p>
-                )}
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
 export default function CarePlanView({
   result,
-  grading,
 }: {
   result: SimplifiedCarePlan;
   grading: Grading;
@@ -242,17 +113,6 @@ export default function CarePlanView({
 
   return (
     <div className="result-cards">
-      {(() => {
-        const beforeScore = patientScoreFromGrading(grading, 'before');
-        const afterScore = patientScoreFromGrading(grading, 'after');
-        return beforeScore && afterScore ? (
-          <>
-            <ReadabilityCard before={beforeScore} after={afterScore} />
-            <MethodGradingCards grading={grading} />
-          </>
-        ) : null;
-      })()}
-
       {result.summary && (
         <div className="result-card" style={{ background: 'var(--surface-green-muted, #E8EDE3)' }}>
           <div className="result-card-body" style={{ paddingTop: '16px' }}>

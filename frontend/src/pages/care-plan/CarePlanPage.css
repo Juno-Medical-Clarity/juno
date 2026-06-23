@@ -124,3 +124,134 @@
 .download-btn-pdf:hover {
   opacity: 0.85;
 }
+
+/* ── Grading section (SP5) ────────────────────────────────────── */
+
+.grading-section {
+  margin-top: 24px;
+}
+
+.grading-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 0;
+}
+
+.grading-top-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.grading-toggle-icon {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  transition: transform 0.15s;
+}
+
+.grading-collapse-all {
+  background: none;
+  border: none;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  padding: 2px 4px;
+  text-decoration: underline;
+}
+.grading-collapse-all:hover {
+  color: var(--text-secondary);
+}
+
+.grading-method-row {
+  border-top: 1px solid var(--border);
+  padding: 8px 0;
+}
+
+.grading-method-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.grading-method-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.grading-method-score {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.grading-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 6px;
+  padding-left: 18px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.grading-breakdown-item strong {
+  color: var(--text-primary);
+}
+
+.grading-before-after-block {
+  margin-top: 6px;
+  padding-left: 18px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.grading-target-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.grading-empty-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 8px 0;
+}
+
+/* ── Run Grading button (SP5) ─────────────────────────────────── */
+
+.download-btn-grading {
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--accent-violet);
+  background: transparent;
+  color: var(--accent-violet);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  transition: opacity 0.15s;
+}
+.download-btn-grading:hover:not(:disabled) {
+  background: rgba(124, 58, 237, 0.06);
+}
+.download-btn-grading:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
