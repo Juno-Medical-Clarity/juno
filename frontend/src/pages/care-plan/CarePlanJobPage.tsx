@@ -1,5 +1,5 @@
 import './CarePlanPage.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useJobSnapshot } from '../../hooks/useJobSnapshot';
 import { normalizeCarePlanOutput } from '../../utils/normalizeOutput';
@@ -42,7 +42,7 @@ export default function CarePlanJobPage() {
   const navigate = useNavigate();
   const { user, getIdToken } = useAuth();
   const { jobDoc, loading, error } = useJobSnapshot(id ?? null);
-  const [result, setResult] = useState<CarePlanInternal | null>(null);
+  const [gradingOverride, setGradingOverride] = useState<Grading | null>(null);
   const [gradingLoading, setGradingLoading] = useState(false);
   const [gradingError, setGradingError] = useState<string | null>(null);
   const [showSplitView, setShowSplitView] = useState(false);
@@ -54,11 +54,12 @@ export default function CarePlanJobPage() {
 
   const isPublicView = !user;
 
-  useEffect(() => {
-    if (jobDoc?.status === 'completed' && jobDoc.output_data) {
-      setResult(normalizeCarePlanOutput(jobDoc.output_data));
-    }
-  }, [jobDoc]);
+  const baseResult: CarePlanInternal | null =
+    jobDoc?.status === 'completed' && jobDoc.output_data
+      ? normalizeCarePlanOutput(jobDoc.output_data)
+      : null;
+  const result: CarePlanInternal | null =
+    baseResult && gradingOverride ? { ...baseResult, grading: gradingOverride } : baseResult;
 
   // Sync commentText with jobDoc.comment when opening the textarea
   function handleToggleComment() {
@@ -101,7 +102,10 @@ export default function CarePlanJobPage() {
     if (!result) return;
     const html = buildPdfHtml(result.care_plan);
     const printWindow = window.open('', '_blank');
-    if (!printWindow) return;
+    if (!printWindow) {
+      alert('Pop-up blocked. Please allow pop-ups to download the report.');
+      return;
+    }
     printWindow.document.write(html);
     printWindow.document.close();
     setTimeout(() => printWindow.print(), 500);
@@ -127,7 +131,7 @@ export default function CarePlanJobPage() {
           body: JSON.stringify(body),
         },
       );
-      setResult(prev => prev ? { ...prev, grading } : prev);
+      setGradingOverride(grading);
     } catch (err: unknown) {
       if (err instanceof ApiError) {
         setGradingError(err.message);
@@ -189,7 +193,7 @@ export default function CarePlanJobPage() {
     );
   }
 
-  if (isPublicView && !jobDoc.shared) {
+  if (isPublicView && jobDoc.shared === false) {
     return (
       <>
         <NavBar isPublicView={isPublicView} />

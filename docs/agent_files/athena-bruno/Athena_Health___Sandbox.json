@@ -24,7 +24,7 @@
     },
     {
       "name": "tokenExpiry",
-      "value": "1782198263409",
+      "value": "0",
       "type": "text",
       "enabled": true,
       "secret": false
