@@ -8,6 +8,15 @@ from flask import Flask
 QUEUE_HEADER = {"X-CloudTasks-QueueName": "my-queue"}
 
 
+@pytest.fixture(autouse=True)
+def _disable_oidc_verification(monkeypatch):
+    """Disable OIDC verification by default so the existing functional tests
+    exercise job execution without a signed Cloud Tasks token. Tests that
+    target the auth gate re-enable it explicitly via monkeypatch.
+    """
+    monkeypatch.setenv("WORKER_VERIFY_OIDC", "false")
+
+
 @pytest.fixture
 def app_worker():
     from routes.worker import worker_bp
@@ -202,3 +211,57 @@ def test_unexpected_exception_returns_500(mock_get_doc, client_worker):
         headers=QUEUE_HEADER,
     )
     assert resp.status_code == 500
+
+
+# --- OIDC verification gate (verification ENABLED) ---
+
+
+@patch("routes.worker.get_job_doc")
+def test_oidc_enabled_missing_auth_header_returns_403(mock_get_doc, client_worker, monkeypatch):
+    """With verification on, a request with no Authorization header is rejected
+    at the auth gate (before any job lookup)."""
+    monkeypatch.setenv("WORKER_VERIFY_OIDC", "true")
+    resp = client_worker.post("/internal/jobs/execute/job-1", headers=QUEUE_HEADER)
+    assert resp.status_code == 403
+    mock_get_doc.assert_not_called()
+
+
+@patch("routes.worker.get_job_doc")
+def test_oidc_enabled_garbage_token_returns_403(mock_get_doc, client_worker, monkeypatch):
+    """A malformed/garbage Bearer token fails google-auth verification → 403."""
+    monkeypatch.setenv("WORKER_VERIFY_OIDC", "true")
+    monkeypatch.delenv("WORKER_SERVICE_ACCOUNT", raising=False)
+    headers = {**QUEUE_HEADER, "Authorization": "Bearer not-a-real-jwt"}
+    resp = client_worker.post("/internal/jobs/execute/job-1", headers=headers)
+    assert resp.status_code == 403
+    mock_get_doc.assert_not_called()
+
+
+@patch("routes.worker.get_job_doc")
+def test_oidc_enabled_valid_claims_passes_auth_gate(mock_get_doc, client_worker, monkeypatch):
+    """A token whose verified claims match the expected email and audience
+    passes the auth gate (verified by reaching the job lookup, here a missing
+    doc → 200)."""
+    monkeypatch.setenv("WORKER_VERIFY_OIDC", "true")
+    monkeypatch.setenv("WORKER_SERVICE_ACCOUNT", "worker@proj.iam.gserviceaccount.com")
+    mock_get_doc.return_value = None  # missing doc → idempotent 200
+
+    # The test client uses http on localhost; aud reconstruction honors
+    # X-Forwarded-Proto, so set it to match what we return as the claim aud.
+    headers = {
+        **QUEUE_HEADER,
+        "Authorization": "Bearer valid-token",
+        "X-Forwarded-Proto": "https",
+    }
+    valid_claims = {
+        "email_verified": True,
+        "email": "worker@proj.iam.gserviceaccount.com",
+        "aud": "https://localhost/internal/jobs/execute/job-1",
+    }
+    with patch(
+        "google.oauth2.id_token.verify_oauth2_token", return_value=valid_claims
+    ):
+        resp = client_worker.post("/internal/jobs/execute/job-1", headers=headers)
+
+    assert resp.status_code == 200
+    mock_get_doc.assert_called_once()

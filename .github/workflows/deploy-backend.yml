@@ -73,5 +73,6 @@ GCP_BUCKET_NAME=$GCP_BUCKET_NAME,\
 GCP_LOCATION=$GCP_REGION,\
 VERTEX_AI_MODEL=gemini-3.5-flash,\
 SIMPLIFY_DEFAULT_VERSION=v1-2,\
-FIRESTORE_DATABASE_ID=(default)" \
+FIRESTORE_DATABASE_ID=(default),\
+WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com" \
             --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest"
