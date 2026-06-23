@@ -27,6 +27,9 @@ jobs:
       - name: Select backend GCP project
         run: gcloud config set project "$GCP_PROJECT_ID"
 
+      - name: Copy preset-data into backend build context
+        run: cp -r preset-data backend/preset-data
+
       - name: Build, push, and deploy juno-api + juno-worker
         run: |
           gcloud builds submit \

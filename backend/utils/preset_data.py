@@ -1,7 +1,11 @@
+import os
 from pathlib import Path
 
 
-PRESET_DATA_ROOT = Path(__file__).resolve().parent.parent.parent / "preset-data"
+PRESET_DATA_ROOT = Path(
+    os.environ.get("PRESET_DATA_PATH")
+    or (Path(__file__).resolve().parent.parent.parent / "preset-data")
+)
 
 
 def _input_files(group: str, input_id: str) -> list[str]:
