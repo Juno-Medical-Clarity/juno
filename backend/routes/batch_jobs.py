@@ -84,7 +84,7 @@ def create_care_plan_batch_jobs(user_id: str):
 
         job_doc = {
             "uid": user_id,
-            "name": "Processing…",
+            "name": now.strftime("%b %d, %Y %H:%M"),
             "source_filename": source_filename,
             "created_at": now,
             "updated_at": now,
