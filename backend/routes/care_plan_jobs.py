@@ -100,7 +100,7 @@ def create_care_plan_job(user_id: str):
 
     job_doc = {
         "uid": user_id,
-        "name": "Processing…",
+        "name": now.strftime("%b %d, %Y %H:%M"),
         "source_filename": input_fields["input_source_filename"],
         "created_at": now,
         "updated_at": now,
