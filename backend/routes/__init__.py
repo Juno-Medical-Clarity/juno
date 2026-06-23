@@ -8,10 +8,7 @@ from routes.batch_jobs import batch_jobs_bp
 from routes.worker import worker_bp
 from routes.admin import admin_bp
 
-# SSE routes kept for migration window; remove in SP3
 API_BLUEPRINTS = [
-    care_plan_bp,
-    batch_bp,
     care_plan_jobs_bp,
     batch_jobs_bp,
     saved_outputs_bp,

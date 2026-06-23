@@ -1,24 +1,15 @@
 import './CarePlanPage.css';
-import { useCallback, useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { API_URL } from '../../api/firebase';
-import { authenticatedFetchJson } from '../../api/apiClient';
-import { ApiError } from '../../types/errors';
+import { useCallback, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../components/Sidebar';
-import SplitView from '../../components/SplitView';
-import type { AppState, InputMode, PipelineStep, StepStatus } from '../../types/carePlan';
-import type { CarePlanInternal, Grading } from '../../types/envelope';
-import type { BatchDatasetSelection } from '../../types/datasets';
-import CarePlanView from '../../components/CarePlanView';
-import { buildPdfHtml } from '../../utils/buildPdfHtml';
+import type { InputMode, PipelineStep } from '../../types/carePlan';
+import type { CarePlanInternal } from '../../types/envelope';
 import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
-import OutputGradingCard from '../../components/OutputGradingCard';
 import PresetDataCard from '../../components/PresetDataCard';
 import { DEFAULT_VERSION, carePlanPagePath } from '../../constants';
-import type { VersionRouteState } from '../../router';
+import type { BatchDatasetSelection } from '../../types/datasets';
 import { createCarePlanJob, createBatchJobs } from '../../api/jobs';
-import { updateJobComment } from '../../api/savedOutputs';
 
 export const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
@@ -27,25 +18,6 @@ export const INITIAL_STEPS: PipelineStep[] = [
   { id: 4, label: 'Clarifying actions and numbers', description: 'Active voice, plain action verbs, clear instructions', status: 'waiting' },
   { id: 5, label: 'Organizing your care plan', description: 'Structuring into sections that are easy to follow', status: 'waiting' },
 ];
-
-interface BatchProgress {
-  group: string;
-  input: string;
-  index: number;
-  total: number;
-  status: 'active' | 'pipeline' | 'done' | 'error';
-  error?: string;
-}
-
-function stepIcon(status: StepStatus): string {
-  if (status === 'done') return '✓';
-  if (status === 'active') return '◉';
-  return '○';
-}
-
-function resetSteps(): PipelineStep[] {
-  return INITIAL_STEPS.map(step => ({ ...step, status: 'waiting' }));
-}
 
 export function outputHasInputPdf(output: CarePlanInternal): boolean {
   return output.input.mode === 'file' && output.input.pdf_gcs_url != null;
@@ -59,55 +31,20 @@ export function outputHasInputText(output: CarePlanInternal): boolean {
 
 export default function CarePlanPage() {
   const navigate = useNavigate();
-  const location = useLocation();
-  const [appState, setAppState] = useState<AppState>('upload');
   const [inputMode, setInputMode] = useState<InputMode>('file');
   const selectedVersion = DEFAULT_VERSION;
   const [gradingEnabled, setGradingEnabled] = useState(true);
   const [files, setFiles] = useState<File[]>([]);
   const [textInput, setTextInput] = useState('');
   const [dragOver, setDragOver] = useState(false);
-  const [steps, setSteps] = useState<PipelineStep[]>(INITIAL_STEPS);
-  const [result, setResult] = useState<CarePlanInternal | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [activeSavedId, setActiveSavedId] = useState<string | null>(null);
-  const [sidebarRefresh, setSidebarRefresh] = useState(0);
-  const [showSplitView, setShowSplitView] = useState(false);
   const [presetDataSelection, setPresetDataSelection] = useState<BatchDatasetSelection[]>([]);
-  const [batchProgress, setBatchProgress] = useState<BatchProgress | null>(null);
-  const [batchOutputs, setBatchOutputs] = useState<CarePlanInternal[]>([]);
-  const [batchGroupIds, setBatchGroupIds] = useState<Record<string, string>>({});
-  const [selectedBatchIndex, setSelectedBatchIndex] = useState<number | null>(null);
-  const [gradingLoading, setGradingLoading] = useState(false);
-  const [gradingError, setGradingError] = useState<string | null>(null);
-  const [showCommentArea, setShowCommentArea] = useState(false);
-  const [commentText, setCommentText] = useState('');
-  const [commentSaving, setCommentSaving] = useState(false);
-  const [commentSaved, setCommentSaved] = useState(false);
-  const [localComment, setLocalComment] = useState('');
 
   // processingIds: wired from SP1's useJobStatuses hook.
   // When SP1 lands, import useJobStatuses from '../../api/useJobStatuses'
   // and compute this set from statuses Map (status === 'not_started' | 'processing').
   // Until then, undefined causes Sidebar to show no spinners (graceful degradation).
   const processingIds: Set<string> | undefined = undefined; // TODO: wire SP1
-
-  useEffect(() => {
-    const output = (location.state as VersionRouteState | null)?.output;
-    if (!output) return;
-
-    setResult(output);
-    setBatchOutputs([]);
-    setBatchGroupIds({});
-    setSelectedBatchIndex(null);
-    setAppState('result');
-    const savedId = output.metrics.saved_id;
-    if (savedId) {
-      setActiveSavedId(savedId);
-      setSidebarRefresh(r => r + 1);
-    }
-    navigate(location.pathname, { replace: true, state: null });
-  }, [location.pathname, location.state, navigate]);
 
   const handleFiles = useCallback((selectedFiles: File[]) => {
     const invalid = selectedFiles.filter(f => {
@@ -137,13 +74,6 @@ export default function CarePlanPage() {
     if (!canSubmit) return;
 
     setError(null);
-    setResult(null);
-    setBatchOutputs([]);
-    setBatchGroupIds({});
-    setSelectedBatchIndex(null);
-    setBatchProgress(null);
-    setActiveSavedId(null);
-    setShowSplitView(false);
 
     if (hasPresetDataSelection) {
       try {
@@ -178,108 +108,6 @@ export default function CarePlanPage() {
     }
   };
 
-  const handleDownloadJson = () => {
-    if (!result) return;
-
-    const blob = new Blob([JSON.stringify(result, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const anchor = document.createElement('a');
-    anchor.href = url;
-    anchor.download = 'care-plan.json';
-    anchor.click();
-    URL.revokeObjectURL(url);
-  };
-
-  const handleDownloadPdf = () => {
-    if (!result) return;
-    const html = buildPdfHtml(result.care_plan);
-    const printWindow = window.open('', '_blank');
-    if (!printWindow) {
-      setError('Could not open print window. Please allow pop-ups for this site.');
-      return;
-    }
-    printWindow.document.write(html);
-    printWindow.document.close();
-    setTimeout(() => printWindow.print(), 500);
-  };
-
-  async function handleRunGrading() {
-    if (!result) return;
-    setGradingLoading(true);
-    setGradingError(null);
-    try {
-      const savedId = result.metrics.saved_id;
-      const body = savedId
-        ? { saved_id: savedId }
-        : {
-            text: result.care_plan.raw?.text ?? '',
-            clarified_text: result.care_plan.raw?.clarified_text ?? '',
-          };
-      const { grading } = await authenticatedFetchJson<{ grading: Grading }>(
-        `${API_URL}/care_plan/grade`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(body),
-        },
-      );
-      setResult(prev => prev ? { ...prev, grading } : prev);
-    } catch (err: unknown) {
-      if (err instanceof ApiError) {
-        setGradingError(err.message);
-      } else {
-        setGradingError(err instanceof Error ? err.message : 'Failed to run grading');
-      }
-    } finally {
-      setGradingLoading(false);
-    }
-  }
-
-  function handleToggleComment() {
-    if (!showCommentArea) {
-      setCommentText(localComment);
-      setCommentSaved(false);
-    }
-    setShowCommentArea(v => !v);
-  }
-
-  async function handleSaveComment() {
-    setCommentSaving(true);
-    try {
-      if (activeSavedId) {
-        await updateJobComment(activeSavedId, commentText);
-      }
-      setLocalComment(commentText);
-      setCommentSaved(true);
-      setTimeout(() => {
-        setCommentSaved(false);
-        setShowCommentArea(false);
-      }, 1500);
-    } catch {
-      // Keep area open on error so user can retry
-    } finally {
-      setCommentSaving(false);
-    }
-  }
-
-  const handleReset = () => {
-    setFiles([]);
-    setTextInput('');
-    setSteps(resetSteps());
-    setResult(null);
-    setBatchOutputs([]);
-    setBatchGroupIds({});
-    setSelectedBatchIndex(null);
-    setBatchProgress(null);
-    setError(null);
-    setAppState('upload');
-    setActiveSavedId(null);
-    setShowSplitView(false);
-    setShowCommentArea(false);
-    setCommentText('');
-    setLocalComment('');
-  };
-
   function handleSelectSaved(id: string) {
     navigate(carePlanPagePath(id));
   }
@@ -289,9 +117,9 @@ export default function CarePlanPage() {
       <NavBar />
       <div style={{ display: 'flex', flex: 1 }}>
       <Sidebar
-        activeId={activeSavedId}
+        activeId={null}
         onSelect={handleSelectSaved}
-        refreshTrigger={sidebarRefresh}
+        refreshTrigger={0}
         processingIds={processingIds}
       />
       <div style={{ flex: 1, marginLeft: 'var(--sidebar-width, 240px)', minWidth: 0, paddingTop: 'calc(48px + 40px)' }}>
@@ -303,293 +131,79 @@ export default function CarePlanPage() {
 
       <div className="page-wrapper">
         <div className="container">
-          {appState === 'upload' && (
-            <section className="upload-section" data-preset-selection-count={presetDataSelectionCount}>
-              <div className="glass-card" style={{ padding: '32px' }}>
-                <div className="input-tabs">
-                  <button
-                    className={`input-tab ${inputMode === 'file' ? 'active' : ''}`}
-                    onClick={() => setInputMode('file')}
-                  >
-                    Upload file
-                  </button>
-                  <button
-                    className={`input-tab ${inputMode === 'text' ? 'active' : ''}`}
-                    onClick={() => setInputMode('text')}
-                  >
-                    Paste text
-                  </button>
-                </div>
-
-                {inputMode === 'file' ? (
-                  <div
-                    className={`upload-zone ${dragOver ? 'drag-over' : ''}`}
-                    onDragOver={event => {
-                      event.preventDefault();
-                      setDragOver(true);
-                    }}
-                    onDragLeave={() => setDragOver(false)}
-                    onDrop={onDrop}
-                  >
-                    <input
-                      type="file"
-                      accept=".pdf,.txt,.docx"
-                      multiple
-                      onChange={e => {
-                        if (e.target.files) handleFiles(Array.from(e.target.files));
-                      }}
-                    />
-                    <div className="upload-icon">📄</div>
-                    {files.length > 0 ? (
-                      <div>
-                        {files.map(f => (
-                          <p key={f.name} className="upload-file-name">✓ {f.name}</p>
-                        ))}
-                      </div>
-                    ) : (
-                      <>
-                        <p className="upload-title">Drag & drop your document(s) here</p>
-                        <p className="upload-hint">PDF, TXT, or DOCX · Multiple files = one combined process</p>
-                      </>
-                    )}
-                  </div>
-                ) : (
-                  <textarea
-                    className="text-input-area"
-                    placeholder="Paste your provider note, appointment summary, or SOAP note here..."
-                    value={textInput}
-                    onChange={event => setTextInput(event.target.value)}
-                  />
-                )}
-
-                {error && <div className="error-box">⚠ {error}</div>}
-              </div>
-              <PresetDataCard onSelectionChange={setPresetDataSelection} />
-              <ConfigurationCard
-                gradingEnabled={gradingEnabled}
-                onGradingEnabledChange={setGradingEnabled}
-              />
-              <button className="cta-btn" disabled={!canSubmit} onClick={handleSubmit}>
-                Create My Care Plan →
-              </button>
-            </section>
-          )}
-
-          {appState === 'processing' && (
-            <section className="progress-section">
-              <div className="glass-card" style={{ padding: '32px' }}>
-                <p className="section-title">Creating your care plan…</p>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '-8px', marginBottom: '16px' }}>
-                  Finding medical terms, rewriting to plain language, and organizing your care plan.
-                </p>
-                {batchProgress && (
-                  <div style={{
-                    marginBottom: '20px',
-                    padding: '12px 14px',
-                    border: '1px solid var(--border)',
-                    borderRadius: 'var(--radius-md)',
-                    color: 'var(--text-secondary)',
-                    fontSize: '0.85rem',
-                  }}>
-                    <strong style={{ color: 'var(--text-primary)' }}>
-                      Input {batchProgress.index} of {batchProgress.total}
-                    </strong>
-                    <span> · {batchProgress.group} / {batchProgress.input}</span>
-                    {batchProgress.status === 'error' && batchProgress.error && (
-                      <div style={{ color: 'var(--error, #DC2626)', marginTop: '6px' }}>{batchProgress.error}</div>
-                    )}
-                  </div>
-                )}
-                <div className="step-list">
-                  {steps.map(step => (
-                    <div className="step-item" key={step.id}>
-                      <div className={`step-node ${step.status}`}>{stepIcon(step.status)}</div>
-                      <div className="step-content">
-                        <p className={`step-label ${step.status === 'waiting' ? 'waiting' : ''}`}>{step.label}</p>
-                        <p className="step-desc">{step.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-          )}
-
-          {appState === 'result' && result && (
-            <section className="result-section">
-              <div className="result-header">
-                <div>
-                  <h2 className="result-title">Your Care Plan</h2>
-                  {result.metrics.created_at && (
-                    <p className="result-timestamp">
-                      Simplified on {new Date(result.metrics.created_at).toLocaleDateString('en-US', {
-                        month: 'long', day: 'numeric', year: 'numeric',
-                      })}
-                    </p>
-                  )}
-                </div>
-                {activeSavedId && result && (outputHasInputPdf(result) || outputHasInputText(result)) && (
-                  <button
-                    onClick={() => setShowSplitView(true)}
-                    style={{
-                      background: 'none', border: '1px solid var(--border)',
-                      borderRadius: 'var(--radius-pill)', padding: '6px 14px',
-                      fontSize: '0.8rem', cursor: 'pointer',
-                      color: 'var(--text-secondary)', fontFamily: 'Inter, sans-serif',
-                    }}
-                  >
-                    Show Original
-                  </button>
-                )}
-              </div>
-
-              {batchOutputs.length > 0 && (
-                <div className="glass-card" style={{ padding: '20px', marginBottom: '24px' }}>
-                  <p style={{ margin: 0, fontWeight: 700, color: 'var(--text-primary)' }}>
-                    {batchOutputs.length} report{batchOutputs.length === 1 ? '' : 's'} generated
-                  </p>
-                  {Object.keys(batchGroupIds).length > 0 && (
-                    <p style={{ margin: '6px 0 16px', color: 'var(--text-secondary)', fontSize: '0.8rem' }}>
-                      Batch groups: {Object.entries(batchGroupIds).map(([group, id]) => `${group}: ${id}`).join(', ')}
-                    </p>
-                  )}
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                    {batchOutputs.map((output, index) => {
-                      const savedId = output.metrics.saved_id;
-                      const isActive = selectedBatchIndex === index;
-                      return (
-                        <button
-                          key={savedId ?? index}
-                          type="button"
-                          onClick={() => {
-                            setSelectedBatchIndex(index);
-                            setResult(output);
-                            setActiveSavedId(savedId ?? null);
-                            setShowSplitView(false);
-                          }}
-                          style={{
-                            border: isActive ? '1px solid var(--accent-violet)' : '1px solid var(--border)',
-                            background: isActive ? 'rgba(124, 58, 237, 0.1)' : 'transparent',
-                            borderRadius: 'var(--radius-pill)',
-                            color: isActive ? 'var(--text-primary)' : 'var(--text-secondary)',
-                            cursor: 'pointer',
-                            fontFamily: 'Inter, sans-serif',
-                            fontSize: '0.8rem',
-                            padding: '7px 14px',
-                          }}
-                        >
-                          Report {index + 1}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-
-              <CarePlanView result={result.care_plan} grading={result.grading} />
-
-              {result.metrics.session_id && (
-                <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem' }}>
-                  Request ID: {result.metrics.session_id}
-                </div>
-              )}
-
-              <div style={{ marginTop: '32px', textAlign: 'center' }}>
+          <section className="upload-section" data-preset-selection-count={presetDataSelectionCount}>
+            <div className="glass-card" style={{ padding: '32px' }}>
+              <div className="input-tabs">
                 <button
-                  onClick={handleReset}
-                  style={{
-                    background: 'none',
-                    border: '1px solid var(--border)',
-                    borderRadius: 'var(--radius-pill)',
-                    color: 'var(--text-secondary)',
-                    fontSize: '0.85rem',
-                    padding: '8px 20px',
-                    cursor: 'pointer',
-                    fontFamily: 'Inter, sans-serif',
-                  }}
+                  className={`input-tab ${inputMode === 'file' ? 'active' : ''}`}
+                  onClick={() => setInputMode('file')}
                 >
-                  ← Create another care plan
+                  Upload file
+                </button>
+                <button
+                  className={`input-tab ${inputMode === 'text' ? 'active' : ''}`}
+                  onClick={() => setInputMode('text')}
+                >
+                  Paste text
                 </button>
               </div>
 
-              <OutputGradingCard
-                grading={result.grading}
-                error={gradingError}
-              />
-
-              <div className="download-bar">
-                <div className="download-actions">
-                  <button className="download-btn-json" onClick={handleDownloadJson}>
-                    ↓ Download JSON
-                  </button>
-                  <button className="download-btn-pdf" onClick={handleDownloadPdf}>
-                    ↓ Download Report
-                  </button>
-                  <button
-                    className="download-btn-grading"
-                    onClick={handleRunGrading}
-                    disabled={gradingLoading}
-                  >
-                    {gradingLoading ? 'Grading…' : '◎ Run Grading'}
-                  </button>
-                  <button
-                    className="download-btn-note"
-                    onClick={handleToggleComment}
-                  >
-                    {showCommentArea
-                      ? 'Cancel Note'
-                      : (localComment ? '✏ Edit Note' : '✏ Add Note')}
-                  </button>
-                </div>
-                {gradingError && (
-                  <p style={{ marginTop: '6px', color: 'var(--error, #DC2626)', fontSize: '0.78rem', textAlign: 'center' }}>
-                    {gradingError}
-                  </p>
-                )}
-                {showCommentArea && (
-                  <div className="comment-area">
-                    <textarea
-                      value={commentText}
-                      onChange={e => setCommentText(e.target.value)}
-                      placeholder="Add a note about this care plan…"
-                      maxLength={2000}
-                    />
-                    <div className="comment-actions">
-                      <button
-                        className="comment-cancel-btn"
-                        onClick={() => setShowCommentArea(false)}
-                      >
-                        Cancel
-                      </button>
-                      <button
-                        className="comment-save-btn"
-                        onClick={handleSaveComment}
-                        disabled={commentSaving}
-                      >
-                        {commentSaved ? 'Saved!' : commentSaving ? 'Saving…' : 'Save'}
-                      </button>
+              {inputMode === 'file' ? (
+                <div
+                  className={`upload-zone ${dragOver ? 'drag-over' : ''}`}
+                  onDragOver={event => {
+                    event.preventDefault();
+                    setDragOver(true);
+                  }}
+                  onDragLeave={() => setDragOver(false)}
+                  onDrop={onDrop}
+                >
+                  <input
+                    type="file"
+                    accept=".pdf,.txt,.docx"
+                    multiple
+                    onChange={e => {
+                      if (e.target.files) handleFiles(Array.from(e.target.files));
+                    }}
+                  />
+                  <div className="upload-icon">📄</div>
+                  {files.length > 0 ? (
+                    <div>
+                      {files.map(f => (
+                        <p key={f.name} className="upload-file-name">✓ {f.name}</p>
+                      ))}
                     </div>
-                  </div>
-                )}
-              </div>
-            </section>
-          )}
+                  ) : (
+                    <>
+                      <p className="upload-title">Drag & drop your document(s) here</p>
+                      <p className="upload-hint">PDF, TXT, or DOCX · Multiple files = one combined process</p>
+                    </>
+                  )}
+                </div>
+              ) : (
+                <textarea
+                  className="text-input-area"
+                  placeholder="Paste your provider note, appointment summary, or SOAP note here..."
+                  value={textInput}
+                  onChange={event => setTextInput(event.target.value)}
+                />
+              )}
+
+              {error && <div className="error-box">⚠ {error}</div>}
+            </div>
+            <PresetDataCard onSelectionChange={setPresetDataSelection} />
+            <ConfigurationCard
+              gradingEnabled={gradingEnabled}
+              onGradingEnabledChange={setGradingEnabled}
+            />
+            <button className="cta-btn" disabled={!canSubmit} onClick={handleSubmit}>
+              Create My Care Plan →
+            </button>
+          </section>
         </div>
       </div>
       </div>
       </div>
-      {showSplitView && result && (
-        <SplitView
-          savedId={result.input.mode === 'file' ? activeSavedId : null}
-          originalText={
-            (result.input.mode === 'text' || result.input.mode === 'batch_dataset')
-              ? result.input.text ?? null
-              : null
-          }
-          simplifiedContent={<CarePlanView result={result.care_plan} grading={result.grading} />}
-          onClose={() => setShowSplitView(false)}
-        />
-      )}
     </div>
   );
 }

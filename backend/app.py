@@ -171,9 +171,7 @@ def root():
         'name': 'Medical Scribe Processing API',
         'version': '1.1.0',
         'endpoints': {
-            'POST /care_plan': 'Simplify a medical document into a care plan (SSE)',
             'POST /care_plan/grade': 'Re-run grading on a saved or ephemeral care plan',
-            'POST /care_plan/batch': 'Batch-simplify dataset selections (SSE)',
             'POST /care_plan/jobs': 'Create a single async care-plan job',
             'POST /care_plan/batch/jobs': 'Create async batch care-plan jobs',
             'GET /care_plan/datasets': 'List preset datasets',
