@@ -8,7 +8,7 @@ export default function AdminRoute() {
 
   useEffect(() => {
     if (!user) { setIsAdmin(false); return; }
-    user.getIdTokenResult().then(result => {
+    user.getIdTokenResult(true).then(result => {
       setIsAdmin(result.claims.admin === true);
     });
   }, [user]);
