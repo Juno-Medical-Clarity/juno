@@ -1,40 +1,28 @@
-"""Batch dataset care plan route."""
+"""Batch dataset care plan utilities."""
 
-import json
 from datetime import datetime, timezone
 from typing import Callable, Generator
 
-from flask import Blueprint, Response, g, request, stream_with_context
+from flask import Blueprint
 
-from config import CARE_PLAN_DEFAULT_VERSION
-from models.envelope import CarePlanInternal
-from models.input import BatchDatasetInput
-from models.metrics import Metrics
 from utils.constants import Constants
 
 MAX_BATCH_RUNS = Constants.MAX_BATCH_RUNS
 from routes.care_plan import _extract_text_from_bytes, run_care_plan_pipeline
-from utils.error_codes import make_error_response, ErrorCode
-from utils.firebase import verify_firebase_token, save_care_plan_output
+from utils.firebase import save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
 
 
 batch_bp = Blueprint("batch", __name__)
 
 
-def _sse(payload: dict) -> str:
-    return f"data: {json.dumps(payload)}\n\n"
-
-
-def _sse_error(code: ErrorCode, path: str, details_vars: dict | None = None) -> str:
-    resp = make_error_response(code, path=path, details_vars=details_vars)
-    return _sse({"step": "error", "error_data": resp.error.to_dict()})
-
-
-def _payload_from_sse(chunk: str) -> dict | None:
-    if not chunk.startswith("data: "):
-        return None
-    return json.loads(chunk.removeprefix("data: ").strip())
+@batch_bp.route("/care_plan/batch", methods=["POST"])
+def care_plan_batch_sse_deprecated():
+    """Deprecated SSE batch endpoint — use POST /care_plan/batch/jobs instead."""
+    from flask import jsonify
+    return jsonify({
+        "error": "This SSE endpoint has been removed. Use POST /care_plan/batch/jobs instead."
+    }), 410
 
 
 def _batch_timestamp() -> str:
@@ -127,171 +115,13 @@ def _batch_progress_error(group: str, input_id: str, index: int, total: int, err
     }
 
 
-@batch_bp.route("/care_plan/batch", methods=["POST"])
-@verify_firebase_token
-def create_care_plan_batch(user_id: str):
-    """Stream batch care plan progress via SSE."""
-    def generate():
-        try:
-            body = request.get_json(silent=True) or {}
-            if not isinstance(body, dict):
-                yield _sse_error(ErrorCode.INPUT_VALIDATION_ERROR, "/care_plan/batch", {"field": "body", "reason": "must be a JSON object"})
-                return
+def _pipeline_kwargs_for_batch() -> dict:
+    """Return the canonical keyword arguments for a batch pipeline invocation.
 
-            version = body.get("version", CARE_PLAN_DEFAULT_VERSION)
-            if not isinstance(version, str) or version not in Constants.ALLOWED_VERSIONS:
-                yield _sse_error(ErrorCode.UNKNOWN_VERSION, "/care_plan/batch", {"version": version, "allowed": ", ".join(Constants.ALLOWED_VERSIONS)})
-                return
-
-            selections = body.get("selections")
-            if not isinstance(selections, list) or not selections:
-                yield _sse_error(ErrorCode.INPUT_VALIDATION_ERROR, "/care_plan/batch", {"field": "selections", "reason": "required, must be a non-empty list"})
-                return
-
-            grading_enabled = _grading_enabled(body.get("grading_enabled", False))
-            pipeline = _pipeline_for_version(version)
-            runs = _resolve_requested_runs(selections)
-            total = len(runs)
-            if total > MAX_BATCH_RUNS:
-                yield _sse_error(ErrorCode.BATCH_TOO_LARGE, "/care_plan/batch", {"count": total, "max_runs": MAX_BATCH_RUNS})
-                return
-
-            timestamp = _batch_timestamp()
-            batch_group_ids = {
-                group: f"{group}-{timestamp}"
-                for group in sorted({group for group, _, _ in runs})
-            }
-            outputs: list[dict] = []
-
-            for index, (group, input_id, files) in enumerate(runs, start=1):
-                batch_group_id = batch_group_ids[group]
-                yield _sse({
-                    "step": "batch_progress",
-                    "group": group,
-                    "input": input_id,
-                    "index": index,
-                    "total": total,
-                    "status": "active",
-                })
-
-                try:
-                    text = _combined_text_for_dataset_input(group, input_id, files)
-                except Exception as exc:
-                    yield _sse(_batch_progress_error(group, input_id, index, total, str(exc)))
-                    continue
-                if not text.strip():
-                    yield _sse(_batch_progress_error(
-                        group,
-                        input_id,
-                        index,
-                        total,
-                        f"Input appears to be empty or unreadable: {group}/{input_id}",
-                    ))
-                    continue
-
-                metrics = Metrics.start(
-                    session_id=getattr(g, "session_id", ""),
-                    pipeline_version=version,
-                    input_type="batch_dataset",
-                )
-                input_model = BatchDatasetInput(
-                    text=text,
-                    dataset_group=group,
-                    dataset_input=input_id,
-                    selected_files=files,
-                    batch_group_id=batch_group_id,
-                )
-
-                result_data = None
-                input_failed = False
-                for chunk in pipeline(text, metrics, grading_enabled, is_batch=True, source_kind="batch_dataset"):
-                    if isinstance(chunk, tuple) and chunk and chunk[0] == Constants.RESULT_SENTINEL:
-                        _, care_plan, grading, _raw_text, _clarified_text = chunk
-                        envelope = CarePlanInternal(
-                            metrics=metrics,
-                            input=input_model,
-                            grading=grading,
-                            care_plan=care_plan,
-                        )
-                        result_data = envelope.to_dict()
-                        continue
-                    payload = _payload_from_sse(chunk)
-                    if not payload:
-                        continue
-                    if payload.get("step") == "result":
-                        result_data = payload.get("data")
-                        continue
-                    if payload.get("step") == "error":
-                        error_msg = (
-                            (payload.get("error_data") or {}).get("message")
-                            or payload.get("error")
-                            or f"Pipeline failed: {group}/{input_id}"
-                        )
-                        yield _sse(_batch_progress_error(group, input_id, index, total, error_msg))
-                        result_data = None
-                        input_failed = True
-                        break
-                    yield _sse({
-                        "step": "batch_progress",
-                        "group": group,
-                        "input": input_id,
-                        "index": index,
-                        "total": total,
-                        "status": "pipeline",
-                        "event": payload,
-                    })
-
-                if result_data is None:
-                    if not input_failed:
-                        yield _sse(_batch_progress_error(
-                            group,
-                            input_id,
-                            index,
-                            total,
-                            f"Pipeline did not return a result: {group}/{input_id}",
-                        ))
-                    continue
-
-                source_filename = ", ".join(files)
-                saved_id = save_care_plan_output(
-                    user_id=user_id,
-                    name=_output_name(result_data, group, input_id),
-                    source_filename=source_filename,
-                    output_data=result_data,
-                    dataset_group=group,
-                    batch_group_id=batch_group_id,
-                )
-                metrics.saved_id = saved_id
-                result_data["metrics"]["saved_id"] = metrics.saved_id
-                outputs.append(result_data)
-
-                yield _sse({
-                    "step": "batch_progress",
-                    "group": group,
-                    "input": input_id,
-                    "index": index,
-                    "total": total,
-                    "status": "done",
-                })
-
-            yield _sse({
-                "step": "batch_result",
-                "data": {
-                    "batch_group_ids": batch_group_ids,
-                    "outputs": outputs,
-                },
-            })
-        except (FileNotFoundError, ValueError) as exc:
-            yield _sse_error(ErrorCode.BATCH_INVALID_SELECTION, "/care_plan/batch", {"detail": str(exc) or "Invalid batch selection"})
-        except Exception as exc:
-            yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan/batch", {"detail": str(exc)})
-
-    return Response(
-        stream_with_context(generate()),
-        content_type="text/event-stream",
-        headers={
-            "Cache-Control": "no-cache",
-            "X-Accel-Buffering": "no",
-            "Connection": "keep-alive",
-        },
-    )
+    All batch executions pass ``is_batch=True`` and ``source_kind="batch_dataset"``
+    so that pipeline markers record the correct provenance dimensions.
+    """
+    return {
+        "is_batch": True,
+        "source_kind": "batch_dataset",
+    }

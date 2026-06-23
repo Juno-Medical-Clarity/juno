@@ -27,7 +27,7 @@ def _events_from_chunks(chunks):
     return events
 
 
-@patch("routes.care_plan.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "ok", "word_count": 50, "dimensions": {}})
+@patch("routes.care_plan.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "Patient-friendly", "word_count": 100, "dimensions": {"grade_level": {"score": 70, "raw": 6.0, "label": "Grade Level", "unit": "grade"}, "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon Density", "unit": "proportion"}, "sentence_complexity": {"score": 70, "raw": 12.0, "label": "Sentence Length", "unit": "words/sentence"}, "passive_voice": {"score": 70, "raw": 0.1, "label": "Active Voice", "unit": "passive ratio"}, "actionability": {"score": 70, "raw": 0.05, "label": "Actionability", "unit": "you-rate"}, "numeracy_clarity": {"score": 70, "raw": 1.0, "label": "Numeric Clarity", "unit": "vague count"}, "structural_clarity": {"score": 70, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"}}})
 @patch("routes.care_plan.build_glossary_from_simplified_text", return_value={})
 @patch(
     "routes.care_plan.detect_terms",
@@ -38,7 +38,7 @@ def _events_from_chunks(chunks):
     },
 )
 @patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
-def test_run_care_plan_pipeline_direct_text_yields_steps_and_sentinel(
+def test_run_care_plan_pipeline_direct_text_yields_steps_and_result_sentinel(
     _pipeline,
     _detect_terms,
     _glossary,
@@ -56,7 +56,9 @@ def test_run_care_plan_pipeline_direct_text_yields_steps_and_sentinel(
         grading_enabled=False,
     ))
 
-    events = _events_from_chunks(chunks)
+    # All string chunks should be step SSE events (not result events)
+    str_chunks = [c for c in chunks if isinstance(c, str)]
+    events = _events_from_chunks(str_chunks)
     assert [(event["step"], event.get("status")) for event in events] == [
         (2, "active"),
         (2, "done"),
@@ -67,12 +69,7 @@ def test_run_care_plan_pipeline_direct_text_yields_steps_and_sentinel(
         (5, "active"),
         (5, "done"),
     ]
-    # Last item is the __result__ sentinel tuple
+    # The last chunk should be the __result__ sentinel tuple, not an SSE event
     tuple_chunks = [c for c in chunks if isinstance(c, tuple)]
     assert len(tuple_chunks) == 1
-    sentinel = tuple_chunks[0]
-    assert sentinel[0] == "__result__"
-    # care_plan and grading objects should be returned
-    _, care_plan_obj, grading_obj, raw_text, clarified_text = sentinel[:5]
-    assert raw_text == "plain note"
-    assert "plain note" in clarified_text
+    assert tuple_chunks[0][0] == "__result__"

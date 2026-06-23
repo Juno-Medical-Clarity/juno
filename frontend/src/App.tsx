@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import ModelsPage from './pages/ModelsPage';
 import GradingVersionDetailPage from './pages/GradingVersionDetailPage';
 import CarePlanPage from './pages/care-plan/CarePlanPage';
@@ -8,9 +8,13 @@ import LoginPage from './pages/LoginPage';
 import AuthLayout from './components/AuthLayout';
 import DocsPage from './pages/docs/DocsPage';
 import AlgorithmDocPage from './pages/docs/AlgorithmDocPage';
+import AdminRoute from './components/AdminRoute';
+import AdminPage from './pages/AdminPage';
 
 export default function App() {
   const { user, loading } = useAuth();
+  const location = useLocation();
+  const isCarePlanRoute = /^\/carePlan\//.test(location.pathname);
 
   if (loading) {
     return (
@@ -23,7 +27,7 @@ export default function App() {
     );
   }
 
-  if (!user) {
+  if (!user && !isCarePlanRoute) {
     return <LoginPage />;
   }
 
@@ -40,6 +44,10 @@ export default function App() {
       <Route path="/" element={<CarePlanPage />} />
       {/* CarePlanJobPage — async job status / result view */}
       <Route path="/carePlan/:id" element={<CarePlanJobPage />} />
+      {/* Admin — requires admin custom claim */}
+      <Route element={<AdminRoute />}>
+        <Route path="/admin" element={<AdminPage />} />
+      </Route>
     </Routes>
   );
 }

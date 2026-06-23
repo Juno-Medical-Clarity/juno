@@ -8,6 +8,10 @@ vi.mock('react-router-dom', () => ({
   useLocation: () => ({ state: null, pathname: '/' }),
 }));
 
+vi.mock('../../../auth/AuthContext', () => ({
+  useAuth: () => ({ user: null, getIdToken: vi.fn() }),
+}));
+
 // Mock firebase
 vi.mock('../../../api/firebase', () => ({
   firebaseAuth: { currentUser: null },
@@ -38,7 +42,7 @@ vi.mock('../../../components/CarePlanView', () => ({
 
 // Mock NavBar
 vi.mock('../../../components/NavBar', () => ({
-  default: ({ onNew }: { onNew: () => void }) => <nav data-testid="navbar" onClick={onNew}>NavBar</nav>,
+  default: () => <nav data-testid="navbar">NavBar</nav>,
 }));
 
 // Must import after mocks

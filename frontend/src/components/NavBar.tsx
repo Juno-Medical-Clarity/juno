@@ -1,18 +1,39 @@
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import SignOutButton from '../auth/SignOutButton';
+import { useAuth } from '../auth/AuthContext';
 
-export default function NavBar() {
+interface NavBarProps {
+  isPublicView?: boolean;
+}
+
+export default function NavBar({ isPublicView = false }: NavBarProps) {
+  const { user } = useAuth();
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    let mounted = true;
+    if (!user) { setIsAdmin(false); return; }
+    user.getIdTokenResult()
+      .then(result => { if (mounted) setIsAdmin(result.claims.admin === true); })
+      .catch(() => { if (mounted) setIsAdmin(false); });
+    return () => { mounted = false; };
+  }, [user]);
+
   return (
     <nav className="top-nav" aria-label="Main navigation">
       <div className="top-nav-brand">
         <span className="top-nav-logo">Juno</span>
       </div>
       <div className="top-nav-center">
-        <Link to="/" className="top-nav-link">New</Link>
         <Link to="/models" className="top-nav-link">Models</Link>
+        {isAdmin && <Link to="/admin" className="top-nav-link">Admin</Link>}
       </div>
       <div className="top-nav-right">
-        <SignOutButton />
+        {!isPublicView && (
+          <Link to="/" className="top-nav-link" aria-label="New care plan">+</Link>
+        )}
+        {!isPublicView && <SignOutButton />}
       </div>
     </nav>
   );

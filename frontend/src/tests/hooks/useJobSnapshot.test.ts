@@ -20,6 +20,15 @@ vi.mock('../../api/firebase', () => ({
   API_URL: 'http://localhost:8082',
 }));
 
+const mockOnAuthStateChanged = vi.fn();
+vi.mock('firebase/auth', () => ({
+  onAuthStateChanged: (auth: unknown, cb: () => void) => {
+    mockOnAuthStateChanged(auth, cb);
+    cb(); // immediately invoke callback so subscribeToSnapshot runs
+    return vi.fn(); // returns unsubscribe function
+  },
+}));
+
 import { useJobSnapshot } from '../../hooks/useJobSnapshot';
 
 describe('useJobSnapshot', () => {
@@ -27,6 +36,7 @@ describe('useJobSnapshot', () => {
     mockUnsubscribe.mockClear();
     mockOnSnapshot.mockClear();
     mockDoc.mockClear();
+    mockOnAuthStateChanged.mockClear();
   });
 
   it('starts with loading=true and jobDoc=null when jobId is provided', () => {

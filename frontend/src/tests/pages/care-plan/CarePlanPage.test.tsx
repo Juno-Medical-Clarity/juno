@@ -16,17 +16,7 @@ vi.mock('../../../api/firebase', () => ({
 }));
 
 vi.mock('react-router-dom', () => ({
-  useLocation: () => ({ state: null, pathname: '/' }),
   useNavigate: () => vi.fn(),
-}));
-
-vi.mock('../../../api/savedOutputs', () => ({
-  getSavedOutput: vi.fn(),
-  getInputPdfUrl: vi.fn(),
-}));
-
-vi.mock('../../../api/datasets', () => ({
-  runBatch: vi.fn(),
 }));
 
 vi.mock('../../../api/apiClient', () => ({

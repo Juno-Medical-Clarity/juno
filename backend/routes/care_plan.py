@@ -1,20 +1,8 @@
 """
-care_plan.py - V1.2 care plan handler.
+care_plan.py - V1.2 care plan pipeline utilities.
 
-Invoked by POST /care_plan.
-  Accepts one of:
-    A) multipart/form-data with 'file' field (PDF, TXT, DOCX)
-    B) multipart/form-data or application/json with 'text' field
-    C) multipart/form-data or application/json with 'doc_id' field - fetches from GCS
-
-  Returns: text/event-stream (SSE) with per-step progress + final result.
-
-SSE steps for V1.2:
-  1. Reading your note
-  2. Finding difficult and medical terms
-  3. Simplifying language
-  4. Clarifying actions and numbers
-  5. Organizing your care plan
+Shared utilities for the async job workflow (care_plan_jobs.py, worker.py, batch.py).
+The SSE streaming route (POST /care_plan) has been removed; use POST /care_plan/jobs instead.
 """
 
 import io
@@ -25,10 +13,9 @@ import uuid
 from dataclasses import dataclass
 from typing import Generator
 
-from flask import Blueprint, Response, g, request, stream_with_context
+from flask import Blueprint, g, request
 from google.cloud import storage as gcs
 
-from config import CARE_PLAN_DEFAULT_VERSION
 from utils.constants import Constants
 
 RESULT_SENTINEL = Constants.RESULT_SENTINEL
@@ -36,15 +23,16 @@ MAX_AGGREGATE_FILE_BYTES = Constants.MAX_AGGREGATE_FILE_BYTES
 
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
-from utils.firebase import save_care_plan_output, verify_firebase_token
 from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from models.metrics import Metrics
-from models.input import FileInput, TextInput, DocIdInput, INPUT_VERSION
 from models.grading import Grading, build_grading, GRADING_VERSION
 from models.care_plan import CarePlan
 from models.envelope import CarePlanInternal
+from models.input import INPUT_VERSION
 from utils.markers import Markers, JunoContext
+
+CARE_PLAN_VERSION = Constants.CARE_PLAN_VERSIONS.V1_2.value
 from utils.error_codes import make_error_response, ErrorCode
 from telemetry import get_tracer
 
@@ -55,6 +43,15 @@ _juno_error_logger = logging.getLogger("utils.juno_logger")
 
 care_plan_bp = Blueprint("care_plan", __name__)
 _UPLOAD_PREFIX = "care_plan-uploads"
+
+
+@care_plan_bp.route("/care_plan", methods=["POST"])
+def care_plan_sse_deprecated():
+    """Deprecated SSE endpoint — use POST /care_plan/jobs instead."""
+    from flask import jsonify
+    return jsonify({
+        "error": "This SSE endpoint has been removed. Use POST /care_plan/jobs instead."
+    }), 410
 
 
 def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
@@ -81,6 +78,12 @@ class ResolvedInput:
     source_filename: str
     combined_pdf_bytes: bytes | None = None
     source_kind: str = "upload"
+    file_count: int = 0
+    file_types: list = None
+
+    def __post_init__(self):
+        if self.file_types is None:
+            self.file_types = []
 
 
 def _sse(payload: dict) -> str:
@@ -174,12 +177,17 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
         except Exception:
             logger.exception("care_plan: failed to merge input files - continuing without combined PDF")
 
+    file_count = len(files)
+    file_types = sorted({f.filename.rsplit(".", 1)[1].lower() for f in files if "." in f.filename})
+
     source_filename = ", ".join(filenames)
     return ResolvedInput(
         text="\n".join(text_parts).strip(),
         source_description=source_filename,
         source_filename=source_filename,
         combined_pdf_bytes=combined_pdf_bytes,
+        file_count=file_count,
+        file_types=file_types,
     )
 
 
@@ -205,82 +213,12 @@ def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     return blob.download_as_bytes(), filename
 
 
-def _resolve_input() -> ResolvedInput:
-    """
-    Resolve input from the request.
-
-    Priority: text field > files/file field > doc_id.
-    """
-    json_data = request.get_json(silent=True) or {}
-
-    text_input = (request.form.get("text") or json_data.get("text") or "").strip()
-    if text_input:
-        return ResolvedInput(
-            text=text_input,
-            source_description="text_input",
-            source_filename="text_input",
-            source_kind="text",
-        )
-
-    uploads = request.files.getlist("files")
-    if not uploads and "file" in request.files:
-        uploads = [request.files["file"]]
-    if uploads:
-        return _resolve_uploaded_files(uploads)
-
-    doc_id = (request.form.get("doc_id") or json_data.get("doc_id") or "").strip()
-    if doc_id:
-        file_bytes, filename = _fetch_from_gcs(doc_id)
-        if not _allowed(filename):
-            raise ValueError("Stored file must be PDF, TXT, or DOCX")
-        if len(file_bytes) > Constants.MAX_FILE_BYTES:
-            raise ValueError("Stored file exceeds 10 MB limit")
-
-        combined_pdf_bytes = None
-        ext = filename.rsplit(".", 1)[1].lower()
-        if ext in {"pdf", "txt"}:
-            try:
-                combined_pdf_bytes = merge_pdfs([(file_bytes, filename)])
-            except Exception:
-                logger.exception("care_plan: failed to merge stored input - continuing without combined PDF")
-
-        return ResolvedInput(
-            text=_extract_text_from_bytes(file_bytes, filename),
-            source_description=f"doc:{doc_id}",
-            source_filename=filename,
-            combined_pdf_bytes=combined_pdf_bytes,
-            source_kind="doc_id",
-        )
-
-    raise ValueError("Request must include 'files', 'file', 'text', or 'doc_id'")
-
-
 def _score_or_none(text: str, label: str) -> dict | None:
     try:
         return score_text(text)
     except Exception:
         logger.exception("care_plan: %s-score failed - continuing without score", label)
         return None
-
-
-def _input_model_from_resolved(resolved: ResolvedInput) -> FileInput | TextInput | DocIdInput:
-    if resolved.source_kind == "text":
-        return TextInput(text=resolved.text)
-    if resolved.source_kind == "doc_id":
-        raw_doc_id = resolved.source_description.removeprefix("doc:")
-        return DocIdInput(doc_id=raw_doc_id)
-
-    # file upload: reconstruct from request files (streams may be exhausted,
-    # from_file_uploads seeks them back to 0 after reading)
-    uploads = request.files.getlist("files")
-    if not uploads and "file" in request.files:
-        uploads = [request.files["file"]]
-    for upload in uploads:
-        try:
-            upload.seek(0)
-        except Exception:
-            pass
-    return FileInput.from_file_uploads(uploads)
 
 
 def _grading_enabled_from_request() -> bool:
@@ -291,52 +229,6 @@ def _grading_enabled_from_request() -> bool:
     if isinstance(raw_value, bool):
         return raw_value
     return str(raw_value).strip().lower() in {"1", "true", "yes", "on"}
-
-
-def _derive_output_name(result: dict, resolved: "ResolvedInput") -> str:
-    """
-    Derive a human-readable name for a saved output.
-
-    Priority:
-      1. reason_for_visit[0].reason  (from AI output)
-      2. diagnosis.main_conclusion   (first sentence, from AI output)
-      3. diagnosis.details[0].plain_name  (from AI output)
-      4. source filename stem        (for file uploads)
-      5. "Appointment"               (final fallback)
-    """
-    try:
-        rfv = result.get("reason_for_visit")
-        if rfv and isinstance(rfv, list):
-            reason = (rfv[0].get("reason") or "").strip()
-            if reason:
-                return reason.title()[:60]
-
-        diagnosis = result.get("diagnosis") or {}
-        main = (diagnosis.get("main_conclusion") or "").strip()
-        if main:
-            first_sentence = main.split(".")[0].strip()
-            if first_sentence:
-                return first_sentence[:60]
-
-        details = diagnosis.get("details")
-        if details and isinstance(details, list):
-            plain = (details[0].get("plain_name") or "").strip()
-            if plain:
-                return plain.title()[:60]
-    except Exception:
-        logger.exception("care_plan: failed to derive name from output - using fallback")
-
-    # Fallback: use filename stem if it's a real filename, not "text_input"
-    filename = resolved.source_filename or ""
-    if filename and filename != "text_input":
-        stem = filename.split(",")[0].strip()   # first file if multiple
-        if "." in stem:
-            stem = stem.rsplit(".", 1)[0]
-        stem = stem.replace("_", " ").replace("-", " ").strip()
-        if stem:
-            return stem.title()[:60]
-
-    return "Appointment"
 
 
 def run_care_plan_pipeline(
@@ -497,158 +389,3 @@ def run_care_plan_pipeline(
         Markers.CarePlan.Pipeline.execute(_pipeline_fail)
         logger.exception("care_plan: unexpected pipeline error")
         yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan", {"detail": str(exc)})
-
-
-def _payload_from_sse(chunk: str) -> dict | None:
-    if not chunk.startswith("data: "):
-        return None
-    try:
-        return json.loads(chunk.removeprefix("data: ").strip())
-    except json.JSONDecodeError:
-        return None
-
-
-def _care_plan_stream(user_id: str, version: str):
-    try:
-        yield _sse({"step": 1, "status": "active", "label": Constants.STEPS[1]})
-
-        g.care_plan_version = Constants.CARE_PLAN_VERSIONS.V1_2.value
-        g.grading_version = GRADING_VERSION
-        g.input_version = INPUT_VERSION
-
-        # Step 1: Resolve input
-        try:
-            def _read(scope):
-                JunoContext.from_g(function="read_input").apply(scope)
-                resolved = _resolve_input()
-                scope.add("source_kind", resolved.source_kind)
-                scope.add("input_chars", len(resolved.text))
-                if resolved.source_kind == "upload" and resolved.source_filename:
-                    filenames = [f.strip() for f in resolved.source_filename.split(",") if f.strip()]
-                    scope.add("file_count", len(filenames))
-                    extensions = ",".join(
-                        f.rsplit(".", 1)[1].lower() if "." in f else ""
-                        for f in filenames
-                    )
-                    scope.add("file_types", extensions)
-                else:
-                    scope.add("file_count", 0)
-                    scope.add("file_types", "")
-                return resolved
-            resolved = Markers.CarePlan.ReadInput.execute(_read)
-        except Exception as exc:
-            logger.exception("care_plan: input resolution failed")
-            _juno_error_logger.error("care_plan: input resolution failed: %s", exc)
-            yield _sse_error(ErrorCode.INPUT_VALIDATION_ERROR, "/care_plan", {"field": "input", "reason": str(exc)})
-            return
-
-        text = resolved.text
-        if not text.strip():
-            yield _sse_error(ErrorCode.INPUT_EMPTY, "/care_plan")
-            return
-
-        metrics = Metrics.start(
-            session_id=getattr(g, "session_id", ""),
-            pipeline_version=version,
-            input_type=resolved.source_kind,
-        )
-        input_model = _input_model_from_resolved(resolved)
-
-        yield _sse({"step": 1, "status": "done", "label": Constants.STEPS[1]})
-        logger.info("care_plan: processing source=%s (%d chars)", resolved.source_description, len(text))
-        grading_enabled = _grading_enabled_from_request()
-        pipeline = PIPELINES[version]
-
-        pipeline_result = None
-        for chunk in pipeline(text, metrics, grading_enabled=grading_enabled, source_kind=resolved.source_kind):
-            if isinstance(chunk, tuple) and chunk and chunk[0] == Constants.RESULT_SENTINEL:
-                pipeline_result = chunk
-                continue
-            if isinstance(chunk, str):
-                payload = _payload_from_sse(chunk)
-                if payload and payload.get("step") == "result":
-                    yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan", {"detail": "Pipeline result SSE is invalid; use the route result sentinel."})
-                    return
-                yield chunk
-                continue
-
-        if pipeline_result is None:
-            return
-
-        _, care_plan, grading, _raw_text, _clarified_text = pipeline_result
-        envelope = CarePlanInternal(
-            metrics=metrics,
-            input=input_model,
-            grading=grading,
-            care_plan=care_plan,
-        )
-        _payload_holder: list[dict] = []
-
-        if resolved.source_kind != "doc_id":
-            def _save(scope):
-                JunoContext.from_g(function="save_output").apply(scope)
-                try:
-                    if resolved.combined_pdf_bytes:
-                        gcs_uri = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
-                        if isinstance(input_model, FileInput):
-                            input_model.pdf_gcs_url = gcs_uri
-
-                    payload = envelope.to_dict()
-                    _payload_holder.append(payload)
-
-                    care_plan_data = payload.get("care_plan", {})
-                    saved_id = save_care_plan_output(
-                        user_id=user_id,
-                        name=_derive_output_name(care_plan_data, resolved),
-                        source_filename=resolved.source_filename,
-                        output_data=payload,
-                    )
-                    metrics.saved_id = saved_id
-                    payload["metrics"]["saved_id"] = metrics.saved_id
-                    scope.add("saved_id", saved_id)
-                except Exception as exc:
-                    logger.exception("care_plan: failed to save output - continuing without saved_id")
-                    _juno_error_logger.error("care_plan: failed to save output - continuing without saved_id: %s", exc)
-                    scope.mark_failed()
-            Markers.CarePlan.SaveOutput.execute(_save)
-        else:
-            _payload_holder.append(envelope.to_dict())
-
-        payload = _payload_holder[0] if _payload_holder else envelope.to_dict()
-        yield _sse({"step": "result", "data": payload})
-    except Exception as exc:
-        logger.exception("care_plan: unexpected pipeline error")
-        yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan", {"detail": str(exc)})
-
-
-PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
-
-
-@care_plan_bp.route("/care_plan", methods=["POST"])
-@verify_firebase_token
-def create_care_plan(user_id: str):
-    """Stream V1.2 care plan pipeline via SSE."""
-    json_body = request.get_json(silent=True) or {}
-    if "version" in request.form:
-        version = request.form.get("version")
-    elif isinstance(json_body, dict) and "version" in json_body:
-        version = json_body.get("version")
-    else:
-        version = CARE_PLAN_DEFAULT_VERSION
-
-    if not isinstance(version, str) or version not in Constants.ALLOWED_VERSIONS:
-        return make_error_response(
-            ErrorCode.UNKNOWN_VERSION,
-            request.path,
-            {"version": version, "allowed": ", ".join(Constants.ALLOWED_VERSIONS)},
-        ).to_dict(), 400
-
-    return Response(
-        stream_with_context(_care_plan_stream(getattr(g, "user_id", user_id), version)),
-        content_type="text/event-stream",
-        headers={
-            "Cache-Control": "no-cache",
-            "X-Accel-Buffering": "no",
-            "Connection": "keep-alive",
-        },
-    )
