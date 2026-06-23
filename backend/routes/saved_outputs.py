@@ -223,5 +223,8 @@ def toggle_share(user_id: str, doc_id: str):
     if err:
         return err
 
-    db.collection('care_plan_outputs').document(doc_id).update({'shared': shared})
+    db.collection('care_plan_outputs').document(doc_id).update({
+        'shared': shared,
+        'updated_at': firestore.SERVER_TIMESTAMP,
+    })
     return jsonify({'shared': shared})

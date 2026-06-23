@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 import json
+import logging
 import os
 import uuid
 from datetime import datetime, timezone
@@ -17,6 +18,8 @@ from utils.error_codes import make_error_response, ErrorCode
 from dotenv import load_dotenv
 
 load_dotenv()
+
+logger = logging.getLogger(__name__)
 
 
 def initialize_firebase():
@@ -120,7 +123,8 @@ def require_admin(f):
             kwargs['user_id'] = user_id
 
         except Exception as e:
-            return make_error_response(ErrorCode.UNAUTHORIZED, request.path, {"detail": str(e)}).to_dict(), 401
+            logger.warning("Admin token verification failed: %s", e)
+            return make_error_response(ErrorCode.UNAUTHORIZED, request.path).to_dict(), 401
 
         return f(*args, **kwargs)
 
