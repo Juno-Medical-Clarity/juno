@@ -12,6 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
+ENV PRESET_DATA_PATH=/app/preset-data
 
 # Ensure Python output is sent straight to the logs (no buffering)
 ENV PYTHONUNBUFFERED=1

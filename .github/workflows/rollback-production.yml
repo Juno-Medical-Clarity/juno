@@ -57,6 +57,8 @@ jobs:
           backend_image="$BACKEND_IMAGE_BASE:$image_tag"
           echo "BACKEND_IMAGE=$backend_image" >> "$GITHUB_ENV"
 
+          cp -r preset-data backend/preset-data
+
           gcloud builds submit \
             --project "$GCP_PROJECT_ID" \
             --config ./backend/cloudbuild-build.yaml \
