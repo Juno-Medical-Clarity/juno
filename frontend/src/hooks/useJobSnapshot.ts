@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+import { onAuthStateChanged } from 'firebase/auth';
 import { doc, onSnapshot } from 'firebase/firestore';
-import { firebaseDb } from '../api/firebase';
+import { firebaseAuth, firebaseDb } from '../api/firebase';
 import type { ApiErrorDetail } from '../types/errors';
 
 export type JobStatus = 'not_started' | 'processing' | 'completed' | 'error';
@@ -41,33 +42,51 @@ export function useJobSnapshot(jobId: string | null): {
     setLoading(true);
     setError(null);
 
-    const unsubscribe = onSnapshot(
-      doc(firebaseDb, 'care_plan_outputs', jobId),
-      (snapshot) => {
-        if (!snapshot.exists()) {
-          setJobDoc(null);
-          setError(null);
-          setLoading(false);
-          return;
-        }
-        const data = snapshot.data();
-        setJobDoc({
-          status: (data.status as JobStatus) ?? 'completed',
-          stage: data.stage ?? null,
-          output_data: data.output_data ?? null,
-          error_data: data.error_data ?? null,
-          name: data.name ?? '',
-          batch_run_id: data.batch_run_id ?? null,
-        });
-        setLoading(false);
-      },
-      (err) => {
-        setError(err);
-        setLoading(false);
-      },
-    );
+    let unsubscribeSnapshot: (() => void) | null = null;
 
-    return () => unsubscribe();
+    const unsubscribeAuth = onAuthStateChanged(firebaseAuth, (user) => {
+      if (unsubscribeSnapshot) {
+        unsubscribeSnapshot();
+        unsubscribeSnapshot = null;
+      }
+
+      if (!user) {
+        setJobDoc(null);
+        setLoading(false);
+        return;
+      }
+
+      unsubscribeSnapshot = onSnapshot(
+        doc(firebaseDb, 'care_plan_outputs', jobId),
+        (snapshot) => {
+          if (!snapshot.exists()) {
+            setJobDoc(null);
+            setError(null);
+            setLoading(false);
+            return;
+          }
+          const data = snapshot.data();
+          setJobDoc({
+            status: (data.status as JobStatus) ?? 'completed',
+            stage: data.stage ?? null,
+            output_data: data.output_data ?? null,
+            error_data: data.error_data ?? null,
+            name: data.name ?? '',
+            batch_run_id: data.batch_run_id ?? null,
+          });
+          setLoading(false);
+        },
+        (err) => {
+          setError(err);
+          setLoading(false);
+        },
+      );
+    });
+
+    return () => {
+      if (unsubscribeSnapshot) unsubscribeSnapshot();
+      unsubscribeAuth();
+    };
   }, [jobId]);
 
   return { jobDoc, loading, error };
