@@ -83,6 +83,10 @@ export function useJobSnapshot(jobId: string | null): {
         unsubscribeSnapshot();
         unsubscribeSnapshot = null;
       }
+      // Clear stale data before re-subscribing so private content is not
+      // left in the UI when the user signs out or switches accounts.
+      setJobDoc(null);
+      setError(null);
       subscribeToSnapshot();
     });
 

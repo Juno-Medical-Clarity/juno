@@ -44,7 +44,7 @@ jobs:
             --region "$GCP_REGION" --project "$GCP_PROJECT_ID" \
             --format='value(status.url)')
 
-          API_ENV_VARS="GCP_PROJECT_ID=$GCP_PROJECT_ID,GCP_BUCKET_NAME=$GCP_BUCKET_NAME,GCP_LOCATION=global,VERTEX_AI_MODEL=gemini-3.5-flash,SIMPLIFY_DEFAULT_VERSION=v1-2,FIRESTORE_DATABASE_ID=(default),CLOUD_TASKS_QUEUE=projects/$GCP_PROJECT_ID/locations/$GCP_REGION/queues/care-plan-jobs,WORKER_URL=$WORKER_URL,WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com,JOB_TIMEOUT_SECONDS_SINGLE=300,JOB_TIMEOUT_SECONDS_BATCH=900"
+          API_ENV_VARS="GCP_PROJECT_ID=$GCP_PROJECT_ID,GCP_BUCKET_NAME=$GCP_BUCKET_NAME,GCP_LOCATION=$GCP_REGION,VERTEX_AI_MODEL=gemini-3.5-flash,SIMPLIFY_DEFAULT_VERSION=v1-2,FIRESTORE_DATABASE_ID=(default),CLOUD_TASKS_QUEUE=projects/$GCP_PROJECT_ID/locations/$GCP_REGION/queues/care-plan-jobs,WORKER_URL=$WORKER_URL,WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com,JOB_TIMEOUT_SECONDS_SINGLE=300,JOB_TIMEOUT_SECONDS_BATCH=900"
 
           gcloud run services update juno-api \
             --region "$GCP_REGION" \
@@ -56,7 +56,7 @@ jobs:
 
       - name: Configure juno-worker env vars and secrets
         run: |
-          WORKER_ENV_VARS="GCP_PROJECT_ID=$GCP_PROJECT_ID,GCP_BUCKET_NAME=$GCP_BUCKET_NAME,GCP_LOCATION=global,VERTEX_AI_MODEL=gemini-3.5-flash,SIMPLIFY_DEFAULT_VERSION=v1-2,FIRESTORE_DATABASE_ID=(default),WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com,JUNO_MODE=worker"
+          WORKER_ENV_VARS="GCP_PROJECT_ID=$GCP_PROJECT_ID,GCP_BUCKET_NAME=$GCP_BUCKET_NAME,GCP_LOCATION=$GCP_REGION,VERTEX_AI_MODEL=gemini-3.5-flash,SIMPLIFY_DEFAULT_VERSION=v1-2,FIRESTORE_DATABASE_ID=(default),WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com,JUNO_MODE=worker"
 
           gcloud run services update juno-worker \
             --region "$GCP_REGION" \
