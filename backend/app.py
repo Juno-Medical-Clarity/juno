@@ -28,8 +28,21 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 app = Flask(__name__)
 
-# Enable CORS for all routes (expose X-Session-Id so frontends can read it)
-CORS(app, expose_headers=["X-Session-Id", "X-Trace-Id"])
+# Enable CORS for all routes with explicit origin/header/method allow-lists
+CORS(
+    app,
+    origins=[
+        "https://juno-medical-clarity.web.app",
+        "https://juno-medical-clarity.firebaseapp.com",
+        "http://localhost:3000",
+        "http://localhost:5173",
+    ],
+    methods=["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "X-Session-Id"],
+    expose_headers=["X-Session-Id", "X-Trace-Id"],
+    supports_credentials=False,
+    max_age=600,
+)
 
 # ---------------------------------------------------------------------------
 # Initialize OpenTelemetry (instruments Flask + outgoing HTTP)
