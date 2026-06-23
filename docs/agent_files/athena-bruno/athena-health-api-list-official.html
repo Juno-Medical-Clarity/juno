@@ -1,0 +1,2794 @@
+<div data-testid="rich-text-container" class="rich-text-container " bis_skin_checked="1"><h2 class="page-content-header page-content-header__section" id="Overview_of_our_API_Offerings_0">Overview of our API Offerings</h2><p>athenahealth offers various API frameworks to help you build an integrated solution which best meets your business needs. Before you begin designing your solution, it is recommended that you review the supported APIs within each framework below to determine which API framework(s) will fulfill your solution’s intended use case.</p><div data-testid="rich-text-container" class="rich-text-container mobile-capable-table-container" bis_skin_checked="1"><table class="contentful-table"><thead><tr><th><p>athenaOne APIs</p></th><th><p>FHIR APIs</p></th><th><p>Certified APIs</p></th></tr></thead><tbody><tr><td><p>Over 700 proprietary API endpoints across major administrative, clinical, and financial functions. Deliver real-world insights in our native workflows, with our robust library of Write APIs.</p><p><b>Key considerations:</b></p><p>Our most comprehensive set of APIs with over 700 endpoints</p><p>Charged based on API call volume</p><p><a class="internal-link custom-link-component" href="/api/resources/complete_list_athena_apis#List_of_athenaOne_APIs_8">Learn More</a></p></td><td><p>APIs supporting the standard clinical definitions and data structures of the HL7® FHIR® (Fast Healthcare Interoperability Resources).</p><p><b>Key considerations:</b></p><p>Includes support of FHIR DSTU2 and FHIR R4 APIs following industry standards to healthcare interoperability</p><p><a class="internal-link custom-link-component" href="/api/resources/complete_list_athena_apis#List_of_available_FHIR_APIs_7">Learn More</a></p></td><td><p>athenahealth has chosen to offer access to all Certified FHIR API endpoints at no cost to customers and partners.</p><p><b>Key considerations:</b></p><p>Free to consume</p><p>Primarily FHIR R4 endpoints</p><p><a class="internal-link custom-link-component" href="/api/resources/complete_list_athena_apis#List_of_Certified_APIs_in_adherence_to_2015_Edition/Cures_Update_CEHRT_Criteria)_2">Learn More</a></p></td></tr></tbody></table><p>
+</p></div><h2 class="page-content-header page-content-header__section" id="Getting_Started_1">Getting Started</h2><p>Below are a few items to consider as you begin exploring our API frameworks further:</p><ol><li><p>In short, our API is&nbsp;<a class="external-link" target="_blank" href="http://en.wikipedia.org/wiki/Representational_state_transfer" rel="noreferrer">REST</a> ful and uses&nbsp;<a class="external-link" target="_blank" href="http://www.json.org/" rel="noreferrer">JSON</a></p></li><li><p>Our APIs are accessed using <a class="external-link" target="_blank" href="https://datatracker.ietf.org/doc/html/rfc7519" rel="noreferrer">JSON web tokens</a> (JWTs, pronounced “jots”). Here is our&nbsp;<a class="internal-link custom-link-component" href="/api/guides/token-endpoint">authorization</a> &nbsp;documentation on how to obtain an access token to call APIs.</p></li><li><p>To help you test, evaluate, and use the API, we are willing to make the API available to you pursuant to these&nbsp;<a class="external-link" target="_blank" href="https://www.athenahealth.com/terms-and-conditions/terms-of-use" rel="noreferrer">Terms of Service</a> (“terms”).</p></li><li><p>APIs are assigned to the following 3 categories. Refer to each category for the list of APIs included.</p><ol><li><p><a class="internal-link custom-link-component" href="/api/resources/complete_list_athena_apis#Certified%20APIs">Certified APIs</a></p></li><li><p><a class="internal-link custom-link-component" href="/api/resources/complete_list_athena_apis#FHIR%20APIs">FHIR APIs</a> (includes support for both <a class="external-link" target="_blank" href="http://hl7.org/fhir/DSTU2/" rel="noreferrer">FHIR DSTU2</a> and FHIR R4)</p></li><li><p><a class="internal-link custom-link-component" href="/api/resources/complete_list_athena_apis#athenaOne%20APIs">athenaOne APIs</a></p></li></ol></li><li><p>The process for obtaining production access varies by API category. If you are solely seeking read-only access to Certified APIs click&nbsp;<a class="internal-link custom-link-component" href="/api/guides/certified-apis">here</a>.</p></li><li><p>For troubleshooting various error responses you may encounter when calling our APIs, refer to our full list <a class="internal-link custom-link-component" href="/api/resources/api-error-messages">here</a>.</p></li></ol><h2 class="page-content-header page-content-header__section" id="List_of_Certified_APIs_in_adherence_to_2015_Edition/Cures/HTI-1_Update_CEHRT_Criteria)_2">List of Certified APIs (in adherence to 2015 Edition/Cures/HTI-1 Update CEHRT Criteria)</h2><h3 class="page-content-header page-content-header__sub-section" id="170.315(g)(7)_Application_Access_–_Patient_Selection_3">§170.315(g)(7) Application Access – Patient Selection</h3><p>API syntax, function names, required and optional parameters and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns:</p><div data-testid="rich-text-container" class="rich-text-container table-container-align-top mobile-capable-table-container breakable" bis_skin_checked="1"><table class="contentful-table"><thead><tr><th><p>Type</p></th><th><p>API Endpoint</p></th></tr></thead><tbody><tr><td><p>Patients</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/patient">GET /fhir/r4/Patient</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/patient">GET /{practiceid}/{brandid}/{chartsharinggroupid}/fhir/r4/Patient&nbsp;</a></p></td></tr></tbody></table><p></p></div><h3 class="page-content-header page-content-header__sub-section" id="170.315(g)(9)_Application_Access_–_All_Data_Request_4">§170.315(g)(9) Application Access – All Data Request</h3><p><b>Note</b>: This API endpoint currently conforms to 2015 Edition/Cures Update CEHRT criteria for §170.315(g)(9). It will be updated to conform to 2015 Edition/Cures/HTI-1 Update CEHRT criteria for §170.315(g)(9) on August 21, 2025.</p><div data-testid="rich-text-container" class="rich-text-container table-container-align-top mobile-capable-table-container breakable" bis_skin_checked="1"><table class="contentful-table"><thead><tr><th><p>Category</p></th><th><p>API Endpoint</p></th></tr></thead><tbody><tr><td><p>CCDA Export</p></td><td><p><a class="internal-link custom-link-component" href="/api/api-ref/ccda-record">GET /v1/{practiceid}/ccda/{patientid}/ccdaexport</a></p></td></tr></tbody></table><p></p></div><h3 class="page-content-header page-content-header__sub-section" id="170.315(g)(10)_Standardized_API_for_Patient_and_Population_Services_5">§170.315(g)(10) Standardized API for Patient and Population Services</h3><div data-testid="rich-text-container" class="rich-text-container table-container-align-top mobile-capable-table-container breakable" bis_skin_checked="1"><table class="contentful-table"><thead><tr><th><p>Category</p></th><th><p>API Endpoint</p></th></tr></thead><tbody><tr><td><p>Allergies &amp; Intolerances</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/allergy-intolerance">GET/fhir/r4/AllergyIntolerance/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/allergy-intolerance">GET/fhir/r4/AllergyIntolerance</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/allergy-intolerance">POST/fhir/r4/AllergyIntolerance/_search</a></p></td></tr><tr><td><p>Assessment &amp; Plan of Treatment</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/care-plan">GET/fhir/r4/CarePlan/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/care-plan">GET/fhir/r4/CarePlan</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/care-plan">POST/fhir/r4/CarePlan/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">GET/fhir/r4/Observation/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">GET/fhir/r4/Observation</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">POST/fhir/r4/Observation/_search</a></p></td></tr><tr><td><p>Care Team Members</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/care-team">GET/fhir/r4/CareTeam/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/care-team">GET/fhir/r4/CareTeam</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/care-team">POST/fhir/r4/CareTeam/_search</a></p></td></tr><tr><td><p>Clinical Notes</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/document-reference">GET/fhir/r4/DocumentReference/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/document-reference">GET/fhir/r4/DocumentReference</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/document-reference">POST/fhir/r4/DocumentReference/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/diagnostic-report">GET/fhir/r4/DiagnosticReport/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/diagnostic-report">GET/fhir/r4/DiagnosticReport</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/diagnostic-report">POST/fhir/r4/DiagnosticReport/_search</a></p></td></tr><tr><td><p>Encounter</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/encounter">GET/fhir/r4/Encounter/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/encounter">GET/fhir/r4/Encounter</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/encounter">POST/fhir/r4/Encounter/_search</a></p></td></tr><tr><td><p>Goals</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/goal">GET/fhir/r4/Goal/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/goal">GET/fhir/r4/Goal</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/goal">POST/fhir/r4/Goal/_search</a></p></td></tr><tr><td><p>Health Concerns</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/condition">GET/fhir/r4/Condition/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/condition">GET/fhir/r4/Condition</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/condition">POST/fhir/r4/Condition/_search</a></p></td></tr><tr><td><p>Health Insurance Information</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/coverage">GET/fhir/r4/Coverage/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/coverage">GET/fhir/r4/Coverage</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/coverage">POST/fhir/r4/Coverage/_search</a></p></td></tr><tr><td><p>Immunizations</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/immunization">GET/fhir/r4/Immunization/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/immunization">GET/fhir/r4/Immunization</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/immunization">POST/fhir/r4/Immunization/_search</a></p></td></tr><tr><td><p>Laboratory Results</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/diagnostic-report">GET/fhir/r4/DiagnosticReport/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/diagnostic-report">GET/fhir/r4/DiagnosticReport</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/diagnostic-report">POST/fhir/r4/DiagnosticReport/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/media">GET/fhir/r4/Media/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">GET/fhir/r4/Observation/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">GET/fhir/r4/Observation</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">POST/fhir/r4/Observation/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/specimen">GET/fhir/r4/Specimen/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/specimen">GET/fhir/r4/Specimen</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/specimen">POST/fhir/r4/Specimen/_search</a></p></td></tr><tr><td><p>Medical Device</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/device">GET/fhir/r4/Device/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/device">GET/fhir/r4/Device</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/device">POST//fhir/r4/Device/_search</a></p></td></tr><tr><td><p>Medications</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication">GET/fhir/r4/Medication/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication">GET/fhir/r4/Medication</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication">POST/fhir/r4/Medication/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication-dispense">GET/fhir/r4/MedicationDispense/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication-dispense">GET/fhir/r4/MedicationDispense</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication-dispense">POST/fhir/r4/MedicationDispense/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication-request">GET/fhir/r4/MedicationRequest/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication-request">GET/fhir/r4/MedicationRequest</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/medication-request">POST/fhir/r4/MedicationRequest/_search</a></p></td></tr><tr><td><p>Other</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/binary">GET/fhir/r4/Binary/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/location">GET/fhir/r4/Location/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/location">GET/fhir/r4/Location</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/location">POST/fhir/r4/Location/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/organization">GET/fhir/r4/Organization/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/organization">GET/fhir/r4/Organization</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/organization">POST/fhir/r4/Organization/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/practitioner">GET/fhir/r4/Practitioner/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/practitioner">GET/fhir/r4/Practitioner</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/practitioner">POST/fhir/r4/Practitioner/_search</a></p></td></tr><tr><td><p>Patient Demographics</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/patient">GET/fhir/r4/Patient/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/patient">GET/fhir/r4/Patient</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/patient">POST/fhir/r4/Patient/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/related-person">GET/fhir/r4/RelatedPerson/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/related-person">GET/fhir/r4/RelatedPerson</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/related-person">POST/fhir/r4/RelatedPerson/_search</a></p></td></tr><tr><td><p>Problems</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/condition">GET/fhir/r4/Condition/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/condition">GET//fhir/r4/Condition</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/condition">POST/fhir/r4/Condition/_search</a></p></td></tr><tr><td><p>Procedures</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/procedure">GET/fhir/r4/Procedure/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/procedure">GET/fhir/r4/Procedure</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/procedure">POST/fhir/r4/Procedure/_search</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/service-request">GET/fhir/r4/ServiceRequest/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/service-request">GET/fhir/r4/ServiceRequest</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/service-request">POST/fhir/r4/ServiceRequest/_search</a></p></td></tr><tr><td><p>Provenance</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/provenance">GET/fhir/r4/Provenance/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/provenance">GET/fhir/r4/Provenance</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/provenance">POST/fhir/r4/Provenance/_search</a></p></td></tr><tr><td><p>Smoking Status</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">GET/fhir/r4/Observation/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">GET/fhir/r4/Observation</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">POST/fhir/r4/Observation/_search</a></p></td></tr><tr><td><p>Vital Signs</p></td><td><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">GET/fhir/r4/Observation/{logicalId}</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">GET/fhir/r4/Observation</a></p><p><a class="internal-link custom-link-component" href="/api/fhir-r4/observation">POST/fhir/r4/Observation/_search</a></p></td></tr><tr><td><p>FHIR Bulk Export</p></td><td><p><a class="internal-link custom-link-component" href="/api/workflows/fhir-bulk-export-workflow">GET/fhir/r4/Group/{logicalId}/$export</a></p><p><a class="internal-link custom-link-component" href="/api/workflows/fhir-bulk-export-workflow">GET/fhir/r4/$export-poll-status</a></p><p><a class="internal-link custom-link-component" href="/api/workflows/fhir-bulk-export-workflow">DELETE/fhir/r4/$export-poll-status</a></p></td></tr></tbody></table><p></p></div><h2 class="page-content-header page-content-header__section" id="List_of_available_FHIR_APIs_6"><b>List of available&nbsp;</b><a class="internal-link custom-link-component" href="/api/docs/fhir-apis"><b>FHIR APIs</b></a></h2><div class="fe-dp__table-container" bis_skin_checked="1"><div id="data-table-78.83317--react-aria7238584964-_r_mp_" data-table-id="data-table-78.83317" class="fe_c_data_table top-aligned lined-lists" bis_skin_checked="1"><div class="fe_c_data_table__root-top" bis_skin_checked="1"><div class="block-ui fe_c_loader" aria-busy="false" bis_skin_checked="1"></div><div class="block-ui fe_c_loader" aria-busy="false" bis_skin_checked="1"></div></div><div class="fe_c_data_table__root-main" bis_skin_checked="1"><div aria-live="polite" class="fe_c_loader" bis_skin_checked="1"><div class="fe_c_loader__content" aria-busy="false" bis_skin_checked="1"><table aria-describedby="data-table-78.83317--react-aria7238584964-_r_mp_-table-title-panel-entity-name data-table-78.83317--react-aria7238584964-_r_mp_-control-panel-entity-name" data-table-id="data-table-78.83317--react-aria7238584964-_r_mp_" class="fe_c_data_table__table-element fe_c_data_table--layout-medium"><thead class="fe_c_data_table__thead"><tr class="fe_c_data_table__tr"><th data-column="category" class="fe_c_data_table__th"><div class="fe_c_data_table__column-header fe_c_data_table__column-header--wrap" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper fe_c_data_table__column-header__tooltip" bis_skin_checked="1"><div bis_skin_checked="1">Category</div></div><div class="block-ui fe_c_loader" aria-busy="false" bis_skin_checked="1"><button class="fe_c_button fe_c_button--large fe_c_button--tertiary fe_c_data_table__column-header__sort-controller" id="react-aria7238584964-_r_mr_" aria-disabled="false" type="button"><div class="fe_c_button__content fe_c_button__content--large" bis_skin_checked="1"><span aria-label="data-table-column-header-sort-controller-icon" class="fe_c_data_table__column-header__sort-controller__icon"></span></div></button></div></div></th><th data-column="endpoint" class="fe_c_data_table__th"><div class="fe_c_data_table__column-header fe_c_data_table__column-header--wrap" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper fe_c_data_table__column-header__tooltip" bis_skin_checked="1"><span>API Endpoint</span></div><div class="block-ui fe_c_loader" aria-busy="false" bis_skin_checked="1"><button class="fe_c_button fe_c_button--large fe_c_button--tertiary fe_c_data_table__column-header__sort-controller" id="react-aria7238584964-_r_ms_" aria-disabled="false" type="button"><div class="fe_c_button__content fe_c_button__content--large" bis_skin_checked="1"><span aria-label="data-table-column-header-sort-controller-icon" class="fe_c_data_table__column-header__sort-controller__icon"></span></div></button></div></div></th></tr></thead><tbody class="fe_c_data_table__tbody"><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Appointment</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Appointment</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Appointment/{appointmentid}</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Chart</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/AllergyIntolerance</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/AllergyIntolerance/{allergyintoleranceid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/AllergyIntolerance</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/AllergyIntolerance/{allergyintoleranceid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Condition</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Condition/Problem-{conditionid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Condition</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Condition/Problem-{conditionid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Medication/{medicationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/MedicationOrder</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/MedicationOrder/{medicationorderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/MedicationStatement</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/MedicationStatement/{medicationstatementid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Medication/{medicationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/MedicationAdministration</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/MedicationAdministration/{medicationadministrationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/MedicationDispense</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/MedicationDispense/{medicationdispenseid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/MedicationOrder</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/MedicationOrder/{medicationorderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/MedicationStatement</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/MedicationStatement/{medicationstatementid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Substance/{substanceid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/CarePlan</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/CarePlan/AssessPlan-{assessplanid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/CarePlan/CareTeam-{careteamid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Goal</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Goal/{goalid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Immunization</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Immunization/ClinicalVaccine-{immunizationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Immunization/HistoricalVaccine-{immunizationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Immunization</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Immunization/ClinicalVaccine-{immunizationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Immunization/HistoricalVaccine-{immunizationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/DiagnosticReport</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/DiagnosticReport/{labresultid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/DiagnosticReport</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/DiagnosticReport/{labresultid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Procedure</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Procedure/{procedureid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Procedure</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Procedure/{procedureid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Observation</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Observation/ResultObservation-{resultobservationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Observation/SocialHistory-{socialhistoryid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Observation/Vital-{vitalid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/ClinicalImpression</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Observation</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Observation/ResultObservation-{resultobservationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Observation/Vital-{vitalid}</p>
+</li>
+<li>
+<p>GET/fhir/r4/AllergyIntolerance/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/AllergyIntolerance</p>
+</li>
+<li>
+<p>POST/fhir/r4/AllergyIntolerance/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/CarePlan/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/CarePlan</p>
+</li>
+<li>
+<p>POST/fhir/r4/CarePlan/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/CareTeam/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/CareTeam</p>
+</li>
+<li>
+<p>POST/fhir/r4/CareTeam/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/Goal/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Goal</p>
+</li>
+<li>
+<p>POST/fhir/r4/Goal/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/Immunization/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Immunization</p>
+</li>
+<li>
+<p>POST/fhir/r4/Immunization/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/DiagnosticReport/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/DiagnosticReport</p>
+</li>
+<li>
+<p>POST/fhir/r4/DiagnosticReport/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/Medication/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Medication</p>
+</li>
+<li>
+<p>POST/fhir/r4/Medication/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/MedicationRequest/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/MedicationRequest</p>
+</li>
+<li>
+<p>POST/fhir/r4/MedicationRequest/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/Observation/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Observation</p>
+</li>
+<li>
+<p>POST/fhir/r4/Observation/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/Condition/{logicalId}</p>
+</li>
+<li>
+<p>GET//fhir/r4/Condition</p>
+</li>
+<li>
+<p>POST/fhir/r4/Condition/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/Procedure/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Procedure</p>
+</li>
+<li>
+<p>POST/fhir/r4/Procedure/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/QuestionnaireResponse</p>
+</li>
+<li>
+<p>POST/fhir/r4/QuestionnaireResponse</p>
+</li>
+<li>
+<p>POST/fhir/r4/QuestionnaireResponse/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/QuestionnaireResponse/{logicalId}</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Documents and Forms</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/DocumentReference</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/DocumentReference/AmbulatorySummary-{patientid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Device</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Device/{deviceid}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Binary/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Device/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Device</p>
+</li>
+<li>
+<p>POST//fhir/r4/Device/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/DocumentReference/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/DocumentReference</p>
+</li>
+<li>
+<p>POST/fhir/r4/DocumentReference/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/ServiceRequest/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/ServiceRequest</p>
+</li>
+<li>
+<p>POST/fhir/r4/ServiceRequest/_search</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Encounter</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Encounter</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Encounter/{encounterid}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Encounter/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Encounter</p>
+</li>
+<li>
+<p>POST/fhir/r4/Encounter/_search</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Insurance and Financial</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /fhir/r4/Coverage/{logicalID}</p>
+</li>
+<li>
+<p>GET /fhir/r4/Coverage</p>
+</li>
+<li>
+<p>POST /fhir/r4/Coverage/_search</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Patient</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Patient</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Patient</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Patient/{patientid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{brandid}/{chartsharinggroupid}/fhir/dstu2/Patient/{patientid}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Patient/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Patient</p>
+</li>
+<li>
+<p>POST/fhir/r4/Patient/_search</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Practice Configuration</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Organization/Practice-{practiceid}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Location/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Location</p>
+</li>
+<li>
+<p>POST/fhir/r4/Location/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/Organization/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Organization</p>
+</li>
+<li>
+<p>POST/fhir/r4/Organization/_search</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Provider</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Organization/ClinicalProvider-{clinicalproviderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/{departmentid}/fhir/dstu2/Practitioner/Provider-{providerid}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Provenance/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Provenance</p>
+</li>
+<li>
+<p>POST/fhir/r4/Provenance/_search</p>
+</li>
+<li>
+<p>GET/fhir/r4/Practitioner/{logicalId}</p>
+</li>
+<li>
+<p>GET/fhir/r4/Practitioner</p>
+</li>
+<li>
+<p>POST/fhir/r4/Practitioner/_search</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">FHIR Bulk Export</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET/fhir/r4/Group/{logicalId}/$export</p>
+</li>
+<li>
+<p>GET/fhir/r4/$export-poll-status/{jobId}</p>
+</li>
+<li>
+<p>DELETE/fhir/r4/$export-poll-status/{jobId}</p>
+</li>
+</ul></div></div></div></td></tr></tbody></table></div><span></span></div></div><div class="fe_c_data_table__root-bottom" bis_skin_checked="1"></div></div></div><h2 class="page-content-header page-content-header__section" id="List_of_athenaOne_APIs_7"><b>List of&nbsp;</b><a class="internal-link custom-link-component" href="/api/docs/athenaone-apis"><b>athenaOne APIs</b></a></h2><div class="fe-dp__table-container" bis_skin_checked="1"><div id="data-table-78.83317--react-aria7238584964-_r_mq_" data-table-id="data-table-78.83317" class="fe_c_data_table top-aligned lined-lists" bis_skin_checked="1"><div class="fe_c_data_table__root-top" bis_skin_checked="1"><div class="block-ui fe_c_loader" aria-busy="false" bis_skin_checked="1"></div><div class="block-ui fe_c_loader" aria-busy="false" bis_skin_checked="1"></div></div><div class="fe_c_data_table__root-main" bis_skin_checked="1"><div aria-live="polite" class="fe_c_loader" bis_skin_checked="1"><div class="fe_c_loader__content" aria-busy="false" bis_skin_checked="1"><table aria-describedby="data-table-78.83317--react-aria7238584964-_r_mq_-table-title-panel-entity-name data-table-78.83317--react-aria7238584964-_r_mq_-control-panel-entity-name" data-table-id="data-table-78.83317--react-aria7238584964-_r_mq_" class="fe_c_data_table__table-element fe_c_data_table--layout-medium"><thead class="fe_c_data_table__thead"><tr class="fe_c_data_table__tr"><th data-column="category" class="fe_c_data_table__th"><div class="fe_c_data_table__column-header fe_c_data_table__column-header--wrap" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper fe_c_data_table__column-header__tooltip" bis_skin_checked="1"><div bis_skin_checked="1">Category</div></div><div class="block-ui fe_c_loader" aria-busy="false" bis_skin_checked="1"><button class="fe_c_button fe_c_button--large fe_c_button--tertiary fe_c_data_table__column-header__sort-controller" id="react-aria7238584964-_r_mt_" aria-disabled="false" type="button"><div class="fe_c_button__content fe_c_button__content--large" bis_skin_checked="1"><span aria-label="data-table-column-header-sort-controller-icon" class="fe_c_data_table__column-header__sort-controller__icon"></span></div></button></div></div></th><th data-column="endpoint" class="fe_c_data_table__th"><div class="fe_c_data_table__column-header fe_c_data_table__column-header--wrap" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper fe_c_data_table__column-header__tooltip" bis_skin_checked="1"><span>API Endpoint</span></div><div class="block-ui fe_c_loader" aria-busy="false" bis_skin_checked="1"><button class="fe_c_button fe_c_button--large fe_c_button--tertiary fe_c_data_table__column-header__sort-controller" id="react-aria7238584964-_r_mu_" aria-disabled="false" type="button"><div class="fe_c_button__content fe_c_button__content--large" bis_skin_checked="1"><span aria-label="data-table-column-header-sort-controller-icon" class="fe_c_data_table__column-header__sort-controller__icon"></span></div></button></div></div></th></tr></thead><tbody class="fe_c_data_table__tbody"><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Appointments</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/cancel</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/reschedule</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/appointments/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/accidentdata</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/accidentdata</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointmentcancelreasons</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/configuration/appointments/chargeentrynotrequiredreasons</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/chargeentrynotrequired</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/confirmationstatus</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/confirmationstatus</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/appointmentconfirmationstatus</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/customfields</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/customfields</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/appointmenttypedropdown/mapping</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms/{formid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms/{formid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/insurances</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/insurances</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/notes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/notes</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/appointments/{appointmentid}/notes/{noteid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/notes/{noteid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/appointmentreminders</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/appointmentreminders</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/appointmentreminders/{appointmentreminderid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/appointments/appointmentreminders/{appointmentreminderid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/appointmentreminders/{appointmentreminderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/report</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/booked/multipledepartment</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/booked/multiple</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/thirdpartycodingstatus</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/thirdpartycodingstatus</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/appointments/{appointmentid}/thirdpartycodingstatus</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/thirdpartycodingstatus</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/thirdpartyexternaldata</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/thirdpartyexternaldata</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/appointments/{appointmentid}/thirdpartyexternaldata</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/thirdpartyexternaldata</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointmenttypes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointmenttypes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointmenttypes/{appointmenttypeid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointmenttypes/{appointmenttypeid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/waitlist</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/waitlist</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/waitlist/{waitlistid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/appointments/waitlist/{waitlistid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/waitlist/{waitlistid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patientappointmentreasons</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patientappointmentreasons/existingpatient</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patientappointmentreasons/newpatient</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/appointments/{appointmentid}/mspq</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/mspq</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/mspq</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/mspinsurancetypes</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/booked/{appointmentid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/appointments/{appointmentid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/freeze</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/booked</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/open</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/open</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/cancelcheckin</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/check-in</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/check-in</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/startcheckin</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/checkout</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Chart</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/allergies</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/allergies</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/allergies</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/allergies/reactions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/allergies/severities</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/allergies/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/allergies/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/healthhistory/allergies/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/healthhistory/allergies/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/allergies/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/careteam</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/careteam</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/careteam</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/recipientclasses</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/ccda/{patientid}/ccdaexport</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/ccda</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/ccda</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/documentexport</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/documentexport/{documentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/encounters</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/encounters/{appointmentid}/summary</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounters/{encounterid}/summary</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/familyhistory</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/familyhistory</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/familyhistory/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/familyhistory/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/healthhistory/familyhistory/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/healthhistory/familyhistory/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/familyhistory/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/flowsheets/{snomedcode}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/flowsheettemplates/{snomedcode}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/gpal</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/gynhistory</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/gynhistory</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/gynhistory</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/medication/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/medication/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/healthhistory/medication/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/healthhistory/medication/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/medication/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/analytes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/labresults</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/medicalhistory</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/medicalhistory</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/medicalhistory</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/medications</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/medications</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/medications</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/medications/{medicationentryid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/medications/{medicationentryid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/medications</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/medications/stopreasons</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/patientchartlist</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/perinatalhistory</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/problems</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/problems</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/problems</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/problems/{problemid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/problems/{problemid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/problems/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/problems/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/healthhistory/problems/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/healthhistory/problems/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/problems/changed/subscription/events</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/problems/sectionnote</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/administeredquestionnairescreeners</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/socialhistory</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/socialhistory</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/socialhistory/templates</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/socialhistory</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/surgicalhistory</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/surgicalhistory</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/surgicalhistory</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/vaccines</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/vaccines</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/vaccines/{vaccineid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/vaccines/{vaccineid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/vaccine/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/vaccine/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/healthhistory/vaccine/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/healthhistory/vaccine/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/healthhistory/vaccine/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/ccda/{patientid}/vitals</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/vitals</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/vitals</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/vitals/{vitalid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/vitals</p>
+</li>
+<li>
+<p>GET /v1/ {practiceid}/chart/encounter/{encounterid}/eyecare/visualacuity n</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/eyecare/intraocularpressure n</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/eyecare/visioncorrection n</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/eyecare/eyedilation</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Data Imports</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>POST /v1/{practiceid}/import/downloadspecification</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/import/downloadspecification/{requestid}/status</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Documents and Forms</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms/{formid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms/{formid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/healthhistoryforms</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/healthhistoryforms/{formid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms/{formid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/healthhistoryforms/{formid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/healthhistoryforms</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/healthhistoryforms/{formid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documentassignment/{documentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documenttypes</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/clinicaldocument/{documentid}/xml</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/acog</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/acog/{acogid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/acog/{acogid}/html</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/admin</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/admin</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/admin/{adminid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/documents/admin/{adminid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/admin/{adminid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/admin/{adminid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/admin/{adminid}/pages/{pageid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/admin</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/admin</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/admin/{adminid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/admin/{adminid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/admin/{adminid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/admin/{adminid}/pages/{pageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/advertisement</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/appointmentrequest</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/chartabstraction</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/clinicaldocument/{clinicaldocumentid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/clinicaldocument/{clinicaldocumentid}/actions</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/clinicaldocument</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/clinicaldocument</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/clinicaldocument/{clinicaldocumentid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/clinicaldocument/{clinicaldocumentid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/clinicaldocument/{clinicaldocumentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/clinicaldocument/{clinicaldocumentid}/pages/{pageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/correctivelens</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/coversheet</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/dme</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/dme/{dmeid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/dme/{dmeid}/pages/{pageid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/encounterdocument/{encounterdocumentid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/encounterdocument/{encounterdocumentid}/actions</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/encounterdocument</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/encounterdocument</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/encounterdocument/{encounterdocumentid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/encounterdocument/{encounterdocumentid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/encounterdocument/{encounterdocumentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/encounterdocument/{encounterdocumentid}/pages/{pageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/hospital</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/html</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/imagingresult/{imagingresultid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/imagingresult/{imagingresultid}/actions</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/imagingresult</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/imagingresult</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/imagingresult/{imagingresultid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/imagingresult/{imagingresultid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/imagingresult/{imagingresultid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/imagingresult/{imagingresultid}/pages/{pageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/imagingresults/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/imagingresults/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/imagingresults/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/imagingresults/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/imagingresults/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/inptadmin/{inptadminid}/pages/{pageid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/labresult/{labresultid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/labresult/{labresultid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/interpretation</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/labresult</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/labresult</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/labresult/{labresultid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/labresult/{labresultid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/labresult/{labresultid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/labresult/{labresultid}/pages/{pageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/labresults/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/labresults/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/labresults/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/labresults/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/labresults/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/letter</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/letter/{letterid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/letter/{letterid}/pages/{pageid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/medicalrecord/{medicalrecordid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/medicalrecord/{medicalrecordid}/actions</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/medicalrecord</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/medicalrecord</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/medicalrecord/{medicalrecordid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/medicalrecord/{medicalrecordid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/medicalrecord/{medicalrecordid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/medicalrecord/{medicalrecordid}/pages/{pageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/mednotification</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/officenote</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/order/{orderid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/order/{orderid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orders/outstanding</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orders/signedoff</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/order</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/order/{orderid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/order/{orderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/order/{orderid}/pages/{pageid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/signedorder</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orders/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orders/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/orders/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/orders/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orders/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orders/signedoff/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/orders/signedoff/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/orders/signedoff/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orders/signedoff/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/patientcase/{patientcaseid}/actions</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/patientcase</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/patientcase</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/patientcase/{patientcaseid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/patientcase/{patientcaseid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/patientcase/{patientcaseid}/assign</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/patientcase/{patientcaseid}/close</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/patientcase/{patientcaseid}/reopen</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/patientinfo</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/patientcases</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/documents/patientcase/closereasons</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/patientcase/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/patientcase/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/patientcase/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/documents/patientcase/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/patientcase/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/patientrecord</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/phonemessage</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/phonemessage</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/phonemessage/{phonemessageid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/documents/phonemessage/{phonemessageid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/phonemessage/{phonemessageid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/phonemessage/{phonemessageid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/phonemessage/{phonemessageid}/pages/{pageid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/documents/phonemessage</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/phonemessage</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/phonemessage/{phonemessageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/phonemessage/{phonemessageid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/phonemessage/{phonemessageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/phonemessage/{phonemessageid}/pages/{pageid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/documents/physicianauth/{physicianauthid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/physicianauth/{physicianauthid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/physicianauth</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/documents/physicianauth/{physicianauthid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/physicianauth/{physicianauthid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/physicianauth/{physicianauthid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/physicianauth/{physicianauthid}/pages/{pageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/prescription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/prescription/{prescriptionid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/prescription/{prescriptionid}/pages/{pageid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/documents/prescriptions/{prescriptionid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/prescriptions/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/prescriptions/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/prescriptions/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/prescriptions/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/prescriptions/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/rto</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/rto/{rtoid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/surgery</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/surgery/{surgeryid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/surgicalresult</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/unknown</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/vaccine</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/driverslicense</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/driverslicense</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/driverslicense</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/driverslicense</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/faxconfirmations</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/clientforms</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers/{providerid}/inbox</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers/{providerid}/inbox/counts</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/staff/{staffusername}/inbox</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/configuration/inbox/staff</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/medicationhistoryconsentverified</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/photo</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/photo</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/photo</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/photo</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/photo/thumbnail</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/patientcase/attachment/{patientcasefileid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/surgery/{surgeryid}/actions POST /v1/{practiceid}/documents/surgery/{surgeryid}/actions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/documents/letter/{letterid}/actionsn</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/documents/letter/{letterid}/pages/{pageid}</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Encounter</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET chart/encounter/{encounterid}/assessment</p>
+</li>
+<li>
+<p>PUT chart/encounter/{encounterid}/assessment</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/patientlocations</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/patientstatuses</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/defaultsearchfacilities</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/diagnoses</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/diagnoses</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/encounter/{encounterid}/diagnoses/{diagnosisid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/diagnoses/{diagnosisid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/dictationstatus</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/dictatablesections</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/documentsreview</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/encounterreasons</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/encounter/{encounterid}/services/note</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/encounter/{encounterid}/services</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/encounter/{encounterid}/services/{serviceid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/encounter/{encounterid}/services/{serviceid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/encounter/{encounterid}/services/{serviceid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/facilities</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/externaldictationmessage</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/startexternaldictation</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/hpi</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/hpi</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/hpi/templates</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/orders</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/{orderid}/actions</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/{orderid}/deny</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/orders/{orderid}/deny</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/{orderid}/returntosubmit</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/{orderid}/submit</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/orders/outstanding</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/configuration/ordertype</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/clinicalproviderordertype/imaging</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/clinicalproviderordertype/lab</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/encounter/configuration/modifiers</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/officeordertypes</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/dme</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/dme</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/imaging</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/imaging</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/lab</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/lab</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/other</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/other</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/patientinfo</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/patientinfo</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/prescription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/prescription/dosagequantityunits</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/prescription/frequencies</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/prescription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/prescription/totalquantityunits</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/procedure</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/referral</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/referral</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/orders/vaccine</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/vaccine/declinedreasons</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/vaccine</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/vaccine/totalquantityunits</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/ordergroups</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/configuration/ordersets</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/patientgoals/discussionnotes</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/patientgoals/freetextgoal</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/patientgoals/patientinstructions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/patientgoals</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/physicalexam</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/physicalexam</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/physicalexam/templates</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/encounter/{encounterid}/procedurecodes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/proceduredocumentation</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/order/procedure</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/reviewofsystems</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/reviewofsystems</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/reviewofsystems/templates</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/questionnairescreeners</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/questionnairescreeners</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/questionnairescreeners</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/questionnairescreeners/scoreonly</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/questionnairescreeners</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/questionnairescreeners</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/encounter/{encounterid}/vitals</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/vitals</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/encounter/{encounterid}/vitals/{vitalid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/encounter/{encounterid}/vitals/{vitalid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/ambulatorysurgicalcontent</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/presedationassessment</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/stageproceduredocumentation</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/proceduretimes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/procedureroles</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/proceduretimeoutchecklist</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/encounter/{encounterid}/procedurevitals</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Hospital</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/visits</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/visits/{visitid}/visitcharge</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/visits/changed/subscription</p>
+</li>
+<li>
+<p>DELETE /v1/{practiceid}/visits/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/visits/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/visits/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/visits/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/all</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/active</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/changed</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/stays/changed/subscription</p>
+</li>
+<li>
+<p>DELETE /v1/{practiceid}/stays/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/changed/subscription/events</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/generalledger/inventory/consumption</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chargecodes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chargecodes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chargecodes/changed</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chargecodes/changed/subscription</p>
+</li>
+<li>
+<p>DELETE /v1/{practiceid}/chargecodes/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chargecodes/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chargecodes/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/beds</p>
+</li>
+<li>
+<p>DELETE /v1/{practiceid}/inventory/items</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/inventory/items</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/inventory/items</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/inventory/items</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/configuration/transcribablenotetypes</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/stays/{stayid}/transcription/notes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/transcription/notes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/careteammembers</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/diagnoses</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/assessments</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/active/vitals</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/vitals</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/vitals/inpatient</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/labresults</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/medications</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/dischargemedications</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/orders/lab</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/active/orders/lab</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/orders/lab/{orderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/configuration/orders/lab</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/inpatient/document/clinical</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/inpatient/document/clinical</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/inpatient/document/clinical/{clinicaldocumentid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/inpatient/document/admin</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/inpatient/document/admin</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/inpatient/document/admin/{admindocumentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/inpatient/configuration/documentlabels</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/orders/consult</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/active/orders/consult</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/configuration/orders/consult</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/orders/vaccine</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/active/orders/vaccine</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/configuration/orders/vaccine</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/orders/diet</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/active/orders/diet</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/configuration/orders/diet</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/configuration/orders/ivmedication</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/active/orders/ivmedication</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/orders/ivmedication</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/orders/lab</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/active/orders/lab</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/orders/lab/{orderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/configuration/orders/lab</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/procedures/performed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/stays/{stayid}/procedures/planned</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/surgerycases/changed</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/surgerycases/changed/subscription</p>
+</li>
+<li>
+<p>DELETE /v1/{practiceid}/surgerycases/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/surgerycases/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/surgerycases/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orcase/changed</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/orcase/changed/subscription</p>
+</li>
+<li>
+<p>DELETE /v1/{practiceid}/orcase/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orcase/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/orcase/changed/subscription/events</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Insurance and Financial</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/appointments/{appointmentid}/insurances</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/appointments/{appointmentid}/insurances</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/ccmenrollmentstatus</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/ccmenrollmentstatus</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/ccmenrollmentstatus/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/ccmenrollmentstatus/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/ccmenrollmentstatus/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/ccmenrollmentstatus/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/ccmenrollmentstatus/changed/subscription/events</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/appointments/{appointmentid}/claim</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/claims</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/{claimid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/claims/{claimid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/claims/patientclosed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/claims/patientoutstanding</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/claims/patientoutstanding</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/claims/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/claims/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/changed/subscription/events</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/claims/{claimid}/attachments</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/{claimid}/attachments</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/claims/{claimid}/attachments</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/claims/{claimid}/attachments</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/attachmenttypeclass</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/{claimid}/claimnotes</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/claims/{claimid}/claimnotes/override</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/claims/{claimid}/note</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/{claimid}/claimtransactions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/claims/customfields</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/feeschedules/checkprocedure</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/feeschedules/configuration/procedure</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/feeschedules/configuration/procedure</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/image</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/image</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/image</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/image</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/insurancepackages</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/insurancepackages/casepolicies</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/insurancepackages/configuration/locallyadministered</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/insurancepackages/configuration/locallyadministered/{insurancepackageid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/insurancepackages/configuration/locallyadministered/{insurancepackageid}/deactivate</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/insurancepackages/configuration/locallyadministered/{insurancepackageid}/reactivate</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/oneyearcontractterms</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/collectpayment/oneyear</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/collectpayment/oneyear/{appointmentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/collectpayment/oneyear/{appointmentid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/collectpayment/oneyear/{contractid}/emailagreement</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/insurances</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/insurances</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/insurances</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/insurances</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/reactivate</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/insurances/casepolicies</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/benefitdetails</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/insurances/{insuranceid}/benefitdetails</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/collectpayment</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/collectpayment/singleappointment/{appointmentid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/recordpayment</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/voidpayment/{experimented}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/collectpayment/paymentplan</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/collectpayment/paymentplan</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/configuration/validnonccpcreditcardmethods</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/receipts</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/receipts/{epaymentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/receipts/{epaymentid}/details</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/receipts/{epaymentid}/email</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/receipts/{epaymentid}/signed</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/receipts/{epaymentid}/signed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/referralauths</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/referralauths</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/referralauths/{referralauthid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/singleappointmentcontractterms</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/collectpayment/singleappointment</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/collectpayment/storedcard</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/collectpayment/storedcard</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/collectpayment/storedcard/{storedcardid}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/collectpayment/storedcard/{storedcardid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/collectpayment/storedcard/{storedcardid}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/generalledger/inventory/consumption</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/prepaymentplans</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">OB Episode</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/dischargeinformation</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/discussionitems</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/obepisodes/discussionitems</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/18to20weekeddupdate</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/eddcalculation</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/geneticscreeningandinfectionhistory</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/obepisodes/geneticscreeningandinfectionhistory/questions</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/menstrualhistory</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/deliveryinformation</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/reference/obdeliveryoutcomes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/obdeliverysites</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/configuration/obdeliverytypes</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/obepisodes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/obepisodes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/html</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/obepisodeinfo</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/flowsheets</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/flowsheets/{flowsheetid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/flowsheets/{flowsheetid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/flowsheet/configuration</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/obepisodes/{obepisodeid}/problemslist</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Patient</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/chartalert</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/chartalert</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/chartalert</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/chartalert</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/labs/default</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/labs/default</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/labs/default</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/pharmacies/default</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/pharmacies/default</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/interfaceconsents</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/interfaceconsents</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/bestmatch</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/customfields/{customfieldid}/{customfieldvalue}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/enhancedbestmatch</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/search</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/configuration/patients/genderidentity</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/appointments</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/appointments/{appointmentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/customfields</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/customfields</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/dataaccessinfo</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/authorizations</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/authorizations</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/patients/{patientid}/authorizations/{releaseauthorizationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/authorizations/{releaseauthorizationid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/authorizations/{releaseauthorizationid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/portalaccess</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/portalinvitation</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/portalstatus</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patientsatisfaction</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patientsatisfaction/results</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/patientstatement</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/patientstatementimage</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/imaging/preferred</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/imaging/preferred</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/imaging/preferred</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/pharmacies/preferred</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/pharmacies/preferred</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/pharmacies/preferred</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/privacyinformationverified</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/privacyinformationverified</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/securemessage/{messagethreadid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/securemessage/{messagethreadid}/CanPatientReplyToMessage</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/securemessage/{messagethreadid}/reply</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/securemessage/archivedmessages</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/securemessage/inboxmessages</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patients/{patientid}/securemessage/sentmessages</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patientsecuremessage/providers/departmentsmapping</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patientsecuremessage/getavailablemessagetypes</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/patient/{patientid}/securemessage/providers</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/brand/:brandid/patients/{patientid}/securemessage/providers/{providerid}/locations</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/securemessage/topractice</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/patients/{patientid}/securemessage/topatient</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patientsecuremessage/markread</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/securemessage/{messagethreadid}/markread</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/securemessage/{messagethreadid}/archive</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/patients/{patientid}/securemessage/{messagethreadid}/unarchive</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Practice Configuration</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/configuration/chartsharinggroups</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/commoninsurancepackages</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/communicatorbrands/{communicatorbrandid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/communicatorbrands</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/customfields</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/departments/{departmentid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/departments</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/departments/{departmentid}/ecommunicationdisclosure</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/employers</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/employers</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/employers/{employerid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/employers/{employerid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/employers/{employerid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/employers/{employerid}/undelete</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers/{providerprofileid}/enrollmentdocs</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/providers/{providerprofileid}/enrollmentdocs</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/ethnicities</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/misc/properjsonencoding</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/properjsonencoding</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/misc/properjsonencoding</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/languages</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/mobilecarriers</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/patientlocations</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/portalsettings</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/practiceinfo</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/races</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referralsources</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/remindercallsettings</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/departments/{departmentid}/checkinrequired</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/slidingfeeplans</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/smstermsandconditions</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/states</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/textmacros</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/misc/topinsurancepackages</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/usermessages/{username}</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/usermessages/{username}</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/usermessages/{username}/{messageid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/usermessages/{username}/{messageid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/occupations</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/industries</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/genderidentities</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Provider</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>GET /v1/{practiceid}/clinicalproviders/{clinicalproviderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/clinicalproviders/search</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers/dictationsettings</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/providers/{providerid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers/{providerid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/providers/{providerid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/providers/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/providers/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers/changed/subscription/events</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/providers/addbillingrows</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providernumbers/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providernumbers/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/providernumbers/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/providernumbers/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providernumbers/changed/subscription/events</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/providers</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/providers</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/providerspecialties</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/reference/providertypes</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/referringproviders</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referringproviders</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referringproviders/{referringproviderid}</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/referringproviders/{referringproviderid}</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referringproviders/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referringproviders/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/referringproviders/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/referringproviders/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referringproviders/changed/subscription/events</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referringprovidernumbers/changed</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referringprovidernumbers/changed/subscription</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/referringprovidernumbers/changed/subscription</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/referringprovidernumbers/changed/subscription</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/referringprovidernumbers/changed/subscription/events</p>
+</li>
+</ul></div></div></div></td></tr><tr class="fe_c_data_table__tr fe_c_data_table__tr--view"><td data-column="category" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="category" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><div bis_skin_checked="1">Quality Management / Pop Health</div></div></div></div></td><td data-column="endpoint" class="fe_c_data_table__td fe_c_data_table__td--view"><div class="fe_c_data_table__td__view-inner" bis_skin_checked="1"><div data-column="endpoint" class="fe_c_data_table__td__view-inner__cell" bis_skin_checked="1"><div class="fe_c_tooltip__wrapper" bis_skin_checked="1"><ul>
+<li>
+<p>Delete /v1/{practiceid}/chart/{patientid}/riskcontract</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/riskcontract</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/{patientid}/riskcontract</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/chart/riskcontracts</p>
+</li>
+<li>
+<p>Delete /v1/{practiceid}/chart/riskcontracts</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/riskcontracts</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/qualitymanagement/providers</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/qualitymanagement</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/chart/{patientid}/qualitymanagement/refresh</p>
+</li>
+<li>
+<p>POST /v1/{practiceid}/chart/{patientid}/qualitymanagement/refresh</p>
+</li>
+<li>
+<p>GET /v1/{practiceid}/populationmanagement/riskcontract</p>
+</li>
+<li>
+<p>PUT /v1/{practiceid}/populationmanagement/riskcontract</p>
+</li>
+</ul></div></div></div></td></tr></tbody></table></div><span></span></div></div><div class="fe_c_data_table__root-bottom" bis_skin_checked="1"></div></div></div><p>
+
+</p></div>
