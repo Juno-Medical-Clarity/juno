@@ -53,6 +53,10 @@ def verify_firebase_token(f):
     """Decorator to verify Firebase ID token from Authorization header"""
     @wraps(f)
     def decorated_function(*args, **kwargs):
+        # OPTIONS preflight must pass through so flask-cors can attach CORS headers
+        if request.method == 'OPTIONS':
+            return '', 204
+
         auth_header = request.headers.get('Authorization')
 
         if not auth_header:
