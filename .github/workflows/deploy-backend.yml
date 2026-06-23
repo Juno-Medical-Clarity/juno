@@ -46,9 +46,9 @@ jobs:
             --memory 2Gi
             --timeout 300
           env_vars: |
-            GCP_PROJECT_ID=${{ env.GCP_PROJECT_ID }}
-            GCP_BUCKET_NAME=${{ env.GCP_BUCKET_NAME }}
-            GCP_LOCATION=${{ env.GCP_REGION }}
+            GCP_PROJECT_ID=juno-medical-clarity
+            GCP_BUCKET_NAME=juno-medical-clarity-backend
+            GCP_LOCATION=us-central1
             VERTEX_AI_MODEL=gemini-3.5-flash
             SIMPLIFY_DEFAULT_VERSION=v1-2
             FIRESTORE_DATABASE_ID=(default)
