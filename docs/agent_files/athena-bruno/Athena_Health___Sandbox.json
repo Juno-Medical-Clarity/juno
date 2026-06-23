@@ -1,0 +1,101 @@
+{
+  "name": "Athena Health — Sandbox",
+  "variables": [
+    {
+      "name": "baseUrl",
+      "value": "https://api.preview.platform.athenahealth.com",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "fhirBaseUrl",
+      "value": "https://api.preview.platform.athenahealth.com/fhir/r4",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "practiceId",
+      "value": "195900",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "tokenExpiry",
+      "value": "1782198263409",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "patientId",
+      "value": "8188",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "encounterId",
+      "value": "48200",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "appointmentId",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "documentId",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "departmentId",
+      "value": "21",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "providerId",
+      "value": "26",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "clientId",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": true
+    },
+    {
+      "name": "clientSecret",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": true
+    },
+    {
+      "name": "accessToken",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "secret": true
+    }
+  ],
+  "info": {
+    "type": "bruno-environment",
+    "exportedAt": "2026-06-23T07:42:47.664Z",
+    "exportedUsing": "Bruno/v3.0.2"
+  }
+}
