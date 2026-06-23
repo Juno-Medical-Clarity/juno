@@ -47,7 +47,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
 
@@ -59,27 +59,66 @@ jobs:
 
           gcloud builds submit \
             --project "$GCP_PROJECT_ID" \
-            --config ./backend/cloudbuild.yaml \
+            --config ./backend/cloudbuild-build.yaml \
             --substitutions "_BACKEND_IMAGE=$backend_image" \
             ./backend
 
-      - name: Deploy rollback backend
+      - name: Deploy rollback juno-worker
         uses: google-github-actions/deploy-cloudrun@v2
         with:
-          service: simplify-backend
+          service: juno-worker
           image: ${{ env.BACKEND_IMAGE }}
           region: ${{ env.GCP_REGION }}
           flags: >-
-            --allow-unauthenticated
+            --no-allow-unauthenticated
+            --ingress=internal
             --memory 2Gi
-            --timeout 300
+            --timeout 900
+            --min-instances=0
+            --max-instances=3
           env_vars: |
+            JUNO_MODE=worker
             GCP_PROJECT_ID=${{ env.GCP_PROJECT_ID }}
             GCP_BUCKET_NAME=${{ env.GCP_BUCKET_NAME }}
             GCP_LOCATION=${{ env.GCP_REGION }}
             VERTEX_AI_MODEL=gemini-3.5-flash
             SIMPLIFY_DEFAULT_VERSION=v1-2
             FIRESTORE_DATABASE_ID=(default)
+          secrets: |
+            FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest
+
+      - name: Resolve juno-worker URL
+        id: worker_url
+        run: |
+          worker_url=$(gcloud run services describe juno-worker \
+            --region "$GCP_REGION" --project "$GCP_PROJECT_ID" \
+            --format='value(status.url)')
+          echo "url=$worker_url" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy rollback juno-api
+        uses: google-github-actions/deploy-cloudrun@v2
+        with:
+          service: juno-api
+          image: ${{ env.BACKEND_IMAGE }}
+          region: ${{ env.GCP_REGION }}
+          flags: >-
+            --allow-unauthenticated
+            --memory 2Gi
+            --timeout 300
+            --min-instances=1
+          env_vars: |
+            JUNO_MODE=api
+            GCP_PROJECT_ID=${{ env.GCP_PROJECT_ID }}
+            GCP_BUCKET_NAME=${{ env.GCP_BUCKET_NAME }}
+            GCP_LOCATION=${{ env.GCP_REGION }}
+            VERTEX_AI_MODEL=gemini-3.5-flash
+            SIMPLIFY_DEFAULT_VERSION=v1-2
+            FIRESTORE_DATABASE_ID=(default)
+            CLOUD_TASKS_QUEUE=projects/${{ env.GCP_PROJECT_ID }}/locations/${{ env.GCP_REGION }}/queues/care-plan-jobs
+            WORKER_URL=${{ steps.worker_url.outputs.url }}
+            WORKER_SERVICE_ACCOUNT=juno-worker-invoker@${{ env.GCP_PROJECT_ID }}.iam.gserviceaccount.com
+            JOB_TIMEOUT_SECONDS_SINGLE=300
+            JOB_TIMEOUT_SECONDS_BATCH=900
           secrets: |
             FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest
 

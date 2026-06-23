@@ -1,4 +1,4 @@
-import { authenticatedFetchJson } from './apiClient';
+import { authenticatedFetch, authenticatedFetchJson } from './apiClient';
 import { API_URL } from './firebase';
 import { SAVED_OUTPUTS_PATH, savedOutputPath, inputPdfUrlPath } from '../constants';
 
@@ -28,15 +28,20 @@ export async function getSavedOutput(id: string): Promise<SavedOutput> {
 }
 
 export async function renameSavedOutput(id: string, name: string): Promise<void> {
-  await authenticatedFetchJson(`${API_URL}${savedOutputPath(id)}`, {
+  // PATCH returns an empty body; use authenticatedFetch (not the JSON variant) to
+  // avoid parsing a body that isn't there.
+  const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name }),
   });
+  if (!res.ok) throw new Error(`Failed to rename: ${res.status}`);
 }
 
 export async function deleteSavedOutput(id: string): Promise<void> {
-  await authenticatedFetchJson(`${API_URL}${savedOutputPath(id)}`, { method: 'DELETE' });
+  // DELETE returns an empty body; use authenticatedFetch to avoid JSON parsing.
+  const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}`, { method: 'DELETE' });
+  if (!res.ok) throw new Error(`Failed to delete: ${res.status}`);
 }
 
 export async function getInputPdfUrl(id: string): Promise<string> {

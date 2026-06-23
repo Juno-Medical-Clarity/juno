@@ -50,7 +50,8 @@ describe('listSavedOutputs', () => {
 
   it('throws when server returns non-200', async () => {
     fetchSpy.mockResolvedValueOnce(new Response('Not Found', { status: 404 }));
-    await expect(listSavedOutputs()).rejects.toThrow('Failed to list saved outputs: 404');
+    // authenticatedFetchJson surfaces a generic "Request failed: <status>" for non-error-envelope bodies.
+    await expect(listSavedOutputs()).rejects.toThrow('Request failed: 404');
   });
 });
 
@@ -86,7 +87,7 @@ describe('getSavedOutput', () => {
 
   it('throws when server returns non-200', async () => {
     fetchSpy.mockResolvedValueOnce(new Response('Error', { status: 500 }));
-    await expect(getSavedOutput('xyz')).rejects.toThrow('Failed to get saved output: 500');
+    await expect(getSavedOutput('xyz')).rejects.toThrow('Request failed: 500');
   });
 });
 

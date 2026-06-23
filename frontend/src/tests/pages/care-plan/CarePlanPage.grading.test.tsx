@@ -17,6 +17,10 @@ import type { CarePlanInternal, SimplifiedCarePlan, Grading } from '../../../typ
 
 const locationState = vi.hoisted(() => ({ current: null as unknown }));
 const mockAuthFetch = vi.hoisted(() => vi.fn());
+// useNavigate must return a STABLE reference across renders, mirroring react-router.
+// A fresh fn() each render would make CarePlanPage's location effect re-run forever
+// (its dep array includes `navigate`), causing an infinite render loop.
+const mockNavigate = vi.hoisted(() => vi.fn());
 
 // ── Module mocks ──────────────────────────────────────────────────────────────
 
@@ -41,13 +45,43 @@ vi.mock('../../../utils/logger', () => ({
   logger: { setSessionId: vi.fn(), info: vi.fn() },
 }));
 
-vi.mock('../../../api/apiClient', () => ({
-  authenticatedFetch: (...args: unknown[]) => mockAuthFetch(...args),
-}));
+vi.mock('../../../types/errors', async (importOriginal) => {
+  // Keep the real ApiError class so `err instanceof ApiError` works in the component.
+  return await importOriginal<typeof import('../../../types/errors')>();
+});
+
+vi.mock('../../../api/apiClient', async () => {
+  const { ApiError } = await import('../../../types/errors');
+  // Mirror the real authenticatedFetchJson contract on top of mockAuthFetch's Response.
+  async function authenticatedFetchJson<T = Record<string, unknown>>(
+    ...args: unknown[]
+  ): Promise<T> {
+    const res: Response = await mockAuthFetch(...args);
+    if (!res.ok) {
+      let body: unknown;
+      try { body = await res.clone().json(); } catch { body = null; }
+      if (
+        body &&
+        typeof body === 'object' &&
+        (body as Record<string, unknown>).status === 'error' &&
+        (body as { error?: unknown }).error
+      ) {
+        const errBody = body as { error: { code: string; message: string }; requestId?: string };
+        throw new ApiError(errBody.error as never, errBody.requestId ?? null);
+      }
+      throw new Error(`Request failed: ${res.status} ${res.statusText}`);
+    }
+    return res.json() as Promise<T>;
+  }
+  return {
+    authenticatedFetch: (...args: unknown[]) => mockAuthFetch(...args),
+    authenticatedFetchJson,
+  };
+});
 
 vi.mock('react-router-dom', () => ({
   useLocation: () => ({ state: locationState.current, pathname: '/care-plan' }),
-  useNavigate: () => vi.fn(),
+  useNavigate: () => mockNavigate,
   Link: ({ children, to }: { children: React.ReactNode; to: string }) => (
     <a href={to}>{children}</a>
   ),
@@ -170,8 +204,16 @@ describe('handleRunGrading (SP5)', () => {
   });
 
   it('Run Grading button shows gradingError below download bar on failure', async () => {
+    // Backend ApiError envelope: authenticatedFetchJson surfaces error.message via ApiError.
     mockAuthFetch.mockResolvedValueOnce(
-      new Response('Grading service unavailable', { status: 503 }),
+      new Response(
+        JSON.stringify({
+          status: 'error',
+          error: { code: 'grading_unavailable', message: 'Grading service unavailable' },
+          requestId: 'req-1',
+        }),
+        { status: 503, headers: { 'Content-Type': 'application/json' } },
+      ),
     );
     const user = userEvent.setup();
     await renderInResultState();
