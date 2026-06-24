@@ -307,10 +307,10 @@ export default function CarePlanJobPage() {
                   <div className="download-bar">
                     <div className="download-actions">
                       <button className="download-btn-json" onClick={handleDownloadJson}>
-                        ↓ Download JSON
+                        ↓ JSON
                       </button>
                       <button className="download-btn-pdf" onClick={handleDownloadPdf}>
-                        ↓ Download Report
+                        ↓ Report
                       </button>
                       {!isPublicView && (
                         <button
@@ -318,7 +318,7 @@ export default function CarePlanJobPage() {
                           onClick={handleRunGrading}
                           disabled={gradingLoading}
                         >
-                          {gradingLoading ? 'Grading…' : '◎ Run Grading'}
+                          {gradingLoading ? 'Grading…' : '◎ Grade'}
                         </button>
                       )}
                       {!isPublicView && (
@@ -326,9 +326,7 @@ export default function CarePlanJobPage() {
                           className="download-btn-note"
                           onClick={handleToggleComment}
                         >
-                          {showCommentArea
-                            ? 'Cancel Note'
-                            : (jobDoc.comment ? '✏ Edit Note' : '✏ Add Note')}
+                          {showCommentArea || jobDoc.comment ? '✏' : '+'}
                         </button>
                       )}
                       {user && (
@@ -337,7 +335,7 @@ export default function CarePlanJobPage() {
                           onClick={handleToggleShare}
                           disabled={shareLoading}
                         >
-                          {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗 Share'}
+                          {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗'}
                         </button>
                       )}
                     </div>
