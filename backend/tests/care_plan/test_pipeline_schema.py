@@ -80,7 +80,7 @@ def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
     assert "after_score" not in data
 
 
-def test_llm_schema_excludes_terms_and_raw():   
+def test_llm_schema_excludes_terms_and_raw():
     schema = _llm_schema(CarePlanV1_2, {"terms", "raw"})
     props = schema["properties"]
 
@@ -88,6 +88,11 @@ def test_llm_schema_excludes_terms_and_raw():
     assert "raw" not in props
     expected = set(CarePlanV1_2.model_fields) - {"terms", "raw"}
     assert set(props) == expected
+
+
+def test_llm_schema_excludes_note():
+    schema = _llm_schema(CarePlanV1_2, {"terms", "raw", "note"})
+    assert "note" not in schema["properties"]
 
 
 def test_llm_schema_model_validate_without_terms_and_raw():

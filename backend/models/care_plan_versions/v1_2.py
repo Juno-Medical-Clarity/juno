@@ -122,5 +122,6 @@ class CarePlanV1_2(CarePlan):
     warning_signs: list[WarningSign] = Field(default_factory=list)
     questions: list[str] = Field(default_factory=list)
     low_priority: list[str] = Field(default_factory=list)
+    note: str | None = None
     terms: dict[str, GlossaryTerm] = Field(default_factory=dict)
     raw: RawArtifacts | None = None
