@@ -326,6 +326,11 @@ body {
   color: var(--accent-violet);
 }
 
+.top-nav-logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .top-nav-center {
   display: flex;
   align-items: center;
