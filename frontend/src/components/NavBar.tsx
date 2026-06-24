@@ -20,6 +20,8 @@ export default function NavBar({ isPublicView = false }: NavBarProps) {
     return () => { mounted = false; };
   }, [user]);
 
+  if (isPublicView) return null;
+
   return (
     <nav className="top-nav" aria-label="Main navigation">
       <div className="top-nav-brand">
@@ -33,10 +35,8 @@ export default function NavBar({ isPublicView = false }: NavBarProps) {
         {isAdmin && <Link to="/admin" className="top-nav-link">Admin</Link>}
       </div>
       <div className="top-nav-right">
-        {!isPublicView && (
-          <Link to="/" className="top-nav-link" aria-label="New care plan">+</Link>
-        )}
-        {!isPublicView && <SignOutButton />}
+        <Link to="/" className="top-nav-link" aria-label="New care plan">+</Link>
+        <SignOutButton />
       </div>
     </nav>
   );
