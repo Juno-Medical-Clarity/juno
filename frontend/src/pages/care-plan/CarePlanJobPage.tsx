@@ -296,6 +296,12 @@ export default function CarePlanJobPage() {
                     </div>
                   )}
 
+                  {!isPublicView && jobDoc.comment && !showCommentArea && (
+                    <div className="note-readonly-card">
+                      <p className="note-readonly-label">Note</p>
+                      <p className="note-readonly-text">{jobDoc.comment}</p>
+                    </div>
+                  )}
                   <OutputGradingCard grading={result.grading} error={gradingError} />
 
                   <div className="download-bar">

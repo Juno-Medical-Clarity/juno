@@ -369,3 +369,27 @@
 .comment-cancel-btn:hover {
   opacity: 0.75;
 }
+
+/* ── Read-only note card ──────────────────────────────────────── */
+
+.note-readonly-card {
+  background: var(--surface-muted, #F9FAFB);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card, 12px);
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+.note-readonly-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 6px 0;
+}
+.note-readonly-text {
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  color: var(--text-primary, #111);
+}
