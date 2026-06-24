@@ -27,6 +27,7 @@ export default function NavBar({ isPublicView = false }: NavBarProps) {
       </div>
       <div className="top-nav-center">
         <Link to="/models" className="top-nav-link">Models</Link>
+        <Link to="/docs" className="top-nav-link">Docs</Link>
         {isAdmin && <Link to="/admin" className="top-nav-link">Admin</Link>}
       </div>
       <div className="top-nav-right">
