@@ -50,6 +50,11 @@
   border-right: 1px solid var(--border);
 }
 
+.split-view-panel--original {
+  background: #fff;
+  color: #000;
+}
+
 .split-view-panel-header {
   padding: 10px 16px;
   background: var(--surface);
@@ -94,5 +99,5 @@
 .split-view-text-content pre {
   margin: 0;
   font-family: inherit;
-  color: var(--text-primary);
+  color: #000;
 }
