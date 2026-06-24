@@ -1,4 +1,4 @@
-import type { SimplifiedCarePlan } from '../types/envelope';
+import type { SimplifiedCarePlan, Grading } from '../types/envelope';
 
 export function escapeHtml(value: string): string {
   return value
@@ -9,7 +9,7 @@ export function escapeHtml(value: string): string {
     .replace(/'/g, '&#039;');
 }
 
-export function buildPdfHtml(result: SimplifiedCarePlan): string {
+export function buildPdfHtml(result: SimplifiedCarePlan, grading?: Grading): string {
   const sections: string[] = [];
   const h2 = (title: string) =>
     `<h2 style="font-size:16px;font-weight:600;color:#1a1a2e;margin:20px 0 10px;padding-bottom:6px;border-bottom:2px solid #E5E7EB;">${escapeHtml(title)}</h2>`;
@@ -123,6 +123,21 @@ export function buildPdfHtml(result: SimplifiedCarePlan): string {
       `<div style="margin-bottom:6px;"><strong>${escapeHtml(term)}:</strong> <span style="color:#6B7280;">${escapeHtml(glossary.definition)}</span></div>`,
     ).join('');
     sections.push(`${h2('Medical Terms Glossary')}${items}`);
+  }
+
+  if (grading?.enabled && grading.entries?.length) {
+    // Group entries by name: collect before and after entries
+    const methodMap: Record<string, { before?: string; after?: string }> = {};
+    for (const entry of grading.entries) {
+      if (!methodMap[entry.name]) methodMap[entry.name] = {};
+      if (entry.target === 'before') methodMap[entry.name].before = entry.grade;
+      else if (entry.target === 'after') methodMap[entry.name].after = entry.grade;
+    }
+    const items = Object.entries(methodMap).map(([name, { before, after }]) => {
+      const score = before && after ? `${escapeHtml(before)} → ${escapeHtml(after)}` : escapeHtml(before ?? after ?? '');
+      return `<div style="margin-bottom:6px;"><strong>${escapeHtml(name)}:</strong> <span style="color:#374151;">${score}</span></div>`;
+    }).join('');
+    sections.push(`${h2('Readability')}${items}`);
   }
 
   if (result.low_priority?.length) {
