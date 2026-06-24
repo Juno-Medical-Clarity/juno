@@ -102,4 +102,5 @@ export interface CarePlanContent {
   };
   before_score?: PatientScore;
   after_score?: PatientScore;
+  note?: string;
 }
