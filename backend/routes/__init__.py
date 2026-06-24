@@ -16,6 +16,7 @@ API_BLUEPRINTS = [
     saved_outputs_bp,
     datasets_bp,
     grading_bp,
+    admin_bp,        # ← added; was only in ADMIN_BLUEPRINTS before
 ]
 
 WORKER_BLUEPRINTS = [
