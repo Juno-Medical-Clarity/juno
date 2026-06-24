@@ -77,6 +77,11 @@
 
 .split-view-simplified {
   padding: 20px;
+  background: #fff;
+}
+
+.split-view-panel:not(.split-view-panel--original) {
+  background: #fff;
 }
 
 .split-view-loading {
