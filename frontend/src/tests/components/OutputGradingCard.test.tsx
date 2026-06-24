@@ -183,13 +183,14 @@ describe('OutputGradingCard', () => {
     render(<OutputGradingCard grading={grading} error={null} />);
     await user.click(screen.getByText(/Score \(78\)/));
     await user.click(screen.getByText('Combined Score'));
-    // Scalar keys should appear
+    // Scalar keys should appear (word_count is intentionally hidden)
     expect(screen.getAllByText((content, element) => {
       return element?.tagName === 'STRONG' && element?.textContent?.toLowerCase().includes('grade estimate:') === true;
     }).length).toBeGreaterThan(0);
-    expect(screen.getAllByText((content, element) => {
+    // word_count is filtered out of combined score breakdown
+    expect(screen.queryAllByText((content, element) => {
       return element?.tagName === 'STRONG' && element?.textContent?.toLowerCase().includes('word count:') === true;
-    }).length).toBeGreaterThan(0);
+    }).length).toBe(0);
     // Nested dimensions should NOT appear
     expect(screen.queryAllByText((content, element) => {
       return element?.tagName === 'STRONG' && element?.textContent?.toLowerCase().includes('dimensions:') === true;
