@@ -130,8 +130,8 @@ export function buildPdfHtml(result: SimplifiedCarePlan, grading?: Grading): str
     const methodMap: Record<string, { before?: string; after?: string }> = {};
     for (const entry of grading.entries) {
       if (!methodMap[entry.name]) methodMap[entry.name] = {};
-      if (entry.target === 'before') methodMap[entry.name].before = entry.grade;
-      else if (entry.target === 'after') methodMap[entry.name].after = entry.grade;
+      if (entry.target === 'before') methodMap[entry.name].before = String(entry.grade);
+      else if (entry.target === 'after') methodMap[entry.name].after = String(entry.grade);
     }
     const items = Object.entries(methodMap).map(([name, { before, after }]) => {
       const score = before && after ? `${escapeHtml(before)} → ${escapeHtml(after)}` : escapeHtml(before ?? after ?? '');
