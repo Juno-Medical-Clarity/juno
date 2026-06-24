@@ -10,7 +10,7 @@ import OutputGradingCard from '../../components/OutputGradingCard';
 import SplitView from '../../components/SplitView';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import { authenticatedFetchJson } from '../../api/apiClient';
-import { shareOutput, updateJobComment, updateCarePlanNote } from '../../api/savedOutputs';
+import { shareOutput, updateCarePlanNote } from '../../api/savedOutputs';
 import { ApiError } from '../../types/errors';
 import { API_URL } from '../../api/firebase';
 import { useAuth } from '../../auth/AuthContext';
@@ -296,10 +296,10 @@ export default function CarePlanJobPage() {
                     </div>
                   )}
 
-                  {!isPublicView && jobDoc.comment && !showCommentArea && (
+                  {!isPublicView && result.care_plan.note && !showCommentArea && (
                     <div className="note-readonly-card">
                       <p className="note-readonly-label">Note</p>
-                      <p className="note-readonly-text">{jobDoc.comment}</p>
+                      <p className="note-readonly-text">{result.care_plan.note}</p>
                     </div>
                   )}
                   <OutputGradingCard grading={result.grading} error={gradingError} />
@@ -336,6 +336,8 @@ export default function CarePlanJobPage() {
                           className="download-btn-share"
                           onClick={handleToggleShare}
                           disabled={shareLoading}
+                          aria-label={shareLoading ? 'Saving…' : jobDoc.shared ? 'Stop sharing' : 'Share'}
+                          title={shareLoading ? 'Saving…' : jobDoc.shared ? 'Stop sharing' : 'Share'}
                         >
                           {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗'}
                         </button>

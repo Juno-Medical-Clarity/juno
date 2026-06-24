@@ -31,7 +31,7 @@ export default function SplitView({ savedId, originalText, simplifiedContent, on
         <button className="split-view-close" onClick={onClose}>✕ Close</button>
       </div>
       <div className="split-view-panels">
-        <div className="split-view-panel split-view-panel--original" style={{ background: '#fff', color: '#000' }}>
+        <div className="split-view-panel split-view-panel--original">
           <div className="split-view-panel-header">{panelTitle}</div>
 
           {/* PDF mode */}
