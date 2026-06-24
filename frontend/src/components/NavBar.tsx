@@ -23,10 +23,13 @@ export default function NavBar({ isPublicView = false }: NavBarProps) {
   return (
     <nav className="top-nav" aria-label="Main navigation">
       <div className="top-nav-brand">
-        <span className="top-nav-logo">Juno</span>
+        <Link to="/" className="top-nav-logo-link">
+          <span className="top-nav-logo">Juno</span>
+        </Link>
       </div>
       <div className="top-nav-center">
         <Link to="/models" className="top-nav-link">Models</Link>
+        <Link to="/docs" className="top-nav-link">Docs</Link>
         {isAdmin && <Link to="/admin" className="top-nav-link">Admin</Link>}
       </div>
       <div className="top-nav-right">

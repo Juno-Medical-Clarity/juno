@@ -46,6 +46,7 @@ export function useJobSnapshot(jobId: string | null): {
     setError(null);
 
     let unsubscribeSnapshot: (() => void) | null = null;
+    let currentUser: string | null = null; // track last known uid to avoid spurious re-subscriptions
 
     const subscribeToSnapshot = () => {
       unsubscribeSnapshot = onSnapshot(
@@ -78,7 +79,14 @@ export function useJobSnapshot(jobId: string | null): {
       );
     };
 
-    const unsubscribeAuth = onAuthStateChanged(firebaseAuth, () => {
+    const unsubscribeAuth = onAuthStateChanged(firebaseAuth, (firebaseUser) => {
+      const newUserId = firebaseUser?.uid ?? null;
+      if (newUserId === currentUser && unsubscribeSnapshot) {
+        // Auth state didn't change meaningfully; keep existing subscription.
+        return;
+      }
+      currentUser = newUserId;
+
       if (unsubscribeSnapshot) {
         unsubscribeSnapshot();
         unsubscribeSnapshot = null;

@@ -55,3 +55,16 @@ class Constants:
         PEMAT          = _grading_method_base("PEMAT", "PEMAT (AHRQ 2013) — automated approximation of items 3,8,14,21-22 (understandability) and 27-33 (actionability)")
         SAM            = _grading_method_base("SAM", "SAM (Doak et al. 1996) — automated approximation of content, literacy demand, and layout/typography domains")
         CDC_CCI        = _grading_method_base("CDC CCI", "CDC Clear Communication Index — automated approximation of main message, behavioral recommendations, numbers, and call-to-action items")
+
+    class SOURCE(Enum):
+        DOCUMENTS = "documents"
+        RECORDING = "recording"
+        NOTES     = "notes"
+
+    class IMPORTANCE(Enum):
+        HIGH = "high"
+        LOW  = "low"
+
+    # Survey performed per PRD-3: remaining Literal types in v1_2.py, grading.py,
+    # and input.py are single-use discriminator sentinels and do not qualify for
+    # promotion to enums (criteria: 2+ values AND used in 2+ fields or across files).

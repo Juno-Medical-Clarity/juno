@@ -10,7 +10,7 @@ import OutputGradingCard from '../../components/OutputGradingCard';
 import SplitView from '../../components/SplitView';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import { authenticatedFetchJson } from '../../api/apiClient';
-import { shareOutput, updateJobComment } from '../../api/savedOutputs';
+import { shareOutput, updateCarePlanNote } from '../../api/savedOutputs';
 import { ApiError } from '../../types/errors';
 import { API_URL } from '../../api/firebase';
 import { useAuth } from '../../auth/AuthContext';
@@ -61,10 +61,10 @@ export default function CarePlanJobPage() {
   const result: CarePlanInternal | null =
     baseResult && gradingOverride ? { ...baseResult, grading: gradingOverride } : baseResult;
 
-  // Sync commentText with jobDoc.comment when opening the textarea
+  // Sync commentText with carePlan.note when opening the textarea
   function handleToggleComment() {
     if (!showCommentArea) {
-      setCommentText(jobDoc?.comment ?? '');
+      setCommentText(result?.care_plan.note ?? '');
       setCommentSaved(false);
     }
     setShowCommentArea(v => !v);
@@ -74,7 +74,7 @@ export default function CarePlanJobPage() {
     if (!id) return;
     setCommentSaving(true);
     try {
-      await updateJobComment(id, commentText);
+      await updateCarePlanNote(id, commentText);
       setCommentSaved(true);
       setTimeout(() => {
         setCommentSaved(false);
@@ -296,15 +296,21 @@ export default function CarePlanJobPage() {
                     </div>
                   )}
 
+                  {!isPublicView && result.care_plan.note && !showCommentArea && (
+                    <div className="note-readonly-card">
+                      <p className="note-readonly-label">Note</p>
+                      <p className="note-readonly-text">{result.care_plan.note}</p>
+                    </div>
+                  )}
                   <OutputGradingCard grading={result.grading} error={gradingError} />
 
                   <div className="download-bar">
                     <div className="download-actions">
                       <button className="download-btn-json" onClick={handleDownloadJson}>
-                        ↓ Download JSON
+                        ↓ JSON
                       </button>
                       <button className="download-btn-pdf" onClick={handleDownloadPdf}>
-                        ↓ Download Report
+                        ↓ Report
                       </button>
                       {!isPublicView && (
                         <button
@@ -312,7 +318,7 @@ export default function CarePlanJobPage() {
                           onClick={handleRunGrading}
                           disabled={gradingLoading}
                         >
-                          {gradingLoading ? 'Grading…' : '◎ Run Grading'}
+                          {gradingLoading ? 'Grading…' : '◎ Grade'}
                         </button>
                       )}
                       {!isPublicView && (
@@ -322,7 +328,7 @@ export default function CarePlanJobPage() {
                         >
                           {showCommentArea
                             ? 'Cancel Note'
-                            : (jobDoc.comment ? '✏ Edit Note' : '✏ Add Note')}
+                            : (result.care_plan.note ? '✏ Edit Note' : '+ Add Note')}
                         </button>
                       )}
                       {user && (
@@ -330,8 +336,10 @@ export default function CarePlanJobPage() {
                           className="download-btn-share"
                           onClick={handleToggleShare}
                           disabled={shareLoading}
+                          aria-label={shareLoading ? 'Saving…' : jobDoc.shared ? 'Stop sharing' : 'Share'}
+                          title={shareLoading ? 'Saving…' : jobDoc.shared ? 'Stop sharing' : 'Share'}
                         >
-                          {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗 Share'}
+                          {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗'}
                         </button>
                       )}
                     </div>

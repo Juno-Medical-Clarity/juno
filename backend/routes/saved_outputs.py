@@ -122,12 +122,29 @@ def rename_saved(user_id: str, doc_id: str):
             ).to_dict(), 400
         updates['comment'] = comment
 
+    # Handle optional note update (stored inside output_data.care_plan.note)
+    if 'note' in body:
+        note = body.get('note')
+        if not isinstance(note, str):
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                f"/care_plan/saved/{doc_id}",
+                {"field": "note", "reason": "must be a string"},
+            ).to_dict(), 400
+        if len(note) > 2000:
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                f"/care_plan/saved/{doc_id}",
+                {"field": "note", "reason": "max 2000 chars"},
+            ).to_dict(), 400
+        updates['output_data.care_plan.note'] = note
+
     if len(updates) == 1:
         # Only updated_at was set — no actual fields were provided
         return make_error_response(
             ErrorCode.INPUT_VALIDATION_ERROR,
             f"/care_plan/saved/{doc_id}",
-            {"reason": "at least one of 'name' or 'comment' is required"},
+            {"reason": "at least one of 'name', 'comment', or 'note' is required"},
         ).to_dict(), 400
 
     db.collection('care_plan_outputs').document(doc_id).update(updates)
