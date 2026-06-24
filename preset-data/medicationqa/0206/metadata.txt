@@ -1,0 +1,5 @@
+drug_focus: Insulin
+question_type: Action
+section_title: Summary
+source_url: https://medlineplus.gov/diabetestype1.html
+sample_id: 0206

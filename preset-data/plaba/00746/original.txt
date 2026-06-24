@@ -1,0 +1,11 @@
+Background: Heterologous vaccinations against SARS-CoV-2 with ChAdOx1 nCoV-19 and a second dose of an mRNA-based vaccine have been shown to be more immunogenic than homologous ChAdOx1 nCoV-19.
+In the current study, we examined the kinetics of the antibody response to the second dose of three different vaccination regimens (homologous ChAdOx1 nCoV-19 vs. ChAdOx1 nCoV-19 + BNT162b2 or mRNA-1273) against SARS-CoV-2 in a longitudinal manner; whether there are differences in latency or amplitude of the early response and which markers are most suitable to detect these responses.
+Methods: We performed assays for anti-S1 IgG and IgA, anti-NCP IgG and a surrogate neutralization assay on serum samples collected from 57 participants on the day of the second vaccination as well as the following seven days.
+Results: All examined vaccination regimens induced detectable antibody responses within the examined time frame.
+Both heterologous regimens induced responses earlier and with a higher amplitude than homologous ChAdOx1 nCoV-19.
+Between the heterologous regimens, amplitudes were somewhat higher for ChAdOx1 nCoV-19 + mRNA-1273.
+There was no difference in latency between the IgG and IgA responses.
+Increases in the surrogate neutralization assay were the first changes to be detectable for all regimens and the only significant change seen for homologous ChAdOx1 nCoV-19.
+Discussion: Both examined heterologous vaccination regimens are superior in immunogenicity, including the latency of the response, to homologous ChAdOx1 nCoV-19.
+While the IgA response has a shorter latency than the IgG response after the first dose, no such difference was found after the second dose, implying that both responses are driven by separate plasma cell populations.
+Early and steep increases in surrogate neutralization levels suggest that this might be a more sensitive marker for antibody responses after vaccination against SARS-CoV-2 than absolute levels of anti-S1 IgG.

@@ -1,0 +1,8 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [9:11] 'medical-jargon-google-hard' -> 'TLR2 agonist'
+  [13:15] 'medical-jargon-google-easy' -> 'cutaneous leishmaniasis'

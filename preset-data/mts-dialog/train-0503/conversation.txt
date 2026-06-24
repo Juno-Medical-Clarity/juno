@@ -1,0 +1,6 @@
+Doctor: Do you smoke or drink alcohol?
+Patient: No, I do not smoke or drink alcohol.
+Doctor: How about drugs?
+Patient: Nope, I have never.
+Doctor: Who do you live with?
+Patient: Just my family.

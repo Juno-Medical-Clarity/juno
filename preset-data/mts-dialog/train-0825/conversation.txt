@@ -1,0 +1,15 @@
+Doctor: Can you confirm your age for me, ma'am?
+Patient: Sure, I'm fifty six years old.
+Doctor: Great, so what brings you in to see me today?
+Patient: Um, I'm peeing a lot, and I'm having  a little bit blood in that urine as well.
+Doctor: Have you ever had a cystoscopy?
+Patient: Yes, it was unremarkable, that's what they told me.
+Doctor: When are your episodes for the most part?
+Patient: Um, usually during the day. I don't usually have them at night.
+Doctor: Are you having any pain with urination?
+Patient: No, no pain.
+Doctor: Aside from the little bit of blood, can you tell if there's any pus in your urine?
+Patient: No, I don't have any of that, it's just the little bit of blood.
+Doctor: Have you taken any medications for this?
+Patient: Um, I had Ditropan, and it didn't do very well.
+Doctor: Well, this ultrasound of the kidney is also unremarkable, so at this time I think we should try a different medication.

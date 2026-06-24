@@ -1,0 +1,7 @@
+source:      plos_biology
+side:        simple
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [25:26] 'medical-jargon-google-easy' -> 'hosts'

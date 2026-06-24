@@ -1,0 +1,14 @@
+Background: Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is characterized by unexplained persistent fatigue (long-lasting tiredness). ME/CFS is commonly accompanied by cognitive dysfunction, sleeping disturbances, orthostatic intolerance (inability to stand up quickly), fever, lymphadenopathy (swollen lymph nodes), and irritable bowel syndrome (IBS - colon disorder that leads to belly pain, gas, diarrhea, and constipation).
+The extent to which the stomach microbiome (gut bacteria) and inflammation (redness and swelling from infection-fighting) are associated (linked) with ME/CFS is unknown.
+This study evaluated 50 ME/CFS patients and 50 healthy controls.
+Analysis revealed associations between IBS co-morbidity, body mass index, fecal (poop) bacterial composition, and bacterial metabolic pathways. No associated was found between ME/CFS status and plasma (blood) immune molecules.
+IBS co-morbidity (co-diagnosis) was the most strongly associated endpoint with ME/CFS status.
+ME/CFS subgroups, defined by IBS status, could be distinguished from control subjects with high predictive accuracy.
+Bacterial taxa (bacterial groups) predictive of ME/CFS patients with IBS were distinct from taxa associated with ME/CFS patients without IBS.
+Two bacteria, Alistipes and Faecalibacterium, emerged as the top biomarkers of ME/CFS with IBS. Two bacteria, Bacteroides and Bacteroides vulgatus, were the top biomarkers of ME/CFS without IBS.
+Decreased metabolic pathways associated with unsaturated fatty acid biosynthesis and increased atrazine (herbicide) degradation pathways were independent of IBS co-morbidity.
+Increased vitamin B6 biosynthesis/salvage and pyrimidine ribonucleoside (DNA building blocks) degradation were the top metabolic pathways in ME/CFS without IBS. These pathways were also top in the total ME/CFS cohort.
+In ME/CFS subgroups, symptom severity measures were correlated with the abundance of distinct bacterial taxa and metabolic pathways.
+Independent of IBS, ME/CFS is associated with gut microbiome imbalance and distinct bacterial metabolic disturbances. These factors may influence disease severity.
+These findings indicate that gut microbial imbalance features associated with ME/CFS may be hidden by IBS.
+These findings may enable more accurate diagnosis and improve therapeutic (treatment) strategies in ME/CFS subgroups.

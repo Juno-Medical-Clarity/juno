@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        simple
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'flumazenil'
+  [10:12] 'medical-jargon-google-easy' -> 'hepatic encephalopathy'
+  [15:16] 'medical-jargon-google-easy' -> 'cirrhosis'
+  [29:30] 'medical-jargon-google-easy' -> 'flumazenil'
+  [35:36] 'general-complex' -> 'placebo'

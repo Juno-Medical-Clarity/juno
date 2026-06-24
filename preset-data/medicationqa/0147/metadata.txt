@@ -1,0 +1,5 @@
+drug_focus: Warfarin
+question_type: Interaction
+section_title: What special dietary instructions should I follow?
+source_url: https://medlineplus.gov/druginfo/meds/a682277.html
+sample_id: 0147

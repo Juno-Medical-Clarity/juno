@@ -1,0 +1,5 @@
+pmid:        29025426
+question:    23
+adaptation:  adaptation1
+title:       The complete European guidelines on phenylketonuria: diagnosis and treatment
+sentences:   3

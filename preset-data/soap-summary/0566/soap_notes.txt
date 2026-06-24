@@ -1,0 +1,28 @@
+# SOAP Notes — Sample 0566
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient: 14-day-old baby with a blister on the head above the ear.
+- Initial concern: Mother is worried about the baby's health.
+- History of blister: Noticed a blister near the umbilicus area on Friday.
+- Previous medical visit: Went to the doctor on Saturday; test conducted.
+- Test result: Diagnosis of growing MRSA (Methicillin-Resistant Staphylococcus Aureus).
+- Mother's history: Mother also diagnosed with MRSA and is on medications for it.
+- Current treatment: Bacitracin ointment was applied to the umbilical blister, which is almost healed.
+- New symptom: Noticed a new small blister on the head today.
+- Eating habits: Baby has not missed any meals, taking around two ounces of milk per feed.
+- Sleeping habits: No reported issues.
+- Fever: No fever noticed by the mother.
+- Lethargy: No lethargy reported.
+- Crying: No increase in crying noted.
+- Other changes: No other changes in daily routine noted.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment information provided.]
+
+Plan:
+- Start treatment for the new blister.
+- Further evaluation in the hospital as needed.

@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0448
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has an infection that has become septic.
+- Patient expresses no questions or concerns regarding the treatment plan.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Septic infection.
+- Need for anticoagulation due to blood clotting issues.
+
+Plan:
+- Start intravenous antibiotics.
+- Administer an anticoagulant to prevent further clotting issues.

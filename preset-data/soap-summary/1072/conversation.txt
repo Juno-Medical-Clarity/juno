@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1072
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any specific family medical history that I should be aware of? No. Anyone in your family, even grandparents, if you know them, did they have diabetes or high blood pressure? No. Anyone else sick at home? No.

@@ -1,0 +1,12 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [10:11] 'medical-jargon-google-easy' -> 'biphasic'
+  [12:14] 'medical-jargon-google-easy' -> 'threshold-gated dependence'
+  [15:16] 'medical-jargon-google-easy' -> 'mTORC1'
+  [20:21] 'medical-jargon-google-easy' -> 'mTORC2'
+  [22:23] 'medical-jargon-google-hard' -> 'SIN1'
+  [35:37] 'medical-jargon-google-easy' -> 'protein expression'

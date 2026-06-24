@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1432
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Well, I am looking at your ultrasound report and honestly the only significant finding of this area is that it shows to be related to bone. Oh okay.

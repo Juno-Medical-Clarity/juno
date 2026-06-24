@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0754
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient is a missionary. 
+- Patient has four children: eldest is seven years old, followed by five and three years old, and the youngest is six weeks old. 
+
+Objective: 
+- [No objective data provided.]
+
+Assessment: 
+- [No assessment provided.]
+
+Plan: 
+- [No plan provided.]

@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-easy' -> 'antischistosomal drugs'
+  [17:19] 'medical-jargon-google-easy' -> 'antischistosomal drugs'
+  [30:33] 'medical-jargon-google-easy' -> 'S. mansoni infection'

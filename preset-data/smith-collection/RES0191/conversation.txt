@@ -1,0 +1,238 @@
+# Smith Collection Transcript: RES0191
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Hi im i have been having this nasal obstruction and discharge for the past week and it doesnt seem to be going away and its bothering me so i thought i would get it checked out by you
+
+Doctor: OK for sure uhm could you describe the discharge
+
+Patient: Yeah its a its mostly clear it doesnt it doesnt have a color to it
+
+Doctor: OK so no yellow green or or red to indicate any blood
+
+Patient: No
+
+Doctor: OK and you mentioned so with the obstruction have you had difficulties breathing
+
+Patient: um a little bit i just need to and is mostly at night i just need to shift to one side or the other to like unblock my airways
+
+Doctor: I see ok and have you been having any pain on your face like i like kind of over your cheeks or over your forehead
+
+Patient: No
+
+Doctor: OK how about any headaches
+
+Patient: No headaches
+
+Doctor: All right have you had any changes or to your sense of smell or any loss of smell
+
+Patient: Uhm no maybe a little bit but no not really i can still eat i can still smell like candles and things like that so maybe go with no
+
+Doctor: OK have you had any changes to your sense of taste
+
+Patient: No
+
+Doctor: OK have you had any eye redness or or any eye pain
+
+Patient: No
+
+Doctor: Any ear pain or ear discharge
+
+Patient: No
+
+Doctor: Any changes to the vision or hearing
+
+Patient: uh no
+
+Doctor: OK have you had a sore throat
+
+Patient: No
+
+Doctor: Have you had a cough
+
+Patient: No
+
+Doctor: Have you had any shortness of breath
+
+Patient: uh no
+
+Doctor: Have you had any wheezing
+
+Patient: No
+
+Doctor: OK and have you coughed up any blood
+
+Patient: No
+
+Doctor: OK and have you had any chest pain
+
+Patient: No
+
+Doctor: Have you had any lightheadedness or dizziness
+
+Patient: uh no
+
+Doctor: Have you felt like your hearts beating really fast or racing
+
+Patient: No
+
+Doctor: OK have you had any fevers or chills
+
+Patient: No
+
+Doctor: Have you had a night sweats
+
+Patient: No
+
+Doctor: Have you had any unexpected weight loss
+
+Patient: No
+
+Doctor: OK have you had any loss of appetite
+
+Patient: uh nope
+
+Doctor: OK have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: Have you had any abdominal pain
+
+Patient: No
+
+Doctor: Have you had any diarrhea or constipation
+
+Patient: No
+
+Doctor: Have you had any painful urination or urinary frequency
+
+Patient: No
+
+Doctor: OK have you had any skin rashes
+
+Patient: No
+
+Doctor: Have you had any muscle aches or joint pains
+
+Patient: No
+
+Doctor: Have you had any memory loss or confusion
+
+Patient: No
+
+Doctor: OK and how has your energy been have you had fatigue or malaise
+
+Patient: No nothing like that
+
+Doctor: OK uhm and have you had any sneezing
+
+Patient: No
+
+Doctor: OK uhm and uh are you healthy or or have you been diagnosed with any medical conditions in the past
+
+Patient: No im actually pretty healthy
+
+Doctor: OK have you had any prior surgeries or hospitalizations
+
+Patient: Nope
+
+Doctor: OK and any allergies like to any medications or any seasonal allergies like do you get symptoms like this that change throughout the year
+
+Patient: No
+
+Doctor: OK and sorry no allergies to medications as well
+
+Patient: No allergies to medications
+
+Doctor: OK and do you take any medications regularly either prescribed or over the counter
+
+Patient: No i dont take any medications
+
+Doctor: OK and can you tell me about where youre living currently and who youre living with
+
+Patient: Uhm i live by myself right now i live in an apartment downtown
+
+Doctor: OK and are you got working right now or are you going to school or both
+
+Patient: Im working right now but im working from home
+
+Doctor: OK uh have you been around anybody whos been sick
+
+Patient: No one personally but i do go to the grocery store and the bank and all the essential things
+
+Doctor: I see ok uhm and have you have you traveled anywhere recently
+
+Patient: No i havent
+
+Doctor: OK are you in a relationship
+
+Patient: I am
+
+Doctor: Are you sexually active
+
+Patient: I am
+
+Doctor: OK could you tell me a little bit about your partner or or partners
+
+Patient: Uhm yeah so weve been together for the past five years and yeah hes the only sexual partner i have
+
+Doctor: OK and do you use condoms or birth control
+
+Patient: Birth control
+
+Doctor: OK uhm and any concern for a sexually transmitted infection
+
+Patient: No
+
+Doctor: OK and you smoke cigarettes
+
+Patient: I dont
+
+Doctor: Do you smoke cannabis or use cannabis products
+
+Patient: uh nope
+
+Doctor: OK how about the use of any recreational drugs
+
+Patient: No
+
+Doctor: OK do you drink alcohol
+
+Patient: I do ill have like a glass of wine every day
+
+Doctor: OK and in the family are there any heart conditions or lung conditions that run in the family
+
+Patient: No
+
+Doctor: How about things like diabetes or or high blood pressure
+
+Patient: Uhm i dont think so
+
+Doctor: OK and uh are there any cancers in the family
+
+Patient: Uhm theres colon cancer in the family
+
+Doctor: OK and who was that and how old were they
+
+Patient: Uhm my grandfather he was 55
+
+Doctor: OK uhm alright and so that was everything that i wanted to ask today on history was there anything else that i was maybe forgetting
+
+Patient: uh no i think that was it
+
+Doctor: OK so with the prominent symptoms of being nasal discharge and obstruction without fever and without like changes to smell and also without pain its most likely a viral rhinosinusitis uhm however this could have symptoms that overlap with with coviand so we will still end up doing a swab even though the most likely diagnosis is going to be a viral acute rhinosinusitis
+
+Patient: OK
+
+Doctor: Do you have any other questions
+
+Patient: No thank you or yeah thank you
+
+Doctor: Thank you

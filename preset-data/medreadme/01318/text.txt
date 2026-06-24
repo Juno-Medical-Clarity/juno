@@ -1,0 +1,1 @@
+Here, we show that the space of shapes adopted by the nematode Caenorhabditis elegans is low dimensional, with just four dimensions accounting for 95% of the shape variance.

@@ -1,0 +1,41 @@
+# SOAP Notes — Sample 1411
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: 
+ - Lightheadedness (experienced prior to first fall and again before second fall)
+ - Confusion (during first fall)
+ - Numbness in hands (for the past three weeks)
+ - Weakness in hands (noted as muscle loss)
+ - Muscle twitching in legs (since August 2008)
+ - Alternating constipation and diarrhea
+ - Blood pressure fluctuations
+ - Sensation of feet feeling like sponges (ongoing for approximately nine months)
+ - Loss of joint position sense in feet (also ongoing for approximately nine months)
+- Severity: 
+ - Lightheadedness described but severity not quantified
+ - Weakness in hands and legs worsening
+- Duration: 
+ - First fall approximately a year and a half ago
+ - Numbness in hands for three weeks
+ - Muscle twitching since August 2008
+ - Feet sensation issues for nine months
+- Relevant medical history: 
+ - Multiple falls since July 2008
+ - Diagnosed with pneumonia twice (after falls in July and August 2008)
+ - Diagnosed with shingles in October 2008
+ - Confined to a wheelchair, previously used a walker
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: 
+ - Unable to use walker or return to previous health
+ - Concern about feeling faint when standing
+
+Objective:
+- No measurable or observable data mentioned in the conversation.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided during the conversation.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned in the conversation.

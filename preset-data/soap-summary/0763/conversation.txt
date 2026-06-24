@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0763
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Your cholesterol appears to be elevated today. Is this the first time you've been told that your cholesterol levels are high? No, unfortunately. I suffer from a few medical problems so maybe that's to blame. I see here that you have diabetes and high blood pressure. Right. Does diabetes or high blood pressure run- In the family? No, but heart disease does.

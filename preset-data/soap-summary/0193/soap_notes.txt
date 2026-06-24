@@ -1,0 +1,42 @@
+# SOAP Notes — Sample 0193
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Difficulty breathing and dry cough started yesterday morning
+- Shortness of breath with minimal exertion (walking from bedroom to kitchen)
+- Took extra dose of morphine last night for arthritis pain, felt drowsy and slept until 1-2 PM
+- Bad breath noticed this morning
+- Shortness of breath and cough constant for past 2 days, worse with exertion
+- Mild fatigue
+- Husband reports patient was extremely drowsy and difficult to wake up yesterday
+
+Past Medical History:
+- PMHx: Osteoarthritis
+- Medications: Morphine (recently increased dose), Advil
+- Allergies: None
+- Hospitalizations: None
+- Surgeries: Wisdom teeth removal
+- FHx: Grandmother had breast cancer
+
+Social History:
+- Lives with husband and dog
+- Works as a banker, currently working remotely
+- Denies smoking
+- Occasional marijuana use (3-4 times/month) for pain, none in past 2 months
+- Alcohol: 2-3 glasses of wine once a week
+
+Objective:
+- Temp 37.2°C last night (no fever)
+
+Assessment:
+- Possible aspiration pneumonia
+
+Plan:
+- COVID swab test
+- Physical examination
+- Vitals, including oxygen saturation
+- Chest X-ray
+- Blood work
+- EKG
+- Consider antibiotics
+- Possible admission if vitals unstable

@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [5:6] 'general-complex' -> 'ablation'
+  [7:8] 'abbr-medical' -> 'RPA'
+  [12:13] 'abbr-medical' -> 'Exo1'

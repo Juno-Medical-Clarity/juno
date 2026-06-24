@@ -1,0 +1,8 @@
+Doctor: How long have you been living with diabetes, sir?
+Patient: Oh, it's been about thirty five years now.
+Doctor: How long have you been taking insulin for this?
+Patient: Well, um, I've been taking insulin for about twenty years now.
+Doctor: Do you have any major medical conditions that I should know about?
+Patient: Yeah, um, prostate cancer.
+Doctor: How were you treated for this?
+Patient: I've had radiation. Oh, my P S A is zero point zero one, by the way.

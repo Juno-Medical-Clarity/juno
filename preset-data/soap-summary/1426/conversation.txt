@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1426
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Is there any history of heart disease in your family? Yes, my dad and brother had heart vessel blockage type of disease in their forties.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0900
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you remember the details of your surgery, sir? No, can you remind me? We did a left inguinal hernia repair. Thank you for reminding me. You have a history of prostate cancer as well, correct? Yes, they said it was Gleason, um, three plus four. Yes, that sounds familiar. What medicines are you taking right now? I'm taking Lupron, currently.

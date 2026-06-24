@@ -1,0 +1,12 @@
+source:      plos_genetics
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [1:2] 'abbr-medical' -> 'ttis450'
+  [7:9] 'medical-jargon-google-easy' -> 'endodermal organs'
+  [15:17] 'medical-jargon-google-easy' -> 'craniofacial structures'
+  [21:22] 'medical-jargon-google-easy' -> 'autophagy'
+  [23:26] 'medical-jargon-google-easy' -> 'up - regulated'
+  [28:31] 'medical-jargon-google-easy' -> 'intestinal epithelial cells'

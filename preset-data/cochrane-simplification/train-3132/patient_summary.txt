@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3132  |  gem_id: gem-cochrane-simplification-train-3133  |  doi: 10.1002/14651858.CD004998.pub2
+
+Although meditation therapy is widely used in many anxiety-related conditions there is still a lack of studies in anxiety disorder patients. The small number of studies included in this review do not permit any conclusions to be drawn on the effectiveness of meditation therapy for anxiety disorders. Transcendental meditation is comparable with other kinds of relaxation therapies in reducing anxiety, and Kundalini Yoga did not show significant effectiveness in treating obsessive-compulsive disorders compared with Relaxation/Meditation. Drop out rates appear to be high, and adverse effects of meditation have not been reported. More trials are needed.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3143  |  gem_id: gem-cochrane-simplification-train-3144  |  doi: 10.1002/14651858.CD005472.pub3
+
+This review was conducted to examine the efficacy and safety of acupuncture in treating insomnia. Thirty-three randomised controlled trials were eligible for inclusion in the review, involving 2293 participants. We considered all studies to have a high risk of bias. They were diverse in the types of participants, acupuncture treatments and sleep outcome measures used, which limited our ability to draw reliable conclusions. Currently there is a lack of high-quality clinical evidence to inform us about the efficacy and safety of acupuncture.

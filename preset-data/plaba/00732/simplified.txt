@@ -1,0 +1,7 @@
+The BNT162b2 vaccine (Pfizer) is highly effective against COVID-19 infection. In registration studies, the two doses were delivered 3 weeks apart..
+However, many countries extended the time between the first and second doses to maximize the number of people vaccinated with one dose.
+It is not known how antibody responses or cellular immune responses are influenced by delaying the second dose.
+We studied the immune response in the first 14 weeks after the standard 3-week interval or the extended interval BNT162b2 vaccination. We showed that delaying the second dose strongly boosts the peak antibody response by 3.5-fold in older people.
+This enhanced antibody response may offer a longer period of protection against infection and delay the need for booster vaccination.
+In contrast, peak cellular-specific responses were the strongest in those vaccinated on a standard 3-week vaccine interval.
+The timing of the second dose has a strong influence on the antibody response after BNT162b2 vaccination in older people.

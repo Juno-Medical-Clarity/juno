@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        simple
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'PLD'
+  [4:5] 'abbr-medical' -> 'carbo'
+  [14:15] 'medical-jargon-google-easy' -> 'neuropathy'

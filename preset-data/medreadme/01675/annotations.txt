@@ -1,0 +1,9 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [13:14] 'medical-jargon-google-easy' -> 'acupuncture'
+  [17:19] 'medical-jargon-google-easy' -> 'chronic pain'
+  [45:46] 'medical-jargon-google-easy' -> 'acupuncture'

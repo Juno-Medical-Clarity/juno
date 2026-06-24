@@ -1,0 +1,20 @@
+Doctor: So, tell me what's going on? What brings you to the emergency?
+Patient: I felt like my heart will explode. I have never felt palpitations like this. I am feeling so weak.
+Doctor: When did it start?
+Patient: This afternoon.
+Doctor: Hm, so your blood pressure is one ninety five by eighty three and your heart rate is one twenty one which is quite high.
+Doctor: We have started you on I V Metoprolol. This will help to bring your heartrate down.
+Doctor: And you said you are sixty six?
+Patient: Yes.
+Guest_family: My mom has stopped taking her medications.
+Doctor: I can tell from her reports. Her blood pressure is quite high.
+Guest_family: It's been several months since she last took her medicines.
+Doctor: Well, that's not good!
+Doctor: And does she drink and smoke?
+Guest_family: Yes, both.
+Doctor: How much do you drink Ma'am? Is it occasional?
+Guest_family: She drinks a lot!
+Patient: Well, I drink about four to five glasses of wine every day. I drank last night.
+Doctor: Well, I think you need to cut down on it.
+Patient: I am trying doctor and honestly these are all withdrawal symptoms. I have never felt like this before.
+Doctor: Hm, I understand. For now I have put you on five M G of Metoprolol and looks like your blood pressure is under control and your heart rate has come down to seventy.

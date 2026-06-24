@@ -1,0 +1,5 @@
+drug_focus: Penicillin
+question_type: Side effects
+section_title: What side effects can this medication cause
+source_url: https://medlineplus.gov/druginfo/meds/a615053.html
+sample_id: 0183

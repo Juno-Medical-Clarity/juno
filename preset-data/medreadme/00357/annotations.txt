@@ -1,0 +1,7 @@
+source:      MSD
+side:        simple
+readability: 3.0
+split:       train
+
+jargon_spans:
+  [4:5] 'general-medical-multisense' -> 'periods'

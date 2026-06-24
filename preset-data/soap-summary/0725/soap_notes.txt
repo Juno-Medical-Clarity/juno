@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0725
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Symptoms: Pain in the buttock 
+- Severity: Not specified 
+- Duration: Not specified 
+- Associated symptoms: No fever, no nausea 
+- Relevant medical history: Not mentioned 
+- Family history: Not mentioned 
+- Allergies: Not mentioned 
+- Other concerns: None mentioned 
+
+Objective: 
+- No objective data provided.
+
+Assessment: 
+- No assessment information provided.
+
+Plan: 
+- No plan provided.

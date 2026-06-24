@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0126  |  gem_id: gem-cochrane-simplification-validation-127  |  doi: 10.1002/14651858.CD006345.pub3
+
+The trial finding suggested that compression stockings did reduce symptoms associated with CVI including aching of the legs, discomfort, fatigue, swelling and tiredness. However, this evidence was from a very small study. Due to the extremely limited number of trials available, we could not assess the effectiveness of other non-pharmacological interventions in the prevention of this condition. Nor could we ascertain if any intervention had an effect on quality of life or an economic impact such as reducing the number of days of sick leave or work disability. Further research that looks at a broad range of proposed interventions in a clearly defined standing worker population is required.

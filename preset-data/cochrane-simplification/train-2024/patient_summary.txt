@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2024  |  gem_id: gem-cochrane-simplification-train-2025  |  doi: 10.1002/14651858.CD003218.pub2
+
+In this updated review there were few randomized controlled trials which evaluated the efficacy and safety of psychostimulants in myotonic dystrophy. One randomized controlled trial of selegiline involving 11 participants did not demonstrate any benefit. Four studies of another drug modafinil suggested inconsistent and slight benefits. Only two of these studies used the gold standard test, a sleepiness scale, to evaluate hypersomnia and found non significant improvement. In these four studies modafinil seemed well tolerated. Further randomized trials are needed to determine the utility of psychostimulants for myotonic dystrophy.

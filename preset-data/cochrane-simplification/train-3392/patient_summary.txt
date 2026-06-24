@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3392  |  gem_id: gem-cochrane-simplification-train-3393  |  doi: 10.1002/14651858.CD002814.pub2
+
+Only randomised controlled trials were included in this review. These are studies in which two groups of patients were compared, each group receiving a different form of SLT, with patients assigned to the groups in a random fashion to reduce potential for bias. Six trials were found with a total of 159 patients. Methods varied so much that meta-analysis of the results was not possible. Considering the small number of patients and the methodological flaws in these studies, there is insufficient evidence to support the use of one form of SLT over another for the treatment of speech problems in individuals with Parkinson's disease.

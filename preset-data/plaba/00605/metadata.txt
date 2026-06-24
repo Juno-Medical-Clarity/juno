@@ -1,0 +1,5 @@
+pmid:        33331662
+question:    46
+adaptation:  adaptation1
+title:       Corrector therapies (with or without potentiators) for people with cystic fibrosis with class II CFTR gene variants (most commonly F508del)
+sentences:   5

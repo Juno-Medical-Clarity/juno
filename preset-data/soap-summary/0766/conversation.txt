@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0766
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anything that has been going on? No. What do you mean? I mean anything wrong from head to toe that you would like to add? No everything is well. No other problems. Okay. Good.

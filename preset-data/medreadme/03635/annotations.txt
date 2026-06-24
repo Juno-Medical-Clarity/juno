@@ -1,0 +1,13 @@
+source:      plos_biology
+side:        complex
+readability: 5.85
+split:       test
+
+jargon_spans:
+  [7:8] 'medical-jargon-google-easy' -> 'NAC'
+  [15:16] 'medical-jargon-google-hard' -> 'paraquat'
+  [33:35] 'medical-jargon-google-easy' -> 'mitochondrial superoxide'
+  [43:45] 'medical-jargon-google-easy' -> 'insulin signaling'
+  [49:51] 'medical-jargon-google-easy' -> 'ubiquinone deficiency'
+  [53:55] 'medical-jargon-google-easy' -> 'hypoxic response'
+  [57:58] 'medical-jargon-google-easy' -> 'hormesis'

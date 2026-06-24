@@ -1,0 +1,5 @@
+Tardive dyskinesia (TD) is a common movement disorder in many people taking antipsychotics.
+Studying treatment of TD can be difficult, because the symptoms can change based on changes to how much or what kind of antipsychotics are used, and by the range of normal disease progression.
+Many drugs made to treat TD have been studied with different levels of success.
+Most recently, the vesicular monoamine transporter type 2 (VMAT2) inhibitors, drugs that reduce dopamine (a chemical messenger released when your brain is expecting a reward), valbenazine and deutetrabenazine, were studied in TD in large human trials, and were shown to work in this group.
+In this article, we will look at different treatments of TD, including changing the drug causing TD, VMAT2 inhibitors, other non-VMAT2-inhibiting drugs, and non-drug options.

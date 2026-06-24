@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0162  |  gem_id: gem-cochrane-simplification-validation-163  |  doi: 10.1002/14651858.CD009553.pub2
+
+The review identified only two randomised controlled trials, involving 262 patients with breast cancer. The data from these studies provide low-grade evidence for multidisciplinary rehabilitation in producing short-term gains at the levels of impairment (range of shoulder movement), psychosocial adjustment and quality of life after breast cancer treatment. None of the studies reported the longer-term functional outcomes of such care, the impact on caregivers or cost effectiveness of these programmes. Overall, the results of this review suggest that multidisciplinary rehabilitation is not harmful and may improve functional ability and quality of life in the short term. This review highlights the lack of robust trials in the field and the need for further high-quality trial-based research.

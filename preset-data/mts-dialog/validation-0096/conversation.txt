@@ -1,0 +1,12 @@
+Doctor: How has our little man being doing?
+Guest_family: Before today he has been doing well, but yesterday he threw up at night and has been very nauseous. He did not complain of stomach issues prior. He is not eating either.
+Doctor: How is his appetite?
+Guest_family: Low. He has no fever, chills, or weakness.
+Doctor: What about coughing, sore throat?
+Guest_family: No.
+Doctor: Any chest pain or trouble breathing?
+Guest_family: No.
+Doctor: Any changes in his urination, maybe in color?
+Guest_family: No.
+Doctor: Any changes in skin color?
+Guest_family: No. No rash or anything either.

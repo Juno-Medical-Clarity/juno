@@ -1,0 +1,9 @@
+source:      pnas
+side:        simple
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [0:6] 'medical-jargon-google-hard' -> 'STUB1 / CHIP E3 Ub ligase'
+  [12:14] 'medical-jargon-google-hard' -> 'inhibited proteasomes'
+  [16:17] 'medical-jargon-google-easy' -> 'aggresome'

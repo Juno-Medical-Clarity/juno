@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0617
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: None explicitly mentioned.
+- Severity: Not applicable.
+- Duration: Not applicable.
+- Associated symptoms: Not applicable.
+- Relevant medical history: Two children passed away suddenly, one at 40 years old and one at 45 years old.
+- Family history: No family history of medical problems.
+- Allergies: None mentioned.
+- Other concerns: The patient expresses that the loss of her children has been really hard on her family, but they are trying their best to get by.
+- Emotions: The patient appears to be in mourning and the topic is emotionally difficult for her.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

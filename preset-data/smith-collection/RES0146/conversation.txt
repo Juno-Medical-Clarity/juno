@@ -1,0 +1,126 @@
+# Smith Collection Transcript: RES0146
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: uh yesterday right after leaving work i started to not feel well and this morning i woke up with fever ah this like bad headache and just feeling really really sore all over
+
+Doctor: Im sorry thats doesnt sound good so all this started yesterday or i guess yesterday was just with you were not feeling too good and then just noticed all these symptoms this morning did you measure your temperature
+
+Patient: Yeah i checked it this morning and it was 385
+
+Doctor: And uh did you can you tell me about your headache
+
+Patient: Yeah so i i started to get a little bit of a headache last night so i tried some tylenol it helped relieve the pain a little bit so i can sleep then and this morning i woke up but i uh didnt have a headache at first but it came on maybe an hour after waking up and it feels like a theres a band around squeezing my head
+
+Doctor: Is it on both sides or only one side
+
+Patient: Its on both sides kind of feel that real wrapping around
+
+Doctor: And if you had to give it a number from 1 to 10 with 10 being the worst pain ever what would you say
+
+Patient: About a five
+
+Doctor: OK uhm and do you have any other symptoms such as a runny nose or a stuffy nose
+
+Patient: Yeah my nose has been been runny i started noticing noticing that a little bit yesterday too actually now that you mention it
+
+Doctor: And what was the discharge or what was the discharge like
+
+Patient: Its pretty runny in in yeah its pretty running clear
+
+Doctor: OK uhm and do you have a cough
+
+Patient: No
+
+Doctor: OK
+
+Patient: Any sore throat
+
+Doctor: No
+
+Patient: Uhm have you had any difficulties with breathing
+
+Doctor: No
+
+Patient: OK any chest pain
+
+Doctor: No
+
+Patient: OK uhm uh any i guess itchy eyes or itchy nose or any sneezing
+
+Doctor: Yeah well well my nose has been itchy and i i have been i have been sneezing
+
+Patient: Alright and have you had any diarrhea or constipation
+
+Doctor: No
+
+Patient: Any nausea or vomiting
+
+Doctor: No
+
+Patient: OK any belly pain
+
+Doctor: No
+
+Patient: OK have you been around anyone who could have been sick
+
+Doctor: Uhm maybe i there was a one of my colleagues at work was off last week i think he was sick with something
+
+Patient: Did you get tested do you know if you went to see a doctor or was he tested for covid
+
+Doctor: Uhm im not sure i just dont like well he wasnt there on thursday and friday last week and he hasnt been there been here this week and i i just heard that that he was sick
+
+Patient: OK alright uhm and have you have you had any medical conditions that youve been diagnosed with
+
+Doctor: Yeah ive been told i have high high high cholesterol and high bmi uh yeah and so i i take a statin medication for for that and yeah ive been told i have prediabetes as well so ive been trying to work on diet
+
+Patient: Are you taking any other medications
+
+Doctor: I take vitamin and a multivitamin
+
+Patient: And do you have any allergies
+
+Doctor: No
+
+Patient: OK uhm and you do you live alone or do you live with other people
+
+Doctor: Yeah i i live with my with my wife
+
+Patient: OK and since youve been feeling sick have you been maintaining social distance maintaining some distance from her
+
+Doctor: Yeah yeah we have we we have separate ah rooms that weve been able to distance for the last few days
+
+Patient: OK thats good and do you ah have you traveled anywhere recently outside the province
+
+Doctor: No travel
+
+Patient: OK and do you smoke or have you ever smoked
+
+Doctor: No i i dont
+
+Patient: And marijuana
+
+Doctor: No
+
+Patient: Any recreational drugs
+
+Doctor: No
+
+Patient: Have you ever had or do you currently consume alcohol
+
+Doctor: Yeah have a few beers on the weekend but ive been trying to cut down after i was told i have uh pre diabetes
+
+Patient: OK thats really good umm and and ok lets see do you have any family history of any heart problems or any lung issues or any cancers
+
+Doctor: My grandfather had lung cancer he smoked his whole life and yeah i know my dad had you had a heart attack when he was in his 70s
+
+Patient: OK alright well those are all the questions i had for you we will do a covid test today simply because your symptoms overlap with some of the symptoms of covid its also possible that you just have a just the common cold and that would get better over time you might have caught something from your colleague who was sick last week so its great that youve been instead of isolating yourself and staying away from your wife i would also recommend if you havent already done so to not i know that the you have symptoms started yesterday evening but just to try to work from home or take some time off of work for the next couple of days at least until you recover test results are back in the next 24 to 48 hours and then from there on follow the advice that youll be getting from public health
+
+Doctor: That sounds really good yeah thank you

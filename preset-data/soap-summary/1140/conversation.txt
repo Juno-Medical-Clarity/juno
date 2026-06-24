@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1140
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you aware of any medical problems in your family? No. Anyone with any heart disease or diabetes? No.

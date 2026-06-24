@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3463  |  gem_id: gem-cochrane-simplification-train-3464  |  doi: 10.1002/14651858.CD000215.pub4
+
+In this review of 21 relevant randomized controlled trials, most studies examined the effects of albendazole. In patients with viable lesions, there is only evidence available for adult patients; this suggests that albendazole may reduce the number of lesions. In patients with non-viable lesions, there is only evidence available for children; this suggests that seizure recurrence was lower with albendazole, which goes against the opinions of some experts. There is insufficient evidence available to assess praziquantel.

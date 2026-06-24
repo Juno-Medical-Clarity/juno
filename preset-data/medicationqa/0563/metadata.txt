@@ -1,0 +1,5 @@
+drug_focus: cyanocobalamin
+question_type: Storage and disposal
+section_title: Storage
+source_url: https://healthy.kaiserpermanente.org/health/care/consumer/health-wellness/drugs-and-natural-medicines/drug-encyclopedia/medicine-information/!ut/p/a1/fc5Bb4IwFMDxz-KB4-iDKtbdKmasMJBF4lgvC7paSZCSWiV--wFjhyWb79aXX_95iKMc8bq4lrIwpaqLqn9z7yMDtl4uHQrgsBmwNCTJihAXfIzeUIi4rNRuwO9HY5pHCyz41Bcp6v3toVHaVMJYgHi_YyuUu5gQh_Sc1jtMJOJaHIQW2r7ortI3zkOkbVtbKiUrYe_VqUv88eWozgblv2V3Fb9_OIzgKdx8g_V0QYDF_rPPkgggmI8gpcBIDDMHKPaAeRmO5nHiQDAdAWD2OhSC1IPORlm0XUQYwP0B_wwF1JzIDVfXl8OGlYxOJl95Ii-V/dl5/d5/L2dBISEvZ0FBIS9nQSEh/
+sample_id: 0563

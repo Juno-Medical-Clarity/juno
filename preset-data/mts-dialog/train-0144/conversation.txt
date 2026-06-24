@@ -1,0 +1,10 @@
+Doctor: Can you tell me more about your parents, please? How are they doing?
+Patient: Thank you for asking, they're both doing very well. They're very healthy.
+Doctor: That's great to hear. How old are they?
+Patient: My mom is fifty, and my dad is forty.
+Doctor: Wonderful, do you have any siblings?
+Patient: Yeah, I have two sisters, one is a half sister, and the other we have the same mom and dad.
+Doctor: How old are they?
+Patient: My half sister and I have the same mom, and she's thirty four. My other sister is ten.
+Doctor: Do they have any history of medical conditions that you know about?
+Patient: My half sister, um, no. My other sister has had some yeast infections.

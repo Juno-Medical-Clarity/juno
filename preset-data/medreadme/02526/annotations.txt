@@ -1,0 +1,10 @@
+source:      pnas
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-hard' -> 'molecular network'
+  [9:10] 'medical-jargon-google-hard' -> 'KMT5c'
+  [12:14] 'medical-jargon-google-hard' -> 'H4K20 methyltransferase'
+  [17:19] 'medical-jargon-google-easy' -> 'adipocyte thermogenesis'

@@ -1,0 +1,212 @@
+# Smith Collection Transcript: RES0069
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Would you mind by starting to tell me what brought you in
+
+Patient: Yeah absolutely uhm i dont know ive just been feeling a little feverish uhm and i also have a a bit of a sore throat
+
+Doctor: OK when
+
+Patient: I just came in i just came in to see whats going on cause i was worried you know with covid going on uhm going everywhere
+
+Doctor: Certainly when did the the sore throat start
+
+Patient: Last night actually
+
+Doctor: OK
+
+Patient: Yeah
+
+Doctor: And uhm have you had any uhm problems with swallowing like food or liquids
+
+Patient: No i dont think so i just had breakfast this morning and no problems there
+
+Doctor: OK uh any like changes that uhm other symptoms that youve been having with the sore throat
+
+Patient: Yeah im just feeling a little feverish
+
+Doctor: OK and when did that start
+
+Patient: This morning
+
+Doctor: OK did you take your temperature
+
+Patient: No i dont have a thermometer at home
+
+Doctor: OK and have you had any any cough
+
+Patient: No
+
+Doctor: OK how about any like red eyes or runny nose
+
+Patient: No neither of those
+
+Doctor: OK have you had a headache
+
+Patient: No
+
+Doctor: OK uh and have you had any shortness of breath
+
+Patient: I dont think so
+
+Doctor: OK and how about any loss of taste or loss of smell
+
+Patient: Yeah i dont uh yes i said i was eating breakfast this morning but it just tasted really bland
+
+Doctor: OK so maybe loss of taste so you feel like your nose is really or that youre really congested
+
+Patient: I guess yeah now that i think about it
+
+Doctor: OK uh and how has your appetite been
+
+Patient: Its alright
+
+Doctor: OK and so you havent had any cough or shortness of breath but have you noticed any wheezing
+
+Patient: No
+
+Doctor: OK and have you had any chest pain
+
+Patient: No
+
+Doctor: Have you felt as though your heartss been racing at all or or beating out of your chest
+
+Patient: No
+
+Doctor: OK have you been dizzy or lightheaded
+
+Patient: No
+
+Doctor: OK have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: Any abdominal pain
+
+Patient: No
+
+Doctor: Have you had any diarrhea or constipation
+
+Patient: Uhm im often constipated but nothing new there
+
+Doctor: OK have you had any urinary problems
+
+Patient: No
+
+Doctor: Alright and then how about any muscle aches or or body aches
+
+Patient: Sort of like i just i found it really hard to get out of bed this morning
+
+Doctor: OK how has your energy been have you been like really fatigued
+
+Patient: Yeah
+
+Doctor: OK and when did uh you said the muscle ache started this morning uhm how when did the fatigue start
+
+Patient: Id say this morning as well yesterday was just like a little tickle in my throat and i thought it would just go away you know and i woke up this morning and i just felt horrible and the sore throat was just worse and i felt feverish and tired and i felt really crappy
+
+Doctor: OK yeah and have you had any symptoms like this before
+
+Patient: Well yeah i usually get a cold once a year in the fall it does feel similar to that
+
+Doctor: OK
+
+Patient: But i still wanted to be careful and come in just in case
+
+Doctor: Yeah certainly have you had have you been diagnosed with any medical conditions before
+
+Patient: I have migraines
+
+Doctor: OK and are you taking any medications regularly
+
+Patient: No no im not its not bad i sometimes just take like advil whenever my headaches coming on
+
+Doctor: OK any allergies
+
+Patient: uh nope
+
+Doctor: OK and do you smoke cigarettes
+
+Patient: I smoke uh two or three a day
+
+Doctor: OK and have you tried to quit
+
+Patient: No
+
+Doctor: OK if at any point this is something that you wanted to talk about we we certainly could later
+
+Patient: Sure
+
+Doctor: Do you drink alcohol
+
+Patient: Uhm a glass at night with dinner
+
+Doctor: OK and do you use any other recreational drugs
+
+Patient: No no no nothing like that
+
+Doctor: OK have you in the past
+
+Patient: No
+
+Doctor: OK and have you been around anybody whos been sick recently
+
+Patient: Uhm oh my like my little granddaughter had uhm you know theyre always having a runny nose right the little ones
+
+Doctor: Mhm
+
+Patient: But no nothing nothing else ive just been at home for the most part
+
+Doctor: OK have you traveled traveled anywhere
+
+Patient: No
+
+Doctor: OK and uh does your granddaughter go to daycare or is she in school
+
+Patient: She she does go to daycare yeah
+
+Doctor: OK and has there been anybody else around that thats been sick that youre living with or you see often
+
+Patient: No thats about it
+
+Doctor: OK i i think i dont think i asked this but have you had any surgeries before
+
+Patient: I had cataract surgery done
+
+Doctor: OK and the left right eye or right eye
+
+Patient: Both actually it runs in my family we get it pretty early on
+
+Doctor: OK and are there any other conditions that run in your family like heart conditions or cancer
+
+Patient: Diabetes
+
+Doctor: Diabetes ok and who had diabetes
+
+Patient: Lets see my mom my sister my brother yeah yeah
+
+Doctor: OK and just to get to know you a little bit better as well i was wondering if you could tell me a little bit about your living situation
+
+Patient: Sure yeah i live with uh i live with my son and daughter and my grandson
+
+Doctor: OK uhm and uhm ok yeah i think thats all i wanted to ask about today was there anything else that you wanted to tell me or maybe that i forgot to ask about
+
+Patient: uh no i dont think so do you think i have covid
+
+Doctor: Its its certainly possible it will be something we test for
+
+Patient: Sure
+
+Doctor: Although the symptoms that youre experiencing with feeling or having a fever sore throat and not feeling well with the muscle aches and fatigue uhm its relatively nonspecific so as you mentioned it could be something like the common cold that youve experienced in the past so we cant rule that out either at this time but we will do some investigations including a nasal swab for covid and kind of go from there
+
+Patient: OK sounds good
+
+Doctor: All right well get that started
+
+Patient: Great

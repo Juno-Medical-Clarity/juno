@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1457
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Let's talk about your family's medical history. Hm, well both my father and my brother had colon cancer. My daughter was detected with breast cancer. Do you remember what her age was? Yeah, she was forty. I see. Anything else? Well, I have a heart condition and high blood pressure. I also had a stroke. Okay.

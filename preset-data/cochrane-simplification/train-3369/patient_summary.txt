@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3369  |  gem_id: gem-cochrane-simplification-train-3370  |  doi: 10.1002/14651858.CD008852.pub2
+
+The aim of the review was to compare reduction or withdrawal of tacrolimus or cyclosporine without substitution with another immunosuppressive agent with continuation of tacrolimus or cyclosporine. Through systematic searches of medical databases we found one ongoing randomised clinical trial investigating total withdrawal of immunosuppressive drugs but, at the time of conducting this review, no trial results on the outcome measures of interest to this review were published. Thus, we cannot reach any conclusion on beneficial or harmful effects of calcineurin inhibitor minimisation for liver transplant recipient patients.

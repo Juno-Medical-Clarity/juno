@@ -1,0 +1,8 @@
+Histone deacetylase (HDAC) enzymes regulate transcription through epigenetic modification of chromatin structure, but their specific functions in the kidney remain elusive.
+We discovered that the human kidney expresses class I HDACs.
+Kidney medulla-specific inhibition of class I HDACs in the rat during high-salt feeding results in hypertension, polyuria, hypokalemia, and nitric oxide deficiency.
+Three new inducible murine models were used to determine that HDAC1 and HDAC2 in the kidney epithelium are necessary for maintaining epithelial integrity and maintaining fluid-electrolyte balance during increased dietary sodium intake.
+Moreover, single-nucleus RNA-sequencing determined that epithelial HDAC1 and HDAC2 are necessary for expression of many sodium or water transporters and channels.
+In performing a systematic review and meta-analysis of serious adverse events associated with clinical HDAC inhibitor use, we found that HDAC inhibitors increased the odds ratio of experiencing fluid-electrolyte disorders, such as hypokalemia.
+This study provides insight on the mechanisms of potential serious adverse events with HDAC inhibitors, which may be fatal to critically ill patients.
+In conclusion, kidney tubular HDACs provide a link between the environment, such as consumption of high-salt diets, and regulation of homeostatic mechanisms to remain in fluid-electrolyte balance.

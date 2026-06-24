@@ -47,4 +47,8 @@ frontend/public/preset-data/
 # primock57 source download (large; run parser.py once to generate preset-data/ files)
 # Anchored to repo root so the generated preset-data/primock57/ output stays tracked.
 /primock57/
+
+# noteaid-readme: no local source download needed (loaded via hf:// URLs)
+# If you clone the repo locally, ignore it here:
+/noteaid-readme/
 .gstack/

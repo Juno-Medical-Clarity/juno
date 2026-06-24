@@ -1,0 +1,9 @@
+The aim of this study was to evaluate the interaction of serumor blood folate (a specific vitamin) and vitamin B12 with methylenetetrahydrofolate reductase (MTHFR- a gene) C677T genotypes, or inherited gene types for a protein involved in blood pressure, on the risk of first ischemic or brain-related stroke. Genotypes are variations of a gene. These variations are often referred to as TT, CC, or CT. Additionally, the study aimed to review the efficacy or success of folic acid treatment in prevention of first ischemic stroke.
+A total of 20,702 hypertensive (high blood pressure) adults were randomly placed into one of two treatment groups: daily enalapril (common blood pressure medication) 10 mg and folic acid 0.8 mg or enalapril 10 mg alone.
+Participants were followed up every 3 months.
+Average values of folate and B12 concentrations before treatment were 8.1 ng/mL and 280.2 pmol/L, respectively.
+Over an average of 4.5 years, participants not receiving folic acid with baseline (starting) serum or blood B12 or serum folate above the median (average) had a significantly lower risk of first ischemic stroke. This decreased risk was found especially in those with MTHFR 677 CC genotype (wild-type or normal).
+Folic acid treatment significantly reduced the risk of first ischemic stroke in participants with both folate and B12 below the median, particularly in patients with CC genotype.
+However, participants with TT genotype responded better with both folate and B12 levels above the median of participants.
+The study concluded the risk of first ischemic stroke was significantly higher in hypertensive patients with low levels of both folate and B12.
+Folic acid treatment helped the most in patients with low folate and B12 with the CC genotype, and with high folate and B12 with the TT genotype.

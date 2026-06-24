@@ -1,0 +1,8 @@
+COVID-19 may cause pneumonia, acute respiratory distress syndrome, cardiovascular alterations, and multiple organ failure, which have been ascribed to a cytokine storm, a systemic inflammatory response, and an attack by the immune system.
+Moreover, an oxidative stress imbalance has been demonstrated to occur in COVID-19 patients.
+N- Acetyl-L-cysteine (NAC) is a precursor of reduced glutathione (GSH).
+Due to its tolerability, this pleiotropic drug has been proposed not only as a mucolytic agent, but also as a preventive/therapeutic agent in a variety of disorders involving GSH depletion and oxidative stress.
+At very high doses, NAC is also used as an antidote against paracetamol intoxication.
+Thiols block the angiotensin-converting enzyme 2 thereby hampering penetration of SARS-CoV-2 into cells.
+Based on a broad range of antioxidant and anti-inflammatory mechanisms, which are herein reviewed, the oral administration of NAC is likely to attenuate the risk of developing COVID-19, as it was previously demonstrated for influenza and influenza-like illnesses.
+Moreover, high-dose intravenous NAC may be expected to play an adjuvant role in the treatment of severe COVID-19 cases and in the control of its lethal complications, also including pulmonary and cardiovascular adverse events.

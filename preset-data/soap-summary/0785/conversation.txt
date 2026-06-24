@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0785
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+last menstrual period 3 weeks ago. Heavy menses due to fibroids.

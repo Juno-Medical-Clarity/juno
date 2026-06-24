@@ -1,0 +1,4 @@
+Doctor: And when did you had your last tetanus shot?
+Patient: Um, I don't remember correctly, but it should be in my reports. I did have one sometime back, just don't remember when exactly.
+Doctor: Ah, no problem. I see it here in your reports and it's up to date. So that's good.
+Patient: Cool.

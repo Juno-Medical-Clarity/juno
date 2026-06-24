@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0653
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has never visited any hospital for any kind of surgery.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment data mentioned]
+
+Plan:
+- [No plan mentioned]

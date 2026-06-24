@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0863
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is allergic to multiple medications: Lamisil, Equagesic, Bactrim, Dilatrate, and cyclobenzaprine.
+- Concern about the number of allergies and their impact on the treatment plan.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- Noted the patient's allergies to be careful while making the treatment plan.

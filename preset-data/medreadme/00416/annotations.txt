@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'sedative'
+  [6:7] 'general-complex' -> 'ameliorate'
+  [12:14] 'medical-jargon-google-easy' -> 'opiate withdrawal'
+  [16:19] 'medical-jargon-google-easy' -> 'maternal opiate use'
+  [22:23] 'medical-jargon-google-easy' -> 'phenobarbitone'

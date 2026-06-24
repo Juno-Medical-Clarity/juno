@@ -1,0 +1,5 @@
+pmid:        8792380
+question:    62
+adaptation:  adaptation2
+title:       Adverse central nervous system effects of older antihistamines in children
+sentences:   11

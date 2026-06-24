@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3176  |  gem_id: gem-cochrane-simplification-train-3177  |  doi: 10.1002/14651858.CD006690.pub2
+
+This review examined 16 randomised controlled trials of 15 different Chinese herbal medicines. The trials lasted from four weeks to two years (average nine months) and involved altogether 1391 participants. Death from any cause, diabetic complications and economic outcomes were not investigated. No serious adverse events were reported. The available evidence suggests that Chinese herbal medicines are able to lower and normalise high blood glucose. Due to considerable distortions (bias) in the trials, further high-quality and rigorously evaluated studies are required before any conclusions can confidently be reached about the effects of Chinese herbal medicines for the treatment of impaired glucose tolerance and the delay of diabetes onset.

@@ -1,0 +1,14 @@
+Doctor: How many other children do you have?
+Guest_family: My husband and I have three children, your patient today, and another boy, and girl.
+Doctor: How is everyone else doing?
+Guest_family: They're all doing very well, thank you for asking.
+Doctor: Do you live here in Easton?
+Guest_family: Yes, born and raised.
+Doctor: Good, do you have any pets?
+Guest_family: We have four dogs, three cats, and three mules.
+Doctor: What, no deer?
+Guest_family: No, no deer, at least not anymore.
+Doctor: What grade are you in, young man?
+Patient: I'm in the second grade, doctor.
+Doctor: Good, how do you like P E? Are you able to play no problem?
+Patient: Yes, I love P E. I don't have any problems there.

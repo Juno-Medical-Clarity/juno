@@ -1,0 +1,5 @@
+pmid:        26768579
+question:    56
+adaptation:  adaptation2
+title:       The early history of Pallister-Hall syndrome-Buried treasure of a sort
+sentences:   6

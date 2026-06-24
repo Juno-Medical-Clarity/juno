@@ -1,0 +1,20 @@
+Background: Dietary changes are routinely recommended in people with chronic kidney disease (CKD) on the basis of randomised evidence in the general population and non-randomised studies in CKD that suggest certain healthy eating patterns may prevent cardiovascular events and lower mortality.
+People who have kidney disease have prioritised dietary modifications as an important treatment uncertainty.
+Objectives: This review evaluated the benefits and harms of dietary interventions among adults with CKD including people with end-stage kidney disease (ESKD) treated with dialysis or kidney transplantation.
+Main results: We included 17 studies involving 1639 people with CKD.
+Three studies enrolled 341 people treated with dialysis, four studies enrolled 168 kidney transplant recipients, and 10 studies enrolled 1130 people with CKD stages 1 to 5.
+Eleven studies (900 people) evaluated dietary counselling with or without lifestyle advice and six evaluated dietary patterns (739 people), including one study (191 people) of a carbohydrate-restricted low-iron, polyphenol enriched diet, two studies (181 people) of increased fruit and vegetable intake, two studies (355 people) of a Mediterranean diet and one study (12 people) of a high protein/low carbohydrate diet.
+Risks of bias in the included studies were generally high or unclear, lowering confidence in the results.
+Participants were followed up for a median of 12 months (range 1 to 46.8 months).
+Studies were not designed to examine all-cause mortality or cardiovascular events.
+In very-low quality evidence, dietary interventions had uncertain effects on all-cause mortality or ESKD.
+In absolute terms, dietary interventions may prevent one person in every 3000 treated for one year avoiding ESKD, although the certainty in this effect was very low.
+Across all 17 studies, outcome data for cardiovascular events were sparse.
+Dietary interventions in low quality evidence were associated with a higher health-related quality of life (2 studies, 119 people: MD in SF-36 score 11.46, 95% CI 7.73 to 15.18; I2 = 0%).
+Adverse events were generally not reported.
+Dietary interventions lowered systolic blood pressure (3 studies, 167 people: MD -9.26 mm Hg, 95% CI -13.48 to -5.04; I2 = 80%) and diastolic blood pressure (2 studies, 95 people: MD -8.95, 95% CI -10.69 to -7.21; I2 = 0%) compared to a control diet.
+Dietary interventions were associated with a higher estimated glomerular filtration rate (eGFR) (5 studies, 219 people: SMD 1.08; 95% CI 0.26 to 1.97; I2 = 88%) and serum albumin levels (6 studies, 541 people: MD 0.16 g/dL, 95% CI 0.07 to 0.24; I2 = 26%).
+A Mediterranean diet lowered serum LDL cholesterol levels (1 study, 40 people: MD -1.00 mmol/L, 95% CI -1.56 to -0.44).
+Authors' conclusions: Dietary interventions have uncertain effects on mortality, cardiovascular events and ESKD among people with CKD as these outcomes were rarely measured or reported.
+Dietary interventions may increase health-related quality of life, eGFR, and serum albumin, and lower blood pressure and serum cholesterol levels.
+Based on stakeholder prioritisation of dietary research in the setting of CKD and preliminary evidence of beneficial effects on risks factors for clinical outcomes, large-scale pragmatic RCTs to test the effects of dietary interventions on patient outcomes are required.

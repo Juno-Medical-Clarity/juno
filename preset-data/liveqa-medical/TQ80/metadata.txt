@@ -1,0 +1,14 @@
+qid: TQ80
+source_file: 1-118275165.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What medication should a 65 year old male use for leg pain?
+nlm_summary: What medication should a 65 year old male use for leg pain?
+
+focus_entities:
+  [F1] (Problem) leg pain
+question_types:
+  [T1] TREATMENT
+keywords:
+  [K1] (PersonPopulation) age 65

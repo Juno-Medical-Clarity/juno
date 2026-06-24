@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Temperate bacteriophages'
+  [28:29] 'medical-jargon-google-easy' -> 'lysogeny'

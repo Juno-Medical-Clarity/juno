@@ -1,0 +1,1 @@
+We used The Cancer Genome Atlas breast cancer patient data to identify ANKLE1 and ZNF404 as the target genes of candidate TF binding site SNPs in the 19p13. 11 and 19q13. 31 GWAS-identified loci.

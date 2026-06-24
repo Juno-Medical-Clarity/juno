@@ -1,0 +1,27 @@
+# SOAP Notes — Sample 0122
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Fever, dry cough, and headache for the past 4 days
+- Fever: feels hot, chills (no measured temperature)
+- Cough: dry, no blood or sputum, worsening over 4 days, no alleviating or worsening factors, cough suppressants ineffective
+- Headache: started 4 days ago, front part of head, throbbing, both sides, 7/10 severity, constant, slightly worsening, Tylenol provides some relief
+- No confusion, vision/hearing changes, eye redness, loss of taste/smell, runny/stuffy nose, sore throat, chest pain, breathing difficulties, palpitations, belly pain, diarrhoea, body aches/pains, rashes, or finger/toe discoloration
+
+Past Medical History:
+- PMHx: none
+- Medications: multivitamins
+- FHx: no lung/heart problems, cancers
+- SocHx: lives with husband and daughter, occasional alcohol (glass of wine once a week), ex-smoker (half a pack/day from age 20-25), no marijuana or recreational drugs
+- No recent travel or contact with sick individuals, essential outings only, follows mask and social distancing guidelines
+
+Objective:
+- Vitals: not measured during visit
+
+Assessment:
+- Possible infection, including COVID-19
+
+Plan:
+- Investigations: COVID-19 swab
+- Treatment: continue Tylenol, monitor fever
+- Other: quarantine for 14 days, avoid contact with husband and daughter, return if symptoms worsen or do not improve

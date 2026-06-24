@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0879
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you currently smoke? Or did you smoke in the past? Quit in nineteen seventy two. Great to hear. Are you working right now? Yeah, I work at a nursing home. Does your job allow you to take time for yourself? Yeah, my job is very supportive. I've actually been trying to lose weight. So far, I've lost a good amount since starting a new diet several months back.

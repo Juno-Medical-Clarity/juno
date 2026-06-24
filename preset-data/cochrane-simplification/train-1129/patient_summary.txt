@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1129  |  gem_id: gem-cochrane-simplification-train-1130  |  doi: 10.1002/14651858.CD008240.pub2
+
+We included 7 trials, with a total of 249 participants, covering 6 treatments in this review. Topical clobetasol propionate and mometasone furoate were effective in treating genital lichen sclerosus. There was no substantial difference in the efficacy of relieving symptoms (e.g. itching and pain) between pimecrolimus cream and clobetasol propionate, but the former was less effective in improving gross appearance. More research is needed for a number of reasons: to decide the strength of steroids that should be used, as well as the frequency and length of application to the skin which gives the best results; to examine other skin treatments; to assess the long-term benefits of topical treatments with regard to relieving symptoms and reducing the risk of developing genital cancers; and to examine the benefits of treatments on the quality of the sex lives of people with this condition.

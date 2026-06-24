@@ -1,0 +1,3 @@
+Guest_clinician: How is the patient's condition now?
+Doctor: Well, he has improved clinically but would require acute care.
+Guest_clinician: Oh, I see.

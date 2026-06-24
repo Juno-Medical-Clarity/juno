@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.15
+split:       dev
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'chronic'
+  [17:19] 'medical-jargon-google-easy' -> 'Alexander technique'
+  [26:28] 'medical-jargon-google-easy' -> 'Alexander technique'

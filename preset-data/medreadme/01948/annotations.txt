@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [2:3] 'medical-name-entity' -> 'NHS'
+  [9:10] 'general-complex' -> 'confounding'
+  [14:16] 'general-complex' -> 'causal inference'

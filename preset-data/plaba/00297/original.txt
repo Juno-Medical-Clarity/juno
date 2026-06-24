@@ -1,0 +1,10 @@
+Phenylketonuria (PKU), caused by variants in the phenylalanine hydroxylase (PAH) gene, is the most common autosomal-recessive Mendelian phenotype of amino acid metabolism.
+We estimated that globally 0.45 million individuals have PKU, with global prevalence 1:23,930 live births (range 1:4,500 [Italy]-1:125,000 [Japan]).
+Comparing genotypes and metabolic phenotypes from 16,092 affected subjects revealed differences in disease severity in 51 countries from 17 world regions, with the global phenotype distribution of 62% classic PKU, 22% mild PKU, and 16% mild hyperphenylalaninemia.
+A gradient in genotype and phenotype distribution exists across Europe, from classic PKU in the east to mild PKU in the southwest and mild hyperphenylalaninemia in the south.
+The c.1241A>G (p.Tyr414 Cys)-associated genotype can be traced from Northern to Western Europe, from Sweden via Norway, to Denmark, to the Netherlands.
+The frequency of classic PKU increases from Europe (56%) via Middle East (71%) to Australia (80%).
+Of 758 PAH variants, c.1222C> T (p.Arg408Trp) (22.2%), c.1066-11G>A (IVS10-11G>A) (6.4%), and c.782G> A (p.Arg261Gln) (5.5%) were most common and responsible for two prevalent genotypes: p.[Arg408Trp];[Arg408 Trp] (11.4%) and c.[1066-11G>A];[1066-11G>A] (2.6%).
+Most genotypes (73%) were compound heterozygous, 27% were homozygous, and 55% of 3,659 different genotypes occurred in only a single individual.
+PAH variants were scored using an allelic phenotype value and correlated with pre-treatment blood phenylalanine concentrations (n = 6,115) and tetrahydrobiopterin loading test results (n = 4,381), enabling prediction of both a genotype-based phenotype (88%) and tetrahydrobiopterin responsiveness (83%).
+This study shows that large genotype databases enable accurate phenotype prediction, allowing appropriate targeting of therapies to optimize clinical outcome.

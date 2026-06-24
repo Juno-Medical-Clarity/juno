@@ -1,0 +1,8 @@
+Doctor: Okay, so let's go over your medications. I'd like you to take these to help your muscle spasms.
+Patient: Sounds good.
+Doctor: I've prescribed eight hundred milligrams of Ibuprofen to be taken every eight hours as needed along with Tylenol number three every six hours as needed.
+Patient: What does the number three stand for?
+Doctor: Tylenol number three is combined with Codeine.
+Patient: Okay, I see.
+Doctor: And finally, I'm prescribing Methocarbamol seven fifty milligrams which needs to be taken four times a day for maximum relief. Do you have any questions for me?
+Patient: No, I think you answered them all.

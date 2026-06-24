@@ -1,0 +1,23 @@
+Doctor: Good morning, Mrs. Smith. How are you feeling today?
+Patient: Good morning, doctor. I'm feeling okay, thank you.
+Doctor: That's great to hear. Can you tell me what brings you to the hospital today?
+Patient: Yes, I have been experiencing some bright red blood per rectum and I'm a bit worried about it.
+Doctor: I understand. Can you describe the bleeding for me?
+Patient: Yes, it was one large episode of bright red blood per rectum and it was accompanied by blood clots.
+Doctor: Okay, I see. And have you had any other symptoms like abdominal pain, nausea, vomiting, diarrhea, or melena?
+Patient: No, I haven't experienced any of those symptoms.
+Doctor: Alright. Can you tell me about your medical history?
+Patient: Sure. I have hypertension, hyperlipidemia, diabetes mellitus type 2, and coronary artery disease with three prior myocardial infarctions. I have also had recurrent cerebrovascular accidents and I'm on anticoagulation with warfarin. I also have gastroesophageal reflux disease, asthma, and I was diagnosed with endometrial cancer after radiation therapy.
+Doctor: Okay, thank you for letting me know. Can you tell me about your history with endometrial cancer?
+Patient: Sure. I was diagnosed with grade 1 endometrial adenoma about 15 months ago, but I was not considered a good surgical candidate due to my multiple comorbidities. Vaginal hysterectomy was considered but due to my long and narrow vagina, this option was deferred initially. My only treatment option was radiation therapy and brachytherapy. I eventually underwent total abdominal hysterectomy with bilateral salpingo-oopherectomy due to continued pelvic pain.
+Doctor: I see. And have you had any prior history of gastrointestinal bleeding?
+Patient: No, I haven't had any prior history of gastrointestinal bleeding.
+Doctor: Alright. Your physical examination was significant for mild left-sided abdominal tenderness, but was otherwise unremarkable. Rectal examination was notable for nonbleeding hemorrhoids and no visible blood. Your blood work showed white blood cells of 14.3k/uL and hemoglobin of 9.6 g/dL, which is similar to your baseline. Creatinine was slightly elevated to 1.2 and blood urea nitrogen was elevated to 39. International normalized ratio was 2.0.
+Patient: Hmm, okay.
+Doctor: Due to the large volume of hematochezia and presence of anemia, you were admitted to the hospital and underwent a colonoscopy, which revealed a large, fungating, friable, and ulcerated nonob.
+Patient: What does that mean, doctor?
+Doctor: It means that there is a large growth in your colon that is causing the bleeding. We will need to monitor it closely and consider further treatment options.
+Patient: Okay, I understand. What do I need to do next?
+Doctor: For now, we will keep you in the hospital for observation and further testing. I will also recommend a follow-up colonoscopy in six months to monitor the growth. In the meantime, it's important to maintain a healthy diet and exercise regularly to keep your overall health in check.
+Patient: Alright, I will do that. Thank you, doctor.
+Doctor: You're welcome. If you have any questions or concerns, don't hesitate to ask.

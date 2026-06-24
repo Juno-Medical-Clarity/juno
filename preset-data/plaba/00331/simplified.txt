@@ -1,0 +1,13 @@
+Patients recovering from COVID-19 (a viral respiratory disease) oftentimes continue to test positive for (or have) the virus. This can make "return to work" plans difficult.
+The goal of this study is to evaluate COVID-19's ability to spread by determining the amount of the virus within an organism, known as the viral load, over time.
+Health care personnel at Cleveland Clinic diagnosed with COVID-19, who recovered without needing hospitalization, were identified.
+The viral load within the personnel was calculated.
+The link between the viral load within the patient and the first day of symptoms was evaluated.
+The viral load per day since the beginning of symptom onset within the patient were predicted using statistical models.
+Over six weeks, 230 health care personnel had 528 tests performed.
+The viral load within patients decreased within a few days of the beginning of virus-related symptoms.
+The viral load within the patient was significantly linked to time since onset of symptoms.
+The majority of the participants had peak viral load within the first 7 to 10 days.
+Findings were similar when other statistical tests were run.
+The authors concluded that among patients with no mild to moderate COVID-19, viral loads peaked by 2 or 3 days from symptom onset and decreased rapidly thereafter.
+The largest amount of viral load was on average within 10 days of symptom onset.

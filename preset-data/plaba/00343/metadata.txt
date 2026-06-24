@@ -1,0 +1,5 @@
+pmid:        33444297
+question:    27
+adaptation:  adaptation1
+title:       Allergic Reactions Including Anaphylaxis After Receipt of the First Dose of Pfizer-BioNTech COVID-19 Vaccine - United States, December 14-23, 2020
+sentences:   15

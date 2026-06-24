@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2797  |  gem_id: gem-cochrane-simplification-train-2798  |  doi: 10.1002/14651858.CD012494.pub2
+
+We found one trial from the UK, which included 15 participants with delirium. The average age of the participants was 82.5 years; eight participants were male and seven were female. Seven participants also had a history of dementia. This trial compared rivastigmine (a type of cholinesterase inhibitor used in the treatment of dementia) with an inactive treatment (placebo). The trial did not show any difference in effect between those participants given rivastigmine and those given placebo. The study was conducted and reported appropriately, but the small number of participants limits any conclusions that could be made about rivastigmine as a treatment for delirium.

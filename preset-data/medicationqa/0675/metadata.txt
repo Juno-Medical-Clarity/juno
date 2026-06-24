@@ -1,0 +1,5 @@
+drug_focus: chlorpheniramine
+question_type: Action/time
+section_title: Clinical pharmacokinetics of chlorpheniramine.
+source_url: https://www.ncbi.nlm.nih.gov/pubmed/6383755
+sample_id: 0675

@@ -1,0 +1,8 @@
+Guidelines for patient care recommend use of fracture risk scores, or the likelihood of having a major bone break, for checks and drug treatment decisions.
+The timing of treatment-level or screening-level fracture risk scores based on guidelines has not been estimated in women who have gone through menopause (a point in time 12 months after the last period).
+We measured new occurences of teratment-level and testing-level fracture risk scores in postmenopausal women aged 50 years and older, before receiving drug treatment and the first hip or clinical vertebral fracture.
+In 54,280 women who had gone through menopause aged 50 to 64 years without a bone mineral density test, we could not estimate the time for 10% to need treatment based on a common osteoporosis questionnaire due to too few scores suggesting treatment.
+In 6096 women who had scores from a common osteoporosis questionnaire, the estimated time to need treatment was 7.6 years and 5.1 years for those aged 65 to 69 and aged 75 to 79, respectively.
+Of 17,967 women aged 50 to 64 with an initial screening-level FRAX (or fracture-risk score), 100 (0.6%) broke their hip or spine by age 65 years.
+We conclude that women who have gone through menopause with questionnaire scores that did not suggest treatment were unlikely to have a score suggesting treatment between ages 50 and 64 years.
+After age 65, questionnaire scores suggesting treatment, osteoporosis, and serious bone breaks due to osteoporosis suggest doing more questionnaires and bone mineral density testing more often.

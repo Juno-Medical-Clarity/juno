@@ -1,0 +1,8 @@
+Doctor: Who lives with you, miss?
+Patient: I live with my boyfriend.
+Doctor: Do you smoke cigarettes?
+Patient: Yes, I do.
+Doctor: How about drugs?
+Patient: Sometimes, but I don't want to talk about it.
+Doctor: Okay. Anything else you want to talk about?
+Patient: Pardon?

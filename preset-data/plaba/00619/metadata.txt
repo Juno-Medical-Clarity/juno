@@ -1,0 +1,5 @@
+pmid:        34711245
+question:    47
+adaptation:  adaptation1
+title:       Prevalence of low alkaline phosphatase activity in laboratory assessment: Is hypophosphatasia an underdiagnosed disease?
+sentences:   12

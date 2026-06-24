@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2927  |  gem_id: gem-cochrane-simplification-train-2928  |  doi: 10.1002/14651858.CD003279.pub3
+
+Four small randomised controlled trials involving 54 participants in total showed that 3,4-diaminopyridine improves muscle strength. This was determined by measuring the compound muscle action potential (CMAP) which is a test that records the amount of electrical activity generated in a muscle when it is stimulated by its nerve. Although the number of trials is relatively small, the quality of evidence from these trials is moderate to high, which supports the findings of this review. The changes are measured over days only. A single trial involving nine participants showed that intravenous immunoglobulin also improved muscle strength up to 8 weeks from treatment. Other possible treatments such as plasma exchange, steroids and immunosuppressive agents have not been tested in randomised controlled trials. Further trials of these treatments are needed.

@@ -1,0 +1,4 @@
+Doctor: Have you ever had surgery?
+Patient: No, not that I can remember.
+Doctor: No gallbladder or appendix removal, c sections, or joint replacements?
+Patient: Nope, never had anything done.

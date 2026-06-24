@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1018
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No changes in symptoms or health status since the last visit on April 8, 2005.
+- Patient reports that "everything is the same really."
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

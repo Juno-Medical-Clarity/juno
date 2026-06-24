@@ -1,0 +1,5 @@
+drug_focus: lidocaine
+question_type: Storage and disposal
+section_title: At a goverment stockpile, drugs don't expire as fast
+source_url: https://www.npr.org/sections/health-shots/2017/07/18/537257884/that-drug-expiration-date-may-be-more-myth-than-fact
+sample_id: 0602

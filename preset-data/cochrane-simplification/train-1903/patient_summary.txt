@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1903  |  gem_id: gem-cochrane-simplification-train-1904  |  doi: 10.1002/14651858.CD000248.pub2
+
+In patients with an irregular heart rhythm (atrial fibrillation), anticoagulant drugs, such as warfarin, prevent such clots forming and prevent stroke. However, anticoagulant drugs may also cause bleeding in the brain and this harmful effect could outweigh any benefits in patients with a normal heart rhythm. This review identified 11 trials, involving 2487 participants who had had a stroke (and also had a normal heart rhythm), of anticoagulants to prevent further strokes. There was good evidence that anticoagulants could cause serious bleeding, and there was no evidence that, in such patients, anticoagulants were of benefit in the prevention of further strokes. Other trials have shown that, in a person with a normal heart rhythm who has had an ischaemic stroke, antiplatelet drugs such as aspirin are a safe and effective way to reduce the risk of further strokes and heart attacks.

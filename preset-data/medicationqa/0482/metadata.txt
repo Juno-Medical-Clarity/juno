@@ -1,0 +1,5 @@
+drug_focus: gemfibrozil; lovastatin
+question_type: Interaction
+section_title: WARNINGS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10a557fe-6620-4b15-862a-d3ff5dece612
+sample_id: 0482

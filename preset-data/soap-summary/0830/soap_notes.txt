@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0830
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is experiencing jaw pain.
+- Concerns about potential angina related to heart problems.
+- Relevant medical history includes high cholesterol and hypothyroidism.
+- Patient is seeking clarification on the relationship between jaw pain and heart problems.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- Rule out angina related heart problems in relation to jaw pain.
+
+Plan:
+- Continue to monitor high cholesterol and hypothyroidism.

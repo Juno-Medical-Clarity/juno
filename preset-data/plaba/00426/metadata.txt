@@ -1,0 +1,5 @@
+pmid:        32149389
+question:    33
+adaptation:  adaptation1
+title:       Cetirizine Reduces Gabapentin Plasma Concentrations and Effect: Role of Renal Drug Transporters for Organic Cations
+sentences:   13

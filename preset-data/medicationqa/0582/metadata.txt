@@ -1,0 +1,5 @@
+drug_focus: ultibro
+question_type: Usage
+section_title: How to take it
+source_url: https://www.healthdirect.gov.au/medicines/brand/amt,672621000168107/ultibro-breezhaler-110-50
+sample_id: 0582

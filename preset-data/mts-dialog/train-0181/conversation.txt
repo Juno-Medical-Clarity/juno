@@ -1,0 +1,6 @@
+Doctor: You have type two Diabetes?
+Patient: Yes.
+Doctor: And High Cholesterol?
+Patient: Yes.
+Doctor: Your diabetes is poorly controlled.
+Patient: I will keep an eye on it.

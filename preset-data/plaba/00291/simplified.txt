@@ -1,0 +1,6 @@
+Checks for conditions that affect newborns make finding individuals with phenylketonuria (PKU), a disorder inherited from both parents in which the body cannot properly turn a substance (phenylalanine) into energy, easy and effective.
+A recent drug treatment option brought fast development of a lab method that checks for certain genes, proteins, or other molecules that may be a sign of a disease.
+However, genetic alternations that cause PKU do not equally reduce protein activity.
+A range of over 850 genetic alterations causes elevated phenylalanine blood levels from very mild with no treatment to severe PKU, which needs immediate treatment.
+Databases of physical gene locations and alterations carried in a gene allow effective classification and treatment of patients.
+The lab method that checks for certain genes, proteins, or other molecules determines a patient's genetic alterations in a few days, especially if each lab comes up with a test to look for alterations in more than one gene for the most common alterations in a group of people.

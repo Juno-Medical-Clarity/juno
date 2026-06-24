@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1302
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Tell me about your past medical history. Is there anything that I should be aware of? No, I don't think so. Any known allergies? No. Have you ever been diagnosed with diabetes or high blood pressure? Oh, last year I did have some incidents of high blood pressure, but I didn't take any medications for it. Have you seen any variation in your weight? How do you know? It's been up. About fourteen pounds since last year.

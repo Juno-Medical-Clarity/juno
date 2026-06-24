@@ -1,0 +1,5 @@
+pmid:        33224987
+question:    30
+adaptation:  adaptation1
+title:       Temporal Course of SARS-CoV-2 Antibody Positivity in Patients with COVID-19 following the First Clinical Presentation
+sentences:   16

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0158  |  gem_id: gem-cochrane-simplification-train-159  |  doi: 10.1002/14651858.CD000174.pub2
+
+This review found evidence that giving all preterm infants (especially very preterm infants) indomethacin on the first day after birth reduced their risk of developing a PDA and the complications associated with PDA (including brain damage due to bleeding into the brain). However, despite these short term effects, the trials found evidence that indomethacin does not increase survival or reduce disability in the longer term.

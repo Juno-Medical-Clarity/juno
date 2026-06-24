@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        simple
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [11:12] 'abbr-medical' -> 'MV'
+  [16:18] 'medical-jargon-google-easy' -> 'extracellular signals'
+  [19:21] 'medical-jargon-google-easy' -> 'T cells'
+  [24:28] 'medical-jargon-google-easy' -> 'reorganisation of their cytoskeleton'
+  [34:38] 'medical-jargon-google-easy' -> 'cell - cell communication'

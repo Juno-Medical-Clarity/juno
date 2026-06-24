@@ -1,0 +1,9 @@
+We explored the terms used to refer to the mental and tiredness related side effects and their frequency in clinical trials of anti-seizure or anti-epileptic drugs (AEDs).
+We took data from publicly available government documents and from public literature.
+Target drug doses were calculated as drug amounts and divided into low, average, and high.
+We calculated the chances of developing side effects for each drug amount and if there was a link between the amount of dose and the bodily response.
+We found that mental terms used across trials varied. Data on drug stoppage rates were limited.
+Dummy treatment rates for mental side effects ranged from 0 to 10.6%. The same rates for fatigue ranged from 2.5 to 37.7%.
+With the inconsistent dummy treatment rates and terminology in mind, the majority of AEDs showed a link between dose amount and bodily response. Except for the drugs brivaracetam and zonisamide, they also showed increased chance of mental side effects at high doses. Except for the drugs tiagabine, topiramate, and zonisamide, they also showed increased chance of fatigue side effects at high doses.
+Due to their health-related relevance and impact on life, new trials should make data about the amount and stoppage rates of these side effects publicly available.
+Given the clear link between dose amount and bodily response, physicians should consider lower drug amount to improve tolerability.

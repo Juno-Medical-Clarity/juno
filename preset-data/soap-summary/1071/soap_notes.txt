@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1071
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Bellyache, episodes of stabbing pain, nausea, vomiting
+- Severity: Dull ache, stabbing pain lasting for about a minute
+- Duration: Symptoms started approximately six months ago; worsened two months ago
+- Associated Symptoms: Occasional nausea, vomiting, loss of appetite, loose bowel movements
+- Relevant Medical History: Treated for H. pylori infection with triple drug therapy and omeprazole; did not improve pain
+- Family History: Not mentioned
+- Allergies: Not mentioned
+- Other Concerns: Lost twenty pounds since symptoms began; admitted for poor appetite; no blood in stools; no fever; no effect of position change on pain
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment or diagnosis provided.
+
+Plan:
+- No plan provided.

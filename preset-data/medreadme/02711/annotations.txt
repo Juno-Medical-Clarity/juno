@@ -1,0 +1,11 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'mastoiditis'
+  [7:8] 'medical-jargon-google-easy' -> 'empyema'
+  [9:10] 'medical-jargon-google-easy' -> 'meningitis'
+  [11:13] 'medical-jargon-google-easy' -> 'intracranial abscess'
+  [14:16] 'medical-jargon-google-easy' -> 'Lemierre syndrome'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0441  |  gem_id: gem-cochrane-simplification-train-442  |  doi: 10.1002/14651858.CD009027.pub3
+
+Four trials with a total of 466 participants were reviewed, focusing on the comparison of 'short duration' and 'long duration' of AEDs drugs in people with a single cerebral lesion. These trials compared various durations of AED therapy: six to 12 months as short duration and 12 to 24 months as long-duration therapy. No statistically significant benefit of one duration of AED over the other (six, 12 or 24 months) could be demonstrated. In people with calcified cysts, longer duration of therapy may be preferable. All four included trials, enrolled people with a single brain lesion. The findings of our review cannot be extrapolated to people with multiple cysts or with cysts in unusual parts of the brain. The evidence is current to July 2019.

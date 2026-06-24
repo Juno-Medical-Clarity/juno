@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1437
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain, cough
+- Severity: Severe ("never been in so much pain")
+- Duration: 71 years (implying long-term issues), recent worsening of symptoms
+- Associated symptoms: Coughing ("coughing up a storm"), enlarged thyroid
+- Relevant medical history: Thyroid issues
+- Emotions/Concerns: Patient expresses distress about current pain and symptoms, urgency for surgery ("When is the earliest I can get this done?")
+- Other concerns: Patient indicates they have signed paperwork for surgery and is seeking to expedite the process
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- Schedule surgery in the next few days. 
+- Review risks and benefits of the surgery with the patient.

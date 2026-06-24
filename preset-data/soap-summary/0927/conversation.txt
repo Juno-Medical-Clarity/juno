@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0927
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+prior to that had smoked one pack per day for 44 years. Denies any alcohol use. Denies any IV drug use.

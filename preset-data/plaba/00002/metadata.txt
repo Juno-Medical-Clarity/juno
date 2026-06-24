@@ -1,0 +1,5 @@
+pmid:        29763070
+question:    1
+adaptation:  adaptation2
+title:       Muscle Cramps
+sentences:   7

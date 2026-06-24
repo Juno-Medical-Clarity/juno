@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0342  |  gem_id: gem-cochrane-simplification-validation-343  |  doi: 10.1002/14651858.CD006851.pub2
+
+However, trials that might address this issue have not been done and there is therefore some uncertainty about their usefulness. Since patients can experience side-effects when taking these drugs, the risks of these have to be balanced with the unknown prospect of benefit when considering whether to use them in Ramsay Hunt syndrome.

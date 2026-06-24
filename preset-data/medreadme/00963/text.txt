@@ -1,0 +1,1 @@
+CG energy landscapes computed from replica exchange simulations of the folding of Trpzip, Trp-cage and adenylate kinase resemble those of other reduced representations; non-native structures are observed with energies similar to those of the native state.

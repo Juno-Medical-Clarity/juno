@@ -1,0 +1,9 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [13:15] 'medical-jargon-google-easy' -> 'diabetes mellitus'
+  [26:29] 'abbr-medical' -> 'HeLP - Diabetes'
+  [34:36] 'medical-jargon-google-easy' -> 'diabetes mellitus'

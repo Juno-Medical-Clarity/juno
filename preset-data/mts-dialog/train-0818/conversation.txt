@@ -1,0 +1,47 @@
+Doctor: Hello, miss X Y Z. Dr. X and I will go over your report with you to make sure everything is correct. Then, I will ask you a few questions.
+Patient: Sounds good to me.
+Doctor_2: Hi, ma'am. Could you confirm your age for me, please?
+Patient: I'm seventy six years old. I'm also a resident of A S D F if that matters.
+Doctor_2: Thank you, ma'am.
+Doctor: Doctor A B  C requested for you to see us, correct?
+Patient: That's correct.
+Doctor: Perfect. Doctor X, could you go over her previous diagnoses?
+Doctor_2: She is diagnosed with hyperlipidemia, hypertension, and atherosclerotic cerebrovascular disease. Is this all correct, ma'am?
+Patient: Sounds about right.
+Doctor: I see she underwent a procedure. What was it, Doctor X?
+Doctor_2: She underwent a decompression for L three and L four. Did Doctor Stanley Gertzbein perform this procedure for your back?
+Patient: He did. He also did surgery on my lower legs.
+Doctor_2: Thank you for confirming.
+Doctor: I see after the surgery, you had some pain in your right L four distribution, correct?
+Patient: That's correct.
+Doctor: Doctor X, did the M R I report of the outside lumbar come in?
+Doctor_2: It did. We also have a report of a lumbar C T myelogram, but no films came.
+Doctor: What does the C T myelogram say?
+Doctor_2: It says she has spondylolisthesis and L four and L 5 stenosis with right posterior surgical fusion changes at both levels.
+Doctor: I see. There are some notes from Doctor Reitman. What does it say?
+Doctor_2: It looks like she is being sent for an L four selective nerve root block to rule out if she would be a candidate for a T L I F at L four and L 5.
+Doctor: I see. Could you review the M R I film as well?
+Doctor_2: The M R I reveal a grade two L four anterior spondylolisthesis without major canal stenosis. She does, however, have facet joint disease at this level and dorsal postoperative changes. She also has a foraminal disc protrusion on the right and a severely degenerated disc at L three and L four.
+Doctor: Thank you for that. So, miss. Where are you feeling pain today?
+Patient: I feel it in the font of my lower leg and right hip.
+Doctor: What kind of pain are you feeling?
+Patient: I told Doctor X about it. He could let you know.
+Doctor_2: She claimed she had a burning, shooting, aching, and constant pain in nature.
+Doctor: I see. Is it worse when you do certain activities?
+Patient: Yes. When I walk and stand.
+Doctor: Are you able to walk at all?
+Patient: I can walk around a block before it gets to the point where I get weak.
+Doctor: When does it feel better?
+Patient: I feel more comfortable when I'm resting, sitting, sleeping, or getting a massage.
+Doctor: From a scale of zero to ten, with ten being the worst pain, how would you rate the pain on average?
+Patient: I'd say like a nine.
+Doctor: That's the intensity on a daily level, correct?
+Patient: Yeah, that's correct.
+Doctor: What's the lowest pain you've ever felt?
+Patient: I think it was a five.
+Doctor: I see. Doctor X, did you ask her the series of questions about bowel function?
+Doctor_2: I did. She denied any bowel or bladder dysfunction, saddle area hypoesthesia, numbness, tingling, weakness or Valsalva related exacerbation.
+Doctor: Great. Have you taken any medication recently?
+Patient: Uh. I think it starts with a T.
+Doctor_2: It states here you took Tylenol, correct?
+Patient: That's correct.

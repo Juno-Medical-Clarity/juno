@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3225  |  gem_id: gem-cochrane-simplification-train-3226  |  doi: 10.1002/14651858.CD002225.pub2
+
+The effect appeared to be greater in trials including a high proportion of patients with early stage disease. Combined chemotherapy/radiotherapy also delayed tumour recurrence and reduced the risk of re-growth near the original cancer site as well as in other parts of the body. There was an increase in side-effects, principally affecting the blood and bowel, but these generally only lasted a short time. Long-term effects were poorly reported.

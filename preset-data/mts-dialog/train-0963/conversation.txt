@@ -1,0 +1,17 @@
+Doctor: Hello! Who do we have here today?
+Guest_family: Hello, this is our son, A B C.
+Doctor: How old is he? What is the issue?
+Guest_family: He is two. He is continuously complaining of pain in his belly and back. He is active otherwise.
+Doctor: Did you notice any change in his toilet habits or routine?
+Guest_family: No.
+Doctor: Any fever or chills or any other issue?
+Guest_family: No, we did not notice any such issues, he has been active and was acting very normal otherwise.
+Doctor: Any change in his eating habits?
+Guest_family: No, he has been eating and drinking as usual. He was acting normally but we did notice a foul odor coming from his nose. He was on antibiotics after removal of that piece of cotton from his right side of nose in our previous visit here.
+Doctor: How is his nose now?
+Guest_family: He got better but now we can notice that odor from his nose again.
+Guest_family: His mother started him on the antibiotics again, whatever was remaining, we think something is still there.
+Doctor: Okay, Is there anything else like runny nose or any pain in his ear or bad throat? How about cough or congestion? Or any other issues you have noticed?
+Guest_family: No, nothing of those instead he has been active and eating and drinking normally, no other issue.
+Doctor: Is he complaining of any pain or discomfort on bowel movements? Is there any increase in the frequency of urination?
+Guest_family: Well, we can't say it for sure as he still wears diapers but we have not noticed anything abnormal.

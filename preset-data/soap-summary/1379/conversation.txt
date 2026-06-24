@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1379
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any issues from head to toe? No, everything is fine.

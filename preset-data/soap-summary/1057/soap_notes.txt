@@ -1,0 +1,26 @@
+# SOAP Notes — Sample 1057
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Chief complaint: Memory loss and cognitive decline.
+- Symptoms:
+ - Noticed memory issues the week prior to Thanksgiving of 1994.
+ - Unusual frustration and disorientation during a family gathering in Colorado.
+ - Difficulty reading lines during a game.
+ - Difficulty with tasks at work (flower arrangements, cash register).
+ - Lost in her own home (end of December 1994).
+ - Increased sensitivity and feeling like a liability to family.
+ - Gait changes: walking in a bended form, veering to the right.
+ - Did not recognize the location of where people were talking to her.
+- Family history: No relevant information provided.
+- Relevant medical history: Previously evaluated by a local neurologist who conducted blood tests and an MRI of the brain, which were clear.
+- Emotions/Concerns: Expressed concern about becoming a liability; family noted changes in behavior and cognitive function.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Working diagnosis of dementia of the Alzheimer's Type.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

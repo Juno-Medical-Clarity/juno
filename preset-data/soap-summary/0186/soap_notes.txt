@@ -1,0 +1,34 @@
+# SOAP Notes — Sample 0186
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Sharp chest pain, concerned about a heart attack
+- Duration: 3 days
+- Location: Over the heart, sometimes radiates to the neck
+- Quality: Sharp pain
+- Severity: 6/10
+- Context: Worse with coughing or lying down, improves when leaning forward
+- Progression: No previous episodes
+- Impact on daily activities: Not explicitly mentioned
+- Associated symptoms: No shortness of breath, dizziness, palpitations, headaches, nausea, vomiting, fevers, chills, weakness, or numbness. Had flu symptoms last week (fever, runny nose, cough, fatigue), now resolved.
+
+Past Medical History:
+- PMHx: No chronic conditions, no surgeries
+- Medications: Occasional Tylenol
+- Allergies: None
+- FHx: Father had a heart attack 2 weeks ago and passed away
+- SocHx: Student (engineering at Western), part-time job as a postman, lives with mother, occasional alcohol (1-2 drinks on weekends), no recreational drug use, non-smoker
+
+Objective:
+- Vitals: Not mentioned
+- Physical or mental state examination findings: Not mentioned
+- Investigations with results: Not mentioned
+
+Assessment:
+- Likely diagnosis: Not explicitly mentioned
+- Differential diagnosis: Not explicitly mentioned
+
+Plan:
+- Investigations planned: ECG, possible blood work
+- Treatment planned: Not explicitly mentioned
+- Relevant other actions: Reassurance, further tests to determine cause of symptoms

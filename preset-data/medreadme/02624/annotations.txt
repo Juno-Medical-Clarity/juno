@@ -1,0 +1,11 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 6.0
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Corticosteroid'
+  [1:2] 'medical-jargon-google-easy' -> 'co-administration'
+  [6:10] 'medical-jargon-google-hard' -> 'forebrain 5 - hydroxytryptamine'
+  [11:15] 'medical-jargon-google-easy' -> 'selective serotonin reuptake inhibitors'
+  [17:18] 'medical-jargon-google-easy' -> 'antiglucocorticoids'

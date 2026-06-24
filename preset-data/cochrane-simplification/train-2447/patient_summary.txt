@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2447  |  gem_id: gem-cochrane-simplification-train-2448  |  doi: 10.1002/14651858.CD007372.pub3
+
+Four randomised controlled trials with a combined total of 1439 women assessed the effects of induction of labour for women managed as outpatients versus inpatients. Out of a total of four studies, the induction agents differed in two studies, whereas the remaining two studies evaluated the same induction agent (vaginal PGE2). The limited information from these trials did not support more successful induction within 24 hours, shorter length of stay in hospital or differences in need for further induction or the mode of giving birth. The information available was limited and it is, therefore, not yet possible to determine whether induction of labour is effective and safe in outpatient settings.

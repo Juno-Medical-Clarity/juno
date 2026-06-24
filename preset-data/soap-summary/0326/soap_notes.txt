@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0326
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of type two diabetes (father and grandfather).
+- Son currently struggling with type one diabetes.
+- No family history of heart problems.
+- Two cousins had breast cancer.
+
+Objective:
+- (No objective data mentioned in the conversation.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided in the conversation.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education mentioned in the conversation.)

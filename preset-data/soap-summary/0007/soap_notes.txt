@@ -1,0 +1,40 @@
+# SOAP Notes — Sample 0007
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 5 year old male brought in by mother for fever (started 2 days ago, Tmax 38.7C), cough (started 1 day after fever, productive with greenish-yellow sputum, no blood) and shortness of breath (started with cough, present even at rest, worse with deep breaths which cause chest pain)
+- No runny/stuffy nose, wheezing, dizziness, syncope, sore throat, vision/hearing changes, altered smell/taste, weight loss, rash, numbness/tingling, myalgia/arthralgia, confusion/memory loss, bowel/bladder changes 
+- Appetite slightly decreased over last 2-3 days but no nausea/vomiting
+- Exposed to younger sister (attends daycare) who had similar symptoms last week and was treated with antibiotics 
+
+PMHx:
+- Previously healthy, no chronic medical conditions
+- No prior hospitalizations or surgeries
+- Born via uncomplicated vaginal delivery at term, normal birth weight, no NICU stay
+- Meeting developmental milestones 
+- Immunizations up to date
+- No medications or allergies
+
+FHx:
+- No family history of lung/heart conditions or cancers
+
+SocHx: 
+- Lives at home with mother and younger sister
+- No smoking, mold, asbestos exposure at home 
+- No recent travel
+
+Objective:
+- Vitals signs (not provided)
+- Physical exam findings (not provided)
+
+Assessment:
+- Likely community acquired pneumonia
+- COVID-19 testing pending
+
+Plan: 
+- COVID-19 swab, isolate for 14 days
+- CXR to evaluate for consolidation/infiltrate
+- If CXR consistent with pneumonia, treat with amoxicillin-clavulanate or cefuroxime x 5 days
+- Monitor symptoms, should resolve in 5 days with antibiotics 
+- Return precautions: Worsening neuro deficits (weakness, seizures) → ER
+- If no improvement in 5-7 days, consider workup for atypical infections (fungal, TB)

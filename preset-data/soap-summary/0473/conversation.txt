@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0473
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you on any medications? Yeah. I take Abilify to help with my mood. Do you find that it's helping? A little, yeah.

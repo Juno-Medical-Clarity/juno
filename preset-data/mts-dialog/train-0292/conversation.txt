@@ -1,0 +1,6 @@
+Doctor: Now, let's talk about your family history. Have any of them had cancer?
+Patient: Actually, yes, I know a few family members have, but I can't remember who had what kind.
+Doctor: That's okay. What about heart disease? Can you remember anyone having that?
+Patient: Yes, that rings some bells.
+Doctor: Thank you, has anyone in your family had a joint replacement?
+Patient: I know that a lot of my family has had arthritis in the past, but I can't remember whether or not they had joint replacements, honestly.

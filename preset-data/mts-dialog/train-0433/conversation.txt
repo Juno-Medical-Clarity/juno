@@ -1,0 +1,2 @@
+Doctor: Do you have any past or present medical conditions?
+Patient: No.

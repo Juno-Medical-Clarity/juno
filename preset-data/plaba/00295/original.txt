@@ -1,0 +1,8 @@
+Phenylketonuria (PKU) is an inborn error of metabolism (IEM) most often caused by missense mutations in the gene encoding phenylalanine hydroxylase (PAH) which catalyzes the hydroxylation of phenylalanine (Phe) generating tyrosine (Tyr).
+PKU belongs to a class of amino acid aminoacidopathies termed “toxic accumulation-IEMs” where the circulating toxin is an amino acid or its metabolites.
+Mutations in an enzyme, such as PAH, are recessive since one functioning enzyme with the wild-type allele is sufficient.
+Tetrahydrobiopterin (BH4) binds to the catalytic domain of PAH and is a cofactor for this reaction.
+PAH is primarily a hepatic enzyme.
+Elevated blood Phe levels and decreased Tyr levels characterize PKU.
+Newborns with PKU can appear normal at birth with the first signs appearing after several months.
+These signs can include musty odor from skin and urine, fair skin, eczema, seizures, tremors, and hyperactivity.

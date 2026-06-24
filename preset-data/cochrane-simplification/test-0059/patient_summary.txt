@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0059  |  gem_id: gem-cochrane-simplification-test-60  |  doi: 10.1002/14651858.CD006517.pub3
+
+This review attempted to assess the best ART regimen for HIV-infected people in low- and middle-income countries following treatment failure; however, the review found limited studies addressing this topic. One randomised trial and one abstract of an observational study evaluated whether or not to maintain lamivudine in second-line regimens; both suggested no difference in outcomes. There were no studies comparing boosted PI-containing second-line regimens in patients failing an NNRTI-based first-line regimen, nor any evaluating NRTI combinations after first-line with non-thymidine analog combinations. While such trials are difficult to conduct for a variety of reasons, randomised controlled trails comparing second-line therapies are needed, especially in resource-limited settings.

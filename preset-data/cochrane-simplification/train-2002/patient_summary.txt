@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2002  |  gem_id: gem-cochrane-simplification-train-2003  |  doi: 10.1002/14651858.CD004458.pub2
+
+Three randomised controlled trials, involving 212 participants, met the inclusion criteria for this review. The evidence available does not demonstrate that FESS, as practised in the included trials, is superior to medical treatment with or without sinus irrigation in patients with chronic rhinosinusitis. There were no major complications in any of the included trials and FESS appears to be a safe procedure. More randomised controlled trials comparing FESS with medical and other treatments, with long-term follow up, are required.

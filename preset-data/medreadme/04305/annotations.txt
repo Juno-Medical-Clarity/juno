@@ -1,0 +1,12 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [3:8] 'medical-name-entity' -> 'National Institute for Health Research'
+  [9:10] 'abbr-medical' -> 'NIHR'
+  [11:14] 'medical-jargon-google-easy' -> 'Health Technology Assessment'
+  [15:16] 'abbr-medical' -> 'HTA'
+  [17:19] 'general-complex' -> 'systematic review'
+  [22:24] 'medical-jargon-google-easy' -> 'atopic eczema'

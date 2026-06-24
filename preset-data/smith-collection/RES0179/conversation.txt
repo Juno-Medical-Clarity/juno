@@ -1,0 +1,234 @@
+# Smith Collection Transcript: RES0179
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: uh ive had this cough its been going on now for like last six months or so and been losing some weight as well ive lost i think like 20 or 30 pounds in the last six months
+
+Doctor: OK yeah thats a lot of weight so the weight loss you said 20 to 30 pounds
+
+Patient: Yeah yeah
+
+Doctor: OK
+
+Patient: Like just over 200 and im in the 170s now
+
+Doctor: OK so that was in the past six months when do the cough start
+
+Patient: Well ive had a cough before uh like a smokers cough ah and thats been like a few couple of years but thats just a cough that i would have in the morning and it would just go away but i mean around six months ago i started having this cough all day
+
+Doctor: Hm ok and is it a dry cough or is it a productive cough
+
+Patient: Uhm its been its been dry
+
+Doctor: Its been dry
+
+Patient: Yeah
+
+Doctor: So no blood or sputum
+
+Patient: uh no no blood or sputum
+
+Doctor: OK and have you been feeling short of breath at all
+
+Patient: Uhm i have yeah the shortness of breath has been like similarly getting a bit worse over the last over the last six months
+
+Doctor: OK alright and is there wheeziness as well
+
+Patient: No wheezing
+
+Doctor: How about chest pain
+
+Patient: uh yeah ive had this kind of like dull kind of aching pain that that ive had kind of work just on the right side of my chest it yeah its kind of aching and not that bad but uncomfortable
+
+Doctor: OK and and is it a sharp pain or is it a dull achy pain
+
+Patient: Its more like dull
+
+Doctor: OK and is it always there or is it worse with like exertion
+
+Patient: Its always there
+
+Doctor: OK uhm and sorry you said it was at the centre of your chest
+
+Patient: More kind of on the right side
+
+Doctor: OK does it get worse with like deep breaths
+
+Patient: Not really no
+
+Doctor: No ok how about when you lean forward
+
+Patient: No
+
+Doctor: No ok uhm and hm have you ever been worked up for the chest pain in the past like to rule out heart attacks blocked arteries anything like that
+
+Patient: uh yeah actually i had a stress test about a year ago and it the results of that were were normal
+
+Doctor: OK ok good and do you ever feel like your hearts racing
+
+Patient: No i havent had any anything like that i mean like sometimes i can get palpitations cause i have a fib or atrial fibrillation but it doesnt really yeah affect me that that much
+
+Doctor: OK and how about shortness sorry how about dizziness or fainting spells
+
+Patient: Nothing like that
+
+Doctor: No any calf pain when you walk a lot
+
+Patient: No
+
+Doctor: No ok any fevers
+
+Patient: No
+
+Doctor: No how about fatigue
+
+Patient: Not really no
+
+Doctor: No any rashes
+
+Patient: No
+
+Doctor: Changes in your vision or hearing
+
+Patient: No
+
+Doctor: Smell or taste
+
+Patient: Thats been normal
+
+Doctor: OK runny nose or stuffy nose
+
+Patient: No
+
+Doctor: Sore throat
+
+Patient: No
+
+Doctor: Uhm changes in your bowel movement
+
+Patient: No diarrhea
+
+Doctor: And how about like blood in your stool or constipation
+
+Patient: No constipation and no blood in the stool
+
+Doctor: OK nausea or vomiting
+
+Patient: No
+
+Doctor: Uhm appetite changes
+
+Patient: No way my appetites been been ok thats why i was like really shocked at the the weight loss
+
+Doctor: Mhmm umm ok how about changes in your urine
+
+Patient: No i mean sometimes i can have a i mean harder time to go cause as an old guy have large prostate i think they said but i mean thats been ok
+
+Doctor: OK how about headaches
+
+Patient: No headaches
+
+Doctor: Numbness or tingling
+
+Patient: No numbness or tingling
+
+Doctor: Confusion or memory loss
+
+Patient: No
+
+Doctor: OK joint pains or muscle aches
+
+Patient: I mean sometimes i can get so like my knees will hurt but i think thats just arthritis
+
+Doctor: OK yeah umm alright and are you otherwise healthy you mentioned that you have afib and prostate issues anything else
+
+Patient: uh yeah like high blood pressure and uh yeah uh just high blood pressure
+
+Doctor: High blood pressure ok have you ever been diagnosed with something called copd
+
+Patient: No i i i was tested for that with the like the breathing test i did blow into tube but yeah they said that i didnt have it
+
+Doctor: OK ok when were you worked up for that
+
+Patient: I was probably like i dont know 5 to 10 years ago now
+
+Doctor: OK alright and are you on any medications
+
+Patient: Yeah i take one for high blood pressure and i think a beta blocker as well for that like the heart rate and uh afib
+
+Doctor: OK yeah ok and and are you up to date with your immunizations
+
+Patient: I am yeah
+
+Doctor: OK any allergies
+
+Patient: uh no allergies
+
+Doctor: OK family history of lung or heart conditions
+
+Patient: Uhm i think like my uncle had lung cancer and it and i think ive had a couple of member family members about who had lung cancer actually but theyve well theyve all been smokers
+
+Doctor: Oh i see ok do you know what type of lung cancer they got
+
+Patient: No im im not sure
+
+Doctor: OK no problem and ok so i think you mentioned that you smoke how much do you smoke and for how long have you been smoking
+
+Patient: I smoke about a pack per day and i guess probably even smoking now for i mean i i guess like 60 years almost maybe longer
+
+Doctor: OK
+
+Patient: And before that i there was a point i was smoking 2 packs a day
+
+Doctor: Oh wow ok well its good that you cut down
+
+Patient: Mhmm
+
+Doctor: Yeah alright and do you do any other recreational drugs
+
+Patient: No
+
+Doctor: No ok and how about alcohol do you drink
+
+Patient: Probably one or two beers every day
+
+Doctor: Every day ok and whats your living situation like right now
+
+Patient: Yeah so i live with my wife in a in a townhouse
+
+Doctor: OK ok alright thats good any reasons to think you have like old carpets dust asbestos mold anything like that in the house
+
+Patient: No i dont think so
+
+Doctor: uh ok
+
+Patient: Yeah
+
+Doctor: Alright any pets
+
+Patient: No pets
+
+Doctor: No pets ok have you been in contact with anyone sick recently
+
+Patient: No i dont think so
+
+Doctor: No ok how about travel
+
+Patient: Ive been uh yeah weve been at been at home
+
+Doctor: At home ok ok well those are all the questions i had for you did you have any questions of your own for myself
+
+Patient: Uhm no i was just like well really worried that i i could have lung cancer
+
+Doctor: Yeah for sure so that is quite high on my differential right now just because of your age your smoking history and just the way youre presenting so were gonna do a couple of things were going to do a covid swab just to rule that out you should hear back in about 24 to 48 hours but we will do investigations for lung cancer so well start by doing a chest xray just to look for a mass or effusions and then from there if we think there are signs of cancer we can do a ct umm as well we can like stage with the pet ct after we take a biopsy and send it off for pathology and that should give us more answers as to if you have cancer and if you do have cancer what type of cancer so that we can talk about treatment plans and kind of what the prognosis is with those particular types of cancers how does that sound
+
+Patient: Yeah that sounds great thank you so much
+
+Doctor: OK yeah no problem

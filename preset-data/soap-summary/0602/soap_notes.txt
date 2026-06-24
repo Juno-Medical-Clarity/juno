@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0602
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Fainting episode
+- Severity: Not specified
+- Duration: Episode occurred yesterday
+- Associated symptoms: Fainting triggered by needles
+- Relevant medical history: History of fainting episodes related to needles (Vasovagal Syncope)
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Patient feels normal today
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Clinician's interpretation: Vasovagal Syncope
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

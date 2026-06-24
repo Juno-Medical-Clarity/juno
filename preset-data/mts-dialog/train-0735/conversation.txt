@@ -1,0 +1,8 @@
+Doctor: So, let's see here. You don't recall anyone in your family having a history of neuromuscular diseases, correct?
+Patient: No, no one I can think of.
+Doctor: Do you know of anyone who has had foot deformities or neuropathy in their arms or legs?
+Patient: No, not one person comes to mind.
+Doctor: Great. Does anyone in your immediate family have a high arch?
+Patient: No, at least no one that I know of.
+Doctor: And you said that your aunt or sister has type two diabetes?
+Patient: My aunt. She's had it for some time now.

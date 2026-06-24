@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0716
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports feeling "great."
+- Recently had a mammogram with no issues reported.
+- Continues to take multivitamin and low-dose aspirin.
+- Denies any changes in drinking and smoking habits.
+- Patient feels "lazy" about self-care routines.
+- Reports difficulty in maintaining self-care routines, including not exercising anymore.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- Physician recommends starting self-breast examinations despite the patient feeling there is no point due to regular mammograms.

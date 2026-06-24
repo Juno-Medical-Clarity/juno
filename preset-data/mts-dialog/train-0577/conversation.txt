@@ -1,0 +1,10 @@
+Doctor: Any headaches?
+Patient: No.
+Doctor: Any history of seizures or epilepsy?
+Patient: No.
+Doctor: Any sudden loss of consciousness or have you blacked out?
+Patient: Um, no.
+Doctor: Any weakness? Feeling any tremors in your body?
+Patient: No, nothing like that.
+Doctor: Any history of stroke or any brain related condition?
+Patient: No, no such history.

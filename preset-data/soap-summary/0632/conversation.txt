@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0632
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_clinician: What's their medical history? I have here hypertension, diabetes, diabetic retinopathy, and elevated lipids. They're in post C V A. Guest_clinician: Do you know their neurologist? I can have the nurse or scribe go in and ask again. Guest_clinician: Great.

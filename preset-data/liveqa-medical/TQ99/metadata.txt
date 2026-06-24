@@ -1,0 +1,12 @@
+qid: TQ99
+source_file: 12467.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What doctor specializes in testing for and treating autoimmune diseases?
+nlm_summary: What doctor specializes in testing for and treatment of autoimmune disorders?
+
+focus_entities:
+  [F1] (Problem) autoimmune illness
+question_types:
+  [T1] PERSON_ORGANIZATION

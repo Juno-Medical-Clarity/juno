@@ -1,0 +1,223 @@
+# PriMock57 Consultation Transcript: day1_consultation10
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Doctor: [unintelligible] hello [unintelligible] can you hear me ok?
+
+Patient: Hello. Hi.
+
+Doctor: [unintelligible] Right excellent, before I go any further, can I confirm your name and your age please?
+
+Patient: Yeah I can hear you, hi. Sure, um, I'm Amanda Jackson and I'm nineteen years old.
+
+Doctor: Nineteen years old OK Amanda, and how can I help you this [unintelligible] afternoon?
+
+Patient: Um, so it's being going on for a few days now. Um, it's not happened before and I'm bit worried. I've uh it quite hurts when I kind of pee.
+
+Doctor: [unintelligible]
+
+Patient: Um, and yeah it's like I'm going to the toilet a lot more, um. And it's really, like I can't, like go to uni properly. I'm just like constantly looking for the toilet.
+
+Doctor: [unintelligible]
+
+Patient: Um, and it kind of hurts sometimes when I'm, like in at the bottom of my tummy as well.
+
+Doctor: Right OK. I'm sorry to hear there's a lot going on there and I can, see why it's affecting you. Um, so you mentioned it's been going on for last three days, mainly the burning pain when you pass urine. Um, you said you're going to the toilet more often as well, that right?
+
+Patient: Uh, yeah it's been going on for a little bit longer than three days I think actually, maybe just under a week. Um.
+
+Doctor: Ohh and a week, sorry my [unintelligible]. OK, uh.
+
+Patient: Sorry no I [unintelligible] didn't explain it properly before, um yeah no I it's been going on for about just under a week.
+
+Doctor: [unintelligible]
+
+Patient: Um, and yeah I [unintelligible] notice a sort of burning, stinging, when I when I go to the toilet, yeah.
+
+Doctor: [unintelligible] Are you noticing any, anything in your urine, predominantly blood or um, discolouration of urine?
+
+Patient: Um, I think, well today I noticed, um, that it was like a bit pink. The, the urine.
+
+Doctor: [unintelligible] OK, uh [unintelligible] of any kind of frank blood? I mean red blood at all, in your urine? [unintelligible]
+
+Patient: Yeah, I think just today [unintelligible]. Um, I think it was [unintelligible] probably but I don't know it was pink so.
+
+Doctor: [unintelligible] OK. Um, fine we'll we'll have to definitely explore that in a little bit or detail later on. Um, you also mentioned some tummy pain as well, can you tell me a bit more about that pain?
+
+Patient: Yeah it's kind of at the bottom of my tummy, um, uh mainly when I go to the loo, I think that's when it's worse.
+
+Doctor: OK. Um, can you describe it [unintelligible] crampy pain? Is it more of a burning pain?
+
+Patient: Um, I wouldn't describe it as crampy I don't think it's like a period pain, it's a bit different, it's, it's hard to say, an achey pain I suppose.
+
+Doctor: OK. An aching pain, OK. And does the pain move anywhere else? Does it move towards your back? Towards your sides?
+
+Patient: No, no, no.
+
+Doctor: [unintelligible] OK, all right. Um, any other symptoms? [unintelligible] Nausea? Vomiting?
+
+Patient: No, no nausea vomiting.
+
+Doctor: OK. Any temperatures or fevers?
+
+Patient: Um no, no not that I've noticed.
+
+Doctor: OK, all right. And how are your bowels at the moment? Are your bowels working OK?
+
+Patient: Uh I, I usually have a bit of problems with my bowels anyway, so I don't think it's any, different, from what it usually is.
+
+Doctor: OK, and when, when when you say you have problems, what kind of problems do you normally have?
+
+Patient: Um, I think I have, um, IBS, um, so I just kinda pass, uh, my bowels like quite, quite a lot.
+
+Doctor: Right.
+
+Patient: Um, and sometimes it's quite, it's quite variable like sometimes it's a bit softer, sometimes it's a bit, [unintelligible] sorry if it's a bit disgusting but like, sometimes it's a bit uh harder and kind of hard to predict.
+
+Doctor: [unintelligible] OK, all right but, and you've noticed no new symptoms? No, no, no new symptoms in your bowels?
+
+Patient: Like, yeah OK.
+
+Doctor: Uh. OK, all right. Um, and Amanda sometimes we have to ask quite sensitive questions as you can imagine. Um, uh, can I ask? Are you currently uh, are you currently sexually active? At the moment?
+
+Patient: No, no, not [unintelligible] Uh [unintelligible] uh yeah um, I have a, a long-term, um, boyfriend.
+
+Doctor: OK, and um, have you noticed any other discharge from down below? So, from from the front passage?
+
+Patient: Hmm [unintelligible] no I don't think so. Nothing unusual.
+
+Doctor: [unintelligible] OK. Have you, do you use any form of contraception?
+
+Patient: Uh yeah, uh I'm um on the pill.
+
+Doctor: The pill. What kind of pill is it? Is it combined pill or the mini-pill?
+
+Patient: Uh, combined pill.
+
+Doctor: OK, fine. Um, when was the last time you had um, unprotected sex? If you don't want me asking.
+
+Patient: Um, uh, I mean, mean unprotected as in like no, no condoms or anything?
+
+Doctor: Yeah, exactly.
+
+Patient: Um, I, I guess 'cause, [unintelligible] um, I don't really use condoms with my boyfriend, [unintelligible] like. I dunno we've just kind of agreed, uh, so um I guess, a week ago, two weeks ago [unintelligible], quite quite [unintelligible] .
+
+Doctor: Yep, a week ago, OK all right. [unintelligible] What I'm trying get at is whether um, uh there's any chance you could be pregnant at all. Uh, I know you're on the pill, but um we're we, nonetheless we do have to ask. Um when was your last, when was your last period?
+
+Patient: [unintelligible] [unintelligible] Um, two weeks ago.
+
+Doctor: Two weeks ago OK, all right. Just something for us, to bear in mind, if your symptoms don't get any better OK, um. Fine, in terms of your general health otherwise at the moment are you, uh eating and drinking OK?
+
+Patient: Uh, yeah, yeah eating drinking OK. Um, I did have one kinda concern I dunno [unintelligible]
+
+Doctor: [unintelligible]
+
+Patient: So I I smoked, uh this is quite bad, but I smoked weed for the first time. Uh, like a week and a half ago, I [unintelligible] I just wondered whether it's related at all, probably not but I just thought I'd get some advice from you.
+
+Doctor: [unintelligible] Sure, well thanks for sharing with me. Um, so, I, I don't think it's [unintelligible] is related to your symptoms, I think it probably just pure pure coincidence, um.
+
+Patient: Sure OK. Sure.
+
+Doctor: But, uh, you know I do strongly advise you to you know, um, make it a regular habit if you can. Um, just for your, just for your general health moving forwards, OK?
+
+Patient: OK.
+
+Doctor: Um, fine. Moving on, in terms of your health otherwise, do you have any other medical conditions [unintelligible] , apart from the IBS, is there anything else I should be aware of?
+
+Patient: Sure [unintelligible]. No, nope.
+
+Doctor: No, OK great. And what about any medications that you take on a regular basis, apart from the, um, combined pill?
+
+Patient: Apart from the pill, um, I take, um, something for the IBS as well. Um it begins with an M, it's pretty hard to pronounce like [unintelligible] something [unintelligible], maybe.
+
+Doctor: [unintelligible] was it, yeah OK.
+
+Patient: Yeah, yeah that's it. Yeah, yeah that's right.
+
+Doctor: OK, and is that for the cramps, the crampy pain?
+
+Patient: Yeah, yeah.
+
+Doctor: Yeah OK, and do you have any allergy to any medications?
+
+Patient: Um, yeah I think there was an antibiotic, um, called [unintelligible] Clindamycin mycin [unintelligible].
+
+Doctor: [unintelligible] OK, OK, OK.
+
+Patient: Then I took like [unintelligible] something and yeah that, that didn't, go too well, with me.
+
+Doctor: Ritib, OK sure, I'll make a note of that. Um, in terms of family history, any history of problems with the bladder or the kidneys?
+
+Patient: No, no.
+
+Doctor: No, or [unintelligible] generally anything else, good. And socially, tell me a bit more about your home situation, who's at home with you?
+
+Patient: Um, so I am living in halls at the moment, uh at uni um, so uh, uh, I'm just living with a flatmate I suppose, um.
+
+Doctor: [unintelligible]
+
+Patient: But my family, uh, live kind of outside of London not too far away. Um, so yeah the my family are fine and I see them now and then. Uh, yeah things I think, I think they're OK generally.
+
+Doctor: [unintelligible] Very good. Great, and what are you studying at university?
+
+Patient: I'm studying, uh, English.
+
+Doctor: English, OK good, and how are you enjoying your course?
+
+Patient: Yeah, yeah it's it's going well thanks. Just kind of started a few months ago, a few months ago and yeah I, I really enjoy it. Yeah, yeah it's really fun.
+
+Doctor: Good. Very good, very good, good. Um, in terms of smoking and alcohol, do you, do you participate in either?
+
+Patient: Uh, as I admitted before I tried weed for the first time, uh, but, uh, I don't smoke. Uh ,I drink occasionally, um, kind of socially, um, with friends [unintelligible].
+
+Doctor: [unintelligible] O K OK, what, what's made you have your first joint last week? Was [unintelligible]
+
+Patient: Um, I [unintelligible] it was just a party,.Um, there were other people doing it, um.
+
+Doctor: OK.
+
+Patient: I kind of was a little bit tipsy so, probably wasn't thinking quite straight. Um, but yeah I, I completely agree it's not something I wanna get into on a regular basis.
+
+Doctor: [unintelligible] Sure, uh, and obviously as your doctor I'm here to look after you so yeah I I would strongly recommend you, you know, to avoid if you can. Great, um, fine so, at this stage I wouldn't normally examine you, but I think based on your story I think, um, you know, uh, I'm reassured.
+
+Patient: Sure.
+
+Doctor: But the fact that I, I I think it's, um, probably just a simple what we'd say a UTI or a cystitis, bladder infection.
+
+Patient: [unintelligible] OK.
+
+Doctor: Uh, you know you haven't got any other symptoms that, suggest to me that there's anything to worry about, so things like fevers and back pain. Um, would be more worrying for me to hear. Um, so it's something we can treat quite readily with antibiotics. Um, so we've got a choice of two antibiotics something called Trimethoprim or, Nitrofurantoin which is a three day course.
+
+Patient: [unintelligible] [unintelligible] Mm-hmm. Mm-hmm.
+
+Doctor: And normally they're usually quite effective, um, for your symptoms. It's probably worth giving us a urine sample today as well if you can, so we can send it off to the lab.
+
+Patient: [unintelligible]
+
+Doctor: And see exactly what's going on there. Um, start the antibiotics, make sure you're well hydrated, drink plenty of fluids.
+
+Patient: OK. [unintelligible]
+
+Doctor: Um, if you are having some pain, simple Paracetamol, um, would probably be advisable.
+
+Patient: Yeah.
+
+Doctor: Um, we'll see what the urine sample shows. Um, and if it is indeed positive, we'll know which antibiotics are the right ones.
+
+Patient: OK.
+
+Doctor: Um, but if things still are still not getting any better next week come back and see me, and we can have another look again.
+
+Patient: OK, OK uh great. Um, with, with the urine sample, um, uh, how do I go about doing that, do you know? Is it through the app?
+
+Doctor: So if [unintelligible] I'll give yeah no it's a well uh so yeah good question, so I will give you [unintelligible] I will organise uh for you to come in, and drop off a sample at one of our practices, um which we can test there and then, at the urine [unintelligible] and send it off to the lab uh we can back in touch with you with the results.
+
+Patient: OK. OK perfect. Great.
+
+Doctor: OK, do bear in mind those symptoms I mentioned about the fever and the back pain and vomiting. If you have any of those give me a call, OK?
+
+Patient: Either back pain, vomiting, great OK. Yeah, I'll watch out for those.
+
+Doctor: All right, OK. Have a good day. Thank you, bye bye.
+
+Patient: OK, great thank you. You too, have a good day, bye bye.

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0921
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 5-year-old boy.
+- Family reports that the patient is here to inquire about removing hardware from his leg.
+- History of a distracted left lateral condyle fracture.
+- Previous surgery involved screw compression to fix the fracture (surgery date: October 2007).
+- Family expresses concern about the risks of the surgery, which include anesthesia, infection, bleeding, changes in sensation and motion of the extremity, failure of removal of hardware, failure to relieve pain, or improve range of motion.
+- Family appears to be in agreement and is leaning towards proceeding with the surgery.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- History of left lateral condyle fracture with hardware in place.
+- Indication for surgery to remove hardware.
+
+Plan:
+- Discuss and review the benefits of the surgery with the family.
+- Proceed with the surgical plan for hardware removal, as the family is inclined to move forward.

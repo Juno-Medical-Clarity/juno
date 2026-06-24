@@ -1,0 +1,1 @@
+We show that in wild-type cells, GlmY RNA is unstable due to 3' end polyadenylation; whereas in an E. coli pcnB mutant defective in RNA polyadenylation, GlmY is stabilized and accumulates, which in turn stabilizes GlmZ and causes GlmS overproduction.

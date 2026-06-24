@@ -1,0 +1,5 @@
+A leadless pacemaker is a small device placed directly into the right ventricle (lower chamber of the heart) which sends pulses to the heart. Leadless pacemakers have changed the field by making pacemakers much smaller and reducing complications related to pacemaker pockets and transvenous (through-vein) leads.
+However, first generation leadless pacemakers appear to be associated with a higher rate of complications due to punctures as compared to transvenous pacemakers, a temporary pacing technique that places a catheter into the right ventricle (chamber) of the heart and then applies an electric pulse.
+Currently, leadless pacemakers are mostly designed to pace the right ventricle with none that provide pacing to the upper chambers of the heart or both ventricles.
+This article reviews the available data on leadless pacemakers while promoting the need for a clinical study that compares leadless pacemakers to transvenous pacemakers.
+In addition, the future directions of leadless devices is reviewed.

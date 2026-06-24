@@ -1,0 +1,27 @@
+# SOAP Notes — Sample 0067
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Fever and dry cough started 4 days ago
+- Fever noted to be high (>38°C) last night
+- Symptoms worsened slightly over the past 4 days
+- Associated symptoms: fatigue, runny nose, anosmia
+- No sputum, blood, muscle aches, sore throat, dyspnoea, wheezing, chest pain, abdominal pain, diarrhoea, constipation, nausea, vomiting, urinary symptoms, rash
+- No recent travel; girlfriend recently returned from a work trip and has been fatigued
+
+Past Medical History:
+- PMHx: depression, anxiety
+- Medications: multivitamin, citalopram (SSRI)
+- No known drug allergies
+- SocHx: former smoker (high school), occasional marijuana edibles, lives with girlfriend and dog
+- No significant FHx
+
+Objective:
+- Temperature to be checked
+
+Assessment:
+- Possible viral infection (cold or COVID-19)
+
+Plan:
+- COVID-19 swab
+- Monitor temperature and symptoms

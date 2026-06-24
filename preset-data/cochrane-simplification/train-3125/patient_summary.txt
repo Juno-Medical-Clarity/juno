@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3125  |  gem_id: gem-cochrane-simplification-train-3126  |  doi: 10.1002/14651858.CD000499
+
+Three controlled studies have used different gentle rocking motions (irregularly oscillating water beds, regularly rocking bed trays or a vertical pulsating stimulus) to reduce the occurrence of apnea in a total of 49 babies. However, there was no clinically useful reduction of periods of apnea, although only a small number of infants were studied. Shorter breathing pauses were reported to be reduced by one study but it is not thought to be clinically important. No harm has reported to be done to the preterm infants with these interventions.

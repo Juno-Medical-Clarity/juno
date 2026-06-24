@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1125
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good afternoon, ma'am. Good afternoon, doctor. So, are you married? Yes, happily to my husband. That's wonderful, um, what do you do for a living? I work as an office manager right now. Do you smoke? Yes, I do. I've smoked a pack a day for the last twenty years. Do you drink? Actually, yes, I drink daily. How much do you drink every day? Well, it varies, but usually about anywhere from three to five drinks a day. Okay, do you do any illicit drugs? No, absolutely not. What do you do for exercise? Well, I go for walks, and like low impact cardio. But, I do like playing softball with my friends too. Very nice, how often do you exercise? I work out a few times a month.

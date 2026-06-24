@@ -1,0 +1,9 @@
+source:      pnas
+side:        simple
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [6:10] 'medical-jargon-google-easy' -> 'single - molecule imaging'
+  [12:13] 'abbr-medical' -> 'Exo1'
+  [21:27] 'medical-jargon-google-easy' -> 'single - stranded DNA binding proteins'

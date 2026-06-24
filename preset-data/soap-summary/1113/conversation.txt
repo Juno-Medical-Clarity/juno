@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1113
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good morning, sir. Good morning, doctor. So, what seems to be the problem today, sir? Well, I've had toe problems in the past. I see, what about the rest of the lower body, any problems there? Actually, yes, I've had left knee issues in the past, too.

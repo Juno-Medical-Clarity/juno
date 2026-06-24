@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0037  |  gem_id: gem-cochrane-simplification-train-38  |  doi: 10.1002/14651858.CD004322.pub3
+
+We considered twenty four studies for inclusion in this review. This review identified twenty randomised controlled trials enrolling a total of (2334) participants which compared an intervention using phlebotonics with a control intervention. Of these twenty studies, one study compared phlebotonics with a medical intervention and another with rubber band ligation. Of the remaining four trials, we identified two trials which compared phlebotonics with each other, one trial which compared phlebotonics with herbal therapy and one trial which compared phlebotonics with infrared photocoagulation. The trials obtained did not show any significant adverse events or side-effects from the use of phlebotonics. The studies demonstrated a beneficial effect of phlebotonics in treating the symptoms and signs of haemorrhoidal disease as well as symptom relief post-haemorrhoidectomy.

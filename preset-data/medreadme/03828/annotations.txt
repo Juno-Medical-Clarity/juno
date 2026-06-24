@@ -1,0 +1,8 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [2:5] 'general-complex' -> 'double - blind'
+  [6:10] 'general-complex' -> 'randomised sham controlled trial'

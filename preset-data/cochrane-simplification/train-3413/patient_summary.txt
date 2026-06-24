@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3413  |  gem_id: gem-cochrane-simplification-train-3414  |  doi: 10.1002/14651858.CD005390.pub2
+
+We performed a systematic review looking at all randomized clinical trials evaluating stage II colon cancer patients and adjuvant therapy versus surgery alone. Our review found that adjuvant therapy -either systemic or regional chemotherapy or immunotherapy- can improve the outcomes of stage II patients. In counselling individual patients, the advice given should be conditioned by the patient's age and comorbidities. In addition, the high risk features of the tumour should also be considered when contemplating the benefits of systemic therapy in patients with stage II colon cancer. Further investigation is needed to elucidate which patient and tumour factors can be used to select stage II colon cancer patients for adjuvant therapy. There also exists a need to continue to search for other adjuvant therapies which might be more effective, shorter in duration and less toxic than those available today.

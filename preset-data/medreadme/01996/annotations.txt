@@ -1,0 +1,9 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [0:1] 'abbr-general' -> 'WP'
+  [8:16] 'medical-name-entity' -> 'Healthy Living for People with type 2 Diabetes'
+  [17:20] 'abbr-medical' -> 'HeLP - Diabetes'

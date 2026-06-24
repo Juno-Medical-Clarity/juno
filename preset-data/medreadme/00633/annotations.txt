@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-hard' -> 'MLST8'
+  [16:18] 'medical-jargon-google-easy' -> 'MTOR complexes'
+  [20:21] 'medical-jargon-google-hard' -> 'MLST8'
+  [24:26] 'medical-jargon-google-easy' -> 'therapeutic target'

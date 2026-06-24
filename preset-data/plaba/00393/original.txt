@@ -1,0 +1,10 @@
+The number of serological assays for SARS-CoV-2 has skyrocketed in the past year.
+Concerns have been raised regarding their performance characteristics, depending on the disease severity and the time of the analysis post-symptom onset (PSO).
+Thus, independent validations using an unbiased sample selection are required for meaningful serology data interpretation.
+We aimed to assess the clinical performance of six commercially available assays, the seroconversion, and the dynamics of the humoral response to SARS-CoV-2 infection.
+The study included 528 serum samples from 156 patients with follow-up visits up to six months PSO and 161 serum samples from healthy people.
+The IgG/total antibodies positive percentage increased and remained above 95% after six months when chemiluminescent immunoassay (CLIA) IgG antiS1/S2 and electro-chemiluminescent assay (ECLIA) total antiNP were used.
+At early time points PSO, chemiluminescent microparticle immunoassay (CMIA) IgM antiS achieved the best sensitivity.
+IgM and IgG appear simultaneously in most circumstances, and when performed in parallel the sensitivity increases.
+The severe and the moderate clinical forms were significantly associated with higher seropositivity percentage and antibody levels.
+High specificity was found in all evaluated assays, but the sensitivity was variable depending on the time PSO, severity of disease, detection method and targeted antigen.

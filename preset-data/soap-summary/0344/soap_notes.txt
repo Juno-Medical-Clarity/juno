@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0344
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has multiple trauma due to a car accident.
+- Concern for aftercare required post-accident.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment information provided.]
+
+Plan:
+- [No plan information provided.]

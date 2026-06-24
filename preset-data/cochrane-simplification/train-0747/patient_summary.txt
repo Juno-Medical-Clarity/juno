@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0747  |  gem_id: gem-cochrane-simplification-train-748  |  doi: 10.1002/14651858.CD007270.pub2
+
+This review of three trials failed to identify a difference between azithromycin and benzathine penicillin G for early syphilis in the odds of cure rate, with the result being too imprecise to confidently rule out the superiority of either treatment option. Although gastrointestinal adverse effects were more common in the participants on azithromycin, than in those given benzathine penicillin G, the difference with benzathine penicillin did not reach statistical significance. More research is required in this area.

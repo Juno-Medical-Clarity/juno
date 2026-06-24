@@ -1,0 +1,5 @@
+pmid:        11753760
+question:    16
+adaptation:  adaptation1
+title:       Serum Th1 and Th2 profile cytokine level changes in patients with Graves' ophthalmopathy treated with corticosteroids
+sentences:   13

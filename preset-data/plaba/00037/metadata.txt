@@ -1,0 +1,5 @@
+pmid:        33160639
+question:    3
+adaptation:  adaptation2
+title:       Clinical Management of Hyperkalemia
+sentences:   10

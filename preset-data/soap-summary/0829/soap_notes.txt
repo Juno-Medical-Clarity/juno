@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0829
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is allergic to IV contrast.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

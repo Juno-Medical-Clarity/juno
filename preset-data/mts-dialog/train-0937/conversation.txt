@@ -1,0 +1,4 @@
+Doctor: How are your parents doing?
+Patient: Unfortunately, they both passed away.
+Doctor: Oh no, I'm so sorry to hear that.
+Patient: Thank you, its okay, I manage.

@@ -1,0 +1,7 @@
+source:      wiki
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [5:8] 'medical-jargon-google-easy' -> 'obstructive lung diseases'

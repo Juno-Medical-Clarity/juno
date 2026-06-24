@@ -1,0 +1,13 @@
+Background: Arthrogryposis multiplex congenita (AMC) is characterised by deforemed, rigid joints at birth in two or more body areas.
+AMC exhibits wide physical attributes and genetic types.
+Our goals were to improve the genetic identification rates of AMC, to test the added value of whole gene labeling compared with targeted gene labeling and to identify new genes in 315 unrelated undiagnosed AMC families.
+Several gene-related tools were used including gene mapping of disease-related genes in various groups, first in targeted gene labeling and then whole gene labeling.
+Gene sequencing was performed to identify or verify gene variants.
+We achieved disease gene identification in 52.7% of AMC patients including nine recently identified genes (CNTNAP1, MAGEL2, ADGRG6, ADCY6, GLDN, LGI4, LMOD3, UNC50 and SCN1A).
+Moreover, we identified disease-causing variants in ASXL3 and STAC3, expanding the physical attributes linked with these genes.
+The most frequent cause of AMC was linked to skeletal muscle (40%) followed by brain (22%).
+The most frequent mode of inheritance is from both parents (66.3% of patients).
+In irregular patients born to non-related parents (n=60), new, inherited or sex chromosome linked types were observed in 30 of them (50%).
+In conclusion, new genes recently identified in AMC represent 21% of causing genes in our group.
+A high amount of new gene types were observed, indicating that genes plays a prominent part in this developmental disease.
+Our data showed the added value of whole gene labeling when compared with targeted gene labeling due to the larger medical variance of some disease genes than expected and the identification of new genes.

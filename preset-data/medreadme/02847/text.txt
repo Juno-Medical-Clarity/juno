@@ -1,0 +1,1 @@
+We experimentally quantified the dynamics of hb gene expression in flies that were wild - type, were mutant for hb self - regulation or Bcd binding, or contained an artificial promoter construct consisting of six Bcd and two Hb sites.

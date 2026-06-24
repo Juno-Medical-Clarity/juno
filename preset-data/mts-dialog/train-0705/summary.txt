@@ -1,0 +1,2 @@
+[MEDICATIONS]
+Insulin, metformin, Glucotrol, and Lipitor.

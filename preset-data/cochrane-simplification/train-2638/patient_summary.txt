@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2638  |  gem_id: gem-cochrane-simplification-train-2639  |  doi: 10.1002/14651858.CD003683.pub2
+
+This review of trials suggests that exercise has positive short-term effects on self-esteem in children and young people, and concludes that exercise may be an important measure in improving children's self-esteem. However, the reviewers note that the trials included in the review were small-scale, and recognise the need for further well-designed research in this area.

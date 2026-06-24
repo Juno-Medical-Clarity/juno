@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0371  |  gem_id: gem-cochrane-simplification-train-372  |  doi: 10.1002/14651858.CD001552.pub2
+
+This review aimed to compare surgical decompression with non-surgical treatments such as splinting or corticosteroid injections. Four trials were found and included, while three are awaiting assessment. The results suggest that surgical treatment is probably better than splinting but it is unclear whether it is better than steroid injection. Further research is needed for those with mild symptoms.

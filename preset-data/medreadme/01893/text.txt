@@ -1,0 +1,1 @@
+The lightmask arm did not show any difference in effect compared with the non-lightmask arm [adjusted mean difference between arms -0. 65 um, 95% confidence interval -6. 90 to 5. 59 um; p = 0. 84).

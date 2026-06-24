@@ -1,0 +1,12 @@
+source:      plos_genetics
+side:        simple
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'somatic expansion'
+  [8:9] 'abbr-medical' -> 'HD'
+  [17:20] 'medical-jargon-google-easy' -> 'genetic mapping approach'
+  [21:22] 'medical-jargon-google-easy' -> 'inbred'
+  [29:31] 'medical-jargon-google-easy' -> 'somatic expansion'
+  [35:39] 'medical-jargon-google-easy' -> 'targeted gene knockout approaches'

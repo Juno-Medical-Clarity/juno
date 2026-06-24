@@ -1,0 +1,10 @@
+Objective: To evaluate the effectiveness of topical pentoxifylline (PTX) on pressure ulcer (PU) healing in critically ill patients.
+Method: In this randomised, double blind, placebo-controlled clinical trial, patients with category I or II PUs were randomly assigned to receive either topical PTX 5% or a placebo twice daily for 14 days.
+Changes in PU characteristics (category and size) were assessed.
+The category of the PU was determined by the Stirling Pressure Ulcer Severity Scale (two-digit) at baseline (day zero), day seven and day 14 of treatment.
+PU length and width was measured with a disposable ruler and expressed as cm2.
+Results: A total of 112 adult patients were enrolled in the study.
+Median PU size and score at day zero were 32 (10.00-69.33)cm2 and 1(1.00-2.00) respectively.
+In the PTX group, the mean differences (95% confidence interval, CI) of all PU scores and sizes decreased significantly across the intervals (day seven versus day zero, day 14 versus day zero, and day 14 versus day seven), compared with the placebo group
+Conclusion: The severity and size of PUs improved significantly in patients who received topical PTX 5% ointment twice a day for 14 days compared with those in the placebo group.
+Topical PTX may be considered as a potential option in the treatment of categories I and II PUs in critically ill patients.

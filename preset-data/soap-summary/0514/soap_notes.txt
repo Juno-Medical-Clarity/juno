@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0514
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient works as a petroleum engineer.
+- Drinks socially at parties.
+- Does not smoke.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

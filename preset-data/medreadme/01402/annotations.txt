@@ -1,0 +1,10 @@
+source:      MSD
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-easy' -> 'thoracic compression fractures'
+  [6:8] 'medical-jargon-google-easy' -> 'dorsal kyphosis'
+  [11:13] 'medical-jargon-google-easy' -> 'cervical lordosis'
+  [14:18] 'medical-jargon-google-easy' -> 'dowager ’ s hump'

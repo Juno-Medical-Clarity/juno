@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0669
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a school nurse.
+- Enjoys working with children.
+- Does not drink alcohol.
+- Quit smoking cigarettes about twenty-five years ago.
+- Married, but unsure of the duration of marriage.
+- Lives with husband.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

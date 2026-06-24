@@ -1,0 +1,21 @@
+Doctor: How old are you?
+Patient: Oh, I am fifty eight now.
+Doctor: So, you are here today because you are having some vision difficulties? Tell me about what has been going on, ma'am.
+Patient: Yeah. Okay. It all started a year ago. It started with losing the color in my vision.
+Doctor: Was the loss sudden or gradual?
+Patient: Gradual. And now I am starting to have blurry vision.
+Doctor: When did that start happening?
+Patient: I noticed it two months ago.
+Doctor: Is the blurred vision an all blur or is there a blind spot of blurred vision.
+Patient: It is an all over vision blur and then I have on blind spot in my right eye.
+Doctor: Have you had any fluctuations in your symptoms in the last year? Have you gained any vision back?
+Patient: Some days I feel like things are a little better but not much. I have basically been the same.
+Doctor: Have you experienced any weakness, dizziness, vertigo, nausea or vomiting?
+Patient: No.
+Doctor: Any double vision or headaches?
+Patient: No.
+Doctor: Any pain in or behind the eye at all?
+Patient: No.
+Doctor: Any other health concerns or complains?
+Patient: No. Just the vision problems.
+Doctor: Alright! Let me take a look here.

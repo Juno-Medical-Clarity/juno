@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1520  |  gem_id: gem-cochrane-simplification-train-1521  |  doi: 10.1002/14651858.CD005011.pub4
+
+This review included 29 randomised controlled trials with 4290 patients. The trials showed modest reductions in total blood loss or red cells transfused (equivalent to less than one unit of red cell transfusion) with the use of rFVIIa. However, the reductions were likely to be overestimated due to the limitations of the data. We also observed an increase in the risk of having a blood clot in the arteries (such as a heart attack or stroke) in those patients receiving rFVIIa. When taken together, the data supporting the off-license use of recombinant FVIIa are weak. The use of rFVIIa outside its current licensed indications should be restricted to clinical trials.

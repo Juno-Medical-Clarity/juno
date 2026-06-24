@@ -1,0 +1,5 @@
+pmid:        27845713
+question:    32
+adaptation:  adaptation1
+title:       Novel Approaches to Investigate One-Carbon Metabolism and Related B-Vitamins in Blood Pressure
+sentences:   8

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0212  |  gem_id: gem-cochrane-simplification-validation-213  |  doi: 10.1002/14651858.CD001453.pub2
+
+The review analysed the effects of diuretics working on the deep part of the small kidney tubes (loop diuretics). The review of trials found that diuretics, given from a single dose to one week's treatment, inconsistently improved lung function and oxygen levels in the blood. There was not enough evidence to show any improvement in long-term outcome.

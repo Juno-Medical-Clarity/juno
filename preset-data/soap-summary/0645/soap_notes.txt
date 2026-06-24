@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0645
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- History of pinning surgery on both ears.
+- Patient was five or six years old at the time of surgery.
+- Surgery was performed when the patient was a child.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinical interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

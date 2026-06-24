@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1381
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history: No one in the family has any health problems.
+
+Objective:
+- (No observable data provided)
+
+Assessment:
+- (No clinician interpretation or diagnoses provided)
+
+Plan:
+- (No actions or plans provided)

@@ -1,0 +1,30 @@
+# SOAP Notes — Sample 1274
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Difficult headaches, tunnel vision, dizziness, photophobia.
+- Severity: "Super bad headaches", described as feeling like a "drum in my head."
+- Duration: Headaches started at age 25; experienced more headaches after husband's death in 1996; currently experiencing 1 to 2 headaches per week.
+- Associated symptoms: Dizziness lasting for about two hours, zigzag lines in vision.
+- Relevant medical history: Experienced headaches since age 25; took papaverine for six months, which helped; headaches returned in 2004.
+- Family history: Not explicitly mentioned.
+- Allergies: Not explicitly mentioned.
+- Other concerns: Expressed feeling heartbroken after husband's death; expressed concern about health and symptoms ("Will I be fine?").
+
+Objective:
+- Test results were provided by the patient.
+- Observations during examination: Patient experiences discomfort with bright light (photophobia).
+- Notable findings: Trouble seeing things in peripheral vision; experienced a syncope once.
+
+Assessment:
+- Headaches, likely migraines or tension-type headaches.
+- Dizziness potentially associated with headaches.
+- Tunnel vision with episodes of zigzag lines may indicate a possible neurological issue (e.g., aura associated with migraines).
+- Photophobia noted.
+- Syncope episode recorded.
+
+Plan:
+- Perform a vision test to check for any abnormalities.
+- Discuss potential medication adjustments or alternatives.
+- Educate patient about her symptoms and management options.
+- Follow up on test results and reassess symptoms during the next visit.

@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0712
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient is 48 years old. 
+- No menstrual periods for the last year after surgery. 
+- Experiencing hot flashes for the last several months; feels hot even in an air-conditioned room and sometimes desires to stand in front of the refrigerator. 
+- Mood swings for the last few weeks. 
+
+Objective: 
+- [No objective data mentioned] 
+
+Assessment: 
+- Mood swings associated with postsurgical menopause. 
+- Hot flashes attributed to postsurgical menopause. 
+
+Plan: 
+- [No plan provided]

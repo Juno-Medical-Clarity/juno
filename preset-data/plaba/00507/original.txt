@@ -1,0 +1,7 @@
+Elevated expression of β-amyloid (Aβ1-42) and tau are considered risk-factors for Alzheimer's disease in healthy older adults.
+We investigated the effect of aging and cerebrospinal fluid levels of Aβ1-42 and tau on 1) frontal metabolites measured with proton magnetic resonance spectroscopy (MRS) and 2) cognition in cognitively normal older adults (n = 144; age range 50-85).
+Levels of frontal gamma aminobutyric acid (GABA+) and myo-inositol relative to creatine (mI/tCr) were predicted by age.
+Levels of GABA+ predicted cognitive performance better than mI/tCr.
+Additionally, we found that frontal levels of n-acetylaspartate relative to creatine (tNAA/tCr) were predicted by levels of t-tau.
+In cognitively normal older adults, levels of frontal GABA+ and mI/t Cr are predicted by aging, with levels of GABA+ decreasing with age and the opposite for mI/tCr.
+These results suggest that age- and biomarker-related changes in brain metabolites are not only located in the posterior cortex as suggested by previous studies and further demonstrate that MRS is a viable tool in the study of aging and biomarkers associated with pathological aging and Alzheimer's disease.

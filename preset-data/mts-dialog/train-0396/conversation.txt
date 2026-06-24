@@ -1,0 +1,7 @@
+Doctor: Do you take Diovan, estradiol, Norvasc, Wellbutrin?
+Patient: Yes, and the Wellbutrin is an inhaler.
+Doctor: Okay so inhaler SR?
+Patient: Yes.
+Doctor: Do you take oxygen therapy at home?
+Patient: Yes.
+Doctor: Okay.

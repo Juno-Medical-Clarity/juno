@@ -1,0 +1,9 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 3.3
+split:       dev
+
+jargon_spans:
+  [1:2] 'abbr-general' -> 'RCT'
+  [9:10] 'medical-name-entity' -> 'NHS'
+  [10:11] 'abbr-medical' -> 'GP'

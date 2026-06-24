@@ -1,0 +1,10 @@
+source:      plos_genetics
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [8:10] 'medical-jargon-google-easy' -> 'transformer gene'
+  [13:16] 'medical-jargon-google-easy' -> 'somatic sex differentiation'
+  [19:23] 'medical-jargon-google-easy' -> 'X chromosome dosage compensation'
+  [29:31] 'medical-jargon-google-easy' -> 'Lucilia cuprina'

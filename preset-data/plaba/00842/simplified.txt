@@ -1,0 +1,9 @@
+Iron is a necessary nutrient for many metabolic processes in almost all living organisms.
+During infections, a battle for iron takes place between the human and disease-causing organisms (pathogens).
+The liver protein hepcidin, which is linked to defensins (bacteria-fighting proteins of the immune system), plays an important role by taking iron from pathogens by moving iron into human cells, mainly immune cells.
+While this event is well known in certain bacterial infections, much less is known about viral infections.
+Iron metabolism may also affect the function of cells of the immune system.
+Once stimulated by touching cells with parts of foreign organisms attached to them, immune cells need iron to sustain the energy needed for an effective cellular and immune response.
+The COVID-19 pandemic (caused by a virus causing a lung infection) has boosted clinical and medical research over the possible influences of nutrients on SARS-CoV-2 infection, in terms of either contracting or aiding the infection.
+Here we review the links between iron metabolism and COVID-19, belonging to the wider field of study of the so-called "nutritional immunity".
+A better understanding of these links may help develop more effective strategies for managing COVID-19 and possible future pandemics.

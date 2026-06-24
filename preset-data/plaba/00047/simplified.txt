@@ -1,0 +1,21 @@
+Classifying diabetes was originally limited to either juvenile-onset diabetes mellitus, or type 1 diabetes mellitus, and adult-onset diabetes mellitus, or type 2 diabetes mellitus.
+Classification of diabetes now recognizes over 50 subcategories by disease-causing biological processes or accompanying diseases.
+Diagnosing diabetes has grown from a physician recognizing typical signs to detecting high blood sugar to defining high blood sugar after an overnight fast and/or tolerance test with glucose (a simple sugar). Recently, the diagnosis involves measuring glycated hemoglobin (A1c), an iron-rich protein in blood joined to a sugar.
+Testing now shows higher widespreadness of and enormous public health impact of diabetes in the United States and elsewhere.
+Current testing has detected those at risk for diabetes and pregnant women whose fetuses are at higher risk for death and illness.
+Diagnostic glycemic (blood sugar) criteria for before-symptom diabetes have been set using diabetic retinopathy (eye-affecting diabetes) as a specific effect of the disease: A1c ≥6.5%; fasting plasma glucose (FPG) ≥126 mg/dL; or blood glucose (sugar) measured 2 hours after an OGTT (2-hour PG) ≥200 mg/dL.
+For patients with typical symptoms, a random blood glucose ≥200 mg/dL is diagnostic.
+The 2-hour PG (a type of blood sugar measurement) yields the highest prevalence and A1c (another test for diabetes) the lowest.
+A1c is the most convenient and practical test, needing no preparation, is analytically betterr, and has the lowest variation.
+It is more expensive than the FPG (a diabetes test), but the same or less than the OGTT (a diabetes test).
+The 2-hour PG is the most burdensome to the patient and has the highest variation.
+Comparable measurement of A1c is not available everywhere.
+Checking an abnormal test with the same test is recommended.
+Studies in various groups show inconsistency among the glycemic tests.
+Of people meeting the A1c criterion, 27%–98% meet plasma glucose criteria.
+Of people meeting plasma glucose criteria, 17%–78% meet the A1c criterion.
+These discrepancies occur because each test measures different aspects of hyperglycemia (high blood sugar) that may vary among patients.
+While the risk of future diabetes is continuously associated with plasma glucose and A1c, the areas between the upper limits of normal and the diabetes cutpoints have been called “prediabetes” or “high risk for diabetes.” These have been defined categorically as A1c 6.0%–6.4% or 5.7%–6.4%; impaired fasting glucose (IFG), FPG 100–125 mg/dL; and impaired glucose tolerance (IGT), 2-hour PG 140–199 mg/dL. A1c 6.0%–6.4% increases the odds ratio (OR) for progression to diabetes (OR 12.5–16) more than the range of 5.7%–6.4% (OR 9.2).
+In U.S. studies, the incidence of type 2 diabetes averages approximately 6% per year in people with IGT and can reverse spontaneously.
+IFG is more prevalent than IGT in the United States, though IGT rises more sharply with age.
+IFG increases the risk of future diabetes to various degrees in different countries, with odds ratios ranging from 2.9 to 18.5.

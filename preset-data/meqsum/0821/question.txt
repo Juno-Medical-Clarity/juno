@@ -1,0 +1,13 @@
+Name: [NAME]
+Date and Time of Contact: Thu, 1 Jan 2015 16:10:06 GMT
+Application: myncbi
+SessionId: CE9069DE4A56A0A1_0093SID
+MyNCBI UserName:
+Host: portal205
+Snapshot: /projects/MyNCBI/myncbiPortal@2.45
+Browser's user agent header: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)
+Application Page Generation Time: 2015-01-01T11:03:27-05:00
+Page: recentactivity
+Message Body: We live in [LOCATION] and my husband has been detected an insulinoma.Need further information on the matter as doctors have not seen one here.
+Greatly appreciate your reply. Happy New Year to you
+all and many many tahanks for your help.

@@ -1,0 +1,12 @@
+source:      plos_genetics
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [3:6] 'medical-jargon-google-easy' -> 'BRCA1 / 2'
+  [7:8] 'medical-jargon-google-easy' -> 'PALB2'
+  [8:9] 'medical-jargon-google-easy' -> 'mutation'
+  [34:35] 'abbr-medical' -> 'CNVs'
+  [60:62] 'medical-jargon-google-easy' -> 'estrogen signaling'
+  [63:68] 'medical-jargon-google-easy' -> 'TP53 centered tumor suppressor network'

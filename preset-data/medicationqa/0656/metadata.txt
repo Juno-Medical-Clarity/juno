@@ -1,0 +1,5 @@
+drug_focus: tetracycline
+question_type: Action
+section_title: Pharmacokinetics of tetracyclines and glycylcyclines
+source_url: https://www.ncbi.nlm.nih.gov/pubmed/19399726
+sample_id: 0656

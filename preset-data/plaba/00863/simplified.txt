@@ -1,0 +1,9 @@
+The immune system is critical in preventing infection and cancer, and malnutrition can weaken different aspects of the immune system to decrease immunity.
+Previous research suggested that vitamin B6 deficiency could decrease blood antibody production resulting in an increase in IL4 (cytokine-chemical marker of inflammation) production.
+Facts about whether vitamin B6 deficiency would impair immune cell function, cytokines secretion, and production of chemicals involved in (JAK/STAT signaling) a pathway that helps control the immune response are largely unknown.
+Researchers study the effects of vitamin B6 deficiency on the immune system by studying T lymphocyte (type of white blood cell) function, the secretion of immune chemicals, and the function of certain genes.
+We made a vitamin B6-deficient mouse model by supplying a diet without enough vitamin B6.
+The results showed that vitamin B6 deficiency slows down growth and inhibits lymphocyte cell production and functions.
+When T lymphocytes were activated,  vitamin B6 deficiency influenced the secretion of some immune chemicals.
+This study showed that vitamin B6 deficiency affected the function of certain genes.
+The right amount of supplement of vitamin B6 could benefit immunity of the organism.

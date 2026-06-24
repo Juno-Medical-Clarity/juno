@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0896
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not smoke or drink.
+- No history of drug abuse; has never used any illegal drugs in their life.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

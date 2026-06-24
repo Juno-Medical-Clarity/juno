@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [2:3] 'general-complex' -> 'quantitative'
+  [5:6] 'general-complex' -> 'masked'

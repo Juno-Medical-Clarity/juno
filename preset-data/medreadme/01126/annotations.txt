@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        simple
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [12:15] 'medical-name-entity' -> 'RETHINK mental illness'

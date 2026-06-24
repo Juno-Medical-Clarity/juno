@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1693  |  gem_id: gem-cochrane-simplification-train-1694  |  doi: 10.1002/14651858.CD006894.pub2
+
+The review of 10 studies (786 patients) found that mupirocin ointment reduced the risk of patients developing catheter-related bacteraemia (bacteria in the blood). However, monitoring of mupirocin resistance needs to be considered in future studies. There was not enough evidence to determine which ointment (povidone-iodine and polysporin) or dressing was the best in preventing infection. There was also insufficient evidence to support the use of medicinal honey for the prevention of infection.

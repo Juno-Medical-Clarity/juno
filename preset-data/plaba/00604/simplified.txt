@@ -1,0 +1,6 @@
+Cystic Fibrosis (CF) is an inherited disease, which leads to mucus buildup in many organs, caused by mutations in a specific gene, which encodes a channel located at the surface of boundary cells.
+Lack of Unsaturated Fatty Acid (UFA), a certain form of fat, has been a common observation for patients with CF.
+However, the effects of such deficiencies on the causes of the disease are debated.
+This review aims to highlight the general consensus on fatty acid impairment that comes from, sometimes contradictory, studies.
+In a second step, how the possible effects of this fatty acid impairment occur in CF cells, based on changes in cell boundary properties, is explored.
+Finally, how fat toxicity contribtues to progression of the CF disease and affects the success of current treatments is discussed.

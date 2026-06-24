@@ -1,0 +1,5 @@
+pmid:        26692738
+question:    49
+adaptation:  adaptation1
+title:       A rare case of bilateral lower extremity edema due to low dose gabapentin therapy in a young male patient
+sentences:   11

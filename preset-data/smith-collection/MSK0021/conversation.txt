@@ -1,0 +1,242 @@
+# Smith Collection Transcript: MSK0021
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What can i do for you
+
+Patient: Hi there yeah ive had this pain in my knee thats been going on for a few weeks now and it hasnt gone away and and so i thought i would get checked out its been really impacting my running i just havent been able to run as often as i would like to and so thats why i wanted to get this looked at
+
+Doctor: Yeah for sure you said it started a couple of weeks ago was that two weeks ago three weeks ago or more than that
+
+Patient: Yeah i would say maybe its been going on for the past four weeks for the past month
+
+Doctor: Past month ok and is it a constant type of pain or does it come and go
+
+Patient: It comes and goes yeah and it depends on what im doing
+
+Doctor: OK uhm alright and what kind of makes it worse or better
+
+Patient: So if im out while running what will bug it but i think like that the main things that hurt are if im walking down stairs or if if im squatting i like to lift weights as well and yeah i could barely even do body weight now cause if i im squatting down it causes a lot of pain its a sharp pain
+
+Doctor: OK ok and if you were to describe the quality of your pain would you say its achy throbbing dull sharp burning
+
+Patient: uh its a sharp pain
+
+Doctor: Sharp pain ok and one to 10 10 being the worst pain youve ever had how bad is this pain
+
+Patient: Its about a 7
+
+Doctor: 7 and have you ever had pain like this in the past
+
+Patient: uh no i havent
+
+Doctor: OK and do you feel like your pains getting worse over the past four weeks
+
+Patient: uh yeah it has gotten has gotten a bit worse
+
+Doctor: OK uhm alright and do you are you experiencing any sort of muscle weakness
+
+Patient: No muscle weakness
+
+Doctor: No ok how about numbness or tingling
+
+Patient: No numbness or tingling
+
+Doctor: Headaches
+
+Patient: No
+
+Doctor: Confusion or memory loss
+
+Patient: Nope
+
+Doctor: Any joint pains or muscle aches outside of the area of this left knee
+
+Patient: No just just the left knee
+
+Doctor: And whereabouts on the left knee is it
+
+Patient: Its on the anterior aspect like on the front of it but i i could it feels like the pain is right behind my like right underneath the kneecap
+
+Doctor: Right underneath the knee ok
+
+Patient: Yeah
+
+Doctor: OK alright and otherwise like have you had any weight loss
+
+Patient: No my way its been the same
+
+Doctor: OK how about fevers or chills
+
+Patient: No fevers or chills
+
+Doctor: OK how about fatigue
+
+Patient: No fatigue energys been good
+
+Doctor: OK changes in your hair or nails like rashes
+
+Patient: No nothing nothing like that
+
+Doctor: OK changes in your vision hearing smell or taste
+
+Patient: Nope thats all been normal
+
+Doctor: OK alright how about coughing shortness of breath or wheezing
+
+Patient: uh no not notnothing like that
+
+Doctor: OK chest pain or heart palpitations
+
+Patient: Nope no chest pain or or anything like that
+
+Doctor: OK any changes in your bowel movements
+
+Patient: Nope i havent had any diarrhea or any blood
+
+Doctor: OK any changes in your urination
+
+Patient: No
+
+Doctor: No ok alright and are you otherwise healthy or do you have any longstanding medical conditions
+
+Patient: I do have ah asthma so i i do take a an inhaler i have a daily a daily one that ill use and then just a like rescue one so like the blue one that ill use sometimes but i havent needed that one for for awhile ive been pretty good i dont even need it when im going or runs anymore
+
+Doctor: OK ok thats good and are you on any medications
+
+Patient: Yeah just the just the inhalers and then i took uh birth control as well ive been taking that since i was 16 so yeah so for like 6 years 7 years
+
+Doctor: OK alright and are you have you been hospitalized or had surgeries in the past
+
+Patient: No i havent had any
+
+Doctor: OK how about immunizations are you up to date
+
+Patient: I am yes
+
+Doctor: OK how about allergies do you have any
+
+Patient: uh i uhm i dont no
+
+Doctor: No allergies ok good and any family history of musculoskeletal issues
+
+Patient: uh no ah well i think my grandparents have like osteoarthritis or something like that they but thats it
+
+Doctor: OK uhm how about longer heart conditions
+
+Patient: No nothing like that
+
+Doctor: OK and any autoimmune conditions
+
+Patient: No i dont believe so
+
+Doctor: No ok how about cancers
+
+Patient: uh no no cancers in the family
+
+Doctor: OK and and do you smoke
+
+Patient: No i i try to stay away from that with all the running and stuff that im doing im uh i want to make sure that im able to to improve
+
+Doctor: Yeah for sure and how about marijuana do you consume that in any form
+
+Patient: No i dont
+
+Doctor: No ok and how about recreational drugs
+
+Patient: No i stay away from that stuff too
+
+Doctor: OK ok good and who do you live with and where do you live right now
+
+Patient: So i live with a couple of roommates at school just finishing up my undergraduate degree
+
+Doctor: OK ok uhm have you been in contact with anyone sick recently
+
+Patient: No i dont i dont think so everybodys been been healthy
+
+Doctor: OK ok and travel anywhere
+
+Patient: No weve been at been at home
+
+Doctor: OK ok uhm alright so i think those are all the questions that i have for you lets move on to the physical exam part of this interview if thats ok with you so im going to get you to take a look at both your knees and let me know if you see more redness or swelling in your left knee compared to your right
+
+Patient: uh no im not noticing any swelling
+
+Doctor: Do you see any redness
+
+Patient: No no redness
+
+Doctor: No ok how about any atrophy deformities or skin changes in your left knee compared to your right knee
+
+Patient: No nothing like that
+
+Doctor: No ok im gonna get you to press down and palpate on your quadriceps on both knee sorry on both thighs do you feel any pain there
+
+Patient: uh no pain there
+
+Doctor: OK how about when you press down on your knee caps
+
+Patient: Yeah i do get some pain when i push on the on the kneecap uhm on my left knee
+
+Doctor: OK how about just below that where your shins start
+
+Patient: No pain there
+
+Doctor: No pain there and then how about on the lateral aspects of your knee
+
+Patient: Ah no pain there
+
+Doctor: And then the medial aspects of your knee
+
+Patient: No pain there
+
+Doctor: No pain there ok good when you are palpating was there a difference in temperature between the left and right knee was the left knee a little bit more warm than the right knee
+
+Patient: No the temperature feels the same
+
+Doctor: OK ok good so now im going to uhm are you sitting down
+
+Patient: I am yes
+
+Doctor: OK so from a sitting position im going to get you to stand up uhm and you let me know if that is painful
+
+Patient: It is yeah
+
+Doctor: Yeah ok uhm and then how about when you bend your knees
+
+Patient: Uhm no no pain with just bending
+
+Doctor: OK how about when you uh when you flex your hips so you can do one leg at a time does that hurt
+
+Patient: Oh no that doesnt hurt
+
+Doctor: OK and how about squatting down
+
+Patient: That does hurt yeah squatting hurts
+
+Doctor: Squatting hurts ok ok and then how about when you point your toes towards the ceiling
+
+Patient: No pain
+
+Doctor: OK how about when you point your toes towards the ground
+
+Patient: No pain
+
+Doctor: No pain so no pain on dorsiflexion or planter flexion ok do you hear any like popping or crackling sounds in your knees when you climb stairs or when youre standing up after sitting down for a long time
+
+Patient: Yeah yeah sometimes i will hear uhm some some like yeah crackling sounds
+
+Doctor: OK alright and yeah you mentioned that you do a lot of running do you do any other sorts of exercises
+
+Patient: Yeah ill do some weight lifting and like cycling as well i mean all kinds of different stuff we just like staying as active as i can
+
+Doctor: OK alright yeah given your young age and the fact that you do a lot of running and a lot of physical activity like cycling and lifting weights what you have is most likely something called a patellofemoral syndrome and that is basically a nerve uh kind of pain and then in the in the soft tissues and bone around your kneecap uhm and its basically happens because of overuse so vigorous physical activities that put repeated stress on your knees like running and cycling uhm can cause that or just like improper sports training techniques uhm we can do a few things that thatll help with the pain so for a little bit if you could hold off on the running that would be good so in the meantime while you while you switch to like low impact activities whether thats like riding a stationary bike or swimming you can also try something called the rice method and so that stands for resting uhm so avoiding putting any strain on that knee using ice packs for several days compression so wrapping your knee in like an elastic bandage as well as elevating your knees higher than your then the level of your chest can help and then with the sharp pain you could also also take ibuprofen for pain management uhm yeah so we can start there if it doesnt get better we can also order an xray just to rule out other things that could have caused this pain in your knee and if none of those nonsurgical treatments work oh sorry i also forgot to mention will also refer you to physiotherapy to help you with the range of motion and strength and endurance but of those non surgical treatments work well also refer you to like am arthroscopy or some sort of surgery that may be able to fix the issue more permanently does that sound ok
+
+Patient: It does yeah thank you
+
+Doctor: OK yeah no worries

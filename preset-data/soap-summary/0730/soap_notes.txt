@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0730
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No history of drinking alcohol.
+- No history of smoking.
+- No use of harder drugs.
+- No history of sexually transmitted diseases (STDs).
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

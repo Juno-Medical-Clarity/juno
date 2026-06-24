@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1424
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+History of any illnesses, surgeries, or hospitalizations? I dislocated my wrist when I was a kid but that's all.

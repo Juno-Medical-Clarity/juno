@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0352
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, do you have any family history of cancer? Well, yes, but I can't remember who had what kind. Still, that's helpful, thank you. What about heart disease? That too, there's some history of heart disease, but I can't remember who.

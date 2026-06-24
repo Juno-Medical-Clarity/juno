@@ -1,0 +1,8 @@
+source:      elife
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'proteasome'
+  [13:15] 'medical-jargon-google-easy' -> 'ATPase enzymes'

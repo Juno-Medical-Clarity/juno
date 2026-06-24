@@ -1,0 +1,1 @@
+We use protein similarity networks to guide an analysis of how structural and sequence motifs track with catalytic function and taxonomic categories for 4, 082 representative sequences spanning the known superfamilies of the Trx fold.

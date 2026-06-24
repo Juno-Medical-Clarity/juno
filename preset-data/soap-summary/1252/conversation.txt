@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1252
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have a known- Drug allergy? Oh no, I meant family history of disease.

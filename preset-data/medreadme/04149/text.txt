@@ -1,0 +1,1 @@
+We planned to subgroup according to training modality applied, but there were insufficient data.

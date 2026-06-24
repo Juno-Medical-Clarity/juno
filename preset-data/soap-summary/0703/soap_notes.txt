@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0703
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient is in foster care. 
+- Foster mom is going out of town from the nineteenth to the twenty-third. 
+- Patient expresses a desire for their mom and grandmother to visit on Thursday, the day they usually visit at the foster home. 
+
+Objective: 
+- No measurable or observable data provided.
+
+Assessment: 
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan: 
+- Arrange for the patient's mom and grandmother to visit on Thursday. 
+- Keep the patient in the hospital until the foster mom returns from her trip.

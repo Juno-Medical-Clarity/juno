@@ -1,0 +1,9 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Dengue fever'
+  [2:3] 'medical-jargon-google-easy' -> 'epidemic'
+  [12:13] 'medical-jargon-google-easy' -> 'vectors'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0383  |  gem_id: gem-cochrane-simplification-validation-384  |  doi: 10.1002/14651858.CD007854.pub3
+
+We have included 42 trials of acupuncture and acupressure compared to a control (sham/placebo, medication, Chinese herbs, no treatment or usual care) in a total of 4640 women of reproductive age with period pain. Twenty-two studies were undertaken in China. Eight studies were undertaken in Iran, four studies in Taiwan, two studies in Korea, and one each in Australia, Germany, Hong Kong, Thailand, Turkey, and the USA.The evidence is current to September 2015. There was insufficient evidence to demonstrate whether or not acupuncture or acupressure is effective in treating primary dysmenorrhoea, and for most comparisons no information was available on adverse events. The quality of the evidence was low or very low for all comparisons. The main limitations were risk of bias, poor reporting, inconsistency and risk of publication bias.

@@ -1,0 +1,8 @@
+Histones are proteins that provide structural support to a chromosome and sometimes act as the spool that the thread-like DNA wraps around. Linker histones play a major role in organizing DNA and proteins to create the nucleus (genetic material) inside cells (a process called chromatin organization) and are key players in balancing the genome, which is an organism's complete set of genetic instructions.
+Linker histones not only interact with DNA and other histones but also with other chromatin (DNA-attached) proteins.
+These interactions prove to be very important for the higher levels of chromatin organization.
+Recent results find that one linker histone, called Hho1p, physically interacts with another protein (Arp4) and that the removal of this interaction by deleting the gene for the linker histone leads to many changes in the physical folding of DNA structures (a process called chromatin compaction).
+Here, researchers show that the healthy interaction between the yeast linker histone and Arp4p is critical for keeping the genome stable and for controlling how sensitive cells are to different types of stress.
+The interaction that stopped between the linker histone and Arp4p leads the changed yeast cells to start aging early.
+Cells die young and are more sensitive to stress.
+These results prove the role of linker histones and chromatin changes in aging cells through their cooperation in chromatin compaction (folding of DNA structure) and thus maintaining genome stability.

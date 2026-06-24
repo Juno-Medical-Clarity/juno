@@ -1,0 +1,8 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.3
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Cynomolgus macaques'
+  [8:11] 'medical-jargon-google-hard' -> 'invariant NKT lymphocytes'

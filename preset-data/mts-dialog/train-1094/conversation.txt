@@ -1,0 +1,7 @@
+Doctor: Can you tell me what are the diseases you have been diagnosed with in the past?
+Patient: Sure, I have had hypertension, diabetes, asthma and cholesterol problem.
+Doctor: Ok, is there anything else?
+Patient: Nope.
+Doctor: And it is type two diabetes, right?
+Patient: Yes.
+Doctor: Thank you!

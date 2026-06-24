@@ -1,0 +1,8 @@
+Background: In diabetic patients, postprandial glucose levels, which have a major impact on metabolic control, are determined by the rate of nutrient delivery into the intestine, absorption of nutrients from the small intestine, and the metabolism of the absorbed nutrients by the liver.
+The present study addresses whether Type 1 diabetic patients have increased intestinal permeability and intestinal permeability predicts postprandial glucose variability.
+Material and methods: Thirty Type 1 diabetic patients together with 15 sex- and age-matched healthy controls were enrolled in the study.
+After an overnight fasting all patients and controls received 100 micro Ci 51 Cr of EDTA as a radioactive tracer and the percentage of the isotope excreted in a 24-h urinary specimen was the permeability measure.
+Instant blood glucose was measured just before the test, and the patients performed and recorded self-monitoring of fasting and 2nd-hour postprandial blood glucose levels during the following week.
+Results: We found that intestinal permeability is increased in Type 1 diabetic patients compared with age- and sex-matched healthy controls.
+Increased intestinal permeability is related at least in part to the instant blood glucose level and the presence of diabetic autonomic neuropathy.
+Conclusion: Increased intestinal permeability leads to higher variation in postprandial blood glucose levels, thereby worsening metabolic control.

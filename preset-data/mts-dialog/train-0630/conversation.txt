@@ -1,0 +1,3 @@
+Doctor: You are referred for some abdominal infection right?
+Patient: Yes, they told me I might have C Diff?
+Doctor: Yes that's what we will evaluate you for.

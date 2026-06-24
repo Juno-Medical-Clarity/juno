@@ -1,0 +1,10 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 5.15
+split:       dev
+
+jargon_spans:
+  [8:10] 'medical-jargon-google-easy' -> 'in vitro'
+  [12:13] 'medical-jargon-google-easy' -> 'mycobacterial'
+  [16:18] 'medical-jargon-google-easy' -> 'M. marinum'
+  [19:21] 'medical-jargon-google-easy' -> 'M. ulcerans'

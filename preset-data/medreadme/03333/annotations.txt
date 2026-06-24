@@ -1,0 +1,10 @@
+source:      wiki
+side:        simple
+readability: 5.35
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Epoprostenol'
+  [2:4] 'medical-jargon-google-easy' -> 'synthetic prostacyclin'
+  [7:8] 'medical-name-entity' -> 'Flolan'
+  [18:22] 'medical-jargon-google-easy' -> 'semi-permanent central venous catheter'

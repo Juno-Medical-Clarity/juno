@@ -1,0 +1,5 @@
+pmid:        34504054
+question:    14
+adaptation:  adaptation1
+title:       The self-assembled nanoparticle-based trimeric RBD mRNA vaccine elicits robust and durable protective immunity against SARS-CoV-2 in mice
+sentences:   7

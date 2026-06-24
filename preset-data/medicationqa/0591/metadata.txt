@@ -1,0 +1,5 @@
+drug_focus: shingrix
+question_type: Information
+section_title: What Everyone Should Know about Shingles Vaccine (Shingrix)
+source_url: https://www.cdc.gov/vaccines/vpd/shingles/public/shingrix/index.html
+sample_id: 0591

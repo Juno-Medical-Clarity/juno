@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0355
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is here for a yearly physical.
+- Past medical history includes asthma, nasal inflammation, and some abnormal growth on the neck.
+- Patient usually does not remember health-related issues; relies on wife for health information.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, or follow-up mentioned.

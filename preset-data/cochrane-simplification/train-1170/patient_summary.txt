@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1170  |  gem_id: gem-cochrane-simplification-train-1171  |  doi: 10.1002/14651858.CD008410.pub2
+
+This review identified one randomised controlled study (involving 883 women) at 26 to 42 weeks' gestation and in early labour who were admitted to a tertiary hospital in USA (between July 1992 and January 1993). Measuring the amount of amniotic fluid when women were admitted did not improve infant outcomes but increased/doubled the caesarean section rate for fetal distress. The use of artificial oxytocin for augmentation of labour was also higher in the group of women who received the test than for those that did not. Because of the limited evidence (one study with a small sample size), we cannot make a meaningful conclusion or recommendations. More studies are needed.

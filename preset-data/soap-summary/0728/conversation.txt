@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0728
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any medical diseases in the family? Yeah, mainly heart issues. My father died from heart attack. What about your mother? She had the second type of diabetes.

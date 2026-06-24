@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1863  |  gem_id: gem-cochrane-simplification-train-1864  |  doi: 10.1002/14651858.CD008186.pub2
+
+This review of four trials, which included 94 participants, found there is not enough evidence to decide if water-based exercises may reduce disability after stroke. There is a lack of hard evidence for water-based exercises after stroke. More research is therefore needed.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1218
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anyone sick at home? No, fortunately. Everyone else is feeling fine.

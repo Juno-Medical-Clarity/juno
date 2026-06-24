@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [2:7] 'medical-jargon-google-easy' -> 'community - based peer support'

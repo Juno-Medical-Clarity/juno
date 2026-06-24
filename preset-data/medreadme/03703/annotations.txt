@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.65
+split:       test
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'NKT lymphocytes'
+  [21:24] 'medical-jargon-google-hard' -> 'IFN - g'
+  [25:28] 'medical-jargon-google-hard' -> 'IL - 13'
+  [30:33] 'medical-jargon-google-hard' -> 'IL - 17'
+  [36:40] 'medical-jargon-google-hard' -> 'CD1d / a-galactosylceramide stimulation'

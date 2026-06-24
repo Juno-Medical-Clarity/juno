@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0897  |  gem_id: gem-cochrane-simplification-train-898  |  doi: 10.1002/14651858.CD004431.pub2
+
+Sixteen relevant studies were identified and included in this review. They have researched a variety of different interventions, having different purposes, and so a single overall definite conclusion cannot be made. However the authors cautiously conclude that Cognitive Behavioural Therapy, a therapy that addresses thoughts and behaviours, can help people with MS adjust to, and cope with, having MS, and can help them if they get depressed. Psychological interventions can potentially help people with MS in many ways, including the management of symptoms such as pain and fatigue. Additional studies are needed, particularly those that include larger numbers of people.

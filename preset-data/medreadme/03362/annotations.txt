@@ -1,0 +1,7 @@
+source:      elife
+side:        simple
+readability: 4.5
+split:       dev
+
+jargon_spans:
+  [9:10] 'medical-jargon-google-easy' -> 'neurons'

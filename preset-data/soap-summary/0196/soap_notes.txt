@@ -1,0 +1,34 @@
+# SOAP Notes — Sample 0196
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough, SOB, wheezy
+- Cough for 5 years, worsened over past 3 days
+- Worse in the morning
+- Sputum: yellow/green, increased amount, no blood
+- Wheeze noticed mostly at night
+- SOB with walking, daily activities
+- Increased tiredness, sleep normal but affected by coughing
+- No ear/eye pain, discharge, runny nose, congestion, sore throat, swallowing difficulties, changes in smell/taste, appetite changes, weight loss, fevers, chills, night sweats, chest pain (except dull pain from coughing), palpitations, fainting, swelling, urinary/bowel problems, joint/muscle pain, rashes, nausea, vomiting
+
+Past Medical History:
+- PMHx: high blood pressure, diabetes
+- Medications: beta blocker (HTN), metformin (diabetes), calcium, vitamin D
+- No surgeries
+- No medication allergies
+- Immunisations up to date, needs pneumococcal vaccine
+- SocHx: ex-smoker (1 pack/day for 45 years, quit 2 years ago), occasional alcohol (once every 2 weeks)
+- No exposure to chemicals/triggers, no recent travel, no contact with sick individuals
+- FHx: liver cancer
+
+Objective:
+- 
+
+Assessment:
+- Possible viral/bacterial infection
+- Possible COPD exacerbation
+- Consider COVID-19
+
+Plan:
+- Investigations: PCR nasal swab for COVID-19, chest X-ray, other investigations
+- Follow-up with family doctor for pneumococcal vaccine

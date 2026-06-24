@@ -1,0 +1,5 @@
+drug_focus: hydrochlorothiazide
+question_type: Dose
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b38ac8a-4540-4eb2-aedd-9aa966d22190
+sample_id: 0378

@@ -1,0 +1,18 @@
+Doctor: Good morning, young man.
+Patient: Hello, doctor.
+Doctor: So, before we get started here, how old are you?
+Patient: I'm seventeen, sir.
+Doctor: Thank you, um, what happened?
+Patient: Um, so I got into a fight at juvie, and I hurt my left elbow during it.
+Doctor: I see, do you have any other pain?
+Patient: Well, I have some in my left ankle too.
+Doctor: Is this pain messing with your walking, or no?
+Patient: No, I can walk and everything just fine. I used to have some knee pain too, but that was in the past.
+Doctor: Did you get knocked out during the fight?
+Patient: No, I held my own, but I did get hit in the head.
+Doctor: So, your neck doesn't hurt from the fight?
+Patient: Nope, just my elbow and ankle.
+Doctor: Were any weapons used in the fight, like guns or knives?
+Patient: No sir, just fists.
+Doctor: Do you have any chest or abdominal pain?
+Patient: No, sir.

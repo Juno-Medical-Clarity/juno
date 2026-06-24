@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1275
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you drink? I used to drink before, but now I have stopped it completely. How would you rate your pain? It is tolerable, like five out of ten but I do need some pain medications. Then why do you need more pain medications? Sometimes it gets hard, I really need some more pain medications. Do you have morphine? Do you need more? I don't like morphine. Can you change it to Dilaudid? I like that medicine. That one works for me great.

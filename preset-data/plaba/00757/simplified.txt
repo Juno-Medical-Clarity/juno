@@ -1,0 +1,7 @@
+Our aim is to find what could cause wrong COVID-19 test results.
+Blood of 200 patients without COVID-19 infection was tested for proteins that protect against COVID-19 virus. 100 of the patients were healthy, the others had proteins that could attack their own bodies or proteins associated with pregnancy, 50 each.
+Pregnant women had more of the common anti-COVID protein, but all other groups had the same amounts.
+There was more anti-COVID protein the body makes when it fights a new infection in pregnant women, normal seniors, and people with proteins that attack their own body. These groups had significantly more false positive COVID test results.
+Some of the false positive tests caused by the protein that attack your own body can be turned into true negative by adding a chemical called urea to the test.
+False positive test results could be caused by pregnancy, old age and proteins that attack your own body.
+

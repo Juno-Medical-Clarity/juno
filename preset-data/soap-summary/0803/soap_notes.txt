@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0803
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+###Subjective:**
+- Symptoms: Crohn's disease, diabetes, high blood pressure, high cholesterol, heart disease, arthritis, depression.
+- Severity: Not explicitly mentioned.
+- Duration: Crohn's disease (25-30 years), diabetes (4 years), high blood pressure (duration not specified), high cholesterol (duration not specified), heart disease (stent placed, duration not specified), arthritis (recently diagnosed as due to Crohn's).
+- Associated symptoms: None explicitly mentioned.
+- Relevant medical history: Crohn's disease, diabetes, high blood pressure, high cholesterol, heart disease with stent placement, arthritis.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient inquires about the need for a colonoscopy (last done 4 years ago).
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- The clinician will ask the doctor for recommendations regarding the need for a colonoscopy.

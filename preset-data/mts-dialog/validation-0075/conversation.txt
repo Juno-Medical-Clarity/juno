@@ -1,0 +1,12 @@
+Doctor: How long have you been having this pain in your ear?
+Patient: It's been three or four days.
+Doctor: Okay, let me check your ears, which side is in pain?
+Patient: The left one.
+Doctor: Okay let me check both ears. Well, you have lot of fluid accumulated in your left ear, which has caused infection in your middle part of the ear. It is called as Serous Otitis.
+Patient: Nothing to worry about?
+Doctor: I will prescribe you some antibiotics, it should take care of it.
+Patient: Thank you!
+Doctor: Anything else?
+Patient: Ah yes, my eczema is also acting up.
+Doctor: Hm, you have a history of atopic dermatitis in other words eczema.
+Patient: Yeah, I have had it since childhood.

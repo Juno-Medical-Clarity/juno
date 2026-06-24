@@ -1,0 +1,8 @@
+Doctor: Hi, how are you?
+Patient: Hi! I am okay other then this back pain.
+Doctor: I am so sorry. Tell me about your back.
+Patient: Three nights ago, I fell on my steps bringing in the groceries from the car.
+Doctor: How did you land when you fell?
+Patient: I fell and landed on my right hip. I hit my low back on the railing.
+Doctor: I would like to get some imaging done today.
+Patient: Okay.

@@ -1,0 +1,12 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [1:2] 'medical-name-entity' -> 'GRASP'
+  [3:10] 'medical-jargon-google-easy' -> 'Getting it Right : Addressing Shoulder Pain'
+  [19:22] 'medical-jargon-google-easy' -> 'rotator cuff disorder'
+  [27:29] 'medical-jargon-google-easy' -> 'progressive exercise'
+  [34:35] 'medical-jargon-google-easy' -> 'physiotherapist'
+  [57:58] 'medical-jargon-google-easy' -> 'physiotherapist'

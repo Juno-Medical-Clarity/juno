@@ -1,0 +1,11 @@
+Aims: To describe the utilization of clostridial collagenase ointment (CCO) and medicinal honey debridement methods in real-world inpatient and outpatient hospital settings among pressure ulcer (PU) patients and compare the frequency of healthcare re-encounters between CCO- and medicinal honey-treated patients.
+Materials and methods: De-identified hospital discharge records for patients receiving CCO or medicinal honey methods of debridement and having an ICD-9 code for PU were extracted from the US Premier Healthcare Database.
+Multivariable analysis was used to compare the frequency of inpatient and outpatient revisits up to 6 months after an index encounter for CCO- vs medicinal honey-treated PUs.
+Results: The study identified 48,267 inpatients and 2,599 outpatients with PUs treated with CCO or medicinal honeys.
+Among study inpatients, n = 44,725 (93%) were treated with CCO, and n = 3,542 (7%) with medicinal honeys.
+CCO and medicinal honeys accounted for 1,826 (70%) and 773 (30%), respectively, of study outpatients.
+In adjusted models, those treated with CCO had lower odds for inpatient readmissions (OR = 0.86, 95% CI = 0.80-0.94) after inpatient index visits, and outpatient re-encounters both after inpatient (OR = 0.73, 95% CI = 0.67-0.79) and outpatient (OR = 0.78, 95% CI = 0.64-0.95) index visits in 6 months of follow-up.
+Limitations: The study was observational in nature, and did not adjust for reasons why patients were hospitalized initially, or why they returned to the facility.
+Although the study adjusted for differences in a variety of demographic, clinical, and hospital characteristics between the treatments, we are not able to rule out selection bias.
+Conclusion: Patients with CCO-treated PUs returned to inpatient and outpatient hospital settings less often compared with medicinal honey-treated PUs.
+These results from real-world administrative data help to gain a better understanding of the clinical characteristics of patients with PUs treated with these two debridement methods and the economic implications of debridement choice in the acute care setting.

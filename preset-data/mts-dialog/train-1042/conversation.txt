@@ -1,0 +1,12 @@
+Doctor: Have you ever had surgery, ma'am?
+Patient: Yeah, doctor, I've had a whole lifetime worth of back surgeries.
+Doctor: How many surgeries have you had?
+Patient: I've had four.
+Doctor: Do you know the surgeries you've had?
+Patient: Actually, I have the op notes here.
+Doctor: I see, you've had an anterior cervical discectomy, and fusion of C three through C seven.
+Patient: Yes, I had all of those with Doctor L.
+Doctor: Do you have any children?
+Patient: Yes doctor, I have seven, but I had three miscarriages.
+Doctor: Were any of your children born through C sections?
+Patient: No, none of them were.

@@ -1,0 +1,5 @@
+Doctor: Hello. I see you're here for a follow up. Did you get your blood work done?
+Patient: I did. Here are the results.
+Doctor: Let me take a look. Oh, wow. It looks like your blood sugar is high. Are you exercising every day?
+Patient: Not really. Is that bad?
+Doctor: You are at risk of developing type two diabetes.

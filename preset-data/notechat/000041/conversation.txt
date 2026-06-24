@@ -1,0 +1,61 @@
+Doctor: Good morning, how can I help you today?
+
+Patient: Good morning, doctor. I have been experiencing pain in my groin and right buttock for the past 4 months.
+
+Doctor: Hmm, I see. Can you tell me more about your symptoms?
+
+Patient: Yes, the pain is more severe on my right hip and it has been affecting my daily activities.
+
+Doctor: Alright. And have you had any history of trauma, alcohol abuse, or steroid use?
+
+Patient: No, doctor. I don't have any history of trauma or alcohol abuse and I have never taken steroids.
+
+Doctor: Okay. And do you have any medical history that I should know about?
+
+Patient: Yes, I was diagnosed with iron-deficiency anemia 2 years ago and I have been taking iron supplements since then.
+
+Doctor: Alright. And have you had any fracture episodes, including fragility fractures?
+
+Patient: No, I haven't had any fracture episodes.
+
+Doctor: Okay. Can you tell me your height, body weight, and body mass index?
+
+Patient: My height is 155 cm, my body weight is 42 kg, and my body mass index is 18.7 kg/m2.
+
+Doctor: Alright. And are you able to walk for a certain amount of time without any difficulty?
+
+Patient: Yes, I can walk for about 10 minutes without a stick, but I walk slowly.
+
+Doctor: Okay. And have you noticed any limitations in the passive motion of your bilateral hip joint?
+
+Patient: Yes, I have. The doctor who examined me said that my flexion is 100°, internal rotation is 5°, external rotation is 15°, and abduction is 20° on both sides.
+
+Doctor: Alright. And can you perform a straight-leg raise of the right limb without any pain?
+
+Patient: No, I can't. I feel substantial pain when I try to perform a straight-leg raise of the right limb.
+
+Doctor: Alright. And is the neurovascular status of both lower extremities intact?
+
+Patient: Yes, the doctor who examined me said that my neurovascular status is intact.
+
+Doctor: Alright. And have you had any radiographs taken of both hips?
+
+Patient: Yes, I have.
+
+Doctor: Alright. And did the radiographs demonstrate any characteristic findings such as the crescent sign, sclerotic band pattern, and collapse of the femoral head, and any joint space narrowing in either femoral head?
+
+Patient: No, the doctor who examined me said that there were no such findings in the radiographs.
+
+Doctor: Alright. And have you had an MRI of both hips taken?
+
+Patient: Yes, I have.
+
+Doctor: Alright. And did the MRI present a low signal line in the subchondral region of the femoral head in the T1 weighted image and high signal region in almost all of the femoral head in the short tau inversion recovery (STIR)?
+
+Patient: Yes, the doctor who examined me said that the MRI showed exactly that.
+
+Doctor: Alright. And did the oblique axial views of the proton density-weighted image show a low-signal sinuous line in the anteromedial region?
+
+Patient: Yes, the doctor who examined me said that the MRI showed exactly that.
+
+Doctor: Alright. Based on your symptoms, medical history, and test results, I have a professional medical judgment about your condition and I would like to discuss it with you.

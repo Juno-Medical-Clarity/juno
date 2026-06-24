@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0240
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Chest pain
+- Duration: Started last night, constant for ~8 hours
+- Location: Left side of chest
+- Quality: Sharp
+- Severity: 7-8/10
+- Worsens: Laying down, deep breaths
+- Alleviates: Not laying down
+- Associated symptoms: Lightheadedness, trouble breathing, racing heart, sweating, noisy breathing, neck swelling
+- No radiation of pain
+- No previous episodes
+
+Past Medical History:
+- No prior medical conditions
+- No recent hospitalisations
+- No prior surgeries
+- Medications: None
+- Allergies: None
+- Immunisations: Up to date
+- SocHx: Lives alone in an apartment, accountant, smokes 1 pack/day for 10-15 years, occasional cannabis use (~5mg/week), drinks 1-2 drinks/day (~10 drinks/week), tries to eat healthy dinners, eats out for lunch, exercises every other day (runs for 30 mins)
+- FHx: Father had a heart attack at 45, father had cholesterol problems, no strokes, no cancers
+
+Objective:
+- Vitals: Not provided
+- Physical exam: Not provided
+- Investigations with results: Not provided
+
+Assessment:
+- Not provided
+
+Plan:
+- Not provided

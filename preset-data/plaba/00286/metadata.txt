@@ -1,0 +1,5 @@
+pmid:        32943413
+question:    22
+adaptation:  adaptation2
+title:       Birt-Hogg-Dubé syndrome
+sentences:   9

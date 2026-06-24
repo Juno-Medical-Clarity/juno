@@ -1,0 +1,1 @@
+Our best classification model is a logistic regression model that can achieve up to 63% correct classifications for 8-mers, 71% for 12-mers, and 76% for 16-mers.

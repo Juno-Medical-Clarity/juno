@@ -1,0 +1,8 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [7:10] 'general-complex' -> 'randomised controlled trials'
+  [11:12] 'abbr-general' -> 'RCTs'

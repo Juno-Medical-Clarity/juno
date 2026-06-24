@@ -1,0 +1,8 @@
+Doctor: Well, looking at your hand x ray, the bone looks in alignment, and I don't see any effusion.
+Doctor: Any tenderness or pain?
+Patient: Ah, not really!
+Doctor: There is no asymmetry. Can you move your hand up and down? Now rotate it. Can you move your fingers?
+Patient: Yes, I can do all of that, no problem at all.
+Doctor: Can you bend your hand?
+Patient: Yes.
+Doctor: Perfect.

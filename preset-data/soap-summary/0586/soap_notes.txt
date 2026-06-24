@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0586
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient had lumbar discitis a little over a year ago.
+- Received antibiotic therapy and had debridement and instrumentation.
+- Patient is doing quite well currently.
+- Patient had a pulmonary embolism (P E) during the prior hospitalization.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

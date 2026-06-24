@@ -1,0 +1,28 @@
+# SOAP Notes — Sample 0075
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Chief complaint: Suspected bladder infection
+- Symptoms: Burning sensation during urination, increased frequency of urination
+- Duration: Past couple of days
+- Context: History of overactive bladder, previous bladder infections
+- Previous episodes: Last bladder infection 3 months ago, treated with antibiotics
+- Impact on daily activities: Increased urgency and frequency of urination
+- Associated symptoms: Feeling tired, occasional feeling of being hot, flushed appearance
+
+Past Medical History:
+- PMHx: Overactive bladder, asthma (inhaler use), appendectomy at age 24
+- Medications: Botox injections for bladder (twice a year), inhaler for asthma (infrequent use)
+- SocHx: Lives in London, works at a bank, no children, no recent travel, no sick contacts
+- Allergies: Seasonal allergies (mild), no drug allergies
+
+Objective:
+- No physical examination findings or vitals provided
+
+Assessment:
+- Suspected bladder infection
+
+Plan:
+- Investigations: Urinalysis, urine culture
+- Treatment: Pending results of investigations
+- Follow-up: Physician to review and discuss further management

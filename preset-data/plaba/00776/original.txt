@@ -1,0 +1,12 @@
+Background: There is a clinical need for new therapeutic products against Herpes simplex virus (HSV).
+The pomegranate, fruit of the tree Punica granatum L, has since ancient times been linked to activity against infection.
+This work probed the activity of pomegranate rind extract (PRE) and co-administered zinc (II) ions.
+Materials and methods: PRE was used in conjunction with zinc (II) salts to challenge HSV-1 and aciclovir-resistant HSV in terms of virucidal plaque assay reduction and antiviral activities in epithelial Vero host cells.
+Cytotoxicity was determined by the MTS assay using a commercial kit.
+Results: Zinc sulphate, zinc citrate, zinc stearate and zinc gluconate demonstrated similar potentiated virucidal activity with PRE against HSV-1 by up to 4-fold.
+A generally parabolic relationship was observed when HSV-1 was challenged with PRE and varying concentrations of ZnSO4, with a maximum potentiation factor of 5.5.
+Punicalagin had 8-fold greater virucidal activity than an equivalent mass of PRE.
+However, antiviral data showed that punicalagin had significantly lower antiviral activity compared to the activity of PRE (EC50 = 0.56 μg mL-1) a value comparable to aciclovir (EC50 = 0.18 μg mL-1); however, PRE also demonstrated potency against aciclovir-resistant HSV (EC50 = 0.02 μg mL-1), whereas aciclovir showed no activity.
+Antiviral action of PRE was not influenced by ZnSO4.
+No cytotoxicity was detected with any test solution.
+Conclusions: The potentiated virucidal activity of PRE by coadministered zinc (II) has potential as a multi-action novel topical therapeutic agent against HSV infections, such as coldsores.

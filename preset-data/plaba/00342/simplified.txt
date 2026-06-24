@@ -1,0 +1,15 @@
+Vaccines are needed to prevent coronavirus disease 2019 (Covid-19), which is a breathing-related viral illness. Vaccines also protect those at high risk for issues.
+
+This randomized, controlled trial was performed at 99 centers across the United States.
+People at high risk for SARS-CoV-2, or Covid-19, infection or its effects were randomly split in a 1:1 ratio to get two injections of the new vaccine or inactive placebo 28 days apart.
+The key measure was prevention of Covid-19 illness with onset at least 14 days after the second injection in participants who had not been infected with SARS-CoV-2 prior.
+The trial had 30,420 volunteers randomly assigned in a 1:1 ratio to receive either the vaccine or inactive placebo (15,210 participants in each group).
+More than 96& of participants got both injections. 2.2% had evidence (antibody and/or molecular testing) of SARS-CoV-2 infection at the start.
+185 participants in the inactive placebo group showed symptoms of Covid-19., while11 participants in the vaccine group showed symptoms of Covid-19.
+Effectiveness was similar for key secondary analyses like analysis 14 days after the first dose, analysis with participants who had evidence of SARS-CoV-2 infection at the start, and analysis in participants 65 years or older.
+Severe Covid-19 occured in 30 participants, with one death. All 30 were in the inactive placebo group.
+Moderate, temporary body reactions after vaccination occured more often in the vaccine group.
+Serious, harmful events were rare, and the frequency was similar in the two groups.
+The vaccine showed 94.1% success at preventing Covid-19, including severe disease.
+Aside from temporary local and full-body reactions, no safety concerns were found.
+

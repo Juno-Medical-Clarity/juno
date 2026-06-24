@@ -1,0 +1,5 @@
+drug_focus: herceptin
+question_type: Information
+section_title: Trastuzumab without chemotherapy in the adjuvant treatment of breast cancer: subgroup results from a large observational study
+source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5759796/
+sample_id: 0659

@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1192
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient expresses a belief that no major procedure is needed at this time.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

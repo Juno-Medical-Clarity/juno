@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3045  |  gem_id: gem-cochrane-simplification-train-3046  |  doi: 10.1002/14651858.CD005313
+
+This review compared these treatments and found both were equally effective at preventing death but using stents was better than balloon angioplasty because fewer arteries needed to be re-cleared and stents prevented more heart attacks than balloon angioplasty.

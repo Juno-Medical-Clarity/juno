@@ -1,0 +1,5 @@
+pmid:        16935966
+question:    55
+adaptation:  adaptation1
+title:       Long-chain polyunsaturated fatty acids and the pathophysiology of myalgic encephalomyelitis (chronic fatigue syndrome)
+sentences:   7

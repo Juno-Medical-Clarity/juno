@@ -1,0 +1,12 @@
+Doctor: What do you do for a living?
+Patient: Actually, I'm retired now, but I was an engineer, and I did some real estate brokering as well on the side.
+Doctor: Wow, that's a lot. Congratulations on your retirement!
+Patient: Thank you, now I get to spend more time with my wife.
+Doctor: Wonderful, do you have any children?
+Patient: Yes, five in total, it's a full house.
+Doctor: Fantastic, do you drink or smoke?
+Patient: I don't smoke, but I drink a little.
+Doctor: How many drinks would you say you have a week?
+Patient: Um, I'd say up to three drinks a week.
+Doctor: Okay, and is there any history of drug or illicit substance abuse, sir?
+Patient: No, never anything like that.

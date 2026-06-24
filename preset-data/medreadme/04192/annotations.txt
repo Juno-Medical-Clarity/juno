@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [2:5] 'medical-jargon-google-easy' -> 'lipid composition intervention'
+  [8:9] 'abbr-medical' -> 'IHCL'
+  [13:17] 'medical-jargon-google-easy' -> 'hepatic magnetic resonance spectroscopy'

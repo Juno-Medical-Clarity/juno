@@ -1,0 +1,9 @@
+Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), the etiologic agent of coronavirus disease 2019 (COVID-19), has spread globally in a few short months.
+Substantial evidence now supports preliminary conclusions about transmission that can inform rational, evidence-based policies and reduce misinformation on this critical topic.
+This article presents a comprehensive review of the evidence on transmission of this virus.
+Although several experimental studies have cultured live virus from aerosols and surfaces hours after inoculation, the real-world studies that detect viral RNA in the environment report very low levels, and few have isolated viable virus.
+Strong evidence from case and cluster reports indicates that respiratory transmission is dominant, with proximity and ventilation being key determinants of transmission risk.
+In the few cases where direct contact or fomite transmission is presumed, respiratory transmission has not been completely excluded.
+Infectiousness peaks around a day before symptom onset and declines within a week of symptom onset, and no late linked transmissions (after a patient has had symptoms for about a week) have been documented.
+The virus has heterogeneous transmission dynamics: Most persons do not transmit virus, whereas some cause many secondary cases in transmission clusters called "superspreading events."
+Evidence-based policies and practices should incorporate the accumulating knowledge about transmission of SARS-CoV-2 to help educate the public and slow the spread of this virus.

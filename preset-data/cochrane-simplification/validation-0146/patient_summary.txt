@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0146  |  gem_id: gem-cochrane-simplification-validation-147  |  doi: 10.1002/14651858.CD004990
+
+The conclusion is based on limited data from two small studies. The larger of the studies, conducted in 73 patients with Alzheimer's disease, showed no beneficial effect of trazodone at all. A smaller cross-over study in patients with frontal lobe dementia showed a trend for reduction in some symptoms in the first study period. Larger, longer studies are needed to explore the efficacy, effectiveness and safety of trazodone.

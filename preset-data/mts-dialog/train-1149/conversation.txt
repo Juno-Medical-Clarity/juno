@@ -1,0 +1,2 @@
+Doctor: Tell me about your family medical history.
+Patient: The only thing that I know about is that my grandma has diabetes.

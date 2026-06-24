@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0387  |  gem_id: gem-cochrane-simplification-train-388  |  doi: 10.1002/14651858.CD008224.pub2
+
+We identified nine trials including 973 people. We found that people were less likely to have bacteria in their urine after urodynamic studies if they had antibiotics (4% versus 12%). While they did have fewer urinary tract infections (20% compared with 28% with no antibiotics), this did not reach statistical significance. There were too few adverse effects, such as fever, pain when passing urine or a reaction to the antibiotics, for the findings to be reliable. However, people were less likely to have blood in their urine with antibiotics. There was no information about other treatments which might help reduce infections, nor about different doses or types of antibiotics.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1213
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi, how are you? I am feeling not so good. What happened and how long since it started? Oh, I don't remember it. Just my head is hurting so much. Guest_family: Hi doctor, she is my mother. Her dementia has progressed and most of the time she does not remember anything. Oh, I see. Let me try and see if she can answer few questions Guest_family: Sure. Did you have any nausea or vomiting? I don't know.

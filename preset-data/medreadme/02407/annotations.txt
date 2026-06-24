@@ -1,0 +1,9 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'psychosocial'
+  [21:23] 'medical-jargon-google-easy' -> 'cardiorespiratory conditions'
+  [40:41] 'medical-jargon-google-easy' -> 'psychosocial'

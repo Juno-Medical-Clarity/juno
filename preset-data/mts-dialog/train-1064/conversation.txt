@@ -1,0 +1,6 @@
+Doctor: How's it going, buddy? I haven't seen you in a long time
+Patient: Hey, Doctor. It's been a while. I've been doing well. Just here for my check up.
+Doctor: Nice. How's the family doing? Are they all well?
+Patient: Yeah, they're doing great. Nobody has been sick for a while.
+Doctor: That's great to hear. Nobody has new medical conditions either, right?
+Patient: Not that I know of. They're all doing good.

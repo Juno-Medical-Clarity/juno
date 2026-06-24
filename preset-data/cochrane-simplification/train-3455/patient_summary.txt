@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3455  |  gem_id: gem-cochrane-simplification-train-3456  |  doi: 10.1002/14651858.CD001143
+
+Syphilis is a potentially fatal, sexually transmitted disease that passes from a pregnant woman to her unborn baby. If the woman is untreated, the fetus might be aborted or her baby may be born with the disease, suffer permanent disability and be disfigured. The effectiveness of penicillin in curing infection with syphilis in pregnant women and preventing the baby being born with congenital syphilis was established soon after its introduction in the 1940s and before the widespread use of randomised controlled trials. Although rare in developed countries, the incidence of syphilis is high and increasing in many developing countries, particularly where HIV/AIDS is common. The review of trials found no trials comparing the effectiveness of different doses of penicillin or comparing penicillin with other antibiotics. More research is needed to find the best dosage and duration of treatment.

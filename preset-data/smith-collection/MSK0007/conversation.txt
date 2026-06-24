@@ -1,0 +1,304 @@
+# Smith Collection Transcript: MSK0007
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Hi yes ive had this pain in my left elbow for a couple of weeks now and its not getting any better so im just here to kind of figure out what it is
+
+Doctor: OK alright are you feeling this pain on the lateral side of the elbow on the or on the medial side of the elbow
+
+Patient: Its on the medial side
+
+Doctor: OK and sorry when did this pain exactly start
+
+Patient: So its been on going for like the past three months but its gotten worse over the last id say three weeks
+
+Doctor: OK and has the pain been getting worse any better
+
+Patient: Oh the pains been getting worse
+
+Doctor: Yeah ok was there any triggers or precipitating events to the pain such as like a fall or any types of trauma to the elbow
+
+Patient: No no not that i can think of
+
+Doctor: Have you had any pain or injury to the elbow in the past
+
+Patient: No
+
+Doctor: Could you describe the character of the pain is it sharp achey or dull
+
+Patient: Its usually achey but it can be sharp
+
+Doctor: OK does the pain radiate anywhere
+
+Patient: No its pretty its pretty much in that one area
+
+Doctor: OK just on the medial side of the left elbow
+
+Patient: Yeah
+
+Doctor: OK and is there anything that youve done to help make the pain go away or any alleviating factors
+
+Patient: I am taking some nsaids that helps with the pain temporarily
+
+Doctor: OK and uh are there any factors that make the pain worse
+
+Patient: um when i i i guess when i like extend my elbow out it gets worse
+
+Doctor: OK so its a movement ok and straightening the elbow
+
+Patient: Yeah
+
+Doctor: OK i mean what is the severity of the pain on a scale of 1 to 10 with 10 being the worst pain youve ever felt
+
+Patient: Id say about 5
+
+Doctor: OK and um so did you have any other symptoms associated with the elbow pain
+
+Patient: um no um not really i im otherwise pretty healthy
+
+Doctor: OK so have you had any fevers or chills
+
+Patient: No
+
+Doctor: Have you had any night sweats
+
+Patient: No
+
+Doctor: Or any any weight loss
+
+Patient: No
+
+Doctor: OK have you had any any headaches
+
+Patient: No
+
+Doctor: Any sensory changes like changes to your vision or or hearing or even your smell or taste
+
+Patient: No
+
+Doctor: OK have you had any eye redness or eye discharge or your ear pain
+
+Patient: No
+
+Doctor: OK have you had a runny nose or sore throat
+
+Patient: No
+
+Doctor: Have you had a cough or shortness of breath
+
+Patient: No
+
+Doctor: Have you had any wheezing
+
+Patient: No
+
+Doctor: OK have you had any chest pain
+
+Patient: No
+
+Doctor: Any lightheadedness or dizziness
+
+Patient: No
+
+Doctor: Have you had any heart palpitations
+
+Patient: No
+
+Doctor: OK and have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: Have you had any abdominal pain
+
+Patient: No
+
+Doctor: Any diarrhea or constipation
+
+Patient: No
+
+Doctor: Have you had any urinary problems
+
+Patient: No
+
+Doctor: OK have you had any skin rashes
+
+Patient: No no
+
+Doctor: OK have you had any numbness or tingling
+
+Patient: No
+
+Doctor: And how about any muscle weakness
+
+Patient: No
+
+Doctor: OK and any joint pains anywhere else
+
+Patient: No
+
+Doctor: OK and any changes to your memory or or any confusion
+
+Patient: No
+
+Doctor: OK and have you had any fatigue
+
+Patient: No
+
+Doctor: OK and have you had any changes to your appetite
+
+Patient: No
+
+Doctor: OK are an have you been diagnosed with any medical conditions in the past
+
+Patient: No
+
+Doctor: OK so do you take any medications either prescribed or over the counter
+
+Patient: um no i just take some multivitamins
+
+Doctor: OK and do you have any allergies to medications
+
+Patient: um no
+
+Doctor: OK and have you had any hospitalizations or prior surgeries
+
+Patient: I i had a fracture when i was younger it was in my humerus bone on the right side
+
+Doctor: OK so its the to the fracture was on the other arm
+
+Patient: Yes
+
+Doctor: OK and did that heal ok
+
+Patient: Yes
+
+Doctor: Alright then can you tell me about your living situation currently like whereabouts and who youre living with
+
+Patient: I live with my partner of five years we live in an apartment together
+
+Doctor: OK and are you working currently
+
+Patient: I am
+
+Doctor: And what do you do
+
+Patient: I work on the assembly line for chrysler
+
+Doctor: OK uh and uh do you do repetitive tasks at work
+
+Patient: I do
+
+Doctor: OK yeah do you notice this uh pain after more so after a shift or after after a long day
+
+Patient: Yes definitely
+
+Doctor: OK and what types of hobbies do you have like do you play golf or tennis or or any kind of like sports i guess
+
+Patient: Yeah i used to play golf before this pain in my arm and my elbow so i havent played it in the past like six months
+
+Doctor: OK um ok and um do you smoke cigarettes
+
+Patient: I dont
+
+Doctor: And do you drink alcohol
+
+Patient: um ill have a glass of wine every other day
+
+Doctor: OK and how about the use of any recreational drugs like cannabis or or anything else
+
+Patient: Ill smoke a joint once a week
+
+Doctor: OK alright and is there any family history of any heart or lung problems
+
+Patient: No
+
+Doctor: Any musculoskeletal or neurological diseases
+
+Patient: um no
+
+Doctor: OK i got any autoimmune diseases like thyroid disease or diabetes
+
+Patient: No
+
+Doctor: OK um and so next i wanted to walk through a physical exam so when you look at the elbow yourself do you see any swelling or redness
+
+Patient: No
+
+Doctor: OK does it look like there is any muscle atrophy either in the forearm or the biceps or triceps
+
+Patient: No
+
+Doctor: OK and how about any misalignment or joint deformity
+
+Patient: No i dont see any of that
+
+Doctor: OK and are there any scars
+
+Patient: No
+
+Doctor: OK and when you press on the medial part of the the elbow do you feel pain
+
+Patient: I do
+
+Doctor: How about over the olecranon or the yea any pain over the olecranon
+
+Patient: um a little bit
+
+Doctor: OK and is there any pain over the lateral part of the elbow
+
+Patient: No
+
+Doctor: OK an any pain over the forearm or biceps or triceps muscles
+
+Patient: No
+
+Doctor: OK and does the joint feel like its hot
+
+Patient: No
+
+Doctor: OK and any pain with shoulder or elbow movements
+
+Patient: No
+
+Doctor: OK
+
+Patient: Actually sorry with the elbow when i straighten it out all the way it hurts a little bit
+
+Doctor: OK when are you straightening it out all the way ok but no pain with shoulder movements and full range of motion
+
+Patient: No no pain with shoulder
+
+Doctor: OK and how about pain with pronation and supination
+
+Patient: With pronation it hurts
+
+Doctor: OK at the medial side
+
+Patient: Yes
+
+Doctor: OK and how about with wrist so with resisted uh yeah wrist flexion
+
+Patient: Wrist flexion yeah that hurts too
+
+Doctor: OK and then how about if you passively extend your your wrist as far down as as you can go
+
+Patient: Down uh yes that hurts too
+
+Doctor: OK and is there any numbness or tingling anywhere
+
+Patient: No no no numbness or tingling
+
+Doctor: OK ok so that was everything that i wanted to ask about today was there anything else that you wanted to mention
+
+Patient: No that was that what do you think i have and how can i fix it
+
+Doctor: Yeah so it its certainly it it sounds like with the medial aspect of your elbow having pain there over the last several months and some of the physical exam maneuvers such as like passive wrist extension resisted wrist flexion as well as pronation and the point tenderness over the medial elbow this could be a medial epicondylitis or a tendinopathy in that area and so this is typically treated with activity modification so this could be trying to avoid repetitive movements that that cause pain and using medications such as advil and tylenol and doing strengthening and stretching exercises which you can learn from a physiotherapist or or on your own as well and also other things that that the medial side of the elbow that it could be is an ulnar ligament injury um or yeah or the other thing to be considering is and ulnar ligament injury and so if the pain isnt going away then we might consider an ultrasound or something to look at the structures there
+
+Patient: OK that sounds great thank you

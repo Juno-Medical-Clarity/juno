@@ -1,0 +1,10 @@
+source:      wiki
+side:        simple
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [15:16] 'medical-jargon-google-easy' -> 'incus'
+  [17:18] 'medical-jargon-google-easy' -> 'stapes'
+  [19:20] 'medical-jargon-google-easy' -> 'malleus'
+  [22:24] 'medical-jargon-google-easy' -> 'tympanic membrane'

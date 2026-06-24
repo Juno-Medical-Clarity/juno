@@ -1,0 +1,5 @@
+drug_focus: megestrol
+question_type: Usage/duration
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f94daf8-ceb9-4577-ab71-8b7e3db7ff8e
+sample_id: 0323

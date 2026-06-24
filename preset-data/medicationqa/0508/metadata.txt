@@ -1,0 +1,5 @@
+drug_focus: hydrogen peroxide
+question_type: Overdose
+section_title: Home Care; Before Calling Emergency
+source_url: https://medlineplus.gov/ency/article/002652.htm
+sample_id: 0508

@@ -1,0 +1,6 @@
+Doctor: Do you have any major medical conditions that I should know about, sir?
+Patient: Maybe, I might. What exactly do you mean by that, doctor?
+Doctor: Well, it's broad, but it could be anything from depression to high blood pressure, to cancer.
+Patient: Okay, that's what I thought. I have high blood pressure.
+Doctor: What about your mental health, is there anything of note there?
+Patient: Um, yeah, I have anxiety, too.

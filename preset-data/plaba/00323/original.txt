@@ -1,0 +1,9 @@
+Over 80 mAbs have been shown to block the interaction between the SARS-CoV-2 S1 glycoprotein and its cellular receptor, thus neutralizing virus infectivity in vitro.
+Some of those mAbs demonstrate therapeutic efficacy to curtail viral burden and lung inflammation in animal models.
+The neutralization mechanisms of mAbs against SARS-CoV-2 in vivo are not fully understood, but optimal protection correlates with Fc effector functions.
+Approximately 30 SARS-CoV-2 neutralizing m Abs are undergoing clinical trials in COVID-19 patients.
+Some were granted emergency authorization since they reduced viral load, disease severity, and hospitalization in randomized, controlled phase II clinical trials.
+However, mAbs are unaffordable for healthcare systems in many developing countries due to their high cost (> USD 1,500/vial), meaning that most infected people would not have access to them.
+Another obstacle for COVID-19 therapy with mAbs is the emergence of viral variants harboring changes in the receptor-binding domain (RBD) of the S1 glycoprotein.
+The variants of concern (VoC) exhibit enhanced transmissibility or virulence, circulate worldwide, and include those designated as alpha, beta, epsilon, gamma, and delta, first detected in the UK, South Africa, Brazil, USA, and India, respectively.
+Therapeutic mAbs, and antibodies in the plasma of vaccinated or convalescent individuals, fail to neutralize VoC efficiently.

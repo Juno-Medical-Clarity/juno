@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0357
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Current medications: Advair and Allegra
+- Uncertainty about the effectiveness of Allegra ("I don't know, I am not sure the Allegra is helping")
+- Regular intake of medications ("But I do take them regularly")
+- Belief that Allegra is better than Claritin ("Yes, I think so")
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- Continue current medications (Advair and Allegra)

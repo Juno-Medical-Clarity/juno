@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2089  |  gem_id: gem-cochrane-simplification-train-2090  |  doi: 10.1002/14651858.CD006470.pub2
+
+No randomized controlled trials (RCTs) can be found comparing the effect of SCUs against traditional nursing units in managing agitated behaviours in people suffering from dementia. This review has examined the results of non-RCTs. The findings about the outcomes of this review arise just from one study except for the outcome of "physical restraint use" at 6 months, which includes data from two studies. Selection bias is a major problem in non-RCTs, and confounds the limited evidence that favoured SCU care with regard to a decrease in agitated behaviour and in the use of physical restraints. A convincing case for the benefits of SCU care cannot be made and further studies are necessary.

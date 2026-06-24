@@ -1,0 +1,6 @@
+Doctor: Hi, there. How are you both doing? What brings you two to the Emergency Department?
+Guest_family: Hi, Doctor. We're both doing fine. I brought my daughter in today because she's been feeling sick.
+Doctor: I see. Let me ask your daughter a few questions before we start. Hi, ma'am. I understand you feel sick. Before we begin I just want to confirm some information with you. Where is your primary residency?
+Patient: My mom can give you the address. I still live with her.
+Doctor: Thank you. One last question. Do you smoke?
+Patient: Nope. My Mother has forbidden smoking in her home.

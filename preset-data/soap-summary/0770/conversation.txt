@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0770
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good afternoon Sir. Do you know how you got here? Yes, I passed out and the paramedics brought me to the hospital. Do you have any recollection of the incidences leading up to your loss of consciousness? I think I had a seizure and then I passed out. Prior to the episode did you experience any chest pain or shortness of breath? No. Any feelings of abnormal heart rhythm? No. Do you have any history of any cardiac problems? No. How are you feeling now? I feel fine. Do you know how old you are? I am sixty nine.

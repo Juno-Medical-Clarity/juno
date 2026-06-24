@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 1146
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the knee
+- Severity: Not explicitly mentioned
+- Duration: About a month
+- Associated Symptoms: None explicitly mentioned
+- Relevant Medical History: Previous treatment at another clinic, where a splint was applied
+- Family History: Not mentioned
+- Allergies: Not mentioned
+- Other Concerns: Concern about the surgery, risks of infection, and anesthesia. Emotional concern regarding the procedure.
+
+Objective:
+- Physical Examination Findings: Rib fracture identified on x-ray as a tibial tubercle avulsion fracture with patella alta.
+
+Assessment:
+- Diagnosis: Tibial tubercle avulsion fracture with patella alta.
+- Clinical Impression: Surgery (ORIF) is needed to repair the injury.
+
+Plan:
+- Surgical procedure: Open Reduction and Internal Fixation (ORIF)
+- Preoperative preparation: Administer antibiotics to control for infection
+- Postoperative considerations: Discuss risks including bleeding, changes in sensation, hardware failure, need for rehabilitation, and potential hardware removal once healed.
+- Follow-up: Schedule surgery and post-operative care.

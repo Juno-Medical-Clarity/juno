@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2510  |  gem_id: gem-cochrane-simplification-train-2511  |  doi: 10.1002/14651858.CD003486.pub2
+
+This review examined whether cleansing the lung using a natural chemical called surfactant, or another similar fluid, is helpful in MAS. This cleansing procedure is known as lung lavage. Lung lavage with diluted surfactant may help improve the clinical course of infants with MAS, in particular, the likelihood of survival without the need for heart-lung bypass. More trials will be needed to properly evaluate lavage treatment in MAS.

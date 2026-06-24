@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1441
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any medical issues in the past? No, I have a very clean history. That's good for you. Any kind of surgery or hospitalization? No.

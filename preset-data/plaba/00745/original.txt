@@ -1,0 +1,12 @@
+Introduction: The vital renal replacement therapy makes it impossible for dialysis patients to distance themselves socially.
+This results in a high risk of SARS-CoV-2 infection and developing COVID-19 with excess mortality due to disease burden and immunosuppression.
+We determined the efficacy of a 100 µg booster of mRNA-1273 (Moderna, Inc., Cambridge, Massachusetts, USA) 6 months after two doses of BNT162b2 (BioNTech/Pfizer, Mainz, Germany/New York, NY, USA) in 194 SARS-CoV-2 naïve dialysis patients.
+Methods: Anti-SARS-CoV-2-spike antibodies were measured with the Elecsys® Anti-SARS-CoV-2 S assay (Roche Diagnostics GmbH, Germany) 4 and 10-12 weeks after two doses of BNT162b2 as well as 4 weeks after the mRNA-1273 booster.
+The presence of neutralizing antibodies was measured by the SARS-CoV-2 Surrogate Virus Neutralization Test (GenScript Biotech, USA).
+Two different cut-offs for positivity were used, one according to the manufacturer's specifications and one correlating with positivity in a plaque reduction neutralization test (PRNT).
+ROC analyses were performed to match the anti-SARS-CoV-2-spike antibody cut-offs with the cut-offs in the surrogate neutralization assay accordingly.
+Results: Any level of immunoreactivity determined by anti-SARS-CoV-2-spike antibody assay was found in 87.3% (n = 144/165) and 90.6% (n = 164/181) 4 and 10-12 weeks after two doses of BNT162b2.
+This was reduced to 68.5% or 60.6% 4 weeks and 51.7% or 35.4% 10-12 weeks, respectively, when using the ROC revealed cut-offs for neutralizing antibodies in the surrogate neutralization test (manufacturer given cut-off ≥ 103 U/ml and cut-off correlating with PRNT ≥ 196 U/ml).
+Four weeks after the mRNA-1273 booster, the concentration of anti-SARS-CoV-2-spike antibodies increased to 23 119.9 U/ml and consecutively to 97.3% for both cut-offs of neutralizing antibodies.
+Conclusion: Two doses of BNT162b2 followed by one dose of mRNA-1273 within 6 months in patients receiving maintenance dialysis resulted in significant titers of SARS-CoV-2-S-Ab.
+While two doses of mRNA vaccine only achieved adequate humoral immunity in a minority, the third vaccination boosts the development of virus-neutralizing quantities of SARS-CoV-2 spike antibodies (against wild type SARS-CoV-2) in almost all patients.

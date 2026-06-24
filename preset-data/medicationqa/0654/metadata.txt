@@ -1,0 +1,5 @@
+drug_focus: glucagon & insulin
+question_type: Information
+section_title: Glucagon
+source_url: https://en.wikipedia.org/wiki/Glucagon
+sample_id: 0654

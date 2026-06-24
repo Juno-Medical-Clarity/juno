@@ -1,0 +1,8 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [4:7] 'medical-jargon-google-easy' -> 'innate immune system'
+  [13:16] 'medical-jargon-google-easy' -> 'conserved microbial molecules'

@@ -1,0 +1,13 @@
+Background: Glucose-transporter-1 deficiency syndrome (GLUT1-DS), an inability to transport sugar in the blood due to a change in the specific gene SLC2A1, is characterized by early-onset seizures, which are often drug-resistant, delay proper growth, and reduce muscle tone.
+Hemiplegic migraine (HM) is a rare form of migraine, defined by headache linked with temporary paralysis on one side of the body (hemiplegia). It can be caused by mutations in either CACNA1A, ATP1A2, or SCN1A, specific genes.
+Paroxysmal movements (or suddent fits), other temporary brain-related disorders, or hemiplegic events can occur in GLUT1-DS patients with mild effects.
+We describe a girl with GLUT1-DS, due to SLC2A1 mutation, with mild effects.
+In early childhood, she developed epilepsy and mild intelligence impairment, balance disorders, and clumsiness.
+At the age of 9, the patient reported a first hemiplegic episode, which healed randomly.
+Over the next 3 years, two similar episodes occurred, followed by headache.
+Therefore, in the theory of HM, genetic testing was performed and a specific CACNA1A gene mutation was found.
+The treatment with Lamotrigine (anti-seizure medication) avoided the reapparance of HM episodes.
+To our knowledge, among the several cases of GLUT1-DS with HM symptoms in the medical studies, genetic testing was only performed in two of them, which eventually found nothing.
+In all other cases, no other genes except for SLC2A1 were examined.
+Thus, our patient would be the first description of GLUT1-DS with HM due to the CACNA1A gene mutation.
+We would highlihgt the importance of performing specific genetic testing in patients with GLUT1-DS with symptoms similar to HM, which may allow clinicians to use specific drugs.

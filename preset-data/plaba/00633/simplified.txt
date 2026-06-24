@@ -1,0 +1,9 @@
+Treatment success for patients with full-body or systemic lupus erythematosus (SLE), an inflammatory disease in which immune cells mistakely attack joints, skin, brain cells and more, is limited by muti-factor disease causes, multi-organ damage, full-body effect, and complex causes for immune cell dysfunction.
+Treatment targeting creation and survival of antibody-creating immune cells are not effective for all patients, indicating a need to target other inflammatory groups.
+One target group is the type I interferon pathway, a cellular signaling pathway that affects the entire immune system.
+Type I interferons increase the amount of certain signaling proteins and influence important antiviral responses.
+Impaired type I interferon signaling is detectable in many with SLE and similar diseases. The extent of this impairment is linked with disease severity, making type I interferons a possible treatment target.
+The recent approval of the type I interferon blocking molcule or antibody, anifrolumab, by a government agency for treating SLE demonstrates the value of targeting this pathway.
+Still, the interferon pathway affects multiple targets and signaling pathways that are incompletely understood.
+Understanding the complex type I interferon pathway and its influence on lupus disease will be valuable for further development of targeted SLE treatments.
+This review summarizes the immune middlemen of the interferon pathway, its link with disease creation, and treatments targeting the pathway when it is impaired.

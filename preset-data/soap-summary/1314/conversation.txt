@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1314
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had surgery, ma'am? Yeah, doctor, I've had a whole lifetime worth of back surgeries. How many surgeries have you had? I've had four. Do you know the surgeries you've had? Actually, I have the op notes here. I see, you've had an anterior cervical discectomy, and fusion of C three through C seven. Yes, I had all of those with Doctor L. Do you have any children? Yes doctor, I have seven, but I had three miscarriages. Were any of your children born through C sections? No, none of them were.

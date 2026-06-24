@@ -1,0 +1,9 @@
+source:      elife
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [7:8] 'medical-jargon-google-easy' -> 'enzyme'
+  [15:17] 'medical-jargon-google-easy' -> 'active site'
+  [31:36] 'medical-jargon-google-easy' -> 'N and C - termini'

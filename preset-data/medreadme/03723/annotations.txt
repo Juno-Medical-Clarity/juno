@@ -1,0 +1,10 @@
+source:      pnas
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [3:7] 'medical-jargon-google-hard' -> 'uterine luminal epithelial transcriptome'
+  [9:13] 'medical-jargon-google-hard' -> 'estradiol - 17b signaling'
+  [18:20] 'medical-jargon-google-easy' -> 'endometrial secretions'
+  [23:25] 'medical-jargon-google-easy' -> 'embryonic needs'

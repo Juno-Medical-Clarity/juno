@@ -1,0 +1,5 @@
+pmid:        28806047
+question:    3
+adaptation:  adaptation3
+title:       Electrolytes: Potassium Disorders
+sentences:   11

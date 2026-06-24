@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1291  |  gem_id: gem-cochrane-simplification-train-1292  |  doi: 10.1002/14651858.CD006294.pub2
+
+Two relevant trials with 167 patients were identified. The limited data suggest that a gland specific lower dosage of radioiodine treatment is potentially effective for pediatric GD, but a significant higher incidence of hypothyroidism compared with ATD was observed. However, all of the analysed studies were of low quality. No trial evaluated mortality, health related quality of life, economic outcomes or compliance with treatments.

@@ -1,0 +1,5 @@
+pmid:        29404656
+question:    44
+adaptation:  adaptation1
+title:       Hypovolemic and hemorrhagic shock
+sentences:   7

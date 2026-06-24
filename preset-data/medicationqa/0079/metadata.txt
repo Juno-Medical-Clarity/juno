@@ -1,0 +1,5 @@
+drug_focus: Antibiotics
+question_type: Information
+section_title: NA
+source_url: https://www.dictionary.com/browse/antibiotic
+sample_id: 0079

@@ -1,0 +1,17 @@
+The COVID-19 pandemic is threatening billions of people worldwide. COVID-19 is a viral, breathing-related disease.
+Tocilizumab, a type of drug called monoclonal antibodies, has shown promising results in recent studies in patients with COVID-19 pneumonia or lung infections. Monoclonal antibodies are medicines that may block the virus that causes COVID-19 from attaching to human cells, making it more difficult for the virus to reproduce.
+The objective of this study is to evaluate the effect of giving tocilizumab early, compared to the standard treatment, to prevent a hospitalized COVID-19 patient with pneumonia from getting worse.
+Patients who are in the hospital with COVID-19 pneumonia are randomly put in groups to receive either tocilizumab or the standard care.
+Cases of COVID-19 are confirmed by taking a swab from inside the back of the nose.
+To be included in the study, patients must have COVID-19 pneumonia confirmed by an x-ray, certain oxygen levels, a fever, and an increase in C-reactive proteins which are created in the liver in response to inflammation (redness and swelling from fighting an infection).
+Patients in the experimental group receive tocilizumab through an IV (medicine is delivered in a vein in the arm) within 8 hours of being randomly placed in the group. A second dose is given after 12 hours.
+Patients in the comparison group receive support care based on hospital standards until the patient's condition worsens, and then they receive tocilizumab.
+The main study observations of interest are 1) going into intensive care units with machines to help breathe, 2) death from all causes, or 3) a worsening of a condition measured by oxygen levels.
+A total of 126 patients are randomly put into the experimental group to receive tocilizumab (60 patients) or in the comparison group (66 patients).
+The average age is 60 years, and most patients (61.1%) are male.
+Three patients dropped out of the study, leaving 123 patients in the study.
+Within 14 days since they were randomly put into groups, 17 out of 60 patients in the tocilizumab (experimental) group and 17 out of 63 patients in the standard (comparison) group have worsening conditions.
+Two patients in the experimental group and 1 in the comparison group died before 30 days after being randomly assigned into groups. Six patients in the experimental group and 5 patients of the other group were intubated (a tube is inserted through the nose or throat to help a person breathe).
+The trial was stopped early after an analysis showed that the experimental group is not likely to show any added benefit than the comparison group.
+This clinical study of adult patients with COVID-19 pneumonia showed no benefit on lessening of the disease in patients receiving tocilizumab when compared to the standard care.
+Additional clinical studies are needed to confirm these results and to evaluate tocilizumab when given at different stages of the disease.

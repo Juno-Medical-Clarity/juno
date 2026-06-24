@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        complex
+readability: 4.65
+split:       test
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'autophagy'
+  [13:15] 'medical-jargon-google-easy' -> 'ribosomal stress'

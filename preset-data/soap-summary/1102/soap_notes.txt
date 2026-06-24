@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1102
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Diplopia (double vision)
+- Severity: Not explicitly stated
+- Duration: Lasts for only a few minutes
+- Associated symptoms: None mentioned
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Diplopia resolves when covering one eye; worse when looking at distant objects and objects off to either side of midline.
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessment or clinical impressions provided.
+
+Plan:
+- No plan mentioned.

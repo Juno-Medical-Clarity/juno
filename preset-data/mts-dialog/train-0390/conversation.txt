@@ -1,0 +1,4 @@
+Doctor: Do you drink or smoke?
+Patient: No I don't. I have to care for my daughter. She is a widow.
+Doctor: So you live with her?
+Patient: Yes, she lives at home.

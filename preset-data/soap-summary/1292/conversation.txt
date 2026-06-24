@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1292
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I want to go over your medical history. I see here you saw the dermatologist a month ago. Yeah. She said that I um have an overactive sweat gland. Does hidradenitis suppurativa sound familiar? It does. I ask because it's also included in your last visit with your dermatologist. Those are the red bumps, right? Yes. There's a note here that you could've potentially had Staph with it as well. Oh yeah. I've also had a lot of abscesses in the past. It looks like you've had them in your upper mid thigh, vulva area, and the area between your vulva and anus. For about two years now. Right. And a history of asthma? Correct.

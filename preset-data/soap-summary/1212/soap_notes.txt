@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1212
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Chief complaint: chest pain
+- Associated symptom: fever (reported as having fever)
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment information provided)
+
+Plan:
+- (No plan information provided)

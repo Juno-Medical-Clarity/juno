@@ -1,0 +1,12 @@
+qid: TQ104
+source_file: 1-136260837.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Define temperature exposure and expiration data with regard to pharmacy and warehouse storage for Glimepiride.
+nlm_summary: What are Glimepiride Storage requirements for pharmacy and warehouse?
+
+focus_entities:
+  [F1] (DrugSupplement) Glimepiride
+question_types:
+  [T1] STORAGE_DISPOSAL

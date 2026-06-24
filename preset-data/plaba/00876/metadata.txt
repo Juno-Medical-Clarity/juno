@@ -1,0 +1,5 @@
+pmid:        27987249
+question:    71
+adaptation:  adaptation3
+title:       Achondroplasia: Development, pathogenesis, and therapy
+sentences:   5

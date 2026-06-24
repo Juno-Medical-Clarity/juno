@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2496  |  gem_id: gem-cochrane-simplification-train-2497  |  doi: 10.1002/14651858.CD004696.pub5
+
+We identified 16 eligible trials enrolling a total of 1251 infants through searches updated to 8 September 2016. These trials provide moderate-quality evidence that unrestricted feeding with nutrient-enriched (vs standard) formula does not have important effects on growth and development up to about 18 months of age. Long-term growth and development have not yet been assessed. Current recommendations to prescribe nutrient-enriched formula for preterm infants after hospital discharge are not supported by available evidence.

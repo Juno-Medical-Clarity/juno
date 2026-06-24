@@ -1,0 +1,2 @@
+Doctor: Any issues from head to toe?
+Patient: No, everything is fine.

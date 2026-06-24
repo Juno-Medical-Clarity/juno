@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0549
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient uses Albuterol inhaler to treat asthma.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

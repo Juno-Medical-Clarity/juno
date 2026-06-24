@@ -1,0 +1,45 @@
+# SOAP Notes — Sample 0140
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Knee pain and swelling on medial aspect of right knee following soccer injury 2 days ago (kicked in knee)
+- Pain is sharp, 5/10 severity, worse with palpation and flexion/extension of knee
+- Mild knee instability with flexion/extension
+- Ice provides some relief
+- No prior knee injuries
+- No other associated symptoms (comprehensive ROS negative)
+
+Past Medical History:
+- No known medical conditions
+- No medications
+- No allergies
+- No previous surgeries or hospitalizations
+
+Social History:
+- Lives with parents and 3 siblings
+- Grade 12 student (part online, part in-person)
+- Plays soccer and football
+- Denies smoking, alcohol, or recreational drug use
+- Sexually active in monogamous relationship for 1 year (no STI concerns, not pregnant)
+
+Family History:
+- No musculoskeletal or neurological conditions
+
+Objective:
+- Inspection: Redness and mild swelling on medial aspect of right knee, no ecchymosis or joint effusion, no muscle atrophy or joint deformities
+- Gait: No limp or antalgia, able to walk normally with some pain
+- Palpation: Tenderness over medial joint line and ligament, no tenderness over patella, tibial tuberosity, patellar tendon, fibular head, calf, thigh, or hamstring muscles
+- Special tests: Pain and mild laxity with valgus stress of knee (medial aspect), negative anterior and posterior drawer tests
+- Range of motion: Full ROM of knee, hip, and ankle
+- Neurovascular: No numbness, tingling, muscle weakness, or sensory changes; reflexes normal
+
+Assessment:
+- Likely MCL strain
+
+Plan:
+- Conservative management with NSAIDs for pain and swelling
+- Consider crutches for 1-2 days if pain severe
+- Physical therapy exercises to strengthen quadriceps and hamstring muscles
+- Expect healing within 2 weeks for low-grade injury, longer for more severe injury
+- Consider knee X-ray if not improving
+- Differential diagnosis includes medial meniscal injury or medial knee bursitis

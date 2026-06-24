@@ -1,0 +1,11 @@
+People who received a renal (kidney) transplant appear cushingoid (having different symptoms, often facial puffiness and weight gain, due to too much of the hormone cortisol in the body) while on low doses of steroid as part of multiple drug treatments, including prednisolone.
+The study group has adult kidney transplant patients with stable functions within the transplanted kidney who got the kidney at least a year ago along with an average daily prednisone dose of 7 mg.
+The comparison group is healthy people who did not receive a transplant.
+Prednisolone bioavailability (how much of a drug becomes completely available to the intended part of the body) is measured using an area under the curve (a measure of total exposure to the drug in the body's systems), with prednisolone measured using HPLC, or high performance liquid chromatographic (a technique that separates, identifies, and counts different parts in a mixture that makes it easy to analyze).
+The prednisolone area under the curve for all transplant patients is significantly greater than the comparison group of healthy non-transplant patients.
+Area under the curve measurements are much higher in females patients and in patients receiving cyclosporin, a drug that prevents the body from rejecting a transplant.
+The highest area under the curve measurement is in women on estrogen supplements (pills taken, often to resolve symptoms related to menopause) who are taking cyclosporin.
+A significantly higher proportion of patients on multiple-drug therapy had steroid side effects compared with those on steroid and azathioprine (a drug that can prevent organ rejection after a transplant). More women than men had side effects, and the area under the curve prednisone was greater in those with side effects than without.
+The results are consistent with the suggestion that cyclosporin A increases the bioavailability (how much of a drug becomes completely available to the intended part of the body) of prednisolone.
+The increased exposure to the steroid increased the side effects of steroids in most of the patients.
+It may be possible to use single-point monitoring (one time measurement) 2 hours after the dose for routine clinical studies.

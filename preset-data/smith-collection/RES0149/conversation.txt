@@ -1,0 +1,192 @@
+# Smith Collection Transcript: RES0149
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Hi i um i just developed uh or i guess i just started having difficulties with uh breathing starting this morning it was just very odd i was fine yesterday night and then just this morning ive had a really hard time breathing um and yeah i thought i should come in and get it checked out i dont know whats going on
+
+Doctor: Yeah certainly and so uh like did this shortness of breath wake you uh like did you wake up um like just like uh to kind of sit up to catch your breath um or when did the shortness of breath start
+
+Patient: um it was kind of after i woke up and i was sort of um just walking around that i i noticed that i was feeling short of breath just walking around which was so weird you know that that doesnt really happen to me
+
+Doctor: OK um and with this with the shortness of breath have you had had a cough
+
+Patient: No
+
+Doctor: OK and um have you had any wheeze
+
+Patient: um no
+
+Doctor: OK and have you been having any uh any chest pain
+
+Patient: Yeah i kind of i guess it just hurts a little bit when i take a when i breathe in
+
+Doctor: OK is is this pain when you take a deep breath in
+
+Patient: Yeah i guess so yeah
+
+Doctor: And where do you feel the pain
+
+Patient: um its kind of on my um right side
+
+Doctor: OK does the pain uh like radiate anywhere or do you feel it just in that one spot
+
+Patient: Its just uh its just in that one spot its just this sudden and like like this stabbing sensation um when im like taking a breath in uhm actually now that i think about it its its kind of there even when im like breathing normal but its not as bad when i take a deep breath its like really really bad or when i um yeah when i like cough or like im laughing or something it just gets really bad
+
+Doctor: And when did you first notice this pain
+
+Patient: Kind of um late this morning
+
+Doctor: OK uh have you tried anything for a for the pain
+
+Patient: uh i dont know its just i just try not to take deep breaths im just trying to just take a normal breath and try not to talk too much and yeah just like not doing anything that worsens the pain
+
+Doctor: OK i see and um did you have any trauma to that to that area recently like a car accident or i dont know getting hit in the ribs or anything like that
+
+Patient: No no i didnt
+
+Doctor: OK um and have you had any episodes where um or actually rather like do you have any issues with lying flat and having shortness of breath
+
+Patient: No
+
+Doctor: OK and um have you had any headaches
+
+Patient: Uhm no
+
+Doctor: Have you had any uh fevers or chills
+
+Patient: No i dont think so
+
+Doctor: OK and have you had any night sweats
+
+Patient: No
+
+Doctor: Have you had any changes to your weight recently i mean like over the last several months
+
+Patient: uh no
+
+Doctor: OK and um have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: How about any changes to your sense of uh taste or your sense of smell
+
+Patient: No those are ok
+
+Doctor: Alright and have you had uh a runny nose or a sore throat
+
+Patient: No
+
+Doctor: Alright um and have you had any diarrhea
+
+Patient: No
+
+Doctor: How about any urinary problems
+
+Patient: No
+
+Doctor: And have you noticed any skin changes or rashes
+
+Patient: No
+
+Doctor: OK um and how about any uh muscle aches or body pains
+
+Patient: um yeah i kind of have uh its just my left leg hurts a little bit im not quite sure why but yeah nothing else
+
+Doctor: OK whereabouts uh where does it hurt um on your left leg
+
+Patient: um kind of in the calf area
+
+Doctor: OK is it is it swollen or have you noticed any redness of the skin there
+
+Patient: Yeah it is it is swollen actually compared to my right leg its a little bit warm too
+
+Doctor: OK um have you had any uh like periods of time where you were bedridden over the last several days or or last several weeks
+
+Patient: No
+
+Doctor: OK any surgeries recently
+
+Patient: No
+
+Doctor: Alright and have you traveled anywhere over any long distances recently
+
+Patient: Oh yeah yeah i came back um two days ago um i went to um i went to india to visit my family there was a death so had to to go i came back yeah two days ago
+
+Doctor: OK yeah thats quite a long flight and im sorry to hear about um the loss of the family um ok um oh and that reminds me have you coughed up uh any blood at all
+
+Patient: uh no
+
+Doctor: OK um and um i just wanted to switch gears a little bit and ask about your past health have you been diagnosed with any medical conditions
+
+Patient: Uhm i ive had um anxiety and uh yeah thats thats about it i had asthma as a child but nothing since then
+
+Doctor: I see and do you uh take any medications for anxiety or have you
+
+Patient: uh no im just trying to um just trying to reduce my stress and and trying other other ways to sort of handle my anxiety before i im just trying to avoid builds actually
+
+Doctor: I see ok so do you take any medications like either prescribed or over the counter
+
+Patient: uh no
+
+Doctor: Do you have any allergies to um to medications or or environmental
+
+Patient: No
+
+Doctor: Alright and um have you had any surgeries in the past or any hospitalizations
+
+Patient: uh i had my appendix removed when i was uh 30 years old
+
+Doctor: OK um and any complications with that
+
+Patient: No
+
+Doctor: Alright and currently uh whereabouts are you living and uh who are you living with
+
+Patient: um im just living with my sister and uh yeah we we live in an apartment together
+
+Doctor: OK and has she been sick or have you been any around anybody whos been sick
+
+Patient: No
+
+Doctor: OK um and uh any potential exposures to uh tb uh either in your on your travels or or anybody that you that you know of
+
+Patient: I dont think so no
+
+Doctor: OK um and do you smoke cigarettes
+
+Patient: No
+
+Doctor: And do you drink alcohol
+
+Patient: No
+
+Doctor: uh how about the use of any uh recreational drugs
+
+Patient: No
+
+Doctor: OK um and in the family is there a history of any bleeding disorders or any uh clotting disorders
+
+Patient: Uhm no i dont think so
+
+Doctor: OK um and any heart conditions lung conditions
+
+Patient: um just a heart attack uhm both my grandparents on my dads side uh had a heart attack and uh diabetes as well um i think both my parents have diabetes
+
+Doctor: OK have you been tested for uh diabetes as well
+
+Patient: uh yeah yeah yeah i go to see my family doctor and my uh he said my sugars were good
+
+Doctor: OK great um alright so um youve been experiencing uh so this this chest pain when you breathe in deeply since this morning um as well as some more difficulty breathing and some left pain uh left leg pain with with some swelling uh have you been after travels as well have you had any other symptoms
+
+Patient: No i dont think so
+
+Doctor: OK so that was all i wanted to ask today on on history and before i went on to uh the physical exam we want to check uh vital signs and have a listen to your heart and lungs and um measure the diameter of your of your shins as well um but um itll be important to get uh some imaging of your of your lungs um to assess whether or not theres a pulmonary embolism um uh because that would be one of the more um life threatening or potentially um complicating uh causes of whats going on right now
+
+Patient: Sure

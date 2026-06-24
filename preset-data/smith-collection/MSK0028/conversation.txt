@@ -1,0 +1,242 @@
+# Smith Collection Transcript: MSK0028
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: I just came in because ive been having this just just yesterday it started this sudden just pain over the front of my kind of like a shoulder an also elbow and it was right after doing i was just doing some workout and this pain just started and its just like a stabbing sharp pain that hasnt really gone away since then
+
+Doctor: OK and so what activity were you doing specifically
+
+Patient: So i was doing so i was just doing weight training and i was kind of flexing my elbows and i was working on my biceps i was on that machine where you so know i wasnt using weights or doing curls but i was working on my biceps and i think i did hear i dont think i heard like any pop or anything but right after that i just had this sudden sharp pain in my shoulder as well as my elbow
+
+Doctor: OK so you you you think you heard a pop at that time
+
+Patient: um im not sure if i heard a pop actually i think i might have though
+
+Doctor: OK and did the pain start immediately or or a bit later on
+
+Patient: The pain i think it started pretty soon after like probably within like half an hour of that happening
+
+Doctor: OK and where is the pain located now
+
+Patient: The pain right now is a yeah just kind of right at the front of my right elbow as well as near my shoulder as well
+
+Doctor: OK and um i think you mentioned the pain as as being sharp is that how you would describe the character of the pain
+
+Patient: Yeah its sharp yeah i just feel like something stabbing in there
+
+Doctor: OK and does the pain radiate anywhere else
+
+Patient: No its kind of in the same area as they described
+
+Doctor: OK has there been anything youve tried to make the pain better
+
+Patient: No nothings i tried like advil nothings really worked
+
+Doctor: OK and uh sorry how long is how many days is the pain been on going on for just just started yesterday
+
+Patient: Yesterday
+
+Doctor: OK and since then has the pain getting any better or any worse
+
+Patient: I think its the same probably a bit worse than so it just happened last evening and i i didnt end up coming last night but i wanted to make sure im just coming this morning since its just been a really painful night
+
+Doctor: OK have you done anything thats made the pain worse since last night
+
+Patient: No i just tried to just rest and i tried to use some ice but nothing nothings been working and i kind of also have like this it its weird its just like this mass right where my biceps is it kind of just makes my biceps look really big
+
+Doctor: OK alright well i skip look at that during the physical exam component thank you and so like are you seeing swell is there like swelling there is as well or is is that part painful
+
+Patient: Yeah its painful there swelling there as well
+
+Doctor: OK and well how severe is the pain on a scale of 10 to 1 10 being the worst pain that youve ever experienced and one being the least
+
+Patient: Probably at least an 8 maybe a 9
+
+Doctor: OK so the pain is pretty severe then it sounds like uh ok have you had any fevers or chills
+
+Patient: No
+
+Doctor: Have you had any unexpected weight loss
+
+Patient: No
+
+Doctor: OK and have you had any appetite loss
+
+Patient: Uhm no
+
+Doctor: OK and have you had any headaches
+
+Patient: Uhm no
+
+Doctor: How about any sensory changes like changes to vision or hearing
+
+Patient: No nothing like that
+
+Doctor: Any changes to your sense of smell or sense of taste
+
+Patient: Nope
+
+Doctor: Have you had a runny nose or a sore throat
+
+Patient: Uhm no nothing like that
+
+Doctor: OK have you had a cough
+
+Patient: No
+
+Doctor: Any shortness of breath
+
+Patient: No
+
+Doctor: OK any wheezing
+
+Patient: No
+
+Doctor: um have you had any chest pain
+
+Patient: No
+
+Doctor: Have you had any heart palpitations or feeling like your hearts racing
+
+Patient: No
+
+Doctor: Any lightheadedness or dizziness
+
+Patient: Nope
+
+Doctor: OK uh and have you had any abdominal pain
+
+Patient: No
+
+Doctor: Any nausea or vomiting
+
+Patient: No
+
+Doctor: Any changes to your bowel movements such as diarrhea or constipation or even blood in the stool
+
+Patient: No nothing like that
+
+Doctor: OK any urination problems such as pain or frequency
+
+Patient: Nope
+
+Doctor: OK and have you noticed any changes to your skin like rashes or changes to your nails or hair
+
+Patient: No
+
+Doctor: Alright and have you had any neurological symptoms such as numbness or tingling
+
+Patient: No i dont think so
+
+Doctor: OK and have you had any muscle weakness
+
+Patient: Just just in the in that area i cant really like i cant really flex an really move my upper upper arm in my elbow
+
+Doctor: OK do you have any pains in any other joints
+
+Patient: um no thats its only my right upper arm
+
+Doctor: OK um and have you had any confusion or memory loss
+
+Patient: No ok and in the past have you been diagnosed with any other medical conditions
+
+Doctor: Uhm no ive been pretty healthy um i they think i do have like pre diabetes but im not on any medication
+
+Patient: OK and have you had any issues with your shoulder before like like a subacromial like impingement syndrome or like a rotator cuff pains or problems in the past
+
+Doctor: A few years ago i did have some pain um with like some they they told me not to do like overhead work like just things that require like with physio i need to do some strengthening as well and it was it wasnt the same same shoulder
+
+Patient: OK and do you take any medications regularly
+
+Doctor: uh no
+
+Patient: OK and do you have any allergies
+
+Doctor: No
+
+Patient: Have you had any hospitalizations or prior surgeries
+
+Doctor: I had my tonsils removed when i was probably like 10 or something but thats about it
+
+Patient: OK and for the shoulder in the past did you have any imaging done like an ultrasound or or mri maybe to look at the structures
+
+Doctor: No it was just a it kind of went away i just did some physio they didnt really do any imaging
+
+Patient: I see ok and can you tell me a little about your living situation right now like youre living with and where
+
+Doctor: Yeah so im living with my wife and um daughter and im living just in a condominium in the city
+
+Patient: OK and are you working right now
+
+Doctor: Yeah so im an accountant im working from home so its not that bad but i i might just take a few days off depending on what i have to do with this injury
+
+Patient: OK and um do you and hobby wise you mentioned like weight lifting are you an active person like bodybuilding and that sort of thing regularly
+
+Doctor: I i just actually probably started this past year i used to i used to workout a lot in university and in my early 30s but then i stopped and this year ive kind of gone back into it
+
+Patient: OK well its good that youre staying active and um do you smoke cigarettes
+
+Doctor: No i uh probably tried a couple times and high school and university but just it was never my thing
+
+Patient: OK and how about cannabis like smoking marijuana or using any of those types of products
+
+Doctor: No i i try to stay away from any drugs
+
+Patient: OK uh including recreational drugs
+
+Doctor: Yeah
+
+Patient: OK and uh are there any musculoskeletal or neurological problems that that run in the family
+
+Doctor: Not that i know of no
+
+Patient: OK now how about any autoimmune diseases
+
+Doctor: uh no i dont think so
+
+Patient: OK so next i just wanted to ask you to have a look at the at the arm compared to the other side are you noticing any swelling redness or
+
+Doctor: Yeah any swelling or redness i do see some just like kind of like in the middle of this area some redness kind of looks like some bruising in in that in that region uhm i also feel like when i like try to flex my biceps kind of have moved upwards
+
+Patient: OK is this the mass or lump that i you were mentioning earlier that you kinda can notice in the in your right arm
+
+Doctor: Yeah yeah
+
+Patient: OK is there any temperature change like does it feel warm on that side
+
+Doctor: Uhm i cant really tell if its warm or not
+
+Patient: OK and you so you mentioned are you able to bend your elbow all the way up so to flex it all the way up or is a range of motion limited
+
+Doctor: Its pretty limited its pretty tough to flex its really painful and that i also cant like i cant turn my arm i cant supinate
+
+Patient: OK so yeah so is that so you have reduced supination as well
+
+Doctor: Yeah
+
+Patient: And how are your shoulder movement are you able to like if youre lifting your arms straight out in front of you are you able to to lift them all the way up above your head
+
+Doctor: Out like at the sides or in front of me
+
+Patient: In front of you
+
+Doctor: Yeah the shoulder seems to be ok i am able to lift up but its just if i try to move my upper arms at all it hurts a lot
+
+Patient: OK alright so youll get some pain at the at the shoulder with the movement
+
+Doctor: There there is discomfort in the affected side but i can i can move it much more than i can move my elbows or anything like that
+
+Patient: OK i see so i think that was everything that i wanted to ask about and and i look for on on the physical today was there anything i may be missed or anything like that
+
+Doctor: Uhm no i think uh i dont have any other questions
+
+Patient: OK alright so based on the history and what youre telling me for the physical as well of having a history of exercising and also shoulder pain with overhead head movements which are risk factors for developing a biceps tendon tear or biceps tendon injury and having the swelling and bruising as well as reduced function of biceps or elbow flexion they all suggests that there is a biceps tendon tear or injury there and so will want to get an ultrasound or mri to look at will start with the ultrasound but then possibly get an mri as well to look at the extent of the tissue damage but if there is just a long head of biceps tear it will usually be treated conservatively and so well just need to look to see what the extent of the injury is
+
+Doctor: OK

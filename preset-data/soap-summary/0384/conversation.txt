@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0384
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Thank you for coming in to see us at A B C D General Hospital today. I wish I wasn't here right now. I understand, before we begin, how old are you? I'm seventy seven years young. Which race, and gender do you identify with? I'm an African American woman. What's seems to be causing you pain today? I've had this bunion on my foot for as long as I can remember. Is the pain worsening? Yes, it is so painful, I've tried to avoid surgery for so long, but I want this bunion gone. How have you managed this bunion in the past? I've used antiinflammatories, rested, changed my activities, I've done everything, but this pain is getting worse and worse. I need it gone.

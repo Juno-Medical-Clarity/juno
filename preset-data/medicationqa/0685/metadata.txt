@@ -1,0 +1,5 @@
+drug_focus: amlodipine; metoprolol
+question_type: Interaction
+section_title: Adverse events
+source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3952407/
+sample_id: 0685

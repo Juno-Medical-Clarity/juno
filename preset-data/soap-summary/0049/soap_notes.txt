@@ -1,0 +1,42 @@
+# SOAP Notes — Sample 0049
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with cough that started yesterday, wet cough with yellowish-green sputum that smells bad and leaves a bad taste in mouth
+- Shortness of breath started within last 12 hours, has been worsening
+- Shortness of breath worse with smoking cigarettes and going out to get mail, had to sit down due to inability to get mail which is unusual
+- Feels heart has been beating a little faster
+- Felt a little nauseous with the bad taste in mouth
+- No headache, runny nose, congestion, chest pain, abdominal pain, nausea, vomiting, diarrhea, constipation, or sore throat
+
+PMHx:
+- Hypertension
+- GERD - still gets heartburn and acid in mouth at times despite PPI, worse with certain foods
+- Hyperlipidemia
+- Anxiety - no panic attacks
+- Left knee replacement a few years ago
+
+Medications: ACE inhibitor, statin, pantoprazole
+
+SocHx:
+- Retired
+- Drinks 4-6 beers daily, had more than usual yesterday and friends reported he passed out drunk
+- Smokes 0.5 PPD cigarettes, down from 1 PPD previously
+- Denies marijuana or recreational drug use
+- Lives with wife in apartment, able to do grocery shopping and household chores, uses cane at times due to previous knee injury
+
+FHx:
+- Father had liver disease (passed away from this) and heart problems, was a lifelong smoker
+
+Objective:
+- Vitals signs
+- Respiratory examination
+
+Assessment:
+- Possible aspiration pneumonia or viral pneumonia/infection
+
+Plan:
+- Chest X-ray
+- Labs
+- Likely start antibiotics
+- Recommend follow-up with PCP for regular check-ups, medication adjustments, and age-appropriate screenings

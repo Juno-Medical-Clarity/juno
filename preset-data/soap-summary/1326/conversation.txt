@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1326
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke or drink? No. Any drugs? You mean like meth? Yeah. No, never did it. Okay.

@@ -1,0 +1,11 @@
+source:      pnas
+side:        complex
+readability: 5.15
+split:       test
+
+jargon_spans:
+  [5:12] 'medical-jargon-google-hard' -> 'SMA + myofibroblasts of Hox5 triple mutants'
+  [13:14] 'medical-jargon-google-easy' -> 'morphologically'
+  [16:18] 'medical-jargon-google-easy' -> 'in vivo'
+  [19:21] 'medical-jargon-google-easy' -> 'in vitro'
+  [26:27] 'medical-jargon-google-easy' -> 'fibronectin'

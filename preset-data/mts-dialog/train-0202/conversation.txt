@@ -1,0 +1,4 @@
+Doctor: Your culture results came back positive for Streptococcus pneumoniae. This is a bacterial infection. I would like to take a course of antibiotics.  This should start to improve your symptoms with in three to four days.
+Patient: Okay.
+Doctor: Please let me know if your symptoms have not improved or becomes worse.
+Patient: I will. Thank you.

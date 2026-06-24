@@ -1,0 +1,7 @@
+source:      plos_genetics
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [24:25] 'abbr-medical' -> 'HDE'

@@ -1,0 +1,5 @@
+pmid:        11813080
+question:    70
+adaptation:  adaptation3
+title:       Folate, vitamin B12 and vitamin B6 and one carbon metabolism
+sentences:   13

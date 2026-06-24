@@ -1,0 +1,15 @@
+Background: COVID-19 is an ongoing public health pandemic regardless of the countless efforts made by various actors.
+Quality diagnostic tests are important for early detection and control.
+Notably, several commercially available one step RT-PCR based assays have been recommended by the WHO.
+Yet, their analytic and diagnostic performances have not been well documented in resource-limited settings.
+Hence, this study aimed to evaluate the diagnostic sensitivities and specificities of three commercially available one step reverse transcriptase-polymerase chain reaction (RT-PCR) assays in Ethiopia in clinical setting.
+Methods: A cross-sectional study was conducted from April to June, 2021 on 279 respiratory swabs originating from community surveillance, contact cases and suspect cases.
+RNA was extracted using manual extraction method.
+Master-mix preparation, amplification and result interpretation was done as per the respective manufacturer.
+Agreements between RT-PCRs were analyzed using kappa values.
+Bayesian latent class models (BLCM) were fitted to obtain reliable estimates of diagnostic sensitivities, specificities of the three assays and prevalence in the absence of a true gold standard.
+Results: Among the 279 respiratory samples, 50(18%), 59(21.2%), and 69(24.7%) were tested positive by TIB, Da An, and BGI assays, respectively.
+Moderate to substantial level of agreement was reported among the three assays with kappa value between 0 .55 and 0.72.
+Based on the BLCM relatively high specificities (95% CI) of 0.991(0.973-1.000), 0.961(0.930-0.991) and 0.916(0.875-0.952) and considerably lower sensitivities with 0.813(0.658-0.938), 0.836(0.712-0.940) and 0.810(0.687-0.920) for TIB MOLBIOL, Da An and BGI respectively were found.
+Conclusions: While all the three RT-PCR assays displayed comparable sensitivities, the specificities of TIB MOLBIOL and Da An were considerably higher than BGI.
+These results help adjust the apparent prevalence determined by the three RT-PCRs and thus support public health decisions in resource limited settings and consider alternatives as per their prioritization matrix.

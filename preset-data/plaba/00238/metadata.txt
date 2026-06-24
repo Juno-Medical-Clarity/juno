@@ -1,0 +1,5 @@
+pmid:        32675145
+question:    19
+adaptation:  adaptation1
+title:       Update on the diagnosis and management of Parkinson's disease
+sentences:   8

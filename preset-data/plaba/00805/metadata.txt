@@ -1,0 +1,5 @@
+pmid:        34395220
+question:    64
+adaptation:  adaptation2
+title:       Genetic Diagnosis in Children with Epilepsy and Developmental Disorders by Targeted Gene Panel Analysis in a Developing Country
+sentences:   17

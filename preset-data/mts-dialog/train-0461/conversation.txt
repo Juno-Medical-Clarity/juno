@@ -1,0 +1,6 @@
+Doctor: How often are you vomiting?
+Patient: At least three times until my stomach is empty.
+Doctor: Can you think of something this is related to?
+Patient: Just when I eat raw carrots and celery.
+Doctor: Do you get belly pain?
+Patient: Yes.

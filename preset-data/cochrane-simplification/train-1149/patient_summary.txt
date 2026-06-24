@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1149  |  gem_id: gem-cochrane-simplification-train-1150  |  doi: 10.1002/14651858.CD006742.pub2
+
+In this review, existing evidence comparing the health outcomes between treated and untreated individuals are summarized. Available data from the limited number of available trials and participants showed no difference between treated and untreated individuals in heart attack, stroke, and death. About 9% of patients treated with drugs discontinued treatment due to adverse effects. Therefore, the benefits and harms of antihypertensive drug therapy in this population need to be investigated by further research.

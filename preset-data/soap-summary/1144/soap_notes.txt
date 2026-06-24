@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1144
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient does not smoke. 
+- Patient consumes alcohol but states it is at a normal level and denies any alcohol problems. 
+- Patient has no history of drug or alcohol abuse. 
+
+Objective: 
+- [No objective data provided.]
+
+Assessment: 
+- [No assessment provided.]
+
+Plan: 
+- [No plan provided.]

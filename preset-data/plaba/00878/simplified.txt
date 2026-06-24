@@ -1,0 +1,8 @@
+Cilia are projections present in almost every cell. Cilia integrate signals from outside the cells and those within the cells.
+Continuous activation of FGFR3 signaling produces the bone growth disorders achondroplasia (ACH) and thanatophoric dysplasia (TD), but many of the molecular mechanisms underlying these remain unresolved.
+Here, the authors report that primary cilia in ACH and TD cartilage growth regions are significantly shorter.
+Data demonstrate that transient versus continuous activation of fibrblast growth factor (FGF) signaling correlates with size of the cilia.
+Transient FGF pathway activation elongated cilia, while continuous activity shortened cilia.
+FGF signaling extended primary cilia via  a pathway involving ERK MAP kinase and mTORC2, but not through mTORC1.
+_
+Authors uncover a FGF-cilia pathway that is involved in the mechanisms of FGFR function, and should be considered in the development of therapies for FGFR function.

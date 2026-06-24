@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0596
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 56 years old.
+- History of systemic lupus erythematosus.
+- Discomfort in both hands, worse in the left hand.
+- Previous treatment involved a trial of Elavil for suspected ulnar or radial neuropathy.
+- Prescription for Zostrix was not filled due to insurance issues.
+- Symptoms have worsened, especially at the base of the left hand around the wrist.
+- Symptoms in the second, third, and fourth fingers of the left hand.
+- Respiratory problems for the last three days, including a dry cough and a feeling of fever (no temperature taken).
+- No night sweats or chills reported.
+- No chest pain, discomfort, shortness of breath, or gastrointestinal problems reported.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

@@ -1,0 +1,14 @@
+Doctor: What do you do in the hospital?
+Patient: I work as a phlebotomist and respiratory therapist.
+Doctor: Ok, how old are you?
+Patient: I am fifty four.
+Doctor: You are very young.
+Patient: Thank you!
+Patient: So, as you remember I was trying to measure blood gas as I was working with a patient and I accidently jammed that needle inside my right hand index finger.
+Patient: I am coming for regular screening.
+Doctor: Were you wearing gloves?
+Patient: Yes, I had gloves and protective clothing.
+Doctor: Yes, thank you for that. Did they screen patient?
+Patient: Yes, he got negative HIV but positive Hep C.
+Doctor: Ok.
+Patient: I am scared.

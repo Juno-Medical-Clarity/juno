@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1727  |  gem_id: gem-cochrane-simplification-train-1728  |  doi: 10.1002/14651858.CD003012.pub2
+
+This review examined trials which compared antidepressants with 'active' placebos, that is placebos containing active substances which mimic side effects of antidepressants. Small differences were found in favour of antidepressants in terms of improvements in mood. This suggests that the effects of antidepressants may generally be overestimated and their placebo effects may be underestimated.

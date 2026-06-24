@@ -1,0 +1,3 @@
+Patient: I am having stomach pain.
+Doctor: Hm, any nausea or vomiting?
+Patient: Yes, both.

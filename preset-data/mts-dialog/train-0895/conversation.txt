@@ -1,0 +1,28 @@
+Doctor: How are you feeling?
+Patient: I am feeling better now.
+Doctor: What happened last night?
+Guest_family: She went out to a party last night. She came home drunk and high.
+Doctor: What did you take?
+Patient: I took Ecstasy. I only had two drinks.
+Doctor: How much Ecstasy did you take?
+Patient: I didn't take them all at once. I think I took six tabs.
+Doctor: What time did you start taking the tablets?
+Patient: We started taking it kind of late. I think it was midnight.
+Guest_family: When she came home, she was agitated and physically shaking. She was pacing all over the house. Then she threw up. That is when I got nervous and called nine one one.
+Doctor: Mom, did you notice any blood, or any yellow or green color in the vomit?
+Guest_family:  No.
+Doctor: Are you still feeling nauseous?
+Patient: No. I feel fine. Well, I feel weird but not nauseous.
+Doctor: Are you experiencing any pain at all?
+Patient: No.
+Doctor: Did you or do you feel depressed?
+Patient: No.
+Doctor: Do you or have you ever had suicidal thoughts?
+Patient: No.
+Doctor: Are you seeing or hearing things that are not real?
+Patient: No.
+Doctor: Do you or have you ever had thoughts of harming yourself?
+Patient: No. I was not trying to harm myself or anyone else. I just wanted to have a little fun.
+Guest_family: She seems to be back to her usual self now.
+Doctor: Just one more question. Prior to last night have you had any recent illnesses or injuries?
+Patient: No.

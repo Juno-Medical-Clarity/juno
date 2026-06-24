@@ -1,0 +1,5 @@
+drug_focus: buprenorphine
+question_type: Stopping/tapering
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1bf8b35a-b769-465c-a2f8-099868dfcd2f#ID_43381dee-f39f-48c1-a88a-fd47063cedc2
+sample_id: 0229

@@ -1,0 +1,5 @@
+pmid:        34549987
+question:    28
+adaptation:  adaptation1
+title:       Direct activation of endothelial cells by SARS-CoV-2 nucleocapsid protein is blocked by Simvastatin
+sentences:   16

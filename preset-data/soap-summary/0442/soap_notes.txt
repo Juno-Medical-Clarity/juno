@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0442
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is doing well.
+- Starts a new job on Monday after being unemployed for about a year.
+- Expresses positive feelings about returning to work.
+- Used to smoke a little but quit ten years ago.
+- Does not drink alcohol or use recreational drugs.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

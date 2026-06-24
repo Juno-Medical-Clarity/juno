@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0953
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Cough, cold, runny nose
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: None mentioned
+- Family history: Patient lives with parents and four brothers (ages 18, 16, 14, 12) and one younger sister (age 3); all family members except mother are sick.
+- Allergies: None mentioned
+- Other concerns: Family members are sick at home.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

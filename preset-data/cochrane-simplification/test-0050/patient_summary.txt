@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0050  |  gem_id: gem-cochrane-simplification-test-51  |  doi: 10.1002/14651858.CD008395.pub2
+
+We identified three randomised controlled trials involving 333 children up to 24 months of age hospitalised with bronchiolitis. All three studies compared nebulised rhDNase with placebo. Any additional treatments were given to both groups. Overall, the studies did not show that nebulised rhDNase shortened the duration of hospital admission, or improved the severity of symptoms. No serious side effects were reported by any of the studies. One study showed that in patients suffering from atelectasis, a severe complication of bronchiolitis wherein the lung does not expand completely, nebulised rhDNase treatment resulted in a distinct improvement within two days. To confirm this beneficial effect, further clinical studies in patients with severe bronchiolitis are needed. Currently, the use of this treatment in young children hospitalised with bronchiolitis is not recommended.

@@ -1,0 +1,6 @@
+Doctor: Any specific family medical history that I should be aware of?
+Patient: No.
+Doctor: Anyone in your family, even grandparents, if you know them, did they have diabetes or high blood pressure?
+Patient: No.
+Doctor: Anyone else sick at home?
+Patient: No.

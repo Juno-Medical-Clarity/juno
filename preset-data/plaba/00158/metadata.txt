@@ -1,0 +1,5 @@
+pmid:        18760136
+question:    13
+adaptation:  adaptation1
+title:       Dronedarone for the control of ventricular rate in permanent atrial fibrillation: the Efficacy and safety of dRonedArone for the cOntrol of ventricular rate during atrial fibrillation (ERATO) study
+sentences:   13

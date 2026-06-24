@@ -1,0 +1,2 @@
+Doctor: History of any illnesses, surgeries, or hospitalizations?
+Patient: I dislocated my wrist when I was a kid but that's all.

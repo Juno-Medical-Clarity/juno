@@ -1,0 +1,31 @@
+# SOAP Notes — Sample 0242
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Nasal congestion, sneezing, sore throat (started 2 days ago)
+- Mild headache (started this morning, feels like head is squeezing, similar to previous headaches when sleep-deprived or dehydrated)
+- Watery nasal discharge
+- Pressure in the front of face when bending over
+- Sore throat when eating, but not preventing eating
+- No fever, difficulty swallowing, cough, ear pain, feverish feeling, chills, fatigue, malaise, aches, pains, rashes, runny/red eyes, difficulty breathing, chest pain, abdominal pain, bowel movement issues, urinary symptoms
+- Symptoms worsened over the past 2 days
+- PMHx: dermatitis (childhood, no recent issues)
+- Medications: Advil 400mg (this morning for headache)
+- Allergies: cats, environmental (itchy eyes, runny nose in spring/fall)
+- SocHx: lives with parents and younger brother, finishing grade 8 (online courses)
+- No recent travel, no recent illness exposure, no recent COVID test, no recent antibiotics
+
+Past Medical History:
+- Dermatitis (childhood, no recent issues)
+- Allergies: cats, environmental (itchy eyes, runny nose in spring/fall)
+
+Objective:
+- Physical exam to be conducted
+
+Assessment:
+- Likely diagnosis: common cold (likely viral)
+
+Plan:
+- COVID swab
+- Monitor symptoms
+- Follow-up if symptoms worsen or if there are any new concerns

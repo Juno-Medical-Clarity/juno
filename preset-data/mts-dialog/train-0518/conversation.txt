@@ -1,0 +1,9 @@
+Doctor: Is everything fine?
+Guest_family: My mom is not well.
+Doctor: When did this start?
+Guest_family: I don't know but she is not in her correct state of mind.
+Doctor: Okay let's see what we can do, how old is she?
+Guest_family: She is around seventy four years old.
+Doctor: Okay. Don't worry, we will see what we can do.
+Guest_family: Thanks!
+Doctor: Of Course.

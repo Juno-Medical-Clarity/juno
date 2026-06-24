@@ -1,0 +1,16 @@
+Acute pharyngitis/tonsillitis, which is characterized by inflammation of the posterior pharynx and tonsils, is a common disease.
+Several viruses and bacteria can cause acute pharyngitis; however, Streptococcus pyogenes (also known as Lancefield group A β-hemolytic streptococci) is the only agent that requires an etiologic diagnosis and specific treatment.
+S. pyogenes is of major clinical importance because it can trigger post-infection systemic complications, acute rheumatic fever, and post-streptococcal glomerulonephritis.
+Symptom onset in streptococcal infection is usually abrupt and includes intense sore throat, fever, chills, malaise, headache, tender enlarged anterior cervical lymph nodes, and pharyngeal or tonsillar exudate.
+Cough, coryza, conjunctivitis, and diarrhea are uncommon, and their presence suggests a viral cause.
+A diagnosis of pharyngitis is supported by the patient's history and by the physical examination.
+Throat culture is the gold standard for diagnosing streptococcus pharyngitis.
+However, it has been underused in public health services because of its low availability and because of the 1- to 2-day delay in obtaining results.
+Rapid antigen detection tests have been used to detect S. pyogenes directly from throat swabs within minutes.
+Clinical scoring systems have been developed to predict the risk of S. pyogenes infection.
+The most commonly used scoring system is the modified Centor score.
+Acute S. pyogenes pharyngitis is often a self-limiting disease.
+Penicillins are the first-choice treatment.
+For patients with penicillin allergy, cephalosporins can be an acceptable alternative, although primary hypersensitivity to cephalosporins can occur.
+Another drug option is the macrolides.
+Future perspectives to prevent streptococcal pharyngitis and post-infection systemic complications include the development of an anti-Streptococcus pyogenes vaccine.

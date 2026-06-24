@@ -1,0 +1,12 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'monocytes'
+  [10:12] 'medical-jargon-google-easy' -> 'inflammatory response'
+  [20:21] 'medical-jargon-google-easy' -> 'monocytes'
+  [30:34] 'medical-jargon-google-hard' -> 'Fas - mediated apoptosis'
+  [36:39] 'medical-jargon-google-easy' -> 'T - cells'
+  [40:43] 'medical-jargon-google-easy' -> 'S. pneumoniae pneumonia'

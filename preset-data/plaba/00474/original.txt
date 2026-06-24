@@ -1,0 +1,14 @@
+Background: Antiepileptic drugs (AEDs) can be associated with neurotoxic side effects including cognitive dysfunction, a problem of considerable importance given the usual long-term course of treatment.
+Pregabalin is a relatively new AED widely used for the treatment of seizures and some types of chronic pain including fibromyalgia.
+We measured the cognitive effects of 12 weeks of pregabalin in healthy volunteers.
+Methods: Thirty-two healthy volunteers were randomized in a double-blind parallel study to receive pregabalin or placebo (1:1).
+Pregabalin was titrated over 8 weeks to 600 mg/d.
+At baseline, and after 12 weeks of treatment, all subjects underwent cognitive testing.
+Test-retest changes in all cognitive and subjective measures were Z scored against test-retest regressions previously developed from 90 healthy volunteers.
+Z scores from the placebo and pregabalin groups were compared using Wilcoxon tests.
+Results: Thirty subjects completed the study (94%).
+Three of 6 target cognitive measures (Digit Symbol, Stroop, Controlled Oral Word Association) revealed significant test-retest differences between the pregabalin and placebo groups, all showing negative effects with pregabalin (p < 0.05).
+These cognitive effects were paralleled by complaints on the Portland Neurotoxicity Scale, a subjective measure of neurotoxicity (p < 0.01).
+Conclusion: At conventional doses and titration, pregabalin induced mild negative cognitive effects and neurotoxicity complaints in healthy volunteers.
+These effects are one factor to be considered in the selection and monitoring of chronic AED therapy.
+Class of Evidence: This study provides Class I evidence that pregabalin 300 mg BID negatively impacts cognition on some tasks in healthy volunteers.

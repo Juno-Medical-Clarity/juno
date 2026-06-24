@@ -1,0 +1,12 @@
+source:      pnas
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'elastin network'
+  [5:7] 'medical-jargon-google-easy' -> 'alveolar formation'
+  [11:14] 'medical-jargon-google-hard' -> 'Hox5 triple mutants'
+  [17:19] 'medical-jargon-google-easy' -> 'basal lamina'
+  [20:22] 'medical-jargon-google-easy' -> 'interstitial matrix'
+  [24:25] 'medical-jargon-google-easy' -> 'fibronectin'

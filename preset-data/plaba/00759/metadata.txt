@@ -1,0 +1,5 @@
+pmid:        12090459
+question:    61
+adaptation:  adaptation2
+title:       The significance of the source of zinc and its anti-VSC effect
+sentences:   11

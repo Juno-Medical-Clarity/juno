@@ -1,0 +1,5 @@
+pmid:        32686966
+question:    9
+adaptation:  adaptation2
+title:       Clinical diagnosis and treatment of throat foreign bodies under video laryngoscopy
+sentences:   9

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2132  |  gem_id: gem-cochrane-simplification-train-2133  |  doi: 10.1002/14651858.CD005129.pub2
+
+This review looked at the benefits and harms of IgG, anti CMV vaccines and interferon to prevent CMV disease in solid organ transplant recipients. Thirty seven studies (2185 participants) were identified. This review shows that IgG did not reduce the risk of CMV disease or all-cause mortality compared with placebo or no treatment. The combination of IgG with antiviral medications (aciclovir or ganciclovir) were not more effective than antiviral medications alone in reducing the risk of CMV disease or all-cause mortality. Anti CMV vaccines and interferon did not reduce the risk of CMV disease compared with placebo or no treatment. Currently there are no indications for IgG in the prevention of CMV disease in recipients of solid organ transplants.

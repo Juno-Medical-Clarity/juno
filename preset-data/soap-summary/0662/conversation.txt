@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0662
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you drink or smoke? No I don't. I have to care for my daughter. She is a widow. So you live with her? Yes, she lives at home.

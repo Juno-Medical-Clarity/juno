@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0714
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports no alcohol use currently, used to drink occasionally a long time ago.
+- Patient does not smoke or vape.
+- Patient denies the use of drugs, including snorting or intravenous use.
+- Patient has never tried marijuana, despite it being legal.
+
+Objective:
+- [No measurable or observable data provided.]
+
+Assessment:
+- [No clinician's interpretation or diagnoses provided.]
+
+Plan:
+- [No plan or actions provided.]

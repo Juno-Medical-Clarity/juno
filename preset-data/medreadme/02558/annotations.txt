@@ -1,0 +1,10 @@
+source:      elife
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [5:8] 'medical-jargon-google-hard' -> 'Cys - protease'
+  [8:10] 'medical-jargon-google-hard' -> 'asparaginyl endopeptidase'
+  [11:12] 'abbr-medical' -> 'AEP'
+  [21:22] 'medical-jargon-google-easy' -> 'ligation'

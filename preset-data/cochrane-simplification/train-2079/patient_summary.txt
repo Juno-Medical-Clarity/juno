@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2079  |  gem_id: gem-cochrane-simplification-train-2080  |  doi: 10.1002/14651858.CD012678.pub2
+
+We included six randomised clinical trials (where people are randomly allocated to one of two groups) with 173 participants. All participants had cirrhosis. Interventions consisted of different types of exercise including bicycling, treadmill walking, and weight lifting. Programmes were home-based or supervised and lasted between eight and 14 weeks. Physical exercise did not seem to affect mortality (death), side effects or quality of life. Overall, the evidence for the effect of physical exercise was of low or very low quality. Factors that downgraded the quality of the evidence included lack of trials with a low risk of bias, small trials, and not similar results across trials.

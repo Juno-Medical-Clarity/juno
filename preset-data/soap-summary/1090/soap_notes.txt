@@ -1,0 +1,34 @@
+# SOAP Notes — Sample 1090
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Age: 76 years old
+- Symptoms: Pain in the front of the lower leg and right hip.
+- Nature of pain: Burning, shooting, aching, and constant.
+- Pain severity: Average pain rated as 9/10, lowest pain at 5/10.
+- Pain worsening with activities: Yes, worse when walking and standing.
+- Walking ability: Can walk around a block before feeling weak.
+- Pain relief: Feels more comfortable when resting, sitting, sleeping, or getting a massage.
+- Relevant medical history: Diagnosed with hyperlipidemia, hypertension, and atherosclerotic cerebrovascular disease. Previous decompression surgery for L3 and L4. Underwent surgery on lower legs.
+- Associated symptoms: Denied any bowel or bladder dysfunction, saddle area hypoesthesia, numbness, tingling, weakness, or Valsalva-related exacerbation.
+- Medication: Recently took Tylenol.
+
+Objective:
+- Previous diagnoses: Hyperlipidemia, hypertension, atherosclerotic cerebrovascular disease.
+- Surgical history: Decompression for L3 and L4 performed by Dr. Stanley Gertzbein. 
+- MRI findings: 
+ - Grade two L4 anterior spondylolisthesis without major canal stenosis.
+ - Facet joint disease at L4.
+ - Dorsal postoperative changes.
+ - Foraminal disc protrusion on the right.
+ - Severely degenerated disc at L3 and L4.
+- CT myelogram findings: Spondylolisthesis and L4 and L5 stenosis with right posterior surgical fusion changes.
+
+Assessment:
+- Pain related to lumbar spine pathology, likely secondary to spondylolisthesis and stenosis.
+- Consideration for L4 selective nerve root block to evaluate candidacy for TLI F at L4 and L5.
+
+Plan:
+- Schedule L4 selective nerve root block.
+- Review MRI films for further evaluation.
+- Continue current pain management with Tylenol as needed.

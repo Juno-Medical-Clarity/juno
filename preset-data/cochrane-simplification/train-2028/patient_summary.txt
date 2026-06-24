@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2028  |  gem_id: gem-cochrane-simplification-train-2029  |  doi: 10.1002/14651858.CD006942.pub3
+
+We found 18 randomised controlled trials, all comparing different timing methods in one treatment cycle for IUI, with a total of 2279 couples. The evidence was current to October 2013. We found no evidence of a difference in live birth rates between timing methods. We also found no evidence of a difference between any of the groups in rates of pregnancy or adverse events (multiple pregnancy, miscarriage, ovarian hyperstimulation syndrome (OHSS)). Most of the evidence was of low or very low quality. The main limitations were poor reporting of study methods, imprecision and losses to follow up. More research is needed.

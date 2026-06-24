@@ -1,0 +1,1 @@
+In silico analysis revealed that overlap of the attL region with the integrase promoter is widely encountered in prophages present in prokaryotic genomes, suggesting a general occurrence of negatively autoregulated integrase genes.

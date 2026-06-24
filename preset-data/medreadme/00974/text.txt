@@ -1,0 +1,1 @@
+While functionally relevant conformational transitions can be studied, the coarse-grained representation has some difficulty with the ab initio folding of the peptide chain into its proper structure.

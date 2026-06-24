@@ -1,0 +1,31 @@
+Pressure ulcers, also known as pressure injuries and bed sores, are localized areas of injury to the skin or underlying tissues, or both.
+Dressings made from a variety of materials, including foam, are used to treat pressure ulcers.
+An evidence-based evaluation of dressings for pressure ulcers is needed to promote informed decision-making on dressing use.
+This review is part of a suite (group) of Cochrane Reviews (scientific articles) investigating the use of dressings in the treatment of pressure ulcers.
+Each review will focus on a particular dressing type.
+The aim of this paper is to assess (measure) the clinical and cost effectiveness of foam wound dressings for healing pressure ulcers in people with an existing pressure ulcer in any care setting.
+This review included nine trials with a total of 483 participants. All participants were adults (59 years or older) with an existing pressure ulcer Category/Stage II or above - each category increasing in severity.
+All trials had two treatment groups, comparing foam dressings with other dressings for treating pressure ulcers.
+The certainty of evidence ranged from low to very low. This is because of various negative aspects of the collected data, including bias and imprecision (low confidence in results) due to small sample sizes (small participant groups) and wide confidence intervals.
+The authors had very little confidence in the estimate of effect of included studies.
+
+The authors present data for four comparisons.
+One trial compared a silicone foam dressing with another (hydropolymer) foam dressing. The study evaluated the treatments in 38 participants with an eight-week (short-term) follow-up.
+It was unclear whether alternate types of foam dressing affected the incidence (frequency) of healed pressure ulcers or negative side effects. It is unclear as there was low certainty of evidence with serious study limitations and imprecision.
+Four trials with an average sample size of 20 participants compared foam dressings with hydrocolloid (gel-forming) dressings for eight weeks or less (short-term).
+It was unclear whether foam dressing affected healing in comparison to hydrocolloid dressings over a short follow-up period in three trials. It is unclear as there was low certainty of evidence with serious study limitations and imprecision.
+It was uncertain if there was a difference in risk of negative side effects between groups. It is unclear as there was low certainty of evidence with serious study limitations and imprecision.
+Reduction in ulcer size, patient satisfaction/acceptability, pain and cost effectiveness data were also reported. However, the authors determined the evidence was of very low certainty.
+One trial with 34 participants compared foam and hydrogel dressings over an eight-week (short-term) follow-up.
+It was uncertain if the foam dressing affected the probability (likelihood) of healing, negative side effects, or reduction in ulcer size.  It is unclear as there was low certainty of evidence with serious study limitations and imprecision.
+The remaining three trials with a total of 181 participants compared foam with basic wound contact dressings.
+Follow-up times ranged from short-term (8 weeks or less) to medium-term (8 to 24 weeks).
+It was uncertain whether foam dressings affected the probability of healing compared with basic wound contact dressings in either the short term or medium term groups. It was uncertain whether foam dressings affected time to complete healing or negative side effects in the medium term groups.
+This is because it is unclear as there was low certainty of evidence with serious study limitations and imprecision.
+Reduction in ulcer size, patient satisfaction/acceptability, pain and cost effectiveness data were reported again. However, the authors determined the evidence was of very low certainty.
+None of the included trials reported quality of life or pressure ulcer recurrence (reappearing).
+The authors conclude that it is unclear if foam dressings are more clinically effective, more acceptable to users, or more cost effective compared to alternative dressings in treating pressure ulcers.
+It was difficult to make accurate comparisons between foam dressings and other dressings. This is due to the lack of data on the reduction of wound size, complete wound healing, treatment costs, or insufficient time-frames.
+Quality of life and patient acceptability/satisfaction associated with foam dressings were not measured in any of the included studies.
+The authors determined the certainty of the evidence in the included trials as low to very low.
+Clinicians need to carefully consider the lack of strong evidence concerning clinical and cost-effectiveness of foam dressings for treating pressure ulcers when making treatment decisions. Special consideration needs to be given when investigating wound management properties available by each dressing type and the care context.

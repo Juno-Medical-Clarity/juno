@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0275
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you taking any over the counter medicines? No, only the ones which were prescribed. No alternative medicine, naturopathy or anything? No, only whatever is here in this prescription. Okay let me take a look...so you were prescribed Salmeterol inhaler- On as needed basis. Okay and the other one is Fluticasone inhaler, which is- Which is a nasal inhaler. Right.

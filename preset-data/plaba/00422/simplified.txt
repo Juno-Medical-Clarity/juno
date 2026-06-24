@@ -1,0 +1,12 @@
+Data on how gabapentin (GBP -a nerve-related pain medication) is used in the body in elderly patients show a major effect of older age on how the drug works due to changes in kidney function.
+However, there are no data in elderly nursing home patients to evaluate how the body absorbs and removes gabapentin.
+The objective of this study is to describe how the body uses and processes gabapentin in elderly nursing home patients who are on gabapentin.
+This study observed elderly nursing home patients (≥60 years) receiving gabapentin for chronic (ongoing) pain or epilepsy (seizure disorders) from 7 nursing homes.
+
+Data on gabapentin and the clearance of the drug are associated with the rate that measures how well the kidneys are working.
+The gabapentin clearance in elderly nursing home patients was 2.93 liters per hour.
+After accounting for the rate that measures how well the kidneys are working, GBP clearance is not affected by age, sex, body weight, or other illnesses and their medications.
+No significant effects of body size measures, age, and sex are detected on volume of distribution, the ability of various drugs to distribute through the body fluids.
+The availability of the drug being dependent on dosage is shown, and how it is absorbed is calculated.
+Additional calculations are done on the entire group to evaluate the performance of the drug and identify other individual factors that may impact the effect.
+In this analysis, the patterns of the drug appear to be similar between elderly and younger adults.

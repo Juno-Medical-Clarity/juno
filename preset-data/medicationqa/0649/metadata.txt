@@ -1,0 +1,5 @@
+drug_focus: warfarin; cabbage
+question_type: Interaction
+section_title: Your Die
+source_url: https://medlineplus.gov/ency/patientinstructions/000292.htm
+sample_id: 0649

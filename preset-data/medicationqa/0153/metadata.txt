@@ -1,0 +1,5 @@
+drug_focus: Diclofenac
+question_type: Side effects
+section_title: Gastritis: How can you prevent painkiller-related peptic ulcers?
+source_url: https://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0078823/
+sample_id: 0153

@@ -1,0 +1,8 @@
+Extracellular vesicles (EVs) are found in all biological fluids. EVs are released by cells and are used as carriers of biomarkers. Biomarkers are measurable substances that can indicate illness. Because of this, EVs can potentially help identify diseases, such as colorectal cancer (CRC) or cancer of the colon.
+EVs are heavily modified with carbohydrates or sugar-carrying molecules, such as tetraspanins, integrins, and mucins. This modification allows EVs to reflect the characteristics of the original cell. Because EVs reflect the original cells, they can offer valuable targets for detection of CRC.
+This study reports on a testing assay (device) to detect and characterize different surface carbohydrates of EVs. The assay no longer requires extensive purification (filtration) steps. The assay is tested in five different CRC and the HEK 293 cell lines. HEK 293 cells are human kidney cells.
+The EVs candidates from cell culture (growing in a lab) were evaluated on a panel of serum (blood) samples. The panel included early-stage and late-stage CRC patients, benign (normal) condition, and healthy control samples.
+Most of the CRC cell lines expressed proteins associated with abnormal cell function and conventional tumor markers.
+A unique assay was used to detect CD151CD63, a specific combination of foreign substances associated with cancer induction (causation). The CD151CD63 assay showed significantly elevated levels in early-stage CRC without detecting any benign and late-stage samples. Conventional CEA assay detected mostly late-stage CRC and with only four early-stage cases.
+Other assays provided similar results to the CD151CD63 assay.
+These results indicate the potential use of CD151CD63 assay for early detection of CRC patients in human serum.

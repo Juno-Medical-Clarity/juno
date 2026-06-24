@@ -1,0 +1,6 @@
+Doctor: When are you planning to quit?
+Patient: I always plan to do it.
+Doctor: Okay let me refer you to a substance abuse clinic because you need it.
+Patient: Okay, I will look at it.
+Doctor: Sure. But please try to stop your substance abuse. It is a bad habit.
+Patient: Yes.

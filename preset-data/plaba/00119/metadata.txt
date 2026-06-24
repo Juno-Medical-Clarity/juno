@@ -1,0 +1,5 @@
+pmid:        26611392
+question:    10
+adaptation:  adaptation2
+title:       The Proper Use of Neurostimulation for Hand Pain
+sentences:   4

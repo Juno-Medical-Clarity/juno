@@ -1,0 +1,10 @@
+source:      plos_genetics
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [2:4] 'medical-jargon-google-easy' -> 'XX flies'
+  [4:5] 'medical-jargon-google-easy' -> 'homozygous'
+  [12:15] 'medical-jargon-google-hard' -> 'Lctra knockin mutation'
+  [21:23] 'medical-jargon-google-easy' -> 'pupal eclosion'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3428  |  gem_id: gem-cochrane-simplification-train-3429  |  doi: 10.1002/14651858.CD005053.pub4
+
+This review found one good quality study of cidofovir (an antiviral agent) injected into the warts at the time of surgical removal. After one year of treatment, however, this study found no benefit of the injected cidofovir when compared to injected salt water solution (placebo). There is still a need for a larger randomised study which includes more patients, and higher doses of cidofovir.

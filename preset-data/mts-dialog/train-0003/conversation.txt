@@ -1,0 +1,9 @@
+Doctor: Are you taking any over the counter medicines?
+Patient: No, only the ones which were prescribed.
+Doctor: No alternative medicine, naturopathy or anything?
+Patient: No, only whatever is here in this prescription.
+Doctor: Okay let me take a look...so you were prescribed Salmeterol inhaler-
+Patient: On as needed basis.
+Doctor: Okay and the other one is Fluticasone inhaler, which is-
+Patient: Which is a nasal inhaler.
+Doctor: Right.

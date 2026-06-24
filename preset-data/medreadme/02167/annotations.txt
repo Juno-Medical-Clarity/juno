@@ -1,0 +1,9 @@
+source:      pnas
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Metabolic scaling theory'
+  [4:5] 'abbr-medical' -> 'MST'
+  [13:15] 'medical-jargon-google-easy' -> 'allometric scaling'

@@ -1,0 +1,5 @@
+pmid:        10521751
+question:    18
+adaptation:  adaptation1
+title:       When is fasting really fasting? The influence of time of day, interval after a meal, and maternal body mass on maternal glycemia in gestational diabetes
+sentences:   13

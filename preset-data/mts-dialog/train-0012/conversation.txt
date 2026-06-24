@@ -1,0 +1,5 @@
+Doctor:  Are you talking any medications?
+Patient: No, I don't believe in meds.
+Doctor: Oh really, let me check your list.
+Patient: Yeah never.
+Doctor: Wow amazing.

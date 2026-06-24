@@ -1,0 +1,22 @@
+Doctor: Can you tell me more about your son, please?
+Guest_family: Sure, he's ten years old now.
+Doctor: How long has he used his walker?
+Guest_family: Well, he's been using that since he started walking.
+Doctor: How old was he when he started walking?
+Guest_family: He was about a year old.
+Doctor: Good, what seems to be the problem today?
+Guest_family: He keeps complaining about the back of his legs being tight.
+Doctor: Can you sit on the table, young man? Yes, I'm bending his legs, we call this the popliteal angle, and both sides flex to only about twenty.
+Guest_family: Where should that be normally?
+Doctor: He should be able to get to ninety.
+Guest_family: What can we do about this?
+Doctor: I think we should do surgery on this leg. How does he walk? Can I see?
+Guest_family: Well, just look at him.
+Doctor: Yes, he does not walk with a crouched pattern, but he is toe walking.
+Guest_family: Can we correct that instead of the hamstring tightness?
+Doctor: Well, I believe he should have surgery on the hamstring, as well.
+Guest_family: Okay, right now we want to do surgery to fix his walking. What are the risks of infection?
+Doctor: They're low, historically, they're less than one percent. The risks include anesthesia, infection, bleeding, changes in sensation and the motion of walking, and it may also not always cure the toe walking. There is also possible stiffness after wearing the cast and other cast issues.
+Guest_family: Okay, and will be under anesthesia during this? Is this worth it?
+Doctor: Absolutely, he won't feel a thing. It is worth it because the chances of the risks happening are low.
+Guest_family: Yes, we'd like to do the procedure. Let me text my husband really quick. Okay, yes, my husband agrees.

@@ -1,0 +1,14 @@
+source:      plos_computational_biology
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Ab initio folding'
+  [9:11] 'medical-jargon-google-hard' -> 'sidechain rotamers'
+  [23:24] 'medical-jargon-google-hard' -> 'Trpzip'
+  [25:28] 'medical-jargon-google-hard' -> 'Trp - cage'
+  [31:36] 'medical-jargon-google-hard' -> 'open to closed conformational transition'
+  [37:39] 'medical-jargon-google-easy' -> 'adenylate kinase'
+  [46:49] 'medical-jargon-google-easy' -> 'CG force field'
+  [51:53] 'medical-jargon-google-easy' -> 'protein complexes'

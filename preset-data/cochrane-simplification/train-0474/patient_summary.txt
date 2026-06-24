@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0474  |  gem_id: gem-cochrane-simplification-train-475  |  doi: 10.1002/14651858.CD010969.pub2
+
+We searched 10 databases for studies where ESAs were used to treat critically-ill people. The evidence is current to February 2017. We found 53 studies, involving 945,240 participants treated with epoetin-alfa, epoetin-beta, and darbepoetin-alfa or placebo. Five studies are awaiting classification. Based on mainly low-quality evidence, we were unable to exclude relevant harms in terms of adverse effects of ESAs. 'Adverse effects' included any adverse events and problems from blood clotting in the veins. However, we found low-quality evidence for protective effects on the overall risk of dying in critically-ill people.

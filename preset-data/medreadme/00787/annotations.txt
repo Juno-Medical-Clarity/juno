@@ -1,0 +1,10 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [13:14] 'medical-jargon-google-easy' -> 'analgesic'
+  [14:15] 'general-complex' -> 'efficacy'
+  [16:18] 'medical-jargon-google-easy' -> 'adverse effects'
+  [22:23] 'general-complex' -> 'mechanistic'

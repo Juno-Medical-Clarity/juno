@@ -1,0 +1,15 @@
+In addition to treating depression, antidepressant drugs are also a first-line treatment for neuropathic pain, which is pain secondary to lesion or pathology of the nervous system.
+Despite the widespread use of these drugs, the mechanism underlying their therapeutic action in this pain context remains partly elusive.
+The present study combined data collected in male and female mice from a model of neuropathic pain and data from the clinical setting to understand how antidepressant drugs act.
+We show two distinct mechanisms by which the selective inhibitor of serotonin and noradrenaline reuptake duloxetine and the tricyclic antidepressant amitriptyline relieve neuropathic allodynia.
+One of these mechanisms is acute, central, and requires descending noradrenergic inhibitory controls and α2A adrenoceptors, as well as the mu and delta opioid receptors.
+The second mechanism is delayed, peripheral, and requires noradrenaline from peripheral sympathetic endings and β2 adrenoceptors, as well as the delta opioid receptors.
+We then conducted a transcriptomic analysis in dorsal root ganglia, which suggested that the peripheral component of duloxetine action involves the inhibition of neuroimmune mechanisms accompanying nerve injury, including the downregulation of the TNF-α-NF-κB signaling pathway.
+Accordingly, immunotherapies against either TNF-α or Toll-like receptor 2 (TLR2) provided allodynia relief.
+We also compared duloxetine plasma levels in the animal model and in patients and we observed that patients' drug concentrations were compatible with those measured in animals under chronic treatment involving the peripheral mechanism.
+Our study highlights a peripheral neuroimmune component of antidepressant drugs that is relevant to their delayed therapeutic action against neuropathic pain.
+SIGNIFICANCE STATEMENT In addition to treating depression, antidepressant drugs are also a first-line treatment for neuropathic pain, which is pain secondary to lesion or pathology of the nervous system.
+However, the mechanism by which antidepressant drugs can relieve neuropathic pain remained in part elusive.
+Indeed, preclinical studies led to contradictions concerning the anatomical and molecular substrates of this action.
+In the present work, we overcame these apparent contradictions by highlighting the existence of two independent mechanisms.
+One is rapid and centrally mediated by descending controls from the brain to the spinal cord and the other is delayed, peripheral, and relies on the anti-neuroimmune action of chronic antidepressant treatment.

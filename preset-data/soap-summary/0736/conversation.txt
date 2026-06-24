@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0736
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any medical issues running in your family? I don't know anything about that. You know anyone in your family or relatives who ever had diseases like diabetes or any heart issues? Nope.

@@ -1,0 +1,56 @@
+# SOAP Notes — Sample 0146
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 3 yo female presents with left elbow pain and holding arm awkwardly since yesterday
+- Pain is sharp in nature
+- Father was swinging her by the arms while playing at the park yesterday
+- Denies numbness, tingling, muscle weakness
+- Denies fever, chills, headache, vision/hearing changes, cough, sore throat, night sweats, weight loss, runny nose, wheezing, chest pain, abdominal pain, N/V, diarrhea, constipation, hematochezia, urinary changes, appetite loss
+- Energy level unchanged, no fatigue
+- No memory loss or confusion
+- No other joint pains, muscle aches, or body pains
+- No skin, hair, or nail changes
+
+PMHx:
+- No prior medical conditions
+- No medications
+- No allergies
+- No hospitalizations or surgeries
+- Meeting developmental milestones
+- Growing and gaining weight appropriately
+
+Birth Hx:
+- Term vaginal delivery at 37.5 weeks
+- No complications during pregnancy (no GDM, HTN, infections)
+- No NICU stay
+
+SocHx:
+- Lives with both parents and 7 yo brother in a house outside London
+- Mother is primary caregiver, patient not in daycare
+- No recent sick contacts or travel
+- No concerns for physical or emotional violence at home
+- No smokers in the home
+
+FHx:
+- No musculoskeletal or neurological conditions
+- No cardiac or pulmonary conditions
+
+Objective:
+- Left elbow appears slightly misaligned on visual inspection
+- No erythema or swelling of either elbow
+- Unable to fully assess for muscle atrophy or joint deformity due to patient's positioning
+- No skin changes over the elbow
+- Tenderness to palpation over all aspects of the left elbow
+- Pain with flexion and extension of the left elbow
+- No pain with movement of the left wrist or shoulder
+
+Assessment:
+- Likely radial head subluxation
+- Possible radial head fracture
+
+Plan:
+- Left elbow X-ray to evaluate for fracture
+- Attempt reduction maneuver to relocate radial head
+- Anticipate pain improvement and return to full mobility shortly after reduction, even if fracture present
+- No immobilization needed

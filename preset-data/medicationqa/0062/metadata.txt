@@ -1,0 +1,5 @@
+drug_focus: lorazepam
+question_type: Side effects
+section_title: WARNINGS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b851f67-309d-4ef3-8b4b-ade8908256ea
+sample_id: 0062

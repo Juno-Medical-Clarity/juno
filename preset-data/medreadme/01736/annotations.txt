@@ -1,0 +1,9 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [13:15] 'medical-jargon-google-easy' -> 'protein localization'
+  [20:22] 'medical-jargon-google-hard' -> 'PleC localization'
+  [29:30] 'medical-jargon-google-easy' -> 'Caulobacter'

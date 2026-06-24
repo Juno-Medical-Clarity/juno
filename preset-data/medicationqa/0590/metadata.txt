@@ -1,0 +1,5 @@
+drug_focus: bsg vaccine
+question_type: Storage and disposal
+section_title: HOW SUPPLIED
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a83f0b99-9038-4c5a-aaac-8792b32838fe&audience=consumer
+sample_id: 0590

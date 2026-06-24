@@ -1,0 +1,9 @@
+source:      wiki
+side:        simple
+readability: 4.35
+split:       test
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'quadrate'
+  [6:7] 'medical-jargon-google-easy' -> 'prearticular'
+  [8:9] 'medical-jargon-google-easy' -> 'articular'

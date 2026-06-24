@@ -1,0 +1,5 @@
+drug_focus: fluorouracil
+question_type: Storage and disposal
+section_title: Other Requirements
+source_url: https://www.rxwiki.com/fluorouracil
+sample_id: 0325

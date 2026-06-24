@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0553
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Headaches, sinus congestion, light sensitivity
+- Severity: Moderately severe
+- Duration: Started about two months ago
+- Associated Symptoms: Sinus congestion, light sensitivity
+- Relevant Medical History: None mentioned
+- Family History: None mentioned
+- Allergies: None mentioned
+- Other Concerns: Headaches significantly interfere with regular activities; patient has a very stressful job; poor sleep quality despite trying to drink before bed.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment or clinical impression provided]
+
+Plan:
+- [No plan explicitly mentioned]

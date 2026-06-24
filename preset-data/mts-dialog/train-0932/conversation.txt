@@ -1,0 +1,18 @@
+Doctor: You had a heart procedure done couple months back right?
+Patient: Yes, they had to do a cardioversion on me because of my heart rhythm disorder.
+Doctor: Okay.
+Patient: And I am taking a blood thinner right now.
+Doctor: Yes, I saw, you are on Coumadin. Do you know other medications you are on?
+Patient: Yes, I have a list with me. Here, look.
+Doctor: Wow! That is great. Thank you for being so thorough.
+Patient: Sure.
+Doctor: So you are on Pacerone, Zaroxolyn, albuterol inhaler, Neurontin, Lasix, and some other.
+Patient: Yes.
+Doctor:  Do you have diabetes?
+Patient: No, I do not.
+Doctor: Okay, have you smoked in the past?
+Patient: Yes, I have, but I quit some years back.
+Doctor: Okay. Have you ever had lung problems?
+Patient: No, I have not.
+Doctor: Okay. How about your family? Anyone sick?
+Patient: No, no one is sick in family.

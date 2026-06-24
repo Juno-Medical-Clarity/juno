@@ -1,0 +1,5 @@
+pmid:        34775776
+question:    66
+adaptation:  adaptation2
+title:       Primary nephrotic syndrome complicated by chylothorax: a case report
+sentences:   8

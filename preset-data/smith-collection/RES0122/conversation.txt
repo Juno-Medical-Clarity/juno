@@ -1,0 +1,170 @@
+# Smith Collection Transcript: RES0122
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: uh yeah so i i just came in because ive been having for the last i would say 2 weeks just a lot of congestion in my nose and then ive also been feeling a lot of pressure in my head as well as just around my jaws and my face overall
+
+Doctor: Okay and um you said it started two weeks ago has it gotten better or worse or been the same since then
+
+Patient: um id say its pretty much been the same except like the pressures getting worse
+
+Doctor: Okay and do you find that the pressure is worse when youre bending down or um yeah when youre like squatting or sitting down
+
+Patient: um when im sitting down i dont think so but like sometimes i do feel like for example when im lying on one side it gets really bad on that one side and i have to kind of switch over to the other side
+
+Doctor: Okay alright and uh when did your headaches start
+
+Patient: um its i guess its not so much as a headache as just kind of um just pain in and around the cheeks and just going up to my head and it started about i would say around 2 weeks ago
+
+Doctor: um and do you have a stuffy nose
+
+Patient: Yeah i definitely have a stuffy nose and it started um it sometimes gets like like a runny nose as well
+
+Doctor: Yeah okay and whats the discharge like
+
+Patient: uh its usually clear
+
+Doctor: Okay and do you have a cough
+
+Patient: No no coughs
+
+Doctor: Sore throat
+
+Patient: No
+
+Doctor: um and do you have any difficulties breathing
+
+Patient: um no not that ive noticed sometimes when it gets really stuffy i uh have to breathe through my mouth
+
+Doctor: Yeah i see do you have any difficulty swallowing
+
+Patient: uh no
+
+Doctor: Any chest pain or any heart um palpitations
+
+Patient: Nope
+
+Doctor: um any pain in your belly
+
+Patient: uh nope
+
+Doctor: Nausea or vomiting
+
+Patient: No
+
+Doctor: Changes in your bowel movement
+
+Patient: Nope
+
+Doctor: Any urinary symptoms
+
+Patient: No
+
+Doctor: Any muscle aches
+
+Patient: Nope
+
+Doctor: um any fevers or chills
+
+Patient: No not that ive noticed
+
+Doctor: Any weight changes in your weight recently
+
+Patient: No no changes
+
+Doctor: Any uh night sweats
+
+Patient: uh no
+
+Doctor: Okay um alright so have you had any contact with anyone who could have been sick in the past two weeks or before that
+
+Patient: No no im very like careful um i barely go out
+
+Doctor: Good thats very good um are you have you traveled anywhere outside the province
+
+Patient: No
+
+Doctor: Okay and um do you currently work
+
+Patient: I work from home right now um im an accountant
+
+Doctor: Okay and do you live with anyone else or do you live alone
+
+Patient: uh so i live with my family i live with my husband and um two daughters
+
+Doctor: Have any of them been sick recently
+
+Patient: No theyve been fine
+
+Doctor: Okay good um and do you smoke
+
+Patient: No not at all
+
+Doctor: Do you smoke marijuana or consume any recreational drugs
+
+Patient: Probably the last time was in college um for marijuana
+
+Doctor: I see um what about alcohol
+
+Patient: Alcohol ill probably have a glass of red wine a day
+
+Doctor: Alright okay and um have you do you have any um i guess carpets or or um curtains or any sort of animals around anything that might cause any kind of environmental allergies
+
+Patient: uh no nothing like that
+
+Doctor: Okay um alright and do you have any medical conditions that youve been diagnosed with
+
+Patient: No ive been completely healthy
+
+Doctor: Any hospitalizations or surgeries
+
+Patient: I did have a um csection with both my both my children
+
+Doctor: I see any complications after
+
+Patient: No complications after they were both healthy i i didnt have to stay in the hospital
+
+Doctor: Great great um and any allergies uh to medications foods or environmental allergies
+
+Patient: Nope not that i know of
+
+Doctor: Any medications including over the counter herbal medications
+
+Patient: I have uh i do take uh tylenol cold in bed sometimes to relieve some of the pain and pressure
+
+Doctor: Thats good thats good is there anything else that makes the the pressure and the pain better
+
+Patient: um i have done those like kind of those steam um therapies that sometimes helps
+
+Doctor: Okay good good good um any uh anything that makes the that makes it worse i know that lying on one side you said makes things worse for you anything else thats made the pressure worse
+
+Patient: um no i would say thats thats about it
+
+Doctor: Okay any changes in your sense of smell
+
+Patient: Yeah definitely uh when i get really stuff stuffy like i dont really smell anything
+
+Doctor: What about sense of taste
+
+Patient: um taste i guess like with the smell gone sometimes like the taste feels weird too but like not not really
+
+Doctor: I see okay um and any family history of any medical conditions
+
+Patient: um my my father did have a heart attack in his uh i think it was late 50s but hes well and alive right now so hes fine
+
+Doctor: Good alright well thats all the questions i had for you given the symptoms that youve shared with me it sounds like you might have something called um rhinosinusitis uh which is basically inflammation of the sinuses and of the uh of the nasal cavity or the area inside your nose and uh often its just treated with conservative management so just continue to take um tylenol if that seems to help you and do the steam therapy it will take time to get better um but if you feel that its um its not getting better in the next week or so give us a call again and we can maybe see if its a bacterial infection and see if um if antibiotics might be needed but oftentimes its usually a viral infection and antibiotics are not needed and sort of just resting and taking care of yourself um and trying to manage the symptoms that way can help um but also check your temperature here to see if you have any fevers and uh go from there well also i guess well also do a coviswab because your symptoms do overlap with some of those symptoms um and wed recommend that you quarantine until at least uh swabs swab results are out and then public health will let you know what to do
+
+Patient: Okay
+
+Doctor: Do you have any questions for me
+
+Patient: uh no thats all thank you so much
+
+Doctor: Youre welcome

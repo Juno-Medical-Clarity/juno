@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1378
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there! I am Doctor Kirkland. Hi. How are you feeling? I feel weird. Like I feel confused. I don't know how I got here. That's okay. Do you remember what happened to you before you came here? No. Can you tell me about your past medical history? Um. Take your time. I can't think of what it is called. It's something to do with my brain. Okay. My doctor knows what it is. What is the name of your doctor? Doctor Frank. Doctor X? Across the street? Yes, that is his name. I don't know if that is across the street or not. I will have your nurse give him a call and get some background information from him. Okay. Can you please give Doctor X a call and get mister Jones' medical history? Guest_clinician: Yes, of course. Thank you.

@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1101
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not smoke or drink alcohol.
+- Patient has never touched a cigarette and does not plan to in the future.
+- Same applies to alcohol consumption.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

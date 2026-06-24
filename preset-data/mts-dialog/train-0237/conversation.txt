@@ -1,0 +1,6 @@
+Doctor: So, what do you do for a living, sir?
+Patient: I work at A B C store, doctor.
+Doctor: That's great, do you smoke?
+Patient: No, I don't smoke at all.
+Doctor: How about alcohol? Do you drink?
+Patient: I'd say I drink socially, like if I'm at a party, or something.

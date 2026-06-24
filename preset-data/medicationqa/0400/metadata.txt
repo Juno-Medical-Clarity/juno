@@ -1,0 +1,5 @@
+drug_focus: acetylcholine
+question_type: Information
+section_title: NA
+source_url: https://www.ncbi.nlm.nih.gov/books/NBK11143/
+sample_id: 0400

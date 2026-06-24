@@ -1,0 +1,8 @@
+Cystic fibrosis patients display multi-organ system dysfunction (e.g. pancreas, gastrointestinal tract, and lung) with pathogenesis linked to a failure of Cl- secretion from the epithelial surfaces of these organs.
+If unmanaged, organ dysfunction starts early and patients experience chronic respiratory infection with reduced lung function and a failure to thrive due to gastrointestinal malabsorption.
+Early mortality is typically caused by respiratory failure.
+In the past 40 years of newborn screening and improved disease management have driven the median survival up from the mid-teens to 43-53, with most of that improvement coming from earlier and more aggressive management of the symptoms.
+In the last decade, promising pharmacotherapies have been developed for the correction of the underlying epithelial dysfunction, namely, Cl- secretion.
+A new generation of systemic drugs target the mutated Cl- channels in cystic fibrosis patients and allow trafficking of the immature mutated protein to the cell membrane (correctors), restore function to the channel once in situ (potentiators), or increase protein levels in the cells (amplifiers).
+Restoration of channel function prior to symptom development has the potential to significantly change the trajectory of disease progression and their evidence suggests that a modest restoration of Cl- secretion may delay disease progression by decades.
+In this article, we review epithelial vectorial ion and fluid transport, its quantification and measurement as a marker for cystic fibrosis ion transport dysfunction, and highlight some of the recent therapies targeted at the dysfunctional ion transport of cystic fibrosis.

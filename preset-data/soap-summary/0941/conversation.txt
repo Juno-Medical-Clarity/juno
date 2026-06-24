@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0941
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anyone smokes in the house? Guest_family: Yes, we do. Both of you? Guest_family: Yes, but outside, not inside. Okay. Guest_family: We are careful.

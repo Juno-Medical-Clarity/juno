@@ -1,0 +1,9 @@
+Patients with severe pneumonia or lung infections related to COVID-19 (a viral breathing-related disease) may also have an overactive immune response and cytokine storm, which is when the immune system floods the body with proteins called cytokines. These events are associated with poor outcomes.
+In COVID-19, excessive activity of immune cells is linked to tissue damage, an increased risk of blood clots, and the cytokine storm.
+The cytokines enter different tissues, such as the lungs and heart, and the nervous system (the spinal cord, brain, and nerves).
+This cytokine storm can cause multiple organs to not work properly and cause life-threatening complications.
+Monoclonal antibodies are medicines that may block the virus that causes COVID-19 from attaching to human cells, making it more difficult for the virus to reproduce. One type of monoclonal antibody that may help some COVID-19 cases is mavrilimumab.
+During inflammation, the release of a GM-CSF, another type of protein that controls the body's immune responses, is necessary for proper immune responses.
+These proteins are triggered when a foreign substance attaches to a cell and creates a path for cells to communicate and pass information.
+Mavrilimumab disrupts the action of GM-CSF and decreases the severe inflammation associated with pneumonia in COVID-19. Therefore, adding mavrilimumab to the standard treatment may improve the condition of COVID-19 patients, especially those with pneumonia.
+This paper reviews data from published studies to show how mavrilimumab can block cytokine storms in patients with COVID-19, and to highlight the importance of future studies.

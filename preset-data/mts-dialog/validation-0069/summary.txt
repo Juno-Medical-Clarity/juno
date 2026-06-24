@@ -1,0 +1,2 @@
+[ROS]
+The patient denies fever, chills, sweats, ear pain, URI symptoms, cough, dyspnea, chest pain, vomiting, diarrhea, abdominal pain, melena, hematochezia, urinary symptoms, headache, neck pain, back pain, weakness or paresthesias in extremities.

@@ -1,0 +1,14 @@
+qid: TQ54
+source_file: 1-136435285.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Can low dose naltrexone be used to treat severe depression?
+nlm_summary: Can Low dose naltrexone be used for treatment of severe depression?
+
+focus_entities:
+  [F1] (Problem) severe depression
+question_types:
+  [T1] TREATMENT
+keywords:
+  [K1] (DrugSupplement) naltrexone

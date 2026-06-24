@@ -1,0 +1,5 @@
+drug_focus: pregabalin
+question_type: Dose
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54e6d137-a495-4b87-b3c2-2f5a0226dd3e
+sample_id: 0023

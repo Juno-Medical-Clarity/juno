@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1163
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Just want to ask you few routine questions, let me know if any of this is positive. Sure, go ahead. Do you have any problems like headache, fever, rash, oral ulcer? None. Any problem with vision? Like unable to see or double vision? Um no, I can see everything. Okay. Do you get palpitations, like are you aware of your own heart? No, nothing like that. How about breathlessness while lying down or do you have to get up in the middle of the night to catch a breath? No I don't feel anything like that. That's great. Any diarrhea, constipation, or red blood come out in stool? Or pale stool? Like any change in the color of stool? No, it is fine. Okay. Any jaundice recently? No. No jaundice. Do you have problems with appetite? Yeah, I mean you can say my appetite is decreased. Because of that have you noticed any weight loss? Oh no. Okay sounds good. Sure.

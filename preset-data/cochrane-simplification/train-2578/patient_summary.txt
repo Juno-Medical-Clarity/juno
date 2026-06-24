@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2578  |  gem_id: gem-cochrane-simplification-train-2579  |  doi: 10.1002/14651858.CD003297.pub2
+
+The review found that there was not enough evidence to reach clear conclusions about the effects on any of these outcomes and it is therefore not clear to what extent the application of mistletoe extracts translates into improved symptom control, enhanced tumour response or prolonged survival. Adverse effects of mistletoe extracts were reported, but appeared to be dose-dependent and primarily confined to reactions at injection site and mild, transient flu-like symptoms. In the absence of good quality, independent trials, decisions about whether mistletoe extracts are likely to be beneficial for a particular problem should rely on expert judgement and practical considerations.

@@ -1,0 +1,5 @@
+pmid:        32668217
+question:    23
+adaptation:  adaptation1
+title:       The Genetic Landscape and Epidemiology of Phenylketonuria
+sentences:   10

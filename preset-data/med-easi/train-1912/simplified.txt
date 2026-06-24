@@ -1,0 +1,1 @@
+There are several ways in which a process or system can be seen as random: Randomness coming from the environment (for example, Brownian motion, but also hardware random number generators).

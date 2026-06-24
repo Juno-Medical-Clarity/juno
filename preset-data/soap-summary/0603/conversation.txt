@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0603
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, how are you? I am not so good. Oh, what is going on with you? Well, I have lot of swelling in my legs. Hm, okay.

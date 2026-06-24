@@ -1,0 +1,1 @@
+For example, the functions can tell the probability of finding an electron in any specific region.

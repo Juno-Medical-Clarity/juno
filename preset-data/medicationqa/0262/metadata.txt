@@ -1,0 +1,5 @@
+drug_focus: nifedipine ER
+question_type: Usage
+section_title: PRECAUTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d1a78ff2-7672-3e69-00ef-63d203c80484
+sample_id: 0262

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3319  |  gem_id: gem-cochrane-simplification-train-3320  |  doi: 10.1002/14651858.CD008372.pub2
+
+We found three trials that studied two different TCAs - clomipramine and tianeptine. One of the clomipramine studies involved children and young adults; the other two studies enrolled only children. All three trials were small, with between 12 and 32 participants. There is only limited evidence to support the use of clomipramine or tianeptine in the treatment of individuals with ASD, and some evidence of side effects that would limit their usefulness. Clinicians considering the use of TCAs in ASD need to be aware of the limited and conflicting evidence of effect and the side effect profile of TCAs when discussing this treatment option with patients with ASD and their carers. More research is required before TCAs can be recommended for use in ASD.

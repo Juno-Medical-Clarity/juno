@@ -1,0 +1,5 @@
+We look at a possible new treatment to add to standard treatment for glioblastoma, a type of brain cancer.
+Based on mouse studies, several recent studies showed that radiation of the part of the brain where brain cells are made reduces growth of some glioblastomas in humans, suggesting this part of the brain might play a role in fueling brain tumors.
+More studies showed cells from the part of the brain where brain cells are made move outward toward a glioblastoma.
+Certain molecule signaling causes this cell movement.
+Because many mental health drugs block molecule signaling, such as fluphenazine, or perphenazine, we suggest adding one of these drugs to the current standard treatment of surgery followed by chemotherapy and radiation to possibly increase survival time by cutting off fuel to the glioblastoma.

@@ -1,0 +1,5 @@
+pmid:        20150843
+question:    4
+adaptation:  adaptation2
+title:       Hemoglobin A1c for the diagnosis of diabetes: practical considerations
+sentences:   9

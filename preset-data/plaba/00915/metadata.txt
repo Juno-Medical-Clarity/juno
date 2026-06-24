@@ -1,0 +1,5 @@
+pmid:        32447424
+question:    75
+adaptation:  adaptation3
+title:       Functional polymorphisms of BCL11A and HBS1L-MYB genes affect both fetal hemoglobin level and clinical outcomes in a cohort of children with sickle cell anemia
+sentences:   13

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2534  |  gem_id: gem-cochrane-simplification-train-2535  |  doi: 10.1002/14651858.CD000435
+
+The review of trials found that radiant warmers increase water loss in low birthweight babies in the newborn period when compared to incubators and that this water loss needs to be taken into account when daily fluid requirements are calculated. However, there was not enough information available for this review to enable assessment of other important effects of radiant warmers. Therefore, at the present time, it is not clear which method of maintaining body temperature is best for newborn babies - radiant warmers or incubators. More research is necessary.

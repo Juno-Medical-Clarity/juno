@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0440  |  gem_id: gem-cochrane-simplification-train-441  |  doi: 10.1002/14651858.CD006665.pub3
+
+We found one controlled trial that examined whether one gram per day of intravenous vitamin C would help in the treatment of tetanus patients. Vitamin C was used alongside standard treatments for tetanus. Intravenous vitamin C reduced the mortality of children aged between 1 and 12 with tetanus by 100% and that of 13 to 30 year old patients by 45%. The trial was not properly conducted and caution is required in the interpretation of the findings. Vitamin C cannot be recommended as a treatment for tetanus on the basis of this single study. Further investigation of the role of vitamin C in tetanus treatment is warranted.

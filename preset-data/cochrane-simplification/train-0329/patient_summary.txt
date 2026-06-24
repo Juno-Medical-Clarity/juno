@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0329  |  gem_id: gem-cochrane-simplification-train-330  |  doi: 10.1002/14651858.CD007969.pub2
+
+In this systematic review, the efficacy of LED phototherapy was compared with conventional (non-LED) phototherapy. LED phototherapy was observed to be efficacious in bringing down the levels of serum total bilirubin, at rates similar to phototherapy with conventional light sources.

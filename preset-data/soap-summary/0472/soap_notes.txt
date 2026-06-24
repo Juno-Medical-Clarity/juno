@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0472
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient denies family history of neurological conditions such as ADHD, epilepsy, or Alzheimer's.
+- Patient seeks clarification about what the doctor means regarding family history of neurological conditions.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

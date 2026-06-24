@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0410
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_clinician: Any history of drug or alcohol use? He was a former smoker and tested positive for cocaine during his last visit in January O eight.

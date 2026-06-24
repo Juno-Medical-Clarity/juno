@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0990
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had surgery before? No, not that I know of. So, no gallbladder removal, or joint replacements? Unless they did it while I was sleeping, but none that I can remember.

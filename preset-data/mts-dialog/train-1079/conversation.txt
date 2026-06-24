@@ -1,0 +1,24 @@
+Doctor: What brings you in today, miss?
+Patient: I haven't been feeling well since I went to the dentist.
+Doctor: When did you go to the dentist?
+Patient: It was in May last year.
+Doctor: What happened at the dentist? Also, sorry, but how old are you.
+Patient: It was after I left the dentist. I was driving home, and I got lightheaded. I was so lightheaded that I had to pull over.
+Doctor: How long did the episode last?
+Patient: About two to three minutes.
+Doctor: Is this the only time that this has happened?
+Patient: No. In November last year, I was in the middle of eating breakfast when I got dizzy. I was so dizzy that I was nauseous, and I threw up several times. I was so exhausted from the dizziness and throwing up that I went to my room and took a two hour nap. I felt better and back to normal after I woke up from my nap.
+Doctor: How long did the vertigo last?
+Patient: It lasted about two to three minutes. So, about the same amount of time.
+Doctor: Have you had any other dizzy episodes?
+Patient: No I didn't but in January on the thirteenth my right arm went numb. It lasted for about four to five hours.
+Doctor: Are you left handed, or right?
+Patient: I am right handed.
+Doctor: Have you experienced any slurred speech or trouble swallowing?
+Patient: No.
+Doctor: Have you had any continuing weakness other than the time in January?
+Patient: No.
+Doctor: Have you experienced any headaches or visual changes?
+Patient: No.
+Doctor: Any continuing vertigo or lightheadedness?
+Patient: No.

@@ -1,0 +1,206 @@
+# Smith Collection Transcript: RES0018
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Ive just been having this this cough over the last few days and i also notice that im getting like these headaches and chills as well at night so i was just a bit concerned
+
+Patient: OK so the cough started a few days ago have you been bringing up any phlegm
+
+Doctor: No not really its been pretty much like a dry cough i did feel like a tickle in my throat before it started but no im not producing any phlegm
+
+Patient: OK um is the cough any worse at any particular time of day like when you first get up or or at night when going to bed
+
+Doctor: No its pretty much just been there over the last at least like 2 days its been getting worse more frequent
+
+Patient: OK so um and are you coughing all throughout the day
+
+Doctor: Pretty much at least for the last few days just its been pretty nonstop
+
+Patient: OK anything thats made the cough worse
+
+Doctor: uh no not really its uh pretty much been the same for the last few days
+
+Patient: Anything youve tried to make the cough go away
+
+Doctor: Just like tylenol cold and then i think there was another over the counter medication that i took but nothing really helping
+
+Patient: OK and uh the cough has been been getting worse have you been experiencing any other symptoms
+
+Doctor: um i did just just last night actually i thought that i had some shortness of breath as well i dont know if thats being caused by all the coughing but yeah i got pretty scared so thats why im here today
+
+Patient: OK um has anything like this happened to you before
+
+Doctor: No like ive been pretty healthy otherwise completely so this is this is completely new for me
+
+Patient: OK and yeah you mentioned you had a fever but did have you checked your temperature
+
+Doctor: No i havent i i just had like chills over the last two nights just had to put on like 3 three blankets just to get to sleep but i havent really checked my temperature
+
+Patient: OK i have you had night sweats
+
+Doctor: No not really just mostly chills
+
+Patient: OK and how has your energy been the last few days have you have you had a lot of fatigue
+
+Doctor: Yeah i just feel completely just sick like what it feels like i have the flu or something and i just feel really tired too
+
+Patient: OK have you had a runny nose or sore throat
+
+Doctor: No not really i did have like a i dont know if it was soreness but just like a tickle in my throat just a few days back before the coughing started
+
+Patient: OK yeah and have you had any loss of smell or or loss of taste
+
+Doctor: Yeah now that i think of it i i i i cant i can barely taste taste the food that im eating i dont know about smell i im pretty stuff stuff stuffy right now so that might just be because of that i definitely notice i cant really taste my food
+
+Patient: Alright uh and uh have you been having any wheezing
+
+Doctor: No no wheezing
+
+Patient: Alright and shortness of breath were you at rest when that that happened or were you exercising or exerting yourself what how did the shortness of breath come on
+
+Doctor: I was actually just laying down and i was sleeping and i just noticed that i couldnt really take deep breaths so i kind of just got back up and it was just during last night it hasnt happened after that but im scared it will happen again
+
+Patient: OK and have you how many pillows do you usually sleep with
+
+Doctor: Just one
+
+Patient: Have you noticed any swelling in your feet or ankles
+
+Doctor: No nothing like that
+
+Patient: Alright have you had any chest pain
+
+Doctor: No no chest pain
+
+Patient: Any feeling any episodes where you feel like you were gonna faint
+
+Doctor: No
+
+Patient: Feeling like your hearts racing
+
+Doctor: No
+
+Patient: Alright um have you been having any abdominal pains
+
+Doctor: No abdominal pains
+
+Patient: Alright how about urinary problems
+
+Doctor: No nothing like that
+
+Patient: Any bowel problems like diarrhea
+
+Doctor: No its pretty regular
+
+Patient: OK have you noticed any rashes anywhere
+
+Doctor: No
+
+Patient: Alright and then how about like muscle aches or or joint aches
+
+Doctor: No nothing like that just feeling tired
+
+Patient: OK and then have you had any changes to your vision
+
+Doctor: No
+
+Patient: Like blurred vision or things like that
+
+Doctor: No nothing like that
+
+Patient: Any changes to your voice like it sounds more hoarse to you or
+
+Doctor: No not really
+
+Patient: Oh ok and any nausea or vomiting
+
+Doctor: I did feel a bit nauseous over the last two days but i havent vomited
+
+Patient: OK and have you been diagnosed with any medical conditions in the past
+
+Doctor: No ive been pretty lucky no medical conditions i dont even take any medications either
+
+Patient: OK anything over the counter like supplements or herbal
+
+Doctor: No just just the cold medications over the counter nothing else
+
+Patient: OK any allergies to medications
+
+Doctor: Not that i know
+
+Patient: Any hospitalizations
+
+Doctor: No
+
+Patient: Have you had any prior surgeries
+
+Doctor: Nope
+
+Patient: OK um and could you tell me a little bit about your living situation now
+
+Doctor: Oh yeah so i just live in a townhouse with my wife and two children and yeah currently working as an engineer yeah pretty everything else is pretty good
+
+Patient: OK um have you had to miss work over the last few days
+
+Doctor: Yeah i actually didnt go to work yesterday just felt terrible yesterday
+
+Patient: OK how have the wife and kids been feeling at home
+
+Doctor: Theyre actually completely fine now they dont seem to have any any symptoms of like coughing or anything like that
+
+Patient: Anybody at work thats been sick
+
+Doctor: There was actually like just we work in the same kind of office setting one of my coworkers was coughing just last week and like you know my boss told us told him to like go home and get some rest and he was away for a couple days
+
+Patient: OK uh do you know what um what he had or anything like that
+
+Doctor: No im not really sure now that i think of it like i i dont i havent seen him since uh so i havent really asked him yeah im not really sure
+
+Patient: OK has have you traveled anywhere or has anybody in your office been been traveling anywhere
+
+Doctor: No not really not that i know everything is pretty strict right now with with the pandemic going on
+
+Patient: OK um and yeah do you smoke cigarettes
+
+Doctor: No
+
+Patient: Do you drink alcohol
+
+Doctor: Just rarely maybe a couple times a month
+
+Patient: OK do you use recreational drugs like iv drug use or opioids or crystal meth anything like that
+
+Doctor: No nothing like that
+
+Patient: OK and are you currently sexually active
+
+Doctor: Yep
+
+Patient: OK could you tell me a little bit about your your partner or partners
+
+Doctor: Just my wife no other sexual partners
+
+Patient: OK and have you had a sexually transmitted infection before
+
+Doctor: Nope
+
+Patient: OK and so in regards to your family history has anybody had similar symptoms before
+
+Doctor: No not really not nothing like this
+
+Patient: OK any heart attacks or strokes in the family
+
+Doctor: No
+
+Patient: OK and then how about so any cancers in the family
+
+Doctor: I think ive had an aunt who had breast cancer but nothing else
+
+Patient: OK um so those are all the questions i wanted to go go through on history i am concerned that you might might have covid19 or coronavirus and so it could be covior this could be another viral infection or possibly pneumonia going on but it does sound like you have an infection and so well check some sputum cultures and and well also do a pcr nasal swab testing for coviso well go ahead and order those tests and well see what their their results say
+
+Doctor: Alright sounds good

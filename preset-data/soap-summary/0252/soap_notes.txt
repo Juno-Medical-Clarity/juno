@@ -1,0 +1,37 @@
+# SOAP Notes — Sample 0252
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 2 weeks
+ - Dry, no blood
+ - Improved but persistent
+- Runny nose for 1 week
+ - Clear/white discharge
+- Congestion at times
+- Reduced sense of smell when congested
+- Chills on 2 nights last week
+- No headache, vision changes, sore throat, breathing difficulties, chest pain, palpitations, abdominal pain, nausea, vomiting, diarrhoea, constipation, muscle aches, numbness, tingling, fever, night sweats, or unintentional weight loss
+
+Past Medical History:
+- No significant PMHx
+- FHx: Father has high cholesterol
+- SocHx: University student, living with parents (virtual learning)
+ - Occasional smoking and marijuana use
+ - Alcohol consumption on weekends at school
+- No known allergies
+- No recent travel
+- Mother had sniffles last week, no COVID test
+
+Objective:
+- Physical exam and temperature check planned
+
+Assessment:
+- Possible common cold
+- Rule out COVID-19
+
+Plan:
+- COVID-19 swab
+- Self-isolation at home
+- Await test results (24-48 hours)
+- Public Health to contact if positive
+- Physical exam to rule out other conditions (e.g., strep throat, mono, bacterial pneumonia)

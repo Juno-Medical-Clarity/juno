@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0218  |  gem_id: gem-cochrane-simplification-validation-219  |  doi: 10.1002/14651858.CD003052
+
+This review of trials looked at which type of these medications, oral-form or injection-form, were the best in producing the most successful outcome. The review found no significant benefit of using one type of medication (oral or injectable) over the other, although there were insufficient data from trials. More research is needed to examine this question.

@@ -1,0 +1,11 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [17:18] 'medical-jargon-google-easy' -> 'levetiracetam'
+  [19:20] 'medical-jargon-google-easy' -> 'phenytoin'
+  [21:23] 'medical-jargon-google-easy' -> 'sodium valproate'
+  [25:29] 'medical-jargon-google-easy' -> 'second - line treatment'
+  [30:34] 'medical-jargon-google-easy' -> 'paediatric convulsive status epilepticus'

@@ -1,0 +1,13 @@
+source:      plos_genetics
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-easy' -> 'genotyping'
+  [13:16] 'medical-jargon-google-easy' -> 'single nucleotide polymorphisms'
+  [17:18] 'abbr-medical' -> 'SNPs'
+  [21:22] 'medical-jargon-google-easy' -> 'genotyped'
+  [28:30] 'medical-jargon-google-easy' -> 'breast cancer'
+  [36:38] 'medical-jargon-google-easy' -> 'breast cancer'
+  [48:50] 'medical-jargon-google-easy' -> 'BRCA2 mutation'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0164  |  gem_id: gem-cochrane-simplification-train-165  |  doi: 10.1002/14651858.CD002170
+
+This review involved the assessment of different inhaler devices for delivery of inhaled bronchodilators in stable chronic obstructive pulmonary disease (COPD). Studies included in this review involved pressurised metered dose inhalers (pMDI) being compared to any other handheld inhaler device containing bronchodilators. Only three randomised controlled trials met the inclusion criteria. Due to the very small number of studies included in this review, it is not possible to draw any conclusions on the use of inhaler devices containing bronchodilators in COPD. There need to be further well designed randomised controlled trials examining the role of bronchodilators in COPD.

@@ -1,0 +1,13 @@
+The vitamins folic acid, B12 and B6 and B2 are the source of coenzymes which participate in one carbon metabolism.
+In this metabolism, a carbon unit from serine or glycine is transferred to tetrahydrofolate (THF) to form methylene-THF.
+This is either used as such for the synthesis of thymidine, which is incorporated into DNA, oxidized to formyl-THF which is used for the synthesis of purines, which are building blocks of RNA and DNA, or it is reduced to methyl-THF which used to methylate homocysteine to form methionine, a reaction which is catalyzed by a B12-containing methyltransferase.
+Much of the methionine which is formed is converted to S-adenosylmethionine (SAM), a universal donor of methyl groups, including DNA, RNA, hormones, neurotransmitters, membrane lipids, proteins and others.
+Because of these functions, interest in recent years has been growing particularly in the area of aging and the possibility that certain diseases that afflict the aging population, loss of cognitive function, Alzheimer's disease, cardiovascular disease, cancer and others, may be in part explained by inadequate intake or inadequate status of these vitamins.
+Homocysteine, a product of methionine metabolism as well as a precursor of methionine synthesis, was shown recently to be a risk factor for cardiovascular disease, stroke and thrombosis when its concentration in plasma is slightly elevated.
+There are now data which show association between elevated plasma homocysteine levels and loss of neurocognitive function and Alzheimer's disease.
+These associations could be due to a neurotoxic effect of homocysteine or to decreased availability of SAM which results in hypomethylation in the brain tissue.
+Hypomethylation is also thought to exacerbate depressive tendency in people, and for (colorectal) cancer DNA hypomethylation is thought to be the link between the observed relationship between inadequate folate status and cancer.
+There are many factors that contribute to the fact that the status of these vitamins in the elderly is inadequate.
+These factors are in part physiological such as the achlorhydria which affects vitamin B12 absorption and in part socioeconomic and habitual.
+We need more studies to confirm that these vitamins have important functions in the etiology of these diseases.
+We also need to establish if these diseases can be prevented or diminished by proper nutrition starting at a younger age.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2571  |  gem_id: gem-cochrane-simplification-train-2572  |  doi: 10.1002/14651858.CD002231
+
+Three randomised clinical trials were included. Due to their poor methodologic quality and the existing small number of trials, there is currently insufficient evidence for treating asymptomatic hepatitis B virus carriers with Chinese medicinal herbs like the herbal compound 'Jianpi Wenshen recipe', Phyllanthus amarus and Astragalus membranaceus. Methodologically better and larger randomised trials are needed comparing medicinal herbs versus placebo.

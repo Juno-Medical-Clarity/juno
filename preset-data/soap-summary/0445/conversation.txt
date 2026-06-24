@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0445
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you on any medications at this time? None whatsoever. Got it.

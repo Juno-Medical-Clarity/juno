@@ -1,0 +1,1 @@
+This finding has major implications for anti-mTORC2 therapy as depending on the cellular contexts, inhibiting mTORC2 may either reduce or enhance mTORC1 activation, the latter could inadvertently dampen the effect of mTORC2 blockade.

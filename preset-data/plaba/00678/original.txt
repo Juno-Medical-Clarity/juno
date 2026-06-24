@@ -1,0 +1,9 @@
+47,XXX (triple X) and Turner syndrome (45,X) are sex chromosomal abnormalities with detrimental effects on health with increased mortality and morbidity.
+In karyotypical normal females, X-chromosome inactivation balances gene expression between sexes and upregulation of the X chromosome in both sexes maintain stoichiometry with the autosomes.
+In 47,XXX and Turner syndrome a gene dosage imbalance may ensue from increased or decreased expression from the genes that escape X inactivation, as well as from incomplete X chromosome inactivation in 47,XXX.
+We aim to study genome-wide DNA-methylation and RNA-expression changes can explain phenotypic traits in 47,XXX syndrome.
+We compare DNA-methylation and RNA-expression data derived from white blood cells of seven women with 47,XXX syndrome, with data from seven female controls, as well as with seven women with Turner syndrome (45,X).
+To address these questions, we explored genome-wide DNA-methylation and transcriptome data in blood from seven females with 47,XXX syndrome, seven females with Turner syndrome, and seven karyotypically normal females (46,XX).
+Based on promoter methylation, we describe a demethylation of six X-chromosomal genes (AMOT, HTR2C, IL1RAPL2, STAG2, TCEANC, ZNF673), increased methylation for GEMIN8, and four differentially methylated autosomal regions related to four genes (SPEG, MUC4, SP6, and ZNF492).
+We illustrate how these changes seem compensated at the transcriptome level although several genes show differential exon usage.
+In conclusion, our results suggest an impact of the supernumerary X chromosome in 47,XXX syndrome on the methylation status of selected genes despite an overall comparable expression profile.

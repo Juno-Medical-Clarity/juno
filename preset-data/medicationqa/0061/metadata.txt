@@ -1,0 +1,5 @@
+drug_focus: cromolyn
+question_type: Information
+section_title: NA
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93f80edb-3b38-423e-8cd6-5b5cb4393ec2
+sample_id: 0061

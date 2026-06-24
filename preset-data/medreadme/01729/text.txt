@@ -1,0 +1,1 @@
+We also found that GlmY is itself controlled by an RNA processing event (3' end polyadenylation), which typically destabilizes bacterial RNA.

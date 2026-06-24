@@ -1,0 +1,15 @@
+qid: TQ39
+source_file: 1-131781237.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Are confusion and facial itch possible side effects of methadone?
+nlm_summary: Are confusion and facial itch possible side effects of methadone?
+
+focus_entities:
+  [F1] (DrugSupplement) methadone
+question_types:
+  [T1] SIDE_EFFECT
+keywords:
+  [K1] (Problem) confusion
+  [K2] (Problem) face itches

@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0786
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 49 years old and identifies as white.
+- Chief complaint: Patient has been referred to manage issues related to injuries sustained.
+- Symptoms: 
+ - Pain in the back of the left thigh for the past year.
+ - History of a knee injury from a boating accident while fishing.
+- Severity: Describes the knee injury incident as severe, involving a helicopter transport to the hospital.
+- Relevant medical history: Underwent surgery for a knee injury, which included grafting and full thickness skin grafting for closure of a large defect in the left posterior thigh.
+- Concerns: Patient is unsure about the meaning of medical terms related to their condition.
+
+Objective:
+- External fixation present on the knee.
+- Areas of hypergranulation tissue observed around the graft site and lower leg.
+- No signs of fever or infection reported.
+
+Assessment:
+- No specific assessment or diagnosis provided by the clinician.
+
+Plan:
+- No explicit plan mentioned in the conversation.

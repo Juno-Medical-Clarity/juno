@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0627  |  gem_id: gem-cochrane-simplification-train-628  |  doi: 10.1002/14651858.CD008307.pub2
+
+Researchers have studied the ability of various drug treatments to prevent the development of chronic pain after surgery and this systematic review evaluated published studies in this field. Available studies suggest a modest effect of ketamine, compared to placebo, for prevention of chronic pain after surgery, however small study size could lead to an overestimation of this effect. Studies of other drugs such as gabapentin and pregabalin did not suggest the same preventative effect. Additional large studies using improved research methods are necessary to more clearly identify treatments that are beneficial for preventing chronic postsurgical pain.

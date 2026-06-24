@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0259  |  gem_id: gem-cochrane-simplification-test-260  |  doi: 10.1002/14651858.CD005199.pub2
+
+The choice of abdominal surgical incision is determined largely by access. However, a transverse incision may be superior to a midline incision in terms of recovery and complications. All randomised controlled trials comparing these incisions were identified. Outcomes included analgesic use, pulmonary function, complication rates and hospital stay. Marked variability in methodology made comparison difficult and potential biases in all of the studies suggests results should be treated with caution. Nevertheless a trend was seen toward less analgesic requirement, less effect on pulmonary function and lower wound dehiscence and incisional hernia rates with a transverse incision. However, the lower pain and reduced effect on pulmonary function were not translated into other clinical advantages as recovery times and other complication rates (except cosmetic appearance) were similar.

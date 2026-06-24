@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0807
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Dizziness (general dizziness and vertigo), lightheadedness, headaches (off and on), neck pain (intermittent), muscle aches (intermittent), tightness in the chest (not currently), discomfort and tenderness in the left shoulder, new rash on the right calf, new bruises (more than usual).
+- Severity: Lightheadedness, symptoms of dizziness are concerning.
+- Duration: Dizziness spells and other symptoms are ongoing; headaches are random; rash and bruises noted in the past couple of days.
+- Associated symptoms: Nausea associated with dizziness (but no vomiting), no diarrhea, no fever or chills.
+- Relevant medical history: History of gestational diabetes.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: The patient expresses concern regarding the dizziness, headaches, and the new rash.
+
+Objective:
+- Blood sugar measurement: 155 mg/dL after lunch.
+- Examination findings: New rash on the right calf, new bruises noted.
+
+Assessment:
+- No formal assessment or diagnosis provided.
+
+Plan:
+- Further evaluation of dizziness and rash needed.
+- Monitor blood sugar levels due to history of gestational diabetes.

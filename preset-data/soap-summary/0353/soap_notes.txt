@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0353
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports no major health conditions, such as cancer or arthritis.
+- No other symptoms, severity, duration, associated symptoms, relevant medical history, family history, allergies, or concerns mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

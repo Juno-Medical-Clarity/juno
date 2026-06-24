@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0364  |  gem_id: gem-cochrane-simplification-validation-365  |  doi: 10.1002/14651858.CD009886.pub2
+
+Our search for eligible papers was updated in August 2014 and we found one trial with 26 adult participants in Spain. The study sought to test if hepatitis B virus vaccine was better than placebo in preventing PLHIV from getting hepatitis B. The single study in this review showed improved immunity against hepatitis B among people living with HIV and taking antiretroviral therapy at 12 months. This immunity was lost once they stopped taking antiretroviral therapy. No side-effects were reported. The quality of evidence was assessed as very low.

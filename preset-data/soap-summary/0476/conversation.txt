@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0476
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you? Look at this fifth fingernail on my left hand, doctor. Oh what is stuck here? I think it's wood splinter. Oh, must be painful! Yes a lot.

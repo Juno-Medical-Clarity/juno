@@ -1,0 +1,9 @@
+Doctor: Hello. Are you a new patient?
+Patient: I am. I've been traveling a lot, so I don't have a local doctor I usually see.
+Doctor: That's fine. What is the reason for your visit?
+Patient: I've had this dark spot on my leg for a long time.
+Doctor: I see. Do you know if your family has any chronic medical problems?
+Patient: Not that I know of.
+Doctor: That's good. I think I'll be able to remove it surgically. Before I go over the procedures, have you had a surgery before?
+Patient: Yeah, I have. I had surgery on my back and to remove my appendix.
+Doctor: Sounds good. Other than that dark spot, you seem to be very healthy.

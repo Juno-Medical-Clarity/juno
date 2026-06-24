@@ -1,0 +1,2 @@
+[PASTMEDICALHX]
+Denies diabetes, cardiovascular disease, or pulmonary disease.

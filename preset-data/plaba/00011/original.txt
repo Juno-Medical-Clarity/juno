@@ -1,0 +1,12 @@
+Urinary incontinence is the inability to willingly control bladder voiding.
+Stress urinary incontinence (SUI) is the most frequently occurring type of incontinence in women.
+No widely accepted or approved drug therapy is yet available for the treatment of stress urinary incontinence.
+Numerous studies have implicated the neurotransmitters, serotonin and norepinephrine in the central neural control of the lower urinary tract function.
+The pudendal somatic motor nucleus of the spinal cord is densely innervated by 5HT and NE terminals.
+Pharmacological studies confirm central modulation of the lower urinary tract activity by 5HT and NE receptor agonists and antagonists.
+Duloxetine is a combined serotonin/norepinephrine reuptake inhibitor currently under clinical investigation for the treatment of women with stress urinary incontinence.
+Duloxetine exerts balanced in vivo reuptake inhibition of 5HT and NE and exhibits no appreciable binding affinity for receptors of neurotransmitters.
+The action of duloxetine in the treatment of stress urinary incontinence is associated with reuptake inhibition of serotonin and norepinephrine at the presynaptic neuron in Onuf's nucleus of the sacral spinal cord.
+In cats, whose bladder had initially been irritated with acetic acid, a dose-dependent improvement of the bladder capacity (5-fold) and periurethral EMG activity (8-fold) of the striated sphincter muscles was found.
+In a double blind, randomized, placebo-controlled, clinical trial in women with stress urinary incontinence, there was a significant reduction in urinary incontinence episodes under duloxetine treatment.
+In summary, the pharmacological effect of duloxetine to increase the activity of the striated urethral sphincter together with clinical results indicate that duloxetine has an interesting therapeutic potential in patients with stress urinary incontinence.

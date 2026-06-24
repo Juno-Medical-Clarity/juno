@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1818  |  gem_id: gem-cochrane-simplification-train-1819  |  doi: 10.1002/14651858.CD006421.pub3
+
+The two studies included in this review looked at using LMWH with 5-FU during retinal detachment repair to see if there was an effect of reducing PVR levels after surgery. One study focused on patients who are considered at high-risk of developing PVR after surgery because of pre-existing ocular features, and found beneficial effects of this treatment in this group. The other study looked at a wider group of patients and did not find a benefit in using this combination treatment, and in certain patients the treatment was associated with poorer vision. Due to the inconsistency of the evidence, until further data are available, future research on the use of LMWH with 5-FU should be conducted only in retinal detachment patients who are likely to develop considerable retinal scarring after surgery.

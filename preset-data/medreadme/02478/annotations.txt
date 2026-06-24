@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'HIV phylogenies'
+  [13:15] 'general-complex' -> 'pairwise distances'

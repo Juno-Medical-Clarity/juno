@@ -1,0 +1,11 @@
+Histones make up the chief protein part of DNA.
+They help to maintain the structure of chromatin, which helps package the DNA in a compact form so it fits in the cell nucleus (chamber holding the DNA in a cell), and regulate how the instructions from genes are used.
+The long double-stranded DNA molecule winds around a group of histone proteins to form a structure called nucleosomes. Nucleosomes compact DNA within the cell wall.
+There are five major types of histones, namely H1/H5, H2, H3 and H4.
+H3.3 is a subtype of H3 histone and can be encoded (given instructions on how to structure it) either by the H3F3A or H3F3B genes independently.
+Molecules that combine to build proteins are called amino acids. Some are found in the histone tails and are sites of changes to the properties and make-up of proteins, a process called post-translational modifications (PTMs).
+These changes in histones are involved in regulating how genetic information is used from genes.
+Mutations (changes) in histone genes can affect sites of PTMs, causing changes in how genes can be silenced or slowed.
+These effects are directly linked to changes in cells by altered genes.
+Ongoing changes in H3.3 histone are increasingly identified in several illnesses and developmental disorders.
+This review attempts to shed light on the diseases associated with H3.3 histone mutations.

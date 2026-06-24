@@ -1,0 +1,5 @@
+Leadless pacemakers (LPs) have revolutionized the field of pacing by miniaturizing pacemakers and rendering them completelty intracardiac, hence reducing complications related to pacemaker pockets and transvenous leads.
+However, first generation LPs appear to be associated with a higher rate of myocardial perforation as compared to transvenous pacemakers (TV-PPM).
+Currently, LPs are predominantly designed to pace the right ventricle with no LPs that provide atrial or biventricular pacing.
+In this article, we review the available data on LPs while advocating for the need for a randomized controlled trial comparing LPs to TV-PPMs.
+In addition, we review the future directions of leadless devices.

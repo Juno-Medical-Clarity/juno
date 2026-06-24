@@ -1,0 +1,8 @@
+source:      pnas
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [8:10] 'medical-jargon-google-easy' -> 'Arabidopsis thaliana'
+  [23:24] 'abbr-medical' -> 'MST'

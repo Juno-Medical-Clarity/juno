@@ -1,0 +1,5 @@
+pmid:        32935536
+question:    14
+adaptation:  adaptation1
+title:       Immunity against SARS-CoV-2: walking to the vaccination
+sentences:   9

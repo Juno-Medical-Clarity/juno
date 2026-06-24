@@ -1,0 +1,14 @@
+Objective: We tested the hypothesis that there are 2 distinct phenotypes of Parkinson tremor, based on interindividual differences in the response of resting tremor to dopaminergic medication.
+We also investigated whether this pattern is specific to tremor by comparing interindividual differences in the dopamine response of tremor to that of bradykinesia.
+Methods: In this exploratory study, we performed a levodopa challenge in 76 tremulous patients with Parkinson tremor.
+Clinical scores (Movement Disorders Society-sponsored version of the Unified Parkinson's Disease Rating Scale part III) were collected "off" and "on" a standardized dopaminergic challenge (200/50 mg dispersible levodopa-benserazide).
+In both sessions, resting tremor intensity was quantified using accelerometry, both during rest and during cognitive coactivation.
+Bradykinesia was quantified using a speeded keyboard test.
+We calculated the distribution of dopamine-responsiveness for resting tremor and bradykinesia.
+In 41 patients, a double-blinded, placebo-controlled dopaminergic challenge was repeated after approximately 6 months.
+Results: The dopamine response of resting tremor, but not bradykinesia, significantly departed from a normal distribution.
+A cluster analysis on 3 clinical and electrophysiologic markers of tremor dopamine-responsiveness revealed 3 clusters: dopamine-responsive, intermediate, and dopamine-resistant tremor.
+A repeated levodopa challenge after 6 months confirmed this classification.
+Patients with dopamine-responsive tremor had greater disease severity and tended to have a higher prevalence of dyskinesia.
+Conclusion: Parkinson resting tremor can be divided into 3 partially overlapping phenotypes, based on the dopamine response.
+These tremor phenotypes may be associated with different underlying pathophysiologic mechanisms, requiring a different therapeutic approach.

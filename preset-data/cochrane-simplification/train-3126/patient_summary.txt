@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3126  |  gem_id: gem-cochrane-simplification-train-3127  |  doi: 10.1002/14651858.CD006052.pub2
+
+There have been few trials of treatment for Charcot-Marie Tooth disease. One very small trial of the nerve growth promoting factor, neurotrophin-3, showed possible benefit but needs to be replicated. Trials of exercise, orthosis, creatine and ganglioside injections have been done but did not show significant benefit. These were all too small to identify moderate benefit or harm. Trials of vitamin C for the commonest type of Charcot-Marie Tooth disease are in progress.

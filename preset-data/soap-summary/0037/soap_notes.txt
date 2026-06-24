@@ -1,0 +1,55 @@
+# SOAP Notes — Sample 0037
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with worsening cough and shortness of breath for less than a day (started last night and carried out throughout the morning)
+- Cough has been present for a number of years but has worsened over the past day (cough is productive with sputum that is usually white or clear but is now more greenish-yellow in color)
+- Shortness of breath is constant and worsening since last night
+- Chills last night but unsure about fever
+- Chest pressure most of the time, present with breathing and at rest
+- Similar episode last winter requiring hospitalization for COPD exacerbation (treated with antibiotics and oxygen)
+- Denies home oxygen use
+- Uses Spiriva daily and albuterol PRN (used albuterol last night with minimal relief)
+- Denies recent travel, sick contacts, headache, nausea, vomiting, diarrhea, constipation, urinary issues, changes in sleep or appetite, confusion
+- Reports fatigue and difficulty with exertion due to shortness of breath
+- Audible wheezing
+
+PMHx:
+- COPD (diagnosed 10 years ago)
+- Hypertension
+- Type 2 diabetes mellitus
+- Chronic kidney disease (low eGFR)
+- Uterine prolapse s/p surgical repair
+
+Medications:
+- Spiriva
+- Albuterol
+- ACE inhibitor
+- Metformin
+- SGLT2 inhibitor
+- Diuretic (for lower extremity edema)
+
+SocHx:
+- Retired
+- Lives with husband in a house outside the city
+- Denies occupational exposures
+- Current smoker (0.5-1 PPD) with a long smoking history starting in teens
+- Denies recreational drug use
+- Rare alcohol use
+
+Objective:
+- Vitals pending
+- Oxygen saturation pending
+- Physical exam pending
+
+Assessment:
+- Likely COPD exacerbation
+
+Plan:
+- Obtain vitals including temperature and oxygen saturation
+- Perform full physical examination
+- Order labs including blood work
+- Consider chest X-ray to rule out pneumonia
+- Provide albuterol in the office if needed
+- Consider systemic corticosteroids for symptom management
+- Discuss smoking cessation

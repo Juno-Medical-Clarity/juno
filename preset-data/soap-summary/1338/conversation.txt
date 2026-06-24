@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1338
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+You do not look so well today. What seems to be the problem? Well‚ I am having a hard time. My whole body aches and I am in pain. Do you have a history of drug use? Well yes. I am detoxing. What kind of drugs have you been using? Heroin. Okay. How long have you been using? I don't feel well. Maybe a year. I can't sleep or eat. Have you had a fever, chills, vomiting or diarrhea? I think I have a fever. I feel chilled. I have had some diarrhea.

@@ -1,0 +1,5 @@
+drug_focus: tylenol
+question_type: Overdose
+section_title: WARNINGS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d7d1300-bcb8-466a-880b-310b360ee132#OD
+sample_id: 0282

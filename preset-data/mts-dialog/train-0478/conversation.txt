@@ -1,0 +1,4 @@
+Doctor: Any medical traits in the family?
+Patient: Oh yeah. Diabetes and high blood pressure runs in my family.
+Doctor: Anything else?
+Patient: Yeah, my mom suffered with a stroke when she was in her seventies.

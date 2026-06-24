@@ -1,0 +1,11 @@
+Objectives: Parkinson's disease (PD) features both motor and non-motor symptoms that substantially impact quality of life (QoL).
+Levodopa-carbidopa intestinal gel (LCIG) reduces motor complications and improves some non-motor symptoms in advanced PD (APD).
+Change in patients' health-related quality of life (hrQoL) is a common endpoint in PD trials and has become an important factor in judging overall effect of LCIG.
+However, hrQoL is considered to be only one dimension of QoL.
+The primary aim of this prospective observational study was to observe the effects of LCIG on individual quality of life (iQoL) in PD and caregivers.
+The secondary aim was to investigate its effects on patients' motor and non-motor symptoms as well as effects on caregiver burden.
+Materials & methods: Utilizing the Schedule for the Evaluation of Individual Quality of Life-Questionnaire (SEIQoL-Q) and the Personal Wellbeing Index-Adult (PWI-A), twelve patients with advanced PD and their caregivers were followed for six months after initiation of LCIG treatment.
+Results: At the final follow-up, improvements of iQoL for patients (median SEIQoL index improvement 0.16, P < .05) and caregivers (median SEIQoL index improvement 0.20, P < .05) were seen together with improvements of motor and non-motor symptoms.
+There were no significant improvements of hrQoL.
+Conclusions: The study results indicate that LCIG improves iQoL in PD in addition to the improvement of motor and non-motor symptoms.
+Furthermore, this study signals that LCIG may also contribute to improvement of iQoL in caregivers.

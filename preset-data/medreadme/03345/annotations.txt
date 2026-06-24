@@ -1,0 +1,9 @@
+source:      elife
+side:        complex
+readability: 6.0
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'robust trace'
+  [11:18] 'medical-jargon-google-hard' -> 'NMDAR - dependent CaMKII - AMPAR pathway'
+  [20:22] 'medical-jargon-google-easy' -> 'insular cortex'

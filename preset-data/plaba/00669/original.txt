@@ -1,0 +1,13 @@
+We studied the effect of severe reduction of beta-cell mass by 90% pancreatectomy on the immune tolerance to the endocrine pancreas.
+Four months after subtotal pancreatectomy all LEW.Han rats had developed mononuclear infiltration of islets and 9 of 14 rats were positive for islet-cell antibodies.
+Electron microscopy revealed lymphocytic invasion of endocrine tissue, lysis of beta cells and phagocytotic macrophages.
+None of these changes were seen 2 weeks after 90% pancreatectomy or 4 months after 10% pancreatectomy.
+Weekly substitution of islet antigens in the form of a homogenate of 100 islets into 90% pancreatectomized LEW.Han rats almost completely prevented the development of insulitis and autoantibodies.
+The dependence of insulitis on T cells was shown when 90% pancreatectomy in LEW.rnu rats (i.e., the congenic athymic nude strain), did not result in islet infiltration.
+The exocrine tissue remained normal in all experimental groups.
+During the observation period insulitis was not associated with overt diabetes but was accompanied by substantial enlargement of islets and of beta-cell mass, as shown by morphometry.
+Suppression of islet inflammation by injection of islet antigens abolished beta-cell regeneration, despite continuing metabolic stress in rats with 90% pancreatectomy.
+The findings indicate induction of islet autoimmunity in response to 90% but not to 10% pancreatectomy.
+We conclude that severe reduction of the islet-antigen mass allows the development of T-cell-dependent islet autoimmunity which indicates a loss of immune tolerance.
+In addition, the data suggest the existence of islet-antigen autoreactive immune cells in rats not genetically predisposed to autoimmune diabetes.
+Finally, we conclude that selective beta-cell regeneration occurs in association with insulitis.

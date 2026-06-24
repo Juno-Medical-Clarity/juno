@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1138  |  gem_id: gem-cochrane-simplification-train-1139  |  doi: 10.1002/14651858.CD009099.pub3
+
+There are many types of dressings that can be used, which also vary considerably in cost.This review (four studies involving a total of 511 participants) identified no research evidence to suggest that any type of hydrocolloid wound dressing is more effective in healing diabetic foot ulcers than other types of dressing.

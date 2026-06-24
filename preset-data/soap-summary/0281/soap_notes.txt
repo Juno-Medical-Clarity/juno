@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0281
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of prostate cancer (brother).
+- Family history of brain cancer (father).
+- Family history of heart-related issues (both sides of family).
+- Family history of diabetes (brother and sister).
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No clinician's interpretation provided.]
+
+Plan:
+- [No specific actions, medications, tests, or follow-up mentioned.]

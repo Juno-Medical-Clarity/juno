@@ -1,0 +1,4 @@
+drug_focus: formaldehyde
+question_type: Side effects
+source_url: https://www.nytimes.com/2015/05/04/business/energy-environment/the-uphill-battle-to-better-regulate-formaldehyde.html
+sample_id: 0044

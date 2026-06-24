@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 1469
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Muscle spasms
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: Not specified
+- Relevant medical history: Not specified
+- Family history: Not specified
+- Allergies: Not specified
+- Other concerns: Patient had questions about medications, which were answered.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- Prescribed medications:
+ - Ibuprofen 800 mg to be taken every eight hours as needed.
+ - Tylenol number three (combined with Codeine) to be taken every six hours as needed.
+ - Methocarbamol 750 mg to be taken four times a day for maximum relief.

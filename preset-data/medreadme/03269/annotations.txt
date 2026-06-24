@@ -1,0 +1,9 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 5.2
+split:       dev
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'BU'
+  [15:16] 'medical-jargon-google-easy' -> 'rifampicin'
+  [20:21] 'medical-jargon-google-easy' -> 'streptomycin'

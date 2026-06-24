@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0761
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient was born in Munich, Germany.
+- Moved to America in 1957.
+- Retired for almost twenty years due to cancer complications.
+- Diagnosed with Mesothelioma.
+- Currently alone, divorced.
+- Has a son living in Santa Cruz with grandchildren whom the patient has not seen but wants to get in touch with.
+- Has a brother and sister who are healthy but do not communicate much.
+- No significant alcohol or smoking history.
+- No use of illegal drugs (e.g., heroin, cocaine).
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Mesothelioma (noted as a complication leading to retirement).
+
+Plan:
+- No specific actions, medications, tests, or follow-up mentioned.

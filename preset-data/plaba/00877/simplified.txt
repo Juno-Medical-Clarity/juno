@@ -1,0 +1,9 @@
+Fibroblast growth factor receptor 3 (FGFR3) gain-of-function mutations cause dwarfisms, including achondroplasia (ACH) and thanatophoric dysplasia (TD).
+The continuously active state of FGFR3 disrupts normal process of bone growth.
+Bone-growth abnormalities have been identified in which primary cilia (PC) function is disrupted. Primary cilia are long protrusions on cells that act as an antenna and are important during development.
+In human ACH and TD, the impact of FGFR3 mutations on PC in growth plate cartilage remains unknown.
+Here, the authors showed that in cartilage cells from ACH and TD patients and mice with Fgfr3 mutation, the FGFR3 is overactive and it perturbed PC length and formation.
+They demonstrated that inhibiting FGFR3, using a drug inhibitor, rescued both PC length and formation.
+The authors also studied the impact of a drug inhibitor of a signaling pathway.
+Interestingly, the drug also rescued PC length and formation.
+Together, we provide evidence that the growth plate defects ascribed to FGFR3-related dwarfisms are potentially due to loss of PC function, and these dwarfisms may represent a novel type of bone growth disorders with defective cilia formation.

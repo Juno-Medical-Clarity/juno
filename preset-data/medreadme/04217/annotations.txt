@@ -1,0 +1,10 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Family intervention'
+  [3:4] 'abbr-medical' -> 'FI'
+  [7:14] 'medical-name-entity' -> 'National Institute for Health and Care Excellence'
+  [16:18] 'medical-jargon-google-easy' -> 'psychosocial intervention'

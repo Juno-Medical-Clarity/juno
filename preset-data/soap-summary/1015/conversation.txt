@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1015
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello! What brings you into the office today? Hi! I have not been able to go pee, and I have had this sharp pain in my left side. Have you recently had any surgical procedures? No. Do you have a history of an enlarged prostate or kidney stones? No. I would like to get some imaging done. Okay.

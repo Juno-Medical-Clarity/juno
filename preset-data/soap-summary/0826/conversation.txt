@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0826
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke cigarettes? Yes. How about alcohol? No, I don't consume alcohol. Okay. And any history of using drugs like marijuana or stuff like that for fun? No.

@@ -1,0 +1,5 @@
+drug_focus: cortisone shots
+question_type: Usage/time
+section_title: Limits on the number of cortisone shots
+source_url: https://www.mayoclinic.org/tests-procedures/cortisone-shots/about/pac-20384794
+sample_id: 0072

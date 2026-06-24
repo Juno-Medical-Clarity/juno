@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3527  |  gem_id: gem-cochrane-simplification-train-3528  |  doi: 10.1002/14651858.CD001814.pub2
+
+The review of trials suggests that these interventions may have some benefit to the outcomes of preterm infants; however, there continues to be conflicting evidence among the multiple studies. Before a clear direction for practice can be supported, evidence demonstrating more consistent effects of developmental care interventions on important short- and long-term clinical outcomes is needed. The economic impact of the implementation and maintenance of developmental care practices should be considered by individual institutions.

@@ -1,0 +1,5 @@
+Doctor: Hello again!
+Patient: Hi!
+Doctor: The results from you M R I showed nothing concerning.  The growth factors were normal with normal cell function and no signs of decreased blood supply to the brain.
+Patient: That's great news.
+Doctor: Yes it is.

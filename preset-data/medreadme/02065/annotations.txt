@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [6:10] 'medical-jargon-google-easy' -> 'face - processing centers'
+  [14:16] 'medical-jargon-google-easy' -> 'social cognition'

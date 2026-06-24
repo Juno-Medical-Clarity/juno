@@ -1,0 +1,5 @@
+pmid:        23183752
+question:    72
+adaptation:  adaptation2
+title:       Expanded newborn screening and confirmatory follow-up testing for inborn errors of metabolism detected by tandem mass spectrometry
+sentences:   10

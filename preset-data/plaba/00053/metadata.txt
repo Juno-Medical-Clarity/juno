@@ -1,0 +1,5 @@
+pmid:        30088053
+question:    5
+adaptation:  adaptation3
+title:       Arthroscopic treatment of popliteal cyst using a figure-of-four position and double posteromedial portals
+sentences:   9

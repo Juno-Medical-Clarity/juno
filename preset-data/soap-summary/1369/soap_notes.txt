@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 1369
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Back and buttock pain
+- Severity: A lot of pain, no improvement over several months
+- Duration: "It's been a while," specifically stated as being several months
+- Associated symptoms: None mentioned
+- Relevant medical history: Fracture in lower back, CT scan showing sclerosis and incomplete healing of L5 compression fracture
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Patient is concerned about living with persistent pain and inquires about treatment options.
+
+Objective:
+- Measurable or observable data: CT scan shows sclerosis with some healing of an L5 compression fracture, but healing is not complete.
+
+Assessment:
+- Clinical impression: Patient is a candidate for bilateral L5 kyphoplasty due to persistent pain and incomplete healing of the fracture.
+
+Plan:
+- Action: Proceed with bilateral L5 kyphoplasty
+- Medication: Use of antibiotics to control for infection
+- Procedure details: Minimally invasive outpatient procedure; patient will be under anesthesia.
+- Follow-up: Not explicitly mentioned, but implied follow-up may be needed after the procedure. 
+- Patient education: Discussed risks of infection (very low, less than one percent) and procedure details.

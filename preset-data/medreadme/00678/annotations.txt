@@ -1,0 +1,15 @@
+source:      pnas
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-hard' -> 'VNTR2 - 1'
+  [6:10] 'medical-jargon-google-easy' -> '42 - bp repeats'
+  [14:16] 'medical-jargon-google-easy' -> 'enhancer boxes'
+  [20:22] 'medical-jargon-google-easy' -> 'proximal promoter'
+  [26:27] 'abbr-medical' -> 'hTERT'
+  [27:28] 'medical-jargon-google-easy' -> 'transcription'
+  [30:37] 'medical-jargon-google-hard' -> 'helix - loop - helix transcription factors'
+  [39:40] 'abbr-medical' -> 'hTERT'
+  [42:47] 'medical-jargon-google-easy' -> 'embryonic stem - cell differentiation'

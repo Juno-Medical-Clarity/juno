@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0777
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Longest marriage is of two years duration.
+- Has two children, ages 15 and twins.
+- Children are his wife's dependents.
+- Education: Bachelor's degree.
+- Military history: Served six years in the army, received an honorable discharge.
+- Work history: Worked at Purdy Correctional Institute in Gig Harbor for 19 years.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

@@ -1,0 +1,12 @@
+Turner syndrome (TS) is a sex chromosome aneuploidy or condition of having abnormal number of chromosomes. The disease has a broad spectrum of symptoms including short stature, ovarian failure, and skeletal abnormalities.
+The cause of TS is complex. The mechanisms driving its development are unclear.
+In this study, an online database was used to identify differentially expressed (functionally unique) genes (DEGs) between monosomy X TS patients (one chromosome lacks its partner) and normal female individuals.
+Data on 26 subjects with TS (45,XO) and 10 subjects with the normal chromosomal count (46,XX) was investigated.
+Several genetic analyses were performed.
+In total, 25 upregulated (increased in activity) and 60 downregulated (decreased in activity) genes were identified.
+The system with the most highly enriched tissue-specific gene expression was the hematologic (blood) and immune system. This was followed by the skin/skeletal muscle and brain-related systems.
+Additionally, analysis resulted in the identification of five genes of interest.
+Two of these genes, CD99 and CSF2RA, are involved in the hematologic (blood)/immune system. Others, MYL9 and MYLPF, are related to the circulatory (heart and blood vessels) system. A fifth gene, IGFBP2, is related to skeletal abnormalities.
+Additionally, several genes of interest with possible roles in the pathogenesis (disease creation) of TS were identified as being associated with the hematologic/immune system or metabolism.
+This analysis may be a useful method for identifying novel mechanisms underlying TS.
+However, more experiments are needed to explore the relationships between these genes and TS.

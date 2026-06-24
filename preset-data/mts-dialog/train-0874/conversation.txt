@@ -1,0 +1,31 @@
+Doctor: Good morning, young man.
+Patient: Good morning, doctor.
+Doctor: Who is this young lady, is this your grandmother, or sister?
+Guest_family: Oh doctor, yes, I am his grandmother.
+Doctor: Good, my chart says that you're fourteen years old. Is that correct?
+Patient: Yes sir.
+Doctor: Good, so what seems to be the problem today?
+Patient: I've been having pain in this knee for about a month now.
+Doctor: Can you remember a specific injury to this knee?
+Patient: Um, yeah, I was playing basketball when I jumped, and then when I landed I felt this knee pop.
+Doctor: Do you remember the date of your injury, young man?
+Guest_family: Um, it was on December twenty second two thousand seven.
+Doctor: Good, so how have you been treated for this so far?
+Patient: We went to another clinic first, and they put me in a splint.
+Guest_family: Yeah, and then they referred us over to Children's.
+Doctor: Have they taken x rays yet?
+Patient: Yes, I got back a few minutes ago.
+Doctor: Let's have a look. Well, you broke your leg.
+Patient: What, where? Can you show me?
+Doctor: Right here, this is a tibial tubercule avulsion fracture with patella alta.
+Guest_family: What does that mean, doctor?
+Doctor: Well, he's broken his leg, and pulled some bone off by doing so. We'll need to do surgery on this.
+Guest_family: Oh no, what's the name of the procedure?
+Doctor: It's called an O R I F. We'll go in there with some hardware to put everything back together, and he can get on the road to healing.
+Guest_family: Let me call his father while we discuss this. What's the risk of infection from this surgery?
+Doctor: Historically, it's less than one percent. We use antibiotics to control for infection.
+Guest_family: Okay, will he be asleep for this?
+Doctor: Yes, he won't feel a thing.
+Guest_family: That's good too. Will he need this hardware out in the future?
+Doctor: We can remove everything once he has healed up nicely. Other risks include bleeding, changes in the sensation of the leg, hardware failure, need for post op rehab, need for hardware removal, and failure to restore extensor mechanism tension. But I would not worry about these things. I have been doing these surgeries for years and things like this rarely happen.
+Guest_family: Yes, his father agrees. We're going to do the surgery.

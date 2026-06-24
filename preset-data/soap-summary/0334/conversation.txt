@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0334
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I remember you mentioned that you had one operation done in the past. I had a lymph node biopsy back in September of O three. Did it come back negative? Fortunately, yes.

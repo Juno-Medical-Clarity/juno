@@ -1,0 +1,5 @@
+pmid:        33347023
+question:    2
+adaptation:  adaptation3
+title:       Influence of Different Antidepressants on Ocular Surface in Patients With Major Depressive Disorder
+sentences:   13

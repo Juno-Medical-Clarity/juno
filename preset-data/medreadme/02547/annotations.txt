@@ -1,0 +1,9 @@
+source:      wiki
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [25:28] 'medical-jargon-google-easy' -> 'clean - catch'
+  [39:43] 'medical-jargon-google-easy' -> 'catheter - obtained specimens'
+  [51:53] 'medical-jargon-google-easy' -> 'suprapubic aspirations'

@@ -1,0 +1,4 @@
+Doctor: How are you feeling?
+Patient: I feel good. I feel like I am getting stronger every day.
+Doctor: Great! I would like you to continue your exercises at home but please take it slow. Try to stick to the diet we discussed for the next month. Do you have any questions?
+Patient: No.

@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0875
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient's husband is doing much better.
+- Concern about the husband's health and desire for reevaluation.
+
+Objective:
+- Patient will be going home today.
+- Prescription for Zithromax.
+
+Assessment:
+- Patient's husband is improving.
+
+Plan:
+- Schedule a follow-up appointment for reevaluation next week. 
+- Ensure the front desk assists with the appointment booking.

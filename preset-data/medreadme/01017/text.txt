@@ -1,0 +1,1 @@
+Using the Drosophila Genetic Reference Panel, we quantify host genetic variance for virus-induced mortality and viral titre and identify candidate host genes that may underlie this variation, including Cdc42-interacting protein 4.

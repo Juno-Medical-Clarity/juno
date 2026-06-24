@@ -1,0 +1,9 @@
+source:      elife
+side:        simple
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [4:8] 'medical-jargon-google-easy' -> 'high - density lipoprotein'
+  [12:13] 'medical-jargon-google-easy' -> 'apoE'
+  [25:28] 'medical-jargon-google-easy' -> 'beta - amyloid'

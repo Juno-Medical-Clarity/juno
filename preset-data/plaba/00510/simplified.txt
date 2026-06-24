@@ -1,0 +1,7 @@
+Lung cancer accounts for more than half of the new cancers diagnosed world-wide. Lung cancer patients have poor survival rates.
+Despite the development of several therapy types, many patients do not benefit from these therapies. Recurrence, or the return of lung cancer, is common.
+The authors performed an analysis to characterize human lung cancer transcriptomes at single-cell resolution. The transcriptome is the sum total of messenger RNA within the genetic material of an organism.
+The analysis found a positive correlation (link) between a gene and a chemokine, both with roles in a pro-inflammatory or infection-fighting response, in human lung cancer cells taken from cancer patients. Chemokines are signaling proteins that attract white blood cells to infection sites.
+Furthermore, the authors discovered an inverse (opposite) correlation between chemokine messenger RNAs and microRNAs in human lung cancer cells taken from cancer patients. MicroRNA is RNA that is not translated into functioning proteins.
+Specially, one microRNA (miR-532-5p) was measurable in plasma from the cells.
+The authors identified markers of early-stage lung cancer that were validated (proven) in primary lung tumors and circulating blood.

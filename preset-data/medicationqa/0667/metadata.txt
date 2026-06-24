@@ -1,0 +1,5 @@
+drug_focus: lidocaine
+question_type: Ingredient
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0e479e6-4c94-44d0-8074-d0ee7b2bde22&audience=consumer
+sample_id: 0667

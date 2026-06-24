@@ -1,0 +1,12 @@
+This study's aim was to summarize the characteristics, effect, and safety of vesicular monoamine transporter-2 (VMAT-2) inhibitors, drugs that treat movement disorders, for treating tardive dyskinesia (TD), a movement disorder of irregular, jerking movements.
+We searched online for studies reporting the effect and safety of VMAT-2 inhibitors like tetrabenazine, deutetrabenazine, and valbenazine in patients with TD.
+
+Two short, 12-week studies with deutetrabenazine12-48 mg/day (with 413 patients) and 4 short, 4-6-week studies with valbenazine 12.5-100 mg/day (with 488 patients) were analyzed. There was no high-quality data for tetrabenazine.
+Regarding reducing irregular, involuntary movements (the primary symptom), both deutetrabenazine and valbenazine outperformed placebo or a dummy treatment.
+Results were confirmed regarding responder rates, or the proportion of patients with a reduction in symptoms in a define period of time.
+Patient-rated global impressions for deutetrabenazine and clinical global impressions for deutetrabenazine and valbenazine were less strong.
+In a long-term study of deutetrabenazine (≤54 weeks) and a valbenazine study (≤48 weeks), responder rates increased.
+With valbenazine, drug use stoppage effects were studied, showing TD symptom reappearance of initial severity 4 weeks after valbenazine stoppage.
+No increased or specific, serious or adverse events (AEs) versus dummy treatment (acute trials) in long-term versus short-term trials were seen.
+The 2 VMAT-2 inhibitors, valbenazine and deutetrabenazine, can treat TD, both short- and long-term, without concerns about increased risk of depression or suicide in the TD population.
+No direct comparison between the VMAT-2 inhibitors and no high-quality data are available for tetrabenazine in patients with TD.

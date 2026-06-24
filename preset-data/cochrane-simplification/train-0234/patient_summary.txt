@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0234  |  gem_id: gem-cochrane-simplification-train-235  |  doi: 10.1002/14651858.CD003469.pub4
+
+This review demonstrated improvements on a range of measures with the combined treatment. In the absence of significant side effects, injection of BoNT-A has been identified as a safe and effective treatment for upper limb spasticity when used in combination with occupational therapy in children with cerebral palsy.

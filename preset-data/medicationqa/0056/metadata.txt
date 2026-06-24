@@ -1,0 +1,5 @@
+drug_focus: medicines that raise blood sugar
+question_type: Action
+section_title: Non-Diabetes Medicines That May Raise Blood Sugar
+source_url: https://www.uwhealth.org/health/topic/special/non-diabetes-medicines-that-may-raise-blood-sugar/aa125174.html
+sample_id: 0056

@@ -1,0 +1,9 @@
+Current monitoring technologies cannot detect early, counterbalancing changes associated with significant blood loss.
+We previously showed a new mathematical equation to calculate the counterbalancing blood flow mechanics or Compensatory Reserve Index (CRI) based on analysis of blood vessel wave patterns from blood flow recordings.
+In the present study, we theorized that CRI would give better accuracy to detect blood loss compared to standard vital signs and other blood flow measures.
+We analyzed 20 subjects before, during, and after a regular, controlled voluntary blood loss of 1.2 liters for continuous non-surgical vital sign wave data, including CRI, recordings, heart rate, blood pressure, oxygen levels, blood flow output, and blood volume.
+CRI decreased by 33% in a linear trend across increasing blood volume loss, with no changes in vital signs.
+CRI had high accuracy for detecting blood volume loss.
+In comparison, blood pressure, heart rate, oxygen levels, blood flow output and blood volume had less accuracy for detecting the same amount of blood loss.
+Consistent with out theory, CRI detected blood loss and restoration better than other traditional body measures.
+Single measurement of CRI may enable better identification, while CRI monitoring may allow earlier detection of patient status trending towards death.

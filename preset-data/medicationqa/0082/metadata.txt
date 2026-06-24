@@ -1,0 +1,5 @@
+drug_focus: diabetes medicine
+question_type: Usage
+section_title: What medicines might I take for diabetes?
+source_url: https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments
+sample_id: 0082

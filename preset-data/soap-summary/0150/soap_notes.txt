@@ -1,0 +1,33 @@
+# SOAP Notes — Sample 0150
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 4-5 days
+- Dry cough, no sputum
+- Runny nose for past couple of days (clear discharge)
+- No sore throat, fever, chills, back/muscle pain, chest pain, nausea, vomiting, abdominal pain, or headaches
+- No recent contact with sick individuals
+- No recent travel
+- Attending school (half days)
+- No known illness at school
+- No previous similar episodes
+- No hospitalisations
+- No current medications
+- FHx: Grandparents had asthma (patient has been evaluated and does not have asthma)
+- Lives with mom, dad, and 4-year-old sister
+- No pets
+- No smokers in the home
+- Enjoys playing with friends and video games
+
+Past Medical History:
+- No significant PMHx
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- No explicit diagnosis mentioned
+
+Plan:
+- Chest X-ray
+- COVID swab

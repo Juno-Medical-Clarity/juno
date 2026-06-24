@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0898
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has a history of depression and anxiety (family history).
+- Patient's father has a history of depression and anxiety.
+- Patient expressed that depression was mentioned but not discussed in detail.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

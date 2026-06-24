@@ -1,0 +1,13 @@
+The aim of this study was to estimate the influence of corticosteroids on Th1 and Th2 serum cytokine balance in patients with GO: IFNgamma, TNFalpha, IL-4 and IL-10.
+Further, we tested the hypothesis of an up-regulation of Th2 immune response during successful treatment with corticosteroids to explain their beneficial effect in Graves' ophthalmopathy.
+Serum cytokines were detected in three groups of subjects: 20 patients with Graves' disease without ophthalmopathy (Gd), 16 patients with clinical symptoms of ophthalmopathy (GO) (CAS over 3 points, last consultation record for GO less than a year old) and 16 healthy volunteers.
+Corticosteroid therapy consisted of intravenous infusions of methylprednisolone (MP) (2 series, 3 g each time) and subsequent treatment with oral prednisone (60 mg per day) in a tapering schedule.
+The serum samples were collected 24 hours before MP, 24 hours after MP, 14 days of treatment with prednisone and at the end of corticosteroid therapy.
+The levels of IFNgamma, TNFalpha, IL-4 and IL-10 in the serum were determined using ELISA.
+Statistical significance was estimated by the Mann-Whitney U-test.
+Our findings show a deviation to systemic Th2 profile cytokines in Graves' disease.
+In patients with GO, we found a significantly increased serum IL-10 concentration.
+In corticosteroid-responsive patients, the balance of serum cytokines IL-4/IFNgamma, IL-4/TNFalpha, IL-10/IFNgamma and IL-10/TN Falpha increased and remained upregulated until the end of the study.
+In non-responders, the balance of serum cytokines studied increased after methylprednisolone but declined markedly during continuation of the therapy with prednisone.
+In summary, our results show that efficient corticosteroid therapy may be related to its influence on Th2/Th1 profile cytokine balance.
+The upregulation of serum IL-4 and IL-10 during successful treatment with corticosteroids indicate the possibility of using these cytokines as predictors of the beneficial effect of corticosteroids in Graves' ophthalmopathy.

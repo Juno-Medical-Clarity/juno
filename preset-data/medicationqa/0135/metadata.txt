@@ -1,0 +1,5 @@
+drug_focus: Adacel Tdap
+question_type: Dose
+section_title: Dosage and Administration
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a41b7601-34f2-4a88-a406-f53011fb7de1
+sample_id: 0135

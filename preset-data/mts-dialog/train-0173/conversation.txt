@@ -1,0 +1,3 @@
+Doctor: Are you on any medications at this time?
+Patient: None whatsoever.
+Doctor: Got it.

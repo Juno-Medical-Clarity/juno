@@ -1,0 +1,122 @@
+# Smith Collection Transcript: MSK0023
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Hi hi there ive been having this knee pain it started almost immediately after i was i was playing basketball on the high school team and it was during practice i jumped up for a rebound and i when i landed i heard a pop of my my left knee and i immediately felt pain i just went off to the off to the sideline
+
+Doctor: OK and when did this happen
+
+Patient: uh this happened about probably like 6 hours ago maybe like a few hours ago
+
+Doctor: OK ok i see and since then have you been able to walk at all or have you been just has it been very difficult
+
+Patient: At first i was able to kind of limp off the court but since then i i havent really been able to walk its gotten pretty swollen since then and it looks bruised as well
+
+Doctor: OK its swollen and bruised in what kind of pain are you having is it like sharp or is it aching
+
+Patient: Its pretty sharp it feels like theres people just stabbing me in the knee
+
+Doctor: OK uhm and um do you have any so youre having pain in your knee has it gone worse than when it started
+
+Patient: um yeah its yeah it feels a bit more painful than it did earlier i think maybe the adrenaline was pumping a little bit but yeah now its its pretty pretty painful
+
+Doctor: OK ok uhm and how much would you rate the pain out of 10 10 being the worst pain youve felt in your life
+
+Patient: Oh id say this is like a 9 or a 10 this is its really painful
+
+Doctor: OK are you having pain anywhere else or is it just your left knee
+
+Patient: Just my left knee
+
+Doctor: OK alright are you having other symptoms like fainting dizziness
+
+Patient: No i i havent had anything like that
+
+Doctor: OK and are you having any fevers chills or anything like that
+
+Patient: No fevers or chills
+
+Doctor: OK any kind of numbness or tingling at all
+
+Patient: No no mr tingling
+
+Doctor: OK is the pain moving anywhere else from your knees
+
+Patient: uh no i just feel like pretty like just right in my in my knee
+
+Doctor: OK and what kind of motions are hurting you right now the most
+
+Patient: I would say just like bending my knee like yeah flexing my knee up as well as like if i try to put any weight on it like i cant walk on it right now i cant put any weight on my knee right now and also even straightening it out hurts as well if im really flexing the muscle so just trying to stay pretty immobile right now
+
+Doctor: OK i see ok and in terms of other symptoms any kind of chest pain shortness of breath
+
+Patient: No nothing like that
+
+Doctor: OK any rashes or skin changes
+
+Patient: No the only skin change that i that i have is the like bruising or looks like you like blood around my knee
+
+Doctor: OK you see is it warm to touch
+
+Patient: um no no its not warm
+
+Doctor: OK in terms of your past medical history any conditions youve been diagnosed with in the past
+
+Patient: No ive been healthy
+
+Doctor: OK any medications that you take regularly
+
+Patient: No i dont i dont think anything regularly
+
+Doctor: OK any allergies to any medications
+
+Patient: No i dont
+
+Doctor: OK any hospitalizations or previous surgeries
+
+Patient: No nothing like that
+
+Doctor: OK and any family history of any musculoskeletal or rheumatologic conditions
+
+Patient: um no no nothing like that i i i mean i think my dad i had a rotator cuff injury or something like that but i mean hes in his 50s now so i think that happened at work or something i dont know
+
+Doctor: OK uhm ok and other than that do you so are you at school right now
+
+Patient: I am yeah im in grade grade 10 and playing well playing on the the high school basketball team and thats how i got this injury here
+
+Doctor: And have you had a similar injury at all in the past
+
+Patient: No i mean im ive ive sprained my ankles in the past which would go would heal with some rest after a few days i never got those checked out because theyre they werent so bad but ive never injured my knee before
+
+Doctor: OK and currently right now whats your living situation like
+
+Patient: So i live with both of my parents and i also have a younger sibling a sister shes 8 years old and we have a dog as well
+
+Doctor: OK uhm alright and have you experimented at all with any recreational drugs alcohol or smoking cigarettes
+
+Patient: No nothing like that i see kids at school um smoking and stuff but you know as an athlete i try to stay away from that kind of stuff as much as possible
+
+Doctor: OK no yeah thats really thats really good that youre thinking like that any issues at school like bullying or do you feel unsafe either at home around your home environment or at school
+
+Patient: No i dont feel unsafe i mean i know theres always those kids at school who are mean to others but i mean i i generally feel safe
+
+Doctor: OK alright so im just going to ask a few questions about just the examination part of part of this do you so you mentioned you cant flex your knees at all can you extend them
+
+Patient: Yeah it it can uh straighten it out all like most of the way it seems like its bent a little still maybe from like the swelling and only i cant straighten it out the full way
+
+Doctor: OK and then you said you noticed like bruising and kind of like theres blood accumulating in that area
+
+Patient: Yeah exactly yeah it looks like it cause its a bit like brown i guess i can like see or on my knee i guess like the like a big bruise
+
+Doctor: OK i see ok and yeah so those are kind of like all the questions i had for you it seems that based on the description of how the injury happened an the mechanism and what youre feeling right now and in terms of the examination its possible that you had knee ligament injury most likely in this case the anterior cruciate ligament but just to make sure we will need to do an mri of your knee and see which ligament is affected and to what extent uh and usually with the with the depending on what we find on the mri sometimes it can be just conservative management but however oftentimes you do require surgery so it would be just a surgery where we put kind of like a scope in into your knee and through the scope we try to fix the ligament so yeah first well just do the mri and see to what extent your knee injury is and how how affected the ligaments are and then well go from there does that sound ok
+
+Patient: It does yeah yeah thank you
+
+Doctor: Welcome alright take care

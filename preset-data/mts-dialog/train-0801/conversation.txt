@@ -1,0 +1,8 @@
+Doctor: What is your family medical history?
+Patient: My mother has high blood pressure, and she had a stroke last year.
+Doctor: Is your mother still with us after the stroke?
+Patient: Yeah. She is doing well.
+Doctor: Good. What about your father's medical history?
+Patient: My father died in a car accident, when he was forty.
+Doctor: I am so sorry to hear that.
+Patient: Thank you.

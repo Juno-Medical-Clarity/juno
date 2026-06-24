@@ -1,0 +1,5 @@
+pmid:        24882081
+question:    23
+adaptation:  adaptation1
+title:       Molecular genetics and diagnosis of phenylketonuria: state of the art
+sentences:   6

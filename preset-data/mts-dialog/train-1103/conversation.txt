@@ -1,0 +1,31 @@
+Doctor: Hello, Nurse. Could you give me a run down on the eleven month old patient?
+Guest_clinician: The patient was presented with stage two neuroblastoma on the left when he was six weeks old. It was completely resected. It was shown not to be N Myc amplified and had some favorable Shimada histology.
+Doctor: Great. Did he have a follow up after?
+Guest_clinician: He did. There was a second primary in his right adrenal gland. They performed a biopsy, which was consistent with neuroblastoma with favorable Shimada histology.
+Doctor: Did he receive any chemotherapy?
+Guest_clinician: He is now being treated with it per protocol P nine six four one and not on study. His last chemotherapy appointment was on May twenty first two thousand and seven. They used carboplatin, cyclophosphamide, and doxorubicin.
+Doctor: What did they do after chemotherapy?
+Guest_clinician: He received G C S F daily because he had neutropenia that delayed his second cycle.
+Doctor: Thank you, Nurse. I'll go talk to the mother.
+Guest_clinican: No problem, Doctor.
+Doctor: Hello, ma'am. It's nice to see you again. How is your little boy doing?
+Guest_family: Not so well. Since out last visit, he had a stuffy nose for a couple of days.
+Doctor: Is it getting worse?
+Guest_family: I think it's getting better now. It isn't as stuffy.
+Doctor: That's good to hear. Has he been sick or had any fevers?
+Guest_family: Nope. Just the stuffy nose.
+Doctor: Has he been able to eat anything?
+Guest_family: At times, he didn't want to eat. It seemed like he wasn't hungry.
+Doctor: Does he still have a reduced appetite?
+Guest_family: Not anymore. He's starting to eat again.
+Doctor: Did he have any nausea or vomiting after he ate?
+Guest_family: Thankfully, no. I would have made my husband clean up the vomit.
+Doctor: That's great. Is he able to pee and poop fine? No diarrhea, right?
+Guest_family: His poop has been solid. I haven't seen anything bad about his pee either.
+Doctor: Great. Would you be able to open his mouth for me? I just want to check if everything's fine inside.
+Guest_family: Of course. Say ah.
+Patient: Ah.
+Doctor: Thank you. Oh, wow. It looks like he's showing some symptoms of thrush again.
+Guest_family: Oh, no. Should we restart fluconazole?
+Doctor: It's just a fungal infection inside the mouth. I'll prescribe him fluconazole. It should get rid of it.
+Guest_family: Thank you so much. You all have been so helpful. My little boy is slowly getting better.

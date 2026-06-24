@@ -1,0 +1,12 @@
+Large changes in COVID-19 (a viral lung infection) disease progression urges the need to find the most relevant markers to predict patients' outcomes.
+We tested iron metabolism and immune response in 303 patients of the main hospital of the northern region of Portugal with different clinical needs, from September to November 2020.
+One hundred and twenty-seven had SARS-CoV-2 and 176 did not.
+Iron-related lab measures and immune signaling molecules were measured in blood samples collected soon after admission.
+Basic background data, other diseases, and clinical results were recorded.
+Patients were assigned into five groups according to severity.
+Blood iron and transferrin (an iron-containing protein) levels at admission were lower in patients with COVID-19 than those without.
+The levels of interleukin (IL)-6 and monocyte chemoattractant protein 1 (MCP-1) (certain immune signaling molecules) were increased in patients with COVID-19.
+The lowest blood iron and transferrin levels at diagnosis were linked with the worst outcomes.
+Iron levels were lower with higher IL-6. Higher levels of this immune signaling molecule were linked with a worse recovery.
+Blood ferritin (iron-containing protein) levels at diagnosis were higher in patients with COVID-19 than those without.
+Blood iron is the simplest lab test to be used as a predictor of disease progression in COVID-19 patients.

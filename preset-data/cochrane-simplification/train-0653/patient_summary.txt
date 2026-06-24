@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0653  |  gem_id: gem-cochrane-simplification-train-654  |  doi: 10.1002/14651858.CD002179
+
+Six randomised controlled studies of the effect of oxatomide were identified. All studies compared oxatomide with placebo. Two studies showed significant improvement with oxatomide as judged subjectively by the doctor. There was significant difference shown between oxatomide and placebo on objective outcomes (outcomes that are not influenced by people's opinions such as lung function or the amount of regular asthma medication taken by participants during the course of the study). Adverse effects were the only outcome able to be combined in a meta-analysis, and these were significantly more likely with oxatomide than with placebo treatment.

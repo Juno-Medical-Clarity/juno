@@ -1,0 +1,5 @@
+pmid:        32328842
+question:    21
+adaptation:  adaptation1
+title:       Imaging modalities for inguinal hernia diagnosis: a systematic review
+sentences:   6

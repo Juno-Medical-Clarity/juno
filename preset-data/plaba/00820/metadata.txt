@@ -1,0 +1,5 @@
+pmid:        25230687
+question:    66
+adaptation:  adaptation2
+title:       Japanese: retrospective analysis of the Japan Renal Biopsy Registry (J-RBR)
+sentences:   18

@@ -1,0 +1,14 @@
+qid: TQ7
+source_file: 1-118276875.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Can a birth control drug called Ocella cause Deep Vein Thrombosis?
+nlm_summary: Can birth control drug Ocella cause Deep Vein Thrombosis
+
+focus_entities:
+  [F1] (Problem) DVT
+question_types:
+  [T1] CAUSE
+keywords:
+  [K1] (DrugSupplement) Ocella

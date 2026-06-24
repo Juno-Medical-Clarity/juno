@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0717
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello. How are you doing today? I want to get surgery on my leg. Have you ever had a surgery. I did. Here's a list of them. Looks like you had eye surgery, cataract surgery, and lumbar decompression, correct? Yeah. So, what options do I have for surgery? I need to see what the problem is first.

@@ -1,0 +1,7 @@
+source:      MSD
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'hot flash'

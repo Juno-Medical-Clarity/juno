@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0996
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient's mother has a history of arthritis.
+- No other symptoms, severity, duration, associated symptoms, relevant medical history, allergies, or concerns explicitly mentioned.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessments provided.)
+
+Plan:
+- (No plan provided.)

@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [4:5] 'abbr-medical' -> 'HRT'
+  [9:10] 'general-complex' -> 'recurrence'
+  [14:16] 'medical-jargon-google-easy' -> 'endometrial cancer'

@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [1:6] 'medical-jargon-google-easy' -> 'genome - wide association study'
+  [8:12] 'medical-jargon-google-hard' -> '5p15 . 2 region'

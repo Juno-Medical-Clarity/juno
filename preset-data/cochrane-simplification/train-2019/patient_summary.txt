@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2019  |  gem_id: gem-cochrane-simplification-train-2020  |  doi: 10.1002/14651858.CD010527.pub2
+
+We did not find any completed randomised controlled trials that assessed melatonin given to the mother during pregnancy to help protect the baby's brain. One ongoing trial (planning to include 60 women) was identified. This trial is designed to determine what dose of melatonin can reduce brain injury for babies when given to their mothers before very preterm birth (before 28 weeks of pregnancy). Further studies are needed to establish whether melatonin given to the mother in pregnancy can protect the baby's brain against brain injury. The babies in these trials need to be followed up over a long period so that we can monitor the effects of melatonin on childhood development, including impairments or disabilities such as cerebral palsy.

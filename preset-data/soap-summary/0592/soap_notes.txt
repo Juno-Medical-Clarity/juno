@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0592
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history: Maternal grandfather had a stroke.
+- No known family history of migraines.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment information provided)
+
+Plan:
+- (No plan mentioned)

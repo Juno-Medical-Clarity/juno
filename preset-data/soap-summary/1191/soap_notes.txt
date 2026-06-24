@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1191
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No allergies reported.
+- Patient states, "No, I do not have any allergies."
+- Patient confirms, "Nothing?" to indicate no relevant allergies.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

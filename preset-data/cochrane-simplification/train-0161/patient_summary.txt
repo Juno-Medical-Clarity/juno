@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0161  |  gem_id: gem-cochrane-simplification-train-162  |  doi: 10.1002/14651858.CD002310.pub4
+
+This review compares the effectiveness of three inhaled steroids. Fluticasone (FP) was compared with either beclomethasone (BDP) or budesonide (BUD) for treating people with chronic asthma. When FP was given to children or adults at approximately half the daily dose of either BDP or BUD, it appeared to be at least as effective as the other two drugs in improving airway opening. There was not enough information available to draw conclusions concerning the effect of these drugs on symptoms, or the risk of an acute asthma exacerbation. When given at the same dose as BDP or BUD, FP treated participants had slightly better lung function. However, at the same dose FP was also associated with increased hoarseness, although it did not lead to increased incidences of other side-effects associated with steroids such as oral thrush or sore throat.

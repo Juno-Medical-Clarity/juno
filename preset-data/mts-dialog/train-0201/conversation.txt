@@ -1,0 +1,4 @@
+Doctor: Are you on any medications?
+Patient: Yeah. I take Abilify to help with my mood.
+Doctor: Do you find that it's helping?
+Patient: A little, yeah.

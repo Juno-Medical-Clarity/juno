@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2482  |  gem_id: gem-cochrane-simplification-train-2483  |  doi: 10.1002/14651858.CD004350.pub3
+
+This review of trials sought to assess these benefits and harms. Twenty-two out of 29 included studies (1793 women) contributed data to this review. There were some differences that favoured regional anaesthesia, for example, less blood loss. The evidence on the differences in pain relief was difficult to evaluate. There were not enough participants to assess the very rare outcome of mortality for the mother, which may be an important aspect. None of the trials addressed important outcomes for women such as recovery times, effects on breastfeeding, effects on the mother-child relationship and length of time before mother feels well enough to care for her baby. As there is insufficient evidence on benefits and adverse effects, women are most likely to choose anaesthesia for caesarean section, depending on whether they wish to be awake or asleep for the birth.

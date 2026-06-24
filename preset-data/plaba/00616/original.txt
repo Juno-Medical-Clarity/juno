@@ -1,0 +1,16 @@
+Background: Hypophosphatasia (HPP) is an inborn disease caused by pathogenic variants in ALPL.
+Low levels of alkaline phosphatase (ALP) are a biochemical hallmark of the disease.
+Scarce knowledge about the prevalence of HPP in Scandinavia exists, and the variable clinical presentations make diagnostics challenging.
+The aim of this study was to investigate the prevalence of ALPL variants as well as the clinical and biochemical features among adults with endocrinological diagnoses and persistent hypophosphatasaemia.
+Methods: A biochemical database containing ALP measurements of 26,121 individuals was reviewed to identify adults above 18 years of age with persistently low levels of ALP beneath range (≤ 35 ± 2.7 U/L).
+ALPL genetic testing, biochemical evaluations and assessment of clinical features by a systematic questionnaire among included patients, were performed.
+Results: Among 24 participants, thirteen subjects (54.2%) revealed a disease-causing variant in ALPL and reported mild clinical features of HPP, of which musculoskeletal pain was the most frequently reported (n = 9).
+The variant c. 571G > A; p.(Glu191 Lys) was identified in six subjects, and an unreported missense variant (c.1019A > C; p.(His340Pro)) as well as a deletion of exon 2 were detected by genetic screening.
+Biochemical analyses showed no significant differences in ALP (p = 0.059), the bone specific alkaline phosphatase (BALP) (p = 0.056) and pyridoxal-5'-phosphate (PLP) (p = 0.085) between patients with an ALPL variant and negative genetic screening.
+Patients with a variant in ALPL had significantly higher PLP levels than healthy controls (p = 0.002).
+We observed normal ALP activity in some patients classified as mild HPP, and slightly increased levels of PLP in two subjects with normal genetic screening and four healthy controls.
+Among 51 patients with persistent hypophosphatasaemia, fifteen subjects (29.4%) received antiresorptive treatment.
+Two patients with unrecognized HPP were treated with bisphosphonates and did not show complications due to the treatment.
+Conclusions: Pathogenic variants in ALPL are common among patients with endocrinological diagnoses and low ALP.
+Regarding diagnostics, genetic testing is necessary to identify mild HPP due to fluctuating biochemical findings.
+Antiresorptive treatment is a frequent reason for hypophosphatasaemia and effects of these agents in adults with a variant in ALPL and osteoporosis remain unclear and require further studies.

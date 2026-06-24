@@ -1,0 +1,15 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [10:11] 'medical-jargon-google-easy' -> 'tacrolimus'
+  [12:13] 'medical-jargon-google-easy' -> 'pimecrolimus'
+  [15:16] 'medical-jargon-google-easy' -> 'corticosteroids'
+  [18:19] 'medical-jargon-google-easy' -> 'tacrolimus'
+  [21:22] 'medical-jargon-google-easy' -> 'pimecrolimus'
+  [23:24] 'medical-jargon-google-easy' -> 'corticosteroids'
+  [32:34] 'medical-jargon-google-easy' -> 'oral ciclosporin'
+  [35:37] 'medical-jargon-google-easy' -> 'oral azathioprine'
+  [47:48] 'medical-name-entity' -> 'Atopiclair'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0884
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, I know you're technically not allowed to drink, but I'm required to ask this anyway. Do you drink at all? No, actually. I try to steer clear of drinking while training for my marathon. When is that by the way? Next summer. Wow, good luck. It'll be yet another big accomplishment. Thank you. And how about smoking of any kind? Nope.

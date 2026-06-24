@@ -1,0 +1,20 @@
+Doctor: Who's my patient today?
+Guest_family: Today, it's my brother.
+Doctor: What seems to be the problem today?
+Guest_family: Well, he's a vegetarian but he has high cholesterol and he's on a medication to control it.
+Doctor: Has he changed his diet?
+Guest_family: Yes, he did when he got a letter saying that his fat levels were high in the blood.
+Doctor: What kinds of foods did he eliminate?
+Patient: Oh, you know, all of the fun ones. Like cappuccino, quiche, crescents, candy, vending machines, all of that stuff.
+Doctor: Do you take your lunch to work?
+Patient: Yes, I do about three or four times a week instead of eating out so much.
+Doctor: Are you exercising right now?
+Patient: Yes, I do about six or seven days a week.
+Doctor: What kind do you like to do?
+Patient: Well, I do just about everything. I swim, I bike, run and then I lift weights.
+Doctor: How long do you workout per day?
+Patient: Usually, it's about one and a half to two and a half hours every day.
+Doctor: Good, are you training for anything specific?
+Patient: Actually, yes I'm going to do a triathlon.
+Doctor: Can I assume you're losing weight?
+Patient: Yes, I am.

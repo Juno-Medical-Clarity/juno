@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1082
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any children, ma'am? Yes, I have a wonderful baby girl at home. Wonderful, were there any complications with your pregnancy or delivery? Nope, everything went very smooth. I'm thankful. Good, have you ever been hospitalized for any issue? No, thankfully. Good, so I can assume you've never had surgery? Correct, I never have.

@@ -1,0 +1,5 @@
+drug_focus: eliquis; cialis
+question_type: Interaction
+section_title: Cialis and Eliquis drug interactions
+source_url: http://tadalafildosage.info/cialis-and-eliquis-drug-interactions/
+sample_id: 0618

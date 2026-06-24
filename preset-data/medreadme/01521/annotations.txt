@@ -1,0 +1,8 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [1:2] 'general-complex' -> 'mechanistic'
+  [16:20] 'medical-jargon-google-easy' -> 'magnetic resonance imaging scan'

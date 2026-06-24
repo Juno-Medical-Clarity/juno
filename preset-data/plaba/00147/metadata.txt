@@ -1,0 +1,5 @@
+pmid:        24215414
+question:    12
+adaptation:  adaptation1
+title:       Prevention of asthma: where are we in the 21st century?
+sentences:   10

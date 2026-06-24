@@ -1,0 +1,5 @@
+drug_focus: amphetamine
+question_type: Usage
+section_title: What are Amphetamines?
+source_url: https://drugabuse.com/library/amphetamine-abuse/
+sample_id: 0090

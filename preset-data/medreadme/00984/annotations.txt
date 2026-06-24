@@ -1,0 +1,10 @@
+source:      plos_genetics
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-hard' -> 'Lctra'
+  [6:9] 'medical-jargon-google-easy' -> 'somatic sexual differentiation'
+  [11:15] 'medical-jargon-google-easy' -> 'X chromosome dosage compensation'
+  [17:19] 'medical-jargon-google-easy' -> 'L. cuprina'

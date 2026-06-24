@@ -1,0 +1,5 @@
+pmid:        28922287
+question:    37
+adaptation:  adaptation1
+title:       Pregabalin Toxicity Manifesting as Reversible Encephalopathy With Continuous Triphasic Waves in Electroencephalogram
+sentences:   4

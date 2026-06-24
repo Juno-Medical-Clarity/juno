@@ -1,0 +1,13 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-easy' -> 'Human Immunodeficiency Virus'
+  [5:6] 'abbr-medical' -> 'HIV'
+  [11:15] 'medical-jargon-google-hard' -> 'intestinal epithelial barrier dysfunction'
+  [16:18] 'medical-jargon-google-easy' -> 'chronic inflammation'
+  [23:24] 'general-complex' -> 'attenuated'
+  [29:31] 'medical-jargon-google-easy' -> 'antiretroviral therapy'
+  [32:33] 'abbr-medical' -> 'ART'

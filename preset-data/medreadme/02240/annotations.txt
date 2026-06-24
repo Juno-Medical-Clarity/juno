@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [3:4] 'medical-name-entity' -> 'Cochrane'
+  [19:20] 'medical-jargon-google-easy' -> 'ovaries'
+  [24:25] 'medical-jargon-google-easy' -> 'hysterectomy'
+  [26:29] 'medical-jargon-google-easy' -> 'benign gynaecological disease'
+  [30:31] 'medical-jargon-google-easy' -> 'premenopausal'

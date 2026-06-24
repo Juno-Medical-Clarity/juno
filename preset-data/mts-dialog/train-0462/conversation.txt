@@ -1,0 +1,11 @@
+Doctor: Good morning, ma'am. Can you confirm your age for me?
+Patient: Well, doctor, I'm sixty six years old now.
+Doctor: Thank you, so, how is your knee doing today? Hope the osteoarthritis is getting better.
+Patient: It's so bad, doctor.
+Doctor: Have you had any improvement with the rest and antiinflammatories we've talked about before?
+Patient: No, they haven't helped at all.
+Doctor: I see, you'd be a good candidate for a knee replacement.
+Patient: What's the risk of infection from the surgery?
+Doctor: Historically, it's less than one percent, we use prophylactic antibiotics to control for infection the entire time.
+Patient: Great, and will I be asleep for this?
+Doctor: Yes, you won't feel a thing.

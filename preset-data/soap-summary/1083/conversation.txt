@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1083
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any past surgeries that I should know of? I had a hip replacement years ago. Both hips? My left. Total? Yeah. Got it. I also had my uterus and appendix removed. I was young when I had my appendix taken out. Do you happen to remember who did your most recent surgeries? Wish I did. I'd have to look back at my records and get back to you. I have everything at home. That's no problem. I should be able to look it up from my end, too.

@@ -1,0 +1,12 @@
+qid: TQ45
+source_file: 1-132679005.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: I want information on Schmorl's nodes.
+nlm_summary: Whar are Schmorl's nodes?
+
+focus_entities:
+  [F1] (Problem) Schmorl's Nodes
+question_types:
+  [T1] INFORMATION

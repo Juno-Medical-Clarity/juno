@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0702
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No symptoms reported by the patient or caregiver.
+- No concerns expressed by the mother regarding the child's health.
+
+Objective:
+- Examination of genitalia shows:
+ - Normal shape and size of the penis and testes for the child's age.
+ - No fluid accumulation or swelling in the scrotal area.
+ - No evidence of herniation.
+
+Assessment:
+- No diagnoses or clinical impressions provided.
+
+Plan:
+- No specific actions, medications, tests, or follow-up mentioned.

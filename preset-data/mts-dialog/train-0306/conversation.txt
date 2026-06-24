@@ -1,0 +1,10 @@
+Doctor: Welcome into the clinic! I would like to start with your past medical history.
+Patient: I have high blood pressure and macular deterioration. Last year I caught pneumonia but that has cleared up.
+Doctor: Okay.  What brings you in today?
+Patient: I have had this cough and pain on the right side of my abdomen.
+Doctor: How long has this been going on?
+Patient: Two days. I have had body aches and have been feeling nauseous too.
+Doctor: Have you had a fever?
+Patient: I think so. I was chilled and my forehead was warm. The cough is a dry sounding cough.
+Doctor: Does the abdominal pain come during one of these coughing episodes?
+Patient: Yes.

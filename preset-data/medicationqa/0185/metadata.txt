@@ -1,0 +1,5 @@
+drug_focus: Thyroid medications
+question_type: Forget a dose
+section_title: What should I do if I forget a dose
+source_url: https://medlineplus.gov/druginfo/meds/a682475.html
+sample_id: 0185

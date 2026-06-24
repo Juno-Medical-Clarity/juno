@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1144  |  gem_id: gem-cochrane-simplification-train-1145  |  doi: 10.1002/14651858.CD007886.pub2
+
+This review aims to examine the effectiveness and safety of these three instruments. The findings showed that UCS results in less blood loss when compared to MES. Operating time was shorter when EBVS was used compared to MES. No marked difference was observed between UCS and EBVS. No difference in complications between all three instruments were reported in the findings. However, it is recognised that more trials are needed to support the evidence provided in this report.

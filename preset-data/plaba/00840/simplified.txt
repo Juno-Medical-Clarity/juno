@@ -1,0 +1,12 @@
+The background of this study is that iron is a necessary element to almost all living beings. The delicate balance between host immune system and viral growth plays an important role in infections.
+The link between iron metabolism and recovery from COVID-19 (a viral lung infection) remains poorly understood.
+We aimed to estimate the links between full-body iron metabolism with the severity and risks of side effects in COVID-19.
+In this clinical study, we included 158 confirmed COVID-19 patients in Tongji Hospital, Wuhan, China (27 January to 5 April, 2020).
+Basic background data, other diseases, lab tests, treatments, and clinical results were all collected.
+A specific mathematical test was used to estimate the links between iron levels with the severity and risks of side effects in COVID-19 patients.
+As a result, we identified 60 (38%) severe cases in 158 COVID-19 patients.
+The average age was 63 years, and the average length of hospital stay was 28 days.
+After adjusting for age, sex, immune signals, and pre-existing diseases, all iron measures were linked with the severity of COVID-19 for blood iron and iron-containing proteins.
+These iron measures were also linked to the risk of a serious lung condition that leads to low blood oxygen, excessive bleeding or clotting, immediate heart-related injury, immediate liver injury, and immediate kidney injury in COVID-19 patients and high immune signal levels.
+In conclusion, patients with low blood iron likely suffered from severe effects of and multiple-organ injury in COVID-19.
+The iron metabolism measures might be risk factors and clinical markers for COVID-19 recovery.

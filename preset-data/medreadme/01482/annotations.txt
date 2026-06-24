@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Endometrial cancer'
+  [8:9] 'medical-jargon-google-easy' -> 'womb'
+  [10:11] 'medical-jargon-google-easy' -> 'uterus'

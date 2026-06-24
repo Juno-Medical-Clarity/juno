@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0679
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had surgery, ma'am? No, not that I can remember, and I have a good memory. Not even a C section when you had your son? No, I had all my children naturally.

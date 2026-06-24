@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        simple
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [25:27] 'medical-jargon-google-easy' -> 'gene loci'
+  [34:35] 'medical-jargon-google-easy' -> 'nucleus'

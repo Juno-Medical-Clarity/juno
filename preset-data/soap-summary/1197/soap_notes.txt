@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1197
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history:
+ - Mother: Healthy, died of old age at 89.
+ - Father: Died of a stroke at 89.
+ - Sister: Died at 30 from cancer.
+ - Brother: Died at 74 from coronary artery disease.
+
+Objective:
+- (No measurable or observable data provided in the transcript.)
+
+Assessment:
+- (No clinician's interpretation, diagnoses, or clinical impressions provided in the transcript.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided in the transcript.)

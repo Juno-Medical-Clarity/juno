@@ -1,0 +1,5 @@
+Cystic fibrosis (CF) is a common life-shortening inherited condition caused by a change in the cystic fibrosis transmembrane conductance regulator (CFTR) protein.
+The most common change, F508del, is a protein processing change, and up to 90% of people with CF have this change.
+The faulty protein is destroyed before reaching the cell membrane, where it needs to be to move salt across epithelial cells (cells that cover outer surface of the internal organs).
+The F508del change doesn't work properly and treatment to fix this could help many people with CF.
+We review single correctors, which help the CFTR protein form the right shape to move to the cell surface, and any combination of correctors and potentiators, which are CFTR modulators (influencers) that hold the gate to the CFTR channel open so chloride can flow through the cell membrane.

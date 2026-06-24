@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1271
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient denies any history of spine problems.
+- Patient has never experienced any spine injury or pain.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

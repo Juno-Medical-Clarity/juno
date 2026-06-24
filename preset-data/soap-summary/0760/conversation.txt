@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0760
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anyone in the family had a stroke? No, no one had a stroke in my family. How about someone in the family with heart disease? No one that I can remember. Okay.

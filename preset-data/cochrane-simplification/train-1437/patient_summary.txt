@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1437  |  gem_id: gem-cochrane-simplification-train-1438  |  doi: 10.1002/14651858.CD004840.pub2
+
+This review set out to compare both techniques. Our literature search has shown that a well-designed randomised trial comparing surgery and radiosurgery for patients with solitary brain metastasis has never been performed. Therefore, this review has been unable to show any advantage of one treatment over the other for this group of patients.

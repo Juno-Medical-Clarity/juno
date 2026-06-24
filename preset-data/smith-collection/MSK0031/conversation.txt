@@ -1,0 +1,206 @@
+# Smith Collection Transcript: MSK0031
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How can i help you
+
+Patient: Hi i just was brought in here today i had a fall just waking up coming down the stairs i fell off the last few stairs and just fell onto the right side and on right onto my head and now uh i couldnt even i could barely stand up and put any weight on my hip its the right hip
+
+Doctor: OK uhm so what caused you to fall in the 1st place did you just lose balance were you dizzy
+
+Patient: I think i just i missed i wasnt dizzy or anything i just missed one of the steps and just slipped slipped down the stairs
+
+Doctor: OK
+
+Patient: But it was just the last few stairs i didnt have like i didnt hit my head or anything like that
+
+Doctor: OK and when was this
+
+Patient: This was a so i guess now two hours ago
+
+Doctor: Two hours ago ok has a pain been constant since
+
+Patient: Yeah its its really excruciating
+
+Doctor: OK does anything make it better or worse
+
+Patient: No its im just in extreme pain like i i i cant even put any weight on it
+
+Doctor: OK so you cant ok so you cant weight bear and you cant walk on on that leg i guess
+
+Patient: Mhmm
+
+Doctor: OK is it a sharp kind of pain or is it dull and achy
+
+Patient: Its uh its pretty sharp like if im not putting any weight on it right now its like really achy but if i put any weight on its really sharp
+
+Doctor: OK and where is this pain exactly is it just in your right hip or is it radiating up into your upper anterior lower back or down to your leg
+
+Patient: Its in the right hip mostly just on the side but the pain is kind of like all over the right side of my groin and i feel like theres some swelling there as well
+
+Doctor: OK and one to 10 10 being the worst pain ever how bad is your pain
+
+Patient: I would say 10 like ive never experienced pain like this
+
+Doctor: 10 ok and do you have you ever had pain like this before like have you ever had a fall in the past
+
+Patient: No this isnt this is the first time ive had a fall
+
+Doctor: OK any numbness or tingling
+
+Patient: Uhm no not that i can tell no
+
+Doctor: Dizziness or fainting spells
+
+Patient: Uhm after the fall out like this i i dont know if its due to the pain but even in the ambulance coming out of the ambulance i was feeling a little bit dizzy but i dont know if thats just cause of the pain
+
+Doctor: OK any headaches
+
+Patient: No
+
+Doctor: Confusion or memory loss
+
+Patient: No
+
+Doctor: uh joint pains or muscle aches elsewhere
+
+Patient: No
+
+Doctor: Weight loss recently
+
+Patient: No
+
+Doctor: Fevers or chills
+
+Patient: Nope
+
+Doctor: Uhm and rashes
+
+Patient: uh no
+
+Doctor: Any changes to your vision hearing smell or taste
+
+Patient: No
+
+Doctor: Any uh you experiencing any cough uhm shortness of breath or wheezing
+
+Patient: No
+
+Doctor: OK how about chest pain or heart palpitations
+
+Patient: No not that i have experienced
+
+Doctor: OK and how about changes your bowel movements
+
+Patient: Nope
+
+Doctor: OK how about changes to urine
+
+Patient: No nothing
+
+Doctor: OK and are you otherwise healthy do you have any longstanding medical conditions
+
+Patient: Yeah so i just have a uhm i do have some osteoarthritis and then i have i take this medication for blood pressure its called uh ramipril
+
+Doctor: OK ok and is that the only medication that youre on
+
+Patient: uh yeah and then im just on vitamins like vitamin calcium and just multivitamins
+
+Doctor: OK and are you up to date with your immunizations
+
+Patient: Yes
+
+Doctor: Yeah ok any allergies
+
+Patient: uh no not that i know of
+
+Doctor: OK any family history of lung or heart conditions
+
+Patient: Uhm i think uh my father he died of a heart attack in his 60s
+
+Doctor: OK ok any musculoskeletal issues
+
+Patient: Uhm no i dont think so
+
+Doctor: No uhm how about autoimmune conditions
+
+Patient: No not that i know of
+
+Doctor: Any cancers
+
+Patient: uh i think my my mother had some skin cancer but the ones that she didnt need any surgery they just zapped them off
+
+Doctor: OK uhm and do you smoke
+
+Patient: No ive never smoked
+
+Doctor: OK uhm do you drink alcohol
+
+Patient: Just maybe like a wine what every other day a glass of of wine
+
+Doctor: OK and then do you consume marijuana in any form
+
+Patient: No
+
+Doctor: OK and how about in terms of where you live who do you live with and where do you live
+
+Patient: I live with uhm just my husband and and we just live in a small apartment
+
+Doctor: OK and have you been in touch with any anyone sick recently
+
+Patient: uh no ive ive been like at home with my husband we havent really left
+
+Doctor: OK and have you done any travel recently
+
+Patient: Uhm no ive just stayed at home
+
+Doctor: OK alright so lets move on to the physical exam part of this interview so if you can im going to get you to take a look at both your hips as well as your legs do you notice any redness or swelling in the area
+
+Patient: I do notice some swelling its a little bit red i cant really see too much red
+
+Doctor: OK ok any muscle atrophy any deformities or skin changes like bruises
+
+Patient: uh maybe some bruising but i i dont notice anything else
+
+Doctor: OK alright and then when you place the back of your hand on both hips do you notice any temperature changes is one side warmer than the other
+
+Patient: Its a little bit warmer the right side than the left
+
+Doctor: OK and does one like appear to be shorter or does does it appear to be misaligned or in any sort of like strange positions like outward turning of your leg one compared to the other
+
+Patient: I think its a bit but look at it a bit like outward turning and then yeah i would say its more outward turns
+
+Doctor: OK and if are you sitting down right now
+
+Patient: uh yeah
+
+Doctor: OK are you able to stand up from a sitting position
+
+Patient: I can try but its very painful
+
+Doctor: OK
+
+Patient: Yes should i go ahead and try
+
+Doctor: Yes please
+
+Patient: Yeah so i yeah i can barely stand up i cant its kind of just im just supporting myself with my left like
+
+Doctor: OK and so i i guess you cant do any of the like hip flexion or hip extension hip abduction or addduction correct
+
+Patient: No i can barely move it
+
+Doctor: OK alright those are all the questions that i had did you have any questions of your own
+
+Patient: No i think i i just dont know if i need surgery or something
+
+Doctor: Yeah so it sounds like you have a hip fracture from your fall uhm so the way to treat this is a combination of surgeries and rehab and medication so we will definitely look into the surgical option first which is done using some internal repair with screws or you can do a total hip replacement or a partial hip replacement the orthopaedic surgeon will uh decide like which option is best for you after we refer you for a consult with them and then after that surgery theyll likely refer you to some rehab so physiotherapy will focus on improving your range of motion and strengthening the muscles in that area uhm and for management of pain you can take ibuprofen or any over the counter pain medications for now does that sound ok
+
+Patient: Yeah that sounds good thank you so much
+
+Doctor: OK great no problem

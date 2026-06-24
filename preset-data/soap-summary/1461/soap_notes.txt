@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1461
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Initial:
+
+Subjective:
+- Patient resides in a care facility called South Valley Care Center, which is near the clinic.
+ 
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

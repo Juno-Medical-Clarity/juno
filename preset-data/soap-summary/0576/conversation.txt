@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0576
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you? I am good. That's great. You are stable. Can I go home now? Yes, you can. Thank you!

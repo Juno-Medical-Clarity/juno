@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0137  |  gem_id: gem-cochrane-simplification-test-138  |  doi: 10.1002/14651858.CD006305.pub2
+
+This review of eight trials, involving 660 participants, indicated that sanchi improved short-term outcome. However, the evidence from the small sample size and inferior quality of the studies does not support its routine use for acute ischaemic stroke. Well-designed trials are required.

@@ -1,0 +1,10 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Hypoxia'
+  [9:12] 'medical-jargon-google-easy' -> 'diabetic macular oedema'
+  [13:14] 'abbr-medical' -> 'DMO'
+  [16:18] 'medical-jargon-google-easy' -> 'diabetic retinopathy'

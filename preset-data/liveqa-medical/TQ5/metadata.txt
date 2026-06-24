@@ -1,0 +1,14 @@
+qid: TQ5
+source_file: 1-131616137.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: How much glucagon is in my GlucaGen kit?
+nlm_summary: How much glucagon is in the GlucaGen HypoKit and what are other ingredients?
+
+focus_entities:
+  [F1] (DrugSupplement) GlucaGen HypoKit
+question_types:
+  [T1] INGREDIENT
+keywords:
+  [K1] (Substance) glucose

@@ -1,0 +1,12 @@
+Doctor: Tell me what brings you here today?
+Patient: I'm having some issues with my right hand.
+Doctor: What kind of issues?
+Patient: I'm having these pins and needles kind of feeling in my hand and it has been going on for several weeks. Sometimes I feel it gets numb. I think it might be carpal tunnel, but I'm not sure. I'm just worried.
+Doctor: Did you do anything for it?
+Patient: At work I recently moved my keyboard down. I just hope it will help. You know, I do a lot of the same kind of activities all the time. All of it I typing based.
+Doctor: What is more difficult, day or night?
+Patient: It gets worse at night. If I sleep on it, like in a certain way, it will just wake me up and it starts hurting. These tingling sensations are the worst. It helps if I shake it then the sensation goes away. It irritates me all the time.
+Doctor: Is it complete hand or is there any part of hand that is worse than others?
+Patient: It is mostly my middle finger, but maybe my first or second finger of the hand also, but mostly my middle finger.
+Doctor: Is there pain anywhere else?
+Patient: In my thumb as well. I'm just afraid it can be arthritis. I don't want that, too, on my plate.

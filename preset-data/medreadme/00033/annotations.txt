@@ -1,0 +1,10 @@
+source:      pnas
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'mechanistic probes'
+  [9:10] 'medical-jargon-google-easy' -> 'analogs'
+  [13:14] 'medical-jargon-google-easy' -> 'theranostics'
+  [21:22] 'general-complex' -> 'modalities'

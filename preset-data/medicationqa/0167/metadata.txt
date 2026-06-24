@@ -1,0 +1,5 @@
+drug_focus: iodine
+question_type: Alternatives
+section_title: How will I know which foods have the most iodine?
+source_url: https://www.cc.nih.gov/ccc/patient_education/pepubs/lo_io_diet.pdf
+sample_id: 0167

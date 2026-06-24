@@ -1,0 +1,5 @@
+drug_focus: Supartz FX
+question_type: Information
+section_title: NA
+source_url: http://www.supartzfx.com/what-is-supartz/
+sample_id: 0393

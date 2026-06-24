@@ -1,0 +1,5 @@
+drug_focus: vaccination
+question_type: Information
+section_title: Maternal Vaccination
+source_url: https://www.cdc.gov/vaccines/pregnancy/downloads/immunizations-preg-chart.pdf
+sample_id: 0625

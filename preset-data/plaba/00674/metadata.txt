@@ -1,0 +1,5 @@
+pmid:        29973620
+question:    52
+adaptation:  adaptation1
+title:       Assessment of the key regulatory genes and their Interologs for Turner Syndrome employing network approach
+sentences:   11

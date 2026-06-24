@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0343
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: High potassium 
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: Previous blood test indicating high potassium
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Waiting for blood report to be sent from the doctor's office
+
+Objective:
+- Blood test results: High potassium (specific level not provided)
+
+Assessment:
+- Interpretation: High potassium (hyperkalemia) 
+
+Plan:
+- Follow-up with the patient once the blood report is received.

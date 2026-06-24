@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [6:9] 'general-complex' -> 'cluster randomised trial'
+  [21:22] 'medical-jargon-google-easy' -> 'repositioning'
+  [32:33] 'medical-jargon-google-easy' -> 'repositioning'
+  [34:35] 'general-complex' -> 'viscoelastic'

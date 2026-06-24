@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0990
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No prior surgeries reported by the patient.
+- The patient humorously indicates a possibility of having had surgery while asleep, but firmly states that they do not remember any surgeries.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment information provided]
+
+Plan:
+- [No plan information provided]

@@ -1,0 +1,5 @@
+pmid:        32631287
+question:    5
+adaptation:  adaptation3
+title:       Clinical outcome of arthroscopic internal drainage of popliteal cysts with or without cyst wall resection
+sentences:   11

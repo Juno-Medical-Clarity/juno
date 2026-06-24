@@ -1,0 +1,5 @@
+pmid:        34562551
+question:    28
+adaptation:  adaptation1
+title:       Targeting the PI3K/Akt/mTOR pathway: A therapeutic strategy in COVID-19 patients
+sentences:   12

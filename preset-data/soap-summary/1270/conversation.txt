@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1270
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How is your family doing? They all are good. Are you aware of any medical issues in your family? No, not to my knowledge.

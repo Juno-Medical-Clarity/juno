@@ -1,0 +1,13 @@
+source:      elife
+side:        complex
+readability: 5.15
+split:       test
+
+jargon_spans:
+  [7:11] 'medical-jargon-google-hard' -> 'chromatin - tethering domain'
+  [12:13] 'abbr-medical' -> 'CTD'
+  [15:16] 'abbr-medical' -> 'IE1'
+  [19:22] 'medical-jargon-google-easy' -> 'nucleosome core particle'
+  [30:33] 'abbr-medical' -> 'IE1 - CTD'
+  [35:40] 'medical-jargon-google-hard' -> 'H2A - H2B acidic patch'
+  [44:49] 'medical-jargon-google-easy' -> 'higher - order chromatin structure'

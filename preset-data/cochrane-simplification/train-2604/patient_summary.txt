@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2604  |  gem_id: gem-cochrane-simplification-train-2605  |  doi: 10.1002/14651858.CD007013.pub2
+
+For this review, we searched the literature published up to April 2015 and found four studies that involved 450 participants which met our inclusion criteria. The included studies compared the proportions of fistulas that matured when evaluation was carried out before surgery using medical imaging techniques with standard care (no imaging). Our analysis found that vessel imaging before surgery did not improve the rate of fistulas that matured. Further research in this area involving more participants may be beneficial to better understand if imaging before surgery could help to increase the success of fistulas for people who need haemodialysis.

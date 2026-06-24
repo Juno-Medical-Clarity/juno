@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0565
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi, how are you? I am good, how about you? Well, I am good too, thank you for asking. So, what brings you here? Um, I have developed this painful ulcer on my hip. Oh, let me take a look. Which side? On my right hip. Okay, I see it. Looks like you have developed pressure ulcer.

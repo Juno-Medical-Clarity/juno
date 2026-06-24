@@ -1,0 +1,140 @@
+# Smith Collection Transcript: RES0213
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Yeah so youre a 26 year old generally healthy and with sorry back pain
+
+Patient: Chest pain
+
+Doctor: Chest pain ok when did the chest pain start
+
+Patient: um so i i guess i i dont know if id really call it pain its its been just very uncomfortable like it just felt a little odd for like a week and a half its kind of
+
+Doctor: A week and a half
+
+Patient: Yeah its kind of like a very sharp strong pain uh when i take a deep breath
+
+Doctor: OK
+
+Patient: But i dont notice it all the time its just its often when um im sitting and studying or when im walking when im walking to school
+
+Doctor: OK did you have any accidents or injuries around that time
+
+Patient: uh no nothing that i can think of
+
+Doctor: OK did it come on suddenly or is it more gradual
+
+Patient: Yeah its uh no its its pretty its pretty well it seems the same each time it kind of lasts like 20 minutes or so um and ive tried tylenol and ive tried advil um and ive even tried like a like an alkaseltzer and it hasnt really helped very much
+
+Doctor: OK so its pretty its not consistent throughout the day it only happens at certain times of the day
+
+Patient: Yeah itll come on for like 20 minutes like here and there
+
+Doctor: OK anything that you think triggers it
+
+Patient: I dont i dont really know uh i was kind of worried um i was kind of worried that it could be a heart thing i i feel like it might it might be it could be stress uhm but im im not really sure my dad had a heart attack last year he was pretty young hes like in his 50s and it it just kind of scares me because now hes having these heart problems
+
+Doctor: OK so these chest pains last for about 20 minutes it only happens when you take a deep breath in and after the 20 minutes do they come and go is it something that gradually weans off or is it fairly sharp
+
+Patient: It seems like it kind of goes away once i once im at school and like talking to people and doing other things its kind of when im i notice it when im on my walks when im alone or like when im studying alone more like maybe i have it when im talking to other people but i dont really notice it
+
+Doctor: OK does it get worse with exercise
+
+Patient: uh i dont think so it just kind of like when im walking to school it kind of stays the same i havent done any strenuous exercise lately cause ive just had so much uh schoolwork piling up
+
+Doctor: So you mainly get it at so you can get it at rest i should say
+
+Patient: Exactly yeah like when im studying
+
+Doctor: OK any fevers sick at all last little while
+
+Patient: uh no no i dont think so
+
+Doctor: No youve been feeling well otherwise
+
+Patient: Yeah i mean besides just kind of feeling stressed i uh like i ive been trying to quit smoking and thats been thats been kind of hard and schools just very very busy right now
+
+Doctor: When did you stop smoking
+
+Patient: um so like i guess im trying to quit im smoking less than i used to i probably smoked 5 cigarettes a day but it used to be a little bit more
+
+Doctor: OK coming back to the stress is there anything recently thats causing you more worries
+
+Patient: um its just that im im doing my masters of social work and im getting towards the end and its just its very scary because im working on my final uh thesis and theres just a lot involved and its its just making me very nervous
+
+Doctor: OK is there anything special about the last couple of weeks thats made you more stressed than previously
+
+Patient: uh i think just the the time crunch of having to to finish this ive never felt like so like there is so little time to do the work that i need to do
+
+Doctor: Got it have you ever felt this pain before anytime in your life
+
+Patient: No no not before this
+
+Doctor: OK so it comes on several times a day not necessarily triggered by anything and you said you smoke when did you start smoking
+
+Patient: um like when i was probably 18 i i sometimes smoked a little and then i smoked a little more um maybe like 10 cigarettes a day for uh like the last two years but then a few months ago ive been ive been cutting it in half
+
+Doctor: OK now when you get this this chest pain do you ever feel short of breath
+
+Patient: um i i think i i make myself nervous with it and then i kind of start breathing faster but i dont have a hard i dont have a hard time breathing otherwise and its hard to get a deep breath cause im it makes me really nervous
+
+Doctor: Does your heart ever flutter feel like its skipping a beat
+
+Patient: Uhm no only if i only if i if i if im having kind of an anxiety attack thats felt like that before but not any other time
+
+Doctor: OK dont get any chest pain all right and just in terms of other things so anything else youve seen a doctor for in the past you mentioned anxiety attacks
+
+Patient: Yeah um like i talked to my family doctor about that when i was a teenager but i really havent you know seen my doctor for it anytime in the last like eight years or so
+
+Doctor: Anything else you see your family
+
+Patient: I dont oh sorry no nothing else i just i thought i was kind of when i was in high school i had those and then i really havent for a long time but um lately i felt like this like i could maybe get them again
+
+Doctor: So youve never had asthma as a child
+
+Patient: uh no
+
+Doctor: And you dont have asthma now
+
+Patient: No
+
+Doctor: OK do you take any medications right now
+
+Patient: uh no like i take like a multi vitamin but thats it
+
+Doctor: OK and you live in london
+
+Patient: Mhmm like for school
+
+Doctor: Got it youre doing a masters in social work anyone around you been sick at all last little while
+
+Patient: No like i live alone i havent really seen very many people lately
+
+Doctor: OK and how do you manage stress when you do get it
+
+Patient: um i try to i try to like set some time aside just to read books that like i like to read instead of like school books uh at night time and uh i do really enjoy running its ive been a little bit nervous to do it lately but usually i run like a few times a week
+
+Doctor: OK and when youre pretty preoccupied do you ever get the chest pain
+
+Patient: um like when im really when im work like working with classmates or uh like thinking really like if im talking to someone else i dont really get it or if i if im like working on a task with my hands but its when im walking and i am alone kind of with my thoughts or when im studying thats when i when i get it
+
+Doctor: Understood and you said your father passed early from a heart attack im sorry but anyone else in your family either your parents or mum have any health issues
+
+Patient: Oh hes uh hes alive like he had a heart attack and just now he has to see a lot of heart doctors um no theres nothing else in my family like that i dont really know like about my grandpa like my dads dad but like he might have also um he just kind of he just passed away young from um like an accident so yeah im not really sure
+
+Doctor: Got it so no one has died suddenly with no explanation when they were young or while they were swimming
+
+Patient: No
+
+Doctor: No ones ever talked about arrhythmias or is that a word familiar to you
+
+Patient: No no just my dad and his heart attack thats like the only thing i know of
+
+Doctor: OK sounds good i think ive got all the information i need and ill pass it on to the doctor wholl take a look at you ok have a good one
+
+Patient: OK thank you

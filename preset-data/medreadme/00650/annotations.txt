@@ -1,0 +1,12 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-easy' -> 'L. major'
+  [11:12] 'medical-jargon-google-easy' -> 'intravenous'
+  [12:14] 'medical-jargon-google-easy' -> 'sodium stibogluconate'
+  [15:16] 'abbr-medical' -> 'SSG'
+  [27:28] 'medical-name-entity' -> 'ThermoMed'
+  [29:30] 'abbr-medical' -> 'TM'

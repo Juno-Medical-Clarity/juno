@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0643
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Left shoulder pain, mostly in the back of the shoulder.
+- Severity: Pain in the right shoulder was "really bad" yesterday but has since improved.
+- Duration: Symptoms began approximately two days ago.
+- Associated Symptoms: Improved range of motion; no front shoulder pain; no shoulder weakness.
+- Relevant Medical History: None mentioned.
+- Family History: None mentioned.
+- Allergies: None mentioned.
+- Concerns: Patient indicates overall improvement of symptoms and ability to swim with children.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment or diagnosis provided.
+
+Plan:
+- No plan or treatment provided.

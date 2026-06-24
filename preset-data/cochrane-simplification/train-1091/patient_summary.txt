@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1091  |  gem_id: gem-cochrane-simplification-train-1092  |  doi: 10.1002/14651858.CD000244.pub2
+
+This review included 23 trials, involving a total of 8447 participants. The review found that antibiotics are effective in reducing the incidence of infection, both at the surgical-wound site and in the chest and urinary tract. The effect of a single dose of antibiotic is similar to that from multiple doses if the antibiotic chosen is active through the period from the beginning of surgery until the wound is sealed. There were too few data available to confirm the expected tendency for increased adverse drug-related events such as gut problems and skin reactions.

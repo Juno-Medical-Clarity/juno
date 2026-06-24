@@ -1,0 +1,6 @@
+Covid-19 (a viral, breathing-related disease) has affected more than 100 countries around the world, and the basis used to decide when patients with Covid-19 can be sent home is different across countries.
+In China, patients with two negative (or undetected) viral tests for Covid-19 taken at least one day apart can be sent home with no further quarantine (isolation) required.
+Currently, testing of for coronavirus using a fecal or poop sample is not usually done.
+This paper describes a patient with Covid-19 whose tests from swabs of the back of the nose and throat were negative but fecal sample were positive for (or had) coronavirus, which causes Covid-19.
+The stool (feces) sample collected on 27th of February was still positive for genetic material of the coronavirus, 24 days after the first negative swab from the nose and throat.
+In conclusion, based on the experience from previous epidemics of lung infections, researchers recommend that testing fecal samples for coronavirus should be included into the standard for sending people home to decrease the risk of transmission (or spread) from the digestive system.

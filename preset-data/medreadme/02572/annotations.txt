@@ -1,0 +1,8 @@
+source:      elife
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-easy' -> 'X-ray crystallography'
+  [26:27] 'medical-jargon-google-easy' -> 'enzyme'

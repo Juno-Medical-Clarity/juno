@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0200  |  gem_id: gem-cochrane-simplification-train-201  |  doi: 10.1002/14651858.CD006636.pub3
+
+Two good quality randomized controlled trials involving 754 women were identified. Rapid negative pressure application reduced the duration of the procedure without any evidence of differences in outcomes for the mother or infant. Rapid method of negative pressure application should be recommended for vacuum extraction assisted vaginal delivery.

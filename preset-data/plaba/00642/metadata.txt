@@ -1,0 +1,5 @@
+pmid:        30524565
+question:    49
+adaptation:  adaptation1
+title:       Impact of low-dose prednisolone on refractory pitting edema manifesting remitting seronegative symmetrical synovitis with pitting edema syndrome
+sentences:   13

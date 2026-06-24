@@ -1,0 +1,5 @@
+drug_focus: statins
+question_type: Usage
+section_title: How are Statins Taken?
+source_url: https://medlineplus.gov/ency/patientinstructions/000748.htm
+sample_id: 0333

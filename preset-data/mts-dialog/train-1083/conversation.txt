@@ -1,0 +1,3 @@
+Doctor: Any major or minor surgeries done in the past?
+Guest_family: Sorry, I have no idea about it.
+Guest_family: I just started working for him.

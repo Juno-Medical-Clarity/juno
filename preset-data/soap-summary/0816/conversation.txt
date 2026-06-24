@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0816
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Has anyone in your family had heart diseases? Yes my father. They did his heart bypass surgery when he was sixty. Is he alright now? Yes I know what you mean. Yes by God's grace, both my parents are alive. What exactly was the heart disease named? Do you know? Yeah they said it was something called coronary artery disease and he had many strokes due to that. How old is he now? My father is in his eighties. My mother is eighty years old too and she has dementia. My father has dementia too. Okay. Do you smoke or drink alcohol? And how much? No I do not drink or smoke.

@@ -1,0 +1,5 @@
+drug_focus: Tetrahydrocannabinol
+question_type: Time/duration
+section_title: How long after use can marijuana show up on a drug test?
+source_url: https://www.drugabuse.gov/publications/marijuana-facts-teens/want-to-know-more-some-faqs-about-marijuana
+sample_id: 0137

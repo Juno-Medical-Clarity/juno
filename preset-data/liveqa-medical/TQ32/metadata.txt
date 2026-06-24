@@ -1,0 +1,12 @@
+qid: TQ32
+source_file: 1-123361835.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: How does one taper off the drug Amlodipine and start Atenolol to avoid adverse side effects?
+nlm_summary: How to switch from amlodipine to atenolol?
+
+focus_entities:
+  [F1] (DrugSupplement) Amlodipine
+question_types:
+  [T1] TAPERING

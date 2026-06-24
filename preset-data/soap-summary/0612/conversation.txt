@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0612
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke, sir? Well, I used to a long time ago, but I don't anymore. Good, what about alcohol, do you drink? Well, my wife and I have a drink or two a day.

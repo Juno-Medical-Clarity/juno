@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [6:9] 'general-complex' -> 'meta - analysis'
+  [14:16] 'medical-jargon-google-easy' -> 'pulmonary rehabilitation'
+  [18:19] 'general-complex' -> 'control'

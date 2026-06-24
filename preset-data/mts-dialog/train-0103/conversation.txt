@@ -1,0 +1,6 @@
+Doctor: Hi there! I have the results from your ultrasound. You have kidney stones in the ureter close to the bladder.
+Patient: Oh no.
+Doctor: This explains the pain you have been having on your left side. Are you still experiencing nausea and vomiting?
+Patient: Yes, I have been.
+Doctor: I would like to set you up with a consult with a consult with a surgeon.
+Patient: Okay.

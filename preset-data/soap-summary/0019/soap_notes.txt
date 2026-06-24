@@ -1,0 +1,43 @@
+# SOAP Notes — Sample 0019
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Bilateral hand pain, numbness, and tingling in thumb, index, and middle fingers, right worse than left, for 2 weeks
+- Aching discomfort over palmar wrist and lower palm, burning sensation with tingling in digits
+- Pain radiates from palm to fingers and lower forearm
+- Pain severity 5/10, worse at night and with prolonged computer work (patient works as self-employed accountant)
+- Difficulty with gripping objects and opening jars
+- Symptoms relieved by rest and shaking hands
+
+PMHx:
+- No chronic medical conditions
+- No prior hospitalizations or surgeries
+- Medications: Occasional Advil or Tylenol for headaches
+- No allergies
+
+SocHx:
+- Lives with husband and 2 kids in townhouse
+- Self-employed accountant, taking time off due to symptoms
+- Drinks wine every other day
+- Denies smoking, drugs, or high-risk sexual behavior
+
+FHx:
+- Diabetes on paternal side
+- Maternal aunt with hysterectomy for cancer (type unknown)
+
+Objective:
+- Inspection: No swelling, redness, or temperature changes of hands/wrists
+- Slight atrophy of thenar eminence
+- No point tenderness over joints or wrist
+- Full ROM of wrists
+- Positive Tinel sign at wrist (tingling with tapping)
+- Positive Phalen sign (symptoms reproduced with wrist flexion)
+
+Assessment:
+- Bilateral carpal tunnel syndrome, right worse than left
+
+Plan:
+- Wrist splints at night to maintain neutral position
+- Consider NSAIDs if inflammation present
+- Activity modification, especially with prolonged computer work
+- Surgery if symptoms persist despite conservative management

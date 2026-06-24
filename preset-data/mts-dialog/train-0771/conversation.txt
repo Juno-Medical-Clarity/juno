@@ -1,0 +1,2 @@
+Doctor: Do you have any known allergies to medication?
+Patient: Nope. None that I know of.

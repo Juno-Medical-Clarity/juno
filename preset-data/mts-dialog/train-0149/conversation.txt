@@ -1,0 +1,8 @@
+Doctor: Does anyone in your family ever have any neurological disorder?
+Patient: Not anything specific but, many of my family members had lazy eyes.
+Doctor: Who is in your family?
+Patient: My parents and my two little sisters.
+Doctor: How old are your sisters?
+Patient: One is nine, another one is five.
+Doctor: How are they both health wise?
+Patient: They both are healthy.

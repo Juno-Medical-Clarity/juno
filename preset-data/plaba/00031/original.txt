@@ -1,0 +1,11 @@
+Hypokalemia (ie, potassium levels less than 3.5 mEq/L) occurs in fewer than 1% of healthy individuals, but is present in up to 20% of hospitalized patients, 40% of patients taking diuretics, and 17% of patients with cardiovascular conditions.
+Hypokalemia often is asymptomatic; symptoms are more common in older adults.
+Common symptoms are cardiac arrhythmias and muscle weakness or pain.
+Management consists of intravenous potassium replacement during cardiac monitoring for patients with marked symptoms, echocardiogram (ECG) abnormalities, or severe hypokalemia (ie, level less than 3.0 mEq/L).
+Oral replacement is appropriate for asymptomatic patients with less severe hypokalemia.
+Hyperkalemia (ie, level greater than 5.5 mEq/L) also can cause cardiac arrhythmias and muscle symptoms.
+Urgent management is warranted for patients with potassium levels of 6.5 mEq/L or greater, if ECG manifestations of hyperkalemia are present regardless of potassium levels, or if severe muscle symptoms occur.
+Urgent management includes intravenous calcium, intravenous insulin, and inhaled beta agonists.
+Hemodialysis can be used in urgent situations.
+For patients with less severe hyperkalemia, renal elimination drugs sometimes are used, as are gastrointestinal elimination drugs.
+For all patients with hypokalemia or hyperkalemia, drug regimens should be reevaluated and, when possible, hypokalemia- or hyperkalemia-causing drugs should be discontinued.

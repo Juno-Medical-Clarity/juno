@@ -1,0 +1,14 @@
+Doctor: What's bringing you in today?
+Patient: I've had a terrible toothache. I can't stand the pain anymore. I have never experienced this pain in fifty eight years.
+Doctor: Where are you experiencing the most pain? And when did this pain start?
+Patient: It started about three weeks ago. It's mostly on the left side of my mouth. Kind of on the lower end. It goes from my jaw all the way up to my left ear.
+Doctor: That doesn't sound the least bit comfortable. Let's get you feeling better. Do you think it's related to your tooth?
+Patient: No, I don't think so. I'm pretty good at making my dentist appointments, although I haven't been in since this new pain started.
+Doctor: I see. When was the last time you visited the dentist?
+Patient: About two months ago for a routine clean.
+Doctor: Have you noticed any facial swelling since all of this started?
+Patient: No, no swelling.
+Doctor: Any headaches, throat swelling, sore throat, difficulty swallowing or chewing?
+Patient: No.
+Doctor: How about any neck pain, swollen lymph nodes, chills, fever, or other symptoms?
+Patient: No, thank goodness.

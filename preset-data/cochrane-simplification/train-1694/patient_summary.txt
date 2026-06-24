@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1694  |  gem_id: gem-cochrane-simplification-train-1695  |  doi: 10.1002/14651858.CD002221.pub2
+
+The review authors searched the medical literature and found a single trial that met the inclusion criteria of the review. Sixty-three participants with lower eyelid entropion were enrolled and randomised to either everting sutures alone or everting sutures and a lateral tarsal strip. Eight participants were lost to follow-up. The trial showed that the combination of horizontal and vertical eyelid tightening with everting sutures and lateral tarsal strip is highly efficient for entropion compared to vertical tightening with everting sutures alone. Further research is needed to provide more credible evidence for the comparison of surgical treatments to correct an inward turning eyelid.

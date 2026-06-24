@@ -1,0 +1,174 @@
+# Smith Collection Transcript: RES0203
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Do you want to tell me what brought you in today
+
+Patient: Yeah so for the past two days i ive ive noticed that i cant smell things as well as i used to be able to smell them and i seem to have lost my sense of taste as well and i have this mild dry cough im just worried its covid
+
+Doctor: OK you said for a couple days
+
+Patient: Yes for two days
+
+Doctor: OK have you ever had anything like this before
+
+Patient: No no nothing like this
+
+Doctor: OK when you say you feel like youve lost sense of taste and smell is it totally gone or do you taste a little bit or how how is that working for you
+
+Patient: The smell isnt totally gone i can still smell something if it smells really really bad and and then and then i can taste really really salty foods but i can taste normal things like i cant taste of banana
+
+Doctor: OK is that been pretty consistent throughout the last couple of days or is it on and off
+
+Patient: Its been pretty consistent yeah
+
+Doctor: OK and did this dry cough that start at the same time
+
+Patient: Yes
+
+Doctor: And when you say sorry you said mild cough and i my next question was do you feel like its a dry cough or you producing any sputum any blood or is it to not not bringing up anything
+
+Patient: Its dry
+
+Doctor: OK has that gotten worse over the last couple of days
+
+Patient: The dry cough um its been pretty consistent as well
+
+Doctor: OK is there have you done anything to try to make it better have you taken any over the counter medications or
+
+Patient: No i havent tried anything
+
+Doctor: OK ok have you had in addition to these symptoms have you had any fevers
+
+Patient: Fevers no fevers
+
+Doctor: OK any difficulty breathing
+
+Patient: No
+
+Doctor: OK any headaches
+
+Patient: um no no headaches
+
+Doctor: OK any sore throat
+
+Patient: No
+
+Doctor: OK any chills or night sweats
+
+Patient: No
+
+Doctor: OK any muscle ache or general weakness
+
+Patient: uh no
+
+Doctor: OK so generally it seems like youre pretty well other than this loss of taste slash smell and the dry cough that correct
+
+Patient: Yes
+
+Doctor: OK and then recently have you been in contact with anyone thats been sick
+
+Patient: um no not that i can remember or yeah not that i can remember
+
+Doctor: OK have you traveled anywhere
+
+Patient: um i went hiking with my partner two weeks ago i guess there were some people who kind of brushed by us but other than that i dont see where else i could have gotten this from
+
+Doctor: OK was that hiking somewhere close by
+
+Patient: Yeah it was like half an hour from where we are
+
+Doctor: OK are your immunizations up to date
+
+Patient: Yes
+
+Doctor: OK and can you think of any for this dry cough just a circle back to that can you think of anything that triggers it its called the cold or being around certain things like cats or dogs or any other environmental things
+
+Patient: No
+
+Doctor: OK have you had any chest pain thats the other thing  im not sure if i asked you
+
+Patient: No no chest pain
+
+Doctor: OK and in terms of your general health do you do you have any chronic conditions that you live with
+
+Patient: um no no
+
+Doctor: Do you take any medications
+
+Patient: No
+
+Doctor: OK have you ever had any surgery or been hospitalized for another reason
+
+Patient: um no
+
+Doctor: Do you have any allergies
+
+Patient: No allergies
+
+Doctor: Do you have any family history of respiratory problems cancers or heart problems
+
+Patient: No nothing like that
+
+Doctor: OK and just in terms of free lifestyle so do you live with family
+
+Patient: um no
+
+Doctor: OK do you read along with a partner or roommate
+
+Patient: I live with my parents and my younger sibling
+
+Doctor: OK and is that in town here
+
+Patient: Yes yeah
+
+Doctor: OK and in general do you eat a healthy diet do you exercise
+
+Patient: Yeah i think so
+
+Doctor: Do you smoke
+
+Patient: uh no
+
+Doctor: OK do you drink alcohol
+
+Patient: uh i i have drank alcohol before but not not regularly
+
+Doctor: OK um and i do use marijuana
+
+Patient: um i have taken edibles before but also not very regularly
+
+Doctor: OK any other drugs
+
+Patient: No
+
+Doctor: OK and are you currently in high school
+
+Patient: uh yes i am in my last year of high school
+
+Doctor: OK and how is that going
+
+Patient: Pretty good yeah were doing things online now
+
+Doctor: So you havent really been out of the house
+
+Patient: No
+
+Doctor: OK ok uhm i think thats all my questions for now uh i definitely like to get you a covid test just because your symptoms are consistent with some common covid symptoms so basically that means that we would do a swab it might not come back for a day or two you definitely have to self isolate between now and when you get the results back potentially even if its negative longer if youre still having symptoms
+
+Patient: Yeah
+
+Doctor: Otherwise there probably there might be a couple other tests we want to do we might have more questions when we come back well go over this with the doctor that im working with today but just wanted to give you a heads up of what to expect next did you have anything else you wanted to tell me that i didnt ask you about or any questions
+
+Patient: No uh thank you so much
+
+Doctor: OK well thanks for coming in today will definitely get you taken care of shortly
+
+Patient: Thank you
+
+Doctor: K thanks

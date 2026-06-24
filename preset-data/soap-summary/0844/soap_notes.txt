@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0844
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient is a local resident.
+- The patient works full time.
+- No history of drug or alcohol abuse.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No clinician's interpretation provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education mentioned.)

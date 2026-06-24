@@ -1,0 +1,10 @@
+The purpose of this study is to create a flow-chart based on x-rays called CT scans to tell the difference between Birt-Hogg-Dubé syndrome and other lung diseases that have cysts, which are sacs of air or fluid.
+The study uses CT scans that were taken prior to the study from 33 patients with Birt-Hogg-Dubé syndrome, 33 patients with a rare disease called LAM where a muscle cell grows in the lungs, and 23 patients with other lung diseases that cause cysts (but are not Birt-Hogg-Dubé or LAM).
+The CT images are reviewed again to determine the size, number, location, and form of pulmonary cysts (cysts filled with air located on the lung).
+Cysts mainly located in the lower lung are more likely to be found in patients with Birt-Hogg-Dubé syndrome than in patients with LAM or in the group with other lung diseases.
+In the Birt-Hogg-Dubé group, 18 out of 33 patients have cysts that are mostly near the area between the lungs. All the patients in the LAM group and the group with other lung diseases have cysts in different locations.
+Cysts that are fusiform (wide in the middle and taper at the ends) are more easily observed in patients in the Birt-Hogg-Dubé group.
+In total, 58% patients in the Birt-Hogg-Dubé group have less than 50 lung cysts, while all patients in the non-Birt-Hogg-Dubé group had more than 50 lung cysts.
+The biggest cyst is located in the bottom of the lung in 28 of 33 patients in the Birt-Hogg-Dubé group, while 11 of 33 patients in the LAM group and 10 patients in the other lung diseases group have the biggest cyst in the lower lobe.
+In conclusion, pulmonary cysts in patients with Birt-Hogg-Dubé are usually fusiform, are fewer in numbers, and mainly located in the bottom of the lung near the space in between the lungs.
+The lung images may assist doctors in identifying the difference between Birt-Hogg-Dubé from other lung diseases that have cysts.

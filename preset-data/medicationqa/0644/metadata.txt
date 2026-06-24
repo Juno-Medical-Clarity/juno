@@ -1,0 +1,5 @@
+drug_focus: rivaroxaban, painkillers
+question_type: Interaction
+section_title: Can I take rivaroxaban with everyday painkillers?
+source_url: https://beta.nhs.uk/medicines/rivaroxaban/
+sample_id: 0644

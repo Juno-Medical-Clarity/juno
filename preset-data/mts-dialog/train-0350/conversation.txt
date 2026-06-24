@@ -1,0 +1,8 @@
+Doctor: Any history of smoking?
+Patient: Uh yeah, but I quit in two thousand seven.
+Doctor: On average, how many packs per day did you smoke?
+Patient: Uh if I were to guess, I'd say one pack per day.
+Doctor: Any other drugs?
+Patient: I used to do coke, but I quit that in two thousand five.
+Doctor: And any history of drinking?
+Patient: Um I used to drink one pint per day, but I quit drinking more than ten years ago.

@@ -1,0 +1,5 @@
+drug_focus: Diltiazem
+question_type: Dose/Potency
+section_title: Clinical pharmacology
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da1c1a8e-c9dd-4c20-b061-638f2d0cecda
+sample_id: 0129

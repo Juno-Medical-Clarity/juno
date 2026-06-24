@@ -1,0 +1,166 @@
+# Smith Collection Transcript: RES0147
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What can i do for you today
+
+Patient: Ive just had this cough that it that has gotten a lot worse and really short of breath
+
+Doctor: Uhm can you tell me more about your shortness of breath
+
+Patient: Yeah just over the past like 12 hours or so ive just been finding it more and more difficult to to breathe
+
+Doctor: OK what are you able i guess when do you feel short of breath
+
+Patient: Yeah its just like right now at rest i can like im ok but it still is feeling increasingly difficult so like throughout the day its just been getting getting worse and the cough has been getting worse also
+
+Doctor: And before these 12 hours where did you have any difficulties with breathing
+
+Patient: uh no i i i had a cough but not not really any shortness of breath
+
+Doctor: And can you tell me about your cough is it a dry cough or wet cough
+
+Patient: Ive been bringing up some some sputum
+
+Doctor: OK what does it look like
+
+Patient: Its like greenish and yellow
+
+Doctor: Mhmm ok and you said that you had a cough prior to the past 12 hours and that your cough is now worse how is it worse
+
+Patient: Ah its been just happening more often and like just like throughout the day usually my cough is only in the morning ill bring up some some sputum in it and im ok but its carried on throughout the day
+
+Doctor: OK uhm and was your sputum and greenish yellow before as well or was it just starting yesterday or or couple days ago
+
+Patient: Yeah thats new thats just starting new it was more like i dont know whitish or yeah white i guess before
+
+Doctor: OK alright and i guess has this ever happened to you before
+
+Patient: uh no this is the first time that that this has happened before
+
+Doctor: OK and you have any other i guess symptoms are until i ask you about a couple do you have any do you feel confused or fuzzy
+
+Patient: No that that feels ok
+
+Doctor: Any headaches
+
+Patient: No
+
+Doctor: Any stuffy stuffy nose or runny nose
+
+Patient: No
+
+Doctor: Sore throat
+
+Patient: No
+
+Doctor: Any chest pain
+
+Patient: Ah yeah i did i do have a uh uh some well i guess i guess its not really pain its more like like just chest tightness im really having a hard time with that with breathing
+
+Doctor: Uhm i see ok do you feel like your hearts beating very fast
+
+Patient: No
+
+Doctor: OK do you have any belly pain or any nausea or vomiting
+
+Patient: No
+
+Doctor: Any changes in your bowel movements or any urinary symptoms
+
+Patient: No
+
+Doctor: Any muscle aches
+
+Patient: No
+
+Doctor: Fevers or chills
+
+Patient: No
+
+Doctor: OK uhm alright and uh in terms of your past medical history any medical problems that youve been diagnosed with
+
+Patient: Yeah i was diagnosed with copuh two years ago umm yeah this is at i went to my family doctor for this and i had some testing done when i was diagnosed at that time
+
+Doctor: OK any other diagnosis
+
+Patient: Yeah i have high blood pressure aortic stenosis uh and uh and high cholesterol
+
+Doctor: Are you taking any medications
+
+Patient: Yeah i i take a uh a statin medication i think some type of blood thinner as well as something for the blood pressure as well i cant remember the the names of them
+
+Doctor: Why were you on a blood thinner
+
+Patient: Oh i i heard that it was it was umm oh good for me for a friend since ive ive had uh aortic stenosis
+
+Doctor: OK sure all right and have you had any surgeries
+
+Patient: uh no i havent
+
+Doctor: OK and any hospitalizations
+
+Patient: No i havent
+
+Doctor: OK uhm do you have any allergies to food environmental allergies or any allergies to medications
+
+Patient: No
+
+Doctor: OK do you have a or whats your current living situation are you living in an apartment or house do you live alone do you live with other people
+
+Patient: Yeah i live alone in a in house here in town
+
+Doctor: OK and are you currently working are you retired
+
+Patient: Yeah i i do i currently well i just do some volunteering at the golf course in the summer but otherwise retired
+
+Doctor: What did you do for work
+
+Patient: uh so before i worked at the beer factory in in town labatt
+
+Doctor: OK and have you ever had any exposures to any chemicals or any anything that you any irritants that you think any smoke that might affect your lungs or your yeah
+
+Patient: Uhm no i dont think so i mean working in the factory environment i im sure things years ago werent as clean as they are now but yeah im not sure
+
+Doctor: OK alright and are you you said you live alone are you able to take your things like getting groceries or cooking or cleaning the house or do you need help with that
+
+Patient: I i do uh get some help from my son who lives who lives nearby and umm i able to to get them to to help make some meals and and bring some food over and then ill go visit them as well you can take care of the house so and all that not ok on my own but it certainly gets gets lonely there
+
+Doctor: Im sure what about what about things like walking do you use a cane or a walker
+
+Patient: Uhm no i dont
+
+Doctor: OK and do you are able to bathe on your own dress on your own do you need help
+
+Patient: Oh yeah those things are ok
+
+Doctor: OK have you ever have you been on oxygen at all
+
+Patient: No i havent but i feel like i could be right now its like really im short of breath
+
+Doctor: Yeah yeah we can definitely do that here uhm alright so given your symptoms it sounds like maybe youre having a copexacerbation potentially do you feel like you might have had contact with anyone who was sick
+
+Patient: Not that i can think of
+
+Doctor: OK have you traveled at all outside the country or outside the province
+
+Patient: No i ive just been helping out at the golf course but thats all kind of outside
+
+Doctor: Are you wearing a mask and maintaining social distancing
+
+Patient: Yeah we are like im like helping out with cleaning the carts and kind of helping out with the grounds
+
+Doctor: Mhmm ok alright so well do a covid swab here just in case and seeing that youre not feeling very well you might require oxygen were going to keep you here in the er and we might have to you might have to be hospitalized well measure your vitals do a physical exam do a chest xray and you might be having as i mentioned earlier in exacerbation upper copor a worsening of your coppotentially because you might have an infection either a viral infection or bacterial infection that can sometimes worsen your copsymptoms you might be started on an antibiotic well be putting you in oxygen and giving you some steroid some are you actually about that are you are you using any puffers at home
+
+Patient: Ah yeah so yeah i have been using uh sorry i i have been using ventolin and there was a daily inhaler spiriva i believe ive been using that each day
+
+Doctor: OK great great yeah so well be well be giving you some puffers here as well and yeah well see how things go do you have any questions
+
+Patient: uh no that that sounds good thank you
+
+Doctor: OK alright

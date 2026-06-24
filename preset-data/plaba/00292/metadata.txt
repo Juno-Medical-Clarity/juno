@@ -1,0 +1,5 @@
+pmid:        26835392
+question:    23
+adaptation:  adaptation1
+title:       Phenylketonuria: a review of current and future treatments
+sentences:   10

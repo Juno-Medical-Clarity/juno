@@ -1,0 +1,5 @@
+drug_focus: tylenol pm
+question_type: Dose
+section_title: ACTIVE INGREDIENTS (IN EACH CAPLET)
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=83df6b68-8bb5-410b-bb97-0a5eecf424f2&audience=consumer
+sample_id: 0610

@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [6:7] 'general-complex' -> 'efficacy'
+  [20:21] 'general-complex' -> 'comparator'

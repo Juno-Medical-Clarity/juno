@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3028  |  gem_id: gem-cochrane-simplification-train-3029  |  doi: 10.1002/14651858.CD004191.pub2
+
+This review aimed to evaluate pure self-help (PSH) and guided self-help (GSH) interventions for eating disorders for all ages and genders, compared to psychological, pharmacological or control treatments and waiting list. Fifteen trials were identified, all focused on BN, BED or EDNOS, using manual-based self-help. There is some evidence that PSH/GSH reduce eating disorder and other symptoms in comparison to waiting list or control treatment and may produce comparable outcomes to formal therapist-delivered psychological therapies. PSH/GSH may have some utility as a first step in treatment. In the future there need to be large well-conducted effectiveness studies of self-help treatments with or without guidance incorporating cost evaluations and investigation of different types of self-help in different populations and settings.

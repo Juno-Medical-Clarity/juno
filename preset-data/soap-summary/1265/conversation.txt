@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1265
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you feeling? You have been sick? Yes, I am not feeling well for the last three days. I have bad body aches, cough and a sore throat. Do you get wet cough or it's dry? What color sputum comes out? It is wet and green colored stuff comes out. Okay we will need to send it out to culture, maybe an infection. How about fever, chills, nausea, vomiting, diarrhea anything like that? Are you sleeping well? Everything is fine except some chills? I am sleeping okay. Do you need anything for cough? I don't need anything for the cough. I did call yesterday and got a refill of my Keflex. Then I took two Keflex this morning and I am feeling little bit better now. Okay then why are you crying, ma'am? I am just tired of feeling like ran down. I am so sorry. Hm.

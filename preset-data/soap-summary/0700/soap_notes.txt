@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0700
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Never smoked a cigarette.
+- Drinks alcohol socially with friends and family.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

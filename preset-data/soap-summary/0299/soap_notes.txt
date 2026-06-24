@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0299
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No allergies reported.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessments provided)
+
+Plan:
+- (No plan provided)

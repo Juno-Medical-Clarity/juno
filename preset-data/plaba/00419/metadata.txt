@@ -1,0 +1,5 @@
+pmid:        33172445
+question:    32
+adaptation:  adaptation2
+title:       Impact of the common MTHFR 677C→T polymorphism on blood pressure in adulthood and role of riboflavin in modifying the genetic risk of hypertension: evidence from the JINGO project
+sentences:   10

@@ -1,0 +1,6 @@
+Cystic fibrosis (CF) is a disease inherited from both parents caused when the CF transmembrane conductance Regulator (CFTR) protein no longer functions, which acts as a compound (chloride) channel.
+Scientists have mostly studied CFTR in epithelial cells (cells that cover outer surface of the internal organs) although it also works and is seen in other cell types including endothelial cells (cells that cover the blood vessel inner surface).
+This review summarizes what is known on the role of endothelium in CF.
+We summarize the role of endothelial cells in CF in acting as a barrier that allows only some things to pass through, partly controlling formation of new blood vessels, clotting, blood vessel constriction, and inflammation.
+Endothelial cells could play a role in different parts of the disease including heart symptoms, formation of too many blood vessels, two kinds of high blood pressure and CF-related diabetes.
+Vascular endothelium (the inner cellular lining of arteries, veins, and capillaries) is important to many processes in the body, but it has not been studied enough in CF.

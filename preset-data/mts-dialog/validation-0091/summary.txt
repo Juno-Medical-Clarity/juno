@@ -1,0 +1,2 @@
+[EXAM]
+CHEST: The chest examination is unremarkable.

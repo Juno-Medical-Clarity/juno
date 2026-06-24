@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0187  |  gem_id: gem-cochrane-simplification-train-188  |  doi: 10.1002/14651858.CD011231.pub2
+
+All of the reviews were considered to be well-conducted. However, the individual trials included in the reviews often did not report enough detailed information to allow us to properly determine trial quality. Many trials did not report enough information on outcome measures; it is unclear how this missing information would influence the results. We graded the evidence for lung function when PEP was compared to vibrating (oscillating) devices as moderate, but the evidence comparing different airway clearance techniques for other outcomes, such as individual preference and quality of life was of low or very low quality. More long-term, high-quality trials (where participants are put into groups at random) which compare different airway clearance techniques among people with CF are needed.

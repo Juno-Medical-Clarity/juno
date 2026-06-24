@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0500
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, I see here in your reports you have arthritis in you both knees. Yes. And you got a tear in your eye in the past, right? Ah yes, I got a tear in my retina. Right. Also, it's mentioned here that you have atrial fibrillation. That's correct. Are you taking any medications? Yes, I am on anticoagulants. Okay.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1080
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_family: Congestion and cough. Oh, how long? Guest_family: It's been three weeks now. Okay. Guest_family: He has been like this for so long, but nothing else. How about fever nausea vomiting diarrhea? Guest_family: No fever, no vomiting, nothing else. Okay great.

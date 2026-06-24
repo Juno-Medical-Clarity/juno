@@ -1,0 +1,11 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'MASTs'
+  [8:11] 'medical-jargon-google-easy' -> 'Ae . aegypti'
+  [12:15] 'medical-jargon-google-easy' -> 'Ae . albopictus'
+  [22:23] 'medical-jargon-google-easy' -> 'Culex'
+  [27:28] 'medical-jargon-google-easy' -> 'dengue'

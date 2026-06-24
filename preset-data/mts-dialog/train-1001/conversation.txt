@@ -1,0 +1,4 @@
+Doctor: With ten being the worse pain ever, how would you rate your pain out of ten today, ma'am?
+Patient: Um, out of ten, I'd say it's about a two.
+Doctor: That's good. What helps the pain feel better?
+Patient: Um, it gets better with elevation, and when I just rest.

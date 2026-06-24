@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0352  |  gem_id: gem-cochrane-simplification-validation-353  |  doi: 10.1002/14651858.CD004591.pub3
+
+There was not a significant effect on weight gain in the one randomized controlled trial identified that investigated addition of lactase. The review authors searched the medical literature thoroughly but found only this one high quality trial enrolling 130 preterm infants. No adverse effects were noted and lactase treated feeds appeared to be well tolerated.

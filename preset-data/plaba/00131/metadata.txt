@@ -1,0 +1,5 @@
+pmid:        28101805
+question:    11
+adaptation:  adaptation1
+title:       Ketogenic diet in pyruvate dehydrogenase complex deficiency: short- and long-term outcomes
+sentences:   14

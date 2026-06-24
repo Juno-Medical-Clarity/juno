@@ -1,0 +1,5 @@
+pmid:        33820833
+question:    64
+adaptation:  adaptation2
+title:       Phenotypic spectrum and genomics of undiagnosed arthrogryposis multiplex congenita
+sentences:   13

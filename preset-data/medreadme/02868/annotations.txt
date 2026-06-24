@@ -1,0 +1,15 @@
+source:      plos_genetics
+side:        complex
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'Mlh1'
+  [4:5] 'medical-jargon-google-easy' -> 'Mlh3'
+  [7:10] 'medical-jargon-google-hard' -> 'MMR effector proteins'
+  [14:16] 'medical-jargon-google-easy' -> 'somatic expansion'
+  [17:18] 'medical-jargon-google-easy' -> 'Msh2'
+  [19:20] 'medical-jargon-google-easy' -> 'Msh3'
+  [22:26] 'medical-jargon-google-hard' -> 'DNA mismatch recognition complex'
+  [26:27] 'medical-jargon-google-hard' -> 'MutSb'
+  [28:31] 'medical-jargon-google-hard' -> 'MSH2 - MSH3'

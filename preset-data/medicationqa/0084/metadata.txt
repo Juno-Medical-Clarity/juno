@@ -1,0 +1,5 @@
+drug_focus: ecstasy
+question_type: Information
+section_title: MDMA (Ecstasy/Molly)
+source_url: https://www.drugabuse.gov/publications/drugfacts/mdma-ecstasymolly
+sample_id: 0084

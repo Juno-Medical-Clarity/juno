@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2220  |  gem_id: gem-cochrane-simplification-train-2221  |  doi: 10.1002/14651858.CD011334.pub2
+
+We searched the medical literature up to May 2015 for robust medical studies (randomised controlled studies) that compared NPWT with other treatments for pressure ulcers. We identified four studies involving a total of 149 participants. Two studies compared NPWT with dressings, one compared NPWT with a series of topical treatments and one study compared it with what was described only as 'moist wound healing'. The trials were small, and poorly described, of fairly short or unclear duration, and contained little in the way of useful data. As a result of the limited amount of research evidence available, we were not able to draw any conclusions regarding the potential value (or harm) of NPWT as a treatment for pressure ulcers. More, better quality research is needed if this is an important and relevant question for decision makers. This plain language summary is up-to-date as of May 2015.

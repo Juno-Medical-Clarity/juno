@@ -1,0 +1,7 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [1:2] 'abbr-medical' -> 'HIV'

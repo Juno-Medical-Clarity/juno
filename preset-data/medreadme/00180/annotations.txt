@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'phenocopy'
+  [15:19] 'medical-jargon-google-hard' -> 'lecrk - I. 9'
+  [20:23] 'medical-jargon-google-hard' -> '35S - ipiO1'
+  [27:35] 'medical-jargon-google-hard' -> 'pathogen - and MAMP - triggered callose deposition'

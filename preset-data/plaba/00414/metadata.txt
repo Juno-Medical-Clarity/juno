@@ -1,0 +1,5 @@
+pmid:        30372582
+question:    32
+adaptation:  adaptation1
+title:       The modifying effect of the MTHFR genotype on the association between folic acid supplementation and pulse wave velocity: Findings from the CSPPT
+sentences:   9

@@ -1,0 +1,8 @@
+Doctor: Where are you having numbness?
+Patient: In my left hand.
+Doctor: And no other symptoms? Any coughing or chest pain?
+Patient: No. Just that weird feeling in my left hand.
+Doctor: Any visual changes or motor changes.
+Patient: Nothing.
+Doctor: Great. What about any phlegm or shortness of breath?
+Patient: Nope.

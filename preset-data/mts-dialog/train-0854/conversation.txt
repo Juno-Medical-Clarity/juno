@@ -1,0 +1,14 @@
+Doctor: I'm going to run down a list of symptoms and I'd like you to tell me if you've experienced any.
+Patient: Okay.
+Doctor: Headache?
+Patient: No headaches.
+Doctor: Are you coughing at all? And if yes, then are you bringing up any blood with your cough?
+Patient: No cough.
+Doctor: Any chest pain or shortness of breath that wakes you in the middle of the night?
+Patient: Nope.
+Doctor: Do you feel short of breath when you move around?
+Patient: Nope.
+Doctor: Any visual, hearing, or swallowing problems?
+Patient: None.
+Doctor: And finally any changes to your bowel movements or urinary habits?
+Patient: Nope. All normal.

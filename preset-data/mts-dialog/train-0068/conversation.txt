@@ -1,0 +1,5 @@
+Doctor: What are some medications you are on?
+Patient: I am on pain pills.
+Doctor: Do you know their names?
+Patient: Yes. Oxycontin and Vicodin.
+Doctor: Okay that helps.

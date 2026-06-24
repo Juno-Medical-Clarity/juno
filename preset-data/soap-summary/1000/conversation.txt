@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1000
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Since you have a family history of coronary heart disease, let me check you for its risk factors. Yeah, my father had it. Any history of high blood pressure or diabetes? No. How about smoking, do you smoke? No, I don't smoke. And in the past, did any other Doctor mention that you might have sign or symptom indicating that you may have coronary artery disease? No. Okay.

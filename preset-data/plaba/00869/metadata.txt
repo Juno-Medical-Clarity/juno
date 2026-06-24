@@ -1,0 +1,5 @@
+pmid:        12816345
+question:    71
+adaptation:  adaptation3
+title:       Fibroblast growth factor receptor-3 as a therapeutic target for Achondroplasia--genetic short limbed dwarfism
+sentences:   13

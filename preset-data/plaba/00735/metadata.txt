@@ -1,0 +1,5 @@
+pmid:        35132427
+question:    58
+adaptation:  adaptation3
+title:       Comparison of total and neutralizing SARS-CoV-2 spike antibodies against omicron and other variants in paired samples after two or three doses of mRNA vaccine
+sentences:   10

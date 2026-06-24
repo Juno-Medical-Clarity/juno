@@ -1,0 +1,9 @@
+47,XXX (triple X) and Turner syndrome (45,X) are sex chromosomal (gene material) abnormalities with detrimental effects on health. Both syndromes are associated with increased death and disease suffering.
+In females with normal chromosomes, X-chromosome (sex chromosome) inactivation balances gene expression between sexes. Upregulation (increase in activity) of the X chromosome in both sexes maintains balance with the autosomes (chromosomes not involved in sex determination).
+In both syndromes, a gene dosage imbalance may be caused by increased or decreased expression from the genes that escape X inactivation. A gene dosage imbalance may also be caused by incomplete X chromosome inactivation in 47,XXX.
+This study aimed to evaluate genome-wide DNA-methylation (addition of methyl groups to DNA) and RNA (genetic material)-expression changes. This was done in the hope that these alterations may explain phenotypic traits, or observable character traits, associated with 47,XXX syndrome.
+This study compared DNA-methylation and RNA-expression data taken from white blood cells of seven women with 47,XXX syndrome. This data was compared with data from seven female controls and seven women with Turner syndrome (45,X).
+This study evaluated genome-wide DNA-methylation and RNA data in blood from seven females with 47,XXX syndrome, seven females with Turner syndrome, and seven normal females (46,XX).
+The study identified the loss of methylation of six X-chromosomal genes, increased methylation for one specific gene, and four differentially methylated autosomal regions related to four genes.
+This data illustrates how these changes seem centered at the RNA level.
+In conclusion, this study suggests an impact of excess X chromosome in 47,XXX syndrome on the methylation status of selected genes.

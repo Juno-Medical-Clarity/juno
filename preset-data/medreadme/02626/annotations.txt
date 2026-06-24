@@ -1,0 +1,13 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'Antiglucocorticoid'
+  [4:7] 'medical-name-entity' -> 'antiDepressants in Depression'
+  [8:9] 'abbr-medical' -> 'ADD'
+  [15:18] 'general-complex' -> 'placebo - controlled'
+  [20:21] 'medical-jargon-google-easy' -> 'metyrapone'
+  [23:25] 'medical-jargon-google-easy' -> 'serotonergic antidepressants'
+  [28:29] 'abbr-medical' -> 'TRD'

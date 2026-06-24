@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0278
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports a history of lower back pain.
+- Duration of lower back pain: approximately four to five years.
+- Cause of lower back pain: car crash.
+- No recommendations for physical therapy (P T) were made post-accident.
+- No increased back pain following the accident.
+- Medical history includes a C-section for childbirth and appendectomy a few years ago.
+- No history of smoking; patient quit before having her daughter.
+- Denies current pregnancy.
+- Denies having high blood pressure, heart disease, diabetes, or issues with lungs, thyroid, kidney, or bladder.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

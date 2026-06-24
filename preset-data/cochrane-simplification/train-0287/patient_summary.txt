@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0287  |  gem_id: gem-cochrane-simplification-train-288  |  doi: 10.1002/14651858.CD012045.pub2
+
+We searched the medical literature until 24 February 2017. We included one study with 541 study participants that randomly assigned participants with localised tumours of the kidney that were thought to be cancerous. On average, participants were followed for 9.3 years. Participants who had only the tumour taken out appear to be more likely to die from any cause than participants that had the tumour and the whole kidney taken out. There appeared to be little to no difference in the time until the tumour comes back or in the risk of serious complications resulting in death. We did not find any evidence as to how the groups compared when it comes to the need for haemodialysis or how their quality of life compared. The quality of evidence was low. This means that we have limited confidence in the results and that the true effect of partial nephrectomy may be substantially different.

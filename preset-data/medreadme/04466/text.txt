@@ -1,0 +1,1 @@
+Our data support monitoring SMARCA2 expression as a predictive biomarker for EZH2-targeted therapies in the context of SWI / SNF mutant cancers.

@@ -1,0 +1,3 @@
+Doctor: Any other allergies besides Penicillin?
+Patient: Um no.
+Doctor: I see here that you've previously tolerated Cephalosporins without any problems. Do you remember when you were last prescribed a Penicillin like antibiotic?

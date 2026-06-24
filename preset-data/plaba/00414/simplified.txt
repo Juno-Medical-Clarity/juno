@@ -1,0 +1,9 @@
+This study conducted an analysis using patients from the China Stroke Primary Prevention Trial. The goal of this study was to explore the impact of folic acid (a specific vitamin) on arterial stiffness (hardness of arteries or specific blood vessels). Additionally, this study aimed to measure the modifying or influencing effect of a specific gene (methylenetetrahydrofolate reductase-MTHFR) in Chinese patients with hypertension (high blood pressure).
+This study enrolled 2,529 hypertensive (high blood pressure) Chinese patients.
+Participants were randomized to receive treatment with either a combination of enalapril (common blood pressure medication) and folic acid or enalapril.
+Brachial-ankle pulse wave velocity (PWV) is a measurement of  arterial stiffness. It is measured by looking at the brachial and tibial arteries, located within the upper arm. PWV was taken by trained medical staff using appropriate equipment during both baseline (before treatment) and exit (end of treatment) visits, approximately 5 years after enrollment.
+This trial was registered with clinicaltrials.gov (NCT00794885).
+During the follow-up, change in folate (vitamin in the body) was significantly and independently linked with change in PWV in patients.
+Patients with CC genotype (a person's collection of specific genes) had a significantly greater PWV response to folic acid than those with genotype CT or TT.
+The positive effect of folic acid on improved PWV was modified by what genotype the patient had.
+The study concluded that within the analyzed subgroup of Chinese hypertensive patients who had received a 5-year antihypertensive therapy, increase in folate status were correlated or linked with decreased PWV. Additionally, individuals with CC genotype showed greatest PWV response to folic acid treatment.

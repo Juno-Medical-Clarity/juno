@@ -1,0 +1,214 @@
+# Smith Collection Transcript: RES0127
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Hi ive ive just been ive been sneezing a lot and i have this runny nose its just been very irritating i kind of want to do something about it ive had it for awhile but its just you know i decided to like come in to find out whats whats wrong with me why do i like why does this happen to me all my friends are ok
+
+Doctor: Oh yeah i know it must be very very irritating how long has it been going on for
+
+Patient: Its been years i dont even remember
+
+Doctor: Oh years ok and years like just sneezing and the runny nose has been going on for the last few years
+
+Patient: Yeah it kind of kind of comes on like around the spring time it just gets really bad at that time
+
+Doctor: Yeah ok and are there any besides during the spring time any kind of allergens or any anything in the house or around you that triggers it like dust or anything like that
+
+Patient: Yeah dust makes it a lot worse like when i have to vacuum the house i just feel awful for the next two days
+
+Doctor: I see do you get any other symptoms besides the uh sneezing and runny nose
+
+Patient: Yeah let my nose so stuffy and sometimes its just like my eyes and my nose are just itchy and my eyes get like red and teary sometimes its so embarrassing when im going to school i also wake up in the morning with this like sore throat and have just cough and clear out my you know clear my throat
+
+Doctor: OK and does that happen like every morning
+
+Patient: Its usually worse around springtime
+
+Doctor: OK and are you coughing at all
+
+Patient: Well i have to like cough to clear my throat but then not otherwise
+
+Doctor: OK and are you bringing up any sputum
+
+Patient: Yeah that yeah i do
+
+Doctor: Like uh how much would you say do you just bring it up in the morning or like throughout the day
+
+Patient: Just in the morning
+
+Doctor: Just in the morning
+
+Patient: Yeah
+
+Doctor: Do you have a sensation of like anything kind of dripping down your throat like after you wake up like just a build up
+
+Patient: Yeah yeah i do
+
+Doctor: OK and besides that have you been having any symptoms of fevers chills sore throat
+
+Patient: I get a bit of a sore throat i guess in the morning but it just goes away after
+
+Doctor: OK
+
+Patient: But no fevers
+
+Doctor: OK and is there anything that youve tried at all like medications or anything that has helped you with these symptoms
+
+Patient: Uhm yeah i tried like umm reactin and that really helped
+
+Doctor: That helped ok thats good and are you taking reactin right now
+
+Patient: I didnt take it today i tried it a couple days ago
+
+Doctor: OK and have you traveled at all recently
+
+Patient: No
+
+Doctor: No ok and any sick contacts anyone around you that has been sick
+
+Patient: I dont think so
+
+Doctor: OK any headaches
+
+Patient: No
+
+Doctor: Any nausea or vomiting
+
+Patient: No
+
+Doctor: Any fevers or chills
+
+Patient: No
+
+Doctor: Any kind of fatigue or tiredness throughout the day
+
+Patient: I do feel more fatigued when i have these symptoms
+
+Doctor: OK any night sweats fevers or chills
+
+Patient: No
+
+Doctor: Any changes in your bowel movements at all
+
+Patient: No
+
+Doctor: Any trouble urinating
+
+Patient: No
+
+Doctor: Any changes to your appetite or weight
+
+Patient: Ive been losing weight but ive been dieting and working out more
+
+Doctor: OK and how much weight would you say youve lost over the last few months
+
+Patient: Ive lost about four pounds in the past four five months its been hard to lose weight
+
+Doctor: And so no no sudden like loss of weight or anything like that right now
+
+Patient: No no no
+
+Doctor: Well its really great that youre you know trying to lose weight and dieting and and having like a healthier lifestyle it is definitely harder with the pandemic going on right now to to get in the activities and its hard like being at home and sometimes its really difficult to like not eat right
+
+Patient: Yeah yeah true
+
+Doctor: So besides besides that any kind of recent exposures to any fumes dust animals pets like anything like that
+
+Patient: Yeah it was kind of like vacuuming a couple of days ago when it got really bad but nothing not not i dont think theres not been any other exposures
+
+Doctor: OK and do you have any past medical conditions that you have been diagnosed with like asthma eczema anything like that
+
+Patient: I havent been diagnosed with anything no i did have like i know that i would sometimes get kind of short of breath as a child but my mom doesnt really trust doctors so she wouldnt take me to one
+
+Doctor: OK have you had shortness of breath after that like when like as a child how old were you
+
+Patient: I must have been like 8 years old or 9 years old that i remember but i think ive had it before that as well as my mom tells me
+
+Doctor: Oh ok do you have that at all now
+
+Patient: No no i dont
+
+Doctor: OK ok have you ever seen an allergist before
+
+Patient: No no
+
+Doctor: No ok do you have any known allergies to any medications yeah any medication
+
+Patient: No
+
+Doctor: No do you take any medications at all on a regular basis
+
+Patient: No
+
+Doctor: No ok have you been hospitalized or had any surgeries in the past
+
+Patient: No
+
+Doctor: Any family history of any asthma eczema allergic rhinitis anything like that
+
+Patient: Yeah i think it kind of runs in my family like everyone in my family is just kind of always having this runny nose and sneezing my mom has it my younger brother has it but like we havent really been diagnosed with anything like we we rarely go to the doctor
+
+Doctor: OK ok and currently right now do you work at all or sorry do you go to school
+
+Patient: I do i do ive been doing it virtually
+
+Doctor: Virtually ok so have you noticed anyone sick around you
+
+Patient: No
+
+Doctor: No ok and what at home whats your living situation like who do you live with
+
+Patient: I live with my mom dad and my younger brother
+
+Doctor: And yeah i just want to let you know that any questions i ask you today and anything we talked about its completely confidential and unless like there is any potential harm to yourself or anyone anyone else so yeah im just gonna ask you a few questions do you feel safe at home
+
+Patient: Oh yeah
+
+Doctor: OK and do you drink alcohol at all or have you tried alcohol
+
+Patient: No not at all
+
+Doctor: Have you tried any recreational drugs like marijuana
+
+Patient: No no
+
+Doctor: How about smoking
+
+Patient: Umm no
+
+Doctor: No ok and are you sexually active
+
+Patient: No
+
+Doctor: No ok and so overall do you feel safe in your home and as well as outside of your home environment any kind of bullying or anything like that going on
+
+Patient: No not at all
+
+Doctor: OK alright yeah so those are kind of all the questions that i had for you sorry just one more question any loss of sense of taste or smell
+
+Patient: Yeah its hard to smell and my nose is stuffy but no loss of taste
+
+Doctor: Yeah ok ok so do you have any questions at all for me
+
+Patient: No i just i i just wanna get some medications to help with this im just sick and tired of my runny nose
+
+Doctor: Yeah it must be very frustrating so youve tried reactin before right
+
+Patient: Yeah
+
+Doctor: Yeah so one method is to definitely like stay away from some of those allergens that are potentially causing your symptoms but i i do really think so you might have something called like allergic rhinitis and i think it might be beneficial to for you to see like an allergist
+
+Patient: Sure
+
+Doctor: And so i can refer you to someone as well just have a sense of what kind of things allergic to you and like what medications you would require in the meantime definitely like any antihistamine medications would help with your symptoms but since youre also having congestion and sneezing just just in case we will just do a coviswab test for you today and it takes around 24 to 48 hours to come back and in the meantime you should just isolate as much as you can in your own home and then based on the result they would give you more instruction
+
+Patient: Sure
+
+Doctor: Alright thank you take care

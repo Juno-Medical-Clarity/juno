@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1317
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I need to ask you a few questions. Sure. Do you feel any weakness or tiredness? No. Any uneasiness or illness? No, nothing of that sort. Any chills or high temperature? Nope. Any excessive sweating or night sweating? Um, no. How about allergies, are you allergic to anything? No, no allergies. Alright.

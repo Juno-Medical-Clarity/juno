@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0469
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Nervousness, anxiety
+- Severity: Not specified
+- Duration: Comes and goes
+- Associated symptoms: Anxiety related to returning to work and an upcoming trip
+- Relevant medical history: No previous treatment or history of depression, anxiety, or mood disorders
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Feeling anxious about work and travel
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No clinician's interpretation provided)
+
+Plan:
+- (No specific plan mentioned)

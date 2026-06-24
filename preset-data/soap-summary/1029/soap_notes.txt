@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1029
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Rash all over torso and arms
+- Severity: Not explicitly mentioned
+- Duration: Started on back, then spread to torso and arms
+- Associated Symptoms: Itching; no shortness of breath, wheezing, facial swelling, tongue or lip swelling
+- Relevant Medical History: None mentioned
+- Family History: None mentioned
+- Allergies: None mentioned
+- Other Concerns: Potential exposure to insulation removal, but no immediate reaction noted
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

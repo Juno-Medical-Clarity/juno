@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1277
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient is married. 
+- Patient does not smoke cigarettes or drink alcohol. 
+
+Objective: 
+- [No objective data provided.]
+
+Assessment: 
+- [No assessment provided.]
+
+Plan: 
+- [No plan provided.]

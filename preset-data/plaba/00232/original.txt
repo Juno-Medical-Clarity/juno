@@ -1,0 +1,11 @@
+Objective: To determine the effect of carbohydrate restriction on perinatal outcome in patients with diet-controlled gestational diabetes mellitus (GDM).
+Methods: Women with diet-controlled GDM were divided non-randomly into two groups based on their dietary carbohydrate content: those with low dietary carbohydrate content (below 42%) and those with high dietary carbohydrate content (exceeding 45%).
+Subjects kept dietary accounts and were followed with daily fasting and postprandial glucose assessments.
+Subjects also were tested daily for urinary ketones.
+Glycosylated hemoglobin, mean fasting and postprandial glucose values, incidence of macrosomia and large for gestational age (LGA) infants, cesarean deliveries for cephalopelvic disproportion and macrosomia, and need for insulin therapy were compared between the groups.
+Results: The two groups were identical in terms of demographic characteristics.
+Significant reductions in the postprandial glucose values were seen among subjects in the low-carbohydrate group (P < .04).
+Fewer subjects in the low-carbohydrate group required the addition of insulin for glucose control (P < .047; relative risk [RR] 0.14; 95% confidence interval [CI] 0.02, 1.00).
+The incidence of LGA infants was significantly lower in the low-carbohydrate group (P < .035; RR 0.22; 95% CI 0.05, 0.91).
+Subjects in the low carbohydrate group also had a lower rate of cesarean deliveries for cephalopelvic disproportion and macrosomia (P < .037; RR 0.15; 95% CI 0.04, 0.94).
+Conclusion: Carbohydrate restriction in patients with diet-controlled GDM results in improved glycemic control, less need for insulin therapy, a decrease in the incidence LGA infants, and a decrease in cesarean deliveries for cephalopelvic disproportion and macrosomia.

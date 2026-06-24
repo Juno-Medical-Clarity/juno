@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1291
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is divorced.
+- Patient has two boys who live with him.
+- No history of abnormal pregnancy or abortions.
+- Patient does not smoke.
+- Patient does not consume alcohol.
+- Patient has never used illicit drugs.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessments provided.]
+
+Plan:
+- [No plan provided.]

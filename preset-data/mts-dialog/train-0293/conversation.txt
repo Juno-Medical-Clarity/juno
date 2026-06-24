@@ -1,0 +1,7 @@
+Doctor: Hi, how are you?
+Patient: I am good, how about you?
+Doctor: Well, I am good too, thank you for asking. So, what brings you here?
+Patient: Um, I have developed this painful ulcer on my hip.
+Doctor: Oh, let me take a look. Which side?
+Patient: On my right hip.
+Doctor: Okay, I see it. Looks like you have developed pressure ulcer.

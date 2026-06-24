@@ -1,0 +1,5 @@
+pmid:        27600582
+question:    3
+adaptation:  adaptation2
+title:       Updates in hyperkalemia: Outcomes and therapeutic strategies
+sentences:   7

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2074  |  gem_id: gem-cochrane-simplification-train-2075  |  doi: 10.1002/14651858.CD006691.pub2
+
+Only two trials (60 participants, three months treatment) could be included. Both studies suggested that metformin plus insulin treatment lowered HbA1c somewhat more than placebo plus insulin. Improvement in insulin sensitivity, body weight or serum lipids were not seen in either study. However, one study showed a small decrease in insulin dosage by 10%. Side effects were mainly gastrointestinal upset in both studies and hypoglycaemia (low blood sugar) in one study. There was no information on health-related quality of life, costs, morbidity or mortality in either study.

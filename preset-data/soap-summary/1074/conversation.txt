@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1074
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anyone in your family have a history of drug or alcohol abuse? No. Any other medical conditions that might run in your family? Nope.

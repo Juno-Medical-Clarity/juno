@@ -1,0 +1,8 @@
+Doctor: What do you do for a living, sir?
+Patient: I'm actually retired, but I used to work as a dock hand.
+Doctor: That's great, congratulations on your retirement!
+Patient: Thank you so much, doctor.
+Doctor: I just need some background information on you, sir. Do you smoke?
+Patient: Sure, I smoke about a half a pack of cigarettes a day.
+Doctor: Do you drink, sir?
+Patient: Well, not anymore, but I used to be an alcoholic.

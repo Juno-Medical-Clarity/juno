@@ -1,0 +1,34 @@
+Doctor: Good morning, can you tell me your name and what brings you to the hospital today?
+Patient: Good morning, my name is John. I came here because I have been feeling nauseous and have lost 30 pounds over the past two months.
+Doctor: I see. Can you tell me more about your symptoms? Have you been experiencing any other symptoms besides nausea and weight loss?
+Patient: Yes, I have been experiencing dark-colored urine and intermittent episodes of hemoptysis.
+Doctor: Hmm, that's concerning. Did you have any pain or discomfort in your abdominal or flank area?
+Patient: No, I didn't have any pain or discomfort in that area.
+Doctor: Okay. Have you been experiencing any fever, cough, melena, hematuria, or urinary frequency or urgency?
+Patient: No, I haven't experienced any of those symptoms.
+Doctor: Alright. Can you tell me if you have had any trauma recently?
+Patient: No, I haven't had any trauma.
+Doctor: That's good. Can you tell me about your past medical history?
+Patient: My past medical history is unremarkable.
+Doctor: Alright. Can you tell me about the vaccine you received?
+Patient: I received the mRNA-1273 (Moderna) vaccine for COVID-19. My first dose was three weeks ago and I had no problems. But my symptoms started four days after receiving my second dose.
+Doctor: I see. When you came to the hospital, what were your vital signs like?
+Patient: My vital signs were stable when I was admitted.
+Doctor: That's good. During the physical examination, was there anything significant found like lower extremity pitting edema, petechiae, or rash?
+Patient: No, there was nothing significant found during the physical examination.
+Doctor: Alright. Were you on any medication prior to your hospitalization?
+Patient: No, I wasn't on any medication prior to my hospitalization.
+Doctor: Okay. The laboratory analysis showed that your serum creatinine was 4.1 mg/dL, which is higher than the normal range of 0.8-1.4 mg/dL. You also had hematuria and sub-nephrotic proteinuria of 1796 g/24 hours.
+Patient: Hmm, I see.
+Doctor: Our differential diagnosis at this point is wide, including all nephritic syndromes given the AKI, hematuria, and proteinuria. The C-ANCA (anti-neutrophil cytoplasmic antibodies) were elevated at 160 AU/mL, which is higher than the normal range of 20-25 AU/mL. The anti-proteinase 3 (anti-PR3) antibodies were also elevated >100 EU/mL, which is higher than the normal range of <3.5 EU/mL.
+Patient: Okay.
+Doctor: The immunohistochemical staining for the SARS-CoV-2 spike protein was not performed, but all other routine laboratory parameters including urinalysis were within normal range.
+Patient: I see.
+Doctor: We also performed a CT scan of the chest for evaluation of the hemoptysis, which showed a right upper lobe consolidation and moderate bilateral pleural effusion. The renal ultrasound was unremarkable.
+Patient: Okay.
+Doctor: A renal biopsy was subsequently performed and showed acute, pauci-immune.
+Patient: Hmm, I see. What does that mean?
+Doctor: Acute pauci-immune means that there is an acute inflammation in the kidney, but it is not caused by an immune response.
+Patient: Okay.
+Doctor: We need to monitor your condition closely and perform some further tests. I will instruct you on the follow-up requirements.
+Patient: Alright, thank you doctor.

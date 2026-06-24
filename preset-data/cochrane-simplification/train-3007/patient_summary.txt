@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3007  |  gem_id: gem-cochrane-simplification-train-3008  |  doi: 10.1002/14651858.CD003700.pub2
+
+We found six trials (1740 participants) that used vitamin A adjunctive therapy in children with non-measles pneumonia. There was no significant reduction in mortality or duration of hospital stay. Supplementary high-dose vitamin A may result in a worsening of the disease, and low-dose vitamin A significantly reduces the recurrence of bronchopneumonia. Moderate-dose vitamin A significantly reduces the time to remission of signs in children with normal serum retinol. The possible reason of the lack of benefit of vitamin A in non-measles pneumonia is that the effects of vitamin A may be disease-specific, with vitamin A only being effective when pneumonia is complicated with measles. Further high-quality research is required.

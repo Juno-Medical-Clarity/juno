@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0910
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Knee pain
+- Severity: Pain is getting worse each year
+- Duration: Chronic, worsening over the years
+- Associated symptoms: Difficulty performing daily activities
+- Relevant medical history: Longstanding knee pain
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Emotional concerns: Expresses frustration with decreased quality of life and inability to engage in activities
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- Offer arthroplasty to address knee pain and improve daily activities.

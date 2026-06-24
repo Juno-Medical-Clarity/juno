@@ -1,0 +1,5 @@
+Doctor: How's it going?
+Patient: Good, can't complain.
+Doctor: Glad to hear. So today we're going to do a comprehensive eval. It'll be a bit different than our usual visits together. Would you like your mom to step in the room, too?
+Patient: Yeah, that's not a problem.
+Doctor: Alright. I'll grab her from the waiting room. I'll be right back.

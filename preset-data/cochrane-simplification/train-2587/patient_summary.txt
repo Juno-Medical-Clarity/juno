@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2587  |  gem_id: gem-cochrane-simplification-train-2588  |  doi: 10.1002/14651858.CD012302.pub2
+
+One randomised controlled trial (current until August 2016), studying 100 male participants and comparing hand-assisted laparoscopic repair with EVAR, was included in this review. No in-hospital deaths occurred during the study. The trial showed that hand-assisted laparoscopic repair took longer to perform than EVAR but there was no difference in the number of patients with reduced blood flow to the leg following either treatment. At present, there is a lack of randomised controlled trials examining the comparative effectiveness and safety of laparoscopic repair of AAA. The quality of the available evidence was imprecise due to the inclusion of one small study and wide confidence intervals; and indirect because the study includes male participants only. Further research is required before conclusions can be made.

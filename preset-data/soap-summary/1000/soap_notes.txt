@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1000
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of coronary heart disease (father had it)
+- No history of high blood pressure
+- No history of diabetes
+- Patient does not smoke
+- No previous indications of signs or symptoms suggesting coronary artery disease from other doctors
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- Check for risk factors related to coronary heart disease

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3001  |  gem_id: gem-cochrane-simplification-train-3002  |  doi: 10.1002/14651858.CD005642.pub3
+
+The review identified 17 randomised clinical trials. The trials reported on patient-relevant outcomes only occasionally. All trials had high risk of bias ie, a trial might systematically overestimate benefits or underestimate harms of the treatments). Both treatments were associated with a high risk of experiencing adverse events, which may lead to discontinuation of the treatment. Twelve trials reported on clearing the virus from blood six months after the end of treatment. A summary of the current evidence in this review suggests that peginterferon alpha-2a has higher chances of clearing the virus from the patient's blood than peginterferon alpha-2b (in 50% compared with 43%). We were unable to identify any evidence on the benefits of one peginterferon over the other on patient-important outcomes. There is lack of data regarding patient-important outcomes on this topic.

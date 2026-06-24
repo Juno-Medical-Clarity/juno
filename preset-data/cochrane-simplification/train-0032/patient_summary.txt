@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0032  |  gem_id: gem-cochrane-simplification-train-33  |  doi: 10.1002/14651858.CD007085.pub2
+
+Three trials involving 5905 participants were included. We found very little evidence in relation to the use of formoterol and budesonide for relief of symptoms in people with mild asthma, but in people with more severe asthma who had suffered exacerbations in spite of regular treatment with inhaled corticosteroids, we found that reliever formoterol and budesonide compared favourably with terbutaline in reducing asthma exacerbations that required a course of oral corticosteroids. However only a small proportion of the 'severe asthma exacerbations' as defined in the trials led to hospital admissions, and no significant overall benefit has yet been shown for this outcome. In children with asthma that was not controlled with regular inhaled corticosteroids, there were fewer serious adverse events when formoterol and budesonide were used to relieve symptoms as well as for maintenance treatment.

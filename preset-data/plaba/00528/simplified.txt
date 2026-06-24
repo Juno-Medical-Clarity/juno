@@ -1,0 +1,8 @@
+An inherited disorder of many kidney cysts (swellings) is an important cause of kidney failure, for which there is no treatment.
+Gene sequence changes in PKD1 (a gene active in kidney cells) are the leading cause of the disease.
+The disease begins before birth and worsens slowly, but it is not known if creation of cysts is an ongoing process during adult life.
+We show that silencing of Pkd1 in mice younger than 13 days leads to severely cystic kidneys within 3 weeks. Silencing at day 14 or later results in cysts only after 4 months.
+We found that cell growth is not higher in those with cysts versus similar-age healthy animals, but the sudden change in response to Pkd1 silencing was linked to a new brake point during kidney growth and changes in gene expression.
+The effects of Pkd1 silencing may be defined by a developmental switch that signals the end of the final kidney maturation process.
+Pkd1 monitors development of tubes in growing and adult kidneys, but the disease-related effects of silencing are defined by the organ's developmental status.
+These results influence clinical understanding of the disease and treatment options.

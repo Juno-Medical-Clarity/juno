@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0551
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you still taking Micronase every morning? Yes, I take um two point five M G once a day. Great. Continue taking Micronase by mouth every day. As for your infection, I want you to start taking Bactrim twice daily. I'll be prescribing you thirty pills. It'll be Bactrim four hundred M G and eighty M G tablets.

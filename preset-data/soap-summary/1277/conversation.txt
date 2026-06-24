@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1277
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you married or divorced? I am married. Okay. Hm. Do you smoke cigarettes or drink alcohol? No, I have never.

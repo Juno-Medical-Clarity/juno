@@ -1,0 +1,22 @@
+Doctor: Hello, sir. How are you feeling today?
+Patient: Very itchy. I just keep scratching myself.
+Doctor: Oh, wow. I can see the rashes all over your arms. Are there rashes anywhere else?
+Patient: Yeah, it's all over my back and stomach.
+Doctor: I see it on your torso. When did this all start?
+Patient: I woke up this morning and started itching my back. After a few minutes, I noticed the rash was on my arms, chest, back, and stomach areas.
+Doctor: I'm going to take a look at the rashes and the rest of your body.
+Patient: Sounds good.
+Doctor: It looks like your face and lips are not swollen. Could you say ah for me?
+Patient: Ah.
+Doctor: It looks like your tongue isn't swollen either.
+Patient: That's good to hear.
+Doctor: Have you been feeling a shortness of breath, wheezing, or other related symptoms?
+Patient: Not that I know of.
+Doctor: Sounds good. I wonder why this happened. Did you do anything the night before?
+Patient: Uh. A few days ago, I was working and had to remove some insulation. Other than that, I don't know what else could have given me these rashes.
+Doctor: I see. Do you remember being itchy after that? Did you try any new foods?
+Patient: Nope I was not itchy. Also, my diet has been the same.
+Doctor: Are you taking any new medications?
+Patient: I haven't.
+Doctor: You don't recall being exposed to any other substances?
+Patient: Not that I know of.

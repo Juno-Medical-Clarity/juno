@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0029  |  gem_id: gem-cochrane-simplification-train-30  |  doi: 10.1002/14651858.CD004925.pub3
+
+This review aimed to determine the benefit and harms of the use of routine stenting in kidney transplant recipients in the prevention of urological complications. Seven studies (1154 patients) were identified. The incidence of MUCs were significantly reduced by the use of prophylactic stenting. Urinary tract infections (UTIs) were more common in stented patients however the addition of antibiotic prophylaxis resulted in no difference in the incidence of UTIs between the two groups. More studies are needed to investigate the use of selective versus universal prophylactic stenting for the unresolved issues of quality of life and cost.

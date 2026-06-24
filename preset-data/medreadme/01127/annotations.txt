@@ -1,0 +1,10 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Postnatal corticosteroids'
+  [13:15] 'medical-jargon-google-easy' -> 'bronchopulmonary dysplasia'
+  [16:17] 'abbr-medical' -> 'BPD'
+  [19:21] 'medical-jargon-google-easy' -> 'preterm babies'

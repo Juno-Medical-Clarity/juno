@@ -1,0 +1,1 @@
+Domain structure in the fold class is varied and modular, with 2. 8% of sequences containing more than one Trx fold domain.

@@ -1,0 +1,9 @@
+source:      MSD
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [0:4] 'medical-jargon-google-easy' -> 'Fluorescent in situ hybridization'
+  [5:6] 'abbr-medical' -> 'FISH'
+  [11:17] 'medical-jargon-google-easy' -> 'chromosomal deletion in the 22q11 region'

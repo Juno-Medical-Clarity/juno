@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3489  |  gem_id: gem-cochrane-simplification-train-3490  |  doi: 10.1002/14651858.CD006264.pub2
+
+The reviewers found three studies addressing this issue. A meta-analysis showed a trend towards a beneficial effect of long-term corticosteroids on accumulation of disability; however only two small studies contributed to this result. It was not possible to reliably comment on the effect of long-term corticosteroids on the frequency of relapses. Side effects were poorly documented. Therefore rigorous randomised controlled trials of this treatment are warranted.

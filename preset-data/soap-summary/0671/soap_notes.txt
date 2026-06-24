@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0671
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 30-year-old male.
+- Symptoms began in July 1993.
+- Initial symptoms: weakness in right arm, neck pain.
+- Managed initial symptoms with chiropractic treatment.
+- Notable progression: right arm atrophy, tightness in right hand, inability to extend fingers.
+- CT scan on September 25, 1992, showed an intramedullary lesion at C2-C3 and an extramedullary lesion at C6-C7.
+- Underwent C6-T1 laminectomy with decompression of spinal cord.
+- Improvement for approximately 3 months post-surgery, followed by worsening symptoms.
+- New symptoms: burning sensation on left side, weakness in both arms (right side worse), poor balance, persistent nausea (with episodes of vomiting), tachycardia, and elevated blood pressure.
+- MRI on August 31, 1993, indicated diffuse enlargement of cervical and thoracic spine and multiple enhancing nodules in posterior fossa.
+- Underwent brain surgery on September 1, 1993, with findings of hemangioblastoma (benign tumor).
+- Post-surgery stabilization followed by radiation from September 1993 to January 19, 1994.
+- Symptoms progressed to weakness in both arms and legs, difficulty swallowing noted during visit to NeuroOncology clinic on October 26, 1995.
+- Severity of weakness: unable to put on a shirt, raise arms, or feed self.
+- Patient can climb stairs but has difficulty descending.
+- Normal bathroom function.
+- NeuroOncology clinic considered chemotherapy.
+
+Objective:
+- CT scan report (September 25, 1992): intramedullary lesion at C2-C3, extramedullary lesion at C6-C7.
+- MRI report (August 31, 1993): diffuse enlargement of cervical and thoracic spine, multiple enhancing nodules in posterior fossa.
+- Surgical note: C6-T1 laminectomy with decompression of spinal cord.
+- Surgical note: suboccipital craniotomy with tumor excision, decompression, and biopsy showing hemangioblastoma.
+
+Assessment:
+- History of intramedullary and extramedullary spinal lesions.
+- Post-surgical status with initial improvement followed by symptom recurrence.
+- Current symptoms consistent with neurological deficits due to tumor presence and potential progression.
+
+Plan:
+- Consideration for chemotherapy as

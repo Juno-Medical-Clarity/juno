@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0601
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Main complaint: feeling tired throughout the day.
+- CPAP is doing fine; patient wakes up refreshed.
+- Concern about "crashing" during the day.
+- Thyroid issues: patient feels fine, thyroid gland not enlarged, normal breathing.
+- No fever reported.
+- No symptoms experienced: temperature intolerance, palpitations, muscle weakness, tremors, nausea, vomiting, constipation, or diarrhea.
+- Weight has been stable.
+- No muscle weakness near the body's center.
+
+Objective:
+- Thyroid gland not enlarged.
+- Normal breathing noted.
+- No fever reported.
+
+Assessment:
+- No specific assessment or diagnosis provided.
+
+Plan:
+- No specific plan or follow-up mentioned.

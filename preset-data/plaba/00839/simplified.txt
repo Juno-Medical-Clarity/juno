@@ -1,0 +1,9 @@
+SARS-CoV-2 infection (a viral lung infection) can cause effects ranging from patients with no symptoms to life-threatening conditions.
+Severe COVID-19 patients often display a severe lung effect and develop altered levels of immune cells and strikingly increased levels of IL-6 (an immune signaling molecule called a cytokine).
+There is an increased cytokine release with hyperferritinemia (high levels of ferritin - an iron-containing protein). This leads to the idea that COVID-19 is part of the hyperferritinemic syndrome disease group.
+Indeed, very high levels of ferritin can occur in other diseases including hemophagocytic lymphohistiocytosis, macrophage activation syndrome, adult-onset Still's disease, catastrophic antiphospholipid syndrome and septic shock (immune- or infection-related diseases).
+Many studies have shown the immune-system-regulating effects of ferritin and its links with death risks and high inflammation.
+High levels of free iron are harmful in the body, especially through damage that can lead to scarring.
+Iron binding represents a pillar in the treatment of iron overload.
+Also, it was proven to have an anti-viral and anti-scarring activity.
+Herein, we analyse the disease-causing role of ferritin and iron during SARS-CoV-2 infection and propose iron depletion treatment as a new treatment in the COVID-19 pandemic.

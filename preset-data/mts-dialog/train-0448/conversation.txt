@@ -1,0 +1,4 @@
+Doctor: Did you have your vaccines?
+Patient: Yeah.
+Doctor: Did you skip any?
+Patient: No, I had all of them and am up to date with my immunizations.

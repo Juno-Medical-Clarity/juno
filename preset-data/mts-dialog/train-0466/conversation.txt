@@ -1,0 +1,7 @@
+Doctor: Are you a smoker?
+Patient: Yes.
+Doctor: Do you use alcohol or any recreational drugs?
+Patient: I have been in treatment for heroin and alcohol in the past.
+Doctor: Any current use of drugs or alcohol?
+Patient: I did do a little bit of coke today.
+Doctor: Okay.

@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0963
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No history of rheumatic fever as a child.
+- No history of anything other than usual childhood illnesses.
+
+Objective:
+- [Blank]
+
+Assessment:
+- [Blank]
+
+Plan:
+- [Blank]

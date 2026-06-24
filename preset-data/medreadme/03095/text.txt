@@ -1,0 +1,1 @@
+A partitioned survival model with health states for pre progression, post progression and death was developed to perform a cost-utility analysis.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0844
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you live close to the office, or did you have to drive a long way here? I live right around here, I'm a local girl. Good, are you working right now? Yes, doctor, I work full time. That's good, sometimes it's nice to stay busy. Is there any history of drug or alcohol abuse I should know about? No, absolutely not, doctor.

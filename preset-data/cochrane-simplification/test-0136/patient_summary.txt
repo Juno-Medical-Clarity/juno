@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0136  |  gem_id: gem-cochrane-simplification-test-137  |  doi: 10.1002/14651858.CD006641.pub3
+
+The latest search was done on 30th May 2016. No new studies were identified. Only one study is included in the review. One trial (involving 176 women) was analysed which provided information on the rate of exclusive breastfeeding on discharge from hospital. We found that there was low-quality evidence that keeping mother and infant together in the same room after birth until they are discharged from the hospital increased the rate of exclusive breastfeeding at four days after birth. There was no difference between the groups in the proportion of infants receiving any breastfeeding at six months of age. We found little evidence to support or refute the practice of rooming-in after birth. A randomised controlled trial is needed and it should report all important outcomes, including breastfeeding duration.

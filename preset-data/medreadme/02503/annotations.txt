@@ -1,0 +1,8 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'epidemiological'
+  [15:18] 'medical-jargon-google-easy' -> 'dengue viral adaptation'

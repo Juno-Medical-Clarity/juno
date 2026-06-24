@@ -1,0 +1,5 @@
+drug_focus: synthroid, calcium
+question_type: Interaction
+section_title: DRUG INTERACTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e11ad30-1041-4520-10b0-8f9d30d30fcc&audience=consumer
+sample_id: 0572

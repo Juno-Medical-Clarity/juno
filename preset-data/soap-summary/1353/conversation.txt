@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1353
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What is your family medical history? I was adopted. I don't know my family medical history.

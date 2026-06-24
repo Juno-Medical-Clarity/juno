@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1461
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So Mister J, where do you stay? Oh, I stay at a care facilit. It's very near to your clinic. Have you heard about this place called South Valley Care Center? Oh yes, I have heard of it.

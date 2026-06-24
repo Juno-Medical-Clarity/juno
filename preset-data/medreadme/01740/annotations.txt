@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [4:8] 'medical-jargon-google-hard' -> 'allosteric regulation of PleC'
+  [9:11] 'medical-jargon-google-easy' -> 'in vitro'
+  [16:18] 'medical-jargon-google-easy' -> 'in vivo'
+  [18:20] 'medical-jargon-google-easy' -> 'developmental phenotypes'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0593  |  gem_id: gem-cochrane-simplification-train-594  |  doi: 10.1002/14651858.CD009185.pub2
+
+We found 24 relevant studies of which 17 provided data for our primary outcome. Six studies (434 children) provided data for the procalcitonin test; 13 studies (1638 children) provided data for the C-reactive protein test, and six studies (1737 children) provided data for the erythrocyte sedimentation rate test. We found all three tests to be sensitive (summary sensitivity values ranged from 86% to 95%), but not very specific (summary specificity values ranged from 38% to 71%). None of the tests were accurate enough to allow clinicians to confidently differentiate upper from lower urinary tract disease.

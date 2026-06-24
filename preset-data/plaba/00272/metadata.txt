@@ -1,0 +1,5 @@
+pmid:        34540382
+question:    21
+adaptation:  adaptation1
+title:       Rare Presentation of Incarcerated Incisional Richter's Hernia of the Cecum
+sentences:   7

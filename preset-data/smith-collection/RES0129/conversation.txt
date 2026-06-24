@@ -1,0 +1,182 @@
+# Smith Collection Transcript: RES0129
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: I just bringing my son in today because hes had this cough thats been going on for a few days now and for these past two days ive noticed that hes been just tugging at his ear more as well
+
+Doctor: OK so you said the runny nose started two days ago
+
+Patient: Yeah yeah he had a cough yeah cough and runny nose started about yeah 23 days ago
+
+Doctor: Okay the runny nose what color is the discharge
+
+Patient: Pretty clear and watery
+
+Doctor: OK and the coughing is it dry or is it bringing up any phlegm
+
+Patient: Its been dry
+
+Doctor: Its been dry ok and does it sound harsh
+
+Patient: Not really
+
+Doctor: No
+
+Patient: I dont know it sounds kinda like a typical cough
+
+Doctor: OK has he lost his sense of taste or smell
+
+Patient: Hes been a bit more irritable and not eating as much but im not sure
+
+Doctor: OK how about changes in his vision or hearing
+
+Patient: No
+
+Doctor: OK any fevers
+
+Patient: Uhm i dont think so but he we havent checked and hes been yeah as i said kinda a little bit irritable
+
+Doctor: OK any weight loss recently
+
+Patient: Uhm no hes been gaining weight actually sorry i think it yeah he has had a fever the fever yeah the fever started like yesterday
+
+Doctor: Oh ok did you take his temperature
+
+Patient: Yeah my my wife just texted me and told me that she checked it checked it and said it was over 38
+
+Doctor: Oh ok yeah well definitely take a temperature here as well just to make sure has he had any rashes
+
+Patient: No
+
+Doctor: No rashes ok and how about shortness of breath or wheezing
+
+Patient: No i havent heard that
+
+Doctor: No ok and then have you actually taken a look into his ears
+
+Patient: No i havent he has just been tugging at the right one
+
+Doctor: Is he itching it at all
+
+Patient: uh yeah i guess just kind of like really rubbing it around the outside and pulling on the lobe a little bit
+
+Doctor: OK any discharge oh sorry go ahead
+
+Patient: Sorry im just gonna say yeah hes been kind of fussy and pointing at it and no discharge from the ear
+
+Doctor: No discharge ok does it look swollen
+
+Patient: No the outside of the ear looks normal
+
+Doctor: OK ok and how have his bowel movements been
+
+Patient: Thats been normal
+
+Doctor: Normal any changes in his urine
+
+Patient: No its been normal
+
+Doctor: Nausea or vomiting
+
+Patient: Nope
+
+Doctor: Uhm headaches
+
+Patient: No i dont think so
+
+Doctor: OK how about dizziness or fainting spells
+
+Patient: No
+
+Doctor: No any confusion or memory loss
+
+Patient: No i dont think so
+
+Doctor: No ok is he an otherwise healthy child
+
+Patient: Yeah he he is i mean he uhm about six months ago he had uhm croup i think but he recovered quickly from that and he didnt need to be hospitalized or anything
+
+Doctor: OK and his mothers pregnancy with him was it complicated in any way
+
+Patient: She had gestational diabetes but it was diet controlled and shes healthy now from that perspective
+
+Doctor: OK ok thats good uhm and then was he born at term
+
+Patient: He was yeah he was born over like 38 weeks i think
+
+Doctor: Oh ok good and was it a csection or a vaginal delivery
+
+Patient: Uhh vaginal
+
+Doctor: OK any complications during the delivery
+
+Patient: Uhh no
+
+Doctor: No ok how about uhm after birth was he hospitalized for any reason
+
+Patient: No he wasnt he was able to go home
+
+Doctor: OK thats good uhm and has he been developing normally in terms of his motor movements like behavior wise social wise like is he on par with his peers in terms of milestones
+
+Patient: Yeah he is yeah everythings been normal that way and hes been growing well too
+
+Doctor: OK good growing while gaining weight well ok is he on any medications
+
+Patient: No hes not
+
+Doctor: OK is he up to date with all his immunizations
+
+Patient: He is yeah weve been following along with with that
+
+Doctor: OK does he have any allergies
+
+Patient: I dont think so
+
+Doctor: No ok any family history of lung or heart conditions
+
+Patient: uh no
+
+Doctor: No ok does anyone at home smoke
+
+Patient: Uhm i do but not like in the house or anything like that usually just well it will always be either outside or when im at work
+
+Doctor: OK ok any old carpet dust mold asbestos anything like that in your home
+
+Patient: No
+
+Doctor: No ok who does he live with
+
+Patient: So yeah he lives with me its just me and my wife
+
+Doctor: OK any pets at home
+
+Patient: We have a a dog
+
+Doctor: OK has he been in contact with anyone sick recently
+
+Patient: uh not that i can think of
+
+Doctor: OK is he in like daycare
+
+Patient: No no my wifes been been looking looking after him at home shes the primary caregiver well while im at work
+
+Doctor: OK any trouble recently
+
+Patient: No no
+
+Doctor: No ok well those are all the questions that i had for you today did you have any questions of your own
+
+Patient: Uhh no just was wondering what what might be going on
+
+Doctor: Yeah for sure so right now it sounds like a viral picture it sounds like he has a cold and possibly an ear infection id have to take a look into his ear to be able to tell more uhm because some of his symptoms overlap with those of covid well probably do a swab and you should hear back in about 24 to 48 hours uhm and so after i take a look into his ears we can do one of a couple of things so if his tympanic membrane looks like its been perforated or if theres pus in there then well prescribe him a 10 day course of antibiotics and if i see like middle ear effusion or his tympanic membranes bulging and he seems really sick like he has a high fever what she does i will again prescribe him 10 days of antibiotics and if he has a middle ear effusion or a bulging tympanic membrane just one of those two and he doesnt seem to be too sick we can reassess him in 24 to 48 hours uhm an antibiotic that we usually prescribe is amoxicillin uhh how does that sound
+
+Patient: That sounds really good thank you
+
+Doctor: OK no worries take care

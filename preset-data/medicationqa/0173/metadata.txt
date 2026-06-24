@@ -1,0 +1,5 @@
+drug_focus: Quetiapine
+question_type: Dose
+section_title: DOSAGE & ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b007bac6-a207-481c-8aba-03ade1dd6a88
+sample_id: 0173

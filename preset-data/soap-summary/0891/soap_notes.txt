@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0891
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Cramps in feet and hand, muscle contractions in toes, pain in calf.
+- Severity: Cramps are frequent at night (three times a week) and cause discomfort; calf pain impacts sleep.
+- Duration: Symptoms have been occurring for six months.
+- Associated Symptoms: Cramps lead to extended toes that pop into place when stepping on the ground; occasional hand cramps, thumb flexing requiring movement to relieve.
+- Relevant Medical History: HIV for 21 years, previously on antiretroviral medications but stopped 6-7 years ago due to gastrointestinal side effects.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Patient expresses a desire to restart antiretroviral medications.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

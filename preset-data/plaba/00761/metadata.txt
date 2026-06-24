@@ -1,0 +1,5 @@
+pmid:        16372518
+question:    61
+adaptation:  adaptation2
+title:       The pharmacokinetics of zinc from zinc gluconate: a comparison with zinc oxide in healthy men
+sentences:   8

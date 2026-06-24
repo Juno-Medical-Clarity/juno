@@ -1,0 +1,1 @@
+We aimed to develop and evaluate an implementation package that could be adapted to support the uptake of a range of clinical guideline recommendations and be sustainably integrated within general practice systems and resources.

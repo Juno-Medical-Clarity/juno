@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0392
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What is your family medical history? None, that I know of.

@@ -1,0 +1,8 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [18:20] 'medical-jargon-google-easy' -> 'overall survival'
+  [21:22] 'abbr-medical' -> 'OS'

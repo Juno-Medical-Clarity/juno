@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0780
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a ten-year-old boy.
+- Complains of tightness in the back of his legs.
+- Has been using a walker since he started walking at about one year old.
+- Current difficulty in flexing legs at the popliteal angle; can flex to about 20 degrees (normal is 90 degrees).
+- Exhibits toe walking.
+
+Objective:
+- Popliteal angle flexion limited to 20 degrees bilaterally (normal is 90 degrees).
+- Observed toe walking pattern during ambulation.
+
+Assessment:
+- Diagnosis of hamstring tightness.
+- Consideration for surgical intervention to address tightness and toe walking.
+
+Plan:
+- Recommend surgical intervention on hamstrings.
+- Discussed risks of surgery: low risk of infection (less than 1%), anesthesia risks, potential bleeding, changes in sensation, possible failure to correct toe walking, and stiffness after casting.
+- Confirmed that the patient will be under anesthesia during the procedure.
+- Family agrees to proceed with the surgical procedure.

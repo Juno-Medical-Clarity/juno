@@ -1,0 +1,174 @@
+# Smith Collection Transcript: RES0148
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Hi ive had um ive had a cough for the past um three days and uh i also developed a fever um i think so i checked it yesterday night it was um 38 and uh i just decided to uh come into the walk in clinic just to um just to get myself checked out
+
+Doctor: Yeah certainly it it sounds like you um have had a fever as well so uh with the cough you said that started three days ago has it been getting uh any better or any worse
+
+Patient: Its gotten a little bit better id say
+
+Doctor: OK thats good um and and prior to three days ago um did you have a cough before or was it a new new cough
+
+Patient: Its a new cough
+
+Doctor: Alright and uh are you bringing up any sputum
+
+Patient: No
+
+Doctor: um are you bringing up any blood
+
+Patient: No
+
+Doctor: And have you had any shortness of breath
+
+Patient: Uhm no i havent
+
+Doctor: OK um how about any wheezing
+
+Patient: Yeah i guess a little bit
+
+Doctor: A bit ok um is it uh are you having any chest pain
+
+Patient: Uhm no
+
+Doctor: OK um and so you mentioned um with a fever have have you had any chills
+
+Patient: Yeah i did um i had the chills yesterday
+
+Doctor: OK and have you had any night sweats
+
+Patient: Uhm no
+
+Doctor: Alright and um have you had any eye redness runny nose or even a sore throat
+
+Patient: No i havent
+
+Doctor: Alright have you had any uh nausea or vomiting
+
+Patient: uh no
+
+Doctor: uh a loss of taste or loss of smell
+
+Patient: No
+
+Doctor: OK and any um abdominal pains
+
+Patient: Uhm no
+
+Doctor: Any uh diarrhea
+
+Patient: No
+
+Doctor: You got any urinary problems
+
+Patient: No
+
+Doctor: OK and have you had any skin changes or uh rashes
+
+Patient: No
+
+Doctor: And how has your energy been have you had fatigue
+
+Patient: um a little bit
+
+Doctor: Alright and have you had any muscle aches or or body pains
+
+Patient: Uhm not much no but yeah its just ive been feeling yeah i guess a little bit i have been feeling achy uhm but i just thought it was my fibromyalgia acting acting up but yeah its its been worse over the past three days
+
+Doctor: OK uh so youve had um this cough a dry cough a fever chills and uh been more tired and and been a little bit more achy these past uh three days have you had any other symptoms
+
+Patient: I dont think so
+
+Doctor: OK and have you tried anything to make it better
+
+Patient: uh i just took a day or two off of work and i just rested and um had a lot of uh hot water it helped me uh it helped with the cough
+
+Doctor: OK great and um have you had any uh like symptoms like this before
+
+Patient: Yeah um yeah i mean when i i guess i get sick i do get similar symptoms like when i get the cold or the flu but i usually have like a runny nose um or like a stuffy nose but thats kind of different this time a little bit
+
+Doctor: OK and in the past have you been uh diagnosed with any medical conditions
+
+Patient: I have fibromyalgia and uh i um also have schizophrenia
+
+Doctor: OK and are you taking medications currently
+
+Patient: uh yeah uhm i take um quetiapine and uh i just i take advil um when my uh joint pains are really bad
+
+Doctor: OK and do you have a um somebody that follows you along for either uh fibromyalgia or or schizophrenia
+
+Patient: um my family doc and then um yeah its pretty much just him um he yeah
+
+Doctor: OK and uh do you have any allergies to medications
+
+Patient: No
+
+Doctor: Alright and um are you aware if your immunizations are up to date
+
+Patient: um yeah
+
+Doctor: Alright and could you tell me alright then sorry actually uh have you had any hospitalizations or uh previous surgeries
+
+Patient: Uhm well i uh ive been hospitalized i i was kept in the psych unit for a couple of days um two years ago but nothing other than that
+
+Doctor: OK um and its been stable since then
+
+Patient: Yeah
+
+Doctor: OK great and i um i just wanted to ask a little bit about um your personal history i was just wondering if you could talk a little bit about uh where youre living and and who youre living with
+
+Patient: uh sure so im living with my um im living with my husband and uh we live in an apartment
+
+Doctor: OK and has he been sick or has anybody youve been around been sick
+
+Patient: Uhm he was sick last week but he got better on his own
+
+Doctor: OK and were were his symptoms similar to yours or or uh or were they different
+
+Patient: um they were kind of different i would say he just had a um he had a sore throat and uh that kind of lasted for three or four days and then he just got better
+
+Doctor: OK and um are you currently working or um
+
+Patient: um i uh no im a im a stay at home i just stay at home i dont work
+
+Doctor: OK and so and have you traveled anywhere or any other uh potential exposures
+
+Patient: uh no
+
+Doctor: OK um and do you smoke cigarettes
+
+Patient: I do
+
+Doctor: OK yeah how much
+
+Patient: uh two or three a day
+
+Doctor: And and for how long or for when did you start smoking sorry
+
+Patient: uh so ive been uh smoking since i was uh 20 years old so about 30 years ago was when i started
+
+Doctor: OK and and have you could have you thought of have you tried to quit before
+
+Patient: Uhm i did but then i just didnt uh i just went back to it um but im trying to cut down
+
+Doctor: OK uh its good that youve been able to cut down so congratulations on that um and do you drink alcohol
+
+Patient: Uhm i i do uh ill drink um sometimes with my friends maybe uh once a month or once in two three months um but i havent been going out with them since the pandemic started so i havent had much to drink i havent had anything to drink um since the past year
+
+Doctor: OK um i see and uh have you had any um history of heart or lung conditions in the family
+
+Patient: No
+
+Doctor: OK yeah and i think that that was all the questions that i wanted to ask on on history today before we go ahead on to the physical exam uh did you have anything that you wanted to add maybe before um that i forgot to ask about
+
+Patient: uh no
+
+Doctor: OK um so we will start with um some investigations including a a covid swab today just because of your uh general symptoms which do overlap with with covid um although it could as you mentioned uh be something like the common cold um as well um and so we will uh be sure to test for covid and in the meantime we ask you to self isolate um for for 14 days um and we will get back the results um as soon as we can and if your symptoms get worse at any point um then we will uh act accordingly

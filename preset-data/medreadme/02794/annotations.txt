@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.3
+split:       dev
+
+jargon_spans:
+  [1:2] 'medical-name-entity' -> 'FRIENDS'

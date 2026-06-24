@@ -1,0 +1,7 @@
+Parkinson's disease (PD), the second most frequent neurodegenerative disease, has been linked to increased central and peripheral inflammation.
+Although the response of the immune system to dopaminergic treatment remains to be fully understood, dopaminergic agonists are known to exhibit immunoregulatory properties which may, at least in part, explain their therapeutic effect in PD.
+This highlights the need of analyzing immune parameters in longitudinal studies on PD patients receiving specific therapeutic regimes.
+In this work, PD patients were included in a two-year prospective study comparing the effect of levodopa alone and a levodopa/pramipexole combo therapy on several regulatory and pro-inflammatory immune cell populations.
+We demonstrated that PD patients show decreased circulating levels of several important regulatory subpopulations, as determined by flow cytometry.
+Notably, when administered alone, levodopa decreased the levels of functional Bregs and SLAMF1+ tolerogenic DCs and increased the levels of total and HLA-DR+ classical monocytes, while the pramipexole/levodopa combo may promote Treg- and tolerogenic DC-mediated regulatory responses.
+These results suggest that a regime based on levodopa alone may promote a pro-inflammatory-type response in PD patients, but when combined with pramipexole, it promotes a clinically beneficial regulatory-type environment.

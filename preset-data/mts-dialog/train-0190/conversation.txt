@@ -1,0 +1,10 @@
+Doctor: How are you feeling today, ma'am?
+Patient: Honestly, overall, I'm feeling a lot better.
+Doctor: Are you still having the diarrhea and decreased appetite?
+Patient: Yes, but I'm still feeling better though.
+Doctor: Have you been peeing a normal amount?
+Patient: Yeah, no problems there. I measured it like you told me to—six hundred M L.
+Doctor: When was the last time you peed?
+Patient: Um, it was about seven this morning.
+Doctor: Are you having any fever symptoms?
+Patient: No, I feel pretty well.

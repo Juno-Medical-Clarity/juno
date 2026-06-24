@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1179  |  gem_id: gem-cochrane-simplification-train-1180  |  doi: 10.1002/14651858.CD000369
+
+In this review, treatment with interferon alfa in the acute stage of transfusion-acquired hepatitis C infection improved liver biochemistry and enhanced viral clearance compared to the natural history of the disease. We cannot ascertain, however, the effect of interferon on clinical outcomes due to a lack of data. Because of the effect of therapy on biochemical and virologic outcomes, we recommend the treatment of acute hepatitis C with at least interferon alfa at a dosage of three million units thrice weekly for three months. Future trials should focus on the efficacy of combination therapy with ribavirin and pegylated interferons, which have shown superiority to interferon alfa in chronic hepatitis C.

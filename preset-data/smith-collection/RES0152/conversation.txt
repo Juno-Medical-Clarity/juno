@@ -1,0 +1,168 @@
+# Smith Collection Transcript: RES0152
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How how may i help you
+
+Patient: Hi uh nice to meet you ive just uh been experiencing um a cough for the last few weeks and uh i also recently started noticing that im coughing up some blood as well like its mixed into like sputum
+
+Doctor: I see alright so you said a few weeks for the cough is this more than three weeks more than four weeks or a few months
+
+Patient: I would say its almost i would say almost like three weeks now
+
+Doctor: OK when the cough started uh were you bringing up um were you bringing up sputum or phlegm at that time
+
+Patient: uh yeah initially it was just like um kind of white too sometimes yellowish phlegm but now over the last week ive been also noticing um some blood in it as well
+
+Doctor: OK and how much blood have you been bringing up um just trying to think in maybe uh teaspoon sizes if you can
+
+Patient: uh yeah i would say maybe half a half a teaspoon
+
+Doctor: OK and um have you been having any shortness of breath
+
+Patient: um no i dont think so but kind of like i do feel some discomfort in my chest like i just associated it with the cough
+
+Doctor: I see have you had any uh any chest pain
+
+Patient: uh no its more of just the discomfort with the coughing
+
+Doctor: OK and um have you had any changes to your breathing like like wheezing
+
+Patient: uh no nothing like that
+
+Doctor: Alright um and have you had any infectious or viral type symptoms like itchy eyes or runny runny nose sore throat
+
+Patient: uh no nothing like that
+
+Doctor: OK and um how has your energy been any any fatigue
+
+Patient: um its kind of been a bit low over the last few weeks just i feel more tired um yeah i had to miss a few days of work as well
+
+Doctor: I see alright um have you had any fevers or chills
+
+Patient: uh definitely i feel like i have had some chills over the last week um i havent had a chance to measure my temperature though
+
+Doctor: OK have you felt feverish or have you felt hot at any point
+
+Patient: um yeah i would say like a few times this week ive also felt like hot
+
+Doctor: Alright have you had any um like night sweats
+
+Patient: Uhm now that you mention it like i i would say two two days out of the last week ive had night sweats where my sheets were kind of just drenched when i and then i woke up noticing that
+
+Doctor: Alright and how about your um your weight have you had any changes to your weight over the last several months
+
+Patient: Yeah i think ive lost maybe 10 pounds in the last couple months
+
+Doctor: OK that sounds like some uh some weight lost significant weight loss have you been trying to lose weight
+
+Patient: No not really
+
+Doctor: OK uhm and have you felt as though um like your hearts racing or beating really fast
+
+Patient: No nothing like that
+
+Doctor: Have you had any uh like fainting or dizziness
+
+Patient: No nothing like that
+
+Doctor: OK um and how about any nausea or vomiting
+
+Patient: No no no nausea or vomiting
+
+Doctor: Have you had any abdominal pain
+
+Patient: No
+
+Doctor: Any diarrhea
+
+Patient: No
+
+Doctor: Any urinary problems like pain or or going often
+
+Patient: uh no nothing like that
+
+Doctor: OK uh have you noticed any rashes anywhere
+
+Patient: No no rashes
+
+Doctor: Have you had any muscle aches or joint pains
+
+Patient: um no nothing like that
+
+Doctor: OK and um have you been diagnosed with any medical conditions in the past
+
+Patient: No um ive been fairly healthy
+
+Doctor: OK thats good and have you had any surgeries or any reasons to be hospitalized before
+
+Patient: No
+
+Doctor: Do you take any medications or any over the counter supplements
+
+Patient: um no
+
+Doctor: Alright any allergies that youre aware of
+
+Patient: Not that i know no
+
+Doctor: OK and um are your immunizations up to date
+
+Patient: um immunizations are all up to date yeah
+
+Doctor: Alright and currently um can you tell me a little bit about who youre living with and uh where youre living
+
+Patient: Yeah currently im living uh just in um its kind of like a a home with just a i dont really know the people too well just kind of like a home where um a bunch of guys are just living and working separately i just actually recently moved here from um the philippines six months ago
+
+Doctor: I see ok um do you interact with many of the people in the house and and has anybody else been sick
+
+Patient: Uhm i dont know if anyone else has been sick i havent really noticed that i dont really see them too much
+
+Doctor: OK and six months ago prior to um yeah coming from the philippines was anybody sick there or did you hear of anybody that you spent time with having um tuberculosis
+
+Patient: um yeah theres been not anyone that i know of but theres definitely like even where i worked and things like that theres definitely people who have had tuberculosis in the past
+
+Doctor: I see ok um and uh do you smoke cigarettes
+
+Patient: No
+
+Doctor: And uh how about smoking cannabis or using any products
+
+Patient: No nothing like that
+
+Doctor: OK and you use any recreational drugs
+
+Patient: uh no
+
+Doctor: OK um and are you currently sexually active
+
+Patient: uh currently no
+
+Doctor: OK um so no concerns for a sexually transmitted infection at this time
+
+Patient: No
+
+Doctor: OK um and um have you traveled anywhere recently
+
+Patient: um not recently no
+
+Doctor: OK but uh and anybody in the family um have uh heart or lung conditions
+
+Patient: No
+
+Doctor: OK um and any cancer that run in the family
+
+Patient: Not that i know of
+
+Doctor: OK um so uh i think thats everything i wanted to ask on on history today so it sounds like youve been having this cough um thats been going on for just over three weeks now and starting with some um whitish clear sputum and more recently even started to be coughing up some blood as well and youve also been really um fatigued and have had some malaise over the last several weeks um and any other symptoms or oh and also yeah youve had some night sweats chills and uh been feeling feverish as well so well certainly check your temperature today too ok so anything i missed
+
+Patient: uh no i think that that sounds great thank you so much
+
+Doctor: OK so well get the um testing started for uh for the investigations and yeah if uh at any point symptoms get worse well reevaluate
+
+Patient: Yeah sounds good thank you so much

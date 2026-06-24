@@ -1,0 +1,14 @@
+Eukaryotes are cells commonly identified by having a nucleus (chamber to hold DNA). Eukaryotes provide genetic instructions to the following histone proteins that are similar but not identical: H2A, H2B, H3, and H4. Histones are proteins that provide structural support to a chromosome and sometimes act as the spool that the thread-like DNA wraps around.
+With DNA, these core histones come together into the basic structural unit of DNA packaging called the nucleosomal octamer.
+Importantly, histones for H2A and H3 are maintained as genes that develop a new function and are applied for chromatin, a substance within a chromosome made up of DNA and protein.
+
+In this context, the identification of core histone-like genes in the fluid that fills cells in Marseilleviridae viruses is a new finding with possible importance to understanding the origin of eukaryotic chromatin.
+This study analyzes and compares core histone-like genes from the genes of all known Marseilleviridae viruses, as well as other Marseilleviridae genes relevant to the beginning of the eukaryotic DNA replication machine.
+Using different approaches, researchers show that Marseilleviridae histone provide genetic information to H2B-H2A and H4-H3 structures.
+Marseilleviridae core histones form similar copies to each of the four eukaryotic histone groups.
+This suggests that parts of the Marseilleviridae core histone changed before eukaryotes changed functions.
+Researchers also show that Marseilleviridae genes provide information to other enzymes that form organisms similar to eukaryotes.
+This is a relevant finding given that DNA unwinding enzymes influences histone structure and the folding of DNA and is the second most abundant nuclear protein after histones.
+In conclusion, an early origin for Marseilleviridae histone genes is a more limited explanation than gene transfers + gene fusions + enough changes to remove relatedness to eukaryotic changes in functions within the H2A and H3.
+It is suggested that Marseilleviridae histone genes and their DNA genes are possibly taken from an organism that can replicate DNA that diverged before the beginning of eukaryotic core histone types for H2/H2A.Z and H3/cen H3.
+These results also imply that core histones are used in viral DNA folding and/or protection from viral-degrading, host enzymes called endonucleases.

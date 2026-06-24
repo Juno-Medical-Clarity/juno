@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3267  |  gem_id: gem-cochrane-simplification-train-3268  |  doi: 10.1002/14651858.CD007031
+
+This findings of this review of 21 trials (7243 participants) do not allow certainty about the relative efficacy of ciclesonide compared to older inhaled corticosteroids, especially at higher doses. The results of the review to date do not indicate whether ciclesonide provides a significantly more useful safety profile that other inhaled corticosteroids at similar equivalent doses. However, the finding of lower oral candidiasis in patients treated with ciclesonide compared to fluticasone may be important for those patients who experience oral thrush with their current ICS. In addition, further studies in children are required to obtain data on the side-effect profile of ciclesonide in this population.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0017  |  gem_id: gem-cochrane-simplification-validation-18  |  doi: 10.1002/14651858.CD004302.pub2
+
+Ciliary neurotrophic factor treatment did not show any significant effect on the progression of amyotrophic lateral sclerosis and side effects were observed at high concentrations.The review found only two eligible trials with a total of 1300 participants; the risk of bias was low for one trial but was unclear for the other trial; they did not show any significant effect of ciliary neurotrophic factor on progression of ALS or MND in man. On the other hand, several adverse effects were observed after treatment with ciliary neurotrophic factor. An updated search was performed in April 2011, but no new studies were found.

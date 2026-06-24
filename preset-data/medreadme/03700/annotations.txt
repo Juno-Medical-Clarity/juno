@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Chronic immune activation'
+  [16:19] 'medical-jargon-google-easy' -> 'simian immunodeficiency virus'
+  [20:21] 'abbr-medical' -> 'SIV'
+  [30:31] 'abbr-medical' -> 'SIV'

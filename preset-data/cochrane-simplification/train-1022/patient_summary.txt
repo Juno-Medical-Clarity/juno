@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1022  |  gem_id: gem-cochrane-simplification-train-1023  |  doi: 10.1002/14651858.CD006624.pub2
+
+This review compared the effects of amisulpride with those of other so called second generation (atypical) antipsychotic drugs. For half of the possible comparisons not a single relevant study could be identified. Based on very limited data there was no difference in efficacy comparing amisulpride with olanzapine and risperidone, but a certain advantage compared with ziprasidone. Amisulpride was associated with less weight gain than risperidone and olanzapine.

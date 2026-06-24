@@ -1,0 +1,1 @@
+By mathematical modeling and simulations, we investigated how heterogeneous signaling responses are evoked in the EGF signaling pathway and influence the switch-like activation of nuclear ERK.

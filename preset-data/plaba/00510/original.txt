@@ -1,0 +1,7 @@
+Lung cancer accounts for more than half of the new cancers diagnosed world-wide with poor survival rates.
+Despite the development of chemical, radiological, and immunotherapies, many patients do not benefit from these therapies, as recurrence is common.
+We performed single-cell RNA-sequencing (scRNA-seq) analysis using Fluidigm C1 systems to characterize human lung cancer transcriptomes at single-cell resolution.
+Validation of scRNA-seq differentially expressed genes (DEGs) through quantitative real time-polymerase chain reaction (qRT-PCR) found a positive correlation in fold-change values between C-X-C motif chemokine ligand 1 (CXCL1) and 2 (CXCL2) compared with bulk-cell level in 34 primary lung adenocarcinomas (LUADs) from Stage I patients.
+Furthermore, we discovered an inverse correlation between chemokine mRNAs, miR-532-5p, and miR-1266-3p in early-stage primary LUADs.
+Specially, miR-532-5p was quantifiable in plasma from the corresponding LUADs.
+Collectively, we identified markers of early-stage lung cancer that were validated in primary lung tumors and circulating blood.

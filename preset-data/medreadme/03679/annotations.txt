@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        simple
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'phenotypic consequences'
+  [5:7] 'medical-jargon-google-easy' -> 'ribosome biogenesis'
+  [28:29] 'medical-jargon-google-easy' -> 'ribosomopathies'

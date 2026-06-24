@@ -1,0 +1,6 @@
+Circadian variation in atrial fibrillation (AF) frequency is explored in this paper by employing recent advances in signal processing.
+Once the AF frequency has been estimated and tracked by a hidden Markov model approach, the resulting trend is analyzed for the purpose of detecting and characterizing the presence of circadian variation.
+With cosinor analysis, the results show that the short-term variations in the AF frequency exceed the variation that may be attributed to circadian.
+Using the autocorrelation method, circadian variation was found in 13 of 18 ambulatory ECG recordings (Holter) acquired from patients with long-standing persistent AF.
+Using the ensemble correlation method, the highest AF frequency usually occurred during the afternoon, whereas the lowest usually occurred during late night.
+It is concluded that circadian variation is present in most patients with long-standing persistent AF though the short-term variation in the AF frequency is considerable and should be taken into account.

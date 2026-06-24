@@ -1,0 +1,40 @@
+# SOAP Notes — Sample 0045
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Numbness in right hand, particularly thumb and index finger, with mild numbness in middle and ring finger
+- Gradual onset over the past 1-2 months, worsening over time
+- Constant numbness, worse with activities such as holding steering wheel, using phone, reading a book
+- Tingling sensation described as sharp, no pain
+- Difficulty holding objects in right hand, dropping items
+- No radiation of symptoms to forearm, upper arm, or shoulder
+- No neck pain or trauma to wrist/hand
+- Denies weight loss, fevers, chills, night sweats, changes in vision, hearing, smell, taste, nasal congestion, sore throat, cough, shortness of breath, chest pain, palpitations, lightheadedness, dizziness, nausea, vomiting, abdominal pain, urinary problems, changes in bowel movements, changes in hair or nails, skin rashes, joint pains or swelling
+- Alleviating factors: shaking out hand, putting pressure on numb areas, slightly improved with flicking wrist
+
+Past Medical History:
+- Childhood asthma, no current inhaler use
+- No other medical conditions
+- No medications, allergies, surgeries, or hospitalizations
+
+Social History:
+- Lives with boyfriend in rented basement apartment downtown
+- Grad student
+- Occasional alcohol use (1 glass of wine/week), no smoking or recreational drug use
+
+Family History:
+- Rheumatoid arthritis
+
+Objective:
+- Right thenar eminence atrophy compared to left
+- No swelling, erythema, warmth, or tenderness on palpation of hand/wrist
+- Full range of motion of wrist, elbow, shoulder, and neck without pain
+- Positive Tinel's test at wrist (reproduction of tingling with tapping)
+- Positive Phalen's test (tingling with wrist flexion)
+
+Assessment:
+- Likely carpal tunnel syndrome
+
+Plan:
+- Send for nerve studies to confirm diagnosis
+- Recommend nighttime splinting and activity modification

@@ -1,0 +1,5 @@
+pmid:        9600581
+question:    24
+adaptation:  adaptation1
+title:       Buspirone and lorazepam in the treatment of generalized anxiety disorder in outpatients
+sentences:   7

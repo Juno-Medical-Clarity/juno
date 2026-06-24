@@ -1,0 +1,5 @@
+pmid:        34477130
+question:    36
+adaptation:  adaptation1
+title:       Pooled-analysis of efficacy and safety of minimally invasive versus standard percutaneous nephrolithotomy
+sentences:   13

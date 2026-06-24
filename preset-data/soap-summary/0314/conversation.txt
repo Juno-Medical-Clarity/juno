@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0314
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anyone sick in your family? No. How about anyone with the same disorders? No, I don't know. Okay don't you worry.

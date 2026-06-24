@@ -1,0 +1,12 @@
+Doctor: Are you still working?
+Patient: No, I am retired now. I used to work for the U S postal service as an electronic technician but took retirement one year earlier due to my disability.
+Doctor: Ah okay. And who is in your family?
+Patient: Well, I stay with my wife and daughter in our apartment.
+Doctor: Okay. Do you smoke?
+Patient: No.
+Doctor: How about alcohol?
+Patient: I use to drink occasionally, that too very rare, but after my symptoms stated I stopped completely.
+Doctor: Any use of recreational or illegal drugs?
+Patient: Nope.
+Doctor: Did you travel anywhere recently?
+Patient: No, it's been really long since I traveled anywhere.

@@ -1,0 +1,5 @@
+pmid:        24172642
+question:    67
+adaptation:  adaptation2
+title:       Physical exercise after knee arthroplasty: a systematic review of controlled trials
+sentences:   8

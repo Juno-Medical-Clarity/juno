@@ -1,0 +1,1 @@
+This allows us to predict the outcome of individual infections continuously across a temperature gradient, as well as to gain a better understanding of the impact of temperature changes on disease dynamics.

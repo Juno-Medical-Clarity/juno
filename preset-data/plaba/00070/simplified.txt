@@ -1,0 +1,11 @@
+Low thyroid function occurs in around 5% of the US population aged ≥12 years.
+Levothyroxine (LT4) (a thyroid hormonal drug) is standard treatment.
+Around 5-10% of patients with regular thyroid-stimulating hormone levels after LT4 may still have symptoms attributable to reduced thyroid funciton.
+Experts debate if adding levotriiodothyronine (LT3), another manmade thyroid hormone, to LT4 will help lingering symptoms.
+We explore evidence for and against LT4/LT3 double treatment for best treating patients with lingering thyroid issues.
+We searched PubMed in March 2017 using the terms "hypothyroid" or "hypothyroidism" (low thyroid function) and "triiodothyronine combination" or "T3 combination" (thyroid hormonal drug therapy).
+
+Current evidence does not support LT4/LT3 double treatment for those with reduced thyroid function.
+Variations in genes blueprinting enzymes that convert thyroid hormone from one form to another may explain the lack of improvement with LT4 treatment.
+However, studies of LT4/LT3 double treatment are not conclusive.
+Lingering symptoms in patients with normal thyroids from LT4 therapy may be from other thyroid-unrelated causes, which should be investigated by the clinician.

@@ -1,0 +1,1 @@
+The mechanistic target of rapamycin (MTOR) kinase functions as a core catalytic subunit in two physically and functionally distinct complexes mTORC1 and mTORC2, which also share other common components including MLST8 (also known as GbL) and DEPTOR.

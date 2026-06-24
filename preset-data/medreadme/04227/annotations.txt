@@ -1,0 +1,9 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'FI'
+  [17:21] 'medical-jargon-google-easy' -> 'Culturally adapted Family Intervention'
+  [22:23] 'abbr-medical' -> 'CaFI'

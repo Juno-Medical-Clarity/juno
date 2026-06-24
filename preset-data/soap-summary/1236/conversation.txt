@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1236
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Can you tell me about the medications that you are currently using? I am taking Alesse twenty eight. Do you know its strength? Um, like how many milligrams? Oh yes, it is twenty M C G and I take point ten milligrams of it. When did you start it? On seventh August in two thousand and one. Who prescribed it? My O B G Y N, Doctor A.

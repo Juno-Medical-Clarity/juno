@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0961
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Numbness in legs, decreased coordination, pins and needles sensation in legs.
+- Severity: Symptoms are significant enough to affect walking and spatial awareness.
+- Duration: Symptoms started on November 5th and have been ongoing since then.
+- Associated symptoms: No issues with bowel movements; no recent flu-like symptoms.
+- Relevant medical history: No previous surgeries, no major health issues in the past, not currently taking any medications.
+- Family history: No family history of similar symptoms or other medical issues.
+- Concerns: Feels like walking in space and lacks up and down spatial awareness; hot showers provide temporary relief.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

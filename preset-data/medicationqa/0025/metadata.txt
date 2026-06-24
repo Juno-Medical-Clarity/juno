@@ -1,0 +1,5 @@
+drug_focus: neupro and ropinirole
+question_type: Interaction
+section_title: DRUG INTERACTIONS
+source_url: https://www.pdr.net/drug-summary/Neupro-rotigotine-2468
+sample_id: 0025

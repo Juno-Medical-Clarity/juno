@@ -1,0 +1,11 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [11:14] 'medical-jargon-google-easy' -> 'anti-parasitic macrocyclic lactones'
+  [16:17] 'medical-jargon-google-easy' -> 'avermectins'
+  [18:19] 'medical-jargon-google-easy' -> 'milbemycins'
+  [21:23] 'medical-jargon-google-easy' -> 'Buruli ulcer'
+  [24:25] 'abbr-medical' -> 'BU'

@@ -1,0 +1,14 @@
+Doctor: Any difficulty in hearing?
+Patient: No.
+Doctor: Difficulty swallowing?
+Patient: Um no.
+Doctor: Any double vision or blurred vision or difficulty seeing things properly?
+Patient: No, no problem at all.
+Doctor: Okay.
+Doctor: How about headaches or migraine?
+Patient: No headache.
+Doctor: Did you notice any change in your bowel moment?
+Patient: No, it is the same.
+Doctor: Any pain while urinating or change in frequency?
+Patient: No.
+Doctor: Okay.

@@ -1,0 +1,5 @@
+pmid:        30791698
+question:    31
+adaptation:  adaptation1
+title:       Treatment Recommendations for Tardive Dyskinesia
+sentences:   10

@@ -1,0 +1,16 @@
+qid: TQ29
+source_file: 1-136582205.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: I take Loperamide for chronic diahrrea, stopping periodically to have a movement, which is loose. Is there a way for a happy medium?
+nlm_summary: Are there chronic diarrhea treatments less congested than Loperamide?
+
+focus_entities:
+  [F1] (Problem) chronic diahrrea
+  [F2] (DrugSupplement) Loperamide
+question_types:
+  [T1] TREATMENT
+  [T2] ALTERNATIVE
+keywords:
+  [K1] (Problem) chronic diahrrea

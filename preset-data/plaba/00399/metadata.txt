@@ -1,0 +1,5 @@
+pmid:        30591350
+question:    31
+adaptation:  adaptation1
+title:       Current treatment of tardive dyskinesia
+sentences:   5

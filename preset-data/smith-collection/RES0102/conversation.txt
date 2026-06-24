@@ -1,0 +1,214 @@
+# Smith Collection Transcript: RES0102
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: I ive had this cough thats been ongoing and and getting worse and and now ive been having this like sharp pain in my in my chest
+
+Doctor: OK and when did the cough first start
+
+Patient: So yeah like the cough started uh started maybe a couple of weeks ago
+
+Doctor: A couple weeks ago ok and has it gotten worse since then or has it stayed about the same
+
+Patient: uh it it got worse initially but its been about the uh well actually yeah its been getting worse cause now ive ive started to notice blood in the sputum that wasnt there at first
+
+Doctor: OK and when did you first notice that
+
+Patient: So i i first saw some blood uhm two days ago it was a really small amount so i didnt worry too much but i i brought up blood yesterday and again this morning its been just about enough to cover a tissue so its not a lot of blood each time but its pretty red
+
+Doctor: OK and before that were you getting any production throughout your coughs for the last few weeks like were you producing any sputum
+
+Patient: uh no
+
+Doctor: No ok can you just describe your cough currently is it more of a wet cough or dry cough
+
+Patient: uh it yeah its its dry mostly with the exception of bringing up some of the blood
+
+Doctor: And is the blood just in like sputum that youre bringing up or are you coughing up blood into the tissue for example
+
+Patient: Blood is im coughing that up into the tissue
+
+Doctor: OK and do you remember 2 weeks ago prior to that were there any factors that might have caused this like for example did you travel anywhere or see or was in contact with anyone that was sick
+
+Patient: No i havent uh traveled anywhere i have been doing volunteering and and things at the homeless shelter here in in town its been really cold out
+
+Doctor: OK uh and how long have you been volunteering there
+
+Patient: uh i started this winter so the last three three or four months
+
+Doctor: OK and were you in contact with anyone there that was sick or was having similar symptoms at all
+
+Patient: There are certainly some people around that that had some that would have a cough or were not feeling very well but uh and sometimes i would see people who would even have a hospital gown on that that that uh came from the hospital so yeah there were definitely some people who werent feeling well
+
+Doctor: OK and do you know if anyone at the homeless shelter or anywhere else around your surrounding has had tuberculosis
+
+Patient: No not that im aware of i havent heard of that
+
+Doctor: OK are you having any other symptoms at all besides the the coughing and the blood like coughing up blood as well
+
+Patient: Yeah ive been uh starting to get like this sharp chest pain as well i kind of feel it on the left sides and in center i guess kinda more so
+
+Doctor: OK and your chest pain when did that start
+
+Patient: So uh this started yeah bout a few days ago as well its been within the last week
+
+Doctor: OK and uh would you describe it as so you said its kind of a sharp pain does it move around anywhere
+
+Patient: No the pain i feel it about in the same spot each time
+
+Doctor: OK and are you feeling the pain when youre coughing or is it when youre exerting yourself like when do you feel the pain and how long does it last
+
+Patient: I yeah i will feel it when i cough i also feel it uh if im maybe moving around as well like changing positions or things like that it hurts for a few minutes and then it it will kind of settle down if if im if i stay stationary and sort of lean forward a little bit it will it will start to feel better
+
+Doctor: Sort of feels better ok and besides besides like leaning forward has anything helped reduce that pain at all
+
+Patient: Yeah well if i lie flat uhm it its uh or sorry no actually the pain gets worse if i i lie flat or if im if im taking a deep breath in but really the only thing that helps the pain is if i try to lean forward when im sitting down
+
+Doctor: OK i see and do you have any pain when breathing in or out
+
+Patient: I do yeah it it gets worse if i if im taking a deep breath in and even more so after i after i cough if im trying to catch my breath ill feel it then too
+
+Doctor: OK and uhm other than these symptoms do you have any kind of shortness of breath do you have any dizziness or increased sweating any of those symptoms
+
+Patient: I have been sweating at night but uh yeah thats it
+
+Doctor: And how about any fevers or chills
+
+Patient: I i have felt a bit hot thats more so yeah maybe when ive been having night sweats but i feel ok now
+
+Doctor: OK and when you say night sweats are your sheets and blankets like soaked your pillows
+
+Patient: Yeah there there have been a few few nights for sure but it doesnt happen every night but over these last several months its been weird ive woken up soaked
+
+Doctor: OK uh do you have any other symptoms like a headache or nausea vomiting
+
+Patient: No
+
+Doctor: Have you measured a temperature at all
+
+Patient: Uhm no i havent
+
+Doctor: OK we can do that today do you have any other symptoms like feeling like pounding your chest racing heart anything like that
+
+Patient: No nothing like that
+
+Doctor: Have you noticed any swelling in your extremities like your legs and hands
+
+Patient: No
+
+Doctor: OK and do you have any issues with your bowel movements any constipation or diarrhea
+
+Patient: No
+
+Doctor: Any urinary issues
+
+Patient: No
+
+Doctor: OK any issues with your sleep and appetite
+
+Patient: uh no sleeps been ok and ive been eating well but i have uhm lost some weight and and ive been more fatigued over the last couple months
+
+Doctor: OK before the two weeks or a couple of weeks that you had this were you sick at all recently like with a cold or any flu like symptoms
+
+Patient: No i i uh i guess ive been fatigued over the last couple of months but i havent had any flu like symptoms
+
+Doctor: OK and do you have any exposure to dust fumes animals anywhere in your surrounding
+
+Patient: I do have uh two cats at home but ive had them for seven years now and ive been tested for allergies and and im clear there
+
+Doctor: OK do you live with anyone right now
+
+Patient: Yeah i live with my husband and we have three daughters as well
+
+Doctor: OK and are any of them sick at all or have any similar symptoms
+
+Patient: Yeah my my husbands had a cough uh as well he hasnt brought up any blood or anything though but my my daughters have felt ok
+
+Doctor: OK and do you have any past medical diagnosis like high blood pressure diabetes asthma anything like that
+
+Patient: Yeah i do have uh type 2 diabetes as well as high blood pressure ive been diagnosed with depression before as well i do take a few medications for diabetes and blood pressure im not on insulin though
+
+Doctor: OK and do you know what medications you take
+
+Patient: I think an ace inhibitor and and i think ramipril and uh metformin
+
+Doctor: OK and do you take anything for depression
+
+Patient: I used to take a a citalopram but i stopped and and things have been been stable
+
+Doctor: Thats good any hospitalizations or surgeries in the past
+
+Patient: I had two c sections for my second daughter and and 3rd
+
+Doctor: OK any complications at all with those c sections
+
+Patient: No everything was was good
+
+Doctor: OK any other surgeries or hospitalizations
+
+Patient: No
+
+Doctor: OK do you have any family history of any lung conditions heart conditions any cancers
+
+Patient: My dad had a stroke when he was in his late 60s but thats the only thing i can think of
+
+Doctor: OK and i know you said you volunteer at the homeless shelter but do you do anything else for work at all
+
+Patient: Yeah ive been doing some administrative work from from home because of covid so with the extra time ive been trying to to do some extra volunteering
+
+Doctor: Thats really good and so besides so you live with your husband and three kids does anyone in smoke in the house or do you smoke at all
+
+Patient: No i dont no one smokes in the house
+
+Doctor: OK does uh do you take any recreational drugs like marijuana
+
+Patient: No
+
+Doctor: And how about alcohol
+
+Patient: Sometimes ill have some like red wine with dinner but thats only on like christmas or an occasion
+
+Doctor: OK yeah alright so uh other than that sorry i think i might have forgotten to ask you a couple questions so no fainting spells no shortness of breath nothing like that
+
+Patient: No i havent had anything like that just a stern cough
+
+Doctor: OK and no chest pain on exertion
+
+Patient: No its the chest pain well i guess if im like moving around a lot but its not it doesnt come on uh like because of like physical activity i just feel it like anytime im like when im breathing in or even just moving my body around in the chair
+
+Doctor: And any like fatigue or increased tiredness
+
+Patient: Yeah ive had some fatigue for sure
+
+Doctor: OK and have you lost any weight recently
+
+Patient: Yeah i i have actually im im down 20 pounds i thought that was great i i was 200 pounds just two months ago
+
+Doctor: And have you been trying to lose weight or that 20 pounds just went away spontaneously
+
+Patient: uh i mean i i guess ive tried to make changes to my diet here and there because of the diabetes but i dont really think that it would be enough to lose 20 pounds
+
+Doctor: OK i see yeah so do you have any questions those are all the questions i have do you have any questions or concerns
+
+Patient: No i was just i guess just concerned about the the blood in the in the cough
+
+Doctor: Yeah so definitely thats something concerning we want to make sure there was no so you work at a homeless shelter where there may be a tuberculosis case and your symptoms of coughing up blood as well as losing a significant weight recently and some of the other symptoms that you described as well point towards uh tb as one of the causes no lung cancer history right in your family
+
+Patient: No
+
+Doctor: OK uhm so we definitely want to do testing for tb will do us a smear today of your sputum and we will since you have been in contact with your family we will have to contact a public health if the tests come back positive and it seems that well also do some other testing sometimes with tuberculosis you can get something called pericarditis and some of the symptoms you are having may point to pericarditis as well so we might have to do an ekg we might have to further do an ultrasound an xray for example so first well just get the tb test done and then if it comes back positive you will need to isolate be admitted to the hospital as well and be on a course of antibiotics so i know this is a lot to take in do you have any questions or concerns at all
+
+Patient: Not right now guess will wait until some of the results come back and yeah get started
+
+Doctor: Yeah so well just do the tb test first alright
+
+Patient: Alright thank you
+
+Doctor: Welcome take care

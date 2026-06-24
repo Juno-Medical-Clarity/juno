@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1256
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain all over the belly, described as a gnawing sensation.
+- Severity: Not explicitly stated.
+- Duration: Two to three weeks.
+- Associated symptoms: None mentioned.
+- Relevant medical history: No past abdominal surgeries.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: The patient does not remember feeling this way before.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No clinician's interpretation or diagnosis provided)
+
+Plan:
+- (No plan mentioned)

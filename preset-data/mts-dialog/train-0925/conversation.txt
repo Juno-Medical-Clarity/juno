@@ -1,0 +1,4 @@
+Doctor: What is your family medical history?
+Patient: My mom was healthy all her life. She died of old age. She was eighty nine years old. My dad died of a stroke. He was eighty nine as well.
+Doctor: Do you have siblings?
+Patient: Yes I had a brother and a sister. My sister died way too young. She was only thirty when she passed away from cancer. My brother lasted until he was seventy four. He had coronary artery disease.

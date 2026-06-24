@@ -1,0 +1,10 @@
+Metformin, an anti-diabetic medication, may treat full-body or systemic lupus erythematosus (SLE), an inflammatory disease in which immune cells mistakely attack joints, skin, brain cells and more.
+The primary target of metformin, a specific energy-generator in the cell, is linked with electrical balance in immune cells, which influence the creation of diseases in which immune cells mistakely attack healthy cells.
+This article reviews the evidence and knowledge gaps on whether metformin's beneficial effects in lupus may be due to a restored, balanced electrical state.
+Clinical trials in SLE patients with mild to moderate disease severity and mice studies show encouraging results for metformin.
+How this beneficial effect is achieved is largely unknown.
+Metformin monitors electrical balance depending on the situation.
+Multiple cell types contribute to SLE, with evidence of increased cellular stress in certain immune cells called T cells and neutrophils.
+The major knowledge gaps are whether the success of metformin is linked to a restored electrical balance in the immune system. If it does, in which cell types it occurs?
+We also need to know which patients may have a better response to metformin, and if it corresponds to a specfic biological process?
+Finally, identifying markers to predict treatment outcomes would be very useful.

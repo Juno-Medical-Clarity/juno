@@ -1,0 +1,5 @@
+Turner Syndrome (TS) is an unfavorable genetic condition with a prevalence of 1:2500 in newborn girls.
+Prompt and effective diagnosis is very important to appropriately monitor the comorbidities.
+The aim of the present study was to propose a feasible and practical molecular diagnostic tool for newborn screening by quantifying the gene dosage of the SHOX, VAMP7, XIST, UBA1, and SRY genes by quantitative polymerase chain reaction (qPCR) in individuals with a diagnosis of complete X monosomy, as well as those with TS variants, and then compare the results to controls without chromosomal abnormalities.
+According to our results, the most useful markers for these chromosomal variants were the genes found in the pseudoautosomic regions 1 and 2 (PAR1 and PAR2), because differences in gene dosage (relative quantification) between groups were more evident in SHOX and VAMP7 gene expression.
+Therefore, we conclude that these markers are useful for early detection in aneuploidies involving sex chromosomes.

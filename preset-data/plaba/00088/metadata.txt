@@ -1,0 +1,5 @@
+pmid:        7864482
+question:    7
+adaptation:  adaptation1
+title:       Group A streptococcal tonsillopharyngitis: cost-effective diagnosis and treatment
+sentences:   16

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2139  |  gem_id: gem-cochrane-simplification-train-2140  |  doi: 10.1002/14651858.CD007044.pub3
+
+This review aimed to compare the effectiveness and complications between ESWL and stones removing using the nephroscopy through the skin at kidney level (PCNL) or ureteroscope through the bladder and ureter to the kidney (RIRS). Five small randomised studies (338 patients) were included. Four studies compared ESWL with PCNL and one study compared ESWL with RIRS. Patients with kidney stones who undergo PCNL have a higher success rate than ESWL whereas RIRS was not significantly different from ESWL. However, ESWL patients spent less time in hospital, duration of treatment was shorter and there were fewer complications.

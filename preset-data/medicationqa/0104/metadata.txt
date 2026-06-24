@@ -1,0 +1,5 @@
+drug_focus: Clotrimazole
+question_type: Appearance
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0829286-e9fc-442c-82d1-8268e1110109
+sample_id: 0104

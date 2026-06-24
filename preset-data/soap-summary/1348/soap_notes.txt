@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1348
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports no tenderness or pain in the hand.
+- Patient can move hand up and down without any problem.
+- Patient can rotate the hand and move fingers without any issue.
+- Patient can bend the hand.
+
+Objective:
+- Hand X-ray shows bone in alignment.
+- No effusion observed.
+- No asymmetry noted.
+
+Assessment:
+- No clinical impressions or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

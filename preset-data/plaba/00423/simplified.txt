@@ -1,0 +1,12 @@
+Drug activity data of gabapentin (GBP) in community-dwelling elderly patients show a great effect of advanced age on GVP drug activity due to altered kidney function.
+However, there are no data in elderly nursing home (NH) patients to measure gabapentin absorption and elimination.
+We characterize the drug activity of GBP in elderly nursing home patients that are on GBP therapy.
+This is a drug actvity study in elderly nursing home patients (≥60 years) given GBP for long-term pain or epilepsy (brain disorder causing seizures) from seven nursing homes.
+
+A mathematical model showed the data and clearance (CL) was linked with estimated kidney filtration rate.
+The GBP clearance in elderly nursing home patients was 2.93 liters/hour.
+After adjusting for kidney filtration, GBP clearance was not affected by age, sex, body weight, or associated diseases.
+No effects of body size, age, and sex were detected on amount of distribution.
+Functional or active GBP amount is linked to dose amount.
+Analysis suggests certain mathematical models successfully tracked the trend and variation in gabapentin amount over time.
+In this analysis, certain measures seem similar between elderly and young adults.

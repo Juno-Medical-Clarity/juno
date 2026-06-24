@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0613
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Did you had any medical issues in the past? No, nothing major. You said nothing major, so, what was there? I had a little curve in the spine. It was not major. Doctor said that it can be corrected by exercises.

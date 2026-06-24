@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0914
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So just a few quick questions before we wrap up. Do you smoke or drink? I drink sometimes. I've never smoked. Any drug use? No. Are you sexually active? Uh I was back in Haiti, but that was back in eighty two. I had several male partners, but no sex since moving here. Did you use protection in your previous encounters? Most of the time, yes. Any history of S T Ds? No. Are you currently working? Yep. I work for a car dealership down the street.

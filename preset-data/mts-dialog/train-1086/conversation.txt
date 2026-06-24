@@ -1,0 +1,15 @@
+Guest_clinician: Hello, doctor. Let me give you a run down as to what we are dealing with today. This patient was last seen in January two thousand and four. She is coming for a follow up on interstitial disease secondary to lupus pneumonitis. I will let her tell you more about what happened yesterday.
+Doctor: Thanks, nurse. How are you feeling today, miss? Welcome back to the Pulmonary Medicine Clinic. What happened yesterday?
+Patient: Well, I was doing fine since last time. My respiratory issues have been great and I have had no major difficulties breathing.
+Doctor: That's good to hear. What happened yesterday that caused you to want to come in so urgently?
+Patient: Yesterday I noticed that I have some back and joint pain.  When I breathe deep my back hurts.
+Doctor: Are you experiencing any coughing?
+Patient: No, coughing at this moment.
+Doctor: Have you been producing any mucus the times that you do cough?
+Patient: No, I already said I didn't cough.
+Doctor: Okay. Any fevers or chills?
+Patient: Nothing so far.
+Doctor: Do you have any other symptoms currently?
+Patient: I do notice that I am more tired than usual.
+Doctor: During physical activity do you seem out of breath or more tired than usual? I want to see if your pulmonary system is inhibited.
+Patient: No. I don't have issues with breathing when I do daily activities.

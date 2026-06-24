@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'fluphenazine'
+  [7:9] 'medical-jargon-google-easy' -> 'movement disorders'
+  [10:14] 'medical-jargon-google-easy' -> 'low - potency antipsychotics'
+  [17:21] 'medical-jargon-google-easy' -> 'low - potency drugs'
+  [30:31] 'medical-jargon-google-easy' -> 'sedation'

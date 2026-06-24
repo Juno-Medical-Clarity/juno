@@ -1,0 +1,2 @@
+Doctor: Tell me about your family medical history.
+Patient: No one in my family has any health problems.

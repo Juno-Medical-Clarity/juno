@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.3
+split:       test
+
+jargon_spans:
+  [2:5] 'medical-jargon-google-easy' -> 'amino acid intervention'
+  [8:9] 'medical-jargon-google-easy' -> 'non-adipose'
+  [15:18] 'medical-jargon-google-easy' -> 'magnetic resonance imaging'

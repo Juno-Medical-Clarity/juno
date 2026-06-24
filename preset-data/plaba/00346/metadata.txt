@@ -1,0 +1,5 @@
+pmid:        33629336
+question:    27
+adaptation:  adaptation1
+title:       COVID-19 vaccines: comparison of biological, pharmacological characteristics and adverse effects of Pfizer/BioNTech and Moderna Vaccines
+sentences:   18

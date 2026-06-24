@@ -1,0 +1,5 @@
+pmid:        24550552
+question:    43
+adaptation:  adaptation2
+title:       Future of implantable devices for cardiac rhythm management
+sentences:   4

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0982  |  gem_id: gem-cochrane-simplification-train-983  |  doi: 10.1002/14651858.CD002943
+
+The review of trials found that a letter of invitation, mailed educational material, a phone call and some combined actions (such as a letter of invitation plus a phone call and training activities plus reminders) all seem to increase numbers of women participating. However it is not known which of these work better. Other interventions (such as a home visit) have not been proven to work.

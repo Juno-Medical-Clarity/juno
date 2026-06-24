@@ -1,0 +1,15 @@
+Turner syndrome is a condition where there is an abnormal number of chromosomes (genetic material).
+Amniotic fluid, the fluid surrounding a fetus, could contribute to the understanding of Turner syndrome development.
+In this pilot study, gene expression analysis of cell-free RNA (genetic material to create proteins) in amniotic fluid was analyzed. The fluid was evaluated to identify genes/organ systems that may play a role in Turner syndrome development.
+Cell-free RNA from amniotic fluid of five mid-trimester Turner syndrome fetuses and five control female fetuses was extracted.
+Significantly differentially (functionally unique) regulated genes were identified.
+Biological interpretation was performed to determine gene expression.
+There were 470 statistically significantly differentially expressed genes identified.
+They were widely distributed across the genome.
+XIST was significantly down-regulated (decreased in activity). SHOX was not differentially expressed.
+One of the most highly represented organ systems was the hematologic (blood) and immune system.
+Organization of the differentially expressed gene list identified genes of possible disease development significance.
+Transcriptomic (RNA) differences in the amniotic fluid of Turner syndrome fetuses are due to genome-wide dysregulation.
+The hematologic/immune system differences may play a role in early-onset autoimmune dysfunction (in which infection-fighting cells attack healthy cells).
+Other genes identified with possible pathologic (harmful) significance were associated with cardiac (heart) and skeletal systems. These systems are known to be affected in females with Turner syndrome.
+This data may be useful in identifying how Turner syndrome develops.

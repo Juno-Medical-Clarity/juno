@@ -1,0 +1,59 @@
+# SOAP Notes — Sample 0197
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with severe fatigue and weakness for the past 4 days, with milder fatigue for 1 week
+- Symptoms are generalized, not localized to a specific muscle group
+- Sleeping excessively, spending most of the day on the couch
+- Unable to work as a truck driver due to fatigue
+- Mild sore throat for 1 week, slightly tender but no pain or difficulty swallowing
+- No voice changes
+- Feeling cold and shivering
+- Night sweats, particularly severe during a recent work trip to Ohio, requiring changing clothes due to being drenched in sweat
+- No shortness of breath or cough
+- Mild runny nose and headache
+- No chest pain, wheezing, or palpitations
+- No lightheadedness or syncope
+- Decreased appetite, but no abdominal pain, nausea, vomiting, or diarrhea
+- No urinary or bowel problems
+- Generalized body aches, but no specific joint or muscle pain
+- No skin rashes
+
+PMHx:
+- Hypertension
+- Diabetes mellitus (previously on insulin, currently managed with diet)
+- Benign prostatic hyperplasia
+- Cholecystectomy 20 years ago
+
+Medications:
+- Ramipril (hypertension)
+- Metformin (diabetes)
+- Tamsulosin (BPH)
+
+Allergies: None
+
+FHx:
+- Father with hypertension
+- Mother with breast cancer
+
+SocHx:
+- Works as a truck driver, recently returned from a trip to Ohio, USA (5-6 days ago)
+- Lives alone
+- No alcohol use
+- Former smoker (0.5 PPD for 20 years), quit 10 years ago
+- No marijuana or recreational drug use
+- Not sexually active
+- No history of STIs
+- Close platonic friendship with a neighbor, both widowed
+
+Objective:
+- Vitals signs
+- Physical examination
+
+Assessment:
+- Severe fatigue and weakness of unclear etiology
+
+Plan:
+- Order lab work
+- Administer IV fluids and Tylenol
+- Await lab results to guide further management

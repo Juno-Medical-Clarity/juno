@@ -1,0 +1,5 @@
+drug_focus: Vitamin B-12
+question_type: Dose
+section_title: Safety and side effects
+source_url: https://www.mayoclinic.org/drugs-supplements-vitamin-b12/art-20363663
+sample_id: 0128

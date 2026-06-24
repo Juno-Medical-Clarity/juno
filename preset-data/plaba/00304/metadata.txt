@@ -1,0 +1,5 @@
+pmid:        19635161
+question:    24
+adaptation:  adaptation1
+title:       Magnitude of potentially inappropriate prescribing in Germany among older patients with generalized anxiety disorder
+sentences:   10

@@ -1,0 +1,8 @@
+source:      plos_computational_biology
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [2:3] 'general-complex' -> 'nowcasting'
+  [21:22] 'medical-jargon-google-easy' -> 'malaria'

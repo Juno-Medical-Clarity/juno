@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        simple
+readability: 5.2
+split:       test
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'ttis450'
+  [13:14] 'medical-jargon-google-easy' -> 'ribosome'
+  [20:21] 'medical-jargon-google-easy' -> 'autophagy'

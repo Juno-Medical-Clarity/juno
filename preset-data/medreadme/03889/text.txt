@@ -1,0 +1,1 @@
+A decision tree model was developed to calculate the incremental costs and incremental health utilities [quality-adjusted life-years (QALYs)] of changing from current practice to using an IGRA as an initial rule-out test.

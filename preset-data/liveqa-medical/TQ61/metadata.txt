@@ -1,0 +1,13 @@
+qid: TQ61
+source_file: 1-134873622.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What its the efficacy of administering Gabamentine and hydrocodone together and are there any interactions?
+nlm_summary: Are there any drug-drug interactions between Gabapentin and hydrocodone?
+
+focus_entities:
+  [F1] (DrugSupplement) Gabamentine
+  [F2] (DrugSupplement) hydrocodene
+question_types:
+  [T1] INTERACTION

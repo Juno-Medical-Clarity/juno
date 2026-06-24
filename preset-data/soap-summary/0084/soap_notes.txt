@@ -1,0 +1,34 @@
+# SOAP Notes — Sample 0084
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 5 days, initially worsening but now improving
+- Diarrhoea for 2 days, 8-10 times/day, watery, normal colour, no blood
+- Headache for a few days, aching sensation on forehead, 5/10 severity (7/10 yesterday), improved with Tylenol
+- Slight decrease in sense of smell over the last few days
+- No fever, chills, chest pain, difficulty breathing, nausea, vomiting, muscle aches, numbness, tingling, or change in taste
+- Mild abdominal discomfort due to frequent bowel movements
+- No known exposure to sick individuals
+- Works at a car shop, wears a mask and maintains social distancing most of the time
+- Lives with wife, who is asymptomatic and currently working from Canada
+
+Past Medical History:
+- PMHx: Hypertension, hypercholesterolemia
+- Medications: Lipitor (cholesterol), olmesartan (blood pressure)
+- FHx: Diabetes (father), ovarian cancer (maternal aunt)
+- SHx: Former smoker (half a pack/day for 15 years, quit), occasional alcohol (1 beer/day), no recreational drug use
+- Surgical history: Appendectomy in twenties
+
+Objective:
+- Vitals: Pending
+- Physical exam: Pending
+- Investigations with results: Pending
+
+Assessment:
+- Likely diagnosis: Pending
+- Differential diagnosis: Pending
+
+Plan:
+- Investigations: COVID swab, labs for electrolytes, vitals
+- Treatment: Pending
+- Other actions: Discuss management plan with attending

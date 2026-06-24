@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0960  |  gem_id: gem-cochrane-simplification-train-961  |  doi: 10.1002/14651858.CD005959.pub2
+
+Five poor quality trials were included in this review. These involved a total of 260 participants who were randomly assigned to having their humerus fractures fixed with either a plate or a nail. Both nailing and plating had similar fracture union rates. Compared with plating, nailing was associated with an increased risk of shoulder impingement involving shoulder pain and restrictions in shoulder range of movement. Usually because of impingement, nails had to be removed more frequently than plates. The limited available evidence did not show important differences between the two surgical methods in the other outcomes reported by one or more trials. These outcomes included nerve injury, infection, healing time, operating time, blood loss and return to pre-injury occupation.

@@ -1,0 +1,2 @@
+Doctor: Do you have a history of tobacco, alcohol or recreational drug use?
+Patient: No.

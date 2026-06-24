@@ -1,0 +1,8 @@
+The nerve-related pain medication gabapentin is cleared from the body almost entirely by the kidney. Because of this, patients with kidney failure face a challenge.
+Gabapentin is known to be effectively cleared by hemodialysis, a process of using machines to clean the blood of a person whose kidneys are not working normally, but how well peritoneal dialysis (PD), a process that filters blood using the inside lining of the stomach, clears the drug has not been previously described.
+Researchers describe a case of too much gabapentin in a patient with long-term peritoneal dialysis who is treated with continuous automated cycling peritoneal dialysis, which is when a mechanical device filters the blood at night while sleeping.
+Researchers find that continuous peritoneal dialysis provides significant clearance of gabapentin.
+The documented elimination half-life (the time it takes for the concentration of the gabapentin in the plasma or body to be reduced by half) is 41.33 hours, which is much shorter than the 132 hours reported in other studies in the absence of kidney function.
+In addition, the patient's symptoms of gabapentin toxicity (often muscle weakness, drowsiness, and drooping eyelids) improved and fully resolved after about 36 hours of dialysis.
+Gabapentin clearance in the body by peritoneal dialysis is estimated at 94% of urea (or waste protein) clearance.
+In conclusion, intensive peritoneal dialysis provides gabapentin clearance and is an effective but slow method to treat gabapentin overdose and toxicity.

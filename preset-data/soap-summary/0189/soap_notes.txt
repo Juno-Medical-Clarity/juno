@@ -1,0 +1,45 @@
+# SOAP Notes — Sample 0189
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Right knee pain, swelling, and warmth for 2 weeks
+- Pain is achy and sharp, located just below the patella (tibial tuberosity region), 6/10 in severity
+- Pain is worse with kneeling, palpation, and knee flexion; better with keeping the knee straight and avoiding touch
+- Tried topical "ice and fire" gels with temporary relief
+- No trauma, but recently diagnosed with left knee osteoarthritis and was putting more pressure on the right knee during gardening work
+- Denies fevers, chills, night sweats, unexpected weight loss, headaches, changes in vision, hearing, smell, or taste, sore throat, cough, shortness of breath, wheezing, chest pain, lightheadedness, dizziness, palpitations, nausea, vomiting, abdominal pain, diarrhea, constipation, blood in stool, urinary symptoms, muscle aches, joint pains, numbness, tingling, reduced sensation, or fatigue
+
+PMHx:
+- Class 2 obesity
+- Left knee osteoarthritis
+- Hypertension
+- Medications: ramipril, ibuprofen PRN for left knee osteoarthritis
+- No allergies
+- Surgical history: C-section
+- No hospitalizations
+
+SocHx:
+- Lives in downtown London with husband and daughter
+- Works as a full-time gardener for a landscaping company, involving repetitive kneeling movements
+- Sexually active with husband of 10 years, no concerns for STIs
+- No recent sick contacts or travel
+- Alcohol: glass of wine every other night
+- No smoking or recreational drug use
+
+FHx:
+- No family history of musculoskeletal or neurological conditions
+
+Objective:
+- Right knee: swelling, warmth, and redness compared to the left knee
+- Tenderness to palpation just below the patella
+- Pain with knee flexion, but able to fully bend and straighten the knee
+- Able to walk normally with pain
+
+Assessment:
+- Likely knee bursitis (prepatellar or infrapatellar)
+- Differential diagnosis: septic bursitis (less likely due to absence of fevers and chills), structural knee injury (e.g., meniscal or ligamental injury) if symptoms persist
+
+Plan:
+- Activity modification
+- NSAIDs and icing for inflammation
+- Follow up if symptoms worsen, fever develops, or pain becomes more severe to rule out septic bursitis or structural knee injury

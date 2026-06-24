@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0935
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is behaving normally.
+- No symptoms of gagging, coughing, or vomiting reported.
+- Noted that the patient spilled liquid all over her clothes, the ground, and on her hands.
+- Family did not see the patient ingest any of the fluid.
+- No visible signs of the fluid in the patient's mouth.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

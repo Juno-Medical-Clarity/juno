@@ -1,0 +1,29 @@
+# SOAP Notes — Sample 0063
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 2 weeks
+- Mixed dry and sputum (mostly clear)
+- Runny nose last week (resolved)
+- Sore throat, headache, aches, and fatigue last week (resolved after 3 days)
+- Cough worsens with cold exposure and exertion
+- No fever, chills, chest pain, palpitations, abdominal pain, diarrhoea, constipation, or urinary symptoms
+
+Past Medical History:
+- No significant PMHx
+- Medications: birth control
+- No allergies
+- No lung-related diseases (asthma, COPD)
+- SocHx: lives with roommates, finishing undergraduate degree, occasional alcohol, marijuana use (socially, less than once a month), no recreational drugs
+- No recent travel or contact with sick individuals
+- FHx: no lung conditions
+
+Objective:
+- Physical exam to be conducted
+
+Assessment:
+- Likely residual cough post-viral infection
+
+Plan:
+- Monitor symptoms
+- Return if symptoms worsen or new symptoms (fever, etc.) develop

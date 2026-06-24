@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1284  |  gem_id: gem-cochrane-simplification-train-1285  |  doi: 10.1002/14651858.CD004211.pub2
+
+The review authors searched the medical literature and contacted experts to find studies on CDSS used with newborns. They identified three randomised controlled studies that met the criteria for the review. Two of these three studies were on computer-aided drug prescribing and one was on computerized physiological monitoring of newborns. One of the studies on computer-aided prescribing showed that the CDSS used resulted in fewer drug dosage errors. The studies found no other benefits. The studies did not consider long-term outcomes in the newborns, just short-term effects. Also, with rapid changes in computer technology, current CDSS are more advanced than those used in the three studies. The Cochrane review authors conclude that there is not enough data to determine whether or not CDSS are beneficial for newborn care.

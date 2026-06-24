@@ -1,0 +1,12 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-easy' -> 'phenytoin'
+  [5:6] 'medical-jargon-google-easy' -> 'levetiracetam'
+  [7:8] 'medical-name-entity' -> 'Keppra'
+  [9:11] 'medical-name-entity' -> 'UCB Pharma'
+  [21:26] 'medical-jargon-google-easy' -> 'intravenous second - line treatment'
+  [27:31] 'medical-jargon-google-easy' -> 'paediatric convulsive status epilepticus'

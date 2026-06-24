@@ -1,0 +1,4 @@
+Doctor: Do you know if anyone in your family has history of heart disease, stroke anything of that sort?
+Patient: Let me think. You mean only blood relatives?
+Doctor: Yes.
+Patient: Yes. We have some of those diseases in our family.

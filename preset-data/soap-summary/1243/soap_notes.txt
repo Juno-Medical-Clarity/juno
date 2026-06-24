@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1243
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Diabetes, high blood pressure, asthma, high cholesterol.
+- Severity: Not specified.
+- Duration: Diagnosed with diabetes in 2003.
+- Associated symptoms: None mentioned.
+- Relevant medical history: Diabetes, high blood pressure, asthma, high cholesterol.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: None explicitly stated.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

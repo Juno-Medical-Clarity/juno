@@ -1,0 +1,6 @@
+Doctor: Do you consume any kind of tobacco?
+Patient: No.
+Doctor: What about smoking?
+Patient: No, I've never done it.
+Doctor: Any kind of alcohol consumption?
+Patient: Nope.

@@ -1,0 +1,9 @@
+source:      pnas
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [6:8] 'medical-jargon-google-easy' -> 'methyltransferase activity'
+  [9:10] 'medical-jargon-google-hard' -> 'KMT5c'
+  [16:18] 'medical-jargon-google-easy' -> 'metabolic diseases'

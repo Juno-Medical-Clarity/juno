@@ -1,0 +1,5 @@
+drug_focus: fluvoxamine maleate
+question_type: Stopping/tapering
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=85b61f83-ab47-470d-8673-02fea29247be
+sample_id: 0238

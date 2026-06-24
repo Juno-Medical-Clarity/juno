@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [7:10] 'medical-jargon-google-easy' -> 'Differential Rank Conservation'
+  [11:12] 'abbr-medical' -> 'DIRAC'
+  [20:21] 'general-complex' -> 'combinatorial'
+  [25:27] 'medical-jargon-google-easy' -> 'biological pathways'

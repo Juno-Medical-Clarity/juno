@@ -1,0 +1,18 @@
+Doctor: Hi Mister B, nurse tells me you had a fall?
+Patient: Yes, a pretty bad one.
+Doctor: Okay, tell me what happened?
+Patient: Well, I was running to catch a taxi and stumbled upon a piece of rock, lost my balance and fell.
+Patient: I fell face down and my head hit the sidewalk. The next thing I remember is I am all dazed and people trying to help me.
+Doctor: I see, did you lose consciousness after the fall?
+Patient: No.
+Doctor: So, is your head hurting?
+Patient: Only the right forehead where I have the scrape and my chin.
+Doctor: Okay, any neck or back pain?
+Patient: No.
+Doctor: Any stomach pain?
+Patient: No.
+Doctor: Pain anywhere else, in extremities, hand or leg?
+Patient: No.
+Doctor: Okay, and how old are you?
+Patient: I am forty two.
+Doctor: Okay.

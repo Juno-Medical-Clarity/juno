@@ -1,0 +1,304 @@
+# Smith Collection Transcript: RES0126
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: Hi i am having difficulties breathing and ive just had this cough and its its been two months now
+
+Doctor: Two months so did the two months of the difficulty breathing or the cough
+
+Patient: Two months of difficulty breathing and the cough is gotten worse ive had a cough for a couple years now im a smoker
+
+Doctor: OK and is is this cough different at all
+
+Patient: Its just it just doesnt go away
+
+Doctor: OK and when did the shortness of breath start
+
+Patient: About two months ago
+
+Doctor: OK and is it getting worse
+
+Patient: Oh yeah
+
+Doctor: OK are you bringing up any sputum at all with your cough
+
+Patient: Uhm i sometimes uhm yeah i do
+
+Doctor: OK and is is there any color to it or is it clear
+
+Patient: Its pink in color
+
+Doctor: Its pink in color
+
+Patient: Hmm
+
+Doctor: OK have you coughed up any blood at all
+
+Patient: Sometimes
+
+Doctor: Sometimes
+
+Patient: Streaks of blood here and there
+
+Doctor: Little streaks of blood ok and have you ever coughed up any just without without it being in the sputum just onto a tissue or anything like that just coughing up any blood
+
+Patient: No
+
+Doctor: OK so an are your symptoms just constant over the last two months or do they come and go
+
+Patient: Shortness of breath just kind of stays
+
+Doctor: OK and is there anything that helps with your shortness of breath like taking a rest or any positions in particular
+
+Patient: Yeah sometimes resting does help i find that its worse when im moving around im huffing and puffing more
+
+Doctor: OK and is it worse at all when you lay down
+
+Patient: No
+
+Doctor: No and do you find yourself ever having to wake up at night and gasp gasping for air
+
+Patient: No it hasnt gotten that far but seeing how bad its been over the past two months and how fast is progressing i wont be surprised if i cant even sleep its been quite difficult i i dont even know why i waited so long i should have come in earlier
+
+Doctor: Well im glad you came in today we can definitely try and help you with whats going on do you at all use any kind of medications to help you with your symptoms
+
+Patient: Ive just been using my inhalers a bit more but they dont always help
+
+Doctor: OK and what are you using the inhalers for
+
+Patient: Oh i have copd
+
+Doctor: Copok and when were you diagnosed
+
+Patient: Its been 15 years now
+
+Doctor: 15 years and do you know the how many puffers are you taking
+
+Patient: Uhm im taking uhm im taking two puffers
+
+Doctor: OK and do you have one that that you take when you when you absolutely need it
+
+Patient: Yeah yeah i do thats the one that ive been trying to use but
+
+Doctor: Has it been less effective at all recently
+
+Patient: Yeah it hasnt been helping the blue one i tried to keep taking the blue one and its just you know its not helping
+
+Doctor: Have you been sick at all recently with fever chills like runny nose any cold like symptoms
+
+Patient: No
+
+Doctor: No nothing like that have you been in contact with anyone thats been sick
+
+Patient: Oh no ive been staying at home ive been very careful these days
+
+Doctor: Yeah for sure any so this started two months ago are you having so you have not traveled then im assuming
+
+Patient: No
+
+Doctor: OK are you having any kind of dizziness or fainting spells
+
+Patient: Oh no no no
+
+Doctor: No ok any kind of swelling in your legs or hands that youve notice
+
+Patient: No
+
+Doctor: OK any headaches at all
+
+Patient: No well sometimes i do but its not been severe its been there for the past uhm always when im stressed out i get these headaches its nothing new
+
+Doctor: OK any nausea or vomiting
+
+Patient: No
+
+Doctor: No any diarrhea or constipation
+
+Patient: No
+
+Doctor: No ok any fevers or chills recently
+
+Patient: I have a mild fever it just its been there
+
+Doctor: When did you notice
+
+Patient: Uhm i was just checking my temperature about a month ago and noticed that i had a fever
+
+Doctor: OK this was a month ago
+
+Patient: Yeah
+
+Doctor: Have you had it recently at all
+
+Patient: I havent checked it recently but i do feel a little hot
+
+Doctor: OK are you getting night sweats at all
+
+Patient: Sometimes
+
+Doctor: Sometimes ok and are you getting any kind of significant weight loss
+
+Patient: No
+
+Doctor: No then your weights been fine
+
+Patient: Its been the same although i have been eating quite a lot more now with the pandemic and being home you know that might be still in the same
+
+Doctor: And so are you having do you feel like tired throughout the day or increased fatigue
+
+Patient: Oh my god so tired i can you know with the difficulty breathing i feel like all my energy spent just trying to trying to get to the bathroom
+
+Doctor: OK and how is there like how much do you walk or move around that you get short of breath or are you short of breath at rest as well
+
+Patient: Uhm im short of breath all the time yeah its just its its worse when i am moving
+
+Doctor: And so youve been diagnosed with cophave you had to use oxygen at home at all
+
+Patient: No
+
+Doctor: No ok how about have you had any hospitalizations in the past for your copd
+
+Patient: Yeah i had a had a couple last year
+
+Doctor: A couple of hospitalizations
+
+Patient: Yeah yeah about four hospitalizations last year
+
+Doctor: Oh i see and and did you have to use any oxygen in the hospital
+
+Patient: Yeah yeah i did i did
+
+Doctor: They never sent you home with any like oxygen tank or anything like that ok
+
+Patient: Although they told me my copwas pretty bad that i might need to get oxygen at some point
+
+Doctor: I see and have you when you in hospital did they give you antibiotics or when you went home
+
+Patient: Yeah yeah they did they did
+
+Doctor: Did they tell you you had pneumonia at all at any point
+
+Patient: I dont think so
+
+Doctor: No ok ok any any changes or do you get any chest pain at all
+
+Patient: Uhm sometimes when i breathe in very deep
+
+Doctor: I see any any kind of sensation that your heart is racing
+
+Patient: No
+
+Doctor: No ok any kind of issues with your sleep or appetite
+
+Patient: Umm well no not really its just the difficulty breathing sometimes its been hard to sleep
+
+Doctor: OK any any exposure to any fumes or allergens in your household any animals pets
+
+Patient: No
+
+Doctor: OK and other than cophave you been diagnosed with any medical conditions in the past
+
+Patient: No im pretty healthy otherwise
+
+Doctor: OK do you have any allergies at all to medications or environmental allergies
+
+Patient: Im allergic to cats
+
+Doctor: To cats ok do you have a cat
+
+Patient: No
+
+Doctor: No ok have you been around any cats recently
+
+Patient: Nope
+
+Doctor: No ok are you on any medications besides the puffers
+
+Patient: Nope
+
+Doctor: OK and so you use the ventolin and then whats the other puffer that you use
+
+Patient: Uhm i dont remember the name
+
+Doctor: Do you know the color at all
+
+Patient: Its orange
+
+Doctor: Orange ok so youve had four hospitalizations in the past year any surgeries in the past
+
+Patient: I had a knee replacement on my right side
+
+Doctor: OK and when was that
+
+Patient: 10 years ago
+
+Doctor: OK do you have any family history of any lung conditions heart conditions any cancers
+
+Patient: My dad had copas well
+
+Doctor: OK and any lung cancers in the family
+
+Patient: No
+
+Doctor: No so currently do you work at all
+
+Patient: Im retired
+
+Doctor: OK and what did you do before you retired
+
+Patient: I was i was a mechanic at chryslers
+
+Doctor: OK and during your work were you ever exposed to any chemicals or any kind of in your
+
+Patient: Workplace or home exposed to any asbestos or anything like that
+
+Doctor: Not that im aware of
+
+Patient: OK and how long have you been smoking for
+
+Doctor: Oh yeah i was a teenager when i started
+
+Patient: OK and how much do you smoke on a on a daily basis
+
+Doctor: I smoke i smoke a pack a day
+
+Patient: OK have you at all tried to quit before
+
+Doctor: I cant quit its not gonna happen a lot of people have told me try to quit but i i just cant live without it and im 75 now you know like im not gonna live a lot longer anyway
+
+Patient: Yeah yeah but also even if you try to cut down some of your symptoms might get better like even though youre 75 you can definitely have improvement in some of your symptoms that youre having like the shortness of breath and coughing so if at all that you you want to consider cutting down and gradually we can talk about that more as well
+
+Doctor: Sure
+
+Patient: OK and do you use any recreational drugs like marijuana
+
+Doctor: No
+
+Patient: Do you drink
+
+Doctor: No
+
+Patient: No ok so yeah those are all the questions i have for you do you have any questions for me
+
+Doctor: No i just i guess i need to be admitted right just like those other copexacerbations im thinking this is exactly that and ill have to stay in the hospital right for a couple of days
+
+Patient: Yeah so we definitely before deciding on whether or not you should be admitted since you said the ventolin is not working for you we will definitely give you some some ventilation and perhaps steroid for just to get rid of some of your symptoms right now and we want to also make sure since youre having like cough as well as shortness of breath to do a covid swab on you just in case i know youve been like isolating and everything but just in case i will do that and well get like a chest x ray on you as well just to see if theres any kind of pneumonia going on and then from there well also get your blood work and then from there well see whether or not you will require another admission
+
+Doctor: Sure
+
+Patient: OK and there you might im not 100 sure but you might require home oxygen if like we take your vitals and everything and your oxygenation is very low have you have you been talked about that at all in the past
+
+Doctor: Yeah they talked about it last time ive been trying to avoid it but if it has to happen it has to happen
+
+Patient: Hmm yeah and it might just sometimes just you know youve had four admissions in the past and it might actually just help you stay at home if you are on oxygen anyways yeah we can talk about that well do like a full physical examination everything and go from there
+
+Doctor: Sure
+
+Patient: Great ill be with you shortly

@@ -1,0 +1,5 @@
+pmid:        28639373
+question:    4
+adaptation:  adaptation2
+title:       Laboratory diagnosis of overt type 2 diabetes in the first trimester of pregnancy
+sentences:   6

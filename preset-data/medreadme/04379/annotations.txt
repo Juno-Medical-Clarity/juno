@@ -1,0 +1,15 @@
+source:      plos_biology
+side:        complex
+readability: 5.7
+split:       test
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'gene regulation'
+  [12:14] 'medical-jargon-google-easy' -> 'genomic organization'
+  [21:23] 'medical-jargon-google-easy' -> 'co-regulated genes'
+  [24:25] 'medical-jargon-google-easy' -> 'chromosomes'
+  [30:31] 'medical-jargon-google-easy' -> 'chromosomes'
+  [33:34] 'medical-jargon-google-easy' -> 'differentiation'
+  [36:38] 'medical-jargon-google-easy' -> 'hematopoietic progenitor'
+  [39:40] 'medical-jargon-google-easy' -> 'erythroid'
+  [41:42] 'medical-jargon-google-easy' -> 'neutrophil'

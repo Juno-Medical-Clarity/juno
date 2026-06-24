@@ -1,0 +1,42 @@
+# SOAP Notes — Sample 0181
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Shortness of breath for 5-6 weeks, not worsening significantly (able to walk quite a bit but becomes SOB after 2-3 blocks when running, no orthopnea or PND, no leg swelling)
+- Syncopal episode 2-3 days ago after climbing stairs (associated with palpitations and dizziness, no tongue biting or incontinence, unsure of duration as was alone at home, no head injury) 
+- Has felt heart racing/palpitations during running as well
+- Denies viral symptoms (no red/itchy eyes, rhinorrhea, sore throat, cough, wheezing, chest pain)
+- No N/V, abdominal pain, urinary problems, myalgias, fevers/chills, weight or appetite changes, rashes
+
+PMHx:
+- History of asthma, has not required inhalers for ~20 years (previously only used rescue inhaler PRN)
+- G1P1 (vaginal delivery 8 years ago, uncomplicated pregnancy)
+- No other medical conditions
+- No medications (previously used albuterol inhaler PRN)
+- No allergies
+- No hospitalizations or surgeries
+
+SocHx:
+- Lives at home with husband and 8 y/o son, no ill contacts
+- No recent travel
+- Works from home as a writer, no occupational exposures
+- No smoking, recreational drugs
+- Drinks 1-2 glasses of wine on weekends
+
+FHx:
+- Uncle with prostate cancer
+- No known heart/lung conditions or clotting disorders
+
+Objective:
+- Vitals signs: not provided
+- Physical examination: not performed
+- Investigations: none completed yet
+
+Assessment:
+- Likely diagnosis: not provided
+- Differential diagnosis: not provided
+
+Plan:
+- Investigations: PFTs, chest imaging, ECG, 48-hour cardiac monitoring
+- Treatment: none mentioned
+- Other: patient education/counseling not documented

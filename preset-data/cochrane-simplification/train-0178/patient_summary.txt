@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0178  |  gem_id: gem-cochrane-simplification-train-179  |  doi: 10.1002/14651858.CD003494.pub2
+
+The reviewers found no strong evidence for the effectiveness (or ineffectiveness) of psychosocial interventions by general practitioners. Of the psychosocial interventions reviewed, problem-solving treatment for depression seems the most promising tool for GPs, although its effectiveness in daily practice remains to be demonstrated.

@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [10:14] 'medical-jargon-google-easy' -> 'pathogen - encoded activity'
+  [23:26] 'medical-jargon-google-easy' -> 'innate immune sensing'
+  [31:33] 'medical-jargon-google-easy' -> 'pathogenic microbes'
+  [34:35] 'medical-jargon-google-easy' -> 'non-pathogens'

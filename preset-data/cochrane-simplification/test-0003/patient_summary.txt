@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0003  |  gem_id: gem-cochrane-simplification-test-4  |  doi: 10.1002/14651858.CD008471.pub2
+
+Four studies, which involved 125 participants, were included in this review. The majority of participants had suffered a broken tibia that had not healed as quickly as expected or at all. The results of this review suggest that there may be a benefit on bone healing from electromagnetic field stimulation. However, the available evidence was not good enough to be certain of this and it may not apply to current practice. Electromagnetic field stimulation appears to be safe. The two complications reported were minor involving irritation of the skin.

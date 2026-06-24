@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2210  |  gem_id: gem-cochrane-simplification-train-2211  |  doi: 10.1002/14651858.CD001539.pub2
+
+The review of trials examined the effects of giving people with cancer audio recordings or written summaries of consultations. Most people found them useful as a personal reminder, to inform their families or friends, or to play to their general practitioners. People tended to remember more of the information they were given, and some were more satisfied with the information they received. Recordings or summaries did not make people more anxious or depressed. The recordings had no effects on quality of life, and no studies measured survival.

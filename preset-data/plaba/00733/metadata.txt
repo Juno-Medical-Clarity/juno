@@ -1,0 +1,5 @@
+pmid:        35123028
+question:    58
+adaptation:  adaptation3
+title:       Evaluation of Immunogenicity by Pseudovirus Neutralization Assays for Coronavirus Disease 2019 (COVID-19) Variants after Primary and Booster Immunization
+sentences:   9

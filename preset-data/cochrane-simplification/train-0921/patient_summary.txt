@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0921  |  gem_id: gem-cochrane-simplification-train-922  |  doi: 10.1002/14651858.CD001148
+
+This review analyzed the effects of furosemide on preterm babies receiving indomethacin to close the ductus arteriosus. The review of trials found not enough evidence to recommend routine use of furosemide in preterm infants who receive indomethacin for closing a ductus arteriosus.

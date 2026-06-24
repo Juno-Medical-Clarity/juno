@@ -1,0 +1,10 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [9:10] 'abbr-medical' -> 'TRD'
+  [18:19] 'medical-jargon-google-easy' -> 'metyrapone'
+  [24:25] 'general-complex' -> 'placebo'
+  [33:35] 'medical-jargon-google-easy' -> 'serotonergic antidepressants'

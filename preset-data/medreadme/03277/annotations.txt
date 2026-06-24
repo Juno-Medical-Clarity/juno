@@ -1,0 +1,12 @@
+source:      plos_pathogens
+side:        complex
+readability: 6.0
+split:       dev
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'virulence'
+  [3:5] 'medical-jargon-google-easy' -> 'L. pneumophila'
+  [7:14] 'medical-jargon-google-hard' -> 'Dot / Icm type IV secretion system'
+  [15:16] 'medical-jargon-google-easy' -> 'translocates'
+  [16:18] 'medical-jargon-google-easy' -> 'bacterial effectors'
+  [21:22] 'medical-jargon-google-easy' -> 'cytosol'

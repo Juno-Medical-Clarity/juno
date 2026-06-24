@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0380
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Okay so your blood report is back and the cardiac enzyme we were looking for are negative. Okay. Your blood urea nitrogen, also known as B U N, is within normal limits and hydrogen is stable. Creatinine is also within the normal range. Great!

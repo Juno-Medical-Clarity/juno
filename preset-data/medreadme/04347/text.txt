@@ -1,0 +1,1 @@
+Change in time spent in active commuting from 2009 to 2012, using a self-reported measure validated using georeferenced combined heart rate and movement sensor data.

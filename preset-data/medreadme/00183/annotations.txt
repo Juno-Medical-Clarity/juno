@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [8:12] 'medical-jargon-google-hard' -> 'CW - PM adhesions'
+  [15:16] 'medical-jargon-google-easy' -> 'Phytophthora'
+  [18:22] 'medical-jargon-google-hard' -> 'LecRK - I. 9'

@@ -1,0 +1,9 @@
+Therapeutic success in treating patients with systemic lupus erythematosus (SLE) is limited by the multivariate disease etiology, multi-organ presentation, systemic involvement, and complex immunopathogenesis.
+Agents targeting B-cell differentiation and survival are not efficacious for all patients, indicating a need to target other inflammatory mediators.
+One such target is the type I interferon pathway.
+Type I interferons upregulate interferon gene signatures and mediate critical antiviral responses.
+Dysregulated type I interferon signaling is detectable in many patients with SLE and other autoimmune diseases, and the extent of this dysregulation is associated with disease severity, making type I interferons therapeutically tangible targets.
+The recent approval of the type I interferon-blocking antibody, anifrolumab, by the US Food and Drug Administration for the treatment of patients with SLE demonstrates the value of targeting this pathway.
+Nevertheless, the interferon pathway has pleiotropic biology, with multiple cellular targets and signaling components that are incompletely understood.
+Deconvoluting the complexity of the type I interferon pathway and its intersection with lupus disease pathology will be valuable for further development of targeted SLE therapeutics.
+This review summarizes the immune mediators of the interferon pathway, its association with disease pathogenesis, and therapeutic modalities targeting the dysregulated interferon pathway.

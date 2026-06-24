@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1028  |  gem_id: gem-cochrane-simplification-train-1029  |  doi: 10.1002/14651858.CD003665
+
+This review of studies of vitamin E supplements found that while extra vitamin E reduces the chances of some complications (including disease of the retina), the risk of life-threatening infection is increased. The risk of bleeding in the brain is increased when extra vitamin E is given by vein but decreased when the extra vitamin E is given by other routes.

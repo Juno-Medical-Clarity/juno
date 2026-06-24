@@ -1,0 +1,5 @@
+drug_focus: lotensin
+question_type: Usage/time
+section_title: Effect of evening versus morning benazepril on 24-hour blood pressure: a comparative study with continuous intraarterial monitoring.
+source_url: https://www.ncbi.nlm.nih.gov/pubmed/8335427
+sample_id: 0530

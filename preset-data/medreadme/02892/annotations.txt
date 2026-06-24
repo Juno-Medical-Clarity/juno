@@ -1,0 +1,10 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Macrophages'
+  [7:8] 'medical-jargon-google-easy' -> 'Leishmania'
+  [10:12] 'medical-jargon-google-easy' -> 'mammalian host'
+  [17:20] 'medical-jargon-google-easy' -> 'obligatorily intracellular parasite'

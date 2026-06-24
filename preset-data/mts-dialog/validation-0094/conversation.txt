@@ -1,0 +1,5 @@
+Guest_clinician: Did you get a chance to review patient's chart?
+Doctor: Yes, I reviewed his past medical history and family and social history.
+Doctor: There are no changes, right Mister Jay?
+Patient: Yes, nothing changed.
+Guest_clinician: Okay, sounds good.

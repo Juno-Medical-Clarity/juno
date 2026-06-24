@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2086  |  gem_id: gem-cochrane-simplification-train-2087  |  doi: 10.1002/14651858.CD006036.pub2
+
+This review looked for evidence of MD rehabilitation in adults with multiple sclerosis. The authors concluded there was strong evidence that inpatient or outpatient rehabilitation can lead to improvement in activity (disability) and in overall ability to participate in society, even though there is no reduction in actual impairment. There was limited evidence for short-term improvements in symptoms and disability, and in participation and quality of life with the high intensity outpatient and home-based rehabilitation programmes. For low intensity programmes conducted over a longer period there were longer term gains in quality of life; and for benefits to carers in terms of general health and engagement in social activities. The evidence available for other aspects of MD rehabilitation, including outpatient and home based therapy is not yet sufficient to allow many conclusions to be drawn.

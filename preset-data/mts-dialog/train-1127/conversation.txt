@@ -1,0 +1,4 @@
+Doctor: Any specific medical traits in the family?
+Patient: What do you mean by that?
+Doctor: I meant does anyone in your family or extended family have any medical problems that they were treated for?
+Patient: I'm not aware of any such thing in my family.

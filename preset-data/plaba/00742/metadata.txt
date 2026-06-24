@@ -1,0 +1,5 @@
+pmid:        34918097
+question:    59
+adaptation:  adaptation2
+title:       Heterologous prime-boost strategies for COVID-19 vaccines
+sentences:   7

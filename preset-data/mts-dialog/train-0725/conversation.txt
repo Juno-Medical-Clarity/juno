@@ -1,0 +1,6 @@
+Doctor: How are you moving around? Are you able to perform your day to day activities?
+Patient: Little bit, not so much.
+Doctor: So just listen to your body and go around as much as you can.
+Patient: Okay.
+Doctor: Do not overstress yourself.
+Patient: Okay I can do that.

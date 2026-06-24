@@ -1,0 +1,5 @@
+pmid:        17183568
+question:    72
+adaptation:  adaptation2
+title:       The clinical aspects of newborn screening: importance of newborn screening follow-up
+sentences:   9

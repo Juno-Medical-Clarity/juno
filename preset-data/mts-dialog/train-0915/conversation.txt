@@ -1,0 +1,7 @@
+Doctor: You have cholesterol issues, right?
+Patient: Yes.
+Doctor: Okay. I see. Gemfibrozil? That sounds familiar? Do you take that?
+Patient: Yes, I think that one. But I am not sure.
+Doctor: Okay. Do you remember taking them at all as an outpatient?
+Patient: I mean I don't remember.
+Doctor: Okay don't worry I can look at your previous records. We do have them.

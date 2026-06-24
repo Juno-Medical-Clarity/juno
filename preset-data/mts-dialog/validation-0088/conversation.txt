@@ -1,0 +1,2 @@
+Doctor: Any medication intolerances?
+Patient: No.

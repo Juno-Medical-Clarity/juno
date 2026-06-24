@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0479  |  gem_id: gem-cochrane-simplification-train-480  |  doi: 10.1002/14651858.CD006938.pub3
+
+In our search updated in November 2013 we found no randomised studies of droperidol for the treatment of nausea or vomiting for people receiving palliative care or suffering from an incurable progressive medical condition. Several studies reported on the use of droperidol for the prevention of nausea and vomiting associated with chemotherapy. Further studies are needed to find out which medications are most suitable to treat nausea and vomiting in palliative care.

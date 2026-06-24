@@ -1,0 +1,5 @@
+pmid:        31352132
+question:    73
+adaptation:  adaptation2
+title:       An integrative review of multimodal pain management on patient recovery after total hip and knee arthroplasty
+sentences:   12

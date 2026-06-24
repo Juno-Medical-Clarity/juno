@@ -1,0 +1,6 @@
+Doctor: Who all are there in your family?
+Guest_family: It's me, my husband, my two older kids and this little baby.
+Doctor: Everyone living together?
+Guest_family: Yes
+Doctor: Is she going to any daycare?
+Guest_family: No, she's at home all the time.

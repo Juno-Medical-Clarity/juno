@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'emergency contraception'
+  [20:22] 'medical-jargon-google-easy' -> 'general practitioner'
+  [31:33] 'medical-jargon-google-easy' -> 'ongoing contraception'

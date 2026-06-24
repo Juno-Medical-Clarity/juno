@@ -1,0 +1,1 @@
+Propensity score stratification and inverse probability weighting successfully replicated TOPKAT, implying that some (but not all) propensity score methods can be used to evaluate surgical innovations and implantable medical devices using routine NHS data.

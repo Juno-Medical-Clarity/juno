@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1374  |  gem_id: gem-cochrane-simplification-train-1375  |  doi: 10.1002/14651858.CD003193.pub4
+
+Twenty three trials with 3685 participants were included in the review. Participants were more likely to improve if they were using an anticholinergic drug compared with bladder training alone, and also when using a combination of an anticholinergic drug plus bladder training. More people reported an improvement in their overactive bladder symptoms when using electrical stimulation than an anticholinergic drug, but this was only significant in one trial for one type of electrical stimulation, percutaneous posterior tibial nerve stimulation. These results have to be viewed with caution as different types and doses of the anticholinergic drugs were used in the trials. The main adverse effect reported was dry mouth, in about a third of the people taking an anticholinergic drug.

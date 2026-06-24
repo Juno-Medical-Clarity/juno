@@ -1,0 +1,8 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.5
+split:       dev
+
+jargon_spans:
+  [13:14] 'medical-jargon-google-easy' -> 'dementia'
+  [23:24] 'general-complex' -> 'qualitative'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0907
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you? I haven't seen you in a long time. I'm doing fine. I hurt my hand the other day. How did that happen? My husband and I moved into our new home, and we were building a desk. I tried to nail something in, and I hammered my hand. Oh, no. So, you and your husband live together now? Yeah. We do. We just got married.

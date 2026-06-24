@@ -1,0 +1,13 @@
+Purpose: Several studies have previously reported the association between dry eye and depression along with the treatment of depression.
+The aim of this study was to investigate the effects of different antidepressant drugs on tear parameters in patients with major depressive disorder.
+Methods: We recruited 132 patients who were using different antidepressants and 58 healthy controls.
+Venlafaxine, duloxetine, escitalopram, and sertraline were used by 34, 28, 36, and 34 patients, respectively.
+The participants filled out and completed the Beck Depression Scale.
+We recorded Schirmer test, tear breakup time (TBUT) and corneal staining values of the participants.
+The Ocular Surface Disease Index was completed by the participants.
+In addition, we evaluated the tear meniscus parameters by using anterior segment optical coherence tomography.
+Results: All conventional dry eye tests and tear meniscus parameters were significantly lesser in the depression group than in the control group (Schirmer test, 11.41 ± 6.73 mm and 22.53 ± 4.98 mm; TBUT, 5.29 ± 2.92 seconds and 13.38 ± 1.72; Corneal staining, tear meniscus area, 0.026 ± 0.012 mm2 and 0.11 ± 0.025 mm2; tear meniscus depth, 182.75 ± 78.79 μm and 257.48 ± 90.1 μm; tear meniscus height, 290.3 ± 133.63 μm and 459.78 ± 180.26 μm, in patients and controls, respectively).
+The tear parameters of the duloxetine group were lowest among the drug groups and Schirmer test, and TBUT of the venlafaxine group was statistically significantly different from the duloxetine group (P = 0.028 and P = 0.017, respectively).
+Ocular Surface Disease Index score of the depression group was significantly higher than the control group (31.12 ± 21.15 and 17.43 ± 11.75 in depression and control group, respectively.).
+Conclusions: We found that the usage of selective serotonin reuptake inhibitors and serotonin noradrenaline reuptake inhibitors affects the ocular surface by a mechanism other than the anticholinergic system.
+Besides serotonin blockage, the noradrenaline blockade of serotonin noradrenaline reuptake inhibitors may increase the dry eye findings on the ocular surface.

@@ -1,0 +1,11 @@
+source:      plos_genetics
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:6] 'medical-jargon-google-hard' -> 'Sex - specific tra RNA splicing'
+  [9:11] 'medical-jargon-google-easy' -> 'Sex lethal'
+  [12:13] 'abbr-medical' -> 'Sxl'
+  [15:17] 'medical-jargon-google-easy' -> 'Drosophila melanogaster'
+  [23:25] 'medical-jargon-google-easy' -> 'L. cuprina'

@@ -1,0 +1,2 @@
+Doctor: Are you currently taking any medications?
+Patient: No.

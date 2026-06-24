@@ -1,0 +1,5 @@
+pmid:        34331766
+question:    67
+adaptation:  adaptation2
+title:       Phase 3 Trials of Enhanced Versus Usual Care Physical Therapy for Patients at Risk of Poor Outcome Following Knee Arthroplasty: A Perspective on Meaning and a Way Forward
+sentences:   7

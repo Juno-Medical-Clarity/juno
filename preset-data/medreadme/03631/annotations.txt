@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [9:11] 'medical-jargon-google-easy' -> 'mitochondrial mutants'
+  [17:18] 'abbr-medical' -> 'ROS'
+  [26:32] 'medical-jargon-google-easy' -> 'mitochondrial oxidative stress theory of aging'

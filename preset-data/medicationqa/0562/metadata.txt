@@ -1,0 +1,5 @@
+drug_focus: amoxicillin & hydrocodone
+question_type: Interaction
+section_title: These are the medications I am currently on: Norco, amoxicillin and Adipex. Is it safe to take all of these meds together?
+source_url: https://www.bjc.org/In-Your-Community/Help-For-Your-Health-Ask-the-BJC-Experts/Answers-from-the-BJC-Experts?QuestionID=317&AFMID=935
+sample_id: 0562

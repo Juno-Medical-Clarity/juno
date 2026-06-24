@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0988
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you want to go home? Yes, I do. Can I? Yes, you sure can.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0318  |  gem_id: gem-cochrane-simplification-validation-319  |  doi: 10.1002/14651858.CD006622.pub2
+
+When compared with placebo, people taking aripiprazole had fewer relapses, smaller numbers of participants left study early, and needed less additional antipsychotic medications. Insomnia and headache were the most commonly reported side effects, but were not much difference to placebo. Side effects such as akathisia, nausea and weight gain occurred more in the aripripazole group as compared to placebo. There has been a worry with newer antipsychotic medications and their effect on conductance problems in the heart, impaired glucose levels and excessive production of prolactin (which can cause unpleasant breast pain and secretion). On the limited evidence available (due to participants leaving early and fewer studies) aripiprazole appears to have a similar effect to that of placebo. The overall finding on its efficacy in treating schizophrenia is unchanged from those found in the original review.

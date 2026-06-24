@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3497  |  gem_id: gem-cochrane-simplification-train-3498  |  doi: 10.1002/14651858.CD006461.pub4
+
+Key results: The results of one of these trials indicate that patching therapy combined with any necessary glasses is more effective than glasses alone in the treatment of this condition. Two of the trials analysed the role of adding near activities to supplement patching therapy. These trials suggest there may be benefit to adding near activities to prescribed occlusion regime. No trial examining the role of optical penalisation (altering glasses strength) or using partial occlusion (frosted lens opposed to a patch) was found. The effectiveness of optical penalisation and partial occlusion for the treatment of strabismic amblyopia is unknown.  Quality of the evidence: The quality of the available evidence is high.

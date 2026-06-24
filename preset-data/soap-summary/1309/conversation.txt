@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1309
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, you are a cigarette smoker? Yeah. How much do you some? Not as much as some people. How much is that exactly? Well, I probably buy a new pack once a week. Okay. So that is about four packs a month and fifty packs a year. Yeah, I guess so.

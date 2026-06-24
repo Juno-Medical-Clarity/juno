@@ -1,0 +1,5 @@
+pmid:        9723008
+question:    42
+adaptation:  adaptation1
+title:       Linker histones versus HMG1/2: a struggle for dominance?
+sentences:   4

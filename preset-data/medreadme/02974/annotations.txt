@@ -1,0 +1,12 @@
+source:      cochrane_all
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [3:11] 'medical-name-entity' -> 'Cochrane Hepato - Biliary Group Controlled Trials Register'
+  [12:13] 'medical-name-entity' -> 'CENTRAL'
+  [14:15] 'medical-name-entity' -> 'MEDLINE'
+  [16:17] 'medical-name-entity' -> 'Embase'
+  [18:22] 'medical-name-entity' -> 'Science Citation Index Expanded'
+  [24:25] 'medical-name-entity' -> 'LILACS'

@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0545
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient had knee replacement for both knees three years ago. 
+- Currently experiencing pain in both knees. 
+- Severity and duration of the pain are not specified. 
+- No associated symptoms, relevant medical history, family history, or allergies mentioned. 
+- No specific emotions or concerns discussed aside from the pain.
+
+Objective: 
+- No measurable or observable data provided.
+
+Assessment: 
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan: 
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

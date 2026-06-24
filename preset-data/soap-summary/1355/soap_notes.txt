@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1355
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient is unsure about any major or minor surgeries done in the past.
+- The patient just started working for the individual mentioned.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

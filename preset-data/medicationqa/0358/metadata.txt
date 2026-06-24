@@ -1,0 +1,5 @@
+drug_focus: gabapentin
+question_type: Interaction
+section_title: Drug Interactions
+source_url: https://www.mayoclinic.org/drugs-supplements/gabapentin-oral-route/before-using/drg-20064011
+sample_id: 0358

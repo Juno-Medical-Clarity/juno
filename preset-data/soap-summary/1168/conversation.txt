@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1168
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any support system? No, I am single. Okay so live alone at home? Yes. Do you smoke or drink? Nope I do not.

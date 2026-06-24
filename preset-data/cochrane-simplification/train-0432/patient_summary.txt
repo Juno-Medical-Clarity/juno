@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0432  |  gem_id: gem-cochrane-simplification-train-433  |  doi: 10.1002/14651858.CD000155.pub2
+
+This review of 23 trials involving 3043 women with endometriosis has shown that there no evidence of benefit with the use of ovulation suppression for women with endometriosis and infertility. Endometriosis is caused by the lining of the uterus (endometrium) spreading to a site outside the uterus. It is associated with subfertility and can cause pain during both sexual intercourse and menstruation. The hormone oestrogen stimulates the growth of endometriosis. For many years, the use of drugs such as danazol to stop ovulation and the production of oestrogen has been standard practice in the treatment of pain and subfertility caused by endometriosis. This works well for pain, but does not appear to improve fertility. In fact, as ovulation and periods are stopped for the time of treatment, fertility may be reduced by this approach.

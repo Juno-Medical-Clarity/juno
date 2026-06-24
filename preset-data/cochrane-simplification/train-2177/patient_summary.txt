@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2177  |  gem_id: gem-cochrane-simplification-train-2178  |  doi: 10.1002/14651858.CD000527
+
+The review shows that treatment with artemisinin drugs may be better than quinine at preventing death in adults and children with severe and complicated malaria. There is no evidence so far against early treatment with suppositories in rural areas whilst patients are transferred to hospital. Few side effects have been reported with these drugs.

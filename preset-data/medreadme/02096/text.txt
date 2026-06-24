@@ -1,0 +1,1 @@
+This study demonstrated that cellular heterogeneity of the EGF signaling response is evoked by cell-to-cell variation of particular signaling proteins, such as EGFR, Ras, Raf, and MEK, which act as sensitive nodes in the pathway.

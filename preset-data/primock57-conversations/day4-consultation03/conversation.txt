@@ -1,0 +1,205 @@
+# PriMock57 Consultation Transcript: day4_consultation03
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Doctor: Hi.
+
+Patient: Hey.
+
+Doctor: Hi. Can you hear me?
+
+Patient: Yeah. I can hear you.
+
+Doctor: Good. Um, my name is Doctor Gohil. I'm one of the physicians that works here at Babylon.
+
+Patient: OK.
+
+Doctor: May I confirm your name and date of birth, please?
+
+Patient: Uh, uh, my name is Sarah Smith. And, my date of birth is the twentieth of April nineteen eighty.
+
+Doctor: [unintelligible]
+
+Patient: Great.
+
+Doctor: Nineteen eighty three. And, are you in a space that's private and quiet, and you can talk?
+
+Patient: Yeah. [unintelligible] Yeah.
+
+Doctor: Good. So, it says, erm, I've got a note to say, it says you're feeling short of breath. Is that correct?
+
+Patient: Yeah, yeah.
+
+Doctor: OK. Are you able to tell me a little bit more about that?
+
+Patient: Yeah. I was watching TV and, um, just like over the last hour, I've started to feel, like, a bit short of breath.
+
+Doctor: That is, while you're sitting watching TV?
+
+Patient: Yeah.
+
+Doctor: OK. And, have you noticed anything like this before?
+
+Patient: Um, no.
+
+Doctor: OK. And, apart from the shortness of breath, have you noticed anything else?
+
+Patient: Um, so, I [unintelligible], I started with a cough yesterday.
+
+Doctor: OK.
+
+Patient: Um. Yeah. I, I don't know if it's, um, relevant, but I had a C-section a few weeks ago.
+
+Doctor: OK. And, how long ago was that? Just a few weeks?
+
+Patient: Yeah, four weeks.
+
+Doctor: OK. And, are you with baby at the moment?
+
+Patient: Yes, I am.
+
+Doctor: And, how is baby doing?
+
+Patient: Yeah. [unintelligible].
+
+Doctor: OK. Any coughs or colds with, uh, them?
+
+Patient: No, no. He's fine.
+
+Doctor: OK. So, you've noticed shortness of breath for just an hour, while sitting and watching TV?
+
+Patient: Yep. Mm-hmm.
+
+Doctor: And, you had your C-section a couple of weeks ago?
+
+Patient: Yeah.
+
+Doctor: And, yesterday you noticed a cough?
+
+Patient: Yeah.
+
+Doctor: So, talk to me about the cough. Have you bought anything up?
+
+Patient: Uh, no, I haven't, no.
+
+Doctor: And, when was the last time you were ill with the flu, or symptoms like this?
+
+Patient: Um, you know, I get coughs and colds quite a lot, but probably. Good few months ago.
+
+Doctor: OK. And, this shortness of breath you're having, is it getting worse?
+
+Patient: Um. No. I mean, I don't know. I feel like I'm getting really stressed out because, like, my heart, it's really going.
+
+Doctor: OK. So, you're feeling your heart more than normal?
+
+Patient: Yeah.
+
+Doctor: And, the shortness of breath, does it cause any pain in your chest?
+
+Patient: Um, no.
+
+Doctor: How about when you take a very deep breath in?
+
+Patient: Um, I mean, yeah. My chest feels sore, but so does my C-section scar. You know, it's, it's all tender.
+
+Doctor: OK. And, since your C-section, did you have to take any medications?
+
+Patient: Um, no. Just some painkillers.
+
+Doctor: All right. And, can you remember what the name of those were?
+
+Patient: Uh, they gave me some, uh, Codeine.
+
+Doctor: And, have you had to use that regularly?
+
+Patient: Uh, yeah. I, I've been taking that fairly, fairly regularly. But, probably haven't taken it for a week.
+
+Doctor: OK. And, apart from the C-section and the shortness of breath, have you got any other medical problems I should know about?
+
+Patient: Yeah. Um, no.
+
+Doctor: And, you were [unintelligible].
+
+Patient: [unintelligible] tell you, I'm allergic to Ibuprofen, though.
+
+Doctor: OK. And, what happens when you take Ibuprofen?
+
+Patient: Um. I don't know. Sorry.
+
+Doctor: [unintelligible] So, I need you to do something for me. Have you measured the rate of your heart before?
+
+Patient: Uh, yes.
+
+Doctor: Have you measured it recently, either with an iWatch or something similar?
+
+Patient: No, I haven't, no.
+
+Doctor: OK. We might need to do that over the phone. So, are you able to put your right hand on your left wrist, just underneath your thumb? And, see if you can feel your heartbeat.
+
+Patient: Yep. Yep.
+
+Doctor: So, uh, what I need you to do is, when I count to three, count down from three, just [unintelligible] count the number of beats you've noticed. And, I'll tell you when to stop. Is that OK?
+
+Patient: Mm-hmm. Yep.
+
+Doctor: So, we'll start in three, two, one. Go. Great. That should be enough. How many did you count?
+
+Patient: Uh, I counted thirty.
+
+Doctor: Good. So, your heart is running slightly fast at the moment, which is probably because of the shortness of breath and some of the pain that you're under.
+
+Patient: Mm-hmm. OK.
+
+Doctor: Given that you've had a C-section, and you're short of breath, which has come on quite recently and quite quickly It might be worth you going into the hospital to get checked out the bit further.
+
+Patient: OK.
+
+Doctor: So, there's two ways of us doing this. The first is, I can call an ambulance. Or, you can take yourself to the hospital with baby.
+
+Patient: Mm-hmm.
+
+Doctor: Which one would you prefer?
+
+Patient: Uh, it feels a bit dramatic to call an ambulance. Um, I, I will, I will go. I will, I will take myself.
+
+Doctor: Sure. And, what I would suggest is, go fairly quickly and take some bits for baby at the same time.
+
+Patient: OK.
+
+Doctor: And, if you're taking any medications like Codeine, don't, don't take them for the time being.
+
+Patient: Mm-hmm, OK.
+
+Doctor: Is anyone else with you at home?
+
+Patient: Uh, no. My partner's at work.
+
+Doctor: OK. So, I think that's the best thing to do, for the time being.
+
+Patient: Mm-hmm.
+
+Doctor: So, what I'm worried about at the moment is, given that you've had a C-section Some people can suffer with clots. And, those can either be found in the legs or your chest, so in your lungs.
+
+Patient: Yeah.
+
+Doctor: It's quite a common thing to happen. And, it's not something to worry about. But, needs to be checked out in the hospital first.
+
+Patient: OK.
+
+Doctor: And, if it, if that does become the case, they can give you something to reduce the clot.
+
+Patient: All right, OK. That makes sense.
+
+Doctor: Fairly quick process.
+
+Patient: OK. Yeah. I mean, my mum's had, uh, clots in her legs before. So, I guess, you know. [unintelligible] Yeah, that makes sense. I know, I know what they are.
+
+Doctor: Good. Are you, uh, are you particularly worried about anything, or do you want to ask me anything, before we go?
+
+Patient: No, no. I'm fine. I'll, uh, I'll just take myself to the hospital.
+
+Doctor: Great. Thank you so much.
+
+Patient: All right. Thank you. Bye.
+
+Doctor: [unintelligible]

@@ -1,0 +1,42 @@
+# SOAP Notes — Sample 0018
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 6 weeks of worsening breathlessness and cough, fever on and off for 2-3 weeks
+- Breathlessness: constant, worsens with exertion, lasts 10-15 min, difficulty taking deep breaths, severity up to 8/10, no alleviating factors
+- Cough: productive with spoonful of sputum (pink-tinged, brownish, green), no hemoptysis, no wheezing
+- Fever: 102°F, associated with night sweats and chills every other night for last 2 weeks
+- Unintentional weight loss over last couple weeks
+- No changes in smell, taste, hearing, vision; no nasal symptoms, sore throat, ear pain/discharge, eye pain/discharge
+- No skin changes, chest pain, leg swelling, palpitations, GI symptoms, urinary symptoms, headache, dizziness, syncope, confusion, memory loss
+- Similar symptoms (cough, SOB) in 3 out of 6 housemates
+
+PMHx:
+- Treated for pneumonia in India a couple years ago, did not complete antibiotic course due to financial constraints
+- No other medical conditions
+- Medications: Tylenol PRN (not helpful)
+- No known allergies
+- Immunizations up to date
+
+SocHx:
+- Moved to Canada from India 1 year ago for studies
+- Lives in a student house with 5 other students from India
+- Smokes 5 cigarettes/day for 10 years
+- No alcohol or drug use
+- Not currently sexually active, no history of unprotected sex
+
+FHx:
+- No family history of lung conditions, heart conditions, or cancers
+
+Objective:
+- Vitals signs
+- Physical examination
+
+Assessment:
+- Likely: Pulmonary TB
+- Differential: Pneumonia, COPD, Lung cancer
+
+Plan:
+- Investigations: AFB smear, other TB diagnostic workup, Chest X-ray
+- Treatment: Pending investigations
+- Counseling on TB transmission and infection control measures

@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0655
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is not married; went through a divorce.
+- Patient has two children.
+- Currently lives with her son.
+- Denies smoking or drinking.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

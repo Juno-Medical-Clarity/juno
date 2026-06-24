@@ -1,0 +1,3 @@
+Doctor: Does low blood pressure run in your family?
+Patient: No. As far as I know, no one else has it.
+Doctor: Okay.

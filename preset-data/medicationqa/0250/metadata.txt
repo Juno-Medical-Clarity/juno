@@ -1,0 +1,5 @@
+drug_focus: Viagra
+question_type: Indication
+section_title: Medications
+source_url: https://www.mayoclinic.org/diseases-conditions/pulmonary-hypertension/diagnosis-treatment/drc-20350702
+sample_id: 0250

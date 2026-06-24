@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'chemotherapy'
+  [17:18] 'medical-jargon-google-easy' -> 'carboplatin'
+  [19:20] 'medical-jargon-google-easy' -> 'paclitaxel'
+  [21:22] 'abbr-medical' -> 'PAC'
+  [23:24] 'abbr-medical' -> 'carbo'

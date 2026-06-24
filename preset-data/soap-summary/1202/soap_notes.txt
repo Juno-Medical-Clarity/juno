@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1202
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Patient expresses a wish to be in a better state.
+- Severity: Not explicitly mentioned.
+- Duration: Not explicitly mentioned.
+- Associated Symptoms: None mentioned.
+- Relevant Medical History: Left breast removed due to cancer; right knee replaced due to arthritis.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Patient is not feeling well but does not specify further.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

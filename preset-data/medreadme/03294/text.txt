@@ -1,0 +1,1 @@
+Exo1 processing at DNA nicks and double-strand breaks creates long stretches of single-stranded DNA, which are rapidly bound by replication protein A (RPA) and other single-stranded DNA binding proteins (SSBs).

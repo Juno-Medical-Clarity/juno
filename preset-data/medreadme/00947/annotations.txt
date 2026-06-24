@@ -1,0 +1,13 @@
+source:      plos_biology
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-hard' -> 'FAM173B'
+  [1:3] 'medical-jargon-google-easy' -> 'methyltransferase activity'
+  [4:6] 'medical-jargon-google-easy' -> 'sensory neurons'
+  [6:7] 'medical-jargon-google-easy' -> 'hyperpolarized'
+  [7:8] 'medical-jargon-google-easy' -> 'mitochondria'
+  [10:14] 'medical-jargon-google-hard' -> 'macrophage / microglia activation'
+  [16:22] 'medical-jargon-google-easy' -> 'reactive oxygen species - dependent pathway'

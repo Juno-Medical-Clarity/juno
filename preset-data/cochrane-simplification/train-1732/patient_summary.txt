@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1732  |  gem_id: gem-cochrane-simplification-train-1733  |  doi: 10.1002/14651858.CD003752.pub3
+
+Women requiring extensive surgery (urinary and or feacal stoma formation) or with inoperable tumour were predominantly given primary chemoradiation in the two retrospective studies identified, making the available evidence weak (although we only included studies that used statistical adjustment). There was no data on quality of life. There is a great need for good quality studies comparing various primary treatments in locally advanced vulval cancer which are either inoperable at presentation or operable but would require extensive surgery.

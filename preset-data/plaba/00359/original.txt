@@ -1,0 +1,8 @@
+The global pandemic caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and its threat to humans have drawn worldwide attention.
+The acute and long-term effects of SARS-CoV-2 on the nervous system pose major public health challenges.
+Patients with SARS-CoV-2 present diverse symptoms of the central nervous system.
+Exploring the mechanism of coronavirus damage to the nervous system is essential for reducing the long-term neurological complications of COVID-19.
+Despite rapid progress in characterizing SARS-CoV-2, the long-term effects of COVID-19 on the brain remain unclear.
+The possible mechanisms of SARS-CoV-2 injury to the central nervous system include: 1) direct injury of nerve cells, 2) activation of the immune system and inflammatory cytokines caused by systemic infection, 3) a high affinity of the SARS-CoV-2 spike glycoprotein for the angiotensin-converting enzyme ACE2, 4) cerebrovascular disease caused by hypoxia and coagulation dysfunction, and 5) a systemic inflammatory response that promotes cognitive impairment and neurodegenerative diseases.
+Although we do not fully understand the mechanism by which SARS-CoV-2 causes nerve injury, we hope to provide a framework by reviewing the clinical manifestations, complications, and possible mechanisms of neurological damage caused by SARS-CoV-2.
+With hope, this will facilitate the early identification, diagnosis, and treatment of possible neurological sequelae, which could contribute toward improving patient prognosis and preventing transmission.

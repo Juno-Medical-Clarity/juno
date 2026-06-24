@@ -1,0 +1,5 @@
+drug_focus: morphine
+question_type: Usage
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a2c1f1b7-70b0-416b-8bdf-9eaed156e34b
+sample_id: 0341

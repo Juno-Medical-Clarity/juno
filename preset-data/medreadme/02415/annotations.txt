@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [2:6] 'general-complex' -> 'interrupted time series analyses'

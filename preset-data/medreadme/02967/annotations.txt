@@ -1,0 +1,7 @@
+source:      elife
+side:        simple
+readability: 4.0
+split:       dev
+
+jargon_spans:
+  [16:17] 'medical-jargon-google-hard' -> 'Pif1'

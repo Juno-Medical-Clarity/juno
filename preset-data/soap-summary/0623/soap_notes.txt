@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0623
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history includes:
+ - Father died from prostate cancer at age 80.
+ - Mother died at age 67, was an alcoholic.
+ - Brother died from bone and throat cancer at age 70.
+ - Two sons aged 37 and 38, both doing well.
+ - Two daughters aged 60 and 58, both have cancer.
+- Other family conditions mentioned: nervous condition, high blood pressure, kidney and lung disease, depression.
+- Emotional response to family history indicates concern for her daughters and the overall severity of family health issues.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

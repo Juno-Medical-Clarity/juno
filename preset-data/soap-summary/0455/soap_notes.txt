@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0455
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Severe lower back pain
+- Severity: Started off mild and got worse
+- Duration: Over the course of a few days
+- Associated Symptoms: Sluggishness
+- Relevant Medical History: None mentioned
+- Family History: None mentioned
+- Allergies: None mentioned
+- Other Concerns: Patient spends most of her time in bed; no recent injuries or falls.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No clinician's interpretation or diagnoses provided]
+
+Plan:
+- [No actions, medications, tests, follow-up, or patient education mentioned]

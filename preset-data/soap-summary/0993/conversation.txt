@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0993
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What's bringing her in today? Guest_family: Oh, doctor. She hasn't been doing well at all. Guest_family: I think she's actually gotten worse. I understand. I'm sorry to hear that she hasn't been feeling well. Let me see what we can do for her today. Guest_family: I haven't taken her temperature since this morning. It was one hundred and three degrees when she woke up. What time did she wake up today? Guest_family: Um, around eight I believe. She also suffers from apnea. It looks like she has an upper respiratory infection. Guest_family: Is she going to get better? Yes, she should feel better once we start treating the infection. But I'm worried it may be pertussis.

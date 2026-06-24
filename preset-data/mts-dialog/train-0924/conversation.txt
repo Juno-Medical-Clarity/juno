@@ -1,0 +1,21 @@
+Doctor: Welcome to the clinic. I am Doctor Frank.
+Patient: Thank you. It is nice to meet you.
+Doctor: What brings you into see me today?
+Patient: I think I may have had a stroke.
+Doctor: What happened to make you think that you had a stroke?
+Patient: This morning, I felt like something in my throat. It was a strange feeling. Then I felt really dizzy. My left hand and jaw felt numb.
+Doctor: Did you lose consciousness?
+Patient: I don't know. It is a bit confusing. I woke up this morning and I was so disoriented that I thought it was the middle of the night. My hand was numb. I also felt the numbness on the left side of my neck and my face.
+Doctor: Did the dizzy episode happen after you woke up this morning?
+Patient: Yes. I got dizzy when I tried to get out of bed.
+Doctor: Has anything like this happen to you in the past?
+Patient: About three weeks ago, I had a dizzy episodes and I ended up falling down.
+Doctor: Did you have any other symptoms like you did this morning?
+Patient: No.
+Doctor: Did you see a doctor after the fall you had three weeks ago?
+Patient: I saw Doctor X Y Z. Doctor X Y Z put me on Antivert.
+Doctor: Have you had any cold or any other resent illnesses?
+Patient: I have not had a cold, but I did have an earache about a day or so ago.
+Doctor: Okay. How old are you?
+Patient: I am seventy five years young.
+Doctor: Fantastic.

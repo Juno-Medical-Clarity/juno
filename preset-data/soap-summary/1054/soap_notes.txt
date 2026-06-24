@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1054
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Pain severity: 7 out of 10
+- Pain description: Deep and aching
+- Pain location: Right lower back and into the butt
+- Pain aggravating activities: Going up and down stairs, sitting for a long time (e.g., when driving)
+- Prior activity level: Very active before the onset of pain
+- Current ability to perform activities: Significant problems with household chores and projects that were previously manageable
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0714
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you drink alcohol? Nope! I use to occasionally, very long time ago. But not anymore. Okay and how bout cigarettes? Do you smoke or vape? No, none of those. And no drugs and stuff, right? No snorting, I V or anything right? Right, I don't do drugs either, never did. Even though pot is legal here, I never ever felt like trying. That's a good thing. Yeah.

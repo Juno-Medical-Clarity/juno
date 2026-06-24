@@ -1,0 +1,8 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [7:8] 'medical-jargon-google-easy' -> 'leishmanization'
+  [9:11] 'medical-jargon-google-easy' -> 'TLR agonists'

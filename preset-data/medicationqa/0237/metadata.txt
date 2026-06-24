@@ -1,0 +1,5 @@
+drug_focus: lexapro
+question_type: Side effects
+section_title: ADVERSE REACTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=13bb8267-1cab-43e5-acae-55a4d957630a
+sample_id: 0237

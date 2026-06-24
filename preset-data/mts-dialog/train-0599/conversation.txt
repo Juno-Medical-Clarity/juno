@@ -1,0 +1,24 @@
+Doctor: Good morning, sir. You're sixty one years old, correct?
+Patient: Good morning, doctor. Yes, that's correct.
+Doctor: Great, and you identify as Caucasian, right?
+Patient: Yes, that's correct as well.
+Doctor: Thank you, do you have any medical conditions that I should know about?
+Patient: Yes, I have diabetes.
+Doctor: How are you handling your diabetes?
+Patient: Well, I've had diabetes for a long time but had never been treated for it.
+Doctor: Okay, thank you for telling me. What seems to be the problem today?
+Patient: I've been working in my garage over the past few days, and I have this redness and swelling in my right foot.
+Doctor: Do you have any itchiness or pain?
+Patient: Yes, and it's getting worse.
+Doctor: Have you seen any other doctors about this?
+Patient: Um, yes. I went to the A B C D General Hospital E R and they gave me an evaluation there.
+Doctor: Do you have any images from this visit?
+Patient: Um, yes. I have them right here.
+Doctor: Okay, these show a foreign body in the foot.
+Patient: But what about all the stuff on the outside of my foot?
+Doctor: Well, that's consistent with cellulitis.
+Patient: What's that?
+Doctor: It's a skin infection we clean it up in surgery.
+Patient: What kind of procedure can we do?
+Doctor: We should do an irrigation debridement for the cellulitis, and remove the foreign body. I think that will really help.
+Patient: Yes, I agree, doctor.

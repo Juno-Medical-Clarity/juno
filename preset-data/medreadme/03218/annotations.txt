@@ -1,0 +1,10 @@
+source:      plos_biology
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Morphological'
+  [5:7] 'medical-jargon-google-easy' -> 'hippocampal neurons'
+  [14:16] 'medical-jargon-google-hard' -> 'transgene activation'
+  [30:31] 'medical-jargon-google-easy' -> 'neurons'

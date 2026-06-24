@@ -1,0 +1,4 @@
+Doctor: Hello. Before we begin, I need you to confirm some information for me.
+Patient: What kind of information?
+Doctor: About your family. Do you know if you have certain medical conditions that run in your family?
+Patient: Nope. My family is very healthy.

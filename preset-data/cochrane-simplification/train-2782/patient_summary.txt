@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2782  |  gem_id: gem-cochrane-simplification-train-2783  |  doi: 10.1002/14651858.CD004805.pub2
+
+This review found no robust evidence to suggest that combinations of potassium, calcium or magnesium can reduce high blood pressure (BP) in adults. Only three trials assessing a total of 277 participants were found. The only combination assessed by all three trials was potassium and magnesium, demonstrating a statistically non-significant reduction in BP among people receiving this combination. One trial assessed both calcium & magnesium and calcium & potassium and found that neither combination had very much effect on BP. None of the trials were of high quality, so their results may not be reliable. Very few mild adverse effects were reported. These were of short duration and participants did not have to stop taking their treatment.

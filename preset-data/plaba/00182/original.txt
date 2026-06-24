@@ -1,0 +1,11 @@
+We recently described a novel thiazide-sensitive electroneutral NaCl transport mechanism resulting from the parallel operation of the Cl-/HCO3- exchanger pendrin and the Na+-driven Cl-/2HCO3- exchanger (NDCBE) in β-intercalated cells of the collecting duct.
+Although a role for pendrin in maintaining Na+ balance, intravascular volume, and BP is well supported, there is no in vivo evidence for the role of NDCBE in maintaining Na+ balance.
+Here, we show that deletion of NDCBE in mice caused only subtle perturbations of Na+ homeostasis and provide evidence that the Na+/Cl- cotransporter (NCC) compensated for the inactivation of NDCBE.
+To unmask the role of NDCBE, we generated Ndcbe/Ncc double-knockout (dKO) mice.
+On a normal salt diet, dKO and single-knockout mice exhibited similar activation of the renin-angiotensin-aldosterone system, whereas only dKO mice displayed a lower blood K+ concentration.
+Furthermore, dKO mice displayed upregulation of the epithelial sodium channel (ENaC) and the Ca2+-activated K+ channel BKCa.
+During NaCl depletion, only dKO mice developed marked intravascular volume contraction, despite dramatically increased renin activity.
+Notably, the increase in aldosterone levels expected on NaCl depletion was attenuated in dKO mice, and single-knockout and dKO mice had similar blood K+ concentrations under this condition.
+In conclusion, NDCBE is necessary for maintaining sodium balance and intravascular volume during salt depletion or NCC inactivation in mice.
+Furthermore, NDCBE has an important role in the prevention of hypokalemia.
+Because NCC and NDCBE are both thiazide targets, the combined inhibition of NCC and the NDCBE/pendrin system may explain thiazide-induced hypokalemia in some patients.

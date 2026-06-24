@@ -1,0 +1,8 @@
+Doctor: Do you smoke?
+Patient: Yes.
+Doctor: How much?
+Patient: Two cigarettes per day.
+Doctor: Okay that is not bad, but try quitting.
+Patient: Okay.
+Doctor: Alcohol?
+Patient: No, I don't drink.

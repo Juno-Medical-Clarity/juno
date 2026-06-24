@@ -1,0 +1,11 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-hard' -> 'HdhQ111 somatic expansion'
+  [11:12] 'medical-jargon-google-easy' -> 'Mlh3'
+  [15:16] 'medical-jargon-google-hard' -> 'MutLg'
+  [17:20] 'medical-jargon-google-hard' -> 'MLH1 - MLH3'
+  [27:29] 'medical-jargon-google-easy' -> 'somatic expansion'

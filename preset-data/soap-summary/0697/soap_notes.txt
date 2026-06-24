@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0697
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: None explicitly mentioned.
+- Severity: Not applicable.
+- Duration: Not applicable.
+- Associated symptoms: None explicitly mentioned.
+- Relevant medical history: Patient smokes about a pack or two of cigarettes per day. Family history includes father's death from renal cancer; no known health problems in mother or siblings.
+- Family history: Father passed away from renal cancer; unclear medical history on father's side; no health problems reported in mother or siblings.
+- Allergies: None mentioned.
+- Other concerns: Patient expresses uncertainty about family medical history.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

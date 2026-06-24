@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0214  |  gem_id: gem-cochrane-simplification-test-215  |  doi: 10.1002/14651858.CD004618.pub2
+
+Quinolone antibiotic drops (considered to be the 'gold standard' topical antibiotics) are better than no drug treatment or antiseptics at drying the ear. The effects of non-quinolone antibiotics (without steroids) when compared to antiseptics are less clear. Studies were also inconclusive regarding any differences between quinolone and non-quinolone antibiotics, although indirect evidence suggests a benefit of quinolones cannot be ruled out. Less is known about longer-term outcomes (producing a dry ear in the long term, preventing complications, healing the eardrum, and improving hearing), or about treating complicated CSOM. The evidence in these trials about safety is also weak. More research is needed to assess whether there may be fewer adverse events with topical quinolones than with alternative topical treatments.

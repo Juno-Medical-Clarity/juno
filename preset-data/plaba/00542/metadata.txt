@@ -1,0 +1,5 @@
+pmid:        26939619
+question:    42
+adaptation:  adaptation2
+title:       Histones as mediators of host defense, inflammation and thrombosis
+sentences:   6

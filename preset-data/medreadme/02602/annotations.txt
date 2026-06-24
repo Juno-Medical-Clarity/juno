@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        complex
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [11:14] 'medical-jargon-google-easy' -> 'haematological adverse events'
+  [15:16] 'medical-jargon-google-easy' -> 'anaemia'
+  [17:18] 'medical-jargon-google-easy' -> 'thrombocytopenia'
+  [19:20] 'medical-jargon-google-easy' -> 'neutropenia'
+  [21:23] 'medical-jargon-google-easy' -> 'febrile neutropenia'

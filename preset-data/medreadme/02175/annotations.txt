@@ -1,0 +1,10 @@
+source:      MSD
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [19:22] 'medical-jargon-google-easy' -> 'deep venous thrombosis'
+  [23:24] 'abbr-medical' -> 'DVT'
+  [28:30] 'medical-jargon-google-easy' -> 'pulmonary embolism'
+  [35:36] 'medical-jargon-google-easy' -> 'malaise'

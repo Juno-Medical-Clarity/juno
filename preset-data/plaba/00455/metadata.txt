@@ -1,0 +1,5 @@
+pmid:        26458388
+question:    35
+adaptation:  adaptation1
+title:       Clinical utility of routine laboratory testing to identify possible secondary causes in older men with osteoporosis: the Osteoporotic Fractures in Men (MrOS) Study
+sentences:   14

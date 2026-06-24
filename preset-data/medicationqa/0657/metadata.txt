@@ -1,0 +1,5 @@
+drug_focus: atorvastatin
+question_type: Stopping/tapering
+section_title: Consider statins a lifelong commitment
+source_url: https://www.drugs.com/mca/statins-are-these-cholesterol-lowering-drugs-right-for-you
+sample_id: 0657

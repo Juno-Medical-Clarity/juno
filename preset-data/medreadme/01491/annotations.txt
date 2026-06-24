@@ -1,0 +1,13 @@
+source:      cochrane_all
+side:        simple
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'HRT'
+  [11:13] 'medical-jargon-google-easy' -> 'endometrial cancer'
+  [27:28] 'medical-jargon-google-easy' -> 'womb'
+  [29:31] 'medical-jargon-google-easy' -> 'fallopian tubes'
+  [32:33] 'medical-jargon-google-easy' -> 'ovaries'
+  [37:38] 'medical-jargon-google-easy' -> 'tumour'
+  [38:39] 'general-complex' -> 'recurrence'

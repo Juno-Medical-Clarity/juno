@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1016
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has no history of mental retardation problems.
+- Patient graduated high school last year.
+- Patient has an Individualized Education Program (IEP).
+- Patient has a job at a cardboard shop.
+- No issues with performing work.
+- Patient's boss reports that he is doing very well at his job.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

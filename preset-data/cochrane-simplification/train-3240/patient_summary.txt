@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3240  |  gem_id: gem-cochrane-simplification-train-3241  |  doi: 10.1002/14651858.CD004825.pub2
+
+Distinct sources of randomised clinical trials (RCTs) were searched, such as electronic databases (between 1966 and 2007). We also crosschecked references and contacted scientific societies. Eleven trials involving 398 men met the inclusion criteria. Conclusions: there is evidence that group therapy (GT) improves ED in selected patients. Focused sex GT showed greater efficacy than control group. Men who received GT plus sildenafil showed significant improvement of ED and were less likely than those receiving only sildenafil to drop out. In comparing the effectiveness of psychological interventions for the treatment of ED versus local injection and vacuum devices, no difference was found.

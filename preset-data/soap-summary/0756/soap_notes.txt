@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0756
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 28 years old.
+- This is the patient's second pregnancy.
+- History of gestational diabetes with the first pregnancy.
+- Used insulin during the first pregnancy.
+- Patient is seeking to understand if diet can help with gestational diabetes.
+- Concern regarding ketones as mentioned by the gynecologist.
+- Patient walks every day with her daughter, dropping her off at school.
+- Walk duration is approximately 20 minutes each way, totaling around 40 minutes in the morning and the same in the evening.
+- Patient tries to drink milk for calcium but is not a fan of it.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- Provided a pamphlet to explain ketones.
+- No specific actions, medications, tests, follow-up, or patient education explicitly mentioned.

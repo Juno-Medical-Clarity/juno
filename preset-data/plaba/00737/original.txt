@@ -1,0 +1,7 @@
+There is considerable interest in the waning of effectiveness of coronavirus disease 2019 (COVID-19) vaccines and vaccine effectiveness (VE) of booster doses.
+Using linked national Brazilian databases, we undertook a test-negative design study involving almost 14 million people (~16 million tests) to estimate VE of Corona Vac over time and VE of BNT162b2 booster vaccination against RT-PCR-confirmed severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection and severe COVID-19 outcomes (hospitalization or death).
+Compared with unvaccinated individuals, CoronaVac VE at 14-30 d after the second dose was 55.0% (95% confidence interval (CI): 54.3-55.7) against confirmed infection and 82.1% (95% CI: 81.4-82.8) against severe outcomes.
+VE decreased to 34.7% (95% CI: 33.1-36.2) against infection and 72.5% (95% CI: 70.9-74.0) against severe outcomes over 180 d after the second dose.
+A BNT162b2 booster, 6 months after the second dose of CoronaVac, improved VE against infection to 92.7% (95% CI: 91.0-94.0) and VE against severe outcomes to 97.3% (95% CI: 96.1-98.1) 14-30 d after the booster.
+Compared with younger age groups, individuals 80 years of age or older had lower protection after the second dose but similar protection after the booster.
+Our findings support a BNT162b2 booster vaccine dose after two doses of CoronaVac, particularly for the elderly.

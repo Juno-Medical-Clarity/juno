@@ -1,0 +1,10 @@
+source:      pnas
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-hard' -> 'inhibited proteasomes'
+  [6:7] 'general-complex' -> 'sequestered'
+  [9:11] 'medical-jargon-google-hard' -> 'insoluble aggresome'
+  [12:19] 'medical-jargon-google-hard' -> 'HDAC6 - and dynein - mediated transport'

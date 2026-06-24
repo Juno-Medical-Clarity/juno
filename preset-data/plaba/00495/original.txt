@@ -1,0 +1,12 @@
+Background: The biodegradable and biocompatible nature of pectin-based films is of particular interest in wound dressing applications, due to its non-toxicity, pH-sensitivity and gelling activity.
+An approach to improve the mechanical properties, the release profile of bioactive compounds as well as the performance in wet environments of pectin-based films is mixing with other biopolymers.
+Objective: To prepare hydrocolloid films based on crosslinked pectin / starch blend loaded with bioactive extracts from leaves of G. tinctoria and U. molinae with controlled release of bioactive compounds and healing property.
+Methods: The hydrocolloid films were characterized by FTIR, SEM, and TGA-FTIR techniques and their tensile properties, water uptake, and polyphenolic release profile in aqueous media were evaluated.
+The dermal anti inflammatory activity of the hydrocolloid films was assessed by the mouse ear inflammation test.
+The wound healing property of the loaded hydrocolloid films was explored in a rat model and in a clinical trial (sacrum pressure ulcer).
+Results: The films showed an adequate water-uptake capacity between 100-160%.
+The release of active compounds from the hydrocolloid films followed the Korsmeyer-Peppas equation.
+The mechanical properties of hydrocolloid films were not affected by the plant extracts within the concentration range used.
+The incorporation of the bioactive extracts in the polysaccharide films inhibited the topical edematous response by about 50%.
+The topical application of the loaded hydrocolloid film on the pressure ulcer is completely closed after 17 days without showing any adverse reaction.
+Conclusion: A novel hydrocolloid matrix was produced from crosslinked starch-pectin, which exhibited suitable chemical-physical properties to be used as a carrier of plant extracts with wound healing properties.

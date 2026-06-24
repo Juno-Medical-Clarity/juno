@@ -1,0 +1,7 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.0
+split:       dev
+
+jargon_spans:
+  [11:12] 'medical-jargon-google-easy' -> 'Ebola'

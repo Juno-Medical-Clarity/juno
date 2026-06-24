@@ -1,0 +1,7 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [20:22] 'medical-jargon-google-easy' -> 'general practitioners'

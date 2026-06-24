@@ -1,0 +1,12 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'exogenous addition'
+  [8:14] 'medical-jargon-google-easy' -> 'TcSMUG L N - terminal peptide'
+  [18:22] 'medical-jargon-google-easy' -> 'T. cruzi mucin peptides'
+  [26:27] 'medical-jargon-google-easy' -> 'bloodmeal'
+  [33:35] 'medical-jargon-google-easy' -> 'R. prolixus'
+  [37:41] 'medical-jargon-google-easy' -> 'dose - dependent manner'

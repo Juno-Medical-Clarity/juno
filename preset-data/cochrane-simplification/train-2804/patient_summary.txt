@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2804  |  gem_id: gem-cochrane-simplification-train-2805  |  doi: 10.1002/14651858.CD009202.pub4
+
+The evidence is current to August 2016. We could only identify one trial, which was terminated early due to recruitment problems. This study enrolled only 24 participants of the required 150. This study was a small, single-blind, multicentre trial studying adults with RSE receiving either propofol or thiopental sodium for the control of seizure activity. There was no difference between the two drugs in their ability to control seizure activity. The only difference noted was the requirement for prolonged mechanical ventilation for patients in the thiopental sodium group. This could be due to the prolonged presence of the drug in the body due to its slow removal. We judged the quality of the evidence for our primary outcomes of total control of seizures and in-hospital mortality to be low. There is a clear need for a large randomised controlled trial to study the efficacy of anaesthetic agents in the treatment of RSE.

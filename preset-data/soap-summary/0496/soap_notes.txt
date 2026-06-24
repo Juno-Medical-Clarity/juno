@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0496
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Difficulty swallowing (duration: a while)
+- Symptoms believed to be stemming from enlarged thyroid
+- Concern about the need for surgery due to symptoms related to the thyroid
+- Request for imaging and a consult
+
+Objective:
+- Thyroids appear fairly enlarged (no specific measurements or details provided)
+
+Assessment:
+- Symptoms likely related to enlarged thyroid (no specific diagnoses or clinical impressions provided)
+
+Plan:
+- Obtain imaging
+- Schedule a consult

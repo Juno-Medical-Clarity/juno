@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-easy' -> 'reconstructed epidemic ancestral'
+  [7:9] 'medical-jargon-google-easy' -> 'HIV sequence'
+  [14:18] 'medical-jargon-google-easy' -> 'North American subtype B'

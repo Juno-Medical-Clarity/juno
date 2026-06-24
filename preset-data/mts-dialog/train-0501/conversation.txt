@@ -1,0 +1,17 @@
+Doctor: I see here that you've been having some chest pain. Where along the chest?
+Patient: It's mostly on the left side.
+Doctor: When did it start?
+Patient: Um a few days ago.
+Doctor: How'd you describe the pain?
+Patient: Kinda dull.
+Doctor: Any other symptoms with the pain, such as shortness of breath?
+Patient: Not really, no.
+Doctor: How long does the pain usually last?
+Patient: For a few minutes. It comes and goes.
+Doctor: Have you taken anything for the pain?
+Patient: I've taken some Advil, but it doesn't seem to help.
+Doctor: Have you had similar pain in the past?
+Patient: No, I don't think so.
+Doctor: And you had surgery on your abdomen five days ago, correct?
+Patient: Yes. Do you think the pain is related?
+Doctor: I'd like to run some tests and get you in for a CAT scan to see what's going on.

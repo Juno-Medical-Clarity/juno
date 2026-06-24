@@ -1,0 +1,8 @@
+Hyperkalemia is a potentially life-threatening metabolic problem caused by inability of the kidneys to excrete potassium, impairment of the mechanisms that move potassium from the circulation into the cells, or a combination of these factors.
+Acute episodes of hyperkalemia commonly are triggered by the introduction of a medication affecting potassium homeostasis; illness or dehydration also can be triggers.
+In patients with diabetic nephropathy, hyperkalemia may be caused by the syndrome of hyporeninemic hypoaldosteronism.
+The presence of typical electrocardiographic changes or a rapid rise in serum potassium indicates that hyperkalemia is potentially life threatening.
+Urine potassium, creatinine, and osmolarity should be obtained as a first step in determining the cause of hyperkalemia, which directs long-term treatment.
+Intravenous calcium is effective in reversing electrocardiographic changes and reducing the risk of arrhythmias but does not lower serum potassium.
+Serum potassium levels can be lowered acutely by using intravenous insulin and glucose, nebulized beta2 agonists, or both.
+Sodium polystyrene therapy, sometimes with intravenous furosemide and saline, is then initiated to lower total body potassium levels.

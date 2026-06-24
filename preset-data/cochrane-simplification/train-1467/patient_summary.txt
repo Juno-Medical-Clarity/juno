@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1467  |  gem_id: gem-cochrane-simplification-train-1468  |  doi: 10.1002/14651858.CD006972.pub2
+
+There is currently only one study reporting on 47 babies that fulfils our review criteria and compares different high dose versus low dose of initial replacement thyroxine for the treatment of congenital hypothyroidism. There is not enough evidence to suggest that a high dose is more beneficial than a low dose therapy. Growth and adverse effects were not reported in the included study. There should be more randomised controlled trials to assess the effects of high versus low dose of initial thyroid hormone replacement for congenital hypothyroidism.

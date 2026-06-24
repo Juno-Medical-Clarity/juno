@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0731
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What medications are you taking? I take Prilosec and Tramadol when I have back pain.

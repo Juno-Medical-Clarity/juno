@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0332
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient had knee surgery in the past.
+- Surgery was on the right knee.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

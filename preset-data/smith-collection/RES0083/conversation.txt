@@ -1,0 +1,156 @@
+# Smith Collection Transcript: RES0083
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What can i do for you
+
+Patient: Ive been feeling really just bad these last couple of days ive had these uh muscle aches and headache and cough that have been really bothering me
+
+Doctor: When did all this start
+
+Patient: So yeah about 3 days ago i woke up in the morning with uh and yeah i started having these like muscle aches and a cough started kind of that day
+
+Doctor: OK can you tell me a little bit more about the cough is it a dry cough or wet cough
+
+Patient: Its a dry cough i havent brought up any any sputum and no blood
+
+Doctor: And the muscle aches is it all over is it specific part of your body
+
+Patient: Yeah its just kinda all over just feels kind of icky
+
+Doctor: OK and has the cough gotten better or worse over the past three days
+
+Patient: Its got a little worse i think i would say its a bit more frequent but the cough isnt that bad but its gotten worse
+
+Doctor: OK and you mentioned headaches when did those start
+
+Patient: So within the last couple of days yeah ive had a headache want to say most of the time and ive been using tylenol or acetaminophen to help with those its taken the edge off of the headaches for sure
+
+Doctor: Do you usually get headaches
+
+Patient: Every once in a while maybe once or twice a month maybe even less than that
+
+Doctor: Is your current headache similar to the headaches that you usually get
+
+Patient: It is yeah its yeah it feels like my head is being squeezed and i kind of have a pressure where yeah that kind of squeezing sensation on my forehead
+
+Doctor: That front part both sides left and right
+
+Patient: Yeah kind of both sides
+
+Doctor: Is it accompanied with uh so is the headache worse when youre in bright light
+
+Patient: No
+
+Doctor: No ok is it worse when are you trying to stay in a dark room with no sound is it worse when youre when people are talking or theres loud noises around you
+
+Patient: No
+
+Doctor: No any nausea or vomiting
+
+Patient: No
+
+Doctor: Any stiffness in your neck any difficulties moving your neck
+
+Patient: No thats ok i mean a bit like i dont know like kind of achy i guess with my upper back and shoulders feel a bit sore but yeah i can move my head around ok
+
+Doctor: Alright ok and uhm lets see so have you had any fevers or chills
+
+Patient: I dont think so
+
+Doctor: OK and any sore throat
+
+Patient: No
+
+Doctor: Runny nose congestion
+
+Patient: No
+
+Doctor: OK uhm any other i guess any difficulties breathing
+
+Patient: No no
+
+Doctor: Any chest pain
+
+Patient: No
+
+Doctor: Any palpitations do you feel like your hearts racing
+
+Patient: No
+
+Doctor: Any pain your belly
+
+Patient: No
+
+Doctor: Changes in your bowel movements or your urinary function
+
+Patient: No i havent had any diarrhea things have been normal
+
+Doctor: OK good ok i suppose ok so youve had this cough and youve had muscle aches and this headache how has uh so youve tried tylenol have you tried anything else
+
+Patient: No i just use the tylenol and i took a tylenol cold and sinus at night which helped with the sleeping
+
+Doctor: OK can you tell me if you have any medical problems any medical conditions
+
+Patient: Yeah i have uh high cholesterol and yeah i just have high cholesterol
+
+Doctor: Any medications that youre on
+
+Patient: Yeah i take a statin
+
+Doctor: And any allergies
+
+Patient: uh maybe penicillin i think i got hives when i was a kid or some sort of rash
+
+Doctor: I see ok and any medical conditions that run in your family
+
+Patient: I know my dad had a stroke when he was in his late 70s and my mom had high cholesterol as well
+
+Doctor: OK ok and do you currently smoke or have you ever smoked
+
+Patient: No i quit smoking when i had my first kid so that was about yeah that was 17 years ago
+
+Doctor: OK and how much did you smoke before that
+
+Patient: I smoked about a half a pack per day
+
+Doctor: For how many years
+
+Patient: For about 12 years i guess
+
+Doctor: OK and do you consume alcohol
+
+Patient: Yeah ill have three or four glasses of wine over the weekend
+
+Doctor: Alright and what about any marijuana
+
+Patient: uh no
+
+Doctor: Any recreational drugs
+
+Patient: No
+
+Doctor: OK do you take any herbal medications or any vitamins or anything else over the counter
+
+Patient: Yeah i do take magnesium and like vitamin and uh a multi vitamin
+
+Doctor: And do you have you had any contact with anyone who is sick or you think might be sick
+
+Patient: I dont think so um everybody in my family has been been ok
+
+Doctor: Have you had exposure to anyone or met anyone who you think might have had covid
+
+Patient: uh well i did go to a family party just last weekend it was outside and we were maintaining distancing but yeah
+
+Doctor: Are you vaccinated
+
+Patient: No not yet
+
+Doctor: No ok alright ok so youve had this dry cough and muscle aches and headache for the past three days or so and your symptoms are getting a little bit worse or your coughs getting worse for the past three days were gonna it could be that you have some sort of a viral infection like an upper respiratory infection but you might also or you could possibly have covid so well do a covid test and i just recommend that you stay hydrated and continue to eat and drink well and and monitor your symptoms take tylenol it sounds like tylenol has been helping a little bit continue to take tylenol get lots of rest and if you have any shortness of breath or if you feel like your symptoms are getting worse call 911 for help if your concerned about your health at all and well get a covid test set up for you
+
+Patient: OK thank you

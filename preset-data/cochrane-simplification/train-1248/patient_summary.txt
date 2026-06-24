@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1248  |  gem_id: gem-cochrane-simplification-train-1249  |  doi: 10.1002/14651858.CD002942.pub2
+
+Each study included in this review looked at a different intervention to reduce pain in mammography. The trial results show that giving women written or verbal information about the procedure prior to the mammogram can reduce pain or discomfort of the examination. Also increasing women's control of breast compression could reduce the pain they experience, though there was no change in the pain women experienced when a mammography-technologist reduced the compression force. Use of breast cushions also reduced the pain; however, it caused a poor quality of X-ray in 2% of women screened, which meant that they would need to have a further mammogram. Paracetamol taken before the procedure did not change the pain the women experienced. Further research is needed on interventions to relieve the pain and discomfort of screening mammography.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0742
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, I see you were diagnosed with an acid reflux problem and high blood pressure twenty years back? Yes. And then you also have arthritis and Parkinson's. Yes, both. Also, you had a brain stroke? Yes, mini stroke! Ah, yes. We also call it as T I A. Okay. And currently are you on any medications? Just Coumadin, for my chronic A Fib. I have been on it three years. Yeah, atrial fibrillation. Yes.

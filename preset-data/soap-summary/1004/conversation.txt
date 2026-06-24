@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1004
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What brings you into the office today? I had a stroke about a month ago. The right side of my face is still not moving. Is it only the right side of the face that is affected by paralysis? Yes. It has improved a little bit since I was in the hospital. That is a good sign. It can take up to six months see how much movement you will regain.

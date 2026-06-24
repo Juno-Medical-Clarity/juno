@@ -1,0 +1,12 @@
+Doctor: So how are you feeling?
+Patient: I am feeling well.
+Doctor: Any illness or fever?
+Patient: No, nothing like that.
+Doctor: Any headache or nausea?
+Patient: No.
+Doctor: Any vomiting or stomach upset?
+Patient: No.
+Doctor: Okay, any numbness tingling or loss of sensation in the hand?
+Patient: No, not at all.
+Doctor: Otherwise feeling well?
+Patient: Yeah.

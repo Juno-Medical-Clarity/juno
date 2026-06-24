@@ -1,0 +1,4 @@
+Doctor: Is there any family medical history?
+Patient: I have a whole list. See, my grand aunt had a stroke. My M G had heart issues same as my mom, who died of a heart attack at sixty three. My father had some sort of cancer. I don't know what exactly. And my sisters have blood pressure issues.
+Doctor: Wow, that sure is a list. Anyone with diabetes?
+Patient: No. Well, that is one thing that skipped my family.

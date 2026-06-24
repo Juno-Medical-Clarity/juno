@@ -1,0 +1,10 @@
+Doctor: Where do you feel the most pain?
+Patient: I'd have to say at the heels of my feet. I spend a lot of time on my feet at work.
+Doctor: I see. What kind of shoes do you normally wear to work?
+Patient: Regular tennis shoes.
+Doctor: Are they cushioned?
+Patient: Eh not really, but they're pretty durable.
+Doctor: I'd advise getting an orthotic for your shoes to help with the heel pain and resting your feet when you're home. In the meantime, I'd like for you to see a specialist to make sure nothing else is going on.
+Patient: Alright, I'm good with that plan.
+Doctor: Are you having any other problems? Joint pain, difficulty walking, nausea, vomiting, or other symptoms?
+Patient: No, just heel pain for now.

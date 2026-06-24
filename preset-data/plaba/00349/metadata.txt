@@ -1,0 +1,5 @@
+pmid:        34535317
+question:    27
+adaptation:  adaptation2
+title:       Myocarditis following COVID-19 vaccination - A case series
+sentences:   11

@@ -1,0 +1,9 @@
+source:      wiki
+side:        simple
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Prostacyclin'
+  [2:4] 'medical-jargon-google-easy' -> 'prostaglandin I2'
+  [13:14] 'abbr-medical' -> 'PAH'

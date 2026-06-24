@@ -1,0 +1,5 @@
+drug_focus: suboxone
+question_type: Action
+section_title: How long does Suboxone last in your system?
+source_url: https://americanaddictioncenters.org/suboxone/length-of-blocking-effect/
+sample_id: 0431

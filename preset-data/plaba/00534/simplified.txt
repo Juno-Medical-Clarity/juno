@@ -1,0 +1,9 @@
+Damage to DNA and changes to the body's response to DNA damage, called DNA damage response or DDR, could be one of the processes involved in the development of kidney cysts (growths) in the inherited disease called autosomal dominant polycystic kidney disease (ADPKD).
+This study aims to test the idea that certain types of DNA damage and DDR signaling are increased in ADPKD experiments.
+In the part of the human ADPKD genes that transfer information to molecules, the DNA damage response (DDR) genes increased 16 times compared with that in a normal kidney. DDR also more than doubled in tissues with cysts compared to DDR in tissues with few cysts.
+In tissues from end-stage human ADPKD, certain genes and protein enzymes involved in the DDR to detect and repair damaged DNA focus on cystic kidney epithelial cells, which are important cells for kidney function.
+In lab tests, protein enzymes are also increased in human ADPKD cells located in the tubal duct system of the kidneys when compared with normal tubal cells.
+Additionally, some DNA damage increases genes and cell survival in human ADPKD cells, and worsens cyst growth in one animal experiment.
+In contrast, DNA damage response (DDR) gene processing is only temporarily increased on the day of birth in mice, and not altered at later times up to 12 months of age.
+In conclusion, DDR signals to other cells are not controlled well in human ADPKD and during the early phases of animal ADPKD.
+The use of the DNA damage response in ADPKD may promote survival of gene cells that have mutated (changed) and contribute to cyst growth in the kidneys.

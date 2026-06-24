@@ -1,0 +1,10 @@
+Introduction: Treatments for subjects with Covid-19 are required.
+One approach is neutralising monoclonal antibodies.
+Bamlanivimab and etesevimab are monoclonal antibodies to SARS-CoV-2.
+Areas covered: This evaluation is of the phase 3 BLAZE-1 clinical trial, which was of bamlanivimab plus etesevimab in adult ambulatory participants with a risk factor for, and mild to moderate, Covid-19 illness.
+The primary outcome was Covid 19 related hospitalisation of ≥ 24 hours or death from any cause by day 29, and this occurred in 2.1% subjects in the bamlanivimab/etesevimab group, compared to 7.0% in the placebo group.
+Expert opinion: In the pandemic, the attempts by the FDA to shorten approval processes for medicines and by journals to make information available in a timely manner are admirable.
+However, these shortened processes made negotiating the details of BLAZE-1 and producing accurate and critical appraisals difficult.
+It seems to me, that if there are any benefits of bamlanivimab alone in Covid-19, they are not clear-cut.
+Bamlanivimab has limited effects against the beta and gamma variants and is not effective against the delta variant.
+Thus, the benefits of bamlanivimab/etesevimab in the phase 3 of the BLAZE-1 may be solely due to etesevimab, and this needs to be tested.

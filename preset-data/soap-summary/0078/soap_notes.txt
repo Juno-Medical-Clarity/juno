@@ -1,0 +1,41 @@
+# SOAP Notes — Sample 0078
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with worsening cough (started 2 weeks ago, initially dry, now productive with hemoptysis - blood-tinged sputum first noticed 2 days ago, enough to cover a tissue, bright red in color)
+- Sharp chest pain (left-sided and central, started within the last week, worse with deep breathing and coughing, improves with leaning forward and staying still, lasts a few minutes)
+- Night sweats (intermittent over the last several months, sheets soaked on waking)
+- Fatigue and unintentional weight loss of 20 lbs over the last 2 months (200 lbs 2 months ago to 180 lbs currently)
+
+PMHx:
+- Type 2 diabetes mellitus 
+- Hypertension
+- Depression (previously on citalopram, currently stable off medication)
+- Surgical history: 2 Cesarean sections (2nd and 3rd daughters, no complications)
+
+Medications:
+- Ramipril (ACE inhibitor) 
+- Metformin
+
+SocHx:
+- Volunteering at local homeless shelter for the last 3-4 months (exposure to individuals with cough and recent hospital discharges)
+- Lives with husband (also has cough, no hemoptysis) and 3 daughters (asymptomatic)
+- Works from home doing administrative work
+- No smoking, recreational drugs
+- Occasional alcohol use (red wine with dinner on special occasions)
+
+FHx:
+- Father had a stroke in his late 60s
+
+Objective:
+- Vitals pending
+
+Assessment:
+- Suspect pulmonary tuberculosis given subacute onset of productive cough with hemoptysis, constitutional symptoms (night sweats, fatigue, weight loss), and exposure risk (volunteering at homeless shelter)
+- Differential diagnosis: tuberculosis pericarditis (based on pleuritic chest pain and constitutional symptoms)
+
+Plan:
+- Sputum smear and culture for tuberculosis
+- EKG, echocardiogram, and chest X-ray to evaluate for pericarditis if TB test returns positive
+- Admit to hospital for isolation and initiation of anti-tubercular therapy if TB test confirms diagnosis
+- Contact public health for contact tracing of family members if TB test is positive

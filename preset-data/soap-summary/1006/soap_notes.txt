@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1006
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient has a history of melanoma and underwent surgery for it. 
+- Patient has also had a hysterectomy. 
+
+Objective: 
+- No measurable or observable data provided. 
+
+Assessment: 
+- No clinician's interpretation, diagnoses, or clinical impressions provided. 
+
+Plan: 
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

@@ -1,0 +1,6 @@
+Doctor: Any medical history?
+Patient: Um I suffer from depression and high blood pressure.
+Doctor: Are you taking anything for either?
+Patient: Only for high blood pressure.
+Doctor: Have you had surgeries in the past?
+Patient: I had surgery to get a few hemorrhoids removed back in two thousand and ten.

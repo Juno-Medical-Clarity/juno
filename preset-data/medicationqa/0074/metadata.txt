@@ -1,0 +1,5 @@
+drug_focus: Toradol IM
+question_type: Usage
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96777460-7522-4d18-804c-fb85b5f4fa9e
+sample_id: 0074

@@ -1,0 +1,9 @@
+Doctor: Hello, miss. Could you verify your age, please?
+Patient: I'm fifty five years old.
+Doctor: Great. What is the reason for your visit today?
+Patient: I've been having a lot of problems recently, so I decided to come get it checked out by you.
+Doctor: I see. What kind of problems are you experiencing?
+Patient: Oh, it's a long list. Here it is.
+Doctor: Thank you. Let me take a look. Looks like you have some general allergies and food allergies, loss of taste, problems with your G I tract, asthma, G E R D, and dry mouth or xerostomia.
+Patient: Yeah, that sounds about right. I think I forgot to add it, but I also have bad allergies during the spring time.
+Doctor: Oh, I see. I would describe that as environmental inhalant allergies.

@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'praziquantel'
+  [12:13] 'medical-jargon-google-easy' -> 'oxamniquine'
+  [28:30] 'medical-jargon-google-easy' -> 'parasitological failure'

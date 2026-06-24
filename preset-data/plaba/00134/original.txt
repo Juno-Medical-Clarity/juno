@@ -1,0 +1,10 @@
+Diets low in carbohydrates and proteins and enriched in fat stimulate the hepatic synthesis of ketone bodies (KB).
+These molecules are used as alternative fuel for energy production in target tissues.
+The synthesis and utilization of KB are tightly regulated both at transcriptional and hormonal levels.
+The nuclear receptor peroxisome proliferator activated receptor α (PPARα), currently recognized as one of the master regulators of ketogenesis, integrates nutritional signals to the activation of transcriptional networks regulating fatty acid β-oxidation and ketogenesis.
+New factors, such as circadian rhythms and paracrine signals, are emerging as important aspects of this metabolic regulation.
+However, KB are currently considered not only as energy substrates but also as signaling molecules.
+β-hydroxybutyrate has been identified as class I histone deacetylase inhibitor, thus establishing a connection between products of hepatic lipid metabolism and epigenetics.
+Ketogenic diets (KD) are currently used to treat different forms of infantile epilepsy, also caused by genetic defects such as Glut1 and Pyruvate Dehydrogenase Deficiency Syndromes.
+However, several researchers are now focusing on the possibility to use KD in other diseases, such as cancer, neurological and metabolic disorders.
+Nonetheless, clear-cut evidence of the efficacy of KD in other disorders remains to be provided in order to suggest the adoption of such diets to metabolic-related pathologies.

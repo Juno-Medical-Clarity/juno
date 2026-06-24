@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3299  |  gem_id: gem-cochrane-simplification-train-3300  |  doi: 10.1002/14651858.CD009110.pub3
+
+This review (six studies involving a total of 375 participants) identified no research evidence to suggest that alginate wound dressings are more effective in healing diabetic foot ulcers than other types of dressing. More, better quality research is needed.

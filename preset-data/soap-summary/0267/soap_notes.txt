@@ -1,0 +1,39 @@
+# SOAP Notes — Sample 0267
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Intense pain in right shoulder after being tackled and falling during rugby
+- Incident occurred 2 hours ago
+- Pain is constant, rated 8-9/10
+- Sharp pain, worsens with movement
+- Unable to move shoulder, but can move fingers, hand, and elbow slightly
+- Numbness above shoulder, no tingling
+- No other pain, headaches, confusion, memory loss, weight loss, fever, chills, rashes, changes in vision, hearing, smell, taste, coughing, SOB, wheezing, chest pain, heart palpitations, changes in bowel movements, or voiding
+- Pain radiates down towards upper arm
+- No previous episodes of similar symptoms
+- No relief with self-treatment attempts
+
+Past Medical History:
+- No significant PMHx
+- No medications
+- Immunizations up to date
+- No allergies
+- No FHx of musculoskeletal diseases or autoimmune conditions
+- SocHx: Lives with parents outside of town, occasional alcohol consumption with friends on weekends, no smoking or marijuana use, no recent travel, no sick contacts
+
+Objective:
+- Right shoulder and arm appear lower than left
+- No redness, swelling, warmth, atrophy, or skin changes
+- Shoulder appears dropped with a divot where the shoulder should be
+- Tenderness and pain in acromion process and scapula
+- No significant pain on palpation of biceps or triceps
+- Unable to lift shoulder
+
+Assessment:
+- Likely diagnosis: Shoulder dislocation
+
+Plan:
+- Investigations: X-ray of shoulder joint to rule out fractures
+- Treatment: Closed reduction to reposition joint, possible surgery if closed reduction fails or if ligaments are weak
+- Immobilization for a few days to weeks depending on severity
+- Rehabilitation to restore range of motion after immobilization

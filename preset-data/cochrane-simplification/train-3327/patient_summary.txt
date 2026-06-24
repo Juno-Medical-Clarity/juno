@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3327  |  gem_id: gem-cochrane-simplification-train-3328  |  doi: 10.1002/14651858.CD010769.pub2
+
+We found five studies involving 168 participants with painful diabetic neuropathy or polyneuropathy. Studies were randomised and double-blind, but all had one or more sources of potential major bias that could lead to overestimation of efficacy. It was not possible to combine information from the different studies, but individually they indicated some benefit from imipramine (usually at a dose between 100 mg and 150 mg daily) compared with placebo, at the expense of increased adverse events. There was too little information, which was of inadequate quality, to be sure that imipramine works as a pain medicine in neuropathic pain due to diabetes or due to damage to multiple nerves. There was no information about other types of neuropathic pain. Other medicines have been shown to be effective.

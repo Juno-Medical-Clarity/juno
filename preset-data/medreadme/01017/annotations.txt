@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [2:6] 'medical-name-entity' -> 'Drosophila Genetic Reference Panel'
+  [18:20] 'medical-jargon-google-easy' -> 'viral titre'
+  [32:37] 'medical-jargon-google-hard' -> 'Cdc42 - interacting protein 4'

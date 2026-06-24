@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0534
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Urinary tract infection (UTI)
+- Severity: Not explicitly mentioned
+- Duration: Not explicitly mentioned
+- Associated symptoms: Not explicitly mentioned
+- Relevant medical history: Patient has a history of seizures (taking Dilantin), high blood pressure (taking Toprol), and high cholesterol (taking Pravachol).
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Patient carries a list of medications.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Diagnosis: Urinary tract infection (UTI)
+
+Plan:
+- Prescription for Macrobid (antibiotic) to treat the UTI.
+- Confirmed patient is using Walgreens pharmacy at Thrashers Corner.
+- Noted current medications: Dilantin, Toprol, and Pravachol.

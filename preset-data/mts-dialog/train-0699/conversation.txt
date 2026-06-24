@@ -1,0 +1,6 @@
+Doctor: Did both your parents have heart complications.
+Patient: Unfortunately, yes. My mom passed from a heart attack at seventy three and my father at eighty.
+Doctor: I'm so sorry to hear that.
+Patient: I lost my brother as well. He passed away from a brain tumor when he was nine years old.
+Doctor: I can't imagine how hard that must've been.
+Patient: It was a dark time in our lives, but we survived it as a family.

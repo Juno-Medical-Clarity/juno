@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0463
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not smoke or drink alcohol.
+- History of being a boxer.
+- Lives mostly alone during the daytime; family helps on and off.
+- Prefers to be in an independent home setting soon.
+
+Objective:
+- [No observable data mentioned]
+
+Assessment:
+- [No clinician's interpretation or diagnosis provided]
+
+Plan:
+- [No actions, medications, tests, follow-up, or patient education mentioned]

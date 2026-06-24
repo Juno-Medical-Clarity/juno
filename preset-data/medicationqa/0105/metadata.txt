@@ -1,0 +1,5 @@
+drug_focus: opioids
+question_type: Information
+section_title: Opioid Withdrawal
+source_url: https://www.addictionsandrecovery.org/opioid-opiate-recovery.htm
+sample_id: 0105

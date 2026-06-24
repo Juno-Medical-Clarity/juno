@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-easy' -> 'anti-CTLA-4'
+  [6:7] 'medical-jargon-google-easy' -> 'Ipilimumab'
+  [14:17] 'medical-jargon-google-easy' -> 'antigen - specific'
+  [17:21] 'medical-jargon-google-easy' -> 'CD8 + T cells'
+  [23:28] 'medical-jargon-google-hard' -> 'HLA - B * 35Px'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2645  |  gem_id: gem-cochrane-simplification-train-2646  |  doi: 10.1002/14651858.CD008955.pub2
+
+Whereas not all single studies demonstrated a survival benefit for patients treated with interferon, combining the available evidence, we found that the use of postoperative interferon improves the survival of those with high-risk melanoma. On average, the toxicity associated with interferon administration (such as fever and fatigue) is limited; moreover, it is reversible when the treatment is stopped. Since interferon alpha is the only approved drug after surgery for those with high-risk melanoma, efforts to identify those who might benefit most from this treatment are very important in order to avoid unnecessary toxicity for those who would not benefit from interferon alpha treatment. Combination of interferon with novel drugs is another field of ongoing research to improve the life expectancy of people with high-risk melanoma.

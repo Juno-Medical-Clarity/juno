@@ -1,0 +1,204 @@
+# Smith Collection Transcript: RES0182
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Hi yeah im here because im over the past like couple of months ive been losing a lot of weight uhm but i didnt really have any other symptoms but since like 2 weeks ago ive been coughing up some blood and now i have a fever as well
+
+Doctor: OK so you mentioned you notice the weight loss first how much weight have you lost or roughly
+
+Patient: Ive lost about 30 pounds in the past past like 8 months
+
+Doctor: OK so and have you been trying to lose weight
+
+Patient: No
+
+Doctor: OK and any like any changes to your diet or exercise
+
+Patient: No nothing like that
+
+Doctor: OK and more recently you started to have a cough when did that start
+
+Patient: The cough started two weeks ago
+
+Doctor: OK and prior to this did you have a cough
+
+Patient: No
+
+Doctor: No and are you bringing bringing up any sputum or phlegm
+
+Patient: uh yeah its yeah theres sputum for sure and it looks bloody
+
+Doctor: OK so youre youre youre coughing up blood as well
+
+Patient: Yes thats right
+
+Doctor: OK uh and thats been going going on for the last two weeks too
+
+Patient: Yes
+
+Doctor: OK and how much blood have you been bringing up roughly if you can think of it in like terms of tablespoons or teaspoons
+
+Patient: Like every time i cough its about the size of a teaspoon
+
+Doctor: OK and are there any triggers for your cough that you can think of
+
+Patient: Uhm i dont think so they just happen throughout the day
+
+Doctor: OK and have you tried anything for the cough
+
+Patient: I tried this cough suppressants i tried like salt water rinses like just like at home remedies and over the counter products but nothing is helping
+
+Doctor: OK and so have you had any like viral infectious type symptoms such as like eye eye discharge or red eyes or runny nose or even a sore throat
+
+Patient: No nothing like that
+
+Doctor: OK and and have you had any any headaches
+
+Patient: No no headaches
+
+Doctor: OK have you had any have you had a runny nose
+
+Patient: No
+
+Doctor: OK how about any have you had any loss of smell or or taste
+
+Patient: No
+
+Doctor: OK have you had any shortness of breath
+
+Patient: uh no
+
+Doctor: Have you had any wheezing
+
+Patient: Uhm no no wheezing
+
+Doctor: OK have you had any chest pain
+
+Patient: No
+
+Doctor: OK have you had any dizziness or fainting
+
+Patient: Uhm no nothing like that
+
+Doctor: Heart palpitations
+
+Patient: No
+
+Doctor: OK and have you had any any nausea or vomiting
+
+Patient: No
+
+Doctor: Have you had any abdominal pain
+
+Patient: No
+
+Doctor: Have you had any diarrhea or constipation
+
+Patient: No
+
+Doctor: Have you had any pain with urination or or frequency
+
+Patient: uh no
+
+Doctor: OK have you had any rashes
+
+Patient: No
+
+Doctor: How about muscle aches or body pains
+
+Patient: Uhm muscle aches yeah yeah thats been happening
+
+Doctor: Any particular muscles or is it more general
+
+Patient: Its more general
+
+Doctor: Have have you been having any bone pain like any in your back or anything like that
+
+Patient: No
+
+Doctor: OK and uh how has your energy been
+
+Patient: Ah pretty low
+
+Doctor: OK and how is your appetite been
+
+Patient: Uhm also pretty low
+
+Doctor: OK and in the in the past have you been diagnosed with any medical conditions
+
+Patient: Uhm no ive been pretty healthy so far
+
+Doctor: OK uhm so do you take any medications regularly for anything
+
+Patient: No
+
+Doctor: OK and do you have any allergies to medications or or anything environmental
+
+Patient: uh no
+
+Doctor: OK and have you had any prior hospitalizations or surgeries
+
+Patient: Uhm no
+
+Doctor: OK and uh could you tell me a little bit about your living situation currently like who youre living with an ah whereabouts youre living
+
+Patient: Uhm i live alone by myself i live in an apartment downtown
+
+Doctor: OK and are you working currently or in school or
+
+Patient: um im working from home right now
+
+Doctor: OK have you been around anybody whos been sick
+
+Patient: No
+
+Doctor: Have you traveled anywhere recently
+
+Patient: No not since i moved here
+
+Doctor: OK when did you move here and where did you move from
+
+Patient: I moved here a year back from sri lanka
+
+Doctor: OK and and in sri lanka were any of your family members or people that you spent time around ever diagnosed with tuberculosis
+
+Patient: I mean its pretty common in sri lanka none of my immediate family members were
+
+Doctor: OK and do you smoke cigarettes
+
+Patient: No
+
+Doctor: And ah do you smoke cannabis or use any cannabis products
+
+Patient: No
+
+Doctor: OK and do you drink alcohol
+
+Patient: I dont
+
+Doctor: OK how about the use of any other recreational drugs
+
+Patient: uh no
+
+Doctor: OK and uh any family history of heart or lung problems
+
+Patient: Heart or lung uh no not that i know of
+
+Doctor: OK and how about any cancers in the family
+
+Patient: No no cancers
+
+Doctor: I see alright did you have any other questions for me today i think that was everything i wanted to ask about for now
+
+Patient: Ah no what do you like what do you think i have and how do you think i should treat it
+
+Doctor: So uh yeah its sounding like like it could be tuberculosis based on the kind of timeline of your symptoms and so and cough and hemoptysis and so well do a test for that like an acid fast test of the sputum get a chest x ray and if it is tuberculosis it will require a prolonged course of antibiotics so that ill be over several months umm and so i well get the infectious disease team involved to help kind of guide our management with the appropriate antibiotic choice if it does come back to be tuberculosis
+
+Patient: OK ok that sounds good thank you

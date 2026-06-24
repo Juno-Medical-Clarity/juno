@@ -1,0 +1,16 @@
+Doctor: I see here that you're in for a med refill. Is that correct?
+Patient: Yep. I ran out of Klonopin one or two days ago.
+Doctor: What are you taking it for? And how long have you been on it?
+Patient: Panic attacks. I have really bad episodes without it. Um I think I started it about four months ago. I could be wrong though. I've lost track of time.
+Doctor: Who usually prescribes it to you?
+Patient: My doctor back in Georgia.
+Doctor: Do you happen to have their name or contact info on hand?
+Patient: No, unfortunately.
+Doctor: How much Klonopin do you take for your panic attacks?
+Patient: I take a pretty low dose. I think I'm on zero point five milligrams a day. Is there any way you could verify the dosage?
+Doctor: I can try to look it up online. When were you last prescribed Klonopin?
+Patient: Over two months ago I think.
+Doctor: Let me pull up the page and see if we can figure out your dosage and when you're due for a refill based on your doctor's orders.
+Patient: Okay, thank you.
+Doctor: Are you experiencing any symptoms currently, such as headache, nausea, vomiting, shortness of breath or chest pain?
+Patient: Not right now, no. I did have some nausea yesterday. Oh and I guess I had a slight headache when I woke up this morning, but that's about it.

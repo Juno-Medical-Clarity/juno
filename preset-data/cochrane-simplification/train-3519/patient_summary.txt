@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3519  |  gem_id: gem-cochrane-simplification-train-3520  |  doi: 10.1002/14651858.CD006791.pub2
+
+However, our primary research for this review showed that there was no strong evidence concerning the effectiveness of TCMHs in stopping bleeding from haemorrhoids. The included studies were few and of low quality. Limited, weak evidence showed that some formulae, when including Radix Sanguisorbae, Radix Rehmanniae, Fructus Sophorae, etc., may alleviate some symptoms caused by haemorrhoids. These symptoms include hematochezia and congestive haemorrhoidal cushions, in the short term. Additional, standardised trials are needed for meta-analysis to draw a final conclusion.

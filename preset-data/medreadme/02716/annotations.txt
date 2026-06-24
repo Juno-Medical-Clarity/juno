@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [2:4] 'medical-jargon-google-easy' -> 'antimicrobial stewardship'
+  [6:8] 'medical-jargon-google-easy' -> 'stratified interventions'

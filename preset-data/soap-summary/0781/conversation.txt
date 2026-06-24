@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0781
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Did you ever have any reaction to any medication given? Any known allergies? No. Was there any swelling where your lymphnodes are? No. Was there ever any complaint of abnormal lymph nodes? No.

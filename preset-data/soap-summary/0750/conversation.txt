@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0750
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any medical traits in the family? Oh yeah. Diabetes and high blood pressure runs in my family. Anything else? Yeah, my mom suffered with a stroke when she was in her seventies.

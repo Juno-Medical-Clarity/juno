@@ -1,0 +1,238 @@
+# Smith Collection Transcript: RES0138
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: um ive just had difficulties with breathing for the past i want to say eight nine months and um my wife just told me to come in its just she was worried about it and uh i thought id just come in and have it checked out
+
+Doctor: Okay so its been going on for the last eight to nine months has it been getting worse at all
+
+Patient: Yeah i would think so i would say so yeah so
+
+Doctor: Sorry go on
+
+Patient: So it was just um i feel like i just get short of breath more easily now
+
+Doctor: Okay and is it short of breath with activities or are you getting short of breath with uh sitting or resting as well
+
+Patient: So when im when im with activity
+
+Doctor: With activity okay and the cough that youre getting is it a wet cough or a dry cough
+
+Patient: Its a dry cough
+
+Doctor: Okay and are you bringing up any material at all like any um yellow or green sputum
+
+Patient: No no
+
+Doctor: Any blood
+
+Patient: um no no blood
+
+Doctor: No blood okay and with your shortness of breath is it are you having difficulty taking deep breaths or do you find that youre taking more fast shallow breaths
+
+Patient: um just i guess just uh shallow breaths
+
+Doctor: Okay okay and um so this is over the last eight or nine months have you noticed any other symptoms at all like chest pain dizziness or fainting no
+
+Patient: No
+
+Doctor: Okay and do your symptoms get get worse at all when youre lying flat like when youre sleeping
+
+Patient: No
+
+Doctor: No and do you ever wake up gasping for air
+
+Patient: No
+
+Doctor: Okay um and have you tried anything thats helped you uh relieve some of these symptoms
+
+Patient: Sorry could you say that again
+
+Doctor: uh have you tried anything like over the counter to help you relieve these symptoms
+
+Patient: No no i havent
+
+Doctor: um have you traveled at all recently
+
+Patient: No
+
+Doctor: Have you been in contact with anyone thats been sick
+
+Patient: um no not really i i did go out to the pharmacy to get my medications but thats thats the only time i actually interact with anyone outside of my home
+
+Doctor: And what what medications do you take
+
+Patient: um i just take aspirin
+
+Doctor: Aspirin okay have you been diagnosed with any medical conditions
+
+Patient: I had a heart attack
+
+Doctor: Oh okay well when was that
+
+Patient: Last year
+
+Doctor: Last year well im so sorry and um did they give you any medications to go on after that
+
+Patient: Yeah yeah yeah there there were a couple of other medications as well something um something something pril and uh i think theres uh uh rosuvastatin
+
+Doctor: Okay and do you still take those
+
+Patient: Yeah i take those sometimes i forget that i do i try to take them as much as i can
+
+Doctor: Okay and you also take the aspirin alright have you noticed any fevers or chills
+
+Patient: No
+
+Doctor: Nausea or vomiting
+
+Patient: Nope
+
+Doctor: And any chest pain
+
+Patient: uh no
+
+Doctor: No okay any increased fatigue
+
+Patient: No
+
+Doctor: Any diarrhea or constipation
+
+Patient: No
+
+Doctor: Any numbness or tingling anywhere
+
+Patient: No
+
+Doctor: Any confusion or memory like memory loss
+
+Patient: um no i dont think so
+
+Doctor: Any trouble urinating
+
+Patient: um no
+
+Doctor: Okay have you noticed any swelling um in your feet ankles legs at all
+
+Patient: No
+
+Doctor: Okay um and hows your appetite been like
+
+Patient: um its been its been the same
+
+Doctor: Okay and any um significant weight changes have you lost any weight
+
+Patient: No
+
+Doctor: No um any exposure to fumes or dust within your environment
+
+Patient: um not right now when i was young yeah
+
+Doctor: Okay now did you so did you have exposure to fumes or dust
+
+Patient: um i used to work in a mine so
+
+Doctor: A mine
+
+Patient: Yeah lots of chemicals and things like that
+
+Doctor: Okay and any exposure to any pets or animals
+
+Patient: uh no
+
+Doctor: Besides your medical history of having a heart attack and some blood pressure um any other medical conditions
+
+Patient: uh i just have high blood pressure
+
+Doctor: Okay any allergies to any medications or any environmental allergies
+
+Patient: No
+
+Doctor: Okay um any hospitalizations besides when you had a heart attack previously
+
+Patient: No
+
+Doctor: Any surgeries
+
+Patient: No
+
+Doctor: Okay did they tell you at all what the cause of your heart attack was
+
+Patient: um they just uh they said it was my my diet
+
+Doctor: They said diet okay
+
+Patient: Yeah something about cholesterol
+
+Doctor: Did you require any stents or did you have to get a bypass surgery or anything like that
+
+Patient: uh they put in i think they put in stents
+
+Doctor: Stents okay um any family history of any heart or lung conditions
+
+Patient: Yeah um my um mom had heart failure
+
+Doctor: Okay um and how old was she when she had her heart failure
+
+Patient: She was young she was uh 55
+
+Doctor: 55 okay um and currently right now or sorry do you have any family history of any cancers any lung cancer or anything like that
+
+Patient: No
+
+Doctor: And currently do you work or are you retired
+
+Patient: Im retired
+
+Doctor: Okay and whats your living situation like right now do you live with anyone
+
+Patient: I live with my wife
+
+Doctor: Okay and do you smoke
+
+Patient: uh no
+
+Doctor: Have you ever smoked
+
+Patient: I did when i was young
+
+Doctor: How long would you say you smoked for
+
+Patient: um id say 45 years
+
+Doctor: And how much would you smoke in an average day
+
+Patient: um about a pack a day
+
+Doctor: um any recreational drugs like marijuana
+
+Patient: No
+
+Doctor: And do you drink alcohol
+
+Patient: Yeah i do um ill ill drink a glass at night every night
+
+Doctor: And a glass of what would you drink
+
+Patient: Oh just a a glass of wine white wine
+
+Doctor: Okay so those are all the questions i have for you today any questions for me
+
+Patient: No
+
+Doctor: Okay so yeah theres definitely like the coughing and shortness of breath are definitely concerning and theyve been going on for a pretty long time do you ever have any night sweats or anything like that
+
+Patient: No
+
+Doctor: Okay so theres a few things that we think about with the chronic shortness of breath and a cough one could be just a copdiagnosis with your long history of smoking and this pulmonary function test get an xray chest xray as well um another thing that we need to look out for is uh lung cancer and since you have been smoking for a pretty long time even though you may have quit which is really great but that long history of smoking especially also with um you working in a mine those are some things that means we can test as well and so we may require like a chest xray and even um a ct scan of your lungs as well um so yeah first well just do a couple tests do a physical examination get your vitals do some blood work and do some of those tests and then well also get a coviswab test done for you as well just in case does that sound good
+
+Patient: Yeah
+
+Doctor: Alright so well be with you shortly

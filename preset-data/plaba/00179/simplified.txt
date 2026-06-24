@@ -1,0 +1,11 @@
+The COVID-19 epidemic (an outbreak of the viral breathing-related disorder) is the greatest pandemic that human kind experienced for decades, with high numbers of death and illness.
+Despite recent development of vaccines, there are still many severe cases of COVID-19.
+Unfortunately, there is still no standard or routine therapy and treatment for these severe cases.
+This study aims to find out if herbs given by themselves or as part of a combination of treatments can be used to prevent or treat SARS-CoV-2 infection (the novel coronavirus that can lead to COVID-19).
+A very common herb is Glycyrrhiza glabra (a root also known as liquorice), which in vitro (experiments in test tubes) stops or slows replication of different viruses, including coronaviruses.
+In experiments outside of the body, liquorice connects and changes the structure of ACE2 receptors, which are proteins that allow SARS-CoV-2 to enter cells.
+Pelargonium sidoides (an herb from a plant also known as African geranium) is able to change the response of the immune system and has antiviral (infection fighting) properties in clinical and lab studies.  It slows or stops replication of HCo-229E coronavirus, a type of coronavirus that infects humans and bats.
+Glycyrrhiza glabra, or liquorice, in combination with standard therapies significantly reduces hospitalizations and occurrence of COVID-19 symptoms.
+Additional therapies based on a traditional Chinese medicine, lianhuaqingwen capsules and jinhua qinggan granules, reduces the number of hospitalizations and the time it takes to recover from symptoms.
+There are some herbs that are either not effective, would be impossible to get enough of into the body safely, or are not usefully documented to fight SARS-CoV-2.
+Therefore, Liquorice and Pelargonium sidoides are effective against coronaviruses and could be possibly used as prevention and treatment of COVID-19, while lianhuaqingwen capsules and jinhua qinggan granules can be useful as an additional therapy to standard treatment.

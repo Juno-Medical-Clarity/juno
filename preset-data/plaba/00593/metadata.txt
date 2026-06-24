@@ -1,0 +1,5 @@
+pmid:        34692658
+question:    45
+adaptation:  adaptation1
+title:       Zwitterionic Hydrogel Activates Autophagy to Promote Extracellular Matrix Remodeling for Improved Pressure Ulcer Healing
+sentences:   7

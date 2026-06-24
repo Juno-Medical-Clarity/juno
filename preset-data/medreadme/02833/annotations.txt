@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [13:15] 'medical-jargon-google-easy' -> 'selective sweeps'
+  [23:25] 'medical-jargon-google-easy' -> 'recombination rate'

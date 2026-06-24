@@ -1,0 +1,6 @@
+In patients with von Hippel-Lindau (VHL) disease, renal cysts and clear cell renal cell carcinoma (ccRCC) arise from renal tubular epithelial cells containing biallelic inactivation of the VHL tumour suppressor gene.
+However, it is presumed that formation of renal cysts and their conversion to ccRCC involve additional genetic changes at other loci.
+Here, we show that cystic lesions in the kidneys of patients with VHL disease also demonstrate activation of the phosphatidylinositol-3-kinase (PI3K) pathway.
+Strikingly, combined conditional inactivation of Vhlh and the Pten tumour suppressor gene, which normally antagonises PI3K signalling, in the mouse kidney, elicits cyst formation after short latency, whereas inactivation of either tumour suppressor gene alone failed to produce such a phenotype.
+Interestingly, cells lining these cysts frequently lack a primary cilium, a microtubule-based cellular antenna important for suppression of uncontrolled kidney epithelial cell proliferation and cyst formation.
+Our results support a model in which the PTEN tumour suppressor protein cooperates with pVHL to suppress cyst development in the kidney.

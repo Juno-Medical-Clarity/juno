@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0359  |  gem_id: gem-cochrane-simplification-test-360  |  doi: 10.1002/14651858.CD002083.pub2
+
+We included fourteen randomised controlled trials. When compared to other typical antipsychotics molindone shows no difference in effectiveness and is no more or less likely than typical drugs to cause movement disorders, it does however cause significantly more weight loss. At present there is no evidence to suggest that it may have an atypical profile.

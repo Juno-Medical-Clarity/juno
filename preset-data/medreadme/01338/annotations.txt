@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [5:9] 'medical-jargon-google-easy' -> 'breast cancer risk locus'
+  [12:14] 'medical-jargon-google-easy' -> 'BRCA2 mutation'

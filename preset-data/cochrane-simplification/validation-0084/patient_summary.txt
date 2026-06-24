@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0084  |  gem_id: gem-cochrane-simplification-validation-85  |  doi: 10.1002/14651858.CD008273.pub2
+
+This review focuses on the effects of information programs which provide information specifically related to the facility and the services available to patients, their families and care givers. A broad search of published reports located only four studies with 610 participants which met the criteria for inclusion in this review. Orientation interventions may reduce distress in patients, but the quality of the evidence is low. The effects of such intervention on patient/carer satisfaction, knowledge and recall were not sufficiently evaluated or reported by the included trials. Although the studies generally reported positive outcomes for participants (e.g. more knowledgeable about the cancer centre and cancer therapy, better coping abilities), the studies generally were of poor quality and did not have a sufficient number of participants to eliminate the possibility of bias.

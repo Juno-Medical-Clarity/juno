@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1455
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_clinician: How is the patient's condition now? Well, he has improved clinically but would require acute care. Guest_clinician: Oh, I see.

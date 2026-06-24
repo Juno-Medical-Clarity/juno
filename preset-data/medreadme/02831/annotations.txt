@@ -1,0 +1,15 @@
+source:      plos_biology
+side:        complex
+readability: 6.0
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'recombination rates'
+  [15:16] 'general-complex' -> 'covariates'
+  [23:24] 'medical-jargon-google-easy' -> 'recombination'
+  [30:31] 'medical-jargon-google-easy' -> 'recombination'
+  [31:32] 'general-complex' -> 'modulates'
+  [32:36] 'medical-jargon-google-easy' -> 'Hill - Robertson effects'
+  [38:39] 'medical-jargon-google-easy' -> 'genome'
+  [42:43] 'medical-jargon-google-easy' -> 'recombination'
+  [45:46] 'medical-jargon-google-easy' -> 'mutagenic'

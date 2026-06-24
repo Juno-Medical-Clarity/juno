@@ -1,0 +1,5 @@
+pmid:        34499550
+question:    36
+adaptation:  adaptation2
+title:       The Surgical Technique of Mini Percutaneous Nephrolithotomy
+sentences:   14

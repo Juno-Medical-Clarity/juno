@@ -1,0 +1,251 @@
+# PriMock57 Consultation Transcript: day1_consultation06
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Doctor: [unintelligible] Hello?
+
+Patient: Hello there.
+
+Doctor: Uh, hello. Can you hear me OK?
+
+Patient: Yes, I can hear you.
+
+Doctor: OK, great. [unintelligible]. I am, yes. Nice to see you here, Oscar. Um, how can I help you this afternoon?
+
+Patient: Are you the doctor? Um, I'm, contacting you because I've been, quite short of breath lately.
+
+Doctor: OK. Do you want to tell me a bit more about it? When did it all start?
+
+Patient: Uh, well it seems to have been, slowly getting worse over the last couple of weeks. Um, now it's, become quite troublesome, in the last few days. Uh, I kind of, normally I can walk to the shops, without a problem but, now I'm having to sort of sit down and catch my breath. And I'm really starting to get a bit breathless, just about the house.
+
+Doctor: [unintelligible]
+
+Patient: And uh, it's got me kind of worried, don't really know what's going on.
+
+Doctor: OK. OK. OK. Is there anything you're particularly worried about?
+
+Patient: Um, well, I've, I've uh, I've got um, heart failure.
+
+Doctor: OK.
+
+Patient: Uh, I was told that, uh, a while ago. Um, and I got a bit breathless when I was first diagnosed, and put on some medicine that, that um, that helped, but I'm a bit worried it's just getting worse.
+
+Doctor: OK. Right. [unintelligible] Right, OK. So you mentioned you're feeling, uh, short of breath for the last couple of weeks, but mainly the last couple of days it's got a bit worse. Um, uh, and you're now feeling more breathless on kind of minimal, minimal exertion you mentioned. Um, have you noticed any other symptoms at all, uh, uh, with your breath? So, for example, any pain in your chest?
+
+Patient: No pain in my chest.
+
+Doctor: OK. And have you found yourself coughing, coughing at all?
+
+Patient: Um. Uh, I've got a bit of a dry cough, but it's not too troublesome.
+
+Doctor: OK. OK. And how's your general health otherwise? Are you feeling uh, weak, lethargic?
+
+Patient: Um, I'm feeling a little run-down, um, but otherwise, otherwise pretty normal.
+
+Doctor: OK.
+
+Patient: I've noticed my ankles have got a bit bigger.
+
+Doctor: OK. And what do you mean by that?
+
+Patient: Uh, it's just like, it's sort of swollen up a bit.
+
+Doctor: OK. Um, is that, is that both [unintelligible]?
+
+Patient: Kind of [unintelligible]. Um, yeah, both ankles. Yeah, it's a bit embarrassing.
+
+Doctor: Both ankles? OK. Uh, I can imagine, yeah. Um, and again, [unintelligible] over how long has this, have you noticed this for?
+
+Patient: Um, I kind of noticed it the last few days.
+
+Doctor: Past few days, OK. And is this something that you've had before, in the past?
+
+Patient: Uh, I think my ankles did swell up a bit last time, the heart failure was a problem.
+
+Doctor: OK. OK. Um, fine. OK. So, um, just to really recap, uh, so you're really, in the last couple of weeks, uh, you've been feeling breathless, uh, but worse in the last couple of days. You mentioned you had a bit of a dry cough. Um, and some swelling in your ankles. Um, reporting no chest pain. Um, and, and have you had any, have you any, have you noticed your heartbeat racing at all? So, palpitations or skipped heartbeat?
+
+Patient: No, not really.
+
+Doctor: OK. And any temperatures or fevers?
+
+Patient: Uh, no.
+
+Doctor: OK. And how about your appetite? Are you eating and drinking OK?
+
+Patient: Yeah, I, [unintelligible], I'm, that's fine.
+
+Doctor: OK. And your waterworks? Are you passing urine OK?
+
+Patient: Uh, yeah, but yeah. I usually pee a lot, [unintelligible], ever since the drugs [unintelligible].
+
+Doctor: Yeah. [unintelligible] Sure, OK. Alright. Um, fine. So, [unintelligible] your uh, your past medical history. You mentioned heart failure. Any, any other medical history I should be aware of?
+
+Patient: Uh, well I was told I had like a, they called it like a small heart attack. About, five years ago. Um, I uh, I had, I, I had like some chest pain and, they took me into hospital.
+
+Doctor: OK.
+
+Patient: And um, they, uh, but then I just got better.
+
+Doctor: OK. And when, when you say a small heart attack, did they give you a name, for what happened, a, a name of a diagnosis?
+
+Patient: Um. Uh, I can't remember. They just called it something a [unintelligible], uh, something like that, a small heart attack.
+
+Doctor: It's more hard to say. OK. Was it like angina or, um,
+
+Patient: Um. Uh, no they, they said that it, uh, it seemed, it was like, more than angina.
+
+Doctor: OK.
+
+Patient: Um, uh, but um, I didn't, but I only had to stay in hospital for a few days, and, uh.
+
+Doctor: OK. OK.
+
+Patient: And yeah, I've been OK since then.
+
+Doctor: You've been OK since then. OK, alright. So, apart from the uh, the heart, the heart problems, the heart failure, any other problems I should be aware of?
+
+Patient: Uh, no, I think I'm otherwise, I'm OK.
+
+Doctor: OK. Um, do you take any regular medications, apart from your [unintelligible] diuretics that you're taking? And do you know which ones?
+
+Patient: Uh, yeah, I take something called Furosemide.
+
+Doctor: [unintelligible]. Do you know which dose you're taking?
+
+Patient: I can't remember, I'm sorry doctor. I have to check.
+
+Doctor: That's OK. No problems. Um, Any other medications?
+
+Patient: Uh, yeah. I take Aspirin.
+
+Doctor: OK.
+
+Patient: And uh, Bisoprolol.
+
+Doctor: The Metoprolol, was it? Or?
+
+Patient: Uh, Bisoprolol.
+
+Doctor: Sorry, the connection's not very good. OK. Thank you, yeah. [unintelligible]
+
+Patient: Um, [unintelligible].
+
+Doctor: And a thousand, OK. Alright. Any allergies at all? Any medications?
+
+Patient: Uh, no, no allergies.
+
+Doctor: No. OK. And is there anything in the family that's, uh, that, that's uh, that's important for me to know? Any family history of medical problems, heart problems, lung problems?
+
+Patient: Uh [unintelligible], my, my father died of a, uh, of a heart attack.
+
+Doctor: I'm sorry to hear that. And, um, how old was your father when he passed away?
+
+Patient: Uh, he was, um, early sixties.
+
+Doctor: Early sixties, OK. Alright. Anything else I should be aware of?
+
+Patient: Um, my mother had osteoporosis.
+
+Doctor: OK. Is your mother still with us?
+
+Patient: Uh, yeah, she's still living.
+
+Doctor: OK, alright. Um, and socially, sir, just tell me a bit more about your situation at home. Who lives at home with you?
+
+Patient: Uh, I live on my own. Well, I got two cats.
+
+Doctor: You've got two cats. OK, great. Do they have names?
+
+Patient: They're my family. Uh, they're, they're called, um, they're called, Polly and Tim.
+
+Doctor: OK. Um, so it's just you and your cats. And um, in terms of day to day, are you working at the moment?
+
+Patient: Uh, I work part-time as, a, uh, lorry driver.
+
+Doctor: OK. And how is that? Is that quite stressful, long hours?
+
+Patient: Uh, it's OK. Um, I uh, yeah [unintelligible], when I'm working it's pretty exhausting.
+
+Doctor: Mm.
+
+Patient: Um, I guess I'm a bit worried, that if I get sick I won't, if I get more sick then, I won't be able to work properly.
+
+Doctor: Yeah, that's certainly a consideration, isn't it? So let's, let's try and get you better soon, so it doesn't have any um, impact on your, on your job.
+
+Patient: No.
+
+Doctor: Uh, and do you find yourself doing a lot of anti-social hours? Do you [unintelligible], do you do a lot of night driving, weekend driving? [unintelligible]
+
+Patient: Ohh no, I [unintelligible], I [unintelligible], I, I only take shifts during the day, I don't like working at night.
+
+Doctor: OK. OK, alright. And what about smoking and alcohol? So, 'cause [unintelligible] that can sometimes be very important when it comes to heart problems. Do you, do you smoke at all?
+
+Patient: Not any more.
+
+Doctor: So, you used to smoke?
+
+Patient: Yeah.
+
+Doctor: And how many did you smoke a day, on average?
+
+Patient: Ooh it was about, about a pack a day, back in the day.
+
+Doctor: Um, and how many, how many years was that for?
+
+Patient: Ohh that was, oof, good twenty five years.
+
+Doctor: OK. And what about the stopping? That must have been difficult for you. [unintelligible] stopping. Um, and what, what about alcohol?
+
+Patient: I don't drink alcohol.
+
+Doctor: OK. Do you do much in the way of exercise, sir?
+
+Patient: Uh, I try and walk to the shops, at least once a day.
+
+Doctor: OK.
+
+Patient: Um, but uh, that's about it, I've. Yeah, I don't, I don't go running like I used to when i was young.
+
+Doctor: OK. Right, OK. And certainly now your symptoms, you, you're, you said you're feeling more breathless even walking to the [unintelligible] uh, to the shop, she said. Um, right. Ohh um, based on your, based on you history, and having listened to your story, I, I wonder whether you've had a flare-up of your heart failure, sir. Um, Which can sometimes happen. Um, um, and uh,
+
+Patient: Mmm. That.
+
+Doctor: It's [unintelligible]. So, it seems like your heart's not pumping as well as it should be. Um, and obviously having diagnosed with heart failure, there's obviously
+
+Patient: What's going on.
+
+Doctor: Um, that's the first thing that comes to my mind. Um, now there's a couple of options [unintelligible] move forward. Um,
+
+Patient: Mmm.
+
+Doctor: Given that you're otherwise well at the moment, and having examined you, your chest, and your saturations and blood pressure are all OK, I'm quite happy to increase your dose of Furosemide. Maybe, rather than one tablet a day, we can do two tablets a day, for the first few days. Um, and see, and see how you're getting on.
+
+Patient: OK. If you think that'll be better.
+
+Doctor: Uh, I think, I think, it's, [unintelligible] it's, it's definitely worth treating your symptoms. But what we should also think about is maybe doing a couple of other tests, like a blood test, and maybe an echocardiogram of your heart, to see how well your heart's pumping.
+
+Patient: OK.
+
+Doctor: Is that something you've had before? Yeah, so um, an [unintelligible], it's a, it's a general scan of your heart. You might have had this done before, when you were diagnosed. And it's just to get a good
+
+Patient: What does that? Ohh yes, I remember now.
+
+Doctor: Sorry?
+
+Patient: Uh, yeah, I remember now. [unintelligible].
+
+Doctor: You remember that. OK, fine. That's something I can organize for you today. And, and that might take a week or two weeks for that to be organized. But, I think certainly in the meantime, let's, um, Let's, let's get a blood test done. We can check your um, you know your full blood count, look for signs of anemia. We can have a check of your kidney function. Um, and we can definitely increase your um, your Furosemide, uh, to you know, one tablet twice a day. But I really like, would like you to come back and see me in about a week's time, see how you're getting on. That sound reasonable?
+
+Patient: I think that sounds like a good plan.
+
+Doctor: And of course, in the meantime if you are getting more unwell, feel like you're getting more breathless, or you're having any other symptoms like chest pain, or palpitations or dizziness, then, uh, you know [unintelligible] I want you to give me a call sooner than that, and we can have a chat on the phone as well.
+
+Patient: OK. I'll see how I get on.
+
+Doctor: OK? Do you have any questions for me?
+
+Patient: Uh, I think that's all pretty clear. Thank you very much Doctor.
+
+Doctor: Great, and then well I wish you all the best! Have a good day. [unintelligible] OK. Thank you.
+
+Patient: OK. See you soon.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1254
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there! I am Doctor Kim. Nice to meet you, miss. Hi! Nice to meet you. How are you feeling today? I am feeling much better today. How old are you? I am forty six. How is your pain in the left side? It is much better. It is more like a dull pain now. Are you still having trouble with urination? It has gotten better but is still a little difficult. Okay. It looks like Doctor X did an exam yesterday. Doctor X consulted me on your status but I have a question for you. I see in your medical history that you had a bruised left kidney. Can you tell me more about the bruised kidney? Yes. I was in a car accident, years ago. The doctor told me that I had a bruised left kidney. They thought it was due to the accident, but they could not be certain.

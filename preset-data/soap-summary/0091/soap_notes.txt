@@ -1,0 +1,28 @@
+# SOAP Notes — Sample 0091
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- New cough (dry) for 3-4 days
+- Headache for 3-4 days
+- Loss of smell and taste for 2 days
+- Feverish feeling, no measured temperature
+- Muscle aches for 3 days
+- No sputum, blood, fainting, dizziness, runny nose, congestion, sore throat, nausea, vomiting, night sweats, chest pain, shortness of breath, changes in bowel movements, urination, or weight
+- Decreased appetite for past couple of days
+- Sleep unaffected
+
+Past Medical History:
+- PMHx: healthy, knee scope as a teenager (soccer injury)
+- FHx: grandfather had lung cancer (smoker)
+- SocHx: nurse at a walk-in clinic, lives with wife and young daughter, no recent travel, no known exposure to COVID, smokes weed once a week, drinks 1-2 beers on weekends
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Possible COVID-19 infection
+
+Plan:
+- COVID-19 swab test
+- Isolate in a separate room, wear a mask around family members, avoid going outside, arrange for someone else to get groceries
+- Await test results (24-48 hours), follow public health instructions

@@ -1,0 +1,1 @@
+These models performed better than published Cox Framingham models.

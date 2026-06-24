@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2031  |  gem_id: gem-cochrane-simplification-train-2032  |  doi: 10.1002/14651858.CD005045.pub2
+
+We found two small studies demonstrating an improvement of muscle strength with pinacidil and acetazolamide. There was only one trial considering treatment of paralytic attacks, demonstrating a decrease in the severity and frequency of the attacks using diclorophenamide. We did not find other randomised or quasi-randomised studies, but only case reports and anecdotal articles using other drugs to reduce paralyses attacks. Further research is needed to determine the best treatment for reducing the frequency and severity of attacks and to treat or prevent permanent muscle weakness.

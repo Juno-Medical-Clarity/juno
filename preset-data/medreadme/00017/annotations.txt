@@ -1,0 +1,11 @@
+source:      plos_genetics
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-easy' -> 'non-coding causal SNPs'
+  [8:10] 'medical-jargon-google-easy' -> 'transcription factor'
+  [11:12] 'abbr-medical' -> 'TF'
+  [13:15] 'medical-jargon-google-easy' -> 'binding sites'
+  [22:24] 'medical-jargon-google-easy' -> 'organismal phenotypes'

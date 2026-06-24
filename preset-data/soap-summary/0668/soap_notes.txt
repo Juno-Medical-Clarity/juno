@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0668
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient takes Diovan, estradiol, Norvasc, and Wellbutrin (inhaler).
+- Wellbutrin is an inhaler SR (sustained release).
+- Patient uses oxygen therapy at home.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education provided.

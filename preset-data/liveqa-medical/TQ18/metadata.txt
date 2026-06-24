@@ -1,0 +1,14 @@
+qid: TQ18
+source_file: 10272.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Is it harmful to use peroxide drops in the ear followed by a warm water flush to clean out ear wax?
+nlm_summary: Is it safe to use hydrogen peroxide to remove ear wax?
+
+focus_entities:
+  [F1] (Problem) ear wax
+question_types:
+  [T1] TREATMENT
+keywords:
+  [K1] (DrugSupplement) Peroxide

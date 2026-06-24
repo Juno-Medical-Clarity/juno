@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3128  |  gem_id: gem-cochrane-simplification-train-3129  |  doi: 10.1002/14651858.CD003264.pub3
+
+This review of 16 studies enrolling 809 children found that rhGH increased height in children with CKD by about 4 cm after 1 year and by a further 2 cm after 2 years of treatment compared with no treatment. The frequency of reported side effects of rhGH was generally similar to that of the control group.

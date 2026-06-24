@@ -1,0 +1,5 @@
+pmid:        34555986
+question:    25
+adaptation:  adaptation1
+title:       Do we need bamlanivimab? Is etesevimab a key to treating Covid-19?
+sentences:   10

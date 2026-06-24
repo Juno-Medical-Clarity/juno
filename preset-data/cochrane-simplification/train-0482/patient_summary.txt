@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0482  |  gem_id: gem-cochrane-simplification-train-483  |  doi: 10.1002/14651858.CD011575.pub2
+
+We systematically retrieved all randomised trials that compared the effect of a higher BP target (upper BP number less than 150 to 160 mmHg) with a conventional lower BP target (upper BP number less than140 mmHg) in people over the age of 65 years. The evidence is current to February 2017. We found three randomised trials (the 'gold standard' of medical evidence) that investigated this question in a total of 8221 older adults (average age 75 years, 59% female). We did not find a difference between the higher BP target and the conventional lower BP target, however an important difference favoring the lower BP target could not be ruled out. We judged the pooled evidence to be of low-quality and not able to adequately answer the question as to which target BP was better. More good-quality trials addressing this question are needed.

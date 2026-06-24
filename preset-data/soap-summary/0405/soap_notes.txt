@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0405
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Coughing, shortness of breath, weakness, tiredness, confusion, instability, fall.
+- Severity: Significant coughing and shortness of breath even with minimal exertion (walking from one room to another).
+- Duration: Long history of lung disease (COPD), recent pneumonia diagnosis.
+- Associated Symptoms: Feeling sleepy, tired, confused, instability, fall.
+- Relevant Medical History: History of COPD, recent pneumonia diagnosis.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Patient felt weak and tired, lost strength and muscle, did not call for assistance during a fall, acknowledges being stubborn about needing help.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No specific clinician interpretations, diagnoses, or clinical impressions provided.
+
+Plan:
+- Continue taking oxygen as advised by the doctor.
+- Patient education on the importance of calling for assistance when needed, especially for mobility and safety.

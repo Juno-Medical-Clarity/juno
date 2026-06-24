@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [30:31] 'medical-jargon-google-easy' -> 'paramedics'
+  [35:36] 'general-complex' -> 'control'

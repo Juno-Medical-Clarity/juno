@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2066  |  gem_id: gem-cochrane-simplification-train-2067  |  doi: 10.1002/14651858.CD004501.pub2
+
+This Cochrane review examined which antibiotics are best for treating late onset neonatal sepsis, in terms of effectiveness and side effects. The authors searched the medical literature and found only one study that met all the criteria the authors were looking for. This study, from 1988, enrolled 28 newborn infants. Some of the newborns received a beta lactam antibiotic by itself while others got the beta lactam plus another antibiotic, an aminoglycoside. There were no significant differences between the two kinds of antibiotic treatment in this study. The Cochrane review authors concluded that there is not enough research to recommend one kind of antibiotic treatment over another for late onset neonatal sepsis.

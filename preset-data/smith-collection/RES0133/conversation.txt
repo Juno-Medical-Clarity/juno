@@ -1,0 +1,192 @@
+# Smith Collection Transcript: RES0133
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Hi um im here because i i had this cough for a couple days and now my voice still hasnt recovered it sounds really hoarse and i cant speak as well so i was just wondering if you can give me something for that
+
+Doctor: Possibly we will see just gotta ask a few questions first and well well do a physical exam as well afterwards but certainly well look into what is causing your symptoms so you mentioned a cough when did that exactly start
+
+Patient: That started three days ago
+
+Doctor: Okay and have you had a cough before
+
+Patient: um like before the three days you mean
+
+Doctor: Yeah
+
+Patient: um no i was pretty healthy before then
+
+Doctor: I see and uh with the cough are you producing any phlegm or sputum
+
+Patient: No its pretty dry
+
+Doctor: Okay have you noticed any blood
+
+Patient: No
+
+Doctor: Alright and have you had a wheeze
+
+Patient: No uh no nothing like that
+
+Doctor: Alright and have you had any uh chest pain with the cough
+
+Patient: No
+
+Doctor: Alright uh and you noticed that your voice is voice changed and that was about 3 days ago as well
+
+Patient: Yeah that so well no actually that started about yesterday yeah yesterday in the afternoon
+
+Doctor: Okay and uh any triggers for this like were you at any events that you had to be uh kind of speaking loudly or talking a lot or anything where youre straining your voice
+
+Patient: um no no i wasnt i was like i had school i came home i didnt do anything like that
+
+Doctor: Okay yeah so it sounds yeah just sort of came on on its own alright and have you had any like eye redness or discharge or a runny nose
+
+Patient: I have had uh ive had a runny nose before but no eye discharge
+
+Doctor: Okay with the runny nose what what what could you describe the uh mucus that was coming out
+
+Patient: uh it was it was clear
+
+Doctor: And has that gone away now and then when was the runny nose
+
+Patient: Yeah thats gone yeah thats gone that went away but like um yeah two days ago maybe
+
+Doctor: I see and have you had a sore throat or do you have a sore throat
+
+Patient: um i have so it hurts because im coughing but it doesnt seem like its my actual throat
+
+Doctor: Alright is there any pain with swallowing food or liquids
+
+Patient: No
+
+Doctor: Okay um and have you had any fevers or chills
+
+Patient: No
+
+Doctor: Or any any night sweats
+
+Patient: No
+
+Doctor: And any changes to your weight recently
+
+Patient: um ive had some weight gain over the past like six months
+
+Doctor: Okay well thats great and about how much
+
+Patient: uh just maybe like 5 10 pounds 5 to 10 pounds somewhere around there
+
+Doctor: Okay well thats good and um have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: How about any abdominal pain
+
+Patient: uh no
+
+Doctor: Any uh diarrhea
+
+Patient: No
+
+Doctor: Or any urinary problems
+
+Patient: No
+
+Doctor: Have you had any muscle aches or or joint pains
+
+Patient: uh no
+
+Doctor: Okay and have you had any loss of your taste or sense of smell
+
+Patient: No
+
+Doctor: Okay um and any skin changes or rashes
+
+Patient: Nope nothing like that
+
+Doctor: Okay uh and um so youve been experiencing so you had a runny nose thats gone away um and now youve been having this cough for the past dry cough past three days and lost your voice yesterday have you been experiencing any other symptoms
+
+Patient: um no no other symptoms
+
+Doctor: Alright in the past have you been diagnosed with any medical conditions
+
+Patient: uh no ive been pretty healthy
+
+Doctor: Thats great and u have you been um have you had any allergies before
+
+Patient: No
+
+Doctor: Okay and uh do you take any medications regularly
+
+Patient: uh i just take some multivitamins
+
+Doctor: Okay and uh are you aware if your immunizations are up to date
+
+Patient: uh so i have everything except for that hpv vaccine
+
+Doctor: Okay um is it do you have a plan to get that one or
+
+Patient: I think so im just uh waiting to follow up with my family doctor about that
+
+Doctor: Okay well that thats a good idea for sure so its great that you have a plan for that um for that yeah it can be really helpful for preventing cervical cancer as as im sure youll talk to the with the family doctor about yeah and have you had any hospitalizations or any surgeries
+
+Patient: uh no
+
+Doctor: Okay um where about are you living right now and who are living with
+
+Patient: I live uh with my parents um and my two younger siblings we live in a house
+
+Doctor: Has anybody else been sick or have similar symptoms
+
+Patient: uh no no one at homes been sick
+
+Doctor: Okay and uh how about anybody at school or or work or anything like that that youve been around whos been sick
+
+Patient: So one of my friends actually had like a runny nose and a cough as well a couple of days ago but uh she seems to be better now and her voice is okay
+
+Doctor: Okay and um have you traveled anywhere outside of the city or province
+
+Patient: No no not recently
+
+Doctor: Alright and um in the home is there any uh like are you exposed to any violence of any sort like physical or emotional either yourself or or witnessing
+
+Patient: No
+
+Doctor: Okay and what grade are you in
+
+Patient: Im in grade 7 or yeah grade 7 now
+
+Doctor: Oh awesome and uh i dont is there any smoking in the home
+
+Patient: uh no no one smokes at home
+
+Doctor: Okay um and then um anybody in the family uh have any heart or lung conditions
+
+Patient: Heart or lung i know um like heart disease runs on my fathers side of the family im not really sure like exactly what what kind of diseases though
+
+Doctor: Okay um and i sometimes people that kind of in this age group might experience with either drugs or alcohol have any of your friends done that or or yourself
+
+Patient: I know like some of my friends have uh tried alcohol and try marijuana but i havent experimented yet
+
+Doctor: Okay thats good and um i thats all i wanted to ask today on history was there anything else that you wanted to add
+
+Patient: Oh nothing that i want to add i just what do you how do you think i can make this make my voice better and how long will i have have this horse voice
+
+Doctor: Yeah so uh right now its sounding like um a viral type illness where theres inflammation of the vocal cords uh with having the cough and the runny nose a couple of days ago actually this reminds me that have you im not sure if i asked about fevers or chills if you have any
+
+Patient: uh no i havent
+
+Doctor: Okay um and so for if it is a viral infection then um its just supportive kind of management so that will mean trying to stay as hydrated as you possibly can over these next um next few days and then also you can use things like if they help like lozenges or something along those lines um but it will it will just take some time for it to come back on its own a few days to a couple of weeks sometimes and the cough could possibly last for um two to four weeks after um after having a viral type illness
+
+Patient: Okay
+
+Doctor: Yeah so it could be quite a few weeks that the symptoms last for but since youre having a cough and these symptoms could overlap with coviwell want to get a coviswab today as well um and kind of go from there
+
+Patient: Okay okay that sounds good thank you

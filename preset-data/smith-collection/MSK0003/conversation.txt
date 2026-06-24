@@ -1,0 +1,216 @@
+# Smith Collection Transcript: MSK0003
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: My back it just really hurts i feel really stiff in the morning and um yeah its just been going on for a few months now
+
+Patient: OK so for a few months stiffness in the morning so your back hurts where exactly would you say it hurts
+
+Doctor: It kinda hurts all over i cant really pinpoint any specific locations that hurts most kind of hurts like all down my my back
+
+Patient: OK all the way up to i guess your neck and all the way down to your lower back
+
+Doctor: So i wouldnt really say the neck and i guess more of the the lower parts maybe like the middle of my back and
+
+Patient: I see
+
+Doctor: And down
+
+Patient: OK and what kind of pain would you say it is is it like a dull aching pain is it a sharp stabbing pain how would you describe it
+
+Doctor: Its a dull pain
+
+Patient: Dull pain ok ok and on a scale of 0 to 10 with 0 being the least amount of pain you felt in your life and 10 being the worst how much would you rate it
+
+Doctor: Its about a four or five i mean some days it can be better but yeah some days it can be worse
+
+Patient: OK and when did this start
+
+Doctor: I think this started about like four or five months ago its been going on yeah for probably about half a year now
+
+Patient: OK and when it first started up was there anything that caused the back pain like any kind of trauma or injury anything that you can think of that might have led to this
+
+Doctor: No nothing that its i i can think of its sort of its come on so slowly like when i first started noticing the back pain it it was maybe like a 0 to a one i didnt really notice it too much but over these last 5 6 months it has gotten has gotten a bit worse
+
+Patient: OK so it kind of came on progressively didnt just come on suddenly at some point
+
+Doctor: Right yeah its been getting worse
+
+Patient: OK and have you ever had any previous episodes that are similar to this
+
+Doctor: uh not not in my back pain i do get pain in my right knee and in my hands sometimes but those pains just kind of come and go
+
+Patient: OK and when did those pains start
+
+Doctor: Uhm those ones started probably similar timeline around six months ago
+
+Patient: OK ok and in the back pain that youre having does it radiate or move to any other part of your body
+
+Doctor: No i dont feel it anywhere else
+
+Patient: OK and have you tried anything that has helped relieve some of the pain any medications or anything
+
+Doctor: Yeah ive tried some tylenol and advil and that the advil is actually helped taking the edge off a little bit but the next morning i i have the stiffness and and pain again
+
+Patient: OK and for your pain are there any kind of factors that make the pain worse like bending down or standing straight up or laying down anything that makes your pain worse
+
+Doctor: uh no nothing that i can think of that really makes it any worse
+
+Patient: OK and is your pain worse when you wake up in the morning or is it worse as the day progresses
+
+Doctor: Its worse in the morning it gets a bit better as the day goes on i asked about it an hour into the day i feel my best it takes a little bit of time to to move around a little bit first
+
+Patient: OK approximately how much time would you say after you wake up the stiffness and pain goes away
+
+Doctor: I would say maybe 30 to 60 minutes
+
+Patient: OK alright and no you havent had any trauma injuries in recently right
+
+Doctor: No trauma or injuries
+
+Patient: OK and no fevers or chills
+
+Doctor: No
+
+Patient: OK any night sweats
+
+Doctor: No
+
+Patient: Any fatigue or malaise
+
+Doctor: Yeah i have been a bit more fatigued than usual and yeah i ive had some malaise as well
+
+Patient: OK and for how long have you had this
+
+Doctor: Its been similarly getting a little bit more progressive i mean some days im just feeling like i just want to lay around and rest cause im feeling just so burnt out and other days im ok but im certainly more tired than usual
+
+Patient: OK i see other than that have you noticed any kind of rashes or skin changes or changes in your nails at all
+
+Doctor: Uhm no i havent noticed any any rashes or any nail changes
+
+Patient: OK any shortness of breath
+
+Doctor: No
+
+Patient: Any changes in your bowel movements or urinary patterns
+
+Doctor: No i havent had any diarrhea or any any urinary problems
+
+Patient: OK have you noticed any changes in your appetite or your weight
+
+Doctor: No my appetites been normal and my weights been stable
+
+Patient: OK and have you noticed any difficulties or changes with your vision or any eye problems
+
+Doctor: No i havent noticed anything like that
+
+Patient: OK have you noticed any kind of numbness or tingling sensation in your limbs specifically like your back and your legs
+
+Doctor: No no tingling or numbness
+
+Patient: OK any muscle weakness at all
+
+Doctor: Nope i havent noticed any muscle weakness
+
+Patient: OK and have you been sick at all recently with any viral or bacterial infections
+
+Doctor: um i had a uh and then i was diarrhea like several months ago and i had some antibiotics but that was a yeah so a few months ago
+
+Patient: OK and other than that currently are you sexually active
+
+Doctor: Yes i am uh i i have a girlfriend then weve uh we started dating about about uh six months ago
+
+Patient: OK and do either of you have any history of any stis at all
+
+Doctor: uh no history of stis
+
+Patient: OK alright and is your partner fine or is she having any symptoms at all
+
+Doctor: No she she hasnt been having any symptoms then we weve been using a condom mostly
+
+Patient: OK alright and otherwise are you generally healthy or do you have any medical conditions
+
+Doctor: Uhm yeah im im generally alright i do have asthma actually and just i had diarrhea a few months ago after eating at a buffet so i think maybe it yeah it was food poisoning or maybe something like that
+
+Patient: OK
+
+Doctor: But yeah so asthma and thats it
+
+Patient: OK and do you use any medications for your asthma
+
+Doctor: Yeah use that blue inhaler sometimes i guess that just when i when i need it but that hasnt been very often
+
+Patient: OK and do you have any allergies to any medications or any environmental factors
+
+Doctor: I do have environmental allergies i im not sure if its like ragweed or or pollen but something like that
+
+Patient: OK and have you had any hospitalizations or previous surgeries
+
+Doctor: Uhm never
+
+Patient: OK any family history of any medical conditions any autoimmune conditions or any musculoskeletal conditions
+
+Doctor: Yeah my mother has a uh psoriasis
+
+Patient: OK
+
+Doctor: Yeah and so shes had to i know use like like creams and stuff like that for her skin
+
+Patient: OK and currently right now do you work
+
+Doctor: I do yeah i work uh at a bank
+
+Patient: OK and your mother so she had psoriasis did she ever have any joint pains alongside the psoriasis
+
+Doctor: I dont believe so i think she had just more issues with her with her skin
+
+Patient: OK and so you work and then whats your living situation like
+
+Doctor: Yeah so i live with my girlfriend in a condo in the city here
+
+Patient: OK and do you use any recreational drugs like marijuana
+
+Doctor: Yes sometimes yeah ill smoke like once or twice per week with that with a friend or something like that
+
+Patient: OK and do you smoke
+
+Doctor: No cigarettes no never
+
+Patient: OK and you drink alcohol
+
+Doctor: Sometimes yeah ill have a beer or two on weekends or or a cocktail with friends
+
+Patient: OK alright so those were just some of the questions i had now im just going to quickly uh ask some specific questions so have you noticed any kind of swelling in the areas that you are having pain or redness or anything like that
+
+Doctor: Uhm no i havent noticed really any any uh redness or or swelling
+
+Patient: OK and no so are you able to bend down and stand up straight or extend backwards so without pain or are you in any pain
+
+Doctor: Uhm i do get it its a bit stiff uhm i uh yeah im not really too sure its like not really its more more more stiff
+
+Patient: OK and yeah other than that do you have any questions or concerns
+
+Doctor: Uhm yeah i was just wondering yeah like like what what this could be possibly
+
+Patient: Yeah so definitely what so this this seems like it started off like 3 months or six months ago and its been going on and its happening in the morning and how old did you say you were
+
+Doctor: Uhm im 26
+
+Patient: OK yeah so uh it seems progressive and youre getting some pain in your other joints as well and its mainly from your middle to lower back it can be multiple things that we would have to rule out so you first you have a family history of psoriasis so it can be psoriatic arthritis you dont have any other skins changes or any other symptoms it can also be since you have had a you were sick for months ago with a what might be gastroenteritis it can be sometimes a few months afterwards you can get something called reactive arthritis  where you get this progressive pain in your joints and stiffness and otherwise it can also be something called ankylosing spondylitis which can present in men your age and its kind of like a progressive dull back pain and that has some morning stiffness as well so yeah theres definitely multiple things that it can be so first we would need to do a full physical examination and book an appointment or for that in person and we will get some lab work done as well as well as a x ray of the of the spine and your sacroiliac joints and well also get some blood work with cbc crand esr so those are just inflammatory markers as well as the rheumatoid factor antinuclear antibodies those are just some things that will test for different kind of rheumatological issues and to see if you have any arthritis so yeah those are and then will also get an x ray of your hands and knees since youre having pain there as well so yeah those are some steps that well take do you have any questions or concerns
+
+Doctor: No that that sounds that sounds great thank you
+
+Patient: Alright yeah so i will get in touch with you shortly
+
+Doctor: Sounds great thank you
+
+Patient: Alright take care
+
+Doctor: Bye
+
+Patient: Bye

@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'BPD'
+  [11:13] 'medical-jargon-google-easy' -> 'cerebral palsy'
+  [14:15] 'abbr-medical' -> 'CP'

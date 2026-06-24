@@ -1,0 +1,10 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Leishmaniases'
+  [11:12] 'medical-jargon-google-easy' -> 'leishmaniasis'
+  [18:19] 'medical-jargon-google-easy' -> 'protozoan'
+  [19:20] 'medical-jargon-google-easy' -> 'Leishmania'

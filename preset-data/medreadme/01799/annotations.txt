@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [17:18] 'medical-jargon-google-easy' -> 'cytokine'
+  [20:21] 'abbr-medical' -> 'HIV'
+  [23:24] 'medical-jargon-google-easy' -> 'expression'
+  [25:26] 'medical-jargon-google-hard' -> 'A20'

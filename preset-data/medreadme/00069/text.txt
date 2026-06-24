@@ -1,0 +1,1 @@
+Despite sequence divergence over long evolutionary times, many genes that have undergone duplication can still compensate for the loss of their duplicates.

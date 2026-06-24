@@ -1,0 +1,8 @@
+source:      MSD
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-easy' -> 'lateral chest x-ray'
+  [7:9] 'medical-jargon-google-easy' -> 'thymic shadow'

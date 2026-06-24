@@ -1,0 +1,12 @@
+source:      pnas
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [8:10] 'medical-jargon-google-easy' -> 'anticancer prodrug'
+  [10:11] 'medical-jargon-google-easy' -> 'cytarabine'
+  [12:15] 'abbr-medical' -> 'ara - C'
+  [22:24] 'medical-jargon-google-easy' -> 'hydroxyl group'
+  [25:26] 'medical-jargon-google-easy' -> 'azide'
+  [29:30] 'abbr-medical' -> 'AzC'

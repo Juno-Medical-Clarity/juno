@@ -1,0 +1,1 @@
+AME was constant regardless of whether the protein levels varied in a correlated manner, while covariation among proteins influenced cell-to-cell heterogeneity of nuclear ERK, suppressing the variation.

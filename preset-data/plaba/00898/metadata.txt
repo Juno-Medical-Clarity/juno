@@ -1,0 +1,5 @@
+pmid:        34232932
+question:    73
+adaptation:  adaptation2
+title:       An Update on Multimodal Pain Management After Total Joint Arthroplasty
+sentences:   4

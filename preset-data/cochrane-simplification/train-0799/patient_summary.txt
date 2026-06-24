@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0799  |  gem_id: gem-cochrane-simplification-train-800  |  doi: 10.1002/14651858.CD004122.pub4
+
+Existing research studies are too small and methodologically flawed to allow us to draw strong conclusions; on the basis of existing evidence it is not clear whether hair removal pre-operatively affects rates of surgical site infections. However if hair has to be removed to facilitate surgery or the application of adhesive dressings, clipping rather than shaving appears to result in fewer surgical site infections.

@@ -1,0 +1,3 @@
+Doctor: Do you remember the name of the medication you are taking?
+Patient: I have two, but I do not remember their name or why I am taking it.
+Doctor: That is fine, we will figure it out.

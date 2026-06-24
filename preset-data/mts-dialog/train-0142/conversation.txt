@@ -1,0 +1,4 @@
+Doctor: Any known allergies?
+Patient: No.
+Doctor: Any allergy to any drug?
+Patient: No.

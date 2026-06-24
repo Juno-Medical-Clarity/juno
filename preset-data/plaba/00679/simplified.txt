@@ -1,0 +1,11 @@
+Insulin secretion is the body's release of insulin, the hormone that helps control blood sugar and metabolism. The objective of this study is to evaluate whether first-degree relatives (a person's parent, sibling, or child) of patients with type 2 diabetes have abnormal 24 hour insulin secretion and, if so, whether this abnormality affected their glucose metabolism.
+Six African-American first-degree relatives with normal blood sugar level and 12 normal control participants (who had no family history of diabetes) were exposed to 48 hours of hyperglycemic clamping, a technique to keep blood sugar levels stable.
+Insulin secretion rates (ISRs) are determined by calculating plasma C-peptide levels, which are substances that signal if the body is creating insulin.
+
+During the initial hours after giving people infusions of sugar (glucose), insulin secretion rates are about 60% higher in first-degree relatives than in the comparison (control) subjects, while rates of sugar uptake are the same. This finding suggests that the first-degree relatives are insulin resistant, which is when the body doesn't respond well to the insulin hormone and can't use blood sugar for energy.
+Control subjects have well-defined 24 hour cycles of insulin secretion rates and plasma insulin that increase in the early morning, peak in the afternoon, and decline during the night.
+In contrast, first-degree relatives have several shorter insulin secretion rate cycles.
+This suggests that the lack of a normal increase in the 24 hour insulin secretion rate makes it impossible for the first-degree relatives to keep their insulin excess secretion beyond 18 hours of hyperglycemia (high blood sugar).
+As a result, insulin secretion rate decreased to the level found in control subjects, and blood sugar uptake fell below the level of control subjects.
+In summary, researchers found that first-degree relatives with normal blood sugar levels had defects in insulin action and secretion.
+The new insulin secretory defect includes disrupting the normal 24 hour insulin secretion rate cycle, which resulted in reduced insulin secretion (and blood sugar uptake) during the upward part of the 24 hour insulin secretion rate cycle.

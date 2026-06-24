@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0847  |  gem_id: gem-cochrane-simplification-train-848  |  doi: 10.1002/14651858.CD008432.pub2
+
+Researchers from Cochrane searched for all available literature up to 30 November 2014. One randomised controlled trial met our inclusion criteria. In this review, the efficacy of oral zinc salt was compared with placebo. One study enrolling 294 infants was identified. This study evaluated oral zinc salt, given in a dose of 5 mg twice daily to infants between 25 and 168 hours old. The administration of oral zinc salt did not affect the incidence of jaundice (hyperbilirubinaemia) in these infants.

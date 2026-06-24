@@ -1,0 +1,12 @@
+In December 2020, the Food and Drug Administration (FDA) issued Emergency Use Authorizations (EUAs) for Pfizer-BioNTech and Moderna COVID-19 vaccines, and in February 2021, FDA issued an EUA for the Janssen (Johnson & Johnson) COVID-19 vaccine.
+After each EUA, the Advisory Committee on Immunization Practices (ACIP) issued interim recommendations for vaccine use; currently Pfizer-BioNTech is authorized and recommended for persons aged ≥12 years and Moderna and Janssen for persons aged ≥18 years (1-3).
+Both Pfizer-BioNTech and Moderna vaccines, administered as 2-dose series, are mRNA-based COVID-19 vaccines, whereas the Janssen COVID-19 vaccine, administered as a single dose, is a recombinant replication-incompetent adenovirus-vector vaccine.
+As of July 22, 2021, 187 million persons in the United States had received at least 1 dose of COVID-19 vaccine (4); close monitoring of safety surveillance has demonstrated that serious adverse events after COVID-19 vaccination are rare (5,6).
+Three medical conditions have been reported in temporal association with receipt of COVID-19 vaccines.
+Two of these (thrombosis with thrombocytopenia syndrome [TTS], a rare syndrome characterized by venous or arterial thrombosis and thrombocytopenia, and Guillain-Barré syndrome [GBS], a rare autoimmune neurologic disorder characterized by ascending weakness and paralysis) have been reported after Janssen COVID-19 vaccination.
+One (myocarditis, cardiac inflammation) has been reported after Pfizer-BioNTech COVID-19 vaccination or Moderna COVID-19 vaccination, particularly after the second dose; these were reviewed together and will hereafter be referred to as mRNA COVID-19 vaccination.
+ACIP has met three times to review the data associated with these reports of serious adverse events and has comprehensively assessed the benefits and risks associated with receipt of these vaccines.
+During the most recent meeting in July 2021, ACIP determined that, overall, the benefits of COVID-19 vaccination in preventing COVID-19 morbidity and mortality outweigh the risks for these rare serious adverse events in adults aged ≥18 years; this balance of benefits and risks varied by age and sex.
+ACIP continues to recommend COVID-19 vaccination in all persons aged ≥12 years.
+CDC and FDA continue to closely monitor reports of serious adverse events and will present any additional data to ACIP for consideration.
+Information regarding risks and how they vary by age and sex and type of vaccine should be disseminated to providers, vaccine recipients, and the public.

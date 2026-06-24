@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 0540
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Worsening asthma over the last three months, allergies acting up.
+- Severity: Not explicitly stated, but implies significant concern due to worsening symptoms.
+- Duration: Asthma worsening for three months.
+- Associated Symptoms: Increased irritability and impatience before menstrual cycle, mood improvement after period starts.
+- Relevant Medical History: Previously took Advair (discontinued due to irritation), currently using Allegra as needed for allergies, uses inhaler daily for asthma.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Blood in urine was noted in past UTI test; patient has not had urine checked since then. Recently completed lab work for life insurance application.
+
+Objective:
+- Vital Signs: Not mentioned.
+- Physical Examination Findings: Not mentioned.
+- Diagnostic Test Results: Previous UTI test showed blood in urine; recent lab work for cholesterol and other tests (details to be sent).
+
+Assessment:
+- Diagnoses: Asthma, Allergic Rhinitis.
+- Clinical Impressions: Worsening asthma symptoms likely related to exposure to allergens (corn). Possible Premenstrual Syndrome (PMS) related mood changes. Follow-up needed for UTI and recent lab work results.
+
+Plan:
+- Order another urine test and additional lab tests to complete the physical.
+- Request results of recent lab work related to cholesterol and other areas from the patient as soon as available.

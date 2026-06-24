@@ -1,0 +1,12 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.15
+split:       dev
+
+jargon_spans:
+  [11:12] 'medical-jargon-google-easy' -> 'everolimus'
+  [19:20] 'abbr-medical' -> 'BSC'
+  [22:27] 'medical-jargon-google-easy' -> 'incremental cost - effectiveness ratio'
+  [28:29] 'abbr-medical' -> 'ICER'
+  [35:41] 'medical-jargon-google-easy' -> 'quality - adjusted life - year'
+  [42:43] 'abbr-medical' -> 'QALY'

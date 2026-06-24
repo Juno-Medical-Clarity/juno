@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2270  |  gem_id: gem-cochrane-simplification-train-2271  |  doi: 10.1002/14651858.CD003789.pub2
+
+This Cochrane review found only four old and small trials of poor quality that have compared the two types of drugs. There were a total of 121 patients in the four trials. In each trial, the patients tried both types of drugs, one after the other, in different periods of the trial. In the largest trial, of 54 patients, where each drug was tested twice, 20 patients preferred ibuprofen on both occasions, and 7 paracetamol. In the trials, each drug was used for only 4-7 days and side effects from the drugs were poorly reported. It is therefore not clear whether NSAIDs are better than paracetamol.

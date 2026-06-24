@@ -1,0 +1,1 @@
+Anonymously linked individual health records for emergency hospital admissions were analysed using mixed multilevel linear models.

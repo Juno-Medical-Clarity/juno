@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        complex
+readability: 5.3
+split:       test
+
+jargon_spans:
+  [11:13] 'medical-jargon-google-easy' -> 'electron transport'
+  [19:21] 'medical-jargon-google-easy' -> 'C. elegans'
+  [37:38] 'medical-jargon-google-easy' -> 'RNAi'

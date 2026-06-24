@@ -1,0 +1,5 @@
+drug_focus: enoxaparin
+question_type: Dose
+section_title: HOW SUPPLIED/STORAGE AND HANDLING
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3e6bf2b3-9339-4104-bda3-ad86a1949703&audience=consumer
+sample_id: 0527

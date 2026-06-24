@@ -1,0 +1,5 @@
+pmid:        28275126
+question:    70
+adaptation:  adaptation3
+title:       Vitamin B-6 and colorectal cancer risk: a prospective population-based study using 3 distinct plasma markers of vitamin B-6 status
+sentences:   11

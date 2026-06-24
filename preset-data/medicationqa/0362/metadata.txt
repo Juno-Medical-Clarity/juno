@@ -1,0 +1,5 @@
+drug_focus: tranexamic acid
+question_type: Action/time
+section_title: CLINICAL PHARMACOLOGY
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=031bf7c2-3b07-469d-bc5a-31fc6238e25f
+sample_id: 0362

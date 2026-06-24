@@ -1,0 +1,12 @@
+Doctor: Do you smoke?
+Patient: Yeah, here and there.
+Doctor: On average, how many cigarettes would you say you smoke?
+Patient: Probably three or four if I had to guess.
+Doctor: Any medical problems that run in the family?
+Patient: Yeah, my brother had a heart attack when he was pretty young.
+Doctor: How old was he?
+Patient: Fifty two.
+Doctor: Oh wow, how's he doing?
+Patient: Good, he has to see a heart doctor at least once a year.
+Doctor: Does anyone else in your family have heart problems?
+Patient: Um my dad has some heart issues. He's also a type one diabetic.

@@ -1,0 +1,17 @@
+The objective of this paper is to evaluate the performance and safety of antiviral antibody therapies that help the body fight off or prevent a virus and blood products used to treat COVID-19.
+Published data from other studies is summarized on an ongoing basis and compares data from different medicines, including an analysis to fill in the gaps for studies that have limited data.
+The data sources for this summary are the World Health Organization (WHO) COVID-19 and six Chinese databases that store data up to July 21, 2021.
+In clinical trials, people with suspected COVID-19 (person has symptoms and/or exposure to covid but is not tested), probable COVID-19 (person who has tested positive with other tests but not confirmatory test), or confirmed COVID-19 are randomly put into different treatment groups or a placebo, where they receive something that looks like a drug but is not active.
+Two reviewers determine if the different clinical studies will be included in the summary.
+After data are collected from the clinical studies, the data are analyzed.
+
+The confidence that the results in the studies are accurate is graded using an established process.
+Clinical trials with 100 or more patients or 20 or more events per treatment type are analyzed.
+As of July 21st  2021, 47 trials that evaluated different blood products and medicines, including monoclonal antibodies, are found.
+Patients with non-severe disease who receive antiviral monoclonal antibodies (medicines that may block the virus from attaching to human cells) have lower risk of being hospitalized than those who received placebo.
+Antiviral monoclonal antibodies did not have an important impact on any other outcome.
+There is no major difference between monoclonal antibodies.
+No other treatment intervention is found to have any meaningful effect on any outcome in patients with non-severe COVID-19.
+No intervention, including antiviral antibodies, has an important impact on any outcome in patients with severe or critical COVID-19, except casirivimab-imdevimab, which may reduce death in patients who had a negative blood test.
+In conclusion, patients with non-severe COVID-19, the drug casirivimab-imdevimab probably reduces hospital stays; bamlanivimab-etesevimab, bamlanivimab, and sotrovimab may reduce hospitalization.
+Other antibody and cell interventions may not provide any meaningful benefit.

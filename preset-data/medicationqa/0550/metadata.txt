@@ -1,0 +1,5 @@
+drug_focus: nicotine
+question_type: Information
+section_title: Information
+source_url: https://medlineplus.gov/ency/article/007438.htm
+sample_id: 0550

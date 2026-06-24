@@ -1,0 +1,11 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [3:4] 'abbr-medical' -> 'EVs'
+  [5:7] 'medical-jargon-google-easy' -> 'dendritic cells'
+  [8:10] 'medical-jargon-google-easy' -> 'mast cells'
+  [11:12] 'medical-jargon-google-easy' -> 'macrophages'
+  [14:18] 'medical-jargon-google-easy' -> 'B and T lymphocytes'

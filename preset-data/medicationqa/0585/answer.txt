@@ -1,0 +1,1 @@
+Color: BROWN; Shape: OVAL; Size: 12mm; Imprint Code: 20

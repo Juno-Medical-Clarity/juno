@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1126  |  gem_id: gem-cochrane-simplification-train-1127  |  doi: 10.1002/14651858.CD003484
+
+The review authors searched the medical literature and were able to find only one small randomised controlled trial. The 14 infants included in the trial had a birthweight over 2000 g and were enrolled at a mean age of 10 hours. They had received ventilatory support and fluid expansion after birth. Infants treated with low dose dopamine (2.5 microg/kg/min) did not differ from the infants receiving placebo (dextrose water) in the number who died before discharge from hospital. Neurodevelopmental disability was similar in both groups, in all infants randomised and in survivors. The timing of assessments was variable. These findings are limited with only one small study in which three of 12 survivors were lost to follow up.

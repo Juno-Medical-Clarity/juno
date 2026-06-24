@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1703  |  gem_id: gem-cochrane-simplification-train-1704  |  doi: 10.1002/14651858.CD012412.pub3
+
+In searches of medical databases up to 28 January 2019, we found 11 relevant trials; most were small (involving 665 infants in total) and had methodological weaknesses. Currently available evidence suggests that feeding preterm infants hydrolysed formula (rather than standard formula) during their initial hospital admission has no important benefits or harms. However, this finding is not yet conclusive, and larger trials of better quality are needed to provide evidence to help clinicians and families make informed choices about this issue. Data from these trials provide no strong or consistent evidence that feeding preterm infants hydrolysed formula rather than standard formula improved or worsened digestion or changed the risk of severe bowel problems.

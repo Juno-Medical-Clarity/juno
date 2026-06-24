@@ -1,0 +1,1 @@
+The proposed algorithm builds upon the hypothesis that the abnormal excessive (or synchronous) neuronal activity in the brain leading to seizures starts in the SOZ and then spreads to other areas in the brain.

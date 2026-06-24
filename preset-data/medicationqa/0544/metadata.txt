@@ -1,0 +1,5 @@
+drug_focus: clopidogrel  & aspirin
+question_type: Usage/time
+section_title: ACC/AHA Guideline Update on Duration of Dual Antiplatelet Therapy in CAD Patients
+source_url: https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2016/03/25/14/56/2016-acc-aha-guideline-focused-update-on-duration-of-dapt
+sample_id: 0544

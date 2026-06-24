@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0000  |  gem_id: gem-cochrane-simplification-test-1  |  doi: 10.1002/14651858.CD001290.pub2
+
+This review looked at studies which compared usual care for asthma to more intensive educational programmes and the results showed a statistically significant reduction in the treatment groups needing subsequent emergency department visits or hospital admissions. We were not able to determine the most effective type, duration or intensity of education that should be offered to children to offer the best asthma outcomes.

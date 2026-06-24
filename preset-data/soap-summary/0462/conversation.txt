@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0462
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you feeling today, ma'am? Honestly, overall, I'm feeling a lot better. Are you still having the diarrhea and decreased appetite? Yes, but I'm still feeling better though. Have you been peeing a normal amount? Yeah, no problems there. I measured it like you told me to—six hundred M L. When was the last time you peed? Um, it was about seven this morning. Are you having any fever symptoms? No, I feel pretty well.

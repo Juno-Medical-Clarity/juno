@@ -1,0 +1,55 @@
+Doctor: Good morning, sir. I am Dr. Smith. How are you feeling today?
+
+Patient: Not so good, doctor. I have been feeling weak and tired for a while now.
+
+Doctor: Can you tell me more about your symptoms?
+
+Patient: Yes, I have been having a fever, difficulty breathing, coughing, lack of energy, lack of appetite, nausea, and vomiting.
+
+Doctor: Hmm, I see. You were admitted to the acute care unit for observation and oxygen therapy, is that correct?
+
+Patient: Yes, that's right.
+
+Doctor: And I see that your oxygen requirements have increased due to moderate ARDS.
+
+Patient: Yes, that's correct.
+
+Doctor: After 12 days of deep sedation, neuromuscular blocking agents, and proning with daily passive range of motion, you started to initiate active movements.
+
+Patient: Yes, that's right.
+
+Doctor: But due to a difficult weaning status, probably related to respiratory muscle weakness, tracheostomy was performed.
+
+Patient: Yes, I remember that.
+
+Doctor: The ventilator settings were pressure support 10 cmH2O and positive end-expiratory pressure (PEEP) 8 cmH2O, correct?
+
+Patient: Yes, that's correct.
+
+Doctor: And I see that you showed significant improvement in your physical functions with active SOEB, chair-transfer with the help of 2 physical therapists, and active in-bed cycling against resistance for 20 minutes.
+
+Patient: Yes, I feel much better now.
+
+Doctor: That's great to hear! The strategy was to increase pressure support (by 5 cmH2O) during efforts to reinforce exercise training effects, unloading respiratory muscles.
+
+Patient: Yes, I remember that.
+
+Doctor: This strategy along with a highly collaborative patient culminated in your rapid improvement in physical function.
+
+Patient: Yes, I am very grateful.
+
+Doctor: Your MRC-SS score is 58/60, and your physical function ICU test score is 10/12.
+
+Patient: Yes, that's correct.
+
+Doctor: And your walking distance is 10 meters.
+
+Patient: Yes, I can walk a little bit now.
+
+Doctor: Although you are still experiencing fatigue, inspiratory muscle weakness (maximal inspiratory pressure of −45 cmH2O) and dysphagia, you have made great progress.
+
+Patient: Yes, I am very grateful for the care I have received.
+
+Doctor: You are doing well, and I will continue to monitor your progress. Please let me know if you have any concerns.
+
+Patient: Thank you, doctor.

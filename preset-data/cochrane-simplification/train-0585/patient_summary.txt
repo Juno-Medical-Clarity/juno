@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0585  |  gem_id: gem-cochrane-simplification-train-586  |  doi: 10.1002/14651858.CD006827.pub2
+
+This systematic review assesses randomised trials that have addressed the benefits and risks of combined treatment of perianal abscesses and fistulae. Six studies have been published on this topic. The analyses show that combined treatment reduces the risk of persistent abscess or fistula, or repeat surgery without a statistically significant increase in postoperative incontinence.

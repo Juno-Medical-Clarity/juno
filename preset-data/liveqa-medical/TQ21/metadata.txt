@@ -1,0 +1,12 @@
+qid: TQ21
+source_file: 66.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: I want information on Beckwith-Wieddeman Syndrome.
+nlm_summary: where can i find information on Beckwith-Wieddeman Syndrome?
+
+focus_entities:
+  [F1] (Problem) Beckwith-Wieddeman Syndrome
+question_types:
+  [T1] INFORMATION

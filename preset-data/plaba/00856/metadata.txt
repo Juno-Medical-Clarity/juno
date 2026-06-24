@@ -1,0 +1,5 @@
+pmid:        29908406
+question:    69
+adaptation:  adaptation3
+title:       Peer-support intervention for postpartum depression: Participant satisfaction and program effectiveness
+sentences:   17

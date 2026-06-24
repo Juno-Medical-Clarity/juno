@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0165  |  gem_id: gem-cochrane-simplification-validation-166  |  doi: 10.1002/14651858.CD007748.pub2
+
+We included one small randomised trial (involving 98 women) that involved the drug rofecoxib, which is one type of COX inhibitor. The included study did not report any information about prevention of labour before full-term pregnancy. However, use of this COX inhibitor was associated with an increased risk of the baby being born before full term. We found insufficient data to make any recommendation about using COX inhibitors for preventing preterm labour. Future research should include the follow-up of babies to examine the short- and longer-term effects associated with using COX inhibitors during pregnancy.

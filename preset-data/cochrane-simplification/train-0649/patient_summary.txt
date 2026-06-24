@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0649  |  gem_id: gem-cochrane-simplification-train-650  |  doi: 10.1002/14651858.CD004292.pub4
+
+We examined research published up to October 2019. We included studies which by chance decided whether people were asked to drink more water (to produce at least 2 litres of urine) or were given no special instructions. We found no studies of people who had never had kidney stones. We found one study, performed in 220 people who had calcium-containing stones in the past, but were stone-free when they started the study. The average age was approximately 41 years, and two-thirds of participants were men. We found that drinking more water may reduce the risk of stones coming back. It may also prolong the time it takes for stones to come back. We found no evidence of unwanted effects. The certainty of evidence for both outcomes for which we found evidence was low. This means that the true results may be quite different.

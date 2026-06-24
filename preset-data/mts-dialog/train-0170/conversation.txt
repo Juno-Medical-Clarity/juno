@@ -1,0 +1,6 @@
+Doctor: Hi! How are you today?
+Patient: I am doing well. I start a new job on Monday. I have been unemployed for about a year now. It is going to be nice to get back to work.
+Doctor: Congratulations. Do you use tobacco products, drink alcohol or recreational drugs?
+Patient: I used to smoke a little bit, but I quit ten years ago.
+Doctor: Great!
+Patient: I don't drink or do drugs.

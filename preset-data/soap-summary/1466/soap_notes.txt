@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1466
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- History of CABG (Coronary Artery Bypass Grafting) in 1991.
+- History of radical prostate cancer, underwent radical prostatectomy and nephrectomy.
+- History of lumbar stenosis; underwent lumbar surgery twice in the past.
+- Currently due for another lumbar surgery with Doctor Y.
+- Takes Percocet daily for back pain.
+- History of hypertension and hyperlipidemia.
+ 
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

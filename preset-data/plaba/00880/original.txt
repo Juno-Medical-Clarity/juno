@@ -1,0 +1,21 @@
+The aim of newborn screening is to detect newborns with serious, treatable disorders so as to facilitate appropriate interventions to avoid or ameliorate adverse outcomes.
+Mass biochemical testing of newborn babies was pioneered in the 1960s with the introduction of screening for phenylketonuria, a rare inborn error of metabolism, tested by using a dried blood spot sample.
+The next disorder introduced into screening programs was congenital hypothyroidism and a few more much rarer disorders were gradually included.
+Two recent advances have greatly changed the pace: modification of tandem mass spectrometry and DNA extraction and analysis from newborn screening dried blood spot.
+These two technologies make the future possibilities of newborn screening seem almost unlimited.
+Newborn screening tests are usually carried out on a dried blood spot sample, for which there are special analytical considerations.
+Dried blood spot calibrators and controls, prepared on the same lot number of filter paper, are needed.
+Methods have a co-efficient of variation of about 10% due to the increased variability of a dried filter paper sample compared with other biochemical samples.
+The haematocrit is an additional variable not able to be measured.
+Also of importance is obtaining a balance between the sensitivity and specificity of each assay.
+Fixing cut-off points for action needs consideration of what is an acceptable percentage of the population to recall for further testing.
+Few assays are 100% discriminatory.
+Programs in Australasia currently screen for at least 30 disorders.
+Detection of these requires not only the assay of a primary marker but often determination of a ratio of that marker with another, or possibly an alternative assay, for example a DNA mutation.
+The most important disorders screened for are described briefly: phenylketonuria, primary congenital hypothyroidism, cystic fibrosis, the galactosaemias, medium-chain acyl-CoA dehydrogenase deficiency, glutaryl-CoA dehydrogenase deficiency and congenital adrenal hyperplasia, together with several other disorders detectable by tandem mass spectrometry.
+Newborn screening deals with rare disorders and benefit cannot be shown easily without very large pilot studies.
+There have been randomised controlled trials of screening for cystic fibrosis, and now several studies are beginning to establish the benefit of tandem mass spectrometry screening for disorders of fatty acid and amino acid metabolism.
+Two things will influence the new directions for newborn screening: the development of effective treatments for hitherto untreatable disorders, and advancing technology, enabling new testing strategies to be developed.
+There are novel treatments on the horizon for many discrete disorders.
+Susceptibility testing has recently been considered for newborn screening application, but is more controversial.
+Newborn screening has entered a new and exciting phase, with an explosion of new treatments, new technologies, and, possibly in the future, new preventive strategies.

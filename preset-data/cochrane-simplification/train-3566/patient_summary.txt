@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3566  |  gem_id: gem-cochrane-simplification-train-3567  |  doi: 10.1002/14651858.CD004198.pub3
+
+We found three trials set in Jamaica, Nigeria and the UK involving 102 people. In the trials, four different drug treatments (stilboestrol, sildenafil, ephedrine and etilefrine) were compared to placebo. The trials all looked at whether the treatments reduced how often attacks of priapism occurred. There was no difference between any of the treatments compared to placebo. Due to lack of evidence, we are not able to conclude the best treatment of priapism in sickle cell disease. More research is needed. We considered the quality of evidence to be low to very low as all of the trials were at risk of bias and all had low participant numbers.

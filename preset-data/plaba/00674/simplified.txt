@@ -1,0 +1,11 @@
+Turner Syndrome (TS) is a condition where several genes are affected. However, how this occurs remains unknown. Turner syndrome is a condition where there is an abnormal amount of chromosomes (genetic material).
+Identifying the genes that regulate the TS network is one of the main challenges in understanding its cause.
+This study evaluated the regulatory network of genes reported in scientific literature and identified essential proteins involved in TS.
+A statistical evaluation was completed to model a TS network.
+
+Out of twenty-seven genes, the authors identified two key regulators (KRs) i.e. KDM6A and BDNF.
+These KRs serve as the backbone for all the network activities.
+Removal of KRs does not cause its breakdown, rather a change in the network properties was observed.
+Essential (necessary) proteins are evolutionarily conserved (kept). Because of this, genes of selected interacting proteins in C. elegans, cat, and macaque monkey were identified.
+The authors deciphered three important interologs, interactions between pairs of proteins.
+In conclusion, these KRs and identified interologs are expected to regulate the TS network. This data demonstrates their biological importance.

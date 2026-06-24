@@ -1,0 +1,9 @@
+Doctor: How many people do you have in your family?
+Patient: Well, I have four children, all healthy with no medical conditions.
+Doctor: Wow, that's great!
+Patient: My father passed away at the age of sixty nine due to C V A. And my mom died exactly ten years later, her heart just suddenly stopped. She was seventy nine.
+Doctor: Okay. And do you have siblings?
+Patient: Well, believe it or not I had eleven siblings, including me twelve.
+Doctor: Wow!
+Patient: Yes, I lost six of them. Four of them to diabetes, one of my brothers passed away at the age of seventy two and we could never determine the reason my sister died.
+Doctor: Hm okay.

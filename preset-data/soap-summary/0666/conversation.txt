@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0666
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What's your family history? Both my parents are deceased. I'm so sorry to hear that. I offer you my sincerest condolences. Thank you. My dad passed away at seventy five from leukemia and my mom fell victim to heart problems and alcoholism at thirty eight. Does anyone else in your family suffer from leukemia, cardiac problems, or alcohol abuse? One of my uncles on my dad's side was recently diagnosed with leukemia. Oh, wow. I see.

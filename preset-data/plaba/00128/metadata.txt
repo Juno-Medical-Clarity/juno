@@ -1,0 +1,5 @@
+pmid:        32365314
+question:    10
+adaptation:  adaptation2
+title:       Effectiveness of Nighttime Orthoses in Controlling Pain for Women With Hand Osteoarthritis: A Randomized Controlled Trial
+sentences:   14

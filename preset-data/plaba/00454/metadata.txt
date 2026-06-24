@@ -1,0 +1,5 @@
+pmid:        26280231
+question:    35
+adaptation:  adaptation1
+title:       Diagnosis and Management of Osteoporosis
+sentences:   10

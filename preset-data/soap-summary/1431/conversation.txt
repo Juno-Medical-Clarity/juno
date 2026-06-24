@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1431
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you today? I am good. What is your past medical history? I don't have any health problems. Not yet at least. Let's keep try to keep it that way. Yes please.

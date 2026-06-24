@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1312
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What kinds of surgeries have you had in the past? I have had a heart bypass surgery. Is that C A B G? Maybe. And I have had my tonsils and appendix taken out. Sure. Okay.

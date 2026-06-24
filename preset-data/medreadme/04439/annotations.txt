@@ -1,0 +1,7 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 4.2
+split:       test
+
+jargon_spans:
+  [15:16] 'abbr-medical' -> 'WHO'

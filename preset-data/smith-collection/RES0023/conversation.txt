@@ -1,0 +1,160 @@
+# Smith Collection Transcript: RES0023
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How are you doing today
+
+Patient: Im doing ok i just had this cough thats really started to bug me
+
+Doctor: OK thanks for coming into the emergency department today we will really try to get this sorted out for you how long is this cough been going on for
+
+Patient: um about five days 5 days
+
+Doctor: OK 5 days and has anything else come on during that time are you having any other symptoms
+
+Patient: Yeah ive been feeling pretty pretty hot and just havent been really feeling very good overall ive been just exhausted
+
+Doctor: Oh im sad to hear that have you ever had anything like this before
+
+Patient: Yeah maybe when i was younger i dont know when i had the flu or something like that
+
+Doctor: OK ok so ill ask you few more questions about your cough so it started 5 days ago has it gotten any worse or better since then
+
+Patient: Its been getting worse for sure its like going all all throughout the day and its been even interrupting sleep
+
+Doctor: Oh geez thats too bad do you find that it does it feel really dry or are you bringing up like gunky stuff
+
+Patient: It its really dry
+
+Doctor: OK and he is there anything that seems to make it worse or better
+
+Patient: Not really its pretty consistent throughout the day
+
+Doctor: OK ok um have you had any chest pain
+
+Patient: Yeah after coughing it can its its starting to hurt it didnt at first but now that ive i think ive coughed so much its starting to feel pain there
+
+Doctor: OK what what part specifically in your chest are you feeling pain in
+
+Patient: uh actually now that i think about of it its more more in my throat actually with the cough i would say with the cough yeah yeah more of the throat
+
+Doctor: Would you say you have youve had a sore throat
+
+Patient: Yeah i guess so yeah i would like now with the cough thats really kind of what i mean by whats been bugging me
+
+Doctor: OK ok thanks for sharing that with me um and along with this have you noticed any change in your sense of smell or taste
+
+Patient: um yeah my smell is definitely been off ahh which is kind of weird my taste has been fine though
+
+Doctor: OK ok um and when did that start
+
+Patient: Yeah now that you say it i mean well i guess this morning
+
+Doctor: OK mmm have you had any nausea or vomiting
+
+Patient: uh no nothing like that
+
+Doctor: OK um and you said you felt really hot have you taken your temperature at all
+
+Patient: No i havent thats why but ive been feeling pretty sweaty so that thats where i i feel like i have a fever so i wanted to come in
+
+Doctor: OK ok have you lost any weight recently like unintentionally
+
+Patient: No ive actually put on probably 5 or 10 pounds
+
+Doctor: OK ok um have you had felt any any chills or shakes
+
+Patient: Mmmm nothing like that
+
+Doctor: OK have you had any night sweats
+
+Patient: um yeah actually like yeah last night my shirt was was soaked through when i when i got up
+
+Doctor: Oh no ok and was that just last night
+
+Patient: Yeah yeah that was just last night
+
+Doctor: OK ok um so im just going to ask you some questions or sorry few more questions on this and then well move on to just your health in general have you traveled anywhere recently
+
+Patient: um no ive been been well just going to work an an home
+
+Doctor: OK um have you been in contact with anyone that might be sick
+
+Patient: um its well its hard to say at the grocery store i guess i see a lot of customers that come through but um i generally things are wiped down pretty frequently so
+
+Doctor: So you work at the grocery store
+
+Patient: Yeah
+
+Doctor: OK and do you live alone or with family
+
+Patient: Alright yeah i live with family i i live with my wife and two children
+
+Doctor: Oh nice yeah do they work out of the home have they been in contact with anyone thats been sick
+
+Patient: Well theyre in high school um and theyve actually been doing a lot of their coursework on online so yeah i havent really been around to any other other people
+
+Doctor: And your wife
+
+Patient: Yeah shes been shes been home as well
+
+Doctor: OK so in terms your overall health do you are there any conditions that you see your family doctor for regularly
+
+Patient: Yeah so i have a high blood pressure and type 2 diabetes
+
+Doctor: OK
+
+Patient: And so i i take a ramipril and metformin
+
+Doctor: OK ramipril and metformin any other medications
+
+Patient: Umm vitamin d
+
+Doctor: OK and have you ever had any surgeries
+
+Patient: um yeah i had my gallbladder taken out about 10 years ago or so
+
+Doctor: OK ok um so do you have any allergies
+
+Patient: Ahh just too like environmental stuff like um pollen i think
+
+Doctor: OK ok so not any allergies to any medications
+
+Patient: No
+
+Doctor: OK um ok do you have any family history of respiratory problems
+
+Patient: um i think um my brother has asthma and i think my mom has asthma too
+
+Doctor: OK um ok and in terms of your lifestyle that sounds like you live with your wife and kids you work at a grocery store on a weekly basis do you do you drink alcohol
+
+Patient: Maybe ill have like 3 or 4 beers on the weekend
+
+Doctor: OK so three to four drinks per week
+
+Patient: Yeah about that
+
+Doctor: Do you smoke
+
+Patient: No i do not
+
+Doctor: Do you use cannabis or any other substances
+
+Patient: No i dont use anything like that
+
+Doctor: OK ok well i think that just about covers the things that i wanted to ask you today so based on the symptoms youre experiencing it sounds like it could be some kind of infective process like maybe some kind of viral infection that were concerned about particularly this year id really like to get a swab done on you its not necessarily covid but it potentially could be so what were going to have to ask you to do is to self isolate you and your family for 14 days and hopefully will get the results back shortly and youll know whether your covitest is positive or not
+
+Patient: OK
+
+Doctor: Does that sound like a good plan to you
+
+Patient: Yeah that sounds good
+
+Doctor: OK well thanks for chatting with me we will get that swab done right away
+
+Patient: Thank you

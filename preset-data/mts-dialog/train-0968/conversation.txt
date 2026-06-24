@@ -1,0 +1,6 @@
+Doctor: Can you tell me more about your family medical history, sir? How's your dad doing?
+Patient: Well, doctor, he passed away. He had mesothelioma.
+Doctor: I'm so sorry to hear that, sir. How is your mother?
+Patient: It's okay, thank you. I lost her too. She had A L S.
+Doctor: I'm sorry, that must be so hard.
+Patient: Yes, it is, but I manage.

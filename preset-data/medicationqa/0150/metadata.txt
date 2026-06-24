@@ -1,0 +1,5 @@
+drug_focus: Kadian
+question_type: Contraindication
+section_title: CONTRAINDICATIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cb462d0-f4a5-41b4-b4d5-8b3d8453e0e9&audience=consumer
+sample_id: 0150

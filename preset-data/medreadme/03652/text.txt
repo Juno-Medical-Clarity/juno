@@ -1,0 +1,1 @@
+We find that a simple measure, the observed contact probability, is largely more predictive of a peptide's native structure in the protein than combinations of metrics or multi-body components.

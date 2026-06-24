@@ -1,0 +1,5 @@
+drug_focus: diclofenac sodium
+question_type: Overdose
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a4fd2d68-019f-4c89-8923-4e61262f6eee
+sample_id: 0448

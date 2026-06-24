@@ -1,0 +1,5 @@
+pmid:        35131144
+question:    59
+adaptation:  adaptation2
+title:       Heterologous COVID-19 Vaccination in Spain: A Case Study of Individual Autonomy in the Real World
+sentences:   12

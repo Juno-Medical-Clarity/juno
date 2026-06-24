@@ -1,0 +1,17 @@
+This is a comprehensive literature review of chronic fatigue syndrome (CFS).
+We provide a description of the background, etiology, pathogenesis, diagnosis, and management regarding CFS.
+CFS is a multifaceted illness that has many symptoms and a wide array of clinical presentations.
+As of recent, CFS has been merged with myalgic encephalomyelitis (ME).
+Much of the difficulty in its management has stemmed from a lack of a concrete understanding of its etiology and pathogenesis.
+There is a potential association between dysfunction of the autoimmune, neuroendocrine, or autonomic nervous systems and the development of CFS.
+Possible triggering events, such as infections followed by an immune dysregulation resulting have also been proposed.
+In fact, ME/CFS was first described following Epstein Barr virus (EBV) infections, but it was later determined that it was not always preceded by EBV infection.
+Patient diagnosed with CFS have shown a noticeably earlier activation of anaerobic metabolism as a source of energy, which is suggestive of impaired oxygen consumption.
+The differential diagnoses range from tick-borne illnesses to psychiatric disorders to thyroid gland dysfunction.
+Given the many overlapping symptoms of CFS with other illnesses makes diagnosing it far from an easy task.
+The Centers for Disease Control and Prevention (CDC) considers it a diagnosing of exclusion, stating that self-reported fatigue for at minimum of six months and four of the following symptoms are necessary for a proper diagnosis: memory problems, sore throat, post-exertion malaise, tender cervical or axillary lymph nodes, myalgia, multi-joint pain, headaches, and troubled sleep.
+In turn, management of CFS is just as difficult.
+Treatment ranges from conservative, such as cognitive behavioral therapy (CBT) and antidepressants, to minimally invasive management.
+Minimally invasive management involving ranscutaneous electrical acupoint stimulation of target points has demonstrated significant improvement in fatigue and associated symptoms in a 2017 randomized controlled study.
+The understanding of CFS is evolving before us as we continue to learn more about it.
+As further reliable studies are conducted, providing a better grasp of what the syndrome encompasses, we will be able to improve our diagnosis and management of it.

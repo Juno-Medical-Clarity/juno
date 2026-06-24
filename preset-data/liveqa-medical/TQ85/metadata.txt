@@ -1,0 +1,17 @@
+qid: TQ85
+source_file: 1-123259775.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Is a calcium supplement beneficial for persons who have osteoporosis, and will the addition of magnesium be of greater benefit?
+nlm_summary: Is a calcium supplement beneficial for osteoporosis, and should it be taken with magnesium?
+
+focus_entities:
+  [F1] (DrugSupplement) calcium
+  [F2] (Problem) osteoporosis
+question_types:
+  [T1] ACTION
+  [T2] TREATMENT
+keywords:
+  [K1] (DrugSupplement) Magnesium
+  [K2] (DrugSupplement) Calcium Castco ( Kirkland ) brand with D

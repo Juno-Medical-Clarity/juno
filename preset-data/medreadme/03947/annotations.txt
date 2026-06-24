@@ -1,0 +1,6 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 2.8
+split:       test
+
+jargon_spans: (none)

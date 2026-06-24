@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1139
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Shortness of breath, terrible cough, frequent headaches, chest congestion, low fever.
+- Severity: Shortness of breath rated at 3 out of 10.
+- Duration: Symptoms have been present for three days.
+- Associated symptoms: Cough worsens with pain; no pain, numbness, or tingling down arms; no jaw pain.
+- Relevant medical history: Similar symptoms experienced about ten months ago that would come and go; recent symptoms have worsened.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Concerns: Patient is hesitant to seek medical attention, expressing a sense of strength but acknowledging worsening symptoms.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

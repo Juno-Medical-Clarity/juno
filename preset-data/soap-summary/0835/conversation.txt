@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0835
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there, sir! How are you doing today? I feel out of it. Have you been using any substances? I did a little heroin and some coke earlier today. I still feel high. Okay. Any shortness of breath, chest pain, abdominal pain or back pain? No. Are you having any headaches, hallucinations or visual disturbances? No. Do you have any open sores or wounds? No.

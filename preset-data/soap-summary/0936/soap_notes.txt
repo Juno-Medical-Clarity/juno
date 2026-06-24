@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0936
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 43 years old and reports feeling weaker than usual for the past month.
+- Symptoms include increased fatigue and shortness of breath with movement.
+- Recent weight loss of about 15 pounds in less than 2-3 months.
+- Appetite is fine; no nausea, vomiting, or diarrhea reported.
+- No fever, chills, sweats, or cough.
+- No chest pain associated with shortness of breath.
+- Denies any past medical problems.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0784
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Welcome to the clinic. Thank you. Do you have any family history of cancer? Either solid tumors or blood malignancies? No. None that I know of.

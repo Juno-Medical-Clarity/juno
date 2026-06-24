@@ -1,0 +1,10 @@
+Fluoxetine (FLX) has a unique pharmacokinetic profile.
+Its major metabolite, norfluoxetine (NFLX), possesses FLX's antidepressant efficacy and a half-life of 7 to 15 days, suggesting the possibility of nonstandard dosing strategies.
+This study examined the tolerability of a weekly dose and its equivalence to daily dosing of FLX for the continuation phase of treatment for major depressive disorder (MDD).
+One hundred fourteen subjects initially received open-label treatment with 20 mg of FLX daily for 7 weeks.
+Subsequently, 70 subjects with a score on the Hamilton Rating Scale for Depression (HAM-D) of 12 or less were randomly assigned in a double-blind design to one of three treatment groups: 20 mg FLX daily (N = 21), 60 mg FLX weekly (N = 28), or placebo (N = 21) and were followed for 7 weeks.
+HAM-D scores and blood levels of FLX and NFLX were analyzed using a repeated-measures analysis of variance.
+During the double-blind phase, blood levels for both FLX and NFLX differed across the treatment groups, yet no statistically significant difference in HAM-D scores was observed.
+There was no difference in the dropout rate across the groups.
+Subjects could not correctly identify the treatment group into which they were assigned.
+Weekly dosing of FLX seems to be well tolerated and possibly as effective as daily dosing in maintaining the therapeutic response in subjects with MDD.

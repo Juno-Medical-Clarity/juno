@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2134  |  gem_id: gem-cochrane-simplification-train-2135  |  doi: 10.1002/14651858.CD007635.pub2
+
+This review investigated whether this intervention is safe and whether it is more effective than the traditional treatment. In order to answer this question, 4 randomised trials were found, comparing these two interventions. We found that ERAS can be viewed as safe, i.e. not resulting in more complications or deaths, and at the same time decreases the days spent in hospital following major bowel surgery. However, the data are of low quality and therefore does not justify implementation of ERAS as the standard method of care yet. More research on other outcome parameters like economical evaluation and quality of life parameters are necessary.

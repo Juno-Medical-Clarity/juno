@@ -1,0 +1,9 @@
+Measurement of beta-cell function is an important marker of progression to diabetes in individuals at risk for the disease.
+Although the peak incidence for the disease occurs before 17 years of age, normal values for insulin secretion were not available in this age group.
+We performed a simplified intravenous glucose tolerance test in 167 normal children, and in 98 islet cell antibody (ICA)-negative and 12 ICA-positive siblings of diabetic patients.
+Their age range was 1-16 yr.
+The first phase of insulin secretion, evaluated as the sum of plasma insulin concentrations at 1 and 3 min, increased with age and was significantly lower in ICA-negative siblings (86 +/- 6 microU/ml, P < 0.002) than in normal controls (115 +/- 6 microU/ml).
+This difference was not apparent before 8 yr of age.
+None of the ICA-negative siblings developed diabetes after an average of 4.5 yr.
+ICA-positive siblings at first study had a first phase insulin response similar to that of ICA negative siblings, but significantly lower than that of the normal controls (74 +/- 13 microU/ml, P < 0.02).
+The reason for the decreased insulin secretion in ICA-negative siblings is unknown, but could involve a defect in the growth of beta-cell mass or insulin secretion that could be part of the multifactorial pathogenesis of type 1 diabetes.

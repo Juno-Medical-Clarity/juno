@@ -1,0 +1,12 @@
+source:      plos_genetics
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [0:4] 'medical-jargon-google-easy' -> 'RNAi - mediated silencing'
+  [5:6] 'abbr-medical' -> 'PDXK'
+  [12:13] 'abbr-medical' -> 'PLP'
+  [13:14] 'medical-jargon-google-easy' -> 'inhibitors'
+  [16:18] 'medical-jargon-google-easy' -> 'chromosome breakage'
+  [27:28] 'abbr-medical' -> 'ALA.'

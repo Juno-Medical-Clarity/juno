@@ -1,0 +1,14 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [6:7] 'general-complex' -> 'efficacy'
+  [9:19] 'medical-jargon-google-easy' -> 'immediate introduction of the recommended daily intake of amino acids'
+  [20:23] 'abbr-medical' -> 'Imm - RDI'
+  [29:33] 'medical-jargon-google-easy' -> 'medium - chain triglycerides'
+  [41:42] 'abbr-medical' -> 'PN'
+  [44:45] 'medical-jargon-google-easy' -> 'non-adipose'
+  [52:54] 'medical-jargon-google-easy' -> 'intrahepatocellular lipid'
+  [55:56] 'abbr-medical' -> 'IHCL'

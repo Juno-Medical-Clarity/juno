@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0244
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough started 3-4 days ago, worsening over time (more frequent), dry but harsh sounding at times
+- Headache for the past 2 days, mild (4/10), frontal and sides of head, improves with Tylenol or Advil
+- Muscle aches for 2-3 days, feels fatigued and achy upon waking
+- Mild shortness of breath only after severe coughing fits
+- Mild sore throat, worse in the morning, not painful with swallowing
+- Feels feverish but has not checked temperature
+- Denies wheezing, chest pain, palpitations, dizziness, fainting, numbness, tingling, confusion, memory loss, weight loss, rashes, changes in hearing, vision, smell, taste, bowel movements, nausea, vomiting, or urinary symptoms
+
+PMHx:
+- Asthma and allergies, uses Ventolin inhaler occasionally
+- Wisdom teeth extraction and tonsillectomy at age 12
+- On birth control for 8 years
+- Up to date with immunizations, gets annual flu shot
+- Allergies: cats and environmental triggers, no drug allergies
+- FHx: Grandfather had a stroke in his 70s (smoker and drinker, did not take care of himself)
+- Denies smoking, recreational drug use
+- Drinks alcohol occasionally (cocktail on weekends, glass of wine with dinner)
+- Sexually active with boyfriend of 6 months, uses condoms in addition to birth control
+
+Objective:
+- Vitals signs not provided
+- Physical exam findings not provided
+
+Assessment:
+- Likely diagnosis not explicitly mentioned
+- Differential diagnoses not explicitly mentioned
+
+Plan:
+- COVID swab to be performed, results expected in 24-48 hours
+- Advised to self-isolate for 14 days
+- If COVID negative, likely another common viral strain; supportive care recommended (stay hydrated, eat well)
+- Instructed to seek ER care if symptoms worsen, high fever develops, or neurological symptoms (weakness, seizures) occur

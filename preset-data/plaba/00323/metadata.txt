@@ -1,0 +1,5 @@
+pmid:        34552950
+question:    25
+adaptation:  adaptation1
+title:       Heterologous Hyperimmune Polyclonal Antibodies Against SARS-CoV-2: A Broad Coverage, Affordable, and Scalable Potential Immunotherapy for COVID-19
+sentences:   9

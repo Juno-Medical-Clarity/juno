@@ -1,0 +1,10 @@
+Importance: Chronic kidney disease (CKD) is the 16th leading cause of years of life lost worldwide.
+Appropriate screening, diagnosis, and management by primary care clinicians are necessary to prevent adverse CKD-associated outcomes, including cardiovascular disease, end-stage kidney disease, and death.
+Observations: Defined as a persistent abnormality in kidney structure or function (eg, glomerular filtration rate [GFR] <60 mL/min/1.73 m2 or albuminuria ≥30 mg per 24 hours) for more than 3 months, CKD affects 8% to 16% of the population worldwide.
+In developed countries, CKD is most commonly attributed to diabetes and hypertension.
+However, less than 5% of patients with early CKD report awareness of their disease.
+Among individuals diagnosed as having CKD, staging and new risk assessment tools that incorporate GFR and albuminuria can help guide treatment, monitoring, and referral strategies.
+Optimal management of CKD includes cardiovascular risk reduction (eg, statins and blood pressure management), treatment of albuminuria (eg, angiotensin-converting enzyme inhibitors or angiotensin II receptor blockers), avoidance of potential nephrotoxins (eg, nonsteroidal anti-inflammatory drugs), and adjustments to drug dosing (eg, many antibiotics and oral hypoglycemic agents).
+Patients also require monitoring for complications of CKD, such as hyperkalemia, metabolic acidosis, hyperphosphatemia, vitamin D deficiency, secondary hyperparathyroidism, and anemia.
+Those at high risk of CKD progression (eg, estimated GFR <30 mL/min/1.73 m2, albuminuria ≥300 mg per 24 hours, or rapid decline in estimated GFR) should be promptly referred to a nephrologist.
+Conclusions and relevance: Diagnosis, staging, and appropriate referral of CKD by primary care clinicians are important in reducing the burden of CKD worldwide.

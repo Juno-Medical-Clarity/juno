@@ -1,0 +1,10 @@
+Doctor: Did you ever had pneumonia?
+Patient: No, never.
+Doctor: Do you have any history of lung disease?
+Patient: No.
+Doctor: Any history of tuberculosis?
+Patient: No.
+Doctor: Are you feeling any shortness of breath or difficulty breathing?
+Patient: No.
+Doctor: Okay. Do you have any wheezing?
+Patient: No.

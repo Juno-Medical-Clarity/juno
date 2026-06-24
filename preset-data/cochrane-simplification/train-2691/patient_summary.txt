@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2691  |  gem_id: gem-cochrane-simplification-train-2692  |  doi: 10.1002/14651858.CD011373.pub2
+
+DOAC probably reduced the incidence of stroke and systemic embolic events as a primary efficacy outcome, compared to warfarin. Further, DOAC might slightly reduce the incidence of major bleeding events as a primary safety outcome, compared to warfarin. This review demonstrated that DOAC are as likely as warfarin to prevent all strokes and systemic embolic events without increasing major bleeding events among AF patients with CKD. According to GRADE, the quality of the evidence was moderate for the primary efficacy outcome because of concerns with imprecision and low for the primary safety outcome because of concerns with inconsistency and imprecision. The results of this study chiefly apply to CKD stage G3 patients, since we could not assess those with CKD stage G4 or G5.

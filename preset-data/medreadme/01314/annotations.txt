@@ -1,0 +1,10 @@
+source:      plos_biology
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [3:4] 'general-complex' -> 'empirical'
+  [7:9] 'general-complex' -> 'predictive power'
+  [14:15] 'general-complex' -> 'mechanistic'
+  [15:18] 'medical-jargon-google-easy' -> 'within - host'

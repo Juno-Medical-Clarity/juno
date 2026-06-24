@@ -1,0 +1,21 @@
+Doctor: Congratulations on your new baby! How are you doing today?
+Patient: I'm doing well, no headaches, and I'm breastfeeding well.
+Doctor: Have you had any bleeding?
+Patient: Nope, none.
+Doctor: Are you using a mini pad?
+Patient: Yeah, I use it twice a day.
+Doctor: Do you have any cramping or clotting?
+Patient: No, thankfully I don't.
+Doctor: What color is your discharge, ma'am?
+Patient: Well, its turned from red to brown, and now its kind of yellowish.
+Doctor: Okay, have you had sex again yet?
+Patient: No, we're waiting a little longer.
+Doctor: Are you going to the bathroom regularly?
+Patient: Regularly? Yes, but I'm having some pain with it, and then every once in a while I have some bright red bleeding.
+Doctor: Are you constipated?
+Patient: No, I'm not.
+Guest_family: She hasn't been eating her vegetables like she should.
+Doctor: That'll also do it.
+Patient: Okay, well, my seasonal allergies are back too.
+Doctor: What symptoms do you have with your allergies?
+Patient: I get itchy watery eyes, a runny nose, I can't stop sneezing, and I have a lot of pressure in my ears.

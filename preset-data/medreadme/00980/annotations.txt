@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [4:8] 'medical-jargon-google-hard' -> 'Lctra RNAi knockdown strains'
+  [10:14] 'medical-jargon-google-easy' -> 'tet - off system'

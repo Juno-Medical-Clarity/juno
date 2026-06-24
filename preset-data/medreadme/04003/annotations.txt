@@ -1,0 +1,12 @@
+source:      plos_biology
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-easy' -> 'branching density'
+  [7:9] 'medical-jargon-google-hard' -> 'dendritiform fibers'
+  [13:14] 'medical-jargon-google-easy' -> 'synapses'
+  [15:16] 'general-complex' -> 'polyadic'
+  [17:18] 'medical-jargon-google-easy' -> 'neurites'
+  [24:25] 'medical-jargon-google-easy' -> 'neuropile'

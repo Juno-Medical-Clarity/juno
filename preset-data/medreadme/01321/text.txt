@@ -1,0 +1,1 @@
+Stimulus-dependent correlations among the different modes suggest that one can generate more reliable behaviors by synchronizing stimuli to the state of the worm in shape space.

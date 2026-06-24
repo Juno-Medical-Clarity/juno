@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1438  |  gem_id: gem-cochrane-simplification-train-1439  |  doi: 10.1002/14651858.CD004975.pub3
+
+We identified five randomised clinical studies with 1601 children comparing two dosing schedules. Participants were aged 12 years or younger with AOM. The primary outcome was clinical cure rate in terms of resolution of otalgia and fever at the end of antibiotic therapy (days seven to 15). The secondary outcomes were clinical cure rate in terms of middle ear effusion during therapy, clinical cure rate post-treatment (one to three months) in terms of resolution of middle ear infection, AOM complications and adverse events to medication. The results showed that treating acute middle ear infection with either once/twice daily or three times daily amoxicillin, with or without clavulanate, has the same results using our outcome measures, including adverse events such as diarrhoea and skin reactions. The evidence is current to March 2013.

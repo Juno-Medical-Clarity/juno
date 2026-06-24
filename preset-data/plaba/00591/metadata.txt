@@ -1,0 +1,5 @@
+pmid:        34408570
+question:    45
+adaptation:  adaptation2
+title:       Evaluation of the therapeutic efficacy of active specialistic medical dressings in the treatment of decubitus
+sentences:   9

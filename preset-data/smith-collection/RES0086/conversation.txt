@@ -1,0 +1,190 @@
+# Smith Collection Transcript: RES0086
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Yeah so i just came in today i actually had asthma as a kid and i used to be on the puffers and it pretty much resolved by the time i was around like 18 years old and ive been pretty good since then i havent even been really using the puffers for the last five years but just recently just during the winter i started noticing some of my symptoms coming back and now especially over the last few months whenever im doing something like going to the gym or exercising i do get that shortness of breath and i feel my throat closing in again and recently for the last i would say a week ive also been having some wheezing as well so yeah i just wanted to come back and make sure everything is alright
+
+Doctor: OK sure so just to rewind a little bit when were you first diagnosed with asthma
+
+Patient: So i was diagnosed when i was i think it was like when i was 13 years old
+
+Doctor: 13 ok and youve been using puffers since
+
+Patient: P yeah so from then to like maybe when i was 18 i was using puffers and then i continued using them on and off like just the blue one whenever i needed it but for the last five years i havent even had to use any puffers at all
+
+Doctor: OK ok so can you tell me a little bit about the symptoms that youre experiencing right now ok so you said some shortness of breath when did that start
+
+Patient: So yeah in the last i would say two months ive noticed it similarly to when i was younger especially when im on the treadmill or running i get short of breath very easily but at rest im fine i dont have any trouble but ive noticed it for the last few months
+
+Doctor: OK so its mostly when youre exercising or with activities
+
+Patient: Mhm
+
+Doctor: OK and do you feel wheezy as well
+
+Patient: Yeah in the last one to two weeks i would say im also wheezing as well mainly during like if im running or still with exercise i feel myself wheezing yeah so thats been an issue for the last couple of weeks
+
+Doctor: So once you stop activity does your shortness of breath and wheezing eventually resolve
+
+Patient: Yeah yeah so i just have to kind of sit down and relax for a bit and then it goes away on its own
+
+Doctor: OK how long does it last before it goes away
+
+Patient: Probably at least like i would say 10 to 15 minutes
+
+Doctor: OK ok
+
+Patient: Until im fully kind of recovered
+
+Doctor: OK ok are you coughing as well
+
+Patient: Uhm yeah when im exercising thats when all of that happens the wheezing the coughing but throughout the day otherwise im not coughing
+
+Doctor: OK and when you cough do you bring up phlegm or is it more like a dry cough
+
+Patient: P its mostly a dry cough sometimes i do bring up some clear whitish material but usually its dry
+
+Doctor: OK alright and do you feel like your hearts racing
+
+Patient: No no nothing like that
+
+Doctor: No you dont feel like youre breathing a lot more than usual
+
+Patient: uh no i dont think so
+
+Doctor: OK do you still have puffers at home
+
+Patient: I actually like i havent used them for a while so no i dont have any puffers
+
+Doctor: OK any weight loss recently
+
+Patient: No
+
+Doctor: No fevers or chills
+
+Patient: No nothing like that
+
+Doctor: OK any rashes or changes in your hair or skin or nails
+
+Patient: I do i have just uh eczeme ive had it for most of my life now so especially during the winter i do get some irritation especially on my hands so yeah some rashes but thats about it
+
+Doctor: OK any changes in your vision or hearing
+
+Patient: No no changes
+
+Doctor: Stuffy nose runny nose changes in your taste
+
+Patient: No
+
+Doctor: Changes in smell
+
+Patient: No
+
+Doctor: Chest pain
+
+Patient: No chest pain
+
+Doctor: Do you find you get short of breath when youre laying down or it wakes you up at night
+
+Patient: No just when im exercising especially running
+
+Doctor: OK sure any dizziness or fainting spells
+
+Patient: No
+
+Doctor: Any headaches
+
+Patient: No headaches
+
+Doctor: Any like reflux heartburn
+
+Patient: No
+
+Doctor: Nausea vomiting
+
+Patient: No
+
+Doctor: Changes to your bowel movements
+
+Patient: Nope
+
+Doctor: OK so you mentioned you were diagnosed with asthma and eczema in the past any other longstanding medical conditions that you have
+
+Patient: uh no those those are the only ones
+
+Doctor: OK any allergies
+
+Patient: I do have i think like just seasonal allergies i dont know if im allergic to pollen but during the spring time i get allergies and then during the winter now im getting some of these symptoms that im talking about so yeah but none to any medications that i know of
+
+Doctor: OK so youre not getting any night time symptoms and youre only getting day time symptoms with activity right
+
+Patient: Yeah
+
+Doctor: Has this prevented you from going to work or school
+
+Patient: Oh yeah so i just this past week i usually do my running like morning workout right before work and just one of the days after i worked out i felt just terrible with this coughing and short of breath so i just decided to take a day off work that day but then i realized it kind of goes away on its own so for the other days i have been going to work
+
+Doctor: OK ok good and alright and then any medications that youre on
+
+Patient: Im on a just one of those steroid creams for my eczema
+
+Doctor: OK ok are you up to date with all your immunizations
+
+Patient: Yep
+
+Doctor: OK uhm how about family history of lung conditions or heart conditions
+
+Patient: No heart conditions but yeah asthma is pretty big in my family as well as eczema like my mom has it my sister has it so yeah asthma is pretty big
+
+Doctor: OK how about cancers
+
+Patient: Uhm no i dont think anyone in the family has any cancers
+
+Doctor: OK and do you smoke
+
+Patient: No ive never smoked im pretty health focused and i cant even take if someone else is smoking so no
+
+Doctor: No ok do you drink alcohol
+
+Patient: No i dont drink alcohol no drugs yeah im pretty i like to stay very fit and healthy so nothing like that
+
+Doctor: OK and have you been in contact with any sick people recently
+
+Patient: No not that i know of i live by myself in my apartment ive been working from home i work as a programmer and so i only go outside for runs and stuff for groceries so i havent really seen anyone sick around me
+
+Doctor: Yeah and have you traveled anywhere recently
+
+Patient: No ive mainly been at home
+
+Doctor: OK good and wheres home
+
+Patient: Home is in hamilton ontario and ive just been working from home
+
+Doctor: OK do you live in a house apartment who do you live with
+
+Patient: I just live in an apartment by myself i did have a roommate like uh that moved out just a couple of months ago but yeah right now im just by myself
+
+Doctor: OK ok any old carpets pets mold or asbestos in the house
+
+Patient: No nothing like that
+
+Doctor: OK good so those are all the questions that i had for you did you have any questions of your own for myself
+
+Patient: Yeah i was just wondering if i should go back on the puffers i dont have any right now i just dont know if my asthma has just uh come back
+
+Doctor: Yeah so what were gonna do is were going to do a pft so pulmonary function test on you cause its been a while since youve had one of those done and thats just to check how well your lung is functioning so well do that well also maybe get a chest xray as well for baseline and depending on what those two come back as well probably get you to use your short acting beta agonist puffer again and well also give you a long acting
+
+Patient: OK
+
+Doctor: As well as an inhaled cortico steroid so actually you know what well give you an inhaled cortico steroid and a short acting beta agonist because you cant use both the steroid and the long so well start with those two well start with the short acting as well as inhaled cortico steroid and if we find that your asthma is just based on like exertion or like something called athletic asthma we can also try something called cromolyn instead but well discuss that more right now our priority is to get your symptoms under control so well start with the short acting as well as the inhaled cortico steroid how does that sound
+
+Patient: Yeah that sounds good thank you so much
+
+Doctor: Yeah no problem

@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Pressure ulcers'

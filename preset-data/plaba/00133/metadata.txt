@@ -1,0 +1,5 @@
+pmid:        31627352
+question:    11
+adaptation:  adaptation1
+title:       Ketogenic Diet: A New Light Shining on Old but Gold Biochemistry
+sentences:   10

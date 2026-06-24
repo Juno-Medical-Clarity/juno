@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0911
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Behavioral changes, stomach pain, nausea, vomiting, fever.
+- Severity: Stomach pain described as significant enough for the patient to point to his stomach.
+- Duration: Behavioral changes noticed for a few days; fever and nausea accompanied by vomiting.
+- Associated symptoms: Feeling queasy, fever of 102°F, vomiting a handful of times.
+- Relevant medical history: None mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Concerns: Patient is "out of it" and not acting like himself.
+
+Objective:
+- Vital Signs: Fever of 102°F.
+
+Assessment:
+- No specific assessments or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

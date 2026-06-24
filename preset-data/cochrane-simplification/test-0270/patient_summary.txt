@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0270  |  gem_id: gem-cochrane-simplification-test-271  |  doi: 10.1002/14651858.CD008236.pub3
+
+The evidence in this review, which was carried out together with Cochrane Oral Health, is up-to-date as of 15 February 2017. We included two studies that evaluated 190 participants. Both trials were conducted in the UK and both compared bonded molar tubes with molar bands. From the limited data of two studies at low risk of bias, it would appear that bonded molar tubes are associated with a higher failure rate than with molar bands.

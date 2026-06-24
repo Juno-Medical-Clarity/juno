@@ -1,0 +1,1 @@
+Cellular heterogeneity, which plays an essential role in biological phenomena, such as drug resistance and migration, is considered to arise from intrinsic (i. e. , reaction kinetics) and extrinsic (i. e. , protein variability) noise in the cell.

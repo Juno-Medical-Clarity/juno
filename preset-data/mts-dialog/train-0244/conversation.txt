@@ -1,0 +1,14 @@
+Doctor: Hi, how are you doing, ma'am? What brings you here today?
+Patient: I'm good, thank you. I'm having this weakness on my left side after the brain, I mean, after they removed my tumor from the brain.
+Doctor: Remind me when did you have your surgery for brain tumor?
+Patient: It was on October twenty fourth last year.
+Doctor: How old are you now?
+Patient: I'm sixty four.
+Patient: He is my husband, Al.
+Doctor:  Hi, nice to meet you.
+Doctor:  Tell me what happened.
+Patient: They asked me to go to the physical therapy for all the problems I was having after my brain surgery. I went from November fifth to the fourteenth of last year. I did therapy for around two weeks starting on November fifth. My problems were not solved so I went to the hospital and then they did some tests and they found out something was wrong. They said there is swelling in my brain so they admitted me there and then I had my second surgery.
+Doctor: When was the second surgery? When did you get admitted?
+Patient: It was on December fifth. I was there in the rehab the whole time and then I was discharged for home one month after my second surgery.
+Doctor: Was there any other issue?
+Guest_family: Yeah. When she was in the rehab she developed something which they called D V T in her left calf. She did not have any such problem again after that.

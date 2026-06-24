@@ -1,0 +1,5 @@
+drug_focus: atorvastatin; lipitor
+question_type: Comparison
+section_title: HIGHLIGHTS OF PRESCRIBING INFORMATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c6e131fe-e7df-4876-83f7-9156fc4e8228&audience=consumer
+sample_id: 0641

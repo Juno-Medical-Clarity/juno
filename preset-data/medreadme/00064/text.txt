@@ -1,0 +1,1 @@
+We find that only a modest fraction of proteins (22 out of 202) show significant up-regulation to deletion of their duplicate genes.

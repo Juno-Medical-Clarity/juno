@@ -1,0 +1,4 @@
+Doctor: How are feeling now after the treatment?
+Patient: I am feeling pretty fair, improving slowly.
+Doctor: Okay?
+Patient: Okay.

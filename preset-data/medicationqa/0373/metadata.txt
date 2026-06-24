@@ -1,0 +1,5 @@
+drug_focus: methylprednisolone
+question_type: Side effects
+section_title: ADVERSE REACTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7bf4d3d3-3f8a-4e20-9194-061658efca61
+sample_id: 0373

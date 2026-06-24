@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.7
+split:       dev
+
+jargon_spans:
+  [1:2] 'abbr-medical' -> 'RPA'
+  [5:6] 'abbr-medical' -> 'Exo1'
+  [10:12] 'medical-jargon-google-easy' -> 'nuclease rebinding'

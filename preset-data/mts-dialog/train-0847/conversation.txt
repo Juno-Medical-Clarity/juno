@@ -1,0 +1,5 @@
+Doctor: And you are not allergic to anything right?
+Patient: That's right.
+Doctor: Any drugs or pollens or anything?
+Patient: Nope nothing.
+Doctor: Good.

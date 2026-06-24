@@ -1,0 +1,5 @@
+drug_focus: dutasteride
+question_type: Usage/duration
+section_title: ABSTRACT
+source_url: https://www.ncbi.nlm.nih.gov/pubmed/28632494
+sample_id: 0269

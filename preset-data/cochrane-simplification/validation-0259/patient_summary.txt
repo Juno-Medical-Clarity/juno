@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0259  |  gem_id: gem-cochrane-simplification-validation-260  |  doi: 10.1002/14651858.CD005090.pub2
+
+One trial was found that examined the effect of inotropes in infants with low systemic blood flow. The trial found that many infants failed to respond to the two commonly used inotropes (dobutamine and dopamine) and neither was better at improving outcomes of very preterm babies. Further research is needed to determine the best strategy for preventing or treating low systemic or organ blood flow in these very immature babies.

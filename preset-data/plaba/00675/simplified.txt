@@ -1,0 +1,8 @@
+X-chromosome inactivation generally results in gene expression equivalence of X-linked genes between 46,XY males and 46,XX females.
+The 20-30% of genes that escape silencing may influence the phenotype (physical traits) of Turner syndrome. Turner syndrome is a condition where there is an abnormal amount of chromosomes (genetic material).
+Understanding which genes escape from silencing, and how they avoid this chromosome-wide inactivation, is an important step toward understanding Turner Syndrome.
+This study examined the mechanism of escape using a mouse model where a specific human escape gene, RPS4X, was inserted into the genome.
+The study showed that escape from inactivation for RPS4X is already established by embryonic Day 9.5. Additionally, the study demonstrated that both silencing and escape are maintained across the entire lifespan.
+No overt (obvious) abnormalities were observed for the mice up to 1 year of age.
+However, there was no significant increase in protein levels. This suggest translational compensation (altered conversion of RNA to proteins) in the mouse.
+Finally, while many of the protein-coding genes have been assessed (measured) for their inactivation status, less is known about the X-linked RNA genes. The authors propose that for many microRNA (RNA involved in silencing) genes, inactivation status can be predicted.

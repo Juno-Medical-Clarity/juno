@@ -1,0 +1,5 @@
+pmid:        26879305
+question:    18
+adaptation:  adaptation1
+title:       Role of Medical Nutrition Therapy in the Management of Gestational Diabetes Mellitus
+sentences:   7

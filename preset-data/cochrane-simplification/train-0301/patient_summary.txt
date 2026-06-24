@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0301  |  gem_id: gem-cochrane-simplification-train-302  |  doi: 10.1002/14651858.CD009974.pub2
+
+In this review, nine studies evaluating various non drug treatments to treat spasticity in adult with MS were included, comprising a total of 341 participants. Results from these studies suggest that all included non pharmacological therapies have low level of evidence or no evidence in improving spasticity in people with MS. However, caution should be used in the interpretation of the results, due to the poor methodological quality of all the included studies. More research is needed to determine the usefulness of these interventions before they can be recommended as routine treatments.

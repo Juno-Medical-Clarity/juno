@@ -1,0 +1,5 @@
+pmid:        34638669
+question:    39
+adaptation:  adaptation1
+title:       Nanoparticle-Aided Detection of Colorectal Cancer-Associated Glycoconjugates of Extracellular Vesicles in Human Serum
+sentences:   8

@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1125
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Symptoms: None explicitly mentioned 
+- Severity: Not applicable 
+- Duration: Not applicable 
+- Associated symptoms: None mentioned 
+- Relevant medical history: Smokes a pack a day for the last twenty years; drinks daily (3 to 5 drinks a day) 
+- Family history: Not mentioned 
+- Allergies: Not mentioned 
+- Other concerns: None explicitly mentioned 
+- Emotions/Concerns: None discussed 
+
+Objective: 
+- No objective data mentioned 
+
+Assessment: 
+- No clinical interpretations, diagnoses, or impressions provided 
+
+Plan: 
+- No actions, medications, tests, follow-up, or patient education mentioned

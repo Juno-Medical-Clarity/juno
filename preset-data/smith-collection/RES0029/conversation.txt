@@ -1,0 +1,146 @@
+# Smith Collection Transcript: RES0029
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I was wondering if you could start by telling me what brought you into the emergency department
+
+Patient: So i came to the emergency department because ive been having pain in my chest
+
+Doctor: OK where is the pain located
+
+Patient: I would say its like the whole pretty much the left side of my chest
+
+Doctor: OK and when did this pain start
+
+Patient: So i think it started just around 2 hours ago i actually was riding my bicycle and just fell off on kind of just slipped and i think i fell on that side like when i the impact was right on my chest and since then its been really painful
+
+Doctor: OK i am how would you describe the pain sometimes people will use words like burning dull achy
+
+Patient: I think its more like someone is just stabbing me and then whole left side area
+
+Doctor: OK and um anything that youve been doing thats thats made the pain worse
+
+Patient: If i think i have to take really really slow and shallow breaths if i try to take a deep breath it just really hurts like taking those small smaller breaths helps
+
+Doctor: OK and do you feel the pain anywhere else or is it just on the left side of your chest
+
+Patient: No i would say just on the left side
+
+Doctor: OK and has the pain been getting worse staying the same or getting better
+
+Patient: Id say over the last two hours its been getting worse
+
+Doctor: OK and do you have any other associated symptoms
+
+Patient: uh like i think i im having also maybe its just because im trying to breathe slowly but i feel like i cant catch my breath
+
+Doctor: OK um has anything like this ever happened to you before
+
+Patient: No no i mean ive never had any pain in my chest before
+
+Doctor: OK are you did you have a loss of consciousness when you fell off your bike
+
+Patient: No i got right back up i just just had the pain
+
+Doctor: OK so any injuries to the head
+
+Patient: No
+
+Doctor: OK
+
+Patient: Thats fine i was wearing a helmet
+
+Doctor: OK excellent and any headache right now
+
+Patient: No
+
+Doctor: OK how about any fever chills
+
+Patient: No i feel im fine
+
+Doctor: Any nausea or vomiting
+
+Patient: Nope
+
+Doctor: Do you feel as though your hearts racing
+
+Patient: I would say like in the last hour a little bit more so than usual
+
+Doctor: OK any skin changes or or rashes youve noticed
+
+Patient: Besides just i got some scrapes here and there on my hands but nothing else
+
+Doctor: OK and do you have a cough
+
+Patient: Nope
+
+Doctor: OK and any recent infections
+
+Patient: No ive been pretty pretty healthy recently no no cough or no infections
+
+Doctor: OK and uh any dizziness
+
+Patient: um no
+
+Doctor: Alright and i know you mentioned the few scratches on your hands but any other injuries
+
+Patient: Oh no i i think i got a pretty lucky
+
+Doctor: Oh ok and any alcohol or drug intake prior to falling off your bike
+
+Patient: Oh no no i was completely sober no no drugs or alcohol
+
+Doctor: OK and any weakness or numbness or tingling that you noticed
+
+Patient: um no nothing like that
+
+Doctor: Alright and when was the last time you had anything to eat or drink
+
+Patient: I just had some cereal and um just some chocolate milk around breakfast time but nothing else
+
+Doctor: OK and how many hours ago was that
+
+Patient: I would say around 3 hours ago
+
+Doctor: OK um and have you been diagnosed with any medical conditions in the past
+
+Patient: uh not other than just a hay fever but nothing nothing else i have like a lot of allergies
+
+Doctor: Any allergies to medications
+
+Patient: Oh just sometimes when i take like a nasal spray i think i might have an allergy to the steroids that they give me and sometimes also some of the antihistamines i think i get some allergies from them
+
+Doctor: OK uh and any hospitalizations
+
+Patient: No never
+
+Doctor: Any surgeries
+
+Patient: Nope
+
+Doctor: OK anybody in the family who have any illnesses
+
+Patient: Just my father he has type 2 diabetes but nothing else
+
+Doctor: OK and how do you support yourself currently financially
+
+Patient: Oh so i work just as like a mechanic just in the city and currently i just have myself to support i live alone in an apartment so im doing fairly well
+
+Doctor: OK and do you smoke
+
+Patient: I smoke around like id say 2 and a half to 3 packs per day i know its yeah i have tried quitting before but i would say ive been smoking since i was 18
+
+Doctor: OK and do you smoke marijuana
+
+Patient: No no no marijuana no other drugs
+
+Doctor: OK and do you drink alcohol
+
+Patient: Yeah its just like sometimes on the weekend ill just have a beer or two while watching the game but not nothing regular
+
+Doctor: OK thank you

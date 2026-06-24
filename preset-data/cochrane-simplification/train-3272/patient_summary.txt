@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3272  |  gem_id: gem-cochrane-simplification-train-3273  |  doi: 10.1002/14651858.CD007844.pub2
+
+This systematic review of randomized controlled trials assessed the effects of behavioral interventions on promoting condom use among women living with HIV, a population at higher risk to other sexually transmitted infections (STIs). Based on five eligible studies, we found that behavioral interventions promoting consistent condom use in HIV-positive women did not have a significant impact on outcomes, when compared to standard care or minimal HIV-related support. However, these findings should be used with caution since they are based on a few small trials that were targeted specifically towards HIV-positive women. New research is needed to assess the potential personal and public health gains that could arise from a combination of interventions that promote safe sexual behavior and adopt a harm reduction approach, particularly in developing countries, where HIV infection rates among women remain high.

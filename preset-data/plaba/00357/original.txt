@@ -1,0 +1,12 @@
+Some COVID-19 patients suffer complications from anti-viral immune responses which can lead to both a dangerous cytokine storm and development of blood-borne factors that render severe thrombotic events more likely.
+The precise immune response profile is likely, therefore, to determine and predict patient outcomes and also represents a target for intervention.
+Anti-viral T cell exhaustion in the early stages is associated with disease progression.
+Dysregulation of T cell functions, which precedes cytokine storm development and neutrophil expansion in alveolar tissues heralds damaging pathology.
+T cell function, cytokine production and factors that attract neutrophils to the lung can be modified through targeting molecules that can modulate T cell responses.
+Manipulating T cell responses by targeting the PI3K/Akt/mTOR pathway could provide the means to control the immune response in COVID-19 patients.
+During the initial anti-viral response, T cell effector function can be enhanced by delaying anti-viral exhaustion through inhibiting PI3K and Akt.
+Additionally, immune dysregulation can be addressed by enhancing immune suppressor functions by targeting downstream mTOR, an important intracellular modulator of cellular metabolism.
+Targeting this signalling pathway also has potential to prevent formation of thrombi due to its role in platelet activation.
+Furthermore, this signalling pathway is essential for SARS-cov-2 virus replication in host cells and its inhibition could, therefore, reduce viral load.
+The ultimate goal is to identify targets that can quickly control the immune response in COVID-19 patients to improve patient outcome.
+Targeting different levels of the PI3K/Akt/mTOR signalling pathway could potentially achieve this during each stage of the disease.

@@ -1,0 +1,10 @@
+source:      elife
+side:        complex
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-hard' -> 'G4 unwinding'
+  [17:19] 'medical-jargon-google-easy' -> 'duplex DNA'
+  [20:21] 'medical-jargon-google-hard' -> 'Pif1'
+  [23:24] 'abbr-medical' -> 'G4'

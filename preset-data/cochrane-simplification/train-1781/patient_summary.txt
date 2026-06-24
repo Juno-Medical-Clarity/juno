@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1781  |  gem_id: gem-cochrane-simplification-train-1782  |  doi: 10.1002/14651858.CD004768.pub3
+
+This is an update of a review published in 2009. New searches in March 2015 identified three new studies, making 18 studies with 3714 participants altogether, 1902 of whom were treated with diclofenac and 1007 with placebo. Diclofenac potassium is a rapidly absorbed formulation, and the 50 mg dose provided the largest amount on information. With this dose of this formulation, more than 6 in 10 (64%) participants had effective pain relief, compared with fewer than 2 in 10 (17%) with placebo (high quality evidence). Adverse events occurred at similar rates with diclofenac and placebo in these single dose studies (moderate quality evidence). There were few serious adverse events or withdrawals due to adverse events. Diclofenac potassium represents a useful option in controlling acute pain.

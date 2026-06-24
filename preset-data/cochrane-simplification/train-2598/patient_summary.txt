@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2598  |  gem_id: gem-cochrane-simplification-train-2599  |  doi: 10.1002/14651858.CD004727.pub2
+
+The review found only two randomised trials, with only a limited number of patients. There was no consistent benefit from HBOT, but one trial did suggest an improvement in healing time. Overall, there is little evidence to support or refute the use of HBOT for burns patients. More research is needed.

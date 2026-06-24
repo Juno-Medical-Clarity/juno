@@ -1,0 +1,8 @@
+Evidence for a relationship between omega-6/omega-3 (n-6/n-3) polyunsaturated fatty acid (PUFA) ratio and obesity in humans is inconsistent, perhaps due to differences in dietary intake or metabolism of PUFAs between different subsets of the population.
+Since chronic inflammation is central to obesity and inflammatory pathways are regulated by PUFAs, the objective of this study was to examine whether variants in the NFKB1 gene, an upstream regulator of the inflammatory response, modify the association between the n-6/n-3 ratio (from diet and plasma) and anthropometric traits in a multiethnic/multiracial population of young adults.
+Participants' (n = 898) dietary PUFA intake was assessed using a food frequency questionnaire and plasma PUFA concentrations by gas chromatography.
+Nine tag single nucleotide polymorphisms (SNP) in NFKB1 were genotyped.
+Significant interactions were found between racial/ethnic groups and plasma n-6/n-3 ratio for body mass index (BMI) (p = 0.02) and waist circumference (WC) (p = 0.007).
+Significant interactions were also observed between racial/ethnic groups and three NFKB1 genotypes (rs11722146, rs1609798, and rs230511) for BMI and WC (all p ≤ 0.04).
+Significant interactions were found between two NFKB1 genotypes and plasma n-6/n-3 ratio for BMI and WC (rs4648090 p = 0.02 and 0.03; rs4648022 p = 0.06 and 0.04, respectively).
+Our findings suggest that anthropometric traits may be influenced by a unique combination of n-6/n-3 ratio, racial/ethnic background, and NFKB1 genotypes.

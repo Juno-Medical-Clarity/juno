@@ -1,0 +1,5 @@
+pmid:        15617553
+question:    56
+adaptation:  adaptation2
+title:       Psychiatric and neuropsychological characterization of Pallister-Hall syndrome
+sentences:   11

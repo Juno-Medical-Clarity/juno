@@ -1,0 +1,7 @@
+source:      plos_biology
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [3:7] 'medical-jargon-google-easy' -> 'paralog - responsive proteins'

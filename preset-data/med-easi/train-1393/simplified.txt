@@ -1,0 +1,1 @@
+The behavior of such a system can be predicted, if the random seed and the algorithm are known.

@@ -1,0 +1,6 @@
+Doctor: Hi there! I am Doctor Sherman.
+Patient: Hello! It is nice to meet you.
+Doctor: It looks like your P C P sent you to us for a possible prostate problem.
+Patient: Yes. I am nervous.
+Doctor: Do not be nervous. We will start with discussing the symptoms you have been experiencing, a physical exam and then we will get a urine sample if you are able.
+Patient: Okay.

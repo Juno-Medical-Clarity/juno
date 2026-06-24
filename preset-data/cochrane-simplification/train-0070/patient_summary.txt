@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0070  |  gem_id: gem-cochrane-simplification-train-71  |  doi: 10.1002/14651858.CD000974.pub2
+
+Sixteen trials, involving over one million adults, children, and infants, were included. Injected cholera vaccines reduced the risk of death from cholera and the risk of contracting cholera at 12 months. Significant protection lasted for two years. Injected cholera vaccines had more systemic and local adverse effects than placebo, but these adverse effects were relatively well tolerated and were not severe or life-threatening. The authors conclude that injected cholera vaccines appear to be relatively safe and more effective than usually realized. However, they are not currently available and therefore cannot be recommended for use. This review provides a solid background of evidence for the effects of cholera injected vaccines, against which to compare the effects of oral vaccines.

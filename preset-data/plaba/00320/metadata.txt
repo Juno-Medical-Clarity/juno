@@ -1,0 +1,5 @@
+pmid:        34547765
+question:    25
+adaptation:  adaptation1
+title:       Fc-engineered antibody therapeutics with improved anti-SARS-CoV-2 efficacy
+sentences:   6

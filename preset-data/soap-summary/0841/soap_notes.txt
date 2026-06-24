@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0841
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient has concerns regarding cervical lymph nodes. 
+- No symptoms of swelling or lymphadenopathy mentioned.
+
+Objective: 
+- No swelling or palpable nodes in the neck. 
+- No enlarged lymph nodes or swellings observed.
+
+Assessment: 
+- No evidence of lymphadenopathy.
+
+Plan: 
+- No specific plan mentioned.

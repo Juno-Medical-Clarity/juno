@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 0916
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 55 years old.
+- Developed iron deficiency anemia with blood in stool.
+- Chronic diarrhea.
+- Anemia diagnosed a few months ago.
+- Unusual pruritus noted.
+- Blood in stool for about five months, with both dark and bright blood.
+- Last colonoscopy was about three years ago, with polyps removed.
+- Polyps were evaluated and found to be hyperplastic.
+- Diagnosed with lymphocytic colitis.
+- Last treatment for diarrhea was more than three years ago.
+
+Objective:
+- CBC results show hemoglobin of 9 (low) and MCV of 65 (low).
+
+Assessment:
+- Iron deficiency anemia.
+- Blood in stool (etiology unclear).
+- Chronic diarrhea likely related to previous diagnosis of lymphocytic colitis.
+
+Plan:
+- No plan provided in the conversation.

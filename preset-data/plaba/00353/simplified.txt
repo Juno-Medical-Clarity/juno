@@ -1,0 +1,15 @@
+Lung injuries caused by inflammation (redness and swelling from fighting an infection) in the body is a major cause of health problems in several countries. Additionally, inflammation is a leading cause for disease and death within intensive care units (ICU) in hospitals.
+The majority of patients of COVID-19 (a viral, breathing-related or respiratory disease) have suffered from a condition known as acute respiratory distress syndrome (ARDS) that results from inflammation. It is similar to pneumonia (lung infection).
+Infections within the body can trigger the excess release of cytokines. Cytokines are proteins that can tell your immune system what to do. Sometimes, when we are sick, cytokines stimulate too many immune cells, causing hyperactivation, which in turn causes more cytokines to release more signals. This causes a biological loop known as cytokine release syndrome (CRS) that results in ARDS.
+Currently, there are no medical treatments to prevent CRS that is causes by viruses, bacteria, or germs.
+The goal of this paper was to better understand how a chemical, known as Dehydrozingerone (DHZ), can protect lung cells from damage caused by lipopolysaccharides (LPS). LPS are molecules that exist within the cell walls of bacteria and are extremely toxic.  This study used two types of studies, in vitro (in cells) and in vivo (in animals), to fully comprehend how DHZ can prevent LPS-induced lung cell injury.
+For the in vitro study, cells were treated with DHZ before being exposed to LPS. This caused a series of inflammatory events to occur within the treated cells.
+The authors reviewed how DHZ protected against LPS damage within several different types of cells.
+They performed several lab tests looking at cells' internal health to better determine the effect DHZ had on inflammation and how it was protective.
+Additionally, the authors determined how DHZ could prevent disease and protect against LPS within rats already sick with ARDS.
+Within one type of cell, DHZ significantly decreased the negative effects caused by LPS exposure.
+Similarly, DHZ protected lung cells by reducing LPS-induced inflammation in a dose-dependent manner. Meaning as the amount of DHZ given was increased, the symptoms from LPS treatment decreased.
+In the rats treated with DHZ, the chemical significantly reduced LPS-caused ARDS.
+DHZ significantly reduced several harmful effects of LPS within the rat model, including cell injury and cell death.
+This study is the first to show that DHZ has the ability to protect against ARDS by decreasing harmful immune responses triggered by LPS.
+This data provides support to develop DHZ as a potential human pharmaceutical prescription or drug to protect against ARDS.

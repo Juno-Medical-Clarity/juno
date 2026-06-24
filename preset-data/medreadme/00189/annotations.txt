@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [0:5] 'medical-jargon-google-hard' -> 'T - DNA mutants deficient'
+  [6:10] 'medical-jargon-google-hard' -> 'LecRK - I. 9'
+  [11:14] 'medical-jargon-google-hard' -> 'transgenic Arabidopsis lines'
+  [15:16] 'medical-jargon-google-hard' -> 'ipiO1'
+  [21:22] 'medical-jargon-google-easy' -> 'phenocopies'

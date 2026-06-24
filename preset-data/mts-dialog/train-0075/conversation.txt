@@ -1,0 +1,4 @@
+Doctor: Do you have any major medical conditions that I should know about?
+Patient: What, like cancer?
+Doctor: It doesn't have to be that serious, but is there anything you take medicine for?
+Patient: Oh, I have allergies and asthma.

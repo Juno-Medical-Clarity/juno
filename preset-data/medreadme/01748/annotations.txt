@@ -1,0 +1,8 @@
+source:      plos_computational_biology
+side:        simple
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'C. crescentus'
+  [16:22] 'medical-jargon-google-hard' -> 'localization changes of PleC and DivJ'

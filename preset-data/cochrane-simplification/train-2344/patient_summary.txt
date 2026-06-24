@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2344  |  gem_id: gem-cochrane-simplification-train-2345  |  doi: 10.1002/14651858.CD008107.pub2
+
+This systematic review uses the data of individual patients from eight and published data from another six randomized controlled trials. We found that the administration of chemotherapy before surgery leads to longer survival in patients with adenocarcinoma of the esophagus, the junction between esophagus and stomach, and the stomach. The findings suggest that patients whose tumor is in the junction between esophagus and stomach and younger patients benefit most from the chemotherapy. Moreover, the addition of radiation to the chemotherapy seems to yield an additional advantage to patients, at least in tumors of the esophagus and the junction between esophagus and stomach. Chemotherapy before surgery does not increase the risk of suffering a complication during or after surgery.

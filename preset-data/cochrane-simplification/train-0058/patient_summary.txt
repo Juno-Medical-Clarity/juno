@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0058  |  gem_id: gem-cochrane-simplification-train-59  |  doi: 10.1002/14651858.CD005309.pub3
+
+The review of studies found that there was a limited amount of evidence to show that the newer extra-fine form of BDP was similar to FP at the same dose. More research should be done in children and in people with more severe asthma to help answer the question of what the relative effects of these two steroids are. Some people may not be particularly good at using certain inhaler types and the findings of the review may only really apply to people who are competent in using metered-dose inhalers (MDIs). Studies should consider introducing spacers where people find these easier to use.

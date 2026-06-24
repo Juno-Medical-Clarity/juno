@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0329
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No anxiety attacks lately.
+- No feelings of depression or mood swings.
+- No phobias reported.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No clinician interpretation or diagnoses provided)
+
+Plan:
+- (No plan mentioned)

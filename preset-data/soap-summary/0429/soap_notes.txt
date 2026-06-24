@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0429
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 13-year-old girl.
+- Complaints of rounded back posture (thoracic spine).
+- Family history of kyphosis (aunt and grandfather).
+- No back pain, numbness, or tingling reported.
+- No weakness, numbness, or tingling in legs and arms.
+- Patient states she feels very strong for her age.
+- Regular bathroom habits reported.
+
+Objective:
+- Observed rounded back posture (thoracic kyphosis).
+
+Assessment:
+- Thoracic kyphosis.
+
+Plan:
+- Further observation as recommended by the previous orthopedist.
+- Consideration for a second opinion on management or treatment options.

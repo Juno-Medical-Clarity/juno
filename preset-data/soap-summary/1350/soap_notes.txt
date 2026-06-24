@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1350
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Tiredness
+- Severity: Not explicitly mentioned
+- Duration: Ongoing, as the patient decided to take some time off due to tiredness
+- Associated symptoms: None mentioned
+- Relevant medical history: None provided
+- Family history: None provided
+- Allergies: None mentioned
+- Other concerns: The patient is currently taking time off from school and works second shift as a nursing aid, which may contribute to tiredness. The relationship with the boyfriend is positive, with no significant stress reported.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

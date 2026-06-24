@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1036
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptom: Headache
+- Severity: Not explicitly stated, but patient expresses a desire for "less pain."
+- Duration: Not mentioned
+- Associated symptoms: None mentioned
+- Relevant medical history: No changes reported in past medical history
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Patient is ready for tests to determine the cause of the headache.
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- Conduct tests to determine the cause of the headache.

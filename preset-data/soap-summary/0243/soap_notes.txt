@@ -1,0 +1,40 @@
+# SOAP Notes — Sample 0243
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Shortness of breath for the past 2 months, getting worse and more constant now
+- Rash below knees for the past month, worse now (diffuse, below knees on shins, bilateral, right side larger ~10cm diameter, red/dark pink, non-draining, tender to touch)
+- Eye irritation for the past month (eyes appear red, occasional blurred vision with distant objects)
+- Shortness of breath can occur at rest, feels like inability to take a full deep breath
+- Occasional discomfort with shortness of breath
+- Feeling feverish, though temperature not checked
+- 15 pound weight loss over the past 6 months, appetite unchanged
+
+PMHx:
+- C-section for second child, no complications
+- No other medical conditions
+- No medications
+- No allergies
+
+FHx: Autoimmune conditions in parents (rheumatoid arthritis, lupus, type 1 diabetes)
+
+SocHx:
+- Works from home as an online teacher
+- Lives in a house with husband and 2 children 
+- Occasional alcohol use (glass of wine on Fridays)
+- Non-smoker, no recreational drug use
+
+Objective:
+- Vitals not provided
+
+Assessment:
+- Suspect possible autoimmune condition such as sarcoidosis given chronic shortness of breath, erythema nodosum, eye irritation, and family history of autoimmune diseases
+- Need to rule out viral infection like coronavirus
+
+Plan:
+- COVID-19 test today
+- Chest X-ray
+- Inflammatory markers (CRP, ESR)
+- Rheumatological tests
+- Consider steroids pending workup
+- Refer to rheumatology pending results

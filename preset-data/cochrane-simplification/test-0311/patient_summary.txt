@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0311  |  gem_id: gem-cochrane-simplification-test-312  |  doi: 10.1002/14651858.CD006286.pub2
+
+This review was conducted to assess the effectiveness of intranasal corticosteroids for improving nasal airway obstruction in children aged 0 to 12 years with moderate to severe adenoidal hypertrophy. Evidence derived from five of the six randomised controlled trials included in this review suggests that intranasal steroids may significantly improve symptoms of nasal obstruction in children with adenoidal hypertrophy and that this improvement may be associated with the reduction of adenoid size. One study did not find a significant improvement in nasal obstruction symptoms. Further large and high-quality randomised controlled trials are warranted.

@@ -1,0 +1,5 @@
+pmid:        33336616
+question:    43
+adaptation:  adaptation1
+title:       Pacing devices to treat bradycardia: current status and future perspectives
+sentences:   7

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2985  |  gem_id: gem-cochrane-simplification-train-2986  |  doi: 10.1002/14651858.CD004291.pub2
+
+This review found that fluconazole, used as a preventive drug, significantly reduced the number of invasive fungal infections in liver transplant patients. More studies are needed to determine how effective antifungal drugs are for pancreas, heart, kidney and lung transplant patients.

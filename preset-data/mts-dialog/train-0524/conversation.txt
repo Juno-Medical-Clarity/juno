@@ -1,0 +1,6 @@
+Doctor: Hello. Before we begin your visit, could I ask a few questions to fill in some missing information?
+Patient: Yeah, that's fine.
+Doctor: Does your family have any health related problems?
+Patient: Yeah, we do. We have a strong history of heart disease. I think it could be because we drink a lot.
+Doctor: So, would you say alcoholism runs in your family?
+Patient: Oh, yeah. We drink a lot every day. Beer, liquor, you name it.

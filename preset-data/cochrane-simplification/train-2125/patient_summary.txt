@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2125  |  gem_id: gem-cochrane-simplification-train-2126  |  doi: 10.1002/14651858.CD007244.pub2
+
+The herb black cohosh was traditionally used by Native Americans to treat menstrual irregularity, with many experimental studies indicating a possible use for black cohosh in menopause. This review set out to evaluate the effectiveness of black cohosh for controlling the symptoms of menopause. The review of 16 studies (involving 2027 women) found insufficient evidence to support the use of black cohosh for menopausal symptoms. Given the uncertain quality of most studies included in the review, further research investigating the effectiveness of black cohosh for menopausal symptoms is warranted. Such trials need to give greater consideration to the use of other important outcomes (such as quality of life, bone health, night sweats and cost-effectiveness), stringent study design and the quality reporting of study methods.

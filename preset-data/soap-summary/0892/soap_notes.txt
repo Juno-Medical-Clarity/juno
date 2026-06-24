@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0892
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Twitching in muscles
+- Severity: Not specified, but the patient expressed fear regarding the episodes
+- Duration: Episodes mostly in the mornings
+- Associated symptoms: None explicitly mentioned
+- Relevant medical history: Currently taking Lamictal, no side effects reported; has been taking medications regularly and getting good sleep
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Emotions/Concerns: Patient is afraid of the twitching episodes
+
+Objective:
+- EEG report shows multiple spikes and some complexes on both sides, more prominent on the left.
+
+Assessment:
+- No specific assessment or diagnoses provided in the conversation.
+
+Plan:
+- No explicit plan mentioned in the conversation.

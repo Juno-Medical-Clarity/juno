@@ -1,0 +1,214 @@
+# Smith Collection Transcript: RES0007
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I was wondering if you could tell me a little bit about what brought you in
+
+Patient: Yeah so like a couple months ago i was in the office and they told me that i have asthma like i had it when i was a little kid and i thought i grew out of it but apparently not or like it came back or something so yeah so they just told me to come back today i dont really have like any issues
+
+Doctor: OK so what what brought on the appointment in the summer time or a couple of months ago
+
+Patient: uh so like i have gym class at school and my teacher justalways thought that like should be able to run faster like im looking good athlete but i just couldnt go much faster and i was like saying i cant really breathe when im running that fast and then you know my mom was like you should probably go we should probably make an appointment
+
+Doctor: OK and uh when youre exercising or in gym class do you get short of breath or do you find that you have difficulty breathing
+
+Patient: Yeah yeah like i will if i if i try to run fast like i kinda cant breathe anymore so i kind of stop or go slower
+
+Doctor: OK and how long does it take for the breathing difficulty to go away
+
+Patient: If i stop doing like the thing im doing it i i dont know not very long like couple of minutes
+
+Doctor: OK and uh does this happen in any other settings
+
+Patient: Oh like sometimes when its really cold outside ill go out and like it my chest feels tight and just feel like i cant breathe and kind of sucks like my girlfriend wanted to build a snowman and do snow angels and stuff and i couldnt do it oh another time like i went to my friends house and they had like a bunch of cats i i felt like i got wheezy sound and i felt like that time it took longer for for the breathing to get easier like i had to leave
+
+Doctor: OK so youve noticed changes to to your breathing sounds like youve had noisy breathing before
+
+Patient: Yeah mostly just with the cat
+
+Doctor: OK
+
+Patient: We dont have a cat at my house so i didnt really think anything of it and then i went to my friends house who had a bunch of cats and then at that time i could actually hear it
+
+Doctor: OK and have you had a cough
+
+Patient: uh no i dont think so
+
+Doctor: OK and were there anything was there anything that you tried besides the rest to make those symptoms go away
+
+Patient: Like i have the uh um inhaler that the doctor gave me last time so yeah like ive been using it in gym class now
+
+Doctor: OK how many days per week are you using that
+
+Patient: Well im a little confused now because i the 1 supposed to use like every day a couple times and then there was a different one that i thought it was only supposed to be used if the other one didnt work but now the nurse just told me that im supposed to use them both so i only got the one at the pharmacy so i dont really i dont really know i feel like a bit confused now but i always use the 1 supposed to be like 2 times a day the one that starts with an s um but sometimes i just do it once a day if i forget the second one
+
+Doctor: OK well um we can definitely clarify the confusion about the medications today sometimes for steroid medications those ones are required to be used daily in order to get the maximal benefit and so will take a look at your medications and see if one of those has a steroid component in it and say and how often youre needing it have you been having any episodes of shortness of breath at night time
+
+Patient: Oh no no mostly like gym class like i said
+
+Doctor: OK and have you had any other associated symptoms
+
+Patient: uh i dont think so like what do you mean
+
+Doctor: um so anything like like allergies like runny nose or really itchy eyes with maybe some like um tearing
+
+Patient: When i was around the cats yeah but not the other times
+
+Doctor: OK and do you ever have any rashes on your skin or or really itchy skin
+
+Patient: When i was a kid but not really now
+
+Doctor: OK and how about any nausea or vomiting
+
+Patient: No
+
+Doctor: OK any infectious symptoms overall
+
+Patient: Ahh i dont i dont think so
+
+Doctor: OK any urinary problems
+
+Patient: uh like no no
+
+Doctor: OK bowel problems
+
+Patient: uh no no no thats all good
+
+Doctor: OK um and uh any fevers or chills
+
+Patient: No
+
+Doctor: OK and then how about uh have you been having any night sweats
+
+Patient: Whats that
+
+Doctor: So uh overnight when youre sleeping you wake up with either your like pajamas drenched or your your sheets drenched drenched from sweating
+
+Patient: Oh no
+
+Doctor: OK
+
+Patient: um not that
+
+Doctor: OK so i just wanted to ask a few questions about your past health have you been so you mentioned asthma have you been diagnosed with any other medical conditions
+
+Patient: No no thats it
+
+Doctor: OK um and any recent hospitalizations
+
+Patient: Like i broke my leg years ago but like that was just like really fast
+
+Doctor: OK and any surgeries
+
+Patient: uh just like my wisdom teeth
+
+Doctor: OK and any medications besides it like that including the inhalers
+
+Patient: Nothing else just just those things and my mom makes me take a vitamin
+
+Doctor: OK and any allergies
+
+Patient: What i dont know like not that i thought but maybe like cats
+
+Doctor: OK and do you have any like seasonal allergies do you find like in the spring or fall time or even summer that you get um like dry eyes or really itchy
+
+Patient: Eyes or runny nose
+
+Doctor: Yeah i just thought like i had a cold but i guess like i usually feel like that in the springtime
+
+Patient: OK and uh are immunizations up to date
+
+Doctor: I think so like ive had all the stuff that im supposed to i think i dont know the names of everything
+
+Patient: OK and so i actually wanted to ask a few questions about personal and kind of lifestyle habits but first i was wondering if you could tell me a little bit about your living situation
+
+Doctor: You know like i live with my mom and dad and i like my little brother
+
+Patient: OK
+
+Doctor: Yeah
+
+Patient: OK and um where do you go to school
+
+Doctor: um to to the the school um like high school down the road
+
+Patient: OK and in what grade now
+
+Doctor: And im in grade 11
+
+Patient: OK and what types of like hobbies or kind of activities are you interested in
+
+Doctor: I like i like playing video games i was really wanting to join the marines and i was really trying to get into that stuff but then i heard like you cant when you have asthma oh so i i kinda wanna know bout that like is that gonna stop me from doing that
+
+Patient: Yeah so its something that we will look into today im im not too sure what the details are regarding that information but thank you for bringing that up and well be for sure to look into that together and that reminded me of a question i wanted to ask earlier and so have you had pulmonary function tests done before
+
+Doctor: uh what is that
+
+Patient: So essentially theyll have you kind of breathing into a tube where youll have periods where youll maximally inhale and then maximally exhale as quickly as you can and youll do different types of breathing movements so that it gets measured on a on a device
+
+Doctor: Is that like when you breathe in that the tube
+
+Patient: Yeah exactly
+
+Doctor: Yeah like the last time i was here like couple months ago i did that and it said that she said that my asthma was back
+
+Patient: OK right thank you for clarifying and so so for the last few questions about and your personal habits i was wondering i understand that people in your age group might experience with smoking or or alcohol do any of your friends do that
+
+Doctor: I mean sometimes well drink beer like at parties on the weekend i dont i dont drink a lot
+
+Patient: OK and can you tell me a little bit about your diet
+
+Doctor: Sorry i missed that
+
+Patient: Just wondering if you could tell me a little bit about your diet
+
+Doctor: Oh well my mom always like makes me a lunch like ill have like a sandwich for lunch with like you know ham and cheese or something ill usually have like cereal for breakfast and my mom makes dinner its usually like meat like potatoes and vegetables or something i think its like pretty normal
+
+Patient: OK and are you currently sexually active
+
+Doctor: uh like i have a girlfriend just with her uh like just recently yeah we started
+
+Patient: OK and do you use a condom
+
+Doctor: Yeah yeah
+
+Patient: Every time or sometimes
+
+Doctor: Oh yeah every time its not doing that many times but yeah
+
+Patient: OK great and um have you had any other partners
+
+Doctor: No no like i had made out with other people before but this is like the first one
+
+Patient: OK but have you had a sexually transmitted infection before
+
+Doctor: uh no
+
+Patient: OK and i know this question might seem a little bit invasive but its important to ask everybody have you had any thoughts of hurting or harming yourself
+
+Doctor: No
+
+Patient: OK
+
+Doctor: No i havent
+
+Patient: OK great um and in your family has anybody ever had any of these similar symptoms before
+
+Doctor: Like may my dad i think he maybe had asthma when he was younger but like he doesnt really have it now
+
+Patient: OK and any allergies that run in the family
+
+Doctor: Mmmm like my dad also really dad gets like a runny nose in the spring so yeah i think thats allergies
+
+Patient: OK um so overall its its sounding like you been having this shortness of breath or difficulty breathing episodes that youre saying that its made worse when youre exercising out in the cold and then around pets and sometimes when the season changes as well and in the spring and so and then the recent diagnosis on pulmonary function tests a few months ago so i think it would be important to clear up the medications today and try to get that better organized moving forward because it sounds like youre still pretty symptomatic with needing to use them daily currently and so will look into that and then also the question about the marines uh interest with asthma
+
+Doctor: Yeah thank you i really wanna know that like that was my plan and now im like kinda worried i can do that
+
+Patient: Excellent
+
+Doctor: K thank you

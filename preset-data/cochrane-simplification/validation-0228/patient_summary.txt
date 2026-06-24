@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0228  |  gem_id: gem-cochrane-simplification-validation-229  |  doi: 10.1002/14651858.CD003653.pub3
+
+This review looked for all studies where patients were randomized to one or more treatments to measure the effects of such therapies. The questions of the review were to see whether drug treatments affected death or cardiovascular morbidity or whether there were differences between drug treatments. The available evidence was insufficient to answer these questions.

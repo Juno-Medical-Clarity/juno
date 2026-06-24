@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 3.7
+split:       dev
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-easy' -> 'antibiotics'
+  [13:16] 'medical-jargon-google-easy' -> 'antimicrobial drug resistance'

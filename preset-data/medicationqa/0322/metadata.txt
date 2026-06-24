@@ -1,0 +1,5 @@
+drug_focus: dexamethasone
+question_type: Dose
+section_title: DESCRIPTION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=537b424a-3e07-4c81-978c-1ad99014032a
+sample_id: 0322

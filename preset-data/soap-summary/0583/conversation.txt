@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0583
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Okay, I want you to follow up with our hand therapist Doctor X at her A B C D office in one to two weeks. Okay, I will make an appointment today.

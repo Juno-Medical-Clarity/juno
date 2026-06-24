@@ -1,0 +1,22 @@
+Doctor: Good afternoon, young man, are these your parents?
+Patient: Yes, doctor.
+Doctor: Can you tell me more about your son, please?
+Guest_family: Well, he is seven years old, and he has had diarrhea for four days, and he's been throwing up for three days.
+Patient: Yeah, my brother has been doing this too.
+Guest_family: We had some chicken one day, and then we had more of it the next day. After they ate it they started to feel bad and still feel bad.
+Doctor: How many times has he had diarrhea per day since this began?
+Guest_family: Well, it's been about five or six times a day for the last four days.
+Doctor: How many times has he thrown up per day?
+Guest_family: Um, it has been frequent.
+Doctor: Has he been throwing up today?
+Patient: No, I haven't today.
+Doctor: Has he gone to the bathroom today?
+Patient: Yes, I peed this morning.
+Doctor: Has he had any fever symptoms?
+Guest_family: Yes, he had a fever of one hundred three last night.
+Doctor: Has he eaten any solid food?
+Patient: Yeah, I had half a hamburger and some milk last night.
+Doctor: Was he able to keep the food down?
+Guest_family: No, he threw it up.
+Doctor: What has he drank?
+Guest_family: Um, Pedialyte, Gatorade, white grape juice, and seven up, the soda.

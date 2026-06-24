@@ -1,0 +1,5 @@
+drug_focus: ibuprofen
+question_type: Ingredient
+section_title: NA
+source_url: https://www.sharecare.com/health/nonsteroidal-anti-inflammatory-drugs/does-ibuprofen-contain-aspirin
+sample_id: 0092

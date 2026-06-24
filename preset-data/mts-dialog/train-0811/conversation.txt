@@ -1,0 +1,11 @@
+Doctor: Any past surgeries that I should know of?
+Patient: I had a hip replacement years ago.
+Doctor: Both hips?
+Patient: My left.
+Doctor: Total?
+Patient: Yeah.
+Doctor: Got it.
+Patient: I also had my uterus and appendix removed. I was young when I had my appendix taken out.
+Doctor: Do you happen to remember who did your most recent surgeries?
+Patient: Wish I did. I'd have to look back at my records and get back to you. I have everything at home.
+Doctor: That's no problem. I should be able to look it up from my end, too.

@@ -1,0 +1,18 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [4:9] 'medical-name-entity' -> 'T - SPOT . TB'
+  [10:15] 'medical-name-entity' -> 'QuantiFERON GOLD In - Tube'
+  [16:19] 'abbr-medical' -> 'QFT - GIT'
+  [23:28] 'medical-jargon-google-hard' -> 'enzyme - linked immunospot assays'
+  [30:33] 'medical-jargon-google-hard' -> 'Mycobacterium tuberculosis antigens'
+  [34:35] 'medical-jargon-google-hard' -> 'Rv3615c'
+  [36:37] 'medical-jargon-google-hard' -> 'Rv2654'
+  [38:39] 'medical-jargon-google-hard' -> 'Rv3879c'
+  [40:41] 'medical-jargon-google-hard' -> 'Rv3873'
+  [46:49] 'medical-jargon-google-easy' -> 'composite reference standard'
+  [56:57] 'general-complex' -> 'blinded'
+  [58:59] 'abbr-medical' -> 'IGRA'

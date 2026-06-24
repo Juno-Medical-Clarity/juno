@@ -1,0 +1,8 @@
+Doctor: Are you married?
+Patient: I'm divorced.
+Doctor: Do you have any kids?
+Patient: Yes, I have two boys and they live with me.
+Doctor: Any abnormal pregnancy. Any abortions?
+Patient: No, none of them.
+Doctor: Do you smoke or consume alcohol or have ever used any illicit drug?
+Patient: No.

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0424
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: None explicitly mentioned.
+- Severity: Not specified.
+- Duration: Not specified.
+- Associated symptoms: None mentioned.
+- Relevant medical history: Smokes two packs of cigarettes per day, drinks two beers every day.
+- Family history: Not mentioned.
+- Allergies: None mentioned.
+- Other concerns: Patient has been married for almost twenty-two years and works as a delivery truck driver. 
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

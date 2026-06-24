@@ -1,0 +1,5 @@
+drug_focus: Medroxyprogesterone
+question_type: Time/side effects
+section_title: n/a
+source_url: n/a
+sample_id: 0117

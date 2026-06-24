@@ -1,0 +1,5 @@
+pmid:        31322815
+question:    75
+adaptation:  adaptation3
+title:       Combined and differential effects of alpha-thalassemia and HbF-quantitative trait loci in Senegalese hydroxyurea-free children with sickle cell anemia
+sentences:   10

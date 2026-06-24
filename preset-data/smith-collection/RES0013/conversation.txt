@@ -1,0 +1,174 @@
+# Smith Collection Transcript: RES0013
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Hi im rob and i just feel like i cant catch my breath
+
+Patient: OK how old are you rob
+
+Doctor: Im im 50 im gonna be 50 soon
+
+Patient: OK ok when did this start
+
+Doctor: Well like last night i kinda had like an ache on my chest kind of like here like on the left i just i didnt do anything really last night and you know i just went to sleep and i got to sleep fine like i just thought maybe i pulled a muscle on this side but then i woke up and i was like walking up the stairs and i like was kinda having a hard time breathing and i took some tylenol it didnt really do anything um and then it just got worse and then a few hours ago is like i could barely walk and if im breathing deep its like it just hurts and i feel like i cant like catch my breath like i cant get a good like a good breath in
+
+Patient: um ok so i just want to state at this point i would do abcs like i would do the vitals and make sure youre stable and then do airway breathing circulation if you werent before i continue with the history ok so ok so thats how it started um are you having any chest pain at all associated with that
+
+Doctor: Like when i breathe in i get like and its like an ache and then if i breathe really deep it feels like a little sharp
+
+Patient: OK
+
+Doctor: I have never had anything like this before
+
+Patient: No ok that was going to be my next question on a scale of 1 to 10 how severe is your shortness of breath 10 being the worst
+
+Doctor: um i dont i dont know um like i can breathe right now i cant get like a deep breath like
+
+Patient: Does it oh sorry go ahead
+
+Doctor: Maybe like you know five or six
+
+Patient: OK ok does it hurt when you take a deep breath in
+
+Doctor: Yeah
+
+Patient: Yeah
+
+Doctor: Yeah its like its like sharp
+
+Patient: OK sorry sounds like youre having some pleuritic chest pain do you have any coughing associated with that
+
+Doctor: No no
+
+Patient: No youre not coughing up any blood
+
+Doctor: No
+
+Patient: Any swelling in your legs
+
+Doctor: I i dont think so
+
+Patient: No ok how about on exertion like when you walk or run or you know does it hurt more or does i mean sorry does your shortness of breath get worse
+
+Doctor: Oh yeah it was like going up the stairs cant really breathe in after
+
+Patient: OK how about when youre laying down
+
+Doctor: I dont know i dont think thats any different no i slept fine last night i got up and when i went up the stairs i was like holy
+
+Patient: OK how about wheezing are you experiencing any wheezing
+
+Doctor: I dont think so
+
+Patient: OK how about fevers or chills
+
+Doctor: No not that ive noticed no
+
+Patient: OK any abdominal pain
+
+Doctor: uh no no its like it aches kind of it but its all up here and like kind of in my back a little bit
+
+Patient: OK and do you think anything triggered this
+
+Doctor: I dont know
+
+Patient: No ok and you said this has never happened to you before right
+
+Doctor: Right yeah
+
+Patient: Does it get better with you sitting forward
+
+Doctor: I dont know like i i feel like that its still kind of aching like it doesnt its not really like changing very much
+
+Patient: OK ok ok any changes in your vision hearing or smell
+
+Doctor: No
+
+Patient: No any rashes
+
+Doctor: No
+
+Patient: No weight loss
+
+Doctor: I i mean ive been trying to to lose weight
+
+Patient: OK
+
+Doctor: They told me a year ago i have like high blood pressure so ive been cutting out like salt and trying to walk more
+
+Patient: OK ok good
+
+Doctor: So ive lost like 15 pounds but like not like ive been trying to
+
+Patient: OK ok 15 pounds thats good are you experiencing any dizziness or you feeling faint
+
+Doctor: No just like a i cant get like a good breath
+
+Patient: OK and are you otherwise healthy you mentioned you have high blood pressure anything else
+
+Doctor: No thats thats like it ive never had any like chest problems
+
+Patient: OK have you had any investigations done for your chest like pulmonary function tests ecgs chest xrays
+
+Doctor: No no they just they just put the thing on my arm but my doctors office and said that it was high so they said to you know eat better and i dont i dont wanna start any drugs so i didnt do anything ive been fine ever since
+
+Patient: OK so youre not on any medications
+
+Doctor: No just yeah no thats it i mean i you know sometimes take like a tylenol if im
+
+Patient: Not feeling well but
+
+Doctor: And do you smoke
+
+Patient: I like i smoke a little bit maybe like a pack a week
+
+Doctor: A pack a week ok for how long
+
+Patient: Oh like since college
+
+Doctor: OK ok um do you smoke marijuana
+
+Patient: uh no no and i i smoke im trying to smoke less you know since they told me i have the high blood pressure so i used to smoke a little more but this is this is less but not since ive been having trouble breathing is it yeah
+
+Doctor: Yeah ok any other recreational drugs
+
+Patient: No no
+
+Doctor: No ok how about alcohol do you drink alcohol
+
+Patient: Oh like maybe you know a beer on the weekend
+
+Doctor: OK and are you up to date with all your immunizations
+
+Patient: Like i dont i think i got all the ones when i was like a kid what else should i have
+
+Doctor: OK so like the flu vaccine every year
+
+Patient: Oh i get that like my wife my wife makes me get that
+
+Doctor: OK thats good any family history of lung or heart disease
+
+Patient: Oh like my uh my mom and dad have high blood pressure too so i wasnt surprised when i heard that i did
+
+Doctor: OK ok um ok so rob is there anything that you wanted to tell me that i havent asked you already today
+
+Patient: I am really like nervous cause i havent felt anything like this before um like its scary like do you think its like cancer or something like i dont i dont really know
+
+Doctor: um i mean its hard to tell right now what it is it sounds like its it started pretty suddenly um like it started a day ago correct
+
+Patient: Mhm
+
+Doctor: Yeah so its unlikely that cancer would present itself like this so acutely you know and but it could it could be a number of things like it could be something like a pulmonary embolism but you said you dont have any swelling um but you did say you have some chest pain when youre breathing pretty when you take a deep breath in so i mean thats a possibility it doesnt sound like its an infection because you dont have a fever or chills or any any other symptom really and you mentioned there werent any triggers like no trauma to the area and then other things could be like copbecause you which is a chronic obstructive pulmonary disease because you have been smoking since college and thats basically just inflammation in your lungs that causes your airways to narrow and so you may have a hard time breathing so for all of these things we first start by doing some blood work and then well do some imaging like a chest xray and a pulmonary function test if indicated and so that will give us a better idea of what you have and how we can best help you sounds good
+
+Patient: Yeah yeah i just really want to get a good breath so yeah whatever we can do
+
+Doctor: Yeah for sure and then in the meantime well keep monitoring you to make sure your vitals are ok and if we need to give you oxygen we will
+
+Patient: Thatd be great
+
+Doctor: OK thank you

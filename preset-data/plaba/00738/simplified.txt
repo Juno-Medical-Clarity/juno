@@ -1,0 +1,15 @@
+We studied the effectiveness of mRNA vaccines against SARS-CoV-2 infection and severe COVID-19 at different times after vaccination.
+This study was performed in Italy from December 27, 2020 to November 7, 2021.
+
+The participants included people aged 16 years and older who received a first dose of BNT162b2 (Pfizer-BioNTech) or mRNA-1273 (Moderna) vaccine and did not have a previous diagnosis of SARS-CoV-2 infection.
+We tracked the number of people with SARS-CoV-2 infection and severe COVID-19 (admission to hospital or death).
+The data was calculated for each week following vaccination.
+The incidence rate of infection at different time intervals was estimated using statistical models.
+We recorded the sex, age group, brand of vaccine, and priority risk category of patients, and recorded the regional weekly incidence in the general population.
+We tracked the number of cases according to geographic region.
+Using infection rates at 0-14 days after the first dose of vaccine as our starting point, we followed the trend of vaccine effectiveness
+During the epidemic phase when the delta variant was the most common strain of the SARS-CoV-2 virus, vaccine effectiveness against SARS-CoV-2 infection significantly decreased from 82% at 3-4 weeks after the second dose of vaccine to 33% at 27-30 weeks after the second dose.
+In the same time range, vaccine effectiveness against severe COVID-19 also decreased, although to a lesser extent, from an average of 96% to an average of 80%.
+High risk people, those aged more than 80 years old, and those aged 60-79 years did not seem to be protected against infection at 27-30 weeks after the second dose of vaccine.
+Our results support vaccinating high risk people, those older than 60 years, and healthcare workers with a booster dose of vaccine six months after the primary vaccination cycle.
+Our results also suggest that giving the booster dose earlier than six months after the primary vaccination cycle and extending the offer of the booster dose to other groups of people might be a good idea.

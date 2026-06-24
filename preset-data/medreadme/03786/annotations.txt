@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [2:3] 'abbr-general' -> 'RCTs'
+  [8:12] 'medical-jargon-google-easy' -> 'oro - antral communications'
+  [13:17] 'medical-jargon-google-hard' -> 'oro - antral fistulae'

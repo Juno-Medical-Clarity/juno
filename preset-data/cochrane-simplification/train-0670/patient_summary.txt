@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0670  |  gem_id: gem-cochrane-simplification-train-671  |  doi: 10.1002/14651858.CD008391.pub2
+
+We found 19 relevant studies involving 907 people. We were able to combine the results of 13 of these studies including 660 participants (395 traumatic brain injury, 234 stroke, 31 other acquired brain injury). Only two of the studies (82 people) reported the outcome in which we were most interested (a general measure of executive function). We found no evidence that cognitive rehabilitation interventions were helpful for people with executive dysfunction for any other outcomes. We recommend that more research is carried out to determine whether cognitive rehabilitation can improve executive function after stroke and brain injury.

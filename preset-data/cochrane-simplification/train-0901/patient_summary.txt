@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0901  |  gem_id: gem-cochrane-simplification-train-902  |  doi: 10.1002/14651858.CD008059.pub3
+
+This review did not find any high quality research evidence showing that HBOT is beneficial for wound healing. Two poor quality studies suggested benefits associated with HBOT. The first, in patients with crush injuries, showed improved wound healing and fewer adverse outcomes. The second reported improved survival of split skin grafts in people with burn wounds. Two trials reported no benefits associated with HBOT for either skin grafting or free flap surgery. Further, better quality research is needed to determine the effects of HBOT on wound healing.

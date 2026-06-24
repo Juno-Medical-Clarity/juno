@@ -1,0 +1,5 @@
+drug_focus: norvasc
+question_type: Ingredient
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=abd6a2ca-40c2-485c-bc53-db1c652505ed
+sample_id: 0270

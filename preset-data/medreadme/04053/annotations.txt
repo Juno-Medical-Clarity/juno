@@ -1,0 +1,8 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 3.7
+split:       test
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Dengue'
+  [29:30] 'medical-jargon-google-easy' -> 'vector'

@@ -1,0 +1,38 @@
+# SOAP Notes — Sample 0022
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presents with chronic left-sided nasal congestion for several years (since childhood)
+- Congestion is constant and present all the time, somewhat used to it now
+- Occasional nosebleeds, about once a month or every 2 months (during exercise, gym class, playing with friends)
+- Denies facial pressure/pain, post-nasal drip, throat clearing, fever, chills, cough, sore throat, loss of taste/smell, shortness of breath
+- Steaming provides temporary relief for about an hour
+- Allergic to cats but no recent exposure; no other known environmental allergies
+- Reports snoring at night and sleeping with mouth open for months to years; no witnessed apneas
+- Nasal congestion affecting sleep; no effect on appetite
+
+PMHx:
+- No prior medical conditions
+- No prior surgeries or hospitalizations
+- No medication allergies
+
+FHx:
+- Father had heart attack at age 50
+- Mother has hypertension
+
+SocHx:
+- Student, lives with parents
+- Denies smoking, alcohol, recreational drug use
+- Feels safe at home and outside home
+
+Objective:
+- Vitals signs
+- Physical examination findings
+
+Assessment:
+- Chronic left-sided nasal congestion
+- Differential diagnosis: chronic sinusitis, allergic rhinitis, obstructive sleep apnea
+
+Plan:
+- Complete physical examination
+- Consider imaging and referral to ENT specialist if obstructive sleep apnea suspected

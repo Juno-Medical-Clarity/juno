@@ -1,0 +1,12 @@
+Human chorionic gonadotropin (hCG) is a pregnancy hormone. The hormone is secreted by the outermost layer of the placenta. The hormone has been linked to fetal growth and various placental, uterine, and fetal functions.
+To investigate the effects of hCG on clinical endpoints, having knowledge on reference range (RR) methodology and determinants of gestational hCG levels is crucial.
+Also, a better understanding of gestational hCG function can improve current screening programs and future clinical management.
+Serum (blood) hCG levels were determined in 8195 women.
+Gestational age specific RRs using 'ultrasound derived gestational age' (US RRs) were calculated. This data was compared with 'last menstrual period derived gestational age' (LMP RRs) and a model-based RR.
+The study also investigated which pregnancy characteristics were associated with hCG levels.
+Compared to the US RRs, the LMP RRs were lower.
+No considerable differences were found between RRs calculated in the general population or in uncomplicated pregnancies only.
+Maternal smoking, BMI, monetary income, ethnicity, fetal gender, placental weight, and vomiting associated with pregnancy were correlated with total hCG.
+This study provides gestational RRs for total hCG. Additionally, this study shows total hCG values and RR cut-offs during pregnancy vary depending on pregnancy dating methodology.
+This is likely due to the influence of hCG on embryonic growth. This suggests that ultrasound based pregnancy dating might be less reliable in women with high/low hCG levels.
+Furthermore, this study identifies different pregnancy characteristics that influence total hCG levels. These pregnancy characteristics should therefore be accounted for in clinical studies.

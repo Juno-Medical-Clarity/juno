@@ -1,0 +1,7 @@
+source:      elife
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [19:20] 'medical-jargon-google-easy' -> 'astrocytes'

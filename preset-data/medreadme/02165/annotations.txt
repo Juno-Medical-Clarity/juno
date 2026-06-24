@@ -1,0 +1,8 @@
+source:      pnas
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [10:12] 'medical-jargon-google-easy' -> 'allometric scaling'
+  [21:23] 'medical-jargon-google-easy' -> 'allometric scaling'

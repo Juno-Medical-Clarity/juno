@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'DNA virus'
+  [11:13] 'medical-jargon-google-easy' -> 'Kallithea virus'
+  [20:22] 'medical-jargon-google-easy' -> 'Drosophila melanogaster'

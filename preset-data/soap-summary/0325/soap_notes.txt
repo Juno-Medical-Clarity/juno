@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0325
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports feeling good.
+- Patient states that Wellbutrin is working well for them.
+- Patient denies consuming alcohol or recreational drugs.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment information provided]
+
+Plan:
+- Emphasis on the importance of not consuming alcohol or recreational drugs while taking Wellbutrin.

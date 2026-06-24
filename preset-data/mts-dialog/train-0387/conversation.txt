@@ -1,0 +1,8 @@
+Doctor: Hello. How are you feeling today?
+Patient: Not so well. I went to a party last night and my chest and body have been hurting a lot.
+Doctor: I see. Did you smoke at the party?
+Patient: Nope. I never smoked in my life.
+Doctor: Great. Where on your body does it hurt?
+Patient: Like my upper right side of my stomach area.
+Doctor: I see. Did you drink alcohol last night?
+Patient: I had to drive some people home, so I was sober. I also don't like the taste of alcohol, so I stay away from it.

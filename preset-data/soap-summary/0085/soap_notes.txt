@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0085
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Loss of taste for the last 2 days, noticed with pizza and other foods (tastes plain, like cardboard)
+- Decreased sense of smell
+- Dry cough for 3-4 days, no sputum or blood
+- SOB after coughing, difficulty catching breath
+- Increased fatigue and sleeping more in the past few days
+- Diarrhea this morning (1-2 episodes), no blood or melena
+- Itchy/scratchy throat, no soreness
+- Felt dizzy when getting out of bed this morning, resolved after sitting for a few minutes
+- Feeling hot, but no sweating
+- Classmate had similar symptoms (cough, fever, sore throat) last week
+
+PMHx:
+- Appendectomy 4 years ago
+- No chronic medical conditions
+- Up to date with immunizations
+- No medications
+- Vapes flavored e-cigarettes a few times a day (unsure if contains nicotine/tobacco)
+- No alcohol use
+- Paternal grandfather had lung cancer (smoker), father has diabetes
+
+Objective:
+- Vitals signs not provided
+
+Assessment:
+- Suspect viral illness, possibly COVID-19 given symptoms and exposure
+
+Plan:
+- COVID-19 swab
+- Isolate for 14 days regardless of swab result
+- If swab positive, public health will be notified for contact tracing
+- If not viral, will work up for bacterial infection and treat with antibiotics if indicated

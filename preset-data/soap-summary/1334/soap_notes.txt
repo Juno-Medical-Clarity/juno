@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1334
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has no family history of medical conditions, such as diabetes or heart disease.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

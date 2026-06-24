@@ -1,0 +1,11 @@
+Doctor: Good afternoon, before we begin, what are your pronouns?
+Patient: I identify as a female, and I use she her pronouns.
+Doctor: Thank you, so, have you ever had surgery?
+Patient: Yes, I actually have a list of them written down.
+Doctor: That's really helpful, may I see it?
+Patient: Absolutely, here you go.
+Doctor: Thank you. So I see you've had a multiple bowel surgeries, including, um, a hysterectomy, rectocele repair, and an appendectomy. Do all of those sound familiar.
+Patient: Yep, I got this list from all of the surgeons.
+Doctor: Are there any other major conditions I should be aware of?
+Patient: Yes, actually, I have another list, um, I have polymyalgia rheumatica.
+Doctor: That's all great information to know, thank you very much.

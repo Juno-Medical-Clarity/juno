@@ -1,0 +1,21 @@
+Doctor: How old are you? What brings you here today?
+Patient: I am fifty six years old. I am here for this pain in my legs. It hurts mostly in the night.
+Doctor: Does changing positions helps you?
+Patient: Yeah, it helps. Whenever I stand it just goes away.
+Doctor: Is it only in your legs or it starts there and goes somewhere else as well?
+Patient: It normally starts in my hips and then it goes down my leg and sometimes into my ankles as well.
+Doctor: When did you first notice it?
+Patient: It all started after taking that medication. What is it called? Something with L? Yeah, Lipitor.
+Doctor: Have you ever noticed any night sweats?
+Patient: Sometimes I do sweat at night.
+Doctor: Any other issue? Anything else going on? Your body temperature is a little on the higher end.
+Patient: Yeah, I do feel feverish and have nausea as well.
+Doctor: How are your sugar numbers?
+Patient: They have been low for quite some time. You know, I have started going to Genesis in Wichita and I've been doing water aerobics. And you know what? Surprisingly, I have lost thirty pounds.
+Doctor: That's good. How much is your fasting sugar?
+Patient: Anywhere between a hundred to one hundred and twenty. I check them one and a half hours after meals as well. They are, they have been one hundred and eighty five regularly.
+Doctor: Okay.
+Patient: Yeah. I have a request to make. I will be coming for my diabetic checkup in one month. Can we do all the labs before that?
+Doctor: Yeah, sure, that's a great idea. I should tell my assistant and they will call you for labs before your appointment for diabetes checkup.
+Doctor: Anything else going on? How is everything else?
+Patient: I tried to control my cholesterol with diet, but it didn't help. I cannot keep on dieting. It is just not my thing. I have started eating more meat though. I feel full after that.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0989
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you studying? Yes. I'm doing my major in computer science. Do you live alone? No, I live in my family. Mainly my parents and my sisters.

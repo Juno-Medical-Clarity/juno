@@ -1,0 +1,5 @@
+drug_focus: memantine
+question_type: Appearance
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=292671f2-f221-4a3d-a110-a266a9527e04
+sample_id: 0281

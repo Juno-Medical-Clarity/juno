@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0291
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Is he currently taking any medication? Guest_family: No.

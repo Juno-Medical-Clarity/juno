@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3166  |  gem_id: gem-cochrane-simplification-train-3167  |  doi: 10.1002/14651858.CD010609
+
+For the present review, researchers in The Cochrane Collaboration reviewed the evidence about the effects of gabapentin and two related drugs (pregabalin and gabapentin enacarbil) in adult patients (≥ 16 years of age) with 'episodic' migraine (headache on < 15 days per month). They examined research published up to 15 January 2013, along with three unpublished and previously confidential drug company research reports, and found six relevant studies, five of gabapentin and one of gabapentin enacarbil, both over a wide dose range. The studies showed that neither gabapentin nor gabapentin enacarbil was more effective than placebo at reducing the frequency of migraine headaches. Gabapentin commonly caused side effects, especially dizziness and somnolence (sleepiness). No studies of pregabalin were identified, and research on this drug is desirable.

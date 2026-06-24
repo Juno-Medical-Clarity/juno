@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1152
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you okay? Yeah, yeah, I am fine. I am asking this as you look a little pale. No I am okay. I have always been healthy my whole life. Just a little fatigued now. Okay that won't be something we can't fix. Yeah, but I am okay. Yes, I do not see any issues with your past history. As I said, I am healthy.

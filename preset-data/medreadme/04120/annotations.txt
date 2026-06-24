@@ -1,0 +1,9 @@
+source:      elife
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Perineural migration'
+  [7:9] 'medical-jargon-google-easy' -> 'bone marrow'
+  [11:13] 'medical-jargon-google-hard' -> 'ErbB3 receptor'

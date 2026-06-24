@@ -1,0 +1,11 @@
+Objective: Hypothyroidism is relatively common, occurring in approximately 5% of the general US population aged ≥12 years.
+Levothyroxine (LT4) monotherapy is the standard of care.
+Approximately, 5%-10% of patients who normalise thyroid-stimulating hormone levels with LT4 monotherapy may have persistent symptoms that patients and clinicians may attribute to hypothyroidism.
+A long-standing debate in the literature is whether addition of levotriiodothyronine (LT3) to LT4 will ameliorate lingering symptoms.
+Here, we explore the evidence for and against LT4/LT3 combination therapy as the optimal approach to treat euthyroid patients with persistent complaints.
+Methods: Recent literature indexed on PubMed was searched in March 2017 using the terms "hypothyroid" or "hypothyroidism" and "triiodothyronine combination" or "T3 combination."
+Relevant non-review articles published in English during the past 10 years were included and supplemented with articles already known to the authors.
+Findings: Current clinical evidence is not sufficiently strong to support LT4/LT3 combination therapy in patients with hypothyroidism.
+Polymorphisms in deiodinase genes that encode the enzymes that convert T4 to T3 in the periphery may provide potential mechanisms underlying unsatisfactory treatment results with LT4 monotherapy.
+However, results of studies on the effect of LT4/LT3 therapy on clinical symptoms and thyroid-responsive genes have thus far not been conclusive.
+Conclusions: Persistent symptoms in patients who are biochemically euthyroid with LT4 monotherapy may be caused by several other conditions unrelated to thyroid function, and their cause should be aggressively investigated by the clinician.

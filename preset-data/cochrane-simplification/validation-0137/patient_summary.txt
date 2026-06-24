@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0137  |  gem_id: gem-cochrane-simplification-validation-138  |  doi: 10.1002/14651858.CD004690.pub4
+
+CBT is significantly more effective than no therapy in reducing symptoms of anxiety in children and young people. No clear evidence indicates that one way of providing CBT is more effective than another (e.g. in a group, individually, with parents). CBT is no more effective than other 'active therapies' such as self-help books. The small number of studies meant the review authors could not compare CBT with medication. Only four studies looked at longer-term outcomes after CBT. No clear evidence showed maintained improvement in symptoms of anxiety among children and young people. The review authors recommend that future research should look in greater detail at what makes CBT work best for children and young people, how CBT can be provided in the most cost-effective way, and how CBT can be adapted for different age groups.

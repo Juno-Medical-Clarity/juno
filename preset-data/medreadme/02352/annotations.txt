@@ -1,0 +1,7 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 3.0
+split:       train
+
+jargon_spans:
+  [9:10] 'medical-jargon-google-easy' -> 'paramedics'

@@ -1,0 +1,5 @@
+pmid:        26093176
+question:    3
+adaptation:  adaptation3
+title:       Management of Hyperkalemia: An Update for the Internist
+sentences:   7

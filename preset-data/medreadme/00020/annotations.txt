@@ -1,0 +1,11 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'causal SNPs'
+  [10:12] 'medical-jargon-google-easy' -> 'TF binding'
+  [17:19] 'medical-jargon-google-easy' -> 'regulatory regions'
+  [23:25] 'medical-jargon-google-hard' -> 'linkage disequilibrium'
+  [28:30] 'abbr-medical' -> 'GWAS SNPs'

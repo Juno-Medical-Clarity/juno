@@ -1,0 +1,5 @@
+pmid:        15226090
+question:    32
+adaptation:  adaptation2
+title:       The C677T polymorphism of the methylenetetrahydrofolate reductase gene is associated with the level of decrease on diastolic blood pressure in essential hypertension patients treated by angiotensin-converting enzyme inhibitor
+sentences:   14

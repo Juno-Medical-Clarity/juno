@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0911  |  gem_id: gem-cochrane-simplification-train-912  |  doi: 10.1002/14651858.CD006638.pub3
+
+Studies in animals have shown that lowering the body temperature can help to protect the brain cells in circumstances when the blood supply to the cells is compromised. Similarly, studies in humans who have been resuscitated after their heart stopped beating have shown that lowering their body temperature helps to reduce brain damage. The purpose of this updated version of a previous review of the same title was to determine whether cooling patients who were having brain surgery reduced death and serious disability, or was associated with increased risk of harm. A detailed search of the available literature up until May 2014 identified four eligible studies that included a total of 1219 participants. Their results were combined to answer these questions. No evidence was found that cooling patients who are having brain operations reduced the risk of death or severe disability, or produced significant harm.

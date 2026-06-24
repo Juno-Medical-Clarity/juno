@@ -1,0 +1,5 @@
+pmid:        29939600
+question:    43
+adaptation:  adaptation2
+title:       Pacemaker Indications
+sentences:   9

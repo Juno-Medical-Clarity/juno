@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [3:4] 'general-complex' -> 'polymorphic'
+  [12:15] 'medical-jargon-google-hard' -> 'telomerase regulatory network'
+  [23:25] 'medical-jargon-google-easy' -> 'telomere homeostasis'

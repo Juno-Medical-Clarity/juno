@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0033  |  gem_id: gem-cochrane-simplification-test-34  |  doi: 10.1002/14651858.CD002982.pub3
+
+Systematically, we searched the literature on psychological interventions to find valid studies that looked at the effects of providing mainly psychological interventions for adults with asthma. The studies found examined many different therapies and measured different physical and psychological outcomes; for these reasons, their results could not be easily combined. However, meta-analyses could be performed to determine the effect of Cognitive Behavioural Therapy (CBT) on quality of life, bio-feedback on PEF, and relaxation therapy on PEF and FEV1 and medication use. The available studies were completed with small numbers of people and the way the studies were conducted could be improved. More research with larger numbers of people and improved design needs to be done before it is known whether psychological interventions are effective in improving health outcomes for adults with asthma.

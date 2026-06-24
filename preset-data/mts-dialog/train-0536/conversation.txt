@@ -1,0 +1,4 @@
+Doctor: Does anyone in your family have or have history of any colon cancer or unusual polyps?
+Patient: No.
+Doctor: Any other family history?
+Patient: Yes, my father died of a cancer called mesothelioma and my mother died of Hodgkin's Lymphoma.

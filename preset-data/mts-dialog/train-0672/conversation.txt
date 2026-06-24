@@ -1,0 +1,6 @@
+Doctor: Do you have any other problems?
+Patient: I do actually, I have back disc degeneration.
+Doctor: Oh really?
+Patient: Yeah.
+Doctor: When were you diagnosed with it?
+Patient: Maybe twenty ten?

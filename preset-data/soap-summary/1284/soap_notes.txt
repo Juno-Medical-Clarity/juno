@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1284
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: High blood pressure, asthma
+- Medical History: Diagnosed with cervical cancer at fifteen years old
+- Current Status of Cancer: Describes cancer as dormant
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No clinician's interpretation provided)
+
+Plan:
+- (No plan provided)

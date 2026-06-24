@@ -1,0 +1,10 @@
+Nephrotic Syndrome (NS) is a combination of symptoms relating to the kidneys. There is not much information about how NS exists in the population.
+We looked at kidney health, heart disease, and death in adults within Kaiser Permanente of Northern California that had symptoms of NS between 1996 and 2012.
+Kidney specialists looked at medical records to confirm NS and determined causes.
+For comparison, we also found a group of adults with no diabetes, NS, or proteinuria (too much protein in the urine) through 2014. This group was to compare rates of kidney failure, heart disease, and death using statistical methods.
+We confirmed 907 patients with NS. Of these, 655 definitely had either Focal Segmental Glomerulosclerosis (FSGS), Membranous Nephropathy (MN), or Minimal Change Disease (MCD). Another 252 were presumed to have one of these.
+The average age of the patients was 49, and 43% were women.
+Adults with NS had about 20 times the rate of kidney failure compared to people with no NS. They also had about two and a half times the rate of heart-related chest pain, three times the rate of heart failure, almost twice the rate of stroke, two and a half times the rate of blood clots, and 34% higher rate of death.
+The extra risk for kidney failure was much higher for FSGS and MN than for disease presumed to be MCD.
+The three causes of NS did not have significant differences in heart disease and death.
+In conclusion, adults with NS have higher rates of kidney failure, heart disease, and death. The risk of kidney failure depended significantly on which underlying disease caused the NS symptoms.

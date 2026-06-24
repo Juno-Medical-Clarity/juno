@@ -1,0 +1,9 @@
+We have reported that a subpopulation of patients with schizophrenia have lower levels of vitamin B6 (VB6) in peripheral blood than do healthy controls.
+In a previous study, we found that VB6 level was inversely proportional to the patient's positive and negative symptom scale (PANSS) score for measuring symptom severity, suggesting that the loss of VB6 might contribute to the development of schizophrenia symptoms.
+In the present study, to clarify the relationship between VB6 deficiency and schizophrenia, we generated VB6-deficient (VB6(-)) mice through feeding with a VB6-lacking diet as a mouse model for the subpopulation of schizophrenia patients with VB6 deficiency.
+After feeding for 4 weeks, plasma VB6 level in VB6(-) mice decreased to 3% of that in control mice.
+The VB6(-) mice showed social deficits and cognitive impairment.
+Furthermore, the VB6(-) mice showed a marked increase in 3-methoxy-4-hydroxyphenylglycol (MHPG) in the brain, suggesting enhanced noradrenaline (NA) metabolism in VB6(-) mice.
+We confirmed the increased NA release in the prefrontal cortex (PFC) and the striatum (STR) of VB6(-) mice through in vivo microdialysis.
+Moreover, inhibiting the excessive NA release by treatment with VB6 supplementation into the brain and Î±2A adrenoreceptor agonist guanfacine (GFC) suppressed the increased NA metabolism and ameliorated the behavioral deficits.
+These findings suggest that the behavioral deficits shown in VB6(-) mice are caused by enhancement of the noradrenergic (NAergic) system.

@@ -1,0 +1,15 @@
+Hypophosphatasia (HPP) is the heritable dento-osseous disease caused by loss-of-function mutation(s) of the gene ALPL that encodes the tissue-nonspecific isoenzyme of alkaline phosphatase (TNSALP).
+TNSALP is a cell-surface homodimeric phosphomonoester phosphohydrolase expressed in healthy people especially in the skeleton, liver, kidneys, and developing teeth.
+In HPP, diminished TNSALP activity leads to extracellular accumulation of its natural substrates including inorganic pyrophosphate (PPi), an inhibitor of mineralization, and pyridoxal 5'-phosphate (PLP), the principal circulating form of vitamin B6 (B6).
+Autosomal dominant and autosomal recessive inheritance involving >450 usually missense defects scattered throughout ALPL largely explains the remarkably broad-ranging severity of this inborn-error-of-metabolism.
+In 1985 when we identified elevated plasma PLP as a biochemical hallmark of HPP, all 14 investigated affected children and adults had markedly increased PLP levels.
+However, pyridoxal (PL), the dephosphorylated form of PLP that enters cells to cofactor many enzymatic reactions, was not low but often inexplicably elevated.
+Levels of pyridoxic acid (PA), the B6 degradation product quantified to assess B6 sufficiency, were unremarkable.
+Canonical signs or symptoms of B6 deficiency or toxicity were absent.
+B6-dependent seizures in infants with life-threatening HPP were later explained by their profound deficiency of TNSALP activity blocking PLP dephosphorylation to PL and diminishing gamma-aminobutyric acid synthesis in the brain.
+Now, there is speculation that altered B6 metabolism causes further clinical complications in HPP.
+Herein, we assessed the plasma PL and PA levels accompanying previously reported elevated plasma PLP concentrations in 150 children and adolescents with HPP.
+Their mean (SD) plasma PL level was nearly double the mean for our healthy pediatric controls: 66.7 (59.0) nM versus 37.1 (22.2) nM (P < 0.0001), respectively.
+Their PA levels were broader than our pediatric control range, but their mean value was normal; 40.2 (25.1) nM versus 39.3 (9.9) nM (P = 0.7793), respectively.
+In contrast, adults with HPP often had plasma PL and PA levels suggestive of dietary B6 insufficiency.
+We discuss why the B6 levels of our pediatric patients with HPP would not cause B6 toxicity or deficiency, whereas in affected adults dietary B6 insufficiency can develop.

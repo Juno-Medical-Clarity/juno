@@ -1,0 +1,11 @@
+This study aims to monitor the amount of coronavirus (which causes COVID-19 - the breathing-related illness) in the blood, also called viral load, and the specific, infection-fighting proteins used by the immune system, called antibodies, among patients with coronavirus and healthy travelers who have the virus but no symptoms.
+Samples from 57 hospitalized Covid-19 patients and 8 asymptomatic carriers (people who have the virus but no symptoms) are tested.
+
+Among seriously ill Covid-19 patients, there is a higher viral load in the throat, sputum (lung), and stool samples at 3-12 and 6-21 days after symptoms start.
+Among carriers with no symptoms, the viral load is found to stay for a shorter time period (1-8 days) in the throat and in the digestive system.
+Antibodies to fight the viruses responded in 51.4% of confirmed patients and 62.6% among asymptomatic people within 66 days from symptom starting.
+The average time between the start of symptoms and positive (or detected) antibodies is 30 days for the IgG antibody, and 23 days for the IgM antibodies, which often suggest a recent infection.
+Of 170 returning healthy-travelers to China, 4.7% were asymptomatic carriers within 2 weeks, and the positive result among them for the IgG and IgM antibodies is 12.8%.
+The IgM/IgG antibodies confirmed 3 suspected coronavirus cases, even though they tested negative for coronavirus using another test.
+When compared to other viruses that impact the lungs, Covid-19 has fewer asymptotic carriers and has a lower antibody response. Covid-19 also has a longer period of time developing antibodies in recovered patients.
+These findings highlight how complex transmission or spread is in Covid-19.

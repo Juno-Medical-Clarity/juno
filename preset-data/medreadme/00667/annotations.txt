@@ -1,0 +1,17 @@
+source:      plos_pathogens
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Ceramides'
+  [3:4] 'abbr-medical' -> 'MV'
+  [7:9] 'medical-jargon-google-hard' -> 'bacterial sphingomyelinase'
+  [15:17] 'medical-jargon-google-easy' -> 'membrane protrusions'
+  [18:21] 'medical-jargon-google-easy' -> 'T cell spreading'
+  [22:26] 'medical-jargon-google-hard' -> 'front / rear polarisation'
+  [29:32] 'medical-jargon-google-hard' -> 'b1 integrin ligation'
+  [33:37] 'medical-jargon-google-hard' -> 'aCD3 / CD28 activation'
+  [43:47] 'medical-jargon-google-easy' -> 'pharmacological or genetic ablation'
+  [48:49] 'abbr-medical' -> 'ASM'
+  [50:51] 'abbr-medical' -> 'NSM'

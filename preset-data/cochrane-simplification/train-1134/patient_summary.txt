@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1134  |  gem_id: gem-cochrane-simplification-train-1135  |  doi: 10.1002/14651858.CD004606.pub2
+
+The authors found 56 studies; the overall findings show that school-based secondary prevention programmes aimed at reducing aggressive behaviour do appear to produce improvements in behaviour. The improvements can be achieved in both primary and secondary school age groups and in both mixed sex groups and boy-only groups. Further research is needed to investigate if the apparent beneficial programmes effects can be realised outside the experimental setting and in settings other than schools. None of the studies collected data on violent injury, so we can not be certain of the extent to which an improvement in behaviour translates to an actual injury reduction. In addition, more research is needed to determine if the beneficial effects can be maintained over time, and if the benefits can be justified against the costs of implementing such programmes.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3481  |  gem_id: gem-cochrane-simplification-train-3482  |  doi: 10.1002/14651858.CD005536.pub2
+
+The aim of this review was to compare the response to inhaled beta-2 agonists delivered through a metered-dose inhaler (MDI) attached to home-made spacers, compared with beta-2 agonists delivered through a MDI attached to commercially produced spacers in children with acute exacerbations of wheezing or asthma. Six randomized clinical trials (RCTs) with 658 participants met the inclusion criteria of the review. Overall, this review fails to identify a difference between these two delivery methods for delivering bronchodilator therapy to children with acute asthma or lower airways obstruction attacks. However, given the small total sample and wide confidence intervals, equivalence between the treatments cannot be claimed.

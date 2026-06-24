@@ -1,0 +1,8 @@
+Cystic fibrosis is a deadly disease inherited from both parents characterized by changes in a compound (chloride) movement caused by genetic changes in the Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) gene.
+One gene change, ΔF508-CFTR, causes the resulting protein the gene creates to fold incorrectly, which leads to its destruction and mineral imbalance.
+CF patients are at very high risk of developing long-term inflammation (redness and swelling from fighting an infection) of part of the lungs.
+When tissue cells are damaged, immune cells are stimulated and produce unstable molecules, prompting the immune system to defend the body.
+In addition to normal treatments, drugs called correctors are available for changes like ΔF508-CFTR and other less common changes.
+Correctors help the CFTR protein form the right shape to move to the surface of the epithelial cell (cell that covers outer surface of the internal organs).
+Matrine, a drug, starts ΔF508-CFTR release from the cell's transportation system through the cell liquid to the surface.
+We now have proof that Matrine and Lumacaftor, another drug, not only allow the changed CFTR to move, but probably neutralize inflammation by improving the course of the disease.

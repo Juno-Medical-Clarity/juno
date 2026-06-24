@@ -1,0 +1,5 @@
+pmid:        33993809
+question:    34
+adaptation:  adaptation1
+title:       Current treatment options for secondary hyperparathyroidism in patients with stage 3 to 4 chronic kidney disease and vitamin D deficiency
+sentences:   10

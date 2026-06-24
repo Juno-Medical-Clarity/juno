@@ -1,0 +1,2 @@
+Doctor: Are you allergic to anything, food or medicines?
+Patient: No allergies that I know of.

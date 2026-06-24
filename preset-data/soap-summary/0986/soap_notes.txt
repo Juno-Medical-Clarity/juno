@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0986
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Smoking addiction, alcohol consumption
+- Severity: Smokes about a pack of cigarettes per day; drinks about four alcoholic drinks per night
+- Duration: Smoking currently; previously drank more alcohol but has cut back
+- Associated Symptoms: None explicitly mentioned
+- Relevant Medical History: History of high alcohol consumption, currently smoking a pack a day
+- Family History: Not mentioned
+- Allergies: Not mentioned
+- Other Concerns: Working on quitting smoking, past athleticism but currently not exercising regularly
+- Emotions/Concerns: Expressed willingness to quit smoking and noted progress in reducing alcohol consumption
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

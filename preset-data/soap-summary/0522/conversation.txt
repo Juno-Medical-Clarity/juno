@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0522
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any health problems I should note? Diabetes. Type one or two? Type two. Are you on insulin? Yeah. I'm also trying to manage it with exercise.

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1163
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Decreased appetite
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: None reported (no headaches, fever, rash, oral ulcers, vision problems, palpitations, breathlessness, diarrhea, constipation, changes in stool color, or jaundice)
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Patient expresses concern about decreased appetite but denies weight loss.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

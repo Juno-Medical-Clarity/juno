@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1375
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient has a stuffy nose that has improved and is no longer as congested.
+- The patient had a reduced appetite previously but is starting to eat again.
+- No fevers reported.
+- No nausea or vomiting after eating.
+- Bowel movements have been solid, with no diarrhea reported.
+- Concerns about the recurrence of thrush.
+
+Objective:
+- Symptoms of thrush observed in the patient's mouth.
+
+Assessment:
+- Stage two neuroblastoma, previously resected.
+- Second primary neuroblastoma in the right adrenal gland, confirmed by biopsy.
+- Currently undergoing chemotherapy (protocol P nine six four one).
+- Neutropenia noted which delayed the second cycle of chemotherapy.
+
+Plan:
+- Prescribe fluconazole to treat the thrush.

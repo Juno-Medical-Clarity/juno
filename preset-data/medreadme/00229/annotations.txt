@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [11:17] 'general-complex' -> 'full - scale randomised controlled trial'

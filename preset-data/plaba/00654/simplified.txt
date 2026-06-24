@@ -1,0 +1,12 @@
+We analyzed the short- and long-term outcome of 42 patients with distal type aortic dissection (a tear in the major blood vessel near the heart).
+Twenty-eight patients underwent intense treatment within two weeks after the start of pain (acute dissection or immediate rupture).
+The remaining 14 patients had long-lasting dissection or gradual breakdown of the major blood vessel near the heart.
+The goals of treatment were to control blood pressure and detect no C-reactive protein (a measure of inflammation).
+Hospital survival rate in patients with acute dissection was 96% (27/28).
+In-hospital issues included changes in mental status, kidney dysfunction, slowed heart beat, low blood pressure from standing, and liver dysfunction, all of which were managed medically.
+Three of these patients had surgery in the long-lasting phase and were released without issue.
+Fifteen (62.5%) of the 24 medically treated patients were released with no C-reactive protein detected.
+Random solving of a dissection (tear) was demonstrated by medical imaging in 8 cases.
+Five-year survival rates in 24 medically treated patients was 93%.
+Hospital survival rate in patients with long-lasting dissection was 100% (14/14).
+The rigorous control of blood pressure in the immediate phase, and subsequent monitoring of the dissection or tear by imaging and C-reactive protein tests provide good short- and long-term outcomes of patients with immediate distal dissection without emergency surgery.

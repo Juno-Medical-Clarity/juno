@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [4:7] 'general-complex' -> 'propensity score stratification'
+  [8:11] 'general-complex' -> 'inverse probability weighting'
+  [15:16] 'abbr-medical' -> 'TOPKAT'

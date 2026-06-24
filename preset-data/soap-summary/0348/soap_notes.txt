@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0348
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient's father died of a heart attack at age 65.
+- Patient's mother died of a stroke at age 70.
+- Patient reports that her brother is healthy.
+- No other symptoms, concerns, or relevant medical history mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

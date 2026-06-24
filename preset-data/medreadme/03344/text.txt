@@ -1,0 +1,1 @@
+Here, we used conditioned taste aversion learning in the rat model, wherein animals associate a novel taste with visceral nausea, and demonstrate that there are two parallel memory traces of a novel taste: a short-duration robust trace, lasting approximately 3 hr, and a parallel long-duration weak one, lasting up to 8 hr, and dependent on the strong trace for its formation.

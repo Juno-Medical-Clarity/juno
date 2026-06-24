@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1298
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke cigarettes or drink alcohol? No. Any use of recreational substances or IV drug abuse? No.

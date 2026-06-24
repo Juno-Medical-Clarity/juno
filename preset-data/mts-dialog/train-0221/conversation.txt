@@ -1,0 +1,13 @@
+Doctor: Do you live alone?
+Patient: I wouldn't say I live alone. I have three cats and they always keep me company.
+Doctor: Aw, what kind of cats?
+Patient: Two Persian cats and one Chartreux.
+Doctor: Are you currently working?
+Patient: I retired a few months ago. I used to work as a psych aide for the State of Pennsylvania.
+Doctor: Congratulations on your retirement.
+Patient: Thank you.
+Doctor: How long did you work as a psych aide?
+Patient: Thirty two years.
+Doctor: Incredible. One more question. Do you smoke, drink, or use drugs recreationally?
+Patient: I drink wine every now and then. I used to smoke back in the day, but I'm five years smoke free. I do not do drugs.
+Doctor: Always great to hear.

@@ -1,0 +1,13 @@
+Objective: To report a novel wireless neuromodulation system for treatment of refractory craniofacial pain.
+Background: Previous studies utilizing peripheral nerve stimulation (PNS) of the occipital and trigeminal nerves reported positive outcomes for alleviating neuropathic pain localized to the craniofacial and occipital areas.
+However several technological limitations and cosmetic concerns inhibited a more widespread acceptance and use of neuromodulation.
+Also, a relatively high incidence of adverse events like electrode erosions, dislocation, wire fracture and/or infection at the surgical site mandates a change in our approach to neuromodulation technology and implant techniques in the craniofacial region.
+Methods: We report a novel approach for the management of craniofacial pain with a wirelessly powered, minimally invasive PNS system.
+The system is percutaneously implanted and placed subcutaneously adjacent to affected facial nerves via visual guidance by the clinician.
+In this feasibility study, pilot evidence was gathered in a cohort of ten subjects suffering from a combination of chronic headaches, facial pain for at least 15 days per month and for at least 4h/day.
+Results: At four weeks post-implant follow up, all patients reported sustained pain relief of the primary pain area.
+Electrode location and total number of electrodes used per subject varied across the cohort.
+The average pain reduction using the visual analog scale was ≥82%.
+The procedure had no adverse events or side effects.
+Conclusion: Percutaneous placement of a wireless neurostimulation device directly adjacent to affected craniofacial nerve(s) is a minimally invasive and reversible method of pain control in patients with craniofacial pain refractory to conventional medical managements.
+Preliminary results are encouraging and further larger scale studies are required for improved applications.

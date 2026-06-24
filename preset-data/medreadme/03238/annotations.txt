@@ -1,0 +1,7 @@
+source:      plos_computational_biology
+side:        simple
+readability: 4.5
+split:       dev
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'protein folding'

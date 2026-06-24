@@ -1,0 +1,120 @@
+# Smith Collection Transcript: RES0170
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you today
+
+Patient: Im just bringing my son today because hes been how many episodes where im eat hell gets all this coughing fit and become wheezy and become shorter breath and i mean after a period of time it goes away but its been happening every so often
+
+Doctor: Does he still have these symptoms
+
+Patient: Like right now hes ok when the symptoms come on they last for i dont know maybe 30 minutes 60 minutes or or even less but yeah it happens maybe once or twice a week where and its been going on for a a couple of months now yeah he actually had a viral infection like a few months ago and i thought it was just that it leared up and then hes just had a few more of these episodes but without those kind of symptoms so
+
+Doctor: Hm so all this started a couple months ago
+
+Patient: Yeah
+
+Doctor: Do you find that there and you mentioned that it happens about one to two times a week is there anything specific happening at that time any triggers that result in these symptoms
+
+Patient: Well i will say i think i like exercise i find yeah like soccer practice yeah after maybe or even during a game like when things are really intense yeah i think during soccer ive ive kind of noticed it and then at night time as well it kind of randomly hell have this cough
+
+Doctor: OK so i guess its do you feel like its affected by cold weather as well or no
+
+Patient: um maybe yeah like if he yeah completely in the winter time like i know when he goes outside if he yeah he takes like a deep breath or something like that hell talk about having shortness of breath or difficulty breathing in the cold weather
+
+Doctor: OK other than the and i guess the cough is he coughing up anything or is it kind of a dry cough
+
+Patient: Its dry
+
+Doctor: OK does he have any like chest pain during these episodes
+
+Patient: No he hasnt said anything like that
+
+Doctor: Alright any fevers
+
+Patient: No he had a little bit of a fever at the that one time a few months ago but he hasnt so thats right i think he had a some sort of illness then but he hasnt had any fevers
+
+Doctor: I see ok any headaches
+
+Patient: No he hasnt said anything like that
+
+Doctor: OK and how has he had any other symptoms so anything like racing heart or belly pain or muscle aches or any changes in his bowel movements or urinary symptoms
+
+Patient: uh no i havent heard him uh i complain about anything like that i think ill everything like thats been normal
+
+Doctor: OK so when he has these episodes how like how severe are they so how difficult is it for him to breathe
+
+Patient: Ah well you certainly when it first starts i mean for the first minute or two yeah he that when i think particularly at soccer practice school have a really hard time catching his breath but like he would he stops playing and rests and really tries to make sure that he is i dont know just trying to to breathe and it kind of goes away hes been able to manage it ok
+
+Doctor: OK alright and i have these symptoms that have interfered with his daily activities does he for instance try to avoid soccer practice or does he have difficulties falling asleep at night
+
+Patient: Yeah definitely wakes him up a few and every once in awhile at night and he does have to take it a little easier at soccer for sure so yeah i am thinking it is affecting him
+
+Doctor: OK and otherwise has he been has he had any medical conditions that hes been diagnosed with
+
+Patient: uh no well he had some rashes when he was younger that he would get some some creams for but thats mostly resolved now
+
+Doctor: OK any hospitalizations or surgeries
+
+Patient: No he hasnt had anything like that
+
+Doctor: OK uhm and just going back to his birth and your pregnancy were there any complications at the time of pregnancy
+
+Patient: um there was a prolonged labor i think but he was delivered vaginally and at term
+
+Doctor: OK ok thats great
+
+Patient: And he oh sorry i was just going to say normal weight as well
+
+Doctor: OK good has was he kept in the in icu for a couple of days after was he sent home
+
+Patient: I think they like he was kept for not an icu he was kept for one day i think so just monitor for infection because it was like prolonged labor but he was ok ok so yeah we were able to go home
+
+Doctor: OK and i what was i going to say forgot what i was going to say how yeah how has this growth and development been has he been seeing his doctor regularly any concerns there
+
+Patient: Yeah hes been good with with growth no concerns for that and his developments been normal as well hes reached all of his milestones
+
+Doctor: OK and is he going to school
+
+Patient: Yeah yeah hes been going to school he hasnt really been he hasnt missed well hes missed one or two days actually because of the cough like on nights that he just didnt sleep well so in the morning hes just well not not feeling good for school so he has missed a couple of days over the last few months
+
+Doctor: Okay and does he is there any other any conditions that run in the family including things like asthma or eczema or allergic rhinitis or allergies
+
+Patient: Yeah sister does have some bad allergies her nose runs all the time and she also has that asthma his sister uses and a daily inhaler and then also w1
+
+Doctor: I see ok and uh how are things at home is he is he doing well otherwise like at school and things like that any stressors in his life
+
+Patient: No hes been doing uh hes been doing well at school he likes math and that thats been going well
+
+Doctor: OK great has he ever tried any puffers
+
+Patient: No he hasnt actually
+
+Doctor: Has he been on any medications
+
+Patient: um he he has not
+
+Doctor: Any allergies that he has
+
+Patient: Not that im aware of but i i think he might i mean so like environmental or i dont know something he does get symptoms like a runny nose and itchy eyes sometimes but usually go away pretty pretty quickly and he doesnt fuss about it too much so yeah so
+
+Doctor: From the symptoms that youve described so far it sounds like he might also have asthma but we will obviously have to do some testing and confirm that uhm and also its given sort of the results or even just like giving his symptoms prescribe some buffers to help with those symptoms clearly its affecting his life he cant go to school or cant participate in soccer or sometimes wakes up in the middle of the night and thats not good so well we can be prescribed some puffers and see if those help and also get some testing done do you have any other questions for me
+
+Patient: Uhm no yeah i was just wondering about so like the wheezing and all of that could be with from asthma too
+
+Doctor: Uhm yeah i would think so but again well get the testing done and see if there are any other any other causes
+
+Patient: OK
+
+Doctor: You said the wheezing sort of lasts only 30 to 30 minutes to an hour and then gets better
+
+Patient: Yeah i dont notice that any other times
+
+Doctor: Yes its possibly i mean i would think its asthma but then well get the testing done and see
+
+Patient: OK great thank you

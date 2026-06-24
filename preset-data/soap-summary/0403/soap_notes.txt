@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0403
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Severe migraine
+- Severity: Rated 9 or more on a scale of 1 to 10
+- Duration: 48 hours, started Monday
+- Associated symptoms: Feeling a lot of pressure, throbbing pain
+- Relevant medical history: No previous similar symptoms
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: No fever, chills, congestion, cough, cold-like symptoms, nausea, vomiting, diarrhea, or trauma
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment information provided.
+
+Plan:
+- No plan provided.

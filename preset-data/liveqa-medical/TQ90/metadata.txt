@@ -1,0 +1,16 @@
+qid: TQ90
+source_file: 1-131961705.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Is aclidinium a steroid? Is it contraindicated within 12 months prior to cataract surgery?
+nlm_summary: Is aclidinium a steroid and is it contraindicated within 12 months prior to cataract surgery?
+
+focus_entities:
+  [F1] (DrugSupplement) aclinidium
+question_types:
+  [T1] INFORMATION
+  [T2] CONTRAINDICATION
+keywords:
+  [K1] (DrugSupplement) steroid
+  [K2] (ProcedureDevice) cataract surgery

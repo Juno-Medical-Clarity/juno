@@ -1,0 +1,212 @@
+# Smith Collection Transcript: RES0088
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: uh what brings you in here today
+
+Patient: Yeah so my daughter shes had this hoarse voice for the past like two or three days it doesnt seem to be getting better in fact its getting worse and she just doesnt sound like herself anymore and shes not speaking as much
+
+Doctor: OK and when did this start
+
+Patient: OK so she had a cough like four days ago and shes still coughing a little bit but not as much as she was before but its more her voice that im concerned about it sounds very hoarse and harsh
+
+Doctor: OK and so how many days has she had the hoarse voice for
+
+Patient: Id say about two or three days now
+
+Doctor: Two or three days ok and when she was coughing you mentioned like previously was she coughing up any sputum or was it more of a dry cough
+
+Patient: It was more of a dry cough
+
+Doctor: And the cough has pretty much resolved by now
+
+Patient: Yeah she still gets them once in a while but yeah its pretty much gone
+
+Doctor: OK and when she was coughing did she at all bring up any kind of blood or any green or yellowish material
+
+Patient: No
+
+Doctor: No ok did she have any fevers at all recently
+
+Patient: uh no no fevers
+
+Doctor: OK and does she have any kind of uh along with a hoarse voice does she have any pain with talking
+
+Patient: Yes i think so
+
+Doctor: OK and does she have any pain with swallowing any foods or liquids
+
+Patient: Shes eating and drinking ok but i suspect there is some pain
+
+Doctor: OK so how long has she so she has a sore throat how long has she had that for
+
+Patient: The sore throat uhm i would say for the past two or three days as well
+
+Doctor: OK and was there anything that so she had kind of like a cough previously but anything else anyone sick around her or anything you think might have precipitated some of her symptoms
+
+Patient: No not that i know of i dont think shes had any contacts with sick people recently
+
+Doctor: OK are there any have you tried any medications over the counter that has helped her
+
+Patient: Uhm not over the counter medications but like i tried to get her to like gargle with like salt water and all that kind of stuff but that didnt seem to help
+
+Doctor: OK and have her symptoms been just constant or do they come and go
+
+Patient: Theyve been pretty constant
+
+Doctor: OK and you think her symptoms are getting worse
+
+Patient: uh no theyve been pretty consistent but maybe the harsh voice is getting worse
+
+Doctor: OK and other than the symptoms that youve mentioned has she had any kind of shortness of breath wheezing chest pain or anything like that
+
+Patient: No nothing like that
+
+Doctor: OK and no fevers right
+
+Patient: No
+
+Doctor: OK has she traveled at all recently outside of the country or outside of the province
+
+Patient: No no nothing like that
+
+Doctor: OK and any headaches at all
+
+Patient: Uhm no
+
+Doctor: No any nausea or vomiting
+
+Patient: uh no nothing like that
+
+Doctor: OK any runny nose or congestion
+
+Patient: No
+
+Doctor: No ok and have you had a chance to at all look into her mouth and throat and if you have have you noticed any kind of redness swelling
+
+Patient: I havent looked in there too much like just an inspection the other day it looked a little bit red but i didnt see any discharge
+
+Doctor: OK and have you noticed any kind of swelling around her neck ears like around her lymph nodes
+
+Patient: Uhm i havent actually taken a look there
+
+Doctor: OK we can do that other than those symptoms has she been experiencing any kind of like fatigue or have you notice her being just very tired
+
+Patient: um she has seemed a little bit more tired than usual
+
+Doctor: OK and right now is she going to school or is right now all like virtual is she at home
+
+Patient: Uhm shes at home right now
+
+Doctor: OK and does she have any symptoms of any chest pain at all
+
+Patient: No chest pain
+
+Doctor: OK any changes in her bowel movements any constipation diarrhea
+
+Patient: No
+
+Doctor: OK any urinary problems
+
+Patient: No
+
+Doctor: OK has she been able to sleep well or does she wake up a lot more at night
+
+Patient: Uhm shes been able to sleep well yeah
+
+Doctor: OK how about her appetite
+
+Patient: Its been pretty normal shes not eating as much as she used to but shes still eating and drinking ok
+
+Doctor: OK and have you noticed any kind of weight changes at all recently has she lost any weight
+
+Patient: No
+
+Doctor: OK and has she had any loss of taste of smell or sorry loss of sense of taste or smell at all
+
+Patient: uh no
+
+Doctor: Any muscle aches or anything like that
+
+Patient: uh no nothing like that
+
+Doctor: OK any exposure to fumes dust animals or pets at home
+
+Patient: uh no nothing like that
+
+Doctor: OK has this happened at all in the past
+
+Patient: Uhm no
+
+Doctor: No ok does she have any medical conditions at all that shes been diagnosed with in the past
+
+Patient: Uhm no nothing like that
+
+Doctor: Any like asthma or any other conditions
+
+Patient: No
+
+Doctor: OK any allergies that you know of
+
+Patient: I know she has seasonal allergies but thats about it
+
+Doctor: OK and does she take any medications at all on a daily basis
+
+Patient: uh no she just takes multi vitamins
+
+Doctor: OK and currently or previously has she had any surgeries or hospitalizations
+
+Patient: No
+
+Doctor: No ok are there any family history of any lung or heart conditions
+
+Patient: uh no
+
+Doctor: Any cancers
+
+Patient: Theres some colon cancer on her dad side of the family
+
+Doctor: OK and is there any so do you remember who the person is and also like when they got diagnosed with the colon cancer
+
+Patient: So it was her uncle he was diagnosed when he was forty five
+
+Doctor: OK other than that were there any developmental challenges at all while she was growing up did she was she meeting her milestones any concerns at all
+
+Patient: P no concerns she was meeting all her milestones from what i remember
+
+Doctor: OK and uh in terms of her pregnancy were there any or your pregnancy with her were there any complications at all either during the pregnancy or after she was born
+
+Patient: No no complications
+
+Doctor: And right now where does she live and who does she live with
+
+Patient: Shes at home with myself my husband and she has one younger sibling
+
+Doctor: OK and is everyone at home well does anyone have any of these symptoms
+
+Patient: No ok
+
+Doctor: Right so and in terms of the home environment does anyone smoke in the house
+
+Patient: No
+
+Doctor: No ok alright so i think thats all the questions i had right now do you have any questions or concerns
+
+Patient: No no questions but uhm actually what do you think she has and how can we treat her
+
+Doctor: Yeah so it seems like that the hoarseness of voice and the sore throat and her symptoms mostly align with whats called laryngitis and this is usually caused by like just a viral respiratory infection the hoarseness of voice will usually last more than a week and up to like ten days and it should resolve on its own but well definitely take a better look and do a proper physical examination see if i see any kind of swelling redness or any like white streaks or exudates around her pharynx as well so after we take a look well see what we can do it doesnt seem like it can also be a bacterial infection in which case we would need to give her antibiotics but usually its a viral infection that should go away on its own so we would just kind of wait and see and potentially just give her voice some rest during this period and just go on from there do you have any other questions or concerns
+
+Patient: uh no that sounds great thank you
+
+Doctor: Youre welcome and yeah well just do a full examination and then go from there
+
+Patient: OK sounds great thanks
+
+Doctor: Youre welcome  take care
+
+Patient: You too

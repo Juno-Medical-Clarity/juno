@@ -1,0 +1,9 @@
+Pathogenic variants in the voltage-gated sodium channel gene (SCN1A) are amongst the most common genetic causes of childhood epilepsies.
+There is considerable heterogeneity in both the types of causative variants and associated phenotypes; a recent expansion of the phenotypic spectrum of SCN1A associated epilepsies now includes an early onset severe developmental and epileptic encephalopathy with regression and a hyperkinetic movement disorder.
+Herein, we report a female with a developmental and degenerative epileptic-dyskinetic encephalopathy, distinct and more severe than classic Dravet syndrome.
+Clinical diagnostics indicated a paternally inherited c.5053G>T; p. A1685S variant of uncertain significance in SCN1A.
+Whole-exome sequencing detected a second de novo mosaic (18%) c.2345G>A; p. T782 I likely pathogenic variant in SCN1A (maternal allele).
+Biophysical characterization of both mutant channels in a heterologous expression system identified gain-of-function effects in both, with a milder shift in fast inactivation of the p. A1685S channels; and a more severe persistent sodium current in the p. T782I.
+Using computational models, we show that large persistent sodium currents induce hyper-excitability in individual cortical neurons, thus relating the severe phenotype to the empirically quantified sodium channel dysfunction.
+These findings further broaden the phenotypic spectrum of SCN1A associated epilepsies and highlight the importance of testing for mosaicism in epileptic encephalopathies.
+Detailed biophysical evaluation and computational modelling further highlight the role of gain-of-function variants in the pathophysiology of the most severe phenotypes associated with SCN1A.

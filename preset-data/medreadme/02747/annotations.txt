@@ -1,0 +1,9 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [0:2] 'general-complex' -> 'Focus groups'
+  [11:12] 'abbr-medical' -> 'CVD'
+  [14:15] 'abbr-medical' -> 'SMI'

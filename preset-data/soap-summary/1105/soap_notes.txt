@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1105
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient reports that they have never been vaccinated.
+- The patient mentions that their parents do not believe in vaccines.
+ 
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

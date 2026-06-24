@@ -1,0 +1,14 @@
+Background: While the genomes of eukaryotes and Archaea both encode the histone-fold domain, only eukaryotes encode the core histone paralogs H2A, H2B, H3, and H4.
+With DNA, these core histones assemble into the nucleosomal octamer underlying eukaryotic chromatin.
+Importantly, core histones for H2A and H3 are maintained as neofunctionalized paralogs adapted for general bulk chromatin (canonical H2 and H3) or specialized chromatin (H2A.
+Z enriched at gene promoters and cenH3s enriched at centromeres).
+In this context, the identification of core histone-like "doublets" in the cytoplasmic replication factories of the Marseilleviridae (MV) is a novel finding with possible relevance to understanding the origin of eukaryotic chromatin.
+Here, we analyze and compare the core histone doublet genes from all known MV genomes as well as other MV genes relevant to the origin of the eukaryotic replisome.
+Results: Using different phylogenetic approaches, we show that MV histone domains encode obligate H2B-H2A and H4-H3 dimers of possible proto-eukaryotic origin.
+MV core histone moieties form sister clades to each of the four eukaryotic clades of canonical and variant core histones.
+This suggests that MV core histone moieties diverged prior to eukaryotic neofunctionalizations associated with paired linear chromosomes and variant histone octamer assembly.
+We also show that MV genomes encode a proto-eukaryotic DNA topoisomerase II enzyme that forms a sister clade to eukaryotes.
+This is a relevant finding given that DNA topo II influences histone deposition and chromatin compaction and is the second most abundant nuclear protein after histones.
+Conclusions: The combined domain architecture and phylogenomic analyses presented here suggest that a primitive origin for MV histone genes is a more parsimonious explanation than horizontal gene transfers + gene fusions + sufficient divergence to eliminate relatedness to eukaryotic neofunctionalizations within the H2A and H3 clades without loss of relatedness to each of the four core histone clades.
+We thus suggest MV histone doublet genes and their DNA topo II gene possibly were acquired from an organism with a chromatinized replisome that diverged prior to the origin of eukaryotic core histone variants for H2/H2A.Z and H3/cen H3.
+These results also imply that core histones were utilized ancestrally in viral DNA compaction and/or protection from host endonucleases.

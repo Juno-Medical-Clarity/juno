@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0414  |  gem_id: gem-cochrane-simplification-test-415  |  doi: 10.1002/14651858.CD000277.pub3
+
+This review of 16 trials, involving 3361 patients, has found that the outcome after subarachnoid haemorrhage, in terms of survival and being independent in activities of daily living, is improved by treatment with calcium channel blockers (antagonists). If the largest trial is excluded from the analysis, the results are no longer statistically significant, and therefore the evidence is not beyond all doubt. However, given the high likelihood of benefits and the modest risks associated with this treatment, the review authors conclude that calcium antagonists, in the form of oral nimodipine 60 mg every four hours, are useful in patients with subarachnoid haemorrhage from a ruptured aneurysm. Magnesium is another calcium antagonist with promising results, but larger trials with this drug are needed before we can be certain about a beneficial effect.

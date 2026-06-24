@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0357
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What medications are you taking right now? I am taking Advair and Allegra. Okay is it helping you? I don't know, I am not sure the Allegra is helping. But I do take them regularly. But is it like better than Claritin? Yes, I think so. Okay that's good. Shall I continue?

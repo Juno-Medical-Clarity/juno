@@ -1,0 +1,14 @@
+qid: TQ101
+source_file: 13645.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: How long has Non-aspirin NSAID been implicated in erectile dysfunction?
+nlm_summary: Could NSAIDS cause erectile dysfunction?
+
+focus_entities:
+  [F1] (DrugSupplement) NSAIDS
+question_types:
+  [T1] SIDE_EFFECT
+keywords:
+  [K1] (Problem) erectile dysfunction

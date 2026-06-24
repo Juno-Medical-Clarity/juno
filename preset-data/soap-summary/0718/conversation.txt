@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0718
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi you guys, how are you? I am good, he is my stepdad. Guest_family: Hi Doctor, how are you? I am fine, thank you. So, she gets seizures? Guest_family: Yes. And when did it start? Guest_family: She was fourteen or thirteen. I think fourteen. Dad I was fourteen, when it started. Fourteen, okay. Are you taking anything for it? Guest_family: Yeah, she is on medication. Anybody else in the family have a similar problem? Guest_family: No, but her sixteen year old brother suffers from N S V T and he sees a specialist. Okay, any other siblings or family members with medical conditions? Guest_family: Other kids in the family are doing fine, but her maternal grandma suffers from high blood pressure and diabetes. Okay. Sorry but I must ask this, any recent death in the family in past one year child or adult? Guest_family: Thankfully no!

@@ -1,0 +1,7 @@
+Doctor: Is this something new? Or have you had it before?
+Patient: No doctor, this is new.
+Doctor: What exactly are you feeling?
+Patient: I feel like my tongue is swollen.
+Doctor: Okay. How old are you?
+Patient: I am fifty four years old.
+Doctor: Okay let me see how we can evaluate that.

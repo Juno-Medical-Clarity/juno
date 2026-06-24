@@ -1,0 +1,1 @@
+Our study delineates phosphoryl transfer through this molecular pathway, which initiates from the sensor kinase CckA and proceeds through the ChpT phosphotransferase to two regulatory substrates: CtrA and CpdR.

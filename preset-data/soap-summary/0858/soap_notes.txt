@@ -1,0 +1,26 @@
+# SOAP Notes — Sample 0858
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Medical conditions: high blood pressure, asthma, sleep apnea, stomach cancer.
+- History of blood clots in the left leg (6 months ago).
+- Had a total abdominal hysterectomy.
+- Had a colonic resection to remove benign polyps.
+- Had a benign lump removed from the breast.
+- Symptoms: weakness in the left leg, uses a walker, falling asleep at work, snoring at work.
+- Duration of sleep issues: gets 2 to 5 hours of sleep per night on a good night.
+- Patient reports falling asleep at work due to looking at the computer screen.
+- Feelings of concern regarding sleep and work performance.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Concerns regarding sleep apnea and its impact on daily functioning.
+- Ongoing weakness in the left leg post-stroke.
+- Potential issues related to insufficient sleep and non-compliance with CPAP machine usage.
+
+Plan:
+- Recommend follow-up with Doctor X regarding sleep apnea.
+- Emphasize the importance of using the CPAP machine every night.
+- Discuss risks associated with lack of sleep, including obesity and high cholesterol.

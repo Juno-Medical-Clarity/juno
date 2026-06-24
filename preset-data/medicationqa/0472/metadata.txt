@@ -1,0 +1,5 @@
+drug_focus: raloxifene
+question_type: Usage/time
+section_title: Efficacy
+source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2971719/
+sample_id: 0472

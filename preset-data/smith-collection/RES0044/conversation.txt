@@ -1,0 +1,266 @@
+# Smith Collection Transcript: RES0044
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: um i just uh i have i have a cough that ive had for a couple of days and like normally if i had a cough or cold i would just like stay home and rest but just because you know theres like covid i i wanted to make sure like i wanted to get checked out
+
+Doctor: Yeah of course that that was a great idea thanks for coming in um how long have you had this cough for
+
+Patient: uh its like 2 days like maybe three days ago i started to feel like my throat was dry and i was like oh maybe i need to drink more water or something and then the next day i started like actually coughing
+
+Doctor: OK is it a dry cough or a wet cough
+
+Patient: Yeah its really dry
+
+Doctor: Really dry ok so no sputum no blood that youre bringing up
+
+Patient: No nothing like that its just kind of annoying
+
+Doctor: Yeah um do you have any wheeziness associated with your coughing
+
+Patient: I dont think so
+
+Doctor: No ok no shortness of breath
+
+Patient: No no ive been i feel like ive been tired but i dont think its been actually hard to breathe i just feel overall like really tired
+
+Doctor: OK ok and have you tried anything for the cough like um over the counter cough syrup or anything like that
+
+Patient: uh like i have ive just been drinking tea and just like tea with honey just to like make it feel better i i didnt like take any medicine
+
+Doctor: OK and do you have you noticed that there are any triggers for your cough like the cold or dust or any like environmental triggers
+
+Patient: I mean ive been just because of covid and stuff ive been staying home ever since i had it
+
+Doctor: uh so i dont i cant think of anything but i dont think so
+
+Patient: OK and do you find that its constantly there or um is it worse during a particular time of day like morning afternoon or evening
+
+Doctor: Its kind of just been there
+
+Patient: All the time right now
+
+Doctor: OK and um is it getting worse do you think
+
+Patient: I think so i think like today is worse than yesterday and the day before that it just felt like dry and then and then like the next day i started coughing so yeah
+
+Doctor: OK and have you ever experienced anything like this in the past
+
+Patient: I mean ive had coughs before um this one feels like particularly dry but uh like it its not too different than like when im just like like had a cough in other years
+
+Doctor: OK ok um and you mentioned that your throat was also dry do you have a sore throat
+
+Patient: Maybe a little bit this morning yeah like at first it just felt dry like i was thinking like oh its like you know i need to take a sip of water or something and now it just feels now its starting to think i feel a little bit sore i think
+
+Doctor: OK um is it hard for you to swallow foods or fluids
+
+Patient: Oh sorry could you repeat that i just missed the last part
+
+Doctor: Oh no worries is it hard for you to swallow food or fluids
+
+Patient: uh no its not hard its not hard to swallow things
+
+Doctor: OK um and then have you had a runny nose or a stuffy nose
+
+Patient: No not particularly
+
+Doctor: No ok how about any changes to your hearing or vision
+
+Patient: No
+
+Doctor: No how about changes in smell or taste
+
+Patient: uh no thats like a covid thing right like i was hoping because i could still i could still like taste my coffee this morning i was hoping that that means i dont have covid but yeah i dont really know
+
+Doctor: I mean yeah some people have it some people dont um i guess people with covid present in different ways yeah yeah do you have a fever at all
+
+Patient: um like when i came in here when the nurse took my temperature she said i had um like she said i had a fever uh i dont have a thermometer at home um but like ive been feeling really hot so would probably ive probably been having it for a couple of days
+
+Doctor: OK ok we can take yeah we can take your temperature sorry did you say you already took your temperature today and
+
+Patient: The nurse took it yeah i dont know what it was but the nurse kept coming in and she said it was a
+
+Doctor: Little high like i dont know if it was like a fever but ive been feeling hot so
+
+Patient: OK ok yeah so yeah well double check to make sure that um you either do or dont have a fever um have you experienced any chills or night sweats over the past few days
+
+Doctor: uh no
+
+Patient: No ok ok how about um any weight loss
+
+Doctor: No like i dont weigh myself regularly but i dont think so
+
+Patient: OK um any changes to your hair or uh nails or skin like rashes
+
+Doctor: uh no
+
+Patient: No ok how about um chest pain
+
+Doctor: uh no
+
+Patient: No chest pain ok um swelling in your limbs
+
+Doctor: uh no
+
+Patient: No do you ever feel like your hearts racing
+
+Doctor: uh no
+
+Patient: No ok um how about um how about any dizziness or or fainting spells
+
+Doctor: um no like ive been just tired
+
+Patient: Just tired ok
+
+Doctor: Yeah i dont i dont i havent fainted or anything
+
+Patient: OK any headaches
+
+Doctor: No
+
+Patient: No ok uh how about confusion or memory loss
+
+Doctor: um no i dont think so
+
+Patient: OK um any changes to your bowel habits
+
+Doctor: um no
+
+Patient: No ok so no constipation or diarrhea or blood in your stool
+
+Doctor: Yeah exactly
+
+Patient: OK any changes to your urine
+
+Doctor: No
+
+Patient: OK any nausea or vomiting
+
+Doctor: No
+
+Patient: No ok and um no abdominal aches
+
+Doctor: No
+
+Patient: No ok um are you otherwise healthy
+
+Doctor: um like i have um i have uh like some um like digestive problems generally like i havent had any changes to that but they think it might be like crohns or something um but other than that no
+
+Patient: um you said you had digestive problems did you say it might be crohns
+
+Doctor: Yeah like i ive been seeing my family doctor and they they said they thought it might be um but we dont really know just like in general i guess theyve been calling it ibs
+
+Patient: Oh i see ok um ok
+
+Doctor: I wish i knew exactly but they just said yeah they dont really know
+
+Patient: OK
+
+Doctor: But there havent been any changes right now
+
+Patient: Oh yeah i see ok um have you ever had any hospitalizations or surgeries
+
+Doctor: No
+
+Patient: No ok um are you on any medications
+
+Doctor: No
+
+Patient: OK and how about um any allergies
+
+Doctor: um just uh pineapple like not any medications or anything
+
+Patient: Pineapple ok um are you up to date with all your immunizations
+
+Doctor: uh yeah yeah
+
+Patient: OK um any family history of lung conditions or heart conditions
+
+Doctor: um like my my uncle had a heart attack
+
+Patient: OK
+
+Doctor: I dont like not my parents
+
+Patient: OK i see um any cancers in the family
+
+Doctor: uh no
+
+Patient: OK um and do you smoke
+
+Doctor: No
+
+Patient: No ok how about marijuana
+
+Doctor: No
+
+Patient: No ok um any other recreational drugs
+
+Doctor: um no no
+
+Patient: OK how about alcohol
+
+Doctor: uh like i drink i dont know maybe ill drink like a bottle of wine on like a weekend like over a whole weekend or something so like i dont know maybe like 3 or 4 drinks over the weekend
+
+Patient: Three or four drinks a weekend ok
+
+Doctor: Yeah something like that
+
+Patient: Sure ok
+
+Doctor: Im not at all like
+
+Patient: OK so occasionally
+
+Doctor: Yeah
+
+Patient: OK and where do you live
+
+Doctor: uh i live in town here
+
+Patient: OK do you live in a house in an apartment
+
+Doctor: um my fiancé and i live in a townhouse
+
+Patient: In a townhouse ok um any um concerns for like old carpets or mold or asbestos anything like that
+
+Doctor: uh no its like a new a new building
+
+Patient: OK ok and do you think you may have been in contact with anyone whos been sick recently
+
+Doctor: Well so um i work uh in like i work in an office thats attached to a factory um and i so like i have to actually be there i havent been able to work from home um and there was someone else in my office that i think was coughing in that like last week and i i dont know i questioned it but i i didnt actually get to talk to them and ask them or like i dont know if they were actually sick or something so i might have been and we wear masks and everything like were really good but i dont know i feel like the offices arent like super like the air flows not that great
+
+Patient: Yeah
+
+Doctor: So yeah i think thats another reason i was concerned that i i feel like some people might have been sick and i didnt really know the whole story
+
+Patient: Right ok so potentially from from the workplace then ok
+
+Doctor: Yeah
+
+Patient: And ok um have you traveled anywhere recently
+
+Doctor: No
+
+Patient: No ok well those were all the questions that i had for you today was there um anything that i missed that you wanted to discuss today
+
+Doctor: uh not that i can think of
+
+Patient: No ok so right now it seems like if im going through my differential diagnosis list for you at the top is the thing that we have to rule out is covid so well take a swab and send it off for those pcr results and youll hear back either tomorrow or the day after about the results but in the mean time and i guess even if the test is negative um and youre still having symptoms please do isolate for 14 days um and if your symptoms get worse um like you know youre having trouble breathing uh your fever your temperature is off the charts um or youre having any sort of neurological symptom please do um go to the er and seek out help um if its not covid it could be another viral illness thats going around at during this time of year um and usually the treatment for that kind of stuff is supportive so make sure youre staying well hydrated youre eating nutritious foods uh youre getting good sleep um and if not and your symptoms you know youre having a productive cough um youre really short of breath uh we can test you to see if you have some sort of bacterial pneumonia and those are usually treated with antibiotics so thats kind of the plan right now um so well just start with that covid swab for now how does that sound
+
+Doctor: Yeah that that sounds great thats really what it like i i dont feel super sick i just really wanna know if i have covid or not
+
+Patient: Yeah for sure and i and i think its good that you came in
+
+Doctor: Awesome
+
+Patient: Alright thank you
+
+Doctor: OK thanks

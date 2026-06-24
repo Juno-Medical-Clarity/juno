@@ -1,0 +1,8 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 4.65
+split:       dev
+
+jargon_spans:
+  [11:12] 'abbr-medical' -> 'BU'
+  [31:32] 'abbr-medical' -> 'anti-BU'

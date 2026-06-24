@@ -1,0 +1,12 @@
+Pharmacokinetic data of gabapentin (GBP) in community-dwelling elderly patients show a significant effect of advanced age on GBP pharmacokinetics due to altered renal function.
+However, there are no data in elderly nursing home (NH) patients to evaluate gabapentin absorption and elimination.
+Our objective was to characterize the pharmacokinetics of GBP in elderly nursing home patients maintained on GBP therapy.
+This was a prospective pharmacokinetic study in elderly nursing home patients (≥60 years) receiving GBP for the management of chronic pain or epilepsy from seven nursing homes.
+Pharmacokinetic parameters were estimated by nonlinear mixed-effects modeling.
+A one-compartment model described the data and clearance (CL) was associated with estimated glomerular filtration rate (eGFR) (p < 0.0001).
+The GBP CL in elderly nursing home patients was 2.93 L/h.
+After adjusting for the effect of GFR, GBP CL was not affected by age, sex, body weight, or comorbidity scores.
+No significant effects of body size measures, age, and sex were detected on volume of distribution.
+Dose-dependent bioavailability of GBP was demonstrated, and the saturable absorption profile was described by a nonlinear hyperbolic function.
+Prediction-corrected visual predictive check (pc-VPC) suggests adequate fixed- and random-effects models that successfully simulated the mean trend and variability in gabapentin concentration-time profiles.
+In this analysis, the parameters of the hyperbolic nonlinearity appear to be similar between elderly and younger adults.

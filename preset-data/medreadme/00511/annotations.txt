@@ -1,0 +1,13 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [4:8] 'medical-jargon-google-easy' -> 'biologic - naive patients'
+  [13:14] 'abbr-medical' -> 'DMARD'
+  [16:17] 'abbr-medical' -> 'CZP'
+  [26:27] 'medical-jargon-google-easy' -> 'psoriasis'
+  [32:33] 'abbr-medical' -> 'SEC'
+  [44:45] 'medical-jargon-google-easy' -> 'psoriasis'
+  [47:49] 'medical-jargon-google-easy' -> 'concomitant psoriasis'

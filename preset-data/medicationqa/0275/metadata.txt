@@ -1,0 +1,5 @@
+drug_focus: dronabinol
+question_type: not_drug_question
+section_title: Dronabinol Prices
+source_url: https://www.drugs.com/price-guide/dronabinol
+sample_id: 0275

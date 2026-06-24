@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0400
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a former smoker, quit in 1968.
+- Current weight is 183 pounds.
+- Patient reports feeling they have been shrinking in height; used to be 5'10".
+
+Objective:
+- Current weight: 183 pounds.
+- Height: Not measured yet; will be assessed after the exam.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- Measure patient's height after the exam.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0721  |  gem_id: gem-cochrane-simplification-train-722  |  doi: 10.1002/14651858.CD009138.pub2
+
+The current review includes 39 trials with a total of 3509 participants and confirms its efficacy compared to placebo or no treatment. This finding is important, because the efficacy of antidepressants has recently been questioned. However, the review also demonstrated that amitriptyline produces a number of side effects such as vision problems, constipation and sedation. It is a limitation of this review that many studies have been poorly reported, which might have led to bias.

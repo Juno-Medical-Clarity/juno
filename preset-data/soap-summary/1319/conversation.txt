@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1319
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke? Yes! How about alcohol, do you drink? Yes, I do. And how much do you drink and is it occasional or on daily basis? Well, I love my wine, I drink about four to five glasses per day. Wow! That's a lot.

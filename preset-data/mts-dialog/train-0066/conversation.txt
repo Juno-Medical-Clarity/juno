@@ -1,0 +1,4 @@
+Doctor: Any medical problems on your mom or dad's side?
+Patient: My dad has lupus and his brother has Addison's disease. High blood pressure also runs in the family.
+Doctor: Is your dad being treated for lupus?
+Patient: Yes, he follows up with his rheumatologist pretty regularly.

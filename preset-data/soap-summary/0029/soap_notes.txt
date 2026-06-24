@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0029
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 3 yo F presents with fever and cough x 3-4 days
+- Fever: Tmax 103°F (ear), persistent, worsening
+- Cough: Persistent, productive with green slimy sputum (couple spoonfuls), no blood
+- Associated sx: Runny nose, diarrhea x 2 days (watery, 4-5 episodes/day, no blood), irritability, ↓ PO intake, ↓ sleep
+- Denies: Ear tugging/pain, vomiting, eye/ear discharge, rashes, difficulty breathing/wheezing, voice changes, urinary sx, seizures
+- Tylenol tried with temporary improvement in fever
+- No known worsening/alleviating factors
+- Similar cough 2 months ago without fever
+- Exposed to sick brother (cough, runny nose x 4 days) who attends daycare
+
+PMHx:
+- Neonatal jaundice requiring phototherapy
+- Up-to-date on immunizations
+- No other medical conditions, surgeries, hospitalizations, or allergies
+
+Birth Hx: SVD at 38 weeks, uncomplicated
+
+SocHx:
+- Mother is primary caregiver
+- Brother attends daycare
+
+Objective:
+- Vitals: Not provided
+- Exam: Not performed
+
+Assessment:
+- Likely viral URTI
+
+Plan:
+- Continue supportive care with Tylenol, fluids, rest
+- Monitor for signs of respiratory distress, dehydration, or worsening symptoms
+- Follow-up with PCP if not improving in 2-3 days or sooner if worsening

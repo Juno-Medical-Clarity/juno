@@ -1,0 +1,5 @@
+pmid:        34540217
+question:    36
+adaptation:  adaptation1
+title:       The effect of stone and patient characteristics in predicting extra-corporal shock wave lithotripsy success rate: A cross sectional study
+sentences:   11

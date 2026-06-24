@@ -1,0 +1,33 @@
+# SOAP Notes — Sample 0115
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for the past week
+- Persistent, dry cough with itchy, scratchy throat sensation
+- Cough syrup provided temporary relief
+- No SOB, chest pain, wheezing, blood in sputum, or fever
+- No nasal congestion, sore throat, loss of smell/taste, weight loss, rashes, or changes in bowel movements (constipation noted but longstanding)
+- No changes in vision, hearing, urine, or bowel movements
+- No nausea, vomiting, joint pain, numbness, tingling, or headaches
+- No recent contact with sick individuals or travel
+
+Past Medical History:
+- PMHx: Diabetes (7 years)
+- Medications: Metformin (5-6 years), Ramipril (2 weeks)
+- Allergies: Penicillin (rash as a child)
+- Immunizations: Up to date
+- SocHx: No smoking, marijuana, or recreational drugs; alcohol (2-3 beers on weekends)
+- FHx: No lung or heart conditions
+- Lives with wife and 2 children, no known environmental hazards at home
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Possible COVID-19 (cough, recent onset)
+- Possible Ramipril-induced cough (started 2 weeks ago)
+
+Plan:
+- COVID-19 swab (results in 24-48 hours)
+- Recommend isolation for 14 days
+- Review and possibly change blood pressure medication (Ramipril) if family doctor agrees

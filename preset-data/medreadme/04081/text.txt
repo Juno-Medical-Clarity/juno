@@ -1,0 +1,1 @@
+To define the contribution of the entire Hox5 paralogous group to this process, we generated an Hoxa5 conditional allele to use with our existing null alleles for Hoxb5 and Hoxc5.

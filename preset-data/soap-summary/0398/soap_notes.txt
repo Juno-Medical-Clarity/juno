@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0398
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Loose watery stools
+- Severity: Not explicitly mentioned
+- Duration: More than two weeks
+- Associated symptoms: Lethargy, pain in tummy
+- Relevant medical history: Not provided
+- Family history: Not provided
+- Allergies: Not provided
+- Other concerns: None explicitly mentioned
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

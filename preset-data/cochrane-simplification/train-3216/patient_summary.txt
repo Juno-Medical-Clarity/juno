@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3216  |  gem_id: gem-cochrane-simplification-train-3217  |  doi: 10.1002/14651858.CD003850.pub5
+
+Study characteristics: We identified 15 eligible trials enrolling a total of 1690 infants. These trials were generally of good quality. Key findings: The overall analysis showed a reduction in the risk of severe fungal infection in infants who received systemic antifungal prophylaxis but did not show a difference in the risk of death. The trials did not assess the risk of long-term problems, including disabilities. Conclusions: There is evidence from some good-quality trials that giving infants an antifungal drug regularly for the first four to six weeks after birth reduces the number of infants who develop severe infection. There is not yet any convincing evidence that death or disability rates are affected.

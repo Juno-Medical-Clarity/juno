@@ -1,0 +1,5 @@
+pmid:        31268919
+question:    3
+adaptation:  adaptation3
+title:       Updates on medical management of hyperkalemia
+sentences:   9

@@ -1,0 +1,13 @@
+Background: Hashimoto's thyroiditis is an autoimmune disorder and the most common cause of hypothyroidism.
+The use of Nigella sativa, a potent herbal medicine, continues to increase worldwide as an alternative treatment of several chronic diseases including hyperlipidemia, hypertension and type 2 diabetes mellitus (T2DM).
+The aim of the current study was to evaluate the effects of Nigella sativa on thyroid function, serum Vascular Endothelial Growth Factor (VEGF) - 1, Nesfatin-1 and anthropometric features in patients with Hashimoto's thyroiditis.
+Methods: Forty patients with Hashimoto's thyroiditis, aged between 22 and 50 years old, participated in the trial and were randomly allocated into two groups of intervention and control receiving powdered Nigella sativa or placebo daily for 8 weeks.
+Changes in anthropometric variables, dietary intakes, thyroid status, serum VEGF and Nesfatin-1 concentrations after 8 weeks were measured.
+Results: Treatment with Nigella sativa significantly reduced body weight and body mass index (BMI).
+Serum concentrations of thyroid stimulating hormone (TSH) and anti-thyroid peroxidase (anti-TPO) antibodies decreased while serum T3 concentrations increased in Nigella sativa-treated group after 8 weeks.
+There was a significant reduction in serum VEGF concentrations in intervention group.
+None of these changes had been observed in placebo treated group.
+In stepwise multiple regression model, changes in waist to hip ratio (WHR) and thyroid hormones were significant predictors of changes in serum VEGF and Nesgfatin-1 values in Nigella sativa treated group (P < 0.05).
+Conclusions: Our data showed a potent beneficial effect of powdered Nigella sativa in improving thyroid status and anthropometric variables in patients with Hashimoto's thyroiditis.
+Moreover, Nigella sativa significantly reduced serum VEGF concentrations in these patients.
+Considering observed health- promoting effect of this medicinal plant in ameliorating the disease severity, it can be regarded as a useful therapeutic approach in management of Hashimoto's thyroiditis.

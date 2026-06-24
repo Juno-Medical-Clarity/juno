@@ -1,0 +1,3 @@
+Doctor:  What type of surgery have you had in past? Anything big or small?
+Patient: I had a C section for my kiddo and one D and C.
+Doctor: Okay.

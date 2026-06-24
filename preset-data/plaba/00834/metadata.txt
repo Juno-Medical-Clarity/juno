@@ -1,0 +1,5 @@
+pmid:        29548061
+question:    67
+adaptation:  adaptation2
+title:       The Role of Virtual Rehabilitation in Total and Unicompartmental Knee Arthroplasty
+sentences:   19

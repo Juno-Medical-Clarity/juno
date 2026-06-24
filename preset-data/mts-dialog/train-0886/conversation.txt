@@ -1,0 +1,9 @@
+Doctor: What brings you in today?
+Patient: I have this nasty cough and my nose has been super stuffy.
+Doctor: Are you bringing anything up when you cough?
+Patient: Not really, no.
+Doctor: Are you having any other symptoms, such as chest pain, headaches, nausea, or vomiting?
+Patient: No. I did have a slight headache last night but I took Advil and it's since gotten better.
+Doctor: Are you taking anything for the cough or stuffy nose?
+Patient: Just drinking tea and taking cough drops here and there.
+Doctor: Okay. Let's take a look at you. Hm it appears that you have a U R I.

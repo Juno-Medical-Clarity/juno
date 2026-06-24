@@ -1,0 +1,7 @@
+source:      pnas
+side:        simple
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [2:9] 'medical-jargon-google-hard' -> 'proliferation of diapausing embryonic roe deer cells'

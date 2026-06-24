@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0014  |  gem_id: gem-cochrane-simplification-validation-15  |  doi: 10.1002/14651858.CD007208.pub3
+
+We included four studies involving 365 women. High or low feedback of prenatal ultrasound to reduce women's state of anxiety is not supported by evidence from the three randomised controlled trials, involving 346 pregnant women, that looked at this outcome (low-quality evidence). Two trials with a total of 148 women reported on the women's views on the level of feedback. The women in the high feedback groups were not clearly more likely to choose very positive adjectives to describe their feelings after the scan. One trial with 129 participants reported that women who had high feedback during ultrasound were more likely to stop smoking and avoid alcohol during pregnancy. The trials were reported on between 1985 and 1996.

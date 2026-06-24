@@ -1,0 +1,5 @@
+pmid:        33851778
+question:    64
+adaptation:  adaptation2
+title:       Parental mosaicism in de novo neurodevelopmental diseases
+sentences:   10

@@ -1,0 +1,17 @@
+Doctor: Are you experiencing any headaches, or do you have any history of migraine?
+Patient: No.
+Doctor: Any temporary loss of consciousness?
+Patient: No.
+Doctor: Any feeling of being off balance or fainting?
+Patient: No.
+Doctor: Any continuous sound you may hear?
+Patient: No.
+Doctor: Okay so no tinnitus. Any mouth sores or ulcers?
+Patient: Um, no.
+Doctor: Do you notice any change in your voice, any hoarseness?
+Patient: No, nothing like that.
+Doctor: Did you notice any swelling in and around your mouth?
+Patient: No, I did not.
+Doctor: Any history of goiter or swelling of your thyroid gland?
+Patient: Nope.
+Doctor: Okay.

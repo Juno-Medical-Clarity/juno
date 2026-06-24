@@ -1,0 +1,1 @@
+First, the algorithm represents the set of electrodes using a directed graph in which nodes correspond to recording electrodes and the edges' weights quantify the pair-wise causal influence between the recorded signals.

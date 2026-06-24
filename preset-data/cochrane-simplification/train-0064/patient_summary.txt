@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0064  |  gem_id: gem-cochrane-simplification-train-65  |  doi: 10.1002/14651858.CD008534.pub2
+
+Our review included two randomised controlled trials (involving 154 women) comparing surgical repair of first-degree (involving only the perineal or vaginal skin) or second-degree tears (also involving muscle) with leaving the wound to heal spontaneously. These trials showed no clear differences in clinical outcomes between the groups. The studies did not find any differences in pain immediately and up to eight weeks postpartum. One of the trials reported no difference in wounds complications, but the other showed differences in wound closure and poor wound approximation in the non-sutured group. There was no information about the effect on long-term outcomes such as sexual discomfort or incontinence. More research is needed to provide a strong evidence-based recommendation for clinical practice.

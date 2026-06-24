@@ -1,0 +1,6 @@
+Doctor: Good afternoon, ma'am.
+Patient: Good afternoon, doctor.
+Doctor: Have you ever had surgery, ma'am?
+Patient: Actually, yes I have. I had pinning surgery done on both of my ears.
+Doctor: Do you remember how old you were when you had surgery?
+Patient: Um, I was five or six years old. It was when I was a kid, I know that for sure.

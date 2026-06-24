@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2495  |  gem_id: gem-cochrane-simplification-train-2496  |  doi: 10.1002/14651858.CD004682.pub2
+
+In this review we included all studies that compared three-day therapy with longer treatment (five days or more). Three days of treatment were adequate to achieve symptomatic relief for most patients, but it appears that longer therapy is better in terms of bacteria elimination from the urine, no matter what antibiotic is used. Longer therapy for UTI is related to higher rate of adverse reactions to the antibiotics used. Pending further research, it could be considered for women in whom eradication of bacteria in the urine is important.

@@ -1,0 +1,13 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'ARAT'
+  [7:9] 'medical-jargon-google-easy' -> 'neural values'
+  [25:27] 'medical-jargon-google-easy' -> 'corticospinal connectivity'
+  [44:45] 'abbr-medical' -> 'MPT'
+  [46:47] 'abbr-medical' -> 'CPT'
+  [47:50] 'medical-jargon-google-easy' -> 'resting motor threshold'
+  [50:51] 'abbr-medical' -> 'pBB'

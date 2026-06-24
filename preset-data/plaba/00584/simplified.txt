@@ -1,0 +1,10 @@
+We aimed to rate how well pentoxifylline (PTX) applied to the skin worked to heal bedsores in critically ill patients.
+This was a medical study involving human participants in which neither side knew who was getting what treatment, and either PTX 5% or ointment with no medicine was applied to the skin twice a day for 14 days.
+We measured changes in bedsore category and size.
+We used a common scoring system to measure the severity of bedsores and bedsore stage at the beginning of the study and on study days 7 and 14.
+We measured bedsore length and width with a disposable ruler.
+We studied a total of 112 adult patients.
+Median (average) bedsore size and score at the beginning of the study were 32cm2 and 1, respectively.
+The average differences of bedsore scores and sizes decreased significantly between measurement days (day seven versus day zero, day 14 versus day zero, and day 14 versus day seven) compared to the ointment with no medicine.
+We conclude that the seriousness and size of bedsores improved significantly in patients who received PTX 5% ointment applied to the skin twice a day for 14 days compared to those who received ointment with no medicine.
+PTX applied to the skin may be a potential treatment option for stage I or II bedsores in critically ill patients.

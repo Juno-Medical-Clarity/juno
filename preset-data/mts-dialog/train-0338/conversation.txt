@@ -1,0 +1,10 @@
+Doctor: How have you been feeling? How is your leg feeling?
+Patient: My right leg is in a lot of pain. The nurse just changed the bandage. I only have a rash where the bandage is.
+Doctor: It looks like we have you taking Vicodin for the pain. Is the medication not helping?
+Patient: The pain medication is horrible. I have been throwing up, off and on. I have been constipated since I have been here.
+Doctor: I'll note that. Vomiting since February nineteen of two thousand seven. I am sorry to hear that. I will make a change to the medication and get you something for the constipation issue.
+Patient: Thank you.
+Doctor: Have you had any shortness of breath, chest pain or coughing up blood?
+Patient: No.
+Doctor: Any joint pain, headaches or rashes?
+Patient: No. Just a rash where the bandages are like I said earlier. I also want to discuss this acne while I am here. I have had it for about two years. It's nothing big, just mild to moderate in severity.

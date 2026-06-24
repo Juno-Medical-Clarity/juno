@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1004  |  gem_id: gem-cochrane-simplification-train-1005  |  doi: 10.1002/14651858.MR000009.pub4
+
+This updated review assessed whether there were harmful or beneficial effects from participating in randomized controlled trials (RCTs). The outcomes of patients who participated in RCTs were compared with outcomes of patients who were eligible for the trial and received similar clinical interventions, but did not participate. Comparisons were included both of 'experimental' treatment inside and outside of RCT and of 'control' treatment comparisons. On average, the outcomes of patients participating and not participating in RCTs were similar, suggesting that participation in RCTs, independent of the effects of the clinical interventions being compared, is likely to be comparable.

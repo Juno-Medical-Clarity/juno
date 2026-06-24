@@ -1,0 +1,8 @@
+source:      elife
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [3:4] 'abbr-medical' -> 'FEL'
+  [10:11] 'medical-jargon-google-easy' -> 'proteasome'

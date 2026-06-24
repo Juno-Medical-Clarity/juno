@@ -1,0 +1,5 @@
+pmid:        24473982
+question:    55
+adaptation:  adaptation1
+title:       Mitochondrial dysfunction and chronic disease: treatment with natural supplements
+sentences:   6

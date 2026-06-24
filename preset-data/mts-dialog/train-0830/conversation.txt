@@ -1,0 +1,24 @@
+Doctor: Hi there! Welcome to the Neurology clinic, sir.
+Patient: Hi! Thank you.
+Doctor: What brings you in to the clinic today?
+Patient: I was diagnosed with binocular diplopia twenty five years ago but I haven't had much of an issue with it until about a year ago.
+Doctor: What did you notice as far as symptoms?
+Patient: Suddenly, I started having double vision.
+Doctor: Did the double vision happen more than one time?
+Patient: It has been happening almost every day off and on through out the day.
+Doctor: How long do the episodes last?
+Patient: They last for only a few minutes at a time. When I was first diagnosed years ago it happened for a year and then it stopped happening. It was not happening as often as it is now.
+Doctor: Did you ever receive any treatment for your binocular diplopia?
+Patient: No. It spontaneously resolved and so I didn't need to seek any treatment. Back when all this was happening it had two episodes of a drooping eyelid. I thought I had myasthenia gravis but I was told that that was probably not the case.
+Doctor: What eyelid was drooping?
+Patient: I don't remember?
+Doctor: What is your dominate hand?
+Patient: I am right handed.
+Doctor: And how old are you?
+Patient: I am sixty seven.
+Doctor: Involving the double vision, does it become worse when looking at distant objects?
+Patient: Yes.
+Doctor: When you look at objects off to either side of midline does it become worse?
+Patient: Yes. That makes it worse too. When I put my hand over one eye is goes away.
+Doctor: Do you have any other symptoms related to the vision issues?
+Patient: No.

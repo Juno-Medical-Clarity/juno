@@ -1,0 +1,12 @@
+Uncontrolled bleeding is the leading cause of shock in trauma patients and delays in recognition and treatment have been linked to adverse outcomes.
+For prompt detection and management of hypovolaemic shock, ATLS(®) suggests four shock classes based upon vital signs and an estimated blood loss in percent.
+Although this classification has been widely implemented over the past decades, there is still no clear prospective evidence to fully support this classification.
+In contrast, it has recently been shown that this classification may be associated with substantial deficits.
+A retrospective analysis of data derived from the TraumaRegister DGU(®) indicated that only 9.3% of all trauma patients could be allocated into one of the ATLS(®) shock classes when a combination of the three vital signs heart rate, systolic blood pressure and Glasgow Coma Scale was assessed.
+Consequently, more than 90% of all trauma patients could not be classified according to the ATLS(®) classification of hypovolaemic shock.
+Further analyses including also data from the UK-based TARN registry suggested that ATLS(®) may overestimate the degree of tachycardia associated with hypotension and underestimate mental disability in the presence of hypovolaemic shock.
+This finding was independent from pre-hospital treatment as well as from the presence or absence of a severe traumatic brain injury.
+Interestingly, even the underlying trauma mechanism (blunt or penetrating) had no influence on the number of patients who could be allocated adequately.
+Considering these potential deficits associated with the ATLS(®) classification of hypovolaemic shock, an online survey among 383 European ATLS(®) course instructors and directors was performed to assess the actual appreciation and confidence in this tool during daily clinical trauma care.
+Interestingly, less than half (48%) of all respondents declared that they would assess a potential circulatory depletion within the primary survey according to the ATLS(®) classification of hypovolaemic shock.
+Based on these observations, a critical reappraisal of the current ATLS(®) classification of hypovolaemic seems warranted.

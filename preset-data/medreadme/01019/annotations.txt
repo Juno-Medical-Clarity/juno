@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'Kallithea virus'
+  [8:9] 'general-complex' -> 'tractable'
+  [16:18] 'medical-jargon-google-easy' -> 'D. melanogaster'
+  [19:21] 'medical-jargon-google-easy' -> 'DNA viruses'
+  [38:40] 'medical-jargon-google-easy' -> 'DNA viruses'

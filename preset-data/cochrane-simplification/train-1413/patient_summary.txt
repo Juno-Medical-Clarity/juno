@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1413  |  gem_id: gem-cochrane-simplification-train-1414  |  doi: 10.1002/14651858.CD001720.pub2
+
+We undertook this review to determine the effects of pipotiazine palmitate for schizophrenia in comparison to placebo, other oral antipsychotics and other depot antipsychotics. We included results of 12 medium term trials, two long term trials, three short term trials and one trial that looked at immediate effects. We found that depot pipotiazine is effective for the treatment of schizophrenia, but overall was similar in effect to other depots and oral typical antipsychotic drugs.

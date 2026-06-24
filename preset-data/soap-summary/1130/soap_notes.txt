@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1130
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: None explicitly mentioned.
+- Severity: Smoking 7-8 packs per day; heavy drinking.
+- Duration: Long history of chain smoking and heavy drinking for many years.
+- Associated symptoms: None explicitly mentioned.
+- Relevant medical history: Long history of smoking and drinking.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Other concerns: None explicitly mentioned; the patient lives with her boyfriend.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

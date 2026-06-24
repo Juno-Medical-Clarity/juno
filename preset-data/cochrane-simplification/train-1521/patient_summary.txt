@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1521  |  gem_id: gem-cochrane-simplification-train-1522  |  doi: 10.1002/14651858.CD010693.pub5
+
+We identified five studies to 30 July 2019 including a total of 5039 participants. Four studies evaluated the drug pioglitazone, and one study evaluated rosiglitazone. Four studies included participants who had no history of diabetes, and one study included only participants with diabetes. Compared with placebo tablets, PPAR-γ agonists reduced recurrent strokes and other blood vessel disease, improved the body's response to insulin, and stabilised fatty deposits in artery walls. The drugs also appeared to be well tolerated, but the evidence for this was inconclusive. Our conclusions should be interpreted with caution considering the small number of included studies and the limited quality of some of the studies. Further well-designed randomised controlled trials with large sample sizes are required.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2394  |  gem_id: gem-cochrane-simplification-train-2395  |  doi: 10.1002/14651858.CD006743.pub2
+
+This review looked at all studies where patients were randomized to one of these drugs or placebo, in this period. One class of blood pressure lowering drug, the so-called nitrates, demonstrated reduction in mortality in patients with heart attack. For 1000 patients treated 4 to 8 deaths were prevented during the first 2 days of this acute event. The ACE-inhibitors class also decrease mortality when continued for 10 days (3 to 5 deaths prevented per 1000). No other class of drug showed a reduction in mortality.

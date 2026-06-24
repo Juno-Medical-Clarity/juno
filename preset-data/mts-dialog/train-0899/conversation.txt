@@ -1,0 +1,10 @@
+Doctor: I just need to confirm a few pieces of information from my nurse before we begin today, sir.
+Patient: Sure, no problem, doctor.
+Doctor: Great, so it says here that you are forty five years old, and you identify as Caucasian. Is that correct?
+Patient: Yes, that's correct.
+Doctor: Thank you, so, what seems to be the problem today?
+Patient: Well, I have this pain in my right knee, sir.
+Doctor: Where is your pain?
+Patient: It's right here, on the inside of my right knee.
+Doctor: Is there an injury associated with this pain?
+Patient: Actually, yeah. I twisted it while I was at work.

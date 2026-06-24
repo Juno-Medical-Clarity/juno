@@ -1,0 +1,4 @@
+Doctor: How is your foot feeling?
+Patient: It feels good.
+Doctor: Any pain or discomfort when you walk around on it?
+Patient: No. I am good doc.

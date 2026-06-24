@@ -1,0 +1,59 @@
+# SOAP Notes — Sample 0089
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Worsening breathlessness and cough for 2 years
+- SOB most of the time, worse with exertion (walking, working in garden)
+- Cough worse with exertion
+- No triggers 2 years ago, started gradually
+- SOB described as inability to catch breath, trouble taking full breath
+- SOB severity 8/10 with exertion
+- No prior episodes of SOB before 2 years ago
+- Gradually worsening over time
+- Dry cough, no sputum or hemoptysis
+- No wheeze
+- No SOB when lying down or at night
+- Occasional chills, no fever
+- Night sweats a few times per week for a couple months (sweating covering bedsheets)
+- 3 kg weight loss over last few months
+- Fatigue
+- Difficulty getting out of house due to SOB
+- No chest pain, edema, palpitations, GI symptoms, urinary symptoms, dizziness, syncope, confusion, memory loss
+
+PMHx:
+- Hypertension
+- Benign prostatic hyperplasia
+- Childhood pneumonia
+
+Medications:
+- Ramipril (hypertension) >10 years
+
+Allergies: None
+
+Immunizations: Up to date (shingles, pneumonia)
+
+FHx:
+- Father: T2DM, 2 strokes, MI at 56, died of bowel cancer in 70s
+- Mother: T2DM, hypertension, hypothyroidism, depression
+
+SocHx:
+- Lives alone in apartment
+- Difficulty getting out of house due to SOB
+- Never smoker
+- No alcohol or recreational drug use
+- Retired hospital volunteer
+- No sick contacts
+- No recent travel
+
+Objective:
+- Vitals not provided
+- Examination not performed
+
+Assessment:
+- Pulmonary fibrosis (autoimmune or post-infectious)
+- Lung cancer
+- Asthma
+- COPD (less likely given non-smoking status)
+
+Plan:
+- Workup for pulmonary fibrosis, lung cancer, asthma, COPD

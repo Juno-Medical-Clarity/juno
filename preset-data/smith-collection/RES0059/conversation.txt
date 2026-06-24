@@ -1,0 +1,230 @@
+# Smith Collection Transcript: RES0059
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How are you doing
+
+Patient: Oh not too great ive had this cough the last few days
+
+Doctor: OK umm how old are you
+
+Patient: Im 36
+
+Doctor: OK so for the past couple of days you said so is that two days three days
+
+Patient: I think 3 three days
+
+Doctor: OK and is it a dry cough or are you bringing up anything
+
+Patient: Its dry
+
+Doctor: OK so no sputum no blood
+
+Patient: No blood
+
+Doctor: OK and do you feel wheezy at all
+
+Patient: No no wheezing
+
+Doctor: No  shortness of breath
+
+Patient: Now i ran to catch the bus yesterday and i was a bit more short of breath than i would usually be
+
+Doctor: OK and have you had a fever
+
+Patient: Ive felt hot yes
+
+Doctor: OK did you actually take your temperature or do you just feel hot
+
+Patient: I just got hot
+
+Doctor: OK so we can take your temperature today any chest pain
+
+Patient: No chest pain
+
+Doctor: OK and any throat pain
+
+Patient: Yeah my throats been a little sore but i thought it was maybe just because i was coughing so much
+
+Doctor: OK and any issues swallowing food
+
+Patient: Umm no problems swallowing food
+
+Doctor: OK any changes in your smell
+
+Patient: Now that you mention it yeah i thought it was maybe just plugged up but i havent really been able to smell these last few days
+
+Doctor: OK and how about hearing any changes in your hearing
+
+Patient: No changes there
+
+Doctor: OK any ear pain
+
+Patient: No ear pain no
+
+Doctor: OK any changes in your vision
+
+Patient: Umm i got glasses last year but nothing recently
+
+Doctor: OK and any eye pain or discharge from the eyes
+
+Patient: No
+
+Doctor: OK and have you had any night sweats or chills
+
+Patient: Nothing like that
+
+Doctor: Any weight loss
+
+Patient: No weight loss no
+
+Doctor: OK and then how about changes in your bowel movements
+
+Patient: No everythings been regular there
+
+Doctor: OK no diarrhea no constipation no blood in your stool
+
+Patient: No diarrhea no constipation and i havent noticed any blood
+
+Doctor: OK any changes in your urine
+
+Patient: uh no
+
+Doctor: No ok um how about muscle aches or pains
+
+Patient: I felt pretty uh well yeah i guess achy and weak
+
+Doctor: Did that start around the same time that you experienced your cough and possible fever
+
+Patient: Yeah i would say it started around the same time
+
+Doctor: OK any dizziness
+
+Patient: uh no
+
+Doctor: Any confusion or memory loss
+
+Patient: No
+
+Doctor: OK any fainting spells
+
+Patient: No
+
+Doctor: Any rashes
+
+Patient: I havent noticed any rashes
+
+Doctor: OK so its your cough and just in general how you feel does it get better or worse with anything have you tried you know tylenol and any antipyretics
+
+Patient: Yeah i tried some uh like day and night time tylenol at home to sleep but still when i woke up in the morning still not feeling very good and the cough is still here too
+
+Doctor: OK yeah have you ever experienced anything like this before
+
+Patient: Maybe as a kid i mean i remember getting the flu i had a cough and that sort of thing but i havent been sick for several years now
+
+Doctor: OK umm and then since you started having this cough too now has anything changed how are you feeling worse or do you feel kind of the same as when it started
+
+Patient: I would say i feel a bit worse
+
+Doctor: OK and has anyone around you been sick recently
+
+Patient: Umm no not that i know of yeah everybody in the house has been ok
+
+Doctor: OK have you traveled anywhere recently
+
+Patient: Umm yeah i was visiting some cousins up north several weeks ago but that was just traveling within the province
+
+Doctor: OK and theyre fine no one is sick
+
+Patient: I havent heard of anybody being sick
+
+Doctor: OK and are you otherwise healthy do you have any medical conditions
+
+Patient: Ive been told i had high cholesterol before but i dont take any medications for it ive been just trying to lose some weight and exercise more
+
+Doctor: Sure ok no surgeries or hospitalizations in the past
+
+Patient: No
+
+Doctor: OK and no other medications
+
+Patient: Umm no  i just take a multivitamin
+
+Doctor: OK and no other you know over the counter medications or herbal stuff
+
+Patient: No ill use my tylenol or ibuprofen or advil i guess if i get the occasional headache  and i guess umm something like reactine or claritin for the seasonal allergies but thats about it
+
+Doctor: OK and so you said seasonal allergies any other allergies
+
+Patient: Umm no just usually like in the springtime
+
+Doctor: OK and are you up to date with all your immunizations
+
+Patient: Yeah i am yeah i get the flu shot every year
+
+Doctor: OK good and in terms of family history do any of your family members have lung conditions or heart conditions
+
+Patient: I know mom has high blood pressure but nobodys had a heart attack or uh no lung conditions either
+
+Doctor: OK any cancers that run in the family
+
+Patient: Umm none i cant think of any
+
+Doctor: OK and then do you smoke
+
+Patient: I just i smoke cannabis every once in awhile
+
+Doctor: OK how much do you smoke
+
+Patient: um i would say maybe i enjoy it on the weekends
+
+Doctor: Did you say a joint on the weekends
+
+Patient: Yes
+
+Doctor: OK so is that like 1 milligram
+
+Patient: Yeah i would say something about that yeah its not much
+
+Doctor: OK but no cigarettes though
+
+Patient: No
+
+Doctor: OK any other recreational drugs
+
+Patient: No
+
+Doctor: OK and do you drink alcohol
+
+Patient: Umm i do yeah ill have like two or three beers on the weekend
+
+Doctor: Sure and and where do you live
+
+Patient: Im just like 20 minutes down the road in a house here
+
+Doctor: Sure is it an apartment complex or is it like a full house
+
+Patient: Yeah its a single family home i live there with my wife and three kids
+
+Doctor: OK um any concerns with your living arrangements you know like old carpets or anything like that
+
+Patient: Actually last year we had most of the carpets taken out so not anymore
+
+Doctor: OK good good did you have any other questions or concerns anything that you wanted to bring up that i didnt touch on today
+
+Patient: Yeah i was just really worried that this could be covii mean i have a cough and just have been feeling really hot so i was just concerned about that
+
+Doctor: Yeah for sure and i think thats a valid concern so right now im just going through you know a list of differential diagnoses that you could possibly have and coviits definitely top on my list and so we will likely get a swab and run those tests and try to get that back to you as soon as we can it could also be other respiratory infections especially viral infections this time of the year and so if it comes back negative for coviits probably you know something else like respiratory virus or even the flu so well go from there and if it turns out its not a viral infection we will likely see if its some sort of bacterial infection in which we can prescribe antibiotics for those but it definitely sounds like theres an infectious picture going on here because of the acuteness of the presentation and just your symptoms so we will do afollow up in a week or so until then we will run all these labs does that sound good
+
+Patient: Alright yeah that sounds good so i guess i will kind of self isolate until the coviresults come back
+
+Doctor: Oh yes please do so thats thats a great point i do suggest isolating for two weeks at least if you have any sort of symptoms because even though the pcr that we do to test for coviis supposed to be reliable and its supposed to be specific and sensitive there are sometimes false negative tests you know just to be on the safe side if youre experiencing any of the symptoms that overlap with covisymptoms isolate for two weeks but by the end of the week we should know what the test results are and then you will know for sure what you have
+
+Patient: OK awesome thank you
+
+Doctor: Yeah thank you

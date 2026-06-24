@@ -1,0 +1,16 @@
+Doctor: Good morning, can you tell me more about your son, ma'am.
+Guest_family: Sure, he's forty six, White, and he has Down syndrome.
+Doctor: Great, thank you. Is he still having problems with his hypothyroidism and onychomycosis?
+Guest_family: Yes, that's correct doctor.
+Doctor: Has he remained complaint with his Lamisil?
+Guest_family: Yes, he's taken six weeks of it with no problems.
+Doctor: Good, so we'll do an A L T blood test today.
+Guest_family: Why is that doctor?
+Doctor: Well, at his last appointment in April, he had an elevated T S H level. So, we should recheck that today.
+Guest_family: Yes, I remember that.
+Doctor: Has he been taking his Levothroid daily as well?
+Guest_family: Yes, he has, he doesn't like it, but I help him with it, and he eventually takes it.
+Doctor: Good, thanks for taking care of him, Mom.
+Guest_family: Oh, it's my job.
+Doctor: Does he take any other medications?
+Guest_family: He has some medicated eye drops for his cornea.

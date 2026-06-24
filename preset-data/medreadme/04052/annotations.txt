@@ -1,0 +1,11 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [10:11] 'medical-jargon-google-easy' -> 'vector'
+  [11:13] 'abbr-general' -> 'Aedes aegypti'
+  [19:20] 'medical-jargon-google-easy' -> 'epidemic'
+  [22:23] 'medical-jargon-google-easy' -> 'dengue'
+  [27:28] 'medical-jargon-google-easy' -> 'epidemics'

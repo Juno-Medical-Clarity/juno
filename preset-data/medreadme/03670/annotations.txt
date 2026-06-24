@@ -1,0 +1,10 @@
+source:      plos_genetics
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'autophagy induction'
+  [6:7] 'abbr-medical' -> 'ttis450'
+  [15:17] 'medical-jargon-google-easy' -> 'Tor pathway'
+  [21:24] 'medical-jargon-google-easy' -> 'Tp53 - mutant'

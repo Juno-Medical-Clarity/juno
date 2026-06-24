@@ -1,0 +1,5 @@
+pmid:        32791919
+question:    57
+adaptation:  adaptation2
+title:       Concomitant continuous pain in patients with trigeminal neuralgia is associated with trigeminal nerve root atrophy
+sentences:   12

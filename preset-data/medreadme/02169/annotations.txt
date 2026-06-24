@@ -1,0 +1,7 @@
+source:      pnas
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [28:31] 'medical-jargon-google-easy' -> 'abiotic stress response'

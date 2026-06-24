@@ -1,0 +1,14 @@
+Doctor: So, you and your husband live together, correct?
+Patient: Yes. It's a miracle we've lasted this long.
+Guest_family: Can't argue that.
+Doctor: Are you able to walk any distance without assistance?
+Guest_family: She's most comfortable in her wheelchair, but she usually walks with a walker if she's at home.
+Patient: Yeah, he's right.
+Doctor: And how often do you walk with your walker?
+Patient: If I were to guess, I'd say half the time.
+Doctor: Great.
+Guest_family: If I'm nearby, I like to keep any eye on her incase she feels unstable and needs help sitting back down.
+Doctor: It's good that you're both looking out for each other. Now moving onto the last few questions. Do you smoke or drink?
+Patient: No and no.
+Doctor: Did you smoke or drink in the past?
+Patient: No.

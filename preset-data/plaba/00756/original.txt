@@ -1,0 +1,9 @@
+At the start of the COVID-19 pandemic, the Centers for Disease Control and Prevention (CDC) designed, manufactured, and distributed the CDC 2019-Novel Coronavirus (2019-nCoV) Real-Time RT-PCR Diagnostic Panel for SARS-CoV-2 detection.
+The diagnostic panel targeted three viral nucleocapsid gene loci (N1, N2, and N3 primers and probes) to maximize sensitivity and to provide redundancy for virus detection if mutations occurred.
+After the first distribution of the diagnostic panel, state public health laboratories reported fluorescent signal in the absence of viral template (false-positive reactivity) for the N3 component and to a lesser extent for N1.
+This report describes the findings of an internal investigation conducted by the CDC to identify the cause(s) of the N1 and N3 false-positive reactivity.
+For N1, results demonstrate that contamination with a synthetic template, that occurred while the "bulk" manufactured materials were located in a research lab for quality assessment, was the cause of false reactivity in the first lot.
+Base pairing between the 3' end of the N3 probe and the 3' end of the N3 reverse primer led to amplification of duplex and larger molecules resulting in false reactivity in the N3 assay component.
+We conclude that flaws in both assay design and handling of the "bulk" material, caused the problems with the first lot of the 2019-nCoV Real-Time RT-PCR Diagnostic Panel.
+In addition, within this study, we found that the age of the examined diagnostic panel reagents increases the frequency of false positive results for N3.
+We discuss these findings in the context of improvements to quality control, quality assurance, and assay validation practices that have since been improved at the CDC.

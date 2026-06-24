@@ -1,0 +1,8 @@
+Doctor: Any numbness or tingling?
+Patient: No.
+Doctor: Are your experiencing any muscle weakness?
+Patient: No.
+Doctor: Any problem walking, or did you lose balance or fall?
+Patient: Nope.
+Doctor: So, your gait is fine. Any stroke in the past?
+Patient: No, nothing like that.

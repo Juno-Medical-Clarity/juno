@@ -1,0 +1,10 @@
+source:      plos_genetics
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'prophages'
+  [9:11] 'medical-jargon-google-easy' -> 'tRNA genes'
+  [15:17] 'medical-jargon-google-easy' -> 'integrase gene'
+  [20:21] 'medical-jargon-google-easy' -> 'tRNA'

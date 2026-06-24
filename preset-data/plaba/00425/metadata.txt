@@ -1,0 +1,5 @@
+pmid:        29018999
+question:    33
+adaptation:  adaptation1
+title:       Population pharmacokinetics of gabapentin in healthy Korean subjects with influence of genetic polymorphisms of ABCB1
+sentences:   15

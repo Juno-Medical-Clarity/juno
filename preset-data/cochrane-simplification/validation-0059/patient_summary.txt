@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0059  |  gem_id: gem-cochrane-simplification-validation-60  |  doi: 10.1002/14651858.CD007613.pub2
+
+This review shows that ESAs improves anaemia, exercise tolerance, quality of life and reduces symptoms in heart failure patients with a mild anaemia. ESAs may also reduce hospital admission and improve survival. There was no increase in major side effects in those receiving ESA therapy compared to control over the 2-12 month study period (maximum 12 months) although the effects of treatment over a longer period are not known. More research is needed to clarify the full effects and safety of ESAs as a treatment for anaemia in these patients.

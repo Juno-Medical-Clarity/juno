@@ -1,0 +1,5 @@
+pmid:        23109000
+question:    4
+adaptation:  adaptation2
+title:       Are the ADA hemoglobin A(1c) criteria relevant for the diagnosis of type 2 diabetes in youth?
+sentences:   8

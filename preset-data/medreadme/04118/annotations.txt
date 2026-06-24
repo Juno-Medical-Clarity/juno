@@ -1,0 +1,9 @@
+source:      elife
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [3:11] 'medical-jargon-google-hard' -> 'quiescent neural crest - derived nestin + cells'
+  [12:13] 'abbr-medical' -> 'MSC'
+  [19:21] 'medical-jargon-google-easy' -> 'fetal chondrocytes'

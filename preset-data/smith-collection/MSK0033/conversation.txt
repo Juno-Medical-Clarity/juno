@@ -1,0 +1,160 @@
+# Smith Collection Transcript: MSK0033
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Ive been having this pain in my knee and its been going on now for a few weeks its kind of right at the i could feel it right below my kneecap and at first it it was really only bothering me after activity but now its starting to hurt during as well and so its its trying to limit my ability to play basketball
+
+Doctor: OK and so you said this started just two weeks ago
+
+Patient: Yeah about about a few yeah few weeks ago
+
+Doctor: OK and has the pain so its been getting a bit worse and with activity and its right below your kneecap is it the right way or the left leg
+
+Patient: Yeah its on the right side its my right right side yeah
+
+Doctor: OK and what kind of pain are you experiencing is it kind of a sharp pain or is it a dull aching pain
+
+Patient: Its uh its pretty achy
+
+Doctor: Yeah it take you ok and does the pain travel anywhere else or does it its just right below your kneecap
+
+Patient: Its right below my kneecap yeah i feel like its just over a kind of a small area its a pretty specific spot and if i press on that area at all it gives me a pretty its a sharp pain if i if i press on it sharp pain
+
+Doctor: OK and on a scale of zero to 1010 being the worst pain you felt in your life how much would you rank the rate this pain
+
+Patient: I its about about a six or seven
+
+Doctor: Six or seven ok and is it a constant pain or like do you get the pain when youre not playing basketball or doing other activities
+
+Patient: um ill get it if im like sometimes ill feel it if im going upstairs like walking upstairs or like if im sitting for a long long time and i i get up itll feel a bit sore but its mostly if im like doing activities like running or jumping doing like strenuous stuff like that
+
+Doctor: OK i see an has this ever happened before
+
+Patient: No i havent had any any issues with my knee before
+
+Doctor: OK and otherwise are you having any other symptoms besides the pain like any numbness tingling
+
+Patient: No nothing like that its just the pain
+
+Doctor: OK and any weakness in your legs
+
+Patient: um no no weakness
+
+Doctor: OK and uh have you tried anything that improves the pain at all or anything that makes it worse
+
+Patient: um i i have tried taking some like tylenol and advil and that or or and nsaids that and it has helped with the pain ive tried icing it too like after practice and stuff like that which does seem to help a little bit but uh yeah thats about it
+
+Doctor: OK ok and other than that did you like have a fall or did you have any injuries recently before you started having this pain
+
+Patient: No its kind of come on on its own no falls or like trauma to the knee
+
+Doctor: OK and other than that are you healthy do you have any medical conditions at all
+
+Patient: um yeah i dont have anything i am healthy
+
+Doctor: OK any medications that you take on a regular basis
+
+Patient: No not not nothing i dont take anything
+
+Doctor: OK any allergies
+
+Patient: No allergies
+
+Doctor: OK and have you been sick recently at all with fevers chills any cold or viral symptoms
+
+Patient: No i havent had anything like that ive been feeling well
+
+Doctor: OK uhm any changes in your skin like any rashes
+
+Patient: No i havent had any any rashes
+
+Doctor: OK and any kind of shortness of breath chest pain
+
+Patient: Nope nothing like that
+
+Doctor: OK and any changes in your bowel movements or urinary patterns
+
+Patient: No i havent had any changes there
+
+Doctor: OK ok and do you have any recent or like past history of any hospitalizations or surgeries
+
+Patient: No i i havent had anything like that
+
+Doctor: OK and any family history of any musculoskeletal conditions or any anything that runs in the family
+
+Patient: No not nothing like that no
+
+Doctor: OK ok and currently right now do you do you go to school or do you work at all
+
+Patient: Yeah i go to school and uh i play on the uh soccer team and the basketball team its basketball season right now and uh in grade 10
+
+Doctor: OK in grade 10 ok and school going well any issues at all with bullying or anything like that
+
+Patient: No schools been been going well i have been doing well in my courses and have a good group of friends so i enjoy it its fun
+
+Doctor: OK and whats your home situation like do you who do you live with
+
+Patient: So i live with both of my parents and i have a a younger sister as well shes in grade grade 7 and we have a dog as well
+
+Doctor: OK and do you generally feel safe at home as well as outside of your home environment
+
+Patient: I do yeah my i get along well with my parents and we yeah but my parents are great
+
+Doctor: Thats good and and this is just wanted to let you know that anything that you talk about in here with us stays confidential and wont leave this room unless there is potential harm to yourself or others so have you tried any recreational drugs like marijuana have you tried smoking or alcohol at all
+
+Patient: No ive been trying i stay away from that that sort of thing ive i know about other people in my class who have and stuff but i always just im just trying to stay as ready as i can for the sports
+
+Doctor: OK thats good and yeah so and are you up to date with all your immunizations
+
+Patient: Yeah yeah my mom made sure that i got all of that stuff done
+
+Doctor: OK alright so yeah those are some questions i had i just have a few more questions with regards to just examining your knee are you able to walk or do you have any kind of a limp
+
+Patient: No limp i can i can walk ok
+
+Doctor: OK and are you able to run
+
+Patient: Yeah i can i can run but when i do it it causes some pain im able to still run but yeah it it hurts
+
+Doctor: OK and so when you palpate your lower knee just under the patella you said its a sharp pain right
+
+Patient: Yeah exactly and then when i its and it feels kind of achey or when when like after practice or something like that but if you press on it it its sharp
+
+Doctor: And uh any any kind of like are you able to flex and extend your knee right now if you tried
+
+Patient: I can yeah
+
+Doctor: OK and have you noticed any kind of rotation of your knee at all
+
+Patient: No nothing like that
+
+Doctor: No ok ok and no weakness below your knee right
+
+Patient: No weakness i just feel like my muscles are really tight like my fly and my hamstring muscles think i need to stretch them out some more they do just feel tight
+
+Doctor: OK and do you notice any kind of swelling or redness or bruising in the area
+
+Patient: No
+
+Doctor: No ok and your ankle and hips you dont have any pain or issues with movement right
+
+Patient: No not at all no no problems with my ankle or hip
+
+Doctor: OK alright yeah so those are just all the questions i had for you today do you have any questions
+
+Patient: I was just wondering what i can do to make this go away
+
+Doctor: Yeah so definitely this is something that is what we call jumpers knee its fairly common uh amongst younger athletes especially those that play sports like volleyball or basketball but right now we dont really need to do any kind of imaging or anything like that it seems like youre in the earlier phases and its good that you came in we definitely do need to manage it with some conservative management where were going to keep having taking a look at it as well as i would recommend icing it every like for half an hour like around four to six times a day especially after youre doing your activities then you can you can take the continue taking the tylenol and advil as well as long as youre following the maximum amount per day depending on if youre taking extra strength tylenol for example versus the regular strength and then i will also refer you to some physiotherapy that will kind of a teach you some strengthening and stretching exercises that you can do to help what we call like that you will you might be having is just um some inflammation in your patellar tendon right below your patella so we need to strengthen the muscles around it so well do some referral to physiotherapy and then well see how you you do based on all those treatment options and then if it gets worse and if or if it doesnt get better we might need to do some imaging either ultrasound or an mri and then see where to go from there but for now does that sound ok with you
+
+Patient: It does yeah thank you so you said that you think its like a patellar tendonitis or something like that
+
+Doctor: Yeah its patellar tendonitis is commonly called the jumpers knee and it should resolve with the steps that we especially since it seems like youre in the earlier stages so it seems like it should be pretty responsive but if it isnt there are other steps we can discuss in the future
+
+Patient: OK that sounds great thank you

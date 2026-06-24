@@ -1,0 +1,42 @@
+# SOAP Notes — Sample 0174
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 4 week history of left knee pain, worse with running, walking downstairs, and squatting (bodyweight or with weights)
+- Sharp, 7/10 pain localized to anterior knee, behind patella
+- Pain has gradually worsened over the past month
+- Denies muscle weakness, numbness, tingling, headache, confusion, memory loss, other joint/muscle pain
+- No constitutional symptoms (weight loss, fever, chills, fatigue)
+- No skin/hair/nail changes, vision/hearing changes, respiratory symptoms, cardiovascular symptoms, GI/GU symptoms
+
+PMHx:
+- Asthma (controlled on daily inhaler, has not needed rescue inhaler recently)
+- Oral contraceptive use x7 years
+- Denies smoking, marijuana, recreational drug use
+
+FHx:
+- Grandparents with osteoarthritis
+- No family history of lung/heart conditions, autoimmune disease, or cancer
+
+SocHx:
+- Lives with roommates while finishing undergraduate degree
+
+Objective:
+- No erythema, edema, atrophy, deformity, or skin changes of left knee
+- Tenderness to palpation over left patella
+- No tenderness to palpation of quadriceps, tibial tuberosity, medial/lateral joint lines
+- No temperature difference between knees
+- Pain with standing from seated position and squatting
+- No pain with knee flexion, hip flexion, ankle dorsiflexion/plantarflexion
+- Reports crepitus in left knee
+
+Assessment:
+- Patellofemoral pain syndrome
+
+Plan:
+- Rest and avoid running temporarily; switch to low-impact activities (stationary bike, swimming)
+- RICE protocol (rest, ice, compression, elevation)
+- Ibuprofen for pain management
+- Referral to physical therapy for range of motion, strengthening, and endurance exercises
+- Consider left knee x-ray if symptoms persist despite conservative management
+- Discuss potential for arthroscopy or other surgical intervention if nonsurgical treatments are ineffective

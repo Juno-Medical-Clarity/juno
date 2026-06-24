@@ -1,0 +1,4 @@
+Doctor: I wanted to talk to you about your family medical history.
+Patient: Okay, how this will be helpful?
+Doctor: Family history plays an invaluable role in your health. It provides us with important clues and insight to predict and detect diseases before obvious symptoms appear.
+Patient: My mom dealt a long time with anxiety and stress disorder.

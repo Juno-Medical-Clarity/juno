@@ -1,0 +1,12 @@
+qid: TQ17
+source_file: 1-131151605.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Can I stop using the patch (menopausal hormone therapy) after only 4.5 months?
+nlm_summary: When can i stop using estradiol 75g patch?
+
+focus_entities:
+  [F1] (DrugSupplement) estradiol 75g patch
+question_types:
+  [T1] TAPERING

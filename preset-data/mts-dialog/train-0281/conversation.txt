@@ -1,0 +1,22 @@
+Doctor: What seems to be the problem today?
+Patient: I've been having headaches for a while now.
+Doctor: How long have you been having these headaches?
+Patient: Um, I had my first one about two months ago.
+Doctor: Did you suddenly start having them, or was it more gradual?
+Patient: Um, I'd say it was more gradual.
+Doctor: Where do you feel your headaches?
+Patient: Right here, between my eyes.
+Doctor: How would you describe your symptoms?
+Patient: I'd say it feels like a pressure sensation.
+Doctor: What's the intensity of these headaches?
+Patient: Um, they're about moderately severe, I guess.
+Doctor: Do these headaches interfere with your ability to do your activities?
+Patient: Yes, they do. My regular activities are significantly more difficult now.
+Doctor: Do you have any sinus congestion?
+Patient: Yeah, I do. I also have some light sensitivity.
+Doctor: Are you stressed out at work?
+Patient: Yes, I have a very stressful job, doctor.
+Doctor: Are you sleeping well?
+Patient: Well, no not at all. I even try to have a little drink before bed, and it doesn't help.
+Doctor: Do you have any oral symptoms, like vomiting or pain in your jaw?
+Patient: No, nothing like that.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0223  |  gem_id: gem-cochrane-simplification-validation-224  |  doi: 10.1002/14651858.CD009403.pub2
+
+This review included nine studies with a total of 1354 participants. One study reported improvement in urinary albumin levels following use of thiamine. None of the other studies reported improvement in kidney function or reduction in urinary albumin excretion after two to 36 months monotherapy with vitamin B therapy. Vitamin B therapy was reported to well-tolerated with mild side effects in studies with treatment duration of more than six months. Studies of less than six months duration did not explicitly report adverse events; they reported that the drugs were well-tolerated without any serious drug related adverse events. All these findings require confirmation in larger studies before they can be accepted as definite.

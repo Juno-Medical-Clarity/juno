@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2692  |  gem_id: gem-cochrane-simplification-train-2693  |  doi: 10.1002/14651858.CD004343.pub2
+
+A total of seven studies with 1410 preterm infants were included in this review. Most of these initial studies were conducted between 1980 and 1990. Preterm infants treated with ethamsylate had similar outcomes with respect to death and disability at the age of two years when compared to infants who were treated with a placebo. Infants born less than 35 weeks gestation appeared to have less intraventricular haemorrhage when treated with ethamsylate compared to controls, however this did not lead to improved developmental outcome in later childhood. There were no adverse effects noted with ethamsylate treatment. Based on these results, routine use of ethamsylate for prematurely born infants to prevent intraventricular haemorrhage cannot be recommended. It is highly unlikely that any further trials will be conducted to explore this clinical question.

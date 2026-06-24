@@ -1,0 +1,10 @@
+Doctor: Lets talk about your family history, does cancer run in your family ma'am?
+Patient: Oh yes! My family has a history of lung, liver and prostate cancer.
+Doctor: Oh wow!
+Patient: Yeah.
+Doctor: And you mentioned that your mother had Alzheimer's?
+Patient: Well, I am not sure about Alzheimer, but she had some dementing disease. It started when she was in her eighties. It was kind of mild case.
+Patient: And she actually passed away in her eighties due to old age.
+Doctor: Okay, how about your siblings, do they have any signs of Alzheimer?
+Patient: No, they are fine.
+Doctor: Okay.

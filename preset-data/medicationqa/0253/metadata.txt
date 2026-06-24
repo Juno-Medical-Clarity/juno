@@ -1,0 +1,5 @@
+drug_focus: enoxaparin
+question_type: Side effects
+section_title: CONCLUSIONS
+source_url: https://www.ncbi.nlm.nih.gov/pubmed/27207493
+sample_id: 0253

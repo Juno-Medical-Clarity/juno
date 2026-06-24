@@ -1,0 +1,6 @@
+Doctor: Where do you work?
+Patient: I work at the Hilton as a head chef.
+Doctor: Do you smoke or consume any form of tobacco?
+Patient: Nope.
+Doctor: Do you drink or have ever used any illegal drug?
+Patient: No, none of that.

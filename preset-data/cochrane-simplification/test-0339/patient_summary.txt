@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0339  |  gem_id: gem-cochrane-simplification-test-340  |  doi: 10.1002/14651858.CD009735.pub2
+
+The aim of this review is to compare these two types of treatment. We found four small studies were identified after an extensive literature search. Due to limited information about the design of the studies, and the small number of patients enrolled, the results should be interpreted with caution. Meta-analysis showed lower rates of recurrence in the surgery group, however there was insufficient evidence to draw a strong conclusion. Postoperative complications such as infection and fever, as well as cost and time to work resumption were less in the aspiration and sclerotherapy group; however the recurrence rate was higher. Cure at short-term follow-up was similar between the groups, however there is significant uncertainty in this result which may be as a result of the age of one of the studies and the different agent used compared to the other studies.

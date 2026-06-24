@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [24:26] 'general-complex' -> 'trial arms'

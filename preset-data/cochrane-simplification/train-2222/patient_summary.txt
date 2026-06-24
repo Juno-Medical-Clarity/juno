@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2222  |  gem_id: gem-cochrane-simplification-train-2223  |  doi: 10.1002/14651858.CD003533.pub2
+
+This review aimed to explore this question and included three studies with a total of 466 participants. These studies did not find any overall difference between asthma clinic and usual clinical practice care by a general practitioner for the following outcomes: A&E department visits for asthma, use of reliever or preventer medication for asthma and quality of life measures, but there was considerable uncertainty about these results. One study found that there was a reduction in nocturnal awakening due to asthma in the asthma clinic group compared to control but no difference in other symptom outcomes reported. Given the limited evidence found in this review, we believe that there is a need for further evidence in order to assess the effectiveness of asthma clinics.

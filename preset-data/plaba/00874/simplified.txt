@@ -1,0 +1,9 @@
+Fibroblast growth factors (FGFs) and their receptors (FGFRs) play significant roles in vertebrate organ development.
+FGFR3 prevents cartilage formation and some mutations with continuously active FGFR3 result in achondroplasia, a common dwarfism in humans, but the molecular mechanisms remain elusive.
+In this study, the authors found that removing BMP type I receptor a (Bmpr1a) from cartilage cells rescued the bone overgrowth observed in Fgfr3 deficient mice by reducing differentiation of cartilage cells.
+Consistently, using a cartilage cell differentiation assay system, the authors demonstrated that FGFR3 inhibited BMPR1a-mediated maturation of cartilage cells.
+Furthermore, they showed that FGFR3 hyper-activation resulted in impaired BMP signaling in cartilage cells of mouse growth plates.
+The authors also found that FGFR3 inhibited BMP-2- or constitutively activated BMPR1-induced phosphate group addition of Smads through a mechanism independent of its enzyme activity.
+They found that FGFR3 facilitates BMPR1a to through a common protein breakdown pathway called the ubiquitination pathway. Smurf1 played a role in this protein breakdown pathway.
+They demonstrated that decreasing of BMP signaling by BMPR1 inhibitor dorsomorphin led to the retardation of cartilage cell maturation, which mimics the effect of FGF-2 on cartilage cells. BMP-2 treatment partially rescued the retarded growth of cultured bone rudiments from thanatophoric dysplasia type II mice.
+Their findings reveal that FGFR3 promotes the degradation of BMPR1a, and this plays an important role in the development of FGFR3-related bone growth impairment.

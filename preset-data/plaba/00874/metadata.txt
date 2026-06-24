@@ -1,0 +1,5 @@
+pmid:        24657641
+question:    71
+adaptation:  adaptation3
+title:       FGFR3 induces degradation of BMP type I receptor to regulate skeletal development
+sentences:   9

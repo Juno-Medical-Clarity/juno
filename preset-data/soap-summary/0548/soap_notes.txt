@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0548
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Recent widow; husband passed after eight years of marriage.
+- Retired and enjoying retirement.
+- Drinks occasionally, but very rarely.
+- Has three children.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No clinician's interpretation provided.)
+
+Plan:
+- (No specific actions, medications, tests, follow-up, or patient education mentioned.)

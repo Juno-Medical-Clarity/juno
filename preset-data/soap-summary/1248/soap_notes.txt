@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1248
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the left foot
+- Severity: Severe pain that prevents the patient from doing any activities
+- Duration: Pain has been ongoing for about a month since the fall on October 3, 2008
+- Associated Symptoms: None explicitly mentioned
+- Relevant Medical History: Had a fall, tripped over dog's toy, left foot inverted
+- Imaging: X-rays and MRI done, results were unremarkable
+- Concerns: Unable to perform activities due to pain
+- Emotion/Concern: Expresses frustration about the persistent pain and inability to engage in activities
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education provided.

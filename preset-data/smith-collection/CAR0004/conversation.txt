@@ -1,0 +1,146 @@
+# Smith Collection Transcript: CAR0004
+# Category: CAR (Cardiac)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: Im just having this really sharp pain in my chest and im scared i think im having a heart attack
+
+Doctor: Oh wow yeah um that must be really scary when did this when did this pain start
+
+Patient: So about 3 days ago
+
+Doctor: Three days ago ok and where exactly in your chest do you feel it
+
+Patient: Its kind of right here right over my heart i think thats where its the worst
+
+Doctor: OK and is it what kind of pain is it is it more like a dull pressure pain or is it a sharp pain how would you describe it
+
+Patient: I would say its a sharp pain
+
+Doctor: A sharp pain ok um so it started three days ago has it been coming and going or has it been constant
+
+Patient: It just lasts for a few seconds and then it goes away
+
+Doctor: OK does the pain come on when youre doing any activities or when does the pain usually come on
+
+Patient: Oh its usually worse when im coughing or laying down yeah yeah
+
+Doctor: OK and um does it improve with any positional changes at all or anything that you do that does it help
+
+Patient: When i when i lean forward it actually does get better i think about it yeah
+
+Doctor: OK and has this ever happened to you before
+
+Patient: No no it hasnt
+
+Doctor: OK and on a scale of 1 to 10 one being the least amount of pain felt and 10 being the worst how much would you rate it
+
+Patient: I would say a 6 out of 10
+
+Doctor: OK and does the pain move anywhere in your chest or does it stay in the same spot
+
+Patient: Yeah i think it kind of goes to my neck sometimes
+
+Doctor: OK and do you have any other symptoms like do you have any shortness of breath dizziness anything like that
+
+Patient: No i dont
+
+Doctor: OK any any palpitations
+
+Patient: No
+
+Doctor: OK alright and other than that have you been having any other symptoms at all besides the pain
+
+Patient: No no nothing else thats it just have these sharp episodes of pain that last a couple of seconds
+
+Doctor: OK um have you have you tried like any medications that has helped the pain
+
+Patient: Yeah i took some um i took some tylenol and that did help
+
+Doctor: OK
+
+Patient: I took it once yesterday
+
+Doctor: Alright um any recent injuries to the area like did you have any falls or anything like that
+
+Patient: No no i havent
+
+Doctor: Any headaches nausea or vomiting fevers or chills any of those symptoms
+
+Patient: No
+
+Doctor: OK any cough runny nose any viral symptoms
+
+Patient: No well not right now but i did have a i did have a flu last week i had a fever had a runny nose i did have a bit of a cough and i was feeling super tired but not anymore im ok now
+
+Doctor: OK and have you at all had any dizziness or have you fainted at all
+
+Patient: No
+
+Doctor: OK have you been noticing any kind of weakness or numbness
+
+Patient: No
+
+Doctor: No ok and in terms of your past medical history do you have any medical conditions like diabetes high blood pressure any other diagnosis
+
+Patient: No im a pretty healthy 25 year old
+
+Doctor: OK um do you take any medications
+
+Patient: I sometimes take tylenol
+
+Doctor: OK and any allergies at all
+
+Patient: No
+
+Doctor: OK and any previous surgeries
+
+Patient: No no no surgeries
+
+Doctor: Do you have any family history of any heart conditions or any cancers or anything like that
+
+Patient: Yeah my father he he had a heart attack two weeks ago and he and he passed away and im worried i am having a heart attack too
+
+Doctor: It was just two weeks ago
+
+Patient: Yeah
+
+Doctor: Im so sorry to hear that yeah it must be really difficult time for you right now ok so youre worried you might be having a heart attack as well
+
+Patient: Yeah
+
+Doctor: OK so we can definitely do some tests and see what was going on i just have a few more questions and then ill just get to some of the management and what we will be doing for you in the future so currently right now do you work at all
+
+Patient: No im a student i well as a part time job i do work as a post man
+
+Doctor: OK and where are you a student what do you do
+
+Patient: Im studying engineering at western
+
+Doctor: Alright and currently where do you live do you live in student housing an apartment or a house
+
+Patient: I live with my parents well my mom now in a house
+
+Doctor: Right and you drink at all any alcohol
+
+Patient: I drink occasionally maybe one or two drinks on the weekends
+
+Doctor: OK and any recreational drug use like marijuana or cocaine
+
+Patient: No
+
+Doctor: And do you smoke
+
+Patient: No
+
+Doctor: Alright so those are all the questions we had for you today and yeah it must be really difficult and scary for you right now but well make sure to get to the bottom of this to see whats going on so what we can do is get you an ecg to see how your heart is functioning and then see getting the blood work if we need it for the future but yeah right now i would say try not to worry too much about it right now and see um what some of those tests come back
+
+Patient: Thank you
+
+Doctor: So yeah youre welcome

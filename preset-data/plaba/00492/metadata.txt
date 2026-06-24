@@ -1,0 +1,5 @@
+pmid:        29025198
+question:    38
+adaptation:  adaptation1
+title:       Foam dressings for treating pressure ulcers
+sentences:   31

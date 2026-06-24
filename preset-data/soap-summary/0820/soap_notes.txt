@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0820
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient (a child) was climbing a tree.
+- Slipped and fell, resulting in a deep cut on the thigh.
+- Concern expressed by family (mother).
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

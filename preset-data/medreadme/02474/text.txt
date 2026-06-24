@@ -1,0 +1,1 @@
+In examining cancer subtypes and neurological disorders, we identified networks that are tightly and loosely regulated, as defined by the level of conservation of transcript ordering, and observed a strong trend to looser network regulation in more malignant phenotypes and later stages of disease.

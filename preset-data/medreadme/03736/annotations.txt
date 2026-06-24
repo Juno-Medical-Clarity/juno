@@ -1,0 +1,13 @@
+source:      MSD
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'DGI'
+  [9:11] 'medical-jargon-google-easy' -> 'skin lesions'
+  [13:14] 'medical-jargon-google-easy' -> 'polyarthritis'
+  [18:19] 'medical-jargon-google-easy' -> 'prodrome'
+  [20:22] 'medical-jargon-google-easy' -> 'hepatitis B'
+  [24:25] 'medical-jargon-google-easy' -> 'meningococcemia'
+  [35:37] 'medical-jargon-google-easy' -> 'reactive arthritis'

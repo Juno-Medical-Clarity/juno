@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0484  |  gem_id: gem-cochrane-simplification-train-485  |  doi: 10.1002/14651858.CD002770
+
+It was compared with standard treatment in five trials for infants with very severe lung disease and resulted in a reduction in mortality. This effect was observed principally in infants with birth weights over two kilograms. Mechanical ventilation has become standard therapy for severe respiratory failure. There have been no trials in modern neonatal intensive care units so the magnitude of the benefits and harms in current practice are not known.

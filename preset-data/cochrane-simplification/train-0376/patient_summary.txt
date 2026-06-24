@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0376  |  gem_id: gem-cochrane-simplification-train-377  |  doi: 10.1002/14651858.CD001474
+
+There are a number of different iron-chelating agents, such as desferrioxamine (DFO) and deferiprone, and all were considered in the review of trials, although DFO has to be given intravenously and so will be of little use in most malarious areas. The drugs may also display adverse effects like headaches, dizziness, muscle pain, and tiredness. The review found seven trials of DFO and deferiprone involving 570 participants. Although the drugs may have helped in part with parasite levels, there seemed to be adverse effects including concerns about possibility of an increase in death. There is insufficient evidence to support the use of iron-chelating agents as adjuncts in the treatment of malaria, and further trials are not expected.

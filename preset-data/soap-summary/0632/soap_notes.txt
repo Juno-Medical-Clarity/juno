@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0632
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Medical history: hypertension, diabetes, diabetic retinopathy, elevated lipids, post cerebrovascular accident (CVA).
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No assessment provided in the conversation.)
+
+Plan:
+- Consider contacting the patient's neurologist for further information.

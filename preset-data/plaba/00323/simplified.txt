@@ -1,0 +1,9 @@
+Over 80 monoclonal antibody medicines have been shown to block the interaction between the coronavirus glycoprotein (a molecule that has a carbohydrate and a protein) and its cell receptor that can send signals, resulting in making the virus ineffective. The coronavirus causes COVID-1, a viral breathing-related disorder, and monoclonal antibodies are medicines that may block the virus that causes COVID-19 from attaching to human cells.
+Some of those monoclonal antibodies show that they work well to reduce the effects of the virus and lung inflammation (redness and swelling in response to infection) in animal studies.
+The process used by monoclonal antibodies to make the virus ineffective in humans and animals is not fully understood, but the best protection is associated with the Fc effector functions, which are the part of the antibody that interacts with other cells.
+Approximately 30 monoclonal antibodies are currently being tested in clinical trials in COVID-19 patients.
+Some are granted emergency authorization (where unapproved medicines may be used) because they reduce the amount of virus in the body, lessen the seriousness of the disease, and reduce hospital stays in clinical trials.
+However, monoclonal antibodies are expensive for healthcare systems in many developing countries, meaning that most infected people would not have access to the medicine.
+Another challenge for COVID-19 medicines that use monoclonal antibodies is the new variants that change cell receptor activity for the glycoprotein.
+The variants of concern are more easily transmitted between people, are found worldwide, and include those designated as alpha, beta, epsilon, gamma, and delta.
+Monoclonal antibody medicines, and antibodies in plasma (the liquid portion of blood) of vaccinated or recovering people, fail to efficiently make the variants of interest ineffective.

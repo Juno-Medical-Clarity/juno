@@ -1,0 +1,10 @@
+Doctor: Are you married?
+Patient: I'm divorced.
+Doctor: So, do you live alone? Or do you have kids?
+Patient: I live with my girlfriend, and we have a kid together. I also have three other kids from my former wife.
+Doctor: Do you smoke?
+Patient: I used to smoke. But I, I've quit like fifteen years ago.
+Doctor: What about alcohol?
+Patient: Yeah, I drink beer. Around one to two beers a day.
+Doctor: Are you working?
+Patient: I'm retired right now, but I used to work in an iron company.

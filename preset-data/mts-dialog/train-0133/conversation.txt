@@ -1,0 +1,12 @@
+Doctor: How are you doing today?
+Patient: I have a long history of lung disease. COPD to be exact. Recently, I was experiencing a lot of coughing and shortness of breath even on walking from one room to another. All the time I felt sleepy, tired, or confused.
+Doctor: How is it now?
+Patient: It is getting better.
+Doctor: What else?
+Patient: I was also diagnosed with pneumonia; I was on trip and there they found it. It is also getting a lot better now, but doctor said to continue taking oxygen for some more time.
+Doctor: Oh wow!
+Patient: With everything going on, I felt weak and tired and it looks like I have lost all my strength and muscle.
+Patient: I also felt very instable and had a fall. I did not call for any assistance but now I think I should have called someone. Everyone including my family and nurses all tell me all the time to call for assistance. I was just being stubborn and hurt myself.
+Doctor: Did you use a wheelchair?
+Patient: No.
+Doctor: You know I would agree with everyone else; you should call for assistance if you need help like getting out of bed or need to use the restroom.

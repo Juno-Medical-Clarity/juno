@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1762  |  gem_id: gem-cochrane-simplification-train-1763  |  doi: 10.1002/14651858.CD007574.pub2
+
+This review of four trials involving 350 participants indicated that this form of treatment can remove large artery blood clots and improve the chances of good recovery despite an increased risk of bleeding in the brain. Long term risk of death is unaffected. However, it is still not clear what the time window is within which treatment is beneficial, what types of arterial blockage are most likely to respond, whether mechanical devices are effective, and whether any of these treatments are better than standard intravenous thrombolytic drugs. More information is needed from forthcoming randomised trials to answer these questions.

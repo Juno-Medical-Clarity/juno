@@ -1,0 +1,4 @@
+Doctor: Have we gone over your survey results from your last visit?
+Patient: No, do you have those results with you right now?
+Doctor: Yes, I do, they show that you have anxiety disorder.
+Patient: That makes sense, thank you for sharing that with me.

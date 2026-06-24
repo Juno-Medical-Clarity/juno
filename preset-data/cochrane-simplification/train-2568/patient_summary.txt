@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2568  |  gem_id: gem-cochrane-simplification-train-2569  |  doi: 10.1002/14651858.CD007880.pub3
+
+In the trials treating otitis media, the quality of the evidence was moderate as the methods for avoiding bias were not clearly stated. Furthermore, in one trial a pharmaceutical company prepared the placebo syrup used in the trial. In the study treating pneumonia, we classified the quality of the evidence as moderate, because the families previously knew if their children were receiving antibiotics or not. Furthermore, the methods for avoiding bias were not clearly stated by the trial authors. Further high-quality research is needed to provide more definitive evidence of the effectiveness of antibiotics in this population.

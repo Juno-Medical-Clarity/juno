@@ -1,0 +1,4 @@
+Doctor: Anyone sick in your family?
+Patient: No one.
+Doctor: Okay.
+Patient: Everyone is healthy.

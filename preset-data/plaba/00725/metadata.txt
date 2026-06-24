@@ -1,0 +1,5 @@
+pmid:        33853065
+question:    57
+adaptation:  adaptation2
+title:       What Are the Results and the Prognostic Factors of Motor Cortex Stimulation in Patients with Facial Pain? A Systematic Review of the Literature
+sentences:   13

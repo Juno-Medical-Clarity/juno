@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0169  |  gem_id: gem-cochrane-simplification-validation-170  |  doi: 10.1002/14651858.CD007988.pub2
+
+This review found 20 studies that compared the effects of chronic disease management programmes in adults with asthma with the effects of usual care. The average age of the patients was 42.5 years, 60% were women, and they had moderate to severe asthma. Overall the evidence that was found was of moderate to low quality. Chronic disease management programmes for adults with asthma probably improve patients' quality of life, reduce the severity of the asthma, and improve breathing as demonstrated by improved performance in lung function tests after 12 months. It is unclear whether chronic disease management programmes improve the patients' abilities to manage their own asthma or decrease the number of hospitalisations or emergency visits.

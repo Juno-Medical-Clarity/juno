@@ -1,0 +1,10 @@
+During infections, the host redistributes iron in order to starve pathogens from this nutrient.
+Several proteins are involved in iron absorption, transport, and storage.
+Ferritin is the most important iron storage protein.
+It is composed of variable proportions of two peptides, the L- and H-ferritins (FTL and FTH).
+We previously showed that macrophages increase their expression of FTH1 when they are infected in vitro with Mycobacterium avium, without a significant increase in FTL.
+In this work, we investigated the role of macrophage FTH1 in M. avium infection in vivo.
+We found that mice deficient in FTH1 in myeloid cells are more resistant to M. avium infection, presenting lower bacterial loads and lower levels of proinflammatory cytokines than wild-type littermates, due to the lower levels of available iron in the tissues.
+Importantly, we also found that FTH1 produced by myeloid cells in response to infection may be found in circulation and that it plays a key role in iron redistribution.
+Specifically, in the absence of FTH1 in myeloid cells, increased expression of ferroportin is observed in liver granulomas and increased iron accumulation occurs in hepatocytes.
+These results highlight the importance of FTH1 expression in myeloid cells for iron redistribution during infection.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0212  |  gem_id: gem-cochrane-simplification-test-213  |  doi: 10.1002/14651858.CD007556.pub2
+
+Five studies looking at a total of 696 participants were included. Because fewer than 200 participants were treated with any one dose of fenoprofen within each study, results must be treated with caution. A good level of pain relief was experienced by better than one in two (over half; 57%) of those with moderate or severe postoperative pain after a single dose of fenoprofen 200 mg, compared to about 1 in 7 (14%) with placebo. This level of pain relief is comparable to that experienced with ibuprofen 400 mg. The frequency of adverse events did not differ between fenoprofen 200 mg and placebo in these studies.

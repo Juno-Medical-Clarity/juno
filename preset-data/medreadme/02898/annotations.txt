@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.7
+split:       dev
+
+jargon_spans:
+  [12:20] 'medical-jargon-google-hard' -> 'live - attenuated recombinant vesicular stomatitis virus vector'
+  [22:25] 'medical-jargon-google-easy' -> 'Ebola virus glycoprotein'
+  [30:31] 'medical-jargon-google-easy' -> 'primates'
+  [33:34] 'medical-jargon-google-easy' -> 'Ebola'

@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [5:6] 'general-complex' -> 'modulate'
+  [6:8] 'medical-jargon-google-easy' -> 'proteasomal activity'
+  [9:11] 'medical-jargon-google-hard' -> 'substrate hydrolysis'

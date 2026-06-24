@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0347  |  gem_id: gem-cochrane-simplification-test-348  |  doi: 10.1002/14651858.CD007546.pub2
+
+We reviewed whether interventions aimed at preventing and reducing the use of PR in geriatric long-term care settings are effective. We identified five small-sized randomised controlled studies suitable for inclusion. All studies examined educational interventions targeted at nursing staff. Four studies investigated residents in nursing homes and one in group dwelling units. The methodological quality of all studies was limited. Results of the studies were inconsistent. One study with higher methodological quality showed no reduction in PR use. Three other studies with lower methodological quality found their intervention to be effective. Thus, current evidence on interventions for the reduction or prevention of PR use in long-term geriatric care does not support a clear conclusion. Ongoing and unpublished research might alter the results of the review.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0257  |  gem_id: gem-cochrane-simplification-train-258  |  doi: 10.1002/14651858.CD004404.pub3
+
+Thirteen trials involving 2197 participants were included in this review. We found that several antibiotic treatments were equally effective in eliminating the bacteria infecting patients, but they did not alter the clinical outcome. There was insufficient evidence to decide whether there is benefit for treating healthy contacts. Side effects were reported with antibiotics and they varied from one antibiotic to another. The result of the review should be interpreted with caution since this review is based on a limited number of trials and some of these trials involved small numbers of participants.

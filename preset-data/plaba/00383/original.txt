@@ -1,0 +1,8 @@
+Many studies have shown that re-positive tests for SARS-CoV-2 by RT-PCR in recovered COVID-19 patients are very common.
+We aim to conduct this review to summarize the clinical and epidemiological characteristics of these patients and discuss the potential explanations for recurrences, the contagiousness of re-detectable positive SARS-CoV-2 virus, and the management of COVID-19 patients after discharge from hospital.
+The proportion of re-positive tests in discharged COVID-19 patients varied from 2.4 to 69.2% and persisted from 1 to 38 days after discharge, depending on population size, age of patients, and type of specimens.
+Currently, several causes of re-positive tests for SARS-CoV-2 in recovered COVID-19 patients are suggested, including false-negative, false-positive RT-PCR tests; reactivation; and re-infection with SARS-CoV-2, but the mechanism leading to these re-positive cases is still unclear.
+The prevention of re-positive testing in discharged patients is a fundamental measure to control the spread of the pandemic.
+In order to reduce the percentage of false-negative tests prior to discharge, we recommend performing more than two tests, according to the standard sampling and microbiological assay protocol.
+In addition, specimens should be collected from multiple body parts if possible, to identify SARS-CoV-2 viral RNA before discharge.
+Further studies should be conducted to develop novel assays that target a crucial region of the RNA genome in order to improve its sensitivity and specificity.

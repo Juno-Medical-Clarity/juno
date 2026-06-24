@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0513
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Cough, sore taste in mouth, eye discomfort, back pain, right shoulder and neck pain.
+- Severity: Cough is about the same, not getting better; back pain is described as "hurting so much."
+- Duration: Sore taste in mouth since last week; cough duration not specified, but indicates it is ongoing; back pain and shoulder/neck pain duration not specified.
+- Associated symptoms: No diarrhea, no stomach pain, normal bowel movements, no pain while urinating, no nausea or vomiting, no loss of appetite.
+- Relevant medical history: None mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Other concerns: Patient is following up as advised by the doctor regarding the cough.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

@@ -1,0 +1,5 @@
+drug_focus: marijuana
+question_type: Usage
+section_title: Cannabis and Cannabinoids (PDQ®)–Patient Version
+source_url: https://www.cancer.gov/about-cancer/treatment/cam/patient/cannabis-pdq
+sample_id: 0523

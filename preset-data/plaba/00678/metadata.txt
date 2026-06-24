@@ -1,0 +1,5 @@
+pmid:        32489015
+question:    52
+adaptation:  adaptation1
+title:       Epigenetic and transcriptomic consequences of excess X-chromosome material in 47,XXX syndrome-A comparison with Turner syndrome and 46,XX females
+sentences:   9

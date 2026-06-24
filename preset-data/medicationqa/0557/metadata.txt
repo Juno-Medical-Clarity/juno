@@ -1,0 +1,5 @@
+drug_focus: botulinum toxin
+question_type: Action
+section_title: Treatment
+source_url: https://www.ninds.nih.gov/Disorders/All-Disorders/Spasticity-Information-Page
+sample_id: 0557

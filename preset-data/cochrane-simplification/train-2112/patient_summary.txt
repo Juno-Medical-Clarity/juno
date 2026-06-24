@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2112  |  gem_id: gem-cochrane-simplification-train-2113  |  doi: 10.1002/14651858.CD006826.pub2
+
+Our review found 15 studies that compared a combination of ICS/LABA with ICS alone. We found that on the whole, combination inhalers reduced the frequency of flare-ups (not including hospitalisations) compared with ICS alone. The studies showed that on average, the number of exacerbations per participant was reduced, as was the probability of death, during treatment. Quality of life and lung function showed improvement with combination treatment compared with ICS, but no difference between them was noted in terms of adverse effects, or the likelihood of having no flare-ups at all. Future research should assess the efficacy of BDF and MF/F because most evidence gathered to date, including for mortality, has been drawn from FPS studies.

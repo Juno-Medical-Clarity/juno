@@ -1,0 +1,5 @@
+pmid:        31211392
+question:    53
+adaptation:  adaptation1
+title:       Morning (Fasting) vs Afternoon Resistance Exercise in Individuals With Type 1 Diabetes: A Randomized Crossover Study
+sentences:   10

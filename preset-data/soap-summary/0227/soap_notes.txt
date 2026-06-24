@@ -1,0 +1,39 @@
+# SOAP Notes — Sample 0227
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 3 day history of chest tightness (not pain), worse with inspiration and exertion (walking dog)
+- Tightness is diffuse, not localized
+- Constant tightness, worse with exertion and deep breaths
+- Associated increased hoarseness and phlegm production, but no cough
+- No fever, night sweats, chills, or weight loss
+- Similar to previous asthma exacerbations, but feels different
+
+PMHx:
+- Asthma (well-controlled, using daily inhaled corticosteroid, has not needed rescue inhaler in years)
+- HTN (on ramipril)
+
+SocHx:
+- Semi-retired financial advisor, working from home
+- Non-smoker, no recreational drug use, occasional alcohol use (few beers on weekends)
+
+Medications:
+- Salbutamol (has not refilled rescue inhaler in years)
+- Inhaled corticosteroid daily (taking in AM only, sometimes skips PM dose)
+- Ramipril (HTN)
+- Tylenol PRN (headaches, infrequent use)
+
+Allergies:
+- Seasonal allergies in spring (remote history, not bothersome in recent years)
+
+Objective:
+- Vitals signs [not provided]
+- Respiratory examination [not provided]
+
+Assessment:
+- Likely asthma exacerbation
+
+Plan:
+- Refill rescue inhaler (salbutamol) and use PRN with exertion
+- Follow-up if no improvement with rescue inhaler use
+- Consider alternate diagnoses if symptoms persist despite rescue inhaler use

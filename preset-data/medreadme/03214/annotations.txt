@@ -1,0 +1,13 @@
+source:      plos_biology
+side:        complex
+readability: 6.0
+split:       dev
+
+jargon_spans:
+  [8:10] 'medical-jargon-google-easy' -> 'mouse model'
+  [15:21] 'medical-jargon-google-easy' -> 'adult - generated dentate gyrus neurons'
+  [25:27] 'medical-jargon-google-hard' -> 'conditionally expressing'
+  [28:31] 'medical-jargon-google-hard' -> 'pro-differentiative gene PC3'
+  [32:33] 'medical-jargon-google-hard' -> 'Tis21'
+  [34:35] 'medical-jargon-google-hard' -> 'BTG2'
+  [37:42] 'medical-jargon-google-hard' -> 'nestin - positive progenitor cells'

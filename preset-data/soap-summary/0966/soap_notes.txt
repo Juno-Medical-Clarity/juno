@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0966
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is doing well and wants to come regularly to monitor lung and heart health.
+- Patient quit smoking in 1996 and comes yearly to monitor lung damage.
+- Patient acknowledges having smoked for a long time and recognizes the negative impact.
+- Patient drinks alcohol occasionally.
+- No specific symptoms, severity, duration, or associated symptoms mentioned.
+- No relevant medical history, family history, or allergies provided.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0213
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Stuffy and runny nose for the past week
+- Initially stuffy, now mostly runny
+- Runny nose: clear discharge
+- No cough, sore throat, SOB, fevers, chills, headaches, nausea, vomiting, chest pain, palpitations, changes in bowel movements, or urinary difficulties
+- Mild fatigue
+- No loss of taste or smell
+- No significant weight changes
+- No recent travel or exposure to sick contacts
+- Nephew in daycare but not sick
+- No exposure to fumes, dust, or animals
+
+Past Medical History:
+- PMHx: Type 1 diabetes (diagnosed at age 7)
+- Medications: insulin
+- No other medications
+- No allergies
+- No hospitalisations or surgeries
+- FHx: No significant medical conditions, lung or heart diseases, or autoimmune diseases
+- SocHx: Lives alone in an apartment, in school, occasional edible use (once a month), no alcohol or tobacco use
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Likely viral infection (common cold)
+- COVID-19 to be ruled out
+
+Plan:
+- Investigations: COVID-19 swab test
+- Treatment: Supportive care, stay hydrated, over-the-counter medications (e.g., Tylenol Cold)
+- Advice: Isolate at home until COVID-19 test results are available, follow public health instructions upon receiving results

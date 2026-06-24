@@ -1,0 +1,5 @@
+drug_focus: Eliquis
+question_type: Side effects
+section_title: ADVERSE REACTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0
+sample_id: 0434

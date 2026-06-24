@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [1:5] 'medical-jargon-google-easy' -> 'high - density SNP'
+  [13:14] 'abbr-general' -> 'DU'

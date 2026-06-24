@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0970
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not smoke.
+- Patient drinks occasionally.
+- Patient does not use harder drugs.
+- Patient is married to her husband.
+- Patient is a social worker, working with adult abuse and neglect issues.
+- Patient has two grown sons who do not live at home.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment or clinician's interpretation provided.)
+
+Plan:
+- (No plan provided.)

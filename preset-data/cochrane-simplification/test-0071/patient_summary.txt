@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0071  |  gem_id: gem-cochrane-simplification-test-72  |  doi: 10.1002/14651858.CD003368.pub3
+
+This review investigated the value of adding one or more chemotherapy drugs to a chemotherapy regimen. We found that the addition of chemotherapy drug/s to a regimen caused greater shrinkage of the tumour seen with imaging but increased toxicity. There is insufficient evidence to determine if there is an impact on time to disease progression and overall survival.

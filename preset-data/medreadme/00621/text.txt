@@ -1,0 +1,1 @@
+Here, we integrate predictive network modelling, in vitro experiments and-omics data analysis to elucidate the emergent dynamic behaviour of the PI3K / MTOR network.

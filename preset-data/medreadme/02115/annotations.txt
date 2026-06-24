@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'prophage induction'
+  [10:12] 'medical-jargon-google-easy' -> 'excisive recombination'
+  [18:19] 'medical-jargon-google-easy' -> 'phage'

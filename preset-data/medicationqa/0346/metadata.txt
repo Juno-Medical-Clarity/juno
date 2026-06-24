@@ -1,0 +1,5 @@
+drug_focus: finasteride
+question_type: Contraindication
+section_title: finasteride - Drug Summary
+source_url: https://www.pdr.net/drug-summary/Proscar-finasteride-380
+sample_id: 0346

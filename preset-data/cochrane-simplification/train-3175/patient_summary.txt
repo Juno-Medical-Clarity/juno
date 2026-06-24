@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3175  |  gem_id: gem-cochrane-simplification-train-3176  |  doi: 10.1002/14651858.CD003336.pub3
+
+Although anticoagulants such as warfarin are of proven benefit in patients in certain subgroups of patients with heart failure, such as those with atrial fibrillation, there is little evidence that warfarin works well in the wider heart failure population. There may also be serious side effects such as bleeding (causing ulcers and haemorrhagic stroke). At present there are no data to recommend the routine use of anticoagulants to prevent thromboembolism in patients with heart failure who are in normal heart rhythm.

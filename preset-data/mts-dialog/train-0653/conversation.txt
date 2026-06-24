@@ -1,0 +1,13 @@
+Doctor: Good morning.
+Patient: Good morning, Doctor.
+Doctor: Are you married?
+Patient: No sir, I'm happily single.
+Doctor: Good for you, what do you do for a living?
+Patient: I'm actually not working right now, I go to college full time.
+Doctor: Even better for you, so do you drink or smoke?
+Patient: No, I don't.
+Doctor: What about more illicit substances?
+Patient: Absolutely not, nothing like that.
+Doctor: Do you like to work out?
+Patient: I play tennis and swim every week, I love it.
+Doctor: That's very good, you're keeping very healthy.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0317  |  gem_id: gem-cochrane-simplification-test-318  |  doi: 10.1002/14651858.CD006411.pub4
+
+This review found two eligible studies. The first study evaluated a game based on the TV show Family Feud and taught about infection control. The second study evaluated the use of a "Snakes and Ladders" board game in continuing medical education on stroke prevention and management. The two studies did not consistently show a beneficial effect on knowledge. We are therefore very uncertain whether games improve health care professional practice or patient care.

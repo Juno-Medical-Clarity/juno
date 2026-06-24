@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0713
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No change in appetite
+- No stomach pain
+- No change in bowel movement
+- No history of bowel issues
+- No hernia problem
+- No history of stomach ulcer
+- No rectal bleeding
+- No liver issues or jaundice
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

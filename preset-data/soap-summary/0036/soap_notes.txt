@@ -1,0 +1,39 @@
+# SOAP Notes — Sample 0036
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 5-day history of left-sided chest pain (lingering, sharp pain; worse with deep breathing and walking; not radiating; Tylenol and Advil provide minimal relief) and shortness of breath (dyspnea on exertion; unable to walk usual 5 km daily)
+- No fever, chills, cough, hemoptysis, wheezing, lightheadedness, palpitations, night sweats, headache, abdominal pain, nausea, vomiting, urinary or bowel symptoms, rash or skin changes, joint or muscle pains
+- Reports fatigue due to decreased activity from dyspnea
+
+PMHx:
+- Hysterectomy 1 month ago for heavy menstrual bleeding and pelvic pain; recovered well after a few days of reduced activity
+- Denies chronic medical conditions or medications
+- Remote history of wisdom teeth extraction
+
+FHx:
+- Mother had MI in her 70s
+- Distant relative with history of thrombosis
+
+SocHx:
+- Lives with husband and 2 teenage children
+- Accountant
+- Occasional alcohol use (glass of wine on weekends)
+- Smoking: 5 cigarettes/day; trying to quit
+- Remote marijuana use in youth
+- No recent long trips
+
+Allergies: NKDA
+
+Immunizations: Up to date
+
+Objective:
+- Vitals signs
+- Respiratory examination: No wheezing or cough
+
+Assessment:
+- Suspected pulmonary embolism
+
+Plan:
+- Labs and imaging to investigate for pulmonary embolism
+- Counseling provided regarding suspected diagnosis and need for further testing

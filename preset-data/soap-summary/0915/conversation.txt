@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0915
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you taking any medications for your pain? Yeah, occasionally. Which one? Just a regular pain medicine.

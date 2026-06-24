@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1393
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Feeling strange, heart racing, agitation, waves of sadness.
+- Severity: Not explicitly mentioned, but implied to be significant as the patient cannot shake the feeling.
+- Duration: Symptoms started after taking Ecstasy on Saturday (implying it has been a few days).
+- Associated symptoms: Agitation, waves of sadness.
+- Relevant medical history: Recent use of Ecstasy.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient is unable to shake the feeling.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

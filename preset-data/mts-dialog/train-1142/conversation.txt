@@ -1,0 +1,32 @@
+Doctor: How is your pain today?
+Patient: Eh it's been a rough few days that's for sure. The pain started almost instantly.
+Doctor: I'm sorry to hear that. Have you been taking anything for it?
+Patient: I actually saw a chiropractor the other day. My neck pain has been unbearable.
+Doctor: Is the pain localized to one area?
+Patient: Yeah.
+Doctor: And it hasn't radiated to any other part of your body?
+Patient: Nope.
+Doctor: Are you experiencing a pins and needles sensation at all?
+Patient: Not yet.
+Doctor: Any back pain?
+Patient: Oh yeah. I'd say it's even worse than my neck pain. The pain starts in my lower back and radiates down both legs.
+Doctor: Any pins and needles as a result of this back pain?
+Patient: No, no pins and needles.
+Doctor: Are you experiencing stiffness in your back?
+Patient: The stiffness seems to worsen when I exert myself during activities.
+Doctor: Has it impacted your sleep at all?
+Patient: Honestly, I haven't gotten much sleep since the accident. It's been so difficult to find a comfortable position to sleep in. I've never had back problems until now.
+Doctor: This accident sure did a number on you.
+Patient: No kidding.
+Doctor: You had mentioned experiencing stiffness during strenuous activity. Is it mostly during the day or does it progress into the night?
+Patient: Yeah, it's mostly during the day.
+Doctor: I see.
+Patient: The pain does improve a bit when I lay flat or sit up in a chair.
+Doctor: But despite this, your activity continues to be restricted, correct?
+Patient: Yeah, correct.
+Doctor: I meant to ask if you felt better after chiropractic treatment?
+Patient: A little bit, but not much.
+Doctor: And would you say your pain has overall gotten worse or remained the same?
+Patient: It's stayed more or less the same.
+Doctor: And to confirm, you didn't have neck or lower back problems prior to the accident?
+Patient: Yeah.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1215  |  gem_id: gem-cochrane-simplification-train-1216  |  doi: 10.1002/14651858.CD001304.pub2
+
+Other studies suggest that a low-phenylalanine diet can reduce blood phenylalanine levels. The review includes four studies, but we were not able to combine many results. Results from one study showed that blood phenylalanine levels were lower and intelligent quotient higher for people on a special diet. We recommend that a low-phenylalanine diet should be followed from the time of diagnosis. More research is needed to show if it is safe to relax this diet later on.

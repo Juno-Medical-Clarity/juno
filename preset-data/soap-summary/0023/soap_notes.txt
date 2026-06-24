@@ -1,0 +1,48 @@
+# SOAP Notes — Sample 0023
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with worsening cough over the past month, constant coughing over the last week
+- Cough has been present for the last 5 years, diagnosed with COPD around the same time
+- Cough productive of white sputum, worse in the morning with sensation of "gunk stuck in the back of throat"
+- Sputum has had a yellowish tinge over the last week
+- Harsh cough, bringing up more sputum compared to before
+- Cough exacerbated by activity, associated with wheezing
+- Chest tightness during coughing fits, relieved with rest
+- Increased fatigue over the last few months
+- Bilateral ankle swelling for at least 1 year, tight shoes leaving sock marks
+
+PMHx:
+- COPD
+- HTN
+- Amoxicillin allergy (rash)
+
+Medications:
+- Lisinopril (HTN)
+- Ventolin prn
+- Spiriva
+
+SocHx:
+- Former smoker, quit a few years ago (1 ppd x30 years)
+- Occasional EtOH (1 beer/day)
+- Lives with wife in well-maintained condominium, works from home
+
+FHx:
+- Father had MI in 60s, alive
+- Paternal uncle had bladder cancer
+
+Objective:
+- Vitals pending
+
+Assessment:
+- COPD exacerbation
+- R/o COVID-19
+
+Plan:
+- COVID-19 swab, self-isolate x14 days, public health f/u if positive
+- Continue current COPD management (Ventolin prn, Spiriva)
+- Consider adding LABA +/- ICS if severe
+- Check O2 sat, target >88%, give O2 if needed
+- Azithromycin (amoxicillin allergy)
+- CXR
+- PFTs

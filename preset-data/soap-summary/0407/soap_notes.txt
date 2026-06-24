@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0407
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Rare alcohol consumption: approximately one drink per month.
+- Recent engagement ended; patient expresses emotional distress regarding this situation (noted as "it's a long story").
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinical interpretations or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

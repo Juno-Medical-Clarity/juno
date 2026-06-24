@@ -1,0 +1,38 @@
+# SOAP Notes — Sample 0680
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough: prolonged cough mentioned
+- No sudden weight gain or loss
+- No headaches, nose bleeds, coarse voice, blurry vision or loss/change of vision
+- No fever or chills
+- No chest pain or shortness of breath
+- No palpitations, swelling, varicose veins, or pain in legs
+- No sore throat or cough with mucous or blood sputum
+- No wheezing
+- No heartburn, nausea, or vomiting
+- No loss of appetite, blood in stool, or abdominal pain
+- No constipation
+- Normal urine color (not dark or cloudy)
+- No pain or burning sensation while urinating
+- No flank or groin pain
+- No joint pain, muscle stiffness, backache, ligament or tendon pain
+- No blackouts or seizures
+- No hallucinations or memory loss
+- No weakness, numbness, or tingling
+- No tremors or loss of sensation
+- No anxiety, irritability, apathy, or depression
+- Sleep: fine
+- Appetite: good
+- Mental state: no suicidal thoughts
+- No unusual hair loss or nail breakage
+- No skin lesions or discoloration
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

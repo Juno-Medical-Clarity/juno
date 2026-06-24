@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3222  |  gem_id: gem-cochrane-simplification-train-3223  |  doi: 10.1002/14651858.CD004370.pub3
+
+This is an update of a previous review, which found only one randomised trial of 62 adults, suggesting that IVIG is not useful in myocarditis. A second trial was added with this update. This trial evaluated 83 children who had the relatively rare combination of myocarditis and encephalitis (inflammation of the brain). Investigators found a lower death rate among children receiving IVIG than in those who did not, but this study had high risk of bias. More study is required before IVIG can be routinely recommended for adults or children with myocarditis.

@@ -1,0 +1,55 @@
+Doctor: Good morning, sir. How are you feeling today?
+
+Patient: Hmm, I'm feeling a bit weak.
+
+Doctor: I see. Can you tell me a bit about your medical history?
+
+Patient: Yes, I was diagnosed with COVID-19 about a week ago.
+
+Doctor: I see. And you were transferred to our ICU due to continuing respiratory decompensation, correct?
+
+Patient: Yes, that's right.
+
+Doctor: And you required intubation?
+
+Patient: Yes, I did.
+
+Doctor: I see. And after the acute phase, you continued to be hemodynamically unstable and it was difficult to wean you off the ventilator, correct?
+
+Patient: Yes, that's correct.
+
+Doctor: And rehabilitation was challenging under these conditions, correct?
+
+Patient: Yes, it was.
+
+Doctor: I see. And after 2 weeks, you underwent tracheostomy and started to improve very slowly, correct?
+
+Patient: Yes, that's correct.
+
+Doctor: And one week after tracheostomy, you were able to speak for the first time with the help of a speaking valve, correct?
+
+Patient: Yes, I was.
+
+Doctor: I see. And you spoke only a few words, correct?
+
+Patient: Yes, that's right.
+
+Doctor: And two days later, you were able to communicate with your relatives via video telephony, correct?
+
+Patient: Yes, I was.
+
+Doctor: I see. And through the family's active participation in your early rehabilitation process, they were able to reinforce your confidence and motivation, correct?
+
+Patient: Yes, they did.
+
+Doctor: And you were discharged to a rehabilitation clinic severely weak, correct?
+
+Patient: Yes, I was.
+
+Doctor: I see. And your MRC-SS was 40/60 and your CPAx was 22/50, correct?
+
+Patient: Yes, that's correct.
+
+Doctor: I see. Well, you've made slow but steady progress. Keep up the good work!
+
+Patient: Thank you, doctor.

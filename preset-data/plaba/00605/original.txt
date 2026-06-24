@@ -1,0 +1,5 @@
+Background: Cystic fibrosis (CF) is a common life-shortening genetic condition caused by a variant in the cystic fibrosis transmembrane conductance regulator (CFTR) protein.
+A class II CFTR variant F508del (found in up to 90% of people with CF (pwCF)) is the commonest CF-causing variant.
+The faulty protein is degraded before reaching the cell membrane, where it needs to be to effect transepithelial salt transport.
+The F508del variant lacks meaningful CFTR function and corrective therapy could benefit many pwCF.
+Therapies in this review include single correctors and any combination of correctors and potentiators.

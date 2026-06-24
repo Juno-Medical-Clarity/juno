@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0913
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+###Subjective:**
+- Patient is an 84-year-old female.
+- Symptoms:
+ - Experienced a fall yesterday on the driveway, hitting her left side against a rock.
+ - Felt like she had just run a race after the fall, with a pounding heart.
+- Duration: Symptoms occurred immediately after the fall but resolved quickly; she felt normal afterward and has not experienced the rapid heartbeat again.
+- Associated symptoms: None mentioned after the fall; no chest pain or shortness of breath before or after the fall.
+- Relevant medical history:
+ - High blood pressure (hypertension).
+ - History of severe tricuspid regurgitation, mild pulmonary hypertension, mild aortic stenosis, and previously moderate mitral regurgitation.
+- Family history and allergies: Not mentioned.
+- Concerns: Patient expressed confusion about heart conditions and terminology.
+
+Objective:
+- Vital signs: 
+ - Heart rate was very high during the emergency room visit.
+ - Cardizem was administered and stopped when the heart rate came down to the fifties.
+- Electrocardiogram (ECG) findings:
+ - Rapid heart rate and abnormal pacemaker activity noted in initial ECG.
+ - Subsequent ECG showed normal rate with frequent early heartbeats.
+- Laboratory results: 
+ - Potassium level: 3.1.
+
+Assessment:
+- Rapid atrial tachyarrhythmia noted during the emergency room visit.
+- Need to check for atrial fibrillation due to the fall and high heart rate.
+- No ongoing symptoms of chest pain or shortness of breath.
+
+Plan:
+- Further evaluation for atrial fibrillation.
+- Monitor potassium levels and manage as necessary.
+- Patient education regarding her heart conditions and terminology used in her medical care.

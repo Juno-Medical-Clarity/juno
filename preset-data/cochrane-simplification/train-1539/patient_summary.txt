@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1539  |  gem_id: gem-cochrane-simplification-train-1540  |  doi: 10.1002/14651858.CD009508
+
+This review included 21 studies in 1490 women and looked at whether one way of teaching, supervising or performing these exercises was better than another. Women who had regular and repeated contact with the person who taught them to do the exercises and monitored their progress were more likely to report they were improved after treatment. Further research is needed because there were problems interpreting the studies, which meant we could not draw any firm conclusions about many of the other possible ways of teaching, supervising or performing these exercises.

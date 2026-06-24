@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3228  |  gem_id: gem-cochrane-simplification-train-3229  |  doi: 10.1002/14651858.CD012142.pub2
+
+We found only one small randomised controlled trial (including 210 very low birth weight newborn infants) that addressed this question. This trial did not show that early planned removal of UVCs from infants could reduce their chance of developing a bloodstream infection. However, because the trial was small, this finding is not certain. The trial did not provide sufficient evidence to inform policy or practice; larger trials are needed to resolve this question fully.

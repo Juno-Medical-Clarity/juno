@@ -1,0 +1,9 @@
+We experienced a 72-year-old man who developed laboratory-confirmed human coronavirus HKU1 pneumonia.
+PCR testing for SARS-CoV-2 from a nasopharyngeal specimen was negative twice, and rapid immunochromatographic antibody test (RIAT) using a commercially available kit for IgM and IgG against SARS-CoV-2 showed him turning positive for IgG against SARS-CoV-2.
+We then performed RIAT in stored serum samples from other patients who suffered laboratory-confirmed human common cold coronaviruses (n = 6) and viruses other than coronavirus (influenza virus, n = 3; rhinovirus, n = 3; metapneumovirus, n = 1; adenovirus, n = 1) admitted until January 2019.
+Including the present case, four of 7 (57%) showed false-positive RIAT results due to human common cold coronaviruses infection.
+Two of the 4 patients showed initial negative to subsequent positive RIAT results, indicating seroconversion.
+RIAT was positive for IgG and IgM in viruses other than coronavirus in 2 (25.0%) and 1 (12.5%) patient.
+Because of high incidence of false positive RIAT results, cross antigenicity between human common cold coronaviruses and SARS-CoV-2 can be considered.
+Results of RIAT should be interpreted in light of epidemics of human common cold coronaviruses infection.
+Prevalence of past SARS-CoV-2 infection may be overestimated due to high incidence of false-positive RIAT results.

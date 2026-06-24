@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3190  |  gem_id: gem-cochrane-simplification-train-3191  |  doi: 10.1002/14651858.CD006391.pub2
+
+This review found 34 studies with 2657 people. It compared benzodiazepines when used alone as the only medication or when used in combination with another drug for people with schizophrenia. Information from the 34 studies was generally poor, incomplete and badly reported. The 34 studies were of short duration and were small in size. The review suggests that there is little evidence to support the use of benzodiazepines either alone or in combination. However, benzodiazepines do have sedative properties that can calm people down and help them become less agitated for short periods of time. More research, particularly involving benzodiazepines as add-on treatment used in combination with traditional antipsychotic drugs, is required. This plain language summary has been written by Benjamin Gray, Service User and Service User Expert, Rethink Mental Illness, Email: [email protected]

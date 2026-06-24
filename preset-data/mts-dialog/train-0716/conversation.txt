@@ -1,0 +1,3 @@
+Doctor: Do you want to go home?
+Patient: Yes, I do. Can I?
+Doctor: Yes, you sure can.

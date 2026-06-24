@@ -1,0 +1,12 @@
+source:      plos_genetics
+side:        simple
+readability: 5.2
+split:       test
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'mutagenic effects'
+  [9:10] 'abbr-medical' -> 'PLP'
+  [12:14] 'medical-jargon-google-easy' -> 'evolutionarily conserved'
+  [16:17] 'abbr-medical' -> 'PLP'
+  [19:20] 'medical-jargon-google-easy' -> 'inhibition'
+  [25:26] 'abbr-medical' -> 'CAB'

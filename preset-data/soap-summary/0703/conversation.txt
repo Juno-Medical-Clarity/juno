@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0703
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+We can release you from the hospital today if we have a safe place for you to go. Is there a parent or guardian we can release you to? I am in foster care. My foster mom is going out of town on the nineteenth to the twenty third. In that case, we will have to keep you in the hospital until your foster mom returns from her trip. Can my mom and grandmother come and visit me here on Thursday? That is the day they usually come to visit me at my foster home. Yes. I think we can make some arrangements to make that happen.

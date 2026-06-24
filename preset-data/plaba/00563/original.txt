@@ -1,0 +1,12 @@
+The human heart is a pivotal organ in the circulatory system, and it beats more than 2 billion times during normal life.
+This functioning of the heart depends on the cardiac conduction system, which includes impulse generators (e.g., sino-atrial node) and the impulse propagating (His-Purkinje) system.
+The sinoatrial node acts as the natural pacemaker of the heart.
+The cells present in the sinus node have innate automaticity, which starts the electrical activity in the heart.
+This innate electrical potential moves from the sinoatrial node to the atrioventricular node and finally into the His-Purkinje system.
+This movement of electric potential in an orderly manner controls the rhythmic contraction of the heart's chambers.
+The failure of this intrinsic electrical conduction in the heart can result in different arrhythmic problems.
+Several diseases and conditions affect the conduction system by involving impulse generation, impulse propagation, or both.
+Acquired conditions such as myocardial infarction, age-related degeneration, procedural complications, and drug toxicity are the major causes of the native conduction system malfunction.
+The current standard of care for symptomatic bradyarrhythmias due to conduction system diseases is the implantation of a cardiac implantable electronic device.
+These pacing devices provide an external electrical stimulus that leads to depolarization of myocytes and helps maintain the electrical excitability of the heart tissue.
+This process leads to excitation-contraction coupling resulting in the contraction of myocardial tissue.

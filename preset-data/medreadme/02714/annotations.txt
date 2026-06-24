@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 3.7
+split:       dev
+
+jargon_spans:
+  [10:11] 'medical-jargon-google-easy' -> 'antibiotic'
+  [13:14] 'abbr-medical' -> 'RTIs'

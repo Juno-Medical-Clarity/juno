@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0995
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is being treated for Irritable Bowel Syndrome (IBS) by a gastroenterologist (GI).
+- Last visit indicated that white blood cell levels are not where they are supposed to be.
+- Patient describes overall health as "fine, I guess."
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

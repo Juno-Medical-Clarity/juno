@@ -1,0 +1,5 @@
+pmid:        35008695
+question:    68
+adaptation:  adaptation2
+title:       H-Ferritin Produced by Myeloid Cells Is Released to the Circulation and Plays a Major Role in Liver Iron Distribution during Infection
+sentences:   10

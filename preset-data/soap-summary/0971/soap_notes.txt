@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0971
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient's mother passed away from a heart attack at age 73. 
+- Patient's father had heart complications and passed away at age 80. 
+- Patient lost a brother to a brain tumor at age 9. 
+- Patient expressed that losing the brother was a dark time for the family, but they survived it together.
+
+Objective: 
+- (No objective data provided.)
+
+Assessment: 
+- (No assessments provided.)
+
+Plan: 
+- (No plan provided.)

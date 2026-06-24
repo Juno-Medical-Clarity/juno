@@ -1,0 +1,5 @@
+drug_focus: cocaine
+question_type: Side effects
+section_title: Cocaine intoxication
+source_url: https://medlineplus.gov/ency/article/000946.htm
+sample_id: 0521

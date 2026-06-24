@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1294
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient mentioned being in detention for assault.
+- Incident occurred around December 2009.
+- Patient is unsure about current legal constraints.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

@@ -1,0 +1,5 @@
+Doctor: Hello. How are you doing today?
+Patient: Not great. My back is killing me.
+Doctor: What happened?
+Patient: I fell down on it.
+Doctor: I see. Let's do some tests to see if you damaged anything.

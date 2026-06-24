@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 1134
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Heel pain
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: None reported (no joint pain, difficulty walking, nausea, vomiting)
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Concerns: Patient spends a lot of time on their feet at work; currently only experiencing heel pain.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment or diagnosis provided.
+
+Plan:
+- Advise patient to get an orthotic for their shoes to help with heel pain.
+- Recommend resting feet when at home.
+- Suggest seeing a specialist to rule out any other issues.

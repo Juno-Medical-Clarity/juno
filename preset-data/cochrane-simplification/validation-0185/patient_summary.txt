@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0185  |  gem_id: gem-cochrane-simplification-validation-186  |  doi: 10.1002/14651858.CD006477.pub2
+
+This review of clinical trials concluded that there is some evidence to show that flavonoids can help heal venous leg ulcers, however, many trials were not reported well, and we could not know for certain whether the apparently beneficial effects were real or not. This meant that we could not draw firm conclusions, or recommend routine use of flavonoids for people with leg ulcers. Larger and better conducted trials are needed to assess the true clinical effect of flavonoids.

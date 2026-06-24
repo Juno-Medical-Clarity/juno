@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0682
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- No old or new medications to report.
+
+Objective: 
+- (No objective data mentioned)
+
+Assessment: 
+- (No assessment information provided)
+
+Plan: 
+- (No plan provided)

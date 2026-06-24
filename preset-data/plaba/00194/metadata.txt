@@ -1,0 +1,5 @@
+pmid:        1078546
+question:    16
+adaptation:  adaptation1
+title:       Alternate-day prednisone therapy and human lymphocyte subpopulations
+sentences:   8

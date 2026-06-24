@@ -1,0 +1,5 @@
+drug_focus: brinzolamide/brimodine
+question_type: Information
+section_title: INDICATIONS & USAGE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a49c157e-6310-0011-7b7f-e26fc1820d59&audience=consumer
+sample_id: 0551

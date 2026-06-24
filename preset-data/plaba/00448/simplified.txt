@@ -1,0 +1,7 @@
+Although bone mineral density (BMD) testing to measure how much calcium and other minerals are in bones to look for osteoporosis (a condition in which bones become weak and brittle) is suggested for women 65 years old or older, few studies look at how long to wait between tests.
+We studied 4957 women, 67 years old and older, with normal BMD or weaker than normal bones who had never broken a hip or spine or received treatment for osteoporosis, followed for up to 15 years.
+The time between BMD testing was the estimated time for 10% of women to develop osteoporosis before breaking a hip or spine, considering estrogen (female-specific hormone) use and risk factors.
+We used mathematical models to look at changes from normal BMD and from mild, moderate, and advanced osteopenia.
+We considered hip and spine breaks and people taking drugs to strengthen bones.
+We found the estimated time between BMD testing was 16.8 years for women with normal BMD and 17.3, 4.7. and 1.1 years for women with mild, moderate, and advanced osteopenia, respectively.
+Our results suggest that less than 10% of older women who had gone through menopause (a point in time 12 months after the last period) would develop osteoporosis if tested about every 15 years for women with normal BMD or mild osteopenia, 5 years for women with moderate osteopenia, and 1 year for women with advanced osteopenia.

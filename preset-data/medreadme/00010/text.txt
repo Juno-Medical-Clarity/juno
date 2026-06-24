@@ -1,0 +1,1 @@
+To better characterize and address this issue, we analyzed time and spatial trends in malaria reporting delays across administrative regions and implement methods to transform incomplete case data to more accurate current case counts.

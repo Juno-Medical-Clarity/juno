@@ -1,0 +1,7 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 3.5
+split:       test
+
+jargon_spans:
+  [4:8] 'general-complex' -> 'comparative diagnostic accuracy study'

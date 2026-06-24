@@ -1,0 +1,1 @@
+Our simulation analysis indicated that extrinsic noise, but not intrinsic noise, contributes to cell-to-cell heterogeneity of nuclear ERK.

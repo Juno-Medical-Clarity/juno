@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0543
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Is there anyone that lives with you at home? You are going to need someone to help you care for your wound. My wife lives at home with me. She can help me change my bandages.

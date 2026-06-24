@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0456
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 76-year-old male.
+- Complains of generalized weakness and malaise for several months.
+- Two-week history of worsening orthostatic dizziness.
+- Denies recent symptoms of: 
+ - Fever
+ - Shortness of breath
+ - Cough
+ - Vomiting
+ - Diarrhea
+ - Hemoptysis
+ - Melena
+ - Hematochezia
+ - Bright red blood per rectum
+ - Polyuria
+ - Night sweats
+ - Visual changes
+ - Syncopal episodes
+- Dizziness worsens when trying to stand straight.
+- Intermittent headaches described as feeling like "somebody is hammering inside."
+- Headaches have been occurring for many weeks.
+- History of sinusitis.
+- Smoking history: Previously smoked over 100 packs/year; currently smoking 1-2 packs/day.
+- Reports a weight loss of 40 pounds.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

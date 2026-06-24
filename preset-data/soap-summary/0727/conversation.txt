@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0727
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there! How are the both of you doing today? Guest_family: I am doing well but my son is sick. He is two and a half years old. What are his symptoms? Guest_family: He has a bad cough. He's been sick for the last three or four days. It sounds like there is phlegm rattling around in there when he coughs. He had a bad coughing fit this morning. I got nervous and decided to bring him in. During his coughing episode this morning, did you notice any loss of breath or gasping for air? Guest_family: No. Has he had a runny nose? Guest_family: No. Any fever? Guest_family: No. He has not been eating much. Is anyone else in the household sick? Guest_family: No. Is anyone in the household a smoker? Guest_family: No.

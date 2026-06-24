@@ -1,0 +1,5 @@
+pmid:        12352270
+question:    20
+adaptation:  adaptation2
+title:       Effects of adding cognitive therapy to fluoxetine dose increase on risk of relapse and residual depressive symptoms in continuation treatment of major depressive disorder
+sentences:   8

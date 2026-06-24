@@ -1,0 +1,44 @@
+# SOAP Notes — Sample 0002
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with worsening COPD symptoms over the past 3 days (increased cough, sputum production, shortness of breath)
+- Sputum: green-yellow in color with occasional blood streaks
+- Shortness of breath affecting ability to walk dog, usually able to walk around the block a couple times a day
+- Denies home oxygen use
+- Reports fever last night (felt hot, no temperature taken at home)
+- Mild sinus pressure, slight headache
+- Denies sore throat, nausea, vomiting, diarrhea, constipation, abdominal pain, unintentional weight loss, night sweats 
+- Possible exposure to sick friend while walking dogs together outside
+
+PMHx:
+- COPD diagnosed 4-5 years ago by pulmonologist 
+- Two ER visits for COPD exacerbations in the past 3 years, no hospitalizations
+- Hypertension - lifestyle modifications (weight loss, increased walking), no medications
+
+Medications:
+- Daily COPD maintenance inhaler
+- Rescue inhaler used once every 2 weeks as needed
+
+SocHx:
+- Lives with husband
+- Works from home for municipality 
+- Denies occupational exposures (dust, smoke)
+- Rarely drinks alcohol
+- Former smoker (0.5 PPD x 20 years), quit after COPD diagnosis
+- Denies recreational drug use
+
+FHx:
+- No known family history of lung diseases, heart conditions, or cancers
+
+Objective:
+- Vitals pending
+- Physical exam pending
+
+Assessment:
+- Likely COPD exacerbation, possibly triggered by infection
+
+Plan:
+- COVID swab
+- Pending labs, vitals, and further evaluation to determine need for ER admission vs discharge home
+- Discuss with attending and update patient

@@ -1,0 +1,5 @@
+pmid:        32666337
+question:    46
+adaptation:  adaptation1
+title:       Sphingolipids and plasma membrane hydrolases in human primary bronchial cells during differentiation and their altered patterns in cystic fibrosis
+sentences:   7

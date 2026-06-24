@@ -1,0 +1,7 @@
+source:      MSD
+side:        complex
+readability: 3.5
+split:       dev
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Double vision'

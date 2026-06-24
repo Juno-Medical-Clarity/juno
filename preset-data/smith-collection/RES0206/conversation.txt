@@ -1,0 +1,182 @@
+# Smith Collection Transcript: RES0206
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: So i so i have copand its usually like pretty manageable with my puffers and that but just in the last like 3 days i feel like its gotten a lot worse you know i i feel like im coughing more often and im now uh kind of producing more sputum kind of like a green yellowy sputum uhm i even notice that there is like a little bit of blood a couple times when i was like really coughing hard i’ve been finding it like harder to breathe than usual i don’t have home oxygen or anything and im not i didnt think i was quite there yet but this these last few days its been its been really hard to breathe
+
+Doctor: I see ok so this is happened in the past three days have your symptoms gotten better or worse over this time
+
+Patient: I feel like theyve been get maybe maybe getting a little worse they definitely havent gotten better
+
+Doctor: OK and has this ever happened to you before
+
+Patient: I’ve had i had some troubles like when ive been sick before where the cough is gotten pretty bad this is probably this is probably the worst that ive had but i have like i have had in my copbeen made worse by being sick
+
+Doctor: I see ok well i guess the first thing were going so hows tbad how bad is your shortness of breath
+
+Patient: Like i i walked here fine but i normally like can walk around the block and i go for a walk usually a couple times a day to walk my dog and its been just its been a little bit trickier to do that
+
+Doctor: I see ok and uh have you ever had any hospitalizations in the past specifically for copexacerbations
+
+Patient: um i havent uhm like stayed over in the hospital i like come to emerge a couple times
+
+Doctor: Alright um how many times
+
+Patient: I think twice maybe over the last like three years
+
+Doctor: Uhm when were you diagnosed with copd
+
+Patient: Uhm 4 5 years ago
+
+Doctor: Was it formally diagnosed using the proper testing
+
+Patient: Yeah they referred me to a lung a lung doctor
+
+Doctor: I see ok and have you had any fevers or chills
+
+Patient: I feel like i may have had a fever last night i felt really hot
+
+Doctor: Did you check your temperature
+
+Patient: I i dont have a thermometer at home
+
+Doctor: No problem we can now check your temperature
+
+Patient: Here by the bed i would say had a fever
+
+Doctor: Sure and have you had any other symptoms so have you had like a runny nose or stuffy nose any pain in your sinus
+
+Patient: I think i think i have a ive had a bit of a like this pressure in the sinus area but its been the cough has been the thing thats been the most bothersome
+
+Doctor: I see and have you had a sore throat at all
+
+Patient: Oh no
+
+Doctor: OK a headache
+
+Patient: Uhm maybe a little bit yeah
+
+Doctor: OK and any nausea or vomiting
+
+Patient: No
+
+Doctor: Diarrhea or constipation
+
+Patient: No
+
+Doctor: Abdominal pain
+
+Patient: No
+
+Doctor: OK in have you recently lost weight unintentionally
+
+Patient: No no i wish but no
+
+Doctor: OK have you had any night sweats where you feel like youre drenched in sweat at night
+
+Patient: uh no nothing like that
+
+Doctor: Alright and have you had any exposures to anyone who could potentially be sick
+
+Patient: um let me think i i meet my i meet a couple of friends to walk our dogs together outside and one of them was a bit sick for a bit we try not to get too close but maybe i dont know maybe sometimes we walk a little too close we feel too safe cause were like outside
+
+Doctor: OK ok um and did your friend get a covid test done
+
+Patient: Uhm i don’t know
+
+Doctor: Thats ok ok and you mentioned that you had copthat was diagnosed four or five years ago any other medical conditions that youve been diagnosed with
+
+Patient: um yeah i have a high blood pressure
+
+Doctor: OK and are you taking any medications
+
+Patient: I’m not im not i we talked about it but i decided to try to change my lifestyle as much as i could 1st and ive also done that for the copits generally pretty like ive been really trying to take care of it but um i feel like i maybe got sick or something this time yeah so my blood pressure is like ok right now
+
+Doctor: OK ok
+
+Patient: My pressure and then i lost weight and started this walking more
+
+Doctor: Thats great thats really really good that youre taking better care of yourself should definitely continue doing that
+
+Patient: Right
+
+Doctor: And youve mentioned that you have some puffers how often do you use those
+
+Patient: Oh like i have the one that i use every day that im supposed to just use no matter what and then the one that i use when kind of just when i need it i probably use it like once every two weeks
+
+Doctor: OK ok uhm and you mentioned that your copd’s are getting better do you find that its affecting your life in any way affecting the way that youre doing your daily activities at at home or at work if you are working
+
+Patient: I like pretty ok except for like if i get sick i so yeah its been
+
+Doctor: I see
+
+Patient: So i think its like pretty well managed like i stay on top of my lifestyle now
+
+Doctor: Thats good thats good do you have any allergies
+
+Patient: uh no no
+
+Doctor: No no allergies to medications
+
+Patient: No
+
+Doctor: OK ok good and do you just a couple more to general questions have you traveled anywhere outside the province recently
+
+Patient: No
+
+Doctor: You i guess i should have asked you earlier but have you noticed any change in your sense of smell
+
+Patient: uh no i dont think so
+
+Doctor: Any change in your sense of taste
+
+Patient: Uhm no i dont think so
+
+Doctor: Any confusion or fuzzy feeling
+
+Patient: Nope
+
+Doctor: No ok any muscle aches in your body
+
+Patient: uh no
+
+Doctor: OK alright and just kind of some questions about your living situation do you currently live alone and i you mentioned that you have a dog are there any is there anybody anyone else in the house
+
+Patient: uh my husband
+
+Doctor: OK and do you currently work
+
+Patient: Yeah i uh like ive been working from home i worked for the municipality
+
+Doctor: I see do you think you might have had any exposures to say dust or smoke or anything like that that could have worsened your symptoms
+
+Patient: I dont think so
+
+Doctor: And do you drink alcohol
+
+Patient: Oh very rarely
+
+Doctor: OK do you smoke
+
+Patient: I used to i quit once they said i have copi smoked 12 pack a day for probably 20 years
+
+Doctor: OK ok and do you consume marijuana or any recreational drugs
+
+Patient: No
+
+Doctor: OK uh alright well i guess one more question are there any lung diseases or heart conditions or cancers that run in the family
+
+Patient: No nothing that i can think of
+
+Doctor: Alright well thats those are all the questions i had for you i will now do it physical exam and look at your vitals and listen to your chest its likely that what you have right now is copexacerbation maybe just a like an infection that you got which worsened some of your copsymptoms we would also have to rule out covid so well be doing a covid swab and will decide based on the on your labs in your vital signs its instead of other things whether you need to stay in the er and be admitted or if you are good to go home i will also talk to my attending and will make those decisions together and come back and talk to you does that sound good to you
+
+Patient: Yeah that sounds great thank you
+
+Doctor: Your welcome

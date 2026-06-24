@@ -1,0 +1,16 @@
+Doctor: How are your parents doing, sir?
+Patient: Well, doctor, I've lost both of them now.
+Doctor: I'm so sorry to hear that, sir. How about your brothers?
+Patient: Thank you, doctor. Both of my brothers are doing very well.
+Doctor: Remind me, please, how old are they?
+Patient: One of them is sixty eight, and the other is seventy seven. I'm in the middle.
+Doctor: That's great. Do you have any medical conditions that run in your family?
+Patient: Well, I'm not sure if it counts, but I had a brother and sister, they were twins, they died at birth.
+Doctor: Oh no, thank you for telling me.
+Patient: Yes, I thought it would be important.
+Doctor: Do you have any children, sir?
+Patient: Yes, I have two sons, they're both doing very well.
+Doctor: How old are your sons?
+Patient: One of them is fifty four, and the other is fifty seven.
+Doctor: In addition to the neonatal deaths, do you have any other conditions that I should know about?
+Patient: Yeah, um, a lot of my family has diabetes, and a lot of them have had heart attacks as well.

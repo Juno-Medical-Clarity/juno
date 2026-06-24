@@ -1,0 +1,11 @@
+source:      plos_computational_biology
+side:        simple
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Caulobacter crescentus'
+  [9:11] 'medical-jargon-google-easy' -> 'cell division'
+  [16:19] 'medical-jargon-google-easy' -> 'differentiated daughter cells'
+  [25:26] 'medical-jargon-google-easy' -> 'flagellated'
+  [27:28] 'medical-jargon-google-easy' -> 'motile'

@@ -1,0 +1,16 @@
+Doctor: What brings you in today?
+Patient: I dropped a glass and one of the broken pieces cut my foot pretty badly. There was a lot of blood.
+Doctor: Is the area still bleeding?
+Patient: I got it to stop bleeding while I was waiting for my ride.
+Doctor: Is there any pain in the area?
+Patient: No, it doesn't hurt.
+Doctor: Are you able to walk normally without pain or discomfort?
+Patient: Yes.
+Doctor: Are you experiencing any numbness or loss of strength in the area?
+Patient: No.
+Doctor: Do you have any other injuries on any other part of your body?
+Patient: No.
+Doctor: Have you had any recent illnesses?
+Patient: No.
+Doctor: Do you have any other concerns while you are here today?
+Patient: No.

@@ -1,0 +1,8 @@
+Doctor: You had a heart surgery, right?
+Patient: Yes, that is right.
+Doctor: Pacemaker?
+Patient: Yes, they did that.
+Doctor: What else? What other surgeries?
+Patient: I have had a hysterectomy.
+Doctor: Okay.
+Patient: Yeah.

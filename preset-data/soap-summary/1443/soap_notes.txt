@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1443
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has asthma.
+- Patient's parents were surprised that the patient developed asthma, as there is no family history of the condition.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

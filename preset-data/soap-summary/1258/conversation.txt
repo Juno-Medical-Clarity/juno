@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1258
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have a history of surgeries? I had a bone fragment removed from my right arm. I had a D and C done a long time ago. It was a treatment for H P V. More recently I had an ovarian cancer staging biopsy done. I have not heard back with the results yet. I only had it done less then a week ago. How are you feeling after the biopsy? I had a significant amount of pain for two to three days after. I feel better now.

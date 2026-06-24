@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1067
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Last flu vaccine: 1999
+- Last pneumonia vaccine: 1996
+- Father's medical history: had a stroke, high blood pressure, age 79
+- Mother's medical history: died at age 74, had heart failure and emphysema
+- No siblings; only patient and father remain in the family
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment information provided]
+
+Plan:
+- [No plan information provided]

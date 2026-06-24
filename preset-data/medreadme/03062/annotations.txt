@@ -1,0 +1,8 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [0:1] 'general-complex' -> 'Qualitative'
+  [10:11] 'medical-name-entity' -> 'NVivo10'

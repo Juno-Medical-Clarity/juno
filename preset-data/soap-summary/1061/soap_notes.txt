@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1061
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Severe bruising
+- Duration: Not specified, but the patient has been taking Coumadin for three months
+- Concerns: Questioning if they are taking too much Coumadin
+- Relevant medical history: Currently taking Coumadin for three months
+- Associated symptoms: None explicitly mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Emotions/concerns: Concern about the dosage of Coumadin and its effects
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- Get tested for hypersensitivity to Coumadin
+- Adjust dosage based on test results.

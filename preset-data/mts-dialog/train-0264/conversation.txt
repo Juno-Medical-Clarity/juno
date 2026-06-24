@@ -1,0 +1,4 @@
+Doctor: What is going on?
+Patient: I have pain in my jaw since the morning.
+Doctor: How bad is it?
+Patient: Not that bad.

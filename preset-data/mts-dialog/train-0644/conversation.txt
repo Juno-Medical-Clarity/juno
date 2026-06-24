@@ -1,0 +1,30 @@
+Doctor: Good morning, sir, I hear you're a patient of Doctor A.
+Patient: Yes, that's correct.
+Doctor: Did she refer you to me?
+Patient: Yeah, I'm fifty five, so I'm not too young anymore, but I have developed iron deficiency anemia with blood in my stool. At least, that's what she's told me so far.
+Doctor: Are you having diarrhea?
+Patient: Yeah, I am.
+Doctor: How would you describe the frequency?
+Patient: I'd say it's chronic at this point.
+Doctor: How long have you known you have anemia?
+Patient: Um, it's been a few months now.
+Doctor: What markers were evaluated in order to diagnose this?
+Patient: I had, um, an unusual pruritus, and I had a C B C.
+Doctor: Do you have the results of that?
+Patient: Yes, right here.
+Doctor: Thank you, so this shows a hemoglobin of nine, and M C V of sixty five.
+Patient: Are those high?
+Doctor: Well, actually, both of those are low.
+Patient: Oh, okay.
+Doctor: How long have you had blood in your stool?
+Patient: Um, it's been about five months now.
+Doctor: What has the color been like?
+Patient: Well, it's been both dark and bright blood, actually?
+Doctor: When was your last colonoscopy?
+Patient: It was about three years ago, I had it with Doctor X. I did it in Las Cruces.
+Doctor: Was there any abnormality found?
+Patient: Yeah, I had polyps removed.
+Doctor: Were those polyps evaluated?
+Patient: Yeah, the doctors said they were, um, hyperplastic. They diagnosed me with, um, lymphocytic colitis.
+Doctor: I see, when was the last time you were treated for diarrhea?
+Patient: At this point, it's been more than three years.

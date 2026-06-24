@@ -1,0 +1,16 @@
+There is not enough information on how well tests for coronavirus (which causes Covid-19 - a breathing-related illness) can correctly diagnose a positive case (which signals presence of the virus) beyond 35 days after the start of Covid-19.
+This study aims to describe the percentage of positive coronavirus tests out of all tests, also called positivity rate, using three different measurements over a long period of time.
+Researchers took 268 samples from 180 Covid-19 patients with symptoms. These samples are tested using an RT-PCR test that finds traces of genetic material of the virus and a blood test to look for antibodies (proteins used by the immune system to fight infection).
+Researchers used 3 electrochemiluminescence assay (ECLIA) test formats that can look for multiple types of antibodies in the blood, 4 enzyme-linked immunosorbent assay (ELISA) tests that test for antibodies for the coronavirus and can provide information about past exposure to Covid-19, and 1 lateral flow immunoassay (LFIA) test format that can detect active coronavirus.
+After the first clinical sign for Covid-19 starts, the positivity rate and other measures to find the percentage of positive and negative (no virus) results in tests that are true positive, called positive predictive value, and true negative results, called negative predictive value, are calculated each week.
+Combinations of tests are measured to better understand how the primary tests are working.
+Maps are created to show how the different tests operate.
+During a follow-up period of more than 9 weeks, a type of ECLIA and one ELISA antibody test showed stable positivity rates after the third week.
+Except for ECLIA, the positive predictive value (percentage of positive tests that are true positives) of the other tests similar to ECLIA are ≥95% for Covid-19 only after the second week.
+ELISA and LFIA have somewhat lower positive predictive values.
+The IgM antibody that suggests a recent infection did not have enough information to do predictive calculations.
+An orthogonal testing approach is when a person who tests positive are tested again with a second test. Orthogonal testing provided a positive predictive value of  ≥ 95% for patients who probably had the disease (e.g., symptomatic patients).
+After the second week, negative predictive values (percentage of negative test results that are true negatives) of all but the IgM antibody test are ≥95% for patients with a low or moderate chance of likely having the disease before being tested.
+
+When reading results from coronavirus tests, the estimate of the chance of having the disease before confirming with a test, the time that blood is drawn, and test characteristics must be considered.
+An orthogonal testing approach when a person with a positive results receives a second test increases the accuracy of positive, but not negative, predictions.

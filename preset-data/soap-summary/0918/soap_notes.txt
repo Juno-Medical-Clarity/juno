@@ -1,0 +1,27 @@
+# SOAP Notes — Sample 0918
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 55-year-old white male.
+- Diagnosis of polycythemia vera with secondary myelofibrosis.
+- JAK2 positive.
+- History of numbness and tingling with burning pain in hands associated with previous treatments (hydroxyurea, interferon).
+- Developed severe diarrhea and fatigue while on lenalidomide.
+- Injured left leg one week ago, swelling present but now resolved after taking prescribed steroids for three days.
+- Reports increased appetite and weight gain in the last few weeks due to marijuana use.
+- No siblings available for transplant match.
+- Not on the transplant list due to social support issues and better health status compared to other candidates.
+- No other related complaints.
+
+Objective:
+- Overall performance status in the ECOG scale is 1.
+
+Assessment:
+- Polycythemia vera with secondary myelofibrosis.
+- Intolerance to lenalidomide.
+- Recent left leg injury with resolved swelling.
+
+Plan:
+- Continue monitoring the patient's condition.
+- Evaluate further treatment options considering past intolerances and current symptoms.
+- Discuss potential lifestyle modifications regarding weight gain associated with marijuana use.

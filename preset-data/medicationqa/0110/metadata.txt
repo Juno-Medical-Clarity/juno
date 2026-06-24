@@ -1,0 +1,5 @@
+drug_focus: gabapentin
+question_type: Stopping/tapering
+section_title: Administration Information
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=446e1edb-8e98-4627-879d-9bd7f33da50f&audience=consumer
+sample_id: 0110

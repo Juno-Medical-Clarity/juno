@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0678  |  gem_id: gem-cochrane-simplification-train-679  |  doi: 10.1002/14651858.CD003534.pub3
+
+This review examined the effectiveness of FP when given at different doses for treating asthma in children and adults. High doses (800 to 1000 microgram per day) led to small improvements in measures of airway opening compared to low doses (50 to 100 microgram per day) in people with mild to moderate asthma. High dose FP did not lead to clear improvements in symptoms over the lower dose and increased the risk of a hoarse voice and fungal mouth infections. In people with severe asthma, very high doses FP (2000 microgram per day) appeared to allow more people on oral steroids to stop or reduce their dose of oral steroid tablets compared to lower doses of FP (1000 to 1500 microgram per day).

@@ -1,0 +1,8 @@
+source:      MSD
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [7:8] 'medical-jargon-google-easy' -> 'rectum'
+  [13:14] 'general-medical-multisense' -> 'stool'

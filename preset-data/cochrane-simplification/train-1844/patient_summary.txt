@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1844  |  gem_id: gem-cochrane-simplification-train-1845  |  doi: 10.1002/14651858.CD008905.pub3
+
+Following our data search in January 2018, we included 10 trials with a total of 844 participants, which we assessed using the standard Cochrane Review protocol. The trials compared the incidence of hernia development around a stoma between a group having a mesh placement at the time of stoma formation and a control group having a conventional stoma formation without mesh placement. We found that mesh placement around the stoma at the time of stoma formation reduces the incidence of future hernia formation. The participants having a mesh fitted had a similar level of complications as those not having a mesh. We found low-quality evidence favouring the insertion of a mesh into people having a stoma.

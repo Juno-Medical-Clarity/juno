@@ -1,0 +1,13 @@
+Doctor: Hello sir. Let me first start by asking your age. How old are you?
+Patient: I'm twenty four.
+Doctor: So, what brought you here? How can I help you?
+Patient: I was out for fishing this weekend, I think I got into some poison ivy and I have these rashes all over my chest, legs, arms and also some are on my back.
+Doctor: You seem so confident of it being poison ivy has it happened before?
+Patient: Oh yes, it has happened several times before. It usually takes some time to get over. Last time I was here Doctor Blackman gave me a steroid injection.
+Doctor: Okay, let me check my records. It looks like he gave you eighty milligrams of depomedrol. How was it last time after the injection?
+Patient: It worked fine. It did take us some time to get rid of it.
+Doctor: Did you take any medicine or anything else this time?
+Patient: I took over the counter Benadryl. Also, I'm applying cortisone cream on the rashes.
+Doctor: Did they help you?
+Patient: I saw a little bit of improvement. But this weekend it seemed to have been worst.
+Doctor: No worries, let's set you up for another injection.

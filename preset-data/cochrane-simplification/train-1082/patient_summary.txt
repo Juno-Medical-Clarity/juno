@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1082  |  gem_id: gem-cochrane-simplification-train-1083  |  doi: 10.1002/14651858.CD005592.pub2
+
+This review looked for randomized trials comparing Huperzine A with control in patients with AD. Six trials were identified but most trials were of low methodological quality. Although Huperzine A seemed to have some beneficial effects on improvement of general cognitive function, global clinical status, behavioral disturbance and functional performance for patients with AD, the small trials with limited numbers of patients and the low methodological quality resulted in cautious assessment of the results. More large, high-quality randomized trials are needed.

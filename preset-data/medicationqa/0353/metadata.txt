@@ -1,0 +1,5 @@
+drug_focus: enalaprilat
+question_type: Indication
+section_title: INDICATIONS AND USAGE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eabae489-e254-4987-ab90-7cda20a6f856
+sample_id: 0353

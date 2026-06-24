@@ -1,0 +1,1 @@
+We have determined the structure of the chromatin-tethering domain (CTD) of IE1 bound to the nucleosome core particle, and discovered that the specific interaction between IE1-CTD and the H2A-H2B acidic patch impairs the compaction of higher-order chromatin structure.

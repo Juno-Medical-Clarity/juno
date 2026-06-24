@@ -1,0 +1,38 @@
+Doctor: When was your injury, sir?
+Patient: Um, if I recall, it was on November twentieth two thousand eight.
+Doctor: What do you do for a living, sir?
+Patient: I work at the Purdy Correctional Facility, doctor.
+Doctor: How did you get hurt?
+Patient: Well, an inmate broke some of the overhead sprinklers, and I slipped on all the water and I landed on the back of my head, and then onto my back.
+Doctor: Which side took most of the hit?
+Patient: It was mostly on my left side.
+Doctor: How were you after the fall?
+Patient: Well, I was pretty stunned, mostly. I didn't want to come in, but my employers asked me to just to be sure.
+Doctor: Who has evaluated you to date?
+Patient: Um, I went to Gig Harbor Urgent Care, and then they sent me to Tacoma General Hospital. At Tacoma they said I have a whiplash and concussion.
+Doctor: What did they do at the hospital?
+Patient: Um, they did a C T scan, and they found a dark spot on my brain.
+Doctor: What did they recommend about the spot?
+Patient: They said I should have another M R I and they diagnosed an, um, recurrent acoustic neuroma.
+Doctor: So, you've had this before? How did they know you had it?
+Patient: I used to see a chiropractor, and they suggested that I get a scan and that's how they found it before.
+Doctor: When was this?
+Patient: Um, it was in October of two thousand five.
+Doctor: Did you have surgery on this?
+Patient: Yes, I'm recovering now.
+Doctor: Are they still considering radiation?
+Patient: Yes, it's under consideration but there's no final decision yet.
+Doctor: Okay, what does the chiropractor do for you?
+Patient: You know, the usual, adjustments and massages, stuff like that.
+Doctor: Has there been any improvement?
+Patient: Overall, my spine pain has improved a lot.
+Doctor: That's good. Okay, so after your fall, what other treatments did you have?
+Patient: I went to Prompt Care in Bremerton, and saw Doctor X Y Z. She's an osteopathic doctor.
+Doctor: How did she treat you?
+Patient: She ordered an M R I of my neck, I have the report right here.
+Doctor: Okay, this shows some mild disc bulge at C four C five. Did she let you go back to work?
+Patient: Yes, she released me back to full duty. I was doing fine after the neurosurgical treatment.
+Doctor: Do you have any other treatment planned?
+Patient: Some radiation.
+Doctor: What else has she treated you for?
+Patient: Oh, you know, just general aches and pains on my back and neck. I have been seeing her since two thousand and two.

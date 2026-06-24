@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1319
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: None explicitly mentioned.
+- Severity: Not mentioned.
+- Duration: Not mentioned.
+- Associated symptoms: None explicitly mentioned.
+- Relevant medical history: None mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Other concerns: Patient smokes and drinks alcohol; consumes four to five glasses of wine per day. Expressed enjoyment of wine.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

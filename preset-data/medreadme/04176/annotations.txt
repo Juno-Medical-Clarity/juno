@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        simple
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'IPF'
+  [10:11] 'medical-jargon-google-easy' -> 'dyspnoea'
+  [16:18] 'medical-jargon-google-easy' -> 'pulmonary rehabilitation'

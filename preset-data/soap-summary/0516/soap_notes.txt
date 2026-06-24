@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0516
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Weakness on the left side after brain tumor removal. 
+- Surgery for brain tumor on October 24th last year. 
+- Patient is 64 years old. 
+- Attended physical therapy from November 5th to November 14th last year, but problems were not resolved. 
+- Admitted to the hospital after therapy; tests revealed swelling in the brain, leading to a second surgery on December 5th. 
+- Discharged from rehab one month after the second surgery. 
+- Developed DVT in the left calf while in rehab, but did not experience any further issues after that. 
+
+Objective: 
+- No measurable or observable data provided.
+
+Assessment: 
+- No clinician's interpretation or diagnoses provided.
+
+Plan: 
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

@@ -1,0 +1,8 @@
+source:      elife
+side:        simple
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [12:13] 'medical-jargon-google-easy' -> 'lipoproteins'
+  [14:17] 'medical-jargon-google-easy' -> 'Alzheimer ’s disease'

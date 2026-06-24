@@ -1,0 +1,7 @@
+Doctor: Are you taking Citalopram for depression?
+Patient: Yes, I take it once a day.
+Patient: It is ten M G tablet.
+Doctor: Is that so?
+Patient: Yes.
+Doctor: What do you take for pain?
+Patient: Just Tramadol as needed.

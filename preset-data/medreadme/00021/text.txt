@@ -1,0 +1,1 @@
+We confirm that the TFs bind with predicted allele-specific preferences using CTCF ChIP-seq data.

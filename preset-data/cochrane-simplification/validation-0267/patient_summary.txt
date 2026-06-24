@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0267  |  gem_id: gem-cochrane-simplification-validation-268  |  doi: 10.1002/14651858.CD010289.pub2
+
+This review found data in three clinical trials, involving 1202 people with moderate or severe pain after having wisdom teeth removed or after abdominal or pelvic surgery. These situations are used commonly to test analgesic effectiveness, because results are applicable to other forms of acute pain after trauma. Different types of surgery give very similar estimates of the effectiveness of analgesic drugs. Ibuprofen 400 mg plus oxycodone 5 mg provided effective pain relief for about 6 in 10 (60%) of participants, compared with just under 2 in 10 (17%) of participants with placebo. The analgesic effects lasted longer and there were no more adverse events with the combination than with placebo. The combination provided effective pain relief to about the same proportion of people as did ibuprofen alone, but there was a lower chance of needing additional analgesia with the combination.

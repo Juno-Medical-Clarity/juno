@@ -1,0 +1,12 @@
+Background: The ω-6 (n-6) to ω-3 (n-3) fatty acid (FA) ratio (n-6:n-3 ratio) was previously shown to be a predictor of executive function performance in children aged 7-9 y.
+Objective: We aimed to replicate and extend previous findings by exploring the role of the n-6:n-3 ratio in executive function performance.
+We hypothesized that there would be an interaction between n-3 and the n-6:n-3 ratio, with children with low n-3 performing best with a low ratio, and those with high n-3 performing best with a high ratio.
+Design: Children were recruited on the basis of their consumption of n-6 and n-3 FAs.
+The executive function performance of 78 children aged 7-12 y was tested with the use of the Cambridge Neuropsychological Test Automated Battery and a planning task.
+Participants provided blood for plasma FA quantification, and the caregiver completed demographic and activity questionnaires.
+We investigated the role of the n-6:n-3 ratio in the entire sample and separately in children aged 7-9 y (n = 41) and 10-12 y (n = 37).
+Results: Dietary and plasma n-6:n-3 ratio and n-3 predicted performance on working memory and planning tasks in children 7-12 y old.
+The interaction between dietary n-6:n-3 ratio and n-3 predicted the number of moves required to solve the most difficult planning problems in children aged 7-9 y and those aged 10-12 y, similar to results from the previous study.
+There was also an interaction between the plasma n-6:n-3 ratio and n-3 predicting time spent thinking through the difficult 5-move planning problems.
+The n-6:n-3 ratio and n-3 predicted executive function performance differently in children aged 7-9 y and in those aged 10-12 y, indicating different optimal FA balances across development.
+Conclusions: The n-6:n-3 ratio is an important consideration in the role of FAs in cognitive function, and the optimal balance of n-6 and n-3 FAs depends on the cognitive function and developmental period studied.

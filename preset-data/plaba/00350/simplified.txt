@@ -1,0 +1,10 @@
+The Covid-19 (a breathing-related, viral disease) pandemic is a global crisis, with devastating health, business and social impacts.
+Vaccination is a safe, simple, and effective way of protecting a person against Covid-19.
+By the end of August 2021, only 24.6% of the world population has received two doses of a Covid-19 vaccine.
+Several Covid-19 vaccines have been developed and approved for emergency use, which is when medicines not yet approved are allowed to be used.
+Current vaccines are shown to be effective with a low risk of unexpected serious side effects, also called adverse effects.
+However, Covid-19 vaccines are related to a relatively small number of cases of heart inflammation that can cause damage to the heart muscle via redness and swelling from an infection, anaphylaxis (severe allergic reactions that may be life-threatening), and blood clot formation.
+On the other hand, Covid-19 vaccination is not recommended for children less than 12 years of age.
+Also, it is proposed that some new variants (e.g., Lambda and Delta) are able to escape the immune response from vaccinations.
+This paper presents current considerations on the Covid-19 vaccines including: effectiveness against new variants, challenges in distribution of the vaccines, differences in availability to groups, differences in doses by gender and race, how to transport and store the vaccines, and limitations in children and pregnant women.
+Long-time monitoring is key in order to find vaccine effectiveness and to rule out related side effects.

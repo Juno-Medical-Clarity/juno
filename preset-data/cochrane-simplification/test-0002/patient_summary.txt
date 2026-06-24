@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0002  |  gem_id: gem-cochrane-simplification-test-3  |  doi: 10.1002/14651858.CD006199
+
+This review looked at vaccinations targeted at the asexual (blood) phase of the parasite's life, when the parasites are in red blood cells. One vaccine for this phase, MSP/RESA (also known as Combination B), has been tested in field trials in Papua New Guinea. It reduced the density of parasites in the blood, but it did not prevent malaria attacks. Blood-stage vaccines are being actively pursued in further research.

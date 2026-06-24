@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0665
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good morning, ma'am, welcome in. I believe this is our first time meeting. Good morning, doctor. Yes, this is my first time in. Great, how old are you? I'm fifty five, doctor. Thank you, what seems to be the problem today? Well, I'm having a laundry list of symptoms coinciding with my allergies. Like what, ma'am? Well, my sense of taste is diminished, dry mouth, um, acid reflux, and G I issues, and then I have asthma, and reactions to things like aerosols. I see, do you have any food allergies? Um, I think.

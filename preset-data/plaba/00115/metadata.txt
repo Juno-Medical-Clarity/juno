@@ -1,0 +1,5 @@
+pmid:        21493175
+question:    10
+adaptation:  adaptation1
+title:       Stellate ganglion blockade (SGB) for refractory index finger pain - a case report
+sentences:   10

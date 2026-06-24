@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1422
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has terminal cancer.
+- Patient has decided not to be resuscitated.
+- Patient has appointed daughter as legal healthcare proxy who respects his wishes.
+- Patient wishes to spend last days at home surrounded by loved ones.
+- Patient expresses gratitude towards the doctor for the care received.
+- Patient feels that he is "fine."
+
+Objective:
+- No measurable or observable data mentioned.
+
+Assessment:
+- Terminal cancer.
+- Patient's wishes regarding end-of-life care are clear.
+
+Plan:
+- Ensure patient is comfortable and able to spend last days at home.
+- Continue support from nursing staff.

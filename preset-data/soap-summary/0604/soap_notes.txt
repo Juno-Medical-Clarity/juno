@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0604
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the left middle finger and wrist, numbness in the left middle finger that progressed to the wrist.
+- Severity: Pain is described as a struggle and aggravating.
+- Duration: Pain and numbness have been present for about a month.
+- Associated symptoms: Numbness started in the finger and moved to the wrist.
+- Relevant medical history: No history of neck injury, no neck pain or weakness.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: The patient is a cook and cuts fish for hours, which aggravates symptoms.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

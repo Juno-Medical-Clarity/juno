@@ -1,0 +1,5 @@
+pmid:        19957776
+question:    74
+adaptation:  adaptation3
+title:       The spectrum and clinical features of causes for chronic cough
+sentences:   16

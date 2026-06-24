@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0326  |  gem_id: gem-cochrane-simplification-validation-327  |  doi: 10.1002/14651858.CD004466.pub3
+
+This update included 592 participants from seven studies (two new and one that had been excluded in the previous 2007 review). We found evidence from four small trials that incentive spirometry offers no advantage over standard post-surgical physical therapy, or preoperative education in preventing breathing complications and pneumonia, improving lung function, or shortening length of hospital stay in patients undergoing CABG. Bigger and better designed trials are needed to determine if there is any role for incentive spirometry.

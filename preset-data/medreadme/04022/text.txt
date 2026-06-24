@@ -1,0 +1,1 @@
+Here, we use a simple excitatory-inhibitory neural network to explain the dynamics of these fascinating patterns.

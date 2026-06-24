@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0604  |  gem_id: gem-cochrane-simplification-train-605  |  doi: 10.1002/14651858.CD003495.pub3
+
+This review included 16 randomised trials with a placebo control group, with over 900 children involved. The review found no evidence that single or multiple dose intravenous secretin is effective in improving the main problems seen in ASD, namely a lack of social interaction and communication and restrictive, repetitive behaviours and routines. As such, currently it should not be recommended or administered as a treatment for ASD. Further experimental assessment of secretin's effectiveness for ASD can only be justified if there is convincing new evidence that finds that secretin can influence brain function in a way that could benefit children with ASD or a link is proven between secretin and the known cause of ASD for some or all children.

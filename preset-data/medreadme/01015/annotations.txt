@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [9:11] 'medical-jargon-google-easy' -> 'Kallithea virus'
+  [14:19] 'medical-jargon-google-easy' -> 'double - stranded DNA virus'
+  [23:25] 'medical-jargon-google-easy' -> 'DNA virus'
+  [33:35] 'medical-jargon-google-easy' -> 'D. melanogaster'

@@ -1,0 +1,8 @@
+Early detection of many disorders, mainly inherited, is feasible with population-wide analysis of newborn dried blood spot samples.
+Phenylketonuria was the prototype disorder for newborn screening (NBS) and early dietary treatment has resulted in vastly improved outcomes for this disorder.
+Testing for primary hypothyroidism and cystic fibrosis (CF) was later added to NBS programs following the development of robust immunoassays and molecular testing.
+Current CF testing usually relies on a combined immunoreactive trypsin/mutation detection strategy.
+Multiplex testing for approximately 25 inborn errors of metabolism using tandem mass spectrometry is a relatively recent addition to NBS.
+The simultaneous introduction of many disorders has caused some re-evaluation of the traditional guidelines for NBS, because very rare disorders or disorders without good treatments can be included with minimal effort.
+NBS tests for many other disorders have been developed, but these are less uniformly applied or are currently considered developmental.
+This review focuses on Australasian NBS practices.

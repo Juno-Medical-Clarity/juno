@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0492
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: None explicitly stated.
+- Severity: Not mentioned.
+- Duration: Not mentioned.
+- Associated symptoms: None mentioned.
+- Relevant medical history: Patient is a smoker, taking around one to two packs of cigarettes each day; drinks two to four beers in a day.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient acknowledges alcohol consumption and smoking habits.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

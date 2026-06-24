@@ -1,0 +1,5 @@
+pmid:        32210915
+question:    52
+adaptation:  adaptation1
+title:       Bioinformatic Analysis Identifies Potential Key Genes in the Pathogenesis of Turner Syndrome
+sentences:   12

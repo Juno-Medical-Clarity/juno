@@ -1,0 +1,5 @@
+drug_focus: steroids
+question_type: Side effects
+section_title: The effect of anabolic steroids on the gastrointestinal system, kidneys, and adrenal glands.
+source_url: https://www.ncbi.nlm.nih.gov/pubmed/16529682
+sample_id: 0608

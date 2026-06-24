@@ -1,0 +1,206 @@
+# Smith Collection Transcript: RES0173
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Im im here because i ive oddly been feeling really short of breath and have a fever or and a cough
+
+Doctor: OK when did the shortness of breath start and are you short of breath now
+
+Patient: It started about uh i guess i could start yesterday and a little bit but its getting better
+
+Doctor: Started yesterday ok well im glad its getting better when did the cough start
+
+Patient: It started around the same time
+
+Doctor: OK it is it a dry cough or or wet cough
+
+Patient: Its a dry cough
+
+Doctor: OK is it is this cough new or if you had a cough before
+
+Patient: No its its kind of new
+
+Doctor: Alright have you brought up any i know you said its been but have you brought up any blood
+
+Patient: No
+
+Doctor: OK and have you had any wheezing
+
+Patient: No
+
+Doctor: OK and you mentioned a fever as well have you checked your your temperature today or yesterday
+
+Patient: Yeah it was at 38 last night
+
+Doctor: Are you feeling feverish today as well
+
+Patient: Yeah a little bit
+
+Doctor: OK and uh so have you had any any infectious symptoms like runny or red eyes
+
+Patient: No
+
+Doctor: How about a runny nose or feeling congested
+
+Patient: No no its just a cough
+
+Doctor: Cough ok and what what were you around any triggers yesterday or like around any anything that was out of the normal for you
+
+Patient: I got a notice that this happens to me every time i go to my boyfriends place so i started dating i started dating someone new about six months ago and every time i go to his place a couple hours later i just like develop these symptoms just kind of odd i thought that i was just getting a cold but now that its happened like three times im thinking maybe you have some sort of an allergy like maybe  i dont know maybe its like yeah im just allergic to something maybe his plants or something i dont know
+
+Doctor: OK and it does this happen each time that you go go to his house
+
+Patient: um yeah yeah kind of almost yeah thats like you havent like i havent been to his place very often because of the pandemic but yeah every time i go kinda feel really crappy after
+
+Doctor: I see ok and uh are there any other environments you can think of where this happens or have these symptoms happen at any other point
+
+Patient: No i dont think so
+
+Doctor: OK and have you had a sore throat
+
+Patient: No
+
+Doctor: How about any losses of smell or or taste
+
+Patient: No
+
+Doctor: OK and have you had any chest pain
+
+Patient: No no i havent
+
+Doctor: K and have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: Alright and any abdominal pain or diarrhea
+
+Patient: No
+
+Doctor: Any urinary problems like painful urination or frequency
+
+Patient: No
+
+Doctor: Have you had any muscle aches or body pains
+
+Patient: Yeah yeah just act different feeling achy and kinda tired these past well like 12 to 14 hours
+
+Doctor: I see ok so it has been kind of like all over or there are particular muscles sore or our body part
+
+Patient: No its its like all over
+
+Doctor: OK and youve been fatigued as well
+
+Patient: Oh yeah
+
+Doctor: OK have you had any headaches
+
+Patient: No
+
+Doctor: Any skin changes or rashes
+
+Patient: uh no
+
+Doctor: Alright and then how about any night sweats or chills i know you mentioned fevers
+
+Patient: No ive just been feeling hot
+
+Doctor: OK i mean how was your weight been over the last several months is it like have you lost weight or gaining weight or is up in the same
+
+Patient: Kind of in the same
+
+Doctor: OK and uh in the past have you been diagnosed with any medical conditions
+
+Patient: No im pretty healthy
+
+Doctor: OK you see yeah you havent had asthma in the past or or anything like that
+
+Patient: No
+
+Doctor: OK any allergies to medications youre aware of or or environmental things like or dust or pollen
+
+Patient: No no which is why i was kind of surprised im usually fine and i spend a lot of time outdoors so i dont know yeah i was surprised when this happened when i went to his place
+
+Doctor: OK did you ever get these kind of symptoms if you are like yeah or around smoke or or anything like that you could maybe be inhaling or or even if you are outside in the cold
+
+Patient: No
+
+Doctor: OK and you get seasonal symptoms like throughout the year you get like itchy runny eyes or like like a runny nose
+
+Patient: No no that hasnt happened to me
+
+Doctor: OK and do you take any medications
+
+Patient: I just take a birth control pill
+
+Doctor: And when how long have you been on that for
+
+Patient: About three years
+
+Doctor: OK and any prior surgeries or hospitalizations
+
+Patient: Oh no
+
+Doctor: Alright and can you tell me a little bit about where youre living currently and two youre living with
+
+Patient: I live alone uh i have an apartment next to the university
+
+Doctor: OK and any potential for being around anybody whos been sick like your boyfriend or his family or or anywhere else
+
+Patient: No ive just been visiting him and i just go grocery shopping ive just ive been doing schooling online yeah i dont think so im usually very careful im not yeah im not maintaining social distancing with my boyfriend hes in my social circle but yeah other than that no one i think yeah
+
+Doctor: OK and have you traveled anywhere
+
+Patient: No
+
+Doctor: Alright then are you currently working or going to school
+
+Patient: Im going to school
+
+Doctor: OK cool and uh and are you currently sexually active
+
+Patient: Yep
+
+Doctor: OK and are you using birth control are you using condoms
+
+Patient: Yep ok any concern for any sexually transmitted infection at this time
+
+Doctor: No no im very careful
+
+Patient: OK and do you smoke cigarettes
+
+Doctor: No
+
+Patient: Do you drink alcohol
+
+Doctor: Sometimes if like during like parties and stuff but i havent really been drinking much cause theres nothing going on
+
+Patient: OK yeah i see and uh do use any recreational drugs
+
+Doctor: No
+
+Patient: Alright then umm in the family is there a history of any lung problems or any any heart problems
+
+Doctor: um just high blood pressure my mom and dad have it
+
+Patient: OK and so i wanted to ask about the boyfriends house as well is there any pets in the home there
+
+Doctor: Oh yeah yeah he has this cute little parrot and he also has a cat
+
+Patient: OK and do you have any pets at your house
+
+Doctor: No no i dont
+
+Patient: Oh ok so that i think that was everything that i wanted to ask on on history today was there anything else i forgot to mention or you wanted to to bring up
+
+Doctor: I dont think so no
+
+Patient: OK so it sounds like theres potentially could be caused by an allergen such as which could be   from an animal like a parrot or a cat that is causing just a reaction and its bringing these symptoms on like called hypersensitivity pneumonitis but also we cant rule out asthma as well as being a trigger of kind of the cough and shortness of breath is being around allergens as well so well order pulmonary function test and maybe some uh uh imaging and chest xray and we will go from there
+
+Doctor: Great thank you

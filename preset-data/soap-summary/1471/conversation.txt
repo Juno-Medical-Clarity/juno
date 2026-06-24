@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1471
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi, how's it going? Not too bad, can't complain. It looks like the weather's been warming up, which is nice. Yeah, I can't wait to spend some time with my kids this afternoon. Aw, how many kids do you have? Two. And are you single, dating, married? I've been married to my wife for about ten years now. Congratulations! That's a decade, my friend. Hah, it sure is. Are you from the area? I was actually born in Oklahoma. How long- Moved up here in O seven. Awesome. I moved here in O nine, so two years after you. No way! How funny. Where from? I'm originally from Kentucky. And I have to do the routine ask, but any drinking, smoking, or illicit drug use? No to all of the above. Got it.

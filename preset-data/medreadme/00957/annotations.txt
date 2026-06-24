@@ -1,0 +1,13 @@
+source:      plos_biology
+side:        simple
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-hard' -> 'FAM173B'
+  [7:9] 'medical-jargon-google-easy' -> 'methyltransferase activity'
+  [11:12] 'medical-jargon-google-easy' -> 'mitochondria'
+  [13:15] 'medical-jargon-google-easy' -> 'sensory neurons'
+  [20:21] 'medical-jargon-google-easy' -> 'pathway'
+  [27:30] 'medical-jargon-google-easy' -> 'reactive oxygen species'
+  [35:38] 'medical-jargon-google-easy' -> 'spinal cord microglia'

@@ -1,0 +1,9 @@
+Doctor: How are you today?
+Patient: I am doing okay.
+Doctor: Just to confirm, you are fifty seven years old?
+Patient: Yes.
+Doctor: What brings you to see me today?
+Patient: I have been having these headaches every day for the last six months.
+Doctor: That is a long time. I am sorry that you have been experiencing that.
+Patient: Well, I am hoping you can make them stop.
+Doctor: I will do my very best to help.

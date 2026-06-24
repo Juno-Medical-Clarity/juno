@@ -1,0 +1,53 @@
+Doctor: So let's start from the beginning.
+Patient: Okay.
+Doctor: You're seventy nine years old, correct?
+Patient: Yes.
+Doctor: Right or left handed?
+Patient: Right.
+Doctor: Do you remember when you had your first fall?
+Patient: Hm about a year and a half ago I fell while trying to walk from my bed to the living room.
+Doctor: Did you feel lightheaded prior?
+Patient: Uh yeah I did have some lightheadedness and I was a bit confused. I was aware of my surroundings though. My legs just gave out and the next thing I knew I was on the floor.
+Doctor: I see. Did you lose consciousness?
+Patient: No, thank goodness.
+Guest_family: He got up by himself and felt fine afterwards. The strangest thing.
+Patient: Yeah. I was good until my legs gave out on me July third of O eight.
+Doctor: Did you experience the same lightheadedness as before?
+Patient: Not this time.
+Guest_family: We had to rush him to the hospital after that.
+Patient: I was later diagnosed with pneumonia. The fall was blamed on the pneumonia.
+Doctor: Got it.
+Patient: To be on the safe side, I started using a walker from then on.
+Doctor: Did you need any type of walking assistance prior to your falls?
+Patient: Nope. I used to walk about two miles a day before all of this stuff started happening to me. This isn't even the end of it. My legs gave out on me again August O eight. No lightheadedness beforehand, but they did find that I had pneumonia again.
+Guest_family: They admitted him to the hospital and later sent him for rehab.
+Doctor: Did rehab help?
+Patient: Yeah. I was able to use my walker after that.
+Doctor: Did you return to your previous health?
+Patient: Uh not really, no. I had another fall in October O eight.
+Doctor: Did they diagnose you with pneumonia again?
+Patient: Yeah. I also had shingles.
+Doctor: Are you currently living at home?
+Patient: I'm living in a Chronic Rehab Unit. I can't use my walker anymore. I'm confined to a wheelchair.
+Doctor: I'm sorry to hear that.
+Patient: On top of that, I've noticed that my hands have been numb for the past three weeks.
+Doctor: Is it all of your fingers or only some?
+Patient: All.
+Doctor: Are you noticing any other symptoms along with the numbness in your fingers?
+Patient: Yes. I feel like I've lost quite a bit of muscle in my hands. They're also much weaker than before. My strength hasn't been the same since July O eight. It's definitely getting worse.
+Doctor: I see.
+Patient: I've had muscle twitching in my legs since August O eight.
+Doctor: Fasciculations?
+Patient: Yes. In my lower legs and thighs.
+Doctor: Any cramping or problems swallowing?
+Patient: No.
+Doctor: Any difficulty breathing?
+Patient: No.
+Doctor: Any constipation or diarrhea?
+Patient: Both actually. It tends to alternate.
+Doctor: But no loss of bowel or bladder control?
+Patient: No. I've noticed that my blood pressure has been out of whack. I also feel like I'm about to faint anytime I stand.
+Doctor: Okay.
+Patient: I don't think I have much feeling in my feet. They feel like sponges.
+Doctor: How long has that been going on?
+Patient: Uh nine months or so. I lost joint position sense in my feet around that time, too.

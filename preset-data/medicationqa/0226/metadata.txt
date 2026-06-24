@@ -1,0 +1,5 @@
+drug_focus: premarin
+question_type: Usage
+section_title: USE IN SPECIFIC POPULATIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff#S8.5
+sample_id: 0226

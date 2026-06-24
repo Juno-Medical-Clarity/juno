@@ -1,0 +1,5 @@
+drug_focus: Lansoprazole
+question_type: Usage
+section_title: CONSUMER INFORMATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9cf54748-80da-428d-86f1-2a17f1160bc2
+sample_id: 0016

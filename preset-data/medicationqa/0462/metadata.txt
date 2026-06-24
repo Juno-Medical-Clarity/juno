@@ -1,0 +1,5 @@
+drug_focus: anastrozole
+question_type: Stopping/tapering
+section_title: NA
+source_url: https://www.breastcancer.org/research-news/not-taking-hormonal-tx-leads-to-more-recurrence
+sample_id: 0462

@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0488
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Used to chew tobacco, quit at age 37.
+- Consumes one glass of wine daily.
+- Married for 35 years.
+- Retired, previously worked as a lab manager.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

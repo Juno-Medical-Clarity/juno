@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1450  |  gem_id: gem-cochrane-simplification-train-1451  |  doi: 10.1002/14651858.CD010442.pub2
+
+We found 14 studies up to April 2016 involving 1863 participants that looked at the benefits of these programmes for people with stroke. They were conducted in a variety of countries in a variety of formats - sometimes in groups, sometimes individually, and for varying time periods. We found that such programmes may improve the quality of life after stroke. People with stroke reported improvements in their ability to live the way they wanted and that they felt more empowered to take charge of their lives, rather than be dependent on other people for their happiness and satisfaction with life. There were no reports of any risks or negative effects. The majority of the studies were well conducted and represent credible evidence that self management programmes may benefit people with stroke who are living in the community.

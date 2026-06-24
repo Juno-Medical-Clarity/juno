@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0429  |  gem_id: gem-cochrane-simplification-train-430  |  doi: 10.1002/14651858.CD006071.pub2
+
+In this review, the analysis of the two eligible trials found that the data was insufficient to reach a conclusion regarding the effectiveness of the 36-hr continuous infusion method. The blood flow lowering side-effects of indomethacin were reduced by the continuous infusion method, but there was insufficient data to recommend this administration method versus the traditional method.

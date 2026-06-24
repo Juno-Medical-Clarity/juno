@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0065  |  gem_id: gem-cochrane-simplification-test-66  |  doi: 10.1002/14651858.CD009046.pub2
+
+This review of four studies found that published studies evaluating smoking cessation interventions specifically aiming to reduce and/or stop the use of tobacco in Indigenous people are significantly lacking. The limited evidence reported in this review does indicate some benefit in these interventions to help Indigenous people stop smoking. However, the change in attitudes after one study was negative with fewer people 'ready to quit' after the smoking cessation intervention was completed. Consideration needs to be given to cultural differences and traditions when tailoring interventions for Indigenous people. Modified or innovative interventions and careful outcomes research are needed to improve the usefulness of smoking cessation interventions aimed at Indigenous populations.

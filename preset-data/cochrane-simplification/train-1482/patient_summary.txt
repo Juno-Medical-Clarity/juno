@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1482  |  gem_id: gem-cochrane-simplification-train-1483  |  doi: 10.1002/14651858.CD003476.pub2
+
+Atypical antipsychotics have become the pharmacological treatment of choice for many clinicians in the treatment of behavioural and psychiatric symptoms in people with dementia, and the largest evidence base for double blind placebo controlled trials in this area is for risperidone. Particularly in view of recent safety concerns, a meta-analysis of efficacy and adverse events to inform clinical practice is timely. Modest efficacy is evident, but the elevated risk of cerebrovascular adverse events, mortality, upper respiratory infections, oedema and extrapyramidal symptoms is a concern, particularly as selective reporting makes interpretation of other potential adverse outcomes impossible.

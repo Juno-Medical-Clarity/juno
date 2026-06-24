@@ -1,0 +1,1 @@
+Random allocation was used so that each participant had a 50% chance of receiving FST or MPT.

@@ -1,0 +1,15 @@
+Pacemakers are devices that generate artificial electrical pulses.
+A heart specialist or pacemaker technologist will be able to control the pacing rate and other functions, whether the device is temporary or permanent.
+Pacemakers are typically categorized as external (main device is outside the body) or internal (device is implanted in the body).
+The external variety is almost always placed to temporarily stabilize the patient or to assist some type of surgical procedure.
+The implantable type is usually permanent and often much more complex than the temporary, external variety.
+Pacemakers are one type of a cardiac implantable electronic device (known as CIED).
+This broad category also includes implantable cardioverter-defibrillators (ICDs), which are devices designed to directly treat a slow heart rate.
+Collectively, this group of devices was first introduced in the 1950s, shortly after the creation of the transistor that can record electrical activity inside heart cells.
+As technology has improved, so has the pacemaker device.
+The first implantable ICD was developed in 1980, and since that time, it has become more difficult to tell the difference between pacemakers and ICDs.
+This is because every ICD currently implanted has an anti-bradycardia (anti-slow-heart-rate) pacing function.
+It is critical for the patient and any health care provider to understand which device has been implanted to prevent unnecessary ICD therapy.
+This is most likely to occur with interference by another electrical device and could lead to activation of the device (if it is an ICD).
+Most types of cardiac implantable electronic devices (CIED) use several insulated lead wires with non-insulated tips that are implanted in the heart, either by inserting a catheter into a vein or directly by a heart surgeon.
+Pacemakers in the heart are made up of two parts: the pulse generator and the leads or electrodes.

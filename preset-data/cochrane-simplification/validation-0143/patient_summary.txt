@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0143  |  gem_id: gem-cochrane-simplification-validation-144  |  doi: 10.1002/14651858.CD002760
+
+This review assessed the efficacy of single-dose dihydrocodeine in adults with moderate/severe postoperative pain using information from randomised placebo controlled trials. There was a lack of data that could be included in the analyses; all assessed the oral form of the drug and none assessed dihydrocodeine 60 mg. The results were not robust. The implication was that single-dose oral dihydrocodeine 30 mg was more effective than placebo, but was inferior to ibuprofen 400 mg. Dizziness, drowsiness and confusion were commonly reported.

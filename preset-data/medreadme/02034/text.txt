@@ -1,0 +1,1 @@
+We developed a new approach to searching called' cluster searching', which uses a variety of search techniques to identify papers or other research outputs that relate to a single study.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1136
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I will ask you a few questions about your family history, sir. That's okay. Does anyone in your family ever have any medical problems? Both of my parents had diabetes.

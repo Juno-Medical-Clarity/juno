@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2616  |  gem_id: gem-cochrane-simplification-train-2617  |  doi: 10.1002/14651858.CD008566.pub2
+
+We searched the literature published before 6 January 2014, and after assessment, included three small studies that involved 101 participants. Our analysis found that although CRRT showed limited advantages over conventional treatment to improve some aspects of kidney function and muscle tissue loss, we found no significant benefits in reducing risk of death. The small body of available evidence demonstrated poor methodological quality, and was insufficient to enable us to make any robust conclusions about the effectiveness of CRRT for people with rhabdomyolysis. Larger and better designed studies would be needed to investigate if CRRT is beneficial for people with rhabdomyolysis.

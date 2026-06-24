@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0752
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What is your family medical history, sir? We have some heart issues in my family. My sister died during heart surgery two years ago. I am so sorry. Thank you. My mom died of a heart attack. How old was she when she passed? She was in her seventies? My dad died from a brain hemorrhage. He was only forty nine. Your family had been through a lot of loss. Yes, we have. Do you have any siblings that are still living? I have another sister. Oh yeah. She is a diabetic. Do you have kids? Yes, I have daughter. The only health problem she has is high cholesterol. Do you know of anyone else in the family with neurological disorders? No. I don't think so.

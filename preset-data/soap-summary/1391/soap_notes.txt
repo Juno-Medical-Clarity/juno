@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1391
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient reports high blood sugar. 
+- Patient expresses concern about not exercising daily. 
+- Patient asks if the lack of exercise is bad.
+
+Objective: 
+- Blood work indicates high blood sugar.
+
+Assessment: 
+- Patient is at risk of developing type 2 diabetes.
+
+Plan: 
+- Discuss the importance of daily exercise. 
+- Consider lifestyle modifications to reduce blood sugar levels. 
+- Follow up on blood sugar levels and exercise habits in future visits.

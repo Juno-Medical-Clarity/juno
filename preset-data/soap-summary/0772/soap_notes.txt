@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0772
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has anxiety disorder.
+- Patient's emotional response indicates understanding and acknowledgment of the diagnosis.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Patient diagnosed with anxiety disorder.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education provided.

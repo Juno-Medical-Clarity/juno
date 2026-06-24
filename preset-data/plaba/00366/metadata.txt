@@ -1,0 +1,5 @@
+pmid:        34585235
+question:    28
+adaptation:  adaptation1
+title:       RNA-RNA interactions between SARS-CoV-2 and host benefit viral development and evolution during COVID-19 infection
+sentences:   9

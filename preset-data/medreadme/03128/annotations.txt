@@ -1,0 +1,7 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [8:9] 'abbr-medical' -> 'SEED'

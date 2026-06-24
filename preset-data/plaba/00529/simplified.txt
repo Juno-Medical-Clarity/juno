@@ -1,0 +1,6 @@
+In patients with von Hippel-Lindau (VHL) disease, kidney cysts (growths) and clear cell renal cell carcinoma (ccRCC), a type of kidney cancer, come from cells in the kidneys called epithelial cells that inactivate (or turn off) the VHL gene. The VHL gene keeps cells from growing and dividing too fast.
+However, it is believed that formation of kidney cysts and their change to the ccRCC kidney cancer involve additional genetic changes at other locations.
+This study shows that cystic wounds in the kidneys of patients with VHL disease also show activation of the enzyme called phosphatidylinositol-3-kinase (PI3K) pathway, which regulates key cells processes.
+When two genes called Vhlh and Pten that keep cells from growing too fast are turned off, this brings about cyst formation in the kidneys of mice after a short delay. However, inactivation of only one of these genes fails to produce this same effect.
+Interestingly, cells lining these cysts frequently lack primary cilium, that acts like a cell antenna and is important for stopping or slowing kidney epithelial cells from multiplying and for stopping cyst formation.
+These results support a model in which the PTEN tumor suppressor protein cooperates with pVHL to stop cyst development in the kidney.

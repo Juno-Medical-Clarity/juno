@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1086
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any history of surgeries, sir? The most recent was seven years ago. I had a craniotomy. I had a brain hemorrhage and there was bleed inside and outside the brain that they had to fix. How was the recovery for that? I took a while but the doctors said I had a normal recovery time. That is good. Have you had any other surgeries? I had surgery on my leg for a fracture. They put some pins in my leg. Okay. I had some kind of surgery done on my stomach when I was a kid. I am not sure what the surgery was. All I know is that it was a very common procedure with no complications. Okay. Is that all? Yep. That's it.

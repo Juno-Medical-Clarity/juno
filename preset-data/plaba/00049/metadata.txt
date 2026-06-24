@@ -1,0 +1,5 @@
+pmid:        21636864
+question:    5
+adaptation:  adaptation2
+title:       Arthroscopic treatment of popliteal cyst
+sentences:   9

@@ -1,0 +1,5 @@
+Doctor: Have you seen your lab results?
+Patient: No, do you have those in today?
+Doctor: Yes, I have them right here. They're essentially negative, except it appears that you had C difficile in the past. Do you remember that?
+Patient: Yes, I got it when I worked at a hospital after graduating.
+Doctor: Yeah, its unfortunately more common there.

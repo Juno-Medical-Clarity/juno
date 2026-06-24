@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2246  |  gem_id: gem-cochrane-simplification-train-2247  |  doi: 10.1002/14651858.CD006613.pub3
+
+This update found no new eligible trials. The original review found three trials investigating the effects of red blood cell transfusion in patients with upper gastrointestinal tract bleeding. There were more deaths recorded in the transfusion arm of the combined studies compared to the control arm. It is by no means clear that transfusion is a surrogate marker for more severe haemorrhage. The deaths were too few and the trials too disparate to draw any firm conclusions regarding the effects of transfusion on mortality. We can only recommend that further, larger studies are done.

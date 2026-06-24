@@ -1,0 +1,10 @@
+source:      elife
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [8:9] 'abbr-medical' -> 'AEP'
+  [9:10] 'medical-jargon-google-easy' -> 'enzyme'
+  [18:19] 'medical-jargon-google-easy' -> 'enzyme'
+  [35:36] 'medical-jargon-google-easy' -> 'cyclized'

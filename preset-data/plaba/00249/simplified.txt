@@ -1,0 +1,8 @@
+Patients with major depressive disorder (a mental health disorder where a person is in a constant depressed mood or has a loss of interest in activities) remain at risk for relapse (the worsening of a medical condition that had previously improved) following remission (a period of improvement where the patient is mostly asymptomatic) and often continue to experience subthreshold symptoms in which a person has  symptoms but the symptoms do not meet the full criteria for a medical diagnosis.
+This study examines whether depressed patients who had recovered and then relapsed while on fluoxetine (a type of antidepressant also called prozac) at 20 mg/day would benefit from an increase in fluoxetine dose.
+A total of 132 patients with major depressive disorder who achieved remission with 8 weeks of treatment with fluoxetine at 20 mg had the dose increased to 40mg.
+They are randomly put in groups to receive cognitive therapy (a type of behavior therapy that focuses on challenging negative thoughts that can worsen emotional difficulties) or to receive medication only. Patients are followed for up to 28 weeks to check for depressive relapse and changes in depressive symptoms.
+A total of 47 out of 132 patients did not complete the 28 weeks phase of the study.
+Rates of stopping  the drug or relapsing did not differ significantly between the group receiving cognitive therapy and the group only receiving medication.
+Changes in subthreshold symptoms or wellbeing did not differ between groups.
+In this sample of patients being treated for major depressive disorder, the combination of cognitive therapy and fluoxetine at 40 mg failed to lead to any significant benefit in symptoms or in relapse rates over fluoxetine 40 mg alone during the 28 week follow-up period.

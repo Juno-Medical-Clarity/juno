@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0296
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_clinician: What brought them in today? Poor renal sufficiency, possibly due to dehydration or diabetic nephropathy. She also has high blood pressure and low blood sugar as a result of missing meals regularly.

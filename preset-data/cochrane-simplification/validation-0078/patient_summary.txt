@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0078  |  gem_id: gem-cochrane-simplification-validation-79  |  doi: 10.1002/14651858.CD000553.pub2
+
+Randomised clinical trials have compared three types of portosystemic shunting separately against endoscopic therapy. The shunts included in these trials have been total portocaval shunts, distal splenorenal shunts, and transjugular intrahepatic portocaval shunts. The authors found that when compared to endoscopic therapy all three types of shunt lowered the rate of rebleeding at the cost of a higher incidence of hepatic encephalopathy, without any statistically significant difference in survival.

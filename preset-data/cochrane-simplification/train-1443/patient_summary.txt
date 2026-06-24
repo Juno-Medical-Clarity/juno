@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1443  |  gem_id: gem-cochrane-simplification-train-1444  |  doi: 10.1002/14651858.CD007302.pub2
+
+These results were obtained from short-term randomised controlled trials. However, it should be noted that information that is not reported in this review, from longer-term follow-up studies of people using vigabatrin, has shown that its use is frequently associated with visual field defects which may go undetected.

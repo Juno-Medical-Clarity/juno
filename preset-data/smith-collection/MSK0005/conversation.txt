@@ -1,0 +1,246 @@
+# Smith Collection Transcript: MSK0005
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi ive ive had this pain on the outside of my uh right elbow now its it i first started knowing noticing it several months ago but recently its just been more painful
+
+Doctor: OK so you said several months ago um did anything happen several months ago was there any sort of trigger trauma anything like that to that area
+
+Patient: No there wasnt any any trauma or any triggers that that i noticed i was just um feeling it uh a bit more at the end of of work um yeah i was just having it uh feeling the pain a bit more at the end of work
+
+Doctor: OK does uh anything make it better or worse the pain
+
+Patient: um yeah if i really if im just resting the elbow um it makes it better and ive tried uh things like ibuprofen um which has helped with the pain ill ill do that for um hoping i can get through work sometimes if the pain is bad enough
+
+Doctor: Right ok um and if you were to describe the quality of the pain is it sharp throbby achy
+
+Patient: uh its um kind of uh well its achy and then sometimes depending on the movement it can get it can be sharp as well
+
+Doctor: It can be sharp ok ok um and what sorts of movements make it worse
+
+Patient: um so like really its mostly the movements at my wrist if im bending my wrist down uh i can i can feel it or um if im having to pick things up or hold heavy objects at work i do a lot of repetitive uh things at at work i work on a line
+
+Doctor: OK ok and 1 to 10 10 being the worst pain youve ever felt how bad is this pain
+
+Patient: It is about a four
+
+Doctor: About a four ok and have you ever experienced this type of pain before
+
+Patient: uh no i havent
+
+Doctor: No ok and do you feel like your pain is getting worse over the past several months or is it the same getting better
+
+Patient: uh its been getting worse
+
+Doctor: Its been getting worse ok ok um have you tried any like topical ointments or anything like that for it
+
+Patient: uh i did i yeah i tried some um some stuff that you can get at the um drugstore and it did help take the edge off a little bit
+
+Doctor: OK um alright and are you still able to move that arm your right arm um as well as your hand
+
+Patient: I am yeah i i have full range of motion of both the elbow and uh hand
+
+Doctor: OK and its not like preventing you from doing everyday tasks
+
+Patient: uh no i ive been been able to manage so far at work but um it is starting to become an issue um yeah with my job
+
+Doctor: OK um alright and then do you have any sorts of aches or pains uh in any other joint or muscle groups
+
+Patient: No its just right there on the outside of my right elbow and its really annoying cause im right handed as well so um yeah its causing problems there
+
+Doctor: Right um and is the pain radiating upwards or downwards
+
+Patient: uh no i kinda just feel it right over that that one spot
+
+Doctor: OK any numbness or tingling in that arm
+
+Patient: No no no numbness or tingling
+
+Doctor: Yeah um ok and then how about um like your arm feeling like its cold
+
+Patient: No i havent had anything like that
+
+Doctor: OK alright um and then otherwise do you have any other symptoms
+
+Patient: um no i its just been the elbow pain
+
+Doctor: OK so no weight loss
+
+Patient: No my weights been stable over these last few months
+
+Doctor: OK fevers or chills
+
+Patient: No i havent had any fevers or chills
+
+Doctor: OK any fatigue
+
+Patient: No my energys been good
+
+Doctor: OK how about um rashes
+
+Patient: uh no rashes
+
+Doctor: OK changes to your senses like vision hearing smell smell or taste
+
+Patient: No changes there
+
+Doctor: OK any coughing shortness of breath or wheezing
+
+Patient: No
+
+Doctor: OK chest pain any heart palpitations or uh dizziness
+
+Patient: Nothing like that
+
+Doctor: OK changes to your bowel movements
+
+Patient: No
+
+Doctor: No no no nausea or vomiting
+
+Patient: No i havent had any nausea or vomiting
+
+Doctor: OK changes to your urine
+
+Patient: No i havent had any urinary uh symptoms
+
+Doctor: OK memory loss or confusion
+
+Patient: No
+
+Doctor: OK so if you look at that right elbow um do you notice any redness or swelling
+
+Patient: uh no i dont
+
+Doctor: No ok does it seem misaligned or like asymmetrical compared to your other elbow
+
+Patient: No it looks it looks the same
+
+Doctor: Looks the same ok so no um skin changes or deformities there
+
+Patient: uh no
+
+Doctor: No ok alright and now im going to get you to um just palpate uh that lateral or yeah the lateral aspect of that elbow and you let me know if you feel pain when you push push on that
+
+Patient: uh there is pain at the lateral uh lateral elbow
+
+Doctor: How about the medial aspect
+
+Patient: No pain
+
+Doctor: No pain ok and how about when you palpate your um forearm and your biceps
+
+Patient: uh no no pain
+
+Doctor: OK alright and then do you feel like its hot that area
+
+Patient: No
+
+Doctor: No ok now i am going to get you to um extend your wrist
+
+Patient: OK
+
+Doctor: And then keep your elbow in full extension as well does that hurt
+
+Patient: uh it does yeah
+
+Doctor: Yeah ok how about when you flex your wrist with the elbow still in full extension
+
+Patient: uh it does yeah that hurts as well
+
+Doctor: OK how about when you flex your elbow
+
+Patient: uh no that that doesnt cause any pain
+
+Doctor: OK how about when you extend your shoulder all the way up
+
+Patient: No nothing there that feels fine
+
+Doctor: OK and then flexing your uh or sorry abducting your shoulder
+
+Patient: That feels normal
+
+Doctor: OK alright and then how about when you pronate and supinate your forearms
+
+Patient: uh pronation um
+
+Doctor: So like twist your um arm inwards so that your palm is facing the floor
+
+Patient: No that doesnt really cause any pain pronation and supination
+
+Doctor: OK alright um alright and then are you otherwise healthy or do you have any longstanding medical conditions
+
+Patient: um im uh healthy
+
+Doctor: Youre healthy ok and then um do you have have you had any hospitalizations or surgeries in the past
+
+Patient: I had a surgery for um a csection for uh my my son um but thats thats it
+
+Doctor: OK ok and um how long ago was that
+
+Patient: That was about uh 17 years ago
+
+Doctor: OK and was that an emergency csection
+
+Patient: uh no it was not
+
+Doctor: OK um and then are you on any medications
+
+Patient: um no ive just been taking uh tylenol and advil um for the pain
+
+Doctor: OK alright um immunizations wise are you up to date
+
+Patient: uh i i am yes
+
+Doctor: OK do you have any allergies
+
+Patient: uh no allergies
+
+Doctor: OK family history of any uh skeletal or muscular um issues
+
+Patient: um no nothing like that in the family
+
+Doctor: OK neurological issues in the family
+
+Patient: um no neurological issues in the family
+
+Doctor: OK how about um autoimmune conditions
+
+Patient: uh no nothing like that
+
+Doctor: OK and then um do you smoke
+
+Patient: uh no i havent smoked before
+
+Doctor: OK uh do you do um marijuana
+
+Patient: No i i dont use that
+
+Doctor: OK um alcohol
+
+Patient: um uh yeah ill have a glass of wine every once in awhile but maybe just one one a week
+
+Doctor: OK and have you been around sick contacts recently
+
+Patient: um no i havent been around anybody whos been sick
+
+Doctor: OK any recent travel
+
+Patient: uh nope ive been at home
+
+Doctor: OK um i think those are all the questions that i had for you um did you have any questions of your own for myself
+
+Patient: uh no i was just wondering what this pain could be on my in my elbow
+
+Doctor: Yeah so right now it seems like you may have a case of something called um lateral epicondylitis so its also known as uh tennis elbow um and there are a lot of things that could kind of predispose you to this um so it could be like the repetitive strain at work um and like continuous contraction of your wrist extensor muscle group there um so for this we basically recommend um a couple of things to manage the pain uh but first like in terms of imaging i dont think it is necessary because it doesnt seem like there was any trauma and im not too worried about any fractures um so to help you treat this um we recommend some activity modifications so um at work not doing things that are too repetitive especially if its using those um extensor forearm muscles um and then you can use some use a compression sleeve as well continue taking tylenol or nsaids for the pain and uh really important is physical therapy um to increase mobility and strength in that arm uh and as well you can apply things like ice um to it for like the pain and swelling if you see any uh yeah so it should resolve in about six months to two years at most uh but normally it does um go away in a couple of months with some physical therapy and the compression and splints if you choose to do that how does that sound
+
+Patient: Yeah that that sounds um good thank you
+
+Doctor: Yeah no worries

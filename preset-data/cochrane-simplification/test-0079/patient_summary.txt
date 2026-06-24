@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0079  |  gem_id: gem-cochrane-simplification-test-80  |  doi: 10.1002/14651858.CD006873.pub2
+
+This review examines the results of published studies which have looked at the effect of using medication following surgery for Crohn's disease as a mean of preventing the return (recurrence) of inflammation. Where possible, the results of studies were combined to compare the results of different treatments. A number of medications appeared to reduce the recurrence of inflammation, including metronidazole, mesalamine, azathioprine, 6-mercaptopurine and infliximab. Given that some of these medications have significant side-effects, the decision to use them requires a careful balancing of the risks and benefits for each individual patient

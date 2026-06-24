@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0043  |  gem_id: gem-cochrane-simplification-test-44  |  doi: 10.1002/14651858.CD001481
+
+This review examined the effects of interventions targeting health professionals or the way care is organised, with the aim of improving the management of people with diabetes in primary care, outpatient and community settings. The review found that multifaceted professional interventions (for example combinations of postgraduate education, reminders, audit and feedback, local consensus processes, and peer review) could enhance the performance of care providers. Organisational interventions that increased structured recall, such as central computerised tracking systems or nurses who regularly contacted patients, could also lead to improved care for patients with diabetes. The effectiveness of these interventions on patient outcomes (glycaemic control, cardiovascular risk factors, wellbeing) is less clear.

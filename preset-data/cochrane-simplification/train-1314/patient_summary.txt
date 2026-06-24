@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1314  |  gem_id: gem-cochrane-simplification-train-1315  |  doi: 10.1002/14651858.CD000409.pub2
+
+This review found 69 studies that evaluated educational outreach visits. Educational outreach visits appear to improve the care delivered to patients. When trying to change how health care professionals prescribe medications, outreach visits consistently provide small changes in prescribing, which might be potentially important when hundreds of patients are affected. For other types of professional practice, such as providing screening tests, outreach visits provide small to moderate changes in practice. But the effects really varied and why it varied could not be explained.

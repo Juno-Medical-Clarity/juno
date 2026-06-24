@@ -1,0 +1,5 @@
+drug_focus: Cataflam, Medrol
+question_type: Interaction
+section_title: Medrol and Cataflam drug interactions - from FDA reports
+source_url: https://www.ehealthme.com/drug-interaction/medrol/cataflam/
+sample_id: 0171

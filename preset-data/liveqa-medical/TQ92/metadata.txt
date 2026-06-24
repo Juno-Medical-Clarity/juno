@@ -1,0 +1,14 @@
+qid: TQ92
+source_file: 15344.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Does Fibromyalgia cause swelling in your body?
+nlm_summary: Can Fibromyalgia cause feet and ankle swelling?
+
+focus_entities:
+  [F1] (Problem) fibromyalgia
+question_types:
+  [T1] EFFECT
+keywords:
+  [K1] (Problem) swollen

@@ -1,0 +1,5 @@
+drug_focus: risedronate
+question_type: Appearance
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=563c6d6d-56df-43a7-a7aa-709c5ea3cdbe
+sample_id: 0233

@@ -1,0 +1,245 @@
+# PriMock57 Consultation Transcript: day1_consultation07
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Doctor: Hello?
+
+Patient: Hello?
+
+Doctor: Hello? Uh, can you hear me OK?
+
+Patient: Yes, yeah I can, I can, cheers.
+
+Doctor: [unintelligible]. Great. Right, how can I help you this afternoon sir?
+
+Patient: Uh, I am not feeling, very well.
+
+Doctor: I'm sorry to.
+
+Patient: And I haven't been feeling well, for, a good few days, now, and, I'm really hoping you can do something about it, because it's been, bugging me, for a while now.
+
+Doctor: Well I will certainly try my best, for you. Um, can you tell me a bit more about what's been going on?
+
+Patient: Uh, I just feel a bit, run-down, you know I've got, a cough, a cold.
+
+Doctor: [unintelligible]. Mm-hmm.
+
+Patient: You know, my wife's been nagging me. I just, it's just all, yeah, it's just, that, that, that's it, that's it.
+
+Doctor: Mmm. OK, well let's start with your cough first. Tell me a bit more about your cough. Is it, for example are you, coughing up anything at all, or is it mainly dry?
+
+Patient: Uh, yeah, yeah, mean, mostly, dry it's a [unintelligible], you know it's a wee bit in the morning it's a bit worse uh, but [unintelligible], and you know it's, it's fairly, fairly dry, aye.
+
+Doctor: [unintelligible] So you're not bringing up any mucky, flem?
+
+Patient: Yeah, yeah, yeah, yeah, yeah, yeah. I don't like to admit that it's, you know it's [unintelligible] talk about but, yeah it's [unintelligible], aye, aye. It's a wee bit, wee bit uh, [unintelligible] yeah.
+
+Doctor: OK, all right. [unintelligible] Yeah, I can certainly hear you've got the sniffles. So, bit of a runny, bit of a runny nose, you mentioned.
+
+Patient: Yeah, yeah, yeah, aye, aye you're right. Is that, is that coming through loud and clear on the phone yeah the, the sniffling, yeah, [unintelligible].
+
+Doctor: [unintelligible]. Yeah, sorry to hear that, yeah no [unintelligible]. Um, and uh, any other symptoms, so for example have you any, uh, any sore throats, any ear pain?
+
+Patient: Yeah, ugh, yeah, yeah. I've, I've had a bit of a sore throat. I mean, I, you know, [unintelligible], I'm doing a lot of uh, you know I'm, [unintelligible], watching the, watching the football as well. So I do a lot of shouting at that, but uh, uh, uh, I'm not sure if that's related or not.
+
+Doctor: [unintelligible] Ah OK. Who do you support?
+
+Patient: Uh, well it's a team, called, Partick Thistle. And they're in the, they're not even in the top division, uh, of the Scottish, league. They're actually in the, the, the championship, which is the league below that, and they're, bottom of the table.
+
+Doctor: Right.
+
+Patient: So I've been, shouting myself a wee bit hoarse, 'cause their performance has been, uh, pretty shite, if I'm being honest with you. [unintelligible].
+
+Doctor: Well, all sounds fascinating, well I wish them all the best. [unintelligible] nothing [unintelligible] table. Um, so, so you mentioned sore throat. Um, and have you had a chance to look in the, in the mirror? Have you had a look at the back of your throat?
+
+Patient: [unintelligible], yeah, yeah, yeah. [unintelligible], aye, I mean aye, I, I shave, every day so I'm, I'm looking at myself, it's not, not, not a pretty sight to be honest at the best of times but it's been a, wee bit, a wee bit rough, uh, the last few days for sure.
+
+Doctor: Yeah, now, I mean have you any, have you noticed any kind of, white spots on the back of your, back of your throat, or redness?
+
+Patient: Ohh right, right aye. [unintelligible], sorry you mean I'm looking ah right yeah uh. [unintelligible], no I[unintelligible], I don't, I don't really like to look, you know to look at it so I, I, I haven't, haven't tried to do any of that.
+
+Doctor: [unintelligible]. [unintelligible]. [unintelligible]. I understand it's not pretty but as I say it's not, it's not something we, we always um, uh, recommend but um, moving on. In terms of your ears [unintelligible], any dullness or blocked ears, pain in your ears.
+
+Patient: [unintelligible] Uh, yeah, [unintelligible], a, a wee bit I mean [unintelligible]. You know, I'm fit, I'm [unintelligible], I'm fifty years old now and my, my hearing's, you know it's not as good as it used to be but, you know I [unintelligible], I, I think, I think it's all right, it's all right.
+
+Doctor: OK, OK. Fine. Um, moving down to your chest. Um, how's your breathing been? So do, you feel more breathless or tight in your chest?
+
+Patient: Uh. Uh, no. No, no it's, it's not. No, no, no, [unintelligible].
+
+Doctor: [unintelligible]. So your breathing is [unintelligible]?
+
+Patient: [unintelligible], sorry, what was that?
+
+Doctor: Uh, your, your breathing is fine is it? [unintelligible] your, it's not laboured, or?
+
+Patient: No it's, it's, it's, it's not, it's not good. It's not good.
+
+Doctor: OK. It's not good?
+
+Patient: No. No, no.
+
+Doctor: No, OK, OK. So you're [unintelligible], you're, you're feeling more short of breath?
+
+Patient: Yeah, yeah.
+
+Doctor: OK, OK, [unintelligible], OK. Um, [unintelligible] any pain in your chest at all?
+
+Patient: No, no it's, it's, it's weird, it's, it's just, you know it's just a wee bit, it's just a wee bit shortness of breath, but it's not, [unintelligible], it's, it's not, it's not pain, you know, as such.
+
+Doctor: No pain, OK, OK. Have you noticed yourself, any, any, any temperatures or fevers? Um, feeling hot and cold? Sweaty?
+
+Patient: Yeah, yeah that's, that's, that's, that's definitely something I've noticed. Like, you know in, in bed with the wife and having to, you know get out and, get the blanket off, and put it back on again it's, it's not, it's not pleasant. I mean, I'm keeping her up at night as well, which is a, bloody nightmare but, I mean, you know how these things are.
+
+Doctor: [unintelligible]. [unintelligible]. Yeah, [unintelligible]. Seems, seems very difficult at the moment. Um, [unintelligible], have you measured your temperature at all? Have you, got a [unintelligible]?
+
+Patient: [unintelligible] But uh, no I mean, no you know, you know, I can, I just feel it in my forehead but, [unintelligible] I mean, I haven't, haven't, you know, used a thermometer or anything.
+
+Doctor: Mmm, OK. Sure, OK. Um, and just moving on, just very quickly. Um, any other symptoms? Any nausea? Any vomiting? Any tummy pain?
+
+Patient: Uh, [unintelligible] the, the first, the first day I had, you know a wee bit, of uh, [unintelligible], you know uh, you know the rot like, a wee bit of diarrhoea.
+
+Doctor: [unintelligible].
+
+Patient: You know but, but that, that's, that's fine, now. Um, and, [unintelligible], yeah but, but apart from that, [unintelligible], no.
+
+Doctor: [unintelligible]. OK. And how's your appetite? Are you eating and drinking OK?
+
+Patient: Uh, yeah I mean I'm, I'm, I'm trying to and I think what, what is you [unintelligible], you starve, a cold and you, feed the. I, can't remember what it is, but I think I've, uh, my appetite's been, been all right yeah, yeah. I'm trying to, trying to keep, keep the fluids up as well you know, I hear that's what you should do.
+
+Doctor: [unintelligible]. Yeah, absolutely, [unintelligible], completely uh, recommend that, so keep, keep doing what you're doing. Um, and just lastly, you know any, any, any kind of muscle pain, joint pains?
+
+Patient: [unintelligible] Yeah. Yeah it's, it's, it's just been a wee. I mean again, you know I'm [unintelligible], I'm getting a just a wee bit older now so it, it's, it's not something that I, I was thinking about but, I have, I have noticed like when I, you know, when I'm bending down and. Know moving about, it's just, a wee, a wee bit stiffer than, than normal. [unintelligible], you know and I'm, I think that might be to do with whatever this.
+
+Doctor: Mmm.
+
+Patient: Thing is, but, again it's, you know, I'm just getting on.
+
+Doctor: And where do you, where do you feel the stiffness?
+
+Patient: It it's, just kinda, like you know when you're, when you're bending like, elbows and knees and just, just a wee bit, kinda stiff, you know?
+
+Doctor: [unintelligible], all over, OK. And just remind me sir, when did your symptoms all start? [unintelligible], you say a few days ago?
+
+Patient: Yeah. Yeah I would say what day is it today? It's uh, [unintelligible], Wednesday, so it would have been, what is it Saturday, 'cause I was out.
+
+Doctor: It's Wednesday. OK.
+
+Patient: Yeah I was out having dinner, and then, yeah I, I came, yeah, yeah, yeah it would have been that. 'Cause I was out, for my wife's, uh she's, she was, doing this wee thing, we had a wee bit of a celebration, so we were out for that.
+
+Doctor: [unintelligible].
+
+Patient: And I remember saying to her, it was like you know what? I'm, I'm, I'm not feeling, great. You know I [unintelligible], I stuck it out with her but, aye, it would have been that, Saturday. So, what's that about five, five days ago? Yeah, yeah, yeah, yeah.
+
+Doctor: Four, five days ago, yeah. OK. Are you aware of anything that might have set your symptoms off/
+
+Patient: No I haven't been, haven't been [unintelligible], I mean, as I said, I was out with my wife. I don't know whether it's like, you know, the restaurant we went to was like, [unintelligible] it was like, pretty good, so I wouldn't have expected them to be serving me anything. Dodgy or anything like that but, I [unintelligible], I, I, I don't know, you know. So, [unintelligible], nothing that I can see.
+
+Doctor: [unintelligible], OK. And [unintelligible], without prying too much, what were you celebrating?
+
+Patient: Well, my wife, has just been, uh, promoted. So, she's now going to be, uh, a head teacher, of, of primary school. So, just took her out.
+
+Doctor: [unintelligible]. [unintelligible].
+
+Patient: [unintelligible]. Yeah, wee, a wee night on the tiles, for that, so uh, it was good, [unintelligible]. Yeah, yeah.
+
+Doctor: [unintelligible], very nice. [unintelligible], good, excellent. So just moving on sir. Uh, regarding your, um, what we say, past medical history. Are you, do you have any other medical problems I should be aware of? So anything to do with your heart, lungs?
+
+Patient: Uh, I mean, I'm a [unintelligible], I'm a wee bit, on the chunky side. You know, uh, you know I've, I've got a wee bit, a wee bit round the midriff, the spare tyre's, definitely there. Uh, and I've, I've got the uh, I've got the diabetes.
+
+Doctor: Diabetes, right. What type of [unintelligible], is it type one or type two?
+
+Patient: Uh, it's, it's uh, type, two, two. Aye, type one, [unintelligible], aye, aye. 'Cause he said, the doctor I spoke to, he was sort of saying like, you know, as a bigger guy, it's, it's kinda, it's kinda like, yeah, and.
+
+Doctor: OK, OK. And what. [unintelligible]. Yeah, OK. [unintelligible].
+
+Patient: And uh, aye, when I was speaking to uh, it was this, it was other, another doctor I spoke to a while ago but. Aye when he, took the, when he was telling me this as well he, took my blood pressure and that said that was, that was high, uh, high, higher than it should be.
+
+Doctor: [unintelligible]. [unintelligible]. You've been diagnosed with high blood pressure, uh, or [unintelligible]. OK, all right. So um, moving on. Come to your medications, [unintelligible], which medications do you take on a regular basis?
+
+Patient: [unintelligible]. Yeah, yeah. Uh, give me, I'm just gonna check. It's, it's, let me know if I'm pronouncing this correctly 'cause I haven't [unintelligible] got, I haven't got my glasses with me. So, it's [unintelligible], Metformin?
+
+Doctor: [unintelligible], that's correct, OK.
+
+Patient: [unintelligible] and, and there's another one, [unintelligible], Lisinopril? Is that? Yeah, [unintelligible]. I mean that's those two, I had, I've got them written down a wee bit of paper so.
+
+Doctor: OK. Lisinopril, yeah. That sounds like. No problems, no problem, that's fine. Anything else sir?
+
+Patient: Uh, no, no, just, just, just those two. Yeah, I mean a wee bit of like [unintelligible], a wee bit of Aspirin or whatever every now and again, but you know [unintelligible] nothing long-term.
+
+Doctor: Right. OK, all right. And just moving on swiftly sir. Do you have any allergies at all?
+
+Patient: [unintelligible] Uh, not that I'm, not that I'm aware of. You know, I mean, what, what are the, what are the allergies you get? Just, you know, nah, not.
+
+Doctor: Just allergies to [unintelligible], medications really, I'm, I'm asking not, as opposed to um, other things.
+
+Patient: Right ah, yeah. No, nothing, nothing that, nothing that I'm aware of, doctor's never said nothing to me, so.
+
+Doctor: [unintelligible]. OK. And just very briefly, socially sir, just [unintelligible] it's very important to ask. Uh, you said you live, with your wife. Anyone else at home with you?
+
+Patient: Uh, no, no, kids, the kids have uh, they've flown the nest. So uh, now it's just me and the missus, you know, good life.
+
+Doctor: OK. OK, OK. And are you, yep, and are you working at the moment? Uh, yourself?
+
+Patient: Uh, I am. Yep, yeah, yeah um, [unintelligible].
+
+Doctor: What, what do you do at work?
+
+Patient: Uh, well I'm, it's one of the, there's a wee factory, just uh, down the road, um, so we just you know, we just manufacture like uh. Uh, it's like, kind of steel, steel parts, uh, things like that. You know, so it's a, good wee job, you know, keeps us, a roof over the, over us.
+
+Doctor: [unintelligible] [unintelligible] [unintelligible]. Pays the bills, really. Um.
+
+Patient: Yeah, yeah, aye, exact, exactly.
+
+Doctor: What, what about smoking and alcohol, sir? Do you, you do either?
+
+Patient: Uh. I, I do, I do like a wee drink. Uh, aye the doc, the old, doctor I had, he, he, he did say I was drinking just a wee, a wee bit too much. I mean I'm not like, you know I'm not, not an alky or anything, but just, just uh, yeah, do like a few, a few pints every now and again.
+
+Doctor: [unintelligible] roughly on average, how many you would drink a week?
+
+Patient: Uh, pints?
+
+Doctor: Well, whatever you drink. Is it [unintelligible], beer, lager, wine, spirits?
+
+Patient: [unintelligible]. You know, maybe, maybe what like four, four pints on like Saturday and then, you know on, Sunday as well, [unintelligible], maybe like. Nine, nine pints in a week, I would say.
+
+Doctor: OK, OK. And what about smoking, sir?
+
+Patient: Uh, ugh, [unintelligible], a wee, every now and again, but I'm, I, I am trying to cut that down. I've got a wee uh, what are those wee things called? The wee vaporisers.
+
+Doctor: Ohh OK, OK.
+
+Patient: Yeah I've got, I got, I got myself one of those, so I've been, I've been cutting down on the cigarettes. Uh, and I just got this wee, this wee thing, it's great, it is, it's actually like amazing, by the way.
+
+Doctor: Well, I wish you [unintelligible], all the best on your journey to quit, I [unintelligible], I highly recommend it. Um, if you can, it'll certainly help your health as well. Um, so just to [unintelligible], just to summarise, I think you know, uh, based on your story.
+
+Patient: Thank you.
+
+Doctor: Um, yeah I'm not, [unintelligible] worry. I think you know what you essentially have is a bit of a, a bit of a viral illness perhaps, a bit of a, maybe early signs of a flu, um.
+
+Patient: Mm-hmm.
+
+Doctor: Which I think should, settle down, um, really on it's own, uh, over time. Um, things to you know, you, you can do, help yourself you know, [unintelligible], stay rested, drink plenty of fluids.
+
+Patient: Right. Yes, aye.
+
+Doctor: Um, if you are, if you are feeling hot and cold and sweaty, taking regular Paracetamol would be beneficial. Um, you mentioned feeling a bit short of breath. Um, I'm a little bit on the edge about giving you antibiotics. I don't think you've got a chest infection, but what we could think about is giving you a.
+
+Patient: Aye.
+
+Doctor: A script for antibiotics, which maybe use in next, twenty four to forty eight hours, if your symptoms don't get better.
+
+Patient: Right, so [unintelligible], so if, so if I'm, I just [unintelligible], just lie down and take it easy. If I'm still, feeling a bit rubbish then, I go in, I [unintelligible].
+
+Doctor: Yeah. Yeah, [unintelligible], I will, yeah, I'll, I'll give you a script today, give it about twenty four to forty eight hours. If you feel like you're still feeling breathless and, run-down, I think there's no harm in starting a course of antibiotics, something like Amoxicillin. One tablet, three times a day. Um, uh, and [unintelligible], if you're still not better by next week, come back and see me, we can have another look.
+
+Patient: [unintelligible] All right, OK. OK, so I just, plenty of rest, lots of water, hopefully this thing pass.
+
+Doctor: Exactly. Yes, absolutely.
+
+Patient: Right, that is, that's perfect, that's just what, [unintelligible], what I wanted to hear.
+
+Doctor: Great, well, I'm, glad I could help. And um, I wish you and your football team all the best.
+
+Patient: Cheers. Aye, I hope so, I hope so. It's not, not looking too good, but uh, aye. Right, cheers, cheers, [unintelligible].
+
+Doctor: OK. [unintelligible], all the best. Bye bye.

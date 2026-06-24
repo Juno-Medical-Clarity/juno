@@ -1,0 +1,14 @@
+qid: TQ88
+source_file: 60.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: How does trisomy 7 affect the body and are there any treatments for it?
+nlm_summary: What is trisomy 7 and what causes it?
+
+focus_entities:
+  [F1] (Problem) trisomy 7
+question_types:
+  [T1] INFORMATION
+  [T2] INHERITANCE
+  [T3] CAUSE

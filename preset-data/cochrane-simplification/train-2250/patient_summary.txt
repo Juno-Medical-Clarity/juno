@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2250  |  gem_id: gem-cochrane-simplification-train-2251  |  doi: 10.1002/14651858.CD002733.pub3
+
+We included six studies with 2469 participants with COPD, and a further five studies with 4281 older or high risk participants, a proportion of whom had chronic lung disease. We found some moderate-quality evidence that inactivated influenza vaccine did decrease 'flare ups' of COPD, especially those that are related to the influenza virus itself. The inactivated influenza virus vaccine was given as an injection in the muscle, and was associated with an increase in local side effects (such as pain) at the site of injection, which were short-lived. The inactivated virus vaccine did not cause influenza, or any significant worsening of COPD. Adding a live attenuated virus to the inactivated virus did not add any further protection for the participants. The evidence was of moderate quality. There have been no new trials since 2004. We conducted the last literature search in December 2017.

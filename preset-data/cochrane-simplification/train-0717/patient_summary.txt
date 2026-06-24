@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0717  |  gem_id: gem-cochrane-simplification-train-718  |  doi: 10.1002/14651858.CD003642.pub2
+
+This systematic review evaluates the effects of various herbal preparations (including single herbs or mixtures of different herbs) for treating people with type 2 diabetes. The review shows that some herbal medicines lower blood sugar and relieving symptoms in patients with diabetes. However, the methodological quality of the clinical trials evaluating these herbs is generally poor. The analyses also indicate that trials with positive findings are more likely to be associated with exaggerated effects. However, the trials did not report significant adverse effects. In conclusion, herbal medicines should not be recommended for routine use in diabetic patients of type 2 diabetes until we get scientifically sound trials. Testing the herbs in larger, well-designed trials is needed in order to establish the necessary evidence for their use.

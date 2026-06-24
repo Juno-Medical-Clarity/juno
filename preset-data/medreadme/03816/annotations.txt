@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        simple
+readability: 4.0
+split:       test
+
+jargon_spans:
+  [11:12] 'abbr-medical' -> 'OAC'

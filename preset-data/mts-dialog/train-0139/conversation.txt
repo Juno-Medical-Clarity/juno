@@ -1,0 +1,18 @@
+Doctor: I just quickly wanted to check few things, let's go over them together?
+Patient: Sure.
+Doctor: Any heart condition like heart failure or anything?
+Patient: No.
+Doctor: Any heart catheterization?
+Patient: Um, no.
+Doctor: Any history of chest pain, palpitation, or irregular heartbeat?
+Patient: No.
+Doctor: Do you have high blood pressure?
+Patient: No.
+Doctor: Any history of high cholesterol?
+Patient: No.
+Doctor: Any excessive or abnormal sweating?
+Patient: Not really, no.
+Doctor: Any stress test or heart tests done recently?
+Patient: No.
+Doctor: Okay, thank you for answering these questions.
+Patient: No problem.

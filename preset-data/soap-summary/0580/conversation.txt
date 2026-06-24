@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0580
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What brings you here today? I have pain in my tummy. When did you first notice it? It started suddenly around noon.

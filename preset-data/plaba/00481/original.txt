@@ -1,0 +1,10 @@
+Pregabalin abuse has become an emerging concern; thus, the current study has been designed to study the neurotoxic hazards of prolonged high-dose of pregabalin (akin to that abused by addicts) and to evaluate the effect of alpha tocopherol as a possible ameliorating agent.
+The current study evaluated the brain neurotransmitters; dopamine, glutamate, and norepinephrine.
+The study also assessed the expression of the apoptosis-related markers Bax, Bcl2, and caspase 3.
+Western-blotted analysis of the three major mitogen-activated protein kinases (MAPKs), the c-JUN N-terminal kinase (JNK), the p38 MAPK, and the extracellular signal-regulated kinase (ERK), has also been performed.
+The study also evaluated oxidative stress via assessment of the cortical tissue levels of reduced glutathione and malondialdehyde and the activity of superoxide dismutase.
+Histopathological examination and histomorphometric evaluation of the darkly degenerated cortical neurons have also been performed.
+Pregabalin in high doses (150 mg/kg/day and 300 mg/kg/day) disrupted the ERK/JNK/p38-MAPK signaling, reversed the bax/bcl2 ratio, and induced oxidative stress.
+It also diminished the release of dopamine, glutamate, and norepinephrine and increased the count of degenerated neurons.
+Alpha tocopherol treatment significantly attenuated the deleterious effects induced by pregabalin.
+The role of alpha tocopherol in ameliorating the oxidative stress injury, and apoptosis induced by pregabalin, along with its role in normalizing neurotransmitters, modulating the ERK/JNK/p38-MAPK signaling pathways and improving the histopathological cortical changes, offers alpha tocopherol as a promising adjunctive therapy in patients undergoing prolonged pregabalin therapy as those suffering from prolonged seizures and neuropathies.

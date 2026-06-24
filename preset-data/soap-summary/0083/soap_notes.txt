@@ -1,0 +1,49 @@
+# SOAP Notes — Sample 0083
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with shortness of breath and cough
+- SOB: gradual onset over the past month, able to walk 1 block (previously able to walk 1-2 km 2-3 months ago)
+- No paroxysmal nocturnal dyspnea or orthopnea (sleeps with 1 pillow)
+- No leg swelling
+- Cough: present for 5-10 years, more frequent now with coughing fits
+- Hemoptysis: small amount of blood with cough 2-3 times, pinkish sputum at times
+- Sputum production: mostly productive cough now (previously more dry), white sputum before
+- Fever: 38°C 2 weeks ago, no current fever or chills
+- Weight loss: 20 lbs over 3-4 months (210 lbs to 190 lbs, ~10% loss)
+- Appetite: okay
+- Denies chest pain, wheezing, dizziness, lightheadedness, nausea, vomiting, diarrhea, constipation, urinary problems, skin rashes, or muscle aches
+
+PMHx:
+- COPD
+- Hypertension
+- Hypercholesterolemia
+- Multiple COPD exacerbations requiring hospitalization last year (2-3 times)
+
+Medications:
+- Lipitor
+- Inhalers (not using regularly, not helpful in past 2 months)
+
+Allergies: none
+
+SocHx:
+- Current smoker (2 cigarettes/day, previously 1.5 packs/day)
+- Occasional alcohol use
+- No recreational drug or marijuana use
+- Lives with wife, son helps with groceries
+- Retired, uses cane, helps with cleaning at home
+
+FHx:
+- Father died of lung cancer at 65 (heavy smoker)
+- Mother died of heart attack at 50
+
+Objective:
+- Vitals not provided
+
+Assessment:
+- Hemoptysis with increased cough and shortness of breath in a patient with COPD and smoking history
+
+Plan:
+- Chest X-ray
+- Consider CT chest
+- Bloodwork

@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        simple
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'ILD'

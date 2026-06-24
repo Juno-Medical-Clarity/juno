@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1425  |  gem_id: gem-cochrane-simplification-train-1426  |  doi: 10.1002/14651858.CD006714.pub2
+
+We did computer searches to find studies that compared any operation to any medicine used for abortion at this stage of pregnancy. We wrote to researchers and looked through book chapters and other articles to find more studies. We found two studies. The first compared dilation and evacuation (D&E) to injecting a drug into the pregnant womb. The second compared D&E to drugs taken by mouth and by vagina. The D&E operation was better than injecting medicines into the womb. Medicines taken by mouth and vagina worked as well and were as acceptable as a D&E, but caused more pain and side effects. More studies with modern medicines used for abortion after 3 months of pregnancy are needed.

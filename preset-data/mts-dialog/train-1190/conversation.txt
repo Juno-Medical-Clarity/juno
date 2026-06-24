@@ -1,0 +1,6 @@
+Doctor: How are you Mister James?
+Patient: I have been better!
+Doctor: Oh, tell me what's going on with you?
+Patient: I have this leg pain on my left side.
+Doctor: Hm, left leg pain?
+Patient: Yeah.

@@ -1,0 +1,10 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'T. cruzi'
+  [8:17] 'medical-jargon-google-easy' -> 'glycosyl phosphatidylinositol ( GPI ) - anchored mucin molecules'
+  [19:21] 'medical-jargon-google-easy' -> 'parasite protection'
+  [28:29] 'medical-jargon-google-easy' -> 'vertebrates'

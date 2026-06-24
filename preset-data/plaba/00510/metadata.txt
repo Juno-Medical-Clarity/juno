@@ -1,0 +1,5 @@
+pmid:        34654834
+question:    39
+adaptation:  adaptation1
+title:       Single-cell RNA sequencing for the identification of early-stage lung cancer biomarkers from circulating blood
+sentences:   7

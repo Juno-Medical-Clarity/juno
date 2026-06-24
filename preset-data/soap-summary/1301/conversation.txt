@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1301
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Did you ever had pneumonia? No, never. Do you have any history of lung disease? No. Any history of tuberculosis? No. Are you feeling any shortness of breath or difficulty breathing? No. Okay. Do you have any wheezing? No.

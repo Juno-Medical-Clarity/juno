@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0593
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Anemia, high cholesterol, hypothyroidism
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: Not mentioned
+- Relevant medical history: Anemia, high cholesterol, hypothyroidism
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Not mentioned
+
+Objective:
+- None provided
+
+Assessment:
+- None provided
+
+Plan:
+- None provided

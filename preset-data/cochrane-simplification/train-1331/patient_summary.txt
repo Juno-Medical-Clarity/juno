@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1331  |  gem_id: gem-cochrane-simplification-train-1332  |  doi: 10.1002/14651858.CD002800.pub3
+
+Six randomised clinical trials with a total of 710 patients were included in this systematic review. The trials were generally with high risk of bias. We could not demonstrate any significant effect of propylthiouracil on all-cause mortality, liver-related mortality, liver complications, or liver histology of patients with alcoholic liver disease. Although propylthiouracil was not associated with a significant increased risk of non-serious adverse events, there were occasional instances of serious adverse events (leukopenia, generalized bullous eruption). The trials included a small number of patients, and so, the risk of random error (error due to play of chance) is high. There seems to be no evidence for using propylthiouracil for alcoholic liver disease outside randomised clinical trials.

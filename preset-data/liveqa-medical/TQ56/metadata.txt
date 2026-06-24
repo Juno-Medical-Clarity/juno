@@ -1,0 +1,15 @@
+qid: TQ56
+source_file: NF_280.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Are small lumps around the scrotum a symptom of Jock Itch?
+nlm_summary: Are small lumps around the scrotum a symptom of Jock Itch?
+
+focus_entities:
+  [F1] (Problem) Jock itch
+question_types:
+  [T1] SYMPTOM
+keywords:
+  [K1] (Problem) small lumps
+  [K1] (Anatomy) scrotum

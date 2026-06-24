@@ -1,0 +1,4 @@
+Doctor: Do you have any chronic conditions I should know about, sir?
+Patient: No, not that I can think of.
+Doctor: What about injuries, have you ever broken a bone?
+Patient: Yes, I have. I've broken my hand and tibia before.

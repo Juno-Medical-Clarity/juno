@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3206  |  gem_id: gem-cochrane-simplification-train-3207  |  doi: 10.1002/14651858.CD003593
+
+This review involved searching the literature for well-conducted (randomised) studies that compared ECT to both simulated ECT and to antidepressants. The review found only four studies, all of which had serious problems in their methods. At present, therefore, it is not possible to draw firm conclusions on whether ECT is more effective than antidepressants,.or on the safety or side effects of ECT in elderly people with depression.

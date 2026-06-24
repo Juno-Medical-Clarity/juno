@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [6:8] 'medical-jargon-google-easy' -> 'functional compensation'
+  [13:16] 'medical-jargon-google-easy' -> 'up - regulation'
+  [27:28] 'medical-jargon-google-easy' -> 'paralog'

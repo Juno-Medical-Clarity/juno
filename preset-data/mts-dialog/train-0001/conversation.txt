@@ -1,0 +1,17 @@
+Doctor: How're you feeling today?
+Patient: Terrible. I'm having the worst headache of my life.
+Doctor: I'm so sorry. Well you are only twenty five, so let's hope this is the last of the worst. Let's see how we can best help you. When did it start?
+Patient: Around eleven in the morning.
+Doctor: Today?
+Patient: Um no yesterday. July thirty first.
+Doctor: July thirty first O eight. Got it. Did it come on suddenly?
+Patient: Yeah.
+Doctor: Are you having any symptoms with it, such as blurry vision, light sensitivity, dizziness, lightheadedness, or nausea?
+Patient: I'm having blurry vision and lightheadedness.  I also can't seem to write well. It looks so messy. I am naturally right handed but my writing looks like I am trying with my left.
+Doctor: How would you describe the lightheadedness?
+Patient: Like there are blind spots.
+Doctor: Okay. How about any vomiting?
+Patient: Um no. I feel like my face is pretty swollen though. I don't know if it's related to the headache but it started around the same time.
+Doctor: Here in the E R, we'll do a thorough exam and eval to make sure nothing serious is going on. While we're waiting for your C T results, I'm going to order a migraine cocktail and some Morphine.
+Patient: Thank. Will the nurse be in soon?
+Doctor: Yes, she'll be right in as soon as the order is placed. It shouldn't be more than a few minutes. If it takes longer, then please ring the call bell.

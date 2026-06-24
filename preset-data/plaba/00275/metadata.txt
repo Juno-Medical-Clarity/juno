@@ -1,0 +1,5 @@
+pmid:        23715758
+question:    22
+adaptation:  adaptation2
+title:       Pulmonary manifestations of Birt-Hogg-Dubé syndrome
+sentences:   8

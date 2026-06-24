@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0885
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of diabetes (father had diabetes and passed away from breast cancer; sister has diabetes).
+- Patient's mother is alive and recently celebrated her eighty-ninth birthday.
+- No known family history of neurological disorders (e.g., MS, epilepsy, Huntington's).
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretations, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

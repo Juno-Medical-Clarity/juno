@@ -1,0 +1,10 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'SEC'
+  [2:3] 'abbr-medical' -> 'CZP'
+  [9:10] 'medical-name-entity' -> 'NHS'
+  [19:20] 'medical-jargon-google-easy' -> 'psoriasis'

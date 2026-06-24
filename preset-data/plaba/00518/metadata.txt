@@ -1,0 +1,5 @@
+pmid:        20483864
+question:    40
+adaptation:  adaptation1
+title:       Is low compression pressure able to improve venous pumping function in patients with venous insufficiency?
+sentences:   10

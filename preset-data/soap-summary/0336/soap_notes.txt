@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0336
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Diabetes, high blood pressure, high cholesterol, osteoporosis.
+- Medical history: Multiple surgeries including tonsillectomy, hysterectomy (uterus, ovaries, and fallopian tubes removed), appendectomy, and removal of two or three parathyroids. 
+- Current concern regarding borderline high calcium levels as noted by endocrinologist.
+- No complications reported during or after surgeries.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment data provided]
+
+Plan:
+- [No plan provided]

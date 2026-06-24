@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2654  |  gem_id: gem-cochrane-simplification-train-2655  |  doi: 10.1002/14651858.CD004487.pub2
+
+Twenty-one trials (with over 2000 participants) were included. Paracetamol provided a statistically significant benefit when compared with placebo for pain relief at both 4 and 6 hours after taking the drug. It is most effective at 1000 mg dose, and can be taken at six hourly intervals without compromising safety. There was no statistically significant difference between the number of patients who reported adverse events, overall this being 19% in the paracetamol group and 16% in the placebo group. It should be noted that most of the studies were found to have some limitations mainly due to poor reporting of information. However the review concludes that paracetamol is a safe, effective drug for the treatment of postoperative pain following the surgical removal of lower wisdom teeth.

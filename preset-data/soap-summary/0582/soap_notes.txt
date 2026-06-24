@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0582
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is pregnant with baby number two.
+- Total pregnancies: 2 (no miscarriages or abortions).
+- Last menstrual period: about a month ago.
+- Menstrual cycle: described as pretty normal.
+- No history of abnormal pap smears.
+- Patient has never had a mammogram.
+- Patient is concerned about the necessity of a mammogram at age 39 and inquires about the recommended age.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No diagnoses or clinical impressions provided.
+
+Plan:
+- Advise the patient to get a mammogram in a few years, at age 45, due to lack of positive family history of breast cancer.

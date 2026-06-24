@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0618
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So let's see here. Any history of high blood pressure or diabetes? No, sir. How about heart disease? No, no heart disease. And no cancers? No and for that I'm thankful.

@@ -1,0 +1,11 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [3:4] 'general-complex' -> 'mechanistic'
+  [8:9] 'general-complex' -> 'mechanistic'
+  [12:15] 'medical-jargon-google-easy' -> 'mTORC1 / 2'
+  [17:22] 'medical-jargon-google-hard' -> 'MLST8 ( de ) ubiquitination'
+  [24:32] 'medical-jargon-google-hard' -> 'Akt - to - mTORC2 positive feedback loop'

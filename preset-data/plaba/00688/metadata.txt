@@ -1,0 +1,5 @@
+pmid:        34371933
+question:    53
+adaptation:  adaptation1
+title:       Eating Dinner Early Improves 24-h Blood Glucose Levels and Boosts Lipid Metabolism after Breakfast the Next Day: A Randomized Cross-Over Trial
+sentences:   9

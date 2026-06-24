@@ -1,0 +1,226 @@
+# Smith Collection Transcript: RES0195
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Yeah hi im so over the past few months ive noticed that i get short of breath sometimes and my eyes are so irritated and they feel itchy and red and ive also noticed this rash below my knees so i just wanted to get everything checked out
+
+Doctor: OK and when did this all kind of start
+
+Patient: Ah it started a couple months ago like 2 3 months ago
+
+Doctor: OK and when did the shortness of breath start
+
+Patient: Thats been on and off for the past two months as well
+
+Doctor: OK and how about the rashes
+
+Patient: The rashes started like a month back but it looks worse now it started off small
+
+Doctor: OK um so for the cough is it like a dry cough or a wet cough
+
+Patient: Its a pretty dry cough
+
+Doctor: Dry cough ok are you bringing up any green or yellow material or any blood at all
+
+Patient: No
+
+Doctor: OK and this also started like a few months ago
+
+Patient: Yes
+
+Doctor: And is it constant or does it come and go
+
+Patient: um its its getting worse now so it feels more constant now but at first it it just came in yeah it came in went
+
+Doctor: OK and has this happened to you before at all of these symptoms
+
+Patient: No
+
+Doctor: OK alright um so it started a few months ago and how about the rashes are they have they been there like the ones below your knee since the two months or do they come and go
+
+Patient: um thats been there for the past month
+
+Doctor: OK and can you describe the rash a little bit what does it look like
+
+Patient: Sure so its now pretty diffuse its just below my knees like on my shins its on both sides the one on my right side is a little bit bigger its about id say maybe like 10 centimeters and diameter its its red or like a dark pink um theres nothing coming out of it
+
+Doctor: OK is it painful or itchy at all
+
+Patient: Its um painful yeah
+
+Doctor: OK what kind of paint do you feel that when you press on it
+
+Patient: Its its not that ok so its not painful painful its tender so if i touch it it will feel tug tender
+
+Doctor: OK uh have you tried anything that has helped you relieve these symptoms
+
+Patient: um i took some ibuprofen that helped a little bit
+
+Doctor: OK ok um and so youve had the cough but have you been having any kind of shortness of breath
+
+Patient: No well actually sorry sorry i have had a shortness of breath i havent had a cough
+
+Doctor: OK so no cough but youve been having shortness of breath
+
+Patient: Yeah
+
+Doctor: And when your shortness of breath is it more so that youre not able to take deep breaths or you taking shallow breaths how would you describe it
+
+Patient: It just feels like yeah i can take in a full deep breath
+
+Doctor: I see and are you having any other symptoms like fevers or chills
+
+Patient: No
+
+Doctor: OK and how about the eye irritation when did that start
+
+Patient: That started a month ago as well
+
+Doctor: OK and you do you have any red eyes or can you see any changes in your vision at all
+
+Patient: Yeah my eyes do look a little bit red and i dont know if my vision changed a lot but sometimes things will look a little bit blurry when theyre far away
+
+Doctor: OK and with the shortness of breath is it brought on by exertion or can it be at rest as well
+
+Patient: It can be at rest as well
+
+Doctor: OK and then do you have any other symptoms like any joint pains
+
+Patient: No no join pains
+
+Doctor: OK any nausea or vomiting
+
+Patient: um no
+
+Doctor: OK any headaches
+
+Patient: No
+
+Doctor: Any muscle pain
+
+Patient: uh no
+
+Doctor: OK and any recent travel or contact with someone whos been sick
+
+Patient: um no
+
+Doctor: Do you see any or do you notice any like fluid coming out from your eyes or anything like that
+
+Patient: uh no i didnt notice that
+
+Doctor: OK do you get any night sweats
+
+Patient: No
+
+Doctor: And any chest pain
+
+Patient: Sometimes the shortness of breath
+
+Doctor: OK is it just like a discomfort or is it a pressure or stabbing pain
+
+Patient: Ah it just feels like a discomfort
+
+Doctor: Do you feel your heart is racing
+
+Patient: uh no
+
+Doctor: OK and any changes in your bowel movements at all
+
+Patient: No nothing like that
+
+Doctor: OK any changes in your urinary pattern
+
+Patient: No
+
+Doctor: OK any sore throat runny nose any cold like symptoms
+
+Patient: uh no but i haven been feeling um a little bit hot so i wonder if i have a fever i havent checked it
+
+Doctor: OK we can check have you had any recent weight changes
+
+Patient: Now that you mention it i have had some weight loss over the past um six months ive lost about 15 pounds
+
+Doctor: 15 pounds ok how about your appetite have you been eating well
+
+Patient: Yeah ive been eating the same
+
+Doctor: OK ok and have you had any exposure to any fumes dust animals or pets in your environment
+
+Patient: No
+
+Doctor: Have you been diagnosed with any medical conditions in the past
+
+Patient: uh no
+
+Doctor: Do you take any medications
+
+Patient: um nope
+
+Doctor: OK any allergies
+
+Patient: No allergies
+
+Doctor: OK hospitalizations or previous surgeries
+
+Patient: uh i had a csection for my second child
+
+Doctor: OK any complications with that
+
+Patient: No it was it was a pretty standard i didnt have any excessive blood loss or anything like that
+
+Doctor: OK any family history of any medical conditions like any lung or heart conditions
+
+Patient: um no lung or heart conditions there are some autoimmune conditions in my family though
+
+Doctor: OK and what what kind of autoimmune conditions are there
+
+Patient: uh there is rheumatoid arthritis um  there is um uh lupus like type one diabetes
+
+Doctor: OK ok and then are they for any like direct relatives like your parents or or children
+
+Patient: Yes my parents
+
+Doctor: OK and currently right now do you work
+
+Patient: I work from home yeah i teach i teach online
+
+Doctor: OK and hows your living situation like right now
+
+Patient: Pretty good we live in a house i live with my husband and two children
+
+Doctor: OK um and do you currently smoke
+
+Patient: No
+
+Doctor: OK and any recreational drug use like marijuana
+
+Patient: No
+
+Doctor: OK and any um alcohol
+
+Patient: I drink once in awhile like ill have a glass of wine on fridays
+
+Doctor: OK alright yeah so those are all the questions i had do you have any questions for me
+
+Patient: um no like what what do you think i have and how should i treat it
+
+Doctor: Yeah so definitely one thing we need to rule out with the shortness of breath is any viral or viral infection like coronavirus so we will get a test done for you today however since this seems to be kind of a chronic issue been going on for a few months and youre having with the shortness of breath some other symptoms the rash below knees or is what we called erythema nodosum and irritation in your eyes and you have a family history
+
+Patient: Of auto immune conditions as well so sometimes you can get an auto immune disease that affects the lungs so we need to rule out something like sarcoidosis which can cause fibrosis in your lungs and cause shortness of breath so just to work that up will get a chest x ray and also do some inflammatory marker tests like cresr and some other rheumatological tests as well and based on what comes back we may have to refer you to a rheumatologist for further management and treatment yeah so lets just do some of those tests 1st and then well go from there you have any questions
+
+Doctor: No that sounds great thank you so much
+
+Patient: Youre welcome and you may need depending on what we find steroid treatment today or until you see the rheumatologist
+
+Doctor: OK
+
+Patient: Alright take care
+
+Doctor: You too

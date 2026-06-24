@@ -1,0 +1,5 @@
+pmid:        30691372
+question:    69
+adaptation:  adaptation3
+title:       Postpartum Depression: Pathophysiology, Treatment, and Emerging Therapeutics
+sentences:   5

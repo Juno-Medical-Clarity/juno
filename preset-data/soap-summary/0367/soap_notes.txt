@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0367
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- History of asthma (not severe but remarkable)
+- Struggled with a serious acne problem
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No clinician's interpretation provided)
+
+Plan:
+- (No actions, medications, tests, or follow-up mentioned)

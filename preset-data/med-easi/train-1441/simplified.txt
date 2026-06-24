@@ -1,0 +1,1 @@
+Linear combinations of atomic orbitals (LCAO) can be used to guess the molecular orbitals that are made when the molecules atoms bond together.

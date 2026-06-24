@@ -1,0 +1,10 @@
+Doctor: Good morning, ma'am, welcome in. I believe this is our first time meeting.
+Patient: Good morning, doctor. Yes, this is my first time in.
+Doctor: Great, how old are you?
+Patient: I'm fifty five, doctor.
+Doctor: Thank you, what seems to be the problem today?
+Patient: Well, I'm having a laundry list of symptoms coinciding with my allergies.
+Doctor: Like what, ma'am?
+Patient: Well, my sense of taste is diminished, dry mouth, um, acid reflux, and G I issues, and then I have asthma, and reactions to things like aerosols.
+Doctor: I see, do you have any food allergies?
+Patient: Um, I think.

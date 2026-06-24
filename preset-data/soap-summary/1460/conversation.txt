@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1460
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How did your last visit go with the cardiologist? Good. It looks like they diagnosed you with sick sinus syndrome. Do you have any questions about this new diagnosis? No, she explained everything to me. I'm planning to follow-up with her in the next two weeks. Great. So it looks like your past medical history is the same? Nothing new other than the sick sinus syndrome.

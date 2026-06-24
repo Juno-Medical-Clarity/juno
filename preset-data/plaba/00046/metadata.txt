@@ -1,0 +1,5 @@
+pmid:        32374887
+question:    4
+adaptation:  adaptation2
+title:       Copeptin-based diagnosis of diabetes insipidus
+sentences:   10

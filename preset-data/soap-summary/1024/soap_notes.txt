@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1024
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No symptoms, severity, duration, associated symptoms, relevant medical history, family history, allergies, or concerns mentioned by the patient.
+
+Objective:
+- Patient is up to date with vaccinations.
+
+Assessment:
+- No assessments or diagnoses provided.
+
+Plan:
+- No plan provided.

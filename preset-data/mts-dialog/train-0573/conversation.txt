@@ -1,0 +1,16 @@
+Doctor: How are you, Mary?
+Patient: I am okay, I have got this ulcer on my right hip again.
+Doctor: Oh, is it like the one you got last time?
+Patient: Pretty much.
+Doctor: Oh, I remember that one. It took almost three treatment cycles to get resolved.
+Patient: Yeah. They keep saying I have some hidden split in my spine still.
+Doctor: Yeah, it looks like you have residual spina bifida.
+Patient: I am just so frustrated sitting in my wheelchair. I am spending around sixteen hours a day in this wheelchair.
+Doctor: I think, that is the reason you developed this pressure ulcer. It appears to be on the right trochanter area. In simple terms you have developed a pressure sore on the outer part of your hip.
+Patient: Yeah, I recently celebrated my thirtieth birthday just sitting in my wheelchair the whole day.
+Doctor: Oh, I am sorry dear. So, how long since you have had this ulcer?
+Patient: It's been several weeks, so I thought I should get it checked.
+Doctor: Yeah, good thing you came. We need to treat it. Did you experience any chills or fever?
+Patient: No.
+Doctor: Any other symptoms?
+Patient: No.

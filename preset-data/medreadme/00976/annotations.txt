@@ -1,0 +1,8 @@
+source:      plos_computational_biology
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [12:16] 'medical-jargon-google-easy' -> 'coarse - grained model'
+  [32:35] 'medical-jargon-google-easy' -> 'coarse - graining'

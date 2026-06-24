@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1385  |  gem_id: gem-cochrane-simplification-train-1386  |  doi: 10.1002/14651858.CD007464.pub2
+
+After an extensive review of medical literature we identified three trials assessing different treatment strategies for patients with BM from SCLC. Only one of the studies compared chemotherapy (topotecan) versus no chemotherapy, but in patients treated with whole brain radiotherapy. Another study randomized patients to receive teniposide with or without brain radiation therapy, and the third one, compared sequential and concomitant chemoradiotherapy (teniposide plus cisplatin). Studies show that people who received chemotherapy did not live longer or have a longer time before the BM grew again compared to those who were treated with brain radiation therapy alone. Hematological toxicities occurred more often in patients exposed to chemoradiotherapy in one study and in patients receiving sequential treatment in another study. A major limitation of this review was the low number of included studies and participants.

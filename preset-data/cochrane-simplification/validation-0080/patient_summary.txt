@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0080  |  gem_id: gem-cochrane-simplification-validation-81  |  doi: 10.1002/14651858.CD007687.pub2
+
+This review includes three trials and 112 women with uterine fibroids under mifepristone treatment. These clinical trials included a small number of participants and show limited methodological quality. The studies included in this review show that mifepristone had a moderate effect in relief of bleeding and showed an improvement in fibroid-specific quality of life. Determination of the effects of mifepristone on uterine fibroid volume requires much larger trials to draw a confident conclusion for mifepristone in clinical use.

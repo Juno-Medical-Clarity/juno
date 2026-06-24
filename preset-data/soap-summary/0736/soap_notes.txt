@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0736
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not know of any medical issues running in the family.
+- No known family history of diseases such as diabetes or heart issues.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

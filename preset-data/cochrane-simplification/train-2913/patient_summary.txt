@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2913  |  gem_id: gem-cochrane-simplification-train-2914  |  doi: 10.1002/14651858.CD007190.pub2
+
+This review found four studies that evaluated the effectiveness of HIV/AIDS training programs aimed at traditional healers; information about two of these studies is not yet available. Both of these studies found that workshops improved traditional healer knowledge about HIV/AIDS. However, an assessment of behaviour change in one study found that a training program improved traditional healer behaviour in terms of managing patients, but not in reducing risky behaviours and referral practices. Although the studies evaluated reported some positive outcomes, they were not of high quality. It is therefore difficult to be certain about the efficacy of interventions for educating traditional healers in the fundamentals of STI and HIV medicine.

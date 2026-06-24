@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0395  |  gem_id: gem-cochrane-simplification-test-396  |  doi: 10.1002/14651858.CD002302.pub2
+
+The studies included in this review compared non-removable pressure-relieving interventions (foot casts) with other ways of relieving pressure on the ulcer site to improve healing. The comparisons included dressings alone, temporary therapeutic shoes, removable pressure-relieving devices and surgical intervention. The review found that the non-removable interventions were more effective than any of the other external pressure-relieving methods. Non-removable casts used with Achilles tendon lengthening were more successful in one forefoot ulcer study than using a non-removable cast alone.

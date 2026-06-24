@@ -1,0 +1,268 @@
+# Smith Collection Transcript: MSK0035
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Im so i was skiing yesterday and i fell on my arm and now and its its my hands very painful and it looks swollen and bruised so i thought i should come in and get it checked out
+
+Doctor: Yeah certainly alright and so you fell while while youre skiing so did you use your hand to brace the fall like with your hand kind of with your wrist extended backwards
+
+Patient: Yea yeah so i kind of yeah had my arm stretched out and i fell right on it
+
+Doctor: OK and did you feel pain right away
+
+Patient: Yes
+
+Doctor: OK um and during the fall did you injure any other parts of your body like your elbow or shoulder or even your head
+
+Patient: No i dont think so i didnt have i dont have any pain anywhere else
+
+Doctor: OK uhm and like are you able to move your wrist currently
+
+Patient: I can but its very painful
+
+Doctor: OK and so when did this happen was it yesterday
+
+Patient: Ah yes it was yesterday
+
+Doctor: OK and how would you describe the pain is its a sharp pain dull pain achy
+
+Patient: Its pretty sharp
+
+Doctor: Sharp ok and are you feeling the pain radiate anywhere else like down into your hand or up into your arm
+
+Patient: Uhm no its pretty local the pain yeah its pretty its right below the thumb area and just kind of on my wrist an on the right side
+
+Doctor: OK is there anything youve done thats made it that made it better like have you tried any medications or any ice or topical creams
+
+Patient: Ive been taking ibuprofen for the pain and try not to move it too much and thats been helping a little bit
+
+Doctor: OK and is the pain constant or intermittent
+
+Patient: Its constant
+
+Doctor: OK and have you done anything thats thats made the pain worse
+
+Patient: um i guess moving it
+
+Doctor: OK and what is the severity of the pain on a scale of 1 to 10 with 10 being the worst pain youve ever felt
+
+Patient: I give it like a five or six
+
+Doctor: OK have you had an injury like this to your wrist or your hand before
+
+Patient: No
+
+Doctor: Alright and are you having any neurological symptoms such as numbness tingling or or sensory loss over any areas
+
+Patient: No
+
+Doctor: OK and how about muscle weakness
+
+Patient: No
+
+Doctor: Alright and so have you been having any fevers or chills
+
+Patient: Nothing like that
+
+Doctor: um have you been having any headaches
+
+Patient: No
+
+Doctor: How about any sensory changes like changes to your vision or hearing or loss of smell or loss of taste
+
+Patient: No nothing like that
+
+Doctor: OK have you had a runny nose or or felt congested
+
+Patient: No
+
+Doctor: Have you had a sore throat or a cough
+
+Patient: No
+
+Doctor: Have you had any shortness of breath or wheezing
+
+Patient: No
+
+Doctor: Have you had any chest pain
+
+Patient: No
+
+Doctor: Have you had any heart palpitations or feeling like your hearts racing
+
+Patient: uh nope
+
+Doctor: Have you had any dizziness or fainting
+
+Patient: No
+
+Doctor: OK yeah and so did you lose consciousness at all during the fall
+
+Patient: No
+
+Doctor: OK and and have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: Any abdominal pain
+
+Patient: No
+
+Doctor: Any changes to your bowel habits like diarrhea constipation or blood in the stool
+
+Patient: Uhm nope
+
+Doctor: OK and how about any urinary problems like pain or frequency
+
+Patient: uh no nothing like that
+
+Doctor: Alright and have you had any muscle aches or body pains or like any other musculoskeletal pains besides the wrist
+
+Patient: No
+
+Doctor: OK and have you had any appetite loss or or fatigue
+
+Patient: No
+
+Doctor: Alright and have you had any night sweats
+
+Patient: No
+
+Doctor: And have you had any unexpected weight loss over the last several months
+
+Patient: Uhm no
+
+Doctor: OK and have you been diagnosed with any medical conditions in the past or do you see a physician regularly for any reason
+
+Patient: uh no
+
+Doctor: OK so uh do you take any medications regularly prescribed or over the counter
+
+Patient: uh nope
+
+Doctor: Alright and have you had any hospitalizations or surgeries in the past
+
+Patient: No
+
+Doctor: OK and you have any allergies
+
+Patient: No
+
+Doctor: Alright and are your immunizations up to date
+
+Patient: um i think so i think i just need to get the gardasil
+
+Doctor: OK have you gotten like the first dose of that yet or are you still still waiting to get that
+
+Patient: Im still waiting to get that
+
+Doctor: OK and could you tell me just a little bit about your living situation currently like who youre living with and and whereabouts
+
+Patient: I live by myself in an apartment downtown
+
+Doctor: OK im an are you in school or are you working right now
+
+Patient: Im in school
+
+Doctor: OK and have you been around anybody whos been sick
+
+Patient: uh no no ones been sick around me i havent really been leaving my home
+
+Doctor: I see ok and have you traveled anywhere recently
+
+Patient: uh nope
+
+Doctor: Alright and just staying active which is good do you do any other activities besides the skiing
+
+Patient: I do i like i go snowboarding in the winter i go camping i like playing tennis and volleyball
+
+Doctor: OK cool yeah it sounds fun and like do you smoke cigarettes
+
+Patient: No i dont
+
+Doctor: OK uh do you drink alcohol
+
+Patient: Ill have a beer once in awhile
+
+Doctor: OK how often is once in awhile like how many drinks per week
+
+Patient: Oh not that many ill maybe have like 2 every other week
+
+Doctor: I see ok and you use cannabis or or any cannabis products
+
+Patient: Ill take an edible once in awhile as well like maybe once a month
+
+Doctor: OK and how about the use of any other recreational drugs
+
+Patient: No
+
+Doctor: Alright and in the family are there any history of neurological or musculoskeletal problems
+
+Patient: No
+
+Doctor: How about any autoimmune conditions such as hypothyroidism
+
+Patient: No
+
+Doctor: OK so next i will ask you to just have a look at the wrist for the physical exam portion are you seeing any swelling or redness
+
+Patient: Uhm no i dont see anything like that
+
+Doctor: OK and if you touch the joints around the wrist on both sides is the right wrist does it feel hot
+
+Patient: No actually yes it does
+
+Doctor: OK alright and but theres no swelling there
+
+Patient: Uhm theres maybe a little bit of swelling compared to my left
+
+Doctor: OK and are you noticing any muscle atrophy or or any deformity at the wrist
+
+Patient: uh i guess theres like a slight bruise
+
+Doctor: OK and are there any like raised bumps if you put your finger over it over the bony edges
+
+Patient: Uhm no bumps but just a general kind of swelling in the area that makes it look raised
+
+Doctor: Alright and and if you palpate or press on some areas of the wrist are there any areas that youre feeling pain like at the distal radial head the distal ulna uh or any areas of the wrist
+
+Patient: Uhm theres some pain at the distal radius for sure
+
+Doctor: OK uh alright and is this on the back of the hand or the that the palm side
+
+Patient: Its on the palm side
+
+Doctor: OK do you feel any pain if you push in the whats called the anatomical stuff box so its at the base of the thumb um on yeah the base of the thumb on the back of your hand
+
+Patient: Base of the thumb um no i dont feel any pain there
+
+Doctor: OK and ok so no pain at the the dorsal anatomical snuffbox and in terms of range of motion are you able to flex and extend your wrist
+
+Patient: I am
+
+Doctor: OK and then how about move it like side to side kind of deviating it
+
+Patient: Uhm i can do all of these things it just hurts a lot
+
+Doctor: OK are you able to make a fist
+
+Patient: Yes
+
+Doctor: Alright and do you have any problems at the elbow or are you able to flex and extend the elbow ok
+
+Patient: I can flex and extend ok
+
+Doctor: OK so i think that was everything that i wanted to check today did you have any questions or concerns
+
+Patient: Uhm no just do i need any sort of surgery for this and do i need an x ray how do i go about trying to treat this
+
+Doctor: Yeah so i think i it xray would be the first step here because from what youre describing and particularly with the mechanism of the injury and where youre feeling pain can be a common cause of a distal radial radial fracture which is one of the forearm bones and so yeah we will need an xray to look to see if there is a distal radial fracture and its not sounding like this right now but another thing that will look for on on the x ray of the hands too is a scaphoid fracture to make sure that thats ok but you didnt have any pain in the area of the scaphoid which is reassuring but we still want to image and make sure although that most likely thing would be the distal radial fracture an if thats the case then there will be like we will have to go into a cast for a period of time and depending on how much joint involvement there is there might be the possibility of surgery but cannot comment too much on on that just yet we will need to get the imaging first
+
+Patient: OK ok that sounds good thank you

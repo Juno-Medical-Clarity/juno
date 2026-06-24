@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0307
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient used to smoke a pack a day but quit in 1985.
+- Patient is 76 years old and retired.
+- Patient's husband is also retired.
+- Patient expresses that they cannot imagine working a full-time job at their age.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinical interpretations or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided.)

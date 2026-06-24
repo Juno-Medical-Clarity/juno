@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0564
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of cancer (specific types unknown).
+- Family history of heart disease (noted but specifics not provided).
+- Family history of arthritis (noted, but specific details about joint replacements not recalled).
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

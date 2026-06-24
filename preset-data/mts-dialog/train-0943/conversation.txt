@@ -1,0 +1,6 @@
+Doctor: Do you have allergies to any medications?
+Patient: Um I'm allergic to Clonidine and Medifast.
+Doctor: What happens when you take Clonidine?
+Patient: I get a really bad rash.
+Doctor: And how about with Medifast?
+Patient: I get very tired after taking it. The last time I took it, I had trouble getting out of bed.

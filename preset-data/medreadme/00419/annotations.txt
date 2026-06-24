@@ -1,0 +1,12 @@
+source:      cochrane_all
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [6:7] 'general-complex' -> 'ameliorate'
+  [13:14] 'medical-jargon-google-easy' -> 'opiates'
+  [15:16] 'medical-jargon-google-easy' -> 'sedatives'
+  [17:18] 'medical-jargon-google-easy' -> 'phenobarbitone'
+  [19:20] 'medical-jargon-google-easy' -> 'diazepam'
+  [25:26] 'general-complex' -> 'swaddling'

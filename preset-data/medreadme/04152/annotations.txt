@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [4:6] 'general-complex' -> 'blinded assessor'
+  [7:13] 'general-complex' -> 'intention - to - treat analysis'

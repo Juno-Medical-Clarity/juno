@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0425
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is happily single.
+- Works as a press worker in a newspaper printing.
+- Does not smoke.
+- Has never taken any illicit drugs.
+- Currently does not consume alcohol; previously a heavy drinker but quit in the seventies.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessments provided.]
+
+Plan:
+- [No plan provided.]

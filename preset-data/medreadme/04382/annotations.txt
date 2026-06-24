@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'genomes'
+  [6:7] 'medical-jargon-google-easy' -> 'chromosomes'
+  [14:16] 'medical-jargon-google-easy' -> 'eukaryotic nucleus'

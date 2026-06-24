@@ -1,0 +1,9 @@
+Turner syndrome is a chromosomal abnormality characterized by the absence of whole or part of the X chromosome in females.
+This X aneuploidy condition is associated with a diverse set of clinical phenotypes such as gonadal dysfunction, short stature, osteoporosis and Type II diabetes mellitus, among others.
+These phenotypes differ in their severity and penetrance among the affected individuals.
+Haploinsufficiency for a few X linked genes has been associated with some of these disease phenotypes.
+RNA sequencing can provide valuable insights to understand molecular mechanism of disease process.
+In the current study, we have analysed the transcriptome profiles of human untransformed 45,X and 46,XX fibroblast cells and identified differential expression of genes in these two karyotypes.
+Functional analysis revealed that these differentially expressing genes are associated with bone differentiation, glucose metabolism and gonadal development pathways.
+We also report differential expression of lincRNAs in X monosomic cells.
+Our observations provide a basis for evaluation of cellular and molecular mechanism(s) in the establishment of Turner syndrome phenotypes.

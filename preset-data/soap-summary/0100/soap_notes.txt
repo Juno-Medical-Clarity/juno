@@ -1,0 +1,45 @@
+# SOAP Notes — Sample 0100
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Right ankle pain and swelling for 1 day after falling during rugby tackle (foot turned inwards, fell on lateral malleolus)
+- Pain is sharp, 7-8/10 severity, localized to lateral malleolus
+- Ibuprofen and ice provide temporary relief
+- Weight bearing exacerbates pain
+- Able to walk but with significant pain, favoring left foot
+- Denies previous ankle injuries
+- Denies headache, fever, chills, night sweats, weight loss, sensory changes, numbness, tingling, weakness, URI symptoms, cough, SOB, chest pain, palpitations, dizziness, lightheadedness, N/V, decreased appetite, abdominal pain, bowel or bladder changes, fatigue
+
+PMHx:
+- No chronic medical conditions
+- No medications
+- No allergies
+- Immunizations up to date (last received in high school)
+- No previous surgeries or hospitalizations
+
+SocHx:
+- Lives with parents and 2 younger siblings in a house downtown
+- Currently in grade 11, doing well
+- Denies sick contacts or recent travel
+- Denies tobacco, alcohol, or drug use
+- Sexually active with girlfriend of 2 years, uses protection, no concerns for STIs
+
+FHx:
+- No family history of musculoskeletal, neurological, or autoimmune conditions
+
+Objective:
+- 4cm bruise and swelling over right lateral malleolus
+- Slightly warm to touch
+- No muscle atrophy or deformity
+- Tenderness to palpation over lateral malleolus
+- No tenderness over medial malleolus, dorsum of foot, 5th metatarsal base, or medial foot
+- Limited dorsiflexion, painful plantar flexion
+- Normal toe movement
+- Antalgic gait, inability to bear weight
+
+Assessment:
+- Possible right ankle fracture vs sprain
+
+Plan:
+- Right ankle x-ray to rule out fracture
+- Consider air boot or casting if fracture present for offloading and healing

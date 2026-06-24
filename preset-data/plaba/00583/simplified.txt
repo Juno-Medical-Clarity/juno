@@ -1,0 +1,11 @@
+We aim to describe the use of clostridial collagenase ointment (CCO - a medication with special proteins) and medical honey to remove damaged tissue in hospitals among bedsore patients and compare how often CCO- and medical honey-treated patients return to the hospital.
+We obtained hospital discharge records from a national database for patients getting CCO or medical honey methods of removing damaged tissues with an official diagnosis of bedsores.
+We used statistical models to compare how often patients who did and did not stay at least one night in the hospital returned to the hospital up to 6 months after bedsore treatment with either CCO or medical honey.
+We looked at 48,267 and 2,599 patients with bedsores treated with CCO or medicine honeys who did and did not stay at least one night at the hospital, respectively.
+CCO and medical honeys made up 44,725 (93%) and 3,542 (7%), respectively, of people who stayed at least one night in the hospital.
+CCO and medical honeys made up 1,826 (70%) and 773 (30%), respectively, of people who did not stay a night in the hospital.
+Based on models, patients treated with CCO were less likely to be readmitted to the hospital after being admitted, and to return to the hospital but not stay a night after either going to the hospital and staying or not staying at least one night over the following 6 months.
+Study limitations included not considering why patients were hospitalized or why they returned to the hospital.
+Even though we took into account differences in many population, clinical, and hospital characteristics between the treatments, the study population may have not been completely random.
+We conclude that bedsore patients treated with CCO returned to the hospital less often than those treated with medical honey.
+These results based on real-world data help us better understand treatment characteristics of bedsore patients related with these two days to remove damaged tissue and connect to method costs related to short-term care.

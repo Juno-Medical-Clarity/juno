@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0276  |  gem_id: gem-cochrane-simplification-validation-277  |  doi: 10.1002/14651858.CD004771.pub4
+
+This review assessed seven studies of parecoxib, an injectable COX-2 inhibitor, for acute postoperative pain relief. Single doses of 20 mg or 40 mg provided effective pain relief in 50 to 60% of treated individuals, compared with 15% treated with placebo. Duration of pain relief was longer with the higher dose (10.6 hours for 40 mg versus 6.9 hours for 20 mg), and significantly fewer individuals on the higher dose required rescue medication over 24 hours (66% versus 81%). Adverse events were generally mild to moderate in severity and were reported by just over half of treated individuals in both parecoxib and placebo groups.

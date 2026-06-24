@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3195  |  gem_id: gem-cochrane-simplification-train-3196  |  doi: 10.1002/14651858.CD005135.pub3
+
+This review analyses the results from 13 clinical trials where 1923 eyes of 1135 participants were randomly treated with either LASIK or PRK. We considered the overall quality of evidence from these studies to be low. There was some evidence that LASIK gives a faster visual recovery than PRK, and is a less painful technique, although visual results one year after surgery were comparable. Surgical techniques are improving all the time and further trials are needed to see whether LASIK and PRK, as currently practised, are equally safe.

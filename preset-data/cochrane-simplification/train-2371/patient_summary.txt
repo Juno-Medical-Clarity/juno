@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2371  |  gem_id: gem-cochrane-simplification-train-2372  |  doi: 10.1002/14651858.CD003724.pub3
+
+Five trials with 246 participants were included. There is no evidence that antidepressants have a beneficial effect on narcolepsy. Moreover, despite the clinical consensus recommending their use for cataplexy, there is scarce evidence to support the use of antidepressant drugs to treat this symptom.

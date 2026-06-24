@@ -1,0 +1,5 @@
+pmid:        28901118
+question:    67
+adaptation:  adaptation2
+title:       Randomized controlled trial of maximal strength training vs. standard rehabilitation following total knee arthroplasty
+sentences:   14

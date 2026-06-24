@@ -1,0 +1,18 @@
+Pregabalin (PGB) - a nerve pain medication - is an analog of the inhibitory (silencing) neurotransmitter, (chemical messenger in the brain) gamma-aminobutyric acid. Analogs are compounds that have similar structure to other compounds but are not identical.
+The currently available evidence favors the misuse and abuse potential of PGB.
+However, its neurotoxicity (poison to the brain) remains unclear.
+The aim of this study was to assess (measure) the toxic effects of long term dependence on pregabalin. Additionally, the study aimed to assess how withdrawal from (removal of) PGB affects cortical neurons (brain cells) in the front lobe of the brain.
+This study included eighty adult male albino rats which were divided into three groups.
+Group I (Control) included 40 rats and was further subdivided into two equal subgroups (IA and IB) as negative and positive controls - groups to compare the treatment group to.
+Group II (PGB-dependent) included 20 rats. Each rat received PGB starting with the therapeutic (beneficial) dose (300 mg/day). The doses were gradually increased until they reached the dependent (full) dose (3400 mg/day) by the end of the first month.
+Further, the dependent dose was given daily for another 2 months.
+Group III (PGB withdrawal) included 20 rats which received PGB as described in Group II.
+After that, administration (use) of PGB was stopped, and the rats were kept for another one month.
+By the end of the experiment, all animals were sacrificed by cervical decapitation.
+Samples were taken from the frontal cortex, a section of the brain, for further analysis.
+Brain samples showed changes in cortical layer (brain) structure, dying cells, and decreased expression of several critical factors needed for cell function.
+These expression level changes were significantly different from the Control groups. However, they were non-significant in comparison with Group III.
+These results indicate that long-term PGB dependence causes neurotoxic effects. These effects include brain cell death, scarring of the central nervous system (brain and spinal cord), and increased reactive oxidative species (harmful chemicals from oxygen) in the frontal cortex.
+The PGB- induced neurotoxic effects continued after withdrawal.
+Further research is needed to understand the impact of these neurotoxic effects and their relevance to the cognitive (memory-related) or neurologic (brain-related) disorders in PGB-dependent individuals.
+Furthermore, it is recommended to measure the behavioral changes related to PGB dependence and withdrawal in future studies.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1044
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What is your family medical history? My dad had a heart attack and passed away at sixty one. I am so sorry to hear that. Thank you. Do you know of any other major health conditions in your family? No. None that I know of. Everyone is relatively healthy. That's good.

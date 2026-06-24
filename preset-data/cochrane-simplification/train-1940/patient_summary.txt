@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1940  |  gem_id: gem-cochrane-simplification-train-1941  |  doi: 10.1002/14651858.CD005496.pub4
+
+Our review of studies found that the use of probiotics reduces the occurrence of NEC and death in premature infants born weighing less than 1500 grams. There is insufficient data with regard to the benefits and potential adverse effects in the most at risk infants weighing less than 1000 grams at birth.

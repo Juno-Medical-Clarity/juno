@@ -1,0 +1,39 @@
+# SOAP Notes — Sample 0209
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 5 year old female presents with right elbow pain
+- Pain started yesterday evening after playing at the park, mother had to catch her from falling onto the pavement, possibly causing a jerking movement of the right arm
+- Pain is aching in quality, constant since onset, radiating from the elbow to the upper arm
+- Holding right arm in a flexed and protected position
+- Pain severity: 7/10
+- No previous episodes of similar pain
+- No numbness, tingling, headache, dizziness, fever, chills, rash, vision/hearing changes, respiratory symptoms, chest pain, GI or urinary symptoms
+- No recent sick contacts or travel
+
+PMHx:
+- Previously healthy, no chronic medical conditions
+- Born at 39 weeks via uncomplicated vaginal delivery, no neonatal concerns
+- No previous surgeries or hospitalizations
+- Immunizations up to date
+- No known allergies
+- No family history of musculoskeletal, pulmonary, cardiac, autoimmune conditions or cancers
+- Meeting developmental milestones appropriately
+
+SocHx:
+- Lives with parents and 2 older siblings
+- No smoking in the household, no safety concerns at home
+- Doing well in school
+
+Objective:
+- No visible redness, swelling, deformity, muscle atrophy or skin changes of the right elbow compared to the left
+- Tenderness to palpation of the right elbow, no tenderness of the forearm, biceps or triceps
+
+Assessment:
+- Likely radial head subluxation
+
+Plan:
+- Conservative management with ice packs and over-the-counter analgesics
+- Attempt reduction of the radial head subluxation in the office
+- Consider splinting if pain persists after reduction
+- No imaging indicated at this time

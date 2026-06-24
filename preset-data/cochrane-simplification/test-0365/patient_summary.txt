@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0365  |  gem_id: gem-cochrane-simplification-test-366  |  doi: 10.1002/14651858.CD007594.pub3
+
+This review examined the effects of HES on kidney function compared to other fluid therapies in critically ill patients. Forty-two randomised clinical trials (11,399 patients) comparing HES to another fluid therapy qualified for this review. Overall, the use of HES products was associated with a 59% increased risk of kidney failure, and a 32% increased risk of dialysis. No significant differences in effect were seen depending on the patient population studied, the type of HES solution, or the dose used. Due to the potential risks associated with HES products, alternative fluid therapies should be used.

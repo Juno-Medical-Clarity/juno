@@ -1,0 +1,8 @@
+Doctor: Do you have any major medical conditions that I should know about?
+Patient: Oh, yeah, I have a whole list of things going on, doctor.
+Doctor: Like what, ma'am?
+Patient: Well, I have high blood pressure, hypothyroidism, arthritis, and G E R D.
+Doctor: I see, what about any mental health, or neurological diseases?
+Patient: Um, I have an anxiety disorder, and I had migraines about thirty years ago.
+Doctor: Thank you, I also see on my chart that you've had Morton's neuromas before, is that true?
+Patient: Yeah, I have one on both feet.

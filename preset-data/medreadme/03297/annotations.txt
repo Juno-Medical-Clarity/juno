@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'RPA'
+  [3:4] 'abbr-medical' -> 'Exo1'
+  [16:25] 'medical-jargon-google-hard' -> 'RPA - encoded single - stranded DNA binding domains'

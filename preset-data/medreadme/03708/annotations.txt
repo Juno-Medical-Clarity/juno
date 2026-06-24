@@ -1,0 +1,12 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.65
+split:       test
+
+jargon_spans:
+  [12:13] 'abbr-medical' -> 'NKT'
+  [15:18] 'medical-jargon-google-easy' -> 'chronic immune activation'
+  [20:21] 'abbr-medical' -> 'SIV'
+  [25:26] 'abbr-medical' -> 'NKT'
+  [34:35] 'medical-jargon-google-easy' -> 'immunodeficiency'
+  [36:39] 'medical-jargon-google-easy' -> 'aberrant immune activation'

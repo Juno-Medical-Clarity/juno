@@ -1,0 +1,5 @@
+drug_focus: oxycodone
+question_type: Information
+section_title: NA
+source_url: https://desertcoverecovery.com/blog/stages-of-opiate-withdrawal/
+sample_id: 0363

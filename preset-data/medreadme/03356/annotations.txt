@@ -1,0 +1,9 @@
+source:      elife
+side:        simple
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [11:13] 'medical-jargon-google-easy' -> 'molecular mechanisms'
+  [15:17] 'medical-jargon-google-easy' -> 'gustatory cortex'
+  [24:26] 'medical-jargon-google-easy' -> 'memory trace'

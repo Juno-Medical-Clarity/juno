@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3524  |  gem_id: gem-cochrane-simplification-train-3525  |  doi: 10.1002/14651858.CD003037.pub2
+
+The review of trials found that medical methods for abortion in early pregnancy can be safe and effective, with the most evidence of effectiveness for a combination of mifepristone and misoprostol (a prostaglandin). Almost all of the trials were done in well-resourced hospitals where women returned for check-up.

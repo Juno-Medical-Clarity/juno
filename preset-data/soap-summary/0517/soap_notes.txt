@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0517
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: Took Nexium
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: None explicitly mentioned
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

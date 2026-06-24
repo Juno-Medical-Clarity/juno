@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1182
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is here for sepsis.
+- Clinician suspects spontaneous bacterial peritonitis.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- Suspected sepsis.
+- Suspected spontaneous bacterial peritonitis.
+
+Plan:
+- (No specific actions, medications, tests, follow-up, or patient education provided.)

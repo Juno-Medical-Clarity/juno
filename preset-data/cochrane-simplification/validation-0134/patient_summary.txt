@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0134  |  gem_id: gem-cochrane-simplification-validation-135  |  doi: 10.1002/14651858.CD001983
+
+The purpose of this review was to evaluate calcitonin as a means of preventing bone loss with corticosteroid therapy. Nine randomized controlled trials were included in the review, with 221 patients randomized to calcitonin and 220 to placebo. The results showed that calcitonin prevents bone loss at the spine and forearm by about 3% after the first year of therapy. There was no effect on bone loss at the hip. Calcitonin was not statistically different from placebo at preventing fractures of the spine and long bones, such as hip fractures. Calcitonin was associated with four times the side effects of placebo, and these were mostly nausea and facial flushing.

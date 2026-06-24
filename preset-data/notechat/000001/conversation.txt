@@ -1,0 +1,29 @@
+Doctor: Hello, I am Dr. Smith. Can you tell me what brings you to the hospital today?
+
+Patient: Yes, I have been feeling very weak and sick for the past two weeks. I have a persistent fever and dry cough.
+
+Doctor: I see. And how is your breathing?
+
+Patient: It's been shallow and rapid, especially when I am at rest. And I get severely breathless even with minor physical activities.
+
+Doctor: Okay. I understand. You were given physical therapy, right?
+
+Patient: Yes, they focused on educating me about dyspnea-relieving positions and the importance of regular mobilization and deep-breathing exercises.
+
+Doctor: That's good. And how did it go?
+
+Patient: It became evident that my anxiety from fear of dying and worries about my future was making my dyspnea worse. I was so dyspneic, anxious, and weak that I could barely walk to the toilet.
+
+Doctor: I see. But your physical therapist helped you with that, right?
+
+Patient: Yes, they listened to me, explained why I was experiencing breathlessness, and tested suitable positions to relieve my dyspnea. I felt better after the education and relaxing breathing exercises.
+
+Doctor: That's great to hear. Can you tell me more about the improvement?
+
+Patient: On day 2, my respiratory rate reduced from 30 breaths/min to 22 breaths/min and my oxygen saturation increased from 92% to 96% on 4 L/min oxygen after some deep-breathing exercises.
+
+Doctor: That's impressive. And how did it go after that?
+
+Patient: My dyspnea and anxiety started to alleviate and I regained my self-confidence. The therapy was shifted to walking and strength training, and I was able to walk 350 m without a walking aid or supplemental oxygen before my discharge home.
+
+Doctor: That's fantastic. You have made a great progress. I am glad to hear that.

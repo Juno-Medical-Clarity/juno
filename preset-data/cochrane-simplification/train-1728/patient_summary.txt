@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1728  |  gem_id: gem-cochrane-simplification-train-1729  |  doi: 10.1002/14651858.CD005657.pub2
+
+Children in all the trials experienced a rapid, short-term reduction in pain after using ear drops. It is hard to know if this was the result of the natural course of the illness; the placebo effect of receiving treatment; the soothing effect of any liquid in the ear or the pharmacological effects of the ear drops themselves. Nevertheless, there is some evidence that when combined with oral pain medication, anaesthetic ear drops may help to relieve pain more rapidly in children aged three to 18 years. More good-quality trials are needed.

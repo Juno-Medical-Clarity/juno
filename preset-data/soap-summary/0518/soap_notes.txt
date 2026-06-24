@@ -1,0 +1,29 @@
+# SOAP Notes — Sample 0518
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Cough, constipation
+- Severity: Cough is manageable, constipation for the past few weeks
+- Duration: Ongoing cough; constipation for the past few weeks
+- Associated Symptoms: None reported; hemorrhoids are not painful
+- Relevant Medical History: Being treated for hemorrhoids; seeking psychiatric help from Dr. Hudyncia; depression is under control; taking Cymbalta with no side effects
+- Family History: Not mentioned
+- Allergies: Not mentioned
+- Other Concerns: Blood sugar levels fluctuating; recent high reading of 188; previous readings of 150 and around 120; patient states they are "doing okay"; sometimes takes Tylenol for pain.
+
+Objective:
+- Blood sugar levels: 188 (this morning), 150 (last time), around 120 (previous report), and lower teens (good reading)
+- No observable distress or pain reported during the conversation
+- No physical examination findings or vital signs mentioned
+
+Assessment:
+- Diagnoses: Hemorrhoids; constipation; well-controlled depression on Cymbalta
+- Differential Diagnoses: None mentioned
+- Clinical Impressions: Patient is responding well to psychiatric treatment; no signs of severe complications from current symptoms.
+
+Plan:
+- Continue monitoring blood sugar levels
+- Order a laxative to assist with constipation
+- Follow-up on psychiatric treatment with Dr. Hudyncia
+- Maintain current pain management with Tylenol as needed
+- No additional actions or medications explicitly mentioned for cough or other symptoms.

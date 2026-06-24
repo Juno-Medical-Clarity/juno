@@ -1,0 +1,1 @@
+We here describe the mechanisms by which two sRNAs, GlmY and GlmZ, activate the Escherichia coli glmS mRNA, coding for an essential enzyme in amino-sugar metabolism.

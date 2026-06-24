@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0637
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: No headaches, breastfeeding well, pain with urination, occasional bright red bleeding with urination, seasonal allergies.
+- Severity: Pain with urination mentioned; no quantification given.
+- Duration: Seasonal allergies noted to have returned.
+- Associated symptoms: Itchy watery eyes, runny nose, sneezing, pressure in ears.
+- Relevant medical history: Recently gave birth; no bleeding post-delivery; no cramping or clotting; no constipation.
+- Family history: Mentioned by family member that she hasn't been eating vegetables.
+- Allergies: Seasonal allergies.
+- Other concerns: None explicitly mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

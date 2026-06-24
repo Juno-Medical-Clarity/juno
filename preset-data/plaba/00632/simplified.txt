@@ -1,0 +1,9 @@
+Successfully treating patients with systematic lupus erythematosus (lupus - when your immune system attacks healthy cells) is limited by the different causes, its presence in multiple organs and systems, and a complex immune response.
+Treatments that target certain inflammatory (infection-fighting) processes in the body may be needed for some patients.
+One such target is the type I interferon pathway, a specific immune system pathway.
+Type I interferons increase the production of interferon genes (genes that allow communication between cells to activate the immune system) and brings about critical immune responses to fight viruses.
+Problems with the signaling in type I interferons are found in patients with lupus, and the extent of the problem is connected to how serious the disease is, making type I interferons possible targets for treatment.
+The recent approval of the type I interferon-blocking antibody medicine, anifrolumab, by the US Food and Drug Administration for treating patients with lupus shows the value of targeting this pathway.
+Nevertheless, the interferon pathway has multiple cells and signaling parts that are not completely understood.
+Understanding the type I interferon pathway and how it relates to lupus will be valuable for future development of lupus treatments.
+This review summarizes the immune process of the interferon pathway, its association with disease development, and therapeutic methods that target problems interferon pathway.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0762
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What brings you in today? Can you also please state your age? Yeah. I am forty five. I've had really bad stomach pain on my right side since last week. On a scale of one to ten, how bad is the pain at its worst? I'd have to say a seven. How would you rate it now? Oh um it's at a five at the moment. Have you been taking your diabetes medication? Micronase? Yes. Yeah, I've been taking it every day. Great. Okay, let's try to get to the bottom of this stomach pain.

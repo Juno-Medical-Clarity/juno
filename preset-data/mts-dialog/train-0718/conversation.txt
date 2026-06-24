@@ -1,0 +1,4 @@
+Doctor: Have you ever had surgery before?
+Patient: No, not that I know of.
+Doctor: So, no gallbladder removal, or joint replacements?
+Patient: Unless they did it while I was sleeping, but none that I can remember.

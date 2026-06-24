@@ -1,0 +1,5 @@
+pmid:        27068441
+question:    15
+adaptation:  adaptation1
+title:       SPAK and OSR1 play essential roles in potassium homeostasis through actions on the distal convoluted tubule
+sentences:   11

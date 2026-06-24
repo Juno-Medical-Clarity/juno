@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0101
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Runny nose (initially stuffy) for 1.5 weeks
+- Symptoms started 2 weeks ago (stuffy nose), transitioned to runny nose 1.5 weeks ago
+- No worsening of symptoms
+- No cough, fever, chills, yellow/green discharge, or blood in discharge
+- Symptoms are constant
+- No OTC medications tried
+- Headache due to sinus pressure
+- No contact with sick individuals, no recent travel
+- No loss of taste/smell, nausea, vomiting, night sweats, or significant fatigue
+- Works from home, no impact on work
+- Lives alone in an apartment with old carpets
+- No changes in sleep, appetite, bowel movements, urinary function, or weight
+
+Past Medical History:
+- PMHx: arm fracture (childhood)
+- No known allergies
+- No regular medications
+- No hospitalisations or surgeries apart from arm fracture
+- No smoking history, no recreational drug use
+- Alcohol: occasional (glass of wine weekly)
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Likely diagnosis: Viral upper respiratory infection (common cold)
+
+Plan:
+- Investigations: COVID-19 swab
+- Treatment: Rest, hydration, OTC medications (e.g., Tylenol Cold)
+- Advice: Stay isolated until COVID-19 test results are available

@@ -1,0 +1,5 @@
+drug_focus: Ramipril, Cabergoline
+question_type: Interaction
+section_title: ramipril - Drug Summary
+source_url: https://www.pdr.net/drug-summary/Altace-ramipril-282.4279
+sample_id: 0196

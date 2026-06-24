@@ -1,0 +1,222 @@
+# Smith Collection Transcript: RES0016
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How are you doing
+
+Patient: Not so well i i feel like ive been having just worsening breathlessness and a cough for its been going on for two years now and i just cant seem to get rid of it
+
+Doctor: OK the cough and breathlessness both started two years ago
+
+Patient: Yeah i would say approximately around the same time
+
+Doctor: OK ok um do you always have the breathlessness or does it come and go
+
+Patient: um i think its i feel short of breath most of the times but its mainly just gets worse when im exerting myself when im walking more than usual or just working in the garden
+
+Doctor: OK ok um and same thing with the cough it gets worse when youre walking around
+
+Patient: Yeah i would say so
+
+Doctor: OK and was there any sort of trigger for this two years ago anything that you remember
+
+Patient: um no it kind of just started gradually on its own no no real triggers that i can remember
+
+Doctor: OK and does anything make it worse or better besides the exertion
+
+Patient: uh no i think thats pretty much the only thing that really makes it worse
+
+Doctor: OK and how would you describe your breathlessness is it that youre breathing too fast or you cant catch your breath
+
+Patient: Its i think its more so just i cant catch my breath and sometimes i just have trouble being able to take like a full breath
+
+Doctor: OK ok um and out of 1 to 10 10 being the worst how bad is your breathlessness
+
+Patient: It can get up to i would say like an eight sometimes when im doing a lot of work
+
+Doctor: OK and have you ever experienced this before
+
+Patient: Not before the two years before i i never felt anything like that
+
+Doctor: OK and you mentioned its gradually been getting worse right
+
+Patient: Yeah i would say so
+
+Doctor: OK and the cough um do you ever cough up any blood
+
+Patient: No its uh its usually just a dry cough no no i dont produce any mucus or blood
+
+Doctor: OK ok um and do you feel like youre wheezy
+
+Patient: No i havent heard any kind of wheeziness at all
+
+Doctor: OK any issues with your breathlessness when youre laying down
+
+Patient: No im completely fine laying down
+
+Doctor: OK and its not waking you up at night right
+
+Patient: No
+
+Doctor: OK um have there been any changes to your taste recently
+
+Patient: No not that i know
+
+Doctor: Any changes to your smell
+
+Patient: No
+
+Doctor: Have you experienced a sore throat
+
+Patient: Nope
+
+Doctor: Runny nose or stuffy nose
+
+Patient: Nope not that i know of
+
+Doctor: OK changes in your hearing or ear pain
+
+Patient: No
+
+Doctor: Changes in your vision or eye pain
+
+Patient: No nothing like that
+
+Doctor: OK and have you noticed any fevers
+
+Patient: um maybe some chills here and there but not not really a fever no
+
+Doctor: OK and you mentioned chills how about night sweats
+
+Patient: um just a few times per week i would maybe have to take off my blanket sometimes i notice a lot of my sweat covering the bed sheets thats been going on for about say a couple months now
+
+Doctor: OK ok um any weight loss
+
+Patient: I think over the last few months i may have lost like around 3 three kilograms
+
+Doctor: OK ok any rashes on your body
+
+Patient: Not that i know no
+
+Doctor: OK um how about uh like feeling youre like youre tired
+
+Patient: um yeah i feel pretty tired sometimes but i just thought it was because im getting older
+
+Doctor: OK fair enough how about chest pain
+
+Patient: No chest pain no no
+
+Doctor: Any swelling in your arms or legs
+
+Patient: No not that ive noticed
+
+Doctor: OK and how about feeling like your hearts racing
+
+Patient: No heart has been fine
+
+Doctor: OK and how about changes to your bowel movements
+
+Patient: No i go pretty regularly
+
+Doctor: OK and urine any changes there
+
+Patient: Nope
+
+Doctor: OK how about nausea and vomiting
+
+Patient: uh no
+
+Doctor: Headaches
+
+Patient: uh no
+
+Doctor: OK um any dizziness or fainting spells
+
+Patient: No
+
+Doctor: No ok um how about confusion or memory loss
+
+Patient: Not that i know of no
+
+Doctor: OK and are you otherwise healthy do you have any other medical conditions
+
+Patient: I do have high blood pressure and i think they said like my prostate is larger than normal um but nothing else
+
+Doctor: OK and have you been sick in the past
+
+Patient: uh in terms of like breathing i think maybe as a child like i may have had like a pneumonia but nothing else
+
+Doctor: OK and are you on any medications
+
+Patient: Just ramipril for my high blood pressure
+
+Doctor: OK um how long have you been on that medication for
+
+Patient: uh for a pretty long time i would say more than 10 years
+
+Doctor: OK and no issues side effects with that right
+
+Patient: No and my blood pressure is pretty well controlled on that medication
+
+Doctor: OK good um any allergies
+
+Patient: No no allergies
+
+Doctor: Are you up to date with all of your immunizations
+
+Patient: Yeah i got my shingles and my pneumonia vaccination everything like that
+
+Doctor: OK and uh in terms of family history um are there any heart or lung conditions that run in the family
+
+Patient: uh so yeah my dad had quite a few problems he had type 2 diabetes then he suffered from 2 strokes and then he also had a heart attack uh in i think when he was like 56 but then he actually ended up dying of bowel cancer in his 70s
+
+Doctor: OK how about your mother is she alive is she healthy
+
+Patient: um my mom is alive but she suffered from type 2 diabetes and high blood pressure as well and she also had like hypothyroidism and she also suffered from depression as well
+
+Doctor: OK um ok so do you live by yourself and where do you live
+
+Patient: I live on an apartment and in apartment by myself right now i do find it difficult getting out of the house recently just because of my shortness of breath but other than that i feel that im pretty independent
+
+Doctor: OK and do you smoke
+
+Patient: No ive never smoked in my life
+
+Doctor: No um how about other recreational drugs
+
+Patient: No no marijuana no cocaine nothing like that
+
+Doctor: OK how about alcohol do you drink alcohol
+
+Patient: No
+
+Doctor: OK and do you still work
+
+Patient: uh no i actually worked at just the hospital i used to volunteer but now i just cant get out of the house i feel just tired and short of breath all the time so just staying in my house most of the time
+
+Doctor: OK and has anyone around you been sick
+
+Patient: No not that i know
+
+Doctor: No um and have you traveled anywhere recently
+
+Patient: No no
+
+Doctor: OK um have you been worked up for this in the past two years like have you had any chest xrays or pulmonary function tests or anything like that
+
+Patient: No ive never really had this issue before so no investigations
+
+Doctor: OK ok well those were all the questions that i had did you have anything that you wanted to add that i maybe missed
+
+Patient: uh no i just its been going on for two years and i feel like its getting worse and worse and yeah im just scared of having to you know go on oxygen or like just not being able to breathe at one point
+
+Doctor: Yeah for sure so we will try to do a good job working you up for everything that we think it may be and right now it sounds like it could be pulmonary fibrosis either like you know an autoimmune process or triggered after like an infection that you may have had in the past we will definitely also look into see if its perhaps a lung cancer asthma and you mentioned you dont smoke so we dont think it could be copbut well also test for that in case all everything else comes back negative
+
+Patient: OK sounds good thank you so much
+
+Doctor: Thank you take care you too

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3141  |  gem_id: gem-cochrane-simplification-train-3142  |  doi: 10.1002/14651858.CD002030.pub3
+
+This review includes four randomised trials involving 1429 participants. All four trials compared verteporfin therapy to 5% dextrose water (placebo treatment). Photodynamic therapy reduces the risk of vision loss caused by "wet" age-related macular degeneration. More people treated with verteporfin also experienced improvements in vision compared to the placebo group, however, the absolute numbers experiencing vision improvement after this treatment was low (80 per 1000). A small number of people may experience acute vision loss within one week after treatment (in approximately 1 in 100 people) and infusion related back pain can occur (in approximately 1 in 50 people).

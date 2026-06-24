@@ -1,0 +1,150 @@
+# Smith Collection Transcript: MSK0004
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings in here today
+
+Patient: Hi there ive just last night i was i went for a run and i twisted my ankle i think i stepped on something and it it really hurts
+
+Doctor: OK and so when did you have the injury
+
+Patient: It was just yesterday
+
+Doctor: OK
+
+Patient: Yeah it was just just yesterday that it happened
+
+Doctor: OK and do you remember if you twisted it so you twisted your ankle like did did it twist inwards or outwards
+
+Patient: Inwards yeah i feel like i inverted my ankle
+
+Doctor: OK and so since then were you able to stand up and or were you not able to bear any weight
+
+Patient: No i was able to uh kind of finish the i i i just finished the walk i was able to walk home cause it didnt hurt that bad immediately it was a bit painful but the pain really started a few hours later and has been pretty much constant ever since
+
+Doctor: OK ok so it kind of got worse over time over the last day
+
+Patient: Yeah
+
+Doctor: And do you notice any kind of bruising redness swelling any skin changes
+
+Patient: No i havent really noticed i uh really any swelling or i or or skin changes yeah no skin changes and no swelling
+
+Doctor: OK and how would you describe the pain is it like a dull aching pain or sharp stabbing pain
+
+Patient: Dull and achy
+
+Doctor: OK ok and has this happened to you in your ankle before
+
+Patient: Im i i feel like ive maybe i ive done something like this when i was younger maybe playing basketball or something like this when i was a kid i twisted my ankle before
+
+Doctor: OK and does this pain just stay wheres the pain exactly on the right side of your ankle or on your left like interior side
+
+Patient: Its on the right kind of outside of the ankle
+
+Doctor: OK and which ankle is this just to clarify
+
+Patient: On the right ankle
+
+Doctor: OK so so it hurts on the right side of the right ankle
+
+Patient: Yeah exactly
+
+Doctor: OK and does the pain radiate or move anywhere in your feet
+
+Patient: I can kind of feel it around on the the sole of my foot as well but mostly on the outside though
+
+Doctor: OK and is there anything that makes the pain better or worse
+
+Patient: Alright it gets worse really to if if i move my ankle or if im standing on it
+
+Doctor: OK and anything that makes it better
+
+Patient: Alright just if i rest and avoid moving it
+
+Doctor: OK have you notice any fevers or chills
+
+Patient: No
+
+Doctor: OK any pain in any other joints besides your ankle
+
+Patient: No just my my right ankle
+
+Doctor: OK any appetite or weight changes
+
+Patient: No ive been ive been just training for this race coming up so i mean ive been just trying to work on my fitness a little bit but my weight has been relatively stable
+
+Doctor: OK any weakness in your right right extremities or any kind of numbness or tingling sensation
+
+Patient: No numbness or tingling and no muscle weakness either
+
+Doctor: OK right have you been diagnosed with any medical conditions in the past
+
+Patient: Im uh i had diarrhea a few months ago and i was given a fluoroquinolone as an antibiotic
+
+Doctor: OK thats two months ago ok and any medications that youre on currently
+
+Patient: I i take a vitamin and some other vitamins too vitamin a as well i guess that just helps my my skin and and then the vitamin for my my bones
+
+Doctor: OK any allergies to medications or any environmental issues
+
+Patient: No allergies no
+
+Doctor: OK any hospitalizations or previous surgeries
+
+Patient: No
+
+Doctor: OK any family history of any musculoskeletal conditions any rheumatological conditions anything that you know of
+
+Patient: My grandparents have arthritis so and my like my dad had had gout before
+
+Doctor: OK and do your grandparents have rheumatoid arthritis or osteoarthritis do you know
+
+Patient: I think osteo yeah osteoarthritis
+
+Doctor: OK and do you currently work
+
+Patient: I do yeah i work as a software engineer
+
+Doctor: OK and whats your living situation like currently
+
+Patient: Right now im actually just living alone in a in an apartment
+
+Doctor: OK and do you smoke at all
+
+Patient: No never i cant with the with all this like training for yeah at the race and stuff like that
+
+Doctor: OK thats good any recreational drugs like marijuana cocaine heroin anything like that before
+
+Patient: No ive never used anything like that in the past
+
+Doctor: OK and how about alcohol
+
+Patient: uh rarely ill have maybe a glass of wine like once every couple of months but its pretty infrequent
+
+Doctor: OK alright so i just have a few questions right now over your right ankle do you have so you mentioned you dont have any swelling but do you notice any kind of redness or warmth at all
+
+Patient: No nothing like that
+
+Doctor: OK and if you press down on your ankle does it hurt a lot
+
+Patient: uh a little bit of pain now that right uh like outside but its not uh it doesnt hurt that bad yeah ill say no
+
+Doctor: OK and if you kind of uh are you able to move your ankle at all
+
+Patient: I can yeah i can move it around a little bit im trying to avoid that though just because it it does hurt but i can move it around
+
+Doctor: OK and are you able to stand up and walk or are you not able to do that right now
+
+Patient: I can yeah just for short periods of time cause its just cause of the pain but i can walk on it
+
+Doctor: OK yeah so definitely what well do is we might need to get like a proper physical examination done to make sure there is no fracture most likely though it seems that this may just be an ankle sprain uh due to you inverting your ankle the other day uhm what we can do is usually we just immobilize the ankle and then recommend applying ice you can take some nsaids like advil for pain to help you and it should it should get better on its own with some physiotherapy later on as well however if we find that on physical examination you are having significant pain on palpation or any kind of bony pain we might also require you to get an x ray of the right foot and ankle as well as just your lower leg so yeah well have you come come in in person and then go from there and see if you need an x ray
+
+Patient: OK that sounds good thank you
+
+Doctor: Alright take care bye

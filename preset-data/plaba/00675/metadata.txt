@@ -1,0 +1,5 @@
+pmid:        30779428
+question:    52
+adaptation:  adaptation1
+title:       How do genes that escape from X-chromosome inactivation contribute to Turner syndrome?
+sentences:   8

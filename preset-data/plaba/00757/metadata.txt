@@ -1,0 +1,5 @@
+pmid:        34967441
+question:    60
+adaptation:  adaptation2
+title:       The endogenous factors affecting the detection of serum SARS-CoV-2 IgG/IgM antibodies by ELISA
+sentences:   7

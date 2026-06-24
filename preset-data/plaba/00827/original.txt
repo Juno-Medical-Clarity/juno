@@ -1,0 +1,19 @@
+Children with nephrotic syndrome (NS) have a number of potential risk factors for the development of acute kidney injury (AKI) including intravascular volume depletion, infection, exposure to nephrotoxic medication, and renal interstitial edema.
+This study was aimed to determine the incidence of AKI in children hospitalized with a relapse of NS and its short-term outcome.
+This prospective observational study was conducted from February 2017 to January 2018 at a tertiary care teaching hospital.
+A total of 54 children and adolescents (1-18 years) hospitalized with a diagnosis of NS and relapse with/or without other complications were enrolled.
+Clinical data and examination were recorded.
+AKI was defined using the Kidney Disease Improving Global Outcomes (KDIGO) serum creatinine criteria and Pediatric Risk, Injury, Failure, Loss, End-Stage Renal Disease (p-RIFLE) classification.
+Children who developed AKI during the first two weeks of hospitalization were followed up till recovery or six weeks whichever was earlier to determine the outcome and factors predisposing to AKI.
+The mean age of the study population was 59.5 months and 35 (64.8%) patients were male.
+Of the 54 patients hospitalized, 42 (77.8%) were admitted with infection-associated relapses while 22.2% of children had relapse alone.
+Diarrhea and spontaneous bacterial peritonitis were the most common infections (26.1% each) followed by urinary tract infections in 19% and pneumonia in 14.3%.
+Twenty-three (42.6%) children developed AKI according to the KDIGO definition and 27 (50%) using the pRIFLE classification.
+Fourteen (60.9%) had stage 2 AKI while 21.7% had stage 3 AKI.
+Infections [odds ratio (OR) 1.24] and use of angiotensin-converting enzyme inhibitors (ACEI) (OR 2.3) were the most common predisposing factors for AKI.
+The mean recovery time for AKI was 7.34 days.
+Development of AKI was associated with prolonged hospital stay (12.57 vs.8.55 days P <0.01) and delayed recovery.
+At the end of follow-up all children recovered from AKI.
+The incidence of AKI in children hospitalized with complications of NS is high.
+While the occurrence of these AKI episodes may appear transient, a recurrence of such episodes may be detrimental to the long-term outcome of children with NS.
+Infections and the use of ACEI during relapses are risk factor for the occurrence of AKI.

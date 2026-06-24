@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1087
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any past medical problems that I should know about? Well, what exactly do you mean by that, doctor? Well, it could be anything from A D H D to depression to epilepsy. Oh, no. I don't have anything like that.

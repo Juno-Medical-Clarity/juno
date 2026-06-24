@@ -1,0 +1,7 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        simple
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [9:11] 'medical-jargon-google-easy' -> 'corticosteroid injection'

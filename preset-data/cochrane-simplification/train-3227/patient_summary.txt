@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3227  |  gem_id: gem-cochrane-simplification-train-3228  |  doi: 10.1002/14651858.CD007123.pub3
+
+This review of eight studies, involving 1338 low-risk women in the first stage of spontaneous labour at term, showed that oxytocin did not reduce the need for caesarean sections. Neither did it reduce the need for forceps deliveries or increase the number of normal deliveries when compared with no treatment or delayed oxytocin treatment. Oxytocin seemed to shorten labour by nearly two hours on average. The uptake of epidurals was no different. It does not seem to cause harm to the mother or baby, but the sample size was too small to determine if its use has an effect on the death rates of babies. The decision whether to undergo this treatment is one that can reasonably be left to women to decide in the context of a reduction in the length of labour. The included trials used different doses of oxytocin, and different criteria for starting treatment in the delayed oxytocin arm.

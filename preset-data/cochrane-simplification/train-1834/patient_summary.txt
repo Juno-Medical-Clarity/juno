@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1834  |  gem_id: gem-cochrane-simplification-train-1835  |  doi: 10.1002/14651858.CD005032.pub2
+
+The available experimental studies did not demonstrate the effectiveness of AA or other 12-step approaches in reducing alcohol use and achieving abstinence compared with other treatments, but there were some limitations with these studies. Furthermore, many different interventions were often compared in the same study and too many hypotheses were tested at the same time to identify factors which determine treatment success.

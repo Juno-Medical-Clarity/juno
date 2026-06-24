@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0690  |  gem_id: gem-cochrane-simplification-train-691  |  doi: 10.1002/14651858.CD010511.pub2
+
+We included two randomized studies, in six published reports, with 431 participants with locally advanced esophageal cancer. We searched biomedical databases, clinical trial registries, conference proceedings, and reference lists up to 7 February 2017 for studies. The quality of evidence ranged from very low to high, depending on the outcome being assessed, because the trials were small and at unclear or high risk of bias (a systematic error or deviation from the truth that affects the results, favouring one treatment over another). We found evidence that adding surgery reduced the risk of the cancer recurring at the primary site, but did not improve overall survival. Moreover, there were more treatment-related deaths in the group of participants who underwent surgery.

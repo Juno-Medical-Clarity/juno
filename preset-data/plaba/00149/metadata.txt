@@ -1,0 +1,5 @@
+pmid:        26854761
+question:    12
+adaptation:  adaptation1
+title:       Early-life respiratory infections and asthma development: role in disease pathogenesis and potential targets for disease prevention
+sentences:   8

@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1430
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is an officer at the United States Marine office, artillery repair specialist.
+- Patient used to drink alcohol socially but stopped two years ago.
+- No history of smoking or drug use.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided.)

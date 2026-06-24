@@ -1,0 +1,6 @@
+Doctor: Hi!
+Patient: Hello!
+Doctor: How are you feeling now?
+Patient: I am feeling okay.
+Doctor: Yeah, looks like your condition is improving.
+Patient: Yes, I think so too.

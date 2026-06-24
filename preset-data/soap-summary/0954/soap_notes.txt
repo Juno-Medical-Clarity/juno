@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0954
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Currently taking Atenolol and Mevacor.
+- No known allergies to any medicine.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No clinician's interpretation provided)
+
+Plan:
+- (No plan provided)

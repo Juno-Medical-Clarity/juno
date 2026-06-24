@@ -1,0 +1,8 @@
+source:      wiki
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Bronchodilators'
+  [27:28] 'medical-jargon-google-easy' -> 'inhalers'

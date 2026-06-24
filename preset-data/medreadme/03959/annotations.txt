@@ -1,0 +1,8 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.3
+split:       test
+
+jargon_spans:
+  [1:3] 'general-complex' -> 'control group'
+  [5:7] 'general-complex' -> 'attentional control'

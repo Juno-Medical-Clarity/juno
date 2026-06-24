@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0363
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Tell me about your family medical history. My family is pretty healthy. I don't know of any health problems.

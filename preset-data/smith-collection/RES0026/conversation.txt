@@ -1,0 +1,288 @@
+# Smith Collection Transcript: RES0026
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I was wondering if we could start with you telling us what brought you in
+
+Patient: Sure ive had this terrible headache for the past four days doesnt seem to be getting any better and i feel hot like i have a fever ive been coughing a lot so i am im worried i have coviso im here
+
+Doctor: OK so ill start with the headaches when did when did that exactly started
+
+Patient: uh the headache started ok so the coughing started four days ago the headache started shortly after so i would say later on during that day and then the fever ive had for fever i think ive had for the past two days i havent actually taken my temperature though
+
+Doctor: OK um so uh the cough is started four days ago has the cough gotten better worse or stayed the same
+
+Patient: The cough has stayed the same
+
+Doctor: OK are you bringing up any phlegm or sputum with the cough
+
+Patient: um its not really phlegm but sometimes i cough up like bits of like you know little bits that look like blood or something
+
+Doctor: OK so youre seeing some like red when when youre coughing up
+
+Patient: Mmmm
+
+Doctor: OK and how much of this are you seeing like is it like a teaspoon amount or or more
+
+Patient: Oh its its very little its like maybe a little bit bigger than like the tip of a pencil
+
+Doctor: Oh ok are you ok are you seeing this on like kind of tissues afterwards sort of thing
+
+Patient: Yeah
+
+Doctor: OK um and any triggers for the cough you can think of
+
+Patient: No it just seems to be there all day um doesnt really get better with me trying to rest or not
+
+Doctor: OK and is the cough there at night time too
+
+Patient: Yes it is definitely there at night
+
+Doctor: OK um is it interfering with sleep
+
+Patient: Ah yes i havent been sleeping well
+
+Doctor: OK um and with your cough have you had any difficulties with breathing
+
+Patient: um no
+
+Doctor: Alright and now how about any wheezing
+
+Patient: No wheezing
+
+Doctor: OK and with this headache when it first came on did you experience a like worst headache of your life or a thunder clap sensation
+
+Patient: No its its not that bad but it just seems to be there all day long
+
+Doctor: OK um have you had headaches like this before
+
+Patient: No ive never gotten headaches in the past
+
+Doctor: OK uh is the headache associated with any nausea or vomiting
+
+Patient: No
+
+Doctor: OK and is the headache worse in the morning when you first wake up
+
+Patient: No
+
+Doctor: OK and does it have to get worse if you lie flat
+
+Patient: No
+
+Doctor: OK and has this headache been getting worse staying the same getting better
+
+Patient: Its its about the same
+
+Doctor: OK um and um and you havent checked the temperature yet you said but you felt hot
+
+Patient: Yes thats right
+
+Doctor: OK any other symptoms that youve been experiencing
+
+Patient: Not that i can think of
+
+Doctor: OK theres just a few others that i wanted to ask about to be comprehensive have you had any eye pain or ear pain
+
+Patient: No
+
+Doctor: How about any discharge from either your eyes or ears
+
+Patient: No nothing like that
+
+Doctor: Alright have you had any changes to either your sense of smell or your sense of taste
+
+Patient: No
+
+Doctor: Alright and have you had a runny nose at all
+
+Patient: um no
+
+Doctor: And how about a sore throat
+
+Patient: No
+
+Doctor: OK and um have you had any chills
+
+Patient: um no chills
+
+Doctor: How about night sweats
+
+Patient: um no nothing like that
+
+Doctor: I see ok and over the last few months has your weight changed
+
+Patient: Ah no not that i noticed
+
+Doctor: OK um have you been feeling tired or fatigued
+
+Patient: No
+
+Doctor: OK and have you had any chest pain
+
+Patient: um no
+
+Doctor: Alright and how about any heart palpitations
+
+Patient: None
+
+Doctor: Alright in any episodes of feeling really dizzy or lightheaded
+
+Patient: No
+
+Doctor: OK and how about any fainting spells or feeling like you might faint
+
+Patient: No nothing like that
+
+Doctor: OK and have you had any abdominal pain
+
+Patient: um no no abdominal pain
+
+Doctor: Any diarrhea or constipation
+
+Patient: No
+
+Doctor: How about any painful urination or feeling as though you need to urinate really frequently
+
+Patient: Ah no nothing like that
+
+Doctor: OK and have you had any skin changes like rashes or anything like that
+
+Patient: No
+
+Doctor: OK and how about any muscle aches or joint aches or just overall like body pains
+
+Patient: Mmm no not that i that not not that ive noticed no
+
+Doctor: OK is there anything in regards to your past health that you see a physician regularly for
+
+Patient: um no ah actually i i think at one point um i was worked up for something called familial hypercholesterolemia because it ran in the family but i think those results were normal
+
+Doctor: OK so do you um do you take a statin medication then
+
+Patient: Yeah i take a low dose statin
+
+Doctor: OK and when was your last lipid panel checked
+
+Patient: I think it was two years ago
+
+Doctor: I see and um do you remember if the ldl was normal at that time
+
+Patient: Ah yes it was normal
+
+Doctor: OK but since the it was about two years ago it might be worthwhile today just to also check a lipid panel just to be safe but thatll be something we can talk about that more so at the end if thats ok
+
+Patient: Sure yeah that would be great
+
+Doctor: OK and any other medical conditions
+
+Patient: No
+
+Doctor: OK have you had any surgeries before
+
+Patient: Csection
+
+Doctor: How many children do you have
+
+Patient: Ah just the one
+
+Doctor: OK and were there any complications with the csection
+
+Patient: um no no complications
+
+Doctor: OK any reasons for hospitalizations
+
+Patient: Nope
+
+Doctor: OK any allergies to medications
+
+Patient: No
+
+Doctor: Alright any medications besides the statin that you take
+
+Patient: Nope
+
+Doctor: OK and in regards to your family history have there been people whove had early heart attacks or strokes in the family
+
+Patient: No
+
+Doctor: OK but you do have familial hypercholesterolemia do you have family members who have that
+
+Patient: Yes ok so my aunts had it as well as my mother
+
+Doctor: OK um and has there been any lung conditions that run in the family
+
+Patient: um no lung conditions
+
+Doctor: How about any malignancys or or cancers
+
+Patient: Ah there was colon cancer on my dad side of the family but im not too sure who had it
+
+Doctor: OK have you heard of anybody having breast cancer
+
+Patient: Breast cancer no
+
+Doctor: Alright and how about ovarian cancer
+
+Patient: No ovarian cancer
+
+Doctor: OK and next i actually wanted to ask a few questions about your personal and lifestyle habits but first could you just tell me a little bit about your living situation right now
+
+Patient: I live with my husband and my one son
+
+Doctor: OK and sorry how old is your son
+
+Patient: He is 10
+
+Doctor: OK um is anybody in the home been sick recently
+
+Patient: No
+
+Doctor: OK and how about is there anybody at work
+
+Patient: At work no no ones been sick
+
+Doctor: OK have you traveled anywhere recently
+
+Patient: We went up to we just went to um like a we went on a hiking trail that was outside the city recently and there were a lot of people there and and we werent wearing masks but we it seemed like we were keeping a good distance between each other so that that would be my only concern
+
+Doctor: OK for sure were people pretty close to each other on the paths when walking by on the hike
+
+Patient: Ahh not like the whole time but there would be times when you know people just kind of brushed by you to try to get ahead of you or something like that
+
+Doctor: I see ok and do you smoke cigarettes
+
+Patient: No
+
+Doctor: um do you smoke marijuana
+
+Patient: um no
+
+Doctor: OK and do you drink alcohol
+
+Patient: I dont
+
+Doctor: Do you use any other recreational drugs
+
+Patient: um no
+
+Doctor: OK so that was all i wanted to ask about oh actually one thing that i i did want to i forgot to ask was do you have any neck stiffness
+
+Patient: No not that i noticed
+
+Doctor: OK so that was the last question that i wanted to ask about was there anything that you wanted to tell me that i i maybe forgot
+
+Patient: No i think you covered it all  im just wondering do you do you think its covior something else
+
+Doctor: Well its definitely a possibility with the symptoms that youre having since they can be so non specific for covid it can be a lot of symptoms that overlap so with having headache what sounds like you might have a fever and and this cough that sounds like its pretty bad if youre bringing up some blood it sounds like you might have irritated some of the bronchioles with the the coughing so we will test for that and check a pcr nasal swab for coviim not but we will also test for other viral illnesses and bacterial illnesses as well it doesnt sound like you have meningitis right now just based on the symptoms where you dont have neck stiffness but itll be certainly something that we keep keep in mind while we are doing our investigations
+
+Patient: OK great thank you
+
+Doctor: Alright youre welcome well get those started
+
+Patient: OK sounds great

@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 1142
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Loud and obnoxious snoring
+- Wakes up partner due to snoring
+- Uses CPAP due to almost severe sleep apnea
+- CPAP has reduced snoring but mask pops off during the night
+- Wears CPAP 5-7 nights a week; mask falls off or is taken off randomly at night
+- Partner reminds patient to put the CPAP back on
+- Sleep pattern: Goes to bed around 11 or 11:30 PM, wakes up at 6 or 7 AM on weekends; sleeps in until 8 or 9 AM on weekdays; may sleep around midnight on Saturdays
+- Feels good upon waking, less tossing and turning, sheets remain on the bed
+- Lost 15-18 pounds due to exercising and dieting
+- Motivated to stop snoring
+- Works at Smith Barney, from 8 or 8:30 AM to 5 or 5:30 PM
+- Does not feel stressed; able to stay awake through shifts
+- Experiences some fatigue during hay fever season, but it is rare
+- Relevant medical history: Sleep apnea, hay fever
+
+Objective:
+- CPAP set to 10 cm H2O nasal pressure
+- Predominantly suffers from hypopnea
+- Notable weight loss: 15-18 pounds
+
+Assessment:
+- Sleep apnea
+- Hypopnea
+- Possible issues with CPAP compliance due to mask fit or usage
+
+Plan:
+- Continue using CPAP as prescribed
+- Consider evaluation of mask fit and options for alternative masks to improve compliance
+- Monitor weight loss progress and its impact on sleep apnea
+- Discuss management strategies for hay fever to reduce fatigue symptoms
+- Follow-up appointment to reassess sleep quality and effectiveness of CPAP therapy

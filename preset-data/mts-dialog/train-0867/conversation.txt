@@ -1,0 +1,15 @@
+Doctor: I see here that you've been feeling more short of breath.
+Patient: Yes, for three days now.
+Doctor: Is it worse when you exert yourself?
+Patient: Um no, not really. I've had a terrible cough along with frequent headaches and chest congestion. I have also had a low fever.
+Doctor: Did these symptoms start around the same time?
+Patient: I think so.
+Doctor: Where does your chest feel most congested? And how would you rate the pain right now? Ten being the worst.
+Patient: Both sides. I'd say it's at a three currently.
+Doctor: Does it send pain or numbness or tingling down your arms? How about any jaw pain as a result?
+Patient: No, but it does get worse whenever I cough.
+Doctor: Is this your first time experiencing this type of congestion?
+Patient: Oh no. I had something like it about ten months ago.
+Doctor: Did that improve on its own?
+Patient: It would come and go, but over the past few days it's gotten worse. I am a strong German man so I held out coming to the doctor as long as I could.
+Doctor: You are very strong! You are sixty nine though, so I don't think anyone would see it as weak if you came to the doctor more often.

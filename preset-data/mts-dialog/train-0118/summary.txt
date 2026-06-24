@@ -1,0 +1,2 @@
+[PASTSURGICAL]
+The patient has a past surgical history of appendectomy and hysterectomy.

@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0119
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Ear pain (right ear) for 3 days
+- Fever for 2 days (38.8°C)
+- History of recurrent ear infections since age 2
+- Last ear infection last year at age 7
+- Tried mineral oil for ear pain, no relief
+- No ear drainage
+- No cough, runny nose, sore throat, headaches, nausea, vomiting, or changes in bowel movements
+- Fatigue, missed school for 3 days
+- No issues with sleep or appetite
+- No recent travel or sick contacts
+
+Past Medical History:
+- Recurrent ear infections
+- No other medical conditions
+- No regular medications, only multivitamins
+- No allergies
+- No hospitalizations or surgeries
+- Vaginal delivery at term, no complications
+- Normal development, no growth or learning issues
+
+Objective:
+- Full physical examination planned, including ear examination for inflammation or perforation
+
+Assessment:
+- Possible ear infection
+
+Plan:
+- Physical examination to confirm diagnosis
+- Discuss management options based on examination findings
+- Consider antibiotics if necessary
+- Conservative management with pain medications or ear drops
+- Monitor for additional symptoms, consider COVID-19 testing if symptoms develop

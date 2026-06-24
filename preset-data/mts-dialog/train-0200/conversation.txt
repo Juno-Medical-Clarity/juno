@@ -1,0 +1,4 @@
+Doctor: Do you have a family history of neurological conditions that I should know about?
+Patient: What exactly do you mean by that, doctor?
+Doctor: Well, it could be anything from A D H D, to epilepsy, to Alzheimer's.
+Patient: Oh, no.

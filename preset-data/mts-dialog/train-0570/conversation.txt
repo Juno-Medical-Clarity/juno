@@ -1,0 +1,8 @@
+Doctor: You have chronic pain?
+Patient: Yes I do.
+Doctor: You use tobacco also?
+Patient: Yes.
+Doctor: And you have a history of hepatitis C, right?
+Patient: That sounds right.
+Doctor: Okay.
+Patient: Yeah.

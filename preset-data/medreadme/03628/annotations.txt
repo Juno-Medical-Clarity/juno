@@ -1,0 +1,10 @@
+source:      plos_biology
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-hard' -> 'nuo - 6'
+  [5:8] 'medical-jargon-google-hard' -> 'isp - 1'
+  [10:12] 'medical-jargon-google-easy' -> 'C. elegans'
+  [18:27] 'medical-jargon-google-hard' -> 'complex I and III of the mitochondrial respiratory chain'

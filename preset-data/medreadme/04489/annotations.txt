@@ -1,0 +1,12 @@
+source:      elife
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Human cytomegalovirus'
+  [3:4] 'abbr-medical' -> 'hCMV'
+  [5:8] 'medical-jargon-google-hard' -> 'immediate early 1'
+  [9:10] 'abbr-medical' -> 'IE1'
+  [14:16] 'medical-jargon-google-easy' -> 'condensed chromatin'
+  [21:22] 'medical-jargon-google-easy' -> 'mitosis'

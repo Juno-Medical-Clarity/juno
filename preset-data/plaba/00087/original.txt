@@ -1,0 +1,11 @@
+The most common bacterial cause of pharyngitis is infection by Group A β-hemolytic streptococcus (GABHS), commonly known as strep throat.
+5-15% of adults and 15-35% of children in the United States with pharyngitis have a GABHS infection.
+The symptoms of GABHS overlap with non-GABHS and viral causes of acute pharyngitis, complicating the problem of diagnosis.
+A careful physical examination and patient history is the starting point for diagnosing GABHS.
+After a physical examination and patient history is completed, five types of diagnostic methods can be used to ascertain the presence of a GABHS infection: clinical scoring systems, rapid antigen detection tests, throat culture, nucleic acid amplification tests, and machine learning and artificial intelligence.
+Clinical guidelines developed by professional associations can help medical professionals choose among available techniques to diagnose strep throat.
+However, guidelines for diagnosing GABHS created by the American and European professional associations vary significantly, and there is substantial evidence that most physicians do not follow any published guidelines.
+Treatment for GABHS using analgesics, antipyretics, and antibiotics seeks to provide symptom relief, shorten the duration of illness, prevent nonsuppurative and suppurative complications, and decrease the risk of contagion, while minimizing the unnecessary use of antibiotics.
+There is broad agreement that antibiotics with narrow spectrums of activity are appropriate for treating strep throat.
+But whether and when patients should be treated with antibiotics for GABHS remains a controversial question.
+There is no clearly superior management strategy for strep throat, as significant controversy exists regarding the best methods to diagnose GABHS and under what conditions antibiotics should be prescribed.

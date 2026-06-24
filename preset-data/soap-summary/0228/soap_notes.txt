@@ -1,0 +1,40 @@
+# SOAP Notes — Sample 0228
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with sore throat x5 days, chills and muscle aches x3 days
+- Mild dysphagia with solids, no dysphagia with liquids, no voice changes
+- Denies changes in taste/smell, hearing/vision, weight loss
+- Fatigue x3 days
+- Denies cough, SOB, wheezing, chest pain, palpitations, dizziness, syncope
+- No changes in bowel movements (regular BM daily, no diarrhea)
+- Decreased appetite due to sore throat, eating softer foods
+- Denies N/V
+- Myalgias mainly in thighs, upper arms, upper back; denies arthralgias
+
+PMHx:
+- HTN
+- DM
+- HLD
+- Medications: ramipril (HTN), metformin (DM), Crestor (HLD), vitamin D, MVI
+- Up to date with immunizations including Shingrix and Pneumovax this season
+- No allergies
+- FHx: HTN (mother and father), MI (father in 60s), son dx with colorectal cancer at age 46 (patient had normal colonoscopy)
+- No recent sick contacts, mainly at home, retired, goes out for groceries
+- Lives alone in apartment in London, no environmental exposures
+- Former smoker (1-2 ppd) from 20s to late 40s, quit
+- EtOH: red wine 2-3x/week, ~1 bottle q2weeks
+- Denies marijuana or recreational drug use
+
+Objective:
+- Vitals signs
+- Physical examination
+
+Assessment:
+- Likely viral URTI vs COVID-19
+
+Plan:
+- COVID swab, self-isolate x14 days
+- Supportive care: hydration, rest, Tylenol PRN for fever
+- Return to ER if worsening symptoms or neuro symptoms (weakness, seizures)
+- Flu vaccine once recovered

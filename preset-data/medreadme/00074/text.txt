@@ -1,0 +1,1 @@
+Further, when we examined yeast grown in different media, we found that genes had either gained or lost paralog responsiveness exactly according to their importance for growth in the tested conditions.

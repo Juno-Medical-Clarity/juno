@@ -1,0 +1,55 @@
+Doctor: Hello, I am Dr. Smith. Can you tell me what brought you to the emergency department today?
+
+Patient: I was having abdominal pain and was later found at home minimally responsive and vomiting blood.
+
+Doctor: I see. Can you tell me when you started having abdominal pain?
+
+Patient: This morning.
+
+Doctor: Alright. I have your past medical history here, it says you have well-controlled hypertension and your body mass index is 30.37 kg/m2. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: And you presented to the emergency department with altered mental status, abdominal pain, hematemesis, and hypotension. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: Okay. Your vitals when you arrived at the emergency department showed a blood pressure of 94/50 mmHg, a temperature of 87.1 Fahrenheit, and a respiratory rate of 34 breaths per minute.
+
+Patient: Yes, that's correct.
+
+Doctor: We intubated you for airway protection. Can you tell me if you remember anything about that?
+
+Patient: No, I don't remember.
+
+Doctor: That's okay. We also gave you 5L of fluid as well as one unit of packed red blood cells for suspected large fluid volume loss.
+
+Patient: Okay.
+
+Doctor: We performed an Esophagogastroduodenoscopy and it was remarkable for a Mallory-Weiss tear with portohypertensive gastropathy. This was thought to be caused by the repeated vomiting that your family reported.
+
+Patient: Okay.
+
+Doctor: A CT scan showed peripancreatic edema and fat stranding, consistent with acute pancreatitis.
+
+Patient: Hmm.
+
+Doctor: We did a repeat CT scan to evaluate the progression of your pancreatitis, which showed worsening pancreatitis with developing ascites.
+
+Patient: Okay.
+
+Doctor: Your labs were remarkable for a glucose up to 955 mg/dL, hemoglobin A1c of 13.7%, and a triglyceride level up to 1608 mg/dL.
+
+Patient: Okay.
+
+Doctor: We placed you on an insulin drip for your significantly elevated blood glucose. After your glucose normalized, we continued the insulin drip until your triglycerides dropped below 500 mg/dL.
+
+Patient: Okay.
+
+Doctor: You were then downgraded to the general medical floor and discharged after being able to tolerate a regular diet without significant pain or discomfort.
+
+Patient: Okay.
+
+Doctor: If you have any questions, feel free to ask.
+
+Patient: No, I think that's all. Thank you.

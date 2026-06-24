@@ -1,0 +1,5 @@
+drug_focus: minocycline
+question_type: Contraindication
+section_title: WARNINGS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8082a9be-4b03-45ad-9501-28ee7aa573eb&audience=consumer
+sample_id: 0524

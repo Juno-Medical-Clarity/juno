@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1376  |  gem_id: gem-cochrane-simplification-train-1377  |  doi: 10.1002/14651858.CD005144.pub3
+
+We found only one small randomized controlled trial that compared early feeding (within 24 hours of injury) with conventional feeding (after at least 48 hours). The trial showed no differences between the groups for any of the outcomes examined. Further research in this area is urgently needed to help guide optimal treatment of children with critical illness. In a recent search update (February 2016) we identified a protocol for a relevant randomized controlled study; however, no results have yet been published.

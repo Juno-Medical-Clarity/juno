@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1294  |  gem_id: gem-cochrane-simplification-train-1295  |  doi: 10.1002/14651858.CD005340.pub4
+
+This review compared the effectiveness of IV chemotherapy to chemotherapy administered directly into the peritoneal cavity (intraperitoneal, or IP). The evidence suggests an improvement in survival if some of the chemotherapy is administered via the intraperitoneal route. The disadvantage is an increase in adverse effects principally relating to the presence of a peritoneal catheter, including pain, catheter blockage, gastrointestinal effects and infection.

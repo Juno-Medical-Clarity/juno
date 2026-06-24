@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        simple
+readability: 4.5
+split:       dev
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'neurons'
+  [22:24] 'medical-jargon-google-easy' -> 'neuronal circuits'

@@ -1,0 +1,7 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [7:8] 'abbr-medical' -> 'PROMs'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0859
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+They gave you Procrit for your anemia? Yes I think so. That is how they treated it in the past. Okay. Are you married? Who do you live with? Oh I am by myself. Okay, and do you smoke or drink alcohol? No I do not. Great. Okay.

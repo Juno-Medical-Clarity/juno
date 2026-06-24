@@ -1,0 +1,1 @@
+A logistic regression was then performed to build a forecast model.

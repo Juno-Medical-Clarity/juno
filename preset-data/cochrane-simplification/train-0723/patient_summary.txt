@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0723  |  gem_id: gem-cochrane-simplification-train-724  |  doi: 10.1002/14651858.CD006719.pub3
+
+The review authors found one randomised controlled trial with 92 participants that considered fludarabine was superior to the alkylating agents-containing regimen for pretreated/relapsed patients with Waldenstrom's macroglobulinaemia.

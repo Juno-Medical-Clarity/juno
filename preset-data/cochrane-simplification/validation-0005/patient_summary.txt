@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0005  |  gem_id: gem-cochrane-simplification-validation-6  |  doi: 10.1002/14651858.CD006585.pub2
+
+This review found that there are three trials that have compared these methods. It seems that the initial operative plan is changed more often in patients who have conventional laparoscopic surgery compared to hand assisted surgery - they more often end up with a hand assisted or open approach (it is most commonly to the hand assisted approach). There is a need for larger trials that explain the manner in which the trials were conducted. An economic analysis is also needed since the hand assist device is expensive and longer follow up of patients is needed.

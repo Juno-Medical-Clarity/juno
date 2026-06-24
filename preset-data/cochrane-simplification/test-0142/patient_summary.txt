@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0142  |  gem_id: gem-cochrane-simplification-test-143  |  doi: 10.1002/14651858.CD001282
+
+The review of trials found that the inhaled steroid, beclomethasone causes an average decrease in growth of about one and a half centimetres a year. However, it is not known whether there is any catch-up growth once the treatment is stopped. More research is needed.

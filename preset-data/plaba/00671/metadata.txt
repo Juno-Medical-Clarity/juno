@@ -1,0 +1,5 @@
+pmid:        24932682
+question:    52
+adaptation:  adaptation1
+title:       Human 45,X fibroblast transcriptome reveals distinct differentially expressed genes including long noncoding RNAs potentially associated with the pathophysiology of Turner syndrome
+sentences:   9

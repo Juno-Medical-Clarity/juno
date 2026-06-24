@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1010
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+The patient has possible free air in their diaphragm. Guest_clinician: How old is the patient? Seventy six. Guest_clinician: Past medical history? Unknown as of now.

@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'monocytes'
+  [4:8] 'medical-jargon-google-easy' -> 'pathogen - associated necrosis'
+  [9:13] 'medical-jargon-google-hard' -> 'Fas - dependent apoptosis'
+  [18:21] 'medical-jargon-google-easy' -> 'T - cells'
+  [24:27] 'medical-jargon-google-easy' -> 'acute bacterial infection'

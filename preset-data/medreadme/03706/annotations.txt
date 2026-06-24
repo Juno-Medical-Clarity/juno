@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [4:5] 'abbr-medical' -> 'NKT'
+  [10:14] 'medical-jargon-google-hard' -> 'CD4 + T lymphocyte'
+  [16:17] 'abbr-medical' -> 'SIV'

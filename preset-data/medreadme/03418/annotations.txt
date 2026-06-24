@@ -1,0 +1,11 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [8:12] 'medical-jargon-google-easy' -> 'Penn State Worry Questionnaire'
+  [13:14] 'abbr-medical' -> 'PSWQ'
+  [16:18] 'medical-jargon-google-easy' -> 'persecutory delusions'
+  [19:23] 'medical-jargon-google-easy' -> 'Psychotic Symptom Rating Scales'
+  [24:25] 'abbr-medical' -> 'PSYRATS'

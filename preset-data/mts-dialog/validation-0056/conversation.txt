@@ -1,0 +1,11 @@
+Doctor: Welcome to the office, Miss A. I am Doctor Luna.
+Patient: Thank you. It is nice to meet you.
+Doctor: What is your family medical history?
+Patient: My mother died about three or maybe it is four years ago?
+Doctor: I am so sorry to hear that. How did she pass?
+Patient: She had lung cancer. My mom didn't talk much about her own health problems.
+Doctor: What about your father? Does he have any health conditions?
+Patient: My dad has gout. I think he also had blood clots. That is all that I can remember my dad talking about.
+Doctor: Do you have siblings?
+Patient: Yes. My brother has asthma and uses an inhaler. My sister had some sort of tumors removed from her stomach or something.  Oh, I think I remember my mom talking about some of her family having issues with high blood pressure, high cholesterol and someone had a stroke. I am not sure though.
+Doctor: Okay.

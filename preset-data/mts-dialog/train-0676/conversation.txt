@@ -1,0 +1,6 @@
+Doctor: And are you allergic to any drugs?
+Patient: Oh yes, I am allergic to what you call Cipro-
+Doctor: Ciprofloxacin?
+Patient: Yes! And also, Asprin but that coated one, what is called?
+Doctor: Oh, you mean enteric coated Aspirin?
+Patient: Yes, yes, that one!

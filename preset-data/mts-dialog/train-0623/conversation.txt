@@ -1,0 +1,6 @@
+Doctor: Do you smoke cigarettes?
+Patient: I don't smoke cigarettes but I do have one on a rare occasion.
+Doctor: Do you drink alcohol or use any recreational drugs?
+Patient: I don't drink but I do occasionally smoke weed.
+Guest_family: He has a drink every now and again when we get together with friends.
+Doctor: Okay.

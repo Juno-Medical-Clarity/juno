@@ -1,0 +1,4 @@
+Doctor: Has the redness worsened over the last few days?
+Guest_clinician: I think so. Her right big toe looks worse to me.
+Doctor: Is she otherwise healthy?
+Guest_clinician: Um besides her toe and some nasal congestion, she's doing fine.

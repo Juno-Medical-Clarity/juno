@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2155  |  gem_id: gem-cochrane-simplification-train-2156  |  doi: 10.1002/14651858.CD008507.pub2
+
+This review compared any type of respiratory muscle training with standard care or sham treatments. We reviewed 11 studies (including 212 people with cervical spinal cord injury) and suggested that for people with cervical spinal cord injury there is a small beneficial effect of respiratory muscle training on lung volume and on the strength of the muscles used to take a breath in and to breathe air out and cough. No effect was seen on the maximum amount of air that can be pushed out in one breath, or shortness of breath. An insufficient number of studies had examined the effect of respiratory muscle training on the frequency of lung infections or quality of life, so we could not assess these outcomes in the review. We identified no adverse effects of training the breathing muscles for people with a cervical spinal cord injury.

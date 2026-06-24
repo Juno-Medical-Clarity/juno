@@ -1,0 +1,8 @@
+source:      elife
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [7:8] 'medical-jargon-google-easy' -> 'receptor'
+  [24:25] 'medical-jargon-google-easy' -> 'receptors'

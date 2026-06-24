@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3241  |  gem_id: gem-cochrane-simplification-train-3242  |  doi: 10.1002/14651858.CD008231.pub3
+
+We identified seven trials that included 2144 participants. There were more side effects with IB, such as dryness of the nose, mucus with streaks of blood and bleeding from the nose. Limitations in this review included two studies with missing participants and four studies with unclear blinding of the participants, personnel or outcome assessors. These limitations resulted in the majority of studies having an unclear risk of bias, which raises the concern of overestimation of the overall effect of IB. We concluded from this review that IB may be effective in improving the runny nose with some side effects that are well tolerated. There is a need for more high-quality studies to determine the effectiveness of IB in relieving common cold symptoms.

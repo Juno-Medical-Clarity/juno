@@ -1,0 +1,5 @@
+drug_focus: Tudorza Pressair
+question_type: Information
+section_title: NA
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acdd5932-375b-4966-8a06-3806ab74c36d
+sample_id: 0272

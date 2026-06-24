@@ -1,0 +1,12 @@
+Doctor: Good afternoon, ma'am. Before we begin, may I ask how old you are?
+Patient: Good afternoon, doctor. I'm fifty six years old, now.
+Doctor: Great, thank you. What seems to be the problem today, ma'am?
+Patient: Well, I need some support for dietary recommendations for healthy eating for my husband and me.
+Doctor: Why would that be, ma'am?
+Patient: Um, I have a lot going on, high cholesterol, high blood pressure, acid reflux, and I just want to lose some weight. My husband has high cholesterol too.
+Doctor: Tell me more about your eating habits, please.
+Patient: Well, we live by ourselves now that our children are gone, but I'm used to cooking really large portions.
+Doctor: Are you struggling to make food for just two people?
+Patient: Yes, that's a good way to put it. I'd like to just make less food, that way we're not so tempted to eat so much.
+Doctor: I understand, are you busy, do you work?
+Patient: Well, I start a new job this week.

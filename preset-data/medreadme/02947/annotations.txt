@@ -1,0 +1,7 @@
+source:      elife
+side:        complex
+readability: 4.0
+split:       dev
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-hard' -> 'Pif1 family helicases'

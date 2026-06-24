@@ -1,0 +1,11 @@
+Background and purpose: Cystic fibrosis (CF) is a lethal autosomal recessive genetic disease that originates from the defective function of the CF transmembrane conductance regulator (CFTR) protein, a cAMP-dependent anion channel involved in fluid transport across epithelium.
+Because small synthetic transmembrane anion transporters (anionophores) can replace the biological anion transport mechanisms, independent of genetic mutations in the CFTR, such anionophores are candidates as new potential treatments for CF.
+Experimental approach: In order to assess their effects on cell physiology, we have analysed the transport properties of five anionophore compounds, three prodigiosines and two tambjamines.
+Chloride efflux was measured in large uni-lamellar vesicles and in HEK293 cells with chloride-sensitive electrodes.
+Iodide influx was evaluated in FRT cells transfected with iodide-sensitive YFP.
+Transport of bicarbonate was assessed by changes of pH after a NH4 + pre-pulse using the BCECF fluorescent probe.
+Assays were also carried out in FRT cells permanently transfected with wild type and mutant human CFTR.
+Key results: All studied compounds are capable of transporting halides and bicarbonate across the cell membrane, with a higher transport capacity at acidic pH.
+Interestingly, the presence of these anionophores did not interfere with the activation of CFTR and did not modify the action of lumacaftor (a CFTR corrector) or ivacaftor (a CFTR potentiator).
+Conclusion and implications: These anionophores, at low concentrations, transported chloride and bicarbonate across cell membranes, without affecting CFTR function.
+They therefore provide promising starting points for the development of novel treatments for CF.

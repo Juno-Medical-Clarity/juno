@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'adverse effects'
+  [4:6] 'medical-jargon-google-easy' -> 'pulmonary rehabilitation'

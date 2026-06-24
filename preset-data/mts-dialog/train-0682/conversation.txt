@@ -1,0 +1,4 @@
+Doctor: So, are you on any medication currently?
+Patient: Yes, I am taking Atenolol and Mevacor.
+Doctor: Hm, and no allergy to any medicine?
+Patient: Not that I know of.

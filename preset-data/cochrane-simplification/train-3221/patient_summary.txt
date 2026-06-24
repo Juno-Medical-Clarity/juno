@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3221  |  gem_id: gem-cochrane-simplification-train-3222  |  doi: 10.1002/14651858.CD004575.pub3
+
+Only two randomised studies, totaling 104 participants, were found that compared rehabilitation programmes for this condition. This means that many proposed techniques have not been subjected to proper scrutiny. There is limited evidence from one study to suggest that rate of recovery can be increased with an increased daily frequency of hamstring stretching exercises. There is preliminary evidence from another small study of mixed ability athletes to suggest that exercise to correct movement dysfunction could reduce time to return to full activity and the risk of re-injury. Further studies are required to check these findings and to inform on current practice and the widely published rehabilitation protocols for these injuries.

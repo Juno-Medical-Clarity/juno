@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0997
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Difficulty performing day-to-day activities 
+- Patient is able to move around a little, but not much 
+- Concern about overstressing oneself 
+
+Objective: 
+- (No objective data provided) 
+
+Assessment: 
+- (No assessment provided) 
+
+Plan: 
+- Advise patient to listen to their body 
+- Encourage patient to move around as much as they can without overstressing themselves

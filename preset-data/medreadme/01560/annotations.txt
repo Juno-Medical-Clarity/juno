@@ -1,0 +1,7 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [11:12] 'medical-jargon-google-easy' -> 'inpatient'

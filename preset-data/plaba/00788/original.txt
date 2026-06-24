@@ -1,0 +1,11 @@
+Although older, potentially sedating, "first-generation" antihistamines (H1-receptor antagonists) are commonly used in childhood, their central nervous system (CNS) effects have not been well-documented in young subjects.
+We hypothesized that diphenhydramine and hydroxyzine would affect CNS function adversely in this population.
+Our objective was to evaluate the effects of these medications on central and peripheral histamine H1-receptors in children.
+Fifteen subjects with allergic rhinitis were tested before and 2-2.5 h after administration of diphenhydramine, hydroxyzine, or placebo in a double-blind, single-dose, three-way crossover study.
+Impairment of cognitive processing was assessed objectively by the latency of the P300 event-related potential (P300).
+Somnolence was assessed subjectively by a visual analog scale.
+Peripheral H1-blockade was assessed by suppression of the histamine-induced wheals and flares.
+At the central (Cz) and frontal (Fz) electrodes, diphenhydramine and hydroxyzine increased the P300 latency significantly (P < 0.05) compared to baseline.
+Hydroxyzine increased somnolence, as recorded on the visual analog scale, significantly compared to baseline (P < 0.05), with a similar trend for diphenhydramine (P = 0.07).
+Both antihistamines reduced histamine-induced wheals and flares significantly compared to baseline and compared to placebo.
+In children, diphenhydramine and hydroxyzine are effective H1-receptor antagonists, but both these medications cause CNS dysfunction, as evidenced by increased P300 latency, a measure of cognitive function, and by increased subjective somnolence.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1051  |  gem_id: gem-cochrane-simplification-train-1052  |  doi: 10.1002/14651858.CD003233.pub2
+
+This systematic review identified four studies (108 participants) investigating immunosuppressive treatments for adults with biopsy-proven FSGS. Adult patients treated with cyclosporin A in combination with prednisone were more likely to achieve partial remission of nephrotic syndrome compared with prednisone alone, however this result is based on only one small study. No data was available on the progression to kidney failure or death.

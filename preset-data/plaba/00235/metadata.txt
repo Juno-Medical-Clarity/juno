@@ -1,0 +1,5 @@
+pmid:        32628600
+question:    19
+adaptation:  adaptation1
+title:       Understanding the Pathogenesis Involved in Parkinson's Disease and Potential Therapeutic Treatment Strategies
+sentences:   11

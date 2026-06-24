@@ -1,0 +1,20 @@
+Changes in diet are often recommended for people with chronic kidney disease on the basis of evidence in the general population and in other studies of chronic kidney disease.
+People who have kidney disease have prioritized changes in their diet as uncertain treatment.
+This review evaluates the benefits and harms of dietary interventions (changing diet and diet behavior to reach a health goal) among adults with chronic kidney disease, including people with end-stage kidney disease treated with dialysis (a process that uses a machine to clean the blood because the kidneys are not working) or kidney transplantation or donation.
+Researchers include 17 studies involving 1639 people with chronic kidney disease.
+Three studies include 341 people treated with dialysis, four studies have 168 kidney transplant recipients, and 10 studies have 1130 people with chronic kidney disease at stages ranging from 1 to 5.
+Among these studies, 11 evaluated dietary counselling with or without lifestyle advice, and 6 evaluated dietary patterns, including 1 study of a low-carb/low-iron with many plant-based foods diet, 2 studies of increased fruit and vegetable intake, 2 studies of a Mediterranean diet and 1 study of a high protein/low carb diet.
+Risks of bias in these studies are generally high or unclear, lowering confidence in how true the results are in these papers.
+Participants are followed up for about 12 months, but the time ranges between 1 to 46.8 months.
+Studies are not designed to examine all causes of illness or heart disease events.
+In very low quality evidence, dietary interventions or treatment have uncertain effects on deaths from any cause or end-stage kidney disease.
+Dietary interventions to treat kidney disease may prevent one person in every 3000 treated for one year to avoid end-stage kidney disease, although the certainty that this result will happen is very low.
+Across all 17 studies, outcome data for heart events are limited.
+Dietary interventions in low quality evidence studies are associated with a higher health-related quality of life.
+Adverse (unexpected and negative) events are generally not reported.
+In some studies, dietary interventions lowered systolic blood pressure (top blood pressure number) and diastolic blood pressure (bottom blood pressure number) compared to a control diet.
+Dietary interventions are associated with a higher estimated glomerular filtration rate (eGFR), a blood test that measures removal of creatinine levels which are waste products from digestion and muscle breakdown. They are also linked to higher albumin (liver proteins that keep fluid in the bloodstream) levels in the blood.
+A Mediterranean diet lowered LDL (bad) cholesterol levels.
+In conclusion, dietary interventions have uncertain effects on death, heart events, and end-stage kidney disease among people with chronic kidney disease because these effects are rarely measured or described.
+Dietary interventions may increase health-related quality of life, eGFR, and albumin levels in the blood, and lower blood pressure and cholesterol levels.
+Large-scale clinical studies to test the effects of dietary interventions on patient outcomes are needed.

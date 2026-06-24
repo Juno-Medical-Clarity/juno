@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1363  |  gem_id: gem-cochrane-simplification-train-1364  |  doi: 10.1002/14651858.CD007248.pub2
+
+Its use in newborn babies is studied in only one study of 63 babies. Propofol helped to reduce time to complete procedure, time of recovery and time to prepare drugs. However, with this small number of newborns studied, the safety can not be proven. Further studies are warranted.

@@ -1,0 +1,5 @@
+drug_focus: peppermint oil
+question_type: Side effects
+section_title: What Do We Know About Safety?
+source_url: https://nccih.nih.gov/health/peppermintoil
+sample_id: 0458

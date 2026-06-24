@@ -1,0 +1,5 @@
+drug_focus: butalbital
+question_type: Information
+section_title: NA
+source_url: https://pubchem.ncbi.nlm.nih.gov/compound/butalbital
+sample_id: 0247

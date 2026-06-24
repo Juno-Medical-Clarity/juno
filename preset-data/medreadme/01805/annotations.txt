@@ -1,0 +1,8 @@
+source:      pnas
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [20:24] 'medical-jargon-google-easy' -> 'Pinus contorta var. latifolia'
+  [39:41] 'general-complex' -> 'carbon stocks'

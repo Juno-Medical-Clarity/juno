@@ -1,0 +1,51 @@
+# SOAP Notes — Sample 0021
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presents with a rash on right ankle that has been present for 1 week and started hurting yesterday (rash is swollen, red, and has scabs; white discharge noted from 1 of the scabs that turned into an open wound)
+- Pain worse with walking and flexing the ankle
+- Feeling unwell and tired over the past 2 weeks with less energy today; feels hot over the past 12 hours
+- Right leg feels hotter than the left
+- Reports occasional foot ulcers; believes he currently has an ulcer on his left heel
+
+PMHx:
+- Type 2 diabetes mellitus (last A1c was around 9; reports difficulty controlling sugars lately with increased thirst, urination, and fatigue)
+- Hypercholesterolemia
+- Childhood asthma (not a current issue)
+- Chronic back pain for 10 years
+- Sinus surgery as a teenager for sinusitis
+- Decreased sensation in feet bilaterally
+
+Medications:
+- Rosuvastatin (cholesterol)
+- Metformin (diabetes)
+- 2 other diabetes medications (patient unsure of names)
+- Tylenol and Advil PRN (back pain)
+
+Allergies:
+- Penicillin (facial swelling and difficulty breathing)
+
+FHx:
+- Maternal family history of diabetes, hypertension, and hypercholesterolemia
+- Maternal aunt with lung cancer (heavy smoker)
+
+SocHx:
+- Unemployed; owns his own business as an accountant
+- Separated from children; sees them every 2 weeks
+- Smokes 2 packs per week (increased lately due to stress)
+- Drinks alcohol (averages 2-4 beers per day on weekends)
+
+Objective:
+- Vitals signs
+- Physical examination of right ankle and leg
+
+Assessment:
+- Likely diabetic foot ulcer with secondary infection
+
+Plan:
+- Wound culture and sensitivity
+- Initiate empiric antibiotics (avoid penicillin due to allergy)
+- Optimize diabetes management
+- Wound care and offloading
+- Counsel on smoking cessation and alcohol moderation
+- Follow-up with primary care provider for diabetes management

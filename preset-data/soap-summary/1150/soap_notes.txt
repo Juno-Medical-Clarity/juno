@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1150
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Smoking habit (three packs per month).
+- Duration: Ongoing smoking habit.
+- Associated symptoms: None mentioned.
+- Relevant medical history: None mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Other concerns: None mentioned.
+- Emotions: None mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

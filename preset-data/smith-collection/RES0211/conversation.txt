@@ -1,0 +1,250 @@
+# Smith Collection Transcript: RES0211
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: So what brings you to the clinic today
+
+Patient: Hi so i just like for i dont know like three or four days i’ve been having this really dry cough and my throat feels really scratchy i just feel kinda crappy overall and my head’s pounding
+
+Doctor: Your heads pounding you have a headache right now
+
+Patient: Yeah little bit i just kind of feel just icky
+
+Doctor: OK and you say ive been feeling that for three to four days now
+
+Patient: Yeah yeah exactly
+
+Doctor: What did you first notice
+
+Patient: I first noticed that my throat was kind of scratchy and then i started coughing but its really like dry
+
+Doctor: OK so you havent been bringing anything up with it
+
+Patient: No
+
+Doctor: Any flem
+
+Patient: No nothing
+
+Doctor: OK you havent been noticing been running a temperature at home have you hot fevers
+
+Patient: I have felt really hot
+
+Doctor: You felt hot at home ok
+
+Patient: Yeah
+
+Doctor: You noticed any night sweats by night sweats i mean you wake up sheets are soaked
+
+Patient: I honestly i felt hot like all the time like yeah yeah night i feel hot but during the day too im just like im im like hey im wearing like just shorts and like a tank top and i just still feel really hot
+
+Doctor: OK you notice skin changes anything in your arms or legs it looks weird new rashes
+
+Patient: I dont i dont think so i havent really been looking but you know
+
+Doctor: No worries and then aside from that any nausea any vomiting
+
+Patient: No not that no nothing like that
+
+Doctor: Any diarrhea
+
+Patient: No no
+
+Doctor: Any aches in your joints anywhere
+
+Patient: No i mean im im tired but i dont think theyre not like hurting
+
+Doctor: OK so aside that aside from kind of this dry cough feeling hot that otherwise youre feeling ok you dont have any other real concerns aside from that
+
+Patient: Yeah just like i just feel crappy like yeah i really i dont think i know thats not like a a real like way to say
+
+Doctor: Oh no no its perfectly valid we called that malays in general just feeling a little bit off alright so this is going to talk about you for a little bit but first well get to that later so any issues that youve seen a doctor for before
+
+Patient: I have i have allergies usually in like the spring in the fall
+
+Doctor: Do you have any allergies to any medications
+
+Patient: No no nothing like that its just like i get really bad allergies like i ive seen an allergist and some years ive gotten allergy shots but like not every year otherwise ill take like claritin this isnt like this is maybe around like this is just before they normally start so i dont really have them right now
+
+Doctor: OK
+
+Patient: Probably like in a few weeks theyd be really bad
+
+Doctor: Now do any of these allergies cant make it difficult to breathe or you feel like your face is swelling up
+
+Patient: uh like it feels like a little bit like plugged up an like whats that called like post nasal drip but i dont really feel like i cant breathe
+
+Doctor: Its just like a little stuffy
+
+Patient: Yeah yeah exactly
+
+Doctor: And these shots at the allergist gave you how often would you get those
+
+Patient: Those are the ones that id have like once usually like once a week for a little while like in the winter before
+
+Doctor: OK so you dont carry an epipen with you
+
+Patient: No no they said its not like one of those allergies and its just like its just like the seasonal ones but theyre just bad
+
+Doctor: OK sounds good so youve seen an allergist any other doctors that youve seen in your life
+
+Patient: My family doctor i don’t really go very often
+
+Doctor: OK has there been any health issues that youve had in the past
+
+Patient: No like ive been really healthy its just like the allergies and
+
+Doctor: OK any surgeries in your life
+
+Patient: uh no no
+
+Doctor: No are you takin any medications right now
+
+Patient: I take claritin for allergies but i havent like right now i just have it with me just in case i take birth control
+
+Doctor: What type of birth control do you take
+
+Patient: Deyo
+
+Doctor: OK and you take that regularly
+
+Patient: Yeah its just like the pill its like the one that goes for three months
+
+Doctor: OK so you dont have an iunow you just take the oral contraception
+
+Patient: Yeah yeah just the pill got it
+
+Doctor: Got it ok and then so you never had asthma in your life
+
+Patient: No
+
+Doctor: OK any family history of asthma
+
+Patient: Like my cousin
+
+Doctor: OK what about your parents brothers sisters
+
+Patient: No nothing like that
+
+Doctor: Do you know what eczema is
+
+Patient: Like ive heard of it
+
+Doctor: OK anyone in the family have it
+
+Patient: No like the only thing like my dad has allergies too same kind as me
+
+Doctor: OK  dad has allergies ok mother and father still alive
+
+Patient: Yeah
+
+Doctor: Healthy
+
+Patient: Yeah
+
+Doctor: OK good do you live with them right now
+
+Patient: Yeah yeah like im in high school
+
+Doctor: OK so you live in a house with both your parents ok any brothers sisters
+
+Patient: Yeah i have a little brother
+
+Doctor: How old’s he
+
+Patient: Like 14 now
+
+Doctor: Has anyone in the family been sick recently
+
+Patient: I think my brother we had like a cold a few weeks ago
+
+Doctor: He had a cold
+
+Patient: Yeah
+
+Doctor: OK
+
+Patient: But like we are doing our school from home now so
+
+Doctor: Got it
+
+Patient: My mom works from home and my dad just works like on the farm so so no ones been like seeing anyone or going anywhere to get sick
+
+Doctor: OK so sorry do you live on a farm
+
+Patient: Yeah
+
+Doctor: OK in london
+
+Patient: Like just outside
+
+Doctor: OK any travel or anywhere recently
+
+Patient: No like i just just came here but like i dont really leave the house
+
+Doctor: So last last two weeks you havent left the country
+
+Patient: No
+
+Doctor: Nothing like that
+
+Patient: I wish
+
+Doctor: You keep any animals on the farm
+
+Patient: We have like a dog but its not like an animal farm
+
+Doctor: Got it ok another questions are you sexually active
+
+Patient: uh no
+
+Doctor: But youre taking the birth control ok so when was your last menstrual period
+
+Patient: Like like i just got done like a week ago
+
+Doctor: A week ago and you havent been sexually active since then
+
+Patient: No
+
+Doctor: OK so chances of being pregnant very low
+
+Patient: Oh oh yeah yeah its been like a year
+
+Doctor: Got it got it alright do you smoke cigarettes
+
+Patient: No
+
+Doctor: Do you drink alcohol
+
+Patient: Like before covid when i saw my friends like sometimes a little bit but like not really anymore
+
+Doctor: OK how much would you drink when you went out
+
+Patient: Oh like i mean our parents would sometimes let us have like a couple coolers but like that was it
+
+Doctor: Got it any other drugs marijuana cocaine
+
+Patient: Like i tried marijuana once at a party like a couple years ago but like i had i never did it again
+
+Doctor: Got it so none of the harder drugs cocaine heroin
+
+Patient: No
+
+Doctor: And i gotta ask this question for everyone have you ever injected drugs or anything into your arm or your body
+
+Patient: No
+
+Doctor: OK alright thanks jessica so just to summarize you kind of had a three to four day dry cough with a little bit of fever some headache and just in terms was quickly reviewing then so you have been bringing anything up no one in contact with these recently been sick you dont have asthma your not taking any medications aside from claritin and your little brother might have been sick about two weeks ago with kind of a common cold and were hoping to get out of this visit is just kind of next steps and where to go from here correct
+
+Patient: Yeah like i just want to know if i have to like take medicine or something
+
+Doctor: OK alright perfect thank you very much you have any more questions
+
+Patient: No i dont know i dont have any more questions i just like i can go home soon like lay down
+
+Doctor: Sounds good thanks jessica

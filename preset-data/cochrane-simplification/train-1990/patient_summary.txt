@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1990  |  gem_id: gem-cochrane-simplification-train-1991  |  doi: 10.1002/14651858.CD009293.pub2
+
+We found, through systematic search, only one study where investigators assessed the usefulness of ketamine for management of severe acute asthma in children. While this single study suggested that there is a lack of evidence for usefulness of ketamine in acute exacerbation of asthma in children, more trials are needed regarding the use of ketamine in acute asthma before more specific recommendations can be made.

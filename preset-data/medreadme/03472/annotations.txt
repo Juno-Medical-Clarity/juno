@@ -1,0 +1,8 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Progressive exercise'
+  [14:15] 'medical-jargon-google-easy' -> 'physiotherapist'

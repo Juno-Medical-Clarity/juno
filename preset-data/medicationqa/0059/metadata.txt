@@ -1,0 +1,5 @@
+drug_focus: drugs that reduce cholesterol
+question_type: Indication
+section_title: Cholesterol medications: Consider the options
+source_url: https://www.mayoclinic.org/diseases-conditions/high-blood-cholesterol/in-depth/cholesterol-medications/art-20050958
+sample_id: 0059

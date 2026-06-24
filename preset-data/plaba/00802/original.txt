@@ -1,0 +1,13 @@
+Background: Arthrogryposis multiplex congenita (AMC) is characterised by congenital joint contractures in two or more body areas.
+AMC exhibits wide phenotypic and genetic heterogeneity.
+Our goals were to improve the genetic diagnosis rates of AMC, to evaluate the added value of whole exome sequencing (WES) compared with targeted exome sequencing (TES) and to identify new genes in 315 unrelated undiagnosed AMC families.
+Methods: Several genomic approaches were used including genetic mapping of disease loci in multiplex or consanguineous families, TES then WES.
+Sanger sequencing was performed to identify or validate variants.
+Results: We achieved disease gene identification in 52.7% of AMC index patients including nine recently identified genes (CNTNAP1, MAGEL2, ADGRG6, ADCY6, GLDN, LGI4, LMOD3, UNC50 and SCN1A).
+Moreover, we identified pathogenic variants in ASXL3 and STAC3 expanding the phenotypes associated with these genes.
+The most frequent cause of AMC was a primary involvement of skeletal muscle (40%) followed by brain (22%).
+The most frequent mode of inheritance is autosomal recessive (66.3% of patients).
+In sporadic patients born to non-consanguineous parents (n=60), de novo dominant autosomal or X linked variants were observed in 30 of them (50%).
+Conclusion: New genes recently identified in AMC represent 21% of causing genes in our cohort.
+A high proportion of de novo variants were observed indicating that this mechanism plays a prominent part in this developmental disease.
+Our data showed the added value of WES when compared with TES due to the larger clinical spectrum of some disease genes than initially described and the identification of novel genes.

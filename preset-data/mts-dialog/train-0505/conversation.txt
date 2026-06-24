@@ -1,0 +1,16 @@
+Doctor: Are you married, sir?
+Patient: Yes, I am, Doctor:
+Doctor: Is this your only marriage?
+Patient: Well, no. I've been married three times now.
+Doctor: If you don't mind my asking, how long was your longest marriage?
+Patient: I don't mind at all, my longest was two years.
+Doctor: Do you have any children, sir?
+Patient: Yes, I have two.
+Doctor: How old are they, sir?
+Patient: They're both fifteen, they're twins, obviously. They're my wife's dependents, though.
+Doctor: Okay, thank you. Did you go to college, sir?
+Patient: Yeah, I have my bachelor's. I got the military to pay for it.
+Doctor: How long were you in the military?
+Patient: I did six years, sir. I was honorably discharged.
+Doctor: Where are you working currently.
+Patient: I've worked at Purdy Correctional Institute, you know, the one in Gig Harbor? I've worked there for nineteen years.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1046
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, we looked at your previous blood work results, now let me see what these reports say from today's C B C exam. Sure. Okay so your hemoglobin levels look within range, white counts are thirteen point three, then seven point six lymphocytes and twenty six thousand platelets. Okay? Okay.

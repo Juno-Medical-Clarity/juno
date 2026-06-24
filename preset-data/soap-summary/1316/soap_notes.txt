@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1316
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Pain severity: 6 out of 10
+- Pain worsens when walking
+- No pain at night
+- Duration of wearing the knee brace: "for a little while now"
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

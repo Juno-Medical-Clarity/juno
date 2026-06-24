@@ -1,0 +1,6 @@
+Doctor: Looks like the nurse came in and asked you everything. Ah, she has everything documented here, but I will ask one more time. So, tell me, where do you live?
+Patient: Oh, it's a senior citizen house. They have many nursing aids there.
+Doctor: Do you smoke?
+Patient: No.
+Doctor: Do you work?
+Patient: Ah, right now I can't because of this disability, but I used to work as the security guard.

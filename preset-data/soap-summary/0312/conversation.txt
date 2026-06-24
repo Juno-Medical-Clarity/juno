@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0312
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good afternoon, sir. My nurse tells me you're twenty eight years old, is that correct? Good morning, doctor. Yes, that's correct. So, what happened? Well, I punched a wall about three days ago. Which hand is it? It's my right hand. Is this your dominant hand? Unfortunately, yes, it is. Where does it hurt? Um, it's right here on the outside of my hand. What kind of treatments have you had? I went to the E D, and they pushed some of the joints in my hand back, and they put me in a splint, so I've been wearing that ever since. How is your pain today? Compared to when it started, it's much better today. How would you describe your pain today? Today, I'd say it's minimal pain. Good, do you have any numbness or tingling today? No, thankfully not.

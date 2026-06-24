@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0389
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good morning, ma'am. You're eighty two years old, is that correct? Good morning, doctor. Yes, that's correct. Good, and just one more piece of background information, which hand do you write with? I use my right hand for everything. Good, so what seems to be the problem today? Doctor, I've had years of pain in this shoulder. What kind of treatments have you had? Well, um, I've had antiinflammatories, and rested, and none of it has helped so far. Can I assume the pain is impacting your daily life? Yes, it certainly is. The pain is unbearable now.

@@ -1,0 +1,5 @@
+pmid:        13667001
+question:    8
+adaptation:  adaptation1
+title:       Clinical indications and toxicity of prolonged perphenazine therapy
+sentences:   2

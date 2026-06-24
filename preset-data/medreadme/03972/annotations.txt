@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'empirically'

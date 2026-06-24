@@ -1,0 +1,1 @@
+For any large class of proteins, far more protein sequences are known than can be examined experimentally.

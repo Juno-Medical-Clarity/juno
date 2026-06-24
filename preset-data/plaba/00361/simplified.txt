@@ -1,0 +1,7 @@
+SARS-CoV-2 infection, also known as COVID-19 (a viral, breathing-related disease), has caused a global pandemic that has hurt both public health and the economy.
+A protein of the virus has several purposes and plays an important role in creating the protective outer shell of the virus and helping the virus replicate itself.
+In order to better understand how the virus protein works, proteins within human cells that interact with the COVID-19 protein were identified.
+The authors identified 160 proteins within two different human cell types that interact in some way with the COVID-19 protein.
+The human proteins found to interact with the virus protein are responsible for several cell functions, all of which impact the creation of more proteins.
+Additionally, some human proteins identified to interact with the virus protein have roles in defending the body from viruses.
+This study thoroughly characterized how the viral protein and the host (or human) protein interact when a person is infected. These findings can provide a foundation for future studies on the development and treatment options for COVID-19.

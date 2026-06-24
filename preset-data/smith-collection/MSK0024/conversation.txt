@@ -1,0 +1,184 @@
+# Smith Collection Transcript: MSK0024
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: Hi ive been having this back pain for the past month so id just like something for it an and you know image it if possible just to figure out what it is
+
+Doctor: Youve been having it for the last month is this the first time youre having this back pain
+
+Patient: Yeah yes
+
+Doctor: OK and where exactly are you having the back pain
+
+Patient: Its in my lower back
+
+Doctor: OK and what kind of pain are you experiencing is it like a sharp stabbing pain or is that a dull aching pain
+
+Patient: Its kind of dull and achy but sometimes i feel like i have little spasms in my back
+
+Doctor: OK and how often are you getting these spasms
+
+Patient: um id say like two to three times a week
+
+Doctor: OK and it is this back pain constant or does it come come and go
+
+Patient: Its pretty constant but it gets worse with certain things
+
+Doctor: So one month ago when it started before then did you injure yourself at all or were you doing anything that brought on the pain or did the pain come on gradually
+
+Patient: So i work in this factory where i move a lot of boxes and i think i may have like lifted a really heavy box or lifted it in an improper position because thats when that night is when my back started hurting
+
+Doctor: OK i see and how long have you worked in this role
+
+Patient: For the past 30 years
+
+Doctor: OK alright and has the pain become worse at all or has it stayed the same since it started
+
+Patient: Id say its pretty its been pretty similar to the start
+
+Doctor: OK and does the back pain move anywhere like for example does it shoot down your legs at all
+
+Patient: No ok have you tried anything that has helped you
+
+Doctor: Ive tried some topical analgesics and you know those fire and ice gels and i think sometimes that helps but its always temporary
+
+Patient: OK and what kind of things make your pain worse like bending down as opposed to stretching backwards
+
+Doctor: Yeah bending down like it when i flex my back that hurts more than if i straighten it out
+
+Patient: OK is a bending hurts more and what about bending towards the sides
+
+Doctor: um a little bit more towards my right side
+
+Patient: OK and are you having any other symptoms like numbness or tingling in your extremities or back at all
+
+Doctor: No
+
+Patient: And any kind of numbness or loss of sensation in your buttocks area or just below your lower back
+
+Doctor: um no
+
+Patient: OK and any fevers or chills
+
+Doctor: Nope
+
+Patient: Any night sweats
+
+Doctor: No
+
+Patient: Any um skin changes or rashes
+
+Doctor: No
+
+Patient: Any have you been ill recently at all with cough cold symptoms at all
+
+Doctor: No
+
+Patient: Do you feel pain in anywhere else in any other muscles or joints at all
+
+Doctor: um no
+
+Patient: Have you recently had any changes to your weight
+
+Doctor: No
+
+Patient: OK and any kind of changes to your bowel movements
+
+Doctor: No
+
+Patient: OK any kind of issues with urination at all
+
+Doctor: No
+
+Patient: And any urinary or fecal retention or incontinence
+
+Doctor: No
+
+Patient: Right so its just this pain thats been there for the last month stayed around the same in terms of your medical history have you been diagnosed with the have any medical conditions in the past
+
+Doctor: I have a high blood pressure which i take some ramipril for
+
+Patient: OK any allergies to any medications
+
+Doctor: No
+
+Patient: OK and have you are using any other medications at all
+
+Doctor: No
+
+Patient: Have you been hospitalized or had any surgeries in the past
+
+Doctor: No
+
+Patient: OK do you have any family history of any musculoskeletal or rheumatologic condition
+
+Doctor: No
+
+Patient: Any cancers in the family
+
+Doctor: No
+
+Patient: And so currently are you working or did you have to take time off work
+
+Doctor: Im taking some time off work until i figure out what this back pain is
+
+Patient: OK and currently whats your living situation like
+
+Doctor: I live in an apartment with my wife and our teenage son
+
+Patient: OK and do you smoke at all
+
+Doctor: I used to smoke i havent smoked in over 10 years
+
+Patient: OK and do you drink alcohol at all
+
+Doctor: I drink occasionally ill have like a beer on the weekend
+
+Patient: Any recreational drugs like marijuana
+
+Doctor: No
+
+Patient: OK alright so im just gonna ask a few questions maybe get you to do some movements and see what hurts the most
+
+Doctor: OK
+
+Patient: So when you press your hand down down your spine is it hurt at all in the lower back with palpation
+
+Doctor: um it kinda hurts right in the middle uh just above the buttocks area an where like my tailbone almost is
+
+Patient: I see and uh any kind of pain with lying down and then raising your legs straight up without bending the knees
+
+Doctor: I can try that um that hurts a little bit yeah
+
+Patient: And does it hurt in the lower back or near the front of your hips
+
+Doctor: That hurts in my lower back
+
+Patient: And any kind of redness or swelling that youve noticed at all i know its in the back so it might be more difficult to see
+
+Doctor: um no i dont see anything like that
+
+Patient: OK and are you has your gait changed at all or is it are you able to walk without a limp or anything
+
+Doctor: Im able to walk without a limp
+
+Patient: OK alright so and then uh bending down you said hurts more than standing up or extending your back right
+
+Doctor: Yes
+
+Patient: OK alright so those are all the questions i had for you today do you have any questions for me
+
+Doctor: No just like how can i treat this
+
+Patient: Yeah for sure so this has been going on for the last month it sounds more like whats called mechanical back pain and due to the nature of your work having been lifting heavy objects for the last 30 or so years its usually something that occurs with repetitive repetitive work and strenuous work like that that affects your back and what youre describing with the flexion seems more pain coming from the discs themselves instead of the facets at the back so every time you flex you have some compression of your discs so what we what we need to do right now is its been one month almost and then usually we get imaging if the pain does not improve after six weeks of conservative management so what we can try is to give you some pain management first and some antiinflammatory medication and then as well as try some physiotherapy some exercises to help you with the back pain and then if the pain does not improve and since there is no red flags that were too worried about right now with your back pain we can wait to get some imaging but first we would just like to try some of the conservative management is that ok with you
+
+Doctor: Yeah that sounds great thank you
+
+Patient: Youre welcome alright take care

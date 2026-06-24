@@ -1,0 +1,5 @@
+pmid:        32518860
+question:    3
+adaptation:  adaptation3
+title:       Current Management of Hyperkalemia in Patients on Dialysis
+sentences:   4

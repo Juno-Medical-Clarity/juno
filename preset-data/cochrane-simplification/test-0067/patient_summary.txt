@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0067  |  gem_id: gem-cochrane-simplification-test-68  |  doi: 10.1002/14651858.CD001452.pub4
+
+This review of trials found evidence that venepuncture, when done by a trained practitioner, caused less pain than heel lance. The use of a sweet tasting solution given to the baby prior to the event reduced pain further. The evidence included outcome measures using pain scales, how long the baby cried and how the mother rated their baby's pain.

@@ -1,0 +1,5 @@
+Doctor: As per your chart I am going to put some of the following things in your diagnosis.
+Patient: Yes, I have diabetes, hypertension and gallstones.
+Doctor: Yes I can see that in your chart over here.
+Patient: What are the new things?
+Doctor: We now have added hyperglycemia and obstructive sleep apnea.

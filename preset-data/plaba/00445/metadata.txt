@@ -1,0 +1,5 @@
+pmid:        34164121
+question:    34
+adaptation:  adaptation1
+title:       A Mediterranean lifestyle is associated with favourable cardiometabolic markers in people with non-dialysis dependent chronic kidney disease
+sentences:   9

@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0470
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient lives with her boyfriend.
+- Patient smokes cigarettes.
+- Patient uses drugs sometimes but does not wish to discuss it.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided.)

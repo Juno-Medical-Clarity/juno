@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [17:21] 'medical-name-entity' -> 'EuroQol - 5 Dimensions'
+  [23:24] 'medical-name-entity' -> 'NHS'

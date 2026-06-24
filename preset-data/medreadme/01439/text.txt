@@ -1,0 +1,1 @@
+However, currently available computer systems do not have enough power to simulate the dynamics of large protein assemblies, like the 26S proteasome: for example, it would take longer than a thousand years to model how each atom in the complex moves over a timescale in which a biological change would happen (roughly 100ms).

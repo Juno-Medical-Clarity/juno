@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1226
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, how are feeling? You came here last time with C V A right? Yeah, I am recovering well. You asked me to follow-up for high sugar. Oh yeah, you have diabetes mellitus. Did you happen to get a blood test done before this visit? Yes, I did here is the report.

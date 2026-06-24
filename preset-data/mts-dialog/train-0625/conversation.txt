@@ -1,0 +1,5 @@
+Guest_clinician: Is the patient being admitted for disseminated C M V infection?
+Doctor: Yes. I suspect they have possible C M V pneumonitis as well.
+Guest_clinician: Are they on immunosuppressants?
+Doctor: Yes. They have polymyositis and they're taking Prednisone and Methotrexate.
+Guest_clinician: Got it.

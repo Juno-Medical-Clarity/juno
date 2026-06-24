@@ -1,0 +1,11 @@
+The timing of the development of immunity after natural SARS-CoV-2 infection has not been studied in depth.
+Data about long-term immunity following anti-SARS-CoV-2 vaccination is still scarce.
+We studied the the development of the strongest protective immune responses after SARS-CoV-2 infection and vaccination.
+We performed a long-term study of the immune responses and antibody blood levels in patients with mild, moderate or severe acute COVID-19 infection.
+Immune response was also studied in 234 COVID-19 recovered subjects, 28 uninfected BNT162b2 (Pfizer)-vaccinees and 30 uninfected healthy unvaccinated people.
+During natural infection, immune responses were early and coordinated in patients with mild COVID-19, while the immune responses were weak and inconsistent in patients with severe illness.
+Immunity in patients was measured at hospital arrival. Patients with a strong cellular immune response against the virus spike protein had a less severe illness.
+In COVID-19 recovered patients, four to seven months post-infection, cellular immunity was maintained but antibody blood levels and the capacity of the antibodies to block the virus declined.
+In uninfected BNT162b2-vaccinees, a strong cellular immune response developed.
+Three months post-vaccination, the cellular immune response was comparable to that measured in patients who recovered from COVID-19. In vaccinated people, the antibody response was consistently stronger to that measured in COVID-19 recovered patients.
+Our study of the cellular immune response and the antibody response provides information about protection from infection and the likelihood of developing severe infection. This information could be used to influence public health recommendations.

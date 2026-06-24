@@ -1,0 +1,5 @@
+drug_focus: Metroprolol succinate
+question_type: Appearance
+section_title: Dosage forms and Strength
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1098f26d-8319-4dba-ad66-3df22db2b399&audience=consumer
+sample_id: 0143

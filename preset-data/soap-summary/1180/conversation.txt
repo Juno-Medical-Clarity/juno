@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1180
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, I am Doctor James. Guest_family: Hi Doctor, this is my daughter Miya, and I am Jena. Nice to meet you ladies. So, Miya how old are you? I am fifteen. Okay, so tell me what is going on with you? Well, I am having a severe headache. Guest_family: She has been complaining about it for almost six hours now. Oh wow. Can you tell me where exactly the pain is? Um, it started from my neck and then moved up to the back of my head. I see. Did you get hurt or bump your head? No. Does she have any history of headaches? Guest_family: No. Okay, any nausea or vomiting? I am having nausea, but it's coming and going but no vomiting. Also, I am not able to tolerate light at all. Hm, are you able to see properly though, any change in your vision? No. Any fever? No. Guest_family: No, no fever. Okay.

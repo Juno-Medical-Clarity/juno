@@ -1,0 +1,3 @@
+Doctor: Does anyone in your family suffer from any health problems?
+Patient: No one comes to mind.
+Doctor: Great.

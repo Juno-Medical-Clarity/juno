@@ -1,0 +1,5 @@
+drug_focus: toradol
+question_type: Usage/special populations
+section_title: PRECAUTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=688f5dec-a6db-43c6-a1f8-5df99d08d395
+sample_id: 0473

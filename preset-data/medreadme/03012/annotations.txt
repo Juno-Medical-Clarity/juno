@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        simple
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'flumazenil'
+  [20:21] 'general-complex' -> 'placebo'

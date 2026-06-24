@@ -1,0 +1,10 @@
+This study aimed to develop nonhuman primate (monkey) (NHP) models of severe polytraumatic (many-injury) hemorrhagic (excessive bleeding) shock that are applicable to human health settings.
+NHPs were placed into five pressure-targeted hemorrhagic shock (PTHS) scenarios. The scenarios were as follows: 30-min PTHS (PTHS-30), 60-min PTHS (PTHS-60), PTHS-60 + soft tissue injury (PTHS-60+ST), PTHS-60+ ST + femur (leg) fracture (PTHS-60+ST+FF), and decompensated PTHS+ST+FF (PTHS-D).
+Physiologic parameters were recorded. Blood samples were collected at five time points with animal observation through 24 hours.
+
+Blood loss percentages were  40%, 59%, 52%, 49%, and 54% for PTHS-30, PTHS-60, PTHS-60+ST, PTHS-60+ST+FF, and PTHS-D, respectively.
+All animals survived till the end of the study except one in the PTHS-60 and PTHS-60+ST+FF groups. Seven did not survive till the end of the study in the PTHS-D group.
+Physiologic (overall health), coagulation (blood clotting), and inflammatory (infection-fighting) parameters showed increased disturbance with increasing model severity.
+NHPs show a high degree of resilience to hemorrhagic shock and polytrauma (more than one injury). This was shown by moderate disturbances in metabolic, coagulation, and immunologic outcomes with low blood pressure in all injury groups.
+Increasing PTHS duration to the point of organ failure with polytraumatic injury, evoked (led to) disturbances consistent with those observed in severely injured trauma patients requiring ICU care.
+This study has successfully established a clinically translatable NHP trauma model for use in testing therapeutic interventions to trauma.

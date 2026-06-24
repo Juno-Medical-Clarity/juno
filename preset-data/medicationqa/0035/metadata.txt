@@ -1,0 +1,5 @@
+drug_focus: tramadol
+question_type: Alternatives
+section_title: When the Safe Alternative Is Not That Safe: Tramadol Prescribing in Children
+source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5844975/
+sample_id: 0035

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1303
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How did your treatment for the thrombosis go? I believe we did it on February nineteen of two thousand and seven. We finished the note the next day in order to send to your other following doctor. The treatment went well. Thanks!

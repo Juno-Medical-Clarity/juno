@@ -1,0 +1,10 @@
+Purpose of review: Renal potassium (K) secretion plays a key role in maintaining K homeostasis.
+The classic mechanism of renal K secretion is focused on the connecting tubule and cortical collecting duct, in which K is uptaken by basolateral Na-K-ATPase and is secreted into the lumen by apical ROMK (Kir1.1) and Ca-activated big conductance K channel.
+Recently, genetic studies and animal models have indicated that inwardly rectifying K channel 4.1 (Kir4.1 or Kcnj10) in the distal convoluted tubule (DCT) may play a role in the regulation of K secretion in the aldosterone-sensitive distal nephron by targeting the NaCl cotransporter (NCC).
+This review summarizes recent progresses regarding the role of Kir4.1 in the regulation of NCC and K secretion.
+Recent findings: Kir4.1 is expressed in the basolateral membrane of the DCT, and plays a predominant role in contributing to the basolateral K conductance and in participating in the generation of negative membrane potential.
+Kir4.1 is also the substrate of src-family tyrosine kinase and the stimulation of src-family tyrosine kinase activates Kir4.1 activity in the DCT.
+The genetic deletion or functional inhibition of Kir4.1 depolarizes the membrane of the DCT, inhibits ste20-proline-alanine rich kinase, and suppresses NCC activity.
+Moreover, the downregulation of Kir4.1 increases epithelial Na channel expression in the collecting duct and urinary K excretion.
+Finally, mice with low Kir4.1 activity in the DCT are hypomagnesemia and hypokalemia.
+Summary: Recent progress in exploring the regulation and the function of Kir4.1 in the DCT strongly indicates that Kir4.1plays an important role in initiating the regulation of renal K secretion by targeting NCC and it may serves as a K sensor in the kidney.

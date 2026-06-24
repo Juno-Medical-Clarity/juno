@@ -1,0 +1,19 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [5:19] 'medical-name-entity' -> 'ELF to Uncover Cirrhosis as an Indication for Diagnosis and Action for Treatable Event'
+  [20:21] 'abbr-medical' -> 'ELUCIDATE'
+  [22:25] 'general-complex' -> 'randomised controlled trial'
+  [26:27] 'abbr-general' -> 'RCT'
+  [31:32] 'abbr-general' -> 'RCT'
+  [38:46] 'medical-name-entity' -> 'ADVIA Centaur ( r ) Enhanced Liver Fibrosis'
+  [47:48] 'abbr-medical' -> 'ELF'
+  [51:55] 'medical-name-entity' -> 'Siemens Healthcare Diagnostics Ltd'
+  [72:75] 'medical-jargon-google-easy' -> 'serum hyaluronic acid'
+  [79:87] 'medical-jargon-google-hard' -> 'amino - terminal propeptide of type III procollagen'
+  [91:95] 'medical-jargon-google-hard' -> 'tissue inhibitor of metalloproteinase'
+  [99:101] 'medical-jargon-google-easy' -> 'liver cirrhosis'
+  [112:113] 'medical-jargon-google-easy' -> 'cirrhosis'

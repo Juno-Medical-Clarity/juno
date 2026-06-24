@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1172
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Numbness in legs starting at the trunk, weakness in legs, cold sensation in legs.
+- Severity: Numbness is significant enough to prevent feeling pressure applied at the nipple line; weakness is worsening.
+- Duration: Symptoms have been present for about three weeks; weakness for the last week; cold sensation for the last day; lightheadedness for two days.
+- Associated symptoms: Trouble walking and going up and down stairs; lightheadedness when standing; no loss of bowel or bladder control; not had a bowel movement in three days; last urination was about twenty-four hours ago; chronic shortness of breath, worsening.
+- Relevant medical history: Went to the ER a week ago; diagnosed with progressive sensory and motor deficits in both legs.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Concern about worsening symptoms and mobility issues.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, or follow-up mentioned.

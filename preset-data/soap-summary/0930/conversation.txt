@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0930
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you a student? Yes, I am. I go to the University. What are you majoring in? Or do you know yet? Yes! I am studying biology. Excellent! Do you live in the dorms? Yes. Are you from the area? I am from Breckenridge. That is where my parents live. That is a beautiful place to be from. Do you use any tobacco, alcohol, or recreational drugs? I have smoked weed with friends, off and on but not much. I have a few beers at the occasional dorm party.

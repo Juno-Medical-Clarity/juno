@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1361
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke? Yeah. I smoke about a pack a day. Do you have any plans of quitting? Eh not really. As your doctor, I'd advise that you consider nicotine patches and find ways to break your smoking habit. Okay. I'll see what I can do. Do you drink? Socially. Are you married? No, but I have two littles ones. Aw, how old are they? I have a four year old and a six year old. That's great. I'm sure they keep you busy. Any hobbies? They really do, especially the four year old. As for hobbies, I like fixing up computers. I also like fishing, hiking, and camping with the family.

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0709
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Flaring of hand eczema, dryness of hands, cracks in hands, burning pain when applying Cetaphil cleansing lotion.
+- Severity: Not explicitly stated, but indicated as problematic due to flaring and pain.
+- Duration: Not specified, but indicates current flaring.
+- Associated Symptoms: Cracks in hands, burning pain.
+- Relevant Medical History: Previous treatment with Aristocort cream, Cetaphil cream, increased moisturizing cream and lotion.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Patient is not currently employed and is not looking for a husband.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

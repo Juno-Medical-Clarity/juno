@@ -1,0 +1,6 @@
+source:      elife
+side:        simple
+readability: 3.8
+split:       test
+
+jargon_spans: (none)

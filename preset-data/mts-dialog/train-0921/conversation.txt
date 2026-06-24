@@ -1,0 +1,2 @@
+Doctor: Did you have any medical issues?
+Patient: Nope.

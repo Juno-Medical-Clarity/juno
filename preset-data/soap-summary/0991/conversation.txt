@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0991
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I remember you had mentioned that one of your family members had bone cancer. Are there any other medical problems that run in your family? Sadly, yes. Stroke and dementia are the other two big ones. I'm sorry to hear that.

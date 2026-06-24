@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0276  |  gem_id: gem-cochrane-simplification-train-277  |  doi: 10.1002/14651858.CD005085.pub2
+
+Many of the studies had substantial limitations. Generally, the studies done to date do not support the routine use of oximes, however, they cannot exclude that there would be some doses or situations where a benefit would occur. The reviewers found that not enough research has been done to see whether oximes are actually effective or to define the doses that are more likely to be helpful. More research is needed before any firm conclusions can be drawn.

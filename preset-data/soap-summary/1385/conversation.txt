@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1385
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, do you live in the area? Yes, my husband and I have lived here for a long time. He died a few years back. I'm sorry to hear that. It's alright. Do you smoke or drink? No, I don't. Do you use any illicit drugs or substances? No, I don't do anything like that.

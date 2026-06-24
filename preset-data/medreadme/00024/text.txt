@@ -1,0 +1,1 @@
+This integrative analysis pipeline is a general framework to identify candidate causal variants within regulatory regions and TF binding sites that confer phenotypic variation and disease risk.

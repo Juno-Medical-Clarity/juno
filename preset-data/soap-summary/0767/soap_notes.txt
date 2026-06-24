@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0767
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient experienced nervousness about undergoing the procedure (hysterectomy).
+- The patient reports that the procedure turned out better than expected.
+- The patient inquired about others of similar age who have had hysterectomies.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

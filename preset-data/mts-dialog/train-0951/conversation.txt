@@ -1,0 +1,4 @@
+Doctor: Do you take any meds?
+Patient: No.
+Doctor: Are you sure?
+Patient: Yes.

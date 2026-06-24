@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3149  |  gem_id: gem-cochrane-simplification-train-3150  |  doi: 10.1002/14651858.CD001922.pub3
+
+We found two randomised trials of graduated compression stockings, involving 2615 participants, and two small trials of intermittent pneumatic compression involving 177 participants. Graduated compression stockings were no better than 'best medical treatment' in reducing the risk of DVT after stroke. Stockings caused more skin problems (for example ulcers and blisters) on the legs. Intermittent pneumatic compression appeared promising but was not proven to be definitely beneficial. The evidence does not support routine use of graduated compression stockings or intermittent pneumatic compression in patients with a recent stroke. The trials that are ongoing at present should provide reliable evidence on the benefits and harms of intermittent pneumatic compression.

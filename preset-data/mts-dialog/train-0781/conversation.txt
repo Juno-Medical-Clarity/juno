@@ -1,0 +1,6 @@
+Doctor: Do you smoke?
+Patient: Yes, I do.
+Doctor: How much? I mean can you tell me approximate amount?
+Patient: Yes sure, I smoke half a pack a day.
+Doctor: How about alcohol and drugs?
+Patient: No, I do not drink or use. I have a five month old baby.

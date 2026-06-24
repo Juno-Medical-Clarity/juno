@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0035  |  gem_id: gem-cochrane-simplification-test-36  |  doi: 10.1002/14651858.CD004200.pub4
+
+This review compares 29 randomised controlled trials that used surgical by-pass, endoscopic metal stents or endoscopic plastic stents in patients with malignant bile duct obstruction. All included studies contained groups where cancer of the pancreas was the most common cause of bile duct obstruction. This review shows that endoscopic stents are preferable to surgery in palliation of malignant distal bile duct obstruction due to pancreatic cancer. The choice of metal or plastic stents depends on the expected survival of the patient; metal stents only differ from plastic stents in the risk of recurrent bile duct obstruction. Polyethylene stents and stainless-steel alloy stents (Wallstent) are the most studied stents.

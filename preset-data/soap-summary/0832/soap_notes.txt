@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0832
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has a family history of migraines: brother and grandfather have experienced migraines.
+- Patient inquires about the family history of migraines, indicating concern or interest in genetic predisposition.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1331
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has stopped taking her medications.
+- Blood pressure is out of control.
+- Patient is angry all the time.
+- Patient is not looking after herself.
+- Patient expresses a desire to try natural remedies for high blood pressure.
+- Patient refuses to take any prescription medications.
+
+Objective:
+- Blood pressure readings are noted to not look good (specific values not provided).
+
+Assessment:
+- Patient is hypertensive.
+- Non-compliance with medication regimen.
+
+Plan:
+- Document the patient's non-compliance in the medical file.

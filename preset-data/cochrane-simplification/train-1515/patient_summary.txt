@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1515  |  gem_id: gem-cochrane-simplification-train-1516  |  doi: 10.1002/14651858.CD004201.pub3
+
+No trials were found comparing these different methods with each other. Sometimes people using the catheters develop urinary tract infections. There was some weak evidence that using antibiotics all the time reduced the chance of having a urinary tract infection while using intermittent catheters, but there was not enough information about side effects.

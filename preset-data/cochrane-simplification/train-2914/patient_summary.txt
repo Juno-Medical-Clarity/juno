@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2914  |  gem_id: gem-cochrane-simplification-train-2915  |  doi: 10.1002/14651858.CD001442.pub2
+
+This review identified 19 studies involving a total of 2,159 participants that evaluated an intervention intended to improve adherence. Ten of these studies demonstrated a beneficial effect of the intervention. We found that interventions targeting practical medication management skills, those administered to individuals vs groups, and those interventions delivered over 12 weeks or more were associated with improved adherence to antiretroviral therapy. We also found that interventions targeting marginalized populations such as women, Latinos, or patients with a past history of alcoholism were not successful at improving adherence. We did not find studies that evaluated the quality of the patient-provider relationship or the clinical setting. Most studies had several methodological shortcomings.

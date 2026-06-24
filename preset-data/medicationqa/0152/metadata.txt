@@ -1,0 +1,5 @@
+drug_focus: Acebutolol Hydrochloride
+question_type: Information
+section_title: DESCRIPTION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff68a002-d46d-4f9f-0705-427844ea3655
+sample_id: 0152

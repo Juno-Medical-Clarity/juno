@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 0308
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Increased shortness of breath, difficulty breathing while sleeping, wheezing.
+- Severity: Difficulty catching breath this morning, difficulty breathing for the past week.
+- Duration: Symptoms have been present for the past week.
+- Associated symptoms: Wheezing since morning; no chest discomfort, acute chest pain, left arm pain, dizziness, or light-headedness reported.
+- Relevant medical history: Chronic lymphocytic leukemia; heart-related problems.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient expresses difficulty breathing and wheezing.
+
+Objective:
+- Physical examination findings: Mild peripheral edema noted.
+- Vital signs: Not provided.
+
+Assessment:
+- Diagnoses: Increased shortness of breath, wheezing, mild peripheral edema.
+- Differential diagnoses: Not explicitly mentioned.
+- Clinical impressions: No signs of cardiovascular accident or heart attack.
+
+Plan:
+- Treatment for mild peripheral edema needed.
+- Further management details: Not provided.

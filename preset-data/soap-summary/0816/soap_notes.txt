@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0816
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Father has a history of heart disease (coronary artery disease) and underwent heart bypass surgery at age sixty.
+- Father has had multiple strokes due to coronary artery disease.
+- Both parents are alive; father is in his eighties, mother is eighty years old and has dementia.
+- Patient does not smoke or drink alcohol.
+
+Objective: 
+(No objective data provided)
+
+Assessment: 
+(No assessment provided)
+
+Plan: 
+(No plan provided)

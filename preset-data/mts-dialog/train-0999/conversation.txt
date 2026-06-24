@@ -1,0 +1,4 @@
+Doctor: Have you ever had spine problems before?
+Patient: What, like an injury?
+Doctor: Well, it's broad. It could be an injury, or just any kind of pain.
+Patient: Oh, no. I've never had any problems.

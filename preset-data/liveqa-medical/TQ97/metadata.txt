@@ -1,0 +1,12 @@
+qid: TQ97
+source_file: 1-135646357.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Define Syncope (ischemic stroke)?
+nlm_summary: What is ischemic syncope stroke and how is it diagnosed?
+
+focus_entities:
+  [F1] (Problem) stroke ischemic
+question_types:
+  [T1] DIAGNOSIS

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0976  |  gem_id: gem-cochrane-simplification-train-977  |  doi: 10.1002/14651858.CD008514.pub2
+
+We looked for studies which compared steroid injections in the ear with placebo in patients with Ménière's disease or syndrome. Only one study satisfied the prespecified inclusion criteria for this review. This study demonstrated a benefit of this treatment for patients with Ménière's disease; at 24 months the patients in the treatment group had far fewer episodes of vertigo. The results of this review are encouraging, however as it is based solely on the results of a single study, further research is required.

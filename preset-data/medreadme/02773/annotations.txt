@@ -1,0 +1,8 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [12:13] 'medical-jargon-google-easy' -> 'statin'
+  [26:27] 'abbr-medical' -> 'SMI'

@@ -1,0 +1,6 @@
+Doctor: Lets talk about your ears. Any continuous ringing or thumping noises you may hear?
+Patient: No, nothing like that.
+Doctor: Any hearing problems?
+Patient: Um, no.
+Doctor: Any dizziness or spinning sensation?
+Patient: Nope.

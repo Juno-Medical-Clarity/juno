@@ -1,0 +1,1 @@
+We excluded quasi-RCTs and cross-over trials.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0297  |  gem_id: gem-cochrane-simplification-validation-298  |  doi: 10.1002/14651858.CD005279.pub4
+
+We identified seven studies, enrolling 767 patients that compared haemodialysis catheter insertion using the traditional 'blind' landmark method and insertion using ultrasound imaging. The use of ultrasound imaging was found to be associated with significantly less risk of arterial puncture and haematomas and less time to insert the catheter as well as a higher success rate for inserting the catheter on the first attempt.

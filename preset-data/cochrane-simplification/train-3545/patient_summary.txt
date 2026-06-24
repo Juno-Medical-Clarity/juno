@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3545  |  gem_id: gem-cochrane-simplification-train-3546  |  doi: 10.1002/14651858.CD006233.pub2
+
+We included 5 randomised trials with 662 participants out of 93 publications identified through the literature searches. The number of deaths was 47 in the wait-and-see group (334 patients) compared with 26 in the prophylactic cholecystectomy group (328 patients). This review of randomised clinical trials suggests that early removal of the gallbladder decreases the risk of death or of complications from gallstones. The number of patients (662) reviewed in this report prevents some of the subgroup analyses from being conclusive. Further clinical trials, particularly of high-risk patients, would solve this problem.

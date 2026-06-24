@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1055
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Memory loss problems
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: Seizures
+- Relevant medical history: Temporal lobe seizures, high blood pressure
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: None explicitly mentioned
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

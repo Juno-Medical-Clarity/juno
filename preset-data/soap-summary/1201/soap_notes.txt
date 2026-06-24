@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1201
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient had a surgical removal of multiple abscesses on the right thigh.
+- Reports having multiple extensive subcutaneous abscesses on the right thigh.
+- Mentions a massive open wound on the right thigh following the surgery.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

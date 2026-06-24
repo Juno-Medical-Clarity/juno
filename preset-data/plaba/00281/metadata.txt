@@ -1,0 +1,5 @@
+pmid:        28981362
+question:    22
+adaptation:  adaptation1
+title:       The ABCs of BHD: An In-Depth Review of Birt-Hogg-Dubé Syndrome
+sentences:   5

@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1106
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No health problems reported.
+- No primary care doctor.
+- Currently does not have health insurance.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

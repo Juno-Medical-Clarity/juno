@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0601
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello. Looks like we are here for a six months follow up. How are we doing? I have stayed relatively the same. My main complaint is that I feel tired throughout the day. The C P A P is doing fine and I wake up refreshed, but I don't like how I crash. Alright. How are the thyroid issues? I seem to be fine. My thyroid gland does not seem enlarged and I can breathe like normal. No fever or anything. Have you experienced any of the following: temperature intolerance, palpitations, muscle weakness, tremors, nausea, vomiting, constipation, or diarrhea? Nothing of the kind. How has you weight been? It has been stable. Any muscle weakness closest to the body's center? No, nothing like that. Not bad for forty five.

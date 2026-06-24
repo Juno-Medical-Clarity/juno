@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2714  |  gem_id: gem-cochrane-simplification-train-2715  |  doi: 10.1002/14651858.CD009135.pub2
+
+We found 24 studies, which contained information about five different rapid tests. A total of 4271 people participated in these studies. One of the rapid tests (called the rK39 immunochromatographic test) gave correct, positive results in 92% of the people with visceral leishmaniasis and it gave correct, negative results in 92% of the people who did not have the disease. This test worked better in India and Nepal than in east Africa. In India and Nepal, it gave correct, positive results in 97% of the people with the disease. In east Africa, it gave correct, positive results in only 85% of the people with the disease. A second rapid test (called latex agglutination test) gave correct, positive results in 64% of the people with the disease and it gave correct, negative results in 93% of the people without the disease. For the other rapid tests evaluated, there are too few studies to know how accurate they are.

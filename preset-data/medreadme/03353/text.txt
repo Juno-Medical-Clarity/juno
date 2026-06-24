@@ -1,0 +1,1 @@
+An important question is how a new event (such as a new food) is internally represented and maintained for a certain time so that it associates with a response (sickness) that occurs much later.

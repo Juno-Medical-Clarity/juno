@@ -1,0 +1,3 @@
+Doctor: Anybody else in your family suffers from this condition?
+Patient: No.
+Doctor: Okay.

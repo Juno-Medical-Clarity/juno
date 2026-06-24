@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0919
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- No family history of neurological disorders, such as multiple sclerosis, Parkinson's, or dementia. 
+- Patient expresses relief regarding the absence of neurological problems in the family.
+
+Objective: 
+- (No objective data provided)
+
+Assessment: 
+- (No assessment provided)
+
+Plan: 
+- (No plan provided)

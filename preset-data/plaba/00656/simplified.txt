@@ -1,0 +1,10 @@
+It is unknown if rescue therapy, or therapy given after an ailment does not respond to normal treatment, can avoid colectomy (removal of all or parts of colon) in patients treated for severe steroid-refractory ulcerative colitis. Steroid-refractory ulcerative colitis is chronic inflammatory bowel disease that no longer responds to steroid treatment.
+The aim of this study was to identify predictors of response to infliximab and cyclosporine A, drugs that aim to improve the immune system.
+In this study, 49 patients with severe ulcerative colitis were included.
+Response to therapy was characterized as three or more point reductions in Mayo score (a disease ranking system) after 6 months of treatment and avoidance of colectomy after 1 year. Increased Mayo score indicated worsened disease condition.
+The predictors evaluated were gender, age, time from ulcerative colitis diagnosis, months of steroid or/and azathioprine therapy before onset of the severe phase, smoking habits, extension of the disease, laboratory analyses and Mayo score. Azathioprine is a medication given to improve immune function.
+Patients treated with infliximab showed a statistically significant higher response rate in case of moderate Mayo score.
+Ex-smokers had very low chance of response to infliximab.
+In the group treated with cyclosporine A, patients with a higher volume of C-reactive protein had a response rate significantly higher than those with lower C-reactive protein volume. Patients with negative (no detected) C-reactive protein volume and moderate Mayo score did not responded to therapy. Patients with elevated C-reactive protein and/or severe Mayo score predominately respond. C-reactive protein is a type of protein found in the blood that increases during times of internal inflammation (redness and swelling from infection-fighting).
+This study suggests that cyclosporine A is advisable as treatment in ex-smokers.
+In never smokers or active smokers, infliximab can be prescribed in case of Mayo score ≤10 and/or negative CRP. However, cyclosporine A is indicated as a better option in case of Mayo score >10 and positive CRP.

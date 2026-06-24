@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1402
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Allergic rhinitis
+- Severity: Not explicitly mentioned
+- Duration: On and off
+- Associated symptoms: None explicitly mentioned
+- Relevant medical history: Patient has experienced sinus issues on and off
+- Family history: Not mentioned
+- Allergies: Not explicitly mentioned
+- Other concerns: Patient is unsure if they have had sinus issues before
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- Diagnosis: Allergic rhinitis
+- Differential diagnoses: Sinus infection (not diagnosed)
+
+Plan:
+- (No plan provided)

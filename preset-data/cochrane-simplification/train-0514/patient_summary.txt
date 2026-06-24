@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0514  |  gem_id: gem-cochrane-simplification-train-515  |  doi: 10.1002/14651858.CD002876.pub2
+
+The evidence from the trials in the review indicates that, compared with a placebo and ipratropium, tiotropium does reduce exacerbations and related hospitalisations and improves quality of life and symptoms in people with moderately severe COPD, although the evidence with regards to decline in lung function is less clear. Tiotropium caused dry mouth. Compared with other commonly used drugs in COPD, such as long-acting beta agonists (including salmeterol), there is not enough evidence for us to draw reliable conclusions. In order to better understand the effects of this drug we need long-term studies (over several years), studies conducted in mild and severe COPD, and additional studies that measure outcomes in relation to other agents used in the treatment of this condition.

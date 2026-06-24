@@ -1,0 +1,5 @@
+pmid:        25328387
+question:    9
+adaptation:  adaptation1
+title:       Effects of aural stimulation with capsaicin ointment on swallowing function in elderly patients with non-obstructive dysphagia
+sentences:   8

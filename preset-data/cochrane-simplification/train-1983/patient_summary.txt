@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1983  |  gem_id: gem-cochrane-simplification-train-1984  |  doi: 10.1002/14651858.CD006817.pub3
+
+Studies using animal models suggest that allopurinol (a drug commonly used for preventing gout) can reduce the level of brain damage following perinatal asphyxia. Three small randomised controlled trials that examined whether giving allopurinol to newborn infants following perinatal asphyxia affected their outcomes were identified. None of these trials provided any evidence of benefit. Larger trials are needed to exclude important effects on survival and disability.

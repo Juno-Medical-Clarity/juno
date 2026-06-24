@@ -1,0 +1,10 @@
+source:      pnas
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'prodrug metabolism'
+  [10:11] 'medical-jargon-google-easy' -> 'analogs'
+  [21:22] 'medical-jargon-google-easy' -> 'metabolism'
+  [23:26] 'medical-jargon-google-easy' -> 'mode of action'

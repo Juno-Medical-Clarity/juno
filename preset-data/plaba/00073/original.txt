@@ -1,0 +1,9 @@
+In the 1990s, selenium was identified as a component of an enzyme that activates thyroid hormone; since this discovery, the relevance of selenium to thyroid health has been widely studied.
+Selenium, known primarily for the antioxidant properties of selenoenzymes, is obtained mainly from meat, seafood and grains.
+Intake levels vary across the world owing largely to differences in soil content and factors affecting its bioavailability to plants.
+Adverse health effects have been observed at both extremes of intake, with a narrow optimum range.
+Epidemiological studies have linked an increased risk of autoimmune thyroiditis, Graves disease and goitre to low selenium status.
+Trials of selenium supplementation in patients with chronic autoimmune thyroiditis have generally resulted in reduced thyroid autoantibody titre without apparent improvements in the clinical course of the disease.
+In Graves disease, selenium supplementation might lead to faster remission of hyperthyroidism and improved quality of life and eye involvement in patients with mild thyroid eye disease.
+Despite recommendations only extending to patients with Graves ophthalmopathy, selenium supplementation is widely used by clinicians for other thyroid phenotypes.
+Ongoing and future trials might help identify individuals who can benefit from selenium supplementation, based, for instance, on individual selenium status or genetic profile.

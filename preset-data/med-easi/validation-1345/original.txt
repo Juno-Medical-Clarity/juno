@@ -1,0 +1,1 @@
+In electronics, a digital-to-analog converter ( DAC, D/A, D2A, or D-to-A ) is a system that converts a digital signal into an analog signal.

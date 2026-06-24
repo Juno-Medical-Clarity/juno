@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [15:17] 'medical-jargon-google-easy' -> 'clastogenic effect'
+  [20:21] 'abbr-medical' -> 'PLP'

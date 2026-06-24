@@ -1,0 +1,2 @@
+[IMAGING]
+Chest x-ray revealed a diffuse pulmonary edema.

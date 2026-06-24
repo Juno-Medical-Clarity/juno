@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:3] 'general-complex' -> 'Randomised controlled trials'
+  [4:5] 'abbr-general' -> 'RCTs'
+  [17:18] 'medical-jargon-google-easy' -> 'repositioning'
+  [25:26] 'abbr-medical' -> 'PU'

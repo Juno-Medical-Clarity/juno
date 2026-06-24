@@ -1,0 +1,5 @@
+drug_focus: vitamin D3
+question_type: Action
+section_title: Summary
+source_url: https://medlineplus.gov/vitamind.html
+sample_id: 0046

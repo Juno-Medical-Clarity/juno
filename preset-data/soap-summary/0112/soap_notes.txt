@@ -1,0 +1,65 @@
+# SOAP Notes — Sample 0112
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with 2-day history of new dry cough with occasional yellow sputum, shortness of breath, and fever with chills and night sweats
+- Cough and shortness of breath started 1.5 days ago, fever started around the same time
+- No hemoptysis
+- Sharp central chest pain on deep inspiration, lasting <1 minute, relieved by avoiding deep breaths
+- New wheeze
+- No palpitations
+- Dyspnea worse with exertion
+- No leg swelling or orthopnea
+- Sleeps with 1 pillow
+- No headache, eye redness/discharge, or sore throat
+- Nasal congestion started slightly before cough
+- Mild diffuse muscle aches
+- Fatigue for 3 days
+- No abdominal pain, nausea, vomiting, dysuria, or urinary frequency/urgency
+- Appetite slightly decreased
+- No weight loss, anosmia, dysgeusia, or skin changes
+- Tried acetaminophen and cough suppressants without relief
+
+PMHx:
+- Osteoporosis (on calcium, vitamin D, alendronate)
+- Remote hip fracture 2 years ago (recovered well)
+- Remote cholecystectomy
+- Remote PE post-cholecystectomy (no longer on anticoagulation)
+- Remote wisdom teeth extraction
+
+Medications:
+- Calcium
+- Vitamin D
+- Alendronate
+
+Allergies: NKDA
+
+SocHx:
+- Lives alone in apartment in London
+- CCAC worker assists with cleaning every 2 weeks
+- Son lives nearby, daughter lives 2 hours away (sees them monthly) 
+- Former smoker (1-2 cigarettes/day for 25 years), quit 5 years ago
+- Drinks 3 glasses of wine per week
+
+FHx:
+- Lung cancer, asthma, COPD on both sides of family
+- No family history of bleeding disorders or VTE
+
+Exposure Hx:
+- No known sick contacts
+- No recent travel
+
+Objective:
+- Vitals pending
+
+Assessment:
+- Likely community-acquired pneumonia
+- COVID-19 is on the differential
+
+Plan:
+- Check temperature, oxygen saturation
+- Obtain chest x-ray
+- Perform COVID-19 testing
+- Consider supplemental oxygen
+- Consider antibiotics
+- Observe for clinical deterioration and possible need for admission

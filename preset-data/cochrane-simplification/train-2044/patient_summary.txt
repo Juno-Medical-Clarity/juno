@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2044  |  gem_id: gem-cochrane-simplification-train-2045  |  doi: 10.1002/14651858.CD007207.pub2
+
+This review found that cervical preparation decreased the length of time necessary for an abortion procedure, but did not seem to decrease rates of uncommon abortion complications. The medication called misoprostol worked better with less side-effects than other similar medications. Misoprostol is most effective with the least side-effects when placed in the vagina, but when placed under the tongue it is equally effective. Another drug called mifepristone worked better than misoprostol; however, it is more expensive to use. All methods of preparation take at least 2-3 hours or more to work. The review could not determine whether women preferred one method best.

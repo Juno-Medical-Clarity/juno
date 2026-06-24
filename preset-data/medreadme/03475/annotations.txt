@@ -1,0 +1,8 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [10:12] 'medical-jargon-google-easy' -> 'adverse effects'
+  [13:15] 'medical-jargon-google-easy' -> 'corticosteroid injection'

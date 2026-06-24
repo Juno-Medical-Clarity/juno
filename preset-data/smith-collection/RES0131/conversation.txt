@@ -1,0 +1,202 @@
+# Smith Collection Transcript: RES0131
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi there i ive had this cough that started um three days ago and over these past couple of days ive just been really achy all over and so ive had a headache as well
+
+Doctor: Okay well im sorry to hear that youre not feeling well um the cough when did that start
+
+Patient: Yeah so that about three or four days ago um it started to come on yeah
+
+Doctor: Okay and then how about the headache
+
+Patient: Thats been more in the last two days
+
+Doctor: Two days okay and then the uh muscle ache
+
+Patient: Yeah its been there for about two yeah about two or three days i wake up in the morning and ive been feeling like really fatigued and achy
+
+Doctor: um the cough is it dry or youre bringing up phlegm
+
+Patient: Its its dry but its gotten a little bit worse since it started its just been happening more often
+
+Doctor: Okay and does it sound harsh
+
+Patient: uh maybe a little bit yeah
+
+Doctor: Okay is it getting worse do you think
+
+Patient: Yeah i think so
+
+Doctor: Okay are you experiencing any shortness of breath along with the cough
+
+Patient: uh a little bit after um if i have like a coughing fit thats bad enough but um for the most part ive been okay
+
+Doctor: Okay any wheeziness
+
+Patient: um no
+
+Doctor: No chest pain
+
+Patient: No
+
+Doctor: Okay do you ever feel like your hearts racing
+
+Patient: No i havent felt like that
+
+Doctor: Okay um any dizziness or fainting spells
+
+Patient: No
+
+Doctor: uh numbness or tingling
+
+Patient: No
+
+Doctor: uh confusion or memory loss
+
+Patient: No
+
+Doctor: This headache is it always there
+
+Patient: These past couple of days yeah its kind of it its been there its been a little bit more mild after using some tylenol or advil to help settle it down but i just have this yeah achiness in the front front of my forehead and kind of sides of my head
+
+Doctor: Yeah um sides of your head okay and 1 to 10 10 being the worst pain youve ever felt how how would you rate it
+
+Patient: A 4
+
+Doctor: A 4 okay so its not the worst headache youve ever had in your life
+
+Patient: No its not that bad its just been pretty annoying
+
+Doctor: Yeah um okay and have you like do you usually get headaches
+
+Patient: Not really it yeah i dont get them that often i guess they come when i i well get sick
+
+Doctor: Okay yeah that makes sense um have you had any fevers recently
+
+Patient: um i have felt a bit hot um and but i i didnt check my temperature and um yeah
+
+Doctor: Okay how about weight loss have you experienced any weight loss recently
+
+Patient: No ive been my weights been pretty stable
+
+Doctor: Okay um any rashes
+
+Patient: No i havent noticed any rashes
+
+Doctor: Okay um and any changes in your hearing or vision
+
+Patient: No
+
+Doctor: Runny nose or stuffy nose
+
+Patient: No
+
+Doctor: Sore throat
+
+Patient: um yeah now that you mention it i have had a little bit of a sore throat as well hasnt been too painful with um like swallowing uh foods or anything like that its kind of worse in the morning and its not so bad later on
+
+Doctor: Okay um alright how about changes in your smell or taste
+
+Patient: No nothing like that
+
+Doctor: um changes in your bowel movements
+
+Patient: No ive been uh regular
+
+Doctor: Okay um and then nausea or vomiting
+
+Patient: Nope i havent had anything like that
+
+Doctor: Okay um changes in your urine
+
+Patient: No ive had utis like one or two in the past um so i know what thats like so yeah everythings been normal
+
+Doctor: Okay good and are you otherwise healthy or do you have any longstanding medical conditions
+
+Patient: uh i have asthma which i will like asthma and allergies and ill use um just ventolin for that every like once in awhile but it hasnt bugged me too frequently
+
+Doctor: Okay um do you also take anything else for that asthma or is it just the ventolin that use
+
+Patient: Yeah just ventolin
+
+Doctor: Okay have you had any hospitalizations or surgeries in the past
+
+Patient: No well i ive had my my wisdom teeth taken out and actually yeah i had my tonsils out as well when i was 12
+
+Doctor: Okay um are you on any medications besides ventolin
+
+Patient: Yeah i i currently i think a birth control
+
+Doctor: Okay how long have you been on that for
+
+Patient: uh since high school so i yeah since i was 18 so eight years
+
+Doctor: Okay and um are you up to date with all your immunizations
+
+Patient: I am yeah i get the flu shot every year
+
+Doctor: Okay okay good any allergies
+
+Patient: uh yeah to cats and um like i think environmental triggers no medicines
+
+Doctor: No medicines okay any family history of lung or heart diseases
+
+Patient: um my grandfather had had a stroke when he was in his 70s and um but he was like a smoker and a drinker and didnt really look after himself very well unfortunately and uh but thats about it
+
+Doctor: Okay um and do you smoke
+
+Patient: No i dont
+
+Doctor: No okay any other recreational drugs like marijuana cocaine heroin or anything like that
+
+Patient: No i dont use anything like that
+
+Doctor: Okay how about um alcohol do you drink
+
+Patient: Yeah sometimes ill have a or maybe a cocktail on the weekend or um a glass of wine with dinners
+
+Doctor: Okay are you currently sexually active
+
+Patient: I am yeah with uh with my boyfriend um we use uh condoms as well
+
+Doctor: Okay so you use both condoms and youre on birth control so okay good thats a lot of protection um how long have you two been together
+
+Patient: um uh six months
+
+Doctor: Okay okay good and um any sick contacts recently
+
+Patient: um not that im aware of
+
+Doctor: No okay any travel recently
+
+Patient: Nope just been um going to or just been doing online uh classes im finishing up my masters right now
+
+Doctor: Okay okay wow congrats
+
+Patient: Thank you
+
+Doctor: um and where do you live and who do you live with
+
+Patient: Yeah so i live in an apartment downtown here um just with uh one of one of my friends whos a roommate
+
+Doctor: Okay and is everyone at home healthy
+
+Patient: Yeah she hasnt had any any symptoms any symptoms either
+
+Doctor: Okay okay well those were all the questions that i had for you did you have any questions um or anything that you wanted to bring up that i havent covered
+
+Patient: No thats it i was just uh i mean concerned about coviive been hearing about this new variant and stuff on the news so a little bit worried
+
+Doctor: Yeah for sure we will definitely um take a swab from you today and well see um what the results are you should hear back in about 24 to 48 hours but in the meantime you should self isolate for 14 days um and if its not coviif that comes back negative and um yeah some of your symptoms also sound like other typical viral symptoms so you could have one of the common strains thats going around this time of year so for that just its um you should just um do some supportive care you know staying hydrated eating well and if your symptoms become worse uh youre running a really high fever you have any neurological symptoms like weakness or seizures then you should seek help from the er how does that sound
+
+Patient: That sounds good thank you
+
+Doctor: Okay great thank you

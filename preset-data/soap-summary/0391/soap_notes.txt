@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 0391
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 66 years old.
+- Complains of right shoulder pain.
+- Pain is aggravated by movement of the shoulder.
+- No history of injury to the shoulder.
+- Denies weakness, numbness, or tingling.
+- Diabetes: can check blood sugar in the morning, usually less than 100.
+- Has not been checking blood sugar two hours after meals; states that when checked, it is normal.
+- No records of blood sugar levels available during the visit.
+- Patient had a benign breast biopsy on June 11, 2004, and has not had a repeat biopsy as recommended.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- Follow-up on the need for a repeat breast biopsy.
+- Encourage the patient to check blood sugar two hours after meals.
+- Assess need for further evaluation of shoulder pain in future visits.

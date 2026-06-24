@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0366
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports that their family is very healthy and does not have any known medical conditions that run in the family.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

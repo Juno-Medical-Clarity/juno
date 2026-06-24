@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3448  |  gem_id: gem-cochrane-simplification-train-3449  |  doi: 10.1002/14651858.CD000364.pub4
+
+One trial in 696 children assessed the benefits of injecting inactivated influenza vaccine (inactivated virus vaccines are the type currently used in the US and UK and cannot cause flu). There were no significant differences in the number of people experiencing an asthma attack (worsening of symptoms); however, there were better symptom scores (people reporting fewer asthma symptoms) in weeks in which children had a positive test for influenza, in those who had received the jab compared to those who did not. Two trials involved 1526 adults and 712 children who were given inactivated influenza vaccination, examined the harmful effects caused immediately after injection. These studies ruled out the likelihood of any more than four out of 100 people having a resultant asthma attack in the first two weeks after getting their flu jab. There was not enough information to compare different vaccination types.

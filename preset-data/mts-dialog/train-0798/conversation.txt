@@ -1,0 +1,3 @@
+Doctor: Does she lives with anyone?
+Guest_family: Yes, we all stay together, so just the immediate family. My parents, me and my sister.
+Doctor: Okay.

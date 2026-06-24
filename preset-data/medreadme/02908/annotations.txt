@@ -1,0 +1,6 @@
+source:      plos_pathogens
+side:        simple
+readability: 3.7
+split:       dev
+
+jargon_spans: (no jargon annotation found for this sentence)

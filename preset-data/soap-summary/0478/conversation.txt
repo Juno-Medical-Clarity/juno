@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0478
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you allergic to anything? Yes, I am allergic to eggs and peanuts. Oh, okay. Anything else? Any medication? No, nothing else. Alright.

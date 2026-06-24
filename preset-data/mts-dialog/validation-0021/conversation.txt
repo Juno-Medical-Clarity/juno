@@ -1,0 +1,10 @@
+Doctor: Do you smoke?
+Patient: No, I do not.
+Doctor: How about alcohol.
+Patient: No, I don't drink alcohol as well.
+Doctor: Okay let me ask you, do you have any children or are you married?
+Patient: No, I am single, thus no kids.
+Doctor: Okay, where do you work?
+Patient: I work as a payroll representative. I used to do a lot of work in jewelry business, with chemical.
+Doctor: interesting.
+Patient: Yeah.

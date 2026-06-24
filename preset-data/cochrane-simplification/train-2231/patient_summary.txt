@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2231  |  gem_id: gem-cochrane-simplification-train-2232  |  doi: 10.1002/14651858.CD004688.pub2
+
+This review investigated the effectiveness of any kind of psychological treatment conducted by paraprofessionals.The few studies found did not allow conclusions about the effect of paraprofessionals compared to professionals in the treatment of anxiety and depressive disorders. Pooling data from three studies, involving women only, indicated a significant effect for paraprofessionals compared to no treatment. The evidence so far may justify the development and evaluation of programs incorporating paraprofessionals in treatment programs for anxiety and depressive disorders.

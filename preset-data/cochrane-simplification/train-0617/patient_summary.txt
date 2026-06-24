@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0617  |  gem_id: gem-cochrane-simplification-train-618  |  doi: 10.1002/14651858.CD010047.pub2
+
+Characteristics of the included studies. The search of the medical literature was done in March 2014. We found two randomised controlled trials (RCTs) with 106 participants comparing oocyte vitrification versus slow freezing. Neither study reported live births or adverse events as outcomes. One reported ongoing pregnancy and both reported clinical pregnancy. Key results. The clinical pregnancy rate was higher in the oocyte vitrification group than in the slow freezing group. The effect of vitrification compared to slow freezing on ongoing pregnancy rates was only reported in the one small study, with inconclusive findings. Quality of the evidence. The quality of the evidence was rated as moderate for clinical pregnancy and low for ongoing pregnancy. The evidence was limited by imprecision.

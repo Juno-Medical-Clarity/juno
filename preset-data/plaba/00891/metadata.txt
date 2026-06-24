@@ -1,0 +1,5 @@
+pmid:        30066029
+question:    73
+adaptation:  adaptation2
+title:       Course of pain after total hip arthroplasty within a standardized pain management concept: a prospective study examining influence, correlation, and outcome of postoperative pain on 103 consecutive patients
+sentences:   10

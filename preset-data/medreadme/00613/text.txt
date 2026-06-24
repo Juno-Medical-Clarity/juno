@@ -1,0 +1,1 @@
+We find that the amount of variation between individual communities is a function of two rates relevant to how bacteria colonize the host intestine: the colonization rate and the birth rate.

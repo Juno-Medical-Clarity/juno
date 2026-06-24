@@ -1,0 +1,4 @@
+Doctor: Do you have major illnesses in the family like diabetes or high B P?
+Patient: No nothing. No major illnesses.
+Doctor: Okay.
+Patient: Yes.

@@ -1,0 +1,31 @@
+# SOAP Notes — Sample 0176
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 5-6 months, worsening
+- SOB for the last month, worse with exertion, also present at rest
+- Discomfort and pain with deep breaths for the last couple of weeks
+- Night sweats 1-2 times a week for the last couple of weeks to a month
+- Unintentional weight loss of 15 lbs in the last 2 months
+- PMHx: osteoarthritis, BPH, hypertension
+- Medications: lisinopril, Advil (as needed), tamsulosin
+- No known allergies
+- SocHx: lives alone, good support from children, independent in daily activities
+- Smoking history: 50-55 years, currently 1 pack/day for the last 20-30 years, previously up to 2 packs/day
+- No alcohol or recreational drug use
+
+Past Medical History:
+- Osteoarthritis
+- BPH
+- Hypertension
+
+Objective:
+- Vitals and physical exam to be performed
+- Labs to be done
+
+Assessment:
+- 
+
+Plan:
+- Investigations: physical exam, vitals, labs
+- Further management to be determined based on results

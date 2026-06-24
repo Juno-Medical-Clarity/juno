@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1798  |  gem_id: gem-cochrane-simplification-train-1799  |  doi: 10.1002/14651858.CD005270
+
+In this review we found that dietary, physical activity, or behavioral interventions produced significant improvements in weight among persons with prediabetes and a significant decrease in diabetes incidence. Modest, but not statistically significant improvements were noted in the few studies that examined blood sugar control, blood pressure, and lipid levels. No data on quality of life or mortality were found.

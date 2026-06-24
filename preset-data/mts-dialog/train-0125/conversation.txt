@@ -1,0 +1,4 @@
+Doctor: Hello, ma'am. How are you feeling today?
+Patient: I'm sad and depressed.
+Doctor: I'm sorry to hear that. Why do you feel that way?
+Patient: My cancer came back.

@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [18:20] 'medical-jargon-google-easy' -> 'protein variability'
+  [21:23] 'medical-jargon-google-easy' -> 'molecular diffusion'
+  [24:26] 'medical-jargon-google-easy' -> 'transcriptional noise'
+  [37:38] 'medical-jargon-google-easy' -> 'pH'

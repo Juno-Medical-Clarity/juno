@@ -1,0 +1,48 @@
+# SOAP Notes — Sample 0231
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with shortness of breath, wheezing, chest tightness, and cough for 1 day
+- Symptoms started after cleaning basement at parents' house for a couple of hours yesterday afternoon
+- Shortness of breath worse with exertion, improves with rest but still requires deep breaths
+- Wheezing and chest tightness present with deep breaths
+- Cough was mostly dry, no hemoptysis
+- No infectious symptoms (eye tearing, red eyes, rhinorrhea, sore throat)
+- Throat feels "disconstricted"
+- No loss of smell/taste, fevers/chills, GI symptoms, urinary symptoms, night sweats, weight changes, myalgias, or fatigue
+
+PMHx:
+- Asthma diagnosed at age 11-12, stable
+- Uses 2 inhalers: Ventolin (albuterol) PRN and a daily inhaler
+- Used Ventolin 3-4 times yesterday with partial relief
+- Last used Ventolin ~1 month ago prior to yesterday
+- Asthma triggers: pollen allergies in spring, cold weather in winter
+- Uses OTC allergy meds PRN
+- Eczema, uses topical steroid cream
+- No known drug allergies
+- Up to date on immunizations
+- ED visit at age 15 for severe asthma exacerbation, not hospitalized
+- No surgeries
+
+SocHx:
+- College student living with 3 roommates, none currently ill
+- Went to parents' house yesterday to clean basement, likely exposed to dust
+- Non-smoker, cannot tolerate smoke
+- Occasional marijuana use via edibles
+- Drinks 4-5 beers on weekends
+
+FHx:
+- Sister with asthma and eczema
+- Mother diagnosed with childhood asthma, now resolved
+- Maternal grandfather died of lung cancer (smoker)
+- No known family history of heart/lung conditions or cancers
+
+Objective:
+- Vitals not provided
+
+Assessment:
+- Likely asthma exacerbation triggered by dust exposure while cleaning
+
+Plan:
+- Trial more puffers
+- Advise to seek medical attention if breathing worsens

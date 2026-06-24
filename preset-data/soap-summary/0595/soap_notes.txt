@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0595
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Initial:
+
+Subjective:
+- Symptoms: Trouble breathing, tightness in chest
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: Tightness in chest after walking up stairs
+- Relevant medical history: Not mentioned
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: None mentioned
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

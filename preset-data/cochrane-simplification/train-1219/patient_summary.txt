@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1219  |  gem_id: gem-cochrane-simplification-train-1220  |  doi: 10.1002/14651858.CD003242
+
+This review aimed to test whether any anticoagulant regimen offers net advantages over antiplatelet agents, overall, or in specific categories of patients. There was no evidence that anticoagulants are superior to antiplatelet agents (in fact, anticoagulants caused a small increase in the number of deaths at long-term follow-up). However, the combination of low-dose anticoagulant and aspirin seemed to offer benefits over aspirin alone, and the combination should be investigated further.

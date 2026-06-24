@@ -1,0 +1,5 @@
+pmid:        30285362
+question:    17
+adaptation:  adaptation1
+title:       Abdominal Thrust Maneuver
+sentences:   10

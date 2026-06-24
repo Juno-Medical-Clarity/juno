@@ -1,0 +1,6 @@
+The aim of this study was to investigate if subfertility affects the first trimester levels of pregnancy-associated plasma protein-A (PAPP-A) and free beta-human chorionic gonadotrophin (β-hCG - a pregnancy hormone). From this, the study aimed to determine the risk estimates in Down syndrome screening.
+The study evaluated a cohort of 10,469 pregnant women. All of the participants underwent first trimester screening and responded to a questionnaire. The questionnaire focused on time-to-pregnancy (TTP), which was used as a measurement for subfertility.
+PAPP-A and free β-hCG levels were measured between gestational week 8 and 13. This data was related to TTP.
+PAPP-A and free β-hCG levels were significantly lower in women with a TTP ≥24 months compared with the reference group with a TTP <6 months.
+This led to an increased risk for trisomy (extra copy of a chromosome) for TTP ≥24 months compared with TTP <6 months. However, this risk was not statistically significant.
+Time-to-pregnancy ≥24 months in spontaneously conceived pregnancies is associated with decreased levels of PAPP-A and free β-hCG.

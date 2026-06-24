@@ -1,0 +1,7 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 3.7
+split:       test
+
+jargon_spans:
+  [9:12] 'general-complex' -> 'randomised controlled trial'

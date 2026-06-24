@@ -1,0 +1,3 @@
+Doctor: I just met with one of my patients whom I believe has pertussis.
+Guest_clinician: Second case of the day. What's their name and date of birth?
+Doctor: Hm give me a second to pull up their information.

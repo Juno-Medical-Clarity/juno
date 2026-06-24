@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Temperate phages'
+  [8:9] 'medical-jargon-google-easy' -> 'genome'
+  [16:17] 'medical-jargon-google-easy' -> 'lysogeny'

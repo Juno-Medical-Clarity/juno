@@ -1,0 +1,40 @@
+# SOAP Notes — Sample 0060
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with episodes of feeling like suffocating and unable to breathe, lasting 15-20 minutes (feels like chest is tight and unable to expand lungs, associated with chest pressure, sweating on face and neck, and heart racing; able to sense when episodes are about to come on; occur spontaneously and before job interviews)
+- Laid off due to pandemic and currently looking for a job, which has been nerve-wracking
+- Denies SOB with exertion (goes for a run daily without any issues)
+- Denies cough, wheezing, hemoptysis, infectious symptoms, headaches, fevers/chills, night sweats, weight loss, abdominal pain, diarrhea, nausea/vomiting, urinary symptoms, rashes/skin changes, or musculoskeletal symptoms
+- Reports low mood, sleeping more than usual, poor concentration, and lack of interest in activities since being laid off (worried about finances)
+- Denies feelings of guilt, psychomotor retardation, or suicidal ideation
+- Reports weight gain of 10 lbs since pandemic started (increased appetite and baking a lot at home)
+
+PMHx:
+- Depression (diagnosed as a teenager, previously treated with Prozac which was helpful, has been off medication for 12-13 years, feels depression may be returning)
+- Denies other medical conditions, medications, allergies, hospitalizations, or surgeries
+
+SocHx:
+- Lives with girlfriend
+- Denies sick contacts or recent travel
+- Denies smoking, alcohol use, or recreational drug use
+- Currently sexually active, no chance of pregnancy
+
+FHx:
+- Grandfather had lung cancer (heavy smoker)
+- Mother has depression
+- Denies family history of substance use
+
+Objective:
+- Vitals signs: Not provided
+- Physical examination: Not performed
+- Investigations: ECG planned
+
+Assessment:
+- Panic attacks
+- Rule out organic causes
+
+Plan:
+- Obtain ECG
+- Discuss previous traumas and current stressors to help manage stress
+- Consider restarting medication for depression

@@ -1,0 +1,9 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [2:3] 'general-complex' -> 'qualitative'
+  [6:7] 'general-complex' -> 'taxonomy'
+  [16:17] 'abbr-medical' -> 'NPSs'

@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1032
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Mother died of heart attack at age 70.
+- Father died of prostate cancer at age 80.
+- Brother had both heart disorder and prostate cancer and died at age 74.
+- Patient expresses concern regarding family medical history.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment information provided.)
+
+Plan:
+- (No plan information provided.)

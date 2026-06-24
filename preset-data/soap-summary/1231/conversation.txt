@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1231
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Smoke or drink? No and no.

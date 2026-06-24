@@ -1,0 +1,5 @@
+drug_focus: Miralax
+question_type: Usage/time
+section_title: WARNINGS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d69ce3d4-7ca4-4fe3-b49e-6655e48d6963
+sample_id: 0098

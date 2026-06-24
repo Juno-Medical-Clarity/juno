@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [10:11] 'medical-name-entity' -> 'NHS'
+  [13:19] 'medical-jargon-google-easy' -> 'advanced or metastatic renal cell carcinoma'
+  [20:21] 'abbr-medical' -> 'amRCC'

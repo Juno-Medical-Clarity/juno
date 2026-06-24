@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2695  |  gem_id: gem-cochrane-simplification-train-2696  |  doi: 10.1002/14651858.CD004356.pub3
+
+Short-term studies indicate that people with chronic obstructive pulmonary disease respond to the administration of oxygen when they do exercise tests. Ambulatory oxygen is the use of supplemental oxygen during exercise and activities of daily living. One way to assess if ambulatory oxygen is beneficial for a patient with COPD is to compare the effects of breathing oxygen and breathing air on exercise capacity. Some people with COPD may benefit more than others, and trials should take account of whether people who do not already meet criteria for domiciliary oxygen also respond. This review shows that there is strong evidence that ambulatory oxygen (short-term) improves exercise capacity. Further research needs to focus on which COPD patients benefit from ambulatory oxygen, how much oxygen should be provided and the long-term effect of ambulatory oxygen.

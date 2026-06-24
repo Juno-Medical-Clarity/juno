@@ -1,0 +1,5 @@
+drug_focus: aspirin 81 mg
+question_type: Ingredient
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2c75dadc-a7d3-0b6a-e054-00144ff8d46c
+sample_id: 0005

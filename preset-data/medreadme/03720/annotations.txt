@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'amino acids'
+  [6:8] 'medical-jargon-google-easy' -> 'maternal origin'
+  [10:12] 'medical-jargon-google-easy' -> 'embryonic developmental'

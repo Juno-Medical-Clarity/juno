@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0397
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, ma'am. How are you feeling today? I'm sad and depressed. I'm sorry to hear that. Why do you feel that way? My cancer came back.

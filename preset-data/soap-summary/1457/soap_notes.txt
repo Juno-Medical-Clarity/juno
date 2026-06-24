@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1457
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Family history: father and brother had colon cancer, daughter diagnosed with breast cancer at age 40. 
+- Personal medical history: heart condition, high blood pressure, history of stroke. 
+
+Objective: 
+- (No objective data provided.) 
+
+Assessment: 
+- (No clinician's interpretation provided.) 
+
+Plan: 
+- (No plan provided.)

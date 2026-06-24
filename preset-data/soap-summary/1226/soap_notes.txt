@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1226
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient is recovering well from a cerebrovascular accident (CVA).
+- The patient has diabetes mellitus.
+- The patient followed up for high sugar.
+- The patient brought a blood test report to the visit.
+
+Objective:
+- Blood test report presented by the patient.
+
+Assessment:
+- Diabetes mellitus.
+- Follow-up after CVA.
+
+Plan:
+- Review the blood test report.
+- Continue monitoring of diabetes management.

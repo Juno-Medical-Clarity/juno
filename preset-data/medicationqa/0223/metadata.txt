@@ -1,0 +1,5 @@
+drug_focus: Gabapentin, Pregabalin
+question_type: Comparison
+section_title: Lyrica (pregablin) vs. gabapentin (Neurontin) quick comparison
+source_url: https://www.medicinenet.com/lyrica_vs_gabapentin/article.htm#lyrica_pregablin_vs_gabapentin_neurontin_quick_comparison
+sample_id: 0223

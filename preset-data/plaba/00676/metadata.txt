@@ -1,0 +1,5 @@
+pmid:        30811826
+question:    52
+adaptation:  adaptation1
+title:       Epigenetics and genomics in Turner syndrome
+sentences:   9

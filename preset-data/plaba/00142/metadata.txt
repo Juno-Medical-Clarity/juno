@@ -1,0 +1,5 @@
+pmid:        15552918
+question:    12
+adaptation:  adaptation1
+title:       Toward asthma prevention--does all that really matters happen before we learn to read?
+sentences:   1

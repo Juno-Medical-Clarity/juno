@@ -1,0 +1,52 @@
+# SOAP Notes — Sample 0210
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presents with sinus problems and sinus infections
+- Feels like he has a sinus infection currently
+- Has been doing saline rinses but not helping much
+- Rinses producing greeny, gross mucus
+- Headache and feeling crappy
+- No cough or shortness of breath
+- Feels congested but no wheeziness
+- No sore throat like strep throat, but postnasal drip causing stinging sensation
+- No changes in vision or hearing
+- No weight loss
+- Temp last night was 99.7F
+- Facial pain/pressure/fullness in front part of face
+- Nasal obstruction and discharge
+- Smell intact but sometimes hard to smell due to congestion, improves after rinses
+- No chest pain
+- Bowel movements normal
+- No changes in urine
+- Gets sinus headaches in front of face, sometimes feels like it goes all over
+- No dizziness or fainting
+
+PMHx:
+- Otherwise healthy
+- Problems with knee (ACL) - sees orthopedic specialist
+- No other long-standing conditions
+- Medications: saline rinse, previously used nasal steroid spray but not recently, occasional Advil for knee pain
+- Surgeries: ACL repair surgery
+- ER visit once for bad sinus infection but no hospital stay
+- Immunizations up to date
+- Allergies: mild cat allergy
+- No FHx of lung or heart conditions
+- SocHx: Non-smoker, drinks 5-6 beers/weekend, occasional cannabis capsule (~once/month) for recreation and knee pain
+- No sick contacts, working from home
+- No recent travel
+- Lives with wife and teenage son, both healthy and working/schooling from home
+- No old carpets, smoke, asbestos, mold at home (new house)
+- Has a 3-year-old Labradoodle dog, sinus issues predate dog
+
+Objective:
+- Vitals: Temp 99.7F last night
+
+Assessment:
+- Acute bacterial rhinosinusitis
+
+Plan:
+- COVID swab, results in 24-48 hours
+- Prescribe antibiotics (amoxicillin) for 5-7 days
+- Prescribe inhaled corticosteroids
+- Follow-up in 1 week after trying both medications

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1412
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you still doing water aerobics? Yeah, I've been hitting the pool five days outta the week. How're you feeling? Have you noticed any changes in energy and strength? I feel a bit stronger now compared to when I first started. I'm also way, way more energized.

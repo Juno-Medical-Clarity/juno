@@ -1,0 +1,254 @@
+# Smith Collection Transcript: RES0017
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Ive been having this cough for around i would say half a year now and i just cant seem to get rid of it
+
+Patient: OK and does this cough have any phlegm that you bring up
+
+Doctor: No its completely dry i cant bring anything up
+
+Patient: OK and since the cough started has it been getting getting worse staying the same getting any better
+
+Doctor: It was pretty much the same for i would say like three or four months but then ive noticed it getting more frequent over the last couple of months
+
+Patient: OK and six months ago can you think of anything that that changed including like traveling anywhere or changing in in your work or or living environment
+
+Doctor: uh not really uh im like almost 75 years old now so i just thought it was probably just due to my age
+
+Patient: OK uh have you been have you brought up any blood with the cough
+
+Doctor: No ive never brought up any blood
+
+Patient: OK and have you have had any shortness of breath
+
+Doctor: Not that ive noticed but i do find that i get a little bit more tired with exercise than i used to but not really any shortness of breath
+
+Patient: OK um and have you been experiencing any other symptoms
+
+Doctor: I dont know if this is just due to old age but like ive noticed some joint pain as well like in my hands and feet i just assumed that was cause im getting old
+
+Patient: OK um and has there been anything thats made the cough worse
+
+Doctor: Sometimes when im exercising a lot more but not not too much its kind of just always been there hasnt really changed too much but its gotten more frequent over the last couple of months
+
+Patient: OK and anything thats made the cough better that youve tried
+
+Doctor: No nothing ive tried like everything ive tried tylenol cold ive tried other home remedies but like like steaming and everything like that but nothing has really helped
+
+Patient: OK and is the cough worse in the morning throughout the day or or at night
+
+Doctor: Its pretty much always there it doesnt really change with any time of the day
+
+Patient: OK and is the cough interfering with sleep
+
+Doctor: Yeah i sometimes i i do have coughing fits at night that wake me up i do have
+
+Patient: Disrupted sleep over the last few months
+
+Doctor: OK um and you mentioned some joint pains as well and then when did that those start
+
+Patient: I would say over the last year is when i started noticing it a lot more than before
+
+Doctor: OK have you been having joint stiffness or or muscle stiffness early in the morning
+
+Patient: It does get a little bit more stiff in the morning but its kind of just there throughout the day
+
+Doctor: OK have you noticed any red hot or or kind of swollen joints
+
+Patient: No nothing like that
+
+Doctor: OK any injuries to any of your limbs or or joints that could explain some of the pains
+
+Patient: There
+
+Doctor: No not that i know of nope
+
+Patient: OK um and how has your energy been have you been experiencing a lot of fatigue
+
+Doctor: Yeah i definitely have been more tired i cant really even go outside for a walk sometimes or i get really tired working in the garden so its been tough
+
+Patient: OK and when did that when did you notice that change and and how were you different before
+
+Doctor: Like before like before six months ago i remember i used to be able to go for long walks around the block then when i was gardening i can go on for hours but now im pretty its pretty limited to like maybe 1520 minutes and then i have to go back into the house
+
+Patient: I see ok so pretty big difference over the last six months to a year for you
+
+Doctor: Yeah
+
+Patient: Have you been experiencing any fevers or chills
+
+Doctor: Not really not that i know of
+
+Patient: OK how about uh excessive sweating at night
+
+Doctor: Nope
+
+Patient: Alright and how has your appetite been
+
+Doctor: My appetite has been around the same no changes there
+
+Patient: OK have you experienced any weight loss
+
+Doctor: Ive actually i think lost a couple pounds but not not too much
+
+Patient: OK would that be over the last six months or so
+
+Doctor: Yeah around the last i would say three to four months
+
+Patient: OK uh have you noticed any swollen glands anywhere like in your neck or anything like that you might feel like a lump
+
+Doctor: No not really
+
+Patient: OK have you had a sore throat or or runny nose
+
+Doctor: No i havent had a cold for more than two or three years i think
+
+Patient: OK about a loss of smell
+
+Doctor: No
+
+Patient: Loss of taste
+
+Doctor: No
+
+Patient: Alright have you been experiencing any chest pains
+
+Doctor: When the coughing gets pretty bad like i get some strain in my chest but nothing other than that
+
+Patient: Alright and any heart racing
+
+Doctor: Nope
+
+Patient: Alright and how about wheezing
+
+Doctor: No not really
+
+Patient: OK and have you noticed any swelling in your limbs like in your hands and your feet or ankles
+
+Doctor: No not really
+
+Patient: Alright at night have you had any periods where you woke up extremely short of breath and you had to sit on the edge of the bed with your feet over
+
+Doctor: No not that i remember
+
+Patient: OK and how many pillows do you sleep with
+
+Doctor: Just one same as before
+
+Patient: OK um and any abdominal pain
+
+Doctor: No no pain is just in my joints and sometimes in my muscles but other than that no
+
+Patient: OK any urinary problems like pain or or going really often
+
+Doctor: Nope
+
+Patient: Alright and then any changes to bowel habits like diarrhea or constipation
+
+Doctor: No not that i know of
+
+Patient: OK and have you noticed any skin rashes
+
+Doctor: uh nope
+
+Patient: OK and uh are there any joints in particular that are most affected
+
+Doctor: I would say like my legs and arms its its pretty much  lot of the joints not really affecting my hip but like everything else seems a bit sore
+
+Patient: OK and have you been diagnosed with any medical conditions in the past
+
+Doctor: No never ive been pretty fortunate
+
+Patient: OK so do you take any medications either prescription or over the counter
+
+Doctor: No just vitamins but nothing else
+
+Patient: Alright do you have any allergies
+
+Doctor: No not that i know of
+
+Patient: Have you been so you said youve been pretty healthy but have you been in the hospital for any reason recently
+
+Doctor: No
+
+Patient: OK um and are your immunizations up to date
+
+Doctor: Yeah i i got a shingles vaccine the one for pneumonia as well
+
+Patient: OK and have you traveled anywhere recently
+
+Doctor: No ive been at home
+
+Patient: OK um and in the family have you heard of anything like this happening in the family sort of way onset of this kind of shortness of breath and cough that youve been experiencing
+
+Doctor: Not really i i dont really have shortness of breath like its its like a dry cough sometimes i do find myself breathing more shallow yeah mostly its just a dry cough thats been going on
+
+Patient: OK and more of the fatigue
+
+Doctor: Yeah
+
+Patient: OK and anybody in the family have like autoimmune diseases like rheumatoid arthritis or or lupus
+
+Doctor: uh i dont really i cant really think of nothing my mom and dad were completely healthy so i know and i dont have any siblings so yeah not nothing that i know of
+
+Patient: OK uh any cancers in the family like colon cancer or anything like that
+
+Doctor: No no cancers
+
+Patient: OK um and could you tell me a little bit about your living situation
+
+Doctor: Yeah so right now i live alone in a small townhouse and yeah thats i have a pet dog but thats thats about it
+
+Patient: OK um and how do you support yourself financially
+
+Doctor: So im retired but getting a pretty good pension as well as for my a husbands pension as well but he unfortunately passed away a couple years ago
+
+Patient: Im sorry to hear that what did you say you retired what did you do for work previously did you have any exposures to chemicals or asbestos products while while at work
+
+Doctor: Not that i remember no it was it was a pretty pretty much like a desk job i would say
+
+Patient: OK um so no reasons that you were visiting farms and like being around birds or anything like that
+
+Doctor: um not really but i i do think like the old building that we lived in might have had asbestos does that does that like count at all
+
+Patient: Like a it could be important uh because uh well how long how long did you live there for
+
+Doctor: I would say almost 20 years
+
+Patient: OK so um yes that definitely would be is is important for the history today because unfortunately long term exposure to asbestos when breathing it in can cause some of the symptoms that youve been describing along with cough and uh respiratory symptoms so itll be something that well be sure to investigate today ok but i just had a couple more questions first do you smoke cigarettes
+
+Doctor: I quit long time ago more than like 10 years ago but i used to smoke like 5 to 10 cigarettes for around 20 years
+
+Patient: OK and do you smoke cannabis
+
+Doctor: No
+
+Patient: Alright do you drink alcohol
+
+Doctor: No not anymore
+
+Patient: OK and do you use any other recreational drugs
+
+Doctor: No
+
+Patient: Alright and are you currently sexually active
+
+Doctor: No
+
+Patient: Alright and have you had a sexually transmitted infection before
+
+Doctor: No
+
+Patient: OK so those are the questions that i wanted to go over to make sure i asked on history was there anything that else you wanted to tell me
+
+Doctor: No i think thats all
+
+Patient: OK so next well do your physical exam and order some investigations but currently thinking that it could be related to asbestos exposure as well as um something called well it could cause pulmonary fibrosis and then also the joint pains that youve been experiencing might be another symptom that is suggestive of a connective tissue disease and it doesnt sound like you have a family history of those but we will do some lab work and investigations for for those including a chest xray and a chest ct
+
+Doctor: Sounds good

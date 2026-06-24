@@ -1,0 +1,10 @@
+source:      pnas
+side:        simple
+readability: 5.7
+split:       test
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-hard' -> 'EZH2 inhibition'
+  [9:12] 'medical-jargon-google-hard' -> 'SMARCA4 mutant cancers'
+  [14:16] 'medical-jargon-google-easy' -> 'transcriptionally silence'
+  [17:20] 'medical-jargon-google-hard' -> 'paralog helicase SMARCA2'

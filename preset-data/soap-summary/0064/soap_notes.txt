@@ -1,0 +1,44 @@
+# SOAP Notes — Sample 0064
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Consistent cough for the past week
+- Asthma exacerbation
+- Using Ventolin (short-acting) almost daily, more than 10 times/day
+- Missed 2 days of school
+- Waking up from sleep due to symptoms (twice last week)
+- Wheezing on and off, especially after coughing
+- Dry cough
+- Symptoms triggered by exertion and cold air
+- No exposure to new environments (dust, mold, new animals)
+- No other symptoms (swollen throat, runny nose, SOB, blood in sputum, headaches, nausea, vomiting, dizziness, fainting, fevers, chills, chest pain, heart racing, changes in bowel movements, appetite, weight, sense of smell or taste)
+- Fatigue due to poor sleep
+
+Past Medical History:
+- PMHx: Asthma since age 5
+- Medications: Ventolin (short-acting), inhaled corticosteroid puffer (daily), multivitamins
+- Allergies: Strawberries and seaweeds (causes hives)
+- No other medical conditions
+- No hospitalizations or surgeries
+- No medication allergies
+
+Social History:
+- Lives with parents and 2 siblings (all healthy)
+- No alcohol, smoking, or recreational drug use
+- Feels safe at home and school, no bullying
+
+Family History:
+- No family history of heart or lung conditions
+
+Objective:
+- Full physical examination planned
+- Oxygen saturation to be checked
+
+Assessment:
+- Asthma exacerbation
+
+Plan:
+- Administer Ventolin
+- Consider corticosteroids
+- Reassess and possibly adjust puffer regimen
+- Full physical examination and oxygen saturation check

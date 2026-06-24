@@ -1,0 +1,9 @@
+Iron is a micronutrient essential for a wide range of metabolic processes in virtually all living organisms.
+During infections, a battle for iron takes place between the human host and the invading pathogens.
+The liver peptide hepcidin, which is phylogenetically and structurally linked to defensins (antimicrobial peptides of the innate immunity), plays a pivotal role by subtracting iron to pathogens through its sequestration into host cells, mainly macrophages.
+While this phenomenon is well studied in certain bacterial infections, much less is known regarding viral infections.
+Iron metabolism also has implications on the functionality of cells of the immune system.
+Once primed by the contact with antigen presenting cells, lymphocytes need iron to sustain the metabolic burst required for mounting an effective cellular and humoral response.
+The COVID-19 pandemic has boosted an amount of clinical and translational research over the possible influences of nutrients on SARS-CoV-2 infection, in terms of either susceptibility or clinical course.
+Here we review the intersections between iron metabolism and COVID-19, belonging to the wider domain of the so-called "nutritional immunity".
+A better understanding of such connections has potential broad implications, either from a mechanistic standpoint, or for the development of more effective strategies for managing COVID-19 and possible future pandemics.

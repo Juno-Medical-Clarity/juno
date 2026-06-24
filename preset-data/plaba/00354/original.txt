@@ -1,0 +1,8 @@
+Senescent cells, which arise due to damage-associated signals, are apoptosis-resistant and can express a pro-inflammatory, tissue-destructive senescence-associated secretory phenotype (SASP).
+We recently reported that a component of the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) surface protein, S1, can amplify the SASP of senescent cultured human cells and that a related mouse β-coronavirus, mouse hepatitis virus (MHV), increases SASP factors and senescent cell burden in infected mice.
+Here, we show that SARS-CoV-2 induces senescence in human non-senescent cells and exacerbates the SASP in human senescent cells through Toll-like receptor-3 (TLR-3).
+TLR-3, which senses viral RNA, was increased in human senescent compared to non-senescent cells.
+Notably, genetically or pharmacologically inhibiting TLR-3 prevented senescence induction and SASP amplification by SARS-CoV-2 or Spike pseudotyped virus.
+While an artificial TLR-3 agonist alone was not sufficient to induce senescence, it amplified the SASP in senescent human cells.
+Consistent with these findings, lung p16INK4a+ senescent cell burden was higher in patients who died from acute SARS-CoV-2 infection than other causes.
+Our results suggest that induction of cellular senescence and SASP amplification through TLR-3 contribute to SARS-CoV-2 morbidity, indicating that clinical trials of senolytics and/or SASP/TLR-3 inhibitors for alleviating acute and long-term SARS-CoV-2 sequelae are warranted.

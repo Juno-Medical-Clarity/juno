@@ -1,0 +1,196 @@
+# Smith Collection Transcript: MSK0032
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: um hi im here with my daughter uh we noticed that uh since yesterday shes been having this pain just in her elbow um and like today weve noticed right after she woke up shes been in pain and also just keeping her elbow like protected um kind of like just flexing it and just holding on to it so i think its uh giving her a lot of discomfort and shes been crying as well
+
+Doctor: Oh yeah for sure um when did this start
+
+Patient: I think it started uh after we went for a walk last uh evening um and we just went to the park and since then like shes been having that pain
+
+Doctor: Okay okay and did anything happen to trigger this did she fall on that arm or like injuries
+
+Patient: um i think like just uh she was playing and then um she was about to fall like right like right on to the playground pavement so i remember like but like i caught her right away so to protect her and then since then i dont know if like there was like a jerk movement as like i kind of pulled her back up or um when i was stopping her from falling like if that caused it but she didnt hit herself or anything like that
+
+Doctor: Okay alright um and in terms of the type of pain shes having right now did she say if it was a dull achy kind of pain or is it sharp
+
+Patient: She says its aching a lot
+
+Doctor: Okay and has it been constant since she um started experiencing this or does it come and go
+
+Patient: Its its been pretty constant since then and yeah she just kind of keep keeping shes kind of keep just keeping it like her arms extended um and then yeah just holding on to it
+
+Doctor: Okay um and then is the pain just in the elbow or does it radiate down into her hands or up to her shoulders
+
+Patient: um it kind of goes into her upper arm like from her elbows to her upper upper arm
+
+Doctor: Okay have you tried anything for this pain
+
+Patient: uh no i havent tried any medications or anything i just wanted to come in before i tried anything
+
+Doctor: Yeah 1 to 10 10 being the worst type of pain how bad is this pain for her
+
+Patient: I would say its probably at least a 7
+
+Doctor: Okay and then um has she ever experienced pain like this in the past
+
+Patient: um no this is the first time
+
+Doctor: Okay um and then does she have any numbness or tingling in the area
+
+Patient: um no not that i know of
+
+Doctor: Okay how about memory loss or confusion
+
+Patient: No
+
+Doctor: um any headaches
+
+Patient: Nope
+
+Doctor: um dizziness or fainting spells
+
+Patient: No
+
+Doctor: Any weight loss recently
+
+Patient: No
+
+Doctor: Fevers or chills
+
+Patient: Nope
+
+Doctor: uh rashes
+
+Patient: uh no
+
+Doctor: uh changes in vision hearing smell or taste
+
+Patient: No
+
+Doctor: uh any coughing shortness of breath or wheezing
+
+Patient: um no
+
+Doctor: uh any chest pain or heart palpitations
+
+Patient: No
+
+Doctor: uh any changes in bowel movements
+
+Patient: uh no
+
+Doctor: um how about changes in urine
+
+Patient: um no no no changes
+
+Doctor: Okay and is she otherwise healthy does she have any longstanding medical conditions
+
+Patient: Shes been healthy so far no concerns at all
+
+Doctor: Okay and um with her mothers pregnancy with her were there any complications at that point
+
+Patient: um no it was like a normal pregnancy no complications she was born at 39 weeks like with vaginal delivery didnt have to stay in the hospital or anything like that
+
+Doctor: Okay and no issues as a neonate
+
+Patient: uh no she we were able to bring her home pretty quick
+
+Doctor: Okay thats good um and then she hasnt had any hospitalizations or surgery since then
+
+Patient: No no surgeries or hospitalizations
+
+Doctor: Alright his she on any medications
+
+Patient: No no medications
+
+Doctor: Okay um is she uptodate with her immunizations
+
+Patient: Yeah weve had weve got all the immunization
+
+Doctor: Okay how about allergies does she have any
+
+Patient: um no allergies
+
+Doctor: Okay any uh family history of musculoskeletal issues
+
+Patient: Nope
+
+Doctor: uh lung or heart conditions
+
+Patient: Nope
+
+Doctor: um autoimmune conditions
+
+Patient: No
+
+Doctor: Cancers
+
+Patient: um nope
+
+Doctor: um is she like on par with her peers in terms of developments and reaching milestones
+
+Patient: uh no like shes been meeting all her milestones have been on par with her siblings and other children no concerns from the doctor whatsoever
+
+Doctor: Okay and who does she live with at home
+
+Patient: She lives with me her her dad and um we she has two siblings two older brothers
+
+Doctor: Okay um and does anyone at home smoke
+
+Patient: Nope
+
+Doctor: Any concerns for her safety at home
+
+Patient: No like were like no i dont think so
+
+Doctor: No okay and how are things at school for her
+
+Patient: Schools been well like its been difficult with the pandemic but um shes doing well
+
+Doctor: Okay thats good has she come in contact with anyone sick recently
+
+Patient: um no
+
+Doctor: Have you done any travel recently
+
+Patient: Nope
+
+Doctor: Okay alright and those are all the questions i had for history taking lets move on to the physical exam part of this interview um im just going to get you to take a look at both her elbows and arms do you see any um redness or swelling in the right elbow compared to the left
+
+Patient: No i dont see that no i dont see any changes
+
+Doctor: Okay how about um any muscle atrophy deformities or skin changes like bruises
+
+Patient: um no i dont see anything like that
+
+Doctor: Okay how about um when you palpate her elbows does is she in pain
+
+Patient: um she doesnt really let me but if i try to i think that does cause her some pain
+
+Doctor: Okay how about when you palpate her like forearm muscles
+
+Patient: um no not as much
+
+Doctor: Okay how about her biceps and triceps
+
+Patient: um no not really
+
+Doctor: No okay um alright and those are all the questions that i kind of had for you did you have any questions of your own for myself
+
+Patient: No i just wanted to find out if she broke something or like yeah i didnt know what was going on
+
+Doctor: Okay yeah it seems like someone of her age and just the kind of history that youre giving me it sounds like she has something called a radial head subluxation um and thats usually caused in young children when theyre like pulled or lifted by the hand or wrist while their arm is held straight um which can kind of pull the bone out of its socket a little bit um so um in terms of like a management plan you can try conservative things like ice packs um over the counter painkillers um otherwise we can try to um put the radius back into its normal position here which will just take uh like a few minutes um and and then after we reduce it back into its place um she should have normal function of her arm again um if shes still experiencing pain we can continue keeping it on a splint um but otherwise i dont think we need any imaging for this at this um at this time so did you have any questions or any concerns about that
+
+Patient: No i think thats um thats a good plan
+
+Doctor: Okay great um thank you
+
+Patient: Thank you

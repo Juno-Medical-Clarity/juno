@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1412
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Increased strength, increased energy
+- Severity: Not specified
+- Duration: Not specified (implied to be recent since starting water aerobics)
+- Associated symptoms: None mentioned
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Patient feels stronger and more energized since starting water aerobics.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

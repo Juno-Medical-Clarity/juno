@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1273  |  gem_id: gem-cochrane-simplification-train-1274  |  doi: 10.1002/14651858.CD009374.pub3
+
+It was difficult to properly assess the quality of the included trials because of poor reporting. We considered there to be a serious risk of bias due to poor study methods, and further uncertainty about the results because the studies were so small. We also considered the studies to be too short to adequately address our research question. Due to these factors, we considered the quality of the evidence to be very low. Given the limited amount of evidence of very low quality, we were not able to draw any conclusions about the effect of L-carnitine on cognitive function or its safety in healthy people. Larger, better-quality studies conducted over a longer period of time are needed to answer our review question.

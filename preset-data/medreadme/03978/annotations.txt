@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        simple
+readability: 3.7
+split:       test
+
+jargon_spans:
+  [29:31] 'medical-jargon-google-easy' -> 'binge drinking'

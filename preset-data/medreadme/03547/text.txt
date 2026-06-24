@@ -1,0 +1,1 @@
+In 89 general practices that shared data, we found marked variations and scope for improvement in adherence to several indicators (work package 2).

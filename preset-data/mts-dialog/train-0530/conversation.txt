@@ -1,0 +1,4 @@
+Doctor: Do you have any orthopedic conditions that run in your family that I should know about?
+Patient: What, like arthritis?
+Doctor: Yeah, does anything like that sound familiar?
+Patient: No, not that I know of.

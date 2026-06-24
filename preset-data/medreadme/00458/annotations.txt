@@ -1,0 +1,10 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [19:21] 'medical-jargon-google-easy' -> 'ursodeoxycholic acid'
+  [33:37] 'medical-jargon-google-easy' -> 'intrahepatic cholestasis of pregnancy'
+  [39:41] 'medical-jargon-google-easy' -> 'premature delivery'
+  [42:43] 'medical-jargon-google-easy' -> 'stillbirth'

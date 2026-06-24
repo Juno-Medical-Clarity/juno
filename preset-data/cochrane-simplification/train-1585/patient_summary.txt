@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1585  |  gem_id: gem-cochrane-simplification-train-1586  |  doi: 10.1002/14651858.CD000969.pub2
+
+The review found that lipid formulations of amphotericin B had fewer adverse effects (less nephrotoxicity and fewer dropouts) than conventional amphotericin B. However, it is not clear whether there are any advantages of these formulations if conventional amphotericin B is administered under optimal circumstances.

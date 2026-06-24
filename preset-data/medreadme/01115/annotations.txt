@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-easy' -> 'antipsychotics'
+  [12:14] 'medical-jargon-google-easy' -> 'antipsychotic drugs'
+  [15:16] 'medical-jargon-google-easy' -> 'fluphenazine'
+  [25:27] 'medical-jargon-google-easy' -> 'movement disorders'
+  [32:33] 'medical-jargon-google-easy' -> 'tremors'

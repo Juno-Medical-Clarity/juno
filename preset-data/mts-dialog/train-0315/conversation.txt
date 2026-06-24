@@ -1,0 +1,6 @@
+Doctor: Do you have sugar or blood pressure problems?
+Patient: Oh, I have high blood pressure but it's well under control. I make sure to keep it under normal range.
+Doctor: Good. Any other health issues?
+Patient: Yeah, I have history of high triglycerides. But otherwise, I am pretty healthy.
+Doctor: Okay. Do you smoke?
+Patient: No.

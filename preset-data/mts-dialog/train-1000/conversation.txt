@@ -1,0 +1,2 @@
+Doctor: Any past medical history?
+Patient: No.

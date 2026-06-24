@@ -1,0 +1,5 @@
+pmid:        28480041
+question:    62
+adaptation:  adaptation2
+title:       Risk of QT prolongation and torsade de pointes associated with exposure to hydroxyzine: re-evaluation of an established drug
+sentences:   8

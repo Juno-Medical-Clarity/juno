@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1005
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you use tobacco? What, like smoke cigarettes? Yes ma'am, do you? Oh, no. I don't do anything like that.

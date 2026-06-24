@@ -1,0 +1,11 @@
+STE20 (Sterile 20)/SPS-1 related proline/alanine-rich kinase (SPAK) and oxidative stress-response kinase-1 (OSR1) activate the renal cation cotransporters Na(+) -K(+) -2Cl(-) cotransporter (NKCC2) and Na(+) -Cl(-) cotransporter (NCC) via phosphorylation.
+Knockout mouse models suggest that OSR1 mainly activates NKCC2, while SPAK mainly activates NCC, with possible cross-compensation.
+We tested the hypothesis that disrupting both kinases causes severe polyuria and salt-wasting by generating SPAK/OSR1 double knockout (DKO) mice.
+DKO mice displayed lower systolic blood pressure compared with SPAK knockout (SPAK-KO) mice, but displayed no severe phenotype even after dietary salt restriction.
+Phosphorylation of NKCC2 at SPAK/OSR1-dependent sites was lower than in SPAK-KO mice, but still significantly greater than in wild type mice.
+In the renal medulla, there was significant phosphorylation of NKCC2 at SPAK/OSR1-dependent sites despite a complete absence of SPAK and OSR1, suggesting the existence of an alternative activating kinase.
+The distal convoluted tubule has been proposed to sense plasma [K(+) ], with NCC activation serving as the primary effector pathway that modulates K(+) secretion, by metering sodium delivery to the collecting duct.
+Abundance of phosphorylated NCC (pNCC) is dramatically lower in SPAK-KO mice than in wild type mice, and the additional disruption of OSR1 further reduced pNCC.
+SPAK-KO and kidney-specific OSR1 single knockout mice maintained plasma [K(+) ] following dietary potassium restriction, but DKO mice developed severe hypokalaemia.
+Unlike mice lacking SPAK or OSR1 alone, DKO mice displayed an inability to phosphorylate NCC under these conditions.
+These data suggest that SPAK and OSR1 are essential components of the effector pathway that maintains plasma [K(+) ].

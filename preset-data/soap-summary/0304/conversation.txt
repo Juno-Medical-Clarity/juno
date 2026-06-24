@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0304
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+You okay there? Uh yeah, sorry. I'm just trying to adjust the stretcher. Want some help? No, thank you. I think I got it. So how're you doing? Fine, but I have this weird lump in my chest. When did you first notice it? It's been there for a while. I'd say almost half a year. Have you seen anyone for it? No, not until now. Is it causing you pain? And has it changed in size at all? Not really. It's just noticeable when I run my fingers over it. Have you spotted any swelling or redness to the area? Any drainage? No. I see. Okay. Let me take a look and then I'll have you walk down the hall to get an Xray so we can see what's going on.

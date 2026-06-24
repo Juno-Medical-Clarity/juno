@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 1207
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Stomach aches, severe pain in the stomach area, hard to urinate, painful urination.
+- Severity: Severe pain in the stomach area; additional pain associated with urination.
+- Duration: Sudden onset of stomach pain.
+- Associated symptoms: A few days prior, patient had fever.
+- Relevant medical history: Patient suffers from dementia; episodes of forgetting things, sometimes feels lost.
+- Family history: Patient is eighty years old; no specific family history mentioned.
+- Allergies: No allergies mentioned.
+- Concerns: Family member is concerned about the patient's sudden onset of stomach pain.
+
+Objective:
+- CT Scan report indicates: 
+ - Dilated bladder with thick wall suggesting an outlet obstruction.
+ - Bilateral hydronephrosis and hydroureter.
+- Previous treatment: Administered IV fluids and antibiotics by the emergency room doctor.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided by the clinician.
+
+Plan:
+- Further treatment to be determined based on provided history and CT scan results.
+- No specific actions, medications, tests, or follow-up mentioned in the conversation.

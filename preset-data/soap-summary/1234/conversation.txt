@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1234
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke? Yeah, I smoke weed every now and again. It helps with my anxiety. How about cigarettes? No, not the least bit interested in cigs. Good to keep it that way.

@@ -1,0 +1,6 @@
+Purpose: The aim of the study was to determine which diagnostic modality [Computerized Tomography (CT), Magnetic Resonance Imaging (MRI), or ultrasound (US)] is more precise in terms of sensitivity and specificity in diagnosing inguinal hernia and sub-type of inguinal hernia (direct or indirect).
+Results: Bubble charts depicting the size of each patient cohort and percentual range for both sensitivity and specificity showed that US was better than CT and MRI in diagnosing inguinal hernia.
+Bubble charts for US and CT depicted high values within the studies that reported sensitivity and specificity in diagnosing type of hernia.
+Conclusions: We found that US had the highest sensitivity and specificity.
+However, it must be taken into consideration that performance is highly dependent on the operator's level of expertise.
+Based on this systematic review, ultrasound may be the preferred imaging modality when physical examination is inconclusive, given that local expertise in performing US examination for hernia disease is adequate.

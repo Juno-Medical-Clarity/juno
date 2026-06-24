@@ -1,0 +1,14 @@
+Increase plasma, or blood, homocysteine has been identified as a risk factor for hypertension (high blood pressure). Homocysteine is a chemical your body produces to help make proteins.
+An identified genetic variation or gene type within the human population is a major determinant of hyperhomocysteinemia. Hyperhomocysteinemia is a condition with excess homocysteine in the blood. The condition can result in endothelial dysfunction, or a heart disease where the blood vessels narrow instead of opening.
+Angiotensin-converting enzyme (ACE) inhibitors are a type of drug commonly used to treat high blood pressure. ACE Inhibitors appear to fix the endothelial (or blood vessel lining) dysfunction and allow blood vessels to open.
+The presence of the genetic variation in specific bodily locations that metabolize or digest drugs, such as enzymes and receptors, may influence how well a drug works.
+The goal of this study was to investigate if short-term blood pressure control by an ACE inhibitor (Benazepril) is effected by the identified genetic variation.
+A total of 444 hypertensive patients, aged 27 to 65 years, without any anti hypertensive therapy within 2 weeks were included.
+All patients were treated with Benazepril with a single, daily dose of 10 mg for 15 consecutive days.
+Blood pressures were measured prior to the study beginning (baseline) and on the 16th day of treatment.
+The unique genetic variation has three unique "versions" or genotypes, known as CC, CT, or TT. Among the patients, the frequency of the genetic variation genotype CC, CT, and TT was 24.3%, 51.8%, and 23.9%, respectively.
+In a statistical analysis, several blood pressure measurements were higher in patients with the TT genotype than those with the CT or CC genotype.
+The authors further divided all patients into three groups based on where their diastolic blood pressure response (DeltaDBP) fell within a population scale. Diastolic blood pressure is the lowest pressure when the heart is relaxed.
+Patients with the highest DeltaDBP had the highest chance of having the TT genotype.
+However, baseline systolic blood pressure (when the heart is contracting) was not significantly associated with the unique genetic variation.
+This study suggests that the unique genetic variation altered baseline DBP by short-term treatment of ACE inhibitor in hypertensive patients.

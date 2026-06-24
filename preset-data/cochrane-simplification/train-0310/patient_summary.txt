@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0310  |  gem_id: gem-cochrane-simplification-train-311  |  doi: 10.1002/14651858.CD009583.pub2
+
+In this review, we investigated how well nalbuphine worked, compared to placebo and other opioids, in children with postoperative pain. We also looked at the side effects. We performed a systematic literature search in July 2013. Ten randomised controlled trials with 658 patients were included. The patients were children aged from 0 - 18 years and most did not have any other relevant medical conditions. The overall quality of evidence was low, so this review could not definitively show that nalbuphine is better than placebo. The same holds true for the comparison with other opioids (morphine, tramadol, pethidine, piritramid). We were not able to comment on side effects due to the small numbers of participants in the trials. Future studies need to address these issues, including more robust data for effectiveness and side effects.

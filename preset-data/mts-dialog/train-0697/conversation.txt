@@ -1,0 +1,6 @@
+Doctor: Where do you work?
+Patient: I'm a truck driver. It's a big construction company. I work for them.
+Doctor: Do you smoke?
+Patient: Yeah.
+Doctor: Cigarette or something else?
+Patient: I do Cigar.

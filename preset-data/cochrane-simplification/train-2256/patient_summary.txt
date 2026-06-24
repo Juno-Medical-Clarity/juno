@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2256  |  gem_id: gem-cochrane-simplification-train-2257  |  doi: 10.1002/14651858.CD007016.pub2
+
+We looked for evidence from randomised controlled trials that investigated TPD versus other forms of dialysis for people with AKI. Only one study of enrolling 87 participants was found that compared TPD with continuous equilibrating PD (CEPD). This study showed that TPD produced higher solute clearances in less time with greater protein loss than CEPD, but did not report how well patients recovered kidney function, nor if any people died. There was insufficient evidence to determine if TPD is better or worse than other types of PD for patients with AKI.

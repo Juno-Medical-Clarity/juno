@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1217
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Can you tell me more about your family history, ma'am? How is your father doing? Well, doctor, my father passed away from leukemia a while back. I'm so sorry to hear that. What about your mother? How is she doing? She died too. She had kidney and heart failure. I'm sorry, ma'am. Oh, it's okay doctor, thank you. Do you have any siblings? Yes, I have two brothers and five sisters. That's a big family, do they have any conditions that you know about? One of my sisters has breast cancer. Okay, thank you. Do you have any children? Yeah, I have two sons and a daughter. That's great. Do you have any other conditions I should know about? Well, in addition to all of that, there's some high cholesterol, um, depression, and a nervous condition.

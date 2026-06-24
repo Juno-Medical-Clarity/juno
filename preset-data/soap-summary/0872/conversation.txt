@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0872
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, sir. How are you doing today? I'm flustered. I brought my wife so she can speak for me. Hello, ma'am. What seems to be the problem with your husband? Guest_family: He's been having some problems with his skin in his private region. He's too shy to talk about it himself.

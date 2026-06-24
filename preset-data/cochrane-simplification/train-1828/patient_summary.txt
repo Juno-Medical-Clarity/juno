@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1828  |  gem_id: gem-cochrane-simplification-train-1829  |  doi: 10.1002/14651858.CD000075
+
+The review of four small trials found that there was no large difference between the drugs in the short term. There is not enough evidence to exclude a small difference in benefit, long term effects or a difference in less common adverse effects. More research is needed into the long term and adverse effects of these drugs.

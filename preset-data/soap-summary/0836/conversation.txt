@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0836
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you had any surgical procedures done? Yes, in fact I had a hysterectomy back in March of ninety nine. I believe it was done on the twentieth of the month. Got it.

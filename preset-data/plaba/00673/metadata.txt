@@ -1,0 +1,5 @@
+pmid:        28627089
+question:    52
+adaptation:  adaptation1
+title:       Analysis of PTPN22, ZFAT and MYO9B polymorphisms in Turner Syndrome and risk of autoimmune disease
+sentences:   8

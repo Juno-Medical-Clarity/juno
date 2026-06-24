@@ -1,0 +1,9 @@
+We studied the immune response after primary and booster immunization for coronavirus disease 2019 (COVID-19) variants. We evaluated the differences in disease resistance based upon blood levels of neutralizing antibodies (antibodies that inactivate the virus) against the variants.
+Participants aged 18 - 59 years old received two doses of inactivated COVID-19 vaccine, 14 days apart, and a booster dose after 12 months.
+Blood samples were collected before vaccination, 1 and 6 months after primary immunization, and several times within 21 days of booster dose.
+Neutralizing antibodies against the spike protein of the Wuhan-Hu-1 variant and three other variants were measured.
+Out of 400 enrolled participants, 387 completed visits scheduled within 6 months of the second dose, and 346 participants received the booster dose in the follow-up research.
+After 1 month of primary immunization, blood levels of neutralizing antibodies peaked for Wuhan-Hu-1, while blood levels against other variants were lower.
+After 6 months of primary immunization, blood levels against all strains were reduced.
+After 3 days of booster immunization, blood levels were unchanged. However, blood levels increased approximately 50% after 7 days, and peaked at 14 days for all strains.
+Two doses of inactivated COVID-19 vaccine produced neutralizing antibodies and immunity, and high levels of neutralizing antibodies against the variants after booster immunization could further improve the effectiveness of the vaccine.

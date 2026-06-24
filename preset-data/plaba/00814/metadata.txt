@@ -1,0 +1,5 @@
+pmid:        31626989
+question:    65
+adaptation:  adaptation2
+title:       Prenatal Omega-3 and Omega-6 Polyunsaturated Fatty Acids and Childhood Atopic Dermatitis
+sentences:   12

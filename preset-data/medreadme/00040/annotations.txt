@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [11:14] 'abbr-medical' -> 'ara - C'
+  [37:39] 'medical-jargon-google-easy' -> 'replication forks'
+  [51:52] 'general-complex' -> 'resumption'

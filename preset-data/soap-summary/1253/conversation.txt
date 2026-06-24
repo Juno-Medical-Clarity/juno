@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1253
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you experienced any headaches or blackouts recently? No. Dizziness or seizure? Nope. Any history of stroke? No. Okay, good.

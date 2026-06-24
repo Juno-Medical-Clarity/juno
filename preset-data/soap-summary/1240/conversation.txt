@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1240
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Can you tell me more about your family medical history, sir? How's your dad doing? Well, doctor, he passed away. He had mesothelioma. I'm so sorry to hear that, sir. How is your mother? It's okay, thank you. I lost her too. She had A L S. I'm sorry, that must be so hard. Yes, it is, but I manage.

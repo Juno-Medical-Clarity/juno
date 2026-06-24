@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1092
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports a family history of migraines; mother experiences migraines.
+- Patient expresses concern about whether migraines run in the family.
+- No family history of blood clots reported.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

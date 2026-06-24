@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1395
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Feeling depressed.
+- Duration: Ongoing (no specific duration mentioned).
+- Associated symptoms: None explicitly mentioned.
+- Relevant medical history: None mentioned.
+- Family history: Parents were fighting for a long time and are now divorced.
+- Living situation: Hops between dad's house and mom's house.
+- Emotional concerns: Expresses difficulty with parents' divorce.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education mentioned.)

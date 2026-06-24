@@ -1,0 +1,5 @@
+pmid:        26277597
+question:    12
+adaptation:  adaptation1
+title:       Neutrophils in respiratory syncytial virus infection: A target for asthma prevention
+sentences:   9

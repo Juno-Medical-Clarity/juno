@@ -1,0 +1,5 @@
+pmid:        34540426
+question:    48
+adaptation:  adaptation1
+title:       Secukinumab on Refractory Lupus Nephritis
+sentences:   8

@@ -1,0 +1,5 @@
+drug_focus: heroin
+question_type: Action/time
+section_title: Drug Testing for Heroin
+source_url: https://americanaddictioncenters.org/heroin-treatment/how-long-in-system/
+sample_id: 0261

@@ -1,0 +1,6 @@
+In the ongoing coronavirus disease 2019 (COVID-19) pandemic, one potential cause of concern is that some discharged COVID-19 patients are testing positive again for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) RNA.
+To better understand what is happening and to provide public health policy planners and clinicians timely information, we have searched and reviewed published studies about discharged patients testing positive again for the SARS-CoV-2 RNA.
+Our search found 12 reports, all of which described patients in China.
+Our review of these reports indicates the presence of discharged patients who remain asymptomatic but test positive.
+However, it is unclear whether they are contagious because a positive reverse transcriptase - polymerase chain reaction (RT- PCR) test does not necessarily indicate the presence of replicating and transmissible virus.
+Our review suggests the need for timely, parallel testing of different samples, including, for example, fecal specimens, from COVID-19 patients before and after they are discharged from hospitals.

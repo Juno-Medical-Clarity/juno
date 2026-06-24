@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 1376
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the hip, groin pain, difficulties with activities
+- Severity: Severe pain as indicated by the need for a cane and pain medication
+- Duration: Pain for about eight to ten years, persistent since the twenties
+- Associated Symptoms: Pain radiates into legs, difficulties on and off
+- Relevant Medical History: Previous diagnoses of low back pain and radiculopathy; prior treatment with pain medicine and discussion of surgery; taken antibiotic steroids before
+- Family History: Not mentioned
+- Allergies: Not mentioned
+- Concerns: Seeking another opinion on surgical options (hip resurfacing or hip replacement)
+
+Objective:
+- X-rays show severe degenerative changes and avascular necrosis of the femoral head
+- Patient uses a cane for mobility
+
+Assessment:
+- Previous diagnoses of low back pain and radiculopathy
+- Current condition appears to involve severe hip issues due to degenerative changes and avascular necrosis
+
+Plan:
+- Further evaluation and opinion regarding surgical options (hip resurfacing or hip replacement)
+- Consideration of referral to a specialist for surgery
+- Discuss pain management options and potential next steps for treatment

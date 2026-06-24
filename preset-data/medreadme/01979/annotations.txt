@@ -1,0 +1,7 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [23:27] 'medical-jargon-google-easy' -> 'total knee replacement surgery'

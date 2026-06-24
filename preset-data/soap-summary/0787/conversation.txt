@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0787
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+And are you working? Ah yes, I am a painter. Okay good. Do you smoke? Yes, I do. Hm and how much do you smoke? Well, about two packs a day. And how about alcohol, do you drink? No sir, I don't drink. Any drugs? You mean like cocaine and stuff? Yeah. No, no drugs.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2814  |  gem_id: gem-cochrane-simplification-train-2815  |  doi: 10.1002/14651858.CD004853.pub2
+
+In this review we included seven small trials, involving a total of 153 participants, that examined psychotherapeutic treatments for depression in older people. Five trials compared a form of cognitive behavioural therapy (CBT) against control conditions, and the findings showed that CBT was more effective than control. Two individual trials compared CBT against psychodynamic therapy, with no significant difference in effectiveness indicated between the two approaches. Our review shows that there is relatively little research in this field and care must be taken in generalising what evidence there is to clinical populations.

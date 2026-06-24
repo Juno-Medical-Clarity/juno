@@ -1,0 +1,1 @@
+Infectious disease monitoring systems worldwide are often threatened by severe reporting delays, hindering resource planning efforts, particularly for endemic diseases like malaria and in remote localities.

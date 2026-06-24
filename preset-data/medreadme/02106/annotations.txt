@@ -1,0 +1,13 @@
+source:      plos_genetics
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [3:6] 'medical-jargon-google-hard' -> 'attL recombination region'
+  [9:11] 'medical-jargon-google-hard' -> 'integrase promoter'
+  [14:15] 'medical-jargon-google-hard' -> 'integrase'
+  [16:17] 'abbr-medical' -> 'RDF'
+  [24:25] 'medical-jargon-google-easy' -> 'promoter'
+  [26:28] 'medical-jargon-google-hard' -> 'lytic induction'
+  [31:33] 'medical-jargon-google-easy' -> 'lambda prophage'

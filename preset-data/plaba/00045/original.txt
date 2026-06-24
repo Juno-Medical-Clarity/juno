@@ -1,0 +1,14 @@
+Introduction: Maturity onset diabetes of the young (MODY) is a rare form of monogenic diabetes.
+Being clinically and genetically heterogeneous, it is often misdiagnosed as type 1 or type 2 diabetes, leading to inappropriate therapy.
+MODY is caused by a single gene mutation.
+Thirteen genes, defining 13 subtypes, have been identified to cause MODY.
+A correct diagnosis is important for the right therapy, prognosis, and genetic counselling.
+Material and methods: Twenty-nine unrelated paediatric patients clinically suspected of having MODY diabetes were analysed using TruSight One panel for next-generation sequencing (NGS) and multiplex ligation-dependent probe amplification (MLPA) assay.
+Results: In this study we identified variants in MODY genes in 22 out of 29 patients (75.9%).
+Using two genetic tests, NGS and MLPA, we detected both single nucleotide variants and large deletions in patients.
+Most of the patients harboured a variant in the GCK gene (11/22), followed by HNF1B (5/22).
+The rest of the variants were found in the NEUROD1 and HNF1A genes.
+We identified one novel variant in the GCK gene: c.596T>C, p.Val199Ala.
+The applied genetic tests excluded the suspected diagnosis of MODY in two patients and revealed variants in other genes possibly associated with the patient's clinical phenotype.
+Conclusions: In our group of MODY patients most variants were found in the GCK gene, followed by variants in HNF1B, NEUROD1, and HNF1A genes.
+The combined NGS and MLPA-based genetic tests presented a comprehensive approach for analysing patients with suspected MODY diabetes and provided a successful differential diagnosis of MODY subtypes.

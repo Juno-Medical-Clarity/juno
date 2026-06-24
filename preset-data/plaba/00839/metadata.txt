@@ -1,0 +1,5 @@
+pmid:        32681497
+question:    68
+adaptation:  adaptation2
+title:       COVID-19 as part of the hyperferritinemic syndromes: the role of iron depletion therapy
+sentences:   9

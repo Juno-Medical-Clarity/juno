@@ -1,0 +1,5 @@
+We present here a potential new treatment adjunct for glioblastoma.
+Building on murine studies, a series of papers appeared recently showing that therapeutic irradiation of the ipsilateral subventricular zone (SVZ) retards growth of more peripherally growing cortical glioblastomas in humans, suggesting a tumor trophic function for the SVZ.
+Further studies showed that SVZ cells migrate out towards a peripheral glioblastoma.
+Dopamine signaling through D3 subtype receptor indirectly drives this centrifugal migration in humans.
+Since psychiatry has several drugs with good D3 blocking attributes, such as fluphenazine, or perphenazine, we suggest that adding one of these D3 blocking drugs to current standard treatment of resection followed by temozolomide and irradiation might prolong survival by depriving glioblastoma of the trophic functions previously subserved by dopaminergic signaling on SVZ cells.

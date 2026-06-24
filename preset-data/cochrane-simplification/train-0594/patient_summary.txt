@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0594  |  gem_id: gem-cochrane-simplification-train-595  |  doi: 10.1002/14651858.CD003383
+
+Twelve trials met the inclusion criteria. The meta-analysis of seven trials suggests a significant treatment effect for the total score on the Hamilton Anxiety Scale in favour of kava extract. Few adverse events were reported in the reviewed trials, which were all mild, transient and infrequent. These data imply that, compared with placebo, kava extract might be an effective symptomatic treatment for anxiety although, at present, the size of the effect seems to be small. Rigorous trials with large sample sizes are needed to clarify the existing uncertainties. Particularly long-term safety studies of kava are needed.

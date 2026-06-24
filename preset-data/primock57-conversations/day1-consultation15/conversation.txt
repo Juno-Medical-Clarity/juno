@@ -1,0 +1,223 @@
+# PriMock57 Consultation Transcript: day1_consultation15
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Doctor: Hello?
+
+Patient: Hello?
+
+Doctor: Hello. Can you hear me?
+
+Patient: Yes.
+
+Doctor: Great, excellent. Before I go any further, can I confirm you name and your, um, age please?
+
+Patient: Uh yes. Um Laura Parkinson. And uh I'm forty five.
+
+Doctor: Forty five. Alright Laura, well how can I help you this afternoon?
+
+Patient: Uh yeah. So I have uh soreness in my fingers, my finger, like, the skin on my hands is kind of cracked.
+
+Doctor: OK. When, when did this all start?
+
+Patient: Um, a couple of months ago. I got it three, four months ago.
+
+Doctor: [unintelligible] OK so it's been that long, has it? OK. And so you mentioned your [unintelligible], is it the skin on your hand, mainly that's dry?
+
+Patient: Yeah. Yeah, I haven't noticed. I mean, I have dryness, like you know, in other parts, like my legs. But it's not, it's not very, it's not severe. It's just you know, I've always, you know, I don't hydrate very much. So
+
+Doctor: Right. OK.
+
+Patient: [unintelligible] Yeah. Like it's very, it's very bad in my hands.
+
+Doctor: OK. Can I ask why have you come to see me today? Uh is it because it's got worse recently, your symptoms?
+
+Patient: Yeah I mean, it's gotten to a point where, where it hurts a lot. And I can't really do my job. So, I thought I should probably get it checked out.
+
+Doctor: Yeah, that sounds like a very sensible plan. Um, which part of your hands are affected, mainly?
+
+Patient: Uh the palm. I don't get, yeah.
+
+Doctor: Um, OK alright. Um, have you [unintelligible] any itchiness in your palms?
+
+Patient: Yeah, it's itchy. Not all the time, but yeah, it does get itchy.
+
+Doctor: OK. Any bleeding at all?
+
+Patient: Um um I don't, I mean, no I don't think so.
+
+Doctor: [unintelligible] you scratch yourself, you scratching yourself often, and bleeding?
+
+Patient: Um, yeah I guess when I scratched it, yes it has bled sometimes but, yeah. Otherwise, it hasn't bled on its own.
+
+Doctor: OK. Um, fine. Uh OK. Sorry, I'm [unintelligible] writing notes as we go along. Um, and you mentioned that skin is quite cracked as well. Is that right?
+
+Patient: Yes, that's right.
+
+Doctor: OK, alright. Um [unintelligible], I know it's a long time ago, but do you remember how it all started? [unintelligible] what were you doing at the time when it all started? Is it anything you may have done, to bring your symptoms on?
+
+Patient: Uh, I mean I am a, I do work as a housekeeper. Um
+
+Doctor: [unintelligible]
+
+Patient: And to be honest, I'm not always very good about wearing gloves. So that could be related. Um, I switched jobs, uh four months ago. Uh
+
+Doctor: OK. OK. OK.
+
+Patient: I've been working for, as a housekeeper for, for a while now, but um, that's the only thing I can think of.
+
+Doctor: Yeah, I think that might be quite important actually. I think there's definitely, maybe a correlation between the two. Um, fine. And so you mentioned something about having general dryness. Is that, you mentioned in your legs as well?
+
+Patient: Yeah. Yeah but isn't, sorry.
+
+Doctor: Is that, [unintelligible] is that something you've, you've had for a while now?
+
+Patient: Yeah. It's not really, it's not really major. Uh yeah it's just like literally grinding my legs.
+
+Doctor: [unintelligible] OK.
+
+Patient: [unintelligible]
+
+Doctor: Right, OK. [unintelligible]
+
+Patient: [unintelligible] trouble.
+
+Doctor: OK. I'm just going to ask you some very brief yes or no questions, if that's OK. With your symptoms, have you, have you had any other symptoms, such as fever, or temperatures?
+
+Patient: No.
+
+Doctor: Any nausea, or any vomiting?
+
+Patient: No.
+
+Doctor: Any problem with your bowels?
+
+Patient: No.
+
+Doctor: Any problem with your urine, or waterworks? [unintelligible]
+
+Patient: No.
+
+Doctor: Otherwise you feel well, do you? And yourself, [unintelligible] your eating, drinking, your appetite is well-maintained?
+
+Patient: Yeah. [unintelligible]
+
+Doctor: [unintelligible] OK, alright. Fine. Um, in terms of your past medical history, do you have any other conditions at all?
+
+Patient: I have diabetes.
+
+Doctor: Do you know if that's type one or type two?
+
+Patient: Type two.
+
+Doctor: Diabetes, OK. Anything else?
+
+Patient: Um no.
+
+Doctor: Any skin problems?
+
+Patient: No.
+
+Doctor: Eczema, dermatitis, for exmaple?
+
+Patient: Not that I know of. No, I haven't been diagnosed.
+
+Doctor: No, OK. Which medications do you take?
+
+Patient: [unintelligible]
+
+Doctor: Metformin, OK. Do you have any allergies, either to any medications or in general?
+
+Patient: No.
+
+Doctor: OK. Family history-wise, is there anything I should be aware of?
+
+Patient: Diabetes and what?
+
+Doctor: Diabetes as well. OK. Again, any skin problems?
+
+Patient: Yeah. Uh no, not that I know of.
+
+Doctor: Any history of asthma, or bowel problems?
+
+Patient: Uh, no.
+
+Doctor: No. OK, alright. Um Fine. In terms of social history, you mentioned that you work as a housekeeper. Um are you, you're not always very good at wearing gloves.
+
+Patient: Yeah.
+
+Doctor: Um, you've recently changed jobs. Which [unintelligible] which kind of places do you work in? Is it mainly residential, or is it commercial?
+
+Patient: Yeah. At a hotel. I have to do the whole thing like bedrooms, bathrooms, [unintelligible].
+
+Doctor: Hotel, OK. OK. OK. [unintelligible] Do you think there might be a relationship between the two? Between the, kind of the products you're using, and your symptoms?
+
+Patient: Yeah, I usually use those for bathrooms. But, yeah bedrooms and corridors not always.
+
+Doctor: OK. Have your symptoms stopped you from doing any work? Have you had to take time off work recently?
+
+Patient: Uh, yeah like the past three days, I haven't been able to go to work.
+
+Doctor: OK. Can I ask a couple questions? Do you smoke at all?
+
+Patient: No.
+
+Doctor: Do you drink much in the way of alcohol?
+
+Patient: [unintelligible] pints a week.
+
+Doctor: Once a week?
+
+Patient: Uh, a couple of pints a week.
+
+Doctor: [unintelligible] a week. OK so, very minimal, alcohol there. Um [unintelligible] have you tried anything for your symptoms? Have you tried anything over the counter? Any creams?
+
+Patient: Yeah. I tried uh E forty five.
+
+Doctor: Any luck with that? [unintelligible]
+
+Patient: Yeah, no it didn't really do anything.
+
+Doctor: No, OK. Alright. Um [unintelligible]
+
+Patient: I also tried an [unintelligible] antihistamine, antihistamine. Uh but it didn't
+
+Doctor: [unintelligible]. OK, alright. Um, Mrs. Parkinson, so I think um, based on your story, I [unintelligible] I think you might have something called dermatitis or contact dermatitis. Which is very common in, particularly people in your in your in your field, who are using cleaning products, not using gloves. And sometimes you get a bit of reaction between the chemicals and your skin. Um, so moving forward there's a couple of options. So firstly, what we try and do is, you know, avoid the triggers. In your case, I strongly recommend that you wear gloves when cleaning at all times.
+
+Patient: Yeah.
+
+Doctor: OK. And in terms of helping your dryness and the cracking of your skin, um we can try some steroid creams to help with the inflammation.
+
+Patient: Yeah.
+
+Doctor: [unintelligible]
+
+Patient: [unintelligible]
+
+Doctor: As well as some stronger emollients, um which you really need to kind of coat on, three four times a day, for the next couple of weeks, just to help with the moisturizing of your skin. [unintelligible]
+
+Patient: [unintelligible]
+
+Doctor: Um if it still hasn't got better in about a week, two weeks time, I really need you to come back and see me again. And we can maybe think about other things we can give to you. [unintelligible]
+
+Patient: OK.
+
+Doctor: Is that all clear?
+
+Patient: Uh yeah, that sounds good.
+
+Doctor: Great. Do you have any questions for me?
+
+Patient: Um, where do I get the medicine from?
+
+Doctor: [unintelligible] I'll I'll I'll do a [unintelligible] prescription for you now, and send it over to your pharmacy.
+
+Patient: OK great. Yeah, uh so you said a couple of weeks, it should get better, right?
+
+Doctor: OK. I think [unintelligible] I think minimum couple of weeks. Uh ten days to fourteen days. Um and if it still hasn't got better, or indeed if it's getting worse, like if it's spreading, or dryness is getting worse, come back and see me sooner. OK. Great. Thank you Laura. Thank you.
+
+Patient: Alright. Thank you very much.
+
+Doctor: [unintelligible]. Bye bye now.
+
+Patient: Bye.

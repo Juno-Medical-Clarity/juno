@@ -1,0 +1,5 @@
+Background: Antipsychotic drugs are the core treatment for schizophrenia.
+Treatment guidelines state that there is no difference in efficacy between the various first-generation antipsychotics, however, low-potency first-generation antipsychotic drugs are sometimes perceived as less efficacious than high-potency first-generation compounds by clinicians, and they also seem to differ in their side effects.
+Authors' conclusions: The results do not show a superiority in efficacy of high-potency perphenazine compared with low-potency first-generation antipsychotics.
+There is some evidence that perphenazine is more likely to cause akathisia and less likely to cause severe toxicity, but most adverse effect results were equivocal.
+The number of studies as well as the quality of studies is low, with quality of evidence for the main outcomes ranging from moderate to very low, so more randomised evidence would be needed for conclusions to be made.

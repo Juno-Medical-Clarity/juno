@@ -1,0 +1,7 @@
+source:      pnas
+side:        complex
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [10:13] 'medical-jargon-google-easy' -> 'preimplantation embryo development'

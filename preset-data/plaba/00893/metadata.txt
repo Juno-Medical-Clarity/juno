@@ -1,0 +1,5 @@
+pmid:        30562208
+question:    73
+adaptation:  adaptation2
+title:       Total Hip and Knee Arthroplasty Perioperative Pain Management: What Should Be in the Cocktail
+sentences:   8

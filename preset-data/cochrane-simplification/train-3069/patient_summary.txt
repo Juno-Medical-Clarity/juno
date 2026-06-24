@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3069  |  gem_id: gem-cochrane-simplification-train-3070  |  doi: 10.1002/14651858.CD003535
+
+This study undertook a comprehensive search of the literature unrestricted by country of publication or language. Unfortunately small numbers of relevant trials were found and these were of variable quality. This review found that although anticholinergic drugs are well tolerated, in children over two years of age, there is not enough data to be sure if they are better than placebo in terms of effects on lung function or symptoms.

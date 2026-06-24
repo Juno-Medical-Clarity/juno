@@ -1,0 +1,5 @@
+Doctor: I can see your medication list here.
+Doctor: Do you take Accutane and Ovcon?
+Patient: Yes, I do.
+Doctor: Okay.
+Patient: Okay.

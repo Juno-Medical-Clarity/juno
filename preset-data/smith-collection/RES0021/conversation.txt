@@ -1,0 +1,250 @@
+# Smith Collection Transcript: RES0021
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I was wondering if you could start by telling me what brought you in
+
+Patient: Sure you know ive been feeling a little hot for the past two days ive had this awful cough and i just feel so tired
+
+Doctor: OK and this started two days ago
+
+Patient: Ah yes two days ago
+
+Doctor: OK yeah youve been feeling hot have you checked your temperature
+
+Patient: um no i havent actually checked my temperature i just kind of put my hand on my forehead and i just feel really really hot
+
+Doctor: OK so well well check it right now and ok so were seeing that its your temperature is elevated at 383 right now so it does sound like you you have a fever ok and you mentioned that you had you have a cough
+
+Patient: Yeah i do its its a dry cough and its awful ive been hacking for the past two days
+
+Doctor: Oh no that doesnt sound very nice has it been any blood or any sputum
+
+Patient: No blood and no definitely no sputum ok
+
+Doctor: Anything thats like triggered the cough
+
+Patient: um i dont i dont think so um no i dont think so
+
+Doctor: No ok have you had a cough like this before
+
+Patient: Maybe like 10 years ago when i had some sort of viral infection they said um i had a dry cough but nothing to this extent
+
+Doctor: OK um have you had any infections recently like in the last month or so like a viral illness um like where you had maybe like a runny nose sore throat and and a cough
+
+Patient: No no not not recently
+
+Doctor: OK so youve been feeling well recently
+
+Patient: Yeah
+
+Doctor: OK and youve you been fatigued can you tell me a little bit about about how you been feeling
+
+Patient: Ah yeah like you mean in terms of my fever or cough
+
+Doctor: Oh sorry i mean in terms of your energy
+
+Patient: Oh my energy yeah ive just been feeling so tired it seems like i cant do normally would be i would normally have no issues doing
+
+Doctor: I see ok and any changes to sleep or any kind of stressful events happen in the last few days that might be causing you to be more tired
+
+Patient: I dont think so nothing nothing big has happened in my life no big changes
+
+Doctor: OK um and so youve had a fever cough and being tired have you experienced any other symptoms these last few days
+
+Patient: um yep fever cough fatigue but um i dont have anything any other symptoms besides those
+
+Doctor: OK so you you do you have any headaches
+
+Patient: Oh headaches no no
+
+Doctor: OK how about any eye or or ear symptoms like discharge or pain
+
+Patient: No nothing like that
+
+Doctor: OK have you had a loss of taste or a loss of smell
+
+Patient: No
+
+Doctor: Alright and have you had a runny nose or sore throat
+
+Patient: No
+
+Doctor: OK have you had any chest pain
+
+Patient: Nope no chest pain
+
+Doctor: And how about difficulty breathing or shortness of breath
+
+Patient: Nope no
+
+Doctor: OK and any wheezing or whistling noises while youre breathing
+
+Patient: No
+
+Doctor: OK and have you felt like your hearts racing at all
+
+Patient: Ah no
+
+Doctor: Have you had any like fainting spells or feeling as though you might pass out
+
+Patient: um nope no
+
+Doctor: Alright and how about any dizziness
+
+Patient: Oh no no dizziness either
+
+Doctor: Alright and have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: Alright and how about any diarrhea or constipation
+
+Patient: No
+
+Doctor: Alright um any abdominal pain
+
+Patient: No
+
+Doctor: And any like painful urination or or like going to the bathroom frequently
+
+Patient: No
+
+Doctor: Alright any night sweats
+
+Patient: No
+
+Doctor: And how about any chills or rigors
+
+Patient: No
+
+Doctor: Have you had any weight loss over the last several months
+
+Patient: None
+
+Doctor: Alright have you noticed any rashes or skin changes over this past week
+
+Patient: No
+
+Doctor: Alright and how about any muscle aches or or joint pains
+
+Patient: um no
+
+Doctor: Alright so is there any reason that you see a physician regularly for or been diagnosed with any medical conditions
+
+Patient: Mmm i have rheumatoid arthritis
+
+Doctor: OK uh are you taking medications for that
+
+Patient: um yeah you know they put me on some sort of dmard
+
+Doctor: OK so youre youre seeing a rheumatologist for that
+
+Patient: Mmm i am
+
+Doctor: OK great um any other diagnoses
+
+Patient: No
+
+Doctor: OK and so uh are there any other medications that you that you take either over the counter or prescription besides the dmard
+
+Patient: I take iron and vitamin as well as biotin
+
+Doctor: OK uh whats the reason for taking iron
+
+Patient: Uhh at one point or another they said my iron levels were low but it went back to being normal but i just take it now to maintain those levels
+
+Doctor: OK um do you have like heavy menstrual periods
+
+Patient: No
+
+Doctor: OK and have you noticed any blood in the stool either either being red or or your stool being really dark kind of like a black colour
+
+Patient: Nope
+
+Doctor: OK um and do you have any allergies
+
+Patient: No allergies
+
+Doctor: Alright uh and then can you tell me a little bit about your living situation
+
+Patient: I live with two of my children they are five and three as well as my new boyfriend
+
+Doctor: OK great and for either of your pregnancies were there any complications
+
+Patient: No
+
+Doctor: OK great um and are there any concerns for safety in the home
+
+Patient: No
+
+Doctor: OK excellent and what do you do for work
+
+Patient: I work as a secretary for an accounting firm
+
+Doctor: OK that sounds like a great job and uh do you smoke cigarettes
+
+Patient: I used to i quit five years ago
+
+Doctor: Alright and do you smoke marijuana
+
+Patient: No
+
+Doctor: OK and do you use any other recreational drugs
+
+Patient: No
+
+Doctor: OK um and has anybody in the house been sick either your boyfriend or or your children
+
+Patient: No
+
+Doctor: OK are they going to like daycare right now or in school
+
+Patient: They are in daycare yeah
+
+Doctor: OK um any kids in their daycare that have been sick
+
+Patient: No i checked no ones been sick
+
+Doctor: Alright excellent is that anybody in the office where you work been sick
+
+Patient: No
+
+Doctor: And have you traveled anywhere
+
+Patient: No
+
+Doctor: OK and then anybody in the family have a heart condition or or lung condition
+
+Patient: No
+
+Doctor: OK no an any cancer that thats runs in the family
+
+Patient: um one of my aunts had pancreatic cancer
+
+Doctor: OK any relatives have breast cancer
+
+Patient: No
+
+Doctor: How about any relatives with ovarian or colon cancer
+
+Patient: No
+
+Doctor: OK and so i think that was all of the questions that i wanted to ask actually i just remembered one have you had any prior surgeries
+
+Patient: No no priors
+
+Doctor: OK sorry so that was the last question that i wanted to ask about on on history um was there anything that you wanted to tell me that i maybe i didnt ask about
+
+Patient: No i think you covered it all
+
+Doctor: OK excellent so with your symptoms of having a kind of a fever cough and being tired definitely concerned of viral infection and possibly covid19 or something more common like the common cold like an adenovirus and so will do some testing for for covid19 with a nasal pcr swab as well as run some blood work um because there is a possibility that theres a bacterial infection such as like a pneumonia or lower respiratory tract infection that would be treated with antibiotics so we uh yeah well order those investigations along with a chest x ray and we will go from there
+
+Patient: OK that sounds great thank you so much
+
+Doctor: Youre welcome

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0060  |  gem_id: gem-cochrane-simplification-train-61  |  doi: 10.1002/14651858.CD004695.pub3
+
+Delaying or eliminating the break in hormone use has become a popular way for women to avoid monthly bleeding, so we performed this review to compare these newer regimens to traditional CHC dosing regimens. We searched for all randomized controlled trials on this question in any language; we found twelve that met our criteria. The continuous or extended-cycle and traditional regimens appeared similar, as judged by bleeding, discontinuation rates, and reported satisfaction. The studies were too small to address efficacy, rare adverse events, and safety. Extended-cycle (for more than 28 days) or continuous dosing appears to be a reasonable approach to CHC use.

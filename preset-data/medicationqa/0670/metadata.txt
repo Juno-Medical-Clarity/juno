@@ -1,0 +1,5 @@
+drug_focus: ceftriaxone injection
+question_type: Usage
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5d7ae2f-5485-42e2-af2b-bd7f06df85d7&audience=consumer
+sample_id: 0670

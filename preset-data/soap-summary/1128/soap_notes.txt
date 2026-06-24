@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 1128
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 78 years old and emphasizes the importance of taking health seriously.
+- Reports having had right knee replacement and back surgery about 18 months ago; describes recovery as "great" and has "nothing to complain about."
+- Able to do almost anything desired post-surgery; enjoys traveling and recently returned from a cruise.
+- Denies experiencing chest pain, heaviness, tightness, or pressure.
+- Reports shortness of breath when walking up stairs and from floor to floor in the hospital; considers this "decently normal."
+- Denies coughing fits or irregular heartbeats.
+- Has Crohn's disease and is regularly checked by Doctor Ferguson.
+- Scheduled for a prostate check with Doctor Roszhart.
+- Reports no ankle swelling despite extensive walking and traveling.
+- Quitting smoking ten years ago led to increased walking and traveling as a new habit.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

@@ -1,0 +1,13 @@
+Purpose: The study aimed to define the clinical, biochemical and genetic features of adult patients with osteopenia/osteoporosis and/or bone fragility and low serum alkaline phosphatase (sALP).
+Methods: Twenty-two patients with at least two sALP values below the reference range were retrospectively enrolled after exclusion of secondary causes.
+Data about clinical features, mineral and bone markers, serum pyridoxal-5'-phosphate (PLP), urine phosphoethanolamine (PEA), lumbar and femur bone densitometry, and column X-ray were collected.
+Peripheral blood DNA of each participant was analyzed to detect ALPL gene anomalies.
+Results: Pathogenic ALPL variants (pALPL) occurred in 23% and benign variants in 36% of patients (bALPL), while nine patients harbored wild-type alleles (wtALPL).
+Fragility fractures and dental anomalies were more frequent in patients harboring pALPL and bALPL than in wtALPL patients.
+Of note, wtALPL patients comprised women treated with tamoxifen for hormone-sensitive breast cancer.
+Mineral and bone markers were similar in the three groups.
+Mean urine PEA levels were significantly higher in patients harboring pALPL than those detected in patients harboring bALPL and wtALPL; by contrast, serum PLP levels were similar in the three groups.
+A 6-points score, considering clinical and biochemical features, was predictive of pALPL detection [P = 0.060, OR 1.92 (95% CI 0.972, 3.794)], and more significantly of pALPL or bALPL [P = 0.025, OR 14.33 (95% CI 1.401, 14.605)].
+Conclusion: In osteopenic/osteoporotic patients, single clinical or biochemical factors did not distinguish hypophosphatasemic patients harboring pALPL or bALPL from those harboring wtALPL.
+Occurrence of multiple clinical and biochemical features is predictive of ALPL anomalies, and, therefore, they should be carefully identified.
+Tamoxifen emerged as a hypophosphatasemic drug.

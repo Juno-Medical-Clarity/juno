@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0032  |  gem_id: gem-cochrane-simplification-test-33  |  doi: 10.1002/14651858.CD006667.pub3
+
+We included 10 trials in this review, which included a total of 1658 participants with acute respiratory distress syndrome. Low-quality evidence suggests that recruitment manoeuvres improve ICU survival but not 28-day or hospital survival. Recruitment manoeuvres have no effect on the risk of air leakage from the lungs. We found the evidence for most outcomes to be of low to moderate quality, primarily because of the design of included trials. Many trials used the recruitment manoeuvre in conjunction with other ventilation techniques or strategies, and this might have influenced outcomes. Caution should be applied when conclusions are drawn about the effectiveness of the recruitment manoeuvre alone.

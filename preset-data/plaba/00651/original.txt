@@ -1,0 +1,11 @@
+Sarcoidosis is characterized by granuloma formation, the macrophage being the most important building block.
+The activated macrophage in sarcoidosis produces interleukin-1 (II-1).
+It is well known that interleukin-1, among other functions, stimulates the hepatic production of C-reactive protein.
+We therefore prospectively measured the serum C-reactive protein in 17 patients with active pulmonary sarcoidosis, 10 patients with other chronic interstitial lung diseases of unknown etiology, 11 patients with active lung tuberculosis, and 10 healthy volunteers.
+Serum C-reactive protein was assayed by enzymoimmunodiffusion test.
+The serum C-reactive protein was negative in 13 patients suffering from active sarcoidosis and positive in four.
+Patients with other interstitial lung diseases had negative results in 7 and positive in 3 cases.
+The analyses of C-reactive protein in patients with sputum positive lung tuberculosis were positive in 10 cases.
+All the healthy controls had negative C-reactive protein measurements.
+The difference between the groups was statistically significant when sarcoidosis and tuberculosis serum C-reactive protein measurements were compared (p less than 0.01), as well as the difference between the group of other interstitial lung diseases and tuberculosis (p less than 0.01).
+In this respect, the measurements of serum C-reactive protein are valuable in the differentiation of sarcoidosis and other chronic interstitial lung diseases of unknown etiology from tuberculosis and other diseases which are known to induce an acute phase response.

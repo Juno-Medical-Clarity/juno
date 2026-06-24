@@ -1,0 +1,14 @@
+Doctor: Out of ten, ten being the worst pain imaginable, how would you rate your pain today?
+Patient: Today it's about a six or seven, and it's usually pretty constant there.
+Doctor: Does the pain change with the weather?
+Patient: Yes, when it's cold out it turns to ten out of ten. It's better when it's warm out.
+Doctor: Does the pain change throughout the course of the day?
+Patient: Yes, it progressively gets worse and worse as the day goes on, but I also have a pretty hard time getting out of bed in the morning, too.
+Doctor: Out of ten, how would you rate your pain at night?
+Patient: Oh, it's ten out of ten.
+Doctor: Does the pain wake you up at night?
+Patient: If I sleep at all. I'm not sleeping well at all, and when I do it's for less than an hour at a time.
+Doctor: Are there any activities that really aggravate the pain?
+Patient: Yes, if I sit for more than about twenty minutes, or if I lay flat on my back.
+Doctor: Does anything alleviate the pain?
+Patient: Laying on my side helps a little.

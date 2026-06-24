@@ -1,0 +1,248 @@
+# Smith Collection Transcript: RES0047
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Yeah so ive had this chest tightness and and been short of breath and bringing up sputum with this uh cough
+
+Doctor: OK so um lets start with the cough when did that start
+
+Patient: So ive had a cough now for a few years um but over this past uh three days its gotten quite a bit worse
+
+Doctor: OK for the past three days three three years ok
+
+Patient: Yeah
+
+Doctor: um are there any triggers for your cough
+
+Patient: uh yeah if im doing um like if im really active like if i run to catch the bus or uh or if im shovelling snow maybe i can make become short of breath but um not if im just walking around the block or anything like that
+
+Doctor: OK and what caused this cough initially three years ago do you know
+
+Patient: uh yeah i think um i think its just a smokers cough i think that my family doctor told me i had like chronic bronchitis before
+
+Doctor: OK ok how often were you coughing before it got worse recently
+
+Patient: uh i would usually cough every day but the cough would be usually just in the morning i id get up um there i would cough up some sputum and and then maybe and then id usually be ok
+
+Doctor: OK um and does anything make your cough better like do you take any over the counter cough syrup
+
+Patient: um yeah ive tried some over the counter uh cough syrups in the past but it hasnt helped
+
+Doctor: OK ok and if you were to talk about the quality of your cough is it is it barky does it sound harsh what does it sound like
+
+Patient: uh yeah i would say it sounds pretty harsh you can kind of it sounds like theres um mucus moving around i guess with with the cough in my chest i can i can kind of feel it
+
+Doctor: OK ok and you mentioned that youre producing a lot of sputum with your cough what colour is that sputum
+
+Patient: Greenish
+
+Doctor: Green ok any blood
+
+Patient: No blood
+
+Doctor: No blood ok and you mentioned youve never produced sputum with the cough especially not green sputum in the past three years right
+
+Patient: I would bring up sputum but its usually clear and white
+
+Doctor: OK ok and do you have any wheeziness associated with this cough
+
+Patient: uh yes i do
+
+Doctor: Yes ok and you mentioned you were short of breath were you short of breath prior to your cough or did that start um when when this cough got worse
+
+Patient: I think the shortness of breath has gotten a bit worse over the um last few days uh as the cough has gotten worse
+
+Doctor: OK ok and if you were to rate the severity of your symptoms of how youre feeling 1 to 10 10 being the worst where would you put yourself at
+
+Patient: uh i would say an 8 its been really tough its been getting really difficult to um breathe
+
+Doctor: OK yeah and have you ever experienced anything to this severity in the past
+
+Patient: No i havent had uh this difficulty breathing before
+
+Doctor: OK ok um do you have any chest pain
+
+Patient: uh my chest is it feels tight
+
+Doctor: OK uh it feels tight ok does that does it hurt though
+
+Patient: uh no no it doesnt really hurt its just uncomfortable
+
+Doctor: OK and do you think its tight because of the coughing or um the shortness of breath
+
+Patient: Yeah i kind of feel it um with the coughing
+
+Doctor: OK and have you noticed any swelling in your limbs
+
+Patient: uh yeah maybe a little bit in my in my feet more than usual
+
+Doctor: OK and do you feel like your hearts racing
+
+Patient: uh no
+
+Doctor: No ok any dizziness or fainting spells
+
+Patient: uh i havent had anything like that
+
+Doctor: OK um any changes to your vision or hearing
+
+Patient: No
+
+Doctor: No um do you have a stuffy nose or runny nose
+
+Patient: No
+
+Doctor: um how about a sore throat
+
+Patient: No
+
+Doctor: No any changes to your smell or taste
+
+Patient: No
+
+Doctor: um any fevers or chills
+
+Patient: No ive felt ok
+
+Doctor: OK any weight loss
+
+Patient: um yeah maybe i mean over the last few years ive um lost a few pounds but maybe maybe 10 pounds over the last last couple of years
+
+Doctor: Last couple of years ok was it intentional weight loss or unintentional
+
+Patient: Unintentional
+
+Doctor: OK um alright and any changes to your hair nails or skin like rashes
+
+Patient: No i havent noticed anything like that
+
+Doctor: OK and how are your bowel movements everything normal there
+
+Patient: Yeah thats been normal
+
+Doctor: OK everything normal with regards to your urine
+
+Patient: Yeah thats been normal
+
+Doctor: OK any confusion or memory loss
+
+Patient: No
+
+Doctor: No ok any fatigue
+
+Patient: Yeah ive been feeling well really tired these last three days
+
+Doctor: Yeah ok any joint pains or muscle aches
+
+Patient: No
+
+Doctor: No ok um and are you otherwise healthy
+
+Patient: um well i use uh these inhalers um and i think ive been told i have copbefore
+
+Doctor: OK um other than your copdo you have any other longstanding medical conditions like high blood pressure diabetes anything like that
+
+Patient: um yeah i have uh high blood pressure and um i had my gallbladder taken out uh a few years ago
+
+Doctor: OK ok any other surgeries or hospitalizations
+
+Patient: uh i had an acl repair like when i was a teenager
+
+Doctor: OK and besides the inhalers are you on any other medication
+
+Patient: Yeah theres one for blood pressure um and i take vitamin um and thats it
+
+Doctor: OK which one which um medication are you on for the blood pressure
+
+Patient: uh amlodipine
+
+Doctor: Amlodipine ok when did you start taking that
+
+Patient: About uh seven years ago
+
+Doctor: OK and then for your uh copwhich inhalers are you on
+
+Patient: uh theres one thats for um like short acting and then theres one that i use everyday uh spiriva i think
+
+Doctor: OK yeah and how long have you been on these inhalers
+
+Patient: uh its been a couple of years for well for the the short one that i i use for rescue therapies been for like a long time but spirivas been the last several years
+
+Doctor: OK ok and do you find that your inhalers are helping
+
+Patient: Yeah they um i definitely notice a difference when i if i miss a dose or something
+
+Doctor: Yeah ok and um do you have any allergies
+
+Patient: uh no i dont think so
+
+Doctor: No ok how about um immunizations are you up to date
+
+Patient: Yeah i believe so
+
+Doctor: OK and in terms of family history uh are there any lung conditions or heart conditions that run in the family
+
+Patient: um uh no
+
+Doctor: No ok um do you currently smoke
+
+Patient: uh i do yes ive been trying to quit i um i smoke about a pack of cigarettes per day now i used to smoke like 2 packs per day
+
+Doctor: OK well its its good that youve cut down um if you need any additional help cutting down we have resources that we can refer you to
+
+Patient: Yeah that would be great
+
+Doctor: Yeah um how much for how long have you been smoking like how many years
+
+Patient: uh well i started when i was a teenager so probably like 35
+
+Doctor: OK um and do you do any marijuana
+
+Patient: uh no
+
+Doctor: No ok ok um how about alcohol do you drink alcohol
+
+Patient: Yeah a few beers on the weekend
+
+Doctor: OK um and then where do you live currently
+
+Patient: I live in an apartment by myself
+
+Doctor: OK um and any reasons to think that there are any old carpets mold or um asbestos or anything like that that could be exacerbating your symptoms
+
+Patient: uh i mean i do have a carpet in the bedroom so but i mean that thats the only carpet in the apartment
+
+Doctor: OK um and do you live with anyone
+
+Patient: No its its just me and my dog
+
+Doctor: OK uh have you have you been around any sick contacts recently
+
+Patient: um maybe i mean i i usually will see uh a couple of friends well meet up to grab some coffee
+
+Doctor: In the morning in the morning um but i feel like they have been uh ok
+
+Patient: Yeah ok how about um travel have you traveled anywhere recently
+
+Doctor: No
+
+Patient: No ok ok well i think those were all the questions that i had for you did you have any questions or concerns or anything that i missed that you wanted to discuss
+
+Doctor: um no i just wanted to um yeah come in because its been really difficult to breathe
+
+Patient: Yeah so ok well well do a physical exam on you um to try to understand um how bad your copexacerbation is um well also try to get an um oxygen saturation on you and we do want that reading
+
+Doctor: To be between 88 to 92 if it is less than that um and we think you have a mild exacerbation well just suggest that you use your short acting beta agonist puffer um more often and then if you
+
+Patient: If we think you have moderate um moderate exacerbation well also prescribe uh antibiotics and or steroids to go along with the short acting beta agonist and if it is severe or if it becomes severe um please do seek out aid um in the er and theyll try theyll probably put you on um uh some sort of um oxy like um some sort of supplemental oxygen whether its bipaor cpaum and again theyll continue giving you your bronchodilators and steroids as well as antibiotics to um make sure that you dont have any bad complications of uh pneumonia um and it does sound like it is a copexacerbation at this point but if you develop any other symptoms like um fevers or any symptoms that overlap with uh viral viral illnesses well well well work you up for that well do i think we will still do a covid swab on you just to make sure you dont have that uh but well start with um working you up for cophow does that sound
+
+Doctor: That sounds great thank you
+
+Patient: Alright take care

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0149  |  gem_id: gem-cochrane-simplification-validation-150  |  doi: 10.1002/14651858.CD000349
+
+This review found that, despite limited research, there is some evidence that guidelines can improve care and that professional roles can be substituted effectively, for instance a nurse can perform the function of a physician in certain circumstances. Such interventions offer the possibility of reduced costs but further research is needed in all areas of this topic.

@@ -1,0 +1,5 @@
+pmid:        18496408
+question:    50
+adaptation:  adaptation2
+title:       Procalcitonin and C-reactive protein as markers of bacterial infection in critically ill children at onset of systemic inflammatory response syndrome
+sentences:   14

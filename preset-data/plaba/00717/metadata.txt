@@ -1,0 +1,5 @@
+pmid:        32270976
+question:    56
+adaptation:  adaptation2
+title:       Pallister-Hall syndrome in a 2-years-old girl
+sentences:   7

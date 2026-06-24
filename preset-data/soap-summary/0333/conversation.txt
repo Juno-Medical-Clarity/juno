@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0333
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you sexually active? Yes. How many partners do you have? Just one. Is this a monogamous relationship? Yes. What gender is you partner? He is a male. We have been together for three years. He is H I V positive.

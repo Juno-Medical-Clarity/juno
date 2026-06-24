@@ -1,0 +1,7 @@
+The effects of single oral doses of 10, 15, or 30 mg of prednisone on circulating mononuclear cells, autologous MLR, mitogen responses, and allogeneic MLR were studied in healthy volunteers.
+Doses as low as 10 mg were immunosuppressive, causing diminution of circulating T cells and monocytes, and significant reduction in autologous but not allogeneic MLR responses.
+These effects were maximal 6 hr after drug administration and gone by 24 hr.
+Autologous MLR responses were particularly sensitive to the effects of prednisone being significantly and consistently suppressed 2 hr after drug administration, before significant cell redistribution had occurred.
+Macrophage-enriched stimulating cells were more easily suppressed than responding T cells.
+Since the autologous MLR may be important in in vivo regulation of immune responses, its reduction by low-dose glucocorticoids may be of clinical relevance.
+This suppressive effect must be considered in studies of the autologous MLR in patients receiving glucocorticoid therapy.

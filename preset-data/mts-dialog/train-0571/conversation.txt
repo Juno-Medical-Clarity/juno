@@ -1,0 +1,2 @@
+Doctor: Have you had any surgeries in the past?
+Patient: No, none.

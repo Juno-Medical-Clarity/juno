@@ -1,0 +1,4 @@
+Doctor: Did you have any medical issues?
+Patient: Nope.
+Doctor: What about surgery.
+Patient: No, I never had a surgery.

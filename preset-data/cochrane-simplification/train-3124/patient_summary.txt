@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3124  |  gem_id: gem-cochrane-simplification-train-3125  |  doi: 10.1002/14651858.CD006257
+
+However studies have focused on kidney protection rather than over mortality. The aim of this review was to assess the benefits and harms or ACEI and AIIRA therapy in patients with DKD. Fifty studies (13,215 patients) were identified comparing ACEi to placebo, AIIRA to placebo and ACEi to AIIRA. The risk of death from any cause was not significantly reduced with the use of ACEi versus placebo, AIIRA versus placebo or ACEi versus AIIRA. However when we looked at the studies which used the maximum dose tolerated of ACEi rather than the lower, so-called renal doses, there was a significant reduction in the risk of death due to any cause. We were unable to determine which drug provides better protection due to the lack of head-to-head trials.

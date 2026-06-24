@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0702  |  gem_id: gem-cochrane-simplification-train-703  |  doi: 10.1002/14651858.CD007610.pub3
+
+Foot ulcers not only lead to physical disability and loss of quality of life, but also to economic burden (healthcare costs, industrial disability). The aim is therefore to prevent foot ulcers occurring, for example, by showing patients with diabetes how to look after their feet or by prompting doctors to check their patients' feet more often. The results of single prevention strategies alone have so far been disappointing, therefore in clinical practice, preventive interventions directed at patients, healthcare providers and/or the structure of health care are often combined. In this review of trials of complex, preventive interventions, we found insufficient evidence that these combined approaches can be effective in reducing foot problems.

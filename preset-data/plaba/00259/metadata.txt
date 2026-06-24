@@ -1,0 +1,5 @@
+pmid:        7852252
+question:    20
+adaptation:  adaptation1
+title:       Relapse in patients on long-term fluoxetine treatment: response to increased fluoxetine dose
+sentences:   7

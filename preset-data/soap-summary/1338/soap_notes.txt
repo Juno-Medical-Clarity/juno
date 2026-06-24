@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1338
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Whole body aches, pain, difficulty sleeping, difficulty eating, chills, suspected fever, diarrhea.
+- Severity: Not explicitly stated, but indicates significant discomfort.
+- Duration: Approximately one year of drug use; currently detoxing.
+- Associated symptoms: Chills, suspected fever, diarrhea.
+- Relevant medical history: History of heroin use; currently detoxing.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient expresses not feeling well.
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

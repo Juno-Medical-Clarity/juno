@@ -1,0 +1,4 @@
+Doctor: Well, I don't think you need any restraints as you are doing fine. I do want to make sure you have a chair and bed monitor since you have a history of multiple falls. They can help detect fall.
+Patient: I don't want that, I will manage.
+Doctor: Are you sure?
+Patient: Yes!

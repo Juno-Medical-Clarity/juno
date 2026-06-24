@@ -1,0 +1,8 @@
+Extracellular vesicles (EVs) are found in all biological fluids, providing potential for the identification of disease biomarkers such as colorectal cancer (CRC).
+EVs are heavily glycosylated with specific glycoconjugates such as tetraspanins, integrins, and mucins, reflecting the characteristics of the original cell offering valuable targets for detection of CRC.
+We report here on europium-nanoparticle (EuNP)-based assay to detect and characterize different surface glycoconjugates of EVs without extensive purification steps from five different CRC and the HEK 293 cell lines.
+The promising EVs candidates from cell culture were clinically evaluated on small panel of serum samples including early-stage (n = 11) and late-stage (n = 11) CRC patients, benign condition (n = 11), and healthy control (n = 10).
+The majority of CRC cell lines expressed tetraspanin sub-population and glycovariants of integrins and conventional tumor markers.
+The subpopulation of CD151 having CD63 expression (CD151CD63) was significantly (p = 0.001) elevated in early-stage CRC (8 out of 11) without detecting any benign and late-stage samples, while conventional CEA detected mostly late-stage CRC (p = 0.045) and with only four early-stage cases.
+The other glycovariant assays such as CEACon-A, CA125WGA, CA 19.9Ma696, and CA 19.9Con-A further provided some complementation to the CD151CD63 assay.
+These results indicate the potential application of CD151CD63 assay for early detection of CRC patients in human serum.

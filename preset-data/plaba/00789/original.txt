@@ -1,0 +1,10 @@
+Purpose: Increased epidermal growth factor receptor (EGFR) expression may promote breast cancer resistance to endocrine therapy.
+We have therefore investigated whether neoadjuvant gefitinib, an EGFR inhibitor, might overcome biologic and clinical resistance to neoadjuvant anastrozole in a phase II placebo-controlled trial.
+Patients and methods: Postmenopausal women with stage I to IIIB hormone receptor-positive early breast cancer received anastrozole 1 mg daily for 16 weeks and were randomly assigned at a ratio of 2:5:5 to receive, in addition, gefitinib 250 mg/d orally for 16 weeks: placebo 1 tablet/d orally for 2 weeks and then gefitinib for 14 weeks or placebo for 16 weeks.
+The primary end point was biologic change in proliferation as measured by Ki67 at 2 and 16 weeks; the main secondary end point was overall objective response (OR).
+Results: Two hundred six women were randomly assigned.
+Mean changes in Ki67 with anastrozole and gefitinib versus anastrozole alone were -77.4% and -83.6%, respectively, between baseline and 16 weeks (geometric mean ratio = 1.37; 95% CI, 0.79 to 2.39; P = .26), -80.1% and -71.3% between baseline and 2 weeks (geometric mean ratio = 0.70; 95% CI, 0.39 to 1.25; P = .22) and -19.3% and -43% (geometric mean ratio = 1.42; 95% CI, 0.86 to 2.35; P = .16) between 2 and 16 weeks.
+ORs in the combination and anastrozole alone groups were 48% and 61% (estimated difference = -13.1%; 95% CI, -27.3% to 1.2%), respectively, with a nonsignificant trend against the combination (P = .08) and 48% versus 72% (estimated difference = -24.1%; 95% CI, -45.3% to -2.9%) in the progesterone-receptor-positive subgroup, which was significant (P = .03) and consistent with Ki67 changes.
+Common treatment-related adverse events included diarrhea, rash, alopecia, dry skin, and nausea.
+There was no evidence of a pharmacokinetic interaction.
+Conclusion: Addition of gefitinib to neoadjuvant anastrozole had no additional clinical or biologic effect, failing to support our original hypothesis.

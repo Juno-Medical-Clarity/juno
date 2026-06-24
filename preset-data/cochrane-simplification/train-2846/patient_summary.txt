@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2846  |  gem_id: gem-cochrane-simplification-train-2847  |  doi: 10.1002/14651858.CD004481.pub2
+
+Colchicine, a plant alkaloid, has been used to treat patients with primary biliary cirrhosis and was tested in randomised clinical trials. When all identified trials were combined, colchicine appeared to be not significantly different from placebo/no intervention in respect to mortality, mortality and/or patients who underwent liver transplantation, liver complications, liver biochemistry, liver histology, and the occurrences of adverse events. Colchicine may reduce pruritus, but this finding may be due to bias. The addition of ursodeoxycholic acid did not significantly influence the effect of colchicine.

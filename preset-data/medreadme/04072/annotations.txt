@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.2
+split:       test
+
+jargon_spans:
+  [3:6] 'medical-jargon-google-easy' -> 'T - cell'
+  [17:18] 'medical-jargon-google-easy' -> 'apoptosis'
+  [23:24] 'medical-jargon-google-easy' -> 'necrosis'

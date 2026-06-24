@@ -1,0 +1,5 @@
+pmid:        33378609
+question:    27
+adaptation:  adaptation1
+title:       Efficacy and Safety of the mRNA-1273 SARS-CoV-2 Vaccine
+sentences:   15

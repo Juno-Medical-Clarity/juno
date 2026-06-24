@@ -1,0 +1,7 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 3.2
+split:       test
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-easy' -> 'mental health trusts'

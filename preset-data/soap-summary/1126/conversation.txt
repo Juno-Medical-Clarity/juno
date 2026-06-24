@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1126
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I'm going to run down a list of symptoms and I'd like you to tell me if you've experienced any. Okay. Headache? No headaches. Are you coughing at all? And if yes, then are you bringing up any blood with your cough? No cough. Any chest pain or shortness of breath that wakes you in the middle of the night? Nope. Do you feel short of breath when you move around? Nope. Any visual, hearing, or swallowing problems? None. And finally any changes to your bowel movements or urinary habits? Nope. All normal.

@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-hard' -> 'FAM173B'
+  [13:15] 'medical-jargon-google-easy' -> 'pathological pain'

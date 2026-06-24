@@ -1,0 +1,9 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'ICUs'
+  [7:8] 'abbr-medical' -> 'LCP'
+  [11:12] 'abbr-medical' -> 'non-LCP-supported'

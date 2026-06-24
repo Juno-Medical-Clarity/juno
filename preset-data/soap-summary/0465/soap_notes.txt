@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0465
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Blurring and focusing difficulties, headaches, tinnitus (ringing in the ears).
+- Severity: Not explicitly mentioned but implied as concerning enough to seek medical attention.
+- Duration: Not specified.
+- Associated symptoms: Headaches, tinnitus.
+- Relevant medical history: Diagnosed with a suprasellar tumor, underwent surgery on January 4th for craniopharyngioma, residual disease present, visual apparatus decompressed.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient is doing fine overall and states that his eyesight has improved a lot.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinical impressions or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

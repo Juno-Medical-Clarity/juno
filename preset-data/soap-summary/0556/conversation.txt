@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0556
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you been experiencing any mental difficulties or confusion? No. Any hallucinations? Are you seeing hearing thing that is not real? No.

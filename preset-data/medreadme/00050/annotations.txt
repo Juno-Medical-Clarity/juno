@@ -1,0 +1,16 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Pre-incubation'
+  [3:4] 'medical-jargon-google-easy' -> 'midguts'
+  [6:9] 'medical-jargon-google-easy' -> 'TcSMUG L peptide'
+  [11:13] 'medical-jargon-google-easy' -> 'ex vivo'
+  [15:16] 'medical-jargon-google-easy' -> 'epimastigotes'
+  [18:21] 'medical-jargon-google-easy' -> 'luminal surface epithelium'
+  [26:30] 'medical-jargon-google-easy' -> 'TcSMUG L binding sites'
+  [32:34] 'medical-jargon-google-easy' -> 'luminal surface'
+  [36:38] 'medical-jargon-google-easy' -> 'posterior midgut'
+  [42:44] 'medical-jargon-google-easy' -> 'fluorescence microscopy'

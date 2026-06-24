@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0894
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you had any surgeries in the past? Yeah, I have, I actually had it to repair an undescended testicle. Oh, wow, do you remember it at all? No, nothing about it, I had that done when I was a baby.

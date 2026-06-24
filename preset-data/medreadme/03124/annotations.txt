@@ -1,0 +1,8 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [1:12] 'medical-jargon-google-easy' -> 'Supporting Excellence in End - of - life care in Dementia'
+  [13:14] 'abbr-medical' -> 'SEED'

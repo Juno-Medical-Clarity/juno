@@ -1,0 +1,10 @@
+Using data from clinical trials, the study aimed to describe how anifrolumab, an immunosuppressive drug, operates effectively and safely in patients with moderate to severe full-body or systemic lupus erythematosus (SLE), an inflammatory disease in which immune cells mistakely attack joints, skin, brain cells and more, under standard treatment.
+We analyzed two randomized, 52-week trials, called TULIP-1 and TULIP-2, which involved injected anifrolumab treatment (every 4 weeks for 48 weeks).
+To track patient health, we used specific assessments along with measurements of average anifrolumab blood concetration (Cave) to compare anifrolumab-treated patients, sham-treatment patients, patients who completed treatment, and patients with increased immune-specific genetic markers.
+Trends between health and key safety events were assessed graphically.
+Of patients in TULIP-1/TULIP-2 who got anifrolumab (91 received 150 mg, 356 received 300 mg) or sham treatment (366 patients), 574 completed treatment, of whom 470 had high levels of immune-specific molecules.
+Patient health favored anifrolumab 300 mg vs dummy treatment across all analuzed populations.
+Higher anifrolumab levels were linked to greater treatment success.
+There was no evidence of treatment-related safety events through week 52 in patients receiving anifrolumab 150 or 300 mg.
+Whil higher anifrolumab levels predicted greater success, consistent positive benefit favouring anifrolumab 300 mg vs dummy treatment was seen across assessments in subgroups of the TULIP trials.
+There was no evidence of treatment-related safety events.

@@ -1,0 +1,5 @@
+drug_focus: Xarelto
+question_type: Action
+section_title: CLINICAL PHARMACOLOGY > Mechanism of Action
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610
+sample_id: 0161

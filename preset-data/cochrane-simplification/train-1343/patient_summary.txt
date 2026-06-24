@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1343  |  gem_id: gem-cochrane-simplification-train-1344  |  doi: 10.1002/14651858.CD006034.pub2
+
+We searched for and summarized all the randomized controlled trials that looked at using these drugs to treat bleeding or pain related to an IUD. We also included trials that studied the use of these drugs to prevent these problems. We found 15 trials from 10 countries, with more than 2700 women studied. These drugs reduced both bleeding and pain with intrauterine device use. Whether one drug is better than another was not clear. Similarly, the best dosing was not clear. Preventive treatment with these drugs around the time of IUD insertion had mixed results. No serious problems were reported, but stomach upset and sleepiness can occur with this class of drugs. Because of their safety, low cost, and wide availability, these drugs are appropriate treatment for women who have troublesome bleeding or pain with IUD use.

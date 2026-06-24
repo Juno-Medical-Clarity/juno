@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0673
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the left elbow.
+- Severity: Worsening pain.
+- Duration: Approximately one week since the injury.
+- Associated symptoms: None mentioned.
+- Relevant medical history: None mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Other concerns: Patient prefers to manage pain without medication, has tried icing the elbow.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No plan provided.)

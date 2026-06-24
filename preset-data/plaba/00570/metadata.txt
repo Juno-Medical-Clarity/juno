@@ -1,0 +1,5 @@
+pmid:        25565640
+question:    44
+adaptation:  adaptation1
+title:       Individual-Specific, Beat-to-beat Trending of Significant Human Blood Loss: The Compensatory Reserve
+sentences:   9

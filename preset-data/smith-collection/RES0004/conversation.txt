@@ -1,0 +1,280 @@
+# Smith Collection Transcript: RES0004
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Its nice to meet you whats your name
+
+Patient: It my name is scott its nice to meet you too
+
+Doctor: Alright um so scott how old are you
+
+Patient: 15
+
+Doctor: OK what brings you in today
+
+Patient: um ive had a sore throat now for a couple of weeks and its just not going away
+
+Doctor: Couple of weeks ok so about two weeks three weeks
+
+Patient: Yeah about two to three weeks
+
+Doctor: OK um what does it feel like is it is it kind of like a burning feeling is it more like an itchy feeling what does it feel like
+
+Patient: uh i would say its kinda yeah like burnin or burning or scratchy
+
+Doctor: OK and does it hurt when you swallow
+
+Patient: It does yeah uh if my throat hurts when im eating or um uh or swallowing like liquids as well but cold stuff seems to make it feel a little bit better
+
+Doctor: OK good and does your neck hurt too
+
+Patient: um a little tender ive noticed the um some lumps at the front of front of my neck that have been a bit sore
+
+Doctor: OK and is it mostly sore kind of like midline or is it more sorta one side versus the other
+
+Patient: um id say maybe the uh the right side is a little bit more sore but i think i can feel it on both sides of my neck
+
+Doctor: OK and how bad would you say your discomfort is 1 to 10 10 being the worst
+
+Patient: um i would say maybe a two or three if i move my neck i i can feel it more but otherwise i can just barely notice that its there
+
+Doctor: OK so its not preventing you from sleeping going to school playing things like that
+
+Patient: No its more so the sore throat when swallowing
+
+Doctor: OK ok um have you noticed a fever at all
+
+Patient: um i have yeah i felt hot and um i checked my temperature this morning and it was 387 i think it was is that a fever
+
+Doctor: Yeah id say thats a fever we can also do another temperature check today
+
+Patient: OK
+
+Doctor: um yeah but that definitely sounds like a fever um have you noticed rashes anywhere
+
+Patient: um yeah ive had this uh this like red i guess pink rash that i have noticed its come over my chest and and belly area
+
+Doctor: OK how big is it is it more than a centimeter
+
+Patient: uh huh yeah its pretty well i mean its kind of um spread out over over an area like its not all continuous i guess you can kind of see patches or blotches
+
+Doctor: OK and is it raised
+
+Patient: No its its not raised
+
+Doctor: OK ok is it itchy
+
+Patient: uh no its not itchy
+
+Doctor: Painful
+
+Patient: No not painful
+
+Doctor: OK and is it bleeding or oozing anything like pus
+
+Patient: um no its not nothing like that its just pink and red and its just kind of shown up over the last little while ive noticed it on my um like hands a little bit too
+
+Doctor: OK and you said this started when like was this before the sore throat or after
+
+Patient: Oh i cant like remember the onset i i think that the sore throat started first and maybe a rash came a little bit later
+
+Doctor: OK ok and have you noticed that your that your glands are swollen
+
+Patient: I think so um maybe thats whats swollen in my neck
+
+Doctor: OK ok um how about coughing
+
+Patient: No i havent had a cough no
+
+Doctor: And how about a stuffy nose or or a runny nose
+
+Patient: Nothing like that
+
+Doctor: OK body aches
+
+Patient: Yeah i felt so some muscle aches for sure
+
+Doctor: OK upper limbs or lower limbs
+
+Patient: I say i got a whole body i just feel like my muscles and joints are sore
+
+Doctor: OK yeah and or do you have any headaches
+
+Patient: uh no i havent really had any headaches
+
+Doctor: No ok and hows your appetite are you still eating well
+
+Patient: um it might be a little ah might have been a little bit down i just kind of havent been feeling so great so im ive probably eating less the last few weeks yeah
+
+Doctor: Have you been around anyone who may have been sick recently
+
+Patient: Yeah actually i think a few of my friends or there was somebody in my gym class knew that i sounded like they had similar symptoms
+
+Doctor: OK ok and when was this
+
+Patient: um uh now that i think about it probably about three or four weeks ago
+
+Doctor: OK and were they ever treated for that did they see a doctor
+
+Patient: um im not sure
+
+Doctor: No ok no worries
+
+Patient: I just remember them being off for school cause they were they were sick
+
+Doctor: OK yeah any issues with your eyes
+
+Patient: No
+
+Doctor: No nothing like crusting or pus coming out of your eyes red eye anything like that
+
+Patient: um no that well did they might have looked maybe a little bit more more red red then usual but i havent noticed any anything in terms of itchiness or um discharge
+
+Doctor: OK any nausea or vomiting
+
+Patient: um no nausea or vomiting
+
+Doctor: OK how how about your stools have they been normal have you had diarrhea constipation anything like that
+
+Patient: No changes to bowel habits
+
+Doctor: OK how about urine
+
+Patient: um thats been ok
+
+Doctor: OK ok um have you ever had these symptoms before
+
+Patient: um i mean ive had sore throats in the past but not while feeling like this though
+
+Doctor: Yeah ok when was the last time you had a sore throat
+
+Patient: um i dont know maybe when i was a kid
+
+Doctor: OK
+
+Patient: Its been awhile
+
+Doctor: Yeah like a strep throat kind of thing or or more viral
+
+Patient: Yeah i do remember getting antibiotics when i was younger
+
+Doctor: OK ok and are you otherwise healthy do you have any medical conditions
+
+Patient: I was diagnosed with uh with asthma
+
+Doctor: OK and are you on any medications for that
+
+Patient: um yeah so i i just use ah ventolin as needed but otherwise oh and then i take flovent daily so um
+
+Doctor: OK
+
+Patient: I think thats the one theres theres a couple inhalers that that i take
+
+Doctor: OK ok and any other medications
+
+Patient: uh sometimes ill take um like reactine or some other type of allergy pill but thats it
+
+Doctor: OK what are you allergic too
+
+Patient: um mostly seasonal allergies bug me like um yeah like seasonal allergies and dust maybe
+
+Doctor: OK and are you up to date with all your immunizations
+
+Patient: Yeah my mom makes me get the flu shot every year
+
+Doctor: OK good and its ok have you seen another doctor for the symptoms at all have you been worked up for that any blood work testing done for it already
+
+Patient: No i thought i would have felt better by now and so i havent seen anybody but its kind of just been going on now not seeming to get better so wanna come see somebody
+
+Doctor: Yeah for sure have you tried anything for your symptoms any medications anything over the counter
+
+Patient: um yeah ive tried some tylenol and its i i think what is it advil and that definitely is helped with some of the kind of aches and pains but theyve come right back
+
+Doctor: OK um any family history of lung issues heart issues
+
+Patient: um no nothing like that um no
+
+Doctor: Yeah ok how about cancers
+
+Patient: I i think my grandfather had a like pancreatic cancer
+
+Doctor: OK ok um alright so do you live at home correct
+
+Patient: Yeah i live with my parents and my younger sister shes 12
+
+Doctor: Shes 12 is she healthy
+
+Patient: Yeah she is
+
+Doctor: OK good and have you guys traveled recently
+
+Patient: um no weve been weve been at home
+
+Doctor: OK ok um and do you smoke
+
+Patient: No i dont smoke
+
+Doctor: No how about marijuana
+
+Patient: I ive tried it once or twice but it was just those couple times nothing that i do or used regularly
+
+Doctor: OK and how about alcohol
+
+Patient: No no alcohol
+
+Doctor: No alcohol ok are you sexually active
+
+Patient: No im not
+
+Doctor: No ok um is there a possibility that or actually sorry i should rephrase that have you kissed anyone recently
+
+Patient: um i well i i guess i kinda have a girlfriend now um that we that i started hanging out with about two months ago
+
+Doctor: OK ok
+
+Patient: And so i guess yes
+
+Doctor: OK alright well thats good um have has she had any of these symptoms
+
+Patient: uh well she she was wasnt feeling well for awhile back but i dont think it was this bad for her
+
+Doctor: OK actually and shes better now
+
+Patient: Yeah shes better now
+
+Doctor: OK alright so you mentioned youre not sexually active if you were to be make sure you use protection um and ok so everything at
+
+Patient: Home is ok then no ones no ones sick at home you mentioned right
+
+Doctor: Yeah no ones no ones sick at home
+
+Patient: OK and school is going ok
+
+Doctor: um yeah schools been been going ok for the most part its been tough these last few weeks feeling like this though
+
+Patient: Yeah for sure and are you and your girlfriend in an exclusive relationship
+
+Doctor: uh i i think so yeah
+
+Patient: OK i ask because theres something called what you may be familiar with um its called the kissing disease in medical terminology its called mono as caused by a virus called ebv and so it could be that so were covering all our bases
+
+Doctor: Oh ive heard of mono before
+
+Patient: Yeah
+
+Doctor: OK
+
+Patient: Its its likely it could be up there in terms of what you have so i think those were all the questions i had for you did you have any questions for me anything you wanted to add
+
+Doctor: um no i think thats you covered everything
+
+Patient: OK alright so i will will go off a few well try to cover our basis and get you tested for mono which i would have to do like a monospot test and we can do rapid strep test as well to see if he has something called strep throat but yeah well see what those results come back as and well go from there does that sound good
+
+Doctor: Yeah no that sounds good
+
+Patient: OK thank you

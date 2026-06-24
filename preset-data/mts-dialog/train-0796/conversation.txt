@@ -1,0 +1,10 @@
+Doctor: How are you doing today, ma'am?
+Patient: I'm doing just fine.
+Doctor: Any kind of alcohol consumption?
+Patient: Nope.
+Doctor: Have you ever taken any kind of illegal drugs?
+Patient: Nope.
+Doctor: What about smoking?
+Patient: No.
+Doctor: Are you still working?
+Patient: No, sir. I had issues with my knees, and they had to put in the new ones. I was kind of disabled and that's why I retired.

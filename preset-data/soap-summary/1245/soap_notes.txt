@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1245
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has high sensitivity to Coumadin.
+- Patient experiences bruising and bleeding episodes.
+
+Objective:
+- Bloodwork results: high level of sensitivity to Coumadin.
+
+Assessment:
+- High sensitivity to Coumadin.
+
+Plan:
+- Adjust Coumadin dosage to a much lower dose to help reduce bruising and bleeding episodes.

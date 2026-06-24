@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1252
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not have a known drug allergy.
+- Patient's family history of disease is being inquired about, but specific details are not provided in the conversation.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

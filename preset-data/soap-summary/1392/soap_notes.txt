@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1392
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- History of gallbladder removal surgery a few years ago.
+- History of eye surgery.
+- History of dilation and curettage (D&C) surgery.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

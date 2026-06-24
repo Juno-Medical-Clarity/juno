@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0183  |  gem_id: gem-cochrane-simplification-train-184  |  doi: 10.1002/14651858.CD012598.pub2
+
+The quality of included studies was generally very low due to the risk of bias, small sample size, and a lack of information. We found very low quality evidence that fixed reduction of dialysate temperature decreased the incidence of IDH compared with standard dialysate and increased the discomfort rate. When patient discomfort is minimal, reduction of the dialysate temperature may be an option to reduce IDH. However, no study reported the long-term outcomes such as death or heart disorders. There is limited data suggesting that the reduction of dialysate temperature may prevent IDH, but the conclusion is very uncertain. Larger studies that measure important outcomes such as IDH or mortality for HD patients are required to assess the effect of reducing dialysate temperature.

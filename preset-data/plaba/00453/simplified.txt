@@ -1,0 +1,13 @@
+The study aims to create an osteoporosis (or bone weakening) self assessment (OSTAi) tool and compare it with the National Osteoporosis Foundation 2013 recommendations (NOF 2013) or bone mineral density (BMD) or hardness testing among Taiwan postmenopausal women who completed their final menstrual or sexual cycle.
+Taiwan Osteoporosis Associated (TOA) had a nationwide BMD survey by a bus installed with an X-ray machine between 2008 and 2011.
+All participants completed a questionnaire, which had socioeconomic and risk factors of osteoporotic fracture in fracture risk tool.
+
+
+
+12,175 Taiwan postmenopausal women participated in this survey.
+
+There are 6393 (52.5%) participants below the cutoff and whose risk of osteoporosis was 57.5% (3647/6393).
+The measurements for OSTAi and NOF were noteworthy.
+The sensitivity (accuracy of detecting people with the disease) and specificity (accuracy of detecting  people without the disease) of OSTAi at the cutoff and NOF 2013 to detect osteoporosis were 73.1%, 62.0% and 78.3%, 45.7%, respectively.
+Known as OSTA for Asian populations, OSTAi is useful to identify Taiwan postmenopausal women with osteoporosis.
+Compared to NOF 2013, OSTAi may be an easier, better tool to suggest BMD measurement by bone scans in this area.

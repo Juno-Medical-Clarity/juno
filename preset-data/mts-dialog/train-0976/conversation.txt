@@ -1,0 +1,16 @@
+Doctor: What's a young thirty one year old like you doing in my office today, ma'am?
+Patient: Well, I got referred to P T after I had a fall.
+Doctor: When was your fall?
+Patient: Um, it was on October third two thousand eight.
+Doctor: What happened when you fell?
+Patient: I tripped over my dog's toy.
+Doctor: Did you twist your foot or ankle?
+Patient: Yeah, my left foot inverted.
+Doctor: Have you had any imaging done on this foot?
+Patient: Yeah, um, I've had x rays and an M R I already.
+Doctor: What were the impressions of those images?
+Patient: They told me that it was unremarkable.
+Doctor: How was the pain progressed since the onset?
+Patient: Well, after a month or so, the pain is still so bad I can't do any of my activities.
+Doctor: How long have you been wearing this walking boot?
+Patient: Um, it's been about a month now.

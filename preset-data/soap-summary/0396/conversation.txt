@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0396
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any difficulty in swallowing? No. Any nausea, vomiting or blood in your vomit? No, no vomit at all. No problem there. Okay, any stomach pain? No. Okay.

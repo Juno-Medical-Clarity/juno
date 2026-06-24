@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1260
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the toes on the right side, numbness in the right toes, tingling sensation, feeling like the leg has fallen asleep, shoulder pain on both sides.
+- Severity: Moderate pain described as sharp, radiating pain that sometimes feels like it gets worse at night.
+- Duration: Symptoms have been present for almost one year, worsened recently.
+- Associated symptoms: Numbness and tingling in the right toes; occasional numbness in the left toe; difficulty sleeping at night.
+- Relevant medical history: High blood pressure, hypothyroidism, thrombocythemia.
+- Allergies: No sinus allergies.
+- Patient concerns: Multiple issues and problems, particularly the pain and numbness in toes.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- Paresthesia in the toes of the right foot with possible involvement of the left toe.
+
+Plan:
+- (No specific plan or recommendations provided.)

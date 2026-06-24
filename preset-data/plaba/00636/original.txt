@@ -1,0 +1,15 @@
+Aim: Leg edema, observed on comprehensive geriatric assessment (CGA) of 142 elderly outpatients with a variety of chronic diseases, was studied clinically to clarify its incidence and its associated risk factors.
+Methods: The severity of pitting edema was assessed at 3 points, namely, the pretibial edge, medial malleolus, and the dorsum of the foot.
+On palpation, edema was graded as 0 to 3 for each point on one leg, the sum of which was used as the edema score.
+According to the edema score, subjects were divided into 3 groups; the moderate to severe (MS) group, the slight to mild (SM) group, and the group without pitting edema.
+The MS group was defined as having an edema score of 4 or more or edema of grade 2 or more, while the SM group was defined as having an edema score of 2 to 3 points without edema of grade 2 or more.
+The status of underlying disease, vascular risks, varicose veins, medications, daily activity, nutrition, total protein (TP), albumin, brain natriuretic peptide (BNP), and the estimated glomerular filtration rate (eGFR) were compared among the 3 groups.
+Results: There were 36 subjects in the MS group and 19 subjects in the SM group.
+Diabetes, atrial fibrillation, varicose veins, and polypharmacy were more frequent in the MS group than in the control group.
+Sedentary life style, house-bound, and gait trouble were significantly more frequent in the MS and SM groups.
+There were no significant differences in the scores of the Mini-Nutritional Assessment Short Form among the groups, although both the body weight and calf circumference in the MS group were significantly greater than those in the group without pitting edema.
+Low serum TP, albumin and eGFR were seen in the MS group as well as high BNP levels.
+Multiple regression analysis revealed diabetes, varicose veins, sedentarism, and hypoalbuminemia as risk factors associated with leg edema (R(2)=0.365, p<0.0001).
+Conclusion: Leg edema was frequent in the elderly outpatients and was associated strongly with diabetes, varicose veins, sedentarism, and hypoalbuminemia.
+These findings suggest that advising against a sedentary life style could help the resolution of edema, and also indicates the clinical usefulness of CGA.
+Furthermore, leg edema should be seriously considered along with nutritional assessment because edema could influence various anthropometric parameters.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3378  |  gem_id: gem-cochrane-simplification-train-3379  |  doi: 10.1002/14651858.CD001115
+
+This review has collected information from randomised controlled trials comparing continuous to intermittent nebulised delivery methods in acute asthma attacks. Overall, differences were found between the two methods, with continuous nebulisers producing a modest reduction in admissions compared to intermittent beta-agonist therapy. This finding was especially pronounced in severe acute asthma. Continuous nebuliser therapy may be more effective than intermittent nebulisers for delivering beta-agonist drugs to relieve airway spasm in selected asthma populations.

@@ -1,0 +1,5 @@
+drug_focus: glucagon
+question_type: Information
+section_title: DESCRIPTION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f143db10-e889-41c3-84ed-603a0ab02f61
+sample_id: 0479

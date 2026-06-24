@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2575  |  gem_id: gem-cochrane-simplification-train-2576  |  doi: 10.1002/14651858.CD012753.pub2
+
+This review found a single randomised controlled trial that examined the short-term effects of cooling plus xenon for infants with HIE. This trial enrolled 92 participants. Cooling plus xenon did not improve clinical outcomes before discharge from the hospital compared with cooling alone. Data on long-term development were not provided. Current low quality evidence is inadequate to show whether cooling plus xenon improves survival and development of newborn babies with HIE. Evidence is up-to-date as of August 2017.

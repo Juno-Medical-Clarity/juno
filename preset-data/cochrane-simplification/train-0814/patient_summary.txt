@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0814  |  gem_id: gem-cochrane-simplification-train-815  |  doi: 10.1002/14651858.CD001957.pub6
+
+We included six studies, which comprised two prevention trials (a total of 327 young to middle-aged adults in Russia) and four treatment trials (a total of 1196 teenagers and adults in France and Germany). The findings from the two prevention trials did not show that Oscillococcinum®can prevent the onset of flu. Although the results from the four other clinical trials suggested that Oscillococcinum®relieved flu symptoms at 48 hours, this might be due to bias in the trial methods. One patient reported headache after taking Oscillococcinum®. The evidence is current to September 2014. The overall standard of research reporting was poor, and thus many aspects of the trials' methods and results were at unclear risk of bias. We therefore judged the evidence overall as low quality, preventing clear conclusions from being made about Oscillococcinum®in the prevention or treatment of flu and flu-like illness.

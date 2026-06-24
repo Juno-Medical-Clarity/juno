@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2684  |  gem_id: gem-cochrane-simplification-train-2685  |  doi: 10.1002/14651858.CD003867
+
+This review aimed to assess the effectiveness and safety of single dose dipyrone in adults with moderate/severe renal colic pain but there were too few data to obtain clear results. The data available indicated that intravenous dipyrone was more effective than intramuscular dipyrone, and combining dipyrone with antispasmolytic agents did not improve its efficacy. Commonly reported side effects included dry mouth and drowsiness, and some patients experienced pain at the injection site. Agranulocytosis was not reported.

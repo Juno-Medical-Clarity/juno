@@ -1,0 +1,13 @@
+Patient: Hey, man.
+Doctor: Hey, how's it going? It's been a while.
+Patient: Yeah, it's been a while that's for sure.
+Doctor: So anything new I should know of?
+Patient: Uh I had some stuff on my chest that I saw a dermatologist for.
+Doctor: What type of stuff?
+Patient: I think they were cysts.
+Doctor: Any cause for concern?
+Patient: Nah, the dermatologist said everything came back alright.
+Doctor: Glad to hear that.
+Patient: Me too. I'm actually here to see if you can write me up a P P D slip.
+Doctor: Is this for a job?
+Patient: Yeah, my last one was negative, but I need to get another one. Last one I did was in nineteen ninety four.

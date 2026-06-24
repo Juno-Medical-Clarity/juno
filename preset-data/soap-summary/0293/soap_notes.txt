@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0293
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports that everyone in the family is quite healthy and is not aware of any medical problems.
+- Patient is sexually active with her boyfriend.
+- Patient does not use drugs, alcohol, or smoke.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

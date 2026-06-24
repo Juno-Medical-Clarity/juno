@@ -1,0 +1,6 @@
+Doctor: Do you have any medical conditions that I should know about?
+Patient: Yeah, I have chronic diarrhea, and C O P D.
+Doctor: Are you a smoker?
+Patient: Yes, I have been for a long time.
+Doctor: How would you characterize your smoking level?
+Patient: Um, I'd say it's pretty heavy.

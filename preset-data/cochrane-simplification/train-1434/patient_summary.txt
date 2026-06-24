@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1434  |  gem_id: gem-cochrane-simplification-train-1435  |  doi: 10.1002/14651858.CD003654.pub4
+
+We found 18 trials in 141,807 participants to answer the question. All-cause mortality was not different between CCBs and any other antihypertensive drug classes. Diuretics were found to be better at reducing total cardiovascular events than CCBs and CCBs were found to be better at reducing total cardiovascular events than β-blockers. This information will be helpful for health professionals and patients to assist them in choosing the best drug for initial treatment of hypertension.

@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 1103
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 5.5-year-old boy.
+- Complains of a lot of pain in both feet.
+- Observed that his feet rotate inwards.
+- Family is concerned about the condition and urgency for surgical intervention.
+- Inquiry made about the risks of infection related to surgery.
+- Concern about the ability to walk post-surgery.
+
+Objective:
+- Physical examination shows rocker bottom feet.
+
+Assessment:
+- Diagnosis: Rocker bottom feet.
+- Surgical recommendation: Subtalar arthrodesis, possible autograft, and lengthening of the Achilles tendon.
+
+Plan:
+- Proceed with the surgery as soon as possible.
+- Use prophylactic antibiotics to minimize the risk of infection (historically low risk, less than 1%).
+- Post-operative care will involve a period of nonweightbearing.
+- Discussed general risks associated with surgery, including anesthesia risks, infection, bleeding, changes in sensation and motion, hardware failure, and potential need for further procedures.

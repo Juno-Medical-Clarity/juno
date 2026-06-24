@@ -1,0 +1,5 @@
+drug_focus: Rivaroxaban
+question_type: Action/effectiveness
+section_title: Rivaroxaban works by decreasing the clotting ability of the blood.
+source_url: https://medlineplus.gov/druginfo/meds/a611049.html
+sample_id: 0199

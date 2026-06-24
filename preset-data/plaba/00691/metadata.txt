@@ -1,0 +1,5 @@
+pmid:        24381414
+question:    54
+adaptation:  adaptation1
+title:       First Trimester Maternal Serum Screening Using Biochemical Markers PAPP-A and Free β-hCG for Down Syndrome, Patau Syndrome and Edward Syndrome
+sentences:   5

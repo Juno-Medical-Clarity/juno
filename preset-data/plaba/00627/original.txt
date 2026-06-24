@@ -1,0 +1,14 @@
+Introduction: Low-dose interleukin-2 (IL-2) selectively restores disturbances of regulatory T cells (Treg) and conventional T cells, resulting in the induction of remission in patients with systemic lupus erythematosus.
+However, to date no research has been carried out on the efficacy of low-dose IL-2 in the treatment of refractory lupus nephritis (LN).
+The aim of the study reported here was to investigate the renal response to low-dose IL-2 in patients with refractory LN.
+Methods: The study population comprised ten patients with refractory LN who failed to achieve complete response or who had relapsed while being treated with at least two conventional immunosuppressive agents.
+One treatment cycle consisted of IL-2 at a dose of 1 million IU administered subcutaneously every other day for 2 weeks followed by a 2-week break.
+All patients received three cycles of IL-2 and were then followed up for another 12 weeks without any increase in the dose of previous immunosuppressive agents and steroids.
+Results: Of the ten patients enrolled in the study, seven (70%) achieved ≥ 50% improvement in proteinuria at 12 weeks after initiating treatment with IL-2.
+Median proteinuria was significantly reduced by 50.3% at week 12, from 1.83 (interquartile range [IQR] 1.23-3.21) g/24 h at baseline to 0.91 (IQR 0.52-1.60) g/24 h at 12 weeks (P = 0.005).
+This was accompanied by a 71% reduction in urine erythrocytes, from 64/µl (IQR 24-102/µl) at baseline to 18/µl (IQR 2-20/µl) at 12 weeks (P = 0.018).
+Anti-ds DNA was decreased from 27.9 (IQR 7.6-40.28) IU/ml at baseline to 14.1 (IQR 7.3-20.12) IU/ml (P = 0.021) at week 12, while complements C3 and C4 were slightly increased (P = 0.445, P = 0.241, respectively).
+A significant expansion of Treg cells, from 9.3% at baseline to 16.6% at 12 weeks, was also found (P < 0.05).
+No serious adverse events occurred during the treatment period.
+Conclusions: Low-dose IL-2 therapy may have a promising role in the treatment of refractory LN as an alternative and safe therapeutic approach.
+It may be used as multi-target combination therapy in clinical practice.

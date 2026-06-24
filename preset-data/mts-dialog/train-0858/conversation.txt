@@ -1,0 +1,13 @@
+Doctor: So where do you stay?
+Patient: I stay nearby in my apartment.
+Doctor: Alone?
+Patient: No, I stay with my boyfriend.
+Doctor: Okay, and do you smoke and drink?
+Patient: Both.
+Doctor: And how much would say you smoke per day?
+Patient: Well, I smoke a lot. Seven to eight packs per day.
+Doctor: Oh! And for how many years?
+Patient: I don't remember exactly but for many, many years, I have a long history of chain smoking.
+Doctor: Hm. And alcohol?
+Patient: Same, I drink heavily. I have been drinking for many years.
+Doctor: Hm.

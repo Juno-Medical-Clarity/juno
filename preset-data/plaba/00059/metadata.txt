@@ -1,0 +1,5 @@
+pmid:        32443304
+question:    5
+adaptation:  adaptation3
+title:       A comparison of the clinical effects of arthroscopic treatment for popliteal cyst between techniques using one posteromedial portal and two posteromedial portals
+sentences:   13

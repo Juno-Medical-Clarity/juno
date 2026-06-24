@@ -1,0 +1,5 @@
+pmid:        30784327
+question:    17
+adaptation:  adaptation1
+title:       Is placing a victim in the left lateral decubitus position an effective first aid intervention for acute oral poisoning? A systematic review
+sentences:   4

@@ -1,0 +1,9 @@
+The objective was to determine the strength of relationship between maternal free beta human chorionic gonadotropin (β-hCG) concentrations and rates of adverse pregnancy outcomes.
+Consecutive records of the database of our Down screening project were assessed for free β-hCG levels and pregnancy outcomes.
+Pregnancies with foetal chromosomal or structural anomalies and those with underlying disease were excluded.
+Free β-hCG levels of < 0.5, > 0.5 and < 2.0, and ≥ 2.0 MoM were categorised as low, normal and high, respectively.
+Of 17,082 screened women, 13,620 were available for analysis.
+In the first trimester (n = 8150), low β-hCG levels significantly increased risk for intrauterine growth restriction (IUGR), preterm birth, low birth weight (LBW) and low Apgar score with relative risk of 1.66, 1.43, 1.83 and 2.89; whereas high β-hCG group had a significant decreased risk of preterm birth and GDM with relative risk of 0.73 and 0.62.
+In the second trimester (n = 5470), both low and high β-hCG groups had significant increased risks of the most common adverse outcomes, i.e. spontaneous abortion, IUGR and preterm birth.
+In conclusion, abnormally low (< 0.5MoM) or high (> 2.0 MoM) free β-hCG levels are generally associated with an increased risk of adverse pregnancy outcomes.
+Nevertheless, high free β-hCG levels in the first trimester may possibly decrease risk of preterm delivery and GDM.

@@ -1,0 +1,5 @@
+pmid:        18372539
+question:    17
+adaptation:  adaptation1
+title:       How to act in mechanical airway obstruction in adults
+sentences:   7

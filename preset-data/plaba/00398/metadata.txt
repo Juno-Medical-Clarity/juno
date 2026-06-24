@@ -1,0 +1,5 @@
+pmid:        29996156
+question:    31
+adaptation:  adaptation1
+title:       Prevention and Treatment of Antipsychotic-induced Tardive Dyskinesia
+sentences:   10

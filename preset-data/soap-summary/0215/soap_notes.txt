@@ -1,0 +1,30 @@
+# SOAP Notes — Sample 0215
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Headache for the past 2 days
+- Worsening over time
+- Feels different from usual migraines
+- Associated symptoms: fatigue (started yesterday), sore throat, cough (started 2 days ago), shortness of breath, muscle aches
+- Tylenol and Advil provided temporary relief
+- Headache described as a band-like pressure in the front of the head
+- No nausea, vomiting, visual changes, neck stiffness, wheezing, sputum, blood, changes in smell or taste, weight changes, chest pain, lightheadedness, dizziness, diarrhea, urinary problems, or rashes
+
+Past Medical History:
+- PMHx: migraines, polymyalgia rheumatica
+- No current medications for these conditions
+- No hospitalisations or surgeries
+- SocHx: non-smoker, no alcohol or recreational drug use
+- FHx: migraines run in the family
+- No recent travel
+- Possible exposure to a sick friend during dinner outing
+
+Objective:
+- 
+
+Assessment:
+- 
+
+Plan:
+- Physical exam
+- Investigations to determine cause of symptoms

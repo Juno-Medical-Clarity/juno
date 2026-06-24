@@ -1,0 +1,34 @@
+Doctor: Hello, miss. Before we begin your physical, could you verify your age and ethnicity for me, please?
+Patient: I'm forty two years old and identify as white.
+Doctor: Thank you. I also see that you're here for a follow up for your asthma, correct? How is your asthma?
+Patient: That's right. Oh, man. My asthma has been getting worse over the last three months. My allergies are also acting up again.
+Doctor: Oh, no. Has anything changed that may have made your allergies worse?
+Patient: Well, my husband has been hauling more corn in since it's busy season. I think that might have made it worse.
+Doctor: Are you taking any medications to alleviate your asthma and allergies?
+Patient: I'm using my inhaler every day for my asthma. Here are the other medications and treatments I've been using. I know I wouldn't have remembered, so I put them on a paper for you to see.
+Doctor: Let me take a look. I see you have been taking Allegra for your allergies. Has that been helping?
+Patient: Eh. It kind of helps when I do take it.
+Doctor: You don't take it every day then?
+Patient: Nope. Only when I feel like I need to.
+Doctor: I see. What about the Flonase? Has that been helping?
+Patient: I'm not taking that right now, but it helped me in the past.
+Doctor: I also see you took Advair in the past, correct? Do you still take it?
+Patient: I did, but I stopped taking it because it started to annoy my private area.
+Doctor: I understand. Speaking more on this. Let's begin your physical. Do you have anything you'd like to add that you're starting to notice more?
+Patient: Oh, yeah. I feel like I'm easily annoyed right before my period. It could also be my husband, but he likes to say it's because I'm about to start my period.
+Doctor: I see. Do you see any other increased symptoms right before your menstrual cycle?
+Patient: Yeah. I feel like I've seen an increase in all the signs before my period. I'm also getting more impatient around that time, but when I'm not on my period, I feel like my mood is better.
+Doctor: When do you see your mood change?
+Patient: My husband says it's bad the week before I start my period, but I think it gets better a day after I start.
+Doctor: Have you seen any bleeding during your cycle?
+Patient: Not as much anymore. Just some spots here and there.
+Doctor: I see. What about hot flashes or night sweats?
+Patient: Nope. I feel fine most of the time.
+Doctor: That's good. I'm looking at your chart right now and it says you showed a U T I present, correct? Your test showed blood in your urine.
+Patient: Yeah, that's correct.
+Doctor: Has your urine been checked since then?
+Patient: Nope.
+Doctor: I see. I'll order another urine test along with additional lab tests so that we can complete your physical.
+Patient: I actually just had some lab work done because it was required for a life insurance application. Crazy, right? Here's the form with all the details for the lab work.
+Doctor: Oh, perfect. I see they looked at your cholesterol and other areas. Could you send that to me when you get the results?
+Patient: Of course. I'll get that sent to you A S A P.

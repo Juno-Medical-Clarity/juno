@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1283
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I was working when it happened so we are going through workers comp. Okay. Don't worry. Let's see. Oh wow! Yeah, this arm, it was a hot oil. Yeah, too bad, looks like from elbow to wrist. The whole medial side is burnt. I am using cool packs since it happened. My friend is helping me so much, he drove me to Emergency Department. Okay, how old are you? I am forty one. What is your job? I mean what do you do? I am a cook at coffee shop.

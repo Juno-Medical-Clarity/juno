@@ -1,0 +1,5 @@
+drug_focus: oxycodone
+question_type: Overdose
+section_title: BOXED WARNING
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f06d3690-3fd4-407d-8f8d-ab0c354e61bd
+sample_id: 0028

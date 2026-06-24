@@ -1,0 +1,10 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-easy' -> 'Alexander technique'
+  [10:13] 'medical-jargon-google-easy' -> 'multifidus muscle onset'
+  [16:20] 'medical-jargon-google-easy' -> 'straight leg raise test'
+  [24:26] 'medical-jargon-google-easy' -> 'multifidus muscle'

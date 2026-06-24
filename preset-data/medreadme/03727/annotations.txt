@@ -1,0 +1,8 @@
+source:      pnas
+side:        simple
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'embryo development'
+  [9:12] 'medical-jargon-google-easy' -> 'hatched blastocyst stage'

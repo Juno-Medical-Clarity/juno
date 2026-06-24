@@ -1,0 +1,8 @@
+source:      wiki
+side:        simple
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'embryos'
+  [13:14] 'medical-jargon-google-easy' -> 'dentary'

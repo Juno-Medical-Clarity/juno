@@ -1,0 +1,1 @@
+Using only regions with conserved recombination rates between and within species and accounting for multiple covariates, our data support the conclusion that recombination is positively related to diversity because recombination modulates Hill - Robertson effects in the genome and not because recombination is predominately mutagenic.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0425
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you married? No sir, I'm happily single. Where do you work? I am a press worker, I work in a newspaper printing. Do you smoke? Have you ever taken any Illicit drug? No, none of them. What about alcohol? I don't take any now. I was a heavy drinker, but I quit in the seventies.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1192
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I don't think we need to do any major procedure right now. Okay.

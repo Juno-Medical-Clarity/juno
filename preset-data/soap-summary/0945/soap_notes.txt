@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0945
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient is uncertain about family history of disease and will check and provide information later.
+
+Objective: 
+- (No objective data mentioned)
+
+Assessment: 
+- (No assessment provided)
+
+Plan: 
+- Patient to check family history of disease and report back.

@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'Mlh1'
+  [5:6] 'general-complex' -> 'polymorphic'
+  [7:11] 'medical-jargon-google-easy' -> 'B6 and 129 strains'

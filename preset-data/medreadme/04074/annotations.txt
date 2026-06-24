@@ -1,0 +1,13 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Monocytes'
+  [2:9] 'medical-jargon-google-hard' -> 'Fas - dependent T - cell apoptosis'
+  [14:15] 'medical-jargon-google-easy' -> 'monocytes'
+  [15:18] 'medical-jargon-google-easy' -> 'T - cells'
+  [20:21] 'medical-jargon-google-easy' -> 'necrosis'
+  [25:28] 'medical-jargon-google-hard' -> 'pneumococcal virulence factor'
+  [28:29] 'medical-jargon-google-easy' -> 'pneumolysin'

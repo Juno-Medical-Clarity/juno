@@ -1,0 +1,9 @@
+Chronic kidney disease (CKD) is a prevalent worldwide public burden that increasingly compromises overall health as the disease progresses.
+Two of the most negatively affected tissues are bone and skeletal muscle, with CKD negatively impacting their structure, function and activity, impairing the quality of life of these patients and contributing to morbidity and mortality.
+Whereas skeletal health in this population has conventionally been associated with bone and mineral disorders, sarcopenia has been observed to impact skeletal muscle health in CKD.
+Indeed, bone and muscle tissues are linked anatomically and physiologically, and together regulate functional and metabolic mechanisms.
+With the initial crosstalk between the skeleton and muscle proposed to explain bone formation through muscle contraction, it is now understood that this communication occurs through the interaction of myokines and osteokines, with the skeletal muscle secretome playing a pivotal role in the regulation of bone activity.
+Regular exercise has been reported to be beneficial to overall health.
+Also, the positive regulatory effect that exercise has been proposed to have on bone and muscle anatomical, functional, and metabolic activity has led to the proposal of regular physical exercise as a therapeutic strategy for muscle and bone-related disorders.
+The detection of bone- and muscle-derived cytokine secretion following physical exercise has strengthened the idea of a cross communication between these organs.
+Hence, this review presents an overview of the impact of CKD in bone and skeletal muscle, and narrates how these tissues intrinsically communicate with each other, with focus on the potential effect of exercise in the modulation of this intercommunication.

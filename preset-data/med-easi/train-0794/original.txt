@@ -1,0 +1,1 @@
+Photochemical [ 1,3 ] shifts should proceed through suprafacial shifts; however, most are non-concerted because they proceed through a triplet state ( i.e., have a diradical mechanism, to which the Woodward-Hoffmann rules do not apply ).

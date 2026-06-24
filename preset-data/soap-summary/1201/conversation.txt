@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1201
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there, so you are here for your follow up? Yes, I had a surgical removal of multiple abscesses on my right thigh. Okay, let me quickly check your discharge sheet. Sure. It says you had multiple extensive subcutaneous abscesses on your right thigh and there was a massive open wound as well. Yes, that sounds about right! Okay, and then they did multiple abscesses excisions on your thigh. Yes, on my right thigh. Okay.

@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1005
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not use tobacco.
+- Patient inquires if the doctor uses tobacco and confirms they do not.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessments provided)
+
+Plan:
+- (No plan provided)

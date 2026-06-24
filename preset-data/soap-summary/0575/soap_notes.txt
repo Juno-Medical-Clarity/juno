@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0575
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports improvement in symptoms.
+- No nausea or vomiting.
+- Acidity is also reported to be better.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

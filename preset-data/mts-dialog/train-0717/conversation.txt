@@ -1,0 +1,4 @@
+Doctor: Are you studying?
+Patient: Yes. I'm doing my major in computer science.
+Doctor: Do you live alone?
+Patient: No, I live in my family. Mainly my parents and my sisters.

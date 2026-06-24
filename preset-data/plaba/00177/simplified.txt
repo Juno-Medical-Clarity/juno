@@ -1,0 +1,7 @@
+As COVID-19, a viral breathing-related disease, continues to spread rapidly worldwide and variants continue to emerge, the development and distribution of safe and effective vaccines are urgently needed.
+Researchers developed an mRNA vaccine (a vaccine that introduces or copies a piece of messenger RNA - genetic material - that corresponds to a virus) that is based on trimeric receptor-binding domain (RBD) (part of the virus located on the spike protein which is involved in introducing a virus into host cells) and is fused to TF-RBD, tiny molecules that protect the copies called nanoparticles.
+The TF-RBD nanoparticles delivered humoral immunity (immunity in which molecules create antibodies against a specific antigen and involve substances found in the humors, or body fluids) as well as a cellular response (using white blood cells that are part of the body's natural immune system).
+Immunization with two shots of a low dose vaccine of TF-RBD provided adequate protection in mice.
+In addition, the mRNA template of TF-RBD vaccine was easily and quickly changed into a variant vaccine to address SARS-CoV-2 mutations.
+The TF-RBD vaccine produced neutralizing antibodies (antibodies that defends a cell from an infectious particle by neutralizing any effect it has) against Alpha (B.1.1.7) and Beta (B.1.351) variants.
+This mRNA vaccine based on self-assembled nanoparticles provides support for future designs of mRNA vaccines targeting SARS-CoV-2.

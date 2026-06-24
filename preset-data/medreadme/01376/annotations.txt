@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [12:13] 'medical-jargon-google-easy' -> 'HIV'
+  [15:19] 'medical-jargon-google-easy' -> 'CD8 + T cells'
+  [21:26] 'medical-jargon-google-hard' -> 'HLA - B * 35Px'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1832  |  gem_id: gem-cochrane-simplification-train-1833  |  doi: 10.1002/14651858.CD003619.pub3
+
+We performed this systematic review to investigate the beneficial and harmful effects of weight reduction with different measures for NAFLD patients, but we could not find firm evidence. Five trials on lifestyle programme and two trials on orlistat were obtained, and all but one had high risk of bias. There seemed to be some beneficial effects of lifestyle programme involving restricted diet and physical exercise for NAFLD patients. However, the data were sparse, and meta-analyses could not be performed. Well-designed randomised clinical trials are needed to establish the true effect of the weight reduction measures identified for our review. The long-term prognosis of development of fibrosis, mortality, and quality of life modified by weight reduction should be studied. Special attention should be paid to the amount of weight loss.

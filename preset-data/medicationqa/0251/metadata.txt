@@ -1,0 +1,5 @@
+drug_focus: Lasix
+question_type: Indication
+section_title: 2. Use of Diuretics in Heart Failure
+source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4532861/
+sample_id: 0251

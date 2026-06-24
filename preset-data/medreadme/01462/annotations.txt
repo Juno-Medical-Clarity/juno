@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [7:8] 'abbr-medical' -> 'HRT'
+  [9:10] 'medical-jargon-google-easy' -> 'oestrogen'
+  [12:13] 'medical-jargon-google-easy' -> 'oestrogen'
+  [14:15] 'medical-jargon-google-easy' -> 'progestogen'
+  [21:23] 'medical-jargon-google-easy' -> 'endometrial cancer'

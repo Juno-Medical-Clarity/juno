@@ -1,0 +1,1 @@
+We noticed that for prophages inserted in or near tRNA genes the orientation of the integrase gene relative to the tRNA is crucial for its regulation.

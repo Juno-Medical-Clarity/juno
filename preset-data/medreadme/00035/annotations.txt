@@ -1,0 +1,8 @@
+source:      pnas
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'biological profile'
+  [8:11] 'abbr-medical' -> 'ara - C'

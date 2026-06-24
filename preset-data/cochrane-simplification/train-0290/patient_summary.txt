@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0290  |  gem_id: gem-cochrane-simplification-train-291  |  doi: 10.1002/14651858.CD005131.pub2
+
+This review identified nine studies (3345 women) treated with oestrogens versus placebo, no treatment or antibiotics. Vaginal oestrogens reduced the number of UTIs when compared to placebo. All studies reported adverse events for the oestrogen treatment groups. These included breast tenderness, vaginal bleeding or spotting, vaginal discharge, vaginal irritation, burning and itching.

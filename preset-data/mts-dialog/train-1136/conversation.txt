@@ -1,0 +1,10 @@
+Doctor: Please, tell me about your medical history.
+Patient: I've been dealing with depression and anxiety for some time now.
+Doctor: I'm sorry, that must be difficult.
+Patient: Thank you, it is, but I manage.
+Doctor: What about your joints? How do you move?
+Patient: Oh yes, I have arthritis as well. I also had sciatic pain a long time ago, and a herniated disk.
+Doctor: Have you ever had neurological symptoms, like headaches, blurry vision, or weakness?
+Patient: Actually yes, I have migraines when I'm having my period.
+Doctor: Thank you, and have you had any surgery in the past?
+Patient: Yes, I had my appendix out.

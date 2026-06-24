@@ -1,0 +1,5 @@
+drug_focus: premarin cream
+question_type: Stopping/tapering
+section_title: DOSAGE AND ADMINISTRATION;  WARNINGS AND PRECAUTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=96609623-528e-4aba-cabe-7254aed816d5&audience=consumer
+sample_id: 0532

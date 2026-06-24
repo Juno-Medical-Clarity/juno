@@ -1,0 +1,14 @@
+qid: TQ100
+source_file: 10774.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: To what extent does Effexor cause ED?
+nlm_summary: Could effexor cause ED and in what doses?
+
+focus_entities:
+  [F1] (DrugSupplement) effextor
+question_types:
+  [T1] SIDE_EFFECT
+keywords:
+  [K1] (Problem) ED

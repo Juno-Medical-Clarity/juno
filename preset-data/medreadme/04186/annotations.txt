@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'gestation'
+  [11:12] 'medical-jargon-google-easy' -> 'congenital'
+  [24:25] 'abbr-medical' -> 'PN'

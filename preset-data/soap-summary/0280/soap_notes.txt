@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0280
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history: Both parents had heart disease; mother had complications from heart disease and passed away; father died in his forties.
+- Two brothers: One brother's health is unknown; other brother is healthy with no issues.
+- Uncles on mother's side had polio: One needed crutches due to severe leg deformities; the other had leg deformities in one leg.
+- No known neurological conditions in the family.
+- Patient has one child who is healthy.
+
+Objective:
+- No measurable or observable data mentioned.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

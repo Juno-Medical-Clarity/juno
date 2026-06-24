@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0765
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So what brings you in today? Ugh. I'm guessing you're not feeling too great. You got that right. I've had a fever on and off for the past few days. When was the last time you took your temperature? Right before I drove here. I see. Did the nurse take your temperature when you came in? Yes, she did. Have you been experiencing cold like symptoms, such as cough, nasal congestion, headache, or nausea? Um no not really. Have you tried taking any medicine to help with the fever? Yeah. I've taken Tylenol and that's helped a bit. Have you had recent sick contacts? I don't think so. I live with three other roommates and they seem fine.

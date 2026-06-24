@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1116
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports confirmation of cancer diagnosis.
+- Patient expresses difficulty accepting the diagnosis.
+- Patient acknowledges having hypertension and diabetes.
+- Denies chest pain, shortness of breath, uneasiness, dizziness, loss of consciousness, or stroke-like symptoms.
+- Patient has no concerns regarding heart conditions.
+- Patient's BMI is reported as fine, indicating they are not overweight.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Confirmed diagnosis of cancer.
+- Coexisting conditions: hypertension and diabetes.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

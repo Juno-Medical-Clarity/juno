@@ -1,0 +1,14 @@
+source:      plos_pathogens
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'effector'
+  [8:12] 'medical-jargon-google-easy' -> 'CD8 + T cells'
+  [14:19] 'medical-jargon-google-hard' -> 'HLA - B * 35Px'
+  [20:27] 'medical-jargon-google-hard' -> 'HLA - B * 35 : 03'
+  [28:35] 'medical-jargon-google-hard' -> 'HLA - B * 35 : 02'
+  [37:44] 'medical-jargon-google-hard' -> 'HLA - B * 27 / B57'
+  [45:50] 'medical-jargon-google-hard' -> 'non-HLA-B * 27 / B57'
+  [53:94] 'medical-jargon-google-hard' -> 'HLA - A * 01 , A * 02 , A * 03 , A * 11 , A * 24 , A * 26 , B * 40 , B * 08 , B * 38 , B * 44'

@@ -1,0 +1,12 @@
+Purpose: The pharmacokinetics of gabapentin in paediatric patients with uncontrolled seizures was studied.
+Methods: Thirteen paediatric patients (mean age: 9.4 years) with uncontrolled partial seizures were included.
+Patients received gabapentin orally until doses were individualized to 9.6-39.8 mg/kg/day.
+Blood samples were obtained just prior to the dose and over 8 h after gabapentin was administered in the fasting state.
+The plasma concentration of gabapentin was measured by a high-performance liquid chromatography assay.
+Pharmacokinetic parameters for gabapentin were determined by non-compartment methods using multivariate regression analysis.
+Results: Data from nine patients were suitable for pharmacokinetic analysis.
+The C(max) from 0.9 to 5.8 microg/mL (mean: 2.6 +/- 1.7 microg/mL) and T(max) from 0.5 to 2.0 h (mean: 1.6 +/- 1.0 h).
+The apparent clearance (Cl/F) ranged from 0.12 to 1.12 L/h/kg (mean: 0.50 +/- 0.29 L/h/kg), and the elimination half-life from 3.2 to 12.2 h (mean: 5.5 +/- 0.8 h).
+Five patients experienced moderate (n = 4) to severe (n = 1) aggressive behaviour and another gained weight on gabapentin.
+Conclusions: Our data suggests that gabapentin pharmacokinetics can vary substantially among paediatric patients.
+Gabapentin was well tolerated in patients with uncontrolled partial seizures up to 6 months of therapy.

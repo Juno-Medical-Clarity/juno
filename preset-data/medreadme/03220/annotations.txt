@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        simple
+readability: 4.85
+split:       dev
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'hippocampal neurons'
+  [19:21] 'medical-jargon-google-easy' -> 'mouse models'
+  [24:25] 'medical-jargon-google-easy' -> 'neurons'

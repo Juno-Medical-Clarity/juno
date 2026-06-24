@@ -1,0 +1,5 @@
+drug_focus: epidural steroid injection (ESI)
+question_type: Information
+section_title: Overview
+source_url: https://mayfieldclinic.com/pe-esi.htm
+sample_id: 0446

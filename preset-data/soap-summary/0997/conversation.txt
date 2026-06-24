@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0997
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you moving around? Are you able to perform your day to day activities? Little bit, not so much. So just listen to your body and go around as much as you can. Okay. Do not overstress yourself. Okay I can do that.

@@ -1,0 +1,224 @@
+# Smith Collection Transcript: RES0051
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Would you mind starting with telling me what brought you in
+
+Patient: Sure i have had this cough for the past five days and it doesnt seem to be getting any better so im just here to ask you what it what it possibly could be
+
+Doctor: Has the cough been getting any better staying the same or getting worse over these last five days
+
+Patient: I think its getting worse
+
+Doctor: Are you bringing up any any phlegm
+
+Patient: No
+
+Doctor: Okay are you bringing up any blood
+
+Patient: No
+
+Doctor: OK have you been coughing at night time as well is it interfering with your sleep or is the cough just during the day
+
+Patient: um it is mostly during the day and in the evenings it doesnt wake me up from sleep
+
+Doctor: OK and any triggers that youve notice 5 days ago or anything that changed at that time to bring on the cough
+
+Patient: No nothing
+
+Doctor: OK and have you been having any other symptoms with the cough
+
+Patient: I have a sore throat and i feel like i cant taste things the same
+
+Doctor: OK um are you having any pain with swallowing either liquids or food
+
+Patient: um mostly with foods
+
+Doctor: OK and when did the sore throat start
+
+Patient: It started up around the same time as my cough
+
+Doctor: OK and you cant taste your food as well and when did you notice that
+
+Patient: That was two days ago
+
+Doctor: OK have you noticed any any loss of smell
+
+Patient: No no i dont think so
+
+Doctor: OK and have you had any difficulties breathing or short of breath
+
+Patient: No
+
+Doctor: OK and have you had any symptoms like this before
+
+Patient: No nothing like this
+
+Doctor: OK and how has your energy level been have you been fatigued
+
+Patient: A little bit yes
+
+Doctor: OK have you had any changes to your vision or or hearing
+
+Patient: No
+
+Doctor: Any mucous or pain or discharge from either your ears or nose
+
+Patient: No
+
+Doctor: OK so your nose hasnt been runny but has it felt congested
+
+Patient: Umm no
+
+Doctor: OK have you had any fevers or chills
+
+Patient: I dont know about fevers i guess i was feeling a little bit hot last night but i didnt take my temperature
+
+Doctor: OK so possibly a fever i will certainly check your temperature today to investigate that have you had any night sweats
+
+Patient: Umm no night sweats
+
+Doctor: Alright and have you had any weight loss in the last few months
+
+Patient: No
+
+Doctor: OK and have you had any chest pain
+
+Patient: No chest pain
+
+Doctor: Have you noticed any heart palpitations or heart racing
+
+Patient: No
+
+Doctor: Right ok have you had any wheezing
+
+Patient: No
+
+Doctor: Alright and have you had any abdominal pain
+
+Patient: No
+
+Doctor: Any nausea or vomiting
+
+Patient: No
+
+Doctor: OK how about any urinary problems
+
+Patient: No
+
+Doctor: Problems like diarrhea or constipation
+
+Patient: No
+
+Doctor: OK and any muscle aches or or body pains
+
+Patient: No
+
+Doctor: Have you had any rashes
+
+Patient: No
+
+Doctor: OK so the cough started 5 days ago you had a sore throat youve been feeling a bit more tired and havent been able to taste your food for the last couple of days
+
+Patient: Yes
+
+Doctor: OK have you been diagnosed with any medical conditions before
+
+Patient: um no i dont think so
+
+Doctor: OK nothing you see a physician regularly for
+
+Patient: No
+
+Doctor: Alright do you take any medications
+
+Patient: No
+
+Doctor: Alright do you know if you have any allergies to medications
+
+Patient: Umm possibly penicillin
+
+Doctor: OK do you know what the reaction was
+
+Patient: I think i had a rash
+
+Doctor: OK are your immunizations up to date
+
+Patient: I think yeah i think so
+
+Doctor: Excellent and any surgeries before
+
+Patient: Umm no
+
+Doctor: And have you been in the hospital for any reason
+
+Patient: Umm no no
+
+Doctor: OK and are you in school now
+
+Patient: Im in grade 6
+
+Doctor: OK cool whats your favorite class
+
+Patient: I would say its math
+
+Doctor: Awesome and has there been anybody in your class whos been sick
+
+Patient: No everythings virtual right now
+
+Doctor: OK cool so have you traveled anywhere
+
+Patient: Umm no
+
+Doctor: Alright and who are you living with
+
+Patient: I live with two of my younger siblings and my mom and dad
+
+Doctor: OK and is there any physical or verbal abuse in the home
+
+Patient: No
+
+Doctor: OK so you do feel safe in the home
+
+Patient: Yes yes
+
+Doctor: OK and do you smoke cigarettes
+
+Patient: I dont
+
+Doctor: OK and i know some people in your age group might even start using other types of substances have you noticed anything like that or have you used anything like that
+
+Patient: Umm no
+
+Doctor: OK and so do you drink do you drink alcohol
+
+Patient: I have had a sip of wine but thats thats about it
+
+Doctor: OK great and has anybody in your family had had similar symptoms
+
+Patient: No i dont think so
+
+Doctor: OK um and anybody in the family have asthma or lung conditions
+
+Patient: I think my aunt has asthma but i was i was checked for asthma when i was younger and it turns out i dont have it
+
+Doctor: OK and any diseases that run in the family like genetic or congenital
+
+Patient: I think crohns disease
+
+Doctor: OK and umm who in the family has that
+
+Patient: My father
+
+Doctor: OK so that was everything that i wanted to ask today was there anything else you wanted to tell me
+
+Patient: No thats it what do you think i have
+
+Doctor: Well it is sounding like it could be most likely an infectious type of process going on with the possibility of having a fever with a cough and sore throat so well do a physical exam and also some investigations which will include a covid test today because some of these symptoms do overlap but it could be something like the common cold i dont know the virus thats bringing this on but its not necessarily covid but because were doing the test it will require 14 days of self isolation well get back to you with the results as quickly as we can
+
+Patient: OK sounds great thank you

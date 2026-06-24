@@ -1,0 +1,10 @@
+Objective: To determine the effect of morning exercise in the fasting condition vs afternoon exercise on blood glucose responses to resistance exercise (RE).
+Research design and methods: For this randomized crossover design, 12 participants with type 1 diabetes mellitus [nine females; aged 31 ± 8.9 years; diabetes duration, 19.1 ± 8.3 years; HbA1c, 7.4% ± 0.8% (57.4 ± 8.5 mmol/mol)] performed ∼40 minutes of RE (three sets of eight repetitions, seven exercises, at the individual's predetermined eight repetition maximum) at either 7 am (fasting) or 5 pm.
+Sessions were performed at least 48 hours apart.
+Venous blood samples were collected immediately preexercise, immediately postexercise, and 60 minutes postexercise.
+Interstitial glucose was monitored overnight postexercise by continuous glucose monitoring (CGM).
+Results: Data are presented as mean ± SD.
+Blood glucose rose during fasting morning exercise (9.5 ± 3.0 to 10.4 ± 3.0 mmol/L), whereas it declined with afternoon exercise (8.2 ± 2.5 to 7.4 ± 2.6 mmol/L; P = 0.031 for time-by-treatment interaction).
+Sixty minutes postexercise, blood glucose concentration was significantly higher after fasting morning exercise than after afternoon exercise (10.9 ± 3.2 vs 7.9 ± 2.9 mmol/L; P = 0.019).
+CGM data indicated more glucose variability (2.7 ± 1.1 vs 2.0 ± 0.7 mmol/L; P = 0.019) and more frequent hyperglycemia (12 events vs five events; P = 0.025) after morning RE than after afternoon RE.
+Conclusions: Compared with afternoon RE, morning (fasting) RE was associated with distinctly different blood glucose responses and postexercise profiles.

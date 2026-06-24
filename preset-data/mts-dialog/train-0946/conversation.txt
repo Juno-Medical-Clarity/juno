@@ -1,0 +1,2 @@
+Doctor: Anyone sick at home?
+Patient: No, fortunately. Everyone else is feeling fine.

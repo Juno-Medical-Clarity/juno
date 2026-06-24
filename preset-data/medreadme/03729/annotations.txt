@@ -1,0 +1,7 @@
+source:      pnas
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [9:12] 'medical-jargon-google-easy' -> 'embryonic developmental pace'

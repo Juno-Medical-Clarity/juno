@@ -1,0 +1,142 @@
+# Smith Collection Transcript: RES0171
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: Yeah ive had a shortness of breath and even at at rest really feeling like its difficult to breathe and when i take a deep breath i get a chest pain
+
+Doctor: When did this start
+
+Patient: This started yesterday
+
+Doctor: How bad is your shortness of breath
+
+Patient: Like i dont know i feel like im ok like n terms of being able to breathe but i mean if i exert myself at all theres no way i would be able to its i just feel like even at rest its hard to breathe
+
+Doctor: OK has it gotten worse since yesterday or better or kind of been the same
+
+Patient: Its mostly been that been the same or actually sorry its got got a little bit worse at first it was more more with exertion and now its at rest as well so yeah its got worse
+
+Doctor: I see ok are you able to talk in full sentences or do you need to take a deep like stop to take a breath
+
+Patient: I could talk in full sentences
+
+Doctor: And the chest pain does it only occur when you take a deep breath or are there other times as well
+
+Patient: I pretty much yeah only when im taking a deep breath and say i mean maybe thats why part of the i cant take a deep breath so its making me feel its making the breathing more difficult making me feel more short of breath
+
+Doctor: OK any other symptoms that youve had a fever or headache
+
+Patient: No nothing like that
+
+Doctor: Any cough
+
+Patient: Yeah i ive had a cough as well over that the same same time period
+
+Doctor: Is it a dry cough are you bringing something up
+
+Patient: Its dry yeah i havent brought up any sputum or any any any blood
+
+Doctor: OK any other flu like symptoms runny nose stuffy nose sore throat anything like that
+
+Patient: No i just had um yeah the shortness of breath and chest pain
+
+Doctor: OK uhm and have you i guess i just invited more general questions about others potential symptoms do you feel like your heart is racing or do you feel like you have uhm do you have any belly pain or any changes in your bowel movements
+
+Patient: No belly pain or changes to bowel movements but i do feel like my heart is beating really fast really fast though
+
+Doctor: Yeah ok uhm you said this started yesterday were you like completely fine the day before
+
+Patient: uh i was yeah
+
+Doctor: Anything thats happened recently thats different or new
+
+Patient: Im well it like uh about two weeks ago i had a hysterectomy cause i for abnormal bleeding yeah i had surgery 2 weeks ago
+
+Doctor: What have you been doing these past two weeks in terms of sort of physical activity have you been moving around or no
+
+Patient: Its its certainly been less i ive been moving a little bit but ive had a lot of pain so i just havent been doing as much activity thats for sure
+
+Doctor: I i see and have you had any i guess any pain in your legs or swelling in your leg one or the other
+
+Patient: Yeah i have had actually yeah my right my right calf is pretty sore
+
+Doctor: Definitely have a look at that have you noticed that its been bigger or more red or warm
+
+Patient: um no i dont notice anything like that just i just really hurts
+
+Doctor: uh ok any medical conditions that youve been diagnosed with
+
+Patient: um yeah yeah and i have a high bmi type 2 diabetes and anxiety
+
+Doctor: Do you have any bleeding disorders
+
+Patient: um other yeah no i think youre right it said fibroids
+
+Doctor: OK ok and do you take any medication
+
+Patient: Yeah so uh insulin well metformin and then thats it
+
+Doctor: OK
+
+Patient: Im sorry and then an ssri like i said low pram for anxiety
+
+Doctor: Alright and do you have any allergies
+
+Patient: No i dont
+
+Doctor: And who do you do you currently live alone
+
+Patient: uh no i live with my husband and and our two sons
+
+Doctor: OK and do you have anyone sort of come in to help you out over these past two weeks are you getting any outside help from nurses etc or are your are your family members being supportive and helpful
+
+Patient: Yeah its been mostly the the family members my husbands been working from home and the kids have been helpful as well they are 10 and 12 so they are able to do some things on their own so yeah theyve been supportive
+
+Doctor: Thats great thats great ok and you smoke at all
+
+Patient: I do yes i i smoke about a half a pack per day
+
+Doctor: For how long
+
+Patient: um yeah but i i started in my yeah after the kids were born actually uh so like 10 years ago
+
+Doctor: OK have you tried cutting it down at all
+
+Patient: Yeah i have ive kind of gone through spurts of quitting and restarting quitting and restarting so yeah ive tried before
+
+Doctor: OK and what about marijuana or recreational drugs
+
+Patient: No dont use anything like that
+
+Doctor: And alcohol
+
+Patient: Yeah ill have some wine on the on the weekends but maybe thats like a glass or two
+
+Doctor: OK ok uhm and do you have any medical conditions that long run in the family
+
+Patient: Just uh yeah my father actually had a stroke when he was 68 and thats it
+
+Doctor: OK ok uhm you havent ever had one have you
+
+Patient: No i i havent had anything like that
+
+Doctor: OK alright so i guess come to in terms of smoking you said that youve tried to quit a couple of times in the past do you intend on trying again i know it can be very hard to to quit smoking
+
+Patient: Yeah its only something that is always kind of in the back of my mind
+
+Doctor: OK if theres im happy to assist you and share resources and problems like medications and things like that that could help you if youre interested so we can talk more about that talking about your i guess you mentioned that your weight is a little higher than or its outside the normal range is that something that you would like to cut down
+
+Patient: Yeah i really try to eat more vegetables and have been trying to do that sort of thing ive lost a few pounds but not enough definitely want to keep going
+
+Doctor: OK good good as long as you feel that you what youre currently doing is helping you and is helping you reduce weight thats great but also im here for you if you need more education or guidance on that so given what youve told me so far it sounds like you might have developed a clot in your leg somewhere simply because you had a surgery and you were not moving around very much sometimes that causes the blood to kind of not move around your body is as as much as it usually does and kind of stays in one place and get turned into a clot and that clot can sometimes get dislodged and settle into your lungs and that can make it difficult for you to breathe so well do some tests that thats what my understanding is given what youve told me so far but we do have to confirm it using a test also the fact that you smoke and your weight and your bmi is high increases your risk of developing a clot so i would definitely strongly recommend that you continue to try to reduce both and try to quit smoking and so well do an ultrasound of your leg and well do a scan of your chest and see whats going on and then decide if we need to give you any medications like any blood thinning medications
+
+Patient: OK yeah that sounds really good thank you
+
+Doctor: Welcome

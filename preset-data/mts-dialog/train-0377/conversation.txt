@@ -1,0 +1,18 @@
+Doctor: Hello, it's nice to meet you.
+Patient: It's nice to meet you as well.
+Doctor: My name is Doctor X and I will be taking care of you today.
+Patient: Thank you.
+Doctor: I've been told that you'd like a refill on your Xanax prescription and something to help you break your smoking habit.
+Patient: Yes, I feel like I've tried everything in the book and I still can't break the habit. One of my buddies was telling me about this medicine called Clantix or something like that.
+Doctor: Yes, I've heard of Chantix. We can look into it and see what's best fit.
+Patient: Okay, great. Since moving back home, I've ran out of Xanax.
+Doctor: How long have you been taking it?
+Patient: Almost a year now. I usually take it on days where my anxiety is really bad.
+Doctor: I see here that you also have mesothelioma in the lining of your stomach, is that correct?
+Patient: Yes, I need to find a new cancer specialist that's closer to where I live.
+Doctor: Are you currently experiencing any pain?
+Patient: Not at the moment, but I do get pain when I eat sometimes. Other times it's when I'm not even doing anything. It's been chronic so nothing new.
+Doctor: Do you take anything for the pain?
+Patient: I haven't in a while.
+Doctor: When were you diagnosed with mesothelioma?
+Patient: About six or so months ago.

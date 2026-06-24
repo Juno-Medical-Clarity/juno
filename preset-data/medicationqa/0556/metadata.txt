@@ -1,0 +1,5 @@
+drug_focus: sulfonylureas
+question_type: Alternatives
+section_title: Insulin Secretagogues
+source_url: https://www.hormone.org/diseases-and-conditions/diabetes/medicines-and-treatment/insulin-secretagogues
+sample_id: 0556

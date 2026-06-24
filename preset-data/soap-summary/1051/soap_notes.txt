@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1051
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient received MRI results.
+- Patient expresses relief that results showed nothing concerning.
+- Patient reports growth factors were normal with normal cell function.
+- Patient mentions no signs of decreased blood supply to the brain.
+
+Objective: 
+- MRI results: nothing concerning.
+- Growth factors: normal.
+- Cell function: normal.
+- No signs of decreased blood supply to the brain.
+
+Assessment: 
+- No specific diagnoses or clinical impressions provided.
+
+Plan: 
+- No specific plan, actions, medications, tests, follow-up, or patient education mentioned.

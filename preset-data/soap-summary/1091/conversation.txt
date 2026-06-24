@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1091
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Um, do I have to follow some special or soft diet? No, nothing like that. You can have a normal diet. Whatever you like to eat. At this age, my diet is very limited. I am going to be eighty-two next month. Well, I don't think you need to restrict your diet. You can follow your regular diet. Alright, thank you.

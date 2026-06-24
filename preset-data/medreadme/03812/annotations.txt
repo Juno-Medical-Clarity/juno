@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        simple
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [13:14] 'abbr-medical' -> 'OACs'
+  [15:16] 'abbr-medical' -> 'OAFs'

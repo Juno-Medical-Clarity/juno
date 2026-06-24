@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1095  |  gem_id: gem-cochrane-simplification-train-1096  |  doi: 10.1002/14651858.CD004857.pub2
+
+In this review we found seven studies that were eligible for inclusion, of which four studies compared the efficacy of oxcarbazepine to placebo or to other medications used in treating mania. While there was no evidence that oxcarbazepine worked better compared to a placebo, it did have similar efficacy to more accepted medications for the treatment of the illness. Two studies examined its acceptability to participants. Oxcarbazepine may cause more side effects than placebo. No differences in side effects were found between oxcarbazepine and other active medications. All the studies examined mania, hypomania, mixed episodes or rapid-cycling disorder. More studies of better methodological quality are needed if we are to be certain whether oxcarbazepine works or not when treating mania, mixed episodes, depression and rapid-cycling in bipolar disorder.

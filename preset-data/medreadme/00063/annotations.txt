@@ -1,0 +1,12 @@
+source:      plos_biology
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [11:16] 'medical-jargon-google-easy' -> 'high - throughput flow cytometry'
+  [17:22] 'medical-jargon-google-easy' -> 'single - cell protein levels'
+  [23:26] 'medical-jargon-google-easy' -> 'differentially labeled cocultures'
+  [27:30] 'medical-jargon-google-easy' -> 'wild - type'
+  [31:34] 'medical-jargon-google-easy' -> 'paralog - knockout'
+  [34:37] 'medical-jargon-google-easy' -> 'Saccharomyces cerevisiae strains'

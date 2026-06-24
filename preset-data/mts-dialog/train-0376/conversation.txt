@@ -1,0 +1,14 @@
+Doctor: Hello, miss. Today we're going to do a recheck for your hypertension. Sound good?
+Patient: Yes, of course.
+Doctor: I just want to check to see if you have any symptoms that can possibly raise alarm.
+Patient: I have been coming to you for the last fifteen of my seventy eight years on Earth. I know how a follow up works.
+Doctor: You are a seasoned veteran. Alright. So how is your chest? Any pains or tightness?
+Patient: No, luckily I do not have that.
+Doctor: Is your heart beating alright? Do you feel like it is beating too fast or hard?
+Patient: No. I can't really feel my heart beat normally, but I guess that is better than feeling it beat constantly.
+Doctor: You are correct. You shouldn't notice it. How is sleeping?
+Patient: Sleeping has been fine. I sleep through the night.
+Doctor: Great. Any shortness of breath that causes you to wake up?
+Patient: None. I don't have shortness of breath at any other time of the day.
+Doctor: Are your legs doing well? Any swelling?
+Patient: No. No swelling.

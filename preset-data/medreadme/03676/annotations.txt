@@ -1,0 +1,7 @@
+source:      plos_genetics
+side:        simple
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [11:12] 'medical-jargon-google-easy' -> 'autophagy'

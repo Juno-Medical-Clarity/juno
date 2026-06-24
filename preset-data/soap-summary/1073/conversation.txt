@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1073
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What is your family medical history? My mother has high blood pressure, and she had a stroke last year. Is your mother still with us after the stroke? Yeah. She is doing well. Good. What about your father's medical history? My father died in a car accident, when he was forty. I am so sorry to hear that. Thank you.

@@ -1,0 +1,5 @@
+pmid:        7670427
+question:    57
+adaptation:  adaptation2
+title:       Traumatic dysesthesia of the trigeminal nerve
+sentences:   4

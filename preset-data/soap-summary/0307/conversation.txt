@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0307
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you use tobacco products? Cigarettes, chewing tobacco or vaping? I used to smoke a pack a day. I quit that awful habit in nineteen eighty five. Do you work? I am retired. Wonderful. Is your husband retired with you? Yes. We both are. I cannot imagine working a full time job at seventy six years old.

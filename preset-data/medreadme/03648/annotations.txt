@@ -1,0 +1,7 @@
+source:      plos_computational_biology
+side:        complex
+readability: 4.35
+split:       test
+
+jargon_spans:
+  [20:22] 'medical-jargon-google-easy' -> 'peptide chain'

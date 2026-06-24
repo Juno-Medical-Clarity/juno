@@ -1,0 +1,1 @@
+Road traffic collisions were analysed at street segment level.

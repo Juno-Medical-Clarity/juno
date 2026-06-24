@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1131
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient felt a "pop" in his head while taking a shower on October 10th.
+- Unconscious for an unknown duration, found on the shower floor by his son about one and a half hours later.
+- Complaining of headaches since the incident.
+- Reports feeling unwell and frequently becoming unconscious or falling asleep.
+- Family history includes a recent visit to a local hospital where he was diagnosed with a hemorrhage (blood clot) in the brain.
+- Emotional concern from family regarding the patient's condition.
+
+Objective:
+- Patient's report from the local hospital indicates a hemorrhage (blood clot) in the brain.
+ 
+Assessment:
+- Diagnosis of hemorrhage (blood clot) in the brain based on hospital report.
+
+Plan:
+- Transferred to another hospital for further evaluation and treatment. 
+- No specific medications, tests, follow-up, or patient education explicitly mentioned.

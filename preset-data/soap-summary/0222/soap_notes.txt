@@ -1,0 +1,45 @@
+# SOAP Notes — Sample 0222
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 3 yo M presents with L ear pain x 1 week
+- Discomfort and itching x 1 week, crying x 4 days
+- Clear to yellowish discharge from L ear
+- Fever (39°C) x 1 day
+- Denies changes in hearing, vision, smell, or taste
+- Denies weight loss, rashes, cough, wheezing, SOB, chest pain, dizziness, syncope, confusion, seizures
+- No changes in bowel movements or urination
+- Slightly decreased appetite, likely due to pain
+- Hx of ear infections at age 2, treated with abx (R ear)
+- Hx of stuffy nose ~2 weeks ago, resolved
+
+PMHx:
+- Born at 40 weeks via vaginal delivery with forceps
+- No complications during pregnancy
+- No hospitalizations after birth
+- Healthy child, meeting all milestones
+- Up to date with immunizations
+- No medications or allergies
+
+FHx:
+- Father has HTN and DM
+- No family hx of genetic hearing or ear issues
+
+SocHx:
+- Lives with mother and father
+- No siblings
+- No financial issues or relationship problems at home
+- No one smokes at home
+- No recent sick contacts or travel
+
+Objective:
+- Vitals pending
+
+Assessment:
+- Likely acute otitis media
+
+Plan:
+- COVID swab (results in 24-48 hrs)
+- Ear exam to determine management:
+ - If perforated TM with pus or middle ear effusion with bulging TM and ill appearance: Abx x 10 days (amoxicillin if no PCN allergy)
+ - If only middle ear effusion or bulging TM: Reassess in 24-48 hrs, consider abx if worsening

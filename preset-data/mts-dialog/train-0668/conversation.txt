@@ -1,0 +1,6 @@
+Doctor: Do you have any allergies?
+Patient: No I do not.
+Doctor: Okay.
+Patient: Okay.
+Patient: Are you only asking for medical allergies?
+Doctor: No, I want to know about all allergies.

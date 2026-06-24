@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0253  |  gem_id: gem-cochrane-simplification-train-254  |  doi: 10.1002/14651858.CD004062.pub2
+
+The review found that, for people who have had a bleeding peptic ulcer caused by Helicobacter pylori, treatment with antibiotics more effectively prevents gastrointestinal re-bleeding than acid-suppressing drugs. Antibiotics when Helicobacter pylori infection is present are also cheaper and more convenient than long-term acid-suppressing drugs.

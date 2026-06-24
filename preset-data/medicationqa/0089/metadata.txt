@@ -1,0 +1,5 @@
+drug_focus: cocaine
+question_type: Usage
+section_title: Overview of Cocaine Abuse
+source_url: https://drugabuse.com/library/cocaine-abuse/
+sample_id: 0089

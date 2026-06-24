@@ -1,0 +1,12 @@
+Background: Atopic dermatitis is a common childhood disease, potentially influenced by prenatal nutritional exposures such as polyunsaturated fatty acids (PUFAs).
+Objective: In a racially diverse cohort, we hypothesized that childhood atopic dermatitis would be associated with higher prenatal omega-6 (n-6) and lower omega-3 (n-3) PUFAs.
+Methods: We included mother-child dyads, births 2006 to 2011, enrolled in the University of Tennessee Health Sciences Center Conditions Affecting Neurocognitive Development in Early Childhood cohort.
+Primary exposures included second trimester plasma n-3 and n-6 PUFA status and the ratio of the two (n-6:n-3).
+We assessed child current atopic dermatitis symptoms in the previous 12 months at age approximately 4 to 6 years.
+We investigated the association between PUFA exposures and atopic dermatitis using multivariable logistic regression, adjusting for potential confounders.
+We assessed for effect modification by maternal prenatal smoking, atopic disease history, and child sex.
+Results: Among 1131 women, 67% were African American and 42% had an atopic disease history; 17% of children had atopic dermatitis.
+Higher prenatal n-6 PUFAs were associated with increased relative odds of child atopic dermatitis (adjusted odds ratio: 1.25; confidence interval: 1.01-1.54 per interquartile range difference), and interaction models demonstrated that this association was seen in dyads in which the women had a history of atopic disease.
+Neither prenatal n-3 PUFAs nor n-6:n-3 were associated with child atopic dermatitis.
+Conclusion: In this racially diverse cohort, higher second trimester n-6 PUFAs were associated with atopic dermatitis in children of women with atopy.
+PUFAs may represent a modifiable risk factor for atopic dermatitis, particularly in individuals with a familial predisposition.

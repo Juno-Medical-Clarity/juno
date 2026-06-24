@@ -1,0 +1,5 @@
+pmid:        22421952
+question:    34
+adaptation:  adaptation1
+title:       Use of methoxy polyethylene glycol-epoetin beta in stage 3, 4 or 5 non-dialysis chronic kidney disease
+sentences:   13

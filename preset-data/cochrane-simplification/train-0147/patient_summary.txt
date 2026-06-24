@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0147  |  gem_id: gem-cochrane-simplification-train-148  |  doi: 10.1002/14651858.CD012506.pub2
+
+Three studies with 84 participants compared a surgical operation to bypass the blockage with the placement of a duodenal stent to bridge the blockage. The evidence is current to May 2018. All studies found that people were able to eat and drink sooner following the placement of a duodenal stent and were subsequently discharged from hospital quicker. The return of symptoms was more likely after a stent and people required further treatment to again restore the ability to eat and drink. There was a higher number of immediate problems in the participants undergoing gastrojejunostomy, including wound and chest infections. In some of the participants who had a stent, subsequent blockage of the stent occurred that required a repeat procedure. The studies included only a small number of participants and all studies were used slightly different methods, making it difficult to be certain of the key results.

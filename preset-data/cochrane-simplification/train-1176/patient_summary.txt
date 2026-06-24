@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1176  |  gem_id: gem-cochrane-simplification-train-1177  |  doi: 10.1002/14651858.CD007214.pub2
+
+The purpose of the review was to see whether TENS is effective in relieving pain in labour. The review includes results from 17 studies with a total of 1466 women. Thirteen studies examined TENS applied to the back, two to acupuncture points and two to the cranium (head). Results show that pain scores were similar in women using TENS and in control groups. There was some evidence that women using TENS were less likely to rate their pain as severe but results were not consistent. Many women said they would be willing to use TENS again in a future labour. TENS did not seem have an effect on the length of labour, interventions in labour, or the well-being of mothers and babies. It is not known whether TENS would help women to manage pain at home in early labour. Although it is not clear that it reduces pain, women should have the choice of using TENS in labour if they think it will be helpful.

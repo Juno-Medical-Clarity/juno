@@ -1,0 +1,18 @@
+Doctor: Good morning, ma'am. I just need to confirm some information about you before we begin today.
+Patient: Good morning, doctor. Sure, that's no problem.
+Doctor: Great, so you're sixty seven years old, and White, correct?
+Patient: Yes, that's right doctor.
+Doctor: Thank you. Do you remember how many cycles of carboplatin and Taxol you've had for your cancer, ma'am?
+Patient: Um, I've had six, I'm here for a follow up today.
+Doctor: Yes, I see here that your last chemo treatment on January eighteenth two thousand eight.
+Patient: Yes, I remember that. Can you remind me the full name of my cancer?
+Doctor: It's a uterine papillary serous carcinoma.
+Patient: Thank you, doctor.
+Doctor: Sure, do you have any problems today?
+Patient: Well, I just have some numbness in my right upper arm today.
+Doctor: Has this gotten worse recently?
+Patient: Well, no, not really.
+Doctor: That's good. Do you feel this in your toes at all?
+Patient: No, there's no numbness there.
+Doctor: Good, do you have any tingling or burning to speak of?
+Patient: No, thankfully no.

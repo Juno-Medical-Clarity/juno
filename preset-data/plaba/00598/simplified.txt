@@ -1,0 +1,11 @@
+Cystic fibrosis (CF) is a deadly disease inherited from both parents that is caused when the CF transmembrane conductance regulator (CFTR) protein does not work correctly, a channel involved with movement of ions (charged atoms) and fluids in epithelial cells (cells that cover the outer surface of the internal organs).
+Anionophores, which are small human-made substances that move negative ions (anions) across membranes, can replace biological anion movement regardless of gene changes in the CFTR and are possible treatments for CF.
+We looked at the movement properties of five anionophore substances.
+We measured the flow of chloride out of the cell.
+We measured the flow of iodide into the cell.
+We measured the movement of bicarbonate (compound).
+
+We saw that all five compounds are able to move halides and bicarbonate (compounds) across the cell membrane, with more moved in acidic conditions.
+Anionophores did not change CFTR activation and did not change the effects of a lumacaftor (corrector that helps the changed protein to move to the cell surface) or ivacaftor (potentiator that holds the gate to the channel open so chloride can flow through the cell membrane).
+We conclude that anionophores, at low concentrations, moved chloride and bicarbonate (compounds) across cell membranes, without changing CFTR function.
+New CF treatments could be developed starting from anionophores.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0127  |  gem_id: gem-cochrane-simplification-train-128  |  doi: 10.1002/14651858.CD004529.pub2
+
+The review found 10 trials, most of low methodological quality and most funded by a single pharmaceutical company. In addition, trials were small and had few participants thus evidence suggesting atovaquone-proguanil as more effective than a number of single drug treatments at eliminating the Plasmodium falciparum malaria parasite from the blood was limited. There were few good quality data comparing atovaquone-proguanil with other new combination therapies. There were not enough data to assess adverse events, but all trials recorded some adverse events.

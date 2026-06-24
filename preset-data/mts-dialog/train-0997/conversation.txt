@@ -1,0 +1,12 @@
+Doctor: Do you smoke cigarettes or use any tobacco products, miss?
+Patient: No.
+Doctor: Do you drink alcohol and if so, how many drinks do you consume in a typical week?
+Patient: I don't drink.
+Doctor: Do you use any recreational drug or other substances?
+Patient: No.
+Doctor: Do you have children?
+Patient: Yes. I have three kids.
+Doctor: Do your children have any health conditions?
+Patient: No.
+Doctor: Are you married?
+Patient: Yes.

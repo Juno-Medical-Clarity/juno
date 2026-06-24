@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3309  |  gem_id: gem-cochrane-simplification-train-3310  |  doi: 10.1002/14651858.CD011739.pub2
+
+We searched for studies on 10 August 2015 but did not find any randomised controlled trials looking at the effects of performing extra tests on health outcomes in pregnant women with overgrowth of the baby after 20 weeks gestation. There is a need for randomised controlled trials in this area in order to inform clinical practice when large babies are identified during a pregnancy, to assess if extra tests or surveillance can improve the health of these women and their babies. It is also important to identify any harms associated with extra tests and surveillance, as identifying women with suspected large babies may lead to unnecessary maternal anxiety with additional investigations and interventions, including induction of labour or caesarean section.

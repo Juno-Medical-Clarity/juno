@@ -1,0 +1,5 @@
+pmid:        28756540
+question:    50
+adaptation:  adaptation1
+title:       Severe ulcerative colitis: predictors of response and algorithm proposal for rescue therapy
+sentences:   10

@@ -1,0 +1,218 @@
+# Smith Collection Transcript: RES0199
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi i just came in today i have been having just been feeling really sick over the last three or four days it started with just like a headache and cough four days ago and then i started getting some nausea and vomiting few days back as well as diarrhea
+
+Doctor: OK so the headache and cough started first you said right
+
+Patient: Yeah
+
+Doctor: OK lets talk about the headache first that came on four days ago has it been persistent or does it come and go
+
+Patient: Its been pretty persistent besides when i take some tylenol
+
+Doctor: OK and does anything make it better or worse
+
+Patient: Just a tylenol nothing really yeah its pretty constant
+
+Doctor: OK and have a an and sorry where exactly is it is it on its like at the top of your head temples forehead
+
+Patient: Its kind of like my forehead in the top of my head on both sides
+
+Doctor: OK and does it radiate your neck or anywhere else
+
+Patient: No i think it’s it doesnt go to my neck or anywhere else
+
+Doctor: OK and do you have neck stiffness or neck pain with that
+
+Patient: No not really
+
+Doctor: And one to ten ten being the worst pain youve ever had how bad is it
+
+Patient: uh the headache probably like 7
+
+Doctor: OK uhm and timeline wise has it gotten worse over the past four days
+
+Patient: Its kind of stayed around the same actually
+
+Doctor: OK ok and have you ever had a headache like this in the past
+
+Patient: Not really i dont really get too many headaches
+
+Doctor: OK so this isnt you alright and lets go on to the cough the cough started around the same time you said has that gotten better or worse over the past four days
+
+Patient: Its the cough is around the same as well
+
+Doctor: OK and is it a dry cough or are you breaking up any flem
+
+Patient: Its mostly a dry cough
+
+Doctor: OK so no sputum or blood
+
+Patient: No no
+
+Doctor: OK good alright and are you short of breath at all
+
+Patient: Uhm no not really
+
+Doctor: No ok and how about wheezing
+
+Patient: Uhm no no wheezing
+
+Doctor: OK only saying an and any chest pain
+
+Patient: No
+
+Doctor: No ok and have you had any weight loss over the past few months
+
+Patient: No i havent
+
+Doctor: Any fevers or chills
+
+Patient: No
+
+Doctor: No ok uhm how about fatigue
+
+Patient: I guess just a little bit tired over the last few days but i dont know thats just just from the diarrhea and just being sick
+
+Doctor: um ok and how about rashes
+
+Patient: No
+
+Doctor: No ok changes in your vision or hearing
+
+Patient: No
+
+Doctor: uh itchy eyes discharge anything like that
+
+Patient: No nothing like that
+
+Doctor: About a stuffy or runny nose
+
+Patient: No nothing like that
+
+Doctor: OK how about changes in your smell or taste
+
+Patient: Uhm smell i feel like a little bit ive been kind of losing my smell over the last i would say one day
+
+Doctor: OK ok alright and any dizziness or fainting spells
+
+Patient: No nothing like that
+
+Doctor: Confusion or memory loss
+
+Patient: No
+
+Doctor: Uhm alright and joint pains or muscle aches
+
+Patient: uh no
+
+Doctor: Alright you mentioned you also have had diarrhea when did that start
+
+Patient: So probably like 2 days ago i started getting some liquid stools and i just had to go like probably five or six times a day
+
+Doctor: OK alright and uhm are you noticing any blood in there
+
+Patient: No i havent seen any blood
+
+Doctor: OK do you feel dehydrated
+
+Patient: No ive been trying to keep hydrated
+
+Doctor: OK good any changes in your appetite
+
+Patient: uh no
+
+Doctor: No any nausea or vomiting
+
+Patient: Yeah i was having some im having some nausea today but i had some vomiting yesterday i vomited two times
+
+Doctor: OK and are you throwing up any blood
+
+Patient: No
+
+Doctor: What color is it
+
+Patient: Uhm its usually i feel like whatever i eat yeah contents food contents
+
+Doctor: OK do you think anything triggered that episode of vomiting
+
+Patient: No i havent really ate anything new im just in my house yeah i i dont know what triggered it
+
+Doctor: OK alright any feelings of like feeling like youre bloated or gassy
+
+Patient: Uhm no nothing like that
+
+Doctor: OK any constipation
+
+Patient: No
+
+Doctor: OK alright and are you otherwise healthy or do you have any longstanding medical conditions
+
+Patient: No im im pretty healthy i dont really i dont really even take any medications
+
+Doctor: OK and are you up to date with her immunizations
+
+Patient: Yep
+
+Doctor: Uhm do you have any allergies
+
+Patient: No not that i know
+
+Doctor: No any family history of lung or heart conditions
+
+Patient: uh no not that i know of
+
+Doctor: OK do you smoke
+
+Patient: No
+
+Doctor: No ok how  about marijuana or yeah how about marijuana do you either take edibles or smoke it
+
+Patient: I’ve tried a couple times but it was not really my thing
+
+Doctor: OK and how about other recreational drugs like cocaine heroin and opioids
+
+Patient: No nothing like that
+
+Doctor: OK uhm and where do you currently live
+
+Patient: I live just in an apartment just in the city so yeah just by myself though
+
+Doctor: OK any like old carpets dust mold asbestos pets anything that could be triggering your symptoms
+
+Patient: No not really
+
+Doctor: OK and have you been in contact with anyone sick recently
+
+Patient: No ive been and kind of at home the only places i maybe have been in contact with someone is maybe at work in like the lunch room and things like that
+
+Doctor: OK ok and sorry where do you work
+
+Patient: I work at a car dealership
+
+Doctor: OK ok an any travel recently
+
+Patient: No
+
+Doctor: OK has anyone at your work been sick as well
+
+Patient: No i havent really noticed anyone being sick
+
+Doctor: OK ok well those were the questions that i had for you did you have any questions of your own for me
+
+Patient: No i i was just wondering what this can be
+
+Doctor: um yeah so the first thing we want to rule out as covid because a lot of your symptoms overlap with those of covid so well take a swab and you should get those results in about 24 to 48 hours in the meantime you should isolate for 14 days and if your results are positive public health will be in touch with you to do some contact tracing but if its not covid it could be another viral illness thats going around this time of year that could be causing similar symptoms as well but either way the management kind of is supportive so making sure youre well hydrated eating nutritious food sleeping well taking antipyretics like tylenol for fevers if you get any and you can also take tylenol or anseads for muscle ache joint pains anything like that does that sound ok
+
+Patient: Yeah that sounds good thank you
+
+Doctor: OK great no problem

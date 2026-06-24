@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0701  |  gem_id: gem-cochrane-simplification-train-702  |  doi: 10.1002/14651858.CD009215
+
+The review identified two randomised controlled trials of aromatherapy. One trial involving 513 women compared one of Roman chamomile, clary sage, frankincense, lavender or mandarin essentials oils with standard care. The aromatherapy was applied using acupressure points, taper, compress, footbath, massage or a birthing pool. The second trial involved 22 women randomised to bathe for at least an hour in water with either essential oil of ginger or lemongrass added. All women received routine care and had access to pain relief. The trials found no difference between groups for pain intensity, assisted vaginal birth, caesarean section or the use of pharmacological pain relief (epidural). Overall, there is insufficient evidence from randomised controlled trials about the benefits of aromatherapy on pain management in labour. More research is needed.

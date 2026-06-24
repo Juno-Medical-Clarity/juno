@@ -1,0 +1,5 @@
+pmid:        34507112
+question:    14
+adaptation:  adaptation1
+title:       Potential of herbal products in prevention and treatment of COVID-19. Literature review
+sentences:   11

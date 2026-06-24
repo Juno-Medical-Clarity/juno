@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1027
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Previous surgeries: Tubal ligation (both tubes tied) in 2001, polyp removal at age 14.
+- The polyp was found in the colon.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

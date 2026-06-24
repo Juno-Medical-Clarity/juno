@@ -1,0 +1,8 @@
+source:      MSD
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'vertebrae'
+  [16:17] 'medical-jargon-google-easy' -> 'osteoporosis'

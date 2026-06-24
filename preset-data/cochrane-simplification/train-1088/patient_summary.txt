@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1088  |  gem_id: gem-cochrane-simplification-train-1089  |  doi: 10.1002/14651858.CD009600
+
+This review aimed to find out how effective ergonomic treatments were in treating CTS. Only two studies were found (involving 105 participants). Both were designed to minimise research biases, but neither was of high quality. Neither study assessed short-term overall improvement, adverse effects or need for surgery as outcomes. One small study (25 participants) found an ergonomic keyboard reduced pain after 12 weeks but the second study reported no difference in pain severity between the keyboard groups at six months. Neither study found improvements in hand function or signs of CTS by people using ergonomic computer keyboards more than those experienced by people using standard keyboards. Based on the two studies in this review, which represent all the available evidence of sufficient quality for inclusion, there is no strong evidence for or against the use of ergonomic keyboards for the treatment of CTS.

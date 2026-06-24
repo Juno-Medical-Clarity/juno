@@ -1,0 +1,33 @@
+Doctor: Hi, I'm Dr. X. Can you tell me what brought you to the hospital today?
+Patient: I was feeling really sick. I had shortness of breath, cough, myalgias, nausea, vomiting, diarrhea, and fevers.
+Doctor: Hmm, okay. And when did these symptoms start?
+Patient: About a week ago, with a headache.
+Doctor: I see. And have you had any past medical history?
+Patient: No, not really.
+Doctor: Okay, and have you been vaccinated for COVID-19?
+Patient: No, I haven't.
+Doctor: Alright. During your evaluation in the emergency room, your vital signs were taken. Can you tell me what they were?
+Patient: Sure, my blood pressure was 115/77 mmHg, heart rate was 103 beats per minute, temperature was 99.0°F, and my oxygen saturation was 84% on room air.
+Doctor: Okay, thank you. And your nasopharyngeal swab came back positive for SARS-CoV-2.
+Patient: Yes, I heard that.
+Doctor: Your lab work also showed elevated D-dimer, international normalized ratio, hyperglycemia, hyponatremia, hypokalemia, hypochloremia, elevated liver enzymes, and elevated N-terminal pro b-type natriuretic peptide, and troponin.
+Patient: Yes, I was told about that too.
+Doctor: Alright. Your chest x-ray showed bilateral infiltrates and your CT chest with contrast showed bilateral pneumonia.
+Patient: Okay.
+Doctor: That's why you were admitted to the telemetry unit and started on ceftriaxone, azithromycin, dexamethasone, and remdesivir.
+Patient: Right.
+Doctor: Your initial EKG on admission showed sinus tachycardia and left axis deviation with a heart rate of 101 bpm.
+Patient: Uh-huh.
+Doctor: After three days of remdesivir, your EKG was repeated and showed sinus bradycardia with nonspecific intraventricular conduction delay, with a heart rate of 57 bpm.
+Patient: Okay.
+Doctor: And third day after discontinuing remdesivir, you developed a transient arrhythmia noted on telemetry which resolved within a few seconds.
+Patient: Yeah, that's right.
+Doctor: That's why an EKG was done and it showed normal sinus rhythm.
+Patient: Okay.
+Doctor: Your potassium levels were low initially, but after repletion, they normalized on the second day of your hospital stay.
+Patient: Okay.
+Doctor: And your magnesium levels are also within normal range.
+Patient: Good to know.
+Doctor: I want you to continue taking your medications as prescribed and follow up with me in a week. Is there anything you want to ask me?
+Patient: No, I think you explained everything. Thanks, doctor.
+Doctor: You're welcome. Take care.

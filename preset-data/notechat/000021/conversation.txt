@@ -1,0 +1,40 @@
+Doctor: Hello, how are you today?
+Patient: Hello, I'm fine, thank you.
+Doctor: Can you tell me what brought you to the hospital today?
+Patient: I have some difficulty breathing and I'm not happy with my facial appearance.
+Doctor: I see. Can you tell me about your medical history?
+Patient: I had a childhood trauma that caused a deviation in my nasal septum and an external nasal deformity.
+Doctor: Okay. And did you have surgery for that?
+Patient: Yes, I had a septorhinoplasty four months ago, and it was successful.
+Doctor: That's great to hear. But then you presented to the emergency department with a nasal injury, is that correct?
+Patient: Yes, I had a septal hematoma and it was drained successfully. I was discharged without any problems.
+Doctor: But then you had another nasal injury, and this time with a clear nasal discharge, correct?
+Patient: Yes, that's correct.
+Doctor: And then you came back to the emergency department with dizziness and an unstable gait, is that right?
+Patient: Yes, I also had some tingling in my right hand, arm, shoulder, and leg for the past two months.
+Doctor: And did you have any other symptoms before that?
+Patient: Yes, I had some pain in my right eye and double vision a few months back, but it went away on its own.
+Doctor: I see. And during the examination, did you have any positive signs?
+Patient: Yes, I had a positive Romberg's and Lhermitte's sign, and I also had some trouble with my right hand and leg.
+Doctor: Okay. And did you have any imaging tests done?
+Patient: Yes, I had an MRI of my brain, cervical, and thoracic spine.
+Doctor: And what did the MRI show?
+Patient: It showed some demyelinating lesions in my brain and cervical spinal cord.
+Doctor: Okay. And did you have a lumbar puncture?
+Patient: Yes, I did.
+Doctor: And what did that show?
+Patient: It showed the presence of oligoclonal bands in my CSF.
+Doctor: And what was the diagnosis?
+Patient: The neurologist confirmed that I have multiple sclerosis.
+Doctor: And what was the treatment?
+Patient: I started taking medication for it.
+Doctor: And how have you been since then?
+Patient: My symptoms have mostly gone away, and I only have a light tingling in my right hand now.
+Doctor: And have you had any new symptoms since then?
+Patient: No, I haven't had any new symptoms.
+Doctor: That's great to hear. And are you still taking the same medication?
+Patient: Yes, I am, and I'm tolerating it well.
+Doctor: Okay, that's good. I recommend that you continue taking your medication and come back to see me if you have any new symptoms or concerns.
+Doctor: Is there anything else I can help you with today?
+Patient: No, that's all. Thank you for your help.
+Doctor: You're welcome. Take care and have a good day.

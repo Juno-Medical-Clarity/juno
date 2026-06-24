@@ -1,0 +1,41 @@
+# SOAP Notes — Sample 0134
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 1 week (persistent, wet cough with white and sometimes yellow sputum, no blood or evergreen color, no improvement)
+- Fever and chills for 2-3 days (not measured)
+- Cough slightly improved with Tylenol Cold (helped with sleep)
+- No sore throat, changes in taste/smell/hearing/vision, runny/stuffy nose, weight loss, skin/hair/nail changes, SOB, wheezing, chest pain, swelling, palpitations, calf pain, dizziness, fainting, headaches, confusion, memory loss
+- Bowel movements and urination normal
+- No nausea/vomiting, joint pain, or muscle aches
+- Wife was sick last week with fever and cough, recovered, COVID test negative
+- No recent travel
+
+PMHx:
+- Appendectomy as a teenager
+- No other hospitalizations
+- No medications except multivitamins 
+- Up to date with immunizations
+- Seasonal allergies to pollen, no known drug allergies
+- No family history of lung conditions
+- Father has hypertension (diagnosed in 40s, currently in 60s)
+- Maternal aunt had ovarian cancer in 50s
+
+SocHx:
+- Non-smoker
+- Occasional marijuana use (1-2 joints/month)
+- No other drugs
+- Lives in London with wife in a new apartment (no concerns for old carpet, mold, asbestos)
+
+Objective:
+- Vitals not provided
+
+Assessment:
+- Likely viral upper respiratory tract infection
+- COVID-19 not ruled out
+
+Plan:
+- COVID swab ordered, isolate for 14 days, results in 24-48 hours 
+- Public health will contact if positive for contact tracing
+- Return to ER if worsening symptoms, neurological deficits, weakness, or seizures
+- Follow up if symptoms persist beyond 7-10 days to assess for possible bacterial infection and need for antibiotics

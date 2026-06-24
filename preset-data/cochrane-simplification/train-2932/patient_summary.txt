@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2932  |  gem_id: gem-cochrane-simplification-train-2933  |  doi: 10.1002/14651858.CD007718.pub2
+
+This study shows that people treated this way do manage to stay out of hospital longer than people treated by conventional systems of care. There are also some data showing that although these systems are expensive to start off with, if they are successful at keeping people out of hospital, then the cost saving from this means that they are cheaper in the long run.

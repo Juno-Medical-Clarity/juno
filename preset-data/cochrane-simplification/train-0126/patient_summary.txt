@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0126  |  gem_id: gem-cochrane-simplification-train-127  |  doi: 10.1002/14651858.CD003436.pub4
+
+We found one published randomized controlled trial, including 226 adults. We found moderate-quality evidence of harm (stroke due to bleeding in the brain, and death or dependency) over one year of follow-up from interventional treatments compared to conservative management for adults who had a brain AVM that had never bled. The long-term risks are unknown. Overall, the quality of the evidence was moderate because there was just one trial and it did not use blinding. More information will become available from the three trials that are ongoing.

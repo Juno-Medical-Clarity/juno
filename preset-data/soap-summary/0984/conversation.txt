@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0984
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, I am looking at your reports, you don't have anemia or any other blood disorders. Well, that's a relief! Yeah. Let me check your lymph nodes. They are nonpalpable. I don't see any swollen glands or anything. Great!

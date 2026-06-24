@@ -1,0 +1,7 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 3.5
+split:       test
+
+jargon_spans:
+  [11:16] 'medical-jargon-google-easy' -> 'long - term health conditions'

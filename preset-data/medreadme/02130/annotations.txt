@@ -1,0 +1,7 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'chemotherapy'

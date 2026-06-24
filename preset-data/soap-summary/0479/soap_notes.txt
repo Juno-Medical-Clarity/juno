@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0479
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient does not smoke.
+- The patient drinks alcohol occasionally (sometimes a beer or two).
+- The patient has been married for ten years.
+- The patient works in flooring installation and is associated with a construction company.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnosis provided.)
+
+Plan:
+- (No plan provided.)

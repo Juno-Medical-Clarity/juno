@@ -1,0 +1,5 @@
+pmid:        28730858
+question:    7
+adaptation:  adaptation1
+title:       Management of children with persistent group A streptococcal carriage
+sentences:   11

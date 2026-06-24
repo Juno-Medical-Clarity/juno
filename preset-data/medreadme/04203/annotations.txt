@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.3
+split:       test
+
+jargon_spans:
+  [10:11] 'abbr-medical' -> 'RDI'
+  [12:14] 'medical-jargon-google-easy' -> 'amino acids'
+  [18:19] 'medical-name-entity' -> 'SMOFlipid'

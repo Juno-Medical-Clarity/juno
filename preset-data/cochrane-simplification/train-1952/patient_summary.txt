@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1952  |  gem_id: gem-cochrane-simplification-train-1953  |  doi: 10.1002/14651858.CD004273.pub2
+
+Therefore we reviewed studies of interventions to improve older people's involvement in their care. There has been little research in this area involving older people as the main target of the research. Only three trials were identified. These evaluated the effects of written or face-to-face preparation for consultations with doctors. Interventions of a pre-visit booklet and a pre-visit session (either combined or pre-visit session alone) led to more questioning behaviour by older people and more self-reported active behaviour. Overall, there is sparse evidence about the effects of interventions for improving older patients' involvement in their primary care.

@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1183
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No pain when touched in the throat.
+- No lumps felt in the throat.
+- Expressed emotions/concerns: None explicitly mentioned.
+
+Objective:
+- Throat examination: No swelling or mass observed.
+- No pain upon palpation.
+- Throat is flexible and symmetric.
+
+Assessment:
+- No assessment or diagnosis provided.
+
+Plan:
+- No specific plan mentioned.

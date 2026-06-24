@@ -1,0 +1,6 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 3.7
+split:       dev
+
+jargon_spans: (no jargon annotation found for this sentence)

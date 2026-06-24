@@ -1,0 +1,9 @@
+Doctor: Welcome in, sir.
+Patient: Thank you.
+Doctor: What do you do for work?
+Patient: I am professor at the college up on the hill.
+Doctor: What do you teach?
+Patient: I teach history and the bible.
+Doctor: Do you drink alcohol or use tobacco products?
+Patient: No. I do not partake in either of those activities.
+Doctor: Okay.

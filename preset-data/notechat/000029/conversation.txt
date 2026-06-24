@@ -1,0 +1,18 @@
+Doctor: Good morning, how are you feeling today?
+Patient: Not too good, I've been feeling short of breath and have a cough for a week now.
+Doctor: I see. Can you tell me more about your past medical history?
+Patient: Yes, I have chronic obstructive pulmonary disease and a history of long-term tobacco abuse. I recently quit smoking.
+Doctor: Okay, and what about your vaccine status?
+Patient: I received two doses of Pfizer COVID vaccine, with the second dose in February 2021.
+Doctor: Great, let me check your vital signs. Your blood pressure is 120/71, heart rate is 78 bpm, respiratory rate is 20 breaths/min, oxygen saturation is 85% on room air, and you are afebrile.
+Patient: Hmm, okay.
+Doctor: Our laboratory assessment on admission showed a positive result for SARS-CoV-2 from the nasopharyngeal swab.
+Patient: Oh no.
+Doctor: Yes, and your chest X-ray on admission showed mildly patchy bibasilar pulmonary infiltrates and a calcified pulmonary nodule in the mid-right lung, measuring 2.0 cm.
+Patient: What does that mean?
+Doctor: It means that there is some inflammation in your lungs and a small solid mass. We admitted you to the general medical ward and started you on 6 L per minute of supplemental oxygen via nasal cannula, remdesivir, dexamethasone, furosemide, azithromycin, and enoxaparin for venous thromboembolism prophylaxis.
+Patient: Will that help me feel better?
+Doctor: We hope so, but unfortunately, despite multiple measures, you did not improve. We did a repeat chest X-ray and it showed slight interval improvement of bilateral pulmonary infiltrates, but you still needed 4-5 L per minute via nasal cannula.
+Patient: What's next?
+Doctor: We will continue to monitor you closely and adjust your treatment as needed. It's important to follow the instructions and take all of your medications as prescribed.
+Patient: Okay, I will.

@@ -1,0 +1,5 @@
+drug_focus: fluoride
+question_type: Information
+section_title: NA
+source_url: https://www.cdc.gov/fluoridation/basics/index.htm
+sample_id: 0455

@@ -1,0 +1,11 @@
+source:      pnas
+side:        simple
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'hTERT'
+  [4:7] 'medical-jargon-google-hard' -> 'VNTR2 - 1'
+  [16:17] 'abbr-medical' -> 'hTERT'
+  [19:22] 'medical-jargon-google-hard' -> 'VNTR2 - 1'
+  [29:30] 'medical-jargon-google-easy' -> 'tumorigenesis'

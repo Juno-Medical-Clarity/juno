@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1720  |  gem_id: gem-cochrane-simplification-train-1721  |  doi: 10.1002/14651858.CD006153.pub2
+
+We identified all randomized controlled trials in ALS/MND and wrote to the authors to request the data needed to complete this review. Although many more studies were eligible for inclusion, only five authors were willing and able to share the data from their individual randomized controlled trials. Based on the analyses of these data, we find no evidence to support a statistically significant difference in the response to treatment between people with the familial and sporadic forms of ALS/MND.

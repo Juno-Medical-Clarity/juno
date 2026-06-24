@@ -1,0 +1,4 @@
+Doctor: How's everyone in your family?
+Patient:  My mom, dad and siblings are good.
+Doctor: They are well, that is good. That's what we want.
+Patient: Yes.

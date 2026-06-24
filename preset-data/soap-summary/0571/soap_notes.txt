@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0571
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has no known drug allergies.
+
+Objective:
+- None provided.
+
+Assessment:
+- None provided.
+
+Plan:
+- None provided.

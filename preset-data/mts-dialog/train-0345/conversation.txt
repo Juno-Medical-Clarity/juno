@@ -1,0 +1,16 @@
+Doctor: Do you live with your husband?
+Patient: Yes, we live on a ranch about twenty miles away.
+Doctor: Do you have children?
+Patient: We had six children all together, but two of them passed away suddenly.
+Doctor: I'm so sorry to hear that. How old were they?
+Patient: One was forty years old and the other was forty five.
+Doctor: Wow, they were quite young. I offer you my sincerest condolences.
+Patient: Thank you. It's been really hard on my family, but we're trying our best to get by.
+Doctor: That's all you can do. It's important to spend time with each other every chance you get.
+Patient: Exactly.
+Doctor: I have a few more questions to ask before we end today.
+Patient: Go ahead.
+Doctor: Do you have family history of any medical problems?
+Patient: No.
+Doctor: Do you smoke or drink?
+Patient: Never.

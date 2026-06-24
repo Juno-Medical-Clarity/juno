@@ -1,0 +1,1 @@
+He famously showed that the probability of a mutation increasing the fitness of an organism decreases proportionately with the magnitude of the mutation.

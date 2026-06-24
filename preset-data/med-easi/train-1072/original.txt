@@ -1,0 +1,1 @@
+For example , the word NURSE is recognized more quickly following the word DOCTOR than following the word BREAD .

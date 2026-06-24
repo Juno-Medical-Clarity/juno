@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0180
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presents with sore throat (burning pain at back of throat, worse with swallowing solids, better with cold liquids/ice cream, started last night, progressively worsening)
+- Hoarse voice since this morning
+- Felt chilly yesterday morning
+- Fatigue over the last few days
+- Feels throat is swollen, gags when talking excessively but no vomiting
+- Poor appetite especially today due to pain
+- Gross taste in mouth
+- Mild abdominal soreness today
+- Runny nose and mild sore throat 2 weeks ago that self-resolved
+
+Past Medical History:
+- PMHx: None
+- Allergies: None
+- Medications: None
+- Hospitalizations: None
+- Surgeries: None
+- FHx: Father has type 2 diabetes, no cancers or early cardiovascular disease
+- SocHx: College student majoring in arts, lives in dorm, financially supported by parents, occasional alcohol on weekends, denies smoking or recreational drugs, athlete
+- Sexual history: Currently sexually active with girlfriend, 2 other female partners in the last year (3 total), always uses condoms
+
+Objective:
+- Vitals signs: Febrile on presentation
+- Physical examination: Not provided
+
+Assessment:
+1. Acute pharyngitis
+- Likely viral (recent URTI, sick contact, associated fatigue/decreased appetite)
+- Differential diagnosis: Streptococcal pharyngitis, Infectious mononucleosis
+- Investigations: Rapid strep test, Monospot test
+
+Plan:
+ -Treatment: Supportive (rest, hydration, acetaminophen/ibuprofen for pain/fever)

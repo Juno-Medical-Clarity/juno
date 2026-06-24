@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0283  |  gem_id: gem-cochrane-simplification-validation-284  |  doi: 10.1002/14651858.MR000028.pub2
+
+This review identified thirty-four methodological studies in which collections of systematic reviews were examined.  We identified four methodological approaches to assess the effects on health equity, a descriptive assessment in the reviews, a descriptive assessment of the trials included in the reviews, analytic approaches, and applicability assessment. However, the most appropriate way to address any of these approaches is unclear. There is a need for methodological guidance on how to assess effects on health equity in systematic reviews.  Analysis of particular groups of populations need to be justified and reported in sufficient detail to allow their credibility to be assessed. There is a need for improved transparency of judgments about applicability and relevance to disadvantaged populations.

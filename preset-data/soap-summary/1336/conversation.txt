@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1336
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How's it going, buddy? I haven't seen you in a long time Hey, Doctor. It's been a while. I've been doing well. Just here for my check up. Nice. How's the family doing? Are they all well? Yeah, they're doing great. Nobody has been sick for a while. That's great to hear. Nobody has new medical conditions either, right? Not that I know of. They're all doing good.

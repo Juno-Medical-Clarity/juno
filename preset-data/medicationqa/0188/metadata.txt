@@ -1,0 +1,5 @@
+drug_focus: Prednisone
+question_type: Appearance
+section_title: Pharmaceutical form
+source_url: https://www.medicines.org.uk/emc/product/7237/smpc
+sample_id: 0188

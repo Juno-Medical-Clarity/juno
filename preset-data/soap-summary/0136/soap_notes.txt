@@ -1,0 +1,37 @@
+# SOAP Notes — Sample 0136
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 2-year-old daughter presenting with fever, difficulty swallowing, drooling, and shortness of breath.
+- Fever started 2 days ago (38.5°C).
+- Shortness of breath, difficulty swallowing, and drooling started yesterday.
+- Fever has slightly increased (from 38°C to 38.5°C).
+- Difficulty swallowing has worsened; now barely drinking fluids.
+- Not eating well and poor sleep for the past 2 nights.
+- Redness and swelling in the throat.
+- No coughing.
+- Increased irritability and paleness.
+- No nausea, vomiting, diarrhoea, or constipation.
+- Recent cold 2 weeks ago, resolved without antibiotics.
+- Possible exposure at daycare (sick contact 3 weeks ago).
+
+Past Medical History:
+- No significant PMHx.
+- No issues during pregnancy or after birth.
+- Immunisations up to date except for H. influenzae vaccine.
+- No hospitalisations.
+- No relevant FHx.
+- Lives with mother and older brother.
+
+Objective:
+- No vitals provided.
+- Physical examination: redness and swelling in the throat, drooling, pale appearance.
+
+Assessment:
+- Suspected H. influenzae infection with possible epiglottitis.
+
+Plan:
+- Immediate referral to the emergency department.
+- Notify ER of the patient's arrival.
+- Anticipated investigations: H. influenzae test, COVID-19 swab, neck X-ray.
+- Possible treatment: antibiotics, stabilisation of breathing.

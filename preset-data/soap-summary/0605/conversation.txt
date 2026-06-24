@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0605
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good morning. How are you feeling today? I feel good, considering. I slept well last night. Are you expensing any pain or discomfort? No. I feel fine.

@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1325
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 32-year-old female.
+- Main complaint: pain in the foot.
+- Duration of foot pain: started hurting a lot yesterday.
+- History of surgery in the foot with plates and screws present.
+- Pain is described as chronic and worsens during exercise.
+- Previous appointment with Doctor X Y Z was cancelled due to lack of Project Access insurance.
+- Patient was seen previously for back pain and was treated with pain medicines and muscle relaxers.
+
+Objective:
+- Previous x-rays show hardware in the foot with no apparent abnormality or evidence of loosening.
+
+Assessment:
+- No assessment or diagnosis provided in the conversation.
+
+Plan:
+- No plan or follow-up actions mentioned in the conversation.

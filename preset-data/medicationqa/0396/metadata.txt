@@ -1,0 +1,5 @@
+drug_focus: famotidine 10 mg
+question_type: Information
+section_title: USES
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c7c0db88-6287-458a-abd1-c0ebf81f2337&audience=consumer
+sample_id: 0396

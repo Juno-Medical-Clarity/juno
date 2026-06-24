@@ -1,0 +1,5 @@
+drug_focus: steroids
+question_type: Action
+section_title: Athletes and doping: effects of drugs on the respiratory system
+source_url: https://thorax.bmj.com/content/54/11/1041
+sample_id: 0687

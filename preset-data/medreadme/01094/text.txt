@@ -1,0 +1,1 @@
+For dichotomous data we calculated risk ratios (RR) and their 95% confidence intervals (CI) on an intention-to-treat basis based on a random-effects model.

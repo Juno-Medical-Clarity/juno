@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0559
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+InitialSubjective:**
+- History of thyroid problems.
+- History of allergies.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

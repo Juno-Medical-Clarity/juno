@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2287  |  gem_id: gem-cochrane-simplification-train-2288  |  doi: 10.1002/14651858.CD003190.pub4
+
+This review sought evidence to compare other types of drugs with anticholinergics. Only a few, small-scale randomised trials were found, many testing drugs that are no longer used clinically. The review found inadequate evidence to assess whether or not available alternative drugs are better or worse than anticholinergics in the management of people with symptoms of overactive bladder syndrome.

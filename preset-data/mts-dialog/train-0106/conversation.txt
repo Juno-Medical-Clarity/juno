@@ -1,0 +1,6 @@
+Doctor: Hello, sir. How are you today?
+Patient: I am alright. I am here for a check up since I am feeling kind of dizzy lately.
+Doctor: That is not good. How long has this been happening?
+Patient: A few months. This happened to my sister too. I think she is still dealing with it.
+Doctor: Is there any other family medical history I should know about? Migraines or cancer?
+Patient: No. Not that I know of. The rest of my family seems pretty healthy.

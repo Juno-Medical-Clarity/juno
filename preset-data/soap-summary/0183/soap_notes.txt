@@ -1,0 +1,48 @@
+# SOAP Notes — Sample 0183
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with dry cough for 2 weeks since returning from Mexico (cough is intermittent, worse with exercise/cold weather, affecting sleep 2-3 nights/week; no blood or sputum production)
+- Denies cold symptoms (runny nose, sore throat), but reports occasional itchy eyes
+- Similar episode in childhood; no recent episodes
+- Shortness of breath with exertion and when outdoors (coincides with itchy eyes)
+- Denies fever, chills, night sweats, fatigue, chest pain, dizziness, palpitations
+- No changes in bowel movements, urinary patterns, weight, or appetite
+- No recent TB exposure or loss of taste/smell
+- Occasional wheezing with cough
+- Son's inhaler (for asthma) helped relieve cough
+
+PMHx:
+- Childhood asthma (not formally diagnosed)
+- Childhood eczema
+- No other medical conditions (denies diabetes, hypertension)
+- No medications
+- Allergies: pollen and other environmental allergies
+- No hospitalizations or surgeries
+
+SocHx:
+- Lives in apartment with boyfriend for 4 years (no recent changes, mold, or new carpets)
+- Works as a school teacher
+- Former smoker (quit 1 month ago after smoking 1 pack/day)
+- Marijuana use (1-2 joints/week)
+- Alcohol use (1 bottle of wine/week, mostly on weekends)
+- Tries to run and walk for exercise
+
+FHx:
+- Sister with eczema
+- No family history of cancer or lung disease
+- No family history of heart attacks or other medical conditions
+
+Objective:
+- Vitals signs: not provided
+- Physical examination: not performed
+- Investigations: none completed
+
+Assessment:
+- Likely asthma exacerbation
+- Differential: viral upper respiratory tract infection
+
+Plan:
+- Pulmonary function tests
+- Trial of bronchodilators
+- Follow-up based on results

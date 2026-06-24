@@ -1,0 +1,12 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'flagellates'
+  [8:10] 'general-medical-multisense' -> 'morphological changes'
+  [11:12] 'general-complex' -> 'modulating'
+  [23:25] 'medical-jargon-google-easy' -> 'perimicrovilar membranes'
+  [27:28] 'medical-jargon-google-easy' -> 'midgut'
+  [41:42] 'medical-jargon-google-easy' -> 'vertebrate'

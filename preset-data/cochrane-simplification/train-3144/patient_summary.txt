@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3144  |  gem_id: gem-cochrane-simplification-train-3145  |  doi: 10.1002/14651858.CD005291.pub2
+
+This review shows that PGS in fact decreases live birth rates in women of advanced maternal age and in women with repeated IVF failure. PGS should not be applied in routine patient care. New forms of PGS that perform the procedure at other stages of development and/or use a different method of analysis should first be evaluated in clinical trials before being introduced into clinical practice.

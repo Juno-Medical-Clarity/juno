@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1414  |  gem_id: gem-cochrane-simplification-train-1415  |  doi: 10.1002/14651858.CD003390
+
+This systematic review was undertaken to see if giving folate to people with depressive disorders reduced their depressive symptoms. Three randomized trials were identified, involving a total of 247 people. In all three trials, folate was well tolerated. In two of these trials, folate was added to other antidepressant drug treatment and there was limited evidence that folate helped. In the third trial, folate was compared to trazodone, an antidepressant drug. No difference was found. There is therefore limited evidence that adding folate to other antidepressant may be helpful, but larger trials are needed before patients and clinicians can be confident that it will be helpful.

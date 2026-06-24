@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0673
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Where are you having pain? My left elbow. I hit it against a railing when I was trying to do a new trick on my skateboard. Did the pain come on gradually? Yeah. I even tried icing it, but I think it's only gotten worse. Did you injure any other parts of your body? Only my elbow. How long ago did this happen? About a week ago. I see. Have you taken anything for it, such as Advil or Tylenol? No. I try to deal with the pain as best as I can before resorting to medicine.

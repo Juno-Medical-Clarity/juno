@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0312  |  gem_id: gem-cochrane-simplification-train-313  |  doi: 10.1002/14651858.CD012442.pub2
+
+The evidence is current to 20 September 2018. We included a single randomised trial (a type of study in which participants are assigned to one of two or more treatment groups using a random method) with 113 people allocated to immunotherapy including isotretinoin, granulocyte-macrophage colony-stimulating factor (GM-CSF), interleukin-2, and ch14.18, a distinct type of anti-GD2 antibody also known as dinutuximab. Another 113 people were allocated to receive standard therapy including isotretinoin. The results on overall survival and event-free survival favoured the dinutuximab-containing immunotherapy group. Other outcomes including those on adverse events were not adequately reported; more research is needed before definitive conclusions can be made regarding these outcomes. We assessed the quality of the evidence as moderate.

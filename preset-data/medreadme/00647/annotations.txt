@@ -1,0 +1,7 @@
+source:      plos_genetics
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [8:9] 'abbr-medical' -> 'CNVs'

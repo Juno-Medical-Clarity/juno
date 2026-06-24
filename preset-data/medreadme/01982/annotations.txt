@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [6:9] 'medical-jargon-google-easy' -> 'partial knee replacement'
+  [17:20] 'medical-jargon-google-easy' -> 'total knee replacement'

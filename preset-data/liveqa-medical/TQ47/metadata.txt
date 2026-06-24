@@ -1,0 +1,14 @@
+qid: TQ47
+source_file: 1-136400545.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: WHAT exercises can I do, safely, with asthma?
+nlm_summary: What exercises are safe for asthmatics?
+
+focus_entities:
+  [F1] (Problem) asthma
+question_types:
+  [T1] LIFESTYLE_DIET
+keywords:
+  [K1] (Lifestyle) exercises

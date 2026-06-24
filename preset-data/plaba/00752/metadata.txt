@@ -1,0 +1,5 @@
+pmid:        33983916
+question:    60
+adaptation:  adaptation2
+title:       Diagnostic Performance of an Antigen Test with RT-PCR for the Detection of SARS-CoV-2 in a Hospital Setting - Los Angeles County, California, June-August 2020
+sentences:   11

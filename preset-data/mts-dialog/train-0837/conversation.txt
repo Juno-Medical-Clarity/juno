@@ -1,0 +1,4 @@
+Doctor: So, you were referred by Doctor X.
+Patient: Yeah.
+Doctor: According to him, I see no changes or correction to your present illness, right?
+Patient: Yeah, I think so.

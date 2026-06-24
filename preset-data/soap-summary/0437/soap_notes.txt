@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0437
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient: Female, 14 months old
+- Symptoms: Possible exposure to ant bait containing Borax
+- Severity: Unknown (concerned about potential toxicity)
+- Duration: Incident just occurred (recent exposure)
+- Associated symptoms: No strange behavior or vomiting reported
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Family is worried about potential toxicity from the ant bait.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

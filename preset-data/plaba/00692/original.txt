@@ -1,0 +1,10 @@
+Human chorionic gonadotropin (hCG) is generally quantified in serum, but spot urine samples are also used to assess hCG levels in Japan.
+The purpose of the present study was to elucidate whether urinary hCG can be used clinically as a substitute for serum hCG.
+A total of 189 samples of serum and spot urine were collected from patients, including cases of normal pregnancy (NP) -13, abortion (AB) -21, extrauterine pregnancy (EP) 25, and hydatidiform mole (MOL) -7, during medical treatment and comparisons were made concerning serum and urinary hCG levels.
+The histogram of relative urinary/serum hCG(U-hCG.act/S-hCG) of the samples showed a wide distribution of values, but tended to converge to a narrow distribution by creatinine correction (U-hCG.cor/S-hCG).
+U-hCG.cor/S-hCG of the AB, EP, and MOL groups decreased 1 day to 14 days or was no earlier than 15 days postoperatively compared to preoperatively.
+The alteration of serum Intact/Total tended to be similar to that of U-hCG.cor/S-hCG in clinical course.
+The presented case indicated that U-hCG.act/S-hCG did not correspond to serum hCG levels.
+Because urinary hCG levels are inconsistent depending on whether spot urine is concentrated or diluted, the levels of hCG in spot urine do not always correlate with serum levels of hCG.
+Therefore, the data of urinary hCG should be interpreted after creatinine correction.
+Overall, it is recommended to determine serum hCG levels rather than creatinine corrected urinary hCG levels, considering that the relative urinary/serum hCG was not constant postoperatively.

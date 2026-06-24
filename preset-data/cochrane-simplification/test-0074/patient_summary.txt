@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0074  |  gem_id: gem-cochrane-simplification-test-75  |  doi: 10.1002/14651858.CD002091.pub2
+
+Studies have shown that interventions for reducing either total serum cholesterol or low density lipoprotein cholesterol levels reduce the risk of coronary heart disease (CHD) and stroke events in people with a history of CHD. However, for stroke patients the relation between the level of serum cholesterol and cholesterol subfractions with the risk of future stroke or cardiovascular events is unclear. This review, which includes eight studies involving approximately 10,000 participants, shows statin therapy, but not other lipid-lowering measures, reduces the risk of subsequent major vascular events and a marginal benefit in decreasing stroke events, but not all-cause mortality in those with a history of ischaemic cerebrovascular disease.

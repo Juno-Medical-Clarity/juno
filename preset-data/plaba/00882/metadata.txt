@@ -1,0 +1,5 @@
+pmid:        22891501
+question:    72
+adaptation:  adaptation2
+title:       Newborn screening: ethical, legal, and social implications
+sentences:   9

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0757
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you know of any family history of kyphosis? I'm sorry, what's that? It has to do with rounding of the spine. Does anyone in your family have a rounded posture? Actually, yeah, my great grandmother had that, and my mom would talk about my second cousin, he had it too.

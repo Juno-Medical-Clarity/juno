@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2317  |  gem_id: gem-cochrane-simplification-train-2318  |  doi: 10.1002/14651858.CD013222.pub2
+
+We identified and included one study, which compared steroids with placebo (dummy pill) in 49 newborns. The steroids were given to babies by inhalation. We found no ongoing studies. The evidence is up to date as of February 2019. Steroids did not improve lung function or reduce the need for breathing support. Overall, we are uncertain as to whether steroids have an important effect on rapid breathing because the results are imprecise and based on only one small study.

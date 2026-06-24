@@ -1,0 +1,5 @@
+drug_focus: pneumonia vaccine
+question_type: Ingredient
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d49181b-b974-a5da-3b38-12a3a87bb96b
+sample_id: 0038

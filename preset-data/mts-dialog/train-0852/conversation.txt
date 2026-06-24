@@ -1,0 +1,10 @@
+Doctor: Have you ever had any heart problems in the past?
+Patient: I remember I did have something heart related but I don't know what that was. I do not understand any medical terms.
+Doctor: Okay that's fine, I completely understand. We will try to look for your  past medical history.
+Patient: I do have hypertension and diabetes, you know that right?
+Doctor: Yes, type two diabetes. Do you know of any other things that you had in the past?
+Patient: Yes, four years back I had lung embolism. I also get frequent urine infections.
+Doctor: Okay. And I can see on the file that you have high cholesterol and a gastric ulcer too.
+Patient: Yes, that's about right.
+Doctor: Okay. What surgeries have you had in the past?
+Patient: I have had my appendix taken out, then C Section, cataract surgery and hernia repair done in the past.

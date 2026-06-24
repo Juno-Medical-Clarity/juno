@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0045  |  gem_id: gem-cochrane-simplification-validation-46  |  doi: 10.1002/14651858.CD005105.pub2
+
+Six randomised controlled trials, involving 202 participants, were analysed. Interventions ranged from five weeks to six months duration. Participants receiving the low glycaemic index or load diet lost a mean of one kilogramme more than those on comparison diets. Lipid profile also improved more in participants receiving the low glycaemic index or load diet. No study reported adverse effects, mortality or quality of life data.

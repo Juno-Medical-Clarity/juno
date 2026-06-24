@@ -1,0 +1,12 @@
+source:      plos_pathogens
+side:        simple
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [5:13] 'medical-jargon-google-hard' -> 'Arabidopsis lectin receptor kinase LecRK - I. 9'
+  [15:16] 'medical-jargon-google-easy' -> 'mediator'
+  [17:28] 'medical-jargon-google-hard' -> 'cell wall - plasma membrane ( CW - PM ) adhesions'
+  [33:35] 'medical-jargon-google-easy' -> 'in vitro'
+  [37:43] 'medical-jargon-google-hard' -> 'Phytophthora infestans effector IPI - O'
+  [45:49] 'medical-jargon-google-hard' -> 'cell attachment motif RGD'

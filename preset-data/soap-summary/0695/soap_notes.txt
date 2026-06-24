@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0695
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Neck and back pain
+- Severity: Manageable
+- Duration: Ongoing (specific duration not mentioned)
+- Associated symptoms: None mentioned
+- Relevant medical history: Attending pain management weekly
+- Family history: None mentioned
+- Allergies: None mentioned
+- Concerns: Pain kept the patient up at night in the past, but not currently
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- Continue with weekly pain management sessions.

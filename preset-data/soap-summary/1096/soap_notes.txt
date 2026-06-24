@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1096
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient expresses gratitude to the doctor. 
+- Patient intends to continue working but is advised to be careful.
+
+Objective: 
+- (No measurable or observable data provided.)
+
+Assessment: 
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan: 
+- Patient is advised to be careful while continuing to work.

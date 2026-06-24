@@ -1,0 +1,8 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.15
+split:       dev
+
+jargon_spans:
+  [1:3] 'general-complex' -> 'contingent valuation'
+  [6:7] 'abbr-medical' -> 'SEED'

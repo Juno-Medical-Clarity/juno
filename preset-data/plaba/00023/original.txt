@@ -1,0 +1,7 @@
+Background: In antidepressant trials for pediatric patients with depression or anxiety disorders, the risk of suicidal events and other severe psychiatric adverse events such as aggression and agitation is increased with antidepressants relative to placebo.
+Objective: To examine whether largely mentally healthy adolescents treated for a non-psychiatric condition are also at increased risk of suicidality and other severe psychiatric disorders.
+Methods: This is a re-analysis of a placebo-controlled duloxetine trial for juvenile fibromyalgia based on the main journal article and additional data published in the online supplementary material and on ClinicalTrials.gov.
+Both serious adverse events related to psychiatric disorders and adverse events leading to treatment discontinuation were defined as severe treatment-emergent psychiatric adverse events.
+Results: We found that a significant portion of adolescents had treatment-emergent suicidal ideation and behaviour as well as other severe psychiatric adverse events with duloxetine, but no such events were recorded on placebo.
+The incidence of severe treatment-emergent psychiatric adverse events was statistically significantly higher with duloxetine as compared to placebo.
+Conclusions: Antidepressants may put adolescents at risk of suicidality and other severe psychiatric disorders even when the treatment indication is not depression or anxiety.

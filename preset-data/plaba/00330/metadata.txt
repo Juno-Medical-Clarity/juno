@@ -1,0 +1,5 @@
+pmid:        32473952
+question:    26
+adaptation:  adaptation1
+title:       SARS-CoV-2: The viral shedding vs infectivity dilemma
+sentences:   5

@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0698
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient is retired and does not work.
+- The patient did not attend college and stopped education after high school.
+- The patient has three children who are all grown and no longer live at home.
+- The patient has never smoked or consumed alcohol.
+- The patient has not used harder substances.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation, diagnoses, or clinical impressions provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned.)
