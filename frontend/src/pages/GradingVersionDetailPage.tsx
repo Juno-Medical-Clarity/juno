@@ -57,7 +57,17 @@ export default function GradingVersionDetailPage() {
           Combined Score
         </h2>
         <div className="glass-card" style={{ padding: '20px 24px' }}>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+            <h3 style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)', margin: 0 }}>
+              Patient Accessibility Score
+            </h3>
+            {version.combinedDocsSlug && (
+              <Link to={`/docs/grading/${version.combinedDocsSlug}`} className="top-nav-link">
+                Docs →
+              </Link>
+            )}
+          </div>
+          <p style={{ marginTop: '8px', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
             {version.combinedDescription}
           </p>
         </div>

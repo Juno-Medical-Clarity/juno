@@ -27,6 +27,7 @@ export const GRADING_VERSION_DETAILS = [
     label: 'Grading Version 1.0',
     description: 'Multi-method readability and patient health literacy scoring. Computes six individual method scores and a combined composite score.',
     isDefault: true,
+    combinedDocsSlug: 'combined-scoring',
     combinedDescription:
       'The composite score is a weighted average of the six method scores, normalized to 0–100. A higher score means higher readability/accessibility. The grade_estimate and label fields describe the approximate reading-grade equivalent.',
     methodDetails: [

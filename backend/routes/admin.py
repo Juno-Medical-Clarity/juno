@@ -31,13 +31,9 @@ def get_admin_stats(user_id: str):
             counts[status] += 1
         total += 1
 
-    # Recent errors - ordered by created_at desc
+    # Recent errors - no order_by (avoids composite index requirement), sort in Python
     recent_errors = []
-    for doc in (collection
-                .where('status', '==', 'error')
-                .order_by('created_at', direction=firestore.Query.DESCENDING)
-                .limit(10)
-                .stream()):
+    for doc in collection.where('status', '==', 'error').limit(10).stream():
         data = doc.to_dict()
         recent_errors.append({
             'id': doc.id,
@@ -45,22 +41,21 @@ def get_admin_stats(user_id: str):
             'created_at': data.get('created_at').isoformat() if data.get('created_at') else None,
             'error_data': data.get('error_data'),
         })
+    recent_errors.sort(key=lambda x: x['created_at'] or '', reverse=True)
 
-    # Active jobs - ordered by started_at desc
+    # Active jobs - no order_by (avoids composite index requirement), sort in Python
     recent_processing = []
-    for doc in (collection
-                .where('status', '==', 'processing')
-                .order_by('started_at', direction=firestore.Query.DESCENDING)
-                .limit(20)
-                .stream()):
+    for doc in collection.where('status', '==', 'processing').limit(20).stream():
         data = doc.to_dict()
+        started_at = data.get('started_at')
         recent_processing.append({
             'id': doc.id,
             'name': data.get('name'),
             'stage': data.get('stage'),
-            'started_at': data.get('started_at').isoformat() if data.get('started_at') else None,
+            'started_at': started_at.isoformat() if started_at else None,
             'uid': data.get('uid'),
         })
+    recent_processing.sort(key=lambda x: x['started_at'] or '', reverse=True)
 
     return jsonify({
         'status_counts': counts,

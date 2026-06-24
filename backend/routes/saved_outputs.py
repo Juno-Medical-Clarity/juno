@@ -139,12 +139,23 @@ def rename_saved(user_id: str, doc_id: str):
             ).to_dict(), 400
         updates['output_data.care_plan.note'] = note
 
+    # Handle optional grading update (stored inside output_data.grading)
+    if 'grading' in body:
+        grading = body.get('grading')
+        if not isinstance(grading, dict):
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                f"/care_plan/saved/{doc_id}",
+                {"field": "grading", "reason": "must be an object"},
+            ).to_dict(), 400
+        updates['output_data.grading'] = grading
+
     if len(updates) == 1:
         # Only updated_at was set — no actual fields were provided
         return make_error_response(
             ErrorCode.INPUT_VALIDATION_ERROR,
             f"/care_plan/saved/{doc_id}",
-            {"reason": "at least one of 'name', 'comment', or 'note' is required"},
+            {"reason": "at least one of 'name', 'comment', 'note', or 'grading' is required"},
         ).to_dict(), 400
 
     db.collection('care_plan_outputs').document(doc_id).update(updates)

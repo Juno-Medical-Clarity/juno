@@ -10,7 +10,7 @@ import OutputGradingCard from '../../components/OutputGradingCard';
 import SplitView from '../../components/SplitView';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import { authenticatedFetchJson } from '../../api/apiClient';
-import { shareOutput, updateCarePlanNote } from '../../api/savedOutputs';
+import { shareOutput, updateCarePlanNote, updateCarePlanGrading } from '../../api/savedOutputs';
 import { ApiError } from '../../types/errors';
 import { API_URL } from '../../api/firebase';
 import { useAuth } from '../../auth/AuthContext';
@@ -61,15 +61,6 @@ export default function CarePlanJobPage() {
   const result: CarePlanInternal | null =
     baseResult && gradingOverride ? { ...baseResult, grading: gradingOverride } : baseResult;
 
-  // Sync commentText with carePlan.note when opening the textarea
-  function handleToggleComment() {
-    if (!showCommentArea) {
-      setCommentText(result?.care_plan.note ?? '');
-      setCommentSaved(false);
-    }
-    setShowCommentArea(v => !v);
-  }
-
   async function handleSaveComment() {
     if (!id) return;
     setCommentSaving(true);
@@ -100,7 +91,7 @@ export default function CarePlanJobPage() {
 
   function handleDownloadPdf() {
     if (!result) return;
-    const html = buildPdfHtml(result.care_plan);
+    const html = buildPdfHtml(result.care_plan, result.grading ?? undefined);
     const printWindow = window.open('', '_blank');
     if (!printWindow) {
       alert('Pop-up blocked. Please allow pop-ups to download the report.');
@@ -132,6 +123,10 @@ export default function CarePlanJobPage() {
         },
       );
       setGradingOverride(grading);
+      // Fire-and-forget: persist grading to Firestore
+      if (id) {
+        updateCarePlanGrading(id, grading).catch(() => {/* ignore save errors */});
+      }
     } catch (err: unknown) {
       if (err instanceof ApiError) {
         setGradingError(err.message);
@@ -159,7 +154,7 @@ export default function CarePlanJobPage() {
   if (loading) {
     return (
       <>
-        <NavBar isPublicView={isPublicView} />
+        {!isPublicView && <NavBar />}
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--text-secondary)' }}>
           Loading…
         </div>
@@ -172,7 +167,7 @@ export default function CarePlanJobPage() {
       error.message?.toLowerCase().includes('missing or insufficient');
     return (
       <>
-        <NavBar isPublicView={isPublicView} />
+        {!isPublicView && <NavBar />}
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
           {isPermission
             ? 'You do not have permission to view this care plan.'
@@ -185,7 +180,7 @@ export default function CarePlanJobPage() {
   if (!jobDoc) {
     return (
       <>
-        <NavBar isPublicView={isPublicView} />
+        {!isPublicView && <NavBar />}
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--text-secondary)' }}>
           Care plan not found.
         </div>
@@ -195,18 +190,15 @@ export default function CarePlanJobPage() {
 
   if (isPublicView && jobDoc.shared === false) {
     return (
-      <>
-        <NavBar isPublicView={isPublicView} />
-        <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
-          This care plan is private.
-        </div>
-      </>
+      <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
+        This care plan is private.
+      </div>
     );
   }
 
   if (jobDoc.status === 'completed' && result) {
     const hasInput = (!isPublicView && outputHasInputPdf(result)) || outputHasInputText(result);
-    const sessionId = result.metrics.session_id ?? id ?? null;
+    const sessionId = jobDoc.session_id ?? result.metrics.session_id ?? null;
     const traceId = jobDoc.trace_id;
     const sessionLogUrl = sessionId
       ? `https://console.cloud.google.com/logs/query;query=jsonPayload.session_id%3D"${sessionId}";project=juno-medical-clarity`
@@ -216,7 +208,7 @@ export default function CarePlanJobPage() {
       : null;
     return (
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <NavBar isPublicView={isPublicView} />
+        {!isPublicView && <NavBar />}
         <div style={{ display: 'flex', flex: 1 }}>
           {!isPublicView && (
             <Sidebar
@@ -225,7 +217,7 @@ export default function CarePlanJobPage() {
               refreshTrigger={0}
             />
           )}
-          <div style={{ flex: 1, marginLeft: isPublicView ? 0 : 'var(--sidebar-width, 240px)', minWidth: 0, paddingTop: 'calc(48px + 40px)' }}>
+          <div style={{ flex: 1, marginLeft: isPublicView ? 0 : 'var(--sidebar-width, 240px)', minWidth: 0, paddingTop: isPublicView ? '40px' : 'calc(48px + 40px)' }}>
             <div className="page-wrapper">
               <div className="container">
                 <section className="result-section">
@@ -296,13 +288,60 @@ export default function CarePlanJobPage() {
                     </div>
                   )}
 
-                  {!isPublicView && result.care_plan.note && !showCommentArea && (
-                    <div className="note-readonly-card">
-                      <p className="note-readonly-label">Note</p>
-                      <p className="note-readonly-text">{result.care_plan.note}</p>
+                  {gradingLoading && (
+                    <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                      Recalculating…
+                    </p>
+                  )}
+                  <div style={gradingLoading ? { opacity: 0.5, pointerEvents: 'none' } : undefined}>
+                    <OutputGradingCard grading={result.grading} error={gradingError} />
+                  </div>
+
+                  {!isPublicView && (
+                    <div className="note-card">
+                      {result.care_plan.note
+                        ? <p className="note-card-text">{result.care_plan.note}</p>
+                        : <p className="note-card-placeholder">--Notes--</p>
+                      }
+                      <button
+                        className="download-btn-note note-card-btn"
+                        onClick={() => {
+                          if (!showCommentArea) {
+                            setCommentText(result.care_plan.note ?? '');
+                            setCommentSaved(false);
+                          }
+                          setShowCommentArea(v => !v);
+                        }}
+                      >
+                        {result.care_plan.note ? '✏ Edit Note' : '+ Add Note'}
+                      </button>
+                      {showCommentArea && (
+                        <div className="comment-area">
+                          <textarea
+                            value={commentText}
+                            onChange={e => setCommentText(e.target.value)}
+                            placeholder="Add a note about this care plan…"
+                            maxLength={2000}
+                          />
+                          <div className="comment-actions">
+                            <button
+                              className="comment-cancel-btn"
+                              onClick={() => setShowCommentArea(false)}
+                            >
+                              Cancel
+                            </button>
+                            <button
+                              className="comment-save-btn"
+                              onClick={handleSaveComment}
+                              disabled={commentSaving}
+                            >
+                              {commentSaved ? 'Saved!' : commentSaving ? 'Saving…' : 'Save'}
+                            </button>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   )}
-                  <OutputGradingCard grading={result.grading} error={gradingError} />
 
                   <div className="download-bar">
                     <div className="download-actions">
@@ -321,16 +360,6 @@ export default function CarePlanJobPage() {
                           {gradingLoading ? 'Grading…' : '◎ Grade'}
                         </button>
                       )}
-                      {!isPublicView && (
-                        <button
-                          className="download-btn-note"
-                          onClick={handleToggleComment}
-                        >
-                          {showCommentArea
-                            ? 'Cancel Note'
-                            : (result.care_plan.note ? '✏ Edit Note' : '+ Add Note')}
-                        </button>
-                      )}
                       {user && (
                         <button
                           className="download-btn-share"
@@ -339,7 +368,7 @@ export default function CarePlanJobPage() {
                           aria-label={shareLoading ? 'Saving…' : jobDoc.shared ? 'Stop sharing' : 'Share'}
                           title={shareLoading ? 'Saving…' : jobDoc.shared ? 'Stop sharing' : 'Share'}
                         >
-                          {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗'}
+                          {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗 Share'}
                         </button>
                       )}
                     </div>
@@ -347,31 +376,6 @@ export default function CarePlanJobPage() {
                       <p style={{ marginTop: '6px', color: 'var(--error, #DC2626)', fontSize: '0.78rem', textAlign: 'center' }}>
                         {gradingError}
                       </p>
-                    )}
-                    {showCommentArea && (
-                      <div className="comment-area">
-                        <textarea
-                          value={commentText}
-                          onChange={e => setCommentText(e.target.value)}
-                          placeholder="Add a note about this care plan…"
-                          maxLength={2000}
-                        />
-                        <div className="comment-actions">
-                          <button
-                            className="comment-cancel-btn"
-                            onClick={() => setShowCommentArea(false)}
-                          >
-                            Cancel
-                          </button>
-                          <button
-                            className="comment-save-btn"
-                            onClick={handleSaveComment}
-                            disabled={commentSaving}
-                          >
-                            {commentSaved ? 'Saved!' : commentSaving ? 'Saving…' : 'Save'}
-                          </button>
-                        </div>
-                      </div>
                     )}
                   </div>
                 </section>
@@ -399,7 +403,7 @@ export default function CarePlanJobPage() {
     const message = jobDoc.error_data?.message ?? 'An error occurred processing your care plan.';
     return (
       <>
-        <NavBar isPublicView={isPublicView} />
+        {!isPublicView && <NavBar />}
         <div style={{ padding: '80px 32px', textAlign: 'center', color: 'var(--error, #DC2626)' }}>
           {message}
         </div>
@@ -410,7 +414,7 @@ export default function CarePlanJobPage() {
   const steps = stepsFromStage(jobDoc.stage);
   return (
     <>
-      <NavBar isPublicView={isPublicView} />
+      {!isPublicView && <NavBar />}
       <div style={{ maxWidth: '600px', margin: '0 auto', padding: '80px 32px' }}>
         <div className="glass-card" style={{ padding: '32px' }}>
           <p className="section-title">Creating your care plan…</p>
