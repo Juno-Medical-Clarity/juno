@@ -52,7 +52,7 @@ def _llm_schema(model_cls, exclude: set[str]) -> dict:
 
 
 _STRUCTURING_SCHEMA = json.dumps(
-    _llm_schema(CarePlanV1_2, exclude={"terms", "raw"}),
+    _llm_schema(CarePlanV1_2, exclude={"terms", "raw", "note"}),
     indent=2,
 )
 

@@ -101,6 +101,7 @@
   "low_priority": [
     "Your heart sounds were normal."
   ],
+  "note": null,
   "terms": {
     "Hypertension": {
       "definition": "Blood pressure that stays higher than normal.",

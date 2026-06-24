@@ -94,6 +94,7 @@ export interface CarePlanContent {
   warning_signs: WarningSign[];
   questions: string[];
   low_priority: string[];
+  note?: string;
   terms?: TermsMap;
   raw?: {
     text: string;
