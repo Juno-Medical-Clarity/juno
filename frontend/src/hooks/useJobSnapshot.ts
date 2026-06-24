@@ -24,6 +24,7 @@ export interface JobDoc {
   shared: boolean;
   comment: string;
   trace_id: string | null;
+  session_id: string | null;
 }
 
 export function useJobSnapshot(jobId: string | null): {
@@ -69,6 +70,7 @@ export function useJobSnapshot(jobId: string | null): {
             shared: data.shared ?? false,
             comment: data.comment ?? '',
             trace_id: data.trace_id ?? null,
+            session_id: data.session_id ?? null,
           });
           setLoading(false);
         },
