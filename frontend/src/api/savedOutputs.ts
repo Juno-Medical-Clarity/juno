@@ -1,6 +1,7 @@
 import { authenticatedFetch, authenticatedFetchJson } from './apiClient';
 import { API_URL } from './firebase';
 import { SAVED_OUTPUTS_PATH, savedOutputPath, inputPdfUrlPath } from '../constants';
+import type { Grading } from '../types/envelope';
 
 export interface SavedOutputMeta {
   id: string;
@@ -54,6 +55,15 @@ export async function updateCarePlanNote(id: string, note: string): Promise<void
     body: JSON.stringify({ note }),
   });
   if (!res.ok) throw new Error(`Failed to update note: ${res.status}`);
+}
+
+export async function updateCarePlanGrading(id: string, grading: Grading): Promise<void> {
+  const res = await authenticatedFetch(`${API_URL}${savedOutputPath(id)}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ grading }),
+  });
+  if (!res.ok) throw new Error(`Failed to update grading: ${res.status}`);
 }
 
 export async function shareOutput(id: string, shared: boolean): Promise<void> {
