@@ -8,26 +8,10 @@ interface OutputGradingCardProps {
   error: string | null;
 }
 
-const BREAKDOWN_KEY_ORDER = ['grade_estimate', 'label'];
-
-function sortBreakdownEntries(
-  entries: [string, unknown][]
-): [string, unknown][] {
-  return [...entries].sort(([a], [b]) => {
-    const ai = BREAKDOWN_KEY_ORDER.indexOf(a);
-    const bi = BREAKDOWN_KEY_ORDER.indexOf(b);
-    if (ai !== -1 && bi !== -1) return ai - bi;
-    if (ai !== -1) return -1;
-    if (bi !== -1) return 1;
-    return a.localeCompare(b);
-  });
-}
-
 function BreakdownKV({ breakdown }: { breakdown: Record<string, unknown> }) {
-  const filtered = Object.entries(breakdown).filter(
-    ([k, v]) => k !== 'word_count' && (typeof v !== 'object' || v === null)
+  const entries = Object.entries(breakdown).filter(
+    ([, v]) => typeof v !== 'object' || v === null
   );
-  const entries = sortBreakdownEntries(filtered);
   return (
     <div className="grading-breakdown">
       {entries.map(([k, v]) => (
