@@ -1,0 +1,394 @@
+{
+  "patientdownloadconsent": true,
+  "patientneedsdownloadconsent": false,
+  "lastupdated": "01/07/2016",
+  "medications": [
+    [
+      {
+        "medicationentryid": "H13556",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "atorvastatin 40 mg tablet",
+        "therapeuticclass": "ANTIHYPERLIPIDEMIC-HMGCOA REDUCTASE INHIB(STATINS)",
+        "fdbmedicationid": "154892",
+        "medicationid": 225305,
+        "organclass": "BLOOD",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "every day",
+          "dosagefrequencyvalue": 1,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "187687",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet every day by oral route.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "09/18/2016"
+          },
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13560",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "bupropion HCl SR 150 mg tablet,12 hr sustained-release",
+        "therapeuticclass": "NOREPINEPHRINE AND DOPAMINE REUPTAKE INHIB (NDRIS)",
+        "fdbmedicationid": "157802",
+        "medicationid": 225971,
+        "medicationtallmanname": "buPROPion HCl SR 150 mg tablet,12 hr sustained-release",
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "twice a day",
+          "dosagefrequencyvalue": 2,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "188353",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet twice a day by oral route.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13562",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "clonidine HCl 0.1 mg tablet",
+        "therapeuticclass": "ANTIHYPERTENSIVES, SYMPATHOLYTIC",
+        "fdbmedicationid": "159940",
+        "medicationid": 226410,
+        "medicationtallmanname": "cloNIDine HCl 0.1 mg tablet",
+        "organclass": "CARDIOVASCULAR SYSTEM",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "twice a day",
+          "dosagefrequencyvalue": 2,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "188792",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet twice a day by oral route.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13558",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "allopurinol 100 mg tablet",
+        "therapeuticclass": "HYPERURICEMIA TX - XANTHINE OXIDASE INHIBITORS",
+        "fdbmedicationid": "203487",
+        "medicationid": 236267,
+        "organclass": "ELECTROLYTE BALANCE/METABOLISM/NUTRITION",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "3 times a day",
+          "dosagefrequencyvalue": 3,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "198649",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet 3 times a day by oral route.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13553",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "gabapentin 300 mg capsule",
+        "therapeuticclass": "ANTICONVULSANTS",
+        "fdbmedicationid": "258949",
+        "medicationid": 248694,
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageadditionalinstructions": "at bedtime",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "every day",
+          "dosagefrequencyvalue": 1,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "capsule(s)"
+        },
+        "clinicalordertypeid": "211076",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 capsule every day by oral route at bedtime.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "01/07/2016"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13555",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "zolpidem 10 mg tablet",
+        "therapeuticclass": "SEDATIVE-HYPNOTICS,NON-BARBITURATE",
+        "fdbmedicationid": "278649",
+        "medicationid": 253179,
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageadditionalinstructions": "at bedtime",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "every day",
+          "dosagefrequencyvalue": 1,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "215561",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet every day by oral route at bedtime.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13557",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "Abilify 5 mg tablet",
+        "therapeuticclass": "ANTIPSYCHOTICS, ATYP, D2 PARTIAL AGONIST/5HT MIXED",
+        "fdbmedicationid": "451010",
+        "medicationid": 281015,
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "every day",
+          "dosagefrequencyvalue": 1,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "243397",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet every day by oral route.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13559",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "Sotalol AF 80 mg tablet",
+        "therapeuticclass": "BETA-ADRENERGIC BLOCKING AGENTS",
+        "fdbmedicationid": "451558",
+        "medicationid": 281511,
+        "organclass": "AUTONOMIC NERVOUS SYSTEM",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "twice a day",
+          "dosagefrequencyvalue": 2,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "243893",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet twice a day by oral route.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13554",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "Exforge 10 mg-320 mg tablet",
+        "therapeuticclass": "ANGIOTENSIN RECEPTOR BLOCKR-CALCIUM CHANNEL BLOCKR",
+        "fdbmedicationid": "551497",
+        "medicationid": 343593,
+        "organclass": "CARDIOVASCULAR SYSTEM",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "every day",
+          "dosagefrequencyvalue": 1,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "263407",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet every day by oral route.",
+        "lastmodifieddate": "07/21/2025",
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "12/17/2016"
+          },
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "H13561",
+        "issafetorenew": true,
+        "lastmodifiedby": "INTF-114612150",
+        "medication": "Exforge 5 mg-160 mg tablet",
+        "therapeuticclass": "ANGIOTENSIN RECEPTOR BLOCKR-CALCIUM CHANNEL BLOCKR",
+        "fdbmedicationid": "551495",
+        "medicationid": 343758,
+        "organclass": "CARDIOVASCULAR SYSTEM",
+        "isdiscontinued": false,
+        "source": "INTF-114612150",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "every day",
+          "dosagefrequencyvalue": 1,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "263572",
+        "isstructuredsig": true,
+        "createdby": "INTF-114612150",
+        "unstructuredsig": "Take 1 tablet every day by oral route.",
+        "stopreason": "ineffective",
+        "lastmodifieddate": "07/21/2025",
+        "providernote": "increased dosage",
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "09/18/2016"
+          },
+          {
+            "userdisplayname": "INTF-114612150",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          },
+          {
+            "type": "END",
+            "eventdate": "12/17/2016"
+          },
+          {
+            "type": "HIDE",
+            "eventdate": "09/18/2018"
+          }
+        ]
+      }
+    ]
+  ],
+  "nomedicationsreported": false
+}

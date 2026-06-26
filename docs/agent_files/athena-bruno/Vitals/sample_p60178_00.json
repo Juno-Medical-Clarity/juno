@@ -1,0 +1,185 @@
+{
+  "vitals": [
+    {
+      "key": "BLOODPRESSURE",
+      "ordering": 0,
+      "abbreviation": "BP",
+      "readings": [
+        [
+          {
+            "lastmodifiedby": "API-34297",
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.BLOODPRESSURE.DIASTOLIC",
+            "createddate": "10/10/2025 04:52:22",
+            "isgraphable": true,
+            "code": "8462-4",
+            "value": "73",
+            "vitalid": 23440410,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "01/01/2016",
+            "sourceid": 61964,
+            "codedescription": "Diastolic blood pressure",
+            "lastmodifieddate": "10/10/2025 05:04:24",
+            "readingid": 1
+          },
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.BLOODPRESSURE.SYSTOLIC",
+            "createddate": "10/10/2025 04:52:22",
+            "isgraphable": true,
+            "code": "8480-6",
+            "value": "120",
+            "vitalid": 23440409,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "01/01/2016",
+            "sourceid": 61964,
+            "codedescription": "Systolic blood pressure",
+            "readingid": 1
+          }
+        ],
+        [
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.BLOODPRESSURE.DIASTOLIC",
+            "createddate": "10/10/2025 04:52:22",
+            "isgraphable": true,
+            "code": "8462-4",
+            "value": "90",
+            "vitalid": 23440408,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "01/01/2016",
+            "sourceid": 61964,
+            "codedescription": "Diastolic blood pressure",
+            "readingid": 0
+          },
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.BLOODPRESSURE.SYSTOLIC",
+            "createddate": "10/10/2025 04:52:22",
+            "isgraphable": true,
+            "code": "8480-6",
+            "value": "160",
+            "vitalid": 23440407,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "01/01/2016",
+            "sourceid": 61964,
+            "codedescription": "Systolic blood pressure",
+            "readingid": 0
+          }
+        ],
+        [
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.BLOODPRESSURE.DIASTOLIC",
+            "createddate": "10/10/2025 05:13:05",
+            "isgraphable": true,
+            "code": "8462-4",
+            "value": "70",
+            "vitalid": 23440415,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "09/09/2025",
+            "sourceid": 61965,
+            "codedescription": "Diastolic blood pressure",
+            "readingid": 1
+          },
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.BLOODPRESSURE.SYSTOLIC",
+            "createddate": "10/10/2025 05:13:05",
+            "isgraphable": true,
+            "code": "8480-6",
+            "value": "120",
+            "vitalid": 23440414,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "09/09/2025",
+            "sourceid": 61965,
+            "codedescription": "Systolic blood pressure",
+            "readingid": 1
+          }
+        ],
+        [
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.BLOODPRESSURE.DIASTOLIC",
+            "createddate": "10/10/2025 05:13:05",
+            "isgraphable": true,
+            "code": "8462-4",
+            "value": "90",
+            "vitalid": 23440413,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "09/09/2025",
+            "sourceid": 61965,
+            "codedescription": "Diastolic blood pressure",
+            "readingid": 0
+          },
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.BLOODPRESSURE.SYSTOLIC",
+            "createddate": "10/10/2025 05:13:05",
+            "isgraphable": true,
+            "code": "8480-6",
+            "value": "160",
+            "vitalid": 23440412,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "09/09/2025",
+            "sourceid": 61965,
+            "codedescription": "Systolic blood pressure",
+            "readingid": 0
+          }
+        ]
+      ]
+    },
+    {
+      "key": "TEMPERATURE",
+      "ordering": 12,
+      "abbreviation": "T",
+      "readings": [
+        [
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.TEMPERATURE",
+            "createddate": "10/10/2025 04:52:22",
+            "isgraphable": true,
+            "code": "8310-5",
+            "value": "98.6",
+            "vitalid": 23440411,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "01/01/2016",
+            "sourceid": 61964,
+            "codedescription": "Body temperature",
+            "unit": "F",
+            "readingid": 0
+          }
+        ],
+        [
+          {
+            "source": "FLOWSHEET",
+            "clinicalelementid": "VITALS.TEMPERATURE",
+            "createddate": "10/10/2025 05:13:05",
+            "isgraphable": true,
+            "code": "8310-5",
+            "value": "98.6",
+            "vitalid": 23440416,
+            "codeset": "LOINC",
+            "createdby": "API-34297",
+            "readingtaken": "09/09/2025",
+            "sourceid": 61965,
+            "codedescription": "Body temperature",
+            "unit": "F",
+            "readingid": 0
+          }
+        ]
+      ]
+    }
+  ],
+  "totalcount": 2
+}

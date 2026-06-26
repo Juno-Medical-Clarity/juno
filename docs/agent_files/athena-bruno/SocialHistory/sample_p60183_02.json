@@ -1,0 +1,65 @@
+{
+  "templates": [
+    {
+      "templateid": 479,
+      "templatename": "Meaningful Use - Always Shown"
+    },
+    {
+      "templateid": 922,
+      "templatename": "Big test"
+    },
+    {
+      "templateid": 1102,
+      "templatename": "Transgender Patient"
+    },
+    {
+      "templateid": 1182,
+      "templatename": "2019 novel coronavirus (2019-nCoV)"
+    },
+    {
+      "templateid": 1323,
+      "templatename": "Test35"
+    },
+    {
+      "templateid": "08e2507e-7cd3-42df-a672-a82932f7cadd",
+      "templatename": "Activities of Daily Living"
+    },
+    {
+      "templateid": "4bd889d6-2b45-4470-ae2b-d5dffa48ce8c",
+      "templatename": "Advance Directive"
+    },
+    {
+      "templateid": "0f0164ad-915f-4e25-86d7-90efce288118",
+      "templatename": "Diet and Exercise"
+    },
+    {
+      "templateid": "a4f57ac4-d4a1-45d6-aa71-83bff2031e04",
+      "templatename": "Education and Occupation"
+    },
+    {
+      "templateid": "e824f8d7-acdb-4c6b-b356-4d3e62bd252c",
+      "templatename": "Home and Environment"
+    },
+    {
+      "templateid": "34ebe43c-a532-4c78-8b3d-4e2f91bb8dc9",
+      "templatename": "Lifestyle"
+    },
+    {
+      "templateid": "e5e48e6a-5b1f-46c4-9d19-867275ce60fb",
+      "templatename": "Other"
+    },
+    {
+      "templateid": "b3e19f73-b3bb-4dbb-944b-53085cbe4549",
+      "templatename": "Public Health and Travel"
+    },
+    {
+      "templateid": "e3dac83b-fda8-4ad6-86ae-20d407e6571d",
+      "templatename": "Relationships and Sexuality"
+    },
+    {
+      "templateid": "5e8de5cc-7f7d-48ff-84d3-fc8d218ff1bd",
+      "templatename": "Substance Use"
+    }
+  ],
+  "questions": []
+}
