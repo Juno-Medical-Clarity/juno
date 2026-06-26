@@ -21,8 +21,10 @@ Selected APIs focus on content a provider writes or signs:
  15.  Office Notes            — patients/{patientid}/documents/officenote
 """
 
+import base64
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -512,6 +514,178 @@ def download_office_notes(session: requests.Session, patient_dept_map: list[dict
 
 
 # ---------------------------------------------------------------------------
+# 16. Clinical Document Content
+# ---------------------------------------------------------------------------
+
+
+def _slugify(text: str, max_len: int = 40) -> str:
+    """Convert text to a filename-safe slug."""
+    text = re.sub(r"[^a-zA-Z0-9_\- ]", "", text)
+    text = re.sub(r"\s+", "_", text.strip())
+    return text[:max_len] or "document"
+
+
+def download_clinical_document_content(
+    session: requests.Session,
+    patient_id: int,
+    clinical_document_id: int,
+    document_description: str = "clinical_document",
+) -> dict | None:
+    """
+    Fetch the actual text/content of a single clinical document.
+
+    Endpoint:
+        GET /v1/{practiceId}/patients/{patientId}/documents/clinicaldocument/{clinicaldocumentId}
+
+    The response is a JSON array with one object.  The key fields are:
+        documentdata  — plain-text SOAP note / letter (most documents)
+        pages         — list of page objects for image-based (scanned) documents
+        documentclass — e.g. "CLINICALDOCUMENT"
+
+    Saves to ClinicalDocumentContent/:
+        {clinicaldocumentId}_{slug}.txt   — plain-text documents
+        {clinicaldocumentId}_{slug}.html  — HTML documents
+        {clinicaldocumentId}_{slug}.pdf   — base64-encoded PDF documents
+        {clinicaldocumentId}_{slug}_meta.json — page-based (image) documents
+    """
+    out_dir = SCRIPT_DIR / "ClinicalDocumentContent"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    url = f"/v1/{PRACTICE_ID}/patients/{patient_id}/documents/clinicaldocument/{clinical_document_id}"
+    data = _api_get(session, url)
+    if not data:
+        return None
+
+    # _api_get wraps bare lists in {"items": [...]}, unwrap
+    items = data.get("items") or []
+    item = items[0] if items else None
+    if not item:
+        print(f"  [skip] No content for doc {clinical_document_id}")
+        return None
+
+    doc_data: str = item.get("documentdata", "")
+    pages: list = item.get("pages", [])
+    slug = _slugify(document_description)
+
+    if doc_data:
+        # Detect format
+        stripped = doc_data.strip()
+        if stripped.startswith("<"):
+            ext = ".html"
+            fname = out_dir / f"{clinical_document_id}_{slug}.html"
+            fname.write_text(doc_data, encoding="utf-8")
+        else:
+            # Check for base64-encoded PDF (long, no natural language)
+            sample = stripped[:200].replace("\n", "").replace("\r", "")
+            if len(stripped) > 500 and re.match(r"^[A-Za-z0-9+/=]+$", sample):
+                ext = ".pdf"
+                fname = out_dir / f"{clinical_document_id}_{slug}.pdf"
+                try:
+                    raw = base64.b64decode(doc_data)
+                    fname.write_bytes(raw)
+                except Exception:
+                    ext = ".txt"
+                    fname = out_dir / f"{clinical_document_id}_{slug}.txt"
+                    fname.write_text(doc_data, encoding="utf-8")
+            else:
+                ext = ".txt"
+                fname = out_dir / f"{clinical_document_id}_{slug}.txt"
+                fname.write_text(doc_data, encoding="utf-8")
+
+        size = fname.stat().st_size
+        print(f"  [saved] ClinicalDocumentContent/{fname.name} ({size:,} bytes)")
+        return {
+            "clinicaldocumentid": clinical_document_id,
+            "patient_id": patient_id,
+            "document_description": document_description,
+            "file": str(fname),
+            "format": ext,
+            "size_bytes": size,
+        }
+
+    if pages:
+        # Image-based / scanned document — save metadata so the IDs are recorded
+        fname = out_dir / f"{clinical_document_id}_{slug}_meta.json"
+        fname.write_text(json.dumps(item, indent=2), encoding="utf-8")
+        size = fname.stat().st_size
+        print(f"  [saved] ClinicalDocumentContent/{fname.name} ({size:,} bytes) [page-based]")
+        return {
+            "clinicaldocumentid": clinical_document_id,
+            "patient_id": patient_id,
+            "document_description": document_description,
+            "file": str(fname),
+            "format": ".json",
+            "size_bytes": size,
+            "note": f"page-based document ({len(pages)} page(s)), no documentdata text",
+        }
+
+    print(f"  [skip] Doc {clinical_document_id} has no documentdata and no pages")
+    return None
+
+
+def download_clinical_document_contents(
+    session: requests.Session,
+    clinical_docs_metadata_dir: str | None = None,
+    max_docs: int = 10,
+) -> int:
+    """
+    Download actual content for up to *max_docs* clinical documents.
+
+    Reads (patientid, clinicaldocumentid) pairs from the ClinicalDocuments/
+    metadata files already on disk, then fetches each document's full text
+    via download_clinical_document_content().
+
+    INTERFACE-sourced documents are prioritised because they typically contain
+    rich narrative text (SOAP notes, letters) rather than scanned images.
+    """
+    folder = "ClinicalDocumentContent"
+    print(f"\n[API] Clinical Document Content → {folder}/")
+
+    meta_dir = Path(clinical_docs_metadata_dir) if clinical_docs_metadata_dir else SCRIPT_DIR / "ClinicalDocuments"
+    if not meta_dir.exists():
+        print(f"  [skip] Metadata dir not found: {meta_dir}")
+        return 0
+
+    candidates: list[dict] = []
+    for meta_file in sorted(meta_dir.glob("*.json")):
+        with open(meta_file, encoding="utf-8") as f:
+            meta = json.load(f)
+        docs = meta.get("clinicaldocuments") or meta.get("items") or []
+        for d in docs:
+            candidates.append({
+                "patient_id": d.get("patientid") or d.get("patient_id"),
+                "clinicaldocumentid": d.get("clinicaldocumentid"),
+                "document_description": d.get("documentdescription", "clinical document"),
+                "documentsource": d.get("documentsource", ""),
+            })
+
+    # INTERFACE docs first (richer narrative text), then others
+    ordered = sorted(candidates, key=lambda c: 0 if c.get("documentsource") == "INTERFACE" else 1)
+
+    saved = 0
+    tried = 0
+    for c in ordered:
+        if saved >= max_docs:
+            break
+        pid = c.get("patient_id")
+        doc_id = c.get("clinicaldocumentid")
+        if not pid or not doc_id:
+            continue
+        tried += 1
+        time.sleep(0.3)
+        result = download_clinical_document_content(
+            session, int(pid), int(doc_id), c.get("document_description", "clinical document")
+        )
+        if result:
+            saved += 1
+        if tried >= max_docs * 3:  # give up after trying 3× as many
+            break
+
+    print(f"  → {saved} document(s) saved to {folder}/")
+    return saved
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -578,6 +752,7 @@ def main():
     results["Prescriptions"] = download_prescriptions(session, patient_dept_map)
     results["ClinicalDocuments"] = download_clinical_documents(session, patient_dept_map)
     results["OfficeNotes"] = download_office_notes(session, patient_dept_map)
+    results["ClinicalDocumentContent"] = download_clinical_document_contents(session, max_docs=10)
 
     # ------------------------------------------------------------------
     # Summary

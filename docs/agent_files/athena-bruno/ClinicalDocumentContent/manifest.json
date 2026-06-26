@@ -1,0 +1,92 @@
+[
+  {
+    "clinicaldocumentid": 204457,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204457_clinical_document.txt",
+    "format": ".txt",
+    "size_bytes": 7779,
+    "preview": "Reason for Appointment\n1. Urgent evaluation of erratic hemodynamic profile (significant systolic blood pressure variance: 120\u2013160 mmHg).\n2. Medication safety review regarding reproductive safety profile of Paroxetine (Paxil) given concurrent Prenatal Vitamin use and history of Hyperemesis Gravidarum"
+  },
+  {
+    "clinicaldocumentid": 204458,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204458_clinical_document_meta.json",
+    "format": ".json",
+    "size_bytes": 1544,
+    "note": "page-based document, no documentdata text"
+  },
+  {
+    "clinicaldocumentid": 204460,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204460_clinical_document.txt",
+    "format": ".txt",
+    "size_bytes": 7444,
+    "preview": "Reason for Appointment\n1. Care coordination and chart review following indirect encounters (11/19/2025 - 11/28/2025)\n2. Urgent evaluation of erratic blood pressure and potential Hypertensive Disorder\n3. Critical medication safety review: Paroxetine use in setting of potential pregnancy\n4. Management"
+  },
+  {
+    "clinicaldocumentid": 204461,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204461_clinical_document_meta.json",
+    "format": ".json",
+    "size_bytes": 1544,
+    "note": "page-based document, no documentdata text"
+  },
+  {
+    "clinicaldocumentid": 204462,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204462_clinical_document.txt",
+    "format": ".txt",
+    "size_bytes": 8473,
+    "preview": "Reason for Appointment\n1. Evaluation of erratic blood pressure/suspected Hypertensive Disorder following indirect encounters (11/19/2025 \u2013 11/28/2025).\n2. Medication safety review: Critical evaluation of Paroxetine use in the setting of potential pregnancy (Prenatal Vitamin use).\n3. Management of Mi"
+  },
+  {
+    "clinicaldocumentid": 204463,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204463_clinical_document_meta.json",
+    "format": ".json",
+    "size_bytes": 1544,
+    "note": "page-based document, no documentdata text"
+  },
+  {
+    "clinicaldocumentid": 204464,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204464_clinical_document.txt",
+    "format": ".txt",
+    "size_bytes": 8256,
+    "preview": "Reason for Appointment\n1. Evaluation of erratic blood pressure/suspected Hypertensive Disorder following indirect encounters (11/19/2025 \u2013 11/28/2025).\n2. Medication safety review: Critical evaluation of Paroxetine use in the setting of potential pregnancy (Prenatal Vitamin use).\n3. Management of Mi"
+  },
+  {
+    "clinicaldocumentid": 204465,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204465_clinical_document_meta.json",
+    "format": ".json",
+    "size_bytes": 1544,
+    "note": "page-based document, no documentdata text"
+  },
+  {
+    "clinicaldocumentid": 204466,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204466_clinical_document.txt",
+    "format": ".txt",
+    "size_bytes": 7440,
+    "preview": "**Reason for Appointment**\n1. Evaluation of erratic blood pressure/suspected Hypertensive Disorder following indirect encounters (11/19/2025 \u2013 11/28/2025).\n2. Medication safety review: Critical evaluation of Paroxetine use in the setting of potential pregnancy (Prenatal Vitamin use).\n3. Management o"
+  },
+  {
+    "clinicaldocumentid": 204467,
+    "patient_id": 60178,
+    "document_description": "clinical document",
+    "file": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContent/204467_clinical_document_meta.json",
+    "format": ".json",
+    "size_bytes": 1544,
+    "note": "page-based document, no documentdata text"
+  }
+]

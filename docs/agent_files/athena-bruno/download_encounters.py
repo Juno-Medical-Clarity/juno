@@ -28,6 +28,10 @@ EXTRA_PATIENTS = [8188]  # departmentid 150
 # Departments to scan for booked appointments with encounter IDs
 SCAN_DEPTS = [1, 150, 82, 102, 21, 142]
 
+# Batch rate-limiting: pause after every BATCH_SIZE *new* downloads
+BATCH_SIZE = 2
+BATCH_DELAY_SECONDS = 30
+
 
 # ---------------------------------------------------------------------------
 # Auth
@@ -308,6 +312,9 @@ def main():
                 ok = download_encounter(session, args.patient_id, enc_id, out_dir)
                 if ok:
                     downloaded += 1
+                    if downloaded % BATCH_SIZE == 0:
+                        print(f"  [batch] Downloaded {downloaded} so far — sleeping {BATCH_DELAY_SECONDS}s …")
+                        time.sleep(BATCH_DELAY_SECONDS)
         _finish(out_dir, downloaded)
         return
 
@@ -321,6 +328,9 @@ def main():
         ok = download_encounter(session, patient_id, encounter_id, out_dir)
         if ok:
             downloaded += 1
+            if downloaded % BATCH_SIZE == 0:
+                print(f"  [batch] Downloaded {downloaded} so far — sleeping {BATCH_DELAY_SECONDS}s …")
+                time.sleep(BATCH_DELAY_SECONDS)
 
     _finish(out_dir, downloaded)
 
