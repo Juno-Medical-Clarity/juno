@@ -152,7 +152,7 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
     for upload in files:
         filename = upload.filename
         if not _allowed(filename):
-            raise ValueError("File must be PDF, TXT, or DOCX")
+            raise ValueError("File must be PDF, TXT, DOCX, or HTML")
 
         file_bytes = upload.read()
         if len(file_bytes) > Constants.MAX_FILE_BYTES:
@@ -169,7 +169,7 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
         ext = filename.rsplit(".", 1)[1].lower()
         if ext in {"pdf", "txt"}:
             merge_candidates.append((file_bytes, filename))
-        elif ext == "docx" and extracted_text.strip():
+        elif ext in {"docx", "html", "htm"} and extracted_text.strip():
             merge_candidates.append(
                 (extracted_text.encode("utf-8"), _text_artifact_filename(filename))
             )
