@@ -59,3 +59,12 @@ def test_extract_text_multiline_content():
     result = extract_text_from_html(html)
     assert "Take this medication daily." in result
     assert "Follow up in 2 weeks." in result
+
+
+def test_extract_text_preserves_inline_formatting():
+    """Inline tags like <b> and <i> do not fragment the surrounding text."""
+    from utils.html import extract_text_from_html
+    html = _html("<p>Take <b>2</b> pills <i>daily</i> with food.</p>")
+    result = extract_text_from_html(html)
+    # All words should appear on the same line, not fragmented across lines
+    assert "Take 2 pills daily with food." in result

@@ -29,6 +29,19 @@ def extract_text_from_html(html_content: bytes) -> str:
     for tag in soup.find_all(["script", "style"]):
         tag.decompose()
 
+    # Unwrap inline formatting tags so their text stays with the surrounding sentence.
+    # Without this, <p>Take <b>2</b> pills daily</p> extracts as "Take\n2\npills\ndaily"
+    # because get_text adds separator between every text node.
+    _INLINE_TAGS = [
+        "a", "abbr", "b", "cite", "code", "em", "i", "kbd", "mark",
+        "q", "s", "small", "span", "strong", "sub", "sup", "u",
+    ]
+    for tag in list(soup.find_all(_INLINE_TAGS)):
+        tag.unwrap()
+    # Merge adjacent NavigableString nodes created by unwrap() so that
+    # get_text() treats them as one unit rather than inserting separators.
+    soup.smooth()
+
     # Prefer the <body> element; fall back to the full document.
     target = soup.body if soup.body else soup
 
