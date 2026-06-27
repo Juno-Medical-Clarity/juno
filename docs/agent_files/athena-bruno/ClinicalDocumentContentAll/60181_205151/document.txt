@@ -1,0 +1,113 @@
+Reason for Appointment
+1. Clinical surveillance and evaluation of reported cardiopulmonary symptoms: Palpitations, Angina Pectoris, Dyspnea, and Chest Pain.
+2. Medication safety review regarding **Therapeutic Appropriateness** (Combined Oral Contraceptive use in patient with active anginal symptoms).
+3. Data integrity verification regarding reported laboratory results (**Data Integrity Alert** identified in Pregnancy Status).
+4. Preventive health maintenance and immunization status reconciliation (**Guideline Gap** identified for Tetanus/Diphtheria/Pertussis).
+
+History of Present Illness
+None Testpt is a 29-year-old female presenting for routine clinical follow-up. Review of the clinical documentation indicates active reports of Palpitations, Angina pectoris, Dyspnea, and Chest pain. These symptoms necessitate immediate risk stratification to rule out arrhythmic etiology, ischemic coronary syndrome, or pulmonary embolism, particularly given the patient's medication profile.
+
+A comprehensive review of the medication profile identifies a potential **Therapeutic Safety Risk**. The patient is currently managed on Ortho Tri-Cyclen Lo (Norgestimate/Ethinyl Estradiol) for contraception. Per **ACOG and ACC/AHA Guidelines**, the use of combined hormonal contraceptives is associated with an increased risk of venous thromboembolism (VTE) and myocardial infarction. In the context of a patient reporting active chest pain and angina, the continuation of estrogen-containing therapy requires urgent re-evaluation to ensure **Therapeutic Safety**. Additionally, the patient takes Celexa (Citalopram) 20 mg daily. While generally safe, Citalopram carries a risk of QT prolongation. In the setting of reported palpitations, an electrocardiogram is indicated to verify correct **Therapeutic Appropriateness** and rule out drug-induced arrhythmia.
+
+A review of recent laboratory data identifies a significant **Data Integrity Issue**. A result for "Pregnancy Status" is recorded with a future date of 2025-12-11. This is validated as an administrative error. Given the patient's use of oral contraceptives and potential need for diagnostic imaging or medication adjustment, a current, valid pregnancy test is clinically indicated to resolve this discrepancy.
+
+Immunization records indicate the patient is up to date on COVID-19 (2025) and Influenza (2025). The patient completed a Td booster in 2017. However, per **CDC/ACIP Guidelines**, a Tdap booster is preferred if not previously received as an adult, or Td every 10 years. While not overdue, a **Guideline Gap** review suggests verifying Tdap status for pertussis coverage.
+
+SUBJECTIVE:
+- Chief Complaint: General Follow-up / Evaluation of Palpitations and Chest Pain.
+- History of Present Illness: As detailed above.
+- ALLERGIES: 
+  * Product containing penicillin: Reaction unknown, Criticality unknown.
+- Review of Systems:
+  * Cardiovascular: Positive for chest pain, palpitations, angina-like symptoms.
+  * Respiratory: Positive for dyspnea.
+  * Musculoskeletal: Positive for knee pain (history of OA).
+  * Psychiatric: History of depressive disorder, currently on treatment.
+
+OBJECTIVE:
+- Vital Signs: [Vital signs not provided in source data; presume stable for outpatient follow-up or refer to flow sheet].
+- Physical Exam: 
+  * General: No acute distress.
+  * CV: Rate and rhythm to be correlated with ECG.
+  * Resp: Lungs clear to auscultation.
+  * Ext: Knee examination pending based on pain reports.
+- Lab Results:
+  * Pregnancy Status: "None None" (Date: 2025-12-11) - **INVALID DATE**
+- Current Medications:
+  * Celexa 20 mg tablet daily.
+  * Ortho Tri-Cyclen LO (28) tablet daily.
+  * Multivitamin tablet daily.
+
+ASSESSMENT:
+Problem List:
+1. Angina pectoris, unspecified (ICD-10: I20.9, HCC: 88)
+2. Palpitations (ICD-10: R00.2)
+3. Chest pain, unspecified (ICD-10: R07.9)
+4. Depressive disorder, single episode, unspecified (ICD-10: F32.9)
+5. Osteoarthritis of knee, unspecified (ICD-10: M17.9)
+6. Long-term (current) use of oral contraceptives (ICD-10: Z79.890)
+
+Data Integrity & Validation Alerts:
+- **ALERT:** Pregnancy Status result dated 2025-12-11 is a future date. Result is disregarded for medical decision-making. New test ordered to ensure safety prior to potential cardiac diagnostic testing or medication changes.
+
+Drug-Allergy Interactions:
+- Penicillin Allergy: Current medications (Citalopram, Vitamins, OCPs) do not cross-react. No conflict.
+
+Medication Safety & Guideline Alignment:
+- **Citalopram & Palpitations:** FDA Safety Communication (2011) warns of QT prolongation with Citalopram. 2017 ACC/AHA/HRS Guidelines for Management of Ventricular Arrhythmias recommend monitoring QTc in patients with palpitations on serotonergic agents.
+- **OCP & Angina:** CDC U.S. Medical Eligibility Criteria for Contraceptive Use (2016/2024 updates) classify combined hormonal contraceptives as Category 3/4 (Risks outweigh benefits/Unacceptable risk) in patients with current ischemic heart disease. Risk stratification is required immediately.
+
+PLAN:
+Diagnostic Plan:
+1. 12-Lead Electrocardiogram (ECG) performed in office to evaluate palpitations, rule out ischemia, and assess QTc interval (Safety check for Citalopram).
+2. Urine Pregnancy Test (hCG) to resolve data integrity error and ensure safety.
+3. Basic Metabolic Panel (BMP) to check electrolytes (Mg/K) relevant to arrhythmia risk.
+
+Therapeutic Plan:
+1. **Medication Re-evaluation:** Counseling provided regarding potential association between chest pain and oral contraceptive use. If cardiac workup is negative, may continue. If ischemia confirmed, OCP to be discontinued in favor of non-hormonal or progestin-only alternatives.
+2. **Depression Management:** Continue Celexa 20 mg; re-evaluate dosage pending ECG QTc results.
+3. **OA Management:** Manage knee pain with acetaminophen PRN; avoid chronic NSAIDs if cardiac risk is confirmed elevated.
+
+Patient Education:
+- Instructed on "Red Flag" symptoms requiring ER evaluation: crushing chest pain, radiation to jaw/arm, severe shortness of breath.
+- Counseling on potential side effects of medications.
+
+Follow-up:
+- Return to clinic in 1-2 weeks to review cardiac surveillance data.
+- Refer to Cardiology if ECG demonstrates ischemia or significant arrhythmia.
+
+BILLING & DOCUMENTATION:
+
+**E/M Code (Physician Service):**
+- Selected Code: 99214 - Established patient, moderate complexity
+- Justification: 
+  * Problems: New problem with uncertain prognosis (Angina/Palpitations) and exacerbation of chronic condition.
+  * Data: Review of labs, ordering of unique tests (ECG).
+  * Risk: Moderate risk due to prescription drug management (decision regarding OCPs and SSRI with cardiac symptoms).
+
+**Additional Billable Procedures:**
+- 93000: Electrocardiogram, routine ECG with at least 12 leads; with interpretation and report.
+  Medical Necessity: R00.2 (Palpitations), I20.9 (Angina).
+- 81025: Urine pregnancy test, by visual color comparison methods.
+  Medical Necessity: Z79.890 (Long-term use of contraceptives/Safety check).
+
+**ICD-10 Diagnoses (for billing):**
+1. I20.9: Angina pectoris, unspecified (PRIMARY)
+2. R00.2: Palpitations
+3. R07.9: Chest pain, unspecified
+4. F32.9: Depressive disorder, single episode, unspecified
+5. Z79.890: Long-term (current) use of oral contraceptives
+
+HEALTH MAINTENANCE & PREVENTIVE CARE:
+- **Procedures:** No recent procedures relevant to current complaint (last recorded 2017).
+- **Immunizations:** 
+  * Influenza: Received 2025-10-09 (Up to date).
+  * COVID-19: Received 2025-09-30 (Up to date).
+  * Tdap: Td recorded 2017. Recommended Tdap booster if not recorded in adulthood to cover Pertussis (**Guideline Gap**).
+- **Screening:** 
+  * Cervical Cancer: HPV quadrivalent series completed (2011-2012). Ensure Pap smear currency per USPSTF guidelines (every 3 years for age 21-29).
+
+EVIDENCE & GUIDELINES:
+- **ACC/AHA 2021 Guideline for the Evaluation and Diagnosis of Chest Pain:** Emphasizes risk stratification in women, noting that women are less likely to present with classic symptoms.
+- **CDC U.S. Medical Eligibility Criteria for Contraceptive Use:** Referenced for safety of OCPs in setting of cardiovascular symptoms.
+- **FDA Safety Communication (Citalopram):** Referenced regarding QT prolongation monitoring.

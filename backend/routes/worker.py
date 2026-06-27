@@ -17,7 +17,8 @@ from models.envelope import CarePlanInternal
 from models.input import TextInput, DocIdInput
 from models.metrics import Metrics
 from utils.constants import Constants
-from utils.error_codes import make_error_response, ErrorCode
+from error_codes import ErrorCode as PipelineErrorCode
+from utils.error_handler import build_error_data, build_error_data_from_exc
 
 logger = logging.getLogger(__name__)
 worker_bp = Blueprint("worker", __name__)
@@ -54,12 +55,13 @@ def _resolve_input_from_job_doc(job_doc: dict) -> str:
     return job_doc.get("input_text") or ""
 
 
-def _build_error_data(code: ErrorCode, details_vars: dict | None = None) -> dict:
-    """Build the full SP2 ErrorDetail dict for a worker-originated failure.
+def _build_error_data(code: PipelineErrorCode, detail: str = "") -> dict:
+    """Build the rich error_data dict for a worker-originated failure.
 
-    Worker errors have no HTTP request context, so path is None.
+    Uses the new error catalog (error_codes.py) to produce a Firestore-ready
+    dict with code, message, user_hint, retryable, and detail fields.
     """
-    return make_error_response(code, path=None, details_vars=details_vars).error.to_dict()
+    return build_error_data(code, detail)
 
 
 def _verify_oidc_token() -> bool:
@@ -169,14 +171,14 @@ def execute_job(job_id: str):
         def _check_timeout(stage: int) -> bool:
             elapsed = time.monotonic() - start
             if elapsed > deadline_s:
-                fail_job(job_id, _build_error_data(ErrorCode.JOB_TIMEOUT, {"stage": stage}))
+                fail_job(job_id, _build_error_data(PipelineErrorCode.PIPELINE_TIMEOUT, f"Job timed out at stage {stage}"))
                 logger.warning("worker: job %s timed out at stage %d after %.1fs", job_id, stage, elapsed)
                 return True
             return False
 
         text = _resolve_input_from_job_doc(job_doc)
         if not text.strip():
-            fail_job(job_id, _build_error_data(ErrorCode.INPUT_EMPTY))
+            fail_job(job_id, _build_error_data(PipelineErrorCode.EMPTY_DOCUMENT))
             return "", 200
 
         version = job_doc.get("input_version", "v1-2")
@@ -222,20 +224,20 @@ def execute_job(job_id: str):
                     update_job_stage(job_id, current_stage)
 
         if pipeline_error_data is not None:
-            # error_data is already a full SP2 ErrorDetail dict from the pipeline.
-            message = pipeline_error_data.get("message")
-            details = pipeline_error_data.get("details")
-            if message or details:
+            # error_data is a rich error dict from the pipeline SSE stream.
+            # Both old SP2 format (code+message+details) and new rich format
+            # (code+message+user_hint+retryable+detail) carry a "message" field.
+            if pipeline_error_data.get("code") or pipeline_error_data.get("message"):
                 fail_job(job_id, pipeline_error_data)
             else:
                 fail_job(job_id, _build_error_data(
-                    ErrorCode.PIPELINE_ERROR, {"detail": "Pipeline failed"}
+                    PipelineErrorCode.UNKNOWN_ERROR, "Pipeline failed without an error message"
                 ))
             return "", 200
 
         if pipeline_result is None:
             fail_job(job_id, _build_error_data(
-                ErrorCode.PIPELINE_ERROR, {"detail": "Pipeline returned no result"}
+                PipelineErrorCode.UNKNOWN_ERROR, "Pipeline returned no result"
             ))
             return "", 200
 
@@ -261,8 +263,13 @@ def execute_job(job_id: str):
         logger.info("worker: job %s completed", job_id, extra={"job_id": job_id, "batch_run_id": batch_run_id, "uid": uid, "stage": 5})
         return "", 200
 
-    except Exception:
+    except Exception as exc:
         logger.exception("worker: unexpected error for job %s", job_id, extra={"job_id": job_id})
+        # Best-effort: mark the job as failed so the frontend doesn't show it as stuck.
+        try:
+            fail_job(job_id, build_error_data_from_exc(exc))
+        except Exception:
+            pass
         return "", 500
 
 

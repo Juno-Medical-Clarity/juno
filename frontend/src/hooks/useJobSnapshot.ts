@@ -2,17 +2,39 @@ import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { firebaseAuth, firebaseDb } from '../api/firebase';
-import type { ApiErrorDetail } from '../types/errors';
 
 export type JobStatus = 'not_started' | 'processing' | 'completed' | 'error';
 
 /**
- * Worker-written error_data follows the SP2 ErrorDetail shape (code, message,
- * details, timestamp, path). details/timestamp/path are optional here because
- * older docs may have been written with just {code, message}.
+ * Worker-written error_data dict stored in Firestore on job failure.
+ *
+ * New rich format (JunoError-classified jobs):
+ *   { code, message, user_hint, retryable, detail }
+ *
+ * Legacy SP2 ErrorDetail format (older jobs):
+ *   { code, message, details?, timestamp?, path? }
+ *
+ * Both formats include `code` and `message`; new fields are optional so
+ * the frontend degrades gracefully for docs written before this schema.
  */
-export type JobErrorData = Pick<ApiErrorDetail, 'code' | 'message'> &
-  Partial<Pick<ApiErrorDetail, 'details' | 'timestamp' | 'path'>>;
+export type JobErrorData = {
+  /** Canonical error code, e.g. "LLM_MAX_TOKENS" */
+  code: string;
+  /** Developer-facing description of the error. */
+  message: string;
+  /** User-facing actionable hint (new rich format). */
+  user_hint?: string;
+  /** Whether a retry of the same request is likely to succeed (new rich format). */
+  retryable?: boolean;
+  /** Exception string or extra technical context (new rich format). */
+  detail?: string;
+  /** Legacy SP2 ErrorDetail field — specific detail string. */
+  details?: string;
+  /** Legacy SP2 ErrorDetail field — ISO-8601 UTC timestamp. */
+  timestamp?: string;
+  /** Legacy SP2 ErrorDetail field — request path; null for worker errors. */
+  path?: string | null;
+};
 
 export interface JobDoc {
   status: JobStatus;
