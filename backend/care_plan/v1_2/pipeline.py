@@ -105,7 +105,7 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
             abbrev_block=abbrev_block,
             text=text,
         )
-        return self._generate_text(prompt, temperature=0.3, max_tokens=16384)
+        return self._generate_text(prompt, temperature=0.3, max_tokens=65536)
 
     def clarify_and_action(self, text: str, abbreviations: list[dict] | None = None) -> str:
         abbreviation_section = ""
@@ -121,7 +121,7 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
             abbreviation_section=abbreviation_section,
             text=text,
         )
-        return self._generate_text(prompt, temperature=0.2, max_tokens=16384)
+        return self._generate_text(prompt, temperature=0.2, max_tokens=65536)
 
     def structure_appointment_note(self, text: str) -> dict:
         prompt = _STRUCTURE_PROMPT.format(schema=_STRUCTURING_SCHEMA, text=text)

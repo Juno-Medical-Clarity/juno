@@ -189,20 +189,22 @@ def build_html_page(patient_id, encounter_id, body_content: str) -> str:
 # Core download
 # ---------------------------------------------------------------------------
 
-def download_encounter(session: requests.Session, patient_id, encounter_id, out_dir: Path) -> bool:
-    """Download one encounter summary and write it as HTML. Returns True on success."""
+def download_encounter(session: requests.Session, patient_id, encounter_id, out_dir: Path) -> str:
+    """Download one encounter summary and write it as HTML.
+    Returns 'skipped' if file already exists, 'ok' on successful new download, 'error' on failure.
+    """
     fname = out_dir / f"patient_{patient_id}_encounter_{encounter_id}.html"
     if fname.exists():
         size = fname.stat().st_size
         print(f"  [skip] {fname.name} already exists ({size:,} bytes)")
-        return True
+        return "skipped"
 
     print(f"  [fetch] Encounter {encounter_id} for patient {patient_id} …")
     time.sleep(0.5)
 
     summary = get_encounter_summary(session, encounter_id)
     if summary is None:
-        return False
+        return "error"
 
     body = extract_html(summary, patient_id, encounter_id)
     html = build_html_page(patient_id, encounter_id, body)
@@ -210,7 +212,7 @@ def download_encounter(session: requests.Session, patient_id, encounter_id, out_
     fname.write_text(html, encoding="utf-8")
     size = fname.stat().st_size
     print(f"  [saved] {fname.name} ({size:,} bytes)")
-    return True
+    return "ok"
 
 
 # ---------------------------------------------------------------------------
@@ -286,8 +288,8 @@ def main():
     # --- Single encounter mode ---
     if args.encounter_id:
         patient_id = args.patient_id or "unknown"
-        ok = download_encounter(session, patient_id, args.encounter_id, out_dir)
-        if ok:
+        result = download_encounter(session, patient_id, args.encounter_id, out_dir)
+        if result in ("ok", "skipped"):
             downloaded += 1
         _finish(out_dir, downloaded)
         return
@@ -304,16 +306,19 @@ def main():
         time.sleep(0.5)
         encs = get_patient_encounters(session, args.patient_id, dept)
         print(f"  Found {len(encs)} encounter(s)")
+        new_in_batch = 0
         for enc in encs:
             if downloaded >= args.count:
                 break
             enc_id = enc.get("encounterid")
             if enc_id:
-                ok = download_encounter(session, args.patient_id, enc_id, out_dir)
-                if ok:
+                result = download_encounter(session, args.patient_id, enc_id, out_dir)
+                if result in ("ok", "skipped"):
                     downloaded += 1
-                    if downloaded % BATCH_SIZE == 0:
-                        print(f"  [batch] Downloaded {downloaded} so far — sleeping {BATCH_DELAY_SECONDS}s …")
+                if result == "ok":
+                    new_in_batch += 1
+                    if new_in_batch % BATCH_SIZE == 0:
+                        print(f"  [batch] {new_in_batch} new download(s) — sleeping {BATCH_DELAY_SECONDS}s …")
                         time.sleep(BATCH_DELAY_SECONDS)
         _finish(out_dir, downloaded)
         return
@@ -322,14 +327,17 @@ def main():
     pairs = discover_encounter_pairs(session, dept_id=args.department_id)
     print(f"\n[run] Found {len(pairs)} candidate encounter(s) — targeting {args.count}\n")
 
+    new_in_batch = 0
     for patient_id, encounter_id in pairs:
         if downloaded >= args.count:
             break
-        ok = download_encounter(session, patient_id, encounter_id, out_dir)
-        if ok:
+        result = download_encounter(session, patient_id, encounter_id, out_dir)
+        if result in ("ok", "skipped"):
             downloaded += 1
-            if downloaded % BATCH_SIZE == 0:
-                print(f"  [batch] Downloaded {downloaded} so far — sleeping {BATCH_DELAY_SECONDS}s …")
+        if result == "ok":
+            new_in_batch += 1
+            if new_in_batch % BATCH_SIZE == 0:
+                print(f"  [batch] {new_in_batch} new download(s) — sleeping {BATCH_DELAY_SECONDS}s …")
                 time.sleep(BATCH_DELAY_SECONDS)
 
     _finish(out_dir, downloaded)

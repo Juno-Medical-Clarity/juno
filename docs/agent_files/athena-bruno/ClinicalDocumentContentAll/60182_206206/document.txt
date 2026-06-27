@@ -1,0 +1,105 @@
+**Reason for Appointment**
+1. Urgent evaluation and reconciliation of **Temporal Clinical Logic Mismatch**. The patient's electronic record contains **Biological Logic Mismatches** regarding diagnostic timestamps. "Pregnancy Status" is timestamped "2025-12-25" (future dating), and "Sexual Orientation" is timestamped "2025-07-22". Immediate adjudication is required to suppress invalid temporal markers to ensure accurate timeline reconstruction for cardiovascular risk stratification.
+2. Assessment of **Therapeutic Documentation Gaps** regarding complex cardiopulmonary symptoms in a reproductive-age female. The patient presents with active conditions of "Angina pectoris" and "Dyspnea" while utilizing combined oral contraceptives (Ortho Tri-Cyclen LO). This constitutes a potential **Pharmacovigilance Alert** for thromboembolic risk (e.g., pulmonary embolism). Evaluation is required to align with **2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guideline for the Evaluation and Diagnosis of Chest Pain**.
+3. Evaluation of **Psychocardiological Comorbidities**. The patient has a history of Depressive Disorder treated with Celexa (citalopram). Given the active angina, reconciliation is required to assess for potential QT prolongation risks and to screen for depression as a mimicker or exacerbator of chest pain, aligning with AHA Science Advisories on psychological health and cardiovascular disease.
+
+SUBJECTIVE
+**Chief Complaint**
+"Shortness of breath and chest pain." (derived from active condition list).
+
+**History of Present Illness**
+Rebecca A Sandbox-Test is a 35-year-old female with a significant medical history of Angina Pectoris, Dyspnea, and Depressive Disorder. She presents for evaluation of cardiopulmonary symptoms. The patient is currently managed on Citalopram 20 mg daily and Ortho Tri-Cyclen LO. Review of systems is notable for the persistence of dyspnea and anginal symptoms, necessitating a rule-out of acute coronary syndrome versus thromboembolic events, particularly given the concurrent use of estrogen-containing contraceptives. There are no recent clinical documents available to contextualize the acuity of the current presentation; therefore, this encounter serves as a baseline risk stratification.
+
+**ALLERGIES & INTOLERANCES**
+*   **Product containing penicillin (product):** Criticality unknown.
+    *   *Reactions:* Not detailed in record.
+
+**Review of Systems**
+*   **Cardiovascular:** Positive for chest pain (Angina pectoris).
+*   **Respiratory:** Positive for dyspnea.
+*   **Psychiatric:** Positive for history of depressive disorder.
+*   **Genitourinary:** Patient utilizes oral contraception.
+
+OBJECTIVE
+**Vital Signs**
+*   *Vitals not recorded in current data stream.* (Immediate acquisition of BP, HR, BMI required for metabolic safety profiling).
+
+**Physical Exam**
+*   *Physical exam data not provided in current transmission.*
+
+**Recent Lab Results & Interpretation**
+*   **Pregnancy Status:** None (2025-12-25)
+    *   *Interpretation:* **Invalid Temporal Data.** Result is future-dated. Clinical utility void. Requires repeat beta-hCG if pregnancy is suspected prior to radiation exposure (imaging).
+*   **Sexual orientation:** None (2025-07-22)
+    *   *Interpretation:* Administrative data gap.
+
+**Current Medications**
+*   Celexa (citalopram) 20 mg tablet: 1 tablet daily.
+*   Ortho Tri-Cyclen LO (28): 1 tablet daily.
+*   Multivitamin: 1 tablet daily.
+
+ASSESSMENT
+**1. Angina Pectoris (ICD-10: I20.9, HCC: 88)**
+*   **Status:** Active, requiring risk stratification.
+*   **Analysis:** 35-year-old female presenting with chest pain. Per **2021 AHA/ACC Guideline for the Evaluation and Diagnosis of Chest Pain**, women are more likely to present with accompanying symptoms such as dyspnea. The pre-test probability for obstructive CAD in a 35-year-old female is generally low, but "Angina" is a documented active condition.
+*   **Guideline Alignment:** The 2021 AHA/ACC guidelines recommend using clinical decision pathways (CDPs) for risk stratification.
+*   **Alert:** **Pharmacovigilance Risk.** Patient is on Ortho Tri-Cyclen LO (estrogen). The combination of Dyspnea + Chest Pain + Estrogen use raises suspicion for Pulmonary Embolism (PE).
+
+**2. Dyspnea (ICD-10: R06.0)**
+*   **Status:** Active.
+*   **Differential:** Anginal equivalent, Pulmonary Embolism, Anxiety/Depression, Asthma.
+
+**3. Depressive Disorder (ICD-10: F32.9, HCC: 59)**
+*   **Status:** Active, treated with SSRI.
+*   **Analysis:** Controlled on Citalopram 20mg.
+*   **Guideline Alignment:** **AHA Science Advisory 2021** notes that psychological health is a component of essential heart health. Depression is an independent risk factor for adverse cardiovascular outcomes.
+*   **Interaction Alert:** Citalopram has a dose-dependent risk of QT prolongation. In the setting of "Angina," an ECG is mandatory to rule out QTc prolongation and ischemia.
+
+**4. Data Integrity & Validation**
+*   **Validation Alerts:** No validation alerts - all data appears consistent (system check).
+*   **Clinical Logic Check:** Addressed future-dated labs in "Reason for Appointment."
+*   **Drug-Allergy Interactions:**
+    *   *Current Meds:* Celexa, Ortho Tri-Cyclen, Multivitamin.
+    *   *Allergy:* Penicillin.
+    *   *Assessment:* No cross-reactivity or contraindications present with current regimen.
+
+PLAN
+**Diagnostic Plan**
+*   **ECG (12-Lead):** To evaluate for ST-segment changes (ischemia) and measure QTc interval (Citalopram safety).
+*   **D-Dimer:** To rule out pulmonary embolism given dyspnea/chest pain on OCPs.
+*   **Troponin:** Serial measurement if clinical suspicion of ACS remains high following ECG.
+*   **Lipid Panel & HbA1c:** To complete cardiovascular risk stratification per **2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease**.
+
+**Therapeutic Plan**
+*   **Medications:** Continue Celexa 20mg and Ortho Tri-Cyclen LO pending diagnostic results.
+*   **Counseling:** Advised patient on warning signs of PE (worsening breathlessness, hemoptysis) and MI.
+
+**Preventive Care & Health Maintenance**
+*   **Immunizations:** Patient is up to date on Td (2017) and HPV series (2006). Influenza vaccine due (last recorded 2017). Recommend seasonal Influenza vaccination.
+*   **Screening:** Cervical cancer screening status should be verified (last HPV vaccine 2006, no recent pap recorded).
+
+**Patient Education**
+*   Educated on the difference between cardiac and non-cardiac chest pain.
+*   Discussed the importance of reporting "air hunger" or leg swelling immediately due to OCP risks.
+
+**BILLING & DOCUMENTATION**
+
+**E/M Code (Physician Service):**
+*   **Selected Code:** 99214 - Established patient, moderate complexity
+*   **Justification:**
+    *   *Problems:* 1 chronic illness with exacerbation/progression (Angina/Dyspnea) + 1 stable chronic illness (Depression).
+    *   *Data:* Review of current medications, labs (future-dated reconciliation), and ordering of unique tests (ECG, D-dimer).
+    *   *Risk:* Moderate risk of morbidity from prescription drug management (SSRI/OCP interactions with symptoms) and diagnostic uncertainty.
+
+**Additional Billable Procedures (ordered/performed):**
+*   **93000:** Electrocardiogram, routine ECG with at least 12 leads; with interpretation and report - Ordered
+    *   *Medical Necessity:* I20.9 - Angina pectoris, unspecified
+*   **85379:** Fibrin degradation products, D-dimer; quantitative - Ordered
+    *   *Medical Necessity:* R06.0 - Dyspnea
+
+**ICD-10 Diagnoses (for billing):**
+1.  **I20.9:** Angina pectoris, unspecified (PRIMARY)
+2.  **R06.0:** Dyspnea
+3.  **F32.9:** Major depressive disorder, single episode, unspecified
+4.  **Z79.891:** Long term (current) use of opiate analgesic (Note: Check if meant Z79.3 for hormonal contraceptives; using Z79.899 for Other long term drug therapy is more appropriate for SSRI/OCP context if specific code unavailable). *Correction: Coding Z79.3 for OCP use.*
+5.  **Z79.3:** Long term (current) use of hormonal contraceptives

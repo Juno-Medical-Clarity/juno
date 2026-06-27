@@ -34,6 +34,7 @@ from utils.markers import Markers, JunoContext
 
 CARE_PLAN_VERSION = Constants.CARE_PLAN_VERSIONS.V1_2.value
 from utils.error_codes import make_error_response, ErrorCode
+from utils.error_handler import build_error_data_from_exc
 from telemetry import get_tracer
 
 logger = logging.getLogger(__name__)
@@ -94,6 +95,18 @@ def _sse(payload: dict) -> str:
 def _sse_error(code: ErrorCode, path: str, details_vars: dict | None = None) -> str:
     resp = make_error_response(code, path=path, details_vars=details_vars)
     return _sse({"step": "error", "error_data": resp.error.to_dict()})
+
+
+def _sse_error_rich(exc: Exception) -> str:
+    """Emit a structured SSE error event using the rich error catalog.
+
+    Classifies *exc* via ``build_error_data_from_exc`` (which checks for
+    JunoError, Google API errors, and legacy RuntimeErrors), then emits an
+    SSE payload whose ``error_data`` contains the new rich fields:
+    ``code``, ``message``, ``user_hint``, ``retryable``, ``detail``.
+    The worker captures this and writes it directly to Firestore via fail_job.
+    """
+    return _sse({"step": "error", "error_data": build_error_data_from_exc(exc)})
 
 
 def _allowed(filename: str) -> bool:
@@ -295,7 +308,7 @@ def run_care_plan_pipeline(
             simplified = Markers.CarePlan.SimplifyLanguage.execute(_simplify)
         except Exception as exc:
             logger.exception("care_plan: simplification failed")
-            yield _sse_error(ErrorCode.SIMPLIFICATION_FAILED, "/care_plan", {"detail": str(exc)})
+            yield _sse_error_rich(exc)
             return
         yield _sse({"step": 3, "status": "done", "label": Constants.STEPS[3]})
 
@@ -335,7 +348,7 @@ def run_care_plan_pipeline(
             structured = Markers.CarePlan.StructureNote.execute(_structure)
         except Exception as exc:
             logger.exception("care_plan: structuring failed")
-            yield _sse_error(ErrorCode.STRUCTURING_FAILED, "/care_plan", {"detail": str(exc)})
+            yield _sse_error_rich(exc)
             return
         yield _sse({"step": 5, "status": "done", "label": Constants.STEPS[5]})
 
@@ -392,4 +405,4 @@ def run_care_plan_pipeline(
             scope.mark_failed()
         Markers.CarePlan.Pipeline.execute(_pipeline_fail)
         logger.exception("care_plan: unexpected pipeline error")
-        yield _sse_error(ErrorCode.PIPELINE_ERROR, "/care_plan", {"detail": str(exc)})
+        yield _sse_error_rich(exc)
