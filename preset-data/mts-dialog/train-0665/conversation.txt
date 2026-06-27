@@ -1,4 +1,0 @@
-Doctor: Do you have any allergies?
-Patient: No I do not.
-Doctor: Are you sure?
-Patient: Yes I am.

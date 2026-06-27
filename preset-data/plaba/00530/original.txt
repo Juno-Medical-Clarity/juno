@@ -1,9 +1,0 @@
-Autosomal dominant polycystic kidney disease (ADPKD) is the leading genetic cause of renal failure.
-We have recently shown that inhibiting miR-17~92 is a potential novel therapeutic approach for ADPKD.
-However, miR-17~92 is a polycistronic cluster that encodes microRNAs (miRNAs) belonging to the miR-17, miR-18, miR-19 and miR-25 families, and the relative pathogenic contribution of these miRNA families to ADPKD progression is unknown.
-Here we performed an in vivo anti-miR screen to identify the miRNA drug targets within the miR-17~92 miRNA cluster.
-We designed anti-miRs to individually inhibit miR-17, miR-18, miR-19 or miR-25 families in an orthologous ADPKD model.
-Treatment with anti-miRs against the miR-17 family reduced cyst proliferation, kidney-weight-to-body-weight ratio and cyst index.
-In contrast, treatment with anti-miRs against the miR-18, 19, or 25 families did not affect cyst growth.
-Anti-miR-17 treatment recapitulated the gene expression pattern observed after miR-17~92 genetic deletion and was associated with upregulation of mitochondrial metabolism, suppression of the mTOR pathway, and inhibition of cyst-associated inflammation.
-Our results argue against functional cooperation between the various miR-17~92 cluster families in promoting cyst growth, and instead point to miR-17 family as the primary therapeutic target for ADPKD.

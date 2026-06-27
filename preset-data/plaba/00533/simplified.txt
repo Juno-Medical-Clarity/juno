@@ -1,9 +1,0 @@
-Tuberous sclerosis complex (TSC) is a rare disease that leads to noncancerous (benign) tumors forming in the body. TSC is caused by changes in two specific genes (TSC1 or TSC2) and affects multiple organs, including the kidney, lung, and brain.
-In the kidney, TSC can cause benign tumors and cysts (fluid swellings) to grow, which eventually leads to kidney failure.
-The factors promoting cyst formation and tumor growth in TSC are not completely understood.
-In this study, researchers report that mice with inactivation (turning off) of specific cells develop many cysts in the kidney.
-Past studies with mice show an increase of the Forkhead Transcription Factor 1 (Foxi1) gene that impacts cell processing in cyst epithelia cells, which are important cells for kidney function.
-Also, some gene processing is increased and work together with proton pumps called H+-ATPase, which regulate functions such as nutrient intake and regulating acids between cells, on the lining of epithelial cysts cells in mice.
-Deletion of the Foxi1 gene, which is key to the survival of cells and H+-ATPase processing, overrides the cyst burden in Tsc1 mice.
-Deletion of the enzyme CAII causes major decreases in cyst burden and increased life expectancy in mice without CAII and Tsc1 versus mice without just Tsc1.
-Researchers suggest that epithelial cells in the kidneys and their transport mechanisms are important to the formation of many cysts, and slowing or stopping them is associated with significant protection against cyst development and/or enlargement in tuberous sclerosis complex (TSC).

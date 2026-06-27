@@ -1,4 +1,0 @@
-Phenylketonuria (PKU), a Mendelian autosomal recessive phenotype (OMIM 261600), is an inborn error of metabolism that can result in impaired postnatal cognitive development.
-The phenotypic outcome is multifactorial in origin, based both in nature, the mutations in the gene encoding the L-phenylalanine hydroxylase enzyme, and nurture, the nutritional experience introducing L-phenylalanine into the diet.
-The PKU story contains many messages including a framework to appreciate the complexity of this disease where phenotype reflects both locus-specific and genomic components.
-This knowledge is now being applied in the development of patient-specific therapies.

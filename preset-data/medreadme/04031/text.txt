@@ -1,1 +1,0 @@
-We describe a simulation procedure using actual data from an HDE where some truth regarding parameters of interest is known.

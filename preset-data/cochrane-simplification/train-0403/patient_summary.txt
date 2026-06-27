@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0403  |  gem_id: gem-cochrane-simplification-train-404  |  doi: 10.1002/14651858.CD009233.pub2
-
-We searched for evidence from high quality trials on environmental or behavioural interventions in older adults, living in the community or in residential settings, with irreversible vision impairment which aimed to reduce activity restriction or increase general physical activity. We found no trials that met the inclusion criteria for the review. Further research into this highly important issue needs to be done before any conclusions can be made.

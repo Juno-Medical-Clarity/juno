@@ -1,1 +1,0 @@
-Immunofluorescence, flow cytometry, qPCR, digital RNA expression profiling, and scRNA-Seq studies identify iMyoblasts as a PAX3 + / MYOD1 + skeletal myogenic lineage with a fetal-like transcriptome signature, distinct from adult muscle biopsy myoblasts (bMyoblasts) and iPSC-induced muscle progenitors.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0313
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello there, how are you? I am good, thank you. He is my colleague Doctor Mason, and he will be assisting me today and taking down notes. Guest_clinician: Hi there. Hello. Is it okay with you if he can join us? Sure, no problem. Great, thank you Doctor Mason can you take down the notes. Guest_clinician: Sure. Patient looks well developed and well nourished. He is alert with not acute distress. Guest_clinician: Got it. Patient had a head injury, but he is fully conscious. G C S is fifty and nontoxic. Guest_clinician: Okay.

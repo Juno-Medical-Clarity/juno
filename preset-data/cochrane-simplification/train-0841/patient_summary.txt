@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0841  |  gem_id: gem-cochrane-simplification-train-842  |  doi: 10.1002/14651858.CD006297.pub2
-
-Twenty-three studies fulfilled our inclusion criteria with a total of 3872 and 2915 participants in the intervention and in the control group, respectively. The methodological quality of all the studies was rated intermediate to low. Trials duration was no longer than one year. The level of glycosylated haemoglobin, a marker of diabetes control, was lower in the long acting insulin group, but the observed difference was of doubtful clinical significance. Longer acting insulins were superior mostly in their nocturnal effect, which resulted in a lower level of fasting glucose levels and fewer episodes of nocturnal hypoglycaemia. No data on long term complications were available.  The currently available data can not substantiate conclusions on the benefits and risks of long acting insulins, and long-term data are of need.

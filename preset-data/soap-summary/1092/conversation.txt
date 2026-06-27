@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1092
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do migraine headaches run in the family? My mother gets migraines and she told me that it runs on her side of the family. Any family history of blood clots? No.

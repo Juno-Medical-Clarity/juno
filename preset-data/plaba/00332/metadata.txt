@@ -1,5 +1,0 @@
-pmid:        32771633
-question:    26
-adaptation:  adaptation1
-title:       Transmission onset distribution of COVID-19
-sentences:   9

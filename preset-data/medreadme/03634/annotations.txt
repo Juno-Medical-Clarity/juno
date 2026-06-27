@@ -1,9 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.65
-split:       test
-
-jargon_spans:
-  [22:23] 'medical-jargon-google-easy' -> 'NAC'
-  [28:29] 'medical-jargon-google-easy' -> 'phenocopied'
-  [34:36] 'medical-jargon-google-hard' -> 'prooxidant paraquat'

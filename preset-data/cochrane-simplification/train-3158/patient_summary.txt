@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3158  |  gem_id: gem-cochrane-simplification-train-3159  |  doi: 10.1002/14651858.CD005109.pub3
-
-This systematic review showed that this drug does not increase the number of remissions but increases the number of patients that withdrew from the included studies due to side effects. The methodological quality of the included studies was high. Further studies of this agent for the treatment of active Crohn's disease are unlikely to be undertaken.

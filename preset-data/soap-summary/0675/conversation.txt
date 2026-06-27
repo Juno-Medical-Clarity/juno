@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0675
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How about any surgeries? No, I have not had any surgeries. Are you sure? Yes.

@@ -1,5 +1,0 @@
-pmid:        26604140
-question:    56
-adaptation:  adaptation2
-title:       Urogenital development in Pallister-Hall syndrome is disrupted in a cell-lineage-specific manner by constitutive expression of GLI3 repressor
-sentences:   11

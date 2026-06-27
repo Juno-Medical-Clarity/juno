@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0170  |  gem_id: gem-cochrane-simplification-test-171  |  doi: 10.1002/14651858.CD011515.pub2
-
-We included two studies with a total of 34 patients in this review. Both studies evaluated the diagnostic performance of EUS. This evidence is current to 5 November 2015. Of the two studies, one study was conducted as well as such a study could be conducted. The methodological quality of the other study was poor. The two included studies showed that in those people with pancreatic cancer in whom CT alone showed their cancer was capable of being fully surgically removed, 61% (61 out of 100) would prove to have cancer that was too fully spread to make this possible when a laparotomy was attempted. Due to the small sample size, there is significant uncertainty in the utility of EUS in people with pancreatic cancer found to have resectable disease on CT scan. There is no evidence to suggest that it should be performed routinely in people with pancreatic cancer found to have resectable disease on CT scan.

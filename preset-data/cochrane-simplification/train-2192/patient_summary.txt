@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2192  |  gem_id: gem-cochrane-simplification-train-2193  |  doi: 10.1002/14651858.CD002852
-
-In the present study haloperidol treatment was associated with a lower degree of aggression than was placebo. Adverse effects occurred more frequently in haloperidol treated patients than controls, but similar drop-out rates among treated and control patients suggested that for some patients adverse effects may have been tolerated because of better control of behaviour. Our findings indicated that there is little evidence to support a benefit of haloperidol on manifestations of agitation other than aggression, and that haloperidol should not be used routinely to treat patients with agitated dementia. Treatment of agitated dementia should be individualized, with careful monitoring of benefits and adverse effects.

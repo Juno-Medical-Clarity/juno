@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0128  |  gem_id: gem-cochrane-simplification-validation-129  |  doi: 10.1002/14651858.CD006780.pub3
-
-Ten randomised trials involving 1139 women met the inclusion criteria for the review. Nine studies compared heparin (alone or in combination with dipyridamole) with no treatment; and one compared triazolopyrimidine with placebo. The most commonly recognised side effect for women related to this treatment was mild skin bruising. To date, important information about serious adverse infant and long-term childhood outcomes with using anti-clotting medications is unavailable. Further research is required.

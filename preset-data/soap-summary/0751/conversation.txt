@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0751
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married, ma'am? No, I'm divorced. Do you live alone? Yes, so I have no support at home, it's difficult. Do you drink or smoke? No, I never have. What about more illicit substances? No, absolutely not.

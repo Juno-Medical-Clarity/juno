@@ -1,1 +1,0 @@
-The injection may be repeated every 5 to 15 minutes if there is insufficient response.

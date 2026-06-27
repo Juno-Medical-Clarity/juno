@@ -1,5 +1,0 @@
-drug_focus: pantoprazole and Plavix
-question_type: Interaction
-section_title: Drug Interactions
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01b14603-8f29-4fa3-8d7e-9d523f802e0b
-sample_id: 0385

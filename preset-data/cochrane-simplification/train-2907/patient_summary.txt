@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2907  |  gem_id: gem-cochrane-simplification-train-2908  |  doi: 10.1002/14651858.CD001011
-
-Most of the trials of piracetam were undertaken many years ago and did not use methods which would be currently considered standard. Some of the studies suggested there may be some benefit from piracetam but overall the evidence is not consistent or positive enough to support its use for dementia or cognitive impairment.

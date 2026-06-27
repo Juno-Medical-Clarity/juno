@@ -1,5 +1,0 @@
-pmid:        26972611
-question:    16
-adaptation:  adaptation1
-title:       Effects of Systemically Administered Hydrocortisone on the Human Immunome
-sentences:   12

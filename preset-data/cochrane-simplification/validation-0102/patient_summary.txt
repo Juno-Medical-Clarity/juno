@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0102  |  gem_id: gem-cochrane-simplification-validation-103  |  doi: 10.1002/14651858.CD003961.pub2
-
-This review compared tacrolimus and cyclosporin used as primary immunosuppression for kidney transplant recipients. Thirty studies (4102 patients) were included. Tacrolimus was shown to be superior to cyclosporin in improving graft survival and preventing acute rejection after kidney transplantation, but increases post-transplant diabetes, neurological and gastrointestinal side effects. There was insufficient information to assess the cost of tacrolimus versus cyclosporin, and there was a general failure to consider global quality of life (QOL) for transplant recipients which may inform our understanding of patient preference and compliance.

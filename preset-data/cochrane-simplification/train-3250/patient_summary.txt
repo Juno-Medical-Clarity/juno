@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3250  |  gem_id: gem-cochrane-simplification-train-3251  |  doi: 10.1002/14651858.CD006661.pub2
-
-We reviewed the trials that compared giving MAO-B inhibitors with other types of medication in people with early Parkinson's to see if there was good evidence that MAO-B inhibitors were the best treatment to offer. However, unfortunately we only identified two trials (593 patients) so there was only limited evidence. The results showed that MAO-B inhibitors were less good at improving the symptoms of Parkinson's than either levodopa or dopamine agonists but that they may reduce motor fluctuations compared with levodopa, though not compared with dopamine agonists. MAO-B inhibitors did, however, have fewer major side effects than some dopamine agonists.

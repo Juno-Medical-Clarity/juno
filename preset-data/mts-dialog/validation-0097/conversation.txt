@@ -1,4 +1,0 @@
-Doctor: Well, I have your E K G report, shows you have sinus tachycardia. In other words, your heart is beating faster than normal due to rapid firing of sinus node.
-Patient: Okay.
-Doctor: Well, there are no S T changes.
-Patient: Hm.

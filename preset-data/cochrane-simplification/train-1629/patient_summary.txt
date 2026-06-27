@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1629  |  gem_id: gem-cochrane-simplification-train-1630  |  doi: 10.1002/14651858.CD002248.pub3
-
-This review found that progressive muscle relaxation with or without imagery and relaxation may help with spasmodic (acute, cramping pain) symptoms of period pain. Also that pain management training and relaxation plus biofeedback may help with period pain in general. The results are not conclusive due to the small number of women in the trials and the poor methods used in some of the trials.

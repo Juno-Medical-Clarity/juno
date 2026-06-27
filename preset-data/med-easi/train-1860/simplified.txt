@@ -1,1 +1,0 @@
-Ideally, it should be impossible to find two different messages whose digests (`` hash values '') are similar.

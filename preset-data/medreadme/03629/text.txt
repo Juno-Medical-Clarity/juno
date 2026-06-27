@@ -1,1 +1,0 @@
-Partial loss-of-function mutations in these genes decrease electron transport and greatly increase the longevity of C. elegans by a mechanism that is distinct from that induced by reducing their level of expression by RNAi.

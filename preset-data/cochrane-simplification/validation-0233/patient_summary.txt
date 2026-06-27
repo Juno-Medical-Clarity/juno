@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0233  |  gem_id: gem-cochrane-simplification-validation-234  |  doi: 10.1002/14651858.CD004443
-
-This review of trials found that giving naloxone to people in shock improves their blood pressure. It is not clear whether or not this improves their overall condition or reduces their chances of dying. More trials are needed.

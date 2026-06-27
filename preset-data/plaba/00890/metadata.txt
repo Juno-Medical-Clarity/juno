@@ -1,5 +1,0 @@
-pmid:        28870302
-question:    73
-adaptation:  adaptation2
-title:       Perioperative Pain Management in Hip and Knee Arthroplasty
-sentences:   6

@@ -1,5 +1,0 @@
-pmid:        32609390
-question:    30
-adaptation:  adaptation1
-title:       Discharged COVID-19 patients testing positive again for SARS-CoV-2 RNA: A minireview of published studies from China
-sentences:   6

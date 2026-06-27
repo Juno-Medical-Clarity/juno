@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [2:6] 'medical-jargon-google-easy' -> 'coarse - grained model'
-  [24:26] 'general-complex' -> 'ad hoc'

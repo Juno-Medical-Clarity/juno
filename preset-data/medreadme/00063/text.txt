@@ -1,1 +1,0 @@
-Here, we address these questions at the genomic scale using high-throughput flow cytometry of single-cell protein levels in differentially labeled cocultures of wild-type and paralog-knockout Saccharomyces cerevisiae strains.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1657  |  gem_id: gem-cochrane-simplification-train-1658  |  doi: 10.1002/14651858.CD003707.pub3
-
-To provide the best possible answer to this question, this review was conducted in a special preplanned way with the intention of putting together the results of all selected studies to produce an overall measure of the value of partial liquid ventilation. Two eligible studies (including a total of 401 participants) were found, and a comparison was made between those who received similar doses of perfluorocarbon and those who received traditional ventilation. No evidence indicated that partial liquid ventilation reduced the risk of death or the duration of artifical ventilation, and some evidence suggested that it may increase the risk of complications, including low blood oxygen levels, low heart rate, low blood pressure, air leakage from the lungs and cardiac collapse.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0896  |  gem_id: gem-cochrane-simplification-train-897  |  doi: 10.1002/14651858.CD008120.pub2
-
-This systematic review evaluated the efficacy and tolerability of second-generation antipsychotics in the treatment of anxiety disorders. We found eleven randomised placebo-controlled trials, comparing quetiapine, olanzapine and risperidone with placebo and antidepressants. The vast majority of the available data was on quetiapine (> 3000 participants). Participants with generalised anxiety disorder responded significantly better to quetiapine than to placebo, measured as a reduction in the Hamilton Anxiety Scale (HAM-A). Participants treated with quetiapine were more likely to drop out due to adverse events, to gain weight, to suffer from sedation or to suffer from extrapyramidal side effects. The evidence on the other second-generation antipsychotics is currently too limited to draw any conclusions.

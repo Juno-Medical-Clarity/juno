@@ -1,4 +1,0 @@
-The first cardiac implantable electronic device (CIED), the electronic pacemaker, maintains the pumping of blood in and out of the heart when heart beats are unusually slow.
-The implantable cardioverter-defibrillator (ICD) manages a heart rhythm that beats too fast or fibrillation (an irregular heart beat) and saves lives primarily through the use of high-energy shocks.
-The cardiac resynchronization therapy (CRT) device send electrical signals to the lower chambers of the heart and restores the ability of the two parts of the heart to beat in sync in patients with heart failure.
-Despite >50 years of pacing and 40 years of ICD therapy, the lead pacemaker (device with wires that run between the part that generates pulses and the heart) remains the weakest link between the device and the patient.

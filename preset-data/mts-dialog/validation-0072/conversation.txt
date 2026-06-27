@@ -1,4 +1,0 @@
-Doctor: Do you have any medical conditions that I should know about?
-Patient: Actually yes, I have high blood pressure and, um, depression.
-Doctor: That's good to know, thank you. What about your bones?
-Patient: Um, yes, I have osteoporosis too.

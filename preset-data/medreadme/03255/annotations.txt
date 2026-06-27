@@ -1,7 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 4.5
-split:       dev
-
-jargon_spans:
-  [11:12] 'abbr-medical' -> 'COPD'

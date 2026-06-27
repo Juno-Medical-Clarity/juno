@@ -1,3 +1,0 @@
-Have you ever wondered how antibiotics kill invading bacteria, while leaving human cells alone? Although there are similarities between bacteria and human cells, there are many differences as well. Antibiotics work by affecting things that bacterial cells have but human cells don’t.
-
-For example, human cells do not have cell walls, while many types of bacteria do. The antibiotic penicillin works by keeping a bacterium from building a cell wall. Bacteria and human cells also differ in the structure of their cell membranes and the machinery they use to build proteins or copy DNA. Some antibiotics dissolve the membrane of just bacterial cells. Others affect protein-building or DNA-copying machinery that is specific to bacteria.

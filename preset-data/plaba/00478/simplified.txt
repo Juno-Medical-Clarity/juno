@@ -1,9 +1,0 @@
-The aim of this study was to investigate the terms used to refer to cognitive (memory-related) and fatigue related side effects. Additionally, the study aimed to understand the terms' prevalence or frequency in phase III add-on clinical trials of anti-epileptic - or antiseizure - drugs (AEDs).
-The authors extracted data from publicly available Food and Drug Administration of the United States (FDA) documents as well as the published literature.
-Target drug doses were then calculated as drug loads and divided into three categories (low, average, high).
-Odds ratio, or the measure of association between drug intake and side effect development, were calculated for each drug load. The presence of a dose-response effect, or when side effects increase when drug dose increases, was also assessed (measured).
-The authors found that the cognitive terms used across trials were very variable (all over the place). Data on discontinuation rates (stoppings in side effects) were limited.
-Placebo (harmless pills) rates for cognitive side effects ranged from 0 to 10.6% while those for fatigue ranged from 2.5 to 37.7%.
-Most of the AEDs exhibited a clear dose-response effect and significant odds ratios for developing side effects at high doses.
-Due to their clinical (medical) relevance and impact on quality of life, new trials should make data related to the prevalence and discontinuation rates of these side effects publicly available.
-Due to the clear dose response effect, doctors should consider using lower drug loads and adjusting doses to improve tolerability (or ability to take the drug).

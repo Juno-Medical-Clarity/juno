@@ -1,5 +1,0 @@
-pmid:        29946735
-question:    35
-adaptation:  adaptation1
-title:       Screening for Osteoporosis to Prevent Fractures: US Preventive Services Task Force Recommendation Statement
-sentences:   15

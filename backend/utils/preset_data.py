@@ -1,3 +1,4 @@
+import json
 import os
 from pathlib import Path
 
@@ -7,37 +8,83 @@ PRESET_DATA_ROOT = Path(
     or (Path(__file__).resolve().parent.parent.parent / "preset-data")
 )
 
+MANIFEST_PATH = PRESET_DATA_ROOT / "manifest.json"
 
-def _input_files(group: str, input_id: str) -> list[str]:
-    input_dir = PRESET_DATA_ROOT / group / input_id
-    if not input_dir.is_dir():
-        return []
-    return sorted(p.name for p in input_dir.iterdir() if p.is_file())
+_manifest_cache: dict | None = None
+
+
+class GCSFetchRequired(Exception):
+    """Raised when the requested file is not in the manifest and requires GCS fetch (SP2)."""
+
+    def __init__(self, group: str, input_id: str, filename: str):
+        self.group = group
+        self.input_id = input_id
+        self.filename = filename
+        super().__init__(f"GCS fetch required for {group}/{input_id}/{filename}")
+
+
+def _load_manifest() -> dict:
+    """Load and cache manifest.json. Raises RuntimeError if not found."""
+    global _manifest_cache
+    if _manifest_cache is None:
+        if not MANIFEST_PATH.is_file():
+            raise RuntimeError(f"Dataset manifest not found at {MANIFEST_PATH}")
+        with MANIFEST_PATH.open("r", encoding="utf-8") as f:
+            _manifest_cache = json.load(f)
+    return _manifest_cache
 
 
 def list_datasets() -> list[dict]:
-    if not PRESET_DATA_ROOT.is_dir():
+    """Return dataset metadata from manifest. Same shape as before."""
+    try:
+        manifest = _load_manifest()
+    except RuntimeError:
         return []
 
-    datasets = []
-    for group_dir in sorted(p for p in PRESET_DATA_ROOT.iterdir() if p.is_dir()):
-        inputs = sorted(p.name for p in group_dir.iterdir() if p.is_dir())
-        files = _input_files(group_dir.name, inputs[0]) if inputs else []
-        datasets.append({"group": group_dir.name, "inputs": inputs, "files": files})
-    return datasets
+    return [
+        {
+            "group": entry["group"],
+            "inputs": entry["inputs"],
+            "files": entry["file_types"],  # manifest uses "file_types"; API uses "files"
+        }
+        for entry in manifest.get("datasets", [])
+    ]
+
+
+def list_athena_sources() -> list[dict]:
+    """Return Athena source manifests from the unified manifest."""
+    try:
+        manifest = _load_manifest()
+    except RuntimeError:
+        return []
+    return manifest.get("athena_sources", [])
 
 
 def read_dataset_file(group: str, input_id: str, filename: str) -> bytes:
-    match = next((d for d in list_datasets() if d["group"] == group), None)
-    if match is None or input_id not in match["inputs"]:
-        raise FileNotFoundError()
+    """
+    Return file content as bytes.
 
-    if filename not in _input_files(group, input_id):
-        raise FileNotFoundError()
+    For the sample input_id (inputs[0] per manifest): returns content from manifest.
+    For all other input_ids: raises GCSFetchRequired — handled by SP2.
+    """
+    try:
+        manifest = _load_manifest()
+    except RuntimeError as exc:
+        raise FileNotFoundError(str(exc)) from exc
+    entry = next((d for d in manifest.get("datasets", []) if d["group"] == group), None)
+    if entry is None:
+        raise FileNotFoundError(f"Group not found: {group}")
+    if input_id not in entry["inputs"]:
+        raise FileNotFoundError(f"Input ID not found: {input_id}")
+    if filename not in entry["file_types"]:
+        raise FileNotFoundError(f"File type not found: {filename}")
 
-    root = PRESET_DATA_ROOT.resolve()
-    path = (PRESET_DATA_ROOT / group / input_id / filename).resolve()
-    if not path.is_relative_to(root):
-        raise FileNotFoundError()
+    sample = entry["sample"]
+    if input_id == sample["input_id"]:
+        content = sample["files"].get(filename)
+        if content is None:
+            raise FileNotFoundError(f"Sample file not in manifest: {filename}")
+        return content.encode("utf-8")
 
-    return path.read_bytes()
+    # Non-sample input_id: on-demand GCS download is SP2's responsibility.
+    raise GCSFetchRequired(group=group, input_id=input_id, filename=filename)

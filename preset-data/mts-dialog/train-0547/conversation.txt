@@ -1,3 +1,0 @@
-Guest_clinician: I don't see any past medical history here in this report.
-Doctor: We don't have any record of P M H for this patient.
-Guest_clinician: Okay.

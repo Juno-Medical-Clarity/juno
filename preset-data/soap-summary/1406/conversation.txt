@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1406
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, to double check, you have a history of hay fever and asthma, correct? Yes. I was also recently diagnosed with cervical dysplasia. I found out shortly after my last O B G Y N visit. And are you planning to follow up with your O B G Y N in the upcoming months? Yeah, the next visit is scheduled and everything.

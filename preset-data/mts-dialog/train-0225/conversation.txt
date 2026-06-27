@@ -1,4 +1,0 @@
-Doctor: Do you have any significant medical conditions that run in your family that I should be aware of?
-Patient: Yes, um, I know some of my relatives have had coronary artery disease, and, um, high blood pressure.
-Doctor: What about cancer? Does anyone in your family have a history of cancer?
-Patient: No, that doesn't ring any bells.

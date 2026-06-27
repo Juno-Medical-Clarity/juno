@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0549  |  gem_id: gem-cochrane-simplification-train-550  |  doi: 10.1002/14651858.CD010846.pub2
-
-We found no completed (or ongoing) randomised controlled trials that assessed whether creatine given to the mother at times of known, suspected, or potential fetal compromise during pregnancy helps to protect the baby's brain. Randomised controlled trials are needed to establish whether creatine can protect against brain injury for the baby in the womb. The babies in these trials need to be followed up over a long period so that we can monitor the effects of creatine on their development into childhood and adulthood.

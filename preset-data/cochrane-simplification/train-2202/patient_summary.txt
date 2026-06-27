@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2202  |  gem_id: gem-cochrane-simplification-train-2203  |  doi: 10.1002/14651858.CD002286.pub3
-
-For this update of a previous Cochrane review, we reviewed the available evidence up to January 2015 for or against feverfew in the prevention of migraine and found six studies including 561 participants. Generally the studies were heterogeneous and their results were mixed. The previous version of this review showed no clear benefit of feverfew compared with placebo. We added a new study, which is larger and was carried out to high standards, to this review. It showed that feverfew reduced migraine frequency by a little more than half a migraine (0.6) per month compared to placebo. There was no difference in how severe the pain was, or how long it lasted. These results come from a single study of moderate size, therefore they must be viewed with caution until they are confirmed in other rigorous studies. No major adverse effects were associated with feverfew in the included studies.

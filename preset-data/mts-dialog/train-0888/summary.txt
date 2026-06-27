@@ -1,2 +1,0 @@
-[ROS]
-PSYCHIATRIC: No history of emotional lability, depression or sleep disturbances.

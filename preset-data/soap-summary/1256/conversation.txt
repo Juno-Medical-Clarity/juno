@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1256
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Where are you experiencing the most pain? All over my belly. How long has this been going on? Two to three weeks. Does the pain come and go? It does. And how would you describe- The pain? Yes. Hm I'd describe it as a gnawing sensation. Is this sensation new? I believe so. I don't ever remember feeling this way before. Any past abdominal surgeries? None.

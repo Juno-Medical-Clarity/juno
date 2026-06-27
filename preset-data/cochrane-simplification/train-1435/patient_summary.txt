@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1435  |  gem_id: gem-cochrane-simplification-train-1436  |  doi: 10.1002/14651858.CD010254.pub2
-
-We searched for all the trial evidence from trials of three to 12 week duration reporting the effect of rosuvastatin on cholesterol. We found 108 trials involving 19,596 participants. Based on an informal comparison with atorvastatin three-fold lower doses of rosuvastatin are needed to lower cholesterol by the same amount. This review cannot be used to assess harms of rosuvastatin, because of the short duration of these trials and the high risk of bias for this outcome; adverse effects were only reported in 10 of the 18 trials that could be used to assess harms.

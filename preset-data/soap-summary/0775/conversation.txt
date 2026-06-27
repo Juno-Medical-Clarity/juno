@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0775
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke or drink alcohol? No, I do not smoke or drink alcohol. How about drugs? Nope, I have never. Who do you live with? Just my family.

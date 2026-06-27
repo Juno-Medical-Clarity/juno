@@ -1,5 +1,0 @@
-pmid:        33368332
-question:    30
-adaptation:  adaptation2
-title:       Quantitative detection of SARS-CoV-2 RNA in nasopharyngeal samples from infected patients with mild disease
-sentences:   14

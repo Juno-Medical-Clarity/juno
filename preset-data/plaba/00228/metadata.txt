@@ -1,5 +1,0 @@
-pmid:        23251152
-question:    18
-adaptation:  adaptation1
-title:       Low Glycemic Index Carbohydrates versus All Types of Carbohydrates for Treating Diabetes in Pregnancy: A Randomized Clinical Trial to Evaluate the Effect of Glycemic Control
-sentences:   15

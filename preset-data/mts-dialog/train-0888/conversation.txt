@@ -1,7 +1,0 @@
-Doctor: How is your sleep? Are you sleeping well?
-Patient: Yes, without any disturbance. I sleep like a log!
-Doctor: Good. Any mood swings or did you feel your emotions are out of control?
-Patient: Nah, just the normal mood swings around my periods otherwise no problem at all.
-Doctor: Any depression like feeling, sudden mood changes or feeling sad or hopeless?
-Patient: Nope!
-Doctor: Okay.

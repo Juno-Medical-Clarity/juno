@@ -1,5 +1,0 @@
-pmid:        31195771
-question:    9
-adaptation:  adaptation1
-title:       Removal of ear, nose and throat foreign bodies: A review
-sentences:   5

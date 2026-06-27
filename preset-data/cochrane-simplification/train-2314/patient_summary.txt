@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2314  |  gem_id: gem-cochrane-simplification-train-2315  |  doi: 10.1002/14651858.CD007653.pub2
-
-In this analysis, we reviewed the currently available evidence to determine the impact of garlic on cardiovascular events and mortality in patients with hypertension. Based on data from two randomized controlled trials that compared garlic to placebo in patients with hypertension it appears that garlic may have some blood pressure lowering effect, as compared to placebo but the evidence currently available is insufficient to determine whether garlic provides a therapeutic advantage versus placebo in terms of reducing the risk of cardiovascular morbidity and mortality. Data on the safety of garlic, as a therapeutic entity, in this population is also lacking. More (and large enough) trials comparing several doses of garlic with placebo are needed to detect possible differences in mortality, serious adverse events, and cardiovascular morbidity.

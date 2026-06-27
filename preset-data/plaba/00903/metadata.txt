@@ -1,5 +1,0 @@
-pmid:        19957775
-question:    74
-adaptation:  adaptation3
-title:       Diagnostic values of the clinical characteristics of chronic cough
-sentences:   10

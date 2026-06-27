@@ -1,3 +1,0 @@
-Doctor: Do you have a known-
-Patient: Drug allergy?
-Doctor: Oh no, I meant family history of disease.

@@ -1,5 +1,0 @@
-pmid:        29205277
-question:    75
-adaptation:  adaptation3
-title:       Clinical and genetic factors are associated with pain and hospitalisation rates in sickle cell anaemia in Cameroon
-sentences:   13

@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [3:5] 'medical-jargon-google-easy' -> 'Kallithea virus'
-  [14:15] 'medical-jargon-google-easy' -> 'titres'
-  [29:30] 'medical-jargon-google-easy' -> 'fecundity'

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0337
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family medical history? My mother passed away from complications with Huntington Disease. She was diagnosed and had been having treatments at U I H C. My grandmother and two of my aunts also passed away from Huntington as well. I am so sorry. Do you have siblings? Yes! I have one sister. She is thirty eight. She has a lot of metal issues. She has attempted suicide two times. Are you close with her? No. Not really. Are you married? Yes. Do you have children? Yes. We have two adopted kids.

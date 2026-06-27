@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [8:12] 'medical-jargon-google-easy' -> 'first - line medicine'
-  [15:16] 'medical-jargon-google-easy' -> 'benzodiazepine'
-  [19:22] 'medical-jargon-google-easy' -> 'convulsive status epilepticus'

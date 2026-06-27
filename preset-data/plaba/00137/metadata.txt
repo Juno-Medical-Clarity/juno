@@ -1,5 +1,0 @@
-pmid:        32654164
-question:    11
-adaptation:  adaptation1
-title:       Metabolic epilepsies amenable to ketogenic therapies: Indications, contraindications, and underlying mechanisms
-sentences:   9

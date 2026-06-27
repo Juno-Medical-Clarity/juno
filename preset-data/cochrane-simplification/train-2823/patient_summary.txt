@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2823  |  gem_id: gem-cochrane-simplification-train-2824  |  doi: 10.1002/14651858.CD003444.pub2
-
-The use of Chinese herbs in a Western medicine context, without incorporating TCM methodology, has been evaluated in six trials, although again these are limited by their sample size and study length. The results of these six trials suggest that using Chinese herbs alone for psychotic symptoms may not be indicated, but if used in conjunction with Western antipsychotic drugs, they may be beneficial in terms of mental state, global functioning and decrease of adverse effects. However, further trials are needed before the effects of TCM for people with schizophrenia can be evaluated with any real confidence.

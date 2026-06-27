@@ -1,5 +1,0 @@
-pmid:        34979093
-question:    66
-adaptation:  adaptation2
-title:       Risk of Arterial Thromboembolism, Venous Thromboembolism, and Bleeding in Patients with Nephrotic Syndrome: A Population-Based Cohort Study
-sentences:   10

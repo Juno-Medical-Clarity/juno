@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0443
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, tell me about your family's medical history. Hm, my mother passed away due to cancer. Oh, what type? Actually, I don't know that. Okay. And my dad died due to heart attack. Oh. Yeah. Okay, I don't see your vaccination record here, do you have it? No, I don't have it. I moved here from a different country a long time ago with barely anything. I don't have any medical records from my past. I see.

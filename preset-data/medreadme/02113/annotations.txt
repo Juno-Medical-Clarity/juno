@@ -1,8 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [0:4] 'medical-jargon-google-easy' -> 'Prophage - encoded genes'
-  [19:20] 'medical-jargon-google-easy' -> 'pathogenicity'

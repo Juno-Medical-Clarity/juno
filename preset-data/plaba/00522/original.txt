@@ -1,9 +1,0 @@
-Aim: A review is given on the different tools of compression therapy and their mode of action.
-Methods: Interface pressure and stiffness of compression devices, alone or in combination can be measured in vivo.
-Hemodynamic effects have been demonstrated by measuring venous volume and flow velocity using MRI, Duplex and radioisotopes, venous reflux and venous pumping function using plethysmography and phlebodynamometry.
-Oedema reduction can be measured by limb volumetry.
-Results: Compression stockings exerting a pressure of ~20 mm Hg on the distal leg are able to increase venous blood flow velocity in the supine position and to prevent leg swelling after prolonged sitting and standing.
-In the upright position, an interface pressure of more than 50 mmHg is needed for intermittent occlusion of incompetent veins and for a reduction of ambulatory venous hypertension during walking.
-Such high intermittent interface pressure peaks exerting a "massaging effect" may rather be achieved by short stretch multilayer bandages than by elastic stockings.
-Conclusion: Compression is a cornerstone in the management of venous and lymphatic insufficiency.
-However, this treatment modality is still underestimated and deserves better understanding and improved educational programs, both for patients and medical staff.

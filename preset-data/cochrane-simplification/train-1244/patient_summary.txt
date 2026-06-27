@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1244  |  gem_id: gem-cochrane-simplification-train-1245  |  doi: 10.1002/14651858.CD002795.pub2
-
-This was a systematic review of 35 short-term randomised controlled trials of pharmacotherapy for PTSD (4597 participants). A significantly larger proportion of patients responded to medication (59.1%) than to placebo (38.5%) (13 trials, 1272 participants). Symptom severity was significantly reduced in 17 trials (2507 participants). The largest trials showing efficacy were of the selective serotonin reuptake inhibitors, with long-term efficacy also observed for these medications.

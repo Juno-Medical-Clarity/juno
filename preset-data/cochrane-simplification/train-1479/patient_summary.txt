@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1479  |  gem_id: gem-cochrane-simplification-train-1480  |  doi: 10.1002/14651858.CD011017.pub2
-
-The included studies had an overall small number of participants and sessions. No included study compared breathing exercises alone versus a control. Instead, breathing exercises were part of a package of treatments and were compared to a control. The methods used to conduct the studies were not as well reported as we would like and so were unclear about the quality of the trials. Overall, we judged the included studies as being at an unclear risk of bias and the quality of the evidence included in the review was low. We could draw no reliable conclusions concerning the use of breathing exercises for children with asthma in clinical practice.

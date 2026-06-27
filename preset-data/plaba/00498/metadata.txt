@@ -1,5 +1,0 @@
-pmid:        34588822
-question:    38
-adaptation:  adaptation1
-title:       Closure of a Difficult-to-Manage Chronic Pressure Injury with the Use of Autologous Platelet-Rich Plasma (APRP)
-sentences:   4

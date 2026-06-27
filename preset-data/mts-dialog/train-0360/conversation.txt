@@ -1,5 +1,0 @@
-Guest_clinician: What's their medical history?
-Doctor: I have here hypertension, diabetes, diabetic retinopathy, and elevated lipids. They're in post C V A.
-Guest_clinician: Do you know their neurologist?
-Doctor: I can have the nurse or scribe go in and ask again.
-Guest_clinician: Great.

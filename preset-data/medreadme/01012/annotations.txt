@@ -1,8 +1,0 @@
-source:      plos_pathogens
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Drosophila melanogaster'
-  [11:12] 'medical-jargon-google-easy' -> 'invertebrate'

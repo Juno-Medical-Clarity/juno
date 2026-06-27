@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0375
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi there! I have the results from your ultrasound. You have kidney stones in the ureter close to the bladder. Oh no. This explains the pain you have been having on your left side. Are you still experiencing nausea and vomiting? Yes, I have been. I would like to set you up with a consult with a consult with a surgeon. Okay.

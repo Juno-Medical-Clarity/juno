@@ -1,5 +1,0 @@
-pmid:        33334398
-question:    30
-adaptation:  adaptation2
-title:       Estimating the false-negative test probability of SARS-CoV-2 by RT-PCR
-sentences:   11

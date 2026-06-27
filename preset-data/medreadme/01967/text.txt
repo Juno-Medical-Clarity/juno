@@ -1,1 +1,0 @@
-Although some propensity score methods successfully replicated TOPKAT, unresolved confounding may have affected stage 2.

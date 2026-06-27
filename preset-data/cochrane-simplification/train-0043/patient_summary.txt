@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0043  |  gem_id: gem-cochrane-simplification-train-44  |  doi: 10.1002/14651858.CD007533.pub3
-
-The purpose of this review was to assess how effective botulinum toxin is at reducing pain in patients with MPS. We identified four studies, with 233 participants, comparing botulinum toxin A with placebo (control group). There was inconclusive evidence to support the use of botulinum toxin in the treatment of MPS. More high-quality randomised controlled trials of botulinum toxin for treating MPS need to be conducted before firm conclusions on its effectiveness and safety can be drawn.

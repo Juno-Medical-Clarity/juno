@@ -1,5 +1,0 @@
-pmid:        32775988
-question:    3
-adaptation:  adaptation3
-title:       Impact of Dietary Potassium Restrictions in CKD on Clinical Outcomes: Benefits of a Plant-Based Diet
-sentences:   9

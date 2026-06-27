@@ -1,1 +1,0 @@
-In stage 1, we showed that some of these advanced statistical methods could replicate the results of a recently published surgical trial using routine data from the NHS.

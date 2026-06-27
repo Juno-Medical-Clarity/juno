@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1324
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Has anyone in your family had a history of heart disease or issues? Well, yeah. Actually, my dad passed away due heart disease. Oh, I am sorry to hear that. Do you know what kind of heart problem he had? Yeah, it is called co- Oh, coronary heart disease? Yes, exactly! I see.

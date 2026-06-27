@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2674  |  gem_id: gem-cochrane-simplification-train-2675  |  doi: 10.1002/14651858.CD006115
-
-This systematic review evaluates the effectiveness of azapirones compared to other treatments. From the results of 36 randomized controlled trials, azapirones appear to be superior to placebo in short-term studies (four to nine weeks) but may not be superior to benzodiazepines. We were unable to conclude if azapirones were superior to antidepressants, psychotherapy or kava kava. As GAD is generally chronic in nature, conclusions about azapirones' long-term efficacy are not able to be made and longer term trials are needed.

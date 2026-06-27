@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0431
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married, ma'am. Yes, to my husband, I can't even remember how long my husband and I have been married. That's wonderful. Do you drink or smoke? Absolutely not, I've never have used that stuff.

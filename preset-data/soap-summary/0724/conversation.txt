@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0724
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What medications are you currently taking? I am a diabetic, so I take Insulin. How much Insulin do you take? It varies from day to day.

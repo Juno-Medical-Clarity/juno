@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1240  |  gem_id: gem-cochrane-simplification-train-1241  |  doi: 10.1002/14651858.CD004974.pub2
-
-By combining results, immunostimulants reduced 1.24 ARTIs in a six-month period, equivalent to a 39% reduction in ARTIs compared to the placebo group. Only 20 studies provided adequate data on adverse events: the most frequent were rash, nausea, vomiting, abdominal pain and diarrhea. The main limitations of this review were the poor methodological quality and diverse trial results. We conclude that ARTI-susceptible children may benefit from immunostimulants, but more high-quality studies are needed. We suggest that national health authorities conduct high-quality randomized controlled trials to assess the true effects of immunostimulant preparations.

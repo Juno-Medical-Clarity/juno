@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0690
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-As far as you know, is there any family history of cancer? Yes, actually, my mom told me that someone had cervical cancer. What about heart disease, does that sound familiar? Yes, I know someone had heart disease, and another person had heart failure. Good to know, what about the lungs, any history there? I know someone had C O P D. Do you know of anyone with dementia or Alzheimer's? Yes, my uncle has dementia right now, actually. I'm sorry to hear that, that's a hard disease to see your family go through. What about diabetes, does anyone have that? Thank you doctor, it's hard. Yes, my dad has the sugar.

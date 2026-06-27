@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0107  |  gem_id: gem-cochrane-simplification-validation-108  |  doi: 10.1002/14651858.CD008943.pub2
-
-Despite evidence that over 45% of individuals suffering from neuropathic pain take two or more drugs for their pain, we could find only 21 high-quality studies of various different systemic and topical drug combinations. Given the wide possible variety of different drug combinations and the small number of studies, results for neuropathic pain from this review are insufficient to suggest the value of any one specific drug combination. However, the publication of multiple high-quality studies suggesting the superiority of some drug combinations, together with evidence that drug combinations are widely used in clinical practice, underline the importance of conducting more combination studies with improved methodology.

@@ -1,5 +1,0 @@
-drug_focus: azithromycin
-question_type: Usage
-section_title: What special precautions should I follow?
-source_url: https://medlineplus.gov/druginfo/meds/a697037.html
-sample_id: 0645

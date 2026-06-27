@@ -1,5 +1,0 @@
-pmid:        33549515
-question:    41
-adaptation:  adaptation1
-title:       Up-Regulation of DNA Damage Response Signaling in Autosomal Dominant Polycystic Kidney Disease
-sentences:   9

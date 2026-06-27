@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.3
-split:       dev
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Helicases'
-  [2:3] 'medical-jargon-google-easy' -> 'enzymes'
-  [22:25] 'medical-jargon-google-easy' -> 'double - helix'

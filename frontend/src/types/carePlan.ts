@@ -103,4 +103,5 @@ export interface CarePlanContent {
   };
   before_score?: PatientScore;
   after_score?: PatientScore;
+  additional_info?: string[];
 }

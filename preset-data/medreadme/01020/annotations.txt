@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [3:5] 'medical-jargon-google-easy' -> 'Drosophila melanogaster'
-  [12:16] 'medical-jargon-google-easy' -> 'host - virus interaction'
-  [17:19] 'medical-jargon-google-easy' -> 'innate immunity'

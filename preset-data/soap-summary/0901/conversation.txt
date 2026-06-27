@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0901
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How many people do you have in your family? Well, I have four children, all healthy with no medical conditions. Wow, that's great! My father passed away at the age of sixty nine due to C V A. And my mom died exactly ten years later, her heart just suddenly stopped. She was seventy nine. Okay. And do you have siblings? Well, believe it or not I had eleven siblings, including me twelve. Wow! Yes, I lost six of them. Four of them to diabetes, one of my brothers passed away at the age of seventy two and we could never determine the reason my sister died. Hm okay.

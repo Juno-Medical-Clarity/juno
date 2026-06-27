@@ -1,5 +1,0 @@
-drug_focus: B12
-question_type: Dose
-section_title: What kinds of vitamin B12 dietary supplements are available?
-source_url: https://ods.od.nih.gov/factsheets/VitaminB12-Consumer/
-sample_id: 0626

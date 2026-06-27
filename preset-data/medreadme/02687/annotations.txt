@@ -1,9 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        simple
-readability: 5.0
-split:       dev
-
-jargon_spans:
-  [32:34] 'medical-jargon-google-easy' -> 'general practitioners'
-  [35:36] 'abbr-medical' -> 'GPs'
-  [38:39] 'abbr-medical' -> 'GP'

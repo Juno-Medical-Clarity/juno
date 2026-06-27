@@ -1,5 +1,0 @@
-pmid:        26137182
-question:    5
-adaptation:  adaptation3
-title:       Baker's Cyst: Diagnostic and Surgical Considerations
-sentences:   11

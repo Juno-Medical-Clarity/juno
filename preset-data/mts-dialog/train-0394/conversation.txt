@@ -1,7 +1,0 @@
-Doctor: What's your family history?
-Patient: Both my parents are deceased.
-Doctor: I'm so sorry to hear that. I offer you my sincerest condolences.
-Patient: Thank you. My dad passed away at seventy five from leukemia and my mom fell victim to heart problems and alcoholism at thirty eight.
-Doctor: Does anyone else in your family suffer from leukemia, cardiac problems, or alcohol abuse?
-Patient: One of my uncles on my dad's side was recently diagnosed with leukemia.
-Doctor: Oh, wow. I see.

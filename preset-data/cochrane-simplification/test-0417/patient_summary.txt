@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0417  |  gem_id: gem-cochrane-simplification-test-418  |  doi: 10.1002/14651858.CD005093.pub2
-
-Studies have shown that these babies have higher energy expenditure and lower energy intake compared with babies without CLD/BPD. Increasing energy intake for these babies beyond standard levels may therefore seem beneficial. However, setting high targets for energy intake for these babies may not be achievable. Furthermore, methods of increasing energy intake such as increasing the milk volume or concentration or giving intravenous nutrition may lead to complications of their own. We planned to examine whether increasing energy intake for these babies improves their breathing status, their growth and development, and reduces their risk of death without producing significant complications. Having found no suitable study to date that answers these questions, we are currently unable to provide any evidence on whether increasing the energy intake for babies with (or developing) CLD/BPD is overall beneficial.

@@ -1,8 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [22:24] 'medical-jargon-google-easy' -> 'serological testing'
-  [40:43] 'medical-jargon-google-easy' -> 'rabies virus isolates'

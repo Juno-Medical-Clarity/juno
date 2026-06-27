@@ -1,7 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [19:21] 'medical-jargon-google-easy' -> 'HIV sequences'

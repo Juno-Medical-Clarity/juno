@@ -1,5 +1,0 @@
-Doctor: Hello, how are you?
-Patient: I am not so good.
-Doctor: Oh, what is going on with you?
-Patient: Well, I have lot of swelling in my legs.
-Doctor: Hm, okay.

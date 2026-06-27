@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2640  |  gem_id: gem-cochrane-simplification-train-2641  |  doi: 10.1002/14651858.CD008131.pub2
-
-The purpose of this review was to look at whether home-based parenting programmes, which aim to improve child development by showing parents how to provide a better quality home environment for their child, are effective in doing so. Seven randomised controlled trials (RCTs) met the inclusion criteria for this review. It was possible to combine the results from four of the seven studies, which showed that children who received the programme did not have better cognitive development than a control group. Socioemotional development was measured in three studies but we could not combine this data to help reach a conclusion about effectiveness. None of the studies measured adverse effects. The quality of the evidence in the studies was difficult to assess due to poor reporting. More high quality research is needed.

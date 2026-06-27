@@ -1,5 +1,0 @@
-pmid:        14703441
-question:    74
-adaptation:  adaptation3
-title:       Etiological diagnosis of chronic cough with unknown causes
-sentences:   9

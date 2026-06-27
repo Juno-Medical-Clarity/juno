@@ -1,5 +1,0 @@
-drug_focus: trimethoprim and blood pressure medication
-question_type: Interaction
-section_title: K: Hyperkalemia and other kidney effects
-source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3216436/
-sample_id: 0386

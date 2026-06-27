@@ -1,2 +1,0 @@
-Doctor: Looking at your medical history now. Any changes since your last visit?
-Patient: No changes.

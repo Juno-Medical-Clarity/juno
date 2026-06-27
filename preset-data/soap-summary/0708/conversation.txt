@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0708
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you know of any medical problems that run in your family? I have no idea to be quite honest with you. My parents never shared their medical history with me and neither did their parents with them. I don't think they want any of us to worry. Oh wow, I understand. It can be hard for many people to share intimate details about their health to others, even when it comes to disclosing medical info to their own children. For now, I'll put unknown but please let me know if anything changes. Will do. Thanks for understanding. Of course. It's not totally uncommon for people to not know their family history.

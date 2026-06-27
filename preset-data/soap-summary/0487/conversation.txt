@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0487
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Well, this is a case of hypothermia. Guest_family: Will he survive? Don't worry, we will take care of him.

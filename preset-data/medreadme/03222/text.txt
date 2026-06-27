@@ -1,1 +1,0 @@
-Toward this end, we have developed a different approach, using a mouse model that accelerates the differentiation of the newly generated neurons without altering their number, and offers the possibility to induce the process at any chosen moment.

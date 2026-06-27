@@ -1,8 +1,0 @@
-Cystic fibrosis is a monogenic, autosomal, recessive disease characterized by an alteration of chloride transport caused by mutations in the CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) gene.
-The loss of Phe residue in position 508 (ΔF508-CFTR) causes an incorrect folding of the protein causing its degradation and electrolyte imbalance.
-CF patients are extremely predisposed to the development of a chronic inflammatory process of the bronchopulmonary system.
-When the cells of a tissue are damaged, the immune cells are activated and trigger the production of free radicals, provoking an inflammatory process.
-In addition to routine therapies, today drugs called correctors are available for mutations such as ΔF508-CFTR as well as for others less frequent ones.
-These active molecules are supposed to facilitate the maturation of the mutant CFTR protein, allowing it to reach the apical membrane of the epithelial cell.
-Matrine induces ΔF508-CFTR release from the endoplasmic reticulum to cell cytosol and its localization on the cell membrane.
-We now have evidence that Matrine and Lumacaftor not only restore the transport of mutant CFTR protein, but probably also counteract the inflammatory process by improving the course of the disease.

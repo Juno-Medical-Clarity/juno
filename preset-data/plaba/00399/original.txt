@@ -1,5 +1,0 @@
-Tardive dyskinesia (TD) is a common, iatrogenic movement disorder affecting many individuals treated with dopamine-receptor blocking agents (DRBAs).
-Studying treatment of TD can be complex, as the symptoms can be affected by changes in either dosage or type of DRBA, as well as by the variable natural course of the disease.
-Historically many pharmacological therapies have been studied in TD, finding varying degrees of treatment success.
-Most recently, the VMAT2 inhibitors valbenazine and deutetrabenazine were rigorously studied in TD in large, phase III clinical trials, and were shown to be beneficial in this population.
-In this article, we will review various treatments of TD, including manipulation of the offending agent, VMAT2 inhibitors, other non-VMAT2-inhibiting medications, and non-pharmacological approaches.

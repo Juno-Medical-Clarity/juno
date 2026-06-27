@@ -1,9 +1,0 @@
-The disease development of Turner syndrome (TS), and how gene expression effects physical appearance, has been heavily investigated over the last decade. Turner syndrome is a condition where there is an abnormal amount of chromosomes (genetic material).
-Phenotype (observable characteristics) seen in TS does not only depend on the number of copies of a gene as a result of X chromosome monosomy. Monosomy indicates there is an absence of one member of a chromosome pair; instead of 46 chromosomes in each cell of the body, there is 45.
-The origin of TS specific comorbidities (presence of two or more diseases) may depend on crosstalk between genes as well as factors affecting gene expression. These comorbidities include infertility, heart-related malformations, defective bone development, and autoimmune diseases (in which immune cells attack healthy cells).
-Furthermore, two people with TS with the exact same karyotype, number and visual appear of chromosomes, may exhibit completely different traits. This suggests that no conventional genotype-phenotype relationship exists.
-This study reviews the different genetic mechanisms behind differential (function-unique) gene expression. This study also highlights potential key-genes essential to the comorbidities seen in TS and other X chromosome aneuploidy (abnormal chromosome number) syndromes.
-KDM6A, a gene important for germ cell development, has shown to be differentially expressed and methylated in Turner and Klinefelter syndrome (male born with extra X chromosome copy) patients.
-Furthermore, TIMP1/TIMP3 genes seem to affect the prevalence (amount) of bicuspid aortic valve, an abnormality in the aortic valve of the heart.
-KDM5 C could play a role in the brain- and memory-related development of Turner and Klinefelter syndrome.
-However, further research is needed to determine the genetic mechanism behind the phenotypic variability and the different phenotypic traits seen in TS.

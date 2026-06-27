@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2498  |  gem_id: gem-cochrane-simplification-train-2499  |  doi: 10.1002/14651858.CD010967.pub2
-
-From these studies, we know that clonidine applied to the skin probably gives little benefit to patients with PDN, but we cannot be sure of this. Clonidine may provide partial pain relief to one out of eight people treated with it. We do not know how clonidine applied to the skin works in other neuropathic pain conditions. Treatment with the drug for short periods probably will not cause side effects, but we do not know from the studies if clonidine is safe for long-term use. Researchers have reported no differences in the total numbers of side effects among people taking TC or placebo. The most important message from this review is that clonidine applied to the skin may give partial pain relief for only some people with PDN.

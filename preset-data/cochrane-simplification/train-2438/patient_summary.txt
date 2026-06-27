@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2438  |  gem_id: gem-cochrane-simplification-train-2439  |  doi: 10.1002/14651858.CD006533.pub2
-
-In the present review we assessed the evidence for the efficacy, acceptability and tolerability of duloxetine in comparison with all other antidepressants in the acute-phase treatment of major depression. Sixteen randomised controlled trials (5735 participants) were included. Duloxetine was not more effective than some other new antidepressant agents in the acute-phase treatment of major depression, and it was less well tolerated than escitalopram and venlafaxine as more patients allocated to duloxetine withdrew treatment before study end. However, due to the limited number of studies per comparison these results should be interpreted with caution.

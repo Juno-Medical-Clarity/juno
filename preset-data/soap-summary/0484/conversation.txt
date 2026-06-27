@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0484
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your living status? Do you live alone or with family? I live with my boyfriend. Do you smoke? Yes. For how long you are smoking? Around ten years. How many cigarettes do you take? Well, one pack of cigarettes lasts for around three days. Do you drink? I do take beer. How many do you drink a day? I take around six bottles once a week. Are you working somewhere? I was working in a herbicide plant. There were so many layoffs because of this pandemic. I lost my job too.

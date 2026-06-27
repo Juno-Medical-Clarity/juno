@@ -1,7 +1,0 @@
-source:      MSD
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [17:19] 'medical-jargon-google-easy' -> 'endoscopic colonoscopy'

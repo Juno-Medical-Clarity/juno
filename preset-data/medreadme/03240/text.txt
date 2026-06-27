@@ -1,1 +1,0 @@
-We used a new network-based computational approach to create similarity-based maps of the thioredoxin fold class.

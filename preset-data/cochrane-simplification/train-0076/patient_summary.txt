@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0076  |  gem_id: gem-cochrane-simplification-train-77  |  doi: 10.1002/14651858.CD006562.pub2
-
-This review evaluated the effectiveness and safety of topical 5-FU for treatment of genital warts in nonimmunocompromised individuals. Evidence from the studies we reviewed showed that 5-FU had better results for cure than placebo or no treatment; MCSA; and Podophylin 2%, 4% or 25%. No statistical difference was found when 5-FU was compared with CO2 Laser treatment, and results were poor when 5-FU was compared with 5-FU + INFα-2a (high dose) or 5-FU + CO2 Laser INFα-2a (high dose). The weak point of this review was the great variability in the methods and quality of the studies that we included.

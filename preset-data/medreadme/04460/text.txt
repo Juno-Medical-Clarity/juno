@@ -1,1 +1,0 @@
-Here we show that a subset of cancers harboring mutations in the SWI / SNF ATPase, SMARCA4, is sensitive to EZH2 inhibition.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0459
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How's it going? Good, can't complain. Glad to hear. So today we're going to do a comprehensive eval. It'll be a bit different than our usual visits together. Would you like your mom to step in the room, too? Yeah, that's not a problem. Alright. I'll grab her from the waiting room. I'll be right back.

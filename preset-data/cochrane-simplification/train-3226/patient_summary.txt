@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3226  |  gem_id: gem-cochrane-simplification-train-3227  |  doi: 10.1002/14651858.CD002238.pub2
-
-In other Cochrane reviews, alarms triggered by wetting, desmopressin and tricyclic drugs have been shown to work during treatment. However, alarms have a more sustained effect than desmopressin and tricyclics after treatment has finished. The adverse effects of alarm therapy (tiredness and waking other members of the family) are relatively benign and self limiting compared with the adverse effects of drugs. One class of drugs (anticholinergic drugs) appears to improve the efficacy of other established treatments such as tricyclics, bedwetting alarms and desmopressin. The cost of treating children with bedwetting with alarm therapy or drugs may vary in different countries.

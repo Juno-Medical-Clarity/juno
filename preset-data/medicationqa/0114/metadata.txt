@@ -1,5 +1,0 @@
-drug_focus: drugs that cause urination
-question_type: Action
-section_title: Medications that can cause urinary incontinence
-source_url: https://www.health.harvard.edu/bladder-and-bowel/medications-that-can-cause-urinary-incontinence
-sample_id: 0114

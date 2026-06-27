@@ -1,5 +1,0 @@
-pmid:        32911778
-question:    29
-adaptation:  adaptation1
-title:       Current State of Evidence: Influence of Nutritional and Nutrigenetic Factors on Immunity in the COVID-19 Pandemic Framework
-sentences:   12

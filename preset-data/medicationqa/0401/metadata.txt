@@ -1,5 +1,0 @@
-drug_focus: acetylcholine
-question_type: Action
-section_title: Functions
-source_url: https://en.wikipedia.org/wiki/Acetylcholine
-sample_id: 0401

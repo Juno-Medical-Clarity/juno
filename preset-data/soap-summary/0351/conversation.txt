@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0351
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-My chart here says that you're eighty three years old, is that correct, ma'am? Yes doctor, that's correct, I just had my birthday. Happy belated birthday! How have you been doing since your last visit? Well, my cancer hasn't needed phlebotomies for several months now, which is good. That's great, you have been treated for polycythemia vera, correct? Yes, that's the one. I also see you're unassisted today, which is also great. Yeah, having some independence is nice.

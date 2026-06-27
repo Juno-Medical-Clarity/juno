@@ -1,7 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [2:4] 'medical-jargon-google-hard' -> 'DNA methylation'

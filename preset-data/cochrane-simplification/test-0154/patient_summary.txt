@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0154  |  gem_id: gem-cochrane-simplification-test-155  |  doi: 10.1002/14651858.CD003122.pub2
-
-Animal studies (performed both in the laboratory and on living animals) suggest that estrogen alone might protect the brain as women get older. After the menopause, levels of estrogens decline in women and estrogen therapy has been claimed to maintain or enhance cognitive function in postmenopausal women. This review found no evidence of a benefit of any types of estrogen on overall cognitive functioning in older postmenopausal women when given either as short term or longer term (up to five years) therapy. There was also no evidence of a beneficial effect of combined estrogen and progestagen therapy overall. There was insufficient evidence to determine whether any type of hormone replacement therapy had beneficial or harmful effects on specific types of cognitive ability, such as verbal or visual memory.

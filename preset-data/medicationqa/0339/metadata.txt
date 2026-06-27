@@ -1,5 +1,0 @@
-drug_focus: indomethacin
-question_type: Ingredient
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=129eaf3a-b013-4b29-a58f-1565f9f41d5b
-sample_id: 0339

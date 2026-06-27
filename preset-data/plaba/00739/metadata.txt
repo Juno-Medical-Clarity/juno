@@ -1,5 +1,0 @@
-pmid:        34370971
-question:    59
-adaptation:  adaptation2
-title:       Safety and immunogenicity of heterologous versus homologous prime-boost schedules with an adenoviral vectored and mRNA COVID-19 vaccine (Com-COV): a single-blind, randomised, non-inferiority trial
-sentences:   20

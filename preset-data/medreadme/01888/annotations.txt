@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [16:20] 'medical-jargon-google-easy' -> 'Noctura 400 Sleep Masks'
-  [21:24] 'medical-name-entity' -> 'Polyphotonix Medical Ltd'
-  [37:39] 'medical-jargon-google-easy' -> 'dark adaptation'

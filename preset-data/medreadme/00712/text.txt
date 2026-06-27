@@ -1,1 +1,0 @@
-Thus, a generic signal provided by different receptors leads to discrete responses that depend on the specific identity of the cell that receives the signal.

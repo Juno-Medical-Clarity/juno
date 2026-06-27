@@ -1,5 +1,0 @@
-pmid:        34521513
-question:    25
-adaptation:  adaptation1
-title:       Implementation and outcomes of monoclonal antibody infusion for COVID-19 in an inner-city safety net hospital: A South-Bronx experience
-sentences:   8

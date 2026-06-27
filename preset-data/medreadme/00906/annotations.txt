@@ -1,8 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [0:3] 'medical-jargon-google-easy' -> 'Novel psychoactive substances'
-  [4:5] 'abbr-medical' -> 'NPSs'

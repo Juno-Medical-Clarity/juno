@@ -1,8 +1,0 @@
-Doctor: Do you remember the details of your surgery, sir?
-Patient: No, can you remind me?
-Doctor: We did a left inguinal hernia repair.
-Patient: Thank you for reminding me.
-Doctor: You have a history of prostate cancer as well, correct?
-Patient: Yes, they said it was Gleason, um, three plus four.
-Doctor: Yes, that sounds familiar. What medicines are you taking right now?
-Patient: I'm taking Lupron, currently.

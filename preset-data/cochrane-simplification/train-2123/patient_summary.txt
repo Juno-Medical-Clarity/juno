@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2123  |  gem_id: gem-cochrane-simplification-train-2124  |  doi: 10.1002/14651858.CD009534.pub2
-
-Nine studies of medium to high quality, enrolling 1614 institutionalised participants or outpatients, assigned to antibiotics or placebo/no treatment for treating asymptomatic bacteriuria for different durations of treatment and follow-up were included in this review. The evidence is current to February 2015. No clinical benefit was found for antibiotic treatment. Antibiotics eradicated the growth of bacteria in more participants but at the cost of more adverse events than in the no treatment groups.

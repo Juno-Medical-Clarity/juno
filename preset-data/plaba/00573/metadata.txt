@@ -1,5 +1,0 @@
-pmid:        29262047
-question:    44
-adaptation:  adaptation1
-title:       Hemorrhagic Shock
-sentences:   17

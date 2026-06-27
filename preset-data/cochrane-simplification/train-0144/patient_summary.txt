@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0144  |  gem_id: gem-cochrane-simplification-train-145  |  doi: 10.1002/14651858.CD004875.pub5
-
-Randomised controlled trials (RCTs) comparing either two types of antibiotic therapy or an antibiotic versus a placebo in children with pneumonia. We identified seven studies (1912 children). Within each study, there were some children who hadM. pneumoniaebut we could not extract relevant data relating to efficacy or adverse events relating only to children withM. pneumoniae. Overall the quality of the evidence for each of the main outcomes is very low as there are insufficient data for any outcome. Hence, currently, there is insufficient evidence to show conclusively that antibiotics are effective in children with LRTI caused byM. pneumoniae.

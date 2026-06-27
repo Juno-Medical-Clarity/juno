@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0620  |  gem_id: gem-cochrane-simplification-train-621  |  doi: 10.1002/14651858.CD001502.pub4
-
-The review included 16 randomised controlled trials (more than 1800 women) that compared these procedures for treating couples with non-tubal subfertility. Only three trials reported live birth. The evidence is current to September 2013. No trial reported its funding source, but one reported no conflict of interest, and one stated that it had received no commercial funding. No clear evidence suggests any difference between IUI and FSP with respect to their effectiveness and safety in the treatment of couples with non-tubal subfertility. However, a high level of uncertainty due to lack of data is evident in the findings. The overall quality of the evidence was rated as low for most outcomes, largely because of the small quantity of available data.

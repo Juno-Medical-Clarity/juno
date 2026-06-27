@@ -1,9 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.5
-split:       dev
-
-jargon_spans:
-  [23:24] 'medical-jargon-google-easy' -> 'neurons'
-  [29:31] 'medical-jargon-google-easy' -> 'memory circuits'
-  [44:46] 'medical-jargon-google-easy' -> 'neuron maturation'

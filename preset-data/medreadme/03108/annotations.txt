@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [12:13] 'abbr-medical' -> 'BSC'
-  [18:19] 'general-complex' -> 'heterogeneous'

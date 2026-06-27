@@ -1,4 +1,0 @@
-Doctor: Have you had any surgeries in the past?
-Patient: Yeah, I have, I actually had it to repair an undescended testicle.
-Doctor: Oh, wow, do you remember it at all?
-Patient: No, nothing about it, I had that done when I was a baby.

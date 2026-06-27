@@ -1,5 +1,0 @@
-Doctor:  Are you allergic to anything?
-Patient: No, I am not.
-Doctor: How about food allergies.
-Patient: No, I am fine.
-Doctor: Okay.

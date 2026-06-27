@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1450
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you tell me about your Immunizations? Yeah, I had them all. Good, looks like you are up to date.

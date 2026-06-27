@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1423
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke? Nope. What about alcohol? Or any kind of drugs? Nope.

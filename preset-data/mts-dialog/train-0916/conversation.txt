@@ -1,2 +1,0 @@
-Doctor: Are you taking any medicine?
-Patient: No.

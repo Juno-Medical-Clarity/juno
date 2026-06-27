@@ -1,7 +1,0 @@
-Human primary bronchial epithelial cells differentiated in vitro represent a valuable tool to study lung diseases such as cystic fibrosis (CF), an inherited disorder caused by mutations in the gene coding for the Cystic Fibrosis Transmembrane Conductance Regulator.
-In CF, sphingolipids, a ubiquitous class of bioactive lipids mainly associated with the outer layer of the plasma membrane, seem to play a crucial role in the establishment of the severe lung complications.
-Nevertheless, no information on the involvement of sphingolipids and their metabolism in the differentiation of primary bronchial epithelial cells are available so far.
-Here we show that ceramide and globotriaosylceramide increased during cell differentiation, whereas glucosylceramide and gangliosides content decreased.
-In addition, we found that apical plasma membrane of differentiated bronchial cells is characterized by a higher content of sphingolipids in comparison to the other cell membranes and that activity of sphingolipids catabolic enzymes associated with this membrane results altered with respect to the total cell activities.
-In particular, the apical membrane of CF cells was characterized by high levels of ceramide and glucosylceramide, known to have proinflammatory activity.
-On this basis, our data further support the role of sphingolipids in the onset of CF lung pathology.

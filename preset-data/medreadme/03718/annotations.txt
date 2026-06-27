@@ -1,7 +1,0 @@
-source:      pnas
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'preimplantation blastocyst'

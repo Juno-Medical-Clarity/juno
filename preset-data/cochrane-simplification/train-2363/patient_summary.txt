@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2363  |  gem_id: gem-cochrane-simplification-train-2364  |  doi: 10.1002/14651858.CD002964.pub2
-
-The findings are based on eight studies measuring a variety of outcomes, using a range of standardised measures. It was possible to combine results (meta-analysis) for nine comparisons. Results from four of these meta-analyses suggest that parenting programmes may be effective in improving parent responsiveness to the child, and parent-child interaction, both post-intervention and at follow-up. Infant responsiveness to the mother also showed improvement at follow-up. The results of the other five meta-analyses we carried out were inconclusive. Further rigorous research is needed that provides both short- and long-term follow-up of the children of teenage parents, and that assesses the benefits of parenting programmes for young fathers as well as young mothers.

@@ -1,5 +1,0 @@
-Doctor: Hi, how can I help?
-Patient: No, I just came in for follow up.
-Doctor: Okay so just a follow up today. No complaints?
-Patient: Nope. Nothing.
-Doctor: That's great.

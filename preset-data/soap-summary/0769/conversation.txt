@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0769
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you drink? Well, I will call myself a social drinker. I would admit that I am addicted to caffeine. How much coffee do you consume each day? I would say three to five cups. Any history of sexually transmitted disease? Nope. How're your eating habits? I would say I am a good eater and follow a healthy diet plan. Do you exercise? I walk every day around five miles. Also, I'm very regular in my sprint training.

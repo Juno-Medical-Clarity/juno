@@ -1,5 +1,0 @@
-pmid:        14598876
-question:    4
-adaptation:  adaptation2
-title:       Clinical impact of the new criteria for the diagnosis of diabetes mellitus
-sentences:   5

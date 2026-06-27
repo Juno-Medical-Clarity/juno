@@ -1,5 +1,0 @@
-drug_focus: ciprofloxacin
-question_type: Usage/time
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d54a97d5-3664-4ca5-bffd-8366c7255b73
-sample_id: 0103

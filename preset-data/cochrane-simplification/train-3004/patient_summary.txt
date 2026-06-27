@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3004  |  gem_id: gem-cochrane-simplification-train-3005  |  doi: 10.1002/14651858.CD010562.pub2
-
-This review looked at trials assessing the effects of topical tranexamic acid in patients who are bleeding. Twenty-nine trials were found; 28 involved patients bleeding during operations and one involved people with nosebleeds. When the results of these trials were gathered together they showed that when tranexamic acid was given topically, it reduced the amount of blood that patients lost and made it less likely that they had a blood transfusion. The authors of this review concluded that topical tranexamic acid reduces bleeding in patients who are having an operation. But because there are no trials, we are not sure if it also reduces bleeding from other causes, such as childbirth or bleeding from stomach ulcers.

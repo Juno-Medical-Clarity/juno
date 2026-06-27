@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2606  |  gem_id: gem-cochrane-simplification-train-2607  |  doi: 10.1002/14651858.CD006781.pub3
-
-We found five studies that included 1254 patients who had this type of cardiac arrest in the prehospital setting. Four of the five studies (1186 patients) were well-designed studies with low risk of bias. Although no adverse events were reported, aminophylline showed no advantage when it was added to the standard resuscitation practice of paramedics when compared with placebo in these patients. It is not known whether giving aminophylline sooner would be helpful.

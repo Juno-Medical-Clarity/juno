@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1112  |  gem_id: gem-cochrane-simplification-train-1113  |  doi: 10.1002/14651858.CD001211.pub3
-
-We found 11 randomised controlled trial (RCTs) from different parts of the world which recruited a total of 3673 participants overall. We judged two of the trials to be of high quality, and we graded the remainder as poor quality. This updated review provides clearer evidence that use of antibiotic eye drops can speed up the resolution of symptoms and infection, and that they are unlikely to be associated with any serious side effects.

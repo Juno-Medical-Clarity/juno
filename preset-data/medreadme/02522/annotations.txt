@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 6.0
-split:       train
-
-jargon_spans:
-  [8:10] 'abbr-medical' -> 'C. jejuni'
-  [13:15] 'medical-jargon-google-easy' -> 'metabolic downshift'
-  [24:25] 'medical-jargon-google-easy' -> 'fumarate'

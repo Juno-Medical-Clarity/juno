@@ -1,5 +1,0 @@
-drug_focus: medications that contribute to non-alcoholic fatty liver
-question_type: Side effects
-section_title: Drugs
-source_url: https://livertox.nih.gov/Phenotypes_Fatty.html
-sample_id: 0285

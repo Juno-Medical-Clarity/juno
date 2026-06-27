@@ -1,5 +1,0 @@
-drug_focus: flu vaccination
-question_type: Usage/time
-section_title: When should I get vaccinated?
-source_url: https://www.cdc.gov/flu/protect/keyfacts.htm
-sample_id: 0632

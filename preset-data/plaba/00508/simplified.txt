@@ -1,8 +1,0 @@
-Multiple sclerosis (MS) is a complex disease of the central nervous system (CNS). MS involves an intricate and abnormal interaction of immune cells that leads to inflammation (redness and swelling from fighting an infection), demyelination (destruction of nerve tissue), and neurodegeneration. Neurodegeneration is the loss of structure and/or function of neurons, cells in the brain.
-Due to the diversity of the types of MS, their diagnosis becomes challenging, and the best treatment cannot be easily provided to patients.
-Biomarkers, or measurable biological substances that can indicate disease, have been used to simplify the diagnosis and treatment of MS. Biomarkers have also been used to evaluate the results of clinical treatments.
-In recent years, biomarker research has advanced rapidly due to their ability to be easily and promptly measured, their specificity, and their reproducibility.
-Biomarkers are classified into several categories. These categories depend on whether the biomarkers address personal or predictive susceptibility (or risk), diagnosis, disease forecast (or progression), disease activity, or response to treatment in different clinical courses of MS.
-The identified members indicate a variety of causative pathways of MS. These pathways include neuroaxonal damage (nerve degeneration), gliosis (scarring in the CNS), demyelination (nerve tissue destruction), progression of disability, and many others.
-The present review analyzes biomarkers in cerebrospinal (brain) fluid (CSF) and blood serum. These are the most promising imaging biomarkers used in clinical practice.
-Furthermore, this paper aims to shed light on the criteria and challenges that a biomarker faces to be routinely used daily clinical practice.

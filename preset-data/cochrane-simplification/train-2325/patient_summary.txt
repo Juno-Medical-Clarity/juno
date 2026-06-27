@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2325  |  gem_id: gem-cochrane-simplification-train-2326  |  doi: 10.1002/14651858.CD000345.pub2
-
-The objectives of this review were to assess the effects of the sequential combination of glucocorticosteroids and interferon compared to interferon alone in the treatment of chronic hepatitis B. Glucocorticosteroid pretreatment was associated with a significantly higher frequency of loss of hepatitis B markers (HBeAg and HBV DNA), but had no significant effect on clinical outcomes.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3337  |  gem_id: gem-cochrane-simplification-train-3338  |  doi: 10.1002/14651858.CD003833.pub4
-
-The review included nine randomised controlled trials with 425 participants, comparing omega-3 fatty acid supplementation with other fatty acids. On the basis of these studies, omega-3 fatty acid supplementation did not improve walking distance, blood pressure in the leg or any other measure of clinical benefit. There was some limited evidence to suggest that omega-3 fatty acid supplementation may reduce blood viscosity (the resistance of blood to flow), which when high could potentially contribute to intermittent claudication. There was no evidence to suggest that omega-3 fatty acid supplementation reduced plasma (the liquid component of blood) viscosity or improved the levels of different types of cholesterol or any other components of blood tested. Side effects such as nausea, diarrhoea and flatulence were observed in two studies.

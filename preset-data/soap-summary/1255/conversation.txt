@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1255
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Well, I have a long family history of heart problems. My mom died quite young at the age of fifty due to heart attack and my father was detected with heart failure, he has a pacemaker. Oh, I am sorry to hear about your mom. Yeah. Also, high blood pressure runs in my family. Okay.

@@ -1,6 +1,0 @@
-Monoclonal antibodies are medicines that can make the coronavirus ineffective and have shown to be beneficial in cases of mild to moderate coronavirus infection, substantially reducing the risk for staying in the hospital and having severe symptoms of the disease. The coronavirus can cause COVID-19, the viral breathing-related infection.
-Treatment usually requires high doses of these monoclonal antibodies with limited ability in preventing complications or death among patients hospitalized with COVID-19.
-This study reports on the development and evaluation of monoclonal antibodies enhanced with the Fc (the part of the antibody that helps interactions with other cells) to prevent or treat COVID-19.
-In several animal studies of COVID-19, researchers show that activating certain parts of the Fc proteins results in improvements in both preventing and treating weight loss and death from the disease. This helps reduce the dose required to gain full protection in animals who are not infected with the coronavirus.
-Results highlight the importance of the Fc proteins in increasing immunity to the virus.
-These findings may influence the development of Fc monoclonal antibodies with improved functions to help strengthen immunity against COVID-19.

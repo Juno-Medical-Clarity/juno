@@ -1,5 +1,0 @@
-pmid:        34576985
-question:    39
-adaptation:  adaptation2
-title:       Breath Biomarkers in Diagnostic Applications
-sentences:   7

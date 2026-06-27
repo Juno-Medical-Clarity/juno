@@ -1,7 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [9:11] 'medical-jargon-google-easy' -> 'ATPase enzymes'

@@ -1,1 +1,0 @@
-We use Floquet theory combined with the theory of pattern formation to derive the parameter regimes where the phosphenes occur.

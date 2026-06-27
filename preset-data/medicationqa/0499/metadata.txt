@@ -1,5 +1,0 @@
-drug_focus: cipro
-question_type: Usage/time
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0
-sample_id: 0499

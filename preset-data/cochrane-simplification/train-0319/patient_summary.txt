@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0319  |  gem_id: gem-cochrane-simplification-train-320  |  doi: 10.1002/14651858.CD000147
-
-The efficacy of nimodipine, a calcium channel blocker, has been tested in randomized controlled trials for the treatment of dementia, particularly Alzheimer's disease and multi-infarct dementia, the commonest forms of dementia in older people. The rationale for its use is to restrict the influx of calcium ions into neurons, and, by vasodilatation, to improve blood flow to the brain. This review found evidence of some short-term benefit attributable to nimodipine, mainly in measures of cognitive function and global impression, but not in activities on daily living, for patients with degenerative and multi-infarct dementia, and mixed dementia. Nimodipine is well tolerated with a low rate of adverse effects similar to that associated with placebo.

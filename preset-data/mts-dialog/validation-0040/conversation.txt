@@ -1,6 +1,0 @@
-Doctor: Are you ready for home?
-Patient: Yes.
-Doctor: Who will help at home?
-Patient: Just my family.
-Doctor: That is great.
-Patient: Thanks.

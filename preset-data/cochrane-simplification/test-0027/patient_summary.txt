@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0027  |  gem_id: gem-cochrane-simplification-test-28  |  doi: 10.1002/14651858.CD003825.pub4
-
-We searched the available scientific literature to find all the trials that had addressed these questions. We found 9 trials studying the blood pressure-lowering ability of 5 different loop diuretics (furosemide, cicletanine, piretanide, indacrinone and etozolin) in 460 participants. The blood pressure-lowering effect was modest, with systolic pressure lowered by 8 mmHg and diastolic pressure by 4 mmHg. No loop diuretic drug appears to be any better or worse than others in terms of blood pressure-lowering ability. Due to lack of reporting and the short duration of included trials, this review could not provide an estimate of the harms associated with loop diuretics.

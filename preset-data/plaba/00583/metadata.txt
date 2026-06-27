@@ -1,5 +1,0 @@
-pmid:        29295637
-question:    45
-adaptation:  adaptation1
-title:       Clostridial collagenase ointment and medicinal honey utilization for pressure ulcers in US hospitals
-sentences:   11

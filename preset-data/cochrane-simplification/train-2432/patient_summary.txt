@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2432  |  gem_id: gem-cochrane-simplification-train-2433  |  doi: 10.1002/14651858.CD008990.pub3
-
-We found 13 eligible randomised controlled trials (RCTs) involving 701 people for inclusion in this review. There is some evidence that recombinant growth hormone therapy in people with burns covering more than 40% of the total body surface area helps burn wounds and donor sites heal more rapidly and reduce the length of hospital stay, without increased mortality or increased scarring. We found it difficult to assess the quality of these studies due to poor reporting therefore we cannot be completely confident in their results.

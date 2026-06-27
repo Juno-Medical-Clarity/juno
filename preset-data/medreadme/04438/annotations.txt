@@ -1,8 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 3.85
-split:       test
-
-jargon_spans:
-  [12:15] 'medical-name-entity' -> 'World Health Organization'
-  [16:17] 'abbr-medical' -> 'WHO'

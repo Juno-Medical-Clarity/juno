@@ -1,5 +1,0 @@
-drug_focus: methimazole
-question_type: Ingredient
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=68942ec1-763a-4757-96ad-0e749aba348c
-sample_id: 0310

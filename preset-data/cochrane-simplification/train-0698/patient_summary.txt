@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0698  |  gem_id: gem-cochrane-simplification-train-699  |  doi: 10.1002/14651858.CD004263.pub2
-
-In this review of randomized controlled trials, a commercially available inactivated vaccine given in two doses was shown to provide disease protection for at least one year after vaccination, but with some adverse events. Disease protection by two vaccines, widely used in China but presently commercially unavailable, has not been investigated in randomized controlled trials. Further research is needed on all currently used as well as newly developed vaccines.

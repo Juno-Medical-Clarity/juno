@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1362
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good morning, ma'am. Before we begin today, can you confirm your age for me? Good morning, doctor. Sure, I'm seventy nine years old. Great, thank you. What seems to be the problem today, ma'am? Well, I have this arthritis, as you know. Yes, how would you describe your arthritis? Well, at this point I'd say it's debilitating. I see, so the antiinflammatories and rest haven't helped at all? No, I haven't had any improvement, doctor. It's still so bad. I see, I believe you'd be a good candidate for a knee replacement. Yes, I thought so. What are the risks of infection for the surgery? Um, it's less than one percent, we use prophylactic antibiotics to control for infection the entire time. That's great, what about anesthesia, will I be asleep for this? Yes, you won't feel a thing. Great, yes, I'd like to do the surgery, doctor.

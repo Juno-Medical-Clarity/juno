@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1205
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family medical history? My uncle on my dad's side of the family had kidney failure. I lot of my family members have diabetes and asthma.

@@ -1,4 +1,0 @@
-Patient: Good morning, doctor.
-Doctor: So, I've reviewed your past notes, are there any other diagnoses I should know about?
-Patient: Well, I've had depression for a while now.
-Doctor: Thank you for sharing that with me.

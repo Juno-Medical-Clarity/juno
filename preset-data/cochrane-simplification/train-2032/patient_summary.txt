@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2032  |  gem_id: gem-cochrane-simplification-train-2033  |  doi: 10.1002/14651858.CD011066.pub2
-
-A total of 28 randomised controlled trials were included, with a total of 1273 menopausal women. Over 95% of the study populations were postmenopausal women. Women's ages ranged from 36 to 80 years. Treatment duration varied from one week to one year. In more than 80% of the trials DHEA was administered orally with the daily doses varying between 10 mg and 1600 mg. We found no evidence that DHEA improves quality of life. There was some evidence that it was associated with androgenic side effects (for example acne, unwanted hair growth (hirsutism)). It was uncertain whether DHEA decreased menopausal symptoms, but DHEA may have slightly improved sexual function. The quality of the evidence was moderate for both quality of life and side effects. We downgraded the quality of evidence based on the lack of data on randomisation, allocation, or blinding; small study sizes overall; and limited data available.

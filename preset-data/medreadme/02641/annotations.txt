@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'adverse events'
-  [10:12] 'medical-jargon-google-easy' -> 'adverse events'
-  [17:18] 'general-complex' -> 'placebo'

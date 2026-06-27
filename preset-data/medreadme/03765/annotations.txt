@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.7
-split:       test
-
-jargon_spans:
-  [6:7] 'medical-jargon-google-easy' -> 'apoE'
-  [17:20] 'medical-jargon-google-easy' -> 'Alzheimer ’s disease'

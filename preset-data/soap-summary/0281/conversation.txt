@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0281
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you tell me about any diseases that run in your family? Sure, my brother has a prostate cancer. Okay, brother. My father had brain cancer. Okay, dad. Then on both sides of my family there are many heart related issues. Okay. And my brother and sister both have diabetes. Okay. Yes, that's it.

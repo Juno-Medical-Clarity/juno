@@ -1,5 +1,0 @@
-pmid:        21209544
-question:    21
-adaptation:  adaptation1
-title:       Spigelian hernia
-sentences:   8

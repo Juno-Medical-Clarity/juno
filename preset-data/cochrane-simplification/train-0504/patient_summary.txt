@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0504  |  gem_id: gem-cochrane-simplification-train-505  |  doi: 10.1002/14651858.CD008475.pub2
-
-Endometriosis is a common condition affecting women of child-bearing age, and is usually due to the presence of endometrial tissue in places other than the uterus. Common symptoms include pain and infertility. GnRHas are a group of drugs often used to treat endometriosis by decreasing hormone levels. This review found evidence to suggest treatment with a GnRHa improved symptom relief compared with no treatment or placebo. There was no evidence of a statistically significant difference when compared with danazol or intra-uterine progestagen. However, there more side effects in the GnRHa group compared with the danazol group. There is not enough evidence to make clear if higher or lower doses of GnRHa are better, or which length of treatment is best.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2521  |  gem_id: gem-cochrane-simplification-train-2522  |  doi: 10.1002/14651858.CD005312.pub2
-
-In this review, 14 double-blind, placebo controlled randomised clinical trials (RCTs) were found. They did not all measure the same outcomes and several did not explain what other heart failure treatments patients were receiving. Those trials that could be included in a meta-analysis showed improvements in heart failure symptoms and in the function of the heart. The results, therefore, are suggestive of a benefit from hawthorn extract used in addition to conventional treatments for chronic heart failure.

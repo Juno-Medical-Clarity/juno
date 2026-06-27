@@ -1,8 +1,0 @@
-source:      elife
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [9:11] 'medical-jargon-google-easy' -> 'plant AEP'
-  [16:18] 'medical-jargon-google-easy' -> 'Helianthus annuus'

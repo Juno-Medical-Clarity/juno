@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1392
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you had ever had surgery? Yeah, I had my gallbladder removed a few years ago. Thank you, what about any other parts of the body, like your eyes, ears, or nose? Oh yeah, I forgot. I had eye surgery too. Thank you, think hard, any other surgeries you can remember? Let me look at my notes, um, it looks like I had a dilation and curettage done some time back, too. I see. Thank you for sharing that with me.

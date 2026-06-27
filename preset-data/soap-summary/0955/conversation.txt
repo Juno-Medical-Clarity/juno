@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0955
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I think you are good to go home. I am going to prepare your discharge paper. That's great!

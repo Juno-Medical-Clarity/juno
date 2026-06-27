@@ -1,5 +1,0 @@
-drug_focus: rasagiline, vitamins
-question_type: Interaction
-section_title: DRUG INTERACTIONS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5dfeec8f-f4f3-4e06-915e-3244467516a6&audience=consumer
-sample_id: 0575

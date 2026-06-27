@@ -1,6 +1,0 @@
-Doctor: I think you have a muscular strain.
-Patient: Yeah.
-Doctor: So right side shoulder strain and maybe a little bit of nerve compression.
-Patient: Oh really!
-Doctor: Maybe. I will do further evaluation and treatment.
-Patient: Okay.

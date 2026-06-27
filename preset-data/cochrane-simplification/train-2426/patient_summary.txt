@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2426  |  gem_id: gem-cochrane-simplification-train-2427  |  doi: 10.1002/14651858.CD006676.pub3
-
-Five randomised controlled trials were identified involving 309 people with spinal cord injury. None of the locomotor interventions had a beneficial or harmful effect on the people taking part. In all five studies there were no differences in adverse events or drop-outs between study groups. There is not enough evidence to conclude which locomotor training strategy is most effective in improving walking ability in people with spinal cord injury, or that locomotor training benefits a person's ability to walk over other kinds of rehabilitation.

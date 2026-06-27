@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1079
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, how old are you? Hello Doctor, I'm fifty four years old. What gender do you identify with? I identify as a female. Thank you. What symptoms are you experiencing in your right hand? I have numbness and tingling in my right hand. Are there any specific fingers that you feel it in? I really feel it in my fifth, fourth, and third fingers. What kind of treatments have you done for this pain? I've taken antiinflammatories, stayed away from sports and stuff like that, and rested. Has this helped at all? No, not at all, its still numb and tingling. This sounds like carpal tunnel, there's a quick, minimally invasive surgery I can do on this hand, since it hasn't responded to nonoperative treatments. I think that'll really help. I'd like to do that, what's the name of the procedure? Its called a carpal tunnel release.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0436
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi! How are you two doing today? Guest_family: We are doing good. I am tired today. Our records show that he is up to date on all of his two month old immunizations. Guest_family: That is right! He had his shots the last time we were here. Does he have any health conditions or difficulties during childbirth? Guest_family: Nope. He is healthy.

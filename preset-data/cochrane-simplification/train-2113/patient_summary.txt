@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2113  |  gem_id: gem-cochrane-simplification-train-2114  |  doi: 10.1002/14651858.CD007342.pub2
-
-This is a systematic review of clinical research testing whether taking the antibiotic can prevent infection from a water-borne bacteria called Leptospira. Data from different trials had conflicting results, and these trials targeted different kinds of people - travellers and people who live in at risk areas, encompassing soldiers, farmers, and students. Taken together, the data does not support the practice in all cases, though short term travellers with a potential for high risk exposure may be helped. People who took doxycycline were more likely to have stomach pain, nausea, and vomiting but the medication had to be stopped in only a few participants.

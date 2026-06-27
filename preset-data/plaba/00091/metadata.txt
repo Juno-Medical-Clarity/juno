@@ -1,5 +1,0 @@
-pmid:        16034865
-question:    8
-adaptation:  adaptation1
-title:       Depot perphenazine decanoate and enanthate for schizophrenia
-sentences:   9

@@ -1,5 +1,0 @@
-drug_focus: hormonal contraceptives
-question_type: Indication
-section_title: NA
-source_url: https://youngwomenshealth.org/2011/10/18/medical-uses-of-the-birth-control-pill/
-sample_id: 0451

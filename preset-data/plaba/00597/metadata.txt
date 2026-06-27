@@ -1,5 +1,0 @@
-pmid:        30349480
-question:    46
-adaptation:  adaptation1
-title:       Emerging microRNA Therapeutic Approaches for Cystic Fibrosis
-sentences:   11

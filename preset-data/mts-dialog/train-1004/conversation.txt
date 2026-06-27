@@ -1,4 +1,0 @@
-Guest_clinician: She has a vast history of surgeries.
-Doctor: Yeah, I am looking at her reports. She had surgery for spina bifida when she was a baby and they had to put a shunt.
-Guest_clinician: Yeah, later she had her uterus removed and also had to undergo a breast reduction surgery.
-Doctor: Hm.

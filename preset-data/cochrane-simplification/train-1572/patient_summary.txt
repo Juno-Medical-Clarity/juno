@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1572  |  gem_id: gem-cochrane-simplification-train-1573  |  doi: 10.1002/14651858.CD001258.pub3
-
-This review focuses on the effectiveness of carbamazepine for people with schizophrenia. A search of the Cochrane Schizophrenia Group's trials register was carried out July 2012. Ten studies were found with 283 people. Carbamazepine was compared with no active medication (‘dummy’ or placebo treatment), versus an antipsychotic or when taken in addition to an antipsychotic. However, all of the 10 studies were small and information in them was of a poor standard. There is therefore a lack of evidence whether carbamazepine reduces symptoms and side effects in people with schizophrenia or similar mental health problems. Larger well-designed trials are necessary to provide stronger evidence before carbamazepine can be recommended as a treatment for people with schizophrenia. This plain language summary has been written by a consumer Ben Gray: Service User and Service User Expert. Rethink Mental Illness.

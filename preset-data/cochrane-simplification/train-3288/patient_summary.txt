@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3288  |  gem_id: gem-cochrane-simplification-train-3289  |  doi: 10.1002/14651858.CD000269.pub3
-
-These findings, however, are limited by the relatively short-term of clinical controlled observations which in all studies but one lasted for no more than three months. Subjective evaluations of these patients as given by their doctors were consistently positive and no noticeable side effects were evidenced in the various studies over the years.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0719  |  gem_id: gem-cochrane-simplification-train-720  |  doi: 10.1002/14651858.CD008976.pub2
-
-This review aimed to determine the effectiveness and toxicity of gemcitabine by looking at the evidence published from randomised clinical trials. Patients receiving gemcitabine combined with cisplatin had a similar overall survival but less toxicity when compared to the well-established chemotherapeutic treatment of MVAC (methotrexate, vinblastine, doxorubicin, cisplatin). This suggests that gemcitabine plus cisplatin may be considered an alternative chemotherapy schedule to MVAC for advanced bladder cancer but the evidence is limited to one trial only. For patients who have poor kidney function or poor performance status the combination of gemcitabine plus carboplatin may be considered.

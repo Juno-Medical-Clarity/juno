@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0904  |  gem_id: gem-cochrane-simplification-train-905  |  doi: 10.1002/14651858.CD004333.pub3
-
-A review of studies concluded that helmets reduce the risk of head injury by around 69% and death by around 42%. There is, so far, insufficient evidence to compare the effectiveness of different types of helmet. Some studies have suggested that helmets may protect against facial injury and that they have no effect on neck injury, but more research is required for a conclusive answer. The review supports the view that helmet use should be actively encouraged worldwide for rider safety.

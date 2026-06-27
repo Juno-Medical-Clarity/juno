@@ -1,5 +1,0 @@
-drug_focus: Restoril
-question_type: Information
-section_title: Medication Guide > What is RESTORIL?
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bc56f7fd-1aaf-48ff-8aa7-d467e59e1015
-sample_id: 0126

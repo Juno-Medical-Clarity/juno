@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2827  |  gem_id: gem-cochrane-simplification-train-2828  |  doi: 10.1002/14651858.CD003911.pub2
-
-Six randomised trials were included in this review, which found that short (three hour) infusions are more convenient and caused significantly fewer adverse (side) effects (i.e. decreased white blood cell counts, fever, infection or sore mouth). With short-infusion paclitaxel there is no obvious loss of effectiveness when compared with longer infusions, although further clinical trials are needed to be sure of this.

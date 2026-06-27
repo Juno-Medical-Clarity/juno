@@ -1,7 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.3
-split:       test
-
-jargon_spans:
-  [20:21] 'abbr-medical' -> 'CAA'

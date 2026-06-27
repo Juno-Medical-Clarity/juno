@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [10:15] 'medical-jargon-google-easy' -> 'pre - / perioperative anaesthesia'
-  [40:42] 'medical-jargon-google-easy' -> 'echocardiography substudy'

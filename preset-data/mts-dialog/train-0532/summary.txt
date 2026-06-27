@@ -1,2 +1,0 @@
-[ROS]
-ENDOCRINE: Normal; Negative for diabetes, thyroid, or problems with cholesterol or hormones.

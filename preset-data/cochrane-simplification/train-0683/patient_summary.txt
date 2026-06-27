@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0683  |  gem_id: gem-cochrane-simplification-train-684  |  doi: 10.1002/14651858.CD007434.pub2
-
-We included nine trials involving 1371 participants in the review. In general, no strong evidence was found to support the effectiveness of this approach, but it was shown to be effective in some contexts. In smoking cessation interventions the effect of showing and explaining artery scanning images (to assess the risk of cardiovascular disease) was found to be more effective than not communicating images. In other outcomes, the effects were mixed. There was no evidence of significant harmful effects of this approach, although this was not well reported. A main limitation of the review is the small number of studies in this area and the great differences between them in terms of the precise nature of the interventions and the populations being studied. This makes drawing broad conclusions difficult.

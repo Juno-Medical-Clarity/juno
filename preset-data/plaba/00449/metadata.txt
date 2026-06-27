@@ -1,5 +1,0 @@
-pmid:        23000664
-question:    35
-adaptation:  adaptation1
-title:       DEXA screening—are we doing too much?
-sentences:   3

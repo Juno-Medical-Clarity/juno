@@ -1,5 +1,0 @@
-pmid:        33805605
-question:    46
-adaptation:  adaptation1
-title:       Lumacaftor and Matrine: Possible Therapeutic Combination to Counteract the Inflammatory Process in Cystic Fibrosis
-sentences:   8

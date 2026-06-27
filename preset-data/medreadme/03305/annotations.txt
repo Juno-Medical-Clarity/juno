@@ -1,9 +1,0 @@
-source:      pnas
-side:        simple
-readability: 5.3
-split:       dev
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'RPA'
-  [6:7] 'abbr-medical' -> 'Exo1'
-  [17:20] 'medical-jargon-google-hard' -> 'distributive binding mechanism'

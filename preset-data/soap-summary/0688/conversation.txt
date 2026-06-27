@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0688
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, sir, tell me about your knees, how long have they been bothering you? Well, I'm sixty nine years old now, so I'm not as young as I used to be. But, these old knees have been bothering me for a couple years now. What kind of symptoms do you notice in these knees? I hear clicking noises, which really bothers me when I'm going up stairs. There's also some stiffness when I try to move them. Were you previously a pretty active guy? I absolutely used to be, and had no problems, but now this pain is affecting my daily life and activities.

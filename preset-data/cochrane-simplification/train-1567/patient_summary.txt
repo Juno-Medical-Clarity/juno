@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1567  |  gem_id: gem-cochrane-simplification-train-1568  |  doi: 10.1002/14651858.CD010446.pub2
-
-The studies suggested that CHM used either on its own or with antibiotic treatment may be more effective than antibiotics alone for relieving acute UTIs and preventing recurrent episodes. There were only two studies that explicitly stated that adverse events were to be reported; neither reported any adverse events. However, studies were small and assessed as having poor methodological quality; and most study participants were post-menopausal. Therefore, results should be interpreted cautiously and can only be considered as preliminary findings that may not be relevant to pre-menopausal women. Further research is required to provide more rigorous evidence before CHM can be routinely recommended as a treatment option for recurrent UTIs.

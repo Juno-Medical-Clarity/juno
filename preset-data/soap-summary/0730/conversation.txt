@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0730
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you drink or smoke, ma'am? No, I don't do any of that. Good, what about harder drugs? No, none of that either. Very good. Do you have any history of S T D that you know about? No, there's no history of any of that there.

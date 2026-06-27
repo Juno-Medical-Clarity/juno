@@ -1,8 +1,0 @@
-Doctor: Welcome to the clinic.
-Patient: Thank you.
-Doctor: I would like to start with your medical history. Do you have any medical problems or conditions?
-Patient: I don't have any medical conditions other then the one I was sent to you for.
-Doctor: Yes. Doctor Hanine sent over your recent blood test results and chart notes. Did he discuss those results with you?
-Patient: Yes, he did. He said I have multiple myeloma. And that the blood work levels are how he found it.
-Doctor: Yes. The I G G levels show that the subtype is multiple myeloma.
-Patient: Okay.

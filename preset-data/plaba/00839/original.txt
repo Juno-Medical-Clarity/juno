@@ -1,9 +1,0 @@
-SARS-CoV-2 infection is characterized by a protean clinical picture that can range from asymptomatic patients to life-threatening conditions.
-Severe COVID-19 patients often display a severe pulmonary involvement and develop neutrophilia, lymphopenia, and strikingly elevated levels of IL-6.
-There is an over-exuberant cytokine release with hyperferritinemia leading to the idea that COVID-19 is part of the hyperferritinemic syndrome spectrum.
-Indeed, very high levels of ferritin can occur in other diseases including hemophagocytic lymphohistiocytosis, macrophage activation syndrome, adult-onset Still's disease, catastrophic antiphospholipid syndrome and septic shock.
-Numerous studies have demonstrated the immunomodulatory effects of ferritin and its association with mortality and sustained inflammatory process.
-High levels of free iron are harmful in tissues, especially through the redox damage that can lead to fibrosis.
-Iron chelation represents a pillar in the treatment of iron overload.
-In addition, it was proven to have an anti-viral and anti-fibrotic activity.
-Herein, we analyse the pathogenic role of ferritin and iron during SARS-CoV-2 infection and propose iron depletion therapy as a novel therapeutic approach in the COVID-19 pandemic.

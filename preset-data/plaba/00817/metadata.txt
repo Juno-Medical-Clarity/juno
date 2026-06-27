@@ -1,5 +1,0 @@
-pmid:        35011028
-question:    65
-adaptation:  adaptation2
-title:       Potential Role of Omega-3 Polyunsaturated Fatty Acids in Pediatric Food Allergy
-sentences:   9

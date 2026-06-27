@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0344
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_family: He was going to buy me a surprise but met with this car accident. I am sorry! He does have multiple trauma due to the accident, and he will require aftercare. Guest_family: Yeah.

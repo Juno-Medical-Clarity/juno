@@ -1,5 +1,0 @@
-pmid:        3512340
-question:    51
-adaptation:  adaptation1
-title:       Islet cell proteins defined by monoclonal islet cell antibody HISL-19
-sentences:   2

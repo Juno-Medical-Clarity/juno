@@ -1,6 +1,0 @@
-Doctor: Alright we already spoke about your past medical history, anything else you might want to add?
-Guest_family: Oh, dad did you also talk about your depression?
-Doctor: Depression? I don't think we spoke about that.
-Patient: Yeah we didn't, it slipped out of my mind.
-Guest_family: My father has a history of depression and anxiety.
-Doctor: Okay, let me make a note of it.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1239
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Oh doc, I've had a lot of trouble breathing lately. I'm sorry to hear that. We'll get to the bottom of it. Yeah, I lose my breath so quickly with just one to two flights of stairs. When did you first start noticing this? I believe two weeks ago. Any chest pain or tightness with the shortness of breath? No, thankfully. Any fever, chills, or sweats? No. Any cough or coughing up blood? No. How about wheezing or swelling in your legs? No.

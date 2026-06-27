@@ -1,5 +1,0 @@
-pmid:        16733942
-question:    24
-adaptation:  adaptation1
-title:       Quantifying drug-drug interactions in pharmaco-EEG
-sentences:   8

@@ -1,9 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 5.3
-split:       dev
-
-jargon_spans:
-  [3:6] 'medical-jargon-google-easy' -> 'Family Heart Study'
-  [12:13] 'medical-jargon-google-easy' -> 'FEV1'
-  [14:18] 'medical-jargon-google-hard' -> 'dichotomous airflow obstruction phenotypes'

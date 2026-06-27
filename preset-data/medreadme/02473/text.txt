@@ -1,1 +1,0 @@
-Our rank conservation index is based entirely on the relative levels of expression for participating genes and allows us to detect differences in network orderings between networks for a given phenotype and between phenotypes for a given network.

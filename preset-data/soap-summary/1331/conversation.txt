@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1331
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_family: Doctor, you must tell her. She has stopped taking her medications. And her blood pressure is out of control, she is angry all the time and not looking after herself at all. That is not true! Miss Tara, you need to take your medications on time. You are hypertensive and your readings don't look good. I don't want to take anymore medications. I want to try some natural remedies to treat my high blood pressure. I am not going to take any prescription meds that's it. If that's the case then I will make note in your file that you are not complying.

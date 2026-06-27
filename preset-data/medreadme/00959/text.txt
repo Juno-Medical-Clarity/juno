@@ -1,1 +1,0 @@
-A variety of coarse-grained (CG) models exists for simulation of proteins.

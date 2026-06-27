@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2945  |  gem_id: gem-cochrane-simplification-train-2946  |  doi: 10.1002/14651858.CD003917.pub4
-
-Certain drugs might prevent this damage, but for many of these drugs, the review authors found no high quality evidence about whether they were effective in protecting the heart and they were unable to draw conclusions. For dexrazoxane, the review authors found 10 studies enrolling over 1600 patients. These studies provided evidence that dexrazoxane prevented heart damage without interfering with the anti-tumour effects of anthracycline treatment. Patients who got dexrazoxane with their anthracycline treatment had about one third of the risk of heart failure compared to patients who got anthracyclines without dexrazoxane. Dexrazoxane had no effect on survival. We can't be sure about whether it had any undesirable side effects.

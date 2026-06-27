@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1484  |  gem_id: gem-cochrane-simplification-train-1485  |  doi: 10.1002/14651858.CD007772.pub3
-
-Our review was based on two identified randomised controlled study (involving 362 women) and found that prophylactic antibiotics may reduce the risk of intra-amniotic infection in women with MSAF (moderate quality evidence). Antibiotics use did not clearly reduce neonatal sepsis (low quality evidence), NICU admission (low quality evidence) or postpartum endometritis (low quality evidence). Studies with much larger numbers of pregnant women with MSAF would be needed to examine these issues.

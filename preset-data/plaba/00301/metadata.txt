@@ -1,5 +1,0 @@
-pmid:        11097963
-question:    24
-adaptation:  adaptation1
-title:       Imipramine and buspirone in treatment of patients with generalized anxiety disorder who are discontinuing long-term benzodiazepine therapy
-sentences:   10

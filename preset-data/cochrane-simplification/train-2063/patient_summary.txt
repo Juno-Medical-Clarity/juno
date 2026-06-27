@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2063  |  gem_id: gem-cochrane-simplification-train-2064  |  doi: 10.1002/14651858.CD005982.pub2
-
-Therefore, we looked at all the research in children with central lines who received, or not, LMWH and only found one study with a total of 186 participants. This study did not have enough participants to show if this medication protects children with central lines from getting blood clots. The study also did not show that children on LMWH, at the doses given, experience too much bleeding because of its use. The included study did not report any additional adverse events. There were two deaths within the study in the standard care arm, and neither were due to a blood clot. Future studies looking at the role of this medication (LMWH) and if it protects children with central venous lines from getting blood clots are needed.

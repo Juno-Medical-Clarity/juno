@@ -1,5 +1,0 @@
-pmid:        32673289
-question:    15
-adaptation:  adaptation1
-title:       Fluid-electrolyte homeostasis requires histone deacetylase function
-sentences:   8

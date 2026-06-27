@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0282
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, ma'am. Welcome to A B C D General Hospital. Before we begin, I just need to confirm some background information on you. Good afternoon, doctor. Absolutely, that's no problem. First, how old are you? I'm nineteen, sir. Good, and your chart says you identify as Caucasian. Is that correct? Yes, sir, that's correct. Great, what seems to be problem today, ma'am? I've had this bunion on my foot for such a long time. How long has this bunion been present? At this point, um, I don't even remember how long it's been. Do you have any other conditions that I should be aware of? Actually, yes. I have a history of, um, Charcot Marie tooth disease. That's good to know, thank you. I would like to have surgery to cut this bunion off, I can't take it anymore.

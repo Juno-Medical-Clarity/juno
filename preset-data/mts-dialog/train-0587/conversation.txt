@@ -1,8 +1,0 @@
-Doctor: They gave you Procrit for your anemia?
-Patient: Yes I think so. That is how they treated it in the past.
-Doctor: Okay. Are you married? Who do you live with?
-Patient: Oh I am by myself.
-Doctor: Okay, and do you smoke or drink alcohol?
-Patient:  No I do not.
-Doctor: Great.
-Patient: Okay.

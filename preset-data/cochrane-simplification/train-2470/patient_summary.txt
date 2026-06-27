@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2470  |  gem_id: gem-cochrane-simplification-train-2471  |  doi: 10.1002/14651858.CD010211.pub3
-
-We searched for trials which looked at the health outcomes for women and babies after specific interconception care, and compared the outcomes for standard care (with no interconception care of this type). Our search identified one trial which has yet to issue a full set of results, plus two further trials; one of these is still underway and the other has yet to be published. Because there are no studies currently available, there is not enough evidence at present to say if interconception care for women with a history of GDM can help to improve the health of mothers and their infants. More high-quality studies are needed, which assess both short- and long-term health outcomes for women and their babies, as well as evaluating the impact on the health services.

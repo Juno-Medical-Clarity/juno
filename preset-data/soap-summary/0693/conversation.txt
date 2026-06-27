@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0693
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married, sir? Yes, I'm lucky to have, and live with my lovely wife. That's very nice. Did you speak with the nurse before I came in here? Yes, she was lovely as well, I hope you're paying them well. We take good care of them. They'll be happy to hear that. Let me look, she should have left me some notes, um, yep, these look good, I agree with all of this. This looks good. Thank you, Doctor.

@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 4.85
-split:       test
-
-jargon_spans:
-  [0:1] 'abbr-medical' -> 'SIV'
-  [11:14] 'medical-jargon-google-easy' -> 'chronic immune activation'
-  [24:25] 'abbr-medical' -> 'SIV'

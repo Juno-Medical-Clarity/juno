@@ -1,8 +1,0 @@
-Doctor: I will ask you a few questions about your past medical history. Were you ever diagnosed with anything medically related?
-Patient: No.
-Doctor: Were you ever diagnosed with diabetes or any heart conditions?
-Patient: No.
-Doctor: Did you ever take medications for any long-term disease?
-Patient: No.
-Doctor: Did you ever have any surgery?
-Patient: No.

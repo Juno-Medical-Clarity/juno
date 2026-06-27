@@ -1,1 +1,0 @@
-Recruitment (number approached vs. number consented), attendance (number of sessions attended), attrition (number of dropouts at each time point), retention (proportion of participants who completed therapy sessions), and completeness of outcome measurement.

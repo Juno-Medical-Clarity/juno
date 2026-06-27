@@ -1,5 +1,0 @@
-drug_focus: lansoprazole
-question_type: Usage/duration
-section_title: DIRECTIONS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d86585b7-e146-4f04-9016-412b16e06f55
-sample_id: 0403

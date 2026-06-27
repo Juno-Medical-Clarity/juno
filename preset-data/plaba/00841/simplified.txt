@@ -1,9 +1,0 @@
-This report talks about dual roles of blood ferritin (an iron-containing protein) as a measure of both iron status and inflammation (an infection-fighting process in the body).
-We suggest benefits of a lower range of blood ferritin like with total blood cholesterol and fasting blood sugar levels.
-Studying phlebotomy (vein puncturing) in patients with peripheral arterial disease (blockage of veins to the blood) offered unique insights into dual roles of blood ferritin both as an iron status marker and inflammation marker.
-We found links between higher blood ferritin, higher interleukin 6 [IL-6] and tissue necrosis factor-alpha (immune signaling molecules), and high sensitivity C-reactive protein (a marker of inflammation).
-Increased blood ferritin and IL-6 levels were linked with increased death rates and with reduced death rates at low ferritin levels.
-Other large-population studies show similar results.
-Extremely increased ferritin and IL-6 levels also occur in individuals with high death risks due to SARS-CoV-2 infection (infection from a virus causing a lung disease).
-Disordered iron metabolism seen in a high range of blood ferritin level signals disease severity and results.
-Based upon experiments and large patient group data, we suggest testing the idea that optimal ferritin levels for heart-related death rate reduction range from 20 to 100 ng/mL with % transferrin levels from 20 to 50%. This is to ensure a healthy iron status and that ferritin levels above 194 ng/mL link with all-cause death risk in patient groups.

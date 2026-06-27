@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.0
-split:       dev
-
-jargon_spans:
-  [25:26] 'medical-jargon-google-easy' -> 'antibiotic'

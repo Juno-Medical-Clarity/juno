@@ -1,1 +1,0 @@
-MG is a tiny unit used to measure substances, especially drugs, equivalent to one thousandth of a gram.

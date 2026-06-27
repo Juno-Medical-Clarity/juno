@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2464  |  gem_id: gem-cochrane-simplification-train-2465  |  doi: 10.1002/14651858.CD004123.pub4
-
-We included twelve randomised trials (577 participants) in this updated review. Most of the included trials studied foot ulcers in people with diabetes (10 trials). For diabetes-related foot ulcers, we found that HBOT seemed to improve the chance of healing in the short term (up to six weeks), but not with longer term follow-up. HBOT may reduce the number of major amputations in people with diabetes who have chronic foot ulcers. For chronic wounds caused by disease to the veins of the leg, we found that HBOT may reduce the size of wounds. For chronic wounds caused by lack of blood supply through the arteries or chronic pressure ulcers, we found no evidence to confirm or refute any effects of HBOT. We could not assess safety as none of the trials included in our review reported whether there were any major adverse events. This plain language summary is up-to-date as of 23/1/15

@@ -1,5 +1,0 @@
-drug_focus: valsartan
-question_type: Side effects
-section_title: PATIENT INFORMATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9402b022-5809-4251-dfef-54f6ef5723fe
-sample_id: 0085

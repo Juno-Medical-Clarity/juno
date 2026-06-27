@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0199  |  gem_id: gem-cochrane-simplification-train-200  |  doi: 10.1002/14651858.CD005378.pub2
-
-Randomised studies have been successfully conducted in this area but poor study reporting meant that no conclusions could be drawn from them. The benefits or harms of the use of drama therapy in schizophrenia are therefore unclear and further large, high quality studies are required to determine the true value of drama therapy for schizophrenia or schizophrenia-like illnesses.

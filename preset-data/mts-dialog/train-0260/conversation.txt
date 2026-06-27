@@ -1,2 +1,0 @@
-Doctor: Your condition is improved, and you look pretty stable.
-Patient: Yeah, I feel much better.

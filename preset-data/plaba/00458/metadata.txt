@@ -1,5 +1,0 @@
-pmid:        28634907
-question:    35
-adaptation:  adaptation1
-title:       Incidence and Predictors of Repeat Bone Mineral Densitometry: A Longitudinal Cohort Study
-sentences:   13

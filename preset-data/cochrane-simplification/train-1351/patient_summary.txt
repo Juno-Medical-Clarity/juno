@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1351  |  gem_id: gem-cochrane-simplification-train-1352  |  doi: 10.1002/14651858.CD003150.pub2
-
-Of the seven randomised controlled trials that we found, only two trials including 186 people had useable data. The analysis of these two small trials showed inconsistent effects of aromatherapy on measures of agitation, behavioural symptoms and quality of life. More large-scale randomised controlled trials are needed before firm conclusions can be reached about the effectiveness of aromatherapy for dementia.

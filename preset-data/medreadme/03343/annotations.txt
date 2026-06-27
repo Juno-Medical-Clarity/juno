@@ -1,7 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.0
-split:       dev
-
-jargon_spans:
-  [8:11] 'medical-jargon-google-easy' -> 'sensory memory trace'

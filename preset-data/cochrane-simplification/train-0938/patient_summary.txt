@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0938  |  gem_id: gem-cochrane-simplification-train-939  |  doi: 10.1002/14651858.CD003015
-
-The aim of this review was to determine if these interventions are effective in the management of conduct disorder and delinquency in children and adolescents, aged 10-17. Current evidence suggests that family and parenting interventions for juvenile delinquents and their families have beneficial effects on reducing time spent in institutions. This has an obvious benefit to the participant and their family and may result in a cost saving for society. These interventions may also reduce rates of later arrest, but at present these results need to be interpreted with caution, because of diversity in the results of studies.

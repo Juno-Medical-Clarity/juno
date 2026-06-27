@@ -1,6 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 3.0
-split:       dev
-
-jargon_spans: (none)

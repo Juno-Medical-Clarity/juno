@@ -1,5 +1,0 @@
-drug_focus: trospium chloride
-question_type: Usage
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd0d2e18-9e16-ac18-c35c-a150bb5cb67b&audience=consumer
-sample_id: 0614

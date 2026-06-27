@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2803  |  gem_id: gem-cochrane-simplification-train-2804  |  doi: 10.1002/14651858.CD003260.pub2
-
-This review included 11 trials of cognitive training and a single trial of cognitive rehabilitation. We found no evidence for the efficacy of cognitive training in improving cognitive functioning, mood or activities of daily living in people with mild to moderate Alzheimer's disease or vascular dementia; however the quality of the studies was generally not high. The single trial of cognitive rehabilitation provided preliminary indications of the potential benefits of individual cognitive rehabilitation in improving activities of daily living in people with mild Alzheimer's disease. More high-quality trials of both cognitive training and cognitive rehabilitation are needed to establish their efficacy for people with early-stage dementia.

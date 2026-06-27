@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0931  |  gem_id: gem-cochrane-simplification-train-932  |  doi: 10.1002/14651858.CD008243.pub2
-
-We have found two trials comparing these devices and including 67 participants in total. The studies compared different devices, so we could not pool the information from the two studies. However, one study showed that long intravenous lines last for longer than short intravenous lines (thus reducing the number of procedures which a participant has to undergo for a course of antibiotics). Patient satisfaction was higher with long intravenous lines compared to short intravenous lines. The study comparing two different types of long intravenous line did not show that one type was clearly better than another. Neither study was large enough to show differences in complications for the different devices. Neither study reported on important outcomes, such as the number of attempts required to insert the device. We recommend further research to compare different types of percutaneous long intravenous line.

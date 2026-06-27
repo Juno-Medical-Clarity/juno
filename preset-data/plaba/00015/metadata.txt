@@ -1,5 +1,0 @@
-pmid:        30838456
-question:    2
-adaptation:  adaptation2
-title:       Serotonin and Norepinephrine Reuptake Inhibitors
-sentences:   8

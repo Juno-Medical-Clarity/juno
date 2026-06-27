@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3184  |  gem_id: gem-cochrane-simplification-train-3185  |  doi: 10.1002/14651858.CD006484.pub3
-
-This review therefore focused on the efficacy of influenza vaccination in children with cancer. We identified no studies that assessed the clinical efficacy of influenza vaccination; however, we identified one additional controlled clinical trial in our update, which brings the total to nine studies that assessed immune responses after vaccination in children with cancer. It was shown that children receiving chemotherapy mount poorer immune responses than healthy children, but that the vaccine can be safely administered. On the basis of this updated review, it is not possible to recommend or discourage influenza vaccination in children with cancer who are treated with chemotherapy. A future trial should address the clinical benefits of influenza vaccination in children with cancer who are treated with chemotherapy.

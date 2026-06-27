@@ -1,5 +1,0 @@
-pmid:        32991793
-question:    31
-adaptation:  adaptation1
-title:       Selecting Treatment for Patients With Tardive Dyskinesia Using Safety and Efficacy Evidence
-sentences:   3

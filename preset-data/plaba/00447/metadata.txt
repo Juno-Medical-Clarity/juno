@@ -1,5 +1,0 @@
-pmid:        15549501
-question:    35
-adaptation:  adaptation1
-title:       Development and validation of the osteoporosis prescreening risk assessment (OPERA) tool to facilitate identification of women likely to have low bone density
-sentences:   16

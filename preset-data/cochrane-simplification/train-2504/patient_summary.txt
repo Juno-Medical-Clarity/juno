@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2504  |  gem_id: gem-cochrane-simplification-train-2505  |  doi: 10.1002/14651858.CD001896.pub2
-
-The review of trials found there was only limited evidence to support the use of surgery for primary dysmenorrhoea and little evidence for its use in women with endometriosis. No adverse effects were found with UNA but PSN was found to cause treatable constipation. More research is needed.

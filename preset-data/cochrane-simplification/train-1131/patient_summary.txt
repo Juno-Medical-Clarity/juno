@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1131  |  gem_id: gem-cochrane-simplification-train-1132  |  doi: 10.1002/14651858.CD004032
-
-Transcutaneous electrical nerve stimulation (TENS) is rarely used for the treatment of dementia but has been studied in a number of randomized controlled trials. Although the available data suggests TENS may be beneficial for some neuropsychological and/or behavioural aspects of dementia insufficient data was available to these reviewers for definitive conclusions to be drawn.

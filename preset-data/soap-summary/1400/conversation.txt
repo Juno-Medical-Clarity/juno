@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1400
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Welcome in! I am Doctor Madison. Thank you. It's nice to meet you. Are you married? Yes. We just got hitched last year. Congratulations! Thank you. Do you drink alcohol? No, I don't drink. Do you smoke cigarettes? Yes. I know it's bad for me. How much do you smoke per day? About a pack a day. Okay. I have a lot of tools to help you quit smoking that we can discuss. Okay.

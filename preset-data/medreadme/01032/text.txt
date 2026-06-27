@@ -1,1 +1,0 @@
-We further define the structural foundations of signaling from the central phosphotransferase, ChpT, to its response regulator substrate, CtrA, and provide evidence that there are at least two modes of interaction between ChpT and CtrA, only one of which is competent to catalyze phosphoryltransfer.

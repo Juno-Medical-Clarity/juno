@@ -1,9 +1,0 @@
-Doctor: Hi, how are you?
-Patient: I am feeling not so good.
-Doctor: What happened and how long since it started?
-Patient: Oh, I don't remember it. Just my head is hurting so much.
-Guest_family: Hi doctor, she is my mother. Her dementia has progressed and most of the time she does not remember anything.
-Doctor: Oh, I see. Let me try and see if she can answer few questions
-Guest_family: Sure.
-Doctor: Did you have any nausea or vomiting?
-Patient: I don't know.

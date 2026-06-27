@@ -1,5 +1,0 @@
-pmid:        30767645
-question:    45
-adaptation:  adaptation1
-title:       Technological features of advanced skin protectants and an examination of the evidence base
-sentences:   6

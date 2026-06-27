@@ -1,5 +1,0 @@
-pmid:        26086766
-question:    35
-adaptation:  adaptation1
-title:       Development and Validation of an Osteoporosis Self-Assessment Tool for Taiwan (OSTAi) Postmenopausal Women-A Sub-Study of the Taiwan OsteoPorosis Survey (TOPS)
-sentences:   13

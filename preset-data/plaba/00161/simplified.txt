@@ -1,6 +1,0 @@
-Sleep-wake changes in the frequency of atrial fibrillation (irregular or rapid heart beat) (AF) is explored by using new advances in signal processing.
-Once the frequency of the irregular heart beat is estimated and tracked by a mathematical technique, the result is measured to detect and characterize sleep-wake changes.
-With mathematical analysis, the results show that short-term changes in the frequency of the irregular heart beat surpass the changes owing to sleep-wake patterns.
-With mathematical analysis, sleep-wake changes were found in 13 of 18 ambulatory heart-beat recordings from those with long-lasting frequencies of irregular heart beats.
-With mathematical analysis, the highest frequency of an irregular heart beat usually came in the afternoon, while the lowest usually came at late night.
-Thus, sleep-wake changes occur in most with long-lasting AF frequency. However, the short-term changes in AF frequency should be examined.

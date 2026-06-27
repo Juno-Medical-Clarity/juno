@@ -1,5 +1,0 @@
-drug_focus: fluticasone, oxygen
-question_type: Interaction
-section_title: Oral corticosteroid treatment during long-term oxygen therapy in chronic obstructive pulmonary disease: a risk factor for hospitalization and mortality in women.
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/9519225
-sample_id: 0690

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0368  |  gem_id: gem-cochrane-simplification-test-369  |  doi: 10.1002/14651858.CD009689.pub2
-
-We included three relevant studies in the review, which investigated different types of MD rehabilitation interventions after botulinum toxin injections into the arms of 91 adults with previous stroke. There was low quality evidence for intensive forced use of the affected arm in improving spasticity, and very low quality evidence for elbow splinting with occupational therapy. We did not identify any studies of MD rehabilitation in children with post-stroke spasticity or after other injected medications. The review findings are limited by the small number of studies that are methodologically flawed. More research is needed into what rehabilitation modalities and treatments are most effective for spasticity management following stroke.

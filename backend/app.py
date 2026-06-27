@@ -76,6 +76,14 @@ else:
 for bp in _blueprints:
     app.register_blueprint(bp)
 
+# Sweep stale GCS dataset temp dirs left by any previous container instance
+if JUNO_MODE in ("worker", "combined"):
+    try:
+        from utils.gcs_datasets import sweep_stale_dataset_dirs
+        sweep_stale_dataset_dirs()
+    except Exception:
+        logger.exception("app: stale dataset dir sweep failed at startup")
+
 
 # ---------------------------------------------------------------------------
 # Session ID middleware
@@ -192,6 +200,14 @@ def not_found(error):
         request.path,
         {"method": request.method, "path": request.path},
     ).to_dict(), 404
+
+@app.errorhandler(405)
+def method_not_allowed(error):
+    return make_error_response(
+        ErrorCode.ENDPOINT_NOT_FOUND,
+        request.path,
+        {"method": request.method, "path": request.path},
+    ).to_dict(), 405
 
 @app.errorhandler(500)
 def internal_error(error):

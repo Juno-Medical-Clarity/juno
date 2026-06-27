@@ -1,5 +1,0 @@
-drug_focus: terazosin
-question_type: Usage
-section_title: Abstract
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/2872805
-sample_id: 0019

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1057  |  gem_id: gem-cochrane-simplification-train-1058  |  doi: 10.1002/14651858.CD006445.pub2
-
-This review found no clear overall benefit or harm from chest physiotherapy. Some individual chest physiotherapy techniques were more beneficial than others in resolving atelectasis and maintaining oxygenation. These results do not support one technique over another. Due to the limited number, poor quality and age of trials in this review, there is not enough evidence to determine whether or not chest physiotherapy is beneficial or harmful in the treatment of infants being ventilated in today's intensive care units. Further good quality trials are needed to address this issue.

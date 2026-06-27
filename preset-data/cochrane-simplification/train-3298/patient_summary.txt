@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3298  |  gem_id: gem-cochrane-simplification-train-3299  |  doi: 10.1002/14651858.CD003295.pub3
-
-We searched the literature from 1966 to 2013 for relevant studies (randomised controlled trials only). We included five studies (involving 360 children and adults) that compared antibiotics given before the insertion of the CVC with no antibiotics before insertion. We found that giving an antibiotic before inserting a tunnelled CVC did not prevent Gram positive catheter-related infections. We included six studies (involving 468 people, mainly children) that tested flushing or locking the newly inserted CVC with a combination of an antibiotic and heparin compared with heparin only. We found that flushing the catheter with a solution containing an antibiotic and heparin reduced the number of catheter-related infections. This practice is most likely to be of value where the risk of such infections is high. We considered this evidence to be of a moderate quality.

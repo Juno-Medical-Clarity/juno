@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2542  |  gem_id: gem-cochrane-simplification-train-2543  |  doi: 10.1002/14651858.CD001340.pub2
-
-In this review, four randomized trials that compared the use of ECMO to the conventional approach to supporting these infants with severe breathing problems were identified. Overall, these trials showed a strong benefit for ECMO regarding survival at the time of hospital discharge. This is particularly true for infants without a specific problem of lung formation (congenital diaphragmatic hernia). The result implies that for every three babies with breathing problems and lung failure who were treated with ECMO rather than conventional ventilation, one more infant will survive. Although little information is available regarding long-term follow-up, one trial in the United Kingdom shows both benefits of ECMO and cost-effectiveness of the use of ECMO.

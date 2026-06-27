@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1814  |  gem_id: gem-cochrane-simplification-train-1815  |  doi: 10.1002/14651858.CD004472.pub3
-
-This review suggests the intra aortic balloon pump may be beneficial in terms of survival from the operation however there are many problems with the validity of the trials used in this review and a categorical answer to this question requires further randomised controlled trials.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0104  |  gem_id: gem-cochrane-simplification-validation-105  |  doi: 10.1002/14651858.CD002007.pub4
-
-We included eight trials with a total of 356 people. Six of these were published before 1988, were each based in a single centre and used a range of different drugs. These factors made it difficult to combine and analyse the results. We did not find any differences between the two therapies for lung function, symptom scores, side effects or bacteriological outcome measures. We conclude that there is not enough evidence to compare the different therapies. More research is needed, particularly looking at side effects of treatment. Six of the included trials were quite old (published between 1977 and 1988). They did not include many people and had flaws in the way the people taking part were put into the different treatment groups. Overall, the quality of the trials' design was poor.

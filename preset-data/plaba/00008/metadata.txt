@@ -1,5 +1,0 @@
-pmid:        33722257
-question:    1
-adaptation:  adaptation2
-title:       Effect of oral rehydration solution versus spring water intake during exercise in the heat on muscle cramp susceptibility of young men
-sentences:   16

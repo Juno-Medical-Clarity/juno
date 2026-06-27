@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0794
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-On April twenty two four we went over your list of medication and allergies. Okay. Let me check something. Sure.

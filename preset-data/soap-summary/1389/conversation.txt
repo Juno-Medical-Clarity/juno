@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1389
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Mister Sunil, your blood pressure is high, and I am noticing this from past two-three times you have been here. It's been constantly high, you are not taking it seriously. No, nothing like that Doctor! It's been well under control. I have been monitoring at home. Are you noting your readings? Did you bring it with you? No. I did not get the readings with me but I assure you I am taking care and my B P is normal. Well, it's up and I am little bothered by it.

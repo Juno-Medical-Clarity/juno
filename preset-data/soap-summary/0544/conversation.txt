@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0544
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello. Looks like you're having surgery today. Yeah, I am. I forgot what the surgery was, but it says it in my report. I'm looking at it right now. Looks like you had a PermCath inserted three times and received peritoneal dialysis

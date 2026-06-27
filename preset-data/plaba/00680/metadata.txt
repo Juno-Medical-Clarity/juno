@@ -1,5 +1,0 @@
-pmid:        12713453
-question:    53
-adaptation:  adaptation1
-title:       Increased intestinal permeability as a cause of fluctuating postprandial blood glucose levels in Type 1 diabetic patients
-sentences:   8

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1296
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What happens when you take Sulfa drugs? Oh man, I get a really ugly looking rash. I'll make note of that so we have it in your chart.

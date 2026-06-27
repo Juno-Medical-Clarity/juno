@@ -1,5 +1,0 @@
-pmid:        23394227
-question:    69
-adaptation:  adaptation3
-title:       Postpartum depression: current status and future directions
-sentences:   10

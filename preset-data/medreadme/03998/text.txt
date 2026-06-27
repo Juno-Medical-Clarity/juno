@@ -1,1 +1,0 @@
-TrakEM2 enables us to embed the analysis of the TEM image volumes at the microcircuit level into a light microscopically derived neuro-anatomical framework, by registering confocal stacks containing sparsely labeled neural structures with the TEM image volume.

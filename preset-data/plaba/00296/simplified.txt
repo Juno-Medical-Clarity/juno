@@ -1,5 +1,0 @@
-Phenylketonuria (PKU) is a model of a disorder controlled by a single gene in which the body cannot properly turn some food into energy. However, scientists didn't consider transferring genetic material into a PKU patient's cells due to other working treatments.
-However, unexpected mental function improvements after long-term treatment of adults with PKU by substituting a substance that is lacking in the PKU patient's body might change this belief.
-In the same way, PKU was thought to be a great test for trying to transfer genetic material into a patient's cells to help a liver disorder inherited from both parents due to a great mouse model and measurable blood levels of l-phenylalanine (a substance transformed by the missing protein in PKU).
-Lifelong treatment by focusing on the mouse liver (or skeletal muscle) was done using three different approaches.
-In this paper, we summarize future impacts for transferring genetic material into a patient's cells.

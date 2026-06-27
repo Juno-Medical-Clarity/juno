@@ -1,5 +1,0 @@
-pmid:        34135856
-question:    64
-adaptation:  adaptation2
-title:       CACNA1A-Linked Hemiplegic Migraine in GLUT 1 Deficiency Syndrome: A Case Report
-sentences:   13

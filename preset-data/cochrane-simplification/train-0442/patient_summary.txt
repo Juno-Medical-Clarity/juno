@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0442  |  gem_id: gem-cochrane-simplification-train-443  |  doi: 10.1002/14651858.CD004206.pub2
-
-We reviewed five studies conducted to assess the effects of antiviral agents (medications that reduce the spread of virus in the body) on mortality and long-term complications of herpes disease in the newborn. Antiviral agents were shown to reduce mortality from the condition, but the reduction was not statistically significant due to the small number of infants in the study. There was insufficient trial data to guide caregivers regarding the duration of antiviral therapy or dose.

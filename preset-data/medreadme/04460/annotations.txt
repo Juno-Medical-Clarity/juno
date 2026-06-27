@@ -1,9 +1,0 @@
-source:      pnas
-side:        complex
-readability: 5.65
-split:       test
-
-jargon_spans:
-  [12:16] 'medical-jargon-google-hard' -> 'SWI / SNF ATPase'
-  [17:18] 'medical-jargon-google-hard' -> 'SMARCA4'
-  [22:24] 'medical-jargon-google-hard' -> 'EZH2 inhibition'

@@ -1,1 +1,0 @@
-For example , NURSE is recognized more quickly following DOCTOR than following BREAD .

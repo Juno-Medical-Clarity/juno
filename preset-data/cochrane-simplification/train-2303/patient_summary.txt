@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2303  |  gem_id: gem-cochrane-simplification-train-2304  |  doi: 10.1002/14651858.CD011493.pub2
-
-We searched medical databases for clinical studies comparing different strategies regarding the frequency of endotracheal tube suction in newborn babies on ventilators. We found only one study recruiting 97 newborns with bodyweights under 2.5 kg (these are called low birthweight infants). Suctioning was performed every six or 12 hours during the first three days of life. There were no important differences on the time the babies were on the ventilator, occurrence of pneumothorax (collapsed lung), need for ventilation or oxygen at more than 30 days, bleeding in the brain, and death in the first month of life. In addition, the study reported no side effects. We only identified one study, which was conducted in 1987 and 1988 and had several shortcomings. We cannot advise health professionals and parents about the optimal frequency of suctioning when newborns are ventilated.

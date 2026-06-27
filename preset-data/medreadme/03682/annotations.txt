@@ -1,7 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        complex
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [1:2] 'general-complex' -> 'cross-sectional'

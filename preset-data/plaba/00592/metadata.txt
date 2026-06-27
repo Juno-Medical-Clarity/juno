@@ -1,5 +1,0 @@
-pmid:        34414933
-question:    45
-adaptation:  adaptation1
-title:       Effect of Ma Yinglong Shexiang hemorrhoids cream combined with pearl powder on the pain and complications of severe pressure ulcer patients
-sentences:   9

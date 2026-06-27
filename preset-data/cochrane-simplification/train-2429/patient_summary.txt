@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2429  |  gem_id: gem-cochrane-simplification-train-2430  |  doi: 10.1002/14651858.CD006343.pub2
-
-Pooling the data from the few studies that were available suggest kidney damage was less likely with a lipid preparation of amphotericin B compared with conventional amphotericin B. It is reasonable to recommend a lipid preparation of amphotericin B, if cost permits. No significant differences have been observed in children when other antifungal agents have been compared. More studies in children evaluating available antifungal are required to further clarify any benefits with regard to the risk of dying, prospects of complete recovery and drug toxicities.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0253  |  gem_id: gem-cochrane-simplification-validation-254  |  doi: 10.1002/14651858.CD000459.pub3
-
-The review includes 13 trials with a total of 711 people with schizophrenia and other psychiatric diagnoses. Due to the poor quality, small size, and limited data from the 13 studies, there is limited evidence. It is not known if strategies such as dose reduction, ‘drug holidays’, and stopping medication are helpful in the treatment of tardive dyskinesia. There is limited evidence on specific antipsychotic drugs in the treatment of tardive dyskinesia. Evidence is poor, small scale, and of short duration. There is a need for larger trials of a longer duration in order to fully investigate this area. This plain language summary was adapted by the review authors from a summary originally written by Ben Gray, Senior Peer Researcher, McPin Foundation (http://mcpin.org/).

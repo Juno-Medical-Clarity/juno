@@ -1,7 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [5:8] 'medical-jargon-google-easy' -> 'mTORC1 and 2'

@@ -1,5 +1,0 @@
-pmid:        31011455
-question:    56
-adaptation:  adaptation2
-title:       Pallister-Hall Syndrome Presenting in Adolescence
-sentences:   10

@@ -1,5 +1,0 @@
-Doctor: Are you allright?
-Patient: Yes I am fine.
-Doctor: That's great.
-Patient: Thanks.
-Doctor: I think you can go home now.

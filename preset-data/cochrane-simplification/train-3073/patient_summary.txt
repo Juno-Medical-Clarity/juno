@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3073  |  gem_id: gem-cochrane-simplification-train-3074  |  doi: 10.1002/14651858.CD003954.pub2
-
-The review authors searched the medical literature and identified two randomised controlled trials with a total of 134 hospitalized neonates and older children who had tetanus from Nigeria (19 neonates, seven children aged between one month and 10 years of age) and Indonesia (74 neonates, 34 children aged between three days and 12 years). All drugs were given orally as medications and feeds are usually given via nasogastric tube in the settings where the disease burden is high. Neither study provided information on the safety of the interventions or followed up survivors beyond discharge from hospital.

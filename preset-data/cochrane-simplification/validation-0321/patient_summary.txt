@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0321  |  gem_id: gem-cochrane-simplification-validation-322  |  doi: 10.1002/14651858.CD006316.pub3
-
-In this review, our search for randomised control trials that examined the effectiveness of pneumococcal vaccines for people with bronchiectasis revealed one randomised and one quasi-controlled trial. We conclude that, albeit the limitations of the review, adults and children (when age appropriate) with bronchiectasis should be vaccinated with the 23-valent polysaccharide pneumococcal vaccine as suggested in many national guidelines. Due to absence of data on how often the vaccine should be given, we recommend that national guidelines be followed until further evidence is available.

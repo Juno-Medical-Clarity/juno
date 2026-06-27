@@ -1,5 +1,0 @@
-Doctor: How're you feeling today?
-Patient: Much better. The antibiotics seemed to really help.
-Doctor: Are you still experiencing any symptoms?
-Patient: Um no, thankfully. I had some wheezing when I first started the antibiotics, but it's improved a ton. I don't think the wheeze is even there anymore.
-Doctor: Good, good.

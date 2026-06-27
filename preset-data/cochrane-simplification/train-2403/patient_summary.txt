@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2403  |  gem_id: gem-cochrane-simplification-train-2404  |  doi: 10.1002/14651858.CD006568.pub3
-
-The two small studies in this review suggest that Chinese herbal medicine (CHM) may be as effective as gestrinone and may be more effective than danazol in relieving endometriosis-related pain, with fewer side effects than experienced with conventional treatment. However, the two trials included in this review were small and of limited quality so these findings must be interpreted cautiously. Better quality randomised controlled trials are needed to investigate a possible role for CHM in the treatment of endometriosis.

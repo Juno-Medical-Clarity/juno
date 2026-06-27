@@ -1,6 +1,0 @@
-Background: Coronavirus disease (COVID-19) has affected more than 100 countries worldwide and the discharge criteria of patients with COVID-19 vary across different countries.
-In China, patients with two negative respiratory viral RNA tests taken at least one day apart can be discharged with no further quarantine required.
-Currently, PCR testing of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) in fecal sample is not routinely performed.
-Methods: We present a patient with COVID-19, whose respiratory swabs became negative but fecal sample remained positive for SARS-CoV-2 RNA.
-Results: Stool sample collected on 27th of February was still positive for SARS-CoV-2 RNA, 24 days after the first negative respiratory swab.
-Conclusions: Based on the experience from the 2003 SARS epidemic, we recommend that fecal RNA testing of SARS-CoV-2 should be incorporated into the discharge criteria to minimize the risk of transmission from the gastrointestinal tract.

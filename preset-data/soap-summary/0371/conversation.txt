@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0371
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you tell me about any cancers in your family? Yes, my sister has ovarian cancer, and my father has liver cancer. Oh I am so sorry. That is okay. Any heart conditions? My mom and dad both have heart disease. My dad has diabetes too.

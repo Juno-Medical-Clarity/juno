@@ -1,5 +1,0 @@
-pmid:        27586538
-question:    49
-adaptation:  adaptation1
-title:       Leg edema with (S)-amlodipine vs conventional amlodipine given in triple therapy for hypertension: a randomized double blind controlled clinical trial
-sentences:   19

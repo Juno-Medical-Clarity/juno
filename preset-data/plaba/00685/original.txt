@@ -1,9 +1,0 @@
-Time-restricted feeding (TRF) is a form of intermittent fasting that involves having a longer daily fasting period.
-Preliminary studies report that TRF improves cardiometabolic health in rodents and humans.
-Here, we performed the first study to determine how TRF affects gene expression, circulating hormones, and diurnal patterns in cardiometabolic risk factors in humans.
-Eleven overweight adults participated in a 4-day randomized crossover study where they ate between 8 am and 2 pm (early TRF (eTRF)) and between 8 am and 8 pm (control schedule).
-Participants underwent continuous glucose monitoring, and blood was drawn to assess cardiometabolic risk factors, hormones, and gene expression in whole blood cells.
-Relative to the control schedule, eTRF decreased mean 24-hour glucose levels by 4 ± 1 mg/dl (p = 0.0003) and glycemic excursions by 12 ± 3 mg/dl (p = 0.001).
-In the morning before breakfast, eTRF increased ketones, cholesterol, and the expression of the stress response and aging gene SIRT1 and the autophagy gene LC3A (all p < 0.04), while in the evening, it tended to increase brain-derived neurotropic factor (BNDF; p = 0.10) and also increased the expression of MTOR (p = 0.007), a major nutrient-sensing protein that regulates cell growth.
-eTRF also altered the diurnal patterns in cortisol and the expression of several circadian clock genes (p < 0.05).
-eTRF improves 24-hour glucose levels, alters lipid metabolism and circadian clock gene expression, and may also increase autophagy and have anti-aging effects in humans.

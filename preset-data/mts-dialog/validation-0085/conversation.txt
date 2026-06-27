@@ -1,2 +1,0 @@
-Doctor: Do you know about any medical problems running in your family?
-Patient: No, I don't know anything. I was never close to my family.

@@ -1,2 +1,0 @@
-[ROS]
-CARDIOVASCULAR: Negative chest pain, negative dyspnea on exertion, negative palpations, negative edema.  No history of heart attack, no history of arrhythmias, no history of hypertension.

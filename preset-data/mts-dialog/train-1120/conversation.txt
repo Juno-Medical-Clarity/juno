@@ -1,7 +1,0 @@
-Doctor: Have you had ever had surgery?
-Patient: Yeah, I had my gallbladder removed a few years ago.
-Doctor: Thank you, what about any other parts of the body, like your eyes, ears, or nose?
-Patient: Oh yeah, I forgot. I had eye surgery too.
-Doctor: Thank you, think hard, any other surgeries you can remember?
-Patient: Let me look at my notes, um, it looks like I had a dilation and curettage done some time back, too.
-Doctor: I see. Thank you for sharing that with me.

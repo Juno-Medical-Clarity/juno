@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3055  |  gem_id: gem-cochrane-simplification-train-3056  |  doi: 10.1002/14651858.CD008025.pub2
-
-The three studies included in our review provide very limited evidence of the effectiveness of methadone for chronic non-cancer pain. We were unable to combine results statistically, and there were too few participants in each study to be confident in their results. No conclusions can be made regarding differences in effectiveness or side effects between methadone and placebo, other opioids, or other treatments.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2960  |  gem_id: gem-cochrane-simplification-train-2961  |  doi: 10.1002/14651858.CD007368.pub2
-
-The review authors found four randomised control trials of adequate quality evaluating the impact of zinc supplementation as an adjunct to antibiotics for pneumonia in children. These studies were conducted in Bangladesh, Nepal and India, in which 3267 children aged two to 35 months were randomly assigned to receive zinc or placebo. No serious adverse events were observed. Analysis did not show any significant effect on the clinical recovery of patients in terms of time-to-recovery from tachypnoea (respiratory rate > 50 breaths per minute) and time-to-recovery from chest indrawing. It also showed non-significant effects of the intervention on the time-to-hospital discharge. Evidence provided in this review is insufficient to recommend use of zinc as an adjunct to standard antibiotic therapy for pneumonia in children aged two to 35 months.

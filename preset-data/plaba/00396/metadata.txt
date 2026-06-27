@@ -1,5 +1,0 @@
-pmid:        29795977
-question:    31
-adaptation:  adaptation1
-title:       Treatment of tardive dyskinesia with VMAT-2 inhibitors: a systematic review and meta-analysis of randomized controlled trials
-sentences:   12

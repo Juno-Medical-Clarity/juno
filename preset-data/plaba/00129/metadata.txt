@@ -1,5 +1,0 @@
-pmid:        18206410
-question:    11
-adaptation:  adaptation1
-title:       A combined therapeutic approach for pyruvate dehydrogenase deficiency using self-complementary adeno-associated virus serotype-specific vectors and dichloroacetate
-sentences:   11

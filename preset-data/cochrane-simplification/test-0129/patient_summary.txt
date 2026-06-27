@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0129  |  gem_id: gem-cochrane-simplification-test-130  |  doi: 10.1002/14651858.CD007030.pub3
-
-The evidence is current to May 2014. We found 12 randomised controlled trials (clinical studies where people are randomly put into one of two or more treatment groups) with 703 people with stroke. Of these 12 trials, eight trials recruited only people with fatigue and were primarily intended to treat fatigue, no trial was primarily intended to prevent fatigue and the other four trials were not primarily intended to treat or prevent fatigue but reported fatigue as an outcome. There was insufficient evidence to support the use of any intervention to treat or prevent fatigue in people with stroke. The general study quality was low. The available data were limited as each identified intervention was only investigated in a single trial. In addition, some trials were small and used poor study designs. Therefore, further trials of better quality are needed.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0809
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any known medical history in the family? Nope. How about anyone with high blood pressure or heart disease or diabetes in the family? Nope.

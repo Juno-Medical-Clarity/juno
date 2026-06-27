@@ -1,1 +1,0 @@
-We performed a genome-wide association study in 7, 691 Framingham Heart Study participants to identify single-nucleotide polymorphisms (SNPs) associated with the FEV1 / FVC ratio, analyzed as a percent of the predicted value.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0348
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you tell me something about your mom and dad? Like any diseases they have had? Sure, my dad died of heart attack when he was sixty five and my mom died of stroke when she was seventy. How's about siblings, miss? Any health issues? No, my brother is healthy.

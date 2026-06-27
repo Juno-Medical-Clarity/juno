@@ -1,7 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 3.8
-split:       dev
-
-jargon_spans:
-  [0:1] 'abbr-medical' -> 'HeLP'

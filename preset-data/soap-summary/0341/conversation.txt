@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0341
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I am looking at the list of your medication. Okay. All I can see is Risperdal and Invega. I think that is correct. Are you not taking anything else? Yes, I take some multivitamins, but do I need to mention it? Yes, you should. We need to know everything. Okay.

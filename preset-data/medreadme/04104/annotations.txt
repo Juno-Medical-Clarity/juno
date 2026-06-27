@@ -1,8 +1,0 @@
-source:      wiki
-side:        complex
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [2:3] 'medical-jargon-google-easy' -> 'embryo'
-  [6:7] 'medical-jargon-google-easy' -> 'cartilage'

@@ -1,5 +1,0 @@
-pmid:        21411550
-question:    53
-adaptation:  adaptation1
-title:       Continuous monitoring of circadian glycemic patterns in patients receiving prednisolone for COPD
-sentences:   11

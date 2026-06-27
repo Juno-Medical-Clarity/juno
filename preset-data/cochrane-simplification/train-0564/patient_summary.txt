@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0564  |  gem_id: gem-cochrane-simplification-train-565  |  doi: 10.1002/14651858.CD003269.pub2
-
-This review found that although this treatment was better than placebo, the size of the effect was rather small. When the drug was used in combination with more widely used bronchodilators (beta-agonists such as fenoterol), it did not appear to add much benefit. However, there are concerns about the quality of the studies that have been analysed. It could be that there are some adults with chronic asthma who respond to treatment with anticholinergic drugs, but the review has not been able to identify their common characteristics.

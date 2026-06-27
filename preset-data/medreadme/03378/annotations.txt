@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [5:6] 'general-complex' -> 'heterogeneous'
-  [11:14] 'general-complex' -> 'meta - analysed'

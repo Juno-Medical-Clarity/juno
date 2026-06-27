@@ -1,5 +1,0 @@
-pmid:        19640342
-question:    18
-adaptation:  adaptation1
-title:       The controversy continues: nutritional management of the pregnancy complicated by diabetes
-sentences:   5

@@ -1,9 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [8:10] 'general-complex' -> 'focus groups'
-  [34:38] 'general-complex' -> 'cluster randomised controlled trial'
-  [39:40] 'abbr-general' -> 'RCT'

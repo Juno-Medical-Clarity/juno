@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1910  |  gem_id: gem-cochrane-simplification-train-1911  |  doi: 10.1002/14651858.CD004078.pub2
-
-This systematic review and meta-analysis, which is the first in this field, shows a significant beneficial effect on both overall (OS) and disease-free survival (DFS) for patients undergoing postoperative chemotherapy after removal of their primary rectal tumour. Further investigation is needed to define the role of postoperative chemotherapy in the multimodal treatment of patients with rectal carcinoma: for instance, modern anti-cancer agents (including so called "smart drugs") and integration with neoadjuvant therapy (such as preoperative chemoradiation) should be taken into consideration in order to improve the encouraging findings of this meta-analysis.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1050  |  gem_id: gem-cochrane-simplification-train-1051  |  doi: 10.1002/14651858.CD009454.pub2
-
-We included five studies. These studies reported the effect of adding whole brain radiation to surgery or radiosurgery in terms of survival, brain disease progression, quality of life and treatment side effects. The sample size of these studies ranged from 19 to 359 patients. Adding whole brain radiotherapy to surgery or radiosurgery reduces brain metastases progression rates substantially but there was no clear evidence of an effect on survival and it is unclear whether it may cause side effects such as memory loss. We considered the evidence on survival, intracranial disease progression, neurocognitive function, quality of life and treatment side effects to be of low quality.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1342  |  gem_id: gem-cochrane-simplification-train-1343  |  doi: 10.1002/14651858.CD007043.pub2
-
-We reviewed studies that compared these two highly effective methods and found the IUD to be better at preventing pregnancy than depot medroxyprogesterone acetate (DMPA). Relevant to HIV positive women are the results of one small trial that found that women using the IUD for contraception where less likely to experience a worsening of their HIV disease than those using hormonal contraception. A large, high quality study is urgently needed to shed light on these findings.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2004  |  gem_id: gem-cochrane-simplification-train-2005  |  doi: 10.1002/14651858.CD004110
-
-This review examines the effectiveness of speech and language therapy interventions for children with primary speech and language delay/disorder.The review concludes that whilst there may be some support for the effectiveness of speech and language therapy for children with expressive phonological and expressive vocabulary difficulties, the evidence concerning the effectiveness of interventions for expressive syntax is mixed, and no evidence is available concerning interventions for children with receptive language difficulties.

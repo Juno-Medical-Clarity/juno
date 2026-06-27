@@ -1,5 +1,0 @@
-pmid:        32146646
-question:    66
-adaptation:  adaptation2
-title:       Incidence of remission and relapse of proteinuria, end-stage kidney disease, mortality, and major outcomes in primary nephrotic syndrome: the Japan Nephrotic Syndrome Cohort Study (JNSCS)
-sentences:   11

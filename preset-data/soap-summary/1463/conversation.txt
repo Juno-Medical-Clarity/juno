@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1463
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you ever had an allergic reaction to drugs you've taken in the past? More than once. I've reacted poorly to sulfa drugs, penicillin, and some mycins. I also think I'm allergic to contrast medium.

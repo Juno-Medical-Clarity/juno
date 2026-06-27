@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0027  |  gem_id: gem-cochrane-simplification-validation-28  |  doi: 10.1002/14651858.CD008934.pub2
-
-Many topical treatments (applied directly to the inside of the mouth) such as sprays, lozenges, mouthrinses, gels, oils, chewing gum or toothpastes have been evaluated in this review, but there is no strong evidence that any topical treatment is effective for relieving the sensation of dry mouth. Oxygenated glycerol triester (OGT) saliva substitute spray is more effective than a water based electrolyte spray. A gel-releasing device worn in the mouth, or a mouthcare system might be effective but more research is needed. Chewing gum increases saliva production but there is no evidence that gum is better or worse than saliva substitutes. Acidic products and those containing sugar should be avoided.

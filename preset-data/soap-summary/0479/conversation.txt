@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0479
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke, sir? No. Do you drink? Sometimes I take a beer or two. Are you married? For last ten years. What do you do for living? I install floor. I am associated with a construction company and my main work is flooring installation.

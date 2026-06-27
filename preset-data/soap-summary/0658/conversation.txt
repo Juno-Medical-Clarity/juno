@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0658
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, young man. Hello, doctor. How old are you, young man? I'm thirteen, sir. Thank you, so, what happened? I sliced my right ring finger with a piece of glass while I was playing around with my friends. You need to be more careful, young man. What kind of symptoms do you feel in that finger? You're right. I have a lot of, um, numbness and tingling in it.

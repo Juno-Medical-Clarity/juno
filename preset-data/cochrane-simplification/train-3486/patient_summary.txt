@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3486  |  gem_id: gem-cochrane-simplification-train-3487  |  doi: 10.1002/14651858.CD001753.pub3
-
-We searched for studies which compared different vaccines or compared vaccination to placebo. We were able to include four studies with 179 people in the review. Most (143) were under 16 years old. No study compared one vaccine to placebo. There were a high number of drop outs in two of the studies. Vaccination does result in an immune system response to the types of influenza used in the vaccine. However, this response may not result in protection against influenza infection or lung damage. There were a high number of adverse events, but none were serious or persistent. There is no evidence to show if regular influenza vaccine benefits people with cystic fibrosis.

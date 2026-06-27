@@ -1,5 +1,0 @@
-pmid:        34486178
-question:    41
-adaptation:  adaptation1
-title:       Polycystin-1 dependent regulation of polycystin-2 via GRP94, a member of HSP90 family that resides in the endoplasmic reticulum
-sentences:   10

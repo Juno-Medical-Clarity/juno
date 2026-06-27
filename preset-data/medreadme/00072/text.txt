@@ -1,1 +1,0 @@
-To test for such paralog responsiveness in the yeast Saccharomyces cerevisiae, we systematically measured changes in single-cell protein levels for approximately 200 duplicate genes in the presence or absence of their paralogs.

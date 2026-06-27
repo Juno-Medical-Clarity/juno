@@ -1,8 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [0:3] 'medical-jargon-google-easy' -> 'Neglected tropical diseases'
-  [4:5] 'abbr-medical' -> 'NTDs'

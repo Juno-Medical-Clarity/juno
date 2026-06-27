@@ -1,9 +1,0 @@
-Doctor: Hi there, so you are here for your follow up?
-Patient: Yes, I had a surgical removal of multiple abscesses on my right thigh.
-Doctor: Okay, let me quickly check your discharge sheet.
-Patient: Sure.
-Doctor: It says you had multiple extensive subcutaneous abscesses on your right thigh and there was a massive open wound as well.
-Patient: Yes, that sounds about right!
-Doctor: Okay, and then they did multiple abscesses excisions on your thigh.
-Patient: Yes, on my right thigh.
-Doctor: Okay.

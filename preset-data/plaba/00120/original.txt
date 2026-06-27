@@ -1,7 +1,0 @@
-Background: Hand osteoarthritis (OA) is a prevalent joint disease that may lead to pain, stiffness and problems in performing hand-related activities of daily living.
-Currently, no cure for OA is known, and non-pharmacological modalities are recommended as first-line care.
-A positive effect of exercise in hip and knee OA has been documented, but the effect of exercise on hand OA remains uncertain.
-Authors' conclusions: When we pooled results from five studies, we found low-quality evidence showing small beneficial effects of exercise on hand pain, function and finger joint stiffness.
-Estimated effect sizes were small, and whether they represent a clinically important change may be debated.
-One study reported quality of life, and the effect is uncertain.
-Three studies reported on adverse events, which were very few and were not severe.

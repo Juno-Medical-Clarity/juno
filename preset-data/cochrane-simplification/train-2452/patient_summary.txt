@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2452  |  gem_id: gem-cochrane-simplification-train-2453  |  doi: 10.1002/14651858.CD003198
-
-Until then, the reviewers propose that the use of antidepressants which have no known life threatening side effects remain more attractive. The review sets out the required methodology for effectively studying these substances in proper controlled studies.

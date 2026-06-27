@@ -1,3 +1,0 @@
-Doctor: She has a rare case of thrombocytopenia. I'd like her to come in for a consult.
-Guest_clinician: Any other medical history?
-Doctor: No, just the thrombocytopenia.

@@ -1,7 +1,0 @@
-Background/aims: The CFTR-Associated Ligand (CAL), a PDZ domain containing protein with two coiled-coil domains, reduces cell surface WT CFTR through degradation in the lysosome by a well-characterized mechanism.
-However, CAL's regulatory effect on ΔF508 CFTR has remained almost entirely uninvestigated.
-Methods: In this study, we describe a previously unknown pathway for CAL by which it regulates the membrane expression of ΔF508 CFTR through arrest of ΔF508 CFTR trafficking in the endoplasmic reticulum (ER) using a combination of cell biology, biochemistry and electrophysiology.
-Results: We demonstrate that CAL is an ER localized protein that binds to ΔF508 CFTR and is degraded in the 26S proteasome.
-When CAL is inhibited, ΔF508 CFTR retention in the ER decreases and cell surface expression of mature functional ΔF508 CFTR is observed alongside of enhanced expression of plasma membrane scaffolding protein NHERF1.
-Chaperone proteins regulate this novel process, and ΔF508 CFTR binding to HSP40, HSP90, HSP70, VCP, and Aha1 changes to improve ΔF508 CFTR cell surface trafficking.
-Conclusion: Our results reveal a pathway in which CAL regulates the cell surface availability and intracellular retention of ΔF508 CFTR.

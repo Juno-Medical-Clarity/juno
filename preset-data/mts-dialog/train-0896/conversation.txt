@@ -1,6 +1,0 @@
-Doctor: Do you have any support system?
-Patient: No, I am single.
-Doctor: Okay so live alone at home?
-Patient: Yes.
-Doctor: Do you smoke or drink?
-Patient: Nope I do not.

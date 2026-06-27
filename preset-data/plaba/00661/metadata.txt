@@ -1,5 +1,0 @@
-pmid:        1541379
-question:    51
-adaptation:  adaptation1
-title:       Loss of regular oscillatory insulin secretion in islet cell antibody positive non-diabetic subjects
-sentences:   7

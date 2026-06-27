@@ -1,1 +1,0 @@
-Plasmode is a term used to describe a data set that has been derived from real data but for which some truth is known.

@@ -1,1 +1,0 @@
-The degree of blurring depends on the location and extent of the opacity.

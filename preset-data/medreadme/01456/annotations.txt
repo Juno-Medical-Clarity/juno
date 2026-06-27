@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [8:9] 'medical-jargon-google-easy' -> 'oestrogens'
-  [14:17] 'medical-jargon-google-easy' -> 'hormone replacement therapy'
-  [18:19] 'medical-jargon-google-easy' -> 'HRT'

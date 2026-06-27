@@ -1,8 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        complex
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [11:19] 'medical-jargon-google-easy' -> 'Patient Reporting and Action for a Safe Environment'
-  [20:21] 'abbr-medical' -> 'PRASE'

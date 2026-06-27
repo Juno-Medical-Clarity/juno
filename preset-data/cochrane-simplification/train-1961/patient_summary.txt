@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1961  |  gem_id: gem-cochrane-simplification-train-1962  |  doi: 10.1002/14651858.CD003927.pub3
-
-Oral betamimetics for maintenance therapy after threatened preterm labour do not prevent preterm labour. This conclusion is based on 13 randomised controlled trials with a total of 1551 women. In this review, the betamimetics ritodrine and terbutaline did not reduce the rate of preterm birth (eight trials), or prevent problems with babies that required admission to the neonatal intensive care unit (two trials), when compared with placebo, no treatment or other tocolytic drugs. Betamimetics may cause pregnant women to have an increased heart rate (palpitations) and rate of breathing, low blood pressure, nausea and vomiting, and high blood sugar concentrations as side effects.

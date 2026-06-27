@@ -1,8 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 5.15
-split:       test
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'autophagy'
-  [3:4] 'abbr-medical' -> 'ttis450'

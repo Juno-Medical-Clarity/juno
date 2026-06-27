@@ -1,5 +1,0 @@
-pmid:        31985942
-question:    43
-adaptation:  adaptation1
-title:       Pacemaker Malfunction
-sentences:   12

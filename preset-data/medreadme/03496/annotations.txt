@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 3.3
-split:       test
-
-jargon_spans:
-  [7:13] 'medical-name-entity' -> 'UK NHS / Personal Social Services'
-  [18:24] 'medical-jargon-google-easy' -> 'quality - adjusted life - years'

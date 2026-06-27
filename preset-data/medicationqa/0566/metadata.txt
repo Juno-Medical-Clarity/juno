@@ -1,5 +1,0 @@
-drug_focus: antibiotics
-question_type: Action
-section_title: New insights into how antibiotics damage human cells suggest novel strategies for making long-term antibiotic use safer
-source_url: https://www.sciencedaily.com/releases/2013/07/130703160623.htm
-sample_id: 0566

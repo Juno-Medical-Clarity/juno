@@ -1,8 +1,0 @@
-Background: Clinical practice guidelines recommend use of fracture risk scores for screening and pharmacologic treatment decisions.
-The timing of occurrence of treatment-level (according to 2014 National Osteoporosis Foundation guidelines) or screening-level (according to 2011 US Preventive Services Task Force guidelines) fracture risk scores has not been estimated in postmenopausal women.
-Methods: We conducted a retrospective competing risk analysis of new occurrence of treatment-level and screening-level fracture risk scores in postmenopausal women aged 50 years and older, prior to receipt of pharmacologic treatment and prior to first hip or clinical vertebral fracture.
-Results: In 54,280 postmenopausal women aged 50 to 64 years without a bone mineral density test, the time for 10% to develop a treatment-level FRAX score could not be estimated accurately because of rare incidence of treatment-level scores.
-In 6096 women who had FRAX scores calculated with bone mineral density, the estimated unadjusted time to treatment-level FRAX ranged from 7.6 years (95% confidence interval [CI], 6.6-8.7) for those aged 65 to 69, to 5.1 years (95% CI, 3.5-7.5) for those aged 75 to 79 at baseline.
-Of 17,967 women aged 50 to 64 with a screening-level FRAX at baseline, 100 (0.6%) experienced a hip or clinical vertebral fracture by age 65 years.
-Conclusions: Postmenopausal women with sub-threshold fracture risk scores at baseline were unlikely to develop a treatment-level FRAX score between ages 50 and 64 years.
-After age 65, the increased incidence of treatment-level fracture risk scores, osteoporosis, and major osteoporotic fracture supports more frequent consideration of FRAX and bone mineral density testing.

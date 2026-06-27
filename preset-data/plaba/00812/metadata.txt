@@ -1,5 +1,0 @@
-pmid:        30518052
-question:    65
-adaptation:  adaptation2
-title:       Maternal Pre-Pregnancy Obesity Attenuates Response to Omega-3 Fatty Acids Supplementation During Pregnancy
-sentences:   10

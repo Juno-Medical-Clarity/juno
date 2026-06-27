@@ -1,5 +1,0 @@
-drug_focus: pregabalin
-question_type: Stopping/tapering
-section_title: DOSAGE & ADMINISTRATION SECTION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54e6d137-a495-4b87-b3c2-2f5a0226dd3e&audience=consumer
-sample_id: 0581

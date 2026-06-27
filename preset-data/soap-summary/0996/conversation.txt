@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0996
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any family history of chronic illnesses that I should know about? What do you mean by that? Well, it could be anything from depression, to arthritis, to cancer. Oh yeah, my mom has arthritis.

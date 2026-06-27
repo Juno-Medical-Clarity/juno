@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2729  |  gem_id: gem-cochrane-simplification-train-2730  |  doi: 10.1002/14651858.CD007669.pub2
-
-This review looked at two strategies - steroid avoidance and steroid withdrawal - to investigate their impact on short- and long-term outcomes. These strategies could be used in adults in the first few days after transplantation when used in combination with more powerful immunosuppressive agents. Twenty-one studies were identified and evaluated in this review although only three RCTs enrolling 144 participants met our inclusion criteria. Steroid avoidance and steroid withdrawal strategies in pancreas and pancreas with kidney transplantation were not apparently associated with increased mortality, graft loss or acute rejection, although more studies are needed.

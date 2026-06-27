@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2154  |  gem_id: gem-cochrane-simplification-train-2155  |  doi: 10.1002/14651858.CD001705.pub2
-
-This review examines the effects of different surgical techniques. It found insufficient evidence from randomised trials to assess the effects of compression or of impaction of the fracture during surgery. It found limited evidence that open reduction (surgically exposed) as compared with closed reduction (under X-ray control) resulted in a greater length of surgery. The lack of evidence showing benefit of open reduction supports the use of closed reduction of these fractures.

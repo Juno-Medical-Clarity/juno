@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0937
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any allergies? No I do not. Are you sure? Yes I am.

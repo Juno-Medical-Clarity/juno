@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0451  |  gem_id: gem-cochrane-simplification-test-452  |  doi: 10.1002/14651858.CD006947.pub3
-
-The aim of this review was to compare the effectiveness of IT compared with ET. We included three randomised controlled studies (1945 women). The methodological quality of the studies was considered to be moderate. When comparing internal registration of contractions with external registration of contractions during induced or augmented labour, there were no differences in any of the outcomes for mother or child: adverse neonatal outcomes, instrumental deliveries, caesarean section, use of analgesia or time to delivery. No increased risk for infection was reported when an intrauterine catheter was used in these studies. There is insufficient evidence to recommend the use of one form of tocodynamometry over another for women where intravenous oxytocin is administered for induction or augmentation of labour.

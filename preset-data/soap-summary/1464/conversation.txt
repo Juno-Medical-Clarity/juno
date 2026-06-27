@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1464
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hey, do you smoke cigarettes? Yes I do smoke. Do you? Nope. Are you planning on quitting? No, I just smoke one pack per day, it's not bad. Oh my God. No. It is bad. You should think about quitting. Okay I will think about it. Where do you work? I work at local christmas tree farm.

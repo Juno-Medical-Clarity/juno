@@ -1,9 +1,0 @@
-Sickle Cell Disease (SCD) was the first human genetic disorder caused by a mutation in a single gene to be described at the chemical level.
-SCD occurs when a mutation of the Beta-hemoglobin gene causes the amino acid, glutamic acid, to be replaced by valine in the beta chain of the hemoglobin protein.
-The signs and symptoms in SCD occur because these sickle hemoglobin (HbS) proteins tend to join together where oxygen levels are lower in the body. This causes the red blood cells to change into the typical abnormal rigid sickle cell shape.
-These rigid red blood cells cannot pass through the smallest blood vessels well.This causes the vessels to be blocked, resulting in tissue damage and pain.These sickle red blood cells are also destroyed, which causes anemia.
-Patients with the same genetic defect in SCD can have many different outcomes, ranging from death in early childhood to a normal life span with few problems.
-Alpha-Thalassemia is a genetic disease that can change the outcome of patients with SCD. Also, patients with increased levels of another type of hemoglobin protein, fetal hemoglobin (HbF), tend to have a milder disease. The presence of fetal hemoglobin decreases the tendency of the sickle hemoglobin to join together in the red blood cells.
-Increased levels of HbF may be due to other mutations in various hemoglobin genes.
-Identifying these mutations in the hemoglobin genes has been very difficult.  But researchers have been able to identify two areas on the genes that have major influences on fetal hemoglobin (HbF) levels in adults.
-A large part of the different HbF levels and number of painful crises in Sickle Cell Disease patients is due to five common mutations in the hemoglobin gene.

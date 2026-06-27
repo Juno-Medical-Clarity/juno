@@ -1,9 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'AEPs'
-  [9:11] 'medical-jargon-google-easy' -> 'cyclic peptides'
-  [13:14] 'medical-jargon-google-hard' -> 'macrocyclization'

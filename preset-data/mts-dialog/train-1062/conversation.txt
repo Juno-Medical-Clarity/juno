@@ -1,2 +1,0 @@
-Doctor: Do you have a family history of any medical conditions, such as diabetes or heart disease?
-Patient: No, nothing.

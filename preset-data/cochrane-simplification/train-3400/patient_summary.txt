@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3400  |  gem_id: gem-cochrane-simplification-train-3401  |  doi: 10.1002/14651858.CD000164.pub2
-
-Nine trials involving 1752 women were included in the review. The trials with low risk of bias found that phenobarbital given to women immediately prior to a very preterm birth did not decrease the risk of bleeding in the brains of the babies. No differences in child development were found on follow up at 18 to 24 months or at seven years. Maternal sedation was more likely in women receiving phenobarbital. The use of prenatal corticosteroids, known to reduce rates of periventricular haemorrhage, varied between trials and may have influenced findings.

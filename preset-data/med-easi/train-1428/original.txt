@@ -1,1 +1,0 @@
-The terms `` probability distribution function '' and `` probability function '' have also sometimes been used to denote the probability density function.

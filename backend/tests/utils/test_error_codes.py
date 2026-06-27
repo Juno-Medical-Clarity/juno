@@ -62,3 +62,44 @@ def test_make_error_response_logs_error(caplog):
         "UNAUTHORIZED" in r.getMessage() or getattr(r, "error_code", "") == "UNAUTHORIZED"
         for r in caplog.records
     )
+
+
+def test_make_error_response_includes_user_hint():
+    from utils.error_codes import make_error_response, ErrorCode
+    r = make_error_response(ErrorCode.PIPELINE_ERROR, user_hint="Try again")
+    assert r.error.user_hint == "Try again"
+
+
+def test_make_error_response_includes_retryable():
+    from utils.error_codes import make_error_response, ErrorCode
+    r = make_error_response(ErrorCode.PIPELINE_ERROR, retryable=True)
+    assert r.error.retryable is True
+
+
+def test_make_error_response_default_retryable_false():
+    from utils.error_codes import make_error_response, ErrorCode
+    r = make_error_response(ErrorCode.PIPELINE_ERROR)
+    assert r.error.retryable is False
+
+
+def test_make_error_response_details_present_when_no_vars():
+    from utils.error_codes import make_error_response, ErrorCode
+    r = make_error_response(ErrorCode.PIPELINE_ERROR)
+    # When no details_vars are supplied, the template string is returned as-is
+    assert r.error.details is not None
+    assert "detail" in r.error.details
+
+
+def test_athena_error_codes_registered():
+    from utils.error_codes import _REGISTRY, make_error_response, ErrorCode
+    athena_codes = [
+        ErrorCode.ATHENA_AUTH_FAILED,
+        ErrorCode.ATHENA_API_ERROR,
+        ErrorCode.ATHENA_RATE_LIMIT_ERROR,
+        ErrorCode.ATHENA_PATIENT_NOT_FOUND,
+        ErrorCode.ATHENA_TIMEOUT,
+    ]
+    for code in athena_codes:
+        assert code in _REGISTRY, f"{code} not in _REGISTRY"
+        r = make_error_response(code, "/test")
+        assert r.error.code == code.value

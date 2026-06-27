@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1058
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You are not allergic to anything? No, I am not. Any food or other pollen? No, I am not allergic to anything. Great!

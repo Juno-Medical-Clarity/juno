@@ -1,6 +1,0 @@
-Patient: And do I have to restrict my movement or activities?
-Doctor: Um, I have taken the plaster off and your foot looks good. I don't want you to restrict your activities, but you are the best judge of the situation. So, I will advise you to take it slow and do as much as you can tolerate.
-Patient: Got it. Thank you, Doctor. Do I need a follow-up?
-Doctor: As long as you are doing fine, having no pain, I think we are okay.
-Patient: Alright then bye.
-Doctor: Bye.

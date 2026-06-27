@@ -1,5 +1,0 @@
-pmid:        28665969
-question:    61
-adaptation:  adaptation2
-title:       Potentiated virucidal activity of pomegranate rind extract (PRE) and punicalagin against Herpes simplex virus (HSV) when co-administered with zinc (II) ions, and antiviral activity of PRE against HSV and aciclovir-resistant HSV
-sentences:   12

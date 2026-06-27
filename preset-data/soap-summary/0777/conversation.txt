@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0777
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-longest marriage is of two years duration. He has two children. These dependents are ages 15 and twins and are his wife's dependents. Education: The patient has bachelor's degree. Military History: He served six years in the army and received an honorable discharge. Work History: He has worked at Purdy Correctional Institute in Gig Harbor for 19 years.

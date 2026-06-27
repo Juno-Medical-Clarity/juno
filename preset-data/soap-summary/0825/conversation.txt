@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0825
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you tell me about your family? I have or had two sons both born normally without any complications. Why did you say had? One of my sons was a heavy smoker, he uses to smoke a whole packet or more in a day. We tried everything possible, but he just couldn't quit. He died of clots. Does anyone in your family like parents or siblings had any medical issues? Yes, my father had heart related issues, he died in his sixties, my mother died of colon cancer. I also have a sister but I don't think she has any issues.

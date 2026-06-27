@@ -1,1 +1,0 @@
-These results suggest that signaling responses in individual cells can be predicted from the levels of proteins of sensitive nodes.

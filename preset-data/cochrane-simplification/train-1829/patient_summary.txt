@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1829  |  gem_id: gem-cochrane-simplification-train-1830  |  doi: 10.1002/14651858.CD000361.pub4
-
-To date, approximately 5000 infants have been enrolled in studies conducted to evaluate the effects of prophylactic use of intravenous immunoglobulin on neonatal outcomes. Intravenous administration of immunoglobulin results in a 3% reduction in blood-borne infection and a 4% reduction in serious infection. Intravenous administration of immunoglobulin is not associated with reductions in other important neonatal outcomes or in length of hospital stay. Most important, intravenous immunoglobulin administration does not have any important effect on mortality. Prophylactic use of IVIG is not associated with any short-term serious side effects. From a clinical perspective, a 3% to 4% reduction in nosocomial infection without a reduction in mortality or other important clinical outcomes is of marginal importance.

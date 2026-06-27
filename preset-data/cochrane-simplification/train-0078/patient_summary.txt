@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0078  |  gem_id: gem-cochrane-simplification-train-79  |  doi: 10.1002/14651858.CD003422.pub4
-
-We found three trials, involving 189 participants, which showed improvement in hearing thresholds in those treated with vasodilators compared to control groups. However, as the number of patients included in the studies was small, and there were differences in the type, dosage and duration of vasodilator treatment used in each of these studies, the results could not be combined to reach a conclusion. The effectiveness of vasodilators in the treatment of ISSHL could not be proven. Further research is needed.

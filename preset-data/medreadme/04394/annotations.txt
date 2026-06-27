@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [15:17] 'medical-jargon-google-easy' -> 'neuronal activity'
-  [26:27] 'abbr-medical' -> 'SOZ'

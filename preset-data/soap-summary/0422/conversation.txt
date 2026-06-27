@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0422
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I have their surgical history if you'd like to go over it. Guest_clinician: Go ahead. So they had an exploratory laparotomy in nineteen sixty seven. Guest_clinician: Okay. They had a number of surgeries in nineteen seventy five, which include an L five S one lumbar laminectomy, anal fissure surgery, tonsillectomy, and adenoidectomy. Guest_clinician: Got it. Any complications that you know of? None were mentioned by the patient or their spouse.

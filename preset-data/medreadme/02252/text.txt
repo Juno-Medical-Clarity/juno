@@ -1,1 +1,0 @@
-An independent facility used computer-generated randomisation for participants' group allocation.

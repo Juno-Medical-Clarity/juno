@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1278
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family medical history? I am not sure. Everyone is healthy as far as I know.

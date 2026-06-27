@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [7:9] 'medical-jargon-google-easy' -> 'zebrafish embryos'
-  [14:16] 'medical-jargon-google-easy' -> 'chemokine receptors'

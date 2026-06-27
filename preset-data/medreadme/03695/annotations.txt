@@ -1,9 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [6:7] 'medical-jargon-google-easy' -> 'epidemiology'
-  [15:16] 'medical-jargon-google-easy' -> 'envenoming'
-  [21:22] 'medical-jargon-google-easy' -> 'fauna'

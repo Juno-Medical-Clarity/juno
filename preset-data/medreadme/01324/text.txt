@@ -1,1 +1,0 @@
-Here, we address this imbalance in a domain rich enough to allow complex, natural behavior yet simple enough so that movements can be explored exhaustively: the motions of Caenorhabditis elegans freely crawling on an agar plate.

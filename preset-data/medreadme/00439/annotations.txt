@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'ursodeoxycholic acid'
-  [10:14] 'medical-jargon-google-easy' -> 'intrahepatic cholestasis of pregnancy'
-  [28:31] 'medical-jargon-google-easy' -> 'adverse perinatal outcomes'

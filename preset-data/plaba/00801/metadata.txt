@@ -1,5 +1,0 @@
-pmid:        33728858
-question:    64
-adaptation:  adaptation2
-title:       Experience in the management of patients with genetic epilepsies and epileptic encephalopathies in the outpatient practice
-sentences:   12

@@ -1,5 +1,0 @@
-pmid:        28441964
-question:    55
-adaptation:  adaptation1
-title:       Fecal metagenomic profiles in subgroups of patients with myalgic encephalomyelitis/chronic fatigue syndrome
-sentences:   14

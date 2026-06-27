@@ -1,4 +1,0 @@
-Doctor: What is your family medical history?
-Patient: My dad has high blood pressure. My mom has had a ton of skin cancer removed.
-Doctor: Do you know what type of skin cancer she has removed?
-Patient: I have no idea.

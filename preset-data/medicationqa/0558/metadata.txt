@@ -1,5 +1,0 @@
-drug_focus: fentanyl
-question_type: Overdose
-section_title: OVERDOSAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ce5db1c2-feb1-4ad2-847a-d02e865bd47e&audience=consumer
-sample_id: 0558

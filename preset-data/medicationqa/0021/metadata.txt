@@ -1,5 +1,0 @@
-drug_focus: nitroglycerin
-question_type: Usage
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c555f8de-477f-0225-98a2-baf8945bbd63
-sample_id: 0021

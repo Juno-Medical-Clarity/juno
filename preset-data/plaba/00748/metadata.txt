@@ -1,5 +1,0 @@
-pmid:        35147657
-question:    59
-adaptation:  adaptation2
-title:       Association of Homologous and Heterologous Vaccine Boosters With COVID-19 Incidence and Severity in Singapore
-sentences:   27

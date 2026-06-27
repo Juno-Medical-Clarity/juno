@@ -1,9 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [6:9] 'abbr-medical' -> 'HeLP - Diabetes'
-  [12:13] 'abbr-medical' -> 'EMRs'
-  [20:23] 'abbr-medical' -> 'HeLP - Diabetes'

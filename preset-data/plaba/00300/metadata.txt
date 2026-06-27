@@ -1,5 +1,0 @@
-pmid:        10901839
-question:    24
-adaptation:  adaptation1
-title:       Efficacy and withdrawal of clobazam, lorazepam and buspirone in the treatment of anxiety disorders
-sentences:   11

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1453
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I think you have a muscular strain. Yeah. So right side shoulder strain and maybe a little bit of nerve compression. Oh really! Maybe. I will do further evaluation and treatment. Okay.

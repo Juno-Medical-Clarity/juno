@@ -1,9 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 5.85
-split:       dev
-
-jargon_spans:
-  [2:8] 'medical-jargon-google-easy' -> 'adult - generated dentate gyrus progenitors'
-  [12:14] 'medical-jargon-google-hard' -> 'PC3 transgene'
-  [23:25] 'medical-jargon-google-easy' -> 'dendritic arborization'

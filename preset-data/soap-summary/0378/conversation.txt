@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0378
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, sir. How are you today? I am alright. I am here for a check up since I am feeling kind of dizzy lately. That is not good. How long has this been happening? A few months. This happened to my sister too. I think she is still dealing with it. Is there any other family medical history I should know about? Migraines or cancer? No. Not that I know of. The rest of my family seems pretty healthy.

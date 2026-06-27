@@ -1,1 +1,0 @@
-The RCT collected patient self - reported and routine NHS GP data.

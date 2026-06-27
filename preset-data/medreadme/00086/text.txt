@@ -1,1 +1,0 @@
-We combined dichotomous outcomes using risk ratio (RR) and continuous data weighted mean difference (WMD); we presented both with 95% confidence intervals (CI).

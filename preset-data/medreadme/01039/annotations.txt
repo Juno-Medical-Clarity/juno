@@ -1,9 +1,0 @@
-source:      pnas
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [10:11] 'medical-jargon-google-easy' -> 'binding'
-  [13:15] 'medical-jargon-google-easy' -> 'pathway proteins'
-  [17:18] 'medical-jargon-google-easy' -> 'transcription'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1963  |  gem_id: gem-cochrane-simplification-train-1964  |  doi: 10.1002/14651858.CD007785.pub2
-
-A total of three research studies were identified. Two studies showed that there may be a decrease in CVC-related blood infections if the space in the CVC was washed and filled at regular intervals with urokinase (a drug which dissolves blood clots) with/without heparin (a drug which prevents the formation of blood clots) compared to heparin alone. One study showed that changing the dressing which covered the skin at the insertion of CVC every 15 days rather than every 4 days did not lead to an increased removal of the CVC because they had become infected. No research studies were identified for several other potential strategies which could reduce CVC-related infections in children with cancer.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2247  |  gem_id: gem-cochrane-simplification-train-2248  |  doi: 10.1002/14651858.CD001406.pub2
-
-This review found only one eligible clinical trial which compared different designs of these products and had been carried out in the last ten years. This trial included all the designs. There is evidence that for leakage prevention, overall acceptability and preference, disposable inserts are better than menstrual pads, which are better than washable pants with integral pad, which are better than washable inserts. There is no clear benefit for skin health using either washable or disposable designs. Most women preferred the disposable insert pad but some preferred the other cheaper designs or would find them acceptable in some situations. Allowing women to choose their preferred design of absorbent product (or combination of different designs for different circumstances) would be more cost-effective and provide better patient satisfaction than provision of disposable insert pads alone.

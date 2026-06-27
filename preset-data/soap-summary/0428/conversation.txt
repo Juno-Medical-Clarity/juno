@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0428
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any past medical history like any diabetes or high blood pressure or any heart disease? No, I don't remember any such thing. How about any surgeries in the past? No. No surgeries at all.

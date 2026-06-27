@@ -1,8 +1,0 @@
-Background: Monoclonal antibody therapy (MAT) is recommended in mild to moderate Coronavirus disease 2019 (COVID-19) patients who are at risk of progressing to severe disease.
-Due to limited data on its outcomes and the logistic challenges in administering the drug, MAT has not been widely used in the United States (US) despite of emergency use authorization (EUA) approval by the Food and Drug Administration (FDA).
-Aim: We aim to study the outcomes of MAT in patients predominantly from ethnic minority groups and the challenges we experienced in implementing the infusion therapy protocol in an inner-city safety-net-hospital in the South Bronx.
-Methods and results: We conducted a retrospective observational study of 49 patients who were offered MAT as per EUA protocol of FDA.
-Patient who met the criteria for MAT and received therapy were included in treatment group (n = 38) and the remaining (n = 11) who declined treatment were included in the control group.
-A majority of patients (76%) in the study group reported symptomatic improvement, the day after infusion.
-There was statistically significant reduction in COVID-19 related hospitalizations (7.8 vs 54.5%, P = < 0.001) mortality (0 vs 18.1%, P value = 0.008) in the treatment group.
-Conclusion: MAT reduced both hospitalization and mortality in this predominantly Hispanic patient population with mild to moderate COVID-19 with high risk factors for disease progression.

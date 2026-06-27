@@ -1,5 +1,0 @@
-drug_focus: td vaccine
-question_type: Information
-section_title: Td vaccine
-source_url: https://www.cdc.gov/vaccines/hcp/vis/vis-statements/td.html
-sample_id: 0661

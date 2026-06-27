@@ -1,7 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [19:22] 'medical-jargon-google-easy' -> 'breast cancer pathogenesis'

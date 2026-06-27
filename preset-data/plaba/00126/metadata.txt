@@ -1,5 +1,0 @@
-pmid:        32100225
-question:    10
-adaptation:  adaptation1
-title:       Injection Techniques for Common Chronic Pain Conditions of the Hand: A Comprehensive Review
-sentences:   23

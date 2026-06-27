@@ -1,7 +1,0 @@
-Group A beta-hemolytic streptococcal (GABHS) infection causes 15% to 30% of sore throats in children and 5% to 15% in adults, and is more common in the late winter and early spring.
-The strongest independent predictors of GABHS pharyngitis are patient age of five to 15 years, absence of cough, tender anterior cervical adenopathy, tonsillar exudates, and fever.
-To diagnose GABHS pharyngitis, a rapid antigen detection test should be ordered in patients with a modified Centor or FeverPAIN score of 2 or 3.
-First-line treatment for GABHS pharyngitis includes a 10-day course of penicillin or amoxicillin.
-Patients allergic to penicillin can be treated with firstgeneration cephalosporins, clindamycin, or macrolide antibiotics.
-Nonsteroidal anti-inflammatory drugs are more effective than acetaminophen and placebo for treatment of fever and pain associated with GABHS pharyngitis; medicated throat lozenges used every two hours are also effective.
-Corticosteroids provide only a small reduction in the duration of symptoms and should not be used routinely.

@@ -1,5 +1,0 @@
-drug_focus: lasix
-question_type: Side effects
-section_title: IMPORTANT WARNING
-source_url: https://medlineplus.gov/druginfo/meds/a682858.html
-sample_id: 0671

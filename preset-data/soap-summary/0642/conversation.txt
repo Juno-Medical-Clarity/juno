@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0642
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you still taking the Trizivir? Yes. How much are you taking? I take one pill two times a day. Are you taking any other medications? I take Ibuprofen for body aches from time to time but that's it.

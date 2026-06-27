@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [8:9] 'abbr-medical' -> 'HRT'
-  [13:15] 'medical-jargon-google-easy' -> 'endometrial cancer'
-  [16:19] 'medical-jargon-google-easy' -> 'FIGO stage II'

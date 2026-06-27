@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 3.85
-split:       dev
-
-jargon_spans:
-  [4:7] 'general-complex' -> 'randomised clinical trials'

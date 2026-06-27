@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0305  |  gem_id: gem-cochrane-simplification-test-306  |  doi: 10.1002/14651858.CD007514.pub3
-
-Two independent authors searched scientific databases for studies in which a statin or a placebo (a pretend treatment) was given for at least six months. We included people with a probable or possible diagnosis of Alzheimer's disease according to standard clinical criteria. The findings were current to January 2014. We identified four studies involving 1154 participants (age range 50 to 90 years). The studies used standard tests to assess the severity of Alzheimer's disease. From these trials, including two large trials, we found no evidence that statins help in the treatment of cognitive decline in dementia. The quality of evidence is felt to be high as two large randomised controlled trials have been included along with two smaller ones.

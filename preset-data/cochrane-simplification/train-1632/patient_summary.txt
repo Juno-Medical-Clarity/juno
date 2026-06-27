@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1632  |  gem_id: gem-cochrane-simplification-train-1633  |  doi: 10.1002/14651858.CD010001.pub3
-
-We found 15 randomised controlled trials (a type of experiment in which people are randomly allocated to one or more treatment groups) that compared the use of vasodilators versus placebo or no treatment in a total of 1326 women undergoing fertility treatment. The evidence is current to October 2017. Only three of the included studies reported live birth rates. Overall, vasodilators probably make little or no difference in rates of live birth. Moderate-quality evidence shows that vasodilators probably increase overall rates of side effects (including headache and tachycardia (faster than normal heartbeat)) in comparison with placebo or no treatment. However, low-quality evidence suggests that vasodilators may increase the chance of becoming pregnant. The evidence is of low to moderate quality. More research is needed (one study is ongoing and will be incorporated into this review in a subsequent update).

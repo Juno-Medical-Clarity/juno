@@ -1,5 +1,0 @@
-drug_focus: Fentanyl
-question_type: Action/effectiveness
-section_title: Effectiveness and safety of fentanyl compared with morphine for out-of-hospital analgesia.
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/20199230
-sample_id: 0172

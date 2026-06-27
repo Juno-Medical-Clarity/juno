@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2240  |  gem_id: gem-cochrane-simplification-train-2241  |  doi: 10.1002/14651858.CD004751.pub3
-
-In the 12 controlled studies identified, laparoscopic surgery was associated with reduced risk of any adverse events from surgery, less pain, and fewer days in the hospital when compared to laparotomy, the traditional surgical technique.There was no difference between the procedures with regard to outcomes of fever, postoperative infections, and tumour recurrence.

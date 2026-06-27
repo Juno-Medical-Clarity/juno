@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0515
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Is anyone else at home sick? No. My husband and daughter seem to be doing okay. They haven't complained of anything yet.

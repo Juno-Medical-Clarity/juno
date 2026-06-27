@@ -1,9 +1,0 @@
-Objectives: This study was conducted to define bandage pressures that are safe and effective in treating leg ulcers of mixed arterial-venous etiology.
-Methods: In 25 patients with mixed-etiology leg ulcers who received inelastic bandages applied with pressures from 20 to 30, 31 to 40, and 41 to 50 mm Hg, the following measurements were performed before and after bandage application to ensure patient safety throughout the investigation: laser Doppler fluxmetry (LDF) close to the ulcer under the bandage and at the great toe, transcutaneous oxygen pressure (TcPo(2)) on the dorsum of the foot, and toe pressure.
-Ejection fraction (EF) of the venous pump was performed to assess efficacy on venous hemodynamics.
-Results: LDF values under the bandages increased by 33% (95% confidence interval [CI], 17-48; P < .01), 28% (95% CI, 12-45; P < .05), and 10% (95% CI, -7 to 28), respectively, under the three pressure ranges applied.
-At toe level, a significant decrease in flux of -20% (95% CI, -48 to 9; P < .05) was seen when bandage pressure >41 mm Hg.
-Toe pressure values and TcPo(2) showed a moderate increase, excluding a restriction to arterial perfusion induced by the bandages.
-Inelastic bandages were highly efficient in improving venous pumping function, increasing the reduced ejection fraction by 72% (95% CI, 50%-95%; P < .001) under pressure of 21 to 30 mm Hg and by 103% (95% CI, 70%-128%; P < .001) at 31 to 40 mm Hg.
-Conclusions: In patients with mixed ulceration, an ankle-brachial pressure index >0.5 and an absolute ankle pressure of >60 mm Hg, inelastic compression of up to 40 mm Hg does not impede arterial perfusion but may lead to a normalization of the highly reduced venous pumping function.
-Such bandages are therefore recommended in combination with walking exercises as the basic conservative management for patients with mixed leg ulcers.

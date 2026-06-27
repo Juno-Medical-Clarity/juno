@@ -1,6 +1,0 @@
-Doctor: Do you have any history of heart disease that you know of?
-Patient: Nope, nothing like that.
-Doctor: How about diabetes?
-Patient: No, there's no sugar here that I know of.
-Doctor: Good, and how about your lungs? Do they work well.
-Patient: Absolutely, they're in great shape. There's nothing like that here.

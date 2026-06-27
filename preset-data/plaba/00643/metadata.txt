@@ -1,5 +1,0 @@
-pmid:        32431556
-question:    49
-adaptation:  adaptation1
-title:       May-Thurner Syndrome: ﻿A Neglected Cause of Unilateral Leg Swelling
-sentences:   8

@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 3.3
-split:       train
-
-jargon_spans:
-  [20:21] 'general-complex' -> 'control'

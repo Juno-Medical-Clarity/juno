@@ -1,5 +1,0 @@
-drug_focus: steroids
-question_type: Action/time
-section_title: Summary
-source_url: https://medlineplus.gov/steroids.html
-sample_id: 0622

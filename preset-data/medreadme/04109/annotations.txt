@@ -1,6 +1,0 @@
-source:      wiki
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans: (no jargon annotation found for this sentence)

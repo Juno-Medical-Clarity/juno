@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3457  |  gem_id: gem-cochrane-simplification-train-3458  |  doi: 10.1002/14651858.CD000324.pub2
-
-This review of 35 randomised controlled trials found that laparoscopic surgery is feasible and less expensive than open surgery in the treatment of tubal ectopic pregnancy. In selected patients, non-surgical treatment options can be used. Medical treatment with systemic methotrexate is an option for women with tubal ectopic pregnancy with no signs of bleeding whose pregnancy hormone blood levels are relatively low. An evaluation of expectant management of tubal ectopic pregnancy cannot be adequately made yet.

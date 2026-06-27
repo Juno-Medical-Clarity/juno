@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3174  |  gem_id: gem-cochrane-simplification-train-3175  |  doi: 10.1002/14651858.CD005229.pub3
-
-This review found only two randomised studies of exercise in people with ALS. The trials compared an exercise program with usual care (stretching exercises). Combining the results from the two trials (43 participants), exercise produced a greater average improvement in function (measured using an ALS-specific measurement scale) than usual care. There were no other differences between the two groups. There were no reported adverse events due to exercise. The studies were too small to determine to what extent exercise for people with ALS is beneficial or whether exercise is harmful. We found no new trials when we updated the searches in 2012. More research is needed.

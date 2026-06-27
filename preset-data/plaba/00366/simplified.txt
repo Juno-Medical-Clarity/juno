@@ -1,9 +1,0 @@
-Some scientific reports have stated that RNA, or genetic material, from COVID-19 virus (a virus leading to lung infection) can absorb microRNA (small chains of RNA that cannot be coded into proteins) from the host. MiRNA can regulate immune system-related genes. When the virus absorbs this miRNA, it can deprive the genes of their ability to function.
-Using this knowledge, the authors hypothesized or theorized that the absorption of COVID-19 genetic material to host miRNA is not a coincidence. Therefore, this may be a pathway in which the virus survives and replicates within a host.
-In this study, the authors collected five datasets of miRNAs that were predicted to interact with the COVID-19 genetic material.
-The targets of the selected miRNA were pathways related to immune response and virus-infectious diseases.
-Interestingly, the five datasets had no repeated miRNA, but their targets shared 168 genes.
-A test analyzing the 168 shared targets implied an unbalanced immune response where most of the interleukin (a messenger protein) signaling pathways and none of the interferon (another messenger protein) signaling pathways were significantly different.
-A second test using the shared targets show protein-protein interaction pairs, including IL6 to IL6R. The test showed the pairs are related to the process of COVID-19 infection and development.
-Additionally, the authors found that COVID-19 absorption to host miRNA could help two popular viral strains to infect more and cause more damage in hosts.
-These results suggest that the absorption of viral RNA to host miRNAs may be a way that COVID-19 disturbs the host immune system and infects host cells.

@@ -1,4 +1,0 @@
-Guest_clinician: Has she taken anything for her symptoms?
-Doctor: She's tried Loratadine Beclomethasone Nasal Fluticasone and Salmeterol Inhaled Montelukast Cephalexin Hydrocode.
-Guest_clinician: Has she noticed any relief with these medications?
-Doctor: Um some relief.

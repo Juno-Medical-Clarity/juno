@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [18:24] 'medical-jargon-google-easy' -> 'quality - adjusted life - years'

@@ -1,5 +1,0 @@
-drug_focus: TrOOP
-question_type: not_drug_question
-section_title: NA
-source_url: https://q1medicare.com/PartD-WhatIs-TheTrueOutOfPocketExpense.php
-sample_id: 0053

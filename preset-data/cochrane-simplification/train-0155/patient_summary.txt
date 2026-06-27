@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0155  |  gem_id: gem-cochrane-simplification-train-156  |  doi: 10.1002/14651858.CD010079.pub2
-
-We searched differing databases of published research for all papers relating to the accuracy of IQCODE for selecting those with dementia. We found eleven studies that tested diagnostic accuracy of IQCODE in community dwelling individuals, we were able to combine their findings to give a summary result. We compared two forms of IQCODE questionnaire and found that a short form with fewer questions was just as accurate as the original longer questionnaire. The overall accuracy of IQCODE was reasonable although not perfect. If IQCODE were to be used on its own for assessing large populations of older adults, it would label many people with dementia who do not have the disease and also miss the diagnosis in a substantial proportion.

@@ -1,7 +1,0 @@
-Pressure ulcer (PU) is a worldwide problem that is hard to heal because of its prolonged inflammatory response and impaired ECM deposition caused by local hypoxia and repeated ischemia/reperfusion.
-Our previous study discovered that the non-fouling zwitterionic sulfated poly (sulfobetaine methacrylate) (SBMA) hydrogel can improve PU healing with rapid ECM rebuilding.
-However, the mechanism of the SBMA hydrogel in promoting ECM rebuilding is unclear.
-Therefore, in this work, the impact of the SBMA hydrogel on ECM reconstruction is comprehensively studied, and the underlying mechanism is intensively investigated in a rat PU model.
-The in vivo data demonstrate that compared to the PEG hydrogel, the SBMA hydrogel enhances the ECM remolding by the upregulation of fibronectin and laminin expression as well as the inhibition of MMP-2.
-Further investigation reveals that the decreased MMP-2 expression of zwitterionic SBMA hydrogel treatment is due to the activation of autophagy through the inhibited PI3K/Akt/mTOR signaling pathway and reduced inflammation.
-The association of autophagy with ECM remodeling may provide a way in guiding the design of biomaterial-based wound dressing for chronic wound repair.

@@ -1,5 +1,0 @@
-pmid:        24295058
-question:    72
-adaptation:  adaptation2
-title:       Inborn errors of metabolism and expanded newborn screening: review and update
-sentences:   22

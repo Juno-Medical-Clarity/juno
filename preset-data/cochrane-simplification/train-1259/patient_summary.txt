@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1259  |  gem_id: gem-cochrane-simplification-train-1260  |  doi: 10.1002/14651858.CD001329.pub2
-
-In this review we have studied the effectiveness of LAM as a contraceptive method in fully breastfeeding women in comparison to breastfeeding women without any support. We found no clear differences in effectiveness (pregnancy) between women using LAM and being supported in doing so, and fully breastfeeding amenorrheic women not using any method. Apart from this we recommend breastfeeding itself from a public health point of view.

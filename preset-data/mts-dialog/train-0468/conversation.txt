@@ -1,5 +1,0 @@
-Doctor: Welcome into the office.
-Patient: Thank you.
-Doctor: Let us start with your family medical history.
-Patient: That is going to be a hard one. I was adopted and I do not know any family medical history.
-Doctor: Okay. That is alright.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0655  |  gem_id: gem-cochrane-simplification-train-656  |  doi: 10.1002/14651858.CD011636.pub2
-
-We included two trials for a total of 182 newborn infants comparing antithrombin with placebo (sugar or albumin solution). The use of antithrombin does not reduce the risks of bleeding in the brain, mortality or any other relevant outcomes in very preterm neonates when compared to placebo. However, the data collected are too limited to draw definitive conclusions on the use of antithrombin in the prevention of intraventricular hemorrhage (i.e. bleeding in the brain). The results of this systematic review are consistent with either a benefit or a detrimental effect of antithrombin and do not provide a definitive answer to the review question.

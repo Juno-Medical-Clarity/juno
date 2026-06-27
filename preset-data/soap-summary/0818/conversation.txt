@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0818
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How have you both been doing? Guest_family: We are good. I see she has been gaining weight since she has been home. Have you been following the meal plan that we discussed? Guest_family: Yes. It has been helping. Great!

@@ -1,5 +1,0 @@
-pmid:        33029620
-question:    26
-adaptation:  adaptation2
-title:       Duration of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) Infectivity: When Is It Safe to Discontinue Isolation?
-sentences:   6

@@ -1,5 +1,0 @@
-pmid:        17224659
-question:    71
-adaptation:  adaptation3
-title:       Advances in understanding etiology of achondroplasia and review of management
-sentences:   11

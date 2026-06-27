@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0374
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is wrong with your back honey? Oh, it all started off with a little pimple on the buttock. I was soaking it at home with hot water and stuff, but it did not improve. I hope this is not cancer. I am only twenty four. Okay what exactly are you experiencing? I have pain. So you came to the hospital on the first and they did an I and D in E D? Yes I was admitted to the hospitalist service with high blood sugars. My African American father was so scared. Okay sugars high. Do you know the number? How high? No, I do not know that but they found positive bacteria or some sort of thing in my blood culture. So today we are evaluating you for surgery? Yes.

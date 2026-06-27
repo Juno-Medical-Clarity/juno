@@ -1,1 +1,0 @@
-The genetic code is written using four DNA bases — called A, C, G and T — and if a stretch of DNA contains lots of G bases, then one of the strands can loop back upon itself three times to form a structure known as a ‘ G - quadruplex ’.

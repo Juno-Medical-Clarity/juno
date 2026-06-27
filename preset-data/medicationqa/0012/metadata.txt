@@ -1,5 +1,0 @@
-drug_focus: Synthroid
-question_type: Interaction
-section_title: NA
-source_url: https://www.livestrong.com/article/40509-foods-avoid-taking-thyroid-medication/
-sample_id: 0012

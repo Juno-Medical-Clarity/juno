@@ -1,5 +1,0 @@
-pmid:        31665995
-question:    11
-adaptation:  adaptation1
-title:       Serial Magnetic Resonance Imaging (MRI) in Pyruvate Dehydrogenase Complex Deficiency
-sentences:   8

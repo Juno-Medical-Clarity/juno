@@ -1,8 +1,0 @@
-Doctor: Are you married?
-Patient: No sir, I'm happily single.
-Doctor: Where do you work?
-Patient: I am a press worker, I work in a newspaper printing.
-Doctor: Do you smoke? Have you ever taken any Illicit drug?
-Patient: No, none of them.
-Doctor: What about alcohol?
-Patient: I don't take any now. I was a heavy drinker, but I quit in the seventies.

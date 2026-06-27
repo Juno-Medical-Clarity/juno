@@ -1,6 +1,0 @@
-Natural killer (NK) cells are important early responders against viral infections.
-Changes in metabolism are crucial to fuel NK cell responses, and altered metabolism is linked to NK cell dysfunction in obesity and cancer.
-However, very little is known about the metabolic requirements of NK cells during acute retroviral infection and their importance for antiviral immunity.
-Here, using the Friend retrovirus mouse model, we show that following infection NK cells increase nutrient uptake, including amino acids and iron, and reprogram their metabolic machinery by increasing glycolysis and mitochondrial metabolism.
-Specific deletion of the amino acid transporter Slc7a5 has only discrete effects on NK cells, but iron deficiency profoundly impaires NK cell antiviral functions, leading to increased viral loads.
-Our study thus shows the requirement of nutrients and metabolism for the antiviral activity of NK cells, and has important implications for viral infections associated with altered iron levels such as HIV and SARS-CoV-2.

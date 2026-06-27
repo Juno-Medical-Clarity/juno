@@ -1,5 +1,0 @@
-pmid:        24996539
-question:    73
-adaptation:  adaptation2
-title:       Local anaesthetic infiltration for peri-operative pain control in total hip and knee replacement: systematic review and meta-analyses of short- and long-term effectiveness.
-sentences:   17

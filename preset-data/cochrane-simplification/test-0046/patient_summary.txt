@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0046  |  gem_id: gem-cochrane-simplification-test-47  |  doi: 10.1002/14651858.CD003844.pub4
-
-Several studies have suggested that mechanical breathing can also cause lung damage and bleeding. A new lung protective way of mechanical ventilation was tested in large studies. In this third update of the Cochrane review we searched the databases until September 2012 but we did not find any new study which was eligible for inclusion. The total number of studies remained unchanged, six trials involving 1297 people. This systematic review shows that a gentler form of mechanical breathing (so-called protective ventilation) can decrease deaths in the short term, by 26% on average, but the effects in the long term are uncertain or unknown.

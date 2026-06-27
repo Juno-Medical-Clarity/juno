@@ -1,5 +1,0 @@
-pmid:        32459404
-question:    31
-adaptation:  adaptation1
-title:       Pharmacologic Treatment of Tardive Dyskinesia: A Meta-Analysis and Systematic Review
-sentences:   15

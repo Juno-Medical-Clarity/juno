@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0421
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Does anyone in your family ever have any neurological disorder? Not anything specific but, many of my family members had lazy eyes. Who is in your family? My parents and my two little sisters. How old are your sisters? One is nine, another one is five. How are they both health wise? They both are healthy.

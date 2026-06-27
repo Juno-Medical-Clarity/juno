@@ -1,5 +1,0 @@
-pmid:        25666556
-question:    11
-adaptation:  adaptation1
-title:       Mitochondria: The ketogenic diet--A metabolism-based therapy
-sentences:   5

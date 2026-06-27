@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1323
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you please confirm the medications that you have already taken? Yeah, I just finished the course for Minocin. I also took Duraphen II D M.

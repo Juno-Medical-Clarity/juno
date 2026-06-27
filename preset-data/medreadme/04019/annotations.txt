@@ -1,7 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 4.7
-split:       test
-
-jargon_spans:
-  [2:5] 'general-complex' -> 'symmetric bifurcation theory'

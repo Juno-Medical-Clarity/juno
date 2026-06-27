@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2099  |  gem_id: gem-cochrane-simplification-train-2100  |  doi: 10.1002/14651858.CD002924.pub2
-
-The review found that patients treated within a care pathway may be less likely to suffer some complications (e.g. urine infections), and more likely to have certain tests (e.g. brain scans). However, the use of care pathways may also reduce the patient's likelihood of functioning independently when discharged from hospital, their quality of life, and their satisfaction with hospital care. Currently, there is not enough evidence to justify introducing care pathways for the routine care of all patients with stroke. Further research is needed to find out if care pathways for stroke do more good than harm.

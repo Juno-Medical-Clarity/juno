@@ -1,5 +1,0 @@
-drug_focus: amlodipine
-question_type: Appearance
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b52e2905-f906-4c46-bb24-2c7754c5d75b
-sample_id: 0274

@@ -1,4 +1,0 @@
-Doctor: Any medical disorders in the family?
-Patient: Yeah, my father had a special kind of tumor, which doctors said is very rare.
-Doctor: Do you know the name of the tumor?
-Patient: I don't remember the exact name of the disease, but it was a big name and it started with something with V.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0587
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have sugar or blood pressure problems? Oh, I have high blood pressure but it's well under control. I make sure to keep it under normal range. Good. Any other health issues? Yeah, I have history of high triglycerides. But otherwise, I am pretty healthy. Okay. Do you smoke? No.

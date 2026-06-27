@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0387
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Did you have any medical disorders previously, sir? I have diabetes. Also, I was quite overweight. Are you taking any medications for that? Yes, I was still taking something called Zyprexa, but I stopped it after my last regular weight check. Also, I never took anything for diabetes. I also have chronic bronchitis for… I don't know… many years. Do you smoke? Oh yes, I am a smoker. How many cigarettes do you take in a day? Maybe up to sixty a day.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1377
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Let me examine your skin. Sure. It looks normal and well hydrated. Any excessive sweating? No, not really. I don't see any injury or wounds. Yeah. Its just a normal protocol to ask these questions for every new patient. I understand. Thank you for your cooperation.

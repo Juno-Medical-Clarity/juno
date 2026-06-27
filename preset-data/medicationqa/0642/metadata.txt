@@ -1,5 +1,0 @@
-drug_focus: drugs that cause hirsutism
-question_type: Side effects
-section_title: What causes hirsutism?
-source_url: https://my.clevelandclinic.org/health/diseases/14523-excessive-hair-growth-hirsutism
-sample_id: 0642

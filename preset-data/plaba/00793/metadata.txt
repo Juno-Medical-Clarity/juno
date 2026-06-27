@@ -1,5 +1,0 @@
-pmid:        25473228
-question:    63
-adaptation:  adaptation2
-title:       Pattern Alopecia during Hormonal Anticancer Therapy in Patients with Breast Cancer
-sentences:   6

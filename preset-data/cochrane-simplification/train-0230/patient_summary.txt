@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0230  |  gem_id: gem-cochrane-simplification-train-231  |  doi: 10.1002/14651858.CD004641.pub2
-
-Most included trials were of poor quality, so their results may not be reliable. The trials were not long enough or large enough to measure whether potassium supplements reduce the risk of death, heart attack or stroke, which may be caused by high blood pressure. The studies reporting adverse effects did not find any serious side effects from taking potassium supplements. This review does not confirm whether potassium supplements can lower high blood pressure and therefore does not recommend them for treating hypertension. More trials enrolling a large number of participants with long periods of follow-up are necessary to know whether or not potassium supplements can lower high blood pressure.

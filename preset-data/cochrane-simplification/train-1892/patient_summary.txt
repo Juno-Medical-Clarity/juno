@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1892  |  gem_id: gem-cochrane-simplification-train-1893  |  doi: 10.1002/14651858.CD012126.pub2
-
-We found 20 studies that assessed the accuracy of measuring the blood level of CRP to diagnose infections in newborn infants. These studies were similar enough to justify a combined analysis of their findings. The combined analysis indicated that a positive CRP test correctly identified infants with infection about six times out of 10. Measuring the blood level of CRP is not sufficiently accurate to help early diagnosis of infection in newborn infants.

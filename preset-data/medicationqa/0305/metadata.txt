@@ -1,5 +1,0 @@
-drug_focus: glipizide
-question_type: Contraindication
-section_title: Description & Contraindications
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5565ccec-8000-48ab-a6af-37eca2d8c993
-sample_id: 0305

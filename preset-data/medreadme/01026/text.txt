@@ -1,1 +1,0 @@
-We quantify genetic variation for virus resistance in the flies, and we use RNA sequencing to find which genes are expressed in male and female flies in response to infection.

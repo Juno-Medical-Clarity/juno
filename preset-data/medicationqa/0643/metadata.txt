@@ -1,5 +1,0 @@
-drug_focus: formoterol
-question_type: Information
-section_title: Formoterol
-source_url: https://pubchem.ncbi.nlm.nih.gov/compound/formoterol#section=Top
-sample_id: 0643

@@ -1,5 +1,0 @@
-drug_focus: Flomax
-question_type: Action
-section_title: Why is this medication prescribed?
-source_url: https://medlineplus.gov/druginfo/meds/a698012.html
-sample_id: 0419

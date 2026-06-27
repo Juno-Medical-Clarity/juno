@@ -1,9 +1,0 @@
-source:      wiki
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Streptococci'
-  [2:7] 'medical-jargon-google-easy' -> 'oxidase and catalase - negative'
-  [11:13] 'medical-jargon-google-easy' -> 'facultative anaerobes'

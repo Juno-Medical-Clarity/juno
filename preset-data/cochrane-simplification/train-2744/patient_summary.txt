@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2744  |  gem_id: gem-cochrane-simplification-train-2745  |  doi: 10.1002/14651858.CD007933.pub2
-
-This review assessed whether giving treatment for diseases that present with ulcers in the genital region would reduce sexual acquisition of HIV. Three studies were identified involving 173 HIV-negative patients with genital ulcers. These studies did not provide sufficient evidence that treatment of genital ulcer diseases reduces sexual acquisition of HIV infection. However, genital ulcer diseases are public health problems in their own right and patients with these conditions should be treated appropriately; whether the treatment reduces the risk of HIV infection or not.

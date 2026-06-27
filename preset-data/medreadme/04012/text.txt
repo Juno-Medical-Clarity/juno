@@ -1,1 +1,0 @@
-Neuronal networks are composed of patterns of axons and dendrites (neuronal extensions that transmit and receive signals, respectively), and using TrakEM2, we describe the most common motifs they form.

@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        simple
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [13:15] 'medical-jargon-google-easy' -> 'mouse model'
-  [23:24] 'medical-jargon-google-easy' -> 'neurons'

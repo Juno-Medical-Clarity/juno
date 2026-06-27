@@ -1,9 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'GPs'
-  [9:10] 'medical-jargon-google-easy' -> 'admissions'
-  [17:19] 'medical-jargon-google-easy' -> 'emergency admissions'

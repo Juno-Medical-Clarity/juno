@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0373  |  gem_id: gem-cochrane-simplification-test-374  |  doi: 10.1002/14651858.CD005072.pub3
-
-Endometriosis is the presence of endometrial tissue outside the uterus, usually in the pelvis, that can lead to infertility and pelvic pain. It is managed with surgery, hormonal medications, or a combination of both. The progestogen levonorgestrel is one such hormonal medication. The aim of this review was to assess whether the use of a hormone-releasing intrauterine device was beneficial for managing associated painful symptoms and for preventing recurrence of endometriosis following surgery. Although preliminary findings are encouraging, at this stage there is only limited evidence from three randomised trials of a beneficial role with the use of the LNG-IUD in reducing the recurrence of painful periods following surgery for endometriosis. The strength of the evidence was graded as moderate reflecting our belief that future evidence will most likely not change these findings.

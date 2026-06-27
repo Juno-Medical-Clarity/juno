@@ -1,5 +1,0 @@
-pmid:        34389110
-question:    68
-adaptation:  adaptation2
-title:       Iron metabolism in infections: Focus on COVID-19
-sentences:   9

@@ -1,1 +1,0 @@
-In particular, there are flaws in the mathematical methods used to infer the potential number of all smells that humans can discriminate from the numbers of experimental samples tested.

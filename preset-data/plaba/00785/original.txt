@@ -1,8 +1,0 @@
-Background: This study aimed to measure the association of various H1-antihistamines (H1A) with Torsade de Pointes (TdP), and present a comprehensive overview of H1A-induced TdP cases reported to the Food and Drug Administration Adverse Event Reporting System (FAERS).
-Methods: All H1A-induced TdP cases (n = 406) were retrieved from the FAERS database using the preferred term 'Torsade de Pointes' of MedDRA version-22 from 1990 to 2019.
-Four data-mining algorithms were used for disproportionality analysis: Reporting Odds Ratio (ROR); Proportional Reporting Ratio (PRR), Empirical Bayes Geometric Mean (EBGM), and Information Content (IC).
-H1A with >3 TdP cases were included.
-Results: A total of 12 signals (Astemizole, cetirizine, chlorpheniramine, clemastine, desloratadine, diphenhydramine, hydroxyzine, loratadine, meclizine, promethazine, terfenadine, and trimeprazine) were identified including six new signals (cetirizine, chlorpheniramine, clemastine, desloratadine, loratadine, and meclizine).
-The number of risk factors (p = 0.031) and concomitant QT-prolonging drugs (p = <0.001) were significantly lower among new signals vs old signals.
-Moreover, new signals were strongly associated with QT-prolongation, cardiac reactions, and electrolyte abnormalities as compared with old signals.
-Conclusions: Our study found the increased torsadogenic potential of new signals compared with previously known old signals, hence necessitating clinical studies to determine the actual torsadogenic potential of newly identified signals.

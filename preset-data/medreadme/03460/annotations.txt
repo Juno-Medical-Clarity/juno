@@ -1,7 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        complex
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [3:4] 'abbr-medical' -> 'SPADI'

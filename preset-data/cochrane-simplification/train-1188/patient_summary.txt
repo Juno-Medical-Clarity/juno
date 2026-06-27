@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1188  |  gem_id: gem-cochrane-simplification-train-1189  |  doi: 10.1002/14651858.CD005246
-
-This review suggests that 50 out of 100 patients will be alive at five years, when they are given chemotherapy using a platinum drug in combination with other drugs, before having surgery and/or radiotherapy. This is compared to 45 out of every 100 patients who were given surgery and/or radiotherapy without chemotherapy. This benefit of platinum-based combination chemotherapy was seen in all types of patients and encourages its use for the treatment of invasive bladder cancer. However, chemotherapy based on a single platinum drug did not help patients live longer, and is not recommended.

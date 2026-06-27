@@ -1,5 +1,0 @@
-pmid:        34671773
-question:    59
-adaptation:  adaptation2
-title:       Heterologous SARS-CoV-2 Booster Vaccinations - Preliminary Report
-sentences:   11

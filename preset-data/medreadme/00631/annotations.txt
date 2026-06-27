@@ -1,9 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [8:9] 'medical-jargon-google-easy' -> 'mTORC2'
-  [14:16] 'medical-jargon-google-easy' -> 'positive regulator'
-  [17:18] 'medical-jargon-google-easy' -> 'mTORC1'

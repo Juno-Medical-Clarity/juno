@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1021
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, sir. I'll be your doctor today. How are you feeling? Um uh who? Where am I? You're in the emergency room. I'm where? The police found you outside of the local bar. Do you remember what happened prior to your arrival here? I'm no longer at the bar? No, you're here because someone was worried you may need medical attention. I don't know what's going on. Can you call my girlfriend? She was there with me before we got into a fight.

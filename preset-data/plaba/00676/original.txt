@@ -1,9 +1,0 @@
-The pathogenesis of Turner syndrome (TS) and the genotype-phenotype relationship has been thoroughly investigated during the last decade.
-It has become evident that the phenotype seen in TS does not only depend on simple gene dosage as a result of X chromosome monosomy.
-The origin of TS specific comorbidities such as infertility, cardiac malformations, bone dysgenesis, and autoimmune diseases may depend on a complex relationship between genes as well as transcriptional and epigenetic factors affecting gene expression across the genome.
-Furthermore, two individuals with TS with the exact same karyotype may exhibit completely different traits, suggesting that no conventional genotype-phenotype relationship exists.
-Here, we review the different genetic mechanisms behind differential gene expression, and highlight potential key-genes essential to the comorbidities seen in TS and other X chromosome aneuploidy syndromes.
-KDM6A, important for germ cell development, has shown to be differentially expressed and methylated in Turner and Klinefelter syndrome across studies.
-Furthermore, TIMP1/TIMP3 genes seem to affect the prevalence of bicuspid aortic valve.
-KDM5 C could play a role in the neurocognitive development of Turner and Klinefelter syndrome.
-However, further research is needed to elucidate the genetic mechanism behind the phenotypic variability and the different phenotypic traits seen in TS.

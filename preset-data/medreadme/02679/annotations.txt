@@ -1,9 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        complex
-readability: 6.0
-split:       dev
-
-jargon_spans:
-  [2:4] 'medical-jargon-google-easy' -> 'case studies'
-  [44:46] 'medical-jargon-google-easy' -> 'acute trusts'
-  [64:68] 'medical-jargon-google-easy' -> 'acute and community trusts'

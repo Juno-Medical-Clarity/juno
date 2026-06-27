@@ -1,8 +1,0 @@
-source:      MSD
-side:        simple
-readability: 4.5
-split:       dev
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'cataracts'
-  [19:20] 'medical-jargon-google-easy' -> 'glaucoma'

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0611
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Does anyone in your family have a neurological disorder? No, not to my knowledge.

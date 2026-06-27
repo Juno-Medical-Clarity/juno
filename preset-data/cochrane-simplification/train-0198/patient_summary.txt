@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0198  |  gem_id: gem-cochrane-simplification-train-199  |  doi: 10.1002/14651858.CD003040.pub2
-
-We found 24 trials that randomly assigned participants to take either an ARB or control substance (placebo or ACEI). These trials evaluated ARBs in 25,051 patients with heart failure and followed them for 2 years. ARBs were no better than placebo or ACE inhibitors in reducing the risk of death, disability, or hospital admission for any reason. However, more patients stopped treatment early with ARBs than with placebo due to side effects. Adding an ARB to an ACEI also did not reduce the risk of death, disability, or hospital admission for any reason as compared to ACEI alone, although more patients taking the combination stopped early due to side effects.

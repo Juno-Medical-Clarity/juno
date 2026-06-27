@@ -1,9 +1,0 @@
-Doctor: Any pain while peeing?
-Patient: No.
-Doctor: Any change in frequency or feeling the urgency to pee?
-Patient: No.
-Doctor: And what about bladder control, any accidents?
-Patient: No.
-Doctor:  Any history of syphilis or any other S T D?
-Patient: No, never.
-Doctor: Okay.

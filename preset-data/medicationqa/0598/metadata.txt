@@ -1,5 +1,0 @@
-drug_focus: ibuprofen
-question_type: Usage/time
-section_title: Can I take ibuprofen for a long time?
-source_url: https://beta.nhs.uk/medicines/ibuprofen-for-adults/
-sample_id: 0598

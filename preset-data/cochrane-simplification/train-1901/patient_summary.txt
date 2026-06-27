@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1901  |  gem_id: gem-cochrane-simplification-train-1902  |  doi: 10.1002/14651858.CD012685.pub2
-
-We looked for all research studies (randomised controlled trials) published up to July 2018. We found six studies which included 221 participants, with an average age ranging from 59 to 70 years. These studies included different numbers of people, ranging from 20 to 111. Our results showed that, compared to those who did not exercise, people with lung cancer who did exercise were fitter and had a better quality of life. We did not find any difference in muscle strength, shortness of breath, tiredness, feelings of anxiety and depression, or lung function. No serious harms were reported in people with lung cancer who exercised, but only three studies talked about harms. The results of this review are not clear, mainly because of the small number of studies found, the small numbers of people in those studies, and because the studies did not seem to have been carried out to a high standard.

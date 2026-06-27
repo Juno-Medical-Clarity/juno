@@ -1,5 +1,0 @@
-pmid:        32773454
-question:    9
-adaptation:  adaptation1
-title:       ACG Clinical Guidelines: Diagnosis and Management of Achalasia
-sentences:   5

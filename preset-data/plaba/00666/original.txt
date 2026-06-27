@@ -1,9 +1,0 @@
-Islet cell antibodies (ICA; proteins made against insulin-producing cells) are a marker of insulin-dependent diabetes mellitus (IDDM).
-ICA are detected in 60-80% of the patients with IDDM at the onset of the disease.
-The presence of ICA in patients with non-insulin-dependent diabetes mellitus (NIDDM) indicates that the patients are likely to develop IDDM.
-However, as ICA are measured by the indirect immunofluorescent method, the reliability of the ICA assay is not high in some institutes.
-Use of the pancreas tissue having high antigenicity is recommended as one solution for a reliable assay.
-Standardization of the ICA assay is under way with the use of an ICA positive standard sera as 80 JDF units.
-Anti-glutamate decarboxylase (GAD) antibody assays using a radioimmunoassay (RIA) or enzyme-linked immunosorbent assay (ELISA) have recently been developed.
-The significance of anti-GAD antibodies is comparable to that of ICA.
-Since the anti-GAD assay is reproducible and easy to perform, it should be used widely in parallel with the ICA assay.

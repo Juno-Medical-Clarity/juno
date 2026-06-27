@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0622
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any history of smoking? Uh yeah, but I quit in two thousand seven. On average, how many packs per day did you smoke? Uh if I were to guess, I'd say one pack per day. Any other drugs? I used to do coke, but I quit that in two thousand five. And any history of drinking? Um I used to drink one pint per day, but I quit drinking more than ten years ago.

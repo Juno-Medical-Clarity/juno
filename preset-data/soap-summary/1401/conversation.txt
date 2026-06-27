@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1401
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-We have you scheduled for a follow up and to have the staples removed in one week with Doctor X Y Z. Do you have your wound care instructions? Yes. Do you have any questions? No. If you do have questions or concerns that may come up, please don't hesitate to call the office. Okay. If you develop a fever greater than one hundred and one point four, chills, nausea, vomiting, or continuing diarrhea please call the office. Also if your incision site becomes red, warm to the touch or has any drainage, call the office. Okay.

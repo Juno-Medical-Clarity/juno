@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0255  |  gem_id: gem-cochrane-simplification-validation-256  |  doi: 10.1002/14651858.CD007387.pub4
-
-We updated the main database searches in March 2017. We identified four studies (571 women) for inclusion. The women primarily had cancer of the cervix and endometrium, with only one study also including women with cancer of the ovary. Our findings demonstrated that placement of suction drains is not effective in preventing lymphocysts, especially when the peritoneum (pelvic lining) is left open. In fact, such practice increases the risk of short- and long-term lymphocyst formation with related symptoms. The review includes four moderate to high quality evidence (unclear or low risk of bias) clinical trials in its final analysis.

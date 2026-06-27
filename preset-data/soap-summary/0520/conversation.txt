@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0520
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, you saw Doctor X? Yes, seven days back. I went to get my blood work done and then I followed up with Doctor Y. Yes, I will look at C B C diff and C M P profile. I will follow up with my oncologist, Doctor Z, for my swellings. Yeah, I couldn't get hold of Doctor Z but here is the phone number. You should book the appointment. Okay I will do that. Also, I would like to follow up with your endocrinologist that is Doctor A for adjustments that is needed in your insulin pump. And you want me to see my gastro doc too? Yes, please follow up with Doctor B for issues with your J tube. Sure thing. Lastly, I want you to see Doctor Y if your condition changes regarding colon cancer.

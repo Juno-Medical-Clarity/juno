@@ -1,1 +1,0 @@
-The primary outcome was defined as a change in retinal thickness at the zone of maximum thickness measured by spectral domain optical coherence tomography at 24 months in the study eye, analysed using a linear mixed-effects model that estimated adjusted treatment effects at both 12 and 24 months.

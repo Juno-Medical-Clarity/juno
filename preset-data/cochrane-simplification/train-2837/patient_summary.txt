@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2837  |  gem_id: gem-cochrane-simplification-train-2838  |  doi: 10.1002/14651858.CD008607.pub2
-
-This review identified four randomised controlled trials including 149 adult patients with idiopathic acute vestibular dysfunction (vestibular neuritis) treated with either corticosteroids or placebo. The studies were varied in that they used different drugs and different treatment regimens. On the basis of these studies, there is currently insufficient evidence in favour of corticosteroids over placebo medication in the symptomatic recovery and objective testing of vestibular function, both in the short-term and long-term. Further studies of higher quality are needed to test the effectiveness of corticosteroids in patients with the condition.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0939
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Did you have a full term delivery? Guest_family: No, he is premature born. Was he hospitalized? Guest_family: Yes. Was he on any machine like the ones that help breathing? Guest_family: No. Was he ever hospitalized afterwards? Guest_family: No. Did he have any surgery? Guest_family: No.

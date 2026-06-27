@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0398
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What's going on with you? What brings you here today? I am having loose watery stools for more than two weeks now. I feel very lethargic. I also have pain in my tummy.

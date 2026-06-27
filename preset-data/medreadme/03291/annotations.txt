@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 4.85
-split:       dev
-
-jargon_spans:
-  [13:14] 'medical-jargon-google-easy' -> 'translation'
-  [20:22] 'medical-jargon-google-easy' -> 'microbial molecules'
-  [26:28] 'medical-jargon-google-easy' -> 'transcriptional response'

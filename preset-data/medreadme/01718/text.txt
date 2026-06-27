@@ -1,1 +1,0 @@
-The two sRNAs, although being highly similar in sequence and structure, act in a hierarchical manner.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0578  |  gem_id: gem-cochrane-simplification-train-579  |  doi: 10.1002/14651858.CD003623.pub3
-
-Two randomised clinical trials on the puncture, aspiration, injection, and re-aspiration method for patients with uncomplicated hepatic hydatid cyst were identified. One trial compared puncture, aspiration, injection, and re-aspiration with surgical treatment. The other trial compared puncture, aspiration, injection, and re-aspiration with or without albendazole with albendazole alone. Both trials had high risk of bias. The number of participants enrolled and the follow-up duration are insufficient for a definite conclusion to be drawn. In general, there is insufficient evidence to support or refute the puncture, aspiration, injection, and re-aspiration method with or without benzimidazole coverage for patients with uncomplicated hepatic hydatid cyst.

@@ -1,1 +1,0 @@
-The promise of effective personalized medicine is dependent upon the ability to identify genetic variants in the population that influence disease risk and then use this information to accurately predict the likelihood of disease incidence for individual patients.

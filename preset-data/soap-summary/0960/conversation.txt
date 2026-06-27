@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0960
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi! Hello, how are you? I am good. I think I am all well now. Yes, looking at your results I think your kidney failure is resolved too.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0729
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So just to double check. No past medical history? Yes, sir. None.

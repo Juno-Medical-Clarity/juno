@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0346  |  gem_id: gem-cochrane-simplification-test-347  |  doi: 10.1002/14651858.CD000022.pub3
-
-This review includes 36 studies involving 6914 patients treated in ICUs to investigate whether the administration of antibiotics prevents the development of infections. Antibiotics were administered in two different ways. In some studies antibiotics were applied both directly to the oropharynx via a nasogastric tube (topical) and intravenously (systemic). In other studies they were applied only topically. Our results show that when patients received the combination of topical plus systemic antibiotics there were less infections and deaths. When patients received only topical treatment there were less infections but the number of deaths was not changed. Although this treatment seems to work it is not widely used in clinical practice because there is concern about the possible development of antibiotic resistance (that is, bacteria become unresponsive to drugs).

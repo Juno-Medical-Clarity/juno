@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0437
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello! How are you all today? Guest_family: Not good. We are really worried about our daughter. What happened? Guest_family: I turned my back for one second and I saw her under the counter in the cabinet. We have childproofing on that cabinet. I don't know how she got it open. I pulled her out from the cabinet, and she had the bottle of ant bait in her hands. She had spilled the entire bottle all over her. She had the liquid on her hands. I don't know if she drank any of it or put her hands in her mouth. Do you know what the ant bait was called? Guest_family: No. I know it was the kind with Borax in it. Do you know how big the container was? Guest_family: It was an eleven M L bottle. I am not sure if that stuff is toxic or not? How old is she? Guest_family: She is fourteen months. Have you noticed and strange behavior or vomiting? Guest_family: No.

@@ -1,6 +1,0 @@
-Natural killer (NK) cells (white blood cells that kill cells infected with a virus) are important early responders against viral infections.
-Changes in metabolism (the process that creates fuel for the body) are crucial to fuel NK cell responses, and changes in metabolism are linked to NK cells not working correctly in obesity and cancer.
-However, very little is known about the metabolism requirements of NK cells during short-term or acute retroviral infection (the earliest stage of infection).
-Using an animal model for study, researchers show that after infection, NK cells increase uptake of nutrients and reprogram how cells in metabolism work.
-Iron deficiency or shortage significantly impairs the NK cells' abilities to fight viruses and leads to increased viral loads (quantity of virus in a person).
-Our study thus shows the requirement of nutrients and metabolism for the antiviral activity of NK cells, and is an important finding for viral infections linked with changes in iron levels such as HIV and SARS-CoV-2.

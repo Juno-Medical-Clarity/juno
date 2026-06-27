@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [2:3] 'abbr-medical' -> 'LTCs'

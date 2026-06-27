@@ -1,5 +1,0 @@
-drug_focus: cyclobenzaprine | benzodiazepine
-question_type: Information
-section_title: Why is this medication prescribed? | https://www.drugabuse.gov/drugs-abuse/opioids/benzodiazepines-opioids
-source_url: https://medlineplus.gov/druginfo/meds/a682514.html | Benzodiazepines and Opioids
-sample_id: 0045

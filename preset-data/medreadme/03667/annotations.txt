@@ -1,9 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 5.15
-split:       test
-
-jargon_spans:
-  [11:14] 'medical-jargon-google-easy' -> '18S rRNA molecules'
-  [17:18] 'medical-jargon-google-easy' -> 'Tp53'
-  [21:23] 'medical-jargon-google-easy' -> 'ribosome biogenesis'

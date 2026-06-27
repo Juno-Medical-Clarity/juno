@@ -1,5 +1,0 @@
-drug_focus: Pain Medications
-question_type: Usage
-section_title: USE AS DIRECTED
-source_url: https://www.fda.gov/forconsumers/consumerupdates/ucm095673.htm
-sample_id: 0141

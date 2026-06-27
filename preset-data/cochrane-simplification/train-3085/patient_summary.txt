@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3085  |  gem_id: gem-cochrane-simplification-train-3086  |  doi: 10.1002/14651858.CD005284.pub3
-
-This review of interventions for PD-associated peritonitis identified 42 studies (2433 participants). Many studies were small, out-dated, of poor quality, and had inconsistent definitions and dosing regimens. In general, information about the best treatment of peritonitis in people on PD may be insufficient to guide therapy. We found that intraperitoneal antibiotics appear to improve treatment responses compared with IV antibiotics. Glycopeptides may increase likelihood of cure compared with first generation cephalosporins. There appears to be no certain role for routine peritoneal lavage (washing) or use of clot-breaking (fibrinolytic) agents. New and larger randomised controlled trials that compare the effects of IV versus intraperitoneal antibiotics and different antibiotic types on patient-relevant outcomes including adequate assessment of treatment harms are still needed.

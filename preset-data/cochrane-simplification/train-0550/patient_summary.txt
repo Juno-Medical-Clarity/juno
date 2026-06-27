@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0550  |  gem_id: gem-cochrane-simplification-train-551  |  doi: 10.1002/14651858.CD003691.pub2
-
-This review identified all randomised or quasi-randomised trials of Ginkgo biloba extract in patients with acute ischaemic stroke. There was no convincing evidence, from trials of sufficient methodological quality, to support the routine use of Ginkgo biloba extract to promote recovery after stroke. High-quality and large-scale randomised controlled trials are needed to test its efficacy.

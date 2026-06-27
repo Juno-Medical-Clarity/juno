@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2941  |  gem_id: gem-cochrane-simplification-train-2942  |  doi: 10.1002/14651858.CD001784.pub2
-
-The review of trials found that men using PGE1 reported more satisfactory sexual experiences. Higher doses gave greater benefits but also increased the adverse effects. The most common adverse effect is some pain, and men may prefer the urethral medication rather than injections.

@@ -1,8 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [8:12] 'medical-jargon-google-hard' -> 'CW - PM continuum'
-  [16:17] 'medical-jargon-google-easy' -> 'Phytophthora'

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0920
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How long have you had this rash? Not long. Less than a day if I had to guess. Is it causing you any pain? No, it's just really itchy. I tried applying Cortisone to it, but it didn't help much. Is the rash localized to the left arm? Yeah. I've only noticed it on my left arm.

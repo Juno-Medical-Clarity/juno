@@ -1,5 +1,0 @@
-pmid:        24338604
-question:    54
-adaptation:  adaptation1
-title:       Longer time-to-pregnancy in spontaneously conceived pregnancies is associated with lower PAPP-A and free β-hCG in first trimester screening for Down syndrome
-sentences:   6

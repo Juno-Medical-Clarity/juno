@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1055  |  gem_id: gem-cochrane-simplification-train-1056  |  doi: 10.1002/14651858.CD006564.pub2
-
-Twenty-nine eligible trials, involving 5247 participants, were identified. It confirms reports from individual trials that motor complications are reduced with dopamine agonists compared to levodopa, but also demonstrates that other important side-effects are increased and symptom control is poorer with agonists. Unfortunately, the balance of risks and benefits remains unclear highlighting the need for further studies assessing patient-rated overall quality of life and economic measures as their primary outcomes.

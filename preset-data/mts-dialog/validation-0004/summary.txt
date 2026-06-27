@@ -1,2 +1,0 @@
-[CC]
-Confusion and hallucinations.

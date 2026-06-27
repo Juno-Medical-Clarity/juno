@@ -1,5 +1,0 @@
-This article provides an overview of current cardiac device management, complications, and future areas for development.
-The last 70 years have seen huge advances in the field of implantable cardiac devices, from diagnostic tools to electrical therapies for bradycardia, ventricular arrhythmia and cardiac resynchronisation.
-While out-of-hours specialist cardiology cover and regional arrhythmia pathways are increasingly established, they are not universal, and the management of arrhythmia remains an important facet of clinical medicine for the general physician.
-This article discusses core recommendations from international guidelines with respect to heart rhythm diagnostics, pacing for bradycardia, cardiac resynchronisation and implantable cardioverter defibrillators, along with common complications.
-Finally, future innovations such as the diagnostic potential of portable technologies, antibiotic envelopes for cardiac devices and the increasing use of leadless pacemakers are described.

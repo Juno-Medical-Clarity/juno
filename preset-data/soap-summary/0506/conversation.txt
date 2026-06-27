@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0506
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-They took some fluid out of your back remember? Yes actually. We got the results back for that and it looks like it was clear then it turned bloody. They checked my urine and blood too. Yes, they did. I see the orders for urine culture, B M P, C B C, C R P, and blood culture as well. I got albuterol nebulizer treatment too. That is good. but did that help you? No, it did not. Oh I am sorry. It is okay. I see that they gave you some antibiotics in E R? Yes, Ampicillin and Cefotaxime.

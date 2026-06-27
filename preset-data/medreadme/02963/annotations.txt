@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 5.3
-split:       dev
-
-jargon_spans:
-  [2:3] 'medical-jargon-google-hard' -> 'Pif1'
-  [17:18] 'medical-jargon-google-easy' -> 'overhang'
-  [24:25] 'medical-jargon-google-easy' -> 'base'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0233  |  gem_id: gem-cochrane-simplification-train-234  |  doi: 10.1002/14651858.CD004277.pub2
-
-The aim of this review was to assess the effectiveness of CsA for severe UC. The literature search identified 36 studies. Only 2 studies were of high methodological quality and both support the use of CsA in UC patients with a severe attack. However, both studies were small (involving only 50 patients altogether) and limited in the length of follow-up (from a few weeks up to a year). There is limited evidence that cyclosporine is more effective than standard treatment for severe ulcerative colitis. The conclusion of the review is that while the data concerning the use of CsA in severe UC are encouraging, more studies are needed.

@@ -1,8 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        simple
-readability: 4.3
-split:       dev
-
-jargon_spans:
-  [18:25] 'medical-name-entity' -> 'National Institute for Health and Care Excellence'
-  [25:26] 'medical-jargon-google-easy' -> 'dementia'

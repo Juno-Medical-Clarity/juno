@@ -1,8 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [12:15] 'medical-jargon-google-easy' -> 'genetic epidemiological data'
-  [20:22] 'medical-jargon-google-easy' -> 'molecular mechanisms'

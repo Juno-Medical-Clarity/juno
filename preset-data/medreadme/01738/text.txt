@@ -1,1 +1,0 @@
-Our analysis indicates that normal development can be maintained through a wide range of localization phenotypes, and that developmental defects due to changes in PleC localization can be rescued by increased PleC expression.

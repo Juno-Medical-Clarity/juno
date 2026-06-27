@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1155
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any known allergies? No.

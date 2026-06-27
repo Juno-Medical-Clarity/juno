@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2398  |  gem_id: gem-cochrane-simplification-train-2399  |  doi: 10.1002/14651858.CD005037.pub2
-
-This systematic review looked at studies providing selenium supplements to cancer patients and found no clear evidence that selenium supplements improve side effects of cancer therapy. No adverse effects were reported in the studies, but evidence of overdosing, all be it unintentional and selenium intoxication has occurred in several selenium users. More research is needed to find out which doses of selenium supplements can be reasonably used by cancer patients and whether selenium supplements can affect the side effects of cancer therapy.

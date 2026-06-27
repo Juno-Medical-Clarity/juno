@@ -1,5 +1,0 @@
-pmid:        28238808
-question:    47
-adaptation:  adaptation1
-title:       Hypophosphatasia: An overview For 2017
-sentences:   14

@@ -1,6 +1,0 @@
-Doctor: Where do you live?
-Patient: I live with my mother around the corner where the Whole Foods is. I have been there for a few years now.
-Doctor: Are you the mother of the patient?
-Guest_family: Yes, I'm the mother.
-Doctor: How are you dealing with everything?
-Guest_family: We just want what is best for him. We want to support him in every possible way. He has only one elder sister. She lives in Texas and she also wants the same for him. Before he started living with us, he has been living in the A B C D places and some were in very bad condition. He was not striving there. That's why we asked him to move in with us.

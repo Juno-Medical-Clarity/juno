@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0098  |  gem_id: gem-cochrane-simplification-validation-99  |  doi: 10.1002/14651858.CD003464.pub2
-
-This updated review of 13 trials found that oral anticoagulation and antiplatelet drugs were more effective than anticoagulation alone. The addition of antiplatelet drugs to anticoagulants increases the risk of bleeding by about 50%. Low-dose aspirin (less than 100 mg daily) may be associated with the lowest risk of bleeding. However, in general the quality of the included trials tended to be low, possibly reflecting the era when the majority of the trials were conducted (1970s and 1980s when trial methodology was less advanced).

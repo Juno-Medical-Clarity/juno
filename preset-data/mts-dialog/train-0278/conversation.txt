@@ -1,4 +1,0 @@
-Doctor: Do you eat three meals a day?
-Patient: Yes.
-Doctor: Do you think those meals add up to about two thousand calories a day?
-Patient: I would say yes.

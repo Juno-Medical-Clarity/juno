@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3002  |  gem_id: gem-cochrane-simplification-train-3003  |  doi: 10.1002/14651858.CD001954.pub4
-
-Randomised controlled trials (RCTs) and quasi-RCTs, comparing azithromycin to amoxycillin or amoxycillin/clavulanic acid in participants with clinical evidence of an acute LRTI, such as acute bronchitis, pneumonia and acute exacerbation of chronic bronchitis. We analysed the results from 15 trials with 2496 participants. The effects of azithromycin on cure, improvement or failure were not better than those of amoxycillin or amoxyclav. However, azithromycin seems to have a lower incidence of adverse events than amoxycillin or amoxyclav but it is not significant. Overall the quality of the evidence for the main outcome is low as only three of 15 included trials showed adequate allocation concealment. Hence, currently, there is insufficient evidence to show conclusively that azithromycin is superior to amoxycillin or amoxyclav in treating acute LRTI.

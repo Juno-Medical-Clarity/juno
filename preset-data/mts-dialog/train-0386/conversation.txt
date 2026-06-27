@@ -1,8 +1,0 @@
-Doctor: Good afternoon, young man.
-Patient: Hello, doctor.
-Doctor: How old are you, young man?
-Patient: I'm thirteen, sir.
-Doctor: Thank you, so, what happened?
-Patient: I sliced my right ring finger with a piece of glass while I was playing around with my friends.
-Doctor: You need to be more careful, young man. What kind of symptoms do you feel in that finger?
-Patient: You're right. I have a lot of, um, numbness and tingling in it.

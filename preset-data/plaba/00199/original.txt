@@ -1,5 +1,0 @@
-It is thought that glucocorticosteroids impair the clearance of immune complexes by the mononuclear phagocyte system (MPS).
-We studied the effect of a five day course of prednisone (1 mg/kg body weight per day) on MPS function in 10 healthy volunteers, using soluble radiolabeled aggregates of human immunoglobulin G as a probe.
-MPS function was assessed before steroid treatment, and again 24 hours after the last dose of prednisone.
-Elimination kinetics and the uptake of the immunoglobulin aggregates by liver and spleen did not change after prednisone treatment.
-This suggests that, in contrast to general belief, high doses of glucocorticosteroids have no direct, acute effect on MPS function.

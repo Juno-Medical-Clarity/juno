@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [4:5] 'medical-jargon-google-easy' -> 'levetiracetam'
-  [6:7] 'medical-name-entity' -> 'Keppra'
-  [8:10] 'medical-name-entity' -> 'UCB Pharma'

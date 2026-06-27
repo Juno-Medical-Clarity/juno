@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1719  |  gem_id: gem-cochrane-simplification-train-1720  |  doi: 10.1002/14651858.CD001984
-
-The main purpose of this systematic review was to determine the effectiveness of multidisciplinary rehabilitation for fibromyalgia and wide spread musculoskeletal pain among working age adults. Patients included in the controlled trials in this review ranged in age from 18-65 years. Seven studies, with 1050 patients were included. The effectiveness of multidisciplinary rehabilitation was graded limited, showing no quantifiable benefit for both fibromyalgia and widespread musculoskeletal pain.

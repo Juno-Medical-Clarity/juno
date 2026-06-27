@@ -1,5 +1,0 @@
-pmid:        34048587
-question:    68
-adaptation:  adaptation2
-title:       Optimal serum ferritin level range: iron status measure and inflammatory biomarker
-sentences:   9

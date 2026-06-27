@@ -1,5 +1,0 @@
-pmid:        9540949
-question:    18
-adaptation:  adaptation2
-title:       The effects of carbohydrate restriction in patients with diet-controlled gestational diabetes
-sentences:   11

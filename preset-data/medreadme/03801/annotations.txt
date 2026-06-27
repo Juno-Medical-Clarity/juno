@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [11:15] 'medical-jargon-google-easy' -> 'oro - antral communications'
-  [16:17] 'medical-jargon-google-hard' -> 'fistulae'

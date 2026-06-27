@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1999  |  gem_id: gem-cochrane-simplification-train-2000  |  doi: 10.1002/14651858.CD004804
-
-For many interventions it is difficult to draw any real conclusions due to weaknesses of the included studies. However, reducing the number of daily doses appears to be effective in increasing adherence to blood pressure lowering medication and should be tried as a first line strategy although there is little evidence of an effect on blood pressure reduction. Some motivational strategies and complex interventions appear promising but we need more evidence on their effect through carefully designed randomised controlled trials to confirm these findings.

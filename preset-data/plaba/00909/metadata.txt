@@ -1,5 +1,0 @@
-pmid:        18667698
-question:    75
-adaptation:  adaptation3
-title:       DNA polymorphisms at the BCL11A, HBS1L-MYB, and beta-globin loci associate with fetal hemoglobin levels and pain crises in sickle cell disease
-sentences:   11

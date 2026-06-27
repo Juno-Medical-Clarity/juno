@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0159  |  gem_id: gem-cochrane-simplification-test-160  |  doi: 10.1002/14651858.CD001167.pub2
-
-In this review, we investigated the benefits and safety of antibiotics for treatment of NTS versus placebo or no antibiotic treatment. We found that in otherwise healthy people, treatment with antibiotics did not have any benefit over treatment with no antibiotics. Furthermore, treatment with antibiotics made it more likely that patients would continue to excrete the same organisms for up to one month after treatment. We are unable to comment on the use of antibiotics in very young people, very old people and people who are unable to fight off infection because the trials we identified did not include these patients.

@@ -1,5 +1,0 @@
-pmid:        18058723
-question:    18
-adaptation:  adaptation1
-title:       A comparison of the effectiveness, tolerability and safety of high and low carbohydrate diets in women with gestational diabetes
-sentences:   15

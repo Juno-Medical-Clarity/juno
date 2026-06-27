@@ -1,5 +1,0 @@
-pmid:        21462113
-question:    61
-adaptation:  adaptation3
-title:       Does zinc absorption reflect zinc status?
-sentences:   8

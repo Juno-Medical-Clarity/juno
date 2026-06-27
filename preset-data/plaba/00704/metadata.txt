@@ -1,5 +1,0 @@
-pmid:        27573827
-question:    55
-adaptation:  adaptation1
-title:       Metabolic features of chronic fatigue syndrome
-sentences:   14

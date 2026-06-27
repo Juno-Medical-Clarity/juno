@@ -1,6 +1,6 @@
 import { authenticatedFetch } from './apiClient';
 import { API_URL } from './firebase';
-import type { Dataset } from '../types/datasets';
+import type { AthenaSource, Dataset, ListDatasetsResponse } from '../types/datasets';
 import { DATASETS_PATH, datasetFilePath } from '../constants';
 
 export interface DatasetFileContent {
@@ -8,11 +8,14 @@ export interface DatasetFileContent {
   content: string;
 }
 
-export async function listDatasets(): Promise<Dataset[]> {
+export async function listDatasets(): Promise<ListDatasetsResponse> {
   const res = await authenticatedFetch(`${API_URL}${DATASETS_PATH}`);
   if (!res.ok) throw new Error(`Failed to list datasets: ${res.status}`);
   const json = await res.json();
-  return json.datasets as Dataset[];
+  return {
+    datasets: (json.datasets ?? []) as Dataset[],
+    athena_sources: (json.athena_sources ?? []) as AthenaSource[],
+  };
 }
 
 export async function getDatasetFileContent(

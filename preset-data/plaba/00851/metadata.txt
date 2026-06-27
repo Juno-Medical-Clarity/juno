@@ -1,5 +1,0 @@
-pmid:        25422150
-question:    69
-adaptation:  adaptation3
-title:       Preventing postpartum depression: review and recommendations
-sentences:   13

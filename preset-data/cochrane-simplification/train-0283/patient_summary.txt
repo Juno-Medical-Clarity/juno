@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0283  |  gem_id: gem-cochrane-simplification-train-284  |  doi: 10.1002/14651858.CD005196.pub4
-
-We undertook this review to try to determine which combination/s of drugs are the most effective for the first-line drug treatment of high-risk GTN, and with the least side effects. We found only one small, older study that compared a drug combination abbreviated as CHAMOCA with one called MAC. The CHAMOCA regimen, which is no longer recommended for GTN treatment, was found to be extremely toxic to the blood and bone marrow, with no greater effect against the cancer than the MAC regimen. Based on the available evidence, it is currently not possible to determine whether EMA/CO is the most effective and least toxic drug combination as no high-quality studies have been conducted comparing this combination with other combinations. GTN is a rare cancer and so studies in this field are difficult to conduct, therefore researchers need to collaborate in order to produce the necessary high-quality evidence.

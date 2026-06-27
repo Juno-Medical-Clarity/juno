@@ -1,5 +1,0 @@
-pmid:        31882509
-question:    65
-adaptation:  adaptation2
-title:       Total Dietary Fats, Fatty Acids, and Omega-3/Omega-6 Ratio as Risk Factors of Breast Cancer in the Polish Population - a Case-Control Study
-sentences:   13

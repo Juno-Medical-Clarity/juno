@@ -1,5 +1,0 @@
-drug_focus: antacids
-question_type: Action
-section_title: Taking antacids
-source_url: https://medlineplus.gov/ency/patientinstructions/000198.htm
-sample_id: 0637

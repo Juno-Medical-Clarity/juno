@@ -1,2 +1,0 @@
-Doctor: Any past medical problems or surgeries that I should know of?
-Patient: Nope, none that I can think of.

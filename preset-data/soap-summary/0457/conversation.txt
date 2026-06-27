@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0457
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you ever had jaundice? Um, no. Any rash or anything? Nope.

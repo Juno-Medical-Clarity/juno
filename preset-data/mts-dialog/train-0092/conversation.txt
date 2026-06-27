@@ -1,9 +1,0 @@
-Doctor: Welcome in.
-Patient: Thank you.
-Doctor: Do you smoke?
-Patient: No, I don't. Smoking is gross.
-Doctor: I agree. Do you drink alcohol?
-Patient: Yes.
-Doctor: How much do you drink per day or week?
-Patient: When I get off work usually have a glass of wine. I don't ever have more then one glass.
-Doctor: Okay.

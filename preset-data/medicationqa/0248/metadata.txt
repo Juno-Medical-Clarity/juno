@@ -1,5 +1,0 @@
-drug_focus: testosterone
-question_type: Information
-section_title: Label
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2e6ce46-6729-4a63-90db-27e933379f45&audience=consumer
-sample_id: 0248

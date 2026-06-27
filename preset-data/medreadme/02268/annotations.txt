@@ -1,7 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 3.3
-split:       train
-
-jargon_spans:
-  [7:9] 'medical-jargon-google-easy' -> 'adverse events'

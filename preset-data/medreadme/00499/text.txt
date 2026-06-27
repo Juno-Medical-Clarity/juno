@@ -1,1 +1,0 @@
-Clinical effectiveness data from randomised controlled trials (RCTs) were synthesised using Bayesian network meta-analysis (NMA) methods to investigate the relative efficacy of SEC and CZP compared with comparator therapies.

@@ -1,1 +1,0 @@
-Model simulations validated by experimental studies revealed a previously unknown biphasic, threshold-gated dependence of mTORC1 activity on the key mTORC2 subunit SIN1, which is robust against cell-to-cell variation in protein expression.

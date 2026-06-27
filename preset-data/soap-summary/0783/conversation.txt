@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0783
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any chronic conditions I should know about, sir? No, not that I can think of. What about injuries, have you ever broken a bone? Yes, I have. I've broken my hand and tibia before.

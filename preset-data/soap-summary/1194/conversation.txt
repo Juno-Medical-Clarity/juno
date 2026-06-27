@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1194
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any known allergies? Oh yes, I cannot take Sulfa drugs. Let me add that to your record.

@@ -1,9 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [7:11] 'medical-jargon-google-easy' -> 'well - conserved sRNAs'
-  [14:16] 'medical-jargon-google-easy' -> 'regulatory cascade'
-  [19:21] 'medical-jargon-google-hard' -> 'glmS mRNA'

@@ -1,5 +1,0 @@
-pmid:        20194915
-question:    37
-adaptation:  adaptation1
-title:       Cognitive effects of pregabalin in healthy volunteers: a double-blind, placebo-controlled trial
-sentences:   14

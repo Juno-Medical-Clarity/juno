@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0428  |  gem_id: gem-cochrane-simplification-test-429  |  doi: 10.1002/14651858.CD000247.pub3
-
-To find out whether antibiotics work for the common cold we identified studies that compared one group of people taking an antibiotic with another group of people taking a medication that looked similar but contained no antibiotic (a placebo). We found six studies of the common cold, with 1047 participants and five studies of acute purulent rhinitis, with 791 participants. Many of the studies had flaws which might have biased the results, especially because many of the participants probably had chest or sinus infections that the researchers did not know about. Results suggest that antibiotics do not work for either the common cold or for acute purulent rhinitis and many people are affected by antibiotic side effects.

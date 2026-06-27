@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0482
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello. Are you a new patient? I am. I've been traveling a lot, so I don't have a local doctor I usually see. That's fine. What is the reason for your visit? I've had this dark spot on my leg for a long time. I see. Do you know if your family has any chronic medical problems? Not that I know of. That's good. I think I'll be able to remove it surgically. Before I go over the procedures, have you had a surgery before? Yeah, I have. I had surgery on my back and to remove my appendix. Sounds good. Other than that dark spot, you seem to be very healthy.

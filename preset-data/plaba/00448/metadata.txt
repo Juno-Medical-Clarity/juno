@@ -1,5 +1,0 @@
-pmid:        22256806
-question:    35
-adaptation:  adaptation1
-title:       Bone-Density Testing Interval and Transition to Osteoporosis in Older Women
-sentences:   7

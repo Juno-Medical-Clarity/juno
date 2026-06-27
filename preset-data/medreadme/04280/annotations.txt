@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'TW'
-  [21:22] 'abbr-medical' -> 'TW'
-  [28:29] 'abbr-medical' -> 'LTCs'

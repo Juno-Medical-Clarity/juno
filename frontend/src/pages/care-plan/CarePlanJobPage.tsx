@@ -407,8 +407,8 @@ export default function CarePlanJobPage() {
     const devMessage = errData?.message ?? null;
     // retryable is a boolean; check !== undefined so false renders correctly
     const retryable = errData?.retryable;
-    // Prefer new "detail" field; fall back to legacy "details" field
-    const technicalDetail = errData?.detail ?? errData?.details ?? null;
+    // Use "details" field from FirestoreJobError / legacy ErrorDetail formats
+    const technicalDetail = errData?.details ?? null;
     const sessionId = jobDoc.session_id ?? null;
     const traceId = jobDoc.trace_id ?? null;
     const sessionLogUrl = sessionId

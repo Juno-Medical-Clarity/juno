@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2103  |  gem_id: gem-cochrane-simplification-train-2104  |  doi: 10.1002/14651858.CD005161.pub2
-
-This is a review of the clinical trials that compared patients initially prescribed one of the two anti-rejection drugs after liver transplantation. Sixteen trials (3813 participants) were included. The review shows that tacrolimus is marginally better than cyclosporin at preventing patient death and graft loss. Tacrolimus is substantially better than cyclosporin at preventing rejection. No differences were seen between the drugs with respect to adverse events (renal failure, lymphoproliferative disorder) except for diabetes mellitus, which was more common with tacrolimus. After liver transplantation more patients stayed on tacrolimus than on cyclosporin. Tacrolimus is more beneficial than cyclosporine and should be considered the treatment of choice after liver transplantation. This review does not evaluate the benefit or harm of switching from one anti-rejection drug to another.

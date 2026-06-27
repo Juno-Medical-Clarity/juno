@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3551  |  gem_id: gem-cochrane-simplification-train-3552  |  doi: 10.1002/14651858.CD005473.pub2
-
-This was a systematic review of 28 short-term randomised controlled trials of medication augmentation for the treatment of such individuals (740 participants). A significantly larger proportion of patients responded to medication (31.8%) than to placebo (13.6%), (nine trials, 250 participants). Symptom severity was also significantly reduced (14 trials, 337 participants). A substantial proportion of the efficacy evidence base was for the augmentation with antipsychotics of serotonin reuptake inhibitors for obsessive compulsive disorder.

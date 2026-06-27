@@ -1,5 +1,0 @@
-Autosomal dominant mutations in fibroblast growth factor receptor 3 (FGFR3) cause achondroplasia (Ach), the most common form of dwarfism in humans, and related chondrodysplasia syndromes that include hypochondroplasia (Hch), severe achondroplasia with developmental delay and acanthosis nigricans (SADDAN), and thanatophoric dysplasia (TD).
-FGFR3 is expressed in chondrocytes and mature osteoblasts where it functions to regulate bone growth.
-Analysis of the mutations in FGFR3 revealed increased signaling through a combination of mechanisms that include stabilization of the receptor, enhanced dimerization, and enhanced tyrosine kinase activity.
-Paradoxically, increased FGFR3 signaling profoundly suppresses proliferation and maturation of growth plate chondrocytes resulting in decreased growth plate size, reduced trabecular bone volume, and resulting decreased bone elongation.
-In this review, we discuss the molecular mechanisms that regulate growth plate chondrocytes, the pathogenesis of Ach, and therapeutic approaches that are being evaluated to improve endochondral bone growth in people with Ach and related conditions.

@@ -1,6 +1,0 @@
-Doctor:  What type of surgeries have you had in the past?
-Patient: I don't know what surgery they did today. I mean I don't know the name of it.
-Doctor: It's okay, I know. It is Lap Band.
-Patient: And I have had right side foot surgery done in the past.
-Doctor: Okay great.
-Patient: Sure.

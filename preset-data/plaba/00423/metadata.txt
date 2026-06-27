@@ -1,5 +1,0 @@
-pmid:        28070716
-question:    33
-adaptation:  adaptation2
-title:       Pharmacokinetics and Saturable Absorption of Gabapentin in Nursing Home Elderly Patients
-sentences:   12

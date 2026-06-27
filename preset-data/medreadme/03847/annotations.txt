@@ -1,7 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [0:1] 'abbr-medical' -> 'RIPC'

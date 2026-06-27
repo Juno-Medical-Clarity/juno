@@ -1,5 +1,0 @@
-pmid:        31030706
-question:    44
-adaptation:  adaptation1
-title:       Use of Shock Index to Identify Mild Hemorrhage: An Observational Study in Military Blood Donors
-sentences:   13

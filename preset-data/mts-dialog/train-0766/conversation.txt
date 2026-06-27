@@ -1,8 +1,0 @@
-Doctor: Can you tell me something about your family? Any illnesses in family?
-Patient: My dad's mom has diabetes and hypertension and my dad's dad had emphysema and he was a smoker.
-Doctor: Okay.
-Patient: Yeah.
-Doctor: Is there any history of death of child who was less than a year maybe?
-Patient:  No, there isn't.
-Doctor: Okay. That's great. No illnesses for small children?
-Patient: No.

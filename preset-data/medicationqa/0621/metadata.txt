@@ -1,5 +1,0 @@
-drug_focus: spironolactone
-question_type: Appearance
-section_title: DESCRIPTION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479&audience=consumer
-sample_id: 0621

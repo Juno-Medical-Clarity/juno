@@ -1,8 +1,0 @@
-source:      pnas
-side:        complex
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [0:1] 'general-complex' -> 'Subalpine'
-  [11:15] 'general-complex' -> 'stand - replacing fires'

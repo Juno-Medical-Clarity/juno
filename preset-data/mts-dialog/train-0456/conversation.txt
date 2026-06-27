@@ -1,4 +1,0 @@
-Doctor: Any medical diseases in the family?
-Patient: Yeah, mainly heart issues. My father died from heart attack.
-Doctor: What about your mother?
-Patient: She had the second type of diabetes.

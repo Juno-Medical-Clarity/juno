@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0499
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any past medical problems or surgeries that I should know of? Nope, none that I can think of.

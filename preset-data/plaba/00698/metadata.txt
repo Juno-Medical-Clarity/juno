@@ -1,5 +1,0 @@
-pmid:        33818024
-question:    54
-adaptation:  adaptation1
-title:       Normalisation of human chorionic gonadotrophin (hCG) levels in a patient with partial molar pregnancy with a uterine mass without chemotherapy: impact of using herbal remedies
-sentences:   11

@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'therapeutic writing'
-  [8:9] 'abbr-medical' -> 'TW'

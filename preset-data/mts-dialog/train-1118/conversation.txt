@@ -1,6 +1,0 @@
-Doctor: What is your family medical history?
-Patient: My dad had colon cancer.
-Doctor: Did your dad pass from colon cancer?
-Patient: No. They caught it early. He passed away from old age. My mom passed away when she was in her nineties from a stroke.
-Doctor: I am sorry. Do you have any family history of any neurological disorders like, M S, Alzheimer's, Parkinson's or epilepsy?
-Patient: Other then my mom having a stroke, I know of nothing else.

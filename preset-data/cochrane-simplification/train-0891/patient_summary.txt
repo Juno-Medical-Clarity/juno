@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0891  |  gem_id: gem-cochrane-simplification-train-892  |  doi: 10.1002/14651858.CD007274.pub2
-
-There was no significant difference between the sedation techniques as regards safety. There were no deaths in the trials and the number of major complications, such as lack of oxygen (hypoxaemia) and low blood pressure (hypotension), was comparable in both techniques. There was no difference in patient satisfaction in either group. However, the recovery of patients who received propofol was significantly better than for those who had received midazolam and meperidine for the procedure. In conclusion, patients undergoing ERCP procedures under propofol sedation recover faster and better than those patients receiving midazolam and meperidine sedation. This would make propofol the preferred choice for these procedures as there was no difference in the safety of either technique. Further research should focus on the safety of the sedative techniques and involve anaesthesia personnel in the administration of the sedation.

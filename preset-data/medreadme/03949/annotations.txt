@@ -1,7 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 3.5
-split:       test
-
-jargon_spans:
-  [7:9] 'medical-jargon-google-easy' -> 'binge drink'

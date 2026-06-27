@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1472
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Looks like the nurse came in and asked you everything. Ah, she has everything documented here, but I will ask one more time. So, tell me, where do you live? Oh, it's a senior citizen house. They have many nursing aids there. Do you smoke? No. Do you work? Ah, right now I can't because of this disability, but I used to work as the security guard.

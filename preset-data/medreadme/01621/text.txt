@@ -1,1 +1,0 @@
-The category' ERG base-case / preferred analysis' was reported in 45 (48%) reports, the category' fixing errors' was reported in 33 (35%) reports and the category' fixing violations' was reported in 17 (18%) reports.

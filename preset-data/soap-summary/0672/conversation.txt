@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0672
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any other allergies besides Penicillin? Um no. I see here that you've previously tolerated Cephalosporins without any problems. Do you remember when you were last prescribed a Penicillin like antibiotic?

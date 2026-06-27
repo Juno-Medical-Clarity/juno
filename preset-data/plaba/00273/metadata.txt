@@ -1,5 +1,0 @@
-pmid:        19959076
-question:    22
-adaptation:  adaptation1
-title:       Birt-Hogg-Dubé syndrome: diagnosis and management
-sentences:   6

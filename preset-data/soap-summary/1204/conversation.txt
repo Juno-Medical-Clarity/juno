@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1204
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You had a heart procedure done couple months back right? Yes, they had to do a cardioversion on me because of my heart rhythm disorder. Okay. And I am taking a blood thinner right now. Yes, I saw, you are on Coumadin. Do you know other medications you are on? Yes, I have a list with me. Here, look. Wow! That is great. Thank you for being so thorough. Sure. So you are on Pacerone, Zaroxolyn, albuterol inhaler, Neurontin, Lasix, and some other. Yes. Do you have diabetes? No, I do not. Okay, have you smoked in the past? Yes, I have, but I quit some years back. Okay. Have you ever had lung problems? No, I have not. Okay. How about your family? Anyone sick? No, no one is sick in family.

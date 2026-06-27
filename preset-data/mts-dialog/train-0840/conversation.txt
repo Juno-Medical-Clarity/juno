@@ -1,6 +1,0 @@
-Doctor: Hello, how are you today?
-Patient: I am here for a breast cancer screening.
-Doctor: Have you gotten a mammogram before?
-Patient: Yes, I have. I also try to keep up with my self examinations every few weeks.
-Doctor: That is great. I am happy to see you on top of your preventative healthcare.
-Patient: I try to be as careful as I can since my sister had breast cancer.

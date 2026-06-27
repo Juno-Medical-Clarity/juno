@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 3.3
-split:       dev
-
-jargon_spans:
-  [11:14] 'general-complex' -> 'meta - analysis'

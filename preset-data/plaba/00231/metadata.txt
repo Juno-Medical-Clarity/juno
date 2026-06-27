@@ -1,5 +1,0 @@
-pmid:        32537643
-question:    18
-adaptation:  adaptation2
-title:       Effects of a modestly lower carbohydrate diet in gestational diabetes: a randomized controlled trial
-sentences:   10

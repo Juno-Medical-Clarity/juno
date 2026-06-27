@@ -1,8 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        complex
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [21:25] 'medical-jargon-google-easy' -> 'disability adjusted life years'
-  [26:27] 'abbr-medical' -> 'DALYs'

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1246
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello. You must be his mom. Guest_family: Yeah, he started having a sore throat last night. And that's why we are here. His eyes have been really puffy. Uh, we gave him some Benadryl. Hm. I had a stuffy nose and it was hard to breathe. When did it all start? Guest_family: It started yesterday. All of a sudden, he started complaining saying, “Mama my nose is not working,” and yeah, I noticed he was breathing from his mouth. Any fever or any other symptoms? Guest_family: Yeah, he had some low grade fever. He looked very tired and when I asked him he said that, “I feel like I cannot stand. I have no energy. I want to just lie down.” I can notice that his voice is a little bit hoarse. How's he eating and drinking? Guest_family: He's eating and drinking normally. Any shortness of breath or pain in your stomach? No. Any diarrhea or vomiting? No.

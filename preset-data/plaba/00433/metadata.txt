@@ -1,5 +1,0 @@
-pmid:        8784216
-question:    33
-adaptation:  adaptation1
-title:       Gabapentin
-sentences:   16

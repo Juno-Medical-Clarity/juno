@@ -1,5 +1,0 @@
-pmid:        32632575
-question:    37
-adaptation:  adaptation1
-title:       Pregabalin-associated stuttering and frequent blepharospasm: case report and review
-sentences:   8

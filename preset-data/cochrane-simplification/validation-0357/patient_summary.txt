@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0357  |  gem_id: gem-cochrane-simplification-validation-358  |  doi: 10.1002/14651858.CD006528.pub2
-
-The evidence from this review, which included findings from 29 randomised controlled trials (4974 participants in total), suggests that mirtazapine is likely to have a faster onset of action than the most frequently used type of antidepressants, which are the selective serotonin reuptake inhibitors (SSRIs). It would appear that mirtazapine is superior to SSRIs at the end of treatment over 6 to 12 weeks. Mirtazapine causes adverse events that lead to a similar frequency of dropouts as SSRIs and tricyclic antidepressants, although adverse event profile of mirtazapine is unique. Mirtazapine is likely to cause weight gain or increased appetite and somnolence but is less likely to cause nausea or vomiting and sexual dysfunction than SSRIs.

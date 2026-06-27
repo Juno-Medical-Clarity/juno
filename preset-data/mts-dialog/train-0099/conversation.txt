@@ -1,6 +1,0 @@
-Doctor: Can you tell me about any cancers in your family?
-Patient: Yes, my sister has ovarian cancer, and my father has liver cancer.
-Doctor: Oh I am so sorry.
-Patient: That is okay.
-Doctor: Any heart conditions?
-Patient: My mom and dad both have heart disease. My dad has diabetes too.

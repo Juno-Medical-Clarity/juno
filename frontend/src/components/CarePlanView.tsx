@@ -319,6 +319,18 @@ export default function CarePlanView({
           </div>
         </ResultCard>
       )}
+
+        {result.additional_info && result.additional_info.length > 0 && (
+          <ResultCard color="gray" icon="🔗" title="Data Sources">
+            <ul className="result-list">
+              {result.additional_info.map((path, i) => (
+                <li key={i} style={{ fontFamily: 'monospace', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  {path}
+                </li>
+              ))}
+            </ul>
+          </ResultCard>
+        )}
     </div>
   );
 }

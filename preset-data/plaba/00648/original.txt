@@ -1,6 +1,0 @@
-C-reactive protein (CRP) is a phylogenetically highly conserved plasma protein, with homologs in vertebrates and many invertebrates, that participates in the systemic response to inflammation.
-Its plasma concentration increases during inflammatory states, a characteristic that has long been employed for clinical purposes.
-CRP is a pattern recognition molecule, binding to specific molecular configurations that are typically exposed during cell death or found on the surfaces of pathogens.
-Its rapid increase in synthesis within hours after tissue injury or infection suggests that it contributes to host defense and that it is part of the innate immune response.
-Recently, an association between minor CRP elevation and future major cardiovascular events has been recognized, leading to the recommendation by the Centers for Disease Control and the American Heart Association that patients at intermediate risk of coronary heart disease might benefit from measurement of CRP.
-This review will largely focus on our current understanding of the structure of CRP, its ligands, the effector molecules with which it interacts, and its apparent functions.

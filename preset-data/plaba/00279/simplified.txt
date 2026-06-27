@@ -1,5 +1,0 @@
-Changes in the gene called FLCN, which is a gene that suppresses tumor growth, are responsible for the inherited disorder Birt-Hogg-Dubé syndrome. This syndrome makes people likely to get non-cancerous tumors in hair follicles around the face, neck and chest (fibrofolliculomas), cysts (sacs of air) in the lungs, sudden collapse of the lung, and an increased risk for developing tumors in the kidneys.
-Some parts of the gene protein, called folliculin, is shown to have a similar structure  to other proteins called DENN.
-FLCN binds with folliculin proteins 1 and 2 (FNIP1, FNIP2) and with a protein kinase that is a critical molecule for energy sensing.
-This review summarizes other studies that have studied FLCN functions, including its role in how the body distributes nutrients and other cell processes.
-Ongoing research efforts focus on understanding the ways FLCN may lead to the development of fibrofolliculomas, lung cysts, and kidney tumors in Birt-Hogg-Dubé patients who have the FLCN mutation.

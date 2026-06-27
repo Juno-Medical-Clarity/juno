@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0896
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke or drink? No, neither. Any history of drug abuse? No, I have never used any illegal drugs in my life. Okay.

@@ -1,5 +1,0 @@
-pmid:        34600555
-question:    39
-adaptation:  adaptation1
-title:       Development of a two-circular RNA panel as potential prognostic biomarker for gastric cancer
-sentences:   11

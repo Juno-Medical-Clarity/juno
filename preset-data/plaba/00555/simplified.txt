@@ -1,4 +1,0 @@
-The first heart-related or cardiac implantable electronic device (CIED), the electronic pacemaker, maintains heart-related contraction during a slow heart rate.
-The implantable cardioverter-defibrillator (ICD), which corrects irregular heart beats, manages fast heart rate or irregular contractions and saves lives by high-energy shocks.
-The heart-related or cardiac resynchronization therapy (CRT) device restores irregular heart pumps in patients with heart failure (HF).
-Despite >50 years of pacing and 40 years of ICD therapy, the lead or contact point remains the weakest link between the device and patient.

@@ -1,5 +1,0 @@
-drug_focus: Palmarosa
-question_type: Stopping/tapering
-section_title: Palmarosa essential oil information
-source_url: https://essentialoils.co.za/essential-oils/palmarosa.htm
-sample_id: 0203

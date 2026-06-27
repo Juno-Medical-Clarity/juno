@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0179  |  gem_id: gem-cochrane-simplification-validation-180  |  doi: 10.1002/14651858.CD000456.pub5
-
-The review of trials found, when compared to conventional mechanical ventilation (CMV), high-frequency positive pressure ventilation (HFPPV) reduced the risk of air leak and triggered ventilation was associated with a shorter duration of ventilation. Compared to high-frequency oscillation, however, certain triggered modes of ventilation resulted in a greater risk of moderate to severe chronic lung disease and a longer duration of ventilation. Newer forms of triggered ventilation have only been evaluated in small randomised trials and have not been demonstrated to have advantages in important clinical outcomes.

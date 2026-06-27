@@ -1,1 +1,0 @@
-Here we use high-throughput single-molecule imaging to examine Exo1 activity on DNA and in the presence of single-stranded DNA binding proteins.

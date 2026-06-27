@@ -1,1 +1,0 @@
-In stage 1, propensity score stratification and inverse probability weighting replicated the results of TOPKAT.

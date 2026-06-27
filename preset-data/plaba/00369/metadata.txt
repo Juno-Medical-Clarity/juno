@@ -1,5 +1,0 @@
-pmid:        32837716
-question:    29
-adaptation:  adaptation1
-title:       Coronavirus Disease (COVID-19) and Immunity Booster Green Foods: A Mini Review
-sentences:   9

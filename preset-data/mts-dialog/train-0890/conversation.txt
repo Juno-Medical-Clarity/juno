@@ -1,7 +1,0 @@
-Patient: Help! I need help! I need to see the doctor!
-Doctor: Yes, what's wrong? Where's your pain?
-Patient: My stomach! It hurts so much! I've never had this type of pain before!
-Doctor: When did it start?
-Patient: At ten! I don't know. It started hurting out of nowhere. One second I'm driving home and the next thing I know I had to call-
-Doctor: Yes?
-Patient: The pain is so bad! It's hard for me to even think straight.

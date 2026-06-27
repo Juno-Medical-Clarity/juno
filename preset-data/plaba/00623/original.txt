@@ -1,4 +1,0 @@
-Systemic lupus erythematosus (SLE) is a common autoimmune connective tissue disease with unclear etiology and pathogenesis.
-Mesenchymal stem cell (MSC) and MSC derived extracellular vesicles (EVs) play important roles in regulating innate and adaptive immunity, which are involved in many physiological and pathological processes and contribute to the immune homeostasis in SLE.
-The effects of MSCs and EVs on SLE have been drawing more and more attention during the past few years.
-This article reviews the immunomodulatory effects and underlying mechanisms of MSC/MSC-EVs in SLE, which provides novel insight into understanding SLE pathogenesis and guiding the biological therapy.

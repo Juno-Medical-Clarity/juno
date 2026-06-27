@@ -1,3 +1,0 @@
-Doctor: Are you taking any medicines?
-Patient: Just Tylenol for my pain.
-Doctor: Okay.

@@ -1,7 +1,0 @@
-Detecting chemical compounds in exhaled human breath may help determine health status, identify disease, or measure environmental exposure.
-Recent advances in research of small energy molecules (metabolomics) led to better methods to explore human health status in breath.
-Despite some methodological challenges, exhaled breath is a desirable tool for metabolomics due to its non-surgery, convenient, and limitless availability.
-Many breath-based tests that target internal or external gas compounds are established and used in practice.
-This review outlines the concept of breath analysis regarding these unique breath-based tests and their applications.
-The breath biological disease markers in each test are discussed based on their production in humans and development and use of the associated tests.
-The paper ends with a short look into future tests and direction of breath research.

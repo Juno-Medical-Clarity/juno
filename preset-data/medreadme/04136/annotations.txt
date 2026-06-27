@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [1:4] 'medical-jargon-google-easy' -> 'stromal stem cells'
-  [19:21] 'medical-jargon-google-easy' -> 'stem cells'
-  [24:26] 'medical-jargon-google-easy' -> 'stem cell'

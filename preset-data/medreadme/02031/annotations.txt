@@ -1,9 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [4:6] 'general-complex' -> 'realist synthesis'
-  [15:16] 'abbr-medical' -> 'CBPS'
-  [19:20] 'abbr-medical' -> 'HL'

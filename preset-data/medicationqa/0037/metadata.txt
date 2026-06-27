@@ -1,5 +1,0 @@
-drug_focus: barbiturates
-question_type: Information
-section_title: NA
-source_url: https://drugabuse.com/library/barbiturate-abuse/
-sample_id: 0037

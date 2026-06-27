@@ -1,7 +1,0 @@
-We are interested in studying the waning effectiveness of COVID-19 vaccines and the effectiveness of booster doses.
-Using national Brazilian databases, we studied the trends of negative test results of almost 14 million people (representing about 16 million tests) to estimate the reduced effectiveness of CoronaVac COVID-19 vaccines over time. We also studied the effects of the Pfizer BNT162b2 booster dose on the rates of confirmed COVID-19 infection and severe outcomes (hospitalization or death).
-Compared with unvaccinated individuals, the effectiveness of the CoronaVac vaccine at 14-30 days after the second dose was 55% against confirmed infection and 82.1% against severe outcomes.
-Vaccine effectiveness decreased to 34.7% against infection and 72.5% against severe outcomes over 180 days after the second dose.
-A Pfizer BNT162b2 booster shot given 6 months after the second dose of CoronaVac, improved vaccine effectiveness by 92.7% against infection and 97.3% against severe outcomes 14-30 days after the booster.
-Compared with younger age groups, individuals 80 years of age or older had lower protection after the second dose but similar protection after the booster.
-Based on these results, we recommend a BNT162b2 booster vaccine dose after two doses of CoronaVac, particularly for the elderly.

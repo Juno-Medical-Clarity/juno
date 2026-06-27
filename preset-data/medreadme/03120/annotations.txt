@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.5
-split:       dev
-
-jargon_spans:
-  [5:6] 'medical-jargon-google-easy' -> 'everolimus'
-  [16:17] 'abbr-medical' -> 'BSC'

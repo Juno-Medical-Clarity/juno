@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [36:40] 'medical-jargon-google-easy' -> 'gynaecological and genitourinary cancers'
-  [55:56] 'medical-jargon-google-easy' -> 'psoriasis'

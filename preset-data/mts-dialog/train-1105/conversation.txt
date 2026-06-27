@@ -1,9 +1,0 @@
-Doctor: Let me examine your skin.
-Patient: Sure.
-Doctor: It looks normal and well hydrated. Any excessive sweating?
-Patient: No, not really.
-Doctor: I don't see any injury or wounds.
-Patient: Yeah.
-Doctor: Its just a normal protocol to ask these questions for every new patient.
-Patient: I understand.
-Doctor: Thank you for your cooperation.

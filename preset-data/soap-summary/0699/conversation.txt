@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0699
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You are five feet four inches. Yes. Weight one ninety seven. Okay. Your blood pressure is one twenty five over seventy five. Okay.

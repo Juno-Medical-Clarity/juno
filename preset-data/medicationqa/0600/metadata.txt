@@ -1,5 +1,0 @@
-drug_focus: doxycycline
-question_type: Ingredient
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b52e0a7-f024-4d8a-a59e-374946e60b44&audience=consumer
-sample_id: 0600

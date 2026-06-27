@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2268  |  gem_id: gem-cochrane-simplification-train-2269  |  doi: 10.1002/14651858.CD001999.pub2
-
-No new studies were included for this update. Seven studies with 802 participants were included in this review. The review of trials found that the benefit of heparin, LMWHs and oral anticoagulants for treatment of intermittent claudication has not been established while an increased risk of major bleeding events has been observed, especially with oral anticoagulants. There is no clear evidence to support the use of anticoagulants for intermittent claudication at this stage. More research is needed.

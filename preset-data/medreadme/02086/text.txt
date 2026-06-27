@@ -1,1 +1,0 @@
-In addition, we accurately estimated variations in abundance of the signal proteins between individual cells by direct comparison of experimental data with simulation results using Apparent Measurement Error (AME).

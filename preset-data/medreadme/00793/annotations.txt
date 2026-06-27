@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Premature babies'
-  [10:13] 'medical-jargon-google-easy' -> 'retinopathy of prematurity'

@@ -1,7 +1,0 @@
-Bedsores are a worldwide problem that is hard to heal because it causes long-lasting inflammation (redness and swelling from fighting an infection) and harms the extracellular matrix (ECM; secreted by cells and surrounds cells in tissues) from not enough oxygen and blood flow.
-The study we did before found that non-fouling zwitterionic (inner salts to which proteins and bacteria cannot stick) sulfated poly (sulfobetaine methacrylate) (SBMA) hydrogel can improve bedsore healing and quickly rebuild ECM.
-However, scientists are unsure how SBMA hydrogel rebuilds ECM.
-In this study, we look at how SBMA hydrogel rebuilds ECM using a rat bedsore model.
-SMBA hydrogel helps remodel ECM better than PEG hydrogel, another bedsore treatment.
-
-The relationship between autophagy (cleaning out of damaged cells) with ECM remodeling may influence the design of wound dressings with substances that interact with biological systems for long-term wound repair.

@@ -1,5 +1,0 @@
-pmid:        17950653
-question:    71
-adaptation:  adaptation3
-title:       Achondroplasia: from genotype to phenotype
-sentences:   8

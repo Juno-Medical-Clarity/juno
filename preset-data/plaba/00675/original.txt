@@ -1,8 +1,0 @@
-X-chromosome inactivation generally results in dosage equivalence for expression of X-linked genes between 46,XY males and 46,XX females.
-The 20-30% of genes that escape silencing are thus candidates for having a role in the phenotype of Turner syndrome.
-Understanding which genes escape from silencing, and how they avoid this chromosome-wide inactivation is therefore an important step toward understanding Turner Syndrome.
-We have examined the mechanism of escape using a previously reported knock-in of a BAC containing the human escape gene RPS4X in mouse.
-We now demonstrate that escape from inactivation for RPS4X is already established by embryonic Day 9.5, and that both silencing and escape are faithfully maintained across the lifespan.
-No overt abnormalities were observed for transgenic mice up to 1 year of age despite robust transcription of the human RPS4X gene with no detectable downregulation of the mouse homolog.
-However, there was no significant increase in protein levels, suggesting translational compensation in the mouse.
-Finally, while many of the protein-coding genes have been assessed for their inactivation status, less is known about the X-linked RNA genes, and we propose that for many microRNA genes their inactivation status can be predicted as they are intronic to genes for which the inactivation status is known.

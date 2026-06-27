@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [13:15] 'medical-jargon-google-easy' -> 'physical therapies'
-  [16:18] 'medical-jargon-google-easy' -> 'neural structure'

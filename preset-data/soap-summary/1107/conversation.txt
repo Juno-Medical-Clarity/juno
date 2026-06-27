@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1107
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married, ma'am? Yes. Do you smoke, use alcohol or use recreational drugs? No.

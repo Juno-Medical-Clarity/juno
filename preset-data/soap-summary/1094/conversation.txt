@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1094
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-quit 2 years ago. 6-pack beer plus 2 drinks per day for many years: now claims he has been dry for 2 years. Denies illicit drug use.

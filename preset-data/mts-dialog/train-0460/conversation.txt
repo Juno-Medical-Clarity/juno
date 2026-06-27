@@ -1,2 +1,0 @@
-Doctor: Any drug allergies?
-Patient: No.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0638  |  gem_id: gem-cochrane-simplification-train-639  |  doi: 10.1002/14651858.CD008768.pub2
-
-This review aimed to find out whether there is good evidence that any of these work. We searched for good quality studies that involved adult patients (18 or older) who had experienced hiccups for 48 hours or more. Our conclusion is that there is insufficient evidence to recommend a particular treatment for hiccups. There is a need for randomised controlled studies to identify which treatments might be effective or harmful in treating persistent hiccups.

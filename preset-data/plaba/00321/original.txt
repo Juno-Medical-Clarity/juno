@@ -1,4 +1,0 @@
-SARS-CoV-2 variants of concern show reduced neutralization by vaccine-induced and therapeutic monoclonal antibodies; therefore, treatment alternatives are needed.
-We tested therapeutic equine polyclonal antibodies (pAbs) that are being assessed in clinical trials in Costa Rica against five globally circulating variants of concern: alpha, beta, epsilon, gamma and delta, using plaque reduction neutralization assays.
-We show that equine pAbs efficiently neutralize the variants of concern, with inhibitory concentrations in the range of 0.146-1.078 μg/mL, which correspond to extremely low concentrations when compared to pAbs doses used in clinical trials.
-Equine pAbs are an effective, broad coverage, low-cost and a scalable COVID-19 treatment.

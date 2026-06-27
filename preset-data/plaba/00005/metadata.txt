@@ -1,5 +1,0 @@
-pmid:        30237473
-question:    1
-adaptation:  adaptation2
-title:       Dystonia
-sentences:   8

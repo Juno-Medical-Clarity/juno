@@ -1,8 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [3:6] 'medical-jargon-google-easy' -> 'intestinal epithelial barrier'
-  [10:11] 'general-complex' -> 'cordons'

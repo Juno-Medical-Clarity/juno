@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1462
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How are you Mister James? I have been better! Oh, tell me what's going on with you? I have this leg pain on my left side. Hm, left leg pain? Yeah.

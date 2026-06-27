@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [10:11] 'abbr-medical' -> 'FST'
-  [12:13] 'abbr-medical' -> 'MPT'

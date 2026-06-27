@@ -1,5 +1,0 @@
-drug_focus: Spironolactone
-question_type: Stopping/tapering
-section_title: Take as directed
-source_url: https://www.healthline.com/health/spironolactone-oral-tablet#take-as-directed
-sample_id: 0194

@@ -1,5 +1,0 @@
-pmid:        31401006
-question:    46
-adaptation:  adaptation2
-title:       The role of endothelial cells in cystic fibrosis
-sentences:   6

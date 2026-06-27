@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 5.2
-split:       test
-
-jargon_spans:
-  [11:12] 'abbr-medical' -> 'SOZ'
-  [19:20] 'abbr-medical' -> 'SOZ'

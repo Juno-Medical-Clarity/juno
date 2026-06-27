@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1018
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Your last visit was on April seventh two thousand five, correct. Ah no, it was on April eighth two thousand five, doctor. That's right. So, has anything changed since then? No, everything is the same really.

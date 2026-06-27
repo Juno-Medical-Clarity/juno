@@ -1,9 +1,0 @@
-source:      MSD
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [3:4] 'general-medical-multisense' -> 'stool'
-  [13:14] 'general-medical-multisense' -> 'stool'
-  [18:20] 'medical-jargon-google-easy' -> 'fecal impaction'

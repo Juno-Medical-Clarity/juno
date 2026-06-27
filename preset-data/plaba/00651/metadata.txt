@@ -1,5 +1,0 @@
-pmid:        1887812
-question:    50
-adaptation:  adaptation1
-title:       C-reactive protein in sarcoidosis
-sentences:   11

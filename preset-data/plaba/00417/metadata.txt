@@ -1,5 +1,0 @@
-pmid:        32278343
-question:    32
-adaptation:  adaptation1
-title:       A prospective cohort study of MTHFR C677T gene polymorphism and its influence on the therapeutic effect of homocysteine in stroke patients with hyperhomocysteinemia
-sentences:   11

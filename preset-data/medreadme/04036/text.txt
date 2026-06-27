@@ -1,1 +1,0 @@
-In computer simulations, data for which the value of a quantity is known are often simulated from statistical models, and the ability of a statistical method to estimate this quantity is evaluated on the simulated data.

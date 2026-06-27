@@ -1,9 +1,0 @@
-source:      MSD
-side:        complex
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'pathologic changes'
-  [9:11] 'medical-jargon-google-easy' -> 'aortic root'
-  [12:14] 'medical-jargon-google-easy' -> 'ascending aorta'

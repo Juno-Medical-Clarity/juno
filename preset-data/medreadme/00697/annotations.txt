@@ -1,8 +1,0 @@
-source:      MSD
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'T cells'
-  [8:10] 'medical-jargon-google-easy' -> 'parathyroid gland'

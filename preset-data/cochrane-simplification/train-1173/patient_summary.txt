@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1173  |  gem_id: gem-cochrane-simplification-train-1174  |  doi: 10.1002/14651858.CD008306.pub3
-
-We searched scientific databases for trials that had considered the effectiveness of the surgical treatments of urinary incontinence after prostate surgery in men. The trials had to compare surgical treatment versus no treatment, non-surgical treatment, or another surgical treatment. The evidence is current to April 2014. There are five main types of surgery and, despite some of them being in use since the 1990s, we found only one trial that met the inclusion criteria. There was very low quality evidence that the implantation of an artificial urinary sphincter (a manufactured device to prevent urine leaking out) might be more effective than injectable treatment, but with more adverse effects and higher costs. There was no evidence about the other types of surgery.

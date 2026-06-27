@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0516  |  gem_id: gem-cochrane-simplification-train-517  |  doi: 10.1002/14651858.CD001079.pub2
-
-The review of trials found evidence that synthetic surfactant reduced the risk of RDS in babies considered at risk. Babies who receive prophylactic synthetic surfactant have a decreased risk of RDS, pneumothorax (air in the lung cavity) and death. However, babies who receive prophylactic synthetic surfactant have an increased risk of developing lung hemorrhage and patent ductus arteriosus, an open vessel that channels blood from the lungs to the body. Although this can lead to potentially life threatening complications, the overall benefits of surfactant treatment outweigh the risks.

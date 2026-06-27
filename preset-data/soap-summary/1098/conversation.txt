@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1098
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any health issues on your mom or dad's side? No, we're a pretty healthy family.

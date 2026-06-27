@@ -1,5 +1,0 @@
-drug_focus: moxifloxacin
-question_type: Usage
-section_title: WARNINGS AND PRECAUTIONS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78039242-3472-0b54-e053-2a91aa0a2651&audience=consumer
-sample_id: 0623

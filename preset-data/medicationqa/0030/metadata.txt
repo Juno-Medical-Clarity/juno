@@ -1,5 +1,0 @@
-drug_focus: MST
-question_type: Information
-section_title: NA
-source_url: https://www.medicines.org.uk/emc/files/pil.1014.pdf
-sample_id: 0030

@@ -1,1 +1,0 @@
-Furthermore, certain mutant localization patterns that would disrupt development can nevertheless support it when the mislocalized protein is present at higher abundance relative to wild-type.

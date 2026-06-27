@@ -1,5 +1,0 @@
-Patients previously discharged from hospitals with negative (or undetected) COVID-19 tests have been seen to later test positive (detecting COVID-19).
-This paper aims to explain possible reasons for these events. These reasons include false or incorrect negative test results, the virus transitioning from a sleeping to an active phase within the patient, or a patient being exposed and infected after leaving the hospital.
-The reasons why people with no COVID-19 related symptoms test positive for the virus are unknown.
-However, it is known that people with no COVID-19 related symptoms can still spread the virus to others.
-Due to the large scale impact the COVID-19 pandemic is having on the world, it is important to conduct research to better understand how previous COVID-19 patients can become ill with the virus more than once.

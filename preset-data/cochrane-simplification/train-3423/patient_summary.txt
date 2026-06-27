@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3423  |  gem_id: gem-cochrane-simplification-train-3424  |  doi: 10.1002/14651858.CD004639.pub2
-
-This review did not find robust evidence that oral calcium supplementation reduces high blood pressure in adults. It reviewed 13 trials enrolling 485 people, which compared calcium supplementation with placebo or no treatment, and measured blood pressure 8 to 15 weeks later. On average, people receiving extra calcium achieved slightly lower systolic blood pressure at the end of trials. However, most trials were of poor quality, so their results may not be reliable. Trials were too small and short to measure whether extra calcium reduces the risk of death, heart attack or stroke. Calcium usually had no more adverse effects than placebo. Larger, longer duration, better quality trials are needed to clarify whether calcium supplementation can lower high blood pressure.

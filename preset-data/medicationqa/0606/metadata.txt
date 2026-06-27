@@ -1,5 +1,0 @@
-drug_focus: heparin
-question_type: Stopping/tapering
-section_title: Stopping treatment with blood-thinning drug can be fatal
-source_url: http://sciencenordic.com/stopping-treatment-blood-thinning-drug-can-be-fatal
-sample_id: 0606

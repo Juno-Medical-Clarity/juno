@@ -1,5 +1,0 @@
-pmid:        33092041
-question:    29
-adaptation:  adaptation1
-title:       The Role of Micronutrients in Support of the Immune Response against Viral Infections
-sentences:   9

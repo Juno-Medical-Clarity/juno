@@ -1,6 +1,0 @@
-Doctor: Do you know about any medical traits in your family?
-Patient: No, everyone in my family is quite healthy. I'm not aware of any medical problems.
-Doctor: Are you sexually active?
-Patient: Yes, I am with my boyfriend.
-Doctor: Do you take any drugs or alcohol or smoke?
-Patient: No, none of them.

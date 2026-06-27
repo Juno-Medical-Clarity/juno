@@ -1,5 +1,0 @@
-drug_focus: Efudex
-question_type: Information
-section_title: DESCRIPTION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35de1c1c-bef5-46c5-b6f8-ea032147411c
-sample_id: 0404

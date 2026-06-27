@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0505  |  gem_id: gem-cochrane-simplification-train-506  |  doi: 10.1002/14651858.CD005159.pub2
-
-This review identified five trials involving 924 people, but none were of high quality. The review found no significant differences between rifabutin- and rifampicin-containing treatment in curing tuberculosis and preventing relapse, but higher doses of rifabutin might be associated with more adverse effects and there was no evidence that it could shorten treatment. However, very few people with HIV and tuberculosis, who are most likely to benefit from use of rifabutin due to its lack of interaction with antiretroviral drugs, were included in the trials. Better quality clinical trials are needed to understand the place of rifabutin in the treatment of people with tuberculosis, particularly those who also have HIV.

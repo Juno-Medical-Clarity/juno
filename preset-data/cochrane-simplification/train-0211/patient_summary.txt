@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0211  |  gem_id: gem-cochrane-simplification-train-212  |  doi: 10.1002/14651858.CD002240.pub4
-
-This review identified 21 studies with a total of 1371 children. Behavioural interventions when used together with laxative therapy may improve continence in children with non-organic faecal incontinence and constipation whilst biofeedback does not add any long-term benefit. Children who received biofeedback treatment had not always been evaluated beforehand for the suitability of the treatment. There was not enough evidence to assess the effects of biofeedback in children with organic faecal incontinence.

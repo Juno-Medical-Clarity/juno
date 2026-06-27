@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0834
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you allergic to anything? No, I am not. Are you sure? Penicillin or sulfa? Nope nothing. That's good.

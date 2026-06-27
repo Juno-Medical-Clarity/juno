@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2560  |  gem_id: gem-cochrane-simplification-train-2561  |  doi: 10.1002/14651858.CD006632.pub2
-
-Twenty-seven studies involving 11,398 participants were included for analysis. The main results were a reduction in in-hospital complications and improved documentation associated with clinical pathways. Complications assessed included wound infections, bleeding and pneumonia. Most studies reported a decreased length of stay and reduction in hospital costs when clinical pathways were implemented. Considerable variation in study design and settings prevented statistical pooling of results for length of stay and hospital costs. Generally poor reporting prevented the identification of characteristics common to successful clinical pathways. The authors concluded that clinical pathways are associated with reduced in-hospital complications

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0969
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Where do you work? I'm a truck driver. It's a big construction company. I work for them. Do you smoke? Yeah. Cigarette or something else? I do Cigar.

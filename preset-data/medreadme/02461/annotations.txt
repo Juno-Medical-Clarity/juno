@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [17:18] 'general-complex' -> 'combinatorial'
-  [20:22] 'medical-jargon-google-easy' -> 'gene interactions'

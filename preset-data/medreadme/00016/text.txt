@@ -1,1 +1,0 @@
-The majority of GWAS-identified loci are enriched for non-coding single-nucleotide polymorphisms (SNPs) and defining the molecular mechanism of risk is challenging.

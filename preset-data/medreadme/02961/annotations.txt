@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [8:10] 'medical-jargon-google-easy' -> 'biophysical techniques'
-  [14:15] 'medical-jargon-google-hard' -> 'Pif1'
-  [18:22] 'medical-jargon-google-easy' -> 'single - stranded overhangs'

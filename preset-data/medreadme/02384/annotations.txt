@@ -1,8 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        complex
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [4:5] 'general-complex' -> 'pragmatic'
-  [21:23] 'general-complex' -> 'realist review'

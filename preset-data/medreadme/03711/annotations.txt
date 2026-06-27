@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 5.5
-split:       test
-
-jargon_spans:
-  [5:8] 'medical-jargon-google-easy' -> 'natural killer T'
-  [9:10] 'abbr-medical' -> 'NKT'
-  [18:20] 'medical-jargon-google-easy' -> 'T lymphocytes'

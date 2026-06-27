@@ -1,9 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        complex
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [1:2] 'abbr-medical' -> 'EVs'
-  [5:7] 'medical-jargon-google-easy' -> 'flow cytometry'
-  [8:10] 'medical-jargon-google-easy' -> 'electron microscopy'

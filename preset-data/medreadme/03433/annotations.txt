@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Paranoia'
-  [8:9] 'medical-jargon-google-easy' -> 'insomnia'

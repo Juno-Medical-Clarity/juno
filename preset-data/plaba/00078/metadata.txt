@@ -1,5 +1,0 @@
-pmid:        22432746
-question:    7
-adaptation:  adaptation1
-title:       Guideline for the management of acute sore throat
-sentences:   13

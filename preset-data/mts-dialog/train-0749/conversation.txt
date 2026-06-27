@@ -1,8 +1,0 @@
-Doctor: Hello, sir. I'll be your doctor today. How are you feeling?
-Patient: Um uh who? Where am I?
-Doctor: You're in the emergency room.
-Patient: I'm where?
-Doctor: The police found you outside of the local bar. Do you remember what happened prior to your arrival here?
-Patient: I'm no longer at the bar?
-Doctor: No, you're here because someone was worried you may need medical attention.
-Patient: I don't know what's going on. Can you call my girlfriend? She was there with me before we got into a fight.

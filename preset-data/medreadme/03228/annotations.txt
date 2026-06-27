@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.65
-split:       dev
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'Trx fold'
-  [15:20] 'medical-jargon-google-hard' -> 'dithiol CxxC active site motif'

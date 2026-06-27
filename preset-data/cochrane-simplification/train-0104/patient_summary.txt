@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0104  |  gem_id: gem-cochrane-simplification-train-105  |  doi: 10.1002/14651858.CD003918.pub2
-
-The orally-administered cytotoxic, hydroxyurea, may be given alongside radiotherapy for treating cervix cancer. Eight trials comparing concomitant hydroxyurea and radiotherapy with radiotherapy alone were assessed. They were not of sufficient quality to be able to pool the data. Although several trials reported an improvement in survival for patients receiving hydroxyurea, this conclusion was unreliable owing to methodological problems associated with trials including small sample size, a large number of patients excluded from analysis and questionable methods of analysis such as exclusion of treatment related deaths.

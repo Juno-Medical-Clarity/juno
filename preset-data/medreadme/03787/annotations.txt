@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [2:3] 'general-complex' -> 'quasi-RCTs'
-  [4:6] 'general-complex' -> 'cross-over trials'

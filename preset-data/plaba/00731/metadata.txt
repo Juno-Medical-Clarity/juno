@@ -1,5 +1,0 @@
-pmid:        35085224
-question:    58
-adaptation:  adaptation3
-title:       Effectiveness of a Third Dose of mRNA Vaccines Against COVID-19-Associated Emergency Department and Urgent Care Encounters and Hospitalizations Among Adults During Periods of Delta and Omicron Variant Predominance - VISION Network, 10 States, August 2021-January 2022
-sentences:   13

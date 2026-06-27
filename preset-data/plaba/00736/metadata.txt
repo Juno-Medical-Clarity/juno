@@ -1,5 +1,0 @@
-pmid:        35139036
-question:    58
-adaptation:  adaptation3
-title:       SARS-CoV-2 infection and vaccination trigger long-lived B and CD4+ T lymphocytes: implications for booster strategies
-sentences:   9

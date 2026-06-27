@@ -1,5 +1,0 @@
-drug_focus: Nicoderm
-question_type: Information
-section_title: Uses
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93b2d1b9-83c1-40b5-b6af-90c38c8d6cef
-sample_id: 0453

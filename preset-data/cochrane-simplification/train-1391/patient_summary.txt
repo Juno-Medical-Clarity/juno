@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1391  |  gem_id: gem-cochrane-simplification-train-1392  |  doi: 10.1002/14651858.CD003798.pub2
-
-This review examines the benefits and costs of outreach in a range of specialties and in a variety of settings. Simple 'shifted outpatients' styles of specialist outreach were shown to improve access, but there was no evidence of their impact on health outcomes. Outreach as part of more complex multifaceted interventions involving primary care collaborations, education and other services was associated with improved health outcomes, more efficient and guideline-consistent care, and less use of inpatient services. There is a need for better quality evidence evaluating specialist outreach in all settings, but especially in rural and disadvantaged populations.

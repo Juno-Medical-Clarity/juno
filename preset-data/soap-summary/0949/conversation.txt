@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0949
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi, I am Doctor Chandler. Hello Doctor. So, tell me what's going on? I am having a headache.

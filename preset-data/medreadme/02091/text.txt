@@ -1,1 +1,0 @@
-Individual cell behaviors are controlled by a variety of noise, such as fluctuations in biochemical reactions, protein variability, molecular diffusion, transcriptional noise, cell-to-cell contact, temperature, and pH.

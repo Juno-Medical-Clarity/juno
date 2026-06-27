@@ -1,9 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [5:10] 'medical-jargon-google-hard' -> 'HSC niche - forming MSCs'
-  [15:17] 'medical-jargon-google-hard' -> 'HSC niche'
-  [19:20] 'medical-jargon-google-hard' -> 'Cxcl12'

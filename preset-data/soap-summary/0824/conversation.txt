@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0824
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family health history? My mom and dad are both diabetics. My mom has high blood pressure. My brother is having some issues with his liver.

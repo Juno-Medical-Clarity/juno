@@ -1,5 +1,0 @@
-pmid:        28723796
-question:    45
-adaptation:  adaptation1
-title:       Moist exposed burn ointment for treating pressure ulcers: A multicenter randomized controlled trial
-sentences:   11

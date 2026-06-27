@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0318
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good morning, sir. Good morning, doctor. I just need some background information before we begin today. Sure. Good, have you ever had surgery, sir? Yeah, actually I've had it on my knee, a nose job, and, um, carotid sinus surgery.

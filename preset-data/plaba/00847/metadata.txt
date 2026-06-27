@@ -1,5 +1,0 @@
-pmid:        35136706
-question:    68
-adaptation:  adaptation2
-title:       Evaluation of ferritin level in COVID-19 patients and its inflammatory response
-sentences:   11

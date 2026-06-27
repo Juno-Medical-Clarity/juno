@@ -1,4 +1,0 @@
-Doctor: Are there any known disease running in your family?
-Patient: My dad has high blood pressure, and he takes medication for it. He is now eighty two years old. He had a stroke around two years ago. This was his second stroke. First one he had when he was forty five.
-Doctor: What about your mom? How old is she?
-Patient: My mom is eighty years old. She does have sugar issues.

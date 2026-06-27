@@ -1,5 +1,0 @@
-drug_focus: Bupropion
-question_type: Indication
-section_title: MEDICATION GUIDE > What else do I need to know about antidepressant medicines?
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=39b2d509-1281-4464-9cf1-a94bbc18b84b#section-7.5
-sample_id: 0178

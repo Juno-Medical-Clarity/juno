@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0408  |  gem_id: gem-cochrane-simplification-test-409  |  doi: 10.1002/14651858.CD004510.pub3
-
-Our systematic review identified 33 relevant studies, almost all of which were of low methodological quality (a major limitation of the review). We found that telephone follow-up has been applied in many patient groups. There is great variety in the ways the telephone follow-up has been performed. Many different outcomes have been measured. Some studies found effects in favour of the telephone follow-up intervention, but overall studies identified no statistically significant differences between the telephone follow-up and control groups. For as far as the results of studies could be pooled together, we could draw no firm conclusions about the effects of telephone follow-up. No studies identified adverse effects of the intervention.

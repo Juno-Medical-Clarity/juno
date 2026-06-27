@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1716  |  gem_id: gem-cochrane-simplification-train-1717  |  doi: 10.1002/14651858.CD005996.pub3
-
-This review investigated whether the administration of glucocorticoids around the time of implantation improved clinical outcomes in women undergoing IVF or ICSI when compared to no glucocorticoid administration. The review of trials found no evidence that glucocorticoids helped to improve live birth rates. However, there was some evidence of increased pregnancy rates, rather than live birth rates, among women undergoing IVF. This was not found in women undergoing ICSI. More research is needed to elucidate the possible role of this therapy in well defined patient groups.

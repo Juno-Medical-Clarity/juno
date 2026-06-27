@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1421
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Tell me about your family medical history. The only thing that I know about is that my grandma has diabetes.

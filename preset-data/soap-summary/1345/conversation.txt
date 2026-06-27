@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1345
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any surgical history? I had my thyroids taken out. When did you have them taken out? Hm three years ago. Man, time flies. Did you experience any complications post surgery? Nothing out of the ordinary. Who was the surgeon who did your thyroidectomy? Doctor X. What was the final diagnosis? I had a growth on my thyroids. Was the growth cancerous? It was. I was initially reluctant to get them out, but I realized it was necessary. I didn't have much of a choice if I wanted to live ya know. That's understandable. I'm sorry you had to go through that. Surgery is daunting, let alone surgery to remove cancer.

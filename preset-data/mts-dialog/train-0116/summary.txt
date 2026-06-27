@@ -1,2 +1,0 @@
-[ROS]
-EARS: Negative tinnitus, negative vertigo, negative hearing impairment.

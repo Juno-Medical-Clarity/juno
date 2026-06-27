@@ -1,5 +1,0 @@
-pmid:        26048677
-question:    13
-adaptation:  adaptation1
-title:       Nocturnal hypoxia and the success rate of standard atrial fibrillation treatment: a case report
-sentences:   14

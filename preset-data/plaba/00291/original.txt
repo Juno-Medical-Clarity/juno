@@ -1,6 +1,0 @@
-Detection of individuals with phenylketonuria (PKU), an autosomal recessively inherited disorder in phenylalanine degradation, is straightforward and efficient due to newborn screening programs.
-A recent introduction of the pharmacological treatment option emerged rapid development of molecular testing.
-However, variants responsible for PKU do not all suppress enzyme activity to the same extent.
-A spectrum of over 850 variants, gives rise to a continuum of hyperphenylalaninemia from very mild, requiring no intervention, to severe classical PKU, requiring urgent intervention.
-Locus-specific and genotypes database are today an invaluable resource of information for more efficient classification and management of patients.
-The high-tech molecular methods allow patients' genotype to be obtained in a few days, especially if each laboratory develops a panel for the most frequent variants in the corresponding population.

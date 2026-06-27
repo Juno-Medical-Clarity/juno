@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [17:18] 'medical-jargon-google-easy' -> 'tiotropium'
-  [19:20] 'abbr-medical' -> 'LABA'
-  [21:22] 'abbr-medical' -> 'ICS'

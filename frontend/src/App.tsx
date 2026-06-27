@@ -10,6 +10,7 @@ import DocsPage from './pages/docs/DocsPage';
 import AlgorithmDocPage from './pages/docs/AlgorithmDocPage';
 import AdminRoute from './components/AdminRoute';
 import AdminPage from './pages/AdminPage';
+import ErrorBoundary from './components/ErrorBoundary';
 
 export default function App() {
   const { user, loading } = useAuth();
@@ -32,22 +33,28 @@ export default function App() {
   }
 
   return (
-    <Routes>
-      <Route element={<AuthLayout />}>
-        <Route path="/models" element={<ModelsPage />} />
-        <Route path="/models/grading/:versionId" element={<GradingVersionDetailPage />} />
-        <Route path="/docs" element={<DocsPage />} />
-        <Route path="/docs/grading/:slug" element={<AlgorithmDocPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Route>
-      {/* CarePlanPage manages its own NavBar */}
-      <Route path="/" element={<CarePlanPage />} />
-      {/* CarePlanJobPage — async job status / result view */}
-      <Route path="/carePlan/:id" element={<CarePlanJobPage />} />
-      {/* Admin — requires admin custom claim */}
-      <Route element={<AdminRoute />}>
-        <Route path="/admin" element={<AdminPage />} />
-      </Route>
-    </Routes>
+    <ErrorBoundary fallback={<div style={{ padding: '40px', textAlign: 'center' }}>A fatal error occurred. Please refresh.</div>}>
+      <Routes>
+        <Route element={<AuthLayout />}>
+          <Route path="/models" element={<ModelsPage />} />
+          <Route path="/models/grading/:versionId" element={<GradingVersionDetailPage />} />
+          <Route path="/docs" element={<DocsPage />} />
+          <Route path="/docs/grading/:slug" element={<AlgorithmDocPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+        {/* CarePlanPage manages its own NavBar */}
+        <Route path="/" element={<CarePlanPage />} />
+        {/* CarePlanJobPage — async job status / result view */}
+        <Route path="/carePlan/:id" element={
+          <ErrorBoundary>
+            <CarePlanJobPage />
+          </ErrorBoundary>
+        } />
+        {/* Admin — requires admin custom claim */}
+        <Route element={<AdminRoute />}>
+          <Route path="/admin" element={<AdminPage />} />
+        </Route>
+      </Routes>
+    </ErrorBoundary>
   );
 }

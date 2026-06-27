@@ -1,1 +1,0 @@
-Data linkage focused on emergency admissions only.

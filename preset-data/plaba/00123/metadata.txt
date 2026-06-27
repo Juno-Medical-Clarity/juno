@@ -1,5 +1,0 @@
-pmid:        3068693
-question:    10
-adaptation:  adaptation1
-title:       Finger pain
-sentences:   11

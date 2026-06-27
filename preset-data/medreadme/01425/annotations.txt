@@ -1,8 +1,0 @@
-source:      wiki
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [3:4] 'medical-jargon-google-easy' -> 'sulfanilamide'
-  [6:7] 'abbr-medical' -> 'sulfa'

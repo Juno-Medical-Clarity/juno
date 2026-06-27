@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1109  |  gem_id: gem-cochrane-simplification-train-1110  |  doi: 10.1002/14651858.CD001970.pub5
-
-We search scientific databases for clinical trials assessing the effect of delayed (more than four days after birth) versus earlier introduction of progressive enteral feeds (where breast or formula milk is fed directly by a tube into the stomach) on the incidence of necrotising enterocolitis, death and general health in very low birth weight infants. The evidence is current to September 2014. We found nine trials with 1106 infants that assessed the effect of delayed rather than early introduction of milk feeds for very preterm or very low birth weight infants. Data from these trials did not provide any evidence that delaying enteral feeding reduces the risk of necrotising enterocolitis. The included trials were generally of reasonable methodological quality but, in common with other trials of feeding interventions in infants, it was not possible to mask carers and clinical assessors to the given treatment.

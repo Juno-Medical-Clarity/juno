@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0874
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Anything else going on from head to toe? No doctor, everything else is fine. Are you sure? Yes I am sure.

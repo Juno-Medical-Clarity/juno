@@ -1,8 +1,0 @@
-Histones are proteins that provide structural support to a chromosome and sometimes act as the spool that the thread-like DNA wraps around. Changes to the properties and make-up of proteins, a process called post-translational modifications (PTMs), are important for regulating chromatin (a substance within a chromosome made up of DNA and protein) and how information from genes are used.
-Few studies have investigated all the levels of histone PTMs that are needed for dividing cells, changing their functions, and maintaining these specific cell types.
-This study uses an approach called fluorescence-activated cell sorting (FACS) with another technique called targeted mass spectrometry to detect and sort specific white blood cells that infection.
-FACS is used to sort closely and distantly related white blood cells from normal human blood moving throughout the body.
-Researchers tested and confirmed the method to sort cells to decrease time and number of steps after FACS to analyze histone changes.
-In healthy donors, histone PTM levels are different in immune cells called T cells, and most of PTMs stay stable for up to 2 days after blood is drawn.
-Large differences in the levels of histone PTMs are found across the mature, functioning blood cells, though no differences are found in closely related T cell subtypes.
-The results show a streamlined approach for identifying changes in histone PTMs in cell types separated by FACS.

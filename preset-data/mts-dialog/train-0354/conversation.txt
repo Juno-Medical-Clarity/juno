@@ -1,8 +1,0 @@
-Doctor: Do you have kids, ma'am?
-Patient: Yes, I do. I have two sons and we adopted a girl.
-Doctor: Where did you adopt?
-Patient: Just here.
-Doctor: and you are married right? Are you working?
-Patient: Yes, I have been married a long time. I retired from Avon.
-Doctor: Do you smoke cigarettes or drink?
-Patient: I do not smoke or drink alcohol.

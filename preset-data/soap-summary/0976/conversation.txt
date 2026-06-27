@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0976
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you experienced any diarrhea? Yes. I have been having diarrhea. When I think about it, it started happening around the same time that the mouth sores started. I didn't have any diarrhea today though. Have you experienced any episodes of nausea or vomiting? No. Have you noticed any blood in your bowel movements? No. Even though you have been taking the medications without any issue, for about ten years, the methotrexate may be the cause of the mouth sores and the inflammation in the small intestines. These are both common side effects from the use of methotrexate. I am not as familiar with NSAID's causing mouth sores. Aspirin use can cause gastrointestinal upset. I think the most likely cause of the sores is the methotrexate not the use of Aspirin.

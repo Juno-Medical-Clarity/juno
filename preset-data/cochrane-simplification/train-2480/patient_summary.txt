@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2480  |  gem_id: gem-cochrane-simplification-train-2481  |  doi: 10.1002/14651858.CD006627.pub2
-
-This review wanted to find out if there was evidence to support that there is any difference between ziprasidone and the other atypical medications. Because of the large number of people that dropped out of the studies it is difficult to draw any firm conclusions, however, people taking ziprasidone did not do as well regarding their symptoms, as those taking olanzapine and risperidone and perhaps amisulpride, but they were less likely to gain weight.

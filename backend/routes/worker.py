@@ -4,6 +4,7 @@ import logging
 import os
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 
 from flask import Blueprint, request
 
@@ -18,7 +19,7 @@ from models.input import TextInput, DocIdInput
 from models.metrics import Metrics
 from utils.constants import Constants
 from error_codes import ErrorCode as PipelineErrorCode
-from utils.error_handler import build_error_data, build_error_data_from_exc
+from utils.pipeline_errors import build_error_data, build_error_data_from_exc
 
 logger = logging.getLogger(__name__)
 worker_bp = Blueprint("worker", __name__)
@@ -32,9 +33,12 @@ PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
 # allowed values ("file" | "text" | "doc_id").
 _INPUT_TYPE_MAP = {
     "upload": "file",
-    "batch_dataset": "text",
+    "batch_dataset": "text",       # legacy, pre-extracted text
+    "gcs_batch_dataset": "text",   # new, downloads from GCS at worker time
     "doc_id": "doc_id",
     "text": "text",
+    "athena_encounter": "text",    # new SP3 — live Athena encounter fetch
+    "athena_clinical_doc": "text", # new SP3 — live Athena clinical doc fetch
 }
 
 
@@ -62,6 +66,20 @@ def _build_error_data(code: PipelineErrorCode, detail: str = "") -> dict:
     dict with code, message, user_hint, retryable, and detail fields.
     """
     return build_error_data(code, detail)
+
+
+def _extract_text_from_downloaded(
+    base_dir: Path, group: str, input_id: str, files: list[str]
+) -> str:
+    parts: list[str] = []
+    has_text = False
+    for filename in files:
+        local_path = base_dir / group / input_id / filename
+        file_bytes = local_path.read_bytes()
+        text = _extract_text_from_bytes(file_bytes, filename).strip()
+        has_text = has_text or bool(text)
+        parts.append(f"\n\n--- {filename} ---\n\n{text}")
+    return "".join(parts) if has_text else ""
 
 
 def _verify_oidc_token() -> bool:
@@ -139,6 +157,9 @@ def execute_job(job_id: str):
     if not _verify_oidc_token():
         return "", 403
 
+    gcs_temp_dir: Path | None = None
+    is_gcs_dataset_job = False
+
     try:
         job_doc = get_job_doc(job_id)
         if job_doc is None:
@@ -176,14 +197,61 @@ def execute_job(job_id: str):
                 return True
             return False
 
-        text = _resolve_input_from_job_doc(job_doc)
+        source_kind = job_doc.get("input_source_kind", "text")
+
+        athena_additional_info: list[str] = []
+
+        if source_kind == "gcs_batch_dataset":
+            is_gcs_dataset_job = True
+            from utils.gcs_datasets import download_dataset_inputs
+            gcs_temp_dir = download_dataset_inputs(
+                group=job_doc["dataset_group"],
+                input_id=job_doc["dataset_input_id"],
+                files=job_doc["dataset_files"],
+                job_id=job_id,
+            )
+            text = _extract_text_from_downloaded(
+                gcs_temp_dir,
+                job_doc["dataset_group"],
+                job_doc["dataset_input_id"],
+                job_doc["dataset_files"],
+            )
+        elif source_kind in ("athena_encounter", "athena_clinical_doc"):
+            from utils.athena_client import athena_client, AthenaAPIError
+            practice_id = job_doc.get("athena_practice_id") or Constants.ATHENA_PRACTICE_ID
+            api_path = job_doc.get("athena_api_path", "")
+            try:
+                if source_kind == "athena_encounter":
+                    text = athena_client.fetch_encounter_summary(
+                        practice_id, job_doc["athena_encounter_id"]
+                    )
+                else:
+                    text = athena_client.fetch_clinical_doc(
+                        practice_id,
+                        job_doc["athena_patient_id"],
+                        job_doc["athena_document_id"],
+                    )
+            except AthenaAPIError as exc:
+                from utils.error_codes import ErrorCode
+                fail_job(job_id, build_error_data(
+                    ErrorCode.ATHENA_API_ERROR,
+                    f"status={exc.status_code} path={api_path}",
+                ))
+                logger.error(
+                    "worker: Athena API error for job %s: %s", job_id, exc
+                )
+                return "", 200
+            if api_path:
+                athena_additional_info = [api_path]
+        else:
+            text = _resolve_input_from_job_doc(job_doc)
+
         if not text.strip():
             fail_job(job_id, _build_error_data(PipelineErrorCode.EMPTY_DOCUMENT))
             return "", 200
 
         version = job_doc.get("input_version", "v1-2")
         grading_enabled = job_doc.get("grading_enabled", False)
-        source_kind = job_doc.get("input_source_kind", "text")
         is_batch = _is_batch_item(job_doc)
 
         pipeline_fn = PIPELINES.get(version, PIPELINES["v1-2"])
@@ -256,6 +324,12 @@ def execute_job(job_id: str):
         )
         output_data = envelope.to_dict()
 
+        # Inject Athena source paths into care_plan.additional_info
+        if athena_additional_info:
+            care_plan_dict = output_data.get("care_plan", {})
+            care_plan_dict["additional_info"] = athena_additional_info
+            output_data["care_plan"] = care_plan_dict
+
         name = _derive_name(output_data.get("care_plan", {}), job_doc.get("input_source_filename", ""))
         output_data["metrics"]["saved_id"] = job_id
 
@@ -271,6 +345,10 @@ def execute_job(job_id: str):
         except Exception:
             pass
         return "", 500
+    finally:
+        if is_gcs_dataset_job:
+            from utils.gcs_datasets import cleanup_dataset_inputs
+            cleanup_dataset_inputs(job_id)
 
 
 def _derive_name(care_plan_data: dict, source_filename: str) -> str:

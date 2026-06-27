@@ -1,5 +1,0 @@
-drug_focus: Coumadine
-question_type: Dose
-section_title: MEDICATION GUIDE > How should I take COUMADIN?
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d91934a0-902e-c26c-23ca-d5accc4151b6#section-2.3
-sample_id: 0212

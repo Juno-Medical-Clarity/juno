@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0979
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, how are you? I am good, Doctor. So, what brings you here today? Well, I have many medical issues and I see Doctor X for them, but I wanted a second opinion, so he referred me here. Yeah, he is a good man! Don't worry we will take care of you. Thank you. So, let me start by getting your medical history. Sure, I had skin cancer which was treated by removal of that part. Okay. Other than that, I have anemia and an acid reflux problem. I also have history of C O P D. Alright. I also suffer from sciatica which was caused mainly due to my arthritis. I see.

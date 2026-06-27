@@ -1,8 +1,0 @@
-A drug interaction is when other things change the usual effects of a drug, most often other drugs.
-When two drugs are taken at the same time, or within a short time of each other, an interaction can happen that may change the size or length of the effect of one or both drugs.
-Drugs may interact based on what the drugs do to each other (pharmaceutical), what the body does to the drugs (pharmacokinetic), and what the drugs do to the body (pharmacodynamic).
-Pharmacodynamic interactions occur when the change in effect happens at the site the drug works at in the body.
-Phamacodynamics is a wide field.
-Pharmacodynamic interactions can cause drugs to work together or against each other and can happen at different levels of the body.
-Drugs that affect the mind, emotions, and behavior measured through a well known tool for finding and characterizing drug effects on the central nervous system (quantitative pharmaco-EEG) can be used based on the aim of the study: safety (ketoprofen/theophylline, lorazepam/diphenhydramine, granisetron/haloperidol), drug properties (benzodiazepine receptors), or brain function (diazepam/buspirone).
-We focus on methods, especially drug blood levels, response as a function of dosage, and varying activity of the drug over time (fluoxetine/buspirone) and talk about unsolved questions.

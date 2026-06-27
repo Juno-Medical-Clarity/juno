@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0166  |  gem_id: gem-cochrane-simplification-train-167  |  doi: 10.1002/14651858.CD000096.pub2
-
-The review found some evidence that glycerol improves the short term survival after stroke, but there was not enough evidence to decide whether glycerol helps avoid disability after stroke. Adverse effects of glycerol treatment did not happen often, but a small number of treated patients were found to have blood in their urine (this disappeared after the glycerol treatment was stopped). More research is needed.

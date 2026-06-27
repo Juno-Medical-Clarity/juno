@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2875  |  gem_id: gem-cochrane-simplification-train-2876  |  doi: 10.1002/14651858.MR000013.pub6
-
-The 68 included studies covered a very wide range of disease areas, including antenatal care, cancer, home safety, hypertension, podiatry, smoking cessation and surgery. Primary, secondary and community care were included. The size of the studies ranged from 15 to 14,467 participants. Studies came from 12 countries; there was also one multinational study involving 19 countries. The USA and UK dominated with 25 and 22 studies, respectively. The next largest contribution came from Australia with eight studies. Our search updated our 2010 review and is current to February 2015. We also identified six studies published after 2015 outside the search. The review includes 24 mock trials where the researchers asked people about whether they would take part in an imaginary trial. We have not presented or discussed their results because it is hard to see how the findings relate to real trial decisions.

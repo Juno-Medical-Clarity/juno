@@ -1,1 +1,0 @@
-Regression models were used to estimate changes in daytime and night-time collision rates associated with lighting interventions.

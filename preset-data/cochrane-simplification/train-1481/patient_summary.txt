@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1481  |  gem_id: gem-cochrane-simplification-train-1482  |  doi: 10.1002/14651858.CD011458.pub2
-
-The review includes six trials with 1835 people. The trials randomised people with schizophrenia to receive either asenapine or placebo. Five of these trials had high rates of people leaving early and were sponsored by pharmaceutical companies. There is some evidence that asenapine, when compared to placebo, improves the positive, negative and depressive symptoms of schizophrenia while having less risk of debilitating side effects. However, due to the low quantity and limited quality of evidence currently available, it remains difficult to recommend the use of asenapine for schizophrenia. There is a need for large-scale, longer-term follow up, and bias-free randomised controlled trials investigating the effects and safety of asenapine. Ben Gray, Senior Peer Researcher, McPin Foundation. http://mcpin.org/

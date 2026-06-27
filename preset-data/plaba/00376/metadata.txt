@@ -1,5 +1,0 @@
-pmid:        34578858
-question:    29
-adaptation:  adaptation1
-title:       Covid 19: Diet Composition and Health
-sentences:   7

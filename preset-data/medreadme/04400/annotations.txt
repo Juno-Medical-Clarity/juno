@@ -1,7 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Epilepsy'

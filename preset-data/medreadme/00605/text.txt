@@ -1,1 +1,0 @@
-Here, we demonstrate that stochastic bacterial community assembly in the Caenorhabditis elegans intestine is sufficient to produce strong interworm heterogeneity in community composition.

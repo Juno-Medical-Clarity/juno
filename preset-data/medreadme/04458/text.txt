@@ -1,1 +1,0 @@
-Subunits of the SWI / SNF chromatin remodeling complex are frequently mutated in human cancers leading to epigenetic dependencies that are therapeutically targetable.

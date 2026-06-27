@@ -1,1 +1,0 @@
-In the KplE1 prophage, site-specific recombination is mediated by the IntS integrase and the TorI recombination directionality factor (RDF).

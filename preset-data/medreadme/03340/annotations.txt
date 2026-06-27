@@ -1,9 +1,0 @@
-source:      wiki
-side:        simple
-readability: 4.5
-split:       dev
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Iloprost'
-  [4:5] 'medical-name-entity' -> 'Ventavis'
-  [13:14] 'medical-jargon-google-easy' -> 'prostacyclin'

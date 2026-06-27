@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2632  |  gem_id: gem-cochrane-simplification-train-2633  |  doi: 10.1002/14651858.CD001888.pub4
-
-The authors found 75 studies investigating the effectiveness of cell salvage in orthopaedic (36 studies), cardiac (33 studies), and vascular (6 studies) surgery. Overall, the findings show that cell salvage reduces the need for transfusions of donated blood. The authors conclude that there appears to be sufficient evidence to support the use of cell salvage in cardiac and orthopaedic surgery. Cell salvage does not appear to cause any adverse clinical outcomes. As the methodological quality of the trials was poor, the findings may be biased in favour of cell salvage. Large trials of high methodological quality that assess the relative effectiveness, safety, and cost-effectiveness of cell salvage in different surgical procedures should be the focus of future research in this area.

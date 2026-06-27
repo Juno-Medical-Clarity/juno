@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0008  |  gem_id: gem-cochrane-simplification-validation-9  |  doi: 10.1002/14651858.CD006208.pub3
-
-Despite extensive searching, we identified only seven studies for inclusion. Our assessment of the quality and strength of evidence from these studies is low. This review shows that only a handful of medication safety strategies are studied in robust study designs. When the vulnerability of paediatric patients in hospital is considered, more research of high quality should be included on every research agenda.

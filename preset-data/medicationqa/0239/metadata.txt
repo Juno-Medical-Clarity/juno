@@ -1,5 +1,0 @@
-drug_focus: dydrogesterone
-question_type: Indication
-section_title: NA
-source_url: https://en.wikipedia.org/wiki/Dydrogesterone
-sample_id: 0239

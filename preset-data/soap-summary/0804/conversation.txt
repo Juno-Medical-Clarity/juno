@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0804
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any sugar or B P problem? No, it is normal. Okay, how about thyroid or any other hormone related problem? No, everything is fine. Cholesterol? No cholesterol problem.

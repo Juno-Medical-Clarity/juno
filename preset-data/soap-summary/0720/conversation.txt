@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0720
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Did you have your vaccines? Yeah. Did you skip any? No, I had all of them and am up to date with my immunizations.

@@ -60,6 +60,12 @@ def _resolve_requested_runs(selections: list[dict]) -> list[tuple[str, str, list
         if not isinstance(files, list) or not files or not all(isinstance(name, str) and name for name in files):
             raise ValueError(f"Selection for {group} must include files")
 
+        dataset = datasets_by_group.get(group)
+        available_files = dataset["files"] if dataset else []
+        for f in files:
+            if f not in available_files:
+                raise ValueError(f"File type not found in dataset {group}: {f!r}. Available: {available_files}")
+
         available_inputs = datasets_by_group[group].get("inputs", [])
         if selected_inputs == "all":
             input_ids = sorted(available_inputs)

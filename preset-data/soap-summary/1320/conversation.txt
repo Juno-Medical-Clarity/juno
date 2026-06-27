@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1320
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke cigarettes? Yes.

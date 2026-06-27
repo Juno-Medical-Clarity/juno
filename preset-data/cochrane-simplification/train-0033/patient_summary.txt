@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0033  |  gem_id: gem-cochrane-simplification-train-34  |  doi: 10.1002/14651858.CD006865.pub2
-
-Lumiracoxib 400 mg provided rapid, effective, and sustained relief of postoperative pain in four studies in dental and orthopaedic surgery. Of 366 participants treated with lumiracoxib 400 mg half experienced a high level of pain relief (at least 50% pain relief over a six hour period), compared with 8% given placebo. The duration of analgesia was relatively long at 9 hours, and fewer participants needed to use rescue medication with lumiracoxib than with placebo. Adverse event data was inconsistently reported, but no serious adverse events occurred in any patient taking lumiracoxib in these studies.

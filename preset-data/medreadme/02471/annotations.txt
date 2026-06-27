@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [19:23] 'medical-jargon-google-easy' -> 'differentially - expressed genes'
-  [31:32] 'general-complex' -> 'combinatorial'

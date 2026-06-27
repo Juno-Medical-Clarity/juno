@@ -1,1 +1,0 @@
-These dimensions provide a quantitative description of worm behavior, and we partially reconstruct " equations of motion " for the dynamics in this space.

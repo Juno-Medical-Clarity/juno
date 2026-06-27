@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1147  |  gem_id: gem-cochrane-simplification-train-1148  |  doi: 10.1002/14651858.CD002986.pub2
-
-Although complex laboratory studies show that ion generators alter airways function, the few studies which have been conducted in the homes of people with asthma, demonstrate no significant benefit in improving lung function or symptoms.

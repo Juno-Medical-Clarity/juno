@@ -1,1 +1,0 @@
-Metabolic scaling theory (MST) posits that whole-organismal metabolism and growth rate are under stabilizing selection that minimizes the scaling of hydrodynamic resistance and maximizes the scaling of resource uptake.

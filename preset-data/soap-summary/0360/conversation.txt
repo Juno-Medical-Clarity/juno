@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0360
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Well, I don't think you need any restraints as you are doing fine. I do want to make sure you have a chair and bed monitor since you have a history of multiple falls. They can help detect fall. I don't want that, I will manage. Are you sure? Yes!

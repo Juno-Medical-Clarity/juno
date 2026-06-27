@@ -1,5 +1,0 @@
-drug_focus: prevnar
-question_type: Information
-section_title: PCV13 for Infants, Children, and Adults
-source_url: https://www.cdc.gov/pneumococcal/vaccination.html
-sample_id: 0284

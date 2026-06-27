@@ -1,5 +1,0 @@
-pmid:        15156437
-question:    7
-adaptation:  adaptation2
-title:       Meta-analysis of cephalosporins versus penicillin for treatment of group A streptococcal tonsillopharyngitis in adults
-sentences:   5

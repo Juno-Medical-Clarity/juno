@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2279  |  gem_id: gem-cochrane-simplification-train-2280  |  doi: 10.1002/14651858.CD012898.pub2
-
-This review included 12 studies that comprised a total of 1837 participants. Eleven studies that included 1826 participants contributed to the quantitative syntheses. Participants were all adults, but ranged in demographics and trauma types. All studies recruited participants in the United States and there was a predominance of studies conducted on military veterans. PCT does not appear to be as effective as trauma focused treatments in reducing PTSD severity at post-treatment. However, PCT is associated with reduced treatment dropout rates compared to TF-CBT. Several of the TF-CBT trials included in this review were well designed and executed. However, we assessed the overall quality of evidence for our primary outcome (post-treatment PTSD severity) as low based on inconsistent outcomes and some imprecision in the results. We rated the quality of the evidence on differential treatment dropout as moderate.

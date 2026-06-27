@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1288
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any numbness or tingling? No. Are your experiencing any muscle weakness? No. Any problem walking, or did you lose balance or fall? Nope. So, your gait is fine. Any stroke in the past? No, nothing like that.

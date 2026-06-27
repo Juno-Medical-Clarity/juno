@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1437
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I see here that Doctor- Yes, Doctor X referred me. My thyroid is an absolute mess. I have never been in so much pain in my seventy one years. I'm so sorry to hear that. I hope we're able to get you the care that you need. I've been coughing up a storm. It's gotten to be way too enlarged. It's good that you're here today to get the surgery rolling. I signed the paperwork and everything. I'll go over the risk and benefits one more time. Any questions for me? When is the earliest I can get this done again? Given your symptoms, I'd like to get you in in the next few days.

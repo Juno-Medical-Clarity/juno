@@ -1,5 +1,0 @@
-drug_focus: beta blockers
-question_type: Action
-section_title: Beta blockers
-source_url: https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/beta-blockers/art-20044522
-sample_id: 0475

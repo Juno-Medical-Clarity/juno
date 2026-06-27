@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1430  |  gem_id: gem-cochrane-simplification-train-1431  |  doi: 10.1002/14651858.CD003506.pub2
-
-We considered only studies in which chance decided whether men with prostate cancer got early or late hormonal treatment. We found 10 studies that matched our question. We found that early hormonal treatment probably lowers the risk of dying from any cause. The risk of serious unwanted effects may be similar to that of late treatment. Early hormonal treatment probably lowers the risk of dying from prostate cancer and slightly lowers the risk of problems related to cancer spreading to the bones. Men getting early treatment may be more likely to feel tired and develop heart weakness. Overall quality of life is probably unaffected (or only slightly affected) by early treatment. The certainty of evidence was either moderate, which means that the true results are likely close to what we found; or low, in which case our concern is that the true results could be quite different to what we found.

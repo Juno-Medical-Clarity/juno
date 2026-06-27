@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1391
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello. I see you're here for a follow up. Did you get your blood work done? I did. Here are the results. Let me take a look. Oh, wow. It looks like your blood sugar is high. Are you exercising every day? Not really. Is that bad? You are at risk of developing type two diabetes.

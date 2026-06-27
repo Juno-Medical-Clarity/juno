@@ -1,9 +1,0 @@
-source:      MSD
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [2:3] 'medical-jargon-google-easy' -> 'rectum'
-  [11:12] 'abbr-medical' -> 'BM'
-  [18:19] 'general-medical-multisense' -> 'stool'

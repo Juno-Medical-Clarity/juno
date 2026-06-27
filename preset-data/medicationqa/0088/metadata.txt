@@ -1,5 +1,0 @@
-drug_focus: Vicodin
-question_type: Indication
-section_title: Why is this medication prescribed?
-source_url: https://medlineplus.gov/druginfo/meds/a614045.html
-sample_id: 0088

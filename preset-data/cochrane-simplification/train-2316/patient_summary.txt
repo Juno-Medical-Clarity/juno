@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2316  |  gem_id: gem-cochrane-simplification-train-2317  |  doi: 10.1002/14651858.CD004722.pub2
-
-Randomised controlled trials were therefore developed to test the hypothesis that nicotine patches can induce remission of a flare of ulcerative colitis. This review provides evidence that transdermal nicotine is superior to placebo (fake patch) for the treatment of active ulcerative colitis. However, patients treated with transdermal nicotine were significantly more likely to experience side effects than patients receiving placebo or standard medical therapy. Its use is therefore limited in some patients. The review did not identify any significant advantage for transdermal nicotine therapy compared to standard medical therapy.

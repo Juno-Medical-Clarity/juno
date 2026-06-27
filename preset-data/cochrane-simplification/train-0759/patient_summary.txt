@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0759  |  gem_id: gem-cochrane-simplification-train-760  |  doi: 10.1002/14651858.CD000171.pub3
-
-This update of the review of available clinical trials found that the risk of developing active TB was reduced when people infected with both HIV and TB used isoniazid. Isoniazid for latent TB is usually taken for six to 12 months, but more research is still needed to show optimal duration of treatment, the best treatment regime for people with HIV, and especially the best regimen in combination with HIV drugs.

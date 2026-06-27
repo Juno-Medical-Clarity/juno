@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0942  |  gem_id: gem-cochrane-simplification-train-943  |  doi: 10.1002/14651858.CD006597.pub2
-
-This review included one low quality trial of a specialist nurse counselling intervention compared with routine outpatient clinic follow up. No data were reported on remission outcomes. Counselling by a specialist nurse might improve mental health related quality of life for some IBD patients in the short term. However, the poor quality of the one included study does not allow for any definitive conclusions regarding the impact of the nurse-led counselling program. Better designed studies are needed to assess the impact of specialist nursing interventions on the care and management of patients with inflammatory bowel disease.

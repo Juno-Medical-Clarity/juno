@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0339  |  gem_id: gem-cochrane-simplification-train-340  |  doi: 10.1002/14651858.CD010435.pub2
-
-We identified two studies for inclusion. We found that giving steroids to babies affected with meningitis may reduce the number of children who would die or become deaf from the disease. However, most of this benefit was observed in only one trial. As of now, it appears as though steroids are not helpful with regard to preventing developmental delay. We are not able to make far reaching conclusions at this time, as the evidence that we found is limited and of low quality and could change if more results from larger and better designed studies become available.

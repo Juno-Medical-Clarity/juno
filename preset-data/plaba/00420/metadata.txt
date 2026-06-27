@@ -1,5 +1,0 @@
-pmid:        10219274
-question:    33
-adaptation:  adaptation1
-title:       Effects of age and gender on single-dose pharmacokinetics of gabapentin
-sentences:   12

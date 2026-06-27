@@ -1,6 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        simple
-readability: 3.3
-split:       dev
-
-jargon_spans: (none)

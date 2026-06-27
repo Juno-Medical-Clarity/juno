@@ -1,5 +1,0 @@
-pmid:        30565220
-question:    17
-adaptation:  adaptation2
-title:       First aid interventions by laypeople for acute oral poisoning
-sentences:   6

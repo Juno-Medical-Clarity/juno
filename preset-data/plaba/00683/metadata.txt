@@ -1,5 +1,0 @@
-pmid:        23831240
-question:    53
-adaptation:  adaptation1
-title:       Longer habitual afternoon napping is associated with a higher risk for impaired fasting plasma glucose and diabetes mellitus in older adults: results from the Dongfeng-Tongji cohort of retired workers
-sentences:   11

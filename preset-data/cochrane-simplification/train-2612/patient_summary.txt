@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2612  |  gem_id: gem-cochrane-simplification-train-2613  |  doi: 10.1002/14651858.CD003345.pub2
-
-The authors reviewed all randomized studies comparing these drugs with placebo or with other analgesics and found that: local anesthetics were superior to placebo in decreasing intensity of neuropathic pain; limited data showed no difference in efficacy or adverse effects between local anesthetics and carbamazepine, amantadine, gabapentin or morphine; local anesthetics had more adverse effects than placebo; and local anesthetics were safe.

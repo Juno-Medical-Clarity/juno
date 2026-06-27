@@ -1,5 +1,0 @@
-pmid:        30825185
-question:    46
-adaptation:  adaptation1
-title:       Small molecule-facilitated anion transporters in cells for a novel therapeutic approach to cystic fibrosis
-sentences:   11

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3014  |  gem_id: gem-cochrane-simplification-train-3015  |  doi: 10.1002/14651858.CD003142.pub2
-
-This review identified six randomised trials including 437 women receiving high dose chemotherapy with autograft and 413 women receiving conventional chemotherapy treatment. In the group receiving the high dose chemotherapy, there were 15 treatment-related deaths as opposed to two in the conventional chemotherapy arm. Although the high-dose treatment did not increase overall survival at 5 years compared with conventional treatment, women on the high-dose treatment survived significantly longer before experiencing recurrence of cancer. Treatment side-effects were worse in the high-dose group. On the basis of this review, the authors conclude that high dose chemotherapy with bone marrow or stem cell transplantation should not be given to women with metastatic breast cancer outside of clinical trials.

@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [10:11] 'medical-jargon-google-easy' -> 'rectum'
-  [12:14] 'medical-jargon-google-easy' -> 'back passage'
-  [28:33] 'medical-jargon-google-easy' -> 'laparoscopic ( keyhole ) surgery'

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0297
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Doc what are you going to diagnose me as? We are looking at blood born pathogen exposure secondary to needlestick. Yes, I was also thinking around contamination.

@@ -1,8 +1,0 @@
-Doctor: Do you drink?
-Patient: I used to drink before, but now I have stopped it completely.
-Doctor: How would you rate your pain?
-Patient: It is tolerable, like five out of ten but I do need some pain medications.
-Doctor: Then why do you need more pain medications?
-Patient: Sometimes it gets hard, I really need some more pain medications.
-Doctor: Do you have morphine? Do you need more?
-Patient: I don't like morphine. Can you change it to Dilaudid? I like that medicine. That one works for me great.

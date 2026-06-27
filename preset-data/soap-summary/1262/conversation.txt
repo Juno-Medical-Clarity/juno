@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1262
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_family: He is coughing for one week now. How about any congestion? Is it one week or more? Guest_family: No did I say that? I meant two to three weeks. I am so worried. He is just one year. Don't worry let me see, can you tell me everything from the beginning? Guest_family: Sure. It started off as a congestion, but then he started coughing about a week ago and it is getting worse. Okay, what else? Guest_family: Actually, he had Pop Can just three days ago and I never found the top of that and was wondering if he had swallowed that. It is possible, have you seen any change in his breathing? Guest_family: His breathing has not gotten worse since that happened. Any fever? Guest_family: No. No fever. Okay.

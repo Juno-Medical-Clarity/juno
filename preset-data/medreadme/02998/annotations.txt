@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [14:17] 'medical-jargon-google-easy' -> 'overt hepatic encephalopathy'

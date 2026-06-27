@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1284
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any medical conditions that I should know about? Um, I have high blood pressure, and asthma. I also see here that you have cervical cancer, can you tell me more about that? Yeah, I got diagnosed at fifteen years old. How would you describe the progression of your cancer? Now, um, I'd say it's dormant.

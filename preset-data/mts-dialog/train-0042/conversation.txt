@@ -1,5 +1,0 @@
-Doctor: Anyone sick in your family?
-Patient: No.
-Doctor: How about anyone with the same disorders?
-Patient: No, I don't know.
-Doctor: Okay don't you worry.

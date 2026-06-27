@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0453
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You have type two Diabetes? Yes. And High Cholesterol? Yes. Your diabetes is poorly controlled. I will keep an eye on it.

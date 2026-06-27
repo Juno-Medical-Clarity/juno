@@ -1,9 +1,0 @@
-source:      pnas
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [14:16] 'medical-jargon-google-easy' -> 'telomere shortening'
-  [17:19] 'medical-jargon-google-easy' -> 'cellular senescence'
-  [22:23] 'medical-jargon-google-easy' -> 'tumor'

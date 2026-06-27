@@ -1,1 +1,0 @@
-The aim of the experiment was to identify — by sampling from this very large number of combinations — the number of molecules that two mixtures could have in common and still be distinguishable to the typical person.

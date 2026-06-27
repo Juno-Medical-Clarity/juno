@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [13:14] 'medical-jargon-google-easy' -> 'repositioning'
-  [36:37] 'medical-jargon-google-easy' -> 'repositioning'

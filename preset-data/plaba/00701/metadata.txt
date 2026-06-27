@@ -1,5 +1,0 @@
-pmid:        2270749
-question:    55
-adaptation:  adaptation1
-title:       Effect of high doses of essential fatty acids on the postviral fatigue syndrome
-sentences:   11

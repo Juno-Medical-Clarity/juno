@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0319
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you still working? No, I am retired now. I used to work for the U S postal service as an electronic technician but took retirement one year earlier due to my disability. Ah okay. And who is in your family? Well, I stay with my wife and daughter in our apartment. Okay. Do you smoke? No. How about alcohol? I use to drink occasionally, that too very rare, but after my symptoms stated I stopped completely. Any use of recreational or illegal drugs? Nope. Did you travel anywhere recently? No, it's been really long since I traveled anywhere.

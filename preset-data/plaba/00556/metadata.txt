@@ -1,5 +1,0 @@
-pmid:        24907883
-question:    43
-adaptation:  adaptation1
-title:       Pacemakers and implantable cardioverter defibrillators--general and anesthetic considerations
-sentences:   7

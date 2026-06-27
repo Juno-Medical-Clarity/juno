@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1475  |  gem_id: gem-cochrane-simplification-train-1476  |  doi: 10.1002/14651858.CD004258
-
-Twenty-six trials presented sufficient data to be included in meta-analysis. There is some evidence from methodologically weak trials to indicate that some physiotherapy interventions are effective for some specific shoulder disorders. The results overall provide little evidence to guide treatment. There is a clear need for further high quality trials of physiotherapy interventions, including trials using combinations of modalities, in the treatment of shoulder disorders.

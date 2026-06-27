@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [9:11] 'medical-jargon-google-easy' -> 'fluorescently labeled'
-  [26:27] 'general-complex' -> 'bistability'

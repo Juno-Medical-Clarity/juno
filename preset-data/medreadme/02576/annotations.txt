@@ -1,7 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [3:4] 'abbr-medical' -> 'AEPs'

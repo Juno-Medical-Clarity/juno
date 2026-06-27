@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1300
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you been in any accident? I have been a truck driver for some time but luckily have not been in any major auto accident. I had hit a moose once, where I bumped my head but do not remember getting hurt anywhere else. I had broken my ankle in the past. Hm, I see here you mentioned to the nurse, that a car fell on your chest six years back? Oh yes, I was repairing my car and it fell off the car jack stand and fell on my chest but fortunately I was not hurt.

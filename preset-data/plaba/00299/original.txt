@@ -1,6 +1,0 @@
-Phenylketonuria (PKU) is an autosomal recessive disorder caused by a large number of mutations at the phenylalanine hydroxylase (PAH) locus, most of which are strongly associated with specific RFLP or VNTR haplotypes.
-One of the major questions remaining in PKU research is why this apparently maladaptive disorder has been maintained at a frequency of approximately 1 in 10,000 among Caucasians.
-A growing number of studies have provided evidence that both the relatively high frequency of PKU and the strong mutation/haplotype associations might reflect the existence of multiple founding populations for PKU.
-Examples of putative founding populations for PKU in both Europe and Asia will be presented.
-Some PAH mutations are associated with multiple haplotypes, suggesting recurrence.
-Evidence for and against recurrence as the mechanism responsible for the association of the R408W mutation with RFLP haplotypes 1 and 2 will be discussed.

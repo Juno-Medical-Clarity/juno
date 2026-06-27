@@ -1,5 +1,0 @@
-drug_focus: amlodipine
-question_type: Action/time
-section_title: 12.3 Pharmacokinetics
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1cec7a02-b7a5-49e1-ab64-3a4dab4149d2
-sample_id: 0257

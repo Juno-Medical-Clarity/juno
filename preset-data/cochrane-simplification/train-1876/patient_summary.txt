@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1876  |  gem_id: gem-cochrane-simplification-train-1877  |  doi: 10.1002/14651858.CD001351.pub2
-
-Thirty-five RCTs covering 2861 patients were included in this systematic review. There is insufficient evidence to make any recommendations about acupuncture or dry-needling for acute low-back pain. For chronic low-back pain, results show that acupuncture is more effective for pain relief than no treatment or sham treatment, in measurements taken up to three months. The results also show that for chronic low-back pain, acupuncture is more effective for improving function than no treatment, in the short-term. Acupuncture is not more effective than other conventional and "alternative" treatments. When acupuncture is added to other conventional therapies, it relieves pain and improves function better than the conventional therapies alone. However, effects are only small. Dry-needling appears to be a useful adjunct to other therapies for chronic low-back pain.

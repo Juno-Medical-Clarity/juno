@@ -1,2 +1,0 @@
-Doctor: How did the patient do on the activity test?
-Guest_clinician: Patient was good. I have advised him to continue with his normal activities as long as he is feeling fine.

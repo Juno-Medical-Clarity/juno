@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1290
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have allergies? How old are you, young man? Yes ragweed. I am twelve. So basically, you are just congested? Yes that's right. The last ten days. Any headache? What comes out of your nose? Yes I had a little yesterday. Clear boogers. You feel hot? No. Anyone sick at home? Guest_family: No.

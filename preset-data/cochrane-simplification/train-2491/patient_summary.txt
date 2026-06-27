@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2491  |  gem_id: gem-cochrane-simplification-train-2492  |  doi: 10.1002/14651858.CD008571.pub2
-
-This review aimed to determine which treatment approach was better for women with subfertility and endometriomata who were undergoing assisted reproductive technology (ART). Four trials were identified. A gonadotropin-releasing hormone (GnRH) agonist showed a positive treatment effect on the ovarian response to controlled ovarian hyperstimulation (COH) and the number of mature oocytes retrieved compared to GnRH antagonist. The evidence for surgery was limited but aspiration was associated with a greater ovarian response than expectant management (a wait and see approach). Further randomised controlled trials of interventions for the management of endometrioma in women undergoing ART are required.

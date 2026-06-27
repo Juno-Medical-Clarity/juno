@@ -1,8 +1,0 @@
-Diagnostic criteria for diabetes in children have not been established with nearly the rigor as that employed in adults.
-Recently revised American Diabetes Association (ADA) criteria allowed utilization of hemoglobin A(1c) (HbA1c) ≥ 6.5 % for diagnosis of diabetes.
-A recent series of pediatric studies appear to show that HbA1c has lower sensitivity than Fasting plasma glucose (FPG) or oral glucose tolerance test (OGTT).
-However, FPG and OGTT have themselves never been validated in children.
-Studies to validate diagnostic thresholds in children appear unlikely to take place.
-Thus, accepting the major ADA diagnostic criteria appears to be the best course of action for the pediatric community.
-One area in which correlation studies between HbA1c and FPG or OGTT might shed light is in the definition of criteria for intervention in 'pre-diabetes,' as the Diabetes Prevention Program Trial did not use HbA1c.
-However, such treatment, and the exact diagnostic thresholds at which it should be initiated in children, remains unproven.

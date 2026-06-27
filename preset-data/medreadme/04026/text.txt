@@ -1,1 +1,0 @@
-Omic techniques, most especially microarray and genomewide association studies, have catalyzed a new zeitgeist of data sharing that is making data and data sets publicly available on an unprecedented scale.

@@ -1,8 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.7
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Xenograft'
-  [3:7] 'medical-jargon-google-hard' -> 'PAX3 + muscle progenitors'

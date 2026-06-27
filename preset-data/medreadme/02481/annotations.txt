@@ -1,8 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'HIV polymorphisms'
-  [12:13] 'abbr-medical' -> 'HLAs'

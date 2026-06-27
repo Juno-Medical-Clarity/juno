@@ -1,4 +1,0 @@
-Doctor: Besides pain in your left eye, are you having any other problems?
-Patient: No.
-Doctor: Do you happen to have a history of eye problems?
-Patient: None.

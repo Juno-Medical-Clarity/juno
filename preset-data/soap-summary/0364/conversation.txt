@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0364
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Welcome in. Thank you. Do you smoke? No, I don't. Smoking is gross. I agree. Do you drink alcohol? Yes. How much do you drink per day or week? When I get off work usually have a glass of wine. I don't ever have more then one glass. Okay.

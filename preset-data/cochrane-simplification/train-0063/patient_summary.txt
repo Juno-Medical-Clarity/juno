@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0063  |  gem_id: gem-cochrane-simplification-train-64  |  doi: 10.1002/14651858.CD004423
-
-However, the review of trials found that drinking clear fluids up to a few hours before surgery did not increase the risk of regurgitation during or after surgery. Some people are considered more likely to regurgitate under anaesthetic, including those who are pregnant, elderly, obese or have stomach disorders. More research is needed to determine whether these people can also safely drink up to a few hours before surgery.

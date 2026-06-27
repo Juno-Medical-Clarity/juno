@@ -1,9 +1,0 @@
-source:      pnas
-side:        complex
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Genetic perturbation'
-  [12:15] 'medical-jargon-google-easy' -> 'division site selection'
-  [22:25] 'medical-jargon-google-easy' -> 'human phagocytic cells'

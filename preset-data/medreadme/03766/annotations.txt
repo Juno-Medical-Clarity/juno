@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.7
-split:       test
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'lipoproteins'
-  [5:9] 'medical-jargon-google-easy' -> 'high - density lipoprotein'
-  [24:27] 'medical-jargon-google-easy' -> 'beta - amyloid'

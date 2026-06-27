@@ -1,5 +1,0 @@
-pmid:        30328699
-question:    10
-adaptation:  adaptation1
-title:       Effectiveness of Acupuncture on Pain, Functional Disability, and Quality of Life in Rheumatoid Arthritis of the Hand: Results of a Double-Blind Randomized Clinical Trial
-sentences:   12

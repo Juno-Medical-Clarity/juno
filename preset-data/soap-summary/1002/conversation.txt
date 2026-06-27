@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1002
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you drink? Oh, I do but occasionally. Who doesn't like a nice cocktail! Okay. How about cigarettes, do you smoke? No, I don't smoke.

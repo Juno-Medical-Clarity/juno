@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0814
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Okay, so your psych evaluation came out unremarkable. Do you have any other problems? I have this acne. I hate it. I am not feeling comfortable in my own skin.

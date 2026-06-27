@@ -1,5 +1,0 @@
-drug_focus: Boric Acid Powder
-question_type: Side effects
-section_title: Symptoms
-source_url: https://medlineplus.gov/ency/article/002485.htm
-sample_id: 0219

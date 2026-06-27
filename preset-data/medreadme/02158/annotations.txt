@@ -1,8 +1,0 @@
-source:      pnas
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [11:12] 'medical-jargon-google-easy' -> 'biomass'
-  [30:33] 'general-complex' -> 'allometric scaling exponents'

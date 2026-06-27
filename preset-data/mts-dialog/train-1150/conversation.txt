@@ -1,7 +1,0 @@
-Doctor: Hello, Mister G, how are you today?
-Patient: I am good doctor thank you for asking. I am here to talk to you about my will.
-Doctor: Yeah, nurse informed me. So, tell me how can I help you?
-Patient: As you know I have terminal cancer. I have decided I do not want to be resuscitated. I have appointed my daughter as my legal healthcare proxy and she respects my wish.
-Doctor: Tell me what I can do to make you comfortable?
-Patient: Honestly doctor you have done enough and I am so thankful for that. I just wish to spend my last days at home surrounded with loved ones. I have my nurse, she takes care of me. I think I am fine!
-Doctor: Alright my friend.

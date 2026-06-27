@@ -1,5 +1,0 @@
-pmid:        30249798
-question:    2
-adaptation:  adaptation2
-title:       A Dual Noradrenergic Mechanism for the Relief of Neuropathic Allodynia by the Antidepressant Drugs Duloxetine and Amitriptyline
-sentences:   15

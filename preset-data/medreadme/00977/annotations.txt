@@ -1,9 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'transformer'
-  [3:4] 'abbr-medical' -> 'tra'
-  [23:25] 'medical-jargon-google-easy' -> 'Lucilia cuprina'

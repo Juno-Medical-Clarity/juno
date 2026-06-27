@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 3.3
-split:       dev
-
-jargon_spans:
-  [5:7] 'general-complex' -> 'cohort study'
-  [11:12] 'abbr-medical' -> 'CPRD'

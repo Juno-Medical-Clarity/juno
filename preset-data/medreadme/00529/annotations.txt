@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [16:17] 'medical-name-entity' -> 'NHS'
-  [27:28] 'abbr-medical' -> 'NICE'
-  [30:31] 'abbr-medical' -> 'PsA'

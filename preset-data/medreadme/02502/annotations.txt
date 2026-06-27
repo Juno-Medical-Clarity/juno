@@ -1,8 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [15:17] 'medical-jargon-google-easy' -> 'A. aegypti'
-  [21:23] 'medical-jargon-google-easy' -> 'dengue transmission'

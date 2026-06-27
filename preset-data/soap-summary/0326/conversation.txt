@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0326
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Tell me a little bit about your family history. My dad and grandpa both had type two diabetes. My son is struggling with type one diabetes at the moment. I'm sorry to hear that. Does anyone in your family have heart problems? No. How about cancer? Two of my cousins had breast cancer.

@@ -1,4 +1,0 @@
-Doctor: Has she had any surgeries in the past?
-Guest_family: I couldn't tell ya even if I wanted to. I have no clue, sorry.
-Doctor: Is there someone we could call who might know?
-Guest_family: I can't think of anyone off the top of my head. Maybe her daughter? But she's outta town right now.

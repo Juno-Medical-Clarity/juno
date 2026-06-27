@@ -1,7 +1,0 @@
-Doctor: How's your husband doing?
-Patient: He's good. He usually comes with me to my appointments, but he had to run some errands this morning.
-Doctor: Happy to hear that he's also doing well.
-Patient: Me too.
-Doctor: I just have one more question for you regarding your social history. Do you smoke?
-Patient: No, never.
-Doctor: Okay, so no changes.

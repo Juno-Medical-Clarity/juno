@@ -1,5 +1,0 @@
-drug_focus: guaifenesin
-question_type: Contraindication
-section_title: Recommendations for the proper use of nonprescription cough suppressants and expectorants in solid-organ transplant recipients.
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/21485938
-sample_id: 0522

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0336
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any medical problems? Let's see. I have diabetes, high blood pressure, high cholesterol, and osteoporosis. And any surgeries? Several. Which ones? I had my tonsils taken out when I was a kid. I also had my uterus removed along with my ovaries and fallopian tubes. The list goes on. I had my appendix removed and two or three of my parathyroids taken out. Despite getting some of my parathyroids removed, I still have borderline high calcium levels according to my endocrinologist. Did you experience any complications during or after surgery? No. I forgot to mention that I had two carpel tunnel releases as well.

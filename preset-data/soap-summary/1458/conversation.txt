@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1458
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any fever? No. No nausea and vomiting or black stool? Did you notice any blood in your stools? Nope, nothing like that. Did you notice any blood in urine or painful urination? No. Okay, any chest pain? Um, no. Any shortness of breath, cough or cold like symptoms? Nope. No diabetes or thyroid problem, right? Absolutely not! Looks like you have no history of C V A or stroke. Correct. Everything else looks fine. Cool. Your eyes, nose, and throat look good.

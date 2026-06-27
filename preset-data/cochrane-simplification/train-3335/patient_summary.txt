@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3335  |  gem_id: gem-cochrane-simplification-train-3336  |  doi: 10.1002/14651858.CD012362.pub2
-
-We included two studies comparing supine midline head position versus supine head rotated 90°. This review of trials found too little evidence to show positive or negative effects of supine (lying on the back) midline head position for prevention of intraventricular hemorrhage (i.e., bleeding within the brain), mortality, or any other relevant outcomes in very preterm neonates. More research is needed. We found no trials that compared supine (lying on the back) versus prone (lying on the stomach) midline head position, and no trials that compared effects of head tilting (elevating the head of the incubator upward). Results of this systematic review are consistent with beneficial or detrimental effects of a supine head midline position and do not provide a definitive answer to the review question.

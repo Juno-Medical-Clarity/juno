@@ -1,6 +1,0 @@
-Doctor: Are you married?
-Patient: Yes. I am happily living together with my husband and my four kids.
-Doctor:  Oh, do you smoke?
-Patient: Nope.
-Doctor: What about alcohol or any other kind of drug use?
-Patient: Nope.

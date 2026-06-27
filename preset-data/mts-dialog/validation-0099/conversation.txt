@@ -1,7 +1,0 @@
-Doctor: I'm glad to hear that your Afib is under control. I'd like for you to start taking baby aspirin again.
-Patient: Should I continue taking Nexium?
-Doctor: Yes, I'd like you to also take Nexium forty M G once a day in order to reduce the risk of an upper G I bleed.
-Patient: Sounds good.
-Doctor: And I ask that you call me immediately if you notice coffee like grounds in your vomit or bloody stool.
-Patient: Okay.
-Doctor: If you have either of these symptoms, then we'll need to put a stop to aspirin.

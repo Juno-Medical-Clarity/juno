@@ -1,67 +1,142 @@
-import tempfile
+import json
+import pytest
 from pathlib import Path
 
-import pytest
+
+FIXTURE_MANIFEST = {
+    "generated_at": "2026-06-27T00:00:00Z",
+    "bucket": "juno-preset-data",
+    "gcs_prefix": "preset-data",
+    "datasets": [
+        {
+            "group": "meqsum",
+            "total_inputs": 3,
+            "file_types": ["question.txt", "summary.txt"],
+            "inputs": ["0001", "0002", "0003"],
+            "sample": {
+                "input_id": "0001",
+                "files": {
+                    "question.txt": "What is aspirin?",
+                    "summary.txt": "Aspirin is a pain reliever.",
+                },
+            },
+        },
+        {
+            "group": "notechat",
+            "total_inputs": 2,
+            "file_types": ["note.txt"],
+            "inputs": ["nc001", "nc002"],
+            "sample": {
+                "input_id": "nc001",
+                "files": {"note.txt": "Patient presents with fever."},
+            },
+        },
+    ],
+}
+
+
+@pytest.fixture(autouse=True)
+def reset_manifest_cache():
+    """Reset the module-level manifest cache before each test."""
+    import utils.preset_data as pd
+    pd._manifest_cache = None
+    yield
+    pd._manifest_cache = None
 
 
 @pytest.fixture
-def preset_root(monkeypatch):
-    """Create a temp preset-data tree and wire it into preset_data module."""
-    temp_dir = tempfile.TemporaryDirectory()
-    root = Path(temp_dir.name)
-
-    docconv_input_1 = root / "DocConv" / "input-1"
-    docconv_input_2 = root / "DocConv" / "input-2"
-    other_input = root / "OtherGroup" / "case-a"
-
-    docconv_input_1.mkdir(parents=True)
-    docconv_input_2.mkdir(parents=True)
-    other_input.mkdir(parents=True)
-
-    (docconv_input_1 / "notes.txt").write_bytes(b"input 1 notes")
-    (docconv_input_1 / "transcript.txt").write_bytes(b"input 1 transcript")
-    (docconv_input_2 / "input-2-only.txt").write_bytes(b"input 2 only")
-    (other_input / "summary.txt").write_bytes(b"summary")
-    (root / "DocConv" / "not-an-input.txt").write_text("ignored")
-
-    from utils import preset_data
-    monkeypatch.setattr(preset_data, "PRESET_DATA_ROOT", root)
-
-    yield preset_data
-
-    temp_dir.cleanup()
+def manifest_file(tmp_path):
+    """Write the fixture manifest to a temp file."""
+    p = tmp_path / "manifest.json"
+    p.write_text(json.dumps(FIXTURE_MANIFEST), encoding="utf-8")
+    return p
 
 
-def test_list_datasets_returns_sorted_groups_inputs_and_representative_files(preset_root):
-    datasets = preset_root.list_datasets()
-
-    assert datasets == [
-        {
-            "group": "DocConv",
-            "inputs": ["input-1", "input-2"],
-            "files": ["notes.txt", "transcript.txt"],
-        },
-        {
-            "group": "OtherGroup",
-            "inputs": ["case-a"],
-            "files": ["summary.txt"],
-        },
-    ]
+def test_list_datasets_from_manifest(manifest_file, monkeypatch):
+    """list_datasets() returns correct shape from manifest."""
+    import utils.preset_data as pd
+    monkeypatch.setattr(pd, "MANIFEST_PATH", manifest_file)
+    result = pd.list_datasets()
+    assert len(result) == 2
+    assert result[0] == {
+        "group": "meqsum",
+        "inputs": ["0001", "0002", "0003"],
+        "files": ["question.txt", "summary.txt"],
+    }
+    assert result[1]["group"] == "notechat"
+    assert result[1]["files"] == ["note.txt"]
 
 
-def test_read_dataset_file_reads_from_the_requested_input_folder(preset_root):
-    content = preset_root.read_dataset_file("DocConv", "input-2", "input-2-only.txt")
+def test_read_sample_file(manifest_file, monkeypatch):
+    """read_dataset_file returns bytes of manifest sample content for inputs[0]."""
+    import utils.preset_data as pd
+    monkeypatch.setattr(pd, "MANIFEST_PATH", manifest_file)
+    result = pd.read_dataset_file("meqsum", "0001", "question.txt")
+    assert result == b"What is aspirin?"
 
-    assert content == b"input 2 only"
+
+def test_read_non_sample_raises_gcs_fetch_required(manifest_file, monkeypatch):
+    """read_dataset_file raises GCSFetchRequired for a non-sample input_id."""
+    import utils.preset_data as pd
+    monkeypatch.setattr(pd, "MANIFEST_PATH", manifest_file)
+    with pytest.raises(pd.GCSFetchRequired) as exc_info:
+        pd.read_dataset_file("meqsum", "0002", "question.txt")
+    assert exc_info.value.group == "meqsum"
+    assert exc_info.value.input_id == "0002"
+    assert exc_info.value.filename == "question.txt"
 
 
-@pytest.mark.parametrize("group,input_id,filename", [
-    ("../DocConv", "input-1", "notes.txt"),
-    ("DocConv", "../../../etc", "passwd"),
-    ("DocConv", "input-1", "../../../../etc/passwd"),
-    ("DocConv", "input-2", "notes.txt"),
-    ("Missing", "input-1", "notes.txt"),
-])
-def test_read_dataset_file_rejects_mismatches_and_traversal(group, input_id, filename, preset_root):
+def test_read_unknown_group_raises_file_not_found(manifest_file, monkeypatch):
+    """read_dataset_file raises FileNotFoundError for an unknown group."""
+    import utils.preset_data as pd
+    monkeypatch.setattr(pd, "MANIFEST_PATH", manifest_file)
     with pytest.raises(FileNotFoundError):
-        preset_root.read_dataset_file(group, input_id, filename)
+        pd.read_dataset_file("nonexistent", "0001", "question.txt")
+
+
+def test_list_datasets_missing_manifest(tmp_path, monkeypatch):
+    """list_datasets() returns [] when manifest.json does not exist."""
+    import utils.preset_data as pd
+    monkeypatch.setattr(pd, "MANIFEST_PATH", tmp_path / "no_manifest.json")
+    result = pd.list_datasets()
+    assert result == []
+
+
+def test_list_athena_sources_returns_from_manifest(tmp_path, monkeypatch):
+    """list_athena_sources() returns the athena_sources array from manifest."""
+    import utils.preset_data as pd
+    fixture = dict(FIXTURE_MANIFEST)
+    fixture["athena_sources"] = [{"source_kind": "athena_encounter", "label": "Test"}]
+    p = tmp_path / "manifest.json"
+    p.write_text(json.dumps(fixture), encoding="utf-8")
+    pd._manifest_cache = None
+    monkeypatch.setattr(pd, "MANIFEST_PATH", p)
+    result = pd.list_athena_sources()
+    assert result == [{"source_kind": "athena_encounter", "label": "Test"}]
+    pd._manifest_cache = None
+
+
+def test_list_athena_sources_missing_key_returns_empty(manifest_file, monkeypatch):
+    """list_athena_sources() returns [] when athena_sources is absent from manifest."""
+    import utils.preset_data as pd
+    monkeypatch.setattr(pd, "MANIFEST_PATH", manifest_file)
+    result = pd.list_athena_sources()
+    assert result == []
+
+
+def test_manifest_cache(manifest_file, monkeypatch):
+    """list_datasets() only opens the manifest file once across multiple calls."""
+    import utils.preset_data as pd
+    monkeypatch.setattr(pd, "MANIFEST_PATH", manifest_file)
+
+    load_count = [0]
+    original_json_load = json.load
+
+    def counting_json_load(fp, **kwargs):
+        load_count[0] += 1
+        return original_json_load(fp, **kwargs)
+
+    monkeypatch.setattr(json, "load", counting_json_load)
+    pd.list_datasets()
+    pd.list_datasets()
+    assert load_count[0] == 1, "Manifest JSON should be parsed only once (cached)"

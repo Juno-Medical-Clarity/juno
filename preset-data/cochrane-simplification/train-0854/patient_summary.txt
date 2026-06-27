@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0854  |  gem_id: gem-cochrane-simplification-train-855  |  doi: 10.1002/14651858.CD008294.pub4
-
-We chose to focus on Pycnogenol® as this supplement is a standardised product, many trials have been conducted, and it is extensively marketed internationally. Our review aimed to assess the efficacy and safety of Pycnogenol® as a treatment for chronic disorders. We identified 15 eligible randomised controlled trials with a total of 791 participants which addressed seven different chronic conditions: asthma (two studies); attention deficit hyperactivity disorder (one study), chronic venous insufficiency (two studies), diabetes (four studies), erectile dysfunction (one study), hypertension (two studies) and osteoarthritis (three studies). Due to small sample size, limited number of trials per condition, variation in outcomes evaluated and outcome measures used, as well as the risk of bias in the included studies, no definite conclusions regarding the efficacy and safety of Pycnogenol® are possible.

@@ -1,7 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [11:12] 'medical-jargon-google-easy' -> 'neurobiology'

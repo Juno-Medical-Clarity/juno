@@ -1,1 +1,0 @@
-These dynamics are challenging to probe directly with experiments, but can be assessed using computer simulations which track the movement of individual molecules and atoms.

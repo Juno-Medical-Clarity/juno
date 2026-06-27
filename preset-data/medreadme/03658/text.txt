@@ -1,1 +1,0 @@
-To do this, proteins must solve a complicated conformational search problem, the details of which remain difficult to study experimentally.

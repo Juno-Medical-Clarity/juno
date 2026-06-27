@@ -1,1 +1,0 @@
-Here, we report that the output of epidermal growth factor (EGF) signaling activity is modulated by cellular noise, particularly by extrinsic noise of particular signaling components in the pathway.

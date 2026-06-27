@@ -1,5 +1,0 @@
-drug_focus: statins
-question_type: Alternatives
-section_title: NA
-source_url: https://www.health.harvard.edu/newsletter_article/help-for-your-cholesterol-when-the-statins-wont-do
-sample_id: 0426

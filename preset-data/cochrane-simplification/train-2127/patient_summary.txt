@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2127  |  gem_id: gem-cochrane-simplification-train-2128  |  doi: 10.1002/14651858.CD002233.pub2
-
-All of the identified randomised clinical trials comparing emergency sclerotherapy with vasopressin (+/- intravenous or transdermal nitroglycerin), terlipressin, somatostatin, or octreotide have been reviewed. A total of 17 randomised trials including 1817 patients were included. Sclerotherapy did not appear to be superior to the vasoactive drugs in terms of control of bleeding, number of transfusions, 42-day rebleeding and mortality, or rebleeding and mortality before other elective treatments. However, adverse events were significantly more frequent and severe with sclerotherapy than with vasoactive drugs.

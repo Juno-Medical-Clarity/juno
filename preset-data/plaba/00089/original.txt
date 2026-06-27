@@ -1,7 +1,0 @@
-The chemical structure of a neuroleptic does not relaibly predict the exact profile of its therapeutic action.
-We considered the question whether the biochemical action of a neuroleptic, and specifically the ratio between DA-receptor block and NA-receptor block, might have a higher predictive value in this respect.
-In this context we carried out a double-blind study of the therapeutic value of clozapine and perphenazine in acute psychoses of varying symptomatology and aetiology.
-There are strong indications that clozapine has only a slight inhibitory effect on transmission in central DA-ergic neurons, but markedly inhibits transmission in central NA-ergic neurons, and that the reverse applies to perphenazine.
-In view of these data we expected perphenazine to be a stronger antipsychotic and a weaker sedative than clozapine, and vice versa.
-The plausibility of this hypothesis was demonstrated.
-Partly also on the basis of earlier research, we concluded that the biochemical action of a neuroleptic is a more faithful predictor of its therapeutic action profile than the chemical structure.

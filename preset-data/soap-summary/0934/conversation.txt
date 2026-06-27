@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0934
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hey, man. Hey, how's it going? It's been a while. Yeah, it's been a while that's for sure. So anything new I should know of? Uh I had some stuff on my chest that I saw a dermatologist for. What type of stuff? I think they were cysts. Any cause for concern? Nah, the dermatologist said everything came back alright. Glad to hear that. Me too. I'm actually here to see if you can write me up a P P D slip. Is this for a job? Yeah, my last one was negative, but I need to get another one. Last one I did was in nineteen ninety four.

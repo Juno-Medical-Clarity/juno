@@ -1,7 +1,0 @@
-Doctor: Any past medical history?
-Guest_family: She has a history of peptic ulcer disease and we think she may have had a possible stroke three or four years ago. I would have to double check.
-Doctor: Let me see if I can find it in her records.
-Doctor: Does she see a neurologist?
-Guest_family: Um I'm not sure. I can call her son?
-Doctor: Yes, if you could find out that'd be great.
-Guest_family: She's also experiencing some memory loss as of one to two years ago. I think that's it for medical history.

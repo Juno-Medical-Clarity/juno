@@ -1,1 +1,0 @@
-Based on an average cluster size of eight, an ICC of 0. 15 and attrition of 25%, a total sample size of 678 would have 80% power with 5% significance to detect a 15% increase in mean MVPA.

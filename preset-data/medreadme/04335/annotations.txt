@@ -1,9 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        simple
-readability: 4.8
-split:       test
-
-jargon_spans:
-  [15:17] 'medical-jargon-google-easy' -> 'topical corticosteroids'
-  [18:20] 'medical-jargon-google-easy' -> 'topical corticosteroids'
-  [23:24] 'medical-jargon-google-easy' -> 'montelukast'

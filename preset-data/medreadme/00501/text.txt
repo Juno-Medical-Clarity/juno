@@ -1,1 +1,0 @@
-The model was specified for three subpopulations, in accordance with the NICE scope (patients who have taken one prior DMARD, patients who have taken two or more prior DMARDs and biologic-experienced patients).

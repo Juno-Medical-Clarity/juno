@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1469  |  gem_id: gem-cochrane-simplification-train-1470  |  doi: 10.1002/14651858.CD012940.pub2
-
-The thorough literature search is up-to-date as of Febraury 2018. We found only one small randomised controlled trial (with 72 preterm infant participants) that addressed this question. We are uncertain as to whether re-feeding stomach aspirates has an effect on important outcomes such as incidence of necrotising enterocolitis, mortality before discharge, time to regain birth weight, time to reach full enteral feeds, duration of parenteral nutrition and duration of hospital stay. Available evidence is insufficient to support or refute re-feeding of stomach aspirates in preterm infants. More trials are needed to examine whether re-feeding the stomach aspirates is beneficial or harmful in preterm infants.

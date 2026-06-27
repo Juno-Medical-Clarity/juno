@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 5.5
-split:       test
-
-jargon_spans:
-  [5:6] 'medical-jargon-google-hard' -> 'NKT'
-  [22:23] 'medical-jargon-google-hard' -> 'NKT'
-  [28:29] 'medical-jargon-google-easy' -> 'immunodeficiency'

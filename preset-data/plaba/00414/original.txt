@@ -1,9 +1,0 @@
-Objective: In a subgroup analysis of the China Stroke Primary Prevention Trial, we aimed to explore the impact of folic acid supplementation on arterial stiffness and assess the modifying effect of the methylenetetrahydrofolate reductase (MTHFR) gene in Chinese patients with hypertension.
-Methods: This prospective study enrolled 2529 hypertensive Chinese patients.
-Participants were randomized to receive treatment with either a combination of enalapril and folic acid or enalapril.
-Brachial-ankle pulse wave velocity (PWV) was measured by trained medical staff using PWV instruments at both baseline and exit visits, approximately 5 years after enrollment.
-This trial was registered with clinicaltrials.gov (NCT00794885).
-Results: During the follow-up, change in folate was significantly and independently correlated with change in ba-PWV in study patients (β = -1.31, P < 0.001).
-Individuals with CC genotype had a significantly greater PWV response to folic acid supplementation than did carriers of the T allele (β = -2.79, P < 0.001 for CC homozygotes compared with β = -0.56, P = 0.464 for TT homozygotes).
-The positive effect of folic acid on improved PWV was modified by the MTHFR genotype (P for interaction = 0.034).
-Conclusion: In a subgroup of Chinese hypertensive patients who had received 5-year antihypertensive therapy, increases in folate status were associated with higher reductions in PWV, and individuals with the CC genotype showed greatest PWV response to folic acid supplementation.

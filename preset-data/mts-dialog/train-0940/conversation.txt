@@ -1,4 +1,0 @@
-Doctor: Hey, what's going on with you today?
-Patient: Oh, I have a chest pain.
-Doctor: You have fever too?
-Patient: Yes, I did.

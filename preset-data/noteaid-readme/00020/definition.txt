@@ -1,1 +1,0 @@
-An ADR is a negative reaction to a drug taken at a standard dose for its intended use.

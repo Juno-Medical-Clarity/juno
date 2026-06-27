@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [2:4] 'medical-jargon-google-easy' -> 'pulmonary rehabilitation'
-  [15:17] 'medical-jargon-google-easy' -> 'pulmonary rehabilitation'

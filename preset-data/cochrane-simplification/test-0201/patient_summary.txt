@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0201  |  gem_id: gem-cochrane-simplification-test-202  |  doi: 10.1002/14651858.CD002271.pub2
-
-Six studies of moderate quality were identified for inclusion. The source of distending pressure was a negative pressure chamber in two studies, face mask continuous positive airway pressure (CPAP) in two studies, nasal CPAP in one study and negative pressure for less severe illness and endotracheal CPAP when more severe in another study. The studies were small, and four of the six were conducted before surfactant therapy was available. The review of trials found that outcomes for babies were improved. Fewer required IPPV and fewer died, and with these two outcomes combined, fewer babies died or required IPPV. It was also found that CDP can increase the rate of pneumothorax (air outside the lung within the chest cavity). Some meaningful benefits were found when continuous distending pressure (CDP) was used for respiratory distress syndrome in preterm babies.

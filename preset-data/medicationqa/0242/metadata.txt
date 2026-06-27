@@ -1,5 +1,0 @@
-drug_focus: magnesium citrate
-question_type: Usage
-section_title: How to use Magnesium Citrate Tablet
-source_url: https://www.webmd.com/drugs/2/drug-522-5106/magnesium-citrate-oral/magnesium-supplement-oral/details
-sample_id: 0242

@@ -1,1 +1,0 @@
-A pill that slowly releases medicine so you don't need to take it as often.

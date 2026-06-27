@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0661
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family medical history? My dad had stomach cancer. How old was he when he was diagnosed? I think he was seventy something. My sister has breast cancer. She is in her fifty's. Any family history of uterine, ovarian or colon cancer? No. Not that I am aware of.

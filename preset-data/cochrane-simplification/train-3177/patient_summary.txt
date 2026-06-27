@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3177  |  gem_id: gem-cochrane-simplification-train-3178  |  doi: 10.1002/14651858.CD006532.pub2
-
-In the present review we assessed the evidence for the efficacy, acceptability and tolerability of escitalopram in comparison with all other antidepressants in the acute-phase treatment of major depression. Twenty-two randomised controlled trials (about 4000 participants) were included in the present review. Escitalopram appears to be suitable as first-line antidepressant treatment for people with moderate to severe major depression. It has been compared with only a few other antidepressants and so we are unable to say whether it is better, worse or the same as many of the other drugs used in practice. However, it did perform better than citalopram when we brought together the results of six studies in nearly two thousand patients

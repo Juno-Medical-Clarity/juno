@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1359  |  gem_id: gem-cochrane-simplification-train-1360  |  doi: 10.1002/14651858.CD008303.pub2
-
-Sixteen studies involving 3,005 people are included in this review. We did not find strong evidence that either mechanical or pharmacological interventions reduce death or clots travelling to the lungs, but we found some evidence that they can prevent clots from forming in the legs.

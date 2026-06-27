@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0096  |  gem_id: gem-cochrane-simplification-validation-97  |  doi: 10.1002/14651858.CD004700.pub2
-
-This review indicates that it is unclear whether administering chest radiotherapy within 30 days of beginning chemotherapy or later improves survival. The effect on patients' overall survival is not statistically different, although there is a possibility that the effect is in favour of early chest radiotherapy. The interpretation of the current data is difficult and further research is needed.

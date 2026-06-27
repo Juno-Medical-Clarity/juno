@@ -1,5 +1,0 @@
-drug_focus: marijuana
-question_type: Action/time
-section_title: How Long Does Marijuana (Weed) Stay in Your System?
-source_url: https://www.healthline.com/health/how-long-does-weed-stay-in-your-system
-sample_id: 0639

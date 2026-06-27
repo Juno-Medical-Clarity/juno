@@ -1,5 +1,0 @@
-pmid:        27306796
-question:    15
-adaptation:  adaptation1
-title:       Basolateral Kir4.1 activity in the distal convoluted tubule regulates K secretion by determining NaCl cotransporter activity
-sentences:   10

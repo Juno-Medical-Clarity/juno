@@ -1,4 +1,0 @@
-Doctor: Do you smoke cigarettes or drink alcohol?
-Patient: No.
-Doctor: Any use of recreational substances or IV drug abuse?
-Patient: No.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1395  |  gem_id: gem-cochrane-simplification-train-1396  |  doi: 10.1002/14651858.CD000954
-
-Six trials which investigated the effect of ketanserin on 146 patients with either primary Raynaud's phenomenon or Raynaud's phenomenon secondary to systemic sclerosis were included (Cadranel 1986; Dormandy 1988; Kirch 1987; Lukac 1985; Ortonne 1989; van de Wal 1987). Patients treated with ketanserin experienced a greater improvement in mean functional index scores and more patients improved than those treated with placebo, however they also experienced more side effects and an increase in the frequency and duration of attacks. This review assessed a limited number of studies and therefore the conclusions reached need to be investigated further.

@@ -1,8 +1,0 @@
-source:      pnas
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [3:9] 'medical-jargon-google-hard' -> 'SWI / SNF chromatin remodeling complex'
-  [17:18] 'medical-jargon-google-easy' -> 'epigenetic'

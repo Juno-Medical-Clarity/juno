@@ -1,5 +1,0 @@
-drug_focus: metoprolol
-question_type: Action/time
-section_title: NA
-source_url: https://beta.nhs.uk/medicines/metoprolol/
-sample_id: 0094

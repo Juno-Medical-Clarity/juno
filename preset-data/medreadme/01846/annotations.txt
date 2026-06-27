@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'muscular dystrophy'
-  [18:22] 'medical-jargon-google-easy' -> 'induced pluripotent stem cells'

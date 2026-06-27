@@ -1,5 +1,0 @@
-drug_focus: heparin
-question_type: Overdose
-section_title: OVERDOSAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1ce1b9e-332b-4f1c-89c7-27071d3101ef
-sample_id: 0351

@@ -1,8 +1,0 @@
-Islet cell antibodies (ICA) continue to serve as the basis of the principal serological test for definition of active autoimmunity of beta-cells.
-Its disadvantages are the need for human pancreatic tissue and difficulty in obtaining quantitative results.
-In the past decade biochemically-defined beta-cell toxins were described, leading to the development of sensitive and specific autoantibody assays, to predict insulin-dependent diabetes mellitus (IDDM).
-We examined the value of combined biochemically-based serological assays, such as autoantibodies to insulin (IAA), glutamic acid decarboxylase (GADA) and ICA512 (ICA512A) to replace the traditional ICA assay.
-Blood samples of 114 newly diagnosed IDDM patients, aged 12 +/- 5 yrs (range 2 months-29 years) were tested for ICA (indirect immunofluorescence), IAA, GADA and ICA512A (radiobinding assay).
-The latter 2 assays were performed using recombinant human [35S]-labeled antigen produced by in vitro transcription/translation.
-We found that fewer sera scored positive for ICA and/or IAA (80.7%, 92/114) than for 1 or more of IAA, GAD, or ICA512 (88.6%, 101/114).
-We conclude that combined testing for IAA, GAD and ICA512 can replace the traditional ICA/IAA test to predict IDDM and is helpful in the differential diagnosis of insulin-dependent and noninsulin-dependent diabetes.

@@ -1,8 +1,0 @@
-source:      pnas
-side:        simple
-readability: 5.3
-split:       dev
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'RPA'
-  [11:15] 'medical-jargon-google-easy' -> 'gel - based assays'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0095  |  gem_id: gem-cochrane-simplification-test-96  |  doi: 10.1002/14651858.CD001971
-
-The review of trials found that low dose continuous infusions, or low dose intermittent administration, of vancomycin reduce the risk of a baby getting sepsis in the neonatal intensive care unit. There is not enough evidence to show if this approach increases antibiotic resistance in nurseries.

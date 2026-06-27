@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2572  |  gem_id: gem-cochrane-simplification-train-2573  |  doi: 10.1002/14651858.CD009401.pub2
-
-Systematic reviews can help with this process by bringing together the relevant evidence and using clear methods which seek to minimise bias. Interventions to help improve the uptake of systematic review evidence have been developed to help with improving the use of evidence. We identified eight studies which evaluated the effectiveness of these types of interventions. There was some evidence to show that a clear message, based on systematic review evidence, which is targeted and disseminated to the relevant healthcare professionals may improve evidence-based practice. If the aim is to help decision-makers increase their awareness and knowledge of systematic review evidence, and evidence-based practice, then interventions that address some of these aims have been evaluated but have shown little effect on practice.

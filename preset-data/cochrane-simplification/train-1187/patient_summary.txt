@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1187  |  gem_id: gem-cochrane-simplification-train-1188  |  doi: 10.1002/14651858.CD008418.pub2
-
-We found eight trials involving a total of 22,604 patients. We found that taking formoterol reduced the risk of having an exacerbation that was treated with oral corticosteroids, but none of the other benefits from taking formoterol were statistically significant. Guidelines suggest that long-acting beta-agonists should be given only to patients already taking an inhaled corticosteroid. We could not find enough trials conducted in children to reach a conclusion on the benefits and harms in children, so we do not recommend using the results to make recommendations on treatment of children with asthma.

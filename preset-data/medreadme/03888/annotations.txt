@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [0:1] 'general-complex' -> 'Sensitivity'
-  [2:3] 'general-complex' -> 'specificity'
-  [7:9] 'general-complex' -> 'likelihood ratios'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0459  |  gem_id: gem-cochrane-simplification-train-460  |  doi: 10.1002/14651858.CD006072.pub2
-
-This review sought evidence that supplementing the diet of preterm and low birth weight infants with taurine improves their growth and development. Nine small trials were found, but these did not provide any evidence that providing extra taurine improved outcomes. However, further trials of taurine supplementation are not likely to take place since taurine is naturally present in breast milk and current standard practice is to add taurine to formula milk and to intravenous nutrition solutions for feeding preterm and low birth weight infants.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0832
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any family medical history of migraines? I know that my brother has them too. Mom, do you know if anyone else gets them? Guest_family: Your grandfather had migraines. Okay.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0929
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any major medical conditions that I should know about, sir? Maybe, I might. What exactly do you mean by that, doctor? Well, it's broad, but it could be anything from depression to high blood pressure, to cancer. Okay, that's what I thought. I have high blood pressure. What about your mental health, is there anything of note there? Um, yeah, I have anxiety, too.

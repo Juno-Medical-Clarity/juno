@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1347
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Okay and are you working? Oh yes, I am a farmer. I have a farmland and my wife, and I do farming. Good, so you are one happy married couple working together. Ah, yes. And how about tobacco, do you smoke or eat? Absolutely not. Any use of drugs or alcohol? Drugs? Yeah, like cocaine or anything like that. Oh that, no. No drugs. And I don't drink either. Alright.

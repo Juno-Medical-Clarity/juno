@@ -1,5 +1,0 @@
-pmid:        29040558
-question:    71
-adaptation:  adaptation3
-title:       Constitutively-active FGFR3 disrupts primary cilium length and IFT20 trafficking in various chondrocyte models of achondroplasia
-sentences:   9

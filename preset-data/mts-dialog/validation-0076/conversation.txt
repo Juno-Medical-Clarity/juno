@@ -1,6 +1,0 @@
-Doctor: When were you diagnosed with type two diabetes?
-Patient: Two years ago.
-Doctor: Does diabetes run in the family?
-Patient: Nope. I believe I'm the only one who has it.
-Doctor: How about heart disease, stroke, cancer, or high blood pressure?
-Patient: Nope. My family is pretty healthy for the most part.

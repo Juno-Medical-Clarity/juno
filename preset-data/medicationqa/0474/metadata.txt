@@ -1,5 +1,0 @@
-drug_focus: oxycodone hcl 5 mg; oxycodone "10-325"
-question_type: Comparison
-section_title: DESCRIPTION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a446947-2cda-4a32-aa6a-53e09245825a
-sample_id: 0474

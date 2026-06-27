@@ -1,1 +1,0 @@
-Simulations using the estimated protein abundances showed that each protein species has different effects on cell-to-cell variation in the nuclear ERK response.

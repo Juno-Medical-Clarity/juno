@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1466
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_clinician: Do you have his full medical history? Yes, I confirmed with his wife. He had a CABG done in ninety one. He has a history of radical prostate cancer for which he underwent a radical prostatectomy and nephrectomy. Guest_clinician: Any additional surgeries? Yes. He had lumbar surgery twice before. He suffered from lumbar stenosis many years ago in the sixties and seventies. He's actually due for another lumbar surgery with Doctor Y. He takes Percocet daily for his back pain. He also has a history of hypertension and hyperlipidemia. Guest_clinician: I think I got it all down.

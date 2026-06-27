@@ -1,4 +1,0 @@
-Doctor: Anyone in your family have a history of drug or alcohol abuse?
-Patient: No.
-Doctor: Any other medical conditions that might run in your family?
-Patient: Nope.

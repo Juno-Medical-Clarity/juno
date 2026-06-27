@@ -1,9 +1,0 @@
-source:      pnas
-side:        complex
-readability: 5.0
-split:       dev
-
-jargon_spans:
-  [5:6] 'medical-jargon-google-hard' -> 'STUB1'
-  [9:10] 'medical-jargon-google-easy' -> 'proteasome'
-  [15:17] 'medical-jargon-google-hard' -> 'proteasomal stress'

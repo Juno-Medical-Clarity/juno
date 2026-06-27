@@ -1,5 +1,0 @@
-pmid:        32804544
-question:    19
-adaptation:  adaptation1
-title:       An update on the use of non-ergot dopamine agonists for the treatment of Parkinson's disease
-sentences:   6

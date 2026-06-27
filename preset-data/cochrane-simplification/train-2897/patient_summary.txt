@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2897  |  gem_id: gem-cochrane-simplification-train-2898  |  doi: 10.1002/14651858.CD004887.pub3
-
-The review includes two randomised clinical trials with 493 participants. The risk of bias was low. Both trials compared recombinant human activated factor VII with placebo. The meta-analysis showed that the recombinant human activated factor VII does not seem to reduce mortality in patients with liver disease and suffering from upper gastrointestinal bleeding, irrespective of the grade of liver damage. The current evidence is insufficient to support or reject recombinant human activated factor VII for these patients.

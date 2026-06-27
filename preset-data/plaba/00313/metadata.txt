@@ -1,5 +1,0 @@
-pmid:        33080005
-question:    25
-adaptation:  adaptation1
-title:       Effect of Tocilizumab vs Standard Care on Clinical Worsening in Patients Hospitalized With COVID-19 Pneumonia: A Randomized Clinical Trial
-sentences:   17

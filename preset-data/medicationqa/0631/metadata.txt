@@ -1,5 +1,0 @@
-drug_focus: vomiting of medication
-question_type: Information
-section_title: Vomiting of Oral Medications by Pediatric Patients: Survey of Medication Redosing Practices
-source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3379826/
-sample_id: 0631

@@ -1,6 +1,0 @@
-Doctor: What's going on?
-Patient: I am having a bellyache.
-Doctor: Since when?
-Patient: Oh, it's been a while now.
-Doctor: Okay.
-Patient: Yeah.

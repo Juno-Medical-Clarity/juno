@@ -1,1 +1,0 @@
-We use the procedure to compare estimates for the proportion of null hypotheses, the false discovery rate (FDR), and a local version of FDR obtained from 15 different statistical methods.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0202  |  gem_id: gem-cochrane-simplification-validation-203  |  doi: 10.1002/14651858.CD002195
-
-The review found that few trials have been performed to investigate its effectiveness. There is currently not enough evidence that adding chemotherapy to other treatments helps to treat the recurring cancer or to improve survival. However, chemotherapy may be an option, and further trials are underway.

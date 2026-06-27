@@ -1,5 +1,0 @@
-drug_focus: spiriva
-question_type: Usage
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=820839ef-e53d-47e8-a3b9-d911ff92e6a9
-sample_id: 0245

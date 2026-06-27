@@ -1,9 +1,0 @@
-Background: The EPIGENE network was created in 2014 by four multidisciplinary teams composed of geneticists, pediatric neurologists and neurologists specialized in epileptology and neurophysiology.
-The ambition of the network was to harmonize and improve the diagnostic strategy of Mendelian epileptic disorders using next-generation sequencing, in France.
-Over the years, five additional centers have joined EPIGENE and the network has been working in close collaboration, since 2018, with the French reference center for rare epilepsies (CRÃ©ER).
-Results: Since 2014, biannual meetings have led to the design of four successive versions of a monogenic epilepsy gene panel (PAGEM), increasing from 68 to 144 genes.
-A total of 4035 index cases with epileptic disorders have been analyzed with a diagnostic yield of 31% (n = 1265/4035).
-The top 10 genes, SCN1A, KCNQ2, STXBP1, SCN2A, SCN8A, PRRT2, PCDH19, KCNT1, SYNGAP1, and GRIN2A, account for one-sixth of patients and half of the diagnoses provided by the PAGEM.
-Conclusion: These results suggest that a gene-panel approach is an efficient first-tier test for the genetic diagnosis of Mendelian epileptic disorders.
-In a near future, French patients with "drug-resistant epilepsies with seizure-onset in the first two-years of life" can benefit from whole-genome sequencing (WGS), as a second line genetic screening with the implementation of the 2025 French Genomic Medicine Plan.
-The EPIGENE network has also promoted scientific collaborations on genetic epilepsies within CRÃ©ER.

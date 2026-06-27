@@ -1,5 +1,0 @@
-pmid:        32840002
-question:    30
-adaptation:  adaptation1
-title:       Persistence of SARS-CoV-2 nasopharyngeal swab PCR positivity in COVID-19 convalescent plasma donors
-sentences:   11

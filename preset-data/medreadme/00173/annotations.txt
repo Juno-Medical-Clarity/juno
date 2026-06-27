@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [6:7] 'medical-jargon-google-easy' -> 'levetiracetam'
-  [13:14] 'medical-jargon-google-easy' -> 'phenytoin'

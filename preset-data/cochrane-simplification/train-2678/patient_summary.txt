@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2678  |  gem_id: gem-cochrane-simplification-train-2679  |  doi: 10.1002/14651858.CD006164.pub2
-
-Four trials enrolled approximately 1700 participants and lasted between nine months and two years. Study participants were aged from one month to 15 years. There were different results on the occurrence of nutritional rickets in different settings. Adverse effects were investigated in one study only.  Considering the partial high frequency of nutritional rickets, the obvious way of action of supplementation of vitamin D or calcium and the favourable risk-benefit ratio, preventive measures are reasonable in high risk groups like infants and toddlers. New studies investigating main and side effects of preventive measures against nutritional rickets in different age groups and in different countries are indicated.

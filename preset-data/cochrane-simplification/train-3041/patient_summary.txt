@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3041  |  gem_id: gem-cochrane-simplification-train-3042  |  doi: 10.1002/14651858.CD010922.pub2
-
-We searched electronic databases and identified randomized controlled trials (in which participants are randomly allocated to one of two or more treatment groups) consisting of participants who received high-pressure oxygen therapy or room air or no treatment as a control. The evidence is current up to December 2015. We found a single, small study of 60 children that evaluated high-pressure oxygen therapy for ASD. There was no evidence that high-pressure oxygen therapy improved social interaction, behavioral problems, speech or language communication, or mental function in children with ASD. However, children who received high-pressure (hyperbaric) oxygen therapy showed an increased occurrence of ear barotrauma events when compared with those in the control group. The quality of the evidence is low. Evidence is insufficient to confirm that high-pressure oxygen is an effective treatment for individuals with ASD.

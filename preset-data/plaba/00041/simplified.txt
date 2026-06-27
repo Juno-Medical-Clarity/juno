@@ -1,8 +1,0 @@
-Certain precise measuring tools can measure specific, self-made proteins that tag four major markers of autoimmune diabetes (diabetes from the body mistakenly destroying its own cells).
-However, analysis of these many self-made markers increases costs and time for measurements.
-We aim to show a quick, low-cost approach for detecting these four self-made markers to check for antibody-related autoimmunity in diabetics.
-With this new measuring tool, which is called a multi-autoantigen radioimmunoassay (MAA), we measured 830 blood samples, 476 of known and 354 of unknown diabetes type. These samples came from type 1 and type 2 diabetics, slow-progressing type 2 diabetics, prediabetics, individuals at risk to develop autoimmune diabetes, siblings of type 1 diabetics, gluten-sensitive patients, and healthy patients.
-All blood reacting with one or more of the four self-made markers by other tools also reacts with MAA, along with eight more, type 1 diabetics whose blood did not react with other tools.
-Also, MAA shows high accuracy for disease detection and no detection after analysing 140 unknown blood samples from type 1 diabetics and healthy patients.
-MAA is the first to measure multiple self-made tagging proteins.
-This new tool appears appropriate for checking if a person's cells mistakenly attack their own diabetes-regulating cells.

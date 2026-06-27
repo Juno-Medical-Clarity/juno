@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1349
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How about any surgeries in the past? Well, I had colon surgery in nineteen eighty nine or was it ninety, oh yeah in nineteen ninety. Okay and anything else? Ah yes, I had three surgeries for my sinus one was the same year as my colon surgery, one was before that. So, the first one was in nineteen eighty seven I believe then nineteen ninety and the last one was in two thousand five. Wow, you remember the years also. Yeah, surprisingly.

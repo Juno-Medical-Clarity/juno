@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0472
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have a family history of neurological conditions that I should know about? What exactly do you mean by that, doctor? Well, it could be anything from A D H D, to epilepsy, to Alzheimer's. Oh, no.

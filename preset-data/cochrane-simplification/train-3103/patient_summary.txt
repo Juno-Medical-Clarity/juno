@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3103  |  gem_id: gem-cochrane-simplification-train-3104  |  doi: 10.1002/14651858.CD001890.pub3
-
-This review found three small trials in adult haemodialysis patients (n = 117). The evidence for the benefits and risks of correcting metabolic acidosis is very limited with no RCTs in pre-ESRD patients and none in children. These trials suggest there may be some beneficial effects on both protein and bone metabolism but the trials were underpowered to provide strong evidence.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0246  |  gem_id: gem-cochrane-simplification-train-247  |  doi: 10.1002/14651858.CD006818.pub2
-
-This review identified one trial which did not show that telemedicine alters the time these infants stay in hospital. However, there was some imprecision of the published data in this study that makes it difficult to make firm recommendations either way with telemedicine.

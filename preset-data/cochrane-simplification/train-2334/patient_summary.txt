@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2334  |  gem_id: gem-cochrane-simplification-train-2335  |  doi: 10.1002/14651858.CD002788.pub3
-
-We included in the review controlled trials from 1966 to February 2015 involving participants of all ages needing rapid intubation using rocuronium and succinylcholine . The minimum dose of rocuronium given was 0.6mg/kg and succinylcholine was 1mg/kg. We have combined the results of 50 trials, with a total of 4151 participants, which compared the effectiveness of succinylcholine versus rocuronium on intubation conditions. No major side effects from use of the drugs were reported. We have found that rocuronium is slightly less effective than succinylcholine for creating excellent and acceptable intubation conditions. Rocuronium should therefore only be used as an alternative to succinylcholine when it is known that succinylcholine should not be used and a more prolonged intubation is expected. The level of evidence is of moderate GRADE due to imperfect study designs and varying techniques used across trials .

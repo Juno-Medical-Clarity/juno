@@ -1,3 +1,0 @@
-Doctor: What is your family medical history?
-Patient: My family has a high blood pressure. I have a family member that had colon cancer.  My daughter has a twitch. They don't know what caused it?
-Doctor: Okay.

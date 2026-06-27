@@ -1,5 +1,0 @@
-pmid:        28367454
-question:    70
-adaptation:  adaptation3
-title:       Effects of Vitamin B6 Deficiency on the Composition and Functional Potential of T Cell Populations
-sentences:   9

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0438  |  gem_id: gem-cochrane-simplification-test-439  |  doi: 10.1002/14651858.CD002111.pub3
-
-There was some evidence from trials suggesting that these treatments are helpful. If patients who have tried and failed other simpler treatments, such as changing their diet or using medications, are selected then biofeedback using computer equipment or rectal balloon is more beneficial than exercises alone. Exercises and electrical stimulation used in the anus may be more helpful than vaginal exercises for women with faecal incontinence after childbirth. About half of the 21 trials were at low risk of bias. They compared different combinations of treatments and different outcome measures, making comparison between them difficult. However, a small number of the larger recent trials provide better evidence.

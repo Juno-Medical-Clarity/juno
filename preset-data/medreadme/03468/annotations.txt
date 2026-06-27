@@ -1,8 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        complex
-readability: 4.2
-split:       test
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Progressive exercise'
-  [27:28] 'abbr-medical' -> 'QALYs'

@@ -1,9 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [24:25] 'medical-jargon-google-easy' -> 'conservation'
-  [26:28] 'medical-jargon-google-hard' -> 'transcript ordering'
-  [40:42] 'medical-jargon-google-easy' -> 'malignant phenotypes'

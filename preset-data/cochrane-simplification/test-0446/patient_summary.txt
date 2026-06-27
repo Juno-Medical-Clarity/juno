@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0446  |  gem_id: gem-cochrane-simplification-test-447  |  doi: 10.1002/14651858.CD011455.pub2
-
-It is uncertain whether the number of major urological complications were different in those patients whose stent was removed early (less than 15 days post-operatively), when compared with those removed later (more than 15 days post-operatively). The number of patients suffering from a urinary tract infection may be less in the early removal group - especially if the stent was not exposed to the external environment. The studies identified for this review were generally of poor quality. It is uncertain whether a bladder indwelling ureteric stent that is removed early following kidney transplantation reduces the risk of complications, however it may prevent urine tract infections.

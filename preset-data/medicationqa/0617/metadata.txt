@@ -1,5 +1,0 @@
-drug_focus: cephalexin
-question_type: Ingredient
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=19307ff0-71de-477b-965d-ea243e5ede3a&audience=consumer
-sample_id: 0617

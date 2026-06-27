@@ -1,5 +1,0 @@
-Doctor: Anyone in the family had a stroke?
-Patient: No, no one had a stroke in my family.
-Doctor: How about someone in the family with heart disease?
-Patient: No one that I can remember.
-Doctor: Okay.

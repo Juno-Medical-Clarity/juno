@@ -1,5 +1,0 @@
-drug_focus: Vitamin B Compound Strong tablets
-question_type: Indication
-section_title: Clinical particulars > Therapeutic indications
-source_url: https://www.medicines.org.uk/emc/product/5865/smpc
-sample_id: 0127

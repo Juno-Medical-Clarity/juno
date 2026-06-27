@@ -1,1 +1,0 @@
-Protein dynamics arise from physical interactions that are well-predicted by detailed atomistic simulations.

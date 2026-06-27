@@ -1,5 +1,0 @@
-pmid:        16445274
-question:    3
-adaptation:  adaptation3
-title:       Hyperkalemia
-sentences:   8

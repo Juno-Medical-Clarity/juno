@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1306  |  gem_id: gem-cochrane-simplification-train-1307  |  doi: 10.1002/14651858.CD002192.pub2
-
-We identified 17 studies which compared premedication with a placebo prior to day case surgery. Twelve studies involved benzodiazepines (sedatives), two involved opioids (painkillers), two involved beta-blockers, one compared a benzodiazepine with a beta-blocker and one involved a herbal medication. In general, the studies were of poor quality and many used anaesthetic techniques which are no longer common. Only seven studies directly measured time to ambulation or discharge and found that this was not affected by the use of premedication. Some studies used specific tests to assess for residual effects of the premedication. Although these were often impaired after surgery, this did not appear to delay discharge.

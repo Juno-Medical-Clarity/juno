@@ -1,5 +1,0 @@
-drug_focus: xifaxan
-question_type: Indication
-section_title: INDICATIONS AND USAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5e8e2fd-7087-4b78-9181-cc259c0be2f1&audience=consumer
-sample_id: 0571

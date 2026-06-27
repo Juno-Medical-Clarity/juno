@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [0:3] 'medical-jargon-google-easy' -> 'Hormone replacement therapy'
-  [4:5] 'abbr-medical' -> 'HRT'
-  [11:13] 'medical-jargon-google-easy' -> 'endometrial cancer'

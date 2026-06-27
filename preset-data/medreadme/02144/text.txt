@@ -1,1 +1,0 @@
-We were able to generate a draft genome for Hepatocystis sp. using DNA sequencing reads from the blood of a naturally infected red colobus monkey.

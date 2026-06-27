@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0480  |  gem_id: gem-cochrane-simplification-train-481  |  doi: 10.1002/14651858.CD003063.pub3
-
-An early surfactant therapy strategy results in a greater number of infants receiving surfactant and so more infants being exposed to the potential risks of intubation and surfactant administration. Although no complications of surfactant administration were reported in the studies reviewed, infants treated with an early surfactant therapy strategy tended to have a higher prevalence of patent ductus arteriosus (PDA). Two trials were terminated prior to achieving the targeted enrollment when the need for mechanical ventilation was found to be significantly different between groups at a scheduled interim analysis. Two other trials experienced slow enrollment leading to reduced numbers.

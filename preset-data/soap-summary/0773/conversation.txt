@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0773
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I see here that you've been having some chest pain. Where along the chest? It's mostly on the left side. When did it start? Um a few days ago. How'd you describe the pain? Kinda dull. Any other symptoms with the pain, such as shortness of breath? Not really, no. How long does the pain usually last? For a few minutes. It comes and goes. Have you taken anything for the pain? I've taken some Advil, but it doesn't seem to help. Have you had similar pain in the past? No, I don't think so. And you had surgery on your abdomen five days ago, correct? Yes. Do you think the pain is related? I'd like to run some tests and get you in for a CAT scan to see what's going on.

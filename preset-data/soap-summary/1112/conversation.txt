@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1112
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, how are you today? I am here for a breast cancer screening. Have you gotten a mammogram before? Yes, I have. I also try to keep up with my self examinations every few weeks. That is great. I am happy to see you on top of your preventative healthcare. I try to be as careful as I can since my sister had breast cancer.

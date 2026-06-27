@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0390  |  gem_id: gem-cochrane-simplification-validation-391  |  doi: 10.1002/14651858.CD004588.pub3
-
-Risk of death or heart attack following either treatment appeared the same, but this may be because too few trial participants were collected together in the review and variation between trials (heterogeneity) may be masking true differences. Further trials of new techniques in a greater variety of patients with subsequent systematic review are needed.

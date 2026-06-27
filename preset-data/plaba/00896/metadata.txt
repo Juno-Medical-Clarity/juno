@@ -1,5 +1,0 @@
-pmid:        33204789
-question:    73
-adaptation:  adaptation2
-title:       Reducing Opioid Prescriptions Lowers Consumption Without Detriment to Patient-Reported Pain Interference Scores After Total Hip and Knee Arthroplasties
-sentences:   15

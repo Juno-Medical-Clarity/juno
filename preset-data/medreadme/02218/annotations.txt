@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [4:5] 'medical-jargon-google-hard' -> 'methylation'
-  [19:21] 'medical-jargon-google-easy' -> 'transposable elements'
-  [25:26] 'general-complex' -> 'deleterious'

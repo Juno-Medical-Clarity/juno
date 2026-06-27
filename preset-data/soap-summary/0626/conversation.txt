@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0626
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have kids, ma'am? Yes, I do. I have two sons and we adopted a girl. Where did you adopt? Just here. and you are married right? Are you working? Yes, I have been married a long time. I retired from Avon. Do you smoke cigarettes or drink? I do not smoke or drink alcohol.

@@ -1,5 +1,0 @@
-drug_focus: dopamine
-question_type: Information
-section_title: NA
-source_url: https://en.wikipedia.org/wiki/Dopamine
-sample_id: 0413

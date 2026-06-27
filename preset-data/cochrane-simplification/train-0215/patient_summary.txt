@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0215  |  gem_id: gem-cochrane-simplification-train-216  |  doi: 10.1002/14651858.CD005225.pub3
-
-However, human trials have shown mixed results thus far. Therefore, we systematically reviewed all available clinical trial evidence as of July 2012 to determine if creatine benefits or harms people with ALS/MND. This review included three well-designed clinical trials involving a total of 386 participants receiving either creatine or placebo. Overall, creatine was well-tolerated with no serious side effects. Using various statistical methods, we found that creatine at a dose of 5 to 10 g per day did not improve ALS survival or slow ALS progression in any meaningful way. There was a hint that creatine may slightly worsen breathing ability, but this may have just been misleading statistical variability.

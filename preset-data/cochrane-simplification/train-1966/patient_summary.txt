@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1966  |  gem_id: gem-cochrane-simplification-train-1967  |  doi: 10.1002/14651858.CD000978.pub5
-
-Different strategies are used to try and prevent this condition, and the review of trials found that some of these are effective. Two interventions, cryotherapy (ice chips) and keratinocyte growth factor (palifermin®) showed some benefit in preventing mucositis. Sucralfate is effective in reducing the severity of mucositis, and a further seven interventions, aloe vera, amifostine, intravenous glutamine, granulocyte-colony stimulating factor (G-CSF), honey, laser and antibiotic lozenges containing polymixin/tobramycin/amphotericin (PTA) showed weaker evidence of benefit. These were evaluated in patients with different types of cancer, undergoing different types of cancer treatment. Benefits may be restricted to the disease and treatment combinations evaluated.

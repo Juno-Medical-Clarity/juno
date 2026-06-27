@@ -1,8 +1,0 @@
-Turner syndrome (TS) is one of the most common sexual chromosome abnormalities and is clearly associated with an increased risk of autoimmune diseases, particularly thyroid disease and coeliac disease (CD).
-Single-nucleotide polymorphism analyses have been shown to provide correlative evidence that specific genes are associated with autoimmune disease.
-Our aim was to study the functional polymorphic variants of PTPN22 and ZFAT in relation to thyroid disease and those of MYO9B in relation to CD.
-A cross-sectional comparative analysis was performed on Mexican mestizo patients with TS and age-matched healthy females.
-Our data showed that PTPN22 C1858T (considered a risk variant) is not associated with TS (X2 = 3.50, p = .61, and OR = 0.33 [95% CI = 0.10-1.10]).
-Also, ZFAT was not associated with TS (X2 = 1.2, p = .28, and OR = 1.22 [95% CI = 0.84-1.79]).
-However, for the first time, rs2305767 MYO9B was revealed to have a strong association with TS (X2 = 58.6, p = .0001, and OR = 10.44 [95% C = 5.51-19.80]), supporting a high level of predisposition to CD among TS patients.
-This report addresses additional data regarding the polymorphic variants associated with autoimmune disease, one of the most common complications in TS.

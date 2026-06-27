@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0098  |  gem_id: gem-cochrane-simplification-test-99  |  doi: 10.1002/14651858.CD003862.pub2
-
-This review looked for studies of their effectiveness in reducing the number of times that drivers drive through red lights and the number of crashes. Very little research has been done and much of it has not allowed for the statistical problems that occur when recording this kind of information. However, five studies in Australia, Singapore and the USA all found that use of red-light cameras cut the number of crashes in which there were injuries. In the best conducted of these studies, the reduction was nearly 30%. More research is needed to determine best practice for red-light camera programmes, including how camera sites are selected, signing policies, publicity programmes and penalties.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0388
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Lets talk about your ears. Any continuous ringing or thumping noises you may hear? No, nothing like that. Any hearing problems? Um, no. Any dizziness or spinning sensation? Nope.

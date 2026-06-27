@@ -1,5 +1,0 @@
-pmid:        31286445
-question:    42
-adaptation:  adaptation1
-title:       Coupling Fluorescence-Activated Cell Sorting and Targeted Analysis of Histone Modification Profiles in Primary Human Leukocytes
-sentences:   8

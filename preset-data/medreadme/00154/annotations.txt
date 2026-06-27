@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [1:6] 'medical-jargon-google-easy' -> 'epileptic tonic - clonic seizures'
-  [9:10] 'medical-jargon-google-easy' -> 'convulsions'
-  [17:20] 'medical-jargon-google-easy' -> 'convulsive status epilepticus'

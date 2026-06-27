@@ -1,7 +1,0 @@
-SARS-CoV-2 infection has caused a global pandemic that has severely damaged both public health and the economy.
-The nucleocapsid protein of SARS-CoV-2 is multifunctional and plays an important role in ribonucleocapsid formation and viral genome replication.
-In order to elucidate its functions, interaction partners of the SARS-CoV-2 N protein in human cells were identified via affinity purification and mass spectrometry.
-We identified 160 cellular proteins as interaction partners of the SARS-CoV-2 N protein in HEK293T and/or Calu-3 cells.
-Functional analysis revealed strong enrichment for ribosome biogenesis and RNA-associated processes, including ribonucleoprotein complex biogenesis, ribosomal large and small subunits biogenesis, RNA binding, catalysis, translation and transcription.
-Proteins related to virus defence responses, including MOV10, EIF2AK2, TRIM25, G3BP1, ZC3HAV1 and ZCCHC3 were also identified in the N protein interactome.
-This study comprehensively profiled the viral-host interactome of the SARS-CoV-2 N protein in human cells, and the findings provide the basis for further studies on the pathogenesis and antiviral strategies for this emerging infection.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1801  |  gem_id: gem-cochrane-simplification-train-1802  |  doi: 10.1002/14651858.CD004083.pub3
-
-We set out to compare the two forms of local anaesthesia for cataract surgery. Our review showed that pain control and paralysis of the eye muscles to paralyse movement of the eye ball (akinesia) and allow surgery are no different for the two types of anaesthesia. The need for additional injections of local anaesthetic was higher with peribulbar anaesthesia (four trials). Only one case of bleeding behind the eye occurred and this was with retrobulbar anaesthesia (in one trial). The acceptability of the two methods to patients were similar in the two studies that reported on this outcome. None of the trials reported any life-threatening complications. There was a moderate risk of bias in the included trials.

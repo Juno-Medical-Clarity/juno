@@ -1,1 +1,0 @@
-This constrains variation in physiological traits and in the rate of biomass accumulation, so that they can be expressed as mathematical functions of plant size with near-constant allometric scaling exponents across species.

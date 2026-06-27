@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1114
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have a history of any health conditions that I should be aware of, ma'am? Um, yeah, I had a mastectomy, and chest tube placement. Oh, wow. Do you have any chronic conditions? Yeah, I have chronic A F I B.

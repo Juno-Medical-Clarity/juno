@@ -1,5 +1,0 @@
-drug_focus: carbamazepine
-question_type: Contraindication
-section_title: Contraindications
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bfd63965-56e6-4af7-b7ef-45a5105d4d35&audience=consumer
-sample_id: 0476

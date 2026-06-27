@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1077
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi, how old are you madam? I am ninety three. I am a super duper old Swedish woman. Ha! Not so old okay! I had vomiting episodes and I am feeling very nauseous. Oh I am so sorry to hear that. I have pain in urination too, I think I might have the U T I? Let's see here. So you already have a right hip issue, bone disease, hypertension, depression, and heart rhythm disorder for a long time. Yes that is correct. Let me see what we can do here. Thank you doctor.

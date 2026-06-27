@@ -1,5 +1,0 @@
-pmid:        7913608
-question:    62
-adaptation:  adaptation2
-title:       H1-receptor antagonists. Comparative tolerability and safety
-sentences:   7

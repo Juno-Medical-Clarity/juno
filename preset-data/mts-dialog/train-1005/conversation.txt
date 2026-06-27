@@ -1,6 +1,0 @@
-Doctor: Are you married or divorced?
-Patient: I am married.
-Doctor: Okay.
-Patient: Hm.
-Doctor: Do you smoke cigarettes or drink alcohol?
-Patient: No, I have never.

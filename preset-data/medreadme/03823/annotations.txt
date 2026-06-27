@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [18:19] 'abbr-medical' -> 'OAC'
-  [20:21] 'medical-jargon-google-hard' -> 'fistulae'

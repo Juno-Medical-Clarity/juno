@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0624
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married? Yes. Where do you work? I work as a secretary in a law firm. Do you smoke or drink? Have you ever tried any illegal drug? No, none of these.

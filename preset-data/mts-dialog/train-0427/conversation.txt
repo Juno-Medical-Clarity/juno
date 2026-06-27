@@ -1,6 +1,0 @@
-Doctor: You are five feet four inches.
-Patient: Yes.
-Doctor: Weight one ninety seven.
-Patient: Okay.
-Doctor: Your blood pressure is one twenty five over seventy five.
-Patient: Okay.

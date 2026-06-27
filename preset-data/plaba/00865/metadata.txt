@@ -1,5 +1,0 @@
-pmid:        32899820
-question:    70
-adaptation:  adaptation3
-title:       Vitamin B6, Inflammation, and Cardiovascular Outcome in a Population-Based Cohort: The Prevention of Renal and Vascular End-Stage Disease (PREVEND) Study
-sentences:   10

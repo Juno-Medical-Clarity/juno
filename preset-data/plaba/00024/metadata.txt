@@ -1,5 +1,0 @@
-pmid:        34397423
-question:    2
-adaptation:  adaptation3
-title:       Suicidality and other severe psychiatric events with duloxetine: Re-analysis of safety data from a placebo-controlled trial for juvenile fibromyalgia
-sentences:   7

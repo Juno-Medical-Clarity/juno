@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0973
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married? Yes. I have been married for twenty two years. Are you working? No. I am unemployed. I have not completed my collage degree yet. I have been in school for the last two years. Keep at it.

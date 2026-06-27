@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2047  |  gem_id: gem-cochrane-simplification-train-2048  |  doi: 10.1002/14651858.CD006555.pub2
-
-There were nine studies with 1520 participants. There was moderate quality evidence that post-treatment exercises can reduce both the rate and the number of recurrences of back pain. However, the results of exercise treatment studies were conflicting. Adverse (side) effects of exercising were not mentioned in any of the studies. Limitations of this review include the difference in exercises across studies, thus making it difficult to specify the content of such a programme to prevent back pain recurrences.

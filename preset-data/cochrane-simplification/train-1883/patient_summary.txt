@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1883  |  gem_id: gem-cochrane-simplification-train-1884  |  doi: 10.1002/14651858.CD010237.pub2
-
-Study characteristics: We included sixteen randomised controlled trials (1063 participants) comparing Tong-xin-luo capsules plus conventional treatment with placebo plus/or conventional treatment (literature search date: though June 2014). All studies were undertaken in China. The sample size was from 50 to 178 and the duration of follow-up ranged from three months to two years. Key results: We found that Tong-xin-luo may possibly reduce the risk of narrowing of a blood vessel detected by angiography, cardiovascular events (including myocardial infarction, angina and heart failure) and use of repeat procedure. Adverse events were seldom reported. Quality of evidence: Because of high risk of bias for fifteen studies, imprecision and possible publication bias, the quality of evidence was low or very low for all study outcomes.

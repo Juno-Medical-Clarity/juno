@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.3
-split:       dev
-
-jargon_spans:
-  [3:4] 'medical-jargon-google-easy' -> 'helicase'
-  [5:6] 'medical-jargon-google-hard' -> 'Pif1'
-  [8:11] 'medical-jargon-google-hard' -> 'G - quadruplexes'

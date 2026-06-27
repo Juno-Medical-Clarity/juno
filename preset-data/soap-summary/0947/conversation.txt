@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0947
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Who all are there in your family? Well, it's just me and my brother now. My mom passed away due to stroke at the age of seventy nine. My father had a good life with no medical conditions. He passed away due to old age, he was ninety one. Wow! Any family history of heart disease or diabetes? My other brother had prostate cancer but that's just it. No diabetes or heart issues. Okay.

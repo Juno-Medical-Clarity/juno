@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [1:3] 'medical-jargon-google-easy' -> 'induced myoblasts'
-  [24:26] 'medical-jargon-google-easy' -> 'muscular dystrophy'

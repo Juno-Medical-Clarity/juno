@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2013  |  gem_id: gem-cochrane-simplification-train-2014  |  doi: 10.1002/14651858.CD003045.pub2
-
-Several trials have addressed the effects of anabolic-androgenic steroids for alcoholic liver disease. This systematic review could not demonstrate any significant effects of anabolic-androgenic steroids on mortality, liver-related mortality, liver complications, and histology of patients with alcoholic liver disease. Anabolic-androgenic steroid intervention is not associated with a significant increase in non-serious adverse events, but with the seldom occurrence of serious adverse events. Accordingly, there is no evidence supporting the use of anabolic-androgenic steroids for alcoholic liver disease, but further randomised clinical trials may be needed to settle the question.

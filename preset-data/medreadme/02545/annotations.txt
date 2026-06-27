@@ -1,8 +1,0 @@
-source:      MSD
-side:        simple
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [13:15] 'medical-jargon-google-easy' -> 'puslike discharge'
-  [17:18] 'medical-jargon-google-easy' -> 'vagina'

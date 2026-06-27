@@ -1,6 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        complex
-readability: 5.5
-split:       dev
-
-jargon_spans: (no jargon annotation found for this sentence)

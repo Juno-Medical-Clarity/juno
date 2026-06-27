@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0415
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Let's talk about your family history. Did anyone in your family have any medical issues that you were aware of? I don't think so. My family has been pretty healthy. Both my parents died of old age. What about your siblings? Any kind of thyroid issue or diabetes or blood pressure issue there? I have one older brother. He's into weightlifting and all. I would say he's pretty healthy.

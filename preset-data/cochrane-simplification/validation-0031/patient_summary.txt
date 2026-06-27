@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0031  |  gem_id: gem-cochrane-simplification-validation-32  |  doi: 10.1002/14651858.CD003326
-
-The review found that glue is an excellent substitute for stitches, staples or tapes to close simple cuts. Glue causes less pain, is quicker and needs no follow up for removal. A slightly higher number of cuts may break open (dehisce) after being glued, compared to cuts closed with stitches, staples or tapes. Though there are a few different types of glue available, no one glue seems to be superior.

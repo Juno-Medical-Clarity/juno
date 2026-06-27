@@ -1,6 +1,0 @@
-Pallister-Hall syndrome was initially recognized under fairly unique circumstances involving exhumation of the very first case.
-The first two cases had dramatic and unusual features including a hypothalamic hamartoblastoma, imperforate anus, an unusual type of polydactyly with the extra digit being central, hypopituitarism with secondary hypoadrenalism, and lethality after birth (probably due to hypoadrenalism).
-Within a short time frame, four additional cases were identified.
-As the full spectrum and variability of anomalies was recognized, it became clear that it was not such a rare disorder.
-Shortly after familial cases were recognized, the responsible gene was identified at GLI3.
-However, since other different conditions also involved GLI3, elaborating the domains of the gene and the types of mutations needed to be defined in order to have a clear correlation of the genotype-phenotype relations.

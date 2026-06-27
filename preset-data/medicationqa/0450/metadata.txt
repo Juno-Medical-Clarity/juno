@@ -1,5 +1,0 @@
-drug_focus: clopidogrel
-question_type: Stopping/side effects
-section_title: WARNINGS AND PRECAUTIONS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=edae8df1-caf9-ff72-1304-5ae8b355f8e7
-sample_id: 0450

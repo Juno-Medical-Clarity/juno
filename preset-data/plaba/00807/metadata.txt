@@ -1,5 +1,0 @@
-pmid:        35074891
-question:    64
-adaptation:  adaptation2
-title:       Development and Validation of a Prediction Model for Early Diagnosis of SCN1A-Related Epilepsies
-sentences:   14

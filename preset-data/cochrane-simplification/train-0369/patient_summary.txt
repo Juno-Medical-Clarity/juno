@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0369  |  gem_id: gem-cochrane-simplification-train-370  |  doi: 10.1002/14651858.CD001367.pub3
-
-The review authors searched the literature and were able to combine data from 11 randomized controlled clinical trials (3716 participants) comparing different durations of treatment with VKA in patients with a symptomatic VTE. Participants receiving prolonged treatment had around five times lower risk of recurrence of VTE. On the other hand, they had about three times higher risk of bleeding complications. Prolonged treatment did not reduce the risk of death. Prolonged use of VKA strongly reduced the risk of recurrent clots as long as they were used, but benefit decreased over time and the risk of major bleeding remained.

@@ -1,8 +1,0 @@
-People with cystic fibrosis have organs that do not function correctly (e.g., pancreas, digestive system, and lung) linked to not enough CI- (chloride) production and release from epithelial cells (cells that cover outer surface of the internal organs).
-If not treated, organs quickly stop working and patients have long-term respiratory infection with decreased lung function and a decline in health from poor absorption of food.
-Early death usually happens when lungs can't get enough oxygen into the blood.
-The past 40 years of newborn checks and better ways to treat disease have increased the age that half of patients are still alive from the mid-teens to 43-53, with most of the increase due to earlier and more aggressive management of the symptoms.
-In the last 10 years, drugs have been made to correct underlying problems in epithelial cells, mainly, CI- production and release.
-New drugs for cystic fibrosis patients that work throughout the body target the changed atom (Cl-; chloride) channels and help the changed protein to move to the cell surface (correctors), hold the gate to the channel open so chloride can flow through the cell membrane (potentiators), or increase protein levels in the cells (amplifiers).
-Restoring channel function before symptoms develop could change the course of the disease and a small repair of Cl- production and release may delay disease worsening by decades.
-We look at movement of ions (charged atoms) and fluids in epithelial cells, how to count and measure this movement as a sign of cystic fibrosis transport problems, and discuss recent treatments for cystic fibrosis transport problems.

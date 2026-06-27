@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0447
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_family: So, you mean it is something simple? Yes, it is probably sinus infection and then cough secondary to that infection. Guest_family: Will that be treatable? Yes, it is. Guest_family: Okay nice.

@@ -1,5 +1,0 @@
-pmid:        35099023
-question:    59
-adaptation:  adaptation2
-title:       Heterologous immunization with BNT162b2 followed by mRNA-1273 in dialysis patients: seroconversion and presence of neutralizing antibodies
-sentences:   12

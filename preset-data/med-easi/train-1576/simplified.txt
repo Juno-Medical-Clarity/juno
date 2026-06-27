@@ -1,1 +1,0 @@
-The CDC keeps track of the different flu viruses that are circulating, and gives this information to the companies that make flu shots.

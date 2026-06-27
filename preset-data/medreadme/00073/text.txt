@@ -1,1 +1,0 @@
-Only a small fraction (~ 11%) of proteins increased in level in response to deletion of their paralog, but this set matched almost exclusively the subset of paralogs whose overlapping function is required for viability.

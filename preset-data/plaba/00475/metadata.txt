@@ -1,5 +1,0 @@
-pmid:        24532157
-question:    37
-adaptation:  adaptation1
-title:       Cognitive effects of pregabalin in the treatment of long-term benzodiazepine-use and dependence
-sentences:   9

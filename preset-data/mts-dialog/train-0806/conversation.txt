@@ -1,9 +1,0 @@
-Doctor: Do you drink?
-Patient: No, never!
-Doctor: Did you ever smoke?
-Patient: No.
-Doctor: How about drugs? Marijuana or anything?
-Patient: Well, I always stayed away from drugs.
-Doctor: Good. And what is your living arrangement? Do you stay with your kids?
-Patient: I live at my place. My kids visit me but mostly I live alone.
-Doctor: Okay.

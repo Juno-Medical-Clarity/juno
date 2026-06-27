@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 3.3
-split:       dev
-
-jargon_spans:
-  [1:4] 'general-complex' -> 'parallel - group'
-  [5:9] 'general-complex' -> 'cluster randomised controlled trial'

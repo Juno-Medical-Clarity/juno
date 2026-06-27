@@ -1,5 +1,0 @@
-drug_focus: azathioprine
-question_type: Dose
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59f3219f-898f-4d05-a430-c2b3f5255af1
-sample_id: 0091

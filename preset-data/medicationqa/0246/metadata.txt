@@ -1,5 +1,0 @@
-drug_focus: dulera
-question_type: Usage/time
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=116464ce-cfd8-4b9f-8b5a-3a114b6ff2b1
-sample_id: 0246

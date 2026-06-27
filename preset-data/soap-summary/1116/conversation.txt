@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1116
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I am afraid, I don't have better news for you, your reports confirm cancer. We were suspecting it all along, but now since it is confirmed it's just hard to accept. I am sorry, I totally understand. Do you want some time? No, I am okay. Hm, you also have hypertension and diabetes. Yeah, that I know. Did you have any chest pain or shortness of breath or uneasiness? No, I don't have any heart condition. Okay and no dizziness or loss of consciousness or stroke like symptoms? No. Okay. Well, your B M I looks fine, that means you are not overweight. Hm.

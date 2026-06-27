@@ -1,5 +1,0 @@
-drug_focus: hydrochlorothiazide
-question_type: Side effects
-section_title: NA
-source_url: https://www.fda.gov/Safety/Recalls/ucm618583.htm
-sample_id: 0244

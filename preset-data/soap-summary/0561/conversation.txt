@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0561
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Tell me about your past problems. Sure. I just came into the hospital I think about three weeks back for recurrent urine infections. Yes it says here that you have bladder problems from a long time, mostly related to tone and capacity. Yes that is why they put catheter in me. Okay and you have recently had right side C V A? Yes, because of my heart problems they had to put pacemaker in. Okay. Good. I have hereditary diabetes. Okay and your neural problem is associated to that as well. That's right. You have pain on the right side now? Yes, because of my stroke. And you take thyroid medications too? Yes, for my hypothyroidism. Okay. Yeah. What surgeries have you had in the past? I have had many surgeries. They took out my gall bladder, then colon cancer surgery was in nineteen ninety eight. And now pacemaker placement, right? Yes, that is correct.

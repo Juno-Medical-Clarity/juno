@@ -1,5 +1,0 @@
-drug_focus: trichomoniasis drugs
-question_type: not_drug_question
-section_title: Antibiotics
-source_url: https://www.nhs.uk/conditions/trichomoniasis/treatment/
-sample_id: 0077

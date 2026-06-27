@@ -1,5 +1,0 @@
-drug_focus: dicyclomine
-question_type: Indication
-section_title: Gastroesophageal reflux disease
-source_url: http://pennstatehershey.adam.com/content.aspx?productId=112&pid=33&gid=000068
-sample_id: 0664

@@ -1,5 +1,0 @@
-pmid:        16677450
-question:    74
-adaptation:  adaptation3
-title:       Etiology and a diagnostic protocol for patients with chronic cough
-sentences:   10

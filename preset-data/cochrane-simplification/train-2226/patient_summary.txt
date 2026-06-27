@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2226  |  gem_id: gem-cochrane-simplification-train-2227  |  doi: 10.1002/14651858.CD004435.pub3
-
-This review found that OA should not be considered as first choice therapy for OSAH, where symptoms and sleep disruption are severe. There has not been a sufficient amount of research that examines the effects of OA compared with CPAP in terms of symptoms and quality of life. Although CPAP was clearly more effective at reducing the disruption to sleep, some people with OSAH may prefer using them if they are found to be tolerable and more convenient than CPAP. When an active OA was compared with an inactive OA , there were improvements in daytime sleepiness and apnoea/hypopnoea severity. OA may be more effective than corrective upper airway surgery. Further research should consider whether people with more distinctly severe symptoms respond in a similar way to those patients represented in the studies we have included in the review.

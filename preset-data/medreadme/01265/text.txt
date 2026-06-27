@@ -1,1 +1,0 @@
-We created a sample' banking' system for collecting and storing patient samples and relevant clinical data from large numbers of patients, for renal cell carcinoma and renal transplantation.

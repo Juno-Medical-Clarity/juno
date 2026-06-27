@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1200
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi, do you smoke? No, sir, I don't. Do you take any drugs? No. What about drinks? Do you take alcohol in any form? No, none of those.

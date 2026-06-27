@@ -1,5 +1,0 @@
-drug_focus: antibiotics
-question_type: Side effects
-section_title: When to see a doctor
-source_url: https://www.mayoclinic.org/diseases-conditions/antibiotic-associated-diarrhea/symptoms-causes/syc-20352231?p=1
-sample_id: 0611

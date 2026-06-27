@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2291  |  gem_id: gem-cochrane-simplification-train-2292  |  doi: 10.1002/14651858.CD011259.pub2
-
-Our confidence in the results of the individual trials was limited by several potential biases in how they were conducted. We were not able to analyse the results of the two trials together because the experiences of people with spinal cord injury or burning mouth are too different from each other. On their own, the trials were too small for us to undertake any statistical analysis. However, neither trial found any clear benefit of treatment. We conclude that there is currently no evidence that will help practitioners and patients to decide whether to use these treatments. We discuss what studies are needed.

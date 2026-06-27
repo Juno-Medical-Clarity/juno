@@ -1,9 +1,0 @@
-The International Expert Committee recommends that the diagnosis of diabetes be made if hemo globin A1c (HbA1c) level is greater, similar 6.5% and confirmed with a repeat HbA1c test.
-The committee recommends against "mixing different methods to diagnose diabetes" because "the tests are not completely concordant: using different tests could easily lead to confusion".
-Fasting plasma glucose, 2-hour postglucose-load plasma glucose, and oral glucose tolerance tests are recommended for the diagnosis of diabetes only if HbA1c testing is not possible due to unavailability of the assay, patient factors that preclude its inter pretation, and during pregnancy.
-HbA1c testing has the advantages of greater clinical convenience, preanalytic stability, and assay standardization, but when used as the sole diagnostic criterion for diabetes, it has the potential for systematic error.
-Factors that may not be clinically evident impact HbA1c test results and may systematically raise or lower the value relative to the true level of glycemia.
-For this reason, HbA1c should be used in combination with plasma glucose determinations for the diagnosis of diabetes.
-If an HbA1c test result is discordant with the clinical picture or equivocal, plasma glucose testing should be performed.
-A diagnostic cut-off point of HbA1c greater, similar 6.5% misses a substantial number of people with type 2 diabetes, including some with fasting hyperglycemia, and misses most people with impaired glucose tolerance.
-Combining the use of HbA1c and plasma glucose measurements for the diagnosis of diabetes offers the benefits of each test and reduces the risk of systematic bias inherent in HbA1c testing alone.

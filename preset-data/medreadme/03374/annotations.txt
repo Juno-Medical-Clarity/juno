@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'adverse effects'

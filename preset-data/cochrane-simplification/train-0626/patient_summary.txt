@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0626  |  gem_id: gem-cochrane-simplification-train-627  |  doi: 10.1002/14651858.CD004025.pub4
-
-We ran electronic searches up to January 2015 for trials randomising people with schizophrenia or schizophrenia-like disorders to receive music therapy or standard care. We found and checked 176 potential studies. Eighteen trials with a total of 1215 participants met the review requirements and provided useful data. The evidence currently available is of low to moderate quality. The results of these studies suggest that music therapy improves global state and may also improve mental state, functioning, and quality of life if a sufficient number of music therapy sessions are provided. Music therapy seems to help people with schizophrenia but further research is needed to confirm the positive effects found in this review. This research should especially address the long-term effects of music therapy, the quality of music therapy provided and measure outcomes relevant to music therapy.

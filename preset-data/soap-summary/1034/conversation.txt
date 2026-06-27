@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1034
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good morning, doctor. So, I've reviewed your past notes, are there any other diagnoses I should know about? Well, I've had depression for a while now. Thank you for sharing that with me.

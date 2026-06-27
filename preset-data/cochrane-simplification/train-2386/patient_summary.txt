@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2386  |  gem_id: gem-cochrane-simplification-train-2387  |  doi: 10.1002/14651858.CD000086.pub2
-
-The two randomised controlled trials included in this review tested arthroplasty versus internal fixation in a total of 148 mainly female and older participants. Both trials had methodological flaws that may affect the validity of their results and there was a general lack of evidence on long-term effects. One of the trials found a longer length of surgery for the arthroplasty and both trials found an increased need for blood transfusion for the arthroplasty. Pooled data from the two trials showed no statistically significant differences between the two procedures for reoperations, wound healing complications or mortality at one year. Neither trial found a significant difference in longer-term function. Overall, the evidence from the two small trials comparing these two approaches for treating extracapsular hip fractures was too limited to make any definite conclusions as to which is better.

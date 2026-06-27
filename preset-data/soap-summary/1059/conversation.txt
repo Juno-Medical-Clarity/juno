@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1059
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-April twenty two three we checked your list of medications. We saw that it lifts up in the morning and evening. Yeah. Yeah.

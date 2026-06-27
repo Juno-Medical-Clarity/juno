@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0795  |  gem_id: gem-cochrane-simplification-train-796  |  doi: 10.1002/14651858.CD005356.pub2
-
-Forty three trials involving 3957 women were included. The review compared different drugs for ovarian hyperstimulation showing that injections result in higher pregnancy rates compared with oral medication. However, the evidence for this result is not very strong. Furthermore, it showed that if stimulation is used it might be done with low dose injections, since multiple pregnancy rates were increased with high dose injections, without resulting in more pregnancies. This review does not show which injection should be used, since there is no convincing evidence of a difference. Finally, this review does not answer the question whether the addition of GnRH agonist or antagonist is useful.

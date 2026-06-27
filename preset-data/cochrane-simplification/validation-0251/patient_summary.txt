@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0251  |  gem_id: gem-cochrane-simplification-validation-252  |  doi: 10.1002/14651858.CD006356
-
-The studies looked at people who had rheumatoid for up to 2 years. Low doses of glucocorticoid pills were taken and usually with a disease-modifying anti-rheumatoid drug (DMARD). Glucocorticoids reduce progression of the disease on x-rays over 1 to 2 years. This result is based on high quality evidence. Harms were not reviewed. We often do not have precise information about side effects and complications. This is particularly true for rare but serious side effects and long term side effects. Low doses of glucocorticoids may not lead to side effects, but possible side effects may include osteoporosis or heart problems.

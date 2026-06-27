@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1859  |  gem_id: gem-cochrane-simplification-train-1860  |  doi: 10.1002/14651858.CD005177.pub2
-
-The aim of this review is to find out which treatment, if any, is best. Only four of 32 reports identified met the inclusion criteria for this review; none showed a convincing benefit of any single drug over any others. Some treatments may be worth trying but staff should watch carefully for any side effects of the treatment (e.g. agitation or excessively dry mouth). Anxious relatives need explanation, reassurance and discussion about any fears and concerns associated with the terminal phase and 'death rattle'. Research in this difficult area is necessary to understand the cause of the noise, its effect on the patient and those around them and the best ways of managing this condition.

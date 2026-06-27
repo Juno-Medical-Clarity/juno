@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3485  |  gem_id: gem-cochrane-simplification-train-3486  |  doi: 10.1002/14651858.CD007836
-
-A wide variety of surfactant products have been formulated and studied in clinical trials. These include synthetic surfactants and animal derived surfactant extracts. Animal derived surfactant extracts are obtained from animal or human sources. Trials of surfactant replacement have either tried to prevent the development of respiratory distress in high-risk premature infants or treat established respiratory distress in premature infants. Infants with established respiratory distress syndrome who receive animal derived surfactant extract treatment have a decreased risk of lung rupture (pneumothorax), a decreased risk of lung injury (pulmonary interstitial emphysema), a decreased risk of dying, and a decreased risk of chronic lung injury (bronchopulmonary dysplasia) or death.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0933
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Okay, let's talk about your family history. Oh, I have very disturbing family history! Why do you say so? Well, my mother passed away due to heart attack in her late sixties and my father had liver cancer and he passed away from that. Oh- Oh, that is not all. My one son suffers from hypothyroidism and my daughter's two kids have cerebral palsy from being born prematurely. Oh, that is so unfortunate. Yeah.

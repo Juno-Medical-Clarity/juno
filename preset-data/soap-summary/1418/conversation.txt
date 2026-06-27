@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1418
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you a smoker, sir? Yes, I've been smoking about a pack, to about a pack and a half a day for more than forty years now. What about alcohol, do you drink? Yeah, I drink a six pack of beer a day, doctor. What about drugs? Do you use any illicit substances? No, I never used anything like that.

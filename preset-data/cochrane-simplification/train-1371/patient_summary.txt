@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1371  |  gem_id: gem-cochrane-simplification-train-1372  |  doi: 10.1002/14651858.CD007295.pub2
-
-In this review we summarized studies of antidepressant drug treatments in patients with MS. We found two studies that met the inclusion criteria of methodological quality, comprising of a total of 70 participants: one (28 participants) reported the effects of desipramine, the other (42 participants) the effects of paroxetine. The two studies showed no improvement of depression with both treatments in the short term (five/twelve weeks). Adverse effects, such as nausea or headache occurred frequently. Further studies on drug treatment of depression in MS with a longer duration are clearly needed, as the results may be affected by the small size of participants and by the fact that many participants did not complete the studies.

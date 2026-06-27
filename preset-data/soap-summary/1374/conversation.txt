@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1374
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Let's talk about your family history. Okay. Can you tell me about any kind of medical traits that run in your family? I think my family has been blessed or I don't know if any. What about any heart disease? Nope. No heart disease or diabetes or any other kind of issues that I'm aware of.

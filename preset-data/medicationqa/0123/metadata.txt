@@ -1,5 +1,0 @@
-drug_focus: Hyoscyamine
-question_type: Alternatives
-section_title: n/a
-source_url: n/a
-sample_id: 0123

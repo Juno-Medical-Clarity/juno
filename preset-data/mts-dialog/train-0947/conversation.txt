@@ -1,8 +1,0 @@
-Doctor: Hi there! What brings you in today?
-Patient: I have not been feeling well. I am tired and feel weak.
-Doctor: Have you had any other symptoms?
-Patient: I noticed after I went to the bathroom this morning, that my urine was dark.
-Doctor: Have you been staying hydrated?
-Patient: Yes.
-Doctor: Lets get a urine sample. I will have the nurse come in with a sample cup.
-Patient: Okay.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1373
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi Mister B, nurse tells me you had a fall? Yes, a pretty bad one. Okay, tell me what happened? Well, I was running to catch a taxi and stumbled upon a piece of rock, lost my balance and fell. I fell face down and my head hit the sidewalk. The next thing I remember is I am all dazed and people trying to help me. I see, did you lose consciousness after the fall? No. So, is your head hurting? Only the right forehead where I have the scrape and my chin. Okay, any neck or back pain? No. Any stomach pain? No. Pain anywhere else, in extremities, hand or leg? No. Okay, and how old are you? I am forty two. Okay.

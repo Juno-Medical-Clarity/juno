@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0356  |  gem_id: gem-cochrane-simplification-validation-357  |  doi: 10.1002/14651858.CD001531
-
-The review of trials (mostly in children) found that pedestrian safety education can improve children's road safety knowledge and their observed road crossing behaviour. Education may need to be repeated at regular intervals, as the effect can decline with time. However, whether these changes to knowledge or behaviour can be linked to a reduction in pedestrian deaths and injuries is unknown.

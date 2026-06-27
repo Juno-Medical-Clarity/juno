@@ -1,1 +1,0 @@
-Providers need more support and guidance on how to collect their own internal data, how to rule out alternative explanations for their outlier status and how to explore the possible causes of their outlier status.

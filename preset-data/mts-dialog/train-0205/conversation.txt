@@ -1,8 +1,0 @@
-Doctor: Can you move your arms? I would like to see how your range of motion is.
-Patient: Sure, see. Like that?
-Doctor: Yes, yes, looks good for both arms and legs.
-Patient: Great.
-Doctor: I do not see any obvious deformities in head neck or in extremities.
-Patient: Yes, no problems.
-Doctor: Okay?
-Patient: Okay.

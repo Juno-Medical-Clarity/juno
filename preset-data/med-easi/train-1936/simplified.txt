@@ -1,1 +1,0 @@
-These interactions come from the overlap (a measure of how well two orbitals constructively interact with one another) between two atomic orbitals.

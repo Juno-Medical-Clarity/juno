@@ -1,7 +1,0 @@
-Parkinson's disease (PD) (a brain-related disease affecting movement) is the second most frequent brain-related disease and is linked to increased full-body inflammation.
-While the immune-related effects of dopamine, a chemical messenger, remain unknown, dopamine imitators treat Parkinson's disease partly via immune-related effects.
-This therapeutic effect supports analysis of immune scores of patients with Parkinson's disease receiving certain treatments.
-In this work, patients with Parkinson's were in a two-year study comparing how levodopa (a Parkinson's medication) alone and a levodopa/pramipexole (dopamine imitator) combo affects immune cell subtypes.
-Patients with Parkinson's have reduced blood levels of important regulatory cell subtypes.
-
-Levodopa alone may promote a pro-inflammatory response in patients with Parkinson's, but with pramipexole, it promotes a helpful immune environment.

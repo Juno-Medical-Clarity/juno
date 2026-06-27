@@ -1,8 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        simple
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [7:9] 'medical-jargon-google-easy' -> 'corticosteroid injection'
-  [19:20] 'medical-name-entity' -> 'NHS'

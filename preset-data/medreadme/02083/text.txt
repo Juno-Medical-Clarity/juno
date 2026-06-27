@@ -1,1 +1,0 @@
-We developed a mathematical model of the EGF signaling pathway incorporating regulation between extracellular signal-regulated kinase (ERK) and nuclear pore complex (NPC), which is necessary for switch-like activation of the nuclear ERK response.

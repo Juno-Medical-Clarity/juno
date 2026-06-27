@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0400  |  gem_id: gem-cochrane-simplification-validation-401  |  doi: 10.1002/14651858.CD000066.pub2
-
-We included six trials (involving 800 women) in this review. We found that the application of a skin preparation to the areas affected by stretch marks during pregnancy did not prevent the development of stretch marks in the women during pregnancy. Only three trials (involving 461 women) looked at the severity of the stretch marks and did not show a clear difference. The preparations used included Alphastria, Trofolastin, Verum, olive oil and cocoa butter, which all contain vitamin E; Alphastria and Verum also have hyaluronic acid. Of the six trials, we judged three to be at low risk of bias. All trials were relatively small, with four of the six trials each including less than 100 women. The trials were also different in terms of when the women first started to use the topical applications, ranging from the first trimester to the first 20 weeks.

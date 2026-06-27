@@ -1,6 +1,0 @@
-Doctor: Have you undergone any surgeries?
-Patient: I had both my tubes tied in O one and I had a polyp removed when I was fourteen.
-Doctor: And that was a-
-Patient: Oh, sorry I didn't mean to interrupt.
-Doctor: It's alright. I just wanted to know if that polyp was found in your colon?
-Patient: Yes, it was.

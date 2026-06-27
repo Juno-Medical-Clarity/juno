@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.0
-split:       dev
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'Alexander technique'
-  [8:9] 'medical-jargon-google-easy' -> 'physiotherapy'
-  [23:25] 'medical-jargon-google-easy' -> 'Alexander technique'

@@ -1,9 +1,0 @@
-Disease-causing variants in the sodium transporter gene (SCN1A) are amongst the most common genetic causes of childhood epilepsies (a brain disorder leading to seizures).
-There is considerable variation in both the types of causative gene types and associated physical effects. A recent increase of the physical effects of SCN1A-related epilepsies now includes an early severe growth and epileptic encephalopathy (epilepsy leading to brain damage) with reduction in growth and a abnormal movement disorder.
-We report a female with a growth-related and worsening epileptic-movement-related encephalopathy, distinct and more severe than classic Dravet syndrome (lifelong epilepsy).
-Medical diagnostics indicated a inherited gene type of SCN1A.
-Whole-body gene labeling found a second inherited, likely disease-causing gene type of SCN1A.
-Biophysical measurements of both mutant gene types found gain-of-function effects in both SCN1A products; and a more severe persistent physical effect from the second gene type.
-Using mathematical analysis, we show that large persistent electrical activity from sodium in the body causes hyper-excitability in brain neurons, thus linking the severe physical effects to the sodium current dysfunction.
-These findings further broaden the spectrum of physical effects of SCN1A linked epilepsies and highlight the importance of testing for inheritance in epileptic encephalopathies.
-Detailed biophysical tests and mathematical analysis further highlight the role of gain-of-function gene types in the disease-causing attributes of the most severe physical effects linked with SCN1A.

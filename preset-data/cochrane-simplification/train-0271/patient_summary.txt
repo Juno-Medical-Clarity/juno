@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0271  |  gem_id: gem-cochrane-simplification-train-272  |  doi: 10.1002/14651858.CD009101.pub3
-
-This review (five studies involving a total of 446 people) suggests that hydrogel dressings may be more effective than basic wound contact dressings in healing foot ulcers in people with diabetes although the original research may be biased. There is insufficient research comparing hydrogel with advanced dressing types to allow conclusions to be drawn regarding relative effectiveness in terms of ulcer healing.

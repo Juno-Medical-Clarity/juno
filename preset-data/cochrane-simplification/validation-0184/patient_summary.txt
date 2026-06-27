@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0184  |  gem_id: gem-cochrane-simplification-validation-185  |  doi: 10.1002/14651858.CD000940.pub3
-
-We included four randomised controlled trials involving a total of 422 women in this review. The trials did not demonstrate any differences between magnesium maintenance therapy and placebo or other treatments (ritodrine or terbutaline) in the prevention of preterm birth or perinatal deaths. The trials were too small to exclude either important benefits or harms from magnesium maintenance therapy. Magnesium was less likely than the alternative tocolytics (betamimetics) to result in side effects, particularly palpitations or tachycardia, although diarrhoea was more likely. This finding is based on very few studies of low quality, and none of them looked at the infants' later development.

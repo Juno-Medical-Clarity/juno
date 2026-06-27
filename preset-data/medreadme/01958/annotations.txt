@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [11:13] 'medical-jargon-google-easy' -> 'venous thromboembolism'
-  [14:16] 'medical-jargon-google-easy' -> 'myocardial infarction'
-  [17:20] 'medical-jargon-google-easy' -> 'prosthetic joint infection'

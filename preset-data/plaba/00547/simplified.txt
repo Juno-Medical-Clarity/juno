@@ -1,8 +1,0 @@
-Linker histones are major proteins for organizing DNA and affect the balance of genes.
-As the fifth type of histone proteins, the linker histones not only work with DNA and other histones but also other proteins that bind to DNA.
-These interactions organize certain DNA regions like DNA loops, DNA expression sites, and nucleus regions with specific DNA segments.
-Our recent results show that a specific histone - Hho1p - of brewer's yeast physically interacts with another protein called actin-related protein 4 (Arp4). Removing this interaction via deletion of the gene for the linker histone in arp4 mutant cells leads to global change in DNA binding.
-We show that healthy interaction between the yeast linker histone and Arp4p is needed for DNA stability and controlling cellular sensitity to different forms of stress.
-The removed link between the linker histone and Arp4p leads the mutant yeast cells to premature aging.
-Cells die young and are more sensitive to stress.
-These results show the role of linker histones and DNA-protein remodeling in aging by their role in DNA binding and maintaining DNA stability.

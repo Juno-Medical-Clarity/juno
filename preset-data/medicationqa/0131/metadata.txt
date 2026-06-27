@@ -1,5 +1,0 @@
-drug_focus: Spironolactone
-question_type: Appearance
-section_title: Dosage Forms and Strength
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=951b8948-dc0f-4aef-9910-82c252de936d&audience=consumer
-sample_id: 0131

@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        complex
-readability: 4.7
-split:       test
-
-jargon_spans:
-  [4:9] 'medical-jargon-google-easy' -> 'CD3 + T - cells'
-  [13:14] 'medical-jargon-google-easy' -> 'necrostatin'
-  [20:21] 'medical-jargon-google-easy' -> 'pneumolysin'

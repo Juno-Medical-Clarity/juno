@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2050  |  gem_id: gem-cochrane-simplification-train-2051  |  doi: 10.1002/14651858.CD007142.pub2
-
-The review of 15 trials found that it was better than no treatment or minimal treatment, but not as effective as psychological therapies like cognitive-behaviour therapy. Relaxation techniques have potential as a simple first-line psychological treatment for depression. Those who do not respond within a set time could be offered more complex psychological treatment such as cognitive-behaviour therapy.

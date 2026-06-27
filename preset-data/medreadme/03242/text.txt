@@ -1,1 +1,0 @@
-This information can be used to identify which of these sequences are interesting and deserve experimental characterization.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0945  |  gem_id: gem-cochrane-simplification-train-946  |  doi: 10.1002/14651858.CD001440
-
-This review assessed the analgesic efficacy and adverse effects that single dose oral dextropropoxyphene taken alone or in combination with paracetamol had in treating moderate to severe postoperative pain. The combination of dextropropoxyphene 65 mg with paracetamol 650 mg showed similar efficacy to that of tramadol 100 mg for single dose studies in postoperative pain but with a lower incidence of side effects. This review also highlighted that Ibuprofen 400 mg was yet more effective than both tramadol 100 mg and dextropropoxyphene 65 mg.

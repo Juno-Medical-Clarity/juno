@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [3:4] 'medical-jargon-google-easy' -> 'monocytes'
-  [8:11] 'medical-jargon-google-easy' -> 'T - cell'
-  [13:16] 'medical-jargon-google-easy' -> 'acute bacterial infection'

@@ -1,7 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 3.7
-split:       test
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Plasmode'

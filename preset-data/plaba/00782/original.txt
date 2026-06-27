@@ -1,8 +1,0 @@
-Several noncardiac drugs have been linked to cardiac safety concerns, highlighting the importance of post-marketing surveillance and continued evaluation of the benefit-risk of long-established drugs.
-Here, we examine the risk of QT prolongation and/or torsade de pointes (TdP) associated with the use of hydroxyzine, a first generation sedating antihistamine.
-We have used a combined methodological approach to re-evaluate the cardiac safety profile of hydroxyzine, including: (1) a full review of the sponsor pharmacovigilance safety database to examine real-world data on the risk of QT prolongation and/or TdP associated with hydroxyzine use and (2) nonclinical electrophysiological studies to examine concentration-dependent effects of hydroxyzine on a range of human cardiac ion channels.
-Based on a review of pharmacovigilance data between 14th December 1955 and 1st August 2016, we identified 59 reports of QT prolongation and/or TdP potentially linked to hydroxyzine use.
-Aside from intentional overdose, all cases involved underlying medical conditions or concomitant medications that constituted at least 1 additional risk factor for such events.
-The combination of cardiovascular disorders plus concomitant treatment of drugs known to induce arrhythmia was identified as the greatest combined risk factor.
-Parallel patch-clamp studies demonstrated hydroxyzine concentration-dependent inhibition of several human cardiac ion channels, including the ether-a-go-go-related gene (hERG) potassium ion channels.
-Results from this analysis support the listing of hydroxyzine as a drug with "conditional risk of TdP" and are in line with recommendations to limit hydroxyzine use in patients with known underlying risk factors for QT prolongation and/or TdP.

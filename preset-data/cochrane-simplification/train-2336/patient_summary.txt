@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2336  |  gem_id: gem-cochrane-simplification-train-2337  |  doi: 10.1002/14651858.CD003787
-
-This review of two randomized trials (RCTs) showed that continuous ultrasound applied in water to the dorsal and palmar aspects of the hand increased grip strength as compared with placebo. This benefit was not evident with combined therapy (exercise, wax bath, faradic hand baths). Ultrasound also produced a borderline increase in wrist dorsal flexion, decreased morning stiffness, and reduced the number of swollen and painful joints. The conclusions are limited by few studies, small sample size and limitations in study methodology.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0394
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How long have you been living with diabetes, sir? Oh, it's been about thirty five years now. How long have you been taking insulin for this? Well, um, I've been taking insulin for about twenty years now. Do you have any major medical conditions that I should know about? Yeah, um, prostate cancer. How were you treated for this? I've had radiation. Oh, my P S A is zero point zero one, by the way.

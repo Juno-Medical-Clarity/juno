@@ -1,9 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [0:1] 'abbr-medical' -> 'Sxl'
-  [3:7] 'medical-jargon-google-easy' -> 'X chromosome dosage compensation'
-  [9:11] 'medical-jargon-google-easy' -> 'D. melanogaster'

@@ -1,8 +1,0 @@
-cHistone posttranslational modifications (PTMs) are essential for regulating chromatin and maintaining gene expression throughout cell differentiation.
-Despite the deep level of understanding of immunophenotypic differentiation pathways in hematopoietic cells, few studies have investigated global levels of histone PTMs required for differentiation and maintenance of these distinct cell types.
-Here, we describe an approach to couple fluorescence-activated cell sorting (FACS) with targeted mass spectrometry to define global "epi-proteomic" signatures for primary leukocytes.
-FACS was used to sort closely and distantly related leukocytes from normal human peripheral blood for quantitation of histone PTMs with a multiple reaction monitoring LC-MS/MS method measuring histone PTMs on histones H3 and H4.
-We validate cell sorting directly into H2SO4 for immediate histone extraction to decrease time and number of steps after FACS to analyze histone PTMs.
-Relative histone PTM levels vary in T cells across healthy donors, and the majority of PTMs remain stable up to 2 days following initial blood draw.
-Large differences in the levels of histone PTMs are observed across the mature lymphoid and myeloid lineages, as well as between different types within the same lineage, though no differences are observed in closely related T cell subtypes.
-The results show a streamlined approach for quantifying global changes in histone PTMs in cell types separated by FACS that is poised for clinical deployment.

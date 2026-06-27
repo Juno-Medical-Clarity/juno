@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1017
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-And you are- Guest_family: Hi, I am her nurse. So, do you know about her past medical history? Guest_family: I have very limited information, as I very recently started working with her. She does have dementia and that's the main reason why I was hired. Her family wanted someone to look after her twenty four seven. Oh, I see. Guest_family: But I do have her medical records. You can have a look. Yeah, that will be nice. Let me check her reports quickly. She has a history schizophrenia, chronic anemia and hypothyroidism and she also suffers from asthma. Guest_family: Yes. Oh, I also see here she tested positive for P P D, was she diagnosed with tuberculosis? Guest_family: I honestly don't know, but I wasn't told that. Okay.

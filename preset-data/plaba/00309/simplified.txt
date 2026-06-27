@@ -1,8 +1,0 @@
-We studied effects on breathing and behavior of the benzodiazepine receptor (BZR; a molecule that receives signals for a cell) inverse agonist (a drug that binds to the same receptor as an agonist or stimulating molecule but causes an opposite response) ethyl-beta-carboline-3-carboxylate (beta-CCE) alone and with the anxiety-reducing drugs of buspirone, lorazepam, flumazenil, and SR 95195 in monkeys.
-For the breathing-related studies, one group of monkeys breathed air or 5% CO2 mixed in air; breaths per minute and amount of gas breathed were measured.
-For the behavior studies, another group of monkeys responded to food given every thirty seconds.
-The increased breathing effects of beta-CCE in both air and 5% CO2 were increased by previously taking the drugs of 5-hydroxytryptamine1A (5-HT1A), partial agonist buspirone (0.03 and 0.3 mg/kg) and a weak BZR inverse agonist, SR 95195 (10.0 mg/kg).
-Taking buspirone (0.1 and 0.3 mg/kg) at the same time also increased effects of beta-CCE under the food schedule.
-The BZR agonist lorazepam (3.0 mg/kg) and BZR antagonist flumazenil (1.0 mg/kg) reduced the effects of beta-CCE on breaths per minute and amount of gas breathed especially under the 5% CO2 condition. Lorazepam (0.1 and 0.3 mg/kg) and flumazenil (0.1 and 0.3 mg/kg) reduced the effects of beta-CCE on behavior responding on the food schedule.
-These latter results shows that effects on breathing and behavior of beta-CCE in monkeys are at least due to effects at BZRs.
-The results also suggest that benzodiazepine and 5-HT1A sites activated at the same time cause an effect greater than their individual effects or that beta-CCE and buspirone work similarly independent of the receptor where BZR inverse antagonists work.

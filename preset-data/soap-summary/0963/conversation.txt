@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0963
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any history of rheumatic fever as a child? No. Any history of anything other then usual childhood illnesses? No.

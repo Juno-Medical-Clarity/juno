@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1154
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Tell me about the medical issues you had in the past or still do. Well, I have asthma, sinus. I also have hives and there is a history of psoriasis. Wow, okay. Any known allergies? Nothing that I have known.

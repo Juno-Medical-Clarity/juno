@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1182
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_clinician: What brings him in today? He's here for sepsis and I suspect he may have spontaneous bacterial peritonitis. Guest_clinician: Let me pull up his chart.

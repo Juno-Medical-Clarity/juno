@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0125  |  gem_id: gem-cochrane-simplification-train-126  |  doi: 10.1002/14651858.CD005277.pub3
-
-This review found only two randomized trials enrolling a total of 268 patients. One trial compared standard oxygen recompression to helium and oxygen recompression, while the other compared oxygen recompression alone to recompression and an adjunctive non-steroidal anti-inflammatory drug (NSAID). Both trials suggested that these additional interventions may shorten the course of recompression required. For example, the use of an NSAID reduced the median number of recompression sessions required from three to two. We conclude that there is little evidence for using one recompression strategy over another in the treatment of decompression illness and that the addition of an anti-inflammatory drug may shorten the course of recompression required. More research is needed.

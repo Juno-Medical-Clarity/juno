@@ -1,9 +1,0 @@
-A group of specialists created this practical approach for Kidney Disease Outcomes Quality Initiative to guide analysis and care of long-lasting or chronic kidney disease (CKD) by primary care workers.
-Long-lasting kidney disease is a low kidney filtration rate and/or markers of kidney damage for at least 3 months.
-In clinical practice, the most common tests for CKD include kidney filtration rate of blood creatinine, a chemical waste, (eGFR) and high blood albumin, a blood protein, from the albumin-to-creatinine ratio in urine.
-Measuring eGFR and albumin levels should be done in persons with diabetes and/or high blood pressure but not for the general population.
-Managing CKD includes lowering the patient's risk of CKD worsening and risk of associated issues, like immediate kidney injury, heart disease, low blood level, high acid level, and mineral and bone disorder.
-Preventing CKD progression requires blood pressure <140/90 mm Hg, certain blood pressure medications for patients with high blood pressure and albumin, lower blood sugar for diabetics, and correcting high body acid levels linked with CKD.
-To reduce patient safety hazards from medications, eGFR should be considering when prescribing. Kidney toxins should be avoided, like a class of anti-inflammatory drugs.
-The main reasons to contact kidney specialists are eGFR <30 mL/min/1.73 m(2), high blood albumin, and immediate kidney injury.
-The goal of CKD treatment is prevent disease worsening, reduce issues, and better quality of life.

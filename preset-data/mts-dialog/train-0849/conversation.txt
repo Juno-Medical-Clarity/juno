@@ -1,8 +1,0 @@
-Doctor: You had a surgery on your breasts?
-Patient: Yes, they removed lump from my left breast.
-Doctor: Okay, and what other surgeries have you had?
-Patient: I do not have a gall bladder, then I had a breast augmentation, I have had heart surgeries three times and they have removed half of my pancreas.
-Doctor: Okay.
-Patient: And knee surgery too, on the left side.
-Doctor: Okay. What type of heart surgery did you have?
-Patient: Cardiac ablation.

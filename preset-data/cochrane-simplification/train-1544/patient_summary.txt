@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1544  |  gem_id: gem-cochrane-simplification-train-1545  |  doi: 10.1002/14651858.CD001554.pub2
-
-This systematic review confirmed the effectiveness of local corticosteroid injection for relief of symptoms for severe carpal tunnel syndrome up to one month after injection. Local corticosteroid injection provides significantly greater clinical improvement compared to oral corticosteroid up to three months after treatment. Two injections of local corticosteroid do not provide significant further clinical improvement of symptoms. Further research is required to determine length of benefit of local corticosteroid injection and benefit for mild and moderate carpal tunnel syndrome.

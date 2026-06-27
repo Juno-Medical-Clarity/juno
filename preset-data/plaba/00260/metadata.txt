@@ -1,5 +1,0 @@
-pmid:        18656819
-question:    21
-adaptation:  adaptation1
-title:       Approaches to the diagnosis and grading of hiatal hernia
-sentences:   5

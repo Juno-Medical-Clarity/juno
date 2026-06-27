@@ -1,9 +1,0 @@
-Immunity to SARS-CoV-2, the virus that causes coronavirus disease-19 (COVID-19) occurs from natural infection or vaccination.
-However, it is currently unknown how long infection- or vaccination-induced immunity will last.
-We performed a long-term study of immunity to SARS-CoV-2 up to one year post infection and following mRNA vaccination in unexposed people and in people who have recovered from COVID-19 infection.
-We found that memory cells (immune cells that "remember" having encountered an infection before) are still detectable 8 months after vaccination, while viral antibody blood levels decline significantly, especially in previously unexposed people.
-We also found that a booster shot is effective in reactivating immunity to the virus spike protein in previously unexposed people, while it is ineffective in people who were previously infected with SARS-CoV-2.
-Finally, we found a similar reduction of immunity to SARS-CoV-2 up to one year following natural infection in a group of unvaccinated individuals.
-We conclude that short-term immunity, together with the reduced ability of the immune system to block the newer strains of SARS-CoV-2, might account for breakthrough infections in vaccinated people and reinfections in people who were previously infected.
-
-A booster dose restores the strongest immunity against the viral spike protein in unexposed people, but it is not clear if people who have recovered from COVID-19 need to have a booster.

@@ -1,8 +1,0 @@
-Cilia project from almost every cell integrating extracellular cues with signaling pathways.
-Constitutive activation of FGFR3 signaling produces the skeletal disorders achondroplasia (ACH) and thanatophoric dysplasia (TD), but many of the molecular mechanisms underlying these phenotypes remain unresolved.
-Here, we report in vivo evidence for significantly shortened primary cilia in ACH and TD cartilage growth plates.
-Using in vivo and in vitro methodologies, our data demonstrate that transient versus sustained activation of FGF signaling correlated with different cilia consequences.
-Transient FGF pathway activation elongated cilia, while sustained activity shortened cilia.
-FGF signaling extended primary cilia via ERK MAP kinase and mTORC2 signaling, but not through mTORC1.
-Employing a GFP-tagged IFT20 construct to measure intraflagellar (IFT) speed in cilia, we showed that FGF signaling affected IFT velocities, as well as modulating cilia-based Hedgehog signaling.
-Our data integrate primary cilia into canonical FGF signal transduction and uncover a FGF-cilia pathway that needs consideration when elucidating the mechanisms of physiological and pathological FGFR function, or in the development of FGFR therapeutics.

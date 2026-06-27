@@ -1,5 +1,0 @@
-pmid:        32527541
-question:    8
-adaptation:  adaptation2
-title:       Repurposing of antipsychotics perphenazine for the treatment of endometrial cancer
-sentences:   8

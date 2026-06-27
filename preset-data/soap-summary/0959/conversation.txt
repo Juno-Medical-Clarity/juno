@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0959
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you use any tobacco products? No. Do you drink alcohol or use any recreational drugs? No. Any history of needle drugs or prescription drug abuse? No.

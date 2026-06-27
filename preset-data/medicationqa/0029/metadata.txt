@@ -1,5 +1,0 @@
-drug_focus: lithium
-question_type: Interaction
-section_title: What special precautions should I follow?
-source_url: https://medlineplus.gov/druginfo/meds/a681039.html
-sample_id: 0029

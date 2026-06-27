@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1397  |  gem_id: gem-cochrane-simplification-train-1398  |  doi: 10.1002/14651858.CD004808.pub3
-
-We found 30 trials involving 4691 participants, examining several types of contracts. The main health problems targeted were substance addictions, hypertension and overweight. Many of the trials were of poor quality and involved small numbers of people. Most were conducted in the USA. In 15 of the trials there was at least one outcome showing statistically significant differences in favour of the contracts group (although some of the improvements in adherence did not remain when measured after a longer period). In six trials at least one outcome showed such differences in favour of the control group. In 26 trials there was at least one outcome for which there was no difference between the contract and control groups. There is not enough reliable evidence available to recommend the routine use of contracts in health services to improve patients' adherence to healthcare activities or other outcomes.

@@ -1,1 +1,0 @@
-The proteins of the Trx fold class retain common features--including variations on a dithiol CxxC active site motif--that lead to delivery of function.

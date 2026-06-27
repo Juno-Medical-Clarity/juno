@@ -1,5 +1,0 @@
-drug_focus: shingles vaccine
-question_type: Usage/time
-section_title: Shingles Vaccine (live)
-source_url: https://www.cdc.gov/vaccines/hcp/vis/vis-statements/shingles.html
-sample_id: 0240

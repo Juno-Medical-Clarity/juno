@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1428
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello. Before we begin your visit, I noticed some information missing. Could I verify the information with you? Of course. Does your family have a history of any health related problems? Oh, yeah. A lot of my family have heart problems and cancer. I see. Do you know what kind of cancer? I'm not completely sure, but my wife may know. She's here with me right now. Great. I'll bring her in. Guest_family. Hello. I'm his wife. Do you know what type of cancer runs in his family? Guest_family: I do. I believe it's carcinoma. Thank you. Sir, are there any other health related problems I should be aware of? High blood pressure and food allergies run in my family too.

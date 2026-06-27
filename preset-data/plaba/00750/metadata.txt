@@ -1,5 +1,0 @@
-pmid:        33272198
-question:    60
-adaptation:  adaptation2
-title:       Risk factors for a positive SARS-CoV-2 PCR in patients with common cold symptoms in a primary care setting - a retrospective analysis based on a joint documentation standard
-sentences:   10

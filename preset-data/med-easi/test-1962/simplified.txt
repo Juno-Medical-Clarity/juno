@@ -1,1 +1,0 @@
-The LCMO (Linear combination of atomic orbitals molecular orbital) method gives a rough but good description of the MOs.

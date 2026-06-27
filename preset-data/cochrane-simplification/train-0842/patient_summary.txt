@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0842  |  gem_id: gem-cochrane-simplification-train-843  |  doi: 10.1002/14651858.CD000985.pub2
-
-This review found evidence suggesting that arterial infusion is more effective than intravenous infusion. The risk of haemorrhage with intravenous infusion is high. However, none of the different arterial infusion techniques studied have been shown to be more effective in preventing limb loss, amputation or death. More research is needed to confirm these findings.

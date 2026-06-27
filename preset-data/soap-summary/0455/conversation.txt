@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0455
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What brings you in today? Um a number of different things. I don't even know where to start to be honest. I understand. What's bothering you the most? Lemme think. I'm uh having really bad pain. Where's the pain located? Hm. It's in a tricky spot. Guest_family: Hi. Husband here. Let me help explain. She's been having severe lower back pain. It started off mild and got worse over the course of a few days. She's also a lot more sluggish as a result. Any recent injuries or falls? Guest_family: None. She spends most of her time in bed.

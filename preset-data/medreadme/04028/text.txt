@@ -1,1 +1,0 @@
-We illustrate the technique of empirical statistics by consideration of a common task when analyzing high dimensional data: the simultaneous testing of hundreds or thousands of hypotheses to determine which, if any, show statistical significance warranting follow-on research.

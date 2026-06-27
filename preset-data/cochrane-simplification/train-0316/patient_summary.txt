@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0316  |  gem_id: gem-cochrane-simplification-train-317  |  doi: 10.1002/14651858.CD005506.pub5
-
-The small number of included trials provided evidence which appeared to favour the use of antiemetics over placebo to reduce the number of episodes of vomiting due to gastroenteritis in children. A single oral dose of ondansetron given to children with mild to moderate dehydration can control vomiting, avoid hospitalization and intravenous fluid administration which would otherwise be needed. There were no major side effects other than a few reports of increased frequency of diarrhea.

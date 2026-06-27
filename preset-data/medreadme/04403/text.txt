@@ -1,1 +1,0 @@
-This work presents an algorithm for SOZ localization based on electrocorticography recordings.

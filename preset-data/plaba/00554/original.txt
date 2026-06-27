@@ -1,4 +1,0 @@
-The first cardiac implantable electronic device (CIED), the electronic pacemaker, maintains cardiac contraction during bradycardia.
-The implantable cardioverter-defibrillator (ICD) manages ventricular tachycardia (VT) or fibrillation (VF) and saves lives primarily through the use of high-energy shocks.
-The cardiac resynchronization therapy (CRT) device restores interventricular and intraventricular dyssynchrony in patients with heart failure (HF).
-Despite >50 years of pacing and 40 years of ICD therapy, the lead remains the weakest link between the device and the patient.

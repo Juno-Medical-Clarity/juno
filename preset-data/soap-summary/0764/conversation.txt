@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0764
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How was the sleep study? Not bad. Although I hafta admit it was difficult staying up in preparation for it. I can imagine. That's always tough. It looks like the eval of your daytime fatigue and insomnia was sent over. Let me print out a copy and we can go over it together. How old are you again? I am forty eight.

@@ -73,7 +73,7 @@ jobs:
             --memory 2Gi \
             --timeout 900 \
             --set-env-vars "$WORKER_ENV_VARS" \
-            --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest"
+            --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest,ATHENA_HEALTH_TEST_CLIENT_ID=athena-health-test-client-id:latest,ATHENA_HEALTH_TEST_CLIENT_SECRET=athena-health-test-client-secret:latest"
 
   deploy-frontend:
     needs: deploy-backend

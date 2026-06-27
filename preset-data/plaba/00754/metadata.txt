@@ -1,5 +1,0 @@
-pmid:        34668722
-question:    60
-adaptation:  adaptation2
-title:       Generation of False-Positive SARS-CoV-2 Antigen Results with Testing Conditions outside Manufacturer Recommendations: A Scientific Approach to Pandemic Misinformation
-sentences:   16

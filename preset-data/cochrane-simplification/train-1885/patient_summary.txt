@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1885  |  gem_id: gem-cochrane-simplification-train-1886  |  doi: 10.1002/14651858.CD007425.pub2
-
-This review did not find any high quality randomised controlled trials that examined the effectiveness of such multidisciplinary care, either when originally published in 2009 or for the update in 2011. The evidence from low quality studies suggests that such care may improve some aspects of quality of life, reduce the frequency of hospitalisation and hospital length of stay and improve disability in persons with ALS or MND. The evidence for multidisciplinary care on survival is conflicting. The gap in current research should not be interpreted as proof that multidisciplinary care is ineffective. Further research into types of appropriate studies, caregiver needs and various aspects of multidisciplinary care in the MND population is needed.

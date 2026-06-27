@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1269
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke cigarettes or use any tobacco products, miss? No. Do you drink alcohol and if so, how many drinks do you consume in a typical week? I don't drink. Do you use any recreational drug or other substances? No. Do you have children? Yes. I have three kids. Do your children have any health conditions? No. Are you married? Yes.

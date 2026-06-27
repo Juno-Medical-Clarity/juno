@@ -1,8 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [12:13] 'general-complex' -> 'correlational'
-  [34:35] 'abbr-medical' -> 'FI'

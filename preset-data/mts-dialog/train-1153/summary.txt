@@ -1,2 +1,0 @@
-[ROS]
-GENITOURINARY: Negative frequency, negative urgency, negative dysuria, negative incontinence.  No history of STDs.

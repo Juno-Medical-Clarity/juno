@@ -1,1 +1,0 @@
-To investigate these issues, we used a mouse model in which the differentiation of adult-generated dentate gyrus neurons can be anticipated by conditionally expressing the pro-differentiative gene PC3 (Tis21 / BTG2) in nestin-positive progenitor cells.

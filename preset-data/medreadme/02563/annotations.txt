@@ -1,8 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [2:4] 'medical-jargon-google-easy' -> 'catalytic residues'
-  [10:14] 'medical-jargon-google-hard' -> 'cyclic to acyclic products'

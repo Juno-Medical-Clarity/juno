@@ -1,4 +1,0 @@
-Doctor: Any past medical history like any diabetes or high blood pressure or any heart disease?
-Patient: No, I don't remember any such thing.
-Doctor: How about any surgeries in the past?
-Patient: No. No surgeries at all.

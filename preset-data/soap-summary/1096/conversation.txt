@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1096
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You can continue working, I just want you to be careful. Thanks Doctor. I will be. Great.

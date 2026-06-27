@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 3.8
-split:       test
-
-jargon_spans:
-  [10:12] 'abbr-general' -> 'GRADE approach'

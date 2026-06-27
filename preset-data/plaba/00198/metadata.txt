@@ -1,5 +1,0 @@
-pmid:        15257071
-question:    16
-adaptation:  adaptation2
-title:       Area-under-the-curve monitoring of prednisolone for dose optimization in a stable renal transplant population
-sentences:   11

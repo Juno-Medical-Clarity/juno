@@ -1,1 +1,0 @@
-We applied the software package TrakEM2 to reconstruct neuronal microcircuitry from TEM sections of a small brain, the early larval brain of Drosophila melanogaster.

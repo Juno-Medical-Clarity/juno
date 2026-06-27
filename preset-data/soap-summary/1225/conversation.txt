@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1225
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Welcome to the clinic. Thank you. I would like to start with your medical history. Do you have any medical problems or conditions? I don't have any medical conditions other then the one I was sent to you for. Yes. Doctor Hanine sent over your recent blood test results and chart notes. Did he discuss those results with you? Yes, he did. He said I have multiple myeloma. And that the blood work levels are how he found it. Yes. The I G G levels show that the subtype is multiple myeloma. Okay.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0056  |  gem_id: gem-cochrane-simplification-train-57  |  doi: 10.1002/14651858.CD004071.pub3
-
-We identified six randomised controlled trials involving a total of 794 women and their babies for this review. The trials were of moderate risk of bias overall. The trials did not demonstrate differences between calcium channel blocker maintenance therapy and placebo or no treatment in the prevention of preterm birth or perinatal death (fetal or neonatal deaths). None of the trials included any follow-up of the infants to assess longer-term development. Calcium channel blocker maintenance therapy (with a drug called nifedipine) was more likely than placebo or no treatment to prolong pregnancy, however the infants of these mothers were more likely to have a longer hospital stay. Based on the current studies, we found no convincing evidence that calcium channel blocker maintenance therapy prevents preterm birth for women after threatened preterm labour, or that it improves outcomes for babies.

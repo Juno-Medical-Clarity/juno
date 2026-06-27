@@ -1,5 +1,0 @@
-Doctor: Do you mind elaborating more on your family history? Did either of your parents suffer from any medical problems?
-Patient: Sure. My dad had heart disease. He passed at seventy five. He had a sister with diabetes and I think my mom may have had diabetes as well.
-Doctor: Got it.
-Patient: As for my mom, she had a long history of mini strokes. She didn't have any memory problems or dementia when she passed at eighty five. They believe she passed due to old age.
-Doctor: Thank you for further elaborating. I'm so sorry for your losses. Losing a parent let alone two is profoundly difficult.

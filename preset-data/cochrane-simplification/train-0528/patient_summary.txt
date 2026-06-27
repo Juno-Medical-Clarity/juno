@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0528  |  gem_id: gem-cochrane-simplification-train-529  |  doi: 10.1002/14651858.CD007004.pub3
-
-This review of available trials showed that adding aldosterone antagonist treatment to standard therapy reduced protein release into the urine and lowered blood pressure but had uncertain effects on kidney function and survival. Treatment also increases the amount of potassium in the blood which may require treatment changes, extra blood tests and is potentially harmful. Whether aldosterone blockers protect kidney function to lower the chances needing dialysis or kidney transplantation or prevent heart disease in people who have CKD is unclear and not answered by existing research.

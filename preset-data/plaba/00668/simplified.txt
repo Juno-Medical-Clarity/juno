@@ -1,9 +1,0 @@
-Measurement of cells that make insulin is an important indicator of diabetes development in people at risk for diabetes.
-Although the disease most often happens before 17 years of age, normal values for insulin release were not available for this age group.
-We did an I.V. (injected) glucose tolerance test in 167 normal children, and in 98 islet cell antibody (ICA; proteins made against insulin-producing cells)-negative (without ICA) and 12 ICA-positive (with ICA) siblings of diabetic patients.
-The children ranged from 1-16 years of age.
-The first part of insulin release, measured as the total blood insulin levels at 1 and 3 minutes, increased with age and was significantly lower in ICA-negative siblings than in normal children.
-We did not see a difference in the first part of insulin release before 8 years of age.
-None of the ICA-negative siblings developed diabetes after an average of 4.5 years.
-The first part of insulin response was similar in ICA-positive and ICA-negative siblings, but significantly lower than in normal children.
-We do not know the reason ICF-negative siblings had lower insulin release, but it could have to do with insulin-producing cells growing incorrectly or insulin release that could be part of the complicated development of type 1 diabetes.

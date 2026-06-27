@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1886  |  gem_id: gem-cochrane-simplification-train-1887  |  doi: 10.1002/14651858.CD002984
-
-These days the drugs of the latter type that are used for acute COPD are salbutamol and terbutaline, but neither of these drugs have been used in the only studies that we could find. We found only three small studies. Overall, both types of drug showed a small but worthwhile effect. There was no difference between them. Our review was not designed to test whether they would have had a greater effect if both were given at the same time.

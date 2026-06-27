@@ -1,9 +1,0 @@
-source:      MSD
-side:        simple
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [7:9] 'medical-jargon-google-easy' -> 'contrast agent'
-  [11:12] 'medical-jargon-google-easy' -> 'colon'
-  [22:23] 'medical-jargon-google-easy' -> 'rectum'

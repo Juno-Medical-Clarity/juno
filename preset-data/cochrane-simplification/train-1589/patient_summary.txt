@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1589  |  gem_id: gem-cochrane-simplification-train-1590  |  doi: 10.1002/14651858.CD004139.pub2
-
-There is a lack of studies to determine the best CSF dose for children and only a small number of RCTs evaluating the role of CSF in children's ALL. The prophylactic administration of CSF reduces hospital stay, and risk of infections. The authors did not find evidence that CSF reduces febrile neutropenia episodes, their duration, or treatment delays in children with ALL undergoing chemotherapy. Follow up was too short to provide useful information on any possible effect on relapse or survival.

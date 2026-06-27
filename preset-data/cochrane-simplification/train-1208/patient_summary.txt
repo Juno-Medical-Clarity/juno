@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1208  |  gem_id: gem-cochrane-simplification-train-1209  |  doi: 10.1002/14651858.CD006536.pub4
-
-Randomised trials comparing bone marrow-derived cells with no cells in patients diagnosed with acute myocardial infarction were eligible for this review. We searched databases to March 2015. This review was supported by the National Institute of Health Research (NIHR) through its Cochrane Incentive Award programme. In this updated systematic review we analysed data from a total of 41 trials with over 2700 patients. Evaluation of the currently available evidence indicates that this treatment may not lead to improvement when compared to standard treatment, as measured by the frequency of deaths, heart attacks and/or heart failure requiring re-hospitalisation following treatment, as well as tests of heart function, in the short and long term. The evidence in this review is of moderate quality due to the small number of events.

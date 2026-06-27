@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0711  |  gem_id: gem-cochrane-simplification-train-712  |  doi: 10.1002/14651858.CD002907.pub2
-
-Twelve trials (1241 patients) assessing several antibiotic prophylaxis regimens versus no intervention or placebo were analysed, showing that antibiotic prophylaxis successfully reduced the incidence of bacterial infections. Antibiotic prophylaxis was also associated with a reduction in mortality, mortality from bacterial infections, rebleeding rate, and days of hospitalisation. The prophylactic treatment was not associated with important adverse effects. Five trials (650 patients) assessed one antibiotic regimen compared with another. All antibiotic regimens provided similar benefits and none seemed superior. Thus, to this point there is no evidence to recommend one specific antibiotic regimen over the other. All trials analysed were subject to bias; thus, results should be interpreted carefully.

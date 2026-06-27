@@ -1,5 +1,0 @@
-pmid:        33714971
-question:    49
-adaptation:  adaptation1
-title:       A Case of Elephantiasis Nostras Verrucosa Secondary to Lymphedema Praecox Complicated by Congestive Cardiac Failure
-sentences:   16

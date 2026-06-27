@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1655  |  gem_id: gem-cochrane-simplification-train-1656  |  doi: 10.1002/14651858.CD003574.pub2
-
-This review shows that a single intravenous infusion of infliximab (5 mg/kg) may be an effective treatment for patients with active Crohn's disease who no longer respond to corticosteroids or immunosuppressive drugs. There is also some evidence that CDP571, another TNF alpha blocking drug may be effective. There is no evidence to support the use of etanercept, a drug that blocks the action of TNF alpha by binding to receptors. There were no serious side effects associated with TNF blocking drugs, although the follow-up period of the studies reported in this review may have been too short to assess the development of serious side effects.

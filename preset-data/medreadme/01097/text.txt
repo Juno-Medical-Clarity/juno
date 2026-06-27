@@ -1,1 +1,0 @@
-Overall, sequence generation, allocation procedures and blinding were poorly reported.

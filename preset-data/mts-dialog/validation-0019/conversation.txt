@@ -1,6 +1,0 @@
-Doctor: Are you taking any medication?
-Guest_family: Yes, I am taking that antibiotic.
-Doctor: Oh yes!
-Guest_family: Yeah.
-Doctor: Yes, you are taking amoxicillin.
-Guest_family: That's right.

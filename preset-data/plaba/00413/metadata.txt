@@ -1,5 +1,0 @@
-pmid:        29371246
-question:    32
-adaptation:  adaptation1
-title:       MTHFR Gene and Serum Folate Interaction on Serum Homocysteine Lowering: Prospect for Precision Folic Acid Treatment
-sentences:   8

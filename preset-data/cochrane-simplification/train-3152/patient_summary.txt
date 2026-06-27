@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3152  |  gem_id: gem-cochrane-simplification-train-3153  |  doi: 10.1002/14651858.CD006048.pub2
-
-We included trials that involved both types of participants. The review found all randomised controlled evaluations of the effects of CBT on men's physical violence to their female partners worldwide, but there were only six small trials with a total of 2343 participants that met the inclusion criteria. The results of four of these trials, which compared men who received CBT with men getting no treatment, were combined. This was not able to show us whether or not CBT was better than no treatment. Similarly, the individual results of the other two trials, which compared CBT with another treatment, were inconclusive. Overall, the evidence from the included studies is insufficient to draw any conclusions.

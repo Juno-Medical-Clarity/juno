@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0655
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, are you married, ma'am? Well, no I'm not. My husband and I got a divorce. I'm sorry to hear that, do you have any children? It's okay, it was for the best. Yes, I have two. Do you live with either of them? Yeah, um, I live with my son right now. Do you smoke or drink? No I do not.

@@ -1,8 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        complex
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [26:29] 'medical-jargon-google-easy' -> 'medicines use review'
-  [30:31] 'abbr-medical' -> 'MUR'

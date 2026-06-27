@@ -1,5 +1,0 @@
-pmid:        18695233
-question:    75
-adaptation:  adaptation3
-title:       Genetic complexity in sickle cell disease
-sentences:   9

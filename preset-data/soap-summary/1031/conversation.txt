@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1031
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke? Yes. How much do you smoke? Honestly, I smoke every day.

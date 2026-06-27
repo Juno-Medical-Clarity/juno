@@ -1,5 +1,0 @@
-pmid:        12097783
-question:    20
-adaptation:  adaptation1
-title:       Treatment approaches to major depressive disorder relapse. Part 1: dose increase
-sentences:   17

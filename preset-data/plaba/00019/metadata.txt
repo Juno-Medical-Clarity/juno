@@ -1,5 +1,0 @@
-pmid:        32874005
-question:    2
-adaptation:  adaptation3
-title:       Duloxetine-induced hypertensive urgency in type 2 diabetes mellitus with diabetic neuropathy
-sentences:   5

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0274
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, miss. What is the reason for your visit today? I think I have some warts on my back end where the poop comes out. I see. When did you start noticing them? I think like three to four weeks ago. Do you feel any pain or discomfort? It itches a little, but I haven't felt any pain yet. Is this normal for a twenty two year old? I'll have to take a look, but you'll be fine. Are there any other symptoms that you are aware of? Nope. Just the warts and itchiness.

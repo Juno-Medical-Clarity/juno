@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0853
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Alright. So this is going to be a complex case. Your wound is complicated by methicillin-resistant staphylococcus aureus cellulitis. Is there a treatment for my right leg? There is. It will be more aggressive, but we can do it.

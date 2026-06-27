@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0883
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, this is your follow up visit, right? Welcome back! Have you been taking your Plaquenil for lupus, ma'am? Yeah, I am. Your prescription is two hundred M G twice a day, correct? Yeah, that's it. Do you have your eye report with you today? Yes, doctor. Here you go. Good, thank you, what seems to be the problem today? Well, I'm having some aches and pains in my hands and elbows. When did this pain start? It's been a few weeks now. Is there any associated trauma? Did you fall? No, no falls or anything. It just started one day, and it's really bothering me. Are you having any fever or chills, or cold or flu like symptoms? No, I'm not. How about swelling? Are any of your joints swollen? No, everything is normal there. Of note, I have been losing a lot of hair recently. Okay, that's interesting.

@@ -1,5 +1,0 @@
-pmid:        34556486
-question:    25
-adaptation:  adaptation1
-title:       Antibody and cellular therapies for treatment of covid-19: a living systematic review and network meta-analysis
-sentences:   17

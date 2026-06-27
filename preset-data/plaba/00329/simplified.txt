@@ -1,5 +1,0 @@
-Patients released from a hospital after 2 consecutive test results detecting no SARS-CoV-2 (a viral breathing-related illness) have shown reappearance of SARS CoV-2 in test results.
-We discuss possible explanations including inaccurate results, reactivation, and re-infection. We also propose a new strategy to solve the issue.
-Prolonged and recurring virus release and emission from patients without symptoms is unknown.
-Transmission of SARS-CoV-2 by carriers without symptoms had been documented.
-Considering this ongoing global public health emergency, large studies are needed to better understand the issue of possible SARS-CoV-2 reapparance in infected patients.

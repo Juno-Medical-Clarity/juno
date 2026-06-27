@@ -1,1 +1,0 @@
-Although such methods have heretofore been subject to comparative performance analysis using simulated data, simulating data that realistically reflect data from an actual HDE remains a challenge.

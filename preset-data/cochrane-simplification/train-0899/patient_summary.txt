@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0899  |  gem_id: gem-cochrane-simplification-train-900  |  doi: 10.1002/14651858.CD004233.pub4
-
-This review assessed information from 10 studies which used celecoxib for acute pain. Just over 3 in 10 people (33%) taking celecoxib 200 mg, and over 4 in 10 (43%) taking celecoxib 400 mg, experienced good pain relief (at least 50%) compared to about 1 in 10 (range 1% to 11%) with placebo. Comparing the results of the different studies showed that the 200 mg dose of celecoxib was at least as good as aspirin 600 to 650 mg and paracetamol (acetaminophen) 1000 mg for relieving postoperative pain, while a 400 mg dose was at least as good as ibuprofen 400 mg. The number of people who experienced negative (adverse) reactions was similar for celecoxib and placebo, and stopping the medication due to these adverse reactions also occurred at similar rates. One serious adverse event, muscle breakdown (rhabdomyolysis), was probably related to celecoxib.

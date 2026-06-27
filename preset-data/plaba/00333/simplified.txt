@@ -1,9 +1,0 @@
-Severe acute respiratory syndrome coronavirus 2, also known as SARS-CoV-2, is the cause of coronavirus disease 2019 or COVID-19 (a viral lung infection). Within a short period of time, SARS-CoV-2 has spread around the world.
-A significant amount of strong scientific evidence now backs up the initial thoughts on how COVID spreads from one person to another. This can improve current policies surrounding COVID-19 health safety rules and prevent the spread of false information.
-This paper offers a thorough review of the scientific reports concerning the spread of COVID-19.
-Several laboratory studies have been able to grow live COVID-19 viruses from the air and surfaces, even several hours after the virus was placed there. However, real-world studies that detect COVID-19 genetic material in the environment report very low levels. Few have been able to grow the virus from these samples.
-Strong evidence from cases and outbreaks shows that COVID-19 mostly spreads through the airways (lungs, throat, nose, and mouth). Distance and ventilation are key factors for risk of spreading COVID-19.
-Even in the few cases where scientists think the virus spread through contact with people or surfaces, spreading through the airways has not been ruled out.
-The rate that a person spreads the virus is highest a day before symptoms appear and declines within a week of symptoms appearing.
-The spread of the COVID-19 virus is different for each person. Most people infected do not spread COVID-19. However, some people infected with COVID-19 can cause many infections in groups, known as "superspreading events."
-Rules and procedures around COVID-19 should include the growing amount of scientific evidence about how it spreads. This will help educate the public and slow the spread of the virus.

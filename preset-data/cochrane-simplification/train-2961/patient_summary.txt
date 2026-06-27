@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2961  |  gem_id: gem-cochrane-simplification-train-2962  |  doi: 10.1002/14651858.CD001116.pub4
-
-The review of trials found that exercise training (including running, gymnastics, cycling, swimming, weights and walking) was well tolerated among the study participants. This review also found that physical training improved cardiopulmonary fitness and showed some positive effects for health-related quality of life. However, physical training had no significant effect on resting lung function. In summary, people with stable asthma should be encouraged to participate in regular exercise training that is within their capacity without fear of worsening of their asthma symptoms.

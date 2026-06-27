@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1623  |  gem_id: gem-cochrane-simplification-train-1624  |  doi: 10.1002/14651858.CD009037.pub2
-
-This review found dietary advice or counselling and blood glucose level monitoring for women with borderline GDM helped reduce the number of macrosomic and LGA babies. A single trial found that the interventions led to more inductions of labour. The interventions did not increase the risk of caesarean sections, operative vaginal births or women's weight gain in pregnancy. These findings were based on four small randomised controlled trials (involving 543 women). The trials were of moderate to high risk of bias and only data from 521 women and their babies is included in our analyses. Until additional evidence from large well designed randomised trials becomes available, current evidence is insufficient to make conclusive recommendations for the management of women with pregnancy high blood glucose concentrations not meeting GDM (or type 2 diabetes) diagnostic criteria.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3443  |  gem_id: gem-cochrane-simplification-train-3444  |  doi: 10.1002/14651858.CD004835.pub2
-
-We found five published randomised trials, none of which showed a statistically significant difference in overall survival for patients who had either narrow or wide removal of the melanoma and surrounding tissue.  Similarly, our meta-analysis showed there was no statistically significant difference in overall survival between the two groups treated with either narrow or wide excision. The summary estimate for overall survival favoured wide excision by a small degree, but the result was not significantly different. This result is compatible with both a 5% relative reduction in overall mortality favouring narrower excision and a 15% relative reduction in overall mortality favouring wider excision. Current randomised trial evidence is insufficient to address optimal excision margins for primary cutaneous melanoma.

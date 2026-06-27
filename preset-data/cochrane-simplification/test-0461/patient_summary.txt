@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0461  |  gem_id: gem-cochrane-simplification-test-462  |  doi: 10.1002/14651858.CD009292.pub2
-
-We included four trials with 450 participants randomised to either percutaneous vascular intervention or clot-dissolving drugs given by injection. The evidence is current as of September 2017. Compared with clot-dissolving drugs, percutaneous vascular interventions did not increase the chance of making a good recovery by the end of the trial. There was no significant increase in the risk of dying or of suffering a brain bleed. New, larger trials are needed, particularly because of the rapid development of new techniques and devices for percutaneous vascular interventions. We judged the quality of the evidence to be low because of the limited amount of trial information available.

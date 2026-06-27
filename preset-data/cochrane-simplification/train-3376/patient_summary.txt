@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3376  |  gem_id: gem-cochrane-simplification-train-3377  |  doi: 10.1002/14651858.CD004926.pub3
-
-This review aimed to determine if increased fluids and diuretics or both could hasten the passage of stones and improve symptoms. Neither our initial review nor this subsequent update identified sufficient evidence to enable conclusions to be determined about the safety and effectiveness of increasing fluids or diuretics or both to treat people with acute ureteric colic. More and larger randomised controlled studies are required.

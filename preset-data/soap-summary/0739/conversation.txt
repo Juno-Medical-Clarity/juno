@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0739
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you take any- Meds? Yes. I do. I take Allegra for seasonal allergies. I also take something that starts with a P. I'm blanking on the name. My other doctor prescribed it to me for exercise induced asthma. Oh, do you mean Proventil? Yes, that's it! I keep that on hand in case my asthma gets outta control. Is it up to date? You mean is it expired? No, I don't think so. It hasn't been long since I visited the pharmacy. Good. I always like to advise my patients to check expiration dates.

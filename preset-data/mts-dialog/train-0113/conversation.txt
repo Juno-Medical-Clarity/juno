@@ -1,3 +1,0 @@
-Doctor: Do you have diabetes or blood pressure problems?
-Patient: Yes, I have hypertension but no diabetes.
-Doctor: Alright.

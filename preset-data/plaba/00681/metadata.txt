@@ -1,5 +1,0 @@
-pmid:        21388440
-question:    53
-adaptation:  adaptation1
-title:       Continuous moderate-intensity exercise with or without intermittent high-intensity work: effects on acute and late glycaemia in athletes with Type 1 diabetes mellitus
-sentences:   10

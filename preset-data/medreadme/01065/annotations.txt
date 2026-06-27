@@ -1,9 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [7:9] 'medical-jargon-google-easy' -> 'respiratory rhythms'
-  [12:14] 'medical-jargon-google-easy' -> 'chemosensory information'
-  [16:17] 'medical-jargon-google-easy' -> 'postnatal'

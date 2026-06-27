@@ -1,8 +1,0 @@
-source:      MSD
-side:        simple
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [2:4] 'medical-jargon-google-easy' -> 'hot flash'
-  [13:14] 'general-complex' -> 'dilate'

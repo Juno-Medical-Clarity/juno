@@ -1,5 +1,0 @@
-drug_focus: topiramate
-question_type: Information
-section_title: Why is this medication prescribed?
-source_url: https://medlineplus.gov/druginfo/meds/a697012.html
-sample_id: 0620

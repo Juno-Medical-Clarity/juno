@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0562
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any major medical conditions running in your family history that you know about? No, there's nothing of note. So, there's no history of arthritis, or cancer that you're aware of? No, not that I know of.

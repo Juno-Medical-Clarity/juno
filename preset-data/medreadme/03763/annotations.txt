@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.85
-split:       test
-
-jargon_spans:
-  [6:7] 'medical-jargon-google-easy' -> 'lipoproteins'
-  [25:28] 'medical-jargon-google-easy' -> 'beta - amyloid'

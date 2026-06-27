@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0850
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-now 82 years old. Mother has DM and is age 80.

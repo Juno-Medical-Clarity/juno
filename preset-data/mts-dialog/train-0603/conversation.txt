@@ -1,6 +1,0 @@
-Guest_family: How's my husband doing? Sorry, I had to take a call outside.
-Doctor: He's doing much better. He'll be going home today with a prescription for Zithromax.
-Guest_family: I'm glad he's able go home and get some rest.
-Doctor: However, I'd like to still see him in the office next week for a reevaluation.
-Guest_family: Great. Can we make the appointment right now?
-Doctor: Yes, the front desk will be able to help you with that.

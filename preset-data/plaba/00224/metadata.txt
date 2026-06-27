@@ -1,5 +1,0 @@
-pmid:        17596470
-question:    18
-adaptation:  adaptation1
-title:       Medical nutrition therapy and lifestyle interventions
-sentences:   8

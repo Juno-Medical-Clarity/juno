@@ -1,5 +1,0 @@
-pmid:        12224233
-question:    17
-adaptation:  adaptation1
-title:       Managing head injuries
-sentences:   34

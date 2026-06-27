@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1040
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good morning, ma'am. Good morning, doctor. Before we begin, I just have a few questions. Do you remember what illnesses you had as a child? Yes, I got a few. I had strep throat, mumps, and, um, chickenpox growing up.

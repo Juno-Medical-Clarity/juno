@@ -1,4 +1,0 @@
-Doctor: I will do a quick exam on you.
-Patient: What kind of exam?
-Doctor: I'm just checking for lymph nodes. Whenever there is an infection those guys are the first ones to be noticed with swelling.
-Doctor: Okay, so let's first check your neck area. It looks good. I don't feel any inflamed lymph node. Your armpits look good too and the last place to check is your groin area. It is all good. No sign of infection.

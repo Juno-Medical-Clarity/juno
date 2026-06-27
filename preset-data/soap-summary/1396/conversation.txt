@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1396
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What do you do for a living? I'm a real estate agent. How long have you been working in the real estate business? Almost twenty years. Wow. I know who to go to when I'm looking to buy a house. Happy to help. So let's see here. Do you drink or smoke? I drink socially, but it's very infrequent. And I have to ask, but any drug use? Nope. Not now, not ever.

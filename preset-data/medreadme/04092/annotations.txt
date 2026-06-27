@@ -1,9 +1,0 @@
-source:      pnas
-side:        simple
-readability: 5.35
-split:       test
-
-jargon_spans:
-  [7:10] 'medical-jargon-google-hard' -> 'Hox5 mutant fibroblasts'
-  [14:16] 'medical-jargon-google-hard' -> 'fibronectin matrix'
-  [20:24] 'medical-jargon-google-hard' -> 'integrins Itga5 / b1'

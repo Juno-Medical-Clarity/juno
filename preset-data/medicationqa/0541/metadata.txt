@@ -1,5 +1,0 @@
-drug_focus: benzodiazepines
-question_type: Information
-section_title: Benzodiazepines and Opioids
-source_url: https://www.drugabuse.gov/drugs-abuse/opioids/benzodiazepines-opioids
-sample_id: 0541

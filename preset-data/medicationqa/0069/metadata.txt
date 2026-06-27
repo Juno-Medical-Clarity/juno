@@ -1,5 +1,0 @@
-drug_focus: normal saline
-question_type: Information
-section_title: NA
-source_url: https://medical-dictionary.thefreedictionary.com/physiologic+saline+solution
-sample_id: 0069

@@ -1,5 +1,0 @@
-pmid:        1917173
-question:    50
-adaptation:  adaptation1
-title:       The role of medical treatment of distal type aortic dissection
-sentences:   12

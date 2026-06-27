@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0765  |  gem_id: gem-cochrane-simplification-train-766  |  doi: 10.1002/14651858.CD002173.pub2
-
-In this review we aimed to determine whether there is evidence for the effectiveness of inhaled sodium cromoglycate as maintenance treatment in children with chronic asthma. Most of the studies were carried out in small groups of patients. Furthermore, we suspect that not all studies undertaken have been published. The results show that there is insufficient evidence to be sure about the beneficial effect of sodium cromoglycate compared to placebo. However, for several outcome measures the results favoured sodium cromoglycate.

@@ -1,6 +1,0 @@
-Defining the duration of infectivity of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) has major implications for public health and infection control practice in healthcare facilities.
-Early in the pandemic, most hospitals required 2 negative RT-PCR tests before discontinuing isolation in patients with Covid-19.
-Many patients, however, have persistently positive RT-PCR tests for weeks to months following clinical recovery, and multiple studies now indicate that these generally do not reflect replication-competent virus.
-SARS-CoV-2 appears to be most contagious around the time of symptom onset, and infectivity rapidly decreases thereafter to near-zero after about 10 days in mild-moderately ill patients and 15 days in severely-critically ill and immunocompromised patients.
-The longest interval associated with replication-competent virus thus far is 20 days from symptom onset.
-This review summarizes evidence-to-date on the duration of infectivity of SARS-CoV-2, and how this has informed evolving public health recommendations on when it is safe to discontinue isolation precautions.

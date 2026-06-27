@@ -1,2 +1,0 @@
-Doctor: Any known allergies?
-Patient: No.

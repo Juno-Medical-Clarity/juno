@@ -1,5 +1,0 @@
-drug_focus: ASA EC
-question_type: Information
-section_title: NA
-source_url: https://www.drugbank.ca/drugs/DB00945
-sample_id: 0364

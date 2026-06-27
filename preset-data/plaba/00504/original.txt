@@ -1,6 +1,0 @@
-Recent studies have shown that nitric oxide (NO) is a central mediator in diseases occurring with thoracic aortic aneurysm (TAA), such as Marfan syndrome (MFS).
-The progressive dilation of the aorta in TAA ultimately leads to aortic dissection.
-Unfortunately, current medical treatments neither halt aortic enlargement nor prevent rupture, leaving surgical repair as the only effective treatment.
-There is therefore a pressing need for effective therapies to delay or even avoid the need for surgical repair in TAA patients.
-Here, we summarize the mechanisms through which NO signalling dysregulation causes TAA, particularly in MFS and discuss recent advances based on the identification of new MFS mediators related to pathway overactivation that represent potential disease biomarkers.
-Likewise, we propose iNOS, sGC, and PRKG1, whose pharmacological inhibition reverses aortopathy in MFS mice, as targets for therapeutic intervention in TAA and candidates for clinical trials.

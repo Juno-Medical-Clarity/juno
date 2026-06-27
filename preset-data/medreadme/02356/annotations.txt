@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [22:25] 'medical-jargon-google-easy' -> 'Falls Efficacy Scale'

@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [4:5] 'medical-jargon-google-hard' -> 'FAM173B'
-  [5:7] 'medical-jargon-google-easy' -> 'methyltransferase activity'

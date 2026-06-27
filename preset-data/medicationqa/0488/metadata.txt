@@ -1,5 +1,0 @@
-drug_focus: olanzapine
-question_type: Dose
-section_title: DOSAGE FORMS AND STRENGTHS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=676ace4e-7706-742d-cab0-430dd1f83408&audience=consumer
-sample_id: 0488

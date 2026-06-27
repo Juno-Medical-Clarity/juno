@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0911
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How's he doing? Guest_family: Not so great. He's been out of it. He hasn't been acting like himself. How long has it been since you noticed any behavioral changes? Guest_family: A few days now. Is he complaining of any pain? Guest_family: Yeah he's been- He's been? Guest_family: Sorry, my phone was on vibrate and I had to turn it off. No problem. Guest_family: He's been pointing to his stomach and saying it hurts. Is he having any other symptoms? Guest_family: He's told me he feels queasy. I took his temperature the other night and he was running a fever of one O two. Any vomiting with the nausea? Guest_family: Yeah, he's thrown up a handful of times.

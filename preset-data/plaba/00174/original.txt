@@ -1,9 +1,0 @@
-The coronavirus are a wide group of viruses among that the SARS-CoV-2 is included (family Coronaviridae, subfamily Coronavirinae, genus Betacoronavirus and subgenus Sarbecovirus).
-Its main structural proteins are the membrane (M), the envelope (E), the nucleocapsid (N) and spike (S).
-The immune response to SARS-CoV-2 involves the cellular and the humoral sides, with neutralizing antibodies fundamentally directed against the S antigen.
-Although the seroprevalence data are frequently assumed as protection markers, no necessarily they are.
-In Spain, it is estimated that, to assure the herd immunity, at least four-fifths of the population should be immunoprotected.
-Due the high fatality rate of COVID-19, the acquisition of the protection only by the natural infection it not assumable and other measures as the mass immunization are required.
-Currently, there are several vaccine prototypes (including life virus, viral vectors, peptides and proteins and nucleic acid) in different phase of clinical evaluation.
-Foreseeably, some of these news vaccines would be soon commercially available.
-In this text, aspects related to these issues are reviewed.

@@ -18,7 +18,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 from error_codes import ErrorCode
-from utils.error_handler import JunoError
+from utils.pipeline_errors import JunoError
 
 
 # ---------------------------------------------------------------------------

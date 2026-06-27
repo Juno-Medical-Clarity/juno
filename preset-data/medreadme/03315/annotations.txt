@@ -1,7 +1,0 @@
-source:      MSD
-side:        simple
-readability: 3.0
-split:       dev
-
-jargon_spans:
-  [3:4] 'medical-jargon-google-easy' -> 'starbursts'

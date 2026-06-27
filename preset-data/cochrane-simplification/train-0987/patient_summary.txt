@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0987  |  gem_id: gem-cochrane-simplification-train-988  |  doi: 10.1002/14651858.CD003773.pub3
-
-Our systematic review identified 15 randomised studies with 1550 patients comparing CRRT with IRRT. We did not find any difference between CRRT and IRRT with respect to mortality, renal recovery, and risk of haemodynamic instability or hypotension episodes.

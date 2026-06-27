@@ -1,5 +1,0 @@
-pmid:        27852615
-question:    65
-adaptation:  adaptation2
-title:       Executive functions and the ω-6-to-ω-3 fatty acid ratio: a cross-sectional study
-sentences:   12

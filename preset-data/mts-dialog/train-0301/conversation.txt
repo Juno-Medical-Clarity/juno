@@ -1,4 +1,0 @@
-Doctor: Do you have any questions regarding your surgery?
-Patient: Yes, I do, multiple.
-Doctor: Go ahead shoot.
-Patient: I have them all written down on this.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1890  |  gem_id: gem-cochrane-simplification-train-1891  |  doi: 10.1002/14651858.CD004227.pub3
-
-The review covered 10 trials, involving 6533 women, and looked at several antioxidants. Overall the review found no reduction in pre-eclampsia, high blood pressure or preterm birth with the use of antioxidant supplements. When antioxidants were assessed separately, there were insufficient data to be clear about whether there was any benefit or not, except for vitamin C and E. The current evidence does not support the use of antioxidants to reduce the risk of pre-eclampsia or other complications in pregnancy, but there are trials still in progress.

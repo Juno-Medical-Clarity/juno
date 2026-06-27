@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'laparoscopic surgery'
-  [17:18] 'abbr-general' -> 'SD'
-  [25:26] 'abbr-general' -> 'SD'

@@ -1,1 +1,0 @@
-This made it possible to simulate how the different ATPase enzymes move within the ring under a wide range of conditions.

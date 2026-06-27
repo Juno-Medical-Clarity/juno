@@ -1,5 +1,0 @@
-Doctor: Have you had a recent vaccination?
-Patient: I had a flu shot last winter but I have not had and recent vaccines.
-Doctor: Do you have any planned in the near future?
-Patient: I was going to get another flu shot but I don't think I am due for that for another three months.
-Doctor: Great.

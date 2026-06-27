@@ -1,8 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [11:15] 'medical-jargon-google-easy' -> 'mucin - type glycoconjugates'
-  [20:21] 'general-medical-multisense' -> 'vectors'

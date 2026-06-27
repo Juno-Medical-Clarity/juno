@@ -1,5 +1,0 @@
-pmid:        33049331
-question:    26
-adaptation:  adaptation1
-title:       The duration of infectiousness of individuals infected with SARS-CoV-2
-sentences:   10

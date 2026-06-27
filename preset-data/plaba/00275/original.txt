@@ -1,8 +1,0 @@
-Birt-Hogg-Dubé syndrome (BHD) is a rare, autosomal dominant disorder characterized by the development of hair follicle tumors, renal tumors and pulmonary cysts.
-BHD is caused by heterozygous, predominantly truncating mutations in the folliculin (FLCN) gene located on chromosome 17, which encodes a highly conserved tumor suppressor protein.
-Although management of renal tumors of low malignant potential is the primary focus of longitudinal care, pulmonary manifestations including cyst formation and spontaneous pneumothorax are among the most common manifestations in BHD.
-Due to the lack of awareness, there is commonly a delay in the pulmonary diagnosis of BHD and patients are frequently mislabeled as having chronic obstructive lung disease, emphysema or common bullae/blebs.
-A family history of pneumothorax is present in 35 % of patients with BHD.
-Certain imaging characteristics of the cysts, including size, basilar and peripheral predominance, perivascular and periseptal localization, and elliptical or lentiform shape can suggest the diagnosis of BHD based on inspection of the chest CT scan alone.
-Recurrent pneumothoraces are common and early pleurodesis is recommended.
-A better understanding of role of FLCN in pulmonary cyst formation and long term studies to define the natural history of the pulmonary manifestations of BHD are needed.

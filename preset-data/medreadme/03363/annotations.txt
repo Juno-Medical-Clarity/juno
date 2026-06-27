@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.85
-split:       dev
-
-jargon_spans:
-  [9:11] 'medical-jargon-google-easy' -> 'molecular mechanism'
-  [14:16] 'medical-jargon-google-easy' -> 'neural circuit'
-  [18:20] 'medical-jargon-google-easy' -> 'gustatory cortex'

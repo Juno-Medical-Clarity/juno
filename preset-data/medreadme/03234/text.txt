@@ -1,1 +1,0 @@
-This work provides a global view of the complex distribution of domains and catalytic machinery throughout the fold class, showing that each superfamily contains remnants of the CxxC active site.

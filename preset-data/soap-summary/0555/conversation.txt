@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0555
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I am having stomach pain. Hm, any nausea or vomiting? Yes, both.

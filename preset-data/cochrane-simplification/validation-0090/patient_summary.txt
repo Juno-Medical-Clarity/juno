@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0090  |  gem_id: gem-cochrane-simplification-validation-91  |  doi: 10.1002/14651858.CD005022.pub3
-
-This review included three trials evaluating two different types of steroids, triamcinolone acetonide and anecortave acetate, for the treatment of neovascular AMD. The findings across the three trials, which included a total of 809 participants, were consistent with no evidence of benefit, in terms of preventing vision loss, with antiangiogenic steroids compared with placebo or photodynamic therapy. Based on available evidence, there is little benefit of steroids with anti-angiogenic properties in the treatment of neovascular age-related macular degeneration. ".

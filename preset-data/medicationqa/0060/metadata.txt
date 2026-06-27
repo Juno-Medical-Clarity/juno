@@ -1,5 +1,0 @@
-drug_focus: Gardasil
-question_type: Contraindication
-section_title: CONTRAINDICATIONS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a21f4f4b-b891-4f25-b747-cb9ec7d865d6
-sample_id: 0060

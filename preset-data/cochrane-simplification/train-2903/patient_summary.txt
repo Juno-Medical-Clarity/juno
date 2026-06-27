@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2903  |  gem_id: gem-cochrane-simplification-train-2904  |  doi: 10.1002/14651858.CD001735.pub5
-
-The review found that people lying on ordinary foam mattresses are more likely to get pressure ulcers than those lying on a higher-specification foam mattress. In addition the review also found that people who used sheepskin overlays on their mattress developed fewer pressure ulcers. While alternating-pressure mattresses may be more cost effective than alternating-pressure overlays, the evidence base regarding the merits of higher-specification constant low-pressure and alternating-pressure support surfaces for preventing pressure ulcers is unclear. Rigorous research comparing different support surfaces is needed.

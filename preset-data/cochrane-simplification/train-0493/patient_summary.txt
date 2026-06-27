@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0493  |  gem_id: gem-cochrane-simplification-train-494  |  doi: 10.1002/14651858.CD004930.pub3
-
-Many of the 39 studies assessed in this review enrolled only a small number of patients and date back to before 1990. The novel drug alvimopan shortened bowel recovery, but many studies failed to report methodology according to current guidelines. Erythromycin, cholecystokinin, cisapride, dopamine-antagonists, propranolol or vasopressin are not supported due to lack of evidence or absence of effect. Intravenous lidocaine and neostigmine might show to be beneficial, but more evidence is needed.

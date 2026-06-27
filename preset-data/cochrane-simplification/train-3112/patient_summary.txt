@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3112  |  gem_id: gem-cochrane-simplification-train-3113  |  doi: 10.1002/14651858.CD000104.pub4
-
-Study characteristics. Nineteen eligible studies involving 4096 infants met our inclusion criteria. Results. Insufficient evidence exists to support the routine use of high frequency oscillatory ventilation instead of conventional ventilation for preterm infants with lung disease who are given positive pressure ventilation. High frequency oscillatory ventilation is a way of providing artificial ventilation of the lungs that theoretically may produce less injury to the lungs and therefore reduce the rate of chronic lung disease. This review of the evidence from 19 randomised controlled trials showed that although a small protective effect towards the lungs can be seen, this moderate benefit is highly variable between studies and should be weighed against possible harm.

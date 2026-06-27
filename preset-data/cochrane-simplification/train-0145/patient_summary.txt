@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0145  |  gem_id: gem-cochrane-simplification-train-146  |  doi: 10.1002/14651858.CD003323.pub3
-
-This review includes six small randomised controlled trials that compared ACI with either mosaicplasty or microfracture. Although there are some promising results for ACI compared with microfracture from one trial, the evidence from two other trials testing the same comparison did not confirm these. None of the other three trials testing different comparisons provided conclusive evidence in favour of ACI, although the longer-term results suggest that the results for some types of ACI may improve over time. The review identified several ongoing trials that should help to provide evidence to inform on the use of ACI in the future. Meanwhile, there is insufficient evidence to draw conclusions on the use of ACI.

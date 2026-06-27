@@ -1,7 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 4.85
-split:       test
-
-jargon_spans:
-  [16:18] 'medical-jargon-google-easy' -> 'ribosome biogenesis'

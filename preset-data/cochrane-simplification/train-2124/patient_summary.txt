@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2124  |  gem_id: gem-cochrane-simplification-train-2125  |  doi: 10.1002/14651858.CD003419.pub2
-
-To answer this question twelve studies of six to 14 months duration involving 350 people were analysed. Thyroid hormone therapy for subclinical hypothyroidism did not result in improved survival or decreased cardiovascular morbidity (for example less heart attacks or strokes). Data on health-related quality of life and symptoms did not demonstrate significant differences between placebo and thyroid hormone therapy. Some evidence indicated that thyroid hormone had some effects on blood lipids and technical measurements of heart function. Adverse effects were inadequately addressed in most of the included studies and have to be urgently investigated in future studies, especially in older patients.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0188  |  gem_id: gem-cochrane-simplification-train-189  |  doi: 10.1002/14651858.CD003120.pub3
-
-Many of the early trials used unsatisfactory methods, were small, and publication bias cannot be excluded. Overall, evidence that Ginkgo has predictable and clinically significant benefit for people with dementia or cognitive impairment is inconsistent and unreliable. Of the four most recent trials to report results, three found no difference between Ginkgo biloba and placebo, and one reported very large treatment effects in favour of Ginkgo biloba.

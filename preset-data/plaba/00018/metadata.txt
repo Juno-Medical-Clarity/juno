@@ -1,5 +1,0 @@
-pmid:        32546134
-question:    2
-adaptation:  adaptation3
-title:       Antidepressants and movement disorders: a postmarketing study in the world pharmacovigilance database
-sentences:   14

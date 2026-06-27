@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Gabapentin'
-  [2:4] 'medical-jargon-google-easy' -> 'evoked activity'
-  [6:9] 'medical-jargon-google-easy' -> 'anterior cingulate cortex'

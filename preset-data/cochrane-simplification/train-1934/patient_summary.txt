@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1934  |  gem_id: gem-cochrane-simplification-train-1935  |  doi: 10.1002/14651858.CD001936.pub2
-
-We identified randomised, double-blind, placebo controlled trials of specific allergen immunotherapy in patients with seasonal allergic rhinitis due to tree, grass or weed pollens. Fifty-one studies satisfied our inclusion criteria. In total there were 2871 participants (1645 in the treatment groups and 1226 in the placebo), each receiving on average 18 injections. The duration of treatment varied from three days to three years. This review has shown that injection immunotherapy in suitably selected patients with hay fever results in significant reductions in symptom scores and medication use. Injection immunotherapy has a known and relatively low risk of severe adverse events. We found no long-term consequences from adverse events and no fatalities.

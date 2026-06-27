@@ -1,5 +1,0 @@
-drug_focus: bimatoprost
-question_type: Ingredient
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5c1c8c6-2a7f-482b-6ecf-9cabd3a6a5c1
-sample_id: 0441

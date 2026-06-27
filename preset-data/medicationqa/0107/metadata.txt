@@ -1,5 +1,0 @@
-drug_focus: Coreg
-question_type: Dose
-section_title: HOW SUPPLIED
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c57982f2-c7da-488a-7ea9-b9609439ac68
-sample_id: 0107

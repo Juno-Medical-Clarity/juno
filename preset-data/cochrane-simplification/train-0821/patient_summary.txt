@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0821  |  gem_id: gem-cochrane-simplification-train-822  |  doi: 10.1002/14651858.CD010087.pub2
-
-We found one small randomised trial (involving 36 women) that compared prostaglandin E2 intravaginal gel administered before caesarean section compared with a placebo gel. The information obtained from this study did not permit us to be certain that prostaglandins improve neonatal breathing following planned caesarean section at term. Only one baby in the placebo group had respiratory distress assessed as rapid breathing. Further studies have to be carried out in order to find out the impact of prostaglandins on the newborn lungs after caesarean section.

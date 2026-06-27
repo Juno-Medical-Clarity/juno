@@ -1,5 +1,0 @@
-pmid:        32718895
-question:    14
-adaptation:  adaptation1
-title:       Immune response in COVID-19: A review
-sentences:   20

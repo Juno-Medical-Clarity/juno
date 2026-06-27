@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1992  |  gem_id: gem-cochrane-simplification-train-1993  |  doi: 10.1002/14651858.CD004109.pub2
-
-This review compared initial ICS doses for asthma . The results showed that commencing with a moderate dose ICS is as effective as commencing with a high dose ICS and then reducing the dose whilst monitoring symptoms. These results also show that initial moderate dose ICS maybe more effective than initial low dose ICS. No extra benefit was gained by doubling or quadrupling the starting ICS dose. People with asthma should start their treatment with low to moderate doses of ICS.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3515  |  gem_id: gem-cochrane-simplification-train-3516  |  doi: 10.1002/14651858.CD007182.pub2
-
-Twenty one good quality studies, enrolling 6016 participants, which used different classes of antimicrobials for treating acute cystitis in women for 3 up to 10 days, were included in this review. The classes of antimicrobials included in the review proved equally effective for the symptomatic cure. Fluoroquinolones proved more effective than beta-lactams for the short-term bacteriological cure, but the significance of this finding is doubtful. Fewer rashes developed in patients treated with fluoroquinolones. Nitrofurantoin caused fewer rashes than TMP-SMX while having similar rates of any adverse events. Given the small number of studies included in each comparison and for each outcome it is recommended that further randomised controlled trials be conducted.

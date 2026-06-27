@@ -1,5 +1,0 @@
-pmid:        20821047
-question:    63
-adaptation:  adaptation2
-title:       Anastrozole and letrozole: an investigation and comparison of quality of life and tolerability
-sentences:   16

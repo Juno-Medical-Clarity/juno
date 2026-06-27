@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0849
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any headaches? No. Any history of seizures or epilepsy? No. Any sudden loss of consciousness or have you blacked out? Um, no. Any weakness? Feeling any tremors in your body? No, nothing like that. Any history of stroke or any brain related condition? No, no such history.

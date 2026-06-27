@@ -1,8 +1,0 @@
-Purpose of review: This article presents recent findings and perspectives on the relationship between early-life respiratory infections and asthma inception, and discusses emerging concepts on strategies that target these infectious agents for asthma prevention.
-Recent findings: Cumulative evidence supports the role of early-life viral infections, especially respiratory syncytial virus and human rhinovirus, as major antecedents of childhood asthma.
-These viruses may have different mechanistic roles in the pathogenesis of asthma.
-The airway microbiome and virus-bacteria interactions in early life have emerged as additional determinants of childhood asthma.
-Innovative strategies for the prevention of these early-life infections, or for attenuation of acute infection severity, are being investigated and may identify effective strategies for the primary and secondary prevention of childhood asthma.
-Summary: Early-life infections are major determinants of asthma development.
-The pathway from early-life infections to asthma is the result of complex interactions between the specific type of the virus, genetic, and environmental factors.
-Novel intervention strategies that target these infectious agents have been investigated in proof-of-concepts trials, and further study is necessary to determine their capacity for asthma prevention.

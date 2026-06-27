@@ -1,1 +1,0 @@
-We show one method of generating plasmodes and illustrate their use by comparing the performance of 15 statistical methods for estimating the false discovery rate in data from an HDE.

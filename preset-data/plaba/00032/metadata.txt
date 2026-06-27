@@ -1,5 +1,0 @@
-pmid:        29244647
-question:    3
-adaptation:  adaptation3
-title:       Diagnosis and treatment of hyperkalemia
-sentences:   6

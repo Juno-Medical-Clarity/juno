@@ -1,8 +1,0 @@
-Doctor:  Are you on insulin?
-Patient: Yes.
-Doctor: Are you on metformin as well?
-Patient: Yes.
-Doctor: How about glucotrol?
-Patient: Yes I take that.
-Doctor: Are you on lipitor?
-Patient: Yes.

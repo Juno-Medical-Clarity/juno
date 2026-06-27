@@ -1,5 +1,0 @@
-pmid:        34316351
-question:    21
-adaptation:  adaptation1
-title:       Acute traumatic abdominal wall hernia-value of the physical examination: case report
-sentences:   6

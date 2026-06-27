@@ -1,9 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [12:13] 'general-complex' -> 'perturbations'
-  [15:17] 'medical-jargon-google-easy' -> 'graded response'
-  [21:23] 'medical-jargon-google-easy' -> 'biological noise'

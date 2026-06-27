@@ -1,5 +1,0 @@
-drug_focus: cetuximab
-question_type: Usage
-section_title: HIGHLIGHTS OF PRESCRIBING INFORMATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9
-sample_id: 0326

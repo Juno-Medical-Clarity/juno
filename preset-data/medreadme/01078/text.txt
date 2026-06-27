@@ -1,1 +1,0 @@
-These cells receive information from oxygen sensors and relay the information to cells that set breathing rhythms.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0509
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, what do you do for a living, sir? I work at A B C store, doctor. That's great, do you smoke? No, I don't smoke at all. How about alcohol? Do you drink? I'd say I drink socially, like if I'm at a party, or something.

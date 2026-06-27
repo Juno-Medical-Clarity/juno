@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0358
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Anybody sick in family? No one. How about any illnesses that run in your family? No, everyone is healthy.

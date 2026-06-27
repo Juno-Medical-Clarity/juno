@@ -1,5 +1,0 @@
-drug_focus: Viagra
-question_type: Storage and disposal
-section_title: NA
-source_url: https://www.fda.gov/Drugs/DevelopmentApprovalProcess/Manufacturing/ucm605559.htm
-sample_id: 0349

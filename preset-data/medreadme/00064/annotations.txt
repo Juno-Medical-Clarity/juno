@@ -1,7 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [17:20] 'medical-jargon-google-easy' -> 'up - regulation'

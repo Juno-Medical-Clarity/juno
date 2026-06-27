@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0559
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any major medical conditions that I should know about? Yeah, I have a history of thyroid problems, actually. I'm seeing here that you have a history of allergies too, is that correct? Oh yes, that's right too.

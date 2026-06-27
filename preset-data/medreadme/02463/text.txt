@@ -1,1 +1,0 @@
-This approach is based on the relative expression values of participating genes--i. e. , the ordering of expression within network profiles.

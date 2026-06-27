@@ -1,1 +1,0 @@
-A tool used to measure how sedated a patient is.

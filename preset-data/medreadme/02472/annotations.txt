@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [6:9] 'medical-jargon-google-easy' -> 'Differential Rank Conservation'
-  [14:18] 'medical-jargon-google-easy' -> 'network - level perturbations'

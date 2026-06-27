@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0192  |  gem_id: gem-cochrane-simplification-train-193  |  doi: 10.1002/14651858.CD008888.pub2
-
-Data from two small studies were available for inclusion in this review; however, both studies were in infants following hospitalisation for an acute bronchiolitis illness (98 infants in total). There was no difference between groups in the proportion of children 'not cured' at follow-up. There were no significant side effects in either of these studies. Without further available evidence, recommendations for the use of inhaled corticosteroids for the treatment of subacute cough in children cannot be made. Further well-designed studies, including children over 12 months of age, are required to determine whether treatment with inhaled corticosteroids can safely and effectively reduce the severity of subacute cough in children.

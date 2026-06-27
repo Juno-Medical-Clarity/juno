@@ -1,1 +1,0 @@
-Research on the primary visual cortex can involve recording action potentials from electrodes within the brain of cats, ferrets, rats, mice, or monkeys, or through recording intrinsic optical signals from animals or EEG, MEG, or fMRI signals from human and monkey V1.

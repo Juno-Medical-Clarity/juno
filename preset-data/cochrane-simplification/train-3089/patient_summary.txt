@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3089  |  gem_id: gem-cochrane-simplification-train-3090  |  doi: 10.1002/14651858.CD003863.pub2
-
-This review of four trials found insufficient evidence to conclude whether supportive devices prevent subluxation or not and found no evidence to conclude whether supportive devices can reposition the head of humerus in the glenoid fossa of an already subluxed shoulder.

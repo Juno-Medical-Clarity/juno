@@ -1,5 +1,0 @@
-drug_focus: Epsom salt
-question_type: Contraindication
-section_title: NA
-source_url: http://www.emedtv.com/managing-your-type-2-diabetes/if-i-have-diabetes,-can-i-take-epsom-salt-baths.html
-sample_id: 0466

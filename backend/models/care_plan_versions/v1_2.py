@@ -125,3 +125,4 @@ class CarePlanV1_2(CarePlan):
     note: str | None = None
     terms: dict[str, GlossaryTerm] = Field(default_factory=dict)
     raw: RawArtifacts | None = None
+    additional_info: list[str] = Field(default_factory=list)

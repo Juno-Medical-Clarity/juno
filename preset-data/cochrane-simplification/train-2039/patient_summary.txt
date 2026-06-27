@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2039  |  gem_id: gem-cochrane-simplification-train-2040  |  doi: 10.1002/14651858.CD012504.pub2
-
-We searched for evidence on 15 May 2017. We did not find any trials for inclusion in this review. We excluded five trials because they were not randomised controlled trials. There is no evidence available to guide how best to investigate the causes of stillbirth. Seeking to determine the causes of a baby's death is an essential component of quality maternity care in any setting. Future trials on this topic would be helpful, but such trials would need to be designed in a way that ensures all parents in the trial still receive the minimum standard of care in their local setting. Future trials would need to be conducted with the utmost care and consideration for the needs, concerns, and values of parents and families. Assessment of longer-term psychosocial variables, economic costs to health services, and effects on subsequent pregnancy care and outcomes should be considered in any future trials.

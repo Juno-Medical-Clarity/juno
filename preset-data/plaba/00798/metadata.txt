@@ -1,5 +1,0 @@
-pmid:        32869880
-question:    63
-adaptation:  adaptation2
-title:       Aromatase inhibitor-induced hair loss in two adolescents
-sentences:   4

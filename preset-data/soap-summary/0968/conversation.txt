@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0968
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Your condition and all your vital signs look stable to me right now. You must be very careful as your condition can get poor or it might improve as well. Okay, so what do you recommend? Do you have any support system? Is there anyone at home to take care of you? Yes, my son and his family lives with me. They are very caring. That is good. Do take care of yourself and let me know if your condition worsens.

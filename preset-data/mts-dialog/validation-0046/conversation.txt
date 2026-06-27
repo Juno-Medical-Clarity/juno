@@ -1,6 +1,0 @@
-Doctor: Are you a smoker?
-Patient: Yes. I do not drink if that is any constellation.
-Doctor: How much do you smoke per day?
-Patient: I just started taking Chantix and now I am down to a half a pack a day.
-Doctor: How much did you smoke per day prior to starting Chantix?
-Patient: I was smoking about two to three packs a day. I have been smoker since I was ten years old.

@@ -37,7 +37,7 @@ These datasets contain transcripts or synthetic dialogues between patients and p
 ### 1. PriMock57 Conversations
 
 **Source:** [https://github.com/babylonhealth/primock57](https://github.com/babylonhealth/primock57)
-**Output directory:** `preset-data/primock57-conversations/`
+**Output directory:** `preset-data/primock57/`
 **Sample count:** 57 consultations
 
 **Description:**

@@ -1,9 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 5.7
-split:       dev
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'CAG expansion'
-  [10:12] 'medical-jargon-google-easy' -> 'somatic expansion'
-  [22:24] 'medical-jargon-google-easy' -> 'disease pathogenesis'

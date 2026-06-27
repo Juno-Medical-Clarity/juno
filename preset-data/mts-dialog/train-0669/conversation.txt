@@ -1,6 +1,0 @@
-Doctor: Anyone smokes in the house?
-Guest_family: Yes, we do.
-Doctor: Both of you?
-Guest_family: Yes, but outside, not inside.
-Doctor: Okay.
-Guest_family: We are careful.

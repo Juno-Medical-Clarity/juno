@@ -1,5 +1,0 @@
-pmid:        34314230
-question:    36
-adaptation:  adaptation1
-title:       The impact of lasers in percutaneous nephrolithotomy outcomes: results from a systematic review and meta-analysis of randomized comparative trials
-sentences:   13

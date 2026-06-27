@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3339  |  gem_id: gem-cochrane-simplification-train-3340  |  doi: 10.1002/14651858.CD003499.pub3
-
-This review systematically examines the evidence supporting this practice. From the evidence available, we were unable to draw any firm conclusion about using these medicines to treat aggression. Four antiepileptic drugs (valproate/divalproex, carbamazepine, oxcarbazepine and phenytoin) helped to reduce aggression in at least one study. However, for three of these drugs (valproate, carbamazepine and phenytoin) we found at least one other study where there was no significant improvement. Further research is needed to clarify which antiepileptic drugs are effective for whom. Such research is best carried out using carefully designed clinical trials. Such trials need to take account of the type of aggression displayed, the severity of the aggression, and any other disorders experienced by the participants.

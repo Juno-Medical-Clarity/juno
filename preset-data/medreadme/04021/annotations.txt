@@ -1,6 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 3.7
-split:       test
-
-jargon_spans: (none)

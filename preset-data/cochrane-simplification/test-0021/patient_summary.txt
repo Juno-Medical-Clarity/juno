@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0021  |  gem_id: gem-cochrane-simplification-test-22  |  doi: 10.1002/14651858.CD004101.pub5
-
-This Cochrane review included all studies of psychotherapy for non-cardiac chest pain. Seventeen trials met the inclusion criteria, and included a total of 1006 participants. The review found that cognitive-behavioural treatments are probably effective (in terms of reduced chest pain frequency) in the short term, for the treatment of non-cardiac related chest pain. No adverse effects of the psychotherapy were found. Hypnotherapy is also a possible alternative. A limitation of this review is the high variability of the studies included, reflected in a wide range of outcome measures, although there was an overall fairly low risk of bias.

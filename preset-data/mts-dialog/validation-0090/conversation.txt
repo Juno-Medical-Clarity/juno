@@ -1,4 +1,0 @@
-Doctor: Do you drink alcohol or smoke cigarettes?
-Patient: No, I do not.
-Doctor: Are you sure?
-Patient: Yes.

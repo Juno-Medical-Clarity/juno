@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1459  |  gem_id: gem-cochrane-simplification-train-1460  |  doi: 10.1002/14651858.CD010182.pub3
-
-We evaluated the evidence from five randomised controlled trials that compared either different brands of alginate dressings, or alginate dressings with other types of dressings. In terms of wound healing, we found no good evidence to suggest that there is any difference between different brands of alginate dressings, nor between alginate dressings and hydrocolloid or plain non-adherent dressings. Adverse events were generally similar between treatment groups (but not assessed for alginate versus plain non-adherent dressings). Overall, the current evidence is of low quality. Further, good quality evidence is required before any definitive conclusions can be made regarding the use of alginate dressings in the management of venous leg ulcers.

@@ -1,5 +1,0 @@
-pmid:        31046968
-question:    12
-adaptation:  adaptation1
-title:       Asthma: looking beyond the headlines
-sentences:   4

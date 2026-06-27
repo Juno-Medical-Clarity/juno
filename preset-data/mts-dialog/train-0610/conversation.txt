@@ -1,5 +1,0 @@
-Doctor: How's it going? I haven't seen you in a long time.
-Patient: Hey, Doctor. My headaches have been getting worse.
-Doctor: Remind me again. Does you family have a history of migraines.
-Patient: I don't think so.
-Doctor: Okay. Let's perform some tests.

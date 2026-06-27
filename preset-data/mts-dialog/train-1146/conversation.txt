@@ -1,6 +1,0 @@
-Doctor: Are you a smoker, sir?
-Patient: Yes, I've been smoking about a pack, to about a pack and a half a day for more than forty years now.
-Doctor: What about alcohol, do you drink?
-Patient: Yeah, I drink a six pack of beer a day, doctor.
-Doctor: What about drugs? Do you use any illicit substances?
-Patient: No, I never used anything like that.

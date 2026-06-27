@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [14:15] 'abbr-medical' -> 'ERGs'

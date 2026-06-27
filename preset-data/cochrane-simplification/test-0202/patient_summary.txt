@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0202  |  gem_id: gem-cochrane-simplification-test-203  |  doi: 10.1002/14651858.CD009111.pub3
-
-Existing reviews have not found evidence that one dressing type is more effective than other types in healing foot ulcers in people with diabetes. This review (157 participants) confirms that currently there is no research evidence to suggest that foam wound dressings are more effective in healing diabetic foot ulcers than other types of dressing. Current decisions on choice of wound dressing if any, should be based where possible, on dressing costs and selecting the most useful management properties offered by each dressing type, for example, the management of wound discharge.

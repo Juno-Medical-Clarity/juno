@@ -1,5 +1,0 @@
-Doctor: Are you allergic to anything?
-Doctor: Like any medications?
-Patient: No, I am not allergic to anything.
-Doctor: Perfect!
-Patient: Hm.

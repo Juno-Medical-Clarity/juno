@@ -1,5 +1,0 @@
-drug_focus: ProAir HFA
-question_type: Ingredient
-section_title: False‐positive breathalyser tests and use of metered‐dose inhalers: Does inhalation technique affect test results?
-source_url: https://onlinelibrary.wiley.com/doi/full/10.1111/resp.13113
-sample_id: 0198

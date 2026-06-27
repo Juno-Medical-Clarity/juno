@@ -1,1 +1,0 @@
-At a sample level, DIRAC can detect a change in ranking between phenotypes for any selected network.

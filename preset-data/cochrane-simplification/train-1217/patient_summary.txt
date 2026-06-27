@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1217  |  gem_id: gem-cochrane-simplification-train-1218  |  doi: 10.1002/14651858.CD000512.pub2
-
-This review of five studies compares the effects of blood transfusion at low levels of haemoglobin to transfusion at high levels. Within the levels tested, there were no differences seen in survival, in the serious complications of prematurity, or in longer term development as measured at 18 to 21 months past the baby's due date. Allowing the baby to become a little more anaemic did not affect the baby's weight gain or breathing patterns. These conclusions are not firm, because too few babies have been studied. Our overall recommendation is not to exceed the higher levels of haemoglobin used in these trials, and thus diminish the risks of over-transfusion, but not to allow the level of haemoglobin to fall below the lower limits tested in these studies until further studies are completed.

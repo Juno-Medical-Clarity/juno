@@ -1,5 +1,0 @@
-drug_focus: vitamin d
-question_type: Action
-section_title: Function
-source_url: https://medlineplus.gov/ency/article/002405.htm
-sample_id: 0570

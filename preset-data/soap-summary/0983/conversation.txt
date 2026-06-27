@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0983
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you been applying Triamcinolone zero point one percent three times a day to your rash? The one on my left wrist? Yes. And Bactroban ointment is also three times a day as needed for your bug bites. Yep. Are you still using Nystatin on your lips once a day as needed? Uh yeah. I've been using it much less now. So let's see, your other medications are the same as of July thirtieth O four with the exception of Klonopin? Yeah, I mean I'm taking four M G in the morning and six M G at night instead of the six M G and eight M G that was recommended. I feel like I do better with the lower doses.

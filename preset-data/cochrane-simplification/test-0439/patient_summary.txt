@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0439  |  gem_id: gem-cochrane-simplification-test-440  |  doi: 10.1002/14651858.CD004374.pub2
-
-Five trials suggested that it might be better to use a catheter after surgery than not to use one as fewer people needed to be re-catheterised if a catheter was used at first. Information from six trials suggested that fewer people needed to be re-catheterised for urinary retention if a suprapubic catheter was used instead of a urethral one. People in up to 11 trials had fewer urinary tract infections if the catheters were removed sooner rather than later.   Although 39 trials were included in the review in total, the evidence in general was poor and came from small studies, which often did not provide enough information to draw firm conclusions. Much larger trials with many more participants must be conducted.

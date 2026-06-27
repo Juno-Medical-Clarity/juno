@@ -1,4 +1,0 @@
-Doctor: Your last visit was on April seventh two thousand five, correct.
-Patient: Ah no, it was on April eighth two thousand five, doctor.
-Doctor: That's right. So, has anything changed since then?
-Patient: No, everything is the same really.

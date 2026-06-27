@@ -1,5 +1,0 @@
-pmid:        32956536
-question:    1
-adaptation:  adaptation2
-title:       Magnesium for skeletal muscle cramps
-sentences:   4

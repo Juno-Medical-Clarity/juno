@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0235  |  gem_id: gem-cochrane-simplification-test-236  |  doi: 10.1002/14651858.CD004379.pub3
-
-This review of ten randomised controlled trials suggests there is insufficient evidence to support the routine use of any one particular intervention in the management of women who are poor responders. More research is needed with good quality trials looking at relevant outcomes such as live birth rates rather than treatment-associated outcomes such as positive pregnancy rates or number of eggs. Research is also recommended in adverse outcomes and costs of these treatments.

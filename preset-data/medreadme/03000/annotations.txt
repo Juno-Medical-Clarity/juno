@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.85
-split:       dev
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'hepatic encephalopathy'
-  [11:13] 'medical-jargon-google-easy' -> 'brain neurotransmitters'

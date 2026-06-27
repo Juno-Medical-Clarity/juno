@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [1:6] 'medical-jargon-google-easy' -> 'PI3K / MTOR signalling network'
-  [21:22] 'medical-jargon-google-easy' -> 'autophagy'

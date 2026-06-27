@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2591  |  gem_id: gem-cochrane-simplification-train-2592  |  doi: 10.1002/14651858.CD004592.pub2
-
-This review was undertaken to examine if single volume (removal of blood equivalent to the blood volume of the baby) is as effective as double volume (removal of twice blood volume of the baby) in reducing the brain damage and bilirubin levels in newborn infants with severe jaundice. Only one randomised trial fulfilled the criteria for inclusion in the analysis. This study compared single and double volume exchange transfusion in jaundice due to ABO hemolytic jaundice. The study found no significant difference in bilirubin levels following exchange. This study did not look at any long term neurodevelopmental outcome (brain damage). Based on the available data, there is insufficient evidence to support or refute the use of single volume exchange transfusion as opposed to double volume exchange transfusion in jaundiced newborns.

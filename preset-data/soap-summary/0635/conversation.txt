@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0635
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi sir, how old are you? I am thirty. We are following up today for your moderate to severe apnea, right? Yes, that is correct, I still can't sleep. Okay and you did the CPAP? Yes. Okay, let's review it today. Sure.

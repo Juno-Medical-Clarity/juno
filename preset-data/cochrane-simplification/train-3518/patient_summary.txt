@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3518  |  gem_id: gem-cochrane-simplification-train-3519  |  doi: 10.1002/14651858.CD006331.pub2
-
-We found 13 studies involving 467 participants that tested different treatments for sensory loss. There is limited evidence that these treatments may be effective. No more than one study examined each particular intervention, frequently the studies were of poor quality and lacked sufficient information. Further research is needed before clear recommendations can be made.

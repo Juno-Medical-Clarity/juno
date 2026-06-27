@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1639  |  gem_id: gem-cochrane-simplification-train-1640  |  doi: 10.1002/14651858.MR000016.pub3
-
-Editorial peer review is used world-wide as a tool to assess and improve the quality of submissions to paper and electronic biomedical journals. As the information revolution gathers pace, an empirically proven method of quality assurance is of paramount importance. The increasing availability of empirical research on the possible effects of peer review led us to carry out a review of current evidence on the efficacy of editorial peer review. We found few studies of reasonable quality, and most of these were concerned with the effects of blinding reviewers and/or authors to each others' identity. We could not identify any methodologically convincing studies assessing the core effects of peer review. Major research is urgently needed.

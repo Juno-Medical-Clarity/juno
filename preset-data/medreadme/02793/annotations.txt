@@ -1,8 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [1:2] 'medical-name-entity' -> 'FRIENDS'
-  [5:9] 'medical-jargon-google-easy' -> 'cognitive - behavioural therapy'

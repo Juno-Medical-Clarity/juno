@@ -1,5 +1,0 @@
-pmid:        25432724
-question:    1
-adaptation:  adaptation2
-title:       Diagnosis and treatment of dystonia
-sentences:   6

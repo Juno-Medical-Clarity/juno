@@ -1,1 +1,0 @@
-This report identifies the first breast cancer risk locus specific to a BRCA2 mutation background.

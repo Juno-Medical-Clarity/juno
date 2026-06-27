@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.5
-split:       dev
-
-jargon_spans:
-  [6:8] 'medical-jargon-google-easy' -> 'memory trace'
-  [14:16] 'medical-jargon-google-easy' -> 'stronger trace'

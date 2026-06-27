@@ -1,8 +1,0 @@
-source:      plos_pathogens
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'SIV'
-  [7:8] 'abbr-medical' -> 'NKT'

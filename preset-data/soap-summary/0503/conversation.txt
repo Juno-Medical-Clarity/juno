@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0503
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you drink? Not really, no. Any drugs? No. Do you get a chance to exercise during the week? I like to go on walks with my dog every day. I'm also eating a lot healthier these days. That's wonderful. How's work going for you? I actually got promoted last month so it's been going well. I've had a lot more time to spend with my family as a result. That's great to hear. Congratulations! Thank you so much.

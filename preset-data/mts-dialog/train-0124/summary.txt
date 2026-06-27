@@ -1,2 +1,0 @@
-[ROS]
-GASTROINTESTINAL: Negative dysphagia, negative nausea, negative vomiting, negative hematemesis, negative abdominal pain.

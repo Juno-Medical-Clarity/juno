@@ -1,5 +1,0 @@
-pmid:        10909610
-question:    51
-adaptation:  adaptation1
-title:       Islet autoantibody assays in type I diabetes: superiority of passage from use of ICA to traditional tests
-sentences:   8

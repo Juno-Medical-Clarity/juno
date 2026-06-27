@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0099  |  gem_id: gem-cochrane-simplification-validation-100  |  doi: 10.1002/14651858.CD002802.pub2
-
-This review examined the use of a fixed interval of voiding for the management of urinary incontinence in adults. This approach to urinary incontinence is thought to be common in aged care homes for people who require assistance from other people for toileting and continence care. The reviewers found two trials that had evaluated timed voiding. They included 298 elderly women who were living in aged care homes and had reduced cognition and impaired mobility. Reductions in the number of incontinence episodes were reported in each trial. The reviewers found insufficient data for these findings to be combined. Hence, at this point in time, there is not enough evidence on the effects of timed voiding for the management of urinary incontinence.

@@ -1,7 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [13:14] 'medical-jargon-google-hard' -> 'anti-CTLA-4'

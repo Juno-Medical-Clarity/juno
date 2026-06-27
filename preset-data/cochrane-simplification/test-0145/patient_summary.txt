@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0145  |  gem_id: gem-cochrane-simplification-test-146  |  doi: 10.1002/14651858.CD006605.pub2
-
-The findings of this systematic review suggest that proper management of a type of strong painkiller (opioids) in well-selected patients with no history of substance addiction or abuse can lead to long-term pain relief for some patients with a very small (though not zero) risk of developing addiction, abuse, or other serious side effects. However, the evidence supporting these conclusions is weak, and longer-term studies are needed to identify the patients who are most likely to benefit from treatment.

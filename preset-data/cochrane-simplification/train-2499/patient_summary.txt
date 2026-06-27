@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2499  |  gem_id: gem-cochrane-simplification-train-2500  |  doi: 10.1002/14651858.CD005526.pub2
-
-The findings in this review are based on three clinical trials with 390 patients. The drug cyclosporin A was tested against placebo. The primary findings of the review are that cyclosporin A has no effect on survival or progression of the disease (cirrhosis development). Patients given cyclosporin A experienced more adverse events than patients given placebo, especially renal dysfunction and hypertension. There was significant improvement in itching (pruritus) and liver biochemistry, which were secondary outcome measures. We cannot recommend the use of cyclosporin A outside randomised clinical trials.

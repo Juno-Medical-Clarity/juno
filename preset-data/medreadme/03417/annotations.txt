@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [5:9] 'medical-jargon-google-easy' -> 'cognitive - behavioural therapy'
-  [10:11] 'abbr-medical' -> 'CBT'
-  [25:26] 'medical-jargon-google-easy' -> 'delusions'

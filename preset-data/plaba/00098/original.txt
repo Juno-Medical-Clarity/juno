@@ -1,8 +1,0 @@
-Endometrial cancer (EC) is one of the most common and fatal gynecological cancers worldwide, but there is no effective treatment for the EC patients of progesterone resistance.
-Repurposing of existing drugs is a good strategy to discover new candidate drugs.
-In this text, perphenazine (PPZ), approved for psychosis therapy, was identified as a potential agent for the treatment of both progesterone sensitive and resistant endometrial cancer for the first time.
-Specifically, perphenazine exhibited good cell proliferation inhibition in Ishikawa (ISK) and KLE cell lines according to the CCK-8 assay and colony formation assay.
-It also reduced the cell migration of ISK and KLE cell lines in the light of the transwell migration assay.
-Annexin-V/PI double staining assay suggested that perphenazine could effectively induce ISK and KLE cell apoptosis.
-Moreover, results of western blot assay indicated perphenazine obviously inhibited the phosphorylation of Akt.
-Delightedly, PPZ also could significantly attenuate xenograft tumor growth at both 3 mg/kg and 15 mg/kg in mice without influencing the body weights.

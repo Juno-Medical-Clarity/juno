@@ -1,5 +1,0 @@
-Sickle Cell Anemia (SCA) is a genetic blood disease that causes abnormal red blood cell flow through blood vessels.
-Due to their effects on sickle hemoglobin (HbS) chemistry and red blood cell shape changes, alpha-thalassemia (another genetic blood disease)and HbF (fetal hemoglobin) levels are known to change the course of SCA.
-The aim of our study was to find out if the number of HbF-QTL, quantitative trait loci (QTL-special sections of DNA) would influence the severity of SCA as seen in alpha-thalassemia.
-Results showed that alpha-thalassemia protected SCA patients from cerebral vasculopathy (diseases of blood vessels in the brain). But, it increased the risk for more painful crises due to blood vessel blockages.
-We also showed that more HbF-QTL may protect more against cerebral vasculopathy, but only for children with certain genetic types of alpha-thalassemia.

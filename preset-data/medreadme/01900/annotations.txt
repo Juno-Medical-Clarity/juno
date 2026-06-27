@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [14:17] 'medical-jargon-google-easy' -> 'diabetic macular oedema'
-  [18:19] 'abbr-medical' -> 'DMO'

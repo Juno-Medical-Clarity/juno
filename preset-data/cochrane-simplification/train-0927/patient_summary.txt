@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0927  |  gem_id: gem-cochrane-simplification-train-928  |  doi: 10.1002/14651858.CD001756.pub6
-
-This review of trials found that using mechanical devices might be better than no treatment but the evidence is weak. There was not enough evidence to recommend any specific type of device or to show whether mechanical devices are better than other forms of treatment such as pelvic floor muscle training.

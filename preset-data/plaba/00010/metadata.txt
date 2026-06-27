@@ -1,5 +1,0 @@
-pmid:        15316838
-question:    2
-adaptation:  adaptation2
-title:       Duloxetine: mechanism of action at the lower urinary tract and Onuf's nucleus
-sentences:   12

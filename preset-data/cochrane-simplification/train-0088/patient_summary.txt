@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0088  |  gem_id: gem-cochrane-simplification-train-89  |  doi: 10.1002/14651858.CD005427.pub2
-
-The review shows that while combined chiropractic interventions slightly improved pain and disability in the short term and pain in the medium term for acute and subacute low-back pain, there is currently no evidence to support or refute that combined chiropractic interventions provide a clinically meaningful advantage over other treatments for pain or disability in people with low-back pain. Any demonstrated differences were small and were only seen in studies with a high risk of bias. Future research is very likely to change the results and our confidence in them. Well conducted randomised trials are required that compare combined chiropractic interventions to other established therapies for low-back pain.

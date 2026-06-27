@@ -1,4 +1,0 @@
-Doctor: Welcome to the clinic.
-Patient: Thank you.
-Doctor: Do you have any family history of cancer? Either solid tumors or blood malignancies?
-Patient: No. None that I know of.

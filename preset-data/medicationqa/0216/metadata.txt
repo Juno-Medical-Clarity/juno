@@ -1,5 +1,0 @@
-drug_focus: Birth Control Pills
-question_type: Action
-section_title: Information
-source_url: https://medlineplus.gov/ency/article/007460.htm
-sample_id: 0216

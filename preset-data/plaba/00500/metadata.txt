@@ -1,5 +1,0 @@
-pmid:        34569949
-question:    39
-adaptation:  adaptation1
-title:       Clinical Characteristic in Primary Progressive Aphasia in Relation to Alzheimer's Disease Biomarkers
-sentences:   11

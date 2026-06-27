@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0463  |  gem_id: gem-cochrane-simplification-test-464  |  doi: 10.1002/14651858.CD011256.pub2
-
-The researchers found that 11 out of the 30 histologic scoring indices that exist have been partially validated. The Nancy Index and the Robarts Histopathology Index have undergone the most validation compared to the other nine indices. However, none of the currently available histologic scoring indices have been fully validated. In order to determine the ideal index to measure histologic healing in UC, more research is required. The ideal index would need to be fully validated.

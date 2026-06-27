@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0185  |  gem_id: gem-cochrane-simplification-test-186  |  doi: 10.1002/14651858.CD005198.pub3
-
-This review aims to evaluate these treatments to assess their effectiveness especially for later stages. The review identified 13 trials involving 1824 participants. However, data presentable for the review were only available in 10 trials with 732 participants. The data were difficult to collate because of the quality of the study methods and the reporting of the results; outcome measures differed between trials and they were mainly small-sized trials. No significant differences in overall survival were seen between studies aimed at inducing remission. Adverse events reported were mostly due to infections and reductions in blood cell counts. The more recent studies were focused on using less intensive treatment regimens as they could provide similar responses with lower risk of adverse effects.

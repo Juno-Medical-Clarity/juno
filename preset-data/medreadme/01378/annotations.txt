@@ -1,7 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [19:24] 'medical-jargon-google-hard' -> 'HLA - B * 35Px'

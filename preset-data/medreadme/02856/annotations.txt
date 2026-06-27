@@ -1,7 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.3
-split:       dev
-
-jargon_spans:
-  [21:25] 'medical-jargon-google-hard' -> 'macroscopic spatial expression patterns'

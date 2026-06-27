@@ -1,5 +1,0 @@
-drug_focus: Acetaminophen
-question_type: Usage
-section_title: DIRECTIONS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cfbe12-d712-4ca6-8400-14eec2eca019
-sample_id: 0513

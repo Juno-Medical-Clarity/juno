@@ -1,8 +1,0 @@
-Purpose: The COVID-19 pandemic has galvanized the development of new vaccines at an unprecedented pace.
-Since the widespread implementation of vaccination campaigns, reports of ocular adverse effects after COVID-19 vaccinations have emerged.
-This review summarizes ocular adverse effects possibly associated with COVID-19 vaccination, and discusses their clinical characteristics and management.
-Results: Ocular adverse effects of COVID-19 vaccinations include facial nerve palsy, abducens nerve palsy, acute macular neuroretinopathy, central serous retinopathy, thrombosis, uveitis, multiple evanescent white dot syndrome, Vogt-Koyanagi-Harada disease reactivation, and new-onset Graves' Disease.
-Studies in current literature are primarily retrospective case series or isolated case reports - these are inherently weak in establishing association or causality.
-Nevertheless, the described presentations resemble the reported ocular manifestations of the COVID-19 disease itself.
-Hence, we hypothesize that the human body's immune response to COVID-19 vaccinations may be involved in the pathogenesis of the ocular adverse effects post-COVID-19 vaccination.
-Conclusion: Ophthalmologists and generalists should be aware of the possible, albeit rare, ocular adverse effects after COVID-19 vaccination.

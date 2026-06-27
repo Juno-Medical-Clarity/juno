@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2418  |  gem_id: gem-cochrane-simplification-train-2419  |  doi: 10.1002/14651858.CD007440.pub2
-
-This review assessed evidence from nine randomised, double-blind, placebo-controlled clinical trials, in which there were 906 adults in comparisons of diflunisal (a non-steroidal, anti-inflammatory drug) with placebo for treatment of moderate to severe acute post-operative pain. It is an effective analgesic over the dose range 250 mg to 1000 mg, with a long duration of action. At 1000 mg, the analgesic effect over 4 to 6 hours is as good as the combination of paracetamol 1000 mg and codeine 60 mg in similar studies using the same methods.

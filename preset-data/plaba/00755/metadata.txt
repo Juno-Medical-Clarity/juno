@@ -1,5 +1,0 @@
-pmid:        34758150
-question:    60
-adaptation:  adaptation2
-title:       Accuracy of anterior nasal swab rapid antigen tests compared with RT-PCR for massive SARS-CoV-2 screening in low prevalence population
-sentences:   11

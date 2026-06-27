@@ -1,5 +1,0 @@
-pmid:        34249961
-question:    34
-adaptation:  adaptation1
-title:       Optimizing Diet to Slow CKD Progression
-sentences:   4

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0537
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you taken any medications in the past? Do you mean prescription, or over the counter? Either of those. Oh, I haven't taken anything in the past.

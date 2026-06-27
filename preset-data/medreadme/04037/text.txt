@@ -1,1 +1,0 @@
-However, in HDEs there are many possible statistical models to use, and which models appropriately produce data that reflect properties of real data is an open question.

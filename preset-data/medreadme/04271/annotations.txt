@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [0:3] 'general-complex' -> 'Randomised controlled trials'
-  [4:5] 'abbr-general' -> 'RCTs'
-  [8:10] 'general-complex' -> 'comparative studies'

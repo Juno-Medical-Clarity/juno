@@ -1,1 +1,0 @@
-We construct new mechanistic models that encapsulate critical mechanistic details, including mTORC1 / 2 coordination by MLST8 (de) ubiquitination and the Akt-to-mTORC2 positive feedback loop.

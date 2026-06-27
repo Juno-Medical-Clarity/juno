@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [28:29] 'medical-name-entity' -> 'NHS'

@@ -1,5 +1,0 @@
-drug_focus: metoprolol tartrate
-question_type: Indication
-section_title: INDICATIONS AND USAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88f1abdc-f53e-4ff9-b4c1-3cfbc2609b79
-sample_id: 0057

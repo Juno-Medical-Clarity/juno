@@ -1,1 +1,0 @@
-To generate this pattern, the hunchback gene interprets the position - dependent information in the shallow maternal Bicoid gradient and converts it into the sharp Hunchback protein pattern.

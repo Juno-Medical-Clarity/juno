@@ -1,8 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        simple
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [6:9] 'medical-jargon-google-easy' -> 'coronary heart disease'
-  [10:13] 'medical-jargon-google-easy' -> 'type 2 diabetes'

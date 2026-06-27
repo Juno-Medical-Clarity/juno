@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0298
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_clinician: She was in a car crash, correct? Correct. About two days ago. I believe it was a head on collision.

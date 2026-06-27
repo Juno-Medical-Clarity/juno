@@ -1,5 +1,0 @@
-pmid:        27924077
-question:    42
-adaptation:  adaptation1
-title:       Metabolic regulation of gene expression through histone acylations
-sentences:   4

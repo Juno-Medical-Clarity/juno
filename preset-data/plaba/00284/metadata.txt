@@ -1,5 +1,0 @@
-pmid:        32631372
-question:    22
-adaptation:  adaptation1
-title:       Characterization of CT scans of patients with Birt-Hogg-Dubé syndrome compared with those of Chinese patients with non-BHD diffuse cyst lung diseases
-sentences:   10

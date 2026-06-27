@@ -1,5 +1,0 @@
-drug_focus: malox
-question_type: Information
-section_title: NA
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2a14762-3860-44c3-a3ea-5dbc45f4b1d5
-sample_id: 0302

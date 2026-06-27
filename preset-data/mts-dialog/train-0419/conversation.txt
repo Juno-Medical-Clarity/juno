@@ -1,8 +1,0 @@
-Doctor: Can you give me a quick run down of her medical history?
-Guest_family: Sure. It's a bit long, sadly.
-Doctor: I'm sorry to hear that.
-Guest_family: She was recently diagnosed with dementia. She's also suffered from high blood pressure for some time now.
-Doctor: When was she diagnosed with dementia?
-Guest_family: Six months ago.
-Doctor: Any history of heart disease, diabetes, or stroke?
-Guest_family: No, but she's not able to control her bladder well which leads to her having frequent accidents. Oh and she's had back pain for several years along with degenerative changes to her spine. Poor thing. I can't help but feel so bad for her situation. It definitely hasn't been easy.

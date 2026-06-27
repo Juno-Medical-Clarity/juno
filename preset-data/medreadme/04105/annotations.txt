@@ -1,6 +1,0 @@
-source:      wiki
-side:        complex
-readability: 3.5
-split:       test
-
-jargon_spans: (none)

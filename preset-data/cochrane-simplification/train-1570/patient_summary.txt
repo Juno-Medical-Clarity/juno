@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1570  |  gem_id: gem-cochrane-simplification-train-1571  |  doi: 10.1002/14651858.CD002303.pub3
-
-One small trial confirms that compression reduces ulcer recurrence compared with no compression. There is some evidence that people wearing high rather than moderate-compression hosiery are less likely to get a new ulcer. It is not clear whether moderate strength hosiery is better tolerated than high compression. There is, therefore, some evidence that compression hosiery might prevent ulcers, but the evidence is not strong.

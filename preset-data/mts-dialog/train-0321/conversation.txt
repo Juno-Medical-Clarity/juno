@@ -1,4 +1,0 @@
-Doctor: Do you have any chronic medical conditions that I should know about?
-Patient: What do you mean by that, doctor?
-Doctor: Well, it could be anything from high blood pressure, to depression, to cancer. Do any of those sound familiar?
-Patient: Oh, yeah, I have a few things like that. I have anemia, high cholesterol, and, um, hypothyroidism.

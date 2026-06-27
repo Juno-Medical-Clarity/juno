@@ -1,1 +1,0 @@
-Predicting folding pathways and the mechanisms by which proteins fold is thus central to understanding how proteins work.

@@ -1,5 +1,0 @@
-pmid:        33536341
-question:    41
-adaptation:  adaptation1
-title:       Kidney intercalated cells and the transcription factor FOXi1 drive cystogenesis in tuberous sclerosis complex
-sentences:   9

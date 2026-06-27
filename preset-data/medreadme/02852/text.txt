@@ -1,1 +1,0 @@
-Bcd cooperative binding affects the position where bistability occurs but is not itself sufficient for a sharp Hb pattern.

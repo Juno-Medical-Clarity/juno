@@ -1,4 +1,0 @@
-Doctor: Anyone in the family had any medical issues?
-Patient: Oh yes.
-Doctor: Can you please elaborate?
-Patient: So, my mother's side family had heart issues. My dad's sister had sugar problem.

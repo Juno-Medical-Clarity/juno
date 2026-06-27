@@ -1,6 +1,0 @@
-Doctor: I am okay.
-Patient: I have bad nausea.
-Doctor: Oh, so sorry.
-Patient: And I feel very dizzy like I am going to faint.
-Doctor: Okay let me see what is going on.
-Patient: Okay.

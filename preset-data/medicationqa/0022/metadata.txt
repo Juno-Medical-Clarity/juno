@@ -1,5 +1,0 @@
-drug_focus: vitamin C
-question_type: Information
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b22c2ad8-0d4a-4b78-8d6e-dc917a777ab6
-sample_id: 0022

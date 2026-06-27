@@ -1,9 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [5:6] 'general-complex' -> 'quantitative'
-  [23:27] 'general-complex' -> 'three - step approach'
-  [33:36] 'general-complex' -> 'latent class membership'

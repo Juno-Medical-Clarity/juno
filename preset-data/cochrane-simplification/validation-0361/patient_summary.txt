@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0361  |  gem_id: gem-cochrane-simplification-validation-362  |  doi: 10.1002/14651858.CD004026.pub2
-
-This review compares acute day hospital care to inpatient care. We found that at least one in five patients currently admitted to inpatient care could feasibly be cared for in an acute day hospital. Patients treated in the day hospital had the same levels of treatment satisfaction and quality of life as those cared for as inpatients. The day hospital patients were also no more likely to be unemployed at the end of their care.

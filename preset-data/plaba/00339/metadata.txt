@@ -1,5 +1,0 @@
-pmid:        34368314
-question:    26
-adaptation:  adaptation1
-title:       COVID-19 patient with an incubation period of 27 d: A case report
-sentences:   12

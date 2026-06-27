@@ -1,5 +1,0 @@
-pmid:        31239388
-question:    15
-adaptation:  adaptation1
-title:       Deletion of Kir5.1 Impairs Renal Ability to Excrete Potassium during Increased Dietary Potassium Intake
-sentences:   10

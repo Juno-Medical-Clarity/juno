@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0380  |  gem_id: gem-cochrane-simplification-validation-381  |  doi: 10.1002/14651858.CD001018
-
-The review of trials found no evidence that unopposed oestrogen and combined oestrogen and progestogen have an effect on body weight additional to that usually gained at the time of menopause. The review did not find any evidence that HRT prevents weight gain experienced at menopause.

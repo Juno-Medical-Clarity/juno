@@ -1,4 +1,0 @@
-Doctor: Any drug allergies?
-Patient: Ah yes, I am allergic to... what's the name of the drug? It's called Napro-
-Doctor: Naprosyn?
-Patient: Yes, Naprosyn.
