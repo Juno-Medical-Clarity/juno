@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0953  |  gem_id: gem-cochrane-simplification-train-954  |  doi: 10.1002/14651858.CD006176.pub2
-
-This review included nine randomised controlled trials involving 1118 women and assessed six of these studies (involving 394 women) comparing umbilical vein injection of normal saline with or without oxytocin. Other comparisons did not provide the required information. With umbilical vein injection of saline solution plus oxytocin versus umbilical vein injection of saline solution there was no evidence of a difference in the amount of blood lost, duration of the third stage of labour or need for manual removal of a retained placenta. routine use of umbilical injection after childbirth to deliver any infusion, though the combined results of the small number of relevant studies showed no evidence of effect and further research is needed to make a conclusion. There is a need for training in the technique and a possible higher cost of materials.

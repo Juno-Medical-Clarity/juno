@@ -1,6 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 3.3
-split:       test
-
-jargon_spans: (none)

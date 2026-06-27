@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0017  |  gem_id: gem-cochrane-simplification-train-18  |  doi: 10.1002/14651858.CD006688.pub2
-
-Our review of studies conducted over the past 14 years suggests that azithromycin is a relatively weak antimalarial whose efficacy depends on the drug dose and the partner drug in the combination therapy. The data suggest that, among adults, the higher doses needed to achieve an acceptable level of treatment success with malaria may be less well tolerated. Unless the ongoing product and dose optimisation process results in a universally efficacious product or identifies a specific niche application that is complementary to the current scala of more efficacious antimalarial combinations, azithromycin's future as an antimalarial does not look promising.

@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [0:4] 'medical-jargon-google-easy' -> 'CD8 + T cells'
-  [15:19] 'medical-jargon-google-easy' -> 'CD8 + T cells'
-  [24:27] 'medical-jargon-google-easy' -> 'HIV - 1'

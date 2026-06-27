@@ -1,5 +1,0 @@
-pmid:        28951787
-question:    65
-adaptation:  adaptation2
-title:       Do Omega-3/6 Fatty Acids Have a Therapeutic Role in Children and Young People with ADHD?
-sentences:   9

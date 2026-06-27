@@ -1,5 +1,0 @@
-pmid:        31378335
-question:    43
-adaptation:  adaptation1
-title:       Cardiac Implantable Electronic Device Therapy: Permanent Pacemakers, Implantable Cardioverter Defibrillators, and Cardiac Resynchronization Devices
-sentences:   4

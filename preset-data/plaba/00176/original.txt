@@ -1,9 +1,0 @@
-Coronavirus Disease 2019 (COVID-19) caused by a novel betacoronavirus SARS-CoV-2 has been an ongoing global pandemic.
-Several vaccines have been developed to control the COVID-19, but the potential effectiveness of the mucosal vaccine remains to be documented.
-In this study, we constructed a recombinant L. plantarum LP18: RBD expressing the receptor-binding domain (RBD) of the SARS-CoV-2 spike protein via the surface anchoring route.
-The amount of the RBD protein was maximally expressed under the culture condition with 200 ng/mL of inducer at 33 °C for 6 h.
-Further, we evaluated the immune response in mice via the intranasal administration of LP18:RBD.
-The results showed that the LP18:RBD significantly elicited RBD-specific mucosal IgA antibodies in respiratory tract and intestinal tract.
-The percentages of CD3 + CD4+ T cells in spleens of mice administrated with the LP18:RBD were also significantly increased.
-This indicated that LP18:RBD could induce a humoral immune response at the mucosa, and it could be used as a mucosal vaccine candidate against the SARS-CoV-2 infection.
-We provided the first experimental evidence that the recombinant L. plantarum LP18: RBD could initiate immune response in vivo, which implies that the mucosal immunization using recombinant LAB system could be a promising vaccination strategy to prevent the COVID-19 pandemic.

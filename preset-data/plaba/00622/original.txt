@@ -1,8 +1,0 @@
-Lupus nephritis (LN) is the most frequent severe organ manifestation of systemic lupus erythematosus (SLE).
-About 30% of patients are refractory to treatment.
-The authors report a case of treatment of LN with interleukin-17-targeted therapy, demonstrating its possible benefit, after reports of T helper 17 cell involvement in SLE pathogenesis.
-We present the case of a childbearing age woman with SLE, who developed refractory LN despite all the indicated therapeutic options.
-During follow up, infection with human papillomavirus was detected, a possible trigger, and the following management was based on this discovery.
-We currently know that cytokines play a major role in tissue damage and interleukin-17 (IL-17) seems to be a fundamental key in SLE and LN, having shown its expression in renal glomeruli and urinary sediment.
-Thus, it was decided to start treatment with an anti-IL-17A antibody, secukinumab.
-After starting secukinumab, clinical and biological features improved and complete renal response was achieved.

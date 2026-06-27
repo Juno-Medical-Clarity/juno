@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [1:8] 'medical-name-entity' -> 'Support and Assessment for Fall Emergency Referrals'
-  [9:10] 'abbr-medical' -> 'SAFER'
-  [24:25] 'medical-jargon-google-easy' -> 'paramedics'

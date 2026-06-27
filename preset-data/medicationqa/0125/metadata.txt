@@ -1,5 +1,0 @@
-drug_focus: n/a (Exploration)
-question_type: Information
-section_title: What is the conventional treatment of metabolic syndrome?
-source_url: https://www.drweil.com/health-wellness/body-mind-spirit/disease-disorders/metabolic-syndrome/
-sample_id: 0125

@@ -1,5 +1,0 @@
-pmid:        1683192
-question:    62
-adaptation:  adaptation2
-title:       Objective antihistamine side effects are mitigated by evening dosing of hydroxyzine
-sentences:   10

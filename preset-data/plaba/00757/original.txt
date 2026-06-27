@@ -1,7 +1,0 @@
-To investigate endogenous interference factors of the detection results of novel severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) IgM/IgG.
-Enzyme-linked immunosorbent assay (ELISA) was used to detect SARS-CoV-2 IgM/IgG in sera of 200 patients without COVID-19 infection, including rheumatoid factor (RF) positive group, antinuclear antibody (ANA) positive group, pregnant women group, and normal senior group, with 50 in each group and 100 normal controls.
-The level of SARS-CoV-2 IgG in pregnant women was significantly higher than that in the normal control group (p = 0.000), but there was no significant difference between other groups.
-The levels of SARS-CoV-2 IgM in the pregnant women group, normal senior group, ANA positive group, and RF positive group were significantly higher than that in the normal control group (p < 0.05), with significant higher false-positive rates in these groups (p = 0.036, p = 0.004, p = 0.000, vs. normal control group).
-Serum RF caused SARS-CoV-2 IgM false-positive in a concentration-dependent manner, especially when its concentration was higher than 110.25 IU/L, and the urea dissociation test can turn the false positive to negative.
-ANA, normal seniors, pregnant women, and RF can lead to false-positive reactivity of SARS-CoV-2 IgM and/or IgG detected using ELISA.
-These factors should be considered when SARS-CoV-2 IgM or IgG detection is positive, false positive samples caused by RF positive can be used for urea dissociation test.

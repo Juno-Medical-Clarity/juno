@@ -1,9 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        complex
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [10:11] 'abbr-medical' -> 'LCP'
-  [20:23] 'medical-jargon-google-easy' -> 'intensive care units'
-  [24:25] 'abbr-medical' -> 'ICUs'

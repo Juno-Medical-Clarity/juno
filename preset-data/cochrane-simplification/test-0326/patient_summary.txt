@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0326  |  gem_id: gem-cochrane-simplification-test-327  |  doi: 10.1002/14651858.CD011322.pub2
-
-We searched electronic databases and other resources for randomised controlled trials (RCTs) comparing LHRH agonists with chemotherapy or placebo in women with relapsed EOC.Two RCTs were identified. Since the comparisons differed, they were reported separately. Available evidence did not show improvement in overall survival and progression-free survival at six and12 months with hormonal (LHRH) therapy. Also, major side effects (haematological and neurological) did not statistically differ between the two treatment groups, but were incompletely reported. Quality of life data were not reported in either study. Currently, the quality of evidence is very low regarding the effectiveness and safety of LHRH agonists in women who relapse within six months of initial platinum chemotherapy treatment.

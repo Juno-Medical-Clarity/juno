@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0852  |  gem_id: gem-cochrane-simplification-train-853  |  doi: 10.1002/14651858.CD003462.pub3
-
-This review of trials found that UFH and LMWH when given to patients with high-risk unstable angina or NSTEMI in the acute phase of treatment, in addition to standard therapy with aspirin, prevent more heart attacks than placebo but do not reduce mortality, the need for revascularization procedures or recurrent angina. Although there was limited reporting of side-effects, heparins caused more cases of minor bleeding.

@@ -1,9 +1,0 @@
-source:      pnas
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [2:3] 'medical-jargon-google-easy' -> 'accessions'
-  [5:7] 'general-complex' -> 'scaling exponent'
-  [9:10] 'abbr-medical' -> 'MST'

@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.8
-split:       test
-
-jargon_spans:
-  [21:22] 'medical-jargon-google-easy' -> 'cytomegalovirus'
-  [28:29] 'medical-jargon-google-easy' -> 'nucleosome'

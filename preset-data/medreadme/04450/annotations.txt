@@ -1,8 +1,0 @@
-source:      plos_pathogens
-side:        complex
-readability: 4.7
-split:       test
-
-jargon_spans:
-  [1:3] 'medical-jargon-google-easy' -> 'reactive peptides'
-  [7:11] 'medical-jargon-google-hard' -> 'effector T cell epitopes'

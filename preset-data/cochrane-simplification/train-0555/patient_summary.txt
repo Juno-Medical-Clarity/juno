@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0555  |  gem_id: gem-cochrane-simplification-train-556  |  doi: 10.1002/14651858.CD006114.pub2
-
-This review reports trials comparing fluvoxamine with other antidepressants for treatment of major depression. We found no strong evidence that fluvoxamine was either superior or inferior to any other antidepressants in terms of efficacy and tolerability in the acute phase treatment of depression. However, there is evidence of differing side-effect profiles, especially when comparing gastrointestinal side effects between fluvoxamine and tricyclic antidepressants (TCAs). Based on these findings, we conclude that clinicians should focus on practical or clinically relevant considerations including these differences in side effect profiles.

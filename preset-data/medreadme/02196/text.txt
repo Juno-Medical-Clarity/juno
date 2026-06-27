@@ -1,1 +1,0 @@
-Cytosine DNA methylation (mC) is a genome modification that can regulate the expression of coding and non-coding genetic elements.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0903  |  gem_id: gem-cochrane-simplification-train-904  |  doi: 10.1002/14651858.CD005460.pub3
-
-This review included six studies involving over 1345 TBAs, more than 32,000 women and approximately 57,000 births and examined the effect of TBA training, or additional training, on TBA behaviour and on pregnancy outcomes. We conclude that while there are a few more studies meeting the inclusion criteria and the results are promising for some outcomes, more evidence is needed to establish the potential of TBA training to improve peri-neonatal mortality. A lack of contrast in training in the intervention and control clusters and an insufficient number of studies may have contributed to the lack of observed differences in maternal deaths and deaths of their babies (early neonatal deaths).

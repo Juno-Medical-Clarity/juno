@@ -1,1 +1,0 @@
-We use symmetric bifurcation theory to show why low frequency flicker should produce hexagonal patterns while high frequency produces pinwheels, targets, and spirals.

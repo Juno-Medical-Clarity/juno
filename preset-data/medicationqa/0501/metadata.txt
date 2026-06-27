@@ -1,5 +1,0 @@
-drug_focus: penicillin
-question_type: Dose
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da74ca3c-951d-4569-b13e-d01faad1da12
-sample_id: 0501

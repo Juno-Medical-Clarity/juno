@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [15:16] 'abbr-medical' -> 'HRT'
-  [22:24] 'medical-jargon-google-easy' -> 'endometrial cancer'

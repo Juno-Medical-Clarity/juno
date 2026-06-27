@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1148  |  gem_id: gem-cochrane-simplification-train-1149  |  doi: 10.1002/14651858.CD003743.pub2
-
-Data from one quasi-randomised trial with 88 infants from 75 families were included in the review. Infants in the early discharge programme with home gavage feeds had a mean hospital stay that was approximately nine days shorter than that of infants in the control group. Infants in the early discharge programme also had lower risk of clinical infection during the home gavage period compared with infants in the control group during the corresponding time in hospital. No significant differences were observed between groups in duration and extent of breast feeding, weight gain, re-admission within the first 12 months post discharge from the home gavage programme or from hospital, scores reflecting parental satisfaction or health service use. Evidence is needed regarding the effects of early home discharge for preterm babies who are stable but still need gavage (tube) feeds.

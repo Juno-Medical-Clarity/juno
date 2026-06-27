@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2278  |  gem_id: gem-cochrane-simplification-train-2279  |  doi: 10.1002/14651858.CD000562.pub3
-
-We reviewed studies of psychotherapies, including a specific form of psychotherapy called cognitive behavioural therapy (CBT-BN). We compared psychotherapy to control groups who got no treatment (e.g. people on waiting lists) and the specific CBT-BN with other types of psychotherapy. We found that CBT was better than other therapies, and better than no treatment, at reducing binge eating. Other psychotherapies were also better than no treatment in reducing binge eating. Some studies found that self-help using the CBT manual can be helpful, but more research and larger trials are needed.

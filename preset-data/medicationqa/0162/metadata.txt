@@ -1,5 +1,0 @@
-drug_focus: Amiodarone
-question_type: Side effects
-section_title: What side effects can this medication cause?
-source_url: https://medlineplus.gov/druginfo/meds/a687009.html
-sample_id: 0162

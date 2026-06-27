@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1118  |  gem_id: gem-cochrane-simplification-train-1119  |  doi: 10.1002/14651858.CD007132.pub2
-
-The aim of this review was to see how effective palliative care interventions in care homes are, and to describe the outcome measures used in the studies. We found only three suitable studies (735 participants), all from the USA. There was little evidence that interventions to improve palliative care for older people in care homes improved outcomes for residents. One study found that palliative care increased bereaved family members' perceptions of the quality of care and another found lower discomfort for residents with dementia who were dying. There were problems with both of these findings. Two studies found that palliative care improved some of the ways in which care was given in the care home, however, we do not know if this resulted in better outcomes for residents. There is a need for more high quality research, particularly outside the USA.

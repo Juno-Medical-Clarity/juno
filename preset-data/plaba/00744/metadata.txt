@@ -1,5 +1,0 @@
-pmid:        35081293
-question:    59
-adaptation:  adaptation2
-title:       Homologous and Heterologous Covid-19 Booster Vaccinations
-sentences:   12

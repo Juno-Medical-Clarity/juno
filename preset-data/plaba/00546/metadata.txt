@@ -1,5 +1,0 @@
-pmid:        30025887
-question:    42
-adaptation:  adaptation1
-title:       Linker histones and chromatin remodelling complexes maintain genome stability and control cellular ageing
-sentences:   8

@@ -1,5 +1,0 @@
-pmid:        34603289
-question:    48
-adaptation:  adaptation1
-title:       Immunomodulatory Effect of MSCs and MSCs-Derived Extracellular Vesicles in Systemic Lupus Erythematosus
-sentences:   4

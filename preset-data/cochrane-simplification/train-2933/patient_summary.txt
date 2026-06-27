@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2933  |  gem_id: gem-cochrane-simplification-train-2934  |  doi: 10.1002/14651858.CD004602.pub2
-
-This review assessed data from fifty-one studies and found that paracetamol provided effective pain relief for about half of participants experiencing moderate to severe pain after an operation, including dental surgery for a period of about four hours. There were no clear differences between doses of paracetamol typically used. These single dose studies did not associate paracetamol with any serious side effects.

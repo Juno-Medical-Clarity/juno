@@ -1,5 +1,0 @@
-pmid:        29022654
-question:    31
-adaptation:  adaptation2
-title:       Epidemiology, Prevention, and Assessment of Tardive Dyskinesia and Advances in Treatment
-sentences:   6

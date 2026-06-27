@@ -1,5 +1,0 @@
-pmid:        33118231
-question:    33
-adaptation:  adaptation2
-title:       Population pharmacokinetics of gabapentin in patients with neuropathic pain: Lack of effect of diabetes or glycaemic control
-sentences:   13

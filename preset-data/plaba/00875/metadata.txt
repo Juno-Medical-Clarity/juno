@@ -1,5 +1,0 @@
-pmid:        26182483
-question:    71
-adaptation:  adaptation3
-title:       Achondroplasia: Current Options and Future Perspective
-sentences:   8

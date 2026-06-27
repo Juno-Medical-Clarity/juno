@@ -1,5 +1,0 @@
-pmid:        30259503
-question:    4
-adaptation:  adaptation2
-title:       The importance of combined NGS and MLPA genetic tests for differential diagnosis of maturity onset diabetes of the young
-sentences:   14

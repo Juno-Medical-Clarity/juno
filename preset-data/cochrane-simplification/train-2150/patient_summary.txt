@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2150  |  gem_id: gem-cochrane-simplification-train-2151  |  doi: 10.1002/14651858.CD001095.pub2
-
-This review of 49 trials found that treating children with a short course (less than seven days) of antibiotics, compared to treatment with a long course (seven days or greater) of antibiotics, increases the likelihood of treatment failure in the short term. No differences are seen one month later. The amount of gastrointestinal adverse events decreased with a shorter course of antibiotics.

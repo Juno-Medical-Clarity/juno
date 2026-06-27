@@ -1,1 +1,0 @@
-Color - GRAY, Shape - CAPSULE (biconvex), Score - no score, Size - 12mm, Imprint Code - m10

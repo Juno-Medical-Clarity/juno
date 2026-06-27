@@ -1,1 +1,0 @@
-Somewhat surprisingly, autophagy induction in ttis450 larvae is independent of the state of the Tor pathway and proceeds unabated in Tp53-mutant larvae.

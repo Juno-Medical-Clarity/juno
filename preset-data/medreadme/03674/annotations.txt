@@ -1,8 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 4.85
-split:       test
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Autophagy'
-  [27:29] 'medical-jargon-google-easy' -> 'cytoplasmic organelles'

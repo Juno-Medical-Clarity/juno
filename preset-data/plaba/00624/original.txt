@@ -1,9 +1,0 @@
-Objective: To determine the relative effectiveness and safety of belimumab and anifrolumab in patients with active systemic lupus erythematosus (SLE).
-Materials and methods: A Bayesian network meta-analysis was performed from randomized controlled trials (RCTs) on the effectiveness and safety of belimumab 10 mg, anifrolumab 300 mg, and a placebo in patients with active SLE.
-Results: Six RCTs (2,757 patients) were included in this study.
-The response rate based on the SLE 4 Responder Index (SRI4) at 52 weeks was substantially higher in the belimumab 10-mg and anifrolumab 300-mg groups than that in the placebo group (OR 2.90, % credible intervals (CrIs) 2.37 - 3.56; OR 1.60, % CrI 1.22 - 2.08).
-The SRI4 response rate for belimumab 10 mg was significantly higher than that for anifrolumab 300 mg (OR 1.82, 95% CrI 1.30 - 2.53).
-Ranking probability based on surface under the cumulative ranking curve (SUCRA) indicated that belimumab 10 mg was most likely the best treatment for SRI4 response (SUCRA = 0.999), followed by anifrolumab 300 mg (SUCRA = 0.500) and placebo (SUCRA = 0.001).
-The number of serious adverse events (SAEs) did not differ significantly among the 4 treatment groups.
-Conclusion: Based on the SRI4 response rate, belimumab 10 mg had the best response efficacy, followed by anifrolumab 10 mg.
-However, there was no difference in the number of SAEs among the treatment options.

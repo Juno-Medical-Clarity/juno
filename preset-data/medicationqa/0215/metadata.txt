@@ -1,5 +1,0 @@
-drug_focus: Norvasc
-question_type: Side effects
-section_title: ADVERSE REACTIONS > Clinical Trials Experience
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b00570ff-4081-4514-b45b-eb6f753450f5
-sample_id: 0215

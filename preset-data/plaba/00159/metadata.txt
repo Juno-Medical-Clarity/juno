@@ -1,5 +1,0 @@
-pmid:        19009769
-question:    13
-adaptation:  adaptation1
-title:       Cardiac arrhythmias in obstructive sleep apnea
-sentences:   11

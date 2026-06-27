@@ -1,1 +1,0 @@
-This comparison is underpowered and at risk of a Type 2 error (only 21 events).

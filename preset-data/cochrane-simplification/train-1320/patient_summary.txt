@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1320  |  gem_id: gem-cochrane-simplification-train-1321  |  doi: 10.1002/14651858.CD004889.pub2
-
-Randomised trials have compared transjugular intrahepatic portosystemic stent-shunts with paracentesis. Mortality, gastrointestinal bleeding, renal failure, or infection did not differ significantly between the two intervention groups. Transjugular intrahepatic portosystemic stent-shunts effectively decreased the risk of ascites fluid re-accumulation, but was associated with an increased risk of hepatic encephalopathy.

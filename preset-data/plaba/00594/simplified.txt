@@ -1,7 +1,0 @@
-The CFTR-Associated Ligand (CAL) reduces the cell surface of normal CFTR through destroying it in a well-understood way. The CFTR protein is a channel involved with movement of ions (charged atoms) and fluids in epithelial cells (cells that cover the outer surface of the internal organs).
-However, few scientists have studied how CAL controls ΔF508 CFTR, a specific gene sequence change seen in the CFTR gene which slightly alters the CFTR protein.
-In this study, we describe a previously unknown way CAL controls ΔF508 CFTR through stopping ΔF508 CFTR movement in the cell's transportation system.
-We show that CAL binds to ΔF508 CFTR in one location of the cell and is destroyed in another location of the cell.
-When CAL is stopped, the amount of ΔF508 CFTR held within the cell decreases and working ΔF508 CFTR is seen on the cell surface.
-The binding of ΔF508 CFTR to proteins improves the cell surface movement conducted by ΔF508 CFTR.
-We conclude that CAL controls the cell surface availability and amount held within the cell of ΔF508 CFTR.

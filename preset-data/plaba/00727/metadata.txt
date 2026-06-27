@@ -1,5 +1,0 @@
-pmid:        34753868
-question:    57
-adaptation:  adaptation2
-title:       An Update on the Diagnosis, Treatment, and Management of Occipital Neuralgia
-sentences:   9

@@ -1,1 +1,0 @@
-Hybrid orbitals from each atom of the molecule, or other molecular orbitals from groups of atoms can also be used.

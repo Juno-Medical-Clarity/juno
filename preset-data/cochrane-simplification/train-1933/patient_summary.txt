@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1933  |  gem_id: gem-cochrane-simplification-train-1934  |  doi: 10.1002/14651858.CD002215
-
-This review examined the impact of different payment systems on primary care physician behaviour. Three payment systems were included: capitation (payment is made for every patient for whom care is provided), salary, and fee for service (payment is made for every item of care provided). There was some evidence that primary care physicians provide a greater quantity of primary care services under fee for service payment compared with capitation and salary, although long-term effects are unclear. There was no evidence, however, concerning other important outcomes such as patient health status, or comparing the relative impact of salary versus capitation payment.

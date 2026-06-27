@@ -1,5 +1,0 @@
-pmid:        24371979
-question:    40
-adaptation:  adaptation1
-title:       Setting of compression therapy
-sentences:   9

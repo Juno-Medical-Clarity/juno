@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [3:4] 'medical-jargon-google-easy' -> 'delusions'
-  [10:11] 'abbr-medical' -> 'CBT'

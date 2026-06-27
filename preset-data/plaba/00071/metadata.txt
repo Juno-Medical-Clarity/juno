@@ -1,5 +1,0 @@
-pmid:        29490937
-question:    6
-adaptation:  adaptation1
-title:       MANAGEMENT OF ENDOCRINE DISEASE: Pitfalls on the replacement therapy for primary and central hypothyroidism in adults
-sentences:   10

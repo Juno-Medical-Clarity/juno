@@ -1,6 +1,0 @@
-Purpose: The vast majority of mutations responsible for epilepsy syndromes such as genetic epilepsy with febrile seizures plus (GEFS+) and Dravet syndrome (DS) occur in the gene encoding the type 1 alpha subunit of neuronal voltage-gated sodium channel (SCN1A).
-Methods: 63 individuals presenting with either DS or GEFS + syndrome phenotype were screened for SCN1A gene mutation using Sanger sequencing and multiplex ligation-dependent probe amplification (MLPA).
-Results: Our research study identified 15 novel pathogen mutations in the SCN1A gene of which 12 appeared to be missense mutations with addition of two frameshift-deletions and one in-frame deletion.
-The distribution of clinical phenotypes in patients carrying SCN1A mutations was as follows: twelve patients had classical DS, three patients had GEFS + syndrome and two relatives of DS patients were suffering from febrile seizures.
-Conclusions: Our study highlights the phenotypic and genotypic heterogeneities of DS and GEFS + with the important aim of gaining a deeper understanding of SCN1A-related disorders.
-This study also represents the first genetic analysis of the SCN1A gene in a Hungarian cohort with the DS and GEFS + syndrome phenotype.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2152  |  gem_id: gem-cochrane-simplification-train-2153  |  doi: 10.1002/14651858.CD003600.pub3
-
-The review found that there is insufficient evidence from studies to show that such changes reduce the number of injuries in the home but does not conclude that these interventions are ineffective. Home alterations need to be evaluated by larger and better designed studies which include injuries in their outcomes.

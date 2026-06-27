@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0881  |  gem_id: gem-cochrane-simplification-train-882  |  doi: 10.1002/14651858.CD001281.pub2
-
-This review compared three asthma medications, salmeterol, formoterol (both long acting beta-agonists) and theophylline. These medications are used to help control symptoms of asthma, especially those which occur during the night. This review found that salmeterol showed a greater improvement in lung function, and reduced the need for extra short-term inhalers in the day and the night. Salmeterol and formoterol are less likely to produce side-effects (such as headaches and nausea) when compared to theophylline.

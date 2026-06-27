@@ -1,5 +1,0 @@
-drug_focus: prochlorperazine
-question_type: Information
-section_title: INDICATIONS AND USAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b05bc20e-cd19-ab40-1ad0-84a115d6d69e
-sample_id: 0469

@@ -1,6 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.85
-split:       dev
-
-jargon_spans: (no jargon annotation found for this sentence)

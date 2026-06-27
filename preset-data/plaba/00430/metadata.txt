@@ -1,5 +1,0 @@
-pmid:        7665723
-question:    33
-adaptation:  adaptation2
-title:       Disposition of gabapentin in anuric subjects on hemodialysis
-sentences:   11

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1117  |  gem_id: gem-cochrane-simplification-train-1118  |  doi: 10.1002/14651858.CD008225.pub2
-
-This review provides evidence that group-based parenting programmes improve childhood behaviour problems and the development of positive parenting skills in the short-term, whilst also reducing parental anxiety, stress and depression. Evidence for the longer-term effects of these programmes is unavailable. These group-based parenting programmes achieve good results at a cost of approximately $2500 (£1712 or €2217) per family. These costs are modest when compared with the long-term social, educational and legal costs associated with childhood conduct problems.

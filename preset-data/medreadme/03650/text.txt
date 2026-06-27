@@ -1,1 +1,0 @@
-We perform replica exchange molecular dynamics (REMD) simulations of 872 8-mer, 12-mer, and 16-mer peptide fragments from 13 proteins using the AMBER 96 force field and the OBC implicit solvent model.

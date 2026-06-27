@@ -1,5 +1,0 @@
-pmid:        15895778
-question:    74
-adaptation:  adaptation3
-title:       Chronic cough as a sign of laryngeal sensory neuropathy: diagnosis and treatment
-sentences:   9

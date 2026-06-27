@@ -1,5 +1,0 @@
-drug_focus: hydrochlorothiazide
-question_type: Brand names
-section_title: Brand names
-source_url: https://medlineplus.gov/druginfo/meds/a682571.html#brand-name-1
-sample_id: 0097

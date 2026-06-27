@@ -1,5 +1,0 @@
-drug_focus: methylphenidate
-question_type: Information
-section_title: NA
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1f8983ce-71b8-4c62-830d-e4692ddededa
-sample_id: 0068

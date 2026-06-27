@@ -1,5 +1,0 @@
-pmid:        33448766
-question:    9
-adaptation:  adaptation1
-title:       Dysphagia: Evaluation and Collaborative Management
-sentences:   15

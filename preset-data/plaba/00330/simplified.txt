@@ -1,5 +1,0 @@
-Since December 2019, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), the causing agent of COVID-19, has infected over four million people around the world.
-The are several reports of people infected with COVID-19 being active spreaders of the virus for extended periods of time. However, the results of COVID-19 tests do not always correlate to the duration of time a person can spread the virus. Meaning a person can test negative but may be actively giving the virus to others unknowingly.
-Because of this, the duration of time needed before a previously COVID-19 infected person is no longer able to infect others is not known.
-People without symptoms can spread the virus. COVID-19 can also be spread before people begin to show symptoms. The spread of the virus may actually occur the most right after symptoms show. This means the tracing of potential exposures, isolation of exposed people, and social distancing are needed to improve public health and reduce virus spread.
-The goal of this paper was summarize the scientific research around the spreading of COVID-19.

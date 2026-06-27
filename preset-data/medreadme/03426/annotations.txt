@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.2
-split:       test
-
-jargon_spans:
-  [5:8] 'general-complex' -> 'randomised controlled trial'
-  [14:16] 'medical-jargon-google-easy' -> 'persecutory delusions'

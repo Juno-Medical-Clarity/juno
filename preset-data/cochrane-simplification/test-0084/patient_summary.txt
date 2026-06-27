@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0084  |  gem_id: gem-cochrane-simplification-test-85  |  doi: 10.1002/14651858.CD001466.pub3
-
-This review of two trials with 149 patients found no conclusive evidence to support surgical treatment for people with degeneration, radiculopathy or myelopathy. Possible limitations of this review include the the lack of large trials and the risk of bias associated with these studies. Further research is very likely to change the estimate of effects and our confidence in the results. Future large-scale randomised trials with better methods are needed to provide clear evidence on the balance between risk and benefit from surgery for individuals with cervical degeneration with radiculopathy or myelopathy.

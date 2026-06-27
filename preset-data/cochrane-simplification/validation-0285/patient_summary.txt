@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0285  |  gem_id: gem-cochrane-simplification-validation-286  |  doi: 10.1002/14651858.CD003205.pub2
-
-We identified 23 randomised trials (maximum duration of eight months) including 1075 people in which omega-3 PUFA was compared to a vegetable oil or placebo. None of the trials looked at cardiovascular endpoints in cardiovascular disease or death as an outcome measure.  The review shows that although some types of fat in the blood are reduced through omega-3 supplementation, others including LDL cholesterol (which may promote heart disease) were increased. Control of blood sugar levels was not affected by the treatment. There were no other adverse effects of the interventions noted. Clinical outcome trials of sufficient duration are required to establish conclusively the role of omega-3 PUFA in type 2 diabetes but our results do not suggest a major harmful effect on the balance of blood fats and confirm that it has no adverse affect on blood sugar control.

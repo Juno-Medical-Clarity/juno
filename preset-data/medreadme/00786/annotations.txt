@@ -1,7 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [11:15] 'medical-jargon-google-easy' -> 'retinopathy of prematurity screening'

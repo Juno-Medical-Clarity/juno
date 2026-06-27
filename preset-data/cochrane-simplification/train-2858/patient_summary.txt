@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2858  |  gem_id: gem-cochrane-simplification-train-2859  |  doi: 10.1002/14651858.CD010764.pub2
-
-We did not find any trials which have been completed on this topic with available results. The only trial which met our criteria for inclusion had been terminated due to encountering difficulties with recruiting participants. Therefore we cannot be sure whether controlling blood glucose intensively when people have diabetic foot ulcers is beneficial or harmful. The lack of evidence however should not deter efforts to achieve optimal glycaemic control in people with diabetic foot ulcers to encourage healing as is current practice. We believe there are currently two trials underway which may provide some evidence on this topic once completed. This Plain Language Summary is up to date as of 7 December 2015.

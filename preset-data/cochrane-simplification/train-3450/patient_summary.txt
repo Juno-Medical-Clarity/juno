@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3450  |  gem_id: gem-cochrane-simplification-train-3451  |  doi: 10.1002/14651858.CD003728.pub2
-
-Unfortunately we only found two randomised controlled trials that studied the use of art therapy for people with schizophrenia. Both studies did not include enough participants to make the results meaningful and we were unable to draw clear conclusions regarding the benefits or harms of art therapy from these studies. More research is needed to determine the value of art therapy in this population.

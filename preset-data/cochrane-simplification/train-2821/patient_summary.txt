@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2821  |  gem_id: gem-cochrane-simplification-train-2822  |  doi: 10.1002/14651858.CD004573.pub3
-
-This review of 13 trials on diabetic and alcoholic peripheral neuropathy with a total of 741 participants showed only one study that suggested possible short-term benefit from eight-week treatment with benfotiamine (a derivative of vitamin B1) with slightly greater improvement in vibration perception threshold compared to placebo. Vitamin B complex when given in a higher dose administered for four weeks was more efficacious than a lower dose in reducing pain and other clinical problems based on another study. Two to eight weeks of treatment with vitamin B was less efficacious than alpha-lipoic acid, cilostazol or cytidine triphosphate in short-term improvement of clinical and nerve test findings. All these findings require confirmation in larger studies before they can be accepted as definite. Vitamin B is generally well-tolerated with only a few reports of mild side effects.

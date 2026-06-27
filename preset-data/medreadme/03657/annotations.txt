@@ -1,7 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'native structures'

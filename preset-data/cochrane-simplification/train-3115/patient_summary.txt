@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3115  |  gem_id: gem-cochrane-simplification-train-3116  |  doi: 10.1002/14651858.CD005190.pub2
-
-This review assessed the effects of psychotropic analgesic nitrous oxide (PAN) in treating alcohol withdrawal. All trials were conducted in in-patient settings although PAN is also administered in outpatient settings. The review found that PAN is as effective as sedatives for managing mild to moderate alcohol withdrawal states. Nonetheless, it does not provide strong evidence in favour of the benefits or harms of using PAN over sedatives in managing acute alcohol withdrawal. Further high quality trials should be done before these findings can be confirmed.

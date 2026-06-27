@@ -1,5 +1,0 @@
-pmid:        25535777
-question:    52
-adaptation:  adaptation1
-title:       Detection of Turner Syndrome by quantitative PCR of SHOX and VAMP7 genes
-sentences:   5

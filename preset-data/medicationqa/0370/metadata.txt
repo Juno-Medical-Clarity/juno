@@ -1,5 +1,0 @@
-drug_focus: bumetanide
-question_type: Appearance
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9188ab17-8539-48a5-905f-ad35ab5a0b93
-sample_id: 0370

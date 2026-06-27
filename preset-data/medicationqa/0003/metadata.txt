@@ -1,5 +1,0 @@
-drug_focus: morphine
-question_type: Information
-section_title: NA
-source_url: https://en.wikipedia.org/wiki/Morphine
-sample_id: 0003

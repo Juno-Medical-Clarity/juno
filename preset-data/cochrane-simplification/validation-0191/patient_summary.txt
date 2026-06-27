@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0191  |  gem_id: gem-cochrane-simplification-validation-192  |  doi: 10.1002/14651858.CD003488.pub3
-
-We conducted a search up to 6 January 2014 and included eight studies which enrolled 948 participants in total. Four studies of corticosteroids in the treatment of dengue-related shock assessed if corticosteroids could improve survival, but these studies were small and older than 20 years. The evidence we found is of very low quality and do not provide any reliable evidence for corticosteroids for treating dengue-related shock. Four trials evaluated whether corticosteroids provided at an early stage of dengue could prevent development of complications of severe dengue. These trials were more recent, but data were insufficient to be sure whether corticosteroids have an effect on the course of the disease.

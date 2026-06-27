@@ -1,1 +1,0 @@
-Using data from seven censuses of A. aegypti pupae (2007-2009) and from demographic surveys, we developed an agent-based transmission model of the dengue transmission cycle across houses in 16 dengue-endemic urban' patches' (1-3 city blocks each) of Armenia, Colombia.

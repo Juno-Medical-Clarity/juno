@@ -1,5 +1,0 @@
-drug_focus: tetanus
-question_type: Usage/time
-section_title: Who needs to get tetanus vaccines?
-source_url: https://www.vaccines.gov/diseases/tetanus/index.html
-sample_id: 0603

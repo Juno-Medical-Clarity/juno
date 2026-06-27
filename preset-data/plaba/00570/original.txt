@@ -1,9 +1,0 @@
-Current monitoring technologies are unable to detect early, compensatory changes that are associated with significant blood loss.
-We previously introduced a novel algorithm to calculate the Compensatory Reserve Index (CRI) based on the analysis of arterial waveform features obtained from photoplethysmogram recordings.
-In the present study, we hypothesized that the CRI would provide greater sensitivity and specificity to detect blood loss compared with traditional vital signs and other hemodynamic measures.
-Continuous noninvasive vital sign waveform data, including CRI, photoplethysmogram, heart rate, blood pressures, SpO2, cardiac output, and stroke volume, were analyzed from 20 subjects before, during, and after an average controlled voluntary hemorrhage of ∼1.2 L of blood.
-Compensatory Reserve Index decreased by 33% in a linear fashion across progressive blood volume loss, with no clinically significant alterations in vital signs.
-The receiver operating characteristic area under the curve for the CRI was 0.90, with a sensitivity of 0.80 and specificity of 0.76.
-In comparison, blood pressures, heart rate, SpO2, cardiac output, and stroke volume had significantly lower receiver operating characteristic area under the curve values and specificities for detecting the same volume of blood loss.
-Consistent with our hypothesis, CRI detected blood loss and restoration with significantly greater specificity than did other traditional physiologic measures.
-Single measurement of CRI may enable more accurate triage, whereas CRI monitoring may allow for earlier detection of casualty deterioration.

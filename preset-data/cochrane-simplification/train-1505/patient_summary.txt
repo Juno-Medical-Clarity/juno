@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1505  |  gem_id: gem-cochrane-simplification-train-1506  |  doi: 10.1002/14651858.CD008580.pub2
-
-We identified five studies (involving a total of 805 women) that evaluated effectiveness of analgesia for pain during amniocentesis. Types of analgesia included local anaesthetics (either injected (two studies, 423 women) or applied topically (one study, 120 women)); use of a subfreezing (-14°C) needle (one study, 62 women); and leg rubbing (one study, 200 women). We found no studies evaluating analgesia during chorionic villus sampling. Each comparison failed to demonstrate positive affect on pain during amniocentesis. In general, women who undergo amniocentesis could be informed that pain during procedure is minor and that there is currently insufficient evidence to support the use of local anaesthetics, leg rubbing or subfreezing the needle for pain reduction during this procedure.

@@ -1,8 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [4:6] 'abbr-medical' -> 'DIALOG +'
-  [14:15] 'medical-name-entity' -> 'NHS'

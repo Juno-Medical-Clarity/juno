@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0669  |  gem_id: gem-cochrane-simplification-train-670  |  doi: 10.1002/14651858.CD003637.pub3
-
-The review found 16 trials which involved 1643 children. Most simple behavioural treatments were only studied in single small trials which makes the evidence less reliable. Simple treatments such as rewarding dry nights (e.g. with star charts), lifting and waking and bladder training appeared to be more effective than no treatment but they are not as effective when compared with other treatments known to work, such as enuresis alarm therapy and drug therapy. There does not appear to be one simple behavioural therapy that is more effective than another. On the other hand, simple treatments do not have any side effects or safety concerns. Therefore, simple methods could be tried as first line therapy before considering alarms or drugs for this common childhood condition.

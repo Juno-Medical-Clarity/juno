@@ -1,9 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [14:16] 'medical-jargon-google-hard' -> 'localization phenotypes'
-  [25:27] 'medical-jargon-google-hard' -> 'PleC localization'
-  [32:34] 'medical-jargon-google-easy' -> 'PleC expression'

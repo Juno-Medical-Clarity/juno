@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0947  |  gem_id: gem-cochrane-simplification-train-948  |  doi: 10.1002/14651858.CD004332.pub2
-
-These conclusions are based on 24 randomised controlled trials with 6915 participants who were treated as outpatients in all but one trial that involved adolescent inpatients. The majority of participants were men, median age 42 years. Most studies were conducted in Europe; two studies were conducted in the United States and one study in each of South Korea,Australia and Brazil. The effects of acamprosate did not differ in industry-sponsored and non-profit funded trials. Three trials compared acamprosate and naltrexone and did not indicate a superiority of one or the other drug on return to any drinking, return to heavy drinking and cumulative abstinence duration.

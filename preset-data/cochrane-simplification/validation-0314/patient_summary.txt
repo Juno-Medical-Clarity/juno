@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0314  |  gem_id: gem-cochrane-simplification-validation-315  |  doi: 10.1002/14651858.CD001070
-
-No evidence from trials that thyroid hormone therapy is effective in preventing problems such as respiratory distress syndrome in preterm babies. Thyroid hormones are needed for the normal growth and maturity of the central nervous system, as well as the heart and lungs. Children born without sufficient thyroid hormones can develop serious mental retardation. It is believed that low levels of thyroid hormones in the first few weeks of life (transient hypothyroxinemia) in preterm babies born before 34 weeks may cause this abnormal development. The review of trials found no evidence that using thyroid hormones in preterm babies is effective in reducing the risk of problems caused by insufficient thyroid hormones.

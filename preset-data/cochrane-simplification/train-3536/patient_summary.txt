@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3536  |  gem_id: gem-cochrane-simplification-train-3537  |  doi: 10.1002/14651858.CD004856.pub2
-
-This review identified eight randomised controlled trials involving 343 participants, evaluating the benefits of behavioural and cognitive-behavioural therapy. The results show that, compared to a wait-list or pill placebo, BT/CBT is an effective treatment for reducing OCD symptoms and lowering the risk of having OCD after treatment. Based on three studies that directly compared BT/CBT with medication, there was no current evidence to suggest that either BT/CBT or medication was superior to the other. When combined with medication, BT/CBT produces better outcomes than medication alone. Although based on a small number of studies, these findings provide support for the value of BT/CBT in the treatment of children and adolescents with OCD.

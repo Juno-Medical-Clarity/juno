@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1269  |  gem_id: gem-cochrane-simplification-train-1270  |  doi: 10.1002/14651858.CD006689.pub2
-
-This review only identified two trials which compared the impact of using three or more doses of sulphadoxine-pyrimethamine to using only two doses. Using three or more doses was more effective at preventing the presence of malaria parasites in the placenta and in the peripheral blood of the pregnant woman than using the standard two doses only. Also, children born to HIV-positive pregnant women who used three or more doses of sulphadoxine-pyrimethamine weighed more than those born to mothers who used only the standard two doses. Although more frequent doses of this drug are effective in preventing malaria, HIV-positive pregnant women with low CD4 count can not use the drug since the current policy requires that they use co-trimoxazole (Bactrim®) to prevent opportunistic infections. There is need, therefore, to investigate alternative drugs and regimens in preventing malaria in HIV-positive pregnant women.

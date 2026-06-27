@@ -1,6 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 5.0
-split:       dev
-
-jargon_spans: (no jargon annotation found for this sentence)

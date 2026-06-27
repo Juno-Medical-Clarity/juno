@@ -1,5 +1,0 @@
-pmid:        34578462
-question:    28
-adaptation:  adaptation2
-title:       Myocardial Damage by SARS-CoV-2: Emerging Mechanisms and Therapies
-sentences:   13

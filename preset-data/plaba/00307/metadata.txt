@@ -1,5 +1,0 @@
-pmid:        31984304
-question:    24
-adaptation:  adaptation1
-title:       Massive lamotrigine and bupropion overdose resulting in status epilepticus without cardiovascular collapse
-sentences:   12

@@ -1,5 +1,0 @@
-drug_focus: magnesium
-question_type: Action
-section_title: What is magnesium and what does it do?
-source_url: https://ods.od.nih.gov/factsheets/Magnesium-Consumer/
-sample_id: 0587

@@ -1,5 +1,0 @@
-pmid:        34508491
-question:    41
-adaptation:  adaptation1
-title:       Rare Encounter of Renal Hydatid Cyst: A Case Report
-sentences:   7

@@ -1,7 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [26:29] 'medical-jargon-google-easy' -> 'biological network behaviors'

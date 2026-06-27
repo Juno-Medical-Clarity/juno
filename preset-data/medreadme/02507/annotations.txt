@@ -1,9 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [9:10] 'medical-jargon-google-easy' -> 'endemic'
-  [23:25] 'medical-jargon-google-easy' -> 'A. aegypti'
-  [31:33] 'medical-jargon-google-easy' -> 'dengue transmission'

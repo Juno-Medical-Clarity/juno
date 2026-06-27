@@ -1,8 +1,0 @@
-The ongoing pandemic of the coronavirus (the virus that causes COVID-19 or the breathing-related infection) and its variants has created a global public health emergency.
-Medical drugs and vaccines are needed to treat and prevent the spread of this contagious virus.
-This study describes how antibodies that are linked to receptor-binding domains (parts of the cell that connect the virus and allow entry to the cell) are identified in mice using a vaccine that includes a small piece of DNA or genetic material to teach the body to fight the infection.
-Monoclonal antibodies are medicines that may block the virus that causes COVID-19 from attaching to human cells, making it more difficult for the virus to reproduce. Certain monoclonal antibodies are selected for the study to understand how the coronavirus can be made ineffective.
-Some antibodies with these receptor-binding domains have a high ability to make the coronavirus ineffective.
-These results show that monoclonal antibodies targeting certain parts of the virus can be used in combination with other monoclonal antibodies medicines against the coronavirus.
-
-The identification of these antibodies linked to receptor-binding domains and the mix of medicines may provide effective treatment and prevention against coronavirus.

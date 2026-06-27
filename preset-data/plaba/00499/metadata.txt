@@ -1,5 +1,0 @@
-pmid:        8857777
-question:    38
-adaptation:  adaptation1
-title:       Practical management of pressure ulcers
-sentences:   7

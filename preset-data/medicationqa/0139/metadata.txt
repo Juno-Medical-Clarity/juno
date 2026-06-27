@@ -1,5 +1,0 @@
-drug_focus: Opdivo and Yervoy
-question_type: Action/effectiveness
-section_title: Results
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/28889792
-sample_id: 0139

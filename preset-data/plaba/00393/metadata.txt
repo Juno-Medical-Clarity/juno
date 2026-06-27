@@ -1,5 +1,0 @@
-pmid:        34206895
-question:    30
-adaptation:  adaptation1
-title:       Long-Term Longitudinal Evaluation of Six Commercial Immunoassays for the Detection of IgM and IgG Antibodies against SARS CoV-2
-sentences:   10

@@ -1,5 +1,0 @@
-pmid:        30290604
-question:    73
-adaptation:  adaptation2
-title:       Pain monitoring and management in a rehabilitation setting after total joint replacement
-sentences:   10

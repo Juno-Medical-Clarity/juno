@@ -1,5 +1,0 @@
-pmid:        31688325
-question:    57
-adaptation:  adaptation2
-title:       Differential Diagnosis of Chronic Neuropathic Orofacial Pain: Role of Clinical Neurophysiology
-sentences:   8

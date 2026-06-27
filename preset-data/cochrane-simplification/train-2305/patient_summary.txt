@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2305  |  gem_id: gem-cochrane-simplification-train-2306  |  doi: 10.1002/14651858.CD005208.pub3
-
-We identified four trials with a total of 1365 participants in searches conducted up to June 2013: three trials compared the intravenous GP IIb-IIIa inhibitor Abciximab with intravenous placebo and one trial compared the intravenous GP IIb-IIIa inhibitor Tirofiban with intravenous aspirin. The results showed that GP IIb-IIIa inhibitors cause bleeding in the brain, and that this complication offset any benefits. Therefore, GP IIb-IIIa inhibitors should be avoided in people with acute ischaemic stroke. Overall, the studies were considered at low risk of bias.

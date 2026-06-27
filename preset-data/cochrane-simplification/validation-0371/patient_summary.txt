@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0371  |  gem_id: gem-cochrane-simplification-validation-372  |  doi: 10.1002/14651858.CD001114.pub2
-
-The review of trials found that using corticosteroids for lung sarcoidosis leads to some short-term benefit in terms of chest x-ray, but there is limited evidence that this benefit lasts or affects the long term outcomes of the disease.

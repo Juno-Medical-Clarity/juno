@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3198  |  gem_id: gem-cochrane-simplification-train-3199  |  doi: 10.1002/14651858.CD007022.pub2
-
-This review identified 24 studies enrolling 2,610 patients comparing teicoplanin and vancomycin in those with either proven or suspected infection. Teicoplanin was as effective as vancomycin for treating infections caused by Staphylococcus aureus with similar results for clinical cure, microbiological cure and death. However, there were less adverse events (skin rash and red man syndrome) and it caused significantly less damage to the kidneys.

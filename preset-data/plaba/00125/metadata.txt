@@ -1,5 +1,0 @@
-pmid:        31039689
-question:    10
-adaptation:  adaptation1
-title:       Carpal Tunnel Syndrome: Treating Hand Pain and Numbness
-sentences:   14

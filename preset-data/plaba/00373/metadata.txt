@@ -1,5 +1,0 @@
-pmid:        34493880
-question:    29
-adaptation:  adaptation1
-title:       The Role of Micronutrients to Support Immunity for COVID-19 Prevention
-sentences:   7

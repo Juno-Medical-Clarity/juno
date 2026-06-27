@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0057  |  gem_id: gem-cochrane-simplification-train-58  |  doi: 10.1002/14651858.CD007662.pub2
-
-This systematic review of randomised controlled trials (RCTs) set out to review the evidence for medication in treating TTM. The findings are based on eight studies (which included a total of 204 people). Not enough evidence was found to conclude definitively that any particular medication is effective in the treatment of TTM. Furthermore, side effects related to medications were not well-documented in the majority of the studies. Because of differences in the way the included studies were carried out, we were unable to combine their results to draw more conclusive evidence. However, an early trial found some evidence for the efficacy of clomipramine, and two recent trials reported statistically significant treatment outcomes with olanzapine and N-acetylcysteine. More research is needed to find an optimal treatment for TTM.

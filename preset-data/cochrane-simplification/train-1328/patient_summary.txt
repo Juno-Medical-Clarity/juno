@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1328  |  gem_id: gem-cochrane-simplification-train-1329  |  doi: 10.1002/14651858.CD009328.pub2
-
-We found a total of five randomised clinical trials (involving 1466 women). In three of the trials (involving 1268 women), oral methylergometrine was compared with placebo (two trials) or the Japanese traditional herbal medicine Kyuki-chouketsu-in (one trial). The other two trials (involving 198 women) did not report information on relevant outcomes of interest for this review. Overall, there was no clear evidence that prophylactic oral methylergometrine was effective in reducing haemorrhage after childbirth. The trials were not of good quality and adverse events were not well-reported. We did not find any completed trials looking at the effectiveness of homeopathic remedies in reducing haemorrhage after childbirth. The effectiveness of such remedies warrants further investigation.

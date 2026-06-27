@@ -1,9 +1,0 @@
-Over the past decade, there have been major advances in the development of pacemakers and the implantable defibrillator, a device that monitors your heart rate and delivers a strong electrical shock to restore the heartbeat to normal.
-The relationship between when the lower chambers of the heart are activated and how the heart pumps are now better understood.
-Activating the lower chambers of the heart (ventricular activation) can now be achieved in many patients with pacing of the His bundle (a part of the electrical conduction system of the heart that transmits pulses). This approach provides an alternative to right ventricle pacing that may cause ventricles in the heart to not function properly.
-Advances in the technology will increase ease and use of this form of pacing.
-When it is not possible to activate the ventricles from the His Purkinje system that is the rapid electric conduction in the ventricles, left ventricle pacing for cardiac resynchronization therapy or CRT (treatment that helps the heart beat at the right rhythm) will continue to be important for patients with slower ventricular function.
-Surprisingly, cardiac resynchronization therapy (CRT) is often beneficial even though current use is limited to the few places in the left ventricle.
-The development of pacing devices with multiple placements in the heart system is an important advance and provided multiple left ventricle pacing arrangements to select from to find the best site.
-This option also addresses problems of electric stimulation of the diaphragm and high pacing ceilings that often limit delivery of left ventricle pacing.
-These leads will also allow performance of simultaneous pacing from multiple left ventricle sites, which may improve mechanical performance in situations other than when there is a delay or blockage of electrical impulses to the left side of the heart.

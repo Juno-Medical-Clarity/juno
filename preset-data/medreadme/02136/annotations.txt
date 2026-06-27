@@ -1,9 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'Th1'
-  [3:4] 'medical-jargon-google-easy' -> 'Th17'
-  [8:11] 'medical-jargon-google-easy' -> 'C57BL / 6'

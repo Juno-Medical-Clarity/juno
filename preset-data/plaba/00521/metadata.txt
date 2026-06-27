@@ -1,5 +1,0 @@
-pmid:        21944912
-question:    40
-adaptation:  adaptation1
-title:       Compression therapy in mixed ulcers increases venous output and arterial perfusion
-sentences:   9

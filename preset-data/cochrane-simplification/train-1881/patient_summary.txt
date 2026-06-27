@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1881  |  gem_id: gem-cochrane-simplification-train-1882  |  doi: 10.1002/14651858.CD004287.pub4
-
-The researchers searched the medical literature up to March 2014, and identified 33 medical studies that investigated the use of tissue adhesives for closure of wounds. They compared tissue adhesive with another method of closure such as sutures, staples, tape, or another type of tissue adhesive. The main outcomes of interest were whether wounds stayed closed - and did not break down - and whether they became infected. The results of the review showed clearly that fewer wounds broke down when sutures were used. Studies also reported that some types of tissue adhesives might be slightly quicker to use than other types. There was no clear difference between tissue adhesives and the alternative closure methods for cosmetic results or costs. Results regarding surgeons' and patients' preferred skin closure method were mixed.

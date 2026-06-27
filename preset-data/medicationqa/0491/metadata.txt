@@ -1,5 +1,0 @@
-drug_focus: nitrofurantoin
-question_type: Brand names
-section_title: Brand names
-source_url: https://medlineplus.gov/druginfo/meds/a682291.html
-sample_id: 0491

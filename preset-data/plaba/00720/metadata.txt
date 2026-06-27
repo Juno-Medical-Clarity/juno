@@ -1,5 +1,0 @@
-pmid:        31098348
-question:    57
-adaptation:  adaptation2
-title:       Trigeminal Neuralgia Resulting from Delayed Cervical Cord Compression after Acute Traumatic Fracture of Odontoid Process
-sentences:   6

@@ -1,1 +1,0 @@
-We tested advanced statistical methods to account for these differences.

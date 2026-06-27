@@ -1,9 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.7
-split:       train
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'AEP'
-  [12:13] 'medical-jargon-google-easy' -> 'enzymes'
-  [15:19] 'medical-jargon-google-hard' -> 'macrocyclic peptide drug leads'

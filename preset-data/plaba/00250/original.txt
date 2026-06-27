@@ -1,8 +1,0 @@
-Patients with major depressive disorder remain at risk for relapse following remission and often continue to experience subthreshold symptoms.
-This study examined whether depressed patients who had recovered and then relapsed on fluoxetine 20 mg/day would benefit from an increase in fluoxetine dose.
-A total of 132 outpatients with major depressive disorder who achieved remission with 8 weeks of treatment with fluoxetine 20 mg had the dose increased to 40 mg.
-They were randomized to receive cognitive therapy or medication management alone and were followed for up to 28 weeks for depressive relapse and change in depressive symptoms.
-A total of 47 (35.6%) out of 132 patients did not complete the 28-week continuation phase.
-Rates of discontinuation or relapse did not differ significantly between the groups.
-Change in residual symptoms or wellbeing as measured by Hamilton Depression Scale score or Symptom Questionnaire self-report also did not differ between groups.
-In this sample of outpatients in continuation phase treatment for major depressive disorder, the combination of cognitive therapy and fluoxetine 40 mg failed to yield any significant benefit in symptoms or relapse rates over fluoxetine 40 mg alone during 28 weeks of follow-up.

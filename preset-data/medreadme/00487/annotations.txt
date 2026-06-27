@@ -1,6 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        simple
-readability: 2.3
-split:       train
-
-jargon_spans: (no jargon annotation found for this sentence)

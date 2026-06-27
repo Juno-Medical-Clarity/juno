@@ -1,7 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [6:9] 'medical-jargon-google-easy' -> 'ubiquitous natural selection'

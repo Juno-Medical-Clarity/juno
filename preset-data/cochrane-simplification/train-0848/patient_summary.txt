@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0848  |  gem_id: gem-cochrane-simplification-train-849  |  doi: 10.1002/14651858.CD005019.pub4
-
-The aim of this review was to find out whether statins prevent death and complications from heart disease in people who have had a kidney transplant. We included 17 studies in 3282 adults with a functioning kidney transplant which compared statin therapy to a placebo or standard treatment. Based largely on information from a single, large and well-conducted study, statins may reduce complications from heart disease although information from the available research is imprecise. The effects of statin treatment on death overall, stroke, kidney function and side-effects are uncertain in people with a kidney transplant. Large additional studies of statin therapy may improve our confidence that statin treatment can safely prevent serious complications from heart disease for people who have a kidney transplant.

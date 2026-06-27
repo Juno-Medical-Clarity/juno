@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [5:6] 'abbr-medical' -> 'PLD'
-  [13:17] 'medical-jargon-google-easy' -> 'first - line chemotherapy'
-  [20:21] 'abbr-medical' -> 'EOC'

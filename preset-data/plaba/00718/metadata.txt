@@ -1,5 +1,0 @@
-pmid:        9054938
-question:    56
-adaptation:  adaptation2
-title:       GLI3 frameshift mutations cause autosomal dominant Pallister-Hall syndrome
-sentences:   10

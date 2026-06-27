@@ -1,5 +1,0 @@
-pmid:        32872374
-question:    14
-adaptation:  adaptation1
-title:       Antiviral Functional Foods and Exercise Lifestyle Prevention of Coronavirus
-sentences:   9

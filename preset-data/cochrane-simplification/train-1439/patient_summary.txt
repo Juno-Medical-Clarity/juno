@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1439  |  gem_id: gem-cochrane-simplification-train-1440  |  doi: 10.1002/14651858.CD004074.pub3
-
-Although early cord clamping has been thought to reduce the risk of bleeding after birth (postpartum haemorrhage), this review of 15 randomised trials involving a total of 3911 women and infant pairs showed no significant difference in postpartum haemorrhage rates when early and late cord clamping (generally between one and three minutes) were compared. There were, however, some potentially important advantages of delayed cord clamping in healthy term infants, such as higher birthweight, early haemoglobin concentration, and increased iron reserves up to six months after birth. These need to be balanced against a small additional risk of jaundice in newborns that requires phototherapy.

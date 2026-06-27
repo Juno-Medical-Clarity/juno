@@ -1,1 +1,0 @@
-Genome-wide association studies (GWAS) have discovered thousands loci associated with disease risk and quantitative traits, yet most of the variants responsible for risk remain uncharacterized.

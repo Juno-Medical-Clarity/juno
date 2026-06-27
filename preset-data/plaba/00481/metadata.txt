@@ -1,5 +1,0 @@
-pmid:        32377769
-question:    37
-adaptation:  adaptation1
-title:       The neurotoxic effect of long-term use of high-dose Pregabalin and the role of alpha tocopherol in amelioration: implication of MAPK signaling with oxidative stress and apoptosis
-sentences:   10

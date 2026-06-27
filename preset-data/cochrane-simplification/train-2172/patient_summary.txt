@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2172  |  gem_id: gem-cochrane-simplification-train-2173  |  doi: 10.1002/14651858.CD006896.pub2
-
-The review authors found 31 trials (involving 17,771 women) that looked at the impact of providing folic acid supplementation during pregnancy. The data showed that taking folate during pregnancy was not associated with reducing the chance of preterm births, stillbirths, neonatal deaths, low birthweight babies, pre-delivery anaemia in the mother or low pre-delivery red cell folate, although pre-delivery serum levels were improved. The review also did not show any impact of folate supplementation on improving mean birthweight and the mother’s mean haemoglobin levels during pregnancy compared with taking a placebo. However, the review showed some benefit in indicators of folate status in the mother. The evidence provided so far from these trials did not find conclusive results for any overall benefit of folic acid supplementation during pregnancy. Most of the studies were conducted over 30 to 45 years ago.

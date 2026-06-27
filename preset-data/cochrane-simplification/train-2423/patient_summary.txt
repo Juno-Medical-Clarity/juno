@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2423  |  gem_id: gem-cochrane-simplification-train-2424  |  doi: 10.1002/14651858.CD011119.pub2
-
-Routine outcome monitoring of CMHDs using PROMs was not shown conclusively to be helpful in analyses combining study results, either in terms of improving patient symptom outcomes (across 12 studies), or in changing the duration of treatment for their conditions (across seven studies). It was not possible to analyse changes in drug treatment or referrals for further treatment as only two studies reported these. Similarly, health-related quality of life, social functioning, adverse events, and costs were reported in very few studies. More research of better quality is required, especially in primary care where most CMHDs are treated. Studies should include people treated with drugs as well as psychological therapies, and should follow them for longer than six months. As well as symptoms and length of treatment, studies should measure possible harms, quality of life, social functioning, and the costs of monitoring.

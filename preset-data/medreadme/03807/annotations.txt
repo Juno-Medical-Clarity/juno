@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 3.7
-split:       test
-
-jargon_spans:
-  [5:6] 'medical-jargon-google-easy' -> 'sinus'

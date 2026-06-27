@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0061  |  gem_id: gem-cochrane-simplification-train-62  |  doi: 10.1002/14651858.CD008997.pub2
-
-Some studies have suggested that resecting the primary cancer can prolong survival and prevent complication arising from the cancer, such as obstruction or bleeding. This review addresses the question of whether surgically removing the primary cancer is beneficial to patients with advanced and unresectable colorectal cancer. No randomised controlled trials were identified.

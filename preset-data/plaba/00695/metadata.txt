@@ -1,5 +1,0 @@
-pmid:        27630909
-question:    54
-adaptation:  adaptation1
-title:       The Role of Serum Beta hCG in Early Diagnosis and Management Strategy of Ectopic Pregnancy
-sentences:   14

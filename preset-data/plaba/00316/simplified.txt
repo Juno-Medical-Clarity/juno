@@ -1,8 +1,0 @@
-Monoclonal antibodies are medicines recommended in mild to moderate COVID-19 patients who are at risk of progressing to a severe stage of the disease. Monoclonal antibodies are medicines that may block the virus that causes COVID-19 (a breathing-related disease) from attaching to human cells, making it more difficult for the virus to reproduce.
-Monoclonal antibodies are not widely used in the United States because there is little data on the impact of these drugs, and it is difficult to give these drugs to patients.
-This study aimed to assess the outcomes of monoclonal antibodies in patients who were mostly from ethnic minority groups and to study the challenges in providing the treatment in an inner-city hospital in the South Bronx.
-Researchers looked at data previously collected from 49 patients who were offered monoclonal antibody medicines.
-The 38 patients who received the monoclonal antibody therapy were put in the treatment group. Eleven people did not want to receive the medicines, so they were made the comparison group.
-A majority of patients (76%) reported improvement in their symptoms the day after receiving the medicine.
-There was a big reduction in hospital stays due to COVID-19 and death in the group that received monoclonal antibody medicines.
-Monoclonal antibody medicines reduced both hospital stays and deaths in this predominantly Hispanic group of patients with mild or moderate COVID-19.

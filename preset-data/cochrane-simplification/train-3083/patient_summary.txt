@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3083  |  gem_id: gem-cochrane-simplification-train-3084  |  doi: 10.1002/14651858.CD008950.pub2
-
-The results of clinical studies that have been undertaken to study the effect on the outcomes of IVF and ICSI procedures of culturing embryos under low oxygen concentrations have been conflicting. Therefore, we performed a systematic review and meta-analysis of the literature to find the best available evidence. It has shown that culturing embryos under low oxygen concentrations does indeed improve clinical outcomes after IVF and ICSI, such as number of deliveries (live birth rate) and ongoing and clinical pregnancy rates. Furthermore, no evidence was found of an increased risk of adverse events such as multiple pregnancies, miscarriages and congenital abnormalities. We concluded that culturing embryos under low oxygen concentrations seems beneficial with an increase in the number of newborns, but more studies are needed to strongly prove this effect.

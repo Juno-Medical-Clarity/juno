@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0065  |  gem_id: gem-cochrane-simplification-validation-66  |  doi: 10.1002/14651858.CD006304.pub3
-
-This review looked to see if local cooling for a short period of time helped to relieve perineal pain for women and helped with healing. We found 10 studies including 1825 women that compared cooling treatments such as ice, cold gel pads, or cold bath with no treatment, or other treatments. One study found that women reported less pain 24 to 72 hours after giving birth when they used the ice packs for 10 to 20 minutes, rather than when they had no treatment. No effect on healing was identified. There is only a small amount of evidence of how safe and effective cooling treatments are to relieve perineal pain.

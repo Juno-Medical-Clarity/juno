@@ -1,8 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [4:7] 'medical-jargon-google-easy' -> 'effector T cells'
-  [23:26] 'medical-jargon-google-easy' -> 'regulatory T cells'

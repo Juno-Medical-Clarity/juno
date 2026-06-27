@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.35
-split:       test
-
-jargon_spans:
-  [4:5] 'medical-jargon-google-easy' -> 'chromosomes'
-  [11:12] 'medical-jargon-google-easy' -> 'nucleus'

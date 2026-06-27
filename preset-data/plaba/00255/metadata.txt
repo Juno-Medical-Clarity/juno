@@ -1,5 +1,0 @@
-pmid:        2341585
-question:    20
-adaptation:  adaptation2
-title:       Fluoxetine in panic disorder
-sentences:   5

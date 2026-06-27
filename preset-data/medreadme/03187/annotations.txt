@@ -1,9 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 4.5
-split:       dev
-
-jargon_spans:
-  [8:9] 'general-complex' -> 'control'
-  [13:14] 'abbr-general' -> 'SDS'
-  [18:19] 'abbr-general' -> 'SDS'

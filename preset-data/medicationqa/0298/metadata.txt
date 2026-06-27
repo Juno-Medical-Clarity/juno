@@ -1,5 +1,0 @@
-drug_focus: biotin
-question_type: Side effects
-section_title: NA
-source_url: https://labtestsonline.org/news/fda-warns-biotin-may-affect-some-lab-test-results
-sample_id: 0298

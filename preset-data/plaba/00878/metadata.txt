@@ -1,5 +1,0 @@
-pmid:        29360984
-question:    71
-adaptation:  adaptation3
-title:       Regulation of ciliary function by fibroblast growth factor signaling identifies FGFR3-related disorders achondroplasia and thanatophoric dysplasia as ciliopathies
-sentences:   8

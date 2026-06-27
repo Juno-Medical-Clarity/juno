@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0758  |  gem_id: gem-cochrane-simplification-train-759  |  doi: 10.1002/14651858.CD000424
-
-This review of 10 studies evaluated six different drugs. The only drug for which there was any evidence of benefit was piracetam, but the evidence of benefit was weak and there were concerns about its safety. It was not possible to conclude whether piracetam was more effective than speech and language therapy in treating aphasia after stroke. More research is needed into the effects of piracetam on aphasia, and its safety, before it can be recommended for routine use.

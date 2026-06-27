@@ -1,5 +1,0 @@
-pmid:        33064426
-question:    21
-adaptation:  adaptation1
-title:       Inguinal Hernias: Diagnosis and Management
-sentences:   10

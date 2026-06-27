@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0139  |  gem_id: gem-cochrane-simplification-test-140  |  doi: 10.1002/14651858.CD005380.pub5
-
-Two different types of MPAC have been used in clinical trials and the drugs are known as PBT1 and PBT2. The trial of PBT1 compared with placebo (in 36 patients) showed no statistically significant difference in cognition or memory between the active treatment and placebo groups at 36 weeks. We therefore conclude that there is no current evidence that treatment with clioquinol (PBT1) has any significant effect on cognition and in particular memory (as measured by the ADAS-Cog scale) in patients with Alzheimer's dementia. This drug has now been withdrawn from development. The trial of PBT2 showed it was safe after 12 weeks of treatment but demonstrated no overall significant effect on cognition or memory.

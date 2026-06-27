@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2922  |  gem_id: gem-cochrane-simplification-train-2923  |  doi: 10.1002/14651858.CD004931.pub2
-
-Nine randomised controlled trials involving 395 patients were evaluated. Six out of nine studies had a follow-up of less than one year, the longest study duration was 24 months. The overall quality of trials was variable, only a third of the analysed studies showed a low risk of bias. No information was available on quality of life, all-cause mortality and morbidity. Compared with conventional management, IGB did not show convincing evidence of a greater weight loss. The relative risks for minor complications, for example gastric ulcers and erosions were significantly raised.

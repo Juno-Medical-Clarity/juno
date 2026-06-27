@@ -1,1 +1,0 @@
-Here, we report a novel DNA patrolling activity which may underlie Pif1 ’s diverse functions: a Pif1 monomer preferentially anchors itself to a 3 ′ - tailed DNA junction and periodically reel in the 3 ′ tail with a step size of one nucleotide, extruding a loop.

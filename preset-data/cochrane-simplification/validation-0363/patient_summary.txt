@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0363  |  gem_id: gem-cochrane-simplification-validation-364  |  doi: 10.1002/14651858.CD004746.pub2
-
-The efficacy of galantamine has been tested in two randomised controlled trials for the treatment of vascular dementia and for a mixed population of Alzheimer's disease patients with evidence of cerebrovascular disease on scanning. The rationale behind its use is to correct the cholinergic deficit seen in vascular dementia. This review found evidence of benefit for galantamine compared with placebo in measures of cognition in both studies. Both studies indicated higher rates of nausea and vomiting in patients taking galantamine compared with placebo.

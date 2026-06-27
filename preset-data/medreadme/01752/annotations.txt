@@ -1,6 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 3.7
-split:       train
-
-jargon_spans: (none)

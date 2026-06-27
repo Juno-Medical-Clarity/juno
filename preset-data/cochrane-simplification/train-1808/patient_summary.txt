@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1808  |  gem_id: gem-cochrane-simplification-train-1809  |  doi: 10.1002/14651858.CD003816.pub2
-
-In our systematic review we could not identify substantial differences in the safety and efficacy between insulin species. Many important patient-oriented outcomes like health-related quality of life and effects on diabetic complications and mortality were never investigated. Human insulin was introduced into the market without scientific proof of advantage over existing purified animal insulins, especially porcine insulin.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0186  |  gem_id: gem-cochrane-simplification-test-187  |  doi: 10.1002/14651858.CD007885.pub2
-
-We identified two completed randomized controlled studies, involving 447 RhD-negative women. The findings suggest that intramuscular and intravenous anti-D in the 28th week of pregnancy are equally effective in preventing RhD antibody formation (alloimmunization) during the pregnancy. None of the women developed antibodies against the RhD antigen. The small number of studies, low number of participants and methodological limitations mean that we do not have sufficient information to guide practice. The choice of intramuscular or intravenous route of administration will depend on available preparations, the dose to be administered and the woman's preference.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1456  |  gem_id: gem-cochrane-simplification-train-1457  |  doi: 10.1002/14651858.CD008638.pub2
-
-We identified 10 trials of moderate quality involving 654 participants and comparing SmartCare™ versus non-automated weaning strategies. Compared with non-automated strategies, SmartCare™ significantly decreased weaning time, time to successful removal from breathing machines and time spent in the ICU, with fewer patients receiving breathing machine support for longer than seven days and 21 days, and no increase in adverse events. SmartCare™ also showed a favourable trend toward fewer patients receiving ventilation for longer than 14 days, with no increase in adverse events. Subgroup analyses suggested more beneficial effects on weaning time in trials comparing SmartCare™ to a protocolized weaning strategy versus a non-protocolized control strategy. Sensitivity analyses, which excluded two trials with high risk of bias, supported significant reductions in weaning time with SmartCare™.

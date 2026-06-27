@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0177  |  gem_id: gem-cochrane-simplification-validation-178  |  doi: 10.1002/14651858.CD001710.pub2
-
-In this review we sought, but could not find, any evidence from well-conducted randomised trials of the effects of non-medical day centres. Day centres are currently becoming prominent in service planning, but this is not based on good evidence as to their effectiveness for people suffering from severe mental illness. If a choice between facilities is available, people with serious mental illnesses and their carers are currently left to make their own judgements based on the evidence of experience and a few non-randomised studies.

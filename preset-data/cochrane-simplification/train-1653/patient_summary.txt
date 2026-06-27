@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1653  |  gem_id: gem-cochrane-simplification-train-1654  |  doi: 10.1002/14651858.CD006659.pub3
-
-Unfortunately, we did not find any good quality trials to include in the review. This does not mean that carnitine is ineffective or should not be used in treating inborn errors of metabolism; however, individuals receiving carnitine should be carefully observed and monitored. Therefore, we recommend that clinicians base their decision to prescribe carnitine on clinical experience together with individual preferences. Future trials should include patient-reported outcomes using validated and internationally recognised scales. Any adverse events associated with the treatment should be reported. It should be carefully considered whether placebo-controlled trials in potentially lethal diseases, e.g. carnitine transporter disorder or glutaric aciduria type I, are ethical.

@@ -1,7 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [13:15] 'medical-jargon-google-easy' -> 'histone protein'

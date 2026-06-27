@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2369  |  gem_id: gem-cochrane-simplification-train-2370  |  doi: 10.1002/14651858.CD006493.pub4
-
-This review attempted to evaluate this assumption. We found only one published study from developing countries and none from developed countries. The only study included in the review showed an increase in VCT uptake after home-based VCT intervention. Because of the limited evidence to date, however, further research is needed to evaluate if home-based VCT is better than facility-based VCT or other testing methods.

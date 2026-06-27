@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0381  |  gem_id: gem-cochrane-simplification-train-382  |  doi: 10.1002/14651858.CD008931.pub3
-
-Two randomised studies are included in this review. Both studies targeted patients most likely to fall. One trial was of low height beds (22,036 patients) and the other investigated bed exit alarms (70 patients). The results of each study showed there is no significant increase or decrease in the rate of injuries or falls from bed. Although one study was large, fewer than half of the patients received a low height bed and so this group of patients may have been too small to detect a statistically significant benefit or harm in the analysis. No randomised controlled trials of bed rails were found. The researchers suggest that future reports should fully describe what standard care was received by the control group.

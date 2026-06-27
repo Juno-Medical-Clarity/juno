@@ -1,5 +1,0 @@
-pmid:        8326015
-question:    51
-adaptation:  adaptation1
-title:       Decreased insulin response to glucose in islet cell antibody-negative siblings of type 1 diabetic children
-sentences:   9

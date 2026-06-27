@@ -1,5 +1,0 @@
-pmid:        1770194
-question:    18
-adaptation:  adaptation1
-title:       Hypocaloric diets and ketogenesis in the management of obese gestational diabetic women
-sentences:   14

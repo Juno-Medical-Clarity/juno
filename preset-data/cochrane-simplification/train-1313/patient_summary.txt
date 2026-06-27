@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1313  |  gem_id: gem-cochrane-simplification-train-1314  |  doi: 10.1002/14651858.CD001024.pub2
-
-The reviewers identified 10 trials assessing the effect of tamoxifen on survival, quality of life, tumour size, and treatment side effects in advanced hepatocellular carcinoma. Tamoxifen had no significant effect on survival or tumour size. Tamoxifen did not improve quality of life.

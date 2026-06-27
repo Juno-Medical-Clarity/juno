@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.5
-split:       test
-
-jargon_spans:
-  [11:12] 'general-complex' -> 'electrodes'
-  [15:16] 'abbr-medical' -> 'SOZ'

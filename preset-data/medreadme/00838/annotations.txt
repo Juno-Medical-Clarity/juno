@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [4:5] 'medical-jargon-google-easy' -> 'contraception'
-  [7:9] 'medical-jargon-google-easy' -> 'emergency contraception'

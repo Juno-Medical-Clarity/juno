@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0737  |  gem_id: gem-cochrane-simplification-train-738  |  doi: 10.1002/14651858.CD002139
-
-Trials have tried giving chemotherapy (drugs) after these standard treatments to find out whether it can help people to live longer. This review found that giving chemotherapy after either radiotherapy or supportive care did seem to help patients live longer. Giving chemotherapy after radiotherapy to 1000 patients would mean that an extra 40 patients would be expected to be alive 2 years later, than if the chemotherapy was not given. Giving chemotherapy after supportive care to 1000 patients would mean that 100 more would be expected to be alive 2 years later, than if the chemotherapy was not given. Chemotherapy after surgery may also help patients live longer although the evidence to support this is less clear.

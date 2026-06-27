@@ -1,7 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [2:3] 'abbr-medical' -> 'ICUs'

@@ -1,9 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'SNP'
-  [7:8] 'medical-jargon-google-hard' -> '6p24'
-  [17:19] 'medical-jargon-google-easy' -> 'breast cancer'

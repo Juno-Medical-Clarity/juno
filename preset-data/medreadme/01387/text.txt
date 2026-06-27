@@ -1,1 +1,0 @@
-In a large-scale, preregistered experiment on informal political communication, we algorithmically matched participants, varying two dimensions: 1) the degree of incidental similarity on nonpolitical features; and 2) their stance agreement on a contentious political topic.

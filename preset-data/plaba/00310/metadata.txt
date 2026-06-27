@@ -1,5 +1,0 @@
-pmid:        8588056
-question:    24
-adaptation:  adaptation1
-title:       Controlled comparison of the effects and abrupt discontinuation of buspirone and lorazepam
-sentences:   8

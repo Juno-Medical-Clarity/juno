@@ -1,5 +1,0 @@
-drug_focus: Antibiotics
-question_type: Interaction
-section_title: Summary
-source_url: https://www.healthline.com/nutrition/what-to-eat-antibiotics#section2
-sample_id: 0144

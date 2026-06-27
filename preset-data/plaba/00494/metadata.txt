@@ -1,5 +1,0 @@
-pmid:        30422492
-question:    38
-adaptation:  adaptation2
-title:       Wound Pressure Injury Management
-sentences:   8

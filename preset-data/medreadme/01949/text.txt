@@ -1,1 +1,0 @@
-Methods to minimise confounding in observational studies of implantable devices are required to enable the evaluation of patients with severe systemic morbidity who are excluded from many randomised controlled trials.

@@ -1,8 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        simple
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [1:2] 'abbr-medical' -> 'GRASP'
-  [18:19] 'medical-jargon-google-easy' -> 'physiotherapist'

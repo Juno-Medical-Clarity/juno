@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1137  |  gem_id: gem-cochrane-simplification-train-1138  |  doi: 10.1002/14651858.CD003853.pub3
-
-Six studies involving a total of 610 patients matched the inclusion criteria for this review. Four evaluated three tricyclic antidepressant agents (amitriptyline, nortriptyline and trimipramine) for the treatment of tinnitus. These studies did not find enough evidence to prove the efficacy of these agents in the management of tinnitus. One study evaluated paroxetine, a selective serotonin reuptake inhibitor antidepressant, and one evaluated trazodone, an atypical antidepressant. Neither of these studies showed benefit of paroxetine or trazodone in the treatment of tinnitus. Side effects, though relatively minor, were common in all groups of antidepressants. Further research is required.

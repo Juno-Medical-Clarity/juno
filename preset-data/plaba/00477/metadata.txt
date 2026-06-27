@@ -1,5 +1,0 @@
-pmid:        29671676
-question:    37
-adaptation:  adaptation1
-title:       Effects of gabapentin, pregabalin and gastroretentive gabapentin on simulated driving, daytime sedation and cognition
-sentences:   7

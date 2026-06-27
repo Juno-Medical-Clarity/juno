@@ -1,1 +1,0 @@
-The nuo-6 and isp-1 genes of C. elegans encode, respectively, subunits of complex I and III of the mitochondrial respiratory chain.

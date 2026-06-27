@@ -1,5 +1,0 @@
-drug_focus: Flomax
-question_type: Ingredient
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c00d5f7b-dad7-4479-aae2-fea7c0db40ed
-sample_id: 0054

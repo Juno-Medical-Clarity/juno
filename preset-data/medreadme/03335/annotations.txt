@@ -1,7 +1,0 @@
-source:      wiki
-side:        simple
-readability: 4.3
-split:       dev
-
-jargon_spans:
-  [0:1] 'medical-name-entity' -> 'Flolan'

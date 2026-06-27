@@ -1,5 +1,0 @@
-pmid:        30570999
-question:    23
-adaptation:  adaptation1
-title:       Phenylketonuria
-sentences:   8

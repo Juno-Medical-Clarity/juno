@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3383  |  gem_id: gem-cochrane-simplification-train-3384  |  doi: 10.1002/14651858.CD008483.pub2
-
-This systematic review of four studies (total of 40 participants) found insufficient evidence of benefit for any of the three classes of medications included in this review. There is a considerable lack of evidence to address pharmacological interventions for anxiety disorders in patients with COPD. We recommend that new research be conducted to ascertain the best mode of treatment for anxiety within this population. This new research needs to be of good methodological design, investigate an adequate number of patients and have a meaningful length of follow-up.

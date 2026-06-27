@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0314  |  gem_id: gem-cochrane-simplification-test-315  |  doi: 10.1002/14651858.CD008357.pub2
-
-We identified four studies, up to October 2013, which involved 245 people after stroke. A wide range of interventions was used, including driving simulation, training on devices to improve speed of processing information, scanning and movement. All studies compared the effectiveness of the driving intervention on improving whether drivers passed or failed on a driving assessment. There was no evidence that a driving intervention was more effective than no intervention. One trial found that training on a driving simulator resulted in improved performance on a test of recognising road signs immediately after training. Results should be interpreted with caution, as this was a single study. Further trials involving large numbers of participants, grouped according to their impairments and stroke type are required.

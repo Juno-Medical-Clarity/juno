@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2157  |  gem_id: gem-cochrane-simplification-train-2158  |  doi: 10.1002/14651858.CD007224.pub2
-
-Systematic review of 86 randomised clinical trials including 10,716 patients and statistical analyses of the data showed that coronary artery bypass surgery performed on the beating heart results in an increased risk of death. No firm evidence for benefit or harm was found regarding the outcome measures myocardial infarction, stroke, atrial fibrillation, renal insufficiency, or coronary reintervention. Our data raises a warning regarding coronary artery bypass surgery on the beating heart and cardiac arrest and cardiopulmonary bypass seem less risky. In patients with contraindications for cannulation of the aorta and cardiopulmonary bypass coronary artery bypass surgery on the beating heart may be a solution but we need randomised clinical trials in these patients to identify the most beneficial approach.

@@ -1,5 +1,0 @@
-drug_focus: bisoprolol
-question_type: Stopping/tapering
-section_title: WARNINGS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3
-sample_id: 0372

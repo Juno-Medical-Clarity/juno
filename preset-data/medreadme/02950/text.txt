@@ -1,1 +1,0 @@
-Instead of leaving after G4 unwinding, allowing it to refold, or going beyond to unwind duplex DNA, Pif1 repeatedly unwinds G4 DNA, keeping it unfolded.

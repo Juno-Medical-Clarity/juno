@@ -1,5 +1,0 @@
-pmid:        30116896
-question:    69
-adaptation:  adaptation3
-title:       Interventions for the prevention of postpartum depression in adolescent mothers: a systematic review
-sentences:   12

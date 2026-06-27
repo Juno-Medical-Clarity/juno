@@ -1,5 +1,0 @@
-pmid:        28401263
-question:    47
-adaptation:  adaptation2
-title:       Mutational and biochemical findings in adults with persistent hypophosphatasemia
-sentences:   18

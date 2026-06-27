@@ -1,1 +1,0 @@
-The unit MiB was defined by the International Electrotechnical Commission ( IEC ) in December 1998.

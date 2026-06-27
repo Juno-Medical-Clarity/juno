@@ -1,5 +1,0 @@
-pmid:        24259556
-question:    61
-adaptation:  adaptation3
-title:       Zinc absorption by young adults from supplemental zinc citrate is comparable with that from zinc gluconate and higher than from zinc oxide
-sentences:   8

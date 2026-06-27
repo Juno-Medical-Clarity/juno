@@ -1,1 +1,0 @@
-For instance, if a bacterium finds itself in a broth containing lactose, rather than the simpler sugar glucose, it must adapt itself to the need to 1 ) import lactose, 2 ) cleave lactose to its constituents glucose and galactose, and 3 ) convert the galactose to glucose.

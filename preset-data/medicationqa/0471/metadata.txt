@@ -1,5 +1,0 @@
-drug_focus: methotrexate
-question_type: Dose
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8f1260de-b60c-4f0e-8af6-0e957b0a281b
-sample_id: 0471

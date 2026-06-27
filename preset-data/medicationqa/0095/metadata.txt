@@ -1,5 +1,0 @@
-drug_focus: Humira
-question_type: Pronounce name
-section_title: Humira trademark
-source_url: https://www.merriam-webster.com/medical/Humira
-sample_id: 0095

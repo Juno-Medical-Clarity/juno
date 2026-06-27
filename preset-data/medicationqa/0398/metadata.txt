@@ -1,5 +1,0 @@
-drug_focus: alprazolam
-question_type: Indication
-section_title: ABSTRACT
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/21288144
-sample_id: 0398

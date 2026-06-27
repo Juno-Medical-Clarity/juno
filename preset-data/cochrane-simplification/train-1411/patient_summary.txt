@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1411  |  gem_id: gem-cochrane-simplification-train-1412  |  doi: 10.1002/14651858.CD002005.pub2
-
-We only found two small trials involving 79 patients; the results of the review suggested that anticoagulant drugs are probably safe and may be beneficial for people with sinus thrombosis but these results are not conclusive.

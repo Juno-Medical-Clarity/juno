@@ -1,5 +1,0 @@
-pmid:        30252257
-question:    43
-adaptation:  adaptation1
-title:       Pacemaker
-sentences:   15

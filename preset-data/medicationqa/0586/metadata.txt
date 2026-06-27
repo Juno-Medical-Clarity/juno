@@ -1,5 +1,0 @@
-drug_focus: u02
-question_type: Appearance
-section_title: Imprint
-source_url: https://pillbox.nlm.nih.gov/results.html?medicine_name=&imprint=+u02&imprint=+u02&shape=&color=&inactive_ingredients=&repackaged=false&page=1&items_per_page=20
-sample_id: 0586

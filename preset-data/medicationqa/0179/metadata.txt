@@ -1,5 +1,0 @@
-drug_focus: Enoxparin Sodium
-question_type: Usage
-section_title: DOSAGE AND ADMINISTRATION > Administration > Subcutaneous Injection Technique
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab8118dc-aca8-478b-8290-a468cbe36ae1
-sample_id: 0179

@@ -1,7 +1,0 @@
-source:      elife
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [11:13] 'medical-jargon-google-easy' -> '26S proteasome'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2855  |  gem_id: gem-cochrane-simplification-train-2856  |  doi: 10.1002/14651858.CD011025.pub2
-
-Overall, we judged the quality of the evidence in this review for the main outcome of reduction in seizure frequency to be low due to unclear information in the published papers about how the studies were designed and unclear presentation of results. This review provides no information about the effect of TMS on quality of life. It is important that future studies are larger and measure important outcomes, such as the effect of TMS on reducing seizure frequency, improving quality of life, and any side-effects associated with TMS compared with other available treatments.

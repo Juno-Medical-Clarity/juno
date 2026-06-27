@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3220  |  gem_id: gem-cochrane-simplification-train-3221  |  doi: 10.1002/14651858.CD008314.pub3
-
-On 8 May 2013, we performed searches to look for clinical trials on the use of topiramate to treat neuropathic pain or fibromyalgia. We found four studies of reasonable quality that tested topiramate against placebo for a number of weeks. Almost all of the 1684 people in the studies had painful limbs because of damaged nerves caused by diabetes. Topiramate did not help the pain and was no different from placebo except in causing more side-effects, which made many more people withdraw from the studies early. About 3 people in 10 withdrew because of side-effects with topiramate compared with 1 in 10 with placebo. Topiramate has not been shown to work as a pain medicine in diabetic neuropathy.

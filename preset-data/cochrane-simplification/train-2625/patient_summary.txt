@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2625  |  gem_id: gem-cochrane-simplification-train-2626  |  doi: 10.1002/14651858.CD003478.pub5
-
-Study characteristics: Four trials, in which a total of 1800 infants participated, examined whether giving VLBW infants a drug to prevent fungi growing on the skin or in the gut reduced the risk of bloodstream or other severe infection. The trials used one of two commonly available drugs (nystatin or miconazole) and compared these with either a placebo ("dummy" drug) or no drug. These trials, however, had some design weaknesses that make it less certain that their results can be taken at face value. Key results: The overall analysis suggested that this treatment might reduce severe infection rates in VLBW infants but there was no evidence of a reduction in the risk of dying. Conclusions: Larger and higher quality trials are needed to resolve this uncertainty.

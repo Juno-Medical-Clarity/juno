@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1255  |  gem_id: gem-cochrane-simplification-train-1256  |  doi: 10.1002/14651858.CD002764.pub2
-
-We first looked at the evidence in 2000 and this is an update of the original review. In total we found 43 studies examining 4265 people. We looked at adults with advanced gynaecological or gastrointestinal cancer who developed bowel obstruction and had either surgical or non-surgical treatment. The studies we found were of low quality and measured success and benefit in different ways. It was therefore not possible to compare these studies and conclude whether surgery was of benefit or harm in this situation. Research in this area is problematic and the type of study needed to answer this question would be very difficult to conduct.

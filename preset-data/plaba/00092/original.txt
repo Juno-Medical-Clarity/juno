@@ -1,8 +1,0 @@
-Background and objective: despite the introduction of newer antiemetics in the prevention of postoperative nausea and vomiting (PONV), perphenazine is recommended in current guidelines, as the concept of multimodal management of PONV in high-risk patients requires more than two drugs to be combined.
-The aim of this quantitative systematic review was to assess the efficacy and safety of perphenazine in the prophylaxis of PONV in adults and children.
-Results: eleven trials published between 1965 and 1999 including a total of 2081 participants fulfilled the inclusion criteria and were further analysed.
-In children, perphenazine 0.07 mg kg was effective in preventing vomiting (RR, 0.31; 95% CI, 0.18-0.54), whereas in adults, a dose of about 5 mg was effective for the prevention of PONV (RR, 0.50; 95% CI, 0.37-0.67).
-When compared with established newer drugs, for example, ondansetron, dexamethasone or droperidol, no significant differences were observed in the pooled analysis with limited data.
-Reporting of adverse events was poor.
-Transient sedation was reported in three eligible trials (RR, 0.9; 95% CI, 0.40-2.05).
-Conclusion: there is evidence that perphenazine is effective in the prevention of PONV in children and adults without serious adverse effects compared with placebo.

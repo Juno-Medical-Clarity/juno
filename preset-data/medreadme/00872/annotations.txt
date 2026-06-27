@@ -1,9 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [1:3] 'general-complex' -> 'longitudinal study'
-  [6:7] 'abbr-medical' -> 'ASD'
-  [8:9] 'abbr-medical' -> 'ADHD'

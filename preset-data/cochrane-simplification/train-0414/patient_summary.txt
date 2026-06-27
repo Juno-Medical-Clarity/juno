@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0414  |  gem_id: gem-cochrane-simplification-train-415  |  doi: 10.1002/14651858.CD010598.pub2
-
-We searched for randomised controlled trials comparing zuclopenthixol with placebo in 2013. We found only two studies with 65 participants which could be included in this review. Overall the quality of these studies was low, with small numbers of people and significant bias. The studies were old, from 1968 and 1972, and would be unlikely to pass modern peer review standards. Only short-term information and data could be found, and only about zuclopenthixol dihydrochloride. The information is very limited but suggests that zuclopenthixol can lead to improvement in global state in comparison with placebo. However, there is also increased risk of side effects such as sedation,and tiredness. Given the low quality of information and age of the two studies, further research is needed, particularly further research on zuclopenthixol compared to newer and more recent antipsychotic drugs.

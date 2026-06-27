@@ -1,5 +1,0 @@
-pmid:        35051204
-question:    60
-adaptation:  adaptation2
-title:       Diagnostic accuracy of three commercially available one step RT-PCR assays for the detection of SARS-CoV-2 in resource limited settings
-sentences:   15

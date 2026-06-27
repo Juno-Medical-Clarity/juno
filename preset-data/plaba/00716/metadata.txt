@@ -1,5 +1,0 @@
-pmid:        3146300
-question:    56
-adaptation:  adaptation2
-title:       A cluster of Pallister-Hall syndrome cases, (congenital hypothalamic hamartoblastoma syndrome)
-sentences:   12

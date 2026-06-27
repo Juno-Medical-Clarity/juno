@@ -1,5 +1,0 @@
-drug_focus: nicotine
-question_type: Side effects
-section_title: Symptoms
-source_url: https://medlineplus.gov/ency/article/000953.htm
-sample_id: 0548

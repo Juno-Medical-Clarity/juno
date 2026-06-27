@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [0:3] 'medical-jargon-google-easy' -> 'Assisted vaginal delivery'
-  [8:10] 'medical-jargon-google-easy' -> 'obstetric care'

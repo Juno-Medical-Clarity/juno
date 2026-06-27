@@ -1,5 +1,0 @@
-pmid:        34346246
-question:    36
-adaptation:  adaptation1
-title:       Comparison of mini-PCNL and retrograde intrarenal surgery in the treatment of kidney stone over 50 years old patients
-sentences:   13

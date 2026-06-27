@@ -1,1 +1,0 @@
-In this work we introduce an algorithm for automatic localization of the seizure onset zone (SOZ) in epileptic patients based on electrocorticography (ECoG) recordings.

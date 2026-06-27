@@ -1,7 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [4:6] 'general-complex' -> 'statistically significant'

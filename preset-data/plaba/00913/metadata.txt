@@ -1,5 +1,0 @@
-pmid:        30216683
-question:    75
-adaptation:  adaptation3
-title:       The association of HBG2, BCL11A, and HMIP polymorphisms with fetal hemoglobin and clinical phenotype in Iraqi Kurds with sickle cell disease
-sentences:   7

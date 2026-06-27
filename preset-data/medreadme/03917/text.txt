@@ -1,1 +1,0 @@
-We developed tools to report PSIs [patient incident reporting tool (PIRT)] and provide feedback on factors that might contribute to PSIs in the future [Patient Measure of Safety (PMOS)].

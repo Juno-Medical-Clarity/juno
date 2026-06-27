@@ -1,5 +1,0 @@
-pmid:        25586754
-question:    69
-adaptation:  adaptation3
-title:       Treatment of postnatal depression with cognitive behavioural therapy, sertraline and combination therapy: a randomised controlled trial
-sentences:   14

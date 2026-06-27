@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2558  |  gem_id: gem-cochrane-simplification-train-2559  |  doi: 10.1002/14651858.CD004335.pub2
-
-The efficacy of this approach is difficult to assess and there have been few research studies of good quality. The current review sought to review studies evaluating the success of community-based programmes specifically intended to reduce burn and scald injury in children. Only four studies were identified that met the inclusion criteria and two of these found a reduction in rates of burns and scalding. More high-quality research studies are needed in this area, therefore, to support the continued use of the community approach.

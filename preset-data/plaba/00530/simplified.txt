@@ -1,9 +1,0 @@
-Autosomal dominant polycystic kidney disease (ADPKD) is an inherited condition that causes multiple cysts (growths), usually in the liver, and is the leading genetic cause of kidney failure.
-Researchers have shown that slowing or stopping the gene miR-17~92 that is involved in cell growth and development is a possible new therapy to help people with ADPKD.
-However, miR-17~92 is a cluster of many cysts that influence microRNAs (miRNAs), which are RNA molecules that regulate genes and how genes make proteins. How these miRNA families contribute to the development and progression of ADPKD is unknown.
-In this study, researchers work to identify drugs that will focus on the miRNA.
-Researchers designed drugs called anti-miRs to individually stop or slow different types of miRNAs from functioning in a genetic model.
-Treatment with anti-miRs against the miR-17 family reduced cyst development, kidney-weight-to-body-weight ratio and size of the cyst.
-In contrast, treatment with anti-miRs against the miR-18, 19, or 25 families did not affect cyst growth.
-The anti-miR-17 treatment is associated with extending the lifespan of energy from certain cells, stopping or slowing cell growth often found in tumors, and stopping or slowing inflammation (redness and swelling from fighting an infection) associated with cysts.
-These results argue against functional cooperation between the various miRNA (miR-17~92) cluster families in promoting cyst growth, and instead point to the miR-17 family as the main therapeutic target for ADPKD.

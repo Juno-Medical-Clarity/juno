@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [20:22] 'medical-jargon-google-easy' -> 'endemic diseases'
-  [23:24] 'medical-jargon-google-easy' -> 'malaria'

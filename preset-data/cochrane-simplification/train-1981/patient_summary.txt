@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1981  |  gem_id: gem-cochrane-simplification-train-1982  |  doi: 10.1002/14651858.CD003099.pub2
-
-The review of three trials, involving 233 women, found there has not been enough research done to show the effects of castor oil on ripening the cervix or inducing labour or compare it to other methods of induction. The review found that all women who took castor oil by mouth felt nauseous. More research is needed into the effects of castor oil to induce labour.

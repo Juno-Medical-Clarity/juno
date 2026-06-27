@@ -1,9 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [5:8] 'general-complex' -> 'parallel - group'
-  [9:10] 'general-complex' -> 'pragmatic'
-  [12:15] 'general-complex' -> 'randomised controlled trial'

@@ -1,5 +1,0 @@
-pmid:        27386721
-question:    7
-adaptation:  adaptation1
-title:       Common Questions About Streptococcal Pharyngitis
-sentences:   7

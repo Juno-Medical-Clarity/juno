@@ -1,5 +1,0 @@
-pmid:        25296661
-question:    7
-adaptation:  adaptation2
-title:       Randomised, double-blind, placebo-controlled studies on flurbiprofen 8.75 mg lozenges in patients with/without group A or C streptococcal throat infection, with an assessment of clinicians' prediction of 'strep throat'
-sentences:   15

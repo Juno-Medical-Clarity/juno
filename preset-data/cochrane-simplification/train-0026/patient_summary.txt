@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0026  |  gem_id: gem-cochrane-simplification-train-27  |  doi: 10.1002/14651858.CD011935.pub2
-
-The content of this review is current to September 2019. We included only studies where chance determined what treatment people in the study would get. We found 12 studies including 2932 people who matched our question. We found that BCG may lead to similar risk of dying from any cause over time (low-quality evidence), but may increase the risk of serious unwanted effects (low-quality evidence), although it is possible that it does not make a difference. BCG may reduce the risk that the tumour comes back over time (low-quality evidence), although it is possible that it does not make a difference. BCG may have little or no effect on the risk that the tumour gets worse over time (low-quality evidence). We found no data on quality of life. The quality of the evidence was consistently rated as low, meaning that our confidence is limited, and future research may change these findings.

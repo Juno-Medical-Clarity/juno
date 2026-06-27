@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1780  |  gem_id: gem-cochrane-simplification-train-1781  |  doi: 10.1002/14651858.CD010316.pub3
-
-We searched for clinical studies that compared starting treatment of hypertension in adults with monotherapy versus starting with combination therapy. Studies had to report results in terms of deaths, events due to diseases of the heart or the vessels (heart attack, stroke, or heart failure), deaths due to diseases of the heart or the vessels, or any health-related serious side effects. We only selected studies with 50 or more people per group and that lasted at least 12 months. The evidence is current to April 2019. In this update we included one new study, for a total of four studies in the review involving 349 people treated with combination therapy and 419 treated with monotherapy. However, data were insufficient to answer our review question. There is a need for more and larger studies that compare monotherapy with combination therapy as the initial treatment of hypertension.

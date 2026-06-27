@@ -1,5 +1,0 @@
-pmid:        34619975
-question:    48
-adaptation:  adaptation1
-title:       Redox homeostasis involvement in the pharmacological effects of metformin in systemic lupus erythematosus
-sentences:   10

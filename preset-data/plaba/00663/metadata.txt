@@ -1,5 +1,0 @@
-pmid:        25482141
-question:    51
-adaptation:  adaptation1
-title:       Obesity and youth diabetes: distinguishing characteristics between islet cell antibody positive vs. negative patients over time
-sentences:   11

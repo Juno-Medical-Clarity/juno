@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1197  |  gem_id: gem-cochrane-simplification-train-1198  |  doi: 10.1002/14651858.CD004346.pub4
-
-The Cochrane Oral Health Group carried out this review of existing studies, which includes evidence current up to 27 September 2013. This review includes one published study in which a total of 185 children and young adults were randomly chosen to have a clinical examination every 12 months or every 24 months. The study measured what effects the two different check-up times had on tooth decay and total time used per person (which could then be used to measure costs to the healthcare system). The limited results did not enable a conclusion to be made about whether or not extending the time to the next dental check-up can reduce tooth decay or costs. The evidence presented is of very low quality due to there only being one study and issues with the way it was conducted.

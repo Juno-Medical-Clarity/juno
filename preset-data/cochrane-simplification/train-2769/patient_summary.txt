@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2769  |  gem_id: gem-cochrane-simplification-train-2770  |  doi: 10.1002/14651858.CD001461
-
-Azathioprine is a drug that suppresses the immune system. This review includes three trials with a total of 81 patients. Forty patients were given azathioprine and forty-one were given placebo. Patients taking azathioprine had lower tender joint scores when compared to patients taking placebo. Significantly more patients in the azathioprine group withdrew from the studies due to adverse reactions compared to patients in the placebo group. This evidence is based on a small number of patients in older trials. These findings suggest that several other drugs should be used before considering azathioprine for a patient with rheumatoid arthritis.

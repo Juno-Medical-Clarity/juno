@@ -1,8 +1,0 @@
-Hypertension, a major risk factor for heart disease and stroke, is the world's leading cause of preventable, premature death.
-A common polymorphism (677C→T) in the gene encoding the folate metabolizing enzyme methylenetetrahydrofolate reductase (MTHFR) is associated with increased blood pressure, and there is accumulating evidence demonstrating that this phenotype can be modulated, specifically in individuals with the MTHFR 677TT genotype, by the B-vitamin riboflavin, an essential co-factor for MTHFR.
-The underlying mechanism that links this polymorphism, and the related gene-nutrient interaction, with hypertension is currently unknown.
-Previous research has shown that 5-methyltetrahydrofolate, the product of the reaction catalysed by MTHFR, appears to be a positive allosteric modulator of endothelial nitric oxide synthase (eNOS) and may thus increase the production of nitric oxide, a potent vasodilator.
-Blood pressure follows a circadian pattern, peaking shortly after wakening and falling during the night, a phenomenon known as 'dipping'.
-Any deviation from this pattern, which can only be identified using ambulatory blood pressure monitoring (ABPM), has been associated with increased cardiovascular disease (CVD) risk.
-This review will consider the evidence linking this polymorphism and novel gene-nutrient interaction with hypertension and the potential mechanisms that might be involved.
-The role of ABPM in B-vitamin research and in nutrition research generally will also be reviewed.

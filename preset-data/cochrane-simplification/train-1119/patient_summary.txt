@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1119  |  gem_id: gem-cochrane-simplification-train-1120  |  doi: 10.1002/14651858.CD006006.pub2
-
-This review summarised and meta-analysed the evidence from randomised clinical trials on the effect of prostaglandins for adult liver transplanted patients. We found ten trials randomising 652 patients. Evidence from these trials is inconclusive on the role of prostaglandins regarding outcomes such as death or liver re-transplantation. The risk of acute kidney failure requiring dialysis may be reduced by two thirds if a liver transplant patient receives prostaglandins, although the level of evidence is only moderate due to risks of systematic errors (bias) and random errors (play of chance). No severe adverse events are reported. Therefore, further randomised trials with low risk of bias and sufficient sample sizes are still needed to establish whether prostaglandins should be administered for liver transplanted patients.

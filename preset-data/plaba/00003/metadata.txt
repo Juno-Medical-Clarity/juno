@@ -1,5 +1,0 @@
-pmid:        29857264
-question:    1
-adaptation:  adaptation2
-title:       Muscle cramps: A comparison of the two-leading hypothesis
-sentences:   11

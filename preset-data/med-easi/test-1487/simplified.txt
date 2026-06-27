@@ -1,1 +1,0 @@
-The reverse rate k-1 was found to increase by a factor of 53 going from cyclohexane to methanol, while the equilibrium constant Keq decreased by a factor of 140.

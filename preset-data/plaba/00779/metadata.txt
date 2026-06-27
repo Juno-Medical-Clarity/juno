@@ -1,5 +1,0 @@
-pmid:        15507061
-question:    62
-adaptation:  adaptation2
-title:       Inappropriate medication administration to the acutely ill elderly: a nationwide emergency department study, 1992-2000
-sentences:   16

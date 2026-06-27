@@ -1,5 +1,0 @@
-pmid:        17679728
-question:    63
-adaptation:  adaptation2
-title:       A phase II placebo-controlled trial of neoadjuvant anastrozole alone or with gefitinib in early breast cancer
-sentences:   10

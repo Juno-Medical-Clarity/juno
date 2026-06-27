@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0351  |  gem_id: gem-cochrane-simplification-train-352  |  doi: 10.1002/14651858.CD004329.pub2
-
-Eight trials (1753 patients) met the criteria for inclusion in this review. The addition of chemotherapy to standard radiotherapy provides a small but significant benefit in patients with nasopharyngeal cancer, especially when chemotherapy is administered at the same time as radiotherapy. The role of chemotherapy given before or after the radiotherapy is more questionable.

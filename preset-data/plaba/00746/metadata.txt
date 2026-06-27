@@ -1,5 +1,0 @@
-pmid:        35126395
-question:    59
-adaptation:  adaptation2
-title:       Kinetics of the Antibody Response to Boostering With Three Different Vaccines Against SARS-CoV-2
-sentences:   11

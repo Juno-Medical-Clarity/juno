@@ -1,5 +1,0 @@
-drug_focus: Benazepril
-question_type: Side effects
-section_title: WARNINGS AND PRECAUTIONS > Hepatitis and Hepatic Failure
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5cb15b9d-1c45-4491-bfcc-a902a491b288#section-5.6
-sample_id: 0156

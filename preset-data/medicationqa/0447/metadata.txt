@@ -1,5 +1,0 @@
-drug_focus: Singulair
-question_type: Indication
-section_title: INDICATIONS AND USAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=10cd5ca5-6f8b-417c-af11-a2054a2dde34
-sample_id: 0447

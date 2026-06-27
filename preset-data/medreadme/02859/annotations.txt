@@ -1,9 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 5.3
-split:       dev
-
-jargon_spans:
-  [6:8] 'medical-jargon-google-hard' -> 'hunchback gene'
-  [16:20] 'medical-jargon-google-hard' -> 'shallow maternal Bicoid gradient'
-  [26:29] 'medical-jargon-google-hard' -> 'Hunchback protein pattern'

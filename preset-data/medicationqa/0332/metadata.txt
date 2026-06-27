@@ -1,5 +1,0 @@
-drug_focus: testosterone injection
-question_type: Information
-section_title: NA
-source_url: https://dailymed.nlm.nih.gov/dailymed/search.cfm?adv=1&labeltype=all&pagesize=20&page=1&query=%28testosterone+*+injection%29+
-sample_id: 0332

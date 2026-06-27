@@ -1,5 +1,0 @@
-pmid:        25251231
-question:    6
-adaptation:  adaptation2
-title:       Thyroiditis: an integrated approach
-sentences:   12

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2872  |  gem_id: gem-cochrane-simplification-train-2873  |  doi: 10.1002/14651858.CD000438
-
-This review of the evidence from one randomised controlled trial suggests there might be less short-term lung injury from high frequency oscillatory ventilation. However, more babies in this group developed haemorrhage in and around the fluid spaces in the brain (cerebral ventricles) and this harm might outweigh any benefit. More information is needed to clarify the balance between benefits and harms of high frequency oscillatory ventilation instead of conventional positive pressure ventilation for preterm infants with severe lung disease.

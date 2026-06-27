@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Menopausal'
-  [5:8] 'medical-jargon-google-easy' -> 'quality of life'
-  [10:11] 'medical-jargon-google-easy' -> 'menopause'

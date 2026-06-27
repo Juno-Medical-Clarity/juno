@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0399  |  gem_id: gem-cochrane-simplification-validation-400  |  doi: 10.1002/14651858.CD006341.pub2
-
-The review authors searched the literature for treatment studies of apathy, or a component of apathy, in people who have had a traumatic brain injury. One randomised controlled trial was found which examined the use of cranial electrotherapy stimulation for inertia, which is a component of apathy. Evidence for the effectiveness of this treatment is particularly restricted by the small number of participants and the lack of statistical analyses to demonstrate that the cranial electrotherapy stimulation treatment was more successful than sham or no treatment. More methodologically rigorous studies need to be conducted to investigate different methods of effectively treating apathy in people with traumatic brain injury.

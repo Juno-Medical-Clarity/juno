@@ -1,5 +1,0 @@
-pmid:        23495677
-question:    55
-adaptation:  adaptation1
-title:       The effect of phosphatidylserine administration on memory and symptoms of attention-deficit hyperactivity disorder: a randomised, double-blind, placebo-controlled clinical trial
-sentences:   9

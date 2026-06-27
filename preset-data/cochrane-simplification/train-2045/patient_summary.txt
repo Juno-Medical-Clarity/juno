@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2045  |  gem_id: gem-cochrane-simplification-train-2046  |  doi: 10.1002/14651858.CD003435.pub2
-
-Results from recent clinical trials showed that surgery reduced the risk of death. However, survivors were left with moderate to severe disability requiring help in their daily life activities. These results only apply to people 60 years of age or younger.

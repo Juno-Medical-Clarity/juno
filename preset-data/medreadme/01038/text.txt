@@ -1,1 +1,0 @@
-Using experimental and computational tools of structural biology, we further define how the protein components of this regulatory pathway interact at the atomic scale.

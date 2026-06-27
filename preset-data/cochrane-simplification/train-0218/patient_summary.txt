@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0218  |  gem_id: gem-cochrane-simplification-train-219  |  doi: 10.1002/14651858.CD008207.pub3
-
-We included 11 trials involving 808 participants in our review. The methodological quality of the included studies was variable and the quality of the evidence was low because the outcomes of interest were only reported by one or two studies. Sensitive methods such as venography or sonography were not always used to diagnose DVT and the CPM was applied differently across studies, varying in range of motion, duration of CPM per day and the number of days after the surgery. The incidence of DVT or VTE was not clearly different in the CPM group compared with the control group of participants. This review did not find enough evidence from randomised controlled trials to conclude that CPM reduces VTE.

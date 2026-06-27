@@ -1,7 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [9:10] 'medical-jargon-google-easy' -> 'cortisol'

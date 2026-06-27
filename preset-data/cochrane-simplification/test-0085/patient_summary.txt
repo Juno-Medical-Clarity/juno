@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0085  |  gem_id: gem-cochrane-simplification-test-86  |  doi: 10.1002/14651858.CD004180.pub2
-
-Nine studies were found and analysed to determine whether telephone consultation was safe and effective. In general, at least half of the calls were handled by telephone only (without the need for face-to-face visits). It was found that telephone consultation appears to decrease the number of immediate visits to doctors and does not appear to increase visits to emergency departments. It is still unclear though, whether it is just delaying visits to a later time. Telephone consultation also appears to be safe and people were just as satisfied using the telephone as going to see someone face-to-face. There are still questions about its effectiveness and more research into the use, cost, safety and satisfaction of telephone consultation is needed.

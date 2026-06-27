@@ -1,5 +1,0 @@
-Since December 2019, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has infected over four million people worldwide.
-There are multiple reports of prolonged viral shedding in people infected with SARS-CoV-2 but the presence of viral RNA on a test does not necessarily correlate with infectivity.
-The duration of quarantine required after clinical recovery to definitively prevent transmission is therefore uncertain.
-In addition, asymptomatic and presymptomatic transmission may occur, and infectivity may be highest early after onset of symptoms, meaning that contact tracing, isolation of exposed individuals and social distancing are essential public health measures to prevent further spread.
-This review aimed to summarise the evidence around viral shedding vs infectivity of SARS-CoV-2.

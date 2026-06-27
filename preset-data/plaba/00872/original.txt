@@ -1,8 +1,0 @@
-This review focuses on the rheumatological features of achondroplasia, which is the most common skeletal dysplasia and the most frequent cause of short-limbed dwarfism.
-It is inherited in an autosomal dominant manner but results in the majority of cases of de novo mutations.
-The disease is related to a mutation in the fibroblast growth factor receptor-3 (FGFR3) gene encoding one member of the FGFR subfamily of tyrosine kinase receptors, which results in constitutive activation of the receptor.
-Biochemical studies of FGFR3 combined with experiments in knock-out mice have demonstrated that FGFR3 is a negative regulator of chondrocytes proliferation and differentiation in growth plate.
-This mutation induces a disturbance of endochondral bone formation.
-The diagnosis of achondroplasia is based on typical clinical and radiological features including short stature, macrocephaly with frontal bossing, midface hypoplasia and rhizomelic shortening of the limbs.
-The most common rheumatological complications of achondroplasia are medullar and radicular compressions due to spinal stenosis and deformities of the lower limbs.
-Current treatment and future therapies are discussed.

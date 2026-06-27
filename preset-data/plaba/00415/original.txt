@@ -1,9 +1,0 @@
-Objective: We evaluated the interaction of serum folate and vitamin B12 with methylenetetrahydrofolate reductase (MTHFR) C677T genotypes on the risk of first ischemic stroke and on the efficacy of folic acid treatment in prevention of first ischemic stroke.
-Methods: A total of 20,702 hypertensive adults were randomized to a double-blind treatment of daily enalapril 10 mg and folic acid 0.8 mg or enalapril 10 mg alone.
-Participants were followed up every 3 months.
-Results: Median values of folate and B12 concentrations at baseline were 8.1 ng/mL and 280.2 pmol/L, respectively.
-Over a median of 4.5 years, among those not receiving folic acid, participants with baseline serum B12 or serum folate above the median had a significantly lower risk of first ischemic stroke (hazard ratio [HR], 0.74; 95% confidence interval [CI], 0.57-0.96), especially in those with MTHFR 677 CC genotype (wild-type) (HR, 0.49; 95% CI, 0.31-0.78).
-Folic acid treatment significantly reduced the risk of first ischemic stroke in participants with both folate and B12 below the median (2.3% in enalapril-folic acid group vs 3.6% in enalapril-only group; HR, 0.62; 95% CI, 0.46-0.86), particularly in MTHFR 677 CC carriers (1.6% vs 4.9%; HR, 0.24; 95% CI, 0.11-0.55).
-However, TT homozygotes responded better with both folate and B12 levels above the median (HR, 0.28; 95% CI, 0.10-0.75).
-Conclusions: The risk of first ischemic stroke was significantly higher in hypertensive patients with low levels of both folate and B12.
-Effect of folic acid treatment was greatest in patients with low folate and B12 with the CC genotype, and with high folate and B12 with the TT genotype.

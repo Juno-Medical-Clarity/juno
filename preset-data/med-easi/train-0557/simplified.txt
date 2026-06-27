@@ -1,1 +1,0 @@
-Before there were computational random number generators, generating large amounts of sufficiently random numbers ( important in statistics ) required a lot of work.

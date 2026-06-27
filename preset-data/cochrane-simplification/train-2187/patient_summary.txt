@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2187  |  gem_id: gem-cochrane-simplification-train-2188  |  doi: 10.1002/14651858.CD003892.pub3
-
-Fifteen studies which lasted between 4 to 24 weeks including a total of 1219 participants were analysed. Trials of chitosan to date have varied considerably in terms of quality. The review suggests that chitosan may have a small effect on body weight but results from high quality trials indicate that this effect is likely to be minimal.

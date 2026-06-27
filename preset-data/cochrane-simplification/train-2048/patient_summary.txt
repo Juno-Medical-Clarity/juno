@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2048  |  gem_id: gem-cochrane-simplification-train-2049  |  doi: 10.1002/14651858.CD001099.pub3
-
-This review found some evidence from five randomized controlled trials, involving a total of 687 patients that suggested local infusion of a drug into the affected artery is more effective than infusion into a vein, and is also associated with a lower risk of unwanted bleeding. No particular drug was more effective in preventing limb loss or death than another. The drugs investigated were streptokinase, urokinase, recombinant tissue plasminogen activator and pro-urokinase. More research is needed to confirm these findings. All of the findings of this review came from small studies that involved people with peripheral arterial ischaemia of differing severity.

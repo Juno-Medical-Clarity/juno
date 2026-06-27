@@ -1,5 +1,0 @@
-pmid:        29381251
-question:    6
-adaptation:  adaptation1
-title:       Current evidence for the treatment of hypothyroidism with levothyroxine/levotriiodothyronine combination therapy versus levothyroxine monotherapy
-sentences:   11

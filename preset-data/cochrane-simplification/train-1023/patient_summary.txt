@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1023  |  gem_id: gem-cochrane-simplification-train-1024  |  doi: 10.1002/14651858.CD005239.pub2
-
-This review identified three randomised controlled trials in the area of psychological treatments for anxiety after TBI. Some evidence was found for the effectiveness of the following interventions: cognitive behavioural therapy (CBT) for treatment of acute stress disorder following mild TBI, and combining CBT and neurorehabilitation for treatment of general anxiety symptoms in people with mild to moderate TBI. The ability to make strong conclusions on the effectiveness of these approaches is limited by the small number of trials available for pooling of data, especially trials with similar conditions and participants.

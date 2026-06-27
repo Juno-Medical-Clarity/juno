@@ -1,5 +1,0 @@
-drug_focus: meclizine
-question_type: Alternatives
-section_title: What Is Meclizine (Antivert)?
-source_url: https://www.everydayhealth.com/drugs/meclizine
-sample_id: 0112

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0092  |  gem_id: gem-cochrane-simplification-train-93  |  doi: 10.1002/14651858.CD005381.pub4
-
-In this Cochrane Review, 12 trials including 754 participants met our inclusion criteria. Eight of the 12 trials reported that the aerobic exercise interventions resulted in increased fitness of the trained group. However, when we combined results across the trials, we did not find any significant benefits of aerobic exercise or increased fitness on any aspect of cognition. Many included trials had problems with their methods or reporting which reduced our confidence in the findings. We did not find evidence that aerobic exercise or increased fitness improves cognitive function in older people. However, it remains possible that it may be helpful for particular subgroups of people, or that more intense exercise programmes could be beneficial. Therefore further research in this area is necessary.

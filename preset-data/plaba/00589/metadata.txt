@@ -1,5 +1,0 @@
-pmid:        31241491
-question:    45
-adaptation:  adaptation2
-title:       Topical Nifedipine for the Treatment of Pressure Ulcer: A Randomized, Placebo-Controlled Clinical Trial
-sentences:   12

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2649  |  gem_id: gem-cochrane-simplification-train-2650  |  doi: 10.1002/14651858.CD004782.pub2
-
-Although we included 17 trials, involving 3212 patients, in this review, the risk of bias was so high that the evidence did not support using any Chinese herbal preparation(s) for the common cold. Well-designed clinical trials are required.

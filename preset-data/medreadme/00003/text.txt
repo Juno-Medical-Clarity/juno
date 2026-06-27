@@ -1,1 +1,0 @@
-Here, we analyze 13 years of malaria surveillance data, identifying key correlates of time lags between clinical cases occurring and being added to the central data system.

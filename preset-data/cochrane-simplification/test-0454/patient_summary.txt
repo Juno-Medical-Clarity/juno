@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0454  |  gem_id: gem-cochrane-simplification-test-455  |  doi: 10.1002/14651858.CD003249.pub3
-
-The review identified 10 randomised controlled trials involving 4052 women. Seven of these trials looked at a drug called misoprostol, which is a prostaglandin and so works by increasing muscle contractions. Overall, the trials suggest that misoprostol does not work as well as oxytocin infusion, and it has more side effects. However, oxytocin needs to be kept in a refrigerator, and so in settings where refrigeration and infusions are not readily available, misoprostol can be used. Other clinical trials looked into using other types of drugs or squeezing the main artery that supplies blood to the woman. The number of women included in these studies was too small for any useful conclusions regarding their effectiveness and safety.

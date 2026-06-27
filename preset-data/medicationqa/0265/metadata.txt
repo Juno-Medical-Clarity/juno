@@ -1,5 +1,0 @@
-drug_focus: insulin
-question_type: Usage
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3a1e73a2-3009-40d0-876c-b4cb2be56fc5
-sample_id: 0265

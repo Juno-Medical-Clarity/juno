@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [12:13] 'medical-name-entity' -> 'NHS'
-  [32:33] 'abbr-medical' -> 'TB'

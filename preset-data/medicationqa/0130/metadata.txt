@@ -1,5 +1,0 @@
-drug_focus: Cobalamin
-question_type: Comparison
-section_title: Background
-source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3874775/
-sample_id: 0130

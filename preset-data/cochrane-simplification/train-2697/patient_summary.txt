@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2697  |  gem_id: gem-cochrane-simplification-train-2698  |  doi: 10.1002/14651858.CD005233.pub3
-
-Eight trials (468 participants) are included in this review. Data analysis did not demonstrate any significant effect in the subjective loudness of tinnitus. We found, however, a significant improvement in the depression associated with tinnitus and quality of life (decrease of global tinnitus severity), suggesting that cognitive behavioural therapy has a positive effect on the way in which people cope with tinnitus. Further research should use a limited number of validated questionnaires in a more consistent way and with a longer follow up to assess the long-term effect of cognitive behavioural therapy in patients with tinnitus.

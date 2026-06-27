@@ -1,8 +1,0 @@
-Currently much attention has been given to the neurotoxicity of zinc, yet little is known about the influence of the counterions present.
-Therefore, we investigated the influence of different Zn(2+)-salts (concentrations range 0.05-0.3 mM) on cell viability, ATP and glutathione concentration and caspase activation in differentiated PC12 cells as a model for neuronal cells.
-Generally, at concentrations of 0.05 mM most Zn(2+)-salts were not cytotoxic except for zinc-citrate.
-At concentrations between 0.1 and 0.3 mM Zn(2+) a significant decrease in GSH and ATP levels preceded cell death induced by all salts, except of zinc-histidinate.
-Zinc-citrate and zinc-sulphate turned out to be the most toxic salts particularly at low concentrations.
-Analyses of caspase 3/7 activity showed that dependent on the concentration and the type of the salt used cell death may show more or less signs of both, necrosis and apoptosis.
-Interestingly, the uptake of Zn(2+) from zinc-sulphate and zinc-citrate was significantly higher than that of other salts, implicating a correlation between uptake and toxicity.
-In conclusion, Zn(2+)-salts could be divided into three categories with high (zinc-citrate, zinc-sulphate), moderate (zinc-orotate, zinc-acetate, zinc-chloride(,) zinc-gluconate) and low cytotoxicity (zinc-histidinate).

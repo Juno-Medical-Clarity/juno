@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1081  |  gem_id: gem-cochrane-simplification-train-1082  |  doi: 10.1002/14651858.CD004099.pub2
-
-This review asked the question whether there are any benefits or dangers of using this type of care. We found only data of limited quality and or applicability, so no clear answers are possible. The seven studies we looked at suggested that home management of children newly diagnosed with type 1 diabetes does not lead to any disadvantages in terms of blood glucose, acute diabetic complications and hospitalisations, psychological variables and behaviour, or total costs. This would be particularly relevant for children not acutely ill, but also for children who require a short period of initial treatment in the hospital.

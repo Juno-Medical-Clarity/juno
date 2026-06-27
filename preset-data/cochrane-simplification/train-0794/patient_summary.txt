@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0794  |  gem_id: gem-cochrane-simplification-train-795  |  doi: 10.1002/14651858.CD009964.pub2
-
-Only one trial evaluated rectal artesunate as pre-referral treatment. In the African sites only, children aged 6 to 72 months were included in the trial; while in the Asian trial site, older children and adults were included. Young children in the African and Asian trial sites (aged 6 to 72 months) had fewer deaths with rectal artesunate than with placebo (moderate quality evidence). However, in Asia among older children and adults, there were more deaths in those that received rectal artesunate (low quality evidence). In the African sites, 56% of children took longer than six hours to reach hospital whereas over 90% of people in the Asian site reached hospital within six hours. The unexpected finding of more deaths with rectal artesunate in older children and adults should be taken into account when forming national and local policies about pre-referral treatment.

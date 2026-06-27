@@ -1,5 +1,0 @@
-pmid:        30377698
-question:    5
-adaptation:  adaptation3
-title:       Is low dose radiotherapy an effective treatment for Baker's cyst?
-sentences:   13

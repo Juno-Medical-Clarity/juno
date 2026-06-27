@@ -1,6 +1,0 @@
-The normal sleep-wake cycle is characterized by diurnal variations in blood pressure, heart rate, and cardiac events.
-Sleep apnea disrupts the normal sleep-heart interaction, and the pathophysiology varies for obstructive sleep apnea (OSA) and central sleep apnea (CSA).
-Associations exist between sleep-disordered breathing (which encompasses both OSA and CSA) and heart failure, atrial fibrillation, stroke, coronary artery disease, and cardiovascular mortality.
-Treatment options include positive airway pressure as well as adaptive servo-ventilation and phrenic nerve stimulation for CSA.
-Treatment improves blood pressure, quality of life, and sleepiness, the last particularly in those at risk for cardiovascular disease.
-Results from clinical trials are not definitive in terms of hard cardiovascular outcomes.

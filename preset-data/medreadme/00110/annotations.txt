@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [3:6] 'medical-jargon-google-easy' -> 'Schistosoma mansoni infection'

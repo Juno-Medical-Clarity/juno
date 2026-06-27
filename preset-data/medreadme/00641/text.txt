@@ -1,1 +1,0 @@
-Biological network analysis in the two independent breast cancer cohorts showed that the disrupted genes were closely related to estrogen signaling and TP53 centered tumor suppressor network.

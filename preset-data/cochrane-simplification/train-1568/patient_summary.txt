@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1568  |  gem_id: gem-cochrane-simplification-train-1569  |  doi: 10.1002/14651858.CD002978.pub2
-
-The review of scientifically well conducted trials found that taking oral oestrogen or combined oestrogen and progestogen hormone replacement therapy greatly reduces the frequency and severity of these symptoms. This effect was significantly greater than the reduction of symptoms seen with placebo (dummy tablets) over time. No adverse effects were found but as the trials were only short term, more research is needed.

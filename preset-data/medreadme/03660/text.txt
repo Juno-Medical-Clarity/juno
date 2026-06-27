@@ -1,1 +1,0 @@
-One longstanding question is the extent to which proteins solve the search problem locally, by folding into sub-structures that are dictated primarily by local sequence.

@@ -1,6 +1,0 @@
-Circadian variation (a part of the natural, internal process that regulates the sleep–wake cycle) in atrial fibrillation (a fluttery and irregular heartbeat that can lead to blood clots or stroke) frequency is explored in this paper by using recent advances in signal processing, which monitors the heart's electrical activity.
-When the atrial fibrillation frequency is estimated and tracked by signal processing tools, the information is further reviewed to detect and describe the presence of circadian variation.
-The results show that the short-term variations in the atrial fibrillation frequency are greater than the variation that may be attributed to circadian.
-Circadian variation is found in 13 of 18 patients with long-standing and persistent (last longer than 7 days) atrial fibrillation.
-The highest atrial fibrillation frequency usually occurred during the afternoon, whereas the lowest usually occurred during late night.
-Circadian variation is present in most patients with long-standing persistent atrial fibrillation, though the short-term variation in the AF frequency is great and should be taken into account.

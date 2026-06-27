@@ -1,9 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [8:11] 'medical-jargon-google-hard' -> 'ubiquitination of MLST8'
-  [16:17] 'medical-jargon-google-hard' -> 'OTUD7B'
-  [21:24] 'medical-jargon-google-easy' -> 'IRS1 / 2'

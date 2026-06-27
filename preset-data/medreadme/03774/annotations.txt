@@ -1,7 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [26:29] 'medical-jargon-google-easy' -> 'Alzheimer ’s disease'

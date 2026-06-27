@@ -1,1 +1,0 @@
-A probability density function is most commonly associated with absolutely continuous univariate distributions.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3398  |  gem_id: gem-cochrane-simplification-train-3399  |  doi: 10.1002/14651858.CD004498.pub2
-
-Three clinical trials involving/completed by 113 babies were identified that compared double-lumen catheters to single-lumen catheters. None of the studies used triple-lumen catheters. All three trials found that use of a double-lumen catheter lowered the number of additional venous placements needed during the first week of life. The double-lumen catheters, however, clogged, leaked, and broke more often. In these studies, no significant difference was found in catheter placement difficulty and misplacement, catheter-related infections or blood clots, other serious complications, or rate of infant mortality. But the quality of studies was poor, and sample sizes were too small to draw valid conclusions about many complication rates. Available clinical trials at present do not provide a basis for recommending one catheter type over another in this setting.

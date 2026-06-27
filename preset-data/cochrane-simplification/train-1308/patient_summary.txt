@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1308  |  gem_id: gem-cochrane-simplification-train-1309  |  doi: 10.1002/14651858.CD011834
-
-This review looked at the effect of cutting down the proportion of energy from fat in our food on body weight and fatness in both adults and children who are not aiming to lose weight. The review found that cutting down on the proportion of fat in our food leads to a small but noticeable decrease in body weight, body mass index and waist circumference. This effect was found both in adults and children. The effect did not change over time.

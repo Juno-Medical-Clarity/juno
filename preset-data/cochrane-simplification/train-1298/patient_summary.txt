@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1298  |  gem_id: gem-cochrane-simplification-train-1299  |  doi: 10.1002/14651858.CD001435
-
-This review of trials did not find any reliable evidence for the treatment of TEN. The only trial available used thalidomide, but this trial did not show any benefit from treatment compared against placebo but highlighted increased chances of dying from the treatment. Thalidomide is not safe or effective for the skin condition toxic epidermal necrolysis, but there is not enough evidence to show which treatments are effective.

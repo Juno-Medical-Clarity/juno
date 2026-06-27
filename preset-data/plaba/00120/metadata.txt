@@ -1,5 +1,0 @@
-pmid:        28141914
-question:    10
-adaptation:  adaptation1
-title:       Exercise for hand osteoarthritis
-sentences:   7

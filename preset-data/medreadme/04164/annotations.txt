@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.7
-split:       test
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Pulmonary rehabilitation'
-  [3:6] 'medical-jargon-google-easy' -> 'interstitial lung disease'
-  [7:8] 'abbr-medical' -> 'ILD'

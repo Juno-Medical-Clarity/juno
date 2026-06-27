@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [3:6] 'medical-jargon-google-easy' -> 'coarse - grained'
-  [7:8] 'abbr-medical' -> 'CG'

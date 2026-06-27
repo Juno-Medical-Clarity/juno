@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2650  |  gem_id: gem-cochrane-simplification-train-2651  |  doi: 10.1002/14651858.CD006221
-
-In the USA there is growing public enthusiasm for DHEA supplementation as a means of retarding ageing and age-associated cognitive impairment but there is very little evidence from controlled trials. In two trials DHEA was associated with a deleterious effect on visual memory after a psychosocial stressor and quality of life measures, but there is inconsistent systematic evidence of adverse effects from DHEA. Longer-term randomized placebo controlled trials are needed for low and high doses.

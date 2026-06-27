@@ -1,5 +1,0 @@
-pmid:        33232783
-question:    14
-adaptation:  adaptation1
-title:       Putative roles of vitamin D in modulating immune response and immunopathology associated with COVID-19
-sentences:   2

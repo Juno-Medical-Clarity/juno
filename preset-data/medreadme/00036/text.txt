@@ -1,1 +1,0 @@
-Using azide-alkyne " click " reactions, we uncovered an apparent contradiction: drug-resistant cells incorporated relatively large quantities of AzC into their genomes and entered S-phase arrest, whereas drug-sensitive cells incorporated only small quantities of AzC.

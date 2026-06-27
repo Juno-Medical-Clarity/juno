@@ -1,5 +1,0 @@
-pmid:        1557731
-question:    17
-adaptation:  adaptation1
-title:       Management of obstructed airways
-sentences:   5

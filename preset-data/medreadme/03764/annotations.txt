@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Apolipoprotein E'
-  [3:4] 'medical-jargon-google-easy' -> 'apoE'
-  [19:20] 'medical-jargon-google-easy' -> 'astrocytes'

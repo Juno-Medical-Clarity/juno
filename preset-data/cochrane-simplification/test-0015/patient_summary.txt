@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0015  |  gem_id: gem-cochrane-simplification-test-16  |  doi: 10.1002/14651858.CD006145.pub3
-
-A number of studies have been carried out to investigate the effects of exercise both during and after treatment. The current review was carried out to evaluate the effect of physical exercise on fatigue related to cancer. Fifty-six studies, involving a total of 4068 participants, were included in this review. Results suggest that physical exercise such as aerobic walking and aerobic cycling can help to reduce fatigue both during and after treatment for cancer. The benefits of exercise on fatigue were observed specifically for people with breast cancer and prostate cancer.

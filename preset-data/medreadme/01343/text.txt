@@ -1,1 +1,0 @@
-Using a custom genotyping platform with 211, 155 genetic variants known as single nucleotide polymorphisms (SNPs), we genotyped 3, 881 women who had breast cancer and 4, 330 women without breast cancer, which represents the largest possible, international collection of BRCA2 mutation carriers.

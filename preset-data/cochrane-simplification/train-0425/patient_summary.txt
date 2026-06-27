@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0425  |  gem_id: gem-cochrane-simplification-train-426  |  doi: 10.1002/14651858.CD004449.pub4
-
-The review included two trials with 69 people (aged one to 55 years) with severe haemophilia with inhibitors. Both trials compared recombinant factor VIIa with activated prothrombin complex concentrate and people were selected for one treatment or the other randomly. We found two clinical trials comparing Novoseven®and FEIBA®. The trials did not show a difference in how well the two products worked and both were tolerated equally well with no clotting complications. We conclude that both recombinant factor VIIa and plasma-derived concentrates can be used to treat bleeds in people with haemophilia and inhibitors. There were some major problems with regards to the way both trials were designed, in relation to knowing which treatment group each person was in (both before the trial was started and during) and also how missing results were handled.

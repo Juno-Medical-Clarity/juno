@@ -1,5 +1,0 @@
-drug_focus: phenytoin
-question_type: Appearance
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5362ea50-38a4-48b4-a85b-d634c3d8b91a
-sample_id: 0309

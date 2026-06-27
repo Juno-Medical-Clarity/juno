@@ -1,1 +1,0 @@
-Although routine NHS data potentially include all patients, confounding limits their use for causal inference.

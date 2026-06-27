@@ -1,8 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        complex
-readability: 3.85
-split:       test
-
-jargon_spans:
-  [3:6] 'medical-jargon-google-easy' -> 'patient safety incidents'
-  [7:8] 'abbr-medical' -> 'PSIs'

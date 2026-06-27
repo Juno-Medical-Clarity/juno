@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0197  |  gem_id: gem-cochrane-simplification-validation-198  |  doi: 10.1002/14651858.CD001241.pub7
-
-We searched for clinical trials comparing slow versus faster rates of increase in the amount of milk fed to newborn infants who were very low birth weight. When performing searches updated in June 2017, we found 10 trials involving 3753 infants in total. Combined analysis of these trials did not show an effect of slow feeding on the risk of necrotising enterocolitis or death (moderate-quality evidence) but did suggest that infants fed more slowly might have higher risk of acquiring a severe infection than infants fed more quickly (low-quality evidence). Slow feeding does not appear to provide benefits and may cause some harms.

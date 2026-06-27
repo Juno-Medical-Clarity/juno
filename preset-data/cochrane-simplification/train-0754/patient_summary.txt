@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0754  |  gem_id: gem-cochrane-simplification-train-755  |  doi: 10.1002/14651858.CD004865.pub4
-
-A total of 262 infants born preterm have been enrolled in two studies of early versus late administration of EPO to prevent blood transfusions. There were no demonstrable benefits of early versus late administration of EPO with regards to reduction in the use of red blood cell transfusions, number of transfusions, the amount of red cells transfused or number of donor exposures per infant. However, the use of early EPO compared with late EPO administration increases the risk of retinopathy of prematurity, a serious complication in babies born before term. Currently, there is a lack of evidence that either treatment confers any substantial benefits with regard to any donor blood exposure, as many infants enrolled in both studies were exposed to donor blood prior to study entry, and early EPO increases the risk of retinopathy of prematurity. Neither early nor late administration of EPO is recommended.

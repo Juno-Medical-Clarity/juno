@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1368  |  gem_id: gem-cochrane-simplification-train-1369  |  doi: 10.1002/14651858.CD003982.pub2
-
-Two studies had deaths reported, comprising of four persons in the control group, and eight in the AZA group. These small numbers do not allow a statistical analysis.  Conflicting conclusions on potential risk of cancer in MS patients with long-term AZA treatment have been reported in eight published papers, not considered in the present review because they came from sources other than clinical trials. The presence of patients who developed cancer ( three in the AZA and 1 the placebo group) was reported in two out of five studies considered in this review. Numerous studies of AZA treated patient populations other than MS patients are also available. The whole data, however, does not show an increase in risk of malignancy from AZA. Possible long-term risks may be related to a treatment duration above ten years and cumulative doses above 600 g.

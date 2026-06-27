@@ -1,5 +1,0 @@
-pmid:        15584938
-question:    33
-adaptation:  adaptation1
-title:       Pharmacokinetics of gabapentin in paediatric patients with uncontrolled seizures
-sentences:   12

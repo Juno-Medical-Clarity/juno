@@ -1,5 +1,0 @@
-drug_focus: Lisinopril
-question_type: Availability
-section_title: Brand names
-source_url: https://medlineplus.gov/druginfo/meds/a692051.html
-sample_id: 0115

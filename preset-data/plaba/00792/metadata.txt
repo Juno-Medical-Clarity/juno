@@ -1,5 +1,0 @@
-pmid:        24197658
-question:    63
-adaptation:  adaptation2
-title:       Aromatase inhibitor therapy and hair loss among breast cancer survivors
-sentences:   9

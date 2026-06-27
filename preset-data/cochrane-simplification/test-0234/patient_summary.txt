@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0234  |  gem_id: gem-cochrane-simplification-test-235  |  doi: 10.1002/14651858.CD009803.pub2
-
-After reviewing the studies and their available data, we could not be certain that one approach had superiority over another, and we could not establish whether the two treatments had similar effects on outcomes. We found no adverse effects associated with either treatment. Currently, no definitive evidence allows us to conclude that chest compressions should be the initial therapy for patients with OHCA over immediate electric shock treatment. However, we believe that the amount and quality of research in this area currently are not sufficient to allow strong conclusions. To further our understanding of the efficacy of these two different strategies, further rigorous randomized controlled trials are required.

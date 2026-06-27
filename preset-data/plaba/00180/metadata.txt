@@ -1,5 +1,0 @@
-pmid:        34508086
-question:    14
-adaptation:  adaptation1
-title:       Metabolic requirements of NK cells during the acute response against retroviral infection
-sentences:   6

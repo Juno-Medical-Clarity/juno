@@ -1,5 +1,0 @@
-drug_focus: Simvastatin
-question_type: Overdose
-section_title: OVERDOSAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7ad38e3b-79a8-f4c1-0662-c24f3e897ac7
-sample_id: 0078

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3318  |  gem_id: gem-cochrane-simplification-train-3319  |  doi: 10.1002/14651858.CD006279.pub2
-
-Although this research reports that  positive gains have been reported from a case-based study of a child with dysarthria following ABI (specifically with traumatic brain injury), there are currently too few studies performed in this area to draw any conclusions about the efficacy of treatment for dysarthria in children and teenagers. This review therefore calls for Speech Language Pathologists/Speech Language Therapists (SLPs/SLTs) working in this area to perform studies of the natural history and treatment efficacy of this group.

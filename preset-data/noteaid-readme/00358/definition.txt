@@ -1,1 +1,0 @@
-Per kilogram per day - helps in figuring out the right amount of medicine or food based on weight each day.

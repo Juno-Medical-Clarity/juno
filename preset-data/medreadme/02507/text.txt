@@ -1,1 +1,0 @@
-In this study we integrated field data from an endemic city of Colombia into a simulation model to assess how natural variation in A. aegypti production and household human density influence dengue transmission.

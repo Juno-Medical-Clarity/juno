@@ -1,9 +1,0 @@
-source:      pnas
-side:        simple
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Brucella abortus'
-  [4:5] 'medical-jargon-google-easy' -> 'intracellular'
-  [5:7] 'medical-jargon-google-easy' -> 'bacterial pathogen'

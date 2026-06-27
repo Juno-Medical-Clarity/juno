@@ -1,5 +1,0 @@
-pmid:        33773413
-question:    60
-adaptation:  adaptation2
-title:       Impaired performance of SARS-CoV-2 antigen-detecting rapid diagnostic tests at elevated and low temperatures
-sentences:   12

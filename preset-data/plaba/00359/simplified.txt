@@ -1,8 +1,0 @@
-The global pandemic caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), a breathing-related viral illness, and its threat to humans have drawn worldwide attention.
-The immediate and long-term effects of SARS-CoV-2 on the nervous system present major public health challenges.
-Patients with SARS-CoV-2 have diverse symptoms of the brain and spinal cord.
-Exploring how coronavirus damages the nervous system is essential to reduce the long-term damage from COVID-19, or SARS-CoV-2 illness, to the nervous system.
-Despite rapid progress in describing SARS-CoV-2, the long-term effects of COVID-19 on the brain is unclear.
-Some ways SARS-CoV-2 may injure the brain and spinal cord are: 1) directly harming nerve cells, 2) activating the immune system and inflammatory molecules from full-body infection, 3) binding of the virus to a specific molecule, 4) damaged blood flow in the brain due to reduced oxygen and blood clotting, and 5) full-body inflammation leading to cognitive damage and harmful nervous system diseases.
-While we do not fully know how SARS-CoV-2 causes nerve injury, we hope to lay the groundwork by reviewing clinical symptoms, issues, and possible methods for nerve damage caused by SARS-CoV-2.
-This review will hopefully aid early identification and treatment of possible nerve-related consequences, which may improve patient recovery and prevent transmission.

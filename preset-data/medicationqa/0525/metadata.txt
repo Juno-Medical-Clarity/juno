@@ -1,5 +1,0 @@
-drug_focus: amlodipine
-question_type: Information
-section_title: why is this medication prescribed?
-source_url: https://medlineplus.gov/druginfo/meds/a692044.html
-sample_id: 0525

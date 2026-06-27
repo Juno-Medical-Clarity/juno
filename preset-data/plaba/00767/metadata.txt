@@ -1,5 +1,0 @@
-pmid:        20200254
-question:    61
-adaptation:  adaptation2
-title:       Zinc bioavailability and homeostasis
-sentences:   11

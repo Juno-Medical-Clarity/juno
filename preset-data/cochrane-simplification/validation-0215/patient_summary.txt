@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0215  |  gem_id: gem-cochrane-simplification-validation-216  |  doi: 10.1002/14651858.CD001924
-
-The review focuses on the effects of lubeluzole, an inhibitor of excitatory amino acids. The review of trials did not find any benefit of lubeluzole in humans either to prevent death after acute ischaemic stroke or to reduce disability from it. Moreover, lubeluzole may cause heart-conduction disorders.

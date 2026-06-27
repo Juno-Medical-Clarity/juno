@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0391  |  gem_id: gem-cochrane-simplification-test-392  |  doi: 10.1002/14651858.CD008678.pub2
-
-We compare the safety and accuracy of various modifications and included five randomised studies with 1049 women. For amniocentesis, studies evaluated drugs that relax the uterus (tocolytics), progesterone prophylaxis, or compared the difference in safety for different puncture sites. For CVS, one study included tocolysis prior to procedure and the other evaluated the role of continuous vacuum for aspiration of the placental tissue. None of these modifications had clinically important effects on procedure safety. Overall, we found no evidence of sufficient quality to change current clinical practice. Studies of high quality with adequate safety outcomes and power to detect important clinical differences would be clearly welcome.

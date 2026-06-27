@@ -1,8 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [15:17] 'medical-jargon-google-easy' -> 'Ebola virus'
-  [22:23] 'medical-jargon-google-easy' -> 'pathogens'

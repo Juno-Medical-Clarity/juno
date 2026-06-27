@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1533  |  gem_id: gem-cochrane-simplification-train-1534  |  doi: 10.1002/14651858.CD005214.pub2
-
-In summary, therefore, data from the trials included in this review indicate little difference between the effects of these methods, except that women on DMPA are more likely to experience cessation of vaginal bleeding during its use. There was inadequate data to detect differences in some non-menstrual clinical effects, and considering that this contraceptive method remains in use in some countries, further research is indicated.

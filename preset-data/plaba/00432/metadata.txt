@@ -1,5 +1,0 @@
-pmid:        8681309
-question:    33
-adaptation:  adaptation2
-title:       Gabapentin: pharmacokinetics, efficacy, and safety
-sentences:   9

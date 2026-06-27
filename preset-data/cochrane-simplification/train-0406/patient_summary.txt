@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0406  |  gem_id: gem-cochrane-simplification-train-407  |  doi: 10.1002/14651858.CD007705.pub2
-
-However, there have not been any systematic reviews evaluating the effectiveness of the TAP block in reducing pain after surgery. We have searched for research investigating the effectiveness of rectus sheath (a similar block to TAP) and TAP blocks in providing pain relief after abdominal surgery. We have included eight studies, with a total of 358 participants in this review, that show some limited evidence that TAP blocks improve pain relief after abdominal surgery. More research is indicated, comparing TAP blocks with other standard methods of pain relief such as, morphine medication, epidural analgesia and local anaesthetic injection into and around the surgical wound. There are many studies currently underway or awaiting publication which assess the effectiveness of the TAP block and compare it with other techniques. We intend to include these studies in an updated version of this review in the near future.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0340  |  gem_id: gem-cochrane-simplification-train-341  |  doi: 10.1002/14651858.CD003439.pub2
-
-There are no trials of the impact of tobacco advertising and promotional activities on people taking up smoking. However, there are studies following nonsmokers and their exposure to advertising (such as the number of tobacco advertisements in the magazines they read). The review found that in all these studies, nonsmoking adolescents who were more aware of or receptive to tobacco advertising were more likely to become smokers later.

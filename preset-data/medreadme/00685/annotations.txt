@@ -1,8 +1,0 @@
-source:      pnas
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [0:3] 'medical-jargon-google-hard' -> 'VNTR2 - 1'
-  [12:16] 'medical-jargon-google-easy' -> '42 - bp repeats'

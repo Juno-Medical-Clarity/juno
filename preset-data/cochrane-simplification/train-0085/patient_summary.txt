@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0085  |  gem_id: gem-cochrane-simplification-train-86  |  doi: 10.1002/14651858.CD006358.pub2
-
-This review aimed to assess whether additional monies provided to socially or economically disadvantaged families could affect children's health, well-being and educational attainment. Nine studies were identified that met inclusion criteria. There was tentative evidence of benefit in early language development, but given lack of effect on all other outcomes, authors conclude that the evidence did not show an effect on child outcomes in the short to medium term in response to direct financial benefits to families. In the context of the monetary value of interventions observed, and the conditions placed on receipt of benefits, authors conclude this is a statement of "no evidence of effect" rather than "evidence of no effect". Implications for research and practice are noted.

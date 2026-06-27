@@ -1,8 +1,0 @@
-Autosomal dominant polycystic kidney disease is an inherited disease that causes many cysts (growths) usually in the kidneys, and is an important cause of end-stage kidney disease, for which there is no proven therapy.
-Changes in the PKD1 gene (which creates an active kidney protein) are the main causes of this disease.
-The disease begins before birth and develops slowly, but it is not known whether the development and growth of cysts is an ongoing process during adult life.
-When the Pkd1 gene is not active in mice within 13 days after birth, this results in many cysts in the kidneys within 3 weeks. However, inactivation (turning off) of Pkd1 at day 14 or later results in cysts only after 5 months.
-Researchers find that cell growth and development is not higher in samples of cysts than in comparison groups. However, the sudden change of Pkd1 becoming inactive matched a stopping point of kidney growth that is not previously recognized and matched significant changes in how the gene functions.
-These findings suggest that the effects of inactivating the Pkd1 gene are like a switch that signals the end of the end-stage kidney process.
-These studies show that Pkd1 regulates changes in both developing kidneys and in adult kidneys, but the process of inactivation are defined by the stage of the organ's development.
-These results have important connections to the understanding of the disease and treatment approaches.

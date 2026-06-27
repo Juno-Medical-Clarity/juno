@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0086  |  gem_id: gem-cochrane-simplification-train-87  |  doi: 10.1002/14651858.CD012622.pub2
-
-Overall, we found 10 studies evaluating different non-medication treatments to treat chronic pain in persons with MS. The treatments evaluated included: transcutaneous electrical nerve stimulation, transcranial direct stimulation, transcranial random noise stimulation, reflexology, psychotherapy and hydrotherapy. These studies included 565 participants and used a range of different methods to measure pain and other outcomes. Comparison groups also varied. Results from these studies show a very low level of evidence for the use of any non-medication treatments for chronic pain in persons with MS. We assessed the overall quality of the studies as very low, as many studies included only small numbers of participants and had other methodological issues. More research with good methodological quality and greater number of participants are needed to determine the effectiveness of such treatments.

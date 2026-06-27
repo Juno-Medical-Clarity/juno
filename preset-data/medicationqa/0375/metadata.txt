@@ -1,5 +1,0 @@
-drug_focus: opioid and opium
-question_type: Comparison
-section_title: What are prescription opioids?
-source_url: https://www.drugabuse.gov/publications/drugfacts/prescription-opioids
-sample_id: 0375

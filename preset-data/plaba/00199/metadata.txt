@@ -1,5 +1,0 @@
-pmid:        1604250
-question:    16
-adaptation:  adaptation1
-title:       A five day course of high dose corticosteroids has no effect on the clearance of soluble aggregates of human immunoglobulin G in healthy volunteers
-sentences:   5

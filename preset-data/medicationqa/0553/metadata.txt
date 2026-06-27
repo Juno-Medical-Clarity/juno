@@ -1,5 +1,0 @@
-drug_focus: valacyclovir
-question_type: Dose
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=51f93a1c-90d0-4cbc-90f7-6f1415efd673&audience=consumer
-sample_id: 0553

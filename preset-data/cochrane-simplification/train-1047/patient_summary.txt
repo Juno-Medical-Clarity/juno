@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1047  |  gem_id: gem-cochrane-simplification-train-1048  |  doi: 10.1002/14651858.CD004011.pub3
-
-This review identified 26 controlled trials looking at the best strategies for removal of catheters. In 11 studies comparing late night versus early morning removal, removal at midnight resulted in a longer time to first void and patients passing significantly larger volumes, although these findings varied widely. There was no apparent effect on the number of patients who required recatheterisation because of subsequent urinary retention, but patients with catheters removed at midnight were discharged from hospital significantly earlier than those with morning removal. Based on findings from 13 trials, limiting how long a catheter was left in place was linked to a shorter stay in hospital and less risk of infection. The information available from three trials was too limited to assess whether clamping prior to removal, to simulate normal filling of the bladder, improved outcomes.

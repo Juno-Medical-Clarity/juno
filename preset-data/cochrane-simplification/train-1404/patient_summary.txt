@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1404  |  gem_id: gem-cochrane-simplification-train-1405  |  doi: 10.1002/14651858.CD007541.pub3
-
-We found six trials for the initial review. We have not found any more studies since then. Some studies are several decades old and not very relevant to pills available today. A newer pill containing the progestin desogestrel may work better to prevent pregnancy than an older pill with levonorgestrel. The newer pill caused more bleeding problems. Pills with levonorgestrel may be more effective than pills with other progestins that are no longer used. These studies are not adequate to tell how progestin-only pills compare to each other or to combined (two-hormone) pills. Larger studies with currently used pills are needed to answer these questions.

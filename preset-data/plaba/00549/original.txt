@@ -1,8 +1,0 @@
-Extracellular histones released from injured or dying cells following trauma and other severe insults can act as potent damage-associated molecular patterns.
-In fact, elevated levels of histones are present in human circulation in hyperinflammatory states such as acute respiratory distress syndrome and sepsis.
-The molecular mechanisms owing to histone-induced pathologies are at the very beginning of elucidating.
-However, neutralization of histones with antibodies, histone-binding or histone-degrading proteins, and heparan sulfates have shown promising therapeutic effects in pre-clinical acute respiratory distress syndrome and sepsis models.
-Various cell types undergoing necrosis and apoptosis or activated neutrophils forming neutrophil extracellular traps have been implicated in excessive release of histones which further augments tissue injury and may culminate in multiple organ failure.
-At the molecular level, an uncontrolled inflammatory cascade has been considered as the major event; however, histone-activated coagulation and thrombosis represent additional pathologic events reflecting coagulopathy.
-Furthermore, epigenetic regulation and chemical modifications of circulating histones appear to be critically important in their biological functions as evidenced by increased cytotoxicity associated with citrullinated histone.
-Herein, we will briefly review the current knowledge on the role of histones in acute respiratory distress syndrome and sepsis, and discuss the future potential of anti-histone therapy for treatment of these life-threatening disorders.

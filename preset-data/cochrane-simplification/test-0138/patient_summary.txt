@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0138  |  gem_id: gem-cochrane-simplification-test-139  |  doi: 10.1002/14651858.CD005968.pub3
-
-The seven identified studies included too few patients to answer the questions. Four studies evaluated which is the best time to place implants. One study evaluated whether bone grafting is advantageous at implant placement and two studies evaluated which are the best grafting techniques. There is currently too little evidence to draw any reliable conclusions, however, the aesthetic outcome could be slightly better when placing implants early after tooth extraction, though early placed implants might be at a higher risk of failure. There is not enough evidence supporting or refusing the need of bone augmentation when extracted teeth are immediately replaced with dental implants, nor it is known whether any augmentation procedure is better than the others. Bone substitutes (anorganic bovine bone) can be used instead of self generated (autogenous) bone graft.

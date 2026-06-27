@@ -1,7 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [9:11] 'medical-jargon-google-easy' -> 'pelvic pain'

@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.85
-split:       test
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Inhalers'
-  [2:3] 'medical-jargon-google-easy' -> 'bronchodilators'
-  [38:39] 'abbr-medical' -> 'COPD'

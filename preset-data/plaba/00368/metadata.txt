@@ -1,5 +1,0 @@
-pmid:        32784601
-question:    29
-adaptation:  adaptation1
-title:       Early Nutritional Interventions with Zinc, Selenium and Vitamin D for Raising Anti-Viral Resistance Against Progressive COVID-19
-sentences:   9

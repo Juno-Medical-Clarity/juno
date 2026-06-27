@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0629  |  gem_id: gem-cochrane-simplification-train-630  |  doi: 10.1002/14651858.CD011226.pub2
-
-In June 2014 we searched for as many relevant medical studies as we could find that had a robust design (randomised controlled trials) that had compared hydrogel dressings with other treatments for pressure ulcers. We found 11 studies involving a total of 539 participants. From the results of these studies we could not tell whether hydrogel wound dressings heal pressure ulcers more quickly or slowly than other types of dressing or topical treatments. Generally, the studies we found were small and the results inconclusive. Some studies lacked information about how they were conducted and it was difficult to tell whether the results presented were robust. More research of better quality is needed before it can be determined whether hydrogel dressings are better or worse at healing pressure ulcers than other types of dressings or topical treatments.

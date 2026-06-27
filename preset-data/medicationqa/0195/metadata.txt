@@ -1,5 +1,0 @@
-drug_focus: Tums
-question_type: Dose
-section_title: WARNINGS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35f79dcf-1743-4d9f-aba5-5ead6b056309
-sample_id: 0195

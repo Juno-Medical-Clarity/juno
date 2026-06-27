@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0539  |  gem_id: gem-cochrane-simplification-train-540  |  doi: 10.1002/14651858.CD004907.pub3
-
-The review included seven trials involving 5390 women. These studies show that women who received active management were slightly less likely to have a caesarean section and were more likely to have shorter labours (less than 12 hours). There was no difference in the number of assisted deliveries, nor was there any difference in complications for mothers or their babies when comparing women in the active management group with those receiving routine care.

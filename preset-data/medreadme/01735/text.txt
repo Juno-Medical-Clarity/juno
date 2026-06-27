@@ -1,1 +1,0 @@
-We use existing mutant phenotypes and fluorescence data to parameterize a reaction-diffusion model of the kinases PleC and DivJ and their cognate response regulator DivK.

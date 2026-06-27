@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3257  |  gem_id: gem-cochrane-simplification-train-3258  |  doi: 10.1002/14651858.CD007168.pub3
-
-Six included trials assessed the effects of oral thiol derivatives.Three of these trials compared oral N-acetylcysteine to placebo; one compared oral N-acetylcysteine, oral ambroxol and placebo; and one compared oral carbocysteine and oral ambroxol (no placebo). None of the trials showed an overall significant benefit in any of the outcome measures of this review. Oral thiol derivatives were generally well-tolerated with no major adverse effects. In summary, the trials included in the review did not provide any evidence that nebulized or oral thiol derivatives were either beneficial or harmful to people with cystic fibrosis. Further research investigating the effects of thiol derivatives in people with cystic fibrosis is required before their use can be recommended.

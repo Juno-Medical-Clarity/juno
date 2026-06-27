@@ -1,8 +1,0 @@
-source:      pnas
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [6:8] 'general-complex' -> 'scaling exponents'
-  [18:20] 'medical-jargon-google-easy' -> 'allometric equations'

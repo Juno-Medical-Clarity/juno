@@ -1,7 +1,0 @@
-source:      wiki
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [2:6] 'medical-jargon-google-easy' -> 'chronic obstructive pulmonary disease'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0693  |  gem_id: gem-cochrane-simplification-train-694  |  doi: 10.1002/14651858.CD007448.pub2
-
-The authors of this study reviewed the medical literature to ascertain the best antibiotic combination for the treatment of this condition. Four eligible studies were identified and only two of these studies were found to be suitable for analysis. Both these studies were performed before 1988. The two studies included 62 infants with NEC and compared one antibiotic regimen to another. There was no difference between the two groups. The authors concluded that there was insufficient evidence to recommend a particular antibiotic regimen for NEC.

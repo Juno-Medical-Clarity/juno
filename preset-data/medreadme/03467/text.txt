@@ -1,1 +1,0 @@
-In the base-case analysis, adding injection to best-practice advice gained 0. 021 quality-adjusted life-years (p = 0. 184) and increased the cost by PS10 per participant (p = 0. 747).

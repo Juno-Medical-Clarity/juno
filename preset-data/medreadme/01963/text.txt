@@ -1,1 +1,0 @@
-A statistically significant but clinically irrelevant difference favouring unicompartmental knee replacement was observed, with a mean postoperative Oxford Knee Score difference of <2 points using propensity score stratification; no significant difference was observed using inverse probability weighting.

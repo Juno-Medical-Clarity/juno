@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0298  |  gem_id: gem-cochrane-simplification-test-299  |  doi: 10.1002/14651858.CD012066.pub2
-
-We included 11 studies involving 9839 participants comparing the benefits and harms of LAMA+LABA and LABA+ICS for the treatment of people with COPD. Although risk of serious side effects and death were not affected by the choice of treatment, compared to LABA+ICS, LAMA+LABA was associated with a lower risk of flare-ups, fewer episodes of pneumonia, larger improvement in how well the lungs work, and improved quality of life. Since most of the analysed studies were sponsored by pharmaceutical companies, we had to interpret the results carefully. However, we judged the included studies to be generally conducted in an acceptable manner. These data were supported by low or moderate quality evidence from trials in people with mainly moderate to severe COPD who were studied for less than one year.

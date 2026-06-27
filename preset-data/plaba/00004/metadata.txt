@@ -1,5 +1,0 @@
-pmid:        30168894
-question:    1
-adaptation:  adaptation2
-title:       Muscular cramp: causes and management
-sentences:   6

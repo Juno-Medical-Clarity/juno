@@ -1,5 +1,0 @@
-pmid:        34515659
-question:    47
-adaptation:  adaptation1
-title:       Bilateral atypical femoral fractures during denosumab therapy in a patient with adult-onset hypophosphatasia
-sentences:   14

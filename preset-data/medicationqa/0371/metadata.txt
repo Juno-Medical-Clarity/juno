@@ -1,5 +1,0 @@
-drug_focus: estradiol transdermal patch
-question_type: Stopping/tapering
-section_title: Stopping HRT
-source_url: https://www.nhs.uk/conditions/hormone-replacement-therapy-hrt/
-sample_id: 0371

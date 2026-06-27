@@ -1,5 +1,0 @@
-drug_focus: vitamin B12
-question_type: Dose
-section_title: How much vitamin B12 do I need?
-source_url: https://ods.od.nih.gov/pdf/factsheets/VitaminB12-Consumer.pdf
-sample_id: 0260

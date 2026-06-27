@@ -1,1 +1,0 @@
-Data were obtained from the National Joint Registry database and linked to hospital inpatient (Hospital Episode Statistics) and patient-reported outcome data.

@@ -1,7 +1,0 @@
-The term "shock" refers to a life-threatening circulatory failure caused by an imbalance between the supply and demand of cellular oxygen.
-Hypovolemic shock is characterized by a reduction of intravascular volume and a subsequent reduction in preload.
-The body compensates the loss of volume by increasing the stroke volume, heart frequency, oxygen extraction rate, and later by an increased concentration of 2,3-diphosphoglycerate with a rightward shift of the oxygen dissociation curve.
-Hypovolemic hemorrhagic shock impairs the macrocirculation and microcirculation and therefore affects many organ systems (e.g. kidneys, endocrine system and endothelium).
-For further identification of a state of shock caused by bleeding, vital functions, coagulation tests and hematopoietic procedures are implemented.
-Every hospital should be in possession of a specific protocol for massive transfusions.
-The differentiated systemic treatment of bleeding consists of maintenance of an adequate homeostasis and the administration of blood products and coagulation factors.

@@ -1,9 +1,0 @@
-Objectives: To determine the status of immune responses after primary and booster immunization for coronavirus disease 2019 (COVID-19) variants and evaluate the differences in disease-resistance based upon titers of neutralizing antibodies (NAbs) against the variants.
-Methods: Participants aged 18 - 59 y received two doses of inactivated COVID-19 vaccine, 14 days apart, and a booster dose after 12 m.
-Blood samples were collected before vaccination (baseline), 1 and 6 m after primary immunization, and at multiple instances within 21 d of booster dose.
-NAbs against the spike protein of Wuhan-Hu-1 and three variants were measured using pseudovirus neutralization assays.
-Results: Out of 400 enrolled participants, 387 completed visits scheduled within 6 m of the second dose, and 346 participated received the booster dose in the follow-up research.
-After 1 m of primary immunization, geometric mean titers (GMTs) of NAbs peaked for Wuhan-Hu-1, while GMTs of other variants were < 30.
-After 6 m of primary immunization, GMTs of NAbs against all strains were < 30.
-After 3 d of booster immunization, GMTs were unaltered, seroconversion rates reached approximately 50% after 7 d, and GMTs of NAbs against all strains peaked at 14 d.
-Conclusion: Two-dose of inactivated COVID-19 vaccine induced the formation of NAbs and memory-associated immune responses, and high titers of NAbs against the variants obtained after booster immunization may further improve the effectiveness of the vaccine.

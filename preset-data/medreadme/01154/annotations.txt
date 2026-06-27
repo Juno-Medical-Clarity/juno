@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Neonatologists'
-  [12:13] 'medical-jargon-google-easy' -> 'dexamethasone'
-  [29:30] 'abbr-medical' -> 'BPD'

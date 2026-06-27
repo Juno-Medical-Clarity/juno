@@ -1,5 +1,0 @@
-drug_focus: fish oil
-question_type: Dose
-section_title: Recommended Intakes
-source_url: https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/
-sample_id: 0568

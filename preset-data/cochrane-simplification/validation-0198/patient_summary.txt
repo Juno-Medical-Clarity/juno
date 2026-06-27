@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0198  |  gem_id: gem-cochrane-simplification-validation-199  |  doi: 10.1002/14651858.CD003465
-
-No trials were found examining the efficacy of electroconvulsive therapy or behavioural therapy. We identified three trials which examined antidepressant drugs. The review found that there is not enough evidence from the trials about the effects of antidepressant drugs for the treatment of depression in people with Parkinson's disease. Adverse effects in trials so far have not been severe, and included visual hallucinations and confusion.

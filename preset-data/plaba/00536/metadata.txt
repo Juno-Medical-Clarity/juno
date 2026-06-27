@@ -1,5 +1,0 @@
-pmid:        33826787
-question:    41
-adaptation:  adaptation2
-title:       Quinomycin A reduces cyst progression in polycystic kidney disease
-sentences:   8

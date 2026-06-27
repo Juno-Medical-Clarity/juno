@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        complex
-readability: 5.7
-split:       train
-
-jargon_spans:
-  [5:8] 'medical-jargon-google-easy' -> 'quantitative proteomic analysis'
-  [15:17] 'abbr-medical' -> 'C. jejuni'
-  [20:22] 'medical-jargon-google-easy' -> 'metabolic downshift'

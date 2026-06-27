@@ -1,5 +1,0 @@
-drug_focus: blood thinner pills
-question_type: Usage
-section_title: NA
-source_url: https://www.ahrq.gov/sites/default/files/wysiwyg/patients-consumers/diagnosis-treatment/treatments/btpills/btpills.pdf
-sample_id: 0319

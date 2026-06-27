@@ -1,8 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        complex
-readability: 4.0
-split:       dev
-
-jargon_spans:
-  [9:10] 'abbr-medical' -> 'TAU'
-  [30:31] 'medical-jargon-google-easy' -> 'inpatient'

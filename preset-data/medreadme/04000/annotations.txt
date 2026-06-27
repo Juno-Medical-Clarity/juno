@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Terminal neurites'
-  [11:19] 'medical-jargon-google-hard' -> 'globular , varicose , axiform , and dendritiform'

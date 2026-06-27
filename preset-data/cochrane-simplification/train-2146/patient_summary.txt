@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2146  |  gem_id: gem-cochrane-simplification-train-2147  |  doi: 10.1002/14651858.CD004043.pub2
-
-This review included six trials and investigated the efficacy and tolerability of risperidone, an atypical antipsychotic, as treatment for mania compared to placebo or other medicines. High withdrawal rates from the trials limit the confidence that can be placed on the results. Risperidone, both as monotherapy and combined with lithium, or an anticonvulsant, was more effective at reducing manic symptoms than placebo but caused more weight gain, sedation and elevation of prolactin levels. The efficacy of risperidone was comparable to that of haloperidol both as monotherapy and as adjunctive treatments to lithium, or an anticonvulsant. Risperidone caused less movement disorders than haloperidol but there was some evidence for greater weight gain.

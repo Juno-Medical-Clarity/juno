@@ -1,5 +1,0 @@
-drug_focus: marijuana
-question_type: Information
-section_title: NA
-source_url: https://en.wikipedia.org/wiki/Cannabis_(drug)
-sample_id: 0102

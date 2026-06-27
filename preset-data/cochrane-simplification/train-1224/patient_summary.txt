@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1224  |  gem_id: gem-cochrane-simplification-train-1225  |  doi: 10.1002/14651858.CD006029.pub4
-
-We analysed reports from seven randomised controlled trials of 1205 patients and found that ureteroscopy provided a better stone-free rate after treatment, but patients had to stay in hospital longer, and there was a higher risk of complications. We found that there were many variations among the seven studies in their design, duration, and data collected which made comparison and evaluation challenging. We recommend that further evaluation and research is conducted to ensure that new and improved treatments and studies are considered to inform clinical practice.

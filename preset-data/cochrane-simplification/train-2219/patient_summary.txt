@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2219  |  gem_id: gem-cochrane-simplification-train-2220  |  doi: 10.1002/14651858.CD007864.pub2
-
-This review examined the effectiveness of acupuncture for reducing pain in endometriosis; however only one study met our inclusion criteria. The data from the included study, involving 67 women, indicated that ear acupuncture is more effective compared to Chinese herbal medicine for reducing menstrual pain. The study did not report whether participants suffered any side effects from their treatments. Larger, well-designed studies comparing acupuncture with conventional therapies are necessary to confirm these results.

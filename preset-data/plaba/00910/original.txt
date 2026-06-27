@@ -1,9 +1,0 @@
-Sickle cell disease (SCD) was the first human monogenic disorder to be characterized at the molecular level.
-It results from the substitution of glutamic acid by valine at position 6 of the β-chain of hemoglobin.
-The clinical manifestations of SCD arise from the tendency of sickle hemoglobin (known as HbS or α2βS2) to polymerize at reduced oxygen tensions and deform red cells into the characteristic rigid sickle cell shape.
-Such inflexible red cells cannot pass through the microcirculation efficiently, and this results in anemia (due to destruction of the red cells) and intermittent vasoocclusion causing tissue damage and pain.
-Although all patients with homozygous SCD have exactly the same molecular defect, there is considerable clinical variation, ranging from death in early childhood to a normal life span with few complications.
-Genetic modifiers of SCD include α-thalassemia, and it has been known for many years that patients with increased levels of fetal Hb (HbF or α2γ2) often tend to have a relatively mild clinical course because HbF reduces the tendency of HbS to polymerise within the red cell.
-Increased HbF may result from rare deletions within the β-globin gene cluster or from point mutations in the promoters of the fetal γ-globin genes (hereditary persistence of fetal hemoglobin, HPFH), but additional loci are known to increase HbF levels in adult life.
-Identifying such loci has been a painstaking task, but a combination of genome-wide analysis within a large kindred and within twin pairs has identified two quantitative trait loci (QTL) with major influences on fetal hemoglobin levels in adults.
-A significant proportion of the variation in HbF levels and the frequency of painful crises in patients with SCD is accounted for by five common single-nucleotide polymorphisms (SNPs) at these loci.

@@ -1,5 +1,0 @@
-drug_focus: llevodopa and carbidopa; alcohol
-question_type: Interaction
-section_title: What special precautions should I follow?
-source_url: https://medlineplus.gov/druginfo/meds/a601068.html
-sample_id: 0635

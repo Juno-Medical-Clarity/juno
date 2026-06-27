@@ -1,1 +1,0 @@
-A fencepost error ( occasionally called a telegraph pole or lamp-post error ) is a specific type of off-by-one error.

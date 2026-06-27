@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0165  |  gem_id: gem-cochrane-simplification-test-166  |  doi: 10.1002/14651858.CD006728
-
-This review looks at whether family therapy is an effective intervention in treating people of any age with depression. Family therapy for depression is widely used, especially in the United Kingdom and the United States. The small number of randomised controlled trials included in the review were very heterogeneous, and therefore difficult to synthesise. Family therapy seems more effective than no treatment or being placed on a waiting list, but it remains unclear how effective this intervention is in comparison to other interventions. Further randomised controlled trials are needed.

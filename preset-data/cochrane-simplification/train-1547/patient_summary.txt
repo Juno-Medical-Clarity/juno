@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1547  |  gem_id: gem-cochrane-simplification-train-1548  |  doi: 10.1002/14651858.CD007967.pub2
-
-This review compares the effects of acetylcholinesterase inhibitors alone, or in combination with antipsychotics, compared with antipsychotics alone, or placebo plus antipsychotics. Adding acetylcholinesterase inhibitors with antipsychotics may improve the general psychopathology/negative symptomatology/depressive symptoms in people with schizophrenia. Also, the combination may be useful in improving the attention/reaction time and memory areas of cognition. The major limitation of the results was that most of the studies found were short-term studies. Considering the chronic, severe and enduring nature of schizophrenia, one cannot get a true picture unless well designed long-term studies are done. We hope that this review will highlight the need for more studies in this area.

@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [3:5] 'medical-jargon-google-easy' -> 'embryonic development'
-  [7:8] 'medical-jargon-google-easy' -> 'morphogenesis'

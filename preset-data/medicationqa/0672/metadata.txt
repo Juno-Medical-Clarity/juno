@@ -1,5 +1,0 @@
-drug_focus: nivolumab
-question_type: Side effects/time
-section_title: WARNINGS AND PRECAUTIONS
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f570b9c4-6846-4de2-abfa-4d0a4ae4e394&audience=consumer
-sample_id: 0672

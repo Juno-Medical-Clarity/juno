@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0188  |  gem_id: gem-cochrane-simplification-validation-189  |  doi: 10.1002/14651858.CD007330.pub2
-
-A form of treatment called Tinnitus Retraining Therapy (TRT) is used in many countries to treat this symptom. This treatment comprises a form of educational counselling and sound therapy given according to a specific protocol. Only one study, involving 123 participants, matched the inclusion criteria for this review. Although this study suggested considerable benefit for TRT in the treatment of tinnitus the study quality was not good enough to draw firm conclusions. No side effects of treatment were described. Further research is required.

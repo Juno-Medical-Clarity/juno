@@ -1,9 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [18:23] 'medical-jargon-google-easy' -> 'moderate to vigorous physical activity'
-  [24:25] 'abbr-medical' -> 'MVPA'
-  [35:36] 'general-complex' -> 'control'

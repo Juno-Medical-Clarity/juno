@@ -1,9 +1,0 @@
-Infection	Severity‡	Usual Adult Dose	Usual Dose for Children >3 months§ π
-Ear/Nose/Throat	Mild/Moderate	500 mg every12 hours or 250 mg every 8 hours	25 mg/kg/day in divided doses every 12 hours or 20 mg/kg/day in divided doses every 8 hours
- 	Severe	875 mg every 12 hours or 500 mg every 8 hours	45 mg/kg/day in divided doses every 12 hours or 40 mg/kg/day in divided doses every 8 hours
-Lower Respiratory Tract	Mild/Moderate or Severe	875 mg every 12 hours or 500 mg every 8 hours	45 mg/kg/day in divided doses every 12 hours or 40 mg/kg/day in divided doses every 8 hours
-Skin/Skin Structure	Mild/Moderate	500 mg every12 hours or 250 mg every 8 hours	25 mg/kg/day in divided doses every 12 hours or 20 mg/kg/day in divided doses every 8 hours
- 	Severe	875 mg every12 hours or 500 mg every 8 hours	45 mg/kg/day in divided doses every 12 hours or 40 mg/kg/day in divided doses every 8 hours
-Genitourinary Tract	Mild/Moderate	500 mg every12 hours or 250 mg every 8 hours	25 mg/kg/day in divided doses every 12 hours or 20 mg/kg/day in divided doses every 8 hours
- 	Severe	875 mg every12 hours or 500 mg every 8 hours	45 mg/kg/day in divided doses every 12 hours or 40 mg/kg/day in divided doses every 8 hours
-Gonorrhea Acute, uncomplicated ano-genital and urethral infections in males and females	 	3 grams as single oral dose	Prepubertal children: 50 mg/kg amoxicillin, combined with 25 mg/kg probenecid as a single dose.NOTE: SINCE PROBENECID IS CONTRAINDICATED IN CHILDREN UNDER 2 YEARS, DO NOT USE THIS REGIMEN IN THESE CASES.

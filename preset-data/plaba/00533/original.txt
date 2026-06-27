@@ -1,9 +1,0 @@
-Tuberous sclerosis complex (TSC) is caused by mutations in either TSC1 or TSC2 genes and affects multiple organs, including kidney, lung, and brain.
-In the kidney, TSC presents with the enlargement of benign tumors (angiomyolipomata) and cysts, which eventually leads to kidney failure.
-The factors promoting cyst formation and tumor growth in TSC are incompletely understood.
-Here, we report that mice with principal cell-specific inactivation of Tsc1 develop numerous cortical cysts, which are overwhelmingly composed of hyperproliferating A-intercalated (A-IC) cells.
-RNA sequencing and confirmatory expression studies demonstrated robust expression of Forkhead Transcription Factor 1 (Foxi1) and its downstream targets, apical H+-ATPase and cytoplasmic carbonic anhydrase 2 (CAII), in cyst epithelia in Tsc1 knockout (KO) mice but not in Pkd1 mutant mice.
-In addition, the electrogenic 2Cl-/H+ exchanger (CLC-5) is significantly up-regulated and shows remarkable colocalization with H+-ATPase on the apical membrane of cyst epithelia in Tsc1 KO mice.
-Deletion of Foxi1, which is vital to intercalated cells viability and H+-ATPase expression, completely abrogated the cyst burden in Tsc1 KO mice, as indicated by MRI images and histological analysis in kidneys of Foxi1/Tsc1 double-knockout (dKO) mice.
-Deletion of CAII, which is critical to H+-ATPase activation, caused significant reduction in cyst burden and increased life expectancy in CAII/Tsc1 dKO mice vs. Tsc1 KO mice.
-We propose that intercalated cells and their acid/base/electrolyte transport machinery (H+-ATPase/CAII/CLC-5) are critical to cystogenesis, and their inhibition or inactivation is associated with significant protection against cyst generation and/or enlargement in TSC.

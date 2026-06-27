@@ -1,5 +1,0 @@
-drug_focus: Sutent
-question_type: Side effects
-section_title: INTRODUCTION
-source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3932394/
-sample_id: 0259

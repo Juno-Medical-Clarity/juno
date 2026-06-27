@@ -1,5 +1,0 @@
-pmid:        2874976
-question:    24
-adaptation:  adaptation1
-title:       Buspirone. A preliminary review of its pharmacological properties and therapeutic efficacy as an anxiolytic
-sentences:   11

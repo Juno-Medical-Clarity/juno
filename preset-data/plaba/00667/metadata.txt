@@ -1,5 +1,0 @@
-pmid:        8003613
-question:    51
-adaptation:  adaptation1
-title:       Modulation of beta-cell activity and its influence on islet cell antibody (ICA) and islet cell surface antibody (ICSA) reactivity
-sentences:   10

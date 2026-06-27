@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0016  |  gem_id: gem-cochrane-simplification-train-17  |  doi: 10.1002/14651858.CD003785
-
-Infliximab is a relatively new disease modifying anti-rheumatic drug that inhibits tumour necrosis factor alpha. Short term (six to twelve month) studies suggest infliximab is well tolerated, and in combination with methotrexate, decreases disease activity in RA. Infliximab 3mg/kg or 10mg/kg, in combination with methotrexate, taken every 4 or 8 weeks for either 6 or 12 months, significantly improved disease activity as measured by tender and swollen joints and ACR response rates. Pain and physical function also improved compared to those taking methotrexate alone. Infliximab significantly reduced radiographic progression at 12 months.

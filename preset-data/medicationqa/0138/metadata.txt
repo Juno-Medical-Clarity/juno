@@ -1,5 +1,0 @@
-drug_focus: Keflex
-question_type: Time/duration
-section_title: Clinical Pharmacology
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=68fba58a-7748-4581-8432-f5286c46d90a
-sample_id: 0138

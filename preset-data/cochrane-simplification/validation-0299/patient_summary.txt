@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0299  |  gem_id: gem-cochrane-simplification-validation-300  |  doi: 10.1002/14651858.CD003415.pub4
-
-This review found some evidence for relief with progesterone but trials differed in route of administration, dose, duration of treatment and selection of women taking part. Outcomes also differed. The studies had flaws in methods or in handling outcome data or both. Adverse effects which may or may not have been the result of the treatment were generally mild. Further research would be needed to test claims for the effectiveness of higher doses of progesterone. They are neither refuted nor borne out as yet. Using each woman's own symptoms to select participants and to judge treatment effects would be more accurate than checklists of largely irrelevant symptoms. Knowing how many women had fewer days with symptoms, fewer or milder symptoms, or the converse, would be more valuable than the calculations based on subjective data for groups of women.

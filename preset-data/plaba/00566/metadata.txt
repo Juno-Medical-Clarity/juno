@@ -1,5 +1,0 @@
-pmid:        34332661
-question:    43
-adaptation:  adaptation1
-title:       Leadless pacemakers: A review of current data and future directions
-sentences:   5

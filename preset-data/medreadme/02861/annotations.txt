@@ -1,7 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.3
-split:       dev
-
-jargon_spans:
-  [13:14] 'medical-jargon-google-easy' -> 'morphogenesis'

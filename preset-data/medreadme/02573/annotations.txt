@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [5:6] 'medical-jargon-google-easy' -> 'enzyme'
-  [10:11] 'medical-jargon-google-easy' -> 'cyclization'

@@ -1,5 +1,0 @@
-pmid:        34540633
-question:    55
-adaptation:  adaptation1
-title:       A Comprehensive Update of the Current Understanding of Chronic Fatigue Syndrome
-sentences:   17

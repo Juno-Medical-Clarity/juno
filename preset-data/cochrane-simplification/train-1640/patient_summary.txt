@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1640  |  gem_id: gem-cochrane-simplification-train-1641  |  doi: 10.1002/14651858.CD001224.pub4
-
-A systematic review of the literature and a quantitative assessment found that VCT is an effective strategy for reducing some HIV-related risk behaviors, including decreasing the number of sexual partners of participants. Condom use was also significantly increased among participants who tested HIV-positive during VCT. Future research is needed to understand how VCT can be delivered more effectively to maximize its potential as an HIV prevention strategy.

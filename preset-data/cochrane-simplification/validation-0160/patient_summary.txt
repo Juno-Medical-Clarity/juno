@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0160  |  gem_id: gem-cochrane-simplification-validation-161  |  doi: 10.1002/14651858.CD005176.pub4
-
-This review identified only three small randomized trials. The results showed that only aspects of work performance (for example, maximal test time, maximal distance at the end of the exercise test) were improved after aerobic exercise training programs. Further well-designed research on larger population samples is required to evaluate potential benefits for psychosocial aspects in adults with Down syndrome.

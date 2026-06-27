@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2348  |  gem_id: gem-cochrane-simplification-train-2349  |  doi: 10.1002/14651858.CD006124.pub2
-
-Six studies randomising 596 healthy kidney donors to either keyhole or open surgery, found keyhole surgery to be associated with less pain for the donor but had similar numbers of complications that can require further treatment or surgery or both. Donor kidneys that were obtained using the keyhole surgical technique were deprived of nutrients for longer periods of time than kidneys obtained for transplant using open surgery, but this does not appear to have any short-term consequences.

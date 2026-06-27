@@ -1,5 +1,0 @@
-pmid:        15337754
-question:    50
-adaptation:  adaptation1
-title:       C-reactive Protein
-sentences:   6

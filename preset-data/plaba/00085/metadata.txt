@@ -1,5 +1,0 @@
-pmid:        28385329
-question:    7
-adaptation:  adaptation1
-title:       Management of recurrent tonsillitis in children
-sentences:   9

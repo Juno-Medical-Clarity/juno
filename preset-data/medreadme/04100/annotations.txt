@@ -1,9 +1,0 @@
-source:      MSD
-side:        simple
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [14:15] 'medical-jargon-google-easy' -> 'aorta'
-  [19:21] 'medical-jargon-google-easy' -> 'aortic dissection'
-  [33:34] 'medical-jargon-google-easy' -> 'aneurysm'

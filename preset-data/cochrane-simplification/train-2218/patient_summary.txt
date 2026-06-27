@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2218  |  gem_id: gem-cochrane-simplification-train-2219  |  doi: 10.1002/14651858.CD004532.pub2
-
-This review of trials found there were insufficient numbers of participants in the two trials located (331 participants) to be able to say if routine surgery early on was of overall benefit. Further trials are needed and such trials should assess the pain that people suffer and their views of the disease and treatment.

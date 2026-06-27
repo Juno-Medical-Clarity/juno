@@ -1,5 +1,0 @@
-drug_focus: topamax
-question_type: Appearance
-section_title: search results
-source_url: https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=topamax&pagesize=200&page=1
-sample_id: 0165

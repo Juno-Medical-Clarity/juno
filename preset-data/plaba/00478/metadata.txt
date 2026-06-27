@@ -1,5 +1,0 @@
-pmid:        30003357
-question:    37
-adaptation:  adaptation1
-title:       Cognitive and fatigue side effects of anti-epileptic drugs: an analysis of phase III add-on trials
-sentences:   9

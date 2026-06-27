@@ -1,7 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [6:13] 'general-complex' -> 'three - phase mixed - methods design'

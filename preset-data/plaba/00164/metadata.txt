@@ -1,5 +1,0 @@
-pmid:        30571183
-question:    13
-adaptation:  adaptation1
-title:       Nocturnal Atrial Fibrillation Caused by Mutation in KCND2, Encoding Pore-Forming (α) Subunit of the Cardiac Kv4.2 Potassium Channel
-sentences:   13

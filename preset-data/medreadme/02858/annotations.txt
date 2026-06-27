@@ -1,9 +1,0 @@
-source:      plos_computational_biology
-side:        simple
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'Drosophila melanogaster'
-  [14:16] 'medical-jargon-google-easy' -> 'embryonic development'
-  [22:25] 'medical-jargon-google-hard' -> 'Hunchback protein pattern'

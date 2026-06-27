@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0123  |  gem_id: gem-cochrane-simplification-train-124  |  doi: 10.1002/14651858.CD006197.pub2
-
-We reviewed the effects of dehydroepiandrosterone (DHEA)/testosterone as an adjunctive therapy to standard antipsychotic drugs for people with schizophrenia and found three relevant small, short studies. All trials compared antipsychotic drugs plus DHEA with antipsychotic drugs and placebo. Results are inconclusive, with most outcomes being either non-significant or contradictory and a much larger, conclusive study should be undertaken. Currently however, people with schizophrenia should only agree to take this experimental treatment within the context of a well designed experimental study. We found nothing in these studies to suggest that it should be used in routine care.

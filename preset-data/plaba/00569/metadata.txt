@@ -1,5 +1,0 @@
-pmid:        25284231
-question:    44
-adaptation:  adaptation1
-title:       The ATLS(®) classification of hypovolaemic shock: a well established teaching tool on the edge?
-sentences:   12

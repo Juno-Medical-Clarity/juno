@@ -1,1 +1,0 @@
-This approach identifies the important transcription factors that directly regulate gene expression to modulate disease susceptibility.

@@ -1,5 +1,0 @@
-pmid:        30464397
-question:    63
-adaptation:  adaptation2
-title:       Pharmacokinetic evaluation of a transdermal anastrozole-in-adhesive formulation
-sentences:   10

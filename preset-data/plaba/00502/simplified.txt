@@ -1,7 +1,0 @@
-Detection of chemical compounds in exhaled human breath provides an opportunity to determine several aspects about human health. These aspects include evaluating physiological state (how the body is functioning), determining any disease, and/or assessing (measuring) environmental exposures (or things in the environment that can lead to disease).
-Recent advancements in metabolomics research have led to better opportunities to explore human metabolic profiles in depth. Metabolomics is the study of metabolites within the body. Metabolites are small substances involved in cell metabolism or energy-production.
-Despite some test challenges, exhaled breath represents a good sample for metabolomics applications. Breath is ideal as it is non-invasive, convenient, and nearly limitless in availability.
-There are several breath-based tests that target either internal or external chemical compounds. These tests are already established and are in practical and/or clinical use.
-This paper reviews the concept of breath analysis used for these unique tests and their applications.
-The breath biomarkers targeted in each test are discussed in relation to their function in the human body. Additionally, the paper evaluates the development and implementation of the associated tests.
-The paper concludes with a brief insight into prospective (future) tests and an outlook of the future direction of breath research.

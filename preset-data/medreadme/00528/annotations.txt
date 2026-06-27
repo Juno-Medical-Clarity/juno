@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [12:14] 'medical-jargon-google-easy' -> 'biologic therapies'
-  [18:19] 'abbr-medical' -> 'SEC'
-  [24:25] 'medical-jargon-google-easy' -> 'psoriasis'

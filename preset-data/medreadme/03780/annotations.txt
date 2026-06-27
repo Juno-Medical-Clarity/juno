@@ -1,6 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 2.5
-split:       test
-
-jargon_spans: (none)

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0370  |  gem_id: gem-cochrane-simplification-train-371  |  doi: 10.1002/14651858.CD007645.pub2
-
-This review highlights that retinopathy of prematurity is a painful examination and that instillation of local anaesthetic eyedrops immediately prior to examination of the eye is associated with a reduction in pain scores, as assessed by validated pain scores. Ongoing research is required to determine the optimum local anaesthetic eyedrop and other potentially important methods of reducing pain, including swaddling, and sucrose.

@@ -1,9 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        simple
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [11:12] 'medical-name-entity' -> 'FRIENDS'
-  [54:60] 'medical-jargon-google-easy' -> 'personal , social and health education'
-  [61:62] 'abbr-medical' -> 'PSHE'

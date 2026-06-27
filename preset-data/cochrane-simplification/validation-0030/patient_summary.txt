@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0030  |  gem_id: gem-cochrane-simplification-validation-31  |  doi: 10.1002/14651858.CD003286
-
-However, this review of trials found no strong evidence of benefit of care from specialist diabetes nurses for adolescents and adults with diabetes. Although short-term benefits may be possible, this has not been shown to result in long-term improvements. People receiving care from diabetes nurses do not appear to have improved health when compared with usual care in hospital clinics or primary care with no specialist nursing input. No data were shown on quality of life measures.

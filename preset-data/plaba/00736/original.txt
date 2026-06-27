@@ -1,9 +1,0 @@
-Background: Immunization against SARS-CoV-2, the causative agent of coronavirus disease-19 (COVID-19) occurs via natural infection or vaccination.
-However, it is currently unknown how long infection- or vaccination-induced immunological memory will last.
-Methods: We performed a longitudinal evaluation of immunological memory to SARS-CoV-2 up to one year post infection and following mRNA vaccination in naÃ¯ve and COVID-19 recovered individuals.
-Results: We found that memory cells are still detectable 8 months after vaccination, while antibody levels decline significantly especially in naÃ¯ve subjects.
-We also found that a booster injection is efficacious in reactivating immunological memory to spike protein in naÃ¯ve subjects, while it results ineffective in previously SARS-CoV-2 infected individuals.
-Finally, we observed a similar kinetics of decay of humoral and cellular immunity to SARS-CoV-2 up to one year following natural infection in a cohort of unvaccinated individuals.
-Conclusion: Short-term persistence of humoral immunity, together with the reduced neutralization capacity versus the currently prevailing SARS-CoV-2 variants, may account for reinfections and breakthrough infections.
-Long-lived memory B and CD4+ T cells may protect from severe disease development.
-A booster dose restores optimal anti-spike immunity in naÃ¯ve subjects, while the need for vaccinated COVID-19 recovered subjects has yet to be defined.

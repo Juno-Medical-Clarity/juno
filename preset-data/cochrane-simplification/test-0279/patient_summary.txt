@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0279  |  gem_id: gem-cochrane-simplification-test-280  |  doi: 10.1002/14651858.CD000255.pub2
-
-We did not find any completed randomised trials testing these drugs in people with carotid artery dissection. However, there is one ongoing trial. We found only poor quality non-randomised studies that compared anticoagulants with aspirin. There was no evidence that anticoagulants were better than aspirin. Aspirin is likely to be similarly effective and safe as anticoagulants in such patients. More research is needed.

@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [17:19] 'medical-jargon-google-easy' -> 'mechanical ventilation'
-  [37:39] 'medical-jargon-google-easy' -> 'bronchopulmonary dysplasia'
-  [40:41] 'abbr-medical' -> 'BPD'

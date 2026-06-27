@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0081  |  gem_id: gem-cochrane-simplification-validation-82  |  doi: 10.1002/14651858.CD007137.pub5
-
-Through literature searches updated to December 2016, we found six studies that enrolled 1041 preterm babies and tested the role of lactoferrin along with feeds. We also found large ongoing studies that may increase the strength of our findings when their results become available. Evidence of low quality suggests that oral lactoferrin with or without a probiotic decreases blood infection and NEC in preterm infants with no adverse effects. Clarification regarding dosing, duration, type of lactoferrin (human or bovine), and development of preterm babies is still needed. Evidence is of low quality.

@@ -1,1 +1,0 @@
-Here we present a large-scale simulation study designed to examine the extent to which conformations of peptide fragments in water predict native conformations in proteins.

@@ -1,1 +1,0 @@
-[ 1,7 ] sigmatropic shifts are predicted by the Woodward-Hoffmann rules to proceed in an antarafacial fashion, by a Mobius topology transition state.

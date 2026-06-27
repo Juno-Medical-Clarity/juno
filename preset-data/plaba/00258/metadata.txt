@@ -1,5 +1,0 @@
-pmid:        34269321
-question:    20
-adaptation:  adaptation1
-title:       Misophonia Successfully Treated of With Fluoxetine: A Case Report
-sentences:   10

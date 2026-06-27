@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0673  |  gem_id: gem-cochrane-simplification-train-674  |  doi: 10.1002/14651858.CD012468.pub2
-
-In medical literature searches completed to January 2017, we identified and included one trial with 112 newborns comparing clonidine with placebo. We did not identify funding by industry for the included trial. Clonidine did not reduce death, duration of mechanical ventilation, or duration of stay in the intensive care unit. Sedation and pain scale values were lower among newborns receiving clonidine. Owing to the small number of newborns included in the single included trial, we are uncertain as to whether clonidine is effective or safe in providing analgesia and sedation for mechanically ventilated neonates.

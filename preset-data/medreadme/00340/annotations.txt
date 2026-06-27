@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [6:8] 'medical-jargon-google-easy' -> 'rectal cancer'
-  [25:27] 'medical-jargon-google-easy' -> 'laparoscopic surgery'

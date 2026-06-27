@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1994  |  gem_id: gem-cochrane-simplification-train-1995  |  doi: 10.1002/14651858.CD006359.pub2
-
-A total of 22 randomised controlled trials were included in this review. There is insufficient evidence from these trials to be able to identify one particular intervention for endometrial preparation that clearly improves the treatment outcome for women receiving embryo transfers with either frozen embryos or embryos derived from donated oocytes. Better quality studies are needed to more accurately evaluate each treatment.

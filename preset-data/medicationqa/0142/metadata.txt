@@ -1,5 +1,0 @@
-drug_focus: Clotrimazole
-question_type: Storage and disposal
-section_title: Other information
-source_url: https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=becd0353-56a7-4c4c-8b7a-1363ef2eefa5&type=display
-sample_id: 0142

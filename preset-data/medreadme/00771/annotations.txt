@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Morphine'
-  [3:4] 'medical-jargon-google-easy' -> 'analgesia'
-  [11:12] 'general-complex' -> 'efficacy'

@@ -1,5 +1,0 @@
-drug_focus: zoster vaccine
-question_type: Usage/time
-section_title: Who Should Get Shingles Vaccine?
-source_url: https://www.cdc.gov/vaccines/vpd/shingles/public/zostavax/index.html
-sample_id: 0636

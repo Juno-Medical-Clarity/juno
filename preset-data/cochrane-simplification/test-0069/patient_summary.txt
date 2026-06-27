@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0069  |  gem_id: gem-cochrane-simplification-test-70  |  doi: 10.1002/14651858.CD004559.pub4
-
-This updated review assessed the therapeutic effects and safety of Chinese medicinal herbs as an alternative and adjunctive therapy to other commonly used drugs for influenza. Eighteen studies involving 2521 participants were included in the review. 'Ganmao' capsules were found to be more effective than amantadine in decreasing influenza symptoms and aiding recovery in one study (in which adverse reactions were mentioned in the amantadine group although no data were reported). There were no significant differences between 'E Shu You' and ribavirin in treating influenza, nor in the occurrence of adverse reactions. The remaining 17 Chinese herbal trials showed a similar effect to antiviral drugs in preventing or treating influenza. However, since these included studies were of poor quality, the evidence does not support or reject the use of any Chinese herbal preparations for influenza. High-quality trials are required.

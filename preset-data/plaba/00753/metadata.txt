@@ -1,5 +1,0 @@
-pmid:        34558034
-question:    60
-adaptation:  adaptation2
-title:       Risk factors for recurrent positive results of the nucleic acid amplification test for COVID-19 patients: a retrospective study
-sentences:   11

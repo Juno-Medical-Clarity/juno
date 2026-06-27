@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1279  |  gem_id: gem-cochrane-simplification-train-1280  |  doi: 10.1002/14651858.CD004159.pub3
-
-We found no randomised controlled trials (RCTs) in the original review or when searches were updated in 2010 and 2012. Local injections of corticosteroid and surgical operations were found to be effective treatments in observational studies. However, a single observational study also showed that meralgia paraesthetica improved spontaneously in the majority of cases. RCTs of treatments for meralgia paraesthetica are needed.

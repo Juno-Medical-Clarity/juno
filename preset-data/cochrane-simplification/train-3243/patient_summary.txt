@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3243  |  gem_id: gem-cochrane-simplification-train-3244  |  doi: 10.1002/14651858.CD001547.pub2
-
-This review assessed data from twenty-six studies comparing paracetamol plus codeine with placebo, and fourteen studies comparing paracetamol plus codeine with the same dose of paracetamol alone. The combination provided effective pain relief for about 40% of participants experiencing moderate to severe pain after an operation with 600 to 650 mg paracetamol plus 60 mg codeine, the dose most commonly used in these studies, and about 50% of participants with 800 to 1000 mg paracetamol plus 60 mg codeine, the dose most commonly used in clinical practice. The addition of codeine provided effective pain relief to about 10% more participants than the same dose of paracetamol alone. These single dose studies did not associate paracetamol plus codeine with any serious side effects.

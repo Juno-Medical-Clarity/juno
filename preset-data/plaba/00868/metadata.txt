@@ -1,5 +1,0 @@
-pmid:        8302491
-question:    70
-adaptation:  adaptation3
-title:       Vitamin B6 and immune competence
-sentences:   6

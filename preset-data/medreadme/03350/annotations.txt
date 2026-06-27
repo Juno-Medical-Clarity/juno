@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'associative learning'
-  [10:11] 'medical-jargon-google-easy' -> 'neurons'
-  [35:36] 'medical-jargon-google-easy' -> 'neurons'

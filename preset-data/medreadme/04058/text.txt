@@ -1,1 +1,0 @@
-Given climate conditions, the model predicts that a dengue epidemic is likely to occur in early 2016.

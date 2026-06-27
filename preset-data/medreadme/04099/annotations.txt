@@ -1,7 +1,0 @@
-source:      MSD
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [12:13] 'medical-jargon-google-easy' -> 'aorta'

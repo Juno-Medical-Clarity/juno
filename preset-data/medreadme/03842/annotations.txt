@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.8
-split:       test
-
-jargon_spans:
-  [3:4] 'abbr-medical' -> 'CHD'
-  [11:15] 'medical-jargon-google-easy' -> 'coronary artery bypass graft'
-  [16:17] 'abbr-medical' -> 'CABG'

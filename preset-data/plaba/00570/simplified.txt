@@ -1,9 +1,0 @@
-Current monitoring technologies are unable to detect early changes associated with significant blood loss.
-A novel model to calculate the Compensatory Reserve Index (CRI) was previously introduced by the authors in a secondary study. CRI measures physiological reserve, or how an organ responds to stress, which can be used as an indicator of how a patient will respond to intensive care.
-In the present study, the authors hypothesized that the CRI would provide greater sensitivity and specificity to detect blood loss compared to traditional methods.
-Vital signs were analyzed from 20 subjects before, during, and after an average controlled voluntary hemorrhage (excessive blood loss) of ∼1.2 L of blood.
-CRI decreased across progressive blood volume loss, with no clinically significant alterations in vital signs.
-Statistical analysis of CRI showed high confidence in the ability of the test to produce accurate results.
-In contrast, blood pressures, heart rate, SpO2, cardiac output, and stroke volume had significantly lower confidence  for detection and specificity rates.
-CRI detected blood loss and restoration with greater specificity than did other traditional measures.
-Single measurement of CRI may enable more accurate assessment of health emergencies. CRI monitoring may allow for earlier detection of declining health.

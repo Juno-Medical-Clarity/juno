@@ -1,1 +1,0 @@
-We validate these results on fragments of a protein outside our training set.

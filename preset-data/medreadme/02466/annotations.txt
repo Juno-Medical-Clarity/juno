@@ -1,8 +1,0 @@
-source:      plos_computational_biology
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [9:11] 'medical-jargon-google-easy' -> 'network regulation'
-  [13:15] 'medical-jargon-google-easy' -> 'malignant phenotypes'

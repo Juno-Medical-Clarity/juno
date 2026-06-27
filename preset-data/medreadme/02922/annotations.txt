@@ -1,9 +1,0 @@
-source:      pnas
-side:        simple
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'regulatory pathway'
-  [8:10] 'medical-jargon-google-easy' -> 'proteasome degradation'
-  [11:12] 'medical-jargon-google-easy' -> 'autophagy'

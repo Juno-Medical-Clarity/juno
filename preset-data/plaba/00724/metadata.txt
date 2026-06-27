@@ -1,5 +1,0 @@
-pmid:        33185371
-question:    57
-adaptation:  adaptation2
-title:       Use of Radiofrequency Ablation for the Management of Facial Pain: A Systematic Review
-sentences:   18

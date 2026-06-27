@@ -1,5 +1,0 @@
-pmid:        28324139
-question:    9
-adaptation:  adaptation1
-title:       Diagnosis and treatment of dysphagia
-sentences:   3

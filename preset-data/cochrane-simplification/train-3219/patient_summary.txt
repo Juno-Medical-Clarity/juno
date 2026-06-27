@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3219  |  gem_id: gem-cochrane-simplification-train-3220  |  doi: 10.1002/14651858.CD005064.pub3
-
-This Cochrane review summarizes evidence from forty-eight randomised controlled trials evaluating the effectiveness and safety of anticonvulsants in the treatment of alcohol withdrawal symptoms. There are limited data comparing anticonvulsants versus placebo and no clear differences between anticonvulsants and other drugs in the rates of therapeutic success. Data on safety outcomes are sparse and fragmented. There is a need for larger, well-designed studies in this field.

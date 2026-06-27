@@ -1,5 +1,0 @@
-drug_focus: bystolic
-question_type: Side effects
-section_title: Bystolic and Feeling cold - from FDA reports
-source_url: https://www.ehealthme.com/ds/bystolic/feeling-cold/
-sample_id: 0688

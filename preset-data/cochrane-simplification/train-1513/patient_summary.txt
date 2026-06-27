@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1513  |  gem_id: gem-cochrane-simplification-train-1514  |  doi: 10.1002/14651858.CD012939.pub2
-
-In April 2018, we searched for randomised controlled trials (RCTs) that had compared reduced-dose radiotherapy/chemotherapy treatment with standard-dose treatment. We were interested in the outcomes of overall survival and disease-free survival, as well as the effects on swallowing ability and voice. Our searches did not identify any completed RCTs, however three relevant studies are ongoing and the first results are expected between 2021 and 2023. Currently there is no high-quality evidence comparing these two treatments, however such trials are in progress.

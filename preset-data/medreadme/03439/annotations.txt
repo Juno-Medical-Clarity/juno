@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.35
-split:       test
-
-jargon_spans:
-  [16:18] 'medical-jargon-google-easy' -> 'persecutory delusions'
-  [22:23] 'medical-jargon-google-easy' -> 'paranoia'

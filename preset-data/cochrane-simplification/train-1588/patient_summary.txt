@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1588  |  gem_id: gem-cochrane-simplification-train-1589  |  doi: 10.1002/14651858.CD007830.pub4
-
-We identified 18 relevant trials, involving 633 participants which evaluated this type of therapy, up to September 2014. Treadmill training did improve gait speed, and stride length; but walking distance and cadence did not improve. Acceptability of treadmill training for study participants was good and adverse events were rare. It seems that such devices could be beneficial and could be applied in routine rehabilitation. However, it is still not clear when and how often they should be used and how long a benefit lasts. The quality of this evidence for the primary outcomes was moderate to low. Adverse events were not reported in studies and drop outs did not occur more frequently in people receiving treadmill training. Also we investigated only gait parameters, improvements of activities and/or quality of life were not investigated.

@@ -1,8 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 4.65
-split:       dev
-
-jargon_spans:
-  [16:17] 'abbr-medical' -> 'HHIP'
-  [21:23] 'medical-jargon-google-easy' -> 'biological pathway'

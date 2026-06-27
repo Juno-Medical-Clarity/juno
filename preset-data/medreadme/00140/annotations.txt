@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [12:13] 'general-complex' -> 'commencement'
-  [14:17] 'medical-jargon-google-easy' -> 'convulsive status epilepticus'
-  [19:21] 'general-complex' -> 'competing risks'

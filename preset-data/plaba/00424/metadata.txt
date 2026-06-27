@@ -1,5 +1,0 @@
-pmid:        28676198
-question:    33
-adaptation:  adaptation1
-title:       Treatment of Gabapentin Toxicity With Peritoneal Dialysis: Assessment of Gabapentin Clearance
-sentences:   8

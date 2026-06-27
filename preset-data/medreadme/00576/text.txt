@@ -1,1 +1,0 @@
-Complementary analyses used police STATS19 road traffic accident data (1997-2014) and Scottish Household Survey travel diaries (2009-13).

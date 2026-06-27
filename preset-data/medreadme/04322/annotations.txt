@@ -1,9 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        complex
-readability: 5.2
-split:       test
-
-jargon_spans:
-  [3:4] 'abbr-general' -> 'RCT'
-  [6:8] 'medical-jargon-google-easy' -> 'topical corticosteroid'
-  [10:12] 'medical-jargon-google-easy' -> 'impregnated bandages'

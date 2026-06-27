@@ -1,7 +1,0 @@
-source:      wiki
-side:        complex
-readability: 3.3
-split:       dev
-
-jargon_spans:
-  [4:6] 'medical-jargon-google-easy' -> 'Q fever'

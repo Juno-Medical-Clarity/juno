@@ -1,5 +1,0 @@
-drug_focus: grapefruit
-question_type: Interaction
-section_title: Grapefruit Juice and Some Drugs Don't Mix
-source_url: https://www.fda.gov/ForConsumers/ConsumerUpdates/ucm292276.htm
-sample_id: 0490

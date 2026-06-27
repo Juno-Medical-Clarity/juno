@@ -1,7 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        simple
-readability: 3.8
-split:       test
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Eczema'

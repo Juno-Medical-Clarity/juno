@@ -1,1 +1,0 @@
-The implementation packages embedded behaviour change techniques within audit and feedback, educational outreach and (for risky prescribing) computerised prompts.

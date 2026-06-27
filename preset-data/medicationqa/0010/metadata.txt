@@ -1,5 +1,0 @@
-drug_focus: Qvar
-question_type: Indication
-section_title: INDICATIONS AND USAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=20682605-557b-4586-9d98-829a63091ddf
-sample_id: 0010

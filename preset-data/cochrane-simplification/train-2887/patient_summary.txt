@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2887  |  gem_id: gem-cochrane-simplification-train-2888  |  doi: 10.1002/14651858.CD001244
-
-These drugs were highly effective in animal studies. Individual clinical trials in stroke patients did not confirm benefit for any of the drugs, however. This review confirms that there are no overall benefits for these drugs in stroke, although only two of them have been tested in a large enough population to be reasonably confident that they have no major effects. Some drugs may be harmful. Over 11,000 patients have participated in trials of 13 different drugs that inhibit glutamate release or binding, but two-thirds of all data are from trials of just two drugs. For most drugs in this class, trials have been too small to provide conclusive evidence of harm or benefit. Major differences among individual drugs mean that it is impossible to conclude that all drugs with this mode of action are ineffective. Further trials remain justified, and several are ongoing.

@@ -1,5 +1,0 @@
-pmid:        18668342
-question:    23
-adaptation:  adaptation2
-title:       What we know that could influence future treatment of phenylketonuria
-sentences:   4

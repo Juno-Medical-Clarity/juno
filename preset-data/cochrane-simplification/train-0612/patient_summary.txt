@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0612  |  gem_id: gem-cochrane-simplification-train-613  |  doi: 10.1002/14651858.CD005066.pub2
-
-In this review, we evaluated 16 studies (involving 4759 participants) of healthcare workers or volunteers (a 'stroke liaison worker') providing education and social support (including counselling) and liaison with services. Overall, there do not appear to be any significant benefits for patients in terms of their perceived health, mood, activities or participation. Patients appeared to be more satisfied that someone had really listened to them, and carers appeared to be more satisfied with aspects of the care provided. It also appears that patients with mild to moderate disability may benefit from a reduction in disability and death as a result of the input from the stroke liaison worker. The reason for this is not yet clear and further research is required.

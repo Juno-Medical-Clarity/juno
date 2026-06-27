@@ -1,8 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        complex
-readability: 5.3
-split:       test
-
-jargon_spans:
-  [5:6] 'medical-jargon-google-easy' -> 'helminths'
-  [13:14] 'abbr-medical' -> 'DALYs'

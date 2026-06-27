@@ -1,5 +1,0 @@
-pmid:        34578229
-question:    29
-adaptation:  adaptation1
-title:       Immunobiotic Lactobacilli Improve Resistance of Respiratory Epithelial Cells to SARS-CoV-2 Infection
-sentences:   9

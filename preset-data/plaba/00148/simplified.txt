@@ -1,9 +1,0 @@
-Respiratory syncytial virus (RSV) is a contagious virus that infects the lungs and airway tubes and can lead to lower respiratory tract infections (infection in the airways). These infections are a common reason for infant hospital stays, long-term lung problems, and the development of asthma, a long-term condition that affects the tubes that carry air in and out of the lungs and makes it hard to breathe.
-Many neutrophils (white blood cells that fight infection) enter the airways of children with bronchiolitis (a common lung infection in children and infants) caused by RSV.
-However, why neutrophils are sent to the site of lung infection is not clear.
-This review discusses how neutrophils help the immune system respond to respiratory syncytial virus (RSV) infections.
-Neutrophils can limit how the virus spreads and can activate the immune system to fight the virus.
-Sometimes neutrophils that are fighting infection can lead to tissue damage.
-Neutrophils that cause injury to airways when an infant's lungs are being developed have a long-term impact on lung function and may lead to asthma.
-Medications that can change neutrophils may be explored as a possible therapy for bronchiolitis caused by RSV and prevent the development of asthma.
-For patients with bronchiolitis caused by RSV, it is best to use a general antiviral medication when also using neutrophils to help fight infection.

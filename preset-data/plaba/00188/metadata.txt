@@ -1,5 +1,0 @@
-pmid:        29344508
-question:    15
-adaptation:  adaptation2
-title:       Acid-Base and Electrolyte Disorders in Patients with and without Chronic Kidney Disease: An Update
-sentences:   5

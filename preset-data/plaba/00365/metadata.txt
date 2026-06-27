@@ -1,5 +1,0 @@
-pmid:        34579572
-question:    28
-adaptation:  adaptation2
-title:       Antibody-Dependent Enhancement of SARS-CoV-2 Infection Is Mediated by the IgG Receptors FcγRIIA and FcγRIIIA but Does Not Contribute to Aberrant Cytokine Production by Macrophages
-sentences:   12

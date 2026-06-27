@@ -1,8 +1,0 @@
-The respiratory and behavioral effects of the benzodiazepine receptor (BZR) inverse agonist ethyl-beta-carboline-3-carboxylate (beta-CCE) were determined alone and in combination with buspirone, lorazepam, flumazenil, and SR 95195 in rhesus monkeys.
-For the respiratory studies, one group of monkeys inhaled either air or 5% CO2 mixed in air according to a fixed alternating schedule; respiratory frequency and minute volume were monitored.
-For the behavioral studies, another group of monkeys responded under a fixed-ratio (FR 30) schedule of food presentation.
-The respiratory stimulant effects of beta-CCE in both air and 5% CO2 were enhanced by prior treatment with the 5-hydroxytryptamine1A (5-HT1A) partial agonist buspirone (0.03 and 0.3 mg/kg) and a weak BZR inverse agonist, SR 95195 (10.0 mg/kg).
-Coadministration of buspirone (0.1 and 0.3 mg/kg) also potentiated the rate-decreasing effects of beta-CCE under the FR schedule.
-The BZR agonist lorazepam (3.0 mg/kg) and BZR antagonist flumazenil (1.0 mg/kg) attenuated the effects of beta-CCE on respiratory frequency and minute volume particularly under the 5% CO2 condition, and lorazepam (0.1 and 0.3 mg/kg) and flumazenil (0.1 and 0.3 mg/kg) attenuated the effects of beta-CCE on FR responding.
-These latter results show that the respiratory and behavioral effects of beta-CCE in rhesus monkeys are at least in part due to effects at BZRs.
-Moreover, the findings suggest either that coactivation of benzodiazepine and 5-HT1A sites lead to a greater than additive effect or that beta-CCE and buspirone share a common mechanism of action that is unrelated to the receptor at which BZR inverse agonists act.

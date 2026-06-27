@@ -1,9 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [11:13] 'medical-jargon-google-easy' -> 'neuronal microcircuitry'
-  [15:16] 'general-medical-multisense' -> 'microcircuitry'
-  [21:22] 'medical-jargon-google-easy' -> 'neuropile'

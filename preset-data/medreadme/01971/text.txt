@@ -1,1 +1,0 @@
-Further research is required to understand the performance of propensity score methods for evaluating surgical innovations and implantable devices.

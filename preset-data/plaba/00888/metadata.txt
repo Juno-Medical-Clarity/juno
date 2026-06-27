@@ -1,5 +1,0 @@
-pmid:        PMC3872591
-question:    72
-adaptation:  adaptation2
-title:       Newborn Screening for inherited metabolic disorders; news and views
-sentences:   8

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0248  |  gem_id: gem-cochrane-simplification-test-249  |  doi: 10.1002/14651858.CD003980.pub2
-
-To date, there is no effective treatment for MS, however, a number of studies suggest that exercise interventions aimed to improve daily functioning of patients with MS are effective. Nine randomized controlled trials of exercise therapy for MS patients were included in this review six of which used no therapy as the comparator. There was strong evidence in favor of exercise therapy, compared to no therapy, regarding muscle function and mobility while no evidence was found of improved fatigue, in one study only. No one specifically targeted exercise program was more successful than others. No deleterious effects were described in the included studies.

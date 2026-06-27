@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2981  |  gem_id: gem-cochrane-simplification-train-2982  |  doi: 10.1002/14651858.CD007842.pub2
-
-This review aimed to assess the effectiveness and safety of acupuncture in slowing the progression of myopia in children and adolescents. We included two studies conducted in Taiwan with a total of 131 school children and did not combine the results as the two trials assessed different outcomes. One study found no significant difference in changes in the length of the eyes. Both studies found several children experienced mild pain while pressing and dropped out. The included studies in this review were unable to provide evidence of the effect of acupuncture for slowing the progression of myopia. More trials should be conducted where acupuncture is compared to placebo, other types of acupuncture are investigated, compliance with treatment for at least six months is explored and axial length elongation of the eye should be for at least one year.

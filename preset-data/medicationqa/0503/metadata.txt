@@ -1,5 +1,0 @@
-drug_focus: estradiol transdermal patch; estrogen
-question_type: Information
-section_title: HIGHLIGHTS OF PRESCRIBING INFORMATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d28bec8f-762e-4f05-a20d-96a42970d6a7
-sample_id: 0503

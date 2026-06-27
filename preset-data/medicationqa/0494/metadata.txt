@@ -1,5 +1,0 @@
-drug_focus: cyanocobalamin
-question_type: Usage/time
-section_title: How should this medicine be used
-source_url: https://medlineplus.gov/druginfo/meds/a601167.html
-sample_id: 0494

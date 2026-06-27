@@ -1,5 +1,0 @@
-pmid:        33022987
-question:    53
-adaptation:  adaptation1
-title:       Ingestion of Helianthus tuberosus at Breakfast Rather Than at Dinner Is More Effective for Suppressing Glucose Levels and Improving the Intestinal Microbiota in Older Adults
-sentences:   15

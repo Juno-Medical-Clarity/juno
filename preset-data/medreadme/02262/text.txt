@@ -1,1 +1,0 @@
-An interaction term was calculated for each baseline neural measure and ARAT score change from baseline to outcome.

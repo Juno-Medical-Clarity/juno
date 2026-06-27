@@ -1,1 +1,0 @@
-It has long been proposed that much of the information encoding how a protein folds is contained locally in the peptide chain.

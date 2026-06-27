@@ -1,5 +1,0 @@
-drug_focus: Bioflavonoid
-question_type: Information
-section_title: What are bioflavonoids?
-source_url: https://www.healthline.com/health/bioflavonoids
-sample_id: 0218

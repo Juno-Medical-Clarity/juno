@@ -1,1 +1,0 @@
-We can manipulate the degree of variation between communities by altering the colonization rate, using the amount of bacteria presented to the worms to control the rate at which migrants enter the intestine.

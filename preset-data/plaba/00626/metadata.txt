@@ -1,5 +1,0 @@
-pmid:        34615636
-question:    48
-adaptation:  adaptation1
-title:       B-cell depletion with obinutuzumab for the treatment of proliferative lupus nephritis: a randomised, double-blind, placebo-controlled trial
-sentences:   12

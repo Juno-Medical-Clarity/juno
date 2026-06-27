@@ -1,9 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'paralogous pair'
-  [10:12] 'medical-jargon-google-easy' -> 'phenotypic effect'
-  [15:16] 'medical-jargon-google-easy' -> 'paralog'

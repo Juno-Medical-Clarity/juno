@@ -1,5 +1,0 @@
-pmid:        27401004
-question:    67
-adaptation:  adaptation2
-title:       Efficacy and safety of home-based exercises versus individualized supervised outpatient physical therapy programs after total knee arthroplasty: a systematic review and meta-analysis
-sentences:   12

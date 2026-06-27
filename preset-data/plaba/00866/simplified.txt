@@ -1,9 +1,0 @@
-Research has shown that some patients with schizophrenia  have lower levels of vitamin B6 in the blood than healthy people.
-A study showed that lower vitamin B6 levels increased symptoms of schizophrenia. Higher vitamin B6 levels decreased symptoms of schizophrenia.When measuring the symptoms of schizophrenia, the loss of vitamin B6 might help cause the symptom of schizophrenia.
-To study the relationship between vitamin B6 and schizophrenia, research was done on mice fed a diet without vitamin B6 . This made a mouse model of vitamin B6 deficiency.
-After 4 weeks of that diet, blood levels of vitamin B6  in these mice decreased to 3% of the healthy mice.
-The vitamin B6 deficiency mice showed social and thinking (behavior) problems.
-Also in the vitamin B6 deficiency mouse model, mice showed a high increase in a chemical that suggests increased metabolism of a hormone (noradrenaline (NA)) for flight-or-flight in the brain.
-We proved that certain parts of the brain released this increased NA in vitamin B6 deficiency mice.
-Feeding the mice vitamin B6 supplements decreases the excess NA released by the brain. Treating the mice with a  specific drug, guanfacine (GFC), decreased the NA metabolism. Doing these things helped to correct the behavior problems in the vitamin B6 deficiency mice.
-This research suggests that the behavior problems in the vitamin B6 deficiency mice are caused by an increase in the noradrenergic (NAergic) system.

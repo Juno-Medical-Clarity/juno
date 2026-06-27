@@ -1,8 +1,0 @@
-source:      wiki
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [5:8] 'medical-jargon-google-easy' -> 'obstructive lung diseases'
-  [13:17] 'medical-jargon-google-easy' -> 'chronic obstructive pulmonary disease'

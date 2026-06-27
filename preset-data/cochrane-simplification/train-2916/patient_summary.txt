@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2916  |  gem_id: gem-cochrane-simplification-train-2917  |  doi: 10.1002/14651858.CD002828.pub2
-
-Seven randomised controlled trials which included in all 199 participants are published. None fulfilled the presently accepted standards of a high-quality trial. All these studies have risks of bias and have a weak statistical power. Limited evidence from randomised controlled trials suggests that corticosteroids offer short-term benefit compared with placebo (dummy treatment). This supports the conclusions of observational studies and expert opinion. Limited evidence from randomised controlled trials does not show any difference in efficacy between corticosteroids and either azathioprine or intravenous immunoglobulin. All trials had design flaws which limit the strength of the conclusions. Further randomised controlled trials are needed.

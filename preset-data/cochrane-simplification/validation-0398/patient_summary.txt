@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0398  |  gem_id: gem-cochrane-simplification-validation-399  |  doi: 10.1002/14651858.CD011831.pub2
-
-Only three randomised controlled trials, with a total of 130 participants met the review requirements and provided useable data. The quality of evidence available was low, no real difference was noted between chlorpromazine and penfluridol for hospital admissions, incidence of akathisia or numbers of participants leaving the study early. There were no deaths during the trials. We were unable to use the available data for global and mental state due to poor reporting, and no studies reported relapse data. We can not make firm conclusions regarding the comparable effectiveness between chlorpromazine and penfluridol with such poor quality data - but penfluridol only needs to be given once per week - which could help the poor adherence to medication common with schizophrenia. Remarkably, for such old drugs, more trials that report high-quality data are needed.

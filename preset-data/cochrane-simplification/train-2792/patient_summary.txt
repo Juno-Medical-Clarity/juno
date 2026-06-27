@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2792  |  gem_id: gem-cochrane-simplification-train-2793  |  doi: 10.1002/14651858.CD007769.pub2
-
-This review aimed to identify all double-blind and single-blind randomized, placebo-controlled trials assessing the effects of ginseng on cognitive function. Five trials investigating the effects of ginseng on healthy participants had extractable information for efficacy and were included in the review. Ginseng appeared to have some beneficial effects on cognition, behavior and quality of life. More rigorously designed studies are needed on this important issue.

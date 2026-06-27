@@ -1,5 +1,0 @@
-pmid:        34346706
-question:    1
-adaptation:  adaptation2
-title:       Gut Microbiome and Serum Metabolome Alterations Associated with Isolated Dystonia
-sentences:   18

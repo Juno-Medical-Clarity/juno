@@ -1,5 +1,0 @@
-pmid:        33991399
-question:    36
-adaptation:  adaptation1
-title:       Current and emerging pharmacological targets for medical expulsive therapy
-sentences:   4

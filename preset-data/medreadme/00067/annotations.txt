@@ -1,7 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [6:8] 'medical-jargon-google-easy' -> 'paralog responsiveness'

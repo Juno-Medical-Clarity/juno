@@ -1,9 +1,0 @@
-A panel of internists and nephrologists developed this practical approach for the Kidney Disease Outcomes Quality Initiative to guide assessment and care of chronic kidney disease (CKD) by primary care clinicians.
-Chronic kidney disease is defined as a glomerular filtration rate (GFR) <60 mL/min/1.73m  and/or markers of kidney damage for at least 3 months.
-In clinical practice the most common tests for CKD include GFR estimated from the serum creatinine concentration (eGFR) and albuminuria from the urinary albumin-to-creatinine ratio.
-Assessment of eGFR and albuminuria should be performed for persons with diabetes and/or hypertension but is not recommended for the general population.
-Management of CKD includes reducing the patient's risk of CKD progression and risk of associated complications, such as acute kidney injury and cardiovascular disease, anemia, and metabolic acidosis, as well as mineral and bone disorder.
-Prevention of CKD progression requires blood pressure <140/90 mm Hg, use of angiotensin-converting enzyme inhibitors or angiotensin receptor blockers for patients with albuminuria and hypertension, hemoglobin A1c ≤7% for patients with diabetes, and correction of CKD-associated metabolic acidosis.
-To reduce patient safety hazards from medications, the level of eGFR should be considered when prescribing, and nephrotoxins should be avoided, such as nonsteroidal anti-inflammatory drugs.
-The main reasons to refer to nephrology specialists are eGFR <30 mL/min/1.73 m(2), severe albuminuria, and acute kidney injury.
-The ultimate goal of CKD management is to prevent disease progression, minimize complications, and promote quality of life.

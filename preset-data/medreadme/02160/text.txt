@@ -1,1 +1,0 @@
-We have measured growth scaling and fitness traits of 451 Arabidopsis thaliana accessions with sequenced genomes.

@@ -1,9 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 6.0
-split:       train
-
-jargon_spans:
-  [4:5] 'abbr-medical' -> 'TFs'
-  [8:12] 'medical-jargon-google-easy' -> 'allele - specific preferences'
-  [13:18] 'medical-jargon-google-easy' -> 'CTCF ChIP - seq data'

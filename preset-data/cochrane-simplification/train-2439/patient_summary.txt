@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2439  |  gem_id: gem-cochrane-simplification-train-2440  |  doi: 10.1002/14651858.CD005989.pub2
-
-We reviewed evidence from 27 trials covering 21 different herbal treatments in both adults and children from both in-patient and out-patient settings. In general, the reporting of trials was poor. The outcomes measured by the trials varied considerably which made it difficult to compare the results of studies that did look at the same treatment. On the basis of the available evidence it is not possible to show whether any of these herbal treatments can improve asthma symptoms. Further trials of high quality are needed to assess the use of herbal treatments in asthma.

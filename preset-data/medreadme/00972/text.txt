@@ -1,1 +1,0 @@
-The present coarse-grained model was, however, developed rigorously from the underlying atomistic forces as opposed to knowledge-based or ad hoc parameterizations.

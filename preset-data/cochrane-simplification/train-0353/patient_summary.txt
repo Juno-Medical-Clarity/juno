@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0353  |  gem_id: gem-cochrane-simplification-train-354  |  doi: 10.1002/14651858.CD009536.pub2
-
-We identified seven trials involving 1558 participants where the aneurysm diameters of patients randomised to receive medical treatment were compared to those participants given a control medication or surveillance imaging alone. Four trials studied the effects of antibiotics on slowing aneurysm growth, and showed a small protective effect. Three trials studied the effects of beta-blockers, and demonstrated a very small protective effect. Notably, the beta-blocker drugs were associated with a large number of adverse effects. It was unclear whether either drug type delayed referral to aneurysm surgery. The accuracy of the results was limited by the low number of participants (especially important when trying to detect small changes in aneurysm growth rates) and some potentially damaging biases.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0405  |  gem_id: gem-cochrane-simplification-validation-406  |  doi: 10.1002/14651858.CD003361
-
-However, the review found there is not enough evidence from trials to show whether beta-blockers are safe and effective for tremor in Parkinson's disease. The blood pressure lowering effect of beta-blockers may be a problem to people with Parkinson's disease and normal blood pressure.

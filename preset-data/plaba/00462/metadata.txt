@@ -1,5 +1,0 @@
-pmid:        33987110
-question:    36
-adaptation:  adaptation1
-title:       Minimally Invasive Surgery for the Treatment of Ureteric Stones - State-of-the-Art Review
-sentences:   6

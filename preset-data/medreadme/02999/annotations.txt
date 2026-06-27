@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.85
-split:       dev
-
-jargon_spans:
-  [32:35] 'medical-jargon-google-easy' -> 'minimal hepatic encephalopathy'

@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [3:8] 'medical-name-entity' -> 'Cochrane Register of Controlled Trials'
-  [16:17] 'medical-name-entity' -> 'MEDLINE'
-  [28:29] 'medical-name-entity' -> 'Embase'

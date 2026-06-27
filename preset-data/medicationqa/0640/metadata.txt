@@ -1,5 +1,0 @@
-drug_focus: fluorouracil cream
-question_type: Storage and disposal
-section_title: Shelf life
-source_url: https://www.medicines.org.uk/emc/product/9260/smpc
-sample_id: 0640

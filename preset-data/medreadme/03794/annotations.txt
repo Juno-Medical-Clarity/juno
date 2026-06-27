@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [15:20] 'medical-jargon-google-hard' -> 'pedicled buccal fat pad flap'
-  [21:23] 'medical-jargon-google-hard' -> 'buccal flap'
-  [27:31] 'medical-jargon-google-easy' -> 'oro - antral communications'

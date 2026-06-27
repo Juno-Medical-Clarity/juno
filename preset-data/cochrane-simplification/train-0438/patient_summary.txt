@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0438  |  gem_id: gem-cochrane-simplification-train-439  |  doi: 10.1002/14651858.CD007751.pub2
-
-This review identified four studies (enrolling 2177 people). Three studies compared ACEi to placebo or no treatment and one study compared ACEi to ARB. There is not enough evidence in the published literature at present to determine how effective drugs in the ACEi or ARB families are for treating patients with early (stage 1 to 3) CKD who do not have diabetes.

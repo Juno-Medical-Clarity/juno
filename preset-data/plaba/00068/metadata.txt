@@ -1,5 +1,0 @@
-pmid:        27981511
-question:    6
-adaptation:  adaptation1
-title:       The emergence of levothyroxine as a treatment for hypothyroidism
-sentences:   14

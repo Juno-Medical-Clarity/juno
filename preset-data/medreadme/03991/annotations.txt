@@ -1,8 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        simple
-readability: 3.5
-split:       test
-
-jargon_spans:
-  [11:13] 'medical-jargon-google-easy' -> 'binge drinking'
-  [18:20] 'general-complex' -> 'control group'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2866  |  gem_id: gem-cochrane-simplification-train-2867  |  doi: 10.1002/14651858.CD001216.pub2
-
-The screening test used in these trials to detect colorectal (bowel) cancer was the faecal occult blood test (FOBT). If the FOBT is positive, the bowels are examined closely with further diagnostic test (coloscopy, flexible sigmoidoscopy, double-contrast barium enema), but these tests often cause discomfort and can cause serious adverse consequences. As blood identified in faeces may be due to several reason (unrelated to cancer), it may cause people unnecessary stress and expose them to possible harm. This review found that FOBT screening is likely to avoid approximately 1 in 6 colorectal cancer deaths.

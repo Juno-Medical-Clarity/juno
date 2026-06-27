@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0815  |  gem_id: gem-cochrane-simplification-train-816  |  doi: 10.1002/14651858.CD004097.pub4
-
-This systematic review assesses the effects of studies that examined dietary advice with or without the addition of exercise or behavioural approaches. Eighteen studies were included. No data were found on micro- or macrovascular diabetic complications, mortality or quality of life. It is difficult to draw reliable conclusions from the limited data that are presented in this review, however, the addition of exercise to dietary advice showed improvement of metabolic control after six- and twelve-month follow-up.

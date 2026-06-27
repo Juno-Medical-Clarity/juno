@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2399  |  gem_id: gem-cochrane-simplification-train-2400  |  doi: 10.1002/14651858.CD008023.pub2
-
-This review looked for studies that had considered the effectiveness of drugs used to help patients to empty their bladder after surgery. Few studies were found. There is some evidence that introducing an agent called prostaglandin into the bladder can help patients to regain the ability to empty their bladders. There is weaker evidence that drugs called cholinergics, combined with a sedative, can also help. There is a need for more research in this area.

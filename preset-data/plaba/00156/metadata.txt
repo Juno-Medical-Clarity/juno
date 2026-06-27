@@ -1,5 +1,0 @@
-pmid:        18612186
-question:    13
-adaptation:  adaptation1
-title:       Antiarrhythmic effect of bisoprolol, a highly selective beta1-blocker, in patients with paroxysmal atrial fibrillation
-sentences:   13

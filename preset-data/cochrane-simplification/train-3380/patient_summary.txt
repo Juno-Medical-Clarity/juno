@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3380  |  gem_id: gem-cochrane-simplification-train-3381  |  doi: 10.1002/14651858.CD002011.pub2
-
-We looked for studies lasting over one week. We included fifteen studies in the review. These studies did not show any difference between chest physiotherapy and other therapies in terms of lung function. Studies of acute infections showed improved lung function irrespective of type of treatment. Longer-term studies showed smaller improvements or decline. In ten studies participants preferred techniques they administered on themselves. The review was limited by the lack of well-designed long-term trials. We did not find evidence that conventional chest physiotherapy techniques were any better than other treatments for lung function. We can not recommend any single treatment over another at this time.

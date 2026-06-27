@@ -1,7 +1,0 @@
-source:      pnas
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [12:17] 'medical-jargon-google-easy' -> 'two - component signal transduction'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2725  |  gem_id: gem-cochrane-simplification-train-2726  |  doi: 10.1002/14651858.CD008444.pub2
-
-We searched for all trials that compared continuous monitoring with intermittent monitoring in people with acute stroke. We identified three studies including a total of 354 participants. Stroke unit care with continuous monitoring was associated with a significant reduction in the chance of being dead or disabled after the stroke. Unfortunately this evidence is not entirely reliable because of the small number of participants, differences in the definitions of abnormal results, and the less reliable methods used in the largest trial. Further research is required to answer many remaining questions, such as when to start continuous monitoring, when to interrupt it, which people should be given priority, and which treatments are most appropriate after the identification of abnormalities in physiological variables.

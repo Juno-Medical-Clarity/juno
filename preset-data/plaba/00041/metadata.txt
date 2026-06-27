@@ -1,5 +1,0 @@
-pmid:        22059988
-question:    4
-adaptation:  adaptation2
-title:       Detection of four diabetes specific autoantibodies in a single radioimmunoassay: an innovative high-throughput approach for autoimmune diabetes screening
-sentences:   8

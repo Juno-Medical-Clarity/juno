@@ -1,5 +1,0 @@
-pmid:        34618348
-question:    48
-adaptation:  adaptation1
-title:       Low-Dose Interleukin-2 as an Alternative Therapy for Refractory Lupus Nephritis
-sentences:   14

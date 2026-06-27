@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3411  |  gem_id: gem-cochrane-simplification-train-3412  |  doi: 10.1002/14651858.CD009360.pub2
-
-The authors found two small heterogeneous randomised trials that investigated the effect of inspiratory muscle training. These studies do not provide enough evidence to draw any conclusions about the effect of inspiratory muscle training for patients with stroke. There is also no evidence relating to the safety of inspiratory muscle training. Future well-designed studies are needed.

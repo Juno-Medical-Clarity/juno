@@ -1,5 +1,0 @@
-drug_focus: Oxycontin
-question_type: Time/duration
-section_title: n/a
-source_url: n/a
-sample_id: 0159

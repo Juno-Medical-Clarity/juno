@@ -1,1 +1,0 @@
-Focusing on the model bacterium Caulobacter crescentus, which generates two different types of daughter cells from an underlying asymmetric distribution of protein phosphorylation, we use mathematical modeling to investigate the contribution of the localization of histidine kinases to the establishment of cellular asymmetry and subsequent developmental outcomes.

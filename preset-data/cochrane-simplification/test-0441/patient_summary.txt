@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0441  |  gem_id: gem-cochrane-simplification-test-442  |  doi: 10.1002/14651858.CD008975.pub2
-
-In this review we investigated the effect of lock treatments on CVC-related infections. We identified three studies: two investigating the effect of urokinase lock treatments in addition to antibiotics and one study investigating the effect of ethanol locks in addition to antibiotics. We could detect no effect of urokinase or ethanol locks. However, the groups were very small. A similar study with a larger participant population might have different results.

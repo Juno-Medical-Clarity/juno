@@ -1,5 +1,0 @@
-drug_focus: terfenadine
-question_type: Information
-section_title: Terfenadine
-source_url: https://pubchem.ncbi.nlm.nih.gov/compound/terfenadine#section=Top
-sample_id: 0682

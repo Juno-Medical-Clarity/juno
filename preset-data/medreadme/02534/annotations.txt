@@ -1,9 +1,0 @@
-source:      pnas
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-hard' -> 'H4K20 methylation'
-  [8:10] 'medical-jargon-google-easy' -> 'thermogenic adipocytes'
-  [13:14] 'general-complex' -> 'elucidated'

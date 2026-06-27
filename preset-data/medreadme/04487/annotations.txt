@@ -1,7 +1,0 @@
-source:      wiki
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [9:10] 'medical-jargon-google-easy' -> 'neurotoxins'

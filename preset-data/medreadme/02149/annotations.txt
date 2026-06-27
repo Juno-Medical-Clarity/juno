@@ -1,8 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'Hepatocystis'
-  [6:7] 'medical-jargon-google-easy' -> 'Plasmodium'

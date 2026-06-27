@@ -1,8 +1,0 @@
-source:      MSD
-side:        simple
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Hot flashes'
-  [5:7] 'medical-jargon-google-easy' -> 'hot flushes'

@@ -1,5 +1,0 @@
-drug_focus: insulin glargine
-question_type: Information
-section_title: NA
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0ad21db3-2b1c-4ed9-a687-bdd6a74d0aae
-sample_id: 0055

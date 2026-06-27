@@ -1,9 +1,0 @@
-The coronavirus are a wide group of viruses among that the SARS-CoV-2 (the novel breathing-related coronavirus that can lead to COVID-19) is included.
-Its main structural proteins are the membrane (M) (a thin layer of lipids that protects the cell and acts as a barrier), the envelope (E) (a small membrane protein and is involved in parts of a virus life cycle), the nucleocapsid (N) (an important protein for viral replication and genome packaging) and spike (S) (a protein involved in introducing coronavirus into host cells).
-The immune response to SARS-CoV-2 involves the cellular (white blood cells that defend the body against infection) and the humoral sides (molecules that create antibodies against a specific antigen and involve substances found in the humors, or body fluids).
-There are some data of the percentage of people in a population who have antibodies to an infectious virus. These data are sometimes used to find out how well people are protected from a virus.
-In Spain, it is suggested that to reach herd immunity (a form of indirect protection from an infectious disease that can occur when a sufficient percentage of a population has become immune to an infection), at least four-fifths of a population (about 80%) should have immunity.
-Due to the high death rate of COVID-19, being protected by getting the virus is not always reliable, and other measures to reach mass immunization are required.
-There are different vaccine types currently being evaluated.
-It is expected that these new vaccines will soon be available to the public.
-This text reviews different issues related to vaccines and immunity.

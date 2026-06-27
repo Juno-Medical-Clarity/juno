@@ -1,5 +1,0 @@
-pmid:        35057447
-question:    65
-adaptation:  adaptation2
-title:       Associations between Vitamin D, Omega 6:Omega 3 Ratio, and Biomarkers of Aging in Individuals Living with and without Chronic Pain
-sentences:   12

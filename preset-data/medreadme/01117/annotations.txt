@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [5:9] 'medical-jargon-google-easy' -> 'low - potency drugs'

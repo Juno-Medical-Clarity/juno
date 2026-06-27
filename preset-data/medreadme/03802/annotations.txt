@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [13:17] 'medical-jargon-google-hard' -> 'pedicled buccal fat pad'
-  [18:20] 'medical-jargon-google-hard' -> 'buccal flap'

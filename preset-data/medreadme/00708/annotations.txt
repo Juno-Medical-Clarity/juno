@@ -1,8 +1,0 @@
-source:      elife
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Chemokines'
-  [11:12] 'medical-jargon-google-easy' -> 'eukaryotic'

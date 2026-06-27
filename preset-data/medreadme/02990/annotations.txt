@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 5.15
-split:       dev
-
-jargon_spans:
-  [1:4] 'general-complex' -> 'Trial Sequential Analysis'
-  [9:10] 'medical-jargon-google-easy' -> 'flumazenil'
-  [11:13] 'medical-jargon-google-easy' -> 'hepatic encephalopathy'

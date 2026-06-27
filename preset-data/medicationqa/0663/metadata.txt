@@ -1,5 +1,0 @@
-drug_focus: carvedilol
-question_type: Side effects
-section_title: Can beta blockers cause weight gain?
-source_url: https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/expert-answers/beta-blockers/faq-20058385
-sample_id: 0663

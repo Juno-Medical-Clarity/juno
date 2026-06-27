@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2431  |  gem_id: gem-cochrane-simplification-train-2432  |  doi: 10.1002/14651858.CD002837.pub2
-
-This review found that patients with acute pancreatitis receiving enteral nutrition have fewer episodes of death, systemic infections, multiple organ failure and operative interventions. This data suggests that EN should be considered the standard of care for patients with acute pancreatitis requiring nutritional support.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2619  |  gem_id: gem-cochrane-simplification-train-2620  |  doi: 10.1002/14651858.CD007185.pub2
-
-In this review, we asked how much do beta-blockers reduce BP when used as the second drug to treat hypertension. Twenty trials lasting an average of 7 weeks were found in the world scientific literature to answer this question. The data showed that the addition of a beta-blocker to thiazide diuretics or calcium channel blockers reduced BP by 8/6 mmHg when given at doses 2 times the recommended starting dose. When we compared these results with our previous review of the blood pressure lowering effect of thiazide diuretics as second line drug, we found that beta-blockers have a different pattern of BP lowering. This different pattern of effect on blood pressure might explain why first-line beta-blockers appear to be less effective at reducing adverse cardiovascular outcomes than first-line thiazide diuretics, particularly in older individuals.

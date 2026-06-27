@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.85
-split:       test
-
-jargon_spans:
-  [3:4] 'medical-jargon-google-easy' -> 'superoxide'
-  [17:21] 'medical-jargon-google-easy' -> 'wild - type aging'

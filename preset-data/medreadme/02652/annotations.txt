@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        simple
-readability: 4.0
-split:       dev
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'cortisol'
-  [6:7] 'medical-jargon-google-easy' -> 'antidepressants'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0486  |  gem_id: gem-cochrane-simplification-train-487  |  doi: 10.1002/14651858.CD004787.pub2
-
-The review included nine trials with 645 participants. Six trials assessed TACE versus control and three trials assessed TAE versus control. All trials had risks of systematic errors ('bias'). Contrary to current practice in many hospitals, we could not demonstrate any beneficial effect of TACE or TAE on either survival or tumour growth in patients with primary liver cancer not suitable for surgical resection. Furthermore, we calculated that more clinical trials involving a further 383 trial participants may be needed before firm evidence may become available. Importantly, TACE or TAE is associated with a wide range of adverse events, some being potentially serious. Accordingly, we recommend that TACE or TAE should not be used as standard treatment for liver cancer until firmer evidence is available from randomised clinical trials.

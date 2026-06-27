@@ -1,5 +1,0 @@
-drug_focus: heroin, fentanyl
-question_type: Interaction
-section_title: What is fentanyl?
-source_url: https://www.cdc.gov/drugoverdose/opioids/fentanyl.html
-sample_id: 0560

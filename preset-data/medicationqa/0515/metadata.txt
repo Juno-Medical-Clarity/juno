@@ -1,5 +1,0 @@
-drug_focus: metformin
-question_type: Stopping/side effects
-section_title: What types of medicines treat PCOS?
-source_url: https://www.womenshealth.gov/a-z-topics/polycystic-ovary-syndrome
-sample_id: 0515

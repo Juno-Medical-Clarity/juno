@@ -1,5 +1,0 @@
-pmid:        32659844
-question:    41
-adaptation:  adaptation2
-title:       Kidney Cysts and Cystic Nephropathies in Children - A Consensus Guideline by 10 German Medical Societies
-sentences:   14

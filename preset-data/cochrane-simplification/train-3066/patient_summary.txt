@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3066  |  gem_id: gem-cochrane-simplification-train-3067  |  doi: 10.1002/14651858.CD008238.pub3
-
-Therefore, we conducted a systematic review assessing the influence of CSFs on disease and infection-related outcomes. Our review showed that the addition of CSFs to chemotherapy in AML patients affected neither overall survival, nor the achievement of disease remission or the rate of relapse. Importantly, they did not affect the rate of infections in this population. We concluded that CSFs post-chemotherapy should not be given routinely in AML patients. However, their administration could be considered on an individual basis.

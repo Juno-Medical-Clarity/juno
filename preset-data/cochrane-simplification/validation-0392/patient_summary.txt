@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0392  |  gem_id: gem-cochrane-simplification-validation-393  |  doi: 10.1002/14651858.CD006379.pub3
-
-A systematic review of benzodiazepine treatment of non-alcohol related delirium discovered very few trials (one randomized, controlled study of mechanically ventilated patients, and thus poorly reflective of delirious patients as a whole; and two partially controlled studies), the results of which indicate that at this time there is no evidence to support the use of benzodiazepines in the treatment of non-alcohol withdrawal related delirium among hospitalised patients.

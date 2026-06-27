@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0211  |  gem_id: gem-cochrane-simplification-test-212  |  doi: 10.1002/14651858.CD009513
-
-We identified four studies that evaluated interventions designed to improve adherence to ART among children and adolescents age 18 years and younger. These studies showed that home-based nursing, peer support for adolescents and LPV/r-containing regimens have the potential to improve ART adherence, but more evidence is needed. Medication diaries do not appear to have an effect on adherence. There is a need for well-designed evaluations of interventions to improve paediatric adherence to ART.

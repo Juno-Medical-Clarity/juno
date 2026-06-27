@@ -1,9 +1,0 @@
-Understanding when a potential COVID-19 patient is contagious in relation to when they first show symptoms is important to help reduce the spread of the virus.
-Is it not easy to determine COVID-19 transmission duration, or how long the virus was spread, as it is difficult to trace who had contact with who.
-The goal of this paper was to determine COVID-19 transmission by evaluating 72 infector-infected pairs from South Korea, with known or estimated contact dates, by reviewing the pairs' incubation period. The incubation period is a time between the date of exposure and the first day of virus related symptoms.
-Using this data in comparison with the confirmed date of the infector's first day of symptoms, the authors aim to estimate when an infected person first becomes contagious (able to spread the virus).
-The time between the date of infection and the time a person is capable of spreading COVID-19 to others could be predicted.
-The estimated average time of COVID-19 spreading to others after a patient first shows symptoms was 1.31 days. However, the peak of transmissibility was 0.72 days before symptoms appear.
-The amount of cases that displayed patients who could spread the virus before they started showing symptoms accounted for 37% of the 72 reviewed cases.
-The average time between COVID-19 entering a person's body (time of exposure) and the onset of symptoms was 2.87 days.
-This paper has shown that ability of a person to spread COVID-19 was highest at the time symptoms first occurred. Additionally, it has been demonstrated a large portion of the population is able to spread the virus even before symptoms occur. Because of this, the usual measures to prevent the spread of COVID-19 may not be enough to improve public health.

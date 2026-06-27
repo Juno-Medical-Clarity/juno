@@ -1,5 +1,0 @@
-drug_focus: fentanyl
-question_type: Usage
-section_title: IMPORTANT WARNING:
-source_url: https://medlineplus.gov/druginfo/meds/a605043.html
-sample_id: 0594

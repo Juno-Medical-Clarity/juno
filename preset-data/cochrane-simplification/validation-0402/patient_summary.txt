@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0402  |  gem_id: gem-cochrane-simplification-validation-403  |  doi: 10.1002/14651858.CD004050.pub2
-
-The reviewers conclude that the benefit of light treatment is modest though promising for non-seasonal depression. The short-term treatment as well as light administered in the morning and with concomitant sleep deprivation in sleep deprivation responders appear to be most beneficial for treatment response. Hypomania as a potential adverse effect needs to be considered. Due to limited data and heterogeneity of studies these results need to be interpreted with caution.

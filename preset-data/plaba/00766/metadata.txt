@@ -1,5 +1,0 @@
-pmid:        19306923
-question:    61
-adaptation:  adaptation3
-title:       Comparative in vitro toxicity of seven zinc-salts towards neuronal PC12 cells
-sentences:   8

@@ -1,5 +1,0 @@
-pmid:        34924800
-question:    68
-adaptation:  adaptation2
-title:       Therapeutic Potential Of Induced Iron Depletion Using Iron Chelators In Covid-19
-sentences:   9

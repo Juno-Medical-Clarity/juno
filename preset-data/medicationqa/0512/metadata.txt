@@ -1,5 +1,0 @@
-drug_focus: hepatitits B vaccine
-question_type: Time/effectiveness
-section_title: How long does protection from hepatitis B vaccine last?
-source_url: https://www.cdc.gov/hepatitis/hbv/hbvfaq.htm
-sample_id: 0512

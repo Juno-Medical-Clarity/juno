@@ -1,5 +1,0 @@
-drug_focus: zithromax
-question_type: Information
-section_title: PATIENT INFORMATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db52b91e-79f7-4cc1-9564-f2eee8e31c45&audience=consumer
-sample_id: 0542

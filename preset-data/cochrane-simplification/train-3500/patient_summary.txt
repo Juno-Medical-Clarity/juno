@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3500  |  gem_id: gem-cochrane-simplification-train-3501  |  doi: 10.1002/14651858.CD011878.pub2
-
-In medical literature searches complete to March 2016, we identified and included three clinical trials with 140 newborns comparing salbutamol with placebo. Two studies evaluated a single, nebulized (where the medicine is given in a fine mist) dose of salbutamol, and one study evaluated two different dosages. We found one additional trial that is still underway. Salbutamol reduced the duration of treatment with oxygen in newborns with transient tachypnea (reported in one study); whereas it did not affect the need for respiratory support or any other relevant outcomes. The results of this systematic review were consistent with either a benefit or a detrimental effect of salbutamol and did not provide a definitive answer to the review question.

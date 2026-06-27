@@ -1,1 +1,0 @@
-Our model reproduces the hb developmental dynamics and correctly predicts the mutant patterns.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0163  |  gem_id: gem-cochrane-simplification-validation-164  |  doi: 10.1002/14651858.CD008891.pub3
-
-We undertook this review because it was unclear which of the various salvage combinations, if any, was the most effect and the least toxic. We searched the literature up to November 2015 to find all relevant studies. Unfortunately, we were unable to find any good quality studies that compared the different types of salvage treatments. This is partly because the disease has a high cure rate with several combination chemotherapy options, but is also owing to the rarity of the disease that makes recruiting for large studies difficult. Hence we were unable to draw conclusions about how these drug combinations compare with regard to their effectiveness and side effects, and we urge researchers in this field to collaborate to provide this important evidence.

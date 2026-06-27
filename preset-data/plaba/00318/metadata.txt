@@ -1,5 +1,0 @@
-pmid:        34537363
-question:    25
-adaptation:  adaptation2
-title:       Influence of treatment with neutralizing monoclonal antibodies on the SARS-CoV-2 nasopharyngeal load and quasispecies
-sentences:   10

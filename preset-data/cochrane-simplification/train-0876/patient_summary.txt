@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0876  |  gem_id: gem-cochrane-simplification-train-877  |  doi: 10.1002/14651858.CD007187.pub2
-
-We performed a search of the available scientific literature to find all trial evidence to assess this question. Fifty-six trials were found. Fifty-three trials involved thiazide diuretics (92% with the drug hydrochlorothiazide) and included a total of 15310 participants. Adding a thiazide to another anti-hypertensive drug further reduces the BP by an additional 6/3 mmHg when given at the starting dose and reduces BP by 8/4 mmHg at 2 times the starting dose. This is approximately the same effect as when the drugs are used alone. A good estimate of the harms associated with diuretics cannot be estimated in this review because of the lack of reporting and the short duration of the trials.

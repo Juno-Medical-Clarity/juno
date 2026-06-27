@@ -1,5 +1,0 @@
-drug_focus: antiviral drugs
-question_type: Side effects
-section_title: Treatment outcomes
-source_url: https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-017-0969-3
-sample_id: 0255

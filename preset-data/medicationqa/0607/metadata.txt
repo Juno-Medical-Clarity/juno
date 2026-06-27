@@ -1,5 +1,0 @@
-drug_focus: warfarin; spices
-question_type: Interaction
-section_title: Review on mechanisms and interactions in concomitant use of herbs and warfarin therapy.
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/27470545
-sample_id: 0607

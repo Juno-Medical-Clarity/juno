@@ -1,5 +1,0 @@
-drug_focus: latanoprost ophthalmic
-question_type: Storage and disposal
-section_title: HOW SUPPLIED/STORAGE AND HANDLING
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f44d3f09-fa2d-4f01-831d-71a15bde5e29&audience=consumer
-sample_id: 0589

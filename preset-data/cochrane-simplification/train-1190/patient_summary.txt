@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1190  |  gem_id: gem-cochrane-simplification-train-1191  |  doi: 10.1002/14651858.CD007717.pub2
-
-Our searches identified a large body of trial evidence and also a substantial body of work in progress. This revealed that telehealthcare initiatives are unlikely to be of benefit in improving quality of life for the majority of people with relatively mild asthma, but that these interventions may prove useful in preventing exacerbations and hospital admissions in people with more severe asthma. We believe it is important for more research to be done to establish the cost-effectiveness of these interventions.

@@ -1,5 +1,0 @@
-drug_focus: high cholesterol medication
-question_type: Action
-section_title: Summary
-source_url: https://medlineplus.gov/statins.html
-sample_id: 0254

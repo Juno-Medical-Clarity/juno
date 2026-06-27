@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Fluphenazine'
-  [2:7] 'medical-jargon-google-easy' -> 'low - potency antipsychotic drugs'
-  [8:9] 'medical-jargon-google-easy' -> 'schizophrenia'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0830  |  gem_id: gem-cochrane-simplification-train-831  |  doi: 10.1002/14651858.CD008886.pub2
-
-There is insufficient evidence to establish the value of combination therapy over monotherapy for people with IA. We included 23 studies in this review, all at high risk of bias (i.e. high chance of giving invalid results). Twenty-two of the trials were in patients with RA and one in a mixed population (RA and osteoarthritis). There were no studies in patients with AS, PsA or SpA. Included studies were old (all but one were published before 1990) and patients were, in general, not on optimal disease-modifying antirheumatic drugs, as is standard current practice. Therefore, it is not possible to draw conclusions about the value of combination pain therapy over monotherapy for people with IA. Importantly, there are no studies addressing the value of combination therapy for patients with IA who have persistent pain despite optimal disease suppression. Well designed studies are needed to address this question.

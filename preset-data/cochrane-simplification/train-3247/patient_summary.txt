@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3247  |  gem_id: gem-cochrane-simplification-train-3248  |  doi: 10.1002/14651858.CD005071.pub4
-
-There was a trend towards an increase in live birth and pregnancy rates during and within three months of gonadotrophin treatment. The quality of the evidence was very low. We did not find enough studies to allow final conclusions about the use of gonadotrophins in the treatment of men with idiopathic male factor subfertility. The quality of the evidence was very low. More studies on this subject are needed. The evidence is current to January 2013.

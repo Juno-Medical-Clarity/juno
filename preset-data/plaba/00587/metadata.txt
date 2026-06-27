@@ -1,5 +1,0 @@
-pmid:        31237193
-question:    45
-adaptation:  adaptation1
-title:       Efficacy of a Ceratothoa oestroides Olive Oil Extract in Patients With Chronic Ulcers: A Pilot Study
-sentences:   9

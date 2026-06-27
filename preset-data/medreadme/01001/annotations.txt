@@ -1,9 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [2:3] 'abbr-medical' -> 'OV'
-  [16:17] 'medical-jargon-google-easy' -> 'epidemiological'
-  [19:20] 'medical-jargon-google-easy' -> 'rabies'

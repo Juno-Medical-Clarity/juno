@@ -1,5 +1,0 @@
-drug_focus: Carbidopa and Levodopa, extended release
-question_type: Appearance
-section_title: Description
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5217a6ec-cc26-4acc-b2da-17f6545c3b60&audience=consumer
-sample_id: 0116

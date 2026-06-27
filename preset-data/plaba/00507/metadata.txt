@@ -1,5 +1,0 @@
-pmid:        34638000
-question:    39
-adaptation:  adaptation2
-title:       Relationships between frontal metabolites and Alzheimer's disease biomarkers in cognitively normal older adults
-sentences:   7

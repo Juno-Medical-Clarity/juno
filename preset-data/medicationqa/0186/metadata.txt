@@ -1,5 +1,0 @@
-drug_focus: Biologic
-question_type: Information
-section_title: What is a biological product?
-source_url: https://www.fda.gov/aboutfda/centersoffices/officeofmedicalproductsandtobacco/cber/ucm133077.htm
-sample_id: 0186

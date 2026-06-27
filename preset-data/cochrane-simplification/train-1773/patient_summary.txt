@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1773  |  gem_id: gem-cochrane-simplification-train-1774  |  doi: 10.1002/14651858.CD005046.pub3
-
-We set out to undertake a systematic review comparing randomised controlled trials that examined the efficacy and safety of PD and BTX injection in people with achalasia. We searched databases (MEDLINE, EMBASE, ISI Web of Science, and The Cochrane Library) in April 2014 for reports of relevant randomised controlled trials. Seven randomised controlled trials were identified for inclusion in the review, and five were suitable for meta-analysis. Meta-analysis suggested that, although both interventions had similar initial response rates, the remission rates at six and 12 months were significantly greater with PD than with BTX injection.

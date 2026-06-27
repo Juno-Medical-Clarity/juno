@@ -1,5 +1,0 @@
-pmid:        10845240
-question:    40
-adaptation:  adaptation1
-title:       Compression therapy for venous leg ulcers
-sentences:   4

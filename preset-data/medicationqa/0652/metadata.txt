@@ -1,5 +1,0 @@
-drug_focus: insulin
-question_type: Usage
-section_title: Insulin Therapy
-source_url: https://familydoctor.org/insulin-therapy/?adfree=true
-sample_id: 0652

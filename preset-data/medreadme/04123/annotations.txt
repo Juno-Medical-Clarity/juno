@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [8:9] 'medical-jargon-google-easy' -> 'embryo'
-  [14:16] 'medical-jargon-google-easy' -> 'stem cells'

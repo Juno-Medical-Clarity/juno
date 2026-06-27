@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2135  |  gem_id: gem-cochrane-simplification-train-2136  |  doi: 10.1002/14651858.CD008960.pub2
-
-The objective of this review was to evaluate the benefits and harms of phyllanthus species for patients with chronic HBV infection. Phyllanthus species appear to be safe and may potentially have effects on the clearance of viral markers in patients with HBV infection. However, all of the trials evaluated in this review were of low methodology quality, ie, have high risk of bias, and there was a risk of random errors in the majority of comparisons. Furthermore, all analyses showed substantial heterogeneity. Accordingly, randomised clinical trials with low risk of bias and large sample size should be conducted to confirm the effects of phyllanthus species before clinical use is considered.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0263  |  gem_id: gem-cochrane-simplification-validation-264  |  doi: 10.1002/14651858.CD003300.pub3
-
-This review found 34 studies that have evaluated various types of GDL programs. All of the studies reported positive findings, with reductions for all types of crashes among all teenage drivers. However, the size of the reductions varied and, based on the included studies it is not possible to say which aspects of GDL programs have the biggest effect. Future research on GDL should evaluate the relative impact of different program components.

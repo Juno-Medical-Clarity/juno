@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2128  |  gem_id: gem-cochrane-simplification-train-2129  |  doi: 10.1002/14651858.CD008538.pub2
-
-This review of three studies did not show any difference in effectiveness between sargramostim and placebo (fake drug) for induction of remission or clinical improvement in patients with active Crohn's disease. Side effects associated with sargramostim treatment included bone pain, musculoskeletal chest pain, and dyspnea (shortness of breath). Due to the fact that there were only a small number of trials in this area and some of them give opposite results, the authors concluded that while sargramostim does not appear to be more effective than placebo more research is needed to determine if this drug provides a benefit for the treatment of active Crohn's disease.

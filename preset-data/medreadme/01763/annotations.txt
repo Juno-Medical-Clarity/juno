@@ -1,8 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'hemoglobin concentration'
-  [20:21] 'abbr-general' -> 'DU'

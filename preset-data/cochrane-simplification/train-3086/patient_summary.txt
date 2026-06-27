@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3086  |  gem_id: gem-cochrane-simplification-train-3087  |  doi: 10.1002/14651858.CD006224.pub3
-
-The review authors investigated 281 studies that claimed to be randomised controlled trials and that used Chinese herbal medicines in the treatment of ectopic pregnancy.Only two of these studies were confirmed to be randomised controlled trials. Both trials were of poor quality in terms of design and how they were conducted.These studies did not provide clear evidence that CHM is beneficial in the treatment of ectopic pregnancy.

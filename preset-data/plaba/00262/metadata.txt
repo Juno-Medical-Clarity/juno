@@ -1,5 +1,0 @@
-pmid:        28828685
-question:    21
-adaptation:  adaptation1
-title:       Modern diagnosis and treatment of hiatal hernias
-sentences:   13

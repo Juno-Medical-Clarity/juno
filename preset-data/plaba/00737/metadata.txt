@@ -1,5 +1,0 @@
-pmid:        35140406
-question:    58
-adaptation:  adaptation3
-title:       Vaccine effectiveness of heterologous CoronaVac plus BNT162b2 in Brazil
-sentences:   7

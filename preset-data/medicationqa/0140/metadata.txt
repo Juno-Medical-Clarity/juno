@@ -1,5 +1,0 @@
-drug_focus: Tramadol
-question_type: Dose
-section_title: Description
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae7c54b1-b440-4cca-97e8-e5b825413d32
-sample_id: 0140

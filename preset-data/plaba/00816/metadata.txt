@@ -1,5 +1,0 @@
-pmid:        32951732
-question:    65
-adaptation:  adaptation2
-title:       Biochemical and therapeutic effects of Omega-3 fatty acids in sickle cell disease
-sentences:   11

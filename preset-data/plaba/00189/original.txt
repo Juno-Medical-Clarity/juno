@@ -1,9 +1,0 @@
-Potassium is mainly an intracellular ion.
-The sodium-potassium adenosine triphosphatase pump has the primary responsibility for regulating the homeostasis between sodium and potassium, which pumps out sodium in exchange for potassium, which moves into the cells.
-In the kidneys, the filtration of potassium takes place at the glomerulus.
-The reabsorption of potassium takes place at the proximal convoluted tubule and thick ascending loop of Henle.
-Potassium secretion occurs at the distal convoluted tubule.
-Aldosterone increases potassium secretion.
-Potassium channels and potassium-chloride cotransporters at the apical membrane also secrete potassium.
-Potassium disorders are related to cardiac arrhythmias.
-Hypokalemia occurs when serum potassium levels under 3.6 mmol/L—weakness, fatigue, and muscle twitching present in hypokalemia.

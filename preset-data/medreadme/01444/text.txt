@@ -1,1 +1,0 @@
-The simulated ATPase movements predicted how the proteasome machine would behave during various tasks, including degrading other proteins.

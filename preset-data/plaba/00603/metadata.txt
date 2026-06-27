@@ -1,5 +1,0 @@
-pmid:        33038767
-question:    46
-adaptation:  adaptation1
-title:       Glued in lipids: Lipointoxication in cystic fibrosis
-sentences:   6

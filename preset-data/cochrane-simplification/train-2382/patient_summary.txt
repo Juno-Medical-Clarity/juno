@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2382  |  gem_id: gem-cochrane-simplification-train-2383  |  doi: 10.1002/14651858.CD007024.pub2
-
-Disulfiram showed a trend toward fewer dropouts from psychosocial treatment when compared to placebo (three trials) or naltrexone (three trials) but this was not statistically significant. Assessing cocaine use, single studies were in favour of disulfiram on number of weeks of abstinence in one out of four comparisons when compared with placebo and on maximum weeks of consecutive abstinence and number of people achieving three or more weeks of consecutive abstinence in one study comparing disulfiram to no pharmacological treatment.   The included studies did not specifically investigate the adverse effects of disulfiram itself or its potential to increase alcohol and cocaine adverse effects.

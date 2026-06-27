@@ -1,5 +1,0 @@
-pmid:        34960751
-question:    68
-adaptation:  adaptation2
-title:       Iron Related Biomarkers Predict Disease Severity in a Cohort of Portuguese Adult Patients during COVID-19 Acute Infection
-sentences:   12

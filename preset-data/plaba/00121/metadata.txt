@@ -1,5 +1,0 @@
-pmid:        29184745
-question:    10
-adaptation:  adaptation1
-title:       Solving Hand/Finger Pain Problems with the Pencil Test and Relative Motion Splinting
-sentences:   6

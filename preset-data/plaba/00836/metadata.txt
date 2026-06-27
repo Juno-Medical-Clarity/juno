@@ -1,5 +1,0 @@
-pmid:        31427131
-question:    67
-adaptation:  adaptation2
-title:       Same-Day Physical Therapy Following Total Knee Arthroplasty Leads to Improved Inpatient Physical Therapy Performance and Decreased Inpatient Opioid Consumption
-sentences:   12

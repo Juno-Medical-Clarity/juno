@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0990  |  gem_id: gem-cochrane-simplification-train-991  |  doi: 10.1002/14651858.CD001041
-
-Only one small randomized trial of 54 men was included in this review. Based on the results of this trial, which used non-valid ways to measure symptom improvements, allopurinol cannot be recommended. Further studies of allopurinol treatment, enrolling larger numbers of men and using standard and validated measures to measure symptom improvements, are necessary to determine whether allopurinol is an effective treatment for chronic prostatitis.

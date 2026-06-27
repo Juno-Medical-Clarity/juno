@@ -1,5 +1,0 @@
-pmid:        32780893
-question:    14
-adaptation:  adaptation1
-title:       Rationale for the use of N-acetylcysteine in both prevention and adjuvant therapy of COVID-19
-sentences:   8

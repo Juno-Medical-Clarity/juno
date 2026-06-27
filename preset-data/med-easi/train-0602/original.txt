@@ -1,1 +1,0 @@
-This causes the plant to have elongated cells on the farthest side from the light.

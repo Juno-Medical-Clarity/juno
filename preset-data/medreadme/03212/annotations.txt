@@ -1,9 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 5.65
-split:       dev
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'neurogenesis'
-  [4:6] 'medical-jargon-google-easy' -> 'dentate gyrus'
-  [11:16] 'medical-jargon-google-easy' -> 'hippocampus - dependent spatial learning'

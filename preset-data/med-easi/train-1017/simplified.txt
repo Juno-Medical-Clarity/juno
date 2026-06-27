@@ -1,1 +1,0 @@
-A Unary Function is a function that takes just a single argument .

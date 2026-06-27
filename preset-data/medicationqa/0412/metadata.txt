@@ -1,5 +1,0 @@
-drug_focus: bimatoprost ophthalmic
-question_type: Usage
-section_title: How should this medicine be used?
-source_url: https://medlineplus.gov/druginfo/meds/a602030.html
-sample_id: 0412

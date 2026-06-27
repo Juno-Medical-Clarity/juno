@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0720  |  gem_id: gem-cochrane-simplification-train-721  |  doi: 10.1002/14651858.CD007316.pub2
-
-Both psychological therapy and pharmacotherapy have been used to treat PTSD and guidelines suggest that a combination of both may mean people recover from PTSD more effectively. Four trials including 124 participants were included in this review. One of these trials (n =24) was on children and adolescents. The trials all used SSRIs and prolonged exposure or a cognitive behavioural intervention. Only two trials reported on total PTSD symptoms but the data could not be combined. In this review, there are too few studies to be able to draw conclusions about whether a combination of psychological therapy and pharmacotherapy result in better outcomes for patients than either of these treatments alone.

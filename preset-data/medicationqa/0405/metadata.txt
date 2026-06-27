@@ -1,5 +1,0 @@
-drug_focus: drugs that cause hypopigmentation
-question_type: Side effects
-section_title: What causes drug-induced vitiligo?
-source_url: https://www.dermnetnz.org/topics/drug-induced-vitiligo/
-sample_id: 0405

@@ -1,5 +1,0 @@
-drug_focus: cyclosporine
-question_type: Indication
-section_title: Abstract
-source_url: https://bjo.bmj.com/content/100/3/345
-sample_id: 0011

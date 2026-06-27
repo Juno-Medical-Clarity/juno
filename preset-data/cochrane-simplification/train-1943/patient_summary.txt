@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1943  |  gem_id: gem-cochrane-simplification-train-1944  |  doi: 10.1002/14651858.CD010018.pub2
-
-The main aim of this review was to find out whether pentoxifylline compared with placebo (an inactive drug) or no drug offers important advantages to babies born early. Only one study of moderate size and quality was identified in this review. This study did not show strong evidence that pentoxifylline offers important advantages to babies born early. We have therefore been unable to determine the effects of pentoxifylline in preventing long-lasting breathing problems in babies born early. Future high-quality studies are needed to answer this question.

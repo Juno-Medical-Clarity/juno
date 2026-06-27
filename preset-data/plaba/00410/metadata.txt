@@ -1,5 +1,0 @@
-pmid:        23608654
-question:    32
-adaptation:  adaptation1
-title:       Blood pressure in treated hypertensive individuals with the MTHFR 677TT genotype is responsive to intervention with riboflavin: findings of a targeted randomized trial
-sentences:   9

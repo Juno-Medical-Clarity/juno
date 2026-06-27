@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0006  |  gem_id: gem-cochrane-simplification-validation-7  |  doi: 10.1002/14651858.CD007018.pub2
-
-A comprehensive package comprising career guidance, mentoring, and academic, social and financial support may result in increased graduation rates among health professional students at risk of dropping out of study. Further research could focus on determining the magnitude of student drop-out rates in health professional training institutions, identifying the students at risk of dropping out, and determining the applicability of western-based innovations in low and middle-income countries. Evaluation of ongoing and planned interventions in pre-licensure education of health professionals is important.

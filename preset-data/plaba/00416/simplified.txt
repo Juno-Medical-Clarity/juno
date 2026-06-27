@@ -1,9 +1,0 @@
-We checked the interaction of blood folate, a B-vitamin, and vitamin B12 with methylenetetrahydrofolate reductase (MTHFR) C6677T genotypes, or specific DNA sequences in humans encoding the same protein. This was done to measure the risk of first ischemic stroke, or blood clotting that would block brain blood flow, and success of folic acid treatment to prevent this stroke.
-20,702 adults with high blood pressure randomly received either 10 mg of daily blood pressure medication and 0.8 mg of folic acid or 10 mg of blood pressure alone.
-Participants were checked every 3 months.
-Average folate and B12 levels at start were 8.1 ng/mL and 280.2 pmol/L, respectively.
-Over around 4.5 years, among those not receiving folid acid, participants with starting blood B12 or blood folate above the average had much lower risk of first ischemic stroke, especially those with the standard MTHFR C6677T genotype.
-Folic acid treatment reduced the risk of first ischemic stroke in participants with both folate and B12 below the average, especially in those with the altered MTHFR genotype.
-However, those with certain MTHFR genotypes responded with both folate and B12 levels above the average.
-The risk of first ischemic stroke was higher in patients with high blood pressure and low levels of folate and B12.
-Folic acid treatment had the most effect in patients with low folate and B12 with a certain MTHFR genotype, and with high folate and B12 with another genotype.

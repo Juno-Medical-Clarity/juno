@@ -1,5 +1,0 @@
-drug_focus: lidocaine
-question_type: Dose
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=79b42076-359d-4258-b1d8-f40e67ac5424
-sample_id: 0425

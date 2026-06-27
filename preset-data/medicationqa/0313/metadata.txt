@@ -1,5 +1,0 @@
-drug_focus: hydrocodone + acetaminophen
-question_type: Information
-section_title: INDICATIONS & USAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b165dffd-1550-4d8d-a8ea-fe83512c34e6
-sample_id: 0313

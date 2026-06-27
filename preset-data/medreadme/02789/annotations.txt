@@ -1,7 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 3.7
-split:       dev
-
-jargon_spans:
-  [0:4] 'general-complex' -> 'Cluster randomised controlled trial'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1321  |  gem_id: gem-cochrane-simplification-train-1322  |  doi: 10.1002/14651858.CD002168
-
-This review identified four studies that compared these drugs with placebo. Over the first 2 hours of treatment there was no evidence that patients improved in terms of lung function, although a possible late benefit was detected. The studies do not give a clear indication of whether there was benefit in terms of reduced symptoms or hospital admissions, but side effects were found to be more common with methylxanthines. We conclude that, given current evidence, methylxanthines should not be used for acute exacerbations of chronic obstructive pulmonary disease.

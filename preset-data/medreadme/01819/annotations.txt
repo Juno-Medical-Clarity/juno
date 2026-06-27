@@ -1,7 +1,0 @@
-source:      MSD
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [2:3] 'medical-jargon-google-easy' -> 'dysuria'

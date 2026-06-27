@@ -1,5 +1,0 @@
-pmid:        16995969
-question:    74
-adaptation:  adaptation3
-title:       Ice cold carbonated water: a therapy for persistent hyperawareness of pharyngeal mucus and throat clearing
-sentences:   8

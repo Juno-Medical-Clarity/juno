@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        simple
-readability: 3.3
-split:       dev
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Recombination'
-  [20:22] 'medical-jargon-google-easy' -> 'recombination rate'

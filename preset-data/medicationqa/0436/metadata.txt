@@ -1,5 +1,0 @@
-drug_focus: metoprolol
-question_type: Appearance
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff391fc7-a0ab-4f8c-927e-2588053c7021
-sample_id: 0436

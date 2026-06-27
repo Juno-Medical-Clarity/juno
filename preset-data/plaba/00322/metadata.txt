@@ -1,5 +1,0 @@
-pmid:        34552949
-question:    25
-adaptation:  adaptation2
-title:       High Efficacy of Therapeutic Equine Hyperimmune Antibodies Against SARS-CoV-2 Variants of Concern
-sentences:   4

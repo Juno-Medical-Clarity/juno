@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2996  |  gem_id: gem-cochrane-simplification-train-2997  |  doi: 10.1002/14651858.CD006815.pub2
-
-This review shows that hydroxyzine is better than placebo in terms of anxiety symptoms in individuals with generalised anxiety disorder (GAD). Too few data were available to be able to draw any conclusions about the efficacy and tolerability of hydroxyzine compared with benzodiazepines and buspirone. Given the robust evidence for the efficacy of antidepressants for GAD, these findings suggest that hydroxyzine should not be recommended as first-line treatment GAD.

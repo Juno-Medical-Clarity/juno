@@ -1,8 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        simple
-readability: 3.85
-split:       test
-
-jargon_spans:
-  [10:11] 'medical-jargon-google-easy' -> 'dengue'
-  [19:20] 'medical-jargon-google-easy' -> 'epidemics'

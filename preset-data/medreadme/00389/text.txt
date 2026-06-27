@@ -1,1 +1,0 @@
-Since each mixture of 10 molecules could contain any 10 of the 128 molecules, more than 200 trillion combinations were possible; the number of possible combinations for the 20-and 30-molecule mixtures were even higher.

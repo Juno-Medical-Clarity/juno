@@ -1,5 +1,0 @@
-drug_focus: percocet
-question_type: Appearance
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a446947-2cda-4a32-aa6a-53e09245825a
-sample_id: 0315

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2716  |  gem_id: gem-cochrane-simplification-train-2717  |  doi: 10.1002/14651858.CD004567.pub2
-
-The review authors searched for randomized controlled trials in which supplementation with the antioxidant vitamins beta-carotene (provitamin A), vitamin C and vitamin E was compared to inactive placebo or no supplement. Nine trials involving 117,272 adults of age 35 years or older were included in this review. The trials were conducted in Australia, Finland, India, Italy, the United Kingdom and the United States and were of high methodological quality. The doses of antioxidants given in each trial were higher than the recommended daily allowances. The trials provided no evidence of effect of the antioxidant vitamins beta-carotene, vitamin E and vitamin C given alone or in combination on the incidence of cataract, its extraction or progression and on the loss of visual acuity. Some participants (7% to 16%) on beta-carotene developed yellowing of the skin (hypercarotenodermia).

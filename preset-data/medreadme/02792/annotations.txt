@@ -1,8 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 3.3
-split:       dev
-
-jargon_spans:
-  [16:22] 'medical-jargon-google-easy' -> 'personal , social and health education'
-  [23:24] 'abbr-medical' -> 'PSHE'

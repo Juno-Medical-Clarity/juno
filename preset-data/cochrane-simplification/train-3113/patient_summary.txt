@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3113  |  gem_id: gem-cochrane-simplification-train-3114  |  doi: 10.1002/14651858.CD000133.pub3
-
-We included five trials, involving 952 participants. Trials of mothers' avoidance of milk, eggs, and other potentially 'antigenic' foods during pregnancy or breastfeeding, or both, provide inadequate evidence about whether such avoidance helps prevent atopic eczema or asthma in the child. Women who avoided eating these foods gained significantly less weight during pregnancy in the one trial reporting on this outcome, raising the possibility of adverse nutritional effects on the mother or fetus. Finally, one small trial reported an inconclusive response of breastfed infants with atopic eczema when their mothers avoided consumption of cow milk and egg.

@@ -1,1 +1,0 @@
-Our results reveal that the specific response to chemokine signaling is dictated by cell-type-specific chemokine receptor signal interpretation modules (CRIM) rather than by chemokine-receptor-specific signals.

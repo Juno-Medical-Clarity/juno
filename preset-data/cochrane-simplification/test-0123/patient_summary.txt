@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0123  |  gem_id: gem-cochrane-simplification-test-124  |  doi: 10.1002/14651858.CD011000.pub3
-
-the searches were updated to March 2018. We found no randomised controlled trials (clinical studies where people are randomly put into one of two or more treatment groups) for inclusion, so there is an absence of evidence that tranexamic acid, vaginal packing (with or without formalin-soaked packs), interventional radiology techniques or other interventions are as effective or safe as radiotherapy for palliative control of bleeding from the vagina in advanced cervical cancer. There is a need for randomised controlled trials or good-quality non-randomised comparative studies to determine the effectiveness and safety of these interventions when compared with radiotherapy in terms of symptom control, quality of life and side events. no studies fulfilled the inclusion criteria and so there is no good-certainty evidence.

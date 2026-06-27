@@ -1,8 +1,0 @@
-Unlike iron, zinc absorption is influenced by dietary zinc intake, not zinc status.
-As dietary zinc increases, the total amount of absorbed zinc increases while the percent absorbed declines.
-The gastrointestinal tract maintains whole-body zinc homeostasis by adjusting endogenous zinc losses to the amount absorbed.
-At intakes below about 9 mg/day, zinc absorption occurs primarily by a saturable (carrier) process involving ZIP4, ZnT1, and other transporters.
-There is no evidence that past zinc intakes, or status, influences zinc absorption.
-Instead, current zinc intake is the chief determinant of zinc absorption.
-Supplemental zinc taken with water in the post-absorptive state initially is absorbed more efficiently than food zinc, but absorption efficiency declines within 24 hours presumably due to down-regulation of the zinc transporters.
-More research is needed to understand the effect of physiological state on zinc absorption.

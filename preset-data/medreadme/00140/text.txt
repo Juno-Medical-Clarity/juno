@@ -1,1 +1,0 @@
-Results were robust to prespecified sensitivity analyses, including time from treatment commencement to convulsive status epilepticus termination and competing risks.

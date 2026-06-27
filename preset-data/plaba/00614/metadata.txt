@@ -1,5 +1,0 @@
-pmid:        34233724
-question:    47
-adaptation:  adaptation1
-title:       Severe hypercalcemia associated with hypophosphatemia in very premature infants: a case report
-sentences:   9

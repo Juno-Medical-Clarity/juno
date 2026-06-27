@@ -1,5 +1,0 @@
-pmid:        33072979
-question:    75
-adaptation:  adaptation3
-title:       Sickle Cell Disease-Genetics, Pathophysiology, Clinical Presentation and Treatment
-sentences:   8

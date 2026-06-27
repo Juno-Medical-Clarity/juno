@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2908  |  gem_id: gem-cochrane-simplification-train-2909  |  doi: 10.1002/14651858.CD005598.pub4
-
-We were not able to find any trials to include in this review. Trials addressing this issue should be structured and reported according to the CONSORT statement for improving the quality of reporting of efficacy and improved reports of harms in clinical research. Trial investigators should consider including the following outcomes in new trials: number of days to be free of fever, death, onset of pain crisis or complications of sickle cell disease following community-acquired pneumonia, diagnosis, hospitalization (admission rate and length of hospital stay), respiratory failure rate, and number of participants receiving a blood transfusion. Since no trials have been included in the review up until September 2016, we will still search for trials every two years, but will not publish an updated version of this review until any eligible trials are identified.

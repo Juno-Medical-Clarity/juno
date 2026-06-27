@@ -1,5 +1,0 @@
-pmid:        33816325
-question:    30
-adaptation:  adaptation2
-title:       Severe Acute Respiratory Syndrome Coronavirus 2 Viral RNA Load Status and Antibody Distribution Among Patients and Asymptomatic Carriers in Central China
-sentences:   11

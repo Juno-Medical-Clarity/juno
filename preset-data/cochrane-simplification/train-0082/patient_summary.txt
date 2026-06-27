@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0082  |  gem_id: gem-cochrane-simplification-train-83  |  doi: 10.1002/14651858.CD007845.pub3
-
-This review of trials found only four studies which had an overall low quality. Three trials showed no significant differences between momordica charantia and placebo or antidiabetic drugs (glibenclamide and metformin) in the blood sugar response. The duration of treatment ranged from four weeks to three months, and altogether 479 patients with type 2 diabetes mellitus participated. No trial investigated death from any cause, morbidity, health-related quality of life or costs. Adverse effects were mostly moderate, including diarrhoea and abdominal pain. However, reporting of adverse effects was incomplete in the included studies. There are many varieties of preparations of momordica charantia, as well as variations in its use as a vegetable. Further studies are needed to assess the quality of the various momordica charantia preparations as well as to further evaluate its use in the diet of diabetic people.

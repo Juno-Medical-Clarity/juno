@@ -1,5 +1,0 @@
-drug_focus: hydrocodone + acetaminophen
-question_type: Stopping/tapering
-section_title: Find Local Help Centers for Alcohol and Drug Addiction
-source_url: https://www.usa.gov/mental-health-substance-abuse#item-35032
-sample_id: 0321

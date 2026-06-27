@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3336  |  gem_id: gem-cochrane-simplification-train-3337  |  doi: 10.1002/14651858.CD000297.pub2
-
-The results of this review demonstrate that low dose oral cyclosporine is not effective for treatment of active Crohn's disease. Studies indicate that Crohn's patients treated with low dose (5 mg/kg/day) oral cyclosporine could experience side effects including kidney problems. Therefore the use of this medication for the treatment of chronic active Crohn's disease is not advisable. Higher oral doses and injections of cyclosporine have not been sufficiently evaluated. Larger doses of cyclosporine are not likely to be useful for the long-term management of Crohn's disease due to the risk of kidney damage and the availability of other proven medications.

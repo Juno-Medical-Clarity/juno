@@ -1,5 +1,0 @@
-pmid:        3730995
-question:    17
-adaptation:  adaptation1
-title:       Management of the choking victim
-sentences:   11

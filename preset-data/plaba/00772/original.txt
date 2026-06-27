@@ -1,8 +1,0 @@
-The water-soluble zinc salts gluconate, sulfate, and acetate are commonly used as supplements in tablet or syrup form to prevent zinc deficiency and to treat diarrhea in children in combination with oral rehydration.
-Zinc citrate is an alternative compound with high zinc content, slightly soluble in water, which has better sensory properties in syrups but no absorption data in humans.
-We used the double-isotope tracer method with (67) Zn and (70) Zn to measure zinc absorption from zinc citrate given as supplements containing 10 mg of zinc to 15 healthy adults without food and compared absorption with that from zinc gluconate and zinc oxide (insoluble in water) using a randomized, double-masked, 3-way crossover design.
-Median (IQR) fractional absorption of zinc from zinc citrate was 61.3% (56.6-71.0) and was not different from that from zinc gluconate with 60.9% (50.6-71.7).
-Absorption from zinc oxide at 49.9% (40.9-57.7) was significantly lower than from both other supplements (P < 0.01).
-Three participants had little or no absorption from zinc oxide.
-We conclude that zinc citrate, given as a supplement without food, is as well absorbed by healthy adults as zinc gluconate and may thus be a useful alternative for preventing zinc deficiency and treating diarrhea.
-The more insoluble zinc oxide is less well absorbed when given as a supplement without food and may be minimally absorbed by some individuals.

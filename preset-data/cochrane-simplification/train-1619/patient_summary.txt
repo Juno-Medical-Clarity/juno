@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1619  |  gem_id: gem-cochrane-simplification-train-1620  |  doi: 10.1002/14651858.CD009688.pub2
-
-This review identified seven trials on the treatment of jellyfish stings primarily involving two jellyfish species—Physalia (Bluebottle) and Carybdea alata (Hawaiian box) jellyfish—as well as two trials that are in progress. Many different types of treatments were tested in these trials. Large variation was observed between the duration of treatment among trials. Evidence of limited quality from a single study suggested that hot water immersion relieved pain. This evidence may not apply to other species of jellyfish because of large variability in the effects of stings. Further research should be conducted to help practitioners better understand the most effective treatments for jellyfish stings.

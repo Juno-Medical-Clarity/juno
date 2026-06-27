@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0293  |  gem_id: gem-cochrane-simplification-train-294  |  doi: 10.1002/14651858.CD003698.pub3
-
-We searched for relevant studies in January 2019, and found seven studies including 1774 people. Three studies took place in the UK, and one each in Australia, United States, Qatar, and Italy. Each study provided face-to-face behavioural support delivered by pharmacy staff, who received specific training. Studies compared the structured programme to less intensive support to stop smoking. We found evidence that more intensive structured care given by community pharmacy staff probably helps more people to quit smoking than less intensive support to quit. We found low-quality evidence that community pharmacy support helps people to quit smoking. Limitations of the evidence came from potential problems with the ways some of the studies were carried out and the low numbers of people who quit smoking across the included studies, which means we are not sure how effective these programmes really are.

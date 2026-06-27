@@ -1,6 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        simple
-readability: 4.0
-split:       dev
-
-jargon_spans: (none)

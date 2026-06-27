@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0925  |  gem_id: gem-cochrane-simplification-train-926  |  doi: 10.1002/14651858.CD010792.pub2
-
-We found one eligible study of 55 participants from the UK. All participants in the study had a history of contact lens wear. The study randomly assigned people with AK to one of two medical treatment options: chlorhexidine eye drops or polyhexamethylene biguanide (PHMB) eye drops. Participants in the study were treated for 51 to 145 days. In the one study identified, similar results were seen between the chlorhexidine and PHMB groups in terms of resolution of infection, changes in vision, or need for surgery. However, the number of participants in the study was small and the results uncertain; thus, we cannot be confident that there are really no differences between these treatments. No serious side effect was observed with either treatment in the study. Although the study was well-designed with no suggestion of bias, the results must be interpreted carefully because of the small number of participants.

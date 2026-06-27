@@ -1,5 +1,0 @@
-pmid:        34667098
-question:    42
-adaptation:  adaptation1
-title:       Genes of the month: H3.3 histone genes: H3F3A and H3F3B
-sentences:   11

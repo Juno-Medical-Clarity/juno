@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0176  |  gem_id: gem-cochrane-simplification-test-177  |  doi: 10.1002/14651858.MR000002.pub3
-
-Most journals try to improve articles before publication by editing them to make them fit a 'house-style', and by other processes such as proof-reading. We refer to all these processes as technical editing. We identified 32 studies of the effects of technical editing from a systematic review. There is some evidence that the overall 'package' of technical editing raises the quality of articles (suggested by 'before-and-after' studies) and that structuring abstracts makes them more useful, although longer. However, there has been little rigorous research to show which processes can improve accuracy or readability the most, or if any have harmful effects or disadvantages. Over one third of references cited in articles in medical journals have some inaccuracies and one-fifth of quotations to references in these articles are not accurate

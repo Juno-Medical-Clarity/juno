@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1698  |  gem_id: gem-cochrane-simplification-train-1699  |  doi: 10.1002/14651858.CD006755.pub2
-
-This review of four studies with 166 relevant participants, looked at whether participating in home-based therapy programmes, targeted at the upper limb, could improve performance in activities of daily living (ADL), functional movement of the upper limb, performance in extended ADL and arm motor impairment. In comparison with usual care, home-based upper limb programmes had no difference in effect on any of the outcomes. In comparison with an upper limb programme based in hospital, we found home-based upper limb programmes to be no more or no less effective for arm motor impairment outcomes. The evidence in this area is limited. Further research is needed to determine the effects of home-based therapy programmes.

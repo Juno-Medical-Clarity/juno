@@ -1,1 +1,0 @@
-It is generally accepted that there exist three mechanisms responsible for (apparently) random behavior in systems: Randomness coming from the environment (for example, Brownian motion, but also hardware random number generators) Randomness coming from the initial conditions.

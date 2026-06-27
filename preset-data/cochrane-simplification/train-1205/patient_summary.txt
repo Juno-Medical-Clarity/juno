@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1205  |  gem_id: gem-cochrane-simplification-train-1206  |  doi: 10.1002/14651858.CD004182.pub3
-
-The only identified randomised clinical trial did not demonstrate any beneficial effect of D-penicillamine on the course, complications, and survival of patients with primary sclerosing cholangitis. In addition, its use was associated with a number of adverse events. Therefore, we cannot recommend the use of D-penicillamine outside randomised trials.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0845  |  gem_id: gem-cochrane-simplification-train-846  |  doi: 10.1002/14651858.CD008007.pub2
-
-The objective of this systematic review was to identify the effectiveness of lycopene in the prevention of prostate cancer. This review identified 3 relevant studies, comprising 154 participants in total. Two of the studies were assessed to be of 'high' risk of bias. Meta-analysis of two studies indicated no statistical difference in prostate specific antigen (PSA) levels between men randomised to receive lycopene and the comparison group (MD -0.34, 95% CI -2.01 to 1.32). None of the studies assessed prostate cancer mortality. No other meta-analyses were possible since other outcomes assessed only had one study contributing data.

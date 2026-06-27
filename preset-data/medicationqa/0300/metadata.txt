@@ -1,5 +1,0 @@
-drug_focus: pneumococcal vaccine
-question_type: Usage/time
-section_title: PPSV23 for Children and Adults
-source_url: https://www.cdc.gov/pneumococcal/vaccination.html
-sample_id: 0300

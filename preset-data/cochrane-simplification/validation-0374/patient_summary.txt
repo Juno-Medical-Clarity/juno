@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0374  |  gem_id: gem-cochrane-simplification-validation-375  |  doi: 10.1002/14651858.CD006321.pub2
-
-Several small studies have assessed the benefit of providing drugs such as human growth hormone and glutamine in an attempt to improve intestinal function and wean intravenous nutrition (liquid food). The results of this review of 5 small studies suggest that human growth hormone used with or without glutamine may provide short term benefit for patients with short bowel syndrome in terms of weight gain and intestinal absorption of nutrients. However the benefits of treatment do not continue after treatment is stopped. Common side effects of treatment include peripheral edema (swelling of tissues, usually in the lower limbs), and carpal tunnel syndrome (numbness and muscle weakness in the hand). Conclusive evidence is not available to recommend this treatment. Further studies that evaluate human growth hormone treatment during the immediate phase of bowel adaptation are needed.

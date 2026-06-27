@@ -1,6 +1,0 @@
-Histones are known for their ability to bind to and regulate expression of DNA.
-However, histones are also present in cytoplasm and extracellular fluids where they serve host defense functions and promote inflammatory responses.
-Histones are a major component of neutrophil extracellular traps that contribute to bacterial killing but also to inflammatory injury.
-Histones can act as antimicrobial peptides and directly kill bacteria, fungi, parasites and viruses, in vitro and in a variety of animal hosts.
-In addition, histones can trigger inflammatory responses in some cases acting through Toll-like receptors or inflammasome pathways.
-Extracellular histones mediate organ injury (lung, liver), sepsis physiology, thrombocytopenia and thrombin generation and some proteins can bind histones and reduce these potentially harmful effects

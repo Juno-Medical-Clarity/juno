@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2529  |  gem_id: gem-cochrane-simplification-train-2530  |  doi: 10.1002/14651858.CD000214.pub2
-
-The review of 17 trials found that these training programs help health professionals to identify smokers and increase the number of people who quit smoking. The programs also increase the number of people offered advice and support for quitting by health professionals.

@@ -1,5 +1,0 @@
-pmid:        34656508
-question:    57
-adaptation:  adaptation2
-title:       Surgical Management of Post-Traumatic Trigeminal Neuralgia - Case Report and Review of the Literature
-sentences:   5

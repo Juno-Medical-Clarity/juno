@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2512  |  gem_id: gem-cochrane-simplification-train-2513  |  doi: 10.1002/14651858.CD013252.pub2
-
-We identified nine studies that compared NOACs with warfarin, four of which were ongoing studies. We included five trials involving 8373 participants in this review. Evidence is current to February 2019. There may be little or no difference in effect between NOACs and warfarin in people with atrial fibrillation, who underwent heart vessel stenting. However, NOACs probably reduce the need for hospitalisation compared to warfarin. NOACs may be safer than warfarin. One of NOACs drugs (dabigatran) may reduce the rate of both major and non-major bleeding. Other NOAC drugs (apixaban and rivaroxaban) probably reduce the rate of non-major bleeding. There was no significant difference between NOACs agents in any primary or secondary outcomes. The evidence ranged from Very low- to moderate-certainty, indicating the need for more research on this issue.

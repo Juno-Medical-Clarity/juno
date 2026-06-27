@@ -1,6 +1,0 @@
-Coronavirus disease (COVID-19), which is a viral breathing-related disease, has affected over 100 countries worldwide. The hospital release criteria of patients with COVID-19 varies across countries.
-In China, patients with two tests detecting no virus and taken at least one day apart can be released with no further isolation needed.
-Currently, testing of severe acute respiratory syndrome cornoavirus 2 (SARS-CoV-2), which causes COVID-19, in poop samples in not regularly performed.
-We show a patient with COVID-19, whose poop, but not nose swabs, shows traces of the virus.
-Poop sample collected on 27th of February shows signs of the virus, 24 days after the first nose swab that did not detect the virus.
-Based on the 2003 SARS virus epidemic, we recommend that poop testing for SARS-CoV-2 should be added to the hospital release criteria to minimize risk of spread from the digestive tract.

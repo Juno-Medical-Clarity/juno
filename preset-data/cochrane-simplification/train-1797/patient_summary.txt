@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1797  |  gem_id: gem-cochrane-simplification-train-1798  |  doi: 10.1002/14651858.CD002918.pub3
-
-This systematic review found only one small study (20 participants) of good methodological quality, which reported no significant difference between surgical and chemical sympathectomy for relieving neuropathic pain. Potentially serious complications of sympathectomy are well documented in the literature, and one (neuralgia) occurred in this study. The practice of sympathectomy for treating neuropathic pain is based on very weak evidence. Furthermore, complications of the procedure may be significant.

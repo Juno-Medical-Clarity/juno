@@ -1,7 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [9:10] 'abbr-medical' -> 'PU'

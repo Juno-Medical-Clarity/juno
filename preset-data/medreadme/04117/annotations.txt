@@ -1,9 +1,0 @@
-source:      elife
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [0:7] 'medical-jargon-google-hard' -> 'Proliferative mesoderm - derived nestin − MSCs'
-  [9:11] 'medical-jargon-google-easy' -> 'fetal skeletogenesis'
-  [13:14] 'abbr-medical' -> 'MSC'

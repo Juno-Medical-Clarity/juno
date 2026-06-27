@@ -1,5 +1,0 @@
-pmid:        7766949
-question:    23
-adaptation:  adaptation1
-title:       Population genetics of phenylketonuria
-sentences:   6

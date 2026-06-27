@@ -1,7 +1,0 @@
-Hyperkalemia is a frequent clinical abnormality in patients with chronic kidney disease, and it is associated with higher risk of mortality and malignant arrhythmias.
-Severe hyperkalemia is a medical emergency, which requires immediate therapies, followed by interventions aimed at preventing its recurrence.
-Current treatment paradigms for chronic hyperkalemia management are focused on eliminating predisposing factors, such as high potassium intake in diets or supplements, and the use of medications known to raise potassium level.
-Among the latter, inhibitors of the renin-angiotensin aldosterone system are some of the most commonly involved medications, and their discontinuation is often the first step taken by clinicians to prevent the recurrence of hyperkalemia.
-While this strategy is usually successful, it also deprives patients of the recognized benefits of this class, such as their renoprotective effects.
-The development of novel potassium binders has ushered in a new era of hyperkalemia management, with a focus on chronic therapy while maintaining the use of beneficial, but hyperkalemia-inducing medications such as renin-angiotensin aldosterone system inhibitors.
-This review article examines the incidence and clinical consequences of hyperkalemia, and its various treatment options, with special emphasis on novel therapeutic agents and the potential benefits of their application.

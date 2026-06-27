@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2937  |  gem_id: gem-cochrane-simplification-train-2938  |  doi: 10.1002/14651858.CD004360.pub4
-
-We undertook this review to determine the effectiveness of NPPV in patients with severe acute asthma. Six randomised controlled trials were included in the review. Compared to usual medical care alone, NPPV reduced hospitalisations, increased the number of patients discharged from the emergency department, and improved respiratory rate and lung function measurements. The application of NPPV in patients with asthma, despite some promising preliminary results, still remains controversial. Further studies are needed to determine the role of NPPV in the management of severe acute asthma and especially in status asthmaticus.

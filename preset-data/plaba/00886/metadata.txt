@@ -1,5 +1,0 @@
-pmid:        28671437
-question:    72
-adaptation:  adaptation2
-title:       Expanded Newborn Screening: Information and Resources for the Family Physician
-sentences:   8

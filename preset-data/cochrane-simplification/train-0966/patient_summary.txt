@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0966  |  gem_id: gem-cochrane-simplification-train-967  |  doi: 10.1002/14651858.CD007231.pub3
-
-We included randomized trials that recruited adults with ischemic stroke, at any time after onset. We included any kind of stem cell or method of administration. We identified seven randomized trials, involving 401 participants. Overall, stem cell transplantation was associated with a reduced neurological impairment, but not with a better functional outcome. No safety concerns were raised. The certainty of the evidence ranged from low to very low because of the risk of bias in the included studies, the lack of precision of the results, and different designs. More well-designed randomized controlled trials are needed.

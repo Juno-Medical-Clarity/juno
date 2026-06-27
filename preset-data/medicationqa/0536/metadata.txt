@@ -1,5 +1,0 @@
-drug_focus: benzonatate
-question_type: Storage and disposal
-section_title: EXPIRATION DATE STUDIES
-source_url: http://painbytes.com/ref/articles/96-drug-expiration-dates
-sample_id: 0536

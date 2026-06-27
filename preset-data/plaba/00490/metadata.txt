@@ -1,5 +1,0 @@
-pmid:        1933737
-question:    38
-adaptation:  adaptation1
-title:       Pressure ulcers. Physical, supportive, and local aspects of management
-sentences:   12

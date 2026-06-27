@@ -1,5 +1,0 @@
-drug_focus: heparin
-question_type: Indication
-section_title: INDICATIONS AND USAGE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cbc26e3c-aee9-4c0d-bdb1-bf350308fbce
-sample_id: 0288

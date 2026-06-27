@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0372  |  gem_id: gem-cochrane-simplification-validation-373  |  doi: 10.1002/14651858.CD009259.pub2
-
-We identified four trials which compared FOBT to no screening and five trials which compared flexible sigmoidoscopy to no screening. No studies compared the two methods directly. Mortality from colorectal cancer was reduced with FOBT screening and screening with flexible sigmoidoscopy. When we compared the two methods, we could not conclude that one was better than the other. No complications occurred after the FOBT test itself, but 0.03% of participants suffered a major complication after follow-up. Among more than 60,000 flexible sigmoidoscopy screening procedures and almost 6000 work-up colonoscopies, a major complication was recorded in 0.08% of participants. These findings should be interpreted with caution as the reporting of adverse effects was incomplete.

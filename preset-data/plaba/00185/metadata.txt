@@ -1,5 +1,0 @@
-pmid:        27536695
-question:    15
-adaptation:  adaptation1
-title:       Potassium: From Physiology to Clinical Implications
-sentences:   10

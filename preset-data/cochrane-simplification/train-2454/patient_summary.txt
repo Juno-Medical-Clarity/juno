@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2454  |  gem_id: gem-cochrane-simplification-train-2455  |  doi: 10.1002/14651858.CD008800.pub2
-
-We identified four trials that included 758 participants. We excluded studies in which the participants had complications. Two of the four included studies in this review were small and the quality of the evidence was low to moderate. We do not know if acetaminophen is effective for reducing common cold symptoms or its adverse effects. We cannot either 'recommend' or 'not recommend' its use in common practice because we do not have enough well-designed trials to reach a conclusion. There is a need for more high-quality studies to determine the effectiveness of acetaminophen in relieving common cold symptoms.

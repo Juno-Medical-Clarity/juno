@@ -1,5 +1,0 @@
-pmid:        34125728
-question:    38
-adaptation:  adaptation1
-title:       Medical Device-Related Pressure Injury to the Ear from a Mask
-sentences:   12

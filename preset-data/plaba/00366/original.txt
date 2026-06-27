@@ -1,9 +1,0 @@
-Some studies reported that genomic RNA of SARS-CoV-2 can absorb a few host miRNAs that regulate immune-related genes and then deprive their function.
-In this perspective, we conjecture that the absorption of the SARS-CoV-2 genome to host miRNAs is not a coincidence, which may be an indispensable approach leading to viral survival and development in host.
-In our study, we collected five datasets of miRNAs that were predicted to interact with the genome of SARS-CoV-2.
-The targets of these miRNAs in the five groups were consistently enriched immune-related pathways and virus-infectious diseases.
-Interestingly, the five datasets shared no one miRNA but their targets shared 168 genes.
-The signaling pathway enrichment of 168 shared targets implied an unbalanced immune response that the most of interleukin signaling pathways and none of the interferon signaling pathways were significantly different.
-Protein-protein interaction (PPI) network using the shared targets showed that PPI pairs, including IL6-IL6R, were related to the process of SARS-CoV-2 infection and pathogenesis.
-In addition, we found that SARS-CoV-2 absorption to host miRNA could benefit two popular mutant strains for more infectivity and pathogenicity.
-Conclusively, our results suggest that genomic RNA absorption to host miRNAs may be a vital approach by which SARS-CoV-2 disturbs the host immune system and infects host cells.

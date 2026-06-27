@@ -1,5 +1,0 @@
-pmid:        34409778
-question:    25
-adaptation:  adaptation1
-title:       Effectiveness of Mavrilimumab in Viral Infections Including SARS-CoV-2 Infection - A Brief Review
-sentences:   9

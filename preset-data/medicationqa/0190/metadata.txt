@@ -1,5 +1,0 @@
-drug_focus: Acetaminophen, Codeine Phosphate
-question_type: Combination
-section_title: Label
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a9b11cbf-7585-4532-868f-5686f028679f
-sample_id: 0190

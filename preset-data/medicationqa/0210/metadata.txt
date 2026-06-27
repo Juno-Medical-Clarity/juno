@@ -1,5 +1,0 @@
-drug_focus: Oxybutynin
-question_type: Dose
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=98526d8f-9f39-d138-1cf9-fa5335bf2ba5
-sample_id: 0210

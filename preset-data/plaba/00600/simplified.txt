@@ -1,6 +1,0 @@
-Cystic fibrosis (CF) is an inherited disease caused by loss of function of a special cell boundary channel and leads to mucus buildup in many organs.
-This special cell boundary channel has been studied in boundary cells. However, it is also present in other cell types like endothelial cells (cells that line blood vessels and empty areas of the body).
-This review article summarizes current knowledge on the role of the endothelium in CF.
-More specifically, this review highlights how endothelial cells in CF act as a barrier which regulates blood vessel creation, blood clotting, vessel activity, and inflammation.
-It could contribute to different aspects of the disease like heart-related symptoms, excessive blood vessel formation, lung and vein-related high blood pressure and CF-related diabetes.
-Despite the important role of blood vessel boundary cells in many biological processes, it has largely been under-investigated in CF.

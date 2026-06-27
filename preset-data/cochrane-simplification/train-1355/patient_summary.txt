@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1355  |  gem_id: gem-cochrane-simplification-train-1356  |  doi: 10.1002/14651858.CD004388.pub6
-
-On 25th October 2011, the European Medicines Agency issued a press release on the worldwide withdrawal of Xigris® (human recombinant activated protein C) from the market by Eli Lilly due to lack of beneficial effect on 28-day mortality in the PROWESS-SHOCK trial. Furthermore, Eli Lily has announced the discontinuation of all ongoing clinical trials. APC should not be used for sepsis or septic shock outside randomized clinical trials. Current evidence does not support the use of human recombinant activated protein C in adults or children with severe sepsis or septic shock; moreover, there is an increased risk of bleeding associated with its use.

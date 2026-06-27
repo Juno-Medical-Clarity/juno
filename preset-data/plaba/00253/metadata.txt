@@ -1,5 +1,0 @@
-pmid:        19445546
-question:    20
-adaptation:  adaptation1
-title:       Pediatric generalized anxiety disorder: epidemiology, diagnosis, and management
-sentences:   17

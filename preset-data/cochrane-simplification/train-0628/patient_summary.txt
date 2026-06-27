@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0628  |  gem_id: gem-cochrane-simplification-train-629  |  doi: 10.1002/14651858.CD006706.pub2
-
-This review of 17 trials found evidence that aciclovir is efficacious in the prevention and treatment of HSV infections, in terms of preventing clinical/culture positive HSV infections, reduction in healing time, duration of viral shedding and relief of pain. There is no evidence that valaciclovir is more efficacious than aciclovir, or that a high dose of valaciclovir is better than a low dose of valaciclovir. There is evidence that for prevention, placebo is more efficacious than prostaglandin E. However, in all included trials, risk of bias is unclear. No trials reported on duration of hospital stay, amount of analgesia or patient quality of life.

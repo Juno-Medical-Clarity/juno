@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2831  |  gem_id: gem-cochrane-simplification-train-2832  |  doi: 10.1002/14651858.CD001187.pub3
-
-We included 55 randomised trials on 3121 people with asthma. There are both chemical (10 trials) and physical methods such as mattress encasings (37 trials) of reducing mite allergen levels and we included both types in this review. There were also eight trials that used both physical and chemical methods. Many trials were of poor quality and would therefore be expected to exaggerate the reported effect, but we did not find an effect of the interventions. There was no difference in peak flow (a measure of lung function), asthma symptoms and medication scores, or the number of patients reporting an improvement in their asthma symptoms. While reducing exposure to house dust mites is recommended in guidelines, we did not find an effect of control measures to reduce the exposure to mites or their products. .

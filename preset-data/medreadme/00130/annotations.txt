@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [0:11] 'medical-jargon-google-hard' -> 'A multicentre parallel - group randomised open - label superiority trial'
-  [13:18] 'medical-jargon-google-easy' -> 'nested mixed - method study'

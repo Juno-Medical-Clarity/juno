@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0251  |  gem_id: gem-cochrane-simplification-test-252  |  doi: 10.1002/14651858.CD009394.pub2
-
-This review identified one small randomised controlled trials, involving 42 women. There were no significant differences in outcomes for mother or baby when pre-term birth at 36 weeks was planned, compared with later birth. However, it was such a small trial that it does not rule out important benefits or harms from early birth. There was also small overall difference in gestational age at birth between the two groups in the trial, possibly because of the high rate of spontaneous preterm birth with this condition. Further trials are needed.

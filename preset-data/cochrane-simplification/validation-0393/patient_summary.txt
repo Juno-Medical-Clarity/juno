@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0393  |  gem_id: gem-cochrane-simplification-validation-394  |  doi: 10.1002/14651858.CD012085
-
-We included in this review three trials evaluating acute or subacute pain in patients with LBP (n = 197 participants). Most participants were middle-aged and were recruited from primary or tertiary care centres. Duration of treatment programmes ranged from four weeks to six weeks. MCE showed no benefit over spinal manipulative therapy, other forms of exercise or medical treatment for reducing pain or disability among patients with acute and subacute LBP. Whether MCE can prevent recurrences of LBP remains unclear. Results of this review include evidence of very low to moderate quality. We downgraded all comparisons for imprecision due to small study sample sizes.

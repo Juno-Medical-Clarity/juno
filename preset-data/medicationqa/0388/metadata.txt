@@ -1,5 +1,0 @@
-drug_focus: phentermine
-question_type: Action/time
-section_title: Phentermine on Drug Tests
-source_url: https://www.verywellmind.com/how-long-does-adipex-stay-in-your-system-80217
-sample_id: 0388

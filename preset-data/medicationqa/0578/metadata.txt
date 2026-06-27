@@ -1,5 +1,0 @@
-drug_focus: spacer
-question_type: Information
-section_title: Asthma inhalers: Which one's right for you?
-source_url: https://www.mayoclinic.org/diseases-conditions/asthma/in-depth/asthma-inhalers/ART-20046382?p=1
-sample_id: 0578

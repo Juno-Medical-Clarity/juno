@@ -1,9 +1,0 @@
-source:      MSD
-side:        complex
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [9:10] 'medical-jargon-google-easy' -> 'cardiovascular'
-  [11:13] 'medical-jargon-google-easy' -> 'GI disorders'
-  [26:27] 'medical-jargon-google-easy' -> 'catheterization'

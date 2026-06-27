@@ -1,1 +1,0 @@
-Stage 1-replicate the Total or Partial Knee Arthroplasty Trial (TOPKAT), a surgical randomised controlled trial comparing unicompartmental knee replacement with total knee replacement using propensity score and instrumental variable methods.

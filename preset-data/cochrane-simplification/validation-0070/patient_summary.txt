@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0070  |  gem_id: gem-cochrane-simplification-validation-71  |  doi: 10.1002/14651858.CD009287.pub2
-
-We reviewed 23 studies of different designs involving 188,934 young people and conducted in the United States, Canada and Australia. The studies tested different interventions and used several questionnaires to interview the young people about the effects of having participated in the studies brought to them. As a result it was very difficult to reach conclusions and for this reason we are highlighting the need for further studies.

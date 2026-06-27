@@ -1,5 +1,0 @@
-pmid:        31420757
-question:    31
-adaptation:  adaptation1
-title:       Tardive Dyskinesia: Treatment Update
-sentences:   10

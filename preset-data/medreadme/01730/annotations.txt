@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [5:8] 'medical-jargon-google-hard' -> 'E. coli glmS'
-  [12:16] 'medical-jargon-google-easy' -> 'RNA - based mechanisms'

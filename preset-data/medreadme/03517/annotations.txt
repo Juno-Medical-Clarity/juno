@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 3.85
-split:       test
-
-jargon_spans:
-  [25:30] 'medical-jargon-google-easy' -> 'Helping Families Programme - Modified'

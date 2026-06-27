@@ -1,5 +1,0 @@
-pmid:        31765958
-question:    64
-adaptation:  adaptation2
-title:       Mutation spectrum of the SCN1A gene in a Hungarian population with epilepsy
-sentences:   6

@@ -1,5 +1,0 @@
-pmid:        24242756
-question:    8
-adaptation:  adaptation1
-title:       Glioblastoma treatment using perphenazine to block the subventricular zone's tumor trophic functions
-sentences:   5

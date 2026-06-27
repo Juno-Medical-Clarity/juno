@@ -1,5 +1,0 @@
-pmid:        23444285
-question:    16
-adaptation:  adaptation1
-title:       Pharmacokinetics of modified-release prednisone tablets in healthy subjects and patients with rheumatoid arthritis
-sentences:   7

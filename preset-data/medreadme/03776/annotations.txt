@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [9:10] 'general-medical-multisense' -> 'patent'
-  [12:13] 'medical-jargon-google-easy' -> 'epithelialized'
-  [17:21] 'medical-jargon-google-hard' -> 'oro - antral fistula'

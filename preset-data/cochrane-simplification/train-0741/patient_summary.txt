@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0741  |  gem_id: gem-cochrane-simplification-train-742  |  doi: 10.1002/14651858.CD001832.pub3
-
-This review examined 19 studies with 1496 participants to see whether there is a difference in effectiveness between conventional and newer antibiotics. This review found no differences. Adverse effects in both approaches were similar, except for diarrhoea, which was more common in the cephalosporin group. Only three studies dealt with adults; the remaining studies recruited participants aged 15 years and younger. Therefore, we believe that the results probably pertain more to children. Conventional and newer antibiotics seem reasonable options for initial, immediate treatment. The choice may depend on availability, affordability and local policies.

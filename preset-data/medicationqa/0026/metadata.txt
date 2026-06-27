@@ -1,5 +1,0 @@
-drug_focus: neupro and ropinirole
-question_type: Comparison
-section_title: Dosage and Administration
-source_url: https://www.pbm.va.gov/clinicalguidance/drugmonographs/RotigotineNeuproNMEMonograph.pdf
-sample_id: 0026

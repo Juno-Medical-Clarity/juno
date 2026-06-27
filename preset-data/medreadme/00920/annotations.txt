@@ -1,8 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [9:10] 'abbr-medical' -> 'BYDS'
-  [21:22] 'abbr-medical' -> 'BYDS'

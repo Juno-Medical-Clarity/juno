@@ -1,9 +1,0 @@
-source:      plos_genetics
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [1:2] 'abbr-medical' -> 'SNPs'
-  [8:9] 'abbr-medical' -> 'ZNF404'
-  [10:11] 'abbr-medical' -> 'ANKLE1'

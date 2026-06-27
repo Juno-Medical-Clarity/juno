@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0236  |  gem_id: gem-cochrane-simplification-validation-237  |  doi: 10.1002/14651858.CD007795.pub2
-
-We identified a single high quality trial with a total of 38,546 participants, comparing vaccination with placebo. It found a significant reduction of herpes zoster, but did not provide enough direct evidence to draw any conclusion about whether the vaccine is effective in preventing postherpetic neuralgia beyond its effect on reducing herpes zoster. Non-serious adverse events were more common among vaccine recipients than placebo recipients, but serious ones were rare. More well designed and specialised trials of vaccination for preventing postherpetic neuralgia are required.

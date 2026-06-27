@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0177  |  gem_id: gem-cochrane-simplification-train-178  |  doi: 10.1002/14651858.CD005392.pub3
-
-Data from 5 randomized trials, which included a total of 3101 patients and evaluated the effect of bevacizumab, are currently available. Furthermore, data from one study, which included a total of 1168 patients and evaluated the effect of valatinib is published. The addition of bevacizumab to chemotherapy prolongs both progression-free survival from about 7.1 to 9.7 months when used as primary treatment and overall survival from about 17.7 to 20.5 months after prior use of chemotherapy (so called "second-line therapy") for metastatic colorectal cancer. However, the magnitude of the effect on progression-free survival is variable and probably depends on the type of chemotherapy to which it is associated. Vatalanib has no significant effect on progression-free and overall survival. Adverse effects of bevacizumab include increased frequencies of high blood pressure, arterial thromboembolic events and bowel perforations.

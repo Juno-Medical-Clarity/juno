@@ -1,5 +1,0 @@
-drug_focus: fluorouracil
-question_type: Side effects
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=744737c5-0d96-4214-82ab-6cff016b1ea0
-sample_id: 0066

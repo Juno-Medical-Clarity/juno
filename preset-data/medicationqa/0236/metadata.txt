@@ -1,5 +1,0 @@
-drug_focus: flu vaccine
-question_type: Usage/time
-section_title: Summary
-source_url: https://medlineplus.gov/flushot.html
-sample_id: 0236

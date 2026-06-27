@@ -1,5 +1,0 @@
-drug_focus: bisolvon
-question_type: Information
-section_title: Bromhexine Hydrochloride
-source_url: https://pubchem.ncbi.nlm.nih.gov/compound/5702220#section=Top
-sample_id: 0683

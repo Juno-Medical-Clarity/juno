@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1360  |  gem_id: gem-cochrane-simplification-train-1361  |  doi: 10.1002/14651858.CD003470.pub2
-
-This review of pharmacological interventions showed that non-steroidal anti-inflammatory drugs (NSAIDs) may reduce pain in the short term, but overall pain did not improve after three months. There is conflicting evidence on the effect of glycosaminoglycan polysulphate. The anabolic steroid nandrolone may be effective, but associated risks demand extreme caution if used for patellofemoral pain syndrome, particularly in athletes.

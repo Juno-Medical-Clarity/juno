@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [5:12] 'medical-jargon-google-easy' -> 'ART - suppressed HIV - infected individuals'
-  [15:16] 'medical-jargon-google-easy' -> 'cytokine'
-  [20:21] 'medical-jargon-google-hard' -> 'A20'

@@ -1,1 +1,0 @@
-We used the FEL to simulate the dynamics of the proteasome and quantitatively evaluated the predicted structural and kinetic properties.

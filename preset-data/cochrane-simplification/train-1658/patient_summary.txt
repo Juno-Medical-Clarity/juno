@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1658  |  gem_id: gem-cochrane-simplification-train-1659  |  doi: 10.1002/14651858.CD007615.pub3
-
-Trials which compared lower with higher amounts of sugar delivered by vein were too small to determine effects on the health outcomes of the babies. Insulin was found to reduce the number of babies who developed high blood sugar levels, but the health outcomes of the babies were not improved. In fact, insulin infusion was associated with an increased risk of death before 28 days of age.

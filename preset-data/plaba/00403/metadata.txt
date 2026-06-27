@@ -1,5 +1,0 @@
-pmid:        31880872
-question:    31
-adaptation:  adaptation1
-title:       Treatment Strategies for Tardive Dyskinesia
-sentences:   4

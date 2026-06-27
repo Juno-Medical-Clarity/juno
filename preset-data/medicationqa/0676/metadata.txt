@@ -1,5 +1,0 @@
-drug_focus: suboxone
-question_type: Action/time
-section_title: CLINICAL PHARMACOLOGY
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a96619d8-5c87-4adc-9446-b6d3cb3d04aa&audience=consumer
-sample_id: 0676

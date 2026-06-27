@@ -1,5 +1,0 @@
-pmid:        19329391
-question:    65
-adaptation:  adaptation2
-title:       Mental retardation is associated with plasma omega-3 fatty acid levels and the omega-3/omega-6 ratio in children
-sentences:   11

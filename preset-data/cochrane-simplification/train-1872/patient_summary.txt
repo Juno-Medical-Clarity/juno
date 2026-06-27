@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1872  |  gem_id: gem-cochrane-simplification-train-1873  |  doi: 10.1002/14651858.CD004496.pub3
-
-Only one trial was identified. In this trial enrolling infants with gram-negative meningitis and ventriculitis, the use of intraventricular antibiotics in addition to intravenous antibiotics resulted in a three-fold increased risk for mortality compared to standard treatment with intravenous antibiotics alone. Based on this result, intraventricular antibiotics should be avoided. Further trials comparing these interventions are not justified in newborn infants.

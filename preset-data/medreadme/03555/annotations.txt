@@ -1,8 +1,0 @@
-source:      nhir_Programme_Grants_for_Applied_Research
-side:        complex
-readability: 4.85
-split:       test
-
-jargon_spans:
-  [14:16] 'medical-jargon-google-easy' -> 'glycated haemoglobin'
-  [33:35] 'medical-jargon-google-easy' -> 'anticoagulation prescribing'

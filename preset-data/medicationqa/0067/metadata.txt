@@ -1,5 +1,0 @@
-drug_focus: colchicine
-question_type: Dose
-section_title: DOSAGE AND ADMINISTRATION
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7daef7e2-888d-4116-81a9-2c02b9ef97ef
-sample_id: 0067

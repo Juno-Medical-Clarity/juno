@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2060  |  gem_id: gem-cochrane-simplification-train-2061  |  doi: 10.1002/14651858.CD008711.pub3
-
-We identified two trials up to the 19th September 2016. Both of them evaluated the use of tranexamic acid, one for haemoptysis caused by tuberculosis and the other for haemoptysis from a variety of causes. Tranexamic acid significantly reduced the bleeding time, but it did not make any difference to the number of patients who were still suffering from haemoptysis when it was evaluated at seven days after the start of treatment. Severe adverse effects were not reported and mild side effects were not different between patients receiving tranexamic acid and those not receiving tranexamic acid. There is too little evidence to judge whether any antifibrinolytics should be used to treat haemoptysis.

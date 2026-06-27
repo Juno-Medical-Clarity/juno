@@ -1,9 +1,0 @@
-Turner syndrome is a chromosomal abnormality. The disease is characterized by the absence of the whole or part of the X chromosome in females.
-This X aneuploidy condition, or condition of having abnormal number of chromosomes, is associated with a diverse set of clinical phenotypes. These phenotypes, or outward characteristics, include ovary dysfunction, short stature, brittle bones, and Type II diabetes mellitus.
-These phenotypes differ in their severity and penetrance (extent) among those with the syndrome.
-Haploinsufficiency, or when one copy of a gene is deleted, for a few X linked genes has been associated with some of these disease phenotypes.
-RNA (special genetic material to create proteins) quantification can provide valuable insights to understand how these diseases form.
-This study analyzed RNA profiles of human 45,X (abnormal) and 46,XX (normal) cells. This study identified differential (unique function) expression of genes in these two chromosomal types.
-Analysis revealed that these differentially expressing genes are associated with bone differentiation, glucose metabolism, and gonadal development pathways.
-This study also reported differential expression of non-coding RNAs (RNAs that cannot be transformed into proteins) in X cells with abnormal chromosome count.
-This study provides a basis for evaluation of cellular and molecular mechanism(s) in the establishment of Turner syndrome phenotypes.

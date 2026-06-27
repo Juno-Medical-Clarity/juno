@@ -1,5 +1,0 @@
-pmid:        33449568
-question:    8
-adaptation:  adaptation1
-title:       Oral Perphenazine 8 mg: A Low-Cost, Efficacious Antiemetic Option
-sentences:   5

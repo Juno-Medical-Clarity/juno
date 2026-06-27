@@ -1,1 +1,0 @@
-There are challenges in designing' one-size-fits-all' implementation strategies that are sufficiently robust to bring about change in the face of difficult clinical contexts and fidelity losses.

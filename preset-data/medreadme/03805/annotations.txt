@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.15
-split:       test
-
-jargon_spans:
-  [2:3] 'general-medical-multisense' -> 'communications'
-  [5:7] 'medical-jargon-google-easy' -> 'oral cavity'
-  [9:11] 'medical-jargon-google-easy' -> 'maxillary sinus'

@@ -1,7 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [1:3] 'medical-jargon-google-easy' -> 'tranexamic acid'

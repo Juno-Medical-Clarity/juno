@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1866  |  gem_id: gem-cochrane-simplification-train-1867  |  doi: 10.1002/14651858.CD007079.pub3
-
-In our review, regular intake of extra calcium tablets during pregnancy did not improve the number of preterm births or other infant outcomes, except for a slight increase in infant birthweight in the group of women who received calcium supplementation. Most studies included in this review were assessed as of low risk of bias, and evidence for specific outcomes was graded as of moderate quality, Taking calcium supplementation did not appear to have any obvious side effects. Our review included 25 randomised controlled studies, but only 23 studies involving 18,587 women contributed outcome data. The majority of the evidence was based on fewer numbers of studies.

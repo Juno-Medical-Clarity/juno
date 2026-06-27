@@ -1,5 +1,0 @@
-drug_focus: zoledronic acid
-question_type: Contraindication
-section_title: EXPERT PANEL CLINICAL RECOMMENDATIONS FOR MANAGING PATIENTS RECEIVING ORAL BISPHOSPHONATE THERAPY
-source_url: https://jada.ada.org/article/S0002-8177(14)64960-6/pdf
-sample_id: 0347

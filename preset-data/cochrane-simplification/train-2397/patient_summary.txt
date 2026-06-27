@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2397  |  gem_id: gem-cochrane-simplification-train-2398  |  doi: 10.1002/14651858.CD012285.pub2
-
-The review authors summarised information from one clinical trial that compared botulinum toxin to a placebo, to treat tics in adults with Tourette’s syndrome. We found one small study. The study was limited by the number of participants (N = 18), who mainly had mild tics. We are very uncertain about the effects of botulinum toxin injections on reducing tic frequency and severity, and measures of overall well-being. Some participants experienced harms, which included weakness, restlessness, and neck discomfort following the injection. We do not know from the study whether participants who received the injection developed resistance to the botulinum injections, which would make them less effective over time. The evidence is current to 25 October 2017.

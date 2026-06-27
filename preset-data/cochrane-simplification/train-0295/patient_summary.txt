@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0295  |  gem_id: gem-cochrane-simplification-train-296  |  doi: 10.1002/14651858.CD004946.pub2
-
-The review assessed whether antiviral drugs given to pregnant women with herpes before a recurrence might be effective in reducing transmission to the baby. Seven studies were identified involving 1249 women. Giving antiviral drugs reduces viral shedding and recurrences at labor and birth. They also reduced the use of cesarean, but there is no evidence of reduction in neonatal herpes. Women should also be informed that the risk of the baby getting herpes during birth is low.

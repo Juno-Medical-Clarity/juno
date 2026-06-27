@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [10:11] 'abbr-medical' -> 'COPD'
-  [19:21] 'medical-jargon-google-easy' -> 'combined therapy'

@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [3:7] 'medical-jargon-google-easy' -> 'host - parasite interactions'
-  [13:17] 'medical-jargon-google-easy' -> 'host - parasite systems'

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1223  |  gem_id: gem-cochrane-simplification-train-1224  |  doi: 10.1002/14651858.CD003628.pub2
-
-Evidence from twelve small randomised trials were combined. Most trials had unclear methodologic quality. Overall, support systems did not appear to affect mortality or bridging to transplantation, but had a beneficial effect on hepatic encephalopathy. The risk of adverse events could not be established. Further evidence is needed before support systems can be recommended for routine use.

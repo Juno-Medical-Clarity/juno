@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1738  |  gem_id: gem-cochrane-simplification-train-1739  |  doi: 10.1002/14651858.CD003938.pub2
-
-This systematic review examined studies from 1980-2009 that identified both provider experience/qualifications as well as a volumes indicator (number of HIV/AIDS patients). Only four studies met the inclusion criteria for the final review. Given the varied methods of each study, a meta-analysis was not possible.

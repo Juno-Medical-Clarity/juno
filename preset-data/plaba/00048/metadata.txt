@@ -1,5 +1,0 @@
-pmid:        9803200
-question:    4
-adaptation:  adaptation2
-title:       Diagnosis and classification of diabetes mellitus: new criteria
-sentences:   6

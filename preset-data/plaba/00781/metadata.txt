@@ -1,5 +1,0 @@
-pmid:        234488
-question:    62
-adaptation:  adaptation2
-title:       Suppression of histamine-induced pruritus by three antihistaminic drugs
-sentences:   6

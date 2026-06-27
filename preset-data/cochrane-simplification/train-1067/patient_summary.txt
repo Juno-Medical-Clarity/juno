@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1067  |  gem_id: gem-cochrane-simplification-train-1068  |  doi: 10.1002/14651858.CD001321.pub5
-
-This review identified 24 studies (4473 participants) comparing cranberry products with control or alternative treatments. There was a small trend towards fewer UTIs in people taking cranberry product compared to placebo or no treatment but this was not a significant finding. Many people in the studies stopped drinking the juice, suggesting it may not be an acceptable intervention. Cranberry juice does not appear to have a significant benefit in preventing UTIs and may be unacceptable to consume in the long term. Cranberry products (such as tablets or capsules) were also ineffective (although had the same effect as taking antibiotics), possibly due to lack of potency of the 'active ingredient'.

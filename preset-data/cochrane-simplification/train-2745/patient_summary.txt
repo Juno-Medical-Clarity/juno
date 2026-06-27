@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2745  |  gem_id: gem-cochrane-simplification-train-2746  |  doi: 10.1002/14651858.CD007057.pub3
-
-We found one small randomized trial in which 34 participants were randomized to receive IVIg or placebo once daily in addition to azathioprine and prednisolone for remission maintenance. This trial did not provide enough evidence to determine if IVIg has an advantage over corticosteroids and immunosuppressants for the treatment of Wegener's granulomatosis.

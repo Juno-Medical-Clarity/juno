@@ -1,5 +1,0 @@
-drug_focus: Potassium Chloride
-question_type: Action
-section_title: What Is Potassium Chloride?
-source_url: https://www.everydayhealth.com/drugs/potassium-chloride
-sample_id: 0157

@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.5
-split:       test
-
-jargon_spans:
-  [2:5] 'general-complex' -> 'double - blind'
-  [11:14] 'general-complex' -> 'randomised controlled trial'
-  [15:16] 'abbr-general' -> 'RCT'

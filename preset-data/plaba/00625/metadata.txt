@@ -1,5 +1,0 @@
-pmid:        34605394
-question:    48
-adaptation:  adaptation2
-title:       Comparative effectiveness and safety of belimumab and anifrolumab in patients with systemic lupus erythematosus: A Bayesian network meta-analysis of randomized controlled trials
-sentences:   9

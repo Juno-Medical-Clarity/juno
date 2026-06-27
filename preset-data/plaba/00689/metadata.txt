@@ -1,5 +1,0 @@
-pmid:        17872745
-question:    54
-adaptation:  adaptation1
-title:       First-trimester bleeding with falling HCG
-sentences:   4

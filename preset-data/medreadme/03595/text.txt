@@ -1,1 +1,0 @@
-Regression models controlled for yearly and monthly trends and were fitted in each geographical region and police force.

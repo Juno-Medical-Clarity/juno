@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2953  |  gem_id: gem-cochrane-simplification-train-2954  |  doi: 10.1002/14651858.CD004900.pub2
-
-No randomised controlled trials with sufficient numbers of patients fitted the review criteria. Trials identified found BtA to be superior to placebo as did large case-control and cohort studies, with around 90% of patients benefiting. The most common adverse effects affected the eyes and were short lived.

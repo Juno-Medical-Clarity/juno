@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [2:3] 'general-complex' -> 'control'
-  [12:13] 'medical-jargon-google-easy' -> 'contraceptive'

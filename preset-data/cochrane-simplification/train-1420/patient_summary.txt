@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1420  |  gem_id: gem-cochrane-simplification-train-1421  |  doi: 10.1002/14651858.CD007220.pub2
-
-Despite the evidence accumulated from biological and epidemiological (observational) studies and non-randomised clinical trials, only one randomised, controlled trial could be included in this review. This study had 44 participants. Participants who were given a single glucose drink showed possible momentary enhancement of cognitive performance compared to those given a saccharin drink. A safety assessment was not reported. We need more studies on different types of carbohydrates, particularly those from fruit, vegetable and whole grain sources, for older adults with normal cognition and mild cognitive impairment to understand the role of this nutrient type in the prevention or reduction of cognitive decline.

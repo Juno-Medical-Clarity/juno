@@ -1,5 +1,0 @@
-pmid:        32001830
-question:    6
-adaptation:  adaptation1
-title:       Selenium in thyroid disorders - essential knowledge for clinicians
-sentences:   9

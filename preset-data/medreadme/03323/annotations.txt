@@ -1,9 +1,0 @@
-source:      wiki
-side:        complex
-readability: 5.5
-split:       dev
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Epoprostenol'
-  [2:4] 'medical-jargon-google-easy' -> 'synthetic prostacyclin'
-  [13:17] 'medical-jargon-google-easy' -> 'semi-permanent central venous catheter'

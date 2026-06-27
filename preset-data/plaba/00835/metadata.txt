@@ -1,5 +1,0 @@
-pmid:        30281207
-question:    67
-adaptation:  adaptation2
-title:       Characteristics of Usual Physical Therapy Post-Total Knee Replacement and Their Associations With Functional Outcomes
-sentences:   13

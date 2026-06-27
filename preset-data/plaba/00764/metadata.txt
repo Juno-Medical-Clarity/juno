@@ -1,5 +1,0 @@
-pmid:        17916952
-question:    61
-adaptation:  adaptation3
-title:       Clinical evaluation of the bioavailability of zinc-enriched yeast and zinc gluconate in healthy volunteers
-sentences:   11

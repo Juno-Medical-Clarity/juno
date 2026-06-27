@@ -1,5 +1,0 @@
-drug_focus: oxybutynin
-question_type: Appearance
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd72314e-773a-4e9d-8aa7-ec51592e4c90
-sample_id: 0427

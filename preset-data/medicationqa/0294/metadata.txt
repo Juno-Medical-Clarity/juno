@@ -1,5 +1,0 @@
-drug_focus: tamsulosin and ciprofloxacin
-question_type: Interaction
-section_title: ABSTRACT
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/15492337
-sample_id: 0294

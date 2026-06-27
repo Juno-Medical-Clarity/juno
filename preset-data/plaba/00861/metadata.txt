@@ -1,5 +1,0 @@
-pmid:        23334322
-question:    70
-adaptation:  adaptation3
-title:       Effects of vitamin B6 metabolism on oncogenesis, tumor progression and therapeutic responses
-sentences:   10

@@ -1,8 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        simple
-readability: 4.35
-split:       test
-
-jargon_spans:
-  [11:12] 'abbr-medical' -> 'FI'
-  [19:20] 'abbr-medical' -> 'FI'

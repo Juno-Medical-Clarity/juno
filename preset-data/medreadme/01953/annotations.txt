@@ -1,8 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [5:8] 'medical-name-entity' -> 'National Joint Registry'
-  [15:18] 'medical-name-entity' -> 'Hospital Episode Statistics'

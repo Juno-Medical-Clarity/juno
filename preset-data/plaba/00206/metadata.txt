@@ -1,5 +1,0 @@
-pmid:        7310640
-question:    16
-adaptation:  adaptation1
-title:       Dose dependent pharmacokinetics of prednisone and prednisolone in man
-sentences:   13

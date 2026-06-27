@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0026  |  gem_id: gem-cochrane-simplification-test-27  |  doi: 10.1002/14651858.CD001433.pub2
-
-The review of trials found that several treatments improve the symptoms of chronic palmoplantar pustulosis, although no treatment was shown to suppress the condition completely. Oral retinoid therapy (acitretin) appears to be helpful at relieving symptoms, particularly if combined with PUVA. Ciclosporin and tetracycline antibiotics can also provide some relief. Topical treatments were generally less helpful. As yet there is no ideal treatment for chronic palmoplantar pustulosis, though oral retinoids, particularly when combined with psoralens and ultraviolet radiation (PUVA), may help

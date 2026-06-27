@@ -1,5 +1,0 @@
-pmid:        21675907
-question:    7
-adaptation:  adaptation1
-title:       Streptococcal pharyngitis.
-sentences:   2

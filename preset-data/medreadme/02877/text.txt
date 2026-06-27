@@ -1,1 +1,0 @@
-To identify genetic modifiers of somatic expansion in HD mouse models we have used both an unbiased genetic mapping approach in inbred mouse strains that exhibit different levels of somatic expansion, as well as targeted gene knockout approaches.

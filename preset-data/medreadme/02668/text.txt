@@ -1,1 +1,0 @@
-We located routine data on characteristics of emergency and urgent care systems and used linear regression to explain variation in avoidable admissions rates in 150 systems.

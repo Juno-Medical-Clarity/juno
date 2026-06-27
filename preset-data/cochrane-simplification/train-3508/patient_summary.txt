@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3508  |  gem_id: gem-cochrane-simplification-train-3509  |  doi: 10.1002/14651858.CD004270.pub2
-
-This review confirms the greater response rates achievable by using purine antagonists but at the cost of greater toxicity, mainly infections. There is inconclusive evidence whether treatment with purine antagonists improves survival. None of the studies included quality of life data. More research is needed to fully explore the role of purine antagonists in the treatment of B-CLL and their potential impact on survival.

@@ -1,7 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [15:16] 'medical-jargon-google-easy' -> 'histones'

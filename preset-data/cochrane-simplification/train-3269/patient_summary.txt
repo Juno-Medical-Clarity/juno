@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3269  |  gem_id: gem-cochrane-simplification-train-3270  |  doi: 10.1002/14651858.CD000308
-
-This review found that giving dexamethasone (a corticosteroid drug) around the time of extubation can help prevent swelling in the baby's throat that might require reinsertion of the tube. However, the review found that there are adverse effects of dexamethasone. The benefits only outweigh the risks for babies at high risk of complication (such as those who have received several, or prolonged, intubations).

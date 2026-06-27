@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2361  |  gem_id: gem-cochrane-simplification-train-2362  |  doi: 10.1002/14651858.CD010963.pub2
-
-We found no completed studies that compared keyhole surgery and radiotherapy alone or combined with chemotherapy. Two ongoing trials did fulfil our selection criteria, however neither are yet complete. One has an estimated completion date of June 2021 and the other planned to start recruiting patients mid-2016. There are not yet any completed studies to include in the review so there are no results. The role of keyhole surgery in the management of throat cancer is expanding as is demonstrated by its incorporation into the current national guidelines in the USA. Evidence is mounting regarding its outcomes both in terms of survival and fewer side effects. Based on this review, there is currently no high-quality evidence from randomised controlled trials that compare keyhole surgery with radiotherapy and chemotherapy for patients with throat cancer.

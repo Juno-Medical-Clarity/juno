@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2919  |  gem_id: gem-cochrane-simplification-train-2920  |  doi: 10.1002/14651858.CD003000.pub2
-
-We reviewed evidence from randomised trials that assessed an educational intervention given after presentation in the emergency setting by adults over 17 years old. Thirteen trials involving 2157 people were included. The studies suggested that following the intervention there was a reduction in the frequency of future hospital admissions; however, the effect on visit to the emergency department was imprecise and the results of our analysis indicate that this was a chance result. Education may be an effective reinforcement strategy in reducing future hospital admission following emergency department attendance, but there was little evidence to suggest that it improved other indicators of chronic disease severity such as lung function and quality of life.

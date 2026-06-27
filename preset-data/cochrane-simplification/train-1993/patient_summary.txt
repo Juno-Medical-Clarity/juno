@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1993  |  gem_id: gem-cochrane-simplification-train-1994  |  doi: 10.1002/14651858.CD009502.pub3
-
-Three studies involving a total of 316 participants were included in this review. Analysis of the results showed that reversion success lies somewhere between 19.4% and 54.3%. We could not calculate the likelihood and severity of side effects (adverse events) as the studies provided insufficient information to perform this analysis. Potential side effects have been reported in other articles on the subject; these have included hypotension (sudden lowering of blood pressure) or syncope (brief loss of consciousness). No side effects were reported in the three studies reviewed here. In the three studies, reversion was achieved on completion of each VM. Overall, the VM appears to be a simple, non-invasive method of stopping abnormal heart rhythm, but its safety and overall effectiveness are difficult to quantify. Further research is required to improve the evidence surrounding this practice.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0327  |  gem_id: gem-cochrane-simplification-validation-328  |  doi: 10.1002/14651858.CD001899.pub4
-
-However, the review of trials found conflicting evidence about whether or not IPC is better than compression bandages and hosiery. Intermittent pneumatic compression (IPC) is better for healing leg ulcers than no compression. . Some studies suggest IPC might be a beneficial addition to bandages for some ulcers, but these studies might be biased. Delivering the IPC therapy in a rapid manner by inflating and deflating the IPC device more quickly resulted in more ulcers being healed than with a slower deflation regime.

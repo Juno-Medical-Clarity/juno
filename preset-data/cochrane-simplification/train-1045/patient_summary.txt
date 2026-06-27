@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1045  |  gem_id: gem-cochrane-simplification-train-1046  |  doi: 10.1002/14651858.CD010160.pub2
-
-In February 2013, we searched medical databases to look for controlled trials of participants who had undergone surgery and had been randomly assigned to nurse- or doctor-led preoperative assessment (POA). We found two trials, one randomized and one quasi-randomized. Both studies were conducted in the UK and compared POA performed by the nurse with POA performed by the non-specialist doctor. One studied 1874 adult participants who were undergoing elective surgery, and the other studied 595 children who were undergoing day surgery. Neither study reported on cancellations of surgery, gain in participant information or knowledge or perioperative complications. Reported outcomes focused on the accuracy of the assessment. As there is currently no evidence from trials concerning the impact of nurse-led POA on patient outcomes, we are unable to make any recommendations for practice on the basis of this review.

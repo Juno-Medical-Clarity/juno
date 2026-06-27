@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0236  |  gem_id: gem-cochrane-simplification-test-237  |  doi: 10.1002/14651858.CD000088.pub3
-
-Studies were conducted in Europe, Asia and North America with packages of family intervention varying among studies, although there were no clear differences in study design. Results indicated that family intervention may reduce the risk of relapse and improve compliance with medication. However data were often inadequately reported and therefore unusable. As this package of care is widely employed, there should be further research to properly clarify several of the short-term and long-term outcomes.

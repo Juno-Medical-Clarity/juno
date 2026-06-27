@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [6:9] 'medical-jargon-google-easy' -> 'stromal stem cells'
-  [12:14] 'medical-jargon-google-easy' -> 'bone marrow'

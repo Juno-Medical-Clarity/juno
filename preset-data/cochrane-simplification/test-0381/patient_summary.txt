@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0381  |  gem_id: gem-cochrane-simplification-test-382  |  doi: 10.1002/14651858.CD011792.pub2
-
-We judged the quality of the evidence from this review to be very low as the only included study was not randomised, and information about supervision measures to prevent SUDEP was not available for 40% of the people with epilepsy who did not experience SUDEP. We found very limited, low-quality evidence that supervision at night prevents SUDEP. Further research is needed to identify if other treatments, such as seizure detection devices, safety pillows, and drug interventions working on serotonin, adenosine, and opiate levels in the brain are effective in preventing SUDEP in people with epilepsy.

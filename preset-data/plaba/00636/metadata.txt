@@ -1,5 +1,0 @@
-pmid:        23979346
-question:    49
-adaptation:  adaptation1
-title:       Leg edema detected on comprehensive geriatric assessment for elderly outpatients and its associated risk factors
-sentences:   15

@@ -1,1 +1,0 @@
-We performed de novo motif analysis of regulatory elements, analyzed evolutionary conservation of identified motifs, and assayed TF footprinting data to identify sequence elements that recruit TFs and maintain chromatin landscape in breast cancer-relevant tissue and cell lines.

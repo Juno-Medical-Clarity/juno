@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1676  |  gem_id: gem-cochrane-simplification-train-1677  |  doi: 10.1002/14651858.CD000180.pub2
-
-Aerobic exercise is physical activity that stimulates a person's breathing and blood circulation. The review of 14 trials, involving 1014 pregnant women, found that pregnant women who engage in vigorous exercise at least two to three times per week improve (or maintain) their physical fitness, and there is some evidence that these women have pregnancies of the same duration as those who maintain their usual activities. There is too little evidence from trials to show whether there are other effects on the woman and her baby. The trials reviewed included non-contact exercise such as swimming, static cycling and general floor exercise programs. Most of the trials were small and of insufficient methodologic quality, and larger, better trials are needed before confident recommendations can be made about the benefits and risks of aerobic exercise in pregnancy.

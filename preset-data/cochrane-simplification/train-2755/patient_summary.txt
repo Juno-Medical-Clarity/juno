@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2755  |  gem_id: gem-cochrane-simplification-train-2756  |  doi: 10.1002/14651858.CD001104.pub2
-
-This review aims to determine the effectiveness of long-acting beta-agonists, salmeterol or formoterol, in the treatment of COPD (emphysema/chronic bronchitis). These drugs improve airflow in the lungs, and enable people with COPD to get on with their daily activities. Twenty-four studies (6061 participants) reported the effects of LABAs in people with COPD. People taking salmeterol 50 mcg daily do have fewer exacerbations than those on placebo, and some improvement in lung function and certain quality of life scores. The findings were not consistent enough to support a general recommendation for the use of these drugs in the group of people with COPD with minimal variation in their lung function, although there is some evidence of improvement in important outcomes and these findings require further exploration in additional trials.

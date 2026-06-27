@@ -1,5 +1,0 @@
-drug_focus: clonazepam
-question_type: Appearance
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=acbce0e8-5098-4785-943b-8bdb5ff17fab&audience=consumer
-sample_id: 0579

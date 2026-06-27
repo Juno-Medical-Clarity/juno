@@ -1,5 +1,0 @@
-drug_focus: epinephrine pen
-question_type: Usage
-section_title: PATIENT INFORMATION and INSTRUCTIONS FOR USE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7560c201-9246-487c-a13b-6295db04274a
-sample_id: 0414

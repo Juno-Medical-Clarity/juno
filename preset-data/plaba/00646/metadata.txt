@@ -1,5 +1,0 @@
-pmid:        33958571
-question:    49
-adaptation:  adaptation1
-title:       A 41-Year-Old Woman with Excessive Fat of the Lower Body Since Puberty with Progression to Swollen Ankles and Feet Despite Caloric Restriction, Due to Lipedema and Protein-Calorie Malnutrition: A Case of Stage 3 Lipedema
-sentences:   13

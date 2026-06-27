@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2090  |  gem_id: gem-cochrane-simplification-train-2091  |  doi: 10.1002/14651858.CD006198
-
-This review looks at vaccines targeted at the 'pre-erythrocytic' phase of the parasite's life, the phase before the parasites first enter the bloodstream from the liver. Trials of four types of vaccine against P. falciparum, the most important human malaria species, were available for this review. One of these (the RTS,S vaccine) significantly reduced the number of episodes of clinical malaria and severe malaria in children, while the other three vaccines were not effective under the conditions of the trials. No severe adverse events observed following the RTS,S vaccination were judged to be related to vaccination, though minor adverse events like headache, swelling, and malaise were.

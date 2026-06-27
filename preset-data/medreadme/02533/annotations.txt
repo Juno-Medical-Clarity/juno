@@ -1,9 +1,0 @@
-source:      pnas
-side:        simple
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Histone methylations'
-  [5:6] 'medical-jargon-google-easy' -> 'epigenetic'
-  [16:18] 'medical-jargon-google-easy' -> 'gene expression'

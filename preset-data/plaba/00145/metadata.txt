@@ -1,5 +1,0 @@
-pmid:        17351472
-question:    12
-adaptation:  adaptation2
-title:       Prevention of asthma in childhood
-sentences:   8

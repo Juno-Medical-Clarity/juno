@@ -1,5 +1,0 @@
-pmid:        27247882
-question:    63
-adaptation:  adaptation2
-title:       Management of hair loss associated with endocrine therapy in patients with breast cancer: an overview
-sentences:   5

@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [9:10] 'medical-jargon-google-easy' -> 'postmenopausal'
-  [19:20] 'medical-jargon-google-easy' -> 'oophorectomy'
-  [25:26] 'medical-jargon-google-easy' -> 'menopausal'

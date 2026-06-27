@@ -1,9 +1,0 @@
-source:      wiki
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [1:2] 'medical-jargon-google-easy' -> 'bronchodilator'
-  [11:12] 'medical-jargon-google-easy' -> 'bronchi'
-  [13:14] 'medical-jargon-google-easy' -> 'bronchioles'

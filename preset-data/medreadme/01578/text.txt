@@ -1,1 +1,0 @@
-Behaviour change techniques from 14 out of a possible 16 clusters were detected.

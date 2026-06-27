@@ -1,9 +1,0 @@
-source:      nhir_Health_Services_and_Delivery_Research
-side:        complex
-readability: 5.3
-split:       train
-
-jargon_spans:
-  [7:9] 'medical-jargon-google-easy' -> 'tranexamic acid'
-  [15:16] 'medical-name-entity' -> 'NHS'
-  [23:25] 'general-complex' -> 'Markov model'

@@ -1,5 +1,0 @@
-drug_focus: estrone injection
-question_type: Ingredient
-section_title: NA
-source_url: https://en.wikipedia.org/wiki/Estrone_(medication)
-sample_id: 0047

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0096  |  gem_id: gem-cochrane-simplification-test-97  |  doi: 10.1002/14651858.CD003554.pub2
-
-There are many kinds of dressings and topical agents available but few have been evaluated in trials. This review did not find any evidence that any one dressing or topical agent speeds up the healing of surgical wounds healing by secondary intention more than another, although gauze may be associated with greater pain or discomfort for the patient.

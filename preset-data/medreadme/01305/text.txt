@@ -1,1 +1,0 @@
-Using experimental data from Daphnia magna and a microsporidian parasite, we fitted a mechanistic model of the within-host parasite population dynamics.

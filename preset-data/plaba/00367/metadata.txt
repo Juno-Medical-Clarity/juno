@@ -1,5 +1,0 @@
-pmid:        32340216
-question:    29
-adaptation:  adaptation1
-title:       Optimal Nutritional Status for a Well-Functioning Immune System Is an Important Factor to Protect against Viral Infections
-sentences:   7

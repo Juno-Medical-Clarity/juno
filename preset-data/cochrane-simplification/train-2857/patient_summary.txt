@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2857  |  gem_id: gem-cochrane-simplification-train-2858  |  doi: 10.1002/14651858.CD005207.pub4
-
-In this analysis, we assessed the effect of CSFs on outcome after stroke using data from clinical trials of people with recent stroke. We included a total of 11 studies and 1275 participants. A higher death rate was observed in participants treated with erythropoietin (EPO) in three trials (782 participants); whether further trials of EPO will be performed early after stroke remains unclear. In eight small trials involving 548 participants, patterns of improvement after a stroke were observed using granulocyte colony stimulating factor (G-CSF) and further trials are ongoing. Currently, there is insufficient evidence to support the use of CSFs in the treatment of people with recent stroke.

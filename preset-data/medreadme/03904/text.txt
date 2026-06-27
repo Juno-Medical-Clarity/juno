@@ -1,1 +1,0 @@
-However, these two tests are not used as part of current NHS practice because of the lack of evidence about how well the tests perform when diagnosing symptomatic (active) TB in routine clinical practice.

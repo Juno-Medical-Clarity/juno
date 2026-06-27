@@ -1,5 +1,0 @@
-pmid:        30781516
-question:    65
-adaptation:  adaptation2
-title:       The Association between Plasma Omega-6/Omega-3 Ratio and Anthropometric Traits Differs by Racial/Ethnic Groups and NFKB1 Genotypes in Healthy Young Adults
-sentences:   8

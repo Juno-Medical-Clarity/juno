@@ -1,5 +1,0 @@
-drug_focus: heroin
-question_type: Overdose
-section_title: Symptoms
-source_url: https://medlineplus.gov/ency/article/002861.htm
-sample_id: 0559

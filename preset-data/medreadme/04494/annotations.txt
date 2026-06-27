@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.8
-split:       test
-
-jargon_spans:
-  [5:7] 'medical-jargon-google-easy' -> 'condensed DNA'
-  [14:16] 'medical-jargon-google-easy' -> 'human cytomegalovirus'
-  [21:23] 'medical-jargon-google-easy' -> 'condensed DNA'

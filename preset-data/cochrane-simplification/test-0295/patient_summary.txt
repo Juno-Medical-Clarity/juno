@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0295  |  gem_id: gem-cochrane-simplification-test-296  |  doi: 10.1002/14651858.CD004398.pub3
-
-Medical journals and clinical practice guidelines are common channels to distribute scientific information to healthcare providers, as they allow a wide distribution at relatively low costs. Delivery of printed educational materials is meant to improve healthcare professionals' awareness, knowledge, attitudes, and skills, and ultimately improve professional practice and patients' health outcomes. Results of this review suggest that printed educational materials slightly improve healthcare professional practice compared to no intervention, but a lack of results prevent any conclusion on their impact on patient outcomes.

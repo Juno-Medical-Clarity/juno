@@ -1,5 +1,0 @@
-pmid:        34559576
-question:    27
-adaptation:  adaptation1
-title:       Ocular Adverse Events After COVID-19 Vaccination
-sentences:   8

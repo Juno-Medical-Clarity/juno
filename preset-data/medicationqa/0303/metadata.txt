@@ -1,5 +1,0 @@
-drug_focus: pepsin
-question_type: Information
-section_title: Description
-source_url: https://www.drugbank.ca/drugs/DB13198
-sample_id: 0303

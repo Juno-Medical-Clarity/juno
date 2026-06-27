@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1958  |  gem_id: gem-cochrane-simplification-train-1959  |  doi: 10.1002/14651858.CD011048.pub2
-
-we identified only one poorly designed study for inclusion. we found that giving calcium to newborn infants raised blood calcium levels immediately after EBT while blood calcium was reduced among newborn infants who did not receive calcium during EBT. However, despite the observed trends in the values of blood calcium in both groups of the study, the average values of blood calcium in both groups remained within normal limits. In addition, the information available for this review was limited as the effects of giving or not giving calcium during EBT was not studied beyond the time of EBT. based on the findings in this review, there is no good-quality evidence to support or reject continual use of calcium during EBT. We are unable to make conclusions, as the evidence that we found is limited and of very low quality and could change if more results from larger and better-designed studies become available.

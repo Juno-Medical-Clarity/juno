@@ -1,5 +1,0 @@
-pmid:        11403753
-question:    13
-adaptation:  adaptation1
-title:       Early cardioversion of atrial fibrillation facilitated by transesophageal echocardiography: short-term safety and impact on maintenance of sinus rhythm at 1 year
-sentences:   9

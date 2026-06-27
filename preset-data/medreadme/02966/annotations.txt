@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.3
-split:       dev
-
-jargon_spans:
-  [4:5] 'medical-jargon-google-hard' -> 'Pif1'
-  [25:26] 'medical-jargon-google-easy' -> 'RNA'
-  [36:38] 'medical-jargon-google-easy' -> 'double helix'

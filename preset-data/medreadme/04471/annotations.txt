@@ -1,8 +1,0 @@
-source:      pnas
-side:        simple
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [8:10] 'medical-jargon-google-hard' -> 'EZH2 inhibitors'
-  [11:16] 'medical-jargon-google-hard' -> 'SWI / SNF mutant tumors'

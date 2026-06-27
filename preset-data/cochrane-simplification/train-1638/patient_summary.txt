@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1638  |  gem_id: gem-cochrane-simplification-train-1639  |  doi: 10.1002/14651858.CD005039.pub3
-
-We included eight studies where the participants were randomly assigned to two groups: one group received the extra food and the other group was a control, either receiving no food or food with very low nutritional content. Although the impact of supplementary feeding on child growth appeared to be negligible, it is not possible to draw any conclusions until we have studies that involve larger numbers and do not allow assessors to know who is receiving the intervention. Although it is difficult to determine whether community-based supplementary feeding helps to promote the growth of children from birth to five years in low- and middle-income countries, it is obviously vital to continue to provide food, health care and sanitation to those who need them.

@@ -1,5 +1,0 @@
-drug_focus: antibiotics
-question_type: Indication
-section_title: NA
-source_url: https://www.mayoclinic.org/diseases-conditions/common-cold/in-depth/cold-remedies/ART-20046403?p=1
-sample_id: 0348

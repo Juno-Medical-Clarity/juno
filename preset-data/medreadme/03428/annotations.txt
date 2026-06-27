@@ -1,7 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 3.85
-split:       test
-
-jargon_spans:
-  [11:12] 'medical-jargon-google-easy' -> 'psychiatric'

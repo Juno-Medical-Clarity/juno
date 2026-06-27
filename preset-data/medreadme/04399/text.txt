@@ -1,1 +1,0 @@
-Inference results for 19 patients show a close match between the SOZ inferred by the proposed approach and the SOZ estimated by expert neurologists (success rate of 17 out of 19).

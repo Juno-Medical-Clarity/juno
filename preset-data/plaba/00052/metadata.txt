@@ -1,5 +1,0 @@
-pmid:        29169352
-question:    5
-adaptation:  adaptation3
-title:       Arthroscopic internal drainage and cystectomy of popliteal cyst in knee osteoarthritis
-sentences:   7

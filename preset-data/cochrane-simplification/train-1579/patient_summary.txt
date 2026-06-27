@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1579  |  gem_id: gem-cochrane-simplification-train-1580  |  doi: 10.1002/14651858.CD004075.pub4
-
-The review identified seven trials involving 8013 women. Fetal pulse oximetry plus CTG showed no difference in caesarean section rates overall, nor any difference in the mother's or newborn's health, compared with CTG alone. If there was concern about the baby's well-being before the fetal pulse oximetry probe was placed, the use of fetal pulse oximetry reduced caesarean sections performed for the baby's well-being. The one trial of oximetry with CTG compared with CTG and fetal ECG showed an increase in the caesarean rate in the oximetry group. In two of the trials, the company making the fetal pulse oximetry machines provided some funding. A better method than fetal pulse oximetry is needed for checking on the well-being of the baby during labour.

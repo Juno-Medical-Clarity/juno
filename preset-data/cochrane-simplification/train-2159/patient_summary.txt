@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2159  |  gem_id: gem-cochrane-simplification-train-2160  |  doi: 10.1002/14651858.CD001537.pub4
-
-This review identified three small studies (68 participants) comparing: 1) intravenous plus oral steroid treatment versus oral sterids; 2) oral versus short-course intravenous steroid treatment; and 3) oral steroid treatment versus placebo. Only oral steroid treatment (compared to short-course intravenous steroid treatment) showed an increase in the number of patients who achieved complete remission. However, the lack of available studies leaves important treatment questions unanswered; what is the optimal dose and duration of steroid treatment in new-onset adult minimal change disease; how are relapses following steroid-induced remission prevented and treated; and what are the appropriate treatments for steroid-dependent or treatment-resistant minimal change disease?

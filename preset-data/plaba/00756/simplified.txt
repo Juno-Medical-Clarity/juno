@@ -1,9 +1,0 @@
-At the start of the COVID-19 pandemic, the Centers for Disease Control and Prevention (CDC) designed, provides rapid test for detecting SARS-CoV-2 virus that causes the disease.
-The tests target different parts of the virus in case some parts of the virus change (mutate).
-Parts of the test that target two specific parts of the virus may show false positive results -- identify people that do not have the virus as having it.
-We report the results of the CDC analysis of the false positive tests..
-One part of the test that targeted one part of the virus was tainted with the material similar to that part when the test was produced, which caused false positive results.
-In another component of the test, some chemicals interacted with each other and caused false positive results.
-We conclude that the first batch of CDC rapid tests had problems with the design of the test and manufacturing.
-We found that the tests that were stored longer gave more false positive results.
-After our study, CDC improved quality control and procedures for checking accuracy of the tests.

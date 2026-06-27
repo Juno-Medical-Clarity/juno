@@ -1,5 +1,0 @@
-drug_focus: tasmar
-question_type: Ingredient
-section_title: INGREDIENTS AND APPEARANCE
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0e47a9d-78e7-4523-983a-aa259f221736&audience=consumer
-sample_id: 0555

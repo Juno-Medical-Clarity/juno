@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [14:15] 'medical-jargon-google-easy' -> 'virulence'
-  [27:31] 'medical-jargon-google-hard' -> 'metabolic theory of ecology'

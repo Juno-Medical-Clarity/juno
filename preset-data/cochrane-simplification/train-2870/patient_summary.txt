@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2870  |  gem_id: gem-cochrane-simplification-train-2871  |  doi: 10.1002/14651858.CD000074.pub2
-
-The review of one small trial found that apnea might be reduced in the first few days after treatment, but there were not enough infants studied to know if this was a significant effect. There is no evidence from this trial on longer term effects or less common adverse effects. More research is needed on the effectiveness, potential harm and long-term benefits or adverse effects of these drugs.

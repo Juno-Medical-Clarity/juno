@@ -1,1 +1,0 @@
-However, a major limitation of previously published network analyses is the focus on small numbers of individual, differentially-expressed genes, hence the failure to take into account combinatorial interactions.

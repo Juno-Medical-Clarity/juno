@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0728  |  gem_id: gem-cochrane-simplification-train-729  |  doi: 10.1002/14651858.CD012834.pub2
-
-The evidence is current to 17 April 2018. Of the 3840 records screened, we identified only one unpublished study that met our inclusion criteria. The intervention focused on women living in Ukraine with HIV undergoing medical abortion at home. The quality of evidence was low, but found that medical abortion was successful with no major complications experienced among women living with HIV. The results from this review do not provide enough evidence to determine if differences exist in abortion outcomes for women living with HIV, but also no evidence was found showing that abortion is unsafe in this population. As it is important for all women to have access to safe abortion to combat the public health threat of high rates of maternal deaths, healthcare providers should not be deterred from providing access to safe abortion to their patients living with HIV.

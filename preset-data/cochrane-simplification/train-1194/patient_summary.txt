@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1194  |  gem_id: gem-cochrane-simplification-train-1195  |  doi: 10.1002/14651858.CD002002
-
-The review of trials found that interferons administered intramuscularly or subcutaneously can lead to a moderate reduction in recurrences and disability in people who have MS with remissions. Interferon-1a administered by the oral route was not effective for prevention of relapses. Side effects were usually influenza-like symptoms, injection site-reactions, pains in the joints and muscles, fatigue and headache.

@@ -1,5 +1,0 @@
-drug_focus: nanosilver
-question_type: Information
-section_title: NA
-source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3702006/
-sample_id: 0087

@@ -1,1 +1,0 @@
-Temperature is > 40° C.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2115  |  gem_id: gem-cochrane-simplification-train-2116  |  doi: 10.1002/14651858.CD003620.pub3
-
-Several trials have studied the effects of milk thistle for patients with liver diseases. This systematic review could not demonstrate significant effects of milk thistle on mortality or complications of liver diseases in patients with alcoholic and/or hepatitis B or C liver diseases combining all trials or high-quality trials. Low-quality trials suggested beneficial effects. High-quality randomised clinical trials on milk thistle versus placebo are needed.

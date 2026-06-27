@@ -1,5 +1,0 @@
-drug_focus: Chelated magnesium
-question_type: Indication
-section_title: NA
-source_url: https://www.everydayhealth.com/drugs/magnesium-amino-acids-chelate
-sample_id: 0108

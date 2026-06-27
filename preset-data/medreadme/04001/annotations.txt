@@ -1,8 +1,0 @@
-source:      plos_biology
-side:        complex
-readability: 4.7
-split:       test
-
-jargon_spans:
-  [0:4] 'medical-jargon-google-hard' -> 'Globular and varicose neurites'
-  [12:14] 'medical-jargon-google-easy' -> 'presynaptic sites'

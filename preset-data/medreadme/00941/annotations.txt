@@ -1,9 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        simple
-readability: 4.0
-split:       train
-
-jargon_spans:
-  [8:9] 'abbr-medical' -> 'NPSs'
-  [23:24] 'abbr-medical' -> 'NPSs'
-  [35:36] 'abbr-medical' -> 'NPSs'

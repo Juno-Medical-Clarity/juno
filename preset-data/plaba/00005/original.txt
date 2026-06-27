@@ -1,8 +1,0 @@
-Dystonia is a neurological condition characterized by abnormal involuntary movements or postures owing to sustained or intermittent muscle contractions.
-Dystonia can be the manifesting neurological sign of many disorders, either in isolation (isolated dystonia) or with additional signs (combined dystonia).
-The main focus of this Primer is forms of isolated dystonia of idiopathic or genetic aetiology.
-These disorders differ in manifestations and severity but can affect all age groups and lead to substantial disability and impaired quality of life.
-The discovery of genes underlying the mendelian forms of isolated or combined dystonia has led to a better understanding of its pathophysiology.
-In some of the most common genetic dystonias, such as those caused by TOR1A, THAP1, GCH1 and KMT2B mutations, and idiopathic dystonia, these mechanisms include abnormalities in transcriptional regulation, striatal dopaminergic signalling and synaptic plasticity and a loss of inhibition at neuronal circuits.
-The diagnosis of dystonia is largely based on clinical signs, and the diagnosis and aetiological definition of this disorder remain a challenge.
-Effective symptomatic treatments with pharmacological therapy (anticholinergics), intramuscular botulinum toxin injection and deep brain stimulation are available; however, future research will hopefully lead to reliable biomarkers, better treatments and cure of this disorder.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0097  |  gem_id: gem-cochrane-simplification-train-98  |  doi: 10.1002/14651858.CD000212
-
-The objective was to assess the benefits of the treatment [sulfasalazine, auranofin, etretinate, fumaric acid, IMI gold, azathioprine, methotrexate] for psoriatic arthritis and to assess the side effects. Parenteral methotrexate and sulfasalazine resulted in important benefit in over half the patients for psoriatic arthritis in these studies. There was insufficient data to evaluate other therapies and to examine toxicity. Further multicentre trials are required to establish the efficacy of azathioprine, oral methotrexate, etretinate, and colchicine.

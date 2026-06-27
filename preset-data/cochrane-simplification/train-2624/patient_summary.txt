@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2624  |  gem_id: gem-cochrane-simplification-train-2625  |  doi: 10.1002/14651858.CD006108.pub4
-
-Five studies randomly assigned 762 women experiencing hot flushes/night sweats. Three trials and two trials, respectively, were included in pooled comparisons of exercise versus control (n = 454 women) and exercise versus yoga (n = 279 women). One small study (14 women) compared exercise versus hormone therapy. When exercise was compared with no intervention, no evidence was found of any difference in their effect on hot flushes. One small study suggested that HT is more effective than exercise. Evidence was insufficient to show whether exercise was more effective than yoga. None of the trials found any evidence of differences between groups with respect to adverse effects, but data were very scanty. The methodological quality of the studies was variable. We assessed the evidence as of low quality: The main limitations were poor reporting of study methods, inconsistent results and lack of precision.

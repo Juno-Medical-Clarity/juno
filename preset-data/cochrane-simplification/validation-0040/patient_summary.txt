@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0040  |  gem_id: gem-cochrane-simplification-validation-41  |  doi: 10.1002/14651858.CD006857.pub2
-
-This review identified 16 studies investigating antibiotics for UTI in children. Results suggest that 10-day antibiotic treatment is more likely to eliminate bacteria from the urine than single-dose treatments; there was not enough data to draw conclusions about other treatment durations, or effectiveness of particular antibiotics. Although antibiotic treatment is effective for children with UTI, there are insufficient data to recommend any specific regimen.

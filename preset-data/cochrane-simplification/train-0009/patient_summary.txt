@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0009  |  gem_id: gem-cochrane-simplification-train-10  |  doi: 10.1002/14651858.CD001842.pub2
-
-This review of 22 trials involving 673 women and seven different adrenergic drugs found weak evidence that adrenergic agonists may help stress urinary incontinence. Side effects do occur but are usually minor. Rarely, more serious adverse effects such as high blood pressure can occur. More evidence is needed to compare adrenergic drugs with other drugs for stress incontinence and also with pelvic floor muscle exercises.

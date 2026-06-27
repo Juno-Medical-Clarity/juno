@@ -1,5 +1,0 @@
-pmid:        34603756
-question:    36
-adaptation:  adaptation1
-title:       Controlled Fragmentation of Urinary Stones as a Method of Preventing Inflammatory Infections in the Treatment of Urolithiasis (Experience in Successful Clinical Use)
-sentences:   13

@@ -1,5 +1,0 @@
-pmid:        28970150
-question:    22
-adaptation:  adaptation1
-title:       FLCN: The causative gene for Birt-Hogg-Dubé syndrome
-sentences:   5

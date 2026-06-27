@@ -1,1 +1,0 @@
-In addition to these experiments, we developed a reaction - diffusion model of hb transcription, with Bcd cooperative binding and hb self - regulation, and used Zero Eigenvalue Analysis to look for multiple stationary states in the reaction network.

@@ -1,1 +1,0 @@
-This model provides a new explanation for the well-documented correlation between ROS and the aged phenotype as a gradual increase of molecular damage during aging would trigger a gradually stronger ROS response.

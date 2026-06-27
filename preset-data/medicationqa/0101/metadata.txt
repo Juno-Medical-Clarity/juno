@@ -1,5 +1,0 @@
-drug_focus: triamcinolone
-question_type: Dose
-section_title: Dosage Forms & Strengths
-source_url: https://reference.medscape.com/drug/kenalog-orabase-triamcinolone-topical-343533
-sample_id: 0101

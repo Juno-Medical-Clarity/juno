@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2963  |  gem_id: gem-cochrane-simplification-train-2964  |  doi: 10.1002/14651858.CD006860.pub2
-
-This review investigated the effectiveness of personal assistance versus any other form of care for adults with both physical and intellectual impairments. A literature search identified 2 studies that met the inclusion criteria, which included 1002 participants. They suggested that personal assistance may be preferred over other services; however, some people prefer other models of care. This review indicates that personal assistance may have some benefits for some recipients and their informal caregivers. Paid assistance might substitute for informal care and cost government more than alternative arrangements; however, the relative total costs to recipients and society are unknown.

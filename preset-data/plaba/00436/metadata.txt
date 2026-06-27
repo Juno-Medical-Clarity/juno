@@ -1,5 +1,0 @@
-pmid:        26391748
-question:    34
-adaptation:  adaptation1
-title:       Practical Approach to Detection and Management of Chronic Kidney Disease for the Primary Care Clinician
-sentences:   9

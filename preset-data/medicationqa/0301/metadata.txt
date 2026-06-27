@@ -1,5 +1,0 @@
-drug_focus: diazepam gel
-question_type: Usage
-section_title: How should this medicine be used?
-source_url: https://medlineplus.gov/druginfo/meds/a605033.html
-sample_id: 0301

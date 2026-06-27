@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2734  |  gem_id: gem-cochrane-simplification-train-2735  |  doi: 10.1002/14651858.CD003992.pub3
-
-This review of randomised controlled trials showed comparable death and failure rates for oral and intravenous antibiotics for low risk patients, those with solid tumours or chronic leukaemia or lymphoma, and independent of age, source of infection and severity of the neutropenia.

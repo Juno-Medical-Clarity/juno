@@ -1,5 +1,0 @@
-pmid:        30639028
-question:    5
-adaptation:  adaptation3
-title:       Extra-articular endoscopic excision of symptomatic popliteal cyst with failed initial conservative treatment: A novel technique
-sentences:   8

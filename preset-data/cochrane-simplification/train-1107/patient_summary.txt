@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1107  |  gem_id: gem-cochrane-simplification-train-1108  |  doi: 10.1002/14651858.CD006179.pub2
-
-Three small trials of 271 babies were included in this review. The results of these studies show that it is possible to reduce the chance of serious blood infection occurring, but that almost 10 babies need to be given preventive antibiotics to avoid one case of infection. There was no difference in the likelihood of death. There were not enough data on other important effects of the antibiotics or on the possible serious side effects. There was not much similarity between the studies included in this review. Therefore, there is currently not enough evidence to recommend routinely using antibiotics in babies with central venous lines.

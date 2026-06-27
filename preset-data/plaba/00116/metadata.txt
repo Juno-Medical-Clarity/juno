@@ -1,5 +1,0 @@
-pmid:        24610977
-question:    10
-adaptation:  adaptation1
-title:       Low level laser therapy (lllt) for chronic joint pain of the elbow, wrist and fingers
-sentences:   15

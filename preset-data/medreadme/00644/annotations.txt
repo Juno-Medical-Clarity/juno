@@ -1,8 +1,0 @@
-source:      plos_genetics
-side:        simple
-readability: 4.7
-split:       train
-
-jargon_spans:
-  [25:28] 'medical-jargon-google-easy' -> 'copy number variants'
-  [29:30] 'abbr-medical' -> 'CNVs'

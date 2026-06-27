@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0724  |  gem_id: gem-cochrane-simplification-train-725  |  doi: 10.1002/14651858.CD005346.pub4
-
-We searched for trials that compared usual care with intensive insulin treatment (trying to keep blood sugar levels within the normal range of 4 to 7.5 mmol/L) after stroke. We found 11 trials involving 1583 participants. Trying to keep the blood sugar level within a tight range immediately after a stroke did not improve the outcomes of neurological deficit and dependency. It did, however, significantly increase the chance of experiencing very low blood sugar levels (hypoglycaemia), which can be harmful and can cause brain damage and death. On balance, the trials did not show any benefit from intensive control of blood sugar levels after stroke.

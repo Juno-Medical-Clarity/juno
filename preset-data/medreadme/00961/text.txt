@@ -1,1 +1,0 @@
-In the present work, atomistic simulations of peptide folding and aggregation equilibria are force-matched using multiscale coarse-graining to develop and test a CG interaction potential of general utility for the simulation of proteins of arbitrary sequence.

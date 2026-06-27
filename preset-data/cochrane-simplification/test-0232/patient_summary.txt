@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0232  |  gem_id: gem-cochrane-simplification-test-233  |  doi: 10.1002/14651858.CD006053.pub6
-
-We included eight randomised controlled trials with a total of 512 participants in this review. The included trials revealed vast differences in sample size as well as clinical and methodological quality. We could identify no relevant differences in terms of main complications, long-term survival, or death due to complications after the operation, but operating time, intraoperative blood loss, and need for blood transfusion seem to be less frequent in the group treated with the pylorus-preserving Whipple operation. Our conclusion is that, at present, no relevant difference is evident between the two surgical procedures for the treatment of pancreatic or periampullary cancer. The quality of the body of evidence is still low since all trials revealed some shortcomings in terms of methodological quality or reporting.

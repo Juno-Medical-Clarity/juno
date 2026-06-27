@@ -1,5 +1,0 @@
-drug_focus: metoprolol
-question_type: Usage/time
-section_title: NA
-source_url: https://www.heart-valve-surgery.com/heart-surgery-blog/2014/05/27/metoprolol/
-sample_id: 0100

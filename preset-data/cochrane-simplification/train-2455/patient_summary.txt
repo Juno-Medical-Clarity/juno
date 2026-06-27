@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2455  |  gem_id: gem-cochrane-simplification-train-2456  |  doi: 10.1002/14651858.CD001352.pub3
-
-This review considers the available evidence on the procedures of spinal decompression (widening the spinal canal or laminectomy), nerve root decompression (of one or more individual nerves) and fusion of adjacent vertebrae. There is moderate evidence that instrumentation can increase the fusion rate, but any improvement in clinical outcomes is probably marginal. The effectiveness of intra-discal electrotherapy (IDET) remains unproven. Only preliminary results are available on disc replacement and it is not possible to draw any conclusions on this subject.

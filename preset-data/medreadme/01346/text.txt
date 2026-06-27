@@ -1,1 +1,0 @@
-Combining this BRCA2-specific SNP with 13 other breast cancer risk SNPs also known to modify risk in BRCA2 mutation carriers, we were able to derive a risk prediction model that could be useful in helping women with BRCA2 mutations weigh their risk-reduction strategy options.

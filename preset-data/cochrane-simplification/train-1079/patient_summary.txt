@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1079  |  gem_id: gem-cochrane-simplification-train-1080  |  doi: 10.1002/14651858.CD008136.pub3
-
-We wanted to know which of these two methods is more likely to detect poor growth. Ultrasound assessment can also be used to detect growth restriction but this is costly and not always available, and there are concerns about its unnecessary use. We found only one randomised trial (involving 1639 women at 20 weeks’ gestation and above) comparing repeated measures of SFH with abdominal palpation. The trial found no difference between the two approaches in detecting poor growth. With such limited evidence, it is still not known whether one method is more effective than the other, and how these methods compare with ultrasound measurement. The main findings from this review were assessed for quality using software called GRADEpro. The overall evidence was of low/very low quality.

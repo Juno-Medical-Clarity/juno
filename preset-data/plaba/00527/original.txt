@@ -1,8 +1,0 @@
-Autosomal dominant polycystic kidney disease is an important cause of end-stage renal disease, for which there is no proven therapy.
-Mutations in PKD1 (the gene encoding polycystin-1) are the principal cause of this disease.
-The disease begins in utero and is slowly progressive, but it is not known whether cystogenesis is an ongoing process during adult life.
-We now show that inactivation of Pkd1 in mice before postnatal day 13 results in severely cystic kidneys within 3 weeks, whereas inactivation at day 14 and later results in cysts only after 5 months.
-We found that cellular proliferation was not appreciably higher in cystic specimens than in age-matched controls, but the abrupt change in response to Pkd1 inactivation corresponded to a previously unrecognized brake point during renal growth and significant changes in gene expression.
-These findings suggest that the effects of Pkd1 inactivation are defined by a developmental switch that signals the end of the terminal renal maturation process.
-Our studies show that Pkd1 regulates tubular morphology in both developing and adult kidney, but the pathologic consequences of inactivation are defined by the organ's developmental status.
-These results have important implications for clinical understanding of the disease and therapeutic approaches.

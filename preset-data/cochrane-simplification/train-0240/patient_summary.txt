@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0240  |  gem_id: gem-cochrane-simplification-train-241  |  doi: 10.1002/14651858.CD005076.pub2
-
-This review compared reduced dose (mean 60% reduction in inhaled steroid) ICS/LABA combination to either a fixed moderate/high dose ICS or a reduced/tapering ICS dose. In adults with asthma, who use moderate to high maintenance doses of ICS, the addition of LABA has an ICS-sparing effect. LABA permit a reduction of 37% (253 mcg BDP) in subjects on minimum maintenance ICS and up to 60% (300 mcg FP) in subjects on maintenance ICS without deterioration in asthma control.

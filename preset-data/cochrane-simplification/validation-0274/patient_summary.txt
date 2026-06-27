@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0274  |  gem_id: gem-cochrane-simplification-validation-275  |  doi: 10.1002/14651858.CD003573.pub2
-
-We found eight trials on 870 people comparing hospital at home with  hospital care. The results from these trials show that fewer people are readmitted to hospital if they received their care at home. There was no significant difference in quality of life, although patients and carers said they preferred treatment at home. There was no significant difference in the number of deaths. These results are only applicable to a subgroup of patients who could be treated at home, but for a majority of the patients with acute COPD exacerbations, "hospital at home" schemes are probably not an suitable option.

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3513  |  gem_id: gem-cochrane-simplification-train-3514  |  doi: 10.1002/14651858.CD003997.pub2
-
-We included 19 randomized controlled trials in the review, with a total of 1756 patients. The review of trials found that a dose of corticosteroid during tonsillectomy or adenotonsillectomy can prevent vomiting for one out of every five children who gets the drug. Children also return to a normal diet more quickly and they have less pain after surgery.

@@ -1,1 +1,0 @@
-An analog-to-digital converter ( ADC ) performs the reverse operation.

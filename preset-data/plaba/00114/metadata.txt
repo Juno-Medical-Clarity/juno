@@ -1,5 +1,0 @@
-pmid:        7698623
-question:    9
-adaptation:  adaptation1
-title:       Management of foreign bodies of the upper gastrointestinal tract: update
-sentences:   15

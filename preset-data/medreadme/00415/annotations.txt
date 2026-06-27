@@ -1,8 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Sedatives'
-  [2:4] 'medical-jargon-google-easy' -> 'opiate withdrawal'

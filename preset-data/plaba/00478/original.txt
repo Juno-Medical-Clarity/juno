@@ -1,9 +1,0 @@
-We aimed to investigate the terms used to refer to cognitive and fatigue related side effects and their prevalence in phase III add-on clinical trials of anti-epileptic drugs (AEDs).
-We extracted data from publicly available FDA documents as well as the published literature.
-Target drug doses were then calculated as drug loads and divided into three categories (low, average, high).
-The odds ratio of developing the side effects was calculated for each drug load, and the presence of a dose-response effect was also assessed.
-We found that the cognitive terms used across trials were very variable, and data on discontinuation rates were limited.
-Placebo rates for cognitive side effects ranged from 0 to 10.6% while those for fatigue ranged from 2.5 to 37.7%.
-Keeping in mind the variable placebo rates and terminology, the majority of AEDs exhibited a clear dose response effect and significant odds ratios at high doses except brivaracetam and zonisamide for the cognitive side effects and tiagabine, topiramate, and zonisamide for the fatigue side effects.
-Due to their clinical relevance and impact on quality of life, new trials should make data related to the prevalence and discontinuation rates of these side effects publicly available.
-Given the clear dose response effect, physicians should consider aiming for lower drug loads and adjusting doses to improve tolerability.

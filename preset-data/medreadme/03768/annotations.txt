@@ -1,7 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.85
-split:       test
-
-jargon_spans:
-  [26:29] 'medical-jargon-google-easy' -> 'cerebral amyloid angiopathy'

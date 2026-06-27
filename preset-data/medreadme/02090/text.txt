@@ -1,1 +1,0 @@
-Overall, our results indicated that cellular heterogeneity in response to EGF is strongly driven by extrinsic noise, and that such heterogeneity results from variability of particular protein species that function as sensitive nodes, which may contribute to the pathogenesis of human diseases.

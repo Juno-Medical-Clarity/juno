@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1606  |  gem_id: gem-cochrane-simplification-train-1607  |  doi: 10.1002/14651858.CD006507.pub2
-
-The objective of this review was to assess the efficacy of this treatment. As a result of the small number of studies that we were able to include in this review and the limitations of those studies, we were unable to draw any conclusions regarding the effectiveness of meditation therapy for ADHD. No adverse effects of meditation in children have been reported. More trials are needed on meditation therapies for ADHD so that conclusions can be drawn regarding its effectiveness.

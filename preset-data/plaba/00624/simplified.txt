@@ -1,9 +1,0 @@
-The objective of this study is to determine the effectiveness and safety of belimumab and anifrolumab, medications that lower the strength of the body's immune system, in patients with active systemic lupus erythematosus (lupus - when your immune system attacks healthy cells).
-An analysis using data from different clinical studies is performed to understand the effectiveness and safety of belimumab, anifrolumab, and a placebo (sham treatment) in patients with active SLE.
-Researchers found 6 relevant clinical studies that together have a total of 2,757 patients.
-Using an assessment tool to measure how disease reacts to medication and other therapy, the response rate at 52 weeks is much higher in the belimumab and anifrolumab groups than that in the placebo group.
-The response rate for belimumab is much higher than the response for anifrolumab.
-Using data, a ranking system suggested that belimumab is most likely the best treatment for a response rate, followed by anifrolumab, and placebo.
-The number of serious negative events are not significantly different among the 4 treatment groups.
-In conclusion, based on the assessment (measurement) of response rate, belimumab has the best response effectiveness, followed by anifrolumab.
-However, there is no difference in the number of serious negative events among the treatment options.

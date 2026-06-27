@@ -1,9 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.7
-split:       dev
-
-jargon_spans:
-  [13:14] 'abbr-medical' -> 'TRD'
-  [18:19] 'medical-name-entity' -> 'NHS'
-  [24:25] 'abbr-medical' -> 'BDI'

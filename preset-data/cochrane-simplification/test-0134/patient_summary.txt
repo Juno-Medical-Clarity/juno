@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0134  |  gem_id: gem-cochrane-simplification-test-135  |  doi: 10.1002/14651858.CD002181.pub2
-
-Based on 12 studies, including from eight to 160 people with type 1 and type 2 diabetes for at least an average four-month period, restricted protein intake appeared to slow progression of diabetic kidney disease, but not by much on average. However, individual variation existed, therefore a low-protein diet may benefit some individuals. A low-protein diet can be difficult to adhere to, especially over the long term. Reducing the amount of animal protein is the usual method but some evidence suggests that a shift from red meat to white meat and fish or vegetables may give similar results. We found no data on the effects of low-protein diet on health-related quality of life and costs.

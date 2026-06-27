@@ -1,9 +1,0 @@
-source:      MSD
-side:        simple
-readability: 5.0
-split:       dev
-
-jargon_spans:
-  [0:1] 'medical-jargon-google-easy' -> 'Vancomycin'
-  [6:7] 'medical-jargon-google-easy' -> 'meningitis'
-  [9:10] 'medical-jargon-google-easy' -> 'pneumococci'

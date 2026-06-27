@@ -1,5 +1,0 @@
-pmid:        29475947
-question:    46
-adaptation:  adaptation2
-title:       Functional organization of cytoplasmic portals controlling access to the cystic fibrosis transmembrane conductance regulator (CFTR) chloride channel pore
-sentences:   11

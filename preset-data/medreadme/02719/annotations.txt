@@ -1,9 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        simple
-readability: 4.0
-split:       dev
-
-jargon_spans:
-  [22:23] 'medical-jargon-google-easy' -> 'antibiotic'
-  [28:31] 'medical-jargon-google-easy' -> 'respiratory tract infections'
-  [32:33] 'abbr-medical' -> 'RTIs'

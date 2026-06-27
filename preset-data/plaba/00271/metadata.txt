@@ -1,5 +1,0 @@
-pmid:        34322344
-question:    21
-adaptation:  adaptation2
-title:       Strangulated Falciform Hernia
-sentences:   7

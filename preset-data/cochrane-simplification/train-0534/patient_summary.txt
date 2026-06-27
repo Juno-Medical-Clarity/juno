@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0534  |  gem_id: gem-cochrane-simplification-train-535  |  doi: 10.1002/14651858.CD004677.pub3
-
-We found nine trials, involving 320 people, which evaluated four SSRIs: fluoxetine, fluvoxamine, fenfluramine and citalopram. Five studies included only children and four studies included only adults. One trial enrolled 149 children, but the other trials were much smaller. We found no trials that evaluated sertraline, paroxetine or escitalopram. There is no evidence to support the use of SSRIs to treat autism in children. There is limited evidence, which is not yet sufficiently robust, to suggest effectiveness of SSRIs in adults with autism. Treatment with an SSRI may cause side effects. Decisions about the use of SSRIs for established clinical indications that may co-occur with autism, such as obsessive-compulsive disorder and depression in adults or children, and anxiety in adults, should be made on a case-by-case basis.

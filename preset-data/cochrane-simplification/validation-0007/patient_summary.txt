@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0007  |  gem_id: gem-cochrane-simplification-validation-8  |  doi: 10.1002/14651858.CD010800.pub2
-
-We found four studies involving 234 women who had been in preterm labour and had their contractions stopped. We found no evidence of terbutaline maintenance therapy offering any advantages over saline placebo pump or oral terbutaline maintenance therapy in reducing adverse neonatal outcomes by prolonging pregnancy among women with arrested preterm labour. The review found there are not enough large trials to show whether terbutaline pump maintenance therapy is safe or effective.

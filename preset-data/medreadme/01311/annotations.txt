@@ -1,7 +1,0 @@
-source:      plos_biology
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [1:5] 'medical-jargon-google-hard' -> 'metabolic theory of ecology'

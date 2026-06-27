@@ -1,1 +1,0 @@
-To assess their performance, we implemented them retrospectively, using only information that would have been available at the time of estimation, and found that they substantially enhanced the estimates of malaria cases.

@@ -1,5 +1,0 @@
-drug_focus: Ceftriaxone
-question_type: Indication
-section_title: RESULTS
-source_url: https://www.ncbi.nlm.nih.gov/pubmed/28657382
-sample_id: 0189

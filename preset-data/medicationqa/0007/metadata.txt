@@ -1,5 +1,0 @@
-drug_focus: Tylenol
-question_type: Interaction
-section_title: NA
-source_url: https://www.medicalnewstoday.com/articles/322813.php
-sample_id: 0007

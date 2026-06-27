@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0466  |  gem_id: gem-cochrane-simplification-test-467  |  doi: 10.1002/14651858.CD001043
-
-The review found that beta-sitosterol treatments were well tolerated and improved urinary symptoms and flow measures in men with mild to moderate BPH. More research into long-term effects of beta-sitosterols is needed.

@@ -1,5 +1,0 @@
-drug_focus: anticholinergic drugs
-question_type: Action
-section_title: CLINICAL PHARMACOLOGY
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=baf1bea8-c573-4ef8-8630-7b51a8e53cac&audience=consumer
-sample_id: 0538

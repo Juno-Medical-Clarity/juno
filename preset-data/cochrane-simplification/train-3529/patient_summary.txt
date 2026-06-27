@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3529  |  gem_id: gem-cochrane-simplification-train-3530  |  doi: 10.1002/14651858.CD007059.pub2
-
-This review included five trials with 311 eyes (267 participants). These studies included 160 eyes which had trabeculectomy compared to 151 eyes that had non-penetrating glaucoma surgery, of which 101 eyes had deep sclerectomy and 50 eyes had viscocanalostomy. This review showed that trabeculectomy is better in terms of achieving total success (pressure controlled without eyedrops) than non-penetrating filtering procedures. Although when we looked at the outcome of partial success (pressure controlled with additional eyedrops) it was more imprecise and our results could not exclude one surgical approach being better than the other. However, the review noted that these studies had some limitations regarding their design and were too small to give definitive information on differences in complications following surgery. None of the studies measured quality of life.

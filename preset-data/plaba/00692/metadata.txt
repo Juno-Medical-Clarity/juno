@@ -1,5 +1,0 @@
-pmid:        24724425
-question:    54
-adaptation:  adaptation1
-title:       Relationship between serum hCG and urinary hCG in cases of pregnancy, abortion, and hydatidiform mole
-sentences:   10

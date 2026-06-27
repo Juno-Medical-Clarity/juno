@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1984  |  gem_id: gem-cochrane-simplification-train-1985  |  doi: 10.1002/14651858.CD009684.pub2
-
-We found one study comparing zonisamide versus placebo, involving a total of 20 randomised participants with essential tremor. The impact of zonisamide on functional abilities, risk of treatment discontinuation, and adverse events is uncertain because the quality of evidence is very low. Adverse events were only reported in participants from the zonisamide group, making it possible that they were aware of which treatment they had been receiving. Quality of life was not assessed in the study included. The single study we found was small and the possibility of study participants becoming aware of the treatment group means that we cannot be certain about the risk-benefit profile of this treatment.

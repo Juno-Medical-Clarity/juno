@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1908  |  gem_id: gem-cochrane-simplification-train-1909  |  doi: 10.1002/14651858.CD005477.pub4
-
-This review concludes that single layer anastomosis is comparable to double layer anastomosis in terms of anastomotic leak, peri-operative complications, death rate and hospital stay. Single layer anastomosis consumes shorter operative time as compared to double layer. Therefore, single layer anastomosis may routinely be used for the anastomosis of gastrointestinal tract following bowel resection. However, since this conclusion is derived from smaller number of patients recruited in relatively moderate quality trials, further trials should be aimed to reduce the limitations of this review.

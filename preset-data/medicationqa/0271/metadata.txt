@@ -1,5 +1,0 @@
-drug_focus: losartan
-question_type: Action/time
-section_title: CLINICAL STUDIES
-source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f2f2b6c6-0ab1-483f-b4a2-78dfe3200153
-sample_id: 0271

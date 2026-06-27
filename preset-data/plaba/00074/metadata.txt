@@ -1,5 +1,0 @@
-pmid:        32740045
-question:    6
-adaptation:  adaptation1
-title:       Alternative routes of levothyroxine administration for hypothyroidism
-sentences:   8

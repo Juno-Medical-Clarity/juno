@@ -1,7 +1,0 @@
-source:      nhir_Health_Technology_Assessment
-side:        complex
-readability: 4.0
-split:       test
-
-jargon_spans:
-  [1:2] 'abbr-medical' -> 'TW'

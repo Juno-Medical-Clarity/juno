@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2722  |  gem_id: gem-cochrane-simplification-train-2723  |  doi: 10.1002/14651858.CD002731
-
-The review of trials found that both were similarly effective in relieving exercise-induced asthma for both children and adults. More people have sore throats and an unpleasant after-taste after using nedocromil sodium.

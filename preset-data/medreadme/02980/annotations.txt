@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        complex
-readability: 5.0
-split:       dev
-
-jargon_spans:
-  [4:7] 'general-complex' -> 'randomised clinical trials'
-  [17:18] 'medical-jargon-google-easy' -> 'acute'
-  [20:23] 'medical-jargon-google-easy' -> 'overt hepatic encephalopathy'

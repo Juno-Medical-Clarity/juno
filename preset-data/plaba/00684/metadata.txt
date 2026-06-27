@@ -1,5 +1,0 @@
-pmid:        25555390
-question:    53
-adaptation:  adaptation1
-title:       Effects of performing morning versus afternoon exercise on glycemic control and hypoglycemia frequency in type 1 diabetes patients on sensor-augmented insulin pump therapy
-sentences:   11

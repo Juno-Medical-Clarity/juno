@@ -1,5 +1,0 @@
-pmid:        26231973
-question:    69
-adaptation:  adaptation3
-title:       PREPP: postpartum depression prevention through the mother-infant dyad
-sentences:   7

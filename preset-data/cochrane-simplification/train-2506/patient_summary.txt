@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2506  |  gem_id: gem-cochrane-simplification-train-2507  |  doi: 10.1002/14651858.CD001394
-
-Three studies were identified that met the inclusion criteria. It was not possible to pool the data from the 3 included studies, either because of the different lengths of treatment or choice of different control treatments, or because the outcome measures were not comparable. Two significant results were found but there were no statistically significant differences between validation and social contact or between validation and usual therapy. There were no assessments of carers. All in all there is insufficient evidence from randomised trials to allow any conclusion about the efficacy of validation therapy for people with dementia or cognitive impairment.

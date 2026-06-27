@@ -1,9 +1,0 @@
-Birt-Hogg-Dubé syndrome (BHD) is a rare inherited autosomal dominant disorder caused by germline mutations in the tumour suppressor gene FLCN, encoding the protein folliculin.
-Its clinical expression typically includes multiple pulmonary cysts, recurrent spontaneous pneumothoraces, cutaneous fibrofolliculomas and renal tumours of various histological types.
-BHD has no sex predilection and tends to manifest in the third or fourth decade of life.
-Multiple bilateral pulmonary cysts are found on chest computed tomography in >80% of patients and more than half experience one or more episodes of pneumothorax.
-A family history of pneumothorax is an important clue, which suggests the diagnosis of BHD.
-Unlike other cystic lung diseases such as lymphangioleiomyomatosis and pulmonary Langerhans cell histiocytosis, BHD does not lead to progressive loss of lung function and chronic respiratory insufficiency.
-Renal tumours affect about 30% of patients during their lifetime, and can be multiple and recurrent.
-The diagnosis of BHD is based on a combination of genetic, clinical and/or skin histopathological criteria.
-Management mainly consists of early pleurodesis in the case of pneumothorax, periodic renal imaging for tumour detection, and diagnostic work-up in search of BHD in relatives of the index patient.

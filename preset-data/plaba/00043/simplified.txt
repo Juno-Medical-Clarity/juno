@@ -1,6 +1,0 @@
-Diabetes mellitus is a common disease whose side effects are severe.
-For decades, the diagnosis of diabetes and prediabetes was using only fasting (without food) glucose or glucose two hours during an by-mouth (oral) glucose sensitivity test.
-Recently, it is possible to use HbA1c (a simple blood sugar test).
-Each of these tests has pros and cons that must be well known by clinicians for better care for patients.
-So they could use one, two or three of this tests to reach a proper diagnosis.
-This article's aim is about the strong and weak points of these tests.

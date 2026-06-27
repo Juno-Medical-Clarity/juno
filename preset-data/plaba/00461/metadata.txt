@@ -1,5 +1,0 @@
-pmid:        32809722
-question:    36
-adaptation:  adaptation2
-title:       Renal Extracorporeal Lithotripsy
-sentences:   13

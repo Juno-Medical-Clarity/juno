@@ -1,1 +1,0 @@
-These maps juxtapose unstudied proteins with similar well-characterized proteins, helping to show where existing knowledge can help predict properties of uncharacterized sequences.

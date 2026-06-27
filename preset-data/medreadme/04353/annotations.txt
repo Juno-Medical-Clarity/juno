@@ -1,6 +1,0 @@
-source:      nhir_Public_Health_Research
-side:        complex
-readability: 5.35
-split:       test
-
-jargon_spans: (no jargon annotation found for this sentence)

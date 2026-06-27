@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0934  |  gem_id: gem-cochrane-simplification-train-935  |  doi: 10.1002/14651858.CD004826.pub2
-
-Seven small studies of variable quality were reviewed. The studies tested the effect of maintenance treatment with probiotics (e.g. Lactobacilli GG, Escherichia coli strain Nissle 1917, VSL#3, Saccharomyces boulardii) among patients with Crohn's disease in remission. Remission was induced by medical or surgical treatment. The studies lasted for 6 months to a year. The studies did not demonstrate any benefit for probiotic treatment. Probiotics were generally well tolerated and few side effects were reported. Reported side effects include bloating, diarrhoea, constipation, nausea and epigastric pain. Currently, there is no evidence to support the use of probiotics for the maintenance treatment of Crohn's disease. It is possible that larger studies might show that this approach to treatment is effective.

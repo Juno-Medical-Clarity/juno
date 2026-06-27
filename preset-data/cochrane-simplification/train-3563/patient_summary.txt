@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3563  |  gem_id: gem-cochrane-simplification-train-3564  |  doi: 10.1002/14651858.CD009404.pub3
-
-This updated review contains two interrupted-time-series (ITS) studies (studies in which data are collected at multiple time points before and after an intervention), one from the original review, which evaluated a targeted educational intervention aimed at reducing the incidence of wrong-site surgery, and which was found to reduce its incidence. An additional study evaluated the incidence of wrong-site surgery before and after the introduction of the Universal Protocol, however the relevance of these findings regarding the impact of the intervention is unclear given that prior to its introduction, the incidence was decreasing due to other unclear factors. Overall, this review now contains two studies, of relatively low quality evidence, on very specific populations and their generalisability to a larger audience is low.

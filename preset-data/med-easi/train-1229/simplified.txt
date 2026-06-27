@@ -1,1 +1,0 @@
-The probability density function is necessary to be able to work with continuous distributions.

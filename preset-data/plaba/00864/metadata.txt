@@ -1,5 +1,0 @@
-pmid:        29261855
-question:    70
-adaptation:  adaptation3
-title:       Vitamin B6 Deficiency
-sentences:   14

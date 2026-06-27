@@ -1,5 +1,0 @@
-pmid:        33439824
-question:    34
-adaptation:  adaptation1
-title:       The Management of Non-Dialysis-Dependent Chronic Kidney Disease in Primary Care
-sentences:   11

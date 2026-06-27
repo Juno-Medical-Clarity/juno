@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0143  |  gem_id: gem-cochrane-simplification-test-144  |  doi: 10.1002/14651858.CD006515
-
-The aim of this review was to compare the effectiveness of CAPD and APD. Only three small randomised controlled trials (RCTs) (139 patients) were identified after an extensive literature search, and we found no difference between CAPD and APD for clinically important outcomes. APD may however be considered advantageous in select group of patients such as in the younger PD population and those in employment or education due to its psychosocial advantages. These outcomes were only reported in one trial. Large, long-term RCTs are needed in this area.

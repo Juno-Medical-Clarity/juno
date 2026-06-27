@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1132  |  gem_id: gem-cochrane-simplification-train-1133  |  doi: 10.1002/14651858.CD000256
-
-The review shows that artemisinin drugs clear malaria parasites from the blood more effectively than standard treatment drugs. In areas where malaria parasites are more resistant to existing drugs, such as South-East Asia, artemisinin drugs are not better at sustained parasite clearance than standard treatment with quinine or mefloquine. Combination treatment using an artemisinin drug together with the longer-acting antimalarial drug mefloquine improves sustained clearance of parasites, but mefloquine is associated with adverse effects. There are few studies on combination treatment with longer-acting antimalarial drugs that are safer than mefloquine. There is no evidence from trials that any of the several artemisinin derivatives is better than the others.

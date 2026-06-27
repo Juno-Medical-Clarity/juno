@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0000  |  gem_id: gem-cochrane-simplification-validation-1  |  doi: 10.1002/14651858.CD000370
-
-The goal of this systematic review was to examine the effects of interferon treatment for interferon naive (previously untreated) patients with chronic hepatitis C. This review confirmed the efficacy of interferon on surrogate outcomes as well as a favourable effect of higher treatment doses and prolonged durations. However, these effects were associated with more adverse events. Compared with non-cirrhotic patients, cirrhotic patients respond similarly, but the efficacy of interferon in patients with normal liver biochemistry is not substantiated by the data. Although interferon monotherapy is no longer considered the standard therapy for chronic hepatitis C, this review defines the optimal dose and duration of interferon monotherapy, which may be useful for patients who cannot tolerate combination therapy including interferon and ribavirin, the most effective therapy currently available.

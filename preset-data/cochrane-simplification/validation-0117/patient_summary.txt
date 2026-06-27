@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  validation-0117  |  gem_id: gem-cochrane-simplification-validation-118  |  doi: 10.1002/14651858.CD008896.pub2
-
-We did computer searches for relevant studies and looked at the reference lists of study reports to identify more studies. We found nine studies of moderate to low quality. Three studies on contraceptive counselling and referrals by community workers showed an increase in use of the copper IUD. Two studies on antenatal contraceptive counselling and one study on postnatal couple counselling, with provision of an information leaflet before being discharged from the maternity ward, also showed an increase in use of the copper IUD. A study on postnatal home visits and two studies on enhanced postabortion contraceptive counselling did not show an increase in use of the copper IUD. More high-quality research is needed to look at the longer-term effectiveness of interventions to improve use of the copper IUD.

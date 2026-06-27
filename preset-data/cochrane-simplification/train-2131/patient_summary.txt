@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-2131  |  gem_id: gem-cochrane-simplification-train-2132  |  doi: 10.1002/14651858.CD004823.pub4
-
-Nineteen studies fulfilled our predetermined criteria but only six could be combined (in meta-analysis). We obtained additional data from trialists. We were not able to combine results in children due to limited data. Thickened feeds had an inconsistent effect. Proton pump inhibitors (PPI) did not reduce cough and should not be used for cough in young children. In adults with cough and GORD, no significant difference was found in clinical cure using proton pump inhibitors (PPI) for cough and GORD. Using other outcomes, there was also no significant difference between PPI and placebo. This review also highlights a large placebo and time period effect (natural resolution with time) of treatment for chronic cough. In adults treatment with PPI for cough associated with GORD is inconsistent and its benefit variable. There was insufficient data to draw any conclusion from other therapies for cough associated with GORD.

@@ -1,5 +1,0 @@
-drug_focus: simvastatin, PPI
-question_type: Interaction
-section_title: Proton pump inhibitors and statins: a possible interaction that favors low-density lipoprotein cholesterol reduction?
-source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5033144/https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5033144/
-sample_id: 0438

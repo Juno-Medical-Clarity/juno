@@ -1,5 +1,0 @@
-pmid:        15469601
-question:    44
-adaptation:  adaptation2
-title:       Clinical review: hemorrhagic shock
-sentences:   11

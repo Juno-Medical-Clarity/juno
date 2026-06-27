@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3187  |  gem_id: gem-cochrane-simplification-train-3188  |  doi: 10.1002/14651858.CD005482
-
-This systematic review aims to synthesize the evidence for use of STI as an alternative strategy in the management of chronic suppressed HIV infection. STI is a planned, experimental intervention, and the evidence from 33 available intervention trials has been summarized. Currently, several large STI trials are underway, investigating long-term effects of STI strategies. Their results will be available in a few years. Based on the studies we reviewed, we find that there is insufficient evidence to support the use of STI as a standard of care in the management of chronic suppressed HIV infection.

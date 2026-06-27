@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3164  |  gem_id: gem-cochrane-simplification-train-3165  |  doi: 10.1002/14651858.CD007456.pub2
-
-This review studied whether mobile phone applications such as Short Message Service (SMS) and Multimedia Message Service (MMS) can be useful to send information to patients about their test results. We also looked at possible risks of communicating in this way. Our review found only one study evaluating the use of mobile phone messaging for communicating results of medical investigations. This study was at high risk of bias. The study suggested that the early communication of an antenatal screen test result by text messaging would not result in a difference in the anxiety scores of all pregnant women (irrespective of the test result) or when their test result is positive, however may reduce anxiety in pregnant women when their test result is negative. The usefulness of mobile phone messaging in other situations, or potential negative consequences, are not yet known.

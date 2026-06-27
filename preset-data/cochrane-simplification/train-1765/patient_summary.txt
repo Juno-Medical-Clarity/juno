@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1765  |  gem_id: gem-cochrane-simplification-train-1766  |  doi: 10.1002/14651858.CD004986.pub3
-
-Controlled trials suggest that quit and win contests may help some smokers to quit, but they have little effect on community smoking rates. Fewer than one smoker in 500 quits because of the contests. Deception levels, where they can be measured, are often high. International quit and win contests are often well supported, especially in developing countries, but there is no clear evidence from trials that they are effective.

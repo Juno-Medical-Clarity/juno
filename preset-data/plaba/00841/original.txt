@@ -1,9 +1,0 @@
-This report provides perspectives concerning dual roles of serum ferritin as a measure of both iron status and inflammation.
-We suggest benefits of a lower range of serum ferritin as has occurred for total serum cholesterol and fasting blood glucose levels.
-Observations during a prospective randomized study using phlebotomy in patients with peripheral arterial disease offered unique insights into dual roles of serum ferritin both as an iron status marker and acute phase reactant.
-Robust positive associations between serum ferritin, interleukin 6 [IL-6], tissue necrosis factor-alpha, and high sensitivity C-reactive protein were discovered.
-Elevated serum ferritin and IL-6 levels associated with increased mortality and with reduced mortality at ferritin levels <100 ng mL-1.
-Epidemiologic studies demonstrate similar outcomes.
-Extremely elevated ferritin and IL-6 levels also occur in individuals with high mortality due to SARS-CoV-2 infection.
-Disordered iron metabolism reflected by a high range of serum ferritin level signals disease severity and outcomes.
-Based upon experimental and epidemiologic data, we suggest testing the hypotheses that optimal ferritin levels for cardiovascular mortality reduction range from 20 to 100 ng mL-1 with % transferrin levels from 20 to 50%, to ensure adequate iron status and that ferritin levels above 194 ng mL-1 associate with all-cause mortality in population cohorts.

@@ -1,5 +1,0 @@
-pmid:        14593461
-question:    40
-adaptation:  adaptation1
-title:       Compression therapy in chronic venous insufficiency. New test procedures and therapeutic options
-sentences:   10

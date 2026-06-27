@@ -1,5 +1,0 @@
-pmid:        26926973
-question:    6
-adaptation:  adaptation1
-title:       Hyperthyroidism: Diagnosis and Treatment
-sentences:   6

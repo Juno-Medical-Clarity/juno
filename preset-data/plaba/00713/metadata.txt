@@ -1,5 +1,0 @@
-pmid:        29106787
-question:    56
-adaptation:  adaptation2
-title:       Familial Pallister-Hall in adulthood
-sentences:   18

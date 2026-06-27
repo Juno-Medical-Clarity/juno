@@ -1,5 +1,0 @@
-drug_focus: ecstacy
-question_type: Action/time
-section_title: NA
-source_url: https://www.verywellmind.com/how-long-does-ecstasy-stay-in-your-system-80255
-sample_id: 0267

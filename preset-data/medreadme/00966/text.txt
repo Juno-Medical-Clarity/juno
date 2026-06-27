@@ -1,1 +1,0 @@
-Ab initio folding aside, the improved treatment of sidechain rotamers results in stability of the native state in constant temperature simulations of Trpzip, Trp-cage, and the open to closed conformational transition of adenylate kinase, illustrating the potential value of the CG force field for simulating protein complexes and transitions between well-defined structural states.

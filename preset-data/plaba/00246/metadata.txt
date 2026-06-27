@@ -1,5 +1,0 @@
-pmid:        33165964
-question:    19
-adaptation:  adaptation1
-title:       Levodopa Versus Dopamine Agonist after Subthalamic Stimulation in Parkinson's Disease
-sentences:   13

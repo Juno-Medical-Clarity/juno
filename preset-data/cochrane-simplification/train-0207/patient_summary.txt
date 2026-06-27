@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0207  |  gem_id: gem-cochrane-simplification-train-208  |  doi: 10.1002/14651858.CD002140.pub3
-
-A total of twenty-five randomised studies (including 3752 patients) were included in this updated review: nineteen trials (2728 patients) comparing concurrent chemoradiotherapy with radiotherapy alone and six trials (1024 patients) comparing concurrent with sequential chemoradiotherapy. Both comparisons demonstrated significant reduction in risk of death with use of concurrent chemoradiation, with an associated increase in incidence of acute oesophagitis.

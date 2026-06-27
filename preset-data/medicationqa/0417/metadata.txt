@@ -1,5 +1,0 @@
-drug_focus: brimonidine
-question_type: Interaction
-section_title: NA
-source_url: https://www.mottchildren.org/health-library/hn-10002004
-sample_id: 0417

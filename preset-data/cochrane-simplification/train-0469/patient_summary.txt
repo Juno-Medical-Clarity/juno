@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0469  |  gem_id: gem-cochrane-simplification-train-470  |  doi: 10.1002/14651858.CD006628.pub3
-
-This review compares the effects of zotepine to other second generation antipsychotic drugs. Three trials suggest that the efficacy of zotepine may be comparable to risperidone and remoxipride. The evidence base is insufficient to provide firm conclusions as to whether zotepine is as effective or less effective than clozapine. The movement disorders and the cognitive changes appear to be similar to clozapine, risperidone and remoxipride. The need for antiparkinson medication is similar to risperidone and remoxipride, but may be associated with increased need than necessary with clozapine.

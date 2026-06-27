@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  test-0181  |  gem_id: gem-cochrane-simplification-test-182  |  doi: 10.1002/14651858.CD003909.pub2
-
-There was a limited amount of very low-quality evidence to suggest that people might do better when receiving focal psychodynamic therapy compared to no treatment or treatment as usual. With one exception, we found little difference between specific psychological therapies. Most therapies appeared as acceptable as any other approach, except for dietary advice which had a 100% non-completion rate in one small trial. Because of the risk of bias and limitations of studies, notably small sample sizes, we can draw no specific conclusions about the effects of specific individual psychological therapies for anorexia nervosa in adults or older adolescents. We need more large multicentre randomised controlled trials of commonly-used psychological therapies in older adolescents and adults with anorexia nervosa.

@@ -1,5 +1,0 @@
-pmid:        7783363
-question:    51
-adaptation:  adaptation1
-title:       Islet cell antibodies
-sentences:   9

@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1311  |  gem_id: gem-cochrane-simplification-train-1312  |  doi: 10.1002/14651858.CD002305
-
-This review identified eleven randomised controlled trials that compared antidepressants with a placebo in people with schizophrenia who also had depression. There was some evidence that antidepressants did lead to an improvement in global outcome, but the small number of studies providing usable data and their poor quality, suggest that this evidence should be interpreted with caution. At present, there is no convincing evidence either to support or refute the use of antidepressants in treating depression in people with schizophrenia. Further well-designed, conducted and reported research is needed in this area.

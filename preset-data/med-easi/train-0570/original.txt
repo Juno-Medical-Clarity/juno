@@ -1,1 +1,0 @@
-For example, in information theory, a signal is a codified message, that is, the sequence of states in a communication channel that encodes a message.

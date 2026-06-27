@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3000  |  gem_id: gem-cochrane-simplification-train-3001  |  doi: 10.1002/14651858.CD004184.pub2
-
-This review examined the administration-time-related effects of once-daily evening versus morning regimen on death, cardiovascular outcomes and blood pressure reduction. The interventions included chronotherapeutic delivery formulations and conventional antihypertensive agents. 21 trials, involving 1,993 patients with primary hypertension were identified. We concluded that evening dosing with antihypertensive drugs had a slightly better blood pressure control than the morning dosing regimen in 24-hour BP, but its effect on death and adverse cardiovascular outcomes is not known.

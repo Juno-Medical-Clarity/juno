@@ -1,8 +1,0 @@
-Standards of diagnosing diabetes in children have not been established with nearly the same precision as has been used in adults
-Recently revised American Diabetes Association (ADA) guidelines uses the standard of  ≥ 6.5 % in the HbA1c test as a diagnosis of diabetes.
-Recent studies in children show that the HbA1c test is not as accurate as other tests that measure glucose in the blood.
-However, other glucose measuring blood tests have not yet been verified to work in children.
-Future studies, to see which glucose measuring test is best in children, are unlikely to happen.
-Accepting the ADA guidelines for diagnosing diabetes in children appears to be the best option for pediatricians.
-Future studies on blood glucose tests should try to develop a guideline for doctors to treat ‘pre-diabetes’.
-However, such treatment, and the best way to diagnose and treat ’pre-diabetes’, has not been proven.

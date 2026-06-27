@@ -1,5 +1,0 @@
-pmid:        20739894
-question:    8
-adaptation:  adaptation1
-title:       Efficacy of perphenazine to prevent postoperative nausea and vomiting: a quantitative systematic review
-sentences:   8

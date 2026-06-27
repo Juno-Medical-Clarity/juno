@@ -1,9 +1,0 @@
-source:      plos_pathogens
-side:        complex
-readability: 5.0
-split:       test
-
-jargon_spans:
-  [0:2] 'medical-jargon-google-easy' -> 'Expression profiles'
-  [11:13] 'medical-jargon-google-easy' -> 'transcriptional regulation'
-  [19:23] 'medical-jargon-google-easy' -> 'HCV - responsive Treg'

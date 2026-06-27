@@ -1,8 +1,0 @@
-source:      elife
-side:        simple
-readability: 5.5
-split:       dev
-
-jargon_spans:
-  [20:22] 'medical-jargon-google-easy' -> 'gustatory cortex'
-  [27:32] 'medical-jargon-google-hard' -> 'NMDAR - CaMKII - GluA1'

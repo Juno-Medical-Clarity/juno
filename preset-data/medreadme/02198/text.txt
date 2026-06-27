@@ -1,1 +1,0 @@
-Using whole genome bisulfite sequencing to assess the spatio-temporal dynamics of mC in rice grown under phosphate starvation and recovery conditions, we identified widespread phosphate starvation-induced changes in mC, preferentially localized in transposable elements (TEs) close to highly induced genes.

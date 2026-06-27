@@ -1,8 +1,0 @@
-source:      pnas
-side:        complex
-readability: 5.0
-split:       train
-
-jargon_spans:
-  [10:13] 'medical-jargon-google-easy' -> 'Arabidopsis thaliana accessions'
-  [14:16] 'medical-jargon-google-easy' -> 'sequenced genomes'

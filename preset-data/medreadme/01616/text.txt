@@ -1,1 +1,0 @@
-The categories of types of exploratory analyses included fixing errors, fixing violations, addressing matters of judgement and the ERG-preferred base case.

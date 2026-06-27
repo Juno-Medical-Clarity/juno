@@ -1,5 +1,0 @@
-pmid:        28089478
-question:    66
-adaptation:  adaptation2
-title:       The Clinical Course of Minimal Change Nephrotic Syndrome With Onset in Adulthood or Late Adolescence: A Case Series
-sentences:   23

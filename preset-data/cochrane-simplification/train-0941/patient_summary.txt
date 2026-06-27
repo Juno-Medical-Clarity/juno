@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-0941  |  gem_id: gem-cochrane-simplification-train-942  |  doi: 10.1002/14651858.CD003442.pub2
-
-We only found one reasonably good but small trial. It did not show that compliance therapy really effected compliance with medication, psychotic symptoms, or quality of life but it was always too small really to show this for certain. The study did, however, suggest that the compliance therapy may help people spend shorter times in hospital across a two year period, when compared with standard care. There is a need for more studies and we have proposed a design that could be conducted within the confines of routine care for outcomes of interest to everyone involved.

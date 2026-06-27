@@ -1,1 +1,0 @@
-Using the ranked P-values of the breast cancer associations with the imputed genotype of 1. 4 M SNPs, 19, 029 SNPs were selected and designed for inclusion on a custom Illumina array that included a total of 211, 155 SNPs as part of a multi-consortial project.

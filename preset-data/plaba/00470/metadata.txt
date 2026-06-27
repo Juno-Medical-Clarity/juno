@@ -1,5 +1,0 @@
-pmid:        34518466
-question:    36
-adaptation:  adaptation1
-title:       Flexible Ureterorenoscopy under Spinal Anesthesia: Focus on Technique, Results, Complications, and Patients' Satisfaction from a Large Series
-sentences:   16

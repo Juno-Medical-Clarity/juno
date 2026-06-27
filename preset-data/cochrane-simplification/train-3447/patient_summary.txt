@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-3447  |  gem_id: gem-cochrane-simplification-train-3448  |  doi: 10.1002/14651858.CD004713.pub2
-
-Our review included nine small trials, involving a total of 219 participants. Two trials compared HBOT versus sham therapy on ankle sprain and knee sprain respectively. Neither trial provided sufficient evidence to determine if HBOT helped people with these injuries. The other seven trials examined the effect of HBOT on muscle injury following unaccustomed exercise. There was no evidence that HBOT helped people with muscle injury following unaccustomed exercise, but some evidence that people given HBOT had slightly more pain. Further research on HBOT is not a high priority given the variety of other treatment interventions available.

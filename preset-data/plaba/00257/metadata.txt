@@ -1,5 +1,0 @@
-pmid:        33404081
-question:    20
-adaptation:  adaptation1
-title:       Low SSRI dosing in clinical practice-a register-based longitudinal study
-sentences:   8

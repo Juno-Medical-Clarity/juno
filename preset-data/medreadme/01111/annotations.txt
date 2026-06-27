@@ -1,9 +1,0 @@
-source:      cochrane_all
-side:        simple
-readability: 3.7
-split:       train
-
-jargon_spans:
-  [2:3] 'medical-jargon-google-easy' -> 'schizophrenia'
-  [10:11] 'medical-jargon-google-easy' -> 'hallucinations'
-  [17:18] 'medical-jargon-google-easy' -> 'delusions'

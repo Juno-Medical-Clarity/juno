@@ -1,8 +1,0 @@
-source:      nhir_Efficaacy_and_Mechanism_Evaluation
-side:        complex
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [6:9] 'general-complex' -> 'sham control group'
-  [14:15] 'abbr-medical' -> 'RIPC'

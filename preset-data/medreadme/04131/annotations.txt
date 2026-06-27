@@ -1,9 +1,0 @@
-source:      elife
-side:        simple
-readability: 4.3
-split:       test
-
-jargon_spans:
-  [7:9] 'medical-jargon-google-easy' -> 'stem cells'
-  [11:13] 'medical-jargon-google-easy' -> 'bone marrow'
-  [27:30] 'medical-jargon-google-easy' -> 'embryonic stem cell'

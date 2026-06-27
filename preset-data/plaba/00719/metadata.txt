@@ -1,5 +1,0 @@
-pmid:        29030173
-question:    57
-adaptation:  adaptation2
-title:       A novel miniature, wireless neurostimulator in the management of chronic craniofacial pain: Preliminary results from a prospective pilot study
-sentences:   13

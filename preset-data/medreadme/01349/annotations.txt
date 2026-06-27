@@ -1,9 +1,0 @@
-source:      plos_neglected_tropical_diseases
-side:        complex
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [5:8] 'medical-name-entity' -> 'Veterans Health Administration'
-  [9:10] 'abbr-medical' -> 'VHA'
-  [13:14] 'abbr-medical' -> 'CHIKV'

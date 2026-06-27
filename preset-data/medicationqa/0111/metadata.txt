@@ -1,5 +1,0 @@
-drug_focus: oxycodone, fentanyl
-question_type: Comparison
-section_title: NA
-source_url: http://olh.ie/wp-content/uploads/2014/09/Opioid-Conversion-Chart-2015.pdf
-sample_id: 0111

@@ -1,5 +1,0 @@
-pmid:        1233473
-question:    17
-adaptation:  adaptation1
-title:       Tracheo-bronchial aspiration of foreign material by the unconscious patient
-sentences:   12

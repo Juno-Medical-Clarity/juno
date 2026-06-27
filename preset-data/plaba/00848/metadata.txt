@@ -1,5 +1,0 @@
-pmid:        35240553
-question:    68
-adaptation:  adaptation2
-title:       Trace element homeostasis in the neurological system after SARS-CoV-2 infection: Insight into potential biochemical mechanisms
-sentences:   10

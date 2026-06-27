@@ -1,9 +1,0 @@
-source:      plos_biology
-side:        simple
-readability: 4.3
-split:       train
-
-jargon_spans:
-  [5:6] 'medical-jargon-google-easy' -> 'neural'
-  [15:17] 'medical-jargon-google-easy' -> 'functional MRI'
-  [18:19] 'abbr-medical' -> 'fMRI'

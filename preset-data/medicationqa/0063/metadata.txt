@@ -1,5 +1,0 @@
-drug_focus: thymol
-question_type: Usage
-section_title: NA
-source_url: https://pubchem.ncbi.nlm.nih.gov/compound/thymol#section=Top
-sample_id: 0063

@@ -1,5 +1,0 @@
-pmid:        23939641
-question:    49
-adaptation:  adaptation2
-title:       Edema: diagnosis and management
-sentences:   11

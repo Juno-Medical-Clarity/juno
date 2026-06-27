@@ -1,5 +1,0 @@
-# GEM/cochrane-simplification — plain-language patient summary
-# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
-# Sample:  train-1995  |  gem_id: gem-cochrane-simplification-train-1996  |  doi: 10.1002/14651858.CD001342.pub3
-
-We reviewed eight trials involving 5762 participants that compared anticoagulants with antiplatelet agents for preventing recurrent stroke and found no benefit of low intensity anticoagulation over aspirin, and an increased risk of bleeding with high intensity anticoagulation.
