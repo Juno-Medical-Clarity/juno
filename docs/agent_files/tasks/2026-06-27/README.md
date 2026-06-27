@@ -9,6 +9,10 @@ Three sub-projects covering the full lifecycle of moving preset datasets to Goog
 | SP1 | GCS Dataset Infrastructure, Manifest & Backend | 01-gcs-infrastructure-manifest/PRD.md | Draft | (none) |
 | SP2 | On-Demand Pipeline Download & Cleanup | 02-on-demand-pipeline-download/PRD.md | Draft | SP1 |
 | SP3 | Athena Health Integration | 03-athena-health-integration/PRD.md | Draft | SP2 |
+| SP4 | Unified Error Control Model | 04-error-control-model/PRD.md | Draft | SP2 (uses error codes from SP2 contract) |
+
+## Investigation Artifacts
+- [Error Handling Investigation](error-handling-investigation.md) — 2026-06-27 audit of error handling inconsistencies that motivated SP4
 
 ## Dependency Graph
 
@@ -16,6 +20,7 @@ Three sub-projects covering the full lifecycle of moving preset datasets to Goog
 SP1: GCS Infrastructure & Manifest
   └─► SP2: On-Demand Pipeline Download
         └─► SP3: Athena Health Integration
+        └─► SP4: Unified Error Control Model (parallel with SP3; adds Athena codes SP3 will reference)
 ```
 
 SP1 must be deployed (and dataset files uploaded to GCS) before SP2 goes live.
