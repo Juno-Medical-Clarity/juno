@@ -167,6 +167,9 @@ class ErrorCode(StrEnum):
     PIPELINE_TIMEOUT = "PIPELINE_TIMEOUT"
     """The pipeline worker exceeded its allocated wall-clock time limit."""
 
+    JOB_TIMEOUT = "JOB_TIMEOUT"
+    """The individual job exceeded its allocated processing time."""
+
     PIPELINE_VALIDATION_FAILED = "PIPELINE_VALIDATION_FAILED"
     """Pydantic (or equivalent) validation of the LLM-structured output failed."""
 
@@ -524,6 +527,20 @@ ERROR_CATALOG: dict[ErrorCode, ErrorInfo] = {
         message=(
             "The pipeline worker exceeded its allocated wall-clock time limit "
             "before all processing stages could complete."
+        ),
+        user_hint=(
+            "Processing took too long and was stopped. "
+            "Try uploading a shorter document."
+        ),
+        retryable=False,
+    ),
+
+    ErrorCode.JOB_TIMEOUT: ErrorInfo(
+        code="JOB_TIMEOUT",
+        http_status=504,
+        message=(
+            "The job exceeded its allocated processing time "
+            "before all pipeline stages could complete."
         ),
         user_hint=(
             "Processing took too long and was stopped. "

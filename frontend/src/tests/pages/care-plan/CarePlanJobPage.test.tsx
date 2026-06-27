@@ -108,7 +108,7 @@ describe('CarePlanJobPage', () => {
         status: 'error',
         stage: null,
         output_data: null,
-        error_data: { code: 'PIPELINE_ERROR', message: 'Pipeline failed' },
+        error_data: { code: 'PIPELINE_ERROR', message: 'Pipeline failed', user_hint: 'An error occurred' },
         name: 'Test',
         batch_run_id: null,
       },
