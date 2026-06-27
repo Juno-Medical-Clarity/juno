@@ -201,6 +201,14 @@ def not_found(error):
         {"method": request.method, "path": request.path},
     ).to_dict(), 404
 
+@app.errorhandler(405)
+def method_not_allowed(error):
+    return make_error_response(
+        ErrorCode.ENDPOINT_NOT_FOUND,
+        request.path,
+        {"method": request.method, "path": request.path},
+    ).to_dict(), 405
+
 @app.errorhandler(500)
 def internal_error(error):
     return make_error_response(

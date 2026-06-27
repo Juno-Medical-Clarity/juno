@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { firebaseAuth, firebaseDb } from '../api/firebase';
+import type { FirestoreJobError } from '../types/errors';
 
 export type JobStatus = 'not_started' | 'processing' | 'completed' | 'error';
 
@@ -40,7 +41,7 @@ export interface JobDoc {
   status: JobStatus;
   stage: number | null;
   output_data: Record<string, unknown> | null;
-  error_data: JobErrorData | null;
+  error_data: FirestoreJobError | null;
   name: string;
   batch_run_id: string | null;
   shared: boolean;

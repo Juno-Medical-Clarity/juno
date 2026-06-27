@@ -59,3 +59,45 @@ export interface AthenaPushDocumentResponse {
   success?: boolean;
   [key: string]: unknown;
 }
+
+// ── Manifest models (static config files, not live API responses) ──────────
+
+export interface AthenaEncounterManifestEntry {
+  id: string;
+  label: string;
+  practice_id: string;
+  patient_id: string;
+  encounter_id: string;
+  api_path: string;
+  is_preview: boolean;
+  preview_content: string | null;
+}
+
+export interface AthenaEncounterManifest {
+  source_kind: "athena_encounter";
+  label: string;
+  tab_id: string;
+  preview_entry_id: string;
+  entries: AthenaEncounterManifestEntry[];
+}
+
+export interface AthenaClinicalDocManifestEntry {
+  id: string;
+  label: string;
+  practice_id: string;
+  patient_id: string;
+  document_id: string;
+  api_path: string;
+  is_preview: boolean;
+  preview_content: string | null;
+}
+
+export interface AthenaClinicalDocManifest {
+  source_kind: "athena_clinical_doc";
+  label: string;
+  tab_id: string;
+  preview_entry_id: string;
+  entries: AthenaClinicalDocManifestEntry[];
+}
+
+export type AthenaManifest = AthenaEncounterManifest | AthenaClinicalDocManifest;

@@ -34,7 +34,7 @@ from utils.markers import Markers, JunoContext
 
 CARE_PLAN_VERSION = Constants.CARE_PLAN_VERSIONS.V1_2.value
 from utils.error_codes import make_error_response, ErrorCode
-from utils.error_handler import build_error_data_from_exc
+from utils.pipeline_errors import build_error_data_from_exc
 from telemetry import get_tracer
 
 logger = logging.getLogger(__name__)

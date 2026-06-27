@@ -9,7 +9,7 @@ import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import PresetDataCard from '../../components/PresetDataCard';
 import { DEFAULT_VERSION, carePlanPagePath } from '../../constants';
-import type { BatchDatasetSelection } from '../../types/datasets';
+import type { AthenaSelection, BatchDatasetSelection } from '../../types/datasets';
 import { createCarePlanJob, createBatchJobs } from '../../api/jobs';
 
 export const INITIAL_STEPS: PipelineStep[] = [
@@ -40,6 +40,7 @@ export default function CarePlanPage() {
   const [dragOver, setDragOver] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [presetDataSelection, setPresetDataSelection] = useState<BatchDatasetSelection[]>([]);
+  const [athenaPresetSelection, setAthenaPresetSelection] = useState<AthenaSelection[]>([]);
 
   // processingIds: wired from SP1's useJobStatuses hook.
   // When SP1 lands, import useJobStatuses from '../../api/useJobStatuses'
@@ -67,9 +68,17 @@ export default function CarePlanPage() {
   };
 
   const hasSingleRunInput = inputMode === 'file' ? files.length > 0 : textInput.trim().length > 0;
-  const hasPresetDataSelection = presetDataSelection.length > 0;
+  const hasPresetDataSelection = presetDataSelection.length > 0 || athenaPresetSelection.length > 0;
   const canSubmit = hasPresetDataSelection || hasSingleRunInput;
-  const presetDataSelectionCount = presetDataSelection.length;
+  const presetDataSelectionCount = presetDataSelection.length + athenaPresetSelection.length;
+
+  function handlePresetSelectionChange(
+    gcsSelections: BatchDatasetSelection[],
+    athenaSelections: AthenaSelection[],
+  ) {
+    setPresetDataSelection(gcsSelections);
+    setAthenaPresetSelection(athenaSelections);
+  }
 
   const handleSubmit = async () => {
     if (!canSubmit) return;
@@ -80,6 +89,15 @@ export default function CarePlanPage() {
       try {
         const { job_ids } = await createBatchJobs({
           selections: presetDataSelection,
+          athena_selections: athenaPresetSelection.map(sel => ({
+            input_source_kind: sel.source_kind,
+            athena_practice_id: sel.entry.practice_id,
+            athena_patient_id: sel.entry.patient_id,
+            ...(sel.source_kind === 'athena_encounter'
+              ? { athena_encounter_id: sel.entry.encounter_id }
+              : { athena_document_id: sel.entry.document_id }),
+            athena_api_path: sel.entry.api_path,
+          })),
           version: selectedVersion,
           grading_enabled: gradingEnabled,
         });
@@ -192,7 +210,7 @@ export default function CarePlanPage() {
 
               {error && <div className="error-box">⚠ {error}</div>}
             </div>
-            <PresetDataCard onSelectionChange={setPresetDataSelection} />
+            <PresetDataCard onSelectionChange={handlePresetSelectionChange} />
             <ConfigurationCard
               gradingEnabled={gradingEnabled}
               onGradingEnabledChange={setGradingEnabled}

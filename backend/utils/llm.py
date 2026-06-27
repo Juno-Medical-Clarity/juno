@@ -16,7 +16,7 @@ import os
 import re
 
 from error_codes import ErrorCode
-from utils.error_handler import JunoError, classify_finish_reason, classify_vertex_exception
+from utils.pipeline_errors import JunoError, classify_finish_reason, classify_vertex_exception
 
 logger = logging.getLogger(__name__)
 

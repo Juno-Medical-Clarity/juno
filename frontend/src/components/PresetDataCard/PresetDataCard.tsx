@@ -1,11 +1,15 @@
 import { useEffect, useMemo, useState } from 'react';
 import { listDatasets } from '../../api/datasets';
-import type { BatchDatasetSelection, Dataset } from '../../types/datasets';
+import type { AthenaSelection, AthenaSource, BatchDatasetSelection, Dataset } from '../../types/datasets';
+import AthenaPresetPanel from './AthenaPresetPanel';
 import PresetDataPanel, { type DatasetGroupSelection } from './PresetDataPanel';
 import './PresetDataCard.css';
 
 interface PresetDataCardProps {
-  onSelectionChange: (selection: BatchDatasetSelection[]) => void;
+  onSelectionChange: (
+    gcsSelections: BatchDatasetSelection[],
+    athenaSelections: AthenaSelection[],
+  ) => void;
 }
 
 type SelectionByGroup = Record<string, DatasetGroupSelection>;
@@ -41,7 +45,9 @@ function toBatchSelections(
 export default function PresetDataCard({ onSelectionChange }: PresetDataCardProps) {
   const [expanded, setExpanded] = useState(false);
   const [datasets, setDatasets] = useState<Dataset[]>([]);
+  const [athenaSources, setAthenaSources] = useState<AthenaSource[]>([]);
   const [selectionByGroup, setSelectionByGroup] = useState<SelectionByGroup>({});
+  const [athenaSelections, setAthenaSelections] = useState<AthenaSelection[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [activeGroup, setActiveGroup] = useState<string | null>(null);
@@ -53,8 +59,11 @@ export default function PresetDataCard({ onSelectionChange }: PresetDataCardProp
       setLoading(true);
       setError(null);
       try {
-        const loadedDatasets = await listDatasets();
-        if (!cancelled) setDatasets(loadedDatasets);
+        const response = await listDatasets();
+        if (!cancelled) {
+          setDatasets(response.datasets ?? []);
+          setAthenaSources(response.athena_sources ?? []);
+        }
       } catch (loadError) {
         if (!cancelled) {
           setError(loadError instanceof Error ? loadError.message : 'Could not load preset data.');
@@ -77,8 +86,8 @@ export default function PresetDataCard({ onSelectionChange }: PresetDataCardProp
   );
 
   useEffect(() => {
-    onSelectionChange(batchSelections);
-  }, [batchSelections, onSelectionChange]);
+    onSelectionChange(batchSelections, athenaSelections);
+  }, [batchSelections, athenaSelections, onSelectionChange]);
 
   useEffect(() => {
     if (datasets.length > 0 && activeGroup === null) {
@@ -93,6 +102,16 @@ export default function PresetDataCard({ onSelectionChange }: PresetDataCardProp
     }));
   }
 
+  function handleAthenaSelectionChange(
+    sourceKind: AthenaSource['source_kind'],
+    selections: AthenaSelection[],
+  ) {
+    setAthenaSelections(prev => [
+      ...prev.filter(s => s.source_kind !== sourceKind),
+      ...selections,
+    ]);
+  }
+
   const selectedGroupCount = batchSelections.length;
   const selectedInputCount = batchSelections.reduce((total, selection) => {
     if (selection.inputs === 'all') {
@@ -105,17 +124,29 @@ export default function PresetDataCard({ onSelectionChange }: PresetDataCardProp
     (total, selection) => total + selection.files.length,
     0,
   );
+  const totalAthenaSelected = athenaSelections.length;
+
+  const summaryText = (() => {
+    const parts: string[] = [];
+    if (selectedGroupCount > 0) {
+      parts.push(`${selectedGroupCount} group${selectedGroupCount === 1 ? '' : 's'}, ${selectedInputCount} input${selectedInputCount === 1 ? '' : 's'}, ${selectedFileCount} file${selectedFileCount === 1 ? '' : 's'}`);
+    }
+    if (totalAthenaSelected > 0) {
+      parts.push(`${totalAthenaSelected} Athena record${totalAthenaSelected === 1 ? '' : 's'}`);
+    }
+    return parts.length > 0 ? parts.join(' + ') + ' selected' : 'Select repository datasets or Athena records for batch runs.';
+  })();
+
+  const hasContent = datasets.length > 0 || athenaSources.length > 0;
+
+  const activeAthenaSource = athenaSources.find(s => s.tab_id === activeGroup) ?? null;
 
   return (
     <div className="preset-data-card glass-card">
       <div className="preset-data-card-header">
         <div>
           <div className="preset-data-card-title">Preset Data</div>
-          <div className="preset-data-card-summary">
-            {selectedGroupCount > 0
-              ? `${selectedGroupCount} group${selectedGroupCount === 1 ? '' : 's'}, ${selectedInputCount} input${selectedInputCount === 1 ? '' : 's'}, ${selectedFileCount} file${selectedFileCount === 1 ? '' : 's'} selected`
-              : 'Select repository datasets for batch runs.'}
-          </div>
+          <div className="preset-data-card-summary">{summaryText}</div>
         </div>
         <button
           className="preset-data-toggle"
@@ -131,10 +162,10 @@ export default function PresetDataCard({ onSelectionChange }: PresetDataCardProp
         <div className="preset-data-card-body">
           {loading && <div className="preset-data-status">Loading preset data...</div>}
           {error && <div className="preset-data-status error">{error}</div>}
-          {!loading && !error && datasets.length === 0 && (
+          {!loading && !error && !hasContent && (
             <div className="preset-data-status">No preset datasets found.</div>
           )}
-          {!loading && !error && datasets.length > 0 && (
+          {!loading && !error && hasContent && (
             <div className="preset-panel-layout">
               {/* LEFT: vertical tab list */}
               <nav className="preset-panel-sidebar" aria-label="Dataset groups">
@@ -153,21 +184,44 @@ export default function PresetDataCard({ onSelectionChange }: PresetDataCardProp
                     </span>
                   </button>
                 ))}
+                {athenaSources.map(source => (
+                  <button
+                    key={source.tab_id}
+                    type="button"
+                    className={`preset-panel-tab ${activeGroup === source.tab_id ? 'active' : ''}`}
+                    onClick={() => setActiveGroup(source.tab_id)}
+                    aria-selected={activeGroup === source.tab_id}
+                  >
+                    <span className="preset-panel-tab-name">{source.label}</span>
+                    <span className="preset-panel-tab-meta">
+                      {athenaSelections.filter(s => s.source_kind === source.source_kind).length} sel.
+                    </span>
+                  </button>
+                ))}
               </nav>
 
               {/* RIGHT: content panel for the active group */}
               <div className="preset-panel-content">
-                {activeGroup !== null && (() => {
-                  const dataset = datasets.find(d => d.group === activeGroup);
-                  if (!dataset) return null;
-                  return (
-                    <PresetDataPanel
-                      dataset={dataset}
-                      selection={selectionByGroup[activeGroup] ?? emptySelection()}
-                      onSelectionChange={handleGroupSelectionChange}
-                    />
-                  );
-                })()}
+                {activeAthenaSource !== null ? (
+                  <AthenaPresetPanel
+                    source={activeAthenaSource}
+                    onSelectionChange={(sels) =>
+                      handleAthenaSelectionChange(activeAthenaSource.source_kind, sels)
+                    }
+                  />
+                ) : activeGroup !== null ? (
+                  (() => {
+                    const dataset = datasets.find(d => d.group === activeGroup);
+                    if (!dataset) return null;
+                    return (
+                      <PresetDataPanel
+                        dataset={dataset}
+                        selection={selectionByGroup[activeGroup] ?? emptySelection()}
+                        onSelectionChange={handleGroupSelectionChange}
+                      />
+                    );
+                  })()
+                ) : null}
               </div>
             </div>
           )}

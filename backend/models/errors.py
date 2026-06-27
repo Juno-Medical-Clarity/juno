@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from enum import Enum
-from typing import Any
+from typing import Any, Optional
 
 from pydantic import Field
 from .base import JsonModel
@@ -28,9 +28,11 @@ class ErrorDetail(JsonModel):
     """
     code: str
     message: str
-    details: str = ""
+    details: Optional[str] = None
     timestamp: str
     path: str | None = None
+    user_hint: Optional[str] = None
+    retryable: bool = False
 
 
 class ApiResponse(JsonModel):

@@ -1,5 +1,5 @@
 """
-utils/error_handler.py — Exception classification and structured error helpers.
+utils/pipeline_errors.py — Exception classification and structured error helpers.
 
 This is the LOGIC layer. It imports from error_codes.py (the pure data catalog)
 and provides:
@@ -13,6 +13,8 @@ and provides:
 """
 
 from __future__ import annotations
+
+from datetime import datetime, timezone
 
 from error_codes import ERROR_CATALOG, ErrorCode, ErrorInfo
 
@@ -182,25 +184,15 @@ def make_error_response(
 # ---------------------------------------------------------------------------
 
 def build_error_data(error_code: ErrorCode, detail: str = "") -> dict:
-    """
-    Build the ``error_data`` dict written to Firestore on job failure.
-
-    Shape (read by the frontend ``CarePlanJobPage`` error state):
-        {
-            "code": "LLM_MAX_TOKENS",
-            "message": "<developer-facing description>",
-            "user_hint": "<user-facing actionable message>",
-            "retryable": False,
-            "detail": "<exception string or extra context>",
-        }
-    """
+    """Build the error_data dict written to Firestore on job failure."""
     info = ERROR_CATALOG[error_code]
     return {
         "code": info.code,
         "message": info.message,
         "user_hint": info.user_hint,
         "retryable": info.retryable,
-        "detail": detail,
+        "details": detail or None,
+        "timestamp": datetime.now(timezone.utc).isoformat(),  # new field
     }
 
 
