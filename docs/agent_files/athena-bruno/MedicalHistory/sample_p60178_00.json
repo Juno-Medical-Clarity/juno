@@ -1,0 +1,37 @@
+{
+  "sectionnote": "test",
+  "notelastmodifieddatetime": "03/26/26 03:18:54",
+  "notelastmodifiedby": "API-35804",
+  "questions": [
+    {
+      "answer": "Y",
+      "createdby": "API-35804",
+      "lastmodifiedby": "API-35804",
+      "createddatetime": "03/26/26 06:37:51",
+      "question": "Coronary Artery Disease",
+      "lastmodifieddatetime": "03/26/26 06:37:51",
+      "questionid": 124,
+      "note": "Mild Intermittent"
+    },
+    {
+      "answer": "Y",
+      "createdby": "API-35804",
+      "lastmodifiedby": "API-35804",
+      "createddatetime": "03/27/26 00:49:31",
+      "question": "Sea Sickness",
+      "lastmodifieddatetime": "03/27/26 00:49:31",
+      "questionid": 161,
+      "note": "Mild Intermittent"
+    },
+    {
+      "answer": "Y",
+      "createdby": "INTF-114607978",
+      "lastmodifiedby": "API-35804",
+      "createddatetime": "07/21/25 22:55:47",
+      "question": "Asthma",
+      "lastmodifieddatetime": "03/26/26 04:34:52",
+      "questionid": 123,
+      "note": "Mild Intermittent"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+**Reason for Appointment**
+1. Urgent evaluation of hemodynamic instability and erratic blood pressure readings (120-160 mmHg systolic).
+2. Critical medication safety review regarding potential pregnancy and teratogenic agent use (Paroxetine).
+3. Optimization of asthma management (Sub-optimal SABA monotherapy).
+4. Health maintenance review (Vaccination and cancer screening gaps).
+
+**History of Present Illness**
+Donna Sandboxtest is a 41-year-old female presenting for urgent follow-up and care coordination following a series of indirect encounters between 11/19/2025 and 11/28/2025. Review of clinical documentation reveals significant hemodynamic instability, with home blood pressure readings fluctuating erratically between 120/70 mmHg and 160/90 mmHg. This variability raises concern for a new-onset hypertensive disorder versus a significant stress response, necessitating rigorous evaluation to prevent end-organ damage. The patient denies acute chest pain or dyspnea but reports vague somatic symptoms.
+
+A comprehensive review of the medication profile identifies a **Critical Safety Discrepancy**. The patient is currently prescribed Paroxetine (Paxil) 10 mg daily while concurrently taking Prenatal Vitamins. This combination implies intent to conceive or early pregnancy. Paroxetine is a Category D agent associated with an increased risk of congenital cardiac malformations (e.g., atrial and ventricular septal defects). Immediate verification of pregnancy status is required to mitigate teratogenic risk.
+
+Additionally, the patient’s Mild Intermittent Asthma is currently managed solely with Albuterol sulfate (SABA) PRN. This regimen represents a deviation from current standards of care; GINA 2024 guidelines strongly recommend against SABA-only treatment for adults due to the continued risk of severe exacerbations, advocating instead for symptom-driven or daily low-dose inhaled corticosteroids (ICS).
+
+**Allergies & Intolerances**
+*   **No known drug allergy** (Severity: Unknown) – *Drug-allergy interaction check against current med list is negative.*
+
+**Review of Systems**
+*   **Constitutional:** Denies fever. Reports vague somatic complaints.
+*   **Cardiovascular:** Reports erratic blood pressure. Denies chest pain.
+*   **Respiratory:** Asthma stable, no reported acute wheezing or dyspnea.
+*   **Genitourinary:** Pregnancy status unknown (Critical variable).
+
+**Objective Data**
+*   **Vital Signs (Recent/Historical):**
+    *   Temperature: 98.60°F (Stable)
+    *   Blood Pressure: Range 120/70 mmHg to 160/90 mmHg (Uncontrolled/Erratic).
+*   **Physical Exam:** Alert and oriented. No acute distress noted in recent documentation.
+*   **Current Medications:**
+    *   Albuterol sulfate 2 puffs q4h PRN (Asthma)
+    *   Prenatal Vitamin 1 tab PO daily (Supplement)
+    *   Claritin 10 mg tablet daily (Allergic Rhinitis)
+    *   Paxil 10 mg tablet daily (Depression/Anxiety)
+*   **Laboratory Data:**
+    *   *Critical Gap:* No recent Comprehensive Metabolic Panel (CMP) or Lipid Panel available for review.
+    *   *Action:* Baseline renal function and metabolic profile required for hypertensive risk stratification.
+
+**Assessment**
+
+1.  **High Risk Medication Use / Potential Pregnancy (ICD-10: Z79.899, Z31.89)**
+    *   **CRITICAL SAFETY ALERT:** Patient is taking Paroxetine (Category D) with Prenatal Vitamins.
+    *   **Analysis:** There is an immediate need to rule out pregnancy. If pregnancy is confirmed, Paroxetine presents an unacceptable risk of teratogenicity.
+    *   **Guideline Alignment:** ACOG guidelines recommend switching to Sertraline (Zoloft) for depression management during pregnancy due to its more favorable safety profile.
+
+2.  **Hypertensive Disorder, Unspecified (ICD-10: I10, HCC: 85)**
+    *   **Status:** Uncontrolled and erratic (Systolic 120-160 mmHg).
+    *   **Analysis:** Diagnosis requires differentiation between white-coat hypertension and true sustained hypertension. Pharmacotherapy (specifically RAAS blockade) must be deferred until pregnancy status is known due to fetotoxicity of ACEi/ARBs.
+    *   **Guideline Alignment:** ACC/AHA 2017 Guidelines recommend out-of-office BP testing to confirm diagnosis of hypertension.
+
+3.  **Mild Intermittent Asthma (ICD-10: J45.20)**
+    *   **Status:** Sub-optimally managed.
+    *   **Analysis:** Current reliance on SABA monotherapy leaves the patient vulnerable to exacerbations.
+    *   **Guideline Alignment:** **GINA 2024** recommends that all adults with asthma should receive ICS-containing controller therapy to reduce the risk of serious exacerbations.
+
+4.  **Health Maintenance Gaps (ICD-10: Z23)**
+    *   **Analysis:** Patient is overdue for Influenza vaccination, Tdap booster, and Mammography screening. No recent metabolic labs on file.
+
+**Plan**
+
+**Diagnostic:**
+1.  **STAT Quantitative Beta-hCG:** To confirm or rule out pregnancy immediately.
+2.  **Laboratory Evaluation:** Order Comprehensive Metabolic Panel (CMP) and Lipid Panel to establish baseline metabolic risk and renal function.
+3.  **Home Blood Pressure Monitoring (HBPM):** Patient instructed to measure BP twice daily for 7 days to clarify hypertensive status vs. white-coat effect.
+
+**Therapeutic:**
+1.  **Medication Safety (Paroxetine):**
+    *   Extensive counseling provided regarding teratogenic risks.
+    *   *Contingency:* If Beta-hCG is **positive**, initiate cross-taper: Reduce Paroxetine to 5 mg daily for 7 days, then discontinue. Concurrently initiate Sertraline 25 mg daily (Category C, preferred).
+    *   If Beta-hCG is **negative**, discuss risks/benefits of continuing Paroxetine if conception is planned.
+2.  **Asthma Optimization:**
+    *   Continue Albuterol sulfate 2 puffs q4h PRN.
+    *   Discuss initiation of low-dose Inhaled Corticosteroid (e.g., Fluticasone) at follow-up to align with GINA 2024.
+3.  **Hypertension:**
+    *   Defer initiation of antihypertensives pending pregnancy test results and review of HBPM log. Avoid ACEi/ARBs strictly.
+
+**Health Maintenance & Preventive Care:**
+1.  **Immunizations:** Administer Influenza Vaccine (Quadrivalent) in clinic today. Schedule Tdap booster.
+2.  **Screening:** Referral generated for Screening Mammography (Age >40).
+
+**Follow-up:**
+*   **24 Hours:** Nurse telephone encounter to review Beta-hCG results and instruct on medication changes.
+*   **2 Weeks:** In-office visit to review HBPM log, lab results, and asthma control.
+
+**Billing & Documentation:**
+*   **CPT Code:** **99214** (Established Patient, Moderate Complexity).
+*   **Justification:**
+    *   **Problems:** One new problem with uncertain prognosis (Erratic HTN) and one acute complicated injury/risk (Teratogenic drug exposure).
+    *   **Data:** Ordering/review of unique tests (Labs, HBPM).
+    *   **Risk:** Moderate risk of morbidity regarding prescription drug management (Paroxetine taper/switch) and diagnostic uncertainty.
+
+**Evidence & Guidelines:**
+*   **GINA 2024:** "For safety, GINA no longer recommends SABA-only treatment for Step 1."
+*   **ACC/AHA 2017:** "Out-of-office BP measurements are recommended to confirm the diagnosis of hypertension... and for titration of BP-lowering medication."

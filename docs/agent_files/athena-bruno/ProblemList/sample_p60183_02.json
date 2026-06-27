@@ -1,0 +1,209 @@
+{
+  "lastmodifiedby": "INTF-114612152",
+  "totalcount": 10,
+  "problems": [
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Hyperlipidemia"
+      ],
+      "code": "55822004",
+      "codeset": "SNOMED",
+      "name": "Hyperlipidemia",
+      "lastmodifieddatetime": "2025-07-21T22:58:28-04:00",
+      "events": [
+        {
+          "createddate": "09/18/2018",
+          "createdby": "alumpkins1",
+          "onsetdate": "08/08/2016",
+          "eventtype": "START",
+          "startdate": "08/08/2016"
+        }
+      ],
+      "problemid": 23994
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Gout"
+      ],
+      "code": "90560007",
+      "codeset": "SNOMED",
+      "name": "Gout",
+      "lastmodifieddatetime": "2025-07-21T22:58:41-04:00",
+      "events": [
+        {
+          "createddate": "09/20/2018",
+          "createdby": "mschaub",
+          "onsetdate": "09/20/2018",
+          "eventtype": "START",
+          "startdate": "09/20/2018"
+        }
+      ],
+      "problemid": 23998
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Depressive disorder"
+      ],
+      "code": "35489007",
+      "codeset": "SNOMED",
+      "name": "Depressive disorder",
+      "lastmodifieddatetime": "2025-07-21T22:58:14-04:00",
+      "events": [
+        {
+          "createddate": "09/18/2018",
+          "createdby": "alumpkins1",
+          "onsetdate": "08/08/2016",
+          "eventtype": "START",
+          "startdate": "08/08/2016"
+        }
+      ],
+      "problemid": 23990
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Restless legs syndrome"
+      ],
+      "code": "32914008",
+      "codeset": "SNOMED",
+      "name": "Restless legs syndrome",
+      "lastmodifieddatetime": "2025-07-21T22:58:24-04:00",
+      "events": [
+        {
+          "createddate": "09/18/2018",
+          "createdby": "alumpkins1",
+          "onsetdate": "08/08/2016",
+          "eventtype": "START",
+          "startdate": "08/08/2016"
+        }
+      ],
+      "problemid": 23993
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Essential hypertension"
+      ],
+      "code": "59621000",
+      "codeset": "SNOMED",
+      "name": "Essential hypertension",
+      "lastmodifieddatetime": "2025-07-21T22:58:31-04:00",
+      "events": [
+        {
+          "createddate": "09/18/2018",
+          "createdby": "alumpkins1",
+          "onsetdate": "08/08/2016",
+          "eventtype": "START",
+          "startdate": "08/08/2016"
+        }
+      ],
+      "problemid": 23995
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Coronary atherosclerosis"
+      ],
+      "code": "443502000",
+      "codeset": "SNOMED",
+      "name": "Coronary atherosclerosis",
+      "lastmodifieddatetime": "2025-07-21T22:58:38-04:00",
+      "events": [
+        {
+          "createddate": "09/18/2018",
+          "note": "RCA stent, LAD disease",
+          "createdby": "alumpkins1",
+          "onsetdate": "08/08/2016",
+          "eventtype": "START",
+          "startdate": "08/08/2016"
+        }
+      ],
+      "problemid": 23997
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Congenital anomaly of peripheral blood vessel"
+      ],
+      "code": "430166008",
+      "codeset": "SNOMED",
+      "name": "Congenital anomaly of peripheral blood vessel",
+      "lastmodifieddatetime": "2025-07-21T22:58:18-04:00",
+      "events": [
+        {
+          "createddate": "09/18/2018",
+          "createdby": "alumpkins1",
+          "onsetdate": "08/08/2016",
+          "eventtype": "START",
+          "startdate": "08/08/2016"
+        }
+      ],
+      "problemid": 23991
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Patient post percutaneous transluminal coronary angioplasty"
+      ],
+      "code": "371822007",
+      "codeset": "SNOMED",
+      "name": "Patient post percutaneous transluminal coronary angioplasty",
+      "lastmodifieddatetime": "2025-07-21T22:58:34-04:00",
+      "events": [
+        {
+          "createddate": "09/18/2018",
+          "createdby": "alumpkins1",
+          "onsetdate": "08/08/2016",
+          "eventtype": "START",
+          "startdate": "08/08/2016"
+        }
+      ],
+      "problemid": 23996
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Anxiety"
+      ],
+      "code": "48694002",
+      "codeset": "SNOMED",
+      "name": "Anxiety",
+      "lastmodifieddatetime": "2025-07-21T22:58:44-04:00",
+      "events": [
+        {
+          "createddate": "09/20/2018",
+          "createdby": "mschaub",
+          "onsetdate": "09/20/2018",
+          "eventtype": "START",
+          "startdate": "09/20/2018"
+        }
+      ],
+      "problemid": 23999
+    },
+    {
+      "lastmodifiedby": "INTF-114612152",
+      "displaynames": [
+        "Diverticular disease of colon"
+      ],
+      "code": "398050005",
+      "codeset": "SNOMED",
+      "name": "Diverticular disease of colon",
+      "lastmodifieddatetime": "2025-07-21T22:58:47-04:00",
+      "events": [
+        {
+          "createddate": "09/18/2018",
+          "createdby": "alumpkins1",
+          "onsetdate": "08/08/2016",
+          "eventtype": "START",
+          "startdate": "08/08/2016"
+        }
+      ],
+      "problemid": 24000
+    }
+  ],
+  "lastupdated": "07/21/2025",
+  "lastmodifieddatetime": "2025-07-21T22:58:47-04:00"
+}

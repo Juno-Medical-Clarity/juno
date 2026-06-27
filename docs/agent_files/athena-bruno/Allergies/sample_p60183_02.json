@@ -1,0 +1,70 @@
+{
+  "lastmodifiedby": "INTF-114612149",
+  "lastupdated": "07/21/2025",
+  "allergies": [
+    {
+      "lastmodifiedby": "INTF-114612149",
+      "allergenname": "amiodarone",
+      "categories": [
+        "medication"
+      ],
+      "reactions": [
+        {
+          "snomedcode": 74964007,
+          "reactionname": "other",
+          "severity": "severe",
+          "severitysnomedcode": 24484000
+        }
+      ],
+      "id": "8416",
+      "note": "increase Liver Function Tests",
+      "allergenid": 15380,
+      "rxnormcode": "703",
+      "lastmodifieddatetime": "2025-07-21T22:57:25-04:00",
+      "rxnormdescription": "amiodarone"
+    },
+    {
+      "lastmodifiedby": "INTF-114612149",
+      "allergenname": "Lexapro",
+      "categories": [
+        "medication"
+      ],
+      "reactions": [
+        {
+          "snomedcode": 271807003,
+          "reactionname": "rash",
+          "severity": "mild",
+          "severitysnomedcode": 255604002
+        }
+      ],
+      "id": "8417",
+      "allergenid": 22979,
+      "rxnormcode": "352741",
+      "lastmodifieddatetime": "2025-07-21T22:57:25-04:00",
+      "rxnormdescription": "Lexapro"
+    },
+    {
+      "lastmodifiedby": "INTF-114612149",
+      "allergenname": "Phenergan",
+      "categories": [
+        "medication"
+      ],
+      "reactions": [
+        {
+          "snomedcode": 74964007,
+          "reactionname": "other",
+          "severity": "moderate severity",
+          "severitysnomedcode": 6736007
+        }
+      ],
+      "id": "8418",
+      "note": "dystonic reaction",
+      "allergenid": 16925,
+      "rxnormcode": "152218",
+      "lastmodifieddatetime": "2025-07-21T22:57:25-04:00",
+      "rxnormdescription": "Phenergan"
+    }
+  ],
+  "lastmodifieddatetime": "2025-07-21T22:57:25-04:00",
+  "nkda": false
+}

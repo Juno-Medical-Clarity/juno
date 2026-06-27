@@ -14,7 +14,7 @@ class Constants:
     SUMMARY_SCHEMA_VERSION_1_4 = "1.4"
 
     # ── File upload limits ────────────────────────────────────────────────
-    ALLOWED_EXTENSIONS: frozenset[str] = frozenset({"pdf", "txt", "docx"})
+    ALLOWED_EXTENSIONS: frozenset[str] = frozenset({"pdf", "txt", "docx", "html", "htm"})
     MAX_FILE_BYTES: int = 10 * 1024 * 1024       # 10 MB per file
     MAX_FILE_COUNT: int = 10
     MAX_AGGREGATE_FILE_BYTES: int = 25 * 1024 * 1024  # 25 MB combined

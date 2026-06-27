@@ -1,0 +1,679 @@
+{
+  "patientdownloadconsent": true,
+  "patientneedsdownloadconsent": false,
+  "lastupdated": "04/17/2026",
+  "medications": [
+    [
+      {
+        "medicationentryid": "H13544",
+        "issafetorenew": true,
+        "lastmodifiedby": "API-34748",
+        "medication": "Claritin 10 mg tablet",
+        "patientnote": "PRN allergies",
+        "therapeuticclass": "ANTIHISTAMINES - 2ND GENERATION",
+        "fdbmedicationid": "180342",
+        "medicationid": 231084,
+        "organclass": "BODY AS A WHOLE",
+        "isdiscontinued": false,
+        "source": "INTF-114607972",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "Take",
+          "dosagefrequencydescription": "every day",
+          "dosagefrequencyvalue": 1,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "193466",
+        "isstructuredsig": true,
+        "createdby": "INTF-114607972",
+        "unstructuredsig": "Take 1 tablet every day by oral route.",
+        "lastmodifieddate": "12/07/2025",
+        "events": [
+          {
+            "userdisplayname": "INTF-114607972",
+            "type": "ENTER",
+            "eventdate": "12/29/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationtallmanname": "CeleXA 20 mg tablet",
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "isdiscontinued": false,
+        "medicationentryid": "H13737",
+        "issafetorenew": true,
+        "source": "API-34155",
+        "lastmodifiedby": "API-34748",
+        "medication": "Celexa 20 mg tablet",
+        "patientnote": "Patient note example",
+        "clinicalordertypeid": "205187",
+        "createdby": "API-34155",
+        "therapeuticclass": "SELECTIVE SEROTONIN REUPTAKE INHIBITOR (SSRIS)",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet daily",
+        "fdbmedicationid": "232828",
+        "stopreason": "adverse reaction",
+        "lastmodifieddate": "12/06/2025",
+        "medicationid": 242805,
+        "providernote": "Provider note example",
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "10/01/2025"
+          },
+          {
+            "type": "END",
+            "eventdate": "10/11/2025"
+          },
+          {
+            "userdisplayname": "API-34155",
+            "type": "ENTER",
+            "eventdate": "10/11/2025"
+          }
+        ]
+      },
+      {
+        "medicationtallmanname": "CeleXA 20 mg tablet",
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "isdiscontinued": false,
+        "medicationentryid": "H13735",
+        "issafetorenew": true,
+        "source": "API-34155",
+        "lastmodifiedby": "API-34748",
+        "medication": "Celexa 20 mg tablet",
+        "patientnote": "Patient note example",
+        "clinicalordertypeid": "205187",
+        "createdby": "API-34155",
+        "therapeuticclass": "SELECTIVE SEROTONIN REUPTAKE INHIBITOR (SSRIS)",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet daily",
+        "fdbmedicationid": "232828",
+        "stopreason": "adverse reaction",
+        "lastmodifieddate": "12/06/2025",
+        "medicationid": 242805,
+        "providernote": "Provider note example",
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "10/01/2025"
+          },
+          {
+            "type": "END",
+            "eventdate": "10/11/2025"
+          },
+          {
+            "userdisplayname": "API-34155",
+            "type": "ENTER",
+            "eventdate": "10/11/2025"
+          }
+        ]
+      },
+      {
+        "medicationtallmanname": "CeleXA 20 mg tablet",
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "isdiscontinued": false,
+        "medicationentryid": "H13738",
+        "issafetorenew": true,
+        "source": "API-34155",
+        "lastmodifiedby": "API-34748",
+        "medication": "Celexa 20 mg tablet",
+        "patientnote": "This was for post-procedure pain.",
+        "clinicalordertypeid": "205187",
+        "createdby": "API-34155",
+        "therapeuticclass": "SELECTIVE SEROTONIN REUPTAKE INHIBITOR (SSRIS)",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth daily as needed for pain",
+        "fdbmedicationid": "232828",
+        "stopreason": "end of course",
+        "lastmodifieddate": "12/06/2025",
+        "medicationid": 242805,
+        "providernote": "Patient reports pain has subsided.",
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "10/01/2025"
+          },
+          {
+            "type": "END",
+            "eventdate": "10/11/2025"
+          },
+          {
+            "userdisplayname": "API-34155",
+            "type": "ENTER",
+            "eventdate": "10/11/2025"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "C203958",
+        "issafetorenew": true,
+        "lastmodifiedby": "API-34748",
+        "medication": "Paxil 10 mg tablet",
+        "patientnote": "Updated via API test on 12/04/2025",
+        "refillsallowed": 0,
+        "quantityunit": "tablet",
+        "orderingmode": "PRESCRIBE",
+        "therapeuticclass": "SELECTIVE SEROTONIN REUPTAKE INHIBITOR (SSRIS)",
+        "fdbmedicationid": "284102",
+        "medicationid": 254430,
+        "quantity": 1,
+        "status": "SUBMIT",
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "route": "FAX",
+        "isdiscontinued": false,
+        "source": "ATHENA",
+        "approvedby": "spamidimarri",
+        "structuredsig": {
+          "dosagequantityvalue": 1,
+          "dosagefrequencyunit": "per day",
+          "dosageroute": "oral",
+          "dosageaction": "TAKE",
+          "dosagefrequencydescription": "every day",
+          "dosagefrequencyvalue": 1,
+          "dosagedurationunit": "day",
+          "dosagequantityunit": "tablet(s)"
+        },
+        "clinicalordertypeid": "216812",
+        "isstructuredsig": true,
+        "createdby": "spamidimarri",
+        "unstructuredsig": "Take 1 tablet every day by oral route.",
+        "encounterid": 62063,
+        "lastmodifieddate": "04/17/2026",
+        "providernote": "Verified by API automation script",
+        "events": [
+          {
+            "userdisplayname": "ATHENA",
+            "type": "ORDER",
+            "eventdate": "11/17/2025"
+          },
+          {
+            "userdisplayname": "Anvesh P S R J",
+            "type": "ENTER",
+            "eventdate": "11/17/2025"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationentryid": "C204073",
+        "issafetorenew": true,
+        "lastmodifiedby": "API-34413",
+        "medication": "progesterone micronized 100 mg capsule",
+        "refillsallowed": 2,
+        "quantityunit": "capsule",
+        "orderingmode": "PRESCRIBE",
+        "therapeuticclass": "PROGESTATIONAL AGENTS",
+        "fdbmedicationid": "296048",
+        "medicationid": 257112,
+        "medicationtallmanname": "proGESTerone micronized 100 mg capsule",
+        "status": "REVIEW",
+        "organclass": "FEMALE GENITAL SYSTEM",
+        "route": "PAPER",
+        "isdiscontinued": false,
+        "source": "ATHENA",
+        "clinicalordertypeid": "219494",
+        "createdby": "API-34413",
+        "encounterid": 62063,
+        "lastmodifieddate": "11/19/2025",
+        "events": [
+          {
+            "userdisplayname": "API-34413",
+            "type": "ENTER",
+            "eventdate": "11/19/2025"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "fdbgenericmedicationnameid": "361",
+        "medicationentryid": "H13946",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "acetaminophen",
+        "createdby": "API-35411",
+        "therapeuticclass": "ANALGESIC/ANTIPYRETICS,NON-SALICYLATE",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1-2 tablets by mouth every 6 hours as needed for pain",
+        "medicationid": 294963,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "ELECTROLYTE BALANCE/METABOLISM/NUTRITION",
+        "fdbgenericmedicationnameid": "674",
+        "medicationentryid": "H13943",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "potassium chloride",
+        "createdby": "API-35411",
+        "therapeuticclass": "POTASSIUM REPLACEMENT",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth once daily",
+        "medicationid": 295276,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "BLOOD",
+        "fdbgenericmedicationnameid": "835",
+        "medicationentryid": "H13937",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "atorvastatin",
+        "createdby": "API-35411",
+        "therapeuticclass": "ANTIHYPERLIPIDEMIC-HMGCOA REDUCTASE INHIB(STATINS)",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth once daily at bedtime",
+        "medicationid": 295437,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "fdbgenericmedicationnameid": "1076",
+        "medicationentryid": "H14161",
+        "issafetorenew": true,
+        "source": "API-33046",
+        "medication": "aspirin",
+        "createdby": "API-33046",
+        "therapeuticclass": "ANALGESIC/ANTIPYRETICS, SALICYLATES",
+        "isstructuredsig": false,
+        "medicationid": 295678,
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "04/07/2026"
+          },
+          {
+            "userdisplayname": "API-33046",
+            "type": "ENTER",
+            "eventdate": "04/07/2026"
+          }
+        ]
+      },
+      {
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "fdbgenericmedicationnameid": "1076",
+        "medicationentryid": "H14162",
+        "issafetorenew": true,
+        "source": "API-33046",
+        "medication": "aspirin",
+        "createdby": "API-33046",
+        "therapeuticclass": "ANALGESIC/ANTIPYRETICS, SALICYLATES",
+        "isstructuredsig": false,
+        "medicationid": 295678,
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "04/07/2026"
+          },
+          {
+            "userdisplayname": "API-33046",
+            "type": "ENTER",
+            "eventdate": "04/07/2026"
+          }
+        ]
+      },
+      {
+        "organclass": "NERVOUS SYSTEM (EXCEPT AUTONOMIC)",
+        "fdbgenericmedicationnameid": "1076",
+        "medicationentryid": "H14160",
+        "issafetorenew": true,
+        "source": "API-33046",
+        "medication": "aspirin",
+        "createdby": "API-33046",
+        "therapeuticclass": "ANALGESIC/ANTIPYRETICS, SALICYLATES",
+        "isstructuredsig": false,
+        "medicationid": 295678,
+        "events": [
+          {
+            "type": "START",
+            "eventdate": "04/07/2026"
+          },
+          {
+            "userdisplayname": "API-33046",
+            "type": "ENTER",
+            "eventdate": "04/07/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "ENDOCRINE SYSTEM",
+        "fdbgenericmedicationnameid": "1423",
+        "medicationentryid": "H13940",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "levothyroxine",
+        "createdby": "API-35411",
+        "therapeuticclass": "THYROID HORMONES",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth once daily on empty stomach",
+        "medicationid": 296025,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "BILIARY SYSTEM/GASTRO-INTESTINAL SYSTEM",
+        "fdbgenericmedicationnameid": "3713",
+        "medicationentryid": "H13941",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "omeprazole",
+        "createdby": "API-35411",
+        "therapeuticclass": "PROTON-PUMP INHIBITORS",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 capsule by mouth once daily before breakfast",
+        "medicationid": 298315,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "AUTONOMIC NERVOUS SYSTEM",
+        "fdbgenericmedicationnameid": "4756",
+        "medicationentryid": "H13795",
+        "issafetorenew": true,
+        "source": "API-34748",
+        "medication": "albuterol sulfate",
+        "createdby": "API-34748",
+        "therapeuticclass": "BETA-ADRENERGIC AGENTS",
+        "isstructuredsig": false,
+        "medicationid": 299358,
+        "events": [
+          {
+            "userdisplayname": "API-34748",
+            "type": "ENTER",
+            "eventdate": "12/18/2025"
+          }
+        ]
+      },
+      {
+        "organclass": "AUTONOMIC NERVOUS SYSTEM",
+        "fdbgenericmedicationnameid": "4756",
+        "medicationentryid": "H14177",
+        "issafetorenew": true,
+        "source": "API-34748",
+        "medication": "albuterol sulfate",
+        "createdby": "API-34748",
+        "therapeuticclass": "BETA-ADRENERGIC AGENTS",
+        "isstructuredsig": false,
+        "medicationid": 299358,
+        "events": [
+          {
+            "userdisplayname": "API-34748",
+            "type": "ENTER",
+            "eventdate": "04/17/2026"
+          }
+        ]
+      },
+      {
+        "organclass": "AUTONOMIC NERVOUS SYSTEM",
+        "fdbgenericmedicationnameid": "4756",
+        "medicationentryid": "H13542",
+        "issafetorenew": true,
+        "source": "INTF-114607972",
+        "lastmodifiedby": "API-34748",
+        "medication": "albuterol sulfate",
+        "createdby": "INTF-114607972",
+        "therapeuticclass": "BETA-ADRENERGIC AGENTS",
+        "isstructuredsig": false,
+        "unstructuredsig": "2 puffs q4h PRN wheezing",
+        "lastmodifieddate": "12/09/2025",
+        "medicationid": 299358,
+        "events": [
+          {
+            "userdisplayname": "INTF-114607972",
+            "type": "ENTER",
+            "eventdate": "12/30/2015"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "KIDNEY/URINARY TRACT",
+        "fdbgenericmedicationnameid": "5367",
+        "medicationentryid": "H13939",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "furosemide",
+        "createdby": "API-35411",
+        "therapeuticclass": "LOOP DIURETICS",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth once daily in the morning",
+        "medicationid": 299969,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationtallmanname": "amLODIPine",
+        "organclass": "CARDIOVASCULAR SYSTEM",
+        "fdbgenericmedicationnameid": "5712",
+        "medicationentryid": "H13944",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "amlodipine",
+        "createdby": "API-35411",
+        "therapeuticclass": "CALCIUM CHANNEL BLOCKING AGENTS",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth once daily",
+        "medicationid": 300314,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "CARDIOVASCULAR SYSTEM",
+        "fdbgenericmedicationnameid": "6620",
+        "medicationentryid": "H13934",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "lisinopril",
+        "createdby": "API-35411",
+        "therapeuticclass": "ANTIHYPERTENSIVES, ACE INHIBITORS",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth once daily",
+        "medicationid": 301222,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "AUTONOMIC NERVOUS SYSTEM",
+        "fdbgenericmedicationnameid": "8331",
+        "medicationentryid": "H13935",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "metoprolol succinate",
+        "createdby": "API-35411",
+        "therapeuticclass": "BETA-ADRENERGIC BLOCKING AGENTS",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth once daily",
+        "medicationid": 302933,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "ELECTROLYTE BALANCE/METABOLISM/NUTRITION",
+        "fdbgenericmedicationnameid": "5945",
+        "medicationentryid": "H13945",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "Vitamin D3",
+        "createdby": "API-35411",
+        "therapeuticclass": "VITAMIN D PREPARATIONS",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 capsule by mouth once daily",
+        "medicationid": 304185,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "medicationtallmanname": "metFORMIN",
+        "organclass": "ELECTROLYTE BALANCE/METABOLISM/NUTRITION",
+        "fdbgenericmedicationnameid": "10573",
+        "medicationentryid": "H13936",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "metformin",
+        "createdby": "API-35411",
+        "therapeuticclass": "ANTIHYPERGLYCEMIC, BIGUANIDE TYPE",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth twice daily with meals",
+        "medicationid": 305175,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "BLOOD",
+        "fdbgenericmedicationnameid": "209645",
+        "medicationentryid": "H13938",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "apixaban",
+        "createdby": "API-35411",
+        "therapeuticclass": "DIRECT FACTOR XA INHIBITORS",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth twice daily",
+        "medicationid": 368544,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "ELECTROLYTE BALANCE/METABOLISM/NUTRITION",
+        "fdbgenericmedicationnameid": "263765",
+        "medicationentryid": "H13942",
+        "issafetorenew": true,
+        "source": "API-35411",
+        "medication": "empagliflozin",
+        "createdby": "API-35411",
+        "therapeuticclass": "ANTIHYPERGLYCEMIC-SOD/GLUC COTRANSPORT2(SGLT2) INH",
+        "isstructuredsig": false,
+        "unstructuredsig": "Take 1 tablet by mouth once daily",
+        "medicationid": 374981,
+        "events": [
+          {
+            "userdisplayname": "API-35411",
+            "type": "ENTER",
+            "eventdate": "02/20/2026"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "organclass": "ELECTROLYTE BALANCE/METABOLISM/NUTRITION",
+        "fdbgenericmedicationnameid": "342268",
+        "medicationentryid": "H14136",
+        "issafetorenew": true,
+        "source": "API-35804",
+        "medication": "AA 5 % no.6-D15W-lytes no.23",
+        "createdby": "API-35804",
+        "therapeuticclass": "IV SOLUTIONS: DEXTROSE-WATER",
+        "isstructuredsig": false,
+        "medicationid": 385776,
+        "events": [
+          {
+            "userdisplayname": "API-35804",
+            "type": "ENTER",
+            "eventdate": "03/27/2026"
+          }
+        ]
+      }
+    ]
+  ],
+  "nomedicationsreported": false
+}

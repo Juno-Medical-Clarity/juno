@@ -50,10 +50,10 @@ export default function CarePlanPage() {
   const handleFiles = useCallback((selectedFiles: File[]) => {
     const invalid = selectedFiles.filter(f => {
       const ext = f.name.split('.').pop()?.toLowerCase();
-      return !['pdf', 'txt', 'docx'].includes(ext ?? '');
+      return !['pdf', 'txt', 'docx', 'html', 'htm'].includes(ext ?? '');
     });
     if (invalid.length > 0) {
-      setError(`Unsupported file type: ${invalid.map(f => f.name).join(', ')}. Use PDF, TXT, or DOCX.`);
+      setError(`Unsupported file type: ${invalid.map(f => f.name).join(', ')}. Use PDF, TXT, DOCX, or HTML.`);
       return;
     }
     setError(null);
@@ -161,7 +161,7 @@ export default function CarePlanPage() {
                 >
                   <input
                     type="file"
-                    accept=".pdf,.txt,.docx"
+                    accept=".pdf,.txt,.docx,.html,.htm"
                     multiple
                     onChange={e => {
                       if (e.target.files) handleFiles(Array.from(e.target.files));
@@ -177,7 +177,7 @@ export default function CarePlanPage() {
                   ) : (
                     <>
                       <p className="upload-title">Drag & drop your document(s) here</p>
-                      <p className="upload-hint">PDF, TXT, or DOCX · Multiple files = one combined process</p>
+                      <p className="upload-hint">PDF, TXT, DOCX, or HTML · Multiple files = one combined process</p>
                     </>
                   )}
                 </div>

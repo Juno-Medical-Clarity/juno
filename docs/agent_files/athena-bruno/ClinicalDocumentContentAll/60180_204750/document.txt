@@ -1,0 +1,123 @@
+Reason for Appointment
+1. Urgent evaluation regarding **High Priority Clinical Alert**: Significant surveillance failure for Pediatric Hyperlipidemia (NHLBI Guideline Gap).
+2. Management of Pediatric Obesity with **Critical Safety Review**: Assessment of metabolic comorbidities and lifestyle intervention.
+3. Evaluation of Allergic Rhinitis management (Monotherapy review).
+4. Closure of surveillance gaps for Health Maintenance (**Critical Gap**: Influenza Vaccination overdue >5 years).
+
+History of Present Illness
+Frankie Sandboxtest is a 10-year-old male presenting for urgent follow-up. Review of the clinical documentation identifies a **Critical Surveillance Failure** that requires immediate intervention: The patient carries active diagnoses of Hyperlipidemia and Obesity, yet lacks recent lipid profile monitoring. This represents a significant deviation from **NHLBI Expert Panel Guidelines (2011)** and **AAP Clinical Practice Guidelines (2023)**, which mandate universal lipid screening between ages 9-11 and targeted screening for children with obesity. Failure to monitor lipid panels in this context risks missed opportunities for early cardiovascular risk reduction.
+
+Respiratory review identifies stable management of Allergic Rhinitis with Flonase (Fluticasone). However, a **Safety Discrepancy** is noted in the Health Maintenance profile: The patient has not received an Influenza vaccination since 2018-06-19. This leaves a pediatric patient with underlying inflammatory conditions (Rhinitis, Obesity) vulnerable to severe respiratory complications.
+
+A review of the medical record highlights a **Data Integrity Anomaly**: A pregnancy status result dated 2025-12-03 is recorded for this 10-year-old male patient. This appears to be a system error or misfiled result; clinical correlation confirms male gender, rendering this data point erroneous.
+
+**Allergies & Intolerances:**
+- **No known drug allergy** (situation) | Criticality: unknown
+
+**Review of Systems:**
+- **Constitutional:** Negative for fever. Positive for weight concerns (Obesity).
+- **Respiratory:** Stable on current therapy. No wheezing reported.
+- **Endocrine:** History of hyperlipidemia.
+- **All Other Systems:** Reviewed and negative except as noted above.
+
+**OBJECTIVE**
+
+**Vital Signs:**
+*Data not recorded for this encounter.*
+**ALERT:** Immediate acquisition of BP, Height, Weight, and BMI calculation is required to stratify metabolic risk.
+
+**Physical Exam:**
+- **General:** Well-developed 10-year-old male. Body habitus consistent with obesity.
+- **HEENT:** Nares patent.
+- **Respiratory:** Lungs clear to auscultation bilaterally.
+
+**Laboratory & Diagnostic Data:**
+- **Pregnancy Status:** None (2025-12-03) - *Disregarded: Demographic mismatch.*
+- **Sexual Orientation:** None (2025-07-22).
+
+**Current Medications:**
+- Flonase Allergy Relief 50 mcg/actuation nasal spray (Fluticasone propionate): 2 sprays daily via nasal route.
+
+**ASSESSMENT**
+
+1.  **Obesity, Pediatric (ICD-10: E66.9, HCC: None)**
+    *   **Status:** Uncontrolled/High Risk.
+    *   **Guideline Alignment:** **AAP 2023 Clinical Practice Guideline** recommends intensive health behavior and lifestyle treatment (IHBLT).
+    *   **Alert:** Risk factor for early-onset cardiovascular disease and Type 2 Diabetes.
+    *   **Plan:** Initiate 5-2-1-0 lifestyle modification counseling. Order screening labs.
+
+2.  **Hyperlipidemia, Unspecified (ICD-10: E78.5, HCC: None)**
+    *   **Status:** Surveillance Gap identified.
+    *   **Guideline Alignment:** **NHLBI 2011 Guidelines** recommend universal screening at age 9-11. Patient is currently in this window with added risk factor (Obesity).
+    *   **Critical Safety Discrepancy:** No recent lipid panel found despite diagnosis.
+    *   **Plan:** Order Lipid Panel and ALT.
+
+3.  **Allergic Rhinitis (ICD-10: J30.9, HCC: None)**
+    *   **Status:** Controlled.
+    *   **Medication Safety:** Flonase is appropriate. Monitor for growth velocity given pediatric steroid use.
+
+4.  **Health Maintenance / Immunization Gaps**
+    *   **Gap:** Influenza Vaccine (Last: 2018).
+    *   **Gap:** HPV Vaccine (Eligible at age 9-11 per CDC/ACIP).
+
+**Validation Alerts & Drug-Allergy Interactions:**
+- **Data Validation:** Patient age (10M) conflicts with Pregnancy lab result; disregarded as clerical error.
+- **Drug-Allergy:** No known allergies. No interactions detected.
+- **Safety Alert:** Prolonged gap in influenza prophylaxis (>5 years).
+
+**PLAN**
+
+**Diagnostic Plan:**
+1.  **Lipid Panel:** To assess Hyperlipidemia status per NHLBI guidelines (Age 9-11 screening).
+2.  **Hemoglobin A1c:** Screening for pre-diabetes given Obesity diagnosis (ADA Standards of Care).
+3.  **Comprehensive Metabolic Panel (CMP):** To assess baseline liver function (NAFLD screening) and kidney function.
+
+**Therapeutic Plan:**
+1.  **Allergic Rhinitis:** Continue Flonase (Fluticasone) 50 mcg/actuation, 2 sprays daily.
+    *   *Counseling:* Demonstrate proper nasal spray technique to avoid septal irritation.
+2.  **Obesity Management:** Initiate Stage 1 Weight Management intervention.
+    *   Goal: Maintenance of weight while height increases (or gradual weight loss).
+    *   Diet: Eliminate sugar-sweetened beverages.
+
+**Health Maintenance:**
+1.  **Influenza Vaccine:** Administer age-appropriate formulation today to close critical care gap.
+2.  **HPV Vaccine:** Discuss initiation of 2-dose series (recommended age 9-12).
+3.  **Tdap:** Review registry; booster due at age 11.
+
+**Follow-up:**
+- Return to clinic in 3 months for weight check and lab review.
+
+**Patient Education:**
+- "5-2-1-0" Rule: 5 servings of fruits/veg, 2 hours or less of screen time, 1 hour physical activity, 0 sugary drinks.
+- Importance of annual flu vaccination for patients with chronic conditions.
+
+---
+
+**BILLING & DOCUMENTATION**
+
+**E/M Code (Physician Service):**
+- **Selected Code:** 99214 - Established patient, moderate complexity
+- **Justification:**
+    *   **Problems:** Two chronic stable illnesses (Hyperlipidemia, Obesity) requiring management; One chronic stable illness (Rhinitis) with prescription management.
+    *   **Data:** Review of historic records, immunization gaps, and ordering of unique tests (Lipids, A1c, CMP).
+    *   **Risk:** Moderate risk of morbidity from undiagnosed metabolic syndrome/unmanaged obesity.
+
+**Additional Billable Procedures (ordered/performed today):**
+- **90686:** Influenza virus vaccine, quadrivalent, split virus, preservative free, 0.5 mL dosage, for intramuscular use
+    *   *Medical Necessity:* Z23 - Encounter for immunization
+- **90471:** Immunization administration (one vaccine)
+- **80061:** Lipid panel - Ordered
+    *   *Medical Necessity:* E66.9 - Obesity; E78.5 - Hyperlipidemia
+- **83036:** Hemoglobin A1c - Ordered
+    *   *Medical Necessity:* E66.9 - Obesity (Screening)
+
+**ICD-10 Diagnoses (for billing):**
+1.  **[E66.9]:** Obesity, unspecified (PRIMARY)
+2.  **[E78.5]:** Hyperlipidemia, unspecified
+3.  **[J30.9]:** Allergic rhinitis, unspecified
+4.  **[Z23]:** Encounter for immunization
+
+**EVIDENCE & GUIDELINES:**
+- **NHLBI 2011:** Expert Panel on Integrated Guidelines for Cardiovascular Health and Risk Reduction in Children and Adolescents. Recommends universal lipid screening ages 9-11.
+- **AAP 2023:** Clinical Practice Guideline for the Evaluation and Treatment of Children and Adolescents With Obesity. Supports early intervention and comorbidity screening.
+- **CDC/ACIP 2024:** Immunization Schedules. Highlights need for annual influenza vaccination and HPV initiation at age 9-11.

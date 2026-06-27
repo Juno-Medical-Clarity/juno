@@ -1,0 +1,143 @@
+**Reason for Appointment**
+1.  **Urgent Evaluation of Somatic Symptoms** (Assessment of new onset nausea, profound fatigue, and suspected amenorrhea in a 41-year-old female; clinical presentation raises high suspicion for early pregnancy, necessitating immediate confirmation given concurrent teratogenic medication use).
+2.  **Medication Safety and Teratogenicity Risk Assessment** (Critical review of **Paroxetine** [Paxil] therapy; patient currently utilizes 10 mg daily. Evaluation of FDA Category D status and cardiac malformation risks; formulation of a conditional cross-taper strategy to **Sertraline** [Zoloft] pending pregnancy confirmation, per ACOG and psychiatric safety guidelines).
+3.  **Chronic Disease Optimization and Guideline Alignment** (Management of **Mild Intermittent Asthma** and **Hypertension**. Address the Global Initiative for Asthma [GINA] care gap—currently on SABA monotherapy—by initiating Inhaled Corticosteroid [ICS] therapy. Evaluation of discordant blood pressure readings [Office: 160/90 mmHg vs. Home: 120/70 mmHg] to rule out White Coat Hypertension vs. Masked Uncontrolled Hypertension).
+4.  **Health Maintenance and Immunization Gap Closure** (Administration of seasonal Influenza vaccine; referral for age-appropriate cancer screening [Mammography] as per USPSTF recommendations for women >40).
+
+**History of Present Illness**
+Donna Sandboxtest is a 41-year-old female presenting for an urgent evaluation of new constitutional and gynecologic symptoms. Review of clinical documentation and today's interview reveals a history of Hyperemesis Gravidarum in prior pregnancies. The patient reports a recent onset of nausea (reminiscent of her prior hyperemesis), profound fatigue, and irregular menses, leading to significant anxiety regarding potential pregnancy.
+
+Current review focuses on critical medication safety. She is currently prescribed Paroxetine 10 mg daily. She is aware of the teratogenic risks (cardiac defects) associated with this medication and desires a safety plan. Additionally, she reports home blood pressure readings averaging 120/70 mmHg, contrasting sharply with today's office reading of 160/90 mmHg. Regarding respiratory status, she reports intermittent wheezing and currently relies solely on Albuterol (SABA) for relief, indicating sub-optimal control. There is no documentation of recent fever or systemic infection.
+
+**Allergies & Intolerances**
+*   **Product containing carbamate:** Criticality: Unknown (Monitor for cross-reactivity).
+
+**Review of Systems**
+*   **Constitutional:** Positive for profound fatigue. Negative for fever or chills.
+*   **Respiratory:** Positive for intermittent wheezing.
+*   **Cardiovascular:** Negative for chest pain or palpitations. Positive for elevated office blood pressure.
+*   **Gastrointestinal:** Positive for nausea. Negative for vomiting or abdominal pain.
+*   **Genitourinary/Gynecological:** Positive for irregular menses/amenorrhea.
+*   **Psychiatric:** Positive for anxiety regarding medication safety and potential pregnancy.
+
+**OBJECTIVE**
+
+**Vital Signs:**
+*   **BP (Office):** 160/90 mmHg (Elevated)
+*   **BP (Home Reported):** 120/70 mmHg
+*   **Temp:** 98.60 °F
+*   **Respiratory Rate:** Normal effort observed, though occasional wheeze noted.
+
+**Physical Exam:**
+*   **General:** Alert, oriented x3, appears anxious but in no acute distress.
+*   **Lungs:** Mild end-expiratory wheezing noted bilaterally. No rales or rhonchi.
+*   **CV:** Tachycardia absent. Regular rhythm. No murmurs.
+*   **Abd:** Soft, non-tender, non-distended.
+
+**Recent Lab Results & Interpretation:**
+*   *Note: Today's STAT labs (hCG, CMP, Lipids) are pending.*
+*   **Systolic BP:** 160.00 mmHg (2025-12-07) - **ALERT: Hypertensive range.**
+*   **Diastolic BP:** 90.00 mmHg (2025-12-07) - **ALERT: Hypertensive range.**
+*   **Body Temperature:** 98.60 °F (2025-09-09) - Normal.
+
+**Current Medications (Reconciled Today):**
+*   **Paroxetine (Paxil) 10 mg tablet:** Take 1 tablet daily by oral route. **(SAFETY ALERT: Potential Pregnancy)**
+*   **Albuterol sulfate 2 puffs:** Inhale every 4 hours PRN wheezing.
+*   **Claritin 10 mg tablet:** Take 1 tablet daily by oral route.
+*   **Budesonide 90 mcg inhaler:** 2 puffs BID (Initiated today).
+*   **Prenatal Vitamins:** 1 tablet daily (Initiated today).
+*   **Sertraline 25 mg:** (Conditional prescription pending hCG results).
+
+**ASSESSMENT**
+
+**1. High Risk Medication Use / Potential Pregnancy (ICD-10: Z79.899, O09.93 | HCC: None)**
+*   **Status:** Acute/Urgent evaluation.
+*   **Analysis:** Patient presents with symptoms highly suggestive of early pregnancy (nausea, amenorrhea). Current use of **Paroxetine (FDA Category D)** poses a significant risk for congenital cardiac malformations (ventricular septal defects) if continued during the first trimester.
+*   **Guideline Alignment:** **ACOG Guidelines** recommend avoiding Paroxetine in women planning pregnancy or in early pregnancy due to teratogenicity.
+*   **Plan:** STAT Beta-hCG. If positive, immediate cross-taper to Sertraline (Zoloft), which has a more favorable safety profile.
+
+**2. Hypertensive Disorder, Unspecified (ICD-10: I10 | HCC: 85)**
+*   **Status:** Uncontrolled/Erratic.
+*   **Analysis:** Significant discordance noted between Office BP (160/90 mmHg) and Home BP (120/70 mmHg). This suggests possible **White Coat Hypertension** vs. masked hypertension.
+*   **Guideline Alignment:** **ACC/AHA 2017 High Blood Pressure Guidelines** recommend out-of-office BP monitoring to confirm diagnosis before intensifying therapy in stable patients.
+*   **Plan:** Initiate strict HBPM (Home Blood Pressure Monitoring) BID x 7 days to determine true baseline.
+
+**3. Mild Intermittent Asthma (ICD-10: J45.20 | HCC: 111)**
+*   **Status:** Sub-optimally managed.
+*   **Analysis:** Patient utilizing SABA (Albuterol) monotherapy with continued symptoms (wheezing).
+*   **Guideline Alignment:** **GINA 2024 Guidelines** no longer recommend SABA-only treatment for adults due to increased risk of severe exacerbations. GDMT requires ICS-containing treatment.
+*   **Plan:** Initiating Budesonide (ICS) 90 mcg 2 puffs BID.
+
+**4. Health Maintenance Gaps (ICD-10: Z00.00)**
+*   **Status:** Addressing gaps.
+*   **Analysis:** Patient due for Influenza vaccination and Mammography (Age >40).
+*   **Plan:** Administer Flu vaccine today. Refer for Mammography.
+
+**Drug-Allergy Interactions:**
+*   **Alert:** Patient has allergy to "Product containing carbamate."
+*   **Review:** Current medications (Paroxetine, Albuterol, Budesonide, Sertraline) do not contain carbamate moieties. No immediate contraindication identified.
+
+**PLAN**
+
+**Diagnostic Plan:**
+*   **Labs Ordered:** STAT Quantitative Beta-hCG (Serum), Comprehensive Metabolic Panel (CMP), Lipid Panel.
+*   **Monitoring:** Home Blood Pressure Monitoring (HBPM) - Log readings twice daily (AM/PM) for 7 days.
+
+**Therapeutic Plan:**
+1.  **Asthma Optimization:**
+    *   Start **Budesonide 90 mcg**, 2 puffs by mouth twice daily. Rinse mouth after use to prevent thrush.
+    *   Continue **Albuterol** 2 puffs q4h PRN for acute breakthrough symptoms only.
+2.  **Pregnancy/Safety Contingency:**
+    *   Start **Prenatal Vitamins** immediately.
+    *   **IF hCG NEGATIVE:** Continue Paroxetine 10 mg daily.
+    *   **IF hCG POSITIVE:** Initiate cross-taper:
+        *   Reduce Paroxetine to 5 mg daily x 7 days, then STOP.
+        *   Start **Sertraline 25 mg** daily immediately.
+3.  **Immunization:**
+    *   **Influenza Vaccine** (Quadrivalent) administered in office today.
+
+**Follow-up:**
+*   **24-Hour Telephone Encounter:** To review STAT hCG results and confirm medication plan (Paroxetine vs. Sertraline).
+*   **2 Weeks (In-Office):** Review BP logs, lab results, and response to Budesonide.
+
+**Patient Education:**
+*   Counseled extensively on the teratogenic risks of Paroxetine and the rationale for potential switch to Sertraline.
+*   Educated on proper inhaler technique for new Budesonide prescription.
+*   Instructed on signs of preeclampsia (headache, vision changes) given hypertension history.
+
+**HEALTH MAINTENANCE & PREVENTIVE CARE:**
+
+**Recent Immunizations:**
+*   **Influenza, mRNA, LNP-S, bivalent:** 2025-12-07 (Administered Today)
+*   **COVID-19, mRNA, bivalent:** 2025-11-04 | Status: Completed
+*   **Tdap:** 2016-08-29 | Status: Completed (**GAP IDENTIFIED:** Tdap booster recommended every 10 years; due 2026).
+
+**Preventive Care Recommendations:**
+*   **Mammography:** Referral generated today (USPSTF Grade B for women aged 40-74).
+*   **Cervical Cancer Screening:** Ensure up to date per ASCCP guidelines.
+
+**BILLING & DOCUMENTATION:**
+
+**E/M Code (Physician Service):**
+*   **Selected Code:** **99214** - Established patient, moderate complexity.
+*   **Justification:**
+    *   **Problems:** 1 Undiagnosed new problem with uncertain prognosis (Potential Pregnancy/Amenorrhea), 1 Chronic condition with exacerbation (Asthma), 1 Chronic condition stable/uncontrolled (HTN), 1 Acute drug safety issue.
+    *   **Data:** Review of prior notes, ordering unique labs (hCG, CMP, Lipids), review of BP logs.
+    *   **Risk:** Moderate risk of morbidity from prescription drug management (decision to cross-taper psychotropic medication; initiation of steroids).
+
+**Additional Billable Procedures:**
+*   **90686**: Influenza virus vaccine, quadrivalent, split virus, preservative free, 0.5 mL dosage, for intramuscular use.
+    *   *Medical Necessity:* Z23 - Encounter for immunization.
+*   **90471**: Immunization administration (includes percutaneous, intradermal, subcutaneous, or intramuscular injections); 1 vaccine (single or combination vaccine/toxoid).
+
+**ICD-10 Diagnoses (for billing):**
+1.  **[Z79.899]:** Other long term (current) drug therapy (Primary - Surveillance of High Risk Med)
+2.  **[O09.93]:** Supervision of high risk pregnancy, unspecified, third trimester (Suspected)
+3.  **[I10]:** Essential (primary) hypertension
+4.  **[J45.20]:** Mild intermittent asthma, uncomplicated
+5.  **[Z23]:** Encounter for immunization
+
+**EVIDENCE & GUIDELINES:**
+*   **GINA 2024:** Recommends against SABA-only treatment for asthma; initiated ICS (Budesonide) to reduce severe exacerbation risk.
+*   **ACOG / FDA:** Paroxetine is Category D (positive evidence of risk); Sertraline is preferred SSRI in pregnancy.
+*   **ACC/AHA 2017:** Hypertension guidelines emphasize out-of-office BP monitoring to confirm diagnosis and rule out white-coat effect before titration.
