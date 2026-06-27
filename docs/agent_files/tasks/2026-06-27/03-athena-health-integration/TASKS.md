@@ -45,63 +45,39 @@
 
 - **Files:** `/root/projects/juno/backend/data/athena-encounters-manifest.json` *(new file — create `backend/data/` directory too)*
 
-- **Changes:** Create the file with the exact JSON below. The `preview_content` for `p60183_e62021` is the plain-text rendering obtained by calling `AthenaClient._strip_html()` on the `summaryhtml` field of `docs/agent_files/athena-bruno/EncounterSummaries/sample_p60183_e62021_02.json` (first 3000 characters of stripped output).
+- **Changes:** Generate the manifest programmatically from all 86 encounter HTML files in `docs/agent_files/athena-bruno/Encounters/` plus the 4 EncounterSummaries entries, for **90 total entries**.
 
-```json
-{
-  "source_kind": "athena_encounter",
-  "label": "Athena — Encounters",
-  "tab_id": "athena-encounter",
-  "preview_entry_id": "p60183_e62021",
-  "entries": [
-    {
-      "id": "p60183_e62021",
-      "label": "Gary 78yo M — Chest Pain / Dyspnea",
-      "practice_id": "195900",
-      "patient_id": "60183",
-      "encounter_id": "62021",
-      "api_path": "/v1/195900/chart/encounters/62021/summary",
-      "is_preview": true,
-      "preview_content": "PatientName SANDBOXTEST, GARY (78yo, M) ID# 60183 Appt. Date/Time 11/10/2025 01:00PM DOB 04/18/1948 Service Dept. Cruickshank HEALTH CARE Provider BRICKER, ADAM Insurance Med Primary: CIGNA HEALTHCARE (HMO) Insurance # : TEST123456 Chief ComplaintNone recorded.VitalsNone recorded.AllergiesAMIODARONE: Other (Severe) - increase Liver Function Tests LEXAPRO: Rash (Mild) PHENERGAN: Other (Moderate severity) - dystonic reaction MedicationsName Date Source Abilify 5 mg tablet Take 1 tablet(s) every day by oral route. 12/29/15   entered INTF-114612150 allopurinol 100 mg tablet Take 1 tablet(s) 3 times a day by oral route. 12/29/15   entered INTF-114612150 atorvastatin 40 mg tablet Take 1 tablet(s) every day by oral route., start 09/18/2016 09/18/16   started INTF-114612150 buPROPion HCl SR 150 mg tablet,12 hr sustained-release Take 1 tablet(s) twice a day by oral route. 12/29/15   entered INTF-114612150 cloNIDine HCl 0.1 mg tablet Take 1 tablet(s) twice a day by oral route. 12/29/15   entered INTF-114612150 Exforge 10 mg-320 mg tablet Take 1 tablet(s) every day by oral route., start 12/17/2016 12/17/16   started INTF-114612150 gabapentin 300 mg capsule Take 1 capsule(s) every day by oral route at bedtime. 01/07/16   entered INTF-114612150 Sotalol AF 80 mg tablet Take 1 tablet(s) twice a day by oral route. 12/29/15   entered INTF-114612150 zolpidem 10 mg tablet Take 1 tablet(s) every day by oral route at bedtime. 12/29/15   entered INTF-114612150 VaccinesVaccine Type Date Amt. Route Site NDC Lot # Mfr. Exp. Date VIS VIS Given Vaccinator COVID-19 COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose (Pfizer-BioNTech) 10/27/25  0.3 mL Intramuscular Deltoid, Left FF2588 Pfizer, Inc Diphtheria, Tetanus Td(adult) 09/19/13  999 Influenza influenza, injectable, quadrivalent, preservative free 10/02/23  0.5 mL Intramuscular Deltoid, Left 946605 Seqirus influenza, seasonal, injectable 09/18/17  999 Problems Hyperlipidemia - Onset: 08/08/2016  Gout - Onset: 09/20/2018  Depressive disorder - Onset: 08/08/2016  Restless legs syndrome - Onset: 08/08/2016  Essential hypertension - Onset: 08/08/2016  Coronary atherosclerosis - Onset: 08/08/2016 - RCA stent, LAD disease  Congenital anomaly of peripheral blood vessel - Onset: 08/08/2016  Patient post percutaneous transluminal coronary angioplasty - Onset: 08/08/2016  Anxiety - Onset: 09/20/2018  Diverticular disease of colon - Onset: 08/08/2016 Social HistoryGender Identity and LGBTQ IdentityGender identity: Identifies as Male Assigned sex at birth: Male Pronouns: he/him Sexual orientation: Bisexual ScreeningNone recorded.ROS None recorded.Physical ExamNone recorded.Assessment / Plan1. Chest pain R07.9: Chest pain, unspecified INTERVENTIONAL CARDIOLOGY REFERRAL Reason for Referral: Chest pain, unspecified INTERVENTIONAL CARDIOLOGY REFERRAL Reason for Referral: Chest pain and shortness of breath requiring interventional cardiology assessment CARDIOLOGIST REFERRAL Reason for Referral: Chest pain, unspecified INTE"
-    },
-    {
-      "id": "p60183_e61456",
-      "label": "Gary 78yo M — Encounter 61456",
-      "practice_id": "195900",
-      "patient_id": "60183",
-      "encounter_id": "61456",
-      "api_path": "/v1/195900/chart/encounters/61456/summary",
-      "is_preview": false,
-      "preview_content": null
-    },
-    {
-      "id": "p60178_e62281",
-      "label": "Donna 41F — Encounter 62281",
-      "practice_id": "195900",
-      "patient_id": "60178",
-      "encounter_id": "62281",
-      "api_path": "/v1/195900/chart/encounters/62281/summary",
-      "is_preview": false,
-      "preview_content": null
-    },
-    {
-      "id": "p60178_e62283",
-      "label": "Donna 41F — Encounter 62283",
-      "practice_id": "195900",
-      "patient_id": "60178",
-      "encounter_id": "62283",
-      "api_path": "/v1/195900/chart/encounters/62283/summary",
-      "is_preview": false,
-      "preview_content": null
-    }
-  ],
-  "sandbox_note": "Only 4 real encounter IDs are available in the Athena sandbox. This manifest will grow as additional encounters are generated or the sandbox is expanded."
-}
-```
+  The manifest top-level structure:
+  ```json
+  {
+    "source_kind": "athena_encounter",
+    "label": "Athena — Encounters",
+    "tab_id": "athena-encounter",
+    "preview_entry_id": "p60183_e62021",
+    "entries": [ ... 90 entries ... ]
+  }
+  ```
+
+  **Entry generation rules:**
+  - For each HTML file `patient_{patient_id}_encounter_{encounter_id}.html` in `docs/agent_files/athena-bruno/Encounters/`, create an entry with:
+    - `id`: `"p{patient_id}_e{encounter_id}"`
+    - `label`: `"Patient {patient_id} — Encounter {encounter_id}"`
+    - `practice_id`: `"195900"`
+    - `patient_id`: extracted from filename
+    - `encounter_id`: extracted from filename
+    - `api_path`: `"/v1/195900/chart/encounters/{encounter_id}/summary"`
+    - `is_preview`: `false`
+    - `preview_content`: `null`
+  - Sort the 86 file-derived entries by `patient_id` (integer), then `encounter_id` (integer).
+  - Append the 4 EncounterSummaries entries at the end (in this order):
+    - `p60183_e62021` — `is_preview: true`, `preview_content` = first 3000 chars of `AthenaClient._strip_html()` applied to `summaryhtml` in `docs/agent_files/athena-bruno/EncounterSummaries/sample_p60183_e62021_02.json`; `label`: `"Gary 78yo M — Chest Pain / Dyspnea"`
+    - `p60183_e61456` — `is_preview: false`, `preview_content: null`; `label`: `"Gary 78yo M — Encounter 61456"`
+    - `p60178_e62281` — `is_preview: false`, `preview_content: null`; `label`: `"Donna 41F — Encounter 62281"`
+    - `p60178_e62283` — `is_preview: false`, `preview_content: null`; `label`: `"Donna 41F — Encounter 62283"`
 
 - **Acceptance criteria:** Run from `backend/`:
   ```bash
-  python -c "import json; m = json.load(open('data/athena-encounters-manifest.json')); assert len(m['entries']) == 4; assert any(e['is_preview'] for e in m['entries']); assert m['preview_entry_id'] == 'p60183_e62021'; assert m['source_kind'] == 'athena_encounter'; print('OK')"
+  python -c "import json; m = json.load(open('data/athena-encounters-manifest.json')); assert len(m['entries']) == 90; assert any(e['is_preview'] for e in m['entries']); assert m['preview_entry_id'] == 'p60183_e62021'; assert m['source_kind'] == 'athena_encounter'; print('OK')"
   ```
   Must print `OK` and exit 0.
 

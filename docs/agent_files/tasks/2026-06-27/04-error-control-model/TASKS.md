@@ -33,7 +33,7 @@
   class ErrorDetail(JsonModel):
       code: str
       message: str
-      details: Optional[str] = None       # was `str = ""` — relaxed to Optional
+      details: Optional[str] = None
       timestamp: str
       path: Optional[str] = None
       user_hint: Optional[str] = None     # new — from error_handler.py's Firestore shape
@@ -193,7 +193,7 @@
           "message": info.message,
           "user_hint": info.user_hint,
           "retryable": info.retryable,
-          "details": detail or None,                             # was "detail" singular — renamed
+          "details": detail or None,
           "timestamp": datetime.now(timezone.utc).isoformat(),  # new field
       }
   ```
@@ -297,7 +297,7 @@
   export interface ApiErrorDetail {
     code: string;
     message: string;
-    details: string | null;      // was `string` (non-nullable) — relaxed to nullable
+    details: string | null;
     timestamp: string;
     path: string | null;
     user_hint: string | null;    // new — was absent

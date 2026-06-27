@@ -201,7 +201,7 @@ This is relative to `backend/utils/`, so `parent.parent` lands at `backend/`.
 
 ### C. New file: `backend/data/athena-encounters-manifest.json`
 
-Full schema (4 entries, one `is_preview: true`):
+Full schema (90 entries total — 86 from Encounters/ + 4 from EncounterSummaries, one `is_preview: true`):
 
 ```json
 {
@@ -250,8 +250,8 @@ Full schema (4 entries, one `is_preview: true`):
       "is_preview": false,
       "preview_content": null
     }
-  ],
-  "sandbox_note": "Only 4 real encounter IDs are available in the Athena sandbox. This manifest will grow as additional encounters are generated or the sandbox is expanded."
+    // ... 86 more entries generated from docs/agent_files/athena-bruno/Encounters/ ...
+  ]
 }
 ```
 
@@ -577,7 +577,6 @@ interface AthenaSource {
   tab_id: string;
   preview_entry_id: string;
   entries: AthenaEntry[];
-  sandbox_note?: string;
 }
 
 export interface AthenaSelection {
@@ -756,8 +755,7 @@ if (activeAthenaSource) {
           "is_preview": true,
           "preview_content": "Patient: SANDBOXTEST, GARY ..."
         }
-      ],
-      "sandbox_note": "..."
+      ]
     }
   ]
 }
@@ -815,7 +813,7 @@ if (activeAthenaSource) {
 
 **`backend/tests/utils/test_athena_manifests.py`**
 
-1. `test_encounters_manifest_loads` — load `backend/data/athena-encounters-manifest.json`; assert `source_kind == "athena_encounter"`; assert exactly one entry with `is_preview: true`; assert `preview_entry_id` matches that entry's `id`.
+1. `test_encounters_manifest_loads` — load `backend/data/athena-encounters-manifest.json`; assert `source_kind == "athena_encounter"`; assert exactly one entry with `is_preview: true`; assert `preview_entry_id` matches that entry's `id`; assert 90 entries total.
 2. `test_clinical_docs_manifest_loads` — load `backend/data/athena-clinicaldocs-manifest.json`; assert `source_kind == "athena_clinical_doc"`; assert exactly one entry with `is_preview: true`; assert 100 entries total.
 3. `test_all_non_preview_entries_have_null_preview_content` — for both manifests, assert all entries where `is_preview == false` have `preview_content == null`.
 
@@ -837,7 +835,7 @@ No new test files for SP3 (existing Vitest coverage does not include PresetDataC
 
 5. **Deploy** — after all backend changes are merged:
    - Deploy worker service with new env vars set.
-   - Verify `GET /care_plan/datasets` returns `athena_sources` with 4 encounters and 100 clinical doc entries.
+   - Verify `GET /care_plan/datasets` returns `athena_sources` with 90 encounters and 100 clinical doc entries.
    - Run a single-item encounter job and confirm the care plan result includes a "Data Sources" card.
 
 ---

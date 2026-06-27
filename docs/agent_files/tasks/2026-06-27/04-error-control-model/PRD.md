@@ -83,8 +83,6 @@ class ApiResponse(JsonModel):
     requestId: Optional[str] = None     # camelCase preserved — TypeScript client depends on it
 ```
 
-**Backward-compat note:** Existing callers that receive `ApiResponse` and read `error.details` will now get `None` instead of `""` when no details were provided. This is safe — all known callers check for truthiness (`if error.details`) rather than equality to `""`.
-
 ---
 
 ### 4b. Single `make_error_response()` in `backend/utils/error_codes.py`
@@ -290,12 +288,6 @@ def build_error_data(error_code: ErrorCode, detail: str = "") -> dict:
     }
 ```
 
-**Frontend compatibility:** `CarePlanJobPage.tsx` lines 410–411 already read:
-```typescript
-const technicalDetail = errData?.detail ?? errData?.details ?? null;
-```
-So renaming from `detail` to `details` is backward-safe — the frontend falls through to `errData?.details` when `errData?.detail` is `undefined`.
-
 ---
 
 ### 4g. Frontend TypeScript Interfaces
@@ -360,19 +352,6 @@ export interface FirestoreJobError {
 **File:** `frontend/src/api/apiClient.ts`
 
 `authenticatedFetchJson` already correctly parses `ApiErrorResponse` and throws `ApiError` on non-2xx responses. The only change needed is updating the `ApiError` constructor call to pass through the two new fields (`user_hint`, `retryable`) — which happens automatically because `ApiError`'s constructor signature accepts `ApiErrorDetail` and the new fields are on that interface.
-
-No functional change to `apiClient.ts` logic. The existing code:
-
-```typescript
-if (body && typeof body === 'object' &&
-    (body as Record<string, unknown>).status === 'error' &&
-    (body as ApiErrorResponse).error) {
-  const errBody = body as ApiErrorResponse;
-  throw new ApiError(errBody.error, errBody.requestId ?? null);
-}
-```
-
-This already works. After SP4, `errBody.error.user_hint` and `errBody.error.retryable` are accessible and typed.
 
 ---
 
@@ -444,8 +423,6 @@ import { authenticatedFetch } from './apiClient';
 // After:
 import { authenticatedFetchJson } from './apiClient';
 ```
-
-**Caller impact:** Any component that catches errors from `createCarePlanJob` or `createBatchJobs` and checks `err instanceof Error` continues to work (since `ApiError extends Error`). Components that want to show `user_hint` can now additionally check `err instanceof ApiError` and access `err.userHint`.
 
 ---
 
@@ -584,8 +561,6 @@ All changes to the HTTP error response are additive — no existing fields are r
 ## 8. Manual Intervention Required
 
 None. SP4 is entirely code changes — no GCS bucket setup, no Cloud Run env vars, no Firestore schema migration (Firestore is schemaless; the new `timestamp` and renamed `details` key land naturally on new job writes).
-
-Existing Firestore job documents with the old `detail` (singular) key continue to render correctly because `CarePlanJobPage.tsx` already falls back: `errData?.detail ?? errData?.details ?? null`.
 
 ---
 

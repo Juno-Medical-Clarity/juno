@@ -1,6 +1,6 @@
 # 2026-06-27 — Athena Health Part 1: GCS Dataset Feature
 
-Three sub-projects covering the full lifecycle of moving preset datasets to Google Cloud Storage, serving them on demand, and integrating live Athena Health EHR data.
+Five sub-projects covering the full lifecycle of moving preset datasets to Google Cloud Storage, serving them on demand, integrating live Athena Health EHR data, and enforcing typed manifest models end-to-end.
 
 ## Sub-Projects
 
@@ -10,6 +10,7 @@ Three sub-projects covering the full lifecycle of moving preset datasets to Goog
 | SP2 | On-Demand Pipeline Download & Cleanup | 02-on-demand-pipeline-download/PRD.md | Draft | SP1 |
 | SP3 | Athena Health Integration | 03-athena-health-integration/PRD.md | Draft | SP2 |
 | SP4 | Unified Error Control Model | 04-error-control-model/PRD.md | Draft | SP2 (uses error codes from SP2 contract) |
+| SP5 | Athena Manifest Models | 05-manifest-models/PRD.md | Draft | SP3 (after SP3 Tasks 1, 2, 6 — manifest files on disk, datasets route) |
 
 ## Investigation Artifacts
 - [Error Handling Investigation](error-handling-investigation.md) — 2026-06-27 audit of error handling inconsistencies that motivated SP4
@@ -20,11 +21,13 @@ Three sub-projects covering the full lifecycle of moving preset datasets to Goog
 SP1: GCS Infrastructure & Manifest
   └─► SP2: On-Demand Pipeline Download
         └─► SP3: Athena Health Integration
+        │     └─► SP5: Athena Manifest Models (after SP3 Tasks 1, 2, 6)
         └─► SP4: Unified Error Control Model (parallel with SP3; adds Athena codes SP3 will reference)
 ```
 
 SP1 must be deployed (and dataset files uploaded to GCS) before SP2 goes live.
 SP3 can be developed in parallel with SP1/SP2 but requires SP2's worker pattern to be deployed before SP3 ships (the `execute_job()` dispatch block in worker.py requires SP2's `gcs_batch_dataset` branch structure already present).
+SP5 depends on SP3 Tasks 1 and 2 (manifest JSON files committed to `backend/data/`) and SP3 Task 6 (the `GET /care_plan/datasets` route returning `athena_sources`); it can be developed concurrently with later SP3 tasks.
 
 ## Locked Decisions
 
