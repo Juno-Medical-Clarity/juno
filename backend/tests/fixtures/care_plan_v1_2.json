@@ -114,5 +114,6 @@
     "text": "Original clinical note text.",
     "simplified_text": "Simplified note text.",
     "clarified_text": "Clarified patient instructions."
-  }
+  },
+  "additional_info": []
 }

@@ -35,8 +35,8 @@ def _mock_get_response(body: dict):
 
 def test_get_token_success(client, monkeypatch):
     """get_token() calls POST /oauth2/v1/token and returns access_token."""
-    monkeypatch.setenv("ATHENA_HEALTH_CLIENT_ID", "cid")
-    monkeypatch.setenv("ATHENA_HEALTH_CLIENT_SECRET", "csec")
+    monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_ID", "cid")
+    monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_SECRET", "csec")
     with patch("utils.athena_client.requests.post", return_value=_mock_token_response("tok1")) as mock_post:
         token = client.get_token()
     assert token == "tok1"
@@ -48,8 +48,8 @@ def test_get_token_success(client, monkeypatch):
 
 def test_get_token_cached_within_ttl(client, monkeypatch):
     """get_token() called twice within TTL makes only one HTTP call."""
-    monkeypatch.setenv("ATHENA_HEALTH_CLIENT_ID", "cid")
-    monkeypatch.setenv("ATHENA_HEALTH_CLIENT_SECRET", "csec")
+    monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_ID", "cid")
+    monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_SECRET", "csec")
     with patch("utils.athena_client.requests.post", return_value=_mock_token_response("tok_cached")) as mock_post:
         t1 = client.get_token()
         t2 = client.get_token()
@@ -59,8 +59,8 @@ def test_get_token_cached_within_ttl(client, monkeypatch):
 
 def test_get_token_refresh_when_expiry_within_buffer(client, monkeypatch):
     """get_token() refreshes when fewer than TOKEN_REFRESH_BUFFER_S seconds remain."""
-    monkeypatch.setenv("ATHENA_HEALTH_CLIENT_ID", "cid")
-    monkeypatch.setenv("ATHENA_HEALTH_CLIENT_SECRET", "csec")
+    monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_ID", "cid")
+    monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_SECRET", "csec")
     client._token = "old_token"
     client._token_expires_at = time.time() + 10  # 10s < 20s buffer
     with patch("utils.athena_client.requests.post", return_value=_mock_token_response("new_token")) as mock_post:

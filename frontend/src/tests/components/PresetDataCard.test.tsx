@@ -32,7 +32,7 @@ beforeEach(() => {
 
 describe('PresetDataCard', () => {
   it('card renders header with Choose toggle; body hidden by default', () => {
-    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue([]);
+    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue({ datasets: [], athena_sources: [] });
 
     render(<PresetDataCard onSelectionChange={() => {}} />);
 
@@ -52,7 +52,7 @@ describe('PresetDataCard', () => {
   });
 
   it('after datasets load left sidebar renders one tab per group', async () => {
-    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue(mockDatasets);
+    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue({ datasets: mockDatasets, athena_sources: [] });
 
     const user = userEvent.setup();
     render(<PresetDataCard onSelectionChange={() => {}} />);
@@ -65,7 +65,7 @@ describe('PresetDataCard', () => {
   });
 
   it('first dataset tab is auto-selected; right panel renders', async () => {
-    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue(mockDatasets);
+    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue({ datasets: mockDatasets, athena_sources: [] });
 
     const user = userEvent.setup();
     render(<PresetDataCard onSelectionChange={() => {}} />);
@@ -82,7 +82,7 @@ describe('PresetDataCard', () => {
   });
 
   it('clicking second tab switches panel to second dataset', async () => {
-    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue(mockDatasets);
+    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue({ datasets: mockDatasets, athena_sources: [] });
 
     const user = userEvent.setup();
     render(<PresetDataCard onSelectionChange={() => {}} />);
@@ -101,7 +101,7 @@ describe('PresetDataCard', () => {
   });
 
   it('tab meta shows 0/N when nothing selected', async () => {
-    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue(mockDatasets);
+    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue({ datasets: mockDatasets, athena_sources: [] });
 
     const user = userEvent.setup();
     render(<PresetDataCard onSelectionChange={() => {}} />);
@@ -117,10 +117,10 @@ describe('PresetDataCard', () => {
   });
 
   it('header summary shows default text when nothing selected', () => {
-    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue([]);
+    (listDatasets as ReturnType<typeof vi.fn>).mockResolvedValue({ datasets: [], athena_sources: [] });
 
     render(<PresetDataCard onSelectionChange={() => {}} />);
 
-    expect(screen.getByText('Select repository datasets for batch runs.')).toBeInTheDocument();
+    expect(screen.getByText('Select repository datasets or Athena records for batch runs.')).toBeInTheDocument();
   });
 });
