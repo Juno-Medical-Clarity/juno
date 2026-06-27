@@ -301,5 +301,5 @@ def test_execute_job_download_failure_marks_job_failed(
 
     assert resp.status_code == 500
     mock_fail.assert_called_once()
-    # gcs_temp_dir was never set (assignment raised), so cleanup is NOT called
-    mock_cleanup.assert_not_called()
+    # cleanup IS called even when download raises, to remove any partial temp dirs
+    mock_cleanup.assert_called_once_with("job-1")
