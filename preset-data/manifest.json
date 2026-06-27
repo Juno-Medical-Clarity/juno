@@ -4256,5 +4256,1924 @@
         }
       }
     }
+  ],
+  "athena_sources": [
+    {
+      "source_kind": "athena_encounter",
+      "label": "Athena \u2014 Encounters",
+      "tab_id": "athena-encounter",
+      "preview_entry_id": "p60183_e62021",
+      "entries": [
+        {
+          "id": "p1_e40717",
+          "label": "Patient 1 \u2014 Encounter 40717",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "40717",
+          "api_path": "/v1/195900/chart/encounters/40717/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1_e40718",
+          "label": "Patient 1 \u2014 Encounter 40718",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "40718",
+          "api_path": "/v1/195900/chart/encounters/40718/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1_e40730",
+          "label": "Patient 1 \u2014 Encounter 40730",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "40730",
+          "api_path": "/v1/195900/chart/encounters/40730/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1_e40752",
+          "label": "Patient 1 \u2014 Encounter 40752",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "40752",
+          "api_path": "/v1/195900/chart/encounters/40752/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1_e40753",
+          "label": "Patient 1 \u2014 Encounter 40753",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "40753",
+          "api_path": "/v1/195900/chart/encounters/40753/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1_e40754",
+          "label": "Patient 1 \u2014 Encounter 40754",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "40754",
+          "api_path": "/v1/195900/chart/encounters/40754/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1_e40764",
+          "label": "Patient 1 \u2014 Encounter 40764",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "40764",
+          "api_path": "/v1/195900/chart/encounters/40764/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1_e41901",
+          "label": "Patient 1 \u2014 Encounter 41901",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "41901",
+          "api_path": "/v1/195900/chart/encounters/41901/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1_e41952",
+          "label": "Patient 1 \u2014 Encounter 41952",
+          "practice_id": "195900",
+          "patient_id": "1",
+          "encounter_id": "41952",
+          "api_path": "/v1/195900/chart/encounters/41952/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p30_e39227",
+          "label": "Patient 30 \u2014 Encounter 39227",
+          "practice_id": "195900",
+          "patient_id": "30",
+          "encounter_id": "39227",
+          "api_path": "/v1/195900/chart/encounters/39227/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p30_e39295",
+          "label": "Patient 30 \u2014 Encounter 39295",
+          "practice_id": "195900",
+          "patient_id": "30",
+          "encounter_id": "39295",
+          "api_path": "/v1/195900/chart/encounters/39295/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p108_e39267",
+          "label": "Patient 108 \u2014 Encounter 39267",
+          "practice_id": "195900",
+          "patient_id": "108",
+          "encounter_id": "39267",
+          "api_path": "/v1/195900/chart/encounters/39267/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e61635",
+          "label": "Patient 811 \u2014 Encounter 61635",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "61635",
+          "api_path": "/v1/195900/chart/encounters/61635/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e61636",
+          "label": "Patient 811 \u2014 Encounter 61636",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "61636",
+          "api_path": "/v1/195900/chart/encounters/61636/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e61637",
+          "label": "Patient 811 \u2014 Encounter 61637",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "61637",
+          "api_path": "/v1/195900/chart/encounters/61637/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e62515",
+          "label": "Patient 811 \u2014 Encounter 62515",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "62515",
+          "api_path": "/v1/195900/chart/encounters/62515/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e62516",
+          "label": "Patient 811 \u2014 Encounter 62516",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "62516",
+          "api_path": "/v1/195900/chart/encounters/62516/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e62802",
+          "label": "Patient 811 \u2014 Encounter 62802",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "62802",
+          "api_path": "/v1/195900/chart/encounters/62802/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e62803",
+          "label": "Patient 811 \u2014 Encounter 62803",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "62803",
+          "api_path": "/v1/195900/chart/encounters/62803/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e62804",
+          "label": "Patient 811 \u2014 Encounter 62804",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "62804",
+          "api_path": "/v1/195900/chart/encounters/62804/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e63090",
+          "label": "Patient 811 \u2014 Encounter 63090",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "63090",
+          "api_path": "/v1/195900/chart/encounters/63090/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e63091",
+          "label": "Patient 811 \u2014 Encounter 63091",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "63091",
+          "api_path": "/v1/195900/chart/encounters/63091/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e63387",
+          "label": "Patient 811 \u2014 Encounter 63387",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "63387",
+          "api_path": "/v1/195900/chart/encounters/63387/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e63388",
+          "label": "Patient 811 \u2014 Encounter 63388",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "63388",
+          "api_path": "/v1/195900/chart/encounters/63388/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e63678",
+          "label": "Patient 811 \u2014 Encounter 63678",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "63678",
+          "api_path": "/v1/195900/chart/encounters/63678/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p811_e63679",
+          "label": "Patient 811 \u2014 Encounter 63679",
+          "practice_id": "195900",
+          "patient_id": "811",
+          "encounter_id": "63679",
+          "api_path": "/v1/195900/chart/encounters/63679/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1313_e41113",
+          "label": "Patient 1313 \u2014 Encounter 41113",
+          "practice_id": "195900",
+          "patient_id": "1313",
+          "encounter_id": "41113",
+          "api_path": "/v1/195900/chart/encounters/41113/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1313_e41323",
+          "label": "Patient 1313 \u2014 Encounter 41323",
+          "practice_id": "195900",
+          "patient_id": "1313",
+          "encounter_id": "41323",
+          "api_path": "/v1/195900/chart/encounters/41323/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p1313_e54290",
+          "label": "Patient 1313 \u2014 Encounter 54290",
+          "practice_id": "195900",
+          "patient_id": "1313",
+          "encounter_id": "54290",
+          "api_path": "/v1/195900/chart/encounters/54290/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p2441_e39329",
+          "label": "Patient 2441 \u2014 Encounter 39329",
+          "practice_id": "195900",
+          "patient_id": "2441",
+          "encounter_id": "39329",
+          "api_path": "/v1/195900/chart/encounters/39329/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p2742_e63913",
+          "label": "Patient 2742 \u2014 Encounter 63913",
+          "practice_id": "195900",
+          "patient_id": "2742",
+          "encounter_id": "63913",
+          "api_path": "/v1/195900/chart/encounters/63913/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p2793_e40719",
+          "label": "Patient 2793 \u2014 Encounter 40719",
+          "practice_id": "195900",
+          "patient_id": "2793",
+          "encounter_id": "40719",
+          "api_path": "/v1/195900/chart/encounters/40719/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p2793_e40720",
+          "label": "Patient 2793 \u2014 Encounter 40720",
+          "practice_id": "195900",
+          "patient_id": "2793",
+          "encounter_id": "40720",
+          "api_path": "/v1/195900/chart/encounters/40720/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p2793_e40721",
+          "label": "Patient 2793 \u2014 Encounter 40721",
+          "practice_id": "195900",
+          "patient_id": "2793",
+          "encounter_id": "40721",
+          "api_path": "/v1/195900/chart/encounters/40721/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p2793_e40722",
+          "label": "Patient 2793 \u2014 Encounter 40722",
+          "practice_id": "195900",
+          "patient_id": "2793",
+          "encounter_id": "40722",
+          "api_path": "/v1/195900/chart/encounters/40722/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p2793_e40723",
+          "label": "Patient 2793 \u2014 Encounter 40723",
+          "practice_id": "195900",
+          "patient_id": "2793",
+          "encounter_id": "40723",
+          "api_path": "/v1/195900/chart/encounters/40723/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p3232_e39232",
+          "label": "Patient 3232 \u2014 Encounter 39232",
+          "practice_id": "195900",
+          "patient_id": "3232",
+          "encounter_id": "39232",
+          "api_path": "/v1/195900/chart/encounters/39232/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4404_e42352",
+          "label": "Patient 4404 \u2014 Encounter 42352",
+          "practice_id": "195900",
+          "patient_id": "4404",
+          "encounter_id": "42352",
+          "api_path": "/v1/195900/chart/encounters/42352/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4404_e42354",
+          "label": "Patient 4404 \u2014 Encounter 42354",
+          "practice_id": "195900",
+          "patient_id": "4404",
+          "encounter_id": "42354",
+          "api_path": "/v1/195900/chart/encounters/42354/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4404_e42487",
+          "label": "Patient 4404 \u2014 Encounter 42487",
+          "practice_id": "195900",
+          "patient_id": "4404",
+          "encounter_id": "42487",
+          "api_path": "/v1/195900/chart/encounters/42487/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4404_e42488",
+          "label": "Patient 4404 \u2014 Encounter 42488",
+          "practice_id": "195900",
+          "patient_id": "4404",
+          "encounter_id": "42488",
+          "api_path": "/v1/195900/chart/encounters/42488/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4404_e42541",
+          "label": "Patient 4404 \u2014 Encounter 42541",
+          "practice_id": "195900",
+          "patient_id": "4404",
+          "encounter_id": "42541",
+          "api_path": "/v1/195900/chart/encounters/42541/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4404_e42542",
+          "label": "Patient 4404 \u2014 Encounter 42542",
+          "practice_id": "195900",
+          "patient_id": "4404",
+          "encounter_id": "42542",
+          "api_path": "/v1/195900/chart/encounters/42542/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4405_e42141",
+          "label": "Patient 4405 \u2014 Encounter 42141",
+          "practice_id": "195900",
+          "patient_id": "4405",
+          "encounter_id": "42141",
+          "api_path": "/v1/195900/chart/encounters/42141/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4405_e42172",
+          "label": "Patient 4405 \u2014 Encounter 42172",
+          "practice_id": "195900",
+          "patient_id": "4405",
+          "encounter_id": "42172",
+          "api_path": "/v1/195900/chart/encounters/42172/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4405_e42173",
+          "label": "Patient 4405 \u2014 Encounter 42173",
+          "practice_id": "195900",
+          "patient_id": "4405",
+          "encounter_id": "42173",
+          "api_path": "/v1/195900/chart/encounters/42173/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4406_e42137",
+          "label": "Patient 4406 \u2014 Encounter 42137",
+          "practice_id": "195900",
+          "patient_id": "4406",
+          "encounter_id": "42137",
+          "api_path": "/v1/195900/chart/encounters/42137/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4406_e42138",
+          "label": "Patient 4406 \u2014 Encounter 42138",
+          "practice_id": "195900",
+          "patient_id": "4406",
+          "encounter_id": "42138",
+          "api_path": "/v1/195900/chart/encounters/42138/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4406_e42139",
+          "label": "Patient 4406 \u2014 Encounter 42139",
+          "practice_id": "195900",
+          "patient_id": "4406",
+          "encounter_id": "42139",
+          "api_path": "/v1/195900/chart/encounters/42139/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4406_e42140",
+          "label": "Patient 4406 \u2014 Encounter 42140",
+          "practice_id": "195900",
+          "patient_id": "4406",
+          "encounter_id": "42140",
+          "api_path": "/v1/195900/chart/encounters/42140/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p4406_e42174",
+          "label": "Patient 4406 \u2014 Encounter 42174",
+          "practice_id": "195900",
+          "patient_id": "4406",
+          "encounter_id": "42174",
+          "api_path": "/v1/195900/chart/encounters/42174/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p6788_e39429",
+          "label": "Patient 6788 \u2014 Encounter 39429",
+          "practice_id": "195900",
+          "patient_id": "6788",
+          "encounter_id": "39429",
+          "api_path": "/v1/195900/chart/encounters/39429/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p7436_e40049",
+          "label": "Patient 7436 \u2014 Encounter 40049",
+          "practice_id": "195900",
+          "patient_id": "7436",
+          "encounter_id": "40049",
+          "api_path": "/v1/195900/chart/encounters/40049/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p7437_e40102",
+          "label": "Patient 7437 \u2014 Encounter 40102",
+          "practice_id": "195900",
+          "patient_id": "7437",
+          "encounter_id": "40102",
+          "api_path": "/v1/195900/chart/encounters/40102/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p7623_e40243",
+          "label": "Patient 7623 \u2014 Encounter 40243",
+          "practice_id": "195900",
+          "patient_id": "7623",
+          "encounter_id": "40243",
+          "api_path": "/v1/195900/chart/encounters/40243/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p7744_e40333",
+          "label": "Patient 7744 \u2014 Encounter 40333",
+          "practice_id": "195900",
+          "patient_id": "7744",
+          "encounter_id": "40333",
+          "api_path": "/v1/195900/chart/encounters/40333/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p7744_e40410",
+          "label": "Patient 7744 \u2014 Encounter 40410",
+          "practice_id": "195900",
+          "patient_id": "7744",
+          "encounter_id": "40410",
+          "api_path": "/v1/195900/chart/encounters/40410/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p7744_e40411",
+          "label": "Patient 7744 \u2014 Encounter 40411",
+          "practice_id": "195900",
+          "patient_id": "7744",
+          "encounter_id": "40411",
+          "api_path": "/v1/195900/chart/encounters/40411/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p7744_e40412",
+          "label": "Patient 7744 \u2014 Encounter 40412",
+          "practice_id": "195900",
+          "patient_id": "7744",
+          "encounter_id": "40412",
+          "api_path": "/v1/195900/chart/encounters/40412/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p7744_e40443",
+          "label": "Patient 7744 \u2014 Encounter 40443",
+          "practice_id": "195900",
+          "patient_id": "7744",
+          "encounter_id": "40443",
+          "api_path": "/v1/195900/chart/encounters/40443/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p8188_e48200",
+          "label": "Patient 8188 \u2014 Encounter 48200",
+          "practice_id": "195900",
+          "patient_id": "8188",
+          "encounter_id": "48200",
+          "api_path": "/v1/195900/chart/encounters/48200/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p8188_e51234",
+          "label": "Patient 8188 \u2014 Encounter 51234",
+          "practice_id": "195900",
+          "patient_id": "8188",
+          "encounter_id": "51234",
+          "api_path": "/v1/195900/chart/encounters/51234/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p8188_e58910",
+          "label": "Patient 8188 \u2014 Encounter 58910",
+          "practice_id": "195900",
+          "patient_id": "8188",
+          "encounter_id": "58910",
+          "api_path": "/v1/195900/chart/encounters/58910/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p8188_e59093",
+          "label": "Patient 8188 \u2014 Encounter 59093",
+          "practice_id": "195900",
+          "patient_id": "8188",
+          "encounter_id": "59093",
+          "api_path": "/v1/195900/chart/encounters/59093/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p8188_e59094",
+          "label": "Patient 8188 \u2014 Encounter 59094",
+          "practice_id": "195900",
+          "patient_id": "8188",
+          "encounter_id": "59094",
+          "api_path": "/v1/195900/chart/encounters/59094/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p8188_e61373",
+          "label": "Patient 8188 \u2014 Encounter 61373",
+          "practice_id": "195900",
+          "patient_id": "8188",
+          "encounter_id": "61373",
+          "api_path": "/v1/195900/chart/encounters/61373/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p8188_e61464",
+          "label": "Patient 8188 \u2014 Encounter 61464",
+          "practice_id": "195900",
+          "patient_id": "8188",
+          "encounter_id": "61464",
+          "api_path": "/v1/195900/chart/encounters/61464/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p8265_e40380",
+          "label": "Patient 8265 \u2014 Encounter 40380",
+          "practice_id": "195900",
+          "patient_id": "8265",
+          "encounter_id": "40380",
+          "api_path": "/v1/195900/chart/encounters/40380/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p12613_e48748",
+          "label": "Patient 12613 \u2014 Encounter 48748",
+          "practice_id": "195900",
+          "patient_id": "12613",
+          "encounter_id": "48748",
+          "api_path": "/v1/195900/chart/encounters/48748/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p12613_e49575",
+          "label": "Patient 12613 \u2014 Encounter 49575",
+          "practice_id": "195900",
+          "patient_id": "12613",
+          "encounter_id": "49575",
+          "api_path": "/v1/195900/chart/encounters/49575/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p12613_e49576",
+          "label": "Patient 12613 \u2014 Encounter 49576",
+          "practice_id": "195900",
+          "patient_id": "12613",
+          "encounter_id": "49576",
+          "api_path": "/v1/195900/chart/encounters/49576/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p12613_e49728",
+          "label": "Patient 12613 \u2014 Encounter 49728",
+          "practice_id": "195900",
+          "patient_id": "12613",
+          "encounter_id": "49728",
+          "api_path": "/v1/195900/chart/encounters/49728/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p29956_e41051",
+          "label": "Patient 29956 \u2014 Encounter 41051",
+          "practice_id": "195900",
+          "patient_id": "29956",
+          "encounter_id": "41051",
+          "api_path": "/v1/195900/chart/encounters/41051/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p29956_e41052",
+          "label": "Patient 29956 \u2014 Encounter 41052",
+          "practice_id": "195900",
+          "patient_id": "29956",
+          "encounter_id": "41052",
+          "api_path": "/v1/195900/chart/encounters/41052/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p33909_e41252",
+          "label": "Patient 33909 \u2014 Encounter 41252",
+          "practice_id": "195900",
+          "patient_id": "33909",
+          "encounter_id": "41252",
+          "api_path": "/v1/195900/chart/encounters/41252/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p34023_e41268",
+          "label": "Patient 34023 \u2014 Encounter 41268",
+          "practice_id": "195900",
+          "patient_id": "34023",
+          "encounter_id": "41268",
+          "api_path": "/v1/195900/chart/encounters/41268/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p34527_e41306",
+          "label": "Patient 34527 \u2014 Encounter 41306",
+          "practice_id": "195900",
+          "patient_id": "34527",
+          "encounter_id": "41306",
+          "api_path": "/v1/195900/chart/encounters/41306/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p45690_e61375",
+          "label": "Patient 45690 \u2014 Encounter 61375",
+          "practice_id": "195900",
+          "patient_id": "45690",
+          "encounter_id": "61375",
+          "api_path": "/v1/195900/chart/encounters/61375/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p58781_e61194",
+          "label": "Patient 58781 \u2014 Encounter 61194",
+          "practice_id": "195900",
+          "patient_id": "58781",
+          "encounter_id": "61194",
+          "api_path": "/v1/195900/chart/encounters/61194/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p62960_e63309",
+          "label": "Patient 62960 \u2014 Encounter 63309",
+          "practice_id": "195900",
+          "patient_id": "62960",
+          "encounter_id": "63309",
+          "api_path": "/v1/195900/chart/encounters/63309/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p64302_e63896",
+          "label": "Patient 64302 \u2014 Encounter 63896",
+          "practice_id": "195900",
+          "patient_id": "64302",
+          "encounter_id": "63896",
+          "api_path": "/v1/195900/chart/encounters/63896/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p64370_e63882",
+          "label": "Patient 64370 \u2014 Encounter 63882",
+          "practice_id": "195900",
+          "patient_id": "64370",
+          "encounter_id": "63882",
+          "api_path": "/v1/195900/chart/encounters/63882/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p64656_e63974",
+          "label": "Patient 64656 \u2014 Encounter 63974",
+          "practice_id": "195900",
+          "patient_id": "64656",
+          "encounter_id": "63974",
+          "api_path": "/v1/195900/chart/encounters/63974/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p64656_e64215",
+          "label": "Patient 64656 \u2014 Encounter 64215",
+          "practice_id": "195900",
+          "patient_id": "64656",
+          "encounter_id": "64215",
+          "api_path": "/v1/195900/chart/encounters/64215/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p66812_e64229",
+          "label": "Patient 66812 \u2014 Encounter 64229",
+          "practice_id": "195900",
+          "patient_id": "66812",
+          "encounter_id": "64229",
+          "api_path": "/v1/195900/chart/encounters/64229/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p66812_e64275",
+          "label": "Patient 66812 \u2014 Encounter 64275",
+          "practice_id": "195900",
+          "patient_id": "66812",
+          "encounter_id": "64275",
+          "api_path": "/v1/195900/chart/encounters/64275/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p60183_e62021",
+          "label": "Gary 78yo M \u2014 Chest Pain / Dyspnea",
+          "practice_id": "195900",
+          "patient_id": "60183",
+          "encounter_id": "62021",
+          "api_path": "/v1/195900/chart/encounters/62021/summary",
+          "is_preview": true,
+          "preview_content": "PatientName SANDBOXTEST, GARY (78yo, M) ID# 60183 Appt. Date/Time 11/10/2025 01:00PM DOB 04/18/1948 Service Dept. Cruickshank HEALTH CARE Provider BRICKER, ADAM Insurance Med Primary: CIGNA HEALTHCARE (HMO) Insurance # : TEST123456 Chief ComplaintNone recorded.VitalsNone recorded.AllergiesAMIODARONE: Other (Severe) - increase Liver Function Tests LEXAPRO: Rash (Mild) PHENERGAN: Other (Moderate severity) - dystonic reaction MedicationsName Date Source Abilify 5 mg tablet Take 1 tablet(s) every day by oral route. 12/29/15\u00a0\u00a0\u00a0entered INTF-114612150 allopurinol 100 mg tablet Take 1 tablet(s) 3 times a day by oral route. 12/29/15\u00a0\u00a0\u00a0entered INTF-114612150 atorvastatin 40 mg tablet Take 1 tablet(s) every day by oral route., start 09/18/2016 09/18/16\u00a0\u00a0\u00a0started INTF-114612150 buPROPion HCl SR 150 mg tablet,12 hr sustained-release Take 1 tablet(s) twice a day by oral route. 12/29/15\u00a0\u00a0\u00a0entered INTF-114612150 cloNIDine HCl 0.1 mg tablet Take 1 tablet(s) twice a day by oral route. 12/29/15\u00a0\u00a0\u00a0entered INTF-114612150 Exforge 10 mg-320 mg tablet Take 1 tablet(s) every day by oral route., start 12/17/2016 12/17/16\u00a0\u00a0\u00a0started INTF-114612150 gabapentin 300 mg capsule Take 1 capsule(s) every day by oral route at bedtime. 01/07/16\u00a0\u00a0\u00a0entered INTF-114612150 Sotalol AF 80 mg tablet Take 1 tablet(s) twice a day by oral route. 12/29/15\u00a0\u00a0\u00a0entered INTF-114612150 zolpidem 10 mg tablet Take 1 tablet(s) every day by oral route at bedtime. 12/29/15\u00a0\u00a0\u00a0entered INTF-114612150 VaccinesVaccine Type Date Amt. Route Site NDC Lot\u00a0# Mfr. Exp. Date VIS VIS Given Vaccinator COVID-19 COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose (Pfizer-BioNTech) 10/27/25  0.3 mL Intramuscular Deltoid, Left FF2588 Pfizer, Inc Diphtheria, Tetanus Td(adult) 09/19/13  999 Influenza influenza, injectable, quadrivalent, preservative free 10/02/23  0.5 mL Intramuscular Deltoid, Left 946605 Seqirus influenza, seasonal, injectable 09/18/17  999 Problems Hyperlipidemia - Onset: 08/08/2016  Gout - Onset: 09/20/2018  Depressive disorder - Onset: 08/08/2016  Restless legs syndrome - Onset: 08/08/2016  Essential hypertension - Onset: 08/08/2016  Coronary atherosclerosis - Onset: 08/08/2016 - RCA stent, LAD disease  Congenital anomaly of peripheral blood vessel - Onset: 08/08/2016  Patient post percutaneous transluminal coronary angioplasty - Onset: 08/08/2016  Anxiety - Onset: 09/20/2018  Diverticular disease of colon - Onset: 08/08/2016 Social HistoryGender Identity and LGBTQ IdentityGender identity: Identifies as Male Assigned sex at birth: Male Pronouns: he/him Sexual orientation: Bisexual ScreeningNone recorded.ROS None recorded.Physical ExamNone recorded.Assessment / Plan1. Chest pain R07.9: Chest pain, unspecified INTERVENTIONAL CARDIOLOGY REFERRAL Reason for Referral: Chest pain, unspecified INTERVENTIONAL CARDIOLOGY REFERRAL Reason for Referral: Chest pain and shortness of breath requiring interventional cardiology assessment CARDIOLOGIST REFERRAL Reason for Referral: Chest pain, unspecified INTE"
+        },
+        {
+          "id": "p60183_e61456",
+          "label": "Gary 78yo M \u2014 Encounter 61456",
+          "practice_id": "195900",
+          "patient_id": "60183",
+          "encounter_id": "61456",
+          "api_path": "/v1/195900/chart/encounters/61456/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p60178_e62281",
+          "label": "Donna 41F \u2014 Encounter 62281",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "encounter_id": "62281",
+          "api_path": "/v1/195900/chart/encounters/62281/summary",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "p60178_e62283",
+          "label": "Donna 41F \u2014 Encounter 62283",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "encounter_id": "62283",
+          "api_path": "/v1/195900/chart/encounters/62283/summary",
+          "is_preview": false,
+          "preview_content": null
+        }
+      ]
+    },
+    {
+      "source_kind": "athena_clinical_doc",
+      "label": "Athena \u2014 Clinical Docs",
+      "tab_id": "athena-clinical-doc",
+      "preview_entry_id": "60178_204552",
+      "entries": [
+        {
+          "id": "60178_204457",
+          "label": "Donna 41F \u2014 Doc 204457",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204457",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204457",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204458",
+          "label": "Donna 41F \u2014 Doc 204458",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204458",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204458",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204460",
+          "label": "Donna 41F \u2014 Doc 204460",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204460",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204460",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204461",
+          "label": "Donna 41F \u2014 Doc 204461",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204461",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204461",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204462",
+          "label": "Donna 41F \u2014 Doc 204462",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204462",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204462",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204463",
+          "label": "Donna 41F \u2014 Doc 204463",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204463",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204463",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204464",
+          "label": "Donna 41F \u2014 Doc 204464",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204464",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204464",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204465",
+          "label": "Donna 41F \u2014 Doc 204465",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204465",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204465",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204466",
+          "label": "Donna 41F \u2014 Doc 204466",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204466",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204466",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204467",
+          "label": "Donna 41F \u2014 Doc 204467",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204467",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204467",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204468",
+          "label": "Donna 41F \u2014 Doc 204468",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204468",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204468",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204469",
+          "label": "Donna 41F \u2014 Doc 204469",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204469",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204469",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204470",
+          "label": "Donna 41F \u2014 Doc 204470",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204470",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204470",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204471",
+          "label": "Donna 41F \u2014 Doc 204471",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204471",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204471",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204473",
+          "label": "Donna 41F \u2014 Doc 204473",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204473",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204473",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204485",
+          "label": "Donna 41F \u2014 Doc 204485",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204485",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204485",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204486",
+          "label": "Donna 41F \u2014 Doc 204486",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204486",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204486",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204487",
+          "label": "Donna 41F \u2014 Doc 204487",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204487",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204487",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204488",
+          "label": "Donna 41F \u2014 Doc 204488",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204488",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204488",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204489",
+          "label": "Donna 41F \u2014 Doc 204489",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204489",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204489",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204493",
+          "label": "Donna 41F \u2014 Doc 204493",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204493",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204493",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204494",
+          "label": "Donna 41F \u2014 Doc 204494",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204494",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204494",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204495",
+          "label": "Donna 41F \u2014 Doc 204495",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204495",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204495",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204496",
+          "label": "Donna 41F \u2014 Doc 204496",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204496",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204496",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204497",
+          "label": "Donna 41F \u2014 Doc 204497",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204497",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204497",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204505",
+          "label": "Donna 41F \u2014 Doc 204505",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204505",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204505",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204508",
+          "label": "Donna 41F \u2014 Doc 204508",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204508",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204508",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204520",
+          "label": "Donna 41F \u2014 Doc 204520",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204520",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204520",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204521",
+          "label": "Donna 41F \u2014 Doc 204521",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204521",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204521",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204522",
+          "label": "Donna 41F \u2014 Doc 204522",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204522",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204522",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204523",
+          "label": "Donna 41F \u2014 Doc 204523",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204523",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204523",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204524",
+          "label": "Donna 41F \u2014 Doc 204524",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204524",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204524",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204525",
+          "label": "Donna 41F \u2014 Doc 204525",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204525",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204525",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204529",
+          "label": "Donna 41F \u2014 Doc 204529",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204529",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204529",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204530",
+          "label": "Donna 41F \u2014 Doc 204530",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204530",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204530",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204531",
+          "label": "Donna 41F \u2014 Doc 204531",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204531",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204531",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204533",
+          "label": "Donna 41F \u2014 Doc 204533",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204533",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204533",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204534",
+          "label": "Donna 41F \u2014 Doc 204534",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204534",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204534",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204535",
+          "label": "Donna 41F \u2014 Doc 204535",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204535",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204535",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204550",
+          "label": "Donna 41F \u2014 Doc 204550",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204550",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204550",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204551",
+          "label": "Donna 41F \u2014 Doc 204551",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204551",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204551",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204552",
+          "label": "Donna 41F \u2014 Doc 204552",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204552",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204552",
+          "is_preview": true,
+          "preview_content": "Reason for Appointment\n1. Urgent evaluation of hemodynamic instability and erratic blood pressure readings (ranging 120/70 to 160/90 mmHg).\n2. Critical medication safety review regarding **Critical Safety Discrepancies** (High probability of pregnancy with teratogenic agent use: Paroxetine + Prenatal Vitamins + Hyperemesis gravidarum history).\n3. Optimization of Mild Intermittent Asthma (Guideline-Directed Medical Therapy gaps regarding SABA monotherapy).\n4. Health maintenance review (Vaccination and cancer screening gaps).\n\nHistory of Present Illness\nDonna Sandboxtest is a 41-year-old female presenting for urgent follow-up and care coordination following a series of indirect encounters between 11/19/2025 and 11/28/2025. Review of clinical documentation reveals significant hemodynamic instability, with home blood pressure readings exhibiting substantial lability, fluctuating between 120/70 mmHg and 160/90 mmHg (most recent high recorded 2025-09-09). This variability necessitates rigorous evaluation to rule out hypertensive urgency versus a reactive stress response. The patient reports vague somatic symptoms but denies acute chest pain or dyspnea.\n\nA comprehensive review of the medication profile and active problem list identifies a **High Priority Clinical Alert** and **Critical Safety Discrepancy**. The patient is currently prescribed Paroxetine (Paxil) 10 mg daily while concurrently taking Prenatal Vitamins, and \"Hyperemesis gravidarum\" appears on her active condition list. This constellation strongly implies active or early pregnancy status. Paroxetine is an FDA Category D agent associated with an increased risk of congenital cardiac malformations (specifically atrial and ventricular septal defects). Immediate verification of pregnancy status via quantitative beta-hCG is required to mitigate teratogenic risk and guide psychopharmacologic transition to Sertraline if indicated.\n\nAdditionally, the patient\u2019s respiratory status requires optimization. She has a history"
+        },
+        {
+          "id": "60178_204553",
+          "label": "Donna 41F \u2014 Doc 204553",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204553",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204553",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204554",
+          "label": "Donna 41F \u2014 Doc 204554",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204554",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204554",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204555",
+          "label": "Donna 41F \u2014 Doc 204555",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204555",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204555",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204556",
+          "label": "Donna 41F \u2014 Doc 204556",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204556",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204556",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204557",
+          "label": "Donna 41F \u2014 Doc 204557",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204557",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204557",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204564",
+          "label": "Donna 41F \u2014 Doc 204564",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204564",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204564",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204565",
+          "label": "Donna 41F \u2014 Doc 204565",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204565",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204565",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204649",
+          "label": "Donna 41F \u2014 Doc 204649",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204649",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204649",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204650",
+          "label": "Donna 41F \u2014 Doc 204650",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204650",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204650",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204651",
+          "label": "Donna 41F \u2014 Doc 204651",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204651",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204651",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204661",
+          "label": "Donna 41F \u2014 Doc 204661",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204661",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204661",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204662",
+          "label": "Donna 41F \u2014 Doc 204662",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204662",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204662",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204663",
+          "label": "Donna 41F \u2014 Doc 204663",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204663",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204663",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204731",
+          "label": "Donna 41F \u2014 Doc 204731",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204731",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204731",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204732",
+          "label": "Donna 41F \u2014 Doc 204732",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204732",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204732",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204733",
+          "label": "Donna 41F \u2014 Doc 204733",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204733",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204733",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204741",
+          "label": "Donna 41F \u2014 Doc 204741",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204741",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204741",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204742",
+          "label": "Donna 41F \u2014 Doc 204742",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204742",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204742",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204744",
+          "label": "Donna 41F \u2014 Doc 204744",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204744",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204744",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204745",
+          "label": "Donna 41F \u2014 Doc 204745",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204745",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204745",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204748",
+          "label": "Donna 41F \u2014 Doc 204748",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204748",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204748",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204749",
+          "label": "Donna 41F \u2014 Doc 204749",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204749",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204749",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204849",
+          "label": "Donna 41F \u2014 Doc 204849",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204849",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204849",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204851",
+          "label": "Donna 41F \u2014 Doc 204851",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204851",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204851",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204853",
+          "label": "Donna 41F \u2014 Doc 204853",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204853",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204853",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204855",
+          "label": "Donna 41F \u2014 Doc 204855",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204855",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204855",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204878",
+          "label": "Donna 41F \u2014 Doc 204878",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204878",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204878",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204879",
+          "label": "Donna 41F \u2014 Doc 204879",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204879",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204879",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204880",
+          "label": "Donna 41F \u2014 Doc 204880",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204880",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204880",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204881",
+          "label": "Donna 41F \u2014 Doc 204881",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204881",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204881",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204882",
+          "label": "Donna 41F \u2014 Doc 204882",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204882",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204882",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204883",
+          "label": "Donna 41F \u2014 Doc 204883",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204883",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204883",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204884",
+          "label": "Donna 41F \u2014 Doc 204884",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204884",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204884",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204908",
+          "label": "Donna 41F \u2014 Doc 204908",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204908",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204908",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204914",
+          "label": "Donna 41F \u2014 Doc 204914",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204914",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204914",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204915",
+          "label": "Donna 41F \u2014 Doc 204915",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204915",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204915",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204916",
+          "label": "Donna 41F \u2014 Doc 204916",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204916",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204916",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204917",
+          "label": "Donna 41F \u2014 Doc 204917",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204917",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204917",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204918",
+          "label": "Donna 41F \u2014 Doc 204918",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204918",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204918",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204919",
+          "label": "Donna 41F \u2014 Doc 204919",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204919",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204919",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204925",
+          "label": "Donna 41F \u2014 Doc 204925",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204925",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204925",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204926",
+          "label": "Donna 41F \u2014 Doc 204926",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204926",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204926",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204927",
+          "label": "Donna 41F \u2014 Doc 204927",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204927",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204927",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204928",
+          "label": "Donna 41F \u2014 Doc 204928",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204928",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204928",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204930",
+          "label": "Donna 41F \u2014 Doc 204930",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204930",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204930",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204936",
+          "label": "Donna 41F \u2014 Doc 204936",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204936",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204936",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204937",
+          "label": "Donna 41F \u2014 Doc 204937",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204937",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204937",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204938",
+          "label": "Donna 41F \u2014 Doc 204938",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204938",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204938",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204939",
+          "label": "Donna 41F \u2014 Doc 204939",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204939",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204939",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60178_204940",
+          "label": "Donna 41F \u2014 Doc 204940",
+          "practice_id": "195900",
+          "patient_id": "60178",
+          "document_id": "204940",
+          "api_path": "/v1/195900/patients/60178/documents/clinicaldocument/204940",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60179_204934",
+          "label": "Sandbox Patient 60179 \u2014 Doc 204934",
+          "practice_id": "195900",
+          "patient_id": "60179",
+          "document_id": "204934",
+          "api_path": "/v1/195900/patients/60179/documents/clinicaldocument/204934",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60179_204935",
+          "label": "Sandbox Patient 60179 \u2014 Doc 204935",
+          "practice_id": "195900",
+          "patient_id": "60179",
+          "document_id": "204935",
+          "api_path": "/v1/195900/patients/60179/documents/clinicaldocument/204935",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60180_204750",
+          "label": "Sandbox Patient 60180 \u2014 Doc 204750",
+          "practice_id": "195900",
+          "patient_id": "60180",
+          "document_id": "204750",
+          "api_path": "/v1/195900/patients/60180/documents/clinicaldocument/204750",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60180_204751",
+          "label": "Sandbox Patient 60180 \u2014 Doc 204751",
+          "practice_id": "195900",
+          "patient_id": "60180",
+          "document_id": "204751",
+          "api_path": "/v1/195900/patients/60180/documents/clinicaldocument/204751",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60181_205151",
+          "label": "Sandbox Patient 60181 \u2014 Doc 205151",
+          "practice_id": "195900",
+          "patient_id": "60181",
+          "document_id": "205151",
+          "api_path": "/v1/195900/patients/60181/documents/clinicaldocument/205151",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60181_205152",
+          "label": "Sandbox Patient 60181 \u2014 Doc 205152",
+          "practice_id": "195900",
+          "patient_id": "60181",
+          "document_id": "205152",
+          "api_path": "/v1/195900/patients/60181/documents/clinicaldocument/205152",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60182_206206",
+          "label": "Sandbox Patient 60182 \u2014 Doc 206206",
+          "practice_id": "195900",
+          "patient_id": "60182",
+          "document_id": "206206",
+          "api_path": "/v1/195900/patients/60182/documents/clinicaldocument/206206",
+          "is_preview": false,
+          "preview_content": null
+        },
+        {
+          "id": "60182_206240",
+          "label": "Sandbox Patient 60182 \u2014 Doc 206240",
+          "practice_id": "195900",
+          "patient_id": "60182",
+          "document_id": "206240",
+          "api_path": "/v1/195900/patients/60182/documents/clinicaldocument/206240",
+          "is_preview": false,
+          "preview_content": null
+        }
+      ],
+      "sandbox_note": "These 100 SOAP-note clinical documents are from the Athena sandbox. Patient 60178 (Donna) is the primary sandbox patient; patients 60179-60182 have 2 documents each."
+    }
   ]
 }

@@ -102,6 +102,28 @@ def test_list_datasets_missing_manifest(tmp_path, monkeypatch):
     assert result == []
 
 
+def test_list_athena_sources_returns_from_manifest(tmp_path, monkeypatch):
+    """list_athena_sources() returns the athena_sources array from manifest."""
+    import utils.preset_data as pd
+    fixture = dict(FIXTURE_MANIFEST)
+    fixture["athena_sources"] = [{"source_kind": "athena_encounter", "label": "Test"}]
+    p = tmp_path / "manifest.json"
+    p.write_text(json.dumps(fixture), encoding="utf-8")
+    pd._manifest_cache = None
+    monkeypatch.setattr(pd, "MANIFEST_PATH", p)
+    result = pd.list_athena_sources()
+    assert result == [{"source_kind": "athena_encounter", "label": "Test"}]
+    pd._manifest_cache = None
+
+
+def test_list_athena_sources_missing_key_returns_empty(manifest_file, monkeypatch):
+    """list_athena_sources() returns [] when athena_sources is absent from manifest."""
+    import utils.preset_data as pd
+    monkeypatch.setattr(pd, "MANIFEST_PATH", manifest_file)
+    result = pd.list_athena_sources()
+    assert result == []
+
+
 def test_manifest_cache(manifest_file, monkeypatch):
     """list_datasets() only opens the manifest file once across multiple calls."""
     import utils.preset_data as pd

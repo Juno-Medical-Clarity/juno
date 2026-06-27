@@ -26,6 +26,15 @@ def _is_group_dir(path: Path) -> bool:
 
 
 def generate_manifest(preset_data_dir: Path, output_path: Path) -> None:
+    existing_athena_sources = []
+    if output_path.is_file():
+        with output_path.open("r", encoding="utf-8") as f:
+            try:
+                existing_manifest = json.load(f)
+                existing_athena_sources = existing_manifest.get("athena_sources", [])
+            except Exception:
+                pass
+
     groups = sorted(
         p for p in preset_data_dir.iterdir() if _is_group_dir(p)
     )
@@ -74,6 +83,7 @@ def generate_manifest(preset_data_dir: Path, output_path: Path) -> None:
         "bucket": "juno-preset-data",
         "gcs_prefix": "preset-data",
         "datasets": datasets,
+        "athena_sources": existing_athena_sources,
     }
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

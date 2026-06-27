@@ -51,6 +51,15 @@ def list_datasets() -> list[dict]:
     ]
 
 
+def list_athena_sources() -> list[dict]:
+    """Return Athena source manifests from the unified manifest."""
+    try:
+        manifest = _load_manifest()
+    except RuntimeError:
+        return []
+    return manifest.get("athena_sources", [])
+
+
 def read_dataset_file(group: str, input_id: str, filename: str) -> bytes:
     """
     Return file content as bytes.
