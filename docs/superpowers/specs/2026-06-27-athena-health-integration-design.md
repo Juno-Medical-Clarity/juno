@@ -323,6 +323,140 @@ additional_info?: string[];
 
 ---
 
+## Athena API Data Models / Contract
+
+These models are the contract between Juno and Athena Health. Any change to Athena's API response shape must be reflected here first.
+
+### Backend Python models (`backend/models/athena.py`)
+
+```python
+from pydantic import BaseModel, ConfigDict
+
+class AthenaTokenRequest(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    client_id: str
+    client_secret: str
+    grant_type: str = "client_credentials"
+    scope: str
+
+class AthenaTokenResponse(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    access_token: str
+    token_type: str
+    expires_in: int
+
+class AthenaEncounterSummaryRequest(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    practice_id: str
+    encounter_id: str
+
+class AthenaEncounterSummaryResponse(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    summaryhtml: str
+
+class AthenaClinicalDocumentMeta(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    clinicaldocumentid: int
+    patientid: int
+    documentdescription: str
+    documentclass: str
+    status: str
+    internalnote: str | None = None
+    createddatetime: str | None = None
+    documentsource: str | None = None
+    documentroute: str | None = None
+
+class AthenaClinicalDocumentListRequest(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    practice_id: str
+    patient_id: str
+    department_id: str | None = None
+    limit: int = 200
+    offset: int = 0
+
+class AthenaClinicalDocumentListResponse(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    clinicaldocuments: list[AthenaClinicalDocumentMeta]
+    totalcount: int | None = None
+
+class AthenaClinicalDocumentContentRequest(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    practice_id: str
+    patient_id: str
+    document_id: str
+
+class AthenaClinicalDocumentContentResponse(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    documentdata: str | None = None
+    pages: list[dict] | None = None
+
+# Future / deferred (SP4)
+class AthenaPushDocumentRequest(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    practice_id: str
+    patient_id: str
+    department_id: str
+    attachment_contents: str  # base64
+    attachment_type: str
+    document_subclass: str = "JUNO_SUMMARY"
+    internal_note: str
+
+class AthenaPushDocumentResponse(BaseModel):
+    model_config = ConfigDict(extra="allow")
+    clinicaldocumentid: int
+    success: bool | None = None
+```
+
+### Frontend TypeScript interfaces (`frontend/src/types/athena.ts`)
+
+```typescript
+interface AthenaTokenResponse {
+  access_token: string;
+  token_type: string;
+  expires_in: number;
+  [key: string]: unknown;
+}
+
+interface AthenaEncounterSummaryResponse {
+  summaryhtml: string;
+  [key: string]: unknown;
+}
+
+interface AthenaClinicalDocumentMeta {
+  clinicaldocumentid: number;
+  patientid: number;
+  documentdescription: string;
+  documentclass: string;
+  status: string;
+  internalnote?: string;
+  createddatetime?: string;
+  documentsource?: string;
+  documentroute?: string;
+  [key: string]: unknown;
+}
+
+interface AthenaClinicalDocumentListResponse {
+  clinicaldocuments: AthenaClinicalDocumentMeta[];
+  totalcount?: number;
+  [key: string]: unknown;
+}
+
+interface AthenaClinicalDocumentContentResponse {
+  documentdata?: string;
+  pages?: Array<{ pageid?: number; [key: string]: unknown }>;
+  [key: string]: unknown;
+}
+
+// Future / deferred (SP4)
+interface AthenaPushDocumentResponse {
+  clinicaldocumentid: number;
+  success?: boolean;
+  [key: string]: unknown;
+}
+```
+
+---
+
 ## 5. Key Algorithms
 
 ### 5.1 OAuth2 Token Caching (`AthenaClient`)

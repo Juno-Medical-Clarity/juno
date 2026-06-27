@@ -7,6 +7,38 @@
 
 ---
 
+### Task 0 — Create Athena data model contract files
+
+**No dependencies — must be completed before all other tasks.**
+
+- **Files:**
+  - `/root/projects/juno/backend/models/athena.py` *(new file)*
+  - `/root/projects/juno/frontend/src/types/athena.ts` *(new file)*
+
+- **Changes:**
+
+  Create `backend/models/athena.py` with Pydantic v2 `BaseModel` classes for all Athena API requests and responses. All models use `model_config = ConfigDict(extra="allow")` so unknown fields from Athena don't fail validation.
+
+  Models to create:
+  - `AthenaTokenRequest`, `AthenaTokenResponse` — OAuth2 token flow
+  - `AthenaEncounterSummaryRequest`, `AthenaEncounterSummaryResponse` — encounter summary fetch
+  - `AthenaClinicalDocumentMeta` — single doc metadata item (from list endpoint)
+  - `AthenaClinicalDocumentListRequest`, `AthenaClinicalDocumentListResponse` — list endpoint
+  - `AthenaClinicalDocumentContentRequest`, `AthenaClinicalDocumentContentResponse` — content fetch
+  - `AthenaPushDocumentRequest`, `AthenaPushDocumentResponse` — push back (future/SP4)
+
+  Create `frontend/src/types/athena.ts` with TypeScript interfaces mirroring the above models.
+
+- **Acceptance criteria:**
+  ```bash
+  python -c "from models.athena import (AthenaTokenRequest, AthenaTokenResponse, AthenaEncounterSummaryRequest, AthenaEncounterSummaryResponse, AthenaClinicalDocumentMeta, AthenaClinicalDocumentListRequest, AthenaClinicalDocumentListResponse, AthenaClinicalDocumentContentRequest, AthenaClinicalDocumentContentResponse, AthenaPushDocumentRequest, AthenaPushDocumentResponse); print('OK')"
+  ```
+  Run from `backend/`. Must print `OK` with no import errors.
+
+  Also verify `frontend/src/types/athena.ts` exists and contains `AthenaClinicalDocumentMeta`.
+
+---
+
 ### Task 1 — Create `backend/data/athena-encounters-manifest.json`
 
 **Traced to PRD §4-C**

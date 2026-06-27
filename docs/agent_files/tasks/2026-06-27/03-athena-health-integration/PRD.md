@@ -41,6 +41,17 @@ Two obstacles exist:
 
 ## 4. Architecture Decisions
 
+### New files (data model contract)
+
+| File | Purpose |
+|------|---------|
+| `backend/models/athena.py` | Pydantic v2 models for all Athena API requests and responses |
+| `frontend/src/types/athena.ts` | TypeScript interfaces mirroring the backend Athena models |
+
+The `AthenaClient` in `backend/utils/athena_client.py` imports from `backend/models/athena.py` for type-annotated request/response handling.
+
+---
+
 ### A. New file: `backend/utils/athena_client.py`
 
 **Full interface:**
@@ -859,3 +870,75 @@ No new test files for SP3 (existing Vitest coverage does not include PresetDataC
 
 **Q9: Does the `datasets` key name change in the API response?**
 [RESOLVED: The existing `datasets` key is preserved unchanged. `athena_sources` is a new top-level key. No breaking change to existing frontend consumers that read `datasets`.]
+
+---
+
+## § Athena Data Models
+
+These are the typed model definitions for all Athena Health API interactions. Both files must be created before any other SP3 implementation task.
+
+### `backend/models/athena.py` (Pydantic v2)
+
+```python
+# Auth
+class AthenaTokenRequest(BaseModel):
+    client_id: str; client_secret: str; grant_type: str = "client_credentials"; scope: str
+
+class AthenaTokenResponse(BaseModel):
+    access_token: str; token_type: str; expires_in: int
+
+# Encounters
+class AthenaEncounterSummaryRequest(BaseModel):
+    practice_id: str; encounter_id: str
+
+class AthenaEncounterSummaryResponse(BaseModel):
+    summaryhtml: str
+
+# Clinical Documents (list)
+class AthenaClinicalDocumentMeta(BaseModel):
+    clinicaldocumentid: int; patientid: int; documentdescription: str
+    documentclass: str; status: str; internalnote: str | None = None
+    createddatetime: str | None = None; documentsource: str | None = None
+    documentroute: str | None = None
+
+class AthenaClinicalDocumentListRequest(BaseModel):
+    practice_id: str; patient_id: str; department_id: str | None = None
+    limit: int = 200; offset: int = 0
+
+class AthenaClinicalDocumentListResponse(BaseModel):
+    clinicaldocuments: list[AthenaClinicalDocumentMeta]; totalcount: int | None = None
+
+# Clinical Document content
+class AthenaClinicalDocumentContentRequest(BaseModel):
+    practice_id: str; patient_id: str; document_id: str
+
+class AthenaClinicalDocumentContentResponse(BaseModel):
+    documentdata: str | None = None; pages: list[dict] | None = None
+
+# Push back (future/deferred SP4)
+class AthenaPushDocumentRequest(BaseModel):
+    practice_id: str; patient_id: str; department_id: str
+    attachment_contents: str; attachment_type: str
+    document_subclass: str = "JUNO_SUMMARY"; internal_note: str
+
+class AthenaPushDocumentResponse(BaseModel):
+    clinicaldocumentid: int; success: bool | None = None
+```
+
+All models use `model_config = ConfigDict(extra="allow")`.
+
+### `frontend/src/types/athena.ts` (TypeScript)
+
+```typescript
+interface AthenaTokenResponse { access_token: string; token_type: string; expires_in: number; }
+interface AthenaEncounterSummaryResponse { summaryhtml: string; [key: string]: unknown; }
+interface AthenaClinicalDocumentMeta {
+  clinicaldocumentid: number; patientid: number; documentdescription: string;
+  documentclass: string; status: string; internalnote?: string;
+  createddatetime?: string; documentsource?: string; documentroute?: string;
+  [key: string]: unknown;
+}
+interface AthenaClinicalDocumentListResponse { clinicaldocuments: AthenaClinicalDocumentMeta[]; totalcount?: number; }
+interface AthenaClinicalDocumentContentResponse { documentdata?: string; pages?: Array<{ pageid?: number; [key: string]: unknown }>; }
+interface AthenaPushDocumentResponse { clinicaldocumentid: number; success?: boolean; }
+```
