@@ -1,0 +1,4 @@
+Guest_family: Hello Doctor. I am from High Hope assisted living center. I am Mister Rath's assigned assistant.
+Doctor: Right. What brings you here?
+Guest_family: I got some of Mister Rath's food diary sheets here. He has already lost fifteen pounds in the last three months. We were just wondering if he needed to lose anymore.
+Doctor: Let me have a look.

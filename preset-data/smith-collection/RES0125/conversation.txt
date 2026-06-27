@@ -1,0 +1,246 @@
+# Smith Collection Transcript: RES0125
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Hi im um im just so i am here because i have this cough that ive had for the past um week and a half and im just uh i usually dont come in with symptoms this minor but because its because were in the middle of a pandemic i thought i should come in and get checked out
+
+Doctor: Okay yeah so its been going on for like more than a week um can you describe to me what kind of cough youre having is it like a wet cough or a dry cough
+
+Patient: Its a dry cough
+
+Doctor: Okay and has it been getting worse over the over the time period you described
+
+Patient: um its kind of the same
+
+Doctor: Its the same um have you noticed although its like dry have you brought up any kind of sputum or phlegm at all
+
+Patient: um no not not not recently but yeah in the first couple of days the first two three days
+
+Doctor: Okay um and have you noticed any kind of yellowish to greenish tinge to it
+
+Patient: No it was watery
+
+Doctor: Watery okay have you noticed at all any blood have you been coughing up any blood at all
+
+Patient: uh no
+
+Doctor: Okay and is your cough like constant or does it come and go
+
+Patient: um kind of comes and goes theres just times when im coughing a lot and then it just goes away
+
+Doctor: Okay and is there a pattern to it like uh do you cough more when youre exerting yourself or any time a certain time of the day
+
+Patient: um its worse when im smoking
+
+Doctor: When youre smoking okay and uh how long do those episodes last
+
+Patient: Couple of seconds maybe
+
+Doctor: Okay and has this happened to you before at all
+
+Patient: Yeah i think um yeah i usually dont pay much attention to it you know i think must have happened last year or the year before it just kind of goes away on its own
+
+Doctor: Okay and is there any anything that makes it better or worse
+
+Patient: um i um i take this cough syrup over the counter syrup that helps
+
+Doctor: Okay and um have you found that its been helping over like to help improve your cough over the last few days
+
+Patient: It goes away for a couple hours and then it comes back
+
+Doctor: I see does it keep keep you up at night at all
+
+Patient: No no no
+
+Doctor: No okay are you having any other symptoms like shortness of breath um sore throat runny nose anything like that
+
+Patient: uh i kind of had those symptoms in those first two three days but then it went away and then i only had this cough that stayed
+
+Doctor: Okay okay and have you been in contact with anyone thats been sick around you at all
+
+Patient: um my daughter had the sniffles
+
+Doctor: When was that
+
+Patient: Last two weeks ago
+
+Doctor: Two weeks ago okay and uh how is she now like did it just go away on its own or did she have to go to the doctor
+
+Patient: um no it kind of went away on its own
+
+Doctor: Okay have you traveled at all recently outside of the province or the country
+
+Patient: No
+
+Doctor: No okay and besides the cough are you having any headaches at all
+
+Patient: No
+
+Doctor: Any nausea or vomiting
+
+Patient: No
+
+Doctor: Any fevers or chills
+
+Patient: Not anymore
+
+Doctor: Not anymore when was the last time that you had fevers or chills
+
+Patient: I think i had like a very it must have been 374 um in the first two three days but it got better really quickly
+
+Doctor: Okay i see any night sweats
+
+Patient: No
+
+Doctor: No okay any um do you feel tired throughout the day
+
+Patient: Not anymore
+
+Doctor: Not anymore okay so any kind of chest pain or sensation that your heart is racing
+
+Patient: No
+
+Doctor: No any dizziness or fainting spell
+
+Patient: No
+
+Doctor: Any changes in your bowel movements at all
+
+Patient: um no
+
+Doctor: No so no constipation diarrhea
+
+Patient: No
+
+Doctor: Okay any changes in your urination
+
+Patient: No
+
+Doctor: No okay um have you had to miss work at all or do you currently work
+
+Patient: Yeah but ive been working from home
+
+Doctor: Okay
+
+Patient: I didnt have to miss work so
+
+Doctor: Okay and any changes in your sleep or appetite
+
+Patient: No
+
+Doctor: Okay any loss of sense of taste or smell at all
+
+Patient: um initially i guess the coughs first few days my nose was a little stuffy so yeah i couldnt smell very well but since then its been fine
+
+Doctor: Okay but no loss of taste
+
+Patient: No loss of taste no
+
+Doctor: Okay uh any recent significant changes to your weight at all over the last few months
+
+Patient: No
+
+Doctor: Okay um and any exposure in your home environment to dust fumes any animals in the household
+
+Patient: No
+
+Doctor: Okay and otherwise uh do you have any medical conditions that youve been diagnosed with in the past
+
+Patient: uh no im pretty healthy
+
+Doctor: Pretty healthy okay any allergies either to medications or environmental
+
+Patient: um im allergic to penicillin
+
+Doctor: To penicillin okay and what kind of reaction do you get to penicillin
+
+Patient: um i was told that i got a rash when i was a child i dont really remember
+
+Doctor: Okay and do you take any medications on a regular basis
+
+Patient: No
+
+Doctor: No okay and have you been hospitalized in the past or had any surgeries
+
+Patient: um i had my appendix removed about um five years ago
+
+Doctor: Five years ago okay any complications at all after that
+
+Patient: No
+
+Doctor: Okay any family history of any lung conditions heart conditions any cancers at all
+
+Patient: um colon cancer
+
+Doctor: Colon cancer
+
+Patient: Yeah my dad and my grandfather had it
+
+Doctor: Okay um and have you have you had any scopes done recently at all
+
+Patient: Oh yeah i had mine done uh seven years ago
+
+Doctor: Seven years ago okay and were there any findings at all
+
+Patient: No
+
+Doctor: No okay um currently so you work from home so whats your home and living situation like who do you live with and where do you live in like a house appartment
+
+Patient: uh i live in an apartment with my wife and my daughter
+
+Doctor: Okay uh and uh do they have any symptoms at all or are they are they fine
+
+Patient: Well my daughter doesnt have any symptoms anymore she did as i mentioned have some flu like symptoms 2 weeks ago my wifes been healthy
+
+Doctor: Okay and uh does your daughter go to school right now or is she doing school from home
+
+Patient: uh school from home
+
+Doctor: School from home okay um and do you at all smoke so you mentioned your symptoms get worse with smoking
+
+Patient: Yeah
+
+Doctor: um how much would you say you smoke on an average day
+
+Patient: um i dont i try ive been trying to cut down so i i smoke about 3 or 4 cigarettes a week i used to smoke a lot more before
+
+Doctor: Wow yeah thats really good thats really great progress um its really difficult to quit but its great to see that youre trying to quit um so how much would you say you used to smoke
+
+Patient: Well half a pack um half a pack a day but then over the past three years ive been trying to cut it down i started smoking when i was 20 so its been um 30 years now
+
+Doctor: Okay so 30 years okay and um are you just are you using anything to help you quit smoking or are you doing it without any medications or um like have you used anything in the past that has worked for you
+
+Patient: um no i i went to my doc and he said to try on my own first and if im struggling with it to come back but ive been doing it very gradually so its its going well
+
+Doctor: Okay and thats really good and yeah if you at all need any resources to help you quit smoking its great that youre doing really well but if you need to talk more about it or need any more resources we can provide that for you um other than uh smoking cigarettes do you use any recreational drugs like marijuana at all
+
+Patient: No
+
+Doctor: No how about alcohol
+
+Patient: uh i just drink on the weekends maybe a glass or two of wine
+
+Doctor: Okay and uh yeah so those were kind of all the questions i had for you today do you have any questions or concerns
+
+Patient: No
+
+Doctor: No
+
+Patient: I was i guess i was just worried about the cough um its just i was worried that it could be covid
+
+Doctor: Yeah so definitely right now any of these symptoms like covican have a lot of different symptoms um so we should definitely make sure that we to check if you have covior not and well get a coviswab test done for you today and the results will come back in 24 to 48 hours uh and in that time you will need to isolate even in your own home try to wear a mask around your family members um trying to eat separately and use all those methods and and then after the test comes back you may youll be contacted by public health if its positive and kind of given more instruction on what to do and it doesnt necessarily have to be covieither it can be just another virus uh like it can be just your common cold thats been going on so it does seem that your symptoms have gotten better oftentimes uh a cough can be the last thing to go it can take up to two weeks or more for the cough to get relieved but it seems that youre not having any systemic symptoms like no fevers or anything else right now so its its uh thats thats pretty good
+
+Patient: Great im glad
+
+Doctor: Alright yeah
+
+Patient: Thank you
+
+Doctor: Youre welcome take care

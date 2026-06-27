@@ -1,0 +1,3 @@
+Doctor: As per your chart, I see you have C O P D and hypertension.
+Patient: Yes that is right.
+Doctor: Okay.

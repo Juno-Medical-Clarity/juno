@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1077  |  gem_id: gem-cochrane-simplification-train-1078  |  doi: 10.1002/14651858.CD008411.pub2
+
+In this review we were interested in whether giving babies sugar-based solutions to taste when the needle breaks the skin will help reduce their pain. We found 14 separate studies that had asked this question. However, the differences between the studies were often too great to let us combine their findings. Overall, the studies show that different types of sugar-based solutions were effective but we were not able to confidently assert that there is strong evidence for this treatment in reducing pain. We did find some evidence that babies may not cry for as long if given sugar-based solutions. This review is broadly in agreement with two other reviews, one asking this question in younger children, and one in older children. There is a need for better studies in this field.

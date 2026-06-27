@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3136  |  gem_id: gem-cochrane-simplification-train-3137  |  doi: 10.1002/14651858.CD006812.pub3
+
+In addition, radiotherapy to the abdomen was not associated with improved survival, as we found in one trial that there was no difference in the risk of death and disease progression in women who received whole abdominal irradiation and chemotherapy, after adjustment for age and stage of disease. Previous studies have shown that doxorubicin, despite being established in the treatment of uterine carcinoma, does not seem to be highly active. Adverse events were comprehensively reported for the comparisons of combination therapy and ifosfamide and whole body irradiation and chemotherapy. More women experienced side effects when they received combination therapy than ifosamide alone and chemotherapy than whole body irradiation. The effect of therapy on quality of life was not reported in any of the trials.

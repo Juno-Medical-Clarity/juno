@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0048  |  gem_id: gem-cochrane-simplification-test-49  |  doi: 10.1002/14651858.CD004034.pub3
+
+We found four trials suitable for analysing the effectiveness of blood pressure lowering for preventing development of cognitive impairment and dementia. However, for several reasons, including the differing methodologies of the trials, the number of drop-outs from the trials, and active treatment of subjects in the control groups, we were unable to assess definitively the effectiveness of antihypertensive treatments for preventing cognitive impairment and dementia in people with no evidence of previous cerebrovascular disease.

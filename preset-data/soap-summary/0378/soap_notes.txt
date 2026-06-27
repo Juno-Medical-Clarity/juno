@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0378
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Dizziness
+- Severity: Not specified
+- Duration: A few months
+- Associated symptoms: None mentioned
+- Relevant medical history: Sister experienced similar dizziness
+- Family history: No migraines or cancer reported; family generally healthy
+- Allergies: None mentioned
+- Other concerns: Patient is here for a check-up regarding dizziness
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

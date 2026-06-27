@@ -1,0 +1,4 @@
+Doctor: Do you drink?
+Patient: Oh, I do but occasionally. Who doesn't like a nice cocktail!
+Doctor: Okay. How about cigarettes, do you smoke?
+Patient: No, I don't smoke.

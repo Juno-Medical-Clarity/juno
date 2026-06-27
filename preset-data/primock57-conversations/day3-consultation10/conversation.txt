@@ -1,0 +1,191 @@
+# PriMock57 Consultation Transcript: day3_consultation10
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Patient: Hello.
+
+Doctor: Hello, hi, I'm Doctor Jacob and welcome to Babylon. Hello.
+
+Patient: Nice to meet you.
+
+Doctor: [unintelligible] Nice to meet you too. So just before we start, is it all right if you could confirm your name for me please?
+
+Patient: Michael John [unintelligible].
+
+Doctor: And your date of birth?
+
+Patient: Oh nine two nine eighty-three.
+
+Doctor: OK, and your address for me please.
+
+Patient: Two three one, Leonard, London street uh, sorry, London.
+
+Doctor: OK and that's correct, and just to confirm that you're in a secure location and we can have a confidential conversation.
+
+Patient: Yes.
+
+Doctor: OK, uh, you've mentioned on our notes that you're suffering from bad diarrhea. I'm sorry to hear about it. So if you tell me a bit more about it, please.
+
+Patient: Uh, it's been happening for about, three days now? Um, yeah it, started off uh, was, I don't know it's just something that I thought would go away pretty quickly.
+
+Doctor: OK. [unintelligible]
+
+Patient: [unintelligible] I've had that from time to time after eating certain types of food or going on certain travels, but, uh nothing funky in my diet and no travels recently, um and it just kinda kept up. I'm a bit confused as to what to do [unintelligible].
+
+Doctor: Mmm. Mm-hmm. So you haven't had anything from outside? Nothing dodgy anything [unintelligible]? No.
+
+Patient: No, no no no, just a little bit, yeah I I don't know I mean it's pretty standard diarrhoea, where it's was like a little bit of abdominal pain. I threw up once, [unintelligible] that was a little worrying, uh.
+
+Doctor: [unintelligible] Mm-hmm. Repeat that please, that wasn't clear. What did you say?
+
+Patient: I threw up once, yeah.
+
+Doctor: [unintelligible] After that we'd said something.
+
+Patient: Uh, nothing else was worrisome.
+
+Doctor: OK, right, and with the diarrhea, how many times a day are you going to the toilet?
+
+Patient: Uh, four to five.
+
+Doctor: Four to five times, yeah. And is there any? And it's like water? Is it like water or is it just loose?
+
+Patient: Uh, what do you mean?
+
+Doctor: Are you going like water? Or is it just, you know bit, bit of [unintelligible] solid stools, bit loose kind of thing?
+
+Patient: It probably depends on the time of day to be honest, [unintelligible].
+
+Doctor: Sure OK. Bit of both and is there any blood or mucus?
+
+Patient: No blood. What do you mean mucus?
+
+Doctor: It's like the snotty stuff.
+
+Patient: In the stool?
+
+Doctor: Yeah, it looks like snot [unintelligible].
+
+Patient: No.
+
+Doctor: No, so no mucus, OK. Any fever at all?
+
+Patient: Uh, maybe a little bit, but.
+
+Doctor: Mm-hmm.
+
+Patient: It hasn't been, that in particular hasn't been too worrying.
+
+Doctor: Are you still able to eat, and drink?
+
+Patient: Uh, a little bit of. Appetite loss I guess worse than normal, [unintelligible] but also not something I've, like I, if that was alone I wouldn't have, reached out.
+
+Doctor: OK. Sure. So but you're you're still able to drink quite a bit yeah? You're drinking plenty.
+
+Patient: Yeah yeah yeah.
+
+Doctor: OK. Excellent.
+
+Patient: Mostly it's been dry and red.
+
+Doctor: OK, and, um, what have you take, have you taken anything so far for the diarrhea?
+
+Patient: Nothing yet.
+
+Doctor: Nothing yet, OK. Anything for the abdominal pain?
+
+Patient: Uh, nothing yet.
+
+Doctor: OK. Right, and any [unintelligible] unfortunately we don't have any of your past medical history, is there anything you'd like to say?
+
+Patient: Uh, I. Probably I [unintelligible] I had asthma.
+
+Doctor: Mm-hmm.
+
+Patient: Um or, or I don't know I guess I still have it.
+
+Doctor: OK and uh, are you, any, uh, anything else other than asthma?
+
+Patient: Uh, my dad had hypertension.
+
+Doctor: OK.
+
+Patient: Has hypertension. Had hypertension. [unintelligible] Yeah he died of bowel cancer ten years ago.
+
+Doctor: Yeah [unintelligible]. Ohh dear, OK. Bowel cancer. Ten years ago. And how old was he when he died?
+
+Patient: Uh, sixty-two.
+
+Doctor: K, and um, you mentioned you had asthma, are you using any inhalers at all?
+
+Patient: Yes.
+
+Doctor: Which ones?
+
+Patient: Lexapro.
+
+Doctor: Sorry?
+
+Patient: Lexapro.
+
+Doctor: [unintelligible] Laxepro.
+
+Patient: Yes.
+
+Doctor: OK, not heard of it may. Is it like Salbutamol? Is it like a blue colour?
+
+Patient: Yellow.
+
+Doctor: Yellow, OK. I'll have to check that one, not sure. Laxepro. OK. Um, that's fine. Any other medication that you're using? [unintelligible] Over the counter, anything at all? [unintelligible] OK. Right. Any allergies?
+
+Patient: No. Nothing, yeah, nothing.
+
+Doctor: No allergies at all, righty [unintelligible]. Fine so, obviously, you know you just have diarrhea it's about four to five times a day. Um, you're still drinking plenty and you look like you're not dehydrated which is a good sign, OK? Um, when we start worrying about diarrhea is if you're going more than eight times a day. That means probably you are, you know, whatever you're eating is going straight through, OK? You still need to drink plenty of water because you're losing a lot of fluids.
+
+Patient: Mmm.
+
+Doctor: OK, when you go to the toilet. Um, things that one would advise is a soft diet. So avoid dairy, fish, meat, eggs, while you're having the diarrhea. Go, sorry?
+
+Patient: [unintelligible] Soft [unintelligible]. What is a soft diet? What does that [unintelligible]? Like, outside of, not those things, what do you mean by soft?
+
+Doctor: OK, so that will be like crackers, toast, jam, those kind of things that's easily digested. Like what we are good give babies yeah. When they start eating you give, simple food for babies. You don't give eggs or meat the first time they start feeding. So that's the kind of soft diet we're talking about, yeah? Once you are able to, you know keep most of it in, you can start off with some just boiled vegetables and mash. Once you're OK with that for about forty-eight hours then you can start having meat. So just don't have meat [unintelligible] once you feel like you're slightly better, because you might go back to square one again, all right?
+
+Patient: [unintelligible] What do you mean OK with that diet, like once?
+
+Doctor: [unintelligible] Forty-eight hours you're not having any diarrhea, you're fine then you can go and start having meat, egg, fish and all. So that [unintelligible].
+
+Patient: OK, [unintelligible] if if the diarrhoea is getting better but isn't getting, or do you want it to go away completely at that point, or if it's like trending upwards?
+
+Doctor: No, no, no [unintelligible] preferably just don't because, what why do we say this? It's because it takes much more time for meat to get digested. So because your gut flora, you know, the, the, the bacteria in your gut is not you know as it should be, it takes a bit more effort for one to digest these food. While it doesn't take that much of an effort to, you know digest mash and vegetables. Does that make sense?
+
+Patient: Yes.
+
+Doctor: Yeah? So, um, at the same time you could have some, although you can't [unintelligible] milk is not a good idea, yoghurts are a good idea because they are probiotics, it help to build up the normal, um gut, gut bacteria back. OK.
+
+Patient: OK.
+
+Doctor: So those kinda, now, things to look out for, if your diarrhoea doesn't go away in a week's time, or if you're passing blood, we need a stool sample, because that means you [unintelligible] you may have [unintelligible], um, some particular bugs that might need treatment with antibiotics.
+
+Patient: OK.
+
+Doctor: OK. If you're again, as I've mentioned previously if you're going about six to eight times a day, that means there's a high chance that, uh, you are, having [unintelligible] dehydration and you might need to go into hospital at that point in time. If that happens you get in touch with us again, all right?
+
+Patient: OK.
+
+Doctor: Any questions? You look a bit confused.
+
+Patient: No, that's it.
+
+Doctor: Yeah? OK and also you could get something called Dioralyte over the counter. So, it helps to uh, replenish your, the salts that you've been, that's lost through going to the toilet.
+
+Patient: OK.
+
+Doctor: OK? If you're a bit confused you know you can actually, uh, all this is all recorded in your app. So you can go back. I'll put that all in detail so if, you know I know sometimes it's a bit difficult to process everything, you can go back and read, read the notes.
+
+Patient: Perfect, that's great.
+
+Doctor: Is that OK? All right then, you take care.
+
+Patient: Bye.
+
+Doctor: Bye now, bye bye.

@@ -1,0 +1,20 @@
+source:      plos_biology
+side:        simple
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [6:7] 'abbr-medical' -> 'sRNAs'
+  [13:14] 'abbr-medical' -> 'mRNA'
+  [19:20] 'medical-jargon-google-easy' -> 'homology'
+  [23:24] 'abbr-medical' -> 'sRNAs'
+  [25:26] 'medical-jargon-google-hard' -> 'GlmY'
+  [27:28] 'medical-jargon-google-hard' -> 'GlmZ'
+  [38:40] 'medical-jargon-google-hard' -> 'glmS expression'
+  [41:42] 'medical-jargon-google-hard' -> 'GlmZ'
+  [44:46] 'medical-jargon-google-hard' -> 'glmS translation'
+  [50:51] 'abbr-medical' -> 'mRNA'
+  [54:55] 'medical-jargon-google-easy' -> 'translation'
+  [57:58] 'medical-jargon-google-hard' -> 'GlmY'
+  [62:63] 'medical-jargon-google-hard' -> 'GlmZ'
+  [69:71] 'medical-jargon-google-easy' -> 'direct activator'

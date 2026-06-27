@@ -1,0 +1,196 @@
+# Smith Collection Transcript: RES0194
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Hi i’ve come in today because i had this cough it started three days ago and since that time ive also started to have um these headaches and been feeling really kinda achy all over
+
+Doctor: OK so what what kind of started first to cough or the aches
+
+Patient: The cough started first
+
+Doctor: OK and is it dry cough or a wet cough
+
+Patient: Its dry
+
+Doctor: OK so youre not bringing up any sputum or blood or anything like that
+
+Patient: No im not coughing up any sputum or or blood
+
+Doctor: OK thats good and the muscle aches uh so were you doing anything recently like anything strenuous increased exercise lifting anything or any injuries at all recently
+
+Patient: No not nothing i can think of like that
+
+Doctor: OK and where are you getting your muscle aches
+
+Patient: Its like kind of all over the feel just generally achy
+
+Doctor: OK generally ache ok and are you getting any kind of headaches or anything like that
+
+Patient: Yeah ive had this headache as well its kind of come and gone a little bit over the last couple of days but had a little bit of a headache each day
+
+Doctor: OK and the headache where where is it exactly located
+
+Patient: I feel it right at the front of my my forehead kind of on both sides of my head it feels like a band just squeezing around
+
+Doctor: OK and um is it what kind of pain is it is it like aching pain is it kind of like a pulsating pain pressure like pain how would you describe it
+
+Patient: Its more like pressure
+
+Doctor: Pressure ok and have you do you are you are you someone that usually has headaches
+
+Patient: Every once in awhile but i mean i dont get them that often maybe when im sick or dont sleep very well
+
+Doctor: OK have you tried anything for your pains or headaches
+
+Patient: uh yeah i did take some tylenol and it it helps take that the eye drop a bit i tried some advil too its so mean that the headaches kind of come and gone a little bit but i think once that wears off it the headaches come back
+
+Doctor: OK and have you tried anything for your cough
+
+Patient: um no i havent tried anything for the cough
+
+Doctor: OK have you had any other symptoms like fevers or chills
+
+Patient: um i have i i have felt a little bit feverish yeah i havent had any chills though
+
+Doctor: OK and um when did you start feeling feverish
+
+Patient: um yeah maybe within the last couple of days as well
+
+Doctor: And did you manage to get a temperature at all
+
+Patient: uh no ive just felt really hot
+
+Doctor: OK uh any other symptoms like runny nose sore throat uh chest pain anything like that
+
+Patient: um no i haven’t uh had any any sore throat or chest pain no runny nose either
+
+Doctor: OK any shortness of breath
+
+Patient: No
+
+Doctor: OK any recent travel or contact with someone whos been ill
+
+Patient: um yeah i dont i dont think so i mean i i havent traveled anywhere im in in my nobody in my familys been sick at home
+
+Doctor: OK um any nausea or vomiting
+
+Patient: No
+
+Doctor: OK any loss of taste or smell
+
+Patient: um ah no
+
+Doctor: No any night sweats or fatigue
+
+Patient: I no no no
+
+Doctor: OK um any changes in your bowel movements like any diarrhea or constipation
+
+Patient: uh yeah i have had i actually had um you mentioned diarrhea for the past a day as well
+
+Doctor: OK a diarrhea for so just for the past day have you notice any changes in color or have you noticed any blood in it
+
+Patient: No blood in the stool im just its just been really loose
+
+Doctor: OK um have you had any foods recently that a that youve tried maybe like for the first time or have you eaten outside at all
+
+Patient: No its been pretty stable so yeah i havent had any changes like that
+
+Doctor: OK any changes in your appetite or weight
+
+Patient: Uhm ive been less hungry for sure yeah so i ive had a decreased appetite but my weights been stable recently so no changes in weight
+
+Doctor: OK and any exposure to fumes or dust or animals within your home environment or work environment
+
+Patient: No nothing like that
+
+Doctor: Uhm have you been diagnosed with any medical conditions
+
+Patient: No ive been healthy
+
+Doctor: OK uh do you take any medications
+
+Patient: No just i im a multi vitamin and vitamin d
+
+Doctor: OK any allergies to any medications at all
+
+Patient: No no allergies
+
+Doctor: OK any allergies to any environmental factors or foods
+
+Patient: I i do have an allergy to peanuts and so i carry an epipen for that but uh thats the only food
+
+Doctor: OK um and any hospitalizations or surgeries in the past
+
+Patient: um i did have surgery like an acl repair and repaired knee and knee surgery about 10 years ago and but that yeah thats the only surgery
+
+Doctor: OK any family history of any longer heart conditions
+
+Patient: uh my dad had high high blood pressure and my yeah my grandfather i had had lung cancer actually when he was in his 80s when he passed away from that and he was a smokers whole life
+
+Doctor: OK currently do you work at all
+
+Patient: Yeah i i have been working i work for a a pharmacy company so ive been having to go into the office sometimes to help kind of prepare stuff
+
+Doctor: OK and in your workplace have you notice anyone sick at all
+
+Patient: um no i dont think i don’t havent noticed anybody been whos been sick but weve been there have been other people who have been going into the office as well
+
+Doctor: OK and do you usually wear masks around other people
+
+Patient: Yeah weve been wearing masks and and there are cleaning protocols and distancing protocols as well trying to keep everybody safe
+
+Doctor: OK and since youve had these symptoms have you gone into work at all
+
+Patient: No no ive actually ive been off for the the last couple of days
+
+Doctor: OK
+
+Patient: Yeah ive just been been doing what i can from home
+
+Doctor: OK and whats your home situation like who do you live with
+
+Patient: Yeah so i live with my i live with my wife and we live in a townhouse just right in the city here
+
+Doctor: OK and has she been displaying any symptoms at all
+
+Patient: uh no she hasnt shes been been feeling good
+
+Doctor: OK thats good and currently do you smoke
+
+Patient: No im not a smoker
+
+Doctor: OK any recreational drugs like marijuana
+
+Patient: I will sometimes use like the cbor yeah like the oils but that thats it
+
+Doctor: OK and do you drink alcohol
+
+Patient: Yeah ill have a few beers on the weekend sometimes like but that thats thats about it maybe like 3 or 4 beers a week
+
+Doctor: Alright ok so yeah those are all the questions i had for you today do you have any questions at all
+
+Patient: Yeah i was just worried that it could be covid with how everythings going on and thats just sort of what i was wondering about today
+
+Doctor: Yeah so thats something we definitely want to rule out your symptoms definitely overlap with the cluster of symptoms that someone may get with covid so we will do a swab on you today and recommend that you isolate for two weeks until your symptoms have gone and the test result you will get you will get back in the next 24 to 48 hours and alongside your test results so you will also get further instructions from public health about whether or not you need another swab later on and when to return to work
+
+Patient: OK that yeah that sounds good thank you
+
+Doctor: Yeah no worries and it can definitely also be another viral infection as well even if its not covid in which case it just you just need to get some rest stay hydrated and let it take its course
+
+Patient: OK now that sounds that sounds good so it could be covid or like another viral illness
+
+Doctor: Yeah
+
+Patient: OK thank you
+
+Doctor: Welcome take care take care
+
+Patient: Hey

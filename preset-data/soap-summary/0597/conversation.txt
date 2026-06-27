@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0597
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you remember the name of the medication you are taking? I have two, but I do not remember their name or why I am taking it. That is fine, we will figure it out.

@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.7
+split:       dev
+
+jargon_spans:
+  [15:18] 'medical-jargon-google-easy' -> 'mental health disorders'

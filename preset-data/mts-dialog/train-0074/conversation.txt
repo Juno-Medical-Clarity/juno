@@ -1,0 +1,6 @@
+Doctor: Good afternoon, what gender do you identify with?
+Patient: Thank you for asking, I identify as a female.
+Doctor: Thank you. Do you know of any chronic illnesses?
+Patient: No, but can you give me some examples of what you mean?
+Doctor: Well, high blood pressure, osteoarthritis, diabetes, depression, anything like that ring any bells?
+Patient: Oh, no, I don't have anything like that.

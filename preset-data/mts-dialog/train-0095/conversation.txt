@@ -1,0 +1,7 @@
+Doctor: How about any breathing issues or asthma?
+Patient: Actually, I have a history of asthma.
+Doctor: Oh okay, and was it severe or mild?
+Patient: Well, it was not severe but still remarkable.
+Doctor: Hm, alright.  Anything else?
+Patient: Yes, I also struggled with a serious acne problem.
+Doctor: Got it.

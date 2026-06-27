@@ -1,0 +1,5 @@
+pmid:        1000139
+question:    8
+adaptation:  adaptation1
+title:       Clozapine versus perphenazine: the value of the biochemical mode of action of neuroleptics in predicting their therapeutic activity
+sentences:   7

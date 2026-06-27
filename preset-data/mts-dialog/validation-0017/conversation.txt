@@ -1,0 +1,13 @@
+Doctor: Hi there! I am Doctor Frankland.
+Patient: Hi. It is nice to meet you.
+Doctor: How are you today?
+Patient: I'm good.
+Doctor: Do you live at home with both of your parents?
+Patient: Yes.
+Doctor: What grade are you in?
+Patient: Firth grade.
+Doctor: Mom, is he in public school?
+Guest_family: Yes.
+Doctor: Is he enrolled in any special education classes?
+Guest_family: No. He is in all the regular mainstream classes.
+Doctor: Great!

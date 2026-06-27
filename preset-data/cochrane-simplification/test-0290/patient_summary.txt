@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0290  |  gem_id: gem-cochrane-simplification-test-291  |  doi: 10.1002/14651858.CD007784.pub2
+
+We looked at 50 studies published before June 2012 concerning statin treatment in over 45,000 people with CKD who did not need dialysis treatment. We found that statins reduced the risk of death and major heart-related events by 20%. Statin treatment was also found to be effective in reducing cardiac disease and death in people who have CKD but not heart disease. In these people, statin treatment reduced risks of heart attack by half. Statins have some potential harmful effects on liver and muscle function, and some cancers. We found that these issues were not analysed well in the studies we evaluated, and these effects are not well understood. Although use of statins did not clearly reduce risks of kidney disease progression, they can be recommended to reduce risks of death and heart-related events in people with early stages of kidney disease. However, the potential side-effects are uncertain, and need further study.

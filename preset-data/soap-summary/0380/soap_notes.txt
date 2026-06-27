@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0380
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not report any symptoms, concerns, or emotional states.
+- No relevant medical history, family history, or allergies mentioned.
+
+Objective:
+- Cardiac enzyme: negative
+- Blood urea nitrogen (BUN): within normal limits
+- Hydrogen: stable
+- Creatinine: within normal range
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

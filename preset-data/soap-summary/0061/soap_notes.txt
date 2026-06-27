@@ -1,0 +1,40 @@
+# SOAP Notes — Sample 0061
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with cough (onset 3 days ago, productive with yellowish-green sputum the size of a thumb tip, no blood, pus or froth, hacking in nature, worsening over the past few days, ongoing throughout the day and night, interrupting sleep) and shortness of breath (onset within the last day, severity 7/10, some wheezing when very short of breath, no positional or exertional exacerbation, interrupting sleep)
+- Associated symptoms: fatigue, weakness, body aches, abdominal pain, loss of smell (unable to smell a candle)
+- Denies: blood in sputum, dizziness, fainting, confusion, memory loss, chest pain, palpitations, changes in bowel movements (no diarrhea, constipation or blood in stool), sore throat, runny/blocked nose, changes in vision/hearing, eye/ear discharge/pain, urinary changes, fever, night sweats, chills, weight loss
+
+PMHx:
+- Atrial fibrillation (diagnosed 4 years ago, takes metoprolol, last ECG a couple of months ago showing heart rate around 80 bpm, no recent symptoms, stable)
+- Inguinal hernia repair (15 years ago, no complications)
+- Medications: metoprolol (AFib), statin, baby aspirin (started for AFib)
+- Allergies: sulfa (developed rash with antibiotic many years ago, no recent exposure)
+- Immunizations: up to date (received Zostavax and pneumonia vaccines)
+
+SocHx:
+- Visited mother at long-term care facility with COVID outbreaks just over a week ago
+- Former smoker (quit 4 years ago when diagnosed with AFib, previously 1 ppd)
+- Uses CBD edibles (2.5 mg, couple times per week to help with sleep) 
+- Denies alcohol use (stopped a few years ago, no prior heavy use) or other recreational drugs
+- Lives in a renovated house with wife
+
+FHx:
+- Aunt with lung cancer (smoker)
+- No other known family history of lung/heart conditions or cancers
+
+Objective:
+- Vitals signs: to be obtained
+- Physical examination: to be performed
+
+Assessment:
+- Likely upper respiratory viral illness (including COVID-19)
+
+Plan:
+- COVID-19 swab and send for PCR
+- Isolate for 14 days (even if symptoms resolve) and from husband if possible
+- Public health to follow up if COVID-19 positive for contact tracing
+- If not COVID-19, consider other viral illnesses 
+- Follow-up if symptoms not improving to assess for bacterial infection/pneumonia and possible need for antibiotics
+- Revisit sleep aid options as alternative to CBD edibles

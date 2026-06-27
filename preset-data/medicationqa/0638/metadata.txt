@@ -1,0 +1,5 @@
+drug_focus: steroids
+question_type: Usage/time
+section_title: How do I know if I should be taking steroids?
+source_url: https://www.nras.org.uk/steroids-in-rheumatoid-arthritis
+sample_id: 0638

@@ -1,0 +1,260 @@
+# Smith Collection Transcript: RES0027
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I was wondering if you could tell me what brought you in
+
+Patient: Sure ive been coughing for the past three days and it i cant seem to stop its affecting my sleep so i just really like to get this fixed
+
+Doctor: OK ah is the cough with the cough have you been bringing up any sputum
+
+Patient: No its its dry its very dry
+
+Doctor: OK have you brought up any blood
+
+Patient: No no blood
+
+Doctor: OK and the cough started three days ago has it gotten worse gotten better stayed the same
+
+Patient: Ah you know it seems to be getting worse and now i even feel hot like i have a fever or something
+
+Doctor: I see is there any triggers associated with the cough like going outside into the cold smoke inhalation or or dust or pets
+
+Patient: um no not that i noticed
+
+Doctor: OK have you tried anything to you help with the cough
+
+Patient: I tried over the counter cough syrup but its its not helping
+
+Doctor: OK and you mentioned the coughs interrupting your sleep has is the cough constant all day or are there particular times of the day that its worse
+
+Patient: Its just all day
+
+Doctor: Lets see ok um and you mentioned that you started to feel hot when when did you notice that
+
+Patient: That was just today
+
+Doctor: Just today have you taken your temperature
+
+Patient: No i havent
+
+Doctor: OK and have you been experiencing any other symptoms
+
+Patient: Mmm ive been really tired but i dont know if thats because i cant get any seem to get any sleep
+
+Doctor: Well because the coughs been keeping you up ok um so have you had any headaches
+
+Patient: Maybe a slight headache but also im not too sure if thats because ive been coughing and its putting strain on my head
+
+Doctor: OK how about any discharge like mucus or tears from your eyes or ears
+
+Patient: No nothing like that
+
+Doctor: OK how about any pain around your eyes or ears
+
+Patient: No
+
+Doctor: OK have you had a runny nose
+
+Patient: Mmmm no no
+
+Doctor: Alright and within the last month or so have you had any cold like symptoms with a runny nose headache sore throat and or a cough
+
+Patient: Ah no
+
+Doctor: OK so its just been these last few days
+
+Patient: Yes
+
+Doctor: um alright and do you have a sore throat now
+
+Patient: um no
+
+Doctor: OK and and how is your appetite been
+
+Patient: My appetites been ok i also its just hard to eat because im coughing so much
+
+Doctor: OK have you had any troubles with swallowing like being painful
+
+Patient: No well no no i would say no
+
+Doctor: OK um an in the last several months have you had any weight loss
+
+Patient: um no weight loss
+
+Doctor: Alright and have you had any chills
+
+Patient: Maybe a little bit last night now that i think about it
+
+Doctor: OK and how about any night sweats
+
+Patient: A little bit last night
+
+Doctor: OK so you were a bit chilly and and then sweaty late last night
+
+Patient: Yes a little bit
+
+Doctor: OK and feeling hot today
+
+Patient: Yeah
+
+Doctor: Have you had any chest pain
+
+Patient: um no no chest pain no
+
+Doctor: Alright and how about shortness of breath
+
+Patient: No
+
+Doctor: Alright any wheezing
+
+Patient: No
+
+Doctor: Alright and have you had any instances where you felt as though your heart was racing or beating out of your chest
+
+Patient: No
+
+Doctor: Alright and any instances where you felt like you were gonna faint or maybe blackout
+
+Patient: No
+
+Doctor: OK and have you felt dizzy at all
+
+Patient: um no no dizziness
+
+Doctor: Alright and have you had any loss or of your sense of taste or loss of your sense of smell
+
+Patient: um no
+
+Doctor: OK and have you had any diarrhea
+
+Patient: No diarrhea
+
+Doctor: Alright and then how about any nausea or vomiting
+
+Patient: No
+
+Doctor: OK um and so you have been fatigued have you had any muscle aches or or body aches
+
+Patient: A little bit of both yeah
+
+Doctor: I see ok and have you had any painful urination or feeling the need to urinate frequently
+
+Patient: No
+
+Doctor: OK and any skin rashes or or skin changes
+
+Patient: Ah no
+
+Doctor: Alright um in regards to your past health have you been diagnosed with any medical conditions before
+
+Patient: I have hypothyroidism
+
+Doctor: I see ok and um are you taking any medications for that
+
+Patient: Im on synthroid
+
+Doctor: OK great when was your last tsh checked
+
+Patient: I believe i did it six months ago
+
+Doctor: OK and were there any concerns with the range at that time
+
+Patient: No i think it was normal
+
+Doctor: Alright excellent do you take any other medications or over the counter
+
+Patient: I i take this multi vitamin i cant remember the name of it but its just something that i take every day
+
+Doctor: OK any any allergies to medications
+
+Patient: No
+
+Doctor: Alright and have you had any surgeries before
+
+Patient: um i had my appendix removed when i was a teenager
+
+Doctor: OK and any complications with that surgery
+
+Patient: No
+
+Doctor: Alright um so next i was wondering if you could just tell me a little bit about your living situation
+
+Patient: Sure i live with my husband and two children who are both teenagers i we live in a in a townhouse and we moved recently
+
+Doctor: OK and anybody in the home been sick
+
+Patient: My husband has been throwing up for the past two days and i think he was feeling a little hot too
+
+Doctor: OK has he been assessed by a physician
+
+Patient: No i tried to bring him today but he refused
+
+Doctor: I see ok has he been around anybody whos been sick that youre aware of like at work or anything
+
+Patient: He works at this it company there arent a lot of them and they all have their own cubicles so you know maybe in the lunch room or something but other than that i dont think so
+
+Doctor: OK and how about yourself any other exposures or sick contacts or maybe at work or something like that
+
+Patient: um so i do marketing stuff online but i i work from home
+
+Doctor: OK um and your kids have been well
+
+Patient: Oh yeah theyve been theyve been healthy
+
+Doctor: Alright and do you smoke cigarettes
+
+Patient: No
+
+Doctor: And do you drink alcohol
+
+Patient: Ill have a glass of wine with dinner once in awhile
+
+Doctor: OK do you and whats once in awhile
+
+Patient: Maybe every three or four days
+
+Doctor: OK so a couple of drinks per week
+
+Patient: Yeah
+
+Doctor: Alright and do you smoke marijuana
+
+Patient: I have smoked marijuana i dont regularly do it
+
+Doctor: No ok um and do you use any other recreational drugs
+
+Patient: No
+
+Doctor: OK um and has anybody in the family had a lung condition or or a heart condition before
+
+Patient: My sister whos 15 years older than i am she had a heart attack quite recently
+
+Doctor: Oh im sorry to hear that do you know what happened
+
+Patient: um you know im not too sure she doesnt always eat the healthiest and she doesnt do a lot of exercise so i think maybe that had something to do with it
+
+Doctor: OK um and did your parents have any heart problems
+
+Patient: No they were both healthy and they passed away a few years ago but they died of old age i guess you can say
+
+Doctor: OK any cancers in the family
+
+Patient: No
+
+Doctor: Alright so i think thats all i wanted to cover on the history today was there anything that you wanted to tell me i maybe didnt ask
+
+Patient: um no i was just curious if you think i had covid
+
+Doctor: Certainly one of the top things that im considering after hearing about your symptoms of having this cough and fever and being tired these last few days especially with your husband being sick with nausea vomiting and not feeling well that being said it could be another type of viral illness or possibly a bacterial infection but certainly we will order some investigations some blood work a pcr nasal swab that will actually test for covias well as a chest x ray to start with um and we will wait for some of those results to come back
+
+Patient: OK yeah that sounds good
+
+Doctor: Alright so well get that started
+
+Patient: OK thank you

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1485  |  gem_id: gem-cochrane-simplification-train-1486  |  doi: 10.1002/14651858.CD009153.pub3
+
+We found one randomised controlled trial and nine observational studies that examined this question. Overall we found that in couples in which the infected partner was being treated with antiretroviral drugs the uninfected partners had, at worst, more than 40% lower risk of being infected than in couples where the infected partner was not receiving treatment. Since the World Health Organization (WHO) already recommends antiretroviral treatment for all persons with ≤350 CD4 cells/µL, we also examined studies that had studied couples in which the infected partners had CD4 counts higher than this level. We found that there is strong evidence from the randomised controlled trial that in this group HIV was less likely to be transmitted to uninfected partners from treated infected partners than from untreated infected partners.

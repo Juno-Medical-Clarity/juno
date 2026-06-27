@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1449
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you going to visit rehab? Yes, what choice do I have? Yes, please do visit Mercy Manor for P T and Rehab. Yes, I will. That will help your right side hip pain. I think so too.

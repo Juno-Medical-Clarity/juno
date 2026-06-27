@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0509  |  gem_id: gem-cochrane-simplification-train-510  |  doi: 10.1002/14651858.CD008328.pub2
+
+This review comprised 28 studies of 907 participants, with the quality of evidence being generally poor. Performing ACTs during an acute flare-up of COPD reduced the likelihood of needing mechanical assistance to breathe, as well as the length of time for which it was required. Time spent in hospital was slightly reduced, but there was little evidence to suggest any benefit on future flare-ups or health-related quality of life. Performing ACTs during stable COPD did not appear to affect flare-ups or hospitalisations, however it may improve health-related quality of life. Techniques which involve breathing out against a positive expiratory pressure resistance may provide greater benefits than other types of ACTs. The lack of adverse events observed in this review suggests that ACTs are safe for individuals with COPD.

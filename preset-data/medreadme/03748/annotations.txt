@@ -1,0 +1,7 @@
+source:      wiki
+side:        complex
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [10:11] 'medical-jargon-google-easy' -> 'quinine'

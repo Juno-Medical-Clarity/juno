@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1439
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I see here that you're allergic to grapefruit and peanuts. Do you happen to be allergic to any medications you've taken in the past? Nah, just allergic to grapefruit and peanuts. Gotcha. Do you carry an Epi pen around with you? I try to bring it with me everywhere I go.

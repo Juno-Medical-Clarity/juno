@@ -1,0 +1,6 @@
+Monoclonal antibodies (mAbs) with neutralizing activity against SARS-CoV-2 have demonstrated clinical benefit in cases of mild to moderate SARS-CoV-2 infection, substantially reducing the risk for hospitalization and severe disease 1-4.
+Treatment generally requires the administration of high doses of these mAbs with limited efficacy in preventing disease complications or mortality among hospitalized COVID-19 patients 5.
+Here we report the development and evaluation of Fc-optimized anti-SARS-CoV-2 mAbs with superior potency to prevent or treat COVID-19 disease.
+In several animal models of COVID-19 disease we demonstrate that selective engagement of activating FcγRs results in improved efficacy in both preventing and treating disease-induced weight loss and mortality, significantly reducing the dose required to confer full protection upon SARS-CoV-2 challenge and treatment of pre-infected animals.
+Our results highlight the importance of FcγR pathways in driving antibody-mediated antiviral immunity, while excluding any pathogenic or disease-enhancing effects of FcγR engagement of anti-SARS-CoV-2 antibodies upon infection.
+These findings have important implications for the development of Fc-engineered mAbs with optimal Fc effector function and improved clinical efficacy against COVID-19 disease.

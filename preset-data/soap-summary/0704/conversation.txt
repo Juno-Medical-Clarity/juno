@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0704
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you know about any medical issues running in your family? Yeah, almost everyone had diabetes.

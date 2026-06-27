@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1321
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any important family history, any medical issues in the family? Well, my father died of a heart attack. I don't remember how old he was, but I do remember that he had some long run heart issues. What about your mom? My mom's death was a mystery for all of us. She died of some complications because of the dental procedures. So never got to know what killed her. Do you have kids? Are they all doing good health wise? I have a daughter, she's healthy.

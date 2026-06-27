@@ -1,0 +1,8 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [4:6] 'general-complex' -> 'control group'
+  [19:20] 'general-complex' -> 'efficacy'

@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1209
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports that both parents have passed away.
+- Patient expresses that they are managing despite the loss.
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No assessments provided in the conversation.)
+
+Plan:
+- (No plan provided in the conversation.)

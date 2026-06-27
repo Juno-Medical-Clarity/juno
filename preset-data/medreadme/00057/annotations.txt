@@ -1,0 +1,15 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'mucin'
+  [7:9] 'medical-jargon-google-easy' -> 'TcSMUG L'
+  [17:23] 'medical-jargon-google-easy' -> 'insect - dwelling stages of protozoan'
+  [37:39] 'medical-jargon-google-easy' -> 'T. cruzi'
+  [41:42] 'medical-jargon-google-easy' -> 'invertebrate'
+  [47:49] 'medical-jargon-google-easy' -> 'ex vivo'
+  [53:54] 'medical-jargon-google-easy' -> 'midgut'
+  [57:59] 'medical-jargon-google-easy' -> 'in vivo'
+  [62:63] 'general-medical-multisense' -> 'vector'

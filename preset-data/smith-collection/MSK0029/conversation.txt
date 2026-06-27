@@ -1,0 +1,274 @@
+# Smith Collection Transcript: MSK0029
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi yesterday i was grocery shopping and yeah just in the parking lot somebody bumped into my car and this morning i woke up and my neck is just really painful it hurt yesterday a little bit but i mean it was so mild i didnt think much of it but today its its quite a bit worse
+
+Doctor: OK so can you tell me how this accident happened were you sitting in the passenger seat and the driver and was the impact from like behind at the back of your car or at the front
+
+Patient: It was at the back so i was the driver and was just going over a speed bump in the parking lot so slowed down quite a bit and the person behind me must not have and they bumped into me theres just some scratches on the bumper they didnt hit too hard but i i guess maybe hard enough
+
+Doctor: OK and did the neck pain start immediately after
+
+Patient: uh no its i like not immediately yeah i think it started a bit later on and then worse a bit a bit today
+
+Doctor: OK alright and is there pain anywhere else on your body
+
+Patient: uh really like my no just just really my neck
+
+Doctor: OK ok and does anything feel broken do are there bruises anywhere any obvious signs of trauma
+
+Patient: No i can’t i didnt notice anything like that and i can move my neck around so i dont think any i don’t i dont think anything is broken just hurts a lot
+
+Doctor: Alright and is a pain constantly there or does it come and go
+
+Patient: It kind of comes and goes it just its worse with movement if i just kinda sit still i dont notice much pain but if im betting my head forward or mostly backwards so ill get ill get pain
+
+Doctor: OK and you said this happened yesterday right
+
+Patient: Yeah yeah this happened yesterday afternoon
+
+Doctor: OK um and does anything make this better like have you tried ice say any topicals any positions that that helps with the pain
+
+Patient: I did try some like advil last night but like when i when the pain was coming on and it mustve helped me sleep i guess but i havent tried any ice or anything like that just mostly i guess resting
+
+Doctor: OK so you said the pain is at the back of the neck does it radiate anywhere up into your head or down into your shoulders or lower or upper back
+
+Patient: Uhm maybe a little bit to the upper back like when i like trap trapezius muscle area or the traps like it if i push on those muscles around that area i do get a little bit of tenderness
+
+Doctor: OK ok and if you were to describe the quality of this pain would you say its sharp dull achy throbbing uhm how would you describe it
+
+Patient: I would say its sharp yeah especially if i do any movements like itll be feels like i mean it stabbed in the neck
+
+Doctor: OK alright and have you ever had it had pain like this in the past
+
+Patient: No this is the first time
+
+Doctor: OK and do you feel like its getting worse the pain since it started yesterday
+
+Patient: Yeah it could be that at first i didnt even have any pain at all maybe it was just the adrenaline pumping or whatever but now i can notice the pain
+
+Doctor: OK ok and 1 to 10 10 being the worst pain youve ever felt how bad is this pain
+
+Patient: It would be i would say probably a 6 or a 7
+
+Doctor: OK ok and have you had any tingling or numbness
+
+Patient: No i havent had anything like that
+
+Doctor: OK any dizziness or fainting spells
+
+Patient: No
+
+Doctor: Confusion or memory loss
+
+Patient: No
+
+Doctor: Any headaches
+
+Patient: um i no
+
+Doctor: No ok and is this affecting your sleep at all
+
+Patient: Oh no i guess like last night it was a little bit more difficult because i was just i slept i just on my back so that i wasnt moving around as much so that was a little bit awkward but i was able to sleep though
+
+Doctor: OK i know you said you have some pain with certain movements but do you find its hard to move your neck at all
+
+Patient: Oh it feels a bit stiff but like im able to move it but yeah i feel stiff
+
+Doctor: OK any issues with vision like is it blurry
+
+Patient: No
+
+Doctor: No how about ringing in your ears
+
+Patient: No
+
+Doctor: No any sorry yes that any issues concentrating on on tasks
+
+Patient: um yeah this morning i i guess its been a little bit more difficult to focus on things but maybe i was just worried like focusing on the pain in my neck
+
+Doctor: Yeah for sure any fevers or chills
+
+Patient: No
+
+Doctor: Any changes in your weight
+
+Patient: No my weight its been been the same
+
+Doctor: Any changes to your hearing
+
+Patient: No thats been been normal
+
+Doctor: Smell or taste
+
+Patient: Thats been normal
+
+Doctor: um chest pain or heart palpitations
+
+Patient: No nothing like that
+
+Doctor: OK no cough shortness or breath shortness of breath or wheezing
+
+Patient: No none of that
+
+Doctor: How about issues with their bowel movements
+
+Patient: No i havent had any diarrhea or any any any constipation nothing like that
+
+Doctor: OK any nausea vomiting
+
+Patient: No nausea or vomiting
+
+Doctor: Changes in your appetite
+
+Patient: uh no that my appetites been good
+
+Doctor: OK how about changes in urine
+
+Patient: No i havent had any any changes to or any urinary symptoms at all
+
+Doctor: OK ok thats good and are you otherwise healthy do you have any longstanding medical conditions
+
+Patient: Uhm no i am otherwise healthy i just id take birth control and i am a multi vitamin but thats it so no medical conditions
+
+Doctor: OK alright thats good um and have you had any hospitalizations or surgeries in the past
+
+Patient: Uhm no i haven’t
+
+Doctor: No ok how about medications are you on any
+
+Patient: Just the the the birth control that im im taking ive been taking that for about five years now
+
+Doctor: Five years ok any side effects or any issues with that
+
+Patient: No its been good day i ive been really happy with it overall too they help regulate my cycles
+
+Doctor: OK ok good and then are you up to date with your immunizations
+
+Patient: I am yes ill get the flu shot every year
+
+Doctor: OK thats good do you have any allergies
+
+Patient: I do yeah but its i think theyre just all environmental cause ill typically get issues with seasonal changes and then then it goes away
+
+Doctor: Oh i see ok any family history of lung or heart conditions
+
+Patient: I think my dad has high blood pressure and diabetes yeah but no heart or or lung conditions
+
+Doctor: OK how about a musculoskeletal issues
+
+Patient: I think maybe osteoarthritis and my grandpa grandparents but
+
+Doctor: OK
+
+Patient: But yeah
+
+Doctor: How about an autoimmune conditions
+
+Patient: No nothing like that
+
+Doctor: No ok how about cancers
+
+Patient: uh no cancers
+
+Doctor: OK and then do you smoke
+
+Patient: No i dont no ive never smoked before
+
+Doctor: OK how about marijuana do you consume that in any form
+
+Patient: No i dont
+
+Doctor: OK and then do you drink alcohol
+
+Patient: Every once in a while ill have a glass of wine but its usually a social thing or or at christmas
+
+Doctor: OK come have out in terms of sick contacts have you had any recently
+
+Patient: I dont believe so um ive been going to work i work as a bank teller um but everybody at work hasnt been sick and weve been using masks and cleaning our hands and all of that sort of thing
+
+Doctor: OK ok thats good and how about travel have you had any recently
+
+Patient: No ive been put at home but looking forward to a vacation though
+
+Doctor: Yeah for sure and then where do you work and who do you live with and where do you live
+
+Patient: Yes i i work at a bank and i live with my husband and our time and our son he’s hes six
+
+Doctor: OK ok ok um those are all the questions i have for history we can move on to the physical exam part of this interview did you have any questions before we did that
+
+Patient: uh no no that sounds good
+
+Doctor: OK so if you have someone there with you or if you have a mirror or if theres any way you can take a look at the back of your neck as well as the front of your neck um do you see any redness or swelling in that area
+
+Patient: No i don’t
+
+Doctor: No ok do you see any muscle atrophy any deformities or skin changes
+
+Patient: No nothing like that
+
+Doctor: OK and then when you kind of just with the back of your hand place it on your neck in the front as well as the back does it feel warm at all
+
+Patient: No
+
+Doctor: No ok and then im gonna get you to palpate certain areas so well start with the chin does that hurt when you press down
+
+Patient: No
+
+Doctor: No ok how about just where the thyroid would be
+
+Patient: No pain or yeah no pain there
+
+Doctor: No pain there ok how about to the sides kind of where your sternocleidomastoid muscles are
+
+Patient: Yeah i think like a little bit of tenderness in the the front of the neck muscles there
+
+Doctor: OK and then how about when you move towards the back and then on your c spine cervical spine just like at the very back of your neck
+
+Patient: Yeah so theres theres no pain when i push on the like bones i can feel like so actually on that that like c spine itself theres no pain but like oh off to the side so on the muscles to the sides or theres a bit of tenderness
+
+Doctor: OK so kind of like where so theres pain on their trapezius and deltoid muscles
+
+Patient: Uhm uh yeah more trapezius not so not so much deltoid and then also um like the the perispinal muscles
+
+Doctor: OK i see alright uhm ok and then lets move on to some range of motion exam so im gonna get you to flex your neck so look down at the ground all the way as much as you can does that hurt
+
+Patient: It does yeah
+
+Doctor: It does but youre able to fully flex your neck
+
+Patient: Yeah i can touch my chin to my chest all almost uh but yeah ill get pain at the back of my neck when i do that and the front
+
+Doctor: And the front ok and then how about when you extend your head all the way back so that youre looking at the ceiling
+
+Patient: I’m able to do it still is a bit stiff and its slow to get there but again i i get pain at the back in the front of my neck when im doing this
+
+Doctor: OK ok how about when you flex your neck to the side so that your right ear is touching your right shoulder
+
+Patient: um yeah i get theres a little bit of a pain in the muscles on the left side when im doing that
+
+Doctor: OK and then how about when you do the opposite touch your left ear to your left shoulder so that youre laterally flexing your neck on the left side
+
+Patient: A little bit of pain there too but im able to do it though
+
+Doctor: OK so youre able to do all of these its just that you have some pain when you do that
+
+Patient: Yeah exactly i could do all of the movements but yeah its pain and stiffness
+
+Doctor: OK ok those are all the questions that i had for you did you have any questions of your own
+
+Patient: uh no that i just was wondering if i if you think i i don’t needed an x ray or like you think that anything is broken kind of like concerned about today because of this pain
+
+Doctor: Yeah and for sure um so right now it just to me it sounds like a whiplash injury and so kind of like low impact but just to be certain we can order an x ray to rule out any fractures or dislocations and in terms of like the management plan for pain management you can rest you can either apply heat or cold packs to your neck for 15 minutes every couple of hours or so you can try some over the counter pain medications like ibuprofen or tylenol and if it still doesnt get better we can try like we can try injections to the area to relieve some of that pain but something else in conjunction we can try as physiotherapy and theyll basically help you with range of motion exercises and try to strengthen the muscles in that area and to improve your posture and normal movement and thats kind of where we can start for now and if it doesnt get any better we can talk about alternative management plans does that sound ok
+
+Patient: It does yeah that that makes sense thank you
+
+Doctor: OK yeah no worries

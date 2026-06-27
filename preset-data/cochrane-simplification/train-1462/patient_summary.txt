@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1462  |  gem_id: gem-cochrane-simplification-train-1463  |  doi: 10.1002/14651858.CD003990.pub4
+
+In this review, both progestogen-only methods (pills and an intrauterine device) and low-dose combined oral contraceptives appeared to have only minor influences on glucose and fat metabolism. However only four studies, most of limited quality, examining a small number of women were included in this review. Only one of the studies reported on true clinical endpoints that is micro- and macrovascular disease. It found no signs or symptoms of thromboembolic incidents or visual disturbances. However this trial was performed over a short period of time. Therefore no definite conclusions can be made based on this review. Future trials analysing glucose and fat metabolism as well as long-term complications for all available contraceptive methods are needed.

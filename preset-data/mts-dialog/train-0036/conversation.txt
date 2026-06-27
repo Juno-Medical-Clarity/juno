@@ -1,0 +1,21 @@
+Doctor: Hi there, how are you?
+Patient: I am okay.
+Doctor: So, I see you turned eighty-eight yesterday, happy birthday!
+Patient: Thank you!
+Doctor: And you are referred by Doctor X, he is your primary physician, right?
+Patient: Correct! I am also seeing Doctor Y for my leukemia.
+Doctor: Hm he mentioned that it's chronic lymphocytic leukemia.
+Patient: Yes.
+Doctor: Okay.
+Doctor: And you are also seeing Doctor Z for your heart related problems.
+Patient: That is correct.
+Doctor: So, tell me what is happening with you?
+Patient: For the past one week I am having this increased shortness of breath and having difficulty breathing from past few nights while sleeping.
+Doctor: Okay.
+Patient: And this morning I was having difficulty catching my breath. I am also having wheezing since morning.
+Doctor: Let me examine you, can you come forward and sit-up here? Any chest discomfort or acute chest pain or anything of that sort? Any pain of the left arm?
+Patient: No.
+Doctor: Any dizziness, feeling like fainting or light headedness or losing control?
+Patient: No.
+Doctor: Well, I don't think there is any sign of cardiovascular accident or heart attack, so that's that. You do have mild peripheral edema. We need to treat that.
+Patient: Okay.

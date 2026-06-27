@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0947
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient lives with one brother.
+- Mother passed away due to stroke at age 79.
+- Father passed away at age 91, had no medical conditions.
+- Other brother had prostate cancer.
+- No family history of diabetes or heart disease.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessments or diagnoses provided)
+
+Plan:
+- (No plan provided)

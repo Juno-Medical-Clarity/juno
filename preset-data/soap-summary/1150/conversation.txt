@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1150
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke cigarettes? I smoke about three packs in a month. Do you drink alcohol or use recreational drugs? No. What do you do for work? I am an editorial assistant at the local newspaper.

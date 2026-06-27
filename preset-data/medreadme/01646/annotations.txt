@@ -1,0 +1,10 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [10:11] 'medical-jargon-google-easy' -> 'acupuncture'
+  [12:14] 'medical-jargon-google-easy' -> 'chronic pain'
+  [17:19] 'medical-jargon-google-easy' -> 'musculoskeletal pain'
+  [27:28] 'medical-jargon-google-easy' -> 'osteoarthritis'

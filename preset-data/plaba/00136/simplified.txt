@@ -1,0 +1,13 @@
+The main source of energy for the brain and other organs is glucose, a type of sugar in the blood that comes from the food people eat.
+In order for energy to reach all tissues, glucose has to go through a process with several stages. One of these stages is called pyruvate dehydrogenase complex (PDC) which converts molecules and links cells to the final stage of creating energy.
+What happens when one of these stages is disturbed?
+Genetic changes in the PDC process leads to pyruvate dehydrogenase deficiency, a disease where the body cannot properly breakdown food to create fuel or energy.
+Errors in PDC (pyruvate dehydrogenase complex) activity also result in severe disruption of the body's ability to process and distribute nutrients and can create brain malformations where the brain or nervous system is damaged or has not formed properly during pregnancy.
+To better understand the pyruvate dehydrogenase deficiency, researchers created an experiment that includes common household rats and mice.
+Studies using an animal experiment showed similar abnormalities in brain structures compared to patients suffering from pyruvate dehydrogenase deficiency.
+There is still no effective cure for pyruvate dehydrogenase complex-deficiency.
+Promising therapy may be a low carb, high fat diet called a ketogenic diet, where the body substitutes glucose with ketone bodies (chemicals the body makes when there is not enough glucose) as a source of energy.
+Studies show that a ketogenic diet decreases lactic acidosis (lactic acid build up that can cause nausea, vomiting, and breathing problems) and slows down brain malformations, but not death in early childhood.
+The newest reports say that phenylbutyrate, a type of salt in the body that helps remove ammonia and waste from the body, increases the level of pyruvate dehydrogenase complex in the brain.
+Experiments on human fibroblast (a cell found in connective tissues) and zebra fish showed that phenylbutyrate is a promising cure to dehydrogenase complex deficiency.
+This review summarizes the most important findings on the effects of PDC-deficiency on metabolism and development of the brain and on research for treatment therapy.

@@ -1,0 +1,24 @@
+Doctor: Good morning, ma'am, before we begin, how old are you?
+Patient: Good morning, doctor, I'm twenty five.
+Doctor: Good, thank you. So, how are you feeling today?
+Patient: I'm okay, but I have this rash and itching over my right arm. It's so itchy and I scratch all the time.
+Doctor: Is this your dominant hand?
+Patient: Yes, so this had especially been bothering me.
+Doctor: When did you first notice these symptoms?
+Patient: Um, I think it was in October of nineteen ninety two. I think it was the twenty third.
+Doctor: Have you had any symptoms in any other parts of your body?
+Patient: Um, yeah, I've had tingling in both my legs, like in the front, and then it goes into my toes too.
+Doctor: Did this tingling sensation go away?
+Patient: Yes, it went away the next day without me doing anything.
+Doctor: Have these symptoms returned at any point?
+Patient: Well, two days later, so that'd be the twenty fifth, I noticed that my legs felt like they were asleep. I really couldn't feel anything.
+Doctor: Have these symptoms spread to any other part of the body?
+Patient: Yeah, I couldn't really feel anything in the middle of my chest. I also have started having pain in my right shoulder blade.
+Doctor: Do these symptoms interfere with your ability to move?
+Patient: Yes, I don't really feel comfortable standing on my own, and I can't walk very well.
+Doctor: Do you have any cold or flu like symptoms?
+Patient: No, heat and cold don't bother me
+Doctor: Do you feel any significant fatigue?
+Patient: No, not really.
+Doctor: Have you had any significant weight loss?
+Patient: No.

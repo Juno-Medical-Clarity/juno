@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3543  |  gem_id: gem-cochrane-simplification-train-3544  |  doi: 10.1002/14651858.CD009979.pub2
+
+This review tried to find out which nursing handover style works best. In March 2013 the review authors conducted a wide search for suitable relevant studies (randomised controlled studies) that compared different styles of nursing handover. However, they were not able to identify any randomised controlled studies that investigated the question, and so could draw no conclusions. Further research in this area is urgently needed.

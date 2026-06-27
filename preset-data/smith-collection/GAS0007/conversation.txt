@@ -1,0 +1,140 @@
+# Smith Collection Transcript: GAS0007
+# Category: GAS (Gastrointestinal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: So i understand you have been experiencing some abdominal pain
+
+Patient: Yeah yeah stomach hurt started hurting more last couple of days maybe 3 days ago i think
+
+Doctor: OK so for three days ago for the last three days you said its been hurting more did you have pain before that
+
+Patient: It felt weird like crampy i just i just thought i was constipated cause ive been havent been able to be able to go to the bathroom as well i just thought i was kind of bloated a bit but yeah about about that time started to feel a little bit more painful
+
+Doctor: Can you tell me kind of where youre feeling the pain the most
+
+Patient: Yeah kinda like near my right hip like lower where my stomach is that kind of right and below my belly button sometimes a little bit on the top just below my belly button but mainly just in that right lower side yeah
+
+Doctor: OK have you ever had pain like this in the past
+
+Patient: No never
+
+Doctor: OK and for the last three days has it been pretty constant has it been on and off
+
+Patient: I feel its been getting worse to be honest
+
+Doctor: Is there anything that you can think of this made it feel better
+
+Patient: Honestly just resting flat makes it feel a little bit better but nothing much no
+
+Doctor: OK is there anything that makes it worse
+
+Patient: Touching it also i puked the the other day and that made it definitely feel worse just that whole contraction in my body was nasty
+
+Doctor: OK was it just the one time
+
+Patient: Yeah
+
+Doctor: OK you had the nausea associated with the pain
+
+Patient: Mhm mhm
+
+Doctor: um did the pain stay in that same spot or does it move anywhere else
+
+Patient: It has pretty much stayed in that one spot yeah
+
+Doctor: Have you noticed any fevers lately
+
+Patient: Felt a bit hot the other day didnt take a temperature though
+
+Doctor: OK ok and what specifically prompted you to come in today to the emergency department
+
+Patient: I thought it was just going to get better when it first started maybe just a bit of gas but here we are kind of thursday now and its still pretty bad
+
+Doctor: OK have you been in contact with anyone thats been sick lately
+
+Patient: Not off the top of my head no
+
+Doctor: And have you traveled anywhere recently
+
+Patient: No
+
+Doctor: And i forgot to ask did you notice any changes to your bowel habits
+
+Patient: Yeah yeah before it was fairly regular about once a day five days ago i started getting constipated it backed up and pretty much the picture i think last time i went to the bathroom was two days ago i think yeah
+
+Doctor: OK im just gonna ask you some questions about your overall health you have any chronic conditions that you see your family doctor for or any other doctor
+
+Patient: I got diabetes type 2
+
+Doctor: And has that generally has that been well controlled for you lately
+
+Patient: Most part doctor checks my sugars im not too regular on them myself but last time he changed medications was a couple years back and ive just been on the same ones ever since
+
+Doctor: What medication are you currently taking
+
+Patient: Metformin metformin
+
+Doctor: And have you ever had any surgeries in the past
+
+Patient: No i had my teeth pulled as a kid but no
+
+Doctor: OK still have your appendix
+
+Patient: Yeah yeah i never had that problem as a kid
+
+Doctor: And do you have any allergies
+
+Patient: No sometimes get a little bit congested during the fall but thats it
+
+Doctor: Do you have any family history of gastrointestinal problems
+
+Patient: Gas like no i think my grandma died of breast cancer fairly early but no not not that not that i can think of
+
+Doctor: OK and just in terms of your lifestyle do you live here in town
+
+Patient: Yeah yeah i live here
+
+Doctor: Living alone or with family
+
+Patient: No no i got family me the wife got two kids one of them is college bound now but yeah
+
+Doctor: Nice and what do you do for work or are you retired
+
+Patient: Im still working i am a production overseer production manager over at fairbanks
+
+Doctor: OK youre a big boss
+
+Patient: It took awhile to get here
+
+Doctor: Im sure it was very hard work in general do you drink alcohol
+
+Patient: Oh yeah like well plan on drinking on the two four but not regular special occasions mainly hot days sometimes ill have a beer or two
+
+Doctor: Sure and do you smoke cigarettes
+
+Patient: No
+
+Doctor: Have you ever smoked in the past
+
+Patient: No
+
+Doctor: Do you cannabis
+
+Patient: No
+
+Doctor: Any other substances
+
+Patient: No
+
+Doctor: OK is there anything else you wanted to bring up today that i didnt ask you about or any other questions that you have
+
+Patient: No just hoping to get an answer to whatever is going on
+
+Doctor: OK well at this point i will do a quick physical exam we may want to have blood work done maybe some other tests based on what we find out from there and then we can kind of let you know after that what the next steps will be so im just going to take this and go over it with the physician that im working with and will get back to you shortly thanks for chatting with me
+
+Patient: Thanks doc

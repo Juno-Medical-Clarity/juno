@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0857
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_family: My nipples are cracked, and they are bleeding. Oh, I am so sorry to hear that. Guest_family: He has some fluid coming out of his belly button as well as his penis. Okay I will look at it. But other than that, everything else looks good? Any other problems related to circumcision? Guest_family: No, no other issues.

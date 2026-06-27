@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0287
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+You had a heart surgery, right? Yes, that is right. Pacemaker? Yes, they did that. What else? What other surgeries? I have had a hysterectomy. Okay. Yeah.

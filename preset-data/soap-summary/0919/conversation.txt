@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0919
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any family history of neurological disorders, such as multiple sclerosis, Parkinson's or dementia? Nope. Fortunately, no one in my family has neurological problems.

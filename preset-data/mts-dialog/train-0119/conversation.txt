@@ -1,0 +1,22 @@
+Doctor: Can you confirm your age for me, ma'am?
+Patient: Absolutely, I'm sixty six now.
+Doctor: Good, so it's been about five months since you last evaluation for type two diabetes and high blood pressure.
+Patient: Yes, and I have a few other problems today, too.
+Doctor: Sure, we can treat all of them. What seems to be the problem today?
+Patient: I'm having some right shoulder pain.
+Doctor: Can you remember an injury to this shoulder?
+Patient: No, not that I can remember.
+Doctor: What aggravates your symptoms?
+Patient: It hurts when I move the shoulder.
+Doctor: Do you have any weakness, numbness, or tingling?
+Patient: No, I don't have any of that.
+Doctor: Okay, back to diabetes, how has that been progressing?
+Patient: Well, I can only check it in the morning, and it's usually less than one hundred.
+Doctor: Have you been checking your blood sugar two hours after meals?
+Patient: No, doctor, I haven't been. When I check them, it's normal though.
+Doctor: Do you have any records to prove that?
+Patient: No, I don't have that with me today.
+Doctor: That's important, do you have any other issues or concerns today?
+Patient: No, I can't think of anything.
+Doctor: Okay. I'm looking at your charts, and I see you had a benign breast biopsy done on June eleventh two thousand four. Did you have a repeat done after six months like they asked?
+Patient: No, I never had that done, I need to.

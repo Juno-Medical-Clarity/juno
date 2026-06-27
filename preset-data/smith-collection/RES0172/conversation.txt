@@ -1,0 +1,144 @@
+# Smith Collection Transcript: RES0172
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: So two days ago i started to have this cough came out of nowhere i havent had a cough before and i just today ive noticed the fever as well and and ive had a headache the last few days
+
+Doctor: Can you tell me a little bit more about your cough has it gotten better or worse over the past two days
+
+Patient: So it its a its been about well it got worse at first and then its been about the same since then
+
+Doctor: Okay and is it dry cough or wet cough
+
+Patient: Its dry
+
+Doctor: Okay uhm and does it ever wake you up at night
+
+Patient: No well it kind of happens all throughout the day yeah no no it hasnt woken me up at night
+
+Doctor: OK is there any are there any triggers anything that makes your cough worse
+
+Patient: I cant think of anything really it just kinda comes on like throughout the day on it spontaneously
+
+Doctor: How do you take any medications to help with your symptoms
+
+Patient: Yeah some over the counter cold medicines i tried some to take tylenol cold and sinus or something like that anyway and it did help me sleep a little bit with that the headache and just havent been feeling very good to help with that
+
+Doctor: And tell me about your fever did you check it check it check your temperature
+
+Patient: I did yeah today i checked it and it was like just over 38 i think like 381 or two
+
+Doctor: OK what about your headache where exactly is it
+
+Patient: I kind of feel it all over its like a band night feels like its just around my head and squeezing
+
+Doctor: And how like if you had to give it a number from one to 10 what number would you give it with 10 being the worst headache ever
+
+Patient: I would say maybe a 5
+
+Doctor: OK and you mentioned that the tylenol helped
+
+Patient: It did yeah probably took it down to a two or three the headache didnt go away entirely it was sort of still there but did help
+
+Doctor: Have you had any other symptoms  have you had a confusion or is it any fuzziness or any flu like symptoms
+
+Patient: uh i have felt just tired and over these last couple of days that and i have had a sore throat as well
+
+Doctor: Oh you get ok ok what about a runny nose or stuffy nose
+
+Patient: uh no nothing like that
+
+Doctor: Any difficulties breathing
+
+Patient: No
+
+Doctor: Any difficulty swallowing with a sore throat
+
+Patient: Ah is a little bit painful but ive been able to to eat and drink okay just really takes a little longer
+
+Doctor: Any dizziness or fainting in the past couple of days
+
+Patient: No nothing like that
+
+Doctor: OK any rashes or changes in their nails
+
+Patient: No i havent had anything like that
+
+Doctor: Any changes in your i guess have had any chest pain
+
+Patient: No havent had any chest pain havent had anything like that before
+
+Doctor: Any belly pain
+
+Patient: No
+
+Doctor: Any changes in your bowel movement any diarrhea
+
+Patient: No no i havent had ah any diarrhea
+
+Doctor: OK uhm any changes in your urination any difficulties or any pain or any increase in frequency
+
+Patient: No ive had a urinary track infections before so i know what thats like i havent had any of those symptoms
+
+Doctor: OK alright good and have you been diagnosed with any medical conditions in the past
+
+Patient: Uhm no i havent i had surgery on my knee when i was a teenager i uh tore my acl but its been good since then
+
+Doctor: Any hospitalizations
+
+Patient: No
+
+Doctor: OK any medications that youre taking including over the counter meds
+
+Patient: Yeah i just say im on birth control right now ive been taking it for the last like five years
+
+Doctor: OK any allergies
+
+Patient: Oh no i dont think so
+
+Doctor: OK good and do you have any medical conditions that run in the family including any heart or lung conditions or cancers
+
+Patient: Yeah my my aunt had had breast cancer but ah and my dad has high blood pressure
+
+Doctor: OK ok uhm and do you currently smoke
+
+Patient: No i dont
+
+Doctor: Do you ever smoke in the past
+
+Patient: No i i i i ive stayed away from that
+
+Doctor: Good any marijuana or recreational drugs
+
+Patient: Yeah sometimes well well smoke with like friends at a party i guess but i havent had any i havent done that in awhile
+
+Doctor: Alright any alcohol
+
+Patient: Similar like sometimes at a party but i mean yeah its been awhile for something like that so i havent really had any alcohol on in months
+
+Doctor: And are you currently working or
+
+Patient: I am yeah so its uh yeah i work for this tech company so ive been able to do a lot of my stuff at at home
+
+Doctor: OK uhm have you had any exposures to anyone who could potentially be sick
+
+Patient: I will without well yeah i there a couple or last weekend actually there was a family party that we went to it was outside but uh it yeah theres people around there was nobody that was sick that im aware of
+
+Doctor: OK and and have you traveled anywhere outside the province
+
+Patient: No been besides that the family party last weekend but i mean that was just here in town so it was close by
+
+Doctor: OK i guess i forgot to ask about a symptom have you felt that youve lost your sense of smell or sense of taste has it just been different
+
+Patient: Yeah i said some actually now that you mention it right sense of smell has been different which is kind of weird cause i i dont have everybody knows or i dont feel congested or anything so yeah but my taste has been ok
+
+Doctor: Good well thats all the questions i had for you given that your symptoms sort of sound like you may have a viral or bacterial infection and seeing that you were you had some exposure to to other people even though they werent sick it could it could be that they they had some sort of an illness that they could transmit that they werent just showing symptoms at the time we will get a covid swab done just to make sure that thats not whats happening it could be that and ill recommend that you continue to you know take tylenol and rest and take care of yourself and if your symptoms worsen or stay the same for long period of time definitely come back or call public health to get some guidance and try to stay away from others and self isolate for the next couple of days or at least clear covid swabs back or your symptoms improve or the next 14 days so thats all i have for you today do you have any questions for me
+
+Patient: No that sounds really good thank you

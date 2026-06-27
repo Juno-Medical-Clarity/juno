@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0171
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Back pain for the past month
+- Pain is dull and achy with occasional spasms (2-3 times a week)
+- Pain is constant, worsens with bending down and flexing back, especially towards the right side
+- No radiation of pain to legs
+- No numbness, tingling, or loss of sensation
+- No fevers, chills, night sweats, skin changes, recent illness, weight changes, bowel or urinary issues
+- Pain started after lifting a heavy box at work (factory job for 30 years)
+- Topical analgesics and fire and ice gels provide temporary relief
+- Impact: Taking time off work
+
+Past Medical History:
+- PMHx: High blood pressure (ramipril)
+- No allergies
+- No other medications
+- No hospitalisations or surgeries
+- No FHx of musculoskeletal or rheumatologic conditions, or cancers
+- SocHx: Lives with wife and teenage son, used to smoke (quit 10 years ago), occasional alcohol (beer on weekends), no recreational drugs
+
+Objective:
+- Pain on palpation in lower back (just above buttocks)
+- Pain with straight leg raise (lower back)
+- No redness or swelling
+- Gait normal, no limp
+
+Assessment:
+- Likely diagnosis: Mechanical back pain
+
+Plan:
+- Investigations: None at this time (imaging if no improvement after 6 weeks)
+- Treatment: Anti-inflammatory medication, physiotherapy, exercises
+- Follow-up if no improvement

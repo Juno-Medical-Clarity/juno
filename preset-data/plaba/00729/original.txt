@@ -1,0 +1,11 @@
+The timing of the development of specific adaptive immunity after natural SARS-CoV-2 infection, and its relevance in clinical outcome, has not been characterized in depth.
+Description of the long-term maintenance of both cellular and humoral responses elicited by real-world anti-SARS-CoV-2 vaccination is still scarce.
+Here we aimed to understand the development of optimal protective responses after SARS-CoV-2 infection and vaccination.
+We performed an early, longitudinal study of S1-, M- and N-specific IFN-Î³ and IL-2 T cell immunity and anti-S total and neutralizing antibodies in 88 mild, moderate or severe acute COVID-19 patients.
+Moreover, SARS-CoV-2-specific adaptive immunity was also analysed in 234 COVID-19 recovered subjects, 28 uninfected BNT162b2-vaccinees and 30 uninfected healthy controls.
+Upon natural infection, cellular and humoral responses were early and coordinated in mild patients, while weak and inconsistent in severe patients.
+The S1-specific cellular response measured at hospital arrival was an independent predictive factor against severity.
+In COVID-19 recovered patients, four to seven months post-infection, cellular immunity was maintained but antibodies and neutralization capacity declined.
+Finally, a robust Th1-driven immune response was developed in uninfected BNT162b2-vaccinees.
+Three months post-vaccination, the cellular response was comparable, while the humoral response was consistently stronger, to that measured in COVID-19 recovered patients.
+Thus, measurement of both humoral and cellular responses provides information on prognosis and protection from infection, which may add value for individual and public health recommendations.

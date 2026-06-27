@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1304
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Where are you having numbness? In my left hand. And no other symptoms? Any coughing or chest pain? No. Just that weird feeling in my left hand. Any visual changes or motor changes. Nothing. Great. What about any phlegm or shortness of breath? Nope.

@@ -1,0 +1,39 @@
+# SOAP Notes — Sample 0120
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 3-day history of cough (initially dry, now productive with 2 tsp/day of clear-white sputum) and 2-day history of dyspnea
+- Cough is constant and worsening
+- Dyspnea described as chest tightness, worse with exertion and coughing; no dyspnea at rest
+- Denies leg swelling/pain, recent surgery/immobilization/hospitalization, or history of VTE
+- Denies PMHx of cancer or other medical conditions
+- Reports worsening of cough and dyspnea over the past 2 days
+- Denies improvement with positional changes or OTC medications
+- Frontal headache (pressure-like) for 1 day, improved with Advil; attributes to poor sleep
+- Denies rhinorrhea, sore throat, N/V, changes in bowel habits
+- Reports feeling feverish and diaphoretic at night, but no drenching sweats
+- Diminished sense of smell x2 days
+- Denies nasal congestion
+- Generalized myalgias since last night/this morning
+- Poor sleep and decreased appetite
+- Denies chronic medications or significant surgical history (only childhood myringotomy)
+- FHx: Father had CABG at age 63
+- Denies known HTN
+- Seasonal allergies (pruritus, rhinorrhea)
+- Works on assembly line at car factory; off work x2 days due to illness
+- Lives with girlfriend and 4 y/o son (asymptomatic)
+- Denies smoking or recreational drug use
+- Drinks wine with dinner 2-3x/week
+
+Objective:
+- Vitals signs not provided
+- Physical examination not performed
+
+Assessment:
+- Suspected COVID-19 infection
+
+Plan:
+- COVID-19 testing
+- Self-isolation, including masking and separation from family members, until test results return
+- Off work until test results return; may require 14-day self-isolation per public health guidelines
+- Consider alternate viral etiologies if COVID-19 testing negative

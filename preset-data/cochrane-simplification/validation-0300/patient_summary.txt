@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0300  |  gem_id: gem-cochrane-simplification-validation-301  |  doi: 10.1002/14651858.CD001990.pub3
+
+This review found that first-line chemotherapy (anticancer drugs) may prolong the survival of patients with advanced small cell lung cancer for some months when compared to supportive care, although the effect of this treatment on quality of life is unknown. The benefit of a new treatment (second-line chemotherapy) when the disease has progressed or relapsed was even smaller, and the potential survival gain of some weeks must be balanced against its possible secondary effects. Since the available studies were scarce and of variable quality, more clinical trials are needed to assess and better inform patients about the real effectiveness of chemotherapy in advanced small cell lung cancer.

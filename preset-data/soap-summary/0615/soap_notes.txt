@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0615
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has a history of atrial fibrillation.
+- Describes rhythm problem as "bad."
+- Reports experiencing dizziness.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

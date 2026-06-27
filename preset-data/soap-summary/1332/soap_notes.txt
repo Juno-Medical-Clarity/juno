@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1332
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Swollen lips
+- Severity: Not explicitly stated, but implies difficulty
+- Duration: Not mentioned
+- Associated symptoms: Difficulty in swallowing
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: Patient suspects an allergy
+- Other concerns: Concern about difficulty in swallowing
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

@@ -1,0 +1,34 @@
+Doctor: Good morning, I am Dr. Smith. How can I help you today?
+Patient: Hello, I have been referred to you by my oncologist for a major increase in skin lesions.
+Doctor: I see. Can you tell me a little bit about your medical history?
+Patient: Yes, I have been treated for type II diabetes under insulin and primary hyperparathyroidism. My medical history dates back to 2006 with an infiltrated nodule associated with ulcers that grew gradually in my right thigh.
+Doctor: I understand. And what did you do about it?
+Patient: I underwent surgery with an anatomopathological study.
+Doctor: I see. And what did the study find?
+Patient: The skin biopsy objectified ulcerated epidermotropic dermo-hypodermal tumor proliferation.
+Doctor: Hmm, that sounds serious. Can you tell me more about the tumor?
+Patient: The morphological appearance and immunohistochemical data are in favor of LCH. The Langerhans cells present positivity of the anti-PS100 antibody, anti-CD1a antibody, and anti-Ki67 antibody (60%), and negativity of the anti-CD68 antibody.
+Doctor: I see. And what treatment did you receive?
+Patient: I received 25 sessions of radiotherapy followed by six courses of chemotherapy with a low dose of oral methotrexate.
+Doctor: And how did the treatments affect your skin lesions?
+Patient: After these treatments, the skin lesions were stable.
+Doctor: I see. And what happened in 2020?
+Patient: In 2020, I complained of an increase in skin lesions, with the appearance of several infiltrating nodules, scaling, crusted papules, and ulcerated plaques.
+Doctor: I understand. And what treatment did you receive for that?
+Patient: I received chemotherapy as single-system LCH (SS-LCH) based on methotrexate, associated with prednisone and vinblastine, with the obtainment of stable response and limited regression of the lesions.
+Doctor: I see. And how long have you been receiving this treatment?
+Patient: After two courses, I was lost to follow-up.
+Doctor: I see. And that's why you were referred to us today?
+Patient: Yes. One year later, my oncologist referred me to the hematology department for a major increase in skin lesions, with the appearance of new ones on my thigh.
+Doctor: I understand. And what did the dermatological examination find?
+Patient: The examination found ulcers and necrotic lesions, purplish, well-limited, of variable size, not painful, not warm to the skin, and localized to my right thigh. The mucous membranes and integuments were unharmed.
+Doctor: I see. And what was your body mass index?
+Patient: I am an afebrile, obese patient with a body mass index of 44.8.
+Doctor: I see. And how were your abdominal and cardiovascular examinations?
+Patient: The examinations were unremarkable.
+Doctor: I see. And what did the physical examination find?
+Patient: The physical examination did not find any tumoral syndromes, and I did not have B signs (fever, weight loss, and night sweats).
+Doctor: I see. Based on your medical history and the examination results, I would like to recommend a follow-up treatment plan. Are you okay with that?
+Patient: Yes, I am.
+Doctor: Great. I will write you a prescription for some medications and schedule a follow-up appointment for you in two weeks.
+Patient: Thank you, doctor.

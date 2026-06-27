@@ -1,0 +1,15 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [19:21] 'medical-jargon-google-easy' -> 'biologic therapies'
+  [22:24] 'medical-jargon-google-easy' -> 'certolizumab pegol'
+  [25:26] 'abbr-medical' -> 'CZP'
+  [27:28] 'medical-name-entity' -> 'CIMZIA'
+  [32:34] 'medical-name-entity' -> 'UCB Pharma'
+  [40:41] 'medical-jargon-google-easy' -> 'secukinumab'
+  [42:43] 'abbr-medical' -> 'SEC'
+  [44:45] 'medical-name-entity' -> 'COSENTYX'
+  [49:52] 'medical-name-entity' -> 'Novartis International AG'

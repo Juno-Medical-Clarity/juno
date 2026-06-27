@@ -1,0 +1,47 @@
+# SOAP Notes — Sample 0070
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for almost 3 weeks
+- Initially white/yellowish sputum, now with blood (approx. 1/2 teaspoon each time)
+- Chest discomfort associated with coughing
+- No SOB, chest pain, wheezing, or infectious symptoms (itchy eyes, runny nose, sore throat)
+- Fatigue, low energy, missed workdays
+- Chills over the last week, occasional feverish feeling
+- Night sweats (2 days in the last week)
+- Unintentional weight loss (~10 lbs in the last couple of months)
+- No palpitations, dizziness, nausea, vomiting, abdominal pain, diarrhoea, urinary problems, rashes, muscle aches, or joint pains
+
+Past Medical History:
+- No known medical conditions
+- No surgeries or hospitalisations
+- No medications or supplements
+- No known allergies
+- Immunisations up to date
+
+Social History:
+- Recently moved from the Philippines (6 months ago)
+- Living in a shared home with minimal interaction with housemates
+- No smoking (cigarettes or cannabis), no recreational drug use
+- Not sexually active
+- No recent travel
+
+Family History:
+- No known heart or lung conditions
+- No known cancer
+
+Exposure History:
+- Possible exposure to tuberculosis in the Philippines
+
+Objective:
+- Vitals: (not provided)
+- Physical exam: (not provided)
+- Investigations with results: (not provided)
+
+Assessment:
+- (not provided)
+
+Plan:
+- Investigations planned
+- Treatment planned
+- Relevant other actions such as counselling, referrals etc

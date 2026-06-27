@@ -1,0 +1,16 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [6:7] 'abbr-medical' -> 'hb'
+  [7:9] 'medical-jargon-google-easy' -> 'gene expression'
+  [13:16] 'medical-jargon-google-easy' -> 'wild - type'
+  [18:19] 'medical-jargon-google-easy' -> 'mutant'
+  [20:21] 'abbr-medical' -> 'hb'
+  [25:26] 'abbr-medical' -> 'Bcd'
+  [26:27] 'medical-jargon-google-easy' -> 'binding'
+  [32:33] 'medical-jargon-google-easy' -> 'promoter'
+  [37:38] 'abbr-medical' -> 'Bcd'
+  [40:41] 'abbr-medical' -> 'Hb'

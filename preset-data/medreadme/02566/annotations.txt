@@ -1,0 +1,8 @@
+source:      elife
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [16:19] 'medical-jargon-google-easy' -> 'N - terminus'
+  [20:23] 'medical-jargon-google-easy' -> 'C - terminus'

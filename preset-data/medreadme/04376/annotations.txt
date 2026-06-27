@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Gene loci'
+  [5:7] 'medical-jargon-google-easy' -> 'nuclear subcompartments'
+  [12:13] 'medical-jargon-google-easy' -> 'expression'

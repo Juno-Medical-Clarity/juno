@@ -1,0 +1,11 @@
+source:      MSD
+side:        simple
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'meningitis'
+  [8:9] 'medical-jargon-google-easy' -> 'ceftriaxone'
+  [10:11] 'medical-jargon-google-easy' -> 'cefotaxime'
+  [12:13] 'medical-jargon-google-easy' -> 'rifampin'
+  [20:21] 'medical-jargon-google-easy' -> 'vancomycin'

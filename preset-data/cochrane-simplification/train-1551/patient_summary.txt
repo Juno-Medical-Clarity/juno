@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1551  |  gem_id: gem-cochrane-simplification-train-1552  |  doi: 10.1002/14651858.CD002738.pub2
+
+This review of trials found that BDP delivered with the old and new propellant is effective in helping people with chronic asthma. BDP at all doses improves airflow, reduces symptoms and the need for rescue bronchodilators. The review only included studies conducted for more than 4 weeks. The drug was well tolerated and the safety profile was comparable with placebo. The findings apply to both children and adults. The effects of the new propellant suggest that it could be more effective than the older version, although a different review will address that particular question.

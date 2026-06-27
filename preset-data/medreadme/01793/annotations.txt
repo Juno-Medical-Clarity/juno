@@ -1,0 +1,12 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-hard' -> 'A20'
+  [6:7] 'medical-jargon-google-easy' -> 'expression'
+  [11:12] 'abbr-medical' -> 'HIV'
+  [19:21] 'medical-jargon-google-easy' -> 'epithelial dysfunction'
+  [25:26] 'abbr-medical' -> 'ART'
+  [30:33] 'medical-jargon-google-easy' -> 'intestinal epithelial integrity'

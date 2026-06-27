@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0238  |  gem_id: gem-cochrane-simplification-validation-239  |  doi: 10.1002/14651858.CD008141.pub2
+
+This review found some trials comparing the effects of adding second-generation antipsychotic drugs or placebo to antidepressants in obsessive compulsive disorder. There were only 11 trials on three second-generation antipsychotic drugs (olanzapine, quetiapine and risperidone). While not much can be said about olanzapine, quetiapine and risperidone showed some efficacy benefit, but also adverse effects.

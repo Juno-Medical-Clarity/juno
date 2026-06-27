@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0213  |  gem_id: gem-cochrane-simplification-train-214  |  doi: 10.1002/14651858.CD003873.pub2
+
+The aim of this review was to evaluate the effectiveness of various treatments for growth failure in childhood Crohn's disease. Three randomized controlled trials were identified. One trial did not show any benefit for linear growth with 6-mercaptopurine treatment compared to placebo among children being treated with steroids. The other two trials looked at nutritional treatment (elemental feedings) versus steroids (prednisolone). Both trials showed a statistically significant benefit for height velocity standard deviation scores with nutritional treatment. However, these results need to be confirmed by large, multi-centre, randomized controlled trials of therapeutic interventions in pre-pubertal children with Crohn's disease. These trials should use growth as an outcome measure. In conclusion, more research is needed to identify effective treatments for growth failure in childhood Crohn's disease.

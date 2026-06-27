@@ -1,0 +1,5 @@
+drug_focus: opioids
+question_type: Action
+section_title: How do prescription opioids affect the brain?
+source_url: https://www.drugabuse.gov/publications/drugfacts/prescription-opioids
+sample_id: 0228

@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0631
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of lung, liver, and prostate cancer.
+- Mother had a dementing disease, which started in her eighties and was a mild case; she passed away in her eighties due to old age.
+- No signs of Alzheimer’s in siblings.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

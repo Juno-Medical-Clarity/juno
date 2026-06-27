@@ -1,0 +1,2 @@
+[PASTMEDICALHX]
+Include dyslipidemia and hypertension.

@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0895
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not smoke cigarettes regularly but has one on a rare occasion.
+- Patient does not drink alcohol but occasionally smokes weed.
+- Family member mentions the patient has a drink occasionally when with friends.
+
+Objective:
+- (No measurable or observable data provided in the transcript.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided in the transcript.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned in the transcript.)

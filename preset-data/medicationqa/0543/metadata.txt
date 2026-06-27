@@ -1,0 +1,5 @@
+drug_focus: vicodin
+question_type: Action/time
+section_title: CLINICAL PHARMACOLOGY
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=21ff13de-6633-4dd3-728e-dc21e574ea7b&audience=consumer#GN66756
+sample_id: 0543

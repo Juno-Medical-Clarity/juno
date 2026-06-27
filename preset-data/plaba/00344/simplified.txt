@@ -1,0 +1,15 @@
+As of January 3, 2021, the United States has reported 20,346,372 cases of a breathing-related illness, coronavirus disease 2019 (COVID-19), and 349,246 related deaths.
+Long-term consequences of COVID-19 over a lifetime are unknown. However, COVID-19 survivors, including those who initially had a mild, sudden illness, report persistent symptoms and serious issues.
+On December 11, 20202, the Food and Drug Administration (FDA) issued an Emergency Use Authorization (EUA) or approval for Pfizer-BioNTech COVID-19 vaccine to prevent COVID-19, given as 2 doses separated by 21 days.
+On December 12, 2020, the Advisory Committee on Immunization Practices (ACIP), a group of health experts, gave an temporary recommendation for the Pfizer-BioNTech COVID-19 vaccine (1). Initial doses were recommended for health care workers and long-term care residents (2).
+As of December 23, 2020, 1,893,360 first doses of Pfizer-BioNTech COVID-19 vaccine had been given in the United States. After people received the vaccine, reports of 4,393 (0.2%) unfortunate events were submitted to an official vaccine event tracking system.
+Among the unfortunate events, 175 individual patient reports were picked for further review as possible cases of severe allergic reaction, including life-threatening reactions.
+Anaplylaxis is a life-threatening allergic reaction that occurs rarely after vaccination, usually starting within minutes to hours (3).
+Twenty-one cases were identified as anaphylaxis (a rate of 11.1 per million doses given). These includ 17 in those with a noted history of allergies or allergic reactions, seven of whom had anaphylaxis before.
+The average interval from receiving the vaccine to experiencing symptoms was 13 minutes (ranging from 2 to 150 minutes).
+Among 20 people with follow-up information available, all had recovered or been sent home.
+Of the other case reports determined to not be anaphylaxis, 86 were noted to be nonanaphylaxis allergic reactions. 61 were considered nonallergic unfortunate events.
+Seven individual patient reports were still under investigation.
+This report summarizes the clinical and social characteristics of individual patient reports of alltergic reactions, including anaphylaxis and nonanaphylaxis reactions, after receiving the first dose of Pfizer-BioNTech COVID-19 vaccine during December 14-23, 2020 in the United States.
+The nation's health protection agency issued new clinical considerations for using mRNA COVID-19 vaccines currently allowed in the United States (4) and for preparaing for possibly managing analphylaxis (5).
+Along with testing for eligibility and safety measures before giving COVID-19 vaccines, vaccine locations should have the necessary supplies to manage anaphylaxis, enforce postvaccination observation periods, and immediately treat those experiencing anaphylaxis sign and symptoms with injections of epinephrine, first-aid medication for anaphylaxis (4, 5).

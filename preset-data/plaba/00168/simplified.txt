@@ -1,0 +1,6 @@
+The normal sleep-wake cycle has daily changes in blood pressure, heart rate, and heart-related events.
+Sleep apnea (a disorder in which breathing is regularly interrupted during sleep) alters the sleep-heart interaction. The disease-related physical effects vary for obstructive and central sleep apnea, sleep apnea by throat blockage and brain dysfunction, respectively.
+Links exist between sleep-disordered breathing, which includes both types of sleep apnea, heart failure, irregular heart beats, stroke (brain damage from reduced brain blood supply), coronary artery disease, which is plaque buildup blocking blood flow, and cardiovascular death.
+Machine-based treatments include positive airway pressure and adaptive servo-ventillation, which both involve pumping air into the lungs, and phrenic nerve stimulation, which involves contracting the diaphragm to breathe, for central sleep apnea (sleep apnea by brain dysfunction).
+Treatment improves blood pressure, quality of life, and sleepiness, the last especially in those at risk for heart- and blood-related disease.
+Heart-related results from clinical trials are not definitive.

@@ -1,0 +1,6 @@
+Doctor: Hello, miss. How are you doing today?
+Patient: I have this massive headache.
+Doctor: I see. Do migraines usually run in your family?
+Patient: They do. Everyone has it. We've been having it for many years.
+Doctor: Oh, wow. I'm looking at your blood reports, and it shows you have high blood sugar. Does diabetes run in your family too?
+Patient: Yup. We all eat too much rice for dinner.

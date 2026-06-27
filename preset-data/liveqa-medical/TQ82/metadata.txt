@@ -1,0 +1,12 @@
+qid: TQ82
+source_file: 1-135801297.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What are the different types of diabetes and how do they affect the body?
+nlm_summary: What is diabetes?
+
+focus_entities:
+  [F1] (Problem) diabete
+question_types:
+  [T1] INFORMATION

@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        simple
+readability: 5.15
+split:       test
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'tiotropium'
+  [12:14] 'medical-jargon-google-easy' -> 'inhaled corticosteroid'
+  [15:21] 'medical-jargon-google-easy' -> 'long - acting beta2 - agonist'
+  [21:23] 'medical-jargon-google-easy' -> 'combination therapy'
+  [43:45] 'medical-jargon-google-easy' -> 'combined therapy'

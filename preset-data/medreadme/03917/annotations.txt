@@ -1,0 +1,12 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 3.7
+split:       test
+
+jargon_spans:
+  [5:6] 'abbr-medical' -> 'PSIs'
+  [7:11] 'medical-jargon-google-easy' -> 'patient incident reporting tool'
+  [12:13] 'abbr-medical' -> 'PIRT'
+  [24:25] 'abbr-medical' -> 'PSIs'
+  [29:33] 'medical-jargon-google-easy' -> 'Patient Measure of Safety'
+  [34:35] 'abbr-medical' -> 'PMOS'

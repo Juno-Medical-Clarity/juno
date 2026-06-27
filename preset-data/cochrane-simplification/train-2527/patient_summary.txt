@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2527  |  gem_id: gem-cochrane-simplification-train-2528  |  doi: 10.1002/14651858.CD003235.pub2
+
+No trials with clinically-important outcomes were identified. Many of the studies were conducted in convenience samples of patients. Many of the trials were methodologically flawed. Adverse events were rarely reported. Decrease in serum potassium was the most frequently reported outcome: for this outcome beta agonists and intravenous insulin-and-glucose were effective. The combination may be more effective than either alone.

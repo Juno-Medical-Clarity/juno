@@ -1,0 +1,216 @@
+# Smith Collection Transcript: RES0006
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in to see us
+
+Patient: So ive just been having this cough that i feel has just been getting worse and ive also been feeling a bit short of breath for the last few months
+
+Doctor: OK could you tell me when the cough started
+
+Patient: So i would say it started around two months ago
+
+Doctor: OK and has the cough been dry or have you been bringing up sputum
+
+Patient: uh its usually always uh produces like the sputum and its usually white or yellowish in colour
+
+Doctor: OK and how much sputum are you producing each day some sometimes its useful to think about like teaspoons or tablespoons
+
+Patient: I would say every time i cough like a teaspoon i probably have like i dont know maybe 5 to 10 teaspoons a day
+
+Doctor: uh ok and is there any particular time of day that the cough is worse
+
+Patient: um not really its pretty pretty much the same sometimes it is worse in the morning yeah and sometimes it gets better when i go out for a smoke
+
+Doctor: OK um and have you noticed any blood
+
+Patient: No um i havent noticed any blood
+
+Doctor: OK and have you had so you had shortness of breath when did that start
+
+Patient: Its around two months ago around the same time
+
+Doctor: OK and is this do you have shortness of breath at rest or is it when you exert yourself
+
+Patient: uh its it can happen like at anytime but worse when i am exerting myself
+
+Doctor: OK and then have you had a cough before
+
+Patient: uh not as frequently i would say not really it just started in the last two to three months
+
+Doctor: OK and have you had shortness of breath like this before
+
+Patient: Just throughout my life ive had asthma so when i am exercising too much or get exposed to like dust sometimes get shortness of breath
+
+Doctor: OK has there been anything um besides exerting yourself thats made that either the cough or or shortness of breath worse
+
+Patient: uh over the last year like ive had a couple of chest infections after going to the er they gave me some antibiotics but yeah when that happens it usually gets worse the shortness of breath and the cough
+
+Doctor: OK and uh do your symptoms feel like any of those times right now
+
+Patient: No i i dont feel like i have a fever and no other symptoms just the shortness of breath and cough
+
+Doctor: OK and have you been doing anything thats made it better
+
+Patient: Ive been taking some tylenol cold hasnt really helped too much ive tried my inhalers they sometimes help but ive never had have this frequent of coughing and shortness of breath before
+
+Doctor: OK um and how has your energy been have you been experiencing fatigue
+
+Patient: um when it gets really bad then i cant really step out of the house but other than that i feel like my energys still there
+
+Doctor: OK and you have it have you had any fevers or chills
+
+Patient: No
+
+Doctor: OK how about at a loss of smell
+
+Patient: No
+
+Doctor: um a loss of taste
+
+Patient: Nope
+
+Doctor: OK and have you had any chest pain
+
+Patient: No just sometimes when im like coughing a lot it gets a little bit uncomfortable but other than that no
+
+Doctor: OK um have you had any instances where you felt like your heart was racing
+
+Patient: No
+
+Doctor: OK how about being lightheaded or or like you were going to pass out
+
+Patient: No
+
+Doctor: OK have you had a runny nose or or a sore throat
+
+Patient: Nope
+
+Doctor: OK and how about headaches
+
+Patient: No headaches
+
+Doctor: Alright and have you had any wheezing
+
+Patient: um sometimes ive noticed it but i had it before like with asthma as well but not not that much
+
+Doctor: OK and how about abdominal pain
+
+Patient: No abdominal pain
+
+Doctor: Alright then any urinary problems
+
+Patient: Nope
+
+Doctor: Any bowel problems
+
+Patient: No
+
+Doctor: Any rashes
+
+Patient: Nope
+
+Doctor: OK and then how about any muscle aches or or joint aches or or body aches
+
+Patient: No nothing like that
+
+Doctor: Alright and you mentioned asthma but have you been diagnosed with any other medical conditions
+
+Patient: No just asthma
+
+Doctor: OK and do you use inhalers are there any other medications youre currently using
+
+Patient: Oh no just the salbutamol and like the steroid inhaler
+
+Doctor: OK yeah and how often are you using both of those
+
+Patient: So the steroid one i am using pretty much every day but the salbutamol i found ive been using a lot more recently i would say probably at least six to 10 times in a week
+
+Doctor: OK um that reminded me i i forgot to ask have you notice any changes to your voice
+
+Patient: um no not really
+
+Doctor: OK um and i was wondering if you had any allergies to medications
+
+Patient: No not that i know of
+
+Doctor: Alright and have you been in the hospital recently
+
+Patient: No
+
+Doctor: Alright so when was the last time that you had antibiotics
+
+Patient: I would say like six months ago
+
+Doctor: OK and any surgeries
+
+Patient: Nope
+
+Doctor: OK and did you get the flu shot this year
+
+Patient: Yep
+
+Doctor: OK great um and i was wondering if you could tell me a little bit about your living situation
+
+Patient: So i live in london um in a small apartment with my wife
+
+Doctor: OK do you have any pets around
+
+Patient: No no pets
+
+Doctor: Alright and um any exposures at work too like dust or any types of like chemicals like that
+
+Patient: No not really my work is pretty much a desk job so nothing like that
+
+Doctor: OK and do you smoke cigarettes
+
+Patient: Yeah yeah i smoke a lot of cigarettes just like i would say 30 cigarettes a day
+
+Doctor: OK and how long have you smoked for
+
+Patient: Id say probably at least 25 years
+
+Doctor: OK and sorry could you remind me of your your age again
+
+Patient: So i am 60 years old now
+
+Doctor: OK so you started smoking um around 35
+
+Patient: Yeah yeah
+
+Doctor: OK have you tried to quit
+
+Patient: Yeah tried to quit ive even quite a couple times but then just got back onto it yeah not not really ready to quit
+
+Doctor: OK thats fair enough if theres something that you wanted to talk about quitting smoking at another appointment we can arrange follow up for that
+
+Patient: Alright
+
+Doctor: Do you drink alcohol
+
+Patient: Not much just out say one or two beers on the weekend
+
+Doctor: Alright and you use any recreational drugs like cocaine crystal meth or iv drugs
+
+Patient: No nothing like that
+
+Doctor: Alright and has anything similar like this happened in your family before
+
+Patient: uh i think my um sister has a coplike she smokes a lot too but thats thats about i dont know if thats genetic
+
+Doctor: Oh ok um i so i mean anybody in the family have cancers
+
+Patient: um no not that i know of
+
+Doctor: Alright um so that that was all the questions that i wanted to ask on history was there any uh any other questions that you had
+
+Patient: No not really just wanted to get to the bottom of this
+
+Doctor: OK for sure so um we will run some investigations and likely get a chest x ray because its been a couple of months that these symptoms have been going on for but i think it could be related to your smoking and most likely um bronc chronic bronchitis but we can definitely will be looking into this and then also with possibly some pulmonary function tests as well
+
+Patient: OK sounds good

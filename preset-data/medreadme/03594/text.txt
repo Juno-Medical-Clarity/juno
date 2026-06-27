@@ -1,0 +1,1 @@
+For crime, the analysis used the proportion of total km of road in each MSOA with each lighting intervention.

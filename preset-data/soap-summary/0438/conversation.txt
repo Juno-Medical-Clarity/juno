@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0438
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello. Are you ready for your surgery today? I'm ready as can be. This isn't my first rodeo. I see. Have you had surgeries before? Yeah, I have. I think it's in my report that you have with you. You're right. It says here you've had some stripping of veins in your legs, a tonsillectomy, and a adenoidectomy.

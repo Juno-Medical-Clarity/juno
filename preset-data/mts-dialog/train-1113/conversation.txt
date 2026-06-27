@@ -1,0 +1,8 @@
+Doctor: So, do you live in the area?
+Patient: Yes, my husband and I have lived here for a long time. He died a few years back.
+Doctor: I'm sorry to hear that.
+Patient: It's alright.
+Doctor: Do you smoke or drink?
+Patient: No, I don't.
+Doctor: Do you use any illicit drugs or substances?
+Patient: No, I don't do anything like that.

@@ -1,0 +1,4 @@
+Doctor: Any major surgeries in the past?
+Patient: Not too many, but a catheter was put in my heart.
+Doctor: Oh, so cardiac catherization, correct?
+Patient: Yep.

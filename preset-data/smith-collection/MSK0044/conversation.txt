@@ -1,0 +1,136 @@
+# Smith Collection Transcript: MSK0044
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: I just had uh well it was just uh i came from football practice i uh just felt like somebody fell on me while like while i was on the ground and its like ive had this shoulder pain immediately afterwards and i can see a like lump um kind of pointing out like in my skin here on my on my um clavicle or shoulder bone
+
+Doctor: Okay is it the right side or the left side
+
+Patient: uh its the right side
+
+Doctor: The right side okay um okay and how long ago did this happen
+
+Patient: It happened about just a couple of hours ago yeah just about 2 hours ago
+
+Doctor: Okay um um did someone did someone fall onto your side okay uh so your main are you having mainly pain in that in that area or is it going to other places
+
+Patient: Its mostly just the pain like right in that area im not feeling it anywhere else
+
+Doctor: Okay and um what kind of pain are you feeling is it sharp stabbing or is it aching
+
+Patient: Its really sharp it feels like im im getting stabbed in the shoulder
+
+Doctor: Okay i see and on a scale of 0 to 10 10 being the worst pain youve felt in your life how much would you rate it
+
+Patient: uh this is like a 10 it hurts really bad
+
+Doctor: Okay and um are able to do any movements or are you just kind of holding your arm up with your other other arm
+
+Patient: I yeah ive just been holding my arm up by uh i kind of made a sling out of yeah like the coaches helped make a sling out of one of the uh what we like a shirt or something like that at the practice and so ive been just kind of holding my arm against my chest with my elbow flexed i havent really moved it at all
+
+Doctor: I see okay um and if you were to describe just what it looks like right now does your shoulder kind of seem like its sagging
+
+Patient: Yeah it does
+
+Doctor: Okay and do you notice any point near your shoulder like clavicle area that has any bruising swelling looks like red anything like that
+
+Patient: um like maybe a little bit of bruising and swelling like over the area where i can see like my my skin pointing up but um yeah thats the only area
+
+Doctor: Okay i see okay any other symptoms like any pain in any other joints muscles
+
+Patient: No just the pain right there
+
+Doctor: Okay alright um and uh other than that have you previously had any popped joints before
+
+Patient: uh i no i havent
+
+Doctor: Okay and no other trauma or anything in the same region
+
+Patient: No i havent had any pains there before or anything like that
+
+Doctor: Okay i see okay um and have you been diagnosed with any medical conditions in the past
+
+Patient: uh no i havent
+
+Doctor: Okay alright and did you hurt yourself anywhere else like did you hurt your head at all um suffer any loss of consciousness or anything like that
+
+Patient: No no i i didnt i was kind of just like laying on my side and they fell like on my left shoulder and i i just got squished
+
+Doctor: Okay and did it have any impact on your chest like you do you feel short of breath or anything like that
+
+Patient: No shortness of breath kind of knocked the wind out of me at at first but im okay now
+
+Doctor: Okay i see thats good um okay and other than uh so no medical conditions do you take any medications at all
+
+Patient: um yeah ill take like uh just some allergy medication every once in a while when its like just seasonal allergies i think to just some environmental triggers is all
+
+Doctor: Okay and and do you have any allergies to any medications at all
+
+Patient: uh no i dont believe so
+
+Doctor: Okay anything that youve tried that has helped or made your pain worse
+
+Patient: No i havent i havent taken anything yet i just uh like basically came right from practice to the to the hospital
+
+Doctor: Okay um have you had any kind of fevers or chills
+
+Patient: No
+
+Doctor: Any skin changes like rashes
+
+Patient: No i havent had any rashes
+
+Doctor: Okay any weakness in your upper or lower extremities besides like the area thats affected
+
+Patient: No
+
+Doctor: No okay um any dizziness fainting episodes
+
+Patient: uh no nothing like that
+
+Doctor: Okay and your hearing and vision is alright right now
+
+Patient: It is yeah i havent had any problems with that
+
+Doctor: Okay and have you had any kind of concussions or anything in the past
+
+Patient: um no i havent had any
+
+Doctor: Alright uh have you been hospitalized or had any surgeries in the past
+
+Patient: um no not not ever
+
+Doctor: Okay any family history of any medical conditions
+
+Patient: uh no no nothing that i can think of everybodys pretty healthy
+
+Doctor: Okay um and whats your living situation like right now
+
+Patient: So i live with both of my parents and um i have a younger brother and a younger sister as well we live in a in a house
+
+Doctor: Okay alright and um do you work currently or are you a student
+
+Patient: Yeah im in high school and um i i work parttime at the grocery store as well but uh its not that often though because ive just been been playing sports on the football team we have a lot of practices and games and stuff
+
+Doctor: Okay um do you drink alcohol
+
+Patient: uh i sometimes i with friends um weve had a couple of beers here and here and there but i mean its its not something that ive done very often yeah weve been pretty safe i feel like
+
+Doctor: Okay and do you smoke cigarettes or marijuana or use any recreational drugs
+
+Patient: No nothing like that
+
+Doctor: Okay alright so those are all the questions i had for you today well do a full physical examination of the area um we we will definitely get an xray of the shoulder and clavicle to see what kind of it seems like you have a clavicular fracture from just the mechanism of the injury as well as everything you were describing um but it is important to understand how like what kind of clavicle injury it is and where its affected if its in the middle area on like the outer areas of the clavicle um and how much its displaced because that will determine if we just need to reduce it here and then give you a sling and then you can go home thats usually the case but sometimes you may require surgery as well and we would need to refer you to an orthopaedic surgeon so yeah well well get the xray done and if you need anything for pain currently we will give you some medications here um and then well go from there
+
+Patient: Alright thank you
+
+Doctor: Youre welcome um ill be here with you shortly
+
+Patient: That sounds good thank you so much

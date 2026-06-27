@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1605  |  gem_id: gem-cochrane-simplification-train-1606  |  doi: 10.1002/14651858.CD009319.pub3
+
+Conclusions: There are no randomized clinical trials on this topic; some institutional, non-clinical trials studies have suggested improved overall survival and seizure control with higher extent of resection. However, physicians should approach each case individually and weigh the risks and benefits of biopsy versus surgical resection, as well as incorporate patient preference into their clinical decision-making. Prognostic factors such as patient age, tumor size, and tumor location as well as potential implications for quality of life should be taken into account.

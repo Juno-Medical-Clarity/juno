@@ -1,0 +1,168 @@
+# Smith Collection Transcript: RES0198
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: um hi yeah ive had the stuffy nose um thats been on and off as well as a runny nose for the past week and it doesnt seem to be getting any better so i thought i should come in and get it checked out in case i have covid
+
+Doctor: OK yeah i know for sure thats a good idea so how long have you had this for
+
+Patient: A week now
+
+Doctor: A week and did so what started first was it the runny nose or like the stuffiness
+
+Patient: It felt pretty stuffy at first but now its mostly running
+
+Doctor: OK and are you coughing at all
+
+Patient: No
+
+Doctor: No ok and the runny nose what kind of content are you producing or draining is it mainly like clear or is there any color to it
+
+Patient: Its mostly clear
+
+Doctor: OK and is it mainly just congestion and drainage from your nose or are you feeling and go at the back of your throat as well
+
+Patient: uh no its just mostly for my nose
+
+Doctor: OK any other symptoms like sore throat shortness of breath fevers or chills
+
+Patient: No
+
+Doctor: No ok and is this like something thats constant or does it come and go
+
+Patient: Ah its its ah its been pretty constant for the past week
+
+Doctor: OK has this happened to you before at all
+
+Patient: No well actually ive had ive had a cold before but not recently maybe like five years ago
+
+Doctor: OK have you tried any over the counter medications at all
+
+Patient: um ive tried like decongestants and thats not well i guess my nose is runny now so that worked a little bit
+
+Doctor: OK ok and have you been in contact with anyone whos been sick recently
+
+Patient: Uhm no i dont think so my i have um a nephew who i live with who goes to daycare
+
+Doctor: OK and has he been sick at all
+
+Patient: No hes been fine
+
+Doctor: OK any recent travel at all
+
+Patient: No
+
+Doctor: No ok any headaches or nausea or vomiting
+
+Patient: Nope nothing like that
+
+Doctor: OK any fatigue
+
+Patient: A little bit
+
+Doctor: OK any loss of sense of taste or smell
+
+Patient: um no um not that ive noticed
+
+Doctor: OK any sort of like chest pain or racing sensation of racing of yourbheart or anything like that
+
+Patient: No
+
+Doctor: No ok any changes in your bowel movements
+
+Patient: No
+
+Doctor: How about your any difficulties in urinating
+
+Patient: um no
+
+Doctor: OK have you been sleeping and eating well
+
+Patient: Yes
+
+Doctor: OK any weight changes like any significant weight loss recently
+
+Patient: No no no nothing like that
+
+Doctor: OK at home or at work home any exposure to like fumes dust or animals
+
+Patient: No
+
+Doctor: OK and have you been diagnosed with any medical conditions in the past
+
+Patient: um i have type one diabetes
+
+Doctor: OK and when were you diagnosed with that
+
+Patient: When i was like 7
+
+Doctor: OK and so you have your insulin medication and your are you all up to date with that
+
+Patient: Yes
+
+Doctor: OK and do you see an endocrinologist
+
+Patient: I do
+
+Doctor: OK alright any medications that you are on besides insulin
+
+Patient: uh no
+
+Doctor: No ok any allergies at all
+
+Patient: No
+
+Doctor: OK have you been hospitalized or had any surgeries before
+
+Patient: No
+
+Doctor: No ok any family history of any medical conditions in particular with the lungs or the heart
+
+Patient: No
+
+Doctor: No any autoimmune diseases
+
+Patient: No
+
+Doctor: OK and currently right now do you work or do you go to school
+
+Patient: I’m in school right now
+
+Doctor: OK and so are you living where are you living right now
+
+Patient: I live in an apartment by myself
+
+Doctor: OK and currently do you use any recreational drugs like marijuana or anything
+
+Patient: uh no not ok so not frequently but maybe like once a month ill have an edible
+
+Doctor: OK any other recreational drugs like cocaine and heroin anything like that
+
+Patient: Oh no
+
+Doctor: No and you drink alcohol
+
+Patient: uh no
+
+Doctor: And do you smoke tobacco
+
+Patient: No
+
+Doctor: Yeah those were all the questions that i had for you today do you have any questions for me
+
+Patient: I yeah how do i get rid of this and its really been bugging me
+
+Doctor: Yeah it kind of so just a stuffy nose in the runny nose it seems like its most likely a viral infection like the common cold it takes a few weeks for the symptoms to get relieved but theres not much that we can do besides supportive care so make sure you get you stay well hydrated you can use over the counter medications uh like tylenol cold now if you to relieve some of your symptoms but since right now were in a pandemic some of these symptoms can also be seen in covid patients so we will also get a swab done for you today and you should have the results back by 48 hours um until then we recommend that you stay isolated in your own home and not see anyone else and then once the results come back youll get further instructions from public health
+
+Patient: OK that sounds great thank you
+
+Doctor: Your welcome take care
+
+Patient: You too bye

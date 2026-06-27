@@ -1,0 +1,1 @@
+This function can be used to calculate chemical and physical properties such as the probability of finding an electron in any specific region.

@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1389
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports high blood pressure.
+- Patient mentions that blood pressure has been consistently high during past visits.
+- Patient states they have been monitoring their blood pressure at home and assert it is "well under control."
+- Patient did not bring their home monitoring readings to the appointment.
+- Patient expresses that they are "a little bothered" by the high blood pressure.
+
+Objective:
+- Blood pressure is noted to be high by the clinician during the visit.
+- No specific values or measurements provided.
+
+Assessment:
+- Blood pressure is consistently high based on previous visits.
+- Patient appears to be in denial about the severity of the condition.
+
+Plan:
+- No specific actions, medications, tests, or follow-up mentioned.

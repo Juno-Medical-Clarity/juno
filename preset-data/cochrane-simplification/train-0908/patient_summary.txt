@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0908  |  gem_id: gem-cochrane-simplification-train-909  |  doi: 10.1002/14651858.CD004115.pub2
+
+A review of the literature was undertaken to determine how effective rectal 5-ASA (e.g. enemas, suppositories or foam) is for treating distal UC. Thirty-eight studies met the criteria for inclusion in the review. Pooled results from these studies show that rectal 5-ASA is superior to placebo (fake suppositories, enemas or foam) for improving symptoms, improving the appearance of the bowel lining at colonoscopy, and improving the appearance of biopsies of the bowel examined microscopically. Rectal 5-ASA is also superior to rectal steroids for improving symptoms. Side effects were generally mild in nature and included abdominal pain or distention, nausea and anal discomfort or irritation. From these results, it was concluded that rectal 5-ASA should be a first-line treatment for patients with mild to moderately active distal UC.

@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [9:12] 'general-complex' -> 'randomised clinical trials'
+  [13:14] 'medical-jargon-google-easy' -> 'flumazenil'
+  [15:16] 'general-complex' -> 'placebo'

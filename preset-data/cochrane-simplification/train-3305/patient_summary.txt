@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3305  |  gem_id: gem-cochrane-simplification-train-3306  |  doi: 10.1002/14651858.CD006595.pub3
+
+Only a single multi-centre study could be included in this review. Evidence is current to January 2014. This study was funded by the National Health and Medical Research Council of Australia. This study of 272 children in five Australian hospitals reported that those randomly assigned to earlier treatment according to a clinical pathway showed improved clinical outcomes (cough resolved earlier and quality of life was better) compared with those who were randomly assigned to later use of the pathway. No adverse events were reported. The quality of evidence was graded as moderate. Evidence is limited, as only one study could be included in this review. This study was unable to completely blind participants to the clinical pathway.

@@ -1,0 +1,15 @@
+There is little evidence about the connection beween blood levels of vitamin B6 and later mortality (death rate).
+Researchers studied the connection between blood levels of vitamin B6 levels and mortality from all causes, cardiovascular disease, and cancer using facts collected from the National Health and Nutrition Examination Survey (NHANES).
+Our study examined 12,190 adults participating in NHANES from 2005 to 2010 in the United States.
+Mortality was linked to National Death Index (NDI) records up to 31 December 2015.
+The chemical, pyridoxal 5'-phosphate (PLP), is the active form of vitamin B6 in the body.
+Vitamin B6 blood levels were defined as deficient (not enough), insufficient (low), and sufficient (enough) depending on the level of PLP in the blood..
+Researchers created a model to accurately estimate the risk of death (Cox model) between blood levels of vitamin B6 and PLP and mortality from all causes and from specific causes.
+This study showed vitamin B6 was sufficient in 70.6% of participants. But, 12.8% of participants had deficient vitamin B6 blood levels.
+During follow-up, a total of 1244 deaths were recorded, including 294 cancer deaths and 235 cardiovascular disease deaths.
+Participants with higher blood vitamin B6 had a 15% lower risk of all-cause mortality and a 19% lower risk of cardiovascular disease mortality for each unit level of PLP (using the Cox model).
+Higher PLP blood levels were not significantly associated with a lower risk of cancer mortality (using the Cox model).
+Compared with sufficient vitamin B6 levels, deficient and insufficient vitamin B6 levels were significantly associated with a higher risk for all-cause mortality (Cox model).
+There was no significant association for cause-specific mortality.
+Participants with higher levels of vitamin B6 had a lower risk for all-cause mortality.
+These findings suggest that maintaining a sufficient level of  vitamin B6 in the blood may lower the all-cause mortality risk in the general population.

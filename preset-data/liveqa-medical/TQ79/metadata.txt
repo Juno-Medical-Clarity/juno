@@ -1,0 +1,12 @@
+qid: TQ79
+source_file: 1-123260425.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What causes shingles and how can it be prevented?
+nlm_summary: How to prevent shingles?
+
+focus_entities:
+  [F1] (Problem) shingles outbreak
+question_types:
+  [T1] PREVENTION

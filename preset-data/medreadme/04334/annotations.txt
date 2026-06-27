@@ -1,0 +1,13 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 5.15
+split:       test
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'topical corticosteroids'
+  [10:11] 'medical-jargon-google-easy' -> 'tacrolimus'
+  [12:13] 'medical-jargon-google-easy' -> 'pimecrolimus'
+  [20:21] 'medical-name-entity' -> 'Atopiclair'
+  [25:27] 'medical-name-entity' -> 'Graceway Pharmaceuticals'
+  [29:30] 'medical-jargon-google-easy' -> 'ciclosporin'
+  [31:32] 'medical-jargon-google-easy' -> 'azathioprine'

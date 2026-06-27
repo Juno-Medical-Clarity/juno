@@ -1,0 +1,5 @@
+pmid:        34578855
+question:    70
+adaptation:  adaptation3
+title:       Association of Serum Vitamin B6 with All-Cause and Cause-Specific Mortality in a Prospective Study
+sentences:   15

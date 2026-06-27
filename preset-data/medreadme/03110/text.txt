@@ -1,0 +1,1 @@
+The applicability of these findings to the NHS is somewhat limited because existing confidential patient access schemes could not be used in the analysis.

@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1353
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient was adopted and does not know their family medical history.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

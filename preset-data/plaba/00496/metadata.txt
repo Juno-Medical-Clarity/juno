@@ -1,0 +1,5 @@
+pmid:        31976835
+question:    38
+adaptation:  adaptation2
+title:       A Novel Hydrocolloid Film Based on Pectin, Starch and Gunnera tinctoria and Ugni molinae Plant Extracts for Wound Dressing Applications
+sentences:   12

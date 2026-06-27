@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0435
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any significant medical conditions in your history that I should know about? What, like high blood pressure? Well, it could be anything from high blood pressure, to depression, to something as serious as cancer. Oh, no, I don't have anything like that, at least not that I know if.

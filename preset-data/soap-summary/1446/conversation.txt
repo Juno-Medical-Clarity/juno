@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1446
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you taking any medicines? Just Tylenol for my pain. Okay.

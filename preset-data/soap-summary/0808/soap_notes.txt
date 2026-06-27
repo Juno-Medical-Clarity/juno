@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0808
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No family history of colon cancer or unusual polyps.
+- Father died of mesothelioma.
+- Mother died of Hodgkin's Lymphoma.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

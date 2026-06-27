@@ -1,0 +1,8 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [10:14] 'medical-jargon-google-easy' -> 'health - care professionals'
+  [15:16] 'abbr-medical' -> 'HCPs'

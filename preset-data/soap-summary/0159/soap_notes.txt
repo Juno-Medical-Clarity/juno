@@ -1,0 +1,49 @@
+# SOAP Notes — Sample 0159
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 4-day history of worsening cough (started 4 days ago and has been getting worse, occurring at least every hour for the past 2 days)
+- Dry cough with no sputum or blood
+- Cough is harsh in quality and 7/10 in severity
+- Smoking triggers the cough
+- Shortness of breath only after coughing episodes
+- No chest pain, palpitations, or leg swelling
+- Dizziness on standing this morning
+- Loss of taste and smell starting this morning
+- Fatigue and myalgias
+- Diarrhea for the past 2 days (mostly fluid, small volume, every few hours)
+- Central/generalized abdominal pain for the past 2 days, 4/10 in severity, achy in quality, no aggravating/alleviating factors
+- Nausea but no vomiting
+- No confusion, urinary symptoms, or rashes
+
+PMHx:
+- Meniscus repair surgery 10 years ago
+- No chronic medical conditions
+
+Medications: None
+
+Allergies: None
+
+SocHx:
+- 10 pack-year smoking history, currently smoking 0.5 PPD (has cut down from 1 PPD)
+- Occasional alcohol use (1 glass of wine on Sundays)
+- Lives in a townhouse with wife and daughter
+- Wife has been fatigued and reports an onset of cough
+
+FHx:
+- No family history of lung, heart, GI, or liver conditions
+- No family history of cancer
+
+Immunizations: Up to date
+
+Objective:
+- Vitals pending
+
+Assessment:
+- Suspected COVID-19 infection
+
+Plan:
+- COVID-19 swab
+- Self-isolation for 14 days, including isolation from family members when possible
+- Public health to follow up for contact tracing
+- If COVID-19 negative, consider other viral infection

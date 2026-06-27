@@ -1,0 +1,8 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'proprioception'
+  [10:12] 'medical-jargon-google-easy' -> 'muscle tone'

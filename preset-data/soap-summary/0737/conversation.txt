@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0737
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, miss. Could you verify your age, please? I'm fifty five years old. Great. What is the reason for your visit today? I've been having a lot of problems recently, so I decided to come get it checked out by you. I see. What kind of problems are you experiencing? Oh, it's a long list. Here it is. Thank you. Let me take a look. Looks like you have some general allergies and food allergies, loss of taste, problems with your G I tract, asthma, G E R D, and dry mouth or xerostomia. Yeah, that sounds about right. I think I forgot to add it, but I also have bad allergies during the spring time. Oh, I see. I would describe that as environmental inhalant allergies.

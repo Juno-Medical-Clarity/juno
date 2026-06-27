@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1445
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient reports no family history of thyroid problems.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

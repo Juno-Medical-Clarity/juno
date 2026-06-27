@@ -1,0 +1,1 @@
+To identify common genetic variants that modify the breast cancer risk associated with BRCA2 mutations, we have built upon our previous work in which we examined genetic variants across the genome in relation to breast cancer risk among BRCA2 mutation carriers.

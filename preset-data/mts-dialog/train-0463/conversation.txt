@@ -1,0 +1,4 @@
+Doctor: How old are you?
+Patient: I am twenty four.
+Doctor: What brings you in today?
+Patient: I have been having this back pain for a long time. I thought I should come and get it checked out because it has not gotten any better.

@@ -1,0 +1,14 @@
+Doctor: So, do you drink or smoke, sir?
+Patient: I'd say I have the occasional drink, but I don't smoke.
+Doctor: What do you do for a living?
+Patient: I'm a nursing aid in a nursing home right now.
+Doctor: Do you work the normal day shift?
+Patient: No, I work the second shift, so I work some late nights and early mornings.
+Doctor: Are you back at Wichita State this semester?
+Patient: No, I decided to take some time off.
+Doctor: Is everything okay?
+Patient: Yeah, I'm just really tired, so I decided to step away for a little.
+Doctor: That's understandable. Are you dating right now?
+Patient: Yes, I've been dating my boyfriend for a while now.
+Doctor: Is there any significant stress in your relationship?
+Patient: No, everything is going really well.

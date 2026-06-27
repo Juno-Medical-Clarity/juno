@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1100
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient has been advised to take care of themselves and follow up with Doctor X on Monday or Tuesday.
+- The patient is instructed to continue taking their medicines except for Prozac.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- Follow up with Doctor X on Monday or Tuesday.
+- Continue taking medications except for Prozac.

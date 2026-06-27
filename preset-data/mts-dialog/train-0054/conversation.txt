@@ -1,0 +1,6 @@
+Doctor: Tell me a little bit about your family history.
+Patient: My dad and grandpa both had type two diabetes. My son is struggling with type one diabetes at the moment.
+Doctor: I'm sorry to hear that. Does anyone in your family have heart problems?
+Patient: No.
+Doctor: How about cancer?
+Patient: Two of my cousins had breast cancer.

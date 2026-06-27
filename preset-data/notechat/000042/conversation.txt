@@ -1,0 +1,49 @@
+1. Doctor: Good morning, what brings you to the emergency department today?
+
+2. Patient: Hi doctor, I have been feeling subfebrile temperatures for the past week and I have a localized pain in my right popliteal fossa for the past three days.
+
+3. Doctor: Hmm, I see. Can you describe the pain in more detail?
+
+4. Patient: It's a sharp pain that comes and goes, and it's mostly concentrated in my right knee.
+
+5. Doctor: Okay, and when did you start feeling these symptoms?
+
+6. Patient: Well, I was immobilized for several days after a minor sports injury and that's when I started feeling the subfebrile temperatures and the pain in my knee.
+
+7. Doctor: I see. Do you have any prior medical history I should know about?
+
+8. Patient: No, I don't have any permanent medication and I don't have any prior medical history except for an asymptomatic ATD diagnosed when I was six.
+
+9. Doctor: Can you tell me more about your ATD diagnosis?
+
+10. Patient: Yes, I was diagnosed with ATD through a functional antithrombin assay and my antithrombin activity was 57% at the time, which was lower than the age adapted reference of 77-125%.
+
+11. Doctor: Hmm, and did that diagnosis lead to any therapeutic consequences?
+
+12. Patient: No, there were no clinical signs of thrombosis at the time and so the diagnosis of ATD didn't lead to any therapeutic consequences.
+
+13. Doctor: I see. And why was the screening for ATD carried out at such an early age?
+
+14. Patient: It was carried out on parental request because my mother was diagnosed with ATD in her early adulthood.
+
+15. Doctor: Hmm, and has your mother been diagnosed with anything else recently?
+
+16. Patient: Yes, she has very recently been diagnosed with IVCA and her preexisting chromogenic test results showed an antithrombin activity of 50%, which is below the age adjusted reference range of 80 to 130%.
+
+17. Doctor: I see. And have you been tested for any hereditary thrombophilic disorders like protein S deficiency, protein C deficiency, factor V Leiden mutation, prothrombin-mutation, or antiphospholipid syndrome?
+
+18. Patient: Yes, I have been tested and those disorders have been ruled out in both me and my mother.
+
+19. Doctor: Okay, and can you tell me about your latest blood analysis results in the emergency department?
+
+20. Patient: Yes, my D-dimers were elevated to 25 mg/l FEU and my C-reactive protein was 184 mg/l. My antithrombin activity was also reduced to 61% on admission. A vascular ultrasound examination confirmed the clinically suspected thrombosis of the right lower extremity involving the external iliac, common and superficial femoral as well as the popliteal vein. I was treated with continuous infusion of unfractionated heparin at a therapeutic dose including several bolus administrations and antithrombin (4000 IE).
+
+[Patient's Family Joins]
+
+Doctor: I'm sorry to inform you that your son has been diagnosed with a thrombosis of the right lower extremity. He has been treated with continuous infusion of unfractionated heparin and antithrombin. However, I would like to keep him under observation for a few more days to monitor his progress.
+
+Family: Thank you, doctor. We understand. We'll be here to support him.
+
+Doctor: Of course, and if you have any questions or concerns, please don't hesitate to ask.
+
+Family: Thank you, doctor. We appreciate your help.

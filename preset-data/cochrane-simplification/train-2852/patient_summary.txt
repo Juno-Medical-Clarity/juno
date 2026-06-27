@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2852  |  gem_id: gem-cochrane-simplification-train-2853  |  doi: 10.1002/14651858.CD006378.pub2
+
+Fourteen studies met our inclusion criteria for this review and none of the exclusion criteria. Aspirin, steroid and non-steroidal anti-inflammatory drugs (NSAIDs) (traditional and the selective cyclooxygenase-2 (COX-2) inhibitors) showed no significant benefit in the treatment of Alzheimer's disease. Therefore, the use of these drugs cannot be recommended for the treatment of Alzheimer's disease.

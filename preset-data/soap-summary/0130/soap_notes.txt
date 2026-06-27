@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0130
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Stuffy nose for 3 days with yellow nasal discharge (enough to fill palm of hand), loss of smell, and facial pressure/headache for 2 days
+- Symptoms are worsening, with facial pressure being most troubling
+- Tried nasal sprays and decongestants without relief
+- Feeling tired for past 3 days
+- Mucus buildup and postnasal drip
+- Difficulty sleeping due to facial pressure
+- Denies fever, chills, cough, sore throat, shortness of breath, nausea, vomiting, chest pain, constipation, diarrhea, or urinary issues
+- Reports viral infection 1 week ago that resolved on its own
+
+PMHx:
+- Appendectomy at age 12
+- Seasonal allergies
+- Denies other medical conditions or regular medications (takes multivitamins)
+
+SocHx:
+- Lives with husband and 3-year-old daughter
+- Denies smoking or alcohol use
+- Recreational marijuana use (1-2 joints/week)
+
+FHx:
+- Asthma
+
+Objective:
+- Vitals signs not provided
+- Physical exam not performed
+
+Assessment:
+- Likely acute bacterial sinusitis (based on duration of symptoms, yellow nasal discharge, and lack of improvement with OTC medications)
+
+Plan:
+- Start amoxicillin (dosage and duration not specified)
+- Follow-up appointment (phone or clinic) after completion of antibiotic course

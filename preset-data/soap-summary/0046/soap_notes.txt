@@ -1,0 +1,42 @@
+# SOAP Notes — Sample 0046
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 4-day history of worsening cough (started intermittent, now constant - few times per hour, day and night, interrupting sleep)
+- Mostly dry cough, no sputum or blood
+- No specific triggers identified
+- Tea and cough syrups tried but ineffective
+- Harsh quality cough
+- Severity: 6/10
+- Shortness of breath started shortly after cough onset, worse with exertion and coughing fits
+- Reduced sense of smell over the last 2 days, impacting taste
+- Subjective fevers and sweats, no temperature taken
+- Fatigue and myalgias for the past 2 days
+
+Past Medical History:
+- Denies past hospitalizations or surgeries
+- No chronic medical conditions
+- Medications: multivitamin daily
+- Allergies: cats
+- Immunizations up to date
+- Denies family history of lung conditions, heart conditions, or cancers
+
+Social History:
+- Occasional marijuana use (once weekly)
+- Denies alcohol or tobacco use
+- Lives in a house with wife and 3 kids, all currently well
+- Works in sales, frequent in-person client meetings
+
+Objective:
+- Vitals pending
+
+Assessment:
+- Suspect COVID-19 given acute respiratory symptoms, anosmia, and possible sick contacts
+
+Plan:
+- COVID-19 PCR swab
+- Patient advised to isolate for 14 days, including from family when possible
+- If COVID-19 negative, consider other viral illnesses
+- Supportive care: hydration, rest, nutrition
+- Return to ER if high fever, neurological symptoms, or worsening dyspnea
+- Public health to follow up if COVID-19 positive for contact tracing

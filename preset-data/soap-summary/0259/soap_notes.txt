@@ -1,0 +1,46 @@
+# SOAP Notes — Sample 0259
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 1-month history of lower back pain radiating to right buttock and leg
+- Pain is constant, described as mild aching initially, now sharp and burning (severity 5-6/10 usually, 8/10 at worst)
+- Burning sensation extends from right buttock to right leg
+- Mild tingling sensation in right leg
+- Pain worse with physical activity, walking, and standing for prolonged periods
+- Pain worse with back extension and certain lying positions
+- Ibuprofen and topical ointments provide temporary relief
+- Denies fevers, chills, night sweats, fatigue, rashes, cough, cold symptoms, joint/muscle pain elsewhere, bowel/bladder changes, urinary/fecal incontinence, weight changes
+- Reports difficulty walking and limping, favoring left leg
+- Using cannabis oil for past month for pain relief with mild improvement
+
+PMHx:
+- Lower back injury at work (assembly line) 6-7 years ago, resolved with conservative treatment
+- Denies other medical conditions
+- Medications: calcium, vitamin D, multivitamins
+- No known drug allergies
+- No previous surgeries or hospitalizations
+- No family history of autoimmune, heart, or lung conditions
+
+SocHx:
+- Lives in apartment with husband
+- Works from home running a daycare
+- Denies smoking
+- Alcohol use: 1 glass of wine per week
+- Cannabis oil use for past month for pain relief
+
+Objective:
+- Tenderness to palpation over lower back (sharp pain)
+- No swelling, redness, or warmth noted in painful areas
+- Able to bend forward and laterally
+- Unable to raise right leg while lying flat due to pain
+- Tingling sensation reproduced with movement
+- Mild limp noted, favoring left leg
+
+Assessment:
+- Likely sciatica secondary to nerve impingement
+
+Plan:
+- X-ray and MRI of lumbar spine
+- Prescribe anti-inflammatory medications for pain relief
+- Refer to physiotherapy for back protection techniques and strengthening exercises
+- Follow-up after imaging results

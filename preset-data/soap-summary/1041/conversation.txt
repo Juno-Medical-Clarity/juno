@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1041
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there! I am Doctor Sherman. Hello! It is nice to meet you. It looks like your P C P sent you to us for a possible prostate problem. Yes. I am nervous. Do not be nervous. We will start with discussing the symptoms you have been experiencing, a physical exam and then we will get a urine sample if you are able. Okay.

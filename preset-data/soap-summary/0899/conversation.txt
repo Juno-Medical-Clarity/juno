@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0899
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you? Not good. What brings you here today? This ulcer in my ankle is just not healing. Is it on both sides? No, just on the right side.

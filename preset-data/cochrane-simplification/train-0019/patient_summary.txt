@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0019  |  gem_id: gem-cochrane-simplification-train-20  |  doi: 10.1002/14651858.CD000400.pub4
+
+Authors search medical databases and identified 19 randomised controlled trials (RCTs; clinical studies where people are randomly put into one of two or more treatment groups) with 759 women that could be included in the review, but data from only nine trials were suitable for analyses. Women sought help for HMB when it affected their quality of life. Levels of prostaglandin (a naturally occurring hormone) are higher in women with HMB and are reduced by NSAIDs. The review of trials found that NSAIDs were modestly effective in reducing HMB, but other medicines, such as danazol, tranexamic acid and levonorgestrel-releasing intrauterine system (LNG IUS), are more effective. These results were based on a small number of low- to moderate-quality trials. The evidence quality ranged from low to moderate, the main limitations being poor reporting of study methods and imprecision resulting from small study numbers.

@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [15:16] 'general-complex' -> 'mechanistic'
+  [16:20] 'medical-jargon-google-easy' -> 'host - parasite framework'
+  [33:36] 'medical-jargon-google-easy' -> 'within - host'

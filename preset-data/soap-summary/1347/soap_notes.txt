@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1347
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a farmer.
+- Patient is married and works with his wife on the farm.
+- No history of tobacco use (smoking or chewing).
+- No use of drugs (specifically denies cocaine).
+- No alcohol consumption.
+ 
+Objective:
+- [No measurable or observable data provided.]
+
+Assessment:
+- [No clinician's interpretation, diagnoses, or clinical impressions provided.]
+
+Plan:
+- [No actions, medications, tests, follow-up, or patient education explicitly mentioned.]

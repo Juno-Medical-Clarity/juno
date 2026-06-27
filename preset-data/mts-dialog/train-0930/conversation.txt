@@ -1,0 +1,9 @@
+Doctor: Hi Gina, how are you?
+Patient: I wish, I was in better state but yeah, I am okay.
+Doctor: I understand. So, you are here for your follow up post your surgeries, right?
+Patient: Yes, I am.
+Doctor: Alright, I see you recently had your left breast removed due to cancer.
+Patient: Correct.
+Doctor: And then you also had your right knee replaced due to arthritis in your kneecap, right?
+Patient: Yeah, I had arthritis in my knee bone so I got it replaced.
+Doctor: Hm.

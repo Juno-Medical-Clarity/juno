@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0765
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Fever on and off for the past few days
+- Severity: Not specified, but indicated as not feeling great
+- Duration: A few days
+- Associated symptoms: No cold-like symptoms (cough, nasal congestion, headache, nausea)
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: No recent sick contacts; lives with three roommates who seem fine
+
+Objective:
+- Temperature taken right before the visit and by the nurse upon arrival; specific values not provided.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- Patient has taken Tylenol for fever, which has helped a bit. No further actions, medications, or follow-up mentioned.

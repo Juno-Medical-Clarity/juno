@@ -1,0 +1,5 @@
+pmid:        29179736
+question:    42
+adaptation:  adaptation1
+title:       Phylogenetic analysis of the core histone doublet and DNA topo II genes of Marseilleviridae: evidence of proto-eukaryotic provenance
+sentences:   14

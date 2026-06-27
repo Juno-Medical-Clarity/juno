@@ -1,0 +1,23 @@
+Doctor: Welcome back to the clinic, Miss A B C.
+Patient: Thank you.
+Doctor: It looks like we last saw you June twenty first, this year. Doctor X and Y referred you for the evaluation of your pinched nerve in the C six regain on the left side. I also see that we are following up on the significant rotator cuff tear on the left side.  Did you get scheduled for the surgery with Doctor Yen yet?
+Patient: Yes. I believe the surgery is scheduled for July twentieth.
+Doctor: How is your shoulder feeling?
+Patient: My shoulder is the same. I am still in a significant amount of pain.
+Doctor: I am sorry to hear that. Your surgery is coming up soon and that should help.
+Patient: I hope so.
+Doctor: We are also following up the pinched nerve in your upper left extremity C six. How are you feeling?
+Patient: I have had some pain starting in that same spot, and it goes down the left arm into my wrist.
+Doctor: Have you had any weakness associated with your upper extremities on the left side?
+Patient: It is mild and it is about the same as the last time.
+Doctor: Is it about the same as the last time you were here? We have it noted in the last note that it was mild as well.
+Patient: Yes. It has been the same.
+Doctor: Any weakness or symptoms on the right side?
+Patient: No, not really.
+Doctor: Any difficulty with mobility or moving around on either side?
+Patient: No.
+Doctor: Have you been experiencing any bowel or, bladder dysfunction.
+Patient: No.
+Doctor: I see in the chart for our last visit, I only had a report of a prior cervical spine M R I.  I don't have any recent images. I going to refer you for a cervical spine M R I. Are you able to get the imaging done today and I will have you return to the clinic at the end of today?
+Patient: Yes. I can do that. I took the whole day off of work today.
+Doctor: Great! I will put the order in right now.

@@ -1,0 +1,6 @@
+Doctor: Good afternoon, which gender do you identify with?
+Patient: Good afternoon, doctor, thank you for asking, I identify as a female.
+Doctor: Great, thank you. Have you ever had surgery on this knee?
+Patient: Yes, I actually had an A C L reconstruction done in March of two thousand eight. Um, it didn't go well, so they did a revision at the end of that year, in December.
+Doctor: I see, thank you. What about your upper body? Is there any history of surgery there?
+Patient: Actually, yes, I had surgery on my arm when I was six.

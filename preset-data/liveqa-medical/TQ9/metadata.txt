@@ -1,0 +1,14 @@
+qid: TQ9
+source_file: 1-131451172.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Can a streptococcus infection cause other diseases such as wegeners?
+nlm_summary: Can streptococcal infection cause systemic diseases such as Wegener's?
+
+focus_entities:
+  [F1] (Problem) wegeners
+question_types:
+  [T1] CAUSE
+keywords:
+  [K1] (Problem) streptococcus infection

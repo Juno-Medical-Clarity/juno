@@ -1,0 +1,1 @@
+Our model predicts the developmental phenotypes of several localization mutants, and suggests that a novel strain with co-localization of PleC and DivJ could provide quantitative insight into the signaling threshold required for flagellar pole development.

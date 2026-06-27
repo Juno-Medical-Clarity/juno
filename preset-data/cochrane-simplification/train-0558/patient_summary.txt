@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0558  |  gem_id: gem-cochrane-simplification-train-559  |  doi: 10.1002/14651858.CD006018
+
+This review suggested that 54 out of every 100 patients who had chemotherapy after surgery were alive after three years, compared to 45 out of every 100 patients who received only surgery. Although these results are encouraging, there are not enough trials or patients for these results to be completely reliable. More randomised trials are needed. This review should encourage greater participation in ongoing randomised trials.

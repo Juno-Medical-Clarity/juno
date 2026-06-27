@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0606
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient states they are "good."
+- Patient mentions it is "hard" being in quarantine.
+- Patient expresses hope for things to get back to normal soon.
+- Patient is here for a breast examination that was due for a long time.
+
+Objective:
+- Breast examination performed; both breasts appear normal.
+- No masses detected.
+- No pain reported during examination.
+- No abnormalities felt in the armpit area.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- No specific actions, medications, tests, or follow-up mentioned.

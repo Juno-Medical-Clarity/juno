@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0998
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient is not allergic to anything.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment information provided)
+
+Plan:
+- (No plan mentioned)

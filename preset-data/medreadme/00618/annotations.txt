@@ -1,0 +1,13 @@
+source:      plos_computational_biology
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [4:9] 'medical-jargon-google-hard' -> 'rapamycin ( MTOR ) kinase'
+  [12:15] 'medical-jargon-google-hard' -> 'core catalytic subunit'
+  [22:23] 'medical-jargon-google-easy' -> 'mTORC1'
+  [24:25] 'medical-jargon-google-easy' -> 'mTORC2'
+  [33:34] 'medical-jargon-google-hard' -> 'MLST8'
+  [38:39] 'medical-jargon-google-hard' -> 'GbL'
+  [41:42] 'medical-jargon-google-easy' -> 'DEPTOR'

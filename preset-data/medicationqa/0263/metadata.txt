@@ -1,0 +1,5 @@
+drug_focus: clindamycin
+question_type: Dose
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=965e55bd-2b2c-06bb-26e0-92034741e2ed
+sample_id: 0263

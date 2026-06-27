@@ -1,0 +1,8 @@
+Doctor: Do you have anyone with psychiatric symptoms in the family?
+Patient: No, I don't have family!
+Doctor: What do you mean?
+Patient: My mom dad died and I was raised in the Philippines.
+Doctor: Adopted?
+Patient: No by myself.
+Doctor: Wow that must have been tough.
+Patient: Oh it's a story for another day.

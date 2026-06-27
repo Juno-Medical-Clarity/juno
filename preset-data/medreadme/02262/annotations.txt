@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [1:3] 'general-complex' -> 'interaction term'
+  [8:10] 'medical-jargon-google-easy' -> 'neural measure'
+  [11:12] 'abbr-medical' -> 'ARAT'

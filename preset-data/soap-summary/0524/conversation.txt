@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0524
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, how are you? Hi Doctor, I am good. So, what is going on with you? Well, I am having nausea and I just want to get it checked. Okay.

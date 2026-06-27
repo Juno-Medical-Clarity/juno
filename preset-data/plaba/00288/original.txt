@@ -1,0 +1,10 @@
+"Inborn errors of metabolism," first recognized 100 years ago by Garrod, were seen as transforming evidence for chemical and biological individuality.
+Phenylketonuria (PKU), a Mendelian autosomal recessive phenotype, was identified in 1934 by Asbjörn Fölling.
+It is a disease with impaired postnatal cognitive development resulting from a neurotoxic effect of hyperphenylalaninemia (HPA).
+Its metabolic phenotype is accountable to multifactorial origins both in nurture, where the normal nutritional experience introduces L-phenylalanine, and in nature, where mutations (>500 alleles) occur in the phenylalanine hydroxylase gene (PAH) on chromosome 12q23.2 encoding the L-phenylalanine hydroxylase enzyme (EC 1.14.16.1).
+The PAH enzyme converts phenylalanine to tyrosine in the presence of molecular oxygen and catalytic amounts of tetrahydrobiopterin (BH4), its nonprotein cofactor.
+PKU is among the first of the human genetic diseases to enter, through newborn screening, the domain of public health, and to show a treatment effect.
+This effect caused a paradigm shift in attitudes about genetic disease.
+The PKU story contains many messages, including: a framework on which to appreciate the complexity of PKU in which phenotype reflects both locus-specific and genomic components; what the human PAH gene tells us about human population genetics and evolution of modern humans; and how our interest in PKU is served by a locus-specific mutation database (http://www.pahdb.mcgill.ca; last accessed 20 March 2007).
+The individual Mendelian PKU phenotype has no "simple" or single explanation; every patient has her/his own complex PKU phenotype and will be treated accordingly.
+Knowledge about PKU reveals genomic components of both disease and health.

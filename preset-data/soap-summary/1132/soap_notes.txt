@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1132
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has had a previous surgery (hernia repair) in 2010.
+- This surgery will be the patient's second.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No assessment or diagnosis provided.]
+
+Plan:
+- [No plan provided.]

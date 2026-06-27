@@ -1,0 +1,8 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [35:39] 'general-complex' -> 'Mixed Methods Appraisal Tool'
+  [65:66] 'general-complex' -> 'fidelity'

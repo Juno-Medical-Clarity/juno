@@ -1,0 +1,5 @@
+pmid:        34599830
+question:    39
+adaptation:  adaptation1
+title:       The Nitric Oxide Signalling Pathway in Aortic Aneurysm and Dissection
+sentences:   6

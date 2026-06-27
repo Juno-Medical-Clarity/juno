@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1382
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a Catholic priest.
+- Patient does not drink alcohol.
+- Patient does not smoke or use any kinds of drugs.
+- Patient acknowledges the physician's questions as part of a protocol.
+
+Objective:
+- No measurable or observable data mentioned.
+
+Assessment:
+- No clinical interpretation, diagnoses, or impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

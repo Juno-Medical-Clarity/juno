@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [0:10] 'medical-jargon-google-hard' -> 'Monocyte - mediated CD3 + T - cell apoptotic death'
+  [11:14] 'medical-jargon-google-hard' -> 'Fas - dependent'
+  [15:17] 'medical-jargon-google-easy' -> 'in vitro'
+  [18:20] 'medical-jargon-google-easy' -> 'in vivo'

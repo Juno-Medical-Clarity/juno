@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0561
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Recurrent urine infections (duration: 3 weeks)
+- Bladder problems (long-standing, related to tone and capacity)
+- Pain on the right side (related to the stroke)
+- History of stroke (right side CVA)
+- Heart problems (requiring pacemaker placement)
+- Hereditary diabetes
+- Neural problems associated with diabetes
+- Hypothyroidism (taking thyroid medications)
+- Past surgeries: gallbladder removal, colon cancer surgery (1998), pacemaker placement
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

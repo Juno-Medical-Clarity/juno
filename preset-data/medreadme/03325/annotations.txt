@@ -1,0 +1,7 @@
+source:      wiki
+side:        complex
+readability: 4.15
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Prostacyclin'

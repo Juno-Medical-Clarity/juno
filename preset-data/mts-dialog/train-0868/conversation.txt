@@ -1,0 +1,4 @@
+Doctor: Are you aware of any medical problems in your family?
+Patient: No.
+Doctor: Anyone with any heart disease or diabetes?
+Patient: No.

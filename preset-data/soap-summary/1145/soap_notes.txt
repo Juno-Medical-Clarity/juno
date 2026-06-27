@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 1145
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Dizziness, vertigo, lightheadedness.
+- Severity: Not explicitly stated, but implies significant enough to note.
+- Duration: Not mentioned.
+- Associated symptoms: None reported; no chest pain or shortness of breath.
+- Relevant medical history: Heart rhythm problem (suspected atrial fibrillation), previous use of Coumadin.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient expresses frustration with regular blood draws associated with Coumadin therapy and requests a simpler medication regimen. Reports improvement in arm pain and back pain.
+
+Objective:
+- Vital signs: Heart rate elevated "just a little bit."
+- Physical examination findings: Patient is moving around better.
+
+Assessment:
+- Diagnosis: Atrial fibrillation (suspected).
+- Clinical impression: Patient is experiencing dizziness, vertigo, and lightheadedness.
+
+Plan:
+- Investigate alternative medications to Coumadin for anticoagulation management.
+- Continue to monitor symptoms and consider follow-up for heart rhythm management.

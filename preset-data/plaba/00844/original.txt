@@ -1,0 +1,9 @@
+Ferritin, which includes twenty-four light and heavy chains in varying proportions in different tissues, is primarily responsible for maintaining the body's iron metabolism.
+Its normal value is between 10 and 200 ngmL-1 in men and between 30-300 ngmL-1 in women.
+Iron is delivered to the tissue via them, and they act as immunomodulators, signaling molecules, and inflammatory markers.
+When ferritin level exceeds 1000 µgL-1, the patient is categorized as having hyperferritinemia.
+Iron chelators such as deferiprone, deferirox, and deferoxamine are currently FDA approved to treat iron overload.
+The inflammation cascade and poor prognosis of COVID-19 may be attributed to high ferritin levels.
+Critically ill patients can benefit from deferasirox, an iron chelator administered orally at 20-40 mgkg-1 once daily, as well as intravenous deferoxamine at 1000 mg initially followed by 500 mg every 4 to 12 hours.
+It can be combined with monoclonal antibodies, antioxidants, corticosteroids, and lactoferrin to make iron chelation therapy effective for COVID-19 victims.
+In this article, we analyze the antiviral and antifibrotic activity of iron chelators, thereby promoting iron depletion therapy as a potentially innovative treatment strategy for COVID-19.

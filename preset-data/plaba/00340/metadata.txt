@@ -1,0 +1,5 @@
+pmid:        33301246
+question:    27
+adaptation:  adaptation1
+title:       Safety and Efficacy of the BNT162b2 mRNA Covid-19 Vaccine
+sentences:   14

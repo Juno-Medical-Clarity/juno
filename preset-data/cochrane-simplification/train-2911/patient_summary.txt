@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2911  |  gem_id: gem-cochrane-simplification-train-2912  |  doi: 10.1002/14651858.CD000432.pub2
+
+Two small studies and one large study were identified. The two small studies enrolled infants given caffeine as a preventative measure. Neither study demonstrated any decrease in apnoea or other short term complications. The one large study included a heterogeneous group of infants who received therapy for a variety of indications (prevention, treatment and avoidance of post-extubation apnoea of prematurity). In this overall population there was an improvement in clinical outcome at hospital discharge and developmental outcome at 18 to 21 months; however, these benefits could not be proven in the subpopulation who received prophylactic caffeine. A decrease in PDA was noted in this subpopulation.

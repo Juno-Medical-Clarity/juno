@@ -1,0 +1,16 @@
+Doctor: How're you doing?
+Patient: Good for the most part. I'm still pretty tired most days, but I'm trying to stay more active. I'm wondering if it has to do with my sugar levels?
+Doctor: Hm let's see. I'd like to check your glucose and lipid panels and get you back in here again.
+Patient: And oh I've noticed some blood in my stool. I'm not sure if it's related.
+Doctor: How long has that been going on?
+Patient: Maybe a week or so?
+Doctor: Are you having any other symptoms? Black or tarry stool? Nausea, vomiting, diarrhea? Lightheadedness?
+Patient: No, none of that.
+Doctor: I'd like to order a hemoccult then. It's going to check to see if you're still having blood in your stool.
+Patient: Can I do this at the blood work place?
+Doctor: Yes, they'll be able to help you and answer any additional questions you may have.
+Patient: Okay. I'll try to go in tomorrow.
+Doctor: Remember you need to fast for the lipid panel, so I'd recommend going in early tomorrow morning before eating breakfast.
+Patient: Okay, got it.
+Doctor: And before I send you on your way, have you been able to schedule your yearly mammogram?
+Patient: Oh shoot. I still need to do that. I'll call them tomorrow.

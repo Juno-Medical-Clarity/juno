@@ -1,0 +1,11 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'anticonvulsants'
+  [8:11] 'medical-jargon-google-easy' -> 'convulsive status epilepticus'
+  [19:22] 'medical-jargon-google-easy' -> 'rapid sequence induction'
+  [25:28] 'medical-jargon-google-easy' -> 'convulsive status epilepticus'
+  [35:37] 'medical-jargon-google-easy' -> 'adverse reactions'

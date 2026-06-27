@@ -1,0 +1,7 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [17:18] 'medical-jargon-google-easy' -> 'paranoia'

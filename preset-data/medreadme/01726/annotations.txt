@@ -1,0 +1,10 @@
+source:      plos_biology
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [4:7] 'medical-jargon-google-easy' -> 'small noncoding RNAs'
+  [8:9] 'abbr-medical' -> 'sRNAs'
+  [15:18] 'medical-jargon-google-easy' -> 'gene expression regulators'
+  [26:28] 'medical-jargon-google-easy' -> 'regulatory cascade'

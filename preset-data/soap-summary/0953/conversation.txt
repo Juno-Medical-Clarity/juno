@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0953
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, who is in your family? Well, my mom, dad, and I have four brothers aged eighteen, sixteen, fourteen and twelve and I also have a younger sister. She is only three. Wow, and you all stay together? Yes, and we also have two dogs and two cats. Okay. And everyone at home is doing fine? Guest_family: No, not really. Everyone at home is sick with a cough, cold and runny nose, except- Except for my mom! Guest_family: Yeah, except for me thankfully. Hm, and did you travel anywhere recently, especially during the holiday season? No, right mom? Guest_family: Yeah, we didn't travel anywhere recently. Okay. Anybody in your house smokes? Guest_family: No. No exposure to smoke, right? Guest_family: No.

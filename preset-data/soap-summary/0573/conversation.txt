@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0573
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any questions regarding your surgery? Yes, I do, multiple. Go ahead shoot. I have them all written down on this.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0342
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good morning, ma'am. Oh, good morning, doctor. Please, tell me about your living situation. Well, right now, I live at home with my kids and my dad. I see here that you're not able to go up the stairs well, can you tell me more about that? Yeah, I can't use the stairs without holding the rail the entire time. Holding the rail makes navigating the stairs easier? Yeah, but I still move very slow. I see. Do you smoke? Yeah, I smoke about a pack to a pack and a half a day. What about exercise? Do you workout? No, I don't regularly workout, I've never been good at it.

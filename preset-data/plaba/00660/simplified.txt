@@ -1,0 +1,8 @@
+The main blood test to determine active attack of the insulin-producing beta-cells by the body is based on islet cell antibodies (ICA; proteins made against insulin-producing cells).
+The main ICA test has drawbacks like needing human tissue from the pancreas and difficulty in getting results in the form of a number.
+Based on the description of beta-cell proteins in test tubes in the past 10 years, new measuring tools for self-made proteins were made with high accuracy for disease detection and no detection to predict type 1 diabetes.
+We looked at whether combined blood tests in test tubes, such as self-made proteins to insulin (IAA), the enzyme glutamic acid decarboxylase (GADA), and ICA512 (ICA512A), could replace the main ICA test.
+We tested blood samples of 114 newly diagnosed type 1 diabetes patients, aged 12 plus or minus 5 years (ranging from 2 months to 29 year) for ICA, IAA, GADA, and ICA512A.
+
+We found that more blood samples scored positive (detected the presence of the disease) for 1 or more of IAA, GAD, or ICA512 than for ICA and/or IAA.
+We conclude that testing for IAA, GAD and ICA512 together can replace the traditional ICA/IAA test to predict type 1 diabetes and is helpful to doctors in telling the different between type 1 and type 2 diabetes.

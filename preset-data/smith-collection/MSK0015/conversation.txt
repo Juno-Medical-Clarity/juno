@@ -1,0 +1,208 @@
+# Smith Collection Transcript: MSK0015
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Yeah so im im george the father my daughter is 5 years old and i noticed just a few days ago that she was walking a little bit funny and kind of having a limp when she came back from school and since since that then shes been saying that it just hurts too much to put any weight on on that leg on the right leg and since then ive been like carrying her around its been very painful for her so i just wanted to come in and check what might be going on
+
+Doctor: OK and so so and this when did this exactly start
+
+Patient: So just two days ago
+
+Doctor: OK an um did she have any trauma to her right hip or or to hurt your right leg like a fall or any injuries
+
+Patient: Sorry um no not that i know of at least and she hasnt told me anything like that she does do some activities some sports but i havent seen her fall anywhere
+
+Doctor: OK um alright and uh has she has she not not been able to walk then
+
+Patient: Yeah so ive ive been carrying around for at least like shes missed school too but been carrying her around for the last 1 12 to two days as soon as i had like ask her to walk she starts kind of a hopping and saying that theres a lot of pain near the top of her leg and by your hips whenever she puts her foot like a foot down so yeah shes in pain crying so i kind of have to carry her
+
+Doctor: OK and uh how has her behaviour been recently like her mood and things like that
+
+Patient: Shes definitely been more just a bit anxious about the pain very scared about putting her foot down and just overall i think also more irritable crying more because of the pain so but i i guess i understand if theres something going on it must be very painful
+
+Doctor: OK and alright has she had any fevers or chills
+
+Patient: Uhm i did notice a couple of days ago she felt a bit warm but we didnt really measure her temperature over the last few weeks though she has had a kind of a runny nose and a cough and i think she might have had a fever last week as well so she has been sick recently
+
+Doctor: OK so it sounds like she might have had a cold last week and did like the runny nose and cough go away
+
+Patient: Yeah the runny nose and cough are gone fever was gone too but she did feel a little bit warm yesterday so im not sure about that
+
+Doctor: OK so shes at a a bit warm now still ok
+
+Patient: Yup
+
+Doctor: Has she had any any headaches
+
+Patient: No no headaches
+
+Doctor: Any sensory changes like things to her vision or hearing or taste or smell
+
+Patient: No
+
+Doctor: OK any um sore throat or cough
+
+Patient: No
+
+Doctor: Alright any shortness of breath
+
+Patient: No
+
+Doctor: Any chest pain
+
+Patient: No
+
+Doctor: Has she had a loss of appetite
+
+Patient: No
+
+Doctor: OK and has she had any unexpected weight loss
+
+Patient: Oh no nothing like that
+
+Doctor: Any night sweats
+
+Patient: No
+
+Doctor: Any nausea or vomiting
+
+Patient: No
+
+Doctor: Any abdominal pain
+
+Patient: No abdominal pain
+
+Doctor: OK any diarrhea or constipation or blood in the stool
+
+Patient: No nothing like that
+
+Doctor: Alright and any problems with urination like pain or frequency
+
+Patient: No not that shes mentioned no
+
+Doctor: OK and any skin rashes or changes
+
+Patient: No
+
+Doctor: OK and any muscle aches or body pains or any other pains anywhere else
+
+Patient: No its mainly just her upper right leg and hip
+
+Doctor: OK i have she had any numbness or tingling
+
+Patient: No not that shes mentioned no
+
+Doctor: OK and and how about a muscle weakness
+
+Patient: No
+
+Doctor: No ok and any confusion or or memory loss
+
+Patient: um no
+
+Doctor: OK im and in the past has she been diagnosed with any medical conditions
+
+Patient: She did have this condition with her hips dysplasia like developmental dysplasia of the hip so when she was born she she was getting like this clicking noise and her in her hips and so she was in this splint for probably almost two months at the start like after she was born
+
+Doctor: OK and did her hips did like was she able to walk afterwards
+
+Patient: Yeah yeah and we were seeing a specialist an orthopedic surgeon and they were managing her and after one year they stopped following her she was well like she was walking no issues
+
+Doctor: OK so shes walking around one year
+
+Patient: Mmm
+
+Doctor: Have you had any other concerns about her either social or physical development
+
+Patient: No shes been really great shes good with people shes has great social skills she has grown well met all her milestones shes doing really well at school and gets along well with her peers as well
+
+Doctor: OK excellent and were there any concerns throughout pregnancy such as gestational diabetes or hypertension or any exposures to infections
+
+Patient: No her moms pregnancy was perfectly normal she was born like she was delivered vaginally at 39 weeks she was breech at that time which the doctor said might have to do with her clicking hips but yeah but since then or during pregnancy no other complications
+
+Doctor: OK thats great and uh in regards to you mentioned her hurt hip any other past medical history
+
+Patient: um no other than that shes been healthy
+
+Doctor: OK and does she take any medications regularly over the counter or prescribed
+
+Patient: No no no medications
+
+Doctor: OK any allergies to medications
+
+Patient: No not that i know
+
+Doctor: And sorry has she taking anything for the the pain
+
+Patient: No i havent really given her anything i didnt know what to give
+
+Doctor: OK all right well talk more about that has she had any prior surgeries or hospitalizations
+
+Patient: No
+
+Doctor: Can you tell me about who shes living with and whereabouts shes living
+
+Patient: Yeah so shes currently living at home with me my wife and she has an older brother we live in a small house just near near the city
+
+Doctor: OK and what do you guys do for work
+
+Patient: Yeah so im a lawyer and my wife is a music teacher
+
+Doctor: OK is there anybody who smokes in the home
+
+Patient: No none of us smoke
+
+Doctor: OK um ok and any family history of heart or lung conditions
+
+Patient: Uhm no no family history our family is pretty healthy
+
+Doctor: OK how about any family history of any autoimmune conditions such as hypothyroidism
+
+Patient: No nothing like that
+
+Doctor: OK and then any musculoskeletal or neurological conditions in the family
+
+Patient: No
+
+Doctor: OK so next on um just the exam um when youre looking at the right hip are you seeing any swelling redness
+
+Patient: uh no not that i see anything
+
+Doctor: No ok and is there any like muscle atrophy around the hip
+
+Patient: No not that i see at all
+
+Doctor: OK and then is there any misalignment or deformity of the joints that you can see
+
+Patient: No i cant yeah i dont see anything in the hips or legs that really points out to me
+
+Doctor: OK um and is there any pain to palpation over the hip or or knee
+
+Patient: uh if i if i press on it i dont think shes in that much pain its mainly just when shes trying to walk or put put weight on it
+
+Doctor: OK and is she able to move the hip in a full range of motion of like flexion and extension abduction adduction
+
+Patient: Uhm so she does she is able to move it if she really tries but its mainly just the putting her weight on it and anytime she puts her weight on it is is when it really hurts
+
+Doctor: OK so more about the weight on it and is she able to move that her knee with a full range of motion
+
+Patient: Yeah
+
+Doctor: OK and any any muscle weakness when testing around the joint
+
+Patient: No
+
+Doctor: No ok so i think that was everything that i wanted to ask on history and check was there anything i maybe forgot about you thought would be more important today
+
+Patient: No i think thats all just just was wondering what might be going on
+
+Doctor: Yeah certainly so a couple of things that it could be one is that it can be common in this age group is something called transient synovitis where which can happen in the hip where theres some inflammation and it causes some pain following a viral infection and it sounds like she had a viral infection last week with the cough fever and and runny nose and her she was feeling a bit warm and maybe feverish today as well which could be a sign with the lower kind of slightly elevated temperature pointing towards transient synovitis which is a condition that will be self limiting and can use anti inflammatories to help with the pain such as ibuprofen but also something that would be important to rule out would be is septic arthritis because it could could lead to damage of the joint but this will be lower on the differential and then finally something to consider is leggcalveperthes disease and but this would be more of progressive  onset but if shes not getting any better and or if she becomes more sick like develops a really high fever or a red hot swollen joint then wed be thinking more along the lines of septic arthritis and we want to reassess
+
+Patient: OK sounds good thank you so much

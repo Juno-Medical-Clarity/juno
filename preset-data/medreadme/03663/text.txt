@@ -1,0 +1,1 @@
+The performance of the resulting model suggests that local structuring provides some but not all of the information to solve the folding problem, and that molecular dynamics simulation of fragments can be useful for protein structure prediction and design.

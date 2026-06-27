@@ -15,6 +15,9 @@ import logging
 import os
 import re
 
+from error_codes import ErrorCode
+from utils.error_handler import JunoError, classify_finish_reason, classify_vertex_exception
+
 logger = logging.getLogger(__name__)
 
 
@@ -55,23 +58,58 @@ class LLMClient:
 
     def generate_text(self, prompt: str, temperature: float = 0.3, max_tokens: int = 8192) -> str:
         """Generate text from a prompt. Returns the text string directly."""
-        response = self._model.generate_content(
-            prompt,
-            generation_config=self._VertexGenerationConfig(
-                temperature=temperature,
-                max_output_tokens=max_tokens,
-            ),
-            safety_settings=self._safety,
-        )
+        try:
+            response = self._model.generate_content(
+                prompt,
+                generation_config=self._VertexGenerationConfig(
+                    temperature=temperature,
+                    max_output_tokens=max_tokens,
+                ),
+                safety_settings=self._safety,
+            )
+        except Exception as api_exc:
+            # Classify google.api_core exceptions; re-raise others as UNKNOWN_ERROR
+            try:
+                from google.api_core import exceptions as _gexc
+                if isinstance(api_exc, _gexc.GoogleAPICallError):
+                    error_code = classify_vertex_exception(api_exc)
+                    raise JunoError(error_code, detail=str(api_exc), original=api_exc) from api_exc
+            except ImportError:
+                pass
+            raise JunoError(
+                ErrorCode.UNKNOWN_ERROR,
+                detail=f"Vertex AI generate_content raised an unexpected error: {api_exc}",
+                original=api_exc,
+            ) from api_exc
+
         if not response.candidates:
-            raise RuntimeError("Model response blocked or no candidates")
+            raise JunoError(
+                ErrorCode.LLM_NO_CANDIDATES,
+                detail="Model response contained no candidates; generation may have been fully blocked.",
+            )
 
         candidate = response.candidates[0]
-        if (
-            hasattr(candidate, "finish_reason")
-            and candidate.finish_reason == self._FinishReason.MAX_TOKENS
-        ):
-            logger.warning("LLMClient: hit max tokens; proceeding with partial output")
+        if hasattr(candidate, "finish_reason") and candidate.finish_reason == self._FinishReason.MAX_TOKENS:
+            raise JunoError(
+                ErrorCode.LLM_MAX_TOKENS,
+                detail=(
+                    f"LLM generation hit token limit before completing. "
+                    f"Consider reducing prompt size or increasing max_tokens. "
+                    f"finish_reason={candidate.finish_reason!r}"
+                ),
+            )
+
+        if not getattr(candidate, "content", None) or not getattr(candidate.content, "parts", None):
+            finish_reason = getattr(candidate, "finish_reason", None)
+            finish_reason_name = finish_reason.name if finish_reason is not None else "OTHER"
+            error_code = classify_finish_reason(finish_reason_name)
+            raise JunoError(
+                error_code,
+                detail=(
+                    f"LLM response candidate has no content parts. "
+                    f"finish_reason={finish_reason!r}"
+                ),
+            )
 
         return response.text.strip()
 
@@ -81,4 +119,8 @@ class LLMClient:
         try:
             return json.loads(_strip_json_fences(raw))
         except json.JSONDecodeError as e:
-            raise ValueError(f"LLM returned invalid JSON: {e}. Raw start: {raw[:200]!r}") from e
+            raise JunoError(
+                ErrorCode.LLM_INVALID_JSON,
+                detail=f"LLM returned invalid JSON: {e}. Raw start: {raw[:200]!r}",
+                original=e,
+            ) from e

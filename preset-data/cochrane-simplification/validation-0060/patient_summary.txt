@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0060  |  gem_id: gem-cochrane-simplification-validation-61  |  doi: 10.1002/14651858.CD012413.pub2
+
+Through literature searches up-to-date until Novebember 2016, we found only one small randomised controlled trial (with 64 very low birth weight infant participants) that addressed this question. Very low birth weight infants who receive more milk than standard volumes gain weight more quickly during their hospital stay. We found no evidence suggesting that giving infants high volumes of milk causes feeding or gut problems, but this finding is not certain. Available evidence is insufficient to support or refute the use of high-volume feeds in preterm or low birth weight infants. High-volume feeds might increase the rate of weight gain, but more trials are needed to confirm this finding and to examine whether high-volume feeds cause any problems for preterm or low birth weight infants.

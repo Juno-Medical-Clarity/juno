@@ -1,0 +1,3 @@
+The US Preventative Services Task Force (USPSTF) guideline for screening osteoporosis, a bone-weakening disease, states that there is a lack of evidence about best rescreening intervals. The guideline states that intervals >2 years may be needed to better preduct fracture risk.
+Also, the USPSTF mentions a study in which repeat measurement of bone mineral density (BMD) or hardness after 8 years adds litte value relative to inital bone scans.
+Reconsider the intervals at which you recommend rescreening for osteoporosis. For post-menopausal or older women with normal BMD or mild bone weakening, a 15-year interval is likely enough.

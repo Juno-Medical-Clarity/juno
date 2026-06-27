@@ -1,0 +1,5 @@
+drug_focus: cephalexin
+question_type: Indication
+section_title: Why is this medication prescribed?
+source_url: https://medlineplus.gov/druginfo/meds/a682733.html
+sample_id: 0681

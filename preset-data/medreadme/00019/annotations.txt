@@ -1,0 +1,16 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [2:6] 'medical-jargon-google-hard' -> 'de novo motif analysis'
+  [7:9] 'medical-jargon-google-easy' -> 'regulatory elements'
+  [11:13] 'medical-jargon-google-easy' -> 'evolutionary conservation'
+  [14:16] 'medical-jargon-google-easy' -> 'identified motifs'
+  [18:19] 'general-complex' -> 'assayed'
+  [19:22] 'medical-jargon-google-easy' -> 'TF footprinting data'
+  [24:26] 'medical-jargon-google-easy' -> 'sequence elements'
+  [28:29] 'abbr-medical' -> 'TFs'
+  [31:33] 'medical-jargon-google-hard' -> 'chromatin landscape'
+  [40:42] 'medical-jargon-google-easy' -> 'cell lines'

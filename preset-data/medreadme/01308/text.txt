@@ -1,0 +1,1 @@
+Our results serve as a proof of concept that linking simple metabolic models with a mechanistic host-parasite framework can be used to predict temperature responses of parasite population dynamics at the within-host level.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1282  |  gem_id: gem-cochrane-simplification-train-1283  |  doi: 10.1002/14651858.CD004950.pub3
+
+Different studies done in babies have shown that breastfeeding is a good way to reduce the pain babies feel when subjected to minor painful procedures. These studies have been done in full-term babies and they have shown that breastfeeding is effective by demonstrating that it reduces babies' crying time and reduces different pain scores that have been validated for babies. Breast milk given by syringe has not shown the same efficacy as breastfeeding itself. No studies have been done in premature babies, and so new studies are needed to determine if the use of supplemental breast milk in these small babies is effective in reducing their pain.

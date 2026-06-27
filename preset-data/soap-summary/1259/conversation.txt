@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1259
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anybody else in your family suffers from this condition? No. Okay.

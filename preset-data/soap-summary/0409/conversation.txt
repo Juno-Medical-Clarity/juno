@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0409
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever been diagnosed with any illnesses? No, I do not have any diseases. How about any issues with B P, thyroid, diabetes? Nope none.

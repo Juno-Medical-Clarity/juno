@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0461
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello. What is the reason for your visit today? I keep having this dry cough and it gets hard to breathe at times. Were you exposed to anything recently? Here's a note from a contractor that worked on my house recently. I wasn't sure what it meant. I see. It looks like you may have been exposed to asbestos. Oh, no! Am I going to be fine? I'll take a look, but I want to ask you a quick question. Did you have any family living with you at the time? Nope. I live alone, so my family wasn't there to be exposed.

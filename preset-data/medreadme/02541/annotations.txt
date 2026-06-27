@@ -1,0 +1,11 @@
+source:      MSD
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'pelvic examination'
+  [8:9] 'medical-jargon-google-easy' -> 'mucopurulent'
+  [10:13] 'medical-jargon-google-easy' -> 'purulent cervical discharge'
+  [16:18] 'medical-jargon-google-easy' -> 'cervical os'
+  [28:29] 'medical-jargon-google-easy' -> 'speculum'

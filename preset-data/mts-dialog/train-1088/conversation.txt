@@ -1,0 +1,4 @@
+Doctor: Are you finished with your cancer treatments?
+Patient: Yes.  I am in remission now.
+Doctor: That is great! When was your last radiation treatment?
+Patient: It has been over two years since my last treatment.

@@ -1,0 +1,43 @@
+# SOAP Notes — Sample 0143
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with coughing fits for the last 2 months, occurring during exercise at the gym and while vacuuming/cleaning at home (worsening over time, initially just throat irritation and mild cough, now unable to stop coughing during exercise every other day)
+- Cough is usually dry, occasionally productive of white sputum, no hemoptysis
+- Onset 3 months ago, new issue coinciding with increased exercise and running since the New Year to become more fit and active
+- Associated symptoms: throat irritation (initially), chest tightness and dyspnea during coughing episodes, tachycardia (based on Fitbit readings)
+- Episodes last 15-20 minutes, often requiring cessation of activity and rest
+- Denies other symptoms including sore throat, itchy eyes/nose, rhinorrhea/congestion, abdominal pain, N/V, changes in bowel movements, urinary symptoms, headaches, fevers/chills, unintentional weight loss, night sweats, myalgias, arthralgias
+- Moved back to parents' home recently due to university closure, but has lived there previously without issues; notes increased symptoms when vacuuming
+
+PMHx:
+- No known medical conditions, reports being "very healthy"
+- Seasonal allergies in the spring, managed with Reactine
+- Denies allergies to foods or medications
+
+SocHx: 
+- Non-smoker, denies marijuana or recreational drug use
+- Occasional ETOH use on weekends while at university
+- Currently studying from home, not working
+- Denies recent travel or sick contacts
+
+FHx:
+- Father has similar seasonal allergies and irritation
+- No known family history of asthma, eczema, or other atopic conditions
+
+Medications:
+- Reactine PRN (seasonal allergies)
+- Denies other medications, including OTC
+
+Objective:
+- Vitals signs (not provided)
+- Physical examination findings (not provided)
+
+Assessment:
+- Likely diagnosis (not explicitly mentioned)
+- Differential diagnosis (not explicitly mentioned)
+
+Plan:
+- Investigations (not explicitly mentioned)
+- Treatment (not explicitly mentioned)
+- Patient education: Discussed patient's goal of becoming fit and impact of current symptoms on daily routine and exercise. Patient has not tried any rescue inhalers for symptom management.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0249  |  gem_id: gem-cochrane-simplification-train-250  |  doi: 10.1002/14651858.CD009411.pub2
+
+Both trials assessing HDCT followed by ASCT versus conventional chemotherapy showed no significant improvement in overall survival, however progression-free survival was significantly improved with HDCT followed by ASCT. Only one trial reported adverse events and showed no difference between the treatment arms. The other trial was prematurely closed as patients refused randomisation and requested ASCT. Only one trial evaluated the effect of SHDCT before HDCT plus ASCT, compared to HDCT plus ASCT. Overall survival and progression-free survival were similar in both arms. However, after three years, there was a negative trend for the SHDCT arm regarding mortality as well as significantly increased adverse events. In summary, the currently available evidence suggests a benefit for patients with relapsed HL treated with HDCT followed by ASCT compared to conventional chemotherapy.

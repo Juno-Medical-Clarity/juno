@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0565
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports a painful ulcer on the right hip.
+- Duration of the ulcer is not specified.
+- No additional associated symptoms, relevant medical history, family history, allergies, or emotional concerns mentioned.
+
+Objective:
+- Physical examination reveals a pressure ulcer on the right hip.
+
+Assessment:
+- Diagnosis of pressure ulcer.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

@@ -1,0 +1,14 @@
+qid: TQ84
+source_file: 1-121714645.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Is it recommended for patients on Lipitor to have their liver function monitored by blood testing every six months.
+nlm_summary: Is it recommended for patients with history of alcoholism who take Lipitor to have their liver function monitored every six months?
+
+focus_entities:
+  [F1] (DrugSupplement) Lipitor
+question_types:
+  [T1] SIDE_EFFECT
+keywords:
+  [K1] (Problem) liver damage

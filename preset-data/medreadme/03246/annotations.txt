@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 4.85
+split:       dev
+
+jargon_spans:
+  [1:2] 'abbr-medical' -> 'SNPs'
+  [10:13] 'medical-jargon-google-easy' -> 'Family Heart Study'
+  [16:18] 'medical-jargon-google-easy' -> 'airflow obstruction'

@@ -1,0 +1,10 @@
+Doctor: Where's your rash?
+Patient: All over my torso and arms.
+Doctor: When did you first notice it?
+Patient: Well, it started on my back and then it made its way to my torso and arms.
+Doctor: Have you found yourself itching it?
+Patient: Yes.
+Doctor: Any potential triggers for the rash, such as dietary changes, new medications, or unfamiliar exposures?
+Patient: Nope. I mean I did remove some insulation in my basement a few days ago, but I didn't feel itchy that day.
+Doctor: Any shortness of breath, wheezing, facial swelling, tongue or lip swelling, or other associated symptoms?
+Patient: No.

@@ -1,0 +1,14 @@
+Selective serotonin reuptake inhibitors (SSRIs) are a recently developed class of drugs with significantly greater antidepressant efficacy than placebo.
+Generally, in double-blind comparative trials, all SSRIs demonstrated antidepressant efficacy similar to that of the 'standard' tricyclic antidepressants amitriptyline and imipramine; a meta-analysis of controlled trials found the efficacy of the SSRIs to be equivalent to that of the 2 tricyclics.
+Nevertheless, because of small patient numbers included in most studies that compare SSRIs with other antidepressants, no definitive statements about relative efficacy can be made.
+In these studies it is simply possible to state that no statistically significant differences were identified between SSRIs and the comparative antidepressants.
+Importantly, differences in clinical characteristics exist between the SSRIs-differences in elimination half-life (t1/2 beta) between fluoxetine and/or its metabolite (total t1/2 beta = 330 hours) and other SSRIs (t1/2 beta range = 15 to 30 hours), for example.
+This has implications in terms of potential drug interactions and must be considered when patients have to be switched to treatment with monoamine oxidase inhibitors.
+Studies with fluvoxamine have been conducted in both in- and outpatients, whereas trials with other SSRIs have been confined largely to outpatient populations.
+Fluvoxamine has been associated with a high incidence of nausea (37%), although this may have resulted from high initial dosages (rather than upward dose titration protocols) used in early trials.
+Of further interest, fluoxetine doses of 20mg may be sufficient to produce a satisfactory antidepressant response, and this SSRI may be particularly useful in patients with chronic retarded depression.
+More clinical data are required before the efficacy of sertraline and citalopram relative to standard antidepressants can be clearly defined.
+Preliminary data indicate that SSRIs are effective in the treatment of panic disorder, obsessive-compulsive disorder (OCD), eating (e.g. anorexia and bulimia) and personality disorders (e.g. anger, impulsiveness) and substance abuse (e.g. alcoholism); early results with fluvoxamine in the treatment of panic disorder and OCD, and with fluoxetine in the treatment of bulimia, personality disorders and alcohol abuse, have been encouraging.
+SSRIs have a more favourable tolerability profile than tricyclic antidepressants and, unlike the tricyclics, are not associated with anticholinergic adverse effects, sedation, cardiotoxicity or weight gain.
+SSRIs are associated with a relatively high incidence of nausea, particularly if high doses are used at the start of treatment.
+However, the incidence of nausea appears to decrease as treatment is continued.

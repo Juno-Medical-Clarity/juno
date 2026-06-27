@@ -1,0 +1,182 @@
+# Smith Collection Transcript: MSK0018
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: I just came in because of i just got into like this uh incident while i was playing rugby i kind of got tackled and then fell onto my right shoulder um and after i got up i havent ive just been this just happened a couple hours ago actually and uh ive just been in intense pain in my right shoulder and i cant seem to move it at all
+
+Doctor: Okay um and sorry when was this exactly
+
+Patient: uh probably 2 hours ago
+
+Doctor: 2 hours ago okay um and is this pain persistent or is it like on and off
+
+Patient: Its its constant it hasnt gone away at all
+
+Doctor: Okay 1 to 10 10 being the worst how bad is this pain
+
+Patient: I dont know like probably like 8 or 8 or 9
+
+Doctor: 8 or 9 okay um and is it a sharp kind of pain or is it dull and aching
+
+Patient: Its its sharp like if i try to move it at all its like a sharp pain
+
+Doctor: Okay um and have you ever had anything like this in the past
+
+Patient: uh no never
+
+Doctor: Never okay and are you able to move your arm at all or you cant move it
+
+Patient: I could move my fingers and hand and elbow but um elbow a little bit but like uh yeah i cant move my shoulder whatsoever
+
+Doctor: Okay um and do you are you experiencing any tingling or numbness
+
+Patient: um no i dont think so
+
+Doctor: No okay uh how about any muscle weakness
+
+Patient: um in that area i dont know if its weakness or pain but i just cant move it up and i i i do feel some like numbness just above my shoulder no tingling though
+
+Doctor: Okay any pain elsewhere in your body
+
+Patient: No
+
+Doctor: No okay any headaches
+
+Patient: um no
+
+Doctor: Confusion or memory loss
+
+Patient: uh no
+
+Doctor: uh weight loss
+
+Patient: uh no
+
+Doctor: Fevers or chills
+
+Patient: No
+
+Doctor: Rashes
+
+Patient: um no
+
+Doctor: uh changes in your vision hearing smell or taste
+
+Patient: uh no
+
+Doctor: um coughing shortness of breath or wheezing
+
+Patient: um no
+
+Doctor: Chest pain or heart palpitations
+
+Patient: No
+
+Doctor: Changes in your bowel movements
+
+Patient: No
+
+Doctor: Changes in voiding
+
+Patient: No
+
+Doctor: um okay and then with regards to this pain does anything make it better or worse
+
+Patient: um um not anything that ive tried thats made it better worse is probably just if i try to move it at all
+
+Doctor: Okay and the pains in your shoulder does it radiate down or up elsewhere
+
+Patient: uh mostly towards my shoulder um kind of down towards my upper arm as well
+
+Doctor: Okay i see um alright and um are you otherwise healthy do you have any other medical conditions
+
+Patient: No yeah otherwise im healthy ive never been to the doctor much
+
+Doctor: Okay alright um and are you on any medications
+
+Patient: No
+
+Doctor: No okay and um are you uptodate with your immunizations
+
+Patient: Yes
+
+Doctor: Okay and do you have any allergies
+
+Patient: uh no
+
+Doctor: Any family history of musculoskeletal diseases
+
+Patient: No not that i know of
+
+Doctor: Okay uh and any family history of autoimmune conditions
+
+Patient: um no
+
+Doctor: Okay um do you smoke at all
+
+Patient: No
+
+Doctor: No um do you consume marijuana
+
+Patient: uh no
+
+Doctor: uh do you drink alcohol
+
+Patient: uh no just just with friends sometimes on the weekends but not really
+
+Doctor: Okay um and then where do you live right now and who do you live with
+
+Patient: uh i live just outside of town with my parents in a house
+
+Doctor: Okay and um have you traveled anywhere recently
+
+Patient: um no ive been at home
+
+Doctor: Okay any sick contacts
+
+Patient: No
+
+Doctor: No okay so now were just going to move on to um the physical exam part of this so can you take a look at both your shoulders and let me know if you see any redness or swelling
+
+Patient: um i dont think i see any redness or swelling but um my right shoulder and my arm just seems a little bit lower than my left one
+
+Doctor: Okay okay any um warmth on on that shoulder
+
+Patient: uh no not that i can feel
+
+Doctor: Okay any atrophy deformities or skin changes
+
+Patient: um deformity i i do feel like kind of uh like my shoulders dropped and like theres just kind of this uh little like divots where like the shoulder should be
+
+Doctor: Okay okay and can you palpate that area for me just um the bones in that area so like right where your arm would connect to your shoulder and then kind of on your shoulder blade does that hurt when you press down
+
+Patient: Yeah it hurts a lot
+
+Doctor: Okay so some tenderness and pain in the acromion process and scapula um and if you press down on your biceps triceps does that hurt
+
+Patient: Not as much no
+
+Doctor: No okay and then can i get you to um can you lift your shoulder up at all like to where to the point where your fingers are touch like reaching the ceiling
+
+Patient: No i i cant i cant move it at all
+
+Doctor: Alright so um it sounds like you have a shoulder dislocation um so we are going to do an xray of your shoulder joint first to make sure that its its just a dislocation and there arent any broken bones or fractures and then um we can resolve this by doing something called a closed reduction um to try to put the joint back in its place
+
+Patient: Okay
+
+Doctor: um and if that closed reduction doesnt work then uh you may need surgery for like a um a weak shoulder joint or if like ligaments um arent like strong enough and its it continues to happen
+
+Patient: Okay
+
+Doctor: um otherwise we can keep it immobilized for a few days to a few weeks um depending on how bad the dislocation is um and then once thats removed you can do some rehab as well to restore some range of motion does that sound like a good plan do you have any questions or concerns in the meantime
+
+Patient: uh no i think thats uh thats great
+
+Doctor: Okay

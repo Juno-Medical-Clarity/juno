@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0662
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not drink or smoke.
+- Patient cares for their daughter, who is a widow.
+- Patient and daughter live together at home.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, or follow-up mentioned.)

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3052  |  gem_id: gem-cochrane-simplification-train-3053  |  doi: 10.1002/14651858.CD010015.pub3
+
+We searched for studies up to 2 February 2015. We identified two trials with a total of 2343 participants. The trials were conducted in the USA and France and investigated the use of fish oil supplements in people with AMD who were at high risk of progressing to advanced disease. We judged the studies to be at low risk of bias. One study was funded by government grants and the other study was funded by the manufacturer of the dietary supplement. These studies found that omega 3 supplementation for periods up to five years did not reduce the rate of progression to advanced AMD or reduce significant visual loss compared to a placebo. The incidence of adverse effects was similar in the intervention and placebo groups. We judged the quality of the evidence on rate of progression to AMD to be high, and the quality of the evidence for other outcomes to be moderate because the estimates were imprecise.

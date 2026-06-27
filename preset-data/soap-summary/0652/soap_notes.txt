@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0652
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient expresses happiness about improved blood pressure.
+- Reports feeling much better.
+- Mentions awareness of their condition, specifically referring to it as refractory hypertension.
+- Patient acknowledges forgetting a previously scheduled appointment with the internal medicine doctor.
+
+Objective:
+- Blood pressure is noted to be much better compared to past visits.
+- GFR (Glomerular Filtration Rate) is reported to be below sixty percent.
+
+Assessment:
+- Refractory hypertension is confirmed as the diagnosis.
+- Overall improvement in patient's condition is noted.
+
+Plan:
+- Reschedule the appointment with the internal medicine doctor.
+- Patient committed to rescheduling the appointment today.

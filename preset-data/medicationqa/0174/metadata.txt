@@ -1,0 +1,5 @@
+drug_focus: Amoxiciliin
+question_type: Dose
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=649d285c-8fcb-48dd-aa5e-2f34128102f5
+sample_id: 0174

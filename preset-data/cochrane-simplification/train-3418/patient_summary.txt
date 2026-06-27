@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3418  |  gem_id: gem-cochrane-simplification-train-3419  |  doi: 10.1002/14651858.CD002187.pub3
+
+In this review we assessed the effect of these agents on erectile dysfunction in diabetic people. Eight studies with 976 men randomised to PDE-5 inhibitor therapy and a duration of mainly 12 weeks were evaluated. Compared to placebo treatment, these agents showed favourable effects in scores estimating sexual life, with an increased rate of adverse effects like headache and flushing after PDE-inhibitor therapy. Mortality was not reported in any of the included trials. Quality of life, with the exception of scores for sexual life, was not relevantly affected. If taken as prescribed, PDE-5 inhibitors comprise a valuable treatment option for erectile dysfunction in men with diabetes.

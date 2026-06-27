@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1431  |  gem_id: gem-cochrane-simplification-train-1432  |  doi: 10.1002/14651858.CD003710.pub2
+
+The review of trials found that dual chamber pacemakers tended to prevent more subsequent heart problems than single chamber ventricular pacemakers. The impact on people's overall quality of life is uncertain. The review did not investigate the relative benefits or risks of surgery to upgrade to a dual chamber pacemaker.

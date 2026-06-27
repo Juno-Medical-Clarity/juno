@@ -1,0 +1,26 @@
+# SOAP Notes — Sample 0815
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Jerky movement in both arms and legs.
+- Severity: Not explicitly mentioned, but the patient seems concerned.
+- Duration: Episodes last about one minute; first noticed on the first day of life.
+- Frequency: Approximately six times since first observed.
+- Associated Symptoms: No interrupted breathing, no bluish color around the mouth, no arching of the back, no eye rolling noticed.
+- Relevant Medical History: Patient is a ten-day-old Caucasian infant.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Patient expresses fear regarding the baby's symptoms.
+
+Objective:
+- Physical Examination Findings: 
+ - Baby is feeding well and is active.
+ - Feeding frequency: Every two to three hours for about fifteen to twenty minutes.
+ - Urination: Up to eight pee diapers a day.
+ - Bowel Movements: Six to seven poopy diapers a day; color described as dirty yellowish.
+
+Assessment:
+- No clinical interpretations, diagnoses, or differential diagnoses provided.
+
+Plan:
+- No specific plan or follow-up actions mentioned.

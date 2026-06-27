@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1289
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Past surgeries: gallbladder removal (2008), appendix removal (2012), uterus removal (recently this past year).
+- Medical history: bladder prolapse diagnosed as grade four.
+- Last urologist visit: not followed up recently with Dr. Chip Winkel.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

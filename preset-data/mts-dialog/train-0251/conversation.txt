@@ -1,0 +1,4 @@
+Doctor: Let me examine your leg. Well your x ray looks fine. No defect there, I don't see any mass or swelling. Are you able to walk or use that leg at all?
+Patient: Oh yes, I am using it. I have also started going back on my regular walk.
+Doctor: Good, so your muscle strength is good, no loss of muscle tone there.
+Patient: Yeah.

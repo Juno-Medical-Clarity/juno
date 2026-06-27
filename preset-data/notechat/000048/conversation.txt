@@ -1,0 +1,44 @@
+Doctor: Good morning, sir. Can you please tell me about your past medical history?
+Patient: Yes, I have hypertension and I take metoprolol succinate for it. And I also have morbid obesity and pre-diabetes.
+Doctor: Okay, thank you for letting me know. So, you presented to the emergency department with a chief complaint of generalized weakness, is that correct?
+Patient: Yes, that's correct.
+Doctor: And you tested positive for COVID-19 and had mild unspecified respiratory symptoms.
+Patient: Yes, that's right.
+Doctor: And then you were discharged home to recover in isolation per the CDCs COVID-19 response protocols.
+Patient: Yes, that's correct.
+Doctor: And one week later, you returned to the ED for ongoing symptoms and were admitted to the hospital.
+Patient: Yes, that's right.
+Doctor: And you required supplemental oxygen for hypoxia.
+Patient: Yes, I did.
+Doctor: And upon admission to the hospital, you had difficulty standing and ambulating, is that correct?
+Patient: Yes, that's correct.
+Doctor: And two days into your inpatient stay, you developed urinary retention issues requiring intermittent catheterization.
+Patient: Yes, that's correct.
+Doctor: And three days later, you developed facial weakness and numbness.
+Patient: Yes, that's correct.
+Doctor: And the clinical diagnosis of GBS was suspected and subsequent EDX studies reported AIDP.
+Patient: Yes, that's correct.
+Doctor: And you were treated with a five-day course of intravenous immune globulin (IVIG).
+Patient: Yes, I was.
+Doctor: And three days after the completion of your IVIG treatment, you noted improvement with right upper extremity anti-gravity strength.
+Patient: Yes, I did.
+Doctor: And then you were transferred to inpatient rehabilitation with significant proximal lower extremity weakness.
+Patient: Yes, that's correct.
+Doctor: And the bilateral upper extremities demonstrated slight weakness.
+Patient: Yes, that's correct.
+Doctor: And the bilateral lower extremities demonstrated a significant loss of strength, 1/5 dorsiflexion, and 3/5 plantar flexion bilaterally.
+Patient: Yes, that's correct.
+Doctor: And you also reported diminished sensation to light touch in bilateral upper extremities in all dermatomes.
+Patient: Yes, that's correct.
+Doctor: And your blood pressure upon rehabilitation admission was 110/73 mmHg.
+Patient: Yes, that's correct.
+Doctor: And prior to hospitalization, you were independent with mobility and all activities of daily living.
+Patient: Yes, I was.
+Doctor: And upon evaluation in the inpatient rehabilitation, you were at a significant functional decline from baseline, requiring dependent assistance with toileting hygiene, showering, upper body dressing, lower body dressing, footwear management, rolling left and right, and all transfers.
+Patient: Yes, that's correct.
+Doctor: And you were unable to ambulate due to your level of impairment.
+Patient: Yes, that's correct.
+Doctor: And in inpatient rehabilitation, you completed three hours total of physical, occupational, and speech therapy per day five days a week with.
+Patient: Yes, I did.
+Doctor: Alright, thank you for your cooperation. Please follow the instructions of your physical, occupational, and speech therapists. And keep me updated with any changes in your condition.
+Patient: Alright, I will. Thank you, doctor.

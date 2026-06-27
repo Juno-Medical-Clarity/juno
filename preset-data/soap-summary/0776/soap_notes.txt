@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0776
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 65 years old.
+- Recently had a surprise birthday party.
+- Presenting for a recheck of prostatitis.
+- Complains of libido problems.
+- Noticed change in libido after starting Proscar.
+- Takes Viagra sometimes for libido issues; reports some improvement.
+- Gets up to urinate 3 to 4 times a night.
+- No urinary tract infections (UTIs) since starting Proscar.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

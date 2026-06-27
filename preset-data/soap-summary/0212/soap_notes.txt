@@ -1,0 +1,45 @@
+# SOAP Notes — Sample 0212
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Weight loss over the past 8 months (~30 lbs)
+- Coughing up blood for 2 weeks
+- Fever for 2 weeks
+- Cough with bloody sputum (teaspoon amount each time)
+- No triggers identified for cough
+- Tried cough suppressants, salt water rinses, OTC products (ineffective)
+- No viral infectious symptoms (eye discharge, red eyes, runny nose, sore throat)
+- No headaches, runny nose, loss of smell/taste, SOB, wheezing, chest pain, dizziness, fainting, heart palpitations, nausea, vomiting, abdominal pain, diarrhea, constipation, pain with urination, rashes
+- Muscle aches (general)
+- Low energy
+- Low appetite
+
+Past Medical History:
+- No significant PMHx
+- No regular medications
+- No allergies
+- No prior hospitalizations or surgeries
+
+Social History:
+- Lives alone in an apartment downtown
+- Works from home
+- No recent travel
+- Moved from Sri Lanka a year ago
+- No smoking (cigarettes or cannabis)
+- No alcohol or recreational drug use
+
+Family History:
+- No known heart or lung problems
+- No known cancers
+- No immediate family members with tuberculosis
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Likely diagnosis: Tuberculosis
+
+Plan:
+- Investigations: Acid-fast test of sputum, chest X-ray
+- Treatment: Prolonged course of antibiotics if tuberculosis confirmed
+- Referral: Infectious disease team for management guidance

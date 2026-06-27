@@ -1,0 +1,37 @@
+# SOAP Notes — Sample 1062
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No fever or chills.
+- No abnormal weight loss or weight gain.
+- No chest pain or shortness of breath.
+- No palpitations.
+- No numbness or tingling.
+- No fainting or loss of consciousness.
+- No double or blurred vision.
+- No difficulty hearing or continuous sounds.
+- No allergies, sneezing, or runny nose.
+- No indigestion or heartburn.
+- No blood in stool or black stool.
+- No diarrhea or vomiting.
+- Normal thirst.
+- Normal urine frequency; no need to wake at night to urinate.
+- Normal urine stream.
+- No cough or cold-like symptoms; no wheezing.
+- No mood swings, depression, or anxiety.
+- No joint pain in legs or back.
+- No heat or cold intolerance.
+- No difficulty swallowing.
+- No easy bruising.
+- No abnormal skin lesions.
+
+Objective:
+- Urine test: No pus cells or blood present.
+- Legs appear normal; no pedal edema.
+- Lymph nodes appear fine.
+
+Assessment:
+- No significant findings reported; overall health appears stable.
+
+Plan:
+- No specific plan or follow-up actions mentioned.

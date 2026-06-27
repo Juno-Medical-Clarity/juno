@@ -1,0 +1,7 @@
+Doctor: Have you had any anxiety attacks lately?
+Patient: No.
+Doctor: Have you felt depressed or had any mood swing problems?
+Patient: No.
+Doctor: Any phobias?
+Patient: No, not really.
+Doctor: Okay.

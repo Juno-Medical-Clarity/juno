@@ -1,0 +1,6 @@
+Doctor: I see here that you were in for afib last month.
+Patient: Yep.
+Doctor: How're you doing?
+Patient: It's all under control for now.
+Doctor: That's good to hear. Are you still taking Metoprolol and Premarin?
+Patient: Yeah.

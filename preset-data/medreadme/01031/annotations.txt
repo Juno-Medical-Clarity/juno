@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'B. abortus'
+  [7:10] 'medical-jargon-google-hard' -> 'division site polarity'
+  [16:17] 'medical-jargon-google-easy' -> 'intracellular'

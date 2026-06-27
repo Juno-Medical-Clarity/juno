@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0877
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, miss. It looks like some information is missing for your profile. Is it fine if I ask you a few questions? Of course. Go ahead. Do you currently smoke? No, I finally stopped smoking cigarettes. Did you smoke before? I did. I smoked a half a pack for about twenty years. Well, it's good to hear that you've stopped. I encourage you to continue to not smoke. I agree. I need to change up my lifestyle. Last question. Do you drink alcohol? No, I don't. I don't like anything that has alcohol. I can't stand the taste of it. If I do it is rare.

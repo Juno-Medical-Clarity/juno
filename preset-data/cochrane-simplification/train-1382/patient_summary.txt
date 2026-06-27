@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1382  |  gem_id: gem-cochrane-simplification-train-1383  |  doi: 10.1002/14651858.CD006756.pub2
+
+In this systematic review of non-randomised studies, no benefit could be demonstrated for CD over vaginal delivery (VD) in the prevention of anal incontinence. This review encompasses 21 published studies, involving 31,698 women, delivered by 6,028 CD and by 25,170 VD. No randomised studies comparing CD to VD in average risk pregnancies exist. The above conclusion is therefore based upon less than optimal evidence.

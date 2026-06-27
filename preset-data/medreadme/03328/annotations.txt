@@ -1,0 +1,10 @@
+source:      wiki
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Treprostinil'
+  [4:5] 'medical-jargon-google-easy' -> 'intravenously'
+  [6:7] 'medical-jargon-google-easy' -> 'subcutaneously'
+  [10:11] 'medical-jargon-google-easy' -> 'subcutaneous'

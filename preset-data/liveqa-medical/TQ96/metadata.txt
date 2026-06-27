@@ -1,0 +1,14 @@
+qid: TQ96
+source_file: NF_192.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Can an abscessed tooth cause a heart attack?
+nlm_summary: Can an abscessed tooth cause a heart attack?
+
+focus_entities:
+  [F1] (Problem) heart attack
+question_types:
+  [T1] CAUSE
+keywords:
+  [K1] (Problem) abscess teeth

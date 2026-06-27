@@ -1,0 +1,5 @@
+Turner Syndrome (TS) is a genetic condition found in 1 out of every 2500 newborn girls. Turner syndrome is a condition where there is an abnormal amount of chromosomes (genetic material).
+Prompt and effective diagnosis is very important to appropriately monitor the comorbidities (two or more diseases in one patient).
+The aim of the study was to propose a feasible and practical diagnostic tool for newborn screening. The screening would be completed by quantifying (measuring) the dosage of specific genes in individuals with a diagnosis of complete X monosomy and TS variants. The gene doses would be compared to controls without chromosomal abnormalities. Monosomy indicates there is an absence of one member of a chromosome pair; instead of 46 chromosomes in each cell of the body, there is 45.
+Study results showed the most useful indicators for these chromosomal variants were the genes found in the pseudoautosomic regions 1 and 2 (PAR1 and PAR2).
+The authors concluded that these markers are useful for early detection in chromosomal imbalances, specifically those involving sex chromosomes.

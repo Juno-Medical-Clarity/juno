@@ -1,0 +1,5 @@
+pmid:        34579048
+question:    29
+adaptation:  adaptation1
+title:       Diet, Probiotics and Their Impact on the Gut Microbiota during the COVID-19 Pandemic
+sentences:   11

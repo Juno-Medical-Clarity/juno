@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1237  |  gem_id: gem-cochrane-simplification-train-1238  |  doi: 10.1002/14651858.CD001096.pub2
+
+This review found 28 studies that evaluated the effects of different on-screen computer reminders. The studies tested reminders to prescribe specific medications, to warn about drug interactions, to provide vaccinations, or to order tests.  The review found small to moderate benefits. The reminders improved physician practices by a median of 4%. In eight of the studies, patients' health improved by a median of 3%. Although some studies showed larger benefits than these median effects, no specific reminders or features of how they worked were consistently associated with these larger benefits. More research is needed to identify what types of reminders work and when.

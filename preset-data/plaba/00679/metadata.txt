@@ -1,0 +1,5 @@
+pmid:        10535452
+question:    53
+adaptation:  adaptation1
+title:       Disruption of circadian insulin secretion is associated with reduced glucose uptake in first-degree relatives of patients with type 2 diabetes
+sentences:   11

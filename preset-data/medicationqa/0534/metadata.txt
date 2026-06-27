@@ -1,0 +1,5 @@
+drug_focus: cortisone
+question_type: Information
+section_title: Steroid injections - tendon, bursa, joint
+source_url: https://medlineplus.gov/ency/article/007678.htm
+sample_id: 0534

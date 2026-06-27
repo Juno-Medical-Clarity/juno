@@ -1,0 +1,45 @@
+# SOAP Notes — Sample 0006
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with worsening cough x3 days (baseline cough x3 years, usually productive of clear/white sputum, worse with activity), now with increased shortness of breath, chest tightness, and green sputum production
+- Cough: Harsh, sounds like mucus moving, no blood in sputum
+- Associated wheeze
+- Shortness of breath worse over last few days with worsening cough
+- Rates symptoms 8/10 severity, difficulty breathing
+- Endorses bilateral lower extremity edema
+- Denies: Chest pain, palpitations, dizziness, syncope, rhinorrhea, sore throat, anosmia, ageusia, fever, chills
+
+PMHx:
+- COPD 
+- Hypertension (on amlodipine x7 years)
+- Cholecystectomy
+- ACL repair as teenager
+
+Medications:
+- Spiriva inhaler (several years)
+- Short-acting beta agonist inhaler PRN (long-term)
+- Amlodipine 
+- Vitamin D
+
+SocHx:
+- Lives alone in apartment with dog
+- Smokes 1 PPD x35 years (previously 2 PPD)
+- No marijuana use
+- Drinks a few beers on weekends
+- No recent travel or known sick contacts
+
+Objective:
+- Vitals pending
+
+Assessment:
+- Likely COPD exacerbation
+
+Plan:
+- Physical exam to assess severity of COPD exacerbation
+- Check oxygen saturation (goal 88-92%)
+- If mild exacerbation: Increase frequency of short-acting beta agonist inhaler
+- If moderate exacerbation: Prescribe antibiotics and/or steroids in addition to increased short-acting beta agonist inhaler use
+- If severe exacerbation: Seek emergency care for possible supplemental oxygen (BiPAP/CPAP), bronchodilators, steroids, antibiotics
+- COVID swab to rule out viral illness
+- Smoking cessation resources offered

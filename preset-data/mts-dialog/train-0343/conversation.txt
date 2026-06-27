@@ -1,0 +1,5 @@
+Doctor: You have atrial fibrillation from the past?
+Patient: Yes, rhythm problem is bad.
+Doctor: And no dizziness?
+Patient: Yes. I do.
+Doctor: Okay well...

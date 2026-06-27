@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0166  |  gem_id: gem-cochrane-simplification-test-167  |  doi: 10.1002/14651858.CD008068.pub2
+
+Duxil is described as having several properties which may be beneficial for dementia. This review looked for randomized trials comparing Duxil with control in patients with dementia. Three trials were identified. Though there was significant beneficial effect of Duxil on the improvement of cognitive function, due to the low methodological quality of included trials, small number of trials and probable publication bias, this review did not provide sufficient evidence to support the routine use of Duxil for the treatment of patients with dementia. More large, high-quality randomized trials are needed.

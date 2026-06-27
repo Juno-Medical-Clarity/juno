@@ -1,0 +1,5 @@
+drug_focus: Nitrofurantoin
+question_type: Manufacturer
+section_title: Packager:
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1971e893-5fdb-41e3-a1e9-5e52deed03d1
+sample_id: 0221

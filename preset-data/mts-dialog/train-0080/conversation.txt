@@ -1,0 +1,4 @@
+Doctor: So, do you have any family history of cancer?
+Patient: Well, yes, but I can't remember who had what kind.
+Doctor: Still, that's helpful, thank you. What about heart disease?
+Patient: That too, there's some history of heart disease, but I can't remember who.

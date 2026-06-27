@@ -1,0 +1,12 @@
+source:      pnas
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Expression'
+  [2:3] 'medical-jargon-google-hard' -> 'SMARCA2'
+  [5:8] 'medical-jargon-google-hard' -> 'EZH2 inhibitor sensitivity'
+  [10:17] 'medical-jargon-google-hard' -> 'SWI / SNF complex subunit mutant tumors'
+  [19:20] 'medical-jargon-google-hard' -> 'SNF5'
+  [21:24] 'medical-jargon-google-hard' -> 'ARID1A mutant cancers'

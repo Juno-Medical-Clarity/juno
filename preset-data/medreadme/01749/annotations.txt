@@ -1,0 +1,9 @@
+source:      plos_computational_biology
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-hard' -> 'mutant localization'
+  [16:18] 'medical-jargon-google-easy' -> 'mislocalized protein'
+  [25:28] 'medical-jargon-google-easy' -> 'wild - type'

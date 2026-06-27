@@ -1,0 +1,9 @@
+source:      elife
+side:        simple
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'Atoh1'
+  [6:8] 'medical-jargon-google-easy' -> 'parabrachial complex'
+  [11:13] 'medical-jargon-google-hard' -> 'retrotrapezoid cells'

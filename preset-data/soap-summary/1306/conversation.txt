@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1306
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anyone in your family been sick lately? Yes, my sister has sinus problems. She was seen today. Okay that means she will be treated. Yes. How about other family members? No, my mom and dad are healthy. Good. Good. Hm!

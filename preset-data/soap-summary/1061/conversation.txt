@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1061
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What brings you back into the clinic today? I have been having some severe bruising. I have been taking Coumadin for three months now. Am I taking to much Coumadin? You are taking a normal start dose. Some people do not metabolize the medication as well as others. I would like to get you tested for hypersensitivity. After we get the test results back, we will be able to adjust your dosage accordingly. Okay.

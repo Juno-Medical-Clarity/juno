@@ -1,0 +1,1 @@
+In this manuscript, we demonstrate experimentally how randomness in bacterial colonization can result in large differences in the composition of host-associated bacterial communities, using the nematode worm Caenorhabditis elegans as a tractable host model.

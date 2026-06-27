@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [2:5] 'general-complex' -> 'propensity score methods'
+  [7:8] 'abbr-medical' -> 'TOPKAT'
+  [10:11] 'general-complex' -> 'confounding'

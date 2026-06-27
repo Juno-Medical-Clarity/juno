@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3422  |  gem_id: gem-cochrane-simplification-train-3423  |  doi: 10.1002/14651858.CD002147
+
+The reviewers evaluated the safety and effectiveness of a drug called terlipressin: they reported that terlipressin appears to be as safe as other treatments and that terlipressin may reduce the mortality from variceal bleeding as compared to placebo. The reviewers did not have sufficient data to decide whether terlipressin was better or worse than other available treatments such as other drugs (somatostatin, octreotide) or endoscopic treatment.

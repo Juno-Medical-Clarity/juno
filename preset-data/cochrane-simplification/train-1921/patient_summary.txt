@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1921  |  gem_id: gem-cochrane-simplification-train-1922  |  doi: 10.1002/14651858.CD012803.pub2
+
+We assessed the the quality of evidence for many outcomes including cardiac-related rehospitalisation as low or very low because variability among studies (heterogeneity) was high, a range of confidence intervals was wide, and random sequence generation and blinding of participants and personnel were poorly described. The effect of PAP therapy on all-cause mortality was uncertain. In addition, although PAP therapy did not reduce the risk of cardiac-related mortality and rehospitalisation, there was some indication of an improvement in quality of life score for heart failure patients with CSA. Furthermore, the evidence was insufficient to determine whether adverse events were more common with PAP than with usual care. These findings were limited by low- or very low-quality evidence. PAP therapy may be worth considering for individuals with heart failure to improve quality of life.

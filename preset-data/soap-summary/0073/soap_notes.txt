@@ -1,0 +1,32 @@
+# SOAP Notes — Sample 0073
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for the last few days, worsening since Sunday
+- Noticed red spots in sputum since Sunday
+- Fever since Monday (self-reported, no temperature taken)
+- Chills, especially in the last 2 days
+- Slight shortness of breath with exertion (e.g., climbing stairs)
+- Sore throat after extensive coughing
+- Runny nose about a week ago, now resolved
+- Right-sided chest pain, worse with deep breaths and coughing, dull and persistent
+- No recent weight loss
+- Recent travel to Sarnia for work
+- No known contact with sick individuals
+
+Past Medical History:
+- PMHx: high cholesterol
+- Medications: Lipitor
+- Surgical history: wisdom teeth removal at age 15
+- Allergies: none
+- SocHx: lives with girlfriend in an apartment, has a cat, works as a consultant for chemical plants, occasional alcohol use, smokes about a pack a day since age 15, occasional cannabis use in the past
+- FHx: grandfather died of lung cancer (heavy smoker)
+
+Objective:
+- (No vitals or physical examination findings provided)
+
+Assessment:
+- (No diagnosis or differential diagnosis provided)
+
+Plan:
+- (No investigations or treatment plans provided)

@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [3:4] 'general-complex' -> 'underpowered'
+  [9:12] 'general-complex' -> 'Type 2 error'

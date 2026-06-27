@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 1220
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Lower back pain, pain in the right thigh.
+- Severity: Pain rated 8 out of 10 at the last visit, currently down to 4 or 5 out of 10 after taking Medrol Dosepak.
+- Duration: Pain has been present for a while; specific duration not mentioned.
+- Associated symptoms: Intermittent and minimal right leg pain; no current mention of additional symptoms.
+- Relevant medical history: 
+ - History of two laminectomies (1990 and 1994) and a discectomy between those dates.
+ - Previous MRI on October 18, 2004, showing multi-level degenerative changes with facet involvement and no neural impingement.
+ - Prior myelogram showing severe spinal stenosis at L3-L4, but possibly an artifact.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient is currently working at Taco Bell, has an open workers' compensation claim, and reports that pain recurred while working.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Current interpretation includes significant arthritis in the back, as indicated by imaging findings.
+
+Plan:
+- No specific plan mentioned in the conversation.

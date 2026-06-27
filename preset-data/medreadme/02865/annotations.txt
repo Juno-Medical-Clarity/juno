@@ -1,0 +1,14 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Linkage mapping'
+  [4:11] 'medical-jargon-google-hard' -> 'B6x129 ) . HdhQ111 F2 intercross animals'
+  [14:17] 'medical-jargon-google-easy' -> 'quantitative trait locus'
+  [27:28] 'medical-jargon-google-easy' -> 'striatum'
+  [30:32] 'medical-jargon-google-easy' -> 'mismatch repair'
+  [33:34] 'medical-jargon-google-easy' -> 'MMR'
+  [36:37] 'medical-jargon-google-easy' -> 'Mlh1'
+  [41:43] 'medical-jargon-google-hard' -> 'candidate modifier'

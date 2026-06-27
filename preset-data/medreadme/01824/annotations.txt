@@ -1,0 +1,11 @@
+source:      wiki
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Salivary gland tumours'
+  [7:10] 'medical-jargon-google-easy' -> 'mucous gland adenomas'
+  [11:12] 'medical-jargon-google-easy' -> 'neoplasms'
+  [14:15] 'medical-jargon-google-easy' -> 'tumours'
+  [21:23] 'medical-jargon-google-easy' -> 'salivary glands'

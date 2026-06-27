@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0358
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No one is sick in the family.
+- No illnesses run in the family; everyone is healthy.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

@@ -1,0 +1,5 @@
+pmid:        10917403
+question:    20
+adaptation:  adaptation1
+title:       Weekly dosing of fluoxetine for the continuation phase of treatment of major depression: results of a placebo-controlled, randomized clinical trial
+sentences:   10

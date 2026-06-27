@@ -1,0 +1,144 @@
+# Smith Collection Transcript: RES0169
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: I ive been having uh this fever the last couple of days and ive had a cough as well and my nose is keeps running
+
+Doctor: OK and when did the fevers start
+
+Patient: I think the fever started two days ago
+
+Doctor: How did you measure your magic temperature
+
+Patient: Yeah it was 38 point 5 when i when i checked it
+
+Doctor: And have you been checking it out past days has it gotten better or worse
+
+Patient: Its been about the same both both days
+
+Doctor: And your cough when did that start
+
+Patient: Cough started four days ago
+
+Doctor: OK is it a wet cough or dry cough
+
+Patient: Its been dry
+
+Doctor: Ive been bringing up any blood or any mucus or anything like that
+
+Patient: No and i havent had a cough before either this is new
+
+Doctor: OK and the runny nose what kind of discharge or what like whats coming out of your nose
+
+Patient: Its pretty pretty watery and clear
+
+Doctor: OK alright and when did that start
+
+Patient: Yeah yeah sorry that started about four days ago as well so about the same time as the cough
+
+Doctor: Have you had any other symptoms such as having a stuffy nose that have congestion in your sinuses sore throat umm red eyes watery teary eyes sneezing any of those symptoms
+
+Patient: um no nothing like that
+
+Doctor: Any difficulties breathing
+
+Patient: No
+
+Doctor: Any pain in your chest
+
+Patient: No
+
+Doctor: OK any headaches
+
+Patient: uh yeah i have had a bit of a headache actually well just just this morning
+
+Doctor: How how bad is it
+
+Patient: Its pretty mild something pretty simple like it so ive had headaches like like this before its not its not a big deal
+
+Doctor: And do you have any fatigue or muscle aches
+
+Patient: No muscle aches but yeah i have been fatigued last a couple of days two or three days
+
+Doctor: Any changes in your sense of smell
+
+Patient: No
+
+Doctor: Changes in your sense of taste
+
+Patient: No
+
+Doctor: Any pain in your belly or any diarrhea
+
+Patient: Nothing like that
+
+Doctor: OK alright um any medical conditions that youve been diagnosed with
+
+Patient: uh no i ive been ive been healthy
+
+Doctor: OK any surgeries or hospitalizations
+
+Patient: No i havent had anything like that before
+
+Doctor: OK and do you take any medications
+
+Patient: No im not
+
+Doctor: OK and allergies to food or medications or environmental allergies
+
+Patient: I think i have an allergy to penicillin i got it i had a rash when i was i younger when i had that
+
+Doctor: OK and do you currently would you currently let that
+
+Patient: Yeah so i i just live with my with my mom
+
+Doctor: OK do you have any pets at home
+
+Patient: No its just us two uh we live in a in a townhouse in in the city
+
+Doctor: Nice ok and do you do you or your mom go out for school or for work
+
+Patient: uh yeah ive been going been going to school i know with the some of the lockdowns and what not the schools been open so weve been going theyve been pretty cautious with the covid protocols and but my moms been working from home
+
+Doctor: OK good do you feel like you or your mom may have had contact with anyone who could have potentially been sick
+
+Patient: Uhm i mean maybe at the school or something like that but i cant think of anybody who whos been sick
+
+Doctor: OK alright have you traveled anywhere outside the province
+
+Patient: No
+
+Doctor: OK uhm and uh do you i guess a couple of other more general questions do you feel safe at home
+
+Patient: I do yeah we have a good a good relationship
+
+Doctor: Im glad im glad and an anything that we discuss will see confidential between you and me unless theres something that you could be talk about that could harm you or harm anyone else do you feel safe at school
+
+Patient: Yes i do i enjoy school its been fun
+
+Doctor: Thats good thats good and have you can have been consuming the drug tried anything
+
+Patient: No ive heard of other people i mean in high school doing stuff like that but i havent been around anything like that
+
+Doctor: OK alright any alcohol
+
+Patient: No
+
+Doctor: OK are you sexually active
+
+Patient: No
+
+Doctor: Alright and uh lets see so uh youve had a fever a cough and a runny nose for the past few days and have you been going to school in the past couple of days or no
+
+Patient: I know ive taken the last couple of days off just been so tired and not feeling good so yeah well
+
+Doctor: OK ok so yeah it sounds like you might have some sort of viral infection which could potentially be covid but could also be another sort of another viral illness just like the common cold or the flu um so ill request that we get a covid swab done and the results should come back in 24 to 48 hours and um just try to self isolate as much as possible dont go to school dont meet other people try to stay away from your mom as well and based on the results youll get more guidance from public health nurses and you should just continue to sort of rest and drink lots of water maybe take tylenol or advil if thats making you feel better and hopefully your symptoms will get better if not if you feel like your symptoms are persisting for days or week or so or youre having worsening symptoms definitely come back or give us a call
+
+Patient: OK thank you

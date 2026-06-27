@@ -1,0 +1,12 @@
+Doctor: Hi there! It is good to see you both. How has everything been going for the both of you?
+Patient: Hi Doctor.
+Guest_family: Things have been pretty good. She has been having some new emotional outbursts. I made an appointment with the down syndrome behavioral specialist that you recommended from the last time we were here.
+Doctor: That is great. Keep me updated on her progress.  Her bloodwork came back showing an underactive thyroid. This explains the recent weight gain and fatigue. I would like to start her on a medication called levothyroxine. We will need to check her bloodwork again in one month to see how her thyroid respond to the medication.
+Guest_family: Okay.
+Doctor: Is there any other concerns you have today?
+Guest_family: Yes. She has this toenail that looks strange and discolored.
+Doctor: Let me look. Can you remove your socks for me?
+Patient: Yes.
+Doctor: Is it this nail?
+Guest_family: Yes.
+Doctor: This is very common. It is called Onychomycosis. It is nail fungus. Since only one nail is affected, I would recommend starting off with a topical treatment. I will send the drops to your pharmacy. You will put on drop on the affected nail, daily.

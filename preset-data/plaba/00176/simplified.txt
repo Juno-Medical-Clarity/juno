@@ -1,0 +1,9 @@
+Coronavirus Disease 2019 (COVID-19), a breathing-related disease caused by a novel coronavirus SARS-CoV-2, has been an ongoing global pandemic.
+Several vaccines have been developed to control the COVID-19, but the potential effectiveness of the mucosal vaccine (vaccines given at moist, inner lining of some organs and body cavities, such as the nose, mouth, lungs, and stomach) remains to be documented.
+In this study, researchers constructed a lactic acide gene called L. plantarum LP18: RBD that uses information from the receptor-binding domain (RBD) (the part of the virus located on the spike protein which is involved in introducing a virus into host cells) of the SARS-CoV-2 spike protein by anchoring to the surface.
+
+Researchers also evaluate the immune response in mice by the intranasal administration (a non-invasive route for drug delivery through the nose) of LP18:RBD.
+The results show that LP18:RBD significantly brought out IgA antibodies (antibodies that play a crucial role in the immune function of mucous membranes) in the organs involved in breathing and in digesting food.
+
+These results show that LP18:RBD may create humoral immune responses (molecules that create antibodies against a specific antigen and involves substances found in the humors, or body fluids) and could be used as a mucosal vaccine against SARS-CoV-2 infection.
+This study is the first experiment that shows LP18:RBD could start an immune response within a living person or animal and suggests that mucosal vaccines could be a promising vaccine strategy to prevent the COVID-19 pandemic.

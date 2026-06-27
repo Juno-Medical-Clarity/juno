@@ -1,0 +1,5 @@
+drug_focus: n/a (Exploration)
+question_type: Action
+section_title: Drugs
+source_url: https://en.wikipedia.org/wiki/Nootropic
+sample_id: 0124

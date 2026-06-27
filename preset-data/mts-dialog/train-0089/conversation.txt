@@ -1,0 +1,3 @@
+Doctor: Do you know when was the last time you got a tetanus shot?
+Patient: No I don't remember.
+Doctor: Okay.

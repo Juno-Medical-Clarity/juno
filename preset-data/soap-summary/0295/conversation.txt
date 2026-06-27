@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0295
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you allergic to anything? Yes, I am allergic to Penicillin. Any other drugs that you could be allergic to? Nope that is all. Okay.

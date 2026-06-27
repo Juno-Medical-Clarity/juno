@@ -1,0 +1,35 @@
+Doctor: Hi, how are you doing?
+Patient: I'm good. Thank you.
+Doctor: How old are you, young lady?
+Patient: Eighty four.
+Doctor: What brings you here?
+Patient: I had a fall. And I was told to consult you for my heart conditions.
+Doctor: Okay. Um? Can you tell me a little detail about anything you experienced before or diagnosed before?
+Patient: Yeah, I have high blood pressure. And they also diagnosed me with other heart diseases. I cannot pronounce all the names I don't remember.
+Doctor: That's fine. Let me go through your medical record first.
+Doctor: Let's see what we have here. Looks like you have your plate full. Your record says you had hypertension I mean, high blood pressure. Also, you have a history of severe tricuspid regurgitation with mild pulmonary hypertension, mild aortic stenosis, and previously moderate mitral regurgitation.
+Patient: Wow! Those are a lot of fancy words that I can never remember.
+Doctor: Ha ha. So, it says here they they want me to check you for atrial fibrillation. Yet another fancy word to add to your list.
+Patient: What does it mean?
+Doctor: It means I must check if you have faster than normal heartbeat after your fall. In simple words, just to check if there are any irregularities in your heart beating, okay?
+Patient: Hm, okay.
+Doctor: So tell me what happened? How did you fall?
+Patient: I'm not sure about how it happened, but yeah, I fell yesterday on my driveway and kind of hit a rock.
+Doctor: Which side did you hit the rock?
+Patient: Um I think it was left side.
+Doctor: What happened in the emergency room?
+Patient: They gave me some medicine. And they put something on my finger. They said that my heart rate was very high.
+Doctor: Yeah, in the record it says that they found rapid atrial tachyarrhythmia. So, according to this, they have given you Cardizem and they stopped it when your heart rate came to fifties.
+Doctor: Let me review your electrocardiogram from emergency. It says that there was rapid heart rate. Your heart was really beating very fast and then there was one more electrocardiogram which showed that your pacemaker is acting weird.
+Patient: They also did the same test this morning.
+Doctor: One they did this morning shows normal rate with frequent early heartbeats. Looks like they also tested your blood. Your potassium level is three point one.
+Doctor: How was your heart feeling when you fell yesterday?
+Patient: I felt that I just ran in a race. I could feel all the pain after that fall. It was ugly. My heart was pounding so fast it was ready to come out, I never felt like that before in my life.
+Doctor: Did you feel the same way afterwards as well?
+Patient: No, it was just after fall. It did not stay like that for long, I was normal later. I never felt it again after that incident.
+Doctor: That is good. Do you have any pain or discomfort in your chest?
+Patient: I don't think so.
+Doctor: How about before the fall? Did you have any pain or discomfort in your chest before the fall?
+Patient: Nope.
+Doctor: how about shortness of breath?
+Patient: No, not even before the fall. I'm able to walk and I'm sure I can climb stairs. Maybe two floors without any problems.

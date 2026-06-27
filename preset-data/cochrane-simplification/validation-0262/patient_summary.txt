@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0262  |  gem_id: gem-cochrane-simplification-validation-263  |  doi: 10.1002/14651858.CD001058.pub3
+
+The review of 22 trials, involving 6872 women and their babies, found that, in the short term, certain antibiotics given to women, when their waters break early, increase the time babies stay in the womb. They reduced infection, but did not save more babies. One antibiotic (co-amoxiclav) increased the number of babies with a rare condition of inflammation of the bowel (necrotising enterocolitis). Although, in the longer term (at seven years of age) antibiotics seem to have little effect on the health of children, the short-term advantages are such that we recommend antibiotics should be given routinely.

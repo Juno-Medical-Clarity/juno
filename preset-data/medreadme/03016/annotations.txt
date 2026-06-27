@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        simple
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'flumazenil'
+  [10:12] 'medical-jargon-google-easy' -> 'hepatic encephalopathy'
+  [19:22] 'general-complex' -> 'randomised clinical trial'

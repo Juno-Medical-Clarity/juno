@@ -1,0 +1,13 @@
+source:      elife
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [6:9] 'medical-jargon-google-hard' -> 'DNA patrolling activity'
+  [12:13] 'medical-jargon-google-hard' -> 'Pif1'
+  [18:20] 'medical-jargon-google-hard' -> 'Pif1 monomer'
+  [25:31] 'medical-jargon-google-hard' -> '3 ′ - tailed DNA junction'
+  [36:39] 'medical-jargon-google-hard' -> '3 ′ tail'
+  [45:46] 'medical-jargon-google-easy' -> 'nucleotide'
+  [47:48] 'general-complex' -> 'extruding'

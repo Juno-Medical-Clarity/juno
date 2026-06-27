@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2888  |  gem_id: gem-cochrane-simplification-train-2889  |  doi: 10.1002/14651858.CD001418
+
+This review found a small benefit in platinum-based chemotherapy over non-platinum therapy. It also found that platinum combinations may offer improved survival over single platinum and that cisplatin and carboplatin are equally effective. The trials were done when paclitaxel (an effective new drug) was not used routinely. The results therefore, will need to be looked at in the light of new evidence from paclitaxel trials.

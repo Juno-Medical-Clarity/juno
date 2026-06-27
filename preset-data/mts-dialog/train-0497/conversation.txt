@@ -1,0 +1,10 @@
+Doctor: Do you drink?
+Patient: Well, I will call myself a social drinker. I would admit that I am addicted to caffeine.
+Doctor: How much coffee do you consume each day?
+Patient: I would say three to five cups.
+Doctor: Any history of sexually transmitted disease?
+Patient: Nope.
+Doctor: How're your eating habits?
+Patient: I would say I am a good eater and follow a healthy diet plan.
+Doctor: Do you exercise?
+Patient: I walk every day around five miles. Also, I'm very regular in my sprint training.

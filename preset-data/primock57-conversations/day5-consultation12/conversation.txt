@@ -1,0 +1,185 @@
+# PriMock57 Consultation Transcript: day5_consultation12
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Patient: Hi.
+
+Doctor: Hi there. It's Doctor Smith from Babylon.
+
+Patient: Hey. How are you?
+
+Doctor: How are you doing? [unintelligible]. Good thank you. Can you confirm your name, date of birth, and your, home address please?
+
+Patient: Um, yes I can. Uh, it's, Mary Smith.
+
+Doctor: [unintelligible]
+
+Patient: Um, I'm twenty eight, and I live at apartment four oh five, nine C, Clerkenwell Road.
+
+Doctor: OK that's fine. Are you in a private place so you can have a consultation today?
+
+Patient: Yes I am.
+
+Doctor: What can I do for you?
+
+Patient: Um, I keep having a headache.
+
+Doctor: OK, and when did it start?
+
+Patient: It started yesterday, um. Uh, it's unusual for me, to have a headache.
+
+Doctor: OK. Can you just tell me whereabouts in your head it is?
+
+Patient: It's on the left side at the back, sort of here.
+
+Doctor: [unintelligible]. OK. Just on the left side.
+
+Patient: Yes.
+
+Doctor: And, when did it start? What time of day did it start yesterday?
+
+Patient: About mid-morning.
+
+Doctor: And how did it feel when it first started?
+
+Patient: Um, just quite, intense, and kinda quite throbbing. It kind of built up gradually after, over. A short period of time.
+
+Doctor: OK. And did you get uh, have you got any other symptoms along with that? Any nausea, vomiting, tingling, numbness, weakness, anywhere?
+
+Patient: No, nothing.
+
+Doctor: OK, and, uh. Sorry [unintelligible]. Um, any blurred vision, or any pain over your eyes?
+
+Patient: Um. No.
+
+Doctor: Any [unintelligible], any funny lights or, anything like that in your vision area? Any problems when you look into the light?
+
+Patient: No, [unintelligible]. No.
+
+Doctor: Um, and have you been eating and drinking OK?
+
+Patient: Yes, yes, like normal.
+
+Doctor: [unintelligible]. Are you feeling sick, or vomiting, or anything?
+
+Patient: No, nothing like that, [unintelligible].
+
+Doctor: Any high fevers? Are you feeling shivery? Sweaty?
+
+Patient: No, no fever, no [unintelligible].
+
+Doctor: Any [unintelligible], any rashes at all?
+
+Patient: No.
+
+Doctor: And, in the past, have you had any headache before?
+
+Patient: Not really.
+
+Doctor: OK. How bad would you say the headache is from, zero to ten, if ten is the worst pain that you could have, and zero is nothing?
+
+Patient: I'd say about eight.
+
+Doctor: OK. And have you taken any pain killers?
+
+Patient: Um, I took some, um, um, Nurofen, yesterday.
+
+Doctor: OK, and did that make any difference?
+
+Patient: Not really.
+
+Doctor: And last night, did you manage to sleep through the night OK?
+
+Patient: Uh, yes I did.
+
+Doctor: Has it been worse at any particular time of the day?
+
+Patient: No, it hasn't made any difference, the time of the day.
+
+Doctor: Any difference if you lie down, stand up, bend over, cough or sneeze, or anything like that?
+
+Patient: Um, no.
+
+Doctor: And, have you got any other medical problems?
+
+Patient: Um, no I haven't.
+
+Doctor: Anything you take medication for?
+
+Patient: No I don't.
+
+Doctor: Um, any over-the-counter medications or allergies?
+
+Patient: No, only the, Nurofen I took yesterday, Ibuprofen.
+
+Doctor: That's fine. And any stomach problems, or asthma at all?
+
+Patient: No.
+
+Doctor: Anyone in your family got any medical problems?
+
+Patient: Uh, my mother's had hypertension, and she does get migraines.
+
+Doctor: [unintelligible]. And, have you had your blood pressure checked [unintelligible]?
+
+Patient: Um, no, not recently.
+
+Doctor: And who do you live with at home?
+
+Patient: Sorry?
+
+Doctor: Who do you live with at home?
+
+Patient: My partner.
+
+Doctor: And what's your job, day-to-day?
+
+Patient: I'm a designer.
+
+Doctor: Have you had to miss any work at all?
+
+Patient: Uh, no, but I don't feel that, I'm finding it really hard to [unintelligible], to do any of, my work, or, normal things.
+
+Doctor: OK. Um, and do you smoke at all normally?
+
+Patient: No I don't.
+
+Doctor: Do you drink any alcohol regularly?
+
+Patient: No.
+
+Doctor: Um, and any other drugs?
+
+Patient: No.
+
+Doctor: No, OK. Um, I mean the fact that you haven't had headaches before, um, is, is unusual the fact that they've developed. Is there anything you think's changed? Any increased stress, [unintelligible], change in your diet or lifestyle?
+
+Patient: Not that I can, not that I can think of.
+
+Doctor: OK. So, what we would suggest is, trying a slightly stronger, pain relief. Uh, so, similar to Ibuprofen, but taking instead of Ibuprofen not at the same time, and taking that regularly with food.
+
+Patient: OK.
+
+Doctor: Um, hopefully that will settle it down. You can take Paracetamol along with that.
+
+Patient: Yes.
+
+Doctor: Try and um, take rest, have lots of good hydration.Um, but if the pain's getting worse, or you get new symptoms, fever, rash, vomiting, neck stiffness. Um, or you keep getting episodes of the same type of thing, then we need to speak to you, and, and make a plan for, for what we can do next.
+
+Patient: OK. Thank you.
+
+Doctor: Have you got any other questions?
+
+Patient: How long do you think it will last for?
+
+Doctor: Well I should think it should [unintelligible] down, if it's getting worse or not settling in the next day or two. Then certainly give us a call back, if, when you've tried the medication that I've prescribed from the pharmacy.
+
+Patient: [unintelligible] OK.
+
+Doctor: OK?
+
+Patient: Thank you.
+
+Doctor: All right then. Thanks a lot. Bye.
+
+Patient: [unintelligible], bye.

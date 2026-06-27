@@ -1,0 +1,5 @@
+pmid:        17410826
+question:    38
+adaptation:  adaptation1
+title:       Prevention and management of pressure ulcers
+sentences:   3

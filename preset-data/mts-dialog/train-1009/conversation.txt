@@ -1,0 +1,21 @@
+Doctor: How's it going X Y Z? I see you're in a walking boot. What happened?
+Patient: I hurt my foot pretty bad yesterday.
+Doctor: How'd it happen?
+Patient: Basketball. I play for the University of Houston. I went up for a three and came down and landed on this guy's foot. I was so pissed.
+Doctor: Dang, that sucks. Were you guys playing a home game?
+Patient: We were traveling to Duke. We could've won the game if I didn't get hurt.
+Doctor: You'll get them next time. Did you keep playing?
+Patient: Yeah, I did. I got taped up by the trainer, and I went back into the game.
+Doctor: I see. Who was the trainer that helped you?
+Patient: His name is John Houston. Do you know him?
+Doctor: Oh, John! He's a good friend of mine.
+Patient: Yeah, he told me to come see you. He checked my foot. Here's the notes he wrote.
+Doctor: It looks like you have some tenderness around your navicular, which is a bone in your ankle.
+Patient: Dang, that's whack.
+Doctor: Which way did you twist your ankle?
+Patient: My foot twisted inwards. Kind of like this.
+Doctor: I see. Your foot inverted. Did it swell up right away?
+Patient: Aw, man. My foot was huge right after it happened. It hurt so much too.
+Doctor: Continue to keep that tape on. Are you limping or anything?
+Patient: Yeah, I am. I can't really put weight on my foot because it'll hurt a lot.
+Doctor: I see. Well, I examined your foot, and it looks like the pain is around the top, back and middle of your foot.

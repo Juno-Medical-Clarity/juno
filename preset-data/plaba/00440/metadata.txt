@@ -1,0 +1,5 @@
+pmid:        31573641
+question:    34
+adaptation:  adaptation1
+title:       Chronic Kidney Disease Diagnosis and Management: A Review
+sentences:   10

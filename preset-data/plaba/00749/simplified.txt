@@ -1,0 +1,9 @@
+A 72-year-old man has a confirmed human coronavirus HKU1 pneumonia.
+His nasal swab test for COVID-19 virus was negative twice, but his antibody (chemicals the body produces to fight the virus) test was positive.
+We then did the antibody test on the stored blood of other patients who had confirmed viral infections, such as flu and common cold, before January 2019.
+Including the present case, four of 7 antibody test results were falsely positive for COVID-19.
+
+
+The high rate of the falsely positive antibody test results might be due to similarities between the human common cold coronaviruses and the SARS-CoV-2 virus that causes COVID-19.
+The results of the antibody tests may depend on epidemics of human common cold coronavirus infection.
+The spread of the past SARS-CoV-2 infections may be overestimated because of the falsely positive antibody test results.

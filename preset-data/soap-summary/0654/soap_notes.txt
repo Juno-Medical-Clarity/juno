@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0654
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports they have been doing well with keeping their hemoglobin levels between 4% and 5.6%.
+- No additional symptoms, severity, duration, associated symptoms, relevant medical history, family history, allergies, or concerns explicitly mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

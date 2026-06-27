@@ -1,0 +1,5 @@
+pmid:        62945
+question:    51
+adaptation:  adaptation1
+title:       Pancreatic islet-cell antibody as a marker for asymptomatic and latent diabetes and prediabetes
+sentences:   8

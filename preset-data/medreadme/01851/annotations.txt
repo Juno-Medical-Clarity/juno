@@ -1,0 +1,10 @@
+source:      elife
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'myoblasts'
+  [5:7] 'medical-jargon-google-easy' -> 'stem cells'
+  [8:9] 'medical-jargon-google-easy' -> 'grafted'
+  [23:25] 'medical-jargon-google-easy' -> 'precursor cells'

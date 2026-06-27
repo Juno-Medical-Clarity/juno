@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1006
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had surgery, ma'am? Yes, I had it for melanoma some time ago. I see here that you had a hysterectomy as well, is that correct? Oh, yes, that's true. I had that done too.

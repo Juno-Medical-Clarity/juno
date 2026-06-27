@@ -1,0 +1,41 @@
+# SOAP Notes — Sample 0040
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with pain and swelling in right knee x5 days (worse than usual arthritis pain, swelling is new)
+- Pain is sharp, stabbing, and worse with movement (most painful when moving knee)
+- Swelling and redness of right knee 
+- Joint feels warm to touch compared to surrounding area
+- Pain improved with rest and immobilization
+- Denies trauma or injury to knee
+- Had a steroid injection to the same knee 1 week ago
+- Denies fevers/chills, changes in vision/hearing/smell/taste, URI sx, cough, SOB, wheezing, chest pain, lightheadedness, N/V, decreased appetite, abd pain, bowel/bladder changes, rashes
+- Has chronic osteoarthritis pain in knees and hips
+
+PMHx:
+- Osteoarthritis (knees, hips)
+- HTN
+- MI (4 years ago) - has stents
+- CHF
+- Obesity
+- Childhood appendectomy 
+- Penicillin allergy (unknown reaction)
+
+Medications: furosemide, ramipril, ASA, OTC analgesics prn
+
+SocHx: Retired, lives with wife and daughter in townhouse. Able to perform most ADLs independently. Wife does shopping and cooking. Drinks 3-4 beers nightly. Former smoker (1-2 ppd x30 years), quit after MI.
+
+FHx: Brother and father with h/o MI. No significant history on maternal side.
+
+Objective:
+- Antalgic gait, unable to bear weight on right knee
+- Right knee swollen, erythematous, and warm compared to left 
+- Knee stable to varus/valgus stress, negative anterior/posterior drawer
+- Sensation intact, no focal weakness
+
+Assessment:
+- Acute inflammatory monoarthritis of right knee
+- DDx: gout, pseudogout, septic arthritis (given recent steroid injection)
+
+Plan:
+- Knee aspiration and synovial fluid analysis (cell count, crystals, gram stain, culture) to differentiate between gout and septic arthritis

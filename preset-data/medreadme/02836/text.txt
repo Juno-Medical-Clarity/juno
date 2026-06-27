@@ -1,0 +1,1 @@
+Genes near each other on individual chromosomes tend to be passed to offspring together--neighboring genes are unlikely to be separated by exchanges of genetic material derived from different parents during meiotic recombination.

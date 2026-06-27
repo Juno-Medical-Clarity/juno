@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0174  |  gem_id: gem-cochrane-simplification-test-175  |  doi: 10.1002/14651858.CD009107.pub2
+
+In this review we looked at the effectiveness of injections of small amounts of sterile water given into four spots on the woman’s lower back in labour. The review included seven studies with 766 participants; four used intracutaneous injections, two subcutaneous, and one both. All studies compared the injections of sterile water with injections of saline, whilst none compared the injection of sterile water with women using their own skills to manage pain in labour. Nor did the studies compare with other forms of pain management in labour, as this information is in other Cochrane reviews. We found no good quality evidence that these simple water injections could provide a significant level of pain relief compared with simple saline injection for any type of pain experienced during labour. Women did report transient pain at the injection site. More research is needed on this possible form of pain management in labour.

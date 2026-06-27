@@ -1,0 +1,9 @@
+The immune system is critical in preventing infection and cancer, and malnutrition can weaken different aspects of the immune system to undermine immunity.
+Previous studies suggested that vitamin B6 deficiency could decrease serum antibody production with concomitant increase in IL4 expression.
+However, evidence on whether vitamin B6 deficiency would impair immune cell differentiation, cytokines secretion, and signal molecule expression involved in JAK/STAT signaling pathway to regulate immune response remains largely unknown.
+The aim of this study is to investigate the effects of vitamin B6 deficiency on the immune system through analysis of T lymphocyte differentiation, IL-2, IL-4, and INF-Î³ secretion, and SOCS-1 and T-bet gene transcription.
+We generated a vitamin B6-deficient mouse model via vitamin B6-depletion diet.
+The results showed that vitamin B6 deficiency retards growth, inhibits lymphocyte proliferation, and interferes with its differentiation.
+After ConA stimulation, vitamin B6 deficiency led to decrease in IL-2 and increase in IL-4 but had no influence on IFN-Î³.
+Real-time PCR analysis showed that vitamin B6 deficiency downregulated T-bet and upregulated SOCS-1 transcription.
+Meanwhile, the appropriate supplement of vitamin B6 could benefit immunity of the organism.

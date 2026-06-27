@@ -1,0 +1,14 @@
+source:      cochrane_all
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [9:10] 'medical-jargon-google-easy' -> 'sedatives'
+  [13:14] 'abbr-medical' -> 'NAS'
+  [16:18] 'medical-jargon-google-easy' -> 'opiate withdrawal'
+  [22:23] 'general-complex' -> 'efficacy'
+  [25:26] 'medical-jargon-google-easy' -> 'phenobarbitone'
+  [27:28] 'medical-jargon-google-easy' -> 'clonidine'
+  [33:34] 'medical-jargon-google-easy' -> 'opiate'
+  [35:36] 'abbr-medical' -> 'NAS'

@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 1452
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Inability to move right arm, speech issues, difficulty comprehending words
+- Severity: Severe (as inferred from "can barely move")
+- Duration: Symptoms started this morning
+- Associated symptoms: None mentioned, but speech and comprehension issues are noted
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Concerns: Family member suspects a stroke
+
+Objective:
+- Vital signs: Not provided
+- Physical examination findings: Not provided
+- Diagnostic test results: CT head scan and labs performed (results not mentioned)
+
+Assessment:
+- Possible stroke (as suggested by family member)
+
+Plan:
+- No specific plan mentioned in the conversation.

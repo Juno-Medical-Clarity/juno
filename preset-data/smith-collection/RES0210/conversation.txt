@@ -1,0 +1,182 @@
+# Smith Collection Transcript: RES0210
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: So can you tell me a little bit about what brought you in here today
+
+Patient: Yeah ive noticed ive had this pretty bad cough for like the last couple of days a little bit worried wanna talk to someone
+
+Doctor: OK so started two days ago
+
+Patient: No about what day is it today today is wednesday it started on sunday sunday i noticed it getting really bad
+
+Doctor: OK so it got really bad then it was it was it still present but not as bad before that
+
+Patient: Yeah i think i had like a bit of like a raspy cough on like friday but sunday it was when i started getting nervous about it
+
+Doctor: OK so almost a week it sounds like and what exactly changed on sunday that you made it worse in your opinion
+
+Patient: So sunday i started bringing i noticed like little spots of red kind of the the gunk i was bringing up
+
+Doctor: OK
+
+Patient: And i kind of ignored it but the next day they were still there i started getting fever just in i felt off you know
+
+Doctor: OK ok so that you first notice that on sunday were you bringing up sputum before that and it just didnt have these spots or did it did that part just start on sunday
+
+Patient: Sputum is kind of like the gunk up and bring it up yeah it was its like this yellow custard it’s got like well spots are red on it on sunday
+
+Doctor: OK and before that did you have like the yellow custard without red or it all started at once all kind of started
+
+Patient: It all started at once to be honest
+
+Doctor: Sorry i know these are tricky questions and you said that youve had some fevers can you tell me a little bit about that when did that start
+
+Patient: So that started the monday really is when i first started i never took my temperature i just felt hot you know thats been going on pretty much until today
+
+Doctor: OK did you ever feel like you were really shaky
+
+Patient: Yeah ive been getting the chills especially last two days
+
+Doctor: OK so over this time youve had this cough have you felt like youve had difficulty breathing
+
+Patient: Not really i feel a little bit winded doing things i used to do like i take the stairs up to my apartment but i have just happened really trying to exert myself thats been taking it easy so i havent really noticed being out of breath
+
+Doctor: OK so probably if you were to get up and do a lot of physical activity you would feel worse
+
+Patient: Yeah i could probably i can still take the two stairs up to my apartment but after that i started to feel pretty crummy
+
+Doctor: OK is there anything else that you can think of that makes it feel worse
+
+Patient: No
+
+Doctor: Has anything helped it to feel better at all
+
+Patient: Bringing up gunk makes it feel better for a little while
+
+Doctor: So you kind of just clear it up and that feels a little bit better
+
+Patient: Yeah i havent taken some tylenol at home and that helps a little bit
+
+Doctor: OK have you felt a sore throat at the same time
+
+Patient: After an awful lot of coughing yeah it starts to feel a little raw
+
+Doctor: Have you had a runny nose
+
+Patient: Yeah bit of 1 back in the day maybe a week ago but that kind of gone away by now
+
+Doctor: Have you felt any chest pain
+
+Patient: Yeah yeah i got pain kinda on the right
+
+Doctor: OK have you ever have you ever had anything like this before
+
+Patient: No never actually doc youre saying something that makes it feel worse taking a deep breath makes it feel pretty bad
+
+Doctor: OK and im just going to circle back to this chest pain you said you feel it on the right side is it always there or is it just when you take a deep breath or is it kind of on and off
+
+Patient: Its kind of always there it gets a little bit worse with coughing and when i take a pretty big deep breath
+
+Doctor: Yeah ok but if you were just laying down not coughing is that pain there
+
+Patient: Yeah yeah specially notice over the last day
+
+Doctor: OK
+
+Patient: Kind of dull
+
+Doctor: OK and have you had any weight loss recently
+
+Patient: No not really
+
+Doctor: K have you traveled anywhere recently
+
+Patient: Went to sarnia about a week back for work but
+
+Doctor: OK were you in contact with anyone that that was sick
+
+Patient: Nope just been keeping to myself mostly
+
+Doctor: OK so in terms of your own medical history do you have any chronic conditions that you see your family doctor for regularly
+
+Patient: Yeah he’s given me a pill for a cholesterol
+
+Doctor: OK and do you know the names of any medications that you take
+
+Patient: Lipitor
+
+Doctor: OK is that the only one
+
+Patient: Yeah
+
+Doctor: OK have you ever had any surgeries
+
+Patient: uh my wisdom teeth out as a as a kid 15 or so i think
+
+Doctor: OK do you have any allergies
+
+Patient: No
+
+Doctor: I’m just going to ask you a few questions about your lifestyle and like do you live here in town
+
+Patient: Yeah i live here in town got a girlfriend living in apartment
+
+Doctor: OK you live with your girlfriend
+
+Patient: Yeah
+
+Doctor: Do you have any pets
+
+Patient: Cat yeah
+
+Doctor: Do you do anything for work or are you retired
+
+Patient: Yeah i still work a consultant for the chemical plant so west mainly in sarnia
+
+Doctor: So have you had a lot of exposure to chemicals throughout your career
+
+Patient: Now theyve always been pretty good for keeping us safe im on the engineering side of things so i dont really work too much in the plant directly you know
+
+Doctor: OK here well do you drink alcohol
+
+Patient: Once in a blue moon
+
+Doctor: Do you smoke
+
+Patient: Yeah
+
+Doctor: How much would you say that you smoke
+
+Patient: Got a pack a day
+
+Doctor: Long is that been going on for
+
+Patient: Geez must have picked it up when i was 15
+
+Doctor: OK do you use any other substances
+
+Patient: Like drugs
+
+Doctor: Yeah cannabis or any other recreational drugs
+
+Patient: Smoke the odd joint from time to time but havent in years now
+
+Doctor: Do you have any family history of any respiratory illnesses
+
+Patient: Respiratory illness like lungs
+
+Doctor: Yeah exactly
+
+Patient: Think my grandpa died of lung cancer actually he was a pretty big smoker too though
+
+Doctor: OK ok well thank you for sharing all of that with me so im going to go over this with the physician i’m working with and we should be back shortly together to talk to you about the next steps
+
+Patient: Thank you kindly
+
+Doctor: K thanks

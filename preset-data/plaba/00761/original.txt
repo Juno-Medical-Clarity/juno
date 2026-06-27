@@ -1,0 +1,8 @@
+Objective: Zinc supplementation is beneficial in some clinical conditions such as age-related macula degeneration (AMD).
+It has been suggested that zinc absorption is influenced by the form in which zinc is ingested.
+Therefore, the pharmacokinetics of zinc gluconate (organic) were compared with those of zinc oxide (inorganic).
+Methods: 12 healthy male subjects aged between 21 and 31 years (24 years median) orally received daily doses of 20 mg metal zinc as zinc gluconate and 17.4 mg metal zinc as zinc oxide under randomized crossover conditions for 14 days each with at least 14 days as a washout.
+Zinc plasma concentrations were measured by means of inductively coupled plasma-atomic emission spectroscopy.
+Results: C(max) was found 18.3% (10.3 - 26.3%) higher following multiple-dose administration of zinc gluconate as compared to zinc oxide (mean; 0.95% confidence interval of the relative differences between both treatment conditions; p < 0.05).
+AUC(0-24h) was noted 8.1% (1.9 - 14.3%) higher after zinc was given as zinc gluconate when compared to zinc oxide (p < 0.05) whereas t(max) did not differ between both treatment conditions.
+Conclusions: Zinc absorption in humans could be improved by zinc complexation with gluconate.

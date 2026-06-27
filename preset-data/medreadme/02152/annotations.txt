@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [2:4] 'medical-jargon-google-easy' -> 'genome sequences'
+  [5:6] 'medical-jargon-google-easy' -> 'Hepatocystis'
+  [7:8] 'medical-jargon-google-easy' -> 'Plasmodium'
+  [11:12] 'medical-jargon-google-easy' -> 'Hepatocystis'
+  [15:16] 'medical-jargon-google-easy' -> 'Plasmodium'

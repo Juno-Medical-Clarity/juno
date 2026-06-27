@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0006  |  gem_id: gem-cochrane-simplification-train-7  |  doi: 10.1002/14651858.CD006643.pub3
+
+Among the pertinent medical literature only  two studies, comprising  a total of 123 participants,  met the criteria of the methodological quality necessary for their inclusion in this review. Taking into account  the disability progression, the analysis of the data showed that INF beta treatment in  patients with PPMS was  not associated with a reduction of  this parameter during the first two years of therapy. Adverse effects, mainly flu-like symptoms and injection site reactions, occurred frequently and were the same as  reported by the many studies on   IFN beta treatments in MS patients with different types of the disease. It is worth nothing that the patients’ population analysed was too small to allow a definitive conclusion on the efficacy of IFN beta therapy  in PPMS.

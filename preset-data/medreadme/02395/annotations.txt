@@ -1,0 +1,7 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 3.3
+split:       train
+
+jargon_spans:
+  [9:11] 'medical-jargon-google-easy' -> 'patient experience'

@@ -1,0 +1,38 @@
+# SOAP Notes — Sample 0162
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 50-year-old male presents with acute onset shortness of breath and pleuritic chest pain that started last night
+- Describes an ache on the left side of his chest last night that he thought may have been a pulled muscle
+- Woke up this morning with difficulty breathing that worsened with exertion (walking up stairs)
+- Self-treated with Tylenol without relief
+- Shortness of breath severity: 5-6/10
+- Sharp pain with deep inspiration
+- Denies cough, hemoptysis, leg swelling, wheezing, fever, chills, abdominal pain, changes in vision/hearing/smell, or rashes
+- Has been trying to lose weight due to hypertension diagnosed 1 year ago and has lost 15 lbs with dietary changes and increased exercise
+- Denies dizziness or feeling faint
+
+PMHx:
+- Hypertension diagnosed 1 year ago, managed with lifestyle modifications (reduced salt intake, increased exercise)
+- No prior chest problems or investigations (PFTs, ECG, CXR)
+
+SocHx:
+- Smokes 1 pack/week since college, has reduced amount since hypertension diagnosis
+- Denies marijuana or recreational drug use
+- Occasional alcohol use (1 beer on weekends)
+- Up to date with childhood immunizations and receives annual flu vaccine
+
+FHx:
+- Mother and father with hypertension
+
+Objective:
+- Vitals signs (not provided)
+
+Assessment:
+- Acute onset shortness of breath and pleuritic chest pain in a 50-year-old male smoker with hypertension
+- Differential diagnosis: pulmonary embolism, COPD exacerbation (unlikely to be acute infection or malignancy given sudden onset and lack of associated symptoms)
+
+Plan:
+- Investigations: bloodwork, chest X-ray, consider PFTs if indicated based on initial workup
+- Treatment: continue to monitor vitals and provide supplemental oxygen if needed
+- Counseling: discussed preliminary differential diagnosis and workup plan with patient, who is understandably anxious but agreeable to proposed plan

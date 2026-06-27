@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1242
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, tell me did anyone in your family have Idiopathic pulmonary fibrosis? Actually, my father passed away due to this disease. Oh, sorry to hear that. Yeah. Anything else that he or any other family member might have. Oh, he also had this spastic colon problem and irritable bowel syndrome. Hm, I see. Anything else? No.

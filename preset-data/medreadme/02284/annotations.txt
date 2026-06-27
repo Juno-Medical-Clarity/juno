@@ -1,0 +1,7 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'neural changes'

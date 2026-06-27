@@ -1,0 +1,5 @@
+Doctor: All right, you can go home now.
+Patient: Thank you doctor.
+Doctor: You can stay at your friend's place and make sure to take good care of yourself.
+Patient: Yes.
+Doctor: Make sure you follow up with Doctor X on Monday or Tuesday. I know that Doctor Y already discussed his plans. Continue taking your medicines except Prozac. Okay?

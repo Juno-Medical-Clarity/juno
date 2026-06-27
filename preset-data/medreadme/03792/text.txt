@@ -1,0 +1,1 @@
+We estimated risk ratios (RR) for dichotomous data, with 95% confidence intervals (CI).

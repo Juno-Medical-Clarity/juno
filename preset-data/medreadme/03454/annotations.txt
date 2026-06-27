@@ -1,0 +1,8 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.0
+split:       test
+
+jargon_spans:
+  [4:9] 'medical-jargon-google-easy' -> 'Shoulder Pain and Disability Index'
+  [10:11] 'abbr-medical' -> 'SPADI'

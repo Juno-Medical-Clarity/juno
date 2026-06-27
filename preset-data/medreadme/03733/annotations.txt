@@ -1,0 +1,13 @@
+source:      MSD
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Disseminated gonococcal infection'
+  [4:5] 'abbr-medical' -> 'DGI'
+  [10:14] 'medical-jargon-google-easy' -> 'arthritis - dermatitis syndrome'
+  [16:17] 'medical-jargon-google-easy' -> 'bacteremia'
+  [23:25] 'medical-jargon-google-easy' -> 'migratory pain'
+  [29:30] 'medical-jargon-google-easy' -> 'polyarthritis'
+  [33:36] 'medical-jargon-google-easy' -> 'pustular skin lesions'

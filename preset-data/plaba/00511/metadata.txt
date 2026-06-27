@@ -1,0 +1,5 @@
+pmid:        34664478
+question:    39
+adaptation:  adaptation1
+title:       Exploration of novel biomarkers for hypertensive disorders of pregnancy by comprehensive analysis of peptide fragments in blood: their potential and technologies supporting quantification
+sentences:   5

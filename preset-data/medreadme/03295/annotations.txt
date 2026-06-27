@@ -1,0 +1,10 @@
+source:      pnas
+side:        complex
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [4:9] 'medical-jargon-google-easy' -> 'single - molecule fluorescence imaging'
+  [10:13] 'medical-jargon-google-easy' -> 'quantitative cell biology'
+  [19:20] 'abbr-medical' -> 'Exo1'
+  [21:22] 'abbr-medical' -> 'SSBs'

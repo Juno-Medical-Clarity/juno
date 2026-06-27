@@ -1,0 +1,6 @@
+source:      plos_genetics
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans: (no jargon annotation found for this sentence)

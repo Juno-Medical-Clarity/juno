@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1430
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What do you do for living? I am an officer at United States Marine office, artillery repair specialist. Do you drink alcohol? I use to drink socially but stopped two years back. How about smoking and drugs? No not that.

@@ -1,0 +1,4 @@
+Doctor: What are you taking?
+Patient: I take Tylenol.
+Doctor: Is that only for pain?
+Patient: Yes it is.

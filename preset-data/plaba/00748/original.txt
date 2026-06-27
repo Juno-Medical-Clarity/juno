@@ -1,0 +1,27 @@
+Reports of waning antibody levels and breakthrough infections among vaccinated individuals1 have prompted the recommendation for vaccine boosters to prevent SARS-CoV-2 infections.
+Despite more than 80% of the population in Singapore having received 2 doses of a COVID-19 vaccine, cases surged in September 2021 with the relaxation of social distancing and quarantine measures.
+In response, adults 60 years and older who completed their primary vaccination series at least 6 months prior were invited to receive a booster injection and given a choice of either 30-μg BNT162b2 (Pfizer-BioNTech) or 50-μg mRNA-1273 (Moderna).
+We estimated SARS-CoV-2 infections and disease severity with the receipt of a booster and by type of booster.
+Methods: This study was carried out under the Infectious Diseases Act for policy decision-making and exempted from ethical review and informed consent by the Singapore Ministry of Health.
+Rates and severity of SARS-CoV-2 infections between September 15 and October 31, 2021, among those eligible to receive vaccine boosters between September 15 and October 15, 2021, were analyzed based on official data reported to the Singapore Ministry of Health.
+Cases were identified through testing of symptomatic individuals and nonsymptomatic high-risk workers and close contacts.
+Outcomes included polymerase chain reaction–confirmed infections and severe disease (requiring oxygen supplementation, intensive care admission, or death due to COVID-19).
+Individuals were classified under the booster group 12 days after receiving a vaccine booster and under the nonbooster group otherwise to account for time required for antibody levels to rise.
+Person-days at risk were reported because individuals could contribute observations to both the nonbooster and booster groups.
+Using a Poisson regression, we estimated the incidence rate ratio (IRR) of confirmed infections and severe disease between booster and nonbooster groups by type of vaccine received for the primary series (BNT162b2 or mRNA-1273).
+Covariates included sex, race (4 official racial categories reported in Singapore are Chinese, Malay, Indian, and others and registered at birth according to the child’s parents’ race), housing type as a marker of socioeconomic status, age group, date of second vaccine dose to account for possible waning of immunity, and individual dummy variables for calendar date to adjust for the varying force of infection over the study period (eMethods in the Supplement).
+We obtained IRRs for individuals receiving the same vaccine as a booster (homologous boosted) and those receiving a different vaccine (heterologous boosted).
+Data analysis was carried out in Stata version 17.0 (StataCorp LLC) and a 2-sided P value less than .05 was considered statistically significant.
+Results: Among 703 209 eligible individuals during the study period, 576 132 received boosters.
+The study included 22 643 521 and 9 339 981 person-days among the nonbooster and booster groups, respectively.
+By person-days, 59% were 60 to 69 years, 29% were 70 to 79 years, and 11% were aged 80 years and older, with 53% being female.
+Among individuals who received BNT162b2 for their primary series, the incidences (per million person-days) of confirmed and severe infections were 227.9 and 1.4 for the homologous boosted compared with 600.4 and 20.5 for the nonboosted.
+The IRRs were 0.272 (95% CI, 0.258-0.286) for the confirmed cases among the homologous-boosted individuals and 0.047 (95% CI, 0.026-0.084) for severe cases (Table).
+For the heterologous-boosted individuals, the incidences of confirmed and severe infections were 147.9 and 2.3 cases per million person-days, respectively, with IRRs of 0.177 (95% CI, 0.138-0.227) and 0.078 (95% CI, 0.011-0.560).
+For individuals who received mRNA-1273 for their primary series, the incidence of confirmed infections for the homologous boosted was 133.9 cases per million person-years (IRR, 0.198 [95% CI, 0.144-0.271]).
+For heterologous-boosted individuals, the incidence of confirmed infections was 100.6 per million person-days (IRR, 0.140 [95% CI, 0.052-0.376]).
+The number of severe infections among individuals receiving mRNA-1273 for their primary series was too small to assess IRRs.
+Discussion: Heterologous boosting was associated with lower SARS-CoV-2 incidence rates than homologous boosting.
+Severe infections were lower among those receiving a booster after BNT162b2 as the primary series compared with the nonboosted individuals, regardless of the type of booster.
+Limitations of the study include potential confounding from unobservable individual characteristics that may influence individuals’ choice of booster, a short follow-up period, small numbers of infections after mRNA-1273 administration, and lack of data from younger age groups.
+The study results support recommendations for vaccine boosters and suggest that heterologous boosting may provide greater protection against COVID-19.

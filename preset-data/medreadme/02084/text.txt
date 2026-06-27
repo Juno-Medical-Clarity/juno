@@ -1,0 +1,1 @@
+As the threshold of switch-like behavior is more sensitive to perturbations than the graded response, the effect of biological noise is potentially critical for cell fate decision.

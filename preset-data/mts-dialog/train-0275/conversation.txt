@@ -1,0 +1,20 @@
+Doctor: And who are we seeing today?
+Guest_family: Hi Doctor, this my son J and that's my wife.
+Guest_family_2: Hi there
+Doctor: Well, hello young man how are you feeling today?
+Guest_family_2: He has been complaining of severe tummy pain and was crying the whole time. We are worried as he is a special child. He has autism.
+Doctor: For how long now?
+Guest_family_2: Autism?
+Doctor: No, I mean when did he start complaining of stomach pain?
+Guest_family_2: It started last night.
+Doctor: Oh okay, let me check him. Did he have any nausea or vomiting?
+Guest_family: Yes, he threw up a lot and is refusing to eat or drink anything.
+Doctor: And then he is complaining of tummy pain?
+Guest_family_2: Yes.
+Doctor: Well, the good part is he is not dehydrated.
+Doctor: Any diarrhea?
+Guest_family_2: Yes, he went three to four times.
+Doctor: Hm, but no blood or anything in the stools or vomit?
+Guest_family: No, nothing like that, we did not notice anything.
+Doctor: Okay good.
+Doctor: Well, let me run some tests but the signs and symptoms sound like he might have a stomach flu, also called as gastroenteritis in medical terms. I will start him on some medicines and hopefully that should help.

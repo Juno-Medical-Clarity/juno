@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0897
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is being admitted for disseminated CMV infection.
+- Patient has possible CMV pneumonitis.
+- Patient has a history of polymyositis.
+- Patient is currently taking Prednisone and Methotrexate.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- Patient diagnosed with disseminated CMV infection.
+- Suspected CMV pneumonitis.
+
+Plan:
+- No specific plan provided.

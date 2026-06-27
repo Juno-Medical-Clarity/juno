@@ -1,0 +1,9 @@
+Hyperinflammation and overproduction of inflammatory molecules is a poor predictor of recovery in patients with severe pneumonia (an infection that inflames air sacs in lungs) related to the viral respiratory disease, coronavirus disease 2019 (COVID-19).
+In COVID-19, disease-causing white blood cell overactivation is a key mediator of damage to tissues, increased blood clots, and inflammatory molecule overproduction.
+These inflammatory molecules invade many body parts like the lungs, heart, and nervous system.
+This overproduction of inflammatory molecules can cause multi-organ damage and life-threatening issues.
+Mavrilimumab is a monoclonal antibody (mAb), which binds to only one site of a foreign organism. It may aid some cases of COVID-19.
+During inflammation, granulocyte-macrophage colony-stimulating factor (GM-CSF) release, release of molecules that activate specific white blood cells, is crucial for an immune response.
+The GM-CSF immune response is triggered when a foreign organism attaches to a cell and activates a signal.
+Mavrilimumab combats the effect of GM-CSF and reduces hyperinflammation linked to pneumonia in COVID-19. This effect stregthens the idea that mavrilimumab, when added to standard treatment, may improve health outcomes in COVID-19 patients, specifically those with pneumonia.
+With this paper, we aim to show how mavrilimumab reduces overproduction of inflammatory molecules in patients with COVID-19.

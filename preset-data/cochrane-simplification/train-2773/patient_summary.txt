@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2773  |  gem_id: gem-cochrane-simplification-train-2774  |  doi: 10.1002/14651858.CD002316.pub2
+
+This review of trials found that there was insufficient evidence that inhaling corticosteroids as well as taking the drugs orally is better than oral use alone, after emergency department treatment for an asthma attack. There is also insufficient evidence that taking ICS alone is as good as taking them orally, although there is some evidence to support using ICS alone for mild asthma attacks after emergency department discharge. More research is needed.

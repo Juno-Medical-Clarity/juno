@@ -1,0 +1,5 @@
+drug_focus: Meloxicam, Tylenol and Codeine
+question_type: Interaction
+section_title: Combining NSAIDS and Tylenol for pain
+source_url: https://www.hopkinsarthritis.org/ask-the-expert/combining-nsaids-and-tylenol-for-pain/
+sample_id: 0146

@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'praziquantel'
+  [20:23] 'medical-name-entity' -> 'World Health Organization'
+  [29:32] 'medical-jargon-google-easy' -> 'Schistosoma mansoni infection'

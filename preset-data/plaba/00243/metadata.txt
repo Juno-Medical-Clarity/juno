@@ -1,0 +1,5 @@
+pmid:        32830901
+question:    19
+adaptation:  adaptation1
+title:       Prefrontal Cortex Activity and Gait in Parkinson's Disease With Cholinergic and Dopaminergic Therapy
+sentences:   13

@@ -1,0 +1,1 @@
+We also found that the way that IBS is coded in general practice computer systems varied quite a lot.

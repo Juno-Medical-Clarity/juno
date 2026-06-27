@@ -1,0 +1,244 @@
+# Smith Collection Transcript: RES0215
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How can i help you today
+
+Patient: um yeah hi i brought i brought my 8 year old daughter here um because ive noticed that shes been quite wheezy um for the past four five days and now she has a slight cough um sounds like shes a little short of breath so i just wanted to get things checked out
+
+Doctor: OK so for the when it first presented about four to five days ago what did you notice notice first
+
+Patient: um i noticed that she was wheezy um and its it seemed like she was having some difficulty taking in deep breaths
+
+Doctor: OK now was this with any type of activity or just at rest
+
+Patient: Yeah she was playing tag with one of her cousins and she she was quite out of breath after
+
+Doctor: OK has she ever had anything like this before
+
+Patient: No
+
+Doctor: Nothing like that ok and has it been fairly steady since then or has it been fluctuating
+
+Patient: Its been fluctuating
+
+Doctor: OK but it hasnt really gone away in the sense that youre still concerned coming now four days later
+
+Patient: Yeah its just it would she would have these these uh episodes but it would resolve on its own and then she would you know go back to doing some sort of activity and then she would have all these symptoms all over again but when she rests um then it goes away so i wasnt really sure too sure what to think of it but now i think its important to get it checked out so here we are
+
+Doctor: Has she had any fevers at home
+
+Patient: No
+
+Doctor: Has she had a runny nose at all at home
+
+Patient: No
+
+Doctor: Has she seemed well otherwise does she look sick
+
+Patient: Yeah she looks fine otherwise
+
+Doctor: OK and has she had any sick contacts recently anyone around her or her friends been sick
+
+Patient: No not that ive noticed
+
+Doctor: OK any recent travel anywhere
+
+Patient: Uhm no no we didnt go anywhere because of covid
+
+Doctor: OK but shes still been going to school i suppose playing with her friends
+
+Patient: Yes
+
+Doctor: OK have you noticed any rashes any skin changes anywhere on her body
+
+Patient: uh not that ive noticed no
+
+Doctor: OK nothing like that has she complained of any pain anywhere
+
+Patient: No
+
+Doctor: OK and has she had any recent infections
+
+Patient: uh she had actually she had a couple of infections over the past two years uh they would come and go uh and we took her to the doctor each time and it just ended up being some sort of viral infection
+
+Doctor: OK so nothing really needing antibiotics in the last couple of years
+
+Patient: No
+
+Doctor: And in terms of how shes been doing has she been keeping up with her peers in terms of education and how she moves how she acts
+
+Patient: uh yeah shes been yeah shes been on par with her peers
+
+Doctor: OK so does she have a family physician
+
+Patient: um yes
+
+Doctor: OK so they havent brought up any concerns about how shes growing how shes developing
+
+Patient: No
+
+Doctor: So her weight her height theyve been good for her age
+
+Patient: Yeah yeah
+
+Doctor: Excellent and has she gotten has she been keeping up to date for immunizations
+
+Patient: Yes shes fully up to date
+
+Doctor: Excellent in regards to how shes doing otherwise health in terms of her health has did she see a family physician for any other medical issues that she might be having
+
+Patient: uh no shes otherwise pretty healthy
+
+Doctor: OK how was the birth was there any complications when she was born
+
+Patient: No she was a vaginal delivery full term no complications
+
+Doctor: OK so nothing when you were pregnant with her no toxic congestions by that i mean um did you drink any alcohol smoke at all when you were pregnant with her
+
+Patient: No
+
+Doctor: No ok and you just had antenatal care so you saw doctor for ultrasounds and just for checkups
+
+Patient: Yep everything was fine
+
+Doctor: OK and when she was born she didnt have to stay in the hospital at all
+
+Patient: No no
+
+Doctor: And was she born uh what weight was she when she was born
+
+Patient: uh she was how much was she i think she was about 8 kilos
+
+Doctor: 8 kilos
+
+Patient: Sorry 8 pounds 8 pounds
+
+Doctor: Yeah no worries and then otherwise she is so shes been healthy otherwise been doing well uh just in terms of how shes been doing uh with other systems of her body have you noticed any concerns for her bowel movements
+
+Patient: uh no shes been pretty regular
+
+Doctor: OK any concerns for peeing
+
+Patient: uh no shes been going pretty frequently and shes yeah no changes there
+
+Doctor: And we already talked she hasnt had any fevers when she coughs does she ever bring anything up
+
+Patient: uh no i havent noticed any phlegm no
+
+Doctor: OK and when shes having these wheezy episodes do you ever notice that she looks like shes really straining to breathe really struggling
+
+Patient: uh yeah so she its not like she turns blue or anything like that um she just slightly slightly has a hard time catching her breath
+
+Doctor: OK so these usually recover on their own
+
+Patient: Yeah
+
+Doctor: You dont give her anything for it
+
+Patient: No
+
+Doctor: OK uh does she have any allergies
+
+Patient: um no well she has some seasonal allergies but nothing that shes been tested for
+
+Doctor: OK do you give her anything for seasonal allergies
+
+Patient: Sometimes she takes like reactine or like over the counter stuff but um no no prescribed medications
+
+Doctor: OK so she doesnt have any allergies where her face swells up or she has trouble breathing
+
+Patient: No
+
+Doctor: OK and this these episodes mainly happen when shes playing with friends so do they happen in a certain environment like for example is this in a friends house or is this outdoors or has it been across different settings
+
+Patient: Its been across different settings but i will say its worse when um when when theres colder weather
+
+Doctor: OK
+
+Patient: Yeah
+
+Doctor: And do these episodes ever happen in your home
+
+Patient: Yeah
+
+Doctor: And whats the context from them happening in your home
+
+Patient: um usually when she is out and about running around in the backyard with her friends um is when ive mostly noticed it yeah
+
+Doctor: OK so she doesnt have any symptoms at rest
+
+Patient: Oh no
+
+Doctor: And she doesnt have any symptoms at night
+
+Patient: uh at night so there was one one one night when she had some issues um with like wheeziness but it did resolve on its own
+
+Doctor: OK and did she wake up at night with that or just
+
+Patient: Just trouble falling asleep i think yeah
+
+Doctor: OK alright so we already talked about so she doesnt really have any past medical issues that shes seen a doctor for uh any surgeries
+
+Patient: No surgeries
+
+Doctor: OK is she taking medications right now
+
+Patient: um no no medications
+
+Doctor: Aside from the occasional reactine
+
+Patient: uh yeah aside from that nothing no regular medications
+
+Doctor: And shes in school
+
+Patient: um yeah shes uh shes in grade 3 now
+
+Doctor: OK and does she live with you
+
+Patient: uh yeah she lives with me and my husband
+
+Doctor: OK do you two live in a house in town
+
+Patient: um yep in a townhouse
+
+Doctor: OK and what do you two do for work
+
+Patient: um so my husband is an ultrasound technician and i am a uh kindergarten teacher
+
+Doctor: OK excellent and this is a question we just ask everyone has there ever been any cc cas involvement in the family
+
+Patient: No
+
+Doctor: And does anyone smoke in the household
+
+Patient: uh no no
+
+Doctor: OK uh do you keep any carpets or pets in the household
+
+Patient: We have carpets but theyre new carpets we just got them uh maybe six months ago and nothing else
+
+Doctor: So no pets no dogs
+
+Patient: No
+
+Doctor: OK any wood burning fireplaces stoves in the household
+
+Patient: No
+
+Doctor: And changed your air filters
+
+Patient: Yeah
+
+Doctor: Alright excellent so i think i have all the information i need were just going to do a physical exam and then im going to go talk to the physician and ill come in and see your daughter and well talk about next steps from there do you have any questions that youd like me to direct to him before that happens
+
+Patient: No thank you so much
+
+Doctor: Alright have a good one
+
+Patient: You too bye bye

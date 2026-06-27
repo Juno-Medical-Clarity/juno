@@ -1,0 +1,5 @@
+pmid:        32710141
+question:    19
+adaptation:  adaptation1
+title:       Comparative effectiveness of dopamine agonists and monoamine oxidase type-B inhibitors for Parkinson's disease: a multiple treatment comparison meta-analysis
+sentences:   11

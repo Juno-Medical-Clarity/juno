@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0362  |  gem_id: gem-cochrane-simplification-test-363  |  doi: 10.1002/14651858.CD002991.pub3
+
+Pooling of the data from the 55 trials with 16,154 people showed that there was no consistent long-term benefit in the rate of decline in breathing capacity. Death rates were unchanged. Inhaled steroids were beneficial in slowing down the rate of decline in quality of life and reducing the frequency of exacerbations. Inhaled steroids increased the risk of side effects including thrush (candida) infection in the mouth and hoarseness, and the rate of pneumonia. In deciding whether to use this treatment, consumers and health professionals should weigh up the benefits (reduced rate of exacerbations, reduced decline in quality of life and possible reduction in the rate of decline of breathing capacity) against the side effects (mouth thrush, hoarseness and increased risk of developing pneumonia).

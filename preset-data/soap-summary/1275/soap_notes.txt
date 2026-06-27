@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1275
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports pain severity as 5 out of 10, describing it as tolerable but needing pain medications.
+- Patient expresses difficulty managing pain at times and states they need more pain medications.
+- Patient mentions a previous history of drinking but states they have completely stopped.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- Patient requests a change from morphine to Dilaudid, stating that Dilaudid works well for them.

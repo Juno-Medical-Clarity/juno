@@ -1,0 +1,13 @@
+Achondroplasia, the most common form of human dwarfism is a rare condition that occurs in approximately 1:20,000 births.
+The major clinical outcome of Achondroplasia is attenuated growth, rhizomelic shortening of the long bones and craniofacial abnormalities.
+As of today there is no pharmacological treatment for Achondroplasia.
+Some improvement in the patients well being and daily function can be achieved by a surgical limb lengthening procedure.
+Growth hormone treatment seems to have only modest short term success and to lack long term benefits.
+Achondroplasia results from a single point mutation in Fibroblast Growth Factor Receptor 3 (FGFR3).
+In 97% of the patients, there is a Glycine to Arginine substitution at position 380 within the FGFR-3 transmembrane domain leading to receptor overactivation.
+This FGF receptor tyrosine kinase is expressed by chondrocytes in the growth plate of developing long bones and plays a crucial role in bone growth.
+Genetic disruption of the FGFR-3 gene in mice leads to a remarkable increase in the length of the vertebral column and long bones.
+This suggests that overaction of FGFR3 signaling may specifically impair chondrocyte function within the epiphyseal growth plates and cause Achondroplasia.
+Reconstituted normal bone growth may therefore be achieved by attenuation of FGFR3 signaling in the appropriate cells within the growth plate.
+It is highly conceivable that drug development strategies aimed either towards blocking extracellular ligand binding or towards intracellular checkpoints along the FGF signal transduction cascade, may prove successful in the treatment of Achondroplasia.
+This review focuses on the possible approaches for developing a drug for Achondroplasia and related skeletal disorders, using chemical, biochemical and molecular strategies.

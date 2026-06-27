@@ -1,0 +1,224 @@
+# Smith Collection Transcript: RES0045
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Ive had a cough that started like 4 days ago um and its just been getting worse so i i wanted to come in
+
+Doctor: OK yeah its good that youve come in um so the cough started four days ago has it been constant since
+
+Patient: Yes it has
+
+Doctor: OK and how often are you coughing
+
+Patient: I um id say a few times an hour now uh when it first started it was a bit more intermittent but now its happening um all day long and throughout the night as well it interrupted my sleep last night
+
+Doctor: Oh ok um is it a dry cough or are you producing sputum
+
+Patient: Its its mostly dry
+
+Doctor: OK so no sputum no blood
+
+Patient: No blood
+
+Doctor: OK um do you find that there are any triggers to your to this cough like um environmental triggers like the cold weather um any old carpets at home or um you know a particular time of the day or exertion anything like that
+
+Patient: No interestingly nothing like that seems to really make it worse its just been um kinda coughing all day
+
+Doctor: OK and um has anything made it better have you tried anything for this cough
+
+Patient: uh i tried um drinking some uh like tea and some other cough syrups and it didnt didnt help
+
+Doctor: OK um how about ah ok and if you were to describe the quality of this cough would you say its its it sounds barky it sounds harsh um how would you describe it
+
+Patient: uh harsh
+
+Doctor: Harsh ok and if you were to rate your symptoms 1 to 10 10 being the worst how bad is it
+
+Patient: uh 6
+
+Doctor: Six ok and and have you found that your symptoms are getting worse staying the same or getting better over the past four days
+
+Patient: Getting worse
+
+Doctor: Getting worse ok and have you ever experienced anything like this in the past
+
+Patient: uh no
+
+Doctor: No do you feel wheezy at all
+
+Patient: No i havent heard any any wheezes
+
+Doctor: OK how about uh shortness of breath
+
+Patient: Yeah ive definitely noticed some difficulty breathing um yeah
+
+Doctor: OK and uh when when did when did your shortness of breath start
+
+Patient: Right around the same time as the cough or maybe shortly after um yeah shortly after
+
+Doctor: Shortly after ok do you find that there are any triggers for shortness of breath like exertion
+
+Patient: Yeah yeah exertion um as well as like the cough itself im finding that im coughing so much throughout the day that im having a hard time catching up and catching my breath afterwards
+
+Doctor: Yeah for sure um ok and any chest pain
+
+Patient: No chest pain
+
+Doctor: OK um how about feeling like your hearts racing
+
+Patient: No nothing like that
+
+Doctor: No any swelling in your legs or arms
+
+Patient: No
+
+Doctor: OK do you ever feel like you have uh pain in your calves after walking um a few blocks
+
+Patient: No
+
+Doctor: No any fainting spells or dizziness
+
+Patient: uh no
+
+Doctor: No um have you had a sore throat
+
+Patient: No
+
+Doctor: No any changes in your vision or hearing
+
+Patient: No
+
+Doctor: Runny nose or stuffy nose
+
+Patient: Not no but ive definitely i feel like ive maybe noticed a change in my smell
+
+Doctor: OK how so
+
+Patient: I just uh i feel like i havent been able to smell as well
+
+Doctor: um when did you notice that
+
+Patient: The really these last like 2 days
+
+Doctor: OK and any changes in your taste
+
+Patient: uh i havent really i i thought well i wasnt really able to taste my food but i thought that was because i couldnt i wasnt smelling um so i thought that was just going to go away but the symptoms have gotten worse
+
+Doctor: Yeah and have you had a fever or chills in the past few days
+
+Patient: uh yeah ive had a fever um or i felt hot anyway
+
+Doctor: Did you take your temperature
+
+Patient: I havent checked it but um like ive been feeling pretty sweaty from how hot ive been
+
+Doctor: OK um so well take your temperature today and well let you know um have you noticed any weight loss over the past few weeks
+
+Patient: No
+
+Doctor: No weight loss how about fatigue or muscle aches
+
+Patient: uh maybe these past couple of days yeah
+
+Doctor: OK um any changes to your hair nails or skin like rashes
+
+Patient: No i havent noticed anything like that
+
+Doctor: OK um any changes to your bowel habits
+
+Patient: uh no
+
+Doctor: No any nausea or vomiting
+
+Patient: um no no
+
+Doctor: No ok any abdominal pains
+
+Patient: No
+
+Doctor: Any changes to your urine
+
+Patient: No
+
+Doctor: uh confusion or memory loss
+
+Patient: No
+
+Doctor: OK and would you say that you are an otherwise healthy person
+
+Patient: Yeah yeah thats why these symptoms um really surprised me
+
+Doctor: Yeah um so youve never been hospitalized or needed surgery in the past
+
+Patient: No i havent needed to i havent seen a doctor in a few years
+
+Doctor: OK um are you on any medications
+
+Patient: uh nope just uh take a multivitamin and uh and thats about it
+
+Doctor: OK um ok um any allergies
+
+Patient: uh yeah im allergic to um cats
+
+Doctor: Cats ok and have you been around any cats recently
+
+Patient: No
+
+Doctor: No ok how about immunizations are you up to date
+
+Patient: Yeah i am
+
+Doctor: OK um any family history of lung conditions or heart conditions
+
+Patient: uh no
+
+Doctor: How about cancers
+
+Patient: Nothing like that
+
+Doctor: OK and do you smoke
+
+Patient: No
+
+Doctor: um how about marijuana
+
+Patient: uh sometimes ill have a joint with friends or something like that on the weekend but um yeah so maybe once a week
+
+Doctor: Once a week ok um how about alcohol do you drink any alcohol
+
+Patient: uh no
+
+Doctor: No ok um and where do you live right now
+
+Patient: I live in a house um with my wife and uh 3 kids
+
+Doctor: OK is anyone else sick at home
+
+Patient: uh everybodys been well
+
+Doctor: OK um any reason to believe that youve been around any sick contacts recently
+
+Patient: um possibly um i mean im in sales so meeting with clients all day um maybe one of them were sick
+
+Doctor: Yeah yeah for sure um any travel recently
+
+Patient: uh no travel all the meetings have been in the city
+
+Doctor: OK ok good so those were all the questions that i had for you today did you have any questions of your own or anything that you wanted to discuss today that i missed
+
+Patient: um no that i was just worried about uh covid
+
+Doctor: Yeah so thats definitely top on the list right now for things that we have to rule you out for um so well take a swab today well send it off um for those pcr results you should hear back in 24 to 48 hours uh in the meantime you should isolate for 14 days and that includes from family members when possible and public health will get in touch with you if those results are positive and so they can they can do some contact tracing if its not covid it could be another viral illness thats going around and i guess the best therapy for that is staying hydrated um getting good sleep and eating nutritious foods uh but if your symptoms get worse like youre running a really high fever um youre having neurological symptoms like you know seizures or fainting spells um or if youre having difficulty breathing um you should come back to the er so how does that sound
+
+Patient: Yeah its really informative thank you
+
+Doctor: Alright take care
+
+Patient: Thank you

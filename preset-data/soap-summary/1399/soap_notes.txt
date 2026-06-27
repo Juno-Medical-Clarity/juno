@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1399
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is not aware of any medical problems in their family or extended family.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

@@ -1,0 +1,5 @@
+Doctor: Do you smoke cigarettes?
+Patient: Yes, I do.
+Doctor: How many packs a day.
+Patient: Maybe one a day.
+Doctor: Okay, you should think about quitting.

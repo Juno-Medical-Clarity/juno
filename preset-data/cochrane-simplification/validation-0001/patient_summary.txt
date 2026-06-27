@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0001  |  gem_id: gem-cochrane-simplification-validation-2  |  doi: 10.1002/14651858.CD006819.pub2
+
+We assessed the benefits and harms of bicarbonate-buffered solutions and lactate-buffered solutions by analysing results from four randomised controlled studies that together involved 171 participants. The evidence was flawed by study design and reporting problems, and the small number of people in the studies. Based on limited evidence from one study (117 participants), we found that people treated with bicarbonate-buffered solutions may experience fewer heart and blood circulation problems and high blood pressure events. The studies did not include enough evidence to make recommendations about the use of these solutions.

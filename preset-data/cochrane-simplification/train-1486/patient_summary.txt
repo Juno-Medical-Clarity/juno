@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1486  |  gem_id: gem-cochrane-simplification-train-1487  |  doi: 10.1002/14651858.CD008634.pub2
+
+This review investigates whether psychosocial interventions aimed at reducing antipsychotic medication in care homes are effective. By psychosocial interventions, we mean programmes that consist of different non-pharmacological components including talking to the staff, residents, or both. We identified four randomised controlled trials for inclusion in the review. All studies examined, among other components, education targeted at nursing staff in care homes. The methodological quality of three studies was limited, one study showed high quality. In all studies the interventions led to a reduction of antipsychotic medication use, but the overall magnitude of the effect remains unclear.

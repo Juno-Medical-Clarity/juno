@@ -1,0 +1,5 @@
+pmid:        34528084
+question:    48
+adaptation:  adaptation1
+title:       Relationship of Anifrolumab Pharmacokinetics With Efficacy and Safety in Patients With Systemic Lupus Erythematosus
+sentences:   10

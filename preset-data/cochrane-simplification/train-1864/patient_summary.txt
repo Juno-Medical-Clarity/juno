@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1864  |  gem_id: gem-cochrane-simplification-train-1865  |  doi: 10.1002/14651858.CD004742.pub2
+
+The trials reviewed compared duloxetine against dummy placebo tablets and also pelvic floor muscle training in women with predominantly stress urinary incontinence. Duloxetine reduced the frequency of episodes of incontinence and improved quality of life scores. However, it had little impact on the numbers cured and commonly had side effects, especially nausea. More studies comparing a serotonin and noradrenaline reuptake inhibitor with placebo and surgery are required, especially if conducted independently of pharmaceutical companies.

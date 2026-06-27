@@ -1,0 +1,7 @@
+Doctor: Do you smoke?
+Patient: Yes!
+Doctor: How about alcohol, do you drink?
+Patient: Yes, I do.
+Doctor: And how much do you drink and is it occasional or on daily basis?
+Patient: Well, I love my wine, I drink about four to five glasses per day.
+Doctor: Wow! That's a lot.

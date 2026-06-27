@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0015  |  gem_id: gem-cochrane-simplification-validation-16  |  doi: 10.1002/14651858.CD002806.pub2
+
+However, this update the review first published in 2002 (D'Angelo 2002) found there is not enough evidence to show whether using frozen embryos and or intravenous albumin infusion (artificial fluid to increase the woman's blood volume) can reduce OHSS in women who are at high risk. More research is needed on effects on pregnancy rates.

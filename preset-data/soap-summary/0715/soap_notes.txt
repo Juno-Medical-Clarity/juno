@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0715
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports no pain in the neck during examination.
+- No difficulty turning head from left to right or rotating head clockwise and counterclockwise.
+- No associated symptoms mentioned.
+- No relevant medical history, family history, or allergies explicitly mentioned.
+
+Objective:
+- Neck is symmetrical.
+- Thyroid is normal and not enlarged.
+- Neck is nontender.
+- No bulging of external jugular vein.
+- No abnormal masses present.
+- Full range of motion of the neck with no pain.
+
+Assessment:
+- No assessment or diagnosis provided in the conversation.
+
+Plan:
+- No plan or follow-up actions mentioned in the conversation.

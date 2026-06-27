@@ -1,0 +1,14 @@
+source:      pnas
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [1:5] 'medical-jargon-google-easy' -> 'transformation related protein 53'
+  [6:7] 'abbr-medical' -> 'Trp53'
+  [10:12] 'medical-jargon-google-hard' -> 'Kmt5c knockout'
+  [13:14] 'abbr-medical' -> 'KO'
+  [23:25] 'medical-jargon-google-hard' -> 'repressive mark'
+  [25:26] 'medical-jargon-google-hard' -> 'H4K20me3'
+  [28:30] 'medical-jargon-google-easy' -> 'proximal promoter'
+  [35:37] 'medical-jargon-google-easy' -> 'metabolic phenotypes'

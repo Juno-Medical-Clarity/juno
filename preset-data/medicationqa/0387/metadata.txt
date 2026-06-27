@@ -1,0 +1,5 @@
+drug_focus: antidepressants
+question_type: Indication
+section_title: NA
+source_url: https://www.health.harvard.edu/heart-health/antidepressants-and-arrhythmias
+sample_id: 0387

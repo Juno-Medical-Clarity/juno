@@ -1,0 +1,156 @@
+# Smith Collection Transcript: RES0162
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: Hi i am just coming in because for the last couple of months but ive been having this these coughing fits are there like when im going to the gym or even at home like during the weekends when were vacuuming and cleaning the house
+
+Doctor: When did this start
+
+Patient: um i would say started uh probably 3 months back but its gotten worse so like before i used to like just have some irritation in my throat and cough a little but now i would say probably every other day im having these episodes where i cant stop coughing when im exercising
+
+Doctor: Hmm um and is this cough a dry cough or do you bring up some mucus
+
+Patient: Its usually its usually a dry cough and sometimes i do bring up like this light material but usually its mostly a dry cough
+
+Doctor: You never notice any blood right
+
+Patient: No no blood
+
+Doctor: OK and uhm it started about three months ago i guess before that did you ever have a problem when you would exercise or when you were vacuuming or cleaning has this been a problem that has occurred for years and thats just something that you that got worse and now its come to your attention or was it just very new and sudden three months ago
+
+Patient: um its fairly new ive never really had this issue before although i have been like so like after the new year in the winter i i i wasnt much of the person who ran or exercised a lot but i i kind of needed a new goal to become more fit and active so i notice that i dont know maybe thats why like it is something new that ive been trying but yeah its not been an issue before
+
+Doctor: OK and other than the the cough have you noticed any other symptoms like a sore throat or itchy eyes itchy nose stuffy nose or runny nose anything like that
+
+Patient: No none of those but i did it initially i used to get just an irritation in my throat but now its just more of a cough
+
+Doctor: OK do you have do you get any pain in your chest at all
+
+Patient: uh when im usually it goes away in 1015 minutes but when im coughing a lot i do get some tightness
+
+Doctor: OK do you ever feel like youre short of breath when youre coughing or otherwise
+
+Patient: I do find that its harder to take a breath at those times
+
+Doctor: OK uhm and how long do these last for episodes last for
+
+Patient: Probably uh 15 to 20 minutes and yeah its its mainly just after i like often times over the last few weeks ive had to just stop doing what im doing like exercising and just come home and rest
+
+Doctor: Do you feel like your hearts beating really fast when that happens or youre sweating
+
+Patient: Yeah yeah i i feel like its usually i dont know if its because of the exercise but i have like a fitbit and its my my heart rate is much faster
+
+Doctor: Uhm ok alright have you had any other symptoms so anything any pain in your belly or any nausea or vomiting
+
+Patient: No nothing like that
+
+Doctor: Any changes in your bowel movements or any urinary symptoms
+
+Patient: Nope
+
+Doctor: Any headaches or fevers or chills
+
+Patient: No nothing like that
+
+Doctor: Unintentional weight loss
+
+Patient: No
+
+Doctor: Any night sweats
+
+Patient: No
+
+Doctor: Muscle aches joint pain
+
+Patient: No
+
+Doctor: Have you been diagnosed with any medical conditions
+
+Patient: No ive ive been very healthy
+
+Doctor: Uhm you mentioned that you started going to the gym more often earlier this year and that is when you sort of notice some of these symptoms is there anything else that changed in your life any big changes that you think could be related to this
+
+Patient: um no not really ive ive been really umm i moved back to my parents home just for a bit right now
+
+Doctor: OK
+
+Patient: Now while the university has closed down and by that ive lived there all my life before so i dont know if that had anything to do with it
+
+Doctor: Do you feel like they may have put new curtains or or like theres old carpets or new a new pet or something that could have caused some irritation for you
+
+Patient: No but i have noticed that when i when we vacuum i i do get some of those symptoms as well just more of an irritation mores than the cough
+
+Doctor: OK ok and do you feel that youre particularly anxious when these episodes are occurring do you have any new stressors in life
+
+Patient: uh no not really
+
+Doctor: Any medical conditions that run in the family
+
+Patient: Uhm i dont think so not that i know of
+
+Doctor: OK and i guess a little bit more about you so have you had in the past when you were younger did you have a rash like eczema or did you have allergic rhinitis where you would sneeze and to feel ill when you were outside or at certain times of the year anything like that
+
+Patient: I didnt have a i didnt have any like exam or rashes but i do generally have umm get allergies during the spring time when i go outside
+
+Doctor: Do you take any medications for that
+
+Patient: I just take reactine usually during the spring
+
+Doctor: Do you have any other allergies to food or medications
+
+Patient: No not that i know
+
+Doctor: And other than reactine do you take any medications including over the counter meds
+
+Patient: No
+
+Doctor: Nothing else ok and in your family you said no one has asthma or allergic rhinitis or eczema or anything like that right
+
+Patient: Not asthma my dad also gets those allergies and irritations just like me
+
+Doctor: Uhm ok and you mentioned that youre staying with your at your parents place are you uh are you doing things from home are you like doing school from home or working from home
+
+Patient: Yeah im not currently working just studying from home
+
+Doctor: OK and have you had contact with anyone who might have been sick
+
+Patient: No
+
+Doctor: Traveled anywhere outside the province recently
+
+Patient: No
+
+Doctor: OK and do you smoke or have you ever smoked
+
+Patient: No never smoked
+
+Doctor: Marijuana
+
+Patient: No
+
+Doctor: Any recreational drugs
+
+Patient: Nope
+
+Doctor: uh do you drink alcohol or have you ever had alcohol in the past
+
+Patient: Yeah alcohol ive had like at university but generally maybe just on the weekends not anything regular
+
+Doctor: Alright ok well uh those are all the questions i had for you we will do a physical exam now and ill go talk to my attending and well uh come talk to you right after i guess before before i do so what exactly are you hoping to get out of todays visit
+
+Patient: I just wanted to like i really do you want to become fit and its just these symptoms are stopping me and kind of affecting my daily routine so i just wanted to know what i can do to stop like having these symptoms
+
+Doctor: Have you ever tried any puffers
+
+Patient: No i havent
+
+Doctor: No ok right yeah lets talk a little bit
+
+Patient: OK

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0424
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you married? Yes, for almost twenty two years now. That is amazing! And are you working? Ah yes, I drive a delivery truck in the town. Okay. So, tell me do you smoke or drink? Yes, I do both. And how much would you say you smoke per day? I smoke about two packs a day. Hm, how much do you drink? I drink three, oh wait, I drink two beers every day. And do you do any drugs like coke or anything? No.

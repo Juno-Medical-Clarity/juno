@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1339
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- General health rated as "reasonably good" physically.
+- Engages in frequent walks and maintains a clean diet.
+- Experienced a mental health issue (nervous breakdown) after the death of husband in 1975.
+- Hospitalized for several weeks and treated with ECT (electroconvulsive therapy) following the breakdown.
+- Loss of husband occurred while living in Korea.
+- Received support from family and friends during this time.
+- Past medical history includes high blood pressure, which has since resolved.
+- No history of surgeries.
+- No use of alcohol or tobacco.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

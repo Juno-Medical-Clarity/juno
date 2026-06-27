@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0770  |  gem_id: gem-cochrane-simplification-train-771  |  doi: 10.1002/14651858.CD009664
+
+This review found that a single dose administered rectally was effective in relieving migraine headache pain and functional disability. Pain was reduced from moderate or severe to no pain by two hours in approximately 2 in 5 people (41%) taking sumatriptan 25 mg, compared with about 1 in 6 (17%) taking placebo. Pain was reduced from moderate or severe to no worse than mild pain by two hours in roughly 2 in 3 people (71%) taking sumatriptan 25 mg, compared with approximately 1 in 3 (30%) taking placebo. In addition to relieving headache pain, sumatriptan 25 mg also relieved functional disability by two hours in about 2 in 5 people (41%), compared with about 1 in 6 (16%) taking placebo. There was not enough evidence to draw any conclusions about the incidence of adverse events or to compare rectal sumatriptan directly with any other active comparators.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1248
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What's a young thirty one year old like you doing in my office today, ma'am? Well, I got referred to P T after I had a fall. When was your fall? Um, it was on October third two thousand eight. What happened when you fell? I tripped over my dog's toy. Did you twist your foot or ankle? Yeah, my left foot inverted. Have you had any imaging done on this foot? Yeah, um, I've had x rays and an M R I already. What were the impressions of those images? They told me that it was unremarkable. How was the pain progressed since the onset? Well, after a month or so, the pain is still so bad I can't do any of my activities. How long have you been wearing this walking boot? Um, it's been about a month now.

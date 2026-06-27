@@ -1,0 +1,12 @@
+source:      elife
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Mesenchymal stem cells'
+  [4:5] 'abbr-medical' -> 'MSCs'
+  [7:9] 'medical-jargon-google-easy' -> 'osteolineage cells'
+  [12:15] 'medical-jargon-google-easy' -> 'hematopoietic stem cell'
+  [16:17] 'abbr-medical' -> 'HSC'
+  [21:23] 'medical-jargon-google-easy' -> 'bone marrow'

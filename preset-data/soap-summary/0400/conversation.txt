@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0400
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you a smoker? I used to smoke. I quit in nineteen sixty eight. Excellent! Have you weighed your self recently? I weighed myself this morning. I am at one hundred and eighty three pounds. And how tall are you? I used to be five foot ten but I think I have been shrinking. That is definitely a possibility. We do shrink as we go through life. I can have the nurse get your height after we do your exam. Okay.

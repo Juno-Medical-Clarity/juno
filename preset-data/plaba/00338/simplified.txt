@@ -1,0 +1,15 @@
+The effectiveness of public health policies to control the spread of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which is a viral breathing-related disease, has not been well studied in young adults.
+We checked SARS-CoV-2 infections in U.S. Marine Corps recruits who had a 2-week quarantine or isolation at home. They then had a second supervised 2-week quarantine at a closed college campus with mask wearing, social distancing from others, and daily temperature and symptom checks.
+Study volunteers were tested for SARS-CoV-2 by swabs obtained between the time of arrival and second day of supervised isolation and on days 7 and 14.
+Recruits who did not volunteer had testing only on day 14, at the end of the isolation period.
+
+1848 recruits participated in the study. Within 2 days after arrival on campus, 16 (0.9%) tested positive for or had SARS-CoV-2, 15 of whom showed no symptoms.
+Another 35 participants (1.9%) tested positive or had SARS-CoV-2 on day 7 or day 14.
+Five of the 51 participants (9.8%) who tested positive at all had symptoms in the week before a positive test.
+Of those who decline to participate in the study, 26 (1.7%) of the 1554 recruits with test results tested positive on day 14.
+No SARS-CoV-2 infections were detected by clinical testing performed for daily symptom checks.
+Analyzing 36 sets of genetic data from 32 participants showed 6 disease-spreading clusters among 18 participants.
+Analysis notes multiple disease-spreading events, including spreading between roommates and among recruits in the same military group.
+Among Marine Corps recruits, around 2% with past test results detecting no SARS-CoV-2 at the beginning of supervised isolation, and less than 2% of recruits of unknown status previously, had results detecting SARS-CoV-2 by day 14.
+Most recruits with positive tests had no symptoms. No infections were detected from daily symptom checks.
+Disease-spreading clusters occurred within military groups.

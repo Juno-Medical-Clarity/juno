@@ -1,0 +1,1 @@
+Change in ARAT scores were analysed using analysis of covariance models adjusted for baseline variables and randomisation strata.

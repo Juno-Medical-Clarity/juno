@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0014  |  gem_id: gem-cochrane-simplification-test-15  |  doi: 10.1002/14651858.CD003270.pub2
+
+The review found two small studies which did not provide adequate evidence as to whether azathioprine could be offered to reduce oral steroid treatment. There is a need for well-designed trials addressing this question before recommendations can be made.

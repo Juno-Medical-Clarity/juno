@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1783  |  gem_id: gem-cochrane-simplification-train-1784  |  doi: 10.1002/14651858.CD009071.pub2
+
+This review found that fluoroquinolones like ciprofloxacin, levofloxacin, lomefloxacin, ofloxacin or prulifloxacin have equivalent effects and equivalent success rates in CBP patients. If atypical bacteria like chlamydia are suspected to cause CBP, macrolide antibiotics such as azithromycin may achieve better results compared to the fluoroquinolone ciprofloxacin. It must be taken into account that some of the studies that have been performed are of poor quality or have been performed on small numbers of participants. More studies are needed, focusing on new agents or on optimized doses of currently prescribed antibiotics.

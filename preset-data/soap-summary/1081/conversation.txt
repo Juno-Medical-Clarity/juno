@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1081
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What do you do? Are you working or in school? I am in school. Good. Thanks.

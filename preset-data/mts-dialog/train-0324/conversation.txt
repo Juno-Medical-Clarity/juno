@@ -1,0 +1,28 @@
+Doctor: Good afternoon, ma'am. Before we begin, can you confirm your age for me, please?
+Patient: Sure, I'm fifty six years old.
+Doctor: Great, thank you. What seems to be the problem today?
+Patient: Well, I have a history of systemic lupus erythematosus.
+Doctor: How have you been treated for this in the past?
+Patient: Um, I went to a rheumatologist about four months ago, I had discomfort in both of my hands.
+Doctor: Which hand was worse?
+Patient: My left was worse than my right at that time.
+Doctor: Have you seen anyone else for this?
+Patient: Um, I came in on October thirtieth two thousand seven. I was having the same problem.
+Doctor: What did they do for you at that time?
+Patient: They have me a trial of Elavil because they thought it was, um, ulnar or radial neuropathy.
+Doctor: Did they give you any topical creams?
+Patient: Yeah, they gave me a prescription for Zostrix but I couldn't fill it because of my insurance.
+Doctor: I see, have your symptoms gotten worse since they began?
+Patient: Yeah, especially here, at the base of my left hand, like around my wrist.
+Doctor: Which fingers do you feel it in? If any?
+Patient: Right here, doctor.
+Doctor: Okay, these are your second, third, and fourth fingers. Do you have any other symptoms of note?
+Patient: Um, actually yeah, I've been having some respiratory problems for the last three days or so.
+Doctor: What symptoms have you been experiencing?
+Patient: Um, I've had a dry cough and I feel like I've had a fever but I haven't taken my temperature.
+Doctor: Have you had any night sweats or chills?
+Patient: No, not that I can remember.
+Doctor: Have you had any chest pain or discomfort?
+Patient: No.
+Doctor: What about shortness of breath, or G I problems?
+Patient: Thankfully, no.

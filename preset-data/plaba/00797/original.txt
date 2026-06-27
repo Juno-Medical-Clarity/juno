@@ -1,0 +1,10 @@
+Background and objective: Anastrozole is a well-established active pharmaceutical ingredient (API) used for the treatment of hormone-sensitive breast cancer (BC) in postmenopausal women.
+However, treatment with the only available oral formulation is often associated with concentration-dependent serious side effects such as hot flashes, fatigue, muscle and joint pain, nausea, diarrhea, headache, and others.
+In contrast, a sustained-release system for the local application of anastrozole should minimize these serious adverse drug reactions.
+Methods: Anastrozole-in-adhesive transdermal drug delivery systems (TDDS) were developed offering efficient loading, avoidance of inhomogeneity or crystallization of the drug, the desired controlled release kinetics, storage stability, easy handling, mechanical stability, and sufficient stickiness on the skin.
+In vitro continuous anastrozole release profiles were studied in Franz diffusion cells.
+In vivo, consecutive drug plasma kinetics from the final anastrozole transdermal system was tested in beagle dogs.
+For drug analysis, a specific validated liquid chromatography- mass spectrometry method using fragment ion detection was developed and validated.
+Results: After efficient drug loading, a linear and sustained 65% drug release from the TDDS over 48 h was obtained.
+In vivo data showed a favorable anastrozole plasma concentration-time course, avoiding side effect-associated peak concentrations as obtained after oral administration but matching therapeutic plasma levels up to 72 h.
+Conclusion: These results provide the basis for establishing the transdermal application of anastrozole with improved pharmacokinetics and drug safety as novel therapeutic approach and promising option to treat human BC by decreasing the high burden of unwanted side effects.

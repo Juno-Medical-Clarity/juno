@@ -1,0 +1,4 @@
+The linker histones (H1, H1 zero, H5, etc.) and a group of abundant non-histone chromosomal proteins (HMG1/2) bind to linker DNA in chromatin and exhibit both generalized and specific effects on gene transcription.
+The two classes of proteins share many features of DNA binding behaviour, although they are structurally unrelated.
+While the linker histones and HMG1/2 exhibit direct competition in binding to such structures as four-way junction DNA, whether they compete for binding to the nucleosome has not been investigated.
+The possibility for either opposite or synergistic effects on gene regulation must be considered at this point.

@@ -1,0 +1,5 @@
+pmid:        20208092
+question:    13
+adaptation:  adaptation1
+title:       Circadian variation in dominant atrial fibrillation frequency in persistent atrial fibrillation
+sentences:   6

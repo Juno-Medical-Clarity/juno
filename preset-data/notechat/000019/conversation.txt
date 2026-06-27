@@ -1,0 +1,49 @@
+Doctor: Good morning, what brings you to the emergency room today?
+
+Patient: I have been experiencing tingling and numbness in my hands for the past few months.
+
+Doctor: I see. Can you describe your symptoms in more detail?
+
+Patient: Yes, I've been seeing red spots and feeling a burning sensation in the bottom of my feet. And I'm having difficulty picking up objects due to my hand symptoms.
+
+Doctor: Hmm, I understand. Can you tell me about your medical history?
+
+Patient: I have a history of hypertension, type 2 diabetes mellitus, stage 3 kidney disease, and osteoarthritis.
+
+Doctor: Okay, I see. We did some basic lab work on you and you were given gabapentin and magnesium oxide. Did you follow up with your primary care physician?
+
+Patient: Yes, I did.
+
+Doctor: And how have you been feeling since then?
+
+Patient: I've been feeling unsteady and more confused lately.
+
+Doctor: I see. Can you tell me about the medications you're taking?
+
+Patient: I take losartan and metformin.
+
+Doctor: Alright. Let me check your physical exam results. Your pupils were normal with reaction and accommodation, no cranial nerve deficits, normal strength throughout, and normal reflexes throughout except for diminished reflexes in the bilateral knees and ankles. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: And you also reported blurry vision. Did you have an ophthalmologic exam?
+
+Patient: No, I didn't. But I was able to read a name badge from one foot away.
+
+Doctor: Okay. We also found decreased vibratory and proprioception in a stocking pattern, and a wide-based and unsteady gait. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: To investigate further, we ordered tests for TSH, folate, B12, and rapid plasma regain. And your TSH, folate, and B12 levels were within normal limits, but your RPR titer was reactive at 1:1.
+
+Patient: Hmm.
+
+Doctor: And a subsequent TP-PA test was reactive. I would like you to go to the hospital for further workup and treatment.
+
+Patient: Okay.
+
+Doctor: Can you tell me about your sexual history?
+
+Patient: I had two partners in my life, both ex-husbands. But they committed adultery several times and I am not currently sexually active. My last sexual encounter was several years ago.
+
+Doctor: Alright, I understand. Thank you for your information. We'll take care of you and get you the help you need.

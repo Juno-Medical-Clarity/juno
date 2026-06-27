@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 0025
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Low back pain
+- Started yesterday while unloading groceries from pickup truck
+- Stabbing pain in lower back, radiating to right leg (aching pain)
+- Pain worsens with movement, bending, or coughing
+- Pain rated 2/10 when sitting still
+- No fever, chills, night sweats, fatigue, skin changes, joint pain, cough, runny nose, bowel or urinary issues, numbness, tingling, muscle weakness, erectile dysfunction, or incontinence
+- PMHx: Type 2 diabetes
+- Medications: Insulin (diabetes), Tylenol (back pain, minimal relief)
+- No allergies
+- PSHx: Hemorrhoidectomy 3 years ago
+- FHx: Father had prostate cancer
+- SocHx: Retired school teacher, lives alone, occasional alcohol (red wine), smokes 1 pack/day for 40 years, no recreational drugs, balanced diet, sexually active with girlfriend, uses condoms, 2 partners in past year
+
+Objective:
+- Vitals: [not provided]
+
+Assessment:
+- [not provided]
+
+Plan:
+- [not provided]

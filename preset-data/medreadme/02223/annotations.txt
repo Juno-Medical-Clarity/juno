@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Prophylactic oophorectomy'
+  [3:4] 'medical-jargon-google-easy' -> 'hysterectomy'
+  [5:6] 'medical-jargon-google-easy' -> 'premenopausal'

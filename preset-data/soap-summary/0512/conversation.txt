@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0512
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke? Yes. How much? Two cigarettes per day. Okay that is not bad, but try quitting. Okay. Alcohol? No, I don't drink.

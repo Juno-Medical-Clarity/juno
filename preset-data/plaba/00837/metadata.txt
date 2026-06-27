@@ -1,0 +1,5 @@
+pmid:        31728379
+question:    67
+adaptation:  adaptation2
+title:       Rehabilitation protocols following total knee arthroplasty: a review of study designs and outcome measures
+sentences:   17

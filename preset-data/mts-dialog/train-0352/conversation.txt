@@ -1,0 +1,6 @@
+Doctor: Are you married?
+Patient: Yes.
+Doctor: Where do you work?
+Patient: I work as a secretary in a law firm.
+Doctor: Do you smoke or drink? Have you ever tried any illegal drug?
+Patient: No, none of these.

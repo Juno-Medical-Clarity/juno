@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        complex
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-easy' -> 'pulmonary rehabilitation'
+  [9:10] 'abbr-medical' -> 'ILD'
+  [27:29] 'medical-jargon-google-easy' -> 'pulmonary rehabilitation'
+  [32:33] 'abbr-medical' -> 'ILD'

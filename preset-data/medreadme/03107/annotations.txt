@@ -1,0 +1,11 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.2
+split:       dev
+
+jargon_spans:
+  [1:2] 'abbr-general' -> 'RCT'
+  [5:6] 'medical-jargon-google-easy' -> 'cabozantinib'
+  [14:15] 'abbr-medical' -> 'PFS'
+  [16:17] 'abbr-medical' -> 'OS'
+  [21:22] 'medical-jargon-google-easy' -> 'nivolumab'

@@ -1,0 +1,8 @@
+Doctor: I am looking at the list of your medication.
+Patient: Okay.
+Doctor: All I can see is Risperdal and Invega.
+Patient: I think that is correct.
+Doctor: Are you not taking anything else?
+Patient: Yes, I take some multivitamins, but do I need to mention it?
+Doctor: Yes, you should. We need to know everything.
+Patient: Okay.

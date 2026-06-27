@@ -1,0 +1,5 @@
+drug_focus: Ativan
+question_type: other_drug_question
+section_title: Testing
+source_url: https://www.practicalpainmanagement.com/treatments/pharmacological/demystifying-benzodiazepine-urine-drug-screen-results
+sample_id: 0170

@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [12:13] 'medical-jargon-google-easy' -> 'antibiotic'
+  [27:28] 'medical-jargon-google-easy' -> 'antibiotic'
+  [32:34] 'medical-jargon-google-easy' -> 'antimicrobial stewardship'

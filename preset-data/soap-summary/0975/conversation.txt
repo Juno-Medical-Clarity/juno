@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0975
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any fever, chills or rigors? No. Any blurring of vision or history of glaucoma or cataract? No. Did you experience any shortness of breath? No. Any stomach discomfort? No. Did you observe blood in your stool or in vomit? No, nothing like that. Okay, good. Did you notice any increase in your urine frequency or urgency? No. Do you feel any muscle weakness or tiredness? No, nothing of that sort. Any known history of arthritis? Nope. And no fever due to any fungal infection or anything, right? Like valley fever? No, nothing of that sort. Any history of pneumonia? No. And I am looking at your chart, so no history of stroke, C V A, or any seizure disorder. That's correct. No thyroid or hormone related problem? No. And you do not have any blood disorders, right? That is right.

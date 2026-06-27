@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0272  |  gem_id: gem-cochrane-simplification-validation-273  |  doi: 10.1002/14651858.CD000200.pub2
+
+The review authors set out to determine whether surgery within 24 to 72 hours of onset of symptoms decreases the risk of death or dependence; and whether one surgical technique is better than another. Endoscopic or stereotactic surgery inserts a fine catheter rather than having to open up the skull (craniotomy) to get to the blood clot. This updated review included 10 studies in which a total of 2059 participants received medical treatment, but 50% also had surgery within 72 hours of onset of the event. Surgery was associated with significant benefit and improved the proportion of participants alive and independent. However, the benefit was not consistent in all the studies, which suggests that this result may not be very reliable. Overall, surgery appeared promising, though further trials are underway to identify the type of patients most likely to benefit from surgery.

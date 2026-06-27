@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3109  |  gem_id: gem-cochrane-simplification-train-3110  |  doi: 10.1002/14651858.CD002853
+
+Although a number of randomized controlled trials have been undertaken, data were available from only a very limited number of these studies. These limited data suggest that propentofylline may have a beneficial effect on measures of cognitive and global function of people with Alzheimer's or vascular dementia. The unavailability of data, due to failure of Aventis, the manufacturing pharmaceutical company, to release information about unpublished studies prevented a comprehensive systematic review and meta-analysis.

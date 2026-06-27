@@ -1,0 +1,5 @@
+pmid:        33380357
+question:    68
+adaptation:  adaptation2
+title:       Association between iron status and the risk of adverse outcomes in COVID-19
+sentences:   12

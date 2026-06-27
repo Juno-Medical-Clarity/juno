@@ -1,0 +1,15 @@
+Insulin and glucagon work in what’s called a negative feedback loop. During this process, one event triggers another, which triggers another, and so on, to keep your blood sugar levels balanced.
+
+How insulin works
+During digestion, foods that contain carbohydrates are converted into glucose. Most of this glucose is sent into your bloodstream, causing a rise in blood glucose levels. This increase in blood glucose signals your pancreas to produce insulin.
+
+The insulin tells cells throughout your body to take in glucose from your bloodstream. As the glucose moves into your cells, your blood glucose levels go down. Some cells use the glucose as energy. Other cells, such as in your liver and muscles, store any excess glucose as a substance called glycogen. Your body uses glycogen for fuel between meals.
+
+||
+
+How glucagon works
+Glucagon works to counterbalance the actions of insulin.
+
+About four to six hours after you eat, the glucose levels in your blood decrease, triggering your pancreas to produce glucagon. This hormone signals your liver and muscle cells to change the stored glycogen back into glucose. These cells then release the glucose into your bloodstream so your other cells can use it for energy.
+
+This whole feedback loop with insulin and glucagon is constantly in motion. It keeps your blood sugar levels from dipping too low, ensuring that your body has a steady supply of energy.

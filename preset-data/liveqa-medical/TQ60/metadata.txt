@@ -1,0 +1,14 @@
+qid: TQ60
+source_file: 1-133790487.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: How frequently should a dose of 5 mg of oxybutinin be taken?
+nlm_summary: What is the recommended dosage of Oxybutynin?
+
+focus_entities:
+  [F1] (DrugSupplement) Oxybutinin
+question_types:
+  [T1] DOSAGE
+keywords:
+  [K1] (Measurement) 5 mg

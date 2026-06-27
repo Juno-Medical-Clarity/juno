@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0860
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Gestational diabetes, fear of eating due to concern about blood sugar levels spiking.
+- Severity: Not explicitly stated, but patient expresses significant fear regarding diet and blood sugar control.
+- Duration: Ongoing concern related to gestational diabetes and current pregnancy.
+- Associated symptoms: Fatigue and tiredness due to not eating during late shifts.
+- Relevant medical history: History of gestational diabetes.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Difficulty managing diet, especially while working third shift and taking care of young children.
+
+Objective:
+- No measurable or observable data provided in the conversation.
+
+Assessment:
+- No explicit diagnoses or clinical impressions provided by the clinician.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education explicitly mentioned by the physician.

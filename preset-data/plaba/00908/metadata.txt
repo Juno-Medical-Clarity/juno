@@ -1,0 +1,5 @@
+pmid:        28081319
+question:    74
+adaptation:  adaptation3
+title:       Chronic cough: clinical characteristics and etiologies of 510 cases
+sentences:   9

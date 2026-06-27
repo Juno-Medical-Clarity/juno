@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1193
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Did you have any medical issues? Nope.

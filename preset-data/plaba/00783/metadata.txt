@@ -1,0 +1,5 @@
+pmid:        2866055
+question:    62
+adaptation:  adaptation2
+title:       Clinical pharmacokinetics of H1-receptor antagonists (the antihistamines)
+sentences:   14

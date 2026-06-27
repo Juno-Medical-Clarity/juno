@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:5] 'medical-jargon-google-easy' -> 'Three - color superresolution imaging'
+  [6:8] 'medical-jargon-google-easy' -> 'replication foci'
+  [15:19] 'medical-jargon-google-easy' -> 'partially resolved replication forks'

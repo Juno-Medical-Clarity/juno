@@ -1,0 +1,18 @@
+Dystonia is a complex neurological movement disorder characterized by involuntary muscle contractions.
+Increasing studies implicate the microbiome as a possible key susceptibility factor for neurological disorders, but the relationship between the gut microbiota and dystonia remains poorly explored.
+Here, the gut microbiota of 57 patients with isolated dystonia and 27 age- and environment-matched healthy controls was analyzed by 16S rRNA gene amplicon sequencing.
+Further, integrative analysis of the gut microbiome and serum metabolome measured by high-performance liquid chromatography-mass spectrometry was performed.
+No difference in α-diversity was found, while β-diversity was significantly different, with a more heterogeneous community structure among dystonia patients than among controls.
+The most significant changes in dystonia highlighted an increase in Clostridiales, including Blautia obeum, Dorea longicatena, and Eubacterium hallii, and a reduction in Bacteroides vulgatus and Bacteroides plebeius.
+The functional analysis revealed that genes related to tryptophan and purine biosynthesis were more abundant in gut microbiota from patients with dystonia, while genes linked to citrate cycle, vitamin B6, and glycan metabolism were less abundant.
+The evaluation of serum metabolites revealed altered levels of l-glutamic acid, taurine, and d-tyrosine, suggesting changes in neurotransmitter metabolism.
+The most modified metabolites strongly inversely correlated with the abundance of members belonging to the Clostridiales, revealing the effect of the gut microbiota on neurometabolic activity.
+This study is the first to reveal gut microbial dysbiosis in patients with isolated dystonia and identified potential links between gut microbiota and serum neurotransmitters, providing new insight into the pathogenesis of isolated dystonia.
+IMPORTANCE Dystonia is the third most common movement disorder after essential tremor and Parkinson's disease.
+However, the cause for the majority of cases is not known.
+This is the first study so far that reveals significant alterations of gut microbiome and correlates the alteration of serum metabolites with gut dysbiosis in patients with isolated dystonia.
+We demonstrated a general overrepresentation of Clostridiales and underrepresentation of Bacteroidetes in patients with dystonia in comparison with healthy controls.
+The functional analysis found that genes related to the biosynthesis of tryptophan, which is the precursor of the neurotransmitter serotonin, were more active in isolated dystonia patients.
+Altered levels of several serum metabolites were found to be associated with microbial changes, such as d-tyrosine, taurine, and glutamate, indicating differences in neurotransmitter metabolism in isolated dystonia.
+Integrative analysis suggests that neurotransmitter system dysfunction may be a possible pathway by which the gut microbiome participates in the development of dystonia.
+The gut microbiome changes provide new insight into the pathogenesis of dystonia, suggesting new potential therapeutic directions.

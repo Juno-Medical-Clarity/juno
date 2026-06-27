@@ -1,0 +1,56 @@
+# SOAP Notes — Sample 0239
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 6 months (previously had smoker's cough for a couple of years that was only present in the morning, but 6 months ago started having cough all day)
+- Dry cough
+- No blood or sputum
+- Shortness of breath that has been getting worse over the last 6 months
+- No wheezing
+- Dull, aching chest pain on the right side of the chest (always there, not worse with exertion, deep breaths or leaning forward; had a normal stress test about a year ago)
+- Weight loss of 20-30 lbs in the last 6 months (weight decreased from just over 200 lbs to 170s)
+
+PMHx:
+- Atrial fibrillation (gets palpitations sometimes but doesn't affect him much)
+- Benign prostatic hyperplasia (sometimes has a harder time urinating)
+- Hypertension
+- Worked up for COPD 5-10 years ago with pulmonary function tests but was negative
+- Family history of lung cancer in smoker relatives (uncle and a couple other family members)
+
+Medications:
+- Antihypertensive
+- Beta blocker (for heart rate and atrial fibrillation)
+
+SocHx:
+- Smoking history of 1 pack per day for about 60 years (previously smoked 2 packs per day)
+- No recreational drug use
+- Lives with wife in a townhouse
+- No known environmental exposures (old carpets, dust, asbestos, mold)
+- No pets
+- No recent sick contacts
+- No recent travel
+
+ROS:
+- Constitutional: Reports fatigue and weight loss. Denies fevers.
+- HEENT: Denies changes in vision, hearing, smell or taste. Denies runny nose, stuffy nose or sore throat.
+- Cardiovascular: Reports chest pain and palpitations due to atrial fibrillation. Denies dizziness, fainting spells or calf pain with walking.
+- Respiratory: Reports cough and shortness of breath. Denies wheezing.
+- Gastrointestinal: Denies changes in bowel movements, diarrhea, blood in stool, constipation, nausea or vomiting. Reports no appetite changes.
+- Genitourinary: Reports difficulty urinating at times due to BPH. Denies other changes in urination.
+- Musculoskeletal: Reports knee pain attributed to arthritis. Denies other joint pains or muscle aches.
+- Neurological: Denies headaches, numbness, tingling, confusion or memory loss.
+- Dermatological: Denies rashes.
+
+Objective:
+- Vitals signs not provided
+
+Assessment:
+- Lung cancer high on differential due to age, smoking history and clinical presentation
+
+Plan:
+- COVID-19 swab to rule out COVID-19 infection (expect results in 24-48 hours)
+- Chest X-ray to look for lung mass or effusions
+- CT chest if signs of cancer on chest X-ray
+- Lung biopsy for pathology if cancer suspected
+- PET-CT for staging if biopsy confirms lung cancer
+- Discuss treatment plan and prognosis based on type of lung cancer if diagnosed

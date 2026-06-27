@@ -1,0 +1,5 @@
+Doctor: Any smoking or alcohol?
+Patient: No, I don't smoke but I drink wine.
+Doctor: Are you married?
+Patient: Yes, I am.
+Patient: I have three stepchildren and one of my own and I work for A B C D.

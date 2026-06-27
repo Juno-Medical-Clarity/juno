@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1186
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you feeling today, sir? I'm doing much better today, doctor. How is your strength and muscular pain? They're both improving. Do you have any other complaints today? No, I'm doing quite well, honestly.

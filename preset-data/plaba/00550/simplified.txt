@@ -1,0 +1,9 @@
+The cancer or tumor causing role of changes to histone proteins is one of the most important discoveries in cancer research. Histones are proteins that provide structural support to a chromosome and sometimes act as the spool that the thread-like DNA wraps around.
+Recurring mutations (changes) that target histone genes are described in brain tumors in children, in a rare type of noncancerous bone tumor that begins in cartilage chondroblastoma (noncancerous bone tumors in cartilage), and in giant tumors of bones and other types of tumors.
+The finding that mutant histones can cause cancer and tumors, also called oncogenic, and drive development of tumors in children lead to the new term "onchohistones".
+In this review, researchers describe the organization of the multiple genes that build histone proteins and the role of histone mutations in cancer.
+Recent works show that recurring mutations during pregnancy target both N-terminal (nitrogen-containing) tails that are on histones and interact with DNA and the central part of the histone that folds in different types of tumors.
+Oncohistones (the mutant histones that can cause tumors) often occur more in tumors affecting children and adolescents.
+Notably, in many cases, the mutations target only some of the genes that interact with histone proteins and are frequently associated with specific tumor types or with tumors that come from specific locations.
+In conclusion, the overview of recent advances suggests that it's possible histones mutation can form cancer or tumors.
+However, further studies are necessary to fully describe the process of histone proteins that may cause cancer (oncohistones), as well as to evaluate how they might influence cancer classification, the course of the disease, and the identification of new treatments.

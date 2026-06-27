@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0577
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Diarrhea, vomiting, fever.
+- Severity: Frequent diarrhea (5-6 times a day), frequent vomiting, fever of 103°F.
+- Duration: Diarrhea for 4 days, vomiting for 3 days.
+- Associated Symptoms: Fever (103°F last night), inability to keep food down.
+- Relevant Medical History: No specific medical history mentioned.
+- Family History: Brother also experiencing similar symptoms.
+- Allergies: None mentioned.
+- Other Concerns: Concern about the inability to keep food down and the presence of fever.
+
+Objective:
+- Vital Signs: Fever of 103°F reported last night.
+- Hydration: Patient has urinated today.
+- Intake: Had half a hamburger and some milk last night, which was not kept down. Consumed Pedialyte, Gatorade, white grape juice, and 7-up.
+
+Assessment:
+- No specific assessment or diagnosis provided in the conversation.
+
+Plan:
+- No specific plan provided in the conversation.

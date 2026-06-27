@@ -1,0 +1,1 @@
+The dynamics along these eigenworms offer both a quantitative characterization of classical worm movement such as forward crawling, reversals, and Omega-turns, and evidence of more subtle behaviors such as pause states at particular postures.

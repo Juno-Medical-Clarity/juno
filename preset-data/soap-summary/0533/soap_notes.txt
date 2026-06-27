@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0533
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Allergies: Penicillin.
+
+Objective: 
+- (No objective data mentioned.)
+
+Assessment: 
+- (No assessment provided.)
+
+Plan: 
+- (No plan provided.)

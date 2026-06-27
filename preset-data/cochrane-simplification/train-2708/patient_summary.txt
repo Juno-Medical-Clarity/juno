@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2708  |  gem_id: gem-cochrane-simplification-train-2709  |  doi: 10.1002/14651858.CD006044.pub4
+
+On 26 November 2013 we performed searches to look for clinical trials where lamotrigine was used to treat neuropathic pain or fibromyalgia. We found 12 studies of reasonable quality that tested lamotrigine against placebo for a number of weeks. Almost half of the 1511 people in the studies had painful limbs because of damaged nerves caused by diabetes, and seven different painful neuropathic conditions were examined. No studies looked at fibromyalgia. Lamotrigine did not help the pain, and was no different from placebo except in causing more side effects. Adverse events were more frequent with lamotrigine than placebo, with rash in 1 person in 27.

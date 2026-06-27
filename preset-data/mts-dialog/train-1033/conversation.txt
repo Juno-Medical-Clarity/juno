@@ -1,0 +1,24 @@
+Doctor: How are you feeling?
+Patient: I've been having a lot more joint pain lately.
+Doctor: You're seventy seven, correct?
+Patient: Don't remind me.
+Doctor: When did you first start experiencing joint pain?
+Patient: Couple years ago.
+Doctor: In what ways has it worsened?
+Patient: It's caused me to become less active in general. My hands and wrists aren't as mobile.
+Doctor: Have you noticed any increased swelling?
+Patient: No, but it's all gotten to be a little too uncomfortable.
+Doctor: I see here that you take the generic of Daypro. Is that helping?
+Patient: No.
+Doctor: And no redness to the area, right?
+Patient: No.
+Doctor: Fever or chills?
+Patient: I had diarrhea for a few days, but it's gotten much better. I was also having trouble holding my bladder.
+Doctor: Are you going to the bathroom more often, experiencing excessive thirst, or other problems?
+Patient: No. My incontinence is a bit better and so is my ankle and foot swelling.
+Doctor: How has your blood sugar been?
+Patient: A little better.
+Doctor: Have you checked your blood pressure recently?
+Patient: Not recently.
+Doctor: Any new medications?
+Patient: I'm back on Zoloft again because I think I might be depressed. Ever since losing most of my mobility, I haven't been feeling like my usual myself. I'm also sleeping all the time.

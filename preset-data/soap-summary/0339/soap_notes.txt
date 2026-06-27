@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0339
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient mentioned concern about potential infection.
+- No specific symptoms, severity, or duration of symptoms provided.
+- No relevant medical history, family history, or allergies mentioned.
+- Patient appears to be concerned about lymph node swelling.
+
+Objective:
+- Physical examination findings:
+ - Neck area: No inflamed lymph nodes detected.
+ - Armpits: No abnormalities noted.
+ - Groin area: No signs of infection.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- No plan or follow-up actions explicitly mentioned.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2362  |  gem_id: gem-cochrane-simplification-train-2363  |  doi: 10.1002/14651858.CD006908.pub2
+
+The review included 26 trials with a total of 2051 participants. The findings suggested that music listening may have a beneficial effect on preoperative anxiety. Most trials presented some methodological weakness. Therefore, these results need to be interpreted with caution. However, these findings are consistent with the findings of three other Cochrane systematic reviews on the use of music interventions for anxiety reduction in medical patients. Therefore, we conclude that music interventions may provide a viable alternative to sedatives and anti-anxiety drugs for reducing preoperative anxiety.

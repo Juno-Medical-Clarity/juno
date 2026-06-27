@@ -1,0 +1,5 @@
+pmid:        34571039
+question:    28
+adaptation:  adaptation1
+title:       Manifestations and mechanisms of central nervous system damage caused by SARS-CoV-2
+sentences:   8

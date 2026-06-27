@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0784
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient does not have any family history of cancer, including solid tumors or blood malignancies.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

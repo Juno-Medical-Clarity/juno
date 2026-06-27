@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0288
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How old are you, young boy? I am twenty nine. And you got right side shoulder pain? Is this something new? Yes. That is right. What were you doing when this happened? I think I was picking up a stack of cardboard, then putting it down on the ground and twisting to the right side. And sometimes I was throwing them a little bit as well. Okay, and how far you were lifting them or bending? Around here, till waist level. Okay. I heard a pop and since then there is pain in this area. I can't lift heavy items. Basically I have no strength. Okay. And this all started from June thirty two thousand and four? Yes, that's right. The pain is in the lateral part of the back of my shoulder. How did you lose your arm if I may ask? Motorcycle accident.

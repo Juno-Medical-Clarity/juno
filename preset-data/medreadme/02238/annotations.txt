@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [6:7] 'abbr-general' -> 'RCTs'
+  [16:18] 'medical-jargon-google-easy' -> 'surgical menopause'
+  [22:24] 'medical-jargon-google-easy' -> 'cardiovascular health'

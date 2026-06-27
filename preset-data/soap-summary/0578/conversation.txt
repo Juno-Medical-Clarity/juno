@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0578
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Welcome into the clinic! I would like to start with your past medical history. I have high blood pressure and macular deterioration. Last year I caught pneumonia but that has cleared up. Okay. What brings you in today? I have had this cough and pain on the right side of my abdomen. How long has this been going on? Two days. I have had body aches and have been feeling nauseous too. Have you had a fever? I think so. I was chilled and my forehead was warm. The cough is a dry sounding cough. Does the abdominal pain come during one of these coughing episodes? Yes.

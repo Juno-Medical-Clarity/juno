@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0973
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is married for twenty-two years.
+- Patient is unemployed.
+- Patient has not completed college degree yet.
+- Patient has been in school for the last two years.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessments provided]
+
+Plan:
+- [No plan provided]

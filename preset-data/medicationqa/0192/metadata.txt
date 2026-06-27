@@ -1,0 +1,5 @@
+drug_focus: Aldosterone
+question_type: Information
+section_title: What Is an Aldosterone Test?
+source_url: https://www.healthline.com/health/aldosterone
+sample_id: 0192

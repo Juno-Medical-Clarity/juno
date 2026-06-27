@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1005  |  gem_id: gem-cochrane-simplification-train-1006  |  doi: 10.1002/14651858.CD004763.pub2
+
+Fifteen trials involving a total of 2064 participants were included. Three types of photocoagulation were used in the trials: direct photocoagulation of the entire CNV, perifoveal photocoagulation and grid photocoagulation. Control groups in the trials included observation only, submacular surgery and different lasers. This review found that the use of photocoagulation is effective for people with lesions that are outside the centre of the macula. However, these types of lesions are less common in AMD. Severe loss of vision can be prevented in about one in six people.

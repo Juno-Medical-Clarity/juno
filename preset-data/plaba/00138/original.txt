@@ -1,0 +1,9 @@
+Metabolic epilepsies arise in the context of rare inborn errors of metabolism (IEM), notably glucose transporter type 1 deficiency syndrome, succinic semialdehyde dehydrogenase deficiency, pyruvate dehydrogenase complex deficiency, nonketotic hyperglycinemia, and mitochondrial cytopathies.
+A common feature of these disorders is impaired bioenergetics, which through incompletely defined mechanisms result in a wide spectrum of neurological symptoms, such as epileptic seizures, developmental delay, and movement disorders.
+The ketogenic diet (KD) has been successfully utilized to treat such conditions to varying degrees.
+While the mechanisms underlying the clinical efficacy of the KD in IEM remain unclear, it is likely that the proposed heterogeneous targets influenced by the KD work in concert to rectify or ameliorate the downstream negative consequences of genetic mutations affecting key metabolic enzymes and substrates-such as oxidative stress and cell death.
+These beneficial effects can be broadly grouped into restoration of impaired bioenergetics and synaptic dysfunction, improved redox homeostasis, anti-inflammatory, and epigenetic activity.
+Hence, it is conceivable that the KD might prove useful in other metabolic disorders that present with epileptic seizures.
+At the same time, however, there are notable contraindications to KD use, such as fatty acid oxidation disorders.
+Clearly, more research is needed to better characterize those metabolic epilepsies that would be amenable to ketogenic therapies, both experimentally and clinically.
+In the end, the expanded knowledge base will be critical to designing metabolism-based treatments that can afford greater clinical efficacy and tolerability compared to current KD approaches, and improved long-term outcomes for patients.

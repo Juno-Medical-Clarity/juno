@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0501  |  gem_id: gem-cochrane-simplification-train-502  |  doi: 10.1002/14651858.CD006453.pub2
+
+In this systematic review, we summarise three studies in which oxcarbazepine and carbamazepine treatment were compared directly. We found that both drugs appear to be equally effective and to cause side effects equally often. Significantly fewer patients on carbamazepine developed nausea or vomiting during treatment.

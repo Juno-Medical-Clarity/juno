@@ -1,0 +1,308 @@
+# Smith Collection Transcript: RES0054
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi uhm ive just been a little bit worried that last the couple of months ive noticed that ive been getting more and more out of breath when ive been doing exercise and i know i got a brother who had a heart issue and im just really concerned that i have something wrong with my ticker just wanted to get it checked out you know
+
+Doctor: Uhm when did the shortness of breath start
+
+Patient: So this winter specifically like we havent been too active because of covid this year weve just been staying in the house all last year but with the snow id be shovelling snow whenever it fell and before i could be able to like 2 years ago be able to clear the driveway no problem but now even after half the driveway ive noticed im getting consisntely out of breath ive got this nasty cough and its prompted my wife to get me to call in shes a little bit worried
+
+Doctor: So its mostly on exertion it doesnt happen at rest is that correct
+
+Patient: Being out of breath no no
+
+Doctor: No ok ok and has this ever happened to you before
+
+Patient: Yeah about a year and a half ago we went down to toronto in order to see the cn tower and you know do tourist stuff and we tried we tried to climb a couple flights of stairs to do a little bit and i could not i always thought im pretty healthy pretty active but it really took the wind out of my sails so had to stop stoop over just couldnt do it
+
+Doctor: Uhm and how did you manage like how how was that treated at that time and how did you get better
+
+Patient: Oh i didnt do any i just attributed to being i dont know out of shape a little bit and i worked as a mechanic when i was younger i was pretty active but ever since retiring thought id keep up at least my stamina wont go away that quickly but chalked it up to being out of shape and went home
+
+Doctor: OK uhm so your symptom your shortness of breath seems to be getting worse right
+
+Patient: Yeah
+
+Doctor: OK any coughing with that
+
+Patient: Yeah yeah and not necessarily when i noticed it when i was shovelling the driveway but ive had a call for the last couple of years and usually in the morning i just bring up a little bit of gunk but most of my buddies have that just like a morning cough you know
+
+Doctor: Yeah and the gunk that you bring up what color is it
+
+Patient: uh yellow sometimes a little brown
+
+Doctor: OK and when did that start
+
+Patient: Oh its been going on last 10 years well to be honest since ive been like 30 but its been fairly consistent last 10 years id say
+
+Doctor: OK any blood that you bring up
+
+Patient: Not that ive noticed like bright red no nothing like that
+
+Doctor: OK any wheeziness
+
+Patient: Yeah yeah i noticed that when i was showing yeah when i was out of breath it sound sounded different sound different than being usually out of breath but it had to it sounded wheezy
+
+Doctor: OK any chest pain
+
+Patient: Yeah a little bit actually
+
+Doctor: Uhm at rest or
+
+Patient: Nothing nothing when im not moving
+
+Doctor: OK so the chest pain when did that start
+
+Patient: First noticed it this winter on the driveway but it wasnt like i know what they say about a heart attack supposed to like the crushing pain in your chest that moves up your neck nothing like that its like my lungs my throat like youre really really out of breath you know
+
+Doctor: OK so youre attributing it mostly to your shortness of breath then
+
+Patient: I think so i really hope this is my heart ive never had a heart attack
+
+Doctor: Yeah where in your chest is this chest pain happening like is it central is it more towards the left towards the right
+
+Patient: It was kind of both sides
+
+Doctor: OK
+
+Patient: It was was we all across my chest to be honest it was only the one time that was really struggling and i coughed up a bit but yeah
+
+Doctor: OK any pain in your calves or legs well after you walk a certain distance
+
+Patient: No no
+
+Doctor: No do you ever feel like your hearts racing
+
+Patient: Felt like my heart was racing after that much activity but no not usually
+
+Doctor: OK how about swelling in your limbs
+
+Patient: No nothing like that
+
+Doctor: OK any fainting spells or dizziness
+
+Patient: No never fainted in my life
+
+Doctor: OK any confusion memory loss
+
+Patient: No nothing like that
+
+Doctor: Headaches
+
+Patient: Headaches you know i do get headaches from time to time i associate them with stress but i havent been too stressed out recently so nothing in the last couple of years
+
+Doctor: OK any neck stiffness
+
+Patient: uh no
+
+Doctor: No ok any sensitivity to light or loud sounds associated with that headache
+
+Patient: No nothing like that
+
+Doctor: OK any weight loss
+
+Patient: No i wish
+
+Doctor: OK fevers
+
+Patient: No
+
+Doctor: Rashes
+
+Patient: You know i got these weird things on my head i think mainly because of the sun like these brown patches but that wouldnt be a rash would it
+
+Doctor: Id have to examine that closer if you think its associated with the sun it could be something like seborrheic keratosis but id have to see what they look like so we can take a look at that later if thats ok and so any changes in your vision or hearing
+
+Patient: No
+
+Doctor: No stuffy nose runny nose
+
+Patient: Had a bit of a cold couple months ago but no nothing recent
+
+Doctor: Sore throat
+
+Patient: Yeah a little bit after the cough i had a little bit of a sore throat but went away pretty quickly
+
+Doctor: OK change in smell or taste
+
+Patient: I havent been able to smell or taste too well for awhile
+
+Doctor: Whats awhile
+
+Patient: Ten years seven years its been more salt more spices on my food you know
+
+Doctor: OK ok any changes to your bowel habits
+
+Patient: Nope been regular all my life
+
+Doctor: Nausea vomiting
+
+Patient: No
+
+Doctor: OK joint pain muscle aches
+
+Patient: You know my knees been giving me trouble for awhile but nothing recent no
+
+Doctor: OK and are you otherwise healthy
+
+Patient: No got high blood pressure see the doc about that uhm high cholesterol see the doc about that and yeah i dont know got into a car crash my 40s broke my arm one time nothing else really
+
+Doctor: OK any surgeries
+
+Patient: uh i think i had my appendix out when i was yeah i had my appendix out when i was like 12
+
+Doctor: OK
+
+Patient: Never been under the knife since then
+
+Doctor: OK great have you been taking any medications for that high blood pressure
+
+Patient: Yeah docs got me on two blood pressure medications and one cholesterol medication
+
+Doctor: OK and do you take those frequently
+
+Patient: Yeah everyday
+
+Doctor: OK good any other medications
+
+Patient: No
+
+Doctor: Are you up to date with all your immunizations
+
+Patient: Jeez been a while since ive gotten immunization think i think so
+
+Doctor: OK once you turn 65 they usually give you shingshingrex for to prevent shingles and a pneumovax vaccine to prevent pneumococcal infections have you had those ones
+
+Patient: Nope
+
+Doctor: No ok so if youre interested in getting those we can discuss that at some point today as well
+
+Patient: OK
+
+Doctor: Do you have any allergies
+
+Patient: No
+
+Doctor: No ok any ok so you mentioned a family history of your brother having congenital heart disease any other heart diseases that run in the family
+
+Patient: Congenital whats that mean
+
+Doctor: Like something that youre born with
+
+Patient: No i dont think hes ever born thing he had a couple of heart attacks
+
+Doctor: Oh heart attacks ok sorry i must have misinterpreted that how old was he when he had his first heart attack
+
+Patient: Hes older me by five years but he had the first one when he was younger than i am now like 62 was the first one another one at 65
+
+Doctor: OK uhm did is he did they ever find a cause for his heart attack is he a healthy person
+
+Patient: Healthy hes healthy i you know i wouldnt call him too healthy of a guy either hes a hard liver lets call him that i have why it happened i think obviously its his diet man hes like a hog steaks butter bacon im  assuming thats what did him in
+
+Doctor: Oh yikes ok ok uh any other heart conditions that run in the family or other members of the family experiencing heart attacks
+
+Patient: Yep dad died young from a high heart attack he was he died younger than i am now he passed away at 66
+
+Doctor: Oh im sorry to hear that
+
+Patient: Oh its been years now it is what it is his grandmother had a stroke high blood pressure on my mom side high cholesterol on my mom side too but yeah awful heart attacks on my father side of the family
+
+Doctor: OK any other lung any lung conditions that run in the family
+
+Patient: None that come to mind
+
+Doctor: OK and do you smoke
+
+Patient: Yeah yeah i smoke
+
+Doctor: OK how much do you smoke
+
+Patient: I cut it back about half a pack a day for the last two years now
+
+Doctor: OK and before that
+
+Patient: I was pretty much a pack a day maybe well when it was bad 2 packs a day but ive been smoking yeah since about when do they start working at the shop like 17 everyone there smokes
+
+Doctor: Oh ok wow yeah well then but its good that you cut down thats good do you do any other recreational drugs like marijuana cocaine heroin anything
+
+Patient: Ill smoke weed at the shop every friday but im not huge fan of it to be honest
+
+Doctor: OK and how much do you smoke every friday
+
+Patient: Both are about four joints seven people so i dont know what that is half a gram
+
+Doctor: Half a joint ok yeah ok and do you drink
+
+Patient: Oh yeah
+
+Doctor: How much do you drink
+
+Patient: See christmas was about the last time i went out like a beer or two uhm weekends but when families in town will well go whole hog ill drink maybe 20 beer
+
+Doctor: Oh ok ok and yeah you should have you thought about cutting that down
+
+Patient: You gotta keep up with the family you know you cant let them embarrass you like that
+
+Doctor: Lets i understand that but also you know its important to take care of your health and slow and steady wins the race right
+
+Patient: Ill keep that in mind doc ill keep that in mind
+
+Doctor: Yeah and hows your diet
+
+Patient: Been pretty good the wifes been on a on a health food craze last five years vegetables i dont know i eat whatever she cooks basically
+
+Doctor: OK uhm thats good and in terms of exercise do you get to move around
+
+Patient: I used to be pretty active i used to bike around but cause of covid ive just been indoors all this time so no not much
+
+Doctor: OK ok well its good to go out for a walk once in awhile i think thats allowed during covid as long as youre being safe and who do you live with at home
+
+Patient: I live with my wife
+
+Doctor: OK any children
+
+Patient: Yeah ive got three kids one for my first marriage two with the mrs right now
+
+Doctor: OK and do you get to see them often
+
+Patient: Yeah daughter lives in town and get to see her and grand kid a bit the other boy works in fort mac and my oldest son hes out east
+
+Doctor: OK ok and have you had any contact with people whove been sick recently
+
+Patient: No weve been keeping entirely to ourselves you can get our groceries ordered to the house
+
+Doctor: OK and how about travel any recent travel
+
+Patient: No
+
+Doctor: No ok uhm and then lastly just wanted to ask you because you have been smoking for a long time have you ever been diagnosed with something called copd
+
+Patient: Doesnt ring a bell
+
+Doctor: No ok have you ever had any pulmonary function tests or chest xrays done in the past
+
+Patient: Chest xray i think they did a chest xray after the car crash
+
+Doctor: OK
+
+Patient: But i cant think of getting one recently no
+
+Doctor: OK alright well those are all the questions that i had for you did you have any questions for me
+
+Patient: So this is a hard like should i be worried
+
+Doctor: Yeah you know what it sounds from what youre telling me it sounds like you have shortness of breath on exertion and it sounds like you have a cough with still producing some phlegm it doesnt seem like you have any systemic symptoms of infection so im not too worried about that and then in terms of your heart you mentioned you had that chest pain once but it really does sound more like a lung problem to me than a heart problem to me right now but of course well do all the necessary investigations to rule out any heart stuff but right now im thinking it could be something called copd chronic obstructive pulmonary disorder because of your smoking history uhm so well start with doing a pulmonary function test and chest xray and i well try to go from there if it is copd well likely put you on a like a puffer for that a like a lot a short or long acting beta agonist thats what its called so if your symptoms dont get better with that well do other investigations to try to figure out what this is how does that sound
+
+Patient: Sounds great doc thanks a million
+
+Doctor: Alright great thank you
+
+Patient: Have a good one

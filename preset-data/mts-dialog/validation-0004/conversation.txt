@@ -1,0 +1,3 @@
+Doctor: Have you been experiencing any mental difficulties or confusion?
+Patient: No. Doctor: Any hallucinations? Are you seeing hearing thing that is not real?
+Patient: No.

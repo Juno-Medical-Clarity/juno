@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1048
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What type of surgery have you had in past? Anything big or small? I had a C section for my kiddo and one D and C. Okay.

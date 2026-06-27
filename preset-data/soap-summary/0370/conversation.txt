@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0370
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you had similar symptoms before? No never like this. Any other complaints you have had in the past? Just some knee pain issues. Okay, so chronic knee pain. Yes.

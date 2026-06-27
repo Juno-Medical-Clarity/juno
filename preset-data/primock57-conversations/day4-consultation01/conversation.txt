@@ -1,0 +1,225 @@
+# PriMock57 Consultation Transcript: day4_consultation01
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Doctor: [unintelligible] Hello.
+
+Patient: Hello. Can you hear me?
+
+Doctor: Yeah, I can. Can you hear me?
+
+Patient: [unintelligible]
+
+Doctor: Hi, my name is Doctor Gohill. I'm one of, Hi, I'm one of the physicians that works at Babylon.
+
+Patient: [unintelligible]
+
+Doctor: Are you in a quiet and private space to talk?
+
+Patient: I am, yes.
+
+Doctor: Good, and can I confirm your name and date of birth please?
+
+Patient: Uh, it's Joe Bloggs. It's the seventh, of June, nineteen seventy four.
+
+Doctor: Seventy four, and how old does that make you?
+
+Patient: Sorry, fifty four [unintelligible]. I'm, suppose I'd be fifty three, well, yeah.
+
+Doctor: Perfect. Great, and it says here, um, it says you're having chest discomfort. Is that correct?
+
+Patient: That, that is correct, yes. I'm experiencing discomfort in my chest.
+
+Doctor: [unintelligible] OK, can you tell me a little bit more about your chest discomfort? When it started, and how you're feeling at the moment?
+
+Patient: Sure, um, it's been ongoing for, a couple of hours now. Um, I'd say that it's come on, quite suddenly. I was, digging in the garden. And it, if I had to describe where it is, it's somewhere in the middle of my chest. And it's more, it feels like it's pressure, [unintelligible] discomfort, than more, than a pain. Um, if I, had to [unintelligible]. If I, if I had to describe what [unintelligible] discomfort feeling, it's, it's like someone's sitting on my chest. [unintelligible].
+
+Doctor: OK.
+
+Patient: And. Yeah.
+
+Doctor: Great. So, you've talked about your chest. Are you still in, discomfort at the moment?
+
+Patient: Uh, yes I do smoke, yeah.
+
+Doctor: OK, and when it started, how would you rate it out, out of ten?
+
+Patient: Say about, say, seven out of ten.
+
+Doctor: OK, [unintelligible].
+
+Patient: Ten being, very sort of, unbearable and severe pain. Seven is. Quite manageable, well, it's quite [unintelligible].
+
+Doctor: OK, and how about now?
+
+Patient: Um, it's still the same.
+
+Doctor: OK, and tell me before this happened, what were you doing?
+
+Patient: Yeah. Um, I was, [unintelligible] relaxing. My wife, and, we're watching Jeremy Kyle.
+
+Doctor: OK.
+
+Patient: [unintelligible] still go out into the garden.
+
+Doctor: OK, and how often do you do gardening?
+
+Patient: Um, every other week. So, fortnightly.
+
+Doctor: OK, and are you normally fit and well? So, are you [unintelligible] normally OK to garden as you would?
+
+Patient: Uh, yes.
+
+Doctor: Great, and apart from this, do you have any other medical problems?
+
+Patient: Um, high cholesterol, and, I've had hypertension, [unintelligible] hypertension.
+
+Doctor: OK, so that's high blood pressure, and high cholesterol. Do you take any medicines for that?
+
+Patient: [unintelligible] No, I don't take any medicine.
+
+Doctor: OK, and are you allergic to anything?
+
+Patient: Uh, [unintelligible].
+
+Doctor: OK. So, let me summarise what you've told me already. You were gardening a few hours ago, and you experienced chest discomfort, which was roughly seven out of ten.
+
+Patient: [unintelligible]
+
+Doctor: And it feels more like someone's sitting on your chest, as opposed to pain.
+
+Patient: Yeah. Yes, that's great.
+
+Doctor: And apart from this, have you noticed anything else unusual, specifically with your breathing?
+
+Patient: Uh, yes I have. Um, I've got shortness of breath. And I feel slightly, light-headed.
+
+Doctor: OK, and is that getting worse or better?
+
+Patient: Um, it's remained the same. Although, I would say recently I've noticed, in terms of sort of breathing, I've had, some difficulty climbing the stairs. And, if I have to sort of walk uphill, there's that sort of challenge as well.
+
+Doctor: And when you get short of breath, when you're walking up the stairs, have you noticed any pain?
+
+Patient: Um, no pain as such, but there's often calf pain and, leg swellings.
+
+Doctor: OK. So, let me confirm. You have the pressure at the moment, and you have shortness of breath, is that correct?
+
+Patient: That is correct, yes.
+
+Doctor: [unintelligible]. So, given what you've told me about your past medical history. I think it might be worth, you calling an ambulance.
+
+Patient: OK.
+
+Doctor: [unintelligible] get you to the hospital as soon as possible. Because, my concern is, it might be something to do with your heart. So, While [unintelligible] to you, I will ring an ambulance. Who, should come to your address.
+
+Patient: Ohh, OK. Ohh right.
+
+Doctor: But in the meantime, I think we should stay on the phone. So I can gather some more information, that we can give to the paramedics. Is that OK?
+
+Patient: OK. Um, should I, be concerned about anything?
+
+Doctor: It's nothing to worry about at the moment, but, given that you've got high blood pressure and high cholesterol, and you've got some chest pain. I'm always worried about the heart first, before anything else.
+
+Patient: [unintelligible], OK, [unintelligible].
+
+Doctor: [unintelligible], and we, and we need to look after your heart before anything else. So, apart from this [unintelligible] light-headedness, and this chest discomfort, have you [unintelligible] noticed anything else unusual?
+
+Patient: Um, nothing, else unusual. Um, I'm not sure if I spoke to you about nausea? I've noticed nausea, but no vomiting, yet.
+
+Doctor: Did you have anything to eat or drink this morning?
+
+Patient: Um, no.
+
+Doctor: And you feel, still feel nauseous at the moment?
+
+Patient: I have, yeah. I am, yeah.
+
+Doctor: So, I have a couple of other questions to ask you, and I'm gonna reel them off. So, apologies for not letting you talk very much.
+
+Patient: OK. No, that's fine.
+
+Doctor: Have you noticed this pressure, radiating to your head?
+
+Patient: Uh, not to my head, no.
+
+Doctor: And how about to your left, or right arm?
+
+Patient: Uh, yes. There is some pain in my left shoulder and arm.
+
+Doctor: And does that pain go anywhere else? To your left arm, or to your back?
+
+Patient: Uh, no.
+
+Doctor: And, have you noticed any problems swallowing, or drinking water?
+
+Patient: Uh, no.
+
+Doctor: Good. And have you noticed any problems going to the loo?
+
+Patient: Uh, no problems going to the loo.
+
+Doctor: And you're normally fit and well, apart from the two things you told me about?
+
+Patient: Um. Yes, however, there's some problems just, performing daily activities. Um, like I said, with the difficulties climbing up the stairs and going uphill. Um, I try to limit my daily activity to just moving around the house, nothing too strenuous.
+
+Doctor: [unintelligible] And, do you live at home with your wife at the moment?
+
+Patient: Uh, yes.
+
+Doctor: OK. I would suggest, if she's there, you let her know that, you'll both be having an adventure to the hospital today. So, she might need to get your things together.
+
+Patient: OK. Got it, OK.
+
+Doctor: The ambulance should be there very soon. In the meantime, I would suggest that you stay calm, and have some water if you need to.
+
+Patient: OK.
+
+Doctor: Don't take any of those medications.
+
+Patient: Right. OK.
+
+Doctor: And the paramedics should be with you, very shortly.
+
+Patient: All right.
+
+Doctor: So, when they do come, there are two things they will be worried about.
+
+Patient: OK.
+
+Doctor: The one is your chest, so, your heart. And the second is your breathing, which is your lungs.
+
+Patient: Yes. OK.
+
+Doctor: So, they will give you lots of things to breathe through, and attach things to your arms. Just to check, things like your blood pressure, and your heart rate. So, don't be worried.
+
+Patient: OK.
+
+Doctor: And, when you get to the hospital, you'll be seen by a consultant, pretty, pretty much immediately.
+
+Patient: Yeah, [unintelligible].
+
+Doctor: [unintelligible]
+
+Patient: Reassuring, I'm getting [unintelligible].
+
+Doctor: Sure. So, I will let the paramedics do their job. And when, you're at the hospital, the consultant would normally call me within a couple of minutes, to let me know how everything's going.
+
+Patient: Ohh, that's great.
+
+Doctor: Great. I'll um, book another appointment, to see you soon. Uh, [unintelligible], once you've had your adventure.
+
+Patient: OK. That is perfect. Thank you so much.
+
+Doctor: No problems. Do you have any questions for me?
+
+Patient: Uh, no questions. I'll just await the ambulance.
+
+Doctor: Great, thank you very much.
+
+Patient: No problems. I'll speak to you soon.
+
+Doctor: Bye bye.
+
+Patient: Thank you so much. Bye.
+
+Doctor: [unintelligible]

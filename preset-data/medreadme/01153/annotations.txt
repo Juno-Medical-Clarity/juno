@@ -1,0 +1,8 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'dexamethasone'
+  [15:16] 'abbr-medical' -> 'BPD'

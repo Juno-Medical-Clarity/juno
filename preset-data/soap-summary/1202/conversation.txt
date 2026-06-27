@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1202
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi Gina, how are you? I wish, I was in better state but yeah, I am okay. I understand. So, you are here for your follow up post your surgeries, right? Yes, I am. Alright, I see you recently had your left breast removed due to cancer. Correct. And then you also had your right knee replaced due to arthritis in your kneecap, right? Yeah, I had arthritis in my knee bone so I got it replaced. Hm.

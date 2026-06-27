@@ -1,0 +1,17 @@
+Objective: To evaluate the efficacy and safety of antiviral antibody therapies and blood products for the treatment of novel coronavirus disease 2019 (covid-19).
+Design: Living systematic review and network meta-analysis, with pairwise meta-analysis for outcomes with insufficient data.
+Data sources: WHO covid-19 database, a comprehensive multilingual source of global covid-19 literature, and six Chinese databases (up to 21 July 2021).
+Study selection: Trials randomising people with suspected, probable, or confirmed covid-19 to antiviral antibody therapies, blood products, or standard care or placebo.
+Paired reviewers determined eligibility of trials independently and in duplicate.
+Methods: After duplicate data abstraction, we performed random effects bayesian meta-analysis, including network meta-analysis for outcomes with sufficient data.
+We assessed risk of bias using a modification of the Cochrane risk of bias 2.0 tool.
+The certainty of the evidence was assessed using the grading of recommendations assessment, development, and evaluation (GRADE) approach.
+We meta-analysed interventions with ≥100 patients randomised or ≥20 events per treatment arm.
+Results: As of 21 July 2021, we identified 47 trials evaluating convalescent plasma (21 trials), intravenous immunoglobulin (IVIg) (5 trials), umbilical cord mesenchymal stem cells (5 trials), bamlanivimab (4 trials), casirivimab-imdevimab (4 trials), bamlanivimab-etesevimab (2 trials), control plasma (2 trials), peripheral blood non-haematopoietic enriched stem cells (2 trials), sotrovimab (1 trial), anti-SARS-CoV-2 IVIg (1 trial), therapeutic plasma exchange (1 trial), XAV-19 polyclonal antibody (1 trial), CT-P59 monoclonal antibody (1 trial) and INM005 polyclonal antibody (1 trial) for the treatment of covid-19.
+Patients with non-severe disease randomised to antiviral monoclonal antibodies had lower risk of hospitalisation than those who received placebo: casirivimab-imdevimab (odds ratio (OR) 0.29 (95% CI 0.17 to 0.47); risk difference (RD) -4.2%; moderate certainty), bamlanivimab (OR 0.24 (0.06 to 0.86); RD -4.1%; low certainty), bamlanivimab-etesevimab (OR 0.31 (0.11 to 0.81); RD -3.8%; low certainty), and sotrovimab (OR 0.17 (0.04 to 0.57); RD -4.8%; low certainty).
+They did not have an important impact on any other outcome.
+There was no notable difference between monoclonal antibodies.
+No other intervention had any meaningful effect on any outcome in patients with non-severe covid-19.
+No intervention, including antiviral antibodies, had an important impact on any outcome in patients with severe or critical covid-19, except casirivimab-imdevimab, which may reduce mortality in patients who are seronegative.
+Conclusion: In patients with non-severe covid-19, casirivimab-imdevimab probably reduces hospitalisation; bamlanivimab-etesevimab, bamlanivimab, and sotrovimab may reduce hospitalisation.
+Convalescent plasma, IVIg, and other antibody and cellular interventions may not confer any meaningful benefit.

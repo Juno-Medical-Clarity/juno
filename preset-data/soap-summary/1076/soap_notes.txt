@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1076
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Allergies: Patient is allergic to Naprosyn.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment information provided.)
+
+Plan:
+- (No plan information provided.)

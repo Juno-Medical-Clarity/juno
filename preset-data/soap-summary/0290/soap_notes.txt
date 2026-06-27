@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0290
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient walks around the mall daily for exercise.
+- Patient has a food diary.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- Patient was asked to provide food diary sheets.

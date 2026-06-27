@@ -1,0 +1,4 @@
+Doctor: Hi again! How has your acne been since you started the spironolactone?
+Patient: It has been improving.
+Doctor: Have you experienced any increased thirst, mood changes or unusual fatigue?
+Patient: No.

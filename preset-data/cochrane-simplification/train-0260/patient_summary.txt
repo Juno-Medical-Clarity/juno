@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0260  |  gem_id: gem-cochrane-simplification-train-261  |  doi: 10.1002/14651858.CD009175.pub2
+
+This review assesses the value of clinical symptoms and signs in helping doctors and nurses decide whether a child or young person might have a chest infection caused by M. pneumoniae. We analysed data from seven studies including a total of 1491 children, all of which were conducted in hospital settings. We found that the presence of wheeze makes M. pneumoniae slightly less likely and the presence of crepitations (i.e. crackles heard on listening to the chest) makes M. pneumoniae slightly more likely. However, these clinical features are not sufficiently helpful to guide decisions about prescribing antibiotics for possible M. pneumoniae infections. Based on the results of two studies, the presence of chest pain doubles the likelihood of M. pneumoniae. However, further research in this area is needed, particularly in general practice and outpatient populations.

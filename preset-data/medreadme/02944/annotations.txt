@@ -1,0 +1,8 @@
+source:      wiki
+side:        simple
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [17:19] 'medical-jargon-google-easy' -> 'vaginal mucus'
+  [21:22] 'medical-jargon-google-easy' -> 'semen'

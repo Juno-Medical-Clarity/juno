@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1282
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Constipation, foreign body impaction affecting right nostril.
+- Severity: Not specified.
+- Duration: Not specified.
+- Associated symptoms: Not specified.
+- Relevant medical history: Not mentioned.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Concerns: Inquiries about problems related to lungs and constipation.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnosis provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned.)

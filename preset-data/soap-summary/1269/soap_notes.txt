@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1269
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient does not smoke cigarettes or use any tobacco products.
+- The patient does not drink alcohol.
+- The patient does not use any recreational drugs or other substances.
+- The patient has three children.
+- The patient's children do not have any health conditions.
+- The patient is married.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessments provided.)
+
+Plan:
+- (No plan provided.)

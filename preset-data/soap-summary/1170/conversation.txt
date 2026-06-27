@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1170
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had surgery? No, not that I can remember. No gallbladder or appendix removal, c sections, or joint replacements? Nope, never had anything done.

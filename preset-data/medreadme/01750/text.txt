@@ -1,0 +1,1 @@
+Our analysis highlights informative localization mutants that can be used to further deconstruct the requirements for C. crescentus development, and addresses the general requirements for protein localization in developmental processes and for engineering differentiation in biological systems.

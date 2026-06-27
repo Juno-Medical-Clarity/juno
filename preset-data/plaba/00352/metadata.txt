@@ -1,0 +1,5 @@
+pmid:        34581763
+question:    27
+adaptation:  adaptation1
+title:       Characteristics and Outcomes of Patients With Cerebral Venous Sinus Thrombosis in SARS-CoV-2 Vaccine-Induced Immune Thrombotic Thrombocytopenia
+sentences:   13

@@ -1,0 +1,21 @@
+Doctor: Hello sir, it's been a while since your last visit. How have you been?
+Patient: Hello doctor, yes, I have come a long way. I guess last time I was here was in two thousand and two if I am not wrong. Was does your system say?
+Doctor: You are right! It was August second of two thousand and two to be very precise.
+Doctor: Please confirm for the records, you are a white married man and must be forty nine years old now. Am I right?
+Patient: You got it all right doctor!
+Doctor: Are you still working in that airplane company?
+Patient: Yes sir, still with Alaska Airlines but I have been promoted and work as a plane mechanic.
+Doctor: That is so nice! Good for you man! So, tell me how can I help you today? What brought you to our dermatology department today?
+Patient: I'm having pain in my stomach on the right side and down here.
+Doctor: Is it only on the right side or anywhere else?
+Patient: It is on both sides and now I can feel it on the middle part of my left thigh as well.
+Doctor: Tell me more about it. How did it start? When did you first notice it?
+Patient: It's been going on and off. It was not there for a while, but now it is like back again mainly on my tummy, down here. It is painful when I touch it. At first, I thought maybe I'm having shingles.
+Doctor: When did you notice it?
+Patient: It all started before the holidays, I think one and a half months before the holidays. It is still going on for the past eight days in my tummy and the hips mainly on the right side.
+Doctor: Did you get any treatment for this? Any over the counter medicines?
+Patient: No, as I told you I thought it was shingles, but then there was no change in the skin, no rashes, nothing. I was not sure what to take.
+Doctor: Okay, do you bathe every day?
+Patient: Yes, I do but I try to use as little soap as possible.
+Doctor: Okay, here is what I think, all your symptoms are pointing towards hyperesthesia. I would like to run some tests to find the underlying cause and then we will start the treatment. A nurse will come and take you to the lab. Does this sound good to you?
+Patient: Yes.

@@ -1,0 +1,4 @@
+Doctor: Do you have any medical conditions that run in your family that I should know about, ma'am?
+Patient: Um, yeah, my dad had prostate cancer.
+Doctor: What about your mother, or the rest of your family?
+Patient: Um, my mom's brother had Hodgkin's disease, melanoma, and prostate cancer.

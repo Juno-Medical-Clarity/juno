@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 1203
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a four-year-old boy who was playing at the park and jumped off the swing, resulting in an injury.
+- The mother reports that the son was seen in the ER for a deformed elbow.
+- No problems were claimed before the injury.
+- The family identifies as white.
+- The mother expressed concern and gratitude for the clinician's help.
+
+Objective:
+- ER report indicates a severe injury to the left distal humerus.
+- Diagnosis: Closed type three supracondylar fracture of the left distal humerus.
+- Physical exam findings: Severe puckering of the skin anteriorly with major ecchymosis in the same region.
+- Radial pulse was palpable.
+- Neurological exam shows ulnar, median, and radial nerves are intact.
+- Complete neurological exam could not be performed due to the potential for pain.
+
+Assessment:
+- Closed type three supracondylar fracture of the left distal humerus.
+
+Plan:
+- Follow-up on neurological status and pain management.
+- Further evaluation and management of the fracture as necessary.
+- Provide support to the family regarding the child's condition and treatment plan.

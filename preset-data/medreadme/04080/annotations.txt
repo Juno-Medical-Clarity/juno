@@ -1,0 +1,12 @@
+source:      pnas
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'expression'
+  [6:8] 'medical-jargon-google-hard' -> 'Hox5 genes'
+  [24:26] 'medical-jargon-google-easy' -> 'embryonic stages'
+  [29:31] 'medical-jargon-google-hard' -> 'Hoxa5 single'
+  [32:36] 'medical-jargon-google-hard' -> 'Hox5 AabbCc compound mutants'
+  [42:44] 'medical-jargon-google-hard' -> 'alveolar myofibroblasts'

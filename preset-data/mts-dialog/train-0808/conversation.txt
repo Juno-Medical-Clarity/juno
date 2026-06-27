@@ -1,0 +1,8 @@
+Guest_family: Congestion and cough.
+Doctor: Oh, how long?
+Guest_family: It's been three weeks now.
+Doctor: Okay.
+Guest_family: He has been like this for so long, but nothing else.
+Doctor:  How about fever nausea vomiting diarrhea?
+Guest_family: No fever, no vomiting, nothing else.
+Doctor: Okay great.

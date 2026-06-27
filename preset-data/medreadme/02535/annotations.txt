@@ -1,0 +1,9 @@
+source:      pnas
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-hard' -> 'Kmt5c'
+  [9:11] 'medical-jargon-google-easy' -> 'thermogenic program'
+  [12:14] 'medical-jargon-google-easy' -> 'adipose tissues'

@@ -1,0 +1,5 @@
+pmid:        30335626
+question:    37
+adaptation:  adaptation1
+title:       Cognitive Effects of Perioperative Pregabalin: Secondary Exploratory Analysis of a Randomized Placebo-controlled Study
+sentences:   10

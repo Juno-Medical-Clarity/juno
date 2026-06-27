@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0319
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Retired due to disability
+- Symptoms started recently (exact symptoms not specified in the conversation)
+- Used to drink alcohol occasionally but stopped completely after symptoms started
+- No smoking or use of recreational or illegal drugs
+- Lives with wife and daughter in an apartment
+- No recent travel
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

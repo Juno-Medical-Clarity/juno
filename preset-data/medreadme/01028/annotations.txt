@@ -1,0 +1,11 @@
+source:      pnas
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [8:10] 'medical-jargon-google-hard' -> 'protein phosphorelay'
+  [12:15] 'medical-jargon-google-easy' -> 'expression of genes'
+  [22:23] 'medical-jargon-google-easy' -> 'intracellular'
+  [27:29] 'medical-jargon-google-easy' -> 'zoonotic pathogen'
+  [29:31] 'medical-jargon-google-easy' -> 'Brucella abortus'

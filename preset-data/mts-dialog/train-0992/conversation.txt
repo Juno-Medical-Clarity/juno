@@ -1,0 +1,6 @@
+Doctor: Do you drink, sir?
+Patient: No, I don't drink at all.
+Doctor: How about tobacco? Do you smoke?
+Patient: Well, yes.
+Doctor: How much do you smoke, sir?
+Patient: I smoke about a half a pack of cigarettes a day.

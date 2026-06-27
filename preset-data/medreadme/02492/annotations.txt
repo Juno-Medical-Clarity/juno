@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [2:4] 'medical-jargon-google-easy' -> 'in vitro'
+  [11:13] 'medical-jargon-google-easy' -> 'HIV sequences'

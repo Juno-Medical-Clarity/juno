@@ -1,0 +1,14 @@
+Doctor: What is your living status? Do you live alone or with family?
+Patient: I live with my boyfriend.
+Doctor: Do you smoke?
+Patient: Yes.
+Doctor: For how long you are smoking?
+Patient: Around ten years.
+Doctor: How many cigarettes do you take?
+Patient: Well, one pack of cigarettes lasts for around three days.
+Doctor: Do you drink?
+Patient: I do take beer.
+Doctor: How many do you drink a day?
+Patient: I take around six bottles once a week.
+Doctor: Are you working somewhere?
+Patient: I was working in a herbicide plant. There were so many layoffs because of this pandemic. I lost my job too.

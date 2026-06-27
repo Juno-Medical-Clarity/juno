@@ -1,0 +1,4 @@
+Doctor: Are you taking any medications for your pain?
+Patient: Yeah, occasionally.
+Doctor: Which one?
+Patient: Just a regular pain medicine.

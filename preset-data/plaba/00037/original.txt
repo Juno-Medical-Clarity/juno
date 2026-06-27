@@ -1,0 +1,10 @@
+Hyperkalemia is an electrolyte abnormality with potentially life-threatening consequences.
+Despite various guidelines, no universally accepted consensus exists on best practices for hyperkalemia monitoring, with variations in precise potassium (K+) concentration thresholds or for the management of acute or chronic hyperkalemia.
+Based on the available evidence, this review identifies several critical issues and unmet needs with regard to the management of hyperkalemia.
+Real-world studies are needed for a better understanding of the prevalence of hyperkalemia outside the clinical trial setting.
+There is a need to improve effective management of hyperkalemia, including classification and K+ monitoring, when to reinitiate previously discontinued renin-angiotensin-aldosterone system inhibitor (RAASi) therapy, and when to use oral K+-binding agents.
+Monitoring serum K+ should be individualized; however, increased frequency of monitoring should be considered for patients with chronic kidney disease, diabetes, heart failure, or a history of hyperkalemia and for those receiving RAASi therapy.
+Recent clinical studies suggest that the newer K+ binders (patiromer sorbitex calcium and sodium zirconium cyclosilicate) may facilitate optimization of RAASi therapy.
+Enhancing the knowledge of primary care physicians and internists with respect to the safety profiles of these newer K+ binders may increase confidence in managing patients with hyperkalemia.
+Lastly, the availability of newer K+-binding agents requires further study to establish whether stringent dietary K+ restrictions are needed in patients receiving K+-binder therapy.
+Individualized monitoring of serum K+ among patients with an increased risk of hyperkalemia and the use of newer K+-binding agents may allow for optimization of RAASi therapy and more effective management of hyperkalemia.

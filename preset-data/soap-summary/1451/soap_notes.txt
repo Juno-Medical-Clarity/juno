@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 1451
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Severe osteoarthritis in both knees, flexion contracture limitations, right knee pain worse than left knee, pain mostly after physical therapy, achy pain, stiffness in knees.
+- Severity: Severe osteoarthritis, worsening pain in the right knee.
+- Duration: Several months.
+- Associated symptoms: Stiffness all the time, pain when weight-bearing and moving around, but no pain while sitting or lying down.
+- Relevant medical history: Osteoarthritis in both knees.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Difficulty doing things due to knee pain, no pain with cold weather change, no trouble sleeping.
+
+Objective:
+- Physical examination findings: No swelling or redness noted, no warmth felt in the area, no radiating pain through the knees, no pain in the hips or back.
+
+Assessment:
+- Diagnoses: Severe osteoarthritis in both knees, flexion contracture limitations.
+- Clinical impressions: Pain in the right knee worse than left, stiffness, and pain associated with weight-bearing and movement.
+
+Plan:
+- Continue physical therapy and home exercises.
+- Monitor pain levels and continue to assess knee function.
+- Follow-up as needed to reassess symptoms and treatment effectiveness.

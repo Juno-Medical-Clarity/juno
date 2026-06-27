@@ -1,0 +1,228 @@
+# Smith Collection Transcript: RES0097
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How can i help you today
+
+Patient: Hi im im the mom of the patient and i just wanted to talk to you about the just about thomas here hes just been not hes just not been feeling well hes had this cough for the past three or four days and hes also had this stuffy nose and this this watery discharge yeah hes just not feeling good
+
+Doctor: OK i see and so the the cough you said started three or four days ago has the cough gotten any better or any stayed the same or gotten worse
+
+Patient: Gotten a bit worse i would say
+
+Doctor: Is he bringing up any sputum
+
+Patient: No
+
+Doctor: So has there been any blood
+
+Patient: No no
+
+Doctor: OK and has the cough interfered with sleep
+
+Patient: Yeah his cough is usually worse uhm at night
+
+Doctor: OK and you say that hes also had a runny nose what does the discharge look like
+
+Patient: Its just uh its watery
+
+Doctor: And this started three or four days ago as well
+
+Patient: A little a little after the uhm yeah actually around the same time around the same time yeah
+
+Doctor: OK has he had any uhm like difficulties breathing like saying that he feels one of the like the nostrils obstructed
+
+Patient: Hmmm he hasnt well hes just been breathing with his mouth open so thats what he does at night as well he also has this nasal voice right now probably because its its you know he has this stuffy nose but he hasnt really complained about it
+
+Doctor: Yeah has he had any pain like facial pain
+
+Patient: Uhm no not really
+
+Doctor: OK how about any changes to smell or loss of smell
+
+Patient: Yeah i dont think he can smell much right now
+
+Doctor: OK and uh did those did that start a few days ago as well
+
+Patient: Yeah yeah since hes been complaining of his stuffy nose
+
+Doctor: OK and has he had any headaches
+
+Patient: No but he has had a fever
+
+Doctor: OK how did you check it
+
+Patient: Yeah i did i did it was uh 39 last night
+
+Doctor: Alright its certainly a fever uhm  has he had any chills or night sweats
+
+Patient: Yeah hes but hes been feeling pretty chilly
+
+Doctor: OK
+
+Patient: Yeah hes wearing a couple a couple of layers at home still feels chilly and yeah he has alot of chills and definitely has a fever
+
+Doctor: Alright and has the fever been there the whole whole time if youre aware or has that kind of come and gone
+
+Patient: Uhm you know what i actually just checked yesterday so i dont know
+
+Doctor: Alright has he had a sore throat
+
+Patient: Yeah its usually worse in the morning i think its more of a i guess the post nasal drip you know with the with a runny nose its just its pretty bad in the morning
+
+Doctor: OK has he had any red eyes or or eye discharge or eye pain
+
+Patient: No no no
+
+Doctor: OK and has he had any shortness of breath
+
+Patient: No
+
+Doctor: How about any wheezing
+
+Patient: No
+
+Doctor: Any chest pain
+
+Patient: No
+
+Doctor: Any lightheadedness dizziness or fainting
+
+Patient: No
+
+Doctor: OK and does he mention anything about feeling as though his hearts racing
+
+Patient: No
+
+Doctor: OK and has he had any abdominal pain
+
+Patient: No
+
+Doctor: Any nausea or vomiting
+
+Patient: No
+
+Doctor: Any diarrhea or constipation
+
+Patient: No
+
+Doctor: How about any urinary problems like pain or or frequency
+
+Patient: No nothing like that he hasnt complained of anything like that
+
+Doctor: Has he had any skin changes or rashes
+
+Patient: No
+
+Doctor: And how about any muscle aches or joint pains
+
+Patient: Yeah yeah he definitely has that hes complaining a lot about muscle aches
+
+Doctor: OK and how has his energy been has he been fatigued
+
+Patient: Oh yeah he hasnt gone out to play he hasnt done anything hes just been lying in bed
+
+Doctor: OK and over the last several months has he had any weight loss
+
+Patient: No hes been gaining weight actually
+
+Doctor: OK no thats good certainly yeah at the age of 11 should be still gaining weight so thats good and has he been diagnosed with any medical conditions in the past
+
+Patient: Yeah he was diagnosed with uh cystic fibrosis when he was a he was a child four years old
+
+Doctor: OK and uh is he on uh like any medications for that
+
+Patient: Hes on he was on an antibiotic until the age of five uh that he had to take on regular basis but he is hes not really on any medications right now i know that there are a couple of new ones that are out there but those are very expensive
+
+Doctor: OK and has he had any exacerbations or hospitalizations
+
+Patient: uh yeah hes hes had about uh one hospitalization every two years
+
+Doctor: Alright and is he followed by a respirologist currently
+
+Patient: Yes yes yes
+
+Doctor: OK uhm and has there been like an increase in the sputum production or like worsening shortness of breath over these last few days
+
+Patient: No not really
+
+Doctor: OK and has he had any surgeries
+
+Patient: No
+
+Doctor: Does he have any allergies to medications
+
+Patient: Uhm sulfa drugs
+
+Doctor: And the reaction is
+
+Patient: Uhm he just gets a rash
+
+Doctor: OK is it are immunizations up to date
+
+Patient: Oh yeah yeah were very careful about that given his diagnosis hes got all the all the vaccines
+
+Doctor: Thats great thats really important for sure uhm and so i just wanted to ask about life at home a little bit so whos in the house and whos the primary caregiver for him
+
+Patient: Im the primary caregiver its just uh me him and my husband
+
+Doctor: OK and uh is he uh what grade is he in right now
+
+Patient: Hes in grade six
+
+Doctor: OK how is school going
+
+Patient: Schools going well its just the yeah the hospitalizations can sometimes be disruptive but its going well hes hes getting bs in his class hes doing well hes got a good group of friends
+
+Doctor: Excellent and have you had any concerns about about development or or his growth
+
+Patient: Uhm no
+
+Doctor: OK so meeting all milestones and
+
+Patient: Yeah
+
+Doctor: OK and in regards to uhm birth history were there any complications throughout pregnancy or or at birth
+
+Patient: Uhm no nothing at birth or during pregnancy but he did start having lots of respiratory infections which is when the pediatrician did that test i forget the name for the test and then they were uhm the uhm he was found to have cf
+
+Doctor: OK uhm and does anybody in the home smoke
+
+Patient: No
+
+Doctor: Or drink alcohol
+
+Patient: No
+
+Doctor: OK uhm and are there any pets in the home
+
+Patient: No
+
+Doctor: OK has he been around anybody whos been sick
+
+Patient: I dont i dont think so
+
+Doctor: OK and uh have you guys traveled anywhere
+
+Patient: No just been at home
+
+Doctor: OK uhm and has anybody in the else in the family have cystic fibrosis
+
+Patient: No no no no one else does but we got tested and we were both found my my husband and i were found out have the gene for it we were carriers
+
+Doctor: OK uhm i see and any any heart conditions or or other lung conditions that run in the family
+
+Patient: No nothing else
+
+Doctor: OK and were there any other symptoms that or anything else that you wanted to tell me that maybe i forgot to ask about
+
+Patient: Uhm no i was just uh im just worried about him uhm about his fever specifically its been high and i know that usually when he has these hospitalizations he presents pretty similarly so just wondering if he would need to be hospitalized again and if he needs antibiotics
+
+Doctor: Yeah for sure its its been uhm so its been three or four days but with a fever this high and his symptoms with uh having obstruction discharge uhm changes to smell or loss of smell it does sound like it could be bacterial and so i think it would be reasonable to possibly to start antibiotics in this case but well go through through a physical exam check some vitals and go from there
+
+Patient: OK ok sounds good thank you

@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0773
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Chest pain
+- Severity: Dull pain
+- Duration: Started a few days ago; pain lasts for a few minutes and comes and goes
+- Associated symptoms: No shortness of breath
+- Relevant medical history: Patient had abdominal surgery five days ago; no previous similar pain reported
+- Concerns: Patient inquires if the chest pain is related to recent surgery
+- Medications: Taken Advil for pain, which does not seem to help
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No clinician interpretation, diagnoses, or clinical impressions provided]
+
+Plan:
+- Run tests and get a CAT scan to evaluate the chest pain

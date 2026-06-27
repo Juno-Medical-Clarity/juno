@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0404
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Has the patient signed a do not resuscitate order? Guest_family: Yes, she has. Does she have a healthcare proxy or durable power of attorney? Guest_family: Yes, she has both.

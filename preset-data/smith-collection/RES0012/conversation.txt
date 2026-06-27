@@ -1,0 +1,282 @@
+# Smith Collection Transcript: RES0012
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: I cant i can barely breathe for like 2 days now and ive been coughing and been having like a little bit of pain in my chest
+
+Doctor: OK the pain in your chest uh can you point point out or can you describe the pain to me is that sharp or is it dull
+
+Patient: um its hard to say i havent really had this before um its more like it just kind of hurts just in the middle and it gets worse like when i cough and when i if i take like a really deep breath it will hurt yeah does that make sense
+
+Doctor: Yeah so the shortness of breath and chest pain they occurred simultaneously right on the same day like 2 days ago
+
+Patient: Yeah i mean now that i think of it i maybe started coughing a little bit earlier than that but when it got harder to breathe is pretty well around the same time that i started feeling more the pain
+
+Doctor: OK alright so lets focus on the coughing first are you coughing up any blood at all
+
+Patient: uh no i havent noticed any blood
+
+Doctor: OK and how about sputum
+
+Patient: I guess i guess it feels like theres some like mucus i dont know kind kind of like spit looking but maybe like thicker than that
+
+Doctor: OK is it yellow
+
+Patient: Yeah yeah yeah well yeah its creamy yellow
+
+Doctor: OK sure and are you wheezing with the cough
+
+Patient: I i dont think so
+
+Doctor: No ok um and is it is your shortness of breath worse with exertion
+
+Patient: I havent been doing much really cause ive just been so wiped out um till probably i guess its kind of im really you know havent been getting up very much im normally really active like i i train for triathlons and i im not like a couch potato right and i feel like ive been just kind of sitting down
+
+Doctor: OK um do you have the chest pain at rest as well or is it just with the coughing
+
+Patient: Like if i take a deep breath ill have it but no i dont think not not like right now not like just sitting here
+
+Doctor: OK and the coughing how often are you coughing
+
+Patient: Oh like it kind of varies i feel like i get up in the night kind of sweaty and ill cough for for a while and it itll keep me up and then during the day its like i might go you know a couple hours without but then ill cough and ill kind of keep going for a few minutes so its a lot like probably yeah i probably dont go more than like 2 hours without
+
+Doctor: OK ok and how far can you walk before you start feeling shortness of breath
+
+Patient: I mean i havent been walking very far like i i walked in here from the parking lot and that was fine but im tired
+
+Doctor: OK ok and i just want to ask you some other questions um jessica so have you had any fevers race recently
+
+Patient: I dont actually have a thermometer at home that works but i like i said when ive been getting up in the night coughing ive been like really hot and sweaty kinda gross like feel like i just i feel like soaked and but yeah i dont have a thermometer
+
+Doctor: um ok so these night events that youre describing are they more chills or night sweats
+
+Patient: Well i dont know it just feels like when you know when youre i dont like when youre a kid and you get really sick and your parent tells you have fever like i dont have an actual temperature
+
+Doctor: But do you feel hot
+
+Patient: I feel hot yeah
+
+Doctor: OK ok and have you lost any weight recently
+
+Patient: No i mean id like to but no no
+
+Doctor: OK and any changes in your vision
+
+Patient: uh no
+
+Doctor: Hearing
+
+Patient: No
+
+Doctor: Smell
+
+Patient: No
+
+Doctor: Any do you have like a stuffy nose runny nose
+
+Patient: Maybe a little little bit its been more the coughing thats thats bothered me so i havent thought that much about it
+
+Doctor: OK sorry you said your nose was stuffy or runny
+
+Patient: So its a little stuffy maybe a little
+
+Doctor: OK ok um and have you had any like pressure behind your eyes in your head
+
+Patient: No no no
+
+Doctor: OK no headaches
+
+Patient: No no
+
+Doctor: No dizziness or fainting spells
+
+Patient: Like i feel tired but i havent i dont know i havent like fainted
+
+Doctor: OK so youre tired do you feel weak at all like you cant move a certain limb
+
+Patient: Oh no that thats all fine
+
+Doctor: Thats all fine ok
+
+Patient: I havent like wiped out like i said
+
+Doctor: OK ok um do you get this shortness of breath or difficulty breathing when youre laying down
+
+Patient: I mean ive mostly been laying down lately um so yeah like i kinda have it all the time
+
+Doctor: All the time ok but its not worse when youre laying down or standing up
+
+Patient: Dont think its worse no
+
+Doctor: OK and have you noticed any swelling
+
+Patient: um i dont think so no
+
+Doctor: OK any palpitations like you feel like your hearts racing
+
+Patient: No
+
+Doctor: No um and then how about in terms of like your abdominal system any pain there
+
+Patient: Oh no nothing i mean its like a little sore just cause im coughing all the time but yeah but yeah not not like not anything like noticeable
+
+Doctor: OK and then how about your stools have they been normal
+
+Patient: Yeah yeah
+
+Doctor: And then how about your urine is that has everything been normal from that standpoint
+
+Patient: Yeah yeah
+
+Doctor: OK ok um and then have you had any issues with breathing or coughing in the past
+
+Patient: No i mean i like i said im really active i do a lot of like right ive been like training for a triathlon like i havent had any problems before
+
+Doctor: OK ok um any any past medical conditions that you know of
+
+Patient: uh i got like i am a type 1 diabetic
+
+Doctor: OK ok have you ever ok have you ever had a pulmonary function test in the past
+
+Patient: Well maybe when i was like kid or like a teenager
+
+Doctor: And any recent chest xrays ecgs any other investigations youve done so far
+
+Patient: No like i have been ive been really healthy
+
+Doctor: OK good and are you on any medications
+
+Patient: um like i take a my insulin
+
+Doctor: Yeah
+
+Patient: And like i take i take a statin is that what its called
+
+Doctor: OK is that because you have high triglycerides or like cholesterol
+
+Patient: uh i they just said cause i like had diabetes that i should probably start taking it
+
+Doctor: OK yeah alright
+
+Patient: Theres no like a big problem it was just you know my family doctor i think my my dad has diabetes and he he he had heart problems so like she also my family doctor knows my dad too so i dont know if that has something to do with it
+
+Doctor: OK ok and then yeah i guess i will talk about family history since you brought it up any lung issues in the family
+
+Patient: uh not that i know of like
+
+Doctor: OK
+
+Patient: Just i mean the heart like my dad had a heart attack i dont know if that counts as like its close to the lungs
+
+Doctor: How old was he
+
+Patient: um it wasnt that long ago he was like in his 60s
+
+Doctor: OK
+
+Patient: Yeah
+
+Doctor: OK um im gonna name a few things and you let me know if this is in your history ok in your
+
+Patient: Family history asthma
+
+Doctor: Maybe like my cousin but yeah not like my mom or dad
+
+Patient: OK cystic fibrosis
+
+Doctor: No
+
+Patient: OK alpha one antitrypsin deficiency
+
+Doctor: I dont think so no
+
+Patient: Pulmonary fibrosis
+
+Doctor: No no
+
+Patient: OK ok and are you up to date with all your immunizations
+
+Doctor: Like i i always i always got like the ones i was supposed to um i normally like normally where i go into work theres like a pharmacy outside and i would get my flu shot but this year its like im working from home i havent even been around there so i didnt get it this year but i have all the normal ones
+
+Patient: OK and then do you smoke jessica
+
+Doctor: No
+
+Patient: No do you smoke marijuana
+
+Doctor: No no
+
+Patient: Any other recreational drugs
+
+Doctor: What like alcohol
+
+Patient: um no other than alcohol like cocaine or meth anything like that
+
+Doctor: Ah no
+
+Patient: OK no ok and yeah do you drink alcohol
+
+Doctor: Oh like if im like with friends maybe on a weekend
+
+Patient: OK ok
+
+Doctor: Couple drinks or something
+
+Patient: OK and have you been in contact with anyone whos been sick around you
+
+Doctor: Like i said i work i work from home so ive been seeing very many people um i like i geez i my my sister i saw my sister and like she i guess she works she works in like a retirement home
+
+Patient: OK
+
+Doctor: Like she i dont think she was sick
+
+Patient: OK ok is it possible that she was in contact with someone who may have been sick
+
+Doctor: I think its i mean its possible like thats what she does for her work right she works at like a retirement home so yeah possible
+
+Patient: OK and what what kind of work do you do jessica
+
+Doctor: Im an accountant
+
+Patient: OK and have you traveled anywhere recently i know with coviobviously thats hard
+
+Doctor: I wish i wish but you know i havent been anywhere like i said ive just been at home
+
+Patient: OK um in particular have you been in a country where tb is endemic and have you been in any of those countries in the past like 5 to 10 years
+
+Doctor: I dont know like ive been to the like the states before covii i dont i didnt really havent traveled anywhere cool in a long time
+
+Patient: OK ok um so just kind of going through what it could be that you have right now im thinking
+
+Doctor: A few things and we kind of like to go through and make sure were not missing anything so in terms of like vascular stuff it could be something like like chf or pulmonary embolism and that stands for congestive heart failure but youre very young you seem like youre very healthy so thats probably lower on our differential obviously
+
+Patient: OK yeah hopefully
+
+Doctor: An infection would be the biggest one right now with the cough with it seems like you have chills and night sweats yeah so would have to do more in terms of taking your temperature and see if you can do like more
+
+Patient: Work up like a chest xray to see whats happening in there um autoimmune stuff could be like sarcoidosis but unlikely cause it seems like this is an acute issue for you
+
+Doctor: See i never come in besides like because i you know need my insulin i never even go to the i didnt even want to come in and just like it wasnt going away
+
+Patient: Yeah yeah and then other things like coppulmonary fibrosis and like like cancer stuff is super
+
+Doctor: Low on the differential right now so yeah so um so yeah so for right now well start we can start by doing some blood work first i do a physical exam of course and then from there we would kind of do some blood work to see if your white blood cell count is high and then we can do a chest xray to see if there is like a consolidation if theres pneumonia or you know or or anything viral um do you have any questionsanything that you wanted to add that i missed
+
+Patient: I dont think i dont think so um yeah i just hope i can get feeling better hope its not anything serious like i i think yeah i just hope its like i hope like you said its like i got like an infection or something and it will just be gone soon
+
+Doctor: Yeah yeah it does sound like it from the timeline like you started coughing two days ago and then the difficulty breathing or shortness of breath also two days ago and then the chest pain just seems like its from you coughing a lot
+
+Patient: It can do that
+
+Doctor: Yeah
+
+Patient: OK yeah
+
+Doctor: Yeah ok so i guess we will see you at our follow up and after all of these investigations are done

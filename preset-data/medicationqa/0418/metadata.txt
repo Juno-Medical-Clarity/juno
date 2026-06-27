@@ -1,0 +1,5 @@
+drug_focus: calcium and alendronate
+question_type: Interaction
+section_title: DRUG INTERACTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a24fd39c-34a7-4de2-9439-781e612189ca
+sample_id: 0418

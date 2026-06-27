@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1098
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No health issues reported on mother's or father's side.
+- The patient reports that their family is a "pretty healthy family."
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned.)

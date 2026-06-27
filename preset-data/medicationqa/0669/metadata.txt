@@ -1,0 +1,5 @@
+drug_focus: erythromycin ointment
+question_type: Indication
+section_title: INDICATIONS AND USAGE:
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a0353c10-48c9-4d2a-8047-56ea68ace956&audience=consumer
+sample_id: 0669

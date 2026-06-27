@@ -1,0 +1,15 @@
+source:      elife
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Atoh1'
+  [7:9] 'medical-jargon-google-easy' -> 'neural circuits'
+  [10:11] 'medical-jargon-google-easy' -> 'hypoxic'
+  [12:13] 'abbr-medical' -> 'rRL'
+  [15:16] 'medical-jargon-google-easy' -> 'hypercapnic'
+  [17:18] 'abbr-medical' -> 'RTN'
+  [19:20] 'medical-jargon-google-hard' -> 'chemoresponses'
+  [25:26] 'medical-jargon-google-easy' -> 'Atoh1'
+  [32:33] 'medical-jargon-google-easy' -> 'neonatal'

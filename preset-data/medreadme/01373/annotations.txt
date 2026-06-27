@@ -1,0 +1,16 @@
+source:      plos_pathogens
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'transcriptional'
+  [4:5] 'medical-jargon-google-easy' -> 'phenotype'
+  [9:10] 'medical-jargon-google-easy' -> 'effector'
+  [13:14] 'medical-jargon-google-easy' -> 'HIV'
+  [16:20] 'medical-jargon-google-easy' -> 'CD8 + T cells'
+  [22:27] 'medical-jargon-google-hard' -> 'HLA - B * 35'
+  [31:34] 'medical-jargon-google-easy' -> 'CTLA - 4'
+  [36:37] 'medical-jargon-google-easy' -> 'Eomes'
+  [38:41] 'medical-jargon-google-easy' -> 'blimp - 1'
+  [43:47] 'medical-jargon-google-hard' -> 'T - bet expression'

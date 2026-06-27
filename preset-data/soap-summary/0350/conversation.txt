@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0350
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Tell me, what's going on? Guest_family: She is complaining of weakness on the right side of her face. And I feel the right side is drooping. Okay, let me look at it.

@@ -1,0 +1,9 @@
+Doctor: I see here that Doctor-
+Patient: Yes, Doctor X referred me. My thyroid is an absolute mess. I have never been in so much pain in my seventy one years.
+Doctor: I'm so sorry to hear that. I hope we're able to get you the care that you need.
+Patient: I've been coughing up a storm. It's gotten to be way too enlarged.
+Doctor: It's good that you're here today to get the surgery rolling.
+Patient: I signed the paperwork and everything.
+Doctor: I'll go over the risk and benefits one more time. Any questions for me?
+Patient: When is the earliest I can get this done again?
+Doctor: Given your symptoms, I'd like to get you in in the next few days.

@@ -1,0 +1,228 @@
+# Smith Collection Transcript: RES0049
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Yeah nice to meet you i ive been having just over the last week my cough thats been getting worse and i had a fever a couple of nights and just yesterday i noticed that i started having a loss of taste and smell so that got me really worried
+
+Doctor: OK so yeah lets rewind a little bit the cough you said started a couple of weeks ago so would that be about 2 weeks three weeks
+
+Patient: I would say last week so like 7 seven days ago
+
+Doctor: Seven days ago ok so that started seven days ago and then when did the fever start
+
+Patient: The fever i hasnt been constant but ive like had some nights where i just feel really chilly and then during the day sometimes even getting these chills ive been recorded at a temperature but i think ive had a fever at least three times in the last week
+
+Doctor: OK so you havent actually taken your temperature but it you just feel like you have chills
+
+Patient: Yeah
+
+Doctor: OK we could take your temperature today and then the loss of smell and taste do they both happen at the same time
+
+Patient: I think the taste happened like before but that was just yesterday and then yesterday morning like at breakfast i couldnt really taste anything and then continued during lunch and dinner but smell i kind of lost around the evening
+
+Doctor: OK
+
+Patient: Yeah all just started yesterday
+
+Doctor: OK um alright so lets go back to the cough and has it been constant since it started
+
+Patient: Yeah its been pretty constant its been getting worse especially like in the last few days im mainly coughing like before i was coughing mainly at night but now im coughing throughout the day
+
+Doctor: OK um so yeah you mentioned possibly a trigger would be like time of day at night or did you notice any other triggers like you know the cold air or dust or anything at home that could be potentially triggering your cough
+
+Patient: uh no not really like ive lived in the same place for awhile no new changes and ive been barely going outside so i dont think there are any triggers
+
+Doctor: OK and in terms of the quality of your cough is that would you say its harsh barky
+
+Patient: Uhm i would just say its like kind of harsh at times but mainly its a dry cough like im not bringing anything up
+
+Doctor: OK ok and then you said dry cough so no sputum or blood right
+
+Patient: No
+
+Doctor: OK have you ever experienced anything like this in the past
+
+Patient: Not the loss of taste and smell but like the other stuff when i just had a cold or flu like symptoms previously but the taste and smell is something completely new
+
+Doctor: OK and then um have you experienced any shortness of breath
+
+Patient: um not really no
+
+Doctor: No ok how about we wheeziness
+
+Patient: No
+
+Doctor: Chest pain
+
+Patient: No chest pain
+
+Doctor: OK uh experienced any weight loss recently
+
+Patient: No not that i know
+
+Doctor: OK how about fatigue
+
+Patient: I have been a bit tired in the last few days the fevers at night and morning just feeling a little bit crummy just not really energetic energetic to do anything
+
+Doctor: Yeah for sure
+
+Patient: Just been planner just sitting on the couch
+
+Doctor: OK any changes to your hair nails or skin like rashes
+
+Patient: No i havent noticed anything like that
+
+Doctor: OK you mentioned loss of smell do you have a runny nose or a stuffy nose
+
+Patient: I did have a runny nose earlier this week but thats kind of subsided other than that i dont really feel too much congestion ive been taking tylenol the tylenol cold so i dont know if that helped
+
+Doctor: OK how often are you taking the tylenol cold
+
+Patient: I just took it like for four days just before going to sleep in the last week
+
+Doctor: Oh i see ok ok and then any i do have a sore throat
+
+Patient: No
+
+Doctor: No ok how about any changes to your vision or hearing
+
+Patient: No nothing like that
+
+Doctor: Any pain or discharge in the eyes or ears
+
+Patient: No
+
+Doctor: OK do you ever feel like your hearts racing
+
+Patient: uh no not really
+
+Doctor: No ok and any swelling in your limbs
+
+Patient: uh no i dont think so
+
+Doctor: OK any dizziness or fainting spells
+
+Patient: No
+
+Doctor: OK confusion or memory loss
+
+Patient: No not that i can tell
+
+Doctor: OK any changes in your bowel habits like constant constipation or diarrhea
+
+Patient: Oh no not really
+
+Doctor: No no blood in the stool right
+
+Patient: No
+
+Doctor: OK any changes to your appetite
+
+Patient: um just maybe in like a little bit with the loss of smell and taste the food is not really the same in the last day last few days
+
+Doctor: Yeah yeah that makes sense any nausea or vomiting
+
+Patient: No
+
+Doctor: No ok and any changes in terms of urine
+
+Patient: No ive been peeing alright
+
+Doctor: OK good any major or a longstanding medical conditions or are you otherwise healthy
+
+Patient: No ive been fortunate otherwise healthy i had asthma as a kid but like i havent had to use the puffers for more than a decade
+
+Doctor: Oh ok ok and what triggers your asthma
+
+Patient: I think back then it was just when i did sports and i was running around a lot ive been fine for the last 10 years at least
+
+Doctor: OK ok thats good and any surgeries or hospitalizations in the past
+
+Patient: No
+
+Doctor: No ok any are you on any medications
+
+Patient: Currently just the other thing tylenol cold but other than that no other medications
+
+Doctor: OK not even other over the counter medications or herbal supplements
+
+Patient: No nothing like that
+
+Doctor: OK do you have any allergies
+
+Patient: um sometimes in the fall like i get a bit sniffly and but other than that i dont know of any allergies to any foods or medications
+
+Doctor: OK and how about immunizations are you up to date
+
+Patient: Yeah theyre all up to date
+
+Doctor: Any lung conditions or heart conditions that run in the family
+
+Patient: uh my father did recently have a heart attack at age of 58 i think he was he hes fine though but thats thats about it
+
+Doctor: OK um any cancers that run in the family
+
+Patient: um no i dont think so
+
+Doctor: OK and and do you smoke
+
+Patient: uh yeah yeah i do
+
+Doctor: OK how much do you smoke
+
+Patient: Probably i would say a pack a day
+
+Doctor: Pack a day ok for how long
+
+Patient: Ah probably since in my 20s so at least 10 years now
+
+Doctor: OK have you ever thought about cutting down
+
+Patient: Yeah especially with this pandemic going on its been ive been trying to cut down just because like i dont want to get the get coviand then you know my lungs are probably already weaker because of the smoking so ive been trying to cut down
+
+Doctor: Yeah for sure its good that youre trying to cut down we have resources to help you if you ever need them
+
+Patient: Yeah for sure
+
+Doctor: Do you do marijuana
+
+Patient: No no ive never tried marijuana
+
+Doctor: OK how about other recreational drugs
+
+Patient: No um besides alcohol nothing else
+
+Doctor: OK and then um i guess ill ask you about the alcohol uhm how much do you drink
+
+Patient: um um not that much id probably say like a few times a week when theres a game on i just grab a couple of beers but thats about it
+
+Doctor: OK uhm and where do you live right now
+
+Patient: Yes i just live just outside of london with my wife and daughter in a small townhouse
+
+Doctor: OK and anyone else at home sick
+
+Patient: No i ive kind of stayed away once i noticed some symptoms im just kind of just staying in my room not getting out i dont wanna make any of my families like
+
+Doctor: Yeah that makes sense and have you traveled to anywhere recently
+
+Patient: No umm i havent really traveled i do i do go to work though i havent in the last last week ive told them that ive been having these symptoms but other than that no traveling
+
+Doctor: OK uhm ok thats good those were all the questions i had for you today was there anything that you wanted to ask me or anything else that you wanted to discuss that i may have missed
+
+Patient: uh yeah i i that im just wondering like i could it be covii i dont know i dont know if someone in the office had it or yeah it was just basically worried about if i had covid
+
+Doctor: Yeah for sure thats definitely something that we need to rule out so we will be doing a coviswab on you and and you will hear back in about 24 to 48 hours with the results but regardless because your symptoms overlap with symptoms of coviespecially umm the loss of smell and taste we do recommend that you isolate for 14 days and that includes trying to isolate from family members as well so well thats where well start if its not coviit could be another viral illness thats going around at this time of year but well start with well start with these coviswabs how does that sound
+
+Patient: Yeah that sounds good ill ill let my work know and yeah hopefully it comes back negative but ill stay away from everyone till then
+
+Doctor: OK sounds great thank you
+
+Patient: Alright thank you so much

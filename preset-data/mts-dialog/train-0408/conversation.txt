@@ -1,0 +1,53 @@
+Doctor: Any sudden weight gain or loss?
+Patient: No.
+Doctor: Any headaches, nose bleeds, coarse voice, blurry vision or loss or change of vision?
+Patient: No, not at all.
+Doctor: No fever or chills, right?
+Patient: Yeah, no fever or anything.
+Doctor: Any chest pain, shortness of breath or shortness of breath while sleeping?
+Patient: No.
+Doctor: Any palpitation, swelling or varicose veins or pain in your legs?
+Patient: No.
+Doctor: Any sore throat or cough or cough with mucous or blood sputum?
+Patient: I have this prolonged cough, but other than that nothing.
+Doctor: No wheezing?
+Patient: No, no wheezing.
+Doctor: Any heart burn, nausea or vomiting?
+Patient: No.
+Doctor: Loss of appetite or blood in stool or abdominal pain?
+Patient: No.
+Doctor: Constipation?
+Patient: No.
+Doctor: How is the color of your urine? Is it dark or cloudy?
+Patient: No.
+Doctor: Any pain while urinating or burning sensation?
+Patient: No.
+Doctor: Any flank or groin pain?
+Patient: No.
+Doctor: So, any joint pain, muscle stiffness or pain? Any backache? Ligament, tendon pain or strain?
+Patient: Nothing.
+Doctor: Did you experience any blackouts or seizures lately?
+Patient: No.
+Doctor: Any hallucinations or memory loss?
+Patient: No.
+Doctor: Any weakness? Numbness or tingling?
+Patient: No.
+Doctor: Tremors or loss of sensation like paralysis or-
+Patient: No.
+Doctor: Any anxiety, irritability, apathy or depression like feeling?
+Patient: No.
+Doctor: How is your sleep?
+Patient: It is fine.
+Doctor: And how is your appetite?
+Patient: It's good.
+Doctor: How is your mental state? Any suicidal thoughts crossing your mind?
+Patient: No, nothing like that.
+Doctor: Sorry, I have to ask these questions.
+Patient: It's okay.
+Doctor: Just a few more and we will be done.
+Patient: Sure.
+Doctor: Any unusual hair loss or hair or nail breakage?
+Patient: No.
+Doctor: Did you notice any skin lesion or discoloration?
+Patient: Nope.
+Doctor: Alright then.

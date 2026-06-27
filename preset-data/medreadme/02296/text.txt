@@ -1,0 +1,1 @@
+We assessed the cost-effectiveness of tranexamic acid versus no treatment from a UK NHS perspective using the trial results and a Markov model.

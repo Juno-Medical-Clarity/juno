@@ -1,0 +1,13 @@
+We aimed to investigate the clinical and genetic predictors of painful vaso-occlusive crises (VOC) in sickle cell disease (SCD) in Cameroon.
+Socio-demographics, clinical variables/events and haematological indices were acquired.
+Genotyping was performed for 40 variants in 17 pain-related genes, three fetal haemoglobin (HbF)-promoting loci, two kidney dysfunctions-related genes, and HBA1/HBA2 genes.
+Statistical models using regression frameworks were performed in R® .
+A total of 436 hydoxycarbamide- and opioid-naïve patients were studied; median age was 16 years.
+Female sex, body mass index, Hb/HbF, blood transfusions, leucocytosis and consultation or hospitalisation rates significantly correlated with VOC.
+Three pain-related genes variants correlated with VOC (CACNA2D3-rs6777055, P = 0·025; DRD2-rs4274224, P = 0·037; KCNS1-rs734784, P = 0·01).
+Five pain-related genes variants correlated with hospitalisation/consultation rates.
+(COMT-rs6269, P = 0·027; FAAH-rs4141964, P = 0·003; OPRM1-rs1799971, P = 0·031; ADRB2-rs1042713; P < 0·001; UGT2B7-rs7438135, P = 0·037).
+The 3·7 kb HBA1/HBA2 deletion correlated with increased VOC (P = 0·002).
+HbF-promoting loci variants correlated with decreased hospitalisation (BCL11A-rs4671393, P = 0·026; HBS1L-MYB-rs28384513, P = 0·01).
+APOL1 G1/G2 correlated with increased hospitalisation (P = 0·048).
+This first study from Africa has provided evidence supporting possible development of genetic risk model for pain in SCD.

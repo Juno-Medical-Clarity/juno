@@ -1,0 +1,15 @@
+Background: Inflammation-mediated lung injury is a major cause of health problems in many countries and has been the leading cause of morbidity/mortality in intensive care units.
+In the current COVID-19 pandemic, the majority of the patients experienced serious pneumonia resulting from inflammation (Acute respiratory distress syndrome/ARDS).
+Pathogenic infections cause cytokine release syndrome (CRS) by hyperactivation of immune cells, which in turn release excessive cytokines causing ARDS.
+Currently, there are no standard therapies for viral, bacterial or pathogen-mediated CRS.
+Purpose: This study aimed to investigate and validate the protective effects of Dehydrozingerone (DHZ) against LPS induced lung cell injury by in-vitro and in-vivo models and to gain insights into the molecular mechanisms that mediate these therapeutic effects.
+Methods: The therapeutic activity of DHZ was determined in in-vitro models by pre-treating the cells with DHZ and exposed to LPS to stimulate the inflammatory cascade of events.
+We analysed the effect of DHZ on LPS induced inflammatory cytokines, chemokines and cell damage markers expression/levels using various cell lines.
+We performed gene expression, ELISA, and western blot analysis to elucidate the effect of DHZ on inflammation and its modulation of MAPK and NF-κB pathways.
+Further, the prophylactic and therapeutic effect of DHZ was evaluated against the LPS induced ARDS model in rats.
+Results: DHZ significantly (p < 0.01) attenuated the LPS induced ROS, inflammatory cytokine, chemokine gene expression and protein release in macrophages.
+Similarly, DHZ treatment protected the lung epithelial and endothelial cells by mitigating the LPS induced inflammatory events in a dose-dependent manner.
+In vivo analysis showed that DHZ treatment significantly (p < 0.001) mitigated the LPS induced ARDS pathophysiology of increase in the inflammatory cells in BALF, inflammatory cytokine and chemokines in lung tissues.
+LPS stimulated neutrophil-mediated events, apoptosis, alveolar wall thickening and alveolar inflammation were profoundly reduced by DHZ treatment in a rat model.
+Conclusion: This study demonstrates for the first time that DHZ has the potential to ameliorate LPS induced ARDS by inhibiting cytokine storm and oxidative through modulating the MAPK and NF-κB pathways.
+This data provides pre-clinical support to develop DHZ as a potential therapeutic agent against ARDS.

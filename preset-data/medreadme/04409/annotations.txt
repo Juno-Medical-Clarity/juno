@@ -1,0 +1,11 @@
+source:      plos_genetics
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [1:2] 'abbr-medical' -> 'CAB'
+  [4:5] 'abbr-medical' -> 'PLP'
+  [20:23] 'medical-jargon-google-easy' -> 'dPdxk mutant cells'
+  [30:32] 'medical-jargon-google-easy' -> 'wild type'
+  [47:49] 'medical-jargon-google-easy' -> 'insulin resistance'

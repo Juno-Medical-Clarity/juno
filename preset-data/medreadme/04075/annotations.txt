@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.8
+split:       test
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-hard' -> 'Fas ligand'
+  [12:15] 'medical-jargon-google-easy' -> 'T - cell'
+  [16:18] 'medical-jargon-google-easy' -> 'host response'
+  [19:20] 'medical-jargon-google-easy' -> 'pneumococci'
+  [21:22] 'medical-jargon-google-easy' -> 'pneumonia'

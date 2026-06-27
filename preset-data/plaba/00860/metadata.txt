@@ -1,0 +1,5 @@
+pmid:        17260529
+question:    70
+adaptation:  adaptation3
+title:       Vitamin B6 status, deficiency and its consequences--an overview
+sentences:   12

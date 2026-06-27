@@ -1,0 +1,11 @@
+Sickle Cell Disease (SCD) is a disabling genetic blood disorder caused by a single mutation. SCD can have various outcomes,but it can result in severe pain crises, acute symptoms, and early death.
+The severity of the problems that occur in SCD can vary depending on the amount of fetal hemoglobin (HbF) in the blood.
+High HbF levels are associated with decreased problems and death in patients with SCD.
+Common single mutations in two genes, BCL11A and HBS1L-MYB, are thought to cause the changes in HbF levels seen in European populations without anemia.
+Research has shown a connection between a single BCL11A gene mutation and HbF levels in some SCD patients.
+In this paper, researchers found more single mutations in the BCL11A, HBS1L-MYB, and HBC2 genes in two other groups of patients (a study in African Americans SCD patients and a study of SCD patients from Brazil).
+We studied the effect of these single gene mutations on HbF levels and the number of pain crises in SCD.
+We showed a strong connection between the single mutations in these genes and different HbF levels.
+Common single mutations in the BCL11A, HBS1L-MYB, beta-globin (HBB) genes explain >20% of the different HbF levels in SCD patients.
+These mutations, associated with HbF levels, are also associated with the number of pain crises in SCD patients.
+This shows a clear example that inherited common gene mutations can change the severity of a genetic disease.

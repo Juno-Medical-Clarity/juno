@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0501
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- No past procedures.
+
+Objective: 
+*(No objective data mentioned.)*
+
+Assessment: 
+*(No assessment information provided.)*
+
+Plan: 
+*(No plan provided.)*

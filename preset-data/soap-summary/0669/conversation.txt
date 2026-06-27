@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0669
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good afternoon, ma'am. Good afternoon, doctor. How long have you and your husband been married? Oh, at this point I don't even know how long its been. I assume you live together? Yes, we do. What do you do for a living? I'm a school nurse for the School Department. I love working with the children. That's wonderful. Do you drink or smoke? No, I don't drink, and I quit smoking cigarettes about twenty five years ago. Good for you.

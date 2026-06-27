@@ -1,0 +1,8 @@
+Doctor: Hey, do you smoke cigarettes?
+Patient: Yes I do smoke. Do you?
+Doctor: Nope. Are you planning on quitting?
+Patient: No, I just smoke one pack per day, it's not bad.
+Doctor: Oh my God. No. It is bad. You should think about quitting.
+Patient: Okay I will think about it.
+Doctor: Where do you work?
+Patient: I work at local christmas tree farm.

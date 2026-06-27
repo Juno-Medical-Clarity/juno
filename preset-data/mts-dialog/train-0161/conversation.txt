@@ -1,0 +1,14 @@
+Doctor: What happened to you? How did you get involved in this accident?
+Patient: I was just trying to adjust cable that my brother's dog was tied to. All of a sudden, he attacked me out of nowhere. The injury to my leg is V shaped and the V is pointing towards my foot.
+Doctor: What kind of dog?
+Patient: German shepherd. But he is up to date on his shots, and he is completely healthy.
+Patient: He bit me on my foot, and it looks like his teeth went into my skin. I went to my P C P.
+Doctor: What did you do there?
+Patient: They cleaned the wound and did some bandage along with it he gave me a tetanus shot.
+Doctor: And he sent you to us?
+Patient: Yes.
+Doctor: Okay let me examine your wound.
+Patient: Sure!
+Doctor: It looks like there is a flap injury developed after puncture wound. It seems like a centimeter long and viable. How old are you sir? And what ethnicity do you identify with?
+Patient: White male. I am fifty years old. Is my right leg going to be okay?
+Doctor: The skin looks viable. We can save the tissue.

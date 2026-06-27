@@ -1,0 +1,13 @@
+Background: To develop an OSTAi tool and compare this with the National Osteoporosis Foundation recommendations in 2013 (NOF 2013) for bone mineral density (BMD) testing among Taiwan postmenopausal women.
+Methods: Taiwan Osteoporosis Association (TOA) conducted a nationwide BMD survey by a bus installed with a dual energy X-ray absorptiometry (DXA) between 2008 and 2011.
+All of the participants completed questionnaire, which included demographics and risk factors of osteoporotic fracture in FRAX tool.
+We used the database to analyze potential risk factors for osteoporosis and followed the model by Koh et al. to develop a risk index via multiple variable regression analysis and item reduction.
+We used the index values to set up a simple algorithm (namely OSTAi) to identify those who need BMD measurement.
+Receiver operating characteristic (ROC) curve and the area under the curve (AUC) was used to compare the sensitivity/specificity analysis of this model with that of recommendations by NOF 2013.
+Results: A total of 12,175 Taiwan postmenopausal women enrolled in this survey.
+The index value was derived by age and body weight of the participants according to weighted odds of each risk factor and the selected cutoff value was set at "-1".
+There are 6393 (52.5%) participants whose index value is below "-1" and whose risk of osteoporosis was 57.5% (3674/6393).
+The AUC for OSTAi and NOF 2013 were 0.739 (95% confidence interval (CI), 0.728-0.749, P<0.001) and 0.618 (95% CI, 0.606-0.630, P<0.001), respectively.
+The sensitivity and specificity of OSTAi, at the selected cutoff value of -1, and NOF 2013 to identify osteoporosis were 73.1%, 62.0% and 78.3%, 45.7%, respectively.
+Conclusions: As OSTA for Asian populations, OSTAi is an useful tool to identify Taiwan postmenopausal women with osteoporosis,
+In comparison with NOF 2013, OSTAi may be an easier and better tool for referral to BMD measurement by DXA in this area.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0895
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke cigarettes? I don't smoke cigarettes but I do have one on a rare occasion. Do you drink alcohol or use any recreational drugs? I don't drink but I do occasionally smoke weed. Guest_family: He has a drink every now and again when we get together with friends. Okay.

@@ -1,0 +1,1 @@
+We demonstrate that a model based on summer Equatorial Pacific Ocean sea surface temperatures and Azores High sea-level pressure had predictive value and was able to predict 80% of the outbreaks while incorrectly predicting only 15% of the non-epidemic years.

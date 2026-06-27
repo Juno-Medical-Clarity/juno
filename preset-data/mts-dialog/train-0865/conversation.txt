@@ -1,0 +1,6 @@
+Doctor: Are you aware of any medical issues in your family?
+Patient: I don't know.
+Doctor: What about your paternal family?
+Patient: I don't know my father. No idea about his family.
+Doctor: What about your mom?  Maternal family?
+Patient: I have no idea. I'm not in contact with her.

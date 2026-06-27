@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0023  |  gem_id: gem-cochrane-simplification-test-24  |  doi: 10.1002/14651858.CD009325.pub2
+
+This review found that there is not enough published research evaluating programmes aiming to prevent Indigenous youth from starting to use tobacco. Information from the two included studies in this review (1505 participants in total, in Native American communities) does not allow a conclusion to be drawn as to whether tobacco prevention programmes in Indigenous populations prevent Indigenous youth from smoking or using smokeless tobacco. The review highlights the absence of data and need for more research.

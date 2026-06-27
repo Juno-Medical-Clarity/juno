@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2244  |  gem_id: gem-cochrane-simplification-train-2245  |  doi: 10.1002/14651858.CD009146.pub2
+
+This review assessed the effect of hormone replacement on treatment of osteoporosis in women with primary biliary cirrhosis. We found no evidence of effect of hormone replacement on mortality and fractures in women with primary biliary cirrhosis. It seems that hormone replacement given to women with primary biliary cirrhosis is connected with a significant increase in the occurrence of adverse events compared with placebo or no intervention. Hormone replacement appears to have no effect on the lumbar bone mineral density compared with placebo or no intervention. Hormone replacement may decrease bone mineral density measured at the proximal femur. We did not find evidence to support the use of hormone replacement for osteoporosis in women with primary biliary cirrhosis.

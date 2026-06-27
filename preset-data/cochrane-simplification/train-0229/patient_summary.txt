@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0229  |  gem_id: gem-cochrane-simplification-train-230  |  doi: 10.1002/14651858.CD001209.pub2
+
+The review found that non-pregnant women who had two or more UTIs in the past year had less chance of having a further UTI if given a six to 12 month treatment with antibiotics. The most commonly reported side effects are digestive problems, skin rash and vaginal irritation. More research is needed determine the optimal duration for antibiotic treatment.

@@ -1,0 +1,246 @@
+# Smith Collection Transcript: RES0005
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I was wondering if you could tell us what brought you in to see us
+
+Patient: Yeah so i just came in i was a bit worried because ive been having this cough for around two years which has been getting worse but recently ive noticed that i see streaks of blood in the sputum that im producing before it just used to be like white but now im seeing over the last i would say two months occasionally some streaks of blood
+
+Doctor: OK and the cough started two years ago
+
+Patient: Yeah
+
+Doctor: OK and its been gradually getting worse over that time
+
+Patient: Yeah i would say so its getting more frequent and worse in nature
+
+Doctor: OK and how much sputum are you bringing up an in a day
+
+Patient: Probably like a a couple teaspoons
+
+Doctor: OK and uh is are you seeing like bright red blood when youre when youre coughing it up
+
+Patient: uh in this its kind of mixed into the sputum i would say like but it definitely is red
+
+Doctor: OK and how much blood would you say that youre youre bringing up would be teaspoons or a cup or
+
+Patient: No its just like a little streaks its not really significant it doesnt feel like the whole production of the sputum but just like little streaks that ive noticed
+
+Doctor: OK and um is the cough worse at any particular time of day
+
+Patient: um it definitely gets worse when im doing more activities and then also when i get like some viral infections but other than that its pretty much always there
+
+Doctor: OK anything that that makes it worse you said some viral infections have you had a viral infection recently
+
+Patient: Yeah like in the last two years ive probably had two or three viral infections just just just cold cold symptoms
+
+Doctor: Has there been anything that youve tried to make the cough better
+
+Patient: Ive tried the tylenol cold hasnt really worked tried just other over the counter medications havent really worked
+
+Doctor: OK and prior to two years ago um were you experiencing any similar symptoms like uh like this cough or bringing up blood before
+
+Patient: In the past ive always had a somewhat of a cough like i have copso ive always had a little bit of a cough here and there but over the last two years i feel that its been getting much worse
+
+Doctor: OK have you been diagnosed with chronic bronchitis before
+
+Patient: Yeah i think so
+
+Doctor: OK um and so with with this cough and now blood tinged sputum have you been experiencing any other symptoms
+
+Patient: um i do feel sometimes i get like more tired than i used to throughout the day
+
+Doctor: OK
+
+Patient: um sometimes i also feel more breathless on when im exerting myself more
+
+Doctor: OK and have you been having any fevers or chills
+
+Patient: No no i havent
+
+Doctor: How about any night sweats
+
+Patient: No
+
+Doctor: Have you lost any weight
+
+Patient: Yeah ive actually lost a significant amount of weight i would say within the last 1 and a 12 months probably lost like 8 to 10 pounds
+
+Doctor: OK have you been trying to lose weight
+
+Patient: No not really ive just been sitting around like i can barely walk that much anymore too i used to be able to walk at least 400 meters around the block but now i can barely even go to the kitchen
+
+Doctor: OK is this because of the shortness of breath when you are are exerting
+
+Patient: Yeah that and i just start coughing so much that i just have to sit down
+
+Doctor: OK um and have you been having any headaches
+
+Patient: No headaches
+
+Doctor: Alright and how about and how is your appetite been
+
+Patient: um i think its been pretty much the same sometimes when im coughing a lot i dont feel like eating but other than that its been around the same
+
+Doctor: OK any nausea or vomiting
+
+Patient: No
+
+Doctor: Any runny nose or sore throat
+
+Patient: No
+
+Doctor: OK and then how about a loss of smell or a loss of taste
+
+Patient: No nothing like that
+
+Doctor: OK have you been having any chest pain
+
+Patient: No
+
+Doctor: Any heart palpitations
+
+Patient: Nope
+
+Doctor: Any wheezing when youre breathing
+
+Patient: Sometimes i would say like when when it gets worse when im exerting myself more i i can get some wheezing
+
+Doctor: OK and have you noticed any swelling in your feet or ankles
+
+Patient: No nothing like that
+
+Doctor: Alright and have you woken up at night extremely short of breath
+
+Patient: No im pretty fine during the night
+
+Doctor: Alright and uh have you been having any abdominal pain
+
+Patient: No
+
+Doctor: Any urinary problems
+
+Patient: uh no
+
+Doctor: Any bowel problems like diarrhea or constipation
+
+Patient: No nothing like that
+
+Doctor: Alright any skin rashes
+
+Patient: Nope
+
+Doctor: Any joint pains or or muscle pains
+
+Patient: No
+
+Doctor: Any weakness
+
+Patient: Not weakness ill just say more fatigue
+
+Doctor: Alright so i know you told me a copbut do you have any other medical diagnosis
+
+Patient: Yeah i have high blood pressure as well
+
+Doctor: Alright
+
+Patient: I think i have high cholesterol too
+
+Doctor: I see ok do you take any medications regularly
+
+Patient: Yeah so for the cholesterol taking rosuvastatin and i forget what im taking for the blood pressure but its pretty well under control
+
+Doctor: OK do you use any inhalers for copd
+
+Patient: I used to i used to have i think like 3 different inhalers but havent had to use them for more than 10 years now
+
+Doctor: OK and what was the reason for not needing them anymore
+
+Patient: I just didnt have any symptoms for a pretty long time and my doc said like if i dont really need them then i could just stop
+
+Doctor: OK and have you had any recent hospitalizations
+
+Patient: No
+
+Doctor: Any allergies to medications
+
+Patient: Nope
+
+Doctor: Any surgeries that you had in the past
+
+Patient: No surgeries
+
+Doctor: OK and are your vaccinations up to date
+
+Patient: Yup
+
+Doctor: OK and could you tell me a little bit about your social situation or living situation
+
+Patient: Yeah so currently im just living by myself in an apartment ive been there for more than 10 years now um i am retired so im not working anymore but yeah thats thats me
+
+Doctor: OK great um what did you do previously for for work did you have any exposures for two chemicals or dusts or asbestos things like of that nature
+
+Patient: Oh yes i worked in the steel factory for most of my working life i think yeah there might have been some exposures to chemicals and dust particles asbestos i dont think there was exposure but definitely i may have lived in places that had asbestos i mean yeah
+
+Doctor: OK how long have you been living where you youve been now
+
+Patient: So this this is like the one im living in is a new place but before that i lived in another apartment for around five years and that was a pretty old building
+
+Doctor: OK do you have any pets
+
+Patient: No pets no
+
+Doctor: OK um and do you smoke cigarettes
+
+Patient: Yeah i smoke id say around 20 cigarettes a day right now
+
+Doctor: Alright and did you smoke more previously
+
+Patient: Yeah i think ive been smoking for almost like 40 years now and i used to smoke up to 30 cigarettes a day
+
+Doctor: OK do you smoke cannabis
+
+Patient: No
+
+Doctor: Alright do you drink alcohol
+
+Patient: um just maybe a couple times a month nothing nothing throughout the week
+
+Doctor: OK so do you use any recreational drugs like iv drugs or opioids or cocaine
+
+Patient: No nothing like that
+
+Doctor: Alright and anybody in the family have any similar symptoms before like coughing up blood or
+
+Patient: No not that i know of my father passed away from a heart attack when he was in his 60s and i think my mother had a um like i think one of the like an arthritis but yeah like but i think that was just like the one that you get with old age
+
+Doctor: OK like osteoarthritis
+
+Patient: Yeah that that was the one
+
+Doctor: OK any cancers in the family
+
+Patient: um not that one of my uncles had like um bladder cancer but thats thats thats about it
+
+Doctor: OK and have you have you traveled anywhere recently or been around any sick contacts possibly people anybody whos had tuberculosis or any infections
+
+Patient: No ive been pretty much to myself over the last few months so not really
+
+Doctor: OK um was there anything that youre worried that this could be
+
+Patient: um yeah just the blood i kind of got scared maybe i thought like you know what if its a cancer one of my friends had lung cancer and i i know ive been smoking for most of my life so thats something i was worried about
+
+Doctor: um i can certainly see that the concern and i understand where youre coming from i think it would be very reasonable to investigate that today so well start with a chest ct along with some lab work and we will get a cbc and some electrolytes also get an ecg as well to just check your heart and we will see what what the investigations show
+
+Patient: Sounds good
+
+Doctor: OK and um other things that um to think about this could be uh also like to copi know its been going on a long time but possibly could have a pneumonia thats been lingering on particularly if its a fungal type of infection and as well as things like you mentioned you possibly unsure if youve had an asbestos exposure in the past and stuff like that can possibly lead to scarring of the lung and so all of these factors will be looked into
+
+Patient: OK sounds good thank you so much
+
+Doctor: Alright youre welcome thank you

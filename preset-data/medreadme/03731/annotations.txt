@@ -1,0 +1,9 @@
+source:      pnas
+side:        simple
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'mTORC1 inhibition'
+  [7:14] 'medical-jargon-google-hard' -> 'estrogen signaling and high let - 7'
+  [19:21] 'medical-jargon-google-easy' -> 'cell cycle'

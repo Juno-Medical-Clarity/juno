@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        simple
+readability: 3.7
+split:       dev
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'flumazenil'

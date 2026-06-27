@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1425
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No pain while urinating.
+- No change in frequency of urination.
+- No urgency to urinate.
+- No issues with bladder control; no accidents reported.
+- No history of syphilis or any other sexually transmitted diseases (STDs).
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No plan provided.)

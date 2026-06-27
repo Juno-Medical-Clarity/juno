@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1055
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Welcome in! Thank you. Let us get a little background. What is your medical history? I have some memory loss problems. What kind of memory problems? Well, I have seizures. Do you know what kind of seizures that you have? I have temporal lobe seizures. Do you have any other health conditions? I also have high blood pressure. Okay.

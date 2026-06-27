@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0626
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has two sons and adopted a girl.
+- Patient has been married for a long time.
+- Patient retired from Avon.
+- Patient does not smoke cigarettes or drink alcohol.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessments or diagnoses provided]
+
+Plan:
+- [No plan provided]

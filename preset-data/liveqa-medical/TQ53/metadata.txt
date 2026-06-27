@@ -1,0 +1,15 @@
+qid: TQ53
+source_file: 11400.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: I have normal pressure hydrocephalus (NPH) and would like information on exercise or support groups.
+nlm_summary: Where can I find exercise or support groups for nph?
+
+focus_entities:
+  [F1] (Problem) Nph
+question_types:
+  [T1] INFORMATION
+  [T2] PERSON_ORGANIZATION
+keywords:
+  [K1] (Lifestyle) exercise

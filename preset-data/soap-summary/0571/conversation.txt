@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0571
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Does he have any known drug allergies? Guest_family: No.

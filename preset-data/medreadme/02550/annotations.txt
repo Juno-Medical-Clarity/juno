@@ -1,0 +1,7 @@
+source:      wiki
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [19:26] 'medical-name-entity' -> 'National Institute for Health and Care Excellence'

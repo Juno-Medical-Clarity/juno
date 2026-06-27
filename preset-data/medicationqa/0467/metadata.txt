@@ -1,0 +1,5 @@
+drug_focus: Ativan
+question_type: Dose
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89057c93-8155-4040-acec-64e877bd2b4c
+sample_id: 0467

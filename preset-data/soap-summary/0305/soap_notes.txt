@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0305
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Involuntary urination (leakage), urgency to urinate.
+- Severity: Not explicitly stated.
+- Duration: Leakage occurs when changing positions (sitting to standing), frequent urination every hour in the morning.
+- Associated symptoms: None reported (no pain, fever, chills, or blood in urine).
+- Relevant medical history: Using vaginal cream.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient fears potential prolapse due to feeling something coming out from the vagina.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinical interpretations or diagnoses provided.
+
+Plan:
+- The physician will look into the patient's concerns regarding potential prolapse.

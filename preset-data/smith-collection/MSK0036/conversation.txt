@@ -1,0 +1,262 @@
+# Smith Collection Transcript: MSK0036
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Ive just been experiencing a some pain and numbness and tingling in in just my wrist area and thumb middle finger and index finger
+
+Doctor: OK and when did this pain start and is it the right hand or or left hand
+
+Patient: Hum its the right its a the right hand but i also find it so starting to happen in the left hand as well but more so on the right hand i feel this kind of sensation over my palms and fingers it started i would say probably 2 weeks ago and its been i think its gradually been getting worse im having more difficulty at nighttime especially its also waking me up from sleep and its yeah just affecting my daily routine my work so yeah i just wanted to understand what was going on
+
+Doctor: OK i see and did you have any trauma to the wrist or or any injury or have you had an injury in the past
+
+Patient: No i havent had any falls no accidents nothing like that
+
+Doctor: OK and are you right or left handed
+
+Patient: Im right handed
+
+Doctor: OK yeah and you mentioned it was the right hand that started to hurt first and then the left one has started since then
+
+Patient: Yeah yeah and i dont know if its just cause i use my right hand more that i feel more pain and the symptoms but yeah i definitely would say its worse
+
+Doctor: OK and where are you finding that the pain is specifically located
+
+Patient: So the pain i feel like its more like a discomfort just over the like palm like near the wrist and the lower palm area is where the discomfort is and then the numbness and tingling is just like in thumb an the 1st 2 digits
+
+Doctor: OK and how would you describe the character of this sensation is it burning is it sharp achy or or stabby
+
+Patient: um i would say its more of kind of like an aching aching pain um it does sometimes turn into kind of like a burning sensation with the tingling but yeah more so on the palmer like on the palm side of things its more like an aching pain
+
+Doctor: OK and you have some burning as well
+
+Patient: Yeah
+
+Doctor: OK and is the does it radiate anywhere are you feeling this in in your neck shoulder or down your arm at all
+
+Patient: It kind of goes from the palm along so it goes from the palm it goes upwards like to my fingers but also backwards like into my lower arm as well like my forearm
+
+Doctor: OK and do you have any pain in the neck
+
+Patient: In my neck
+
+Doctor: Yeah
+
+Patient: No
+
+Doctor: OK an anything that youve done that makes the pain worse
+
+Patient: uh i i just have to like i work as an accountant theres a lot of work i do on the computer with a keyboard mouse so i feel like its hard to really do that all day right now so i think if i do that ill make it worse but if i take a rest and kind of just shake my hands a little bit then it gets better
+
+Doctor: OK um so kind of like flicking your wrist sort of thing so kind of shake out the
+
+Patient: Yeah
+
+Doctor: OK um an anything that you do that makes it better besides those moves like have you taken any medications or tried any like wrist splints or anything like that
+
+Patient: No i havent tried any medications or splints
+
+Doctor: OK and what is the severity of the pain on a scale of 1 to 10 10 being the worst youve ever felt and do you feel this pain at any particular time of day more than than others
+
+Patient: The pain is probably like a a 5  and i feel it more during the night as well as like when im working i feel its definitely more as i continue to do more work
+
+Doctor: I see ok and have you had any like numbness and and that tingling in the hand or anywhere else
+
+Patient: No just in the areas that i described nowhere else
+
+Doctor: OK and have you had any muscle weakness
+
+Patient: Uhm no i dont think so
+
+Doctor: OK and how about any issues with like gripping objects dropping objects or like opening jars
+
+Patient: Yeah i i do i do have like when im lifting things and opening jars opening lids like i do have the similar discomfort pain as well as the numbness and tingling
+
+Doctor: OK alright and have you had any fevers or chills
+
+Patient: No
+
+Doctor: Have you had any night sweats
+
+Patient: No
+
+Doctor: Have you had any unexpected weight loss
+
+Patient: No
+
+Doctor: OK have you had any headaches
+
+Patient: No
+
+Doctor: How about any like sensory changes such as changes to your vision or hearing
+
+Patient: No no nothing like that
+
+Doctor: How about a loss of your sense of taste or sense of smell
+
+Patient: No
+
+Doctor: Have you had any runny nose or feeling congested
+
+Patient: No nothing like that
+
+Doctor: How about a sore throat or a cough
+
+Patient: No ok
+
+Doctor: Have you had any shortness of breath or wheezing
+
+Patient: Uhm no nothing like that
+
+Doctor: Have you had any chest pain or feeling as though your hearts racing
+
+Patient: No
+
+Doctor: OK have you had any dizziness or or lightheadedness
+
+Patient: No
+
+Doctor: Alright and have you had any of nausea or vomiting
+
+Patient: No
+
+Doctor: And any abdominal pain
+
+Patient: No
+
+Doctor: OK have you had any diarrhea or constipation or blood in the stool
+
+Patient: No
+
+Doctor: Alright have you had any urinary problems like pain or frequency
+
+Patient: No
+
+Doctor: Alright have you noticed any skin changes or like rashes or anything like that
+
+Patient: No
+
+Doctor: OK and have you had any like muscle aches or or body pains
+
+Patient: No
+
+Doctor: OK and any confusion or memory loss
+
+Patient: No
+
+Doctor: OK uh and have you been diagnosed with any medical conditions in the past
+
+Patient: No ive been fairly healthy
+
+Doctor: OK and so do you take any medications regularly either prescribed or over the counter
+
+Patient: No i ive been pretty healthy sometimes i take some advil for headaches and stuff or tylenol but thats it
+
+Doctor: OK uhm and do you have any allergies
+
+Patient: Uhm nope
+
+Doctor: And have you had any prior hospitalizations or surgeries
+
+Patient: No i havent
+
+Doctor: Alright and can you tell me a little bit about where youre living and and who youre living with
+
+Patient: Im living with my husband and two kids in a small townhouse
+
+Doctor: I see and you mentioned youre an accountant are you working right now
+
+Patient: Yeah i i am in im an accounting time off and just taking a little bit easy before i find out like what this is and how this will really impact my work
+
+Doctor: I see ok and have you been around anybody whos been sick recently
+
+Patient: No
+
+Doctor: Have you traveled anywhere
+
+Patient: No
+
+Doctor: Do you smoke cigarettes
+
+Patient: No
+
+Doctor: OK and how about smoking marijuana
+
+Patient: No no no drugs
+
+Doctor: OK so no recreational drugs
+
+Patient: No
+
+Doctor: OK and are you currently sexually active
+
+Patient: Yes just just with my husband
+
+Doctor: OK uh and any concern for sexually transmitted infection
+
+Patient: No
+
+Doctor: OK um and do you drink alcohol
+
+Patient: uh just maybe some wine every other day
+
+Doctor: OK um and in the family are there any musculoskeletal or like neurological conditions
+
+Patient: No
+
+Doctor: OK and how about autoimmune conditions like rheumatoid arthritis or like hypothyroidism or type one diabetes
+
+Patient: In my family history i think there is
+
+Doctor: Yeah
+
+Patient: Some theres definitely some diabetes on my fathers side but other than that i think one of my aunts on my mother side had um a hysterectomy for cancer
+
+Doctor: OK alright and was it endometrial cancer
+
+Patient: Not sure actually but she i just know that she had her uterus removed
+
+Doctor: I see alright and um so next i wanted to just move to the physical exam portion and so just first inspecting the hand and wrist do you see any swelling or redness
+
+Patient: No
+
+Doctor: How about any changes to temperature do any of the joints feel warm
+
+Patient: No
+
+Doctor: And are you seeing any muscle atrophy or any deformities of any of the joints in the hand
+
+Patient: Uhm maybe like just a little bit like i feel like ive lost some of like the fat pad just right near my thumb
+
+Doctor: I see ok and is there any areas of your hands over like any of the joints or over the rest that if you press you feel pain
+
+Patient: um no
+
+Doctor: OK and are you able to to move your wrist or the full range of motion
+
+Patient: Yeah i can move it
+
+Doctor: OK uh and is there any uh so that then the next test ill just ask you to just tap on the the kind of base of your palm there with your index finger and middle finger of your left hand and when you do that do you feel any burning or tingling
+
+Patient: Yeah yeah i definitely do
+
+Doctor: OK so that would be yeah positive tinel sign and do you get any so if you flex both of your wrists so that the back of your hands are pressing against each other and if you hold that position do you start to get symptoms of the burning and tingling
+
+Patient: um yeah i do feel it as well there
+
+Doctor: OK alright so that was everything i wanted to ask about and check today um did you have any questions
+
+Patient: No i just wanted to know how i can fix this
+
+Doctor: Yeah certainly so its sounding like a carpal tunnel syndrome which that the differential would be something like radiculopathy coming up up from the neck which youre not having any neck symptoms and the positive tenel sign and positive phalen sign are highly suggestive of carpal tunnel syndrome along with the nighttime symptoms and the burning and tingling sensation youre experiencing and so to help with this one of the first things that that can be done is trying to use like wrist splints at night to try to keep your hand in a neutral position but also uh depending on like if there is inflammation there nsaids might help a little bit like ibuprofen or or things like that but the majority of the therapy will be kind of an activity modification and if symptoms dont improve over a period of time then surgery could be a potential option as well
+
+Patient: OK sounds good
+
+Doctor: OK

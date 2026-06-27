@@ -1,0 +1,5 @@
+pmid:        33657772
+question:    50
+adaptation:  adaptation1
+title:       Tumor Shrinkage as a Prognostic Factor of Metastatic Renal Cell Carcinoma in the Era of Molecular Targeted Therapy
+sentences:   10

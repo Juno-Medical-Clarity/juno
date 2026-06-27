@@ -1,0 +1,7 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'rabies'

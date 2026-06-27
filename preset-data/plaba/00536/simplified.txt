@@ -1,0 +1,8 @@
+Polycystic kidney disease (PKD) is an inherited disorder of abnormal kidney cell growth and development of many fluid-filled cysts or swellings in the kidneys.
+Before, we showed there is increased signaling of a specific cell pathway (Notch) compared to normal kidney cells. This Notch signaling contributes to cystic cell growth.
+Quinomycin A, a specific protein segment, has been shown to target the Notch cell signaling pathway and block tumor growth in cancer.
+Here, we show that Quinomycin A decreased cell and cyst growth of human, diseased cyst cells created in an isolated environment.
+Treatment with Quinomycin A reduced kidney weight to body weight ratio and reduced kidney cystic area and scarred tissue in mice with PKD.
+Reduced amounts of proteins of the Notch cell signaling patway, RBPjk and HeyL, and reduced cell growth in kidneys of PKD mice also occured with the other effects.
+Quinomycin A also controlled hairlike structions on cyst cells from kidney tubes.
+This is the first study to show that Quinomycin A blocks PDK progression and suggests that Quinomycin A has beneficial value for PKD patients.

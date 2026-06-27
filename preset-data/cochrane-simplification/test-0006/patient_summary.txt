@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0006  |  gem_id: gem-cochrane-simplification-test-7  |  doi: 10.1002/14651858.CD005009.pub2
+
+Five studies involving 1382 patients were included in this review. All the included studies involved advanced (T3 or T4) prostate cancer. No study was of adequate size and duration. Few events were reported and they did not assess disease-specific survival or metastatic disease. Only one study evaluated biochemical outcomes. Studies primarily reported on adverse events. There are no data for the relative effectiveness of IAS versus CAS for overall survival, prostate cancer specific survival, disease progression, or quality of life. Limited information suggests IAS may have slightly reduced adverse events. In Hering 2000, IAS (18/25 versus 18/18) appears to be slightly more favorable than CAS in controlling impotence. Overall, IAS was also as effective as CAS for potency, but was superior during the interval of cycles (96%). More research is needed.

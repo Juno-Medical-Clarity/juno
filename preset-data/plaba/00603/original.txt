@@ -1,0 +1,6 @@
+Cystic Fibrosis (CF) is an autosomal recessive disease caused by mutations in the CF transmembrane regulator (CFTR) gene, which encodes a chloride channel located at the apical surface of epithelial cells.
+Unsaturated Fatty Acid (UFA) deficiency has been a persistent observation in tissues from patients with CF.
+However, the impacts of such deficiencies on the etiology of the disease have been the object of intense debates.
+The aim of the present review is first to highlight the general consensus on fatty acid dysregulations that emerges from, sometimes apparently contradictory, studies.
+In a second step, a unifying mechanism for the potential impacts of these fatty acid dysregulations in CF cells, based on alterations of membrane biophysical properties (known as lipointoxication), is proposed.
+Finally, the contribution of lipointoxication to the progression of the CF disease and how it could affect the efficacy of current treatments is also discussed.

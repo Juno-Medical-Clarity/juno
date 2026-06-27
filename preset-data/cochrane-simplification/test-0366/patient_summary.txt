@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0366  |  gem_id: gem-cochrane-simplification-test-367  |  doi: 10.1002/14651858.CD008000.pub2
+
+We analysed evidence from nine studies conducted in China that compared Rheum officinale with no treatment or treatment with captopril, an ACEi. We looked at reported changes in two important blood markers - serum creatinine and blood urea nitrogen - that indicate progression of CKD. We found no high quality evidence to indicate that treatment with Rheum officinale can improve CKD or delay its progression. Rheum officinale was not found to cause any serious health problems in patients with CKD. Well-designed randomised controlled studies are needed to provide robust, high quality evidence to assess if there are benefits from Rheum officinale for people with CKD.

@@ -1,0 +1,10 @@
+Autosomal dominant polycystic kidney disease is a common inherited kidney disorder that causes many cysts (growths) and is caused by changes in either the PKD1 or PKD2 genes. These genes are used to make the proteins polycystin-1 (PC1) and polycystin-2 (PC2), which regulate cells growth, cell movement, and interaction with other cells.
+In experiments with mice, when the PKD1 or PKD2 genes are less sensitive to other cells  or make too many proteins, it may lead to cysts forming in the kidneys. This suggests that the number of PC1 and PC2 proteins needs to be stable within a brief time period to prevent the formation of cysts.
+In this study, researchers show that more cells and proteins from PC2 is a common feature of PKD1 changes, in part because of an increase in PKD2.
+However, this data also suggests that more effective protein folding, which is when a protein changes from a long chain to a functional shape, contributes to more levels of PC2 proteins.
+Researchers show that the unfolded protein response is active in the kidneys without Pkd1 and in Pkd1 mutant (changed) cells. This effect is in addition to increases in the number of an endoplasmic reticulum protein, called GRP94. The endoplasmic reticulum helps create and package proteins in cells.
+GRP94 is found to physically interact with PC2, and reducing or slowing GRP94 can lead to a decrease in PC2, suggesting that GRP94 serves as its chaperone (plays a part in the folding of itself as a protein).
+Also, GRP94 is acetylated (modified structurally) and attaches to histone deacetylase 6 (HDAC6), an enzyme that can control several important proteins and activate other proteins.
+Slowing or stopping HDAC6 decreases PC2 proteins, suggesting that HDAC6 and GRP94 work together to regulate PC2 levels.
+Lastly, researchers show that the slowing of GRP94 prevents the formation of cysts in laboratory tests.
+Together, these data uncover a new HDAC6-GRP94-related point that likely participates in maintaining higher PC2 levels in Pkd1 mutant cells.

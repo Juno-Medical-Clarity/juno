@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0833
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a retired school teacher.
+- Smoker.
+- Smokes about half to a full pack per day.
+- Has been smoking for approximately sixty years.
+
+Objective:
+- [No objective data mentioned in the conversation.]
+
+Assessment:
+- [No clinician's interpretation provided in the conversation.]
+
+Plan:
+- [No plan or actions mentioned in the conversation.]

@@ -1,0 +1,10 @@
+Doctor: Where are you having pain?
+Patient: My left elbow. I hit it against a railing when I was trying to do a new trick on my skateboard.
+Doctor: Did the pain come on gradually?
+Patient: Yeah. I even tried icing it, but I think it's only gotten worse.
+Doctor: Did you injure any other parts of your body?
+Patient: Only my elbow.
+Doctor: How long ago did this happen?
+Patient: About a week ago.
+Doctor: I see. Have you taken anything for it, such as Advil or Tylenol?
+Patient: No. I try to deal with the pain as best as I can before resorting to medicine.

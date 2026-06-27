@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0104  |  gem_id: gem-cochrane-simplification-test-105  |  doi: 10.1002/14651858.CD004036.pub3
+
+Two trials on glucocorticosteroids for primary sclerosing cholangitis were identified. One trial compared biliary lavage with hydrocortisone versus saline. This trial was stopped due to adverse events. The other trial compared oral administration of budesonide versus prednisone. No statistically significant effects were found on mortality, serum activity of alkaline phosphatases, serum bilirubin, and adverse events for any of the evaluated intervention regimens.

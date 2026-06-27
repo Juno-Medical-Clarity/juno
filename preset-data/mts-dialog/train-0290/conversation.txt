@@ -1,0 +1,4 @@
+Doctor: Do you have any major medical conditions running in your family history that you know about?
+Patient: No, there's nothing of note.
+Doctor: So, there's no history of arthritis, or cancer that you're aware of?
+Patient: No, not that I know of.

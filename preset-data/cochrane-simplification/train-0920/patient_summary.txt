@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0920  |  gem_id: gem-cochrane-simplification-train-921  |  doi: 10.1002/14651858.CD003265.pub3
+
+This review identified 13 studies (2032 participants). Methenamine hippurate may be effective in preventing UTI in patients without renal tract abnormalities particularly when used for short term prophylaxis. It does not appear to be effective for long term prophylaxis in patients who have neuropathic bladder. There were few adverse effects.Additional well controlled randomised controlled trials are necessary in particular to clarify effectiveness for longer term prophylaxis in those without neuropathic bladder.

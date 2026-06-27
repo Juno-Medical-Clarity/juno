@@ -1,0 +1,5 @@
+pmid:        31509499
+question:    13
+adaptation:  adaptation1
+title:       Sleep apnea and the heart
+sentences:   6

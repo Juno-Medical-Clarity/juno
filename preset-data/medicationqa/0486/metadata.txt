@@ -1,0 +1,5 @@
+drug_focus: beta vulgaris
+question_type: Information
+section_title: Ingredients in supplements for exercise and athletic performance
+source_url: https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/
+sample_id: 0486

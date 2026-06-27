@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [5:10] 'medical-jargon-google-easy' -> 'axial muscle tone and flexibility'
+  [24:26] 'medical-jargon-google-easy' -> 'trunk strength'
+  [28:29] 'medical-jargon-google-easy' -> 'proprioception'

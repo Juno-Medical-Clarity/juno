@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0324  |  gem_id: gem-cochrane-simplification-train-325  |  doi: 10.1002/14651858.CD006403.pub2
+
+The authors of this review wanted to evaluate the benefits and harms of vaccines for preventing anthrax. They identified four recent smaller randomized controlled trials of individuals and an older large cluster-randomized controlled trial with over 150,000 participants. The cluster trial provided limited evidence that a vaccine, based on a strain of live anthrax organisms incapable of causing disease, was effective in preventing cutaneous anthrax. More recent types of vaccines tested in the smaller trials, also based on inactivated components of the anthrax bacterium, appear to have few adverse events and to stimulate a good immune response. Several randomized controlled trials testing these newer vaccines are currently in progress. They will provide further information on the immunogenicity and safety of different vaccine regimens to be used for people at risk of anthrax exposure.

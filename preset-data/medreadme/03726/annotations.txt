@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.3
+split:       test
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'mTORC1 inhibition'
+  [6:12] 'medical-jargon-google-hard' -> 'uterine catecholestrogens and let - 7'
+  [17:20] 'medical-jargon-google-easy' -> 'stem cell cycle'

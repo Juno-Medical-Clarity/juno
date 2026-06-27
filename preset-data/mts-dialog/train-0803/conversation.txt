@@ -1,0 +1,6 @@
+Doctor: Do you drink?
+Patient: Like, every day?
+Doctor: No, just in general.
+Patient: No, I don't drink at all.
+Doctor: Do you smoke?
+Patient: No, I don't do that at all, either.

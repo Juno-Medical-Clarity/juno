@@ -1,0 +1,46 @@
+# SOAP Notes — Sample 0185
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 22 yo M presents with hemoptysis (bright red blood covering tissue and in toilet) this morning
+- Cough x 4 weeks, productive of white/clear sputum, severe throughout the day, not relieved by OTC meds
+- Recent travel to Haiti x 2 months, volunteered with school program, lived with locals, exposed to people coughing, possible TB exposure
+- Occasional post-tussive nausea
+- Fevers and night sweats (woke up soaked a few times this past week)
+- Increased fatigue, difficulty concentrating on schoolwork
+- Unintentional 15 lb weight loss since summer (had appendectomy a few months ago, decreased appetite post-op)
+- Smoking: ~1 ppw cigarettes socially, 1-2 joints on weekends, occasional ecstasy use at parties a few times/year
+- Alcohol: a few drinks (rum or beer) on weekends with friends
+
+PMHx:
+- Appendectomy a few months ago
+- OCPs x 5 years
+- No other medical conditions (denies asthma)
+
+FHx:
+- Maternal grandfather: lung cancer (lifelong smoker)
+- Mother: diabetes
+- No family history of lung problems, heart attacks, or autoimmune conditions
+
+SocHx: 
+- Lives with 4 roommates 
+- Full-time student
+
+Allergies:
+- Septra - rash
+
+Medications:
+- OCP
+
+Objective:
+- Vitals not provided
+
+Assessment:
+- 22 yo M with 4 week history of productive cough, now with hemoptysis, constitutional symptoms, and recent TB exposure 
+
+Plan:
+- CXR
+- Sputum culture for TB
+- Labs
+- F/u after testing to discuss results and treatment plan
+- Counseled on smoking cessation, patient interested in discussing further at next visit

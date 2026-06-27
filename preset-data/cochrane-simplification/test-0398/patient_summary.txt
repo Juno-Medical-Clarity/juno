@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0398  |  gem_id: gem-cochrane-simplification-test-399  |  doi: 10.1002/14651858.CD007378.pub2
+
+This systematic review of five randomised trial shows higher rates of clinical relief of obstruction in emergency surgery. Colonic stent has not been shown to be as effective as emergency surgery in malignant colorectal obstructions. However, use of colonic stent is associated with comparable mortality and morbidity with advantage of shorter hospital stay and procedure time and less blood loss. Further randomised controlled trials with larger sample size and robust trial design are required on this topic.

@@ -1,0 +1,13 @@
+Doctor: Let me check your neck, it looks nice and symmetrical. Your thyroid looks normal it is not enlarged.
+Doctor: Does it hurt you when I press on your neck?
+Patient: No.
+Doctor: Neck is nontender.
+Doctor: Okay, I don't see any bulging of external jugular vein.
+Patient: These medical terms I don't understand.
+Doctor: Oh, I am talking about the vein in your neck, it shows no bulging. No abnormal masses present. Can you turn your head from left to right and right to left, any pain in your neck or difficulty turning?
+Patient: No.
+Doctor: Can you rotate your head clockwise and anti clockwise.
+Patient: Sure.
+Doctor: Any pain?
+Patient: No.
+Doctor: Okay, let me just make a note here full range of motion with no pain.

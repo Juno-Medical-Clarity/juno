@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0366
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello. Before we begin, I need you to confirm some information for me. What kind of information? About your family. Do you know if you have certain medical conditions that run in your family? Nope. My family is very healthy.

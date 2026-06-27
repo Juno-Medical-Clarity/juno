@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.15
+split:       dev
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-easy' -> 'Alexander technique'
+  [7:8] 'medical-jargon-google-easy' -> 'proprioception'
+  [12:15] 'medical-jargon-google-easy' -> 'trunk extension strength'

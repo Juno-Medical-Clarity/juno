@@ -1,0 +1,23 @@
+Doctor: Hello, sir. I see you're being seen for an evaluation for your allergy. Can you please confirm your age?
+Patient: Yeah, that's right. Thirty four.
+Doctor: Let me take a look at your medical records. I see you were treated at the A B C Medical Center for an allergic reaction, correct?
+Patient: Yeah. I was rushed to the hospital that day. After, they told me to get checked for a follow up.
+Doctor: Who told you to have a follow up?
+Patient: One of the E R doctors and the kidney doctor.
+Doctor: I see. Your records indicate you had some swelling around the eye on May third of two thousand and eight. The cause was unknown. I see you were transferred from A B C Medical Center to X Y Z Medical center that day.
+Patient: Yeah, that sounds about right. Were there more details about that?
+Doctor: Yeah, there is. It says here you have a history of renal failure, so you needed dialysis. They believe the allergic reaction was due to this medicine called, Keflex, which was used during your dialysis treatment. Does that name ring a bell?
+Patient: Yeah, it does. I forgot why they gave it to me.
+Doctor: Usually, Keflex is used to treat a skin cellulitis dialysis shunt infection.
+Patient: Oh, I see.
+Doctor: I would like to ask you more about your allergies. What would you say you're allergic to?
+Patient: I've had a lot of problems with grass and sometimes pollen.
+Doctor: I see. I'll put that down as grass allergies, and environmental and inhalant allergies. Do you have any life-threatening allergic reactions?
+Patient: Nope. Never had that.
+Doctor: Have you ever had any swelling under the skin due to something you ate or touched?
+Patient: Nope. Never had that either.
+Doctor: That's great. I'm taking a look at your medications. I see you aren't taking anything for your allergies, but you are taking Atenolol. Do you have high blood pressure?
+Patient: Yeah, I do.
+Doctor: I see. All that's left from your report are the treatments they gave you before you were discharged from the hospital.
+Patient: What were the treatments they gave me?
+Doctor: Looks like they monitored you the whole time and gave you some corticosteroid therapy and antihistamine therapy. You didn't have any additional problems as well.

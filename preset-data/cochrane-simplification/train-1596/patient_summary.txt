@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1596  |  gem_id: gem-cochrane-simplification-train-1597  |  doi: 10.1002/14651858.CD004145.pub4
+
+This review looks at original studies that reported the frequency or prevalence of risk behaviours, or information on HIV infection related to substitution treatment of opioid dependence to assess the extent to which oral substitution treatment prevents the transmission of HIV infection. It was not possible to accurately estimate the extent of reduction, but it is clear that oral substitution treatment reduces risk behaviours and also the probability of HIV infection amongst injecting drug users in substitution treatment.

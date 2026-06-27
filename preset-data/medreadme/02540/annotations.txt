@@ -1,0 +1,8 @@
+source:      MSD
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'dysuria'
+  [10:12] 'medical-jargon-google-easy' -> 'vaginal discharge'

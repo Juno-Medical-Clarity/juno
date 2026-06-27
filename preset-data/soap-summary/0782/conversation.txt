@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0782
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have anyone with psychiatric symptoms in the family? No, I don't have family! What do you mean? My mom dad died and I was raised in the Philippines. Adopted? No by myself. Wow that must have been tough. Oh it's a story for another day.

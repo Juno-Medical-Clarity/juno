@@ -1,0 +1,13 @@
+qid: TQ67
+source_file: 1-131272633.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: oxytetracycline hydrochloride and neomycin sulfate powder (NEO-OXY 100/100)is used for the treatment of what conditions and in what subjects?
+nlm_summary: What are the indications and usage guidelines for oxytetracycline hydrochloride and neomycin sulfate powder (NEO-OXY 100/100)?
+
+focus_entities:
+  [F1] (DrugSupplement) NEO-OXY 100/100 MR
+question_types:
+  [T1] INDICATION
+  [T2] USAGE

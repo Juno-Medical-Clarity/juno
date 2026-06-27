@@ -1,0 +1,6 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 3.0
+split:       test
+
+jargon_spans: (none)

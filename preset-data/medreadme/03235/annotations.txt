@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [15:18] 'medical-jargon-google-easy' -> 'Trx fold superfamilies'
+  [23:27] 'medical-jargon-google-easy' -> 'structure - function relationships'
+  [32:33] 'medical-jargon-google-easy' -> 'thioredoxins'
+  [34:35] 'medical-jargon-google-easy' -> 'peroxiredoxins'

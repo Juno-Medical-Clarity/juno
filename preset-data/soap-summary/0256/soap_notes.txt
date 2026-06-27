@@ -1,0 +1,46 @@
+# SOAP Notes — Sample 0256
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with breathlessness and cough for 3 months, worsening
+- SOB occurs frequently, especially in cold weather and at night, associated with chest tightness
+- SOB lasts up to 1 hour after exposure to cold, severity up to 8/10
+- Dust exposure and increased activity (running during gym class) exacerbate SOB
+- SOB described as difficulty catching breath, throat closing off, inability to take deep breaths, and heaviness in chest
+- Intermittent dry cough for 3 months, triggered by cold and dust
+- Denies hemoptysis or sputum production
+- Reports occasional wheezing on expiration
+- Denies sore throat, rhinorrhea, nasal congestion, anosmia, ear pain/discharge, and visual changes
+- Reports occasional chills at night in the past week, but no confirmed fever or night sweats
+- Denies weight loss, skin changes, or significant chest pain (only tension/heaviness with severe coughing)
+- Denies palpitations, edema, orthopnea, PND, nausea/vomiting, bowel/bladder changes, headache, dizziness, syncope, confusion, or memory loss
+
+PMHx:
+- Fever >3 years ago
+- Denies recent surgeries
+- Medications: occasional Tylenol Cold for symptoms, but ineffective
+- Allergies: hay fever
+- Immunizations up to date
+- FHx: sister with asthma and eczema, no other known lung conditions, heart disease, or cancer
+
+SocHx:
+- Lives in London, Ontario
+- Moved into a new flat 2 months ago
+- Flatmate smokes, causing irritation and increased coughing at night
+- Denies pets
+- Denies smoking, marijuana use, or recreational drug use
+- Alcohol use: rarely, once a month at parties
+
+Objective:
+- Vitals not provided
+- Physical exam not performed
+- No prior imaging or pulmonary function tests
+
+Assessment:
+- Asthma (likely diagnosis)
+- Differential diagnoses: pneumonia, allergic rhinitis
+
+Plan:
+- Order pulmonary function test
+- Trial bronchodilators for symptom management
+- Consider further workup if symptoms do not improve with treatment

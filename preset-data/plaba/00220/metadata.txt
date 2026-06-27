@@ -1,0 +1,5 @@
+pmid:        460879
+question:    17
+adaptation:  adaptation2
+title:       Management of upper airway obstruction
+sentences:   11

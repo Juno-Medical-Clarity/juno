@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0767
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How was the procedure? It was okay. I was nervous to go under the knife at first, but it turned out better than I expected. Do you know others who've gotten hysterectomies that are near my age? I do, actually. It's a pretty common procedure. I'm glad to hear that you didn't experience any complications. Me too.

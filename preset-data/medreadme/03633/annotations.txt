@@ -1,0 +1,15 @@
+source:      plos_biology
+side:        complex
+readability: 5.65
+split:       test
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'flow cytometry'
+  [12:13] 'abbr-medical' -> 'ROS'
+  [16:17] 'medical-jargon-google-easy' -> 'mitochondria'
+  [23:24] 'medical-jargon-google-easy' -> 'superoxide'
+  [28:31] 'medical-jargon-google-hard' -> 'nuo - 6'
+  [32:35] 'medical-jargon-google-hard' -> 'isp - 1'
+  [35:37] 'medical-jargon-google-easy' -> 'mitochondrial mutants'
+  [40:41] 'abbr-medical' -> 'ROS'
+  [46:48] 'medical-jargon-google-easy' -> 'oxidative stress'

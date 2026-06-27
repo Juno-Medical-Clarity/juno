@@ -1,0 +1,5 @@
+pmid:        34586557
+question:    29
+adaptation:  adaptation1
+title:       From Molecular Pathology of COVID 19 to Nigella Sativum as a Treatment Option: Scientific Based Evidence of Its Myth or Reality
+sentences:   5

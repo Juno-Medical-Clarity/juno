@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0926
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history: Patient's mother died of a stroke at age 62. No known family history of dementia.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No clinician interpretation or diagnoses provided)
+
+Plan:
+- (No plan provided)

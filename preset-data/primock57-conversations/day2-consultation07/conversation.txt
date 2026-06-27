@@ -1,0 +1,199 @@
+# PriMock57 Consultation Transcript: day2_consultation07
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Doctor: [unintelligible] Hi, Hi there, good morning.
+
+Patient: Hi, good morning.
+
+Doctor: Um, I'm Doctor Dean Resor from [unintelligible]. Nice to see you. [unintelligible]
+
+Patient: That's the same thing.
+
+Doctor: OK great! So before we start your appointment, could you please confirm your full name and date of birth?
+
+Patient: Yeah sure! Um, my name is Jim Gowers and I was born in nineteen fifty eight uh on the eighth of August.
+
+Doctor: [unintelligible] That's great. Thank you so much for that. Um, you look a lot younger, so, um
+
+Patient: Yeah.
+
+Doctor: Does that, that would make you roughly about fifty years old, fifty one, fifty one years old. Is that is that correct or?
+
+Patient: Yeah, yeah around that. Yeah about sixty, yeah.
+
+Doctor: Six, OK, perfect. All right. So, um, nice to see see you this morning. Are you in a private place where you are OK to speak freely?
+
+Patient: Yep. Yes, I am. Yeah.
+
+Doctor: OK fantastic! So um, how can I help you today?
+
+Patient: Um, yeah. I was, I was having, um, a bit of chest discomfort. So, I was doing some gardening, um, a couple of hours ago. And I felt [unintelligible] not exactly a pain but um like a [unintelligible] a pressure on my chest, um, feels like someone sitting on my chest. Um, and, I've noticed, um, a bit of nausea, not, no vomiting but, um, I'm pretty sweaty, um, short of breath, and it kind of feels like someone's sitting on my chest.
+
+Doctor: Right, OK. Now, do you have those these symptoms right now or have they gone off now?
+
+Patient: Um, no, they're still present.
+
+Doctor: OK. So, you've still got the chest discomfort right now?
+
+Patient: Yes.
+
+Doctor: OK, um. We're probably gonna have to call an ambulance for you. [unintelligible] OK. So what I'm gonna do, is I'm gonna task my colleague next to me to sort that out. While we do that I'm gonna ask you a few more questions, OK?
+
+Patient: OK. Mmm, sure.
+
+Doctor: [unintelligible] We're gonna a bit more information to the, to help the ambulance team when they, when they arrive, OK.
+
+Patient: Sure.
+
+Doctor: So just to, just to double check, um, where exactly in the chest is the pain?
+
+Patient: Um, it's in the, uh, middle of my chest, um, over, uh, yeah, my my pecs, so, um, yeah but not not necessarily to one side, um, and it's quite diffuse pain.
+
+Doctor: [unintelligible] [unintelligible] Is, is it spreading anywhere else, like down into your arm, up to the jaw, in your neck, anything like that?
+
+Patient: Yeah. It's, it's, um, mainly in my left arm, er, it's feeling a little bit, um, er, painful, and, and in my shoulder as well.
+
+Doctor: Right, OK. Do you remember what you were doing at the time? [unintelligible]
+
+Patient: Uh yes, so it started uh just when I was gardening. So nothing that was too strenuous um I was just kneeling down and Uh, yeah, wasn't running or anything, it wasn't during any physical exercise.
+
+Doctor: Sure, OK. And, and how much activity do you do normally? Do you walk a lot or do you run or do you [unintelligible] do anything?
+
+Patient: No, I don't, I, I generally don't do much activity at all, um, you know.
+
+Doctor: Have you had this before?
+
+Patient: No, this is the first time, actually.
+
+Doctor: Right, OK. Can [unintelligible] are you aware of any palpitations, like your heart beating faster or more prominently than normal?
+
+Patient: Yeah. Um, yeah. It's, it's beating a bit faster now. I think that's 'cause I'm a little bit stressed. Um, about the situation but I haven't noticed it, um, beating faster than usual, um, and I did today.
+
+Doctor: [unintelligible] [unintelligible] So, I know you're stressed but, but we've got an ambulance coming on the way, OK? So um, we'll take care of everything, so don't, don't worry. Who's in the house with you at the moment?
+
+Patient: Yeah. OK, thank you. Uh, no, no one's in the house at the moment.
+
+Doctor: OK. Um, and is your front door open?
+
+Patient: Uh, yes, it's open.
+
+Doctor: OK so maybe we'll, we'll speak maybe in the hallway to the front door. Have the front door open so that, in case people need access, they could access you.
+
+Patient: Yeah, yeah [unintelligible].
+
+Doctor: Alright. Um, so, um, uh, are you a smoker at all?
+
+Patient: Uh, yeah, I smoke, um, a fair bit so I smoke about ten cigarettes, uh, a day. Um, yeah.
+
+Doctor: How long have you been smoking for?
+
+Patient: Uh, for the past fifteen years.
+
+Doctor: Fifteen years, OK. Um, do you have, um, high blood pressure or high cholesterol or diabetes or anything?
+
+Patient: Yeah. Yeah, I have high blood, uh, blood pressure, but, um, not diabetes.
+
+Doctor: OK. Have you ever had your cholesterol checked?
+
+Patient: No.
+
+Doctor: OK, all right. Um, now anyone in your wider [unintelligible] in, in your family, sorry, in your parents, did either of them have any heart problems, or heart attacks, or anything like that?
+
+Patient: Yes. Um, yes, so, my, um, father died of a heart attack, um, and my mother had some heart problems.
+
+Doctor: [unintelligible] OK. Uh, I'm sorry to hear about your father. Can you remember what age roughly he was when he had, he had the heart attack?
+
+Patient: Um, he was about my age.
+
+Doctor: Right so [unintelligible] just under sixty, around sixty.
+
+Patient: Yes, around sixty, yes.
+
+Doctor: Yeah, OK, alright. Um, do you drink much alcohol?
+
+Patient: Um, yeah, I drink, um, about, per week, probably about seven or eight pints a week.
+
+Doctor: OK, is that a, a beer you're talking about, yeah?
+
+Patient: Ohh. Yeah, yes.
+
+Doctor: Uh, I, I can't tell from the video, are you overweight?
+
+Patient: Um, yes, I'm overweight, yeah.
+
+Doctor: Right, OK. Alright. Um, uh now um, you, do you normally live alone?
+
+Patient: Yeah. Uh, yeah. I live alone, uh, at the moment. Yeah, uh, it's just me in the house.
+
+Doctor: Sure, OK, and, and, uh, are you working at the moment?
+
+Patient: Yeah yeah, I, I work, yeah.
+
+Doctor: Right, what do you work as?
+
+Patient: Um, I work as a restaurant owner. So I own a sushi shop.
+
+Doctor: Right, OK. Alright. Um, so, um, the, the symptoms that you've described to me
+
+Patient: Yeah.
+
+Doctor: Um, they indicate the possibility of, um, a heart attack. OK? So, I'm not saying you definitely have a heart attack, but we, that, it's our number one priority to exclude that.
+
+Patient: OK.
+
+Doctor: OK, so ambulance team will be with you very shortly. I'm gonna stay on the line with you until they come.
+
+Patient: OK, yeah.
+
+Doctor: OK. [unintelligible] when they come, what they'll do is, they're gonna put some stickers on your chest and do an ECG.
+
+Patient: OK, yeah. Thank you.
+
+Doctor: And then decide where to take you after that, OK? [unintelligible]
+
+Patient: OK. OK, no.
+
+Doctor: And um, what, what, uh, can I just double check? Do you have, um, any allergies to any medication?
+
+Patient: Yes, actually, I have, um, an allergy to aspirin.
+
+Doctor: Right, OK.
+
+Patient: Yeah, and no other allergies.
+
+Doctor: Sure. Uh, what's the nature of that allergy to aspirin? Do you, does it, does it cause you heartburn? Or is it like [unintelligible] an allergic reaction?
+
+Patient: Um Yeah, uh, it's an allergic reaction, so I swell up, um, a bit, but, um, nothing life threatening. Um, I've, I, sometimes even have it and it's, it's a, it's a mild reaction to it.
+
+Doctor: OK, all right. It's very important that you communicate that to the hospital.
+
+Patient: Yeah.
+
+Doctor: Um, the detail you just told me, because, um, we, we may need to consider aspirin despite allergy, OK?
+
+Patient: OK. Ohh, OK.
+
+Doctor: Um, alright, um, now in terms of, um, what happens from here
+
+Patient: OK.
+
+Doctor: That [unintelligible] team will assess you and then they may take you into one hospital or another based on how bad [unintelligible], what the ECG looks like and what kind of treatment you might need, OK?
+
+Patient: Uh huh.
+
+Doctor: Um, what I'm going to do is, we'll stay on the line for the time being, OK, until they come, and then, um, once they come, then I'll hand over to them and I'll explain what's going on, alright?
+
+Patient: OK. OK. OK, OK, sure.
+
+Doctor: OK.
+
+Patient: Yeah, thank you.
+
+Doctor: [unintelligible] we'll end the conversation after the purposes. Is that OK?
+
+Patient: [unintelligible] Yeah, that's, OK. OK, thank you very much.
+
+Doctor: [unintelligible] thanks! Bye!
+
+Patient: Thank you. Bye.

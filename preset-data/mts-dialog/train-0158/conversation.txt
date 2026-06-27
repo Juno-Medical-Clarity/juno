@@ -1,0 +1,4 @@
+Doctor: Are you allergic to anything?
+Patient: No, I am not allergic to anything.
+Doctor: Okay so no drug allergies.
+Patient: Yeah.

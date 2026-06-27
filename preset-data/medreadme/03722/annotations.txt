@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.15
+split:       test
+
+jargon_spans:
+  [6:11] 'medical-jargon-google-hard' -> 'glycolytic and phosphate pentose pathway'
+  [13:15] 'medical-jargon-google-easy' -> 'TCA cycle'
+  [21:24] 'medical-jargon-google-easy' -> 'up - regulated'

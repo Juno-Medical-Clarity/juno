@@ -1,0 +1,20 @@
+Doctor: Good afternoon, ma'am. Can you confirm your age for me, please?
+Patient: Sure, good afternoon, doctor. I'm sixty one years old.
+Doctor: Great, what brings you in for a visit today?
+Patient: I have some notes here with me, but I have a history of polyarteritis nodosa mononeuritis multiplex.
+Doctor: Is this in your legs, or arms?
+Patient: Um, it's in my legs.
+Doctor: I see here that you have sleep apnea too.
+Patient: Yeah, I was involved in an overnight sleep study on C P A P and oxygen.
+Doctor: Why did they do this?
+Patient: It was in order to determine why I had difficulty falling asleep and staying asleep.
+Doctor: Have You had any other treatments?
+Patient: Yeah, I had a review done while I was in the hospital about two weeks ago, I have the results right here.
+Doctor: Thank you, so, how is your leg pain been managed?
+Patient: Um, I take pretty substantial doses of opioids in order to control it.
+Doctor: Do you have any swelling?
+Patient: Yes, I take Lasix for my leg swelling.
+Doctor: How do you sleep with the C P A P?
+Patient: I can fall asleep with it, but I usually rip my mask off because I toss and turn.
+Doctor: How would you rate your quality of sleep?
+Patient: I'd, um, say it's pretty terrible.

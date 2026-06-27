@@ -1,0 +1,1 @@
+The mechanisms underlying localization and their contribution to fitness have been difficult to uncover, due to the often challenging task of creating mutants with systematically perturbed localization but normal enzymatic activity, and the lack of quantitative models through which to interpret subtle phenotypic changes.

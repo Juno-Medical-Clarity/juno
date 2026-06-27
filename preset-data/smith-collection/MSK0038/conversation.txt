@@ -1,0 +1,234 @@
+# Smith Collection Transcript: MSK0038
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi ive ive had um this pain in my left knee thats been going on now for the last uh three or four months um but its gotten a bit a bit worse it used to only really bug me while i was doing activity and now its started to uh hurt even more um afterwards as well so im getting the pain at at rest and so i wanted to come and get that checked out
+
+Doctor: OK yeah for sure um and you said it started a few weeks ago
+
+Patient: uh well i think it first started a few months ago but in the past couple of weeks it has started to um kinda like last longer and and happen at rest as well
+
+Doctor: Yeah and so does anything make it worse or better i assume doing any sort of physical activity makes it worse and rest makes it better but how about anything other than that
+
+Patient: Uhm not really yeah its mostly just the the activity if im going upstairs or um downstairs or uh during running is really where it hurts the most and thats whats bugged me the um yeah the most running
+
+Doctor: OK ok and if you were to describe the quality of this pain would you say sharp dull achy crampy
+
+Patient: uh its a sharp pain uh almost like every time my foot hits the ground i get like a sharp stabbing pain and while im at at rest it feels a bit more dull while yeah yeah while im at rest
+
+Doctor: OK ok and 1 to 10 10 being the worst pain ever how bad is this pain
+
+Patient: A six
+
+Doctor: OK alright and have you ever experienced this type of pain before
+
+Patient: uh i did have something similar like many years ago i used to be a rower uh in undergrad and i got some similar pains before and i mean with some stretching and um other i dont know kind of strengthening stuff it it kind of helped but i didnt go see anybody for it at that time because it it kind of went away after a little while
+
+Doctor: OK ok um and you said you were are you still rowing
+
+Patient: No no the only activity that im doing now is is running
+
+Doctor: Running ok and from when it started to now in the past couple of weeks has it changed like dramatically um is it affecting your day to day life
+
+Patient: uh a little bit yeah like even now just walking i can i can feel it um the pains not as severe but like as when im running but i can im starting to notice it uh daily
+
+Doctor: OK alright and um are you otherwise healthy do you have any um symptoms like fevers or chills
+
+Patient: No nothing like that
+
+Doctor: No any weight loss
+
+Patient: uh no weight loss
+
+Doctor: No any rashes
+
+Patient: uh no rashes
+
+Doctor: No uh changes to your uh vision hearing taste or smell
+
+Patient: uh no changes there
+
+Doctor: OK how about a cough shortness of breath or um wheezing
+
+Patient: Nothing like that
+
+Doctor: OK how about uh chest pain heart palpitations
+
+Patient: No i havent had anything like that
+
+Doctor: OK um any changes to your bowel movements
+
+Patient: No i havent had any diarrhea or yeah everythings been normal there
+
+Doctor: OK nausea or vomiting
+
+Patient: Nope
+
+Doctor: No um how about abdominal pain
+
+Patient: No i havent had any uh any abdominal pain nothing like that
+
+Doctor: OK any changes to your urine
+
+Patient: No uh no i havent had any issues with that
+
+Doctor: OK how about uh headaches
+
+Patient: No i havent had any headaches
+
+Doctor: OK um any pain elsewhere on your body
+
+Patient: uh nope ive its just my yeah just my knee
+
+Doctor: OK any numbness or tingling in the area
+
+Patient: No i havent had anything like that its just the uh sharp pain
+
+Doctor: OK how about confusion or memory loss
+
+Patient: No i havent had that
+
+Doctor: OK um any um muscle aches around the knee like so just above your knee where your quads are or just below
+
+Patient: um no nothing nothing like that
+
+Doctor: OK and are you otherwise healthy do you have any longstanding medical conditions
+
+Patient: um yeah im otherwise healthy i its nothing that i see the doctor for ive never been diagnosed with anything
+
+Doctor: OK um how about hospitalizations or surgeries in the past
+
+Patient: um nothing like that no
+
+Doctor: No ok um any medications that youre on
+
+Patient: um nope i i dont take anything just well no medications but i do take a like a multivitamin
+
+Doctor: OK um are you up to date with all your immunizations
+
+Patient: I am yeah ill get the flu shot each year
+
+Doctor: OK how about allergies do you have any
+
+Patient: um no i i dont
+
+Doctor: No ok um any family history of musculoskeletal issues
+
+Patient: uh nope i dont think so
+
+Doctor: How about um heart or lung conditions
+
+Patient: uh i think my dad has like high blood pressure um and high cholesterol but uh nobodys had a heart attack or and no cancer
+
+Doctor: OK um how about autoimmune conditions
+
+Patient: uh no i dont think so
+
+Doctor: No ok um any um do you do you do any smoking
+
+Patient: uh no ive tried uh like smoking marijuana in the past but didnt really like it so ive stayed away from that
+
+Doctor: OK how about um other recreational drugs
+
+Patient: uh no no i i i havent used anything like that before
+
+Doctor: OK um and then where do you live right now and who do you live with
+
+Patient: So um right now i just live on my own actually im um just finishing up my my my masters um and just live in a small apartment
+
+Doctor: OK alright and have you been in contact with anyone sick recently
+
+Patient: No i dont believe so
+
+Doctor: OK um how about um travel
+
+Patient: uh no ive just been yeah finishing up the the thesis and running
+
+Doctor: OK alright um those were all the questions i had for you um well move on to the physical exam component of this um so if you can take a look at both your knees um do you see any visible redness or swelling in the area
+
+Patient: uh no no swelling or yeah nothing visible that i can see
+
+Doctor: OK so no bruises
+
+Patient: uh no no no bruises
+
+Doctor: OK do you notice any like muscle atrophy any deformities or skin changes otherwise
+
+Patient: No everything looks looks normal
+
+Doctor: OK and if you can just um place your hand just kinda at the top of your on top of your kneecap on both sides do you notice any temperature changes from your uh between your right knee to your left knee
+
+Patient: No no temperature changes they they feel the same
+
+Doctor: OK um and then when you palpate your knee cap as well as um yeah just if you could palpate just at the center of your kneecap do you feel any pain there
+
+Patient: No pain over the kneecap that feels fine
+
+Doctor: OK how about when you palpate kind of like the medial ligaments of your kneecap do you feel any pain there
+
+Patient: No everything on the medial side feels feels normal and fine
+
+Doctor: How about when you palpate the lateral ligaments of your kneecap
+
+Patient: Yeah the ligaments feel feel ok on the lateral side though i i do get some pain along the um like above the joint line
+
+Doctor: Above the joint line
+
+Patient: Yeah
+
+Doctor: OK ok and how about when you palpate uh that big muscle group on your thighs like the quadriceps
+
+Patient: That feels ok no pain in the muscles
+
+Doctor: OK how about like the patellar tendon
+
+Patient: uh no pain there
+
+Doctor: OK and then when you go lower below your kneecap um when you palpate like the top part where the proximal parts of your tibia and fibula are do you feel any pain there
+
+Patient: uh yeah no pain there
+
+Doctor: OK and now lets do some um movements with your leg um are you sitting down
+
+Patient: uh yeah i am
+
+Doctor: OK im gonna get you to stand up from a sitting position does that is that painful
+
+Patient: It is yeah its i get a sharp pain if when doing that
+
+Doctor: OK yeah uhm how about when you um sit back down does that hurt
+
+Patient: um yeah that hurts too
+
+Doctor: That hurts too ok um and then how about when you flex your knee inwards um so that your heel is touching your bum like does that hurt
+
+Patient: uh like i ill get up uh no that doesnt hurt that feels ok
+
+Doctor: OK how about when you extend your knee back out straighten it all the way
+
+Patient: Yeah that feels ok too if im just sitting and doing that i can um i can do that ok
+
+Doctor: OK um how about when you so youre standing and then you uh you abduct your hip so you basically um you flex your hip but laterally and you kind of bring it upwards so that its almost so that your your the action is like youre uh trying to touch the ceiling
+
+Patient: OK yeah i um it if it does feel it feels like its kind of pulling um like it feels tight when i do that uh like on that side its i dont get the same sharp pain but its uncomfortable
+
+Doctor: OK uhm so im gonna try a special test its called the ober test so can i get you to lie on the side um with the injured knee
+
+Patient: Yep
+
+Doctor: OK and then im gonna get you to flex your knee at 90 degrees and um abduct and extend the hip uh while your thighs maintain in line with your trunk um so im gonna get you to adduct your thigh so bring it back towards you the the median um as far as possible
+
+Patient: Oh yeah i cant really its kind of like stuck out there it feels really tight if im trying to like bring it bring it back down my leg almost like floats up if i just leave it there
+
+Doctor: OK so that is a positive ober test um ok so what it sounds like is you it sounds like you have something called um iliotibial um band syndrome so itb syndrome and basically that happens in um athletes so depending on your like position like how much youre using those joints um and like repetitive actions um of like knee flexion extension um kind of triggers that and to treat it uh we can try some conservative um things first so the first thing would be um for you um to have some sort of activity modification to prevent aggravating that joint even more so youre doing a lot of running so maybe uh switching to things like swimming um for the time being can help with that and then other things include ice or heating pads uh taping and stretching um and then if the pain is if the pain uh persists you can try some like ibuprofen for temporary relief um we can talk about other treatments as well like physiotherapy because um itll be important to kind of strengthen those muscles around that joint as well as um increase your range of motion so we can do we can put in a referral for that um and if none of those work we can also discuss um some other things like ultrasound therapy or like muscle stimulation um shockwave therapy and then eventually if none of those other things work we can discuss surgical management but uh its rare that it ever gets to that point does that sound ok
+
+Patient: It does yeah thank you so much
+
+Doctor: OK yeah no worries

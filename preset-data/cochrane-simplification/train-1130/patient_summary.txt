@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1130  |  gem_id: gem-cochrane-simplification-train-1131  |  doi: 10.1002/14651858.CD003709.pub4
+
+Review authors identified 28 randomized controlled trials involving 3497 critically ill patients with circulatory failure, among whom 1773 died. Patients were followed up to one year. The following drugs, given alone or in combination, were studied in 12 different comparisons: dopamine, norepinephrine, epinephrine, phenylephrine, vasopressin, and terlipressin. In summary, researchers found no significant differences in risk of dying in any comparisons of different drugs given alone or in combination when latest reported death was considered. Disturbances in the rhythm of the heart were observed more frequently in people treated with dopamine than in those treated with norepinephrine. The quality of the evidence was high for the comparison of norepinephrine and dopamine, and was very low to moderate for the other comparisons. Findings were consistent among the few large studies and studies of different quality.

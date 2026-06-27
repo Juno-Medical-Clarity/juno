@@ -1,0 +1,3 @@
+Guest_clinician: What brings him in today?
+Doctor: He's here for sepsis and I suspect he may have spontaneous bacterial peritonitis.
+Guest_clinician: Let me pull up his chart.

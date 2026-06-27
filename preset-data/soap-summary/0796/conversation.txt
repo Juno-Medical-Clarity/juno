@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0796
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello. Before we begin your visit, could I ask a few questions to fill in some missing information? Yeah, that's fine. Does your family have any health related problems? Yeah, we do. We have a strong history of heart disease. I think it could be because we drink a lot. So, would you say alcoholism runs in your family? Oh, yeah. We drink a lot every day. Beer, liquor, you name it.

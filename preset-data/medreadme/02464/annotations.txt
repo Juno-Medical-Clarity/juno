@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'DIRAC'
+  [2:3] 'general-complex' -> 'quantitative'
+  [15:16] 'medical-jargon-google-easy' -> 'phenotype'
+  [18:19] 'medical-jargon-google-easy' -> 'phenotypes'

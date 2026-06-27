@@ -1,0 +1,5 @@
+pmid:        7968718
+question:    55
+adaptation:  adaptation1
+title:       Eicosanoids and essential fatty acid modulation in chronic disease and the chronic fatigue syndrome
+sentences:   9

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0711
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hm how would you describe her diet? Does she eat solid food? Guest_family: Mostly thin liquids and ground meat. I see.

@@ -1,0 +1,41 @@
+# SOAP Notes — Sample 0082
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with fever, dry cough, and fatigue for 2 days
+- Fever: Feels hot, temp 38.3 C
+- Cough: Dry, no blood or sputum, not triggered by anything specific, had similar cough 10 years ago with viral infection but not to this extent
+- Fatigue: Difficulty performing daily activities
+- Denies recent infections, headache, eye/ear symptoms, loss of taste/smell, rhinorrhea, sore throat, chest pain, dyspnea, wheezing, palpitations, presyncope, dizziness, GI symptoms, dysuria, frequency, night sweats, chills, rigors, weight loss, rashes, myalgias, arthralgias
+- No sick contacts at home or work, no recent travel
+
+PMHx:
+- Rheumatoid arthritis - on DMARD, follows with rheumatologist
+- Iron deficiency - on iron supplementation, Hb normalized
+- Vitamin D deficiency - on supplementation
+- Takes biotin
+- Denies heavy menses, hematochezia, melena
+
+SocHx:
+- Lives with 2 children (age 5 and 3) and new boyfriend
+- Works as secretary at accounting firm
+- Former smoker, quit 5 years ago
+- Denies EtOH, marijuana, recreational drugs
+- No safety concerns at home
+
+FHx:
+- Aunt with pancreatic cancer
+- No FHx of breast, ovarian, colon cancer, heart or lung disease
+
+Objective:
+- Vitals: Temp 38.3 C
+
+Assessment:
+- Likely viral infection - COVID-19 or common cold (e.g. adenovirus)
+- Differential: Bacterial infection (e.g. pneumonia, LRTI)
+
+Plan:
+- COVID-19 PCR
+- CBC, CMP
+- CXR
+- Consider antibiotics based on workup

@@ -1,0 +1,6 @@
+Doctor: Are you still taking the Trizivir?
+Patient: Yes.
+Doctor: How much are you taking?
+Patient: I take one pill two times a day.
+Doctor: Are you taking any other medications?
+Patient: I take Ibuprofen for body aches from time to time but that's it.

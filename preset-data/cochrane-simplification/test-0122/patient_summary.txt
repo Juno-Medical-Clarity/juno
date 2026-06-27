@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0122  |  gem_id: gem-cochrane-simplification-test-123  |  doi: 10.1002/14651858.CD008565.pub2
+
+There is no good evidence from this review that statins improve menstrual regularity, spontaneous ovulation rate, hirsutism or acne, either alone or in combination with the combined oral contraceptive pill. There is also no good evidence that statins have a beneficial effect on hirsutism or acne (pimples) associated with PCOS. In women with PCOS, statins are effective in reducing serum androgen levels and decreasing bad cholesterol (LDL), but statins are not effective in reducing fasting insulin or insulin resistance. There is no good evidence available on the long-term use of statins (alone or in combination) for the management of PCOS.

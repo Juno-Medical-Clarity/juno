@@ -1,0 +1,14 @@
+Doctor: Good morning, ma'am. What seems to be the problem with your knee?
+Patient:  I've had pain in this knee since I tripped on some ice on March tenth two thousand three.
+Doctor: How old are you now?
+Patient: I'm forty seven.
+Doctor: What kind of symptoms have you had since the fall?
+Patient: It's hard for me to stand up without significant pain, and it feels like my knee is going to give way.
+Doctor: Has this knee given out before?
+Patient: It has.
+Doctor: Is there any swelling in this knee?
+Patient: Yes, I also feel a popping, like when I go up the stairs.
+Doctor: What kind of treatments have you had for this knee?
+Patient: I've had antiinflammatories and P T, but I didn't respond well at all.
+Doctor: Have you had surgery on this knee in the past?
+Patient: Yes, but I can't remember the name of the operation.

@@ -1,0 +1,49 @@
+# SOAP Notes — Sample 0087
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Numbness, tingling, and burning sensation in left hand, more frequent over the past 4-5 months
+- Initially lasted a few minutes at a time, relieved by shaking or flicking wrist
+- Now experiencing symptoms at night as well, waking patient up 2-3 times over the past couple of weeks
+- Advil and Tylenol not effective for pain relief; limiting use of hand helps
+- Burning pain, rated 6/10 at worst
+- First three digits affected (thumb, index, middle fingers), possibly some involvement of ring finger
+- Increased clumsiness with left hand, difficulty opening jars and car doors
+- No muscle weakness, confusion, memory loss, headaches, weight loss, fevers, chills, rashes, changes in vision/hearing/smell/taste, cough, wheezing, SOB, chest pain, palpitations, bowel or bladder changes, nausea, vomiting
+
+PMHx:
+- Hypothyroidism, treated with Synthroid
+- Obesity class 1
+- No hospitalizations or surgeries
+
+FHx:
+- Grandfather had a stroke in his 70s
+- Father has high cholesterol
+- Osteoarthritis in family
+- No autoimmune conditions (besides patient's hypothyroidism) or cancers
+
+SocHx:
+- Smokes 5-10 cigarettes/day for the past 10 years, coinciding with starting work at warehouse
+- Has tried to quit, finds it challenging due to social aspect at work
+- Drinks alcohol occasionally on weekends, ~1 drink/week
+- Lives with husband and two daughters in a house
+- No concerns for STIs, monogamous with partner for over 10 years
+
+Objective:
+- No redness, swelling, or warmth in left hand/arm compared to right
+- Possibly slightly less muscle bulk at base of left thumb
+- No pain on palpation of shoulder, scapula, biceps, elbows, or wrists
+- Full ROM of neck, shoulders, elbows without pain
+- Positive Tinel's sign (tingling/electric shock sensation with tapping over median nerve at wrist)
+- Positive Phalen's sign (numbness and tingling in fingers with wrist flexion for 60 seconds)
+
+Assessment:
+- Carpal tunnel syndrome
+
+Plan:
+- Work modification, avoiding repetitive and prolonged wrist flexion
+- Apply cold packs at home
+- Consider wrist splint for nighttime use to relieve symptoms
+- NSAIDs for pain relief
+- Discuss corticosteroid injections if conservative measures ineffective
+- Surgery as a last resort if other treatments fail

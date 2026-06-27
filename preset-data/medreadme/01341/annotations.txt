@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'BRCA2 mutations'
+  [10:12] 'medical-jargon-google-easy' -> 'breast cancer'

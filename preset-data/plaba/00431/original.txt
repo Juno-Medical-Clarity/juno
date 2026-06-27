@@ -1,0 +1,9 @@
+Gabapentin is a new antiepileptic drug (AED) with an attractive pharmacokinetic profile.
+It is absorbed by an active and saturable transport system, and has a high volume of distribution.
+Gabapentin is not bound to plasma proteins, does not induce hepatic enzymes and is not metabolized.
+At steady state, it has a half-life of 6-8 h, and is eliminated unchanged by renal route with a plasma clearance proportional to the creatinine clearance.
+It is devoid of significant drug-drug interactions when administered with the established AEDs or with oral contraceptives.
+Gabapentin used as an add-on AED significantly reduced the frequency of partial seizures and secondarily generalized tonic-clonic seizures in three large double-blind, placebo-controlled, parallel-group clinical trails.
+It is well tolerated, with transient somnolence and dizziness being the most frequent adverse effects.
+Although the mechanism of action of gabapentin is not fully established, there is strong evidence to suggest a novel mechanism of action.
+Gabapentin is a unique and promising drug that could improve the quality of life of patients with epilepsy and is a welcome addition to the armamentarium of currently available AEDs for the treatment of patients with seizures of partial onset.

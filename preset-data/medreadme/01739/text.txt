@@ -1,0 +1,1 @@
+We also show that the system is remarkably robust to perturbation of the kinetic parameters, and while the localization of either PleC or DivJ is required for asymmetric development, the delocalization of one of these two components does not prevent flagellar pole development.

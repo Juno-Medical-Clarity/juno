@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1023
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is feeling good, considering the circumstances.
+- Reports good sleep last night.
+- Able to eat without trouble; had a little bit of breakfast this morning.
+- Bowel movement occurred this morning.
+- Experienced some difficulty and hardness with bowel movement.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- Continue high fiber diet discussed previously.
+- Patient advised to notify physician or nurses if bowel movements do not improve or worsen.

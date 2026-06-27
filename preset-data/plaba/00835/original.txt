@@ -1,0 +1,13 @@
+Objective: Although total knee replacement (TKR) surgery is highly prevalent and generally successful, functional outcomes post-TKR vary widely.
+Most patients receive some physical therapy (PT) following TKR, but PT practice is variable and associations between specific content and dose of PT interventions and functional outcomes are unknown.
+Research has identified exercise interventions associated with better outcomes but studies have not assessed whether such evidence has been translated into clinical practice.
+We characterized the content, dose, and progression of usual post-acute PT services following TKR, and examined associations of specific details of post-acute PT with patients' 6-month functional outcomes.
+Methods: Post-acute PT data were collected from patients who were undergoing primary unilateral TKR and participating in a clinical trial of a phone-based coaching intervention.
+PT records from the terminal episode of care were reviewed and utilization and exercise content data were extracted.
+Descriptive statistics and linear regression models characterized PT treatment factors and identified associations with 6-month outcomes.
+Results: We analyzed 112 records from 30 PT sites.
+Content and dose of specific exercises and incidence of progression varied widely.
+Open chain exercises were utilized more frequently than closed chain (median 21 [interquartile range (IQR) 4-49] versus median 13 [IQR 4-28.5]).
+Median (IQR) occurrence of progression of closed and open chain exercise was 0 (0-2) and 1 (0-3), respectively.
+Shorter timed stair climb was associated with greater total number of PT interventions and use and progression of closed chain exercises.
+Discussion: Data suggest that evidence-based interventions are underutilized and dose may be insufficient to obtain optimal outcomes.

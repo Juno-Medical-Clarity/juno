@@ -1,0 +1,5 @@
+pmid:        20523044
+question:    55
+adaptation:  adaptation1
+title:       Phosphatidylserine containing omega-3 fatty acids may improve memory abilities in non-demented elderly with memory complaints: a double-blind placebo-controlled trial
+sentences:   12

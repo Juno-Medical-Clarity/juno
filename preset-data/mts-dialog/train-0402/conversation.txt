@@ -1,0 +1,14 @@
+Doctor: Do you drink?
+Patient: No, doc.
+Doctor: How about smoke?
+Patient: That I do.
+Doctor: How long have you been smoking?
+Patient: I long time.
+Doctor: Have you tried to quit or reduce how much you smoke?
+Patient: Truly, I have no interest in doing that with my age.
+Doctor: I see. I'd recommend you consider nicotine patches because smoking brings with it many health problems.
+Patient: Tell me something I don't know.
+Doctor: I understand. How about any other drug use?
+Patient: I know you're not going to like hearing this, but I'm big on weed. I know, I know, I'm going to regret all of this at some point in time. It's just become a habit that's incredibly hard to break.
+Doctor: Okay. I'd rather you smoke weed than cigs. How many packs a year do you think you smoke on average?
+Patient: I go through a pack around every two weeks. Let's go with around twenty seven.

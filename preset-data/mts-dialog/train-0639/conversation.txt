@@ -1,0 +1,14 @@
+Doctor: How's he doing?
+Guest_family: Not so great. He's been out of it. He hasn't been acting like himself.
+Doctor: How long has it been since you noticed any behavioral changes?
+Guest_family: A few days now.
+Doctor: Is he complaining of any pain?
+Guest_family: Yeah he's been-
+Doctor: He's been?
+Guest_family: Sorry, my phone was on vibrate and I had to turn it off.
+Doctor: No problem.
+Guest_family: He's been pointing to his stomach and saying it hurts.
+Doctor: Is he having any other symptoms?
+Guest_family: He's told me he feels queasy. I took his temperature the other night and he was running a fever of one O two.
+Doctor: Any vomiting with the nausea?
+Guest_family: Yeah, he's thrown up a handful of times.

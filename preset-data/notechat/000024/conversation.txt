@@ -1,0 +1,27 @@
+Doctor: Good morning, what brings you here today?
+Patient: Good morning, doctor. I came here for a follow-up on my bladder cancer.
+Doctor: I see. Can you tell me a bit more about your medical history?
+Patient: Sure. I had a pancreatoduodenectomy five years ago to remove a tumor in my pancreas. And then I was suspected of having an ovarian tumor, so I visited the Department of Obstetrics and Gynecology.
+Doctor: Hmm, I see. And what happened then?
+Patient: They performed a Transvaginal ultrasound and found a mass in my bladder mucosa.
+Doctor: I see. And did you have any urinary tract symptoms?
+Patient: No, I didn't have any symptoms.
+Doctor: Okay, I understand. So, you were referred to the Department of Urology for an examination, correct?
+Patient: Yes, that's correct.
+Doctor: And what was the result of the urinalysis and urine cytology?
+Patient: The urinalysis showed no hematuria, but the urine cytology showed dysmorphic cells that were indicative of a tumor.
+Doctor: I see. And then, what kind of examination was performed?
+Patient: They performed a cystoscopy and found a stalked papillary tumor at the apex of the posterior wall of the bladder.
+Doctor: I see. And then what was done next?
+Patient: They performed a Transurethral resection of bladder tumor the following month.
+Doctor: And what did the pathological diagnosis reveal?
+Patient: The removed mass was a non-muscle-invasive bladder tumor, a transitional cell carcinoma, stage 0a.
+Doctor: I see. And how is your condition now?
+Patient: At the three-month postoperative follow-up, no recurrence was noted.
+Doctor: That's great to hear. Have you had a postoperative CT examination yet?
+Patient: No, I haven't had it yet.
+Doctor: Okay, I would recommend you to have a postoperative CT examination as soon as possible. And also, you need to have regular follow-ups to make sure there's no recurrence.
+Patient: Okay, I understand.
+Doctor: If you have any questions or concerns, feel free to ask me.
+Patient: No, I think that's all for now. Thank you, doctor.
+Doctor: You're welcome. Take care.

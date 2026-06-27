@@ -1,0 +1,8 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [18:20] 'medical-jargon-google-easy' -> 'DNA viruses'
+  [23:25] 'medical-jargon-google-easy' -> 'DNA viruses'

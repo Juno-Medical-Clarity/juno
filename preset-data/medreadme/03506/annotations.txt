@@ -1,0 +1,13 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [11:15] 'medical-jargon-google-easy' -> 'Eyberg Child Behaviour Inventory'
+  [16:22] 'medical-jargon-google-easy' -> 'Child Behaviour Checklist - Internalising Scale'
+  [29:34] 'medical-jargon-google-easy' -> "Arnold - O'Leary Parenting Scale"
+  [35:39] 'medical-jargon-google-easy' -> 'Kansas Parental Satisfaction Scale'
+  [46:50] 'medical-jargon-google-easy' -> 'Symptom Checklist - 27'
+  [59:63] 'medical-jargon-google-easy' -> 'Client Service Receipt Inventory'
+  [64:68] 'medical-jargon-google-easy' -> 'EuroQol - 5 Dimensions'

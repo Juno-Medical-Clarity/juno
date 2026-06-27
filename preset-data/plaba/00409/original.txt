@@ -1,0 +1,10 @@
+Recent studies have shown that antihypertensive drugs like diuretics increase plasma homocysteine (Hcy) levels.
+However, the effect of other antihypertensive drugs on plasma Hcy levels has not been tested extensively.
+The aim of present study was to investigate the effect of antihypertensive therapy (AHT) on Hcy levels in essential hypertensive subjects.
+A case-control study of 273 patients with essential hypertension (EH) and 103 normotensive controls was undertaken.
+Plasma Hcy levels were measured before and after 6 weeks of AHT.
+The genotyping of MTHFR C677T polymorphism was performed by polymerase chain reaction-restriction fragment length polymorphism.
+Angiotensin-converting enzyme (ACE) inhibitors and beta-blockers significantly decreased and hydrochlorothiazides significantly increased the plasma Hcy levels in hypertensive patients (P<0.05).
+No significant association between MTHFR C677T genotypes and changes in Hcy levels in response to antihypertensive was observed in EH patients.
+The decrease in Hcy induced by beta-blockers and ACE inhibitors observed in our study may be due to the improvement of endothelial function along with improved renal function.
+Thus, our results suggest that ACE inhibitors and beta-blockers may provide additional beneficial therapeutic effects to the EH patients by decreasing Hcy levels.

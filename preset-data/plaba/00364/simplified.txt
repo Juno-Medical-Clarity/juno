@@ -1,0 +1,12 @@
+The pandemic of COVID-19 (a viral, breathing-related disease) has raised concerns about the harmful effects antibodies can have. Antibodies are proteins used by the immune system to identify and neutralize viruses.
+Antibody-dependent enhancement (ADE) is a unique occurrence in which virus-specific antibodies actually increase entrance of the virus into the host. ADE is a big concern for both people who are exposed to COVID-19 and those who receive the vaccine.
+In this study, the authors evaluated ADE of infection by using COVID-19 convalescent-phase plasma (a specific of plasma often used to treat infections) and human cells expressing Fcγ receptors (FcγRs), special receptors on infection-fighting cells.
+The authors found two Fcγ receptors mediated or controlled most ADE of infection against COVID-19.
+Although ADE of infection was found in macrophages (a white blood cell) infected with COVID-19, and its variants, proteins that increase inflammation were not upregulated or increased.
+COVID-19 creates antibodies that cause ADE of infection. However, these antibodies do not increase inflammatory or infection-fighting responses by macrophages.
+Viruses infect cells mainly through specific receptors (pathways) on the cell surface.
+ADE of infection is an alternative way that viruses can infect immune cells. ADE is mediated by antibodies and FcγRs.
+Because ADE of infection contributes to the development of some viruses, it is import to better understand the exact way ADE contributes to COVID-19 progression.
+In this study, using plasma or blood from COVID-19 patients, we found that two types of Fcγ receptors mediate ADE of COVID-19 infection.
+Although ADE of infection was seen for COVID-19, and its variants, increased inflammatory responses in macrophages was not found.
+These findings suggest that COVID-19 infection produces antibodies that produce ADE of infection. However, these antibodies may not be involved in pro-inflammatory pathways by macrophages.

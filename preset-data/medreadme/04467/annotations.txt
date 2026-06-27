@@ -1,0 +1,8 @@
+source:      pnas
+side:        simple
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'epigenetic'
+  [7:11] 'medical-jargon-google-easy' -> 'chromatin - modifying enzymes'

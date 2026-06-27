@@ -1,0 +1,11 @@
+Pimary progressive aphasia (PPA), a language and speech brain disorder, is linked with amyloid-β (Aβ), a brain protein segment associated with Alzheimer's disease.
+However, symptoms of PPA based on Aβ presence is unclear.
+We assess the amount of Aβ presence in patients with PPA and compare the symptoms of PPA patients with Aβ presence of Aβ-positive (A+) versus those without Aβ (A-).
+We also classified Aβ and tau type in PPA patients with this available information.
+We had 110 PPA patients (41 who can't understand words [svPPA], 27 who can't speak but understand words [nfvPPA], 32 who have trouble finding the right word [lvPPA], and 10 unclassified [ucPPA]) undergo Aβ imaging at multiple centers.
+The extent of language impairment and brain damage were compared between tehe A+ and A- PPA subgroups.
+The proportion of Aβ presence was highest in patients with lvPPA (81.3%), then ucPPA (60.0%), nfvPPA (18.5%), and svPPA (9.8%).
+The A+ PPA subgroup had brain damage mainly on the left side in the middle regions and had worse scores compared to the A- PPA subgroup.
+Also, over 90% (13/14) patients with A+ PPA had tau, a brain protein associated with Alzheimer's disease.
+Our findings will help clinicians understand the patterns of language impairment and brain damage in PPA patients based on Aβ presence.
+Since most A+ PPA patients have tau, understanding the effect of Alzheimer's disease markers on PPA may allow these patients to participate in clinical studies aimed for treating atypical Alzheimer's disease.

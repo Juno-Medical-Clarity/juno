@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0484
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Living status: Lives with boyfriend. 
+- Smoking: Smokes for around ten years, one pack lasts about three days. 
+- Alcohol use: Drinks around six bottles of beer once a week. 
+- Employment: Lost job due to layoffs in a herbicide plant because of the pandemic.
+
+Objective: 
+- (No objective data provided)
+
+Assessment: 
+- (No assessments or diagnoses provided)
+
+Plan: 
+- (No plan provided)

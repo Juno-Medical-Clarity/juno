@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 1097
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 56-year-old female.
+- Symptoms: Frequent urination, little bit of blood in urine.
+- Severity: Not specified.
+- Duration: Not specified.
+- Associated symptoms: No pain with urination, no pus in urine.
+- Relevant medical history: Previous cystoscopy was unremarkable; had taken Ditropan with poor results.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Concern about blood in urine.
+
+Objective:
+- Previous cystoscopy: Unremarkable.
+- Ultrasound of the kidney: Unremarkable.
+
+Assessment:
+- No assessment provided in the conversation.
+
+Plan:
+- Try a different medication for the urinary symptoms.

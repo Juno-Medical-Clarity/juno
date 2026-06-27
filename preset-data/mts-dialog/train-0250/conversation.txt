@@ -1,0 +1,6 @@
+Doctor: Any health problems I should note?
+Patient: Diabetes.
+Doctor: Type one or two?
+Patient: Type two.
+Doctor: Are you on insulin?
+Patient: Yeah. I'm also trying to manage it with exercise.

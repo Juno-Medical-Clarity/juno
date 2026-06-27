@@ -1,0 +1,5 @@
+pmid:        31932513
+question:    32
+adaptation:  adaptation1
+title:       Interaction of serum vitamin B 12 and folate with MTHFR genotypes on risk of ischemic stroke
+sentences:   9

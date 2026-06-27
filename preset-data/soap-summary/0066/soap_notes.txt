@@ -1,0 +1,34 @@
+# SOAP Notes — Sample 0066
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Headache for 3-4 days
+ - Location: front of forehead, extending to temples
+ - Quality: constant aching, not pulsating like previous migraines
+ - Severity: 6/10
+ - Alleviated by Tylenol and Advil (temporary relief)
+ - Worsened by activity, better with rest
+- Fever for the last few days
+ - Temperature: 38.7°C yesterday afternoon
+- Loss of sense of smell
+- No cough, runny nose, congestion, sore throat, changes in taste, difficulties breathing, chest pain, palpitations, diarrhoea, constipation, nausea, vomiting, abdominal pain, muscle aches, joint pains, neck stiffness, numbness, tingling, night sweats, weight loss, or leg swelling
+- Impact on daily activities: difficulty concentrating on work
+
+Past Medical History:
+- PMHx: type 2 diabetes (started on metformin 2 months ago, well tolerated)
+- Medications: metformin, naproxen (for migraines), Tylenol, Advil
+- Allergies: peanuts (anaphylactic reaction)
+- FHx: diabetes (paternal side)
+- SocHx: lives with wife and 2 children, wife is a high school teacher
+- No smoking history, occasional marijuana use (1-2 times/month), drinks a couple of beers on weekends
+
+Objective:
+- Physical exam to be conducted
+
+Assessment:
+- Possible COVID-19 (symptoms overlap with COVID-19)
+
+Plan:
+- COVID-19 swab to be requested through public health
+- Self-isolation until results are available
+- Further guidelines from public health if COVID-19 test is positive

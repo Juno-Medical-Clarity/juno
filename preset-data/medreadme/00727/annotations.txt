@@ -1,0 +1,8 @@
+source:      elife
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'receptors'
+  [22:24] 'medical-jargon-google-easy' -> 'chemokine receptors'

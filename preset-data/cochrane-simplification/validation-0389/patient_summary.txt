@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0389  |  gem_id: gem-cochrane-simplification-validation-390  |  doi: 10.1002/14651858.CD004754.pub2
+
+The aim of this review was to evaluate the benefits and harms of drug treatments for preventing the complications of idiopathic hypercalciuria. We identified four studies comparing thiazides (diuretics) with either standard treatment of clinical follow-up and increased water intake or specific dietary recommendations and one study comparing thiazides plus a potassium salt. There was a decrease in the number of new stones in the group receiving thiazides as well as an increase in the time taken for new stone formation. The addition of potassium salts to thiazide treatment significantly reduced the amount of calcium excreted in the urine. No studies in children were identified and there were no studies investigating the use of drug treatment for those with hypercalciuria but were symptom free.

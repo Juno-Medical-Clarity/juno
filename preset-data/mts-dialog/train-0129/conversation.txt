@@ -1,0 +1,2 @@
+Doctor: Do you smoke?
+Patient: No, I have never smoked in my entire life.

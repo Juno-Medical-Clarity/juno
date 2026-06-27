@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0666
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history: Both parents deceased; father passed away at 75 from leukemia, mother at 38 from heart problems and alcoholism.
+- One uncle recently diagnosed with leukemia.
+- Patient expressed condolences regarding their parents.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No clinician's interpretation or diagnosis provided)
+
+Plan:
+- (No plan provided)

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0547  |  gem_id: gem-cochrane-simplification-train-548  |  doi: 10.1002/14651858.CD004785.pub5
+
+Data from 24 studies, most of high quality, including 6885 participants found that rifampin (also known as rifampicin), ciprofloxacin, ceftriaxone and penicillin are effective agents for eradicating carriage of N meningitidis. However, the use of rifampin may have a disadvantage as development of resistance to the antibiotic has been noted following treatment. Mild adverse events are associated with the different antibiotics used. Disease prevention could not be evaluated directly in this review as only data for eradication of the bacteria were available. Different follow-up periods were reported in the studies. Evidence in this review is current as of June 2013.

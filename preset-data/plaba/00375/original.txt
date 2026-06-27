@@ -1,0 +1,9 @@
+Previously, we reported that immunomodulatory lactobacilli, nasally administered, beneficially regulated the lung antiviral innate immune response induced by Toll-like receptor 3 (TLR3) activation and improved protection against the respiratory pathogens, influenza virus and respiratory syncytial virus in mice.
+Here, we assessed the immunomodulatory effects of viable and non-viable Lactiplantibacillus plantarum strains in human respiratory epithelial cells (Calu-3 cells) and the capacity of these immunobiotic lactobacilli to reduce their susceptibility to the acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection.
+Immunobiotic L. plantarum MPL16 and CRL1506 differentially modulated IFN-β, IL-6, CXCL8, CCL5 and CXCL10 production and IFNAR2, DDX58, Mx1 and OAS1 expression in Calu-3 cells stimulated with the TLR3 agonist poly(I:C).
+Furthermore, the MPL16 and CRL1506 strains increased the resistance of Calu-3 cells to the challenge with SARS-CoV-2.
+L. plantarum MPL16 induced these beneficial effects more efficiently than the CRL1506 strain.
+Of note, neither non-viable MPL16 and CRL1506 strains nor the non-immunomodulatory strains L. plantarum CRL1905 and MPL18 could modify the resistance of Calu-3 cells to SARS-CoV-2 infection or the immune response to poly(I:C) challenge.
+To date, the potential beneficial effects of immunomodulatory probiotics on SARS-CoV-2 infection and COVID-19 outcome have been extrapolated from studies carried out in the context of other viral pathogens.
+To the best of our knowledge, this is the first demonstration of the ability of immunomodulatory lactobacilli to positively influence the replication of the new coronavirus.
+Further mechanistic studies and in vivo experiments in animal models of SARS-CoV-2 infection are necessary to identify specific strains of beneficial immunobiotic lactobacilli like L. plantarum MPL16 or CRL1506 for the prevention or treatment of the COVID-19.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1465
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you still working? Retired some time ago. What was your profession? I used to work at a car repair shop called Champion Automotive Company. Nice. How did you enjoy the work? I liked it a lot, but there came a time where I knew it was the end of the road for me. I'm really enjoying retirement. I bet. I have cousin who owns a car repair shop. He's almost always busy. Yeah, it can be a lot sometimes. Any smoking, drinking, or hard drugs? I can confidently say no to each one. Great to hear.

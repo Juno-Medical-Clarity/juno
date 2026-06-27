@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0329
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you had any anxiety attacks lately? No. Have you felt depressed or had any mood swing problems? No. Any phobias? No, not really. Okay.

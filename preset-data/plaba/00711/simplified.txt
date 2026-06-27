@@ -1,0 +1,11 @@
+Pallister-Hall syndrome (PHS) is a rare disorder caused by changes in the gene called GLI3.
+Patients with PHS have a variety of problems with reproduction and urinary organs, including poor development of the kidneys, backup of urine in the duct between the kidney and the bladder, swelling of the kidneys, or a shared opening for the birth canal  and the urinary tract.
+It is not known how the specific problems arise
+We show that variations in the GLI3 gene cause poor development of the kidneys, and a closed end in the duct that runs between the kidney and the bladder, which causes swelling of the kidneys and the duct.
+Mice with the same change in the GLI3 gene also had two ducts that connected a kidney to the bladder
+The abnormal development is caused by the lack of information the embryonic cells (cells that forms when eggs are fertilized)  need for proper development.
+
+
+
+Using mutant mice, we show that the development of the reproduction and urinary organs  is controlled by the variants in the GLI3 gene.
+Different problems in PHS are caused by the different mistakes in the development of the urinary organs due to the information provided by the variants of the GLI3 gene.

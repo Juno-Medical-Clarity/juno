@@ -1,0 +1,11 @@
+Doctor: How are you feeling today?
+Patient: I am doing good, considering.
+Doctor: Are you sleeping well?
+Patient: Yes.  I was able to get some good sleep last night.
+Doctor: Have you been able to eat without any trouble?
+Patient: Yes. I ate a little bit of breakfast this morning.
+Doctor: Have you been able to have a bowel movement yet?
+Patient: Yes, I did this morning.
+Doctor: Did you experience any difficulties with your movement?
+Patient: It was still a little difficult and hard.
+Doctor: Okay. Continue the high fiber diet that we discussed, and it should improve. Please let me or one of the nurses know if it has not improved or becomes worse.

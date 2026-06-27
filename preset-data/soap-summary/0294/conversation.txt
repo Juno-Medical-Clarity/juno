@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0294
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any past medical history? Um there were a couple times where I noticed my blood pressure was high but that's improved as of late. When did these episodes occur? About a year ago. Did you follow up with your previous doctor? Yeah, my old doctor knows. Okay then. Let's see. Have you been checking your own blood pressure as a result? No not really. It looks like your blood pressure was normal today, which is a good sign. Great. Hm any allergies to medications? None that I know of. And it looks like you have gained about fourteen pounds since last year. Any new diet changes or stressors? I lost my job last January and it took a pretty big toll on me. I'm sorry to hear that. How have you been coping? I'm doing better now but I need to watch what I eat. I tend to eat a lot more when I'm stressed. It's something I'm working on.

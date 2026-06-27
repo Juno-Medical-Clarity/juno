@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1257
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is looking for a primary care physician and mental health support.
+- Patient does not currently work; previously worked as a registered nurse.
+- Patient drinks alcohol rarely, only in social situations.
+- Patient has a pattern of self-prescribing for minor illnesses.
+- Patient has been feeling more social since March and has been participating in activities independently.
+- Family member reports that the patient used to never leave the house without their accompaniment.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretations or diagnoses provided.
+
+Plan:
+- Recommendations for primary care and mental health providers to be given.

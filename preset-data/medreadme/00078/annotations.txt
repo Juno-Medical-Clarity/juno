@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [13:14] 'general-medical-multisense' -> 'stool'
+  [15:17] 'medical-jargon-google-easy' -> 'liver cirrhosis'
+  [18:20] 'medical-jargon-google-easy' -> 'portal hypertension'
+  [22:24] 'medical-jargon-google-easy' -> 'premature death'

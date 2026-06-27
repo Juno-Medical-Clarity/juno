@@ -1,0 +1,11 @@
+Sickle cell disease (SCD) is a monogenic disease characterized by multisystem morbidity and highly variable clinical course.
+Inter-individual variability in hemoglobin F (HbF) levels is one of the main modifiers that account for the clinical heterogeneity in SCD.
+HbF levels are affected by, among other factors, single nucleotide polymorphisms (SNPs) at the BCL11A gene and the HBS1L-MYB intergenic region and Xmn1 gene.
+Our aim was to investigate HbF-enhancer haplotypes at these loci to obtain a first overview of the genetic situation of SCD patients in Egypt and its impact on the severity of the disease.
+The study included 100 SCD patients and 100 matched controls.
+Genotyping of BCL11A (rs1886868 C/T), HBS1L-MYB (rs9389268 A/G) and Xmn1 γG158 (rs7842144 C/T) SNPs showed no statistically significant difference between SCD patients and controls except for the hetero-mutant genotypes of BCL11A which was significantly higher in SCD patients compared with controls.
+Baseline HbF levels were significantly higher in those with co-inheritance of polymorphic genotypes of BCL11A + HSB1L-MYB and BCL11A + Xmn1.
+Steady-state HbF levels, used as an indicator of disease severity, were significantly higher in SCD-Sβ patients having the polymorphic genotypes of HSB1L-MYB.
+Fold change of HbF in both patient groups did not differ between those harboring the wild and the polymorphic genotypes of the studied SNPs.
+In conclusion, BCL11A, HSB1L, and Xmn1 genetic polymorphisms had no positive impact on baseline HbF levels solely but had if coexisted.
+Discovery of the molecular mechanisms controlling HbF production could provide a more effective strategy for HbF induction.

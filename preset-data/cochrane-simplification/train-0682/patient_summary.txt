@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0682  |  gem_id: gem-cochrane-simplification-train-683  |  doi: 10.1002/14651858.CD004212.pub3
+
+This review found no evidence for routine use of opioids for newborns on breathing machines. Although relief of pain was variable, opioids were no better or worse for babies (in terms of death, strokes, future development, duration of ventilation or hospital stay) than other drugs or placebo. Further research is needed.

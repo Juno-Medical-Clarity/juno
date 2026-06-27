@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1888  |  gem_id: gem-cochrane-simplification-train-1889  |  doi: 10.1002/14651858.CD001005
+
+Using a systematic approach, the medical literature was searched thoroughly to find reliable studies that looked at the effects of improving patients' knowledge about asthma, but which did not attempt to improve practical self-management skills. The results of the studies were combined to see if patient education designed to improve patient knowledge about their condition made a difference to their asthma. Improving patient knowledge alone does not seem to reduce hospitalisations, doctor visits or medication use for asthma, but may play a role in improving patients perceptions of their symptoms. However, education programmes designed to improve knowledge alone may reduce Emergency Room visits in high-risk adults.

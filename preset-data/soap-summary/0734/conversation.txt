@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0734
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good morning, ma'am. Can you confirm your age for me? Well, doctor, I'm sixty six years old now. Thank you, so, how is your knee doing today? Hope the osteoarthritis is getting better. It's so bad, doctor. Have you had any improvement with the rest and antiinflammatories we've talked about before? No, they haven't helped at all. I see, you'd be a good candidate for a knee replacement. What's the risk of infection from the surgery? Historically, it's less than one percent, we use prophylactic antibiotics to control for infection the entire time. Great, and will I be asleep for this? Yes, you won't feel a thing.

@@ -1,0 +1,10 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'epilepsy'
+  [8:9] 'medical-jargon-google-easy' -> 'seizures'
+  [18:19] 'medical-jargon-google-easy' -> 'pacemaker'
+  [32:33] 'medical-jargon-google-easy' -> 'stroke'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1280
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+It looks like your Xrays show bronchitis. Is there anything I can take for it? Yes, I'm going to prescribe you something that will help clear your lungs.

@@ -1,0 +1,5 @@
+drug_focus: metformin
+question_type: Dose
+section_title: HOW SUPPLIED
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2d98aea3-35ba-447a-b88f-a5a20b612b2f
+sample_id: 0031

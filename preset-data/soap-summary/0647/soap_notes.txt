@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0647
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history: 
+ - Father has high blood pressure.
+ - Mother has had multiple skin cancers removed (type unknown).
+ 
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No clinician's interpretation provided)
+
+Plan:
+- (No plan provided)

@@ -1,0 +1,1 @@
+Unicompartmental knee replacement more than halved the risk of venous thromboembolism [relative risk 0. 33 (95% confidence interval 0. 15 to 0. 74) using propensity score stratification; relative risk 0. 39 (95% confidence interval 0. 16 to 0. 96) using inverse probability weighting].

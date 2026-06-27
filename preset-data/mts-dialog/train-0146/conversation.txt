@@ -1,0 +1,14 @@
+Doctor: It is nice to see you again, miss.  We are following up on a few things today. How is your arm feeling?
+Patient: My arm is all better. It is not in pain at all anymore.
+Doctor: How has your mood been? Are you feeling any relief from your symptoms since you have been on the Lexapro?
+Patient: It's helping a little bit.
+Doctor: How much Lexapro are you taking now?
+Patient: I am taking ten M G.
+Doctor: How long have you been taking the full dosage?
+Patient: About a week ago. I don't take it every day. I don't feel like I need it some days.
+Doctor: I want you to take the full dosage every day. This might be why you have not had much relief with your symptoms yet.
+Patient: Okay.
+Doctor: Your hands are a little shaky. Is this a normal occurrence for you?
+Patient: I didn't even notice.
+Doctor: It is very subtle. We will keep an eye on it for now. Your blood pressure is a little better today. Have you experienced any worsening joint or bone pain?  I want to check on your osteoporosis and osteoarthritis.
+Patient: No.

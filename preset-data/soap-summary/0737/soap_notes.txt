@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 0737
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 55 years old.
+- Symptoms include:
+ - General allergies
+ - Food allergies
+ - Loss of taste
+ - Gastrointestinal (GI) tract problems
+ - Asthma
+ - Gastroesophageal reflux disease (GERD)
+ - Dry mouth (xerostomia)
+ - Bad allergies during spring (environmental inhalant allergies)
+- Patient expresses concern about having a lot of problems recently.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

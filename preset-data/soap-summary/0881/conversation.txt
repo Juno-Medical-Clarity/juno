@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0881
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What is your family medical history? I don't really remember anyone having any major health problems. Okay. Everyone is pretty healthy. That is fortunate. Yeah, it is.

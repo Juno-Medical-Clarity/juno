@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0277
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Asthma
+- Severity: Much better since using inhaler
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: Asthma
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Patient acknowledges the importance of carrying the inhaler during exercise and walking.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment information provided.
+
+Plan:
+- Emphasize the importance of carrying the inhaler during exercise or increased physical activity.

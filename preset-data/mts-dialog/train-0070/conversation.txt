@@ -1,0 +1,12 @@
+Doctor: Good morning, ma'am.
+Patient: Oh, good morning, doctor.
+Doctor: Please, tell me about your living situation.
+Patient: Well, right now, I live at home with my kids and my dad.
+Doctor: I see here that you're not able to go up the stairs well, can you tell me more about that?
+Patient: Yeah, I can't use the stairs without holding the rail the entire time.
+Doctor: Holding the rail makes navigating the stairs easier?
+Patient: Yeah, but I still move very slow.
+Doctor: I see. Do you smoke?
+Patient: Yeah, I smoke about a pack to a pack and a half a day.
+Doctor: What about exercise? Do you workout?
+Patient: No, I don't regularly workout, I've never been good at it.

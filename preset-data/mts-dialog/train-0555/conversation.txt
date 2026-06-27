@@ -1,0 +1,14 @@
+Doctor: Are you married, sir?
+Patient: No divorced. I live a lone.
+Doctor: What work do you do?
+Patient: I am a retired postal worker.
+Doctor: Do you have kids?
+Patient: Yes, I have three of my own and seven grandkids.
+Doctor: Do you smoke cigarettes?
+Patient: Yes I do.
+Doctor: How much and what kind?
+Patient: I keep changing the brands but Newport, one pack a day.
+Doctor: Okay. How about alcohol or drugs like substance abuse?
+Patient: No drugs but I drink occasionally depending on the company.
+Doctor: How long have you smoked?
+Patient: Thirty years now.

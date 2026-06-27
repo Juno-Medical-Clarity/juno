@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2507  |  gem_id: gem-cochrane-simplification-train-2508  |  doi: 10.1002/14651858.CD010783.pub2
+
+Our review assessed the current evidence related to one of those brief tests, the Mini-Mental State Examination (MMSE), in the prediction of decline to dementia in people with cognitive impairments. After an extensive search and analysis of available information, we did not find evidence supporting a substantial role of MMSE as a stand-alone single-administration test in the identification of patients who will convert to dementia in the future.

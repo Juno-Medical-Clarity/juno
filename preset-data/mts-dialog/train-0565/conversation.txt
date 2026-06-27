@@ -1,0 +1,7 @@
+Patient: You know Doctor, I am widowed for eighteen years now. Never remarried, I live by myself in my house.
+Doctor: Oh okay, are your still working?
+Patient: No, I use to run a restaurant, but now retired.
+Doctor: Hm. And you smoke cigarettes?
+Patient: No, I don't!  Never liked the smell.
+Doctor: How about alcohol?
+Patient: No, I don't drink either.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0244  |  gem_id: gem-cochrane-simplification-train-245  |  doi: 10.1002/14651858.CD001556.pub3
+
+This review included information from 13 randomized studies and combined results from 2122 patients to answer our question regarding survival. This review of 13 trials, including patients with esophageal cancer of any cell type, found some evidence that cisplatin-based chemotherapy may help them to live longer. However, chemotherapy may introduce side effects. This review used information from randomized studies that is considered to represent the highest quality of evidence.

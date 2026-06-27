@@ -1,0 +1,6 @@
+Defining the duration of infectvity of Severe Acute Respiratory Syndrome Coronovirus 2 (SARS-CoV-2), which is a viral breathing-related illness, can influence public health and infection control practice for healthcare.
+Early in the pandemic, most hospitals needed 2 test results detecting no disease before releasing patients with Covid-19, or SARS-CoV-2.
+Many patients still have test results detecting the disease for weeks to months after recovery. Studies note that these results generally do not reflect contagious viruses.
+SARS-CoV-2 seems the most contagious around the time of symptom onset. The infectivity or ability to spread the virus quickly decreases to near-zero after about 10 days in mildly ill patients and 15 days in severely ill and immunocompromised patients.
+The longest interval for contagious viruses so far is 20 days from symptom onset.
+This review summarizes current evidence on the duration of infectivity of SARS-CoV-2, and how this affects new public health recommendation for releasing people in isolation.

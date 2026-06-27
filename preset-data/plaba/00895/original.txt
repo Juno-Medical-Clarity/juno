@@ -1,0 +1,7 @@
+Background: We implemented local infiltration analgesia (LIA) as a technique of providing post-operative pain management and early mobilization after arthroplasty surgery and have progressively found patients able to go home earlier.
+This study compares the national data on hip and knee arthroplasty provided by the Royal Australasian College of Surgeons and Medibank Private with our outcomes using LIA and rapid recovery.
+Methods: Prospective study of one surgeon including 200 knees, and 165 hips in the two years till June 2016.
+Variables included in comparison to the two groups were: length of stay, percentage of patients transferred to rehabilitation or intensive care unit (ICU), readmitted within 30 days and average separation cost.
+Results: Hip replacement median length of stay in our series was two nights versus five nights, inpatient rehabilitation 7% versus 36%, ICU admission zero versus 4%, and readmissions 3.9% versus 6.0%, the average hospital separation cost in our series was $17 813 versus $26 734.
+Knee replacement median length of stay in our study was one night versus five nights, ICU 0.5% versus 3%, rehabilitation 4.5% versus 43%, and readmission 6% versus 7%, the average hospital separation cost in our group was $16 437 versus $27 505.
+Conclusion: The comprehensive approach of LIA and rapid recovery enables patients to have shorter hospitalization, lower rehabilitation incidence and a resultant reduction in health expenditure.

@@ -1,0 +1,11 @@
+source:      pnas
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [5:9] 'medical-jargon-google-hard' -> 'intronic variable number tandem'
+  [11:14] 'medical-jargon-google-hard' -> 'VNTR2 - 1'
+  [24:25] 'abbr-medical' -> 'hTERT'
+  [25:26] 'medical-jargon-google-easy' -> 'transcription'
+  [31:34] 'medical-jargon-google-easy' -> 'chromatin - dependent'

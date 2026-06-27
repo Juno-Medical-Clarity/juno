@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        simple
+readability: 3.3
+split:       dev
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'PLD'

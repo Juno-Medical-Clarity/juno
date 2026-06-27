@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'opiate'
+  [11:12] 'medical-jargon-google-easy' -> 'sedative'
+  [13:14] 'medical-jargon-google-easy' -> 'phenobarbitone'
+  [15:16] 'medical-jargon-google-easy' -> 'clonidine'
+  [25:26] 'general-complex' -> 'efficacy'

@@ -1,0 +1,5 @@
+pmid:        6445384
+question:    16
+adaptation:  adaptation1
+title:       Immunosuppressive effects of low doses of glucocorticoids: effects on autologous and allogeneic mixed leukocyte reactions
+sentences:   7

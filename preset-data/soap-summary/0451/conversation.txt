@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0451
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there! Welcome to the clinic. Thank you. Doctor Murphy sent your records over. I reviewed the ultrasound, and we did find a kidney stone that has become stuck in the ureter on the left side. The stone is large enough to block the flow of urine from the kidney to the bladder. How much pain are you having and where is the pain located? I am in a great deal of pain. It is coming from my left side right here. Okay. Let use discuss your treatment options. Okay.

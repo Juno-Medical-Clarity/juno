@@ -1,0 +1,5 @@
+pmid:        35017338
+question:    66
+adaptation:  adaptation2
+title:       Acute kidney injury in children hospitalized with a relapse of nephrotic syndrome: A short-term outcome study
+sentences:   19

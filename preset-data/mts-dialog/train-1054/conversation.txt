@@ -1,0 +1,7 @@
+Doctor: Do you smoke or drink?
+Patient: No.
+Doctor: Any drugs?
+Patient: You mean like meth?
+Doctor: Yeah.
+Patient: No, never did it.
+Doctor: Okay.

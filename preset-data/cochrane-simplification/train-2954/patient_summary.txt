@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2954  |  gem_id: gem-cochrane-simplification-train-2955  |  doi: 10.1002/14651858.CD001245.pub2
+
+This review included 10 trials, totaling 1904 participants that investigated the effect of these drugs in people with SAH. Antifibrinolytic treatment does indeed reduce the risk of rebleeding, but does not improve survival or the chance of being independent in everyday activities. This may be due to an increase in one of the other common complications of SAH. We conclude that antifibrinolytic treatment should not routinely be given to people with SAH, but new randomised trials are needed to establish if short-term treatment might be beneficial.

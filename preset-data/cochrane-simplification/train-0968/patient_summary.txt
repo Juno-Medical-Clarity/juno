@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0968  |  gem_id: gem-cochrane-simplification-train-969  |  doi: 10.1002/14651858.CD006503.pub3
+
+Evidence from this review of 630 people in two trials suggests that, in patients with polycythaemia vera and with no clear indication or contraindication to aspirin therapy, low-dose aspirin may reduce the risk of thrombotic and all-cause mortality. No data were provided on mortality from bleeding episodes. No studies in participants with essential thrombocythaemia and with antiplatelet therapy other than aspirin have been published.

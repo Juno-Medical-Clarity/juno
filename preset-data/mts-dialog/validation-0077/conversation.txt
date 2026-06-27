@@ -1,0 +1,4 @@
+Doctor: Can you tell me some illness that might run in your family?
+Patient: No I don't know.
+Doctor: Are you sure?
+Patient: Yes.

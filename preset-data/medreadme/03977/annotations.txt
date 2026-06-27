@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        simple
+readability: 3.5
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Binge drinking'

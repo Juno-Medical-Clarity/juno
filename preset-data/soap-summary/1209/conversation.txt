@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1209
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are your parents doing? Unfortunately, they both passed away. Oh no, I'm so sorry to hear that. Thank you, its okay, I manage.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1199
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any history of heart attack? No. Any chest pain, palpitations or shortness of breath on exertion? No. How about your blood pressure? It's normal. Any swelling? No. Any history of irregular heartbeats? No.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0725
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Anything else that is going on? Just some pain in the buttock. Okay. I do not have anything else. Okay no fever, nausea, anything of that sort? Nope.

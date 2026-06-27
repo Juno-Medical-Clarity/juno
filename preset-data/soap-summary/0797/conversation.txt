@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0797
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you working these days? No, sir. I've been retired for a couple years now. Congratulations. I hope you're enjoying your time off. You bet. You mentioned having a smoking history. When did you quit and approximately how much did you smoke? Uh I quit about twenty seven years ago. If I had to guess, I smoked about two packs a day. Did you smoke only cigarettes? Cigars, too. How about alcohol? Hardly ever. Great.

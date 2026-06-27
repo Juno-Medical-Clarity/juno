@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0552
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you consume any kind of tobacco? No. What about smoking? No, I've never done it. Any kind of alcohol consumption? Nope.

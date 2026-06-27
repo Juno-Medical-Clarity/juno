@@ -1,0 +1,8 @@
+source:      wiki
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [3:6] 'medical-jargon-google-easy' -> 'urinary tract infection'
+  [10:13] 'medical-jargon-google-easy' -> 'positive urinary culture'

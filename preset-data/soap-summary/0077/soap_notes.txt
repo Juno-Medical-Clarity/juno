@@ -1,0 +1,26 @@
+# SOAP Notes — Sample 0077
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Sore throat for 4 days
+- Developing fever (no temperature checked, feels hot)
+- Difficulty swallowing solid foods (drinks okay)
+- Slight hoarseness of voice
+- No runny nose, cough, difficulty breathing, chest pain, congestion, headache, confusion, changes in hearing or vision, palpitations, shortness of breath, abdominal pain, nausea, vomiting, diarrhoea, constipation, fatigue, or unintentional weight loss
+
+Past Medical History:
+- PMHx: appendectomy at age 13
+- Immunisation: up to date except for HPV vaccine and flu shot this year
+- SocHx: lives with parents and 2 siblings, feels safe at home, not sexually active, no alcohol, smoking, or drug use, in grade 10, no bullying, no recent travel, maintains social distancing and mask-wearing at school
+- FHx: possible high blood pressure
+
+Objective:
+- Throat appears swollen and red
+
+Assessment:
+- Likely diagnosis: throat inflammation/swelling (possible causes: bacterial or viral infection, mono, strep throat, COVID-19)
+
+Plan:
+- Investigations: rapid strep test, COVID-19 test
+- Treatment: quarantine for 14 days or until COVID-19 test results are back or symptoms improve
+- Follow-up: management based on strep test result

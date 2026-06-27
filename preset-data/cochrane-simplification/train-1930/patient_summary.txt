@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1930  |  gem_id: gem-cochrane-simplification-train-1931  |  doi: 10.1002/14651858.CD010771.pub2
+
+We searched differing databases of published research for all papers relating to the accuracy of IQCODE for detecting dementia. We found only one study that tested diagnostic accuracy of IQCODE in a primary care/general practice setting. The study was of a select population (Japanese Americans) and the results may not be applicable to patients in other countries. We also noted issues in the study methods used and the reported results. Based on this single study we are unable to give guidance on how well IQCODE may function as a dementia assessment in primary care. More research is needed in this area as many patients with memory or thinking problems will first consult their general practitioner / family doctor.

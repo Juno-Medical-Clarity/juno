@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0157  |  gem_id: gem-cochrane-simplification-test-158  |  doi: 10.1002/14651858.CD005646.pub2
+
+Three trials examining the use of cotrimoxazole in preventing opportunistic infections were included in the review. When compared to rechallenge, desensitization appeared to result in fewer treatment stoppages and side effects in HIV-infected adult patients who had a previous mild or moderate reaction to cotrimoxazole. However, more data are needed for these results to be conclusive. It is important to note that reintroduction of cotrimoxazole was usually successful using either desensitization or rechallenge, with 44.4% to 79.4% of patients still on cotrimoxazole after six months in the three studies. Furthermore, in the studies reviewed, no strategy resulted in severe hypersensitivity reactions. Severe limitations of this review included the absence of data in paediatric populations and the minimal data from resource-poor populations.

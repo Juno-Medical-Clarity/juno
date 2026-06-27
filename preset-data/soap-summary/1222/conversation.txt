@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1222
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, how are you? I am doing well. Just here for a follow up visit. Are there any changes from the last visit in your social history or medical history? No. Whatever you wrote last time should be correct. I was here just three months ago. I was here December third of two thousand and three.

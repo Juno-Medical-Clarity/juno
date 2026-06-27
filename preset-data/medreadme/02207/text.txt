@@ -1,0 +1,1 @@
+DNA contains coded information in the form of genes, which can either be switched on or off.

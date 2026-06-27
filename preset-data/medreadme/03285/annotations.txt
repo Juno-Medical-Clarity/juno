@@ -1,0 +1,8 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [20:21] 'abbr-medical' -> 'TLRs'
+  [22:26] 'medical-jargon-google-easy' -> 'cytosolic pattern recognition receptors'

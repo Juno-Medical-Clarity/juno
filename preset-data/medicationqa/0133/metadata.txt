@@ -1,0 +1,5 @@
+drug_focus: Losartan
+question_type: Ingredient
+section_title: n/a
+source_url: n/a
+sample_id: 0133

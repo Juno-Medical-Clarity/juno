@@ -1,0 +1,48 @@
+# SOAP Notes — Sample 0238
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with 5-day history of sore throat (initially a tickle, now painful even with swallowing food), 3-day history of diarrhea (6-7 watery stools per day), and 3-day history of generalized myalgias (started in thighs and upper arms, progressed to upper back, now generalized muscle pain)
+- Decreased PO intake due to sore throat
+- Denies neck swelling or significant voice changes
+- Denies muscle weakness, but reports increased fatigue
+- Denies fever/chills, headache, rhinorrhea, anosmia, ageusia, cough, dyspnea, wheezing, sputum production, chest pain, dizziness, palpitations, N/V, urinary symptoms, or rashes
+- Reports mild abdominal tenderness associated with diarrhea
+- Denies unintentional weight changes
+
+PMHx:
+- Hypertension (on ramipril)
+- Hyperlipidemia (on rosuvastatin)
+- Appendectomy as a teenager
+- Denies prior hospitalizations (other than appendectomy) or surgeries
+- Denies drug allergies
+
+SocHx:
+- Lives with wife and son in London, ON
+- Has been self-isolating in a separate room and wearing a mask around family
+- Attended a 5-person family event 2 weeks ago in London, ON; learned that an attendee developed symptoms and is awaiting COVID-19 test results
+- Denies recent travel outside of the province
+- Denies smoking
+- Drinks 1-2 beers per week
+- Denies recreational drug use
+
+FHx:
+- Brother with hypertension
+- Father with non-melanoma skin cancer (treated with cryotherapy, no surgical intervention required)
+- Denies family history of heart/lung conditions, stroke, or other cancers
+
+Medications:
+- Rosuvastatin (hyperlipidemia)
+- Ramipril (hypertension)
+- Multivitamin
+
+Objective:
+- Vitals not provided
+
+Assessment:
+- Acute viral illness
+
+Plan:
+- COVID-19 testing
+- Additional lab investigations to rule out other etiologies
+- Advised to continue self-isolation pending test results

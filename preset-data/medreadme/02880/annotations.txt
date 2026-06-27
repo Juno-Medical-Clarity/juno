@@ -1,0 +1,9 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Extracellular vesicles'
+  [3:4] 'abbr-medical' -> 'EVs'
+  [8:11] 'medical-jargon-google-easy' -> 'phospholipid bilayer membranes'

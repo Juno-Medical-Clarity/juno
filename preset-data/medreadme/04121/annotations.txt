@@ -1,0 +1,9 @@
+source:      elife
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [1:10] 'medical-jargon-google-hard' -> 'neonatal Nestin - GFP + Pdgfrα − cell population'
+  [12:15] 'medical-jargon-google-hard' -> 'Schwann cell precursors'
+  [21:23] 'medical-jargon-google-easy' -> 'Schwann cells'

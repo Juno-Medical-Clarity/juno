@@ -1,0 +1,5 @@
+pmid:        34517257
+question:    28
+adaptation:  adaptation1
+title:       Dehydrozingerone ameliorates Lipopolysaccharide induced acute respiratory distress syndrome by inhibiting cytokine storm, oxidative stress via modulating the MAPK/NF-κB pathway
+sentences:   15

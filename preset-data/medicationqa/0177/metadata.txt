@@ -1,0 +1,5 @@
+drug_focus: Eliquis, Metoprolol
+question_type: Interaction
+section_title: Eliquis and Metoprolol tartrate drug interactions - from FDA reports
+source_url: https://www.ehealthme.com/drug-interaction/eliquis/metoprolol-tartrate/
+sample_id: 0177

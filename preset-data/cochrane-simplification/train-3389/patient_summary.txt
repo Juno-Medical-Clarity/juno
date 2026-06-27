@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3389  |  gem_id: gem-cochrane-simplification-train-3390  |  doi: 10.1002/14651858.CD004980
+
+This review found that sclerotherapy was better than surgery in terms of treatment success, complication rate and cost at one year, but surgery was better after five years. However, the evidence was not of very good quality and more research is needed.

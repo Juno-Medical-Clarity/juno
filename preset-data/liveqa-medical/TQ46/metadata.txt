@@ -1,0 +1,12 @@
+qid: TQ46
+source_file: 13319.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What is sleep paralysis and how does it affect the body?
+nlm_summary: What is sleep paralysis?
+
+focus_entities:
+  [F1] (Problem) sleep paralysis
+question_types:
+  [T1] INFORMATION

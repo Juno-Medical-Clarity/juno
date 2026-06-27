@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2405  |  gem_id: gem-cochrane-simplification-train-2406  |  doi: 10.1002/14651858.CD002765.pub3
+
+The review of trials found that NSAIDs can cause small, temporary negative effects on the kidneys in adults, but no one in the trials experienced renal failure or serious kidney problems. These results may not apply to children or adults with decreased kidney function

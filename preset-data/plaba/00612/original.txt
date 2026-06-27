@@ -1,0 +1,18 @@
+A majority of adults with persistently low serum alkaline phosphatase values carry a pathogenic or likely pathogenic variant in the ALPL gene and also have elevated alkaline phosphatase substrate values in serum and urine.
+These adults may fall within the spectrum of the adult form of hypophosphatasia.
+Introduction: The primary objective of this study was to determine what proportion of adults with persistently low serum alkaline phosphatase values (hypophosphatasemia) harbor mutations in the ALPL gene or have elevated alkaline phosphatase (ALP) substrates.
+Some adults with persistent hypophosphatasemia share clinical and radiographic features with the adult form of hypophosphatasia (HPP).
+In HPP, ALPL mutations result in persistent hypophosphatasemia and ALP substrate accumulation in plasma (pyridoxal-5-phosphate (PLP)) and urine (phosphoethanolamine (PEA)).
+Methods: Biochemical analyses, including serum ALP activity, bone-specific ALP, plasma PLP, and urine PEA, were performed in adults with persistent hypophosphatasemia.
+Mutational analyses were performed using PCR and Sanger sequencing methods.
+Gene variants were classified as pathogenic (P), likely pathogenic (LP), variants of uncertain significance (VUS), likely benign (LB), and benign (B).
+P and LP variants were further grouped as "Positive ALPL variants" and LB and B grouped as "Negative ALPL variants."
+Results: Fifty subjects completed all mutational and biochemical analyses.
+Sixteen percent carried only Negative ALPL variants.
+Of the remaining 42 subjects, 67% were heterozygous for a P variant, 19% for an LP variant, and 14% for a VUS.
+Biochemical results were highly inter-correlated and consistent with the expected inverse relationship between ALP and its substrates.
+Subjects harboring Positive ALPL variants showed lower ALP and BSAP and higher PLP and PEA values compared with subjects harboring only Negative ALPL variants.
+Approximately half of all subjects harboring Positive ALPL variants or ALPL VUS showed elevations in plasma PLP, and three quarters showed elevations in urine PEA.
+Conclusion: Adults with persistent hypophosphatasemia frequently harbor ALPL mutations and have elevated ALP substrates.
+These adults may fall within the spectrum of the adult form of hypophosphatasia.
+Clinicians should take note of persistent hypophosphatasemia in their patients and be cautious in prescribing bisphosphonates when present.

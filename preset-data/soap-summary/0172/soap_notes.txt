@@ -1,0 +1,52 @@
+# SOAP Notes — Sample 0172
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Shortness of breath for 6 days, worsening (has to stop walking from car to office)
+- Cough with rusty colored sputum, started around the same time as shortness of breath, constant and worsening
+- Feeling feverish and cold
+- Shortness of breath always present at baseline, worse with exertion
+- Tylenol helps regulate temperature
+- Sharp chest pain (7/10) that worsens with coughing, gradually improves when coughing stops
+- Chills at night
+- Runny nose a few days before onset of symptoms
+
+PMHx:
+- None
+
+SocHx:
+- Works in a crowded place with poor conditions and broken air conditioner, humid environment for the past year
+- Lives in a small, poorly maintained apartment, possible exposure to mold, dust, and asbestos
+- Smokes 10 cigarettes/day since age 20
+- Smokes 5mg cannabis sometimes
+- Drinks 5 alcoholic beverages/week
+- Poor exercise and diet (fast food and junk food)
+
+FHx:
+- None
+
+Exposure Hx:
+- Has had pet birds for 3 years without previous issues
+- No known exposure to tuberculosis
+- Potential workplace and home exposure to fumes, dust, mold, and asbestos
+
+Allergies:
+- None
+
+Medications:
+- None
+
+ROS:
+- No sore throat, headaches, nausea, vomiting, dizziness, fainting, palpitations, changes in bowel movements or urinary patterns, sleep or appetite issues
+- Some wheezing, not significant
+
+Objective:
+- (Physical examination findings not provided)
+
+Assessment:
+- Likely upper respiratory tract infection
+- Differential diagnosis: COPD exacerbation (due to significant smoking history)
+
+Plan:
+- Investigations (not specified)
+- Consider antibiotics or other medications depending on etiology (unless viral)

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1124
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had any heart problems in the past? I remember I did have something heart related but I don't know what that was. I do not understand any medical terms. Okay that's fine, I completely understand. We will try to look for your past medical history. I do have hypertension and diabetes, you know that right? Yes, type two diabetes. Do you know of any other things that you had in the past? Yes, four years back I had lung embolism. I also get frequent urine infections. Okay. And I can see on the file that you have high cholesterol and a gastric ulcer too. Yes, that's about right. Okay. What surgeries have you had in the past? I have had my appendix taken out, then C Section, cataract surgery and hernia repair done in the past.

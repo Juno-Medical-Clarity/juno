@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0352
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of cancer (specifics not remembered)
+- Family history of heart disease (specifics not remembered)
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

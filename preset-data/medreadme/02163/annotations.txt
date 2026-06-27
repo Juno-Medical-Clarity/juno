@@ -1,0 +1,10 @@
+source:      pnas
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [7:8] 'medical-jargon-google-hard' -> 'PUB4'
+  [10:12] 'medical-jargon-google-easy' -> 'molecular signatures'
+  [18:19] 'medical-jargon-google-easy' -> 'intraspecific'
+  [37:40] 'medical-jargon-google-easy' -> 'abiotic stress resistance'

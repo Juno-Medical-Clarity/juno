@@ -1,0 +1,1 @@
+Kolmogorov complexity was developed independently by Andrey Kolmogorov and Gregory Chaitin.

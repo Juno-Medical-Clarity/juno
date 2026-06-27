@@ -1,0 +1,1 @@
+Many duplicate genes maintain functional overlap despite divergence over long evolutionary time scales.

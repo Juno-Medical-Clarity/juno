@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1929  |  gem_id: gem-cochrane-simplification-train-1930  |  doi: 10.1002/14651858.CD004365.pub2
+
+The aim of the present review was to evaluate the evidence from randomised controlled trials for the efficacy and acceptability of antidepressant treatment in acute AN. Seven small studies were identified; four placebo-controlled trials did not find evidence of efficacy of antidepressants in improving weight gain, eating disorder or associated symptoms, as well as differences in completion rates. Meta-analysis of data was not possible for most outcomes. However, major methodological limitations of these studies (e.g. insufficient power to detect differences) prevent from drawing definite conclusions or recommendations for antidepressant use in acute AN. Further studies testing safer antidepressants in larger and well designed trials are needed to guide clinical practice.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1786  |  gem_id: gem-cochrane-simplification-train-1787  |  doi: 10.1002/14651858.CD005216.pub2
+
+We identified 38 studies and came to the conclusion that misoprostol is the drug of choice for medical pregnancy termination, preferably in combination with mifepristone which facilitates the effectiveness of misoprostol. Misoprostol works best when it is administered into the vagina. Women who had previously given birth could take misoprostol by mouth (under the tongue). Irrespective of the medication used for second trimester termination there is a considerable risk of surgical intervention because of vaginal bleeding or incomplete abortion.

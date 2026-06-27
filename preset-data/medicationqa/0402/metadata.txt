@@ -1,0 +1,5 @@
+drug_focus: carprofen
+question_type: Side effects
+section_title: ADVERSE REACTIONS
+source_url: https://www.drugs.com/pro/carprofen.html#s-34084-4
+sample_id: 0402

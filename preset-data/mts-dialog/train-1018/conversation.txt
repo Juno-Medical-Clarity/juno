@@ -1,0 +1,10 @@
+Doctor: Do you have allergies? How old are you, young man?
+Patient: Yes ragweed. I am twelve.
+Doctor: So basically, you are just congested?
+Patient: Yes that's right. The last ten days.
+Doctor: Any headache? What comes out of your nose?
+Patient: Yes I had a little yesterday. Clear boogers.
+Doctor: You feel hot?
+Patient: No.
+Doctor: Anyone sick at home?
+Guest_family: No.

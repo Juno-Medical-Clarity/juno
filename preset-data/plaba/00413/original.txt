@@ -1,0 +1,8 @@
+Objective: This post hoc analysis of the CSPPT (China Stroke Primary Prevention Trial) assessed the individual variation in total homocysteine (tHcy)-lowering response after an average 4.5 years of 0.8 mg daily folic acid therapy in Chinese hypertensive adults and evaluated effect modification by methylenetetrahydrofolate reductase (MTHFR) C677T genotypes and serum folate levels.
+Approach and results: This analysis included 16 413 participants from the CSPPT, who were randomly assigned to 2 double-blind treatment groups: either 10-mg enalapril+0.8-mg folic acid or 10-mg enalapril, daily and had individual measurements of serum folate and tHcy levels at baseline and exit visits and MTHFR C677T genotypes.
+Mean baseline tHcy levels were comparable between the 2 treatment groups (14.5±8.5 versus 14.4±8.1 μmol/L; P=0.561).
+After 4.5 years of treatment, mean tHcy levels were reduced to 12.7±6.1 μmol/L in the enalapril+folic acid group, but almost stayed the same in the enalapril group (14.4±7.9 μmol/L, group difference: 1.61 μmol/L; 11% reduction).
+More importantly, tHcy lowering varied by MTHFR genotypes and serum folate levels.
+Compared with CC and CT genotypes, participants with the TT genotype had a more prominent L-shaped curve between tHcy and serum folate levels and required higher folate levels (at least 15 ng/mL) to eliminate the differences in tHcy by genotypes.
+Conclusions: Compared with CC or CT, tHcy in the TT group manifested a heightened L-shaped curve from low to high folate levels, but this difference in tHcy by genotype was eliminated when plasma folate levels reach ≈15 ng/mL or higher.
+Our data raised the prospect to tailor folic acid therapy according to individual MTHFR C677T genotype and folate status.

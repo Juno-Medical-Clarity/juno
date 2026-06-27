@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0862
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is married.
+- Patient has seven children.
+- Patient works as a driver for FedEx.
+- Patient has never smoked.
+- Patient does not consume alcohol or use any other drugs.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No assessments or diagnoses provided.]
+
+Plan:
+- [No plan mentioned.]

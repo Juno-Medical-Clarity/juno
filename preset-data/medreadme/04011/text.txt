@@ -1,0 +1,1 @@
+In this article, we demonstrate the utility of the software package TrakEM2 to model interconnections of nerve fibers from consecutive EM sections and to efficiently reconstruct the neural networks encountered in different parts of a small brain, the early larval brain of the fruit fly Drosophila melanogaster.

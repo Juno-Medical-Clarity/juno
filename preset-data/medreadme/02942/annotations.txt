@@ -1,0 +1,8 @@
+source:      wiki
+side:        simple
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Q fever'
+  [8:10] 'medical-jargon-google-easy' -> 'Coxiella burnetii'

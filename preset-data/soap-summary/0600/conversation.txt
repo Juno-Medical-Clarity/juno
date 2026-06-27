@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0600
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What are you taking as a maintenance treatment? Oh, I take Flonase. And do you have a lot of issues after taking that? No I do not. That is good.

@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0987
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient is divorced and lives with girlfriend. 
+- Has one child with girlfriend and three other children from former wife. 
+- Used to smoke but quit fifteen years ago. 
+- Drinks beer, approximately one to two beers a day. 
+- Currently retired, previously worked in an iron company.
+
+Objective: 
+- [No objective data provided]
+
+Assessment: 
+- [No assessment provided]
+
+Plan: 
+- [No plan provided]

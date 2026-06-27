@@ -1,0 +1,5 @@
+drug_focus: marijuana
+question_type: Indication
+section_title: Medical marijuana
+source_url: https://medlineplus.gov/ency/patientinstructions/000899.htm
+sample_id: 0678

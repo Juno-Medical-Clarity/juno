@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0323
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient feels "pretty fair."
+- Patient reports "improving slowly."
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No clinician's interpretation provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education mentioned.)

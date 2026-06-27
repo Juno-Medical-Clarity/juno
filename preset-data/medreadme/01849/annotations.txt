@@ -1,0 +1,10 @@
+source:      elife
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [19:21] 'medical-jargon-google-easy' -> 'stem cell'
+  [29:30] 'medical-jargon-google-easy' -> 'myoblasts'
+  [32:36] 'medical-jargon-google-easy' -> 'induced pluripotent stem cells'
+  [41:43] 'medical-jargon-google-easy' -> 'muscular dystrophy'

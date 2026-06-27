@@ -1,0 +1,8 @@
+Doctor: Just want to ask you few questions.
+Patient: Okay shoot.
+Doctor: Do you have any nausea, vomiting?
+Patient: Yes to both.
+Doctor: How about fever?
+Patient: Yes, I do.
+Doctor: Any blood in sputum or chest pain?
+Patient: Yes, I do.

@@ -1,0 +1,34 @@
+# SOAP Notes — Sample 0269
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 5 days
+- Feeling hot, exhausted
+- Cough worsening, interrupting sleep
+- Dry cough
+- Chest pain after coughing, more in throat
+- Sore throat
+- Change in sense of smell (started this morning)
+- Night sweats (last night)
+- No nausea, vomiting, weight loss, chills, or shakes
+- No recent travel
+- No known contact with sick individuals
+
+Past Medical History:
+- PMHx: high blood pressure, type 2 diabetes
+- Medications: ramipril, metformin, vitamin D
+- Surgery: gallbladder removal (10 years ago)
+- Allergies: environmental (pollen)
+- FHx: brother and mother with asthma
+- SocHx: lives with wife and 2 children, works at a grocery store, drinks 3-4 beers per week, non-smoker, no substance use
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Possible viral infection (COVID-19 considered)
+
+Plan:
+- COVID-19 swab
+- Self-isolation for 14 days for patient and family
+- Await test results

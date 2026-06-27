@@ -1,0 +1,7 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 3.7
+split:       dev
+
+jargon_spans:
+  [17:18] 'abbr-medical' -> 'SMI'

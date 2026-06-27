@@ -1,0 +1,1 @@
+We found that T-SPOT. TB correctly detected more people with active TB than QFT-GIT; T-SPOT. TB would miss about 18 people out of every 100, whereas QFT-GIT would miss about 33 people out of every 100 with active TB.

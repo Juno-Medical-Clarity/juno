@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0531
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Ulcer on the right foot
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: Possible osteomyelitis (not confirmed)
+- Relevant medical history: Not mentioned
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Patient is aware of the need for antibiotics.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Possible osteomyelitis associated with the ulcer on the right foot.
+
+Plan:
+- Start antibiotics for the ulcer on the right foot.
+- Prescription to be sent to the pharmacy.

@@ -1,0 +1,194 @@
+# Smith Collection Transcript: RES0072
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: So what brings you in here
+
+Patient: Yeah ive had this sore throat it started really yesterday and ive been having problems with eating and drinking
+
+Doctor: OK so it just started yesterday has it occurred before
+
+Patient: Not this painful before
+
+Doctor: OK are you were having any trouble swallowing just solids or liquids as well
+
+Patient: It hurts to swallow both when i have something really cold it helps i mean its easier to drink but it still hurts
+
+Doctor: OK and are you having any other symptoms besides the sore throat
+
+Patient: Yeah ive been nauseous and i vomited a couple of times
+
+Doctor: OK just within the last day
+
+Patient: Yeah this is over the last day i vomited three times yesterday and once today
+
+Doctor: OK and uh what was the color of the vomit was it just food that you had eaten or was it green can you describe it a little bit
+
+Patient: Yeah so the first two times it was more of what like the food that i had eaten and then the last two times its been more yellowish green cause i havent really eaten much since yesterday afternoon
+
+Doctor: OK and did you notice any blood in it at all
+
+Patient: No blood
+
+Doctor: OK and do you have any idea what caused the nausea or vomiting was it after eating or like were there any triggers
+
+Patient: I think the first time was associated with like after eating but im not sure about the other ones
+
+Doctor: OK and with your sore throat are you having any kind of like a gag reflex or anything like that
+
+Patient: Yeah maybe a little bit maybe thats what prompted it
+
+Doctor: OK and has your sore throat been just constant or does it come come and go
+
+Patient: Its been pretty constant yeah
+
+Doctor: And how much would you rate the pain out of 1 to 10 1 being the least pain youve felt in your life 10 being the worst
+
+Patient: uh i would say uh a 6 its pretty painful
+
+Doctor: OK um have you noticed any kind of like swelling around your neck or any redness in your throat
+
+Patient: Yeah i felt my neck this morning in the front of it it does feel swollen
+
+Doctor: OK and are you coughing at all
+
+Patient: No i havent had a cough
+
+Doctor: OK so no cough but are you producing any sputum or yellow material
+
+Patient: No nothing like that
+
+Doctor: OK are you coughing up any blood at all
+
+Patient: No
+
+Doctor: Is there anything that makes it better or worse that you have tried
+
+Patient: Just cold drinks
+
+Doctor: OK and uh so youve also had nausea and vomiting are you having any kind of diarrhea or constipation
+
+Patient: No but ive had a sore stomach
+
+Doctor: OK and did that also start yesterday
+
+Patient: Yeah its just been like fairly generalized feels sore
+
+Doctor: OK so not in any particular area just kind of all over your stomach
+
+Patient: Yeah like i mean i guess sort of like in the center more so but i cant really put one finger on the spot
+
+Doctor: OK and is it constant or does it come and go
+
+Patient: It kind of comes and goes
+
+Doctor: OK and uh is it associated with eating food at all or does it get better when you defecate
+
+Patient: I havent noticed anything like that maybe its worse after vomiting those few times
+
+Doctor: I see ok yeah so yeah sometimes with the vomiting you can also get some some discomfort so no diarrhea or constipation though right
+
+Patient: No
+
+Doctor: uh so are you having any other symptoms like shortness of breath or chest pain or like a runny nose any any of those symptoms
+
+Patient: No nothing like that ive just had a headache as well but its pretty mild
+
+Doctor: OK have you tried any medications at all over the counter
+
+Patient: Yeah i took a tylenol cause i started feeling a little bit hot as well to help me sleep last night
+
+Doctor: OK have you been having any fevers or chills
+
+Patient: Yeah i felt hot but no chills
+
+Doctor: And did you manage to get like a temperature at all
+
+Patient: No
+
+Doctor: OK we can do that here today so you just felt like a bit hot last night
+
+Patient: Yeah last night i felt pretty hot sweaty
+
+Doctor: OK have you been in contact with anyone whos been sick or any recent travel at all
+
+Patient: I mean not that i can think of
+
+Doctor: OK uhm so im just going to list a few symptoms just let me know if you have any of them do you do you feel fatigued
+
+Patient: No
+
+Doctor: Do you feel that you have any kind of swelling in your extremities or any rashes or skin changes
+
+Patient: No i havent noticed anything like that
+
+Doctor: OK any changes in your urinary pattern
+
+Patient: No
+
+Doctor: OK any changes in your sleep or appetite
+
+Patient: No
+
+Doctor: OK any significant weight loss over the last month
+
+Patient: No my weight has been the same
+
+Doctor: OK and have you before this all started have you had any like congestion runny nose or any other cold like symptoms
+
+Patient: No ive felt well otherwise
+
+Doctor: OK uhm do you have any past medical conditions like asthma or anything else
+
+Patient: uh no
+
+Doctor: OK so youre healthy
+
+Patient: Yes
+
+Doctor: OK do you have any allergies
+
+Patient: No i dont
+
+Doctor: OK are you currently taking any medications regularly
+
+Patient: No
+
+Doctor: Any previous hospitalizations or surgeries
+
+Patient: No
+
+Doctor: Any family history of any lung conditions or heart conditions or any cancers
+
+Patient: No nothing like that
+
+Doctor: OK and currently do you work
+
+Patient: No im just going to school
+
+Doctor: OK and so currently where do you live and who do you live with
+
+Patient: Yeah so we live in a house with my parents and younger brother and weve been both back at school now part time and doing some of it at home online as well
+
+Doctor: OK so anyone at all that you notice at school that was sick around you
+
+Patient: No not that i am aware of
+
+Doctor: OK so yeah this is just a question that we ask everyone do you drink alcohol or smoke cigarettes or use any recreational drugs
+
+Patient: uh no
+
+Doctor: OK so those are all the questions i had to ask you anything that i may have missed or anything you want to tell me
+
+Patient: No thats everything thats been happening over the last couple of days
+
+Doctor: OK alright so yeah it seems that from your age and some of your symptoms we will definitely do a testing for strep throat it seems that you meet that criteria and we also want to make sure that since youre having other symptoms as well just to do a covid test just in case well take your temperature as well and we might give you some antibiotics as well to treat you and relieve some of those symptoms so yeah just hang tight well get the swab done for you for the covid test as well as strep throat and then well go from there
+
+Patient: Great thank you
+
+Doctor: Youre welcome take care

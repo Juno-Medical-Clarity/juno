@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0865
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Weakness, extreme tiredness, fever, chills, night sweats, weight loss (around 20 pounds), nausea, vomiting, dizziness when standing, enlargement of left testicle with yellow fluid discharge.
+- Severity: Potassium level of 7 (high), weakness and tiredness ongoing for more than half a year.
+- Duration: Symptoms have been present for over six months; testicle symptoms for about a year.
+- Associated symptoms: Fever, chills, night sweats, nausea, vomiting, dizziness, shortness of breath with exertion.
+- Relevant medical history: Previous antibiotic treatment with no improvement.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: High potassium level and associated symptoms causing significant concern.
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

@@ -1,0 +1,8 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [18:22] 'medical-jargon-google-easy' -> 'vector - borne infections'
+  [24:25] 'medical-jargon-google-easy' -> 'dengue'

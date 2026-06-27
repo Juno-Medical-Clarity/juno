@@ -1,0 +1,30 @@
+# SOAP Notes — Sample 0840
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Difficulty swallowing
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: 
+ - Congestive heart failure
+ - Chronic renal insufficiency
+ - Azotemia
+ - Hyperglycemia
+ - Coronary artery disease
+ - History of paroxysmal atrial fibrillation
+ - Depression
+ - Panic attacks while taking Doxepin
+ - Perioperative anemia
+- Family history: Not mentioned
+- Allergies: None mentioned
+- Other concerns: Patient expressed having a significant number of medical conditions and a history of a subdural hematoma that prevented Coumadin use.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No actions, medications, tests, or follow-up explicitly mentioned.

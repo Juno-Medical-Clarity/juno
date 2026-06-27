@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0744
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_clinician: I see here that he may need antibiotic therapy for possible cellulitis of his lower extremities. According to the patient, his symptoms started getting progressively worse over the past two days. Guest_clinician: Does he have a history of cellulitis? No.

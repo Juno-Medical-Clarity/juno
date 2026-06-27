@@ -1,0 +1,14 @@
+For the study's background, we studied disease-causing types of the brain-located gene called SCN1A, which is the most frequent cause of epileptic seizures or epilepsy.
+Physical attributes make up a wide spectrum including the severe childhood epilepsy, Dravet syndrome, epilepsy characterized by drug-resistant seizures, lower intelligence, and high death risk, and the milder genetic epilepsy with fever-like seizures plus (GEFS+), characterized by normal intelligence.
+Early identification of a child's risk for developing Dravet syndrome versus GEFS+ is key for giving disease-modifying treatments when available before intelligence impairment come up.
+Our objective was to develop and verify a disease prediction model using medical and genetic biomarkers for early identification of SCN1A-related epilepsies.
+For the study's methods, it was a multicenter group study comprising data from previous SCN1A-positive Dravet syndrome and GEFS+ patients consistently treated with genetic testing (March 2001-June 2020). Data includes age of seizure start and a newly-developed SCN1A genetic score.
+A training group was used to develop multiple disease prediction models that were verified using two independent groups.
+The main measure was the accuracy of the model predicting Dravet syndrome versus other GEFS+ phenotypes.
+1018 participants were included.
+The frequency of Dravet syndrome was 616/743 (83%) in the training group, 147/203 (72%) in test group 1 and 60/72 (83%) in test group 2.
+A high SCN1A genetic score - 133.4 versus 52.0 - and young age of start - 6.0 months versus 14.8 months -  were each linked with Dravet syndrome versus GEFS+.
+A combined 'SCN1A genetic score and seizure onset' model separated Dravet syndrome from GEFS+ more effectively and outperformed all other models.
+Model performance was replicated in both test group 1 and 2.
+In short, the prediction model allows measurable estimation at disease start whether a child will develop Dravet syndrome versus GEFS+, helping clinicians with treatment counseling and decisions on early use of specific treatments.
+This study provides strong evidence that a combined 'SCN1A genetic score and seizure onset' model identifies Dravet syndrome from other GEFS+ phenotypes.

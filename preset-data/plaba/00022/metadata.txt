@@ -1,0 +1,5 @@
+pmid:        33542006
+question:    2
+adaptation:  adaptation3
+title:       Atraumatic trismus induced by duloxetine: an uncommon presentation of acute dystonia
+sentences:   9

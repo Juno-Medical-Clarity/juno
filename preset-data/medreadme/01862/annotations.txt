@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [4:7] 'medical-name-entity' -> 'Review Manager software'

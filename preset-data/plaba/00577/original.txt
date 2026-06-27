@@ -1,0 +1,12 @@
+Hypovolemic shock exists as a spectrum, with its early stages characterized by subtle pathophysiologic tissue insults and its late stages defined by multi-system organ dysfunction.
+The importance of timely detection of shock is well known, as early interventions improve mortality, while delays render these same interventions ineffective.
+However, detection is limited by the monitors, parameters, and vital signs that are traditionally used in the intensive care unit (ICU).
+Many parameters change minimally during the early stages, and when they finally become abnormal, hypovolemic shock has already occurred.
+The compensatory reserve (CR) is a parameter that represents a new paradigm for assessing physiologic status, as it comprises the sum total of compensatory mechanisms that maintain adequate perfusion to vital organs during hypovolemia.
+When these mechanisms are overwhelmed, hemodynamic instability and circulatory collapse will follow.
+Previous studies involving CR measurements demonstrated their utility in detecting central blood volume loss before hemodynamic parameters and vital signs changed.
+Measurements of the CR have also been used in clinical studies involving patients with traumatic injuries or bleeding, and the results from these studies have been promising.
+Moreover, these measurements can be made at the bedside, and they provide a real-time assessment of hemodynamic stability.
+Given the need for rapid diagnostics when treating critically ill patients, CR measurements would complement parameters that are currently being used.
+Consequently, the purpose of this article is to introduce a conceptual framework where the CR represents a new approach to monitoring critically ill patients.
+Within this framework, we present evidence to support the notion that the use of the CR could potentially improve the outcomes of ICU patients by alerting intensivists to impending hypovolemic shock before its onset.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1221
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Did you have an allergic reactions to any medication? Nope. Okay.

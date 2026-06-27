@@ -1,0 +1,5 @@
+drug_focus: glucosamine
+question_type: Side effects
+section_title: And what about the downsides?
+source_url: https://www.health.harvard.edu/blog/the-latest-on-glucosaminechondroitin-supplements-2016101710391
+sample_id: 0365

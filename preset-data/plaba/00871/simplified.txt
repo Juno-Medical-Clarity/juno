@@ -1,0 +1,17 @@
+The most frequent type of dwarfism, achondroplasia (ACH), is caused by mutations in the fibroblast growth factor receptor 3 (FGFR3) gene.
+Mutations in the FGFR3 result in bone growth impairments of variable severity  including hypochondroplasia (HCH), thanatophoric dysplasia types I (TDI) and II (TDII and severe achondroplasia with developmental delay and acanthosis nigricans (SADDAN).
+To explore the molecular mechanisms that result in the different bone growth impairments and with varying severity, the authors investigated the properties of mutated versions of FGFR3.
+First, the authors checked for addition of a phosphate group to FGFR3. Attachement of phosphate groups can change the properites of the receptor and where it is located in the cell. They found that different parts of the receptor had phosphate groups depending on the type of mutation.
+Second, the authors looked for how long the phosphate groups were present in the mutated FGFR3 receptor.
+_
+_
+Generally, the mutated proteins showed longer presence of the phosphate group on FGFR3.
+Third, the authors investigated where in the cell the mutated proteins were located.
+Image analysis of the cells showed that mutated FGFR3 was in the part of the cell where proteins are made.
+Based on these data, the authors conclude that sustained presence of the phosphate group of FGFR3 causes bone growth impairment and the severity depends on the proportion of the mutated FGFR3 present in the region of the cell involved in synthesizing proteins.
+FGFR3 signaling, activates another protein called STAT1 and causes cartilage cells to stop dividing and dying.
+Phospholipase gamma (PLCgamma) mediates the activation of STAT1 by FGFR3.
+_
+_
+_
+The authors conclude that a  FGFR3 and two proteins, PLCgamma and STAT1 are responsible for cell death of cartiliage cells.

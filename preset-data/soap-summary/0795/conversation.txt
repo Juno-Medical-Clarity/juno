@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0795
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How's the low fat and low cholesterol diet going? Have you been finding it manageable? Yeah, I guess. I've tried to also reduce my salt intake to about two grams.

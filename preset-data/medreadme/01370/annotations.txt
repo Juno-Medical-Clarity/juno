@@ -1,0 +1,16 @@
+source:      plos_pathogens
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:4] 'medical-jargon-google-easy' -> 'CD8 + T cells'
+  [6:11] 'medical-jargon-google-hard' -> 'non-HLA-B * 27 / B57'
+  [14:16] 'medical-jargon-google-hard' -> 'cognate epitopes'
+  [16:17] 'medical-jargon-google-easy' -> 'upregulated'
+  [17:20] 'medical-jargon-google-hard' -> 'TIM - 3'
+  [25:28] 'medical-jargon-google-easy' -> 'regulatory T cells'
+  [29:30] 'abbr-medical' -> 'Tregs'
+  [32:35] 'medical-jargon-google-hard' -> 'TIM - 3'
+  [36:39] 'medical-jargon-google-hard' -> 'Galectin - 9'
+  [40:43] 'abbr-medical' -> 'Gal - 9'

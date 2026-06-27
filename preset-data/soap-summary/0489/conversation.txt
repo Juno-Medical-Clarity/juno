@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0489
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello! What brings you back into the clinic today? I came back because I increased my methothrexate as we discussed the last time I was here. A few days later I started getting multiple canker sores in my mouth. They hurt. I am sorry. It is likely that the increased dosage of your methothrexate is the cause of the mouth sores. Have you experienced a decreased appetite, nausea, abdominal discomfort or diarrhea? No. It is painful to eat with the sores, but I still have an appetite. Have you had any new rashes, or hair loss? No. I would like to get some bloodwork done. I would also recommend we decrease your dosage back to your previous amount. I would also like to see you back in two weeks to see how you are doing. Okay.

@@ -1,0 +1,1 @@
+We can partially construct equations of motion for this shape space, and within these dynamics we find a set of attractors that can be used as a rigorous definition of behavioral state.

@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [13:17] 'medical-jargon-google-easy' -> 'progestogen - only pill'
+  [21:22] 'medical-jargon-google-easy' -> 'desogestrel'

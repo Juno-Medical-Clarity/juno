@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1405  |  gem_id: gem-cochrane-simplification-train-1406  |  doi: 10.1002/14651858.CD004534.pub3
+
+This review looked at the results of 38 studies. The results showed no convincing evidence that the programmes decreased relationship violence, or that they improved participants' attitudes, behaviours and skills related to relationship violence. The results showed that participants' knowledge about relationships improved slightly following the programmes. These results should be interpreted with caution, as individual studies differed in the types of participants and interventions that they used and the ways in which changes were measured. None of the studies looked at the effect of the programmes on physical and mental health. Further studies, which follow participants for a longer period of time and which look at the relationship between attitudes, knowledge, behaviour, skills and the number of times relationship violence occurs, are required to improve our understanding of how well these programmes work.

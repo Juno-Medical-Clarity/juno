@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0486
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Just want to ask you few questions. Okay shoot. Do you have any nausea, vomiting? Yes to both. How about fever? Yes, I do. Any blood in sputum or chest pain? Yes, I do.

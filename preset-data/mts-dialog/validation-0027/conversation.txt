@@ -1,0 +1,6 @@
+Doctor: Have you ever had surgery?
+Patient: One too many times.
+Doctor: Which ones?
+Patient: I had my appendix taken out and glaucoma surgery fairly recently. I also had my gallbladder taken out ten years ago and a partial colon resection due to colon cancer in nineteen sixty one.
+Doctor: Any recurring episodes of colon cancer?
+Patient: No, thankfully.

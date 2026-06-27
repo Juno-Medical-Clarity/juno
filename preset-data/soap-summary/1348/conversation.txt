@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1348
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Well, looking at your hand x ray, the bone looks in alignment, and I don't see any effusion. Any tenderness or pain? Ah, not really! There is no asymmetry. Can you move your hand up and down? Now rotate it. Can you move your fingers? Yes, I can do all of that, no problem at all. Can you bend your hand? Yes. Perfect.

@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'extrinsic noise'
+  [10:12] 'medical-jargon-google-easy' -> 'intrinsic noise'
+  [15:21] 'medical-jargon-google-easy' -> 'cell - to - cell heterogeneity'
+  [22:24] 'medical-jargon-google-hard' -> 'nuclear ERK'

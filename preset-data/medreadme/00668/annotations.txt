@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [2:5] 'medical-jargon-google-easy' -> 'membrane ceramide accumulation'
+  [5:6] 'general-complex' -> 'downmodulated'
+  [6:14] 'medical-jargon-google-hard' -> 'chemokine - induced T cell motility on fibronectin'

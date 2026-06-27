@@ -1,0 +1,10 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [6:8] 'general-complex' -> 'mapping review'
+  [9:11] 'medical-jargon-google-easy' -> 'non-pharmacological interventions'
+  [19:20] 'medical-jargon-google-easy' -> 'inpatient'
+  [30:31] 'general-complex' -> 'taxonomy'

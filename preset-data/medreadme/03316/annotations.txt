@@ -1,0 +1,6 @@
+source:      MSD
+side:        simple
+readability: 3.5
+split:       dev
+
+jargon_spans: (none)

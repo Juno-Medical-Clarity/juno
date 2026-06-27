@@ -1,0 +1,46 @@
+# SOAP Notes — Sample 0163
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with chills, shortness of breath (SOB), and chest pain for the past 4 days
+- SOB started first, followed by chills, and now chest pain with deep inspiration (pleuritic chest pain)
+- Chest pain is central, feels like it is pushing up on the chest wall, sharp in nature, and relieved with expiration
+- Chills for the past 3 days, feels hot but has not checked temperature
+- Slight runny nose for the past 7 days
+- Denies cough, dizziness, syncope, leg swelling, palpitations, night sweats, changes in bowel movements, appetite, urination, or weight
+- Reports being around people coughing at the grocery store recently, but everyone was wearing masks
+- Denies sick contacts, recent immobilization, or loss of taste/smell
+
+PMHx:
+- Diabetes mellitus type 2 (diagnosed 10 years ago)
+- Hypertension
+- Hyperlipidemia
+- Cholecystectomy 12 years ago without complications
+
+Medications:
+- Insulin (diabetes)
+- Ramipril (hypertension)
+- Rosuvastatin (hyperlipidemia)
+
+Allergies: NKDA
+
+SocHx:
+- Retired, lives with husband in a condo (husband is well)
+- Denies occupational exposures (dust, mold, asbestos, pests)
+- Former smoker (25 pack-year history), quit 20 years ago
+- Occasional alcohol use (glass of wine), denies recreational drug use
+
+FHx: Denies family history of lung conditions, heart conditions, or bowel cancers
+
+Objective:
+- Vitals pending
+
+Assessment:
+- Differential diagnosis: COVID-19, pneumonia (viral or bacterial), pleurisy
+
+Plan:
+- COVID-19 testing
+- CBC, CMP
+- Chest X-ray
+- Reassess need for hospitalization and antibiotics based on results
+- Supportive care and symptom management

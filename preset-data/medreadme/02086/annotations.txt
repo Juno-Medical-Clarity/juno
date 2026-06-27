@@ -1,0 +1,9 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [11:13] 'medical-jargon-google-easy' -> 'signal proteins'
+  [26:29] 'general-complex' -> 'Apparent Measurement Error'
+  [30:31] 'abbr-general' -> 'AME'

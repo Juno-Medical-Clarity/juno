@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1759  |  gem_id: gem-cochrane-simplification-train-1760  |  doi: 10.1002/14651858.CD004668
+
+The review found 18 trials in 1174 children who had received this sort of training or another treatment. Although an alarm on its own was better than the dry bed training on its own, there was some evidence that using them together might reduce the relapse rate after stopping alarm treatment, and without the adverse effects of drug treatment. However, both using an alarm and dry bed training needs time and effort from the child and family. There was not enough research comparing complex interventions with other techniques.

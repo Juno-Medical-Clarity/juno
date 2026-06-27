@@ -1,0 +1,10 @@
+Doctor: Any past medical problems I should know of?
+Patient: No, ma'am. I am forty three and this is the first time I have had a major issue. It's only been this past month where I've felt weaker than usual. I'm much more tired and short of breath whenever I move around.
+Doctor: Any recent weight loss?
+Patient: Yeah, I actually lost about fifteen pounds in less than two or three months.
+Doctor: How's your appetite? Any nausea, vomiting, diarrhea?
+Patient: Appetite is pretty fine. No nausea, vomiting, or diarrhea.
+Doctor: How about fever, chills, sweats, cough?
+Patient: No, ma'am.
+Doctor: And any chest pain with your shortness of breath?
+Patient: No, ma'am.

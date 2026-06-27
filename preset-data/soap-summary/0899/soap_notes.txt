@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0899
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports an ulcer in the right ankle that is not healing.
+- Severity of the ulcer is implied to be significant as it is the primary concern for the visit.
+- Duration of the ulcer is not specified.
+- Associated symptoms are not mentioned.
+- Relevant medical history is not provided.
+- Family history is not mentioned.
+- No allergies are stated.
+- Patient expresses concern about the healing of the ulcer.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

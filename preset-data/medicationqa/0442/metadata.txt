@@ -1,0 +1,5 @@
+drug_focus: Strattera
+question_type: Action/time
+section_title: How long does it usually take for Strattera to work?
+source_url: https://www.psycom.net/strattera-atomoxetine
+sample_id: 0442

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0449
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, what do you do for a living, sir? Right now, I'm a truck driver, sir. Wow, that's hard work. Are you working right now? No, I can't right now, I'm on sick leave. Are you married? Yes, to my wonderful wife. She's helping to take care of me. Do you two have any children? Yes, we have three. We all live together, and for that I'm very thankful. Do you smoke, sir? Yeah, I smoke about two packs a day. How about alcohol? Do you drink? No, just smoking for me. How about more illicit substances, have you used illegal or prescription drugs inappropriately? Oh, absolutely not. That's good. Do you have any other medical conditions that run in your family that I should know about? No, not that I know of.

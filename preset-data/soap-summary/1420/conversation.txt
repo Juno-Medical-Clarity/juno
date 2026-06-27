@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1420
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, sir, are you married? Yes, I'm married to my lovely wife. That's great, so, what did you do for a living? I was a Pepsi Cola truck driver, but thankfully, I'm retired. Congratulations on your retirement. What seems to be the problem today then? Thank you, it's nice to be done with that. The years took their toll though, I have a lot of pain in my back and knees. Ah, yes, those years of sitting and lifting eventually catch up to everyone.

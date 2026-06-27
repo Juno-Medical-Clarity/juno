@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0984
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- The patient expresses relief about not having anemia or any other blood disorders.
+
+Objective:
+- Lymph nodes are nonpalpable.
+- No swollen glands observed.
+
+Assessment:
+- No assessment information provided.
+
+Plan:
+- No plan information provided.

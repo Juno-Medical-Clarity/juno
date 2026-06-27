@@ -1,0 +1,5 @@
+pmid:        33216016
+question:    75
+adaptation:  adaptation3
+title:       HbF-promoting polymorphisms may specifically reduce the residual risk of cerebral vasculopathy in SCA children with alpha-thalassemia
+sentences:   5

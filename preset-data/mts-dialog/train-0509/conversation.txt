@@ -1,0 +1,6 @@
+Doctor: Did you ever have any reaction to any medication given? Any known allergies?
+Patient: No.
+Doctor: Was there any swelling where your lymphnodes are?
+Patient: No.
+Doctor: Was there ever any complaint of abnormal lymph nodes?
+Patient: No.

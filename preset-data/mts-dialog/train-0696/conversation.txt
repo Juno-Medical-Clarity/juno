@@ -1,0 +1,5 @@
+Doctor: Your condition and all your vital signs look stable to me right now. You must be very careful as your condition can get poor or it might improve as well.
+Patient: Okay, so what do you recommend?
+Doctor: Do you have any support system? Is there anyone at home to take care of you?
+Patient: Yes, my son and his family lives with me. They are very caring.
+Doctor: That is good. Do take care of yourself and let me know if your condition worsens.

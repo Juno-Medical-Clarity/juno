@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1123
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history: high blood pressure and diabetes.
+- No family history of nervous system disorders (e.g., multiple sclerosis, Alzheimer's disease, Parkinson's disease, epilepsy, or stroke).
+- Patient has a son, born on October 31, 2008.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment information provided]
+
+Plan:
+- [No plan information provided]

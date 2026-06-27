@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3334  |  gem_id: gem-cochrane-simplification-train-3335  |  doi: 10.1002/14651858.CD004901.pub2
+
+This review included 38 randomised controlled studies, involving 3679 women. Vaginal misoprostol was as effective as other agents in inducing labour and achieving vaginal birth within 24 hours, with a reduction in the occurrence of maternal side effects. Side effects include gastrointestinal disturbance (nausea, vomiting, diarrhoea). The information on rare adverse events (including uterine rupture) is limited.

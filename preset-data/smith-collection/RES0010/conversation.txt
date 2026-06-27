@@ -1,0 +1,160 @@
+# Smith Collection Transcript: RES0010
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you today
+
+Patient: Yeah so i have like a really sore throat started last night
+
+Doctor: Oh im sorry uh can you can you tell me a little bit more about that so you um youve only had this sore throat for one night
+
+Patient: Yeah i just i think its getting worse its at the back of my throat and its kind of burning
+
+Doctor: Mmm ok do you have um do you have any other symptoms
+
+Patient: um like i think my voice is kind of like raspy i feel like i might be losing my voice
+
+Doctor: OK do you do you have a runny nose
+
+Patient: No not that ive noticed i said it hurts when i swallow right i dont have a runny nose
+
+Doctor: No ok and do you have any pain in your ears
+
+Patient: uh i havent noticed no
+
+Doctor: Any any sinus headaches any sort of pain in and around your cheeks or pain in your forehead as youre trying to bend over
+
+Patient: uh no no headache
+
+Doctor: Nothing like that ok have you had any pain in your chest
+
+Patient: No
+
+Doctor: Any difficulties breathing
+
+Patient: No
+
+Doctor: OK um any cough
+
+Patient: No
+
+Doctor: Alright so all youve experienced so far is since yesterday evening youve had a sore throat with difficulty swallowing and hoarse voice have you experienced any malaise or do you feel feverish or do you have any chills
+
+Patient: I definitely feel like really tired i think i had i think i had chills like yesterday and i think when i first got here they took my temperature and said it was like it was like pretty high the nurse when i first got here
+
+Doctor: I see i see um have you um im just going to ask you about a couple other symptoms just um just to rule out some causes um have you had any difficulties breathing
+
+Patient: No no thats ok
+
+Doctor: OK um you have been have you had any muscle aches or pains
+
+Patient: No not not that
+
+Doctor: OK have you noticed that your eyes have been more runny more red anything like that
+
+Patient: No no nothing in my eyes
+
+Doctor: OK any pain in your belly
+
+Patient: uh its like my whole bellys been like a little like sore or but its its pretty much like mild
+
+Doctor: When did that start
+
+Patient: Yeah just like this morning i dont know i havent been eating a lot cause it just hurts to eat i dont know if im just hungry like ive just been eating like ice cream cause it feels nice
+
+Doctor: Yeah
+
+Patient: But i probably shouldnt just eat ice cream
+
+Doctor: Ahaha um have you have you had any changes in your bowel movements any diarrhea any constipation
+
+Patient: uh no
+
+Doctor: Alright alright any nausea or vomiting
+
+Patient: uh no vomiting i feel like my throat it just feels so like swollen but when im trying to talk with makes me feel a little bit nauseated
+
+Doctor: Your throat feels swollen have you have you noticed any changes in have you found that its difficult for you to talk is your speech slurred
+
+Patient: uh no its not slurred its just like sore because its kind of like when im swallowing you know
+
+Doctor: Have you noticed any changes in your sense of smell do you feel like you can smell less
+
+Patient: I think thats pretty normal
+
+Doctor: OK what about taste i know that youre not eating much cause you cant swallow but do you feel like you can taste your sense of taste is decreased
+
+Patient: uh uh no i think thats good yeah yeah i think i mean mostly eating like really cold stuff but i can taste it all
+
+Doctor: Alright alright um has it ever happened to you before
+
+Patient: uh no like i i had a cold like 2 weeks ago but it wasnt like this though that was more like runny nose and stuff
+
+Doctor: I see um have you done anything recently have you had contact with um with anyone who is sick
+
+Patient: uh my my girlfriend said that she was kind of that her throat was feeling a little sore i dont think it was as bad as as this but yeah she said that
+
+Doctor: Have you um have you been spending time with her recently
+
+Patient: I havent i havent seen her in a few days but yeah like i saw her i saw her really a few days ago
+
+Doctor: OK ok um have you traveled anywhere
+
+Patient: No
+
+Doctor: OK
+
+Patient: No i wish
+
+Doctor: Do you feel like youve had any contact with anyone with who might have covid
+
+Patient: Oh i dont i dont think so mostly just to my girlfriend and my roommate right now
+
+Doctor: Yeah yea and do do you do you know if theyve been recently tested or if they might have had contact with anyone um who maybe
+
+Patient: um i dont think so
+
+Doctor: OK
+
+Patient: Theyre theyre pretty like theyre pretty they just have online classes and they only really like leaves to get groceries and like go exercise outside
+
+Doctor: I see ok alright um alright im just going to ask you a couple of questions about your past medical history do you have any medical conditions
+
+Patient: Oh no no im like pretty healthy alright alright
+
+Doctor: Nothing like asthma or copor any respiratory problems
+
+Patient: No no
+
+Doctor: No and are you taking any medications including any over the counter medications or herbal medications
+
+Patient: um no
+
+Doctor: Alright um do you have any allergies including environmental allergies
+
+Patient: Oh again a little bit of a runny nose like in the spring but thats it
+
+Doctor: OK um alright and do you smoke
+
+Patient: uh no
+
+Doctor: No ok do you consume alcohol
+
+Patient: I drink like a couple beers on the weekends but like i i yeah i play sports a lot and i dont like a lot of time on the weekends so i dont go out
+
+Doctor: OK alright do you consume any other drugs
+
+Patient: No no
+
+Doctor: No ok and you mentioned that you live with your roommate and you havent had contact with anybody other than your roommate and your girlfriend ok um have you
+
+Patient: All my classes are online
+
+Doctor: Alright alright um ok well ill i ill go speak to my attending and we will i will discuss your medical history and with him and i will come back and discuss the plan with you
+
+Patient: OK cool thank you

@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0644
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- New emotional outbursts.
+- Recent weight gain.
+- Fatigue.
+- Concern about a strange and discolored toenail.
+
+Objective:
+- Bloodwork shows an underactive thyroid.
+
+Assessment:
+- Underactive thyroid (hypothyroidism).
+- Onychomycosis (nail fungus).
+
+Plan:
+- Start medication levothyroxine for hypothyroidism.
+- Recheck bloodwork in one month to assess thyroid response.
+- Prescribe topical treatment for onychomycosis, to be applied daily on the affected nail.

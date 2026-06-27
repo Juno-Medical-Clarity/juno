@@ -1,0 +1,6 @@
+Doctor: What do you do for living?
+Patient: I am an officer at United States Marine office, artillery repair specialist.
+Doctor: Do you drink alcohol?
+Patient: I use to drink socially but stopped two years back.
+Doctor: How about smoking and drugs?
+Patient: No not that.

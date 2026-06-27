@@ -1,0 +1,5 @@
+Doctor: Hello, how are you?
+Patient: Hi Doctor, I am good.
+Doctor: So, what is going on with you?
+Patient: Well, I am having nausea and I just want to get it checked.
+Doctor: Okay.

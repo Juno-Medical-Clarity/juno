@@ -1,0 +1,40 @@
+# SOAP Notes — Sample 0001
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Sore throat for 3 days, not improving
+- Painful to swallow solids
+- Fever started 2 days ago, measured at 38.8°C
+- Fatigue
+- Tonsils feel swollen
+- Throat looks red and angry
+- No voice changes, neck swelling, runny nose, red/itchy eyes, eye discharge, loss of smell/taste, headache, cough, shortness of breath, wheezing, chest pain, fainting, dizziness, palpitations, sputum/blood production, nausea, vomiting, abdominal pain, diarrhea, constipation, urinary problems, skin changes/rashes, or muscle aches/body pains
+
+PMHx:
+- Type 1 diabetes, managed with insulin pump, sees endocrinologist, stable with past episodes of hypoglycemia when younger
+- No allergies
+- Immunizations up to date
+- No hospitalizations or surgeries
+
+SocHx:
+- Grade 10 student, half days in-person and online
+- No recent travel or sick contacts at school
+- Lives with parents and 3 siblings; younger sister had sore throat 1 week ago without fever, resolved in 2 days without treatment
+- Tried cigarette once, does not smoke regularly
+- Never tried cannabis
+- Not sexually active
+
+FHx:
+- Grandfather had lung cancer in late 60s, was a smoker
+
+Objective:
+- Vitals not provided
+- Examination: Tonsils appear swollen and erythematous
+
+Assessment:
+- Likely strep throat (group A strep pharyngitis)
+- Differential: Viral illness
+
+Plan:
+- Rapid strep antigen test (throat swab)
+- COVID swab

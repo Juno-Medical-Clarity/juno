@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.0
+split:       dev
+
+jargon_spans:
+  [6:7] 'abbr-medical' -> 'PSHE'

@@ -1,0 +1,5 @@
+drug_focus: Cymbalta and Effexor
+question_type: Interaction
+section_title: Summary
+source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4919171/
+sample_id: 0335

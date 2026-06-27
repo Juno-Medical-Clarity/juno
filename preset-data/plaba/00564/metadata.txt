@@ -1,0 +1,5 @@
+pmid:        33135932
+question:    43
+adaptation:  adaptation1
+title:       New frontiers in cardiac devices
+sentences:   5

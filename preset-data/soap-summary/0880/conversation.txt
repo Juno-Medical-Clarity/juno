@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0880
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello. Are you ready for your surgery today? Can we reschedule? I'm too scared to do it. It'll be fine. Don't worry too much about it. Have you ever had a surgery before? Never. What if something goes wrong? You have nothing to worry about. I've done this procedure multiple times, and everyone was fine after. Thank you, Doctor. Let's get started then.

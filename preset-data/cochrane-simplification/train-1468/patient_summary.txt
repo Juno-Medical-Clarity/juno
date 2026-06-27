@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1468  |  gem_id: gem-cochrane-simplification-train-1469  |  doi: 10.1002/14651858.CD002053.pub3
+
+Trials of sedatives have generally been of poor quality. Individual studies have reported that use of phenobarbitone compared to supportive care alone reduces the amount time an infant needs supportive care, is better than diazepam at preventing treatment failure and reduces the severity of withdrawal in infants treated with a opiate. In infants treated with an opiate, the addition of a sedative (phenobarbitone or clonidine) may reduce withdrawal severity, although safety and efficacy need confirming. The long term effects of use of phenobarbitone on an infant's development have not been determined.

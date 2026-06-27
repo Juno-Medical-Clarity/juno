@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 0848
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Chest pain, difficulties with breathing
+- Severity: Not explicitly mentioned
+- Duration: Not explicitly mentioned
+- Associated symptoms: None mentioned
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Concerns: Patient asked when they should start to feel better.
+
+Objective:
+- Chest X-ray findings: Diffuse pulmonary edema (fluid in the lungs)
+
+Assessment:
+- Diagnosis: Diffuse pulmonary edema
+- Clinical impression: Fluid accumulation in the lungs causing chest pain and breathing difficulties
+
+Plan:
+- Start a course of antibiotics to prevent possible infection
+- Prescribe Furosemide to reduce fluid accumulation in the lungs
+- Patient should expect to start feeling better within three to five days

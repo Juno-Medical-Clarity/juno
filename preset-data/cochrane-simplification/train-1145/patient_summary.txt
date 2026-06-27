@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1145  |  gem_id: gem-cochrane-simplification-train-1146  |  doi: 10.1002/14651858.CD004239.pub3
+
+This review included seven randomised controlled trials with a total of 266 participants. Four trials studied the effects of non-steroidal anti-inflammatory agents (NSAIDs) in chronic CMO while the other three examined the effect of NSAIDs in acute CMO. This review found two trials which showed that topical NSAID (0.5% ketorolac tromethamine ophthalmic solution) has a positive effect on chronic CMO and a third trial which was supportive of this finding (albeit not statistically significantly so). One study suggested no effect and our review suggests further work is needed for a more conclusive decision regarding use of NSAIDS in chronic CMO. Similarly, the effects of NSAIDs in acute CMO remain unclear and this too needs further investigation.

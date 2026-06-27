@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0785
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Last menstrual period was 3 weeks ago.
+- Heavy menses due to fibroids.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

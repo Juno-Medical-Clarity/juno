@@ -1,0 +1,5 @@
+pmid:        25886975
+question:    67
+adaptation:  adaptation2
+title:       Effectiveness of physiotherapy exercise following total knee replacement: systematic review and meta-analysis
+sentences:   20

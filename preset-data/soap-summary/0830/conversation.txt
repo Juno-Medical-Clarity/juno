@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0830
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Just to debrief, we will rule out angina related heart problems while evaluating your jaw pain. Oh can that be related to each other? Yes they might be. What else? Pardon? I am asking anything else? We have discussed this before, but keep track of your high cholesterol and hypothyroid.

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1254
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Dull pain on the left side, difficulty with urination.
+- Severity: Dull pain is better than before, but urination is still a little difficult.
+- Duration: Improvement noted today, but duration of symptoms not specified.
+- Associated Symptoms: None explicitly mentioned.
+- Relevant Medical History: Bruised left kidney due to a car accident years ago.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Concerns: Patient is feeling much better today.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

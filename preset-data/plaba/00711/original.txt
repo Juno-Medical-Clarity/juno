@@ -1,0 +1,11 @@
+Pallister-Hall syndrome (PHS) is a rare disorder caused by mutations in GLI3 that produce a transcriptional repressor (GLI3R).
+Individuals with PHS present with a variably penetrant variety of urogenital system malformations, including renal aplasia or hypoplasia, hydroureter, hydronephrosis or a common urogenital sinus.
+The embryologic mechanisms controlled by GLI3R that result in these pathologic phenotypes are undefined.
+We demonstrate that germline expression of GLI3R causes renal hypoplasia, associated with decreased nephron number, and hydroureter and hydronephrosis, caused by blind-ending ureters.
+Mice with obligate GLI3R expression also displayed duplication of the ureters that was caused by aberrant common nephric duct patterning and ureteric stalk outgrowth.
+These developmental abnormalities are associated with suppressed Hedgehog signaling activity in the cloaca and adjacent vesicular mesenchyme.
+Mice with conditional expression of GLI3R were utilized to identify lineage-specific effects of GLI3R.
+In the ureteric bud, GLI3R expression decreased branching morphogenesis.
+In Six2-positive nephrogenic progenitors, GLI3R decreased progenitor cell proliferation reducing the number of nephrogenic precursor structures.
+Using mutant mice with Gli3R and Gli3 null alleles, we demonstrate that urogenital system patterning and development is controlled by the levels of GLI3R and not by an absence of full-length GLI3.
+We conclude that the urogenital system phenotypes observed in PHS are caused by GLI3R-dependent perturbations in nephric duct patterning, renal branching morphogenesis and nephrogenic progenitor self-renewal.

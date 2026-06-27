@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2721  |  gem_id: gem-cochrane-simplification-train-2722  |  doi: 10.1002/14651858.CD003802.pub3
+
+There are a number of studies that suggest a relationship between decline of melatonin function and the symptoms of dementia. Meta-analysis was conducted on data from three randomised, placebo controlled trials that were designed to evaluate melatonin for managing dementia-related cognitive changes; data also were pooled from two of these trials that evaluated melatonin for managing mood and behavioral disturbances. Significantly improved outcomes were found from the meta-analysis of psychopathologic behavior and mood scale scores. Melatonin treatment may be effective for the treatment of dementia-related psychopathologic behavior disturbances. No evidence was found to support the effectiveness of melatonin for the treatment of cognitive impairment.

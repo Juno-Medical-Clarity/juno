@@ -1,0 +1,3 @@
+Guest_family: What do you think doctor, what does she have?
+Doctor: Well, I think she has hay fever. Otherwise she looks like a healthy two year old.
+Guest_family: Hm, okay.

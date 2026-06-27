@@ -1,0 +1,7 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'neonatal units'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1042
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What are you taking for allergies? Claritin. Okay. For my allergic rhinitis.

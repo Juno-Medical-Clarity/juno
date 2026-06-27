@@ -1,0 +1,5 @@
+drug_focus: butalbital
+question_type: Ingredient
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ce47777f-8cf7-4f53-b48f-165b83516896&audience=consumer
+sample_id: 0583

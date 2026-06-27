@@ -1,0 +1,5 @@
+drug_focus: Insulin, Glycogen
+question_type: Information
+section_title: How insulin and glucagon work together
+source_url: https://www.healthline.com/health/diabetes/insulin-and-glucagon
+sample_id: 0160

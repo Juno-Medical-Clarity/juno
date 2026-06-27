@@ -1,0 +1,11 @@
+The cystic fibrosis transmembrane conductance regulator (CTFR) is a chloride transporter that apparently has evolved from an ancestral active transporter.
+Key to the CFTR's switch from pump to channel function may have been the appearance of one or more "lateral portals."
+Lateral portals connect the cell's inner fluid to the channel on the cell boundary, allowing a continuous pathway for chloride ion movement.
+However, these portals are the least studied part of the chloride transport pathway. Even the number of active portals in unknown, and if multiple portals do exists, their relative contributions are unknown.
+Here, we use electrical recordings to identify the contributions of positively charged protein segments located in CFTR's extensions to portal function.
+Mutation-controlled silencing of several charged protein segments reduced single-channel chloride transport.
+However, these same mutations uniquely affected channel blocking by specific inner-cell, negatively-charged particles.
+We considered and tested many models by which the contribution of these positive protein segments to one or more independent or non-independent portals to the channel could affect chloride transport and interactions with blockers.
+Overall, our results suggest the existence of a single portal lined with several positively-charged protein segments that interact electrically with both chloride and negative-charged, blocking particles.
+We propose that mutations at other sites indirectly affect the function of this one portal.
+Comparing our results with recent structural information on CTFR completes our picture of the overall molecular architecture of the chloride transport pathway.

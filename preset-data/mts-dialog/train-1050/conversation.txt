@@ -1,0 +1,6 @@
+Doctor: Hi there! How are you today?
+Patient: Hi. I am not doing so well. I have had this cough and a pain in my stomach. Right here by my belly button.
+Doctor: How long has this been going on?
+Patient: Two days.  It has been very painful.
+Doctor: I would like to examine your abdomen. Is that okay?
+Patient: Yes.

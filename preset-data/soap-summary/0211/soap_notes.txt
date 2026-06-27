@@ -1,0 +1,31 @@
+# SOAP Notes — Sample 0211
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Sore throat since last night
+- Burning sensation at the back of the throat
+- Hoarse voice, feels like losing voice
+- Pain when swallowing
+- Feels very tired, had chills yesterday
+- Mild soreness in the belly since this morning
+- Feels throat is swollen, slight nausea when talking
+- No runny nose, ear pain, sinus headaches, chest pain, breathing difficulties, cough, muscle aches, red or runny eyes, belly pain, changes in bowel movements, nausea, vomiting, changes in smell or taste
+- Previous cold 2 weeks ago with runny nose
+- Girlfriend had a sore throat recently, but not as severe
+- No recent travel or contact with anyone with COVID
+
+Past Medical History:
+- No significant PMHx
+- No medications
+- Allergies: mild runny nose in spring
+- SocHx: non-smoker, occasional alcohol (couple of beers on weekends), no drug use
+- Lives with roommate, online classes
+
+Objective:
+- Temperature noted to be high on arrival
+
+Assessment:
+- Sore throat with hoarseness and difficulty swallowing
+
+Plan:
+- Discuss with attending for further management

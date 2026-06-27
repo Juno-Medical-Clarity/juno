@@ -1,0 +1,9 @@
+source:      elife
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-easy' -> 'solvent - exposed'
+  [4:6] 'medical-jargon-google-easy' -> 'plant AEPs'
+  [6:7] 'medical-jargon-google-hard' -> 'macrocyclize'

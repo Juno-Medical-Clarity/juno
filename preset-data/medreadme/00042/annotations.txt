@@ -1,0 +1,8 @@
+source:      pnas
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [1:7] 'medical-jargon-google-hard' -> '" clickable " anticancer drug mimic'
+  [14:17] 'abbr-medical' -> 'ara - C'

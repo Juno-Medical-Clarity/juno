@@ -1,0 +1,5 @@
+drug_focus: loratadine
+question_type: Usage/time
+section_title: Actually, There’s a Right Time to Take “Once a Day” Meds
+source_url: https://www.rd.com/health/conditions/medication-timing/
+sample_id: 0655

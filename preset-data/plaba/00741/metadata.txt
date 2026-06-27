@@ -1,0 +1,5 @@
+pmid:        34883053
+question:    59
+adaptation:  adaptation2
+title:       Immunogenicity, safety, and reactogenicity of heterologous COVID-19 primary vaccination incorporating mRNA, viral-vector, and protein-adjuvant vaccines in the UK (Com-COV2): a single-blind, randomised, phase 2, non-inferiority trial
+sentences:   12

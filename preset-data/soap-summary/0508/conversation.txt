@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0508
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How's everyone in your family? My mom, dad and siblings are good. They are well, that is good. That's what we want. Yes.

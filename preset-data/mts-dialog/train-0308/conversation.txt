@@ -1,0 +1,4 @@
+Doctor: What brings you here today?
+Patient: I have pain in my tummy.
+Doctor: When did you first notice it?
+Patient: It started suddenly around noon.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0045  |  gem_id: gem-cochrane-simplification-test-46  |  doi: 10.1002/14651858.CD001186.pub2
+
+The review of trials found that immunotherapy can reduce asthma symptoms, the need for medications and the risk of severe asthma attacks after future exposure to the allergen. It is possibly as effective as inhaled steroids. However, there is an increased risk of a lump at the injection site, rash, wheezing, breathlessness and very rarely a fatal allergic reaction.

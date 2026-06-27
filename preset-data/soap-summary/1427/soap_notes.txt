@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1427
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Left elbow pain, left ankle pain, history of left knee pain.
+- Severity: "Killing me" (implies severe elbow pain).
+- Duration: Not specified.
+- Associated Symptoms: No headache, no nausea, no blurry vision, no chest or abdominal pain.
+- Relevant Medical History: Previous left knee pain.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Sustained injury during a fight; hit head against the floor but did not pass out.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

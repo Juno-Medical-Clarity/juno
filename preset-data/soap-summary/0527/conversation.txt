@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0527
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi again! How are you feeling today? I am feeling okay. Are you still experiencing any nausea or vomiting? No. I feel better now. Have you had any shortness of breath or chest pain? No. Any painful or burning urination? No. Do you have a history of any seizure disorder? No.

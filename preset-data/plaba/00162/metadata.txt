@@ -1,0 +1,5 @@
+pmid:        24088747
+question:    13
+adaptation:  adaptation1
+title:       High prevalence of cyclical variation in heart rate before nocturnal episodes of paroxysmal atrial fibrillation
+sentences:   10

@@ -1,0 +1,8 @@
+source:      plos_computational_biology
+side:        complex
+readability: 4.0
+split:       dev
+
+jargon_spans:
+  [4:5] 'abbr-medical' -> 'hb'
+  [11:12] 'medical-jargon-google-easy' -> 'mutant'

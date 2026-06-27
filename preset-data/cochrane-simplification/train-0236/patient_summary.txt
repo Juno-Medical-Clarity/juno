@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0236  |  gem_id: gem-cochrane-simplification-train-237  |  doi: 10.1002/14651858.CD006372.pub2
+
+We conducted a systematic search of the literature on preventing voice disorders in adults. We then appraised the quality of the studies found and combined their results. We found six studies which met our inclusion criteria. Four were conducted with teachers, one with student teachers and one with telemarketers. We found no evidence that either direct or indirect voice training nor the two combined are effective in improving vocal functioning when measured using self-reported outcomes and when compared to no intervention. All the included studies were small and of low methodological quality. Given the extent of the problem and the widespread use of voice training, further research is warranted.

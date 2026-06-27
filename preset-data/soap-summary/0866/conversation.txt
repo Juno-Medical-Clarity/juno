@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0866
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had surgery, ma'am? Yeah, I've had a few. First, I had, um, tubal ligation, and three milk ducts removed. What year was that in? That was in, um, nineteen seventy nine. Great, thank you. What else have you had done? I had a breast biopsy in nineteen eighty nine, and a colonoscopy in two thousand seven. Thank you, do you have any children? Well, doctor, I've been pregnant four times, but I've had three children. I'm so sorry to hear that. Did you have a C section with any of them? No, doctor. I had a natural birth for all of them.

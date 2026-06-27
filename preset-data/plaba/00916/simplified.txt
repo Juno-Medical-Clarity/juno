@@ -1,0 +1,11 @@
+Sickle Cell Disease (SCD) is a genetic blood disease that can affect many areas of the body. The course of the disease can vary between patients.
+Different levels of fetal hemoglobin (HbF) is a main reason that explains the variation in the course of SCD.
+HbF levels are affected by single gene mutations in the BCL11A, HBS1L-MYB, and Xmn1 genes.
+Our research focused on specific areas in these genes that affected HbF and also affected the disease severity in SCD patients in Egypt.
+The study compared 2 groups, 100 SCD patients and 100 patients without SCD (controls).
+Generally, closer analysis of the BCL11A, HBS1L-MYB, and Xmn1 genes didn't show important differences between the 2 groups. But certain specific genetic mutations in the BCL11A gene were higher in SCD patients.
+Baseline HbF levels were significantly higher in those who inherited mutations of both BCL11A + HSB1L-MYB and BCL11A+ Xmn1 genes.
+Steady HbF levels, (a sign of disease severity) in both groups, were significantly higher in SCD-Sbeta patients having the different genetic mutations of the HSB1L-MYB gene.
+The protein folding chemistry of HbF in both groups didn’t change between patients with the normal or mutant genes.
+BCL11A, HSB1L, and Xmn1 gene mutations did not have a positive effect on baseline HbF levels unless the mutations occurred together.
+If researchers could discover the underlying chemistry of HbF production we might be able to increase it in patients.

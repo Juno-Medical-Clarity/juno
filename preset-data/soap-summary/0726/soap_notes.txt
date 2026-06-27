@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0726
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Falls, lightheadedness, staggering while walking, loss of normal voice, small handwriting, slower movements.
+- Severity: Difficulty experienced with coordination and walking, weakness in the morning that worsens throughout the day.
+- Duration: First diagnosed with Parkinson's on September 1, 1995; symptoms began a year prior to diagnosis.
+- Associated Symptoms: None reported (no stroke-like events, vision changes, seizures, or other symptoms).
+- Relevant Medical History: Diagnosed with Parkinson's disease; prescribed Sinemet with no noted improvement.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Patient expressed disappointment and discouragement due to lack of improvement with Sinemet.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

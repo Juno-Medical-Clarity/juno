@@ -1,0 +1,9 @@
+There have been significant advances in pacing and implantable defibrillator technology over the past decade.
+The relationships between ventricular activation sequence and cardiac mechanical performance are now better appreciated, and will become more completely understood.
+Even in the setting of infra-His block and bundle branch block, ventricular activation over the Purkinje system can now be achieved in many patients with direct pacing of the His bundle, providing a more physiologic alternative to RV pacing that should avoid pacing induced ventricular dysfunction, as well as provide an alternative to left ventricular pacing for CRT.
+Advances in the lead technology will increase ease and use of this form of pacing.
+When activation of the ventricles from the His Purkinje system is not feasible, LV pacing for cardiac resynchronization therapy (CRT) will continue to be important for patients with depressed ventricular function associated with left bundle branch block.
+Surprisingly, CRT is often beneficial even though present implementation is limited to the few LV pacing sites accessible through the coronary venous system.
+The advent of pacing leads with multiple electrodes for placement in the coronary venous system is a notable advance, that in contrast to traditional bipolar leads, provides multiple LV pacing configurations from which to select the optimal site for LV pacing without compromising lead stability.
+This option also addresses problems of phrenic nerve stimulation and high pacing thresholds that often limit delivery of LV pacing.
+These leads will also allow performance of simultaneous pacing from multiple LV sites, which may improve mechanical performance in situations other than left bundle branch block.

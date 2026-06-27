@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1469
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Okay, so let's go over your medications. I'd like you to take these to help your muscle spasms. Sounds good. I've prescribed eight hundred milligrams of Ibuprofen to be taken every eight hours as needed along with Tylenol number three every six hours as needed. What does the number three stand for? Tylenol number three is combined with Codeine. Okay, I see. And finally, I'm prescribing Methocarbamol seven fifty milligrams which needs to be taken four times a day for maximum relief. Do you have any questions for me? No, I think you answered them all.

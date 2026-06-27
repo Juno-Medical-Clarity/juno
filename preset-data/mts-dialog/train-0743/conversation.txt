@@ -1,0 +1,8 @@
+Doctor: Hello! What brings you into the office today?
+Patient: Hi! I have not been able to go pee, and I have had this sharp pain in my left side.
+Doctor: Have you recently had any surgical procedures?
+Patient: No.
+Doctor: Do you have a history of an enlarged prostate or kidney stones?
+Patient: No.
+Doctor: I would like to get some imaging done.
+Patient: Okay.

@@ -1,0 +1,4 @@
+Doctor: Do you smoke cigarettes?
+Patient: No. No cigarettes.
+Doctor: Do you drink alcohol or use recreational drugs?
+Patient: I drink alcohol and I smoke weed from time to time.

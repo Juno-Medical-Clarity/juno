@@ -1,0 +1,9 @@
+source:      elife
+side:        simple
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'cytomegalovirus'
+  [10:11] 'medical-jargon-google-easy' -> 'nucleosomes'
+  [15:16] 'medical-jargon-google-easy' -> 'nucleosomes'

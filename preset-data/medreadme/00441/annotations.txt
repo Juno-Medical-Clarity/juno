@@ -1,0 +1,7 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [12:14] 'medical-jargon-google-easy' -> 'ursodeoxycholic acid'

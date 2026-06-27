@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0622  |  gem_id: gem-cochrane-simplification-train-623  |  doi: 10.1002/14651858.CD006180.pub2
+
+A recent trial of protein containing synthetic surfactant compared to protein free synthetic surfactant suggests that these protein containing synthetic surfactants help prevent respiratory distress syndrome and may or may not lead to a decrease in lung injury (chronic lung disease). Other clinical outcomes were similar. Further studies will help refine recommendations concerning use of protein containing synthetic surfactants.

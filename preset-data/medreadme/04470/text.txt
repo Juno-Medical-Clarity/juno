@@ -1,0 +1,1 @@
+SMARCA2 is directly suppressed by EZH2, and SMARCA2 expression levels predict EZH2 inhibitor activity in other SWI / SNF mutant contexts, including ARID1A mutant tumors.

@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1385
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient's husband died a few years ago.
+- Patient does not smoke or drink alcohol.
+- Patient does not use illicit drugs or substances.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided.)

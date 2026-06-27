@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0628
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+multivitamin

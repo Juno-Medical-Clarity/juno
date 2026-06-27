@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1408  |  gem_id: gem-cochrane-simplification-train-1409  |  doi: 10.1002/14651858.CD005033.pub2
+
+This review include 36 studies, identified from 278 references retrieved until December 2009, and report a moderate association between colorectal cancer recurrence and perioperative transfusions, with an OR of 1.42 (95% CI, 1.20 to 1.67). Similar estimates are present in several subgroup meta-analyses, as well as in meta-analyses stratified for known risk factors. These findings support carefully restricted indications for perioperative blood transfusions in colorectal cancer patients operated for cure, and continue to await the results of studies addressing the role of surgeon-related risk factors on the need for transfusion and disease recurrence.

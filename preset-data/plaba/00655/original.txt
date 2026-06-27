@@ -1,0 +1,12 @@
+Fever after cardiac surgery in children may be due to bacterial infection or noninfectious origin like systemic inflammatory response syndrome (SIRS) secondary to bypass procedure.
+A marker to distinguish bacterial from nonbacterial fever in these conditions is clinically important.
+The purpose of our study was to evaluate, in the early postcardiac surgery period, whether serial measurement of C-reactive protein (CRP) and its change over time (CRP velocity) can assist in detecting bacterial infection.
+A series of consecutive children who underwent cardiac surgery with bypass were tested for serum levels of CRP at several points up to 5 days postoperatively and during febrile episodes (>38.0°C).
+Findings were compared among febrile patients with proven bacterial infection (FWI group; sepsis, pneumonia, urinary tract infection, deep wound infection), febrile patients without bacterial infection (FNI group), and patients without fever (NF group).
+In all, 121 children were enrolled in the study, 31 in the FWI group, 42 in the FNI group, and 48 patients in the NF group.
+Ages ranged from 4 days to 17.8 years (median 19.0, mean 46 ± 56 months).
+There was no significant difference among the groups in mean CRP level before surgery, 1 hour, and 18 hours after.
+A highly significant interaction was found in the change in CRP over time by FWI group compared with FNI group (P < .001).
+Mean CRP velocity ([fCRP - 18hCRP]/[fever time (days) - 0.75 day]) was significantly higher in the infectious group (4.0 ± 4.2 mg/dL per d) than in the fever-only group (0.60 ± 1.6 mg/dL per d; P < .001).
+A CRP velocity of 4 mg/dL per d had a positive predictive value (PPV) of 85.7% for bacterial infection with 95.2% specificity.
+Serial measurements of CRP/CRP velocity after cardiac surgery in children may assist clinicians in differentiating postoperative fever due to bacterial infection from fever due to noninfectious origin.

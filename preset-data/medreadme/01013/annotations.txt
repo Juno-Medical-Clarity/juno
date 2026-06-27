@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [8:12] 'medical-jargon-google-easy' -> 'host - virus interaction'
+  [13:14] 'medical-jargon-google-easy' -> 'Drosophila'
+  [19:20] 'general-complex' -> 'dearth'
+  [21:24] 'medical-jargon-google-easy' -> 'native virus isolates'

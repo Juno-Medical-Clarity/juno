@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0666  |  gem_id: gem-cochrane-simplification-train-667  |  doi: 10.1002/14651858.CD009318.pub2
+
+This review included five studies in painful diabetic neuropathy (1863 participants) and one in fibromyalgia (159 participants). In people with painful diabetic neuropathy, lacosamide had only a modest effect, with a specific effect due to its use in 1 person in 10. This is a minor effect and may be an over-estimate due to use of the last observation carried forward method for analysis. There was insufficient information in fibromyalgia to draw any conclusions about the effect of lacosamide. There was no significant difference between lacosamide and placebo for participants with any, or a serious, adverse event, but there were significantly more adverse event withdrawals with lacosamide. Regulatory authorities have not licensed lacosamide for treating pain based on evidence presently available.

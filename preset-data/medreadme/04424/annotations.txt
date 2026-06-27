@@ -1,0 +1,6 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.3
+split:       test
+
+jargon_spans: (no jargon annotation found for this sentence)

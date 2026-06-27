@@ -1,0 +1,4 @@
+drug_focus: Herceptin
+question_type: Information
+source_url: http://www.breasthealth.co.za/oncologytreatment.html
+sample_id: 0106

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1247  |  gem_id: gem-cochrane-simplification-train-1248  |  doi: 10.1002/14651858.CD003271
+
+This review presents the effects of budesonide at different doses for people with varying degrees of asthma. In patients with mild-moderate asthma no important differences were apparent between the lowest dose (200 mcg/d) and the highest dose (1600 mcg/d) for measures of airway opening and symptoms. However, patients with more severe asthma are less likely to experience an acute worsening of their asthma control when a higher dose (1600 mcg/d) is used regularly compared to a lower dose (200 mcg/d). Future research should report results more comprehensively, and should use quality of life questionnaires.

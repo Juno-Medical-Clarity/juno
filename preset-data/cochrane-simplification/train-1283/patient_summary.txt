@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1283  |  gem_id: gem-cochrane-simplification-train-1284  |  doi: 10.1002/14651858.CD004844.pub3
+
+The review authors assessed the effect of these medicines on pain and their side effects. Based on 5 out of 11 included trials there were some beneficial effects of antipsychotics in the treatment of acute and chronic pain. Analysis of these studies showed a significant reduction in pain after administration of the antipsychotic compared to placebo or another medicine, however these results were based on small studies and therefore they may be unreliable. It is also important to consider the unwanted effects that these medicines might cause.

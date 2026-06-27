@@ -1,0 +1,14 @@
+Doctor: Good afternoon, ma'am.
+Patient: Good afternoon, doctor.
+Doctor: So, what do you do for a living?
+Patient: Right now, actually, I'm not working.
+Doctor: That's okay, I'm not here to judge. Are you married?
+Patient: No, I'm happily single right now.
+Doctor: Good for you, do you have any kids?
+Patient: No, I don't have any, its just me.
+Doctor: Do you drink or smoke?
+Patient: No, I don't do any of that.
+Doctor: Good, and do you use anything harder? Like illicit drugs?
+Patient: No, I absolutely do not.
+Doctor: Good, and with ten being the most stressful day every, how would you rate your stress level out of ten?
+Patient: Today, I'd say its about an eight out of ten.

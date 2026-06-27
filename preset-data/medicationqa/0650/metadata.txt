@@ -1,0 +1,5 @@
+drug_focus: enalapril
+question_type: Stopping/tapering
+section_title: How should this medicine be used?
+source_url: https://medlineplus.gov/druginfo/meds/a686022.html
+sample_id: 0650

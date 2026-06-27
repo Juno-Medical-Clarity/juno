@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1030
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Allergies: Sulfa drugs
+- Reaction to Sulfa drugs: Breaks out in a terrible rash
+- History: Had to go to the ER the first and last time taken
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

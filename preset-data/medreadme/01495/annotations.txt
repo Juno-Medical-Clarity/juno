@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'HRT'
+  [4:7] 'medical-jargon-google-easy' -> 'quality of life'
+  [17:19] 'medical-jargon-google-easy' -> 'endometrial cancer'
+  [30:31] 'abbr-medical' -> 'HRT'

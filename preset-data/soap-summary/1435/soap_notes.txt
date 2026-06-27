@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1435
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports feeling "terrible" due to allergies.
+- History of allergies, worse after moving from Seattle.
+- Emotional expression of frustration: "I hate how something as little as allergies gets the best of me."
+- Past medications: Claritin and Zyrtec (worked for a while but then stopped), Allegra (tried last summer and again two weeks ago with no effect).
+- Attempted nasal sprays purchased over the counter, not prescribed.
+- Medical history includes asthma, which has not worsened.
+- Patient does not feel the need for medication to alleviate asthma symptoms, stating it doesn't bother her as much as allergies.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

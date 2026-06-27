@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [2:4] 'general-complex' -> 'negative pressure'
+  [6:10] 'medical-jargon-google-easy' -> 'vacuum assisted vaginal birth'
+  [23:24] 'medical-jargon-google-easy' -> 'maternal'
+  [25:26] 'medical-jargon-google-easy' -> 'neonatal'

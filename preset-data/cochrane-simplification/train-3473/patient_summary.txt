@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3473  |  gem_id: gem-cochrane-simplification-train-3474  |  doi: 10.1002/14651858.CD002246
+
+This review found that programmes to promote smoke alarms increased smoke alarm ownership and function modestly, if at all, and have not demonstrated a beneficial effect on fires or fire-related injuries. Counselling by health care workers, as part of child health care, may increase ownership and use of smoke alarms in homes but effects on injuries have not been examined. There is little evidence to support community-wide mass media or educational programmes or programmes to give away free smoke alarms as effective methods to promote smoke alarms or reduce injuries from fire. More research is needed to examine community-wide smoke alarm installation programmes.

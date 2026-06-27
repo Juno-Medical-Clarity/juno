@@ -1,0 +1,15 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.85
+split:       dev
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'L. pneumophila mutants'
+  [6:7] 'medical-jargon-google-easy' -> 'effectors'
+  [9:10] 'abbr-medical' -> 'TLRs'
+  [11:14] 'medical-jargon-google-easy' -> 'NF - kB'
+  [18:19] 'medical-jargon-google-easy' -> 'mutants'
+  [21:23] 'medical-jargon-google-easy' -> 'IkB synthesis'
+  [24:28] 'medical-jargon-google-easy' -> 'NF - kB activation'
+  [30:31] 'general-complex' -> 'transient'
+  [39:40] 'medical-jargon-google-easy' -> 'ETR'

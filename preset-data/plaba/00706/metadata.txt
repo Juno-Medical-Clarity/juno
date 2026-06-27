@@ -1,0 +1,5 @@
+pmid:        32309576
+question:    55
+adaptation:  adaptation1
+title:       Clinical Uses of Membrane Lipid Replacement Supplements in Restoring Membrane Function and Reducing Fatigue in Chronic Diseases and Cancer
+sentences:   5

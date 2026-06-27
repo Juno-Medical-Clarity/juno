@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0409
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has never been diagnosed with any illnesses.
+- No issues reported with blood pressure (BP), thyroid, or diabetes.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

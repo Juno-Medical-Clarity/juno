@@ -1,0 +1,5 @@
+drug_focus: citalopram
+question_type: Side effects
+section_title: WARNINGS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2632b547-2e13-447f-ac85-c774e437d6a8
+sample_id: 0443

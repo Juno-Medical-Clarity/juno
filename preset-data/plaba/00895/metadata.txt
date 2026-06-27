@@ -1,0 +1,5 @@
+pmid:        31957218
+question:    73
+adaptation:  adaptation2
+title:       Rapid recovery following hip and knee arthroplasty using local infiltration analgesia: length of stay, rehabilitation protocol and cost savings
+sentences:   7

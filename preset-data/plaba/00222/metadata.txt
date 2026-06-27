@@ -1,0 +1,5 @@
+pmid:        17296512
+question:    18
+adaptation:  adaptation1
+title:       Blood ketone monitoring: a comparison between gestational diabetes and non-diabetic pregnant women
+sentences:   14

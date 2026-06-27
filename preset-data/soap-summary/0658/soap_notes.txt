@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0658
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 13-year-old male.
+- Reports slicing his right ring finger with a piece of glass while playing.
+- Symptoms include numbness and tingling in the affected finger.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

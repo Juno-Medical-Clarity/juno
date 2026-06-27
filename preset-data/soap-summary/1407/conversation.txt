@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1407
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, do you have any family history of arthritis? Fortunately, no, not that I know of. So, as far as you know, no one has had a joint replacement? No, it doesn't ring any bells.

@@ -1,0 +1,5 @@
+drug_focus: fentanyl
+question_type: Usage
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9baf2912-9d0f-412a-8fbf-617f6a4f91ed
+sample_id: 0232

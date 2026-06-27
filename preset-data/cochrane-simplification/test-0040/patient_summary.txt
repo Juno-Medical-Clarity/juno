@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0040  |  gem_id: gem-cochrane-simplification-test-41  |  doi: 10.1002/14651858.CD010860.pub2
+
+In this review, we searched medical literature databases to identify studies which evaluated how well the Mini-Cog is able to distinguish between individuals who have dementia and those who do not have dementia when compared to in-depth evaluation by dementia specialists. Our review focussed on those studies that were conducted in community based settings. We identified three unique randomised controlled studies that evaluated the Mini-Cog. In these studies the accuracy of the Mini-Cog varied and importantly there were some potential limitations within the studies which may have led to an overestimation of the accuracy of the Mini-Cog. Based on the information that we obtained from our review, we felt that further research into the accuracy of the Mini-Cog was required before it could be recommended for routine use for identifying dementia in community settings.

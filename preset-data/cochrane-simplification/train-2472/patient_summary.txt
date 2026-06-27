@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2472  |  gem_id: gem-cochrane-simplification-train-2473  |  doi: 10.1002/14651858.CD004401.pub2
+
+This review included 17 studies (1586 children). Long-term antibiotics (equal to or more than six weeks) almost halved the risk of further infections. There was not enough information to know if antibiotics reduced acute otitis media with perforation or chronic suppurative otitis media (chronic perforation), or improved long-term outcomes. Antibiotics did not appear to be a frequent cause of significant side effects (for example, allergic reactions or diarrhea). Parents must balance these potential side effects plus the cost and inconvenience associated with antibiotics against the likely benefits of treatment. Antibiotic resistance from the long-term use of these drugs is also an issue which should be considered, particularly for children with recurring infections.

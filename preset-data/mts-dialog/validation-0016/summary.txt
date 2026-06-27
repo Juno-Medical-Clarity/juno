@@ -1,0 +1,2 @@
+[ROS]
+Patient is hard of hearing.  She also has vision problems.  Denies headache syndrome.  Presently, denies chest pain or shortness of breath.  She denies abdominal pain.  Presently, she has left hip pain and left shoulder pain.  No urinary frequency or dysuria.  No skin lesions.  She does have swelling to both lower extremities for the last several weeks.  She denies endocrinopathies.  Psychiatric issues include chronic depression.

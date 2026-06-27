@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0987
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you married? I'm divorced. So, do you live alone? Or do you have kids? I live with my girlfriend, and we have a kid together. I also have three other kids from my former wife. Do you smoke? I used to smoke. But I, I've quit like fifteen years ago. What about alcohol? Yeah, I drink beer. Around one to two beers a day. Are you working? I'm retired right now, but I used to work in an iron company.

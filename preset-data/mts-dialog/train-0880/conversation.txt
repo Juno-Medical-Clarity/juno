@@ -1,0 +1,8 @@
+Doctor: Are you okay?
+Patient: Yeah, yeah, I am fine.
+Doctor: I am asking this as you look a little pale.
+Patient: No I am okay. I have always been healthy my whole life. Just a little fatigued now.
+Doctor: Okay that won't be something we can't fix.
+Patient: Yeah, but I am okay.
+Doctor: Yes, I do not see any issues with your past history.
+Patient: As I said, I am healthy.

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0506
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Fluid accumulation in the back, experienced a change in fluid appearance from clear to bloody.
+- Duration: Not specified.
+- Associated symptoms: None explicitly mentioned.
+- Relevant medical history: None explicitly mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Concerns: Patient reports that albuterol nebulizer treatment did not help.
+
+Objective:
+- Diagnostic tests: Urine culture, BMP (Basic Metabolic Panel), CBC (Complete Blood Count), CRP (C-reactive protein), and blood culture ordered.
+- Treatments: Received albuterol nebulizer treatment, Ampicillin, and Cefotaxime in the ER.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- No specific plan mentioned.

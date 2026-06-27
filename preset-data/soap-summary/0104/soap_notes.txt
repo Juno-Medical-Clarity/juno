@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0104
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Fever (38.5°C) started yesterday
+- Difficulty swallowing food, drooling, muffled voice
+- Shortness of breath
+- Irritable and fussy, especially yesterday
+- Poor sleep last night, crying throughout
+- Decreased intake of food and fluids (only a bottle of milk in the past 1-2 days)
+- Lethargic today, more so than yesterday
+- Recent viral infection (runny nose, cough) about a week ago, resolved with supportive treatment
+- Decreased wet diapers (2 yesterday vs. usual 5-6)
+
+Past Medical History:
+- No chronic medical conditions
+- No complications during pregnancy or birth (vaginal delivery)
+- No history of GBS, gestational diabetes, or viral infections during pregnancy
+- No hospitalizations or surgeries
+- No recent antibiotics
+- Immunizations up to date
+- No allergies
+- FHx: heart issues
+
+Objective:
+- Vitals: (to be filled in by clinician)
+- Physical examination: (to be filled in by clinician)
+
+Assessment:
+- Likely diagnosis: Infection (given fever, difficulty swallowing, lethargy)
+
+Plan:
+- Investigations: Check vitals, examine mouth
+- Treatment: Start antibiotics, IV fluids for hydration
+- Monitor closely

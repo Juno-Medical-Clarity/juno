@@ -1,0 +1,42 @@
+# SOAP Notes — Sample 0225
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presents with runny nose (clear, watery) and sneezing for 2 weeks
+- Nasal congestion worse in the morning, has to clear throat and cough on waking (brings up small amount of clear phlegm)
+- Denies changes in sense of smell/taste, vision, or hearing
+- No eye discharge or swelling of eyelids 
+- No swelling of face, neck, abdomen, or limbs; nose slightly red
+- Itching of nose, ears, and roof of mouth; no rash
+- No fever, chills, excessive fatigue (still cheerful), rapid breathing, or changes in bowel/bladder habits
+- No dizziness, fainting, confusion, or headaches 
+- Symptoms worse when playing outside; no recent sick contacts or travel
+- Eczema (mild, comes and goes); no other medical conditions
+- Symptoms recurrent, usually worse in spring; affect sleep due to itching
+
+PMHx:
+- Born full-term without complications
+- Up to date with immunizations
+- No surgeries or hospitalizations 
+- Allergies: Unknown
+- Medications: None regularly; has tried OTC antihistamines with some relief
+
+FHx: 
+- Mother has history of childhood asthma (now well-controlled without medications) and allergies
+
+SocHx:
+- No smokers in household
+- Carpets removed and curtains replaced with blinds 2 years ago with some improvement in symptoms
+
+Objective:
+- Vitals: Not provided
+- Physical exam: Not provided
+
+Assessment:
+- Allergic rhinitis
+
+Plan:
+- COVID swab 
+- Allergy testing
+- Intranasal corticosteroids if symptoms persist; consider antihistamines or leukotriene receptor antagonists as second-line treatment
+- Avoidance of triggers/allergens

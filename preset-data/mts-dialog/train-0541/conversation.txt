@@ -1,0 +1,37 @@
+Doctor: How're you today?
+Patient: Not too bad. I'm hanging in there. My asthma has been acting up.
+Doctor: Oh no. How long has this been going on?
+Patient: For the past three months. I've been using my inhaler every day. I used to use it every now and again. This is definitely new for me.
+Doctor: Are you experiencing any allergies alongside your asthma?
+Patient: Yes, actually. My husband has been hauling a lot more corn this season and it seems to be making my allergies much worse.
+Doctor: Do you take anything for your allergies?
+Patient: Not really. I'll sometimes take Allegra and that seems to help just a tiny bit. I was previously prescribed Flonase, but I can't remember the last time I took it. Oh and I was on Advair, too.
+Doctor: Did the Flonase or Advair help at all?
+Patient: I had to stop Advair because it started to bother my lady parts.
+Doctor: How so?
+Patient: I noticed that it became more itchy as a result.
+Doctor: I'm sorry to hear that.
+Patient: Speaking of this, I wanted to also share that I've been experiencing a lot of P M S symptoms lately. I'm super impatient and moody.
+Doctor: Do you notice these symptoms are still there after you finish your cycle?
+Patient: Um lemme think. The symptoms start about a week before my period and tend to get less intense once I get over the first day of bleeding.
+Doctor: Are your cycles generally regular?
+Patient: For the most part, yes. I feel like they don't last as long as they used to. I'm not sure why. I do, however, notice some spotting after my cycles end.
+Doctor: Do you get any night sweats or hot flashes while you're on your period?
+Patient: No.
+Doctor: Have you had any other medical troubles recently?
+Patient: I did have a U T I and some blood in my urine because of it.
+Doctor: Do you remember how many times you noticed blood in your urine?
+Patient: Hm about three times. I was prescribed antibiotics for it.
+Doctor: Have you had any other urinary symptoms since? How about bdominal pain, nausea, vomiting, or anything of the like?
+Patient: Nothing now.
+Doctor: Have you gotten your urine rechecked recently?
+Patient: No, not yet. I really should get it checked out again.
+Doctor: I can write an order for you if you'd like or you can make an appointment with your urologist. Do you have a specific urologist that you see?
+Patient: Yeah, I can call to make the appointment tomorrow. Do I also need to get blood work done?
+Doctor: Yes, in fact I'd like to order some blood work while you're here.
+Patient: I had blood work done a few days ago for my life insurance application. I am forty two so thought I should get that going. My Swedish mother always used to nag about how I procrastinate on important things. Anyways, do I still need to get more blood work done?
+Doctor: Do you know what they checked?
+Patient: I think the typical blood work with cholesterol added.
+Doctor: Do you happen to have a copy on hand or could you fax me the resulxts?
+Patient: I can fax them to you once I get them back.
+Doctor: That would be great. Thank you. Let me write down our fax number for you.

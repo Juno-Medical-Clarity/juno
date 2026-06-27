@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0502  |  gem_id: gem-cochrane-simplification-train-503  |  doi: 10.1002/14651858.CD004434.pub5
+
+Tradiational therapies for pulmonary arterial hypertension include prostacyclin and its analogues, calcium channel blockers, nitric oxide (NO), and important adjunctive therapies, such as anticoagulants and oxygen. Endothelin receptor antagonists have recently been proposed as an alternative to these traditional therapies. This review includes twelve trials on 1471 participants. Endothelin receptor antagonists can improve exercise capacity, symptoms, and cardiopulmonary haemodynamic variables in people with symptomatic pulmonary arterial hypertension over a period of three to six months treatment. There is uncertainty as to whether endothelin receptor antagonists reduce mortality in this population. The most severe potential side effect was hepatic toxicity which was not common in these short-term trials.

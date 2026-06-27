@@ -1,0 +1,12 @@
+source:      elife
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Skeletal muscle myoblasts'
+  [4:5] 'abbr-medical' -> 'iMyoblasts'
+  [9:14] 'medical-jargon-google-easy' -> 'human induced pluripotent stem cells'
+  [15:16] 'abbr-medical' -> 'iPSCs'
+  [22:26] 'medical-jargon-google-hard' -> 'transgene - free induction'
+  [27:29] 'medical-jargon-google-easy' -> 'stem cell'

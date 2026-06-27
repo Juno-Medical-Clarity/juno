@@ -1,0 +1,5 @@
+drug_focus: Thera-Tabs
+question_type: Indication
+section_title: Uses
+source_url: https://www.webmd.com/drugs/2/drug-17353/thera-tabs-oral/details
+sample_id: 0605

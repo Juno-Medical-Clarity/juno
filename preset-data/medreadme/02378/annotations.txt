@@ -1,0 +1,8 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [9:10] 'general-complex' -> 'cessation'
+  [24:25] 'abbr-medical' -> 'MS'

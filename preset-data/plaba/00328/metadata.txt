@@ -1,0 +1,5 @@
+pmid:        32449789
+question:    26
+adaptation:  adaptation1
+title:       Recurrence of positive SARS-CoV-2 in patients recovered from COVID-19
+sentences:   5

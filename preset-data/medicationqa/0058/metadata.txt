@@ -1,0 +1,5 @@
+drug_focus: corticosteroids
+question_type: Side effects
+section_title: PRECAUTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f7548498-142c-4feb-83ed-4c20dcd6108b
+sample_id: 0058

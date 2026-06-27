@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1289
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Past surgeries I should know of? I had my gallbladder, appendix, and uterus removed. Oh wow, I see. When did you get these surgeries? I had my gallbladder removed in O eight, appendix removed in twenty twelve, and uterus removed this past year. Any other medical history? My bladder was sagging the last time I saw the urologist. Does the diagnosis bladder prolapse sound familiar? Yeah, I believe so. They said it was grad four last time. Have you followed up with your urologist recently? Chip Winkel? No, not as of late.

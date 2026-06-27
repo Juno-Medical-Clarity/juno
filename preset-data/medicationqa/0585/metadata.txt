@@ -1,0 +1,5 @@
+drug_focus: omeprazole
+question_type: Appearance
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=78507fde-256c-42e9-af3f-bb53024e5b10&audience=consumer
+sample_id: 0585

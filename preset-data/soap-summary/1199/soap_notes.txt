@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1199
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No history of heart attack.
+- No chest pain, palpitations, or shortness of breath on exertion.
+- Patient reports normal blood pressure.
+- No swelling.
+- No history of irregular heartbeats.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

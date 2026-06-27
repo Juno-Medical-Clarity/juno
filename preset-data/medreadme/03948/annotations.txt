@@ -1,0 +1,7 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [11:12] 'medical-name-entity' -> 'NHS'

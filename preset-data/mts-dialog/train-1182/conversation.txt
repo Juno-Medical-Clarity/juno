@@ -1,0 +1,18 @@
+Doctor: Can you tell me more about your daughter, ma'am?
+Guest_family: Sure, well she's fourteen now, um, she's right handed, and she just started high school.
+Doctor: Has she ever had surgery?
+Guest_family: Yeah, she had an, um, lipomyomeningocele repair when she was about three days old, and then again when she was three and a half years old.
+Doctor: When was her last surgery?
+Guest_family: Um, it was in March of nineteen ninety five.
+Doctor: How did she do following the second surgery?
+Guest_family: She did well, honestly.
+Doctor: So, what brings you in for a visit today?
+Patient: Well, I've been having some leg pain on the side of my legs.
+Doctor: How long have you had this pain?
+Patient: It's been several months at this point.
+Doctor: When is your pain the worst?
+Patient: Um, it's the worst at night, I have to take medicine for the pain.
+Doctor: What do you take?
+Guest_family: She takes Advil, Motrin, and Tylenol P M.
+Doctor: Wow, that's a lot. Looks like you have some patch sensory loss in the L four to S one region. Are you going to the bathroom regularly?
+Patient: Yeah, there's no problems there. I do have some loss of feeling in my big toe and calf though.

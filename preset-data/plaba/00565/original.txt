@@ -1,0 +1,7 @@
+Introduction: Cardiac stimulation evolved from life-saving devices to prevent asystole to the treatment of heart rhythm disorders and heart failure, capable of remote patient and disease-progression monitoring.
+Cardiac stimulation nowadays aims to correct the electrophysiologic roots of mechanical inefficiency in different structural heart diseases.
+Areas covered: Clinical experience, as per available literature, has led to awareness of the concealed risks of customary cardiac pacing, that can inadvertently cause atrio-ventricular and inter/intra-ventricular dyssynchrony.
+New pacing modalities have emerged, leading to a new concept of what truly represents 'physiologic pacing' beyond maintenance of atrio-ventricular coupling.
+In this article we will analyze the emerging evidence in favor of the available strategies to achieve an individualized physiologic setting in bradycardia pacing, and the hints of future developments.
+Expert opinion: 'physiologic stimulation' technologies should evolve to enable an effective and widespread adoption.
+In one way new guiding catheters and the adoption of electrophysiologic guidance and non-fluoroscopic lead implantation are needed to make His-Purkinje pacing successful and effective at long term in a shorter procedure time; in the other way leadless stimulation needs to upgrade to a superior physiologic setting to mimic customary DDD pacing and possibly His-Purkinje pacing.

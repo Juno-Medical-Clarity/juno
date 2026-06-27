@@ -1,0 +1,5 @@
+pmid:        24037977
+question:    63
+adaptation:  adaptation2
+title:       Alopecia with endocrine therapies in patients with cancer
+sentences:   12

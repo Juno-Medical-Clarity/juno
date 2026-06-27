@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0014
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 2 weeks (mostly dry, sometimes with whitish or clear phlegm)
+- Wheezing with cough
+- Chest pain for past few days after coughing a lot (dull, achy pain in middle of chest that goes away)
+- Similar cough 3-4 years ago that resolved on its own in 1 week
+- Using lozenges which have been helping
+
+PMHx:
+- Wisdom teeth removal at age 16-17
+- Birth control pill for 3 years (no side effects or issues)
+- Mom has diabetes
+- Dad has high blood pressure
+
+SocHx:
+- Occasional smoking (1-2 cigarettes/month when out with friends, previously smoked 6 cigarettes/day starting at age 18 but trying to cut down)
+- Tried cocaine once in high school
+- Drinks 1 glass of beer nightly
+- Lives in apartment with boyfriend for 1.5 years (old building but no recent changes)
+
+Objective:
+- Vitals signs: not provided
+- Physical exam: not performed
+
+Assessment:
+- Likely acute bronchitis or other viral infection
+- COVID-19 to be ruled out
+
+Plan:
+- COVID-19 swab
+- Self-isolate for 14 days
+- Supportive treatment (hydration, nutrition, sleep)
+- Monitor symptoms and seek ER care if worsening or development of neurological symptoms

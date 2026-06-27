@@ -1,0 +1,1 @@
+SMARCA2 is suppressed by PRC2 in sensitive models, and induced SMARCA2 expression can compensate for SMARCA4 and antagonize PRC2 targets.

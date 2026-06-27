@@ -1,0 +1,14 @@
+qid: TQ22
+source_file: 12043.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What are Citrobacter infections and what drugs are used in its treatment?
+nlm_summary: Is ciprofloxacin the best treatment for citrobacter freundii?
+
+focus_entities:
+  [F1] (Problem) CITROBACTOR FREUNDII
+question_types:
+  [T1] TREATMENT
+keywords:
+  [K1] (DrugSupplement) ciprofaxin

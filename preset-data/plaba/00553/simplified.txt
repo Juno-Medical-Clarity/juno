@@ -1,0 +1,4 @@
+Linker histones are proteins that play a major role in organizing DNA and proteins to create the nucleus (chamber holding the DNA) inside cells and how instructions from genes are used. Linker histones, and non-histone proteins called HMG1/2, can have an effect on making a copy of a gene.
+The two types of proteins attach to DNA is similar ways, although they are different in how they structured.
+Whether linker histones and non-histone proteins compete for binding (attaching) to the nucleosome (a section of DNA that is wrapped around a core of proteins) has not been investigated.
+The possibility for either opposite or cooperative effects on regulating genes must be considered at this point.

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0389
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the shoulder
+- Severity: Unbearable
+- Duration: Years
+- Associated symptoms: None mentioned
+- Relevant medical history: Previous treatments include anti-inflammatories and rest, which have not helped
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Pain is impacting daily life
+
+Objective:
+- No objective data mentioned
+
+Assessment:
+- No assessment provided
+
+Plan:
+- No plan provided

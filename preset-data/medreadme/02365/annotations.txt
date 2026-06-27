@@ -1,0 +1,7 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 3.3
+split:       train
+
+jargon_spans:
+  [1:2] 'abbr-medical' -> 'SAFER'

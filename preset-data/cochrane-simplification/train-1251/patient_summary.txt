@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1251  |  gem_id: gem-cochrane-simplification-train-1252  |  doi: 10.1002/14651858.CD010610
+
+For the present review, researchers in The Cochrane Collaboration reviewed the evidence about the effects of topiramate in adult patients (≥ 16 years of age) with 'episodic' migraine (headache on < 15 days per month). They examined research published up to 15 January 2013 and found 17 relevant studies. Compared with placebo, topiramate reduced the frequency of migraine headaches by approximately 1.2 per month (nine studies, 1737 participants). Patients were also about twice as likely to reduce the number of their migraine headaches by 50% or more with topiramate than with placebo (nine studies, 1190 participants). Side effects associated with topiramate were common but generally mild; topiramate can, however, cause birth defects and so should be used with caution in women of childbearing age. Further research is needed comparing topiramate with other active drugs used for preventing migraine attacks.

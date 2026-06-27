@@ -1,0 +1,75 @@
+Doctor: Hello, how are you today?
+
+Patient: I'm okay, thank you.
+
+Doctor: I understand you were admitted to the hospital due to being anxious and easily frightened for the past three months, is that correct?
+
+Patient: Yes, that's right.
+
+Doctor: Can you tell me more about your symptoms?
+
+Patient: Well, I've been waking up early, feeling nervous and afraid for no reason, and I'm scared to leave the house. I've been upset and sensitive, and I cry sometimes.
+
+Doctor: I see. And have you had any mental illness before this?
+
+Patient: No, I never had any mental problems before.
+
+Doctor: Alright. And you mentioned that you had some difficulty walking, is that correct?
+
+Patient: Yes, I need to hold onto the wall while walking to keep from falling.
+
+Doctor: I understand. And you were hospitalized at a local mental health center two months prior to this admission, correct?
+
+Patient: Yes, that's right.
+
+Doctor: And what was the diagnosis there?
+
+Patient: They diagnosed me with GAD.
+
+Doctor: I see. And you were prescribed paroxetine, tandospirone, and oxazepam, is that right?
+
+Patient: Yes, I was.
+
+Doctor: And did your symptoms improve after taking these medications?
+
+Patient: Yes, they did. I was discharged from the hospital because my symptoms improved.
+
+Doctor: I see. And you reported that you took the medications regularly according to the instructions, correct?
+
+Patient: Yes, I did.
+
+Doctor: And what happened half a month prior to your admission here at our hospital?
+
+Patient: Well, I had a relapse and started experiencing anxiety, fear, small steps while walking, reluctance to come out of my home, speaking less, and being slow to respond, as well as urinary incontinence.
+
+Doctor: I see. And your social skills have declined significantly, is that correct?
+
+Patient: Yes, that's right. I can't take care of myself independently anymore.
+
+Doctor: I understand. And you were diagnosed with type-II diabetes four years ago, is that correct?
+
+Patient: Yes, I was.
+
+Doctor: And do you have any other comorbidities?
+
+Patient: No, I don't have any other health problems.
+
+Doctor: Alright. And your personal history, menstrual history, marriage, and childbirth history, and family history are all normal, is that correct?
+
+Patient: Yes, that's right.
+
+Doctor: I see. And after your admission, we conducted a physical examination and found that you have normal limb muscle strength and tone, is that correct?
+
+Patient: Yes, that's right.
+
+Doctor: And the finger-to-nose, rapid alternating movement, heel-to-shin tests, and Romberg's sign were all normal, is that correct?
+
+Patient: Yes, they were.
+
+Doctor: I see. But your gait was not stable and you took small steps, is that correct?
+
+Patient: Yes, that's right.
+
+Doctor: And you were negative for pathological signs and meningeal irritation, is that correct?
+
+Patient: Yes, I was.

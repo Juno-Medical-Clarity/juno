@@ -1,0 +1,8 @@
+source:      pnas
+side:        simple
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [6:8] 'medical-jargon-google-easy' -> 'protein catabolism'
+  [14:16] 'medical-jargon-google-easy' -> 'impaired proteasomes'

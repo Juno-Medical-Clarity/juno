@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2241  |  gem_id: gem-cochrane-simplification-train-2242  |  doi: 10.1002/14651858.CD004192.pub3
+
+The authors of this review tried to assess whether changes in dietary habits could favourably influence the prognosis for people with MS. Although a massive amount of data has been published in this area, only six controlled studies on PUFA, comprising a total of 794 patients, met the inclusion criteria in terms of methodological quality for this review. No studies on vitamins and antioxidant supplements were found that met our criteria. No papers on any other proposed dietary interventions for MS were found after extensive searching of the scientific databases.  The available data are insufficient to assess any potential benefit or harm that might result from PUFA supplementation. The absence of evidence on PUFA and the extensive lack of data on other supplements is an unfortunate event since 50% to 75% of people with MS do use dietary regimens and supplements.

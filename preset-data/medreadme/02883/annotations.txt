@@ -1,0 +1,10 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [0:1] 'abbr-medical' -> 'EVs'
+  [3:6] 'medical-jargon-google-hard' -> 'MHC class II'
+  [8:11] 'medical-jargon-google-easy' -> 'membrane surface molecules'
+  [13:14] 'medical-jargon-google-easy' -> 'antigens'

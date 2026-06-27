@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0636
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any smoking or alcohol? No, I don't smoke but I drink wine. Are you married? Yes, I am. I have three stepchildren and one of my own and I work for A B C D.

@@ -1,0 +1,8 @@
+source:      pnas
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [11:15] 'medical-jargon-google-easy' -> 'cell - type selectivity'
+  [16:20] 'medical-jargon-google-easy' -> 'nucleoside - based drugs'

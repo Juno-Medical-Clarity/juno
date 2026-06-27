@@ -1,0 +1,5 @@
+pmid:        33515658
+question:    37
+adaptation:  adaptation1
+title:       Neurotoxic effects of pregabalin dependence on the brain frontal cortex in adult male albino rats
+sentences:   18

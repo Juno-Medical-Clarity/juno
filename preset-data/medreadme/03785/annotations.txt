@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        complex
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [13:16] 'general-complex' -> 'randomised controlled trials'
+  [17:18] 'abbr-general' -> 'RCTs'

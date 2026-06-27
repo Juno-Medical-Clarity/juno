@@ -1,0 +1,10 @@
+source:      plos_biology
+side:        simple
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [14:15] 'medical-jargon-google-hard' -> 'FAM173B'
+  [17:20] 'medical-jargon-google-hard' -> 'mitochondrial lysine methyltransferase'
+  [25:27] 'medical-jargon-google-easy' -> 'methyl group'
+  [28:30] 'medical-jargon-google-easy' -> 'donor proteins'

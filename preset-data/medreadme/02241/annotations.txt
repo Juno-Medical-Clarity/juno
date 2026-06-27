@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'ovaries'
+  [9:10] 'medical-jargon-google-easy' -> 'hysterectomy'
+  [16:18] 'medical-jargon-google-easy' -> 'ovarian cancer'
+  [23:25] 'medical-jargon-google-easy' -> 'gynaecological procedures'

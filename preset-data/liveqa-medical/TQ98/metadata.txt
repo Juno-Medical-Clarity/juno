@@ -1,0 +1,15 @@
+qid: TQ98
+source_file: 1-123220245.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What are the components of Coenzyme and is it useable for Muslims?
+nlm_summary: What are the components of Coenzyme Q10(100-mg) and is it halal?
+
+focus_entities:
+  [F1] (DrugSupplement) COENZYME Q10
+question_types:
+  [T1] INGREDIENT
+  [T2] INDICATION
+keywords:
+  [K1] (PersonPopulation) MUSLIMS

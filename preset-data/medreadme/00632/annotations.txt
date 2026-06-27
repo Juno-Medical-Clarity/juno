@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        simple
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [6:8] 'medical-jargon-google-easy' -> 'anti-mTORC2 therapy'
+  [16:17] 'medical-jargon-google-easy' -> 'mTORC2'
+  [22:23] 'medical-jargon-google-easy' -> 'mTORC1'
+  [33:34] 'medical-jargon-google-easy' -> 'mTORC2'

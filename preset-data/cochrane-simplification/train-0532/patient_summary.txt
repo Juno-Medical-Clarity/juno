@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0532  |  gem_id: gem-cochrane-simplification-train-533  |  doi: 10.1002/14651858.CD004205.pub3
+
+Six randomised controlled trials met our inclusion criteria. We found low-quality evidence that pentoxifylline in combination with antibiotics decreases deaths and duration of hospital stay in newborn sepsis. Pentoxifylline treatment did not affect lung, eye, or brain injury as a result of sepsis (very low-quality evidence). We identified no adverse effects due to pentoxifylline. There were no completed studies looking at pentoxifylline treatment in NEC. We need better-quality evidence on the use of pentoxifylline in the treatment of sepsis or NEC in the newborn.

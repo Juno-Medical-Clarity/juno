@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [10:13] 'medical-jargon-google-easy' -> 'tumour cell growth'

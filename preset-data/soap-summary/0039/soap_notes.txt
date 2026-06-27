@@ -1,0 +1,50 @@
+# SOAP Notes — Sample 0039
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 2 days
+ - Harsh sounding
+ - No sputum or blood
+ - No wheezing
+- Stuffy nose for 2 days
+- Pink eye since yesterday
+ - Possibly itchy (rubbing eyes)
+ - No discharge, tearing, vision changes, or pain
+- Possibly sore throat
+- Eating slightly less than usual
+- Possibly loss of taste
+- Felt hot (no temperature taken)
+- No night sweats
+- No stomach pain, nausea, vomiting, painful urination, or diarrhoea
+- No headaches, aches, or pains
+- No rashes
+
+Past Medical History:
+- No previous diagnoses
+- No hospitalisations
+- No regular medications
+- No medication allergies
+- No surgeries
+- Normal growth and development
+- No vision or hearing concerns
+
+Social History:
+- Lives with mother (primary caregiver) and father
+- No pets
+- No smokers in the home
+- No recent travel
+- Attends day care (no reported illnesses there)
+
+Family History:
+- No lung, heart, genetic, or congenital conditions
+
+Objective:
+- 
+
+Assessment:
+- 
+
+Plan:
+- Investigations: Test for COVID-19
+- Consider common cold as differential diagnosis
+- Comprehensive testing to rule out other viral infections

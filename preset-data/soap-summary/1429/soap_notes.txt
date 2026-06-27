@@ -1,0 +1,30 @@
+# SOAP Notes — Sample 1429
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Swelling in the left leg for almost three years, worsening over the past two to three months.
+- Swelling improves in the morning but increases throughout the day; lately, it remains larger than before.
+- Right leg also swells, but not as much as the left.
+- Pain in the left shoulder; gradual loss of mobility and strength over the past year.
+- Low back pain attributed to a poor mattress.
+- Frequent urination, waking up to urinate 2-3 times at night.
+- Weight gain of approximately 12 pounds since March, currently weighing 284 pounds.
+- No chest pain, but feeling gradually short of breath.
+- Works as a bus dispatcher, which involves prolonged sitting and limited movement.
+
+Objective:
+- High white blood cell count noted in labs.
+- Blood pressure is stable.
+- Current medications: Atenolol 12.5 mg per day and Lasix as needed.
+
+Assessment:
+- High white blood cell count (previous evaluation by another physician deemed not problematic).
+- Swelling of the left leg (possible causes to be determined).
+- Gradual loss of mobility and strength in the left shoulder.
+- Weight gain and frequent urination.
+- Shortness of breath.
+
+Plan:
+- Check cholesterol levels.
+- Continue monitoring blood pressure.
+- Evaluate the need for further workup regarding the swelling and shoulder issues.

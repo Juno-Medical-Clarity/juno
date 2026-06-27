@@ -1,0 +1,46 @@
+# SOAP Notes — Sample 0232
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presents with a mass below the right knee (2-3 cm lump on the tibial bone, noticed 2 weeks ago)
+- Lump is not painful but is a little uncomfortable on palpation
+- No history of trauma or injury to the area
+- Denies fevers, chills, night sweats, unexpected weight loss
+- No neurological symptoms (numbness, tingling, sensory loss), muscle weakness, infectious symptoms (runny nose, sore throat, cough, SOB), memory loss, confusion, sensory changes (vision, hearing, smell, taste)
+- No chest pain, palpitations, lightheadedness, dizziness, N/V, appetite changes, abdominal pain, changes in bowel habits (diarrhea, constipation, blood in stool) or urinary patterns
+- No skin changes (rashes), changes in hair or nails
+- Energy levels are normal, no fatigue, muscle aches, body pains or joint pains
+
+PMHx:
+- No known medical conditions
+- No medications (OTC or Rx)
+- No allergies
+- Immunizations up to date
+- No hospitalizations or surgeries
+
+SocHx:
+- Lives with parents and older brother in a house outside the city
+- Currently in school, no work
+- Denies smoking, drug use, sexual activity
+- No concerns for safety at home (physical violence, verbal abuse), no bullying at school, feels safe overall
+
+FHx:
+- Father has diabetes, mother has anxiety
+- Uncle had melanoma (surgically removed)
+- No known genetic diseases or congenital diseases
+
+Objective:
+- No issues with walking, no antalgic gait
+- No swelling, redness or skin discoloration over the mass
+- No muscle atrophy around the area
+- No joint deformities
+- Palpable hard lump below right knee, no pain on palpation
+- Full ROM of hip, knee and ankle joints
+
+Assessment & Plan:
+1. Mass below right knee
+- Osteochondroma (most likely - most common primary benign bone tumor)
+- Differential diagnosis: osteoma, enchondroma
+- Investigations: X-ray of right knee and long bones (femur, tibia/fibula)
+- Treatment: pending imaging results
+- Referrals: none at this time

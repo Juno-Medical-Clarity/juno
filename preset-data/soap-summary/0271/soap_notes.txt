@@ -1,0 +1,44 @@
+# SOAP Notes — Sample 0271
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Right elbow pain, lateral aspect, started several months ago, recently more painful (4/10 severity)
+- No trauma or triggers noted, pain worse at end of work day
+- Pain improves with rest and ibuprofen
+- Pain is achy, sometimes sharp with certain movements (wrist flexion, lifting/holding heavy objects at work)
+- Repetitive work on a line
+- Topical OTC ointments provide some relief
+- Able to move right arm and hand fully, but pain is becoming an issue at work
+- Pain localized to lateral right elbow, no radiation
+- No numbness, tingling, or coldness in arm
+
+Objective:
+- No redness, swelling, misalignment, or deformity of right elbow
+- Tenderness to palpation over lateral elbow, no tenderness over medial elbow, forearm, or biceps
+- Pain with wrist extension and flexion, elbow in full extension
+- No pain with elbow flexion, shoulder extension, adduction, forearm pronation, or supination
+
+Past Medical History:
+- Healthy, no chronic medical conditions
+- C-section 17 years ago (non-emergent)
+- No medications other than Tylenol and Advil PRN for pain
+- Up to date on immunizations
+- No allergies
+- No family history of skeletal, muscular, neurological, or autoimmune conditions
+
+Social History:
+- Non-smoker, no marijuana use
+- Occasional alcohol use (1 glass of wine per week)
+- No recent sick contacts or travel
+
+Assessment:
+- Lateral epicondylitis (tennis elbow)
+
+Plan:
+- No imaging necessary at this time
+- Activity modification at work to avoid repetitive motions and heavy lifting
+- Consider using compression sleeve
+- Continue Tylenol or NSAIDs PRN for pain
+- Physical therapy for mobility and strengthening
+- Apply ice for pain and swelling PRN
+- Expected resolution in 6 months to 2 years with conservative management

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1563  |  gem_id: gem-cochrane-simplification-train-1564  |  doi: 10.1002/14651858.CD004913.pub2
+
+The review identified 10 trials that involved 2412 participants. Overall, the quality of the trials was not high but the review showed that stockpiles of the vaccines maintained their effectiveness even when diluted. New second-generation vaccines seemed to be effective but still have adverse events. There were too few participants overall to be able to assess rare outcomes. Further research is needed, particularly on the third-generation vaccines.

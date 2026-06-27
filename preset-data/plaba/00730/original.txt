@@ -1,0 +1,19 @@
+Introduction: Coronavirus disease 2019 (COVID-19) vaccines are nothing short of a miracle story halting the pandemic across the globe.
+Nearly half of the global population has received at least one dose.
+Nevertheless, antibody levels in vaccinated people have shown waning, and breakthrough infections have occurred.
+Our study aims to measure antibody kinetics following AZD1222 (ChAdOx1) vaccination six months after the second dose and the factors affecting the kinetics.
+Materials and methods: We conducted a prospective longitudinal study monitoring for six months after the second of two AZD1222 (ChAdOx1) vaccine doses in healthcare professionals and healthcare facility employees at Veer Surendra Sai Institute of Medical Sciences and Research (included doctors, nurses, paramedical staff, security and sanitary workers, and students).
+Two 0.5-mL doses of the vaccine were administered intramuscularly, containing 5 x 1010 viral particles 28 to 30 days between doses.
+We collected blood samples one month after the first dose (Round 1), one month after the second dose (Round 2), and six months after the second dose (Round 3).
+We tested for immunoglobulin G (IgG) levels against the receptor-binding domain of the spike protein of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) by chemiluminescence microparticle immunoassay.
+We conducted a linear mixed model analysis to study the antibody kinetics and influencing factors.
+Results: Our study included 122 participants (mean age, 41.5 years; 66 men, 56 women).
+The geometric mean IgG titers were 138.01 binding antibody units (BAU)/mL in Round 1, 176.48 BAU/mL in Round 2, and 112.95 BAU/mL in Round 3.
+Seven participants showed seroreversion, and 11 had breakthrough infections.
+Eighty-six participants showed a substantial decline in antibody titer from Rounds 2 to 3.
+Persons aged 45 or older had higher mean titer than people aged younger than 45 years.
+Overweight and obese (BMI â‰¥ 25 kg/m2) had a higher mean titer than average or underweight persons.
+The only significant predictor of IgG titers at six months was SARS-CoV-2 infection on mixed model analysis.
+Conclusion: We found a substantial decline in antibody levels leading to seven cases of seroreversion in healthcare professionals who received the ChAdOx1 vaccine.
+History of prior COVID-19 was the only significant factor in antibody levels at six months.
+Seroreversion and breakthrough infection warrant further research into the optimal timing and potential benefits of booster doses of the AZD1222 (ChAdOx1) COVID-19 vaccine.

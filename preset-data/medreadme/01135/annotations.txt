@@ -1,0 +1,15 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [9:11] 'medical-jargon-google-easy' -> 'postnatal steroids'
+  [18:20] 'medical-jargon-google-easy' -> 'congenital anomaly'
+  [37:41] 'medical-jargon-google-easy' -> 'patent ductus arteriosus ligation'
+  [50:52] 'medical-jargon-google-easy' -> 'postnatal corticosteroid'
+  [54:55] 'medical-jargon-google-easy' -> 'contraindicated'
+  [61:63] 'medical-jargon-google-easy' -> 'acute sepsis'
+  [64:67] 'medical-jargon-google-easy' -> 'acute necrotising enterocolitis'
+  [68:71] 'medical-jargon-google-easy' -> 'focal intestinal perforation'
+  [72:76] 'medical-jargon-google-hard' -> 'cyclo - oxygenase therapy'

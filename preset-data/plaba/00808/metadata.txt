@@ -1,0 +1,5 @@
+pmid:        35091117
+question:    64
+adaptation:  adaptation2
+title:       The EPIGENE network: A French initiative to harmonize and improve the nationwide diagnosis of monogenic epilepsies
+sentences:   9

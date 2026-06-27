@@ -1,0 +1,12 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Skin lesions'
+  [4:6] 'medical-jargon-google-easy' -> 'L. major'
+  [12:13] 'medical-name-entity' -> 'ThermoMed'
+  [23:25] 'medical-jargon-google-easy' -> 'systemic toxicity'
+  [29:30] 'medical-jargon-google-easy' -> 'intravenous'
+  [30:31] 'abbr-medical' -> 'SSG'

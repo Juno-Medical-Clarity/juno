@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0321
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient lives in a board and care facility, which they describe as nice and supportive.
+- Patient feels relaxed living there.
+- No history of alcohol consumption.
+- No history of tobacco consumption.
+- No history of illicit drug use, including IV drugs.
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No assessment information provided in the conversation.)
+
+Plan:
+- (No plan information provided in the conversation.)

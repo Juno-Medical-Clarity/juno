@@ -1,0 +1,12 @@
+Doctor: I am afraid, I don't have better news for you, your reports confirm cancer.
+Patient: We were suspecting it all along, but now since it is confirmed it's just hard to accept.
+Doctor: I am sorry, I totally understand. Do you want some time?
+Patient: No, I am okay.
+Doctor: Hm, you also have hypertension and diabetes.
+Patient: Yeah, that I know.
+Doctor: Did you have any chest pain or shortness of breath or uneasiness?
+Patient: No, I don't have any heart condition.
+Doctor: Okay and no dizziness or loss of consciousness or stroke like symptoms?
+Patient: No.
+Doctor: Okay. Well, your B M I looks fine, that means you are not overweight.
+Patient: Hm.

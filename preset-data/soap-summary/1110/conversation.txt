@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1110
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any related family history? You mean like heart issues in the family? Yeah, something like that. My brother died of heart attack. It was sudden everyone was shocked. How old was he? He was not that old; he was just in his fifties.

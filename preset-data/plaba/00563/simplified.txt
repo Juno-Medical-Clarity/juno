@@ -1,0 +1,12 @@
+The human heart is an important organ in the circulatory system in the body that carries blood to and from the heart. It beats more than 2 billion times during normal life.
+This functioning of the heart depends on the cardiac conduction system that includes heart muscle cells and electrical conducting fibers and provides the heart its automatic heart rhythm. The cardiac conduction system includes impulse generators, such as the sino-atrial node that sends electrical signals, and the impulse propagating (His-Purkinje) system that synchronizes heart beats between the two heart ventricles (chambers).
+The sinoatrial node acts as the natural pacemaker of the heart.
+The cells in the sinus node have natural automatic actions, which starts the electrical activity in the heart.
+This natural electrical potential moves from the sinoatrial node (the heart's natural pacemaker) to the atrioventricular node, a small part of the heart that intensifies these heart impulses, and finally into the His-Purkinje system.
+This movement of electric potential in an orderly manner controls the rhythmic contraction of the heart's chambers.
+The failure of this internal electrical conduction in the heart can result in different problems with the heart beat.
+Several diseases and conditions affect the conduction system by involving impulse generation, impulse travel through the path of the His-Purkinje system, or both.
+Acquired conditions such as a heart attack, age-related changes in the heart, complications from heart procedures, and negative reactions to drugs are the major causes of the body's conduction system problems.
+The current standard of care for symptomatic bradyarrhythmias (slower than normal heart beats) due to conduction system diseases is to implant a cardiac implantable electronic device, a device that is placed under the skin to help treat a slow heart rate.
+These pacing devices provide an external electrical stimulus that leads to changes in cells and helps maintain the electrical ability to send pulses to stimulate the heart tissue.
+This process leads to the development of an electrical impulse to the contraction of muscles in the heart that results in the contraction (pushing blood in and out of the heart) of heart muscle tissue.

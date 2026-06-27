@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        simple
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [1:4] 'general-complex' -> 'randomised clinical trials'
+  [7:10] 'medical-jargon-google-easy' -> 'overt hepatic encephalopathy'
+  [15:18] 'medical-jargon-google-easy' -> 'minimal hepatic encephalopathy'
+  [21:24] 'general-complex' -> 'randomised clinical trial'
+  [29:32] 'medical-jargon-google-easy' -> 'minimal hepatic encephalopathy'

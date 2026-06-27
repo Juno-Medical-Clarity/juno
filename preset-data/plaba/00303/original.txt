@@ -1,0 +1,8 @@
+A drug interaction refers to an event in which the usual pharmacological effect of a drug is modified by other factors, most frequently additional drugs.
+When two drugs are administered simultaneously, or within a short time of each other, an interaction can occur that may increase or decrease the intended magnitude or duration of the effect of one or both drugs.
+Drugs may interact on a pharmaceutical, pharmacokinetic or pharmacodynamic basis.
+Pharmacodynamic interactions arise when the alteration of the effects occurs at the site of action.
+This is a wide field where not only interactions between different drugs are considered but also drug and metabolites (midazolam/alpha-hydroxy-midazolam), enantiomers (ketamine), as well as phenomena such as tolerance (nordiazepam) and sensitization (diazepam).
+Pharmacodynamic interactions can result in antagonism or synergism and can originate at a receptor level (antagonism, partial agonism, down-regulation, up-regulation), at an intraneuronal level (transduction, uptake), or at an interneuronal level (physiological pathways).
+Alternatively, psychotropic drug interactions assessed through quantitative pharmaco-EEG can be viewed according to the broad underlying objective of the study: safety-oriented (ketoprofen/theophylline, lorazepam/diphenhydramine, granisetron/haloperidol), strictly pharmacologically-oriented (benzodiazepine receptors), or broadly neuro-physiologically-oriented (diazepam/buspirone).
+Methodological issues are stressed, particularly drug plasma concentrations, dose-response relationships and time-course of effects (fluoxetine/buspirone), and unsolved questions are addressed (yohimbine/caffeine, hydroxizyne/alcohol).

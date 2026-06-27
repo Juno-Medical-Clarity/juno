@@ -1,0 +1,5 @@
+pmid:        29981730
+question:    40
+adaptation:  adaptation1
+title:       Supervised short-stretch compression therapy in mixed leg ulcers
+sentences:   18

@@ -1,0 +1,3 @@
+Patient: My physician did a blood test. My potassium is high. He recommended me to meet you.
+Doctor: Okay. I did not get the blood report yet. I am waiting for your doctor's office to send it to me. Is it only your potassium that is elevated?
+Patient: Yes, that's what they told me.

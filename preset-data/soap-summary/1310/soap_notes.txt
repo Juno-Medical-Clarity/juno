@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1310
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is married and has a supportive relationship with his wife.
+- Does not smoke and does not use harder substances.
+- Drinks alcohol daily, approximately two to three drinks a day, totaling four to nine drinks a week.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

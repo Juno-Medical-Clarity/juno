@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1529  |  gem_id: gem-cochrane-simplification-train-1530  |  doi: 10.1002/14651858.CD004929.pub3
+
+This systematic review of 37 trials showed that routine use of nasogastric tube decompression after abdominal operations, rather than speeding recovery, may slow recovery down and increase the risk of some postoperative complications. On the other hand routine use may decrease the risk of wound infection and subsequent ventral hernia.

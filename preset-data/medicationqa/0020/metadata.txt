@@ -1,0 +1,5 @@
+drug_focus: meloxicam
+question_type: Appearance
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6513e46b-3229-685b-c83b-2209454fae71
+sample_id: 0020

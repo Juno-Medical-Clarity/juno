@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0460
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_clinician: I was not able to get her complete history and review of systems. But she is scheduled for a bladder distension surgery. Okay. Guest_clinician: Also, I am not sure if she is off Coumadin because of the surgery. Oh yeah, she has chronic AFib and she is on Coumadin. Not sure if she has stopped the medicine due to upcoming surgery. Guest_clinician: The only thing she could tell was that she was having tremors for the past three to four years and was diagnosed with early Parkinson's disease. Alright.

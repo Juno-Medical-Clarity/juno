@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0634
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+The patient has a history of C A D. Guest_clinician: Are they being followed by a cardiologist? Not to my knowledge. I can check their electronic medical records. One sec.

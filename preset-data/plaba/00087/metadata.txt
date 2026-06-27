@@ -1,0 +1,5 @@
+pmid:        33178623
+question:    7
+adaptation:  adaptation1
+title:       Diagnostic Methods, Clinical Guidelines, and Antibiotic Treatment for Group A Streptococcal Pharyngitis: A Narrative Review
+sentences:   11

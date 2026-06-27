@@ -1,0 +1,5 @@
+pmid:        34531331
+question:    28
+adaptation:  adaptation1
+title:       SARS-CoV-2 causes senescence in human cells and exacerbates the senescence-associated secretory phenotype through TLR-3
+sentences:   8

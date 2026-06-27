@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0309  |  gem_id: gem-cochrane-simplification-test-310  |  doi: 10.1002/14651858.CD003219
+
+Other Cochrane reviews show benefit from nerve decompression surgery and steroids. This review of other non-surgical treatments found some evidence of short-term benefit from oral steroids, splinting/hand braces, ultrasound, yoga and carpal bone mobilisation (movement of the bones and tissues in the wrist), and insulin and steroid injections for people who also had diabetes. Evidence on ergonomic keyboards and vitamin B6 is unclear, while trials so far have not shown benefit from diuretics, non-steroidal anti-inflammatory drugs, magnets, laser acupuncture, exercise or chiropractic.

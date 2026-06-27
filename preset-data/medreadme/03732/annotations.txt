@@ -1,0 +1,9 @@
+source:      pnas
+side:        simple
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [8:11] 'medical-jargon-google-hard' -> 'embryonic mTORC2 inhibition'
+  [12:14] 'medical-jargon-google-easy' -> 'embryonic diapause'
+  [25:26] 'medical-jargon-google-easy' -> 'proliferation'

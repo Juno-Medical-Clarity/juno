@@ -1,0 +1,26 @@
+Doctor: Good morning, sir. How are you feeling today?
+Patient: Not so good, doctor. I've been having a lot of pain in my back and a cough for two weeks now.
+Doctor: I see. You were admitted to the First Hospital of Jiaxing on 8 August, correct?
+Patient: Yes, that's correct.
+Doctor: We ran some tests and a thoracic CT scan revealed that you have a malignant tumor on your left upper lobe.
+Patient: Hmm, that's not good.
+Doctor: Unfortunately, it's complicated by distal obstructive inflammation, the enlargement of the left hilar and mediastinal lymph nodes, and multiple bone metastases.
+Patient: What does that mean?
+Doctor: Well, it means that the cancer has spread from your lung to your bones.
+Patient: Oh, no.
+Doctor: We also did an Immunohistochemical test on a posterior iliac bone marrow biopsy specimen, and the results showed a positive expression of CD3, CD20, CD34, CD235a, and NPO, and a negative expression of CD61.
+Patient: What does that mean?
+Doctor: It means that the cancer cells have infiltrated your bone marrow.
+Patient: Is it serious?
+Doctor: Yes, it is. We also did an endoscopic biopsy of the bronchial mucosa on your upper left lobe, and the results showed a positive expression of TTF1, CK7, NapsinA, Ki67, CK, and EMA, and a negative expression of CK5/6, P40, CgA, Syn, and CD45.
+Patient: What does that mean?
+Doctor: It means that the cancer cells have infiltrated the mucosal and fibrous tissues of your bronchial mucosa.
+Patient: Is there anything that can be done?
+Doctor: Based on the results of the tests and observations, you have been diagnosed with stage IVb lung adenocarcinoma with bone metastases.
+Patient: Is there any treatment?
+Doctor: We are exploring potential therapeutic opportunities. We have detected your FFPE tissue and control sample using a 733-gene NGS panel in a College of American Pathologists and Clinical Laboratory Improvement Amendments certificated lab.
+Patient: What does that mean?
+Doctor: It means that we are using the latest technology to sequence your DNA and look for any potential treatments.
+Patient: Is it hopeful?
+Doctor: It's difficult to say at this point, but we are doing everything we can to help you.
+Patient: Thank you, doctor.

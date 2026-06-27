@@ -1,0 +1,5 @@
+drug_focus: clotrimazole and betamethasone dipropionate
+question_type: Information
+section_title: INDICATIONS AND USAGE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6ac4020-2c67-426a-8289-7e54ce43d0c9&audience=consumer
+sample_id: 0634

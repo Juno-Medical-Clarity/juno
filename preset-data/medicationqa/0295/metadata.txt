@@ -1,0 +1,5 @@
+drug_focus: (Voltaren or Cataflam) and Medrol
+question_type: Interaction
+section_title: DRUG INTERACTIONS
+source_url: https://www.mayoclinic.org/drugs-supplements/methylprednisolone-oral-route/before-using/drg-20075237
+sample_id: 0295

@@ -1,0 +1,1 @@
+To examine whether gene regulation is related to a discernible pattern of genomic organization, we analyzed the linear arrangement of co-regulated genes along chromosomes and determined the organization of chromosomes during the differentiation of a hematopoietic progenitor to erythroid and neutrophil cell types.

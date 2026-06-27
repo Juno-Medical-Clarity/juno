@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3525  |  gem_id: gem-cochrane-simplification-train-3526  |  doi: 10.1002/14651858.CD004678.pub2
+
+Previous studies indicate that glatiramer acetate, a synthetic drug, is effective in animal models of MS, and shows some benefits in MS patients. The objective of this review was to assess the efficacy of glatiramer acetate in RRMS and PMS patients. Among the pertinent medical literature six studies met the criteria of the methodological quality necessary for their inclusion in this review. 540 RRMS patients and 1049 PMS patients contributed to this analysis. The data showed no beneficial effects on disease progression in both MS forms, a slight beneficial effect  in the reduction of risk of relapses in RRMS patients and no benefits in PMS patients. Adverse events such as flushing, chest tightness, sweating, palpitations, anxiety and  local injection-site reactions occurred quite frequently, but no major adverse effects were observed.

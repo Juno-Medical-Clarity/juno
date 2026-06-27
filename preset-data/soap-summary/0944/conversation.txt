@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0944
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any other problems? I do actually, I have back disc degeneration. Oh really? Yeah. When were you diagnosed with it? Maybe twenty ten?

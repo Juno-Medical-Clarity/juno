@@ -1,0 +1,230 @@
+# Smith Collection Transcript: RES0114
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: So what brings you in
+
+Patient: Yeah so um i just came in because uh so i i have this cough thats been going on for the last five years but over the last month its really been getting worse um and like last week i ive just been constantly coughing so yeah i was just a bit concerned
+
+Doctor: Yeah ok so you said the past couple of years youve been coughing so how many years exactly would that be two three four
+
+Patient: Probably five i would say and i was diagnosed with uh coparound that time
+
+Doctor: OK ok um the cough that you currently have um is it a dry cough or are you bringing up any phlegm
+
+Patient: uh im pretty much always bringing up like this uh white material
+
+Doctor: White ok um and is it constant throughout the day or do you find it comes and goes
+
+Patient: Its pretty much there all the time but uh its definitely getting worse um it is i think the worst in the morning um when i wake up and i just feel like theres just a bunch of gunk stuck in the back of my throat
+
+Doctor: OK um and if you were to describe the quality of this cough would you say its harsh barky muffled
+
+Patient: I would say its harsh
+
+Doctor: Harsh ok and has the quality of your cough changed at all in the past few years like does it sound different than it used to
+
+Patient: um i dont know if it sounds different but uh especially for the last month i would say im bringing up more of the material and its usually white over the five years but um i noticed uh in the last weekish its had a yellowish tinge to it as well
+
+Doctor: OK ok so its changed a little bit um and are you experiencing any shortness of breath with this
+
+Patient: No i i dont think so like i sometimes when im walking around uh doing more stuff uh working in the garden like i feel like i might have to breathe a little bit harder but uh not regularly
+
+Doctor: OK ok thats good um and any wheezing
+
+Patient: uh yeah its like usually i start coughing a lot more when im starting to do any kind of activities and sometimes when i start coughing more i also start wheezing um but uh right now im fine
+
+Doctor: Youre fine now ok uh alright and sorry forgot to ask you earlier do you see any blood in your phlegm
+
+Patient: No no i havent noticed any blood
+
+Doctor: OK any uh changes to your hair or on your skin like rashes
+
+Patient: Not that ive noticed no
+
+Doctor: OK any weight loss
+
+Patient: um i dont think so
+
+Doctor: OK fevers
+
+Patient: No
+
+Doctor: OK exhaustion
+
+Patient: um yeah i would say like for the last few months i am a bit more tired
+
+Doctor: Mhmm ok how about changes in your vision or hearing
+
+Patient: No i havent experienced that
+
+Doctor: How about a stuffy nose runny nose
+
+Patient: uh no not really
+
+Doctor: No ok how about changes to your smell or taste
+
+Patient: uh nope
+
+Doctor: No ok uh chest pain
+
+Patient: Not chest pain but when i get into those coughing fits sometimes it feels just really tight in my chest
+
+Doctor: Oh yeah
+
+Patient: But it tends to go away with uh just some rest
+
+Doctor: Oh ok ok um how about palpitations like feeling like your heart is racing
+
+Patient: uh no i dont think so
+
+Doctor: No ok how about some swelling in your limbs
+
+Patient: I i did notice like uh a little bit of swelling in my uh both my like right by my ankles my shoes like like even when i wear my socks it like leaves little marks and then uh i just feel my like my shoes are tighter
+
+Doctor: OK ok and how long has that been going on
+
+Patient: Probably uh ive had this issue for like a pretty long time um probably i would say the last year at least
+
+Doctor: OK ok last year um any uh dizziness or fainting spells
+
+Patient: No
+
+Doctor: No ok any memory issues uh confusion
+
+Patient: No
+
+Doctor: Numbness or tingling
+
+Patient: No nothing like that
+
+Doctor: No headaches
+
+Patient: uh no no headaches
+
+Doctor: Changes to your bowel movements
+
+Patient: No i tend to go like once a day and yeah its pretty normal
+
+Doctor: OK uh nausea or vomiting
+
+Patient: No
+
+Doctor: No ok and are you otherwise healthy do you have any longstanding conditions i know you said you have copanything else
+
+Patient: I do have high blood pressure
+
+Doctor: OK do you have something called congestive heart failure
+
+Patient: uh no whats that
+
+Doctor: OK its when um your hearts not pumping as much as it should be um so you get some backup of fluid i ask because you you mentioned that you um were having some swelling in your legs
+
+Patient: Oh i yeah i i yeah i didnt know anything about that i just thought that was uh its been going on for a while now and didnt really bother me too much
+
+Doctor: OK um alright and are you taking any medications
+
+Patient: Yeah i have this medication uh right now im taking it its called lisinopril
+
+Doctor: OK so thats for your blood pressure
+
+Patient: Yeah
+
+Doctor: OK are you on any puffers sorry go ahead
+
+Patient: Yes im on no worries im on um uh two puffers right now one of them is like just one that i use when i really need it and then um theres another one so i think thats like the ventolin puffer
+
+Doctor: Yeah
+
+Patient: And then the other one is called i think its called spiriva
+
+Doctor: OK ok perfect and are your puff puffers giving you any relief at all from the coughing fits
+
+Patient: Yeah ive been using the ventolin uh more and it it does seem to help
+
+Doctor: OK ok uh do you find theyre not working as much as they used to though
+
+Patient: Yeah i feel like uh before i didnt really like it just last year i didnt really have to take it too much um like even when i use the puffer i start getting coughing like maybe half an hour later and so its not i dont think its as effective
+
+Doctor: OK yeah um ok and have you had any recent blood work done
+
+Patient: uh no i havent been to the doctor for a while
+
+Doctor: OK and do you have any allergies
+
+Patient: um i think i have allergies to uh like um amoxicillin i got like a rash once
+
+Doctor: OK have you had any uh amoxicillin or like penicillin type antibiotics recently
+
+Patient: No
+
+Doctor: No ok um are you up to date with all your immunizations
+
+Patient: Yep
+
+Doctor: OK um youre not quite at this age range yet but uh we do recommend the pneumococcal vaccine when you turn 65 and um did you get the flu vaccine this year
+
+Patient: uh yeah i did with the pandemic going on i usually dont get it but i got it this year
+
+Doctor: OK good good um any family history of lung conditions or heart conditions
+
+Patient: Uhm lung conditions i dont think so heart conditions uh my father did have a heart attack in his 60s but hes fine hes hes living right now
+
+Doctor: OK ok any cancers
+
+Patient: Cancers i think my uncle from my fathers side um had uh bladder cancer
+
+Doctor: OK ok um do you smoke
+
+Patient: I used to smoke um i just quit a few years ago
+
+Doctor: OK congrats um how much did you used to smoke
+
+Patient: Uhm i dont know probably i went through a like a whole pack every day i would say for at least 30 years of my life
+
+Doctor: OK ok um so its good that you stopped um do you take any other recreational drugs
+
+Patient: uh no nothing like that
+
+Doctor: No ok how about alcohol do you drink
+
+Patient: uh i drink every like maybe a beer a day
+
+Doctor: OK um are you um living with anyone right now
+
+Patient: Yeah its just uh me and my wife
+
+Doctor: OK where do you guys live
+
+Patient: uh we just live uh outside of the city in in a condominium
+
+Doctor: OK any uh old carpets mold dust asbestos anything like that in the condo
+
+Patient: No its pretty well maintained
+
+Doctor: OK good and have you been in contact with any anyone sick recently
+
+Patient: No ive mainly just been trying to stay inside i work from home too so havent really been seeing anyone
+
+Doctor: OK thats good and um travel to anywhere recently outside the province
+
+Patient: Uhm outside of the province no not not for like the last year at least
+
+Doctor: OK ok um so those were kind of all the questions that i had for you did you have any questions for me
+
+Patient: um yeah i was just wondering like what you think it might be
+
+Doctor: Yeah so it definitely sounds like a copexacerbation but because your symptoms overlap with those of covid we will take a swab and you should hear back in about 24 to 48 hours um and you can you can self isolate for 14 days um and if its positive public health will be in touch with you to um do some contact tracing but in the meantime well also do a work up for the copexacerbation um it seems like you have taken the correct steps so far in like stopping like stopping your smoking and um taking your puffers as needed um so right now we will continue using the puffers that you have and if you dont already have a long acting beta agonist well give you that as well as if its like if it gets really severe well also give you some inhaled corticosteroids um and well also check your oxygen saturation to make sure its over uh 88 um and well give you oxygen if you need it um as well some antibiotics to consider you mentioned that you were allergic to amoxicillin so we might give you like a macrolide like azithromycin for now um and hopefully your symptoms subside and we can get you home how does that sound
+
+Patient: OK that sounds good thank you so much
+
+Doctor: Yeah no problem and i forgot sorry well also probably do like a chest x ray and a pulmonary function test
+
+Patient: OK sounds good
+
+Doctor: Yeah no problem

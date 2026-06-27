@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2468  |  gem_id: gem-cochrane-simplification-train-2469  |  doi: 10.1002/14651858.CD009617.pub2
+
+Other Cochrane reviews provide clear evidence that giving anti-D immunoglobulin (anti-D) within 72 hours of the birth to a Rh-negative mother of a Rh-positive baby and during the third trimester reduces Rh antibody formation in future pregnancies. The chances of developing Rh antibodies may also be reduced if anti-D is given to Rh-negative women following a spontaneous miscarriage or a dilatation & curettage (D&C) for incomplete miscarriage after 12 weeks. However, our review only identified one poor quality randomised controlled trial (involving 48 women) that considered anti-D administration after therapeutic D&C or spontaneous miscarriage for preventing Rh alloimmunisation (development of antibodies in response to antigens from a non-self protein). The included study did not report any data on the review's primary or secondary outcomes. More high-quality research is needed in this field.

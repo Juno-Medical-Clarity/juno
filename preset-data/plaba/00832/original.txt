@@ -1,0 +1,12 @@
+Purpose: The aim of the present study was to evaluate the efficacy and safety of non-supervised home-based exercise versus individualized and supervised programs delivered in clinic-based settings for the functional recovery immediately after discharge from a primary TKA.
+Methods: Medline, Embase, Cochrane, and PEDro databases were screened, from inception to April 2015, in search for randomized clinical trials (RCT) of home-based exercise interventions versus individualized and supervised outpatient physical therapy after primary TKA.
+Target outcomes were: knee range of motion (ROM), patient-reported pain and function, functional performance, and safety.
+Risk of bias was assessed with the PEDro scale.
+After assessing homogeneity, data were combined using random effects meta-analysis and reported as standardized mean differences or mean differences.
+We set a non-inferiority margin of four points in mean differences.
+Results: The search and selection process identified 11 RCT of moderate quality and small sample sizes.
+ROM active extension data suitable for meta-analysis was available from seven studies with 707 patients, and ROM active flexion from nine studies with 983 patients.
+Most studies showed no difference between groups.
+Pooled differences were within the non-inferiority margin.
+Most meta-analyses showed significant statistical heterogeneity.
+Conclusion: Short-term improvements in physical function and knee ROM do not clearly differ between outpatient physiotherapy and home-based exercise regimes in patients after primary TKA; however, this conclusion is based on a meta-analysis with high heterogeneity.

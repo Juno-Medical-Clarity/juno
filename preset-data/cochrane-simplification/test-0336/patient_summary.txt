@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0336  |  gem_id: gem-cochrane-simplification-test-337  |  doi: 10.1002/14651858.CD003902
+
+This systematic review shows that orally administered theophylline improves lung function and levels of oxygen and carbon dioxide in the blood. However, there is limited data on its effect on symptoms, exercise capacity or quality of life. Despite being associated with increased side effects, particularly nausea, participants preferred theophylline over placebo.

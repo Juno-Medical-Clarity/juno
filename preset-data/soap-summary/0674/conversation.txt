@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0674
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you drink? No, doc. How about smoke? That I do. How long have you been smoking? I long time. Have you tried to quit or reduce how much you smoke? Truly, I have no interest in doing that with my age. I see. I'd recommend you consider nicotine patches because smoking brings with it many health problems. Tell me something I don't know. I understand. How about any other drug use? I know you're not going to like hearing this, but I'm big on weed. I know, I know, I'm going to regret all of this at some point in time. It's just become a habit that's incredibly hard to break. Okay. I'd rather you smoke weed than cigs. How many packs a year do you think you smoke on average? I go through a pack around every two weeks. Let's go with around twenty seven.

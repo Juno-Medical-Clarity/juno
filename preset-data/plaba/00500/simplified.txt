@@ -1,0 +1,11 @@
+Primary progressive aphasia (PPA), a disease that damages nerve tissue, is associated with amyloid-β (Aβ) pathology. Amyloid-β (Aβ) pathology is the accumulation of protein plaques in the brain.
+However, diagnosis of PPA based on Aβ positivity (presence) remains unclear.
+The goal of this paper was to determine the prevalence (frequency) of Aβ positivity in patients with PPA. The paper also aimed to compare the clinical characteristics of patients with Aβ-positive (A+) and Aβ-negative (A- or no presence of Aβ) PPA.
+Additionally the authors applied the Aβ and tau classification system (AT system) in patients with PPA. However, this was only done for patients with available information of a tau (a type of protein) biomarker. Biomarkers are measurable, biological substances that can indicate disease in a patient.
+This study recruited 110 patients with PPA. Of the 110 patients, there were four PPA groups: 41 semantic [svPPA], 27 non-fluent [nfvPPA], 32 logopenic [lvPPA], and 10 unclassified [ucPPA]). Semantic PPA is characterized by loss of language function. Non-fluent PPA is characterized by the gradual loss of speech. Logopenic PPA is characterized by difficulty in naming and sentence repetition. All recruits underwent Aβ-PET (brain scan) imaging at multi centers.
+The extent of language impairment and cortical atrophy, or brain degeneration, were compared between the A+ and A-PPA subgroups.
+The prevalence of Aβ positivity was highest in patients with lvPPA, followed by ucPPA, nfvPPA, and svPPA, respectively.
+The A+ PPA subgroup had cortical atrophy (damage) mainly in the left brain regions and had lower repetition scores when compared to the A- PPA subgroup.
+The authors observed that >90% of the recruits with A+ PPA had tau or protein deposition.
+These findings will help clinicians understand the patterns of language impairment and cortical atrophy in patients with PPA based on Aβ deposition.
+Most of the A+ PPA patents were tau positive. Due to this, understanding the influence of Alzheimer's disease biomarkers on PPA may allow for these patients to participate in clinical trials that treat atypical Alzheimer's disease.

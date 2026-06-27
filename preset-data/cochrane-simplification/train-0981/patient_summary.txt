@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0981  |  gem_id: gem-cochrane-simplification-train-982  |  doi: 10.1002/14651858.CD002881
+
+The review of trials found that a few days of using acetazolamide can improve the level of oxygen in the blood of people with COPD. It is not clear if this leads to better outcomes, so more research is needed. Not enough data were reported on the safety of the drug.

@@ -1,0 +1,17 @@
+Patient: I'm right handed.
+Doctor: Tell me what brings you here, sir?
+Patient: I'm having these cramps in my feet, in my hand and I just wanted to get checked. It has been happening for like six months. I develop muscle contractions in my toes and both feet. It only happens in night.
+Doctor: How frequent is it?
+Patient: Around three times a week.
+Doctor: What do you do when you have these cramps?
+Patient: I try to stand and it helps me relieve some of the discomfort. I noticed my toes are kind of extended. Whenever I step on the ground, it seems to pop into place. With all these cramps, I've started having pain in my calf. Sometimes because of that I could not sleep, or it wakes me up in the night. Similar to my toes, these cramps have also started coming up in my hands. They are not that strong or frequent. They're completely random and not in the nighttime. Sometimes my thumb gets so flexed that I have to move it to bring it to the right position and to relieve the cramp.
+Doctor: Did you ever have this symptom before?
+Patient: No, not like this.
+Doctor: Are you taking any medications?
+Patient: Yeah, I took an antibacterial called Bactrim around nine months ago. I was taking it briefly before, but now I'm taking it consistently. I cannot think of anything that is causing it.
+Doctor: Do you have any other medical condition?
+Patient: I have H I V for the last twenty one years and I was taking antiretroviral medications for it. I stopped those medications around six or seven years ago.
+Doctor: Why did you stop the medications?
+Patient: I could not tolerate them. They were making my stomach weak.
+Doctor: Do you know your C D four count?
+Patient: It was three hundred and twenty six. I never developed autoimmune deficiency syndrome. I think I should restart my medicines.

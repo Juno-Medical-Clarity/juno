@@ -1,0 +1,8 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [9:13] 'medical-jargon-google-hard' -> 'CW - PM adhesions'
+  [19:23] 'medical-jargon-google-hard' -> 'LecRK - I. 9'

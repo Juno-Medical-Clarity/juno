@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2873  |  gem_id: gem-cochrane-simplification-train-2874  |  doi: 10.1002/14651858.CD004547.pub2
+
+The objective of this review was to evaluate the benefits and harms of Chinese medicinal herbs for people with cholelithiasis. Though some Chinese medicinal herbs appear to be safe for people with asymptomatic, mild, or moderate disease, they have not been conclusively shown to have curative effects on gallstones due to the low methodological quality (high risk of bias) of the included trials. Thus, randomised clinical trials with low risk of bias should be conducted to assess the effects of Chinese medicinal herbs before they can be used widely in the clinic.

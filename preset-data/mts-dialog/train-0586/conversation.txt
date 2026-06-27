@@ -1,0 +1,22 @@
+Doctor: Welcome to the clinic, Miss A.
+Patient: Thank you.
+Doctor: Let's start with your medical history. What medical conditions do you have?
+Patient: Okay. I have high blood pressure, asthma and sleep apnea. I had blood clots in my left leg about six months ago. I also have cancer.
+Doctor: What kind of cancer do you have?
+Patient: I have stomach cancer. They also did a total abdominal hysterectomy.
+Doctor: Did they put you on an anticoagulant medication for the blood clotting?
+Patient: Yes. I took it for six months. I stopped taking it and then I had the stroke.
+Doctor: Have you had any other surgeries?
+Patient: Yes. I had a colonic resection to remove benign polyps. I had another benign lump removed from my breast.
+Doctor: How are you feeling today?
+Patient: I am still having weakness in my left leg. That is why I still have to us my walker, but I have been able to get around easier.
+Doctor: Have you been experiencing any daytime fatigue?
+Patient: No. I have been falling asleep at work. I think it is from looking at my computer screen all day. My supervisor caught me snoring one day and forgot where I was at. My supervisor offered to give me a coffee. This has happened more than once.
+Doctor: This could be due to your sleep apnea. Who is treating you for your sleep apnea?
+Patient: Doctor X did a consult and had me do one of those sleep test about two years ago. I only get sleepy when I look at my computer screen.
+Doctor: Did Doctor X recommend a C P A P machine to use at night?
+Patient: Yes, but I never used to use it. I had another follow up visit with her and she told me that I need to use it every night. I have been using it every other night.
+Doctor: How much uninterrupted sleep do you think that you get per night?
+Patient: Maybe two to five hours, on a good night.
+Doctor: That is not enough sleep. No wonder you are falling asleep at work. I recommend following up again with Doctor X regarding your sleep apnea. You are at a much higher risk for obesity and high cholesterol if you continue to not address the issues you have been having with the lack of sleep and sleep apnea.
+Patient: Okay. I will make a follow up visit with her.

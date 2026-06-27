@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0595
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you feeling today? I have been having some trouble breathing. I had tightness in my chest after walking up stairs. Let me listen to your lungs.

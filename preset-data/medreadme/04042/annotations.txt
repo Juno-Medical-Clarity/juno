@@ -1,0 +1,7 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 3.7
+split:       test
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'dengue'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0369
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Why are you holding your face? Ah! Have pain in my tooth. Oh, how bad is it? Oh, awfully bad. I am so sorry.

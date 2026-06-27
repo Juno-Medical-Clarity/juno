@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3157  |  gem_id: gem-cochrane-simplification-train-3158  |  doi: 10.1002/14651858.CD011065.pub2
+
+Five randomised controlled trials enrolling 302 infants met the inclusion criteria. In an infant with tongue-tie and feeding difficulties, surgical release of the tongue-tie does not consistently improve infant feeding but is likely to improve maternal nipple pain. Further research is needed to clarify and confirm this effect. The quality of the evidence is very low to moderate because overall only a small number of studies have looked at this condition, the total number of babies included in these studies was low and some studies could have been better designed.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1836  |  gem_id: gem-cochrane-simplification-train-1837  |  doi: 10.1002/14651858.CD000197.pub3
+
+This review of 28 trials, involving 5855 participants, showed that patients who receive this care are more likely to survive their stroke, return home and become independent in looking after themselves. A variety of different types of stroke unit have been developed. The best results appear to come from those which are based in a dedicated ward.

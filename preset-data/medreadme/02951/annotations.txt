@@ -1,0 +1,9 @@
+source:      elife
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-hard' -> 'Pif1'
+  [5:6] 'abbr-medical' -> 'G4'
+  [24:25] 'abbr-medical' -> 'G4'

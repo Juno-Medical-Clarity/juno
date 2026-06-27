@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3203  |  gem_id: gem-cochrane-simplification-train-3204  |  doi: 10.1002/14651858.CD000203.pub4
+
+. The review includes 11 studies investigating the use of GABA agonist drugs compared with placebo. All studies involved small numbers of participants (2 to 80 people) with schizophrenia or other chronic mental illnesses who had also developed antipsychotic-induced tardive dyskinesia. . Evidence of the effects of GABA agonist drugs in the treatment of tardive dyskinesia is not conclusive and not convincing. Any possible benefits of GABA agonist drugs are likely to be outweighed by the adverse effects associated with their use. . Evidence is weak, short term, small scale and poorly reported. It is not possible to recommend these drugs as a treatment for tardive dyskinesia. This plain language summary was adapted by the review authors from a summary originally written by Ben Gray, Senior Peer Researcher, McPin Foundation (http://mcpin.org/).

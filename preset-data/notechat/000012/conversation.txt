@@ -1,0 +1,55 @@
+Doctor: Good morning, what brings you to the hospital today?
+
+Patient: I was brought here by ambulance after collapsing at home.
+
+Doctor: I see. And were you feeling okay before collapsing?
+
+Patient: I was feeling weak and dizzy.
+
+Doctor: Hmm, okay. I have your medical record here, and it says that you were found to be bradycardic and hypoglycaemic with a capillary blood glucose level of 2.3 mmol/L. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: I understand that you have a history of eating and anxiety disorders. Are you currently taking any medications for these conditions?
+
+Patient: No, I'm not taking any regular medications.
+
+Doctor: Okay. On admission, your weight was 37.3 kg and your BMI was 11.6. Your blood pressure was initially un-recordable but later recorded to be 104/72 mmHg. Your capillary blood glucose level was 4.7 mmol/L, and your Glasgow Coma Scale score was 15/15. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: On examination, you were noted to be severely malnourished and cachexic. Is that a correct description of your condition?
+
+Patient: Yes, that's correct.
+
+Doctor: I see. And the rest of the clinical examination was normal, correct?
+
+Patient: Yes, that's correct.
+
+Doctor: Your LFTs were very abnormal, as shown in the table, correct?
+
+Patient: Yes, that's correct.
+
+Doctor: Since admission, you seemed to lack insight. And due to problems keeping you compliant with medication and intravenous glucose, you had a number of hypoglycaemic events in the first two days of admission. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: The following day, you were deemed not to have capacity. You underwent Mental Capacity Assessment and Deprivation of Liberty Safeguards. You were ultimately placed under Mental Health Act 5(2) and were started on nasogastric feeding. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: Your liver enzymes worsened further after the introduction of nasogastric feeding, but we were reassured by a normal non-invasive liver screen and ultrasound. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: Over the course of your 24-day admission, your condition, liver tests, and liver synthetic function improved, but your stay was associated with difficult behaviour. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: And you were eventually discharged to an Eating Disorders Unit. Is that correct?
+
+Patient: Yes, that's correct.
+
+Doctor: Okay, thank you for your cooperation. I think it would be beneficial for you to follow up with a specialist in the Eating Disorders Unit for further treatment and monitoring.
+
+Patient: Okay, I understand.

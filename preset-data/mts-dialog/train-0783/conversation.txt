@@ -1,0 +1,11 @@
+Doctor: Welcome in!
+Patient: Thank you.
+Doctor: Let us get a little background. What is your medical history?
+Patient: I have some memory loss problems.
+Doctor: What kind of memory problems?
+Patient: Well, I have seizures.
+Doctor: Do you know what kind of seizures that you have?
+Patient: I have temporal lobe seizures.
+Doctor: Do you have any other health conditions?
+Patient: I also have high blood pressure.
+Doctor: Okay.

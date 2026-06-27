@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1926  |  gem_id: gem-cochrane-simplification-train-1927  |  doi: 10.1002/14651858.CD005493.pub3
+
+We found that there were several comparative studies, but these involved a relatively small number of patients. There was evidence that botulinum toxin improves the symptoms of OAB. It was unclear what the best dose of botulinum toxin was. Botulinum toxin injections into the bladder appeared to give few side effects or complications, but there were no long-term follow-up studies, and there could be rare side effects that have not been discovered yet.

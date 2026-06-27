@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0999
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 10-year-old boy who has been experiencing stiffness in his left elbow.
+- He has a history of a fracture dislocation of the left elbow and a fracture of the neck of the right glenoid from an incident while riding quads on October 10, 2007.
+- He is currently undergoing physical therapy (PT) and using a Dynasplint.
+- Family expresses concern about the risk of infection associated with the upcoming surgery and whether it will fix his pain, acknowledging that there are no guarantees regarding pain relief.
+- Family desires for the patient to be able to play sports with his friends.
+
+Objective:
+- The left elbow fracture is noted to have healed well.
+- Neurological examination shows the patient is intact in terms of movement and reflexes in his wrist and hand.
+
+Assessment:
+- The left elbow fracture has healed, but the patient is experiencing stiffness.
+- Planned surgery to remove hardware from the left elbow to potentially decrease irritation with elbow extension.
+
+Plan:
+- Schedule surgery to remove hardware from the left elbow.
+- Use prophylactic antibiotics during surgery to minimize the risk of infection.
+- Discuss risks of surgery with family, including bleeding, changes in sensation and motion, failure to remove hardware, failure to relieve pain, and continued postoperative stiffness.
+- Ensure that anesthesia will be used so the patient will not feel anything during the procedure.

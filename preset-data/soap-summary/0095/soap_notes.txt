@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0095
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Twisted right ankle while running yesterday
+- Pain started a few hours after the injury, constant since then
+- Pain described as dull and achy
+- Pain located on the right side of the right ankle, radiates to the sole of the foot
+- Pain worsens with movement or standing, alleviated by rest
+- No swelling, redness, or skin changes
+- No fever, chills, or other joint pain
+- No numbness, tingling, or muscle weakness
+- No appetite or weight changes
+- Previous similar injury during childhood while playing basketball
+
+Past Medical History:
+- Diarrhoea 2 months ago, treated with fluoroquinolone
+- Medications: Vitamin D, Vitamin A
+- No allergies
+- No hospitalisations or surgeries
+- FHx: Grandparents with osteoarthritis, father with gout
+- SocHx: Software engineer, lives alone, non-smoker, no recreational drug use, rare alcohol consumption
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Likely diagnosis: Ankle sprain
+
+Plan:
+- Physical examination to rule out fracture
+- Immobilise ankle, apply ice
+- NSAIDs (e.g., Advil) for pain
+- Possible X-ray of right foot, ankle, and lower leg if significant pain on palpation or bony pain is found during examination
+- Follow-up with physiotherapy if needed

@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0313
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient had a head injury.
+- Patient is fully conscious.
+- No acute distress.
+
+Objective:
+- Patient looks well developed and well nourished.
+- Patient is alert.
+- GCS (Glasgow Coma Scale) is 15.
+- Patient is nontoxic.
+
+Assessment:
+- No assessment information provided.
+
+Plan:
+- No plan information provided.

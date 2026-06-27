@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1064
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I'm reviewing my notes from your last visit. Your last visit was on May tenth two thousand four, correct? Yes, that's right. Has there been any change since your last visit? Well, I'm having some increased paranoia. Have you been treated, and are you taking medicine for this? Yes, and it's actually gotten a lot better with the medicine another doctor gave me.

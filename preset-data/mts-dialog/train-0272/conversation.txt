@@ -1,0 +1,3 @@
+Doctor: Hello. Looks like you're having surgery today.
+Patient: Yeah, I am. I forgot what the surgery was, but it says it in my report.
+Doctor: I'm looking at it right now. Looks like you had a PermCath inserted three times and received peritoneal dialysis

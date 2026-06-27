@@ -1,0 +1,2 @@
+Guest_clinician: How's the patient?
+Doctor: He's stable. Heart rate sixty five. Normal rhythm. Oxygen ninety seven percent on room air.

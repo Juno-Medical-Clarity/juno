@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0967
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_family: Hello Doctor. I am from High Hope assisted living center. I am Mister Rath's assigned assistant. Right. What brings you here? Guest_family: I got some of Mister Rath's food diary sheets here. He has already lost fifteen pounds in the last three months. We were just wondering if he needed to lose anymore. Let me have a look.

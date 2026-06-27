@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0287  |  gem_id: gem-cochrane-simplification-validation-288  |  doi: 10.1002/14651858.CD002884.pub2
+
+This review examines the evidence from ten randomised controlled trials involving 544 patients which compared heliox to oxygen or air, when used in conjunction with the other standard acute treatments. The reviewers conclude that the evidence does not support routine use of heliox in patients with acute asthma.

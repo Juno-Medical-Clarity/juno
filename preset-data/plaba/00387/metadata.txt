@@ -1,0 +1,5 @@
+pmid:        33337843
+question:    30
+adaptation:  adaptation1
+title:       A Convalescent of COVID-19 with RT-PCR Test Continues Positive in Stool
+sentences:   6

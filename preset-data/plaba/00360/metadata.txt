@@ -1,0 +1,5 @@
+pmid:        34577851
+question:    28
+adaptation:  adaptation1
+title:       Mitochondria and Mitochondrial DNA: Key Elements in the Pathogenesis and Exacerbation of the Inflammatory State Caused by COVID-19
+sentences:   5

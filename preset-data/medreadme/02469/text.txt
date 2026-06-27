@@ -1,0 +1,1 @@
+Importantly, DIRAC can be applied not only to transcriptomic data, but to any ordinal data type.

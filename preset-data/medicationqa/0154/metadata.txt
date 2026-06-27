@@ -1,0 +1,5 @@
+drug_focus: Succinylcholine
+question_type: Usage
+section_title: WARNINGS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fb08161e-7711-406d-e7b3-ea4515c07983
+sample_id: 0154

@@ -1,0 +1,8 @@
+source:      elife
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Transposable elements'
+  [14:15] 'medical-jargon-google-easy' -> 'genome'

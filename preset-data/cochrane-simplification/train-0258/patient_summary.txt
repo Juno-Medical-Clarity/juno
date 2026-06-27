@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0258  |  gem_id: gem-cochrane-simplification-train-259  |  doi: 10.1002/14651858.CD008402.pub2
+
+We included two studies with a total of 210 participants in this review. Both trials were at some risk of bias because not enough care had been taken to ensure that groups received the same treatment other than the interventions being tested. One trial found some benefits from using foot orthoses over simple insoles at six weeks but not at one year. Participants wearing orthoses were, however, more likely to report minor adverse effects (e.g. rubbing, blistering) and discomfort compared with those wearing insoles. There were no important differences in knee pain and function in people given foot orthoses as well as physiotherapy when compared with people given physiotherapy only. Results for knee pain and function did not show important differences between foot orthoses versus physiotherapy. On the basis of the available evidence we do not recommend foot orthoses for adults with pain around the knee cap.

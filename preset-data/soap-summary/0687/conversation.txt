@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0687
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I see here that you have no surgical history. Is this correct? Yes, indeed. At least for now. Who knows what the future will bring.

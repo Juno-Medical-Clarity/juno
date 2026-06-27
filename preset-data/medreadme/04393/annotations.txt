@@ -1,0 +1,11 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.2
+split:       test
+
+jargon_spans:
+  [12:15] 'medical-jargon-google-easy' -> 'seizure onset zone'
+  [16:17] 'abbr-medical' -> 'SOZ'
+  [19:20] 'medical-jargon-google-easy' -> 'epileptic'
+  [23:24] 'medical-jargon-google-easy' -> 'electrocorticography'
+  [25:26] 'abbr-medical' -> 'ECoG'

@@ -1,0 +1,6 @@
+Cystic fibrosis (CF) is an autosomal recessive disease caused by the loss of function of the cystic fibrosis transmembrane conductance regulator (CFTR) protein which primarily acts as a chloride channel.
+CFTR has mainly been studied in epithelial cells although it is also functional and expressed in other cell types including endothelial cells.
+The present review summarizes current knowledge on the role of the endothelium in CF.
+More specifically, this review highlights the role of endothelial cells in CF in acting as a semipermeable barrier, as a key regulator of angiogenesis, coagulation, the vascular tone and the inflammatory responses.
+It could contribute to different aspects of the disease including cardiovascular symptoms, excessive blood vessel formation, pulmonary and portal hypertension and CF-related diabetes.
+Despite the important role of vascular endothelium in many biological processes, it has largely been under investigated in CF.

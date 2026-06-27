@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1184
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 69 years old.
+- Symptoms: Pain in knees.
+- Severity: Getting a lot worse over the last few months.
+- Duration: Pain has been present for years.
+- Impact: Pain is affecting the ability to perform activities.
+- Treatments tried: Anti-inflammatories, cortisone injections, Synvisc injections.
+- Effectiveness of treatments: Only temporary relief from pain.
+- Patient expresses desire for surgical intervention.
+- Concerns: Risks of infection from surgery and DVT (deep vein thrombosis).
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment or diagnosis provided.
+
+Plan:
+- Proceed with surgery for knee pain management.

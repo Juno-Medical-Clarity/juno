@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0468  |  gem_id: gem-cochrane-simplification-test-469  |  doi: 10.1002/14651858.CD005946.pub2
+
+This review found two small trials that compared the use of thyroid hormones to no treatment in infants with breathing problems in the first hours after birth. No benefit was found from use of these hormones on severity of breathing problems or complications that occurred as a result of these breathing problems. The effect on longer term development was not reported.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1775  |  gem_id: gem-cochrane-simplification-train-1776  |  doi: 10.1002/14651858.CD008995.pub2
+
+In the only study which addressed this question, the use of an amoxycillin and clavulanic acid antibiotic regimen had no effect on clinical pregnancy rate despite demonstrating a reduction in upper genital tract colonisation. The effect on live birth rate is unknown. The findings of this review do not support the use of an amoxycillin and clavulanic acid antibiotic regimen prior to ET for the purposes of improving IVF success. The effect of alternative antibiotic regimens on IVF outcomes is unknown and needs further research.

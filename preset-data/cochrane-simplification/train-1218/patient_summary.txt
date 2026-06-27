@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1218  |  gem_id: gem-cochrane-simplification-train-1219  |  doi: 10.1002/14651858.CD002068
+
+This review looked at the effect of bisphosphonates on pain caused by bone metastases. Bisphosphonates do have some effect but are not as useful as either strong analgesics (such as morphine) or radiotherapy. However, where other methods of pain relief are inadequate, the addition of bisphosphonates can be beneficial. Bisphosphonates can cause nausea and vomiting.

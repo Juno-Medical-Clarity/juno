@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0615
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+You have atrial fibrillation from the past? Yes, rhythm problem is bad. And no dizziness? Yes. I do. Okay well...

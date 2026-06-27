@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1938  |  gem_id: gem-cochrane-simplification-train-1939  |  doi: 10.1002/14651858.CD010395.pub2
+
+We included a total of 11 studies recruiting 5862 apparently healthy adults in this review. The findings of the review indicate that using technologies to support adults' attempts to become more active, achieve the recommended weekly amounts of activity, or become fitter are successful. Changes can be achieved with help from a trained professional and through personal support via telephone, e-mail, or written information. New physical activity can be maintained for at least one year and it does not increase the risk of falls or exercise related injuries. More research is needed to establish which methods of exercise promotion encourage specific groups of people to be more physically active in the long term.

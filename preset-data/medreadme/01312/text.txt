@@ -1,0 +1,1 @@
+Using a Daphnia-parasite model system, we collected experimental data on host survival and parasite abundance across the host's temperature range.

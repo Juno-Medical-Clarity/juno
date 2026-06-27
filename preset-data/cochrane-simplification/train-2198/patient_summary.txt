@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2198  |  gem_id: gem-cochrane-simplification-train-2199  |  doi: 10.1002/14651858.CD001046.pub2
+
+The review looked for studies that examined the effectiveness of this treatment in improving movement and reducing the death rate. Nearly all the research, seven trials, has involved just one steroid, methylprednisolone. The results show that treatment with this steroid does improve movement but it must start soon after the injury has happened, within no more than eight hours. It should be continued for 24 to 48 hours. Different dose rates of the drug have been given and the so-called high-dose rate is the most effective. The treatment does not, however, give back the patient a normal amount of movement and more research is necessary with steroids, possibly combining them with other drugs.

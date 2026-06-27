@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0311
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No past illnesses reported.
+- No relevant medical history mentioned.
+- No family history mentioned.
+- No allergies mentioned.
+- Patient expresses certainty about not having any past illnesses.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No assessments or diagnoses provided.
+
+Plan:
+- No plan provided.

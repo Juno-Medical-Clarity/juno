@@ -1,0 +1,18 @@
+Doctor: Hi, how can I help you?
+Patient:  I am here for a follow up on my heart rhythm problem. I think it is atrial fibrillation.
+Doctor: Oh yes. You are not on Cardizem and your heart rate is up just a little bit today.
+Patient: That's right. I misplaced it.
+Doctor: Okay. Let me see. What symptoms are you experiencing right now?
+Patient: I am feeling very dizzy. I do have some vertigo and lightheadedness.
+Doctor: You are on blood thinners, right? That is Coumadin therapy? Or am I wrong here?
+Patient: No, you are right but please stop the Coumadin. I am tired of these regular blood draws.
+Doctor: See, I understand it is hard to control it. It is difficult to regulate that.
+Patient: Yes exactly. That is why I don't want it. Give me something simple.
+Doctor: Okay I will investigate it. Are you experiencing any chest pain or shortness of breath?
+Patient: Oh no, I am not feeling that.
+Doctor: Okay great!
+Patient: Actually, I am moving around a little bit better now and my arm does not hurt.
+Doctor: How about your back pain?
+Patient: Um, it is improving as well.
+Doctor: Okay, cool.
+Patient: Yeah.

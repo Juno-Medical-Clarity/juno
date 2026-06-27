@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0879
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient quit smoking in 1972.
+- Works at a nursing home.
+- Job is very supportive.
+- Trying to lose weight; has lost a good amount since starting a new diet several months back.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessments provided.)
+
+Plan:
+- (No plan provided.)

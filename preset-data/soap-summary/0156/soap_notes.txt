@@ -1,0 +1,31 @@
+# SOAP Notes — Sample 0156
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Sore throat for 3-4 days
+- Pain with swallowing, especially solids
+- Mild hoarseness
+- Neck swelling (initially reported on both sides, later corrected to one side with lumpiness)
+- Fever in the last 2 days
+- No cough, headaches, eye redness, eye discharge, runny nose, loss of smell/taste, SOB, wheeze, chest pain, dizziness, palpitations, belly pain, nausea, vomiting, diarrhoea, urinary problems, skin changes, muscle aches, or body pains
+- No previous similar symptoms since childhood (age 7)
+- PMHx: None
+- Medications: Tylenol cold (ineffective)
+- No allergies
+- Immunisations up to date
+- No recent travel
+- SocHx: Lives with parents and sister, virtual school, no smoking, alcohol, or drug use, not sexually active
+- FHx: No heart or lung conditions, generally healthy family
+
+Objective:
+- Physical exam to be conducted
+- Rapid strep test planned
+
+Assessment:
+- Likely bacterial cause suggested by symptoms (no cough, lymph node enlargement)
+
+Plan:
+- Physical exam to check for exudates or purulence in throat
+- Check temperature
+- Perform rapid strep test
+- Possible course of antibiotics based on test results

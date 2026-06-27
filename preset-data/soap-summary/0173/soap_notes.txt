@@ -1,0 +1,58 @@
+# SOAP Notes — Sample 0173
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with left knee pain for 2 months, not improving
+- Pain is mostly at the front of the knee, deep within the kneecap
+- Pain has been slowly worsening over time
+- Pain is present with movement and activity, improves with rest
+- Knee feels stiff in the morning, lasting 15-30 minutes
+- Pain is described as a dull, gnawing pain, occasionally sharp
+- Pain severity rated as 7/10
+- No radiation of pain
+- No recent injuries to the knee
+- Reports weight gain of 20 lbs over the past 6 months, eating more but no changes in exercise
+- Denies fever, chills, night sweats, changes in vision, hearing, smell, taste, cough, shortness of breath, wheezing, chest pain, palpitations, lightheadedness, dizziness, confusion, memory loss, nausea, vomiting, abdominal pain, urinary problems, changes in bowel habits, rashes, or skin/hair/nail changes
+- Slight swelling noted in left knee compared to right, no other joint pains or swelling
+
+PMHx:
+- Diabetes
+- Hypertension
+- Hypercholesterolemia
+- Obesity
+
+Medications:
+- Insulin (diabetes)
+- Ramipril (hypertension)
+- Statin (hypercholesterolemia)
+
+Allergies: NKDA
+
+SurgHx: None
+
+Immunizations: Up to date
+
+SocHx:
+- Lives with husband in a house downtown
+- Retired early
+- Alcohol use: 1 glass of wine every night (7 drinks/week)
+- Denies smoking or recreational drug use
+
+FHx: Diabetes
+
+Objective:
+- Left knee appears slightly more swollen than right, no redness or temperature changes
+- Tenderness noted along joint line and over patella
+- Able to flex and extend knee, but with pain
+- Slight limp noted, putting more weight on right knee
+- No issues with hip or ankle movement
+
+Assessment:
+- Likely osteoarthritis of the left knee
+
+Plan:
+- Advised to stay active while pacing activities to avoid significant pain
+- Recommended use of Tylenol for pain management
+- Ibuprofen or NSAIDs can be used for acute flare-ups, but not recommended for long-term use
+- Topical agents such as Voltaren can be applied to the knee
+- Steroid injection can be considered if pain persists and worsens

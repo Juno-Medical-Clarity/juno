@@ -1,0 +1,7 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [13:14] 'abbr-medical' -> 'SIV'

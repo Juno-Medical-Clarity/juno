@@ -1,0 +1,7 @@
+source:      plos_genetics
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [19:21] 'medical-jargon-google-easy' -> 'disease susceptibility'

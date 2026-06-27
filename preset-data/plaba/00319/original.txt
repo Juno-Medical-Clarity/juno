@@ -1,0 +1,8 @@
+The ongoing pandemic caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and its variants has posed a serious global public health emergency.
+Therapeutic interventions or vaccines are urgently needed to treat and prevent the further dissemination of this contagious virus.
+This study described the identification of neutralizing receptor-binding domain (RBD)-specific antibodies from mice through vaccination with a recombinant SARS-CoV-2 RBD.
+RBD-targeted monoclonal antibodies (mAbs) with distinct function and epitope recognition were selected to understand SARS-CoV-2 neutralization.
+High-affinity RBD-specific antibodies exhibited high potency in neutralizing both live and pseudotype SARS-CoV-2 viruses and the SARS-CoV-2 pseudovirus particle containing the spike protein S-RBDV367F mutant (SARS-CoV-2(V367F)).
+These results demonstrated that these antibodies recognize four distinct groups (I-IV) of epitopes on the RBD and that mAbs targeting group I epitope can be used in combination with mAbs recognizing groups II and/or IV epitope to make mAb cocktails against SARS-CoV-2 and its mutants.
+Moreover, structural characterization reveals that groups I, III, and IV epitopes are closely located to an RBD hotspot.
+The identification of RBD-specific antibodies and cocktails may provide an effective therapeutic and prophylactic intervention against SARS-CoV-2 and its isolates.

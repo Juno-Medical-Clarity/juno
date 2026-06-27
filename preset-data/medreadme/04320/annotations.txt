@@ -1,0 +1,15 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 5.85
+split:       test
+
+jargon_spans:
+  [19:21] 'medical-jargon-google-easy' -> 'topical corticosteroids'
+  [22:23] 'medical-jargon-google-easy' -> 'corticosteroids'
+  [27:28] 'medical-jargon-google-easy' -> 'eczema'
+  [43:46] 'medical-jargon-google-hard' -> 'protease inhibitor SRD441'
+  [47:49] 'medical-name-entity' -> 'Serentis Ltd'
+  [51:53] 'medical-jargon-google-hard' -> 'furfuryl palmitate'
+  [54:55] 'medical-jargon-google-easy' -> 'emollient'
+  [56:58] 'medical-jargon-google-hard' -> 'cipamfylline cream'
+  [60:63] 'medical-jargon-google-easy' -> 'Mycobacterium vaccae vaccine'

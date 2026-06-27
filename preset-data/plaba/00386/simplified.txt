@@ -1,0 +1,11 @@
+Certain molecular tools called RT-PCR assays test for infection with the SARS-CoV-2 virus, which can cause a threatening breathing-related illness.
+RT-PCR tests are very specific and detecting a target when there is none (or a false positive) is low. However, not detecting a target when there is one (or a false negative) is possible depending on the swab and time since symptoms.
+The authors' aim is to determine the likelihood of a false-negative test in infected patients is affected by time since symptoms and swab type.
+
+The chance of detecting the target decreased with time since symptoms. Also, oropharyngeal (OP) or mouth samples are less likely to detect the target than nasopharyngeal (NP) or nasal samples.
+The chance of incorrectly identifying an uninfected individual due to a false-negative test was reduced if tests showing no detection were repeated 24 hours later.
+For a small false-positive test chance (<0.5%), the true number of infected individuals was larger than the number of positive tests or tests detecting the target.
+For a higher false-positive test likelihood, the true number of infected individuals was smaller than the number of positive tests.
+NP samples are more sensitive than OP samples.
+The later an infected individual is tests after symptoms show, the less likely they are to test positive.
+Time since symptoms has implifications for identifying infected patients, tracing spread, and releasing recovering patients who may still be infectious.

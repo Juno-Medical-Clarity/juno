@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3521  |  gem_id: gem-cochrane-simplification-train-3522  |  doi: 10.1002/14651858.CD003223.pub2
+
+This review looked at the effectiveness of calcitonin for controlling pain from bone metastases. However, only two studies were found with very low quality evidence to support the use of calcitonin for patients suffering from bone pain. We updated the review in 2015 and did not find any more studies. There were slightly more side effects for the patients given calcitonin. Unless new studies provide additional relevant information about this treatment, other therapeutic approaches should be considered.

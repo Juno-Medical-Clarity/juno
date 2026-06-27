@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0538
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any changes to your diet? I've been following the A D A diet online and maxing out at around eighteen hundred calories per day. How're you feeling since starting this diet? A lot better actually. My blood sugar isn't as high as it used to be.

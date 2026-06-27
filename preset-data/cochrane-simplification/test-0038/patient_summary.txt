@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0038  |  gem_id: gem-cochrane-simplification-test-39  |  doi: 10.1002/14651858.CD002777
+
+The review authors searched the medical literature. They found eight small controlled randomized studies looking at short-term growth (weight, length, and head circumference gain) in preterm infants fed with varying amounts of medium chain fats. The pattern of growth in infants fed exclusively with high MCT or low MCT formula for at least one week did not differ (five studies with 182 infants). These infants had a mean gestational age between 29 and 32 weeks, mean birth weights between 1 kg and 1.5 kg, and were aged one to six weeks. One study found a high degree of gastrointestinal intolerance with high MCT content and another did not. Development of necrotizing enterocolitis was not different. No studies addressed long-term growth or neurodevelopmental outcomes.

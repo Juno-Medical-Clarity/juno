@@ -1,0 +1,6 @@
+Doctor: Any sugar or B P problem?
+Patient: No, it is normal.
+Doctor: Okay, how about thyroid or any other hormone related problem?
+Patient: No, everything is fine.
+Doctor: Cholesterol?
+Patient: No cholesterol problem.

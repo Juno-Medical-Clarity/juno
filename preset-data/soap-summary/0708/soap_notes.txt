@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0708
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports no knowledge of family medical history.
+- Patient's parents and grandparents did not share their medical history.
+- Patient believes parents may not want their children to worry.
+- Patient expresses understanding of the difficulty some people have in sharing health information.
+
+Objective:
+- (No measurable or observable data provided in the conversation.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided in the conversation.)
+
+Plan:
+- Document family medical history as "unknown."
+- Encourage the patient to inform the clinician if they learn any relevant history in the future.

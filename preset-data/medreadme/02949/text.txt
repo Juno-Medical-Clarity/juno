@@ -1,0 +1,1 @@
+This periodic patrolling activity is used to unfold an intramolecular G - quadruplex (G4) structure on every encounter, and is sufficient to unwind RNA - DNA heteroduplex but not duplex DNA.

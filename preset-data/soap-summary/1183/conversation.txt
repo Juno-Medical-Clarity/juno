@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1183
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Let's check your throat. Okay, I don't see any swelling or any mass. Is there any pain when I touch you? No pain. I don't feel any kind of lump in your throat. That is a good sign. It looks very flexible and symmetric.

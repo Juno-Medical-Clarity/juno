@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0483
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is not feeling as excited as the doctor about the surgery.
+- Patient has a history of surgery related to the chest (chest port placement).
+- Mother is present and providing information about the patient's medical history.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

@@ -1,0 +1,4 @@
+Doctor: Do you have any allergies?
+Patient: I am allergic to IV contrast.
+Doctor: Are you sure?
+Patient: Yes.

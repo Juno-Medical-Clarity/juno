@@ -1,0 +1,5 @@
+pmid:        32844196
+question:    19
+adaptation:  adaptation2
+title:       Natural history of motor symptoms in Parkinson's disease and the long-duration response to levodopa
+sentences:   16

@@ -1,0 +1,9 @@
+Background: Severe hypercalcemia is rare in newborns; even though often asymptomatic, it may have important sequelae.
+Hypophosphatemia can occur in infants experiencing intrauterine malnutrition, sepsis and early high-energy parenteral nutrition (PN) and can cause severe hypercalcemia through an unknown mechanism.
+Monitoring and supplementation of phosphate (PO4) and calcium (Ca) in the first week of life in preterm infants are still debated.
+Case presentation: We report on a female baby born at 29 weeks' gestation with intrauterine growth retardation (IUGR) experiencing sustained severe hypercalcemia (up to 24 mg/dl corrected Ca) due to hypophosphatemia while on phosphorus-free PN.
+Hypercalcemia did not improve after hyperhydration and furosemide but responded to infusion of PO4.
+Eventually, the infant experienced symptomatic hypocalcaemia (ionized Ca 3.4 mg/dl), likely exacerbated by contemporary infusion of albumin.
+Subsequently, a normalization of both parathyroid hormone (PTH) and alkaline phosphatase (ALP) was observed.
+Conclusions: Although severe hypercalcemia is extremely rare in neonates, clinicians should be aware of the possible occurrence of this life-threatening condition in infants with or at risk to develop hypophosphatemia.
+Hypophosphatemic hypercalcemia can only be managed with infusion of PO4, with strict monitoring of Ca and PO4 concentrations.

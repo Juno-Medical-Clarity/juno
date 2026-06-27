@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1280
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has bronchitis.
+- Patient is inquiring about medications to take for bronchitis.
+
+Objective:
+- X-rays show bronchitis.
+
+Assessment:
+- Diagnosis: Bronchitis.
+
+Plan:
+- Prescribe medication to help clear the lungs.

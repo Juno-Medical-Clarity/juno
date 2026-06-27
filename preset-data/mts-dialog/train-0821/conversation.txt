@@ -1,0 +1,10 @@
+Doctor: Are you married?
+Patient: I was, but my husband died thirty years ago.
+Doctor: Are you working?
+Patient: Nope.
+Doctor: What is your highest degree?
+Patient: I did high school. I was living alone for fifteen years until December of ninety four.
+Doctor: How is your living situation now? Who is taking care of you?
+Patient: My daughters have started taking care of me on a shareable basis.
+Doctor: Do you smoke? Or drink or have ever used any drugs.
+Patient: Nope.

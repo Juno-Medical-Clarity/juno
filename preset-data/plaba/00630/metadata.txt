@@ -1,0 +1,5 @@
+pmid:        34659214
+question:    48
+adaptation:  adaptation1
+title:       Mesenchymal Stem Cell Therapy: Hope for Patients With Systemic Lupus Erythematosus
+sentences:   10

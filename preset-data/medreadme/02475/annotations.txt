@@ -1,0 +1,7 @@
+source:      plos_computational_biology
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [4:7] 'medical-jargon-google-easy' -> 'variably expressed networks'

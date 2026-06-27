@@ -1,0 +1,5 @@
+Doctor: Are you married?
+Patient: Yes. I have been married for twenty two years.
+Doctor: Are you working?
+Patient: No. I am unemployed. I have not completed my collage degree yet. I have been in school for the last two years.
+Doctor: Keep at it.

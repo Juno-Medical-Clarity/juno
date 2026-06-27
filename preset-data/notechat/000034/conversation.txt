@@ -1,0 +1,30 @@
+Doctor: Good morning, what brings you here today?
+Patient: I had a foreign body in my left ear caused by a trauma to my left parietal area two months ago.
+Doctor: I see. Can you tell me more about the trauma?
+Patient: I was on a fishing trip and the fishhook accidentally pierced my neck and ear.
+Doctor: I understand. And did you experience any bleeding, swelling, hematoma, or bruises?
+Patient: No, I didn't.
+Doctor: That's good. And what happened after the injury?
+Patient: I received an intramuscular injection of tetanus toxoid vaccine and was referred for surgical assessment and foreign body removal.
+Doctor: Okay. And was the foreign body removed successfully?
+Patient: Yes, it was. Under local anesthesia, the needle was removed and the wound was stitched.
+Doctor: That's great. And did you experience any symptoms after the removal?
+Patient: A few weeks later, I noticed a small, non-tender, firm swelling below my ear lobule.
+Doctor: Hmm, I see. And what did the doctor prescribe for you?
+Patient: Amoxicillin/clavulanate and diclofenac sodium were prescribed.
+Doctor: Okay, and now you have another problem?
+Patient: Yes, I have a 2 x 2 mm parotid swelling at the angle of mandible on the left side.
+Doctor: I see. And did the swelling appear after the removal of the foreign body?
+Patient: Yes, it did. And it hasn't resolved yet.
+Doctor: Okay, I see. And have you had any ultrasound test?
+Patient: Yes, I did. It showed a linear hypoechoic focus in the superficial parotid gland extending to the subcutaneous tissue.
+Doctor: I see. And what do you think it might be?
+Patient: The doctor said it might be scar or granulation tissue.
+Doctor: Okay. And did the doctor detect any mass lesions?
+Patient: No, he didn't.
+Doctor: Okay. I think we need to do a biopsy to make sure.
+Patient: Okay.
+Doctor: And I'll prescribe you some antibiotics and painkillers.
+Patient: Thank you, doctor.
+Doctor: You're welcome. Just come back if you have any further symptoms or questions.
+Patient: I will. Thank you, doctor.

@@ -1,0 +1,5 @@
+pmid:        34839817
+question:    66
+adaptation:  adaptation2
+title:       Intravenous cyclophosphamide induces remission in children with difficult to treat steroid resistant nephrotic syndrome from minimal change disease
+sentences:   14

@@ -1,0 +1,2 @@
+Doctor: The nurse applied antibiotic ointment and a bandage to your foot. Did she go over how to change the bandage at home?
+Patient: Yes.

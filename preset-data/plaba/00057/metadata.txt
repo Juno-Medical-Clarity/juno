@@ -1,0 +1,5 @@
+pmid:        30884939
+question:    5
+adaptation:  adaptation3
+title:       Diagnosis and therapy of popliteal cyst
+sentences:   10

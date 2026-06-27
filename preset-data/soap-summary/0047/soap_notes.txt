@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0047
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with 3-day history of dry cough, headaches, and generalized body aches
+- Headache: frontal, bilateral, pressure-like pain, intermittent over the past few days, relieved by Tylenol and Advil but returns once medications wear off
+- Feeling feverish for the past couple of days but no documented temperature
+- Diarrhea for the past day, no blood in stool
+- Decreased appetite but stable weight
+
+PMHx:
+- ACL repair and knee surgery 10 years ago
+- Peanut allergy (carries EpiPen)
+- Takes multivitamin and vitamin D daily
+
+SocHx:
+- Works for a pharmacy company, goes into the office sometimes to help prepare medications, wears masks and follows cleaning and distancing protocols at work, has been off work for the past couple of days due to symptoms
+- Lives with wife in a townhouse, wife has not displayed any symptoms
+- Occasional CBD oil use
+- Drinks 3-4 beers per week
+
+FHx:
+- Father with hypertension
+- Paternal grandfather with lung cancer (smoker, passed away in his 80s)
+
+Objective:
+- Vitals not provided
+
+Assessment:
+- Possible COVID-19 infection vs. other viral illness
+
+Plan:
+- COVID-19 swab today
+- Recommend isolation for 2 weeks until symptoms resolve
+- Test results and further instructions from public health expected in 24-48 hours regarding need for repeat swab and return to work
+- If not COVID-19, likely another viral illness requiring rest and hydration

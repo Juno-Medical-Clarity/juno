@@ -1,0 +1,5 @@
+drug_focus: cortisol
+question_type: Information
+section_title: NA
+source_url: https://en.wikipedia.org/wiki/Cortisol
+sample_id: 0465

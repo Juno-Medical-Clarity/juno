@@ -1,0 +1,5 @@
+Doctor: So, how are feeling?
+Doctor: You came here last time with C V A right?
+Patient: Yeah, I am recovering well. You asked me to follow-up for high sugar.
+Doctor: Oh yeah, you have diabetes mellitus. Did you happen to get a blood test done before this visit?
+Patient: Yes, I did here is the report.

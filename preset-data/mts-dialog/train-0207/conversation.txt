@@ -1,0 +1,8 @@
+Doctor: Do you smoke, sir?
+Patient: No.
+Doctor: Do you drink?
+Patient: Sometimes I take a beer or two.
+Doctor: Are you married?
+Patient: For last ten years.
+Doctor: What do you do for living?
+Patient: I install floor. I am associated with a construction company and my main work is flooring installation.

@@ -1,0 +1,1 @@
+The SOZ localization is executed in two steps.

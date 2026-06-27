@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0498  |  gem_id: gem-cochrane-simplification-train-499  |  doi: 10.1002/14651858.CD000422.pub3
+
+We found consistently strong evidence that the vaccine is effective in preventing the rarer outcome of invasive pneumococcal disease. Evidence from the included studies indicates vaccination might not afford as much protection in adults with chronic illness as it does for healthy adults. The available evidence does not demonstrate that pneumococcal polysaccharide vaccines prevent pneumonia (of all causes) or mortality in adults. This review did not consider adverse events as it was outside the scope of the study.

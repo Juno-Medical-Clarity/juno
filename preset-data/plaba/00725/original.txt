@@ -1,0 +1,13 @@
+Introduction: Facial pain (FP) is a type of neuropathic pain which recognizes both central and peripheral causes.
+It can be difficult to treat because it can often become resistant to pharmacological treatments.
+Motor Cortex Stimulation (MCS) has been used in selected cases, but the correct indications of MCS in FP have not been fully established.
+Here we systematically reviewed the literature regarding MCS in FP analysing the results of this technique and studying the possible role of different factors in the prognosis of these patients.
+Methods: A literature search was performed through different databases (PubMed, Scopus, and Embase) according to PRISMA guidelines using the following terms in any possible combination: "facial pain" or "trigeminal" or "anaesthesia dolorosa" and "motor cortex stimulation."
+Results: 111 articles were reviewed, and 12 studies were included in the present analysis for a total of 108 patients.
+Overall, at latest follow-up (FU), 70.83% of patients responded to MCS.
+The preoperative VAS significantly decreased at the latest FU (8.83 ± 1.17 and 4.31 ± 2.05, respectively; p < 0.0001).
+Younger age (p = 0.0478) and a peripheral FP syndrome (p = 0.0006) positively affected the definitive implantation rate on univariate analysis.
+Younger age emerged as a factor strongly associated to a higher probability to go to a definitive MCS implant on multivariate analysis (p = 0.0415).
+Conclusion: Our results evidenced the effectiveness of MCS in treating FP.
+Moreover, the younger age emerged as a positive prognostic factor for definitive implantation.
+Further studies with longer FU are needed to better evaluate the long-term results of MCS.

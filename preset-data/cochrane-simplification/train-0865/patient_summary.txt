@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0865  |  gem_id: gem-cochrane-simplification-train-866  |  doi: 10.1002/14651858.CD009535.pub2
+
+We found that only one study that involved nine patients had compared home haemodialysis with in-centre haemodialysis. There was insufficient information to understand the effects of home haemodialysis on survival or need for hospital admission in this study. Home haemodialysis may improve blood pressure and physical symptoms, but may increase the burden of care for families and patients. Given the potential benefits of home haemodialysis in non-randomised studies, larger randomised trials of home haemodialysis could help inform clinical care and policy.

@@ -1,0 +1,5 @@
+pmid:        34883281
+question:    68
+adaptation:  adaptation2
+title:       Ferritin - from iron, through inflammation and autoimmunity, to COVID-19
+sentences:   9

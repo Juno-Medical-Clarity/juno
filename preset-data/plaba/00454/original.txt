@@ -1,0 +1,10 @@
+Osteoporosis-related fractures affect approximately one in two white women and one in five white men in their lifetime.
+The impact of fractures includes loss of function, significant costs, and increased mortality.
+The U.S. Preventive Services Task Force recommends using dual energy x-ray absorptiometry to screen all women 65 years and older, and younger women who have an increased fracture risk as determined by the World Health Organization's FRAX Fracture Risk Assessment Tool.
+Although guidelines are lacking for rescreening women who have normal bone mineral density on initial screening, intervals of at least four years appear safe.
+The U.S. Preventive Services Task Force found insufficient evidence to recommend screening for osteoporosis in men; other organizations recommend screening all men 70 years and older.
+In patients with newly diagnosed osteoporosis, suggested laboratory tests to identify secondary causes include serum 25-hydroxyvitamin D, calcium, creatinine, and thyroid-stimulating hormone.
+First-line treatment to prevent fractures consists of fall prevention, smoking cessation, moderation of alcohol intake, and bisphosphonate therapy.
+Clinicians should consider discontinuing bisphosphonate therapy after five years in women without a personal history of vertebral fractures.
+Raloxifene, teriparatide, and denosumab are alternative effective treatments for certain subsets of patients and for those who are unable to take or whose condition does not respond to bisphosphonates.
+The need for follow-up bone mineral density testing in patients receiving treatment for osteoporosis is uncertain.

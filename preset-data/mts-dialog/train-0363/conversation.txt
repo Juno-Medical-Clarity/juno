@@ -1,0 +1,8 @@
+Doctor: Hi sir, how old are you?
+Patient: I am thirty.
+Doctor: We are following up today for your moderate to severe apnea, right?
+Patient: Yes, that is correct, I still can't sleep.
+Doctor:  Okay and you did the CPAP?
+Patient: Yes.
+Doctor: Okay, let's review it today.
+Patient: Sure.

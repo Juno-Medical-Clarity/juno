@@ -1,0 +1,180 @@
+# Smith Collection Transcript: RES0150
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Hi um my son has just been sick over the past uh couple of days hes just had this cough and uh stuffy nose and uhm yeah hes also had this uh rash that just started
+
+Doctor: OK and so can you tell me a bit more about the cough so it started um
+
+Patient: Yeah so the cough started about a week ago and um his stuffy nose hes sort of had a stuffy nose since around the same time and then um those symptoms um so it continued and got a little bit better over the past few days and then he started um having this rash on his face that then kind of went down to his neck
+
+Doctor: OK and is the rash still uh there right now
+
+Patient: Yeah
+
+Doctor: OK um and is the cough uh productive is he bringing up sputum
+
+Patient: No
+
+Doctor: OK um has he brought up um any blood
+
+Patient: No
+
+Doctor: OK um and uh you told me about the the runny nose what um can you describe the discharge
+
+Patient: Yeah its just uh its just uh watery discharge his eyes are also red and kind of um hes been teary or i guess just yeah its just been like very watery and red and uh yeah its clear discharge
+
+Doctor: OK um has he had a sore throat
+
+Patient: um no
+
+Doctor: Alright um how about any changes to his sense of smell or or taste
+
+Patient: Uhm he uh he hasnt really uh yeah he hasnt said anything about that
+
+Doctor: Alright and has he had any problems with breathing
+
+Patient: No
+
+Doctor: OK has he mentioned anything about chest pain
+
+Patient: uh no
+
+Doctor: Alright um has he had any fevers or chills
+
+Patient: uh yeah he does have a fever um 395 i checked yesterday
+
+Doctor: OK uh is that is that the first time that um he was noted to have a fever yesterday
+
+Patient: um he has had a fever for the past few days um it was around it was less between 375 to 385 um but then yesterday was just uh it just kept going up so i got concerned and thought i should bring him in
+
+Doctor: OK i see yeah well its good that you brought him in um has he been having any night sweats
+
+Patient: No
+
+Doctor: And um how has his weight been over the last several months has he been gaining weight ok still
+
+Patient: Oh yeah
+
+Doctor: Alright thats great um and has he had any any any wheezing
+
+Patient: No
+
+Doctor: um how about any like changes to his appetite
+
+Patient: um hes just been eating less since hes been feeling unwell
+
+Doctor: OK
+
+Patient: Yeah but he still he still he manages to eat about um half the plate so i guess its not too bad
+
+Doctor: And thats been the last few days
+
+Patient: Yeah yeah
+
+Doctor: OK and um has he had any muscle aches or body pains
+
+Patient: uh no not really
+
+Doctor: OK and um is are there any exposures that um couldve possibly caused a skin rash like changes in like laundry detergent or um like coming into contact with with anything on his skin or or taking um or any anything that he was allergic to that hes been around
+
+Patient: um i dont think so he was playing outside with the neighbours um with the neighbours kids but i dont think he came into contact im not sure
+
+Doctor: OK uh has he been diagnosed with any medical conditions before
+
+Patient: No hes pretty healthy
+
+Doctor: OK and sorry just to to go back to the symptoms i missed a few questions here did he have uh does he have any nausea or vomiting
+
+Patient: No
+
+Doctor: How about any diarrhea
+
+Patient: uh no
+
+Doctor: OK and any abdominal pain
+
+Patient: um nope
+
+Doctor: Or or any urinary problems
+
+Patient: No no
+
+Doctor: OK um and and so he hasnt been diagnosed with any medical conditions before um does he take any medications regularly like prescribed or over the counter
+
+Patient: um no he doesnt
+
+Doctor: Alright and any allergies to medications or uh environment that youre aware of
+
+Patient: um no
+
+Doctor: OK and um are his immunizations up to date
+
+Patient: um well no i dont i dont i dont vaccinate my kids im just im im worried that theyll uh get autism
+
+Doctor: OK yeah thats uh well its important to know um today that hes not vaccinated because certainly that will influence um what were thinking about in terms of what could be causing the symptoms um and we can uh discuss the i guess more about the vaccination procedures and what not later um but ok so hes not currently vaccinated and have there been any um concerns with his growth and or development
+
+Patient: No
+
+Doctor: Hes meeting all of the the milestones and doing well at school
+
+Patient: Yeah
+
+Doctor: OK um and in terms of the pregnancy uh were there any complications during the pregnancy like gestational diabetes or or um high blood pressure
+
+Patient: uh i did have gestational diabetes
+
+Doctor: uh sorry yeah did that require insulin or
+
+Patient: uh yeah i did have to take insulin um he was he was also a pretty big baby when he was born um we had to i had to give get a csection done
+
+Doctor: OK were there any complications with the with the procedure with the surgery
+
+Patient: No no no complications at all
+
+Doctor: OK did he have any um like breathing problems or jaundice or any reasons to stay in the hospital when when he was born
+
+Patient: No he didnt
+
+Doctor: OK um thats good and uh whos he living with and whos the primary caregiver currently
+
+Patient: Im the primary caregiver um hes got an older brother whos seven years old and his dad its the four of us and we also have a dog
+
+Doctor: OK any allergies to the dog or to pets at all
+
+Patient: No
+
+Doctor: OK um and um any reasons or concerns for um uh physical or emotional abuse in the home
+
+Patient: No
+
+Doctor: OK and um any family history of any heart or or lung problems
+
+Patient: No
+
+Doctor: How about a family history of any bleeding disorders or or clotting disorders or cancers
+
+Patient: um no
+
+Doctor: OK um so that was everything that i think i wanted to ask about on history um so it sounds like um hes had a cough um a runny nose um some red eye red eyes that with some tearing as well as a rash that that started and and a fever was there any other symptoms
+
+Patient: No
+
+Doctor: Alright um so next well go on to the physical exam well want to have a look um at the rash and get the vitals um but there is a concern that this is could be uh measles and so um itll be important to um supportive management and um ensure that um its not passed on to um anybody else that reminds me yeah he was out playing with other children were any other kids experiencing similar symptoms
+
+Patient: um im not sure i i guess i need to talk to their their parents now
+
+Doctor: Yeah it would be um a good idea to uh yeah contact um and see just to make sure that were treating everybody appropriately
+
+Patient: Sure
+
+Doctor: And then uh we could talk more about the vaccination um later
+
+Patient: Sure

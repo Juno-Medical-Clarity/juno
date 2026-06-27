@@ -1,0 +1,1 @@
+We identified candidate causal SNPs that are predicted to alter TF binding within breast cancer-relevant regulatory regions that are in strong linkage disequilibrium with significantly associated GWAS SNPs.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3375  |  gem_id: gem-cochrane-simplification-train-3376  |  doi: 10.1002/14651858.CD004108.pub2
+
+The review of studies including 15 trials and 1422 children found that there were some encouraging results in short term studies when nedocromil was compared on its own with placebo, particularly with regard to lung function tests. However, these results were not confirmed in one large, longer term study of four to six years duration, which did not show significant difference in the primary outcome of symptom free days. This study was conducted in children who had mild asthma. There may be a role for nedocromil in the management of moderate asthma, but it should be assessed in relation to inhaled steroids, whose efficacy is well-established. This particularly important in symptomatic asthma.

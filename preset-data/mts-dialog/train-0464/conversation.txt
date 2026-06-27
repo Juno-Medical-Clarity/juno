@@ -1,0 +1,4 @@
+Doctor: Any medical issues running in your family?
+Patient: I don't know anything about that.
+Doctor: You know anyone in your family or relatives who ever had diseases like diabetes or any heart issues?
+Patient: Nope.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0957  |  gem_id: gem-cochrane-simplification-train-958  |  doi: 10.1002/14651858.CD002106.pub4
+
+Evidence from poor quality, small trials, suggests that superficial and partial thickness burns heal more quickly with silicon-coated nylon, silver containing dressings and biosynthetic dressings than with silver sulphadiazine cream. Burns treated with hydrogel dressings healed more quickly than those treated with usual care.

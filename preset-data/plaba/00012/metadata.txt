@@ -1,0 +1,5 @@
+pmid:        21366359
+question:    2
+adaptation:  adaptation3
+title:       Duloxetine: clinical pharmacokinetics and drug interactions
+sentences:   14

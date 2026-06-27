@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0882  |  gem_id: gem-cochrane-simplification-train-883  |  doi: 10.1002/14651858.CD001458
+
+This review showed that antiplatelet drugs can also reduce the risk of stroke in patients undergoing carotid endarterectomy. There was limited information on bleeding risk. The review's conclusions supported the routine use of antiplatelet drugs such as aspirin in patients having carotid endarterectomy.

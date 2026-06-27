@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1421
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history: Grandma has diabetes.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

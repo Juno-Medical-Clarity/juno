@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1162
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Help! I need help! I need to see the doctor! Yes, what's wrong? Where's your pain? My stomach! It hurts so much! I've never had this type of pain before! When did it start? At ten! I don't know. It started hurting out of nowhere. One second I'm driving home and the next thing I know I had to call- Yes? The pain is so bad! It's hard for me to even think straight.

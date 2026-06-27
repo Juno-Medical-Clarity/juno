@@ -1,0 +1,13 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.7
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'Drosophila melanogaster'
+  [22:23] 'medical-jargon-google-hard' -> 'hunchback'
+  [24:25] 'abbr-medical' -> 'hb'
+  [28:29] 'medical-jargon-google-easy' -> 'midembryo'
+  [33:35] 'medical-jargon-google-hard' -> 'local concentrations'
+  [37:42] 'medical-jargon-google-hard' -> 'smooth anterior - posterior Bicoid'
+  [43:44] 'abbr-medical' -> 'Bcd'

@@ -1,0 +1,18 @@
+Patient: You know doctor, I was born in Munich, Germany.
+Doctor: Wow, I cannot tell, you speak English so well, no German accent.
+Patient: Yeah, I always knew how to speak English even before I was a teen. So, when I moved to America I did not have any language problem.
+Doctor: Okay and did you move with your family?
+Patient: No, my family moved to the eastern side of the Germany which was occupied by Russia at that time, but I decided to move to America in nineteen fifty seven.
+Patient: I had a high school degree from Germany, and I could speak German and English fluently.
+Patient: As soon as I landed here in America, I started working. I started as a secretary at a private firm and later did clerical work at I B M. Now I am retired for almost twenty years due to my cancer complications.
+Doctor: Your Mesothelioma?
+Patient: Yeah.
+Doctor: Okay, and who all are there in your family?
+Patient: Well currently I am alone without any companion. I am divorced. I have a son who lives in Santa Cruz he has grand children, but I have not seen them, I am trying to get in touch with them. I want to see my grandkids.
+Patient: Other than him I have a brother and a sister both are healthy and living their life we don't talk much.
+Doctor: Okay.
+Doctor: And do you drink or smoke?
+Patient: Hm, nothing significant.
+Doctor: Any funny drugs like heroine or coke?
+Patient: No.
+Doctor: Okay.

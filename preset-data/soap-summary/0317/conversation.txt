@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0317
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have major illnesses in the family like diabetes or high B P? No nothing. No major illnesses. Okay. Yes.

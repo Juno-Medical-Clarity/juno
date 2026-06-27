@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2293  |  gem_id: gem-cochrane-simplification-train-2294  |  doi: 10.1002/14651858.CD003448.pub4
+
+We searched medical databases for clinical trials of the use of laxatives for constipation in people receiving palliative care. Two review authors assessed study quality and extracted data. We identified five studies involving 370 people. The laxatives evaluated were lactulose, senna, co-danthramer combined with poloxamer, docusate and magnesium hydroxide combined with liquid paraffin. Misrakasneham was also evaluated; this is a traditional Indian medicine and is used as a laxative, containing castor oil, ghee, milk and 21 types of herbs. There was no evidence on which laxative provided the best treatment. However, the review was limited as the evidence was from only five small trials and patient preference and cost were under evaluated. Further rigorous, independent trials are needed to evaluate the effectiveness of laxatives.

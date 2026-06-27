@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'paranoia'
+  [7:8] 'medical-jargon-google-easy' -> 'psychiatric'
+  [15:16] 'medical-jargon-google-easy' -> 'rumination'

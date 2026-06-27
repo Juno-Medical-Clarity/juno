@@ -1,0 +1,5 @@
+pmid:        32637102
+question:    46
+adaptation:  adaptation1
+title:       Epithelial vectorial ion transport in cystic fibrosis: Dysfunction, measurement, and pharmacotherapy to target the primary deficit
+sentences:   8

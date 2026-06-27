@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0839
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any medical disorders in the family? Yeah, my father had a special kind of tumor, which doctors said is very rare. Do you know the name of the tumor? I don't remember the exact name of the disease, but it was a big name and it started with something with V.

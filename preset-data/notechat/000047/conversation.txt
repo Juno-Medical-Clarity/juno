@@ -1,0 +1,77 @@
+Doctor: Hello, how are you feeling today?
+
+Patient: Hmm, I'm feeling a bit weak.
+
+Doctor: I see. Can you tell me what happened?
+
+Patient: I was found slumped to my right side and I was unable to be awakened.
+
+Doctor: I understand. Can you tell me more about your condition when you were found?
+
+Patient: Paramedics calculated an 8/15 Glasgow Coma Scale score, and it remained the same on admission.
+
+Doctor: Hmm, I see. And what happened when you were admitted to the hospital?
+
+Patient: I had a left facial droop, bilateral pinpoint pupils, and right-sided weakness.
+
+Doctor: I see. On admission, your National Institutes of Health Stroke Scale score was 26, which suggests a severe stroke.
+
+Patient: Yes, that's right.
+
+Doctor: And what were the other observations on admission, including vital signs, biochemical tests, and systems review?
+
+Patient: I think they were non-revealing.
+
+Doctor: I understand. Can you tell me more about your neurological medical history?
+
+Patient: I had two previous transient ischemic attacks and suspected dementia.
+
+Doctor: I see. And what about your other past medical history, including chronic obstructive pulmonary disease, hypertension, abdominal aortic aneurysm repair, stage 3 chronic kidney disease, adult polycystic kidney disease, hypercholesterolemia, and aortic valve sclerosis?
+
+Patient: Yes, I have all of those.
+
+Doctor: I see. And what about your smoking history?
+
+Patient: I was an ex-smoker of unknown pack-years.
+
+Doctor: I see. And prior to admission, were you living independently?
+
+Patient: Yes, I was.
+
+Doctor: I understand. And what was the result of the initial head CT?
+
+Patient: It only showed chronic small vessel disease with periventricular leukoaraiosis, which is consistent with my age.
+
+Doctor: I see. And what happened with the thrombolysis that was initiated with an intravenous tissue-plasminogen activator?
+
+Patient: My GCS declined to 6/15 about 40 minutes after the start of thrombolysis.
+
+Doctor: I see. And what was the result of the repeat head CT?
+
+Patient: It again showed no acute findings.
+
+Doctor: I understand. And what was the decision to prevent further deterioration?
+
+Patient: To monitor my condition conservatively.
+
+Doctor: I see. And over the next few days, you remained very somnolent.
+
+Patient: Yes, that's right.
+
+Doctor: And when you were able to awaken, were you capable of responding to simple commands?
+
+Patient: Yes, I was.
+
+Doctor: I see. And what did the speech and language therapists note about your fatigue and conversations?
+
+Patient: They noted that fatigue was limiting my conversations, and I was speaking with imprecise articulation and at a low volume.
+
+Doctor: I understand. And what did the occupational therapists say about your engagement during sessions?
+
+Patient: They said I was poorly engaged.
+
+Doctor: I see. And what did the physiotherapists say about your rehabilitation potential?
+
+Patient: They said I had limited rehabilitation potential.
+
+Doctor: I understand. And finally, stroke was confirmed upon a third head CT several days after admission, which showed...

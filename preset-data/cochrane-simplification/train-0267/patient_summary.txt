@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0267  |  gem_id: gem-cochrane-simplification-train-268  |  doi: 10.1002/14651858.CD001930.pub3
+
+This review aimed to find out if cognitive-behavioural approaches (CBT) help reduce the negative impact of sexual abuse on children. Ten studies, in which a total of 847 children participated, met the inclusion criteria for the review. The reporting of studies was poor, and there appear to be significant weaknesses in study quality. The evidence suggests that CBT may have a positive impact on the effects of child sexual abuse, including depression, post-traumatic stress and anxiety, but the results were generally modest. Implications for practice and further research are noted.

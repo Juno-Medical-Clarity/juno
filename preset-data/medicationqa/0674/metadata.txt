@@ -1,0 +1,5 @@
+drug_focus: fluorouracil
+question_type: Manufacturer
+section_title: search results
+source_url: https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=fluorouracil&pagesize=200&page=1
+sample_id: 0674

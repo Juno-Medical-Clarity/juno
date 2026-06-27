@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0554
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No medical conditions reported.
+- No history of depression.
+- No history of cancer.
+- No history of high blood pressure.
+
+Objective:
+- (No measurable or observable data mentioned.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education mentioned.)

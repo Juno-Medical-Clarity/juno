@@ -1,0 +1,5 @@
+pmid:        24786784
+question:    49
+adaptation:  adaptation1
+title:       Synovitis with pitting edema as the presenting manifestation of systemic lupus erythematosus
+sentences:   5

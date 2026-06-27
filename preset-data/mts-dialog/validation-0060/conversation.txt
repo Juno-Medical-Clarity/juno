@@ -1,0 +1,4 @@
+Doctor: Do you have any prior history of surgeries?
+Patient: I had surgery on my back and shoulder after a bad skiing accident.
+Doctor: How long ago did you have those surgeries?
+Patient: About three to four years ago. Oh, I had my appendix removed when I was a teenager.

@@ -1,0 +1,57 @@
+Doctor: Good morning, how are you today?
+
+Patient: I'm okay, doctor.
+
+Doctor: Can you tell me why you came to see me today?
+
+Patient: Well, I have been having some problems with my urinary system for the past six months. I have been experiencing gross hematuria and pain in my lower abdomen.
+
+Doctor: I see. Can you tell me a little bit about your medical history?
+
+Patient: Sure, I am a smoker and I had an open pyelolithotomy 18 years ago.
+
+Doctor: Hmm, I see. And did you see a doctor about this before coming here?
+
+Patient: Yes, I went to another hospital and they treated me for a urinary tract infection. But it didn't seem to help.
+
+Doctor: Okay, I understand. And did they perform any tests on you?
+
+Patient: Yes, they did a CT scan of my abdomen and pelvis, and they found a horseshoe kidney with severe hydronephrosis and enlarged retroperitoneal lymph nodes.
+
+Doctor: Hmm, that's interesting. And what did the urine culture show?
+
+Patient: The urine culture showed various organisms were isolated. And the urinalysis showed a small amount of blood with a moderate presence of leukocytes and a trace of protein.
+
+Doctor: I see. And did you undergo any other tests after that?
+
+Patient: Yes, I underwent an MRI which showed a horseshoe kidney with chronic hydronephrosis of the left kidney and a large mass within it, along with satellite lesions that likely represent UC and associated lymphadenopathy.
+
+Doctor: Hmm, that's not good. And did they find anything else during the MRI?
+
+Patient: Yes, they also found chronic pancreatitis with a dilated duct and stone, and I was referred to the gastroenterology department for that.
+
+Doctor: Okay, I see. And did you undergo any other tests after that?
+
+Patient: Yes, I underwent a bone scan and chest CT, but they didn't find any significant abnormality or metastasis.
+
+Doctor: Okay, I understand. And can you tell me what happened after that?
+
+Patient: After a couple of days, I went to the emergency department with non-radiating progressive lower abdominal and left colicky flank pain for three days, along with hematuria and constipation with fullness.
+
+Doctor: I see. And did you experience any other symptoms like fever or vomiting?
+
+Patient: No, I didn't experience any fever or vomiting.
+
+Doctor: Okay, I understand. And did you experience any other genitourinary symptoms or changes in your level of consciousness?
+
+Patient: No, I didn't experience any other genitourinary symptoms or changes in my level of consciousness.
+
+Doctor: Okay, I understand. And do you remember your vital signs when you went to the emergency department?
+
+Patient: Yes, my blood pressure was 151/71 mmHg, heart rate was 109, respiratory rate was 20, and temperature was 37.1℃.
+
+Doctor: Okay, that's good. And what was your weight at that time?
+
+Patient: I don't remember my weight at that time.
+
+Doctor: Okay, I see. Based on your symptoms and medical history, I would like to perform some tests to find out what is causing your symptoms. I will also refer you to a specialist for further evaluation and treatment.

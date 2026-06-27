@@ -1,0 +1,11 @@
+Background: Higher plasma concentrations of the vitamin B-6 marker pyridoxal 5'-phosphate (PLP) have been associated with reduced colorectal cancer (CRC) risk.
+Inflammatory processes, including vitamin B-6 catabolism, could explain such findings.
+Objective: We investigated 3 biomarkers of vitamin B-6 status in relation to CRC risk.
+Design: This was a prospective case-control study of 613 CRC cases and 1190 matched controls nested within the Northern Sweden Health and Disease Study (n = 114,679).
+Participants were followed from 1985 to 2009, and the median follow-up from baseline to CRC diagnosis was 8.2 y. PLP, pyridoxal, pyridoxic acid (PA), 3-hydroxykynurenine, and xanthurenic acids (XAs) were measured in plasma with the use of liquid chromatography-tandem mass spectrometry.
+We calculated relative and absolute risks of CRC for PLP and the ratios 3-hydroxykynurenine:XA (HK:XA), an inverse marker of functional vitamin B-6 status, and PA:(PLP + pyridoxal) (PAr), a marker of inflammation and oxidative stress and an inverse marker of vitamin B-6 status.
+Results: Plasma PLP concentrations were associated with a reduced CRC risk for the third compared with the first quartile and for PLP sufficiency compared with deficiency [OR: 0.60 (95% CI: 0.44, 0.81) and OR: 0.55 (95% CI: 0.37, 0.81), respectively].
+HK: XA and PAr were both associated with increased CRC risk [OR: 1.48 (95% CI: 1.08, 2.02) and OR: 1.50 (95% CI: 1.10, 2.04), respectively] for the fourth compared with the first quartile.
+For HK:XA and PAr, the findings were mainly observed in study participants with <10.5 y of follow-up between sampling and diagnosis.
+Conclusions: Vitamin B-6 deficiency as measured by plasma PLP is associated with a clear increase in CRC risk.
+Furthermore, our analyses of novel markers of functional vitamin B-6 status and vitamin B-6-associated oxidative stress and inflammation suggest a role in tumor progression rather than initiation.

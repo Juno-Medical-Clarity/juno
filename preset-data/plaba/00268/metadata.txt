@@ -1,0 +1,5 @@
+pmid:        34186459
+question:    21
+adaptation:  adaptation1
+title:       Complicated Littre's umbilical hernia with normal Meckel's diverticulum: A case report and review of the literature
+sentences:   14

@@ -1,0 +1,9 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [19:20] 'medical-jargon-google-easy' -> 'rifampicin'
+  [23:24] 'general-complex' -> 'efficacious'
+  [26:27] 'abbr-medical' -> 'BU'

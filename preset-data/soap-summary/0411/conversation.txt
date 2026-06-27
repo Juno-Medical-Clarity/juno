@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0411
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I just quickly wanted to check few things, let's go over them together? Sure. Any heart condition like heart failure or anything? No. Any heart catheterization? Um, no. Any history of chest pain, palpitation, or irregular heartbeat? No. Do you have high blood pressure? No. Any history of high cholesterol? No. Any excessive or abnormal sweating? Not really, no. Any stress test or heart tests done recently? No. Okay, thank you for answering these questions. No problem.

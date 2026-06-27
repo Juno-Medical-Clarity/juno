@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0681
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you or have you used tobacco products,sir? No. I have never been a smoker. Do you have any history of alcohol or recreational drugs use? I have never been a drug user, but I used to drink a little, but it was never a problem. I don't drink any more. What do you do for a living? I am retired. I used to be an insurance salesman.

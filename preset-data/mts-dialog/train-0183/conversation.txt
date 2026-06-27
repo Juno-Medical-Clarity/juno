@@ -1,0 +1,9 @@
+Doctor: What brings you in today?
+Patient: Um a number of different things. I don't even know where to start to be honest.
+Doctor: I understand. What's bothering you the most?
+Patient: Lemme think. I'm uh having really bad pain.
+Doctor: Where's the pain located?
+Patient: Hm. It's in a tricky spot.
+Guest_family: Hi. Husband here. Let me help explain. She's been having severe lower back pain. It started off mild and got worse over the course of a few days. She's also a lot more sluggish as a result.
+Doctor: Any recent injuries or falls?
+Guest_family: None. She spends most of her time in bed.

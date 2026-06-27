@@ -1,0 +1,5 @@
+drug_focus: prednisone
+question_type: Action
+section_title: Why is this medication prescribed?
+source_url: https://medlineplus.gov/druginfo/meds/a601102.html
+sample_id: 0505

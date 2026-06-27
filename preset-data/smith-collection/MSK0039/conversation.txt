@@ -1,0 +1,222 @@
+# Smith Collection Transcript: MSK0039
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: uh i just came in today i think i broke my leg or something its something that was i heard a snap i was in um just a dance class um and we have like these long uh dresses it it was a traditional dance class and my foot uh slipped right onto it got caught in my dress and it just kind of slipped and i i felt right on my my leg kind of twisted and i fell down and i just stayed down i knew something was not right and something was broken
+
+Doctor: When did this happen
+
+Patient: Just uh i would say like an hour ago
+
+Doctor: Hour ago ok are you able to bear any weight on it at all
+
+Patient: No not really i i had to come in the ambulance
+
+Doctor: OK ok and um if you were to localize this pain where exactly is it
+
+Patient: Its pretty much my whole lower leg is painful but i think where it looks like it broke is like the middle part of my lower leg
+
+Doctor: The middle part ok middle part of your lower leg so kind of where your shins are
+
+Patient: Mhmm
+
+Doctor: OK so in the shin area ok um have you tried anything for it i know its only been an hour
+
+Patient: uh no nothing i just like i just want to make sure i keep it as still as possible um i didnt wanna even try anything
+
+Doctor: OK yeah that makes sense if you were to describe this pain would you say its um sharp dull achy throbbing
+
+Patient: Its like sharp and throbbing its like probably one of the worst pains that ive felt in my life
+
+Doctor: OK ok and 1 to 10 10 being the worst pain ever how bad is it
+
+Patient: At 10 for sure
+
+Doctor: Ten ok have you so you said youve never experienced this before um do you feel like its getting worse the pain or has it been pretty much the same since it started or is it getting better
+
+Patient: uh i would say its the same its like im in as much pain as i was earlier
+
+Doctor: OK ok and um so yeah ok um do you know how you felt like on the floor like did you uh go like leg first or was it did your um kind of like the mechanism of your fall did you break the fall at all with your arms
+
+Patient: uh no i didnt break it kind of so i was kind of uh i feel like when i was slipping it was at first my leg was hyper extended but it kind of just felt like it snapped and it went straight down so there was some kind of twisting as well as some hyperextension um but it just kind of slipping on my dress and then just straight down
+
+Doctor: OK ok um otherwise do you have any pain elsewhere in your body
+
+Patient: No
+
+Doctor: How about any numbness or tingling in the area
+
+Patient: um i do feel some numbness tingling just below where it happened um but it like comes and goes
+
+Doctor: OK um and then how about how about any um like feelings of like losing sensation or feeling cold in that area
+
+Patient: um no i i can feel everything in that area
+
+Doctor: OK
+
+Patient: But its hard to tell like its just very painful right now
+
+Doctor: OK yeah thats understandable um how about headaches
+
+Patient: No no headaches
+
+Doctor: uh any fainting or dizziness
+
+Patient: No
+
+Doctor: um confusion or memory loss
+
+Patient: No
+
+Doctor: um weight loss recently
+
+Patient: No
+
+Doctor: Fevers or chills
+
+Patient: No
+
+Doctor: uh changes to your hair nails or skin like rashes
+
+Patient: No nothing that ive noticed
+
+Doctor: No any changes to your vision hearing smell or taste
+
+Patient: No
+
+Doctor: um how about coughing shortness of breath or wheezing
+
+Patient: No no nothing like that
+
+Doctor: No ok um how about chest pain or palpitations
+
+Patient: No
+
+Doctor: No any changes to your bowel movements
+
+Patient: uh no not that ive noticed
+
+Doctor: uh nausea or vomiting
+
+Patient: Nope
+
+Doctor: Abdominal pain
+
+Patient: No
+
+Doctor: Changes to urinary habits
+
+Patient: No nothing like that
+
+Doctor: No ok um and are you otherwise healthy
+
+Patient: Yeah ive been pretty healthy i um dont take any medications regularly i dont have any medical conditions
+
+Doctor: OK thats good any hospitalizations or surgeries in the past
+
+Patient: No um just just for like my pregnancies i had two pregnancies both of them delivered vaginally but no issues with that just after that no hospitalizations or surgeries
+
+Doctor: OK ok um and then um are you up to date with all your immunizations
+
+Patient: Yep
+
+Doctor: OK thats good um do you have any allergies
+
+Patient: No not that i know of
+
+Doctor: OK um and then is there any family history of like musculoskeletal issues
+
+Patient: um so my mother has something called osteoporosis
+
+Doctor: OK yep
+
+Patient: um but thats thats all that i can think of
+
+Doctor: How old was she when she was diagnosed with that
+
+Patient: um probably in her fifties
+
+Doctor: In her fifties ok
+
+Patient: Late fifties i would say
+
+Doctor: um have you been have you ever like been tested for that
+
+Patient: No ive never ive never had testing
+
+Doctor: OK all right um and then any family history of lung or heart conditions
+
+Patient: No
+
+Doctor: uh how about autoimmune conditions
+
+Patient: uh no not that i know of
+
+Doctor: Any cancers
+
+Patient: uh i think one of my aunts has uh ovarian cancer
+
+Doctor: OK ok um how old was she when she was diagnosed with that
+
+Patient: um like pretty uh recently so probably like in her sixties
+
+Doctor: OK ok um and then have you been in touch with anyone sick recently
+
+Patient: No
+
+Doctor: No ok have you done any travel recently
+
+Patient: No
+
+Doctor: OK um those are all the questions i had for you did you have any questions of your own or anything you wanted to add before we move to the physical exam component
+
+Patient: No i just want to get this fixed as soon as possible
+
+Doctor: OK that sounds good yeah well well try our best
+
+Patient: Thank you
+
+Doctor: um ok so now looking at your legs like side by side do you notice any uh redness or swelling in your right leg compared to your left
+
+Patient: Yeah its all its all swollen and red and just looks so much different than my other leg
+
+Doctor: OK yeah um do you notice any obvious like breaks in the skin
+
+Patient: No theres no breaks in the skin but like when i fell like i i can definitely see like the bend there is like a bend in the bone so i definitely do think its broken
+
+Doctor: OK and do you notice any like bony pieces that are pushing on the skin
+
+Patient: No
+
+Doctor: No ok uh any bruises in the area
+
+Patient: Yeah the whole area seems bruised up and angry
+
+Doctor: OK um does uh besides the bruising and the misalignment do you notice any other obvious deformities any muscle atrophy in the area
+
+Patient: No
+
+Doctor: No ok and then uh placing your hand on one leg compared to the other does it seem warmer
+
+Patient: Yeah i feel like its its warmer
+
+Doctor: OK um and then im gonna try to get you to do some movements um can you move your right leg at all like can you flex and extend your knees
+
+Patient: No not not at all like i im im too scared to try
+
+Doctor: OK and how about weight bearing are you able to stand up at all on that leg
+
+Patient: No i just i just got time to call the ambulance i knew i knew it was just not possible
+
+Doctor: OK alright um i guess those were all the questions that i had for you um i think you may have a tibial fracture so well start with some x rays um to be sure and to try to take a look at like where the fracture is and how we can approach that um because everything is swollen and angry down there well probably try and um apply a splint um until the swelling goes down and then um we can uh refer you to an orthopaedic surgeon for a surgic for the surgery itself so that could um involve like uh  you know them doing like and intramedullary nail plates and screws and um like some sort of fixation um but after the surgery your fracture will probably take about four to six months to heal completely uh so in that period um we can talk about like pain management and physiotherapy as well just to keep the muscles in that area strong and to increase your range of motion does that sound ok
+
+Patient: That sounds good alright thank you so much
+
+Doctor: OK yeah no worries

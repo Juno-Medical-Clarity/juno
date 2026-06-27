@@ -1,0 +1,11 @@
+Although physical exercise is recommended for individuals with type 1 diabetes, participation in exercise is challenging because it increases the risk of severe hypoglycemia (very low blood sugar) and the available treatment options to prevent it often result in hyperglycemia (high blood sugar).
+There is no clear recommendation about the best timing for exercise.
+The aim of this study is to compare the risk of hypoglycemia after morning or afternoon exercise sessions up to 36 hours after a workout.
+This study included participants with type 1 diabetes, older than 18 years of age, and on sensor-augmented insulin pump (SAP) therapy, a device that monitors blood sugar, detects when it has dropped below a certain level, and can adjust the amount of insulin released in the body.
+Participants performed 2 exercise sessions of moderate intensity; 1 in the morning and 1 in the afternoon, separated by a 7 to 14 day wash-out period, where participants will stop exercising so the effects of the exercise sessions can be monitored.
+Using a continuous glucose monitoring device that monitors blood sugar, data are collected 24 hours before, during and 36 hours after each session.
+This study included 35 participants.
+The rate of hypoglycemia is significantly lower following morning versus afternoon exercise sessions.
+Most hypoglycemic events occurred 15-24 hours after the session.
+On days following morning exercise sessions, there are 20% more continuous glucose monitoring readings in near-normal blood sugar range than on days prior to morning exercise.
+In conclusion, morning exercise provides a lower risk of late-onset hypoglycemia than afternoon exercise and improves blood sugar control on the following day.

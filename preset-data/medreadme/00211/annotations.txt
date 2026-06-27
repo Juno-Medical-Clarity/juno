@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [26:27] 'medical-name-entity' -> 'activPAL'

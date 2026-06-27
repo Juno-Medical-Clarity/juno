@@ -1,0 +1,7 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [12:13] 'medical-jargon-google-easy' -> 'gestation'

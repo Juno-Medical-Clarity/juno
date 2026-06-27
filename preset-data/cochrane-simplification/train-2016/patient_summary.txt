@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2016  |  gem_id: gem-cochrane-simplification-train-2017  |  doi: 10.1002/14651858.CD003030.pub2
+
+Eighty-one trials that evaluated the effects of educational meetings were included in this review. Based on these studies, we concluded that educational meetings alone or combined with other interventions can improve professional practice and the achievement of treatment goals by patients. The effect on professional practice tended to be small but varied between studies, and the effect on patient outcomes was generally less. It is not possible to explain the observed differences in effect with confidence but it appeared that higher attendance at the meetings was associated with greater effects, that mixed interactive and didactic education was more effective than either alone, and that the effects were less for more complex behaviours and less serious outcomes.

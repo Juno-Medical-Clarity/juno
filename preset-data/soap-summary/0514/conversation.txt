@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0514
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, sir, what do you do for a living? Right now, I'm working with Chevron as a petroleum engineer. That's fantastic. So, do you drink? Um, I'd say I drink socially, like if I'm at a party or something. Sure, me too. Do you smoke? No sir, I don't do that.

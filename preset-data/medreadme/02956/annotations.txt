@@ -1,0 +1,10 @@
+source:      elife
+side:        simple
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'DNA bases'
+  [11:18] 'medical-jargon-google-easy' -> 'A , C , G and T'
+  [28:30] 'medical-jargon-google-easy' -> 'G bases'
+  [51:54] 'medical-jargon-google-hard' -> 'G - quadruplex'

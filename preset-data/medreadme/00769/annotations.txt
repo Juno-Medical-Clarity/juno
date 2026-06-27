@@ -1,0 +1,7 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [10:12] 'medical-jargon-google-easy' -> 'neonatal care'

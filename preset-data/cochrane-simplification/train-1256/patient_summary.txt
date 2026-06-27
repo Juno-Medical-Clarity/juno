@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1256  |  gem_id: gem-cochrane-simplification-train-1257  |  doi: 10.1002/14651858.CD001718.pub2
+
+Fluspirilene is a relatively long-acting injectable depot antipsychotic drug used for schizophrenia. We updated the original systematic review (David 1999) on Depot fluspirilene for schizophrenia with five additional studies. Twelve randomised trials are included. Study sizes are small and most were of short term duration. This cannot be very informative for a drug that is meant for long-term maintenance treatment. However, from the studies we were able to include, fluspirilene decanoate does not differ greatly from other depot antipsychotics (fluphenazine decanoate, fluphenazine enathate, perphenazine onanthat, pipotiazine undecylenate) with respect to treatment efficacy, response or tolerability. Outcomes suggest that fluspirilene does not differ significantly from oral antipsychotics or in different weekly regimens, although much cannot be inferred because of the shortage of trials.

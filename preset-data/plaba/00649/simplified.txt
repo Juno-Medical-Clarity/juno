@@ -1,0 +1,14 @@
+The aim of this study was to evaluate the accuracy of procalcitonin (involved in calcium balance) and C-reactive protein as measurable, biological indicators, or biomarkers, of bacterial infection. Specifically, this study evaluated the use of these biomarkers in critically ill children at the start of systemic inflammatory response syndrome (SIRS). C-reactive protein is a type of protein found in the blood that increases during times of internal inflammation (redness and swelling from infection-fighting).
+This study evaluated patients who were alike in many ways but differed by specific characteristics.
+This study was based in the tertiary care, university-affiliated pediatric intensive care unit (PICU) for child care.
+The study evaluated patients with SIRS.
+From June to December 2002, all PICU patients were screened daily to include cases of SIRS.
+At inclusion (onset of SIRS), procalcitonin and C-reactive protein levels, along with several bacterial cultures (bacterial groups grown in a lab), were obtained.
+Diagnosis of bacterial infection was made following examination of the cultures.
+Baseline (before study) and daily data on severity of illness, organ dysfunction, and outcome were collected.
+Sixty-four patients were included in the study. All patients were divided into the one of two groups: bacterial SIRS (25 patients) and nonbacterial SIRS (39 patients).
+Procalcitonin levels were significantly higher in patients with bacterial infection compared with patients without bacterial infection.
+Volume of procalcitonin was more predictive of bacterial infection than C-reactive protein.
+A positive (detected) procalcitonin level increased the likelihood of bacterial infection. A negative (not detected) C-reactive protein level decreased the probability of bacterial infection.
+Procalcitonin is better than C-reactive protein for differentiating (identifying) bacterial from nonbacterial SIRS in critically ill children. However, the accuracy of both biomarkers is moderate.
+Diagnostic accuracy could be enhanced by combining these tests with bedside clinical judgment.

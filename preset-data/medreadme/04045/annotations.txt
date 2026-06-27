@@ -1,0 +1,9 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 4.8
+split:       test
+
+jargon_spans:
+  [0:2] 'general-complex' -> 'Lagged correlations'
+  [16:17] 'medical-jargon-google-easy' -> 'epidemic'
+  [26:28] 'medical-jargon-google-easy' -> 'dengue fever'

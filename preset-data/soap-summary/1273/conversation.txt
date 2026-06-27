@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1273
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+With ten being the worse pain ever, how would you rate your pain out of ten today, ma'am? Um, out of ten, I'd say it's about a two. That's good. What helps the pain feel better? Um, it gets better with elevation, and when I just rest.

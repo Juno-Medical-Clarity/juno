@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0981
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history includes high blood pressure.
+- Family member had colon cancer.
+- Daughter has a twitch; cause is unknown.
+ 
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses mentioned.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education mentioned.)

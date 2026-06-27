@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2456  |  gem_id: gem-cochrane-simplification-train-2457  |  doi: 10.1002/14651858.CD007467.pub4
+
+This review finds that giving antibiotics is not supported by conclusive evidence. The review identified four trials involving 852 GBS positive women. Three trials, which were more than 20 years old, compared ampicillin or penicillin to no treatment and found no clear differences in newborn deaths although the occurrence of early GBS infection in the newborn was reduced with antibiotics. The antibiotics ampicillin and penicillin were no different from each other in one trial with 352 GBS positive women. All cases of perinatal GBS infections are unlikely to be prevented even if an effective vaccine is developed.

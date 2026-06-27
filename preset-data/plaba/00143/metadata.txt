@@ -1,0 +1,5 @@
+pmid:        17058886
+question:    12
+adaptation:  adaptation1
+title:       National Disease Management Guideline for Asthma: recommendations and evidence for "asthma prevention" issues
+sentences:   8

@@ -1,0 +1,33 @@
+# SOAP Notes — Sample 0205
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Fever for the past 3 days
+- Stuffy nose and sore throat prior to fever onset
+- Muscle aches for the past 2-3 days
+- No nausea, vomiting, headaches, neck stiffness, abdominal pain, joint pain, or skin changes
+- No difficulty swallowing, but sore throat persists
+- No recent contact with sick individuals, except husband with similar symptoms
+- No recent travel outside the province, but went hiking last weekend
+- No cough
+- No changes in bowel movements
+- No other significant symptoms
+
+Past Medical History:
+- PMHx: prediabetes, cholecystectomy (5 years ago)
+- Allergies: penicillin (rash)
+- Medications: multivitamins
+- SocHx: lives with husband, works from home as a digital marketing agent, husband is a computer programmer, occasional alcohol consumption (1-2 glasses of wine), no smoking, occasional marijuana use (edibles), no IV drug use
+- FHx: not mentioned
+- Immunization: no flu shot this year
+
+Objective:
+- No objective findings mentioned
+
+Assessment:
+- Possible COVID-19
+- Possible influenza
+
+Plan:
+- Investigations: COVID-19 swab
+- Advice: self-isolate until results are available

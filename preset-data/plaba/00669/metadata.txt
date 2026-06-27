@@ -1,0 +1,5 @@
+pmid:        8786012
+question:    51
+adaptation:  adaptation1
+title:       Insulitis and islet-cell antibody formation in rats with experimentally reduced beta-cell mass
+sentences:   13

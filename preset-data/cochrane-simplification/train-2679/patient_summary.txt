@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2679  |  gem_id: gem-cochrane-simplification-train-2680  |  doi: 10.1002/14651858.CD006258.pub2
+
+We identified 40 studies enrolling 4137 adult participants. Of these, 35 studies in 4039 adults compared convective dialysis with standard haemodialysis. Overall the evidence in the studies was low or very low quality due to limitations in the methods used in the research leading to low confidence in the results. Overall, there was no evidence convective dialysis lowered risk of death from any cause but may reduce death due to heart or vascular disease. Overall treating 1000 men and women who have end-stage kidney disease with convective dialysis rather than standard haemodialysis may prevent 25 dying from heart disease. Convective therapy may reduce blood pressure falls during dialysis but there was no evidence that convective dialysis influenced chances of hospital admission or other side-effects, or improved quality of life.

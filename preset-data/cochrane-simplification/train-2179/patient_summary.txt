@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2179  |  gem_id: gem-cochrane-simplification-train-2180  |  doi: 10.1002/14651858.MR000010.pub3
+
+This methodology review identified five studies which investigated the effect of including trials found in the grey literature in systematic reviews of health care interventions. They showed that trials found in the published literature tend to be larger and show larger effects of a health care intervention than those trials found in the grey literature. There was limited evidence to show whether grey trials are of poorer methodological quality than published trials. This means that those carrying out systematic reviews need to search for trials in both the published and grey literature in order to help minimise the effects of publication bias in their review.

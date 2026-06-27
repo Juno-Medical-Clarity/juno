@@ -1,0 +1,69 @@
+Doctor: Good morning, how are you feeling today?
+
+Patient: I'm okay, doctor.
+
+Doctor: That's good to hear. I understand you have some concerns about a lump in your right breast. Can you tell me more about that?
+
+Patient: Yes, I felt an abnormal lump in my right breast a few weeks ago.
+
+Doctor: I see. When did you first notice the lump?
+
+Patient: I noticed it about two weeks ago.
+
+Doctor: Okay. And have you noticed any other symptoms, such as pain or discharge from your nipple?
+
+Patient: No, I haven't noticed any pain or discharge.
+
+Doctor: Alright. Well, I have your diagnostic mammogram and ultrasound results here. They showed a hypoechoic lesion in the upper outer quadrant of your right breast measuring 14 mm x 13 mm x 18 mm and a 5 x 4 mm satellite lesion 6 mm inferior to the dominant mass. This is highly suggestive of malignancy, or cancer.
+
+Patient: Hmm, okay.
+
+Doctor: Because of this, we also did an MRI of your breast without contrast, and it showed two masses. One is 2.3 x 1.1 x 2.7 cm and the other is 8 mm x 4 mm x 1.6 cm.
+
+Patient: Oh, that's not good.
+
+Doctor: No, it's not. But don't worry, we can treat it. Your biopsy results showed that you have invasive mammary carcinoma with features of both lobular and ductal carcinoma.
+
+Patient: What does that mean?
+
+Doctor: It means that you have breast cancer, but it's a type that is both lobular and ductal. The cancer cells are growing in both the milk-producing glands and the ducts that carry milk to the nipple.
+
+Patient: Okay.
+
+Doctor: The good news is that your cancer is estrogen receptor positive, which means that it is responsive to certain hormone therapies. And your progesterone receptor is also positive.
+
+Patient: That's good, right?
+
+Doctor: Yes, it is. And your HER2 status is 2+, which is good news as well.
+
+Patient: What does that mean?
+
+Doctor: HER2 is a protein that helps some types of breast cancer grow. A positive result means that you have higher levels of the protein, but it's not necessarily a bad thing. It just means that we need to be extra careful in treating your cancer.
+
+Patient: I see.
+
+Doctor: You underwent a simple mastectomy and axillary lymph node evaluation, and the surgical pathology showed that you have a multifocal invasive mammary carcinoma of the breast. The largest invasive carcinoma was 55 mm, and there were also smaller invasive foci.
+
+Patient: What does that mean?
+
+Doctor: It means that you have multiple areas of cancer in your breast, but they are all small. Your cancer is also low to intermediate nuclear grade, which is good, and you have DCIS without central necrosis.
+
+Patient: What's DCIS?
+
+Doctor: DCIS stands for ductal carcinoma in situ, which means that the cancer cells are only in the ducts and have not spread to other parts of the breast.
+
+Patient: Okay.
+
+Doctor: You also received adjuvant PMRT, which is a type of radiation therapy, with 5000 cGy dose, 25 fractions, and a 1000 cGy scar boost.
+
+Patient: What does that mean?
+
+Doctor: It means that you received a high dose of radiation to your breast to help kill any remaining cancer cells.
+
+Patient: Okay.
+
+Doctor: Your Oncotype DX breast recurrence score is 16, which means that you have a low risk of the cancer coming back. And your genetic testing did not reveal any clinically significant mutations.
+
+Patient: That's good, right?
+
+Doctor: Yes, it is. You're doing very well, and I'm confident that you will continue to do so.

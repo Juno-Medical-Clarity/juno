@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0308  |  gem_id: gem-cochrane-simplification-validation-309  |  doi: 10.1002/14651858.CD001775.pub2
+
+The author identified two small randomised controlled studies (with a total of 119 participants); one in France and one in Germany. One trial compared Gingko biloba to placebo and the other compared two different doses of the extract. Although both trials reported some positive effects of Ginkgo biloba on vision, the trials were small and of short duration. Adverse effects and quality of life were not assessed. The overall conclusion of this review is that current research has not answered the question as to whether Ginkgo biloba is of benefit to people with AMD. Future trials need to include a larger number of participants and be conducted over a longer time.

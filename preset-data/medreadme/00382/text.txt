@@ -1,0 +1,1 @@
+It is relatively straightforward to determine how many colors we can see or sounds we can hear because these stimuli are well defined by physical properties such as wavelength.

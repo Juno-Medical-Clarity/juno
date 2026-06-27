@@ -1,0 +1,9 @@
+source:      MSD
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-easy' -> 'complete DiGeorge syndrome'
+  [8:14] 'medical-jargon-google-hard' -> 'T - cell receptor excision circle'
+  [15:16] 'abbr-medical' -> 'TREC'

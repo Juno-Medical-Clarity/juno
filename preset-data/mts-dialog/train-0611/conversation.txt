@@ -1,0 +1,17 @@
+Doctor: Hello, this is your follow up visit, right? Welcome back! Have you been taking your Plaquenil for lupus, ma'am?
+Patient: Yeah, I am.
+Doctor: Your prescription is two hundred M G twice a day, correct?
+Patient: Yeah, that's it.
+Doctor: Do you have your eye report with you today?
+Patient: Yes, doctor. Here you go.
+Doctor: Good, thank you, what seems to be the problem today?
+Patient: Well, I'm having some aches and pains in my hands and elbows.
+Doctor: When did this pain start?
+Patient: It's been a few weeks now.
+Doctor: Is there any associated trauma? Did you fall?
+Patient: No, no falls or anything. It just started one day, and it's really bothering me.
+Doctor: Are you having any fever or chills, or cold or flu like symptoms?
+Patient: No, I'm not.
+Doctor: How about swelling? Are any of your joints swollen?
+Patient: No, everything is normal there. Of note, I have been losing a lot of hair recently.
+Doctor: Okay, that's interesting.

@@ -1,0 +1,3 @@
+The US Preventive Services Task Force (USPSTF) guideline for osteoporosis screening concludes that there is a lack of evidence about optimal rescreening intervals and states that intervals >2 years may be necessary to better predict fracture risk.
+In addition, the USPSTF cites a prospective study showing that repeat measurement of BMD after 8 years added little predictive value compared with baseline DEXA scan results.
+Reconsider the intervals at which you recommend rescreening for osteoporosis; for post-menopausal women with a baseline of normal bone mineral density (BMD) or mild osteopenia, a 15-year interval is probably sufficient.

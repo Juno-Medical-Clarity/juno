@@ -1,0 +1,5 @@
+drug_focus: drug & food
+question_type: Information
+section_title: Why must some medicines be taken with or after food?
+source_url: https://www.nhs.uk/common-health-questions/medicines/why-must-some-medicines-be-taken-with-or-after-food/
+sample_id: 0552

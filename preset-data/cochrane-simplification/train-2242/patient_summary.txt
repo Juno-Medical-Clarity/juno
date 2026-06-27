@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2242  |  gem_id: gem-cochrane-simplification-train-2243  |  doi: 10.1002/14651858.CD001940
+
+The review of trials found that some of the Chinese medicinal herbs may have a positive effect on the clearance of hepatitis B virus and on the diseased liver. However, the methodological quality of the trials evaluating these herbs was generally poor. Analysis of the identified trials also indicated that trials with positive findings are more likely to be published than trials without significant findings. Further, medicinal herbs may be associated with side effects. Therefore, Chinese medicinal herbs should not be used outside new trials. Testing the herbs in larger, well-designed trials is needed in order to establish the necessary evidence for their use.

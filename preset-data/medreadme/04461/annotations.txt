@@ -1,0 +1,11 @@
+source:      pnas
+side:        complex
+readability: 5.35
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-hard' -> 'EZH2 inhibition'
+  [5:8] 'medical-jargon-google-easy' -> 'heterogenous phenotypic response'
+  [10:11] 'medical-jargon-google-easy' -> 'senescence'
+  [14:15] 'medical-jargon-google-easy' -> 'apoptosis'
+  [23:28] 'medical-jargon-google-easy' -> 'tumor growth inhibition in vivo'

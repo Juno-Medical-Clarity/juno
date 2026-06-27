@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0846
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any history of heart disease that you know of? Nope, nothing like that. How about diabetes? No, there's no sugar here that I know of. Good, and how about your lungs? Do they work well. Absolutely, they're in great shape. There's nothing like that here.

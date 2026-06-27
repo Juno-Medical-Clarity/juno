@@ -1,0 +1,905 @@
+{
+  "run_date": "2026-06-26T08:23:03",
+  "documents": [
+    {
+      "patient_id": 60178,
+      "doc_id": 204457,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204457",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204458,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204458",
+      "text_saved": false,
+      "images_saved": 3,
+      "errors": []
+    },
+    {
+      "patient_id": 60179,
+      "doc_id": 204934,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60179_204934",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60179,
+      "doc_id": 204935,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60179_204935",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60180,
+      "doc_id": 204750,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60180_204750",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60180,
+      "doc_id": 204751,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60180_204751",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60181,
+      "doc_id": 205151,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60181_205151",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60181,
+      "doc_id": 205152,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60181_205152",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60182,
+      "doc_id": 206206,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60182_206206",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60182,
+      "doc_id": 206240,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60182_206240",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204460,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204460",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204461,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204461",
+      "text_saved": false,
+      "images_saved": 3,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204462,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204462",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204463,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204463",
+      "text_saved": false,
+      "images_saved": 3,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204464,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204464",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204465,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204465",
+      "text_saved": false,
+      "images_saved": 3,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204466,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204466",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204467,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204467",
+      "text_saved": false,
+      "images_saved": 3,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204468,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204468",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204469,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204469",
+      "text_saved": false,
+      "images_saved": 3,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204470,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204470",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204471,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204471",
+      "text_saved": false,
+      "images_saved": 3,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204473,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204473",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204485,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204485",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204486,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204486",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204487,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204487",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204488,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204488",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204489,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204489",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204493,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204493",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204494,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204494",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204495,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204495",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204496,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204496",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204497,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204497",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204505,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204505",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204508,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204508",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204520,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204520",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204521,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204521",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204522,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204522",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204523,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204523",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204524,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204524",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204525,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204525",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204529,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204529",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204530,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204530",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204531,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204531",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204533,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204533",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204534,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204534",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204535,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204535",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204550,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204550",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204551,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204551",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204552,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204552",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204553,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204553",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204554,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204554",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204555,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204555",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204556,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204556",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204557,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204557",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204564,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204564",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204565,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204565",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204649,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204649",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204650,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204650",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204651,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204651",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204661,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204661",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204662,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204662",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204663,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204663",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204731,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204731",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204732,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204732",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204733,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204733",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204741,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204741",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204742,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204742",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204744,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204744",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204745,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204745",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204748,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204748",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204749,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204749",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204849,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204849",
+      "text_saved": false,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204851,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204851",
+      "text_saved": false,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204853,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204853",
+      "text_saved": false,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204855,
+      "doc_desc": "consult note",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204855",
+      "text_saved": false,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204878,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204878",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204879,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204879",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204880,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204880",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204881,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204881",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204882,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204882",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204883,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204883",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204884,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204884",
+      "text_saved": false,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204908,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204908",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204914,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204914",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204915,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204915",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204916,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204916",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204917,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204917",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204918,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204918",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204919,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204919",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204925,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204925",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204926,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204926",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204927,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204927",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204928,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204928",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204930,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204930",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204936,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204936",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204937,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204937",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204938,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204938",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204939,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204939",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    },
+    {
+      "patient_id": 60178,
+      "doc_id": 204940,
+      "doc_desc": "clinical document",
+      "folder": "/root/projects/juno/docs/agent_files/athena-bruno/ClinicalDocumentContentAll/60178_204940",
+      "text_saved": true,
+      "images_saved": 0,
+      "errors": []
+    }
+  ]
+}

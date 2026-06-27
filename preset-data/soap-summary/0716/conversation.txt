@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0716
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, miss. It looks like you are here for your yearly physical. How is everything going? Great, I think. I just got a mammogram and nothing showed up. I still am taking my multivitamin and low dose aspirin. Great to hear. Has there been any changes in drinking and smoking? No changes. Check the chart, I answered that last time. Great. Looks like drinking and smoking is off the menu. In regard to the mammogram, do you make sure to do self breast examinations? I believe I showed you how to do this last time. No, I do not. I don't see a point if I come and do the mammogram. I highly suggest you start doing so. Sometimes people do not get mammograms for a few years and it is important to make sure nothing is growing. Yeah, I know. I am just lazy. Recently it has been hard to do a lot of my selfcare routines. I do not even exercise anymore.

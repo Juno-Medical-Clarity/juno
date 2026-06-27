@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3212  |  gem_id: gem-cochrane-simplification-train-3213  |  doi: 10.1002/14651858.CD001144
+
+Steroid drugs have been effective in improving lung function but early use is associated with an increase in adverse effects (see Early Review). The review of trials found that moderately early use of corticosteroids (started at 7-14 days) reduces the risk of developing CLD. There is limited evidence about possible long term harmful effects. Short term adverse effects include high blood pressure, infection and an excess of glucose in the blood of these preterm babies. More research is needed. Steroid use should be limited until more information is available.

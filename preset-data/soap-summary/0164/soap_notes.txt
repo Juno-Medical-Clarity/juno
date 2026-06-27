@@ -1,0 +1,39 @@
+# SOAP Notes — Sample 0164
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with cough for just over 2 months, productive of yellow-green sputum (few teaspoons throughout the day) with occasional pink tinge
+- Cough started after recent travel to India 3-4 months ago, where pt stayed in crowded conditions; relative reported a sick cousin at the time
+- Cough persists despite course of azithromycin prescribed by PCP 1 month ago
+- Cough frequency: few times per hour, worse with movement, disrupting sleep
+- Associated symptoms: occasional fever, night sweats, unintentional weight loss of a few pounds, mildly decreased appetite
+- Denies: SOB, rhinorrhea, chest pain, hemoptysis (blood-tinged sputum only), wheezing, leg/hand swelling, bowel/bladder changes, dizziness/syncope
+
+PMHx:
+- HTN
+- T2DM
+- HLD
+- Medications: rosuvastatin (cholesterol), others unknown
+- Allergies: penicillin (childhood rash)
+- Family Hx: mother had MI at age 48
+
+SocHx:
+- Lives with husband and 3 sons; no known sick contacts at home
+- Retired
+- Tobacco: 0.5 PPD x 30 years
+- Denies EtOH or recreational drug use
+
+Objective:
+- Vitals: not provided
+- Exam: not performed
+
+Assessment:
+- Chronic cough with sputum production, suspect:
+1. Tuberculosis given recent travel to endemic area and exposure history
+2. Pneumonia, possibly atypical or resistant organism
+- Exacerbating factors: smoking history
+
+Plan:
+- CXR to evaluate for TB and pneumonia
+- Sputum culture pending
+- Follow-up after test results

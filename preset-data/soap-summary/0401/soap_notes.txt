@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0401
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has never smoked in their entire life.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No assessment information provided.]
+
+Plan:
+- [No plan information provided.]

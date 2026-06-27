@@ -1,0 +1,11 @@
+The pyruvate dehydrogenase complex (PDC) quickens the permanent conversion of pyruvate (a particle used for energy-production) into acetyl-CoA (another particle used for energy production).
+PDC shortage can occur from changes in genes involved in creating its components.
+The resulting physical traits, though very different, mainly affect the brain and spinal cord.
+This study explores the medical, biochemical and gene-related information from thirteen PDC scarce patients. The study seeks to create possible gene-physical trait connections.
+
+The data agrees with earlier reports describing a specfic gene's sequence changes as the main cause of PDC shortage. However, the results also reveal a large presence of another gene's sequence changes among Portuguese patients. Most carry a possibly private gene sequence change.
+
+Regarding medical characteristics, all patients show coordination setback, the intensity of which seems to parallel the type and location of the patient's gene sequence change.
+Treatment options include administration of a low-carb diet and thiamine, although arginine aspartate may also help.
+
+Identifying disease-causing gene sequence changes, along with the altered cellular substances, help explain the physical traits caused by the disease and select the best treatment.

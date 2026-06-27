@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2540  |  gem_id: gem-cochrane-simplification-train-2541  |  doi: 10.1002/14651858.CD004683.pub4
+
+From a search of the literature in January 2016, we identified six randomised controlled trials that involved 2452 participants aged between 48 and 65 years to be analysed. We found that homocysteine-lowering therapies had no benefits for heart health in people with advanced kidney disease who were on dialysis. These therapies did not achieve any reduction in rates of heart disease-related death. However, homocysteine-lowering therapies were generally well tolerated, and had a mild side effect profile. Overall, studies were assessed as high quality.

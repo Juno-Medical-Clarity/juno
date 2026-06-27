@@ -1,0 +1,5 @@
+pmid:        28639707
+question:    45
+adaptation:  adaptation2
+title:       Dressings and topical agents for treating pressure ulcers
+sentences:   19

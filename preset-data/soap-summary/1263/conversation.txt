@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1263
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi, how are you? I am good, Doctor. So, I see you recently moved to U S A from Brazil, right? Yes, about one year back. I was an engineer manager back there, but my job was so stressful that when I got admitted in the M B A program here in the states, I took it. Wow, that's quite a move! Yeah. How about your family; wife or girlfriend? I am a one women man. I married my childhood sweetheart. Nice. Did you travel outside the country recently or have risk of any kind of exposure? No, I haven't traveled anywhere not even within the country. Okay. Tell me something, do you smoke or drink? No, I don't. And have you in the past used any recreational or illegal drugs? No, never. Okay, good.

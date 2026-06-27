@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1087
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient denies any past medical problems such as ADHD, depression, or epilepsy.
+- No other symptoms, severity, duration, associated symptoms, relevant medical history, family history, allergies, or concerns are mentioned.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided.)

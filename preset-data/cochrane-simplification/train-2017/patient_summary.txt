@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2017  |  gem_id: gem-cochrane-simplification-train-2018  |  doi: 10.1002/14651858.CD001535.pub2
+
+We identified 15 studies (1644 elderly women) comparing single dose, short-course (3 to 6 days) and long course (7 to 14 days) antibiotic treatment for uncomplicated symptomatic UTI in elderly women. Our review suggests that single dose treatments are less effective than short or long courses, but better accepted by the patients. On the other hand longer courses may have more side effects. On the basis of the evidence available at present, an antibiotic treatment of 3 to 6 days could be sufficient for treating uncomplicated UTIs in elderly women, although more studies on specific, commonly prescribed antibiotics are needed.

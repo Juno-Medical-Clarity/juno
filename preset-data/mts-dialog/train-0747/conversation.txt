@@ -1,0 +1,2 @@
+Doctor: Any nausea, vomiting or diarrhea?
+Patient: Nope.

@@ -1,0 +1,5 @@
+pmid:        23074477
+question:    67
+adaptation:  adaptation2
+title:       Physiotherapy rehabilitation after total knee or hip replacement: an evidence-based analysis
+sentences:   8

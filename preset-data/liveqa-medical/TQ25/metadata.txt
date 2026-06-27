@@ -1,0 +1,13 @@
+qid: TQ25
+source_file: 1-133386245.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Show the comparable effects of the beta-blocker, Carvedilol, and the blood pressure regulatory drug, Hydralazine, and define if there is any contraindication for these drugs being combined.
+nlm_summary: Are there are any drug-drug interactions between Carvedilol and Hydrslazine?
+
+focus_entities:
+  [F1] (DrugSupplement) Carvedilol
+  [F2] (DrugSupplement) Hydrslazine
+question_types:
+  [T1] INTERACTION

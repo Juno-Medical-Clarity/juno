@@ -1,0 +1,5 @@
+pmid:        26368010
+question:    54
+adaptation:  adaptation1
+title:       Associations between maternal serum free beta human chorionic gonadotropin (β-hCG) levels and adverse pregnancy outcomes
+sentences:   9

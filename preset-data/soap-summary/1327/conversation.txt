@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1327
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, miss. How are you? What brings you to my office today? I am doing well. Just here for a refill on my medication. Great. That should be easy. How has the stress management been going to control the acne? It is going well. My husband has been on board with my meditations and yoga. He is very supportive. Wonderful. Are will still clean from drinking and smoking? That can interact with your medications. Yeah I know. I don't drink or smoke.

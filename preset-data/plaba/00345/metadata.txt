@@ -1,0 +1,5 @@
+pmid:        33507892
+question:    27
+adaptation:  adaptation1
+title:       Allergic Reactions Including Anaphylaxis After Receipt of the First Dose of Moderna COVID-19 Vaccine - United States, December 21, 2020-January 10, 2021
+sentences:   13

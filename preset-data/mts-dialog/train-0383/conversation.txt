@@ -1,0 +1,8 @@
+Doctor: So, are you married, ma'am?
+Patient: Well, no I'm not. My husband and I got a divorce.
+Doctor: I'm sorry to hear that, do you have any children?
+Patient: It's okay, it was for the best. Yes, I have two.
+Doctor: Do you live with either of them?
+Patient: Yeah, um, I live with my son right now.
+Doctor: Do you smoke or drink?
+Patient: No I do not.

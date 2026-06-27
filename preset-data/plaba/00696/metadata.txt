@@ -1,0 +1,5 @@
+pmid:        30422545
+question:    54
+adaptation:  adaptation1
+title:       Human Chorionic Gonadotropin
+sentences:   3

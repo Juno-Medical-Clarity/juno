@@ -1,0 +1,5 @@
+Doctor: Do you know any familiar diseases in your family?
+Patient: Do you mean like B P, high sugar?
+Doctor: Yes.
+Patient: No, no one in my family has anything like that.
+Doctor: Great.

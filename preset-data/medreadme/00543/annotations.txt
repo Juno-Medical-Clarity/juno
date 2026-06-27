@@ -1,0 +1,9 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [6:7] 'abbr-medical' -> 'GP'
+  [14:17] 'medical-jargon-google-easy' -> 'irritable bowel syndrome'
+  [18:21] 'medical-jargon-google-easy' -> 'inflammatory bowel disease'

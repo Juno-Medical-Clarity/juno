@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1598  |  gem_id: gem-cochrane-simplification-train-1599  |  doi: 10.1002/14651858.CD009441.pub2
+
+We identified seven studies, with a total of 542 adult patients who had head and neck cancer. However, many of the studies had shortcomings in their design or reporting. This has made it difficult to draw reliable conclusions. Overall, this review did not find any improvement in general quality of life or in levels of anxiety and depression following psychosocial intervention. In conclusion, there was limited good-quality evidence in this area, making it difficult to draw conclusions about the effectiveness of psychosocial interventions. Future good-quality research is required in this field and should target those in need of psychosocial intervention, in order to guide service development.

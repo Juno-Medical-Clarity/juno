@@ -1,0 +1,5 @@
+pmid:        15228825
+question:    9
+adaptation:  adaptation1
+title:       Management of foreign bodies in the esophagus
+sentences:   14

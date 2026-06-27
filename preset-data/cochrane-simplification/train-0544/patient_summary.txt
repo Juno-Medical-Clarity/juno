@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0544  |  gem_id: gem-cochrane-simplification-train-545  |  doi: 10.1002/14651858.CD006607.pub4
+
+We searched the related literature and included three randomised controlled trials involving 151 adults with pneumonia aged around 60 years. We did not include patients with pulmonary tuberculosis or cystic fibrosis. We found that NIV can reduce the risk of death in the intensive care unit (ICU) and the need for endotracheal intubation, shorten ICU stay and length of intubation. Some outcomes and complications of oxygen therapy depended upon the delivery system and primary diseases. The most common complications of invasive ventilation are ventilator-associated pneumonia. However, we must be aware that oxygen therapy is just one of the treatments for pneumonia and the other standard treatments used by physicians are of equal importance. The evidence is weak and it is limited by the small number of studies and the small number of study participants.

@@ -1,0 +1,188 @@
+# Smith Collection Transcript: RES0042
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in today
+
+Patient: So just for the past like 3 days ive been coughing its i i dont feel particularly sick im just kind of dry like annoying call that wont go away and then today i took my temp in it its pretty high it was like 99 point like 9 i didnt really take it the other days so i guess so i just thought id better come get it checked out because i i am on like a biologic medication so for my crohns disease
+
+Doctor: OK yeah yeah thank you for coming in i think its good that you are getting this checked out as early as possible so just to rewind a little bit when did your dry cough start
+
+Patient: uh like 3 days ago three days ago
+
+Doctor: 3 days ago ok and when did your fever start
+
+Patient: So i didnt take my temp but like the other days but like for sure this morning
+
+Doctor: OK um ok so the cough is it always a dry cough or do you sometimes bring up sputum or blood
+
+Patient: Yeah its always a dry cough its really just annoying
+
+Doctor: Yeah yeah do you feel wheezy at all
+
+Patient: uh no
+
+Doctor: No wheeziness ok how about short of breath
+
+Patient: No
+
+Doctor: No ok uhm any chest pain
+
+Patient: No
+
+Doctor: No do you ever feel like your heart is racing
+
+Patient: No i cant say that i do
+
+Doctor: OK any swelling in your limbs
+
+Patient: um no
+
+Doctor: OK how about um um a sore throat
+
+Patient: No
+
+Doctor: No sore throat ok any issues with taste or smell
+
+Patient: No
+
+Doctor: Do you have a runny nose or a stuffy nose
+
+Patient: Maybe a bit of a runny nose
+
+Doctor: OK and any issues with vision or hearing
+
+Patient: Ah no
+
+Doctor: OK how about uh fevers or chills
+
+Patient: No no fever i mean i i took my temp was high i guess i felt hot but i didnt there were no chills
+
+Doctor: OK ok how about weight loss oh thats ok how about weight loss
+
+Patient: Weight loss no no nothing nothing new
+
+Doctor: OK any changes in your hair nails or skin like rashes
+
+Patient: No
+
+Doctor: OK um any issues swallowing food
+
+Patient: No
+
+Doctor: Nausea or vomiting
+
+Patient: No
+
+Doctor: um changes in your bowel habits
+
+Patient: Well like i said i have crohns disease im not like in a flare right now or anything so ill say no but like my baseline is not like totally normal
+
+Doctor: OK yeah that makes sense umm alright do any changes in your urine
+
+Patient: No
+
+Doctor: No changes in urine
+
+Patient: How about dizziness or fainting spells
+
+Doctor: No
+
+Patient: Any confusion or memory loss
+
+Doctor: No
+
+Patient: OK and are you otherwise healthy i know you mentioned you have crohns disease do you have any other longstanding medical conditions
+
+Doctor: Oh not really just that and uh eczema
+
+Patient: Eczema ok
+
+Doctor: Tends to get pretty bad like i dont really have any right now but i really stay on top of it with like my moisturizers and like i always have like a hydrocortisone cream on hand just in case
+
+Patient: Yeah for sure how long have you had eczema for
+
+Doctor: Oh like when i was started when i was like a kid and then i feel like when i was a teenager i didnt really and then part of it as an adult i really have to take care of it or else it gets bad
+
+Patient: OK ok um have you ever been hospitalized or have you had any surgeries in the past
+
+Doctor: uh like when i was first diagnosed with crohns maybe 20 years ago when i was like 20 i was in the hospital for a little bit cause i was really dehydrated and i couldnt really like i just couldnt i wasnt feeling well at that time but since then ive been pretty on top of it
+
+Patient: OK thats good to hear you mentioned youre on biologics for crohns disease are there any other medications that youre on
+
+Doctor: um just like the hydrocortisone cream on occasion
+
+Patient: Right ok um ok and do you have any allergies
+
+Doctor: Ah like i have some seasonal allergies like ah its ragweed which is not like right now is not the time for it and like cats and dogs
+
+Patient: OK ok
+
+Doctor: Its just like this environmental its not like not like the really dangerous allergies you know
+
+Patient: Right ok um how about immunizations are you up to date
+
+Doctor: I think so
+
+Patient: Alright and in terms of family history are there any lung conditions or heart conditions
+
+Doctor: Oh like my dad had high blood pressure but other than that i dont think there is anything that stood out
+
+Patient: OK and how about your smoking history do you smoke at all
+
+Doctor: um like i did for a couple years when i was like 18 and then i havent ever since
+
+Patient: OK how about marijuana
+
+Doctor: uh no
+
+Patient: No marijuana ok um how about other recreational drugs
+
+Doctor: uh no
+
+Patient: No ok uhm alcohol
+
+Doctor: Ah i like i might have like a couple beers on the weekend but not a lot
+
+Patient: Sure um and where do you live right now
+
+Doctor: So i live in a townhouse in london here i live alone but my i have my kids every i have my kids like wednesdays and thursdays and then every other weekend
+
+Patient: OK any concerns for old carpets mold asbestos anything like that in the home
+
+Doctor: No its like a pretty new build
+
+Patient: OK and have you been around any sick contacts recently
+
+Doctor: Ah i mean my kids just left this weekend uhm theres really only people ive been around i can i maybe i should have asked him before coming here if they like knew they had seen anyone but they were fine over the weekend
+
+Patient: OK um and have you traveled to anywhere recently
+
+Doctor: No
+
+Patient: No ok those were all the questions that i had today were there was there anything else that you wanted to add anything that i missed perhaps
+
+Doctor: I dont think so i think thats it
+
+Patient: OK
+
+Doctor: You know i hope i hope i just wanted to come in in case it was something bad because i you know i have those other health problems i just want to make sure yeah
+
+Patient: Yeah yeah for sure and i think its a good thing that you came in so thank you right now i guess top on the list of things that you could possibly have is coviso well get you tested for that and well get you a swab and you should have the results of the that swab in about 24 to 48 hours and then you should isolate for 14 days regardless though because your symptoms do overlap with symptoms of coviand and that includes isolating from your your children as well
+
+Doctor: Oh ok
+
+Patient: And yeah and if its not coviit could be another viral illness thats going around at this time of year just so just make sure youre staying hydrated youre eating nutritious foods and getting good sleep if your symptoms do become worse and if they become uhm severe like you have a really high temperature you have trouble breathing or you have any neurological symptoms like seizures or fainting spells please do go to the er and seek help how does that sound
+
+Doctor: Ah yeah i guess that sounds good this is how its gotta be right
+
+Patient: Yeah unfortunately or yeah well thank you again
+
+Doctor: No thank you have a good day
+
+Patient: You too

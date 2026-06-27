@@ -1,0 +1,5 @@
+Tardive dyskinesia (TD) is an iatrogenic condition that encompasses a wide phenomenological spectrum of movement disorders caused by exposure to dopamine receptor blocking agents (DRBAs).
+TD may cause troublesome or disabling symptoms that impair quality of life.
+Due to frequent, often inappropriate, use of DRBAs, TD prevalence rates among patients exposed to DRBAs continue to be high.
+The judicious use of DRBAs is key to the prevention of TD, reduction of disease burden, and achieving lasting remission.
+Dopamine-depleting vesicular monoamine transporter type 2 inhibitors are considered the treatment of choice of TD.

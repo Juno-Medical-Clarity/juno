@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0462
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Diarrhea, decreased appetite
+- Severity: Not specified; patient feels overall better despite symptoms
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Patient feels pretty well overall
+
+Objective:
+- Measured urine output: 600 mL
+- Last urination: Approximately 7 AM
+- Fever symptoms: None reported
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

@@ -1,0 +1,11 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [2:4] 'medical-jargon-google-easy' -> 'physical therapies'
+  [6:9] 'medical-jargon-google-easy' -> 'functional strength training'
+  [10:11] 'abbr-medical' -> 'FST'
+  [13:16] 'medical-jargon-google-easy' -> 'movement performance therapy'
+  [17:18] 'abbr-medical' -> 'MPT'

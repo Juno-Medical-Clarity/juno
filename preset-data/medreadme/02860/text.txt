@@ -1,0 +1,1 @@
+We propose that bistability in the dynamics of hunchback gene regulation can account for this information reading process, and we show that this bistable mechanism can be produced by the ability of this gene to regulate its own expression.

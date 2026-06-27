@@ -1,0 +1,7 @@
+source:      cochrane_all
+side:        simple
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [1:2] 'medical-name-entity' -> 'Cochrane'

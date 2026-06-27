@@ -1,0 +1,1 @@
+Here, we assessed the effects of climatic factors on dengue spread to develop a predictive model of the epidemics in French Guiana on a country-wide scale.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0773  |  gem_id: gem-cochrane-simplification-train-774  |  doi: 10.1002/14651858.CD004004.pub3
+
+This review identified 14 randomised controlled trials of radiotherapy for wet AMD. Most of these trials showed effects (not always significant) that favoured treatment with radiotherapy to prevent vision loss. However, overall this review does not provide convincing evidence that radiotherapy is an effective treatment for wet AMD, in part because the results of different trials were inconsistent, but also because it is possible that the treatment effects could be explained by the fact that it was not possible to mask the participants, and people measuring outcome, to the treatment group. The incidence of adverse effects reported in these trials was low - nobody developed any radiation-specific side effects although in three trials higher rates of cataract were reported in the radiotherapy group.

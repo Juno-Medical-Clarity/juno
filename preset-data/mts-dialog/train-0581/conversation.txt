@@ -1,0 +1,3 @@
+Doctor: Alright. So this is going to be a complex case. Your wound is complicated by methicillin-resistant staphylococcus aureus cellulitis.
+Patient: Is there a treatment for my right leg?
+Doctor: There is. It will be more aggressive, but we can do it.

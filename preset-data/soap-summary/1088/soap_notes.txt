@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1088
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports no known neurological problems in family.
+- Parents experienced memory loss in their nineties, assumed to be due to old age.
+- Patient has five siblings, all reported to be healthy with no memory issues or neurological illnesses.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No clinician's interpretation or diagnoses provided.]
+
+Plan:
+- [No actions, medications, tests, follow-up, or patient education mentioned.]

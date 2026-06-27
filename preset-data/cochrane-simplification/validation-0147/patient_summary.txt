@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0147  |  gem_id: gem-cochrane-simplification-validation-148  |  doi: 10.1002/14651858.CD008179.pub2
+
+Based on the results of this review, which included eight studies involving 1007 participants, there is currently not enough information available to help us work out what services might be best for informal caregivers of stroke survivors. However, another 11 studies are currently underway, which may help us find out what works best.

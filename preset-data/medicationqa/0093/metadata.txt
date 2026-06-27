@@ -1,0 +1,5 @@
+drug_focus: tizanidine
+question_type: Action/time
+section_title: HOW TO USE
+source_url: https://rxoutreach.org/medication-monograph/TizanidineHcl/
+sample_id: 0093

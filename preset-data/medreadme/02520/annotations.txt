@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'epithelial cells'
+  [8:10] 'abbr-medical' -> 'C. jejuni'
+  [24:25] 'medical-jargon-google-easy' -> 'pre-incubated'

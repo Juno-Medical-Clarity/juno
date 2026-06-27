@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0583
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is following up with hand therapy.
+- No specific symptoms, severity, or duration mentioned.
+- The name of the hand therapist and office location provided (Doctor X at A B C D office).
+- The patient expresses intent to make an appointment.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- Follow up with hand therapist Doctor X at A B C D office in one to two weeks.
+- Patient will make an appointment today.

@@ -1,0 +1,12 @@
+source:      cochrane_all
+side:        complex
+readability: 3.7
+split:       dev
+
+jargon_spans:
+  [6:7] 'abbr-medical' -> 'PLD'
+  [8:9] 'medical-jargon-google-easy' -> 'carboplatin'
+  [10:11] 'abbr-medical' -> 'PLD'
+  [12:13] 'abbr-medical' -> 'carbo'
+  [15:16] 'abbr-medical' -> 'PAC'
+  [17:18] 'abbr-medical' -> 'carbo'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0470
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Who lives with you, miss? I live with my boyfriend. Do you smoke cigarettes? Yes, I do. How about drugs? Sometimes, but I don't want to talk about it. Okay. Anything else you want to talk about? Pardon?

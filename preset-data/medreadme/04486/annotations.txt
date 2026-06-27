@@ -1,0 +1,7 @@
+source:      wiki
+side:        simple
+readability: 4.35
+split:       test
+
+jargon_spans:
+  [4:5] 'abbr-medical' -> 'SBS'

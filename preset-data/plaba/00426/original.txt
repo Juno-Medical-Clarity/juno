@@ -1,0 +1,13 @@
+Gabapentin (GBP) is an organic cation mainly eliminated unchanged in urine, and active drug secretion has been suggested to contribute to its renal excretion.
+Our objective was to evaluate the potential drug-drug interaction between GBP and cetirizine (CTZ), an inhibitor of transporters for organic cations.
+An open-label, 2-period, crossover, nonrandomized clinical trial was conducted in patients with neuropathic pain to evaluate the effect of CTZ on GBP pharmacokinetics.
+Twelve participants were treated with a single dose of 300 mg GBP (treatment A) or with 20 mg/d of CTZ for 5 days and 300 mg GBP on the last day of CTZ treatment (treatment B).
+Blood sampling and pain intensity evaluation were performed up to 36 hours after GBP administration.
+The interaction of GBP and CTZ with transporters for organic cations was studied in human embryonic kidney (HEK) cells expressing the organic cation transporters (OCTs), multidrug and toxin extrusion proteins (MATEs), and OCTN1.
+CTZ treatment resulted in reduced area under the concentration-time curve and peak concentration compared with treatment A.
+In treatment B, the lower plasma concentrations of GBP resulted in reduced pain attenuation.
+GBP renal clearance was similar between treatments.
+GBP has low apparent affinity for OCT2 (concentration of an inhibitor where the response [or binding] is reduced by half [IC50 ] 237 µmol/L) and a high apparent affinity for hMATE1 (IC50 1.1 nmol/L), hMATE2-K (IC50 39 nmol/L), and hOCTN1 (IC50 2.1 nmol/L) in HEK cells.
+At therapeutic concentrations, CTZ interacts with hMATE1 and OCTN1.
+In summary, CTZ reduced the systemic exposure to GBP and its effect on neuropathic pain attenuation.
+However, CTZ × GBP interaction is not mediated by the renal transporters.

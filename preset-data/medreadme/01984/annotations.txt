@@ -1,0 +1,6 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans: (no jargon annotation found for this sentence)

@@ -1,0 +1,17 @@
+Background: Surgical pain is managed with multi-modal anaesthesia in total hip replacement (THR) and total knee replacement (TKR).
+It is unclear whether including local anaesthetic infiltration before wound closure provides additional pain control.
+Methods: We performed a systematic review of randomised controlled trials of local anaesthetic infiltration in patients receiving THR or TKR.
+We searched MEDLINE, Embase and Cochrane CENTRAL to December 2012.
+Two reviewers screened abstracts, extracted data, and contacted authors for unpublished outcomes and data.
+Outcomes collected were post-operative pain at rest and during activity after 24 and 48 hours, opioid requirement, mobilisation, hospital stay and complications.
+When feasible, we estimated pooled treatment effects using random effects meta-analyses.
+Results: In 13 studies including 909 patients undergoing THR, patients receiving local anaesthetic infiltration experienced a greater reduction in pain at 24 hours at rest by standardised mean difference (SMD) -0.61 (95% CI -1.05, -0.16; p = 0.008) and by SMD -0.43 (95% CI -0.78 -0.09; p = 0.014) at 48 hours during activity.
+In TKR, diverse multi-modal regimens were reported.
+In 23 studies including 1439 patients undergoing TKR, local anaesthetic infiltration reduced pain on average by SMD -0.40 (95% CI -0.58, -0.22; p < 0.001) at 24 hours at rest and by SMD -0.27 (95% CI -0.50, -0.05; p = 0.018) at 48 hours during activity, compared with patients receiving no infiltration or placebo.
+There was evidence of a larger reduction in studies delivering additional local anaesthetic after wound closure.
+There was no evidence of pain control additional to that provided by femoral nerve block.
+Patients receiving local anaesthetic infiltration spent on average an estimated 0.83 (95% CI 1.54, 0.12; p = 0.022) and 0.87 (95% CI 1.62, 0.11; p = 0.025) fewer days in hospital after THR and TKR respectively, had reduced opioid consumption, earlier mobilisation, and lower incidence of vomiting.
+Few studies reported long-term outcomes.
+Conclusions: Local anaesthetic infiltration is effective in reducing short-term pain and hospital stay in patients receiving THR and TKR.
+Studies should assess whether local anaesthetic infiltration can prevent long-term pain.
+Enhanced pain control with additional analgesia through a catheter should be weighed against a possible infection risk.

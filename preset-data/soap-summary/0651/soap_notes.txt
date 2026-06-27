@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0651
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Walking funny, losing balance
+- Severity: Increasing concern
+- Duration: Symptoms noticed over the last six months
+- Associated Symptoms: Stooping over, wider gait, slower walking, difficulty stepping up onto things, needing to touch walls and furniture for stability, falling more frequently
+- Relevant Medical History: One emergency room visit due to a fall resulting in a broken wrist (March 2007)
+- Family History: Husband is concerned about balance and falls
+- Allergies: None mentioned
+- Other Concerns: Patient feels her thinking has slowed down, occasionally has trouble finishing sentences, but no significant cognitive decline noted; no fainting or recent dizzy spells
+
+Objective:
+- No measurable or observable data provided
+
+Assessment:
+- No clinician's interpretation or diagnosis provided
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned

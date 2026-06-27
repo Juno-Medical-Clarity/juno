@@ -1,0 +1,5 @@
+pmid:        32721557
+question:    19
+adaptation:  adaptation2
+title:       Immunomodulatory effect and clinical outcome in Parkinson's disease patients on levodopa-pramipexole combo therapy: A two-year prospective study
+sentences:   7

@@ -1,0 +1,5 @@
+pmid:        26893260
+question:    47
+adaptation:  adaptation1
+title:       Hypophosphatasia - aetiology, nosology, pathogenesis, diagnosis and treatment
+sentences:   12

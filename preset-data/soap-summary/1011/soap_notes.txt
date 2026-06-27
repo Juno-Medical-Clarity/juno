@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1011
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Pain rating: 6-7 out of 10 during the day, 10 out of 10 at night.
+- Pain is constant and worsens progressively throughout the day.
+- Pain becomes 10 out of 10 when it is cold outside.
+- Difficulty getting out of bed in the morning.
+- Poor sleep: sleeps for less than an hour at a time, if at all.
+- Aggravating activities: sitting for more than 20 minutes, lying flat on back.
+- Alleviating position: laying on side helps a little.
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No clinician's interpretation, diagnoses, or clinical impressions provided in the conversation.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned by the physician.)

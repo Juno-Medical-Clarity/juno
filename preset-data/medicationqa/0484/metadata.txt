@@ -1,0 +1,5 @@
+drug_focus: cyanocobalamin
+question_type: Usage
+section_title: DESCRIPTION:
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=da925fe7-2051-487f-a9cf-c288249516e7&audience=consumer
+sample_id: 0484

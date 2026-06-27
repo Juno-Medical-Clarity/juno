@@ -1,0 +1,63 @@
+Doctor: Hello, Mr. X. I'm Dr. Y. How are you feeling today?
+
+Patient: I'm feeling okay, thank you for asking.
+
+Doctor: That's great to hear. Can you tell me a little about your medical history?
+
+Patient: Sure. I'm a retired 68-year-old man from a rural area near Quito. I used to be a heavy smoker until 2016, with 20 pack-years. I used to drink alcohol every 15 days until 2010. And I had a heart attack in 2015, which was treated with stenting, acetylsalicylic acid, and atorvastatin.
+
+Doctor: Okay, thank you for sharing that information with me. Is there any family history of cancer or other pathologies of interest?
+
+Patient: No, there isn't.
+
+Doctor: Alright, let's move on to the reason for your visit today. Can you tell me about the symptoms you experienced in February 2020?
+
+Patient: Yes, I had dysesthesias in my right chest, along with pain and a mass-like sensation.
+
+Doctor: I see. And what did you do about it?
+
+Patient: I visited my local healthcare center, and they ordered a chest CT scan for me in March.
+
+Doctor: Okay, and what did the CT scan reveal?
+
+Patient: It showed a solitary pulmonary mass located in the right inferior lobule, which had invaded both the pleura and thoracic wall.
+
+Doctor: I understand. Due to the COVID-19 pandemic, all further studies were suspended for a couple of months, right?
+
+Patient: Yes, that's correct.
+
+Doctor: And when was the biopsy done?
+
+Patient: It was done on May 17, 2020.
+
+Doctor: And what did the histopathological study report?
+
+Patient: It reported a neuroendocrine carcinoma.
+
+Doctor: Alright. And then you underwent a thoracotomy and inferior pulmonary lobectomy on June 7, 2020, correct?
+
+Patient: Yes, that's right.
+
+Doctor: And then you received four cycles of chemotherapy consisting of cisplatin and etoposide until November, right?
+
+Patient: Yes, that's correct.
+
+Doctor: And now you're presenting with some neurologic symptoms, such as loss of balance, ataxic gait, headaches, and nausea, right?
+
+Patient: Yes, that's right.
+
+Doctor: And that prompted the need for a brain MRI, correct?
+
+Patient: Yes, that's correct.
+
+Doctor: And what did the MRI reveal?
+
+Patient: It revealed a mass on the right lobe of my cerebellum, which was 2.66 x 2.61 x 2.48cm and had perilesional edema, compressing the fourth ventricle.
+
+Doctor: I see. And based on the MRI results, we diagnosed a progression of your primary lung cancer, right?
+
+Patient: Yes, that's correct.
+
+Doctor: And as a result, we suspended the original chemotherapy regimen and replaced it with adjuvant Temozolomide maintenance therapy, correct?
+
+Patient: Yes, that's correct.

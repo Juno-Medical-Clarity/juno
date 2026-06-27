@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0396
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No difficulty in swallowing.
+- No nausea or vomiting.
+- No blood in vomit.
+- No stomach pain.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

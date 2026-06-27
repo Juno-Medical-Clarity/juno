@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0591  |  gem_id: gem-cochrane-simplification-train-592  |  doi: 10.1002/14651858.CD006319.pub2
+
+The reviewers identified 10 trials that compare various fistula treatments against one another. There are various parameters that these procedures can be compared on, but we looked at the two most important ones, recurrence (the numbers who got the disease again) and incontinence (a worsening in the ability to control rectal content). In the trials that were compared, there was no significant difference between the various comparisons for the disease to recur. However the trials on fibrin glue, as well as data from non randomised trials show that incontinence is less, probably as there is no surgical disruption of the anal muscle. There is a paucity of good quality data that compares various types of operative treatment for anorectal fistula and there is scope for further trials in the area.

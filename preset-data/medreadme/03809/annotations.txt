@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        simple
+readability: 4.0
+split:       test
+
+jargon_spans:
+  [4:8] 'medical-jargon-google-easy' -> 'oro - antral communications'
+  [9:10] 'abbr-medical' -> 'OAC'

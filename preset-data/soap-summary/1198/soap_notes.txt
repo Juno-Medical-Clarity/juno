@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1198
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No known drug allergies.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessments provided.)
+
+Plan:
+- (No plan provided.)

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2178  |  gem_id: gem-cochrane-simplification-train-2179  |  doi: 10.1002/14651858.CD007239.pub3
+
+This review found five randomised controlled trials that involved a total of 960 women. They looked at a variety of preventive interventions including breastfeeding education, taking antibiotic medication, topical ointments and anti-secretory factor cereal. None of the therapies made any difference in reducing breast infections or the length of breastfeeding exclusivity and duration with this limited evidence. Generally studies were of low quality, with limited findings highlighting the need for better quality research in this area.

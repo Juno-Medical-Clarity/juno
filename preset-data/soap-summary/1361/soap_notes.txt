@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1361
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Smoking habit (1 pack per day)
+- Duration: Ongoing
+- Associated symptoms: None explicitly mentioned
+- Relevant medical history: None explicitly mentioned
+- Family history: None explicitly mentioned
+- Allergies: None mentioned
+- Concerns: Patient expresses no plans of quitting smoking but is open to considering nicotine patches and breaking the habit. Patient has two children (ages 4 and 6) and balances parenting with interests in fixing computers, fishing, hiking, and camping.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- Consider nicotine patches for smoking cessation.
+- Suggest finding ways to break the smoking habit.

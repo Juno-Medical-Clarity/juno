@@ -1,0 +1,33 @@
+# SOAP Notes — Sample 0057
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough (dry) started 1-2 days ago
+- Headache (dull, achy) started 1-2 days ago, located in the front and both sides of the head, rated 4/10, slightly relieved by Tylenol
+- Feeling achy all over for 1-2 days
+- Felt feverish but did not check temperature
+- Loss of smell and taste noticed in the last day
+- Decreased appetite
+- No SOB, wheezing, chest pain, palpitations, dizziness, fainting, confusion, memory loss, neck pain, stiffness, runny/stuffy nose, sore throat, vision/hearing changes, weight loss, fatigue, rashes, changes in bowel movements, nausea, vomiting, changes in urine
+
+Past Medical History:
+- High blood pressure (on ACE inhibitor)
+- High cholesterol (on statin)
+- Immunizations up to date
+- No known allergies
+- No significant FHx of lung or heart conditions
+- SocHx: Non-smoker, occasional alcohol (1-2 glasses of wine on weekends), no recreational drugs, lives with wife and 2 sons (one son had a cough and sore throat last week, resolved), no exposure to old carpets, asbestos, mold
+
+Objective:
+- Vitals: Not mentioned
+- Physical exam: Not mentioned
+- Investigations with results: Not mentioned
+
+Assessment:
+- Likely diagnosis: Not mentioned
+- Differential diagnosis: Not mentioned
+
+Plan:
+- Investigations planned: COVID-19 swab
+- Treatment planned: Supportive care (hydration, nutrition, use of humidifier, antipyretics like Tylenol)
+- Relevant other actions: Isolate for 14 days, monitor symptoms, seek help from ER if symptoms worsen or neurological symptoms develop, follow-up if symptoms persist for a few weeks (consider antibiotics if bacterial infection suspected)

@@ -1,0 +1,26 @@
+# SOAP Notes — Sample 0471
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 49-year-old male.
+- Reports ongoing pain despite lumbar disc replacement surgery in January 2005; states "the surgery did nothing."
+- Pain is described as 75% in the butt and leg, 25% in the lower back.
+- Rates pain as a 6 out of 10 today.
+- Describes pain as shooting, sharp, and aching.
+- Symptoms are constant, but intensity varies.
+- Pain worsens with lifting, standing for long periods, and squatting.
+- Pain relief attempted with acupuncture, TENS unit, chiropractor visits, and several medications (Elavil, Topamax, Cymbalta, Neurontin, Lexapro), but reports bad side effects from some and ineffectiveness of others.
+- Had a few injections into the piriformis, which provided brief relief.
+- Had Botox procedure on March 8, 2006; reports it did nothing.
+- Attempts to increase walking lead to spasms in the lower back.
+- Reports difficulty sleeping due to pain, which affects mood.
+- Overall dissatisfaction with pain relief.
+
+Objective:
+- No measurable or observable data provided in the transcript.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided in the transcript.
+
+Plan:
+- No specific plan mentioned in the transcript.

@@ -1,0 +1,1 @@
+All isotopes that contain an odd number of protons and/or neutrons ( see Isotope ) have an intrinsic nuclear magnetic moment and angular momentum, in other words a nonzero nuclear spin, while all nuclides with even numbers of both have a total spin of zero.

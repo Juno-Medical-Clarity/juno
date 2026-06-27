@@ -1,0 +1,26 @@
+# SOAP Notes — Sample 1104
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports a right shoulder injury from a work-related incident while transferring a patient on January 1, 2002.
+- Has not been able to return to work since the injury.
+- No prior injuries to the right shoulder.
+- No other chronic health problems reported.
+- Denies experiencing fever, chills, or other illnesses.
+- Previous treatments include physical therapy and subacromial decompression in November 2002, which were not very helpful.
+- Doctor Lin suggested a possible nerve fiber injury, specifically brachial plexopathy.
+- Previous diagnoses include right superficial radial neuritis and right suprascapular neuropathy.
+- Underwent EMG testing and cervical spine MRI, which was negative for disk herniation.
+- Had suprascapular nerve decompression on December 18, 2003.
+- Received nerve blocks from Doctor Lin due to ongoing pain.
+
+Objective:
+- No measurable or observable data provided in the transcript.
+
+Assessment:
+- Right shoulder injury with a history of treatments and interventions.
+- Possible diagnoses include brachial plexopathy, right superficial radial neuritis, and right suprascapular neuropathy.
+- Ongoing pain post-surgical intervention and nerve blocks.
+
+Plan:
+- No specific plan or follow-up actions mentioned in the conversation.

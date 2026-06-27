@@ -1,0 +1,31 @@
+Patient: I think I need help.
+Doctor: I am here to help. Tell me what's going on.
+Patient: I am having mood swings, sometimes I feel super happy and sometimes I am just super sad and angry with myself. I find myself in tears thinking about things or situations which are not even real.
+Doctor: How old are you ma'am?
+Patient: I have just completed five decades of my life.
+Doctor: Did you ever try to hurt yourself?
+Patient: No, that thought never came to my mind. I just feel sad, like nobody cares if I exist. Sometimes I feel I can conquer the world and do anything I put my heart and mind into. It's just that I am not sure how will I feel after an hour.
+Doctor: How long have you had these symptoms?
+Patient: It has been going on for many months. At first, I ignored everything but now It feels like I am not myself any more with all these mood swings.
+Doctor: Do you work?
+Patient: Yes, I am a hygienist and work in a Bright Dentals.
+Doctor: How are you doing at work with your mood swings?
+Patient: Huh, my symptoms have sure started affecting my work. You know what the worst part is, my boss came to me last week and asked if I was on some kinds of drugs. I literally shouted at her saying no and left the clinic in tears. I think I need some drugs; I mean some medications to deal with my issues.
+Doctor: Have you ever been on any kind of medicine or treatment before?
+Patient: Yeah, I was on Wellbutrin before. It was prescribed by Doctor Jonah. I was eating a lot and even gained like twenty pounds in just a few months. My insurance didn't even cover it, I had to pay from my pocket.
+Doctor: Do you know what you were diagnosed with?
+Patient: It is all in these papers, I got my file with me, I just want to be normal me again.
+Doctor: Let me check and enter it in the medical record for future references. According to this, they prescribed Wellbutrin for obsessive compulsive type disorder and yes it was related to your overeating. Did it help you?
+Patient: Yes, I was doing better once I started taking that medicine regularly. I continued it even though I had to pay out of my pocket.
+Doctor: Have you ever been on antidepressants?
+Patient: No.
+Doctor: Any hot flashes or night sweat? Did you ever find yourself waking up to wet bed due to sweating?
+Patient: No.
+Doctor: Just putting together all that you have told me here. You have mood swings; you find yourself in tears without any specific reason, you are not suicidal, never been on any kind of antidepressants. Am I missing something here?
+Patient: Sometimes I really find it hard to concentrate. As a hygienist I really need to focus on the gums of the patients and cleaning but sometimes it gets hard to focus. Normally, at work I just stop when it gets hard to focus and take a walk around the clinic. It has started affecting my work. I need help!
+Doctor: Okay, I understand. Anything else that I should be aware of?
+Patient: Oh yeah, the insomnia, I am hardly sleeping. At times I feel like a zombie.
+Doctor: Any surgeries in the past?
+Patient: Yeah, I had some complications and they had to remove my complete uterus along with tubes and ovaries.
+Doctor: Oh! When was this?
+Patient: In the December of two thousand and three.

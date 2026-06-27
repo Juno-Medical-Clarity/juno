@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:5] 'medical-jargon-google-easy' -> 'Genome - wide association studies'
+  [6:7] 'abbr-medical' -> 'GWAS'
+  [11:12] 'general-medical-multisense' -> 'loci'

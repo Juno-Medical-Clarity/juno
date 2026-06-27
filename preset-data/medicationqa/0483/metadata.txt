@@ -1,0 +1,5 @@
+drug_focus: prevnar
+question_type: Indication
+section_title: Pneumococcal Vaccination
+source_url: https://www.cdc.gov/pneumococcal/vaccination.html
+sample_id: 0483

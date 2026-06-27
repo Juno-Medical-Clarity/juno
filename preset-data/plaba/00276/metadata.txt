@@ -1,0 +1,5 @@
+pmid:        26877139
+question:    22
+adaptation:  adaptation1
+title:       Mechanisms of pulmonary cyst pathogenesis in Birt-Hogg-Dube syndrome: The stretch hypothesis
+sentences:   12

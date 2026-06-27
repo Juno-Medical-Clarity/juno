@@ -1,0 +1,1 @@
+We adapted the package for use in one of four topics: diabetes control, blood pressure control, stroke prevention and' risky prescribing' (to reduce particular combinations of medicines that may cause harm).

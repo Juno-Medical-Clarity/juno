@@ -1,0 +1,186 @@
+# Smith Collection Transcript: RES0209
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: So what brings you in
+
+Patient: OK im so i have been coughing a lot over the past week or so and its been pretty dry but ive been coughing like almost nonstop throughout the day and im feeling very short of breath and my bronchodilator helps but i found im using it a lot now
+
+Doctor: OK how long have you know that you have asthma for
+
+Patient: I was diagnosed when i was eight
+
+Doctor: Youre 10 now
+
+Patient: Thats right
+
+Doctor: So youre using your bronchodilator more this is the one that you use kind of as needed
+
+Patient: Yeah
+
+Doctor: OK and then do you have one that you take every day no matter what
+
+Patient: Uhm no i dont have that one
+
+Doctor: OK you just have the one that you take is needed do you take any other medications
+
+Patient: uh no i dont take anything else
+
+Doctor: Just the one is it a its a puffer
+
+Patient: Yes
+
+Doctor: OK and youre using it more than normal so how often were you normally using it
+
+Patient: um i was only using it like i dont know maybe once every two weeks or so not very often but now im using it like almost everyday like five six times a week
+
+Doctor: OK any are you does it usually turned out that you need it like during certain times like say when youre exercising or when its cold
+
+Patient: um i find i use it more both like when it when its right after i like run around after gym during recess um and yeah the cold also makes it worse
+
+Doctor: OK any other triggers that you can think of
+
+Patient: No no other triggers
+
+Doctor: Normally get more in certain seasons
+
+Patient: I i guess no no big changes there i find the cold air makes it worse like winter makes it worse or like yeah maybe also the spring spring with like pollen and stuff like that
+
+Doctor: OK so you have allergies too
+
+Patient: I think so i havent ever been like formally diagnosed
+
+Doctor: OK i see i see yeah that would make sense no ok uh so you say youve had more coughing lately is that right you said the last two weeks
+
+Patient: Or the last week
+
+Doctor: Last two weeks
+
+Patient: Last two weeks is your cough and a dry cough
+
+Doctor: Yeah
+
+Patient: Have you been bringing up gunk ok dry cough have you noticed any wheezing
+
+Doctor: Oh yeah ive been wheezing a lot actually
+
+Patient: OK uh and thats uh do you use your bronchodilator every time that youre wheezing
+
+Doctor: When it gets really bad like when i get so easy that i find it hard to breathe
+
+Patient: OK so youre getting wheezy even more times than then youre having to use your bronchodilator
+
+Doctor: Yes thats right
+
+Patient: OK are you having any symptoms at night time
+
+Doctor: Yeah how they dont happen as much as my daytime symptoms but i been having it maybe like every other day or like you know every two days or so
+
+Patient: OK and when you have these so when you have these episodes youre copping your wheezy do you feel like youre having a hard time breathing
+
+Doctor: Yep thats right
+
+Patient: Do you feel it gets tight in your chest
+
+Doctor: Yes
+
+Patient: OK ok have you had any any colds lately or any infections
+
+Doctor: um no no nothing like that
+
+Patient: K does anyone that lives with you or anyone that youre around often has anyone been sick
+
+Doctor: No
+
+Patient: OK could you have been in contact with anyone that sick even outside of your house
+
+Doctor: No
+
+Patient: OK have you traveled anywhere
+
+Doctor: uh no
+
+Patient: Have you lost any of your sense of taste or smell
+
+Doctor: No
+
+Patient: Have you had any fevers
+
+Doctor: uh no
+
+Patient: OK any any nausea or vomiting
+
+Doctor: No
+
+Patient: Any belly pain
+
+Doctor: No
+
+Patient: We just ask those questions because sometimes these things can happen with an infection or after an infection and we just want to make sure that thats not you know whats happening right now we probably will do a covid swab just because of the times that were living in right now but i just want to ask you a few more questions before i go talk to the doctor so do you have besides your asthma do you have any health problems
+
+Doctor: Oh no no no
+
+Patient: OK and you said besides the bronchodilator youre not taking any medications
+
+Doctor: No
+
+Patient: And you think you might have allergies in the spring do you have allergies to anything else that you know
+
+Doctor: uh no not that i know of
+
+Patient: OK does anyone else in your family have asthma
+
+Doctor: I think my sister has asthma too
+
+Patient: Anyone in your family have any other breathing problems
+
+Doctor: No
+
+Patient: Anyone else in the family have any allergies
+
+Doctor: uh no i dont think so
+
+Patient: OK ok sounds good and you live at home did you say live with your parents and your sister
+
+Doctor: Yep thats right
+
+Patient: Cool are you currently going to school online or in person
+
+Doctor: uh both we do half days
+
+Patient: OK how are you finding that
+
+Doctor: Yeah its been ok its its different but its been working out ok so far
+
+Patient: Cool not to have to get out of your pjs some days
+
+Doctor: Yes thats true
+
+Patient: OK did do you guys have any pets in the home
+
+Doctor: No pets we have just like well i guess we have goldfish
+
+Patient: Oh ok those are cool pets does anyone in the house smoke
+
+Doctor: No
+
+Patient: OK ok i think thats all my questions that i had for you today what do you like to do for fun
+
+Doctor: Oh im i like playing games online with my friends and and before covid we used to get together and have movie nights and play sports together
+
+Patient: It sounds really cool hopefully we can get this figured out for you so you dont have any you dont have to use your your medications every time you play sports cause thats no fun and
+
+Doctor: No
+
+Patient: You should be able to enjoy that so so were going to try to get this sorted out for you im gonna go talk to the doctor and tell him everything or her everything that you said and yeah we’ll come back and see you shortly hopefully maybe all you need is a little change to your medications and maybe it will be better be able to better control your asthma
+
+Doctor: Yeah that sounds great thank you
+
+Patient: Thanks talking with me and well see you soon
+
+Doctor: OK great thanks

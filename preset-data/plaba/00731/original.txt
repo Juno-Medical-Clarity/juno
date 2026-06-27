@@ -1,0 +1,13 @@
+Estimates of COVID-19 mRNA vaccine effectiveness (VE) have declined in recent months because of waning vaccine induced immunity over time, possible increased immune evasion by SARS-CoV-2 variants, or a combination of these and other factors.
+CDC recommends that all persons aged â‰¥12 years receive a third dose (booster) of an mRNA vaccine â‰¥5 months after receipt of the second mRNA vaccine dose and that immunocompromised individuals receive a third primary dose.
+A third dose of BNT162b2 (Pfizer-BioNTech) COVID-19 vaccine increases neutralizing antibody levels, and three recent studies from Israel have shown improved effectiveness of a third dose in preventing COVID-19 associated with infections with the SARS-CoV-2 B.1.617.2 (Delta) variant.
+Yet, data are limited on the real-world effectiveness of third doses of COVID-19 mRNA vaccine in the United States, especially since the SARS-CoV-2 B.1.1.529 (Omicron) variant became predominant in mid-December 2021.
+The VISION Network examined VE by analyzing 222,772 encounters from 383 emergency departments (EDs) and urgent care (UC) clinics and 87,904 hospitalizations from 259 hospitals among adults aged â‰¥18 years across 10 states from August 26, 2021 to January 5, 2022.
+Analyses were stratified by the period before and after the Omicron variant became the predominant strain (>50% of sequenced viruses) at each study site.
+During the period of Delta predominance across study sites in the United States (August-mid-December 2021), VE against laboratory-confirmed COVID-19-associated ED and UC encounters was 86% 14-179 days after dose 2, 76% â‰¥180 days after dose 2, and 94% â‰¥14 days after dose 3.
+Estimates of VE for the same intervals after vaccination during Omicron variant predominance were 52%, 38%, and 82%, respectively.
+During the period of Delta variant predominance, VE against laboratory-confirmed COVID-19-associated hospitalizations was 90% 14-179 days after dose 2, 81% â‰¥180 days after dose 2, and 94% â‰¥14 days after dose 3.
+During Omicron variant predominance, VE estimates for the same intervals after vaccination were 81%, 57%, and 90%, respectively.
+The highest estimates of VE against COVID-19-associated ED and UC encounters or hospitalizations during both Delta- and Omicron-predominant periods were among adults who received a third dose of mRNA vaccine.
+All unvaccinated persons should get vaccinated as soon as possible.
+All adults who have received mRNA vaccines during their primary COVID-19 vaccination series should receive a third dose when eligible, and eligible persons should stay up to date with COVID-19 vaccinations.

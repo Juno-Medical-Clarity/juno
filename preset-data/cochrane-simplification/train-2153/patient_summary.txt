@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2153  |  gem_id: gem-cochrane-simplification-train-2154  |  doi: 10.1002/14651858.CD001820.pub3
+
+This review included 29 studies involving 23019 participants. When we compared the effects of dipyridamole (alone or together with aspirin) with aspirin alone there was no evidence of an effect on death from vascular causes. When we compared the effects on the occurrence of vascular events (strokes, heart attacks, and deaths from vascular diseases) the combination of aspirin and dipyridamole had an advantage over aspirin alone. This result holds particularly true for patients with ischaemic stroke.

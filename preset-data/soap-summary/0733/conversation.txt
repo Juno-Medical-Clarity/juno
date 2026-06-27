@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0733
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How often are you vomiting? At least three times until my stomach is empty. Can you think of something this is related to? Just when I eat raw carrots and celery. Do you get belly pain? Yes.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3549  |  gem_id: gem-cochrane-simplification-train-3550  |  doi: 10.1002/14651858.CD006758.pub2
+
+We found one trial comparing albumin to normal saline; no trials were found comparing albumin to other fluids used to treat hypotension. This trial showed no difference between albumin and normal saline in all outcomes except for the amount of additional saline given, which was less in the group treated with albumin. We concluded that normal saline should be the first choice for treating IDH.

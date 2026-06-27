@@ -1,0 +1,7 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [1:9] 'general-complex' -> 'two - armed pilot cluster randomised controlled trial'

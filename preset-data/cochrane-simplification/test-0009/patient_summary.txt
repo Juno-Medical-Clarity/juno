@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0009  |  gem_id: gem-cochrane-simplification-test-10  |  doi: 10.1002/14651858.CD001833.pub3
+
+The number of participants in these three trials was small and is a limitation of this review. The quality of the included studies varied, which also limits confidence in the results. There have been no trials of this type undertaken in adults, and none of the trials commented on adverse events following immunisation, such as fever or injection site reactions.

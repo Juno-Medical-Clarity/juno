@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0430  |  gem_id: gem-cochrane-simplification-train-431  |  doi: 10.1002/14651858.CD005148.pub2
+
+In this review we are able to show that small weight loss is possible with selective pharmacological or non-pharmacological interventions but it is difficult to be sure of the results because the studies were small and compared different interventions over different time periods.

@@ -1,0 +1,32 @@
+Doctor: Good morning, ma'am. Can you confirm your age for me, please?
+Patient: Good morning, I'm sixty five years old, doctor.
+Doctor: How are you recovering from your operation?
+Patient: I'm doing okay. Can you remind me what operation I had?
+Doctor: Um, we did a left upper lobectomy for your stage I A non small cell lung cancer.
+Patient: Thank you, doctor.
+Doctor: Absolutely, do you have the results of your pelvic C T?
+Patient: Yes, I have the report right here.
+Doctor: Thank you, so this shows an enlarging simple cyst of the left kidney.
+Patient: What can we do about this?
+Doctor: Well, that's why we did the barium swallow, which showed a small hiatal hernia with minimal reflux.
+Patient: Oh, yeah, I remember that.
+Doctor: So, I have your x rays from November twenty third two thousand nine here, we did an A P and lateral view, and they're normal.
+Patient: Oh, well that's good too.
+Doctor: Are you having any pain with swallowing food?
+Patient: Yes, I get some chest pain, but I'd say it's pretty mild. Look at my calf, doctor, it's much bigger than the right one.
+Doctor: Chest pain is probably due to tertiary contractions with some delayed emptying. Is it tender?
+Patient: No, there's no real tenderness.
+Doctor: How long has this calf been enlarged?
+Patient: Um, it's been several months at this point.
+Doctor: Have you ever had D V T?
+Patient: Yes, um, in nineteen seventy five, and in nineteen eighty five.
+Doctor: Are you having any abnormal weight loss?
+Patient: No, everything is normal there, and I'm eating normally.
+Doctor: What about any cold or flu symptoms? Any fever or chills?
+Patient: No, that's all fine too.
+Doctor: Any new aches or pains?
+Patient: No, all my muscles feel pretty good.
+Doctor: Have you had a cough, or coughed up any blood.
+Patient: That's a negative, doctor.
+Doctor: What about shortness of breath while at rest or difficulty breathing with exercise?
+Patient: No, that's normal too. I'm breathing just fine.

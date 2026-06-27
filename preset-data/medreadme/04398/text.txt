@@ -1,0 +1,1 @@
+Then, the algorithm infers the SOZ from the estimated graph using a variant of the PageRank algorithm followed by a novel post-processing phase.

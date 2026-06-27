@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1117
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you married? Yes. I am happily living together with my husband and my four kids. Oh, do you smoke? Nope. What about alcohol or any other kind of drug use? Nope.

@@ -1,0 +1,152 @@
+# Smith Collection Transcript: RES0158
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: Ive had uh a new cough that started um this week its been going on the last like three or four days and um ive had a headache and um but yesterday i just noticed that i havent been able to to smell so i wanted to come in this morning
+
+Doctor: OK yeah so its been going on for the last uh four days is it kind of like a dry cough or a wet cough
+
+Patient: Its dry
+
+Doctor: Its dry ok are you at all bringing up any kind of sputum or blood at all
+
+Patient: No i havent been
+
+Doctor: OK and um have you been experiencing any kind of uh fevers or chills
+
+Patient: Yeah i feel uh i have felt feverish uh and i think that yeah thats kind of started uh like within the last day
+
+Doctor: OK and did you um get a temperature at all
+
+Patient: No ive just been really feeling yeah feverish and feeling really hot
+
+Doctor: OK and um besides the um cough are you having any other symptoms like muscle aches or headaches
+
+Patient: uh yeah ive been having a headache like i dont know on and off for this past three or four days as well and i have had muscle aches my whole body kind of aches
+
+Doctor: OK um and when did this start
+
+Patient: Thats been over the past um like 3 days or so yeah i woke up and ive just been feeling uh yeah achy and just not feeling good
+
+Doctor: OK yeah so it all just kind of started in the last four days uh are you having any kind of fainting or dizziness episodes at all
+
+Patient: uh no i havent had anything like that
+
+Doctor: OK and any uh are your symptoms getting worse at all
+
+Patient: No they well i initially they did but um theyve kind of stayed the same
+
+Doctor: OK and have you had any loss of sense of taste or smell
+
+Patient: Yeah i had i have ive had a loss of um smell and taste now that you mention it yeah
+
+Doctor: And when did that happen
+
+Patient: um within the last uh two days
+
+Doctor: OK and are you having any runny nose congestion sore throat any of those symptoms
+
+Patient: uh no not really nothing like that
+
+Doctor: OK have you traveled at all recently
+
+Patient: No i i havent traveled um havent traveled anywhere but i ive just been going to work and and being at at home
+
+Doctor: OK and um where do you go for work
+
+Patient: um im a nurse actually at the at a um a walk in clinic
+
+Doctor: OK and have you uh at all been exposed to anyone whos been sick uh anyone who has tested positive for covid
+
+Patient: uh no nobody that im aware of thats thats tested positive but there has been people uh recently um that within the past week that weve seen come in with with cough and um things like like that so
+
+Doctor: OK um are you having any nausea or vomiting
+
+Patient: um no i havent had anything like that
+
+Doctor: OK any um night sweats
+
+Patient: No
+
+Doctor: Any chest pain or shortness of breath
+
+Patient: No
+
+Doctor: OK any changes in your bowel movements any diarrhea constipation
+
+Patient: No
+
+Doctor: Any um changes in your urination
+
+Patient: No nothing like that
+
+Doctor: um no burning sensation or pain at all
+
+Patient: No nothing like that
+
+Doctor: OK any changes in your sleep or appetite recently
+
+Patient: uh yeah just these past couple of days i havent really felt like eating much um my sleep has been ok but i think thats just because i havent been feeling well so just havent really wanted to eat
+
+Doctor: OK any weight changes recently
+
+Patient: No i i wish
+
+Doctor: OK and have you been diagnosed with any medical conditions in the past at all
+
+Patient: No ive been ive been ive been healthy
+
+Doctor: OK and do you take any medications on a regular basis
+
+Patient: um just the uh the multi vitamin and then a like a greens supplement
+
+Doctor: A green green supplement
+
+Patient: Yeah its just sort of like a like a green um powder its supposed to replace uh i dont know one of your servings of vegetables for the day
+
+Doctor: OK um and have you been hospitalized or had any surgeries in the past
+
+Patient: I i had like a scope on my knee when i was um like a teenager i injured it playing soccer but thats it
+
+Doctor: OK any family history of any heart or lung conditions
+
+Patient: um my my grandfather had had lung cancer um but he smoked his whole life
+
+Doctor: OK um and currently so you work as a nurse uh whats your living situation like do you live with anyone do you live in house or apartment
+
+Patient: Yeah so i live in a house with my wife um we we have a a young um a daughter
+
+Doctor: OK has anyone in the house had similar symptoms or been feeling sick lately
+
+Patient: No its just been me yeah my wife and daughter have been both uh staying home ive been the one only one really kind of leaving the house for well going to work and then uh getting most of the groceries and that that sort of thing since im already out
+
+Doctor: OK ok and currently do you smoke at all
+
+Patient: uh no cigarettes um well i uh smoke weed every once in awhile
+
+Doctor: OK and how often would you say you smoke weed
+
+Patient: uh probably like uh probably once a week just yeah just on the weekend maybe once
+
+Doctor: OK and uh do you drink alcohol
+
+Patient: um i had some like a couple of beers on the weekend like one or two
+
+Doctor: OK um ok so those are all the questions i had for you today do you have any questions or concerns
+
+Patient: um just a bit concerned possibly about uh covid
+
+Doctor: OK yeah so thats definitely uh with you working in the in the hospital clinical setting um there is definitely a possibility and a lot of the symptoms that youre having overlap with covid symptoms uh so we will definitely get a covid swab test done for you today it usually comes back in the next 24 to 48 hours and until then uh i would recommend that you isolate either in a room separately wear a mask around your family members um isolate to the best of your abilities not go outside see if someone else can get groceries for you guys uh as well and then um depending on the test public health will contact you with further instructions
+
+Patient: OK yeah that sounds good thank you
+
+Doctor: Youre welcome take care
+
+Patient: Take care

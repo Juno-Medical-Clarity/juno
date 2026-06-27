@@ -1,0 +1,254 @@
+# Smith Collection Transcript: CAR0003
+# Category: CAR (Cardiac)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Yeah ive just been feeling breathless and its getting worse so i wanted to check it out
+
+Doctor: OK and when did you first start feeling breathless
+
+Patient: About two months ago
+
+Doctor: OK and did it come on about like gradually through time or suddenly just happened
+
+Patient: I guess gradually yeah
+
+Doctor: OK and do you feel uh how often do you feel breathless
+
+Patient: Id say its worse when i when i walk more than 50 meters thats kind of the main like thats kind of the main trigger just exertion
+
+Doctor: OK and were you able to walk normally more than 50 meters before two months
+
+Patient: Yeah three months ago i was fine
+
+Doctor: OK and do you have any other symptoms like cough or chest pain
+
+Patient: I have a cough sometimes yeah
+
+Doctor: OK but nothing like constant
+
+Patient: No
+
+Doctor: OK and do you have any wet cough or any productive cough or are you producing like sputum or phlegm
+
+Patient: Yeah i guess id say i have this frothy sputum
+
+Doctor: OK and has your breathlessness been getting any worse at all over the last two months
+
+Patient: I would say so yes
+
+Doctor: OK and you mentioned like exertion makes it worse but anything else like going outside or exposure to any chemicals that makes it worse
+
+Patient: uh i dont think so
+
+Doctor: OK and how about a positional changes does lying flat at all make it worse
+
+Patient: I would say so yes yeah im basically gasping for air when i lay down
+
+Doctor: OK and do you ever find yourself waking up at night in the middle of the night to catch your breath
+
+Patient: No
+
+Doctor: No ok and when do you feel the breathlessness the most is it more so during the day or at night
+
+Patient: I guess its worse at night because im laying down
+
+Doctor: OK great and in terms of how many flights of stairs you can climb before you start feeling breathless do you have a number
+
+Patient: I would say like 34
+
+Doctor: Three or four steps ok and was there anything new that happened in your life recently any new medical diagnosis recently or any travel that happened before you started having these symptoms
+
+Patient: No nothing like that
+
+Doctor: OK and prior to two months have you ever had any similar experiences
+
+Patient: Prior to 2 months no
+
+Doctor: OK and does anything make it better like any positional changes makes the breathlessness go away
+
+Patient: I guess when i im not laying down or when im laying down i try to add pillows stack pillows so that it gets better
+
+Doctor: OK and are you having any other symptoms like sore throat runny nose chest pain dizziness anything like that
+
+Patient: No
+
+Doctor: OK have you recently traveled outside of the country
+
+Patient: No
+
+Doctor: Have you recently had any surgeries
+
+Patient: No recent surgeries no
+
+Doctor: OK any headache nausea or vomiting
+
+Patient: um no
+
+Doctor: OK any fevers or chills or night sweats
+
+Patient: No
+
+Doctor: OK do you feel increasingly fatigued throughout the day
+
+Patient: uh i would say so yeah
+
+Doctor: OK and any changes in your bowel movements at all
+
+Patient: No
+
+Doctor: OK and any chest pain at all within the last two months
+
+Patient: No no chest pain
+
+Doctor: OK any swelling in your in your legs ankles or in your hands and arms
+
+Patient: There is some swelling
+
+Doctor: OK and uh where do you where are you getting this swelling
+
+Patient: Around my legs
+
+Doctor: OK and how when did you first notice this
+
+Patient: Around the same time actually two months ago
+
+Doctor: OK have you noticed any kind of fevers at all
+
+Patient: No
+
+Doctor: OK have you been in contact with anyone that has been ill recently
+
+Patient: No no
+
+Doctor: OK and have you been coughing up any blood at all
+
+Patient: No
+
+Doctor: OK any weight loss
+
+Patient: No
+
+Doctor: Any night sweats or chills
+
+Patient: No
+
+Doctor: OK apart from the breathlessness when laying down any other issues with your sleep
+
+Patient: No
+
+Doctor: Any changes in your appetite
+
+Patient: Nope
+
+Doctor: OK have you had any recent infections like a cold at all
+
+Patient: No
+
+Doctor: OK any exposure to tuberculosis in the past
+
+Patient: Not that i know of
+
+Doctor: OK any exposure to fumes or dust within your home or work environment
+
+Patient: No
+
+Doctor: OK any animals or pets in the house
+
+Patient: No no
+
+Doctor: OK and in terms of your past medical history has anyone told you that you have anything like copor any cardiovascular issues like high blood pressure cholesterol
+
+Patient: um so yeah so i have high blood pressure diabetes and high cholesterol
+
+Doctor: OK and do you take any medications for this
+
+Patient: Yep so i take aspirin ramipril and simvastatin
+
+Doctor: OK and have you ever had any chest pain or heart attack in the past
+
+Patient: Yeah actually i had a heart attack four years ago
+
+Doctor: OK and do you remember what they did for your heart attack
+
+Patient: Something like a stent or something
+
+Doctor: OK and since then youve been on these medications
+
+Patient: Yes
+
+Doctor: OK and after they managed your heart attack have you ever had similar symptoms to when you had your heart attack
+
+Patient: No no
+
+Doctor: Nothing like that ok do you have any allergies to any medications
+
+Patient: No
+
+Doctor: Any environmental allergies
+
+Patient: No
+
+Doctor: OK and have you previously had any surgeries in the past
+
+Patient: um i guess the stenting
+
+Doctor: Just the stenting and apart from that have you had any other previous hospitalizations
+
+Patient: No
+
+Doctor: OK and any family history of any cancers or heart attacks
+
+Patient: um my father died of a heart attack when he was 60
+
+Doctor: OK and currently do you work at all
+
+Patient: I do um i work as a cashier
+
+Doctor: OK and has the shortness of breath been affecting your daily routine at home or at work at all
+
+Patient: Yeah i would say so its been hard to make it to work and then standing around all day or if i have to go help out with something and exert myself too much i get short of breath
+
+Doctor: OK and at home do you currently live with anyone or do you live by yourself
+
+Patient: I live by myself
+
+Doctor: OK and do you live in an apartment or house
+
+Patient: I live in an apartment
+
+Doctor: OK and are there any exposures like dust or mold or asbestos in your home environment
+
+Patient: No
+
+Doctor: OK and currently do you smoke
+
+Patient: Not right now i used to smoke i used to smoke 10 a day for like 40 years
+
+Doctor: OK and do you use any recreational drugs like marijuana
+
+Patient: No
+
+Doctor: OK any alcohol
+
+Patient: No
+
+Doctor: OK and in terms of your daily routine do you feel that you get 3 meals a day a well balanced diet
+
+Patient: I wouldnt say well balanced im trying to eat healthier but doesnt always happen
+
+Doctor: OK and how about exercise do you find that your exercise levels or activity levels have gone down in the last two months
+
+Patient: Yes
+
+Doctor: OK alright is there any other questions or concerns that you have or something i may have missed to ask you today
+
+Patient: No i dont think so
+
+Doctor: OK so based on what we talked about from your swelling as well as breathlessness while laying down and your past history of a heart attack and high cholesterol it may be likely with the medications you are on as well as your history that you might be having whats called congestive heart failure so we will need to do further investigations to determine if that is what it is and if we need to get you on something like lasix or a diuretic to get rid of some of the fluid thats building up in your body which may be caused by heart failure so well do some investigations and then go from there

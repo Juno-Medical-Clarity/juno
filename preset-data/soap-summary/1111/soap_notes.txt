@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 1111
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Palpitations, feeling weak.
+- Severity: Palpitations described as intense ("felt like my heart will explode"), weakness present.
+- Duration: Symptoms started this afternoon.
+- Associated symptoms: None explicitly mentioned.
+- Relevant medical history: Patient has a history of high blood pressure; family member (mother) has stopped taking medications and has high blood pressure.
+- Family history: Mother has high blood pressure and a history of drinking and smoking.
+- Allergies: None mentioned.
+- Other concerns: Patient expresses concern about withdrawal symptoms and acknowledges drinking alcohol (4-5 glasses of wine daily).
+
+Objective:
+- Blood pressure: 195/83 mmHg.
+- Heart rate: 121 bpm (initially), decreased to 70 bpm after treatment.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided in the conversation.
+
+Plan:
+- Administered IV Metoprolol to help reduce heart rate.
+- Prescribed 5 mg of Metoprolol.
+- Advised the patient to cut down on alcohol consumption.

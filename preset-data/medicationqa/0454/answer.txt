@@ -1,0 +1,1 @@
+Based on TDF patch strength, calculate oral morphine equivalent (or other opioid equivalent). If converting to oral morphine, use the 2 mg oral morphine/day ~ 1 mcg/h TDF rule

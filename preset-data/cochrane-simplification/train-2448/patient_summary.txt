@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2448  |  gem_id: gem-cochrane-simplification-train-2449  |  doi: 10.1002/14651858.CD007557.pub3
+
+The evidence gathered in this review was considered of low quality. We downgraded the quality of the evidence because we had concerns about the risk of bias in the included studies and imprecision of the results. It was possible that patient prognosis or clinicians' preferences influenced the allocation of participants to receive one or another medication. This process should be implemented by chance to allow a fair comparison between the therapies. We were not confident that staff implementing the trials were not aware of which treatment participants were receiving, and it was possible that the incomplete reporting of data could have affected the estimates. The detection of HIT throughout the trials was also problematic, and we were not confident that it was performed adequately. The results may be correct, but they may be changed by future research.

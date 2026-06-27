@@ -1,0 +1,217 @@
+# PriMock57 Consultation Transcript: day5_consultation06
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Patient: Hello?
+
+Doctor: Hi there, it's Doctor Smith from Babylon.
+
+Patient: Uh, hi, Doctor Smith.
+
+Doctor: Hi there. Could you give me your full name, date of birth, and your, the first line of your address, please?
+
+Patient: Um, I.
+
+Doctor: [unintelligible]
+
+Patient: [unintelligible]
+
+Doctor: [unintelligible] Your full name, date of birth, and your address, please? Yeah, OK.
+
+Patient: Yeah, my name is Barbara [unintelligible]. Um, and my date of birth, fourth October, nineteen eighty four.
+
+Doctor: OK.
+
+Patient: And address fifty [unintelligible] Avenue.
+
+Doctor: OK. Are you in a private place so you can have a confidential consultation today?
+
+Patient: Yes, I am.
+
+Doctor: What can I do for you?
+
+Patient: Um, I've just been [unintelligible] for the past couple of days. I've been having this serious diarrhoea and this really, Giving me trouble.
+
+Doctor: OK. So when did it start?
+
+Patient: It was three days ago. Now.
+
+Doctor: OK. And when you say diarrhoea, what do you mean by that? Is it watery or just loose?
+
+Patient: It's, it's, it's very loose but it started as being very watery.
+
+Doctor: OK. And how many times are you going to the toilet?
+
+Patient: [unintelligible] I lost count, um. Today alone, I've been at least four time.
+
+Doctor: OK. And any, any high temperatures? Are you feeling feverish?
+
+Patient: Yes, I've been running a serious temperature. I'm literally boiling.
+
+Doctor: Have you checked your temperature with a thermometer?
+
+Patient: No, 'cause I've not got one but like, to the touch, I'm, like, literally roasting.
+
+Doctor: OK. Um, and any nausea or vomiting?
+
+Patient: Yes, I've been throwing up. I can't keep to, uh, I can't seem to be able to keep anything in me. Not even water, not even my tea, not even any liquid stuff. I've just been throwing up everything.
+
+Doctor: OK. And when, when were you last sick?
+
+Patient: Um, I was sick just after trying, uh, trying to have breakfast this morning, so maybe about two hours ago.
+
+Doctor: OK. And have you been passing water OK?
+
+Patient: Yeah, I've been, I've been, yeah, urinating OK. Is that what you mean, like?
+
+Doctor: Yeah, yeah, urinating, yeah. Any, and what sort of color is the urine?
+
+Patient: To be honest, I [unintelligible] have a look so I really couldn't say.
+
+Doctor: OK. OK. And when did you last pass urine, do you think?
+
+Patient: Um. [unintelligible] an hour ago.
+
+Doctor: OK. And any blood in the stool or in the urine that you've noticed?
+
+Patient: No blood.
+
+Doctor: OK. Any episodes like this before? How's your bowels normally?
+
+Patient: Sorry, I didn't catch that.
+
+Doctor: How is your bowels normally?
+
+Patient: Ah, ah, my, my bowels is normally fine. I would normally go to the toilet every day. You know, in the morning, just once, yeah, and that's fine.
+
+Doctor: OK. Any episodes of diarrhoea or constipation normally?
+
+Patient: No.
+
+Doctor: And [unintelligible] is there anything you think might have triggered this off? Have you been abroad anywhere?
+
+Patient: No, but then, um, my, um my brother, um, has actually been having similar symptoms, um, for the past, um, few days as well, and he does say like everyone in school's got this so, I, I don't know, that might, that might be something.
+
+Doctor: So you've been in contact with him, have you?
+
+Patient: Yes.
+
+Doctor: OK. Um, and any other medical problems?
+
+Patient: [unintelligible]
+
+Doctor: Have you had any other symptoms at the moment, like rash?
+
+Patient: No, no rash, no, nothing that, um.
+
+Doctor: No. OK. Um, any surgery before, or abdominal problems, or any other medical issues?
+
+Patient: Well, apart from the fact that this one is giving me abdominal pains, no previous abdominal pains before. Obviously I get the odd, um, you know, menstrual cramps and all that but, you know, that's, you know, that comes and goes.
+
+Doctor: Yeah. OK. And whereabouts is the pain that you're getting?
+
+Patient: Um, it's kind of like towards my navel area, like I can't touch my navel area. It's just so sore. And it gets, yeah, it's almost like the center of my navel.
+
+Doctor: [unintelligible] Um, and does the pain come and go?
+
+Patient: Yes, it does come. When it comes, I feel this strong urge to go to the, to the loo, and then [unintelligible] and sort of like comes again, it comes and.
+
+Doctor: OK. Um, and do you take any medication regularly?
+
+Patient: Well, I, I take my, my vitamins, [unintelligible] vitamin D, every day. That's about, that's about all that I regularly take.
+
+Doctor: OK. And have you got a normal diet?
+
+Patient: Yeah, [unintelligible] I eat well, normally.
+
+Doctor: Right. Do you smoke or drink alcohol?
+
+Patient: Well, I don't smoke, but, you know, I have a pint from time to time.
+
+Doctor: And do you take any other drugs?
+
+Patient: No. Like I said, I only take, um, vitamins. And for my menstrual cramps, when they come, maybe I might take a, a, an ibuprofen just to ease the pain, but.
+
+Doctor: And when was, when was your last period?
+
+Patient: Um, two weeks ago.
+
+Doctor: OK. Are you on any contraception?
+
+Patient: No.
+
+Doctor: Are you having regular sexual intercourse?
+
+Patient: No.
+
+Doctor: OK. Um, and what's your job?
+
+Patient: Um, um, uh. Um, uh. A graphics designer.
+
+Doctor: Have you had to miss work because of this problem?
+
+Patient: Well, yes, I've had to actually work from home today. I'm working from home today because I can't, I can't be out for work. [unintelligible]
+
+Doctor: OK. [unintelligible] And who do you live with at home?
+
+Patient: I live with my brother and my mum.
+
+Doctor: OK. OK. And, um, have you tried anything yourself for this problem?
+
+Patient: Well, I've tried a home remedy. Um, I've tried the, the, uh, ORS, you know, thing I bought from my, my local, my local, uh. Um.
+
+Doctor: What? Could you just repeat that?
+
+Patient: The ORS, the, the salt sugar ORS, um, um, mix, the salt sugar mix.
+
+Doctor: OK. And how often have you been taking that?
+
+Patient: Yeah. I've taken that, I've taken that, like, um, three times a day for the past two days.
+
+Doctor: OK. Um, and do you feel like your symptoms are easing off, or getting worse, or [unintelligible] ?
+
+Patient: [unintelligible] I, I, I they're not getting any better, 'cause like I said, I've been, I've been vomiting literally everything I take, so, so I doubt that even that had, had the chance to work.
+
+Doctor: Yeah. OK. Um. I mean, it sounds like, because your brother's had a similar thing, it sounds like it might be some, an infectious gastroenteritis that you've got, which is usually caused by a virus. But, it can be from something you've eaten, as well. Um. If the symptoms, they do normally start to settle by themselves with the oral rehydration salts. Um, if the symptoms are continuing to get worse, the key thing is that we want to make sure that you're hydrated enough. Um, sometimes you do require certain medication to help this, if it's, sometimes if it's caused by a bacteria. Um, what I would say, probably worth as it's been going on for a few days and you feel like it's not starting to ease off. I think it's probably important to get a sample of the stool, so we can make sure that you haven't got a nasty bacterial infection which needs specific treatment.
+
+Patient: OK.
+
+Doctor: Um, and we should also check that you're not getting dehydrated, because if you're, if you're not keeping fluid down, then you can get dehydrated. Um, so.
+
+Patient: So, how, how do I, how do I get myself hydrated when I'm not able to even, like, drink water? I'm throwing up everything.
+
+Doctor: Yeah. So you need to carry on with your rehydration salts, and just have very small amounts. It's a positive sign that you passed urine an hour ago. So, you're obviously still, um, hydrated enough to pass urine.
+
+Patient: OK.
+
+Doctor: But we, um, we should see you so that we can check your hydration and, um, get that sample sent off as soon as possible. 'cause if, if, if you come into the clinic, you can send that sample off straightaway. Otherwise, we would have to post it out to you which would take time.
+
+Patient: OK. Ohh, OK. So, when can I come to the clinic to have this done?
+
+Doctor: Um, so we can, we can make you an urgent appointment, um, and then you can, you can get the sample sent off and we can check your hydration. Um, but if, in the meantime, you're feeling more unwell, then we would get you seen urgently in A and E.
+
+Patient: OK.
+
+Doctor: So you can call us back in the meantime.
+
+Patient: OK. So, what I'll do is, yeah. If you could, please book me the appointment and, um, yeah, I'll see how I feel, um, for the end of the day. Hopefully I don't need to go to the A and E, and, um [unintelligible] .
+
+Doctor: Yeah. If you keep drinking, keep going with the rehydration salts. Just tiny sips constantly, to [unintelligible] so that your stomach doesn't get overfilled and, and you vomit, so just tiny, tiny sips but just keep going with it. Um, and just have very simple food, if you're gonna have anything, like toast or biscuit or something really light like that. Avoid, um, fruit, vegetables, uh, milk, anything like that, which might just make it worse.
+
+Patient: Mm-hmm. OK.
+
+Doctor: OK. So you'll have to book an appointment through the support line.
+
+Patient: OK. Yes, please.
+
+Doctor: Right, OK. We'll do that for you.
+
+Patient: [unintelligible]
+
+Doctor: OK, take care.
+
+Patient: Thank you.
+
+Doctor: Thanks, bye.
+
+Patient: [unintelligible]

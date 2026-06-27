@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1241  |  gem_id: gem-cochrane-simplification-train-1242  |  doi: 10.1002/14651858.CD006921.pub3
+
+The objective of this review was to assess if oral and intravenous steroids are equally effective and safe in aiding in the recovery from relapses. Among the pertinent literature, only five studies met the inclusion criteria, comprising a total of 215 participants. Despite some limitations in the methods used to conduct the studies (i.e. incomplete reporting of the participants who dropped out the studies and appropriateness of the sample size) and in the analysis of the data, all five studies found that there were no significant differences in term of benefits and adverse events and in the pharmacological and radiological outcomes in patients taking oral or intravenous steroids. Both treatments appear to be equally effective and safe. Based on this evidence, oral steroid therapy may be a practical and effective alternative to intravenous steroid therapy for the treatment of MS relapses.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2696  |  gem_id: gem-cochrane-simplification-train-2697  |  doi: 10.1002/14651858.CD010088.pub2
+
+We found two studies, undertaken in the 1990s in high-income countries, but their quality was unclear. One study, involving 307 women, compared routine vaginal and rectal examinations in labour. Here, fewer women reported that vaginal examinations were very uncomfortable compared with rectal examinations. The other study, involving 150 women, compared two-hourly and four-hourly vaginal examinations, but no difference in outcomes was seen. We identified no convincing evidence to support, or reject, the use of routine vaginal examinations in labour, yet this is common practice throughout the world. More research is needed to find out if vaginal examinations are a useful measure of both normal and abnormal labour progress. If vaginal examination is not a good measure of progress, there is an urgent need to identify and evaluate an alternative measure to ensure the best outcome for mothers and babies.

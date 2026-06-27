@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [20:21] 'abbr-medical' -> 'TB'
+  [29:30] 'abbr-medical' -> 'TB'

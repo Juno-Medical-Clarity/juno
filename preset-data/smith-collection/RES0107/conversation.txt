@@ -1,0 +1,272 @@
+# Smith Collection Transcript: RES0107
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi im here with my son and hes just been feeling awful he just has this runny nose and hes been sneezing all the time and uh i dont know maybe he has allergies or something i just came in cause i wanted to get him checked out and maybe get some medications hes just feeling horrible
+
+Doctor: Yeah for sure when did when did the sneezing and runny nose start
+
+Patient: He hes had it for um hes just always kind of you know hes always having that runny nose you know kids always do but its just been pretty bad over the past um two weeks
+
+Doctor: Past two weeks ok what started first the sneezing or runny nose
+
+Patient: uh the runny nose kind of just got worse a little bit over the past uh two weeks and then the sneezing kind of started at about the same time
+
+Doctor: OK and and the runny nose is he having um like what colour is it
+
+Patient: Its just clear like
+
+Doctor: Clear ok does he ever feel like hes uh do you ever feel like hes stuffy
+
+Patient: uh yeah kind of hes just been snorting and sniffing and um i dont think he knows how to blow his nose yet but hes like clearing his throat so i think hes hes a little bit stuffy
+
+Doctor: Okay
+
+Patient: But he hasnt complained about difficulty with breathing or like hes been like he sleeps with his mouth closed so i think he he should be able to breathe ok
+
+Doctor: OK good so you said no shortness of breath or trouble breathing has he had any coughs
+
+Patient: Kind of in the morning so i i see that whenever he wakes up in the morning he just has to like clear his throat a lot and like cough and then um gets better
+
+Doctor: OK ok is he bringing up phlegm when he coughs
+
+Patient: um a little bit
+
+Doctor: What colour is it
+
+Patient: Its the same stuff that comes out of his nose
+
+Doctor: OK yeah so no blood or pus
+
+Patient: No no
+
+Doctor: No ok have you do you think hes lost his like sense of smell or taste
+
+Patient: Uhh no
+
+Doctor: No ok any changes in his vision or hearing
+
+Patient: um i dont think so
+
+Doctor: No did like um have you noticed any discharge from his eyes
+
+Patient: No no sometimes he does have that but no not in the past two weeks
+
+Doctor: OK so his like eyelids arent swollen or his eyes arent red
+
+Patient: No no no
+
+Doctor: No ok and does he have you noticed any swelling in his either like face neck like belly area or his limbs
+
+Patient: No no i havent its just his nose is like a little bit red
+
+Doctor: OK
+
+Patient: And uh yeah hes just hes just itching all the time just itching his nose itching his um ears yeah but no no swelling
+
+Doctor: No swelling have you noticed any rashes on him
+
+Patient: No i checked yesterday night very carefully
+
+Doctor: OK good any weight loss
+
+Patient: No hes been gaining weight so um good that hes been eating well
+
+Doctor: Yeah thats good any fevers or chills
+
+Patient: No
+
+Doctor: No does he look like hes like excessively tired
+
+Patient: Hes a little bit fatigued because of the sneezing and the and the runny nose you know hes not going out to play as much
+
+Doctor: Mhmm
+
+Patient: um but its not you know hes still hes still cheerful hes not irritable or anything
+
+Doctor: OK ok um and then have you noticed that hes like taking in like rapid breaths
+
+Patient: No no his breathing has been good
+
+Doctor: OK how about his bowel movements have those been normal
+
+Patient: Yeah
+
+Doctor: Yeah ok any nausea or vomiting
+
+Patient: No
+
+Doctor: um how about his urine
+
+Patient: No no problems there
+
+Doctor: OK how about like dizziness or fainting spells
+
+Patient: No no no i didnt notice anything like that
+
+Doctor: No any confusion that you noticed
+
+Patient: No
+
+Doctor: Headaches
+
+Patient: No
+
+Doctor: No ok um has he been like excessively itching anywhere
+
+Patient: um just his uh just his nose and i think his like i think his mouth is itchy too cause he keeps doing this thing with his tongue just kind of i dont know just kind of like
+
+Doctor: Itching the top of his mouth with his tongue or something
+
+Patient: OK
+
+Doctor: um yeah just like his face is itchy
+
+Patient: Hmm ok um has he come into any contact with sick people recently
+
+Doctor: um i dont maybe so two weeks ago he was playing outside um and i know that he he does his symptoms do get worse when hes outside so i dont know maybe
+
+Patient: OK
+
+Doctor: He was playing with uh with his brother but then this other kid from the neighbourhood also came around
+
+Patient: OK ok how about um travel to anywhere
+
+Doctor: No weve just been staying at home
+
+Patient: OK ok good um is he an otherwise healthy kid at the moment
+
+Doctor: Yeah yeah hes an hes a healthy kid
+
+Patient: OK um any complications when you were pregnant with him
+
+Doctor: No
+
+Patient: No um how about at birth
+
+Doctor: No no complications
+
+Patient: OK did he need to be hospitalized after birth for any reason
+
+Doctor: No
+
+Patient: Any surgeries
+
+Doctor: No
+
+Patient: um any allergies
+
+Doctor: um i dont think so i know hes not
+
+Patient: No hes never been diagnosed with like eczema or asthma
+
+Doctor: Oh hes hes had eczema he had it
+
+Patient: OK
+
+Doctor: Yeah comes and goes
+
+Patient: His eczema comes and goes
+
+Doctor: Hmm
+
+Patient: OK um is he on any medications
+
+Doctor: No
+
+Patient: No even for his eczema
+
+Doctor: Its pretty mild
+
+Patient: OK um has have you ever like given him um reactine or like any of the those anti allergy medications in the past
+
+Doctor: Ive tried the uh yeah the ones over the counter um they do help um i tried it this time but uh it didnt do much
+
+Patient: OK ok and i was gonna ask you something else um his symptoms like the sneezing and the and the runny nose like has he experienced this before
+
+Doctor: Oh yeah
+
+Patient: OK
+
+Doctor: It usually gets worse um uh i guess like around this time uh i can tell when spring is coming up um it gets pretty bad but he always has a runny nose um and he sneezes sometimes here and there
+
+Patient: OK and you mentioned this has been going on for more than four days this time around
+
+Doctor: Its been its been going on for the past uh two weeks
+
+Patient: OK ok and is it like um impairing his like daily activities or like his ability to um like sleep
+
+Doctor: uh it does affect his sleep sometimes he doesnt like um just the itching really bothers him
+
+Patient: Mhmm
+
+Doctor: So he cant uh he finds it hard to fall asleep thats like i usually thats when i give him the the medications to help him fall asleep
+
+Patient: OK ok and uh is he up to date with all his immunizations
+
+Doctor: Yeah
+
+Patient: OK any family history of asthma eczema or something called allergic rhinitis
+
+Doctor: uh i have asthma
+
+Patient: OK and is your asthma severe
+
+Doctor: uh no its its pretty well controlled i used to actually i used to have asthma as a child
+
+Patient: OK i see
+
+Doctor: Its pretty well controlled right now i dont even need medications
+
+Patient: OK ok
+
+Doctor: I remember i used to i used to get allergies as well as a child
+
+Patient: Oh i see
+
+Doctor: But very similar lots of sneezing and yeah
+
+Patient: Mhmm alright were you ever did you ever take like an allergy test
+
+Doctor: No i didnt think about it i just never like my my my parents didnt take me to get that testing done
+
+Patient: OK how about your son has he been allergy tested
+
+Doctor: No but i feel like he probably should
+
+Patient: Yeah ok and then does anyone at home smoke
+
+Doctor: No
+
+Patient: No ok um do you have any like old carpets dust mold or asbestos at your place
+
+Doctor: uh weve got all of we got our carpets uh removed uh two years ago thats actually helped uh with his symptoms uh and i know we tried it we removed the curtains as well and weve used blinds so yeah
+
+Patient: OK
+
+Doctor: And i dont think so i dont think theres any spores or things like that
+
+Patient: OK good um is he an otherwise healthy child like developmental wise like hes growing gaining weight ok like hes his motor skills and like social behaviours are all up to par with his peers
+
+Doctor: Oh yeah hes doing great
+
+Patient: OK ok good um those are all the questions i had for you today did you have any questions of your own
+
+Doctor: No
+
+Patient: No ok so for him um it sounds more in keeping with something called allergic rhinitis than an infection but because his symptoms do overlap with that of covid  well probably get him a swab anyways and those results should come back in 24 to 48 hours in the meantime rhinitis is allergic rhinitis is caused by allergies to certain things so we can get him allergy tested um and that will give us a better understanding of like what his triggers are and the way to treat that is to avoid those triggers those allergens and if his symptoms are persistent um we will prescribe him also like an intranasal corticosteroid um and there are like there are like second line treatments as well like antihistamines and leukotriene like leukotriene receptor antagonists but those are like second line well well see how he does with the inhaled corticosteroids at first how does that sound
+
+Doctor: Sounds great
+
+Patient: OK great
+
+Doctor: Thank you
+
+Patient: No problem

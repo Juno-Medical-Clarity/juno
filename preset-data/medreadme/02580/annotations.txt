@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Epithelial ovarian cancer'
+  [4:5] 'abbr-medical' -> 'EOC'
+  [16:18] 'medical-jargon-google-easy' -> 'cytoreductive surgery'
+  [19:21] 'medical-jargon-google-easy' -> 'combination chemotherapy'

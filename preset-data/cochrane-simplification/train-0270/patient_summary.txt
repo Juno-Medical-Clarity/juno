@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0270  |  gem_id: gem-cochrane-simplification-train-271  |  doi: 10.1002/14651858.CD003144.pub2
+
+The review with nine randomised controlled trials (1233 patients, 622 with stapling and 611 with the handsewing technique) compared the safety and effectiveness of stapled versus handsewn colorectal anastomosis surgery. Meta-analysis was performed using the risk difference and weighted mean difference, with corresponding 95% confidence intervals. Outcome measures were mortality, anastomotic dehiscence, narrowing (stricture), haemorrhage, need for reoperation, wound infection, anastomosis duration (time taken to perform the anastomosis) and hospital stay. No significant statistical differences were found except that stricture was more frequent with stapling (P < 0.05) and the time taken to perform the anastomosis was longer with handsewn techniques.

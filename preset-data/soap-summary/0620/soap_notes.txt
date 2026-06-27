@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0620
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is currently in juvenile detention for approximately three weeks (25 days remaining).
+- Patient expresses a desire to make the best of the remaining time and does not want to return to juvenile detention.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinical interpretations or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

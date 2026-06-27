@@ -1,0 +1,8 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.5
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'Alexander technique'
+  [13:15] 'medical-jargon-google-easy' -> 'muscle tone'

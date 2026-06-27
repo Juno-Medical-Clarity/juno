@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0800
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has diabetes.
+- Patient has hypertension.
+- Patient has gallstones.
+- New symptoms include hyperglycemia and obstructive sleep apnea.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- Diagnoses: Diabetes, Hypertension, Gallstones, Hyperglycemia, Obstructive Sleep Apnea.
+
+Plan:
+- No plan provided.

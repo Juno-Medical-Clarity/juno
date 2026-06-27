@@ -1,0 +1,252 @@
+# Smith Collection Transcript: RES0060
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: So ive had a fever that i measured this morning and i had a cough  ive had a cough these last several days yeah today is friday so it started monday so i guess like yeah the cough started four days ago
+
+Doctor: OK and the fever started four days ago as well
+
+Patient: Well ive been feeling hot this week but i checked my temperature this morning and it was the first time i checked it and it was 385
+
+Doctor: OK so thats definitely a fever so we can take your temperature today as well umm so have your symptoms been the same or getting worse or be getting better over the past few days
+
+Patient: They are getting worse ive been starting to feel really fatigued and uh tired as well and the cough has gotten worse too
+
+Doctor: OK have you ever felt like this before
+
+Patient: I mean maybe a really long time ago when i was a kid or something like that maybe i had the flu but nothing recently
+
+Doctor: OK and do you have a sore throat at all
+
+Patient: No sore throat it does get a little scratchy with my cough but hasnt been sore
+
+Doctor: OK and do you have any issues swallowing food
+
+Patient: No but i havent been as hungry
+
+Doctor: OK you havent been as hungry um have you had any changes to your taste
+
+Patient: No i feel like ive been tasting my food ok
+
+Doctor: OK how about smell
+
+Patient: I feel like ive been able to smell
+
+Doctor: OK do you have a runny nose or a blocked nose do you feel congested
+
+Patient: Maybe a little runny but not too bad
+
+Doctor: OK how about your hearing or vision any changes there
+
+Patient: No i havent noticed anything
+
+Doctor: OK any pain or discharge from either your ears or eyes
+
+Patient: No nothing like that
+
+Doctor: OK so lets go back to the cough um are you producing any sputum
+
+Patient: No sputum
+
+Doctor: OK so its a dry cough
+
+Patient: Yeah it is
+
+Doctor: OK any blood associated with the cough
+
+Patient: I havent seen any blood
+
+Doctor: OK do you feel wheezy at all
+
+Patient: I havent noticed any wheezing
+
+Doctor: OK how about shortness of breath
+
+Patient: Usually well after some of my coughing fits i can be a little bit shorter in breath but otherwise theyve been
+
+Doctor: OK any chest pain
+
+Patient: No i havent had any chest pain
+
+Doctor: Do you ever feel like your hearts racing
+
+Patient: No i dont
+
+Doctor: OK and any night sweats or chills
+
+Patient: I have felt a little chilly at night but i havent had any night sweats
+
+Doctor: OK and how about weight loss have you had any weight loss over the past few months
+
+Patient: No its been about the same maybe down a few pounds over this week as i just havent been eating as much
+
+Doctor: OK yeah umm does anything make the cough better or worse
+
+Patient: Umm no i cant think of anything
+
+Doctor: OK and how have your bowel movements been
+
+Patient: Theyve i would say theyve been normal
+
+Doctor: OK and any abdominal pain
+
+Patient: No pain but i have been a little nauseous
+
+Doctor: Nauseous ok have you thrown up
+
+Patient: No i havent vomited but ive certainly felt like it a few times
+
+Doctor: OK and any triggers for your nausea
+
+Patient: Oh i cant think of anything it just sort of came on and it really went away on its own pretty quickly but uh i dont know maybe it was when i had my headache
+
+Doctor: OK when when did your headache start
+
+Patient: um so its been on and off these last several days so ive been kind of resting a bit more too
+
+Doctor: OK yeah you said past several days have you ever had headaches before that
+
+Patient: Yeah ive had i think theyre called tension headaches i get those every so often and will take advil or something like that for them and they usually go away
+
+Doctor: OK do these headaches feel like the same headaches
+
+Patient: Yeah they they feel about the same kind of like a pressure or vice grip on my head
+
+Doctor: OK so its not like the worst headache youve ever experienced
+
+Patient: No i think its just been a part of how i havent been feeling well these these last few days
+
+Doctor: OK yeah do you feel fatigued or tired at all
+
+Patient: Yeah for sure i havent really had any changes but just havent been really getting my work done throughout the day because i have just been feeling so tired
+
+Doctor: Yeah umm and do you feel any sort of body aches that go along with your fatigue
+
+Patient: Maybe a little
+
+Doctor: OK umm can you think of anything that may have caused your symptoms you know have you been in contact with anyone whos been sick recently
+
+Patient: I cant think of anybody ive been around whos been sick but last weekend i went shopping in the mall so i went into quite a few stores
+
+Doctor: OK and you were wearing your mask everyone else was wearing their mask
+
+Patient: Yeah everybody far as i could tell
+
+Doctor: OK have you traveled anywhere recently
+
+Patient: uh no ive just been home
+
+Doctor: OK i just want to ask you a few more questions any memory loss or confusion
+
+Patient: No
+
+Doctor: Any dizziness or fainting spells
+
+Patient: Nothing like that no
+
+Doctor: OK are you otherwise healthy
+
+Patient: um yeah ive well ive been told i had high cholesterol so ive been taking rosuvastatin for that the past few years
+
+Doctor: OK and is it helping with the cholesterol levels
+
+Patient: Yeah the last time i was at the family doctor i was told they were at a good level o
+
+Doctor: OK good
+
+Patient: Im sorry im prediabetic as well
+
+Doctor: OK when was the last time you had blood work done
+
+Patient: I think uh six months ago
+
+Doctor: OK and thats when you were told you were prediabetic
+
+Patient: Yeah i think my a1c was like 62 so uh on the cusp
+
+Doctor: OK yeah thats understandable um have you made any sort of lifestyle changes to get your blood glucose under control
+
+Patient: Well i have been walking the dog more he weather is getting better and trying to eat out less often yeah ive been trying to lose weight but it its been yeah relatively stable still
+
+Doctor: Dok we can review some options with you later on in the visit if you would like
+
+Patient: Yeah certainly we can talk about that later
+
+Doctor: OK sounds good have you had any surgeries or hospitalizations in the past
+
+Patient: Yeah i had an inguinal hernia repaired about five years ago
+
+Doctor: And are you on any medications
+
+Patient: Just rosuvastatin right now
+
+Doctor: OK and any over the counter medications or herbal supplements
+
+Patient: Just a multi vitamin
+
+Doctor: OK umm do you have any allergies
+
+Patient: Penicillin i break out in hives
+
+Doctor: OK and did you need to be treated with any sort of antibiotics recently
+
+Patient: No no i havent had any antibiotics for a long time
+
+Doctor: OK and are you up to date with all your immunizations
+
+Patient: I am yeah i get the flu shot every year
+
+Doctor: OK good an yeah thats really good um do you know if you have any family history of any lung conditions or heart conditions
+
+Patient: No i dont think so
+
+Doctor: OK how about cancers in the family
+
+Patient: I think my grandfather had bladder cancer but uh im not sure
+
+Doctor: OK and i forget if i asked you earlier but have you had any changes to your urinary habits any changes in your urine itself or voiding frequency
+
+Patient: No i havent had any changes there and i havent noticed any like blood or color changes no pain
+
+Doctor: OK great and do you smoke
+
+Patient: um no i do not
+
+Doctor: OK how about marijuana
+
+Patient: Nope
+
+Doctor: Any other recreational drug
+
+Patient: No i just have a few beers on the weekend like probably i dont know two or three on saturday and sunday
+
+Doctor: OK and where do you live
+
+Patient: I live in a like duplex and rent the basement in a house nearby
+
+Doctor: OK do you live with anyone
+
+Patient: Yeah i live with my girlfriend
+
+Doctor: OK and um any concerns for you know old carpets or mold or asbestos in the duplex that youre living in
+
+Patient: Not in our unit so i mean maybe upstairs but if its anything like our place then no
+
+Doctor: OK i think those were all the questions that i had for you did you have any questions or concerns that you wanted to bring up before we end the interview
+
+Patient: uh no well  i guess i was just concerned about about covi
+
+Doctor: Yeah you know thats the top on my list of differential diagnosis for you so what well do is a coviswab and that should come back in a day or so but we do encourage isolation for 14 days and that includes from your girlfriend as well so even if the coviswab comes back negative sometimes it can be false negative so as long as youre having these symptoms and these symptoms are common in covi we do ask that you isolate for 14 days if the swab comes back positive we will also notify public health so that they can get in touch with you and do some contact tracing to see where you may have gotten covifrom but other than that if its not coviit could likely be another upper respiratory viral illness because of this time of year a lot of different viruses are going around like common viruses or the flu you know so it could be one of those and then if youre still sick or your symptoms change we can reassess to make sure its not a bacterial infection or bacterial pneumonia in which case we can prescribe antibiotics
+
+Patient: OK yeah thank you for all that information sounds great
+
+Doctor: OK well take care then alright
+
+Patient: Thank you

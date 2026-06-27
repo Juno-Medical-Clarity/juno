@@ -1,0 +1,172 @@
+# Smith Collection Transcript: DER0001
+# Category: DER (Dermatological)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Hey doc im a 45 year old man coming in im worried theres a little old rash on my leg that im getting nervous about
+
+Patient: Hi so you i understand you have a rash on your leg
+
+Doctor: I dont really know what i would call it thats what i told the nurse when i came in but it more hurts than anything
+
+Patient: OK uh how long is this been going on for
+
+Doctor: Ah its been its been looking weird for about a week but only yes it started hurting yesterday and started looking strange and i just wanted to come in to get it checked out
+
+Patient: OK when you say its looking strange can you tell me what you mean by that
+
+Doctor: Swollen it looks bigger than it did before and meaner if that makes sense
+
+Patient: Swollen ok is it red
+
+Doctor: Yeah its red its turning more red kind of in the area around it ive got these i got these scabs ive got diabetes and im not exactly the best with it and scratching at it and normally its not that bad but this is just strange looking and theres no other word for it
+
+Patient: OK have you ever had anything like this before i guess you kinda just said that you didnt but ill just double check
+
+Doctor: No no well ive had  i have occasional ulcers and sometimes i have banged my toe when im not exactly the best taking care of my feet but this is the first time ive gotten something that i dont know ive just never seen it before
+
+Patient: Do you have any ulcers right now
+
+Doctor: Let me see i think so whens the last time i saw the family doc i think ive got an ulcer on my left heel but i think its doing alright
+
+Patient: OK and what leg are you having this problem with
+
+Doctor: Right now its on my right so my ankle
+
+Patient: OK how have your sugars been controlled recently
+
+Doctor: I stopped measuring them yeah last time i measured it was pretty bad i think my a1c last time was like 9 something im trying im trying better to be with it its hard with work you know
+
+Patient: For sure i can imagine so in general even if you dont know your numbers for your sugars have you felt worse than usual lately have you felt rundown at all
+
+Doctor: Yeah actually i have gained more feel hungry sometimes just tired but its hard to tell theres an awful lot going on in my life right now with the kids but its hard to tell i think yeah i need to see my family doc
+
+Patient: OK definitely you know a good a good idea moving forward just to make sure you get on top of these things but im glad you came in today so we can you know have a better look at you and make sure that theres nothing super concerning going on so in addition to this have you had any other new symptoms
+
+Doctor: Symptoms um i feel a little hot actually when the swelling started its it also started leaking this like white stuff from one of the one of what used to be a scab so now like kind of an open wound now
+
+Patient: OK ok so when did you start feeling hot
+
+Doctor: Honestly last 12 hours
+
+Patient: OK you take your temperature at all
+
+Doctor: No i dont have a thermometer at home
+
+Patient: Have you had any difficulty breathing
+
+Doctor: No no
+
+Patient: Any chest pain
+
+Doctor: No
+
+Patient: Have you noticed that your left sorry your right leg feels any hotter than the left
+
+Doctor: Yeah yeah it does actually changing socks the other day yeah
+
+Patient: Right say have you alone have you felt ill recently have you been sick at all
+
+Doctor: Aside from just feeling overall crummy last couple weeks no dont really less energy today but i was up last night thinking about this and yeah wanted to come in and talk
+
+Patient: OK yeah you did the right thing im glad that youre in today is the pain on your legs worse when you touch it
+
+Doctor: Yeah maybe not so much when i touch it when i walk with it and i start flexing it it it doesnt like that
+
+Patient: OK uhm
+
+Doctor: Just resting it right now it feels fine
+
+Patient: Its ok ok ok well im going to if i think of any more questions specifically about your leg i will ill go back to it but im going to just move on and ask you questions about your overall health youve already shared with me that you you are diabetic do you have any other chronic conditions that you live with
+
+Doctor: Chronic condition i see the family doc about cholesterol im on a pill for that uhm i had asthma as a kid not too much of an issue now and my back ive had back pain for the last 10 years but all i really take for it is tylenol advil for that
+
+Patient: OK oh my other question about your leg was have you lost any feeling in it
+
+Doctor: It kind of is like a dull ache sometimes when i touch it but no like  in the area the ankle no but definitely on my feet like over the years ive noticed i feel less on it compared to what i did previously yeah
+
+Patient: OK so sorry i kind of sidetracked there so we talked about your diabetes you said you have high cholesterol so what medications are you currently taking
+
+Doctor: Im taking 4 pills right now one of them is for the cholesterol i think its called rosuvastatin the other three theyre all diabetes medications but i dont remember metformin is one of them sidassomething i have a list somewhere ill give it to you later
+
+Patient: OK are you on insulin right now
+
+Doctor: No
+
+Patient: Are you on any or any of these medications new to you recently
+
+Doctor: No no but had them for about a year now
+
+Patient: Do you have any allergies
+
+Doctor: um yeah i do actually penicillin cant take that
+
+Patient: And what happens when you take penicillin
+
+Doctor: Its been a while as a kid apparently like my face got bloated and i was having a hard time breathing so
+
+Patient: Well we will make sure that we dont give you that can you tell me if youve had any previous surgery
+
+Doctor: Oh yeah uh what was it i had my sinuses had some pretty bad sinusitis when i was in my teens and they went in and kind of carved a little space out
+
+Patient: OK ok is that the only surgery that you had
+
+Doctor: Yeah
+
+Patient: And can you tell me do you have any family history of diabetes skin problems anything else that stands out to you
+
+Doctor: Yep moms side of the family very much everyone has diabetes high blood pressure cholesterol dads side of the the family is pretty healthy i think maybe one of my aunts had lung cancer but shes a pretty big smoker too
+
+Patient: And then just ask you a few questions about your lifestyle so you said that you have children
+
+Doctor: Yeah i do
+
+Patient: Do you live in town do you live with your kids
+
+Doctor: I live in town i see my kids every two weeks
+
+Patient: And uh what do you do for work did i already ask you this
+
+Doctor: No im currently unemployed and looking for work partially employed i suppose we should say i have my own business
+
+Patient: I see and what do you what do you do when when you are working ideally
+
+Doctor: When i am working im an accountant
+
+Patient: OK well and do you smoke
+
+Doctor: Yeah once in a while yeah when im stressed
+
+Patient: How much do you smoke on average
+
+Doctor: Last couple of weeks ive been smoking more maybe like 2 packs a week
+
+Patient: OK do you drink alcohol
+
+Doctor: Yeah yeah
+
+Patient: How much do you typically drink
+
+Doctor: Average week maybe a 2 4
+
+Patient: So maybe like 3 per day or something like that if you were to average it out
+
+Doctor: Yeah if you average out i mainly go through the two four in a weekend to be honest
+
+Patient: Oh i see ok more so on the weekend so maybe a little bit more than three per day on those days
+
+Doctor: Mhm
+
+Patient: OK so that that thats everything that i need to ask you for now id like to get a closer look at this leg did you have any other questions or concerns before we move forward to the physical exam
+
+Doctor: No i just want to get this figured out
+
+Patient: OK yeah we will definitely do that for you so yeah im going to have a look at it and then after that i will go talk to the doctor that im working with and well see what we can do for you that sounds good
+
+Doctor: Thank you doc yeah sounds great
+
+Patient: Awesome ok thanks

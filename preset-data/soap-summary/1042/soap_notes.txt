@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1042
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Allergic rhinitis
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: Not mentioned
+- Relevant medical history: Not specified
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Patient is taking Claritin for allergic rhinitis.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnosis provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned.)

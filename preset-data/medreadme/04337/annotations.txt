@@ -1,0 +1,8 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 4.8
+split:       test
+
+jargon_spans:
+  [10:12] 'medical-jargon-google-easy' -> 'topical corticosteroids'
+  [13:15] 'medical-jargon-google-easy' -> 'impregnated bandages'

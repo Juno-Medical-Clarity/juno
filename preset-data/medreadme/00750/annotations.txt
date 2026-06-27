@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [15:16] 'abbr-general' -> 'RCTs'
+  [20:21] 'medical-jargon-google-easy' -> 'repositioning'
+  [34:35] 'medical-jargon-google-easy' -> 'repositioning'
+  [38:40] 'medical-jargon-google-easy' -> 'lateral rotation'

@@ -1,0 +1,12 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [6:9] 'medical-jargon-google-easy' -> 'TcSMUG L mucins'
+  [16:19] 'medical-jargon-google-easy' -> 'T. cruzi epimastigotes'
+  [21:25] 'medical-jargon-google-easy' -> 'posterior midgut epithelial cells'
+  [27:28] 'medical-jargon-google-easy' -> 'triatomine'
+  [35:36] 'general-medical-multisense' -> 'vector'
+  [37:39] 'medical-jargon-google-easy' -> 'R. prolixus'

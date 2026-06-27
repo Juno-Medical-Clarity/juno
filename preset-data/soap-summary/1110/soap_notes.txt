@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1110
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of heart issues: brother died of a heart attack in his fifties; sudden event that shocked the family.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

@@ -1,0 +1,4 @@
+Doctor: As far as you know, are there any major health conditions that you know about?
+Patient: What do you mean by that?
+Doctor: Anything like cancer, or arthritis, do those sound familiar?
+Patient: Oh, um, no nothing like that.

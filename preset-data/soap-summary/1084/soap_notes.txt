@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1084
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient lives with mother.
+- Duration of living with mother: a few years.
+- Patient has one elder sister who lives in Texas.
+- Family expresses a desire to support the patient in every possible way.
+- Patient previously lived in multiple places, some in very bad condition, and was not thriving there.
+
+Objective:
+- [No measurable or observable data provided.]
+
+Assessment:
+- [No clinician's interpretation, diagnoses, or clinical impressions provided.]
+
+Plan:
+- [No specific actions, medications, tests, follow-up, or patient education mentioned.]

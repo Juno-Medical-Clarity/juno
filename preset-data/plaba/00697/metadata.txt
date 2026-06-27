@@ -1,0 +1,5 @@
+pmid:        30848135
+question:    54
+adaptation:  adaptation1
+title:       HCG level after embryo transfer as a prognostic indicator of pregnancy finished with delivery
+sentences:   13

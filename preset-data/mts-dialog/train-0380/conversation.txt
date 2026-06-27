@@ -1,0 +1,13 @@
+Doctor: I mean, I am so happy to see your report today, your blood pressure looks much better. That's amazing given your past few visits your B P was out of control and even with changing your medications we were having tough time bringing it down.
+Patient: Yeah, I feel much better, I read about my condition and it is called something as um refraction or--
+Doctor: Refractory hypertension.
+Patient: Oh yeah that!
+Doctor: But the good news is that it is getting better.
+Patient: Yes.
+Doctor: Last time we talked about seeing the internal medicine doctor there at your senior center, right?
+Patient: Yes, I made an appointment last week, um, no week before that, but I completely forgot about it.
+Doctor: Hm, okay we need to reschedule that.
+Patient: Yes, I will do it today.
+Doctor: Okay, your reports look fine. G F R is below sixty percent, that's a good sign.  Overall, Miss K, you look better, but we need to reschedule your appointment with the Internist. That's kind of important.
+Patient: Okay, I will do that. Thank you!
+Doctor: You are welcome.

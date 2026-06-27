@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 4.15
+split:       test
+
+jargon_spans:
+  [3:4] 'abbr-medical' -> 'TB'
+  [9:12] 'medical-jargon-google-easy' -> 'tuberculin skin test'

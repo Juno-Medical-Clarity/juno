@@ -1,0 +1,5 @@
+pmid:        31747213
+question:    2
+adaptation:  adaptation3
+title:       Duloxetine
+sentences:   5

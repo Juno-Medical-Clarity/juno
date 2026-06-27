@@ -1,0 +1,5 @@
+pmid:        28631809
+question:    38
+adaptation:  adaptation1
+title:       Anabolic steroids for treating pressure ulcers
+sentences:   21

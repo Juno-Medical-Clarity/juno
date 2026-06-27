@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0381
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is not taking any medications.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

@@ -1,0 +1,33 @@
+# SOAP Notes — Sample 0009
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Severe pain in the upper right abdomen
+- Duration: Last few days, worsened today (3-4 hours ago)
+- Quality: Sharp pain
+- Severity: 8/10
+- Onset: After a meal (lunch) 3 days ago
+- Progression: Worst today, especially 3 hours ago
+- Alleviating factors: None effective (tried Advil and Tylenol)
+- Associated symptoms: Nausea (no vomiting), decreased energy levels today, decreased appetite today
+- No recent travel
+- No skin changes, urinary changes, bowel changes, or weight changes
+- No recent infections
+
+Past Medical History:
+- PMHx: Advised to lose weight
+- No allergies
+- Medications: Occasional antacids for heartburn (a couple of times a month)
+- Hospitalizations: Only for childbirth
+- No prior surgeries
+- FHx: Father died of stroke in his sixties, mother has gallstones
+- SocHx: Works as a bank consultant, drinks 1-2 glasses of wine nightly, no smoking, no recreational drug use, lives with partner and 2 children, supportive home environment
+
+Objective:
+- 
+
+Assessment:
+- 
+
+Plan:
+-

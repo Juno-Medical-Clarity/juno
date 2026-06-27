@@ -1,0 +1,148 @@
+# Smith Collection Transcript: RES0082
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you today
+
+Patient: Ive been having uhh like nasal congestion and ive been sneezing a lot over these last couple of days and ive also been having a sore throat
+
+Doctor: Oh no when did that start
+
+Patient: So the store throat started like 2 days ago
+
+Doctor: OK and since then youve developed this nasal congestion and sneezing as well
+
+Patient: Yeah exactly it started a bit afterwards or around the same time
+
+Doctor: Yeah alright and have you have any other symptoms do you have a fever
+
+Patient: uh no i dont think so
+
+Doctor: OK do you have any difficulties swallowing
+
+Patient: uh yeah it has been a bit sore when eating food but it hasnt been so painful to prevent me from eating
+
+Doctor: OK do you have a cough
+
+Patient: No i havent had a cough
+
+Doctor: OK uhm and do you have a runny nose any discharge
+
+Patient: uh yeah theres been a little bit of a like watery discharge my nose has been running
+
+Doctor: Any ear pain or any pain in your cheeks or your head when youre bending over anything like that
+
+Patient: uh yeah now that you say it yeah when i was bending over to put my shoes on i felt just a bit of pressure on the front of my face
+
+Doctor: OK and you havent been feeling feverish or having having any chills right
+
+Patient: No
+
+Doctor: OK any fatigue malaise any aches or pains
+
+Patient: uh no i felt ok that way yeah
+
+Doctor: Any rashes
+
+Patient: uh no
+
+Doctor: No ok have you been up to date with your immunizations
+
+Patient: I have yes
+
+Doctor: Alright and just have a couple more questions just to see if anything else is going on do you have a headache at all
+
+Patient: uh yeah ive had a headache since this morning its pretty mild it feels like my head is squeezing i think uh ive had headaches like this before if i dont sleep well or dehydrated
+
+Doctor: Are you more stressed out than usual do you have exams or anything going on right now
+
+Patient: No schools been pretty good weve been doing a lot of stuff online so uh yeah thats been good
+
+Doctor: OK any uh do you find that your eyes are runny or red or anything like that
+
+Patient: uh no i havent noticed anything like that
+
+Doctor: OK alright and any difficulties breathing
+
+Patient: No
+
+Doctor: Any chest pain
+
+Patient: No chest pain
+
+Doctor: OK any pain in your belly or any problems with your bowel movements
+
+Patient: No
+
+Doctor: OK any urinary symptoms
+
+Patient: No
+
+Doctor: OK alright good so can you tell me if you have any medical conditions
+
+Patient: uh no i had dermatitis when i was a kid but i havent had any issues since i remember using some creams for that but i havent needed to use them recently
+
+Doctor: OK and any medications that youre taking currently including over the counter pills
+
+Patient: I dont take anything currently
+
+Doctor: OK did you take any medications to reduce the symptoms that youre having the headache or the sore throat
+
+Patient: Oh sorry yeah i used some advil this morning i think it was 400 milligrams
+
+Doctor: OK and do you have any allergies
+
+Patient: um yeah to cats
+
+Doctor: Have you been around a cat recently
+
+Patient: No we used to have a cat but unfortunately we were unable to keep it because allergies were so bad
+
+Doctor: Yeah do you have any environmental allergies at all
+
+Patient: Uhm yeah sometimes in the spring or fall i can get like itchy eyes and a runny nose so thats why i didnt think much about the runny nose at first but with a sore throat and been sneezing more i thought to come in
+
+Doctor: Yeah ok so in terms of your uh so general information do you live alone or do you live with your parents or anyone else
+
+Patient: Yeah i live with my mom dad and a younger brother
+
+Doctor: Alright and are you currently working or going to school
+
+Patient: Yeah im finishing up grade 8 and were doing the courses online
+
+Doctor: OK great so have you spent any time outdoors or spent any time with people who you think might be sick
+
+Patient: Well ive played some like basketball outside with one of the neighbors but i dont think hes been sick
+
+Doctor: OK alright and have you traveled anywhere recently
+
+Patient: No ive been at home
+
+Doctor: OK uhm alright and do you uhm have you had these symptoms anytime recently before
+
+Patient: No not that i can think of
+
+Doctor: No have you been tested for covid anytime in the recent past
+
+Patient: No i havent
+
+Doctor: Have you taken any antibiotics recently
+
+Patient: No
+
+Doctor: OK alright well it sounds like youre probably having just a common cold likely viral so and seeing that its only been two days have your symptoms gotten better or worse in the past couple of days
+
+Patient: Theyve gotten worse since its started
+
+Doctor: Yeah ok well its only been two days so far lets just keep an eye on your symptoms and see how youre doing it might also be a good idea just to get a covid swab done and if your symptoms continue to worsen give me a call again and we can talk about it a little bit more and see if maybe a bacterial infection or if theres something else thats going on you dont have any difficulties breathing do you
+
+Patient: No i dont
+
+Doctor: Alright ok alright umm well do a physical exam and then chat a little bit more after
+
+Patient: OK thank you

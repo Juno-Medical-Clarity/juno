@@ -1,0 +1,5 @@
+drug_focus: diuretic drug for fluid build up
+question_type: Indication
+section_title: Diuretics
+source_url: http://www.heart.org/HEARTORG/Conditions/HeartFailure/PreventionTreatmentofHeartFailure/Medications-for-Heart-Failure_UCM_306342_Article.jsp#.W84ed0tKhaQ
+sample_id: 0252

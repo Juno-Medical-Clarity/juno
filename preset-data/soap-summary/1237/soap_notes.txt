@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1237
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not know the name of the surgery performed today.
+- Patient had a Lap Band surgery today.
+- Patient has a history of right side foot surgery.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

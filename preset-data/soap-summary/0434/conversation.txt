@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0434
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you aware of any family medical history? Nope. Both of my parents, they died of old age. They were in their eighties. I cannot remember of any other medical issue in any of my relatives. What about memory loss or stroke or high blood pressure, diabetes, or any other kind of mental illness? Nope. Anyone sick in your family out of these things? Nope. Do you have kids? Yeah, I have five children and they all are doing well in their life.

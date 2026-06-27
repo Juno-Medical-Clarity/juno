@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1172  |  gem_id: gem-cochrane-simplification-train-1173  |  doi: 10.1002/14651858.CD003348.pub3
+
+Previous studies have shown that often patients prefer PCA to traditional methods of pain management, such as a nurse administering an analgesic upon a patient's request. This review demonstrated moderate to low quality evidence that PCA provided slightly better pain control and increased patient satisfaction when compared with non-patient controlled methods. Patients tended to use slightly higher doses of medication with PCA and suffered a higher occurrence of itching, but otherwise side effects were similar between groups.

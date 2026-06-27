@@ -1,0 +1,5 @@
+pmid:        17965720
+question:    41
+adaptation:  adaptation1
+title:       A critical developmental switch defines the kinetics of kidney cyst formation after loss of Pkd1
+sentences:   8

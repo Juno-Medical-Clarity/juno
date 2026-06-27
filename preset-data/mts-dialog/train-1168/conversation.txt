@@ -1,0 +1,3 @@
+Doctor: So, tell me about your family, any illness or anything that runs in the family.
+Patient: Um, not that I know of.
+Doctor: Okay.

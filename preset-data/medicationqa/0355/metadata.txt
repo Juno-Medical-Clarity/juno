@@ -1,0 +1,5 @@
+drug_focus: levetiracetam
+question_type: Indication
+section_title: INDICATIONS AND USAGE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aeb36add-e083-49be-9c3c-e76593c70d61
+sample_id: 0355

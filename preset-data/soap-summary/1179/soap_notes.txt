@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1179
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the finger
+- Severity: Not explicitly stated, but indicates significant concern due to the request for surgery.
+- Duration: More than a few months
+- Associated symptoms: Finger locking
+- Relevant medical history: Previous diagnosis of trigger finger and mucous cyst; received injections from another doctor that did not help.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient is seeking further treatment options, specifically surgery, as previous interventions were ineffective.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Diagnoses: Trigger finger and mucous cyst.
+- Clinical impression: Patient has not responded to previous treatment (injections) and is experiencing ongoing symptoms.
+
+Plan:
+- Consider surgical intervention for the treatment of trigger finger and mucous cyst as requested by the patient.

@@ -1,0 +1,7 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [6:10] 'medical-jargon-google-easy' -> 'transcutaneous electrical nerve stimulation'

@@ -1,0 +1,5 @@
+pmid:        17561467
+question:    71
+adaptation:  adaptation3
+title:       Sustained phosphorylation of mutated FGFR3 is a crucial feature of genetic dwarfism and induces apoptosis in the ATDC5 chondrogenic cell line via PLCgamma-activated STAT1
+sentences:   17

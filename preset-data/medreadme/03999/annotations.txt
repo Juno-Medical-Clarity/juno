@@ -1,0 +1,12 @@
+source:      plos_biology
+side:        complex
+readability: 5.15
+split:       test
+
+jargon_spans:
+  [6:7] 'abbr-medical' -> 'TEM'
+  [10:11] 'medical-jargon-google-easy' -> 'Drosophila'
+  [11:16] 'medical-jargon-google-hard' -> 'first instar larval brain neuropile'
+  [18:22] 'medical-jargon-google-easy' -> 'ventral nerve cord segment'
+  [31:32] 'medical-jargon-google-easy' -> 'Drosophila'
+  [33:34] 'general-medical-multisense' -> 'microcircuitry'

@@ -1,0 +1,38 @@
+Doctor: Welcome back to the clinic.
+Patient: Thank you.
+Doctor: I understand that we are doing an impairment rating exam today.
+Patient: Yes, that's correct.
+Doctor: And we are evaluating your right shoulder injury. Correct?
+Patient: Yes.
+Doctor: Was this a workrelated injury?
+Patient: Yes. I was working as a C N A at the Veteran's House.
+Doctor: How did the work injury happen?
+Patient: I was transferring a patient from a wheal chair to a bed, and I hurt my shoulder.
+Doctor: What is the date of the incident?
+Patient: January first, two thousand and two.
+Doctor: Are you currently working?
+Patient: No. I have not been able to go back to work yet.
+Doctor: I am required to ask some specific questions for the L and I paperwork. What is your ago, ethnicity and gender?
+Patient: I am a thirty one year old, white, female.
+Doctor: Have you ever had a prior injury to your right shoulder?
+Patient: No.
+Doctor: Are right or left hand dominant?
+Patient: Right.
+Doctor: Other then your shoulder injury, do you have any other chronic health problems?
+Patient: No.
+Doctor: Are you experiencing any fever, chills or illnesses?
+Patient: No.
+Doctor: Let discuss some of the previous treatments and test that you have been done for your shoulder.
+Patient: Okey. I have done a lot of different treatments.
+Doctor: What treatments have you done?
+Patient: I tried physical therapy. They did a subacromion decompression treatment in November, two thousand and two.
+Doctor: Did either of those treatments help?
+Patient: Not much. I went and saw Doctor Lin and he said that I might have a nerve fiber injury. I forget what he called it.
+Doctor: Brachial plexopathy?
+Patient: Yes. That sounds right.
+Doctor: Oh, I see his notes in your chart. It says that he felt like you had a right superficial radial neuritis and blocked this with resolution of your symptoms. Then it looks like he sent you to get E M G testing at Valley Medical. Let me look for those results.
+Patient: Okey. They should be in my chart. I had Doctor Lin send over all my records.
+Doctor: Here it is. It says that the right suprascapular neuropathy although a C5 radiculopathy could not be ruled out.  MRI testing on the cervical spine was then done which was negative for disk herniation and underwent suprascapular nerve decompression of the scapular notch on December eighteenth, two thousand and three.
+Patient: Whatever that means? I ended up getting a nerve block because I was still in pain. Doctor Lin did one in the frount of my shoulder and then another in the back.
+Doctor: This has been a long drawn out course of treatments for you.
+Patient: Yes, it has been.

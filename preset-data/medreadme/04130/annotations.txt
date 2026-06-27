@@ -1,0 +1,8 @@
+source:      elife
+side:        simple
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [19:21] 'medical-jargon-google-easy' -> 'stem cells'
+  [23:25] 'medical-jargon-google-easy' -> 'adult marrow'

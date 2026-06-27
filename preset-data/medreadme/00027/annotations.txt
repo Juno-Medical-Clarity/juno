@@ -1,0 +1,7 @@
+source:      plos_genetics
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [20:22] 'medical-jargon-google-easy' -> 'causal variants'

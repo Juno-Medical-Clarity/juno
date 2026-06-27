@@ -1,0 +1,7 @@
+As COVID-19 (a viral respiratory disease) spreads rapidly worldwide and variants emerge, the creation and use of safe, effective vaccines are urgently needed.
+Here, we created a pre-protein, moleculer vaccine based on a specific molecular region (labeled TF-RBD) of a unique protein combined to iron-containing molecules.
+Compared to the molecular vaccine binding to the region without iron, vaccines binding the same region but with iron-containing molecules delivered via muscle show vigorous, long-lasting immunity and specific immune responses.
+After adding the live respiratory virus, immunization with a two-shot low-dose schedule of the TF-RBD vaccine protected infected mice.
+Also, the molecular template of the TF-RBD vaccine was easily altered to address specific respiratory viral mutations.
+The TF-RBD, multi-variant-sensitive vaccine created general-purpose antibodies against multiple variants.
+This molecular vaccine based on a specific, self-created, triple-unit region is a model for creating molecular vaccines targeting the respiratory SARS-CoV-2 virus.

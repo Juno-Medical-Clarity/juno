@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2180  |  gem_id: gem-cochrane-simplification-train-2181  |  doi: 10.1002/14651858.CD006763.pub2
+
+This review found 13 studies including 254 patients with type 1 and type 2 diabetes. Reducing salt intake by 8.5 g/day lowered BP by 7/3 mm Hg. Public health guidelines recommend reducing dietary salt intake to less than 5-6 g/day and people with diabetes would benefit from reducing salt in their diet to at least this level.

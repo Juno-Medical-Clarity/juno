@@ -1,0 +1,1 @@
+Quantitative data were analysed by fitting a series of fixed-effects linear, logistic and multilevel logistic regression models in Stata (r) (version 13; StataCorp LP, College Station, TX, USA).

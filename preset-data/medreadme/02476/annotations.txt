@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:6] 'medical-jargon-google-hard' -> 'HLA - restricted immune escape mutations'
+  [22:24] 'medical-jargon-google-easy' -> 'antiviral immunity'
+  [26:27] 'medical-jargon-google-easy' -> 'epidemic'

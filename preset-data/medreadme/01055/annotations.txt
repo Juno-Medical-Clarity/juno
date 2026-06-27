@@ -1,0 +1,11 @@
+source:      wiki
+side:        simple
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Streptococcus'
+  [6:10] 'medical-jargon-google-easy' -> 'Gram - positive bacteria'
+  [13:14] 'medical-jargon-google-easy' -> 'phylum'
+  [14:15] 'medical-jargon-google-easy' -> 'Firmicutes'
+  [17:20] 'medical-jargon-google-easy' -> 'lactic acid bacteria'

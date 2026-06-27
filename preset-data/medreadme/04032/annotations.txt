@@ -1,0 +1,10 @@
+source:      plos_genetics
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [11:13] 'general-complex' -> 'null hypotheses'
+  [15:18] 'general-complex' -> 'false discovery rate'
+  [19:20] 'abbr-general' -> 'FDR'
+  [27:28] 'abbr-general' -> 'FDR'

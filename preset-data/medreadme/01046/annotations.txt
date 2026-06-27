@@ -1,0 +1,9 @@
+source:      MSD
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'bowels'
+  [14:15] 'medical-jargon-google-easy' -> 'rectum'
+  [20:21] 'general-medical-multisense' -> 'stool'

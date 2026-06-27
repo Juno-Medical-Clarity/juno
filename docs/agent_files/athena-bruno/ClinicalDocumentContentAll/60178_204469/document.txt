@@ -1,0 +1,27 @@
+[NO TEXT CONTENT] Patient 60178, Document 204469
+Description: clinical document
+
+Metadata:
+{
+  "originaldocument": {
+    "contenttype": "application/pdf",
+    "href": "https://api.preview.platform.athenahealth.com/v1/195900/patients/60178/documents/clinicaldocument/204469/originaldocument"
+  },
+  "internalnote": "SOAP note from SIVIA - Generated 2025-11-29 02:27",
+  "documentdescription": "clinical document",
+  "status": "REVIEW",
+  "documentclass": "CLINICALDOCUMENT",
+  "priority": "2",
+  "assignedto": "CRUICKSHANK HEALTH CARE STAFF",
+  "documentroute": "FAX",
+  "lastmodifieddatetime": "2025-11-29T02:30:57-05:00",
+  "departmentid": "1",
+  "clinicaldocumentid": 204469,
+  "createddatetime": "2025-11-29T02:30:52-05:00",
+  "createddate": "11/29/2025",
+  "lastmodifieduser": "API-34755",
+  "lastmodifieddate": "11/29/2025",
+  "observationdate": "11/29/2025",
+  "createduser": "API-34755",
+  "documentsource": "INTERFACE"
+}

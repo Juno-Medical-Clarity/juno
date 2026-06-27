@@ -1,0 +1,1 @@
+Our model, which matches the changes in Hb position and sharpness observed in different experiments, provides a theoretical framework for understanding the data and in particular indicates that spatial bistability can play a central role in threshold - dependent reading mechanisms of positional information.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1595  |  gem_id: gem-cochrane-simplification-train-1596  |  doi: 10.1002/14651858.CD005450.pub2
+
+Thirteen relevant trials with 1770 participants were analysed. All of them were of low quality. None of these trials analysed mortality, health related quality of life, economic outcomes or compliance with treatments. Some of these herbs may show benefits in improving symptoms, thyroid function and adverse effects. Unfortunately, we were unable to find reliable evidence to recommend a specific herbal preparation from 103 investigated formulations.

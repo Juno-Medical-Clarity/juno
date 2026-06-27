@@ -1,0 +1,15 @@
+Vaccines are needed to prevent Covid-19 (a viral respiratory disease) and to protect people who are at a high risk for complications or harm.
+The mRNA-1273 vaccine helps the body make proteins that will strengthen the immune system to fight the coronavirus that causes COVID-19.
+The 3rd phase of a clinical study is conducted in 99 centers across the United States.
+People who are at a high risk for the coronavirus or its complications are randomly placed in either the group to receive two shots of the mRNA-1273 vaccine or in the placebo group (people will be given a shot of an inactive substance).
+The main result researchers are interested in is the prevention of Covid-19 starting at least 14 days after the second shot in study participants who have not already been infected with coronavirus.
+The trial includes 30,420 volunteers who are randomly placed in a group to receive the vaccine or to receive the placebo.
+More than 96% of volunteer participants receive both shots, and 2.2% are positive for (or have) the coronavirus at the start of the study.
+Covid-19 is found in 185 participants in the placebo group and in 11 people in the mRNA-1273 vaccine group. The effectiveness of the vaccine is 94.1%.
+In additional analyses, the vaccine is found to be effective during the patient evaluation 14 days after the first dose, in participants who were positive for coronavirus at the start of the study, and in participants 65 years old or older.
+Serious Covid-19 occurs in 30 participants, with one death. All 30 are in the placebo group.
+Moderate, short-lasting side effects after vaccination occur more often in the mRNA-1273 vaccination group.
+Serious side effects are rare, and the number of times it occurred is similar in the two groups.
+In conclusion, the mRNA-1273 vaccine group shows 94.1% effectiveness at preventing Covid-19, including serious cases of Covid-19.
+Aside from short reactions to mRNA-1273, no safety concerns are found.
+

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0611  |  gem_id: gem-cochrane-simplification-train-612  |  doi: 10.1002/14651858.CD003545.pub2
+
+Thousands of people with schizophrenia have participated in studies and therefore we are reasonably sure that it is a potent antipsychotic drug and as good as similar older drugs. Most people taking it do experience adverse effects, but this also applies to other older drugs. Not enough comparisons with newer generations of drugs have been undertaken to be sure of how trifluoperazine compares to them.

@@ -1,0 +1,5 @@
+pmid:        32766111
+question:    60
+adaptation:  adaptation2
+title:       High incidence of false-positive results of IgG antibody against SARS-CoV-2 with rapid immunochromatographic antibody test due to human common cold coronavirus infection
+sentences:   9

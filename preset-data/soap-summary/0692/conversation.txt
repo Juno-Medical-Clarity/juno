@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0692
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi, there. How are you both doing? What brings you two to the Emergency Department? Guest_family: Hi, Doctor. We're both doing fine. I brought my daughter in today because she's been feeling sick. I see. Let me ask your daughter a few questions before we start. Hi, ma'am. I understand you feel sick. Before we begin I just want to confirm some information with you. Where is your primary residency? My mom can give you the address. I still live with her. Thank you. One last question. Do you smoke? Nope. My Mother has forbidden smoking in her home.

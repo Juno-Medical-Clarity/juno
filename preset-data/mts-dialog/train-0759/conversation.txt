@@ -1,0 +1,4 @@
+Doctor: Do you smoke?
+Patient: Yes.
+Doctor: How much do you smoke?
+Patient: Honestly, I smoke every day.

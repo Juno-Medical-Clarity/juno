@@ -1,0 +1,10 @@
+Corona virus disease 2019, or COVID-19 (a viral, respiratory illness), has become a global health issue.
+The goal of this study was to investigate the characteristics and outcomes of patients with COVID-19 undergoing invasive mechanical ventilation (being helped to breathe by a machine). This study also aimed to identify factors associated with death.
+Ninety four critically ill COVID-19 patients undergoing invasive mechanical ventilation were included in this study.
+The studied variable of interest was death of the patients undergoing invasive mechanical ventilation and factors associated with death during intensive care unit stay.
+Seventy nine out of 94 patients with COVID-19 who underwent invasive mechanical ventilation didn't survive.
+Ninety four percent of patients who had Type 2 Diabetes Mellitus did not survive. This is compared to 72% of patients who didn't have Type 2 Diabetes Mellitus.
+Similarly, 48 out of 51 patients with a positive C-reactive protein value didn't survive in comparison to 31 out of 43 patients with a negative C-reactive protein. C-reactive protein is a type of protein found in the blood that increases during times of internal inflammation (redness and swelling from infection-fighting).
+The presence of Type 2 Diabetes Mellitus and a positive C-reactive protein value were strongly associated with death.
+Patients with a Sequential organ failure assessment score, a ranking system to determine patient's organ function, of >8 at ICU admission and peak D-dimer (protein fragment from dissolved blood clotting) level of ≥ 2 during ICU stay didn't show significant association with death.
+These findings need further exploration in larger studies.

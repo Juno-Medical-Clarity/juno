@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0476
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the fifth fingernail on the left hand, presence of a wood splinter.
+- Severity: A lot of pain.
+- Duration: Not specified.
+- Associated symptoms: None mentioned.
+- Relevant medical history: None mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Other concerns: Concern about the wood splinter stuck in the fingernail.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

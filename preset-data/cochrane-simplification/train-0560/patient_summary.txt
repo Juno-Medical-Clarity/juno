@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0560  |  gem_id: gem-cochrane-simplification-train-561  |  doi: 10.1002/14651858.CD007192.pub2
+
+There were 35 trials on 11,867 participants that examined whether these interventions are effective in reducing sexual and injection behaviour associated with greater risk of developing HIV. There are not large differences in effectiveness between multi-session psychosocial interventions and briefer interventions. This suggests brief educational interventions are more likely to be cost-effective and may be more readily implemented in a variety of different contexts.

@@ -1,0 +1,8 @@
+Doctor: Do you have any chest pain?
+Patient: No, I don't.
+Doctor: Any breathlessness?
+Patient: Yes, I do get breathless only when I have to do some form of exertion like walking a long time or running.
+Doctor: Okay. How about any bowel issues?
+Patient: No, I don't have any stomach problems except I have to go frequently to use a bathroom.
+Doctor: Okay frequency. How about any prolonged bleeding issues or anything like that sort?
+Patient: No nothing like that.

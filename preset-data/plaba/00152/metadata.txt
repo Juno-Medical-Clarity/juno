@@ -1,0 +1,5 @@
+pmid:        28927818
+question:    12
+adaptation:  adaptation1
+title:       Specific allergy and asthma prevention coming to an age: A milestone in children
+sentences:   6

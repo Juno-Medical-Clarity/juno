@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0082  |  gem_id: gem-cochrane-simplification-validation-83  |  doi: 10.1002/14651858.CD006870.pub3
+
+This review is an update of a review previously published in 2011 that included 18 studies, enrolling 14,303 patients. The update of this review did not identify any new studies for inclusion. We did not find a significant risk reduction for all-cause mortality, heart attack, or stroke within the first four months. We had some concerns about risk of bias and imprecision of the results. The risk of unstable angina was reduced by about 25% at four months following acute coronary syndrome. Serious side effects from early treatment with statins were rare (0.1%), and serious muscle toxicity was mostly observed with simvastatin 80 mg.

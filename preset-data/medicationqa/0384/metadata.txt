@@ -1,0 +1,5 @@
+drug_focus: valacyclovir
+question_type: Appearance
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e228913a-8f12-4a4f-bc14-ba44d6e9ece9
+sample_id: 0384

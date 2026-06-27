@@ -1,0 +1,8 @@
+source:      pnas
+side:        complex
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Embryonic diapause'
+  [7:10] 'medical-jargon-google-easy' -> 'reversible developmental arrest'

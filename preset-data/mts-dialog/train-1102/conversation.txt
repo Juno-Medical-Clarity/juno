@@ -1,0 +1,6 @@
+Doctor: Let's talk about your family history.
+Patient: Okay.
+Doctor: Can you tell me about any kind of medical traits that run in your family?
+Patient: I think my family has been blessed or I don't know if any.
+Doctor: What about any heart disease?
+Patient: Nope. No heart disease or diabetes or any other kind of issues that I'm aware of.

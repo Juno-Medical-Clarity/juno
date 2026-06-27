@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [12:16] 'medical-jargon-google-easy' -> 'progestogen - only pills'
+  [37:38] 'medical-jargon-google-easy' -> 'contraception'
+  [39:41] 'medical-jargon-google-easy' -> 'emergency contraception'

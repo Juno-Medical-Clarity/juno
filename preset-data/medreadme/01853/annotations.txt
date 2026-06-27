@@ -1,0 +1,7 @@
+source:      elife
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [8:11] 'medical-jargon-google-easy' -> 'regenerative medicine therapies'

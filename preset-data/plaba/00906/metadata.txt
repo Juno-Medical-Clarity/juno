@@ -1,0 +1,5 @@
+pmid:        26576953
+question:    74
+adaptation:  adaptation3
+title:       Laryngopharyngeal symptoms in patients with chronic obstructive pulmonary disease
+sentences:   12

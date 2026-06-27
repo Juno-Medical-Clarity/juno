@@ -1,0 +1,13 @@
+Mini-Percutaneous Nephrolithotomy (M-PCNL) and Retrograde Intrarenal Surgery (RIRS) are commonly used methods in treatment of kidney stones.
+The aim of our study is to compare the efficacy and safety of M-PCNL and RIRS in kidney stone treatment over 50 years old patients.
+A total of 125 patients, 65 of whom had RIRS, and 60 of whom had M-PCNL, were included in the study.
+Age, gender, BMI (Body-Mass Index), ASA (American Society of Anesthesiology) scores of the patients; stone size, stone location, operation side, ESWL history, HU (Hounsfield Unit) values, hospital stay durations, SFR, complication rates according to Clavien modification system, postoperative hemoglobin loss, postoperative transfusion rates, and patients who needed a secondary operation were recorded.
+SFR values were calculated in the postoperative third and sixth months.
+The data between the two groups had similar characteristics in terms of age, gender, BMI, HU, stone size, operation side, stone location, ESWL history, operation time, postoperative transfusion rate, postoperative Clavien complications (p > 0.05).
+When the ASA categories were evaluated, the mean ASA scores, ASA I, and ASA II data had similar characteristics in both groups (p > 0.05).
+When the ASA 3 scores were evaluated, the number of ASA III patients in the RIRS group was statistically significantly higher (p < 0.05).
+When hospital stay duration and postoperative hemoglobin loss were examined, RIRS group was found to be advantageous (p < 0.05).
+Postoperative third month SFR and Postoperative sixth month values were statistically significantly higher in M-PCNL group (p < 0.05).
+M-PCNL and RIRS are methods that can be used safely and effectively over 50 years old patients in kidney stone surgery.
+M-PCNL has been found to be more advantageous in terms of SFR rates and as it requires less secondary intervention.
+RIRS is advantageous in terms of short hospital stay, postoperative hemoglobin loss, and applicability to patients who are not suitable for the prone position.

@@ -1,0 +1,5 @@
+pmid:        32935877
+question:    30
+adaptation:  adaptation1
+title:       Screening for SARS-CoV-2 antibodies in convalescent plasma in Brazil: Preliminary lessons from a voluntary convalescent donor program
+sentences:   12

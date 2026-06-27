@@ -1,0 +1,14 @@
+source:      cochrane_all
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [4:7] 'general-complex' -> 'randomised controlled trials'
+  [8:9] 'abbr-general' -> 'RCTs'
+  [18:19] 'abbr-medical' -> 'ICS'
+  [20:21] 'abbr-medical' -> 'LABA'
+  [21:23] 'medical-jargon-google-easy' -> 'combination therapy'
+  [26:28] 'medical-jargon-google-easy' -> 'inhaled tiotropium'
+  [29:30] 'medical-jargon-google-easy' -> 'tiotropium'
+  [32:34] 'medical-jargon-google-easy' -> 'combination therapy'

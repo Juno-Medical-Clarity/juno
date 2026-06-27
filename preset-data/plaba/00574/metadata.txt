@@ -1,0 +1,5 @@
+pmid:        29329171
+question:    44
+adaptation:  adaptation1
+title:       Nonhuman Primate (Rhesus Macaque) Models of Severe Pressure-Targeted Hemorrhagic and Polytraumatic Hemorrhagic Shock
+sentences:   10

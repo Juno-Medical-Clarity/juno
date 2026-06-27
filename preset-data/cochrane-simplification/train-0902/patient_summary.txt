@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0902  |  gem_id: gem-cochrane-simplification-train-903  |  doi: 10.1002/14651858.CD003590.pub4
+
+No clear evidence from available RCTs suggests that any of the measures used to protect the kidneys during the perioperative period are beneficial. These findings held true in 14 studies of patients with pre-existing renal damage and in 24 studies that were considered of good methodological quality. The primary outcomes of these studies were mortality and acute renal injury. Reported mortality in studies with low risk of bias was not different between intervention and control groups (odds ratio (OR) 1.01, 95% confidence interval (CI) 0.52 to 1.97) or for acute renal injury (OR 1.05, 95% CI 0.55 to 2.03). The summary of findings revealed a similar picture. So we conclude that evidence suggests that none of the interventions used currently are helpful in protecting the kidneys during the perioperative period, nor do they cause increased harm.

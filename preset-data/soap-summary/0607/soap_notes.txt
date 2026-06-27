@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0607
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient's wife is doing well.
+- Patient has been remodeling their house, which has taken longer than expected.
+- Patient has a 5K race coming up in two weeks.
+- Patient jogs and does cross country track about five times a week.
+- Patient lifts weights twice a week on better days.
+- No smoking or drinking reported.
+- Work is going well; patient works in the allergy and immunology clinic four days a week with flexible hours.
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessments provided.
+
+Plan:
+- No plan provided.

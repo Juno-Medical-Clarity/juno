@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2389  |  gem_id: gem-cochrane-simplification-train-2390  |  doi: 10.1002/14651858.CD007910.pub2
+
+The aim of this review was to determine if homocysteine lowering therapies effectively reduce cardiovascular event rates in kidney transplant recipients. A single study was identified that randomised 4110 adult participants with a functioning kidney transplant to homocysteine lowering with folic acid and high dose multivitamins or to low dose multivitamins and followed them for an average of four years. Despite effectively lowering homocysteine levels, there was no evidence of benefit for any of a range of cardiovascular events. Similarly there was no evidence of harm.

@@ -1,0 +1,5 @@
+drug_focus: albuterol nebulizers
+question_type: Information
+section_title: ABSTRACT
+source_url: https://www.ncbi.nlm.nih.gov/pubmed/29167030
+sample_id: 0329

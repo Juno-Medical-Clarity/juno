@@ -1,0 +1,1 @@
+Since no Treg-specific activation marker is known, we tested 97 NS3-derived peptides for their ability to elicit CD25 response (assuming it is a surrogate marker), accompanied by high resolution HLA typing of the patients.

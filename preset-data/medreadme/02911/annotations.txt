@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 4.0
+split:       dev
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-hard' -> '26S proteasome'
+  [5:8] 'medical-jargon-google-easy' -> 'self - compartmentalized'
+  [8:10] 'medical-jargon-google-easy' -> 'protease complex'

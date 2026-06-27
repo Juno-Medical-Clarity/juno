@@ -1,0 +1,1 @@
+A preliminary estimate of intervention effectiveness, from a weighted linear regression model (adjusting for baseline sitting time and wear time) revealed a mean difference in change in sitting of -30. 6 minutes per day (95% confidence interval -56. 42 to -4. 84 minutes per day) between the intervention and control trial arms.

@@ -1,0 +1,8 @@
+Doctor: Are you a smoker?
+Patient: I used to smoke. I quit in nineteen sixty eight.
+Doctor: Excellent! Have you weighed your self recently?
+Patient: I weighed myself this morning. I am at one hundred and eighty three pounds.
+Doctor:  And how tall are you?
+Patient: I used to be five foot ten but I think I have been shrinking.
+Doctor: That is definitely a possibility. We do shrink as we go through life. I can have the nurse get your height after we do your exam.
+Patient: Okay.

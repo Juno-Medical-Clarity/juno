@@ -1,0 +1,7 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 3.3
+split:       dev
+
+jargon_spans:
+  [12:14] 'medical-jargon-google-easy' -> 'general practitioners'

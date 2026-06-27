@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0496
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How long has she had difficulty swallowing? Guest_family: A while now. We scheduled her to see an endocrinologist, but she's not able to get in until Monday. I wanted to see if we could get to the bottom of it now. It does appear that her thyroids are fairly enlarged. I believe that's where most of her symptoms, if not all, are stemming from. Guest_family: Does that mean she'll need surgery? We'll have to see, but chances are higher since she's experiencing symptoms due to her thyroid. Guest_family: When will we find out? I'd like to get some imaging done and see if we can get a consult in first.

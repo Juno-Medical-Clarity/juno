@@ -1,0 +1,5 @@
+Doctor: So, lets talk about your family, anybody in your family have any neurological problems?
+Patient: No, I don't think so, my parents did experience some memory loss but that was when they were in their nineties. And I am assuming it was mostly from the old age rather than any neuro problem.
+Doctor: Yeah, that is true. And how about your brothers and sisters, do you have any?
+Patient: Oh yeah, I have five siblings and they are pretty healthy! I mean all of them are doing good, no one has any memory issues as far as I know or any neuro related illness.
+Doctor: Okay.

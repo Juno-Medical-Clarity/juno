@@ -1,0 +1,5 @@
+drug_focus: Lansoprazole
+question_type: Side effects
+section_title: Important warnings || Serious side effects
+source_url: https://www.healthline.com/health/lansoprazole-oral-capsule-sprinkles#side-effects
+sample_id: 0197

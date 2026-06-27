@@ -1,0 +1,2 @@
+[MEDICATIONS]
+Include Cipro and Flagyl.

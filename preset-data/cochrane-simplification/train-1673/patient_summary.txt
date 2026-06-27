@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1673  |  gem_id: gem-cochrane-simplification-train-1674  |  doi: 10.1002/14651858.CD003900
+
+Trials comparing ipratropium bromide versus beta-agonists showed no significant difference in short-term or long-term effects (24 hours) on ease of breathing. Side effects of these drugs were reported by only a minority of patients and include dry mouth and tremor, and a 'strange feeling' after drug administration.

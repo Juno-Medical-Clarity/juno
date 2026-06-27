@@ -1,0 +1,5 @@
+pmid:        34659263
+question:    48
+adaptation:  adaptation1
+title:       Clinical Experience of Proteasome Inhibitor Bortezomib Regarding Efficacy and Safety in Severe Systemic Lupus Erythematosus: A Nationwide Study
+sentences:   15

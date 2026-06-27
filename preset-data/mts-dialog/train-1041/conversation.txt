@@ -1,0 +1,18 @@
+Doctor: Good morning, ma'am. Can you tell me more about this low back pain?
+Patient: Well, I'm not as young as I used to be, I'm fifty nine.
+Doctor: What set this pain off? Is there any injury?
+Patient: Yes, I had a fall in the beginning of two thousand six. I slipped on a freshly waxed floor.
+Doctor: What part of your lower back did you fall onto?
+Patient: I fell onto my tailbone and just general lower back.
+Doctor: Is this the only fall you've had?
+Patient: No, I had another one in March of two thousand six.
+Doctor: What happened when you fell that time?
+Patient: I was trying to qualify on the gun range with a handgun, when I lost my footing.
+Doctor: What made you lose your footing?
+Patient: I think it was more weakness than a loss of balance.
+Doctor: What treatments have you had for this?
+Patient: Well, I've been to P T, and I had, um, cauterization of some of the nerves in my lower back.
+Doctor: How many times have you had this cauterization done?
+Patient: I've had it twice, once in October and the other in November.
+Doctor: This was in two thousand eight, right?
+Patient: Correct. The P T said I have low back pain and degenerative disc disease.

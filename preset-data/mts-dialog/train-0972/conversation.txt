@@ -1,0 +1,6 @@
+Doctor: I do not feel any swellings in your neck or groin area.
+Patient: Oh yeah, I don't notice anything either.
+Doctor: Okay yeah, I was just trying to look for any lymph nodes.
+Patient: Okay.
+Doctor: Let me check.
+Patient: Sure.

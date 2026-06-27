@@ -1,0 +1,13 @@
+Gabapentin (GBP), an antiseizure drug, can treat neuropathic or nerve-related pain, including diabetic neuropathic pain.
+We evaluate the role of diabetes and blood sugar control on drug activity in the GBP population.
+A trial was done in 29 patients with neuropathic pain, 19 from type 2 diabetes and 10 from lower back/neck disc herniation or bulging.
+All participants swallowed a single dose of GBP.
+Blood was taken up to 24 hours after GBP treatment.
+
+
+
+
+Measurements for lag time, absorption rate, volume of distribution, and clearance rate were 0.316 h (10.6%), 1.12 h-1 (10.7%), 140 L (7.7%) and 14.7 L/h (6.97%), respectively.
+No link was seen with high blood sugar, blood sugar levels, diabetes diagnosis, age, sex, weight, body mass index, or certain DNA sequences.
+This model measuring drug activity accurately estimated GBP concentrations in those with neuropathic pain, using kidney drug filtration rate for total drug clearance.
+The distribution and removal processes of GBP were not affected by high blood sugar or diabetes.

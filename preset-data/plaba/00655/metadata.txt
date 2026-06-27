@@ -1,0 +1,5 @@
+pmid:        21561990
+question:    50
+adaptation:  adaptation1
+title:       Role of C-reactive protein velocity in the diagnosis of early bacterial infections in children after cardiac surgery
+sentences:   12

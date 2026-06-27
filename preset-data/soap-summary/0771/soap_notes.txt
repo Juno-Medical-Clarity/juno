@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0771
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in both arms and hands, tingling sensation in the left hand, numbness in the left hand.
+- Severity: Troubling pain, worsens at night after repetitive work.
+- Duration: Longstanding pain.
+- Associated Symptoms: None reported; no weakness, no neck pain, regular bowel movements, no urinary issues.
+- Medical History: No previous similar signs or symptoms.
+- Medications: Taking Lyrica, which helps somewhat.
+- Concerns: Patient expresses worry regarding the diagnosis.
+
+Objective:
+- Neurological exam results: Positive Phalen's test on the left hand.
+- Physical exam findings: Normal neurological exam otherwise.
+
+Assessment:
+- Diagnosis: Carpal tunnel syndrome in the left hand, indicated by numbness and tingling sensation due to median nerve compression.
+
+Plan:
+- Further discussion about the cause of symptoms related to repetitive hand motion or wrist anatomy.
+- Reassurance provided to the patient regarding the condition.

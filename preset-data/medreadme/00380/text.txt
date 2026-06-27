@@ -1,0 +1,1 @@
+I explore the dimensionality of physical, neural, and perceptual spaces, drawing on results from bacteria to humans, and propose some experimental approaches to better estimate the number of discriminable odors.

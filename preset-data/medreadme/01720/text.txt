@@ -1,0 +1,1 @@
+In contrast, GlmY acts upstream of GlmZ and positively regulates glmS by antagonizing GlmZ RNA inactivation.

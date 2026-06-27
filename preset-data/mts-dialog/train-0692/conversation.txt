@@ -1,0 +1,5 @@
+Doctor: So, tell me a little bit more about your family history, please.
+Patient: Sure, I know that my grandmother on my mom's side had pancreatic cancer, and my dad had prostate cancer.
+Doctor: Besides cancer, are there any other conditions that you know run in your family?
+Patient: Um, I know that my dad had heart disease, as well as diabetes.
+Doctor: Thank you, this is good information to know.

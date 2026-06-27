@@ -1,0 +1,6 @@
+Doctor: I'm reviewing my notes from your last visit. Your last visit was on May tenth two thousand four, correct?
+Patient: Yes, that's right.
+Doctor: Has there been any change since your last visit?
+Patient: Well, I'm having some increased paranoia.
+Doctor: Have you been treated, and are you taking medicine for this?
+Patient: Yes, and it's actually gotten a lot better with the medicine another doctor gave me.

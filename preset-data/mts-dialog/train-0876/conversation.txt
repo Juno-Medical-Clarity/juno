@@ -1,0 +1,18 @@
+Doctor: Hi there, what's going on?
+Guest_family: I am her daughter. I brought her to the emergency. She lives in a skilled nursing home. Today, when I went to meet her, I found her with the right side of her face drooping. I immediately rushed her here.
+Doctor: Oh, you did the right thing. Ma'am, how are you feeling?
+Guest_family: She has dementia, most of the time she doesn't even remember me.
+Doctor: Oh, okay.How old is she?
+Guest_family: She is eighty three. She also has a history of stroke after which she developed this condition where she knows what she wants to speak but is unable to make the word or sentence.
+Doctor: Oh, I see. She has expressive aphasia, correct?
+Guest_family: Yes, that.
+Doctor: Okay, let me check her. She does have a droop to her right side of the face. Ma'am, do you feel any weakness on the right side of your body?
+Guest_family: She says yes.
+Doctor: She had her C T scan earlier today and I have the report. It does not show any acute attack or anything.
+Guest_family: Okay!
+Doctor: But it does show that she has a new onset of a stroke.
+Guest_family: Is there anything to worry?
+Doctor: I think we need to admit her for observation. We need to monitor her. We will also get her a proper treatment for her urinary infection which is not getting better due to resistance to the oral medicines.
+Guest_family: Yeah, sounds good!
+Doctor: Yeah, let me talk to the nurse.
+Guest_family: Thank you.

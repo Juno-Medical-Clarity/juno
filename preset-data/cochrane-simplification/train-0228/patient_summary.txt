@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0228  |  gem_id: gem-cochrane-simplification-train-229  |  doi: 10.1002/14651858.CD006239.pub2
+
+There was moderate quality evidence that hydrocortisone (a steroid medication) prevented PTSD. There was moderate quality evidence that hydrocortisone reduced the severity of PTSD symptoms. There was no evidence that propranolol (a beta-blocker), escitalopram (a type of antidepressant), temazepam (a tranquillizer) or gabapentin (an anticonvulsant) prevented PTSD. All medications were acceptable, with low numbers of people dropping out due to side effects; however not all studies provided information on this. The review authors do not feel there is sufficient evidence yet to recommend any medication as a preventative treatment for PTSD. The review authors recommend that future high quality research is needed to provide stronger evidence for the effectiveness of medications in preventing PTSD.

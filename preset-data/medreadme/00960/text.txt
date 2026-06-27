@@ -1,0 +1,1 @@
+An outstanding problem is the construction of a CG model with physically accurate conformational energetics rivaling all-atom force fields.

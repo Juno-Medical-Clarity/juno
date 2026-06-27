@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0354
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any medical history that we should be aware of? I have type two diabetes. My numbers always come high. Okay, anything else? I also have high cholesterol. Okay.

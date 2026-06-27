@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1237
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What type of surgeries have you had in the past? I don't know what surgery they did today. I mean I don't know the name of it. It's okay, I know. It is Lap Band. And I have had right side foot surgery done in the past. Okay great. Sure.

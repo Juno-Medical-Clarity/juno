@@ -1,0 +1,21 @@
+Doctor: What brings you in today?
+Patient: I've had a lot of discomfort in my private area.
+Doctor: When did it start?
+Patient: It's been going on for about two weeks now.
+Doctor: Have you noticed any abnormal discharge?
+Patient: Not really, no. But it's been super itchy down there.
+Doctor: Any abdominal pain, nausea, vomiting?
+Patient: Uh no, but I'm having some pain here.
+Doctor: Near your pelvis?
+Patient: Yeah.
+Doctor: Have you started any new lotions or products?
+Patient: No.
+Doctor: Have you tried anything for the pain or itching?
+Patient: No, not yet. I thought it'd go away on it's own.
+Doctor: If it's okay with you, I'd like to do a pelvic exam.
+Patient: Fine with me.
+Doctor: Have you been sexually active prior to or after noticing these concerns?
+Patient: Uh once this past week, but it was pretty painful.
+Doctor: I see. You may have an infection, which is why I'd also like to send out samples to the lab. Did you use protection?
+Patient: Yeah, I take birth control. But I've been struggling a bit with my mood and I'm wondering if it's because of the new birth control pills.
+Doctor: We can look into that as well. Hang tight while I grab the nurse for the pelvic exam.

@@ -1,0 +1,7 @@
+The detection of chemical compounds in exhaled human breath presents an opportunity to determine physiological state, diagnose disease or assess environmental exposure.
+Recent advancements in metabolomics research have led to improved capabilities to explore human metabolic profiles in breath.
+Despite some notable challenges in sampling and analysis, exhaled breath represents a desirable medium for metabolomics applications, foremost due to its non-invasive, convenient and practically limitless availability.
+Several breath-based tests that target either endogenous or exogenous gas-phase compounds are currently established and are in practical and/or clinical use.
+This review outlines the concept of breath analysis in the context of these unique tests and their applications.
+The respective breath biomarkers targeted in each test are discussed in relation to their physiological production in the human body and the development and implementation of the associated tests.
+The paper concludes with a brief insight into prospective tests and an outlook of the future direction of breath research.

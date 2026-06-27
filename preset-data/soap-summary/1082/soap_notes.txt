@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1082
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has a baby girl at home.
+- No complications during pregnancy or delivery.
+- No history of hospitalization for any issue.
+- No history of surgery.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment information provided.)
+
+Plan:
+- (No plan provided.)

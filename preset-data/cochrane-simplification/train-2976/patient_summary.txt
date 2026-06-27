@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2976  |  gem_id: gem-cochrane-simplification-train-2977  |  doi: 10.1002/14651858.CD002886
+
+This review asked the question "do steroid drugs help children admitted to hospital with asthma?" We found that steroids given by mouth or through an intravenous tube help children recover from acute asthma. The benefits may include earlier discharge or a shorter stay in hospital. Children were less likely to come back to hospital in the one to three months following the admission. However, the evidence was not overwhelming due to the limited number of studies available and different medicines used. Further research needs to concentrate on the best medications to use and the best route of administration.

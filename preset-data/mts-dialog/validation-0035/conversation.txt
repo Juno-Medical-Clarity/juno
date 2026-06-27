@@ -1,0 +1,2 @@
+Doctor: Does she have any past medical history or health problems?
+Guest_family: No. She is a healthy child.

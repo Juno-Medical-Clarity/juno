@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0866  |  gem_id: gem-cochrane-simplification-train-867  |  doi: 10.1002/14651858.CD004440.pub2
+
+Ten studies included altogether 741 children and lasted between six months and 6.2 years. Results showed that individuals treated with growth hormone remain relatively short when compared with peers of normal stature. Girls treated with growth hormone were 7.5 cm taller than untreated controls (growth hormone treated group 155.3 cm and control group 147.8 cm); another trial found that children treated with growth hormone were 3.7 cm taller than children in a placebo-treated group. No serious adverse effects were reported in the included studies. Although serious adverse effects (there has been concern that growth hormone would induce new tumours or increase the likelihood of tumour relapse) may be rare, their possibility must also be taken into consideration.

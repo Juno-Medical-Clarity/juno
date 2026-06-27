@@ -1,0 +1,5 @@
+pmid:        25963653
+question:    54
+adaptation:  adaptation1
+title:       Reference ranges and determinants of total hCG levels during pregnancy: the Generation R Study
+sentences:   12

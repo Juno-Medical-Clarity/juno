@@ -1,0 +1,6 @@
+Doctor: Do you drink or smoke, ma'am?
+Patient: No, I don't do any of that.
+Doctor: Good, what about harder drugs?
+Patient: No, none of that either.
+Doctor: Very good. Do you have any history of S T D that you know about?
+Patient: No, there's no history of any of that there.

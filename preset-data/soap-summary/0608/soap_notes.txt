@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0608
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Muscle sprain in upper back
+- Severity: Usually rated as 2 out of 10; at worst, rated as 3 or 4 out of 10
+- Duration: Not specified
+- Associated symptoms: Trouble sleeping at night (not severe)
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: No loss of balance, normal strength, no signs of infection (no fever or chills), over-the-counter medications help with pain
+
+Objective:
+- No measurable or observable data provided
+
+Assessment:
+- No clinician's interpretation or diagnoses provided
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned

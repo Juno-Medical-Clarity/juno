@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1344
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What do you do for a living, sir? I'm actually retired, but I used to work as a dock hand. That's great, congratulations on your retirement! Thank you so much, doctor. I just need some background information on you, sir. Do you smoke? Sure, I smoke about a half a pack of cigarettes a day. Do you drink, sir? Well, not anymore, but I used to be an alcoholic.

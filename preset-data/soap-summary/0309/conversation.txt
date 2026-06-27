@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0309
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Ready to go home? I just can't wait. Sure. I can understand. Bye Doctor. Yes. See you soon.

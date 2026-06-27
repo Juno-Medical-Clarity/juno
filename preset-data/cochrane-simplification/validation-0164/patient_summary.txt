@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0164  |  gem_id: gem-cochrane-simplification-validation-165  |  doi: 10.1002/14651858.CD001837.pub3
+
+Our review of fifty trials found that effective programmes to stop smoking are those that begin during a hospital stay and include counselling with follow-up support for at least one month after discharge. Such programmes are effective when administered to all hospitalised smokers, regardless of the reason why they were admitted to hospital, and in the subset of smokers who are admitted to hospital with cardiovascular disease. Adding nicotine replacement therapy to a counselling program increases the success rate of a program for hospitalised smokers.

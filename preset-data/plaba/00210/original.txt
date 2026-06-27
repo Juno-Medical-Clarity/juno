@@ -1,0 +1,18 @@
+Study objectives: Many factors influence the rate of gastric emptying and therefore the rate of drug absorption in the orally poisoned patient.
+Limited studies have evaluated the effect of body position on the rate of gastric emptying of radiographically marked foods and contrast media, but effects on drug absorption have not been studied previously.
+Our hypothesis was that body position would have an effect on the rate of drug absorption in an oral overdose model.
+Design: A blinded, within-subjects (crossover) design.
+Participants: Six male and six female healthy, adult volunteer subjects with no concurrent drug use or medications affecting gastrointestinal function.
+Interventions: Five body positions commonly used in prehospital and emergency department settings were examined: left lateral decubitus, right lateral decubitus, supine, prone, and sitting.
+All were performed by all subjects in random order with a three-day washout phase between trials.
+To simulate an acute overdose, fasted subjects ingested 80 mg/kg acetaminophen in the form of 160-mg pediatric tablets.
+Each subject then remained in the body position for that trial for two hours.
+Acetaminophen levels were obtained at 15-minute intervals, and a two-hour area under the curve (AUC) was calculated for each subject trial to represent total drug absorption during each study period.
+Investigators were blinded to all results until all trials were completed.
+Measurements and main results: All subjects completed the study.
+Group mean drug absorption as represented by two-hour AUC (mg.L.min) was calculated for each body position.
+AUC for left lateral decubitus (6,006 +/- 2,614) was lowest but did not significantly differ from that for supine (6,649 +/- 2,761).
+Both were significantly less than those for prone (7,432 +/- 1,809), right lateral decubitus (8,950 +/- 1,405), and sitting (8,608 +/- 1,725) positions (P less than .05 by one-way analysis of variance and follow-up paired t tests).
+Conclusion: Initial drug absorption as determined by two-hour AUC was lowest in the left lateral decubitus position.
+Although the difference between the left lateral decubitus and supine positions did not reach statistical significance, both left lateral decubitus and supine were significantly lower than three other common patient body positions tested.
+Because the left lateral decubitus position has other advantages (eg, prevention of aspiration) in addition to minimizing drug absorption, we recommend that orally poisoned patients be placed in the left lateral decubitus position for prehospital and initial ED management.

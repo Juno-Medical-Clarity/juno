@@ -1,0 +1,9 @@
+Fibroblast growth factors (FGFs) and their receptors (FGFRs) play significant roles in vertebrate organogenesis and morphogenesis.
+FGFR3 is a negative regulator of chondrogenesis and multiple mutations with constitutive activity of FGFR3 result in achondroplasia, one of the most common dwarfisms in humans, but the molecular mechanism remains elusive.
+In this study, we found that chondrocyte-specific deletion of BMP type I receptor a (Bmpr1a) rescued the bone overgrowth phenotype observed in Fgfr3 deficient mice by reducing chondrocyte differentiation.
+Consistently, using in vitro chondrogenic differentiation assay system, we demonstrated that FGFR3 inhibited BMPR1a-mediated chondrogenic differentiation.
+Furthermore, we showed that FGFR3 hyper-activation resulted in impaired BMP signaling in chondrocytes of mouse growth plates.
+We also found that FGFR3 inhibited BMP-2- or constitutively activated BMPR1-induced phosphorylation of Smads through a mechanism independent of its tyrosine kinase activity.
+We found that FGFR3 facilitates BMPR1a to degradation through Smurf1-mediated ubiquitination pathway.
+We demonstrated that down-regulation of BMP signaling by BMPR1 inhibitor dorsomorphin led to the retardation of chondrogenic differentiation, which mimics the effect of FGF-2 on chondrocytes and BMP-2 treatment partially rescued the retarded growth of cultured bone rudiments from thanatophoric dysplasia type II mice.
+Our findings reveal that FGFR3 promotes the degradation of BMPR1a, which plays an important role in the pathogenesis of FGFR3-related skeletal dysplasia.

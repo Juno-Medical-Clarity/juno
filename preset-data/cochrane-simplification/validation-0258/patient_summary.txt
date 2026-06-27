@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0258  |  gem_id: gem-cochrane-simplification-validation-259  |  doi: 10.1002/14651858.CD001697
+
+The review found only one randomised trial which assessed the effect of the timing of surgery. From the limited evidence available, the timing of surgery was not a critical factor in determining the outcome from an aneurysmal subarachnoid haemorrhage, but further research is needed.

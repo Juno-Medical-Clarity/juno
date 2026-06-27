@@ -1,0 +1,6 @@
+Doctor: Are you allergic to anything?
+Patient: Yes, I am allergic to eggs and peanuts.
+Doctor: Oh, okay.
+Doctor: Anything else? Any medication?
+Patient: No, nothing else.
+Doctor: Alright.

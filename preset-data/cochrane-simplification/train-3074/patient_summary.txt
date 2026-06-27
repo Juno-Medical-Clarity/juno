@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3074  |  gem_id: gem-cochrane-simplification-train-3075  |  doi: 10.1002/14651858.CD003153
+
+It was not possible to extract the results from the first phases of two included crossover studies of D-cycloserine for Alzheimer's disease and therefore the meta-analyses are based on the included two parallel group 6-month studies. The lack of a positive effect of D-cycloserine on cognitive outcomes in controlled clinical trials with statistical power high enough to detect a clinically meaningful effect means that D-cycloserine has no place in the treatment of patients with Alzheimer's disease.

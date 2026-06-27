@@ -1,0 +1,12 @@
+Background: Vitamin B6 is thought to be a most versatile coenzyme that participates in more than 100 biochemical reactions.
+It is involved in amino acid and homocysteine metabolism, glucose and lipid metabolism, neurotransmitter production and DNA/RNA synthesis.
+Vitamin B6 can also be a modulator of gene expression.
+Nowadays, clinically evident vitamin B6 deficiency is not a common disorder, at least in the general population.
+Nevertheless, a subclinical, undiagnosed deficiency may be present in some subjects, particularly in the elderly.
+Objective: This review gives a complete overview over the metabolism and interactions of vitamin B6.
+Further, we show which complications and deficiency symptoms can occur due to a lack of vitamin B6 and possibilities for public health and supplemental interventions.
+Methods: The database Medline (www.ncvi.nlm.nih.gov) was searched for terms like "vitamin B6", "pyridoxal", "cancer", "homocysteine", etc.
+For a complete understanding, we included studies with early findings from the forties as well as recent results from 2006.
+These studies were summarised and compared in different chapters.
+Results and conclusion: In fact, it has been proposed that suboptimal vitamin B6 status is associated with certain diseases that particularly afflict the elderly population: impaired cognitive function, Alzheimer's disease, cardiovascular disease, and different types of cancer.
+Some of these problems may be related to the elevated homocysteine concentrations associated to vitamin B6 deficiency, but there is also evidence for other mechanisms independent of homocysteine by which a suboptimal vitamin B6 status could increase the risk for these chronic diseases.

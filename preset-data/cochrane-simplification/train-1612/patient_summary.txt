@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1612  |  gem_id: gem-cochrane-simplification-train-1613  |  doi: 10.1002/14651858.CD009238.pub2
+
+We included two well-designed studies with a total of 130 adult participants, each study using a different species of gastrointestinal helminth (human hookworm in one study and pig whipworm in the other) as the intervention. Both studies found no significant efficacy from helminths, although one helminth species (Trichuris suis, the pig whipworm) reduced the need for participants to take tablets as ‘rescue medication’ during the grass pollen season. Adverse events such as abdominal pain and flatulence were commoner in the helminth group, but the two helminths species studied did not cause serious adverse reactions. Currently there is insufficient evidence to support the use of helminths for allergic rhinitis in routine clinical practice. More preclinical studies are needed, before larger and extended duration clinical trials of helminths for allergic rhinitis are performed.

@@ -1,0 +1,1 @@
+Statistical methods that analyze data from high dimensional experiments (HDEs) seek to estimate quantities that are of interest to scientists, such as mean differences in gene expression levels and false discovery rates.

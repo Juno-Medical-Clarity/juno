@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1244
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I do not feel any swellings in your neck or groin area. Oh yeah, I don't notice anything either. Okay yeah, I was just trying to look for any lymph nodes. Okay. Let me check. Sure.

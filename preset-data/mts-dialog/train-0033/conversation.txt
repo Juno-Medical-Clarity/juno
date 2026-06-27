@@ -1,0 +1,19 @@
+Doctor: Hello, so you are here for follow up today.
+Patient: Yes, very much.
+Doctor: I will ask you some regular questions, okay?
+Patient: Sure.
+Doctor: Any pain in urination?
+Patient: Nope.
+Doctor: Any fever or chills?
+Patient: Neither of them.
+Doctor: Have you noticed any blood while urinating? Any blood in your urine?
+Patient: Nope. I do leak, especially when I'm changing my positions like from sitting to standing so I do feel there is some involuntary urination. It's more like a urge. I'm loading data in like every one hour in the morning, especially when I take that Lasix.
+Doctor: Does it taper off in the afternoon or night?
+Patient: It tapers off in the afternoon. And by the night I don't do not feel anything.
+Doctor: Any leakage in the night?
+Patient: Nope.
+Doctor: Do you apply a lot of force to urinate?
+Patient: Nope.
+Doctor: How about this stream? Is it good or less? Are you emptying well? And what about the bowel movement?
+Patient: The stream is good. It does feel like all is out in one go. I do not have any kind of bowel issues. I'm using my vaginal cream. Sometimes I feel difficulty in doing so because I feel that there is still something coming out from the vagina and I'm afraid that there might be a prolapse.
+Doctor: Don't worry, I will look into it.

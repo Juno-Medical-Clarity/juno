@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0870
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+He had circumcision? Yes. Do you remember the date? No I do not. But it should be in the chart.

@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0933
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Disturbing family history:
+ - Mother passed away due to heart attack in her late sixties.
+ - Father had liver cancer and passed away from that.
+ - One son suffers from hypothyroidism.
+ - Daughter's two children have cerebral palsy from being born prematurely.
+- Emotional concern regarding family health history.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned.)

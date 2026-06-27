@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1386  |  gem_id: gem-cochrane-simplification-train-1387  |  doi: 10.1002/14651858.CD003887.pub2
+
+The review found some evidence that hGH does increase short-term growth in girls with TS and adult height (an increase of perhaps five centimeters or two inches). However, girls treated with hGH are still substantially shorter than other women as adults. Final height in 61 treated women was 148 cm and 141 cm in 43 untreated women.

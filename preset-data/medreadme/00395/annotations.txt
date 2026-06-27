@@ -1,0 +1,6 @@
+source:      elife
+side:        simple
+readability: 3.3
+split:       train
+
+jargon_spans: (none)

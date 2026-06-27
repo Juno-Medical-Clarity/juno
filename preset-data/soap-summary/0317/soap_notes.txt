@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0317
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No major illnesses in the family such as diabetes or high blood pressure.
+- No other symptoms, concerns, or medical history mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

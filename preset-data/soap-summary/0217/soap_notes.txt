@@ -1,0 +1,34 @@
+# SOAP Notes — Sample 0217
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Muscle aches, headache, and dry cough for the past 3 days
+- Cough has worsened slightly over the past 3 days
+- Headache described as a squeezing sensation on the forehead, both sides
+- Tylenol has been used for headache relief, providing some relief
+- No fever, chills, sore throat, runny nose, congestion, breathing difficulties, chest pain, palpitations, abdominal pain, changes in bowel movements, or urinary function
+- No nausea, vomiting, or neck stiffness
+- Upper back and shoulders feel sore
+
+Past Medical History:
+- PMHx: high cholesterol
+- Medications: statin
+- Allergies: possible penicillin allergy (hives/rash as a child)
+- FHx: father had a stroke in his late seventies, mother had high cholesterol
+- SocHx: quit smoking 17 years ago (smoked half a pack per day for 12 years), consumes 3-4 glasses of wine over the weekend, no marijuana or recreational drug use, takes magnesium, vitamin D, and a multivitamin
+- Exposure: attended a family party last weekend, no known contact with sick individuals, not vaccinated for COVID-19
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Possible viral infection (upper respiratory infection)
+- Possible COVID-19
+
+Plan:
+- COVID-19 test
+- Stay hydrated, continue to eat and drink well
+- Monitor symptoms
+- Continue taking Tylenol
+- Rest
+- Call 911 if experiencing shortness of breath or worsening symptoms

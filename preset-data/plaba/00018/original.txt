@@ -1,0 +1,14 @@
+Background: Antidepressants-induced movement disorders are rare and imperfectly known adverse drug reactions.
+The risk may differ between different antidepressants and antidepressants' classes.
+The objective of this study was to assess the putative association of each antidepressant and antidepressants' classes with movement disorders.
+Methods: Using VigiBase®, the WHO Pharmacovigilance database, disproportionality of movement disorders' reporting was assessed among adverse drug reactions related to any antidepressant, from January 1967 to February 2017, through a case/non-case design.
+The association between nine subtypes of movement disorders (akathisia, bruxism, dystonia, myoclonus, parkinsonism, restless legs syndrome, tardive dyskinesia, tics, tremor) and antidepressants was estimated through the calculation first of crude Reporting Odds Ratio (ROR), then adjusted ROR on four potential confounding factors: age, sex, drugs described as able to induce movement disorders, and drugs used to treat movement disorders.
+Results: Out of the 14,270,446 reports included in VigiBase®, 1,027,405 (7.2%) contained at least one antidepressant, among whom 29,253 (2.8%) reported movement disorders.
+The female/male sex ratio was 2.15 and the mean age 50.9 ± 18.0 years.
+We found a significant increased ROR for antidepressants in general for all subtypes of movement disorders, with the highest association with bruxism (ROR 10.37, 95% CI 9.62-11.17) and the lowest with tics (ROR 1.49, 95% CI 1.38-1.60).
+When comparing each of the classes of antidepressants with the others, a significant association was observed for all subtypes of movement disorders except restless legs syndrome with serotonin reuptake inhibitors (SRIs) only.
+Among antidepressants, mirtazapine, vortioxetine, amoxapine, phenelzine, tryptophan and fluvoxamine were associated with the highest level to movement disorders and citalopram, paroxetine, duloxetine and mirtazapine were the most frequently associated with movement disorders.
+An association was also found with eight other antidepressants.
+Conclusions: A potential harmful association was found between movement disorders and use of the antidepressants mirtazapine, vortioxetine, amoxapine, phenelzine, tryptophan, fluvoxamine, citalopram, paroxetine, duloxetine, bupropion, clomipramine, escitalopram, fluoxetine, mianserin, sertraline, venlafaxine and vilazodone.
+Clinicians should beware of these adverse effects and monitor early warning signs carefully.
+However, this observational study must be interpreted as an exploratory analysis, and these results should be refined by future epidemiological studies.

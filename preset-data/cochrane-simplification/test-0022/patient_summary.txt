@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0022  |  gem_id: gem-cochrane-simplification-test-23  |  doi: 10.1002/14651858.CD009566.pub2
+
+The evidence is current to July 2014. Among the 30 studies reviewed there were 17 different comparisons, including 4344 participants ranging in age between 4 and 85 years. The duration of treatment ranged from one to eight weeks. Ten out of 30 studies were funded by the drug manufacturer (8 totally and 2 partially funded); 20 studies did not report any source of funding. There was inconsistency in the way the effect of treatment was measured and reported. Overall risk of bias was low. Topical antihistamines and mast cell stabilisers, alone or in combination, are safe and effective for reducing symptoms of seasonal and perennial allergic conjunctivitis. We found insufficient evidence to discern which topical antihistamines and mast cell stabilisers are the most effective.

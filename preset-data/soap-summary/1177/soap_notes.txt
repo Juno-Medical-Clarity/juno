@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1177
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Massive headache
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: Not mentioned
+- Relevant medical history: High blood sugar
+- Family history: Migraines run in the family; diabetes also runs in the family
+- Allergies: Not mentioned
+- Other concerns: Mention of eating too much rice for dinner
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessments provided.
+
+Plan:
+- No plan provided.

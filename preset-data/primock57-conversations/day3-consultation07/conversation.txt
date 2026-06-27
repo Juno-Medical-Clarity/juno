@@ -1,0 +1,167 @@
+# PriMock57 Consultation Transcript: day3_consultation07
+# Source: https://raw.githubusercontent.com/babylonhealth/primock57/main/transcripts/
+# Dataset: https://github.com/babylonhealth/primock57
+
+Patient: [unintelligible] Hello?
+
+Doctor: Hi. Hi. My name is Doctor Jacob, and welcome to Babylon. [unintelligible] How are you?
+
+Patient: Thank you. I'm I'm I'm good. I mean I [unintelligible] I'm uh, so, I'm bad.
+
+Doctor: So. Your [unintelligible], OK. Right so just before we start, is it alright if you could confirm your name for me please?
+
+Patient: [unintelligible]
+
+Doctor: And, your date of birth?
+
+Patient: Seventeen of January, nineteen eighty seven.
+
+Doctor: And your address for me, please.
+
+Patient: Uh, sixty Hanover steps. Um
+
+Doctor: That's good. And, just to confirm that you're in a secure location and we can have a confidential conversation.
+
+Patient: London. Yes.
+
+Doctor: OK. So, you mentioned in our notes that you've got, um, skin problem. If you can tell me a bit more about it, please.
+
+Patient: Yes, [unintelligible] over the past few days I had uh, I've noticed my skin is uh, sore and red.
+
+Doctor: OK. So where is it sore and red?
+
+Patient: Um, it's uh, all over my chest, my hands and arms, and especially inside of the elbows. And, uh
+
+Doctor: [unintelligible] that.
+
+Patient: [unintelligible] on the, on the inside of the elbow.
+
+Doctor: Elbows, OK. Inside of the elbows, yeah?
+
+Patient: Which is the, the worst area.
+
+Doctor: Alright, [unintelligible] area. Is it very itchy?
+
+Patient: It's very itchy and, uh, dry, all over my body
+
+Doctor: Itchy and dry, OK. Have you had something like this in the past?
+
+Patient: Yes, uh, if I haven't [unintelligible] had [unintelligible]
+
+Doctor: OK. Do you think this is similar to your usual eczema, or is it worse?
+
+Patient: Uh, I think it's, yeah, it's getting worse, like, the past few days. Way worse.
+
+Doctor: Yeah. But you, could be like something similar. So on the skin is there any, you know any of the patches, [unintelligible] sore and you mentioned it's quite sore. Is it weeping? Is it like watery liquid coming from that area? Weeping? [unintelligible]
+
+Patient: [unintelligible] No. No.
+
+Doctor: Nothing [unintelligible]. OK. Right.
+
+Patient: But, but, not the areas that are cracked.
+
+Doctor: Yeah. So you have cracks over there, OK. And is there any scratch marks on your, on any of the, you know, areas, any scratch marks?
+
+Patient: I mean uh, it's very itchy if I scratch myself, but there's no scratch mark.
+
+Doctor: No. OK. Is there any thickened skin? Like, [unintelligible] you know, where it's, the skin's very, um, thick, and darkened areas?
+
+Patient: Mmm, no, no, I don't think, I don't think so.
+
+Doctor: OK. Uh, righty-ho. So, you've mentioned you've, got a history of eczema, so what do you do about it? [unintelligible] How do you keep it under control?
+
+Patient: Yeah, usually I use a a a cream called diprobase. Uh, and in the shower I use something called dermal.
+
+Doctor: [unintelligible] Dermal, alright, and have you been using them recently, or not?
+
+Patient: Yes. Yes, I, I use them.
+
+Doctor: You use them every day?
+
+Patient: Yes I, there there's no change in that. I didn't change any [unintelligible].
+
+Doctor: [unintelligible] OK. Have you ever used steroids in the past, for your eczema?
+
+Patient: Um. I, I, I'm not sure. Uh, ah, yes, yes, [unintelligible] yes, I remember now, I [unintelligible]
+
+Doctor: [unintelligible] You've used steroids before?
+
+Patient: Um, but it, it's not helping. [unintelligible]
+
+Doctor: [unintelligible] Yeah. Also, you're still using the steroids.
+
+Patient: Yeah, I tried. I tried.
+
+Doctor: Which one are you using, the steroids? What's the name?
+
+Patient: I'm not sure, it's uh, I would have [unintelligible] the box is not there.
+
+Doctor: [unintelligible], is it the [unintelligible]? OK. So, [unintelligible] is it like the over-the-counter ones?
+
+Patient: Sorry?
+
+Doctor: Over the counter Hydrocortisone. That, does that ring a [unintelligible] ? Yeah. So you're using the Hydrocortisone, yeah?
+
+Patient: Yes.
+
+Doctor: Are you using any antihistamines at all?
+
+Patient: I No.
+
+Doctor: No, no antihistamines. OK. Right, fine. Otherwise, other than those rash, you're feeling well in yourself. There's no temperature, no joint pains, yeah? [unintelligible] No fever?
+
+Patient: [unintelligible] But, I remember that I've tried [unintelligible] and it didn't work.
+
+Doctor: You've tried the antihistamines and it didn't work. OK which one did you try?
+
+Patient: The one over-the-counter.
+
+Doctor: OK, so like cetirizine, yeah? Yeah, OK, that's fine. Right. OK, so from what you're describing, It looks like, you know, it is quite widespread, your eczema. Yeah? 'Cause you're having it all over your chest and [unintelligible] hands and things like that. Um. So do you have any [unintelligible] allergies to any medication at all?
+
+Patient: Mm-hmm. No, no allergies.
+
+Doctor: No allergies, OK. And you don't, other than eczema you don't have [unintelligible] any other medical condition.
+
+Patient: I, I have [unintelligible] asthma, and, uh, in my family, uh, there's hypothyroidism and migraine. My mother has migraine.
+
+Doctor: [unintelligible] Mother has migraine and, what was the other one, I didn't understand.
+
+Patient: [unintelligible] hypothyroidism.
+
+Doctor: [unintelligible] who who has hypothroidism?
+
+Patient: My mother.
+
+Doctor: OK. So, she has hyperthyroidism. OK. That's fine. Right here, you mentioned you have asthma. So, what medications are you using for asthma?
+
+Patient: Um uh, you know, probably neither. Uh
+
+Doctor: The blue inhaler? So you don't, you don't use it everyday, so you just use it on and off, yeah?
+
+Patient: Yeah. Yeah.
+
+Doctor: Blue inhalers. But your breathing's all OK, yeah?
+
+Patient: OK, yeah, yeah. [unintelligible] It's only when I have a flare. [unintelligible]
+
+Doctor: Yeah. Sure. [unintelligible] So, what we need to do is, obviously, you've got [unintelligible], as I've mentioned. So, extensive eczema. What we'll do, we need a couple of minutes. Because to keep your a bit comfortable, we'll, you would probably need some antihistamines, which I'm going to prescribe. Also, hydrocortisone is a baby steroid that you use for young children. You might probably need a bit more stronger one, like betnovateor something like that. OK?
+
+Patient: [unintelligible]
+
+Doctor: So we'll try that first. So I'm going to [unintelligible] it's called the antihistamine is called Fexofenadine. And then we'll try with some Betnovate first. So it's like very small amount, like it's like one fingertip. Yeah. This much is, is enough to cover your palms. And your - back of your hands, yeah? So it's very small amounts, so that if you can imagine you can cover with a very small amount the whole body. Yeah. So use that. You, you have to use it twice a day, for the next couple of weeks. OK. If, if there's no improvement, you need to get back to us. Or, if you have any kind of adverse reaction, like an allergic reaction, which is unlikely, but if it still happens you need to get in touch with us. OK?
+
+Patient: OK. OK. Thank you very much.
+
+Doctor: [unintelligible] So, what we're going to do is, we're going to send off the prescription to your pharmacy. It looks like Boots on the systems, is that correct? Yeah? Yes, so i'll send it across to Boot's. And it will be there for [unintelligible] collecting.
+
+Patient: Yes.
+
+Doctor: If things are getting worse in the next two weeks, call us before hand. Otherwise, wait for two weeks, take the medication and the cream. You still need to continue on your, emollients like the dermal soap, and, as well as the, diprovate. Yeah, so you still need to use those, in the interim. Any questions at all?
+
+Patient: [unintelligible] No. No questions. Thank you. Thank you very
+
+Doctor: OK then. You take care then. Bye bye now.
+
+Patient: OK.
+
+Doctor: Bye. Bye.

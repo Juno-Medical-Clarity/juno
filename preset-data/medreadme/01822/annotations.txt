@@ -1,0 +1,6 @@
+source:      MSD
+side:        simple
+readability: 2.7
+split:       train
+
+jargon_spans: (none)

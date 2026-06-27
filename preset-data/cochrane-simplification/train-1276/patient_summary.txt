@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1276  |  gem_id: gem-cochrane-simplification-train-1277  |  doi: 10.1002/14651858.CD006576.pub2
+
+In nine trials we observed that antibiotic prophylaxis is effective in preventing infectious complications (bacteriuria, bacteremia, fever, urinary tract infection, sepsis) and hospitalization following prostate biopsy. Several classes of antibiotics are effective for prophylaxis in prostate biopsy, with the quinolones the best analysed class. There are no definitive data to confirm that antibiotic for long-course is superior to short-course treatment, or that multiple-dose treatment is superior to single-dose treatment.

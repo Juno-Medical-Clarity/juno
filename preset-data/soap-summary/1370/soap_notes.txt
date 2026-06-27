@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1370
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is an 18-year-old female.
+- Reports right knee pain after injury while playing tennis three days ago.
+- Describes pain as severe ("it really hurts").
+- Reports instability in the knee, feels like she is going to fall over.
+- Previous medical history includes:
+ - Torn ACL in 2008, underwent ACL reconstruction surgery.
+ - ACL revision surgery at the end of 2008.
+- Family member notes that the patient did not follow post-operative recommendations after the first surgery, leading to less tightness in the knee.
+- Following the ACL revision, the patient states she did fine until the recent injury and had no instability.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

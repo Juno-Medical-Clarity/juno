@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1211
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, you are following up for your high blood pressure and high cholesterol? Yes.

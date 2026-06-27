@@ -1,0 +1,13 @@
+Background: Dronedarone is a new multichannel blocker for atrial fibrillation (AF) previously demonstrated to have both rhythm and rate control properties in paroxysmal and persistent AF.
+The Efficacy and safety of dRonedArone for The cOntrol of ventricular rate during atrial fibrillation (ERATO) trial assessed the efficacy of dronedarone in the control of ventricular rate in patients with permanent AF, when added to standard therapy.
+Methods: In this randomized, double-blind, multinational trial, dronedarone, 400 mg twice a day (n = 85), or matching placebo (n = 89) was administered for 6 months to adult patients with permanent AF, in addition to standard therapy.
+The primary end point was the change in mean ventricular rate between baseline and day 14, as assessed by 24-hour Holter.
+Ventricular rate was also assessed during submaximal and maximal exercise.
+Results: Dronedarone significantly decreased mean 24-hour ventricular rate.
+Compared with placebo, the mean treatment effect at day 14 was a reduction of 11.7 beats per minute (beat/min; P < .0001).
+Comparable reductions were sustained throughout the 6-month trial.
+During maximal exercise and compared to placebo, there was a mean reduction of 24.5 beat/min (P < .0001), without any reduction in exercise tolerance as measured by maximal exercise duration.
+The effects of dronedarone were additive to those of other rate-control agents, including beta-blockers, calcium antagonists, and digoxin.
+Dronedarone was well tolerated, with no organ toxicities or proarrhythmia.
+Conclusion: In addition to its reported rhythm-targeting and rate-targeting therapeutic actions in paroxysmal and persistent AF, dronedarone improves ventricular rate control in patients with permanent AF.
+Dronedarone was well tolerated with no evidence of organ toxicities or proarrhythmias in this short-term study.

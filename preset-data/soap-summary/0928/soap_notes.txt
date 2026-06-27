@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0928
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: sore throat, puffy eyes, nasally
+- Severity: temperature of 101°F
+- Duration: since last night
+- Associated symptoms: appears more sluggish than usual, raspy voice
+- Relevant medical history: previously given Benadryl
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Concern about giving medication on top of Benadryl
+
+Objective:
+- Vital signs: Temperature of 101°F
+- Physical examination findings: Puffy eyes, raspy voice
+
+Assessment:
+- No assessment or diagnosis provided in the conversation.
+
+Plan:
+- No plan or treatment recommendations provided in the conversation.

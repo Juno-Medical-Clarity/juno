@@ -1,0 +1,4 @@
+Doctor: Any medical issues in the past?
+Patient: No, I have a very clean history.
+Doctor: That's good for you. Any kind of surgery or hospitalization?
+Patient: No.

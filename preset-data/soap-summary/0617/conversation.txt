@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0617
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you live with your husband? Yes, we live on a ranch about twenty miles away. Do you have children? We had six children all together, but two of them passed away suddenly. I'm so sorry to hear that. How old were they? One was forty years old and the other was forty five. Wow, they were quite young. I offer you my sincerest condolences. Thank you. It's been really hard on my family, but we're trying our best to get by. That's all you can do. It's important to spend time with each other every chance you get. Exactly. I have a few more questions to ask before we end today. Go ahead. Do you have family history of any medical problems? No. Do you smoke or drink? Never.

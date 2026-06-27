@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3079  |  gem_id: gem-cochrane-simplification-train-3080  |  doi: 10.1002/14651858.CD006014.pub7
+
+This review compares the survival of women with advanced epithelial ovarian cancer, who had IDS performed between cycles of chemotherapy after primary surgery, with survival of women who had conventional treatment (primary debulking surgery and adjuvant chemotherapy). It found similar survival rates in women who did and did not receive IDS. Not enough information about adverse effects was available. Information on quality of life of the women was also inconclusive.

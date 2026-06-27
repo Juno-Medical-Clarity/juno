@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1271
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had spine problems before? What, like an injury? Well, it's broad. It could be an injury, or just any kind of pain. Oh, no. I've never had any problems.

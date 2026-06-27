@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1169
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, are you married? No, my wife and I got divorced a while ago. We have three children together, though. Okay, and do you have someone who is managing your case? Yes, I have an lawyer handling everything. Do you smoke or drink? No, I never really smoke or drink.

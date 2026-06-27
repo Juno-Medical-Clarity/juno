@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0175  |  gem_id: gem-cochrane-simplification-validation-176  |  doi: 10.1002/14651858.CD008125.pub2
+
+Several clinical trials reported effects of sulpiride augmentation for management of schizophrenia. We included four small trials which compared sulpiride plus clozapine with clozapine alone for very ill people. Evidence from the present review suggested that short-term sulpiride plus clozapine probably is more effective than clozapine alone in producing clinical improvement in some people. The evidence is, however, weak and prone to considerable bias. This is a good area for more research.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1857  |  gem_id: gem-cochrane-simplification-train-1858  |  doi: 10.1002/14651858.CD001450.pub4
+
+It is used in pregnancy to study blood circulation in the baby, uterus and placenta. Using it in high-risk pregnancies, where there is concern about the baby's condition, shows benefits. However, its value as a screening tool in all pregnancies needs to be assessed as there is a possibility of unnecessary interventions and adverse effects. The review of trials of routine Doppler ultrasound of the baby’s vessels in pregnancy identified five studies involving more than 14,000 women and babies. The studies were not of high quality and were all undertaken in the 1990s. There were no improvements identified for either the baby or the mother, though more data would be needed to prove whether it is effective or not for improving outcomes.

@@ -1,0 +1,170 @@
+# Smith Collection Transcript: RES0143
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What can i do for you today
+
+Patient: Hi uh so i just came here today uh ive been having this cough for um the last two weeks and it just is not going away ive also been getting like just a runny nose for the last couple i would take the whole week all of last week
+
+Doctor: Okay um so can you tell me about your cough
+
+Patient: Yeah
+
+Doctor: Go on sorry
+
+Patient: So its more of just like a dry cough im not really bringing anything up
+
+Doctor: No blood
+
+Patient: No
+
+Doctor: Okay and the runny nose what whats the discharge like
+
+Patient: uh its its pretty clear it might be light but its not like green or yellow or anything like that
+
+Doctor: um and so youve had this cough for two weeks and the runny nose just started last week has the cough improved over the past two weeks
+
+Patient: uh it has like it was much worse last week uh but i just cant get like its better now but its still lasting much longer than ive had a cough before
+
+Doctor: Okay um and uh have you had a headache at all in these past two weeks
+
+Patient: No i didnt have a headache but sometimes i feel a bit congested
+
+Doctor: And uh have you had any um changes in your vision or your like uh blurry vision or any redness in your eyes or tearing
+
+Patient: uh no nothing like that
+
+Doctor: Okay any um changes in smell
+
+Patient: Nope
+
+Doctor: Okay any change in uh taste
+
+Patient: uh no but uh sorry for smell like when i was a bit congested i i could smell less i wasnt able to smell too much but taste has been fine
+
+Doctor: Alright and what about uh sore throat
+
+Patient: No no no sore throat
+
+Doctor: Okay what about any difficulties with breathing
+
+Patient: um no nothing like that
+
+Doctor: Any chest pain
+
+Patient: No
+
+Doctor: Any palpitations or racing of your heart
+
+Patient: No
+
+Doctor: Any pain in your belly
+
+Patient: No
+
+Doctor: Nausea or vomiting
+
+Patient: No no
+
+Doctor: Diarrhea or constipation
+
+Patient: No
+
+Doctor: Any aches in your any muscle aches
+
+Patient: No
+
+Doctor: Any numbness or tingling in your arms or feet
+
+Patient: Nope
+
+Doctor: um okay uh any fevers or chills
+
+Patient: No not really last week i maybe had a uh two nights i was a bit chilly but since then ive been fine
+
+Doctor: Okay and uh any night sweats
+
+Patient: uh no
+
+Doctor: Unintentional weight loss
+
+Patient: No my weights been the same
+
+Doctor: Okay alright and um so it sounds like you have a cough that started two weeks ago and then you only and then you had two nights of uh two nights where you felt sort of cold and you had the chills um last week but you uh started you developed a runny nose um a week ago
+
+Patient: Yeah the runny nose has been more um this week it kind of like started with a cough last week
+
+Doctor: It it sorry so it started with the cough last week
+
+Patient: um so late last week i would say the runny nose started
+
+Doctor: I see i see okay um alright i and um are you um do you have any medical conditions that youve been diagnosed with
+
+Patient: No ive been uh completely healthy otherwise
+
+Doctor: Any medications that you take including over the counter or herbal medications or vitamins or minerals
+
+Patient: No no i dont take any medication
+
+Doctor: Allergies including allergies to food or environmental allergies and allergies to medications
+
+Patient: um no
+
+Doctor: um and any conditions medical conditions that run in the family
+
+Patient: um i think my dad has uh high cholesterol
+
+Doctor: And in terms of your living situation do you live alone
+
+Patient: Right now im uh i usually live in a dorm going to university but right now im home with my parents uh just doing virtual learning
+
+Doctor: Okay okay um and have you um is there anyone else around in the home or just your parents and you
+
+Patient: Yeah just my parents and me
+
+Doctor: Alright uh have you um have you been around someone who might be sick or have your parents been around someone who could be sick
+
+Patient: uh my mom had the sniffles like last week but she pretty much got over it
+
+Doctor: um did she get tested for covid
+
+Patient: No she she didnt um but its not like its just more she just thought it was a cold or something so she didnt really bother
+
+Doctor: Thats fair okay um and do you um so i see that you go to school um and you mentioned you have you traveled anywhere outside the the province
+
+Patient: No not at all my school is actually in ontario so
+
+Doctor: Okay great um and do you currently or have you ever smoked
+
+Patient: um maybe like uh a couple times just casually ive tried it but nothing regular
+
+Doctor: And what about marijuana
+
+Patient: Yeah same same thing like ive tried it probably like four or five times so far
+
+Doctor: Any recreational drugs
+
+Patient: uh no
+
+Doctor: Any uh alcohol
+
+Patient: uh yeah just not not much right now but like when i when we were at school like we would drink on the weekends
+
+Doctor: Thats good alright um so it sounds like youve had a cough for the past two weeks and you uh have developed a runny nose last week and your mom was ill the week before its possible that you just have a common cold uh and that symptoms will get better over time but just in case we would also like to do a coviswab um to make sure that you just to rule out coviin the meantime i would request that you isolate self isolate at home stay away from your parents as well um the test results should come back in 24 to 48 hours and public health will give you a call if your results are positive and well let you know what to do um we will also do a physical exam here and check your temperature to see if you have a fever at all and um yeah does that sound good to you
+
+Patient: Yeah and will i need any like antibiotics for my cough
+
+Doctor: Oh um well we i guess you said that you dont have a sore throat at all right
+
+Patient: No its just that i just feel like the coughs been just going on like it would be nice to just get rid of it
+
+Doctor: Well um ill do a physical exam look inside your throat look inside your mouth sorry and listen to your chest and uh ensure that nothing else is going on that you dont have anything like say strep throat or mono or you dont have uh pneumonia uh bacterial pneumonia for instance oftentimes um symptoms that you have are caused by viruses and dont need to be treated with antibiotics uh but ill do a physical exam and maybe have a look at your labs as well and then decide accordingly
+
+Patient: Okay sounds good thank you
+
+Doctor: Okay

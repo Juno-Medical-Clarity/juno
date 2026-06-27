@@ -1,0 +1,8 @@
+Doctor: Looks like you have a U T I and I need to give you some antibiotics to treat it.
+Patient: Okay.
+Doctor: I will write you a prescription for Macrobid. Are you still using the Walgreens pharmacy at Thrashers Corner?
+Patient: Yes.
+Doctor: Are you taking any other medications?
+Patient: Yes, I am taking quite a few. I always carry the list of my medications, let me tell you the names.  Yeah, so I take Dilantin for my seizures, Toprol for my high blood pressure and Pravachol for my cholesterol.
+Doctor: Pravachol for my cholesterol. Wow, thank you for that, it helps a lot. Let me make a note of it.
+Patient: Sure.

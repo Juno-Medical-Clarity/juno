@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1322
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Cough, pain in the stomach
+- Severity: Very painful
+- Duration: Two days
+- Associated symptoms: None explicitly mentioned
+- Relevant medical history: None explicitly mentioned
+- Family history: None explicitly mentioned
+- Allergies: None explicitly mentioned
+- Other concerns: Patient is not doing well
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

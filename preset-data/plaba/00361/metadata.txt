@@ -1,0 +1,5 @@
+pmid:        34578187
+question:    28
+adaptation:  adaptation1
+title:       Interactome Analysis of the Nucleocapsid Protein of SARS-CoV-2 Virus
+sentences:   7

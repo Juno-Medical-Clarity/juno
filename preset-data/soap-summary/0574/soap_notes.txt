@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0574
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No use of drugs, alcohol, or tobacco.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1380
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, it's been two months already? I know right? Just feels like yesterday.

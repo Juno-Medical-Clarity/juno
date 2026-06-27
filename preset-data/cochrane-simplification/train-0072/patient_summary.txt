@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0072  |  gem_id: gem-cochrane-simplification-train-73  |  doi: 10.1002/14651858.CD007005
+
+Disability: One study found that at three weeks after treatment, people's disability was improved by 11 points on a scale of 0-100, possibly as few as 4 or as many as 11 points on a scale of 0-100. Another study found disability was improved by 17 points. This improvement could possibly be as low as 6 or as many as 28 points on a scale of 0-100. At six weeks after treatment, people's disability was improved by 46 points on a scale of 0-500. This improvement could possibly be as little as 20 points or as many as 80 points on a scale of 0-500. At 12 weeks after treatment, people's disability was improved by 54 points on a scale of 0-500. This improvement could be as little as 15 points or as many as 95 points on a scale of 0-500. The numbers given are our best estimate. When possible, we have also presented a range because there is a 95 percent chance that the true effect of the treatment lies somewhere between that range.

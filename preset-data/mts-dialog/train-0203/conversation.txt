@@ -1,0 +1,5 @@
+Patient: I had a lung transplant in two thousand and four because of Pulmonary Fibrosis.
+Doctor: Okay, how are you now? It was, was that for both lungs?
+Patient: Yes, both sides.
+Doctor: You do have irregular heart rhythm, right?
+Patient: Yes, I do.

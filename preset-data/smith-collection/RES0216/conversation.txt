@@ -1,0 +1,156 @@
+# Smith Collection Transcript: RES0216
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: So i understand youre having some chest tightness
+
+Patient: Yeah its uh for the last maybe three days um its not really pain not in any specific spot it just feels a bit tight in my chest area when i breathe in especially and it just gets a bit harder to breathe and it feels more tight like especially when i go for my walks which i do everyday uh i try to walk my dog so i was just you know worried that it could be something serious and i wanted to come and get checked out
+
+Doctor: OK for sure so you said it started about 3 days ago have you noticed its been getting better worse or about staying the same
+
+Patient: I think its staying the same
+
+Doctor: OK was there anything that happened 3 days ago that you can recall where you first noticed it
+
+Patient: No nothing in particular um yeah it just kind of came on and now its been pretty steady
+
+Doctor: OK and when it came on three days ago what were you doing
+
+Patient: uh i think i first noticed it when i was gone for my walk
+
+Doctor: OK now when youre walking you say you have some chest tightness do you have any chest pain
+
+Patient: No theres not theres not pain it just feels like when i breathe in it feels tight
+
+Doctor: OK did you feel anxious or sweaty or the feeling of impending doom at all
+
+Patient: uh no i cant say that i did
+
+Doctor: Nothing like that ok and did you feel yourself becoming out of breath at all
+
+Patient: uh i i feel like it was kind of harder to get a whole breath um so yeah yeah i guess
+
+Doctor: OK and was this tightness all across your chest or was it in one particular area
+
+Patient: Kind of just all over
+
+Doctor: OK and since then that happened when you were out for a walk how many times does it happen a day would you say
+
+Patient: Well i feel like its kind of always there but it gets worse when i go for my walk um and well sometimes i go for more than one walk right cause i walk my dog its always kind of there and especially when im like getting up out of the chair i can feel it more or when i take a big like a big breath in as i said
+
+Doctor: OK so its been there pretty constantly for the past three days but its more noticeable if not worse when youre going for a walk
+
+Patient: Exactly
+
+Doctor: OK have you had any cough at all in the last little while
+
+Patient: uh no like i feel a little more hoarse and like theres maybe some more phlegm like im clearing my throat more but i havent actually been coughing
+
+Doctor: OK any fevers
+
+Patient: No cant say that no
+
+Doctor: OK any night sweats so waking up and the sheets are soaked
+
+Patient: No
+
+Doctor: Any chills
+
+Patient: No
+
+Doctor: Any unexplained weight loss at all
+
+Patient: Nope
+
+Doctor: OK and have you ever had anything like this happen to you before
+
+Patient: Uhm i mean i have asthma um so ive had some trouble breathing before it this feels feels uh different than other times i i guess it could be related but uh i dont know this this feels a bit different thats why i wanted to come in and get it checked out
+
+Doctor: OK so you have asthma do you use any puffers at the moment
+
+Patient: Yeah i just use the one that um i take every day i dont really use the uhm the one thats as needed because i just havent had to in a really long time so i didnt refill my last one
+
+Doctor: OK so you dont have any anymore of the as needed but you have used it in the past
+
+Patient: Yeah exactly like its been a couple of years since i needed that but i still i still take the daily one
+
+Doctor: OK and you havent stopped taking the daily one in last three days either
+
+Patient: No i always take it um so im supposed to actually take it morning and night um for a while though sometimes i was skipping the night one because i didnt feel that i was needing it um so so lately ive been taking it everyday but ive just been taking it in the morning
+
+Doctor: OK uh what makes you say you havent really needed the one at night have you just been doing well without it
+
+Patient: Exactly like i havent needed the rescue one in a few years and even when i was just taking it in the morning i i havent had any problems
+
+Doctor: OK understood and then have you had i should have asked do you work currently
+
+Patient: uh i i im a financial advisor im like semi retired so i do some stuff from home
+
+Doctor: OK got it i suppose just has this kind of chest tightness stopped you from doing activities that you normally would do any missed time from work
+
+Patient: I havent missed any work but im not im not doing a ton of work right now i dont think it would stop me it just would make me uncomfortable um during work and it keeps me maybe this the last few days its kept me from i usually go on a couple of walks a day the last couple days ive just gone on one usually so yeah its a little bit yeah
+
+Doctor: So its really not stopping too much of your day to day functioning but its noticeable
+
+Patient: Exactly yeah
+
+Doctor: OK now is there any other issue that you see your doctor regularly for aside from the asthma
+
+Patient: Uhm i have uh high blood pressure i dont really see my doctor very much i just am on um medication
+
+Doctor: OK how about we just talk about your medications a little bit what are you taking currently
+
+Patient: uh i take the uh salbutamol
+
+Doctor: Yeah
+
+Patient: That we talked about and i take um ramipril
+
+Doctor: Yep
+
+Patient: And uh sometimes a tylenol if you know if i have a headache or something but not very often
+
+Doctor: OK understood so aside from the high blood pressure youre really not taking medications for much else
+
+Patient: No no
+
+Doctor: OK do you have any other lung issues or any trouble with your lungs in the past
+
+Patient: No nothing major just the asthma but you know like i said its been a few years since it has bothered me
+
+Doctor: OK got it and just in terms of your life itself so do you smoke at all
+
+Patient: No never
+
+Doctor: OK so no smoking any other recreational substances drugs
+
+Patient: Oh no no i mean i i have um you know a few beers on the weekend but i dont do very i dont do any drugs and i dont drink much other than that
+
+Doctor: OK got it any allergies that you have
+
+Patient: Uhm no no like i uh when i was younger i got some seasonal allergies sometimes in the springtime but other than that i i like i its really been uh many years since ive noticed that
+
+Doctor: OK and so nothing new in the environment you havent changed where youve been living or you havent introduced a new pet or a new dog
+
+Patient: Exactly
+
+Doctor: OK so sounds like youre pretty much staying the course last little while just kind of a new onset of this new chest tightness and aside from that seems that it comes on mainly on walks outdoors but youve kind of been limiting the some of the medication youre taking for asthma the last couple of years because you havent really felt that you needed it as much
+
+Patient: Yeah like just the morning was it was enough
+
+Doctor: OK alright john i think ive got most of the information i need just to go talk to the doc and talk about your story next of course were going to do a quick physical exam going to take a listen to your lungs and see what else we might want to do in terms of investigations i have a feeling that this actually might be your asthma reoccurring in some capacity or that would be on the top of the differential for now barring any other new findings so i think maybe what we would like to do is wed like to try having those rescue puffers available to see if that helps at all when you are on walks and if they dont help then well come back to the table and see what other possible directions we could head in in order to help you next does that sound good john
+
+Patient: Sounds great im just you know glad to know that its probably not my heart
+
+Doctor: No it sounds well i suppose you said that you didnt really get out of breath with exercise more sounds like a chest tightness and you havent had any pain associated with it so that puts more cardiac ischemic pictures kind of lower on the differential but of course were going to try one thing at a time and then well come back to the table um depending on how youre feeling after that ok
+
+Patient: Sounds great thank you
+
+Doctor: No problem ok ill go talk to the doctor ill be back with you in a moment
+
+Patient: Thank you

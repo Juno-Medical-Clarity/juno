@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        simple
+readability: 4.65
+split:       dev
+
+jargon_spans:
+  [23:26] 'medical-name-entity' -> 'Framingham Heart Study'
+  [35:38] 'medical-jargon-google-easy' -> 'Family Heart Study'

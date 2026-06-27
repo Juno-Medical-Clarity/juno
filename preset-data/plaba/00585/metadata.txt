@@ -1,0 +1,5 @@
+pmid:        30086256
+question:    45
+adaptation:  adaptation2
+title:       Topical pentoxifylline for pressure ulcer treatment: a randomised, double-blind, placebo-controlled clinical trial
+sentences:   10

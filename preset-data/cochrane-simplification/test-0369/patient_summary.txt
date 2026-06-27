@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0369  |  gem_id: gem-cochrane-simplification-test-370  |  doi: 10.1002/14651858.CD006005.pub2
+
+We found only four randomised clinical trials that compared different prophylactic regimens in 136 participants. None of the trials compared the same prophylaxis regimen. In each individual trial no significant differences were detected with regard to patients' survival after transplantation, HBV recurrence, or the recurrence of liver disease. All trials were too small to detect a difference, if it existed. Prevention of HBV recurrence following liver transplantation is currently non-evidence based. Practice is to administer a combination of HBIg and an antiviral drug. Randomised clinical trials are needed to examine this practice.

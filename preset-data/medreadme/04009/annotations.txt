@@ -1,0 +1,7 @@
+source:      plos_biology
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [11:13] 'medical-jargon-google-easy' -> 'neuronal microcircuitry'

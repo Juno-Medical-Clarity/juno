@@ -1,0 +1,1128 @@
+{
+  "items": [
+    {
+      "diagnosisicd": [
+        {
+          "description": "Chest pain, unspecified",
+          "code": "R07.9",
+          "codeset": "ICD10"
+        }
+      ],
+      "orders": [
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "clinicalprovidername": "Athenacoordinator Test Receiver",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-10-22T21:56:43-04:00",
+          "clinicalproviderid": 11123808,
+          "orderid": 203224,
+          "lastmodifiedby": "API-34344",
+          "departmentid": 1,
+          "providerid": 23,
+          "dateordered": "10/22/2025 09:56 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257362,
+          "description": "cardiologist referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "cardiologist referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-10-22T22:28:57-04:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203226,
+          "dateordered": "10/22/2025 10:28 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain with exertion, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-10-22T22:29:05-04:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203227,
+          "dateordered": "10/22/2025 10:29 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain with exertion, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-10-23T22:41:24-04:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203259,
+          "dateordered": "10/23/2025 10:41 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain with exertion, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-10-24T18:27:38-04:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203303,
+          "dateordered": "10/24/2025 06:27 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain with exertion, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-10-27T19:02:52-04:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203392,
+          "dateordered": "10/27/2025 07:02 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain with exertion, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-10-28T22:32:02-04:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203457,
+          "dateordered": "10/28/2025 10:32 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain with exertion, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-10-28T22:34:55-04:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203458,
+          "dateordered": "10/28/2025 10:34 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain with exertion, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-03T16:39:41-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203637,
+          "dateordered": "11/03/2025 04:39 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient reports chest pain with exertion, needs cardiac evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-03T23:33:04-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203641,
+          "dateordered": "11/03/2025 11:33 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient experiencing intermittent chest pain, needs cardiology evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-03T23:38:51-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203642,
+          "dateordered": "11/03/2025 11:38 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient experiencing intermittent chest pain, needs cardiology evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-03T23:42:58-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203643,
+          "dateordered": "11/03/2025 11:42 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient experiencing intermittent chest pain, needs cardiology evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-03T23:54:50-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203645,
+          "dateordered": "11/03/2025 11:54 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient experiencing intermittent chest pain, needs cardiology evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "clinicalprovidername": "Athenacoordinator Test Receiver",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-06T18:05:03-05:00",
+          "clinicalproviderid": 11123808,
+          "orderid": 203732,
+          "lastmodifiedby": "API-34344",
+          "departmentid": 1,
+          "providerid": 23,
+          "dateordered": "11/06/2025 06:05 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257362,
+          "description": "cardiologist referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "cardiologist referral",
+          "createduser": "API-34344",
+          "providernote": "Patient needs cardiology evaluation for chest pain"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-06T21:38:27-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203733,
+          "dateordered": "11/06/2025 09:38 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient experiencing intermittent chest pain, needs cardiology evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-06T21:41:07-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203734,
+          "dateordered": "11/06/2025 09:41 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient experiencing intermittent chest pain, needs cardiology evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "clinicalprovidername": "Athenacoordinator Test Receiver",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-06T22:04:45-05:00",
+          "clinicalproviderid": 11123808,
+          "orderid": 203735,
+          "lastmodifiedby": "API-34344",
+          "departmentid": 1,
+          "providerid": 23,
+          "dateordered": "11/06/2025 10:04 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257362,
+          "description": "cardiologist referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "cardiologist referral",
+          "createduser": "API-34344",
+          "providernote": "EXACT DUPLICATE TEST - Patient needs cardiology evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "clinicalprovidername": "Athenacoordinator Test Receiver",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-06T22:05:09-05:00",
+          "clinicalproviderid": 11123808,
+          "orderid": 203736,
+          "lastmodifiedby": "API-34344",
+          "departmentid": 1,
+          "providerid": 23,
+          "dateordered": "11/06/2025 10:05 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257362,
+          "description": "cardiologist referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "cardiologist referral",
+          "createduser": "API-34344",
+          "providernote": "EXACT DUPLICATE TEST - Patient needs cardiology evaluation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "clinicalprovidername": "Athenacoordinator Test Receiver",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-07T15:19:16-05:00",
+          "clinicalproviderid": 11123808,
+          "orderid": 203769,
+          "lastmodifiedby": "API-34344",
+          "departmentid": 1,
+          "providerid": 23,
+          "dateordered": "11/07/2025 03:19 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257362,
+          "description": "cardiologist referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "cardiologist referral",
+          "createduser": "API-34344",
+          "providernote": "Referral for specialist consultation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "clinicalprovidername": "Athenacoordinator Test Receiver",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-07T15:19:48-05:00",
+          "clinicalproviderid": 11123808,
+          "orderid": 203770,
+          "lastmodifiedby": "API-34344",
+          "departmentid": 1,
+          "providerid": 23,
+          "dateordered": "11/07/2025 03:19 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257362,
+          "description": "cardiologist referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "cardiologist referral",
+          "createduser": "API-34344",
+          "providernote": "Referral for specialist consultation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "clinicalprovidername": "Athenacoordinator Test Receiver",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-07T15:21:42-05:00",
+          "clinicalproviderid": 11123808,
+          "orderid": 203771,
+          "lastmodifiedby": "API-34344",
+          "departmentid": 1,
+          "providerid": 23,
+          "dateordered": "11/07/2025 03:21 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257362,
+          "description": "cardiologist referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "cardiologist referral",
+          "createduser": "API-34344",
+          "providernote": "Referral for specialist consultation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "clinicalprovidername": "Athenacoordinator Test Receiver",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-07T15:23:03-05:00",
+          "clinicalproviderid": 11123808,
+          "orderid": 203772,
+          "lastmodifiedby": "API-34344",
+          "departmentid": 1,
+          "providerid": 23,
+          "dateordered": "11/07/2025 03:23 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257362,
+          "description": "cardiologist referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "cardiologist referral",
+          "createduser": "API-34344",
+          "providernote": "Referral for chest pain"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-07T22:13:22-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203784,
+          "dateordered": "11/07/2025 10:13 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Chest pain, unspecified",
+                  "code": "R079",
+                  "unstrippeddiagnosiscode": "R07.9",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "chest pain",
+                "code": "29857009",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 269090,
+          "description": "interventional cardiology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "interventional cardiology referral",
+          "createduser": "API-34344",
+          "providernote": "Patient experiencing intermittent chest pain, needs cardiology evaluation"
+        }
+      ],
+      "diagnosis": "chest pain",
+      "diagnosissnomed": 29857009
+    },
+    {
+      "diagnosisicd": [
+        {
+          "description": "Essential (primary) hypertension",
+          "code": "I10",
+          "codeset": "ICD10"
+        }
+      ],
+      "orders": [
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-07T16:51:20-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203779,
+          "dateordered": "11/07/2025 04:51 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Essential (primary) hypertension",
+                  "code": "I10",
+                  "unstrippeddiagnosiscode": "I10",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "hypertensive disorder",
+                "code": "38341003",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 257378,
+          "description": "orthopedic surgeon referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "orthopedic surgeon referral",
+          "createduser": "API-34344",
+          "providernote": "Referral for specialist consultation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-07T16:55:29-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203780,
+          "dateordered": "11/07/2025 04:55 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Essential (primary) hypertension",
+                  "code": "I10",
+                  "unstrippeddiagnosiscode": "I10",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "hypertensive disorder",
+                "code": "38341003",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 295603,
+          "description": "endocrinology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "endocrinology referral",
+          "createduser": "API-34344",
+          "providernote": "Referral for specialist consultation"
+        },
+        {
+          "status": "REVIEW",
+          "ordertype": "Consult",
+          "provideridentifier": 23,
+          "priority": 2,
+          "ordergenusname": "CONSULTATION WITH A SPECIALIST",
+          "orderingprovider": "dharvey3",
+          "classdescription": "order",
+          "futuresubmitdate": "2025-07-22",
+          "lastmodifieddatetime": "2025-11-07T16:56:46-05:00",
+          "lastmodifiedby": "API-34344",
+          "orderid": 203781,
+          "dateordered": "11/07/2025 04:56 PM",
+          "documentationonly": false,
+          "diagnosislist": [
+            {
+              "imodiagnosislist": [],
+              "snomedicdcodes": [
+                {
+                  "description": "Essential (primary) hypertension",
+                  "code": "I10",
+                  "unstrippeddiagnosiscode": "I10",
+                  "codeset": "ICD10"
+                }
+              ],
+              "diagnosiscode": {
+                "description": "hypertensive disorder",
+                "code": "38341003",
+                "codeset": "SNOMED"
+              }
+            }
+          ],
+          "assigneduser": "dharvey3",
+          "ordertypeid": 295603,
+          "description": "endocrinology referral",
+          "class": "ORDER",
+          "ordergenusid": 277,
+          "ordertypename": "endocrinology referral",
+          "createduser": "API-34344",
+          "providernote": "Referral for specialist consultation"
+        }
+      ],
+      "diagnosis": "hypertensive disorder",
+      "diagnosissnomed": 38341003
+    }
+  ]
+}

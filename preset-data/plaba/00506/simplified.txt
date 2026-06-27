@@ -1,0 +1,7 @@
+Increased expression of β-amyloid (Aβ1-42) and tau proteins are considered risk-factors for Alzheimer's disease in healthy older adults. Aβ1-42 is a protein deposited in organs, clumps referred to as plaques, during certain diseases. Tau proteins are proteins that stabilizes microtubules or structures within cells.
+This paper investigated the effect of aging and cerebrospinal (brain and spine) fluid levels of Aβ1-42 and tau on two health endpoints. These endpoints include evaluating frontal metabolites with a proton magnetic resonance spectroscopy (MRS) and cognition (thinking ability) in cognitively normal older adults.
+Levels of a neurotransmitter (a signaling molecule) known as gamma aminobutyric acid (GABA+) were predicted by age. Levels of myo-inositol relative to creatine (mI/tCr), a ratio of two metabolites in the brain often used to determine disease state, were predicted by age.
+Levels of GABA+ predicted cognitive performance better than mI/tCr.
+Additionally, frontal levels of n-acetyl aspartate, another brain metabolite, relative to creatine (tNAA/tCr) were predicted by levels of t-tau, the protein.
+In cognitively normal older adults, levels of frontal GABA+ and mI/t Cr are predicted by aging. Levels of GABA+ decreased with age. Levels of mI/tCr increased with age.
+These results suggest that age- and biomarker-related changes in brain metabolites are not only located in the posterior cortex. Additionally, these studies demonstrate that MRS is a viable tool to study aging and aging biomarkers associated with Alzheimer's disease.

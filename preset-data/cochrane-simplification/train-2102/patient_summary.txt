@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2102  |  gem_id: gem-cochrane-simplification-train-2103  |  doi: 10.1002/14651858.CD008740
+
+The purpose of this review was to assess which of these two medications was the best for initial treatment for people living with HIV, and through our search we identified two randomised controlled trials. We did not find any critical difference between the two medications in regards to serious adverse events or virologic response, but did find that TDF is superior to AZT in terms of immunologic response and adherence and more frequent emergence of resistance. However, these two studies are not directly comparable because they used two related different drugs in addition to TDF and AZT. Future studies and recommendations should focus on specific toxicities and tolerability when comparing these two medications.

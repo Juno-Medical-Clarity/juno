@@ -1,0 +1,5 @@
+pmid:        24131523
+question:    32
+adaptation:  adaptation1
+title:       MTHFR 677TT genotype and disease risk: is there a modulating role for B-vitamins?
+sentences:   9

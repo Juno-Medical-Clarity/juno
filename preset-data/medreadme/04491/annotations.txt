@@ -1,0 +1,9 @@
+source:      elife
+side:        complex
+readability: 5.7
+split:       test
+
+jargon_spans:
+  [4:5] 'abbr-medical' -> 'IE1'
+  [10:12] 'medical-jargon-google-easy' -> 'host chromatin'
+  [13:14] 'abbr-medical' -> 'hCMV'

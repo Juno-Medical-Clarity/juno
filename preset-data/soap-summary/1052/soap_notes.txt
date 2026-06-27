@@ -1,0 +1,26 @@
+# SOAP Notes — Sample 1052
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports having a fall.
+- Describes balancing problems.
+- Previous fall occurred approximately a week and a half ago.
+- Trouble with the right hand; feels clumsy on the right side.
+- Fall occurred when the right hand missed the railing while going up the stairs.
+- Patient is right-handed.
+- Issues with the right hand are localized to the right side of the body and have been getting worse.
+- Duration of symptoms: about two years.
+- Reports occasional blurred vision or visual disturbances.
+- Age: 58 years old.
+
+Objective:
+- Bloodwork and imaging were performed by the primary care physician (PCP).
+- MRI results indicate clinoid masses.
+
+Assessment:
+- Clinoid masses explain the patient's right-sided weakness, balancing problems, and visual disturbances.
+- Need for further tests to determine if the masses are malignant.
+
+Plan:
+- Run additional tests.
+- Consider performing a biopsy to assess the nature of the clinoid masses.

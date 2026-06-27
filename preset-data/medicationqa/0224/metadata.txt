@@ -1,0 +1,5 @@
+drug_focus: Oxycodone
+question_type: Information
+section_title: Detox and Withdrawal Duration
+source_url: https://americanaddictioncenters.org/withdrawal-timelines-treatments/oxycodone/
+sample_id: 0224

@@ -1,0 +1,5 @@
+pmid:        25290157
+question:    8
+adaptation:  adaptation1
+title:       Perphenazine versus low-potency first-generation antipsychotic drugs for schizophrenia
+sentences:   5

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0023  |  gem_id: gem-cochrane-simplification-train-24  |  doi: 10.1002/14651858.CD006810.pub3
+
+We found five trials which included a total of 167 people. The trials showed that adding G-CSF to usual therapy did not significantly affect the likelihood of the infection resolving or the improved healing of foot wounds, nor did it reduce the period of treatment with oral antibiotics. However, G-CSF does appear to reduce the need for surgical interventions, especially amputations, and the number of days spent in hospital. There are limitations to this analysis related to the variations in the people included in the studies (e.g. the severity of infection, the timing of the clinical assessment, the use of different G-CSF preparations, and for different lengths of time). Therefore caution is required in the interpretation of the findings.

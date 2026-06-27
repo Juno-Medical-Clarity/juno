@@ -1,0 +1,11 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.85
+split:       dev
+
+jargon_spans:
+  [5:10] 'medical-jargon-google-easy' -> 'Roland - Morris Disability Questionnaire'
+  [11:12] 'abbr-medical' -> 'RMDQ'
+  [19:25] 'medical-jargon-google-easy' -> 'Von Korff pain and disability scale'
+  [36:39] 'medical-jargon-google-easy' -> 'Oswestry Disability Index'
+  [41:46] 'medical-jargon-google-easy' -> 'Aberdeen pain and function scale'

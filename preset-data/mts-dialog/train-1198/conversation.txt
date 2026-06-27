@@ -1,0 +1,33 @@
+Doctor: How are you doing today, sir?
+Patient: Honestly, I'm pretty sick today. I've got a lot going on.
+Doctor: How long have you been feeling this way?
+Patient: Well, it's been off and on for about a month now.
+Doctor: Has it been getting worse recently?
+Patient: Yeah, it has over the last couple weeks.
+Doctor: What are your symptoms?
+Patient: Well, I'm coughing up this yellow phlegm. It feels like everything is in my chest.
+Doctor: What medications have you been taking for this?
+Patient: I've been taking Allegra D sometimes, but I'm almost out. I need a refill.
+Doctor: What other problems are you having?
+Patient: My foot keeps breaking out.
+Doctor: Has this improved at all?
+Patient: Well, it was for a while, but now it's really bad again.
+Doctor: Have you been diagnosed with any conditions before?
+Patient: I had, um, tinea pedis before.
+Doctor: How was this treated?
+Patient: They gave me Nizoral cream.
+Doctor: It has been getting warmer recently, I don't think that this isn't necessarily a coincidence that you're having these symptoms now.
+Patient: Yeah, I work in the flint and it's really hot and humid down there.
+Doctor: What else are you dealing with, sir?
+Patient: I have this wart on my right middle finger, are you able to freeze it off?
+Doctor: Have you ever done that before?
+Patient: Yeah, you have done it before, and it went away.
+Doctor: If we've done it before, we can do it again.
+Patient: Cool, can we do blood work, too? I want to check on my prostate.
+Doctor: Well, that's called P S A.
+Patient: Can I have that done? I'm concerned. I am fifty after all.
+Doctor: Sure, we can check your cholesterol too. I know you have history of it being high.
+Patient: You know, I've been working on that. I quit smoking for a while, but I got back into it.
+Doctor: That's good, it's really hard to quit.
+Patient: Yeah, I tried chewing tobacco, but it's not the same.
+Doctor: Be sure to keep trying to quit smoking.

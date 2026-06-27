@@ -1,0 +1,9 @@
+source:      pnas
+side:        simple
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-hard' -> 'Hox5 genes'
+  [6:9] 'medical-jargon-google-easy' -> 'embryonic lung development'
+  [20:22] 'medical-jargon-google-easy' -> 'postnatal functions'

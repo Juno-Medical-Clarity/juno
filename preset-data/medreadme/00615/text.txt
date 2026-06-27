@@ -1,0 +1,1 @@
+When worms are fed with two neutrally competing, fluorescently labeled bacterial strains at low colonization rates, we are able to produce noise-induced bistability in this system, in which each community is dominated by bacteria of only one color.

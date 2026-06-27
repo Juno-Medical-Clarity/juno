@@ -1,0 +1,11 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [1:2] 'abbr-medical' -> 'EVs'
+  [5:6] 'medical-jargon-google-easy' -> 'macrophages'
+  [12:13] 'medical-jargon-google-easy' -> 'macrophages'
+  [21:22] 'medical-jargon-google-easy' -> 'cytokines'
+  [30:31] 'medical-jargon-google-easy' -> 'macrophage'

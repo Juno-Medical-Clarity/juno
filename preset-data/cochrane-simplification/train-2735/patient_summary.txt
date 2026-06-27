@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2735  |  gem_id: gem-cochrane-simplification-train-2736  |  doi: 10.1002/14651858.CD001040.pub2
+
+Endometrial (womb) cancer is the most common genital tract cancer in developed countries. Progestagen (a hormone) therapy is sometimes used following initial surgery to reduce the risk of recurrence. However, progestagens have been found to reduce one of the protective factors against heart disease and may also make tumours more resistant to radiotherapy. This review found no evidence to support the use of progestagen as an addition to surgery for newly diagnosed endometrial cancer. Progestagen can, however, prevent or delay recurrence of cancer in some patients.

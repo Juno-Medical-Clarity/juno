@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0870
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient had a circumcision.
+- Date of circumcision is unknown but should be available in the medical chart.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

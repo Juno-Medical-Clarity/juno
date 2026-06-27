@@ -1,0 +1,4 @@
+Doctor: Have you taken any medications in the past?
+Patient: Do you mean prescription, or over the counter?
+Doctor: Either of those.
+Patient: Oh, I haven't taken anything in the past.

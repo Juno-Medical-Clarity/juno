@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0821
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Bad tooth pain
+- Severity: New pain
+- Duration: Ongoing for three days
+- Location: Left side's upper and lower teeth
+- Relevant medical history: Previously had many teeth pulled out
+- Concerns: Unable to schedule regular dentist appointments due to missed appointments; now on a standby appointment
+- Medications at home: OxyContin and Vicodin (used for knee pain)
+- Patient's age: 29 years
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

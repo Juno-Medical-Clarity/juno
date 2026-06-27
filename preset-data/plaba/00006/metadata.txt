@@ -1,0 +1,5 @@
+pmid:        31696455
+question:    1
+adaptation:  adaptation2
+title:       Muscle Cramping During Exercise: Causes, Solutions, and Questions Remaining
+sentences:   7

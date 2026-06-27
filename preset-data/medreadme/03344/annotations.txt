@@ -1,0 +1,11 @@
+source:      elife
+side:        complex
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'taste aversion'
+  [20:22] 'medical-jargon-google-easy' -> 'visceral nausea'
+  [30:32] 'medical-jargon-google-easy' -> 'memory traces'
+  [41:43] 'medical-jargon-google-easy' -> 'robust trace'
+  [68:70] 'medical-jargon-google-easy' -> 'strong trace'

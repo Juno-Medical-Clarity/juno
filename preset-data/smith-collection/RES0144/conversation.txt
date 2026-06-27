@@ -1,0 +1,144 @@
+# Smith Collection Transcript: RES0144
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What can i do for you today
+
+Patient: Hi yes i just brought my son to the er weve noticed in the last two days hes been just making these grunting noises and just seems a little bit like just not himself just more quiet not really crying
+
+Doctor: OK and when did you you said last few days when when exactly did you first notice the grunting how long
+
+Patient: It was two days ago
+
+Doctor: OK two days ago was it when did you hear this sound when your baby is trying to breathe
+
+Patient: Yeah today i was trying to pay more attention it seems like that like this really trying to breathe more and also i like hes like the chest i see moving a lot more
+
+Doctor: OK and so youve been hearing this grunting sound and hes been trying to breathe and you see that his chest is moving more than usual and hes crying has he been sleeping well or no
+
+Patient: uh yeah so last night it was really hard to get him to sleep he did sleep i would say like around like 4 hours last night but it was really difficult
+
+Doctor: And what about feeding does he take a formula or is he breastfed
+
+Patient: So hes uh he takes formula and today it like yesterday he was feeding today its been really hard to get him to feed maybe he fed for like one or two times but not much
+
+Doctor: It happens when you try to feed him
+
+Patient: Uhm kind of just uh after awhile just pushes it away not really uhm yeah uhm not really too excited about feeding
+
+Doctor: OK and what about diapers how many wet diapers has he had over the past or yesterday and today
+
+Patient: Probably around the same like usually has like five to six weight diapers and its around the same
+
+Doctor: OK ok uhm and did you try anything i know that hes six months old did you try feeding him anything new or anything different
+
+Patient: uh no its just been the bottle feeds
+
+Doctor: Nothing new right no solid foods yet
+
+Patient: No
+
+Doctor: OK and uh in terms of his activities you mentioned that hes not as hes not moving and as active as he usually is
+
+Patient: Yeah today i also thought i felt that it was a bit warm warmer than usual but i didnt have a thermometer at home
+
+Doctor: OK uhm have you noticed has he been drooling at all
+
+Patient: Drooling
+
+Doctor: Mhmm
+
+Patient: No i havent noticed that
+
+Doctor: OK what about coughing
+
+Patient: Uhm i havent heard any any coughing no
+
+Doctor: OK sorry is he is able to sit up on his own
+
+Patient: Uhm up against like a sofa or chair but not really on his own
+
+Doctor: Have you ever been has been left alone over the past two days at some point do you feel like you might have taken something in his mouth accidentally
+
+Patient: Uhm no i i tried checking his mouth like i was there with him like all all the time
+
+Doctor: No ok nothing like that ok how has his immunizations been so far has he as he received them
+
+Patient: Yeah hes received all his immunizations up to date
+
+Doctor: Uhm did he have it has he was vaccinated anytime recently because sometimes you said hes warm and sometimes sometimes just getting vaccinated can cause a reaction
+
+Patient: Yeah no he was vaccinated like i think more than two or three weeks ago
+
+Doctor: OK alright and you said no diarrhea or anything like that right
+
+Patient: No
+
+Doctor: OK any is he does he have any nausea or not nausea but is he vomiting is he bringing anything up
+
+Patient: No not really like he was just pushing away the bottle but like he didnt bring anything up
+
+Doctor: OK has he been limp and lethargic
+
+Patient: Uhm no i dont think so
+
+Doctor: OK has you said that he hasnt had his formula much but what about drinking like has he had anything to drink any milk or anything like that or no
+
+Patient: No i dont think so
+
+Doctor: No she hasnt had much to eat and or drink over the past or today
+
+Patient: Yeah mostly
+
+Doctor: So he might be a little bit dehydrated
+
+Patient: Yeah
+
+Doctor: OK uhm ok well uhm i i ok so thats all i wanted to do know in terms of his current status i would obviously want to examine him very carefully and see whats going on uhm how has uh how is he like just going back how was your pregnancy
+
+Patient: Pregnancy was uh ok no complications but he was premature by two weeks so i think he was born at 35 and four days
+
+Doctor: OK and were there any complications at that time including complications related to the lung something like respiratory distress syndrome
+
+Patient: Yeah so when he was born there was they needed to do i forgot what it was but they told me that initially he wasnt breathing but then right afterwards after like within 5 minutes he was fine
+
+Doctor: Hmm uhm ok uhm was he kept in the hospital in the nicu after being born
+
+Patient: Yeah just because of that scare they kept him for three more days but like he was growing while there were no more episodes of the breathing issue so they let him go after
+
+Doctor: OK uhm has how has he been since then over the past six months
+
+Patient: Since then hes been fine no we didnt have to go to the hospital or anything and during our routine visits hes been growing well no normal issues
+
+Doctor: Any issues because development
+
+Patient: No hes been pretty like hes been meeting his milestones according to like the family doctor
+
+Doctor: Has he had any surgeries or any or no hospitalizations you said and no uhm no diagnosis right he hasnt been diagnosed with any condition
+
+Patient: No
+
+Doctor: Alright can you tell me about allergies is he allergic to anything that youre aware of
+
+Patient: No not that i know
+
+Doctor: OK is there uh can you tell me about his family history anything that you might have or uhm his dad or anyone else in the family
+
+Patient: uh no him his dad and i are pretty healthy yeah no medical conditions
+
+Doctor: Anything like cystic fibrosis in the family
+
+Patient: No not that i know of
+
+Doctor: OK alright well well examine the child and look at his vitals listen to his lungs look look inside his mouth and thats this sounds serious so well keep you well keep you updated and well let you know what needs to be done he might need potentially need antibiotics he might need potentially to be intubated but we will have all these discussions after the babys been seen and well draw some labs and go from there
+
+Patient: OK sounds good
+
+Doctor: Alright
+
+Patient: Thank you

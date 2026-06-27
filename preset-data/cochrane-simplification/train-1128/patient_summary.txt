@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1128  |  gem_id: gem-cochrane-simplification-train-1129  |  doi: 10.1002/14651858.CD003964.pub3
+
+No studies on antibiotics, pneumococcal vaccination and any other non-drug prophylaxis were identified. This review found that intravenous immunoglobulin (IVIG), thymosin, oral transfer factor, Bacillus Calmette-Guerin (BCG) vaccine injection and two kinds of Chinese medicinal herbs (Huangqi granules and TIAOJINING) may help prevent infections in nephrotic children. These studies were methodologically poor. Currently there is no strong evidence for recommending any interventions for preventing infections in nephrotic syndrome. More research is needed.

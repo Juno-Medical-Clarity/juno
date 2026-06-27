@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1454
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is experiencing leg pain on the side of the legs.
+- Duration of pain: Several months.
+- Pain is worst at night.
+- Patient takes Advil, Motrin, and Tylenol PM for pain management.
+- Reports loss of feeling in the big toe and calf.
+- No problems with bathroom habits.
+
+Objective:
+- Notable patch sensory loss in the L4 to S1 region.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

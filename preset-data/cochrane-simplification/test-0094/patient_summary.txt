@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0094  |  gem_id: gem-cochrane-simplification-test-95  |  doi: 10.1002/14651858.CD005149.pub4
+
+A critical systematic review of the literature found four well-conducted, randomised, placebo-controlled intervention studies, involving 1943 participants treated for 15 or 21 days. The results suggest that there may be a modest effect with INCS in the resolution or improvement of symptoms. Only minor adverse events such as epistaxis, headache and nasal itching were reported. Given the small number of studies included in this review, it is recommended that further randomised controlled trials be conducted. The evidence is up to date as of May 2013.

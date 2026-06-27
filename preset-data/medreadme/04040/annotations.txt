@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        simple
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'plasmodes'
+  [22:25] 'general-complex' -> 'false discovery rate'
+  [29:30] 'abbr-medical' -> 'HDE'

@@ -1,0 +1,5 @@
+pmid:        25815259
+question:    69
+adaptation:  adaptation3
+title:       Postpartum depression: A systematic review of the genetics involved
+sentences:   13

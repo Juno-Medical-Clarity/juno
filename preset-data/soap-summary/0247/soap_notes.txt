@@ -1,0 +1,38 @@
+# SOAP Notes — Sample 0247
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Shortness of breath since this morning
+- Occurred during activities (walking to the kitchen)
+- Described as shallow, fast breaths
+- No previous episodes
+- Sharp chest pain with deep breaths
+- No cough, sore throat, chest pain, chills, fevers, dizziness, fainting, heart racing, nausea, vomiting, night sweats, fatigue, diarrhea, or constipation
+- No recent travel or contact with sick individuals
+- Recent hospital discharge (2 days ago) for hip fracture (no surgery, 4-day stay, physiotherapy, pain medications)
+- Home care nurse visits once a day, no physiotherapy at home yet
+- Limited mobility post-discharge, trying to move more recently
+- No leg swelling, pain in calves, or history of clots
+- PMHx: leukemia (10 years ago, no current treatment)
+- No other medical conditions or clotting disorders
+- No current medications or allergies
+- FHx: no long-term heart conditions
+- SocHx: banker, lives with husband and 2 kids, no smoking, occasional marijuana use, drinks 2-3 glasses of beer on weekends
+
+Past Medical History:
+- Hip fracture (recent, no surgery)
+- Leukemia (10 years ago, no current treatment)
+
+Objective:
+- Full physical examination planned
+- Blood work planned
+
+Assessment:
+- Rule out clot (possible pulmonary embolism)
+
+Plan:
+- Physical examination
+- Blood work
+- Possible imaging
+- Consider thrombolysis if clot confirmed
+- Monitor and determine need for hospital admission

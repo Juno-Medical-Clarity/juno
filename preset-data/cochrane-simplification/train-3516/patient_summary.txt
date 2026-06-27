@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3516  |  gem_id: gem-cochrane-simplification-train-3517  |  doi: 10.1002/14651858.CD011791.pub2
+
+In literature searches updated in April 2017, we found one randomised controlled trial (302 intubations) that met the inclusion criteria of this review. Rates of successful intubation at first attempt with or without use of a stylet as an aid were similar, at 57% and 53%, respectively. Success rates with and without use of a stylet did not differ between infants of different weights, or between trainee paediatric doctors with different levels of experience. The length of time it took to intubate and the number of attempts made before successful intubation were comparable between groups. The incidence of a drop in a patient’s oxygen level and in heart rate was equivalent between groups, as was the reported incidence of trauma to the airway associated with the procedure. The quality of evidence was low. We downgraded the level because we included only one unblinded study.

@@ -1,0 +1,5 @@
+pmid:        35102405
+question:    66
+adaptation:  adaptation2
+title:       Nephrotic Syndrome
+sentences:   10

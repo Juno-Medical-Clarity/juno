@@ -1,0 +1,8 @@
+Doctor: How's your wife doing? I think the last time I saw her was two weeks ago. She was telling me about the remodeling you've been doing around the house.
+Patient: She's doing well, thanks for asking. Oh yeah, the remodeling has been a lot. I didn't think it'd take as long as it has.
+Doctor: Yeah, it can take some time. We remodeled our kitchen three years ago and it turned our lives upside down. So tell me, how's training going for you? I believe you were telling me that you have a five k coming up.
+Patient: Yeah, it's two weeks away. I've been jogging and doing cross country track about five times a week. I also lift twice a week on my better days.
+Doctor: That's great! And no smoking or drinking, correct?
+Patient: Nope.
+Doctor: How's work been treating ya?
+Patient: Pretty darn well actually. I go into the allergy and immunology clinic four days outta the week. I like that my hours are flexible. My patients also haven't run away from me yet, which is always a good sign.

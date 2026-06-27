@@ -1,0 +1,10 @@
+source:      pnas
+side:        simple
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [10:12] 'medical-jargon-google-hard' -> 'Hox5 genes'
+  [14:16] 'medical-jargon-google-easy' -> 'fibroblast adhesion'
+  [17:18] 'medical-jargon-google-easy' -> 'elastogenesis'
+  [19:20] 'medical-jargon-google-easy' -> 'alveologenesis'

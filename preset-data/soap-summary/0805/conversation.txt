@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0805
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_clinician: What's her diagnosis? Refractory anemia. Guest_clinician: Gotcha.

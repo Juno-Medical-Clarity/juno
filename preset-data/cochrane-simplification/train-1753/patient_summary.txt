@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1753  |  gem_id: gem-cochrane-simplification-train-1754  |  doi: 10.1002/14651858.CD011269.pub3
+
+The quality of evidence for all outcomes was very low, so we can draw no conclusions about whether light therapy is effective in preventing winter depression. The included study provided no information on side effects of light therapy. Doctors need to discuss with patients considering preventive treatment the advantages and disadvantages of light therapy and other potentially preventive treatments for winter depression, such as drug treatments, psychological therapies or lifestyle interventions. As no available studies have compared these treatments, treatment selection should be strongly based on patient preferences. The review authors recommend that future studies should directly compare light therapy versus other treatments, such as drug treatments, psychological therapies or lifestyle interventions to determine the best treatment for preventing winter depression.

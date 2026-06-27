@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0050  |  gem_id: gem-cochrane-simplification-train-51  |  doi: 10.1002/14651858.CD005529.pub2
+
+This summary of a Cochrane review presents what we know from research about the effect of outreach services for patients on general hospital wards. The review found two studies which were of good quality. One study compared 12 hospitals with outreach services to 11 that did not. Another study compared 16 wards with outreach to general wards without outreach. One of the studies showed that outreach reduced the number of hospital deaths, while the other study found no differences between hospitals with outreach and those with no outreach. It is not clear whether outreach reduces hospital deaths or ICU admissions. High quality research is needed to determine the effect of outreach services.

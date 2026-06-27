@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [3:11] 'medical-name-entity' -> 'Cochrane Menstrual Disorders and Subfertility Group Trials Register'
+  [24:25] 'medical-name-entity' -> 'CENTRAL'
+  [35:36] 'medical-name-entity' -> 'MEDLINE'
+  [44:45] 'medical-name-entity' -> 'EMBASE'
+  [54:55] 'medical-name-entity' -> 'PsycINFO'

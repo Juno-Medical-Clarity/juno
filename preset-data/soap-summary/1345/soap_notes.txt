@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1345
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Surgical history: Had thyroids taken out three years ago.
+- No complications post-surgery.
+- Final diagnosis: Growth on thyroids, which was cancerous.
+- Patient was initially reluctant to undergo surgery but felt it was necessary for survival.
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No assessment information provided in the conversation.)
+
+Plan:
+- (No plan information provided in the conversation.)

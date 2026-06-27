@@ -1,0 +1,8 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [6:7] 'abbr-medical' -> 'SOZ'
+  [16:18] 'general-complex' -> 'PageRank algorithm'

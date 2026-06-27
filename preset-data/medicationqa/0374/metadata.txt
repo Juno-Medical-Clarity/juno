@@ -1,0 +1,5 @@
+drug_focus: gabapentin and Lyrica
+question_type: Comparison
+section_title: Final thoughts
+source_url: https://www.pharmacytimes.com/contributor/jeffrey-fudin/2015/09/how-gabapentin-differs-from-pregabalin?p=3
+sample_id: 0374

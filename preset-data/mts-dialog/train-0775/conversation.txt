@@ -1,0 +1,28 @@
+Doctor: Welcome back.
+Patient: Thank you.
+Doctor: You are back for a follow up on your right arm pain, right?
+Patient: Yes. It has been almost a year since the pain first started.
+Doctor: How has your arm been feeling?
+Patient: I still have this dull pain in my upper outer area of my arm.
+Doctor: How long does the pain last?
+Patient: It was coming and going, but now the pain is more persistent since I last saw you. It is still happening every day.
+Doctor: Remind me again. You are right handed. Right?
+Patient: Yeah. It makes is hard to do things with the persistent pain.
+Doctor: I bet it does. Are you experiencing any numbness or tingling sensation in your arm or hand?
+Patient: No, but I have had this achy sensation in my hand radiating down to my fingers.
+Doctor: Do you have a history of any other neck or shoulder injuries?
+Patient: It is not from a specific injury but I have had this neck pain for thirty years.
+Doctor: Did you see anyone for the neck pain?
+Patient: Yes. I saw someone for it in two thousand and six, and then I developed this ear pain. They could not figure out what was going on so eventually I was sent to have an M R I of my neck and upper spine, which showed some degenerative changes. Then I was referred to Doctor X who was treating me for neck pain.  He gave me steroid injections.
+Doctor: Are you still seeing Doctor X for the epidural injections?
+Patient: Yes. I have been seeing him since two thousand and seven.
+Doctor: How old are you?
+Patient: I am fifty eight.
+Doctor: Are you experiencing any symptoms from receiving the injections?
+Patient: Those are for neck pain. My arm pain recent. I have been having the injections for a while now, without any trouble.
+Doctor: What medications have you been taking for the pain?
+Patient: There are a few of them that I take. I gave the list to the nurse.
+Doctor: Okay.
+Patient: I also have taken several Medrol packs. They make my blood sugars to increase so I try not to take it.
+Doctor: Okay. Does the pain prevent you from doing your daily activities or decrease your quality of life?
+Patient: No. I can do everything like normal, but constant nagging pain does get to me at times.

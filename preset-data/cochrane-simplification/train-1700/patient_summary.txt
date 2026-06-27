@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1700  |  gem_id: gem-cochrane-simplification-train-1701  |  doi: 10.1002/14651858.CD004585.pub2
+
+Amongst the 13 studies identified, there was a small amount of evidence to suggest that EMG-BFB had a beneficial effect when used with standard physiotherapy techniques. However EMG-BFB cannot currently be recommended as an effective routine treatment because other studies found no effect, and the positive trials were small.

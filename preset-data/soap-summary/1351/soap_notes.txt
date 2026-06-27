@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1351
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Lightheadedness, dizziness, nausea, vomiting, exhaustion
+- Severity: Lightheadedness was severe enough to require pulling over while driving; dizziness was severe enough to cause vomiting.
+- Duration: Lightheadedness episode lasted about 2-3 minutes; dizziness and nausea episodes lasted about 2-3 minutes and occurred in November; right arm numbness lasted about 4-5 hours in January.
+- Associated Symptoms: Nausea and vomiting during the dizziness episode; exhaustion following dizziness and vomiting.
+- Relevant Medical History: Experienced dizziness and lightheadedness after dental visit in May last year; experienced dizziness and vomiting in November last year; right arm numbness in January.
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Patient expressed concern about episodes of lightheadedness and dizziness, particularly after a dental visit.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No clinical interpretation, diagnoses, or impressions provided.
+
+Plan:
+- No specific actions, medications, tests, or follow-up mentioned.

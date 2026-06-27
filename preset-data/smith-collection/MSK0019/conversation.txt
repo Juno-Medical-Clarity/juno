@@ -1,0 +1,222 @@
+# Smith Collection Transcript: MSK0019
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Ive just been having uh this pain in my um right right elbow and its just been getting worse over the last few days i started having it around three days ago um and its just been getting worse with any kind of gripping motion or yeah so its its been getting worse
+
+Doctor: Okay so you said it started three days ago um has it been persistent since or has it been like on and off
+
+Patient: Its been pretty persistent um but its mainly when im uh doing some activities or lifting anything um and yes ive just been trying to rest it mostly
+
+Doctor: Okay okay thats good and um you said its worse with activity and better with rest have you tried anything else for it
+
+Patient: um ive tried some advil it it seemed to help a little bit but uh it just comes back
+
+Doctor: Okay um and if you were to describe the quality of this pain would you say its sharp burning throbbing achy
+
+Patient: Its more um like if i dont extend my wrist its kind of like achy but then if i extend my wrist i feel like a sharp pain at um on the um just on the outside of my elbow
+
+Doctor: Okay alright um alright and then um in terms of severity 1 to 10 10 being the worst pain youve ever felt how bad is the pain
+
+Patient: um probably like a 6 or 7
+
+Doctor: Okay alright um and have you ever experienced this type of pain before
+
+Patient: No i i ive never experienced any kind of pain there at least
+
+Doctor: Okay um how about um in terms of like timeline is it getting worse
+
+Patient: um just over the past three days i feel like its i have tried not to use it that much uh like when i was at work i have to use like tools a lot um and i noticed that when i was using a screwdriver like it it hurt a lot so it hasnt been getting worse but if i try to do anything at work it definitely hurts a lot more
+
+Doctor: Okay um alright and then have you noticed any numbness or tingling
+
+Patient: um no no nothing like that
+
+Doctor: No okay how about um pain elsewhere on your body
+
+Patient: Sorry what was that
+
+Doctor: Pain elsewhere on your body
+
+Patient: Oh no no pain elsewhere
+
+Doctor: Okay um and have you noticed any muscle weakness
+
+Patient: uh no
+
+Doctor: No any headaches
+
+Patient: No
+
+Doctor: Dizziness
+
+Patient: No
+
+Doctor: uh weight loss
+
+Patient: No
+
+Doctor: Fevers or chills
+
+Patient: No
+
+Doctor: Rashes
+
+Patient: No
+
+Doctor: uh changes in your vision hearing smell or taste
+
+Patient: No
+
+Doctor: uh coughing shortness of breath or wheezing
+
+Patient: No
+
+Doctor: Chest pain or heart palpitations
+
+Patient: No
+
+Doctor: uh changes in your bowel movements
+
+Patient: No
+
+Doctor: Nausea or vomiting
+
+Patient: No
+
+Doctor: Changes in your voiding
+
+Patient: No
+
+Doctor: Okay and are you otherwise healthy do you have any longstanding medical conditions
+
+Patient: Yeah no ive been healthy uh no other issues in my life
+
+Doctor: Okay thats good um how about um medications are you on any
+
+Patient: No no medications ive just been taking some advil for this pain
+
+Doctor: Okay i see and how about immunizations are you uptodate
+
+Patient: Yeah
+
+Doctor: Do you have any allergies
+
+Patient: uh no
+
+Doctor: Family history of any musculoskeletal issues
+
+Patient: No just uh i guess my dad hes hes getting some knee pain and hip pain now starting now but like thats about it
+
+Doctor: How old is he
+
+Patient: My dad hes 60
+
+Doctor: Okay and any lung or heart conditions
+
+Patient: No
+
+Doctor: Autoimmmune condition
+
+Patient: uh not that i know of
+
+Doctor: Okay and how about cancers
+
+Patient: um i think my aunt on my mothers side um she she had uh uterine cancer
+
+Doctor: Okay i see alright um any allergies or sorry you answered that do you do you smoke
+
+Patient: uh no
+
+Doctor: No um do you consume any marijuana
+
+Patient: uh no
+
+Doctor: Do you drink alcohol
+
+Patient: um just like maybe some wine on uh wine beer every couple days
+
+Doctor: Okay um and where do you live right now and who do you live with
+
+Patient: um i live with my wife and uh four year old daughter
+
+Doctor: Okay um any concerns for stis
+
+Patient: No
+
+Doctor: Any sick contacts recently
+
+Patient: No
+
+Doctor: Have you traveled anywhere recently
+
+Patient: No
+
+Doctor: Okay well um lets move on to the physical exam part of this interview then um so im going to get you to look at both your uh arms and hands and you let me know if you see any redness or swelling in uh your right arm compared to your left
+
+Patient: Okay um so like with movement
+
+Doctor: uh no uh just on inspection do you see any redness or swelling
+
+Patient: um no i dont really see anything thats too different no
+
+Doctor: No okay uh do you see any deformities atrophy or skin changes in your right compared to your left arm or hand
+
+Patient: No they look pretty similar to me
+
+Doctor: Okay alright and then im gonna get you to press down on certain areas of your right arm so you can start with the back of your elbow does that hurt
+
+Patient: uh just like right on the elbow it doesnt hurt but when i go on the outside part it does hurt on the back
+
+Doctor: Okay so like the lateral aspect of your elbow
+
+Patient: Yeah its like sore if i press down
+
+Doctor: Okay how about the medial aspect of your elbow
+
+Patient: um so yeah on the inside not so much maybe a little bit not not that much
+
+Doctor: Okay how about when you press down on your biceps or triceps
+
+Patient: uh nothing
+
+Doctor: Nothing how about when you um press down on your like forearm extensor muscle group
+
+Patient: um just yeah so just on the outside of my forearm close to where the elbow pain is if i go down a little bit and press down it does definitely feel sore
+
+Doctor: Okay and then how about with your forearm uh flexor flexors
+
+Patient: So on the inside um not so much no
+
+Doctor: No okay and now im gonna get you to walk through some movements with me um can you uh get a piece of paper and actually can you get a pencil and grip it as tight as you can um do you find that you feel weak when you do that
+
+Patient: um not weak but it does definitely like um when i picked up the pencil and moved my wrist up it did it did uh cause some some pain
+
+Doctor: Okay alright so would you mind extending or like straightening out your elbow all the way and then also straightening out your wrists um does that hurt
+
+Patient: uh straightening out no it doesnt hurt
+
+Doctor: Even with uh like the wrist um straightened out
+
+Patient: um yeah if i if i completely straighten out my wrist uh then like i just feel a bit of uh soreness but not as much pain as when i um am lifting something with my wrist or just raising my wrist upwards
+
+Doctor: Okay okay how about when you flex your wrist all the way
+
+Patient: um that hurts a little bit but not nearly as much as when i extend it
+
+Doctor: Okay okay um those are all the questions i had for you today and did you have any questions of your own for myself
+
+Patient: uh yeah i was just wondering what this this might be
+
+Doctor: Yeah so um it sounds like you have something called tennis elbow or lateral epicondylitis um and its usually related to some overuse um injury so whether at work or if you play a lot of tennis or some sort of sport that um overuses a certain muscle group um particularly like the forearm extensors um and so basically for this um we suggest a few things well start with like some conservative management like activity modification so at work if youre doing repetitive movements maybe not do them so much and take frequent breaks you can try some like ibuprofen well refer you to some um physiotherapy to help build those muscles around that that area and if those still do dont work um we can try some um other things like operative um operative management but well well come back to that in about 6 to 12 months um once we uh we try all of the other stuff does that sound okay
+
+Patient: Yeah that sounds good thank you
+
+Doctor: Yeah no worries

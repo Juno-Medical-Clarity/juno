@@ -1,0 +1,1 @@
+Herein, we describe a method to integrate molecular genomics data with genetic epidemiological data to inform on the underlying molecular mechanisms that influence breast cancer risk.

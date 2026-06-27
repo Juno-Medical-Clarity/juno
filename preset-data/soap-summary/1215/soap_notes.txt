@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1215
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Allergies: Clonidine (causes a really bad rash), Medifast (causes tiredness and difficulty getting out of bed).
+- Severity of symptoms: Clonidine causes a severe rash; Medifast leads to significant tiredness.
+- Duration: Not specified for the allergies.
+- Associated symptoms: Rash from Clonidine, tiredness, and difficulty getting out of bed from Medifast.
+- Relevant medical history: None explicitly mentioned.
+- Family history: None mentioned.
+- Emotions or concerns: Patient expresses concern about the effects of Medifast.
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

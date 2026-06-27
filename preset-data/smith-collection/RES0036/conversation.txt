@@ -1,0 +1,274 @@
+# Smith Collection Transcript: RES0036
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Can we just begin with what brings you in here today
+
+Patient: Yeah so ive been pretty breathless for the past six days and its its just worse i have to stop from i had to stop so many times walking here from my car
+
+Doctor: OK and when did this first start
+
+Patient: Six days ago
+
+Doctor: And did it start like gradually or was it all of a sudden
+
+Patient: Bah pretty sudden actually
+
+Doctor: OK and were you doing anything before it first happened
+
+Patient: No just work and spending some time at home
+
+Doctor: OK and so youre having the shortness of breath but are you having any like coughing at all
+
+Patient: Oh yeah a lot of coughing too yeah
+
+Doctor: OK and is it a dry cough or a wet cough
+
+Patient: um so ive noticed this weird rusty colored sputum and ive noticed that like a couple times a day
+
+Doctor: And did your cough started around the same time as when your shortness of breath started
+
+Patient: Uhm yeah id say so
+
+Doctor: OK so around six days
+
+Patient: Yeah around there
+
+Doctor: And has it been constant like ive been constantly having a shortness of breath every day with the coughing or does it come and go
+
+Patient: um its pretty constant now
+
+Doctor: OK and do you find that its been getting worse at all
+
+Patient: Uhm yeah id say its getting id say its getting worse
+
+Doctor: OK and is that both the coughing and the shortness of breath or one or the other
+
+Patient: Its its both
+
+Doctor: Its both ok
+
+Patient: Yeah
+
+Doctor: And do you remember if you were doing something at the time when the shortness of breath first started have you recently had any infections or anything like that previously
+
+Patient: I dont know bout an infection um but i guess i have been feeling a little feverish i havent taken my temperature but ive been feeling you know kind of cold
+
+Doctor: OK and when you feel the breathlessness how long does it usually last for
+
+Patient: um its kind of hard to say its its always their baseline but it gets worse when i when i walk or when i exert myself
+
+Doctor: OK and besides like the exertion does it get worse with any when youre near pollen when youre outside in the cold anything like that
+
+Patient: um it gets worse when when no no i wouldnt say that no no
+
+Doctor: OK and is it worse in the morning or at night
+
+Patient: It it doesnt matter
+
+Doctor: It is there all the time
+
+Patient: Yeah
+
+Doctor: OK and is there anything that makes it go away or i mean or anything youve tried that makes it better
+
+Patient: Well i guess ive tried some taking some tylenol and thats helping my like regulating my temperature
+
+Doctor: OK and have you ever noticed any blood in the cough
+
+Patient: Its rusty colored but i dont know if thats blood
+
+Doctor: OK but youve never actually coughed up uhm red blood
+
+Patient: No
+
+Doctor: OK and is there anything that makes your symptoms worse besides exertion
+
+Patient: uh no
+
+Doctor: OK and do you notice having any wheezing or any other breathing sounds
+
+Patient: I notice some wheezing yeah its its its not that much though
+
+Doctor: OK before this before the six days have you ever experienced anything similar
+
+Patient: uh no
+
+Doctor: No ok have you traveled outside of the country at all recently
+
+Patient: uh no
+
+Doctor: Yeah ok do you have any other symptoms like a sore throat runny nose chest pain anything like that
+
+Patient: I do have this sharp chest pain that gets worse with coughing
+
+Doctor: OK and is is that always there or is it just when youre coughing a lot
+
+Patient: I guess when im coughing a lot
+
+Doctor: And that starts six days ago too as well or is that
+
+Patient: Yeah
+
+Doctor: OK and do you ever feel any kind of is it so you said mention it was sharp but do you ever feel like increased pressure in your chest anything like that
+
+Patient: uh no
+
+Doctor: And how would you rate this pain when it occurs from a scale of 1 being the least amount of pain youve felt in your life and 10 being the worst
+
+Patient: The sharp chest pain id say maybe like a 7
+
+Doctor: OK and does it go away on its own or does it spread to different areas of your body at all
+
+Patient: It just starts gradually going away at when i stop coughing
+
+Doctor: OK have you experienced any kind of headaches with nausea or vomiting
+
+Patient: Uhm no
+
+Doctor: OK so you mentioned you had some chills but you dont know if you had a fever
+
+Patient: Mhmm
+
+Doctor: OK have you experienced any kind of dizziness or fainting spells
+
+Patient: uh no
+
+Doctor: OK and have you been in contact with anyone who has been ill recently
+
+Patient: Not that i know of no
+
+Doctor: OK have you experienced any night sweats
+
+Patient: I feel chilly at night but i dont maybe yeah
+
+Doctor: OK any significant weight loss recently
+
+Patient: No
+
+Doctor: And have you noticed any kind of symptoms like your heart is racing or anything like that
+
+Patient: No
+
+Doctor: OK have you experienced any changes in your bowel movements at all like in constipation or diarrhea
+
+Patient: No
+
+Doctor: Any changes in your urinary patterns
+
+Patient: um no
+
+Doctor: Any issues with your sleep or appetite at all
+
+Patient: Uhm no
+
+Doctor: OK have you had any recent infections like a cold or anything like that recently
+
+Patient: um i guess i had a runny nose a few days before
+
+Doctor: OK
+
+Patient: Yeah
+
+Doctor: Have you at all been exposed to anyone with tuberculosis in the past
+
+Patient: No
+
+Doctor: Any exposure at your workplace or at home to any fumes or dust in pets or animals
+
+Patient: Ah well i have birds but ive had them for awhile
+
+Doctor: OK how long have you had the birds for
+
+Patient: Ah about three years
+
+Doctor: OK and no they havent caused you any issues before
+
+Patient: No
+
+Doctor: OK and do you have any allergies that you know of
+
+Patient: No allergies
+
+Doctor: OK any past medical conditions like high blood pressure diabetes asthma
+
+Patient: No
+
+Doctor: Any previous surgeries
+
+Patient: No none
+
+Doctor: OK any hospitalizations for any reason
+
+Patient: No
+
+Doctor: OK are you on any medications currently
+
+Patient: No
+
+Doctor: And do you have any family history of any medical conditions like cancers or heart attacks or any lung issues
+
+Patient: No
+
+Doctor: OK and currently do you work
+
+Patient: I do the place i work is very crowded and its not the best conditions to work in and theres an air conditioner which i think is broken its quite humid its never been checked yeah
+
+Doctor: And how long have you been working there
+
+Patient: For the past year
+
+Doctor: OK and where do you live currently do you live in a house or an apartment
+
+Patient: Uhm i have a small apartment also not in the greatest location
+
+Doctor: OK do you have any exposure to mold or excessive dust in your household
+
+Patient: um maybe ah its a very badly kept apartment so its possible
+
+Doctor: OK do you have any potential exposure to asbestos in your house or at work
+
+Patient: I mean yeah probably both buildings are very very old i doubt theyre being maintained
+
+Doctor: OK and do you currently smoke at all
+
+Patient: I smoke 10 cigarettes a day
+
+Doctor: OK and how long have you been smoking for
+
+Patient: um since i was 20
+
+Doctor: OK and do you use any recreational drugs like marijuana
+
+Patient: I smoke a little cannabis sometimes
+
+Doctor: And how often would you say you smoke in an average week
+
+Patient: Maybe about 5 milligrams
+
+Doctor: OK and do you drink alcohol
+
+Patient: I do but not a lot
+
+Doctor: How much would you say you drink in a week
+
+Patient: Ah maybe 5 drinks
+
+Doctor: OK and in terms of your daily routine do you think you get enough exercise
+
+Patient: Probably not
+
+Doctor: OK uhm and how about your diet do you get 3 meals a day or is it well balanced
+
+Patient: I eat a lot of fast food and junk food
+
+Doctor: OK alright is there any other questions or concerns that you had for us today
+
+Patient: No
+
+Doctor: OK so yeah based on what we discussed today it seems that you may have an upper respiratory tract infection the other things on differential would be a copexacerbation due to your significant smoking history so we will do some investigations ti figure out what this is and then perhaps can give you antibiotics or other medications to help you unless its a viral infection

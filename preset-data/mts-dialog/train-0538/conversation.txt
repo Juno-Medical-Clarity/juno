@@ -1,0 +1,15 @@
+Doctor: How are you feeling today?
+Patient: I am feeling very tired.
+Doctor: According to your chart, you have seen with us for three separate self harm attempts. Have you had any other self harm events that you have not come to see use for?
+Patient: No. I have been seeing Doctor Lin.
+Doctor: I also see that this is your third time in the last two months that you have attempted to harm yourself. Is there anything that is currently going on in your life that could be triggering these resent episode?
+Patient: Last month I lost my job. And then this month my boyfriend left me.
+Doctor: I am so sorry. That is a lot to deal with.
+Patient: Yeah, it has been hard.
+Doctor: Have you been diagnosed with any mental health conditions?
+Patient: Doctor Lin just said that I was depressed.
+Doctor: Have you ever been put on any medication for the for your depression?
+Patient: I have taken Lexapro before.
+Doctor: How long ago did you take the Lexapro?
+Patient: I can't remember.
+Doctor: Okay.

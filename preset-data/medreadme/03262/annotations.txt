@@ -1,0 +1,10 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.5
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'macrocyclic lactones'
+  [18:20] 'medical-jargon-google-easy' -> 'in vitro'
+  [21:23] 'medical-jargon-google-easy' -> 'clinical isolates'
+  [24:26] 'medical-jargon-google-easy' -> 'Mycobacterium ulcerans'

@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [8:9] 'general-complex' -> 'mechanistic'
+  [15:16] 'medical-jargon-google-easy' -> 'hypoxia'
+  [17:18] 'abbr-medical' -> 'DMO'

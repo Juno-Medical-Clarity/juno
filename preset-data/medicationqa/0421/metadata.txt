@@ -1,0 +1,5 @@
+drug_focus: tetanus shot
+question_type: Information
+section_title: Where to Go
+source_url: https://www.cdc.gov/vaccines/vpd/tetanus/index.html
+sample_id: 0421

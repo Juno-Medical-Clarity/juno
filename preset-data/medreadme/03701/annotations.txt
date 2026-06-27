@@ -1,0 +1,12 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [3:6] 'medical-jargon-google-easy' -> 'natural killer T'
+  [7:8] 'abbr-medical' -> 'NKT'
+  [9:10] 'medical-jargon-google-easy' -> 'lymphocytes'
+  [14:15] 'general-complex' -> 'modulation'
+  [30:31] 'abbr-medical' -> 'NKT'
+  [43:44] 'abbr-medical' -> 'SIV'

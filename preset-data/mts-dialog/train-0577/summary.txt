@@ -1,0 +1,2 @@
+[ROS]
+NEUROLOGIC: Negative headaches, negative syncope, negative seizures, negative weakness, negative tremor.  No history of strokes, no history of other neurologic conditions.

@@ -1,0 +1,5 @@
+pmid:        1139040
+question:    16
+adaptation:  adaptation1
+title:       The effect of Hydrocortisone on the kinetics of normal human lymphocytes
+sentences:   6

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1264  |  gem_id: gem-cochrane-simplification-train-1265  |  doi: 10.1002/14651858.CD007381.pub2
+
+Four randomised controlled trials (RCTs) were identified. All four RCTs were in the US and with adolescents described as deprived, and most were minority group adolescents. Two RCTs tested the "Across Ages" mentoring programme, one the Big Brothers/Big Sisters mentoring programme, and one an intervention with adolescents whose parents were HIV+. Two RCTs found that mentoring reduced rates of initiation of use of alcohol, and one reduced initiation of use of drugs. No adverse effects were identified. The relative youth of three of the samples made it unlikely that the interventions would be effective due to low baseline rates of usage. The studies assessed formal programmes, and as most mentors are informal their work remains un assessed.

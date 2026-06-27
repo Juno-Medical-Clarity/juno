@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 1204
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient had a heart procedure (cardioversion) done a couple of months back due to a heart rhythm disorder.
+- Currently taking a blood thinner (Coumadin).
+- Medications include Pacerone, Zaroxolyn, albuterol inhaler, Neurontin, Lasix, and others.
+- Patient does not have diabetes.
+- Patient has a history of smoking but quit several years ago.
+- No history of lung problems.
+- No sick family members.
+
+Objective:
+- No objective data provided in the conversation.
+
+Assessment:
+- No assessment or clinical impressions provided in the conversation.
+
+Plan:
+- No specific plan mentioned in the conversation.

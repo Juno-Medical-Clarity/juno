@@ -1,0 +1,8 @@
+source:      elife
+side:        complex
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'memory trace'
+  [16:19] 'medical-jargon-google-easy' -> 'trace associative learning'

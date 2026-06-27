@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0289
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+When did the nausea and vomiting start? About a few hours ago. I can't seem to stomach anything. How many episodes of vomiting have you had? At least four. Any abdominal pain, fever, chill, or other symptoms? Just nausea and vomiting. It's been so terrible. I'll order you some Zofran to help bring the nausea to bay. One moment while I put the order in.

@@ -1,0 +1,44 @@
+# SOAP Notes — Sample 0203
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 6 yo M presents with abdominal pain x 3 days, vomiting x 2 days (6 episodes total), and fever (38.3°C) x 1 day
+- Vomitus: Initially food contents, now yellowish material without blood or bile
+- Diarrhea x 1 day (6-7 episodes), watery without blood
+- Fever associated with chills requiring multiple blankets
+- Abdominal pain generalized, non-tender to palpation
+- Denies headache, ear/eye pain, eye redness, rhinorrhea, sore throat, dysphagia, anosmia, ageusia, cough, dyspnea, wheezing, chest pain, dysuria, increased urinary frequency, rash, myalgia, arthralgia
+- Behavior: Irritable initially, now lethargic
+- No sick contacts, recent travel, or diet changes
+- Attends school (possible infectious exposure)
+
+PMHx:
+- Term infant, SVD, no complications
+- Up-to-date on immunizations
+- No prior hospitalizations or surgeries
+- No known allergies
+- No medications
+
+SocHx:
+- Lives with mother, father, brother (7 yo), sister (10 yo)
+- No smokers in the home
+- No pets
+- No safety concerns
+
+FHx:
+- Sister undergoing evaluation for asthma
+- No congenital/genetic disorders
+- No IBD or celiac disease
+
+Objective:
+- Vitals not provided
+
+Assessment:
+- Acute gastroenteritis (viral vs. COVID-19)
+- Dehydration
+
+Plan:
+- COVID-19 testing
+- CBC, CMP
+- IV fluids for rehydration
+- Anticipate discharge with supportive care once hydrated and tolerating PO

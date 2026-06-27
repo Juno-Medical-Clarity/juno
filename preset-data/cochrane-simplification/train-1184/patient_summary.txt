@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1184  |  gem_id: gem-cochrane-simplification-train-1185  |  doi: 10.1002/14651858.CD004289.pub5
+
+In 2009 we identified 14 studies, enrolling 2086 patients, and found that while statins were generally safe and reduced cholesterol levels, they did not prevent death or clinical cardiac events in people treated with dialysis. This latest update analysed a total or 25 studies (8289 patients), and included the results from two new large studies. We found that statins lowered cholesterol in people treated with dialysis but did not prevent death, heart attack, or stroke. Evidence for side-effects was incomplete, and potential harms from statin therapy remain uncertain. Current study data did not address whether statin treatment should be stopped when a person starts dialysis, although the benefits associated with continued treatment are likely to be small. Limited information was available for people treated with peritoneal dialysis, suggesting that more research is needed in this setting.

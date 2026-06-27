@@ -1,0 +1,5 @@
+pmid:        24619814
+question:    61
+adaptation:  adaptation3
+title:       The bioavailability of different zinc compounds used as human dietary supplements in rat prostate: a comparative study
+sentences:   10

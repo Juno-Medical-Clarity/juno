@@ -1,0 +1,30 @@
+OBJECTIVES. To establish a database of literature and other evidence on neonatal screening programmes and technologies for inborn errors of metabolism.
+To undertake a systematic review of the data as a basis for evaluation of newborn screening for inborn errors of metabolism.
+To prepare an objective summary of the evidence on the appropriateness and need for various existing and possible neonatal screening programmes for inborn errors of metabolism in relation to the natural history of these diseases.
+To identify gaps in existing knowledge and make recommendations for required primary research.
+To make recommendations for the future development and organisation of neonatal screening for inborn errors of metabolism in the UK.
+HOW THE RESEARCH WAS CONDUCTED. There were three parts to the research.
+A systematic review of the literature on inborn errors of metabolism, neonatal screening programmes, new technologies for screening and economic factors.
+Inclusion and exclusion criteria were applied, and a working database of relevant papers was established.
+All selected papers were read by two or three experts and were critically appraised using a standard format.
+Seven criteria for a screening programme, based on the principles formulated by Wilson and Jungner (WHO, 1968), were used to summarise the evidence.
+These were as follows.
+Clinically and biochemically well-defined disorder.
+Known incidence in populations relevant to the UK.
+Disorder associated with significant morbidity or mortality.
+Effective treatment available.
+Period before onset during which intervention improves outcome.
+Ethical, safe, simple and robust screening test.
+Cost-effectiveness of screening.
+A questionnaire which was sent to all newborn screening laboratories in the UK.
+Site visits to assess new methodologies for newborn screening.
+The classical definition of an inborn error of metabolism was used (i.e., a monogenic disease resulting in deficient activity in a single enzyme in a pathway of intermediary metabolism).
+RESEARCH FINDINGS. INBORN ERRORS OF METABOLISM. Phenylketonuria (PKU) (incidence 1:12,000) fulfilled all the screening criteria and could be used as the 'gold standard' against which to review other disorders despite significant variation in methodologies, sample collection and timing of screening and inadequacies in the infrastructure for notification and continued care of identified patients.
+Of the many disorders of organic acid and fatty acid metabolism, a case can only be made for the introduction of newborn screening for glutaric aciduria type 1 (GA1; estimated incidence 1:40,000) and medium-chain acyl CoA dehydrogenase (MCAD) deficiency (estimated incidence 1:8000-1:15,000).
+Therapeutic advances for GA1 offer prevention of neurological damage but further investigation is required into the costs and benefits of screening for this disorder.
+MCAD deficiency is simply and cheaply treatable, preventing possible early death and neurological handicap.
+Neonatal screening for these diseases is dependent upon the introduction of tandem mass spectrometry (tandem MS).
+This screening could however also simultaneously detect some other commonly-encountered disorders of organic acid metabolism with a collective incidence of 1:15,000.
+Neonatal screening for congenital adrenal hyperplasia (CAH) due to 21-hydroxylase deficiency (incidence 1:17,000) has been shown to be beneficial in other countries and similar benefits should accrue in the UK.
+A national programme of neonatal screening for CAH would be justified, with reassessment after an agreed period.
+Biotinidase deficiency is of low incidence in the UK (estimated 1:100,000), but this may be outweighed by the simplicity of the screening methodology and the benefits in prevention.

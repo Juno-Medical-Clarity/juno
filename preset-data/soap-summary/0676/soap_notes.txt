@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0676
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is currently twenty weeks pregnant.
+- History of one miscarriage prior to the birth of her son.
+- Patient has a two-year-old son.
+- Emotional concern regarding the previous miscarriage.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No assessments provided.]
+
+Plan:
+- [No plan provided.]

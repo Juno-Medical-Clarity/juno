@@ -1,0 +1,11 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [4:6] 'abbr-medical' -> 'L. major'
+  [8:11] 'medical-jargon-google-hard' -> 'TLR2 agonist Pam3CSK4'
+  [13:14] 'medical-jargon-google-easy' -> 'pathology'
+  [19:22] 'medical-jargon-google-easy' -> 'C57BL / 6'
+  [26:29] 'medical-jargon-google-easy' -> 'BALB / c'

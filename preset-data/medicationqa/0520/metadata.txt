@@ -1,0 +1,5 @@
+drug_focus: oxycodone
+question_type: Stopping/tapering
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=094b64b3-cd32-4de5-afb6-ea00d9caad74&audience=consumer
+sample_id: 0520

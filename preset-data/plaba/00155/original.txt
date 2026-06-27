@@ -1,0 +1,9 @@
+Background: For patients presenting with atrial fibrillation of only a few weeks duration, the use of transesophageal echocardiography offers the opportunity to markedly abbreviate the duration of atrial fibrillation before cardioversion.
+We sought to determine if the shorter duration of atrial fibrillation allowed by a transesophageal echocardiography strategy had an impact on the recurrence of atrial fibrillation and prevalence of sinus rhythm during the first year following cardioversion.
+Methods: Transesophageal echocardiography was attempted in 539 patients (292 men, 247 women; 71.6 +/- 13.0 years.) with atrial fibrillation > or =2 days (66.1% <3 weeks) or of unknown duration before elective cardioversion of atrial fibrillation.
+Therapeutic anticoagulation at the time of transesophageal echocardiography was present in 94.6% of patients, and 73.4% of subjects were discharged on warfarin.
+Results: Atrial thrombi were identified in 70 (13.1%) patients.
+Successful cardioversion in 413 patients without evidence of atrial thrombi was associated with clinical thromboembolism in 1 patient (0.24%, 95% confidence interval: 0.0--0.8%).
+In patients with atrial fibrillation <3 weeks at the time of cardioversion (a duration incompatible with conventional therapy of 3 to 4 weeks of warfarin before cardioversion), the 1-year atrial fibrillation recurrence rate was lower (41.1% vs. 57.9%, P <0.01), and the prevalence of sinus rhythm at 1 year was increased (65.8% vs. 51.3%, P <0.03).
+No other clinical or echocardiographic index was associated with recurrence of atrial fibrillation or sinus rhythm at 1 year.
+Conclusions: Early cardioversion facilitated by transesophageal echocardiography has a favorable safety profile and provides the associated benefit of reduced recurrence of atrial fibrillation for patients in whom the duration of atrial fibrillation is <3 weeks.

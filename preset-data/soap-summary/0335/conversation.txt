@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0335
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+It looks like you have an extensive medical history. I blame my heart. It's caused me the most trouble. I had coronary artery bypass surgery in twenty ten along with an angioplasty. I'm sorry that your heart has been giving you so much trouble. I'm happy that you're here with us today and taking the right measures to keep yourself healthy. Oh, and I forgot to mention that I've had prostate biopsies in the past. When did you have the biopsies done? Last year. Did they come back negative? Yes, fortunately. I guess my prostate isn't as troublesome as my heart. I understand.

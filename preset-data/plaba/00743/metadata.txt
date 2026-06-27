@@ -1,0 +1,5 @@
+pmid:        35057798
+question:    59
+adaptation:  adaptation2
+title:       Humoral immune response after different SARS-CoV-2 vaccination regimens
+sentences:   15

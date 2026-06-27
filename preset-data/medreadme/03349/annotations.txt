@@ -1,0 +1,7 @@
+source:      elife
+side:        simple
+readability: 4.0
+split:       dev
+
+jargon_spans:
+  [13:15] 'medical-jargon-google-easy' -> 'associative learning'

@@ -1,0 +1,4 @@
+Doctor: Hi, I am Doctor Chandler.
+Patient: Hello Doctor.
+Doctor: So, tell me what's going on?
+Patient: I am having a headache.

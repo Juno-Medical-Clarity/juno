@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0596  |  gem_id: gem-cochrane-simplification-train-597  |  doi: 10.1002/14651858.CD001691.pub3
+
+The review of trials found that there was not enough evidence that postnatal phenobarbital is effective in preventing IVH. Furthermore, phenobarbital suppresses breathing in infants who are breathing spontaneously, causing a need for mechanical ventilation.

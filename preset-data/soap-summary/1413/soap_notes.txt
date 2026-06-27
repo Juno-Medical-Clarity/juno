@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1413
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- History of chronic pain: Yes, due to a car accident a long time ago.
+- Symptoms: Neck pain (chronic) and occasional back pain.
+- Duration: Neck pain has been ongoing since the car accident; back pain is described as sometimes occurring.
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No assessment or clinical impressions provided in the conversation.)
+
+Plan:
+- (No plan or actions mentioned in the conversation.)

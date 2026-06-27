@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2741  |  gem_id: gem-cochrane-simplification-train-2742  |  doi: 10.1002/14651858.CD001279.pub2
+
+Six trials involving 321 infants in three different settings were reviewed. The review was unable to identify clear benefits in outcomes such as duration of hospitalisation or improvement in oxygenation though there were suggestions that some patients may benefit particularly in recurrently wheezy infants treated at home. Well designed studies are required to clarify the role of these agents in young children with wheeze.

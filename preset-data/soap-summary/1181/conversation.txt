@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1181
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+And you said you're right handed, correct? Yep. Right handed. Okay, great. I've made note of it in your chart. I have one more question to ask regarding tobacco and alcohol. Do you smoke or drink? I don't do either. I can't even think of the last time I took a sip of alcohol.

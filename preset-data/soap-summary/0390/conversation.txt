@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0390
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you ever had surgery? What, like a joint replacement? Well, anything from joint replacements, to appendix removal, or C sections? Yeah, I've had an appendectomy and hysterectomy, actually.

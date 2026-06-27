@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1390  |  gem_id: gem-cochrane-simplification-train-1391  |  doi: 10.1002/14651858.CD002829.pub4
+
+In this updated review, we identified 10 studies involving a total of 1015 participants. We did not find any well-designed randomized controlled trial evidence to support the use of these medications. Trials of antioxidants identified in this review were generally of poor methodological quality and lacked statistical power. However, antioxidants are generally well tolerated without serious adverse effects.

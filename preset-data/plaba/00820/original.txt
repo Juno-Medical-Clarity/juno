@@ -1,0 +1,18 @@
+Background and objectives: There are very little data available regarding nephrotic syndrome (NS) in elderly (aged ≥65 years) Japanese.
+The aim of this study was to examine the causes and outcomes of NS in elderly patients who underwent renal biopsies between 2007 and 2010.
+Design, setting, participants, and measurements: From July 2007 to June 2010, all of the elderly (aged ≥65 years) Japanese primary NS patients who underwent native renal biopsies and were registered in the Japan renal biopsy registry (J-RBR; 438 patients including 226 males and 212 females) were identified.
+From this cohort, 61 patients [28 males and 33 females including 29, 19, 6, 4, and 3 patients with membranous nephropathy (MN), minimal change nephrotic syndrome (MCNS), focal segmental glomerulosclerosis (FSGS), membranoproliferative glomerulonephritis (MPGN), and other conditions, respectively] were registered from the representative multi-centers over all districts of Japan, and analyzed retrospectively.
+The treatment outcome was assessed using proteinuria-based criteria; i.e., complete remission (CR) was defined as urinary protein level of <0.3 g/day or g/g Cr, and incomplete remission type I (ICR-I) was defined as urinary protein level of <1.0-0.3 g/day or g/g Cr, and renal dysfunction was defined as a serum creatinine (Cr) level of 1.5 times the baseline level.
+Results: In this elderly primary NS cohort, MN was the most common histological type of NS (54.8 %), followed by MCNS (19.4 %), FSGS (17.4 %), and MPGN (8.4 %).
+Of the patients with MN, MCNS, or FSGS, immunosuppressive therapy involving oral prednisolone was performed in 25 MN patients (86.2 %), 18 MCNS patients (94.7 %), and all 6 FSGS patients (100 %).
+CR was achieved in all 19 (100 %) MCNS patients.
+In addition, CR and ICR-I were achieved in 16 (55.2 %) and 18 (62.1 %) MN patients and 4 (66.7 %) and 5 (83.3 %) FSGS patients, respectively.
+There were significant differences in the median time to CR among the MCNS, FSGS, and MN patients (median: 26 vs. 271 vs. 461 days, respectively, p < 0.001), and between the elderly (65-74 years, n = 7) and very elderly (aged ≥75 years, n = 12) MCNS patients (7 vs. 22 days, p = 0.037).
+Relapse occurred in two (6.9 %) of the MN and nine (47.4 %) of the MCNS patients.
+Renal dysfunction was observed in five (7.2 %) of the MN patients.
+Serious complications developed in eight (14.8 %) patients, i.e., two (3.7 %) patients died, four (7.4 %, including three MCNS patients) were hospitalized due to infectious disease, and two (3.7 %) developed malignancies.
+The initiation of diabetic therapy was necessary in 14 of the 61 patients (23.0 %) with much higher initial steroid dosage.
+Conclusion: Renal biopsy is a valuable diagnostic tool for elderly Japanese NS patients.
+In this study, most of elderly primary NS patients respond to immunosuppressive therapy with favorable clinical outcomes.
+On the other hand, infectious disease is a harmful complication among elderly NS patients, especially those with MCNS.
+In future, modified clinical guidelines for elderly NS patients should be developed.

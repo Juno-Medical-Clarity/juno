@@ -1,0 +1,9 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [2:4] 'medical-jargon-google-easy' -> 'facial lesions'
+  [10:11] 'medical-jargon-google-easy' -> 'Leishmania'
+  [16:17] 'medical-jargon-google-easy' -> 'lesions'

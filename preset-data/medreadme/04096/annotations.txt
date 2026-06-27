@@ -1,0 +1,9 @@
+source:      MSD
+side:        complex
+readability: 4.35
+split:       test
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'aorta'
+  [5:7] 'medical-jargon-google-easy' -> 'acutely dissects'
+  [11:13] 'medical-jargon-google-easy' -> 'coronary sinuses'

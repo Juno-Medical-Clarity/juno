@@ -1,0 +1,43 @@
+# SOAP Notes — Sample 0071
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough x 7 days, worsening (initially nocturnal, now throughout the day)
+- Fever x 3 episodes in the last week (no recorded temperature, feels chilly at night, chills during the day)
+- Loss of taste and smell x 1 day (taste affected before smell)
+- Dry, harsh cough (no sputum/blood)
+- Fatigue x few days (feeling crummy, low energy)
+- Runny nose earlier in the week, now subsided
+- Decreased appetite in the last few days due to loss of taste/smell
+- No shortness of breath, wheeze, chest pain, weight loss, rashes, sore throat, vision/hearing changes, eye/ear pain/discharge, palpitations, limb swelling, dizziness, confusion, bowel/bladder changes, nausea/vomiting
+
+PMHx:
+- Childhood asthma (exercise-induced, no puffers used for >10 years)
+- No other medical conditions
+- No surgeries/hospitalizations
+- Medications: Tylenol Cold x 4 days (at bedtime)
+- Allergies: Fall allergies (sniffly), no known food/drug allergies
+- Immunizations up to date
+
+SocHx:
+- Smoker (1 pack/day x 10 years, trying to cut down due to pandemic)
+- No marijuana/recreational drug use
+- Alcohol: Few beers a few times/week
+- Lives with wife and daughter in a townhouse just outside of London
+- No recent travel, goes to work (hasn't been in the last week due to symptoms)
+- No sick contacts at home
+
+FHx:
+- Father - MI at age 58 (recovered)
+- No family history of lung/cancer conditions
+
+Objective:
+- Vitals not recorded
+
+Assessment:
+- Likely COVID-19 (patient concerned about this)
+
+Plan:
+- COVID swab (results in 24-48 hours)
+- Self-isolation x 14 days (including from family members)
+- Consider other viral illnesses if COVID negative

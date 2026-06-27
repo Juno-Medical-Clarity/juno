@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-hard' -> 'A20'
+  [13:17] 'medical-jargon-google-easy' -> 'HIV - associated cytokines'
+  [23:26] 'medical-jargon-google-easy' -> 'defective intestinal barrier'

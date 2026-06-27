@@ -1,0 +1,214 @@
+# Smith Collection Transcript: RES0108
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi uh ive just had this cough for the past week and i was worried i might have covid so i just wanted to um i just wanted to be checked
+
+Doctor: Sure so you mentioned you it started a week ago
+
+Patient: Yeah
+
+Doctor: Has it been persistent or does it come and go
+
+Patient: um its just been there
+
+Doctor: Been there ok
+
+Patient: Yeah i just get this itchy sort of uh like scratchy sensation in my throat and then i just cough and um that makes it better
+
+Doctor: OK ok uhm what how would you describe your cough like is it barky is it harsh is it muffled
+
+Patient: Uhm no i dont i dont think its barky or harsh
+
+Doctor: OK and does anything make it better or worse like you know like the cold air laying down at particular time of day
+
+Patient: Not really i havent uh nothings really helped um i also tried a cough syrup um it didnt it helped for a couple hours but then it was back again the cough was back again
+
+Doctor: OK and have you ever experienced anything like this in the past
+
+Patient: uh well i i said yeah when i get a cold
+
+Doctor: Mhmm ok
+
+Patient: Once a year maybe
+
+Doctor: Once a year ok um do you experience any shortness of breath with this cough
+
+Patient: No
+
+Doctor: No ok is it a dry cough or do you bring up any phlegm
+
+Patient: No its a dry cough
+
+Doctor: OK uh any blood that youve seen
+
+Patient: No no
+
+Doctor: No ok and do you feel wheezy
+
+Patient: No
+
+Doctor: No chest pain
+
+Patient: No
+
+Doctor: No um feeling like your hearts racing
+
+Patient: No
+
+Doctor: Any swelling in your limbs
+
+Patient: uh no
+
+Doctor: No any fainting spells
+
+Patient: Uhm no
+
+Doctor: No ok do you ever feel like your nose is stuffy or runny
+
+Patient: No
+
+Doctor: No any changes in your vision or hearing
+
+Patient: uh no
+
+Doctor: A sore throat
+
+Patient: No
+
+Doctor: um loss of smell or taste
+
+Patient: No
+
+Doctor: Any weight loss
+
+Patient: uh no
+
+Doctor: Fevers
+
+Patient: I checked no no i dont have a fever
+
+Doctor: No any rashes
+
+Patient: No
+
+Doctor: Issues uh any changes in your bowel movements
+
+Patient: um uh no ive just been constipated from time to time but thats nothing thats not new
+
+Doctor: OK constipation and im sorry when did your constipation start
+
+Patient: Oh its a problem for years i dont eat enough fibre
+
+Doctor: Oh ok any changes in your urine
+
+Patient: No
+
+Doctor: OK any nausea or vomiting
+
+Patient: uh no
+
+Doctor: No ok any joint pain
+
+Patient: No
+
+Doctor: No numbness or tingling
+
+Patient: No
+
+Doctor: Headaches
+
+Patient: No
+
+Doctor: No ok are you otherwise healthy do you have any longstanding medical conditions
+
+Patient: I have diabetes
+
+Doctor: OK how long have you had diabetes
+
+Patient: Its about its been uh seven years now
+
+Doctor: OK any hospitalizations or surgeries in the past
+
+Patient: No
+
+Doctor: OK and um how about medications are you on any
+
+Patient: uh yeah ive been taking uh metformin for the past uh for the past five years when five or six years
+
+Doctor: OK
+
+Patient: um and uh my family doc started me on uh ramipril about two weeks ago he told me that uh now that im 50 i need to i need to be on this pill as well so now i have to take 2 pills instead of one
+
+Doctor: OK
+
+Patient: Yeah because i think its its good for my heart or something
+
+Doctor: Yeah for sure so you started that two weeks ago ok are you up to date with all your immunizations
+
+Patient: uh yeah i think so
+
+Doctor: OK any allergies
+
+Patient: Uhm penicillin i just get uh i get a rash i got a rash when i was a child i havent had it since then
+
+Doctor: OK ok any family history of lung or heart conditions
+
+Patient: uh no nothing like that
+
+Doctor: No ok do you smoke
+
+Patient: uh no
+
+Doctor: No how about uh marijuana or other recreational drugs
+
+Patient: No
+
+Doctor: No ok um alcohol
+
+Patient: uh yeah i drink on the weekends
+
+Doctor: OK what do you drink and how much do you drink
+
+Patient: Ill have maybe two or three uh bottles of beer
+
+Doctor: OK sure and um have you been in contact with any sick people recently
+
+Patient: No no ive just been staying at homeim just scared of covid but im im still worried i might have somehow gotten it
+
+Doctor: Yeah for sure uhm any travel recently
+
+Patient: No
+
+Doctor: No ok and where do you live right now
+
+Patient: I live in a house with my wife and my two kids
+
+Doctor: OK uh are they healthy
+
+Patient: Yeah theyre all healthy
+
+Doctor: OK any old carpet dust mold or asbestos in your home
+
+Patient: um not that im aware of
+
+Doctor: No ok ok well it seems like um those are all the questions that i had for you today did you have any questions of your own
+
+Patient: uh no i just want to get tested for covid
+
+Doctor: Yeah so we will definitely do a covid swab on you because you have a cough um and those results should come back to you in about 24 to 48 hours and so youll know more then but because your symptoms do overlap with that of covid we still recommend isolating for 14 days but the other thing i want to mention is that you dont have any other symptoms of infection besides your cough and it seems like the cough started a week ago and you started this new medication ramipril two weeks ago and so ramipril is a type of ace inhibitor and one of its side effects is that in some people it can cause coughing so i am going to review your medications and if your family doc also agrees we may try uh another um blood pressure medication for you instead of ramipril
+
+Patient: Sure
+
+Doctor: um so well try and change that medication and see if your coughing stops how does that sound
+
+Patient: Sounds great
+
+Doctor: OK great thank you

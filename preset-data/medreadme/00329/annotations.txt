@@ -1,0 +1,12 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [4:7] 'medical-jargon-google-easy' -> 'secondary end points'
+  [9:13] 'medical-jargon-google-easy' -> 'circumferential resection margin positivity'
+  [14:16] 'medical-jargon-google-easy' -> 'intraoperative complications'
+  [17:19] 'medical-jargon-google-easy' -> 'postoperative complications'
+  [20:23] 'medical-jargon-google-hard' -> 'plane of surgery'
+  [29:33] 'medical-jargon-google-easy' -> 'bladder and sexual dysfunction'

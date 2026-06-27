@@ -1,0 +1,5 @@
+pmid:        34258332
+question:    47
+adaptation:  adaptation1
+title:       Biochemical, clinical and genetic characteristics in adults with persistent hypophosphatasaemia; Data from an endocrinological outpatient clinic in Denmark
+sentences:   16

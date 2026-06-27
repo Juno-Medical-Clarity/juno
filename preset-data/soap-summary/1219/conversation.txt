@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1219
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there! What brings you in today? I have not been feeling well. I am tired and feel weak. Have you had any other symptoms? I noticed after I went to the bathroom this morning, that my urine was dark. Have you been staying hydrated? Yes. Lets get a urine sample. I will have the nurse come in with a sample cup. Okay.

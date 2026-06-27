@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1379  |  gem_id: gem-cochrane-simplification-train-1380  |  doi: 10.1002/14651858.CD003864.pub2
+
+This review of three studies involving 470 participants found little evidence of how this care is best delivered. Information on a small number of nursing home residents who had a stroke (67 participants from a larger trial) showed that training nursing staff improved their knowledge of oral care and resulted in improved oral hygiene in their patients. Another trial demonstrated the beneficial impact of a decontamination gel on the incidence of pneumonia amongst patients in a stroke ward. However, there was no other information on how best to provide oral hygiene and more studies are urgently needed.

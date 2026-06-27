@@ -1,0 +1,8 @@
+Doctor: Welcome to the clinic.
+Patient: Thank you.
+Doctor: Are you from the area?
+Patient: I was born and raised in Iowa. My husband and I moved here twenty years ago, and we have been here ever since.
+Doctor: It is a wonderful city. Do you have kids?
+Patient: Yes! We have two kids.
+Doctor: Do you have any history or present use of tobacco, alcohol and recreational drugs or substances?
+Patient: I have a glass of wine every once and a while but no to the rest.

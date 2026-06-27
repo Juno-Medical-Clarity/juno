@@ -1,0 +1,5 @@
+pmid:        26783040
+question:    47
+adaptation:  adaptation2
+title:       Clinical, biochemical and genetic spectrum of low alkaline phosphatase levels in adults
+sentences:   13

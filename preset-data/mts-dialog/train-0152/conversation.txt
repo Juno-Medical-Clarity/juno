@@ -1,0 +1,11 @@
+Doctor: Are you married?
+Patient: Yes, for almost twenty two years now.
+Doctor: That is amazing! And are you working?
+Patient: Ah yes, I drive a delivery truck in the town.
+Doctor: Okay. So, tell me do you smoke or drink? Yes, I do both.
+Doctor: And how much would you say you smoke per day?
+Patient: I smoke about two packs a day.
+Doctor: Hm, how much do you drink?
+Patient: I drink three, oh wait, I drink two beers every day.
+Doctor: And do you do any drugs like coke or anything?
+Patient: No.

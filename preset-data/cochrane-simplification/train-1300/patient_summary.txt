@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1300  |  gem_id: gem-cochrane-simplification-train-1301  |  doi: 10.1002/14651858.CD008585.pub2
+
+Five studies involving 187 females with an age range of 15 to 40 years were included in this review. Oral isoxsuprine was examined in two studies; terbutaline oral spray, ritodrine chloride and oral hydroxyphenyl-orciprenalin were compared with placebo in a further three studies. All of the studies were conducted over 30 years ago and none were of high quality. None of these medications, other than isoxsuprine combined with acetaminophen and caffeine, were reported to have any beneficial effect. Side effects with these medications were reported in up to a quarter of the participants and included nausea, vomiting, dizziness, quivering, tremor and palpitations. At present there is insufficient evidence to allow confident decision-making about the use of beta2-adrenoceptor agonists for dysmenorrhoea.

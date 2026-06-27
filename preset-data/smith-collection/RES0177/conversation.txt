@@ -1,0 +1,190 @@
+# Smith Collection Transcript: RES0177
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: I brought my son in today because he had a fever that started two days ago and and then since then he hes had a cough that started as well and it it hes been short of breath it looks like hes like breathing faster and just having a harder time to breathe
+
+Doctor: OK uhm before the fever did you notice any other symptoms like a runny nose or a stuffy nose
+
+Patient: No nothing like that yeah the fever kind of came on pretty pretty suddenly it seemed like
+
+Doctor: OK and did you take his temperature at home
+
+Patient: I did yeah it was like 387 and then like two days ago and then it was high again like yesterday and today
+
+Doctor: OK and you mentioned the coughing started soon after the fever correct
+
+Patient: Yeah yeah kind of like the day after e started having getting this cough
+
+Doctor: OK and is it a dry cough or is it a productive cough
+
+Patient: Its uh yeah he is bringing up a little bit of sputum yeah hes doing it
+
+Doctor: OK what color is the sputum
+
+Patient: uh its a maybe like like greenish greenish yellow
+
+Doctor: Greenish yellow ok any blood in there
+
+Patient: No i havent noticed any any blood
+
+Doctor: OK and does he seem short of breath or wheezy
+
+Patient: No wheezing but he does have some shortness of breath
+
+Doctor: OK and the service of bread started with a cough
+
+Patient: Ii did yeah
+
+Doctor: OK uhm how much shortness of breath is he having is it just when hes exerting himself or is it at rest as well
+
+Patient: Id say ah even at rest now hes like breathing faster
+
+Doctor: OK umm and it does anything help with that so does sitting up help or uh you know getting fresh air or anything like that
+
+Patient: No but youd say like taking a smaller breaths helps because like if he if he takes a deep breath and he gets he gets like chest pain
+
+Doctor: OK ok and how about when hes laying down
+
+Patient: No he hasnt said anything like like that for laying down just i think when hes just taking a deep breath he said
+
+Doctor: OK is it waking him up from sleep
+
+Patient: uh no
+
+Doctor: No ok how about chest pain
+
+Patient: Yeah so yeah hes had some pain when he when he just really takes that deep breath in
+
+Doctor: OK does he ever feel like his hearts racing
+
+Patient: Uhm no
+
+Doctor: No ok uhm how about any dizziness or fainting spells
+
+Patient: No he doesnt have anything like that
+
+Doctor: OK has he had a sore throat
+
+Patient: No no
+
+Doctor: Any changes in vision or hearing
+
+Patient: No
+
+Doctor: uh smell or taste
+
+Patient: No
+
+Doctor: No weight loss
+
+Patient: No hes been gaining weight well
+
+Doctor: OK how about any rashes
+
+Patient: Nope i havent noticed any
+
+Doctor: OK uhm and then any numbness or tingling
+
+Patient: No he hasnt said anything like that
+
+Doctor: OK muscle aches or joint aches
+
+Patient: No
+
+Doctor: OK confusion or memory loss
+
+Patient: No
+
+Doctor: Changes in his bowel movements
+
+Patient: Nope yeah thats been been getting out no diarrhea or anything like that
+
+Doctor: OK changes in his voiding
+
+Patient: Nope he hasnt had any urinary problems
+
+Doctor: OK and is he an otherwise healthy child umm does he have any longstanding medical conditions
+
+Patient: No he doesnt thats uh this was so surprising hes been healthy
+
+Doctor: OK has he so hes never had any hospitalizations or surgeries
+
+Patient: No he hasnt
+
+Doctor: OK how about his mothers pregnancy with him were there any complications at that point
+
+Patient: Nope everything went went well no complications and he was like a good birth weight and went home right away
+
+Doctor: OK ok and how about the delivery itself any complications during that that point
+
+Patient: Oh no not it was a vaginal delivery and it was normal
+
+Doctor: OK and he didnt need to be hospitalized as a newborn for anything like jaundice or shortness of breath
+
+Patient: uh nope he hasnt had any any reason to be hospitalized
+
+Doctor: OK uhm alright and has he been hitting all his developmental milestones as well as like his height weight and head circumference milestones
+
+Patient: He has yeah hes been growing well and reaching the developments stones milestones
+
+Doctor: OK is he on any medications
+
+Patient: uh no hes not on any medications
+
+Doctor: OK any allergies
+
+Patient: No allergies
+
+Doctor: Uhm is he up to date with all his immunizations
+
+Patient: He is yeah
+
+Doctor: OK any family history of lung or heart conditions
+
+Patient: uh no nothing like that
+
+Doctor: OK have about cancers in the family
+
+Patient: No no cancers luckily
+
+Doctor: Can you think of anyone hes been in contact with whos also been sick
+
+Patient: Yeah maybe he has a younger sister that goes to daycare and she was sick last week with like she had a cough and stuff as well
+
+Doctor: OK ok and does she have a fever as well
+
+Patient: She did yeah she got better right uh last week we we had to take her to to see the doctor and she got antibiotics for that actually for for a few days
+
+Doctor: OK ok and have you traveled anywhere recently
+
+Patient: No weve been at home
+
+Doctor: OK does anyone at home smoke
+
+Patient: No
+
+Doctor: No ok and who lives at home with him
+
+Patient: So its me his mom and then his younger sister
+
+Doctor: OK any old carpets mold dust asbestos anything that could exacerbate his condition
+
+Patient: No i dont think so its a newer home
+
+Doctor: OK good umm so those are all the questions that i had for you did you have any questions of your own
+
+Patient: Uhm no i no that was everything i think the only i i guess other thing that that i forgot to mention is that just he doesnt really like his appetites been a little bit lower couple of days as well but uh he hasnt had any like nausea or vomiting though
+
+Doctor: OK ok yeah thats good to know uhm so because some of his symptoms overlap with those of covid we will do a swab on him and you should hear back in about 24 to 48 hours with those results and he should isolate for 14 days because of those symptoms and it doesnt it sounds more in keeping with the picture of community acquired pneumonia so for that we will get a chest xray well check his oxygen and his temperature and if the chest xray shows consolidation umm or some sort of infiltrate it is likely that he has pneumonia so we will start by giving him some amoxicillin populate or cefuroxime for five days and just keep monitoring his symptoms they should resolve in about 5 days when the course of antibiotics is complete if his condition gets worse like hes getting neurological deficits like weakness or seizures just take him to the er and if symptoms dont resolve in five to seven days we can do further work up or things like fungal infections or tb or things like that how does that sound
+
+Patient: That sounds great thank you
+
+Doctor: OK yeah no problem

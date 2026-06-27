@@ -1,0 +1,10 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [48:50] 'medical-jargon-google-easy' -> 'general practitioner'
+  [51:52] 'abbr-medical' -> 'GP'
+  [56:57] 'medical-jargon-google-easy' -> 'admissions'
+  [98:100] 'medical-jargon-google-easy' -> 'elective admissions'

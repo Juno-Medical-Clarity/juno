@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0333
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is sexually active with one male partner.
+- The relationship is monogamous and has lasted for three years.
+- Partner is HIV positive.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment or clinical interpretation provided.]
+
+Plan:
+- [No specific plan mentioned.]

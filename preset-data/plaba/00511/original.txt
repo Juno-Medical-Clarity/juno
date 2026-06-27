@@ -1,0 +1,5 @@
+Among the many complications associated with pregnancy, hypertensive disorders of pregnancy (HDP) constitute one of the most important.
+Since the pathophysiology of HDP is complex, new disease biomarkers (DBMs) are needed to serve as indicators of disease activity.
+However, in the current status of laboratory medicine, despite the fact that blood pressure measurement has been used for a long time, not many DBMs contribute adequately to the subsequent diagnosis and treatment.
+In this article, we discuss studies focusing on peptide fragments in blood identified by comprehensive quantitative methods, among the currently proposed DBM candidates.
+Furthermore, we describe the basic techniques of peptidomics, especially quantitative proteomics, and outline the current status and challenges of measuring peptides in blood as DBM for HDP.

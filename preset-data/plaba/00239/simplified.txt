@@ -1,0 +1,11 @@
+The purpose of this study is to compare the effectiveness of dopamine agonists (medication that imitates the actions of dopamine in the body to relieve symptoms related to low levels of dopamine) and monoamine oxidase type-B (MAO-B) inhibitors (medications that prevent enzymes in the body from breaking down dopamine which allows more dopamine available in the brain) for Parkinson's disease.
+Researchers performed a thorough review of published studies to identify clinical trials investigating 4 dopamine agonists and 3 MAO-B inhibitors for Parkinson's disease.
+Data are pulled together from the published studies in a computer analysis that allows different comparisons of the 7 drugs.
+Researchers created the model to include dopamine agonists and MAO-B inhibitors being given as single therapy (only one drug used) or in combination with levodopa.
+The main outcomes (results) are Unified Parkinson's Disease Rating Scale (UPDRS) scores (rating tool used to measure the severity and progression of Parkinson's disease in patients), serious adverse events (unfavorable or unintended changes in health), and withdrawals (symptoms after a person stops taking a drug).
+The effectiveness of each dopamine agonist and MAO-B inhibitor versus a comparison drug is estimated.
+Altogether, 79 published studies are included in the analysis.
+All the investigated drugs are effective compared with placebos (inactive substances that look like the drug being tested in the experiment) when given as single therapy (the only drug given) except the MAO-B inhibitor, safinamide.
+
+In conclusion, dopamine agonists are found to be effective as treatment for Parkinson's disease, both when given in a single therapy and in combination with levodopa.
+The MAO-B inhibitors selegiline and rasagiline are also found to be effective for treating Parkinson's disease, and selegiline is the best option in combination with levodopa among all the drugs investigated.

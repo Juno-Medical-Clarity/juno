@@ -1,0 +1,5 @@
+pmid:        32651292
+question:    19
+adaptation:  adaptation2
+title:       Dopamine-responsive and dopamine-resistant resting tremor in Parkinson disease
+sentences:   14

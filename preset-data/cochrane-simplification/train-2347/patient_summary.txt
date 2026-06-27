@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2347  |  gem_id: gem-cochrane-simplification-train-2348  |  doi: 10.1002/14651858.CD004031
+
+Animal and cell culture studies have produced evidence that inflammatory processes may be involved in the pathogenesis of AD. As a result, agents such as ibuprofen have been proposed for the treatment of people with AD. Although ibuprofen is better tolerated overall than some other NSAIDs, such as indomethacin, no randomized controlled trials investigating the efficacy of this drug for treatment of people with AD have been published. One such a trial is underway. The use of ibuprofen for the treatment of AD cannot at present be recommended.

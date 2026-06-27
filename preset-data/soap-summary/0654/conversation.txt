@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0654
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there! How are doing today? I am doing well. How have you been doing with keeping your hemoglobin levels between four and five point six prercent? I have been doing well. I have been able to keep it within that range.

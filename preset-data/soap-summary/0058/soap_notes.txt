@@ -1,0 +1,31 @@
+# SOAP Notes — Sample 0058
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Feverish, sore throat since last night
+- Loss of taste, nasal congestion, muscle aches, fatigue since this morning
+- No problems swallowing, no cough, no red eyes, no runny nose, no headache, no shortness of breath, no wheezing, no chest pain, no palpitations, no dizziness, no nausea, no vomiting, no abdominal pain, no diarrhea, no urinary problems
+- Constipation (chronic, not new)
+- Similar symptoms to past colds (usually once a year in the fall)
+- Concerned about COVID-19
+
+Past Medical History:
+- PMHx: migraines
+- Medications: Advil prn (headaches)
+- Allergies: none
+- SocHx: smokes 2-3 cigarettes/day, drinks 1 glass of alcohol/night, no recreational drug use
+- FHx: cataracts (early onset), diabetes (mother, sister, brother)
+- Surgeries: cataract surgery (both eyes)
+- Exposure: granddaughter with runny nose, attends daycare
+- Lives with son, daughter, and grandson
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Possible COVID-19
+- Differential: common cold
+
+Plan:
+- Investigations: nasal swab for COVID-19
+- Further management based on test results

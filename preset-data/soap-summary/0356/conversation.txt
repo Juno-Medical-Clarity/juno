@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0356
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How's the little one doing? Guest_family: She is doing okay. How long was your pregnancy? Guest_family: Thirty six weeks. Was your delivery normal or C section? Guest_family: It was a C section. How much did she weigh? Guest_family: She was eight pounds and three ounces. Tell me what's the issue? Guest_family: Yeah, she has a history of seizures. It looks like she is having pain in her tummy and is throwing up. What else did you notice? Guest_family: It looks like she is having some rashes on her skin. There is vomiting for sure. She also feels bloated. She also complains of pain in her tummy. Sometimes she does scratch her mouth. We also noticed some swelling around her lips, eyes and face. It looks like she's having some food intolerance.

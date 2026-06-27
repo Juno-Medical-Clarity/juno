@@ -1,0 +1,4 @@
+Doctor: I will ask you a few questions about your family history, sir.
+Patient: That's okay.
+Doctor: Does anyone in your family ever have any medical problems?
+Patient: Both of my parents had diabetes.

@@ -1,0 +1,5 @@
+pmid:        30976834
+question:    5
+adaptation:  adaptation3
+title:       Successful arthroscopic treatment of refractory and complicated popliteal cyst associated with rheumatoid arthritis in combination with osteoarthritis: case series and literature review
+sentences:   4

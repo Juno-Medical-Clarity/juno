@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0790
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Is everything fine? Guest_family: My mom is not well. When did this start? Guest_family: I don't know but she is not in her correct state of mind. Okay let's see what we can do, how old is she? Guest_family: She is around seventy four years old. Okay. Don't worry, we will see what we can do. Guest_family: Thanks! Of Course.

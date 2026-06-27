@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0439
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Is she married? Guest_family: Um no, she's divorced. Any history of tobacco, alcohol or drug use? Guest_family: I think she used to drink? But I'm not positive.

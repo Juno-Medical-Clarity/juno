@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0135
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Chest pain (left side, stabbing, tightness)
+- Pain onset: this morning, 6 hours ago
+- Pain severity: 6/10
+- Pain worsens with breathing in
+- Pain alleviated by sitting up
+- Associated symptoms: shortness of breath, dry cough (worse today), dizziness (when pain is severe), heart palpitations, fatigue, chills (last few days), leg swelling (during flight), left leg pain (calf), body aches
+- Recent travel: Italy (3 weeks, returned last night)
+- Recent infection: runny nose, sore throat, headache (resolved)
+- No trauma or injury to chest
+- No nausea, vomiting, fever, or skin changes
+- No cough with blood or green mucus
+- No recent hospitalizations or surgeries
+- No ill contacts
+
+Past Medical History:
+- No significant PMHx
+- Medications: birth control pill (2 years), daily multivitamin
+- No allergies
+- FHx: mother died of heart attack at 43, grandmother had heart attack in her fifties
+- SocHx: lives alone in an apartment, retail store manager, occasional alcohol use, no recreational drugs, smokes 2 packs/day (since age 12), no regular exercise, diet high in fast food
+
+Objective:
+- Vitals: not provided
+- Physical exam: not provided
+- Investigations with results: not provided
+
+Assessment:
+- Not provided
+
+Plan:
+- Not provided

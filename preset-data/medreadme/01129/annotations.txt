@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [18:19] 'medical-jargon-google-easy' -> 'dexamethasone'
+  [22:23] 'medical-jargon-google-easy' -> 'pulmonary'
+  [26:27] 'medical-jargon-google-easy' -> 'neurodevelopment'

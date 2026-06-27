@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3546  |  gem_id: gem-cochrane-simplification-train-3547  |  doi: 10.1002/14651858.CD007750.pub2
+
+One study reported a statistically significant reduction in the average anxiety during the waiting period for women who had had a rapid test, but the other found no difference between the two groups. There was also no evidence to support the view that issuing amniocentesis results as soon as they are available is more user friendly than informing women on a pre-defined fixed date. The results remain inconclusive and, therefore, for the time being the choice of communication strategies should be influenced by clinical arguments and cost-effectiveness rather than impact on anxiety. Studies evaluating the effect of different strategies for disclosing results on women anxiety for chorionic villous sampling are needed.

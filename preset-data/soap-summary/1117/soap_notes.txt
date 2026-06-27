@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1117
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is married and living happily with her husband and four kids.
+- Denies smoking.
+- Denies alcohol use.
+- Denies any other kind of drug use.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation, diagnoses, or clinical impressions provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned.)

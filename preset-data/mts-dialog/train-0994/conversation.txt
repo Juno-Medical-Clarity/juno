@@ -1,0 +1,3 @@
+Doctor: Hi there, what's going on with you?
+Patient: Well, I am having this weird jerky movement in my arm and leg.
+Doctor: Oh okay, let me take a look.

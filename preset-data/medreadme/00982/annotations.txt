@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [7:12] 'medical-jargon-google-easy' -> 'maternal and zygotic tTA expression'
+  [14:17] 'medical-jargon-google-hard' -> 'XX transformed males'
+  [20:22] 'medical-jargon-google-easy' -> 'pupal stage'

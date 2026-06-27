@@ -1,0 +1,12 @@
+Rapid diagnostic tests can support other COVID-q9 tests.
+Rapid covid tests could be refrigerated or stored at room temperature under  30 degrees C (86 Fahrenheit)
+
+
+We tested the accuracy of eleven rapid COVID tests that were stored and used at different temperatures. The tests were stored for a short or long time at recommended temperatures or at either 2-4 degrees C (35-39 Fahrenheit) or at 37 degrees C (98-99 Fahrenheit).
+
+The tests were stored for a long-term at recommended temperatures and then at the high temperature (37C) for 10 minutes. For five out of 11 rapid tests, the accuracy was reduced ten-fold.
+After 3 weeks of storage at high temperature (37 C), eight of the 11 rapid tests were  ten-fold less accurate.
+Two out of six rapid tests had false positive results at low temperatures (2-4 degrees C).
+In summary, high temperatures reduced how well the test identified people who had COVID-19 and low temperatures caused false positive results, showing people who did not have COVID-19 as having it.
+The false negative test results allow people who have the virus transmit it to others. Due to the false-positive results healthy people will be quarantined.
+Storing the rapid tests at recommended temperatures is important during the pandemic.

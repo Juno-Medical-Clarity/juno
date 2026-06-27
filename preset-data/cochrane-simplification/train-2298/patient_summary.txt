@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2298  |  gem_id: gem-cochrane-simplification-train-2299  |  doi: 10.1002/14651858.CD005575.pub3
+
+This review focuses on travel plans for organisations, such as workplaces or schools. The main reasons for using travel plans are to reduce congestion and to be environmentally friendly, but travel plans are also commonly claimed to improve health. We included 17 studies in this review. One study found that promoting walking in a workplace improved some aspects of health, including mental health, but no other studies directly measured health effects. All 17 studies looked at changes in travel. Although some found that travel plans increased walking, others did not. Overall, there is not enough evidence to know whether travel plans are effective at changing the way people travel, or whether they improve health. Currently, organisational travel plans should be put in place as part of well-designed research studies.

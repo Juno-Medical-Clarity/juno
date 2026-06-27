@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0923
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Dog bite on right leg
+- Severity: Patient expresses being scared
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Patient is scared about the incident
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

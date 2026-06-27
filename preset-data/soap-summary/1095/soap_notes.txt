@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1095
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Shortness of breath when doing activities, small cough, producing some mucus.
+- Severity: Shortness of breath present but stable; patient feels like it is something they will have to live with.
+- Duration: Last seen in Pulmonary Medicine Clinic was March 2004; current respiratory issues ongoing.
+- Associated symptoms: None mentioned (no fever, chills, or chest pains).
+- Relevant medical history: Hospitalized for psychiatric problems; currently living in a nursing facility.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Frustration about living in a nursing facility and desire to return to apartment, but recognizes inability to care for self.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

@@ -1,0 +1,8 @@
+Doctor: With ten being the worst pain imaginable, out of ten, how would you describe your pain today?
+Patient: I'd say its about a six out of ten today.
+Doctor: What makes the pain worse?
+Patient: It's worse when I try to walk around on it.
+Doctor: Do you have any pain at night?
+Patient: No, thankfully I don't.
+Doctor: How long have you been wearing that exterior knee brace?
+Patient: Oh, for a little while now.

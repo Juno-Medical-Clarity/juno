@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1433
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Tell me about your family. Did anyone have any medical issues? My father is alive. He is sixty nine right now. He did have some strokes in the past. My mom on the other hand died at the age of sixty two of many kinds of heart diseases. What about your grandparents? My maternal grandfather he also had heart issues and he died of a heart attack. Both he and my maternal grandma had some heart diseases. Their heart use to beat pretty fast.

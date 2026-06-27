@@ -1,0 +1,33 @@
+Doctor: Good morning. My name is Dr. Smith. How are you feeling today?
+Patient: Not so good, doctor. I've been having shortness of breath for three days.
+Doctor: I see. Can you tell me a little bit about your past medical history?
+Patient: Yes, I have type 2 diabetes mellitus and end-stage renal disease. I'm on hemodialysis.
+Doctor: I see. And you were transferred from another facility, correct?
+Patient: Yes, that's right.
+Doctor: And at that facility, you were found to be hypoxic, with an oxygen saturation of 79% on room air, is that correct?
+Patient: Yes, that's right.
+Doctor: And your chest X-ray showed infiltrates, and a positive nasopharyngeal swab for SARS-CoV-2 RNA, correct?
+Patient: Yes, that's correct.
+Doctor: And I see that you've received two doses of the COVID vaccine, with the second dose in March 2021.
+Patient: That's right.
+Doctor: Upon your arrival to the general medical ward, your vital signs were BP 132/79, HR 84 bpm, RR 18 breaths/min, oxygen saturation of 100% on 2-4 L per minute of supplemental oxygen via nasal cannula, and afebrile, correct?
+Patient: Yes, that's correct.
+Doctor: And your laboratory assessment is in the chart. We quickly weaned you to room air, with SpO2 of 94-98%. And we provided only supportive care for COVID-19.
+Patient: Okay.
+Doctor: On Day 1, you were found to have a right foot wound infection and were started on intravenous vancomycin and piperacillin-tazobactam, correct?
+Patient: Yes, that's right.
+Doctor: On Day 2, you were found to be hypoxic and started on 5 L per minute of supplemental oxygen via nasal cannula, and started on dexamethasone and remdesivir, correct?
+Patient: Yes, that's correct.
+Doctor: Because of your end-stage renal disease, you did not qualify for baricitinib. On Day 4, you required 10 L per minute of supplemental oxygen via high-flow nasal cannula, which you needed until Day 12, when we could start weaning down the supplemental oxygen over the next 3-4 days until Day 15 to room air.
+Patient: Okay.
+Doctor: On Day 17, you were put back on 2 L per minute of supplemental oxygen via a nasal cannula, which quickly escalated to 15 L on a nonrebreather mask within 2-3 hours, requiring you to be transferred to the intensive care unit on Day 18.
+Patient: Yes, that's correct.
+Doctor: At this time, you were put on bilevel positive airway pressure.
+Patient: Yes, that's right.
+Doctor: I see. We'll continue to monitor your condition and provide the best care possible. Please let us know if you have any questions or concerns.
+Patient: Thank you, doctor.
+[Patient Passed Away]
+Doctor: I'm sorry to inform you that your loved one has passed away. Our thoughts and condolences are with you during this difficult time. If you have any questions or concerns, please don't hesitate to ask.
+Family: Thank you, doctor. We appreciate your care and support.
+Doctor: Of course. We're here to help in any way we can. Take care.
+Family: Thank you.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0338
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any medical problems on your mom or dad's side? My dad has lupus and his brother has Addison's disease. High blood pressure also runs in the family. Is your dad being treated for lupus? Yes, he follows up with his rheumatologist pretty regularly.

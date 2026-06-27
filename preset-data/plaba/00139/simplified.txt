@@ -1,0 +1,11 @@
+The pyruvate dehydrogenase complex (PDC) is a chemical process in the body that converts molecules and links cells to the final stage of creating energy.
+PDC deficiency or shortage is a disorder that can be caused by changes in genes.
+The result of PDC deficiency mainly affects the central nervous system (the spinal cord and brain).
+This study aims to describe the clinical, biochemical (the chemical processes in living organisms), and genetic information in 13 patients with pyruvate dehydrogenase complex (PDC) deficiency.
+All 13 patients carry some type of mutation in the genes that are involved in the PDC process. The mutation in the PDHA1 gene (a gene that helps encode a building block of PDC) is the most common.
+These data support earlier reports describing PDHA1 mutations as the main cause of PDC deficiency. The data also reveal a notable frequency of the PDHX mutation (another gene that helps encode a building block of PDC) among Portuguese patients who seem to carry a mutation in the community or population.
+The biochemical analysis showed high levels of lactic acid (high levels occur when oxygen in the body decreases) and high levels of pyruvate plasma (a molecule that helps change sugar in the blood to energy when oxygen levels are low).
+All patients showed developmental delay (delays or slowness in reaching language, thinking, or motor skills). How serious these delays are seems to match up with the type and location of the mutation carried by the patient.
+Treatment options include a ketogenic diet (low-carb/high-fat diet) and adding a vitamin called thiamine to the diet, although taking a supplement called arginine aspartate (used for helping to build proteins) may be beneficial in some patients.
+Moreover, computer modeling of these gene mutations in this PDC deficient population created a picture of underlying causes of these mutations.
+The identification of the disease-causing mutations provides an insight on the severity of their impact on development and the selection of the best therapy.

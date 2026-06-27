@@ -1,0 +1,186 @@
+# Smith Collection Transcript: RES0117
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Yeah so i just came in today uh a bit concerned uh ive been just having this nasty cough for like the last week and then today morning uh like i thought the cough would just go away but today morning i also noticed im coughing up some blood
+
+Doctor: Oh ok
+
+Patient: Yeah
+
+Doctor: So when did you first start coughing
+
+Patient: um so let me think uh i just returned from a mission trip uh to the philippines 2 weeks ago this cough started uh just last week so i would say around six to seven days
+
+Doctor: OK and that and the blood in your cough um that was about yesterday you said or
+
+Patient: Yeah today uh
+
+Doctor: Today ok ok um are you bringing up any phlegm at all besides the blood
+
+Patient: uh no its just uh like i saw it on my hand like there wasnt anything like my cough is like pretty dry
+
+Doctor: OK are you short of breath at all
+
+Patient: No im not short of breath um just its just the cough
+
+Doctor: OK and are you having any wheeziness
+
+Patient: uh no wheeziness
+
+Doctor: OK um any runny nose or stuffy nose
+
+Patient: No no uh runny or stuffy nose
+
+Doctor: Changes in vision hearing smell or taste
+
+Patient: Nope
+
+Doctor: uh weight loss
+
+Patient: um i have noticed uh weight loss over the last uh i would say few months so ive been ive been doing like like i i came back from philippines last week but um i had gone earlier like during this year or two and ive kind of noticed this weight change probably lost around 15 pounds within the last few months
+
+Doctor: 15 pounds ok wow thats a lot yeah um any night sweats
+
+Patient: um no i dont think so no
+
+Doctor: Any fevers or chills
+
+Patient: I did have a i did have some chills over the last week um but i didnt really think too much of it
+
+Doctor: OK well take your temperature today just to make sure um any rashes
+
+Patient: No
+
+Doctor: Any chest pain
+
+Patient: No chest pain
+
+Doctor: uh swelling in your limbs
+
+Patient: No
+
+Doctor: Fainting spells or dizziness
+
+Patient: No nothing like that
+
+Doctor: Confusion or memory loss
+
+Patient: No
+
+Doctor: Headaches
+
+Patient: No headaches
+
+Doctor: uh joint pain
+
+Patient: No
+
+Doctor: Fatigue
+
+Patient: uh no
+
+Doctor: um changes in your bowel movements
+
+Patient: uh no not at all
+
+Doctor: No changes in your urine
+
+Patient: Nope
+
+Doctor: uh nausea or vomiting
+
+Patient: No nausea or vomiting
+
+Doctor: OK how about abdominal pain
+
+Patient: No nothing like that
+
+Doctor: OK are you otherwise healthy do you have any longstanding medical conditions
+
+Patient: Yeah no im otherwise i um i dont im really healthy i dont take any medications so this was something that happened out of the blue
+
+Doctor: OK any um hospitalizations or surgeries in the past
+
+Patient: No
+
+Doctor: No um medications are you on any
+
+Patient: No i havent um tried any medications
+
+Doctor: OK um are you up to date with all your immunizations
+
+Patient: uh i ive been yeah pretty up to date with all my immunizations
+
+Doctor: OK uh allergies do you have any
+
+Patient: No
+
+Doctor: Sorry forgot to ask immunizations did you get the flu shot this year
+
+Patient: Yeah i did
+
+Doctor: OK good any family history of lung conditions
+
+Patient: No not at all
+
+Doctor: No any lung cancers
+
+Patient: No
+
+Doctor: No ok do you smoke
+
+Patient: No i have never smoked a day in my life
+
+Doctor: OK recreational drugs
+
+Patient: No i would never take drugs
+
+Doctor: OK do you drink alcohol
+
+Patient: No no not at all
+
+Doctor: OK um where do you live right now
+
+Patient: So i i just live in a small apartment by myself uh just been moving around a lot
+
+Doctor: OK for sure um any like asbestos mold or like old carpets dust anything like that at your apartment
+
+Patient: No i dont think so
+
+Doctor: No any sick contacts recently
+
+Patient: um not uh i dont think so like we um maybe in the philippines we do provide a so i go on like these mission trips with the church and um we do sometimes go to the hospital as well
+
+Doctor: OK
+
+Patient: Sometimes yeah we we do see some sick people
+
+Doctor: Mhmm ok
+
+Patient: But other than that not since ive been here no
+
+Doctor: Any travel outside the philippines recently
+
+Patient: Uhm so i think so this year has just been the philippines before i used to go to india as well um but recently nothing outside of the philippines
+
+Doctor: OK ok um those were all the questions that i had for you do you have any questions for me
+
+Patient: Yeah i i was very worried um uh about the blood i was just reading some things up and uh about tuberculosis so i was really stressed out today
+
+Doctor: Yeah so um thats definitely high on our differential so well do a couple of things well do a covid swab on you um just to rule that in or out you should hear back for about those results in 24 to 48 hours while youre here in the hospital were also going to do a chest xray and or like an afb smear to see if you have active tb or latent tb if those come back positive um we will require you to isolate because this uh because tb is highly infectious and its airborne um so we have a couple of uh we have like a regimen that wed put you on its called the ripe medications that we keep you on for two months and then we continue a couple of those for another four months um but we will uh keep you here until we have more answers on um like from this tb standpoint how does that sound
+
+Patient: Yeah that sounds good um yeah im really worried but hopefully its not tb
+
+Doctor: Yeah hopefully its not um but if it is its its ok like um well get infectious disease involved uh well get the isolation going and well get you on the correct treatment
+
+Patient: OK thank you so much
+
+Doctor: Yeah no problem

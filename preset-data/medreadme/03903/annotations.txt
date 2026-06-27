@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [4:9] 'medical-name-entity' -> 'QuantiFERON GOLD In - Tube'
+  [10:13] 'abbr-medical' -> 'QFT - GIT'
+  [23:28] 'medical-name-entity' -> 'T - SPOT . TB'

@@ -1,0 +1,10 @@
+Doctor: Hello. Looks like we are here for a six months follow up. How are we doing?
+Patient: I have stayed relatively the same. My main complaint is that I feel tired throughout the day. The C P A P is doing fine and I wake up refreshed, but I don't like how I crash.
+Doctor: Alright. How are the thyroid issues?
+Patient: I seem to be fine. My thyroid gland does not seem enlarged and I can breathe like normal. No fever or anything.
+Doctor: Have you experienced any of the following: temperature intolerance, palpitations, muscle weakness, tremors, nausea, vomiting, constipation, or diarrhea?
+Patient: Nothing of the kind.
+Doctor: How has you weight been?
+Patient: It has been stable.
+Doctor: Any muscle weakness closest to the body's center?
+Patient: No, nothing like that. Not bad for forty five.

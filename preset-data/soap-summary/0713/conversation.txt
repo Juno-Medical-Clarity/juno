@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0713
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any change in appetite? Um, no. Any stomach pain or change in bowel movement? No. Any history of bowel issues? No, not really. Any hernia problem? No. Any history of stomach ulcer? No. Did you notice any rectal bleeding? No. Any liver issues or jaundice? Um, no. Okay.

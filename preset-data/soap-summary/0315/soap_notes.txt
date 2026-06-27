@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0315
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports feeling fine.
+- No symptoms or concerns mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- Advised the patient to continue with normal activities as long as feeling fine.

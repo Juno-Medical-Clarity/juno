@@ -1,0 +1,5 @@
+pmid:        33240489
+question:    42
+adaptation:  adaptation1
+title:       Extracellular histones in lung dysfunction: a new biomarker and therapeutic target?
+sentences:   8

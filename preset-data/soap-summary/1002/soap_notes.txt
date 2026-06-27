@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1002
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient drinks alcohol occasionally.
+- Enjoys cocktails.
+- Patient does not smoke.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

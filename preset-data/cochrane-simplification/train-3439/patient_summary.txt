@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3439  |  gem_id: gem-cochrane-simplification-train-3440  |  doi: 10.1002/14651858.CD008142.pub2
+
+The review found that the relevant six studies varied in significant ways: how severe the patients’ symptoms were; the form and intensity of the enhanced care offered. These differences made the studies difficult to compare. Many people left the studies before the outcomes could be measured. Given these problems with comparing existing research, it is only possible to say: enhanced care may help people with functional somatic symptoms; more intensive enhanced care may be more effective than very brief interventions. Further research into this topic is needed to test how much and what type of enhanced care could be effective. Future research should take into account barriers that might prevent such treatments benefitting patients. These include: GPs’ lack of time or skills, and their low expectations that enhanced care might help patients; patients’ reluctance to accept non-physical understandings of somatic symptoms.

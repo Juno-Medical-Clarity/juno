@@ -1,0 +1,5 @@
+pmid:        31178367
+question:    20
+adaptation:  adaptation1
+title:       Optimal dose of selective serotonin reuptake inhibitors, venlafaxine, and mirtazapine in major depression: a systematic review and dose-response meta-analysis
+sentences:   13

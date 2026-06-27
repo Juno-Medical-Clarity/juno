@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        simple
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Adverse events'
+  [17:18] 'general-complex' -> 'transient'

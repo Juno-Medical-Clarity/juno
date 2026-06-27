@@ -1,0 +1,9 @@
+Objective: This study was designed to explore the clinical application of video laryngoscopy in the diagnosis and treatment of throat foreign bodies (FBs).
+Method: In total, 1572 patients diagnosed with throat FBs at the Department of Otolaryngology of Nanjing Drum Tower Hospital were retrospectively analysed.
+The covariables collected were the time from FB ingestion to admission, age, sex, duration of admission, and site of impaction.
+Result: The most common FBs were fish bones, which accounted for 1446 (91.98%) of 1572 FBs.
+Among all 1572 FBs, 1004 (63.87%) were successfully removed by video laryngoscopy without complications.
+A shorter duration of admission was associated with a higher diagnostic rate under video laryngoscopy.
+The diagnostic rate of sharp FBs was significantly higher than that of non-sharp FBs.
+The most common sites of throat FBs were the tongue root (42.29%), epiglottic vallecula (19.40%), tonsil (18.21%), and piriform fossa (10.65%).
+Conclusion: Video laryngoscopy is a powerful tool for the diagnosis and treatment of throat FBs, allowing for identification of rare locations of FBs as well as refractory FBs.

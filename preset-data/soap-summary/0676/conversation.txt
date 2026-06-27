@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0676
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Welcome to the clinic. Thank you. It looks like you were referred to us by Doctor Jones. Yes I was. Great! The chart notes that Doctor Jones sent over says you are currently twenty weeks pregnant. Is that correct? Yes, I am. Do you have any other children? Yes. I have a two year old son. Have you ever had any pregnancies? Including miscarriages or abortions. Yes. I had a miscarriage before my son was born. I am so sorry to hear that. Thank you.

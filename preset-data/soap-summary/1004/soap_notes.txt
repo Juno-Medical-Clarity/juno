@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1004
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient had a stroke about a month ago.
+- Right side of the face is still not moving (paralysis).
+- The condition has improved a little since hospitalization.
+- Patient expresses concern regarding the paralysis and recovery timeline.
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessment information provided.
+
+Plan:
+- It can take up to six months to see how much movement will be regained.

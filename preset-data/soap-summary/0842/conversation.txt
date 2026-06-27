@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0842
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+You have chronic pain? Yes I do. You use tobacco also? Yes. And you have a history of hepatitis C, right? That sounds right. Okay. Yeah.

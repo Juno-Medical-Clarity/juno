@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0804  |  gem_id: gem-cochrane-simplification-train-805  |  doi: 10.1002/14651858.CD003775.pub2
+
+This review was undertaken to determine the beneficial and harmful effects of vaccination against hepatitis B and of a reinforced recombinant vaccination series. None of the trials had high methodological quality. Plasma vaccine was significantly more effective than placebo in achieving hepatitis B antibodies. Yet no statistically significant difference was found between the use of plasma vaccine or placebo in preventing hepatitis B virus infections. No trials comparing recombinant vaccine with placebo were identified. There was no significant difference between recombinant and plasma vaccines or between a reinforced vaccination series and routine vaccinations of three inoculations using recombinant vaccine regarding achieving hepatitis B antibodies.

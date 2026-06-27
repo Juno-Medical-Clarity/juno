@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [11:18] 'medical-jargon-google-easy' -> 'frontal , temporal , and parietal cortices'
+  [22:24] 'medical-jargon-google-easy' -> 'subcortical structures'

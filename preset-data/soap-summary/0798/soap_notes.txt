@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0798
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 47 years old.
+- Identifies as white.
+- Reports a mass on the left foot that has been present for about two weeks.
+- The mass is getting worse quickly.
+- No history of cancer.
+- Has had a shave biopsy in the past.
+- Expresses a desire for surgery to remove the mass.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

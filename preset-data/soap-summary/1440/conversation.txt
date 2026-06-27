@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1440
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, tell me about your family, any illness or anything that runs in the family. Um, not that I know of. Okay.

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0739
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Seasonal allergies, exercise-induced asthma
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: Prescribed Proventil for exercise-induced asthma
+- Family history: Not mentioned
+- Allergies: Seasonal allergies
+- Other concerns: Patient keeps Proventil on hand in case asthma worsens; awareness of medication expiration dates.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- Advise patient to check expiration dates of medications.

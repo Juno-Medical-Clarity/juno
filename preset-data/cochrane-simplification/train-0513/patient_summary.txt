@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0513  |  gem_id: gem-cochrane-simplification-train-514  |  doi: 10.1002/14651858.CD004471.pub3
+
+The effect of hormone treatment on viral myocarditis remains controversial. The review authors conducted a thorough search of the medical literature. Eight randomised trials with 719 patients which met the inclusion criteria compared hormone treatment plus conventional therapy with no hormone. Hormone treatment did not reduce mortality from viral myocarditis. Improvements in heart function were found but the trials were of low quality and small size so this finding must be regarded as uncertain. Further trials comparing hormone treatment in people suffering viral myocarditis with placebo are warranted. There are no conflicts of interest in the review.

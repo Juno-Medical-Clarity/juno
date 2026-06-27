@@ -1,0 +1,8 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [6:8] 'general-complex' -> 'statistically non-significant'
+  [16:17] 'abbr-general' -> 'CIs'

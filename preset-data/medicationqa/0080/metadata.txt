@@ -1,0 +1,5 @@
+drug_focus: pravastatin
+question_type: Side effects
+section_title: Side effects
+source_url: https://beta.nhs.uk/medicines/pravastatin/
+sample_id: 0080

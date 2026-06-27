@@ -1,0 +1,5 @@
+pmid:        3630857
+question:    61
+adaptation:  adaptation3
+title:       Comparative absorption of zinc picolinate, zinc citrate and zinc gluconate in humans
+sentences:   8

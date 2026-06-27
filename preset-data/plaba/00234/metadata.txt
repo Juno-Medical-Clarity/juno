@@ -1,0 +1,5 @@
+pmid:        32383152
+question:    19
+adaptation:  adaptation1
+title:       Levodopa infusion in Parkinson's disease: Individual quality of life
+sentences:   11

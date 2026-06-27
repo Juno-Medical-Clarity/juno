@@ -1,0 +1,142 @@
+# Smith Collection Transcript: RES0156
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: Yeah so im bringing my um daughter because uh over these last uh several months shes had this uh this cough that that comes on um itll be at night time or sometimes uh after in gym class um and i know during these episodes shell have a really hard time kind of catching her breath and and sometimes will have a wheeze as well and and its just gone away quickly in the past but been noticing it happening more often recently
+
+Doctor: OK so its been going on for the last few months but its kind of getting worse
+
+Patient: Yeah exactly yeah
+
+Doctor: And how about the the coughing and the wheezing and the does she have any kind of shortness of breath
+
+Patient: um yeah she will like when it comes on uh yeah she she has some shortness of breath
+
+Doctor: OK and um does this happen at all like when shes exposed to dust or kind of after exerting herself
+
+Patient: Yeah it does yeah i think the like the first time that um that i was made aware of it was yeah in in gym class so it wouldve been after some exercise um and dust uh im im not sure
+
+Doctor: OK um does she have a dry cough or wet cough when she gets these spells
+
+Patient: uh dry
+
+Doctor: Dry ok um did she bring up any sputum or blood at all
+
+Patient: No
+
+Doctor: OK and are her symptoms at all constant or do they come and go based on how much shes exerting herself
+
+Patient: They come and go yeah like most of the time shes been ok but uh and sometimes shell get a cough at night time too
+
+Doctor: OK um so and then has does anything make help you with your symptoms at all or her symptoms
+
+Patient: uh um not really no
+
+Doctor: OK
+
+Patient: Just resting i guess sorry yeah just just trying to relax
+
+Doctor: OK and any other symptoms like fevers or chills or sore throat chest pain anything like that
+
+Patient: No nothing like that um yeah just the wheeze
+
+Doctor: OK any loss of her sense of taste or smell
+
+Patient: No
+
+Doctor: OK um any recent travel
+
+Patient: uh no
+
+Doctor: um any contact with anyone whos been sick recently
+
+Patient: uh she has a uh a younger brother that goes to daycare uh and i know um those kids can be sick all the time but um her brothers been ok
+
+Doctor: OK um does she complain of any kind of headaches or uh nausea or vomiting
+
+Patient: No she doesnt
+
+Doctor: OK um any have you noticed any fevers or chills
+
+Patient: No
+
+Doctor: OK um any night sweats
+
+Patient: No
+
+Doctor: OK um any changes in her bowel movements like constipation or diarrhea
+
+Patient: Nope she hasnt had any change changes like that
+
+Doctor: OK and any kind of uh changes in her sleep or appetite
+
+Patient: No shes been eating well and and gaining weight
+
+Doctor: OK um any uh so shes been gaining weight um any exposure to any mold dust um new rugs or animals at home
+
+Patient: Yeah we do have um 2 cats at home
+
+Doctor: OK
+
+Patient: Yeah there are animals at home
+
+Doctor: OK how long have you had them
+
+Patient: um for for about um yeah just under a year so yeah just under a year
+
+Doctor: OK um has she been diagnosed at all with any medical conditions in the past
+
+Patient: um no no and when she was born she had to uh go in the just be observed for a few um a couple of days for jaundice she didnt need to have any therapy for it it went away on its own but thats about it
+
+Doctor: OK and any um complications during the pregnancy with her
+
+Patient: No everything was was normal and it was a vaginal delivery at at term
+
+Doctor: OK um any issues with the development uh is she meeting her milestones in her growth um meeting her milestones on her growth chart as well
+
+Patient: Yeah all of that has been has been normal
+
+Doctor: OK um any allergies to medications or environmental factors that you know of
+
+Patient: Not to um any medications that im aware of but um she hasnt been tested but she does get symptoms that uh kind of change with um seasons like shell get a runny nose and some itchy eyes um at different times throughout the year
+
+Doctor: OK um any medications that she has been on at all
+
+Patient: So when that happens we just use um like shell just take a uh like reactine or like i dont know something like that but just an allergy pill um but its yeah thats it
+
+Doctor: OK um and any hospitalizations or past surgeries
+
+Patient: No luckily shes been healthy that way
+
+Doctor: OK um any family history of any lung or heart conditions
+
+Patient: I think uh yeah yeah her grandfather has diabetes but um thats it
+
+Doctor: OK uh and currently whats her home situation like who does she live with
+
+Patient: Yeah so she lives with um myself and uh her father and then younger younger brother thats it yeah thats four
+
+Doctor: OK um ok and does anyone smoke in the household
+
+Patient: um no they dont
+
+Doctor: OK um ok so those were all the questions i had um do you have any questions
+
+Patient: uh no i just uh yeah just wanted to figure out whats going on with this cough
+
+Doctor: OK yeah so it seems like the symptoms have been going on for a few months now it seems that she gets them on exertion and um theyre worsened by exertion um at this age one thing that definitely we want to check is if she has asthma um she does have some other symptoms that um are associated with asthma like it seems that she gets um some irritation through environmental factors as well so what well do uh for her is get something called a pulmonary function test for her to see thatll test if she in fact has asthma or not and then based on that we will uh see if she needs any puffers um that can help relieve some of her symptoms uh and lastly since shes having a cough well also do a like a covid test just in case as well
+
+Patient: OK yeah that that sounds good thank you
+
+Doctor: Yeah and no worries and then well also do like a full physical examination
+
+Patient: That sounds great
+
+Doctor: Alright

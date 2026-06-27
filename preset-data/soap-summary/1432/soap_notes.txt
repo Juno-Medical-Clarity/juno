@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1432
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Initial:
+
+Subjective:
+- Patient is concerned about ultrasound report findings.
+- The ultrasound report shows significant findings related to bone.
+
+Objective:
+- Ultrasound report indicates findings related to bone.
+
+Assessment:
+- No specific diagnosis or clinical interpretation provided.
+
+Plan:
+- No plan or follow-up actions mentioned.

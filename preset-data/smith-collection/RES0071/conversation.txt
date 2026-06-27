@@ -1,0 +1,226 @@
+# Smith Collection Transcript: RES0071
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here
+
+Patient: Ive had this cough for over a week now and it just hasnt gone away
+
+Doctor: OK and uh so this cough has been going on for a week can you describe the cough a little bit for me
+
+Patient: Yeah so i mean sometimes i produce sputum and sometimes i dont its uh white and whiteish clear in color
+
+Doctor: OK um and its been going on for more than a weekhas it been getting worse
+
+Patient: It got a little bit worse at first but then its been kind of the same um since
+
+Doctor: OK have you noticed at all um like green or yellow color of your sputum or any blood tinged sputum
+
+Patient: uh no blood and maybe a little yellowish
+
+Doctor: OK little yellowish ok and how much would you say you bring up um on an average day
+
+Patient: uh a couple of teaspoons
+
+Doctor: Couple of teaspoons okok has there been anything that um makes it worse or better
+
+Patient: Nothing that i can think of
+
+Doctor: OK and have you had this happen to you previously in the past
+
+Patient: No
+
+Doctor: And is the cough uh constant or does it come and go
+
+Patient: It comes and goes uh throughout the day no particular time of the day its worse
+
+Doctor: OK and um are you having any uh other symptoms besides the cough um like shortness of breathsore throat um runny nose congestion anything like that
+
+Patient: uh yeah ive had um a sore throat uh and a headache as well
+
+Doctor: OK and when did the sore throat start
+
+Patient: um that started about five days ago
+
+Doctor: Five days ago and has it been getting worse
+
+Patient: No thats been about the same
+
+Doctor: And do you have any difficulty uh swallowing at all
+
+Patient: Its a little sore but uh its been ok to eat and drink
+
+Doctor: OK and have you noticed any kind of redness in your throat or any swelling around your neck
+
+Patient: No i took a look in the mirror as best i could with my phone and i couldnt really notice anything that looked red
+
+Doctor: OK and how about the headache when did that start
+
+Patient: So its been uh kind of off and on over the past uh week or so um feels like a like a pressure sensation and my head is just really squeezing
+
+Doctor: OK and um so is it on one side of your head or both sides
+
+Patient: Both sides
+
+Doctor: And its kind of like a pressure and squeezing is it at all pulsating
+
+Patient: No
+
+Doctor: No ok is it constant or does it come and go
+
+Patient: It comes and goes
+
+Doctor: OK and have you taken any medications to make any of these symptoms better
+
+Patient: Yeah i have used some advil for the headaches and over the counter medicine at night time to help sleep
+
+Doctor: OK uhand do you recall doing anything in the last few weeks which you might believe that uh caused some of these symptoms like for example were you in contact with anyone that was sick at all
+
+Patient: Well im a nursing student and ive been on rotations in the hospital recently
+
+Doctor: And anyone that you probably saw in the hospital anyone sick that you were in contact with
+
+Patient: I did see some people who had like infectious symptoms
+
+Doctor: OK and other than that have you been having any fevers or chills
+
+Patient: Yeah ive felt chills
+
+Doctor: OK chills and when did you feel them
+
+Patient: Ive been feeling chills throughout the day and at night i just feel like i cant get warm even with a blanket on
+
+Doctor: OK and have you taken your temperature at all
+
+Patient: No
+
+Doctor: OK yeah we can do that for you today uh other than that any recent travel outside of the province
+
+Patient: No been just at school
+
+Doctor: OK and any loss of sense of taste or smell
+
+Patient: No
+
+Doctor: Any nausea or vomiting
+
+Patient: No
+
+Doctor: Any night sweats
+
+Patient: No
+
+Doctor: OK any fatigue
+
+Patient: Yes
+
+Doctor: OK and when did that start
+
+Patient: Just over this past week ive been really tired ive been been needing naps and not feeling rested in the morning
+
+Doctor: OK any chest pain at all
+
+Patient: Yeah it does feel sore kind of uh the center of my chest
+
+Doctor: OK so any coughing at all
+
+Patient: Yeah i feel it like more like it does hurt when when im coughing thats kind of what im feeling it i think its being caused by how much im coughingi kind of feel it there in the center
+
+Doctor: And besides when youre coughing do you have any pain in your chest when youre breathing in or out
+
+Patient: No
+
+Doctor: No ok alright any changes to your bowel movements like any constipation or diarrhea
+
+Patient: No
+
+Doctor: Any urinary issues
+
+Patient: No
+
+Doctor: OK any changes with your sleeping or your appetite
+
+Patient: No
+
+Doctor: Have you noticed any significant weight loss in the last few weeks
+
+Patient: No its been the same
+
+Doctor: OK and have you recently prior to your coughing have you had any infections like a viral illness or like a cold for example anything like that
+
+Patient: Yeah now that i think about it i mean maybe like a month ago i had like a runny nose for a couple of days and it just went away
+
+Doctor: OK were you on any kind of medications or antibiotics at all
+
+Patient: No just went away on its own pretty quickly
+
+Doctor: Alright do you have any past medical conditions like high blood pressure diabetes anything like that
+
+Patient: No i dont im healthy
+
+Doctor: OK do you have any allergies
+
+Patient: No
+
+Doctor: Do you take any medications regularly
+
+Patient: uh no
+
+Doctor: OK any hospitalizations or surgeries in the past
+
+Patient: No
+
+Doctor: OK and any family history of any lung or heart conditions or any cancers
+
+Patient: I think my mom has high blood pressure but thats about it
+
+Doctor: OK i forgot to ask you this earlier have you been experiencing any wheezing
+
+Patient: Yeah i have noticed a bit of a wheeze yes
+
+Doctor: And currently you are nursing student where do you live
+
+Patient: I live with a couple of my classmates downtown
+
+Doctor: OK and do you live in an apartment or dorm a house
+
+Patient: An apartment
+
+Doctor: OK anyone sick in your household at all
+
+Patient: No nobodys been sick
+
+Doctor: OK do you drink alcohol at all
+
+Patient: Sometimes with friends on a weekend
+
+Doctor: Do you smoke cigarettes at all
+
+Patient: No i dont
+
+Doctor: And any recreational drugs like marijuana
+
+Patient: Nope
+
+Doctor: OK alright so yeah those are all the questions i had for you do you have any questions or concerns
+
+Patient: No i was just hoping to feel better its been going on for so long now
+
+Doctor: You said its more than a week now right
+
+Patient: Yes
+
+Doctor: Yeah so what we will do today is uh first of all with the pandemic going on with some of these symptoms we need to rule out coronavirus and so we will be getting a swab done for you as well today and considering you are having these symptoms we will also get another test done for you today to see if theres any bacteria causing what we call walking pneumonia its community acquired pneumonia thats fairly common in like the younger population and so well see if you could have that and so from there well see if we need to put you on any antibiotics which will help you and if we need to get any blood work or x rays well let you know as well is that ok and if you feel like you have worsening symptoms like shortness of breath you need to make sure you come back to the emergency department
+
+Patient: Yeah that sounds great thank you
+
+Doctor: Yeah youre welcome and take care and well get all those things done for you and well be with you shortly
+
+Patient: OK sounds good
+
+Doctor: Great

@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0297
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Concern about bloodborne pathogen exposure secondary to needlestick.
+- Severity: Not explicitly mentioned.
+- Duration: Not explicitly mentioned.
+- Associated symptoms: Contamination concern mentioned.
+- Relevant medical history: Not explicitly mentioned.
+- Family history: Not explicitly mentioned.
+- Allergies: Not explicitly mentioned.
+- Other concerns: Patient is seeking a diagnosis.
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- Clinician's interpretation: Bloodborne pathogen exposure secondary to needlestick and contamination concern.
+
+Plan:
+- No plan provided.

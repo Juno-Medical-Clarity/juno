@@ -1,0 +1,39 @@
+# SOAP Notes — Sample 0195
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Difficulty with breathing for 8-9 months
+- SOB with activity, worsening over time
+- Dry cough, no sputum or blood
+- Fast, shallow breaths
+- No chest pain, dizziness, or pain
+- No worsening of symptoms when lying flat
+- No waking up gasping for air
+- No OTC treatments tried
+- No recent travel or contact with sick individuals
+- No fevers, chills, nausea, vomiting, chest pain, increased fatigue, diarrhoea, constipation, numbness, tingling, confusion, memory loss, trouble urinating, or swelling in feet/ankles/legs
+- Appetite unchanged, no significant weight changes
+- Exposure to fumes and dust in past (worked in a mine)
+- No current exposure to pets or animals
+
+Past Medical History:
+- PMHx: heart attack (last year), high blood pressure
+- Medications: aspirin, lisinopril, rosuvastatin (occasional non-compliance)
+- FHx: mother had heart failure at age 55
+- SocHx: retired, lives with wife, former smoker (45 years, 1 pack/day), drinks 1 glass of white wine nightly
+- No allergies
+- No other hospitalisations or surgeries
+
+Objective:
+- Vitals: (not provided)
+- Physical examination: (not provided)
+- Investigations with results: (not provided)
+
+Assessment:
+- Likely diagnosis: COPD
+- Differential diagnosis: lung cancer
+
+Plan:
+- Investigations: pulmonary function test, chest X-ray, CT scan of lungs, blood work, COVID swab test
+- Treatment: (not provided)
+- Other actions: (not provided)

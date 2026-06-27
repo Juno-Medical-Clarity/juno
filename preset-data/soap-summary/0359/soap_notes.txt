@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0359
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Acne
+- Severity: Improving
+- Duration: Not specified
+- Associated Symptoms: No increased thirst, no mood changes, no unusual fatigue
+- Relevant Medical History: Not specified
+- Family History: Not specified
+- Allergies: Not specified
+- Other concerns: None mentioned
+
+Objective:
+- No objective data mentioned.
+
+Assessment:
+- No assessment information provided.
+
+Plan:
+- No plan mentioned.

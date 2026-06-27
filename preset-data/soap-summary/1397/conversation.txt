@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1397
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Welcome back in, Miss A. Thank you, doctor. Do you remember the information about your operation? No, not really. Can you remind me? Sure, you had a lap band replacement in January of O nine, and you had a band adjustment. Thank you. How are you feeling today? Well, I've been under a lot of stress lately, and I had problems with my adjustments before. Has anything changed since the operation? Actually, doctor, I was in a car accident a couple weeks ago, and I'm having problems. What symptoms are you experiencing? I don't feel full. How is your appetite? I'm not really hungry, but I also don't feel full. When I get hungry at night I can't wait until the morning to eat. I get so hungry. Do you eat anything when you feel like this? Yeah, I usually have a candy bar, and that helps some.

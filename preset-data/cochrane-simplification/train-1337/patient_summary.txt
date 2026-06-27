@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1337  |  gem_id: gem-cochrane-simplification-train-1338  |  doi: 10.1002/14651858.CD006534.pub2
+
+In the present review we assessed the evidence for the efficacy, acceptability and tolerability of citalopram in comparison with all other antidepressants in the acute-phase treatment of major depression. Thirty-seven randomised controlled trials (more than 6000 participants) were included in the present review. In terms of efficacy, citalopram was more efficacious than other reference compounds like paroxetine or reboxetine, but worse than escitalopram. In terms of side effects, citalopram was more acceptable than older antidepressants, like tricyclics. Based on these findings, we conclude that clinicians should focus on practical or clinically relevant considerations including differences in efficacy and side-effect profiles.

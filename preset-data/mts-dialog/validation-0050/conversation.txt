@@ -1,0 +1,6 @@
+Doctor: Okay, so let's go over the plan again. I'd like you to apply Acticoat dressing daily and make sure you're spending at least eight hours out of the chair for pressure relief. Any questions?
+Patient: That sounds doable. I'll try my best. No questions about the plan.
+Doctor: I'd also like you to come back in a week for a reevaluation.
+Patient: Can I make that appointment today?
+Doctor: Yes, the receptionist will be able to get you on the schedule for next week.
+Patient: Great.

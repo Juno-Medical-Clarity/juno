@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0298
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient was involved in a car crash.
+- The incident occurred approximately two days ago.
+- Type of accident: head-on collision.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

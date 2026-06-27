@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1015
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Unable to urinate, sharp pain in left side
+- Severity: Not explicitly mentioned
+- Duration: Not explicitly mentioned
+- Associated Symptoms: None mentioned
+- Relevant Medical History: No history of enlarged prostate or kidney stones
+- Family History: Not mentioned
+- Allergies: Not mentioned
+- Other Concerns: Patient expresses a desire for imaging to be done
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician interpretations, diagnoses, or clinical impressions provided.
+
+Plan:
+- Patient would like to get imaging done.

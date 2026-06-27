@@ -1,0 +1,5 @@
+Doctor: Ready to go home?
+Patient: I just can't wait.
+Doctor: Sure. I can understand.
+Patient: Bye Doctor.
+Doctor: Yes. See you soon.

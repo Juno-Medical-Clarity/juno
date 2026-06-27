@@ -1,0 +1,5 @@
+pmid:        23636234
+question:    34
+adaptation:  adaptation1
+title:       Management of protein-energy wasting in non-dialysis-dependent chronic kidney disease: reconciling low protein intake with nutritional therapy
+sentences:   8

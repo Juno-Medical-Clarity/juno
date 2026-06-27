@@ -1,0 +1,12 @@
+source:      cochrane_all
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [3:6] 'general-complex' -> 'randomised controlled trials'
+  [7:8] 'abbr-general' -> 'RCTs'
+  [10:11] 'medical-jargon-google-easy' -> 'fluphenazine'
+  [15:20] 'medical-jargon-google-easy' -> 'low - potency antipsychotic drugs'
+  [23:24] 'medical-jargon-google-easy' -> 'schizophrenia'
+  [25:29] 'medical-jargon-google-easy' -> 'schizophrenia - like psychosis'

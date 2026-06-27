@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2867  |  gem_id: gem-cochrane-simplification-train-2868  |  doi: 10.1002/14651858.CD004282.pub3
+
+This review found that nursing programmes and interventions to manage breathlessness may produce beneficial effects and that some psychotherapeutic, psychosocial and educational interventions can play some role in improving the quality of life of patients. Counselling may help patients to cope better with emotional symptoms and reflexology can have some short-term beneficial effects. The main limitations of the included studies were the variability of the interventions, the way results were measured and the lack of 'blinding' (ensuring that those who are measuring the patients' outcomes are not aware of which treatment the patient actually received).

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0431  |  gem_id: gem-cochrane-simplification-train-432  |  doi: 10.1002/14651858.CD002742.pub2
+
+The drug aminophylline has also been used intravenously (injected into the veins) for many years; however, this review of trials found that aminophylline is not significantly better than other bronchodilator drugs, and has more adverse effects. For every 100 people treated with aminophylline an additional 20 people had vomiting and 15 people arrhythmias or palpitations. This review was first published in 2000 and was updated in 2012 and the addition of two trials in 2012 did not alter the original conclusions.

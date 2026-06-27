@@ -1,0 +1,4 @@
+Cardiac implantable electronic devices (CIEDs) provide lifesaving therapy for the treatment of slow heart rates (bradyarrhythmias), abnormal heart rhythm in the lower part of the heart (ventricular tachyarrhythmias), and when the heart does not pump enough (advanced systolic heart failure).
+All pacemakers have 2 basic functions: (1) to pace or get the heart beat back to normal and (2) to sense internal electrical activity of the heart.
+Most pacemakers are programmed to slow or stop pacing when they sense natural electrical activity and only pace (send pulses) in the absence of this internal electrical activity.
+More specifically, pacemakers can be programmed to set which part or parts (chambers) will pace, which chamber or chambers will sense internal electrical activity, how the pacemaker will respond to sensed electrical activity (slow or stop pacing), and if rate adjusted pacing will be used.

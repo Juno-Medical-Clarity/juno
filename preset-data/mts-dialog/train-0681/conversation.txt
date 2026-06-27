@@ -1,0 +1,15 @@
+Doctor: So, who is in your family?
+Patient: Well, my mom, dad, and I have four brothers aged eighteen, sixteen, fourteen and twelve and I also have a younger sister. She is only three.
+Doctor: Wow, and you all stay together?
+Patient: Yes, and we also have two dogs and two cats.
+Doctor: Okay. And everyone at home is doing fine?
+Guest_family: No, not really. Everyone at home is sick with a cough, cold and runny nose, except-
+Patient: Except for my mom!
+Guest_family: Yeah, except for me thankfully.
+Doctor: Hm, and did you travel anywhere recently, especially during the holiday season?
+Patient: No, right mom?
+Guest_family: Yeah, we didn't travel anywhere recently.
+Doctor: Okay. Anybody in your house smokes?
+Guest_family: No.
+Doctor: No exposure to smoke, right?
+Guest_family: No.

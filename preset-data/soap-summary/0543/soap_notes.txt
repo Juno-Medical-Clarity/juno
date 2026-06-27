@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0543
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient lives with wife who can help with wound care.
+- Patient requires assistance in changing bandages.
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No assessment information provided in the conversation.)
+
+Plan:
+- Patient will have wife assist with changing bandages.

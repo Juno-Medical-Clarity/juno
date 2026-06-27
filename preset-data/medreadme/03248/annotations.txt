@@ -1,0 +1,13 @@
+source:      plos_genetics
+side:        complex
+readability: 5.65
+split:       dev
+
+jargon_spans:
+  [4:7] 'medical-jargon-google-hard' -> 'chromosome 4q31 SNPs'
+  [8:9] 'medical-jargon-google-hard' -> 'rs13147758'
+  [19:20] 'medical-name-entity' -> 'Framingham'
+  [22:23] 'medical-jargon-google-easy' -> 'genotyped'
+  [25:28] 'medical-jargon-google-easy' -> 'Family Heart Study'
+  [36:37] 'medical-jargon-google-easy' -> 'phenotype'
+  [40:43] 'medical-jargon-google-easy' -> 'FEV1 / FVC'

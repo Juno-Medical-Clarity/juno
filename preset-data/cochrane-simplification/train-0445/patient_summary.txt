@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0445  |  gem_id: gem-cochrane-simplification-train-446  |  doi: 10.1002/14651858.CD003636.pub4
+
+The review found 10 trials, which studied 375 women having six different types of needle suspension operations and compared them with 489 women who received other treatments. Most of the trials were small or of poor quality, making their results less reliable. More women were cured after abdominal operations such as colposuspension (84%) than after needle suspension (71%): both women who had and had not had a previous operation for incontinence. There was not enough evidence about complications, or how needle suspension compares with other operations. Needle suspension operations were not compared with conservative treatments such as pelvic floor exercises or drugs. In summary, needle suspension surgery appears to be less effective for urinary incontinence than abdominal surgery, and there is not enough evidence to compare it to other treatments.

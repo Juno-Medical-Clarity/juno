@@ -1,0 +1,10 @@
+source:      MSD
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [10:12] 'medical-jargon-google-easy' -> 'intrathoracic volume'
+  [15:17] 'medical-jargon-google-easy' -> 'early satiety'
+  [23:25] 'medical-jargon-google-easy' -> 'abdominal cavity'
+  [31:32] 'medical-jargon-google-easy' -> 'pelvis'

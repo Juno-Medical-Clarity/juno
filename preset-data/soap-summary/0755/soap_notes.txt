@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0755
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Bunion pain
+- Severity: Severe ("I can't take it anymore")
+- Duration: A few months
+- Associated symptoms: None explicitly mentioned
+- Relevant medical history: None explicitly mentioned
+- Family history: None explicitly mentioned
+- Allergies: None mentioned
+- Other concerns: Inquiring about surgical options
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- Consideration of surgical options for bunion pain management.

@@ -1,0 +1,41 @@
+# SOAP Notes — Sample 0184
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with dry cough for 1.5 weeks
+- Cough is intermittent, lasting a few seconds, and worse with smoking
+- Initially had sputum production (watery) and URI symptoms (sniffles, nasal congestion, decreased sense of smell) which resolved after 2-3 days
+- Cough is relieved temporarily by OTC cough syrup
+- Denies current fever, chills, night sweats, SOB, sore throat, rhinorrhea, headache, chest pain, palpitations, dizziness, syncope, N/V, changes in bowel movements or urination, fatigue, loss of taste or appetite, or unintentional weight changes
+- No missed work (working from home)
+- No recent travel
+- Daughter had flu-like illness 2 weeks ago which self-resolved
+- No known sick contacts
+- No exposure to dust, fumes, or animals
+
+PMHx:
+- Appendectomy 5 years ago without complications
+- Allergic to penicillin (childhood rash)
+
+FHx:
+- Colon cancer (father and paternal grandfather)
+
+SocHx:
+- Lives in apartment with wife and daughter
+- Smoking: currently 3-4 cigarettes/week, previously 0.5 PPD for 30 years (since age 20), gradually cutting down over past 3 years
+- Alcohol: 1-2 glasses of wine on weekends
+- Denies recreational drug use
+
+Objective:
+- Vitals signs: not provided
+- Physical examination: not provided
+- Investigations: not provided
+
+Assessment:
+- Likely post-viral cough
+- COVID-19 testing pending
+
+Plan:
+- COVID-19 swab
+- Self-isolation and infection control measures at home pending swab results
+- Monitor symptoms and follow up if worsening or persistent cough

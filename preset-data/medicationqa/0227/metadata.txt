@@ -1,0 +1,5 @@
+drug_focus: mucinex fast-max
+question_type: Interaction
+section_title: WARNINGS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fe7eeb71-e219-4c84-ac06-98c3a40b14dc
+sample_id: 0227

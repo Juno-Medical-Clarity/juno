@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0406
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Asthma, sinus issues, hives (past), psoriasis (past)
+- Severity: Not explicitly mentioned
+- Duration: Not explicitly mentioned
+- Associated symptoms: Not explicitly mentioned
+- Relevant medical history: Asthma, sinus issues, history of hives, history of psoriasis
+- Family history: Not mentioned
+- Allergies: No known allergies
+- Other concerns: None explicitly mentioned
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

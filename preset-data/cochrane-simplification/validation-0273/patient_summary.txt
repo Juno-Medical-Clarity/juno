@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0273  |  gem_id: gem-cochrane-simplification-validation-274  |  doi: 10.1002/14651858.CD004001.pub3
+
+The review authors included five randomised and one controlled clinical trial involving a total of nearly 450 patients. In general the quality of the studies was good. Amputation after 12 months was required less often when SCS was added to standard care. Significant pain relief occurred with and without SCS but patients in the SCS group required fewer pain killers. Overall there was no difference on ulcer healing rates between the two treatment groups. Complications of SCS treatment consisted of problems with initially implanting the electrodes, in 8% of patients, and the need for repeat surgery because of electrode or lead failures in 12% of patients; infections occurred less frequently (3%). The average overall costs at two years were calculated in one study and found to be EUR 36,500 in the SCS group and EUR 28,600 in the conservative treatment alone group.

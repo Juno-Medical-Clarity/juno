@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2351  |  gem_id: gem-cochrane-simplification-train-2352  |  doi: 10.1002/14651858.CD011604.pub2
+
+In November 2015, we searched for clinical trials where hydromorphone was used to treat neuropathic pain in adults. We found one small study that did this and met our requirements for the review. The study had a complicated design. Only a minority of participants had neuropathic pain, with only 94 in the comparison with placebo. Important pain outcomes were not reported. The study provided no convincing evidence of any benefit for hydromorphone over placebo. Of those people who started taking hydromorphone, one in eight stopped because of side effects in the first part of the study. The most common side effects were constipation and nausea, which are typically experienced with opioids. We rated the quality of the evidence as very low because of the study design, poor reporting of important outcomes, and small numbers of participants. Very low quality evidence means that we are very uncertain about the results.

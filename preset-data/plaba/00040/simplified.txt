@@ -1,0 +1,9 @@
+An international committee recommends diagnosing diabetes if hemoglobin A1c (HbA1c), an iron-rich blood protein joined to a sugar, is at or over 6.5% with multiple tests.
+The committee recommends not "mixing different methods to diagnose diabetes" because "the tests are not completely concordant [or consistent]: using different tests could easily lead to confusion".
+Fasting blood sugar tests and blood sugar tests after simple sugar intake may help identify diabetes only if testing for HbA1c is not possible.
+HbA1c testing is useful for greater convenience, accuracy, and uniformity, but as the single tool for identification, it may lead to measurement errors.
+Unknown factors may alter scores of the iron-rich blood protein relative to the actual blood sugar level.
+Thus, tests for this iron-rich blood protein connected to a sugar should be combined with other blood sugar values for diabetes identification.
+If a score for HbA1c disagrees with the general reading, blood sugar testing should be performed.
+A cut-off point at or over 6.5% for HbA1c misses many with type 2 diabetes, high fasting blood sugar, and impaired blood sugar sensitivity.
+Using tests for HbA1c and blood sugar measurements identifies diabetes better than HbA1c tests alone.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3430  |  gem_id: gem-cochrane-simplification-train-3431  |  doi: 10.1002/14651858.CD000516.pub2
+
+This review found results from one arm of a trial only involving a very small number of patients. The results suggest that endovascular treatment can be carried out with a high degree of technical success at the time of treatment but there is insufficient evidence to determine whether the risk benefit ratio favours endovascular intervention over conservative management. Randomised trials need to be designed to determine whether the endovascular treatment is more successful than conservative treatment at reducing the long term risk of stroke or death.

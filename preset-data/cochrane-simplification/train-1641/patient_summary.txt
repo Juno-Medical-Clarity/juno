@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1641  |  gem_id: gem-cochrane-simplification-train-1642  |  doi: 10.1002/14651858.CD000994.pub3
+
+However, this review of nine randomised controlled trial found that home care resulted in an improvement in people's quality of life, but has an unpredictable effect on the risk of being admitted to hospital. We could only find information on the cost of care from one study, but this indicated that home care was an expensive form of care. More research is needed to confirm the usefulness of home visits for people with COPD.

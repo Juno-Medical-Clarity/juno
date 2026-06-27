@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1093
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient's husband died thirty years ago.
+- Patient has not been working.
+- Highest degree is high school.
+- Lived alone for fifteen years until December of 1994.
+- Currently, daughters are taking care of the patient on a shareable basis.
+- Patient does not smoke, drink, or use drugs.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

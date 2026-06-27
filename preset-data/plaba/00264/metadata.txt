@@ -1,0 +1,5 @@
+pmid:        31482863
+question:    21
+adaptation:  adaptation1
+title:       Inguinal hernia - review
+sentences:   8

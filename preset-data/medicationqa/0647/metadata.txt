@@ -1,0 +1,5 @@
+drug_focus: steroid injections
+question_type: Information
+section_title: What conditions are treated with steroid injections?
+source_url: https://my.clevelandclinic.org/health/treatments/4934-steroid-injections
+sample_id: 0647

@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        simple
+readability: 4.0
+split:       dev
+
+jargon_spans:
+  [14:16] 'medical-jargon-google-easy' -> 'somatic expansion'
+  [18:19] 'abbr-medical' -> 'HD'
+  [19:21] 'medical-jargon-google-easy' -> 'CAG repeat'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3357  |  gem_id: gem-cochrane-simplification-train-3358  |  doi: 10.1002/14651858.CD001857.pub2
+
+The reviewers found 17 studies of programs that reported whether working with problem drinkers reduced injuries. Several different approaches were evaluated, the most common being brief counseling by health workers. The evidence from these studies suggests that action with problem drinkers is effective in reducing both injuries and events that lead to injury (such as falls, motor vehicle crashes, and suicide attempts). However, more research is needed to calculate the level of effectiveness accurately and to determine which type of program works best.

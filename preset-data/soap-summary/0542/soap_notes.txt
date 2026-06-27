@@ -1,0 +1,25 @@
+# SOAP Notes — Sample 0542
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: nasal problems, uncomfortable feeling in the face, stuffy nose, eye pain, sensation of something dropping in the back of the throat, trouble with balance, loss of hearing, plugged or full feeling in the ears.
+- Severity: severe sinusitis reported two to three months ago; mild high frequency sensorineural hearing loss noted.
+- Duration: symptoms of sinusitis experienced two to three months ago; balance issues and hearing loss currently ongoing.
+- Associated symptoms: dizziness with sudden movements and head turning.
+- Relevant medical history: previous diagnosis of severe sinusitis, prescribed antibiotics, CT scan showing thickening of mucosal layer, obstruction in right ostiomeatal complex, and a shifted nasal septum.
+- Family history: not mentioned.
+- Allergies: medication (Allegra) caused worsening balance; no other allergies mentioned.
+- Concerns: frustration with previous treatments (antibiotics and topical nasal corticosteroid) not being effective; anxiety regarding balance issues and hearing loss at age 50.
+
+Objective:
+- CT scan findings: thickening of the mucosal layer in the right paranasal sinus, obstruction in the right ostiomeatal complex, excess growth of some bones in the nose, shifted nasal septum.
+- Audiogram results: mild high frequency sensorineural hearing loss, normal tympanometry, normal speech discrimination.
+
+Assessment:
+- Diagnoses: chronic sinusitis with a history of severe acute exacerbation, mild high frequency sensorineural hearing loss, possible medication-induced dizziness related to Allegra.
+
+Plan:
+- Perform an audiogram test to monitor hearing.
+- Evaluate and possibly adjust current medications to address nasal problems and balance issues.
+- Further investigate the cause of dizziness related to sudden movements.
+- Educate the patient on the findings and management options for their nasal and ear symptoms.

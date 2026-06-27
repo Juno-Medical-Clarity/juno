@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0509
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient works at A B C store.
+- Patient does not smoke.
+- Patient drinks socially, mainly at parties.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan mentioned.]

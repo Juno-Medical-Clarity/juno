@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [2:3] 'abbr-general' -> 'RCT'
+  [9:10] 'medical-jargon-google-easy' -> 'hysterectomy'
+  [13:14] 'medical-jargon-google-easy' -> 'oophorectomy'

@@ -1,0 +1,12 @@
+source:      plos_biology
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-hard' -> 'GlmY'
+  [7:8] 'medical-jargon-google-hard' -> 'GlmZ'
+  [9:11] 'medical-jargon-google-easy' -> 'positively regulates'
+  [11:12] 'medical-jargon-google-hard' -> 'glmS'
+  [13:14] 'general-medical-multisense' -> 'antagonizing'
+  [14:17] 'medical-jargon-google-hard' -> 'GlmZ RNA inactivation'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0192  |  gem_id: gem-cochrane-simplification-test-193  |  doi: 10.1002/14651858.CD004096.pub2
+
+This review of drugs for weight loss among adults with type 2 diabetes revealed weight loss of between 2.0 and 5.1 kg for fluoxetine, orlistat and sibutramine at follow-up of up to 57 weeks. The long-term effects remain uncertain. Adverse events were common in all three drugs: gastrointestinal side effects with orlistat; tremor, somnolence, and sweating with fluoxetine; and palpitations with sibutramine. There were few studies examining other drugs used for weight loss in populations with diabetes.

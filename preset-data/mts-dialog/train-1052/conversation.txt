@@ -1,0 +1,7 @@
+Doctor: Has anyone in your family had a history of heart disease or issues?
+Patient: Well, yeah. Actually, my dad passed away due heart disease.
+Doctor: Oh, I am sorry to hear that. Do you know what kind of heart problem he had?
+Patient: Yeah, it is called co-
+Doctor: Oh, coronary heart disease?
+Patient: Yes, exactly!
+Doctor: I see.

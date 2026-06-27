@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0855  |  gem_id: gem-cochrane-simplification-train-856  |  doi: 10.1002/14651858.CD007230.pub2
+
+Data from some experimental and human studies have suggested that edaravone, a neuroprotective agent, may be beneficial for people with acute ischaemic stroke. It has been widely used in China to treat stroke. To obtain a reliable assessment of the effects of edaravone in acute ischaemic stroke, we reviewed data from three studies involving 496 participants. The quality of the trials was moderate. It would appear that edaravone is an effective treatment for acute ischaemic stroke. However, more high-quality and bigger sample trials are needed to confirm this result.

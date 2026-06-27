@@ -1,0 +1,10 @@
+Inborn Errors of Metabolism (IEM) are hereditary diseases that affect how the body processes nutrients. Newborn screening of IEM is a coordinated, comprehensive system. It is made up of education, screening, follow-up of abnormal test results, confirmatory testing, diagnosis, treatment, and evaluation of outcome and efficiency.
+The ultimate goal of newborn screening and follow-up programs is to reduce poor health and death from the disorders.
+Over the past decade, tandem mass spectrometry (MS/MS) has become a key technology in the field of newborn screening.
+It has replaced classic screening techniques, which screen for one disease per lab test, with lab tests that screen for many diseases at once.
+Several factors have allowed expanded newborn screening for identifying many conditions with a single sample. These factors are the development of Electrospray Ionization (ESI), automation of sample handling, and data manipulation. These factors have also allowed new conditions to be added to the list of disorders being screened for using MS/MS.
+In the case of a positive result from a screen, a follow-up lab test should be done to confirm the first result.
+The most common follow-up tests for confirmation are blood tests for amino acids (building blocks of protein) and acylcarnitine (a chemical in the body important for metabolism), and urine tests for certain acids.
+Newborn screening should be integrated with follow-up and clinical management.
+Recent improvements in therapy have caused some disorders to be considered as potential candidates for newborn screening.
+This article reviewing newborn screening covers some of the basic theory of expanded MS/MS. It also covers follow-up tests for confirmation used for newborn screening of IEM.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1045
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, sir how are you feeling today? I feel terrible. Very sick and I can barely move. I feel so weak.

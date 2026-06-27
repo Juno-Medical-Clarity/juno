@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0869  |  gem_id: gem-cochrane-simplification-train-870  |  doi: 10.1002/14651858.CD005948.pub2
+
+A systematic review of the data from randomised controlled trials provides no evidence that routine thyroid hormone therapy is effective in preventing problems in preterm babies or improves their developmental outcomes. Thyroid hormones are needed for the normal growth and maturity of the central nervous system, as well as the heart and lungs. Children born without sufficient thyroid hormones can develop serious mental retardation. It is believed that low levels of thyroid hormones in the first few weeks after birth (transient hyperthyroxinaemia) in preterm babies born before 34 weeks may contribute to this abnormal development. The review of trials found no evidence that using thyroid hormones routinely in preterm babies is effective in reducing the risk of problems caused by transiently low levels of thyroid hormones.

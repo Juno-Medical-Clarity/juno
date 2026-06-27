@@ -1,0 +1,10 @@
+source:      plos_biology
+side:        simple
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [4:7] 'medical-jargon-google-easy' -> 'in vitro model'
+  [8:10] 'medical-jargon-google-easy' -> 'cellular differentiation'
+  [22:23] 'medical-jargon-google-easy' -> 'genome'
+  [26:28] 'medical-jargon-google-easy' -> 'gene regulation'

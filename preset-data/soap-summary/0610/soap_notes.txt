@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0610
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Right leg pain, rash where the bandage is, vomiting, constipation, acne.
+- Severity: Right leg pain is described as "a lot of pain"; vomiting is "off and on"; acne is "mild to moderate".
+- Duration: Vomiting since February 19, 2007; acne for about two years.
+- Associated symptoms: Constipation since being in the facility; no shortness of breath, chest pain, coughing up blood, joint pain, or headaches mentioned.
+- Relevant medical history: None explicitly mentioned beyond the current symptoms.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Other concerns: Patient expresses that pain medication (Vicodin) is "horrible" and is causing vomiting.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- Change to the medication for pain management.
+- Provide something for the constipation issue.

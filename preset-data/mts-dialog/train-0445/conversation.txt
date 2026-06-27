@@ -1,0 +1,7 @@
+Doctor: Hello. How are you doing today?
+Patient: I want to get surgery on my leg.
+Doctor: Have you ever had a surgery.
+Patient: I did. Here's a list of them.
+Doctor: Looks like you had eye surgery, cataract surgery, and lumbar decompression, correct?
+Patient: Yeah. So, what options do I have for surgery?
+Doctor: I need to see what the problem is first.

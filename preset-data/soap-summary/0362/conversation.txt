@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0362
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi there! How are you today? Hi! I am good. Welcome in! Thank you. Lets start with a little social history. Are you a tobacco or alcohol user? No. Are you married? Do you have children? I am not married but I do have a two year old son. Do you currently see a gynecologist? Yes. She is in Bartow. Great.

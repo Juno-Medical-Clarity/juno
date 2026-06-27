@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0473  |  gem_id: gem-cochrane-simplification-test-474  |  doi: 10.1002/14651858.CD001964.pub4
+
+We collected data from eight randomized controlled trials addressing this issue and enrolling a total of 2515 patients. We found that D2 lymphadenectomy can reduce the number of deaths due to disease progression as compared to D1 lymphadenectomy. However, D2 lymphadenectomy was also associated with a higher rate of postoperative mortality. In addition, available evidence does not support the superiority of D3 versus D2 lymphadenectomy. In conclusion, our findings support the use of D2 lymphadenectomy in patients with resectable carcinoma of the stomach, although the increased incidence of postoperative mortality reduces its therapeutic effect. The quality of the evidence was moderate due to an intermediate level of result heterogeneity across the included trials.

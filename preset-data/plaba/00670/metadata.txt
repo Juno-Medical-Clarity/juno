@@ -1,0 +1,5 @@
+pmid:        24850140
+question:    52
+adaptation:  adaptation1
+title:       Amniotic fluid RNA gene expression profiling provides insights into the phenotype of Turner syndrome
+sentences:   15

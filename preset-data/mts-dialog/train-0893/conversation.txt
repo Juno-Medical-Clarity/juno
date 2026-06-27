@@ -1,0 +1,16 @@
+Doctor: How're you doing today, sir?
+Patient: Uh I'm hanging in there.
+Doctor: I see that you've recently celebrated your seventy second birthday.
+Patient: Yep. My kids and grandkids threw me a surprise party. It was really nice.
+Doctor: Aw surprises are always fun. However, I'm sorry to hear that you're not doing that well today.
+Patient: Yeah, me too. The other day, I had a lot of difficulty getting up from my chair because of weakness all over and a lightheadedness I can't seem to explain.
+Doctor: Is this new for you?
+Patient: Um I mean I've had falling spells several times a month for the past year, but I've always been able to get myself up one way or another.
+Doctor: Do you remember losing consciousness during any of those episodes?
+Patient: Not that I recall. I've noticed I'm a lot weaker than before so maybe that's why I keep falling more frequently.
+Doctor: I see. Do you experience room spinning dizziness at all?
+Patient: No. I also forgot to mention that four hours after not being able to get up from my chair, my left hand became numb for about two hours.
+Doctor: Are you right or left handed?
+Patient: Right handed.
+Doctor: And besides what you've mentioned to me so far, no other symptoms of concern?
+Patient: No.

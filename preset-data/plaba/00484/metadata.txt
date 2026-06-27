@@ -1,0 +1,5 @@
+pmid:        33033779
+question:    37
+adaptation:  adaptation1
+title:       Pregabalin-associated movement disorders: A literature review
+sentences:   18

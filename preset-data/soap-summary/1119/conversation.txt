@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1119
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+And you are not allergic to anything right? That's right. Any drugs or pollens or anything? Nope nothing. Good.

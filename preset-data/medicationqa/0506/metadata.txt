@@ -1,0 +1,5 @@
+drug_focus: prednisone
+question_type: Side effects
+section_title: ADVERSE REACTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9d6774e-45f6-419f-b388-8dfb4dd34944
+sample_id: 0506

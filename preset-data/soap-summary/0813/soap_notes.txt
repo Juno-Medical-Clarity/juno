@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0813
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports asthma has been acting up for the past three months, using inhaler daily (previously used occasionally).
+- Allergies exacerbated by husband's increased corn hauling; sometimes takes Allegra with minimal relief.
+- Previously prescribed Flonase but doesn't remember last time taken; also on Advair but stopped due to increased itching in genital area.
+- Experiencing PMS symptoms: impatience and moodiness, starting a week before period, less intense after first day of bleeding.
+- Menstrual cycles generally regular but shorter in duration; noted spotting after cycles end.
+- Recent UTI with blood in urine, noticed blood about three times; prescribed antibiotics for UTI.
+- No current urinary symptoms; has not had urine rechecked since UTI.
+- Mentioned blood work done for life insurance application; age 42, referencing mother's advice on procrastination.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- Recommend patient to get urine rechecked; offer to write an order or suggest making an appointment with a urologist.
+- Order blood work during visit; patient will fax results of recent blood work once received.

@@ -1,0 +1,16 @@
+qid: TQ69
+source_file: NF_237.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: Can a CT scan detect diverticulitis or diverticulosis?
+nlm_summary: Can a CT scan detect diverticulitis or diverticulosis?
+
+focus_entities:
+  [F1] (Problem) diverticulosis
+  [F2] (Problem) diverticulitis
+question_types:
+  [T1] DIAGNOSIS
+  [T2] DIAGNOSIS
+keywords:
+  [K1] (DiagnosticProcedure) cat scan

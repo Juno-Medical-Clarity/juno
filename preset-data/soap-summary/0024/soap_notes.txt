@@ -1,0 +1,48 @@
+# SOAP Notes — Sample 0024
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with difficulty breathing for 2 months, worsening cough (had cough for a couple years, smoker)
+- Cough: productive of pink sputum, sometimes with streaks of blood
+- Shortness of breath: constant, worse with exertion, improved with rest
+- Using inhalers more frequently, but not helping (has COPD diagnosed 15 years ago, takes 2 inhalers including Ventolin)
+- No sick contacts, no recent travel
+- Mild fever noticed 1 month ago, feels a little hot currently
+- Night sweats sometimes
+- Increased fatigue, short of breath even at rest
+- 4 hospitalizations last year for COPD exacerbations, required oxygen in hospital
+- Sometimes chest pain with deep breathing
+
+PMHx:
+- COPD x 15 years
+- Right knee replacement 10 years ago
+
+SocHx:
+- Retired mechanic at Chrysler's
+- Smoker since teenage years, smokes 1 pack per day, unable to quit
+- No alcohol or recreational drug use
+
+FHx:
+- Father had COPD
+
+Allergies:
+- Cats
+
+Medications:
+- Ventolin inhaler
+- Orange inhaler (unsure of name)
+
+Objective:
+- Vitals signs
+- Physical examination findings
+
+Assessment:
+- Likely COPD exacerbation
+
+Plan:
+- Ventolin and steroid administration
+- COVID swab
+- Chest X-ray to rule out pneumonia
+- Blood work
+- Consider home oxygen if low oxygenation on vitals
+- Counsel on smoking cessation or reduction to improve symptoms

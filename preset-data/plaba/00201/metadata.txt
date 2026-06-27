@@ -1,0 +1,5 @@
+pmid:        2199128
+question:    16
+adaptation:  adaptation2
+title:       Clinical pharmacokinetics of prednisone and prednisolone
+sentences:   9

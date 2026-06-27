@@ -1,0 +1,5 @@
+pmid:        32772141
+question:    75
+adaptation:  adaptation3
+title:       Association between BCL11A, HSB1L-MYB, and XmnI γG-158 (C/T) gene polymorphism and hemoglobin F level in Egyptian sickle cell disease patients
+sentences:   11

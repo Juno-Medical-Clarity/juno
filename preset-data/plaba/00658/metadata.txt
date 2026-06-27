@@ -1,0 +1,5 @@
+pmid:        34601537
+question:    50
+adaptation:  adaptation1
+title:       Characteristics and Outcome of Patients with COVID-19 Undergoing Invasive Mechanical Ventilation for Respiratory Failure in a Tertiary Level Hospital in Nepal
+sentences:   10

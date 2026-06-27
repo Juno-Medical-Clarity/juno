@@ -1,0 +1,1 @@
+We developed new Bayesian methods for analysing multiple individual patient-level data sets to evaluate heterogeneous continuous outcomes.

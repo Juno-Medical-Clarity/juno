@@ -1,0 +1,5 @@
+drug_focus: fluorouracil
+question_type: Information
+section_title: CLINICAL PHARMACOLOGY
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8eff167f-203a-4a81-b2fc-d8773bc3555e&audience=consumer
+sample_id: 0673

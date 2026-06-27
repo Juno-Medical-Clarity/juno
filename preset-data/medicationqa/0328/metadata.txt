@@ -1,0 +1,5 @@
+drug_focus: Luvox + Quillivant
+question_type: Interaction
+section_title: NA
+source_url: https://onlinelibrary.wiley.com/doi/full/10.1111/j.1440-1819.2008.01767.x
+sample_id: 0328

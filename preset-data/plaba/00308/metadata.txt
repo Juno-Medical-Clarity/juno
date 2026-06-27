@@ -1,0 +1,5 @@
+pmid:        7714222
+question:    24
+adaptation:  adaptation1
+title:       Assessment of the efficacy of buspirone in patients affected by generalized anxiety disorder, shifting to buspirone from prior treatment with lorazepam: a placebo-controlled, double-blind study
+sentences:   12

@@ -1,0 +1,38 @@
+# SOAP Notes — Sample 0218
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 4 yo M presents with right ear pain x 4 days
+- No hearing loss, fluid from ears, swelling, redness or warmth of ear
+- Hx of recent URTI with runny nose (clear) and congestion, now resolved
+- New onset dry cough x 1 day (3-4 episodes/day, no hemoptysis)
+- Denies fever, weight loss, skin/hair/nail changes, vision/smell/taste changes, sore throat, SOB, wheezing, chest pain, N/V, change in bowel movements or urination, HA, dizziness, syncope, imbalance, numbness/tingling
+- Hx of similar left ear pain at age 3, treated with abx
+- No sick contacts or recent travel
+- Lives in well-kept condo with parents and pet dog, no known environmental exposures
+
+PMHx:
+- Prior left AOM at age 3
+- Otherwise healthy, no hospitalizations or surgeries
+- Father with celiac disease dx in 20s
+
+Medications: None
+
+Allergies: NKDA
+
+Immunizations: Up to date
+
+Birth Hx: FT SVD at 39 weeks, uncomplicated pregnancy and delivery
+
+Objective:
+- Vitals pending
+- Ear exam pending
+
+Assessment:
+- Likely AOM
+
+Plan:
+- Assess tympanic membranes
+- If TM perforation or purulent fluid, treat with 10 day course of amoxicillin or cefuroxime (if PCN allergy)
+- If TM bulging or MEE with systemic symptoms (e.g. fever), treat with 10 day course of abx
+- If TM bulging or MEE without systemic symptoms, reassess in 24-48h and treat with abx if not improved

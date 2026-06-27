@@ -1,0 +1,11 @@
+source:      pnas
+side:        complex
+readability: 5.5
+split:       test
+
+jargon_spans:
+  [0:1] 'medical-jargon-google-easy' -> 'Postnatally'
+  [2:4] 'medical-jargon-google-hard' -> 'mesenchymal deletion'
+  [5:6] 'medical-jargon-google-hard' -> 'Hoxa5'
+  [8:14] 'medical-jargon-google-hard' -> 'Hoxb5 / Hoxc5 double - mutant'
+  [18:20] 'medical-jargon-google-easy' -> 'alveolar simplification'

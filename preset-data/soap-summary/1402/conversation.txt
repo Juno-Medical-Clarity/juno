@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1402
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you had sinus issues before? I am not sure, maybe on and off. Because this is more allergic. Okay. So, we call it allergic rhinitis. Is it different than sinus infection? Yes, it's it is different. Okay.

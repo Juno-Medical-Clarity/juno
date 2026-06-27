@@ -1,0 +1,5 @@
+drug_focus: testosterone injection
+question_type: Usage
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d7b57b68-dca6-4df2-b3f2-7017d7b69f17&audience=consumer
+sample_id: 0662

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0587  |  gem_id: gem-cochrane-simplification-train-588  |  doi: 10.1002/14651858.CD001395.pub4
+
+This review found 43 RCTs conducted up to July 2013 that included 4,084 participants with hot flushes who were close to the menopause or were menopausal. Evidence obtained is current to July 2013. Some trials reported a slight reduction in hot flushes and night sweats with phytoestrogen-based treatment. Extracts containing high levels of genistein (a substance derived from soy) appeared to reduce the number of daily hot flushes and need to be investigated further. Overall no indication suggested that other types of phytoestrogens work any better than no treatment. No evidence was found of harmful effects on the lining of the womb, stimulation of the vagina or other adverse effects with short-term use. Many of the trials in this review were small, of short duration and of poor quality, and the types of phytoestrogens used varied substantially.

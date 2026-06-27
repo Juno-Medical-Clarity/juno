@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0433  |  gem_id: gem-cochrane-simplification-train-434  |  doi: 10.1002/14651858.CD000546.pub2
+
+The results of the existing trials suggest that this may be effective, but the evidence is not conclusive because most of the studies of this approach have methodological problems. A recent laboratory study also suggests that the method has an active ingredient. Further research may be worthwhile.

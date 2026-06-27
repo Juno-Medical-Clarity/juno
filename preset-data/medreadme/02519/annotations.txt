@@ -1,0 +1,8 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'pathogen'
+  [4:7] 'medical-jargon-google-easy' -> 'intestinal epithelial cells'

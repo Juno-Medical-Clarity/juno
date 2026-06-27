@@ -1,0 +1,11 @@
+Background: While Coronavirus disease 2019 (Covid-19) vaccines are highly effective, breakthrough infections are occurring.
+Booster vaccinations have recently received emergency use authorization (EUA) for certain populations but are restricted to homologous mRNA vaccines.
+We evaluated homologous and heterologous booster vaccination in persons who had received an EUA Covid-19 vaccine regimen.
+Methods: In this phase 1/2 open-label clinical trial conducted at ten U.S. sites, adults who received one of three EUA Covid-19 vaccines at least 12 weeks prior to enrollment and had no reported history of SARS-CoV-2 infection received a booster injection with one of three vaccines (Moderna mRNA-1273 100-μg, Janssen Ad26.COV2.S 5×10 10 virus particles, or Pfizer-BioNTech BNT162b2 30-μg; nine combinations).
+The primary outcomes were safety, reactogenicity, and humoral immunogenicity on study days 15 and 29.
+Results: 458 individuals were enrolled: 154 received mRNA-1273, 150 received Ad26.CoV2.S, and 153 received BNT162b2 booster vaccines.
+Reactogenicity was similar to that reported for the primary series.
+Injection site pain, malaise, headache, and myalgia occurred in more than half the participants.
+Booster vaccines increased the neutralizing activity against a D614G pseudovirus (4.2-76-fold) and binding antibody titers (4.6-56-fold) for all combinations; homologous boost increased neutralizing antibody titers 4.2-20-fold whereas heterologous boost increased titers 6.2-76-fold.
+Day 15 neutralizing and binding antibody titers varied by 28.7-fold and 20.9-fold, respectively, across the nine prime-boost combinations.
+Conclusion: Homologous and heterologous booster vaccinations were well-tolerated and immunogenic in adults who completed a primary Covid-19 vaccine regimen at least 12 weeks earlier.

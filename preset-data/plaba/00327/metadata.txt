@@ -1,0 +1,5 @@
+pmid:        32150748
+question:    26
+adaptation:  adaptation1
+title:       The Incubation Period of Coronavirus Disease 2019 (COVID-19) From Publicly Reported Confirmed Cases: Estimation and Application
+sentences:   13

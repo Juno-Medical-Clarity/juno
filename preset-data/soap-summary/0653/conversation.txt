@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0653
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Did you ever visit any hospital for any kind of surgery? No.

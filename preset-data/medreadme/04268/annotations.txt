@@ -1,0 +1,12 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.0
+split:       test
+
+jargon_spans:
+  [3:4] 'medical-name-entity' -> 'MEDLINE'
+  [5:6] 'medical-name-entity' -> 'EMBASE'
+  [7:8] 'medical-name-entity' -> 'PsycINFO'
+  [9:14] 'medical-name-entity' -> 'Linguistics and Language Behaviour Abstracts'
+  [15:20] 'medical-name-entity' -> 'Allied and Complementary Medicine Database'
+  [21:29] 'medical-name-entity' -> 'Cumulative Index to Nursing and Allied Health Literature'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0521
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I see here that you were in for afib last month. Yep. How're you doing? It's all under control for now. That's good to hear. Are you still taking Metoprolol and Premarin? Yeah.

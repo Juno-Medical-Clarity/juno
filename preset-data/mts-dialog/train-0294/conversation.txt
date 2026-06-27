@@ -1,0 +1,20 @@
+Doctor: Okay, tell me what's going on and what's brought you here.
+Guest_family: I am her mother. She has this blister on the side of her head right above her ear, here. I was just worried and concerned about my baby.
+Doctor: How old is the baby? When did you first notice it?
+Guest_family: She is just fourteen days old. Let me tell you from the beginning. On Friday, when I was taking her for a bath, I noticed a blister near her umbilicus area. We went to our doctor on Saturday, and they did a test.
+Doctor: Did you get the test result?
+Guest_family: I got it today. Here is the report.
+Doctor: Okay, let me have a look. It says she is having a growing M R S A.
+Guest_family: Yeah, I've been diagnosed with that too. And I am on medications. I had it on my buttock area.
+Doctor: Okay, so you know about it, and I don't have to explain it more.
+Guest_family: Yeah.
+Doctor: So how is the blister on the umbilicus now?
+Guest_family: She has been doing good. We put on some bacitracin ointment, and it almost healed up. But today I noticed that another small blister on her head. It really scared me, and I did not want to take any chance. That's why I reached out to the Infectious Disease center. I know it is private. But still, I don't want to take any chance with my baby's health. I called the center directly and they asked me to come to the hospital.
+Doctor: You did good. I will start the treatment. How are her eating and sleeping habits?
+Guest_family: She hasn't missed any of her meals. She is taking around two ounces of milk in every feed. I don't think I have any issues with her eating or sleeping.
+Doctor: Did she have any fever?
+Guest_family: Not that I noticed.
+Doctor: Has she been lethargic or crying more than normal?
+Guest_family: No.
+Doctor: Any other changes in her daily routine that you might have noticed?
+Guest_family: No, I didn't notice any changes.

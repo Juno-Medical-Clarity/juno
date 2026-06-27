@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [11:13] 'medical-jargon-google-easy' -> 'physical therapy'
+  [18:20] 'medical-jargon-google-easy' -> 'physical therapy'
+  [24:25] 'medical-jargon-google-easy' -> 'stroke'

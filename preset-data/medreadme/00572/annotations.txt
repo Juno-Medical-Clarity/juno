@@ -1,0 +1,8 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [9:12] 'general-complex' -> 'mixed - method'
+  [12:18] 'general-complex' -> 'controlled before - and - after'

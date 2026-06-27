@@ -1,0 +1,18 @@
+Doctor: Good afternoon, so, who is the patient today?
+Guest_family: Good afternoon, doctor. My granddaughter is your patient today.
+Doctor: What seems to be the problem today, young lady?
+Patient: Well, I'm having a lot of headaches, I feel it in my face.
+Doctor: Does it feel like pressure?
+Patient: That, and I have the sniffles.
+Doctor: What other symptoms have you had?
+Patient: Um, well, last night I had a sore throat, and I was coughing up phlegm.
+Doctor: Interesting, anything else?
+Patient: Um, I've had a rash on my face, back, and arms for the last three days or so.
+Doctor: Is it itchy?
+Patient: Yes, so we've been taking a lot of Benadryl.
+Doctor: I see, are you going to school?
+Patient: I have been, there's been a lot of fifth disease this year.
+Doctor: Okay, and have you been wheezing lately?
+Patient: No, I haven't been.
+Doctor: I see you have asthma, have you had any medication for this?
+Patient: No, I haven't had anything.

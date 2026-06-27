@@ -1,0 +1,1 @@
+Efficiency of atomic orbital interactions is determined from the overlap (a measure of how well two orbitals constructively interact with one another) between two atomic orbitals, which is significant if the atomic orbitals are close in energy.

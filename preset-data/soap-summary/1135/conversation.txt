@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1135
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I'm here to take your social history. So, tell me about yourself. I was taking drugs. I tried all the methods, mainly I was using inhalation and I V drugs. Right now, you are on methadone, right? Yes. I'm also going to the psychiatry department for my depression and these drug issues. What is your living status? I live with my roommate.

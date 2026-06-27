@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0762
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Bad stomach pain on the right side
+- Severity: 7/10 at worst, currently 5/10
+- Duration: Since last week
+- Associated symptoms: None explicitly mentioned
+- Relevant medical history: Patient has diabetes and takes Micronase daily
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Concerns: Patient wants to understand the cause of the stomach pain
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- Further evaluation to determine the cause of the stomach pain.

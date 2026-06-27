@@ -1,0 +1,7 @@
+source:      pnas
+side:        simple
+readability: 3.7
+split:       dev
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-easy' -> 'proteasome'

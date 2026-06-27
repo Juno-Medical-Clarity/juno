@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2054  |  gem_id: gem-cochrane-simplification-train-2055  |  doi: 10.1002/14651858.CD008130.pub2
+
+We searched for randomised controlled trials that compared early movement with delayed movement of the elbow after elbow fracture. We included one trial reporting results at times ranging from two to 47 months for 81 people who had had an elbow fracture that involved the head of the radius. The evidence from this trial is of very low quality. The trial found no important differences between early and delayed mobilisation in the numbers of participants with pain or limitations in their range of elbow motion. All participants were reported as being able to use their arms for full activities of daily living and none had changed their occupation or lifestyle. There was no mention of fracture complications. We concluded that there was a lack of reliable evidence to answer the question of whether early mobilisation improved function without increasing complications in adults with elbow fractures.

@@ -1,0 +1,5 @@
+pmid:        27151921
+question:    15
+adaptation:  adaptation1
+title:       Double Knockout of the Na+-Driven Cl-/HCO3- Exchanger and Na+/Cl- Cotransporter Induces Hypokalemia and Volume Depletion
+sentences:   11

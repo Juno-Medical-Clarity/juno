@@ -1,0 +1,10 @@
+source:      pnas
+side:        simple
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [6:8] 'medical-jargon-google-hard' -> 'inhibited proteasomes'
+  [10:11] 'general-complex' -> 'sequestered'
+  [13:14] 'medical-jargon-google-easy' -> 'aggresome'
+  [20:22] 'medical-jargon-google-easy' -> 'mammalian cell'

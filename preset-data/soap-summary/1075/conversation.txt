@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1075
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you drink? Like, every day? No, just in general. No, I don't drink at all. Do you smoke? No, I don't do that at all, either.

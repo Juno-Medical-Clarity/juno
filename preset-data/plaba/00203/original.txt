@@ -1,0 +1,12 @@
+Corticosteroids have been used for decades to modulate inflammation therapeutically, yet there is a paucity of data on their effects in humans.
+We examined the changes in cellular and molecular immune system parameters, or "immunome", in healthy humans after systemic corticosteroid administration.
+We used multiplexed techniques to query the immunome in 20 volunteers at baseline, and after intravenous hydrocortisone (HC) administered at moderate (250 mg) and low (50 mg) doses, to provide insight into how corticosteroids exert their effects.
+We performed comprehensive phenotyping of 120 lymphocyte subsets by high dimensional flow cytometry, and observed a decline in circulating specific B and T cell subsets, which reached their nadir 4-8 hours after administration of HC.
+However, B and T cells rebounded above baseline 24 hours after HC infusion, while NK cell numbers remained stable.
+Whole transcriptome profiling revealed down regulation of NF-κB signaling, apoptosis, and cell death signaling transcripts that preceded lymphocyte population changes, with activation of NK cell and glucocorticoid receptor signaling transcripts.
+Our study is the first to systematically characterize the effects of corticosteroids on the human immunome, and we demonstrate that HC exerts differential effects on B and T lymphocytes and natural killer cells in humans.
+Fauci et al. reported that 400 mg and 100 mg doses of HC cause a transient nadir in circulating peripheral blood lymphocytes at 4–6 hours and recovery to baseline after 24 hours.
+Our data are consistent with these observations.
+We also observed differential effects of the two steroid doses on lymphocyte recovery at 24 hours, with total T cells, CD4+ T cells, and B cells rebounding above baseline after the 250 mg dose and total NK cells showing no increase above baseline at 24 hours.
+HC induced a rapid decline in circulating monocytes and mRNAs related to innate immune signaling as early as one hour after infusion.
+These effects preceded neutrophil demargination and lymphocyte depletion.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0196  |  gem_id: gem-cochrane-simplification-validation-197  |  doi: 10.1002/14651858.CD003183
+
+Ten different herbal medicines were tested in ten randomised trials in patients with chronic hepatitis C. The present systematic review found no significant antiviral effect of the herbal medicines when compared with placebo, but the data suggest that some herbal medicines in combination with interferon may have effects on the clearance of HCV RNA and on normalisation of liver enzymes. However, there is no strong evidence for any efficacy of these medicinal herbs for chronic hepatitis C due to the fact that most positive effects came from clinical trials with low methodological quality. Medicinal herbs for hepatitis C virus infection should not be used outside well-designed, randomised clinical trials.

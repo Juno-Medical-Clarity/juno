@@ -1,0 +1,14 @@
+Increased blood levels of homocysteine, a specific chemical, may be a risk factor for high blood pressure.
+A specific mutation in DNA (C677T) encoding methylenetetrahydrofolate reductase (MTHFR), a protein that transforms homocysteine, greatly influences hyperhomocysteinemia, or high blood levels of homocysteine. This condition results in damage to cells that line the heart and blood vessels.
+Blood pressure medication called angiotensin-converting enzyme (ACE) inhibitors seem to repair damage to cells lining the heart and blood vessels and restore blood vessel widening.
+The co-existence of varied DNA for drug-digesting enzymes, targets, target sites, and transporters may affect drug effect.
+This study investigates if short-term blood pressure control by benazepril, an ACE inhibitor, was affected by variation in the DNA sequence for the C667T MTHFR gene.
+444 patients with high blood pressure, aged 27 to 65 years, without any high blood pressure therapy within 2 weeks were included.
+All of them swallowed benazepril at a single daily fixed dose of 10 mg for 15 consecutive days.
+Blood pressures were measured at start and on the 16th day of treatment.
+Among them, the gene sequence for MTHFR C677T varied.
+Diastolic blood pressure at the start and end were much higher for patients with a certain DNA sequence for the MTHFR C677T gene than patients with two other DNA sequences.
+We then divided all patients into 3 groups based on the distribution of blood pressure readings at the study's end.
+Compared to those with the lowest blood pressure measurements, the chances of having a certain DNA sequence for the MTHFR C667T gene among those with the highest blood pressure readings was 2.6 times higher.
+However, systolic blood pressure at the start and end was not linked to DNA sequences.
+DNA sequence variation for the MTHFR C667T gene affects diastolic blood pressure at the study's start and end in Chinese essential patients with high blood pressure.

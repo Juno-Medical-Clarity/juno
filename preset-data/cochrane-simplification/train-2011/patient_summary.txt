@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2011  |  gem_id: gem-cochrane-simplification-train-2012  |  doi: 10.1002/14651858.CD009991.pub2
+
+This review investigated the best available evidence for interventions aimed at preventing postnatal psychosis. Unfortunately, no studies were found that could be included. Nevertheless, this review raises many unanswered questions and strongly suggests that future research on postnatal psychosis is much needed. Despite a growing interest in women’s mental health, knowledge and research on postnatal psychosis is still very limited. Future well-designed, well-conducted and well-reported studies are necessary to help improve prevention of symptoms and treatment for women with postnatal psychosis. This plain language summary has been written by a consumer Benjamin Gray; Service User and Service User Expert. Rethink Mental Illness.

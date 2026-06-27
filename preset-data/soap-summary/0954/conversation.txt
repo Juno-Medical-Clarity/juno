@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0954
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, are you on any medication currently? Yes, I am taking Atenolol and Mevacor. Hm, and no allergy to any medicine? Not that I know of.

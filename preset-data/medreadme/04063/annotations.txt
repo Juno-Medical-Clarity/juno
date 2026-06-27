@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.15
+split:       test
+
+jargon_spans:
+  [3:8] 'medical-jargon-google-easy' -> 'CD3 + T - cells'
+  [10:11] 'medical-jargon-google-easy' -> 'pneumococci'
+  [12:13] 'medical-jargon-google-easy' -> 'necrosis'
+  [14:16] 'medical-jargon-google-easy' -> 'membrane permeabilization'

@@ -1,0 +1,21 @@
+Doctor: Hi there! I am Doctor Kirkland.
+Patient: Hi.
+Doctor: How are you feeling?
+Patient: I feel weird. Like I feel confused. I don't know how I got here.
+Doctor: That's okay. Do you remember what happened to you before you came here?
+Patient: No.
+Doctor: Can you tell me about your past medical history?
+Patient: Um.
+Doctor: Take your time.
+Patient: I can't think of what it is called. It's something to do with my brain.
+Doctor: Okay.
+Patient: My doctor knows what it is.
+Doctor: What is the name of your doctor?
+Patient: Doctor Frank.
+Doctor: Doctor X? Across the street?
+Patient: Yes, that is his name. I don't know if that is across the street or not.
+Doctor: I will have your nurse give him a call and get some background information from him.
+Patient: Okay.
+Doctor: Can you please give Doctor X a call and get mister Jones' medical history?
+Guest_clinician: Yes, of course.
+Doctor: Thank you.

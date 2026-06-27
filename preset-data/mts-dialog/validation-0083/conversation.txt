@@ -1,0 +1,6 @@
+Doctor: Let me give you some medication in your I V.
+Patient: Please make this all go away. I am feeling really sick like I am going to throw up.
+Doctor: Sure, sure. Nurse, please give him Norflex sixty M G, Zofran four M G, morphine sulfate four M G.
+Patient: Will I feel better after that?
+Doctor: Yes.
+Patient: I am feeling better after couple hours.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3345  |  gem_id: gem-cochrane-simplification-train-3346  |  doi: 10.1002/14651858.CD007339.pub2
+
+We found five randomised trials, which together included 336 participants; half received pentoxifylline, and the other half received placebo or no intervention. We performed this systematic review and statistical analyses but could not show firm evidence of beneficial effects of pentoxifylline on mortality or on complications of liver diseases in patients with alcoholic hepatitis. Pentoxifylline did appear to cause more serious and non-serious side effects. In order to help decide whether pentoxifylline should be used to treat alcoholic hepatitis or not, we need well-designed, well-conducted, large randomised clinical trials, with short-term (less than one month) and long-term (more than one month) data on benefits and harms.

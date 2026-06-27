@@ -1,0 +1,8 @@
+Histone deacetylase (HDAC) are enzymes that control transcription (the process of copying a segment of DNA into messenger RNA, or mRNA, for protein creation), but their specific functions in the kidney are unknown.
+Researchers discovered that the human kidney uses class I HDACs to activate or build molecules or proteins.
+The slowing or stopping of class I HDACs from the kidney medulla region in rats during high-salt feedings results in diseases such as hypertension (high blood pressure) and hypokalemia (low levels of potassium in the blood).
+Three new animal studies are used to determine that HDAC1 and HDAC2 in the kidney epithelium (cells that cover the inner surface of organs) are necessary for maintaining electrolyte (minerals in the body) balance when the body takes in increased sodium.
+Additionally, epithelial HDAC1 and HDAC2 are necessary for activating many sodium or water transporters and channels across cells.
+In reviewing all relevant studies of serious side effects connected with clinical HDAC inhibitor use, researchers found that HDAC inhibitors (molecules or enzymes that block actions of an enzyme protein) increased the chance of experiencing fluid-electrolyte disorders (a group of conditions caused by a temporary disturbance in the body's levels of fluids and electrolytes), such as hypokalemia.
+This study provides a greater understanding of potential serious side effects with HDAC inhibitors, which may be fatal to very ill patients.
+In conclusion, HDACs from the kidney provide a link between the environment, such as consuming high-salt diets, and regulating processes to stay in fluid-electrolyte balance.

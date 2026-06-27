@@ -1,0 +1,12 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'TcSMUG L products'
+  [8:12] 'medical-jargon-google-easy' -> 'mucin - type glycoconjugates'
+  [17:22] 'medical-jargon-google-easy' -> 'insect - dwelling epimastigote forms'
+  [23:25] 'medical-jargon-google-easy' -> 'Trypanosoma cruzi'
+  [27:29] 'medical-jargon-google-easy' -> 'etiological agent'
+  [30:32] 'medical-jargon-google-easy' -> 'Chagas disease'

@@ -1,0 +1,43 @@
+# SOAP Notes — Sample 0017
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with right wrist pain after tripping and falling onto hand last night at 10 PM (fell from standing height onto concrete, landing on right hand)
+- Sharp pain at base of thumb and wrist (rates pain 3/10 at rest, 9/10 with movement)
+- Swelling and bruising present at base of thumb on dorsal aspect of wrist
+- Pain worse with wrist flexion/extension and thumb movement, better with NSAIDs (anti-inflammatories) 
+- Difficulty with ADLs (activities of daily living) due to pain (e.g. texting)
+- Denies head injury, LOC (loss of consciousness), numbness/tingling in hand, fever, chills, headache, dizziness, vision/hearing changes, GI (gastrointestinal) symptoms
+
+PMHx:
+- Asthma (well-controlled, uses orange inhaler - Bayme)
+- Meds: multivitamin, vitamin D
+- Surgical Hx: tonsillectomy, wisdom teeth extraction, C-section (no complications)
+- No prior right hand injuries or fractures
+
+FHx:
+- Uncle and grandfather with MI (myocardial infarction) in 60s
+
+SocHx: 
+- Works in restaurant, recently restarted job (concerned about impact of injury on work duties)
+- Lives alone in apartment
+- Denies smoking (never smoked due to asthma)
+- Alcohol: 2-3 glasses of wine/day (2 bottles/week)
+- Denies recreational drug use
+
+Objective:
+- Swelling and bruising at base of thumb on dorsal wrist (not warm to touch)
+- Tenderness to palpation at base of thumb 
+- Reduced thumb ROM (range of motion), unable to make full fist
+- Pain with wrist flexion/extension
+- Distal joints of thumb non-tender
+- No pain in fingers or elbow
+
+Assessment:
+- Suspect scaphoid fracture given mechanism of injury (FOOSH - fall on outstretched hand) and exam findings (snuffbox tenderness, swelling/bruising at thumb base, pain with wrist ROM)
+
+Plan:
+- X-ray right wrist and thumb to evaluate for fracture
+- Splint or cast depending on X-ray results
+- Follow-up based on X-ray findings to determine duration of immobilization
+- Counseled on reducing alcohol intake to max 2 glasses wine/day

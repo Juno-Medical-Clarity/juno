@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1210
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Bellyache
+- Duration: It's been a while
+- Severity: Not specified
+- Associated Symptoms: Not specified
+- Relevant Medical History: Not mentioned
+- Family History: Not mentioned
+- Allergies: Not mentioned
+- Other Concerns: Not mentioned
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

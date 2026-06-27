@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1967  |  gem_id: gem-cochrane-simplification-train-1968  |  doi: 10.1002/14651858.CD006996.pub2
+
+The review authors searched the medical literature for clinical trials that compared pimozide to other drugs, or a dummy drug (placebo), for treating tics in patients with Tourette Syndrome. The trials identified showed that pimozide was more effective at reducing tics than placebo. It was slightly less effective than the drug haloperidol, but showed fewer side effects. There were no important differences between pimozide and risperidone for either reduction of tics or side effects. In future, if trials could be run for longer, it would help the investigation of the nature of side effects caused by these drugs.

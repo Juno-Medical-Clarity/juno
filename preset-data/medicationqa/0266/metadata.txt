@@ -1,0 +1,5 @@
+drug_focus: aripiprazole
+question_type: Dose
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=394ea4a4-3991-4f98-b38f-56e9335d66b3
+sample_id: 0266

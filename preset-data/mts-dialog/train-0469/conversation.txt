@@ -1,0 +1,31 @@
+Doctor: So, you are here to review your sleep study results, right?
+Patient: That's right.
+Doctor: First let's go back to your medical history a little bit and then we will continue with the result. Patient: Sure.
+Doctor: So, you first came to our Pulmonary Clinic, and you were suffering with dyspnea even on minimal exertion. At that time, we evaluated you and we realized that there was some evidence of irregular sleep and daytime fatigue. At that time you also complained of nighttime choking episodes which got less intense over the past many months.
+Patient: That's right. I was then scheduled for the overnight sleep study to be evaluated for interruptions in my sleep and here we are today to discuss results.
+Doctor: Sure. But first tell me, how is your sleeping routine like?
+Patient: It is consistent. I go to bed anytime between nine to ten at night and wake up in the morning around five to six.
+Doctor: Are you able to sleep as soon as you go to bed?
+Patient: No, it's hard for me to start that sleeping process and then I'm awake in like every one or two hours throughout the night. I keep on tossing and turning throughout the night. I always find my sheets out of order when I wake up.
+Doctor: How would you compare your sleep here in the lab and at your home?
+Patient: I would say I slept better in the laboratory than I do at home.
+Doctor: How do you feel when you wake up in the morning?
+Patient: Honestly, I feel tired. Sometimes I also have this dull headache.
+Doctor: Do you snore?
+Patient: I don't know for myself, but yeah, my daughter was teasing me another day that I was snoring and was talking in my sleep.
+Doctor: Did you ever feel that you have difficulty breathing while you are asleep?
+Patient: No. But I used to cough a lot in the middle of the night.
+Doctor: You said you used to, so it is not anymore?
+Patient: Yeah, I haven't been coughing for the last few weeks.
+Doctor: How's your daily routine? Do you nap in the daytime?
+Patient: I spent a lot of time reading and watching T V. Sometimes I doze off while doing that. Not regular, but I do take nap sometimes in between two to three in afternoon and also in the evening hours.
+Doctor: Do you smoke?
+Patient: Oh yes, I take around one to two packs of cigarettes each day mainly after dinner.
+Doctor: Have you noticed any change in your weight?
+Patient: My weight always keeps fluctuating. I remember I was at my maximum weight of two hundred and sixty pounds around one year ago.
+Doctor: If that was your maximum how is your weight now?
+Patient: Now it is down by approximately thirty pounds.
+Doctor: So, for your health care, you are coming here in the outpatient psychiatry and also going to your maintenance clinic, right?
+Patient: Yes, that's right.
+Doctor: Your current medications include Methadone, Trazodone, and Seroquel.
+Patient: That sounds right.

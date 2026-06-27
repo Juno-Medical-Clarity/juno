@@ -1,0 +1,234 @@
+# Smith Collection Transcript: RES0034
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Hi there i was just hoping to ask you a few questions today but i was wondering if you could tell me what brought you in today
+
+Patient: I am just calling about my daughter shes been sick over the last few days she has fever and a cough
+
+Doctor: I see ok when did the fever and cough start
+
+Patient: So they started around three to four days ago and around the same time she was also having like a runny nose
+
+Doctor: OK and has the fever and cough been present the whole time
+
+Patient: uh yeah i would say they started around the same time and ah they have been going on for the last three and a half to four days
+
+Doctor: OK so has there been a period when she hasnt had a fever or a cough
+
+Patient: uh no every time ive measured it she has had a fever and shes been coughing for the last few days hasnt really changed
+
+Doctor: OK can you think of anything leading up to these symptoms
+
+Patient: uh no she was she was fine just three to four days ago like before that she was her playful self no issues but yeah its for the last couple of days just this nonstop cough and the fevers is whats really worrying me
+
+Doctor: OK uh have the symptoms have gotten worse or stayed the same
+
+Patient: I would say the fever has been getting a little bit worse over the last like especially today but the cough coughing is about the same as what it was when it first started three days ago
+
+Doctor: OK has she been sick like this before
+
+Patient: Shes she often gets sick like her brother goes to daycare and he brings a lot of bugs from there and every time he gets sick she also gets sick the last time she had like a similar cough was
+
+Doctor: Around two months ago but at that time i wasnt that worried because she didnt have any fevers
+
+Patient: OK um have you has there been anything that youve tried to help with the cough or fever
+
+Doctor: uh tylenol i gave her tylenol it did help her a little bit but then the fever came right back uhm say like a few hours later
+
+Patient: OK and anything you notice thats made the cough or fever worse over the last three or four days
+
+Doctor: Not anything that i know of her fevers been getting worse but i dont really know why that is
+
+Patient: OK uh has she been having any other symptoms
+
+Doctor: um other than like yeah she had that runny nose when it first started and then shes also been having some diarrhea
+
+Patient: OK and when did the diarrhea start
+
+Doctor: I think i would say it started around two days ago shes like every time i change her diaper she would have like 45 different diaper changes throughout the day and they they seem pretty liquid so i
+
+Patient: Think yeah shes been having diarrhea for the last two days
+
+Doctor: OK uh you mentioned liquid appearing stool what would you say say so i guess could you comment on the consistency and colour
+
+Patient: Consistency id say its pretty watery like diarrhea and colour i didnt really think theres any changes in in the colour
+
+Doctor: OK so you didnt think there was any blood in the stool
+
+Patient: No no no i didnt see any blood
+
+Doctor: OK as for the fever what was the maximum temperature that you noted and how did you check it
+
+Patient: So i used we have just a regular non digital thermometer in her ear and her temperature today was around 103 degrees fahrenheit
+
+Doctor: OK uh did you notice any tugging or pulling at her ear
+
+Patient: No no she doesnt seem to have any irritation there
+
+Doctor: OK uh how about any vomiting or regurgitation
+
+Patient: No shes been keeping food down no issues there
+
+Doctor: OK and notice any discharge from either eye
+
+Patient: uh no
+
+Doctor: How about any discharge from ears
+
+Patient: Not that ive noticed no
+
+Doctor: Notice any rashes
+
+Patient: uh no i didnt not know like new rashes no
+
+Doctor: OK and how is she been in terms of mood or or behaviour
+
+Patient: Oh shes been pretty like shes not herself over the last few days shes been crying a lot more just very irritable
+
+Doctor: OK would you say inconsolable at times
+
+Patient: Sometimes like yesterday like she i couldnt get her to stop crying
+
+Doctor: OK and uh i know you said no vomiting but has she been coughing up any sputum
+
+Patient: Yeah i would say uh this green slimy content yeah its like green and slimy
+
+Doctor: OK um how much would you say uhm like a cup or more
+
+Patient: I would say probably like at least at least a couple spoonfuls at a time she would cough up
+
+Doctor: OK and did you notice any blood in it
+
+Patient: No i didnt notice any blood at all
+
+Doctor: OK and with the cough have you noticed any difficulties breathing
+
+Patient: uh i dont know if its difficulty breathing but i have noticed sometimes shes like breathing faster than normal like taking a lot more breaths
+
+Doctor: I see ok uh is she having troubles with drooling or your trouble speaking
+
+Patient: uh no i havent noticed that
+
+Doctor: OK and does her voice sound normal to you
+
+Patient: Yeah i think her note her voice hasnt really changed that much
+
+Doctor: OK um with the noticing the faster rate of breathing is the breathing noisy at all
+
+Patient: uh no like shes not wheezing or anything
+
+Doctor: OK and do you notice any like retraction of the skin between her ribs when breathing
+
+Patient: uh so like uhm like what do you mean by that
+
+Doctor: Like just so when shes breathing in and out is she generating a lot of force and effort to really kind of suck in and blow out so you can kind of see impressions over the ribs
+
+Patient: uh no i i dont think ive noticed that no
+
+Doctor: OK and and have you noticed any blueish discolouration around her lips or mouth
+
+Patient: uh no
+
+Doctor: OK and any urinary problems
+
+Patient: uh no shes peeing fine
+
+Doctor: OK and how has she been sleeping the last few days
+
+Patient: She hasnt really been sleeping in between the crying and like just being so irritable i think shes just very uncomfortable when shes trying to get to sleep so
+
+Doctor: I would say not like maybe a couple hours for the last few nights
+
+Patient: OK any evidence of seizure or limb jerking
+
+Doctor: uh no not that ive noticed
+
+Patient: No ok and and have you notice an her being like really lethargic at all
+
+Doctor: uh shes not herself and shes still like pretty active like shes she just seems really unhappy and irritated but no she still has energy
+
+Patient: OK and uh is she drinking yeah a lot more fluids or or a lot less how is she tolerating oral intake
+
+Doctor: I would say i think shes more on the dryer side like she her mouth is very dry her lips are like all cracked and she it seems that shes drinking
+
+Patient: Less water too
+
+Doctor: I see ok and uh how many wet diapers would you say in the last 24 hours
+
+Patient: um yeah its difficult to say i think i like yesterday changed four to five times they were all diarrhea so not really sure but maybe around 5
+
+Doctor: OK and have you guys traveled anywhere recently
+
+Patient: No no weve been here
+
+Doctor: OK so next just some questions about past medical history uh has she had any medical problems in the past
+
+Patient: The only thing i could think of was after she was born she had to be given the light treatment for like jaundice but after that no other problems
+
+Doctor: OK and any prior surgeries
+
+Patient: No
+
+Doctor: Any previous hospitalizations
+
+Patient: No just the light treatment but other than that nothing
+
+Doctor: OK and throughout pregnancy were there any complications
+
+Patient: No my pregnancy was completely normal no complications during the pregnancy
+
+Doctor: OK so no gestational diabetes or hypertension
+
+Patient: uh no
+
+Doctor: OK and uh were you sick at all at any point with infectious symptoms
+
+Patient: No everything came back clear all the tests were normal
+
+Doctor: OK and um any allergies to medications
+
+Patient: No allergies
+
+Doctor: OK and is she currently taking any medications
+
+Patient: No just tried the tylenol but it didnt really seem to work
+
+Doctor: OK and has she been around anybody sick recently
+
+Patient: Just her big brother who goes to daycare was also like a bit sick with a cough and some runny nose for the last four days but uhm he didnt have a fever and he seemed to recover pretty fast but seems she may have caught it from him
+
+Doctor: OK and anybody in the family um have any similar symptoms right now i guess besides her brother
+
+Patient: No just just her and her brother
+
+Doctor: OK and and in regards to birth birth history was it a vaginal delivery or csection
+
+Patient: It was a normal vaginal delivery at 38 weeks there were no problems after the delivery or before the delivery
+
+Doctor: OK and uh are her immunizations up to date
+
+Patient: Yeah uh all our immunizations are up to date
+
+Doctor: OK and um in regards to growth and development have you had any concerns
+
+Patient: uh no weve been getting her checked regularly it seems that shes been growing well and developing well
+
+Doctor: OK and who is the primary caregiver for at home
+
+Patient: Primary caregiver right now im staying home with her and her brother goes to daycare so yeah it would be me
+
+Doctor: OK uh and could you tell me about her eating habits and typical appetite
+
+Patient: uh so now like she is able to eat like everything like vegetables fruits breads and meat but over the last few days she has been just irritable with everything so even eating food has just not been great for the last few days
+
+Doctor: OK and when was her last checkup
+
+Patient: So it was around one month ago and everything was fine then no concerns from the doctor
+
+Doctor: OK thank you

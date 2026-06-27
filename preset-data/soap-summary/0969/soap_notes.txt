@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0969
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a truck driver.
+- Patient smokes cigars.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No assessment or clinical impressions provided.]
+
+Plan:
+- [No plan or follow-up actions mentioned.]

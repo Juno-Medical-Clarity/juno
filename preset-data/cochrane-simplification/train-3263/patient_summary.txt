@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3263  |  gem_id: gem-cochrane-simplification-train-3264  |  doi: 10.1002/14651858.CD003195.pub3
+
+Eight trials were found, which included around 1100 people, although information was only available for 1036 women. There was not enough evidence to determine whether the urodynamic tests led to better outcomes. There was some evidence that urodynamic testing increased the number of people given drugs but not the number of people undergoing surgery. This did not result in any difference in the number of people who leaked urine, and it was not known whether they had a better quality of life. More research is needed in which people are randomised to having treatment decisions based on either their symptoms and examination alone or after taking into account the extra information provided by urodynamic tests.

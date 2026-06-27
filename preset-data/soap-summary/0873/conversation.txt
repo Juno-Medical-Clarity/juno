@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0873
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you married, ma'am? Yes, to my wonderful husband. Does he help you out around the house? Yes, he is just wonderful. So, do you drink or smoke? No, I don't do any of that. How about more illicit substances, do you use any of that? No, absolutely not.

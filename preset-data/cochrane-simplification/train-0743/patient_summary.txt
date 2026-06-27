@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0743  |  gem_id: gem-cochrane-simplification-train-744  |  doi: 10.1002/14651858.MR000003.pub2
+
+This review was carried out in order to assess the effect of the various processes of peer review on the quality of funded research. Only ten studies were included and described in the review. We were unable to find comparative studies assessing the actual effect of peer review procedures on the quality of the funded researchThere is little empirical evidence on the effects of grant giving peer review. Experimental studies assessing the effects of grant giving peer-review on importance, relevance, usefulness, soundness of methods, soundness of ethics, completeness and accuracy of funded research are urgently needed. Practices aimed to control and evaluate the potentially negative effects of peer review should be implemented meanwhile.

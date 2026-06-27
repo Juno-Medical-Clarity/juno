@@ -1,0 +1,1 @@
+On 7 June 1742, the Prussian mathematician Christian Goldbach wrote a letter to Leonhard Euler in which he suggested the following conjecture, which would later be called Goldbach 's strong conjecture: Every integer greater than 2 can be written as the sum of two primes. He considered 1 to be a prime number, a convention subsequently abandoned.

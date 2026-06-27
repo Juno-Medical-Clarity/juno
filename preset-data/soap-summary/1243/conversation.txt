@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1243
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you today? I am doing okay. Do you have any medical conditions? I have diabetes. When were you diagnosed with diabetes? It was two thousand and three, I think. I also have high blood pressure, asthma and high cholesterol. Okay.

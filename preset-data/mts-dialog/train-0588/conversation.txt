@@ -1,0 +1,18 @@
+Doctor: Hello. How are you doing?
+Patient: Not doing that good. I'm here so that you can help me.
+Doctor: Tell me how can I do that? What's bothering you?
+Patient: I have gestational diabetes and I'm here for consultation related to my diet. No matter what I eat, I'm kind of scared that it will spike up my numbers.
+Doctor: Hold on, hold on. First, tell me how old are you?
+Patient: Sorry. I am thirty eight.
+Doctor: Okay, now tell me what are you afraid of?
+Patient: No matter what I eat, my number goes up and I just, I'm so afraid of eating anything now.
+Doctor: Do you work?
+Patient: I do, at Walmart. I try not to eat anything whenever I'm on the third shift.
+Doctor: Tell me about the eating habits. Do you prepare meals at home, or do you order from outside?
+Patient: Well, before all this, I mean this gestational diabetes and pregnancy, I used to eat out a lot. Almost like every day. I like to eat rice a lot. It is like the staple food for me.
+Doctor: You said you don't try to eat, so are you facing any symptoms because of not eating?
+Patient: Yeah, whenever I'm on my late shift, I work from ten in the night to seven in the morning. I try to avoid eating. And then I feel very fatigued and tired all the time. I also have young kids at home, so after finishing my duty here at in the morning I go home and then there are young children who keep me busy.
+Doctor: What is your sleeping pattern? How much are you sleeping throughout the day?
+Patient: Around two to four hours at a time.
+Doctor: When do you test for ketones?
+Patient: Normally, it is the first thing that I do when I reach back home from my shift in the morning.

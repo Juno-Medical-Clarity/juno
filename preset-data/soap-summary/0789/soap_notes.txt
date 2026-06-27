@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0789
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 41-year-old female.
+- Reports feeling good for the last two days.
+- Can move all four limbs.
+- No issues with breathing.
+- Patient expressed concern about going back to the operating room (O.R.) but agreed to the procedure in the current location.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Patient is a candidate for halo vest placement following anterior cervical discectomy, two-level corpectomy, spinal decompression, and fusion.
+
+Plan:
+- Proceed with P M T halo vest placement using morphine and Versed.
+- Use local anesthetic (xylocaine and epinephrine) in a volume of 15-20 ccs.
+- Move the patient to S I C U room one.

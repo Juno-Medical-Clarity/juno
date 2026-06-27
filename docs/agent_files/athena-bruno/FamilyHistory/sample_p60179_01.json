@@ -1,0 +1,47 @@
+{
+  "historyunknown": false,
+  "relatives": [
+    {
+      "relation": "Mother",
+      "relationkeyid": 1,
+      "problems": [
+        {
+          "onsetage": 32,
+          "lastmodifiedby": "INTF-114607987",
+          "snomedcode": 9014002,
+          "lastmodifieddatetime": "07/21/2025 22:56:19",
+          "description": "Psoriasis",
+          "problemid": 6032
+        }
+      ]
+    },
+    {
+      "relation": "Maternal Aunt",
+      "relationkeyid": 1,
+      "problems": [
+        {
+          "onsetage": 28,
+          "lastmodifiedby": "INTF-114607987",
+          "snomedcode": 235919008,
+          "lastmodifieddatetime": "07/21/2025 22:56:20",
+          "description": "Gallstone",
+          "problemid": 6033
+        }
+      ]
+    },
+    {
+      "relation": "Father",
+      "relationkeyid": 1,
+      "problems": [
+        {
+          "onsetage": 54,
+          "lastmodifiedby": "INTF-114607987",
+          "snomedcode": 443502000,
+          "lastmodifieddatetime": "07/21/2025 22:56:20",
+          "description": "Coronary atherosclerosis",
+          "problemid": 6034
+        }
+      ]
+    }
+  ]
+}

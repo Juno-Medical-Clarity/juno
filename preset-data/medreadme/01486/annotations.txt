@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'menopausal'
+  [14:15] 'medical-jargon-google-easy' -> 'menopause'
+  [23:24] 'medical-jargon-google-easy' -> 'menopausal'

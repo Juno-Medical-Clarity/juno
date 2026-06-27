@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0219  |  gem_id: gem-cochrane-simplification-train-220  |  doi: 10.1002/14651858.CD003595.pub2
+
+This review also showed that in patients with typical or diarrhoea associated haemolytic uraemic syndrome, there are no interventions that are superior to supportive therapy which includes control of fluid and electrolyte imbalance, use of dialysis if required, control of hypertension and blood transfusion as required.

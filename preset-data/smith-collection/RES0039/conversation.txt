@@ -1,0 +1,222 @@
+# Smith Collection Transcript: RES0039
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I just wanted to start with what brings you here today to the family clinic
+
+Patient: Hi this morning i read after i woke up by i coughed up some phlegm and there was some blood in it and it it totally scared me
+
+Doctor: OK and was this the first time that happened
+
+Patient: Uhm yeah ive never i never noticed blood in my sputum before
+
+Doctor: OK but have you been coughing recently
+
+Patient: uh yeah i have uh had a cough recently leading up to this
+
+Doctor: OK and how long have you had the cough for
+
+Patient: Uhm ive had it for uhm yeah about about four weeks
+
+Doctor: Wow four weeks ok do you know if you did anything prior to that any new exposures or being around someone ill like anything like that that might have caused your cough
+
+Patient: Yeah i was just down in a i went to haiti on a on a trip for a for a volunteer program with my school and i dont know i definitely notice there is a lot of people down there coughing
+
+Doctor: OK and were you at all living like close quarters or were you crammed into like like smaller spaces at all when you were there
+
+Patient: Yeah we were kind of like living with the locals while we while we were there it was part of the experience for volunteering i was there for almost two months as part of part of my my summer break through university
+
+Doctor: OK and did you notice uh at all any potential exposures to tuberculosis anyone there that had tuberculosis or found out later
+
+Patient: Yeah there were definitely some people around that i heard of who who mentioned tuberculosis but i dont know if anybody specifically who had it
+
+Doctor: OK and the cough that youve been having for the last four weeks at is it like a wet cough are you producing any sputum or phlegm or is it more of a dry cough
+
+Patient: uh i have been producing some phlegm um but its been just kind of white yellowish
+
+Doctor: Up until this morning
+
+Patient: Yeah or moreso clear actually up until today where i saw some blood
+
+Doctor: OK and how much blood was in the phlegm was it like a significant amount it filled the whole production or just little streaks
+
+Patient: um it was pretty red it ah yeah it was bright red and it was covering the the issue
+
+Doctor: OK and have you had any similar episodes before
+
+Patient: Ive never brought up blood before
+
+Doctor: And after this morning was that the only time you had that or did you did it recur at all
+
+Patient: um it was just that time just this morning on the tissue and then a little bit in the toilet and it looked like a lot in the in the water
+
+Doctor: OK i see and how often are you coughing in like an average day are you coughing throughout the day or does it come and go
+
+Patient: Uhm its been pretty severe through throughout the day ive been just coughing or coughing a ton
+
+Doctor: OK anything that makes your coughing go away or makes it worse at all
+
+Patient: Notnothing seems to help ive tried various over the counter medications and and stuff for for cough and nothing has seemed to help it
+
+Doctor: OK and are you having any other symptoms at all like shortness of breath sore throat runny nose anything like that
+
+Patient: Uhm nothing like like that i mean the back of my throat might feel a little itchy from the coughing but not really sure
+
+Doctor: OK are you having any headaches or nausea or vomiting
+
+Patient: Nothing like well a little bit of nausea maybe but no vomiting
+
+Doctor: OK how often you getting nausea
+
+Patient: uh its coming after like if im having a really big cough coughing fit i could feel a little nauseous after but it doesnt last very long
+
+Doctor: OK are you having any fevers or chills
+
+Patient: Yeah ive been having ah so fevers throughout the day but feeling really hot and and really sweaty at night
+
+Doctor: OK how often are you getting night sweats
+
+Patient: Uhm also a few times this past week ive what woke up soaked
+
+Doctor: OK and have you at all measured when you felt measured your temperature when you felt like these chills and night sweats
+
+Patient: No i havent measured my temperature yet
+
+Doctor: OK have you noticed at all uh any increased fatigue throughout the day
+
+Patient: Yeah but ive definitely been more more tired i havent been able to concentrate on umm on my schoolwork
+
+Doctor: OK and um have you been having any shortness of breath
+
+Patient: Just after the like coughing really but otherwise ah no
+
+Doctor: Any chest pain
+
+Patient: No chest pain
+
+Doctor: Any feeling that your heart is racing
+
+Patient: No nothing like that
+
+Doctor: OK any swelling in your limbs at all
+
+Patient: No
+
+Doctor: OK any loss of sense of taste or smell
+
+Patient: uh no nothing like that
+
+Doctor: OK any changes in your bowel movements
+
+Patient: um no
+
+Doctor: OK any changes in your urination
+
+Patient: No
+
+Doctor: OK any changes at all in your sleep
+
+Patient: Uhm just been well i havent been sleeping as well waking up all sweaty and the cough is kept me up a little bit too
+
+Doctor: OK any changes in your appetite
+
+Patient: uh no ive been eating ok
+
+Doctor: Have you noticed at all any weight loss over the last few months
+
+Patient: Yeah i think im down like 15 pounds since the summer time which is great
+
+Doctor: OK have you tried to lose weight at all or is it just been completely unintentional
+
+Patient: uh well i i mean my my appendix was taken out a few months ago and so i guess after that i well maybe wasnt eating and eating as much but i mean i wasnt really trying to lose weight
+
+Doctor: OK and have you had any recent exposure to any fumes or dust or animals
+
+Patient: uh no my my parents have a dog at home but ive been away at school so
+
+Doctor: OK ok uh in terms of your overall health have you been diagnosed with any medical conditions before
+
+Patient: uh no im uh healthy
+
+Doctor: So like no asthma or anything like that
+
+Patient: No nothing like that
+
+Doctor: OK are you on any medications currently
+
+Patient: uh yeah i take an oral contraceptive pill
+
+Doctor: OK um and when did you start that
+
+Patient: Probably about five years ago
+
+Doctor: OK do you have any allergies to any medications or any environmental allergies at all
+
+Patient: uh yeah i think septra gives me a rash
+
+Doctor: OK um any previous hospitalizations
+
+Patient: No ive never been in the hospital before
+
+Doctor: OK any previous surgery so you said you had the appendix removed but anything else
+
+Patient: uh no the appendix was the only thing
+
+Doctor: OK any family history of asthma or any lung conditions any cancers that run in the family
+
+Patient: um yeah but well my grandfather had lung cancer but he smoked for his entire life and my mom has had diabetes for quite some time but no no lung problems
+
+Doctor: OK any heart attacks in the family or any autoimmune conditions
+
+Patient: No
+
+Doctor: OK and currently what is your living situation like
+
+Patient: So i live with uh four roommates here going to school
+
+Doctor: OK and so do you work right now or you just a student right now
+
+Patient: Just a student
+
+Doctor: OK and currently do you smoke
+
+Patient: Uhm imm smoke maybe maybe socially so maybe a pack of cigarettes a week at the at the most
+
+Doctor: OK and any recreational drug use like marijuana
+
+Patient: uh yeah ill smoke one or two joints on on the weekend with friends socially
+
+Doctor: OK yeah so yeah this uh the smoking marijuana or cigarettes make your symptoms worse at all
+
+Patient: Uhm it depends yeah sometimes i can it can bring on some more coughing
+
+Doctor: Yeah so yeah we always recommend cutting down or quitting smoking whenever whenever we see patients who are smoking especially like youre fairly young and you know your grandfather had history of lung cancer with smoking throughout the year so as early as we can quit smoking the better for the long term health of your lungs but whenever youre thinking of quitting or if you want any more resources about quitting just let me know we can set up a separate appointment for that
+
+Patient: OK that that sounds good yeah maybe maybe next appointment we can talk about that
+
+Doctor: OK sounds good um any uh so no recreational so just besides marijuana any other recreational drugs like cocaine or crystal meth anything of that sort
+
+Patient: Ah no well sometimes i at parties maybe a few times a year with friends will use ecstasy or something like that but thats only a few times a year
+
+Doctor: OK uh and any alcohol
+
+Patient: Yeah ill have a few drinks on the weekend with with friends usually like rum or beer
+
+Doctor: OK yeah so this is all the questions i had for you today any any questions or concerns or any ideas of what you think this might be
+
+Patient: Uhm i dont know im really concerned about the the blood that i brought up like i mean is this cancer or uh uh tuberculosis like one of those tuberculosis infections that i heard about while i was away
+
+Doctor: Yeah so definitely a cancer is pretty unlikely because youre fairly young and youve just recently started smoking but one of the things that were concerned about is your recent travel history being in close quarters so definitely we need to get a chest xray and we can even do a sputum culture to test for tuberculosis and then based on the results we might have to start you on like a whole antibiotic regiment if it does come back as tuberculosis yeah well well well get those investigations done first and then well go from there
+
+Patient: OK thank you
+
+Doctor: Well also get some blood work done as well so thatll be done before your next appointment
+
+Patient: Alright that sounds good thank you
+
+Doctor: Youre welcome

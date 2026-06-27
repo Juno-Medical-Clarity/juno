@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1076
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any drug allergies? Ah yes, I am allergic to... what's the name of the drug? It's called Napro- Naprosyn? Yes, Naprosyn.

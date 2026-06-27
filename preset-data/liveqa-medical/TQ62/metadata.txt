@@ -1,0 +1,17 @@
+qid: TQ62
+source_file: 1-133157025.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: The question concerns drug interactions such as the safety of taking Diclofenac with Isinopril or other NSAIDs.
+nlm_summary: Are there any drug-drug interactions between diclofenac and lisinopril or aleve or extra-strength Tylenol?
+
+focus_entities:
+  [F1] (DrugSupplement) diclofenac
+  [F2] (DrugSupplement) lisinopril
+  [F3] (DrugSupplement) aleve
+  [F4] (DrugSupplement) extra-strength Tylenol
+question_types:
+  [T1] INTERACTION
+  [T2] INTERACTION
+  [T3] INTERACTION

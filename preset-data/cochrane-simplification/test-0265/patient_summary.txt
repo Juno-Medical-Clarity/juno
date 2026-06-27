@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0265  |  gem_id: gem-cochrane-simplification-test-266  |  doi: 10.1002/14651858.CD012034.pub2
+
+We looked for all available evidence on this topic, finding just two studies. One of these included 306 people with dementia and an average age of 86 years, living in 16 nursing homes in France. The second study is still in progress and did not provide results for the review. The study did not assess areas important to us, such as the number of injuries sustained by staff or residents. It did, however, measure the impact of staff training on residents' level of aggression three months after the end of the training. Some measures of physical and verbal aggression showed reductions, but not all. The reliability of evidence available in the one included trial is very low and did not address important questions such as injury. Therefore, we cannot say whether de-escalation techniques are effective. The evidence is current to September 2017.

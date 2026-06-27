@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2605  |  gem_id: gem-cochrane-simplification-train-2606  |  doi: 10.1002/14651858.CD006475.pub2
+
+This review found that probiotics added to infant feeds may help prevent infant eczema, with one study suggesting the benefit may persist to four years of age. However, concerns regarding the quality of studies, inconsistency of findings between studies, and the fact that the benefits did not persist if restricted to infants with evidence of sensitisation to allergens, suggests that further studies are needed to confirm these results.

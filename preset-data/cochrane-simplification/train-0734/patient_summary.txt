@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0734  |  gem_id: gem-cochrane-simplification-train-735  |  doi: 10.1002/14651858.CD010107.pub3
+
+For the original review, we found six studies with 1342 participants. For this update we searched up to December 2014, but found no additional studies. Ibuprofen 400 mg plus high doses of codeine (25.6 mg to 60 mg) provided effective pain relief for over 6 in 10 (64%) of participants, compared with just under 2 in 10 (18%) of participants with placebo (high quality evidence). Adverse events occurred at similar rates with the ibuprofen/codeine combination and placebo in these single dose studies (moderate quality evidence). No serious adverse events or withdrawals due to adverse events occurred with the combination. It is important not to exceed the recommended dose for this combination painkiller.

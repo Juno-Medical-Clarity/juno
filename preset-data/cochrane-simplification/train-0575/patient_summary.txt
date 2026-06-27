@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0575  |  gem_id: gem-cochrane-simplification-train-576  |  doi: 10.1002/14651858.CD005544.pub2
+
+Trials of medications used to improve the breastmilk supply in mothers who have insufficient milk for their hospitalised preterm infants' needs have been reported in two randomised controlled studies involving 59 mothers. These two studies gave the women domperidone 10 mg three times a day when mothers had insufficient EBM, two to three weeks after delivery. These studies showed a modest improvement in EBM volume over the following one to two weeks. No side effects to mothers or infants were noted in these studies. These medications should only be considered in mothers who have received full lactation support and are more than 14 days post delivery but have insufficient EBM for their infants' needs.

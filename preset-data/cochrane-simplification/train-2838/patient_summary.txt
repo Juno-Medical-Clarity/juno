@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2838  |  gem_id: gem-cochrane-simplification-train-2839  |  doi: 10.1002/14651858.CD010392.pub2
+
+We included a total of 10 studies recruiting 6292 apparently healthy adults in this review. The findings of the review indicate that interventions can successfully support adults' attempts to become active and fitter, for example with personal counselling and advice, feedback and offering choices of exercise, and supervision. Outcomes are improved if the intervention comprises a specified type of physical activity and is supervised by a non-health professional using a combination of group and individual approaches. New physical activity can be maintained for up to at least one year and does not increase the risk of falls or exercise related injuries. More research is needed to establish which methods of exercise promotion work best in the long term to encourage specific groups of people to be more physically active.

@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [9:12] 'medical-jargon-google-easy' -> 'chronic pelvic pain'
+  [15:16] 'medical-jargon-google-easy' -> 'laparoscopy'
+  [19:21] 'medical-jargon-google-easy' -> 'pelvic pathology'

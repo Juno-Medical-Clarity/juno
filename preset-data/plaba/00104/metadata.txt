@@ -1,0 +1,5 @@
+pmid:        17990843
+question:    9
+adaptation:  adaptation1
+title:       Foreign bodies in the ear, nose, and throat
+sentences:   11

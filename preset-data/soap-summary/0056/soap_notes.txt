@@ -1,0 +1,38 @@
+# SOAP Notes — Sample 0056
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 5 yo F presents with right hip pain and limp x 2 days
+- Onset 2 days ago, no known trauma/injury
+- Pain at top of right leg/hip, worse with weight bearing (father has been carrying patient)
+- Missed school x 2 days due to pain
+- Hx of recent URTI (cough, rhinorrhea, possible fever) - resolved
+- Felt warm yesterday, no temp taken
+- Denies headache, vision/hearing changes, sore throat, cough, SOB, chest pain, abd pain, N/V/D/C, dysuria, rash, numbness/tingling, weakness, confusion
+- PMHx: Developmental dysplasia of the hips (DDH) at birth, treated with splint x 2 months, followed by ortho until 1 yo with normal development
+- Birth Hx: SVD at 39 weeks (breech), no complications
+- Developmental Hx: Normal, meeting all milestones
+- Meds: None
+- Allergies: NKDA
+- SocHx: Lives with parents (lawyer, music teacher) and older brother, non-smoking household
+- FHx: No heart/lung/autoimmune/musculoskeletal/neuro conditions
+
+Objective:
+- Right hip exam:
+- No visible swelling, erythema, atrophy, misalignment, or deformity
+- No pain with palpation of hip/knee
+- Able to move hip and knee through full ROM, pain mainly with weight bearing
+- Normal strength testing
+
+Assessment:
+- Right hip pain and limp in 5 yo F
+- DDx:
+1. Transient synovitis (most likely given recent viral illness, age, presentation)
+2. Septic arthritis (less likely, but cannot rule out without further workup)
+3. Legg-Calve-Perthes disease (less likely given acute onset)
+
+Plan:
+- Trial of ibuprofen for pain control
+- Close follow up in 1-2 days to reassess
+- Counsel on signs/symptoms to watch for that would warrant earlier reassessment (high fever, red/hot/swollen joint, worsening pain/inability to bear weight)
+- If no improvement or worsening, consider workup for septic arthritis vs Legg-Calve-Perthes

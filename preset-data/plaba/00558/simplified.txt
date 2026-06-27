@@ -1,0 +1,9 @@
+Pacemakers are electronic devices that stimulate the heart with electrical impulses to maintain or restore a normal heartbeat.
+In 1952, a physician named Zoll described an effective way of supporting patients with internal heart pacemaker activity and/or sending pulses through tissue by an artificial, electric, external pacemaker device.
+The pacing of the heart was accomplished by electrodes placed under the skin but could be maintained only for a short period.
+In 1957, complete heart block was treated using electrodes directly attached to the heart.
+These early observations started the idea that cardiac electrical failure (in which the heart cannot maintain a normal heart rate) can be controlled.
+It ultimately led to the development of the totally implantable (permanently under the skin) pacemaker by Chardack, Gage, and Greatbatch.
+Since then, there have been several advancements in pacemakers, and the modern-day permanent pacemaker is placed under the skin.
+There are 3 types of artificial pacemakers: Implantable pulse generators;  External, miniaturized, patient portable, battery-powered, pulse generators to temporarily control heart rates; Console battery or AC-powered devices or monitors with high-current external pads placed on top of the skin, or low-current inside the body for temporary pacing in uncoordinated contracting of the heart or at infrequent times.
+All heart pacemakers consist of 2 components: a pulse generator which provides the electrical impulse for stimulation on the heart muscle and 1 or more electrodes or leads which deliver the electrical impulse from the generator to the heart muscle.

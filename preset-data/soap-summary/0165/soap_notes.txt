@@ -1,0 +1,41 @@
+# SOAP Notes — Sample 0165
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with muscle pains throughout body (upper back, thighs, arms) x4 days, dry cough x3 days, chills and possible fever x2 days
+- Feeling of general weakness
+- Partial loss of taste noted today
+- No change in routine or strenuous activity prior to onset of symptoms
+- No joint pains, numbness/tingling, motor weakness, runny/stuffy nose, sore throat, SOB, chest pain, palpitations, calf pain, syncope/presyncope, bowel/bladder changes, N/V, appetite changes, headache, or confusion
+
+PMHx:
+- No chronic medical conditions
+- No prior hospitalizations or surgeries
+- No medications
+- Up to date with immunizations
+- Seasonal allergies (itchy eyes, runny nose, sneezing in spring) - current symptoms different
+
+FHx:
+- Uncle with MI in 50s
+- Father with HTN
+- No known cancers
+
+SocHx:
+- Occasional social smoking (few cigarettes on weekends)
+- Regular marijuana use (smoked) on weekends
+- Alcohol use: 3-4 beers/week, 2 glasses whiskey/week
+- Lives alone in apartment outside London
+- No known exposures to sick contacts
+- No recent travel
+
+Objective:
+- Vitals signs (not provided)
+- Physical examination (not performed)
+
+Assessment:
+- Likely viral infection (COVID-19 vs other)
+
+Plan:
+- COVID-19 swab ordered, isolate for 2 weeks pending results
+- Supportive care: hydration, nutrition, rest
+- Monitor for worsening symptoms or red flags (neurological symptoms, inability to move limbs) and seek emergency care if present

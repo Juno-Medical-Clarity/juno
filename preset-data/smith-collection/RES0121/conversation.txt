@@ -1,0 +1,164 @@
+# Smith Collection Transcript: RES0121
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: Yeah hi ive had this cough um for the past four days and it just cant it wont go away so i was just wondering if you know i can get something for it
+
+Doctor: Okay so uh so youve been having the cough for four days can you describe the cough a little bit is it like a dry cough or wet cough
+
+Patient: uh its dry
+
+Doctor: Its dry okay um are you coughing up blood at all
+
+Patient: No no blood
+
+Doctor: Okay are you bringing up any although youre not coughing are you bringing up any kind of sputum
+
+Patient: No no its its pretty its pretty dry
+
+Doctor: Okay um and any other symptoms at all besides the cough
+
+Patient: No nothing else
+
+Doctor: Okay and have you been sick at all recently with fever chills runny nose um any cold like symptoms
+
+Patient: um you know a week back i had a runny nose um and sometimes like a stuffy nose but that went away
+
+Doctor: Okay um and after that did you have any fevers at all
+
+Patient: No
+
+Doctor: Okay and has this happened to you before at all like a cough lasting more than four days
+
+Patient: Yeah its happened to me in the past um yeah it yeah it has um but its just more bothersome this time cause im coughing a lot more
+
+Doctor: Okay and is there anything that youve tried that has helped you relieve the cough at all
+
+Patient: I tried some overthecounter cough suppressants uh they dont seem to be working too well
+
+Doctor: I see and anything thats making your cough worse at all no
+
+Patient: No
+
+Doctor: Do you have any other symptoms like a sore throat runny nose headache anything like that
+
+Patient: No nothing like that
+
+Doctor: Okay have you been around anyone thats sick recently
+
+Patient: No
+
+Doctor: No um have you had any um have you traveled at all outside of the province or country at all recently
+
+Patient: Nope not outside the province
+
+Doctor: Okay and other than that are you having any symptoms of kind of muscle aches uh or anything like that
+
+Patient: uh no no muscle aches um nothing else that i can think of
+
+Doctor: Okay any shortness of breath
+
+Patient: No no shortness of breath
+
+Doctor: Is the cough like constant goes on throughout the day or is there a time that its worse
+
+Patient: uh its pretty its pretty constant
+
+Doctor: Okay and do you have any kind of um increased tired like getting more tired or fatigued
+
+Patient: um no
+
+Doctor: um any kind of chest pain or feeling that your heart is racing
+
+Patient: um no nothing like that
+
+Doctor: Okay any changes in your bowel movements any constipation or diarrhea
+
+Patient: No
+
+Doctor: Okay any um nausea or vomiting
+
+Patient: um nope nothing like that
+
+Doctor: Okay um any kind of uh changes in your sleep or appetite
+
+Patient: uh no
+
+Doctor: And um have you lost any significant weight recently
+
+Patient: No
+
+Doctor: No okay um otherwise are you healthy do you have any medical conditions at all
+
+Patient: uh no i dont im otherwise healthy
+
+Doctor: Otherwise healthy okay any allergies to any medications
+
+Patient: No
+
+Doctor: Any allergies to any environmental or any environmental factors
+
+Patient: No
+
+Doctor: Okay um any family history of any medical conditions related to the heart lungs any cancers at all
+
+Patient: uh no nothing like that
+
+Doctor: Okay alright um are you so what what is your living situation like right now
+
+Patient: I live in um an apartment by myself im a student
+
+Doctor: Okay um and are you working at all or are you a student seeming
+
+Patient: um i work part time i work as a barista
+
+Doctor: Okay and anyone anyone in your work environment or uh in your home environment or at school that has been sick around you
+
+Patient: Not that ive heard of no
+
+Doctor: Okay um and other than that do you smoke at all
+
+Patient: um no i well i used to smoke before i stopped last year
+
+Doctor: Last year okay and how long did you smoke for
+
+Patient: I smoked just a couple like two years
+
+Doctor: Okay yeah so congratulations thats a really great thing to do especially like right now with the pandemic going on and everything its earlier you stop its really good
+
+Patient: Thank you
+
+Doctor: Besides uh like smoking um do you use any recreational drugs like marijuana
+
+Patient: No
+
+Doctor: No okay and how about alcohol
+
+Patient: Nope i dont drink too much alcohol i drink like over the holidays
+
+Doctor: Okay and i forgot to ask you this earlier but any hospitalization or surgeries in the past
+
+Patient: No nothing like that
+
+Doctor: Nothing like that okay those are all the questions um i have for you do you have any questions or concerns
+
+Patient: um yeah what should i do about this cough
+
+Doctor: Yeah so this cough um its been going on for the last four days since you do have a cough um and right now that like is considered a symptom like like a potential symptom for coviwe definitely want to do a coviswab test for you which will come back in 24 hours to 48 hours you should still try and isolate as much as you can away from any roommates or family members for the next so 14 days since you first experienced the the cough
+
+Patient: Okay
+
+Doctor: Based on like public health will call you as well so you can follow their instructions and if it can be anything else too like with a cough there can be multiple things going on you can have um like an upper respiratory viral or bacterial infection but since youre not having too many other symptoms right now it can just be bronchitis um this is something that well try and keep an eye on and make sure its nothing else like uh pneumonia for example but right now yeah well get that testing done and then just kind of wait and watch
+
+Patient: Sure yeah thank you
+
+Doctor: Youre welcome take care
+
+Patient: You too

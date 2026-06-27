@@ -1,0 +1,14 @@
+qid: TQ94
+source_file: 18415.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What is plantar fasiciitis, and how is it treated?
+nlm_summary: Is plantar fasciitis aggravated by weight bearing; what else could aggravate it?
+
+focus_entities:
+  [F1] (Problem) Plantar fasiciitis
+question_types:
+  [T1] SUSCEPTIBILITY
+keywords:
+  [K1] (Problem) weight bearing

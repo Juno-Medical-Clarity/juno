@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2600  |  gem_id: gem-cochrane-simplification-train-2601  |  doi: 10.1002/14651858.CD006903.pub2
+
+Seven randomised controlled trials conducted in the USA, UK, Canada and Australia related to a range of conditions and target populations. They provided some evidence of efficacy. Peer support telephone calls may increase mammography screening in women over 40 years, may help patients change their diet and cease smoking after a heart attack; and may help reduce depressive symptoms among mothers with postnatal depression. Findings need to be interpreted cautiously. There is a need for well designed randomised controlled studies to clarify which elements of peer telephone interventions work best to improve health and health-related behaviour.

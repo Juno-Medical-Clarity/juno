@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3276  |  gem_id: gem-cochrane-simplification-train-3277  |  doi: 10.1002/14651858.CD010151.pub2
+
+Our search identified just one randomised controlled trial which evaluated 91 participants who had tinnitus for at least six months and some degree of hearing loss. It compared those receiving hearing aids to those receiving sound generators. The average age of the patients was 38 and there were 40 women and 51 men. The study took place in two centres in Italy and the USA. The result from the single study we reviewed was not definitive and was compatible with only small differences between the effect of hearing aids and sound generators. We also found another relevant study which has not yet been completed. We believe further high-quality trials are needed. The quality of this evidence is moderate to low. This review is up to date to August 2013.

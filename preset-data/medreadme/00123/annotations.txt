@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'praziquantel'
+  [11:12] 'medical-jargon-google-easy' -> 'oxamniquine'

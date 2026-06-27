@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [10:11] 'medical-jargon-google-easy' -> 'phenytoin'
+  [13:17] 'medical-jargon-google-easy' -> 'second - line management'
+  [18:22] 'medical-jargon-google-easy' -> 'paediatric convulsive status epilepticus'

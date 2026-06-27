@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1343
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What brings you in today? I dropped a glass and one of the broken pieces cut my foot pretty badly. There was a lot of blood. Is the area still bleeding? I got it to stop bleeding while I was waiting for my ride. Is there any pain in the area? No, it doesn't hurt. Are you able to walk normally without pain or discomfort? Yes. Are you experiencing any numbness or loss of strength in the area? No. Do you have any other injuries on any other part of your body? No. Have you had any recent illnesses? No. Do you have any other concerns while you are here today? No.

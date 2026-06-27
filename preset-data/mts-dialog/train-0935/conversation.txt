@@ -1,0 +1,28 @@
+Doctor: Hello, how are you?
+Patient: What?
+Doctor: How are you related to the patient?
+Guest_family: Hello doctor, I am his son.
+Doctor: Hello. How old is he?
+Guest_family: He is eighty years old. He is suffering from dementia.
+Doctor: I see. Do you think he will be able to provide me with his medical history?
+Guest_family: I don't think so. Sometimes he even forgets his name.
+Patient: He's kidding. I know my name. I also know his kids' names. I do agree that sometimes I forget my things or feel lost.
+Doctor: I don't blame you. I forget my things at my age.
+Guest_family: Yeah, it is something like episodic that he forgets everything and sometimes he's absolutely normal. On good days, he's very nice to talk to.
+Doctor: What is his living status?
+Guest_family: He lives at a board and care. It is a cozier homelike place.
+Doctor: That's good. So what brings you here in the emergency today?
+Guest_family: He started complaining of stomach aches. Luckily, I was there. It was very sudden at one moment he was talking to me nicely and then all of a sudden he started complaining of severe pain in his stomach area. That's when I decided to bring him here in the emergency room.
+Doctor: Do you have any previous reports?
+Patient: I have these reports.
+Doctor: Do you remember when was this scan done?
+Patient: I have no idea. I just had these reports with me.
+Doctor: Do you remember of any medical issues before?
+Patient: Huh uh.
+Doctor: Okay, let me see what your scan says. I am reading the C T Scan report provided by the patient. It states that patient has dilated bladder with thick wall suggesting an outlet obstruction as well as bilateral hydronephrosis and hydroureter.
+Patient: Hm.
+Doctor: I see that you have already been given some I V fluid along with antibiotics by the emergency room doctor.
+Guest_family: Yeah.
+Doctor: Did he ever complain of pain during urination or nausea and vomiting?
+Guest_family: Yes, he had fever a few days back. When we asked him about other symptoms, he said, it's hard to urinate and it is painful. Nausea and vomiting are something that I am not sure about. He was normally rushing to the restroom and every time used to say he didn't want to pee as it hurt him. He also had a few accidents in the last few days where he wet himself.
+Doctor: Thank you for providing me with all his history. It will be very helpful for me to treat him now.

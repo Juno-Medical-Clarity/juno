@@ -1,0 +1,9 @@
+Hyperinflammation and cytokine storm has been noted as a poor prognostic factor in patients with severe pneumonia related to coronavirus disease 2019 (COVID-19).
+In COVID-19, pathogenic myeloid cell overactivation is found to be a vital mediator of damage to tissues, hypercoagulability, and the cytokine storm.
+These cytokines unselectively infiltrate various tissues, such as the lungs and heart, and nervous system.
+This cytokine storm can hence cause multi-organ dysfunction and life-threatening complications.
+Mavrilimumab is a monoclonal antibody (mAb) that may be helpful in some cases with COVID-19.
+During an inflammation, Granulocyte-macrophage colony-stimulating factor (GM-CSF) release is crucial to driving both innate and adaptive immune responses.
+The GM-CSF immune response is triggered when an antigen attaches to the host cell and induces the signaling pathway.
+Mavrilimumab antagonizes the action of GM-CSF and decreases the hyperinflammation associated with pneumonia in COVID-19, therefore strengthening the rationale that mavrilimumab when added to the standard protocol of treatment could improve the clinical outcomes in COVID-19 patients, specifically those patients with pneumonia.
+With this review paper, we aim to demonstrate the inhibitory effect of mavrilimumab on cytokine storms in patients with COVID-19 by reviewing published clinical trials and emphasize the importance of extensive future trials.

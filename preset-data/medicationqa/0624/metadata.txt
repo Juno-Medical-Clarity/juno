@@ -1,0 +1,5 @@
+drug_focus: fat soluble vitamins
+question_type: Information
+section_title: Risks of Overdoing It
+source_url: https://www.fda.gov/ForConsumers/ConsumerUpdates/ucm118079.htm
+sample_id: 0624

@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1354
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has no history of blood or heart disease.
+- Patient reports no other past medical issues.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

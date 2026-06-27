@@ -11,6 +11,8 @@ downloading the dataset; it does not need to be re-run unless `preset-data/` is 
 
 - `primock57/` — 57 GP consultation notes from the primock57 dataset
   Download: https://github.com/Sydney-Informatics-Hub/primock57
+- `noteaid_readme/` — medical jargon → lay definition pairs with EHR context (loaded via HuggingFace, no local download needed)
+  Source: https://huggingface.co/datasets/bio-nlp-umass/NoteAid-README
 
 ## Running a parser
 

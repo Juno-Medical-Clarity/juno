@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0239  |  gem_id: gem-cochrane-simplification-validation-240  |  doi: 10.1002/14651858.CD006778.pub2
+
+In animal studies, the drug tirilazad appeared to reduce brain damage after SAH. We reviewed the evidence from randomised controlled trials of tirilazad in patients with SAH to see if it could reduce the risk of death or disability. The review did not show any evidence of benefit from tirilazad in patients with aneurysmal SAH.

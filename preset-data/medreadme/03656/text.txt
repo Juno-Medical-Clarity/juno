@@ -1,0 +1,1 @@
+These results help improve our understanding of folding mechanisms, and have implications for improving physics-based conformational sampling and structure prediction using all-atom molecular simulations.

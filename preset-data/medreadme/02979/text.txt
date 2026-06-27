@@ -1,0 +1,1 @@
+We assessed bias control using the Cochrane Hepato-Biliary Group domains; determined the quality of the evidence using GRADE; evaluated the risk of small-study effects in regression analyses; and conducted trial sequential, subgroup, and sensitivity analyses.

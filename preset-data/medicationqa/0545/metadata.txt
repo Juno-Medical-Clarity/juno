@@ -1,0 +1,5 @@
+drug_focus: trospium
+question_type: Stopping/tapering
+section_title: WARNINGS AND PRECAUTIONS
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b8d434c-daa2-4bf2-bde6-3e59f81bd88b&audience=consumer#section-1
+sample_id: 0545

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0284
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you talking any medications? No, I don't believe in meds. Oh really, let me check your list. Yeah never. Wow amazing.

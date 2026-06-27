@@ -1,0 +1,10 @@
+Polyuria-polydipsia syndrome consists of the three main effects: central or nephrogenic (kidney-related) diabetes insipidus (constantly-urinating) and primary polydipsia (great thirst).
+Reliable differences between these diagnoses is needed as treatment differs greatly, with the wrong treatment potentially leading to serious side effects.
+Past identification measures using the classical water deprivation test had several pitfalls and clinicians were often left with uncertainity regarding the diagnosis.
+With the creation of copeptin, a stable and reliable surrogate marker for arginine vasopressin (blood vessel constriction), diagnosis of the polyuria-polydipsia syndrome has been newly evaluated.
+Whereas unstimulated basal copeptin (specific protein) measurement reliably identifies nephrogenic diabetes insipidus, two new tests using stimulated copeptin cutoffs showed a high identification accuracy in differentiating central diabetes insipidus from primary polydipsia.
+For the hypertonic (very salty) saline infusion test, water-sucking stimulation via a high salt amount is used.
+This makes the test highly reliable and superior to the classical water deprivation test, but also requires close watch and the availability of rapid sodium measurements to guarantee the test's safety.
+Alternatively, arginine infusion (adding a specific protein in) can be used to stimulate copeptin release, opening the doors for an even shorter and safer diagnostic test.
+The test protocols of the two tests are provided and a new copeptin-based diagnostic method is proposed to reliably identify between the different entities.
+Furthermore, the role of copeptin as a predictive marker for the development of diabetes insipidus following surgeries in the sellar region (an area of the head) is described.

@@ -1,0 +1,27 @@
+# SOAP Notes — Sample 0924
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient reports peeing blood (gross hematuria) which has returned. 
+- This is the second occurrence of gross hematuria this month. 
+- Patient fell about a week ago, experiencing pain in the butt and leg from the fall. 
+- Pain is severe, worst first thing in the morning. 
+- Patient reports having problems with sinuses today. 
+- Medical history includes A F I B and stroke. 
+- Patient is taking Flomax for BPH and has been taking Coumadin, which has been held recently.
+
+Objective: 
+- X-rays of hips, knees, and ankles show severe degeneration in all areas. 
+- Significant arthritis noted in the x-ray findings. 
+- No fractures observed in the x-ray results.
+
+Assessment: 
+- Gross hematuria likely related to underlying conditions. 
+- Severe degeneration and significant arthritis in hips, knees, and ankles. 
+- Pain related to fall and arthritis.
+
+Plan: 
+- Continue taking Coumadin for A F I B and stroke management. 
+- Provide nasal spray for sinus problems. 
+- Monitor the patient's hematuria and pain levels. 
+- Further evaluation and management of arthritis may be necessary.

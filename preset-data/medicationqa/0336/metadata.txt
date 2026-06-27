@@ -1,0 +1,5 @@
+drug_focus: steroids
+question_type: Side effects
+section_title: Are anabolic steroids addictive?
+source_url: https://www.drugabuse.gov/publications/drugfacts/anabolic-steroids
+sample_id: 0336

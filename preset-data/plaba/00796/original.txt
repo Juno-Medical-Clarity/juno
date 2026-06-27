@@ -1,0 +1,16 @@
+Importance: Endocrine therapy-induced alopecia (EIA) has been anecdotally reported but not systematically described.
+Objective: To characterize EIA in patients with breast cancer.
+Design, setting, and participants: Retrospective cohort study of 112 patients with breast cancer, diagnosed with EIA from January 1, 2009, to December 31, 2016, the patients were examined at the dermatology service in a large tertiary care hospital and comprehensive cancer center.
+Main outcomes and measures: The clinical features, alopecia-related quality of life (QoL), and response to minoxidil of EIA in patients with breast cancer were assessed.
+Data from the Hairdex Questionnaire was used to assess the impact of the alopecia on patients QoL.
+Higher score indicates lower QoL (0-100 score).
+Efficacy of minoxidil was measured at 3 or 6 months by a single-blinded investigator through standardized clinical photographs of the scalp.
+Results: A total of 112 female patients with breast cancer were included (median [range] age, 60 [34-90] years).
+A total of 104 patients (93%) had standardized clinical photographs; of these, 59 patients (53%) had trichoscopy images available at baseline, and 46 patients (41%) were assessed for response to minoxidil.
+Alopecia was attributed to aromatase inhibitors in 75 patients (67%) and tamoxifen in 37 (33%).
+Severity was grade 1 in 96 of 104 patients (92%), and the pattern was similar to androgenetic alopecia.
+The predominant trichoscopic feature at baseline was the presence of vellus hairs and intermediate- and thick-diameter terminal hair shafts.
+A negative impact on QoL was reported, with a higher effect in the emotion domain according to the Hairdex score (mean [SD], 41.8 [21.3]; P < .001).
+After treatment with topical minoxidil, moderate or significant improvement in alopecia was observed in 37 of 46 patients (80%).
+Conclusions and relevance: Endocrine therapies are associated with a pattern alopecia similar to androgenetic-type, consistent with the mechanism of action of causal agents.
+A significant negative impact on QoL was reported by patients, despite mostly mild alopecia severity.

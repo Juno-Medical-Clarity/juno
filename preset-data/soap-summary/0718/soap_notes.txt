@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0718
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Seizures
+- Severity: Not specified
+- Duration: Started at age fourteen
+- Associated symptoms: None mentioned
+- Relevant medical history: Patient is on medication for seizures; no other medical conditions mentioned for siblings; maternal grandmother has high blood pressure and diabetes.
+- Family history: Sixteen-year-old brother suffers from NSVT; no other family members have similar problems; other children in the family are doing fine.
+- Allergies: None mentioned
+- Other concerns: No recent deaths in the family.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

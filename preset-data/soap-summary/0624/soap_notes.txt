@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0624
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is married.
+- Works as a secretary in a law firm.
+- Does not smoke or drink.
+- Has never tried any illegal drugs.
+
+Objective:
+- [No objective data mentioned.]
+
+Assessment:
+- [No assessment information provided.]
+
+Plan:
+- [No plan provided.]

@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [7:12] 'medical-jargon-google-easy' -> 'Helping Families Programme - Modified'
+  [19:25] 'medical-jargon-google-easy' -> 'quality - adjusted life - years'

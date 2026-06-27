@@ -1,0 +1,5 @@
+pmid:        29532516
+question:    62
+adaptation:  adaptation2
+title:       Effects of levocetirizine and diphenhydramine on regional glucose metabolic changes and hemodynamic responses in the human prefrontal cortex during cognitive tasks
+sentences:   12

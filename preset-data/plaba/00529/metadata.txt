@@ -1,0 +1,5 @@
+pmid:        18497742
+question:    41
+adaptation:  adaptation1
+title:       pVHL and PTEN tumour suppressor proteins cooperatively suppress kidney cyst formation
+sentences:   6

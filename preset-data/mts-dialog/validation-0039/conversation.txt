@@ -1,0 +1,14 @@
+Doctor: How are you related to the patient?
+Guest_family: I am his friend; I work with him in a coffee shop. He works as a cook there.
+Doctor: Can you tell me your age?
+Patient: I'm forty one.
+Doctor: Can you tell me what exactly happened?
+Guest_family: He was cooking, and the hot oil splashed onto his arm.
+Doctor: Did this happen in the coffee shop kitchen?
+Patient: Yes. I don't know how the oil splashed but burned my hand. I tried to let it cool down, but the pain was unbearable. I asked my friend to take me to the emergency department here.
+Doctor: So, this will be the workers' compensation for injury.
+Patient: I guess, yeah.
+Doctor: OK, let me see your hand.
+Patient: OK.
+Doctor: The burn is from the elbow to the wrist. It is mainly on the medial aspect.
+Doctor: OK, don't worry. We will take care of you.

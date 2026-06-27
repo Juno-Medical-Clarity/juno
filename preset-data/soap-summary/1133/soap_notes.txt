@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1133
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Occupation: Head chef at the Hilton
+- No smoking or tobacco use
+- No alcohol consumption
+- No history of using illegal drugs
+
+Objective:
+- (No measurable or observable data provided)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided)

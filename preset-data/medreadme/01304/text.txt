@@ -1,0 +1,1 @@
+In particular, host and parasite traits such as survival and virulence may have distinct temperature dependencies that must be integrated into models of disease dynamics.

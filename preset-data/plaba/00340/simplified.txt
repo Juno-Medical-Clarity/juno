@@ -1,0 +1,14 @@
+The coronavirus and the resulting Covid-19 disease (a viral, breathing-related disease) has impacted tens of millions of people around the world.
+Vaccines that are safe and work well are urgently needed.
+In a clinical study that is in progress, people who are at least 16 years old are randomly placed in a group to receive two doses of either a placebo (a shot that does not have medicine) or the BNT162b2 vaccine.
+The BNT162b2 vaccine works by increasing proteins that help the immune system.
+The main study outcomes are how well the vaccine works against Covid-19 and its safety.
+A total of 43,548 participants are randomly put into two groups. Among this group, 43,448 received shots: 21,720 with the BNT162b2 vaccine and 21,728 with the placebo.
+Among people who received the BNT162b2 vaccine, 8 got Covid-19 at least 7 days after they received the second dose. Among people who received the placebo, 162 got Covid-19. The BNT162b2 vaccine was 95% effective in preventing Covid-19.
+Similar results are observed across smaller groups of participants when looking at age, sex, race, ethnicity, weight, and the presence of other conditions.
+Among 10 cases of serious Covid-19 starting after the first dose, 9 cases happened in people who received the placebo and 1 in someone who received the BNT162b2 vaccine.
+The safety of the BNT162b2 vaccine is described as having short-term, mild-to-moderate pain on the arm where the shot was given, tiredness, and a headache.
+The number of serious side effects is low and is similar in the vaccine and placebo groups.
+In conclusion, receiving two doses of the BNT162b2 vaccine provided 95% protection against Covid-19 in people 16 years or older.
+Safety over an average of 2 months is similar to those of other vaccines.
+

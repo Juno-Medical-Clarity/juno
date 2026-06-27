@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0685
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+You had a bad acidity problem? Yes I was vomiting too. What came out in the vomit? It was all brown colored things like coffee. But nothing anymore, right? Yes I am all better. Great! They told me I can go home. Yes your blood count looks good, I just want you to continue Nexium forty M G once a day. I will do that.

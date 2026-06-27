@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 0511
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports significant pain in both knees, with the left knee hurting more than the right.
+- Pain interferes with ability to walk; patient can walk about half a mile before pain becomes too severe.
+- Patient has difficulty going up and down stairs, requiring to take them one at a time.
+- Patient has a history of degenerative joint disease (arthritis) in both knees.
+- Patient has undergone arthroscopy on both knees in the early 1990s (1991-1992).
+- Pain management history includes anti-inflammatories, injections, and narcotics.
+- Patient has a history of multiple back surgeries, including spinal stenosis, spinal decompression, and epidural steroid injections.
+- Pain is described as severe by the patient.
+
+Objective:
+- No measurable or observable data provided in the transcript.
+
+Assessment:
+- Patient has significant knee pain likely due to degenerative joint disease and previous surgeries.
+- Consideration for knee replacement surgery, particularly for the left knee, which is more painful.
+
+Plan:
+- Discuss the possibility of knee replacement surgery, starting with the left knee.
+- Follow up on the management of pain, considering current use of narcotics and other pain management strategies.
+- No additional tests or medications explicitly mentioned in the conversation.

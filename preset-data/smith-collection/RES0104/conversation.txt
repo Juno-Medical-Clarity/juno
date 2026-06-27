@@ -1,0 +1,212 @@
+# Smith Collection Transcript: RES0104
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Can you tell me what brings you in here today
+
+Patient: So ive had this uh this cough that it started two days ago and its been getting worse ive been bringing up this rust colored sputum
+
+Doctor: OK and so thats been going on for a few days
+
+Patient: Yeah yeah about two days
+
+Doctor: OK and how often are you coughing
+
+Patient: Its its happening all day really throughout the day and really any type of exertion or or movement im getting short of breath and its triggering a cough
+
+Doctor: OK and the shortness of breath is it just with the exertion or it can is it happening at rest how are you feeling right now
+
+Patient: Yeah even right now it feels like im not able to get i dont know a full breath it just feels like its more difficult to to breathe
+
+Doctor: OK have you felt any kind of dizziness or fainting episodes
+
+Patient: No i havent
+
+Doctor: OK have you been feeling any chest pain at all
+
+Patient: uh no i i i havent had any chest pain
+
+Doctor: OK and so with your coughing youre producing the rust colored sputum but how much would you say youre producing
+
+Patient: uh i would say yeah maybe three or four teaspoons every every couple hours
+
+Doctor: OK are you producing any blood like in your cough or sputum at all
+
+Patient: No it wasnt really red its kinda orange
+
+Doctor: Orange ok any greenish or yellow material
+
+Patient: No i havent noticed anything like that
+
+Doctor: OK any fevers or chills
+
+Patient: Yeah i have had ive had both of those ive had a i i checked my temperature this morning and it was 382 and i was pretty chilly last night
+
+Doctor: OK uhm and before these symptoms started were you having any similar symptoms at all before
+
+Patient: Ah no i mean a few weeks ago probably like a yeah a couple of weeks ago i had a runny nose and and sore throat for a couple of days it went away on its own though
+
+Doctor: OK uhm any anything that makes your symptoms better or worse that youve tried
+
+Patient: I did try some over the counter cold medicine it i think it might have helped me sleep last night but didnt really do a whole lot
+
+Doctor: OK does your shortness of breath improve with any positions or does it improve when youre not exerting yourself
+
+Patient: uh not really its kind of always there
+
+Doctor: Its ok do you have to wake up at night to take a deep breath or do you feel any kind of shortness of breath with laying down at all
+
+Patient: No i havent had any issues like that
+
+Doctor: OK and do you notice any kind of swelling in your feet ankles arms legs anything like that
+
+Patient: No i havent
+
+Doctor: OK have you been in contact with anyone thats sick recently
+
+Patient: uh i dont i i mean i see my granddaughter and i might have got a cold from her a few weeks ago but recently i havent seen anybody
+
+Doctor: OK are you having any night sweats
+
+Patient: No just a chills last night
+
+Doctor: OK are you breathing faster
+
+Patient: Yeah i have felt like ive been been breathing a bit faster
+
+Doctor: You have any muscle aches or anything like that
+
+Patient: Ah no not really
+
+Doctor: OK and give any other symptoms like chest pain runny nose sore throat anything like that
+
+Patient: uh no just been really tired these last couple of days and ive just felt like sleeping all day havent felt like eating either my appetite has been really poor
+
+Doctor: OK uhm and other than that have you experienced any kind of headaches nausea or vomiting
+
+Patient: No i havent
+
+Doctor: OK any fevers or you said you have had some chills right
+
+Patient: I have yeah
+
+Doctor: OK and then a fever too kind of a sensation of your heart racing at all
+
+Patient: Ah yeah right it doesnt feel like its well it does feel like its beating a bit faster than usual just not feeling too well
+
+Doctor: Yeah so yeah well do a physical examination and get all your vital signs as well right after any so you said you havent been able to eat ave you noticed any significant weight changes recently
+
+Patient: No my weights been about the same
+
+Doctor: OK any exposure to any dusts or animals fumes anything that might have triggered some of these symptoms
+
+Patient: No i dont think so my husband and i we moved into a new kind of apartment here and it its brand new
+
+Doctor: OK any kind of loss of sense of taste or smell
+
+Patient: No thats been normal
+
+Doctor: OK any exposure or any travel outside of the country at all
+
+Patient: No nothing like that
+
+Doctor: OK so just mainly the coughing with the rusty material as well as just the shortness of breath umm and do you get any pain at all in your chest when you breathe in or out
+
+Patient: No i havent had any had anything like that
+
+Doctor: OK any past medical conditions that i should know of
+
+Patient: Yeah i umm i had a stroke like that like six years ago and i have type 2 diabetes as well as gerd
+
+Doctor: OK and uh yeah im sorry you had you had a stroke six years ago or how are you after that were there any kind of like did after rehabilitation do you have any symptoms still going on at all
+
+Patient: Yeah my my left hand still still it gives me some some problems i get uh uh botulinum toxin injections for for the tightness in my hand
+
+Doctor: OK ok and are you taking any other medications at all
+
+Patient: Yeah i use metformin empagliflozin or an sglt2 insulin and uh and aspirin i think
+
+Doctor: OK and any over the counter medications
+
+Patient: Yeah i take a multivitamin and in vitamin d
+
+Doctor: OK any allergies to any medications at all
+
+Patient: No
+
+Doctor: OK any environmental allergies
+
+Patient: No
+
+Doctor: OK any ill contacts at all
+
+Patient: No no
+
+Doctor: Any recent or prior hospitalizations
+
+Patient: No the last time i was in the hospital was i was for rehab after my stroke
+
+Doctor: OK and so but after that no other hospitalizations or surgeries
+
+Patient: No
+
+Doctor: OK any surgeries in the past
+
+Patient: Yeah well i did have a csection for my son but that was many years ago now and everything for that was was ok yeah
+
+Doctor: OK any family history of any lung or heart conditions any cancers
+
+Patient: Uhm yeah my dad had had a heart attack actually but he was in his 80s when that when that happened
+
+Doctor: OK uhm and currently right now are you working at all
+
+Patient: No im retired i used to be a teacher for grade 3 uhm but yeah but since retired and my husband and i just moved into a smaller apartment to make it a bit easier on us it was a lot trying to look after the house
+
+Doctor: OK well congratulations on your new home are you at all you or your husband requiring any kind of supports outside of the home at all
+
+Patient: No between us two we managed to get the shopping done the cooking and and all the cleaning and that sort of thing i use a walker to get around when were going longer distances
+
+Doctor: OK and currently right now do you smoke at all
+
+Patient: uh yes i i spoke about half a pack per day or maybe even less
+
+Doctor: OK and how how long have you have smoked for
+
+Patient: Since i was 15 maybe
+
+Doctor: OK
+
+Patient: So yeah for like 45 years
+
+Doctor: And have you at all been diagnosed with copor anything like that
+
+Patient: No i was tested actually uh a couple of years ago and that the results were normal
+
+Doctor: OK alright and have you thought of quitting at all i know youve been smoking like for a very long time but have you at all tried to quit before
+
+Patient: Like ive considered it but i i just dont think it itll be possible at this time
+
+Doctor: OK well if you at all are wanting any information or want to talk about quitting at all um we can provide more resources do you besides smoking do you use any recreational drugs like marijuana
+
+Patient: No
+
+Doctor: No any alcohol at all
+
+Patient: No
+
+Doctor: OK yeah so those are some of the questions i had a i will be doing a physical examination with your shortness of breath i just want to get a good listen to your lungs and take all your vitals as well however yeah so after that since youre having some symptoms of what might be a pneumonia it can be a bacterial infection a viral infection we will have to get some blood work done as well as a chest xray and right now with the pandemic going on we will also do covid swab test for you as well just in case does that sound good
+
+Patient: Yeah that makes sense thank you
+
+Doctor: Alright and if if youre while youre here if your shortness of breath gets any worse at all just let us know and well help you out
+
+Patient: OK thank you will do
+
+Doctor: Thank you bye
+
+Patient: Bye

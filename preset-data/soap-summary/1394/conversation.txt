@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1394
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you live alone? I do. I lost my husband to prostate cancer last year. Oh wow. I'm so deeply sorry for your loss. Losing a loved one is incredibly difficult. I lost my sister to cervical cancer two years ago. It was one of the hardest experiences of my life. I'm sorry for your loss as well. It helps to remember the positive memories you had with them. Yes, definitely. How have you been doing otherwise? Not bad. I've been keeping myself busy with gardening. Gardening is a great hobby. Yes, I enjoy it very much. It brings me a lot of peace. And as your doctor I have to ask, but any history of alcohol or drug use? No.

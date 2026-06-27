@@ -1,0 +1,5 @@
+pmid:        28285070
+question:    35
+adaptation:  adaptation1
+title:       Time to Clinically Relevant Fracture Risk Scores in Postmenopausal Women
+sentences:   8

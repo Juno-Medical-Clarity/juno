@@ -1,0 +1,5 @@
+drug_focus: magnesium and Dilantin
+question_type: Interaction
+section_title: ABSTRACT
+source_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2846501/
+sample_id: 0399

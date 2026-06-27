@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1419
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Migraines with aura
+- Severity: Not specified
+- Duration: About five years
+- Associated symptoms: None mentioned
+- Relevant medical history: Not seeing a neurologist since moving
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: None specified
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- Schedule a consult for tomorrow.

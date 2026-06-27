@@ -1,0 +1,1 @@
+Drivers could be grouped into symptom related, patient related and health service related.

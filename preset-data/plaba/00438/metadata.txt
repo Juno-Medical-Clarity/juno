@@ -1,0 +1,5 @@
+pmid:        28434208
+question:    34
+adaptation:  adaptation1
+title:       Dietary interventions for adults with chronic kidney disease
+sentences:   20

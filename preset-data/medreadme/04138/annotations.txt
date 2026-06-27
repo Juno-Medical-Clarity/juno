@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Interstitial lung disease'
+  [4:5] 'abbr-medical' -> 'ILD'
+  [13:14] 'medical-jargon-google-easy' -> 'dyspnoea'
+  [15:19] 'medical-jargon-google-easy' -> 'exercise - induced hypoxia'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0689
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+You smoke or drink? Nope, I never did any such thing. Any drugs? Never. Are you still working? I'm retired. I used to work. I used to work in Morse chain. I also used to deliver newspapers. But now I'm retired, and I enjoy life. Are you married? I was happily married. But then my husband died. Do you live alone or with family? I live alone. I do have family who lives very close by in the neighborhood. I have a niece who lives with her family in my house on Temple Street.

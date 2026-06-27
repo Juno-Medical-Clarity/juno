@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [12:14] 'medical-jargon-google-easy' -> 'mRNA expression'
+  [18:23] 'medical-jargon-google-hard' -> 'poly ( A ) status'
+  [25:28] 'medical-jargon-google-hard' -> 'chromosomally encoded sRNA'

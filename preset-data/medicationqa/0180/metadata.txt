@@ -1,0 +1,5 @@
+drug_focus: Cough Syrup
+question_type: Dose
+section_title: Spoons give wrong medicine doses
+source_url: https://www.nhs.uk/news/pregnancy-and-child/spoons-give-wrong-medicine-doses/
+sample_id: 0180

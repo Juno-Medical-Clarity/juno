@@ -1,0 +1,8 @@
+We studied relations between antihistamines (drugs for treating allergies)  and Torsade de Pointes (very fast heart rhythm) as reported to the FDA.
+We found 406 reports on Torsade de Pointes and antihistamines.
+We used four different statistical methods to study the cases.
+Antihistamines that had more than three reports of torsade de pointes were included in the analysis.
+We found 12 drugs associated with torsade de pointes. Six of the drugs were not known before to cause torsade de pointes.
+Getting antihistamines with other drugs that cause heart complications was lower than for the known antihistamines.
+The new antihistamines were associated with heart complications stronger than the known ones.
+The new antihistamines were associated with torsade de pointes stronger.

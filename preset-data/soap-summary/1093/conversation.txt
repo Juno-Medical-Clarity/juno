@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1093
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you married? I was, but my husband died thirty years ago. Are you working? Nope. What is your highest degree? I did high school. I was living alone for fifteen years until December of ninety four. How is your living situation now? Who is taking care of you? My daughters have started taking care of me on a shareable basis. Do you smoke? Or drink or have ever used any drugs. Nope.

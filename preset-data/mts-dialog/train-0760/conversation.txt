@@ -1,0 +1,4 @@
+Doctor: Does any of your family member have any major medical problems?
+Patient: Yeah, my mother died of heart attack. She was seventy years old. My father died of cancer; it was prostate cancer. He was around eighty.
+Doctor: Anything anyone else?
+Patient: Hm, my brother had both heart disorder and prostate cancer and he died around seventy four.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0568  |  gem_id: gem-cochrane-simplification-train-569  |  doi: 10.1002/14651858.CD002116.pub2
+
+This review looked at drugs for the treatment of faecal incontinence. These included anti-diarrhoea drugs or laxatives to regulate stools, and drugs to try to enhance the tone of muscle around the anus which help to keep it closed. Sixteen small trials were found, including 558 participants. The review of these trials found some evidence that anti-diarrhoea drugs may reduce faecal incontinence for people having liquid stools. However, these drugs were associated with some side effects. There was some evidence that drugs to enhance the tone of the muscle around the anus may help, but more research is needed.

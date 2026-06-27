@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0370
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Chronic knee pain
+- Severity: Not specified
+- Duration: Not specified
+- Associated symptoms: None mentioned
+- Relevant medical history: Chronic knee pain issues
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Patient has never experienced similar symptoms before.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- (No assessment provided)
+
+Plan:
+- (No plan provided)

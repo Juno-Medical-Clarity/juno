@@ -1,0 +1,8 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [31:32] 'medical-jargon-google-easy' -> 'coevolutionary'
+  [41:45] 'medical-jargon-google-easy' -> 'host - virus interactions'

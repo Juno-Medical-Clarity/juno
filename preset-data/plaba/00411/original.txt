@@ -1,0 +1,9 @@
+Methylenetetrahydrofolate reductase (MTHFR) is a critical folate-metabolising enzyme which requires riboflavin as its co-factor.
+A common polymorphism (677C→T) in the MTHFR gene results in reduced MTHFR activity in vivo which in turn leads to impaired folate metabolism and elevated homocysteine concentrations.
+Homozygosity for this polymorphism (TT genotype) is associated with an increased risk of a number of conditions including heart disease and stroke, but there is considerable variability in the extent of excess risk in various reports.
+The present review will explore the evidence which supports a role for this polymorphism as a risk factor for a number of adverse health outcomes, and the potential modulating roles for B-vitamins in alleviating disease risk.
+The evidence is convincing in the case which links this polymorphism with hypertension and hypertensive disorders of pregnancy, particularly preeclampsia.
+Furthermore, elevated blood pressure was found to be highly responsive to riboflavin intervention specifically in individuals with the MTHFR 677TT genotype.
+Future intervention studies targeted at these genetically predisposed individuals are required to further investigate this novel gene-nutrient interaction.
+This polymorphism has also been associated with an increased risk of neural tube defects (NTD) and other adverse pregnancy outcomes; however, the evidence in this area has been inconsistent.
+Preliminary evidence has suggested that there may be a much greater need for women with the MTHFR 677TT genotype to adhere to the specific recommendation of commencing folic acid prior to conception for the prevention of NTD, but this requires further investigation.

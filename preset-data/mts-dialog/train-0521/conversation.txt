@@ -1,0 +1,18 @@
+Doctor: Good morning, ma'am.
+Patient: Good morning, doctor.
+Doctor: Welcome to A B C D General Hospital. My nurse says that you are forty one years old, and you identify as a White female, is that correct?
+Patient: Yes, that's all correct.
+Doctor: Thank you, so, what seems to be the trouble today?
+Patient: Well, I'm having some pain in this foot, it's right over this bone.
+Doctor: Is your pain right here?
+Patient: Yes, it really hurts right there.
+Doctor: Okay, this is known as your navicular bone. What makes the pain worse?
+Patient: Usually wearing shoes makes it worse.
+Doctor: Do you have any past history of problems with this foot?
+Patient: Well, I have a history of multiple osteochondromas.
+Doctor: Do they know what caused these?
+Patient: No, no one ever figured it out, they just said it was hereditary.
+Doctor: Have they done surgery on these in the past?
+Patient: Yeah, I had a surgery for this a while ago.
+Doctor: Have you ever had this problem in your feet or spine?
+Patient: No, this is new. Can we do that surgery again? I can't take this pain.

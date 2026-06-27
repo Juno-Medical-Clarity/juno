@@ -1,0 +1,5 @@
+pmid:        34213743
+question:    47
+adaptation:  adaptation1
+title:       Clinical, biochemical and genetic findings in adult patients with chronic hypophosphatasemia
+sentences:   13

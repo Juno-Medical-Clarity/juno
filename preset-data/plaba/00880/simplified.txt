@@ -1,0 +1,21 @@
+The goal of newborn screening is to detect newborns with serious, treatable disorders. This allows appropriate action to be taken to prevent or lessen bad outcomes.
+Large-scale lab testing of newborn babies was pioneered in the 1960s with the introduction of screening for phenylketonuria, a rare, inherited metabolic disorder. This testing was done by using dried blood spot samples.
+The next disorder introduced into screening programs was congenital hypothyroidism, which is an inherited disorder of the thyroid gland, which controls metabolism. A few more much rarer disorders were gradually included.
+Two recent advances have greatly change the pace. These are modification of tandem mass spectrometry (an advanced chemical detection technique, also known as MS/MS) and DNA analysis from newborn screening dried blood spots.
+These two technologies make the future possibilities of newborn screening seem almost unlimited.
+Newborn screening test are usually done with a dried blood spot sample, which needs to be considered when analyzing.
+Extra dried blood spots need to be prepared on the same filter paper to calibrate the tests.
+Since dried filter paper samples have more variability than other types of samples, the results of these tests can vary by about 10% or more.
+Additionally, the amount of red blood cells cannot be measured.
+It is also important to balance how sensitive the test is (how good it is at finding a problem) with how specific it is (how sure you can be when a problem is found).
+In deciding how to balance these, we need to consider how many people it is acceptable to bring back for more testing.
+Not many tests are perfectly accurate.
+Programs in Australasia currently screen for at least 30 disorders.
+Detecting these disorders often requires more than just knowing one amount. It can require knowing relative amounts of two different things, or could require an additional alternative test, like a genetic test.
+In this article we will briefly describe the most important disorders that are screened for. These are phenylketonuria, hypothyroidism, Cystic Fibrosis (CF), galactosaemias, Medium-Chain Acyl-CoA Dehydrogenase (MCAD) deficiency, Glutaryl-CoA Dehydrogenase (GCDH) deficiency and Congenital Adrenal Hyperplasia (CAH), along with several other disorders detectable by MS/MS.
+Newborn screening deals with rare disorders and it is hard to see the benefit without very large studies.
+There have been randomised controlled trials of screening for cystic fibrosis. Also, several studies are now beginning to show the benefit of MS/MS screening for disorders relating to fatty acid and amino acid metabolism.
+Two things will influence the new directions for newborn screening. The first is the development of effective treatments for disorders that don’t currently have them. The second is advancing technology that will enable new testing strategies to be developed.
+There are new treatments on the horizon for many distinct disorders.
+Testing for being at risk for disorders has recently been considered for newborn screening, but this is more controversial.
+Newborn screening has entered a new and exciting phase, with an explosion of new treatments, new technologies, and, possibly in the future, new preventive strategies.

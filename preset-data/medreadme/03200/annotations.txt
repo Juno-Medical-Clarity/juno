@@ -1,0 +1,8 @@
+source:      nhir_Public_Health_Research
+side:        simple
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [11:14] 'medical-jargon-google-easy' -> 'Healthy Lifestyles Programme'
+  [15:16] 'abbr-medical' -> 'HeLP'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1286
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you take anything for acid reflux? Yeah, I take Aciphex. Is that twenty M G once a day? It is. I also take one baby Aspirin in the mornings.

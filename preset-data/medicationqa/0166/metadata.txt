@@ -1,0 +1,5 @@
+drug_focus: Morphine
+question_type: Alternatives
+section_title: Alternatives for managing pain that aren’t opioids
+source_url: https://www.beaumont.org/health-wellness/blogs/alternatives-for-managing-pain-that-arent-opioids
+sample_id: 0166

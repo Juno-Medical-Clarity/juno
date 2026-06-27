@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1309
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a cigarette smoker.
+- Smokes approximately one pack per week (about four packs per month and fifty packs per year).
+- No additional symptoms, severity, duration, associated symptoms, relevant medical history, family history, allergies, or emotional concerns explicitly mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

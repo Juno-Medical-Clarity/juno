@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0551
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is taking Micronase 2.5 mg once daily.
+- Patient has an infection that is being addressed.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinical impressions or diagnoses provided.
+
+Plan:
+- Continue taking Micronase by mouth every day.
+- Start taking Bactrim 400 mg and 80 mg tablets twice daily.
+- Prescribing a total of thirty pills of Bactrim.

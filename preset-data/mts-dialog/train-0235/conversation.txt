@@ -1,0 +1,7 @@
+Doctor: Tell me about your medical history. Did you have any surgeries? Any medical issues in the past?
+Patient: I had my tonsils removed when I was a kid, maybe around eight. I was hospitalized for the heart attack in ninety six. They did some surgery to check how my heart is functioning and then they did a bypass I guess.
+Doctor: Do you have some record of those surgeries?
+Patient: Oh yes, I got it with me. Here it is.
+Doctor: That is awesome. Let me have a look. So, according to this you had L I M A to L A D coronary bypass graft. You also had had three saphenous vein grafts performed.
+Patient: Yes I had so many surgeries, it's hard to keep a track of all those complex names. That's why I keep those papers with me all the time if I go to any new doctor.
+Doctor: I will add all these surgeries into my record. Thank you.

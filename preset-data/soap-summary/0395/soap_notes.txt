@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0395
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Intense burning in the throat
+- Severity: Really hurts
+- Duration: After eating food
+- Associated symptoms: Symptoms worsen after eating junk food
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Patient mentions having depression based on survey results.
+
+Objective:
+- (No objective data provided)
+
+Assessment:
+- Possible diagnosis: Reflux disease
+- Clinical impression: Patient has depression.
+
+Plan:
+- (No plan provided)

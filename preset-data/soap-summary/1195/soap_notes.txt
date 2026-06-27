@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 1195
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports feeling well.
+- No illness or fever.
+- No headache or nausea.
+- No vomiting or stomach upset.
+- No numbness, tingling, or loss of sensation in the hand.
+- Otherwise feeling well.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment data provided.)
+
+Plan:
+- (No plan provided.)

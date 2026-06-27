@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1229
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke? Yeah, here and there. On average, how many cigarettes would you say you smoke? Probably three or four if I had to guess. Any medical problems that run in the family? Yeah, my brother had a heart attack when he was pretty young. How old was he? Fifty two. Oh wow, how's he doing? Good, he has to see a heart doctor at least once a year. Does anyone else in your family have heart problems? Um my dad has some heart issues. He's also a type one diabetic.

@@ -1,0 +1,10 @@
+source:      wiki
+side:        complex
+readability: 4.3
+split:       dev
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Q fever'
+  [3:5] 'medical-jargon-google-easy' -> 'query fever'
+  [13:15] 'medical-jargon-google-easy' -> 'Coxiella burnetii'
+  [18:19] 'medical-jargon-google-easy' -> 'bacterium'

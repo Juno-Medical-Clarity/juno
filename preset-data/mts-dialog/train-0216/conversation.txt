@@ -1,0 +1,8 @@
+Doctor: Do you take any tobacco related products?
+Patient: I used to chew tobacco, but I quit when I was thirty seven.
+Doctor: What about alcohol consumption? Do you drink?
+Patient: I take one glass of wine every day.
+Doctor: Are you married?
+Patient: Yes, sir. I'm married to a wonderful woman for last thirty five years.
+Doctor: Are you still working?
+Patient: I used to. Now I'm retired, I was a lab manager before.

@@ -1,0 +1,5 @@
+drug_focus: marijuana
+question_type: Information
+section_title: NA
+source_url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0192247
+sample_id: 0411

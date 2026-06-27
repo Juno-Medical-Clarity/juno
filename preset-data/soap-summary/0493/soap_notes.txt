@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0493
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has three cats (two Persian cats and one Chartreux).
+- Patient retired a few months ago after working for thirty-two years as a psych aide for the State of Pennsylvania.
+- Patient drinks wine occasionally.
+- Patient used to smoke but has been smoke-free for five years.
+- Patient does not use recreational drugs.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

@@ -1,0 +1,5 @@
+drug_focus: steroids
+question_type: Side effects
+section_title: Corticosteroids and risk of gastrointestinal bleeding: a systematic review and meta-analysis
+source_url: https://bmjopen.bmj.com/content/4/5/e004587
+sample_id: 0609

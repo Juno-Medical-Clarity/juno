@@ -1,0 +1,8 @@
+source:      MSD
+side:        complex
+readability: 3.7
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Skin lesions'
+  [24:25] 'medical-jargon-google-easy' -> 'pustular'

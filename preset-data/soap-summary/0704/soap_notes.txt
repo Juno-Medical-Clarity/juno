@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0704
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of diabetes (mentioned that almost everyone had diabetes).
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment information provided]
+
+Plan:
+- [No plan provided]

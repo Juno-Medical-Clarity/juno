@@ -1,0 +1,31 @@
+Doctor: Good morning, how are you feeling today?
+Patient: Hmm, I feel okay.
+Doctor: I understand that you were admitted to the hospital due to an ischemic left-hemispheric stroke. Is that correct?
+Patient: Yes, that's right.
+Doctor: And I also understand that you had a dry cough and fever.
+Patient: Yes, I did.
+Doctor: I see that you tested positive for SARS-CoV-2. How did that affect your condition?
+Patient: Well, I continued to deteriorate and eventually had to be intubated and admitted to the ICU.
+Doctor: I see. And I understand that despite repeated proning, your gas exchange did not improve sufficiently, so you were placed on veno-venous extracorporeal membrane oxygenation for 7 days.
+Patient: Yes, that's correct.
+Doctor: After the sedation was stopped, you became somnolent and unable to communicate or follow commands, is that right?
+Patient: Yes, that's right.
+Doctor: Physical therapy was provided to you, focusing on perception training, movement exercises, airway-clearing techniques, dysphagia therapy, and mobilization, correct?
+Patient: Yes, that's correct.
+Doctor: I understand that a first SOEB trial had to be discontinued due to hemodynamic instability. Instead, you were positioned in a side-edge position, which you tolerated better and where an intensive exercise training including trunk and head control was conducted.
+Patient: Yes, that's correct.
+Doctor: I see that your muscle tone and strength remained severely reduced, particularly on your hemiplegic side, and a second SOEB trial failed again.
+Patient: Yes, that's right.
+Doctor: Physical therapy was also limited because of reduced self-activity and suspected impaired perception and visual acuity.
+Patient: Yes, that's correct.
+Doctor: Consequently, occupational therapy was involved to create a basis of communication, to support functional initiation of upper limb movements, and to integrate perception-training into activities of daily living.
+Patient: Yes, that's correct.
+Doctor: I see that you are now tolerating spontaneous breathing trials and showing signs of being alert during therapy, but still unable to communicate.
+Patient: Yes, that's right.
+Doctor: And I understand that you are hemodynamically stable, even in an SOEB position, but still remain functionally dependent.
+Patient: Yes, that's correct.
+Doctor: Your current CPAx score is 6/50.
+Patient: Yes, that's correct.
+Doctor: I see. We will continue to monitor your condition and provide you with the necessary therapy and support. Is there anything else you would like to ask or discuss?
+Patient: No, that's all. Thank you, doctor.
+Doctor: You're welcome. If you have any questions or concerns, don't hesitate to ask.

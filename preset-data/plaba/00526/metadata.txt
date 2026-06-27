@@ -1,0 +1,5 @@
+pmid:        32710511
+question:    40
+adaptation:  adaptation1
+title:       Compression therapy for leg oedema in patients with heart failure
+sentences:   13

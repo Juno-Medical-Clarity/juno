@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0450
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Short term memory loss
+- Severity: Not explicitly stated
+- Duration: Symptoms have been present for the last five to ten years
+- Associated symptoms: Trouble absorbing technical knowledge and computer skills; stressed due to work demands
+- Relevant medical history: No history of stroke
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: Significant stress from work at T-Mobile customer service; personal stress from being widowed for eleven years after husband died in a car accident caused by a drunk driver.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

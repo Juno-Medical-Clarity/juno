@@ -1,0 +1,9 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [1:2] 'general-complex' -> 'pragmatic'
+  [3:6] 'general-complex' -> 'two - arm'
+  [7:16] 'general-complex' -> 'practice - level cluster Phase IV randomised controlled trial'

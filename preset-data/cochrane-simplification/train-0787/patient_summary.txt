@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0787  |  gem_id: gem-cochrane-simplification-train-788  |  doi: 10.1002/14651858.CD002904.pub2
+
+This review found no significant effect of glucocorticosteroids on chronic hepatitis, but the amount of data is sparse. Accordingly there is insufficient evidence to neither confirm nor exclude beneficial and harmful effects of glucocorticosteroids for hepatitis C. Further, the evidence is unclear as to whether glucocorticosteroids treatment can be safely administered for other diseases in patients with concomitant hepatitis C. The authors were unable to identify randomised clinical trials on glucocorticosteroids for acute hepatitis C.

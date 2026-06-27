@@ -1,0 +1,1 @@
+We employed an integrative genomics approach to identify candidate TF binding motifs that confer breast cancer-specific phenotypes identified by GWAS.

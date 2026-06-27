@@ -1,0 +1,6 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.0
+split:       train
+
+jargon_spans: (no jargon annotation found for this sentence)

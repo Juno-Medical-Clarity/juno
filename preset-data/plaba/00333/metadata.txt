@@ -1,0 +1,5 @@
+pmid:        32941052
+question:    26
+adaptation:  adaptation1
+title:       Transmission of SARS-CoV-2: A Review of Viral, Host, and Environmental Factors
+sentences:   9

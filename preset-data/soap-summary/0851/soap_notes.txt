@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0851
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Living situation: Lives alone.
+- Occupation: Works as a plumber for the last five years.
+- Alcohol use: Drinks occasionally.
+- Smoking: Smokes occasionally.
+- Drug use: Has never tried hard drugs, but drinks and smokes "here and there."
+- Recent travel: Traveled to Mexico earlier this year; describes the trip as relaxing and much needed.
+- Sexual activity: Sexually active with women; notes that sex life isn't as good as it was in Japan, where he mixed with prostitutes.
+- STD testing: Recently tested negative for STDs.
+- Incarceration history: Has never been incarcerated.
+- Blood transfusion history: Has never needed a blood transfusion.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided)
+
+Plan:
+- (No plan or follow-up mentioned)

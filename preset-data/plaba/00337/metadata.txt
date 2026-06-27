@@ -1,0 +1,5 @@
+pmid:        33176093
+question:    26
+adaptation:  adaptation1
+title:       SARS-CoV-2 Transmission among Marine Recruits during Quarantine
+sentences:   15

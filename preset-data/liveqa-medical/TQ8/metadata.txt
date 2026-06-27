@@ -1,0 +1,15 @@
+qid: TQ8
+source_file: 1-120014145.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What, besides cipro, penicillin, and drugs containing dairy products, can my doctor prescribe for my bad UTI?
+nlm_summary: What, besides cipro, penicillin, and drugs containing dairy products, treats UTI?
+
+focus_entities:
+  [F1] (Problem) UTI
+question_types:
+  [T1] TREATMENT
+keywords:
+  [K1] (Problem) allergic to penicillin
+  [K2] (Problem) allergic to dairy products

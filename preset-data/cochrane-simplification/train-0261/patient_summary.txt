@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0261  |  gem_id: gem-cochrane-simplification-train-262  |  doi: 10.1002/14651858.CD001177.pub3
+
+Two trials tested a dressing containing ibuprofen, however, the pain measures and time frames reported were different. One trial indicated that pain relief achieved over 5 days with ibuprofen dressings could represent a clinically relevant reduction in pain. The other trial found no significant difference in the chance of pain relief, measured on the first night of treatment, for ibuprofen dressings compared with foam dressings. This trial, however, was small and participants were only followed for a few weeks, which may not be long enough to assess whether the dressing affects healing. There was evidence from five trials that a local anaesthetic cream (EMLA 5%) reduces the post-procedural pain of debriding leg ulcers but there was insufficient evidence regarding any side effects of this cream and its impact on healing.

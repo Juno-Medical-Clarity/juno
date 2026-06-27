@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0928
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What brings this little guy in today? Guest_family: He's been complaining of a sore throat since last night. I noticed his eyes were really puffy before he went to bed and that's when I gave him some Benadryl. At that time, he also seemed nasally. Sorry to hear that. Did he have a fever? Guest_family: When I took his temperature last night, it was one O one. And did you give him anything for the fever? Guest_family: I was worried about giving him something on top of the Benadryl. I see. And how has he felt otherwise? Guest_family: He appears more sluggish than usual. Fortunately, he's eating and drinking well. Has he been coughing at all? Guest_family: No, but his voice has been a kind of raspy. Any shortness of breath? Guest_family: Um no. How about any episodes of vomiting, diarrhea, or stomach pain? Guest_family: No, I don't think so.

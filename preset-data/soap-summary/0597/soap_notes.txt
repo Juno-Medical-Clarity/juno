@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0597
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is taking two medications but does not remember their names or the reasons for taking them.
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- Figure out the names of the medications and the reasons for taking them.

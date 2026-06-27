@@ -1,0 +1,6 @@
+Doctor: How are you feeling today, sir?
+Patient: I'm doing much better today, doctor.
+Doctor: How is your strength and muscular pain?
+Patient: They're both improving.
+Doctor: Do you have any other complaints today?
+Patient: No, I'm doing quite well, honestly.

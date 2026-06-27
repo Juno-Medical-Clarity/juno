@@ -1,0 +1,5 @@
+drug_focus: coumadin
+question_type: Information
+section_title: DESCRIPTION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d91934a0-902e-c26c-23ca-d5accc4151b6
+sample_id: 0320

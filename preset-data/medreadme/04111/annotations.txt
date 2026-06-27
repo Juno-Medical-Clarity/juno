@@ -1,0 +1,6 @@
+source:      wiki
+side:        simple
+readability: 3.5
+split:       test
+
+jargon_spans: (none)

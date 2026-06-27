@@ -1,0 +1,10 @@
+source:      cochrane_all
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [15:16] 'general-complex' -> 'efficacy'
+  [20:21] 'medical-jargon-google-easy' -> 'tiotropium'
+  [23:25] 'medical-jargon-google-easy' -> 'combination inhalers'
+  [30:31] 'abbr-medical' -> 'COPD'

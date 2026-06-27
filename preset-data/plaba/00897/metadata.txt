@@ -1,0 +1,5 @@
+pmid:        33709165
+question:    73
+adaptation:  adaptation2
+title:       Implementing fast-track in total hip arthroplasty: rapid mobilization with low need for pain medication and low pain values : Retrospective analysis of 102 consecutive patients
+sentences:   18

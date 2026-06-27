@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0394  |  gem_id: gem-cochrane-simplification-train-395  |  doi: 10.1002/14651858.CD004349.pub2
+
+This review was performed to find and assess all trials designed to answer whether lower blood pressure targets are better than standard blood pressure targets. Data from 7 trials in over 22,000 people were analysed. Using more drugs in the lower target groups did achieve modestly lower blood pressures. However, this strategy did not prolong survival or reduce stroke, heart attack, heart failure or kidney failure. More trials are needed, but at present there is no evidence to support aiming for a blood pressure target lower than 140/90 mmHg in any hypertensive patient.

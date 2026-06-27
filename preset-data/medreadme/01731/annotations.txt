@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'noncoding RNAs'
+  [15:18] 'medical-jargon-google-easy' -> 'regulatory RNA cascades'

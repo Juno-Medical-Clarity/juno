@@ -1,0 +1,13 @@
+Aims: Gabapentin (GBP) is widely used to treat neuropathic pain, including diabetic neuropathic pain.
+Our objective was to evaluate the role of diabetes and glycaemic control on GBP population pharmacokinetics.
+Methods: A clinical trial was conducted in patients with neuropathic pain (n = 29) due to type 2 diabetes (n = 19) or lumbar/cervical disc herniation (n = 10).
+All participants were treated with a single oral dose GBP.
+Blood was sampled up to 24 hours after GBP administration.
+Data were analysed with a population approach using the stochastic approximation expectation maximization algorithm.
+Weight, body mass index, sex, biomarkers of renal function and diabetes, and genotypes for the main genetic polymorphisms of SLC22A2 (rs316019) and SLC22A4 (rs1050152), the genes encoding the transporters for organic cations OCT2 and OCTN1, were tested as potential covariates.
+Results: GBP drug disposition was described by a 1-compartment model with lag-time, first-order absorption and linear elimination.
+The total clearance was dependent on estimated glomerular filtration rate.
+Population estimates (between-subject variability in percentage) for lag time, first-order absorption rate, apparent volume of distribution and total clearance were 0.316 h (10.6%), 1.12 h-1 (10.7%), 140 L (7.7%) and 14.7 L/h (6.97%), respectively.
+No significant association was observed with hyperglycaemia, glycated haemoglobin, diabetes diagnosis, age, sex, weight, body mass index, SLC22A2 or SLC22 A4 genotypes.
+Conclusion: This population pharmacokinetics model accurately estimated GBP concentrations in patients with neuropathic pain, using estimated glomerular filtrationrate as a covariate for total clearance.
+The distribution and excretion processes of GBP were not affected by hyperglycaemia or diabetes.

@@ -1,0 +1,230 @@
+# Smith Collection Transcript: RES0136
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: I just started having um difficulty with breathing um starting yesterday and i also developed this cough um yesterday morning
+
+Doctor: Okay so did did the cough come first or the breathing difficulty breathing
+
+Patient: Kind of around the same time when i woke up in the morning
+
+Doctor: And did it wake you up from sleep at all like did you wake up trying to catch a breath or anything
+
+Patient: No
+
+Doctor: Okay so it happened after you had woken up and gotten out of bed and um so can you describe your cough a little bit is it wet or is it dry
+
+Patient: um its just um its just a dry cough
+
+Doctor: Okay youre not bringing up any sputum or any other material
+
+Patient: No
+
+Doctor: And uh are you coughing up any blood by any chance
+
+Patient: No
+
+Doctor: For the shortness of breath can you describe it a little bit is it are you having trouble taking deep breaths or are you breathing faster can you describe it
+
+Patient: Yeah i just feel like um im getting out of breath really easily just like um walking even walking to the kitchen from my bedroom im getting short of breath and it it just started yesterday morning its so odd
+
+Doctor: Okay and have you had anything like this happen before to you
+
+Patient: No
+
+Doctor: No were you doing anything before it started like were you doing any any activities or any are were you doing any exertions at all
+
+Patient: No i was just uh i i slept in i slept in a bit more than usual um and i was feeling quite um drowsy my my doc increased my pain meds and i took the first dose um yesterday night um i actually took an extra pill um um of the morphine um and yeah i dont know maybe it its an allergic reaction to the morphine
+
+Doctor: Have you had any allergic reactions before
+
+Patient: No
+
+Doctor: And so you took an extra morphine last night and then went to sleep um did you wake up coughing or catching your breath or anything like that
+
+Patient: No i actually i ended up waking up at 100 pm or 200 pm i was just very drowsy and uh i think i i think i might have taken a bit too much i dont know the the arthritis pain was just killing me last night and i thought taking an extra pill would help
+
+Doctor: And is this are your symptoms constant or do they come and go
+
+Patient: Theyre constant for the past two days ive also noticed that i have my breath just smells really bad i dont know why
+
+Doctor: Is that something you noticed recently or in the last two days
+
+Patient: Yeah since yesterday actually not even yesterday this morning i would say
+
+Doctor: This morning okay um and is there anything that makes your symptoms worse like does lying down make your symptoms worse
+
+Patient: Not really
+
+Doctor: No how about exerting yourself does it make your symptoms worse
+
+Patient: Yeah
+
+Doctor: Okay um do you have any other symptoms like any fevers or chills
+
+Patient: I checked my fever last night it was um 372
+
+Doctor: Okay so you didnt have a fever last night okay um do you have any other symptoms like dizziness uh any fainting spells
+
+Patient: No
+
+Doctor: Okay how about sore throat headaches muscle pain anything like that
+
+Patient: No
+
+Doctor: Okay any chest pain
+
+Patient: No i dont
+
+Doctor: And um have you been traveling at all recently
+
+Patient: No
+
+Doctor: Any contact with anyone who has been sick recently
+
+Patient: No
+
+Doctor: No uh any nausea or vomiting
+
+Patient: No
+
+Doctor: Okay any night sweats
+
+Patient: No
+
+Doctor: Okay any swelling in your legs or arms hands
+
+Patient: No no i havent noticed any of that
+
+Doctor: Any fatigue just feeling more tired today
+
+Patient: Maybe a little bit
+
+Doctor: Okay have you been having any coldlike symptoms before the two days like in the last week like runny nose sore throat
+
+Patient: No i was like i was absolutely fine
+
+Doctor: Okay um how about do you have any changes in your bowel movements like constipation diarrhea
+
+Patient: No
+
+Doctor: No any trouble with urinating
+
+Patient: No
+
+Doctor: Okay any sleep or appetite issues
+
+Patient: No
+
+Doctor: Okay have you lost uh significant weight in the last few months
+
+Patient: No
+
+Doctor: Okay um have you been exposed to anyone who may have had tuberculosis
+
+Patient: I dont think so
+
+Doctor: No and uh do you have any pets or animals at home
+
+Patient: um i have a dog
+
+Doctor: Have you ever had any allergies to any pets or animals
+
+Patient: No
+
+Doctor: Any exposure to fumes or dust uh with where you live
+
+Patient: No
+
+Doctor: Okay and do you have any past medical history any diagnoses
+
+Patient: I um i just have the osteoarthritis
+
+Doctor: Osteoarthritis okay is that why youre taking the
+
+Patient: Yeah yeah
+
+Doctor: And are you taking any other medications
+
+Patient: I take uh advil
+
+Doctor: Advil okay any allergies that you know of
+
+Patient: um no
+
+Doctor: Okay any previous hospitalizations
+
+Patient: um i had my wisdom teeth removed but no i wasnt i wasnt hospitalized
+
+Doctor: Okay is that the only surgery that youve had or have you had anything else
+
+Patient: Yeah no thats it
+
+Doctor: Any family history of any lung or heart conditions
+
+Patient: uh no
+
+Doctor: Any cancers
+
+Patient: um breast cancer my grandma had it
+
+Doctor: um any uh and currently whats your living situation like do you live with someone
+
+Patient: um i live with my husband
+
+Doctor: Okay
+
+Patient: And my dog
+
+Doctor: And your dog okay and did your husband tell you anything like that has changed in your behaviour at all uh recently
+
+Patient: He just said that i was i was just extremely drowsy yesterday and i was very hard to wake up
+
+Doctor: Okay okay um do you smoke currently
+
+Patient: No
+
+Doctor: Have you smoked in the past
+
+Patient: No
+
+Doctor: Okay and do you work currently
+
+Patient: uh i i do
+
+Doctor: And uh how would you sorry dis you say you dont work or do you work
+
+Patient: Im a banker but im working virtually uh remotely right now
+
+Doctor: Okay and um do you use any recreational drugs like marijuana
+
+Patient: I um no well sometimes ill use marijuana for the pain but i havent been doing that recently for the past two months
+
+Doctor: Okay um how how often would you say you use it
+
+Patient: Only when the pain gets uh too bad so maybe um three or four times a month
+
+Doctor: Okay and do you use any alcohol
+
+Patient: um yeah ill uh ill drink once a week two glasses two or three glasses of wine
+
+Doctor: um any alright so i think that those are all the questions i have for you today do you have any questions or concerns for me
+
+Patient: um no
+
+Doctor: Okay so yeah definitely with the coughing and shortness of breath we will definitely get a coviswab test done um that should come back in the next 24 to 48 hours and then public health will contact you um yeah based on what youre telling me so far we will definitely do a physical examination get your vitals and get your oxygenation and everything done but i also think since you were very drowsy and were had fallen asleep and were really difficult to wake up sometimes you can get whats called aspiration pneumonia um and thats that can also be a possibility and what we will do is get a chest xray get some blood work done as well today um now we may require antibiotics and if your vitals unstable we might actually admit you as well um does that sound good
+
+Patient: Yeah
+
+Doctor: Alright so yeah well get those tests done and well be there with you shortly well also get like an ekg done as well
+
+Patient: Sure
+
+Doctor: Alright okay

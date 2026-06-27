@@ -1,0 +1,208 @@
+# Smith Collection Transcript: RES0052
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Would you mind by starting to tell me what brought you in
+
+Patient: Sure my 5 year old daughter i noticed that shes been coughing a lot over the past two days she sounds like she has a stuffy nose and now shes got this pink eye so i just wanted to get it checked out by you
+
+Doctor: Yeah for sure so the cough started 5 days ago
+
+Patient: Two days ago
+
+Doctor: OK and is the cough barky or harsh sounding
+
+Patient: Yes it sounds harsh
+
+Doctor: OK alright was there anything that changed two days ago that might have triggered the cough
+
+Patient: I dont think so although she does go to daycare
+
+Doctor: OK uh and so has she been bringing up any sputum with the cough
+
+Patient: No no sputum that ive noticed
+
+Doctor: OK notice any blood
+
+Patient: No
+
+Doctor: Alright and is the cough worse at any particular time of day
+
+Patient: No
+
+Doctor: OK and has there been any wheezing
+
+Patient: No not that i noticed
+
+Doctor: OK and you mentioned the red eyes when did you notice that
+
+Patient: That was just yesterday
+
+Doctor: OK any discharge from the eyes
+
+Patient: No
+
+Doctor: OK nothing like that no tearing or anything like that
+
+Patient: No
+
+Doctor: OK umm and has she complained about any like changes to vision
+
+Patient: No not really just the pain
+
+Doctor: No ok uh and how about any itchiness in the eyes
+
+Patient: Shes been rubbing it and so its possibly itchy
+
+Doctor: OK and have you noticed any mucus coming out
+
+Patient: Umm no its actually stuffy
+
+Doctor: OK
+
+Patient: Yeah not so much mucous
+
+Doctor: OK has she mentioned anything about losing smell
+
+Patient: No
+
+Doctor: OK umm and has she mentioned anything about being congested
+
+Patient: She just sounds like shes congested
+
+Doctor: OK umm any sore throat
+
+Patient: Umm possibly
+
+Doctor: OK how has she been eating
+
+Patient: um shes been eating ok i guess shes been eating alittle less than usual
+
+Doctor: OK umm would you say that shes been going to the bathroom as often as normal
+
+Patient: Yep i would say so
+
+Doctor: No changes there ok um and has she had any loss of taste
+
+Patient: Umm possibly since shes not eating as much
+
+Doctor: OK any fevers or chills
+
+Patient: um she did feel a little bit hot but i didnt take her temperature
+
+Doctor: OK so hot we will definitely check for fever today any night sweats
+
+Patient: Umm no
+
+Doctor: OK and has she been gaining weight ok
+
+Patient: Yep yep no change nothing abnormal there
+
+Doctor: OK and has she been complaining about having any stomach pains
+
+Patient: Umm no
+
+Doctor: OK has she had any nausea or vomiting
+
+Patient: um no no
+
+Doctor: OK and how about any painful urination
+
+Patient: No
+
+Doctor: OK and any diarrhea
+
+Patient: Umm no
+
+Doctor: OK and has she mentioned anything about headaches
+
+Patient: No
+
+Doctor: OK and how about any aches or pains anywhere
+
+Patient: uh no i dont think so
+
+Doctor: Have you noticed any rashes
+
+Patient: No
+
+Doctor: OK and has she been diagnosed with any conditions before
+
+Patient: No
+
+Doctor: OK and any reason for her to be hospitalized
+
+Patient: uh no
+
+Doctor: OK um does she take any medications regularly
+
+Patient: um no
+
+Doctor: OK does she have any allergies to medications
+
+Patient: Umm no
+
+Doctor: Alright any surgeries before
+
+Patient: Umm no
+
+Doctor: Any concerns with her growth or development
+
+Patient: Umm no everythings been pretty normal
+
+Doctor: OK and any concerns about her vision or hearing
+
+Patient: No
+
+Doctor: OK and can tell you tell me a little bit about the living situation currently are you the primary caregiver
+
+Patient: I am
+
+Doctor: OK and who else is in the home
+
+Patient: Her father
+
+Doctor: OK are there any pets around
+
+Patient: No
+
+Doctor: Alright and does anybody in the house smoke
+
+Patient: No no one smokes
+
+Doctor: OK any exposures in the house to like carpets or dust or inhalants that might bring on a cough
+
+Patient: No
+
+Doctor: OK ummm and uhh anybody in the family been sick
+
+Patient: No
+
+Doctor: OK and how about anybody you mentioned at the daycare was anybody been sick there
+
+Patient: No i dont think so i contacted them and checked but it seems like no ones been sick
+
+Doctor: OK and you say you havent traveled anywhere
+
+Patient: Oh no no not recently
+
+Doctor: OK and any lung conditions or heart conditions that run in the family
+
+Patient: No
+
+Doctor: OK and how about any genetic conditions or congenital conditions in the family
+
+Patient: No none none that i know of
+
+Doctor: OK so the main symptoms are the cough that started two days ago and also youve noticed shes been congested and sorry what was the last symptom
+
+Patient: She has this pink eye and she has a cough
+
+Doctor: Yeah right that could be conjunctivitis ok so at this point we will certainly run some investigations to look into what this could be it sounds like a viral infectious type of process especially if its involving the eyes nose and and with a cough and so we will test with a swab for covid for sure but it could be something more common like the common cold we just need to make sure that were comprehensive in that with the testing
+
+Patient: That sounds great thank you

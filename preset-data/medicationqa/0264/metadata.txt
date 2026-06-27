@@ -1,0 +1,5 @@
+drug_focus: prednisolone
+question_type: Pronounce name
+section_title: NA
+source_url: https://www.merriam-webster.com/dictionary/prednisolone
+sample_id: 0264

@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0449
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a truck driver currently on sick leave.
+- Patient is married with three children.
+- Patient smokes about two packs of cigarettes a day.
+- Patient does not consume alcohol.
+- Patient denies use of illegal or prescription drugs inappropriately.
+- No known family medical conditions.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment data provided.]
+
+Plan:
+- [No plan data provided.]

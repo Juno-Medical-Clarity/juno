@@ -1,0 +1,11 @@
+source:      pnas
+side:        simple
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [1:5] 'medical-jargon-google-easy' -> 'ubiquitin - proteasome system'
+  [6:7] 'medical-jargon-google-easy' -> 'autophagy'
+  [11:13] 'medical-jargon-google-easy' -> 'proteolytic pathways'
+  [19:21] 'medical-jargon-google-easy' -> 'proteotoxic proteins'
+  [22:24] 'medical-jargon-google-easy' -> 'eukaryotic cells'

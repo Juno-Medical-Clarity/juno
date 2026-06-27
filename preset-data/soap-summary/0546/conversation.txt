@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0546
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi! Hello! How are you feeling now? I am feeling okay. Yeah, looks like your condition is improving. Yes, I think so too.

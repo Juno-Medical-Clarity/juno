@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1295
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke cigarettes? Yes, I do. How many packs a day. Maybe one a day. Okay, you should think about quitting.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1158
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What brings you in today? I have this nasty cough and my nose has been super stuffy. Are you bringing anything up when you cough? Not really, no. Are you having any other symptoms, such as chest pain, headaches, nausea, or vomiting? No. I did have a slight headache last night but I took Advil and it's since gotten better. Are you taking anything for the cough or stuffy nose? Just drinking tea and taking cough drops here and there. Okay. Let's take a look at you. Hm it appears that you have a U R I.

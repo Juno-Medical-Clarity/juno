@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0310
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Feeling of being off balance, tiredness, weakness, lower and mid back pain.
+- Severity: Not quantified but described as significant enough to affect balance and coordination.
+- Duration: Symptoms have been ongoing for six to eight weeks.
+- Associated Symptoms: None explicitly mentioned apart from the recent fall.
+- Relevant Medical History: Had pneumonia ten days prior to the onset of new symptoms; took a full course of amoxicillin and Cipro (for UTI).
+- Family History: Not mentioned.
+- Allergies: Not mentioned.
+- Other Concerns: Patient expresses concern about balance and coordination worsening after taking antibiotics; experienced a fall but states balance issues predated the fall.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No specific plan or actions provided.

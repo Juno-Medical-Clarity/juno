@@ -1,0 +1,186 @@
+# Smith Collection Transcript: RES0201
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I’m just going to have a chat with you get an idea of whats going on and then i can go over it with the doctor will come back together and talk to you about the next steps how does that sound to you
+
+Patient: Thats great thank you
+
+Doctor: Awesome ok it says here that you have been having a sore throat can you tell me a little bit more about that
+
+Patient: Sure yeah the sore throat it started about four days ago and its really its its very sore i can drink fluids ok but im even having some issues swallowing food
+
+Doctor: OK so you said four days ago
+
+Patient: Yes four days ago
+
+Doctor: OK so its been kind of sore some issues swallowing food ok and over the last four days has it gotten worse better that it stayed the same
+
+Patient: um the sore throat has its got its getting worse for sure
+
+Doctor: OK have you ever had anything like this before
+
+Patient: I i i guess when i was younger i had mono and i had a sore throat when i had that yeah
+
+Doctor: OK is there anything that makes it worse or like anything that makes it feel better right now
+
+Patient: No not really ive tried you know ive tried gargling with salt water ive tried some painkillers like nothing nothing seems to be working
+
+Doctor: Uhm ok and you said youve also had some difficulty breathing
+
+Patient: Yeah thats right
+
+Doctor: Did that start around the same time
+
+Patient: That actually started yesterday and its gotten me very concerned
+
+Doctor: OK yeah i can understand how that would be concerning were definitely going to try to get to the bottom of it today um ok so started yesterday said then has it gotten any worse is it the same way better
+
+Patient: um the well i guess its getting worse yeah
+
+Doctor: Do you feel like its all the time or is it on and off
+
+Patient: Its its just there all the time
+
+Doctor: Have you ever had any difficulty breathing in the past
+
+Patient: um no no no not like this
+
+Doctor: OK uh have you have you recently been in contact with anyone thats been sick
+
+Patient: um i have no i dont leave the house much nowadays i go to the grocery store i go to the bank just essential things
+
+Doctor: OK have you traveled recently
+
+Patient: um no no i havent left the city for anything
+
+Doctor: OK do you know if your immunizations are up to date
+
+Patient: Ah yes everythings up to date
+
+Doctor: OK that’s good see you so im just gonna ask you about a few other symptoms i just like to get an idea if theres anything else you been experiencing have you had a cough at all
+
+Patient: No
+
+Doctor: Have you had a runny nose
+
+Patient: No runny nose
+
+Doctor: Have you had any headaches
+
+Patient: No
+
+Doctor: Have you had any chest pain
+
+Patient: Ah nope no chest pain
+
+Doctor: Have you have you lost any of your sense of smell or taste
+
+Patient: um maybe taste a little bit but not smell
+
+Doctor: OK ok when did that start
+
+Patient: The taste ah maybe two days ago
+
+Doctor: OK ok taste two days ago has it been on and off or has it been kind of constantly like a reduced sense of taste
+
+Patient: Its its its been pretty constant
+
+Doctor: OK have you had anything like that before
+
+Patient: No
+
+Doctor: Have you had any fevers
+
+Patient: I dont think so
+
+Doctor: OK have you had any chills or night sweats
+
+Patient: No
+
+Doctor: Have you felt overall really tired and weak
+
+Patient: I i felt tired maybe not weak but my i feel like my muscles all ache
+
+Doctor: OK ok and when did that start
+
+Patient: That started like immediately after my sore throat
+
+Doctor: OK ok ok well we might circle back i think there is any more questions you want to ask right now but just in general in terms of your overall health do you have any chronic conditions that you take medications for or see a doctor for regularly
+
+Patient: um i have mild copd
+
+Doctor: OK and what medications are you currently taking
+
+Patient: um im on a long acting beta agonist
+
+Doctor: OK is that the only medication you take
+
+Patient: Pardon me
+
+Doctor: Is that the only medication that you take
+
+Patient: And i also take a couple of vitamins
+
+Doctor: OK do you have any allergies
+
+Patient: um no no allergies
+
+Doctor: Just gonna ask you few questions about your lifestyle do you live here in town
+
+Patient: I do
+
+Doctor: Do you ah live alone or with family
+
+Patient: I live alone
+
+Doctor: OK and do you smoke
+
+Patient: I quit two years ago
+
+Doctor: Oh congratulations before that did you did you smoke for many years
+
+Patient: I did i smoked for 40 years
+
+Doctor: OK do you drink alcohol
+
+Patient: I drink occasionally maybe like on the weekends
+
+Doctor: OK uhm and do you use cannabis
+
+Patient: No
+
+Doctor: OK any other drugs
+
+Patient: No no other drugs
+
+Doctor: OK and are you retired do you work
+
+Patient: I am retired yeah
+
+Doctor: OK what did you do for work before
+
+Patient: I worked for gm
+
+Doctor: Crock ok and do you have any family history of respiratory problems heart problems and
+
+Patient: No
+
+Doctor: OK uhm ok i think that that about covers my questions for you right now is there anything else that you wanted to add that i didnt ask you about
+
+Patient: um no i dont think so
+
+Doctor: OK i’m going to go over this with the document im working with today im guessing just because some of your symptoms are in line with common symptoms of covid 19 that will probably do a covid swab and what happens with that is since we do have some syptoms will have to isolate until the result come back and potentially after that if you still have symptoms even if it is negative so thats just kind of a heads up on that maybe one of the next things that happens we will probably get you a chest xray cause we want to get an idea of whats going on in there did you have any other questions
+
+Patient: No thank you very much
+
+Doctor: OK well thanks for chatting with me we should be back shortly to kind of let you know with the next step
+
+Patient: OK great thank you
+
+Doctor: Thanks

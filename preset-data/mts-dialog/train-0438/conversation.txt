@@ -1,0 +1,8 @@
+Doctor: You have been diagnosed with allergic rhinitis, right? For how many years?
+Patient: Um, I would say around four years now. Oh my God it has been so, so many medications that I had to take for this.
+Doctor: Yeah, it's hard to control. Are you diabetic?
+Patient: No, I don't have any such conditions.
+Doctor: So no hypertension or any kidney diseases?
+Patient: Nope.
+Doctor: Every been diagnosed with tuberculosis, asthma, or lung disease?
+Patient: No I have not.

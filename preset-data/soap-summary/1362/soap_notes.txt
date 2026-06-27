@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 1362
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Debilitating arthritis
+- Severity: Debilitating
+- Duration: Not specified
+- Associated Symptoms: None mentioned
+- Relevant Medical History: Arthritis
+- Family History: Not mentioned
+- Allergies: Not mentioned
+- Concerns: Risks of infection for the surgery, anesthesia concerns
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- Recommend knee replacement surgery.
+- Discussed risks of infection (less than one percent) and use of prophylactic antibiotics.
+- Confirmed that the patient will be asleep during the surgery.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2763  |  gem_id: gem-cochrane-simplification-train-2764  |  doi: 10.1002/14651858.CD004234.pub3
+
+This review assessed evidence from 1509 participants in 15 randomised, double blind, placebo-controlled clinical trials of naproxen or naproxen sodium (a non-steroidal anti-inflammatory drug) in adults with moderate to severe acute postoperative pain. At doses equivalent to 500 mg and 400 mg, orally administered naproxen provides effective analgesia. About half of those treated experienced at least half pain relief over four to six hours, and the effects lasted, on average, up to nine hours. Associated adverse events did not differ from placebo, but these studies are of limited use for studying adverse effects.

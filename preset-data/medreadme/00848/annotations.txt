@@ -1,0 +1,7 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [3:5] 'general-complex' -> 'statistically significant'

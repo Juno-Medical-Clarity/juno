@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0985
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a new mother with an eight-pound thirteen-ounce baby born via C-section.
+- Baby has never been hospitalized and was born a week early.
+- Patient reports having thumb and toenail infections during pregnancy, treated with rubbing alcohol.
+- Family history of boils; patient is not afraid of minor infections.
+- Patient smoked during pregnancy but stopped after five months.
+- No history of infections during pregnancy such as GBS or STD infections.
+- No unusual diagnoses during the pregnancy.
+
+Objective:
+- Patient was discharged 48 hours after delivery.
+- No measurable or observable data mentioned.
+
+Assessment:
+- No specific assessments or diagnoses provided.
+
+Plan:
+- No specific plan or follow-up mentioned.

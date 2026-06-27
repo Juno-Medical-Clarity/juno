@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0062
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Pain in the right side of the abdomen
+- Started 8 hours ago
+- Initially intermittent, now constant for the past 5-6 hours
+- Aching pain, rated 8/10
+- Worsened by eating, no relief with Tylenol
+- Associated with nausea, no vomiting
+- No fever, chills, sweats, changes in bowel movements, urinary patterns, skin changes, or appetite
+- Slight fatigue due to pain
+- PMHx: diabetes, managed with metformin
+- No recent travel, infections, or contact with ill individuals
+- No significant weight loss
+- No known allergies
+- No past hospitalizations, only wisdom teeth removal surgery
+- FHx: father had a heart attack in his sixties
+- SocHx: lives alone in an apartment, laid off due to COVID, exercises regularly, drinks 1-2 glasses of wine daily, no smoking or recreational drug use
+
+Past Medical History:
+- Diabetes, managed with metformin
+- No other significant medical or surgical history
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Abdominal pain, likely related to eating fatty foods
+
+Plan:
+- Further investigations needed to determine the cause of abdominal pain
+- Possible referral to a gastroenterologist for further evaluation
+- Continue current diabetes management with metformin
+- Advise on dietary modifications to avoid fatty foods
+- Follow-up appointment to review progress and test results

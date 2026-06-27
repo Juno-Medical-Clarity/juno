@@ -1,0 +1,5 @@
+drug_focus: Glargine, Insulin
+question_type: Combination
+section_title: PRINCIPAL DISPALY PANEL - 10 ML-1 COUNT VIAL CARTON
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d5e07a0c-7e14-4756-9152-9fea485d654a
+sample_id: 0201

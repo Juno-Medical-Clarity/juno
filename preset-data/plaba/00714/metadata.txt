@@ -1,0 +1,5 @@
+pmid:        29204208
+question:    56
+adaptation:  adaptation2
+title:       Pallister-Hall Syndrome
+sentences:   8

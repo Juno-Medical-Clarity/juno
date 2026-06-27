@@ -1,0 +1,1 @@
+We develop nowcasting methods that use historical patterns of reporting delays to estimate occurred-but-not-reported monthly malaria cases.

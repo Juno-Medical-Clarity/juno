@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1222
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is here for a follow-up visit.
+- No changes in social history or medical history since the last visit three months ago (December 3, 2003).
+- Patient confirms that previous documentation is correct.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

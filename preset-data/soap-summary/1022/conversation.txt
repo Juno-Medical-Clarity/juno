@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1022
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How's your husband doing? He's good. He usually comes with me to my appointments, but he had to run some errands this morning. Happy to hear that he's also doing well. Me too. I just have one more question for you regarding your social history. Do you smoke? No, never. Okay, so no changes.

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1149
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello, are you translating for the patient today? I am sorry, but I do not speak Spanish. Guest_family: Yes doctor. My chart says this man is fifty two years old, is all of that correct? Guest_family: Yes doctor, that's correct. Good, so, what seems to be the problem today? Guest_family: He hurt himself a while back when he slipped on a grape while he was at the grocery store. Oh no, when was this? Guest_family: It was on October second two thousand eight. Which knee did he injure? Guest_family: Doctor, it was his left knee. How has he been treated for this so far? Guest_family: He went straight to the E D immediately, and then he saw his P C P. What did the P C P recommend? Guest_family: He only referred him to P T, and gave him a knee brace.

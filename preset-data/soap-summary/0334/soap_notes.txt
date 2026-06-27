@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0334
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient had a lymph node biopsy in September 2003.
+- The result of the biopsy came back negative.
+- No symptoms, severity, duration, associated symptoms, relevant medical history, family history, allergies, or other concerns explicitly mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

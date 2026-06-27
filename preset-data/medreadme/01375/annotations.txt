@@ -1,0 +1,10 @@
+source:      plos_pathogens
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [6:9] 'medical-jargon-google-easy' -> 'CD8 + T'
+  [11:12] 'abbr-general' -> 'Tregs'
+  [18:19] 'medical-jargon-google-easy' -> 'allele'
+  [23:24] 'medical-jargon-google-easy' -> 'epitope'

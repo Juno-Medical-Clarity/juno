@@ -1,0 +1,10 @@
+Doctor: Have you lost weight?
+Patient: No, I haven't, you can ask my daughter.
+Doctor: How about anything like fever, nausea, vomiting, pain?
+Patient: No.
+Doctor: And as we discussed you have problem talking and comprehending.
+Patient: Yes.
+Doctor: And you get urine infections too?
+Patient: Yes.
+Doctor: And as discussed, your drainage is similar to past episodes when you had such infection?
+Patient: Yes.

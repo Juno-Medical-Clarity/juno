@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0723
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Were you ever diagnosed with any kind of cancer in the past? No. Did you ever had any rashes? Was there any change in your moles? No. Any sudden weight loss history? No. How about your energy level how do you feel? I feel great, my energy level is quite good.

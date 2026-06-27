@@ -1,0 +1,5 @@
+pmid:        7486360
+question:    62
+adaptation:  adaptation2
+title:       Outpatient management of acute urticaria: the role of prednisone
+sentences:   15

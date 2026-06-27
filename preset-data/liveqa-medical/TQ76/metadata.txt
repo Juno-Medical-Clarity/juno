@@ -1,0 +1,12 @@
+qid: TQ76
+source_file: 1-136399685.xml.txt
+dataset: LiveQA Medical (TREC 2017)
+dataset_url: https://github.com/abachaa/LiveQA_MedicalTask_TREC2017
+
+paraphrase: What is fibromyalgia and how is it treated?
+nlm_summary: What are alternative treatments for fibromyalgia?
+
+focus_entities:
+  [F1] (Problem) acute fibromyalgia
+question_types:
+  [T1] TREATMENT

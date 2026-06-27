@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0532
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Your condition is improved, and you look pretty stable. Yeah, I feel much better.

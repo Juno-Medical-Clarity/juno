@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0601  |  gem_id: gem-cochrane-simplification-train-602  |  doi: 10.1002/14651858.CD006002.pub2
+
+This meta analysis of six randomised clinical trials of interferon shows that even Interferon alpha is not an ideal drug for this infection. Among the 169 participants included in primary meta analysis, interferon alpha induced loss of virus, normalisation of liver tests, and improvement in the liver biopsy in more patients compared with those who were left untreated. Unfortunately, most of these patients did not have sustained response after stopping treatment. Additional analysis of two trials comparing a higher dose of interferon alpha with lower dose among randomly assigned participants showed no significant difference in outcome between the two groups. There were differences in dosage and duration of interferon alpha used among included trials as well as some other methodological weakness which places a high risk of bias in this meta analysis.

@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [11:14] 'medical-jargon-google-easy' -> 'type I interferons'
+  [15:16] 'medical-jargon-google-hard' -> 'A20'
+  [20:24] 'medical-jargon-google-hard' -> 'IFNg - mediated dysfunction'

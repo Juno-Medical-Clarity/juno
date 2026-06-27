@@ -1,0 +1,10 @@
+source:      plos_genetics
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'phenotype'
+  [5:8] 'medical-jargon-google-hard' -> 'RNAi knockdown strain'
+  [11:14] 'medical-jargon-google-hard' -> 'maternal Lctra expression'
+  [20:23] 'medical-jargon-google-easy' -> 'dosage compensation suppression'

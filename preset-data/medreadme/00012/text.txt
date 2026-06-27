@@ -1,0 +1,1 @@
+We then introduce methods which build on prior case information only available at the time of the target month of interest to anticipate the total number of cases to occur that month, a fraction of which are not known until the subsequent month (s).

@@ -17,6 +17,9 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
+from error_codes import ErrorCode
+from utils.error_handler import JunoError
+
 
 # ---------------------------------------------------------------------------
 # Helpers / fixtures
@@ -149,7 +152,7 @@ def test_generate_text_passes_safety_settings(vertex_env):
 
 
 def test_generate_text_max_tokens_logs_warning(vertex_env):
-    """When finish_reason == MAX_TOKENS, log a warning but still return text."""
+    """When finish_reason == MAX_TOKENS, raise JunoError with LLM_MAX_TOKENS code."""
     mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
@@ -166,11 +169,10 @@ def test_generate_text_max_tokens_logs_warning(vertex_env):
     from utils.llm import LLMClient
     client = LLMClient()
 
-    with _capture_logs("utils.llm", "WARNING") as captured:
-        result = client.generate_text("test prompt")
+    with pytest.raises(JunoError) as exc_info:
+        client.generate_text("test prompt")
 
-    assert result == "partial output"
-    assert any("max tokens" in msg.lower() for msg in captured)
+    assert exc_info.value.error_code == ErrorCode.LLM_MAX_TOKENS
 
 
 def test_generate_text_no_candidates_raises(vertex_env):
@@ -184,8 +186,9 @@ def test_generate_text_no_candidates_raises(vertex_env):
 
     from utils.llm import LLMClient
     client = LLMClient()
-    with pytest.raises(RuntimeError):
+    with pytest.raises(JunoError) as exc_info:
         client.generate_text("test prompt")
+    assert exc_info.value.error_code == ErrorCode.LLM_NO_CANDIDATES
 
 
 # ---------------------------------------------------------------------------
@@ -255,5 +258,6 @@ def test_generate_json_invalid_raises_value_error(vertex_env):
 
     from utils.llm import LLMClient
     client = LLMClient()
-    with pytest.raises(ValueError):
+    with pytest.raises(JunoError) as exc_info:
         client.generate_json("prompt")
+    assert exc_info.value.error_code == ErrorCode.LLM_INVALID_JSON

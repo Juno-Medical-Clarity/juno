@@ -1,0 +1,5 @@
+Doctor: The patient has possible free air in their diaphragm.
+Guest_clinician: How old is the patient?
+Doctor: Seventy six.
+Guest_clinician: Past medical history?
+Doctor: Unknown as of now.

@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [3:6] 'medical-jargon-google-easy' -> 'serious adverse events'
+  [8:10] 'medical-jargon-google-easy' -> 'ursodeoxycholic acid'
+  [15:16] 'general-complex' -> 'placebo'

@@ -1,0 +1,36 @@
+# SOAP Notes — Sample 0153
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presents with left hand pain at the base of thumb for the past 2 days, worsening
+- Pain is achy at baseline but becomes sharp with movement or gripping (writing, using computer)
+- Pain rated 6/10 in severity
+- Pain is localized to the base of thumb and does not radiate
+- Aggravated by thumb opposition and rotation
+- No prior treatment attempted, has been avoiding using hand
+- Denies any prior injuries or trauma to the hand
+- Works extensively on computer, types frequently with left hand
+- Takes handwritten notes as left-handed
+- Denies any medical conditions
+- No medications or allergies
+- No previous surgeries or hospitalizations
+- Family history of colon, breast, and ovarian cancer in aunts and uncles
+- Currently working online, avoiding handwritten notes due to pain
+- Has not taken any analgesics for the pain
+- Lives alone in an apartment
+- Former smoker (5 years ago for 1-2 years, low quantity), occasional alcohol (beer on weekends) and marijuana edible (once a month)
+
+Objective:
+- Able to make a fist but with pain at the base of thumb
+- No pain with fist formation without thumb involvement
+- Wrist rotation is painless
+- Positive Finkelstein test (severe pain with passive ulnar deviation of wrist with thumb flexed and fingers covering thumb)
+
+Assessment:
+- Likely de Quervain's tenosynovitis
+
+Plan:
+- X-ray to rule out osteoarthritis
+- Conservative management with thumb splint
+- Consider corticosteroid injection if conservative measures and physical therapy fail to improve symptoms and pain affects work
+- Follow-up as needed

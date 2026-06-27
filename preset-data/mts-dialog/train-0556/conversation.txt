@@ -1,0 +1,5 @@
+Doctor: Hello! How are you doing?
+Patient: Hello Doctor! I am good.
+Patient: I am here today for my follow-up, as suggested.
+Doctor: Has it been a month already?
+Patient: Yes, seeing you after a month.

@@ -1,0 +1,6 @@
+source:      plos_genetics
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans: (none)

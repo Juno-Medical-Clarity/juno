@@ -1,0 +1,5 @@
+pmid:        29218312
+question:    15
+adaptation:  adaptation1
+title:       Potassium Homeostasis, Oxidative Stress, and Human Disease
+sentences:   5

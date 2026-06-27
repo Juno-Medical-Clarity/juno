@@ -1,0 +1,10 @@
+Doctor: Hello, I will ask you a few basic questions, okay?
+Patient: Okay.
+Doctor: What is your living status? Do you live alone or with family?
+Patient: I am with my husband.
+Doctor: What is your education level?
+Patient: I cleared my twelfth grade but never joined college after that.
+Doctor: Um, did you ever take any kind of illicit drugs?
+Patient: Nope.
+Doctor: Any chronic drinking habit or smoking?
+Patient: No, I never smoked, and I do take two or three drinks daily but nothing like being alcoholic.

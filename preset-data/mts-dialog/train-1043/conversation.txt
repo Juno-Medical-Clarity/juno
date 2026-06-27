@@ -1,0 +1,3 @@
+Doctor: Have you ever had any major surgeries?
+Patient: I had a skin tag removed but no. No major surgeries.
+Doctor: Okay.

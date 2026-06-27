@@ -1,0 +1,5 @@
+drug_focus: metoclopramide
+question_type: Information
+section_title: HOW SUPPLIED
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0826c44b-2955-45c4-aae2-3f08fdb3486e
+sample_id: 0342

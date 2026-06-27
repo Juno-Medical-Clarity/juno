@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0108
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Runny nose and cough for the past week
+- Cough started first, dry, comes and goes
+- Symptoms improve with OTC medications
+- Cold air worsens cough
+- Stuffy nose, clear nasal discharge
+- Reduced sense of smell, no issues with taste
+- No SOB, wheeziness, chest pain, vision/hearing changes, weight loss, fevers, excessive fatigue, rashes, palpitations, bowel changes, nausea/vomiting, headaches, fainting, dizziness, joint pain
+- Body feels achy
+- Concerned about COVID due to recent death of acquaintance
+
+Past Medical History:
+- PMHx: depression (diagnosed at 15)
+- Medications: Prozac (started 1 year ago)
+- No allergies
+- Immunisations up to date
+- FHx: high cholesterol
+- SocHx: no smoking, occasional marijuana use (2-3 times a week), no alcohol
+- Recent exposure: grocery shopping near someone coughing
+- No recent travel
+
+Objective:
+- 
+
+Assessment:
+- Common cold
+- COVID-19 (to rule out)
+
+Plan:
+- Investigations: COVID swab
+- Treatment: supportive care (hydration, Tylenol for fever/pain, Advil for headache/sinus pressure)
+- Advice: self-isolate for 14 days, seek ER if symptoms worsen or neurological symptoms develop

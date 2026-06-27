@@ -1,0 +1,19 @@
+source:      nhir_Public_Health_Research
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [8:9] 'medical-name-entity' -> 'MEDLINE'
+  [26:27] 'medical-name-entity' -> 'EMBASE'
+  [29:37] 'medical-name-entity' -> 'Cumulative Index to Nursing and Allied Health Literature'
+  [38:39] 'abbr-medical' -> 'CINAHL'
+  [42:45] 'medical-name-entity' -> 'Commonwealth Agricultural Bureaux'
+  [46:47] 'abbr-medical' -> 'CAB'
+  [51:52] 'medical-name-entity' -> 'Cochrane'
+  [54:58] 'medical-name-entity' -> 'Education Resources Information Centre'
+  [59:60] 'abbr-medical' -> 'ERIC'
+  [62:63] 'medical-name-entity' -> 'PsycINFO'
+  [65:69] 'medical-name-entity' -> 'Social Science Citation Index'
+  [71:77] 'medical-name-entity' -> 'Applied Social Sciences Index and Abstracts'
+  [78:79] 'abbr-medical' -> 'ASSIA'

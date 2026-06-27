@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0964
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So, tell me a little bit more about your family history, please. Sure, I know that my grandmother on my mom's side had pancreatic cancer, and my dad had prostate cancer. Besides cancer, are there any other conditions that you know run in your family? Um, I know that my dad had heart disease, as well as diabetes. Thank you, this is good information to know.

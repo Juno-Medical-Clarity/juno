@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 1066
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Low moods
+- Severity: Rarely long-lasting
+- Duration: Occurs "every now and again" with certain stressors
+- Associated symptoms: None explicitly mentioned
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: Patient has never had psychiatric or psychological treatment; experiences low moods related to stressors.
+
+Objective:
+- (No measurable or observable data provided)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned)

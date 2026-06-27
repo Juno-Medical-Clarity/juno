@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3509  |  gem_id: gem-cochrane-simplification-train-3510  |  doi: 10.1002/14651858.CD003967.pub2
+
+This review of clinical studies found that increasing haemoglobin to high levels lowered the chance of a person having a seizure, but increased blood pressure. Haemoglobin levels above 133 g/L did not reduce the risk of death in people with heart and kidney disease.

@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0374
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in the back, started with a pimple on the buttock.
+- Severity: Not specifically quantified, but implied concern about the condition.
+- Duration: Not explicitly mentioned.
+- Associated Symptoms: High blood sugars.
+- Relevant Medical History: Admitted to the hospital with high blood sugars; had an I&D (incision and drainage) procedure.
+- Family History: African American father, who was scared about the situation.
+- Allergies: None mentioned.
+- Other Concerns: Patient expressed worry about the possibility of the condition being cancerous.
+
+Objective:
+- High blood sugars (exact number not known).
+- Positive bacteria found in blood culture.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- Evaluation for surgery.

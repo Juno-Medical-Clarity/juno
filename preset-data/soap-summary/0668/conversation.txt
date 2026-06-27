@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0668
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you take Diovan, estradiol, Norvasc, Wellbutrin? Yes, and the Wellbutrin is an inhaler. Okay so inhaler SR? Yes. Do you take oxygen therapy at home? Yes. Okay.

@@ -1,0 +1,11 @@
+source:      plos_pathogens
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [6:7] 'medical-jargon-google-easy' -> 'malaria'
+  [9:11] 'medical-jargon-google-easy' -> 'Plasmodium spp.'
+  [13:15] 'medical-jargon-google-easy' -> 'Hepatocystis spp.'
+  [29:30] 'medical-jargon-google-easy' -> 'Plasmodium'
+  [37:38] 'medical-jargon-google-easy' -> 'malaria'

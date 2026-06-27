@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1053
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke? Yes, I do. How much? I mean can you tell me approximate amount? Yes sure, I smoke half a pack a day. How about alcohol and drugs? No, I do not drink or use. I have a five month old baby.

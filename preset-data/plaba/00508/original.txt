@@ -1,0 +1,8 @@
+Multiple sclerosis (MS) is a complex disease of the central nervous system (CNS) that involves an intricate and aberrant interaction of immune cells leading to inflammation, demyelination, and neurodegeneration.
+Due to the heterogeneity of clinical subtypes, their diagnosis becomes challenging and the best treatment cannot be easily provided to patients.
+Biomarkers have been used to simplify the diagnosis and prognosis of MS, as well as to evaluate the results of clinical treatments.
+In recent years, research on biomarkers has advanced rapidly due to their ability to be easily and promptly measured, their specificity, and their reproducibility.
+Biomarkers are classified into several categories depending on whether they address personal or predictive susceptibility, diagnosis, prognosis, disease activity, or response to treatment in different clinical courses of MS.
+The identified members indicate a variety of pathological processes of MS, such as neuroaxonal damage, gliosis, demyelination, progression of disability, and remyelination, among others.
+The present review analyzes biomarkers in cerebrospinal fluid (CSF) and blood serum, the most promising imaging biomarkers used in clinical practice.
+Furthermore, it aims to shed light on the criteria and challenges that a biomarker must face to be considered as a standard in daily clinical practice.

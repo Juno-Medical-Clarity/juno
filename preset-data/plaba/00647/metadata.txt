@@ -1,0 +1,5 @@
+pmid:        10530060
+question:    50
+adaptation:  adaptation1
+title:       Negative C-reactive protein in children with bacterial infection
+sentences:   12

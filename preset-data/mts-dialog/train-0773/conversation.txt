@@ -1,0 +1,2 @@
+Doctor: Hello, sir how are you feeling today?
+Patient: I feel terrible. Very sick and I can barely move. I feel so weak.

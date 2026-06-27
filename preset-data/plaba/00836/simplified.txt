@@ -1,0 +1,12 @@
+Research has shown that having patients walk early with physical therapy (PT) after knee replacement has benefits.
+However, the impact of early PT on rehab performance and opioid use is still unclear.
+We looked at the effect of same-day PT on how well patients functions and opioid use while in the hospital.
+To do this, we looked at 2 past groups of knee replacement patients from July 2016 to December 2017. The first group had 295 patients and had PT on the day of surgery. The second group had 392 patients and received PT on the day after surgery.
+The outcomes we looked at included the number of feet walked in the first 3 days after surgery, patient reported pain scores, amount of morphine or similar drugs used, length of stay, and where the patient was sent on discharge.
+
+In comparison to the second group (which had PT the day of after surgery), the first group (which had PT the day of the surgery) walked significantly more steps on the first 3 days after surgery. The first group walked, on average, 348 feet the first day after, while the second group walked 167 feet. The second day, the first group walked 342 feet while the second group walked 203. The third day after surgery, the first group walked 190 feet while the second group walked 129 feet.
+There was no difference between the 2 groups for pain reported.
+The first group (which had PT the day of the surgery) also used significantly less morphine or similar drugs when compared to the second group (which had PT the day after surgery).
+The first group also had a significantly shorter length of stay compared to the second group (on average 2.7 days vs 3.2 days).
+More patients were discharged home in the first group (81.7% vs 54.8%).
+In conclusion, we observed that starting PT the day of surgery led to better PT performance, reduced drug use during hospitalization, and more patients discharged home.

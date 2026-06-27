@@ -1,0 +1,5 @@
+drug_focus: metformin
+question_type: Usage
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6d6ee6f8-9650-ff4f-e053-2991aa0acf19
+sample_id: 0464

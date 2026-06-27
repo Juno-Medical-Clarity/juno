@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0303  |  gem_id: gem-cochrane-simplification-validation-304  |  doi: 10.1002/14651858.CD005306.pub2
+
+Four clinical trials with 355 children were identified which compared the effect of symptom-based versus to peak flow written action plans when all other co-interventions were similar. Children assigned to a symptom-based plan less frequently required an acute care visit for asthma compared to those who received a peak flow based plan. Most other outcomes were similar with the exception of more children intending to continue using the symptom-based compared to the peak-flow based written action plan.

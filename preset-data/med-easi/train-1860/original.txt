@@ -1,0 +1,1 @@
+Collision resistance It should be difficult to find two different messages m1 and m2 such that hash (m1) = hash (m2).

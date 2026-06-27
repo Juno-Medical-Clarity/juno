@@ -1,0 +1,10 @@
+Doctor: Are you a student?
+Patient: Yes, I am. I go to the University.
+Doctor: What are you majoring in? Or do you know yet?
+Patient: Yes! I am studying biology.
+Doctor: Excellent! Do you live in the dorms?
+Patient: Yes.
+Doctor: Are you from the area?
+Patient: I am from Breckenridge. That is where my parents live.
+Doctor: That is a beautiful place to be from. Do you use any tobacco, alcohol, or recreational drugs?
+Patient: I have smoked weed with friends, off and on but not much. I have a few beers at the occasional dorm party.

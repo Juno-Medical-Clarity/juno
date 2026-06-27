@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1068
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you doing today, ma'am? I'm doing just fine. Any kind of alcohol consumption? Nope. Have you ever taken any kind of illegal drugs? Nope. What about smoking? No. Are you still working? No, sir. I had issues with my knees, and they had to put in the new ones. I was kind of disabled and that's why I retired.

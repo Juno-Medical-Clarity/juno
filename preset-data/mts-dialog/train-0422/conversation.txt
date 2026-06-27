@@ -1,0 +1,21 @@
+Doctor: Hi. How are you doing, sir?
+Patient: Hi. I am doing fine.
+Doctor: The nurse told me that you are on disability from work now. What happened?
+Patient: I got hurt at work and now I am on disability.
+Doctor: What did you do for work? How long ago was your injury?
+Patient: I worked on the pipeline. The accident was five years ago.
+Doctor: Which condition led to the disability?
+Patient: I don't know really. I sent in all the notes for my doctor for evaluation and they approved the disability.
+Doctor: Okay. Do you live alone or with family?
+Patient: I live with my wife.
+Doctor: Are you a smoke or have you ever been?
+Patient: I used to smoke. I quit years ago.
+Doctor: How long ago did you quit?
+Patient: Oh, about twenty years ago.
+Doctor: How many years did you smoke? And how much did you smoke?
+Patient: Probably twenty years. I was up to two packs a day. I feel way better now.
+Doctor: That's great. Any use of alcohol or illicit drugs?
+Patient: Nope.
+Doctor: What do you do for fun? Do you have any hobbies?
+Patient: I don't really do much these days. Work was my hobby.
+Doctor: Okay.

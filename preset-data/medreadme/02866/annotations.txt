@@ -1,0 +1,12 @@
+source:      plos_genetics
+side:        complex
+readability: 5.7
+split:       dev
+
+jargon_spans:
+  [1:4] 'medical-jargon-google-hard' -> 'B6 . HdhQ111'
+  [7:8] 'medical-jargon-google-easy' -> 'Mlh1'
+  [12:13] 'medical-jargon-google-easy' -> 'Mlh1'
+  [16:19] 'medical-jargon-google-hard' -> 'somatic CAG expansions'
+  [26:29] 'medical-jargon-google-hard' -> 'nuclear huntingtin accumulation'
+  [30:32] 'medical-jargon-google-easy' -> 'striatal neurons'

@@ -1,0 +1,45 @@
+# SOAP Notes — Sample 0117
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presents with sneezing, runny nose, nasal congestion, itchy eyes and nose, red and teary eyes, and sore throat in the morning with cough to clear throat
+- Symptoms have been present for years, worse in the springtime
+- Dust exposure worsens symptoms (vacuuming the house leads to worsening of symptoms for 2 days)
+- Sensation of post-nasal drip
+- Denies fevers, chills, headaches, nausea, vomiting, changes in bowel movements, trouble urinating
+- Reports fatigue when symptomatic
+- Has been losing weight (4-5 lbs over the past 4-5 months) due to dieting and increased exercise
+- Denies any recent travel or sick contacts
+- Reports shortness of breath as a child (around 8-9 years old) but denies current shortness of breath
+- Difficulty smelling when nose is stuffy but no loss of taste or smell
+
+PMHx:
+- Denies any diagnosed medical conditions
+- Reports shortness of breath as a child (around 8-9 years old) but was not taken to a doctor
+- Denies any hospitalizations or surgeries
+- Reports family history of similar symptoms (runny nose and sneezing) in mother and younger brother
+
+Medications:
+- Reactin in the past with good effect
+- Denies any current medications
+
+Allergies:
+- No known drug allergies
+
+SocHx:
+- Attends school virtually
+- Lives with mother, father, and younger brother
+- Denies alcohol, recreational drug use, smoking, or sexual activity
+- Feels safe at home and denies any bullying
+
+Objective:
+- Vitals signs not provided
+
+Assessment:
+- Likely diagnosis: Allergic rhinitis
+
+Plan:
+- COVID swab test today with instructions to isolate at home for 24-48 hours pending results
+- Recommend avoidance of allergens that trigger symptoms
+- Recommend trial of antihistamine medication for symptom relief
+- Referral to allergist for further evaluation and management

@@ -1,0 +1,7 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        simple
+readability: 3.3
+split:       dev
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'inpatient'

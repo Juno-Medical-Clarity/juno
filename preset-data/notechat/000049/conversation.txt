@@ -1,0 +1,21 @@
+Doctor: Good morning, what brings you here today?
+Patient: Good morning, doctor. My son has been feeling sick for the past four days.
+Doctor: Okay, can you tell me what kind of symptoms your son is experiencing?
+Patient: Yes, he has constipation, a dry cough, vomiting, high fever, abdominal pain with bloating, headache, and a rash.
+Doctor: Hmm, that sounds like a lot of symptoms. When did they start?
+Patient: They started gradually. He was feeling fatigue, loss of appetite, muscle aches, and a cough. He also had a bloated abdomen and poor oral intake.
+Doctor: Did you think it was a stomach flu?
+Patient: Yes, we thought it was the stomach flu and gave him Tylenol and soups, but his symptoms continued.
+Doctor: I see. Did he continue to have constipation and abdominal discomfort?
+Patient: Yes, he did. And eventually, maculo-papular rashes on his head, face, and extremities erupted.
+Doctor: Alright, I understand. On the day of admission to the hospital, did you give him any treatment?
+Patient: Yes, we started IV fluid with normal saline solution because he showed signs of dehydration, bradycardia, and hypotension. We also gave him Norepinephrine.
+Doctor: Good, that was the right thing to do. We collected lab samples for analysis and ordered an abdominal ultrasound. The test results showed clumps of worms in the jejunum, which explained his constipation.
+Patient: Hmm, okay.
+Doctor: The stool test for helminth was positive for roundworm infestation. The blood test came back positive for typhoid and showed an increased level of eosinophils with relatively high leukocytes, but the rest of the complete blood count was normal, including a chest X-ray.
+Patient: Okay.
+Doctor: On the second day of admission, your son's condition remained unstable due to high fever, vomiting, and fatigue. We started antibiotics with ceftriaxone, antipyretics, albendazole, and more IV fluids.
+Patient: Okay.
+Doctor: By the third day, your son's symptoms improved clinically, although the body rashes persisted. The complete blood count had normalized, and he was later discharged home with one. 
+Patient: Okay, thank you, doctor.
+Doctor: You're welcome. Just make sure to follow up with us if you notice any changes in his condition.

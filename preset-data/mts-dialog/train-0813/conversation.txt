@@ -1,0 +1,5 @@
+Doctor: Are you taking any medications?
+Patient: Yes, I am taking Accutane for my acne issues.
+Doctor: Okay, any other medicines?
+Patient: No, just that.
+Doctor: Okay.

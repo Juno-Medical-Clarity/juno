@@ -1,0 +1,5 @@
+pmid:        21286870
+question:    40
+adaptation:  adaptation1
+title:       Compression therapy for treatment of venous disease and limb swelling
+sentences:   7

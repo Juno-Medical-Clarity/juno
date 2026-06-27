@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2196  |  gem_id: gem-cochrane-simplification-train-2197  |  doi: 10.1002/14651858.CD004016
+
+The available evidence from randomized controlled trials supports the use of subacromial corticosteroid injection for rotator cuff disease, although its effect may be small and short-lived, and it may be no better than non-steroidal anti-inflammatory drugs. Similarly, intra-articular steroid injection may be of limited, short-term benefit for adhesive capsulitis. Further trials investigating the efficacy of corticosteroid injections for shoulder pain are needed. Important issues that need clarification include whether the accuracy of needle placement, anatomical site, frequency, dose and type of corticosteroid influences efficacy.

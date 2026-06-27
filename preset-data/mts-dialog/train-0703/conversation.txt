@@ -1,0 +1,26 @@
+Doctor: Any fever, chills or rigors?
+Patient: No.
+Doctor: Any blurring of vision or history of glaucoma or cataract?
+Patient: No.
+Doctor: Did you experience any shortness of breath?
+Patient: No.
+Doctor: Any stomach discomfort?
+Patient: No.
+Doctor: Did you observe blood in your stool or in vomit?
+Patient: No, nothing like that.
+Doctor: Okay, good. Did you notice any increase in your urine frequency or urgency?
+Patient: No.
+Doctor: Do you feel any muscle weakness or tiredness?
+Patient: No, nothing of that sort.
+Doctor: Any known history of arthritis?
+Patient: Nope.
+Doctor: And no fever due to any fungal infection or anything, right? Like valley fever?
+Patient: No, nothing of that sort.
+Doctor: Any history of pneumonia?
+Patient: No.
+Doctor: And I am looking at your chart, so no history of stroke, C V A, or any seizure disorder.
+Patient: That's correct.
+Doctor: No thyroid or hormone related problem?
+Patient: No.
+Doctor: And you do not have any blood disorders, right?
+Patient: That is right.

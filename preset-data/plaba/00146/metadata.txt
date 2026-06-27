@@ -1,0 +1,5 @@
+pmid:        18589845
+question:    12
+adaptation:  adaptation1
+title:       Primary asthma prevention: is it possible?
+sentences:   7

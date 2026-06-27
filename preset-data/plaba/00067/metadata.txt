@@ -1,0 +1,5 @@
+pmid:        27852303
+question:    6
+adaptation:  adaptation2
+title:       The effects of Nigella sativa on thyroid function, serum Vascular Endothelial Growth Factor (VEGF) - 1, Nesfatin-1 and anthropometric features in patients with Hashimoto's thyroiditis: a randomized controlled trial
+sentences:   13

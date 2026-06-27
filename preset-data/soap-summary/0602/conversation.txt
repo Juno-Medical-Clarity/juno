@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0602
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+So I understand you had a fainting episode yesterday? Yes, I did. Has this happened to you before? Yes. It happens whenever needles are involved. You had a Vasovagal Syncope. How are you feeling today? I feel normal today.

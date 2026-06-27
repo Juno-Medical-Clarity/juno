@@ -1,0 +1,5 @@
+pmid:        34681945
+question:    48
+adaptation:  adaptation2
+title:       The Pathogenesis, Molecular Mechanisms, and Therapeutic Potential of the Interferon Pathway in Systemic Lupus Erythematosus and Other Autoimmune Diseases
+sentences:   9

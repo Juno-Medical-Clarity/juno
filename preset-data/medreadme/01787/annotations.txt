@@ -1,0 +1,19 @@
+source:      plos_pathogens
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'IECs'
+  [5:7] 'medical-jargon-google-easy' -> 'intestinal biopsies'
+  [8:9] 'medical-jargon-google-easy' -> 'RNAseq'
+  [12:13] 'medical-jargon-google-easy' -> 'mRNA'
+  [16:20] 'medical-jargon-google-hard' -> 'ubiquitin - modifying enzyme'
+  [21:22] 'medical-jargon-google-hard' -> 'A20'
+  [24:25] 'medical-jargon-google-easy' -> 'upregulated'
+  [26:29] 'medical-jargon-google-easy' -> 'ART - treated'
+  [35:36] 'medical-jargon-google-easy' -> 'markers'
+  [37:39] 'medical-jargon-google-easy' -> 'epithelial function'
+  [43:44] 'medical-jargon-google-hard' -> 'CTNNB'
+  [45:46] 'medical-jargon-google-hard' -> 'CLDN4'
+  [48:49] 'medical-jargon-google-hard' -> 'TJP1'

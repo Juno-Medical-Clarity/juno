@@ -1,0 +1,13 @@
+Thrombosis with thrombocytopenia syndrome (TTS) is a rare condition of blood clots in the veins and arteries and low blood platelet counts. TTS has been reported in some people after they receive the AstraZeneca and Janssen/Johnson & Johnson vaccines. These vaccines provide immunity or resistance to the coronavirus, which causes COVID-19 (a viral, respiratory disease).
+The objective of this study is to describe the clinical traits and outcomes of patients with cerebral venous sinus thrombosis (CVST) (blood clot in the brain) after receiving the coronavirus vaccine among people with and without TTS.
+This study uses data from patients who have CVST within 28 days of vaccination in March-June 2021. Data came from 81 hospitals in 19 countries.
+Existing data from patients with CVST between 2015 and 2018 are used to compare.
+Clinical traits and death are described for adults with (1) CVST in the case of coronavirus vaccine-induced immune thrombotic thrombocytopenia, (2) CVST after coronavirus vaccination not meeting all parts for TTS, and (3) CVST unrelated to the coronavirus vaccination.
+Patients are classified as having TTS (thrombosis with thrombocytopenia syndrome) if they have new thrombocytopenia (low blood platelets) without recent exposure to heparin, a medicine that prevents blood clots.
+Clinical traits and deaths are the main measures in this study.
+Of the 116 patients with CVST after being vaccinated, 78 (67.2%) have TTS. Of those, 76 people had been vaccinated with AstraZeneca and 38 (32.8%) have no indication of TTS.
+The comparison group included 207 patients with CVST before the Covid-19 pandemic.
+A total of 63 out of 78 (81%) are female with an average age of 45, 30 out of of 38 (79%) are female with an average age of 55, and 145 of 207 (70.0%) patients are female and have an average age of 42 years.
+Thromboembolism, which is a blood clot in the vein that has been dislodged from another part of the body, occurred in 25 out of 70 patients (36%) in the TTS group, 2 out of 35 (6%) in the no TTS group, and 10 out of 206 (4.9%) in the comparison group. Deaths in the hospital are at 47% in the TTS group, 5% in the no TTS group, and 3.9% in the comparison group.
+The rate of deaths is 61% among patients with TTS diagnosed before the condition got the attention of scientists and 42% among patients diagnosed later.
+In this study of patients with cerebral venous sinus thrombosis, a detailed clinical description and high death rate is observed in patients who have thrombosis with thrombocytopenia syndrome after vaccination.

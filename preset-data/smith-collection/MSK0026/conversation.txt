@@ -1,0 +1,256 @@
+# Smith Collection Transcript: MSK0026
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: Im im here because my right knee is very painful it looks kind of swollen and its its also a little bit warm so im just worried im worried about it and i was wondering if you could look at it
+
+Doctor: Yeah certainly um so where are you feeling the the pain exactly
+
+Patient: So its where so right in the middle of my knee so just below the bone that the big knee bone
+
+Doctor: OK so like underneath the kneecap like below that
+
+Patient: Yeah just just a little bit below
+
+Doctor: OK so slightly below the patella sounds like somewhere in the region of the tibial through tuberosity
+
+Patient: Right
+
+Doctor: OK and when did this pain start
+
+Patient: It started about two weeks ago
+
+Doctor: OK two weeks ago when the pain started was there any trauma or could you remember any movement that that caused the pain
+
+Patient: Nothing like that but i recently found out that i had some osteoarthritis on my left knee so i was trying to put more pressure on my right knee one whenever i was doing like gardening work um and i think something something may have happened when i was doing that something maybe maybe i put too much strain on it
+
+Doctor: OK i see an alright like are you doing a lot of kneeling on on or during the gardening work
+
+Patient: I am
+
+Doctor: OK um and how long has the pain been going on for has it been constant over these two weeks
+
+Patient: Yes it has been
+
+Doctor: OK and how would you describe the pain is it sharp burning achy
+
+Patient: I would say mostly achy but it can be sharp
+
+Doctor: OK and do you feel the pain radiate anywhere else
+
+Patient: No just its pretty local
+
+Doctor: OK have you tried anything to make the pain better
+
+Patient: I tried some topical like what are those like ice and fire gels those seem to help temporarily but the pain comes back
+
+Doctor: OK and have you tried has anything made the pain worse
+
+Patient: I guess like when i kneel down on it it gets painful or if i touch it or palpate it i guess painful if im im flexing my knee too much that hurts as well kind of keeping it straight and not touching it makes it feel better
+
+Doctor: OK and what would you say the severity of the pain is with 10 being the worst pain youve ever felt and one being the least pain
+
+Patient: I give it about a 6
+
+Doctor: OK and have you had a pain like this in your right knee before
+
+Patient: No nothing like this and i have osteoarthritis in my left knee but it feels different
+
+Doctor: OK and um ok and have you had any fevers or chills
+
+Patient: Uhm no
+
+Doctor: OK and how about any night sweats
+
+Patient: No
+
+Doctor: OK and have you had any unexpected weight loss over the last several months
+
+Patient: No
+
+Doctor: Have you had any headaches
+
+Patient: No
+
+Doctor: Have you had any changes to your senses like vision or hearing
+
+Patient: No
+
+Doctor: Any changes to your sense of smell or taste
+
+Patient: No
+
+Doctor: OK have you had any sore throat or cough
+
+Patient: No
+
+Doctor: Alright have you had any shortness of breath
+
+Patient: No
+
+Doctor: Have you had any wheezing
+
+Patient: No
+
+Doctor: Have you had any chest pain
+
+Patient: No
+
+Doctor: Had any lightheadedness or dizziness
+
+Patient: um no
+
+Doctor: Have you had any heart palpitations
+
+Patient: No
+
+Doctor: OK um an have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: Have you had any abdominal pain
+
+Patient: No
+
+Doctor: Have you had any diarrhea or constipation or blood in the stool
+
+Patient: No
+
+Doctor: Have you had any pain with urination or frequency with urination
+
+Patient: No
+
+Doctor: OK and have you had any like muscle aches or joint pains anywhere else
+
+Patient: No
+
+Doctor: OK and have you had any neurological symptoms such as numbness or or tingling or reduced sensation
+
+Patient: No
+
+Doctor: OK and how is your energy been recently have you had any fatigue
+
+Patient: No not really its been the same
+
+Doctor: OK and in the past have you been diagnosed with any medical conditions
+
+Patient: Uhm i have class 2 obesity and then also arthritis in my left knee as well as high blood pressure
+
+Doctor: I see and do you take any medications
+
+Patient: Currently im on ramipril and i take some ibuprofen sometimes for the osteoarthritis in my left knee
+
+Doctor: OK and do you have any allergies to medications
+
+Patient: No
+
+Doctor: Have you had any surgeries before
+
+Patient: Nope
+
+Doctor: Or have you had any hospitalizations for any reason
+
+Patient: No
+
+Doctor: OK and have you been pregnant in the past
+
+Patient: um i i have one one child she was born through csection
+
+Doctor: And are you currently sexually active
+
+Patient: I am
+
+Doctor: OK could you tell me about your partner or partners
+
+Patient: Yeah so just with my husband of 10 years
+
+Doctor: OK any concerns for a sexually transmitted infection like vaginal discharge or or pain or itchiness
+
+Patient: No
+
+Doctor: OK and could you tell me a little bit about your living situation currently like who youre living with an whereabouts
+
+Patient: um i live in downtown london i live in a house with my husband and my daughter
+
+Doctor: OK and have you been around anybody whos been sick recently
+
+Patient: No
+
+Doctor: And have you traveled anywhere recently
+
+Patient: No
+
+Doctor: OK are you currently working right now
+
+Patient: I yes i am
+
+Doctor: OK well then what what do you do
+
+Patient: I work as a full time gardener for a landscaping company
+
+Doctor: OK i see so youre spending a lot of time doing kind of like repetitive kneeling type movements to do your job
+
+Patient: Yes thats right
+
+Doctor: OK and do you smoke cigarettes
+
+Patient: I dont
+
+Doctor: Alright and do you drink alcohol
+
+Patient: Ill have a glass of wine every other night
+
+Doctor: OK and do you use any recreational drugs
+
+Patient: No i dont
+
+Doctor: Have you used anything like that in the in the past
+
+Patient: No
+
+Doctor: Like iv drugs no ok and in the family or is there a history of any musculoskeletal or neurological conditions
+
+Patient: No
+
+Doctor: OK so next i just wanted to do the physical exam portion and ask you to have a look at the knee first and let me know if the if youre having any swelling redness or warmth to the knee compared to the other side
+
+Patient: Sure
+
+Doctor: Sorry so you are having having swelling warmth and redness to the right knee
+
+Patient: Yes
+
+Doctor: OK and are you having pain to like palpation is there a specific spot you can press on that causes a sharp pain
+
+Patient: um so just below that kneecap area there is some swelling there and when i press down on that swollen area it causes a bit of pain
+
+Doctor: OK and are you able to fully bend bend and straighten the knee
+
+Patient: I can do that but when i bend my knee it really hurts
+
+Doctor: OK and are you able to walk normally or do you have a limp
+
+Patient: um i can walk normally it just hurts
+
+Doctor: OK so that was a everything that i wanted to ask today on the history and and physical was there anything that you maybe i forgot about you wanted to add
+
+Patient: No i dont think so
+
+Doctor: OK so right now its sounding like this could possibly be a knee bursitis or prepatellar or sorry infra patellar bursitis or a prepatellar bursistis which are the kind of the more common types one thing to make sure that we rule out would be a septic bursitis although youre not having any fevers or chills so that makes it a little bit less likely
+
+Patient: Mmmm
+
+Doctor: But if your symptoms are getting worse and youre developing a fever its becoming even more painful then certainly will have to rule out infection and as well if things are not improving potentially a structural disease and any such as a meniscal injury or like a ligamental injury from all of the like kneeling and and repetitive movements but right now i think its mostly sounding like a knee bursitis
+
+Patient: OK
+
+Doctor: OK and treatment for that will be activity modification as well as using things like as um nsaids and icing to help with um the inflammation
+
+Patient: OK that sounds good thank you

@@ -1,0 +1,2 @@
+Doctor: Do you have any history of surgical procedures?
+Patient: I remember having surgery as a child, but I don't know what the surgery was for. It was so long ago.

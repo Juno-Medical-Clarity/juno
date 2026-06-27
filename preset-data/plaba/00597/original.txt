@@ -1,0 +1,11 @@
+Cystic fibrosis (CF) is caused by mutations in the cystic fibrosis transmembrane conductance regulator (CFTR) gene and remains the most common life-shortening diseases affecting the exocrine organs.
+The absence of this channel results in an imbalance of ion concentrations across the cell membrane and results in more abnormal secretion and mucus plugging in the gastrointestinal tract and in the lungs of CF patients.
+The direct introduction of fully functional CFTR by gene therapy has long been pursued as a therapeutical option to restore CFTR function independent of the specific CFTR mutation, but the different clinical trials failed to propose persuasive evidence of this strategy.
+The last ten years has led to the development of new pharmacotherapies which can activate CFTR function in a mutation-specific manner.
+Although approximately 2,000 different disease-associated mutations have been identified, a single codon deletion, F508del, is by far the most common and is present on at least one allele in approximately 70% of the patients in CF populations.
+This strategy is limited by chemistry, the knowledge on CFTR and the heterogenicity of the patients.
+New research efforts in CF aim to develop other therapeutical approaches to combine different strategies.
+Targeting RNA appears as a new and an important opportunity to modulate dysregulated biological processes.
+Abnormal miRNA activity has been linked to numerous diseases, and over the last decade, the critical role of miRNA in regulating biological processes has fostered interest in how miRNA binds to and interacts explicitly with the target protein.
+Herein, this review describes the different strategies to identify dysregulated miRNA opens up a new concept and new opportunities to correct CFTR deficiency.
+This review describes therapeutic applications of antisense techniques currently under investigation in CF.

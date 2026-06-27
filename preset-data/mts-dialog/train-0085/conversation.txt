@@ -1,0 +1,8 @@
+Doctor: What medications are you taking right now?
+Patient: I am taking Advair and Allegra.
+Doctor: Okay is it helping you?
+Patient: I don't know, I am not sure the Allegra is helping. But I do take them regularly.
+Doctor: But is it like better than Claritin?
+Patient: Yes, I think so.
+Doctor: Okay that's good.
+Patient: Shall I continue?

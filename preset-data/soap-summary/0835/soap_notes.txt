@@ -1,0 +1,19 @@
+# SOAP Notes — Sample 0835
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient feels "out of it."
+- Used heroin and cocaine earlier today.
+- Still feels high.
+- No shortness of breath, chest pain, abdominal pain, or back pain.
+- No headaches, hallucinations, or visual disturbances.
+- No open sores or wounds.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

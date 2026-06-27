@@ -1,0 +1,10 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [13:14] 'abbr-medical' -> 'ETN'
+  [15:16] 'medical-jargon-google-easy' -> 'infliximab'
+  [17:18] 'medical-name-entity' -> 'REMICADE'
+  [22:26] 'medical-name-entity' -> 'Merck Sharp & Dohme'

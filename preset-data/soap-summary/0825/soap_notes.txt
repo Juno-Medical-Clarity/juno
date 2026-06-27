@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0825
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history: Two sons, both born normally without complications. One son was a heavy smoker (smoked a whole packet or more per day) and died of clots. 
+- Father had heart-related issues and died in his sixties. 
+- Mother died of colon cancer.
+- Sister has no known medical issues.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

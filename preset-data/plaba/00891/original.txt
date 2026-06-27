@@ -1,0 +1,10 @@
+Introduction: Postoperative pain management options are of great importance for patients undergoing total hip arthroplasty, as joint replacement surgery is reported to be one of the most painful surgical procedures.
+This study demonstrates pain outcome until 4 weeks postoperatively and evaluates factors influencing pain in the postoperative course after total hip arthroplasty.
+Materials and methods: A total of 103 patients were included in this prospective cohort trial and underwent total hip arthroplasty.
+Postoperative pain was described using a numerical rating scale (NRS); demographic data and perioperative parameters were correlated with postoperative pain.
+Results: Evaluation of pain scores in the postoperative course showed a constant decrease in the first postoperative week (mean NRS 3.1 on day 1 to mean NRS 2.3 on day 8) and, then, a perpetual increase for 3 days (mean NRS 2.6 on day 9 to mean NRS 2.3 on day 12).
+Afterwards, a continuous pain-level decrease was stated (continuous to a mean NRS 0.9 on day 29).
+No correlation was found between the potential influencing factors sex, age, body mass index, duration of surgery, ASA score, and postoperative pain levels, but a high significant correlation could be stated for preoperative pain levels and postoperative pain intensity (pain while moving p < 0.02 to p < 0.05 depending on the time period "week 1 postoperatively", "week 2-4", or "week 1-4"; pain while resting p < 0.001, in all the measured time intervals, respectively).
+Conclusion: Increasing pain levels after the first week postoperatively, for 3 days, are most likely to be caused by the change to more extensive mobilization and physiotherapy in the rehabilitation unit.
+No significant influence or correlation on the intensity of postoperative pain could be found while evaluating potential predictors except preoperative pain levels.
+Pain management has to take these findings into account in the future to further increase patients' satisfaction in the postoperative course after total hip arthroplasty and to adapt pain management programs.

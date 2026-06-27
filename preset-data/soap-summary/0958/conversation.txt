@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0958
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+As per your chart, I see you have C O P D and hypertension. Yes that is right. Okay.

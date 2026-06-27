@@ -1,0 +1,5 @@
+pmid:        31071734
+question:    6
+adaptation:  adaptation1
+title:       Can Supplementation with Vitamin D Modify Thyroid Autoantibodies (Anti-TPO Ab, Anti-Tg Ab) and Thyroid Profile (T3, T4, TSH) in Hashimoto's Thyroiditis? A Double Blind, Randomized Clinical Trial
+sentences:   10

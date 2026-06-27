@@ -1,0 +1,5 @@
+pmid:        34755109
+question:    64
+adaptation:  adaptation2
+title:       Persistent sodium currents in SCN1A developmental and degenerative epileptic dyskinetic encephalopathy
+sentences:   9

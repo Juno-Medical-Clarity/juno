@@ -1,0 +1,26 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.85
+split:       dev
+
+jargon_spans:
+  [10:11] 'medical-jargon-google-easy' -> 'axitinib'
+  [12:13] 'medical-name-entity' -> 'Inlyta'
+  [17:18] 'medical-name-entity' -> 'Pfizer'
+  [25:26] 'medical-jargon-google-easy' -> 'cabozantinib'
+  [27:28] 'medical-name-entity' -> 'Cabometyx'
+  [32:33] 'medical-name-entity' -> 'Ipsen'
+  [39:40] 'medical-jargon-google-easy' -> 'everolimus'
+  [41:42] 'medical-name-entity' -> 'Afinitor'
+  [46:47] 'medical-name-entity' -> 'Novartis'
+  [53:54] 'medical-jargon-google-easy' -> 'nivolumab'
+  [55:56] 'medical-name-entity' -> 'Opdivo'
+  [60:64] 'medical-name-entity' -> 'Bristol - Myers Squibb'
+  [70:71] 'medical-jargon-google-easy' -> 'sunitinib'
+  [72:73] 'medical-name-entity' -> 'Sutent'
+  [77:78] 'medical-name-entity' -> 'Pfizer'
+  [86:89] 'medical-jargon-google-easy' -> 'best supportive care'
+  [90:91] 'abbr-medical' -> 'BSC'
+  [95:96] 'abbr-medical' -> 'amRCC'
+  [101:105] 'medical-jargon-google-easy' -> 'vascular endothelial growth factor'
+  [106:107] 'abbr-medical' -> 'VEGF'

@@ -1,0 +1,5 @@
+pmid:        7853374
+question:    11
+adaptation:  adaptation1
+title:       Pyruvate dehydrogenase deficiency
+sentences:   4

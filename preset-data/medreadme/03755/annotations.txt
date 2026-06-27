@@ -1,0 +1,15 @@
+source:      elife
+side:        complex
+readability: 5.3
+split:       test
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Cerebral vessels'
+  [7:8] 'abbr-medical' -> 'AD'
+  [10:11] 'abbr-medical' -> 'Aβ'
+  [20:21] 'medical-jargon-google-easy' -> 'cerebrovasculature'
+  [23:24] 'abbr-medical' -> 'AD'
+  [26:28] 'medical-jargon-google-easy' -> 'cerebrovascular amyloid'
+  [29:32] 'medical-jargon-google-easy' -> 'cerebral amyloid angiopathy'
+  [33:34] 'abbr-medical' -> 'CAA'
+  [41:42] 'medical-jargon-google-easy' -> 'dementia'

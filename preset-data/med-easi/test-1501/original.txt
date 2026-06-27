@@ -1,0 +1,1 @@
+Here, an enzyme such as DNA polymerase catalyzes a reaction in a first step and then checks that the product is correct in a second step.

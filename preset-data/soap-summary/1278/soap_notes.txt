@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1278
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is unsure about family medical history.
+- Reports that everyone is healthy as far as they know.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

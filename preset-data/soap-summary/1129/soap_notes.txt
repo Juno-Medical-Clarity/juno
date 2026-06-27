@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1129
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient does not remember the exact date of their last tetanus shot.
+- Patient believes they had a tetanus shot "sometime back."
+
+Objective:
+- Last tetanus shot is up to date according to the clinician's reports.
+
+Assessment:
+- No specific diagnoses or clinical impressions provided.
+
+Plan:
+- No specific actions, medications, tests, follow-up, or patient education mentioned.

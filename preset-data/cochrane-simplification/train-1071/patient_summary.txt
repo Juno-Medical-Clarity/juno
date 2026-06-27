@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1071  |  gem_id: gem-cochrane-simplification-train-1072  |  doi: 10.1002/14651858.CD000359
+
+The statistical evidence for efficacy in 'possible or probable Alzheimer's disease' patients was so modest however that one additional statistically non-significant trial would have reduced the results to non significance; evidence for efficacy in vascular dementia rested on relatively stronger effects for hydergine on clinical ratings; and effective doses may be higher than 3 mg/d (i.e., than that currently approved in the USA). Despite its availability for 40 years, the circumstances of hydergine's efficacy in dementia syndromes have not been adequately researched, and have yet to be precisely defined.

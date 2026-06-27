@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1212
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hey, what's going on with you today? Oh, I have a chest pain. You have fever too? Yes, I did.

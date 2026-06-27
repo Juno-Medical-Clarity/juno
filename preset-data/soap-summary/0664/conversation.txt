@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0664
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any known past medical history? I have high blood pressure. Anything else? Yeah, I remember I also had higher number of fat in my blood.

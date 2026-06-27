@@ -1,0 +1,39 @@
+Doctor: Good morning, how are you feeling today?
+
+Patient: Not so good, doctor. I've been having shortness of breath, fever, and a cough for the past three days.
+
+Doctor: I see. Can you tell me more about your past medical history?
+
+Patient: I don't have any significant past medical history.
+
+Doctor: Alright. Have you received any vaccines recently?
+
+Patient: Yes, I received two doses of the COVID vaccine. The second one was in May.
+
+Doctor: Okay. Can you tell me your vital signs when you came to the ER?
+
+Patient: My blood pressure was 105/96, heart rate was 131 bpm, breathing rate was 20 breaths per minute, and my oxygen saturation was 96% on room air.
+
+Doctor: Hmm, and were you febrile?
+
+Patient: Yes, my temperature was 102.0°F.
+
+Doctor: Alright. We did some laboratory assessments on you and your nasopharyngeal swab for SARS-CoV-2 was positive.
+
+Patient: Oh no.
+
+Doctor: Don't worry, we've admitted you to the general medical ward and started you on antibiotics, dexamethasone, and remdesivir.
+
+Patient: Okay.
+
+Doctor: And unfortunately, on Day 2, you developed worsening hypoxia and the CT chest showed widespread airspace disease throughout your lungs.
+
+Patient: That's not good.
+
+Doctor: No, it's not. But we're doing everything we can to help you. Right now, you're receiving 4-5 L per minute via nasal cannula.
+
+Patient: Alright.
+
+Doctor: I'll keep you updated on your progress. Please let me know if you have any questions or concerns.
+
+Patient: Okay, thank you doctor.

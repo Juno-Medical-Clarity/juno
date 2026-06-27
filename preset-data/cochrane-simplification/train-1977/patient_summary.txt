@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1977  |  gem_id: gem-cochrane-simplification-train-1978  |  doi: 10.1002/14651858.CD007966.pub2
+
+In this review we evaluated the efficacy and safety of prophylactic phototherapy in preventing jaundice in preterm or LBW infants. A total of nine clinical trials representing 3449 infants were included. The findings suggest that phototherapy initiated soon after birth (within 36 hours) for preterm or low birth weight infants may prevent the serum bilirubin from reaching a level that would require exchange transfusion and may reduce the risk of impairment of brain and central nervous system development. However, further well-designed studies are needed to evaluate the effects of prophylactic phototherapy on brain and central nervous system development and other long-term outcomes.

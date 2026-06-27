@@ -1,0 +1,1 @@
+A motion signal is one-dimensional ( time ), and the range is generally three-dimensional.

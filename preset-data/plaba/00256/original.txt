@@ -1,0 +1,13 @@
+Background: Depression is the single largest contributor to non-fatal health loss worldwide.
+Second-generation antidepressants are the first-line option for pharmacological management of depression.
+Optimising their use is crucial in reducing the burden of depression; however, debate about their dose dependency and their optimal target dose is ongoing.
+We have aimed to summarise the currently available best evidence to inform this clinical question.
+Findings: 28 554 records were identified through our search (24 524 published and 4030 unpublished records).
+561 published and 121 unpublished full-text records were assessed for eligibility, and 77 studies were included (19 364 participants; mean age 42·5 years, SD 11·0; 7156 [60·9%] of 11 749 reported were women).
+For SSRIs (99 treatment groups), the dose-efficacy curve showed a gradual increase up to doses between 20 mg and 40 mg fluoxetine equivalents, and a flat to decreasing trend through the higher licensed doses up to 80 mg fluoxetine equivalents.
+Dropouts due to adverse effects increased steeply through the examined range.
+The relationship between the dose and dropouts for any reason indicated optimal acceptability for the SSRIs in the lower licensed range between 20 mg and 40 mg fluoxetine equivalents.
+Venlafaxine (16 treatment groups) had an initially increasing dose-efficacy relationship up to around 75-150 mg, followed by a more modest increase, whereas for mirtazapine (11 treatment groups) efficacy increased up to a dose of about 30 mg and then decreased.
+Both venlafaxine and mirtazapine showed optimal acceptability in the lower range of their licensed dose.
+These results were robust to several sensitivity analyses.
+Interpretation: For the most commonly used second-generation antidepressants, the lower range of the licensed dose achieves the optimal balance between efficacy, tolerability, and acceptability in the acute treatment of major depression.

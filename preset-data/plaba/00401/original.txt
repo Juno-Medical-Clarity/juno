@@ -1,0 +1,10 @@
+Background: Tardive dyskinesia is a movement disorder characterised by irregular, stereotyped, and choreiform movements associated with the use of antipsychotic medication.
+We aim to provide recommendations on the treatment of tardive dyskinesia.
+Results: Preventing tardive dyskinesia is of primary importance, and clinicians should follow best practice for prescribing antipsychotic medication, including limiting the prescription for specific indications, using the minimum effective dose, and minimising the duration of therapy.
+The first-line management of tardive dyskinesia is the withdrawal of antipsychotic medication if clinically feasible.
+Yet, for many patients with serious mental illness, the discontinuation of antipsychotics is not possible due to disease relapse.
+Switching from a first-generation to a second-generation antipsychotic with a lower D2 affinity, such as clozapine or quetiapine, may be effective in reducing tardive dyskinesia symptoms.
+The strongest evidence for a suitable co-intervention to treat tardive dyskinesia comes from tests with the new VMAT inhibitors, deutetrabenazine and valbenazine.
+These medications have not been approved for use in Canada.
+Conclusion: Data on tardive dyskinesia treatment are limited, and the best management strategy remains prevention.
+More long-term safety and efficacy data are needed for deutetrabenazine and valbenazine, and their routine availability to patients outside of the USA remains in question.

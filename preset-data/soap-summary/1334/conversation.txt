@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1334
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have a family history of any medical conditions, such as diabetes or heart disease? No, nothing.

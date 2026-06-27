@@ -1,0 +1,180 @@
+# Smith Collection Transcript: RES0109
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi ive just had a runny nose and a cough for the past uh week
+
+Doctor: OK um so for the past week you said did the cough start first or the runny nose
+
+Patient: uh it started with the cough i usually dont come in when i have symptoms like this uh but ive just been uhm i just heard of someone who passed away due to covid and im just like very scared and i just decided to come in
+
+Doctor: Yeah for sure thats understandable um with the cough is it a dry cough or are you bringing up some phlegm
+
+Patient: um its mostly a dry cough
+
+Doctor: Dry cough ok um and is it persistent or does it come and go
+
+Patient: It comes and goes it does get better when i um take um like over the counter medications for for um like the antitussive pills
+
+Doctor: OK yeah yeah um and does anything make it worse like the cold air or certain times of the day or like when youre laying down
+
+Patient: um the cold air does make it a little bit uh worse
+
+Doctor: OK and have you experienced something like this in the past
+
+Patient: uh yeah i usually i do get a cold um couple times a year
+
+Doctor: OK yeah that makes sense um and any shortness of breath
+
+Patient: um no no i dont think so
+
+Doctor: No any wheeziness
+
+Patient: um no
+
+Doctor: Chest pain
+
+Patient: No
+
+Doctor: um how about a stuffy nose
+
+Patient: Yeah i do have a stuffy nose
+
+Doctor: OK when your nose does run do you notice that its like uh yellow in colour or red
+
+Patient: No no
+
+Doctor: No ok so its clear
+
+Patient: Its clear yeah
+
+Doctor: OK any changes in your vision or hearing
+
+Patient: No
+
+Doctor: Smell or taste
+
+Patient: um i i cant smell as as much but i think maybe its just because my nose is so stuffy but also that made me a little bit concerned about covid but no problems with taste
+
+Doctor: OK good any weight loss recently
+
+Patient: um ive been trying to lose weight but nothing unintentional i guess
+
+Doctor: OK yeah and then any fevers
+
+Patient: uh no
+
+Doctor: No fevers huh ok any like excessive fatigue
+
+Patient: I am tired but not i guess its not too bad
+
+Doctor: Yeah ok and how about like rashes
+
+Patient: No i havent noticed any
+
+Doctor: No rashes ok um any uh sorry i asked you if you had chest pain uh do you ever feel like your hearts racing
+
+Patient: No
+
+Doctor: No ok any changes to your bowel movements
+
+Patient: No
+
+Doctor: No um nausea or vomiting
+
+Patient: Uhm no
+
+Doctor: No ok uhm how about headaches
+
+Patient: Uhm no
+
+Doctor: Fainting spells or dizziness
+
+Patient: No
+
+Doctor: Joint pain
+
+Patient: um no
+
+Doctor: No ok
+
+Patient: Just my body feels a little achy but
+
+Doctor: Yeah
+
+Patient: No like specific joint pains
+
+Doctor: OK and then any uh major illnesses that are longstanding
+
+Patient: um i dont know does depression count i do have depression
+
+Doctor: OK yeah for sure how when were you diagnosed with depression
+
+Patient: uh when i was 15 years old
+
+Doctor: 15 ok um are you on any medications
+
+Patient: Im im on prozac
+
+Doctor: Prozac ok and when were you diagnosed uh prescribed that
+
+Patient: um ive just been on different medications uh over the past few years um this one seems to be working well i started this about a year ago
+
+Doctor: OK good good any allergies
+
+Patient: Uhm no
+
+Doctor: Are you up to date with all your immunizations
+
+Patient: Mhmm
+
+Doctor: um any family history of lung or heart disease
+
+Patient: uh just um high cholesterol
+
+Doctor: OK um how about smoking do you smoke
+
+Patient: No
+
+Doctor: um any other recreational drugs like marijuana
+
+Patient: um yeah sometimes ill just have a joint um maybe um two or three times a week
+
+Doctor: OK ok and is that for like medical purposes or just like recreationally
+
+Patient: uh just you know just to relax
+
+Doctor: OK sure um alcohol
+
+Patient: uh no
+
+Doctor: No ok and have you been around any sick people recently
+
+Patient: um i went to i went grocery shopping and and someone near me was coughing i was still like six you know i was away from them but i dont like yeah i dont know
+
+Doctor: Yeah for sure i think that youre its fair that youre concerned about that and how about travel to anywhere
+
+Patient: No i havent traveled anywhere
+
+Doctor: No ok ok well those are all the questions i had for you did you have any questions of your own
+
+Patient: No
+
+Doctor: No ok so well do a covid swab anyways today because your some of your symptoms do overlap with that of covid and you should hear back in about 24 to 48 hours but in the meantime you should self isolate for 14 days
+
+Patient: Sure
+
+Doctor: um but it i think it does really sound like you have a common cold um so just like another viral illness um so just treat it supportively you know um keep yourself hydrated if you feel like youre getting a fever take like tylenol um if you have like pain like a headache or like sinus pressure or something you can take again an advil or tylenol um and if your symptoms worsen or if you have any neurological symptoms then you should see the er um right away
+
+Patient: Sure
+
+Doctor: Yeah ok sounds good
+
+Patient: Great

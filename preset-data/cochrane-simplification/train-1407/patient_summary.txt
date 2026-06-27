@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1407  |  gem_id: gem-cochrane-simplification-train-1408  |  doi: 10.1002/14651858.CD007178.pub2
+
+This review identified one randomised controlled trial of donepezil in people with Down syndrome. This shows, at best, a modest, non statistically significant trend in favour of people with Down syndrome and Alzheimer's dementia who are able to tolerate donepezil. The trial was of good quality, but small. It is important to note that people with Down syndrome may often have other conditions which mean that the drug is not suitable for all. Further research is needed.

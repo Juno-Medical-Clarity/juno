@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0903
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Wooden splinter stuck beneath left fifth fingernail.
+- Severity: Not explicitly stated.
+- Duration: Since yesterday evening around 4 PM.
+- Associated symptoms: None mentioned.
+- Relevant medical history: Patient has had similar incidents before as an American farmer; has not had a tetanus shot in over ten years.
+- Family history: None mentioned.
+- Allergies: Allergic to horse serum.
+- Other concerns: Patient does not want a tetanus vaccine due to concerns of having a bad reaction to vaccines.
+
+Objective:
+- No measurable or observable data mentioned.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- The physician will find an alternative to the tetanus vaccine.

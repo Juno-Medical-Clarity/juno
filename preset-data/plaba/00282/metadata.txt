@@ -1,0 +1,5 @@
+pmid:        32279295
+question:    22
+adaptation:  adaptation1
+title:       New Developments in the Pathogenesis of Pulmonary Cysts in Birt-Hogg-Dubé Syndrome
+sentences:   8

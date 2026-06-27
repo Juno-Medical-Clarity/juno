@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0358  |  gem_id: gem-cochrane-simplification-test-359  |  doi: 10.1002/14651858.CD002022.pub3
+
+The review of trials shows that this sort of withdrawal treatment is quicker than withdrawal managed with reducing doses of methadone or clonidine plus symptomatic medications. The intensity of withdrawal experienced with anaesthesia-based approaches is similar to that experienced with approaches using only minimal sedation, but there is a significantly increased risk of serious adverse events with anaesthesia-assisted approaches. The lack of additional benefit, and increased risk of harm, suggest that this form of treatment should not be pursued.

@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0989
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is studying and majoring in computer science.
+- Patient lives with family, including parents and sisters.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

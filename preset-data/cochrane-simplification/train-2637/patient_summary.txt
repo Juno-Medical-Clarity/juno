@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2637  |  gem_id: gem-cochrane-simplification-train-2638  |  doi: 10.1002/14651858.CD002759.pub2
+
+Evidence from 121 randomised controlled trials (6,700 participants) shows that older people who exercise their muscles against a force or resistance become stronger. They also improve their performance of simple activities such as walking, climbing steps, or standing up from a chair more quickly. The improvement in activities such as getting out of a chair or stair climbing is generally greater than walking speed. Moreover, these strength training exercises also improved older people's physical abilities, including more complex daily activities such as bathing or preparing a meal. PRT also reduced pain in people with osteoarthritis. There was insufficient evidence to comment on the risks of PRT or long term effects.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0406  |  gem_id: gem-cochrane-simplification-test-407  |  doi: 10.1002/14651858.CD009391.pub2
+
+This review identified eight randomized controlled trials involving 733 women. Low quality evidence showed increases in ongoing pregnancy and clinical pregnancy rates with the use of the brief co-incubation protocol. More studies are needed to assess whether brief co-incubation would contribute to a higher live-birth rate and a lower miscarriage rate compared to the standard overnight insemination protocol.

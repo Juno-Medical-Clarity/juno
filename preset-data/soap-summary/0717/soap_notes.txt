@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0717
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient wants to get surgery on their leg.
+- Patient has a history of multiple surgeries, including eye surgery, cataract surgery, and lumbar decompression.
+- Patient is inquiring about options for leg surgery.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- Need to determine the problem with the leg before discussing surgery options.

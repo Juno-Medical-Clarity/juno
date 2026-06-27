@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0298  |  gem_id: gem-cochrane-simplification-train-299  |  doi: 10.1002/14651858.MR000021.pub3
+
+Randomised controlled trials (RCTs) are needed to provide robust evidence of the relative efficacy and safety of treatments. In many RCTs, clinicians (i.e. healthcare professionals inviting patients to take part in an RCT in which they provide at least one of the interventions) only invite a small proportion of the people who are eligible for trials to take part. Observational studies have been conducted to explore reasons for this but the results do not identify any factors that appear to have a consistent impact on recruitment.

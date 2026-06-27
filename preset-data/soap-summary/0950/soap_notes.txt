@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0950
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- History of osteomyelitis of the right fifth toe, treated with IV antibiotics therapy.
+- Treatment duration: six weeks.
+- Time since treatment: approximately five years ago.
+- History of diabetes mellitus.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

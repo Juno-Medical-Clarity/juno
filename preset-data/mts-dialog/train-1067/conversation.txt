@@ -1,0 +1,14 @@
+Doctor: How would you rate your general health?
+Patient: I've been in reasonably good health at least physically. I try to go on frequent walks and eat a clean diet. However, there was one instance where I was not well mentally. After my husband died in nineteen seventy five, I had what I believe was a nervous breakdown. As a result of this, I was hospitalized for several weeks and treated with E C T.
+Doctor: I'm so sorry to hear about the loss of your husband. I can't imagine how difficult that must've been. I'm glad that you sought the care that you needed to feel better at that time. Did this happen when you were living in the United States or Korea?
+Patient: This all happened when I was living in Korea. I'm grateful that I had my family and friends to support me.
+Doctor: Social support is very important, especially when you are processing the loss of a loved one.
+Patient: Absolutely.
+Doctor: I have a few more questions before we move on. Any past medical problems?
+Patient: I used to have high blood pressure.
+Doctor: When you say used to, do you mean it's been resolved now?
+Patient: Yes.
+Doctor: Great news. How about surgeries? Have you had any in the past?
+Patient: None whatsoever.
+Doctor: Any alcohol or tobacco?
+Patient: No, I stay away from things like that.

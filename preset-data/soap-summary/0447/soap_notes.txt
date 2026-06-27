@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0447
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Cough
+- Severity: Not explicitly stated
+- Duration: Not explicitly stated
+- Associated symptoms: Sinus infection (implied)
+- Relevant medical history: Not mentioned
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Concerns: Patient is concerned about the nature of the condition and its treatability.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Sinus infection
+- Cough secondary to sinus infection
+
+Plan:
+- Treatment for sinus infection (implied, but specifics not mentioned)

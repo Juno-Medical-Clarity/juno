@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0632  |  gem_id: gem-cochrane-simplification-train-633  |  doi: 10.1002/14651858.CD003778.pub2
+
+Only two small randomised clinical trials on this topic were identified. The trials were not large enough in terms of sample size or length of follow up to allow changes in mortality to be adequately evaluated. Glucocorticosteroids were associated with improvement in serum markers of inflammation and liver histology, both of which were of uncertain clinical significance. Glucocorticosteroids were also associated with adverse events, including reduced bone mineral density. Further trials are necessary if the effectiveness of glucocorticosteroids is to be properly evaluated.

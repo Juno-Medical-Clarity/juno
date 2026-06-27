@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0277
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How's your asthma since you started using your inhaler again? Much better. I don't know why I didn't take it with me everywhere I went. It's important to carry it with you, especially during times where you're exercising or walking more than usual. Yeah. I think I've learned my lesson. Besides asthma, do you have any other medical problems?

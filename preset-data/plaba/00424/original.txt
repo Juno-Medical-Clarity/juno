@@ -1,0 +1,8 @@
+Gabapentin is almost exclusively cleared by the kidney and thus presents challenges in patients with kidney failure.
+Gabapentin is known to be effectively cleared by hemodialysis, but the efficiency of clearance by peritoneal dialysis (PD) has not been previously described.
+We report a case of gabapentin toxicity in a patient on long-term PD who was treated with continuous automated cycling PD.
+We find that continuous PD provides significant clearance of gabapentin.
+With 2-L exchanges every 2 hours, we document an apparent elimination half-life of 41.33 hours, which is substantially shorter than the reported elimination half-life of 132 hours in the absence of kidney function.
+Further, our patient's symptoms of gabapentin toxicity gradually improved and had fully resolved after about 36 hours of dialysis.
+Gabapentin clearance by PD was estimated at 94% of urea clearance.
+We conclude that intensive PD provides gabapentin clearance that approximates that of urea and is an effective but slow method to treat gabapentin overdose and toxicity.

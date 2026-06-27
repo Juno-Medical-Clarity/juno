@@ -1,0 +1,5 @@
+drug_focus: balsalazide
+question_type: Ingredient
+section_title: INGREDIENTS AND APPEARANCE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=93064dc5-6748-4876-a32c-156438b09ac7
+sample_id: 0352

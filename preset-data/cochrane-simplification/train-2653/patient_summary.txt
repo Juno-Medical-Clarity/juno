@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2653  |  gem_id: gem-cochrane-simplification-train-2654  |  doi: 10.1002/14651858.CD003293
+
+This review was conducted to find out if combining doxorubicin with other drugs is more effective than doxorubicin alone. Eight studies were considered together, which showed if combination chemotherapy is given: (1) tumour shrinkage was marginally better than in patients treated with doxorubicin alone; (2) survival was no different; and (3) side effects were worse than for patients treated with doxorubicin alone

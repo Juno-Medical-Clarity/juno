@@ -1,0 +1,5 @@
+Doctor: Do you smoke or drink?
+Patient: No, neither.
+Doctor: Any history of drug abuse?
+Patient: No, I have never used any illegal drugs in my life.
+Doctor: Okay.

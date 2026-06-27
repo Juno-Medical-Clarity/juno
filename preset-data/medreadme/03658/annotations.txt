@@ -1,0 +1,7 @@
+source:      plos_computational_biology
+side:        simple
+readability: 4.85
+split:       test
+
+jargon_spans:
+  [9:12] 'medical-jargon-google-easy' -> 'conformational search problem'

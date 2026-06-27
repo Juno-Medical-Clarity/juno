@@ -1,0 +1,1 @@
+Two CVD risk score models were developed and validated in 38, 824 people with SMI in THIN: the Primrose lipid model requiring cholesterol levels, and the Primrose body mass index (BMI) model with no blood test.

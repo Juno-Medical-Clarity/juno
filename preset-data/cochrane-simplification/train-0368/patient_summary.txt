@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0368  |  gem_id: gem-cochrane-simplification-train-369  |  doi: 10.1002/14651858.CD002048
+
+The objective of this review was to evaluate the short-term efficacy of auranofin for the treatment of rheumatoid arthritis when compared to placebo. Our results show that auranofin appears to be efficacious in the short-term treatment of patients with RA (6 months), and has a small but clinically and statistically significant benefit on the disease activity of these patients. Its effects on overall health status and radiological progression are not clear at this time, but would appear to be modest. Auranofin may be most appropriate for those patients with early and mild disease who are more likely to respond to less potent (and less toxic) therapies.

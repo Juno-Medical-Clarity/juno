@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [2:3] 'abbr-medical' -> 'SEC'
+  [4:5] 'abbr-medical' -> 'CZP'
+  [8:9] 'general-complex' -> 'efficacy'

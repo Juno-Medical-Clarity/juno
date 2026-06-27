@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0712
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hello there, I am Doctor Nathan. Hello. How old are you? I am forty eight? Do you get regular periods? No, I didn't get any periods for the last year after my surgery. Any hot flashes? Yes, it's been happening for the last several months. Sometimes I feel hot even in a fully air conditioned room. Other times I just feel like opening the refrigerator and standing in front of it. Any other symptoms? I am also experiencing a lot of mood swings for the last few weeks. Based on all the symptoms my assessment would be mood swings along with postsurgical menopause. That would be the cause for your hot flashes.

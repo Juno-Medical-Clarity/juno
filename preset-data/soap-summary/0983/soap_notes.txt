@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0983
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Rash on the left wrist.
+- Bug bites.
+- Using Triamcinolone 0.1% three times a day for rash.
+- Using Bactroban ointment three times a day as needed for bug bites.
+- Using Nystatin on lips once a day as needed, but using it much less now.
+- Klonopin dosage: 4 mg in the morning and 6 mg at night, instead of previously recommended 6 mg and 8 mg.
+- Patient feels they do better with the lower doses of Klonopin.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- Continue using Triamcinolone 0.1% for rash.
+- Continue using Bactroban ointment as needed for bug bites.
+- Continue using Nystatin on lips as needed.
+- Maintain current Klonopin dosage (4 mg in the morning and 6 mg at night).

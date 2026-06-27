@@ -1,0 +1,11 @@
+source:      plos_genetics
+side:        complex
+readability: 5.2
+split:       test
+
+jargon_spans:
+  [9:10] 'medical-jargon-google-hard' -> 'titania'
+  [11:12] 'abbr-medical' -> 'ttis450'
+  [17:20] 'medical-jargon-google-easy' -> 'recessive lethal mutation'
+  [21:22] 'medical-jargon-google-hard' -> 'pwp2h'
+  [32:34] 'medical-jargon-google-hard' -> 'subunit processome'

@@ -1,0 +1,1 @@
+To analyze the simulations, we compute various contact-based metrics, such as contact probability, and then apply Bayesian classifier methods to infer which metastable contacts are likely to be native vs. non-native.

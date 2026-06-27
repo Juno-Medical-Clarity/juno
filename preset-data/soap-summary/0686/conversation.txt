@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0686
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How long have you been feeling weakness and fatigue? Well, I'd say it's been a lot worse this week. I haven't had much of an appetite either. Have you lost weight as a result? I've lost about eight pounds, which is the most I've ever lost in a week's time. Wow, that's concerning. Are you experiencing any nausea, vomiting, diarrhea, or abdominal pain? No. How about chest pain, shortness of breath, cough, or heart racing? No. Any neurological symptoms, such as numbness or tingling? No. We'll get to the bottom of this. I'm waiting for your lab report to come back and then we can figure out the next steps.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3088  |  gem_id: gem-cochrane-simplification-train-3089  |  doi: 10.1002/14651858.CD007890.pub3
+
+Searching for studies up to May 2014, we found two high quality trials involving 2193 participants that tested beta-blockers after stroke in people with a recent stroke or TIA. No clear evidence indicated that beta-blockers reduced the risk of stroke, heart attack, or death from vascular disease. Participants who received beta blockers instead of placebo showed significantly more adverse effects. More studies with larger samples are needed.

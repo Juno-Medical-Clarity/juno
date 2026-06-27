@@ -1,0 +1,5 @@
+drug_focus: Amitriptyline, Alprazolam
+question_type: Comparison
+section_title: Abstract
+source_url: https://www.ncbi.nlm.nih.gov/pubmed/3618289
+sample_id: 0204

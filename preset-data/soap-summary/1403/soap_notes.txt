@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1403
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has a rare case of thrombocytopenia.
+- No other medical history mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Rare case of thrombocytopenia.
+
+Plan:
+- Patient to come in for a consult.

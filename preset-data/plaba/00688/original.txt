@@ -1,0 +1,9 @@
+Aim: To examine whether mild early time-restricted eating (eating dinner at 18:00 vs. at 21:00) improves 24-h blood glucose levels and postprandial lipid metabolism in healthy adults.
+Methods: Twelve participants (2 males and 10 females) were included in the study.
+In this 3-day (until the morning of day 3) randomized crossover study, two different conditions were tested: eating a late dinner (at 21:00) or an early dinner (at 18:00).
+During the experimental period, blood glucose levels were evaluated by each participant wearing a continuous blood glucose measuring device.
+Metabolic measurements were performed using the indirect calorimetry method on the morning of day 3.
+The study was conducted over three days; day 1 was excluded from the analysis to adjust for the effects of the previous day's meal, and only data from the mornings of days 2 and 3 were used for the analysis.
+Results: Significant differences were observed in mean 24-h blood glucose levels on day 2 between the two groups (p = 0.034).
+There was a significant decrease in the postprandial respiratory quotient 30 min and 60 min after breakfast on day 3 in the early dinner group compared with the late dinner group (p < 0.05).
+Conclusion: Despite a difference of only 3 h, eating dinner early (at 18:00) has a positive effect on blood glucose level fluctuation and substrate oxidation compared with eating dinner late (at 21:00).

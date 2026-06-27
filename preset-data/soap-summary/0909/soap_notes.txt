@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0909
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports feeling "pretty tired most days."
+- Patient is trying to stay more active.
+- Concerns about fatigue possibly related to sugar levels.
+- Patient has noticed blood in stool for about a week.
+- Denies other symptoms: no black or tarry stool, no nausea, vomiting, diarrhea, or lightheadedness.
+- Patient has not yet scheduled their yearly mammogram and plans to call tomorrow.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- Order glucose and lipid panels.
+- Order hemoccult test to check for blood in stool.
+- Advise patient to fast for the lipid panel and go to the lab early the next morning before eating breakfast.
+- Remind patient to schedule yearly mammogram.

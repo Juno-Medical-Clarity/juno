@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2040  |  gem_id: gem-cochrane-simplification-train-2041  |  doi: 10.1002/14651858.CD003215.pub2
+
+The review authors searched the medical literature and found two small randomised controlled trials (98 infants) measuring/investigating the benefit of either infusion of base or of a fluid injection (bolus) in the treatment of preterm infants with metabolic acidosis. Infants were given an infusion of sodium bicarbonate on the first day of postnatal life, compared with no treatment or a fluid bolus with albumin. There was no clear evidence that the base infusion corrected metabolic acidosis more effectively. One of the studies (62 newborns) reported no difference in early deaths at one week or in the incidence of bleeding in the brain. Neither study assessed longer-term neurological disabilities.

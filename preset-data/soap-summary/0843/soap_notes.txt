@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 0843
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No past surgeries reported.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided.)

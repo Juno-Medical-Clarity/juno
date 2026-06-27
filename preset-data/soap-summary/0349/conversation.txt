@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0349
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Does anyone in your family suffer from any health problems? No one comes to mind. Great.

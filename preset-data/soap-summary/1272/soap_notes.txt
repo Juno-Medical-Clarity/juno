@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1272
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No past medical history mentioned.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No diagnoses or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

@@ -1,0 +1,38 @@
+# SOAP Notes — Sample 0498
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Injury occurred on November 20, 2008.
+- The patient works at the Purdy Correctional Facility.
+- Injury caused by slipping on water from broken overhead sprinklers, landing on the back of the head and back.
+- Most impact was on the left side.
+- Experienced being "pretty stunned" after the fall.
+- Initially did not want to come in for evaluation, but was advised by employers to do so.
+- Evaluated at Gig Harbor Urgent Care and Tacoma General Hospital.
+- Diagnosed with whiplash and concussion.
+- CT scan identified a dark spot on the brain.
+- Recommended to have another MRI due to a diagnosis of recurrent acoustic neuroma.
+- Previous detection of acoustic neuroma was in October 2005, discovered through a chiropractor who suggested a scan.
+- Undergoing recovery from surgery related to acoustic neuroma.
+- Radiation treatment is under consideration, but no final decision has been made.
+- Sees a chiropractor for adjustments and massages; has experienced improvement in spine pain.
+- Mentioned treatment at Prompt Care in Bremerton by an osteopathic doctor (Doctor XYZ).
+- The osteopathic doctor ordered an MRI of the neck, which showed a mild disc bulge at C4-C5.
+- Released back to full duty after neurosurgical treatment.
+- Has been seeing the osteopathic doctor for general aches and pains in back and neck since 2002.
+
+Objective:
+- CT scan showed a dark spot on the brain.
+- MRI report indicates mild disc bulge at C4-C5.
+
+Assessment:
+- Whiplash.
+- Concussion.
+- Recurrent acoustic neuroma (previously treated).
+- Mild disc bulge at C4-C5.
+
+Plan:
+- Consideration for follow-up MRI.
+- Discuss potential radiation treatment for recurrent acoustic neuroma.
+- Continue chiropractic treatments for general aches and pains.
+- Monitor symptoms and response to treatments.

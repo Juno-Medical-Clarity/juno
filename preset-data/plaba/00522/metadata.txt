@@ -1,0 +1,5 @@
+pmid:        23641263
+question:    40
+adaptation:  adaptation1
+title:       Compression therapy: clinical and experimental evidence
+sentences:   9

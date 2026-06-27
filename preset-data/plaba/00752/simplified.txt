@@ -1,0 +1,11 @@
+Fast and accurate COVID-19 tests help reduce the spread of the disease, including in hospitals.
+Some of the known tests are expensive, take a long time and need training to do the test.
+Other tests are fast and easy to do without training.
+Accuracy of the easier and faster tests compared to the traditional tests is an area of interest.
+The Quidel rapid test was approved for emergency use in patients within the first 5 days of COVID-19 symptoms.
+These tests agreed with the traditional test for 83 to 99 out of 100 patients with positive results and 97 to all 100 patients with negative results.
+For the COVID-19 patients that did not have symptoms, the tests were not as accurate as the traditional test.
+We compared test results at a hospital in June - August 2020.
+Among 1,732 patients that had no symptoms the rapid test agreed with the traditional test on about 60 out of 100 positive tests, and on almost all negative tests.
+Among 307 patients that had symptoms the rapid test agreed with the traditional test on over 70 out of 100 positive tests, and on almost all negative tests.
+As rapid test misses many COVID-19 cases, traditional tests might be needed when the disease is on the rise. False negative test results cause delays in quarantine and treatment of COVID-19.

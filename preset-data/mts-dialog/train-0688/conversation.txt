@@ -1,0 +1,5 @@
+Doctor: Hi!
+Patient: Hello, how are you?
+Doctor: I am good.
+Patient: I think I am all well now.
+Doctor: Yes, looking at your results I think your kidney failure is resolved too.

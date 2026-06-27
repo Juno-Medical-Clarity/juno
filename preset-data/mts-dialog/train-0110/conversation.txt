@@ -1,0 +1,15 @@
+Doctor: Hi, how are you doing today?
+Patient: I've been better. Thank you.
+Doctor: So, you are here for your follow up right? Remind me how often are you coming here?
+Patient: That's right. I'm coming around between a month or two.
+Doctor: Yeah, it's every four to eight weeks.
+Patient: I'm not taking any medicine now. I just wanted to let you know.
+Doctor: Yeah, I can see it in your record. It says that you are off of all the immunosuppression. So, just let me check. It says here that you do have mild chronic G V H D. It is not that bad that I should be worried about any therapy or anything else. How long ago did you get that transplant?
+Patient: I think it was around four and a half years ago. I'm feeling much better after that. I do have complaints of blood in my stool. But after you sent me to that doctor, that gastro doctor, I feel good. I know they said that they removed something, but I'm not sure, but after that it has been improved a lot.
+Doctor: Okay, let me see in my chart. You had some rectal bleeding issues because of which I referred you to the gastroenterologist. A complete endoscopy was performed, which was both on the upper and the lower side. There was no evidence of ulcers or any other abnormality. That's  good news, right?
+Patient: Yeah, I agree. That was a relief.
+Doctor: They did find some polyps and they removed it. They turned out to be benign, so nothing to worry about there.
+Patient: Yeah, I remember this said they removed something, but I forgot the name.
+Doctor: Is there any other issue that I can help you with?
+Patient: I don't know. I feel a lot of fatigue and like I'm not able to do things like I used to do before. I get tired very easily. I don't know if it is related to something or not, but things have been weird. I'm not able to do even the minor things like I lift two boxes and I'm done for the day. Is it something that I should be worried about?
+Doctor: It looks like you have a mild iron deficiency. I will work on that with you, don't worry.

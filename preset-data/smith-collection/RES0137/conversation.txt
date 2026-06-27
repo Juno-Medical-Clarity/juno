@@ -1,0 +1,162 @@
+# Smith Collection Transcript: RES0137
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: So what uh brings you here today
+
+Patient: I am here with uh with my daughter who has just been having a cough for the past um two weeks
+
+Doctor: Okay um and can you describe the cough a little bit is it a dry cough or is she bringing anything up
+
+Patient: um it is a it is a dry cough um but she just keeps coughing and coughing and and then she just you know once shell start coughing she just doesnt stop and then um theres been times when she just turns blue shes coughing so much um and then it just gets gets better um on its own but yeah its a dry cough
+
+Doctor: Okay and um what does the cough sound like is it like a harsh cough a barky cough
+
+Patient: um its just she just makes this noise when shes like breathe trying to take a breath in its its yeah
+
+Doctor: Okay is it kind of a wheeze
+
+Patient: Yeah sure
+
+Doctor: Okay um and so theres episodes where she also turns blue
+
+Patient: When shes coughing a lot yeah she does
+
+Doctor: Okay
+
+Patient: Shes also vomited once or twice
+
+Doctor: Oh i see okay um any blood in the vomit or is she coughing up any blood
+
+Patient: No
+
+Doctor: No okay um any so this started two weeks ago any kind of symptoms of runny nose or um coldlike symptoms before then
+
+Patient: Yeah yeah she did have a bit of a runny nose it was just uh watery uh since discharge and at that time her cough she had a cough as well um but i thought it was you know its nothing it was just like another flu and it would get better but then she just the runny nose got better without in a couple of days but the cough stayed and it got got pretty worse uh it got worse
+
+Doctor: Okay um other than the cough uh any any fevers or chills
+
+Patient: No i dont think shes had fevers i havent checked though
+
+Doctor: Okay and the cough is pretty constant or is it does it come and go
+
+Patient: Yeah she just has these episodes where she just coughs and coughs and coughs and then shell either vomit or just turn blue or just um get better in a couple couple minutes this kind of comes and goes like that
+
+Doctor: Okay and is there anything that has helped her at all like any over the counter medications or anything like that
+
+Patient: I havent tried anything im just worried about you know shes my first child and i dont know what to give her and what not to give her at this age so i just decided to come in and not try anything over the counter
+
+Doctor: Okay um and so has this happened before at all
+
+Patient: No
+
+Doctor: No this is the first time okay um any so she she is vomiting um is the vomit like green in colour or is she just vomiting up what she has eaten whats the content of the moment
+
+Patient: Its usually just what shes eaten
+
+Doctor: Okay um any sick contacts recently or any travel
+
+Patient: No i dont think so not nothing really
+
+Doctor: um and how about her behaviour does she seem like uh very tired or fatigued or more irritable
+
+Patient: She does get tired especially after and then shes irritable and crying after you know she has these fits of coughs
+
+Doctor: Okay
+
+Patient: Yeah
+
+Doctor: Okay um any symptoms of diarrhea or constipation
+
+Patient: No
+
+Doctor: Okay any um any trouble with urinating at all
+
+Patient: No
+
+Doctor: No hows her sleeping like
+
+Patient: uh not great its just the cough keeps uh waking her up and she just doesnt cant fall asleep
+
+Doctor: Okay any uh exposure to dust or fumes or animals or pets at home
+
+Patient: We we did get a cat um about a month ago
+
+Doctor: Okay um and any has she been diagnosed with any medical conditions in the past
+
+Patient: No
+
+Doctor: um and any allergies that you know of
+
+Patient: um no
+
+Doctor: And um any previous hospitalizations or surgeries
+
+Patient: No
+
+Doctor: And how was your pregnancy your pregnancy with her like any complications at all
+
+Patient: No no complications it was uh it was very yeah it went well
+
+Doctor: And was she at term or premature
+
+Patient: She was at term she was born at term
+
+Doctor: Was it a vaginal delivery or uh a csection
+
+Patient: uh vaginal
+
+Doctor: And did she have to stay in the nicu at all at the hospital afterwards
+
+Patient: No
+
+Doctor: Okay and is she feeding well like what does she usually eat
+
+Patient: Shes feeding well shes doing uh she eats everything yeah
+
+Doctor: um and any family history of any medical conditions
+
+Patient: No
+
+Doctor: um and does anyone smoke in the house
+
+Patient: um her dad but he he doesnt smoke in front of her
+
+Doctor: And whats her living situation like who does she live with and do you live in a house apartment
+
+Patient: Oh yeah we live in an apartment its uh me my partner her and the cat
+
+Doctor: Okay and any difficulties or complications with her growth like in terms of her weight or her height
+
+Patient: No no complications shes doing okay
+
+Doctor: Okay and in terms of her milestones has she been meeting all of them on time
+
+Patient: Yes
+
+Doctor: Okay alright so i think those are all the questions i have for you today do you have any questions or concerns
+
+Patient: uh no
+
+Doctor: Yeah so based on the symptoms oh yeah sorry i forgot to ask one other question has she are her immunizations all up to date
+
+Patient: Oh no no i dont i dont get those my friends my friends daughter developed autism and im just i dont want that you know so no i dont vaccinate my kids or i dont vaccinate my daughter and i havent been yeah uh no i wont be doing that
+
+Doctor: And have you been vaccinated throughout your life
+
+Patient: um maybe when i was young but i yeah i dont i just dont believe in vaccinations i yeah no i dont i dont get those
+
+Doctor: Yeah so there is definitely uh theres a lot of research done beside behind vaccinations and a lot of prevention goes into them but definitely there is some anecdotal evidence of very loose associations to autism that have been found to be invalid and like they have been invalidated by the research so definitely its very important to get your child vaccinated in fact the sum of the symptoms that your child may be having right now can be caused by something called pertussis and um theres usually a vaccination for that like after pregnancy as well so thats something that is definitely on the differential and at this time we definitely need to make sure shes okay and get her vitals done see her oxygenation saturation and just do supportive care while shes in the hospital and we may need to admit her but well do the full physical examination today get a coviswab done as well and usually it shes currently in the it seems to be the second phase where shes vomiting and coughing a lot and then it usually after that phase two or three more weeks of just coughing and so were going to do some supportive care for her right now but yeah definitely you should consider vaccinating your child we recommend that to every parent as theres a lot of diseases out there that can be completely prevented if you vaccinate your child
+
+Patient: Okay ill think about it
+
+Doctor: Alright so so for now were gonna just make sure that shes doing well okay
+
+Patient: Sure
+
+Doctor: Alright take care

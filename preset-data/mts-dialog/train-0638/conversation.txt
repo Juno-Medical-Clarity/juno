@@ -1,0 +1,12 @@
+Doctor: Hello, ma'am. How are you doing?
+Patient: My knees hurt. They've been slowly getting worse each year. Life's getting hard at seventy two.
+Doctor: I'm sorry to hear that. Have you always had knee pain?
+Patient: I have. Both knees are messed up.
+Doctor: Are you able to do any activities still?
+Patient: Nope. I just sit all day.
+Doctor: I see. We can offer to do arthroplasty to fix your knees.
+Patient: What's that?
+Doctor: It's like a reconstruction of your joints. It'll help increase your ability to do daily activities.
+Patient: I'm up for it. I need to get my life going.
+Doctor: Sounds great. I just want to confirm some information. Would you say your quality of life and daily activities is decreasing?
+Patient: Oh, yeah. These knees are making my life terrible.

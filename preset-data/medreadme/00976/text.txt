@@ -1,0 +1,1 @@
+With these caveats in mind, the physical interaction-based, coarse-grained model will find application in simulations of a wide variety of proteins and continue to guide future coarse-graining efforts.

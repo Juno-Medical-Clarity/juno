@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1631  |  gem_id: gem-cochrane-simplification-train-1632  |  doi: 10.1002/14651858.CD008739.pub2
+
+The search yielded two studies dealing with the preventive aspect of the condition. The first trial found weekly fluconazole significantly effective in preventing clinical episodes from occurring as compared to placebo. However,this regimen lead to emergence of species resistant to azoles. The second trial with three arms of comparison; Clotrimazole, Lactobacillus and placebo gave no definitive results in preventing an episode of VVC. Neither of the included studies investigated the effects of HAART(Highly Active Antiretroviral Therapy) or any other form of antiretroviral treatment on VVC nor did they explore difference in quality of life, viral shedding in vaginal secretions (infectivity) ,patient preference for route of administration or the cost.

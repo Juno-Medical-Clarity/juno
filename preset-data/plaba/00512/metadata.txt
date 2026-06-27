@@ -1,0 +1,5 @@
+pmid:        34669343
+question:    39
+adaptation:  adaptation1
+title:       The role of neurodegeneration biomarkers in the management of patients with diabetic retinopathy
+sentences:   3

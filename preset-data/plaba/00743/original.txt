@@ -1,0 +1,15 @@
+Background: The humoral immune response after primary immunisation with a SARS-CoV-2 vector vaccine (AstraZeneca AZD1222, ChAdOx1 nCoV-19, Vaxzevria) followed by an mRNA vaccine boost (Pfizer/BioNTech, BNT162b2; Moderna, m-1273) was examined and compared with the antibody response after homologous vaccination schemes (AZD1222/AZD1222 or BNT162b2/BNT162b2).
+Methods: Sera from 59 vaccinees were tested for anti-SARS-CoV-2 immunoglobulin G (IgG) and virus-neutralising antibodies (VNA) with three IgG assays based on (parts of) the SARS-CoV-2 spike (S)-protein as antigen, an IgG immunoblot (additionally contains the SARS-CoV-2 nucleoprotein (NP) as an antigen), a surrogate neutralisation test (sVNT), and a Vero-cell-based virus-neutralisation test (cVNT) with the B.1.1.7 variant of concern (VOC; alpha) as antigen.
+Investigation was done before and after heterologous (n = 30 and 42) or homologous booster vaccination (AZD1222/AZD1222, n = 8/9; BNT162b2/BNT162b2, n = 8/8).
+After the second immunisation, a subgroup of 26 age- and gender-matched sera (AZD1222/mRNA, n = 9; AZD1222/AZD1222, n = 9; BNT162b2/BNT162b2, n = 8) was also tested for VNA against VOC B.1.617.2 (delta) in the cVNT.
+The strength of IgG binding to separate SARS-CoV-2 antigens was measured by avidity.
+Results: After the first vaccination, the prevalence of IgG directed against the (trimeric) SARS-CoV-2 S-protein and its receptor binding domain (RBD) varied from 55-95% (AZD1222) to 100% (BNT162b2), depending on the vaccine regimen and the SARS-CoV-2 antigen used.
+The booster vaccination resulted in 100% seroconversion and the occurrence of highly avid IgG, which is directed against the S-protein subunit 1 and the RBD, as well as VNA against VOC B.1.1.7, while anti-NP IgGs were not detected.
+The results of the three anti-SARS-CoV-2 IgG tests showed an excellent correlation to the VNA titres against this VOC.
+The agreement of cVNT and sVNT results was good.
+However, the sVNT seems to overestimate non- and weak B.1.1.7-neutralising titres.
+The anti-SARS-CoV-2 IgG concentrations and the B.1.1.7-neutralising titres were significantly higher after heterologous vaccination compared to the homologous AZD1222 scheme.
+If VOC B.1.617.2 was used as antigen, significantly lower VNA titres were measured in the cVNT, and three (33.3%) vector vaccine recipients had a VNA titre < 1:10.
+Conclusions: Heterologous SARS-CoV-2 vaccination leads to a strong antibody response with anti-SARS-CoV-2 IgG concentrations and VNA titres at a level comparable to that of a homologous BNT162b2 vaccination scheme.
+Irrespective of the chosen immunisation regime, highly avid IgG antibodies can be detected just 2 weeks after the second vaccine dose indicating the development of a robust humoral immunity.
+The reduction in the VNA titre against VOC B.1.617.2 observed in the subgroup of 26 individuals is remarkable and confirms the immune escape of the delta variant.

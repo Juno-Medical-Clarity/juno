@@ -1,0 +1,5 @@
+pmid:        9483156
+question:    72
+adaptation:  adaptation2
+title:       Newborn screening for inborn errors of metabolism: a systematic review
+sentences:   30

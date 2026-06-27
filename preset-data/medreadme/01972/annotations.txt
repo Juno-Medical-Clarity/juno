@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [7:12] 'medical-jargon-google-easy' -> 'partial and total knee replacements'
+  [13:14] 'medical-name-entity' -> 'NHS'
+  [26:28] 'general-complex' -> 'randomised trials'

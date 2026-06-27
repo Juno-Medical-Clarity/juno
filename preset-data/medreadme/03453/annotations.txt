@@ -1,0 +1,14 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 4.7
+split:       test
+
+jargon_spans:
+  [38:40] 'medical-jargon-google-easy' -> 'progressive exercise'
+  [49:50] 'medical-jargon-google-easy' -> 'physiotherapy'
+  [67:68] 'medical-jargon-google-easy' -> 'physiotherapy'
+  [74:76] 'medical-jargon-google-easy' -> 'corticosteroid injection'
+  [77:79] 'medical-jargon-google-easy' -> 'progressive exercise'
+  [88:89] 'medical-jargon-google-easy' -> 'physiotherapy'
+  [95:97] 'medical-jargon-google-easy' -> 'corticosteroid injection'
+  [109:110] 'medical-jargon-google-easy' -> 'physiotherapy'

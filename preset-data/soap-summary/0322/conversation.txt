@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0322
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you had any surgeries in the past? Actually, yes, I had my gallbladder removed in nineteen ninety two. Great, any other surgeries? Think back a little further? Oh yeah, I had my appendix out in nineteen eighty eight.

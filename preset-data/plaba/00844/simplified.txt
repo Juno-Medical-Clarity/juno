@@ -1,0 +1,9 @@
+Ferritin (an iron-containing protein), which has 24 light and heavy parts in varying proportions in different tissues, is primarily responsible for maintaining the body's iron metabolism.
+Its normal value is between 10 and 200 ngmL-1 in men and between 30-300 ngmL-1 in women.
+Iron is delivered to the tissue via them, and they act as immune-system-regulators, signaling molecules, and inflammatory markers.
+When ferritin level exceeds 1000 µgL-1, the patient is categorized as having hyperferritinemia (high ferritin levels).
+Iron binders such as deferiprone, deferirox, and deferoxamine are currently FDA approved to treat iron overload (or high levels of iron).
+The inflammation process and poor recovery of COVID-19 (a viral lung infection) may be linked to high ferritin levels.
+Critically ill patients can benefit from deferasirox, an iron binder given by mouth at 20-40 mgkg-1 once daily, as well as deferoxamine initially given at 1000 mg in the vein followed by 500 mg every 4 to 12 hours.
+It can be combined with antibodies (immune system products to fight infections), antioxidants, corticosteroids (specific steroids), and lactoferrin (a protein in mammalian milk) to make iron binding treatment effective for COVID-19 victims.
+In this article, we analyze the antiviral and antiscarring activity of iron binders, thereby promoting iron depletion therapy as a possibly new treatment for COVID-19.

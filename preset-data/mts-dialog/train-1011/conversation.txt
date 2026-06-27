@@ -1,0 +1,9 @@
+Patient: I was working when it happened so we are going through workers comp.
+Doctor: Okay. Don't worry. Let's see. Oh wow!
+Patient: Yeah, this arm, it was a hot oil.
+Doctor: Yeah, too bad, looks like from elbow to wrist. The whole medial side is burnt.
+Patient: I am using cool packs since it happened. My friend is helping me so much, he drove me to Emergency Department.
+Doctor: Okay, how old are you?
+Patient: I am forty one.
+Doctor: What is your job? I mean what do you do?
+Patient: I am a cook at coffee shop.

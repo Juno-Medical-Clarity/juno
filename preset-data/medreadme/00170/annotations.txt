@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [11:14] 'medical-jargon-google-easy' -> 'levetiracetam - treated'
+  [20:23] 'medical-jargon-google-easy' -> 'phenytoin - treated'

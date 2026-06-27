@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0408
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Now that you're eighteen, I have a big question to ask you. Do you smoke? Never have, never will. That's what I like to hear. You have a good head on your shoulders, bud. Thanks. I'd like to think so, too. I have some friends who smoke weed, but stay clear of tobacco.

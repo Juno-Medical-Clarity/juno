@@ -1,0 +1,200 @@
+# Smith Collection Transcript: RES0189
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: So ive been having a lot of trouble in the last two weeks of especially this past week of just a lot of shortness of breath im getting a lot of coughing as well and producing a lot of material and also i think i might have been having a fever this week as well
+
+Doctor: OK uh the shortness of breath is it happening at rest or exertion and how much exertion
+
+Patient: Uhm i think its happening mostly on exertion usually im able to walk around the house no issues go up and down stairs but right now im pretty limited i cant really go up and down stairs without getting really short of breath i cant even walk from the bedroom to the kitchen without becoming shortness of like short of breath
+
+Doctor: OK um ok and when did that change happen
+
+Patient: So i would say one week ago is when this all kind of started
+
+Doctor: OK and has it been getting any better worse or staying the same
+
+Patient: I would say its kind of getting worse im coughing a lot more sputum up im getting more and more short of breath now i do have a call for like a very long time now ive i was diagnosed with copin my 60s probably like 10 years ago and but this seems to be just a much worse than my copd
+
+Doctor: OK sure its been a lot worse in the last week it sounds like ok uhm have you are you able to lie flat like on your back without experiencing shorter breath shortness of breath
+
+Patient: Yeah and when im resting or lying down or trying to sleep i dont get short of breath
+
+Doctor: OK and have you ever had instances where you woke up in the middle of the night really short of breath and you had to sit up to catch your breath
+
+Patient: uh no i dont think so
+
+Doctor: OK have you noticed any leg swelling
+
+Patient: No
+
+Doctor: OK and you said that to you so youve had a cough for awhile now but its gotten worse this past week in your are you bringing up sputum
+
+Patient: Yeah im bringing up a lot of materials i think every time i cough im bringing some sputum up and right now the like usually the color is like clear to whitish but right now its a bit more yellow
+
+Doctor: OK so a change in the sputum color and also sounds like youre bringing up more sputum as well
+
+Patient: Yeah
+
+Doctor: OK and have you brought up or coughed up any blood so have you had any hemoptysis
+
+Patient: No nothing like that
+
+Doctor: OK and have you had any wheezing
+
+Patient: Uhm i do but when i get short of breath i have some wheezing but usually i dont
+
+Doctor: OK but but youve had wheezing this past week though
+
+Patient: Yeah
+
+Doctor: Yeah ok and have you had any chest pain
+
+Patient: Just when im coughing and getting short of breath i do have some discomfort in my chest
+
+Doctor: OK uh do you feel that or could you describe he the pains character like is it sharp dull or achy
+
+Patient: Its more just an ache and its kind of more of a discomfort than a pain and it kind of goes away once my episode of coughing and shortness of breath is relieved with some rest
+
+Doctor: OK uh and uh have you been experiencing any fevers or chills
+
+Patient: Yeah ive been noticing that im getting a lot more chills this past week they kind of come and go but even at night i get like these chills that after wrap myself up in at least three blankets
+
+Doctor: OK and have you had a fever
+
+Patient: uh i didnt get a chance to measure any of them but i might have had a fever just from the chills that im expecting that i had a fever
+
+Doctor: OK and have you had any night sweats
+
+Patient: No
+
+Doctor: OK and have you had any unexpected weight loss over the last several months
+
+Patient: No i think my weights been pretty steady
+
+Doctor: OK have you had any headaches
+
+Patient: No
+
+Doctor: Have you had any like eye redness or eye discharge
+
+Patient: No not that i know of
+
+Doctor: OK have you had a runny nose or a sore throat
+
+Patient: No
+
+Doctor: OK have you had a loss of taste or loss of smell
+
+Patient: No nothing like that
+
+Doctor: OK have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: Have you had any abdominal pain
+
+Patient: No abdominal pain
+
+Doctor: Have you had any diarrhea
+
+Patient: No
+
+Doctor: Have you had any constipation
+
+Patient: No
+
+Doctor: Have you had any skin rashes
+
+Patient: No
+
+Doctor: Any muscle aches or joint pains
+
+Patient: No nothing like that
+
+Doctor: OK and have you had any any fatigue
+
+Patient: Maybe a little bit more tired just with the shortness of breath and chills and everything like that but yeah so a little bit more fatigue
+
+Doctor: OK and have you had any fainting or dizziness
+
+Patient: uh no
+
+Doctor: Or ok and have you had any heart palpitations
+
+Patient: Nope
+
+Doctor: Alright and have you been diagnosed with any medical conditions in the past
+
+Patient: No oh sorry medical conditions in the past copi have i also do have some high blood pressure and i take some medications for cholesterol as well
+
+Doctor: OK so you take medications for cholesterol and high blood pressure and you use any inhalers
+
+Patient: No sorry inhalers i use uh two different kinds of inhalers so one of them is just when i like need it uh like ive been using a lot more recently like the ventolin and then i also have another inhaler called spiriva that ive been using as well
+
+Doctor: OK and do you have any allergies
+
+Patient: Uhm i do have an allergy to sulfa drugs
+
+Doctor: And what reaction
+
+Patient: I usually break out into hives
+
+Doctor: OK and any prior surgeries or hospitalizations
+
+Patient: So ive had a surgery to remove my appendix when i was really young then ive had another surgery for my hips as well but yeah other than that no other issues
+
+Doctor: OK and are your immunizations up to date
+
+Patient: Yeah all of my immunizations should be up to date
+
+Doctor: OK excellent and could you tell me a little bit about where youre living currently and who youre living with
+
+Patient: Yeah so i i currently live alone in in an apartment just in the city and yeah ive been living alone for probably the last five years
+
+Doctor: OK and have you been around anybody whos been sick
+
+Patient: Uhm not recently i think i just i just go out to get groceries and stuff i havent really been going out too much
+
+Doctor: Alright so have you traveled anywhere
+
+Patient: No
+
+Doctor: OK uhm do you drink alcohol
+
+Patient: Maybe a couple of years a week
+
+Doctor: OK and do you smoke cigarettes
+
+Patient: Yeah i still smoke cigarettes even though i have copi just yeah i cant really quit i smoke probably half a pack a day
+
+Doctor: OK how long have you smoked for approximately
+
+Patient: uh probably at least 45 years
+
+Doctor: OK and uhm if you wanted to talk about quitting we can discuss that further at a later time if youd like uhm and so do you use any recreational drugs
+
+Patient: No no no no drugs at all
+
+Doctor: OK uhm and have you had a family history of heart disease or any lung conditions
+
+Patient: Uhm not i mean like no lung conditions but i have a family history like my both my grandather and father both had heart attacks in their 60s
+
+Doctor: OK and any lung cancer in the family
+
+Patient: No not that i know of
+
+Doctor: OK so i think that was all the questions that i i wanted to ask today was there anything else that i maybe forgot about that you wanted to mention
+
+Patient: Uhm no i think that those are all the questions i had and everything was covered
+
+Doctor: OK uhm so uh the next steps for now i think will be to uh start well get a physical exam in and your vital signs and get some investigations it is sounding like a copexacerbation with the increasing and the change changing sputum the increasing frequency of cough and the exertional shortness of breath as well along with wheezing and kind of this chest discomfort that youre experiencing and so uh this will require some antibiotics as well and depending on the severity of symptoms possibly some steroids as well to help with the inflammation
+
+Patient: OK that sounds good thank you

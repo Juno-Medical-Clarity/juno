@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0793  |  gem_id: gem-cochrane-simplification-train-794  |  doi: 10.1002/14651858.CD000522.pub2
+
+This review included 11 randomised or quasi-randomised trials. The majority of the participants were female, usually aged around 80 years. There were seven comparisons but the evidence for each of these was insufficient to draw conclusions. Thus, the review found that there was too little evidence from randomised trials to show which, if any, specific surgical techniques used during operations for extracapsular proximal femoral fractures are better.

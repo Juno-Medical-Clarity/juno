@@ -1,0 +1,59 @@
+# SOAP Notes — Sample 0208
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with cough and shortness of breath for the past week
+- Cough: Initially dry, now productive with yellow sputum; no hemoptysis; worsening over time; associated with wheezing
+- Shortness of breath: Varies in severity; worsening over time; pain with deep inspiration; limiting ability to walk more than 2 blocks
+- Fever: Tmax 38.5°C this morning; associated with chills
+- Confusion and difficulty concentrating, noticed since yesterday morning (e.g., forgetting about cooking)
+- Mild rhinorrhea with yellow discharge
+- Fatigue
+
+PMHx:
+- DVT 2 years ago (provoked by air travel)
+- Diabetes mellitus (on insulin)
+- Hypothyroidism (on levothyroxine)
+- No history of COPD, asthma, or cardiac issues
+
+Medications:
+- Insulin
+- Levothyroxine
+- Aspirin 81 mg daily
+- Calcium and vitamin D supplements
+
+SocHx:
+- Lives with husband
+- Independent with ADLs and IADLs
+- Uses laundromat for laundry
+- No recent travel; trying to stay home due to COVID-19
+
+Allergies: NKDA
+
+ROS:
+- General: Fatigue, fevers, chills
+- HEENT: Mild rhinorrhea (yellow discharge), no sore throat, no changes in vision or hearing, no changes in taste or smell
+- Respiratory: Cough (initially dry, now productive with yellow sputum), shortness of breath, wheezing, pleuritic chest pain
+- Cardiovascular: No chest pain at rest, no palpitations
+- GI: No abdominal pain, nausea, vomiting, diarrhea, constipation
+- GU: No dysuria, frequency, urgency
+- MSK: No joint or muscle pain
+- Neuro: Confusion and difficulty concentrating (new onset), no headache
+- Skin: No rashes or lesions
+- Endocrine: No weight loss, no night sweats
+- Lymphatics: No swelling in abdomen, legs, or feet
+
+Objective:
+- Vitals: Tmax 38.5°C
+
+Assessment:
+- Likely pneumonia (bacterial or viral)
+
+Plan:
+- Admit for further evaluation and management
+- COVID-19 testing and isolation pending results
+- Chest X-ray
+- Labs: CBC, CMP, blood cultures
+- Empiric antibiotics pending culture results
+- Supportive care (oxygen, IV fluids, antipyretics)
+- Close monitoring of respiratory status and mental status

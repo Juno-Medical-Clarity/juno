@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0276
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi, how are you? I burned my hand. Oh, I am sorry. Wow! Yeah. Is it only right arm? Yes.

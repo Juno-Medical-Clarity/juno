@@ -1,0 +1,5 @@
+drug_focus: cilastatin/imipenem
+question_type: Usage
+section_title: DOSAGE AND ADMINISTRATION
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a1dd9b9-ada1-4bff-9dcb-18961254e9e8
+sample_id: 0517

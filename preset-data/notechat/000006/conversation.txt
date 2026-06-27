@@ -1,0 +1,29 @@
+Doctor: Good morning, how are you feeling today?
+Patient: I'm feeling okay, doctor.
+Doctor: That's great to hear. Can you tell me what happened to you before you came to the hospital?
+Patient: I was having trouble breathing and my oxygen level was low.
+Doctor: I see. When you say you were having trouble breathing, what exactly did you experience?
+Patient: I had dyspnea.
+Doctor: Okay, and what was your oxygenation level on room air?
+Patient: It was 65%.
+Doctor: I see. When you arrived at the hospital, you underwent tracheal intubation. Do you remember that?
+Patient: Yes, I do.
+Doctor: Good. You were diagnosed with moderate ARDS and reduced lung compliance. To treat your condition, we used deep sedation, neuromuscular blocking agents, and prone positioning. Do you remember that?
+Patient: Hmm, yes, I think that's right.
+Doctor: Great. On day 14, a trial of sitting on the edge-of-bed was performed while you were still intubated and under pressure support ventilation. Do you remember that?
+Patient: Yes, I do.
+Doctor: Good. The trial required 3 physical therapists to maintain the position, but it resulted in a significant increase in your level of consciousness and collaborative state. The next day, you were able to hold your head and sit for about 15 minutes with 2 therapists. Do you remember that?
+Patient: Hmm, yes, I think so.
+Doctor: Great. Your muscle strength indicated ICU-acquired weakness, with a Medical Research Council sum-score of 40/60. But you continued with small but consistent improvements and started to participate actively in physical therapy sessions. Do you remember that?
+Patient: Hmm, yes, I think I remember that.
+Doctor: Good. You were encouraged to mobilize yourself with exercises against gravity and were actively transferred to a chair each day with the help of 2 physical therapists. Do you remember that?
+Patient: Yes, I do.
+Doctor: Great. You were successfully extubated, but presented postextubation dysphagia. The physical therapy team closely monitored you for secretion management and cough stimulation and continued your physical rehabilitation. Do you remember that?
+Patient: Hmm, yes, I think so.
+Doctor: Good. On day 19, you started to walk with a walking aid, although at this point oxygen desaturation during exercise training became evident with 89% oxygen saturation with 3 L/min of oxygen. Do you remember that?
+Patient: Hmm, yes, I think I remember that.
+Doctor: After 25 days, you were transferred to the institution’s rehabilitation facilities, where a battery of tests indicated persistent physical function impairment with a Medical Research Council sum-score of 52/60, a physical function ICU test score of 9/12, a Timed Up & Go of 23 seconds, and a short physical performance battery of 4/12. Do you remember that?
+Patient: Hmm, yes, I think I remember that.
+Doctor: Great. Based on your current condition, we will continue to monitor your progress and provide you with the necessary physical rehabilitation. Do you have any questions for me?
+Patient: No, not right now. Thank you, doctor.
+Doctor: You're welcome. If you have any questions or concerns in the future, don't hesitate to ask.

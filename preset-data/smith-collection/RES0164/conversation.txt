@@ -1,0 +1,186 @@
+# Smith Collection Transcript: RES0164
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Hey im im the mom of of the patient hes hes a kid he has had he just had a cough and stuffy nose for the past three days
+
+Doctor: OK and so did they both start around the same time or one started before the other
+
+Patient: They started the same time hes also had like these these his eyes have been like kind of red and watery as well
+
+Doctor: OK and is he what kind of cough is he having a dry cough or wet cough
+
+Patient: Its a dry cough
+
+Doctor: Dry cough ok and and so with the congestion is he also having any kind of nasal drainage
+
+Patient: Yeah its its like watery
+
+Doctor: Watery ok so now are you noticing any kind of yellow or greenish material
+
+Patient: No
+
+Doctor: OK and he hasnt is he coughing up any blood at all at any point
+
+Patient: No no no
+
+Doctor: And so this started just recently three days ago was he in contact with anyone thats been sick recently
+
+Patient: I dont think so but he has been like playing outside quite a bit and sometimes hes just playing with the neighbours kids
+
+Doctor: OK has this happened before
+
+Patient: Yeah it has but i guess what im concerned about is the rash that he has now that hes never had before
+
+Doctor: OK and where is the rash exactly
+
+Patient: Its on his face it started this morning
+
+Doctor: OK and can you describe the rash for me like its color shapes and what kind of looks like
+
+Patient: Small really small dots like kind of uhm like id say like brown in color like brownish dark reddish
+
+Doctor: OK lets just are they just located on his face
+
+Patient: Yeah like it was on his face and its kind of a little bit on his neck
+
+Doctor: OK uh and is he scratching at them at all
+
+Patient: Yeah
+
+Doctor: OK um ok and so they just started today have you had these rashes before at all
+
+Patient: No no he hasnt
+
+Doctor: OK anything new at all that he has either eaten or any new clothing or new laundry detergent or soap so anything at all
+
+Patient: No no
+
+Doctor: OK ok and has he had any fevers or chills anything like that
+
+Patient: uh he has been feeling a little bit warm i didnt really check his temperature
+
+Doctor: And and busy so it started three days ago anything happened before 3 days at all that might have caused the symptoms
+
+Patient: I dont think so as i said he has been playing around with others so could have caught something
+
+Doctor: OK and ok any kind of ah have you tried anything that has helped him at all any medications
+
+Patient: Uhm i havent tried anything yet no
+
+Doctor: OK and how often is he coughing is he coughing throughout the day or is it more so with exerting himself
+
+Patient: um its just kind of all through the day its actually gotten a little bit better uhm the cough has gotten better but what im concerned about is the the rash
+
+Doctor: OK coughs gotten better yeah does he have visit rush it so is it mainly just on his forehead or also on his cheeks
+
+Patient: Its on his cheeks on his chin its kind of on his neck its kind of like this blotchy reddish brownish like little dots kind of its not like its not raised its like flat
+
+Doctor: OK and uh is it kind of just a bit like a bright red rash thats kind of covering the cheeks or little little dots everywhere
+
+Patient: Kind of little dots
+
+Doctor: OK any anything on his nose
+
+Patient: Yeah yeah its on his nose as well
+
+Doctor: OK um ok but no fevers right
+
+Patient: He i guess he might have had a fever he was feeling warm
+
+Doctor: OK and any other symptoms like shortness of breath sore throat anything like that
+
+Patient: No no nothing like that
+
+Doctor: OK and otherwise any other symptoms like just not like behavioural changes not being himself being more irritable at all
+
+Patient: So yeah hes just been tired he hasnt been doing anything hes just been lying in bed hasnt eaten
+
+Doctor: OK any at all is he having any nausea or vomiting
+
+Patient: No
+
+Doctor: Any diarrhea or constipation
+
+Patient: No
+
+Doctor: Any changes in his urination
+
+Patient: No
+
+Doctor: Any changes in his sleep or appetite
+
+Patient: No well he has been eating little less but nothing like nothing else
+
+Doctor: OK and has he been complaining at all of any abdominal pain or anything like that
+
+Patient: No
+
+Doctor: OK otherwise that has he been healthy or if he had any medical conditions diagnosed
+
+Patient: Hes been healthy
+
+Doctor: OK and and any previous surgeries or hospitalizations
+
+Patient: No
+
+Doctor: Any medications that he takes regularly
+
+Patient: No
+
+Doctor: And any family history of any lung or heart conditions
+
+Patient: No
+
+Doctor: Concurrently or like during your pregnancy with him any complications at all
+
+Patient: No
+
+Doctor: And did was he meeting his milestones that developmentally in terms of also with growth and height and everything like that
+
+Patient: Yeah he seems to be doing ok come when hes doing as well as his other brother his two brothers
+
+Doctor: OK and does he go to school at all what grade is he in
+
+Patient: Hes going to school um online
+
+Doctor: Online right now ok yeah and any issues at school at all any complaints that weve been told
+
+Patient: No
+
+Doctor: OK great so uh and how is the houses or your living situation like
+
+Patient: Its uh things are good so its him his two older brothers my husband and me
+
+Doctor: OK and has anyone been sick recently or had similar symptoms
+
+Patient: No
+
+Doctor: OK alright has anyone in the family ever had any diagnosis of asthma eczema allergic rhinitis
+
+Patient: No
+
+Doctor: No nothing like that ok alright so yeah those are all the questions i had for you today do you have any questions or concerns
+
+Patient: No
+
+Doctor: OK so yeah so well well be doing a couple well do a physical examination i want to see examined with the rash looks like and theres many things that can cause a rash theres uh viral infections that can cause some of the symptoms the symptoms hes having mainly seen viral with a dry cough and runny nose and then you can we have a rash as well one thing i forgot to ask actually is is he fully immunized
+
+Patient: um he i guess he didnt get all his immunizations done earlier he did get them a little bit later so we came from syria as refugees but i im thinking he got all his immunizations when he uh came to when we moved to canada
+
+Doctor: OK and is he complaining of joint or muscle aches at all
+
+Patient: No
+
+Doctor: No nothing like that ok alright so yeah well do it like a full physical examination and if its more just a viral itll be something that well just have to monitor and do supportive care for but if its anything else we might need to do further investigations ok and well just do a coviswab for him today as well as some of the symptoms overlap with covisymptoms and you will get the results back in 24 hours to 48 hours and then further instruction from public health
+
+Patient: Sounds great
+
+Doctor: Alright well take care talk to you soon

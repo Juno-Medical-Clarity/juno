@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0379  |  gem_id: gem-cochrane-simplification-validation-380  |  doi: 10.1002/14651858.CD004514.pub2
+
+Eight trials met the criteria for inclusion. It was not possible to pool the data because the trials studied different populations, tested folic acid in different doses, and used different outcome measures. There were two trials of folic acid in conjunction with B12. The analysis showed significant benefit of folic acid over placebo in some measures of cognition in a long-term trial recruiting elderly people with high homocysteine levels from a general population. In one pilot trial, 1 mg/day of folic acid was associated with significant improvement in behavioural response to cholinesterase inhibitors in people with Alzheimer's disease.

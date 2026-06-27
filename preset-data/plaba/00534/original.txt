@@ -1,0 +1,9 @@
+DNA damage and alterations in DNA damage response (DDR) signaling could be one of the molecular mechanisms mediating focal kidney cyst formation in autosomal dominant polycystic kidney disease (ADPKD).
+The aim of this study was to test the hypothesis that markers of DNA damage and DDR signaling are increased in human and experimental ADPKD.
+In the human ADPKD transcriptome, the number of up-regulated DDR-related genes was increased by 16.6-fold compared with that in normal kidney, and by 2.5-fold in cystic compared with that in minimally cystic tissue (P < 0.0001).
+In end-stage human ADPKD tissue, γ-H2A histone family member X (H2AX), phosphorylated ataxia telangiectasia and radiation-sensitive mutant 3 (Rad3)-related (pATR), and phosphorylated ataxia telangiectasia mutated (pATM) localized to cystic kidney epithelial cells.
+In vitro, pATR and pATM were also constitutively increased in human ADPKD tubular cells (WT 9-7 and 9-12) compared with control (HK-2).
+In addition, extrinsic oxidative DNA damage by hydrogen peroxide augmented γ-H2AX and cell survival in human ADPKD cells, and exacerbated cyst growth in the three-dimensional Madin-Darby canine kidney cyst model.
+In contrast, DDR-related gene expression was only transiently increased on postnatal day 0 in Pkd1RC/RC mice, and not altered at later time points up to 12 months of age.
+In conclusion, DDR signaling is dysregulated in human ADPKD and during the early phases of murine ADPKD.
+The constitutive expression of the DDR pathway in ADPKD may promote survival of PKD1-mutated cells and contribute to kidney cyst growth.

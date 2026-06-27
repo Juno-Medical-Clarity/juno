@@ -1,0 +1,9 @@
+This study examines the links between aromatase inhibitor therapy (drugs commonly used to treat breast cancer) and hair loss or hair thinning among female breast cancer survivors.
+We analyzed data from 851 female breast cancer survivors who responded to a hospital survey.
+Data on hair loss, hair thinning, background information, and health habits were self-reported. Data on aromatase inhibitor therapy were collected by the survey and verified with medical records.
+The relationship between aromatase inhibitor therapy and hair outcome was mathematically estimated and adjusted for possible misleading variables, like age and chemotherapy treatment.
+22.4% of the breast cancer survivors reported hair loss. 31.8% reported hair thinning.
+Breast cancer survivors who were within 2 years of starting aromatase inhibitor treatment at the time of the survey were around two and a half times more likely to report hair loss or thinning in the past 4 weeks compared to those never treated with an aromatase inhibitor.
+Current aromatase inhibitor use for 2 or more years at the time of the survey and past use were linked with hair thinning but not hair loss.
+Findings from the study suggest that aromatase inhibitor use is linked with an increased risk of hair loss and thinning regardless of chemotherapy and age. These side effects are likely from the reduction in estrogen (a female sex hormone) from the drug treatment.
+Future research should examine the links in a future-oriented manner with more detailed and measurable measures of hair loss and thinning.

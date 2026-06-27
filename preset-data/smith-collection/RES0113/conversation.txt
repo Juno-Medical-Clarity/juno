@@ -1,0 +1,210 @@
+# Smith Collection Transcript: RES0113
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What can i do for you today
+
+Patient: um yeah so im here because ive had this fever this cough and now my head hurts thats been going on for about the past four days and i just want to make sure um its nothing too serious
+
+Doctor: Yeah yeah thats great so can you tell me have you did you measure your temperature
+
+Patient: uh no i havent actually measured it i just feel hot and feel chills
+
+Doctor: OK but we can take your vitals here um and uh you you said that youve had a cough for the past four days dry cough or wet cough
+
+Patient: um its been pretty dry
+
+Doctor: um any uh no blood or any um sputum um coming up right
+
+Patient: No no
+
+Doctor: OK and has the the cough gotten worse or better or the same has it been the same since the past four days
+
+Patient: um its its actually getting worse
+
+Doctor: OK is there anything that makes it better or worse
+
+Patient: uh no i dont think so
+
+Doctor: OK uh have you tried anything for your cough
+
+Patient: Ive tried like decongest like cough suppressants but it doesnt seem to have helped
+
+Doctor: OK ok and then tell me about your headache that started four days ago as well
+
+Patient: Yeah
+
+Doctor: And uh where exactly is it
+
+Patient: So its like just on the front part of my head
+
+Doctor: And does it feel like uh what does it feel like is it like a throbbing sensation a band like sensation um is it sharp is it dull
+
+Patient: uh it feels pretty throbbing right now
+
+Doctor: Is it both sides or on the uh left or right
+
+Patient: uh its it seems like its both sides
+
+Doctor: If you had to give it a number from 1 to 10 with 10 being the most severe pain ever what number would you give it
+
+Patient: uh i would give it about like a seven
+
+Doctor: Oh wow ok and hows it changed over the past four days
+
+Patient: uh its just gotten a little bit worse
+
+Doctor: um is it uh is it what was i gonna say is it constant or does it come and go
+
+Patient: um it seems pretty it seems pretty constant
+
+Doctor: Have you taken anything for it
+
+Patient: I tried like some tylenol for it and it seems to help a little bit
+
+Doctor: Does it is there a certain time of the day when its worse before going to bed at the end of the day waking up anything like that
+
+Patient: No nothing like that
+
+Doctor: Have you had a similar headache in the past
+
+Patient: uh yeah i guess i have a little bit in the past but that was also when i was like sick
+
+Doctor: Sure um does it wake you up in the middle of the night
+
+Patient: uh no it hasnt woken me up
+
+Doctor: OK um i guess other than the headache ill ask you about and the cough and fever ill ask you if youve had any other symptoms so have you had any confusion
+
+Patient: uh no no confusion
+
+Doctor: Any changes in your vision or your hearing
+
+Patient: No
+
+Doctor: um any um redness in your eyes
+
+Patient: No
+
+Doctor: Any loss of taste or loss of smell
+
+Patient: No
+
+Doctor: um any runny nose or stuffy nose
+
+Patient: uh nope
+
+Doctor: OK any sore throat
+
+Patient: No
+
+Doctor: OK any chest pain or difficulties breathing
+
+Patient: No
+
+Doctor: Any palpitations do you feel like your hearts racing
+
+Patient: No
+
+Doctor: OK any belly pain
+
+Patient: No belly pain
+
+Doctor: Diarrhea
+
+Patient: No
+
+Doctor: OK any aches or pains in your body
+
+Patient: No
+
+Doctor: uh any rashes that youve noticed
+
+Patient: No no rashes
+
+Doctor: Any discolouration of your fingers or toes
+
+Patient: uh i dont think so
+
+Doctor: OK alright um and do you have any medical conditions
+
+Patient: No i think im healthy otherwise
+
+Doctor: OK alright and have you had any hospitalizations or surgeries
+
+Patient: uh no
+
+Doctor: OK um what about medications are you taking any over the counter or otherwise
+
+Patient: uh i take some multivitamins thats it though
+
+Doctor: OK any family history of lung or heart problems uh or anything else or cancers
+
+Patient: No
+
+Doctor: And do you currently live alone or do you live with someone else or with other people
+
+Patient: I live with um my husband and our our daughter
+
+Doctor: OK have you had any have you traveled anywhere
+
+Patient: No not recently
+
+Doctor: Have you uh what do you mean by recently
+
+Patient: uh like i have traveled in the past two years
+
+Doctor: OK thats fine thats fine have you had any contact with anyone who might be sick either you or your husband or your daughter
+
+Patient: uh no i dont think so
+
+Doctor: Have you gone out of the home at all
+
+Patient: uh just to do like essential things like groceries and the bank and things like that
+
+Doctor: Do you wear a mask and maintain social distancing
+
+Patient: Yes
+
+Doctor: OK um alright uh do you drink alcohol
+
+Patient: I drink like once once in a while have a glass of wine
+
+Doctor: OK how i guess how often would you say
+
+Patient: uh once a week
+
+Doctor: OK and do you smoke
+
+Patient: um no not anymore
+
+Doctor: uh how much did you smoke in the past
+
+Patient: I id have like half a pack um but i only smoked between like the age of 20 to like 25
+
+Doctor: OK do you smoke marijuana or have any edibles with marijuana in it
+
+Patient: No
+
+Doctor: Any recreational drugs
+
+Patient: No
+
+Doctor: OK um alright well uh and you said that you dont have a family history of any problem
+
+Patient: No
+
+Doctor: Yeah ok alright i think thats all the questions i had for you so uh looks like youve had a fever cough and a um and a headache thats gotten worse in the past four days and your headaches pretty bad a seven out of ten um and uh it could be that you have uh some sort of an infection uh including um with covid being one of the possibilities and so um continue to take tylenol and and um monitor your uh fever if it continues to get worse or you um notice that your symptoms are just not getting better um you should come back you should uh well also do a covid well also send in a request for a covid swab um and uh well ask you to quarantine for the for the next 14 days and try to stay away from your husband and daughter as well if you can at home um and uh i guess a couple of other questions that i wanted to ask and i should have asked earlier do you have any um any stiffness in your neck or any difficulties moving your neck
+
+Patient: uh no nothing like that
+
+Doctor: OK alright and um do you have any questions
+
+Patient: uh no thats it thank you so much
+
+Doctor: Great

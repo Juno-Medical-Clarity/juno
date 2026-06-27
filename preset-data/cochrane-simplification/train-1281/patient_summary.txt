@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1281  |  gem_id: gem-cochrane-simplification-train-1282  |  doi: 10.1002/14651858.CD000193.pub3
+
+The review of 21 trials (2588 patients) found that the tested drugs did not reduce deaths. There was a small reduction in the need for blood transfusions, corresponding to one half unit of blood saved per patient. It is doubtful whether this effect is worthwhile.

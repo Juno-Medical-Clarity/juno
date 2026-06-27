@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0069  |  gem_id: gem-cochrane-simplification-train-70  |  doi: 10.1002/14651858.CD008175
+
+We identified 16 studies of vitamin D preparations in people with CKD and not requiring dialysis (less severe CKD) involving 894 people. No studies were designed to understand the effect of vitamin D therapy on risks of premature cardiovascular disease or mortality. Vitamin D agents lowered PTH significantly compared with no treatment, however also increased both calcium and phosphorus levels. Newer vitamin D therapies have not been compared with older vitamin compounds in CKD directly; whether they are associated with increased calcium and phosphorus is uncertain. In the future, new studies are required to assess outcomes important to patients, such as life expectancy and premature heart disease. It will also be important to know if vitamin D therapy should be used differently (differing target levels of PTH) in differing stages of CKD.

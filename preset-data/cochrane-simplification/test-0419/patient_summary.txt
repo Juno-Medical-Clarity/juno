@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0419  |  gem_id: gem-cochrane-simplification-test-420  |  doi: 10.1002/14651858.CD001499
+
+Studies conducted more than 20 years ago suggested that physostigmine could improve memory in people with or without dementia. Investigation of this property has been limited by the very short half-life of physostigmine. Various forms of administering the drug have been tried to overcome this problem, most recently a controlled-release (CR) oral formulation, and a skin patch. An additional limiting factor has been a high incidence of adverse effects, including nausea, vomiting and diarrhoea. Physostigmine appears to have no advantage over some newer anticholinesterase drugs. The short half-life remains a serious disadvantage and requires complex forms of administration. There is no reason to recommend further research into this drug.

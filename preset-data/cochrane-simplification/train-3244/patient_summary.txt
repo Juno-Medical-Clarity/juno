@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3244  |  gem_id: gem-cochrane-simplification-train-3245  |  doi: 10.1002/14651858.CD009131.pub3
+
+Twenty relevant studies comprising a total of 986 participants (966 MS participants and 20 healthy controls) were identified and included in this review. Low-level evidence was found that neuropsychological rehabilitation reduces cognitive symptoms in MS. However, when analysed individually, 18 out of the 20 studies showed positive effects. Cognitive training was found to improve memory span and working memory. Cognitive training combined with other neuropsychological rehabilitation methods was found to improve attention, immediate verbal memory and delayed memory. It is worth noting that the small numbers of patients in the studies and some methodological weaknesses reduce the level of the evidence. To further strengthen the evidence well-designed, high-quality studies are needed.

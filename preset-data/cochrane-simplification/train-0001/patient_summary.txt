@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0001  |  gem_id: gem-cochrane-simplification-train-2  |  doi: 10.1002/14651858.CD011401.pub2
+
+The searches are up-to-date to 26 January 2016. We found only one randomized trial that assessed the effect of the timing of surgery. It included a total of 40 participants, ranging in age from 47 to 84 years. From the limited evidence available, we cannot tell if the timing of surgery is an important factor in determining the outcome for individuals with recent symptoms from carotid artery narrowing. There is not enough evidence on the best time for surgical treatment for people with recent symptoms from carotid artery narrowing. The overall quality of the evidence was very low, due to the small number of participants from only one trial and missing outcome data. Further studies with a larger number of patients are needed.

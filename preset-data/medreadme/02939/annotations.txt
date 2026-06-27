@@ -1,0 +1,7 @@
+source:      wiki
+side:        complex
+readability: 2.7
+split:       dev
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'incubation period'

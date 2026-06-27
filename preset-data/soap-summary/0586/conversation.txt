@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0586
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Guest_clinician: When did she have lumbar discitis? A little over a year ago. She received antibiotic therapy and ended up having debridement and instrumentation with Doctor XYZ. Guest_clinician: How's she doing today? Really quite well. Guest_clinician: She also had a P E with that prior hospitalization, correct? Yes.

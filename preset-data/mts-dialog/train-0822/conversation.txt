@@ -1,0 +1,6 @@
+Doctor: Do you smoke, or have you smoked in the past?
+Patient: Yeah, I quit two years ago. But before that I used to smoke two packs per day. I first started smoking as a teenager.
+Doctor: Do you drink at all?
+Patient: I used to drink six packs of beer plus two additional drinks a day for many years. Good news is that I've been dry for two years now.
+Doctor: Any illicit drug use, such as cocaine, marijuana or heroin?
+Patient: No none of that.

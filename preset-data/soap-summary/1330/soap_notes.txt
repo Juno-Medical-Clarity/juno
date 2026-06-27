@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 1330
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 34 years old.
+- History of allergic reaction with swelling around the eye on May 3, 2008.
+- Allergic reaction believed to be due to Keflex, used during dialysis treatment.
+- History of renal failure requiring dialysis.
+- Allergies include grass and sometimes pollen (environmental and inhalant allergies).
+- No life-threatening allergic reactions reported.
+- No history of swelling under the skin due to food or contact.
+
+Objective:
+- Patient is taking Atenolol for high blood pressure.
+- Previous treatments included corticosteroid therapy and antihistamine therapy during hospital stay.
+
+Assessment:
+- History of allergic reaction likely related to medication (Keflex).
+- Allergies noted to grass and pollen; no severe reactions documented.
+
+Plan:
+- Follow up regarding allergies as needed.
+- Continue monitoring blood pressure and manage with Atenolol.
+- Consider treatment options for environmental allergies if symptoms persist.

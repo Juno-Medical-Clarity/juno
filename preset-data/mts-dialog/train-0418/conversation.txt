@@ -1,0 +1,10 @@
+Doctor: As far as you know, is there any family history of cancer?
+Patient: Yes, actually, my mom told me that someone had cervical cancer.
+Doctor: What about heart disease, does that sound familiar?
+Patient: Yes, I know someone had heart disease, and another person had heart failure.
+Doctor: Good to know, what about the lungs, any history there?
+Patient: I know someone had C O P D.
+Doctor: Do you know of anyone with dementia or Alzheimer's?
+Patient: Yes, my uncle has dementia right now, actually.
+Doctor: I'm sorry to hear that, that's a hard disease to see your family go through. What about diabetes, does anyone have that?
+Patient: Thank you doctor, it's hard. Yes, my dad has the sugar.

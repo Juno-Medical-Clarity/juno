@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1390
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family medical history: Father had colon cancer (caught early, passed away from old age); Mother passed away in her nineties from a stroke.
+- No known family history of neurological disorders other than mother's stroke.
+
+Objective:
+- (No objective data mentioned)
+
+Assessment:
+- (No clinician's interpretation provided)
+
+Plan:
+- (No plan provided)

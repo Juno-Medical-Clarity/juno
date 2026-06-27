@@ -1,0 +1,31 @@
+# SOAP Notes — Sample 0663
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Mood swings: alternates between feeling super happy and super sad/angry.
+- Experiences tears over situations that are not real.
+- Feels sad and thinks nobody cares about her existence.
+- Uncertainty about emotional state; unsure how she will feel after an hour.
+- Symptoms have been present for many months; initially ignored but now feels like she is not herself.
+- Symptoms affecting work performance; boss asked if she was on drugs, leading to an emotional response (shouting and leaving in tears).
+- Previous treatment: Was on Wellbutrin prescribed by Doctor Jonah for obsessive compulsive type disorder related to overeating; gained 20 pounds while on it; paid out of pocket due to insurance issues.
+- No history of antidepressant use.
+- Difficulty concentrating at work, specifically as a hygienist.
+- Experiences insomnia; feels like a zombie.
+- Past surgery: complete removal of uterus, tubes, and ovaries due to complications in December 2003.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- Mood swings with emotional instability.
+- Possible depressive symptoms.
+- History of obsessive compulsive disorder (OCD) and previous treatment with Wellbutrin.
+- Insomnia and difficulty concentrating noted.
+
+Plan:
+- Consider medication options to address mood swings and insomnia.
+- Review the patient's medication history and previous response to Wellbutrin.
+- Discuss potential treatment options, including the possibility of antidepressants.
+- Monitor the impact of symptoms on work and daily functioning.
+- Schedule follow-up appointment to reassess symptoms and response to any new treatment.

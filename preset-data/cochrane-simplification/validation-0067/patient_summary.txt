@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0067  |  gem_id: gem-cochrane-simplification-validation-68  |  doi: 10.1002/14651858.CD004215.pub2
+
+Three studies were found that met our criteria. The double wall incubators had advantages as far as decreasing heat loss and decreasing heat production. These infants seemed to be in the best temperature range, as their need to burn energy was less. However, these effects were small and did not provide any evidence of any long-term improvement regarding duration of hospitalization or survival. Although it appears that caring for extremely small infants in double wall incubators may result in certain metabolic advantages, this review was unable to find any data in the literature to support or refute this theory. Available data is insufficient to directly guide clinical practice.

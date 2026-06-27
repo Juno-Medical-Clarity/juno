@@ -1,0 +1,5 @@
+pmid:        33141610
+question:    62
+adaptation:  adaptation2
+title:       Association of H1-antihistamines with torsade de pointes: a pharmacovigilance study of the food and drug administration adverse event reporting system
+sentences:   8

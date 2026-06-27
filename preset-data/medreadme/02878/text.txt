@@ -1,0 +1,1 @@
+Our results demonstrate that: 1) Mlh1 and Mlh3 genes, encoding components of the DNA mismatch repair pathway, are critical for somatic CAG expansion; 2) in the absence of somatic expansion the pathogenic process in the mouse is slowed; 3) MLH1 protein levels are likely to be a driver of the efficiency of somatic expansion.

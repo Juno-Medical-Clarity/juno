@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0798  |  gem_id: gem-cochrane-simplification-train-799  |  doi: 10.1002/14651858.CD009429.pub2
+
+This systematic review evaluated the efficacy and tolerability of pregabalin in people with epilepsy. The review authors only included two, short-term randomised controlled trials involving 753 participants treated with pregabalin monotherapy for epilepsy. Studies included in this review suggested that pregabalin was inferior to lamotrigine but was better than gabapentin, but we found some limitations in the study design which may have had a great influence on the results. There is no strong evidence to support its monotherapy as a treatment for epilepsy. Long-term trials and high quality randomised clinical trials are needed to evaluate the efficacy and safety of pregabalin monotherapy for treating epilepsy.

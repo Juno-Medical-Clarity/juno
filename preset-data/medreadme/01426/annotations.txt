@@ -1,0 +1,10 @@
+source:      elife
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-easy' -> 'ATPase complexes'
+  [8:11] 'medical-jargon-google-easy' -> 'AAA + family'
+  [20:22] 'medical-jargon-google-easy' -> 'conformational transitions'
+  [25:26] 'medical-jargon-google-easy' -> 'ATPase'

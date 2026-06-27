@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0634  |  gem_id: gem-cochrane-simplification-train-635  |  doi: 10.1002/14651858.CD006333
+
+To assess the efficacy of MBUs we systematically searched for any randomised trials of MBUs compared to standard care. We found no trials involving either mothers suffering from post partum psychosis or severe post natal depression. Anecdotal results from a 1961 trial did suggest a beneficial effect, but non-randomised data from over 40 years ago is difficult to apply to today's care. Such lack of data is of concern as MBUs are expensive to set up and run. If they are to be the 'gold standard' of care for mothers and their babies, their effectiveness needs to validated. Good quality, relevant research is urgently needed.

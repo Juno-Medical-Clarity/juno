@@ -1,0 +1,8 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'tranexamic acid'
+  [12:15] 'medical-jargon-google-easy' -> 'vascular occlusive events'

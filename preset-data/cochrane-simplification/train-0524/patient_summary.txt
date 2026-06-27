@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0524  |  gem_id: gem-cochrane-simplification-train-525  |  doi: 10.1002/14651858.CD012222.pub2
+
+We assessed the quality of the evidence for quality of life as very low due to the young age of the participants, Insufficient blinding, small number of participants, and imprecision because of wide range of confidence intervals. The effects of exercise-based CR for people with implantable VADs were not clear. The current evidence is inadequate to assess the benefits and harms of exercise-based CR for people with implantable VADs compared with usual care. The amount of randomised controlled trial evidence was very limited and of very low quality. In addition, the training duration was very short term. High-quality randomised controlled trials are needed to collect data on events (death and rehospitalisation), patient-related outcomes (including quality of life), and cost.

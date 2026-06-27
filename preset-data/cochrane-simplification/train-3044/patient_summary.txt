@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3044  |  gem_id: gem-cochrane-simplification-train-3045  |  doi: 10.1002/14651858.CD002272
+
+This review of two small trials suggests that nasal intermittent positive pressure ventilation (NIPPV) delivered via nasal prongs may be more effective than NCPAP alone in preterm babies whose apneas are frequent or severe. Further research is needed to confirm effectiveness and safety as few babies have been studied so far.

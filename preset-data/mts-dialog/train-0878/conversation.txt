@@ -1,0 +1,6 @@
+Doctor: Do you smoke cigarettes?
+Patient: I smoke about three packs in a month.
+Doctor: Do you drink alcohol or use recreational drugs?
+Patient: No.
+Doctor: What do you do for work?
+Patient: I am an editorial assistant at the local newspaper.

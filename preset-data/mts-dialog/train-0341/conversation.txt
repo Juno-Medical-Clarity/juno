@@ -1,0 +1,4 @@
+Doctor: Did you had any medical issues in the past?
+Patient: No, nothing major.
+Doctor: You said nothing major, so, what was there?
+Patient: I had a little curve in the spine. It was not major. Doctor said that it can be corrected by exercises.

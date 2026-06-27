@@ -1,0 +1,26 @@
+Doctor: Hi there! What brings you back to see me so soon?
+Patient: Hi! I have had these sores in my mouth.
+Doctor: How long have you had the sores?
+Patient: They started about ten to twelve days ago.
+Doctor: We have been currently treating your rheumatoid arthritis with methotrexate. How much have you been taking?
+Patient: Yes, we have tried lots of different treatments and methotrexate has been working well.  I have been on it for ten years now. I have been taking about twenty or twenty five M G of per week.
+Doctor: Did we recently increase your dosage? I see in your chart that we have changed your dosage a few times.
+Patient: About a year ago we lowered the dosage for twenty five M G to twenty but my arthritis flared up so we went to twenty two point five.
+Doctor: Have you ever had any side effects from the methotrexate in the past?
+Patient: No. I don't think so.
+Doctor: Are you taking any other medications?
+Patient: I had a sinus infection and the doctor put me on an antibiotic. That was about two weeks ago.
+Doctor: Do you know what the antibiotic the doctor gave you?
+Patient: I don't remember the name of the antibiotic, but I know that I have taken antibiotics before and I didn't have a problem.
+Doctor: How long was your antibiotic course?
+Patient: It was three or four days long. I had to take it three times a day.
+Doctor: Have you ever had any allergic reactions to medications?
+Patient: No.
+Doctor: Any history of mouth sores?
+Patient: No.
+Doctor: Are you taking anything to help with the pain of the mouth sores?
+Patient: I took Aspirin a month ago. I started taking it again because my mouth was sore.
+Doctor: Have you had any other problems with your skin? Any new rashes?
+Patient: No.
+Doctor: Sorry to side track, but where is your accent from? My family is Cuban and my mom and you speak the same.
+Patient: What a surprise! I am Cuban. A proud fifty seven year old Cuban.

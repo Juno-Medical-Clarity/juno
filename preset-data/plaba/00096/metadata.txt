@@ -1,0 +1,5 @@
+pmid:        25749632
+question:    8
+adaptation:  adaptation1
+title:       Perphenazine for schizophrenia
+sentences:   7

@@ -1,0 +1,31 @@
+Doctor: Welcome to the clinic., ma'am
+Patient: Thank you.
+Doctor: What brings you into see me?
+Patient: I have been struggling with pain and stiffness in my right neck and shoulder.
+Doctor: How long has this been going on for?
+Patient: Maybe for about four months.
+Doctor: In these past four months have your symptoms becomes worse or has it improved at all?
+Patient: It has been getting worse. The pain is worse at night. It wakes me up at night. I haven't had a good night sleep in four months.
+Doctor: Have you experienced any pain or numbness in your arm, wrist, or hand?
+Patient: Yes! About two weeks after the pain started, I was having some numbness and painful cramping in these two fingers here.
+Doctor: The right hand and the first and second finger?
+Patient: Yes.
+Doctor: How old are you?
+Patient: I am forty six.
+Doctor: Are you left or right handed?
+Patient: Right. It was a throbbing pain in my hand.
+Doctor: Have you had any other pain anywhere else in your body?
+Patient: I few times I had some numbness in both of my legs. It started with a pinching from my tailbone area.
+Doctor: Did you experience any trauma neck, head or back?
+Patient: No. I don't know where this pain came from. Oh, every once and a while I have this electric shock like sensation shooting down my spine when move my neck certain way.
+Doctor: Any pain or symptoms in your left arm or shoulder?
+Patient: No.
+Doctor: Have you had any visual changes or disturbances?
+Patient: No.
+Doctor: Any difficulties with your bowels or your bladder?
+Patient: No.
+Doctor:  Have you been taking any thing for the pain?
+Patient: I have been taking Naprosyn.
+Doctor: Has the Naprosyn help relieve your pain?
+Patient: Only a little bit.
+Doctor: Okay.

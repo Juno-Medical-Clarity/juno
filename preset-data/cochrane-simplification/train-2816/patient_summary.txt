@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2816  |  gem_id: gem-cochrane-simplification-train-2817  |  doi: 10.1002/14651858.CD011285.pub2
+
+The review included six studies on 206 people with pulmonary hypertension and we could combine data from five of these studies. We could only use data for 165 participants, however not all of these data could be included in the analysis for all outcome measures. The majority of studies implemented an inpatient exercise rehabilitation programme with only a small number of studies examining an outpatient programme. The methods used to conduct these trials were of low quality. Given this low-quality evidence, it was not possible to generalise the results of this review across the spectrum of people with pulmonary hypertension.

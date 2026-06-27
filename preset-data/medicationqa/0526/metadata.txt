@@ -1,0 +1,5 @@
+drug_focus: antibiotics
+question_type: Action
+section_title: Antibiotics Seek Out Bacterial Cells
+source_url: https://learn.genetics.utah.edu/content/microbiome/antibiotics/
+sample_id: 0526

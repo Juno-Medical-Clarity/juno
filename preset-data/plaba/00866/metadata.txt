@@ -1,0 +1,5 @@
+pmid:        33941768
+question:    70
+adaptation:  adaptation3
+title:       Vitamin B6 deficiency hyperactivates the noradrenergic system, leading to social deficits and cognitive impairment
+sentences:   9

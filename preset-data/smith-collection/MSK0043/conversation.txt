@@ -1,0 +1,206 @@
+# Smith Collection Transcript: MSK0043
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you here today
+
+Patient: Ive had this like pain in my knee it started within the last few hours and my knees swollen its painful um i can barely move it
+
+Doctor: Okay were you uh did you injure yourself at all before the last few hours or anything any trauma to um is it the right knee or the left knee
+
+Patient: Its the left knee an no no trauma uh or anything like that ive never hurt this knee before in my life
+
+Doctor: Okay and has this ever happened to you before
+
+Patient: uh um no nothing in my joints ive had other infections before like in my skin um like cellulitis but i ive never had a knee knee problem like this before
+
+Doctor: Okay i see and have you ever had cellulitis in that area
+
+Patient: uh i i had it over kind of my uh like over my foot before
+
+Doctor: Okay and um where would you describe the pain is is it like on the kneecap is it above the kneecap below where would you describe it
+
+Patient: I would say its like my whole knee its like uh i dont know it looks like its going to explode
+
+Doctor: Okay is it like um so its swollen is it red and warm
+
+Patient: It is yeah its really red
+
+Doctor: Okay
+
+Patient: And warm as well
+
+Doctor: Okay and how would you describe the pain um is it like a sharp stabbing pain or is it an aching pain
+
+Patient: Its a a stabbing pain
+
+Doctor: Okay and uh are you mainly having the pain with movement of your knee or um when youre pressing on it
+
+Patient: uh i would say both i cant um i cant really move it itll give me pain and even pressing on it its its quite painful
+
+Doctor: Okay and on a scale of uh 1 to 10 sorry 0 to 10 with 10 being the worst pain youve felt in your life how much would you rate this pain
+
+Patient: uh its a 9
+
+Doctor: A 9 okay um so it just started a few hours ago is there anything that makes the pain better or worse
+
+Patient: um i mean just trying to stay as still as possible is all ive been been doing so far uh because um like any type of movement is really bad
+
+Doctor: Okay and are you able to weight bear are you able to stand and walk by yourself
+
+Patient: uh i i was pretty much like hopping on one leg to to get in here and as soon as i could i got in a wheelchair just because it uh hurts so bad
+
+Doctor: Okay and um do you have any pain or symptoms in any other joints or muscles of your body
+
+Patient: No just its just my left knee
+
+Doctor: Just your left knee okay um do you have any other symptoms like fevers chills nausea or vomiting
+
+Patient: um i have felt uh uh feverish yeah but then yeah i i felt feverish and um but i havent had any chills though
+
+Doctor: Okay when were you feeling fevers
+
+Patient: uh just like today its kind of yeah it started within the last day
+
+Doctor: Okay and um did you get a chance to measure your temperature at all if not we can do that here
+
+Patient: um no no i didnt get to uh i i didnt check it
+
+Doctor: Okay and have you been sick at all recently either with um any coldlike symptoms uh or any gi symptoms like diarrhea um constipation anything like that
+
+Patient: uh no i havent had any anything like that
+
+Doctor: Okay and have you recently had any um sexually transmitted diseases or exposures to uh ticks or lyme disease
+
+Patient: uh i dont think so ive been just in well in the city i havent traveled anywhere and i uh i havent been sexually active for for quite a while now so
+
+Doctor: Okay okay uh have you recently at all had um any procedures done on your knee like any surgeries or any joint like um injections or aspirations
+
+Patient: No nothing done to my knee
+
+Doctor: Okay okay um so yeah well take a temperature of your uh fever and so are you able to flex or extend your knee at all or is it very painful
+
+Patient: Its really painful i uh the movements really limited
+
+Doctor: Okay and has the pain been constant since it started a few hours ago
+
+Patient: Yeah its gotten uh like its its gotten slightly worse
+
+Doctor: Okay i see okay um any skin changes or rashes anywhere on your body
+
+Patient: No its just the red knee
+
+Doctor: Okay um any changes in your weight or appetite
+
+Patient: uh no no i havent had any changes there
+
+Doctor: Okay and otherwise are you having um any symptoms of uh dizziness fainting
+
+Patient: uh no i havent had any of those symptoms
+
+Doctor: Okay any weakness um in your extremities
+
+Patient: No no weakness
+
+Doctor: Okay um do you have any past medical conditions that youve been diagnosed with any diabetes high blood pressure
+
+Patient: uh ive been told my my blood sugar has been like it hasnt been controlled so yeah i think i have diabetes um uh but thats thats it
+
+Doctor: Okay um do you take anything for medicate medication for your diabetes
+
+Patient: uh yeah i i take metformin and um and uh yeah that thats all ive been taking but i mean its really hard for me to uh like get my medication sometimes and so um i dont always take it
+
+Doctor: Okay i see um and do you have any allergies to any medications
+
+Patient: uh not that i not that i can think of and so something that i forgot to mention is uh like ive had hepatitis in the past as well um and uh yeah
+
+Doctor: And do you know hepatitis youve had
+
+Patient: um ive had it was uh hepatitis c and uh i was um treated i was treated for it
+
+Doctor: Okay okay and how long ago was that
+
+Patient: That was about uh two years ago
+
+Doctor: Okay and uh did they tell you like how it may have been transmitted at all was it uh sexually um was it through um use of iv drug use and did they tell you what the likely cause was
+
+Patient: Yeah the the likely cause was um i was told it was through iv uh drug use ive been using now for uh for about 10 years
+
+Doctor: Okay and have you um and what do you usually use
+
+Patient: uh well like any anything that i that i can usually but i i guess like um various types of opioids are kind of the the the main thing that ill that ill use
+
+Doctor: Okay and have you um injected uh drugs recently at all
+
+Patient: uh yeah i about uh about two days ago was the last time
+
+Doctor: Okay okay and um do you use any other uh drugs any recreational drugs like marijuana or any do you inject any other drugs at all
+
+Patient: Yeah ill smoke uh smoke marijuana as well and um like ill sometimes like ill take uh pills too like dilaudid is um is something that ill ill get my hands on but it can be expensive so um just just whatever is available
+
+Doctor: Okay um have you had uh when was the last time you had cellulitis
+
+Patient: uh he last time was about six months ago
+
+Doctor: Okay and were you admitted at all or were you treated as an outpatient
+
+Patient: uh i was treated as an outpatient for that and it did clear up it wasnt the first time that ive ive had cellulitis and and um yeah so it was treated
+
+Doctor: Okay have you had any hospitalizations or surgeries in the past
+
+Patient: um no i havent
+
+Doctor: Okay uh any family history of any conditions um musculoskeletal or rheumatologic conditions uh any rheumatoid arthritis anything like that
+
+Patient: uh i dont think so
+
+Doctor: Okay and currently right now um what is your living situation like
+
+Patient: uh so um i just live with uh two of my um or actually sorry no i live with my uh with my parents and uh yeah so its just both my parents
+
+Doctor: Okay and um do you currently work
+
+Patient: uh i was working until like i um yeah about uh about 15 years ago and now i like i got injured on the uh um at work and ive had like chronic back pain and i dont know i think thats kind of how this partly all all started so ive been at home receiving uh im on disability
+
+Doctor: Okay and do you smoke cigarettes
+
+Patient: uh i do yeah i i i smoke um about half a pack uh to a pack a day
+
+Doctor: Okay and how long have you been smoking for
+
+Patient: uh so this has been uh about 20 years
+
+Doctor: 20 years okay and do you drink alcohol
+
+Patient: um sometimes yeah ill ill have uh just a few beers maybe a few beers a week
+
+Doctor: Okay and yeah we were just talking about some of uh like the movement but youre saying you have pain with any kind of movement at all right
+
+Patient: Yeah it its really painful i just i try not to move it at all
+
+Doctor: And its very red and swollen and warm as well
+
+Patient: Yeah all of those
+
+Doctor: Any symptoms at all in your hips or ankle
+
+Patient: No those feel fine i can move my hip and ankle okay and no pain
+
+Doctor: Okay alright so those are all the questions i had for you well do like a full physical examination take a look at your knee um and most likely what this sounds like is something called septic arthritis its uh its when theres like an infection that um can go into your joints and uh it is a pretty serious issue that we need to um assess and treat as soon as possible so the first thing that we will um need to do well need to do some blood work just to get some inflammation markers and just your uh cbc and see if you have um an infection however well also need to do a joint aspiration of your of your um go your knee and well be taking some fluid within your joint called the synovial fluid and assess for um well send in for um culture and look for like these crystals and count and then based on that well understand um the infection you have and what kind of infection you have we will start you on antibiotics right away um today and so you will be um here for a while until we get all those results back and you may also require um an admission today as well
+
+Patient: Okay uh thank you yeah that that sounds good
+
+Doctor: Alright yeah so yeah well get all that done for you shortly and uh well go from there
+
+Patient: Right thank you
+
+Doctor: And um we might also need an xray so just sit tight well well come call you
+
+Patient: Okay thank you
+
+Doctor: Alright youre welcome

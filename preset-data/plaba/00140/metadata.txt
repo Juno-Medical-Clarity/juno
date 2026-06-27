@@ -1,0 +1,5 @@
+pmid:        33092611
+question:    11
+adaptation:  adaptation2
+title:       Pyruvate dehydrogenase complex deficiency: updating the clinical, metabolic and mutational landscapes in a cohort of Portuguese patients
+sentences:   11

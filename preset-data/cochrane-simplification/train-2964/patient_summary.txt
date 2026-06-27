@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2964  |  gem_id: gem-cochrane-simplification-train-2965  |  doi: 10.1002/14651858.CD008042.pub3
+
+The review found six studies examining two different triptans. The number of people in the studies was limited. Within 15 minutes of using subcutaneous sumatriptan 6 mg, almost 8 in 10 participants had no worse than mild pain, and 5 in 10 were pain-free. Within 15 minutes of using intranasal zolmitriptan 5 mg, about 3 in 10 had no worse than mild pain, and 1 in 10 was pain-free. Adverse events were more common with a triptan than with placebo but they were generally of mild to moderate severity. Cluster headache is an awful thing to have. More research on how to get better pain relief faster, and to more patients, would be welcome.

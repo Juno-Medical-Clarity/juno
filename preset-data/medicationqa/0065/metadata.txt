@@ -1,0 +1,5 @@
+drug_focus: mercaptopurine
+question_type: Side effects
+section_title: NA
+source_url: http://chemocare.com/chemotherapy/side-effects/nephrotoxicity-renal-toxicity.aspx
+sample_id: 0065

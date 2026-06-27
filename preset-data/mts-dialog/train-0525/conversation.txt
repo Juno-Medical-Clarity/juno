@@ -1,0 +1,11 @@
+Doctor: Are you working these days?
+Patient: No, sir. I've been retired for a couple years now.
+Doctor: Congratulations. I hope you're enjoying your time off.
+Patient: You bet.
+Doctor: You mentioned having a smoking history. When did you quit and approximately how much did you smoke?
+Patient: Uh I quit about twenty seven years ago. If I had to guess, I smoked about two packs a day.
+Doctor: Did you smoke only cigarettes?
+Patient: Cigars, too.
+Doctor: How about alcohol?
+Patient: Hardly ever.
+Doctor: Great.

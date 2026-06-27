@@ -1,0 +1,4 @@
+Doctor: You had mentioned that cancer runs in your family. What type of cancer?
+Patient: Skin cancer.
+Doctor: Any other health problems in the family?
+Patient: High blood pressure.

@@ -1,0 +1,39 @@
+# SOAP Notes — Sample 0223
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- 3-year-old daughter with runny nose and sneezing for the past week
+- Symptoms started 3-4 days ago
+- Runny nose and nasal congestion started first, followed by sneezing
+- Dry cough for the last 2-3 days
+- Symptoms constant and worsening
+- Felt warm to touch, flushed face, more tired and irritable
+- Missed school today but attended yesterday
+- No recent travel
+- No headaches, nausea, vomiting, chest pain, changes in bowel movements, or urinary problems
+- No issues with sleep or appetite, no weight loss
+- No exposure to allergens, fumes, dust, or animals
+- No loss of taste or smell
+- Feels pressure with nasal congestion
+- No developmental issues, met all milestones
+- Immunisations up to date
+- No complications during pregnancy or after birth
+- Lives with mother and father; father smokes outside (half a pack/day)
+
+Past Medical History:
+- PMHx: UTI when younger
+- No known drug allergies
+- No current medications
+- No hospitalisations or surgeries
+- FHx: Father with high cholesterol
+
+Objective:
+- Physical examination and temperature check planned
+
+Assessment:
+- Likely viral infection (common cold)
+
+Plan:
+- Monitor symptoms
+- Look out for shortness of breath, increased coughing with yellow/green sputum, increased fever
+- Physical examination and temperature check today

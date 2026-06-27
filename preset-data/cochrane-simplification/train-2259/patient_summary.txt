@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2259  |  gem_id: gem-cochrane-simplification-train-2260  |  doi: 10.1002/14651858.CD003662.pub4
+
+This review found four small studies that evaluated the effect of steroids on low blood pressure in premature infants. At present, there is insufficient information on which to base recommendations about the value of giving steroids to babies born before term who have low blood pressure.

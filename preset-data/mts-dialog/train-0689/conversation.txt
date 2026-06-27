@@ -1,0 +1,24 @@
+Doctor: How old are you, young man?
+Patient: I am twenty one.
+Doctor: Are you right handed or left handed?
+Patient: I am right handed.
+Doctor: So, tell me what brings you here today?
+Patient: Everything started on the fifth of November. Then after I saw the gradual increase in my symptoms. So it was all like numbness. I could not feel my legs. They felt numb all the time and there was no coordination between them, and it also affected my walk. All these symptoms were at their limit in just like a half day or more. It is continuing the same way since then. I also feel like somebody is putting pins and needles on my legs approximately  halfway up the calf on both sides.
+Doctor: You said that you felt decreased coordination or less coordination between your legs, right?
+Patient: Yeah, that's right. It totally feels like I'm walking in space and don't know where to put my next step. I have no up and down spatial awareness.
+Doctor: Do you have any issue with the bowel movements?
+Patient: Nope.
+Doctor: What about this weakness or the numbness anywhere else except your legs?
+Patient: No, it's only in the legs.
+Doctor: Did anything help you with those symptoms?
+Patient: Well, sometimes, you see, hot showers made me feel better, but it is like only sometimes.
+Doctor: Any recent flu like symptoms?
+Patient: Nope.
+Doctor: Did anyone in your family have anything like that or any other medical issues that was like going on in your family?
+Patient: Nope.
+Doctor: Did you have any surgery before?
+Patient: Nope.
+Doctor: What about any other major health issues in the past?
+Patient: No, no medical issues.
+Doctor: Are you taking any kind of medication for anything?
+Patient: No medications.

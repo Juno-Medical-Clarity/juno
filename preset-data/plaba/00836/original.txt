@@ -1,0 +1,12 @@
+Background: Early ambulation with physical therapy (PT) following total knee arthroplasty (TKA) has demonstrated benefits in the literature.
+However, the impact of early PT on rehabilitation performance and opioid consumption has not been elucidated.
+We evaluate the effect of same-day PT on inhospital functional outcomes and opioid consumption.
+Methods: We retrospectively identified 2 cohorts of primary TKA patients from July 2016 to December 2017: PT0 (n = 295) received PT on the day of surgery, and PT1 (n = 392) received PT on postoperative day (POD) 1.
+Outcomes studied included number of feet walked on POD0-3, visual analog scale pain scores, morphine equivalents (ME) consumed, length of stay, and discharge disposition.
+Analysis was conducted using the Student t-test and Fisher exact test.
+Results: In comparison to the PT1 group, the PT0 group walked significantly more steps on POD1 (347.6 vs 167.4 ft, P < .0001), POD2 (342.1 vs 203.5 ft, P < .0001), and POD3 (190.3 vs 128.9 ft, P = .00028).
+There was no difference between the 2 groups for visual analog scale.
+The PT0 group also consumed significantly fewer total ME when compared to the PT1 group (149.0 vs 200.3 mg, P = .0002).
+The PT0 group had a significantly shorter length of stay when compared to the PT1 group (2.7 vs 3.2 days, P = .00075).
+More patients were discharged home in the PT0 group (81.7% vs 54.8%, P < .0001).
+Conclusion: We observed that initiation of PT on POD0 led to better PT performance, reduced ME during hospitalization, and more patients discharged home.

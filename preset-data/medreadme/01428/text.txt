@@ -1,0 +1,1 @@
+In this study, we developed a novel approach for delineating the nucleotide-dependent free-energy landscape (FEL) of the proteasome ’s heterohexameric ATPase complex based on complementary structural and kinetic measurements.

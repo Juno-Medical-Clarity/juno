@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3320  |  gem_id: gem-cochrane-simplification-train-3321  |  doi: 10.1002/14651858.CD002247
+
+The review authors searched the medical literature and found six controlled studies in which patients were randomized to primary repair or fecal diversion. Results were reported for a total of 705 patients. The two groups sustained significant injuries with the primary repair patients at least as ill as the diverted patients. The studies were reported from 1979 to 2002 and involved increasingly 'high risk' patients. Five were conducted in the United States and one in South Africa. Primary closure was at least as safe as fecal diversion. The number of deaths was similar in both the primary repair (1.94%) and the diverted groups (1.74%). Total complications, total infectious complications, abdominal infections and wound complications all favored primary repair. The studies did not adequately report colostomy closure for trauma-related colostomies, which can itself result in complications and significant illness.

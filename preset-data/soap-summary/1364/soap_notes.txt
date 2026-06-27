@@ -1,0 +1,14 @@
+# SOAP Notes — Sample 1364
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of seizures: maternal side has a history; mother had seizures during childhood, great grandmother had seizures, great aunt had seizures.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment information provided.)
+
+Plan:
+- (No plan mentioned.)

@@ -1,0 +1,10 @@
+Doctor: Do you have any history of surgeries, sir?
+Patient: The most recent was seven years ago. I had a craniotomy. I had a brain hemorrhage and there was bleed inside and outside the brain that they had to fix.
+Doctor: How was the recovery for that?
+Patient: I took a while but the doctors said I had a normal recovery time.
+Doctor: That is good. Have you had any other surgeries?
+Patient: I had surgery on my leg for a fracture. They put some pins in my leg.
+Doctor: Okay.
+Patient: I had some kind of surgery done on my stomach when I was a kid. I am not sure what the surgery was. All I know is that it was a very common procedure with no complications.
+Doctor: Okay. Is that all?
+Patient: Yep. That's it.

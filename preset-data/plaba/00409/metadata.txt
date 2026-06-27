@@ -1,0 +1,5 @@
+pmid:        18200034
+question:    32
+adaptation:  adaptation1
+title:       Effect of ACE inhibitors and beta-blockers on homocysteine levels in essential hypertension
+sentences:   10

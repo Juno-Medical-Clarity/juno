@@ -1,0 +1,7 @@
+source:      pnas
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'phenotypic diversity'

@@ -1,0 +1,236 @@
+# Smith Collection Transcript: RES0123
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What can i do for you
+
+Patient: So ive been just over the last week ive been feeling pretty sick i have this pretty bad headache that started like probably a week ago and then for the last few days ive been having these chills um and i didnt get a chance to measure my temperature at all um but the worst thing has been just these muscle aches all over my body and thats been going on for the last three to four days
+
+Doctor: Sorry to hear that youre feeling so uh horrible over the past week um lets uh lets try to understand this a little bit better so youve had this headache for the past week or so where exactly is it
+
+Patient: Its kind of just uh all across my forehead its been going to the sides like into my temples as well
+
+Doctor: Okay and what does it feel like how would you describe it
+
+Patient: uh yeah it feels like kind of like uh aching um i i have had headaches with throbbing before but its not so much throbbing its more just constant aching pain
+
+Doctor: um if you had to give it a number from 1 to 10 with 10 being the worst um pain ever what number would you give it
+
+Patient: uh probably like a 7
+
+Doctor: Oh wow yeah that sounds severe how long have you how long has it been a 7 for
+
+Patient: um its actually a bit better now but yeah like over the last week its been a 7 i would say now its probably around 5
+
+Doctor: Okay um anything that makes the headache better
+
+Patient: um i i take like tylenol then like it gets relieved for a bit for like a few hours and then comes back
+
+Doctor: Anything that you feel makes the headaches worse any postures or positions or activity or um any kind of exposure to light or sounds
+
+Patient: uh no its its just kind of there nothing makes it worse
+
+Doctor: Do you have nausea or vomiting
+
+Patient: uh no no nausea or vomiting
+
+Doctor: No any sensitivity to light or sounds
+
+Patient: No
+
+Doctor: Okay uh and is it only is it only on one on one side of your head or forehead or is it on both sides
+
+Patient: uh it it seems like its on both sides
+
+Doctor: And have you noticed any visual changes any blurry vision with the headaches
+
+Patient: No
+
+Doctor: Any other visual changes no okay um and youve also had chills but you said you havent checked your temperature right
+
+Patient: No i havent uh ive been having chills for the last few nights
+
+Doctor: Yeah we can definitely check your temperature here in the um here um and you mentioned that the muscle aches have been quite bothersome for you is it all over your body or anyone uh in any one muscle group
+
+Patient: It seems like its all over
+
+Doctor: Okay okay and um ill ask you about a couple other symptoms just to rule out um any other issues that you might be having so have you noticed that youve been confused at all over the past few days
+
+Patient: uh no i dont think so
+
+Doctor: Have you had any like stiffness or rigidity in your neck
+
+Patient: Maybe a little bit of a stiffness in in my neck
+
+Doctor: Okay
+
+Patient: Then like i i dont know if thats just the muscle pain its like kind of on my upper back lower neck area
+
+Doctor: We can definitely um examine that um when im doing physical examine and see how that is um okay and uh have you had any um redness in your eyes or any teary eyes
+
+Patient: No nothing like that
+
+Doctor: Do the headaches come and go or is it always there
+
+Patient: uh theyre pretty much like constant throughout the day
+
+Doctor: um and do you have a runny nose or stuffy nose
+
+Patient: uh no no i dont i i think im kind of im developing a little cough though
+
+Doctor: Okay when did that start
+
+Patient: Probably just yesterday i noticed myself coughing
+
+Doctor: Is it like a dry cough or wet cough
+
+Patient: uh a dry cough
+
+Doctor: Any sputum or any blood come out
+
+Patient: No
+
+Doctor: Any sore throat
+
+Patient: No
+
+Doctor: uh any chest pain
+
+Patient: No
+
+Doctor: Any difficulties with breathing
+
+Patient: uh no
+
+Doctor: Any palpitations or feel like your hearts beating very fast
+
+Patient: No
+
+Doctor: Okay any belly pain
+
+Patient: No
+
+Doctor: Any uh nausea or vomiting
+
+Patient: Nope
+
+Doctor: Any uh diarrhea or constipation
+
+Patient: No not that ive noticed
+
+Doctor: Any weakness in any one side of your body
+
+Patient: Nope
+
+Doctor: Any numbness or tingling
+
+Patient: Nope
+
+Doctor: No okay um any exposures uh to anyone who could be sick
+
+Patient: um i havent noticed but i i do go to work um and we recently switched to like in person instead of i i used to do um home work but for the last month ive been going into the office
+
+Doctor: I see and have you been wearing a mask
+
+Patient: Yeah well i try to wear the mask sometimes like uh in the in the stock like lounge we like take take off the mask to eat and stuff but thats about it
+
+Doctor: Are you maintaining social distancing when youre taking your mask off
+
+Patient: Yeah its uh most of the times were pretty socially distanced when were eating but sometimes its like hard to control when you know when youre going near the microwave to heat up your food and sometimes it gets hard its a its a fairly small room so
+
+Doctor: Yeah well i would i would recommend that you try to eat when people are not in the room if possible because you are putting yourself at risk  like if its a small room i think you should also talk to management or try to limit the number of people who can be in the room at a time um for your own safety you know and for the safety of others uh working with you um okay and um have you traveled anywhere recently
+
+Patient: No weve been uh at home
+
+Doctor: Okay good um and who do you live with
+
+Patient: I live with my young like uh daughter and then my wife as well
+
+Doctor: Okay and you do you think they might have got any contacts to anyone who is sick
+
+Patient: uh no theyve been completely fine uh my daughter is like is uh doing school from home right now so shes not really seeing anyone
+
+Doctor: Okay thats good and um do you currently smoke
+
+Patient: I do i do smoke um probably half a pack a day
+
+Doctor: For how long
+
+Patient: um for probably the last 20 years
+
+Doctor: Okay and do you uh consume marijuana
+
+Patient: Just um maybe once or twice a month
+
+Doctor: Okay
+
+Patient: Just uh sometimes it helps me sleep sometimes
+
+Doctor: Sure do you take any recreational drugs like cocaine amphetamine lsecstasy etc
+
+Patient: No nothing like that
+
+Doctor: Any alcohol
+
+Patient: Yeah i drink probably uh a beer or two every couple days
+
+Doctor: Alright and uh do you have any medical conditions that youve been diagnosed with
+
+Patient: uh yeah so i do theyre saying i might have um high blood pressure um they like it its still ongoing um theyre testing testing me for things
+
+Doctor: Sure yeah and have you uh taken any medications for it
+
+Patient: No not yet i havent been put on any medications
+
+Doctor: Have you do you take anything over the counter any herbal pills vitamins minerals etc
+
+Patient: No
+
+Doctor: Okay and do you have any allergies
+
+Patient: No allergies
+
+Doctor: Okay good um and have you had any surgeries in the past or any hospitalizations
+
+Patient: um i was pretty young i had my tonsils removed um but other than that no no other surgeries or hospitalizations
+
+Doctor: Good any family history of any medical conditions
+
+Patient: um so i think my mother she she has like type 2 diabetes
+
+Doctor: Okay
+
+Patient: And uh my father has been pretty healthy like no issues with him
+
+Doctor: Good um okay have you had any um have you had migraines in the past
+
+Patient: um yeah sometimes i when im like stressed at work and like i uh its not like anything regular that happens to me i probably have had migraines in the past
+
+Doctor: Okay okay and have you ever been diagnosed with asthma or um with uh copd
+
+Patient: No
+
+Doctor: Okay alright um so it sounds like youve had a headache for the past week which has been kind of constant about 7 out of 10 and then youve also developed a fever but you havent or i guess youve been feeling youve been having chills uh and we can measure temperature here and you also had a cough that started yesterday what about um sense of taste have you noticed any changes there
+
+Patient: uh no not that ive really noticed
+
+Doctor: What about your sense of smell
+
+Patient: um my smell i dont think so but like sometimes i do feel a bit like stuffy as well like not not right now but before when i felt stuffy i lost my sense of smell
+
+Doctor: Sure yeah okay um okay well thats all the questions i have for you well do a physical exam um get a chest xray done also examine your neck as well a little bit just to make sure theres no stiffness or rigidity have a look inside your mouth um listen to your chest
+
+Patient: Okay
+
+Doctor: We will also get a coviswab done simply because your symptoms sound very similar to um or i guess a lot of these symptoms do overlap with symptoms of coviso well do that and um i would require would request that you continue to uh stay at home if you havent been doing so so far um take a leave from work try to do work from home and quarantine at home as much as possible and stay away from your wife and your daughter as well at least until the swab is back and you get some more guidance from uh public health if it is positive they will give you a call um there are lots of guidelines on how to self isolate and i i can share that with you um its best that you do that for now um we will run a couple of tests do labs and based on those results uh well decide if you need to stay in the er or if we can um if you can be discharged later today do you have any questions for me
+
+Patient: uh no that that all sounds great thanks for explaining it to me
+
+Doctor: Youre welcome
+
+Patient: Okay

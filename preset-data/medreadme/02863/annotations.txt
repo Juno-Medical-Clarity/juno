@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [2:4] 'medical-jargon-google-easy' -> 'somatic expansion'
+  [13:14] 'medical-jargon-google-easy' -> 'mutation'
+  [23:26] 'medical-jargon-google-easy' -> 'trinucleotide repeat diseases'

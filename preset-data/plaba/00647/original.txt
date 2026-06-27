@@ -1,0 +1,12 @@
+Purpose: To evaluate the practical value of initial C-reactive protein (CRP) in the diagnosis of bacterial infection in children.
+Methods: The subjects comprised 11 children, six boys and five girls, aged 3 months through to 3 years (median age 16 months), whose initial CRP levels were < 1.0 mg/dL despite bacterial infection.
+C-reactive protein was quantitated at the first medical examination by nephelometry.
+Results: The diagnosis was urinary tract infection (n = 4), bacterial meningitis (n = 2), sepsis (n = 2), pneumonia (n = 2) and arthritis of the hip joint (n = 1).
+The CRP levels were significantly elevated during the course of infection, ranging from 7.6 to 28.5 mg/dL.
+The bacterial etiology was non-specific.
+Eight patients were examined within 12 h of onset, three exhibited negative CRP values despite the duration of the insult over 12 h.
+Six patients were tentatively diagnosed as having a bacterial infection, but the other five were not.
+Each patient was treated, leading to a favorable outcome without any serious complications.
+Conclusions: Low levels of CRP do not rule out the possibility of bacterial infection in children.
+The initial value of CRP may be negative, even in patients with severe bacterial infection or even after 12 h from onset.
+The data suggest that pediatricians should consistently be aware of the possibility of bacterial infection even if the initial CRP test result is negative and that serial CRP measurements appear to be practical.

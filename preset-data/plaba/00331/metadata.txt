@@ -1,0 +1,5 @@
+pmid:        32594116
+question:    26
+adaptation:  adaptation1
+title:       Distribution of Transmission Potential During Nonsevere COVID-19 Illness
+sentences:   13

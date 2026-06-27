@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1558  |  gem_id: gem-cochrane-simplification-train-1559  |  doi: 10.1002/14651858.CD005333.pub2
+
+We reviewed studies that compared psychological interventions to treatment as usual groups who either received no treatment, or were on a waiting list for treatment or received usual care. We found eight studies, which together suggested that cognitive and/or behavioural treatments were better than treatment as usual conditions at reducing clinical symptoms. Baseline OCD severity and depressive symptom level predicted the degree of response. However, the conclusions were based on a small number of randomised controlled trials with small sample sizes. There were no trials of other forms of psychological treatment such as psychodynamic therapy and client-centred therapy, and a lack of available evidence for the long-term effectiveness of psychological treatments.

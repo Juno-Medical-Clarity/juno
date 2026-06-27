@@ -1,0 +1,5 @@
+drug_focus: bupropion hcl 300mg
+question_type: Indication
+section_title: INDICATIONS AND USAGE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bff74476-f633-4048-bb11-3af93950c54c&audience=consumer
+sample_id: 0660

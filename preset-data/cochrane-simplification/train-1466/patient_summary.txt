@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1466  |  gem_id: gem-cochrane-simplification-train-1467  |  doi: 10.1002/14651858.CD000507
+
+This review found that low heparin doses are effective in preventing catheters becoming blocked and needing to be re-inserted. There is not enough evidence to rule out the possibility of adverse effects. Heparin does not seem to lower the rate of blood clots in the major artery.

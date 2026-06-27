@@ -1,0 +1,274 @@
+# Smith Collection Transcript: RES0022
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: Would you mind by start starting to tell me about what brought you in today
+
+Patient: Yeah i i its just over the last week i cant like do anything without just feeling really like short of breath im having a really hard time breathing like kind of do anyways because i have copso i feel like over a few years its been getting worse but this week it just got really bad in particular
+
+Doctor: OK i see so how much activity were you doing that was bringing on the shortness of breath
+
+Patient: Like i i usually i will walk my dog around the block and i havent been able to do that like my husbands been doing it and then i was just going to try to get the mail just like i dont know its probably like 200 feet down the road and i could i was so tired when i got back and i felt like i could barely breathe
+
+Doctor: OK and did you have any chest pain with this
+
+Patient: uh no no nothing like that
+
+Doctor: OK and when did the shortness of breath symptoms start coming on
+
+Patient: Mmm like it ive been i feel like its been sort of getting worse over the past few years but just like a week ago it just got really bad like very suddenly
+
+Doctor: OK um and has it been getting worse over this past week or has it stayed the same
+
+Patient: Pfft maybe getting a bit worse like its been pretty bad the whole time
+
+Doctor: No ok i see and have you had a cough
+
+Patient: Yeah like i again like i do normally because of my copbut its just been really its been even worse this week and usually when i get sick its more like im like bringing up a lot of like yellowish gunk but this time its not been quite as like gunkie its been pretty dry
+
+Doctor: OK so youre not bringing up any sputum with your cough
+
+Patient: No maybe maybe a tiny bit but i kinda do that like anyways
+
+Doctor: OK uh and have you coughed up any blood
+
+Patient: No
+
+Doctor: OK and um have you had any other symptoms that have went along with this difficulty breathing um and cough
+
+Patient: um i mean ive been i dont have a thermometer at home but i have felt like really hot and just this morning like my husband you know he was trying to make sure i was still eating and drinking a lot and i dont really feel like i am tasting my food all that well
+
+Doctor: OK so would you say that you have a loss of taste right now
+
+Patient: um pretty yeah yeah im pretty sure i couldnt really taste my breakfast
+
+Doctor: OK and how about your sense of smell
+
+Patient: Actually yeah come to think of it i dont i dont think ive really been smelling much
+
+Doctor: OK so youre not able to smell either do you feel like your nose is congested or are really runny
+
+Patient: Its not its not particularly congested or anything
+
+Doctor: OK but still have had these changes in taste and smell
+
+Patient: Mmmm
+
+Doctor: um ok and we will check your temperature as well to see if we can if there is a documented fever have you had any night sweats
+
+Patient: Whats that
+
+Doctor: So generally patients would will say that their sheets are soaked and it will wake them up sometimes because its uncomfortable
+
+Patient: Oh no i havent had that
+
+Doctor: OK how about any chills so it could be like when you kind of shaking in your in your bed
+
+Patient: No not really just just like there really i think like fever i think fevers
+
+Doctor: OK and have over the last several months have you had any weight loss
+
+Patient: No i think ive been pretty well the same
+
+Doctor: OK an with um the change in taste how has your appetite been
+
+Patient: Well i mean that was just this morning that i noticed that um before that i think i was eating like pretty ok
+
+Doctor: OK and have you felt as though your heart was racing at any point
+
+Patient: No
+
+Doctor: OK uh any dizziness or feeling lightheaded
+
+Patient: Oh no i dont think so
+
+Doctor: OK and any abdominal pain
+
+Patient: No
+
+Doctor: How about any nausea or vomiting
+
+Patient: No
+
+Doctor: OK have you had any diarrhea or constipation
+
+Patient: Maybe maybe a little diarrhea oh but i didnt know if that was just something i ate or what
+
+Doctor: OK so when did the diarrhea start
+
+Patient: Like yesterday yesterday
+
+Doctor: OK and and approximately how many times did you go to the bathroom would you say
+
+Patient: So probably like twice where it was really loose
+
+Doctor: OK and did you notice any blood
+
+Patient: No
+
+Doctor: OK um has that happened again today
+
+Patient: Oh no i didnt go today
+
+Doctor: OK and have you had any urinary problems like painful urination or needing to go really often
+
+Patient: No
+
+Doctor: OK and then uh have you had any headaches
+
+Patient: Come to think of it a little bit i just thought i was like it was maybe because i was tired but yeah ive had headaches
+
+Doctor: OK have you had headaches like this in the past
+
+Patient: um i mean only when there is like reasons for it like being really overtired or uh yeah
+
+Doctor: OK does this feel similar to any of those times
+
+Patient: Let me know its hard to say like i am tired so yeah i think so
+
+Doctor: OK would you say this was the worst headache of your life or a kind of like a thunder clap sensation
+
+Patient: No nothing like that
+
+Doctor: OK and have you got any photo sensitivity or kind of sensitivity of your light or sensitivity to sound
+
+Patient: No
+
+Doctor: OK and next question would be have you have any any joint aches or muscle aches or general body aches
+
+Patient: I mean im a little i feel like i havent been moving as much feel a little sore i thought it was maybe just cause i you know wasnt going for my long walks and my body was like getting tired and stiff but yeah i feel a bit achey when i come to think of it
+
+Doctor: OK and have you noticed any rashes or changes in your skin
+
+Patient: No
+
+Doctor: OK uh and then im not sure if i asked but did you have a sore throat
+
+Patient: uh no
+
+Doctor: OK um and next just wanted to ask about your past health um is there anything you see a physician for regularly
+
+Patient: Just like the cop
+
+Doctor: OK
+
+Patient: My family doctor
+
+Doctor: OK and do you use inhalers for that
+
+Patient: Oh geez i havent seen my family doctor in awhile because of the covid stuff but i have an inhaler ah that was probably like before covid that it was prescribed and then i ran out at some point and i havent got it renewed
+
+Doctor: OK so when was the last time you used an inhaler a a week ago a month ago
+
+Patient: I probably ran out like two months ago but i wasnt using it every day it was like one of those ones for like when you need it and now now this week i wish i would have had it
+
+Doctor: OK i see so before like two months ago how often would you say you were using it
+
+Patient: Oh maybe once youre once a week
+
+Doctor: OK um and when what types of situations where you finding yourself needing to use it more often or rather where there any kind of triggers to those events
+
+Patient: Like if i if i say i took my dog for a walk and they kind of got away and i had to run a little like run a little bit usually i walk like pretty fast but if i have to run that would that would make it would make me have to use it
+
+Doctor: OK so a lot more exertion than what youre able to do now it sounds like
+
+Patient: Yeah like heavier exercise
+
+Doctor: I see and any other medications like prescribed or over the counter that you take
+
+Patient: No that was it
+
+Doctor: Alright and have you had any surgeries before
+
+Patient: I had my appendix out when i was in my 20s
+
+Doctor: OK and any allergies
+
+Patient: No
+
+Doctor: OK and um have you been anybody sorry have you been around anybody whos been sick recently
+
+Patient: Well we havent really seen anyone because of the covid stuff so its just my my husband has someone like has a friend that comes over for them to the they watch like the sports games together like our friend lives alone so thats really the only person thats been coming into our house and i dont i dont know that i dont think hes been sick but he he might have been around people that were sick
+
+Doctor: OK i see so he hasnt had any symptoms though
+
+Patient: Not that i know of we havent heard from him in a few days though
+
+Doctor: OK and how was your husband been
+
+Patient: Oh hes been well he said he like he had a bit of a scratchy throat but i dont think hes he hasnt really felt sick i dont think
+
+Doctor: OK yeah and do you live with anybody else or is it just you and your husband
+
+Patient: Just the two of us and our dog
+
+Doctor: OK and uh do you smoke cigarettes
+
+Patient: Yeah ive tried to stop but i i smoke like a pack a day
+
+Doctor: OK we can talk maybe about quitting if youre interested later on in the appointment or at another time at a follow up
+
+Patient: Sure sure
+
+Doctor: OK and do you drink alcohol
+
+Patient: Like maybe like a glass of wine on a friday
+
+Doctor: OK so very it sounds occasionally maybe a drink a week
+
+Patient: Yeah something like that
+
+Doctor: Alright and um do you smoke marijuana
+
+Patient: No
+
+Doctor: OK alright how about that use like any like edibles or anything like that
+
+Patient: No nothing like that
+
+Doctor: OK and then how about any recreational drugs
+
+Patient: um like what
+
+Doctor: Like things like cocaine crystal meth ecstasy
+
+Patient: No no
+
+Doctor: I see ok and is anybody in your family had any heart conditions before
+
+Patient: My dad had like high blood pressure
+
+Doctor: OK anybody ever heard attack
+
+Patient: No not that i know of
+
+Doctor: OK and anybody in the family have lung conditions in the past
+
+Patient: uh no
+
+Doctor: OK at any cancers that run in the family
+
+Patient: No
+
+Doctor: Alright so was there anything else that um you think i should know today that maybe i didnt ask about
+
+Patient: I just feel tired i just feel like really tired
+
+Doctor: OK certainly that can be part of a kind of what how youre feeling and right now with the situation with the pandemic covid19 is definitely pne thing that will be testing for today
+
+Patient: Do you think i have covid
+
+Doctor: Its very possible because of how general the symptoms are for covid and so its something that we want to test for that being said you could have another viral illness such as the common cold like adenovirus or you could have a bacterial infection thats not covid really related at all or this could be an exacerbation of your copand maybe we need we need to just titrate your inhaler so well need to just run some lab work and do the pcr nasal swab as part of the work up an we will see what some of those investigations show
+
+Patient: Oh geez ok
+
+Doctor: OK its all in the meantime youll need to quarantine for 14 days and if the results are positive well after note notified public health so that the appropriate contact tracing can be made but well get the investigation started now
+
+Patient: OK thanks doc
+
+Doctor: Alright youre welcome

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1105
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Are you up to date on your vaccines? I've actually never been vaccinated before. My parents don't believe in vaccines.

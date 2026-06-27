@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0564
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Now, let's talk about your family history. Have any of them had cancer? Actually, yes, I know a few family members have, but I can't remember who had what kind. That's okay. What about heart disease? Can you remember anyone having that? Yes, that rings some bells. Thank you, has anyone in your family had a joint replacement? I know that a lot of my family has had arthritis in the past, but I can't remember whether or not they had joint replacements, honestly.

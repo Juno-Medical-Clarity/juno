@@ -1,0 +1,47 @@
+Doctor: Good morning, sir. How are you feeling today?
+
+Patient: I'm feeling okay, doctor.
+
+Doctor: I understand you came to see me today because of a painful hip. Can you tell me more about your symptoms?
+
+Patient: Yes, doctor. I have been experiencing pain in my right hip for a few weeks now, and it's getting harder for me to walk.
+
+Doctor: Okay. I see that you have a history of hypertension and you are on medication. Are you a smoker?
+
+Patient: No, doctor. I have never smoked.
+
+Doctor: That's good. And do you have a family history of cancer?
+
+Patient: No, I don't.
+
+Doctor: Alright. After evaluating your condition, we found that you have a pathological fracture at the neck of your right femur. We also did a Magnetic Resonance Imaging of your spine and found osteophyte complexes at your C3-C4, C4-C5, and C5-C6 vertebrae, which is causing narrowing of your neural foramina.
+
+Patient: Hmm, okay.
+
+Doctor: And we also found multiple T2-hyperintense lesions in your lung parenchyma, which was an incidental finding.
+
+Patient: I see.
+
+Doctor: To get a better understanding of your condition, we also did a positron emission tomography-computed tomography (PET-CT) scan of your whole body. And we found a mass in the apex of your right lung, right hilum, mediastinal lymph node, and soft tissue wall thickening in the proximal stomach along with multiple liver and bone metastases.
+
+Patient: That sounds serious, doctor.
+
+Doctor: Yes, it is. We also did an upper gastrointestinal endoscopy and found a proximal gastric growth from which we took a biopsy. The histopathology showed poorly differentiated adenocarcinoma.
+
+Patient: Is that cancer, doctor?
+
+Doctor: Yes, it is. We reached a provisional diagnosis of carcinoma stomach with distant metastasis. But after doing immunohistochemistry, it came out to be positive for thyroid transcription factor-1 (TTF-1) and cytokeratin-7 (CK-7), while negative for cytokeratin 20 (CK-20).
+
+Patient: So, what does that mean, doctor?
+
+Doctor: It means that there is a possibility of metastasis from a lung primary. And after doing a biopsy from the lung mass, we confirmed that it was adenocarcinoma. The immunohistochemistry was positive for TTF-1 and CK-7, while negative for CK-20 and synaptophysin. And the analysis for anaplastic lymphoma kinase, epidermal growth factor receptor, and receptor tyrosine kinase 1 were all negative, but the programmed death ligand 1 (PD-L1) tumor proportion score (TPS) was 90%.
+
+Patient: So, what is my final diagnosis, doctor?
+
+Doctor: Your final diagnosis is adenocarcinoma lung with multiple lung, liver, femur, as well as gastric metastases.
+
+Doctor: For the pathological fracture, you underwent fixation by intramedullary nailing followed by palliative external beam radiotherapy 8 Gy in a single fraction. You received 10 three.
+
+Patient: So, what do I need to do now, doctor?
+
+Doctor: For now, it's important that you continue taking your medication and follow-up with us regularly. We will monitor your condition and keep you updated on any new developments.

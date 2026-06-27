@@ -1,0 +1,5 @@
+drug_focus: Insulin
+question_type: Overdose
+section_title: Symptoms of insulin overdose
+source_url: https://www.healthline.com/health/diabetes/insulin-overdose#accidental-od
+sample_id: 0175

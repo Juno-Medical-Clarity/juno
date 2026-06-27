@@ -1,0 +1,12 @@
+Doctor: Welcome in, Miss A!
+Patient: Thank you.
+Doctor: How have you been doing?
+Patient: I am good today!
+Doctor: Have you not been feeling good other days?
+Patient: I have been feeling nervous and having some anxiety lately.
+Doctor: Is your feelings of nervousness or anxiousness triggered by anything specific?
+Patient: It varies. I feel anxious when I think about retuning to work or this upcoming trip that I have planned.
+Doctor: How often do you feel this way?
+Patient: It comes and goes.
+Doctor: Have you ever had any treatment or history of depression, anxiety, or mood disorders?
+Patient: No.

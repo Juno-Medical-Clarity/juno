@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3340  |  gem_id: gem-cochrane-simplification-train-3341  |  doi: 10.1002/14651858.CD004446.pub4
+
+In this review, the authors looked for studies that compared death rates in patients with an abdominal injury where ultrasound was used to aid diagnosis with death rates where no ultrasound was used. They also looked for evidence that ultrasound use could reduce the need to carry out other more complex and more expensive diagnostic tests. However, very few trials have been done and the authors concluded that there is insufficient evidence to justify the use of ultrasound as part of the diagnosis of patients with abdominal injury. Given this degree of uncertainty, it is probably justified to ask doctors on duty for a confirmatory CT scan in patients who have sustained an injury with a high chance of major trauma (that is, head and brain injury, cervical spine fracture, thoraco-abdominal pelvic trauma, and other injuries).

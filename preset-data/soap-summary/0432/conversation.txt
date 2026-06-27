@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0432
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Uh let's see here. Are there any diseases that run in your- Family? Yes. Nope.

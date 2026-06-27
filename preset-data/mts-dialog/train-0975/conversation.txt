@@ -1,0 +1,2 @@
+Doctor: Do you use tobacco, alcohol, or recreational drugs?
+Patient: No.

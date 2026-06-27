@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3011  |  gem_id: gem-cochrane-simplification-train-3012  |  doi: 10.1002/14651858.CD002008.pub4
+
+Forty-five studies with a total of 3186 people are included in this review in four different comparisons: dietary advice to no advice; to oral nutritional supplements; to dietary advice plus oral nutritional supplements; and to dietary advice and nutritional supplements given together compared with no additional help. Follow-up ranged from 18 days to 24 months. There are some significant results for change in weight, muscle bulk and strength suggesting that nutritional intervention is beneficial although for some comparisons there are big differences between the studies. The authors conclude that nutritional intervention appears to be more effective than no help at improving weight, muscle bulk and strength. More research is needed to work out the best ways to help people who are losing weight because of illness in order to improve their clinical outcomes and quality of life.

@@ -1,0 +1,5 @@
+pmid:        24159719
+question:    49
+adaptation:  adaptation1
+title:       Systemic disease as cause of leg swelling
+sentences:   5

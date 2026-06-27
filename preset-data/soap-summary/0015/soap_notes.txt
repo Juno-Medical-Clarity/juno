@@ -1,0 +1,45 @@
+# SOAP Notes — Sample 0015
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Presenting with symptoms of nasal congestion, runny nose, facial pain and pressure, and loss of smell over the past 5 days
+- Runny nose started 5 days ago, progressed to nasal congestion, throat congestion, and facial pain and pressure over the last 2 days
+- Nasal discharge is clear to white in color
+- Nasal obstruction, worse at night, alternating sides
+- Anosmia for the past 3 days
+- Denies changes in taste, cough, sore throat
+- Had a brief episode of runny nose 8 days ago that continued mildly until significant worsening 5 days ago
+- Pain and pressure mainly over the cheeks, jaws, and above the teeth
+- Denies pain inside the mouth, teeth grinding, or TMJ issues
+- Reports brief episodes of chills over the last few days, but no documented fever
+- Mouth breathing at night due to nasal congestion, but no shortness of breath
+- Mild eye redness and itchiness, no discharge
+- Had a similar episode 2 years ago that self-resolved without medical intervention
+
+PMHx:
+- Dyslipidemia, treated with a statin medication
+- Quit smoking a couple of years ago
+
+Medications:
+- Statin (dyslipidemia)
+- Multivitamins
+
+SocHx:
+- Lives alone in an apartment outside of London
+- Works at a grocery store, no known sick contacts at work
+- Drinks red wine a couple of times a week
+- Smokes marijuana once or twice a month
+
+FHx:
+- No known family history of lung or heart conditions
+- No known family history of cancer
+
+Objective:
+- Vital signs pending, including temperature to assess for fever
+
+Assessment:
+- Suspect acute bacterial sinusitis based on symptoms of nasal discharge, obstruction, anosmia, facial pain, and worsening after initial improvement
+
+Plan:
+- Check temperature to assess for fever
+- Consider antibiotics if fever is present and high enough, given the clinical presentation and course of illness

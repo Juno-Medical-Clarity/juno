@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 1149
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a 52-year-old male.
+- He slipped on a grape at the grocery store, injuring his left knee.
+- Injury date: October 2, 2008.
+- Treatment received: Immediate care at the emergency department, followed by referral to physical therapy and provision of a knee brace by his primary care physician.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

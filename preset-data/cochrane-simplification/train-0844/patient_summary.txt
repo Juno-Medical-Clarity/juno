@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0844  |  gem_id: gem-cochrane-simplification-train-845  |  doi: 10.1002/14651858.CD006184.pub2
+
+Therefore, trials have been performed with agents that prevent clotting of blood platelets (antiplatelet agents). In this review of seven trials, including 1385 patients, that studied the effects of antiplatelet agents on the outcome after SAH, we found that patients who were treated with antiplatelet agents had a poor outcome less often, and secondary ischaemia less often than patients that received no antiplatelet agent, but the results were not statistically significant and so no definite conclusion can be drawn. Moreover, patients who are treated with antiplatelet agents might have a slightly higher risk of bleeding. Based on these results we conclude that antiplatelet agents after SAH cannot be recommended at the present time.

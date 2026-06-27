@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2860  |  gem_id: gem-cochrane-simplification-train-2861  |  doi: 10.1002/14651858.CD004878.pub4
+
+Our systematic review found 17 controlled studies involving 2596 affected children that used these drugs for a short duration and assessed short-term outcomes. When comparing glucocorticoids to placebo, no differences were found for either hospital admissions or length of hospital stay. There was no substantial benefit in other health outcomes. These findings are consistent and likely to be applicable in diverse settings. Exploratory results from one large high-quality trial suggest that combined treatment of systemic glucocorticoids (dexamethasone) and bronchodilators (epinephrine) may significantly reduce hospital admissions. There were no relevant short-term adverse effects that were any different from those seen with an inactive placebo, while long-term safety was not assessed. Further research is needed to confirm the efficacy, safety and applicability of this promising approach.

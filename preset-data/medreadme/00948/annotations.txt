@@ -1,0 +1,9 @@
+source:      plos_biology
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [8:10] 'medical-jargon-google-easy' -> 'methyltransferase activity'
+  [11:12] 'medical-jargon-google-hard' -> 'FAM173B'
+  [14:15] 'medical-jargon-google-easy' -> 'neurobiology'

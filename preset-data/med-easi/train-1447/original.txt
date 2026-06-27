@@ -1,0 +1,1 @@
+Flow conditions and perfusion rates are dominant parameters in competition between tissue and circulation bubbles, and between multiple bubbles, for dissolved gas for bubble growth.

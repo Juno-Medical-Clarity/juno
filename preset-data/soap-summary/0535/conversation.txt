@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0535
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Have you had any operations in the- Nope. No surgeries. How about any past injuries or illnesses? Nope.

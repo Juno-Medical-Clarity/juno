@@ -1,0 +1,1 @@
+A simple model incorporating stochastic colonization suggests that heterogeneity between worms is driven by the low rate at which bacteria successfully establish new intestinal colonies.

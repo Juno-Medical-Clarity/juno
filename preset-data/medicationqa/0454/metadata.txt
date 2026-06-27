@@ -1,0 +1,5 @@
+drug_focus: duragesic patch and oxycontin
+question_type: Comparison
+section_title: Converting from tdF to an oral opioid
+source_url: https://www.ashp.org/-/media/store-files/p1985-sample-chapter-5.ashx
+sample_id: 0454

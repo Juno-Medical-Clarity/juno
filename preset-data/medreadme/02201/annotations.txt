@@ -1,0 +1,12 @@
+source:      elife
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [5:6] 'abbr-medical' -> 'TEs'
+  [9:12] 'medical-jargon-google-hard' -> 'environmentally induced genes'
+  [15:16] 'medical-jargon-google-easy' -> 'hypermethylation'
+  [20:21] 'general-complex' -> 'temporal'
+  [23:24] 'medical-jargon-google-easy' -> 'transcriptional'
+  [25:27] 'medical-jargon-google-easy' -> 'epigenomic changes'

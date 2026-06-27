@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0012  |  gem_id: gem-cochrane-simplification-test-13  |  doi: 10.1002/14651858.CD003577.pub3
+
+We identified 19 randomized controlled trials and included 11, but only eight contributed data. The most commonly studied methods of skin closure were non-absorbable staples compared with absorbable subcutaneous sutures. Staples were associated with similar outcomes in terms of wound infection, pain and appearance compared with sutures. Non-absorbable staples had an increased risk of skin separation and, therefore, reclosure. Skin separation was defined differently across trials and removal of staples varied from about day three to day seven postoperatively. There is not enough evidence from the included studies to say which method of closing the caesarean skin incision is superior. Too few trials compared different kinds of sutures. The use of prophylactic antibiotics to reduce infection was not reported in most trials.

@@ -1,0 +1,5 @@
+drug_focus: Levaquin
+question_type: Indication
+section_title: INDICATIONS AND USAGE
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a1f01e8e-97e9-11de-b91d-553856d89593
+sample_id: 0042

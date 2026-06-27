@@ -1,0 +1,226 @@
+# Smith Collection Transcript: RES0100
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you today
+
+Patient: Umm yeah so i just came in today with ive been having a few symptoms for the last i would say 5 days so ive had it started with a sore throat just five days ago kind of just very irritating sore throat sensation thats kind of gotten worse over the last few days and then i started getting a fever four days ago and it has been going on for the last couple of days as well and the highest temperature i measured on myself was 388 degrees celsius and yeah so that thats thats my main concern right now
+
+Doctor: OK and since the sore throat started 5 days ago has it been getting better worse or staying the same
+
+Patient: I would say its getting worse i have some pain with swallowing food as well as like now even when im talking a little im getting some pain as well
+
+Doctor: OK have you been able to maintain your appetite
+
+Patient: I do feel like ive lost a bit of my appetite over the last three to four days
+
+Doctor: OK and have you noticed any changes to your voice
+
+Patient: Uhm i dont think so not yet i but i think like the way its hurting right now i feel like its coming
+
+Doctor: Alright so have you notice any like neck swelling
+
+Patient: Yeah now that you mention it i i do have like these two lumps on the right side of my neck like kind of right below the jaw
+
+Doctor: OK are they painful
+
+Patient: Uhm not not really like when im pressing on them they dont really hurt but i definitely have two lumps
+
+Doctor: I see ok well certainly look into that on the physical exam ok and uh and you mentioned that youve also been really tired over these last few days
+
+Patient: Yeah ive i havent really had much of an appetite kind of just ive skipped work just trying to take it easy like just napping the whole day as much as i can
+
+Doctor: OK and so youve been experiencing fatigue have you had any any headaches
+
+Patient: No headaches no
+
+Doctor: Alright how about any eye redness or runny nose or
+
+Patient: uh no no runny nose or so i i dont have headaches but i i i think i was having some body aches just yesterday
+
+Doctor: OK so any particular area that thats aching
+
+Patient: Uhm not really its kind of just like a general like i dont know if it was it was because i was lying around the whole day but just kind of a general pain throughout the body
+
+Doctor: OK and have you been experiencing any difficulties or sorry have you been experiencing any cough
+
+Patient: No not really
+
+Doctor: OK how about any shortness of breath or trouble breathing
+
+Patient: No
+
+Doctor: OK have you had any wheezing
+
+Patient: No wheezing
+
+Doctor: Alright and how about any chest pain
+
+Patient: No no no chest pain
+
+Doctor: Have you had any heart palpitations or or feeling like your hearts racing
+
+Patient: No
+
+Doctor: OK uhm and maybe you had any lightheadedness or or dizziness
+
+Patient: uh no not really
+
+Doctor: Have you had any abdominal pain
+
+Patient: Uhm actually yeah yesterday when i was uhm like when i was having the body pain i also noticed a little bit of abdominal pain just like on the upper i would say upper left side
+
+Doctor: OK and and how would you describe this pain and how long has it been going on for
+
+Patient: Just since yesterday its its not really like i would say its more of a discomfort than a pain but i definitely do feel like like somethings just not right in that area
+
+Doctor: I see is there anything that you do that that makes that that feeling worse or make that make it better
+
+Patient: Yeah like i i try not to lie on that side i have to go on to the other side
+
+Doctor: Alright did you notice this in the last couple of days as well
+
+Patient: Yeah that that just started yesterday
+
+Doctor: OK have you had any nausea or vomiting
+
+Patient: No
+
+Doctor: How about any diarrhea
+
+Patient: No
+
+Doctor: Alright and have you had any fevers or or sorry yeah you mentioned you had a fever of 382 and have you had any chills
+
+Patient: Uhm no chills well yeah i would say a couple nights ago i might have had some chills but mainly its just been ive been feeling more hot and i have been kind of getting like night sweats
+
+Doctor: OK youve been having night sweats this week or have they been going on longer
+
+Patient: No just just this week
+
+Doctor: Alright have you had any changes to your weight over the last several months
+
+Patient: No its been pretty steady
+
+Doctor: Alright and the fever this week has it been there the whole time or has it come and gone
+
+Patient: It kind of comes and goes ive probably taken temperatures like every day but i would say its definitely for the last few days its been more of a fever like the nightsweats sensation before it was a bit fine like but the highest temperatures have been in the last few days
+
+Doctor: OK have you noticed any skin changes or rashes
+
+Patient: Uhm just like i i dont know like i dont think there are any changes but i did notice some like kind of just pink pink spots on my arm the other day
+
+Doctor: OK well uh were they itchy
+
+Patient: No they werent really itchy just like a couple i would say like raised not raised spots just like flat kind of pinkish spots
+
+Doctor: OK and has that has that spread anywhere or has it gone away
+
+Patient: No hasnt really started spreading yet i just noticed it on on my arm and i i dont think it has really spread at all
+
+Doctor: OK this is on on one arm
+
+Patient: Yeah
+
+Doctor: OK and youve had some body aches uh have you had any joint pains
+
+Patient: No join pains no
+
+Doctor: OK and are you currently sexually active
+
+Patient: Yes
+
+Doctor: Alright and could you tell me a little bit about your partners or or partner and i and i was wondering if you use condoms
+
+Patient: Yeah so i i just have one partner right now my fiance and we uh i actually like have in an iuso like we we dont use condoms but like were pretty honest and safe with each other i fully trust him like he doesnt have any partners or anything like that and i only have i dont have any other partners as well
+
+Doctor: OK have you had a sexually transmitted infection before
+
+Patient: No never
+
+Doctor: OK any concerns currently any vaginal discharge or itchiness or or pain
+
+Patient: No nothing like that
+
+Doctor: OK and have you been pregnant before
+
+Patient: No i havent no
+
+Doctor: OK and have you been diagnosed with any medical conditions before
+
+Patient: Uhm just uh i have had just eczema in the past but that thats fairly stable its been treated i dont really have it anymore
+
+Doctor: OK do you take any medications regularly
+
+Patient: Currently no no
+
+Doctor: Any allergies to medications
+
+Patient: No
+
+Doctor: Alright uhm and any hospitalizations or surgeries in the past
+
+Patient: No
+
+Doctor: OK and could you tell me a little bit about your living situation currently like who you live with and and where
+
+Patient: Yeah so im just living with my fiance and thats were living in like a small apartment and right now were not really seeing anyone else really during the pandemic
+
+Doctor: OK so have you been around anybody whos been sick
+
+Patient: I just had to go into work like one day last week just to grab some of my stuff but didnt really come into contact with anyone my fiance does go to his work like a couple like three or four times during the week so i dont know if he got into contact with anyone its its hard to say
+
+Doctor: Has he been sick at all like any any cough sore throat anything like that
+
+Patient: He did have a sore throat last week but it kind of just went away on its own in a couple of days and compared to me like his was nothing really
+
+Doctor: OK uh and have you traveled anywhere
+
+Patient: No
+
+Doctor: And do you smoke cigarettes
+
+Patient: No
+
+Doctor: How about do you smoke marijuana or use any cannabis products
+
+Patient: uh probably smoke marijuana just maybe once or twice a month
+
+Doctor: OK so it sounds like socially
+
+Patient: Yeah
+
+Doctor: Do you use any other recreational drugs
+
+Patient: No nothing else
+
+Doctor: OK and do you drink alcohol
+
+Patient: Yeah i probably have some red wine every other day i would say
+
+Doctor: OK and this is like one glass or two
+
+Patient: Yeah no its just like a normal glass of wine maybe like we probably go through like a bottle between both of us like every two weeks maybe
+
+Doctor: OK and in the family has there been anybody whos had any cancers
+
+Patient: No no no cancer is in the family
+
+Doctor: OK how about any genetic diseases or anything congenital that runs in the family
+
+Patient: Not that i know of
+
+Doctor: OK so that was everything that i wanted to ask about on history and so next well go ahead and get vitals and do a physical exam but did you have anything else that maybe i forgot to ask about or any other symptoms maybe
+
+Patient: No i dont think so do you think it can be covid at all
+
+Doctor: Uhm so covid does present in a variety of non specific ways and so it certainly could be on the differential for causing a sore throat and abdominal pain and as well as a fever however it could be caused by other things as well uhm currently your constellation of symptoms with the enlarged lymph nodes in the neck sore throat it sounds like you may have uhm an inflamed spleen as well which could all be signs and symptoms of something called ebv or or mono and it sounds like you might have had an exposure like your husband or fiance rather may have had this last week with the sore throat all that being said today well do the monospot test to check for that as well as some blood work and we will do a covid swab as well just in case
+
+Patient: OK that sounds good thank you
+
+Doctor: Thank you

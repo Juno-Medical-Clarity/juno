@@ -1,0 +1,34 @@
+# SOAP Notes — Sample 0116
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough, fever, and rapid breathing for 2 days
+- Cough with yellow sputum, no blood
+- Fever >38°C, checked rectally twice
+- Slight wheezing, no whistling sounds
+- Decreased wet diapers, poor appetite
+- Very fussy, inconsolable
+- No bowel problems or vomiting
+- No recent travel, but contact with grandmother who recently traveled to Mexico
+- Previous similar symptoms last month, diagnosed as viral infection, treated with puffers
+- No regular medications or allergies
+- Normal prenatal and birthing history
+- Immunizations up to date
+- Lives with parents, no pets except goldfish
+- No abuse or smoking in the home
+- Family history: aunt with asthma
+
+Past Medical History:
+- Viral infection last month, treated with puffers
+- No other significant PMHx
+
+Objective:
+- Vital signs: stable, on 2L oxygen
+
+Assessment:
+- Likely diagnosis: Infection (specific type not mentioned)
+
+Plan:
+- Investigations: Blood tests, cerebrospinal fluid analysis
+- Treatment: Inhalers, continue oxygen therapy
+- Monitoring: Symptomatic monitoring

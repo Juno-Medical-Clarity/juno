@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0290
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good afternoon, ma'am. Good afternoon, doctor. Is this your assistant, ma'am? Yes, she helps me out all day. Great, do you have your food diary sheets? Yes, can you give them to her, please? Thank you. What are you doing for exercise? Um, right now, I walk around at the mall to get my steps in every day.

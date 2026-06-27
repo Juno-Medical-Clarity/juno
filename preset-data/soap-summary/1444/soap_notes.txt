@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 1444
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Past medical history: Surgery on shoulder thirteen years ago.
+- Symptoms: Lost sense of smell (ongoing since surgery), poor vision in the right eye.
+- Age: 76 years old.
+- No headaches, nasal drainage, weakness, or numbness reported.
+- No recent weight loss.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

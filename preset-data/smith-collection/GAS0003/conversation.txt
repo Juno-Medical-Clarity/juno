@@ -1,0 +1,182 @@
+# Smith Collection Transcript: GAS0003
+# Category: GAS (Gastrointestinal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in here today
+
+Patient: Yeah hi im i i have a pain in my belly it started a couple hours ago
+
+Doctor: OK and where exactly in your belly do you have this pain
+
+Patient: Its mostly up here on the right side
+
+Doctor: The right side ok and can you describe what kind of pain is it is it like a dull pain or sharp pain an aching pain
+
+Patient: Oh i guess its a its an aching pain id say it kind of just um it would initially just come and go but now its just its staying its not going away
+
+Doctor: OK and so its in the right area and does it travel anywhere elsewhere besides on from the right side
+
+Patient: No
+
+Doctor: OK and on a scale of 1 to 10 one being the least amount of pain you felt in your life and 10 being the worst how much would you rate it right now
+
+Patient: Its about to a 10 an 8 maybe
+
+Doctor: An 8 ok and so just to clarify when did it start
+
+Patient: About 8 hours ago
+
+Doctor: 8 hours ago ok and were you doing anything before like did you have a meal or how were you sleeping before it woke you up what was going on before you had the pain
+
+Patient: I was just about to go to sleep i wasnt doing anything in particular at the time
+
+Doctor: OK and has it been getting worse since it first started
+
+Patient: Oh yeah definitely it would come and go but now for the past id say five to six hours its been constant just there all the time
+
+Doctor: OK and have you had any similar pain like this in the past
+
+Patient: Yeah uh i i have the same pain that sort of comes and goes after i eat usually after ive had something like a something fatty something from outdoors maybe like a burger or fries or something i initially thought it was indigestion but i dont i dont know whats going on now
+
+Doctor: OK and does it does anything make it better or worse or anything that youve tried
+
+Patient: Well i guess eating sometimes makes it worse um but i dont i dont think theres anything thats making it better
+
+Doctor: OK have you tried any medications at all
+
+Patient: I tried tylenol but that didnt do anything
+
+Doctor: OK and besides uh the pain that youre having do you have any nausea and vomiting
+
+Patient: I am a little nauseous but no i didnt havent had i havent vomited yet no
+
+Doctor: OK and have you been having any fevers
+
+Patient: I dont think so i havent checked i dont feel feverish
+
+Doctor: Any sweats or like chills
+
+Patient: No  i dont think so
+
+Doctor: OK any changes in your bowel movements like constipation diarrhea
+
+Patient: No
+
+Doctor: OK have you traveled anywhere recently
+
+Patient: No i havent
+
+Doctor: Have you been feeling at all very tired not your usual self fatigued
+
+Patient: Well the pain is making it difficult for me to do things um but i i guess im not uh a little fatigued  maybe
+
+Doctor: OK um have you been having any changes in your urinary patterns
+
+Patient: No
+
+Doctor: No any changes in your skin and you rashes any yellowing of your skin
+
+Patient: Nothing that ive noticed no i dont think so
+
+Doctor: OK any changes in your urine color
+
+Patient: No
+
+Doctor: OK have you noticed blood in your stools at all
+
+Patient: I have not no
+
+Doctor: OK and how about your appetite has this changed at all
+
+Patient: Well i guess because its this thing happens usually happens after i eat i think ive been eating less than usual just because i dont i dont want to you know i dont like the pain
+
+Doctor: Any significant weight loss recently
+
+Patient: I dont think so
+
+Doctor: OK any recent infections recently at all
+
+Patient: No
+
+Doctor: um and otherwise are you do you have any other medical conditions like diabetes high blood pressure or anything else
+
+Patient: I do have diabetes but thats about it i think
+
+Doctor: And you take anything for your diabetes
+
+Patient: I take metformin
+
+Doctor: OK um do you take any other medications at all
+
+Patient: No i dont sorry no
+
+Doctor: No worries do you have any allergies to any medications any environmental allergies
+
+Patient: No no no i dont
+
+Doctor: OK and have you been hospitalized in the past
+
+Patient: No no i havent ever ive been very uh healthy no hospitalizations
+
+Doctor: Any past surgeries
+
+Patient: I got my wisdom teeth removed when i was a teenager
+
+Doctor: OK have you been in contact with anyone who has been ill recently
+
+Patient: No i dont think so
+
+Doctor: OK hmm and in terms of your family history has anyone had any cancers or um any err um iblike crohns disease or ulcerative colitis
+
+Patient: No not that i know of
+
+Doctor: OK and anything that runs in the family at all
+
+Patient: My dad had a heart attack when he was in his 60s but thats it
+
+Doctor: OK and um currently right now do you work
+
+Patient: Oh no im im laid off because of covid
+
+Doctor: OK and currently what is your home situation like
+
+Patient: What do you mean
+
+Doctor: So do you live in an apartment house and do you live with anyone
+
+Patient: I i i live in an apartment i live alone
+
+Doctor: um and in terms of your daily routine do you feel that you get enough exercise do you go outside for walks or runs or anything like that
+
+Patient: I usually go out for a run especially when its a little bit warmer which it now is
+
+Doctor: And do you do you drink alcohol
+
+Patient: uh sometimes
+
+Doctor: How much would you say you drink in an average week
+
+Patient: One to two drinks a day
+
+Doctor: OK and what do you usually drink
+
+Patient: Ill just drink a glass of wine at night just helps me relax
+
+Doctor: OK and do you smoke cigarettes
+
+Patient: I dont no
+
+Doctor: OK and do you use any recreational drugs like marijuana
+
+Patient: No i dont
+
+Doctor: OK alright so um thats all the questions i have and just to clarify does your pain come and go or is it constant
+
+Patient: Yes so initially it would come and go but now so for the first 2 hours it would come and go and when i would have this pain when i was eating it would come and go but over the past six hours its just been constant
+
+Doctor: OK alright

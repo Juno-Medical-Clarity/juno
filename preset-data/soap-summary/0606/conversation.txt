@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0606
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How are you doing with everything? I'm good. It's hard when you are in quarantine. I hope things will get back to normal soon. So, you are here for your breast examination. Yes, it was due for so long. I'm going to touch both of your breasts one by one to check for any lump or kind of mass. Okay? Yeah. Okay, so both looks good. Are you feeling any pain while I'm touching? No, I don't feel any pain. That's good, no masses, no pain and I do not feel anything in your armpit area.

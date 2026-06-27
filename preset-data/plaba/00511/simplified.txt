@@ -1,0 +1,5 @@
+There are several complications associated with pregnancy. Hypertensive (high blood pressure) disorders of pregnancy (HDP) are one of the most important.
+Since the underlying mechanism of HDP is complex, new disease biomarkers (DBMs) are needed. Biomarkers are measurable substances in the body that are indicators of illness.
+However, despite current advanced medicine and the fact that blood pressure measurement has been used extensively, not many DBMs contribute adequately to the diagnosis and treatment of HDP.
+Herein, the authors review studies focusing on peptide fragments in blood as one of the currently proposed DBM candidates. Peptide fragments are portions of proteins.
+Furthermore, the authors describe the basic techniques of peptidomics, the study of peptides in an organism. Additionally, the authors outline the current status and challenges of measuring peptides in blood as DBM for HDP.

@@ -1,0 +1,5 @@
+pmid:        26108239
+question:    63
+adaptation:  adaptation2
+title:       Adjuvant aromatase inhibitor therapy in early breast cancer: what factors lead patients to discontinue treatment?
+sentences:   16

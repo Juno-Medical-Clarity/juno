@@ -1,0 +1,7 @@
+source:      elife
+side:        simple
+readability: 3.85
+split:       test
+
+jargon_spans:
+  [9:11] 'medical-jargon-google-easy' -> 'stem cells'

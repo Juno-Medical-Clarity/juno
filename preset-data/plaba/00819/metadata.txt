@@ -1,0 +1,5 @@
+pmid:        22087198
+question:    66
+adaptation:  adaptation2
+title:       Complications of nephrotic syndrome
+sentences:   10

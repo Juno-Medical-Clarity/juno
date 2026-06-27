@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0584
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient checks blood sugar one to two times a day.
+- Patient acknowledges need to improve logging blood sugar levels.
+- Patient has cholesterol levels that are a bit elevated based on lab work.
+- Patient reports feeling much better since finishing the course of antibiotics for sinusitis.
+- No more headaches and no more stuffy nose.
+
+Objective:
+- Patient has blood sugar log available.
+- Cholesterol levels are reported as elevated from lab work.
+
+Assessment:
+- Elevated cholesterol levels.
+- Sinusitis improved after antibiotic treatment.
+
+Plan:
+- Monitor cholesterol intake.
+- Schedule another set of labs before the next visit, with a recommendation to fast and go in early in the morning before eating.

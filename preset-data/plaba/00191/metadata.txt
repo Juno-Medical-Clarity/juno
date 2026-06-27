@@ -1,0 +1,5 @@
+pmid:        31227226
+question:    15
+adaptation:  adaptation2
+title:       Physiology and Pathophysiology of Potassium Homeostasis: Core Curriculum 2019
+sentences:   7

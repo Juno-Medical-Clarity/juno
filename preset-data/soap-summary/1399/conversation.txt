@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1399
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Any specific medical traits in the family? What do you mean by that? I meant does anyone in your family or extended family have any medical problems that they were treated for? I'm not aware of any such thing in my family.

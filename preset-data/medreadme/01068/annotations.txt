@@ -1,0 +1,7 @@
+source:      elife
+side:        simple
+readability: 3.7
+split:       train
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'motor neurons'

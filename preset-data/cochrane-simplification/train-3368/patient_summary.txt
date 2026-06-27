@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3368  |  gem_id: gem-cochrane-simplification-train-3369  |  doi: 10.1002/14651858.CD005945.pub2
+
+A systematic overview of randomised trials does not provide sufficient evidence to determine whether thyroid hormone treatment of preterm infants with transiently low thyroid hormone levels results in changes in neonatal outcomes or reductions in developmental impairments. Extremely premature infants frequently have transiently low thyroid hormone levels in the first weeks after birth. These low thyroid hormone levels are associated with an increased incidence of complications and death in the newborn period and longer term developmental impairments. Thyroid hormone therapy might prevent these problems. One small trial comparing thyroid hormone treatment to no treatment of infants with transiently low thyroid hormone levels reported no benefit from treatment of these infants. However, this is insufficient evidence to determine if thyroid hormone treatment is effective. Further research is needed.

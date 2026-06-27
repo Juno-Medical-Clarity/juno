@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3067  |  gem_id: gem-cochrane-simplification-train-3068  |  doi: 10.1002/14651858.CD000019.pub3
+
+This review included 15 trials, of a moderate risk of bias, that involved over 4600 women and their babies. In this review, TRH, given with corticosteroids to women at risk of early birth, was not shown to further reduce the breathing difficulties for the babies. Babies born to mothers who had received TRH with corticosteroids, were more likely to require support for breathing than babies born to mothers who received only corticosteroids. Women receiving TRH were more likely to experience adverse side effects, such as nausea, vomiting and flushing than women who only received corticosteroids. Therefore, based on the current available evidence, TRH is not recommended to be given to women at risk of preterm birth for preventing neonatal respiratory disease.

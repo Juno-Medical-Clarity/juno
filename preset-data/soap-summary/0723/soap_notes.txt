@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0723
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No history of cancer diagnosis.
+- No history of rashes.
+- No change in moles.
+- No history of sudden weight loss.
+- Patient feels great with a good energy level.
+
+Objective:
+- (No objective data provided.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

@@ -1,0 +1,8 @@
+source:      plos_computational_biology
+side:        simple
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [19:20] 'medical-jargon-google-easy' -> 'catalysis'
+  [39:42] 'medical-jargon-google-easy' -> 'thioredoxin fold class'

@@ -1,0 +1,37 @@
+# SOAP Notes — Sample 0147
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Back pain for 2 months, worsened over the past 1-2 weeks, now sharp and 8-9/10 in severity
+- Pain started in lower back following a motor vehicle accident 2 months ago
+- Pain is worse with movement and improves with rest
+- Pain radiates down both legs, right worse than left, causing difficulty walking and getting up from a chair
+- Numbness in bilateral groin area for the past week
+- Urinary incontinence for the past week
+- Denies any alleviating factors; has tried OTC ibuprofen and topical analgesics without relief
+- Denies fevers, chills, night sweats, rashes, skin changes, chest pain, SOB, cough, cold symptoms, or fecal incontinence
+- Endorses burning sensation and weakness in bilateral lower extremities (right > left), which feels like it is worsening
+
+PMHx:
+- Hypothyroidism (on Synthroid)
+- Motor vehicle accident 2 months ago with slipped disc found on imaging at that time; no significant injuries requiring hospitalization or surgical intervention
+
+SocHx:
+- Works from home as a teacher
+- Lives at home with 2 children
+- Requires increased assistance from family with ADLs due to pain, weakness, and urinary incontinence
+- Denies smoking, alcohol use, or recreational drug use
+
+Objective:
+- Unable to bend or extend back due to pain
+- No visible redness or swelling of back
+- Tenderness to palpation of lower back
+- Numbness in bilateral groin area
+- Unable to perform straight leg raise test due to pain
+
+Assessment:
+- Suspected cauda equina syndrome secondary to prior back injury from motor vehicle accident
+
+Plan:
+- Urgent MRI of lower back to evaluate for nerve compression, masses, or abscesses
+- Admission for further management based on MRI findings (e.g., antibiotics for infection, surgery for masses)

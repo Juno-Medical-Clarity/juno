@@ -1,0 +1,7 @@
+source:      plos_biology
+side:        complex
+readability: 4.7
+split:       dev
+
+jargon_spans:
+  [10:12] 'medical-jargon-google-easy' -> 'nonsynonymous substitutions'

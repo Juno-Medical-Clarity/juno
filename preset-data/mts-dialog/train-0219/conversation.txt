@@ -1,0 +1,4 @@
+Doctor: So, I am looking at his x ray and it does not show any open fracture or any kind of bone abnormality.
+Guest_family: Okay, I was really worried about my son.
+Doctor: I understand, but like I said, I didn't see any open fracture in his x ray report nor any abnormality.
+Guest_family: Okay.

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1715  |  gem_id: gem-cochrane-simplification-train-1716  |  doi: 10.1002/14651858.CD004790.pub2
+
+When all the identified trials were combined, hepatitis B vaccine alone, hepatitis B immunoglobulin alone, and hepatitis B vaccine plus hepatitis B immunoglobulin reduced perinatal transmission of hepatitis B compared with placebo or no intervention. Hepatitis B vaccine plus hepatitis B immunoglobulin were superior to hepatitis B vaccination alone. Adverse events were rare and mostly non-serious.

@@ -1,0 +1,204 @@
+# Smith Collection Transcript: MSK0010
+# Category: MSK (Musculoskeletal)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: How may i help you
+
+Patient: I just came in here today ive been having a lot of shoulder pain thats just kind of left me not doing any of my activities recently just in my left shoulder
+
+Doctor: OK and when when did this pain start
+
+Patient: It started 5 days ago but it became pretty bad and ive been kind of having like a somewhat of a pain for the last couple weeks but it got really bad just this week
+
+Doctor: OK did you have any trauma to the shoulder like any any injuries or triggers that could have caused the pain
+
+Patient: Uhm i have been just going to the gym more frequently over the last few months and lifting weights and things like that but just this week i wasnt even really able to do that either
+
+Doctor: OK when you were lifting weights like a few days ago like was there an episode where there was an acute onset of the pain where it got worse kind of like right away
+
+Patient: I think it was more progressive but five days ago i do feel that there was like just i was having some pain before that but then i just noticed while working on i i started having more pain but yeah i dont think there was anything like sudden that happened though
+
+Doctor: Oh ok but it yeah it was progressing and then it got acutely worse with the weight lifting it sounds like
+
+Patient: Maybe like i did increase my weight like in the last two weeks so i did feel like a little bit more pain with the increase last week
+
+Doctor: OK i see an in the left shoulder do you feel the pain at the front at the sides or or back
+
+Patient: It hurts particularly like in the front part of the shoulder
+
+Doctor: OK do you feel that its radiating anywhere else
+
+Patient: Just my whole left shoulder nothing else really
+
+Doctor: OK and could you describe the character or the quality of the pain is it sharp or is it a key
+
+Patient: Its more achy
+
+Doctor: OK
+
+Patient: But but certain like some movements so it can get like kind of sharp
+
+Doctor: OK and has there been anything that has made the pain worse
+
+Patient: Uhm if i just if i carry anything with my left arm or if i have to lift anything or place it on my shoulder like it really hurts
+
+Doctor: OK and have you done anything thats made it better
+
+Patient: I just like resting it not carrying anything and trying not to lie on my shoulder
+
+Doctor: OK so youre sleeping on the others on the right side then
+
+Patient: Yeah
+
+Doctor: OK alright how would what would you say the severity of the pain is on a scale of 1 to 10
+
+Patient: Uhm if im not doing it doing anything or not doing much its probably like a two or three but if i try to carry anything it goes up to like probably like a 7
+
+Doctor: OK uh and um do you do any repetitive kind of like overhead activities things like playing basketball or just lifting things like above your head at the gym
+
+Patient: um not recently just just like normal weight exercise maybe with the bands i do some overhead exercises but in terms of sports i i play or i used to play a lot of tennis i did have some issues with the same shoulder which is why i kind of stopped playing tennis my doctor said it i might have overused that shoulder but thats that was like a couple of years back so i thought it must have healed by now
+
+Doctor: OK so previous overuse injury of the left shoulder
+
+Patient: Mmmm
+
+Doctor: OK and uh im have you had any trauma to the shoulder
+
+Patient: um no not that i know of
+
+Doctor: OK have you had any fevers or chills
+
+Patient: No
+
+Doctor: Have you had any night sweats
+
+Patient: No
+
+Doctor: OK have you had any skin rashes or or skin changes
+
+Patient: No
+
+Doctor: OK so even over the area you havent noticed any redness or like soft tissue swelling
+
+Patient: No
+
+Doctor: OK have you had any chest pain
+
+Patient: Nope
+
+Doctor: OK how about any shortness of breath
+
+Patient: No not that ive noticed
+
+Doctor: OK have you had pains and any other joints
+
+Patient: No just my shoulder
+
+Doctor: OK and um have you had any recent infections or or symptoms such as like a runny nose or sore throat or even a cough
+
+Patient: No nothing like that
+
+Doctor: OK and how about any nausea or vomiting
+
+Patient: um nope
+
+Doctor: OK and um how has your sleep been these past couple of nights so you mentioned you havent been able to lay on your left side
+
+Patient: Yeah its been pretty painful like i kind of wake up every time i accidentally go on to my left side
+
+Doctor: OK so youre getting worse thing a pain at night
+
+Patient: Yup
+
+Doctor: OK have you had any weakness do you feel like you have less strength in your arm
+
+Patient: um i do you feel that there might be some less strength in my left arm but its im not really using it much so its hard to tell
+
+Doctor: OK  and how about a range of motion do you feel as though you could lift your left arm up to like scratch your head and back
+
+Patient: It does hurt like when i try to lift my arm up
+
+Doctor: OK so it sounds like a range of motion is decreased
+
+Patient: Mmm
+
+Doctor: OK and have you had any altered sensation of your arms being like numbness or tingling
+
+Patient: No i havent felt any of that
+
+Doctor: OK um and have you had any changes to your bowel habits like constipation or diarrhea
+
+Patient: Nope nothing like that
+
+Doctor: Have you had any abdominal pain
+
+Patient: Nope
+
+Doctor: And have you had any urinary problems
+
+Patient: No
+
+Doctor: OK and in the past have you been diagnosed with any medical conditions
+
+Patient: uh no ive been a pretty healthy actually just just that overuse injury like two years ago
+
+Doctor: OK great and do you have any allergies to medications
+
+Patient: No
+
+Doctor: OK do you take any medications regularly
+
+Patient: Just recently ive been taking a lot more of the advil but thats about it
+
+Doctor: OK i and have you had any hospitalizations or prior surgeries
+
+Patient: No no prior surgeries or hospitalizations
+
+Doctor: OK and could you tell me a little bit about your living situation currently like who youre living with and whereabouts
+
+Patient: Yeah so im living with with my wife in a small condominium in downtown
+
+Doctor: OK and are you working currently
+
+Patient: Yeah im working as a real estate agent
+
+Doctor: OK uh and do you drink alcohol
+
+Patient: Rarely just on some occasions but not regularly
+
+Doctor: No ok how about smoking cigarettes or cannabis
+
+Patient: No ive never smoked
+
+Doctor: Do you use any recreational drugs or have you in the past
+
+Patient: Nope
+
+Doctor: OK um and so so the next part just for the physical exam so do you have pain with shoulder ab duction
+
+Patient: Uhm yes so just to yeah i do have some pain especially from yeah yeah pain throughout ab duction
+
+Doctor: OK is there any like pain thats like parts of that that range of motion that are more painful for you
+
+Patient: Yeah so probably from 60 degrees to 120 degrees is more painful
+
+Doctor: OK and if your arm is outstretched and your thumb pointing down so your arm is internally rotated does that give you pain
+
+Patient: Yeah if yeah not not just like that but if you were to like press down on it it the internal rotation does cause a little bit of pain
+
+Doctor: OK ok so it sounds like a positive jobes test and a positive neers test as well as a painful arc for your shoulder and is there pain to palpation
+
+Patient: uh just to yeah definitely just at the front of the shoulder there is some some pain over with palpation
+
+Doctor: OK that sensation is normal reflexes are normal and strength is slightly reduced as well ok so that was everything that i wanted to ask on history and check on the physical exam as well was there anything else that you wanted to mention today that i maybe forgot
+
+Patient: No i think thats it
+
+Doctor: OK um so based oni know that the symptoms today along with your age and prior history of an overuse injury of the left shoulder it certainly raises concern of having a rotator cuff tear or um a rotator cuff impingement syndrome and where there is inflammation there not necessarily actually a full tear of the muscle thats causing the pain so uh those would be the two most likely things yeah their rotator cuff tear or subacromial impingement syndrome and so we were going to get an ultrasound of the left shoulder to evaluate the structures and possibly some other imaging such as an x ray or mri to determine the extent of the injury in the left shoulder
+
+Patient: OK sounds good thank you

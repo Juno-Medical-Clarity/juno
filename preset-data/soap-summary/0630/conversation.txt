@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0630
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hi, how are you? I am okay. Do you have any bone pain or issues around that? No, I do not. So, they gave you a dose of Tylenol here in the emergency department to treat your pain. Is your pain under control? Yes, with medication I feel it is better, but I want to be removed from the backboard. Okay, let's get you off. Yeah, your C T scans of the abdomen appeared normal. And there was no sign of bleeding. I believe, you just have a contusion and abrasion to abdomen from the seatbelt and likely from the airbag as well. Oh okay. It's good that you can stand and walk through the emergency department without difficulty. I do not see any abrasions or lacerations. Yeah, nothing like that and I can walk.

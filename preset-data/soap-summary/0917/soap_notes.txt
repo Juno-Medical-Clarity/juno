@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0917
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient identifies as female and uses she/her pronouns.
+- Medical history includes multiple bowel surgeries, a hysterectomy, rectocele repair, and an appendectomy.
+- Patient has polymyalgia rheumatica.
+ 
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education provided.

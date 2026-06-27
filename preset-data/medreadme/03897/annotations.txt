@@ -1,0 +1,10 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 5.0
+split:       test
+
+jargon_spans:
+  [1:6] 'medical-name-entity' -> 'T - SPOT . TB'
+  [10:13] 'abbr-medical' -> 'QFT - GIT'
+  [18:19] 'abbr-medical' -> 'TB'
+  [29:30] 'abbr-medical' -> 'TB'

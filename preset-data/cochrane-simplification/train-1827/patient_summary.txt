@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1827  |  gem_id: gem-cochrane-simplification-train-1828  |  doi: 10.1002/14651858.CD008864.pub2
+
+In the present Cochrane systematic review, we set out to assess the benefits and harms of fibrinogen concentrate in patients with bleeding. We searched the databases to August 2013, we identified six randomized trials in cardiac and elective surgical settings that compared fibrinogen concentrate (248 participants) with placebo/other sources or no treatment. Additionally, we found 12 ongoing trials, but we were unable to retrieve any data from them. We could not identify beneficial effects of fibrinogen concentrate on patient survival. In our predefined outcomes, we identified a reduced proportion of patients requiring donor blood transfusion. We could not identify reduced blood loss or any harms or adverse events caused by treatment with fibrinogen concentrate. However, all trials were of low quality and were small, so evidence in support of fibrinogen concentrate in patients with bleeding remains weak.

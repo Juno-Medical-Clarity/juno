@@ -1,0 +1,22 @@
+Doctor: How's the little dude?
+Guest_family: He has fever and bad congestion for the last two days. He has had a fever for one. I try to suck the discharge out through nose.
+Doctor: I am guessing he has some mild problems with breathing while feeding.
+Guest_family: Yes, that is correct. He is drinking milk every couple hours, only for ten minutes instead of twenty minutes.
+Guest_family: He has fever too, so she gave him Tylenol.
+Guest_family2: He is very fussy.
+Doctor: Is he sleeping well?
+Guest_family: Yes, he sleeps. But he is not able to breath well even with albuterol.
+Doctor: How about wet and dirty diapers?
+Guest_family: He is peeing less I think because he used to have eight to ten wet diapers but now it's down to four in a day. And five dirty diapers.
+Doctor: How about any diarrhea?
+Guest_family: No, he doesn't have any diarrhea, they are soft and yellow.
+Doctor: Any rashes or acne?
+Guest_family: No.
+Doctor: How about vomiting?
+Guest_family: No, he did not vomit.
+Doctor: How old is he? And, sorry this is odd, but what ethnicity do you identify as? I need it foe the paperwork.
+Guest_family: Twenty one days old Caucasian male.
+Doctor: Do you notice him getting blue at all? Or does this area sink in when he tried to breathe?
+Guest_family: No, neither.
+Doctor: Is he having any trouble breathing in general?
+Guest_family: No.

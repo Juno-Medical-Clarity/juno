@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0541
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has lost both parents.
+- Patient has two brothers: one is 68 years old, the other is 77 years old.
+- Patient had a brother and sister who were twins and died at birth.
+- Patient has two sons: one is 54 years old, the other is 57 years old.
+- Family medical history includes diabetes and heart attacks.
+
+Objective:
+- (No measurable or observable data mentioned)
+
+Assessment:
+- (No clinician interpretation or diagnoses provided)
+
+Plan:
+- (No specific actions, medications, tests, follow-up, or patient education mentioned)

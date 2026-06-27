@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0328
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you know any familiar diseases in your family? Do you mean like B P, high sugar? Yes. No, no one in my family has anything like that. Great.

@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 1308
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Low sodium levels, anemia, exhaustion
+- Severity: Not explicitly stated, but exhaustion is significant enough to mention as not relieved by caffeine
+- Duration: Symptoms are current and ongoing, specific duration not mentioned
+- Associated symptoms: Tiredness, not relieved by caffeine
+- Relevant medical history: Diuretic use over the past few weeks
+- Concerns: Patient is inquiring about the implications of low sodium and anemia, and whether iron supplementation will help with tiredness.
+
+Objective:
+- Blood work shows low sodium levels
+- Blood work shows anemia
+
+Assessment:
+- Low sodium levels possibly due to diuretic use
+- Anemia
+
+Plan:
+- Start iron supplements
+- Schedule a follow-up evaluation
+- Front desk will provide a lab slip for further testing

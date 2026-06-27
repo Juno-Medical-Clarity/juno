@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0279  |  gem_id: gem-cochrane-simplification-validation-280  |  doi: 10.1002/14651858.CD000343.pub3
+
+We found 14 trials; most were small (involving 1071 infants in total) and were flawed methodologically. Multi-nutrient fortification of breast milk for preterm infants is associated with small increases in rates of weight gain, length gain and head growth during neonatal unit admission. Only very limited data are available for growth and developmental outcomes assessed beyond infancy, and these show no effects of fortification. Trials report no consistent evidence of other potential benefits or harms of fortification, including effects on risk of feeding or bowel problems. Although available trial data show that multi-nutrient fortification increases growth rates of preterm infants during their initial hospital admission, they do not provide consistent evidence on effects on longer-term growth or development. Additional trials are needed to resolve this issue.

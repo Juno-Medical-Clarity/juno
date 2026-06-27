@@ -1,0 +1,7 @@
+source:      nhir_Health_Services_and_Delivery_Research
+side:        complex
+readability: 3.7
+split:       test
+
+jargon_spans:
+  [9:11] 'medical-jargon-google-easy' -> 'acute hospitals'

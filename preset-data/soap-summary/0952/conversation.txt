@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0952
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I will ask you a few questions about your past medical history. Were you ever diagnosed with anything medically related? No. Were you ever diagnosed with diabetes or any heart conditions? No. Did you ever take medications for any long-term disease? No. Did you ever have any surgery? No.

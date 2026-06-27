@@ -1,0 +1,5 @@
+pmid:        33388899
+question:    34
+adaptation:  adaptation1
+title:       Muscle-Bone Crosstalk in Chronic Kidney Disease: The Potential Modulatory Effects of Exercise
+sentences:   9

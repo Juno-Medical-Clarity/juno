@@ -1,0 +1,5 @@
+pmid:        19035067
+question:    38
+adaptation:  adaptation1
+title:       Pressure ulcers: prevention, evaluation, and management
+sentences:   12

@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0618
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No history of high blood pressure.
+- No history of diabetes.
+- No history of heart disease.
+- No history of cancers.
+- Patient expresses gratitude for not having cancer.
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

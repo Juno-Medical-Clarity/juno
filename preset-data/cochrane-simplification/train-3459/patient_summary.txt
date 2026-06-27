@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3459  |  gem_id: gem-cochrane-simplification-train-3460  |  doi: 10.1002/14651858.CD004515.pub2
+
+The aim of this study was to investigate the efficacy and safety of valerian for anxiety disorders. Only one study was identified, involving 36 patients and comparing valerian with placebo and diazepam. This study found no significant differences in effectiveness between valerian and placebo, or between valerian and diazepam, for clinician-rated anxiety symptoms, and that both valerian and diazepam were equally well tolerated by patients. However, additional studies with larger numbers of patients are necessary before drawing conclusions about the effectiveness and safety of valerian as a treatment option for anxiety disorders.

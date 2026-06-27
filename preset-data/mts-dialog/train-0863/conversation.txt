@@ -1,0 +1,6 @@
+Doctor: I'm here to take your social history. So, tell me about yourself.
+Patient: I was taking drugs. I tried all the methods, mainly I was using inhalation and I V drugs.
+Doctor: Right now, you are on methadone, right?
+Patient: Yes. I'm also going to the psychiatry department for my depression and these drug issues.
+Doctor: What is your living status?
+Patient: I live with my roommate.

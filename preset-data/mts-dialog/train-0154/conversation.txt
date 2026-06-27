@@ -1,0 +1,2 @@
+Doctor: Ever reacted poorly to any medications taken in the past?
+Patient: Hm I don't think so. No reactions so far.

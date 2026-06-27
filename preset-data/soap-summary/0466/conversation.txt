@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0466
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Remind me, please, when was your surgery? Well, it's been about two and a half months now. Great, we repaired that slipped capital femoral epiphysis on both sides, we call it S C F E. Thank you for reminding me, I forgot the names of everything.

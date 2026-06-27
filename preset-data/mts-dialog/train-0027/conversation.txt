@@ -1,0 +1,2 @@
+Doctor: Any allergies I should know about?
+Patient: Nope, no allergies for me.

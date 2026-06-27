@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        complex
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [9:14] 'medical-jargon-google-easy' -> 'Advanced Glycation End - products'
+  [15:16] 'abbr-medical' -> 'AGE'

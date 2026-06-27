@@ -1,0 +1,13 @@
+source:      plos_pathogens
+side:        simple
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [0:4] 'medical-jargon-google-easy' -> 'CD8 + T cells'
+  [6:13] 'medical-jargon-google-hard' -> 'non-HLA-B * 27 / B * 57'
+  [16:17] 'medical-jargon-google-easy' -> 'epitopes'
+  [17:18] 'medical-jargon-google-easy' -> 'upregulate'
+  [18:21] 'medical-jargon-google-hard' -> 'TIM - 3'
+  [26:35] 'medical-jargon-google-hard' -> 'HLA - B * 27 / B * 57'
+  [36:41] 'medical-jargon-google-hard' -> 'HLA - B * 35Px'

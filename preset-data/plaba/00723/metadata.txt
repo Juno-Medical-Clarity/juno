@@ -1,0 +1,5 @@
+pmid:        32918059
+question:    57
+adaptation:  adaptation2
+title:       Clinical presentations on a facial pain clinic
+sentences:   12

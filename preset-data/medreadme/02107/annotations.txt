@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [8:10] 'medical-jargon-google-hard' -> 'intS gene'
+  [22:25] 'medical-jargon-google-hard' -> 'TorI RDF protein'

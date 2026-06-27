@@ -1,0 +1,17 @@
+Doctor: Hi, how can I help you, ma'am?
+Patient:  I have no complaints.
+Doctor: Okay but tell me what is going on and we can figure this out.
+Patient: Okay so my right hand and left foot was very swollen and very painful, and that's why I came to emergency room.
+Doctor: Do you have urine bag?
+Patient: Yes, I could not go so they put it in.
+Doctor: Yes, it looks like five hundred M L came out. So possible urinary obstruction. Also, they started you on steroids and colchicine. How are you feeling now?
+Patient:  I am feeling a little better, my pain is improving, and the swelling is getting better.
+Doctor:  Okay that is good. Any fever and chills?
+Patient: No, no fever.
+Doctor: Any problem with urination like pain or frequency or blood in urine?
+Patient: No but I am not able to empty my bladder well, the pee has decreased a lot, I could not urinate.
+Doctor: Okay I will evaluate that. How about any cough, blood in sputum?
+Patient: No nothing like that.
+Doctor:  Any chest pain, or difficulty breathing?
+Patient: No pain, I can breathe well.
+Doctor: Okay that sounds good.

@@ -1,0 +1,57 @@
+# SOAP Notes — Sample 0254
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Cough for 1 month, productive of dark sputum with blood (hemoptysis), at least 1 teaspoon per cough
+- Cough worse in the morning, present daily
+- Preceded by cold with runny nose a few weeks ago
+- Smoker's cough for several years, but significantly worse over the past month
+- Worked in the Philippines for the last 3 years
+- Low-grade fever
+- Night sweats 2 times per week, requiring changing pajamas and sheets
+- Fatigue and decreased energy
+- Right-sided chest pain, stabbing, with deep inspiration
+- Dyspnea on exertion (hiking, climbing to 4th floor apartment)
+- Unintentional 15 pound weight loss over the past few months
+- Exposed to individuals with tuberculosis while working in the Philippines
+
+PMHx:
+- Chronic bronchitis
+- Normal TB skin test a few years ago
+
+Medications:
+- Beta agonist inhaler
+- Inhaled corticosteroid
+- Antimuscarinic inhaler
+
+SocHx:
+- Lives with girlfriend in an apartment
+- Works in housing in the Philippines for the past 7 years
+- Smokes 1-2 packs of cigarettes per day, long-term smoker
+
+FHx:
+- Father died of lung cancer at age 67
+
+Objective:
+- Vitals signs [not provided]
+- Physical examination [not provided]
+- Investigations [not provided]
+
+Assessment & Plan:
+1. Hemoptysis
+- Tuberculosis
+- Chest x-ray, sputum AFB smear and culture, IGRA test
+- Airborne isolation, anti-tuberculosis therapy if positive
+- Pulmonology referral
+
+2. Chronic cough
+- COPD exacerbation
+- Pulmonary function tests
+- Optimize inhaler therapy, consider oral steroids and antibiotics
+- Smoking cessation counseling
+
+3. Unintentional weight loss
+- Malignancy
+- CT chest, CBC, CMP
+- Nutritional supplementation
+- Oncology referral if malignancy identified

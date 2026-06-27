@@ -1,0 +1,30 @@
+Our first goal in this article was to establish a database of literature and other evidence on newborn screening programmes and technology for genetic disorders related to metabolism.
+We also aimed to rigorously review data to evaluate newborn screening for genetic disorders related to metabolism.
+We aimed to summarize the evidence for whether various newborn screening programs for genetic disorders related to metabolism are appropriate and necessary. We aimed to make this summary in relation to the natural history of these diseases, and for both existing and possible programs.
+We further aimed to identify gaps in knowledge and make recommendations for further research that is needed.
+Finally, we aimed to make recommendations for the future development and organisation of newborn screening for genetic disorders related to metabolism in the UK.
+There were three parts to this research.
+We rigorously reviewed research papers on genetic disorders related to metabolism, newborn screening programs, new technologies for screening, and economic factors.
+We decided how we would include or exclude papers, and made a working database of relevant papers.
+All the papers we selected were read by two or three experts and were critically assessed using a standard format.
+Seven criteria for a screening programme, based on the principles formulated by Wilson and Jungner (WHO, 1968), were used to summarise the evidence.
+These were the following:
+The disorder is well defined by signs and symptoms.
+The disease occurs in populations relevant to the UK.
+The disorder is associated with serious health problems or death.
+Effective treatment is available for the disease.
+The disorder can be helped by addressing it in the time before it appears.
+There is an ethical, safe, simple and robust screening test for the disorder.
+Screening for the disorder is cost-effective.
+A questionnaire was sent to all newborn screening laboratories in the UK.
+There are site visits to assess new methodologies for newborn screening.
+We used the traditional way of defining a genetic disorder related to metabolism. This was that the disorder was caused by a single mutated gene that affected a single type of enzyme needed for metabolism.
+We found that phenylketonuria matched all the                                  criteria. This disorder could be used as a gold standard when comparing other disorders, even though the screening process can vary and systems for notifying patients are not good enough.
+Of the many disorders of metabolism of organic and fatty acids, we can only make the case for newborn screening of Glutaric Aciduria type 1 (GA1) and Medium-Chain Acy-CoA Dehydrogenase (MCAD deficiency).
+Advancements in therapy for GA1 can prevent damage to the brain and nerves but more research into the costs and benefits of screening for this disorder is needed.
+MCAD deficiency can be treated simply and cheaply, preventing possible early death and brain handicap.
+Newborn screening for these diseases depends on the introduction of tandem Mass Spectrometry (tandem MS) technology.
+But, this screening could also detect some other disorders at the same time. These other disorders are related to organic acid metabolism and happen to one in 15,000 people.
+Newborn screening for congenital adrenal hyperplasia (CAH) has worked well in other countries and the UK should see similar benefits. This disease occurs in one in 17,000 people.
+A national programme of newborn screening for CAH would be justified, and could be looked at again after an agreed period of time.
+Another disorder, biotinidase deficiency, is rare in the UK (estimated at one in 100,000), but that may be outweighed by how simple the screening process is and the benefits of preventing the disease.

@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1407
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No family history of arthritis reported.
+- No known history of joint replacement in the family.
+
+Objective:
+- [No objective data provided.]
+
+Assessment:
+- [No assessment provided.]
+
+Plan:
+- [No plan provided.]

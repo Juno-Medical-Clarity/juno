@@ -1,0 +1,6 @@
+Doctor: Hi, what brings you here today?
+Patient: I feel this lump on the upper side of my breast.
+Doctor: Both sides?
+Patient: No, only on the left side.
+Doctor: Do you feel it deep inside or on the outer side?
+Patient: Only on the outer side.

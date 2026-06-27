@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 0684
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Stomach pain, nausea (feeling to throw up all of the time).
+- Severity: Not specified.
+- Duration: Not specified.
+- Associated symptoms: None explicitly mentioned.
+- Relevant medical history: None mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Concerns: Patient is seeking relief for stomach pain and nausea.
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No assessment provided in the conversation.)
+
+Plan:
+- Prescription for medication to help with both stomach pain and nausea.
+- Future tests will be conducted to find the cause of the pain.

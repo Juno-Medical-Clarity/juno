@@ -1,0 +1,12 @@
+source:      plos_pathogens
+side:        simple
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'ceramide accumulation'
+  [15:21] 'medical-jargon-google-easy' -> 'MV - induced T cell silencing'
+  [32:34] 'medical-jargon-google-easy' -> 'extracellular ligands'
+  [35:36] 'medical-jargon-google-easy' -> 'pathogens'
+  [39:43] 'medical-jargon-google-easy' -> 'plasma membrane ceramide accumulation'
+  [46:49] 'medical-jargon-google-easy' -> 'T cell activation'

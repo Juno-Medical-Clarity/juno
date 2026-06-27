@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0502
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any medical conditions that run in your family that I should know about, ma'am? Um, yeah, my dad had prostate cancer. What about your mother, or the rest of your family? Um, my mom's brother had Hodgkin's disease, melanoma, and prostate cancer.

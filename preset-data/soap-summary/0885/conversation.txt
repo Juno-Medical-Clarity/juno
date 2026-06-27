@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0885
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Welcome in. Thank you. Let us start with your family medical history. I have a lot of diabetes in the family. Who has diabetes? My father had diabetes. He passed away. I am so sorry. How did he pass away? He had cancer. He actually had breast cancer. That is incredibly rare. Is your mother still with us? Yes, she is. She just had her eighty ninth birthday. Next year we are going to plan a big birthday bash for her. Do you have any siblings? Yes. I have a sister. She has diabetes too. Do you know of any family members with neurological disorders such as M S, epilepsy, or Huntington's? No. I don't know of anything like that.

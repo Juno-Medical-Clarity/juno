@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2607  |  gem_id: gem-cochrane-simplification-train-2608  |  doi: 10.1002/14651858.CD000126.pub4
+
+This review includes 14 randomised trials, involving 4596 operations, comparing the use of local anaesthetic to general anaesthetic for carotid endarterectomy. There was no statistically significant difference between the anaesthetic techniques in the percentage of patients who had a stroke or died within 30 days of surgery. This systematic review provides evidence to suggest that patients and surgeons can choose either anaesthetic technique, depending on the clinical situation and their own preferences.

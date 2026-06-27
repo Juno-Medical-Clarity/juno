@@ -1,0 +1,10 @@
+source:      plos_genetics
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [3:5] 'medical-jargon-google-easy' -> 'breast cancer'
+  [7:8] 'medical-jargon-google-easy' -> 'loci'
+  [9:11] 'medical-jargon-google-easy' -> 'BRCA2 mutation'
+  [21:22] 'abbr-medical' -> 'GWAS'

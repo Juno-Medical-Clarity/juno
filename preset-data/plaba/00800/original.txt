@@ -1,0 +1,12 @@
+Background: SCN1 A is one of the most important epilepsy-related genes, with pathogenic variants leading to a range of phenotypes with varying disease severity.
+Different modifying factors have been hypothesized to influence SCN1A-related phenotypes.
+We investigate the presence of rare and more common variants in epilepsy-related genes as potential modifiers of SCN1A-related disease severity.
+Methods: 87 patients with SCN1A-related epilepsy were investigated.
+Whole-exome sequencing was performed by the Beijing Genomics Institute (BGI).
+Functional variants in 422 genes associated with epilepsy and/or neuronal excitability were investigated.
+Differences in proportions of variants between the epilepsy genes and four control gene sets were calculated, and compared to the proportions of variants in the same genes in the ExAC database.
+Results: Statistically significant excesses of variants in epilepsy genes were observed in the complete cohort and in the combined group of mildly and severely affected patients, particularly for variants with minor allele frequencies of <0.05.
+Patients with extreme phenotypes showed much greater excesses of epilepsy gene variants than patients with intermediate phenotypes.
+Conclusion: Our results indicate that relatively common variants in epilepsy genes, which would not necessarily be classified as pathogenic, may play a large role in modulating SCN1A phenotypes.
+They may modify the phenotypes of both severely and mildly affected patients.
+Our results may be a first step toward meaningful testing of modifier gene variants in regular diagnostics for individual patients, to provide a better estimation of disease severity for newly diagnosed patients.

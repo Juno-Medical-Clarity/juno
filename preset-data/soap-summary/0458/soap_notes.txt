@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0458
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Rash and itching over the right arm, tingling in both legs, pain in the right shoulder blade.
+- Severity: Very itchy rash; causes discomfort and scratching; inability to walk comfortably.
+- Duration: Rash and itching since October 23, 1992; tingling in legs occurred two days later and went away the next day; numbness in legs returned on October 25; ongoing pain in the right shoulder blade.
+- Associated symptoms: Tingling in legs, numbness in legs, pain in the right shoulder blade.
+- Relevant medical history: None mentioned.
+- Family history: None mentioned.
+- Allergies: None mentioned.
+- Other concerns: Difficulty standing and walking; does not feel comfortable standing on her own.
+
+Objective:
+- (No objective data provided in the conversation.)
+
+Assessment:
+- (No assessments or diagnoses provided in the conversation.)
+
+Plan:
+- (No explicit plan mentioned in the conversation.)

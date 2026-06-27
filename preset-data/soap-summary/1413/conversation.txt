@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1413
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have any history of chronic pain? I got into a car accident a long time ago and I have always had neck pain. Okay. Any other pain throughout the body? Sometimes I have back pain. Okay.

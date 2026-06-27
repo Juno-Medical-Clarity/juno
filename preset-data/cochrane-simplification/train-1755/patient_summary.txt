@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1755  |  gem_id: gem-cochrane-simplification-train-1756  |  doi: 10.1002/14651858.CD003930.pub3
+
+This review looked at any restriction of fluids and food in labour compared with women able to eat and drink. The review identified five studies involving 3130 women. Most studies had looked at specific foods being recommended, though one study let women choose what they wished to eat and drink. The review identified no benefits or harms of restricting foods and fluids during labour in women at low risk of needing anaesthesia. There were no studies identified on women at increased risk of needing anaesthesia. None of the studies looked at women's views of restricting fluids and foods during labour. Thus, given these findings, women should be free to eat and drink in labour, or not, as they wish.

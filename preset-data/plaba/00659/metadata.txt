@@ -1,0 +1,5 @@
+pmid:        4061533
+question:    50
+adaptation:  adaptation1
+title:       The association of subclinical infection with preterm labor: the role of C-reactive protein
+sentences:   5

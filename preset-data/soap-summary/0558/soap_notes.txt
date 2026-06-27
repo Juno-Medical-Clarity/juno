@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0558
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is a professor at a college.
+- Teaches history and the Bible.
+- No use of alcohol or tobacco products.
+
+Objective:
+- (No measurable or observable data provided)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided)

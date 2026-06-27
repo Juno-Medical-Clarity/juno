@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0130  |  gem_id: gem-cochrane-simplification-validation-131  |  doi: 10.1002/14651858.CD006001.pub2
+
+Studies have claimed the beneficial role of biliary decompression, which can be performed via endoscopic retrograde cholangiopancreaticography (ERCP) with stent insertion pre-surgically. The review found that pre-surgical biliary stenting via ERCP did not improve the morbidity and mortality in patients with pancreatico-biliary malignancy. Further evidence about its efficiency is needed.

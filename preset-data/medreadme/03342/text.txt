@@ -1,0 +1,1 @@
+Events separated in time are associatively learned in trace conditioning, recruiting more neuronal circuits and molecular mechanisms than in delay conditioning.

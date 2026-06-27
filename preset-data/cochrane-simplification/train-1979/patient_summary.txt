@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1979  |  gem_id: gem-cochrane-simplification-train-1980  |  doi: 10.1002/14651858.CD004721
+
+This review compares whether a single fraction of radiotherapy is better than multifractions of radiotherapy for alleviating the symptoms associated with tumours that have spread to the bone. Eleven randomised trials were identified in the published literature that compared single versus multifraction radiotherapy for bone metastases. Pooled analysis of these trials suggested that single fraction radiotherapy was as effective as multifraction radiotherapy in controlling bone pain. However, there were more bone fractures in patients treated by single fraction radiotherapy, and they received further treatment sessions more often than those receiving multifraction radiotherapy.

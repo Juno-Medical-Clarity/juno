@@ -1,0 +1,9 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        complex
+readability: 4.65
+split:       dev
+
+jargon_spans:
+  [7:9] 'medical-jargon-google-easy' -> 'Alexander technique'
+  [18:22] 'medical-jargon-google-easy' -> 'neuromuscular physiological marker analyses'
+  [25:28] 'medical-jargon-google-easy' -> 'mediators of recovery'

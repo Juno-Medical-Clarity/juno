@@ -1,0 +1,28 @@
+# SOAP Notes — Sample 0255
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Congestion around nose and face for 5 days
+- Headaches started 2 days ago, mainly over cheeks, above nose, and into forehead
+- Runny nose, usually in the morning, with yellowish discharge over the last week
+- Fullness and pressure in ears
+- Felt warm yesterday, unsure if had a fever
+- Feeling a bit tired over the last few days
+- Daughter had a sore throat last week, COVID test was negative
+
+Past Medical History:
+- PMHx: high cholesterol, high blood pressure
+- Medications: thiazide diuretic (blood pressure), atorvastatin (cholesterol)
+- FHx: heart conditions (father and uncle had heart attacks in their fifties), cancer (uncle on mother's side had bladder cancer)
+- SocHx: lives with wife and 2 daughters, works from home as an accounting clerk, smokes 2-3 cigarettes a day (reduced from a pack a day), drinks alcohol on weekends (a couple of beers)
+
+Objective:
+- 
+
+Assessment:
+- Likely diagnosis: acute rhinosinusitis
+
+Plan:
+- Investigations: COVID swab
+- Treatment: conservative management (rest, over-the-counter medications like Tylenol, steam baths, drink plenty of water)
+- Other actions: quarantine until COVID results are out, follow public health guidelines if positive

@@ -1,0 +1,13 @@
+As of January 20, 2021, a total of 24,135,690 cases of Covid-19 (a viral, respiratory disease) and 400,306 associated deaths have been reported in the United States.
+In December 2020, the Food and Drug Administration (FDA) issued an Emergency Use Authorization, where unapproved medicines are allowed to be used, for the Moderna Covid-19 vaccine given as 2 doses, 1 month apart to prevent Covid-19.
+A group of medical and public health experts called the Advisory Committee on Immunization Practices made a temporary recommendation for using the Moderna vaccine.
+As of January 2021, a reported 4,041,396 first doses of the Moderna vaccine have been given in the United States. Additionally, reports of 1,266 (0.03%) unexpected serious side effects (adverse events) after receiving the Moderna vaccine are sent to the Vaccine Adverse Event Reporting System (VAERS), a national vaccine safety tracking system that accepts reports of adverse events after vaccination.
+Among these adverse events, 108 cases are identified for additional review for possible cases of severe allergic reaction, including anaphylaxis - a life-threatening allergic reaction.
+Anaphylaxis is a life-threatening allergic reaction that occurs rarely after vaccination and usually starts within minutes to hours of receiving the vaccine.
+Among these case reports, 10 cases are determined to be anaphylaxis, including 9 in people with a history of allergies or allergic reactions, 5 of whom had a previous history of anaphylaxis.
+The average time from receiving the vaccine to symptoms of anaphylaxis starting is 7.5 minutes, but the time ranges between 1 minute - 45 minutes.
+Among 8 people with follow-up information available, all have recovered or are sent home.
+Among the remaining reports that are not anaphylaxis, 47 are found to be allergic reactions that are not anaphylaxis, and 47 are considered nonallergic adverse events.
+For 4 case or individual's reports, investigators have been unable to obtain enough information to assess the possibility of anaphylaxis.
+This report summarizes the case reports of allergic reactions, including anaphylaxis and allergic reactions that are not anaphylaxis, after receiving the first dose of the Moderna vaccine during December 21, 2020-January 10, 2021, in the United States.
+CDC has issued updated temporary clinical guidance for use of Covid-19 vaccines currently allowed in the United States and temporary guidance for preparing for people who experience anaphylaxis.

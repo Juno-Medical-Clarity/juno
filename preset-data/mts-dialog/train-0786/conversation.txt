@@ -1,0 +1,5 @@
+Doctor: You are not allergic to anything?
+Patient: No, I am not.
+Doctor: Any food or other pollen?
+Patient: No, I am not allergic to anything.
+Doctor: Great!

@@ -1,0 +1,9 @@
+source:      plos_genetics
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [8:9] 'medical-jargon-google-easy' -> 'prophage'
+  [9:10] 'general-medical-multisense' -> 'excises'
+  [14:16] 'medical-jargon-google-easy' -> 'viral cycle'

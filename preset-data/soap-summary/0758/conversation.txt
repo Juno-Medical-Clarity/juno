@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0758
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+When did you retire from your job? About eleven years ago. It's definitely been nice. I'm able to spend more time with my grandkids. Aw, how many grandkids do you have? And do you live alone? I have four grandkids between the ages of two and eleven. I live in the county with my wife and dog. My wife and I've been together for thirty some years now. That's so wonderful to hear.

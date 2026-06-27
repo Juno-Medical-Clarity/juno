@@ -1,0 +1,7 @@
+Doctor: Hey, how are you?
+Patient: I think I am better.
+Doctor: So you do not have any more nausea or vomiting?
+Patient: No I don't.
+Doctor: How about any acidity?
+Patient: I think it's all better.
+Doctor: Great.

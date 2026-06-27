@@ -1,0 +1,9 @@
+source:      cochrane_all
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'sedative'
+  [6:7] 'medical-jargon-google-easy' -> 'phenobarbitone'
+  [13:14] 'medical-jargon-google-easy' -> 'diazepam'

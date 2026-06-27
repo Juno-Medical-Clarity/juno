@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-0915  |  gem_id: gem-cochrane-simplification-train-916  |  doi: 10.1002/14651858.CD006872.pub2
+
+This review identified six studies (271 participants) comparing PGE1 with or without ACEi/ARB versus ACEi/ARB, no treatment or Xueshuantong (a Chinese medicinal herb). The results suggest that PGE1 may have a positive effect on DKD by reducing urinary albumin excretion rate (UAER), microalbuminuria and proteinuria. No serious adverse events or allergic responses were reported. All studies were methodologically poor and there is no strong evidence for recommending PGE1 for preventing the progression of DKD as a routine therapeutic measure. More high-quality research is needed.

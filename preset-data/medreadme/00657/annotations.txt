@@ -1,0 +1,8 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Cutaneous leishmaniasis'
+  [20:22] 'medical-jargon-google-easy' -> 'skin sores'

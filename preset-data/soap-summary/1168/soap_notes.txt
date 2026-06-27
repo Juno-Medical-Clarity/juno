@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 1168
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is single and lives alone at home.
+- Patient does not smoke or drink.
+- No mention of symptoms, severity, duration, associated symptoms, relevant medical history, family history, allergies, or specific concerns.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation, diagnoses, or clinical impressions provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

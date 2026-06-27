@@ -1,0 +1,6 @@
+Doctor: Good morning, sir.
+Patient: Good morning, doctor.
+Doctor: I just need some background information before we begin today.
+Patient: Sure.
+Doctor: Good, have you ever had surgery, sir?
+Patient: Yeah, actually I've had it on my knee, a nose job, and, um, carotid sinus surgery.

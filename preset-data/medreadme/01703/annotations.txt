@@ -1,0 +1,8 @@
+source:      nhir_Public_Health_Research
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [16:18] 'general-complex' -> 'rapid review'
+  [23:24] 'abbr-medical' -> 'FI'

@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0965
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What do you do? I am a registered nurse. That's nice. And do you smoke or drink? No sir. Any history of drug abuse or anything? Absolutely not! Okay, good.

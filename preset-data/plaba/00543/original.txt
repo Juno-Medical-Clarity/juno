@@ -1,0 +1,4 @@
+Eight types of short-chain Lys acylations have recently been identified on histones: propionylation, butyrylation, 2-hydroxyisobutyrylation, succinylation, malonylation, glutarylation, crotonylation and β-hydroxybutyrylation.
+Emerging evidence suggests that these histone modifications affect gene expression and are structurally and functionally different from the widely studied histone Lys acetylation.
+In this Review, we discuss the regulation of non-acetyl histone acylation by enzymatic and metabolic mechanisms, the acylation 'reader' proteins that mediate the effects of different acylations and their physiological functions, which include signal-dependent gene activation, spermatogenesis, tissue injury and metabolic stress.
+We propose a model to explain our present understanding of how differential histone acylation is regulated by the metabolism of the different acyl-CoA forms, which in turn modulates the regulation of gene expression.

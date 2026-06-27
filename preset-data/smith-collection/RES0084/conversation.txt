@@ -1,0 +1,216 @@
+# Smith Collection Transcript: RES0084
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Hi faiha ive been very concerned lately this past week i first just started having this really bad headache and then my body just completely all started hurting after completely rest and then three days ago i just started having a lot of chills and i had a pretty high fever just two days ago of almost like i think it was like 38 or 39 yeah i was just very concerned and i came here today
+
+Doctor: Yeah its good that you came in lets rewind a little bit and get a full history so you said the what started first the fever or the headache
+
+Patient: So the headache started first so that was around four days ago
+
+Doctor: OK
+
+Patient: And three days ago like my body just started aching all over the place and then just two days ago i noticed that i had a fever and ive been getting a fever since then as well like even today i was having chills
+
+Doctor: OK ok and you said your highest recorded temperature was 39
+
+Patient: Like 38 to 39
+
+Doctor: OK so headache started four days ago is it persistent or constant or does it come and go
+
+Patient: It was pretty constant the headache kind of got better yesterday but last few days its just been constant headache pretty much every day
+
+Doctor: OK ok does anything make it better or worse
+
+Patient: Just some rest and uh i tried to take some tylenol to get rid of it took some advil as well it did help a little bit but it just kind of came back after the medication wore out
+
+Doctor: How long does the headache last when you get it
+
+Patient: If i dont take medications it can last honestly the whole day
+
+Doctor: OK yeah um and if you were to describe it is it sharp dull achy
+
+Patient: Its just achy and its kind of all over the front of my forehead
+
+Doctor: OK
+
+Patient: Sometimes its just like a throbbing pain
+
+Doctor: OK and alright and you said its mostly at the front of your head how about near the crown of your head temples
+
+Patient: It can go to the temples sometimes but mostly its my forehead
+
+Doctor: OK ok and severitywise 1 to 10 10 being the worst headache youve ever worst pain youve ever felt how bad is it
+
+Patient: Right now its not that bad probably like a two or three but when it was just a few days ago it was like probably an 8 or 9
+
+Doctor: Yeah and then have you ever experienced something like this before
+
+Patient: No im not usually one to get headaches my wife she gets migraines but like i rarely ever have headaches
+
+Doctor: Yeah ok and then you mentioned the headache is getting a little bit better now
+
+Patient: Yeah the headache has improved a bit the body aches are still there and the fever is still there but like the headaches i feel have gone down
+
+Doctor: OK alright have you had any fainting spells or dizziness
+
+Patient: No nothing like that
+
+Doctor: Any confusion or memory loss
+
+Patient: No
+
+Doctor: Any neck pain
+
+Patient: Uhm not neck pain but like just below my neck like my back upper back hurts as well
+
+Doctor: OK and any weight loss recently
+
+Patient: Uhm no i dont i dont think so
+
+Doctor: Any excessive fatigue
+
+Patient: Yeah i have been feeling pretty tired and just uh i havent even gone to work this whole week just kind of laying in bed honestly with all the pain and the fever and headaches just yeah its exhausting
+
+Doctor: OK any changes in your hair nails or skin like rashes
+
+Patient: No nothing that ive noticed
+
+Doctor: How about changes in your vision or hearing
+
+Patient: No
+
+Doctor: No ok how about a stuffy nose or runny nose
+
+Patient: uh i do feel a bit more stuffy like today but theres no like runny nose or anything like that but i do feel a bit more pressure and stuffiness in my face today
+
+Doctor: OK ok how about changes in smell or taste
+
+Patient: Yeah i think just last night dinner it was just kind of a funky like different taste i couldnt really tell uh everything was kind of a bit bland yeah i think my taste buds are acting all weird too
+
+Doctor: OK um any coughing or shortness of breath
+
+Patient: uh no no i havent been coughing or no shortness of breath at all
+
+Doctor: OK and how about wheezing
+
+Patient: No no wheezing
+
+Doctor: OK any chest pain
+
+Patient: No
+
+Doctor: How about feeling like your hearts racing
+
+Patient: No nothing like that
+
+Doctor: No ok any swelling that youve noticed in your limbs
+
+Patient: No
+
+Doctor: No ok any issues with your bowel movements or urine
+
+Patient: No nothing
+
+Doctor: OK how about nausea or vomiting
+
+Patient: uh no no nausea or vomiting
+
+Doctor: OK and those were all the questions i had about your symptoms are you otherwise healthy or do you have any longstanding medical conditions
+
+Patient: Yeah i have a couple conditions that i see my family doctor for i do have diabetes then i have high cholesterol i also have this thing called fatty liver but thats thats about it and a high blood pressure
+
+Doctor: OK when were you diagnosed with all of these things
+
+Patient: Yeah probably like it all kind of went down in my 40s i did gain a lot of weight at some point during my 40s and thats when all these things started happening
+
+Doctor: OK so you said diabetes high blood pressure fatty liver and sorry what was the other one
+
+Patient: High cholesterol
+
+Doctor: High cholesterol ok are you on medications for all of these things
+
+Patient: Yeah so i am on a statin medication for the cholesterol then im on metformin and then im on a blood pressure medication as well i cant recall the name uh so yeah those are the medications that im on
+
+Doctor: OK and do you take your medications regularly as prescribed
+
+Patient: Yeah i dont miss any doses
+
+Doctor: OK good and are you up to date with all your immunizations
+
+Patient: Yeah i think so
+
+Doctor: OK good do you have any allergies
+
+Patient: No no allergies
+
+Doctor: How about family history of lung conditions or heart conditions
+
+Patient: Yes i have a pretty significant family history for heart conditions my father passed away from a heart attack in his 50s my mom has high blood pressure diabetes is also pretty big in my family as well
+
+Doctor: OK well im sorry to hear that any cancers in the family
+
+Patient: No no cancers
+
+Doctor: OK do you smoke
+
+Patient: I used to when i was in my 30s i quit a pretty long time ago
+
+Doctor: OK how much did you smoke before that
+
+Patient: I probably smoked up until i was 35 so for probably like 10 years from 25 to 35 and probably smoked a pack a day at that time
+
+Doctor: OK yeah and do you drink alcohol
+
+Patient: Ive been told like not to for my liver but i sometimes maybe have the rare red wine maybe once a month
+
+Doctor: Once a month ok any other recreational drugs
+
+Patient: No no recreational drugs
+
+Doctor: OK no recreational drugs and where do you live right now
+
+Patient: I just live with my wife in an apartment in the city and yeah
+
+Doctor: OK any old carpet dust mold anything that is concerning from that standpoint
+
+Patient: Nope
+
+Doctor: No and have you been in contact with anyone whos been sick recently
+
+Patient: Not that i know of
+
+Doctor: Do you still go to work
+
+Patient: I just have like a desk job i have my own room its not like i dont see too many people and like when i do im wearing a mask so i dont think so
+
+Doctor: OK
+
+Patient: I have stopped going to work though like just in case
+
+Doctor: OK good and have you traveled to anywhere recently
+
+Patient: No weve been pretty homebound
+
+Doctor: Pretty homebound ok alright well thats good and those are all the questions that i had for you did you have any questions for myself
+
+Patient: Yeah i dont know what do you think is causing all of this
+
+Doctor: Yeah it sounds like you have some sort of infection so the first thing we need to rule out is covid of course so well do a swab and those swabs should come back to you in about 24 to 48 hours and until then its important that you do isolate and you isolate for 14 days at least and that includes from other people at home and if those swabs come back negative you could possibly have like another infection but if your symptoms worsen like you start getting neurological deficits like weakness or seizures or anything like that you should come back to the er and well get that checked out and so thats where well start for now because your presentation is acute we think its likely infection related
+
+Patient: OK that sounds good to me and should i be staying in my own room or anything like that at home
+
+Doctor: Yeah if you can like its recommended that you try to isolate in your own room for the next 14 days because your symptoms do overlap with that of covid yeah
+
+Patient: OK sounds goodthank you
+
+Doctor: Yeah no worries take care
+
+Patient: Thank you

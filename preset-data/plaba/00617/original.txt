@@ -1,0 +1,14 @@
+Summary: Hypophosphatasia (HPP) is a rare and under-recognised genetic defect in bone mineralisation.
+Patients presenting with fragility fractures may be mistakenly diagnosed as having osteoporosis and prescribed antiresorptive therapy, a treatment which may increase fracture risk.
+Adult-onset HPPhypophosphatasia was identified in a 40-year-old woman who presented with bilateral atypical femoral fractures after 4 years of denosumab therapy.
+A low serum alkaline phosphatase (ALP) and increased serum vitamin B6 level signalled the diagnosis, which was later confirmed by identification of two recessive mutations of the ALPL gene.
+The patient was treated with teriparatide given the unavailability of ALP enzyme-replacement therapy (asfotase alfa).
+Fracture healing occurred, but impaired mobility persisted.
+HPP predisposes to atypical femoral fracture (AFF) during antiresorptive therapy; hence, bisphosphonates and denosumab are contraindicated in this condition.
+Screening patients with fracture or 'osteoporosis' to identify a low ALP level is recommended.
+Learning points: Hypophosphatasia (HPP) is a rare and under-recognised cause of bone fragility produced by impaired matrix mineralisation that can be misdiagnosed as a fragility fracture due to age-related bone loss.
+Antiresorptive therapy is contraindicated in HPP.
+Low serum alkaline phosphatase (ALP) provides a clue to the diagnosis.
+Elevated serum vitamin B6 (an ALP substrate) is indicative of HPP, while identification of a mutation in the ALPL gene is confirmatory.
+Enzyme therapy with recombinant ALP (asfotase alfa) is currently prohibitively costly.
+Treatment with anabolic bone agents such as teriparatide has been reported, but whether normally mineralized bone is formed requires further study.

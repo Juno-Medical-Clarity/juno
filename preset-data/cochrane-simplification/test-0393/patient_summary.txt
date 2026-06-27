@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0393  |  gem_id: gem-cochrane-simplification-test-394  |  doi: 10.1002/14651858.CD001402.pub2
+
+This review includes two trials with 1,124,483 babies (210 with cystic fibrosis). The trials compared newborn screening to clinical diagnosis. We were only able to analyse data from one of the trials. This trial showed that severe malnutrition was less common among screened babies. Screened babies had better chest radiograph scores at diagnosis, but these scores became worse over time. The screened babies become colonised with Pseudomonas aeruginosa earlier. Costs for screening were less than costs for traditional diagnosis.

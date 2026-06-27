@@ -1,0 +1,22 @@
+# SOAP Notes — Sample 1420
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Pain in back and knees
+- Severity: Not explicitly mentioned
+- Duration: Not explicitly mentioned
+- Associated symptoms: None mentioned
+- Relevant medical history: Years of sitting and lifting due to previous occupation as a truck driver
+- Family history: Not mentioned
+- Allergies: Not mentioned
+- Other concerns: None explicitly mentioned
+- Emotions/Concerns: Expresses relief about retirement, mentions that "the years took their toll"
+
+Objective:
+- No objective data provided.
+
+Assessment:
+- No assessment provided.
+
+Plan:
+- No plan provided.

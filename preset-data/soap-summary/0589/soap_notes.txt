@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0589
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Allergies: Lortab (causes really bad hives)
+- Duration of allergy: Only taken once
+
+Objective:
+- (No measurable or observable data provided)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided)
+
+Plan:
+- Note allergy to Lortab in the patient's chart for records.

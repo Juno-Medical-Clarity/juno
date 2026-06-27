@@ -1,0 +1,5 @@
+pmid:        22996108
+question:    72
+adaptation:  adaptation2
+title:       Newborn screening and the obstetrician
+sentences:   10

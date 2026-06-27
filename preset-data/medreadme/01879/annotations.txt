@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [3:5] 'general-complex' -> 'negative pressure'
+  [10:15] 'medical-jargon-google-easy' -> 'vacuum extraction assisted vaginal delivery'

@@ -1,0 +1,15 @@
+Doctor: You okay there?
+Patient: Uh yeah, sorry. I'm just trying to adjust the stretcher.
+Doctor: Want some help?
+Patient: No, thank you. I think I got it.
+Doctor: So how're you doing?
+Patient: Fine, but I have this weird lump in my chest.
+Doctor: When did you first notice it?
+Patient: It's been there for a while. I'd say almost half a year.
+Doctor: Have you seen anyone for it?
+Patient: No, not until now.
+Doctor: Is it causing you pain? And has it changed in size at all?
+Patient: Not really. It's just noticeable when I run my fingers over it.
+Doctor: Have you spotted any swelling or redness to the area? Any drainage?
+Patient: No.
+Doctor: I see. Okay. Let me take a look and then I'll have you walk down the hall to get an Xray so we can see what's going on.

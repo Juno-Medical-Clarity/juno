@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0088  |  gem_id: gem-cochrane-simplification-test-89  |  doi: 10.1002/14651858.CD001153.pub2
+
+This review of three small trials, involving 226 participants, found that there was not enough evidence to decide if mannitol improves survival or prevents disability after stroke. The treatment can cause a number of adverse effects, but no serious adverse events were reported in the trials included in this review. More research is needed.

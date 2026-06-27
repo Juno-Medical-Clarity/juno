@@ -1,0 +1,12 @@
+source:      plos_genetics
+side:        complex
+readability: 5.85
+split:       dev
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-hard' -> 'SNP rs13147758'
+  [9:12] 'medical-jargon-google-easy' -> 'FEV1 / FVC'
+  [18:19] 'medical-name-entity' -> 'Framingham'
+  [20:23] 'medical-jargon-google-easy' -> 'Family Heart Studies'
+  [40:47] 'medical-jargon-google-hard' -> 'chromosome 4 around 145 . 68 megabases'
+  [50:51] 'medical-jargon-google-easy' -> 'COPD'

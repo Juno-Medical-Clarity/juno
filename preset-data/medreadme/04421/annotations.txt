@@ -1,0 +1,8 @@
+source:      plos_genetics
+side:        simple
+readability: 4.3
+split:       test
+
+jargon_spans:
+  [6:9] 'medical-jargon-google-easy' -> 'concomitant hyperglycemic crises'
+  [10:12] 'medical-jargon-google-easy' -> 'vitamin B6'

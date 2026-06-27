@@ -1,0 +1,7 @@
+Introduction: Fetal hemoglobin (HbF) is the major modifier for sickle cell disease (SCD) severity.
+HbF is modulated mainly by three major quantitative trait loci (QTL) on chromosomes 2, 6, and 11.
+Methods: Five SNPs in the three QTLs (HBG2, rs7482144; BCL11A, rs1427407 and rs10189857; and HBS1L-MYB intergenic region, rs28384513 and rs9399137) were investigated by multiplex PCR and reverse hybridization, and their roles in HbF and clinical phenotype variability in Iraqi Kurds with SCD were assessed.
+Results: HBG2 rs7482144 with minor allele frequency (MAF) of 0.133 was the most significant contributor to HbF variability, contributing 18.1%, followed by rs1427407 (MAF of 0.266) and rs9399137 (MAF of 0.137) at 14.3% and 8.8%, respectively.
+The other two SNPs were not significant contributors.
+Furthermore, when the cumulative numbers of minor alleles in the three contributing SNPs were assessed, HbF% and hemoglobin concentration increased with increasing number of minor alleles (P < 0.0005 and 0.001, respectively), while serum lactic dehydrogenase, reticulocytes, leukocytes, transfusion, and pain frequencies decreased (P = 0.003, 0.004, <0.0005, <0.0005, and 0.017, respectively).
+Conclusions: It was demonstrated that SNPs in all three major HbF QTLs contribute significantly to HbF and clinical variability in Iraqi Kurds with SCD and that the cumulative number of minor alleles at contributing SNPs may serve as a better predictor of such variability in this population.

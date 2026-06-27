@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1444  |  gem_id: gem-cochrane-simplification-train-1445  |  doi: 10.1002/14651858.CD000099.pub3
+
+The review of trials found no evidence that growth hormone helps improve birth rates in women who are undergoing ovulation induction prior to in-vitro fertilisation. However there is some evidence of increased pregnancy and birth rates in women who are considered 'poor responders' to in-vitro fertilisation. More research is needed.

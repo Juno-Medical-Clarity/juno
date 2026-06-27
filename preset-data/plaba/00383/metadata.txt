@@ -1,0 +1,5 @@
+pmid:        33113040
+question:    30
+adaptation:  adaptation1
+title:       Recurrence of SARS-CoV-2 viral RNA in recovered COVID-19 patients: a narrative review
+sentences:   8

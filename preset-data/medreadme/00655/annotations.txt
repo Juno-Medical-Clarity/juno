@@ -1,0 +1,14 @@
+source:      plos_neglected_tropical_diseases
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'pancreatitis'
+  [6:7] 'medical-jargon-google-easy' -> 'arthralgias'
+  [8:9] 'medical-jargon-google-easy' -> 'myalgias'
+  [15:16] 'medical-jargon-google-easy' -> 'cytopenias'
+  [19:20] 'medical-jargon-google-hard' -> 'transaminases'
+  [26:27] 'abbr-medical' -> 'SSG'
+  [36:37] 'medical-jargon-google-easy' -> 'erythema'
+  [42:43] 'abbr-medical' -> 'TM'

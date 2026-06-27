@@ -1,0 +1,43 @@
+{
+  "originaldocument": {
+    "contenttype": "application/pdf",
+    "href": "https://api.preview.platform.athenahealth.com/v1/195900/patients/60178/documents/clinicaldocument/204458/originaldocument"
+  },
+  "internalnote": "SOAP note from SIVIA - Generated 2025-11-28 21:20",
+  "documentdescription": "clinical document",
+  "status": "REVIEW",
+  "documentclass": "CLINICALDOCUMENT",
+  "priority": "2",
+  "assignedto": "CRUICKSHANK HEALTH CARE STAFF",
+  "documentroute": "FAX",
+  "lastmodifieddatetime": "2025-11-28T22:45:35-05:00",
+  "departmentid": "1",
+  "clinicaldocumentid": 204458,
+  "createddatetime": "2025-11-28T22:45:31-05:00",
+  "createddate": "11/28/2025",
+  "lastmodifieduser": "API-34755",
+  "lastmodifieddate": "11/28/2025",
+  "pages": [
+    {
+      "contenttype": "image/png",
+      "href": "https://api.preview.platform.athenahealth.com/v1/195900/patients/60178/documents/clinicaldocument/204458/pages/54951",
+      "pageid": "54951",
+      "pageordering": 1
+    },
+    {
+      "contenttype": "image/png",
+      "href": "https://api.preview.platform.athenahealth.com/v1/195900/patients/60178/documents/clinicaldocument/204458/pages/54952",
+      "pageid": "54952",
+      "pageordering": 2
+    },
+    {
+      "contenttype": "image/png",
+      "href": "https://api.preview.platform.athenahealth.com/v1/195900/patients/60178/documents/clinicaldocument/204458/pages/54953",
+      "pageid": "54953",
+      "pageordering": 3
+    }
+  ],
+  "observationdate": "11/28/2025",
+  "createduser": "API-34755",
+  "documentsource": "INTERFACE"
+}

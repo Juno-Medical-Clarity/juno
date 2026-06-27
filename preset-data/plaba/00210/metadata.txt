@@ -1,0 +1,5 @@
+pmid:        1536482
+question:    17
+adaptation:  adaptation1
+title:       Optimal patient position for transport and initial management of toxic ingestions
+sentences:   18

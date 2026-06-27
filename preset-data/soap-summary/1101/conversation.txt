@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1101
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you smoke or drink? Nope, I've never touched a cigarette nor do I plan on ever doing so. Same goes for alcohol.

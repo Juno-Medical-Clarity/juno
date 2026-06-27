@@ -1,0 +1,17 @@
+Our objective is to measure the effectiveness and safety of antiviral antibody treatments and substances from blood for treating the new coronavirus disease 2019 (covid-19), a viral respiratory disease.
+
+
+People with suspected, probable, or confirmed covid-19 were randomized to antiviral antibody therapies, substances from blood, or standard care or an inactive placebo.
+
+
+
+
+
+As of 21 July 2021, we identified 47 trials evaluating a variety of substances from blood and antiviral antibody treatments for treating covid-19.
+Patients with non-severe disease given antiviral antibodies had lower risk of hospitalsation than those given the inactive placebo treatment.
+They did not have an important impact on any other outcome.
+There was no notable difference between antibodies.
+No other treatment had a meaningful effect on any outcome in patients with non-severe covid-19.
+No treatment, including antiviral antibodies, had an important effect on any outcome in patients with severe covid-19, except the antibodies casirivimab-imdevimab. These antibodies may reduce risk of death in those who do not make the antibodies naturally.
+In patients with non-severe covid-19, casirivimab-imdevimab likely reduces hospitalisation. Bamlanivimab-etesevimab, bamlanivimab, and sotrovimab may reduce hospitalisation.
+Substances from blood and other antibody treatments may not give any meaningful aid.

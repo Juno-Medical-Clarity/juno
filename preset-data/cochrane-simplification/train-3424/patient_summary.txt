@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3424  |  gem_id: gem-cochrane-simplification-train-3425  |  doi: 10.1002/14651858.CD005091.pub4
+
+Eleven scientific studies were analysed to derive the best available evidence. The majority of the studies included newborn babies born after 32 weeks' gestation. The main outcomes assessed were drug levels in the blood and kidney functions. The search was updated to 29 April 2016. Safer and potentially more effective levels of the drug were maintained using a 'one dose per day' treatment schedule. No differences in the risk of adverse effects on the kidney function or hearing were noted between two regimens. The quality was evidence was considered as moderate because the sample size was relatively small and two of the studies were scientifically less robust.

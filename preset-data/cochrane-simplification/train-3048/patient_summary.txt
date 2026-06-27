@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3048  |  gem_id: gem-cochrane-simplification-train-3049  |  doi: 10.1002/14651858.CD002001.pub3
+
+The quality of evidence for the outcomes recurrent blood clots and death was moderate. The quality of this evidence was downgraded because of the small number of events reported, leading to imprecision. For the outcome bleeding, the quality of evidence was low because of inconsistency between studies and risk of bias. Continued research into long term treatment of blood clots in the veins with LMWH and VKA is needed. This review found no clear differences in recurrent blood clots and death between LMWH and VKA, and fewer bleeding episodes with LMWH than with VKA. However, when only high-quality studies were compared for bleeding, no clear differences were observed between LMWH and VKA. LMWH may offer an alternative for some patients, for example, those in geographically inaccessible areas, those unable or reluctant to visit the thrombosis service regularly, and those for whom taking VKA may be harmful.

@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0322
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Past surgeries: 
+ - Gallbladder removal in 1992
+ - Appendix removal in 1988
+
+Objective:
+- [No objective data mentioned]
+
+Assessment:
+- [No assessment provided]
+
+Plan:
+- [No plan provided]

@@ -1,0 +1,142 @@
+# Smith Collection Transcript: RES0008
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I heard that youve been having uh some difficulty breathing and youve been coughing can you tell a little tell me a little bit more about that
+
+Patient: Yeah so uh a couple of days ago i just started to not feel so well and ive been having this cough and trouble breathing
+
+Doctor: OK um have you ever had anything like this before
+
+Patient: I do have a uh cough regularly but i mean i i think thats related to maybe smoking its something that was going on for a few years this coughs a little bit different
+
+Doctor: OK in what way is this different
+
+Patient: Its been happening more often throughout the day and and bringing up more more mucus it seems like
+
+Doctor: OK and then you said it start started a couple days ago is that correct
+
+Patient: Yeah i think like monday so uh yeah i guess like 3 days ago then
+
+Doctor: OK and since you noticed it has it gotten worse over those three days
+
+Patient: Yeah i would say uh todays the worst day ive continually felt um sick
+
+Doctor: OK and how frequently are you coughing
+
+Patient: uh i would say maybe a couple of times per hour im im filling up a some tissues with sputum
+
+Doctor: And what does that what does that sputum look like
+
+Patient: Its like a dark greenish yellow colour
+
+Doctor: OK ok um and is there anything that youve changed recently in your life or any kind of things that have provoked your cough that you know of
+
+Patient: Ugh no i cant think of anything ive been kind of sticking to my regular routines
+
+Doctor: OK and is there anything that makes uh makes it worse say any position or anything that you do in your day to day routine you find makes you cough more
+
+Patient: um and not really i cant i cant think of anything
+
+Doctor: OK and have you taken any any medicine or anything to try to help with us
+
+Patient: um no i ive i i do have a little bit of pain so i was i did take some tylenol and some advil over the last few days but thats about it
+
+Doctor: OK ok did you find that they helped at all
+
+Patient: A little bit yeah but it would just kind of take the edge off of the pain for a little bit and it came back
+
+Doctor: And what kind of pain is it that youre experiencing
+
+Patient: um its kind of a a sharp pain over on the like the right side of my chest like maybe belly area
+
+Doctor: OK ok um the right side of your chest and belly area yeah ok so is that pain is it did it start around the same time as the cough
+
+Patient: Yeah i think it it might have started a little bit after
+
+Doctor: OK and is this a pain that youve ever had before
+
+Patient: No i havent had anything like this happen before
+
+Doctor: OK is the pain primarily there when you cough or is it present at all times
+
+Patient: I would say more so when i cough or if im like taking a big breath um yeah kind of after after i have a coughing episode i take a deep breath and i really will feel the pain then
+
+Doctor: OK and and um you said that its a sharp pain
+
+Patient: Yeah yeah more of a sharp pain
+
+Doctor: OK ok and is it any worse when youre doing activity like when youre up and walking around
+
+Patient: No dont notice it with any any activity
+
+Doctor: OK ok um an since uh since this coughing and this this right sided pain that youre talking about began have you noticed any fevers
+
+Patient: I think yeah ive been hot the last few days and i i checked my temperature earlier today and it was like 386 so that was one of the reasons why i wanted to come in actually
+
+Doctor: OK ok well im glad that im really glad that you came in because yeah we really want to get this looked into have you been around anyone thats been sick recently
+
+Patient: No but i i do some volunteer work at one of the homeless shelters at a few times a week so i am around a lot of people
+
+Doctor: OK and have you traveled anywhere recently
+
+Patient: No ive been at home and and doing the volunteer work
+
+Doctor: OK um ok and can you just give me an idea of any do you have any chronic conditions that you see your family doctor for regularly or anything you take medication for
+
+Patient: um yeah i have type 2 diabetes and i i take metformin um i think an sglt 2 inhibitor and then i use insulin for that as well and i have some it has affected my kidneys as well the diabetes i mean
+
+Doctor: OK do you have a history of high blood pressure
+
+Patient: I do yes
+
+Doctor: OK do you take medication for that
+
+Patient: Oh yeah i do it starts with an a i think amlodipine
+
+Doctor: OK ok and do you have any history of heart problems
+
+Patient: No not that i know no i havent really had any chest pain on the left side anyway
+
+Doctor: um so you said that you have had a cough for a really long time a dryer cough then youre having sputum now but is that something youve seen the doctor for
+
+Patient: Oh yeah i think i was called like bronchitis in the past or something something like that one of the doctors my family doctor told me it was because i was a smoker
+
+Doctor: OK so just to make sure i have your list of medications you take amlodipine insulin
+
+Patient: Metformin and an sg lt2 inhibitor you think anything else
+
+Doctor: um and then yeah amlodipine uh yeah i think that that thats everything oh a multivitamin too
+
+Patient: OK cool i just wanted to ask you a few questions questions about your lifestyle in general do you live here in town
+
+Doctor: I do yeah i live with my wife and at a house nearby
+
+Patient: OK cool and you mentioned that youre a smoker
+
+Doctor: Yeah so ive smoked for the last 30 years or so about a pack per day
+
+Patient: OK do you drink alcohol
+
+Doctor: No i dont
+
+Patient: Do you use any other substance
+
+Doctor: I dont no
+
+Patient: OK and do you have any family history of respiratory or heart problems
+
+Doctor: Yeah my dad actually had a heart attack he was in his 70s i think my mom had high blood pressure but other than that no
+
+Patient: OK um and do you have any allergies
+
+Doctor: I think just environmental stuff no medications i am aware of
+
+Patient: OK ok well thank you for sharing all of that with me im going to go over it with the physician that im working with and will kind of come back and let you know about the next steps
+
+Doctor: OK thank you that sounds good

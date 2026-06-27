@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3030  |  gem_id: gem-cochrane-simplification-train-3031  |  doi: 10.1002/14651858.CD008469.pub2
+
+The included studies varied in the characteristics of children (e.g. age, severity of asthma), the education delivered and the way each outcome was reported. This made it difficult to compare the results and provide overall conclusions and we did not pool results for most of the outcomes. There was also diversity in the findings of the individual trials. We were able to combine the results of two studies reporting the average number of emergency department visits per child, which was not different at six months between the home education group and the group receiving the usual care. Only one trial contributed to our other primary outcome, exacerbations (flare-ups) requiring a course of oral corticosteroids. Hospital admissions also demonstrated wide variation between trials with significant changes in some trials in both directions. Quality of life improved in both education and control groups over time.

@@ -1,0 +1,28 @@
+# SOAP Notes — Sample 0097
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Fever, headache, and body aches started this morning (fever: 38.5°C, headache: band-like, bilateral, 5/10 severity)
+- Runny nose (clear discharge) and itchy nose with sneezing since yesterday
+- No cough, sore throat, breathing difficulties, chest pain, itchy eyes, diarrhea, constipation, nausea, vomiting, or abdominal pain
+- Possible exposure to a sick colleague at work last week
+
+Past Medical History:
+- High cholesterol (on statin)
+- High BMI
+- Prediabetes (diet modification)
+- Medications: statin, vitamin D, multivitamin
+- No allergies
+- SocHx: lives with wife, maintaining distance due to illness, no recent travel, non-smoker, no marijuana or recreational drugs, occasional alcohol (cutting down due to prediabetes)
+- FHx: grandfather had lung cancer (smoker), father had a heart attack in his seventies
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Possible COVID-19 or common cold
+
+Plan:
+- COVID-19 test
+- Advise to work from home or take time off until COVID-19 test results are available
+- Follow public health advice based on test results

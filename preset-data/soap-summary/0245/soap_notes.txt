@@ -1,0 +1,33 @@
+# SOAP Notes — Sample 0245
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Coughing up blood (1.5 weeks)
+- Initial normal cough, now mostly blood
+- Recent immigration from India to Canada
+- Possible exposure to tuberculosis in India (large family, close quarters)
+- Symptoms: chills, possible fever, night sweats, fatigue, weight loss (10 lbs in past month)
+- No chest pain, racing heart, headaches, nausea, vomiting, changes in bowel movements, sleep or appetite issues
+- No exposure to fumes, dust, animals, or pets
+- Lives with 2 housemates, works on an assembly line
+- No similar symptoms in housemates or colleagues
+
+Past Medical History:
+- No significant PMHx
+- No allergies
+- No medications (only vitamins)
+- No previous hospitalisations or surgeries
+- No FHx of heart or lung conditions
+- No smoking, alcohol, or recreational drug use
+
+Objective:
+- Weight: 110 lbs
+
+Assessment:
+- Likely diagnosis: Tuberculosis (TB)
+
+Plan:
+- Investigations: Sputum smears and cultures, chest X-ray
+- Treatment: Isolation in hospital, potential antibiotic therapy (4 medications) if TB confirmed
+- Public health notification if TB positive
+- Patient to stay in isolated room during testing and treatment

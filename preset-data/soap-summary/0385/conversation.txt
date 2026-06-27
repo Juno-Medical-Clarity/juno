@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0385
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Do you have diabetes or blood pressure problems? Yes, I have hypertension but no diabetes. Alright.

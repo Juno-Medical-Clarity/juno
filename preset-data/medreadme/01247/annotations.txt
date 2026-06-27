@@ -1,0 +1,11 @@
+source:      nhir_Programme_Grants_for_Applied_Research
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [4:7] 'medical-jargon-google-easy' -> 'renal cell carcinoma'
+  [8:9] 'abbr-medical' -> 'RCC'
+  [11:13] 'medical-jargon-google-easy' -> 'renal transplantation'
+  [14:15] 'abbr-medical' -> 'RT'
+  [37:38] 'medical-jargon-google-easy' -> 'biomarkers'

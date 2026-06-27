@@ -1,0 +1,5 @@
+drug_focus: ultram ; ibuprofen
+question_type: Interaction
+section_title: Q: I have been on tramadol for 3-4 years now, and I am taking 300 to 400 mg per day. Is this harmful for my health?
+source_url: https://www.everydayhealth.com/drugs/tramadol
+sample_id: 0658

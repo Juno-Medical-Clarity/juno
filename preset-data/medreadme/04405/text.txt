@@ -1,0 +1,1 @@
+Inference results for 19 patients show a close match between the SOZ inferred by the proposed algorithm and the SOZ estimated by expert neurologists.

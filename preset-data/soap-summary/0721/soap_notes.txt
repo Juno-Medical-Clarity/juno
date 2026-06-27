@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 0721
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Swelling and pain in the right hand and left foot.
+- Severity: Painful swelling.
+- Duration: Not specified.
+- Associated symptoms: Difficulty urinating (unable to empty bladder well, decreased urine output), no fever, no cough, no blood in sputum, no chest pain, no difficulty breathing.
+- Relevant medical history: Not specified.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Concerns: Patient expressed concern about urinary obstruction and difficulty with urination.
+
+Objective:
+- Urine output: 500 mL noted from urine bag.
+- Treatment initiated: Steroids and colchicine started.
+
+Assessment:
+- Possible urinary obstruction.
+- Improvement in pain and swelling since treatment started.
+
+Plan:
+- Evaluate urinary function further.
+- Continue monitoring symptoms and treatment response.

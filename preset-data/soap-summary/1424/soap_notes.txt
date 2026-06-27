@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1424
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- History of dislocated wrist in childhood.
+- No other illnesses, surgeries, or hospitalizations reported.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnosis provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided.)

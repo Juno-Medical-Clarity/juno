@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0475
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+I had a lung transplant in two thousand and four because of Pulmonary Fibrosis. Okay, how are you now? It was, was that for both lungs? Yes, both sides. You do have irregular heart rhythm, right? Yes, I do.

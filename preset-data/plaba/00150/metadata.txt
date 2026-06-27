@@ -1,0 +1,5 @@
+pmid:        2686220
+question:    12
+adaptation:  adaptation1
+title:       The effect of climatic and meteorologic factors on bronchial hyperreactivity and the course of bronchial asthma diseases and their potential significance in asthma prevention: hypotheses, methodologic approaches and initial results
+sentences:   9

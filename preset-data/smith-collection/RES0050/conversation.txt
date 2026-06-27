@@ -1,0 +1,216 @@
+# Smith Collection Transcript: RES0050
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: I was wondering if you could tell me what brought you in
+
+Patient: Sure um i have been coughing a lot ive been feeling short of breath and i just feel really wheezy so i thought i should come check it out
+
+Doctor: OK when did the cough start
+
+Patient: Ive always had a cough well i guess ive had a cough for the past five years but over the past three days its gotten a lot worse
+
+Doctor: OK did anything happen 3 days ago that has brought the cough on
+
+Patient: Uhm no i was i did groceries i came home and then i started coughing a little bit more and i havent been able to stop since
+
+Doctor: OK is there any particular time of day that the cough is worse like morning night
+
+Patient: Uhm it seems to be worse in the morning
+
+Doctor: OK and are you bringing up any sputum
+
+Patient: I am umm and it looks yellow and sometimes even green
+
+Doctor: OK with your cough prior to three days ago were you bringing up sputum with that
+
+Patient: I guess some but it was clear
+
+Doctor: OK and are you bringing up more sputum now the same or less
+
+Patient: um more sputum and sputum just looks different
+
+Doctor: OK have you noticed any blood
+
+Patient: No blood
+
+Doctor: OK and you mentioned youve been youve had a wheeze when you do you notice that
+
+Patient: Uhm i also i guess i notice that mostly last night yeah
+
+Doctor: OK um and what types of activities have you had shortness of breath
+
+Patient: Uhm i guess walking doing day to day things has made me feel a little bit more short of breath than i used to feel
+
+Doctor: OK and have you been experiencing any other symptoms besides the cough wheeze and shortness of breath
+
+Patient: um i feel a little bit more tired but other than that no
+
+Doctor: OK so a bit more tired how has your sleep been
+
+Patient: My sleep has been um pretty normal its been yeah its been the same i guess its the coughing thats making me tired
+
+Doctor: OK have you had any ear pain or eye pain
+
+Patient: Ear pain or eye pain no
+
+Doctor: Any discharge from either either your ears or eyes
+
+Patient: No
+
+Doctor: OK have you had a runny nose
+
+Patient: No
+
+Doctor: Or felt congested
+
+Patient: No
+
+Doctor: OK have you had a sore throat
+
+Patient: uh no
+
+Doctor: Or any difficulty swallowing
+
+Patient: Uhm no
+
+Doctor: Changes to your sense of smell or taste
+
+Patient: No
+
+Doctor: OK have you had any changes in appetite
+
+Patient: uh no i dont think so
+
+Doctor: Alright and have you had any weight loss over the last several months
+
+Patient: Weight loss no
+
+Doctor: OK how about have you had any fevers or chills
+
+Patient: Fevers or chills ah no no nothing like that
+
+Doctor: Nights how about night sweats
+
+Patient: No
+
+Doctor: Have you had any chest pain
+
+Patient: Ah no no chest well my chest feels i guess sometimes i it feels painful because im coughing so much but nothing more than that
+
+Doctor: OK do you get chest pain when you exert yourself physically
+
+Patient: Uhm no
+
+Doctor: OK so its just after the coughing
+
+Patient: Yeah
+
+Doctor: OK and how would you describe the character of the chest pain some people will say sharp dull achy
+
+Patient: um i would say dull
+
+Doctor: OK and have you had any like heart palpitations feeling like your hearts racing
+
+Patient: No
+
+Doctor: And how about any episodes where you felt like you were going to faint or yeah pass out
+
+Patient: No
+
+Doctor: OK uhm and have you had any swelling in your feet ankles hands
+
+Patient: No nothing like that
+
+Doctor: OK and then have you had any urinary problems
+
+Patient: um no
+
+Doctor: Any bowel problems
+
+Patient: No
+
+Doctor: OK and then any joint pains or muscle aches
+
+Patient: No nothing like that
+
+Doctor: And how about any rashes anywhere
+
+Patient: No
+
+Doctor: OK and then sorry have you had any nausea or vomiting
+
+Patient: uh no
+
+Doctor: OK in terms of your past medical history have you been diagnosed with any conditions before
+
+Patient: Uhm i have high blood pressure and diabetes
+
+Doctor: I see are you on any medications for those
+
+Patient: um for the blood pressure the high blood pressure im on a beta blocker and then for my diabetes im on metformin
+
+Doctor: OK uh do you are you taking any other medications
+
+Patient: um just some calcium and vitamin d
+
+Doctor: Any surgeries in the past
+
+Patient: Nope
+
+Doctor: Any allergies to medications
+
+Patient: No
+
+Doctor: OK are your immunizations up to date
+
+Patient: I believe so but i recently learned that i should get something called the pneumococcal vaccine i havent gotten that yet
+
+Doctor: Yeah youre youre right so for um in canada or anybody or in ontario at least anybody whos older than 65 its recommended to get this vaccine to protect against certain types of bacterial infections type which can cause pneumonia so it would be good something that you can set up with your family doctor
+
+Patient: OK
+
+Doctor: Yeah and so are you so do you smoke cigarettes
+
+Patient: I used to
+
+Doctor: OK and how much do you smoke or how much did you use to smoke
+
+Patient: um i smoked a pack a day and i smoked for 45 years but i stopped two years ago
+
+Doctor: OK thats great that you were able to stop do you drink alcohol
+
+Patient: Uhm occasionally like once every two weeks
+
+Doctor: OK and any triggers that you can think of you were exposed to either at work or home like chemicals or things that you were exposed to that you had to breathe that you breathe in
+
+Patient: No nothing like that
+
+Doctor: OK have you traveled anywhere
+
+Patient: No
+
+Doctor: Alright and have you been near anybody whos been sick or has similar symptoms
+
+Patient: Uhm no
+
+Doctor: Alright and anybody in the family have a heart or lung condition
+
+Patient: um no
+
+Doctor: Any cancers in the family
+
+Patient: um there was a liver cancer
+
+Doctor: OK and i think that ok and that was all i wanted to ask on history was there anything else that you wanted to tell me today
+
+Patient: um no just um what do you think the problem is ive never felt this bad with my shortness of breath before
+
+Doctor: Yeah certainly so umm it it sounds like it could be maybe a viral infection that i brought on this cough and worsen the sputum this could be a bacterial infection it could be a copexacerbation and also one of the other things that we would have to consider right now is covid as well and so we will do a pcr nasal swab for covid and a chest xxray and some other investigations as well and uhm we will try to get to the bottom of whats causing your your shortness of breath
+
+Patient: OK that sounds good thank you

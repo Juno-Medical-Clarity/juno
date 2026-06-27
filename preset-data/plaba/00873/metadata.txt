@@ -1,0 +1,5 @@
+pmid:        18328977
+question:    71
+adaptation:  adaptation3
+title:       Achondroplasia
+sentences:   7

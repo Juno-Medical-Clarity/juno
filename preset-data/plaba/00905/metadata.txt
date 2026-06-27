@@ -1,0 +1,5 @@
+pmid:        20392032
+question:    74
+adaptation:  adaptation3
+title:       Management of recurrent laryngeal sensory neuropathic symptoms
+sentences:   10

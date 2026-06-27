@@ -1,0 +1,5 @@
+pmid:        34547524
+question:    47
+adaptation:  adaptation1
+title:       Hypophosphatasia: Vitamin B 6 status of affected children and adults
+sentences:   15

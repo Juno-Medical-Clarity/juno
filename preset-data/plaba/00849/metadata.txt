@@ -1,0 +1,5 @@
+pmid:        11707664
+question:    69
+adaptation:  adaptation3
+title:       What interventions may reduce postpartum depression
+sentences:   10

@@ -1,0 +1,30 @@
+# SOAP Notes — Sample 1456
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient is 65 years old.
+- Patient is recovering from a left upper lobectomy for stage I A non-small cell lung cancer.
+- Reports mild chest pain when swallowing food.
+- Enlarged left calf compared to the right, present for several months.
+- History of DVT in 1975 and 1985.
+- No abnormal weight loss; eating normally.
+- No cold or flu symptoms; no fever or chills.
+- No new aches or pains; muscles feel good.
+- No cough or hemoptysis.
+- No shortness of breath at rest or difficulty breathing with exercise.
+
+Objective:
+- Pelvic CT shows an enlarging simple cyst of the left kidney.
+- Barium swallow shows a small hiatal hernia with minimal reflux.
+- X-rays from November 23, 2009, are normal.
+- Left calf is larger than the right; no tenderness noted.
+
+Assessment:
+- Mild chest pain likely due to tertiary contractions with delayed emptying.
+- Enlarging simple cyst of the left kidney.
+- History of DVT.
+
+Plan:
+- Further evaluation and management of the left kidney cyst.
+- Monitor chest pain and consider management options for hiatal hernia and reflux.
+- Follow up on the condition of the left calf and evaluate for potential DVT recurrence.

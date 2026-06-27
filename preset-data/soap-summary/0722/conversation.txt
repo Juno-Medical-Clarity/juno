@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0722
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Does low blood pressure run in your family? No. As far as I know, no one else has it. Okay.

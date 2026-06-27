@@ -1,0 +1,9 @@
+source:      plos_pathogens
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'receptors'
+  [14:15] 'abbr-medical' -> 'MV'
+  [16:17] 'medical-jargon-google-easy' -> 'hematopoetic'

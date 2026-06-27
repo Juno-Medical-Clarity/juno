@@ -1,0 +1,21 @@
+# SOAP Notes — Sample 0525
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Cough
+- Severity: Not specified
+- Duration: Past three weeks
+- Associated symptoms: None reported (no shortness of breath, chest pain, fevers, or chills)
+- Relevant medical history: None mentioned
+- Family history: None mentioned
+- Allergies: None mentioned
+- Other concerns: None mentioned
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education mentioned.

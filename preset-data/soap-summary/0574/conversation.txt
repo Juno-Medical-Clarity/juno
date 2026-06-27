@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0574
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+How about any drugs, alcohol, or tobacco? No, no, and no.

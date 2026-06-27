@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 1358
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Initial:
+
+Subjective:
+- Symptoms: Back pain, joint pain, increased fatigue.
+- Severity: Not specified.
+- Duration: Symptoms noted yesterday.
+- Associated symptoms: No cough, no mucus production, no fever or chills.
+- Relevant medical history: Interstitial disease secondary to lupus pneumonitis.
+- Family history: Not mentioned.
+- Allergies: Not mentioned.
+- Concerns: Patient is feeling more tired than usual but does not have breathing issues during daily activities.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnoses provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

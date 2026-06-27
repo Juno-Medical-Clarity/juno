@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2845  |  gem_id: gem-cochrane-simplification-train-2846  |  doi: 10.1002/14651858.CD004885.pub2
+
+Five RCTs involving 604 people were included in this review. Analyses of these studies showed that the incidence of moderate forms of GvHD can be reduced by prophylactic corticosteroid regimens. However, there is no evidence that the incidence of life-threatening forms or patient mortality can be reduced. Effects on quality of life could not be estimated because this information was not systematically collected during these studies. Further studies are needed to determine if the timing of steroid administration influences the outcomes of GvHD.

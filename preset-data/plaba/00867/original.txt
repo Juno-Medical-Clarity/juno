@@ -1,0 +1,15 @@
+There is little evidence regarding the association between serum vitamin B6 concentration and subsequent mortality.
+We aimed to evaluate the association of serum vitamin B6 concentration with all-cause, cardiovascular disease (CVD), and cancer mortality in the general population using data from the National Health and Nutrition Examination Survey (NHANES).
+Our study examined 12,190 adults participating in NHANES from 2005 to 2010 in the United States.
+The mortality status was linked to National Death Index (NDI) records up to 31 December 2015.
+Pyridoxal 5'-phosphate (PLP) is the biologically active form of vitamin B6.
+Vitamin B6 status was defined as deficient (PLP < 20 nmol/L), insufficient (PLP â‰¥ 20.0 and <30.0 nmol/L), and sufficient (PLP â‰¥ 30.0 nmol/L).
+We established Cox proportional-hazards models to estimate the associations of categorized vitamin B6 concentration and log-transformed PLP concentration with all-cause and cause-specific mortality by calculating hazard ratios (HRs) and 95% confidence intervals (95%CIs).
+In our study, serum vitamin B6 was sufficient in 70.6% of participants, while 12.8% of the subjects were deficient in vitamin B6.
+During follow-up, a total of 1244 deaths were recorded, including 294 cancer deaths and 235 CVD deaths.
+After multivariate adjustment in Cox regression, participants with higher serum vitamin B6 had a 15% (HR = 0.85, 95% CI = 0.77, 0.93) reduced risk of all-cause mortality and a 19% (HR = 0.81, 95%CI = 0.68, 0.98) reduced risk for CVD mortality for each unit increment in natural log-transformed PLP.
+A higher log-transformed PLP was not significantly associated with a lower risk for cancer mortality.
+Compared with sufficient vitamin B6, deficient (HR = 1.37, 95% CI = 1.17, 1.60) and insufficient (HR = 1.19, 95%CI = 1.02, 1.38) vitamin B6 level were significantly associated with a higher risk for all-cause mortality.
+There was no significant association for cause-specific mortality.
+Participants with higher levels of vitamin B6 had a lower risk for all-cause mortality.
+These findings suggest that maintaining a sufficient level of serum vitamin B6 may lower the all-cause mortality risk in the general population.

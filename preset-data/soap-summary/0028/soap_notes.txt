@@ -1,0 +1,35 @@
+# SOAP Notes — Sample 0028
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Fever, cough, and runny nose
+- Fever started 2 days ago (38.5°C)
+- Cough started 4 days ago (dry, no blood or mucus)
+- Runny nose started 4 days ago (watery and clear discharge)
+- Mild headache (started this morning)
+- Fatigue (last 2-3 days)
+- No muscle aches, changes in smell or taste, chest pain, breathing difficulties, sore throat, red eyes, watery eyes, sneezing, abdominal pain, or diarrhoea
+- No previous episodes of similar symptoms
+- Impact on daily activities: Missed school last couple of days due to fatigue and not feeling well
+
+Past Medical History:
+- No known medical conditions
+- No surgeries or hospitalisations
+- Allergy to penicillin (rash when younger)
+- SocHx: Lives with mother in a townhouse in the city, attends school, mother works from home, no pets
+- No recent travel outside the province
+- No drug or alcohol use
+- Not sexually active
+
+Objective:
+- Vitals not provided
+- Physical examination findings not provided
+- Investigations with results not provided
+
+Assessment:
+- Likely diagnosis: Viral infection (potentially COVID-19, common cold, or flu)
+
+Plan:
+- Investigations: COVID-19 swab (results in 24-48 hours)
+- Treatment: Rest, hydration, Tylenol or Advil for symptom relief
+- Other actions: Self-isolate, avoid school and contact with others, follow public health guidance based on COVID-19 test results, return or call if symptoms persist or worsen

@@ -1,0 +1,46 @@
+# SOAP Notes — Sample 0052
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Diarrhoea for 3-4 days
+ - Frequency: every hour
+ - Consistency: loose stools
+ - Colour: brown
+ - No blood noticed
+- Abdominal cramps since yesterday
+ - Intermittent pain
+- Nausea and vomiting
+ - Vomited twice yesterday
+ - Nausea is on and off
+- No changes in urine or discomfort when urinating
+- No fever or chills reported
+- Feeling very tired
+- No rashes or skin changes
+- No significant weight changes noticed
+- Recent meal at a new Chinese restaurant 5 days ago (rice with chicken Manchurian)
+- No recent travel
+- No contact with sick individuals
+
+Past Medical History:
+- PMHx: asthma
+- Medications: puffers for asthma
+- No known allergies
+- No history of digestive system problems
+- No chronic conditions other than asthma
+- Surgical history: wisdom teeth removal
+- FHx: brother had appendicitis, mother had a hysterectomy
+- SocHx: student, lives with 2 roommates
+ - Alcohol: occasional, 1-2 drinks on weekends
+ - Non-smoker
+ - No substance use
+ - Diet: oatmeal for breakfast, quick lunch (e.g., salad), often eats out for dinner (e.g., burger and fries)
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- No diagnosis or differential diagnosis provided
+
+Plan:
+- No investigations or treatment plans provided
+- No other actions such as counselling or referrals provided

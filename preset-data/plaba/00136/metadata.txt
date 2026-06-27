@@ -1,0 +1,5 @@
+pmid:        32073132
+question:    11
+adaptation:  adaptation1
+title:       Pyruvate dehydrogenase deficiency: morphological and metabolic effects, creation of animal model to search for curative treatment
+sentences:   13

@@ -1,0 +1,17 @@
+# SOAP Notes — Sample 0951
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Major medical conditions: high blood pressure, hypothyroidism, arthritis, GERD.
+- Mental health: anxiety disorder.
+- Neurological history: had migraines about thirty years ago.
+- History of Morton's neuromas: has one on both feet.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- (No plan provided.)

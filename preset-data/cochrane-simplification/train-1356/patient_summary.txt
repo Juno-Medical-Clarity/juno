@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1356  |  gem_id: gem-cochrane-simplification-train-1357  |  doi: 10.1002/14651858.CD002763.pub2
+
+This review update assessed evidence from 2641 participants in 20 randomised, double blind, placebo-controlled clinical trials of oxycodone, with or without paracetamol, in adults with moderate to severe acute postoperative pain. Oral oxycodone 10 mg plus paracetamol 650 mg provided effective analgesia. About half of those treated experienced at least half pain relief over 4 to 6 hours, and the effects lasting up to 10 hours. Higher doses gave more effect. Associated adverse events (predominantly nausea, vomiting, dizziness and somnolence) were more frequent with oxycodone or oxycodone plus paracetamol than with placebo, but studies of this type are of limited use for studying adverse effects. Limited information about oxycodone on its own suggests that it provided analgesia at doses greater than 5 mg, and that addition of paracetamol made it more effective.

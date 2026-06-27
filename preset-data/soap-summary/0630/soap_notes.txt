@@ -1,0 +1,23 @@
+# SOAP Notes — Sample 0630
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- No bone pain or issues.
+- Pain is better with medication (Tylenol).
+- Patient expresses a desire to be removed from the backboard.
+- No reported abrasions or lacerations.
+- Patient can stand and walk without difficulty.
+
+Objective:
+- CT scans of the abdomen appeared normal.
+- No sign of bleeding.
+- Contusion and abrasion to the abdomen from the seatbelt and likely from the airbag.
+- No observable abrasions or lacerations noted during examination.
+
+Assessment:
+- Normal CT scans of the abdomen.
+- Diagnosis of contusion and abrasion to the abdomen.
+
+Plan:
+- Remove from the backboard.
+- Continue pain management as needed.

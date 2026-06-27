@@ -1,0 +1,22 @@
+Doctor: Welcome back to Sample Clinic, Mister Sample.
+Patient: Good afternoon, doctor.
+Doctor: What seems to be the problem today, sir?
+Patient: I'm having a lot of pain in my right heel.
+Doctor: How long have you had this pain?
+Patient: Um, it's been about two weeks now.
+Doctor: When is the pain the worst?
+Patient: Honestly, it starts with the first step first thing in the morning.
+Doctor: Does it get worse throughout the day?
+Patient: Yes, it gets worse all day with activities.
+Doctor: What treatments have you had for this?
+Patient: Well, nothing to date.
+Doctor: Where is your heel pain?
+Patient: It's on the right heel, then it's on the inside bottom part of the heel and into the inside of the heel.
+Doctor: Do you have any change in your medical history since your last visit?
+Patient: No, it's the same old same old.
+Doctor: Do you have any flu like symptoms?
+Patient: Like fever or chills?
+Doctor: That, or vomiting or headaches.
+Patient: Oh, no I don't have anything like that.
+Doctor: What about chest pain or shortness of breath?
+Patient: Thankfully, no nothing like that.

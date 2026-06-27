@@ -1,0 +1,24 @@
+# SOAP Notes — Sample 0042
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Feeling ill over the past 2 days
+- Symptoms: achy, dry cough, fever (since last night), chills (last night), wheezing, loss of taste (since yesterday), tiredness
+- No phlegm, blood, headaches, chest pain, red/itchy eyes, runny nose, sore throat, nausea, vomiting, abdominal pain, diarrhoea, urinary problems (except frequent urination due to large prostate), skin changes, dizziness, or palpitations
+- PMHx: BPH
+- Medications: Flomax (tamsulosin)
+- No surgeries or hospitalisations
+- No allergies
+- SocHx: Lives with wife in an apartment, wife has no symptoms, no sick contacts, no recent travel, ex-smoker (quit 10 years ago, smoked 2-3 cigarettes/day for 20 years), occasional alcohol (1-2 glasses once or twice a month), no cannabis or recreational drug use
+- FHx: Hypertrophic cardiomyopathy (brother died at 15, family members had early heart attacks), regular cardiologist check-ups
+
+Objective:
+- No vitals or physical examination findings provided
+
+Assessment:
+- Possible COVID-19 (symptoms overlap with COVID-19)
+
+Plan:
+- COVID-19 swab test
+- Self-isolate for 14 days, including from wife
+- Await test results

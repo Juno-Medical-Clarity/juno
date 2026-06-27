@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0629
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Initial:
+
+Subjective:
+- Patient does not smoke.
+- Patient does not consume alcohol.
+- Patient does not use any kind of drugs.
+
+Objective:
+- (No measurable or observable data provided.)
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided.)
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education provided.)

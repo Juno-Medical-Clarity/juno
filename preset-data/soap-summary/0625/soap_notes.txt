@@ -1,0 +1,18 @@
+# SOAP Notes — Sample 0625
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient reports feeling sick to her stomach.
+- Complains of belly pain.
+- Experienced vomiting (exact number of times unknown).
+- Patient's mother is 85 years old and hard of hearing.
+- Patient's mother reported vomiting and diarrhea prior to EMS arrival.
+
+Objective:
+- No measurable or observable data provided.
+
+Assessment:
+- No clinician's interpretation or diagnosis provided.
+
+Plan:
+- No actions, medications, tests, follow-up, or patient education explicitly mentioned.

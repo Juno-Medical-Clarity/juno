@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2519  |  gem_id: gem-cochrane-simplification-train-2520  |  doi: 10.1002/14651858.CD003312
+
+The review of trials of selenium supplementation for preterm babies found that it reduces sepsis (blood infection). It has not been shown to reduce other complications or increase survival. No adverse effects were reported. Higher than usual levels of selenium supplementation may be beneficial, but more research is needed as most of the evidence comes from a country where selenium levels were unusually low.

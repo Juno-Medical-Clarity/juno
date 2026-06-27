@@ -1,0 +1,142 @@
+# Smith Collection Transcript: CAR0005
+# Category: CAR (Cardiac)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: It sounds like that youre experiencing some chest pain
+
+Patient: Yeah so this chest pain has just been coming on for the last couple of weeks now
+
+Doctor: OK uhm so 2 weeks and can you tell me kind of where youre feeling that pain
+
+Patient: um yeah im im just feeling this chest discomfort sort of over on the left side
+
+Doctor: The left side ok does does it stay just in one spot or does it kind of spread anywhere else
+
+Patient: No i dont really feel it anywhere else yeah i just feel it in that one spot on the left side
+
+Doctor: OK does it feel dull and achy or does it feel more sharp
+
+Patient: It feels pretty sharp
+
+Doctor: OK and is it constant like on all the time or do you feel like it kind of comes and goes
+
+Patient: It comes and goes i would say i it might last for um 2030 minutes at a time and then it goes away
+
+Doctor: OK and over the last two weeks since you said it started has it gotten any worse
+
+Patient: uh no its been about the same
+
+Doctor: About the same ok and has it gotten more frequent these like 20 to 30 minute episodes
+
+Patient: No its happened about two or three times during the 2 weeks
+
+Doctor: And if you were to rate it on a scale of zero to 10 zero being no pain and 10 being like the worst pain youve ever felt where would it fall
+
+Patient: I would say a 4 out of 10
+
+Doctor: OK uh can you think of anything that that youve done differently recently that could have brought it on or is there any kind of common factor between the times that you had the pain
+
+Patient: um  i dont know ive separated from my husband 2 two years ago which has been really stressful but other than that i mean i cant really think of any changes to my health or anything like that recently
+
+Doctor: OK but do you feel like you have been more stressed out in general
+
+Patient: uh yeah the last couple of years have been a lot more stressful because of those issues in my personal life
+
+Doctor: OK im sorry to hear that but im glad that youre coming in and we can hopefully get to the bottom of this not that i think thats necessarily the source of your pain and we definitely want to look into everything but it is really helpful to know that so when youve had these episodes have you taken anything to help with the pain or done anything thats that you felt it made it go away
+
+Patient: Uhm ive tried some advil some tylenol and actually some tums as well and it hasnt really helped
+
+Doctor: OK do you think its worse when youre moving around if youre if youre kind of doing more exercise or is it kind of just the same no matter what youre doing when you get the episodes
+
+Patient: Oh it actually i i feel like it happens most of the time when im either at work or or driving
+
+Doctor: OK ok and before this two week period have you ever had anything like this before
+
+Patient: No i havent had anything like this happen before
+
+Doctor: Do you have any chronic conditions that you see your family doctor for
+
+Patient: No previously healthy
+
+Doctor: And just jumping back to these pain episodes when you have them do you experience anything else do you get any nausea or vomiting
+
+Patient: No
+
+Doctor: OK do you get any do you have any difficulty breathing during these times
+
+Patient: No i havent
+
+Doctor: OK and have you noticed any fevers
+
+Patient: uh no no fevers
+
+Doctor: OK have you been in contact with anyone thats been sick recently
+
+Patient: Uhm no i havent
+
+Doctor: And have you traveled anywhere outside of canada
+
+Patient: No ive been home
+
+Doctor: OK so you have you said you have been previously healthy nothing that youve been seeing your family doctor for on a regular basis do you take any medications
+
+Patient: Uhm i do not no medications just the tylenol and advil i tried for the pain
+
+Doctor: OK do you have any allergies
+
+Patient: No allergies
+
+Doctor: And is there any history of heart problems in your family
+
+Patient: Yeah my father had a heart attack when he was 60 just last year and its actually one of the reasons what concerns me about the chest pain that i thought i was having
+
+Doctor: For sure it always feels very concerning when when you have these these symptoms and that and you know people in your life that have had issues like similar issues in the past i dont know that this is related to that i i personally dont think so at this point but were definitely going to do everything to look into it and and rule out something that would be scary like that im going to ask you few more questions about your lifestyle in general do you smoke cigarettes
+
+Patient: Yeah i smoke about half a pack to a pack per day ive been trying to quit and i was smoking more one pack per day but so it is down a little bit but its still something im trying to work on
+
+Doctor: Congratulations thats a really tough thing to do so good for you thats thats really exciting step in the right direction right do you drink alcohol
+
+Patient: um i do but uh ill have maybe one or two glasses of wine on the weekend
+
+Doctor: Do you use any other substances
+
+Patient: uh no
+
+Doctor: I know that you said you dont see your family doctor for anything regularly but i just want to check a couple of specific things like have you ever been told you have high blood pressure
+
+Patient: No ive never been told ive ive had high blood pressure
+
+Doctor: And have you ever been told you have like high cholesterol
+
+Patient: I havent but ive actually never been tested either
+
+Doctor: OK and do you exercise regularly
+
+Patient: Yeah actually ill either do some running or cycling probably three or four days per week and i havent had any chest pain or or problems exercising
+
+Doctor: OK thats good to hear and have you ever had problems with heartburn
+
+Patient: uh i dont think so no
+
+Doctor: OK ok so just to kind of summarize what weve talked about over the last two weeks you started having these 20 to 30 minute episodes of chest pain thats on the left side it feels more sharp is that correct
+
+Patient: Yeah
+
+Doctor: And its kind of constant when it comes on theres nothing really that makes it better or worse it just kind of goes away on its own after half an hour or so it has kind of stayed the same over over the last two weeks hasnt really gotten worse or better it hasnt gone away either
+
+Patient: Right yeah exactly
+
+Doctor: You never had anything like that before and you have been it sounds like experiencing some stress in your life it definitely can play into that as well ok is there anything else that you wanted to to tell me about that i didnt ask you today
+
+Patient: uh no i think thats um yeah i think thats all that i wanted to talk about today
+
+Doctor: OK so what im going to do is bring all this information to your family doctor and we can come back together and talk to you about the next steps
+
+Patient: Awesome thank you
+
+Doctor: Thanks for coming in

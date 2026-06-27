@@ -1,0 +1,7 @@
+source:      plos_computational_biology
+side:        complex
+readability: 4.65
+split:       dev
+
+jargon_spans:
+  [5:7] 'medical-jargon-google-easy' -> 'Trx fold'

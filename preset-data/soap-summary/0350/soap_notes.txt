@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0350
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective: 
+- Patient is complaining of weakness on the right side of her face. 
+- Patient feels that the right side is drooping.
+
+Objective: 
+- (No measurable or observable data provided.)
+
+Assessment: 
+- (No clinician's interpretation provided.)
+
+Plan: 
+- (No actions, medications, tests, follow-up, or patient education provided.)

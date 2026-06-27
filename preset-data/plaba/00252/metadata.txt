@@ -1,0 +1,5 @@
+pmid:        1378369
+question:    20
+adaptation:  adaptation2
+title:       Comparative efficacy of antidepressants
+sentences:   14

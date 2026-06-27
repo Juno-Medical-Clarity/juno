@@ -1,0 +1,5 @@
+pmid:        34362836
+question:    66
+adaptation:  adaptation2
+title:       Primary Nephrotic Syndrome and Risks of ESKD, Cardiovascular Events, and Death: The Kaiser Permanente Nephrotic Syndrome Study
+sentences:   10

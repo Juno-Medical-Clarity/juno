@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  test-0229  |  gem_id: gem-cochrane-simplification-test-230  |  doi: 10.1002/14651858.CD010346.pub2
+
+We reviewed 15 studies that compared the effects of yoga with usual treatment or a 'sham' yoga in 1048 participants. We found that yoga probably improves quality of life and asthma symptoms to some extent. However, our confidence in the results is low as most of the studies were flawed in various ways. The effects of yoga on lung function were inconsistent, and we found a small amount of evidence indicating that yoga can reduce medication usage. Information on unwanted side effects was very limited; more studies are needed to assess this. High-quality studies involving large numbers of participants are required for us to be able to draw a firm conclusion about the effects of yoga for asthma.

@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        simple
+readability: 4.3
+split:       train
+
+jargon_spans:
+  [3:4] 'medical-jargon-google-easy' -> 'differentiation'
+  [8:10] 'medical-jargon-google-easy' -> 'cellular symmetry'
+  [16:20] 'medical-jargon-google-easy' -> 'asymmetric localization of proteins'
+  [21:23] 'medical-jargon-google-easy' -> 'cell division'

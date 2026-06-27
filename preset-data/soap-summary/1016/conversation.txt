@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1016
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Has he ever had any mental retardation problems in the past? Guest_family: No. Did he go through mainstream education? Guest_family: Yes, he graduated high school last year. He had an I E P. He has a job now. Oh really. That's great. Guest_family: We went through a program for the disabled to find him the job. He is doing well. What is the job? Guest_family: He works at cardboard shop. So, he is ambulatory. No issues with performing the work. Guest_family: No! His boss said he is doing very well.

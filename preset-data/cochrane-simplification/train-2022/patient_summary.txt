@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2022  |  gem_id: gem-cochrane-simplification-train-2023  |  doi: 10.1002/14651858.CD011729.pub2
+
+There have been few investigations of client feedback in psychological therapies for children and adolescents with mental health problems. Most of them were carried out in the USA with older children and adolescents (11 to 18 years old). There was no clear evidence supporting the effectiveness of client feedback in psychological therapy for children and adolescents. It cannot be ruled out that client feedback has positive effects on psychotherapy outcomes in children and adolescents. High-quality studies are needed to provide sufficient evidence. Future studies should also include younger children, and should take place in countries other than the USA.

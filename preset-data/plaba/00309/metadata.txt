@@ -1,0 +1,5 @@
+pmid:        8095725
+question:    24
+adaptation:  adaptation1
+title:       Combination of buspirone and other drugs with beta-CCE in monkeys: effects on respiration and behavior
+sentences:   8

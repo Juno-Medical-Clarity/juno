@@ -1,0 +1,6 @@
+Doctor: How are you today?
+Patient: I am good.
+Doctor: What is your past medical history?
+Patient: I don't have any health problems. Not yet at least.
+Doctor: Let's keep try to keep it that way.
+Patient: Yes please.

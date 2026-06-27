@@ -1,0 +1,6 @@
+Doctor: Do you use any tobacco products?
+Patient: No.
+Doctor: Do you drink alcohol or use any recreational drugs?
+Patient: No.
+Doctor: Any history of needle drugs or prescription drug abuse?
+Patient: No.

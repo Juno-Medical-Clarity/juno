@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        complex
+readability: 5.3
+split:       train
+
+jargon_spans:
+  [22:24] 'medical-jargon-google-easy' -> 'pressure ulcers'
+  [41:42] 'medical-jargon-google-easy' -> 'repositioning'

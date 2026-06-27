@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0502
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Family history of prostate cancer (father).
+- Family history of Hodgkin's disease, melanoma, and prostate cancer (mother's brother).
+
+Objective:
+- (No measurable or observable data provided).
+
+Assessment:
+- (No clinician's interpretation or diagnoses provided).
+
+Plan:
+- (No actions, medications, tests, follow-up, or patient education explicitly mentioned).

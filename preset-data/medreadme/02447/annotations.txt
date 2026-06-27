@@ -1,0 +1,8 @@
+source:      plos_biology
+side:        complex
+readability: 5.7
+split:       train
+
+jargon_spans:
+  [3:4] 'abbr-medical' -> 'fMRI'
+  [8:12] 'medical-jargon-google-easy' -> 'left mid-ventrolateral prefrontal cortex'

@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3254  |  gem_id: gem-cochrane-simplification-train-3255  |  doi: 10.1002/14651858.CD005486.pub2
+
+Three studies looking at people with chronic wounds were included in the review and found that silver-containing foam dressings did not result in faster wound healing after up to four weeks of follow-up. One study did find that the overall size of the ulcer reduced more quickly when dressed with a silver-containing foam. There is no enough evidence to recommend the use of silver-containing dressings or topical agents for treating infected or contaminated chronic wounds.

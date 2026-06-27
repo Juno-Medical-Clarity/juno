@@ -1,0 +1,5 @@
+drug_focus: Simvastatin
+question_type: Interaction
+section_title: Q: I've heard that people shouldn't drink grapefruit juice if they're taking a statin. Why?
+source_url: https://www.health.harvard.edu/heart-health/grapefruit-juice-and-statins
+sample_id: 0132

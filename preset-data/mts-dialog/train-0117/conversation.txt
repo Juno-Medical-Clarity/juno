@@ -1,0 +1,10 @@
+Doctor: Good morning, ma'am. You're eighty two years old, is that correct?
+Patient: Good morning, doctor. Yes, that's correct.
+Doctor: Good, and just one more piece of background information, which hand do you write with?
+Patient: I use my right hand for everything.
+Doctor: Good, so what seems to be the problem today?
+Patient: Doctor, I've had years of pain in this shoulder.
+Doctor: What kind of treatments have you had?
+Patient: Well, um, I've had antiinflammatories, and rested, and none of it has helped so far.
+Doctor: Can I assume the pain is impacting your daily life?
+Patient: Yes, it certainly is. The pain is unbearable now.

@@ -1,0 +1,6 @@
+Doctor: Do you currently smoke? Or did you smoke in the past?
+Patient: Quit in nineteen seventy two.
+Doctor: Great to hear. Are you working right now?
+Patient: Yeah, I work at a nursing home.
+Doctor: Does your job allow you to take time for yourself?
+Patient: Yeah, my job is very supportive. I've actually been trying to lose weight. So far, I've lost a good amount since starting a new diet several months back.

@@ -1,0 +1,2 @@
+[MEDICATIONS]
+Include those on admission combined with IV Flagyl 500 mg every 8 hours and Levaquin 500 mg daily.

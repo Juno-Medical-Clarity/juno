@@ -1,0 +1,7 @@
+Doctor: What is your family medical history?
+Patient: My dad had a heart attack and passed away at sixty one.
+Doctor: I am so sorry to hear that.
+Patient: Thank you.
+Doctor: Do you know of any other major health conditions in your family?
+Patient: No. None that I know of. Everyone is relatively healthy.
+Doctor: That's good.

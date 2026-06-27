@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2478  |  gem_id: gem-cochrane-simplification-train-2479  |  doi: 10.1002/14651858.CD001366
+
+This review looked at the effectiveness of dietary advice given by dietitians to lower blood cholesterol, compared with the effectiveness of dietary advice given by other types of health professional or using self-help resources. The review found that advice by dietitians to lower blood cholesterol was more effective than that of doctors (in the short to medium term), but possibly not more effective than using self-help resources. There was no evidence to suggest that dietary advice given by dietitians was more effective than that given by nurses.

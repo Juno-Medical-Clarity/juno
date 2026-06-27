@@ -1,0 +1,8 @@
+Linker histones are major players in chromatin organization and per se are essential players in genome homeostasis.
+As the fifth class of histone proteins the linker histones not only interact with DNA and core histones but also with other chromatin proteins.
+These interactions prove to be essential for the higher levels of chromatin organization like chromatin loops, transcription factories and chromosome territories.
+Our recent results have proved that Saccharomyces cerevisiae linker histone - Hho1p, physically interacts with the actin-related protein 4 (Arp4) and that the abrogation of this interaction through the deletion of the gene for the linker histone in arp4 mutant cells leads to global changes in chromatin compaction.
+Here, we show that the healthy interaction between the yeast linker histone and Arp4p is critical for maintaining genome stability and for controlling cellular sensitivity to different types of stress.
+The abolished interaction between the linker histone and Arp4p leads the mutant yeast cells to premature ageing phenotypes.
+Cells die young and are more sensitive to stress.
+These results unambiguously prove the role of linker histones and chromatin remodelling in ageing by their cooperation in pertaining higher-order chromatin compaction and thus maintaining genome stability.

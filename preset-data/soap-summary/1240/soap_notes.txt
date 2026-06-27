@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 1240
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has lost both parents: father passed away from mesothelioma and mother passed away from ALS.
+- Expresses emotional difficulty regarding the loss of both parents but states, "I manage."
+
+Objective:
+- [No objective data provided]
+
+Assessment:
+- [No assessment information provided]
+
+Plan:
+- [No plan provided]

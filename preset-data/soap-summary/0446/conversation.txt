@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0446
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Hey, how is the patient doing? Guest_clinician: I actually don't know, I was not able to examine him. He is having special procedures done for the past two hours for some medical management. Oh, I see.

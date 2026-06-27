@@ -1,0 +1,5 @@
+pmid:        29641806
+question:    63
+adaptation:  adaptation2
+title:       Endocrine Therapy-Induced Alopecia in Patients With Breast Cancer
+sentences:   16

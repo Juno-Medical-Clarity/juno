@@ -1,0 +1,4 @@
+Doctor: Any changes to your diet?
+Patient: I've been following the A D A diet online and maxing out at around eighteen hundred calories per day.
+Doctor: How're you feeling since starting this diet?
+Patient: A lot better actually. My blood sugar isn't as high as it used to be.

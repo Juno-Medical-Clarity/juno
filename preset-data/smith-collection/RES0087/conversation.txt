@@ -1,0 +1,202 @@
+# Smith Collection Transcript: RES0087
+# Category: RES (Respiratory)
+# Dataset DOI: https://doi.org/10.1038/s41597-022-01423-1
+# Data DOI:    https://doi.org/10.6084/m9.figshare.c.5545842.v1
+# HuggingFace: https://huggingface.co/datasets/yfyeung/medical
+# License:     CC BY 4.0
+# Format: Simulated OSCE patient-physician medical interview
+#         Lines alternate Doctor/Patient starting with Doctor.
+
+Doctor: What brings you in
+
+Patient: Yeah im just coming in with my son hes been having hes been complaining of just seems like pain in his right ear for the last i would say three to four days and it seems like hes just more irritable just not himself right now
+
+Doctor: Yeah ok so how long did you say hes had this ear pain
+
+Patient: I would say four days now
+
+Doctor: Four days ok have you noticed any hearing loss
+
+Patient: uh no he still responds when i call his name
+
+Doctor: OK and have you noticed any fluid coming out of his ears
+
+Patient: uh no i dont think so
+
+Doctor: Is it more like one side of his ears or is it both ears
+
+Patient: Its just his right ear
+
+Doctor: Just his right ear ok and have you noticed that its like swollen red or warm
+
+Patient: uh no i dont see any swelling or redness at all
+
+Doctor: OK ok good and have you taken a look inside his ears
+
+Patient: Yeah i tried to take a look with a flashlight i couldnt really see too much
+
+Doctor: OK yeah thats fair and you mentioned hes had a runny nose too when did that start
+
+Patient: Yeah so that kind of like last week he was recovering from i think it was just a cold and he had a runny nose and just was a bit congested but then over the last week it kind of just resolved but then this week he started having just this ear pain
+
+Doctor: OK any fevers
+
+Patient: uh no not that i i havent measured anything and he hasnt mentioned any like he hasnt felt cold or anything like that
+
+Doctor: OK any weight loss over the past month or so
+
+Patient: No
+
+Doctor: No any change in his hair or nails like rashes or sorry or skin
+
+Patient: Yeah no i havent seen any changes in the skin
+
+Doctor: OK any changes in his vision or smell or taste
+
+Patient: No
+
+Doctor: No ok his runny nose what color is it
+
+Patient: It was mainly uh it seemed to me like it was mainly clear when it was happening like he wasnt bringing up any yellow or green material
+
+Doctor: OK good does he have a sore throat at all
+
+Patient: No not that hes told me hes still eating things and i dont think hes having any trouble with eating anything so i dont think so
+
+Doctor: OK thats good has he had a cough
+
+Patient: Uhm actually he did he did start coughing like yesterday but just a few times a day i dont know if its because of this or like what else might be going on
+
+Doctor: OK and you said for the past few days hes had the cough
+
+Patient: Yeah i think just maybe started yesterday
+
+Doctor: Started yesterday ok is it a dry cough or is it is he bringing up any phlegm
+
+Patient: No it seems to be just dry i think i just noticed it like three or four times during the day yesterday
+
+Doctor: OK so no blood that hes bringing up right
+
+Patient: No no
+
+Doctor: OK and does he have any shortness of breath
+
+Patient: No no
+
+Doctor: No ok any wheezing
+
+Patient: No no wheezing
+
+Doctor: No chest pain
+
+Patient: No
+
+Doctor: OK uhm any nausea or vomiting
+
+Patient: No nausea or vomiting
+
+Doctor: Any changes to his bowel movements
+
+Patient: No
+
+Doctor: No ok and how about urine is that normal
+
+Patient: Yeah uh no changes at all
+
+Doctor: Any headaches
+
+Patient: Not that hes told me about
+
+Doctor: OK dizziness or fainting spells
+
+Patient: No
+
+Doctor: Feeling like hes off balance or lost coordination
+
+Patient: No i dont think so
+
+Doctor: No ok no numbness no tingling
+
+Patient: No
+
+Doctor: Has he had any contacts with sick people recently
+
+Patient: Uhm no i dont think anyones been sick around him
+
+Doctor: OK and has he traveled to anywhere recently
+
+Patient: uh no like hes mainly just been inside his home
+
+Doctor: OK has he ever had ear pain before
+
+Patient: He did have a similar pain i think when he was like around three years old but it happened with his left left ear not the right one
+
+Doctor: OK was he prescribed any medications
+
+Patient: uh yeah he was given a like a course of antibiotics at that time i forgot what it was called but i think at that time it was much worse like he i dont know if he was just younger and couldnt tolerate it but i think he also had a fever at that time
+
+Doctor: OK ok and then any other ear infections outside of that one time
+
+Patient: No i think that only that one i can recall
+
+Doctor: OK alright is he otherwise healthy
+
+Patient: Yeah otherwise hes healthy no other conditions or anything like that
+
+Doctor: No hospitalizations or surgeries
+
+Patient: No
+
+Doctor: And is he on any medications
+
+Patient: No medications
+
+Doctor: OK is he up to date with all his immunizations
+
+Patient: Yeah all his immunizations are good
+
+Doctor: OK any allergies
+
+Patient: Not that we know of so far
+
+Doctor: And any family history of lung conditions or heart conditions
+
+Patient: No lung or heart conditions just his father does have like celiac disease so i dont know if thats related at all
+
+Doctor: OK how old was he when was diagnosed with celiac
+
+Patient: Fairly young i would say in his 20s
+
+Doctor: OK ok uhm alright well keep an eye on it in him like if he has any changes in his bowel movements or if hes getting severe abdominal pain after eating certain foods with gluten you can get him checked up for that as well
+
+Patient: OK
+
+Doctor: Yeah and then in terms of where he lives does he live with you and your partner
+
+Patient: Yeah so its just hes an only child lives with me and my husband and also we have like a pet dog
+
+Doctor: OK do you live in an apartment or in a house
+
+Patient: We live in a its like a condominium
+
+Doctor: OK ok any old carpet mold or asbestos in the building
+
+Patient: No no nothing like that its fairly well kept
+
+Doctor: OK and is he otherwise like developmentalwise hes ok theres no past history of like developmental disorders anything like that
+
+Patient: No no issues from like when he was younger like no complaints at all i think he was doing the same as every other child
+
+Doctor: OK no complications during your pregnancy with him no complications during the actual delivery and then when he was a newborn
+
+Patient: uh no no complications it was just a vaginal birth at 39 weeks and we didnt need to stay in the hospital at all afterwards
+
+Doctor: OK good so those were all the questions that i had for you today did you have any questions of your own
+
+Patient: Yeah i dont know if uh like last time we did get some antibiotics i dont know if he needs them right now or what would you recommend
+
+Doctor: Yeah uhm so im gonna have to take a look into his ears first before i can come up with like a management plan for him so once i do if i see uhm if his tympanic membrane has been perforated or i see pus in there well prescribe him like 10 days of antibiotics we can give him either amoxicillin or if he has bad reactions to penicillins  we can give him cefuroxime and then if uh it doesnt seem to have any systemic symptoms so if he has systemic symptoms like fever which well check for today and if hes like been really ill and he has like a middle ear effusion or bulging tympanic membrane again well give him antibiotics for 10 days but if his tympanic membrane is just bulging a little bit or if he has some middle ear effusion but no systemic symptoms like no fevers and he seems to be fine otherwise well reassess him in 24 to 48 hours to see if hes better and if hes not again will prescribe him antibiotics how does that sound
+
+Patient: Yeah that sounds good thank you
+
+Doctor: OK yeah no worries

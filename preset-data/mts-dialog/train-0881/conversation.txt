@@ -1,0 +1,23 @@
+Doctor: Hello today I have my assistant with me, and she will be representing your case. Tell me who do we have today?
+Guest_clinician: Patient has been cared by Doctor X since two thousand and two. She had a Codman Hakim shunt set at ninety M M H two O. She last came to our clinic in January two thousand and eight. At that time, she was recommended to follow up with Doctor Y for the medical management of her chronic headaches. She was also recommended to see a psychiatrist for her depression.
+Doctor: Did you go and see a psychiatrist?
+Patient: I did. It was okay.
+Doctor: What brings you here today?
+Patient: My headaches are back. They are very severe this time. It all happened that, after that scan.
+Doctor: When did she have her scan?
+Guest_clinician: She had her stunt adjusted which was after the M R I on April eighteenth.
+Patient: Yes, and after that I'm having these very bad headaches.
+Doctor: Are you able to sleep in the night properly?
+Patient: No, these headaches wake me up in the night. I haven't had a proper sleep in like ages.
+Doctor: Is there anything that elevates this pain? Or decreases it?
+Patient: Everything seems like increasing it. It just gets worse with coughing, straining, sneezing, even when I'm trying to stand. I tried all the medications, but nothing is helpful. There was Imitrex and I also tried Motrin eight hundred M G twice a day, but nothing seems to be like effective. Actually, it helps a bit when I lie down.
+Doctor: Is it like specific to any particular area of your head?
+Patient: It is like all over but, uh, very much intense in the forehead.
+Doctor: Is there any nausea associated with the headaches?
+Patient: No.
+Doctor: Anything else that happens along with these headaches?
+Patient: Yeah, I get that ringing sound in my ears, and I just don't feel well.
+Doctor: Any changes in your vision?
+Patient: Yeah, it gets blurry, and I feel like lights are dimming. I will be meeting Doctor Y tomorrow.
+Doctor: Any other thing you want to add?
+Patient: No, that's it.

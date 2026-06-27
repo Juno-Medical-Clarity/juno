@@ -1,0 +1,8 @@
+source:      wiki
+side:        simple
+readability: 4.5
+split:       test
+
+jargon_spans:
+  [5:6] 'medical-jargon-google-easy' -> 'malaria'
+  [16:17] 'medical-jargon-google-easy' -> 'quinine'

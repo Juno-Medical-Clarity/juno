@@ -1,0 +1,8 @@
+Doctor: How long have you had this cough?
+Patient: Past three weeks, doc.
+Doctor: Are you bringing anything up when you cough?
+Patient: Nah.
+Doctor: Any shortness of breath or chest pain?
+Patient: Nah.
+Doctor: How about fevers or chills?
+Patient: None of that.

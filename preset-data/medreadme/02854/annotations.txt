@@ -1,0 +1,8 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [8:9] 'abbr-medical' -> 'Hb'
+  [30:32] 'medical-jargon-google-easy' -> 'spatial bistability'

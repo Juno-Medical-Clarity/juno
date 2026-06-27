@@ -1,0 +1,5 @@
+pmid:        30068251
+question:    44
+adaptation:  adaptation1
+title:       Unmasking the Hypovolemic Shock Continuum: The Compensatory Reserve
+sentences:   12

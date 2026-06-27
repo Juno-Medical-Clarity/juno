@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0052  |  gem_id: gem-cochrane-simplification-validation-53  |  doi: 10.1002/14651858.CD004993.pub3
+
+This review has found no evidence of a difference between these two different operations for these outcomes. Surgery is faster with subtotal hysterectomy and there is less blood loss during or just after surgery, although these benefits are not large. With subtotal hysterectomy, women are less likely to experience fever during or just after surgery but are more likely to have long term ongoing menstrual bleeding when compared with total hysterectomy.

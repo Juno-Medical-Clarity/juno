@@ -1,0 +1,20 @@
+# SOAP Notes — Sample 0741
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Symptoms: Dyspnea even on minimal exertion, difficulty starting sleep, frequent awakenings (every one or two hours), daytime fatigue, tiredness upon waking, dull headache.
+- Duration: Nighttime choking episodes were present in the past but have decreased in intensity over the past several months.
+- Associated Symptoms: Coughing in the middle of the night (not anymore), occasional napping during the day.
+- Relevant Medical History: Previous evaluation for irregular sleep and daytime fatigue; smoking history (1-2 packs of cigarettes daily).
+- Family History: Daughter noted snoring and talking in sleep.
+- Concerns: Fluctuating weight (maximum of 260 pounds a year ago, currently down by approximately 30 pounds), difficulty with sleep, and feelings of tiredness.
+- Current Medications: Methadone, Trazodone, Seroquel.
+
+Objective:
+- [No objective data provided in the conversation.]
+
+Assessment:
+- [No assessment or clinical impressions provided in the conversation.]
+
+Plan:
+- [No specific plan mentioned in the conversation.]

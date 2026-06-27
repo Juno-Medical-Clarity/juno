@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3332  |  gem_id: gem-cochrane-simplification-train-3333  |  doi: 10.1002/14651858.CD003491.pub2
+
+This review compared the efficacy, withdrawal rates and side effects of different antidepressant classes in the treatment of depression in older people. Thirty-two studies provided data for the review. Our main findings indicate that tricyclic antidepressants (classical and tricyclic related) and selective serotonin reuptake inhibitors (SSRIs) are equally efficacious. However, when comparing the two tricyclic groups with SSRIs we found that tricyclic related antidepressants were similar to SSRIs in terms of overall withdrawal rate, and classical tricyclic antidepressants were associated with a higher withdrawal rate due to side effects. These findings are reflected in the differing side effect profiles when comparing both tricyclic groups with SSRIs. The findings of the review must be interpreted with some caution in view of the relatively low patient numbers and lack of side effect data.

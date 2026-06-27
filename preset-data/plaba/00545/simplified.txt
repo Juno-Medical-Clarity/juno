@@ -1,0 +1,14 @@
+While DNA of multi-celled and some one-celled organisms both encode a specific DNA-binding region, only multi-celled organisms encode the core proteins that DNA wraps around (core histones).
+With DNA, these core histones assemble into an 8-piece in the nucleus that binds DNA in multi-celled organisms.
+Importantly, certain core histones are kept as proteins capable of general-purpose or region-specific DNA-binding proteins.
+In this context, identifying core histone-like "duplicates" in the replication factories for the virus Marseilleviridae (MV) is a new finding with usefuleness to understanding the origin of chromosomes in multi-celled organisms (eukaryotes).
+In this context, identifying core histone-like "duplicates" in the replication factories for the virus Marseilleviridae (MV) is a new finding with usefuleness to understanding the origin of chromosomes in multi-celled organisms (eukaryotes).
+Here, we analyze the core histone duplicate genes from all known MV genes and other MV genes related to the origin of the DNA replication site for multi-celled organisms.
+With different evolutionary approaches, we show that specific MV DNA-binding areas encode necessary histones of possible pre-eukaryotic origin.
+MV core histones form similar groups to each of the four eukaryotic groups of known and variant core histones.
+MV core histone groups may have divered before eukaryotic duplicate genes gained new functions (neofunctionalization) associated with paired linear chromosomes and variable histone group assembly.
+We also show that MV genes encode a pre-eukaryotic DNA replication enzyme that forms a sister group to eukaryotes.
+This is a useful finding since these DNA replication enzymes affect histone settlement and DNA compaction and is the second most common nuclear protein after histones.
+The combined region architecture and evolutionary analyses shown here suggest a primitive origin for MV histone genes is a tighter explanation than gene transfers + fusions + mutations to eliminate relatedenss to eukaryotic neofunctionalizations within histone groups without loss of relatedness to each of the four core histone sister groups.
+We thus suggest that MV histone doublet genes and their DNA replication gene were possible obtained from an organism with a specific DNA replication site that diverged before the origin of eukaryotic core histone variation.
+Core histones may have been used before in viral DNA compaction and protection from host proteins.

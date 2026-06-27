@@ -1,0 +1,5 @@
+pmid:        20498829
+question:    72
+adaptation:  adaptation2
+title:       Newborn screening
+sentences:   8

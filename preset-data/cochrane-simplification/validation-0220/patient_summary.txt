@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0220  |  gem_id: gem-cochrane-simplification-validation-221  |  doi: 10.1002/14651858.CD005288.pub3
+
+The review found promising evidence for the use of Chinese herbal medicine in reducing menstrual pain in the treatment of primary dysmenorrhoea, compared to conventional medicine such as NSAIDs and the oral contraceptive pill, acupuncture and heat compression. No significant adverse effects were identified in this review. However the findings should be interpreted with caution due to the generally low methodological quality of the included studies.

@@ -1,0 +1,5 @@
+drug_focus: nicotine
+question_type: Side effects
+section_title: NA
+source_url: https://www.drugabuse.gov/publications/research-reports/tobacco-nicotine-e-cigarettes/nicotine-addictive
+sample_id: 0258

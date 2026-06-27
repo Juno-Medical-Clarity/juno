@@ -1,0 +1,8 @@
+source:      nhir_Health_Technology_Assessment
+side:        simple
+readability: 4.5
+split:       dev
+
+jargon_spans:
+  [4:5] 'medical-jargon-google-easy' -> 'cabozantinib'
+  [20:21] 'medical-jargon-google-easy' -> 'nivolumab'

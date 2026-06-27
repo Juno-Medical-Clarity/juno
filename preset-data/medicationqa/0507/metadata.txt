@@ -1,0 +1,5 @@
+drug_focus: fluocinonide .05% gel
+question_type: Usage
+section_title: INFORMATION FOR THE PATIENT
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ec13fa4-f44e-76ce-eae8-0780e86259a5
+sample_id: 0507

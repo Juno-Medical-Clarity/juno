@@ -1,0 +1,16 @@
+# SOAP Notes — Sample 0872
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient feels flustered.
+- Patient's wife reports problems with the patient's skin in the private region.
+- Patient is too shy to discuss the issue himself. 
+
+Objective:
+- (No objective data provided in the conversation)
+
+Assessment:
+- (No assessment provided in the conversation)
+
+Plan:
+- (No plan provided in the conversation)

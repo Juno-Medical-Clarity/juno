@@ -1,0 +1,7 @@
+source:      nhir_Efficaacy_and_Mechanism_Evaluation
+side:        simple
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [13:15] 'medical-jargon-google-easy' -> 'macular oedema'

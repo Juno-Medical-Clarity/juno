@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1138
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Good morning, sir. Before we begin, how old are you? Good morning, doctor. I'm forty one. Thank you, and how long have you had this left knee pain? It's been about two years now. Is there an injury? Yeah, I sprained my MCL while playing hockey back then. What kind of symptoms have you had in this knee since then? Well, the knee locks up on me, I can't extend it all the way, and it just hurts really bad if I try to. Do you feel any instability? No, not at all.

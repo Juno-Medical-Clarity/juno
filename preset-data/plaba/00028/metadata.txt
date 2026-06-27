@@ -1,0 +1,5 @@
+pmid:        26721532
+question:    3
+adaptation:  adaptation3
+title:       Emerging therapies for the management of chronic hyperkalemia in the ambulatory care setting
+sentences:   11

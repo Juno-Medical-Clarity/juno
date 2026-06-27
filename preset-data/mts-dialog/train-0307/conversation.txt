@@ -1,0 +1,33 @@
+Doctor: Good afternoon, dear, how old are you?
+Patient: I'm fourteen years old.
+Doctor: Good, and what brings you in for a visit today?
+Patient: My left knee hurts really bad.
+Doctor: Oh no, how long has this knee been hurting you?
+Patient: Well, since the fall of two thousand seven.
+Doctor: Have you seen another doctor for this?
+Patient: Mom, can you tell the doctor?
+Guest_family: Yes, actually, we went to another orthopedist in November of two thousand seven.
+Doctor: I see, and what did this doctor recommend?
+Guest_family: We got an MRI, I have a disc with the images, and the report as well right here, if you want to take a look at it.
+Doctor: Thank you, yes, so this shows left patellar chondromalacia. Has she been to P T?
+Guest_family: We got a referral for P T, but they only wanted to do, um, let me look at my notes, patellar tracking exercises.
+Doctor: I see, has she been wearing her brace?
+Guest_family: Yes, she has been. I've been making sure of it.
+Doctor: That's good, and how is your pain today, dear?
+Patient: P T only made the pain much worse, it hurts so much.
+Guest_family: Yes, she's in a lot of pain, is there anything else we can do, besides P T?
+Doctor: Well, we're in a pretty difficult spot here. The majority of my patients get significantly better by just going to P T.
+Guest_family: Is there any surgery to fix this?
+Doctor: Usually, we manage this for six months without surgery, and she hasn't reached that milestone yet. But, because her pain is getting so severe, I can do a lateral capsular release on this knee.
+Guest_family: What is that?
+Doctor: It's a small procedure, minimally invasive, and we can do it outpatient. Her kneecap is partially dislocating, so this surgery will get everything back into alignment.
+Guest_family: Okay, what is the risk of infection?
+Doctor: The risk of infection is actually less than one percent. We use antibiotics to control for infection.
+Patient: Will I be asleep for this?
+Doctor: Yes, you won't feel a thing.
+Patient: Will I need to go back to P T?
+Doctor: Yes, you'll need to go some after the surgery to make sure everything heals up okay. The other risks include bleeding, changes in sensation and motion extremity, failure of procedure to relieve pain, need for postoperative rehab, and significant postoperative swelling.
+Guest_family: I think we'd like to do the surgery. What do you think, honey?
+Patient: Yeah, I think so too, I want to get back to playing soccer.
+
+Sp 3

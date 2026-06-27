@@ -1,0 +1,9 @@
+source:      nhir_Health_Technology_Assessment
+side:        complex
+readability: 4.7
+split:       train
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Magnetic resonance enterography'
+  [4:6] 'medical-jargon-google-easy' -> 'ultrasonography scans'
+  [10:11] 'medical-jargon-google-easy' -> 'blinded'

@@ -1,0 +1,7 @@
+Basal insulin secretion was compared in nine islet-cell antibody positive, non-diabetic first-degree relatives of children with Type 1 (insulin-dependent) diabetes mellitus and nine normal control subjects matched for age, sex and weight.
+Acute insulin responses to a 25 g intravenous glucose tolerance test were similar in the two groups (243 (198-229) vs 329 (285-380) mU.l-1 x 10 min-1, mean (+/- SE), p = 0.25).
+Fasting plasma insulin was assayed in venous samples taken at one min intervals for 2 h.
+Time series analysis was used to demonstrate oscillatory patterns in plasma insulin.
+Autocorrelation showed that regular oscillatory activity was generally absent in the islet-cell antibody-positive group, whereas a regular 13 min cycle was shown in control subjects (p less than 0.0001).
+Fourier transformation did, however, show a 13 min spectral peak in the islet-cell antibody positive group, consistent with intermittent pulsatility.
+We conclude that overall oscillatory patterns of basal insulin secretion are altered in islet-cell antibody positive subjects even when the acute insulin response is within the normal range.

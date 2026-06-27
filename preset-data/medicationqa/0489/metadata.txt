@@ -1,0 +1,5 @@
+drug_focus: acetaminophen with codeine
+question_type: Dose
+section_title: HOW SUPPLIED
+source_url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=36adb32c-638c-4d6e-b66a-1a1c35174ce6&audience=consumer
+sample_id: 0489

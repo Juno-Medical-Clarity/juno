@@ -1,0 +1,9 @@
+source:      pnas
+side:        complex
+readability: 5.0
+split:       dev
+
+jargon_spans:
+  [4:6] 'medical-jargon-google-hard' -> 'aggresomal sequestration'
+  [12:13] 'medical-jargon-google-easy' -> 'proteasome'
+  [17:19] 'medical-jargon-google-easy' -> 'protein homeostasis'

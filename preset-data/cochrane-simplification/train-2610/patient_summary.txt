@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-2610  |  gem_id: gem-cochrane-simplification-train-2611  |  doi: 10.1002/14651858.CD004181.pub2
+
+This review concludes that immunoglobulins seem effective for preventing hepatitis A in both children and adults. However, the evidence, on which the conclusion is based, is not strong as the included trials appear to have risk of bias and their number is insufficient. Because there is a potential risk of blood-borne diseases from immunoglobulins preparations, such as human immunodeficiency virus, and because of the availability of hepatitis A vaccine, the use of immunoglobulins has become limited. However, their use is still required in some specific populations, such as persons with compromised immune function, children under one year of age, or persons who have not developed a full response to vaccine immunisation. Future clinical trials should address the benefit and harm of immunoglobulins in these populations.

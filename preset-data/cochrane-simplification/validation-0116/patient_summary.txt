@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  validation-0116  |  gem_id: gem-cochrane-simplification-validation-117  |  doi: 10.1002/14651858.CD003467
+
+This review found that there is not enough evidence from trials about the effects of amantadine for people with dyskinesia in Parkinson's disease. Adverse effects in trials so far have included confusion, worsening of hallucinations, the re-emergence of palpitations, nausea, dry mouth, swelling of feet and constipation.

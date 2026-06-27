@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 1166
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+And where do you live? Well, I live in this small town called Fayetteville in Tennessee. Ah, I see. And do you have lot of friends there? I have few. Okay, and do you drink? No. How about smoking? Never did!

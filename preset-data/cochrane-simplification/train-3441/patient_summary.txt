@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-3441  |  gem_id: gem-cochrane-simplification-train-3442  |  doi: 10.1002/14651858.CD003639.pub2
+
+In this review we present data from meta-analyses that show (among other things) a decrease in glycated haemoglobin, fasting and post-load blood glucose and post-load insulin. But we found no evidence for an effect on mortality or morbidity. We found clues that with higher dosages the effect on glycated haemoglobin, in contrast to post-load blood glucose, remains the same. This might be because a lower compliance due to increasing side-effects.

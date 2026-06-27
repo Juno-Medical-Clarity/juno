@@ -1,0 +1,8 @@
+source:      cochrane_all
+side:        simple
+readability: 4.0
+split:       train
+
+jargon_spans:
+  [0:2] 'medical-jargon-google-easy' -> 'Antipsychotic drugs'
+  [10:11] 'medical-jargon-google-easy' -> 'schizophrenia'

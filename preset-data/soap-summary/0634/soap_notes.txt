@@ -1,0 +1,15 @@
+# SOAP Notes — Sample 0634
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Subjective:
+- Patient has a history of Coronary Artery Disease (CAD).
+- No known follow-up with a cardiologist.
+
+Objective:
+- (No objective data mentioned.)
+
+Assessment:
+- (No assessment provided.)
+
+Plan:
+- Clinician will check the electronic medical records for more information regarding cardiology follow-up.

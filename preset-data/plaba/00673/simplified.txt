@@ -1,0 +1,8 @@
+Turner syndrome (TS) is one of the most common sexual chromosome abnormalities. TS is associated with an increased risk of autoimmune diseases (in which immune cells attack healthy cells), particularly metabolism-affecting thyroid disease and coeliac disease (CD)--gluten sensitivity.
+Genetic analyses have provided evidence that correlates specific genes with autoimmune diseases.
+This report aimed to study the genetic variants of PTPN22 and ZFAT (protein-coding genes) in relation to thyroid disease. Additionally, this study evaluated the variants (gene types) of MYO9B (another protein-coding gene) to CD.
+An analysis was performed on Mexican, mixed heritage patients with TS. These patients were age-matched to healthy females.
+Data showed that PTPN22 C1858T, a PTPN22 variant, is not associated with TS.
+Also, ZFAT was not associated with TS.
+However, rs2305767 MYO9B, a MYO9B variant, was revealed to have a strong association with TS. This suggests patients with this variant have increased susceptibility to CD among TS patients.
+This report addresses additional data regarding the genetic variants associated with autoimmune disease. Autoimmune disease is one of the most common complications found in TS patients.

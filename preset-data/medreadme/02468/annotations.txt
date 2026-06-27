@@ -1,0 +1,10 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [0:3] 'medical-jargon-google-easy' -> 'Variably expressed networks'
+  [4:7] 'general-complex' -> 'statistically robust differences'
+  [23:24] 'medical-jargon-google-easy' -> 'expression'
+  [27:28] 'abbr-medical' -> 'DIRAC'

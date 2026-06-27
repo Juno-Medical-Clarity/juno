@@ -1,0 +1,1 @@
+One of the limitations of previous network analyses is that they do not take into account the combinatorial nature of gene interactions within the network.

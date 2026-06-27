@@ -1,0 +1,14 @@
+source:      plos_genetics
+side:        simple
+readability: 5.3
+split:       dev
+
+jargon_spans:
+  [7:8] 'medical-jargon-google-easy' -> 'Mlh1'
+  [9:10] 'medical-jargon-google-easy' -> 'Mlh3'
+  [16:20] 'medical-jargon-google-easy' -> 'DNA mismatch repair pathway'
+  [24:27] 'medical-jargon-google-hard' -> 'somatic CAG expansion'
+  [34:36] 'medical-jargon-google-easy' -> 'somatic expansion'
+  [37:38] 'medical-jargon-google-easy' -> 'pathogenic'
+  [47:48] 'medical-jargon-google-easy' -> 'MLH1'
+  [60:62] 'medical-jargon-google-easy' -> 'somatic expansion'

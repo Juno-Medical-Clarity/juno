@@ -1,0 +1,5 @@
+# GEM/cochrane-simplification — plain-language patient summary
+# Dataset: https://huggingface.co/datasets/GEM/cochrane-simplification
+# Sample:  train-1365  |  gem_id: gem-cochrane-simplification-train-1366  |  doi: 10.1002/14651858.CD007780.pub2
+
+We conducted a systematic review to assess whether or not cisapride actually relieves constipation and controls the symptoms of irritable bowel disease, in addition to looking at whether or not these effects are worth its use compared to the risk of cisapride's dangerous side effects. Through a detailed look at the literature, we found no clear evidence to suggest that cisapride has a role in controlling symptoms related to constipation or IBS and believe its not worth the risk of its possibly fatal arrhythmia side effects.

@@ -1,0 +1,5 @@
+pmid:        34541573
+question:    25
+adaptation:  adaptation1
+title:       Potent neutralizing RBD-specific antibody cocktail against SARS-CoV-2 and its mutant
+sentences:   8

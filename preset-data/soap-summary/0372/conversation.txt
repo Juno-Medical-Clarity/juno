@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0372
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+Can you tell me what problems you have had in the past. Or what medical issues are currently going on? You mean my heart problem and things? Yes. Okay, I have hypertension and kidney problems since many years. Okay. I get frequent urinary infections. Your urine creatinine is normal. Okay. I also have severe aortic stenosis.

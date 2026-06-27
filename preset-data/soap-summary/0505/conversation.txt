@@ -1,0 +1,4 @@
+# SOAP Summary Dataset — Sample 0505
+# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
+
+What do you do in the hospital? I work as a phlebotomist and respiratory therapist. Ok, how old are you? I am fifty four. You are very young. Thank you! So, as you remember I was trying to measure blood gas as I was working with a patient and I accidently jammed that needle inside my right hand index finger. I am coming for regular screening. Were you wearing gloves? Yes, I had gloves and protective clothing. Yes, thank you for that. Did they screen patient? Yes, he got negative HIV but positive Hep C. Ok. I am scared.

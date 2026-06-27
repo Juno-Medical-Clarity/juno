@@ -1,0 +1,5 @@
+pmid:        24809808
+question:    35
+adaptation:  adaptation1
+title:       Overuse of short-interval bone densitometry: assessing rates of low-value care
+sentences:   13

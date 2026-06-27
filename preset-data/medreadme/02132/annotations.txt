@@ -1,0 +1,9 @@
+source:      plos_neglected_tropical_diseases
+side:        simple
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [1:2] 'medical-jargon-google-easy' -> 'inoculation'
+  [4:6] 'abbr-medical' -> 'L. major'
+  [7:8] 'medical-jargon-google-easy' -> 'leishmanization'

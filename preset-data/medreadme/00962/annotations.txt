@@ -1,0 +1,11 @@
+source:      plos_computational_biology
+side:        complex
+readability: 5.0
+split:       train
+
+jargon_spans:
+  [1:3] 'medical-jargon-google-easy' -> 'reduced representation'
+  [6:8] 'medical-jargon-google-easy' -> 'interaction sites'
+  [11:13] 'medical-jargon-google-easy' -> 'anisotropic packing'
+  [14:15] 'medical-jargon-google-easy' -> 'polarity'
+  [16:18] 'medical-jargon-google-easy' -> 'individual sidechains'

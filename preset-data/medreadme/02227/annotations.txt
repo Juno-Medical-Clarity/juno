@@ -1,0 +1,11 @@
+source:      cochrane_all
+side:        complex
+readability: 6.0
+split:       train
+
+jargon_spans:
+  [2:3] 'medical-jargon-google-easy' -> 'hysterectomy'
+  [5:6] 'medical-jargon-google-easy' -> 'hysterectomy'
+  [7:9] 'medical-jargon-google-easy' -> 'bilateral oophorectomy'
+  [12:15] 'medical-jargon-google-easy' -> 'benign gynaecological conditions'
+  [24:27] 'medical-jargon-google-easy' -> 'gynaecological surgical interventions'

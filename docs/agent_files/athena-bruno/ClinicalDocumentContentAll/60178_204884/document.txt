@@ -1,0 +1,23 @@
+[NO TEXT CONTENT] Patient 60178, Document 204884
+Description: clinical document
+
+Metadata:
+{
+  "internalnote": "Updated via API test - 510578.227105627",
+  "documentdescription": "clinical document",
+  "status": "REVIEW",
+  "documentclass": "CLINICALDOCUMENT",
+  "priority": "1",
+  "assignedto": "CRUICKSHANK HEALTH CARE STAFF",
+  "documentroute": "FAX",
+  "lastmodifieddatetime": "2025-12-07T02:07:03-05:00",
+  "departmentid": "1",
+  "clinicaldocumentid": 204884,
+  "createddatetime": "2025-12-07T02:07:00-05:00",
+  "createddate": "12/07/2025",
+  "lastmodifieduser": "API-34748",
+  "lastmodifieddate": "12/07/2025",
+  "observationdate": "12/07/2025",
+  "createduser": "API-34748",
+  "documentsource": "INTERFACE"
+}
