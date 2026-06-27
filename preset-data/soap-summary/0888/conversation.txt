@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0888
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Is this your mother with you today? Yes, this is my mommy. Great, welcome, what did you do this this ankle, young lady? Well, I was running when I twisted my ankle. Which ankle did you twist? It was my right ankle. Where does it hurt the worst? Right here, on the outside of my ankle. Do you have a primary care physician? Guest_family: Yeah, we go to Doctor Brown. Do you have any other injuries to speak of? No, it's just my ankle really.

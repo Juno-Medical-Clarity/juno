@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1310
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married, sir? Yes, to my wonderful wife. Great, can I assume you support each other at home? Yes, doctor, that's correct. Do you smoke or drink, sir? Well, I don't smoke, and I don't do anything harder, either. But I drink just about every day. How much do you drink a day? I drink maybe two or three drinks a day, so maybe four or nine a week.

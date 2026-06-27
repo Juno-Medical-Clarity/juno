@@ -1,3 +1,0 @@
-Guest_clinician: I did a review of her systems, and everything looks normal other than what was mentioned earlier.
-Doctor: Okay, thanks for your help.
-Guest_clinician: No problem.

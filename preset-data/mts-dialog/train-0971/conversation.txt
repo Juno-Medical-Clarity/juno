@@ -1,7 +1,0 @@
-Doctor: How are you today?
-Patient: I am doing okay.
-Doctor: Do you have any medical conditions?
-Patient: I have diabetes.
-Doctor: When were you diagnosed with diabetes?
-Patient: It was two thousand and three, I think. I also have high blood pressure, asthma and high cholesterol.
-Doctor: Okay.

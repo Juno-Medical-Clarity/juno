@@ -1,2 +1,0 @@
-[ROS]
-HEENT: No history of headaches, migraines, vertigo, syncope, visual loss, tinnitus, sinusitis, sore in the mouth, hoarseness, swelling or goiter.

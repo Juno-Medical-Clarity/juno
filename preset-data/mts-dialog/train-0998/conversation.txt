@@ -1,4 +1,0 @@
-Doctor: How is your family doing?
-Patient: They all are good.
-Doctor: Are you aware of any medical issues in your family?
-Patient: No, not to my knowledge.

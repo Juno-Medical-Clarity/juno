@@ -1,3 +1,0 @@
-Doctor: Any known allergies?
-Patient: Oh yes, I cannot take Sulfa drugs.
-Doctor: Let me add that to your record.

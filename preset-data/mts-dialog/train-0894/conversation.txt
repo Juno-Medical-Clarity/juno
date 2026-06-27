@@ -1,8 +1,0 @@
-Doctor: And where do you live?
-Patient: Well, I live in this small town called Fayetteville in Tennessee.
-Doctor: Ah, I see. And do you have lot of friends there?
-Patient: I have few.
-Doctor: Okay, and do you drink?
-Patient: No.
-Doctor: How about smoking?
-Patient: Never did!

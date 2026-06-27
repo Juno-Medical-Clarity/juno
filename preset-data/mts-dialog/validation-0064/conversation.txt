@@ -1,2 +1,0 @@
-Doctor: Did you had any surgery in the past?
-Patient: Yes, I had this major trauma surgery some time back.

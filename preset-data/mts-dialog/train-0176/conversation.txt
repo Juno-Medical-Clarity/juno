@@ -1,4 +1,0 @@
-Doctor: You have an infection that has become septic. We are going to have to start you on intravenous antibiotics.
-Patient: Okay.
-Doctor: We also need to address the blood clotting. I am going to give you an anticoagulant to prevent any further clotting issues. Do you have any questions?
-Patient: No.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1366
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you tell me what are the diseases you have been diagnosed with in the past? Sure, I have had hypertension, diabetes, asthma and cholesterol problem. Ok, is there anything else? Nope. And it is type two diabetes, right? Yes. Thank you!

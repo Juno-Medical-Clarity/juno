@@ -1,4 +1,0 @@
-Doctor: I'd like to get her in to see you sometime next week for her enlarged thyroid.
-Guest_clinician: Is she symptomatic?
-Doctor: Yes, she's experiencing increased difficulty swallowing. She's also reporting throat tightness on an off.
-Guest_clinician: What's her medical record number?

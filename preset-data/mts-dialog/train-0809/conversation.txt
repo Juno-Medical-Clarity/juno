@@ -1,4 +1,0 @@
-Doctor: What do you do? Are you working or in school?
-Patient: I am in school.
-Doctor: Good.
-Patient: Thanks.

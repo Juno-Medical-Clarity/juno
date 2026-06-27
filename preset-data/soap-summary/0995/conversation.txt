@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0995
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How's your overall health? Fine, I guess. I'm being treated for I B S by my G I. Last time I was in, they told me that my white blood cell levels aren't where they were supposed to be.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0917
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, before we begin, what are your pronouns? I identify as a female, and I use she her pronouns. Thank you, so, have you ever had surgery? Yes, I actually have a list of them written down. That's really helpful, may I see it? Absolutely, here you go. Thank you. So I see you've had a multiple bowel surgeries, including, um, a hysterectomy, rectocele repair, and an appendectomy. Do all of those sound familiar. Yep, I got this list from all of the surgeons. Are there any other major conditions I should be aware of? Yes, actually, I have another list, um, I have polymyalgia rheumatica. That's all great information to know, thank you very much.

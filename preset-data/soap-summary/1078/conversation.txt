@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1078
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you drink? No, never! Did you ever smoke? No. How about drugs? Marijuana or anything? Well, I always stayed away from drugs. Good. And what is your living arrangement? Do you stay with your kids? I live at my place. My kids visit me but mostly I live alone. Okay.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0926
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Has anyone in your family suffered from dementia? Not that I'm aware of. Is there any other medical history in your family? Any other medical issues? My mom died of a stroke. How old was your mom when she died? She was sixty two.

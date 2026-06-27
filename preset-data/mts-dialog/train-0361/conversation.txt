@@ -1,4 +1,0 @@
-Guest_clinician: Were you able to get a history from her?
-Doctor: I tried but was unsuccessful. She's very out of it.
-Guest_clinician: Does she have a history of alcohol abuse?
-Doctor: According to her records, she has a long history of alcohol abuse.

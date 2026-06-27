@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0517
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What medication have you tried? I took Nexium. Pain? Yes.

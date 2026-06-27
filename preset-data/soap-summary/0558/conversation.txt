@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0558
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Welcome in, sir. Thank you. What do you do for work? I am professor at the college up on the hill. What do you teach? I teach history and the bible. Do you drink alcohol or use tobacco products? No. I do not partake in either of those activities. Okay.

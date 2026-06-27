@@ -1,6 +1,0 @@
-Doctor: Have you had any illnesses in the past?
-Patient: Nope.
-Doctor: Anything that is worth mentioning?
-Patient: Nope.
-Doctor: Sure?
-Patient: Yes.

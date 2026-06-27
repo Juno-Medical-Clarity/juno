@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0638
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any major medical conditions that run in your family that I should know about? What do you mean by that? Well, it could be anything from diabetes to high blood pressure to cancer. Oh, yeah. My brother had prostate cancer.

@@ -1,3 +1,0 @@
-Doctor: Can you tell me about your Immunizations?
-Patient: Yeah, I had them all.
-Doctor: Good, looks like you are up to date.

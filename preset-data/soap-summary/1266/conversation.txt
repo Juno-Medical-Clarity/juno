@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1266
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi there, what's going on with you? Well, I am having this weird jerky movement in my arm and leg. Oh okay, let me take a look.

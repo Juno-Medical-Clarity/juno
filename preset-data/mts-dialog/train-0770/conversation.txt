@@ -1,4 +1,0 @@
-Doctor:  What are you taking for allergies?
-Patient: Claritin.
-Doctor: Okay.
-Patient: For my allergic rhinitis.

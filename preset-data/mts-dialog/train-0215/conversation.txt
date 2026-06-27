@@ -1,3 +1,0 @@
-Doctor: Well, this is a case of hypothermia.
-Guest_family: Will he survive?
-Doctor: Don't worry, we will take care of him.

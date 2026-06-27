@@ -1,3 +1,0 @@
-Guest_clinician: What's her diagnosis?
-Doctor: Refractory anemia.
-Guest_clinician: Gotcha.

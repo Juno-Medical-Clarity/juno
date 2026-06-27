@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0656
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, so, who is the patient today? Guest_family: Good afternoon, doctor. My granddaughter is your patient today. What seems to be the problem today, young lady? Well, I'm having a lot of headaches, I feel it in my face. Does it feel like pressure? That, and I have the sniffles. What other symptoms have you had? Um, well, last night I had a sore throat, and I was coughing up phlegm. Interesting, anything else? Um, I've had a rash on my face, back, and arms for the last three days or so. Is it itchy? Yes, so we've been taking a lot of Benadryl. I see, are you going to school? I have been, there's been a lot of fifth disease this year. Okay, and have you been wheezing lately? No, I haven't been. I see you have asthma, have you had any medication for this? No, I haven't had anything.

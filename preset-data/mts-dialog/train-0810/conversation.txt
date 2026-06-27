@@ -1,8 +1,0 @@
-Doctor: Do you have any children, ma'am?
-Patient: Yes, I have a wonderful baby girl at home.
-Doctor: Wonderful, were there any complications with your pregnancy or delivery?
-Patient: Nope, everything went very smooth. I'm thankful.
-Doctor: Good, have you ever been hospitalized for any issue?
-Patient: No, thankfully.
-Doctor: Good, so I can assume you've never had surgery?
-Patient: Correct, I never have.

@@ -1,3 +1,0 @@
-Doctor: Any allergies?
-Patient: Yes just molds.
-Doctor: Okay so molds reaction.

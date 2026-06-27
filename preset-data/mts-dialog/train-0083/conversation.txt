@@ -1,6 +1,0 @@
-Doctor: Hello. How are you feeling today?
-Patient: Great. I'm just here for my yearly physical.
-Doctor: Oh, good. I see your past medical history is missing. Do you, by chance, know if you've had any health related problems before?
-Patient: Uhm. Let me check my notes on my phone. I knew this question would pop up, but I always forget. Oh, perfect. You can take a look at them.
-Doctor: Thank you. I just want to verify the information with you. You had asthma, nasal inflammation, and some abnormal growth on you neck, correct?
-Patient: If it's on there, then it's true. I usually don't remember these kinds of things. My wife is usually here with me. She knows all about my health.

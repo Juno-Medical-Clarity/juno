@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1120
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Has the redness worsened over the last few days? Guest_clinician: I think so. Her right big toe looks worse to me. Is she otherwise healthy? Guest_clinician: Um besides her toe and some nasal congestion, she's doing fine.

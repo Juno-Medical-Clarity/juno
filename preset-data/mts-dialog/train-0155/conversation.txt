@@ -1,2 +1,0 @@
-Doctor: Are you taking any medications?
-Patient: Yes I am taking thyroid meds and Lipitor.

@@ -1,4 +1,0 @@
-Doctor: Tell me about the medical issues you had in the past or still do.
-Patient: Well, I have asthma, sinus. I also have hives and there is a history of psoriasis.
-Doctor: Wow, okay. Any known allergies?
-Patient: Nothing that I have known.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0549
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What do you use to treat your asthma? I use my Albuterol inhaler.

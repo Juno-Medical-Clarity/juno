@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0625
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-It looks like E M S found you in bad shape? What? Guest_family: My mother is hard of hearing. She is eighty five. They found her on the toilet. Did your mother tell you anything about her condition before E M S arrived? Guest_family: She said she threw up right before they came and she had diarrhea. Ma'am. How are you feeling now? I have been sick to my stomach. My belly has been hurting. I threw up. How many times did you vomit ma'am? I don't know. Do you recall the color of the vomit? Did you see any blood or notice the color of the vomit? I don't know.

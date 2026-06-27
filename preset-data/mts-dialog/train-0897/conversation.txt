@@ -1,6 +1,0 @@
-Doctor: So, are you married?
-Patient: No, my wife and I got divorced a while ago. We have three children together, though.
-Doctor: Okay, and do you have someone who is managing your case?
-Patient: Yes, I have an lawyer handling everything.
-Doctor: Do you smoke or drink?
-Patient: No, I never really smoke or drink.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0493
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you live alone? I wouldn't say I live alone. I have three cats and they always keep me company. Aw, what kind of cats? Two Persian cats and one Chartreux. Are you currently working? I retired a few months ago. I used to work as a psych aide for the State of Pennsylvania. Congratulations on your retirement. Thank you. How long did you work as a psych aide? Thirty two years. Incredible. One more question. Do you smoke, drink, or use drugs recreationally? I drink wine every now and then. I used to smoke back in the day, but I'm five years smoke free. I do not do drugs. Always great to hear.

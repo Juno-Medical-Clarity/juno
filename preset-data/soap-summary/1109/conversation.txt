@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1109
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, you were referred by Doctor X. Yeah. According to him, I see no changes or correction to your present illness, right? Yeah, I think so.

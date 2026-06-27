@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0972
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I am going write you a prescription for a stimulant. It is called Cylert.

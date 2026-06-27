@@ -1,5 +1,0 @@
-Doctor: Do you have any history of chronic pain?
-Patient: I got into a car accident a long time ago and I have always had neck pain.
-Doctor: Okay. Any other pain throughout the body?
-Patient: Sometimes I have back pain.
-Doctor: Okay.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1291
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married? I'm divorced. Do you have any kids? Yes, I have two boys and they live with me. Any abnormal pregnancy. Any abortions? No, none of them. Do you smoke or consume alcohol or have ever used any illicit drug? No.

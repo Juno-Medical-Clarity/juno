@@ -1,9 +1,0 @@
-Doctor: Can you tell me what surgeries have you had in the past?
-Patient: I have had appendix surgery when I was twenty one years old and eight years back I had C Section.
-Doctor: Okay. I want to know how many pregnancies you had and how many babies?
-Patient: Sure, I have only two.
-Doctor: Okay. Do you have any issues with your periods?
-Patient: Yes, I get heavy periods because of fibroids in my uterus.
-Doctor: Oh. When was your last menstrual period?
-Patient: Oh, you can say about three weeks back.
-Doctor: Okay. Good.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0306
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you lost weight? No, I haven't, you can ask my daughter. How about anything like fever, nausea, vomiting, pain? No. And as we discussed you have problem talking and comprehending. Yes. And you get urine infections too? Yes. And as discussed, your drainage is similar to past episodes when you had such infection? Yes.

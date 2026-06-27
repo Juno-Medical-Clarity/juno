@@ -1,4 +1,0 @@
-Doctor: Were you ever diagnosed with any blood or heart disease?
-Patient: Uh no.
-Doctor: Any other past medical issues?
-Patient: No.

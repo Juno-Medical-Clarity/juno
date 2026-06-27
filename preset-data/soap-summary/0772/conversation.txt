@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0772
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have we gone over your survey results from your last visit? No, do you have those results with you right now? Yes, I do, they show that you have anxiety disorder. That makes sense, thank you for sharing that with me.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0759
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, young lady. Good afternoon, doctor. How has your weight been since your last visit, with the phentermine? Well, since the last visit I've gained about a pound. Well, it could be worse, but we're at a plateau, I'd like to see you lose some more per month. Yeah, I've been working really hard, but I haven't been able to get the weight down any further so far. What has been your lowest weight? My lowest? That was one hundred thirty six. I'm just as frustrated as you are, doctor. Well, if this plateau continues, we should discontinue the phentermine. Why is that? It shouldn't be used to maintain your weight, but only to get the weight down. So, if it's not serving that purpose, we shouldn't use it. There's no real benefit there. Okay, yes, I agree.

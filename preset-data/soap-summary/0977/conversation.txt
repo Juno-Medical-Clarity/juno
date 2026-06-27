@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0977
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you on insulin? Yes. Are you on metformin as well? Yes. How about glucotrol? Yes I take that. Are you on lipitor? Yes.

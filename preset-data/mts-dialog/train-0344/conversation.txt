@@ -1,4 +1,0 @@
-Doctor: Do you have any allergies?
-Patient: No allergies.
-Doctor: Nothing? Cat dander, pollen?
-Patient: Nope.

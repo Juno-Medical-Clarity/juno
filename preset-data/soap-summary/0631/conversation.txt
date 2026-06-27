@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0631
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Lets talk about your family history, does cancer run in your family ma'am? Oh yes! My family has a history of lung, liver and prostate cancer. Oh wow! Yeah. And you mentioned that your mother had Alzheimer's? Well, I am not sure about Alzheimer, but she had some dementing disease. It started when she was in her eighties. It was kind of mild case. And she actually passed away in her eighties due to old age. Okay, how about your siblings, do they have any signs of Alzheimer? No, they are fine. Okay.

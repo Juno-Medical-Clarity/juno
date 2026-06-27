@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0862
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married? Yes. Do you have kids? Yes, I do have seven. I have a handful. Do you work? Yeah, I'm a driver for FedEx. Did you ever smoke? Nope. What about alcohol or any other kind of drugs? Nope. None of that.

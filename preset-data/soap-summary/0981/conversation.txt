@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0981
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family medical history? My family has a high blood pressure. I have a family member that had colon cancer. My daughter has a twitch. They don't know what caused it? Okay.

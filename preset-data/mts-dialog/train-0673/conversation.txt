@@ -1,2 +1,0 @@
-Doctor: Any family history of disease?
-Guest_family: To be honest, I'm not sure. Possibly? I'd have to check and get back to you.

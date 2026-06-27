@@ -1,6 +1,0 @@
-Doctor: What is your family medical history?
-Patient: My dad had stomach cancer.
-Doctor: How old was he when he was diagnosed?
-Patient: I think he was seventy something. My sister has breast cancer. She is in her fifty's.
-Doctor: Any family history of uterine, ovarian or colon cancer?
-Patient: No. Not that I am aware of.

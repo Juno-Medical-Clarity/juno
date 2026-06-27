@@ -1,6 +1,0 @@
-Doctor: Do you smoke cigarettes?
-Patient: Yes.
-Doctor: How about alcohol?
-Patient: No, I don't consume alcohol.
-Doctor: Okay. And any history of using drugs like marijuana or stuff like that for fun?
-Patient: No.

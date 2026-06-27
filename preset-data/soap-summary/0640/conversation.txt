@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0640
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you seen your lab results? No, do you have those in today? Yes, I have them right here. They're essentially negative, except it appears that you had C difficile in the past. Do you remember that? Yes, I got it when I worked at a hospital after graduating. Yeah, its unfortunately more common there.

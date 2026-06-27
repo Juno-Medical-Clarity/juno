@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0848
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Your chest x ray showed diffuse pulmonary edema. This means that you have fluid in your lungs. That would explain your chest pain and the difficulies with your breathing. I would like to start you off with a course of antibiotics to prevent any possible infection. I will also send in a prescription for Furosemide. It will reduce the fluid accumulation in your lungs. Do you have any questions? When should I start to feel better? You should start to feel better within three to five days.

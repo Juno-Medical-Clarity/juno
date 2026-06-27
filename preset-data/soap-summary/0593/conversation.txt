@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0593
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any chronic medical conditions that I should know about? What do you mean by that, doctor? Well, it could be anything from high blood pressure, to depression, to cancer. Do any of those sound familiar? Oh, yeah, I have a few things like that. I have anemia, high cholesterol, and, um, hypothyroidism.

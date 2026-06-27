@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1335
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How's your family? They're doing well, thank you. My three boys are all grown up. Hard to believe they're living their own as young professionals. One of them is actually a G I doctor in San Diego, California. You must be so proud of your boys. My wife and I always say how lucky we are. I'm sure. And I have a few more questions before we wrap up. Go for it. Do you drink or smoke? I smoke about a third of a pack a day and I drink every now and again, but nothing crazy.

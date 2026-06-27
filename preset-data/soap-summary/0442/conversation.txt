@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0442
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi! How are you today? I am doing well. I start a new job on Monday. I have been unemployed for about a year now. It is going to be nice to get back to work. Congratulations. Do you use tobacco products, drink alcohol or recreational drugs? I used to smoke a little bit, but I quit ten years ago. Great! I don't drink or do drugs.

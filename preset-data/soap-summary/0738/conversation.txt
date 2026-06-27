@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0738
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you a smoker? Yes. Do you use alcohol or any recreational drugs? I have been in treatment for heroin and alcohol in the past. Any current use of drugs or alcohol? I did do a little bit of coke today. Okay.

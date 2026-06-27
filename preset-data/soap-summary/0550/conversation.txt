@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0550
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you eat three meals a day? Yes. Do you think those meals add up to about two thousand calories a day? I would say yes.

@@ -1,6 +1,0 @@
-Doctor: Have you notied her behaving strangly in any way?
-Guest_family: No. She is acting perfectly normal.
-Doctor: Has she been gagging, coughing, vomiting or any other symptoms?
-Guest_family: No. The only thing that I noticed is that she spilled the liquid all over her clothes, the ground and on her hands.
-Doctor: Did you see her ingest any of the fluid?
-Guest_family: No. We didn't see her put it in her mouth. I looked inside her mouth and didn't see anything.

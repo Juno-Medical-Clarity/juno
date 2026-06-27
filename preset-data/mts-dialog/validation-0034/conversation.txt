@@ -1,5 +1,0 @@
-Doctor: Can you tell me about cancer in your family?
-Patient: Yes, my mom had stomach cancer and she died at fifty nine.
-Doctor: And father?
-Patient: My dad died at ninety one years of age.
-Doctor: Okay.

@@ -1,4 +1,0 @@
-Doctor: Good morning, sir.
-Patient: Good morning, doctor.
-Doctor: Before we begin, have you ever had surgery?
-Patient: Yes, I had a vasectomy some time ago.

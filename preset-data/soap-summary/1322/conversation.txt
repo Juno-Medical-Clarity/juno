@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1322
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi there! How are you today? Hi. I am not doing so well. I have had this cough and a pain in my stomach. Right here by my belly button. How long has this been going on? Two days. It has been very painful. I would like to examine your abdomen. Is that okay? Yes.

@@ -1,6 +1,0 @@
-Doctor: Have you had similar symptoms before?
-Patient: No never like this.
-Doctor: Any other complaints you have had in the past?
-Patient: Just some knee pain issues.
-Doctor: Okay, so chronic knee pain.
-Patient: Yes.

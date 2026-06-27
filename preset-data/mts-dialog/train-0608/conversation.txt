@@ -1,6 +1,0 @@
-Doctor: Hello. Are you ready for your surgery today?
-Patient: Can we reschedule? I'm too scared to do it.
-Doctor: It'll be fine. Don't worry too much about it. Have you ever had a surgery before?
-Patient: Never. What if something goes wrong?
-Doctor: You have nothing to worry about. I've done this procedure multiple times, and everyone was fine after.
-Patient: Thank you, Doctor. Let's get started then.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0395
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, what stomach symptoms are you experiencing? I feel an intense burning in my throat. When do you feel this? It really hurts after eating food, especially junk food. That's pretty consistent with reflux disease. Ah, yes. I got your survey results back as well, let's discuss them. Absolutely, please, what does it show. According to your answers, it looks like you have depression as well.

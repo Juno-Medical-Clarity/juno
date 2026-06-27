@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1390
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family medical history? My dad had colon cancer. Did your dad pass from colon cancer? No. They caught it early. He passed away from old age. My mom passed away when she was in her nineties from a stroke. I am sorry. Do you have any family history of any neurological disorders like, M S, Alzheimer's, Parkinson's or epilepsy? Other then my mom having a stroke, I know of nothing else.

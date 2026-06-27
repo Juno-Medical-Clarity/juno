@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1264
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you drink, sir? No, I don't drink at all. How about tobacco? Do you smoke? Well, yes. How much do you smoke, sir? I smoke about a half a pack of cigarettes a day.

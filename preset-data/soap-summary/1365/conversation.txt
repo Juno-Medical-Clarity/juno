@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1365
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have a sore throat, cough or earache? No.

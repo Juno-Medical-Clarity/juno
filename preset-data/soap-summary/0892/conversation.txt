@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0892
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, this is your follow up? How are you doing so far with Lamictal? Yes, it's the follow up. Lamictal was okay. There was no side effect with that. But I had twitching in my muscles a lot of times. It was not generalized, but I was very afraid that this will happen. What time of day was it? That you had these episodes. Mostly in the mornings. I have your recent E E G report. It did show multiple spikes and some complexes on both the sides, but it is more prominent on left. I have been taking my medications very regularly and I was getting a good amount of sleep as well. Are you able to drive? Yes. Is there any change in your social history or any other symptoms that arise or, or is it same as before? Looks same to me.

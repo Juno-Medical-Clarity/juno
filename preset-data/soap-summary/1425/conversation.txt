@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1425
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any pain while peeing? No. Any change in frequency or feeling the urgency to pee? No. And what about bladder control, any accidents? No. Any history of syphilis or any other S T D? No, never. Okay.

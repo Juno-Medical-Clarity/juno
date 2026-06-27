@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0932
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello Hello! Hi there, how are you? I have a bad headache so can you please switch off the lights, it's too bright and uncomfortable. Sure thing. Let's see what is going on here. How about that? Much better.

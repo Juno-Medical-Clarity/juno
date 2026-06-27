@@ -1,5 +1,0 @@
-Patient: In the past I have been treated for osteomyelitis of my right fifth toe with I V antibiotics therapy.
-Doctor: Oh, how long back was that?
-Patient: Ah, about five years back! I was treated for six weeks.
-Doctor: Oh, Okay. You also have a history of diabetes mellitus?
-Patient: That is correct.

@@ -1,6 +1,0 @@
-Doctor: Hi there! Welcome in, sir.
-Patient: Hi! Thank you.
-Doctor: What is your past medical history?
-Patient: No. I don't have any health problems.
-Doctor: Do you have a primary care doctor?
-Patient: No. I don't have health insurance right now.

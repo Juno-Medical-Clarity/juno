@@ -1,6 +1,0 @@
-Doctor: Is patient allergic to any medication?
-Guest_clinician: Yes, actually he is allergic to quite a few medicines. I have noted them down, here is the list.
-Doctor: Okay, so he is allergic to Lamisil, Equagesic. Oh, he is allergic to Bactrim too.
-Guest_clinician: Yeah, and Dilatrate and cyclobenzaprine.
-Doctor: That's quite a lot, we need to be careful while making his treatment plan.
-Guest_clinician: Yeah.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0779
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_clinician: Has he had a blood transfusion in the past? No, this is his first one. Guest_clinician: Okay, got it.

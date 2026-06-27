@@ -1,8 +1,0 @@
-Doctor:  Can you tell me what problems you have had in the past. Or what medical issues are currently going on?
-Patient: You mean my heart problem and things?
-Doctor: Yes.
-Patient: Okay, I have hypertension and kidney problems since many years.
-Doctor: Okay.
-Patient: I get frequent urinary infections.
-Doctor: Your urine creatinine is normal.
-Patient: Okay. I also have severe aortic stenosis.

@@ -1,8 +1,0 @@
-Doctor: Have you had sinus issues before?
-Patient: I am not sure, maybe on and off.
-Doctor: Because this is more allergic.
-Patient: Okay.
-Doctor: So, we call it allergic rhinitis.
-Patient: Is it different than sinus infection?
-Doctor: Yes, it's it is different.
-Patient: Okay.

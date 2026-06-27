@@ -1,4 +1,0 @@
-Doctor: Do you have a history of any surgical procedures?
-Patient: I had my gallbladder removed.
-Doctor: Did you have any complications with the surgery?
-Patient: No.

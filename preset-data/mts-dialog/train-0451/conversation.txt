@@ -1,8 +1,0 @@
-Doctor: Were you ever diagnosed with any kind of cancer in the past?
-Patient: No.
-Doctor: Did you ever had any rashes? Was there any change in your moles?
-Patient: No.
-Doctor: Any sudden weight loss history?
-Patient: No.
-Doctor: How about your energy level how do you feel?
-Patient: I feel great, my energy level is quite good.

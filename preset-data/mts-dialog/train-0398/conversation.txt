@@ -1,4 +1,0 @@
-Guest_clinician: Any past surgeries?
-Doctor: It looks like she had an appendectomy along with a total abdominal hysterectomy and bilateral salpingo oophorectomy sometime ago.
-Guest_clinician: Okay, noted.
-Doctor: Oh and it looks like she had a right hip fracture back in O five after a fall.

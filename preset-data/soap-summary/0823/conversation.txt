@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0823
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-low dose tramadol PRN pain.

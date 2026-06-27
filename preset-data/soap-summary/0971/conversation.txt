@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0971
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Did both your parents have heart complications. Unfortunately, yes. My mom passed from a heart attack at seventy three and my father at eighty. I'm so sorry to hear that. I lost my brother as well. He passed away from a brain tumor when he was nine years old. I can't imagine how hard that must've been. It was a dark time in our lives, but we survived it as a family.

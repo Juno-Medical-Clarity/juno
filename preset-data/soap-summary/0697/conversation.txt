@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0697
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke cigarettes? Yes. I smoke. How much do you smoke per day? About a pack or two a day. Do you drink alcohol? No. It is very rare that I will have a drink. What is your family medical history? Well, I don't know very much about my dad's side of the family but my dad did pass away from renal cancer. I am so sorry for your loss. Thank you. What about your mother or siblings? Do they have any health conditions? No. They don't have any health problems. That I know of.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1085
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you taking any medications? Yes, I am taking Accutane for my acne issues. Okay, any other medicines? No, just that. Okay.

@@ -1,6 +1,0 @@
-Doctor: Do you have any related family history?
-Patient: You mean like heart issues in the family?
-Doctor: Yeah, something like that.
-Patient: My brother died of heart attack. It was sudden everyone was shocked.
-Doctor: How old was he?
-Patient: He was not that old; he was just in his fifties.

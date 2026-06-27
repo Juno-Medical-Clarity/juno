@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1422
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, Mister G, how are you today? I am good doctor thank you for asking. I am here to talk to you about my will. Yeah, nurse informed me. So, tell me how can I help you? As you know I have terminal cancer. I have decided I do not want to be resuscitated. I have appointed my daughter as my legal healthcare proxy and she respects my wish. Tell me what I can do to make you comfortable? Honestly doctor you have done enough and I am so thankful for that. I just wish to spend my last days at home surrounded with loved ones. I have my nurse, she takes care of me. I think I am fine! Alright my friend.

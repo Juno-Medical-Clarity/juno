@@ -1,4 +1,0 @@
-Doctor: Do you smoke or drink?
-Patient: No.
-Doctor: Any drug use?
-Patient: No.

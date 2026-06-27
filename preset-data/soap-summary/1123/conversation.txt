@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1123
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family medical history? My family has high blood pressure and diabetes. Do you have any family history of nervous system disorder or disease such as multiple sclerosis, Alzheimer's disease, Parkinson's disease, epilepsy, or stroke? No. Do you have any children, miss? Yes. I have a son, he was born on October thirty first, two thousand and eight.

@@ -1,4 +1,0 @@
-Doctor: Do you have any family history of chronic illnesses that I should know about?
-Patient: What do you mean by that?
-Doctor: Well, it could be anything from depression, to arthritis, to cancer.
-Patient: Oh yeah, my mom has arthritis.

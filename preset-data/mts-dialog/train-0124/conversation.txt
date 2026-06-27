@@ -1,7 +1,0 @@
-Doctor: Any difficulty in swallowing?
-Patient: No.
-Doctor: Any nausea, vomiting or blood in your vomit?
-Patient: No, no vomit at all. No problem there.
-Doctor: Okay, any stomach pain?
-Patient: No.
-Doctor: Okay.

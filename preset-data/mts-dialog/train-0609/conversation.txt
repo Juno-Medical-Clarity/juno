@@ -1,6 +1,0 @@
-Doctor: What is your family medical history?
-Patient: I don't really remember anyone having any major health problems.
-Doctor: Okay.
-Patient: Everyone is pretty healthy.
-Doctor: That is fortunate.
-Patient: Yeah, it is.

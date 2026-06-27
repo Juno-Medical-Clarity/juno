@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0620
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, how much longer are you in juvie, young man? I've got about three weeks left, sir. Twenty five days, if you want to be exact. Good, time to make the best of getting out, right? Absolutely, I don't want to go back. Good. Do you smoke, young man? No sir, absolutely not.

@@ -1,6 +1,0 @@
-Doctor: Good morning, sir.
-Patient: Good morning, doctor.
-Doctor: So, what seems to be the problem today, sir?
-Patient: Well, I've had toe problems in the past.
-Doctor: I see, what about the rest of the lower body, any problems there?
-Patient: Actually, yes, I've had left knee issues in the past, too.

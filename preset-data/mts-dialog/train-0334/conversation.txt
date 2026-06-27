@@ -1,9 +1,0 @@
-Doctor: How are you doing with everything?
-Patient: I'm good. It's hard when you are in quarantine. I hope things will get back to normal soon.
-Doctor: So, you are here for your breast examination.
-Patient: Yes, it was due for so long.
-Doctor: I'm going to touch both of your breasts one by one to check for any lump or kind of mass. Okay?
-Patient: Yeah.
-Doctor: Okay, so both looks good. Are you feeling any pain while I'm touching?
-Patient: No, I don't feel any pain.
-Doctor: That's good, no masses, no pain and I do not feel anything in your armpit area.

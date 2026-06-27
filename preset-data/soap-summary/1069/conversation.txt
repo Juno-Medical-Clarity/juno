@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1069
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any chest pain? No, I don't. Any breathlessness? Yes, I do get breathless only when I have to do some form of exertion like walking a long time or running. Okay. How about any bowel issues? No, I don't have any stomach problems except I have to go frequently to use a bathroom. Okay frequency. How about any prolonged bleeding issues or anything like that sort? No nothing like that.

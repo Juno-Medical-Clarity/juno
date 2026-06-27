@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0485
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I want to talk to you about your reproductive history, okay? Okay. Do you take birth control pills? Yes, I do. Do you have any kind of medical history that I should be aware of? I had both chickenpox and measles when I was a kid.

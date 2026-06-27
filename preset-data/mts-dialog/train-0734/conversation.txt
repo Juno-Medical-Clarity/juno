@@ -1,4 +1,0 @@
-Doctor: Have you ever had surgery, ma'am?
-Patient: Yes, I had it for melanoma some time ago.
-Doctor: I see here that you had a hysterectomy as well, is that correct?
-Patient: Oh, yes, that's true. I had that done too.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0347
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any major medical conditions that I should know about? What, like cancer? It doesn't have to be that serious, but is there anything you take medicine for? Oh, I have allergies and asthma.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0367
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How about any breathing issues or asthma? Actually, I have a history of asthma. Oh okay, and was it severe or mild? Well, it was not severe but still remarkable. Hm, alright. Anything else? Yes, I also struggled with a serious acne problem. Got it.

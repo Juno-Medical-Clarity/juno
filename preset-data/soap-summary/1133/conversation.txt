@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1133
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Where do you work? I work at the Hilton as a head chef. Do you smoke or consume any form of tobacco? Nope. Do you drink or have ever used any illegal drug? No, none of that.

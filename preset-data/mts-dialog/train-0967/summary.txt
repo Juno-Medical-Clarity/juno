@@ -1,2 +1,0 @@
-[ROS]
-Dyspnea on exertion.  No chest pain or tightness, fever, chills, sweats, cough, hemoptysis, or wheeze, or lower extremity swelling.

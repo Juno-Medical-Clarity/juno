@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0743
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good morning, ma'am. Good morning, doctor. How are you feeling today? Honestly, I'm feeling a little bit better. That's good to hear, ma'am.

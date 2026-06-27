@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0293
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you know about any medical traits in your family? No, everyone in my family is quite healthy. I'm not aware of any medical problems. Are you sexually active? Yes, I am with my boyfriend. Do you take any drugs or alcohol or smoke? No, none of them.

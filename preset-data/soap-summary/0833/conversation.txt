@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0833
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What do you do for work? I am retired now. I was a school teacher. Are you a smoker? Yes. How much do you smoke per day? I would say about a half to a full pack a day. How long have you been a smoker. Probably sixty years.

@@ -1,4 +1,0 @@
-Doctor: Any known past medical history?
-Patient: I have high blood pressure.
-Doctor: Anything else?
-Patient: Yeah, I remember I also had higher number of fat in my blood.

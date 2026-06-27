@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1223
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you take any meds? No. Are you sure? Yes.

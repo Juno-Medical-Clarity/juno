@@ -1,4 +1,0 @@
-Doctor: Any known medical history in the family?
-Patient: Nope.
-Doctor: How about anyone with high blood pressure or heart disease or diabetes in the family?
-Patient: Nope.

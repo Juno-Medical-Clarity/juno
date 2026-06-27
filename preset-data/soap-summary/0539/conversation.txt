@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0539
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello! How are you doing? I am doing okay. Tell me about your past medical history. I was diagnosed with stage three ovarian cancer two years ago. They found a tumor in my upper abdomen. I had surgery and they removed everything. Doctor King is my oncologist. Are you still undergoing treatment? Yes. Do you have any other medical conditions? Have a heart murmur. It has not been an issue. I also have acid reflux. Do you take medication for the G E R D? Yes. I take omeprazole.

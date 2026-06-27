@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1357
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What are you taking? I take Tylenol. Is that only for pain? Yes it is.

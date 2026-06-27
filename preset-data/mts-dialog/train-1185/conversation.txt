@@ -1,7 +1,0 @@
-Doctor: Let's talk about your family's medical history.
-Patient: Hm, well both my father and my brother had colon cancer. My daughter was detected with breast cancer.
-Doctor: Do you remember what her age was?
-Patient: Yeah, she was forty.
-Doctor: I see. Anything else?
-Patient: Well, I have a heart condition and high blood pressure. I also had a stroke.
-Doctor: Okay.

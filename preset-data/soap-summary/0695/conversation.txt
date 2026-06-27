@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0695
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How're you doing today? Overall, pretty good. Any plans for the weekend? No, not really. Just dog sitting my friend's golden. Gotcha. That's still nice. We used to have a golden when I was a kid. They're the sweetest dogs. They are very sweet. Okay, so you're in for a follow up for your neck and back pain. Yessir. Have you been going to pain management? Yeah, I go once every week or so. How's your pain now? Manageable, I guess. Is the pain still keeping you up at night? Not like it used to. Good, great to hear.

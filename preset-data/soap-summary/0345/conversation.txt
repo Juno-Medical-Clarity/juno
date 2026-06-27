@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0345
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, what is your family's living situation at home? Guest_family: Um, he lives at home with me, and his father. May I assume that you are his biological parents? Guest_family: Yes, that's correct. Great, does he have any siblings? Guest_family: No, right now, he's an only child. What grade is he in? Guest_family: He's in the third grade. Great, and is he doing well in school? Guest_family: Yes, he's doing quite well.

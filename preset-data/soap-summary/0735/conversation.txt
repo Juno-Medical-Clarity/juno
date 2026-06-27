@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0735
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How old are you? I am twenty four. What brings you in today? I have been having this back pain for a long time. I thought I should come and get it checked out because it has not gotten any better.

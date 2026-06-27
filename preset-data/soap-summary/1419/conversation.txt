@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1419
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I'd like her to come see you for a consult tomorrow. Guest_clinician: How long has she been suffering from migraines with aura? About five years now. Guest_clinician: Does she have a neurologist she sees regularly? Not since moving here.

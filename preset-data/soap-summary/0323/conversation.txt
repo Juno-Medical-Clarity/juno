@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0323
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How are feeling now after the treatment? I am feeling pretty fair, improving slowly. Okay? Okay.

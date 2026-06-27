@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0755
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Welcome to A B C D General Hospital. Before we get started, ma'am, how old are you? I'm thirty nine, doctor. Great, and what seems to be the problem today? I've had this bunion for a good few months now. Is the pain getting worse? Absolutely, I can't take it anymore. How have you managed this bunion so far? I got some wider shoes, and it's done absolutely nothing. I see. Is there surgery or something we can do? I can't take the pain.

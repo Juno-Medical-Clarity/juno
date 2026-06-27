@@ -1,8 +1,0 @@
-Doctor: Anyone in your family been sick lately?
-Patient: Yes, my sister has sinus problems. She was seen today.
-Doctor: Okay that means she will be treated.
-Patient: Yes.
-Doctor: How about other family members?
-Patient: No, my mom and dad are healthy.
-Doctor: Good. Good.
-Patient: Hm!

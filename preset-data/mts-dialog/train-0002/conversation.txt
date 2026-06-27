@@ -1,8 +1,0 @@
-Doctor: Hello, miss. What is the reason for your visit today?
-Patient: I think I have some warts on my back end where the poop comes out.
-Doctor: I see. When did you start noticing them?
-Patient: I think like three to four weeks ago.
-Doctor: Do you feel any pain or discomfort?
-Patient: It itches a little, but I haven't felt any pain yet. Is this normal for a twenty two year old?
-Doctor: I'll have to take a look, but you'll be fine. Are there any other symptoms that you are aware of?
-Patient: Nope. Just the warts and itchiness.

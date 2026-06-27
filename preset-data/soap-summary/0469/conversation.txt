@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0469
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Welcome in, Miss A! Thank you. How have you been doing? I am good today! Have you not been feeling good other days? I have been feeling nervous and having some anxiety lately. Is your feelings of nervousness or anxiousness triggered by anything specific? It varies. I feel anxious when I think about retuning to work or this upcoming trip that I have planned. How often do you feel this way? It comes and goes. Have you ever had any treatment or history of depression, anxiety, or mood disorders? No.

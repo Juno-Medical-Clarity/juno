@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0340
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What are some medications you are on? I am on pain pills. Do you know their names? Yes. Oxycontin and Vicodin. Okay that helps.

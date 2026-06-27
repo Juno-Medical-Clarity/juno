@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1371
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How're you feeling today? Much better. The antibiotics seemed to really help. Are you still experiencing any symptoms? Um no, thankfully. I had some wheezing when I first started the antibiotics, but it's improved a ton. I don't think the wheeze is even there anymore. Good, good.

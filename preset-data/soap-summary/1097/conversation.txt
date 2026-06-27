@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1097
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you confirm your age for me, ma'am? Sure, I'm fifty six years old. Great, so what brings you in to see me today? Um, I'm peeing a lot, and I'm having a little bit blood in that urine as well. Have you ever had a cystoscopy? Yes, it was unremarkable, that's what they told me. When are your episodes for the most part? Um, usually during the day. I don't usually have them at night. Are you having any pain with urination? No, no pain. Aside from the little bit of blood, can you tell if there's any pus in your urine? No, I don't have any of that, it's just the little bit of blood. Have you taken any medications for this? Um, I had Ditropan, and it didn't do very well. Well, this ultrasound of the kidney is also unremarkable, so at this time I think we should try a different medication.

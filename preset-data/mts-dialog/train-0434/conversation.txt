@@ -1,6 +1,0 @@
-Doctor: Do you have any family history of lung disease, thromboembolism, pulmonary embolism, stroke, or heart disease.
-Patient: No.  My parents are healthy with no medical issues.
-Doctor: How many children do you have?
-Patient: I have five kids.
-Doctor: Do your children have any health condition?
-Patient: My children are all healthy with no medical problems.

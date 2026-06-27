@@ -1,4 +1,0 @@
-Doctor: Tell me, what's going on?
-Guest_family: She is complaining of weakness on the right side of her face.
-Patient: And I feel the right side is drooping.
-Doctor: Okay, let me look at it.

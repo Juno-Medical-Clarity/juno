@@ -1,4 +1,0 @@
-Doctor: Has the patient signed a do not resuscitate order?
-Guest_family: Yes, she has.
-Doctor: Does she have a healthcare proxy or durable power of attorney?
-Guest_family: Yes, she has both.

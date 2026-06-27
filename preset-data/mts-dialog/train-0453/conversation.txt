@@ -1,6 +1,0 @@
-Doctor: Anything else that is going on?
-Patient: Just some pain in the buttock.
-Doctor: Okay.
-Patient: I do not have anything else.
-Doctor: Okay no fever, nausea, anything of that sort?
-Patient: Nope.

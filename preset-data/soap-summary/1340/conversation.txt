@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1340
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you experiencing any headaches, or do you have any history of migraine? No. Any temporary loss of consciousness? No. Any feeling of being off balance or fainting? No. Any continuous sound you may hear? No. Okay so no tinnitus. Any mouth sores or ulcers? Um, no. Do you notice any change in your voice, any hoarseness? No, nothing like that. Did you notice any swelling in and around your mouth? No, I did not. Any history of goiter or swelling of your thyroid gland? Nope. Okay.

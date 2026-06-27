@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0698
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, ma'am, what do you do for a living? Actually, I'm retired, I don't work at all anymore. Congratulations on your retirement. Where did you go to college? Oh, I didn't go to college, I stopped after high school. That's understandable. Do you have children? Yes, my husband and I were blessed with three wonderful children. Fantastic, do they live at home? Nope, we got them all out of there. They're all grown now. Do you drink or smoke? No, I never had either. What about harder substances? No, absolutely not.

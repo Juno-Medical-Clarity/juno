@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0575
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hey, how are you? I think I am better. So you do not have any more nausea or vomiting? No I don't. How about any acidity? I think it's all better. Great.

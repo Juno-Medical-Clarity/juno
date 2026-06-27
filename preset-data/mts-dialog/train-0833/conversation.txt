@@ -1,2 +1,0 @@
-Doctor: Are you up to date on your vaccines?
-Patient: I've actually never been vaccinated before. My parents don't believe in vaccines.

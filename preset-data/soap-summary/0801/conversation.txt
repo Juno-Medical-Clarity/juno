@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0801
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke? Nope. I quit like fifteen years ago.

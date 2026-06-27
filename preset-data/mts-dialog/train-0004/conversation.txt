@@ -1,6 +1,0 @@
-Doctor: Hi, how are you?
-Patient: I burned my hand.
-Doctor: Oh, I am sorry. Wow!
-Patient: Yeah.
-Doctor: Is it only right arm?
-Patient: Yes.

@@ -1,4 +1,0 @@
-Doctor: Anything else going on from head to toe?
-Patient: No doctor, everything else is fine.
-Doctor: Are you sure?
-Patient: Yes I am sure.

@@ -1,7 +1,0 @@
-Doctor: So, do you smoke?
-Patient: No.
-Doctor: How about alcohol?
-Patient: I drink, but just normal. I don't have any alcohol problem.
-Doctor: Okay. So, no history of any drug or alcohol abuse, right?
-Patient: No, not at all.
-Doctor: Okay.

@@ -1,8 +1,0 @@
-Doctor: Are you aware of any family medical history?
-Patient: Nope. Both of my parents, they died of old age. They were in their eighties. I cannot remember of any other medical issue in any of my relatives.
-Doctor: What about memory loss or stroke or high blood pressure, diabetes, or any other kind of mental illness?
-Patient: Nope.
-Doctor: Anyone sick in your family out of these things?
-Patient: Nope.
-Doctor: Do you have kids?
-Patient: Yeah, I have five children and they all are doing well in their life.

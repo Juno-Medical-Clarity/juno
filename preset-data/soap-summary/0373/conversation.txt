@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0373
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Does anyone else in your family have aneurysm problem? Well, my grandmother had it. She actually passed away due to brain aneurysm. Oh, okay.

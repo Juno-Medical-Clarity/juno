@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0966
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, sir. How are you doing? I am doing well, thanks. Just trying to come to you more regularly to make sure my lungs and heart are okay. That's great. The previous notes said that you quit smoking. Are you still off? Yes, I quit in nineteen ninety six. I come yearly to the doctor's office to make sure that the damage I did to my lungs is monitored. You have a great attitude. I appreciate when patient's take their health into their own hands. We can only do so much, but it is up to the patient to bring themselves in. Yeah. I smoked for a long time and I know it was bad for me. It was just the norm back in the day. Do you drink at all? I do. Only occasionally.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0889
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, young lady. Hello, doctor. What grade are you in, young lady? I'm in middle school, um, I'm in the eighth grade. Do you play any sports? Yes, I love to play basketball. Good, are both of your parents at home? Yes, I live with my mom and dad. Do you have any siblings? Yes, I have a little brother, um, he's nine now. Great, have you started your periods? Um, yes, my first one was in September.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1129
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-And when did you had your last tetanus shot? Um, I don't remember correctly, but it should be in my reports. I did have one sometime back, just don't remember when exactly. Ah, no problem. I see it here in your reports and it's up to date. So that's good. Cool.

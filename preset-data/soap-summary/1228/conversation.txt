@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1228
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What brings you here today? I have a queasy tummy and the feeling that I am about to throw up all the time. Anything else? I'm actually throwing up a lot.

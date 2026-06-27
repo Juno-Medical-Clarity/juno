@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0383
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you feeling any pain? No, I feel great. Is there any other medical issue that we should be worried about? No, it feels like I'm young again. I'm able to do all my activities.

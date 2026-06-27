@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0545
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, what is happening with you? I had knee replacement for both my knees three years ago and now I am having some pain. Okay and in one or both knees? Both. Okay.

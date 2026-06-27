@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0641
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Breath in breath out, let me tap it and see. Well, your lungs sound clear. Okay.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1132
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Is this your first surgery or have you had other surgeries in the past? This will be my second. I had a hernia repair back in O ten.

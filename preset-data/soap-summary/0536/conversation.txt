@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0536
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is going on? I have pain in my jaw since the morning. How bad is it? Not that bad.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0970
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good morning, ma'am. I just need a few pieces of information before we get started today. Good morning, doctor. Absolutely, that's not a problem at all. Do you smoke or drink, ma'am? I don't smoke, and I drink, um, I'd say on occasionally. What about harder drugs, do you use any of those? No, I don't. Are you married? Yes, to my wonderful husband. That's great, what do you two do for a living? I'm a social worker, and my husband is a high school chemistry teacher. What great work both of you are doing. What kinds of people do you work with as a social worker? I love it, I work with adult abuse and neglect issues. Yes, that's great. Do you have any children? Yes, we have two sons. Do they live at home? No, they're both grown and on their own now.

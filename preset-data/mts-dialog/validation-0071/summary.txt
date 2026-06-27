@@ -1,2 +1,0 @@
-[ROS]
-HEENT: See has had headaches, and some dizziness. She denies any vision changes. CARDIAC: She denies any chest pain or palpitations. RESPIRATORY: She denies any shortness of breath. GI: She has had persistent nausea and vomiting. She denies diarrhea, melena or hematemesis. NEUROLOGICAL: She denies any neurological deficits. All other systems were reviewed and were negative unless otherwise mentioned in HPI.

@@ -1,8 +1,0 @@
-Doctor: Are you allergic to anything?
-Patient: As in drugs?
-Doctor: Yes, sorry. I was referring to drug allergies.
-Patient: Oh yeah. I'm allergic to Sulfa drugs.
-Doctor: What happens when you take Sulfa drugs?
-Patient: Break out in a terrible rash. I remember I had to go to the E R the first and last time I took it.
-Doctor: Wow, I'm sorry. Rashes can be very uncomfortable and sometimes require immediate attention.
-Patient: Yeah, so no more Sulfa drugs for me. That's for sure.

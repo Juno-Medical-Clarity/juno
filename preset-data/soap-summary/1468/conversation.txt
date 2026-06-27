@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1468
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good morning, sir. Good morning, doctor. Before we begin, have you ever had surgery? Yes, I had a vasectomy some time ago.

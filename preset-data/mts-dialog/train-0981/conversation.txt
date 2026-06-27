@@ -1,7 +1,0 @@
-Doctor: Have you experienced any headaches or blackouts recently?
-Patient: No.
-Doctor: Dizziness or seizure?
-Patient: Nope.
-Doctor: Any history of stroke?
-Patient: No.
-Doctor: Okay, good.

@@ -1,5 +1,0 @@
-Doctor: Good morning, ma'am.
-Patient: Good morning, doctor.
-Doctor: How are you feeling today?
-Patient: Honestly, I'm feeling a little bit better.
-Doctor: That's good to hear, ma'am.

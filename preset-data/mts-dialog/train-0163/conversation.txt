@@ -1,4 +1,0 @@
-Doctor: Do you have any significant medical conditions in your history that I should know about?
-Patient: What, like high blood pressure?
-Doctor: Well, it could be anything from high blood pressure, to depression, to something as serious as cancer.
-Patient: Oh, no, I don't have anything like that, at least not that I know if.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0592
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi, tell me about your family? Did anyone have any medical diseases? Both of my parents were healthy, but my maternal grandfather had a stroke. Did anyone in your family ever have migraines? No, not that I know.

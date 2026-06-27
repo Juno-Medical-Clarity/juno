@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1106
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi there! Welcome in, sir. Hi! Thank you. What is your past medical history? No. I don't have any health problems. Do you have a primary care doctor? No. I don't have health insurance right now.

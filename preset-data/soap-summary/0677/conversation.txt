@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0677
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married? Yes. Who do you have in your family? Me, my spouse and three happy kids. One of them is ready to go to college. Are you working? Yes and no. What does that mean? I was an attorney but retired from my official post two years back. I just couldn't stay back home and do nothing, so I just joined a private company and am working there part time. Sounds great. Do you smoke or drink? No. I am guessing no drugs either? Correct.

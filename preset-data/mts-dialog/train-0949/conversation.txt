@@ -1,3 +1,0 @@
-Doctor: Did you have an allergic reactions to any medication?
-Patient: Nope.
-Doctor: Okay.

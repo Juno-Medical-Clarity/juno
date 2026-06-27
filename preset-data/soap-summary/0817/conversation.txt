@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0817
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you on steroids? No. Any history of cancer, chemotherapy or anything related? No.

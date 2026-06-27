@@ -1,2 +1,0 @@
-Guest_clinician: Any significant family history of disease?
-Doctor: None according to my records.

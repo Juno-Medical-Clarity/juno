@@ -1,4 +1,0 @@
-Doctor: What is your family medical history?
-Patient: My dad passed away from a heart attack. He was fifty nine. My mom died from complications with her diabetes.
-Doctor: Do you have any siblings?
-Patient: Yes. My brother had a bypass with a graft in August of ninety five.

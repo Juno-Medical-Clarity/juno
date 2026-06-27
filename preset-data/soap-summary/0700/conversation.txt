@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0700
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke or drink? Never smoked a cigarette a day in my life. As for alcohol, I'll drink socially with friends and family.

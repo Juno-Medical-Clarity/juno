@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1215
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have allergies to any medications? Um I'm allergic to Clonidine and Medifast. What happens when you take Clonidine? I get a really bad rash. And how about with Medifast? I get very tired after taking it. The last time I took it, I had trouble getting out of bed.

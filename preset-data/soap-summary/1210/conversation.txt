@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1210
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What's going on? I am having a bellyache. Since when? Oh, it's been a while now. Okay. Yeah.

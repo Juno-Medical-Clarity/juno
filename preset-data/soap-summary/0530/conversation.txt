@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0530
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Is this something new? Or have you had it before? No doctor, this is new. What exactly are you feeling? I feel like my tongue is swollen. Okay. How old are you? I am fifty four years old. Okay let me see how we can evaluate that.

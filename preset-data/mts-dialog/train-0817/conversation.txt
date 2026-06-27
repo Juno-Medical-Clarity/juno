@@ -1,2 +1,0 @@
-Doctor: Do you have any family history of heart disease?
-Patient: My mother has coronary artery disease.

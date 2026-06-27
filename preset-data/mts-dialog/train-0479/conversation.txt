@@ -1,8 +1,0 @@
-Doctor: Are you married, ma'am?
-Patient: No, I'm divorced.
-Doctor: Do you live alone?
-Patient: Yes, so I have no support at home, it's difficult.
-Doctor: Do you drink or smoke?
-Patient: No, I never have.
-Doctor: What about more illicit substances?
-Patient: No, absolutely not.

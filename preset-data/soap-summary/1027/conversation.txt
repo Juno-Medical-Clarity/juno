@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1027
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you undergone any surgeries? I had both my tubes tied in O one and I had a polyp removed when I was fourteen. And that was a- Oh, sorry I didn't mean to interrupt. It's alright. I just wanted to know if that polyp was found in your colon? Yes, it was.

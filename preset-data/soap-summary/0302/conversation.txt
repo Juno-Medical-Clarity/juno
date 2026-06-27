@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0302
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi, what brings you here today? I feel this lump on the upper side of my breast. Both sides? No, only on the left side. Do you feel it deep inside or on the outer side? Only on the outer side.

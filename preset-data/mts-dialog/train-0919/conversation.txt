@@ -1,4 +1,0 @@
-Doctor: Do you have any allergies?
-Patient: No, I do not have any allergies.
-Doctor: Okay so no medically relevant allergies then. Nothing?
-Patient: Nope.

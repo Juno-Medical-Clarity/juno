@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0748
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi, I would like to physically examine your rectal area, ok? No, I am not comfortable with that. I don't want you to do that.

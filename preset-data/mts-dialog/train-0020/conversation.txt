@@ -1,5 +1,0 @@
-Doctor: Hello, sir. I see your last visit was on July two thousand and seven. What was the reason for that visit?
-Patient: My asthma was acting up, and it felt like I couldn't breathe.
-Doctor: Do you have a history of asthma?
-Patient: Not that I know of, but I know I always get this really bad cough where I cough up some nasty phlegm.
-Doctor: I see. I'm looking at your report and it says you have a history of pneumonia.

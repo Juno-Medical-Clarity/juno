@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1315
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you ever had any major surgeries? I had a skin tag removed but no. No major surgeries. Okay.

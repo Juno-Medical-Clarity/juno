@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0321
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Where do you live? I live in a board and care. It is a nice small care home with some very nice and supportive people. It is just next to the Safeway on Village Drive. Nice. It looks like you love living there. Oh yes. I feel very relaxed there. Did you consume alcohol in any way? No Sir. Any tobacco consumption? Never in my life. Did you ever try any kind of illicit drugs? Any I V drugs? No. I have always kept myself away from all those things.

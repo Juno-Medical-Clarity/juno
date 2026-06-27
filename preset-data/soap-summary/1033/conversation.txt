@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1033
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Where's your pain? Right above my belly button. It's been bothering me for three weeks now. Does the pain come and go? Um it's pretty constant, but it does seem to get worse at night. Do you find that sitting or laying down in certain positions helps the pain? Eh not really. I can't seem to really get comfortable since it started. Have you taken any medicine for the pain? I uh- Yes? Um I took Pepto Bismol a few times, but that didn't do much. Did they already take you back for your C T scan? Yeah. We should be getting the results of your scan fairly soon then. In the meantime, I'm going to put in some additional orders.

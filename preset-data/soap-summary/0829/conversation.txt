@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0829
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any allergies? I am allergic to IV contrast. Are you sure? Yes.

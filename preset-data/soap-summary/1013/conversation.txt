@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1013
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you been taking anything for high blood pressure? Yeah, I started taking Toprol and uh the one that starts with an A. I forget what it's called. Hm are you talking about Avalide? Oh right, yeah that's the one.

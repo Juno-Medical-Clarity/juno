@@ -1,4 +1,0 @@
-Doctor: Are you married, ma'am?
-Patient: Yes.
-Doctor: Do you smoke, use alcohol or use recreational drugs?
-Patient: No.

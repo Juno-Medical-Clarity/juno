@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0327
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Where do you work, miss? Well, you see, I am a civil engineer. Right now, due to pandemic like everyone else I am working from home. Are you working full time or is your disability affecting that? No, I can only work on half time. This disability does not let me work full time. I need to go to physical therapy quite frequently on and off and I also have a baby who consumes a lot of my time. Do you smoke or drink? No, I've never done any of them.

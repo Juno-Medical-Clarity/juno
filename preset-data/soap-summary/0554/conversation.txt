@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0554
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any medical conditions that I should know about? No, not that I know of. So, there's no history of depression, or cancer, or high blood pressure? No, it's not ringing any bells.

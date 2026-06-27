@@ -1,6 +1,0 @@
-Doctor: Oh, dear God! What happened?
-Guest_family: Hi Doctor, I am his mom.
-Doctor: Hello, so what happened?
-Guest_family: He was trying to climb a tree, slipped from there and got a deep cut on his thigh.
-Doctor: So, you fell from the tree?
-Patient: Yes.

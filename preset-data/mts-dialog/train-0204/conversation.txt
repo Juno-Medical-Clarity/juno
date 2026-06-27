@@ -1,6 +1,0 @@
-Doctor: How are you?
-Patient: Look at this fifth fingernail on my left hand, doctor.
-Doctor: Oh what is stuck here?
-Patient: I think it's wood splinter.
-Doctor: Oh, must be painful!
-Patient: Yes a lot.

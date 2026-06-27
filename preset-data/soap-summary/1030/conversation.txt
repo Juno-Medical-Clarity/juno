@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1030
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you allergic to anything? As in drugs? Yes, sorry. I was referring to drug allergies. Oh yeah. I'm allergic to Sulfa drugs. What happens when you take Sulfa drugs? Break out in a terrible rash. I remember I had to go to the E R the first and last time I took it. Wow, I'm sorry. Rashes can be very uncomfortable and sometimes require immediate attention. Yeah, so no more Sulfa drugs for me. That's for sure.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1127
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Looking at your medical history now. Any changes since your last visit? No changes.

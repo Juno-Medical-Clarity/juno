@@ -1,9 +1,0 @@
-Doctor: Hi, there. How are you doing?
-Patient: I think I have some sort of condition.
-Doctor: Why do you say that?
-Patient: My body has been feeling weird lately.
-Doctor: I see. Is there anything that runs in your family?
-Patient: I know a lot of my family has some sort of heart problem. We have high blood pressure and blood sugar. There's one more thing. It starts with a C. Something to do with the brain. Do you know?
-Doctor: Is it cerebrovascular disease?
-Patient: There you go. How'd you get that so fast?
-Doctor: I guess I know my stuff.

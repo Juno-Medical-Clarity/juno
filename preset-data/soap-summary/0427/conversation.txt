@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0427
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you taking any medications? Yes I am taking thyroid meds and Lipitor.

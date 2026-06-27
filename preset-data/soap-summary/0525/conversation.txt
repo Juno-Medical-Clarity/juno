@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0525
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How long have you had this cough? Past three weeks, doc. Are you bringing anything up when you cough? Nah. Any shortness of breath or chest pain? Nah. How about fevers or chills? None of that.

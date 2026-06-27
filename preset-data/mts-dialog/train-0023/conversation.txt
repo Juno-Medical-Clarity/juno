@@ -1,5 +1,0 @@
-Doctor: Are you allergic to anything?
-Patient: Yes, I am allergic to Penicillin.
-Doctor: Any other drugs that you could be allergic to?
-Patient: Nope that is all.
-Doctor: Okay.

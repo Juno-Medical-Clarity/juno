@@ -1,2 +1,0 @@
-Doctor: Have you had any procedures in the past?
-Patient: No.

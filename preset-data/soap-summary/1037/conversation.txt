@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1037
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-We're going to check around your knee now. Okay, sounds good. Looks like your deep tendon reflexes are the same on both legs. Sensation seems great and intact.

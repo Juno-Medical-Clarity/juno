@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0992
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you allergic to any meds? Me? Yes. No, I am not. Are you sure? Yes, I am damn sure. Okay great!

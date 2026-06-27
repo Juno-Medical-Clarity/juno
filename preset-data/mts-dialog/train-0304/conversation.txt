@@ -1,6 +1,0 @@
-Doctor: How are you?
-Patient: I am good.
-Doctor: That's great. You are stable.
-Patient: Can I go home now?
-Doctor: Yes, you can.
-Patient: Thank you!

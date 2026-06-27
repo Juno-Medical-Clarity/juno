@@ -1,6 +1,0 @@
-Doctor:  What brings you in today?
-Patient: My back started hurting last night. I have a stomachache. I have had pain with urination for the last two days.
-Doctor: Do you have any other symptoms?
-Patient: I just started coughing and now I have a fever.
-Doctor: Do you have any history of kidney stones?
-Patient: Yes.  I had kidney stones less than a year ago.  I had a urinary tract infection at the same time.  It was awful.

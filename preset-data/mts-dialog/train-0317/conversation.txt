@@ -1,5 +1,0 @@
-Doctor: Any allergies?
-Patient: Um yeah. I'm trying to remember the name. It's a pain killer that starts with an L. Oh Lortab.
-Doctor: What happens when you take Lortab?
-Patient: Really bad hives. I've only ever taken it once.
-Doctor: I'll make note of that in your chart so we have it in your records.

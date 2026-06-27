@@ -1,5 +1,0 @@
-Doctor: So, where do you work?
-Patient: Oh, I am a data operator for an I T company.
-Doctor: Okay.
-Doctor: Do you smoke or drink?
-Patient: No, I don't!

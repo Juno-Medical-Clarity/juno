@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0563
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, does high blood pressure run in your family? Um, no it's just me. Okay and this was your first time? Yes. Because I am looking at your previous charts and I don't see it mentioned before. Oh yeah first time it shot up this high. I never had a high blood pressure problem before.

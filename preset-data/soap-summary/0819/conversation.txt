@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0819
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_clinician: I don't see any past medical history here in this report. We don't have any record of P M H for this patient. Guest_clinician: Okay.

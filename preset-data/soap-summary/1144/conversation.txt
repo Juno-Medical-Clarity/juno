@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1144
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, do you smoke? No. How about alcohol? I drink, but just normal. I don't have any alcohol problem. Okay. So, no history of any drug or alcohol abuse, right? No, not at all. Okay.

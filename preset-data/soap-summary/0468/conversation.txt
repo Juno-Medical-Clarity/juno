@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0468
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Is your husband still around, ma'am? No, he passed away a few years ago. I'm so sorry to hear that. Oh, it's quite all right. Do you drink or smoke? No, I don't do either of those. Good, so where are you living now? I'm living at Kansas Christian Home. Do you live independently there? Yes, thankfully. But, I can't do a lot of things. I have to be sure to take my medicines. Did you drive yourself today? No, I had a driver today. Can we speed this up, I need to get to the noon meal.

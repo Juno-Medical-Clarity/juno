@@ -1,8 +1,0 @@
-Doctor: Can you tell me about the medications that you are currently using?
-Patient: I am taking Alesse twenty eight.
-Doctor: Do you know its strength? Um, like how many milligrams?
-Patient: Oh yes, it is twenty M C G and I take point ten milligrams of it.
-Doctor: When did you start it?
-Patient: On seventh August in two thousand and one.
-Doctor: Who prescribed it?
-Patient: My O B G Y N, Doctor A.

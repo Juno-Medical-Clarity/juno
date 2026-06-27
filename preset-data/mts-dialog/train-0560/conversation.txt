@@ -1,4 +1,0 @@
-Doctor: Do you have any family medical history of migraines?
-Patient: I know that my brother has them too. Mom, do you know if anyone else gets them?
-Guest_family: Your grandfather had migraines.
-Doctor: Okay.

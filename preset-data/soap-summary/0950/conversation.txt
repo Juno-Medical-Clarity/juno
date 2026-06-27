@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0950
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-In the past I have been treated for osteomyelitis of my right fifth toe with I V antibiotics therapy. Oh, how long back was that? Ah, about five years back! I was treated for six weeks. Oh, Okay. You also have a history of diabetes mellitus? That is correct.

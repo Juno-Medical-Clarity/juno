@@ -1,4 +1,0 @@
-Doctor: Do you smoke?
-Patient: Nope.
-Doctor: What about alcohol? Or any kind of drugs?
-Patient: Nope.

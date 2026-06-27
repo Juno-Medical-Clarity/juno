@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1372
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any medical problems that run in the family? No, nothing that comes to mind.

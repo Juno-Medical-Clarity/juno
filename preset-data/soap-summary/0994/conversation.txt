@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0994
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-And you've had recurring abscesses for the past two years, correct? Unfortunately, yes. Where have they been located? Um in the public area and my thighs. Have you ever needed to get an abscess drained? Yeah. I've gotten about four I and D's.

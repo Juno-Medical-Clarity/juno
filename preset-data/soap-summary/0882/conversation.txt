@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0882
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How's it going? I haven't seen you in a long time. Hey, Doctor. My headaches have been getting worse. Remind me again. Does you family have a history of migraines. I don't think so. Okay. Let's perform some tests.

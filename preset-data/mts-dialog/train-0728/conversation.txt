@@ -1,9 +1,0 @@
-Doctor: Since you have a family history of coronary heart disease, let me check you for its risk factors.
-Patient: Yeah, my father had it.
-Doctor: Any history of high blood pressure or diabetes?
-Patient: No.
-Doctor: How about smoking, do you smoke?
-Patient: No, I don't smoke.
-Doctor: And in the past, did any other Doctor mention that you might have sign or symptom indicating that you may have coronary artery disease?
-Patient: No.
-Doctor: Okay.

@@ -1,4 +1,0 @@
-Doctor: Do you have any history of rheumatic fever as a child?
-Patient: No.
-Doctor: Any history of anything other then usual childhood illnesses?
-Patient: No.

@@ -1,4 +1,0 @@
-Doctor: Hi there! How are doing today?
-Patient: I am doing well.
-Doctor: How have you been doing with keeping your hemoglobin levels between four and five point six prercent?
-Patient: I have been doing well. I have been able to keep it within that range.

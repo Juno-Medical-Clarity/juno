@@ -1,4 +1,0 @@
-Doctor: Have you had any operations in the-
-Patient: Nope. No surgeries.
-Doctor: How about any past injuries or illnesses?
-Patient: Nope.

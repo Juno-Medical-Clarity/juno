@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0792
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How are you feeling after that insulin drip, Miss A B C? I am feeling much better. My sugar levels are normal. Yes, between one hundred fifteen and one thirty four. So, on the second day after your admission they did laparoscopic removal of your gallstones. You were very difficult to intubate. But everything went well with surgery. There was some swelling and adhesions around your gallbladder, but all is well that ends well. What was my blood sugar during surgery? Great question. After surgery they were around two thirty three. I am getting a special insulin? Yes, sliding scale insulin. Can I go home? Yes, you are all set to go home, everything is stable.

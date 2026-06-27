@@ -1,3 +1,0 @@
-Patient: Doc what are you going to diagnose me as?
-Doctor: We are looking at blood born pathogen exposure secondary to needlestick.
-Patient: Yes, I was also thinking around contamination.

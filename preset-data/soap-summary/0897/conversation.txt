@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0897
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_clinician: Is the patient being admitted for disseminated C M V infection? Yes. I suspect they have possible C M V pneumonitis as well. Guest_clinician: Are they on immunosuppressants? Yes. They have polymyositis and they're taking Prednisone and Methotrexate. Guest_clinician: Got it.

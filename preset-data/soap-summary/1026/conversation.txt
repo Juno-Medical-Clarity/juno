@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1026
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, do you remember when your last pap smear was? I have it written down right here in my notes. It was in October of two thousand one. Great, do you have any children? Yes, I have a beautiful daughter. That's wonderful. Have you only been pregnant once? Yes, I've just pregnant once and it was with my daughter.

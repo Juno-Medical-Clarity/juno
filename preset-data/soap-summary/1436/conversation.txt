@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1436
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How are you doing young man? I'm good. Thank you. Let's see how your chest is doing. Okay. Chest measurements look nice. No issue there. The outline also looks great. Also, there is no hunchback?

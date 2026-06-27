@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0657
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Did you have any surgeries in the past? Yes, I had a partial removal of my ovaries and then I also had my appendix removed. Okay anything else? Yeah, I also got my tummy tucked. Okay.

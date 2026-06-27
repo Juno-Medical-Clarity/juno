@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0324
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Sir? Can you hear me? Are you Mister Smith's wife? Guest_family: Yes. I am his wife. How old is he? Can you tell me a little bit of how your husband's condition has come to this point? His level of consciousness is concerning. Guest_family: He is eighty five. He took the entire M G of Xanax. He is only supposed to take point one twenty five M G of Xanax. That is why he is like this. It looks like your husband was admitted to the emergency room the night before. How did these injuries to his face happen? Guest_family: He fell off his wheelchair. The Adult Protective Services said they found your husband in the home barley conscious. How long had he been that way? Guest_family: All day. Do you know what other medications your husband has taken other than the Xanax? Guest_family: He didn't take his regular medications for two days.

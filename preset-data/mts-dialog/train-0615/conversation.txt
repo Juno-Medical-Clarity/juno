@@ -1,4 +1,0 @@
-Doctor: Do you use tobacco or other drugs?
-Patient: No.
-Doctor: Do you drink?
-Patient: No.

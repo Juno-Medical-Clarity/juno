@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0922
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I am looking at her x ray report and she had a sternotomy in the past. Guest_clinician: Yes, and we placed an I C D implant and an aortic valve mechanical implant. Her pleural effusion was really worrisome causing left sided opacification of her diaphragm. Oh I see!

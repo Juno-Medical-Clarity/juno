@@ -1,4 +1,0 @@
-Doctor: What medication have you tried?
-Patient: I took Nexium.
-Doctor: Pain?
-Patient: Yes.

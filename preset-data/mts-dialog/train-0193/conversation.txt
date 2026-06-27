@@ -1,6 +1,0 @@
-Doctor: Hello how are you? Doctor Mina is an intern working with me. She will be taking notes and discussing your case today.
-Patient: That's okay.
-Doctor: So, tell me Doctor Mina, what brings this young man today here?
-Guest_clinician: This is a sixteen year old right handed boy. He is studying in eleventh grade. He is having some difficulties with vision like blurring and focusing. He was diagnosed with a suprasellar tumor. Later on, January fourth, he underwent a surgery for his tumor. Biopsy reports said that it was craniopharyngioma. Even after the surgery, there was some residual disease left and his visual apparatus was decompressed.
-Doctor: Thank you Doctor.  Tell me how are you doing young man? Are there any difficulties going back to school?
-Patient: I am doing fine. I do get some headaches and it feels like somebody is ringing bells in my ears. My eyesight has improved a lot.

@@ -1,2 +1,0 @@
-[DISPOSITION]
-Improved and stable.

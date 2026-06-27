@@ -1,3 +1,0 @@
-Doctor: Do you have patient's family history?
-Guest_clinician: At this point of time, we don't have it.
-Doctor: Hm, okay.

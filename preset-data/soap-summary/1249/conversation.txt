@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1249
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke cigarettes? No, that never really appealed to me, doctor. Good, what about more illicit substances? Oh, most certainly not. What about alcohol, do you drink? Well, I'd say I'm an occasional drinker.

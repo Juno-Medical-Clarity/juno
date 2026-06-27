@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1427
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-If I'm understanding correctly, you sustained an elbow injury during a fight with some other kids in Juvenile Hall? Yeah. My left elbow is killing me. How old are you? Seventeen. Are you having pain anywhere else? Yeah. My left ankle also hurts. Are you able to walk without difficulty? Yeah. Any knee pain? Not right now, but I've had left knee pain in the past. Did you pass out or hurt your neck in any way? I didn't pass out. I hit my head against the floor when one of the kids tried to pin me down. Do you have a headache, nausea, or blurry vision? No. And no chest or abdominal pain? No. Were there any weapons like knives or guns used during the fight? No.

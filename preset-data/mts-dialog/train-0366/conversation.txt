@@ -1,4 +1,0 @@
-Doctor: Do you have any major medical conditions that run in your family that I should know about?
-Patient: What do you mean by that?
-Doctor: Well, it could be anything from diabetes to high blood pressure to cancer.
-Patient: Oh, yeah. My brother had prostate cancer.

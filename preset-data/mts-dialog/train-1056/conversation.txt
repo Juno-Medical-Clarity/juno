@@ -1,6 +1,0 @@
-Doctor: So I have here that you're taking three different medications.
-Patient: Yeah. I've been taking them every day just like they told me to.
-Doctor: I see. That's good. Did you refill your prescriptions with the newly revised doses? It looks like they changed the dosing of your medications at the hospital.
-Patient: Um I've just been taking what I have at home.
-Doctor: I advise that you take the doses that they prescribed. If you'd like me to put in a new order, please let me know.
-Patient: Okay, yeah that's fine. I can pick it up on my way home. I didn't think the dosing mattered much as long as I took the meds every day.

@@ -1,6 +1,0 @@
-Doctor: Hello, nice to meet you, miss. I will be taking care of you today. Before we start, can I get to know you a bit? I like to know who I am treating.
-Patient: Hello, nice to meet you. Of course. Um, what can I say? I am a recent widow. My husband passed when we were married for only eight years. I am also retired and loving every minute of it.
-Doctor: I am sorry to hear that, but I am glad you are happy after retirement. Do you celebrate your infinite days off with a drink or a cigarette?
-Patient: No, I do not smoke. I drink occasionally, but it is very rare.
-Doctor: Do you have any children that you spend your time with?
-Patient: I have three wonderful children.

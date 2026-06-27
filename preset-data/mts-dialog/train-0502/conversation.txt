@@ -1,4 +1,0 @@
-Doctor: It looks like he has a history of high blood pressure, high cholesterol, and Afib.
-Guest_clinician: Does he see a cardiologist for his Afib?
-Doctor: Not according to his chart. I'll see if I can call his emergency contact to confirm.
-Guest_clinician: Okay. Keep me posted.

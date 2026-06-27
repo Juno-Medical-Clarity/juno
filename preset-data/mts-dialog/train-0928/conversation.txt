@@ -1,6 +1,0 @@
-Doctor: Hi, do you smoke?
-Patient: No, sir, I don't.
-Doctor: Do you take any drugs?
-Patient: No.
-Doctor: What about drinks? Do you take alcohol in any form?
-Patient: No, none of those.

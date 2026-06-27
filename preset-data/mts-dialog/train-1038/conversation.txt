@@ -1,8 +1,0 @@
-Doctor: Are you married, sir?
-Patient: Yes, to my wonderful wife.
-Doctor: Great, can I assume you support each other at home?
-Patient: Yes, doctor, that's correct.
-Doctor: Do you smoke or drink, sir?
-Patient: Well, I don't smoke, and I don't do anything harder, either. But I drink just about every day.
-Doctor: How much do you drink a day?
-Patient: I drink maybe two or three drinks a day, so maybe four or nine a week.

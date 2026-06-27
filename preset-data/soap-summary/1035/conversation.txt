@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1035
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, ma'am. Good afternoon, doctor. So, what do you do for a living? Right now, actually, I'm not working. That's okay, I'm not here to judge. Are you married? No, I'm happily single right now. Good for you, do you have any kids? No, I don't have any, its just me. Do you drink or smoke? No, I don't do any of that. Good, and do you use anything harder? Like illicit drugs? No, I absolutely do not. Good, and with ten being the most stressful day every, how would you rate your stress level out of ten? Today, I'd say its about an eight out of ten.

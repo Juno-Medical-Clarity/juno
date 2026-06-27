@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0463
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke, sir? No. Do you drink? No. I was a boxer before so that's why I was always stayed away from these things. How is your living condition? Are you living alone or with family? Mostly I'm by myself during the daytime. Family comes to help with me on and off. I just love it that way. I wasn't to be in an independent home setting soon.

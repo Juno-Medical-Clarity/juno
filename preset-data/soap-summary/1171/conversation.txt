@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1171
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I just need to confirm a few pieces of information from my nurse before we begin today, sir. Sure, no problem, doctor. Great, so it says here that you are forty five years old, and you identify as Caucasian. Is that correct? Yes, that's correct. Thank you, so, what seems to be the problem today? Well, I have this pain in my right knee, sir. Where is your pain? It's right here, on the inside of my right knee. Is there an injury associated with this pain? Actually, yeah. I twisted it while I was at work.

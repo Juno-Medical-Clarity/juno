@@ -1,4 +1,0 @@
-Doctor: Have you had any surgeries in the past?
-Patient: Actually, yes, I had my gallbladder removed in nineteen ninety two.
-Doctor: Great, any other surgeries? Think back a little further?
-Patient: Oh yeah, I had my appendix out in nineteen eighty eight.

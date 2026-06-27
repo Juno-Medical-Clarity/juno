@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1444
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Welcome in, sir. I am Doctor Gray. Thank you. It's nice to meet you. What is your past medical history? I had surgery on my shoulder thirteen years ago and after the surgery I lost my sense of smell. I still can't smell. I also can't see very well in my right eye. How old are you? I am seventy six. Do you get headaches? No. Do you have any nasal drainage? No. Do you ever experience any weakness or numbness throughout or localized to an area of the body. No. Have you had any resent weight loss? No.

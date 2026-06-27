@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0806
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have patient's family history? Guest_clinician: At this point of time, we don't have it. Hm, okay.

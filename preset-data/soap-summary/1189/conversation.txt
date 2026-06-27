@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1189
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So it looks like you're here today for a noticeable foreign body sensation in your eye. Yeah, my left eye. Never had this happen to me in my forty one years. First time for everything I guess! When did you first notice the sensation? Um when I was at work this morning. It felt like something was in my eye. I went to the bathroom mirror to check it out, but didn't see anything. I flushed my eyes with water in hopes of it helping with the weird feeling. Okay. Hm, are you experiencing any eye pain, blurred vision, or sensitivity to light? The pain has definitely gotten worse since this morning. My vision is fine and bright lights don't seem to be a problem.

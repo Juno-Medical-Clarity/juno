@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0678
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-When did you stop smoking? About thirty years back. Okay. How about any alcohol or drugs? No never. Guest_family: Mom, please let the doctor know about the time when you had it in the past. Yes, please tell me son. Guest_family: She used to drink a long time back and used to take a lot of prescription medication. Okay. Yes, that. Thank you for that information. How long ago? I don't remember maybe more than twenty years.

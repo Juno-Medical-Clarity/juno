@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1195
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So how are you feeling? I am feeling well. Any illness or fever? No, nothing like that. Any headache or nausea? No. Any vomiting or stomach upset? No. Okay, any numbness tingling or loss of sensation in the hand? No, not at all. Otherwise feeling well? Yeah.

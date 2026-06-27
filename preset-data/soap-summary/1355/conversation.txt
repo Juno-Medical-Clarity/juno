@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1355
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any major or minor surgeries done in the past? Guest_family: Sorry, I have no idea about it. Guest_family: I just started working for him.

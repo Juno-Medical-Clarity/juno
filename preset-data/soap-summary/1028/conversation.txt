@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1028
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Guest_family: Doctor can you check my baby boy? Yes for sure. Guest_family: He has a fever.

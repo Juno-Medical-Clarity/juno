@@ -1,5 +1,0 @@
-Doctor: Are you taking any medications?
-Patient: No.
-Doctor: Any over the counter drugs or anything?
-Patient: None.
-Doctor: Okay.

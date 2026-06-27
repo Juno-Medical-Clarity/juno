@@ -1,7 +1,0 @@
-Doctor: Let's talk a little bit about your family, okay?
-Doctor: Does anyone in your family had any medical issues?
-Patient: Yeah, my parents died of cancer.
-Doctor: Which cancer? How old were they?
-Patient: I don't know which cancer they had, but my mother was forty two and dad was sixty two.
-Doctor: Who else is there in the family?
-Patient: Oh, I have a big family. I have four sisters, one brother and two half brothers. One of my half brother's has asthma.

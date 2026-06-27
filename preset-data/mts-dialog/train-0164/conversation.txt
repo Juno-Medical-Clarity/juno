@@ -1,6 +1,0 @@
-Doctor: Hi! How are you two doing today?
-Guest_family: We are doing good. I am tired today.
-Doctor: Our records show that he is up to date on all of his two month old immunizations.
-Guest_family: That is right! He had his shots the last time we were here.
-Doctor: Does he have any health conditions or difficulties during childbirth?
-Guest_family: Nope. He is healthy.

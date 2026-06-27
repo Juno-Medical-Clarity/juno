@@ -1,3 +1,0 @@
-Guest_clinician: Has he had a blood transfusion in the past?
-Doctor: No, this is his first one.
-Guest_clinician: Okay, got it.

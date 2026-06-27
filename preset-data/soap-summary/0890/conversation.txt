@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0890
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How many children do you have, ma'am? I was blessed with four beautiful children. That's wonderful. Did you have any complications with the pregnancies? Actually, I had two c sections for both of my sons.

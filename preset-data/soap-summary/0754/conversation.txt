@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0754
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you married? Yes, I am. Is the baby your first kid? You see, I am a missionary. I have four kids. My eldest is seven years old. Then the other ones are five and three and this one is the youngest. She is just six weeks old.

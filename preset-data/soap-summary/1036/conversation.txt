@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1036
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello. How are you doing today? My head has been hurting a lot. I see. Did the nurse come in and ask you questions about past medical history? Guest_clinician: Sorry, Doctor. I was looking for you. I reviewed his history with him, and nothing has changed. Perfect. Let's do some tests to see why your head has been hurting. I'm ready for less pain. Let's go.

@@ -1,2 +1,0 @@
-[ROS]
-PSYCHIATRIC: See psychiatric evaluation.

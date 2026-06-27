@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0893
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What types of surgeries have you had in the past? I had gall bladder and appendix surgery then they also took out my ovaries. Okay.

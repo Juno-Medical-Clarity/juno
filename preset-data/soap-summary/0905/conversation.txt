@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0905
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How old are you? Seventy one. Are you right handed or left handed? Right handed. What exactly happened? I, I had this bad headache on fifth of November and then I had a big sneeze, like it was too loud. I had-- it was going on for like three to four days. Then, on the seventh, I had this severe pain over my left eye and I kind of lost my vision there. When did you see changes in your eyelid? Yeah, on the following day, it seemed like swelling and then my eyelid, it began like pulling down and getting down. Kind of drooping. We went to a local doctor, and he did some x rays. Yeah, I have your brain C T report from there. There is no sign of any kind of bleeding, but I do see a torturous blood vessel there. Yeah, after looking at this report they transferred us here to the U I H C on the twelfth.

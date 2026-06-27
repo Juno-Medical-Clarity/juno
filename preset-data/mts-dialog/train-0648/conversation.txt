@@ -1,6 +1,0 @@
-Doctor: How long have you had this rash?
-Patient: Not long. Less than a day if I had to guess.
-Doctor: Is it causing you any pain?
-Patient: No, it's just really itchy. I tried applying Cortisone to it, but it didn't help much.
-Doctor: Is the rash localized to the left arm?
-Patient: Yeah. I've only noticed it on my left arm.

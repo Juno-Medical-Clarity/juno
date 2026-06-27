@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1224
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Did you have any surgeries in the past? No.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0910
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, ma'am. How are you doing? My knees hurt. They've been slowly getting worse each year. Life's getting hard at seventy two. I'm sorry to hear that. Have you always had knee pain? I have. Both knees are messed up. Are you able to do any activities still? Nope. I just sit all day. I see. We can offer to do arthroplasty to fix your knees. What's that? It's like a reconstruction of your joints. It'll help increase your ability to do daily activities. I'm up for it. I need to get my life going. Sounds great. I just want to confirm some information. Would you say your quality of life and daily activities is decreasing? Oh, yeah. These knees are making my life terrible.

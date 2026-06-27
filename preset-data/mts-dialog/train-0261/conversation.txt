@@ -1,2 +1,0 @@
-Doctor: Do you have any allergies to medications?
-Patient: Yes. Penicillin.

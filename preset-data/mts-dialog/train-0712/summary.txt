@@ -1,2 +1,0 @@
-[ROS]
-HEMATOLOGIC/LYMPHATIC:: Normal; Negative for anemia, swollen glands, or blood disorders.

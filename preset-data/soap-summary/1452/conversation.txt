@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1452
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi, what is going on? Guest_family: She was doing well until this morning, but now she can barely move her right arm and is having speech issues. She can't seem to comprehend words. I think it is a stroke. We see this a lot at A B C Medical Center. I am glad you came. You just saw Doctor H, right? Guest_family: Yes. We did a C T head scan and labs. Okay. Where is she living? With you? Guest_family: No. She is at the Life Care Center. Ma'am, do you have headache or chest pain? What? What? Huh? Guest_family: She has not complained of anything like that. Ma'am. Do you have vision issues? What? I can see. Of course I can see. Any shortness of breath? Guest_family: She is breathing fine. Have your symptoms improved at all? Or have they worsened since this morning? Guest_family: No. They have stayed constant.

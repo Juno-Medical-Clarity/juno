@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1187
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You have cholesterol issues, right? Yes. Okay. I see. Gemfibrozil? That sounds familiar? Do you take that? Yes, I think that one. But I am not sure. Okay. Do you remember taking them at all as an outpatient? I mean I don't remember. Okay don't worry I can look at your previous records. We do have them.

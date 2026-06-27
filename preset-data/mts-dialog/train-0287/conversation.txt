@@ -1,4 +1,0 @@
-Doctor: Do you have any major medical conditions that I should know about?
-Patient: Yeah, I have a history of thyroid problems, actually.
-Doctor: I'm seeing here that you have a history of allergies too, is that correct?
-Patient: Oh yes, that's right too.

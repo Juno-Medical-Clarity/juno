@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1333
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any medical history? Um I suffer from depression and high blood pressure. Are you taking anything for either? Only for high blood pressure. Have you had surgeries in the past? I had surgery to get a few hemorrhoids removed back in two thousand and ten.

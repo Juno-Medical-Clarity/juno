@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0940
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any allergies? No I do not. Okay. Okay. Are you only asking for medical allergies? No, I want to know about all allergies.

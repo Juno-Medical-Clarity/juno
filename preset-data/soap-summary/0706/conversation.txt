@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0706
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any family history of lung disease, thromboembolism, pulmonary embolism, stroke, or heart disease. No. My parents are healthy with no medical issues. How many children do you have? I have five kids. Do your children have any health condition? My children are all healthy with no medical problems.

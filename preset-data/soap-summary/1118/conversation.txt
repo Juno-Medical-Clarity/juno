@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1118
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Anyone in the family had any medical issues? Oh yes. Can you please elaborate? So, my mother's side family had heart issues. My dad's sister had sugar problem.

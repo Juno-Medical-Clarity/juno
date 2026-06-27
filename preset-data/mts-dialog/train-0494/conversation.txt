@@ -1,5 +1,0 @@
-Doctor: Anything that has been going on?
-Patient: No. What do you mean?
-Doctor: I mean anything wrong from head to toe that you would like to add?
-Patient: No everything is well. No other problems.
-Doctor: Okay. Good.

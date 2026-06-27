@@ -1,8 +1,0 @@
-Doctor: What do you do for work?
-Patient: I am retired now. I was a school teacher.
-Doctor: Are you a smoker?
-Patient: Yes.
-Doctor: How much do you smoke per day?
-Patient: I would say about a half to a full pack a day.
-Doctor: How long have you been a smoker.
-Patient: Probably sixty years.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0768
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello and welcome to our dermatology office. What is the reason for your visit? I have these rashes on my arms. Let me take a look. Do you have prior reports about your history? Yeah, I do. I gave it to the nurse. Let me go get it really quick. I'm reading the report and it looks like your family is positive for atopy. Oh, yeah. We all usually get some type of rash. I see. Do you know if you have psoriasis? Uh. What's that's? It's a skin disease that usually has scaly patches. Uhm. I don't think so. Great. Before I prescribe you medicine to treat your eczema, are you allergic to any drugs? Not that I know of.

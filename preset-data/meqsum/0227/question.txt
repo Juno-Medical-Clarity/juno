@@ -1,2 +1,0 @@
-Cardiac Event Loop Recorder.
- is there a Cardiac Event Loop Recorder intrinsically safe?

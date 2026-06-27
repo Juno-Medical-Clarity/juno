@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1066
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you ever had psychiatric or psychological treatment? Uh no, no treatments whatsoever. I mean I do find myself in low moods every now and again when I'm dealing with certain stressors, but the decreased moods rarely ever long lasting.

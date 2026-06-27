@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0942
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you use any tobacco, inhalation or recreational drugs? No.

@@ -1,6 +1,0 @@
-Doctor: Do you have any medical conditions that I should know about?
-Patient: Um, I have high blood pressure, and asthma.
-Doctor: I also see here that you have cervical cancer, can you tell me more about that?
-Patient: Yeah, I got diagnosed at fifteen years old.
-Doctor: How would you describe the progression of your cancer?
-Patient: Now, um, I'd say it's dormant.

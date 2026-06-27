@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0279
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any know drug allergies? No.

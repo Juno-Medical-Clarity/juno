@@ -1,4 +1,0 @@
-Doctor: Do you smoke, sir?
-Patient: Well, I used to a long time ago, but I don't anymore.
-Doctor: Good, what about alcohol, do you drink?
-Patient: Well, my wife and I have a drink or two a day.

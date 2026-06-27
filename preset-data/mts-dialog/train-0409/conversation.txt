@@ -1,6 +1,0 @@
-Doctor: Do you or have you used tobacco products,sir?
-Patient: No. I have never been a smoker.
-Doctor: Do you have any history of alcohol or recreational drugs use?
-Patient: I have never been a drug user, but I used to drink a little, but it was never a problem. I don't drink any more.
-Doctor: What do you do for a living?
-Patient: I am retired. I used to be an insurance salesman.

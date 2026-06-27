@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1121
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You had a surgery on your breasts? Yes, they removed lump from my left breast. Okay, and what other surgeries have you had? I do not have a gall bladder, then I had a breast augmentation, I have had heart surgeries three times and they have removed half of my pancreas. Okay. And knee surgery too, on the left side. Okay. What type of heart surgery did you have? Cardiac ablation.

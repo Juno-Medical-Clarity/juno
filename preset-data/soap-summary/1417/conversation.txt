@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1417
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good afternoon, ma'am. Good afternoon doctor. So, do you have any medical conditions I should know about. Actually, yes. I have a few. I have hyperthyroidism, and I've had gallbladder issues for some time now. I see. How's your blood pressure? Oh, um, I have high blood pressure too.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0278
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you smoke? No, I quit before I had my daughter. Are you currently pregnant? No, I'm not. Did you have any complications with the birth of your daughter? I actually had a C section. Have you had any other surgeries in the past? I got my appendix out a few years ago. Do you have any other issues, like high blood pressure or heart disease? No. Do you have diabetes? No. Are there any problems with the lungs, thyroid, kidney, or bladder? No. So, how long ago did you hurt your lower back? It was about four or five years ago now, when I was in a car crash. What kind of treatments were recommended? They didn't recommend P T, and I didn't really have any increased back pain after the accident.

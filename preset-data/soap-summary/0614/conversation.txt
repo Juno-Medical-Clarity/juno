@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0614
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any medical conditions that I should know about? Yeah, I have chronic diarrhea, and C O P D. Are you a smoker? Yes, I have been for a long time. How would you characterize your smoking level? Um, I'd say it's pretty heavy.

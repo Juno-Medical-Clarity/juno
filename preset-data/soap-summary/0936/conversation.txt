@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0936
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any past medical problems I should know of? No, ma'am. I am forty three and this is the first time I have had a major issue. It's only been this past month where I've felt weaker than usual. I'm much more tired and short of breath whenever I move around. Any recent weight loss? Yeah, I actually lost about fifteen pounds in less than two or three months. How's your appetite? Any nausea, vomiting, diarrhea? Appetite is pretty fine. No nausea, vomiting, or diarrhea. How about fever, chills, sweats, cough? No, ma'am. And any chest pain with your shortness of breath? No, ma'am.

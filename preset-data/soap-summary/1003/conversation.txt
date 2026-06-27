@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1003
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I am okay. I have bad nausea. Oh, so sorry. And I feel very dizzy like I am going to faint. Okay let me see what is going on. Okay.

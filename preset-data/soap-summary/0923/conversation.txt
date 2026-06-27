@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0923
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What happened to your right leg? I had a little accident with a dog, he bit me. I got really scared. Don't worry we will take care of this.

@@ -1,4 +1,0 @@
-Doctor: Have you ever been diagnosed with any illnesses?
-Patient: No, I do not have any diseases.
-Doctor: How about any issues with B P, thyroid, diabetes?
-Patient: Nope none.

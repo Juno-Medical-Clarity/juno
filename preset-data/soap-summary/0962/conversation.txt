@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0962
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What brings you in to the clinic today? Well, I have had a progressive loss of my vision in my right eye. My eye doctor told me that I should come and see a neurologist. So here I am. Okay. How long has the vision loss been progressing for? About two months. It seems like it has been progressing really fast. I have always had bad vision in my left eye. That started about two years ago. Can you still see out of you left eye? No. I am considered blind in this eye now. Have you had any other symptoms associated with your vision loss? No. Any headaches? Nope. What is you dominate hand? What do you mean? What hand do you write with or use dominantly? Oh! I am right handed. And how old are you? I am sixty two. Okay. I would like to run some test now. Okay.

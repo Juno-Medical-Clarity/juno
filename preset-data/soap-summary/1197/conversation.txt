@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1197
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What is your family medical history? My mom was healthy all her life. She died of old age. She was eighty nine years old. My dad died of a stroke. He was eighty nine as well. Do you have siblings? Yes I had a brother and a sister. My sister died way too young. She was only thirty when she passed away from cancer. My brother lasted until he was seventy four. He had coronary artery disease.

@@ -1,4 +1,0 @@
-Doctor: Hi, tell me about your family? Did anyone have any medical diseases?
-Patient: Both of my parents were healthy, but my maternal grandfather had a stroke.
-Doctor: Did anyone in your family ever have migraines?
-Patient: No, not that I know.

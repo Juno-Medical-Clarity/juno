@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0301
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You had mentioned that cancer runs in your family. What type of cancer? Skin cancer. Any other health problems in the family? High blood pressure.

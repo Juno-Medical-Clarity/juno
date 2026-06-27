@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0886
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How're your other children doing? Guest_family: Not so wonderful. They're all on antibiotics. For the same? Guest_family: Yep. They all have ear infections and chest colds. Your hands are full then. Guest_family: Tell me about it, doctor. I can't seem to catch much of a break. It's definitely been a tough winter for you and your family.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1173
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any known allergies to medications? No.

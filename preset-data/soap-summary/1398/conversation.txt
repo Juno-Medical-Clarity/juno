@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1398
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-So, where do you live? Ah, I now live in an assisted nursing facility. Okay, and do you drink or smoke? No, neither.

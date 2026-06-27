@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1177
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello, miss. How are you doing today? I have this massive headache. I see. Do migraines usually run in your family? They do. Everyone has it. We've been having it for many years. Oh, wow. I'm looking at your blood reports, and it shows you have high blood sugar. Does diabetes run in your family too? Yup. We all eat too much rice for dinner.

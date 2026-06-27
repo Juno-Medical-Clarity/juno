@@ -1,4 +1,0 @@
-Doctor: Were there any medical issues in the past?
-Patient: Oh, I have a list. I have asthma and sinus issues. I also had hives at some point and psoriasis.
-Doctor: How about allergies?
-Patient: I don't know of any.

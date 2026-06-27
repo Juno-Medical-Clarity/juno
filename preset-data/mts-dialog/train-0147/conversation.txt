@@ -1,2 +1,0 @@
-Doctor: Do you have any past medical history?
-Patient: No.

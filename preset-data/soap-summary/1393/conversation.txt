@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1393
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hi there! How are you doing? Um. I am feeing really strange. Strange how? I took Ecstasy over the weekend and I feel weird still. My heart is racing. I feel agitated and have been having waves of sadness. I cannot shake this feeling. When did you take the Ecstasy? On Saturday.

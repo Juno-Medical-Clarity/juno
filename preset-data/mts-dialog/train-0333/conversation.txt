@@ -1,4 +1,0 @@
-Doctor: Good morning.  How are you feeling today?
-Patient: I feel good, considering.  I slept well last night.
-Doctor: Are you expensing any pain or discomfort?
-Patient: No. I feel fine.

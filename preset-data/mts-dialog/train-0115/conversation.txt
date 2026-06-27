@@ -1,8 +1,0 @@
-Doctor: Did you have any medical disorders previously, sir?
-Patient: I have diabetes. Also, I was quite overweight.
-Doctor: Are you taking any medications for that?
-Patient: Yes, I was still taking something called Zyprexa, but I stopped it after my last regular weight check. Also, I never took anything for diabetes. I also have chronic bronchitis for… I don't know… many years.
-Doctor: Do you smoke?
-Patient: Oh yes, I am a smoker.
-Doctor: How many cigarettes do you take in a day?
-Patient: Maybe up to sixty a day.

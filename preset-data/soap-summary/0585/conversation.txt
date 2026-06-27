@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0585
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What brings you in today? My back started hurting last night. I have a stomachache. I have had pain with urination for the last two days. Do you have any other symptoms? I just started coughing and now I have a fever. Do you have any history of kidney stones? Yes. I had kidney stones less than a year ago. I had a urinary tract infection at the same time. It was awful.

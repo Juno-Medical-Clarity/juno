@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0828
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello! How are you doing? Hello Doctor! I am good. I am here today for my follow-up, as suggested. Has it been a month already? Yes, seeing you after a month.

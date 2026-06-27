@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1285
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-You can take Ibuprofen as needed for pain.

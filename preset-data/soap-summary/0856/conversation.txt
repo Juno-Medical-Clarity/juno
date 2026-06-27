@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0856
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-When was your last menstrual period? Um, it was around June third of two thousand nine. Okay so it says you have had an abortion recently? Yes I have, but I am not sure if it is finished, because I am still bleeding. Okay. Do you want me to do a pregnancy test? No I would have you see our Gynecology and Obstetrician. Okay.

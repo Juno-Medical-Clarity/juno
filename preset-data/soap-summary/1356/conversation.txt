@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1356
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I can see your medication list here. Do you take Accutane and Ovcon? Yes, I do. Okay. Okay.

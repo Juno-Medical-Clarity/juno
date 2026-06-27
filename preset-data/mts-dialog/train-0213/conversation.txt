@@ -1,6 +1,0 @@
-Doctor: I want to talk to you about your reproductive history, okay?
-Patient: Okay.
-Doctor: Do you take birth control pills?
-Patient: Yes, I do.
-Doctor: Do you have any kind of medical history that I should be aware of?
-Patient: I had both chickenpox and measles when I was a kid.

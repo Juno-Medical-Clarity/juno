@@ -1,4 +1,0 @@
-Doctor: Do you have any medical conditions that I should know about?
-Patient: No, not that I know of.
-Doctor: So, there's no history of depression, or cancer, or high blood pressure?
-Patient: No, it's not ringing any bells.

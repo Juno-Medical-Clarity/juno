@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1137
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you aware of any medical issues in your family? I don't know. What about your paternal family? I don't know my father. No idea about his family. What about your mom? Maternal family? I have no idea. I'm not in contact with her.

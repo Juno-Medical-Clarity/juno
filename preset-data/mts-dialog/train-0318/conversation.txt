@@ -1,2 +1,0 @@
-Doctor: Do you have any known drug allergies?
-Patient: No, none that I know of.

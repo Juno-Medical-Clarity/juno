@@ -1,2 +1,0 @@
-[EDCOURSE]
-RESTRAINTS: None.  The patient has declined use of chair check and bed check.

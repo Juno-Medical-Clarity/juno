@@ -1,4 +1,0 @@
-Doctor: Has anything changed in your medical history since you last visit on April fifteenth two thousand five?
-Patient: What do you mean by that?
-Doctor: Have you been diagnosed with any new medical conditions, or are you experiencing any new symptoms?
-Patient: Oh, no, nothing like that.

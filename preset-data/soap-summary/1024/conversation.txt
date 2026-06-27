@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1024
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Our records show that he is up to date with his vaccinations. Guest_family: Okay.

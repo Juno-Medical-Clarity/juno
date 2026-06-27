@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0820
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Oh, dear God! What happened? Guest_family: Hi Doctor, I am his mom. Hello, so what happened? Guest_family: He was trying to climb a tree, slipped from there and got a deep cut on his thigh. So, you fell from the tree? Yes.

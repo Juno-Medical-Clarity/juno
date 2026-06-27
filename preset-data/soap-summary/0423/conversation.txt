@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0423
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How is your foot feeling? It feels good. Any pain or discomfort when you walk around on it? No. I am good doc.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1360
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Are you finished with your cancer treatments? Yes. I am in remission now. That is great! When was your last radiation treatment? It has been over two years since my last treatment.

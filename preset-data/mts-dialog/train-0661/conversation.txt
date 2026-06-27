@@ -1,8 +1,0 @@
-Doctor: Okay, let's talk about your family history.
-Patient: Oh, I have very disturbing family history!
-Doctor: Why do you say so?
-Patient: Well, my mother passed away due to heart attack in her late sixties and my father had liver cancer and he passed away from that.
-Doctor: Oh-
-Patient: Oh, that is not all. My one son suffers from hypothyroidism and my daughter's two kids have cerebral palsy from being born prematurely.
-Doctor: Oh, that is so unfortunate.
-Patient: Yeah.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0492
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you drink? Yes, I do take two or four beers in a day. Do you smoke? Oh yeah, I'm a smoker. I take around one to two packs of cigarettes each day.

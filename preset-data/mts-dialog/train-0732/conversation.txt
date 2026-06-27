@@ -1,5 +1,0 @@
-Doctor: What brings you into the office today?
-Patient: I had a stroke about a month ago. The right side of my face is still not moving.
-Doctor: Is it only the right side of the face that is affected by paralysis?
-Patient: Yes. It has improved a little bit since I was in the hospital.
-Doctor: That is a good sign. It can take up to six months see how much movement you will regain.

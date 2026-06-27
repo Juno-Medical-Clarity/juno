@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1395
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Hello. How are you doing today? I feel depressed. I'm sorry to hear that. What's been happening? My parents were fighting for a long time, and I think they're not together anymore. That must be really hard. I'm sorry to hear that they're divorced. Who do you live with right now? I usually hop houses. I'll go to my dad's house the first half of the week and spend time with his family. Then, I'll go to my mom's house during the last half of the week. That's nice. Now you can ask for more gifts during Christmas. You know what? I never thought about that. That's a really good idea.

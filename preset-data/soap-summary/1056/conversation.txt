@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1056
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Did you have any medical issues? Nope. What about surgery. No, I never had a surgery.

@@ -1,5 +1,0 @@
-Doctor: Do you have any medical history that we should be aware of?
-Patient: I have type two diabetes. My numbers always come high.
-Doctor: Okay, anything else?
-Patient: I also have high cholesterol.
-Doctor: Okay.

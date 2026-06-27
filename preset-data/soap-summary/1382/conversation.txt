@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1382
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-And are you working? What do you do? Oh, I am a catholic priest! Oh wow! Yes. And if you don't mind me asking, do you drink alcohol? Maybe that is something for my confession box but jokes apart I don't drink. Sorry I need to ask these questions it's a protocol. I understand. And can I put down here that you don't smoke or use any kinds of drugs? Yes, I don't do those either. Cool.

@@ -1,6 +1,0 @@
-Doctor: Good afternoon, ma'am.
-Patient: Good afternoon doctor.
-Doctor: So, do you have any medical conditions I should know about.
-Patient: Actually, yes. I have a few. I have hyperthyroidism, and I've had gallbladder issues for some time now.
-Doctor: I see. How's your blood pressure?
-Patient: Oh, um, I have high blood pressure too.

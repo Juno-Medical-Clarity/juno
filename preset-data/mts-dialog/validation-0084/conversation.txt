@@ -1,4 +1,0 @@
-Doctor: It seems like you are not feeling very well today?
-Patient: Yeah.  I have had diarrhea and pain in my stomach.
-Doctor: Have you experienced any vomiting?
-Patient: Yes.  I threw up this morning.

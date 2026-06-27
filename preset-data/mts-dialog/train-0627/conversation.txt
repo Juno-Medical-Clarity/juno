@@ -1,6 +1,0 @@
-Doctor: How are you?
-Patient: Not good.
-Doctor: What brings you here today?
-Patient: This ulcer in my ankle is just not healing.
-Doctor: Is it on both sides?
-Patient: No, just on the right side.

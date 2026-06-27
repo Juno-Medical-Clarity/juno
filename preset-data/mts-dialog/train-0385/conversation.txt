@@ -1,5 +1,0 @@
-Doctor: Did you have any surgeries in the past?
-Patient: Yes, I had a partial removal of my ovaries and then I also had my appendix removed.
-Doctor: Okay anything else?
-Patient: Yeah, I also got my tummy tucked.
-Doctor: Okay.

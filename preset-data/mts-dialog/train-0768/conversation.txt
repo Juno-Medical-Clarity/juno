@@ -1,4 +1,0 @@
-Doctor: Good morning, ma'am.
-Patient: Good morning, doctor.
-Doctor: Before we begin, I just have a few questions. Do you remember what illnesses you had as a child?
-Patient: Yes, I got a few. I had strep throat, mumps, and, um, chickenpox growing up.

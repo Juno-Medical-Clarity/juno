@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0311
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Have you had any illnesses in the past? Nope. Anything that is worth mentioning? Nope. Sure? Yes.

@@ -1,6 +1,0 @@
-Doctor: Do you smoke cigarettes?
-Patient: Yes.
-Doctor: Do you drink alcohol or use recreational drugs?
-Patient: Yes, I have been in and out of treatment. I am not doing so well with staying clean.
-Doctor: What substances do you use?
-Patient: I drink, and I did some coke today. I have been in treatment for heroin and alcohol.

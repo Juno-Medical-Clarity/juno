@@ -1,6 +1,0 @@
-Doctor: Hello, miss. The nurse who seated you tells me you are here for a second opinion on surgery.
-Patient: Hello, doctor. Yes, I have been told that both eyes need cataract extraction. I came for a second opinion because I will only have surgery if necessary. I am nervous.
-Doctor: What is the reason for the extraction?
-Patient: I am not exactly sure because the other doctors said a bunch of medical terms. I have had laser in my eyes though. That was for macular degeneration. Doctor X said I had neurovascular age-related macular degeneration.
-Doctor: Do you know what laser you had on your eyes?
-Patient: No. I just know laser was done by Doctor X four times to the macula on the right and two times on the left.

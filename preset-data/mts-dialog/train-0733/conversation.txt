@@ -1,4 +1,0 @@
-Doctor: Do you use tobacco?
-Patient: What, like smoke cigarettes?
-Doctor: Yes ma'am, do you?
-Patient: Oh, no. I don't do anything like that.

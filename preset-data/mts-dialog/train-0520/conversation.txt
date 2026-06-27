@@ -1,9 +1,0 @@
-Doctor: How are you feeling after that insulin drip, Miss A B C?
-Patient: I am feeling much better. My sugar levels are normal.
-Doctor: Yes, between one hundred fifteen and one thirty four. So, on the second day after your admission they did laparoscopic removal of your gallstones. You were very difficult to intubate. But everything went well with surgery. There was some swelling and adhesions around your gallbladder, but all is well that ends well.
-Patient: What was my blood sugar during surgery?
-Doctor: Great question. After surgery they were around two thirty three.
-Patient: I am getting a special insulin?
-Doctor: Yes, sliding scale insulin.
-Patient: Can I go home?
-Doctor: Yes, you are all set to go home, everything is stable.

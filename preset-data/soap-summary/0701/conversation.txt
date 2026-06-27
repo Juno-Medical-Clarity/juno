@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0701
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-How's he feeling today? Guest_family: I think this is the worst he's been feeling all week. I'm sorry to hear that he hasn't been feeling well. What symptoms has he been having? Guest_family: He's been very congested as of late and seems to be coughing a lot more than usual. He was also running a fever yesterday. I see. What was his temperature? Guest_family: The thermometer was reading one hundred and one degrees Fahrenheit. Does he need to go to the hospital? Let me evaluate and see what we can do for him today. Guest_family: Thank you, doctor. I suspect that he has an upper respiratory infection, possible pertussis. Is he still experiencing apnea?

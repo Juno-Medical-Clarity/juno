@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1354
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Were you ever diagnosed with any blood or heart disease? Uh no. Any other past medical issues? No.

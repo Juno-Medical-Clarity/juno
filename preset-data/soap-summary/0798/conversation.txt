@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0798
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Good morning, sir, welcome to A B C D General Hospital. Thank you, doctor. I hope you can fix me up quickly. We'll do our best. Um, before we begin, I just need some background information. So, how old are you? I'm forty seven years old. Good, and what race do you identify with? I identify as white, sir. Thank you, so, what seems to be the problem today? Well, I have this, um, mass of my left foot, it's been getting worse too. I see it. How long has this tissue mass been there on that foot? It's been about two weeks now, but it's getting worse way faster now. Do you have any history of cancer? No, but I've had an, um, shave biopsy in the past. I see. Is there any surgery we can do for this to cut it off? I really want it gone.

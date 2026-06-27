@@ -1,8 +1,0 @@
-Doctor: Hello, miss. How are you doing?
-Patient: I am fine. I just have a few questions about diet and exercise. I want to get my health in order.
-Doctor: Okay, great. That's something we can handle today. Can you tell me about your familial history? This will help me see any possible ailments that we should watch out for.
-Patient: Yes. So let's start with my mom. She died of congestive heart failure.
-Doctor: How about your father? Your paperwork says both parents are deceased.
-Patient: Yes, unfortunately. My dad died from myocardial infarction at fifty six years old. Not sure how old my mom was.
-Doctor: Your family seems to have a history of ischemic cardiac disease. How are your siblings? The paperwork says you have brothers.
-Patient: Yes. Two are alive and one has passed. He died from lymphoma. One brother has had two angioplasties and the other brother just has asthma.

@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0705
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any past or present medical conditions? No.

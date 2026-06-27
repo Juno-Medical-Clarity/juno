@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1316
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-With ten being the worst pain imaginable, out of ten, how would you describe your pain today? I'd say its about a six out of ten today. What makes the pain worse? It's worse when I try to walk around on it. Do you have any pain at night? No, thankfully I don't. How long have you been wearing that exterior knee brace? Oh, for a little while now.

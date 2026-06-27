@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1409
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Do you have any past history of psychiatric treatment of struggles? I had some extreme fatigue back in nineteen ninety one. I was in therapy for six years. They had me on Prozac. I took in for that whole six years while I was in therapy. When I started the Prozac, I had just started working again. The stress at work was overwhelming. Was this the first time that you had feelings for fatigue and depression? No. I have always had a little sadness or depressed time in my life but it had been manageable before all the work stress started happening. How are you feeling these days? I get somewhat sad from time to time but I don't dwell on things anymore. Do you ever have thoughts of selfharm or suicidal thoughts? No.

@@ -1,8 +1,0 @@
-Doctor: Are you in pain?
-Patient: Yes, I want something strong for this.
-Doctor: We can give you a shot.
-Patient: Yes please.
-Doctor: Okay nurse, give her Dilaudid of 4 M G I M.
-Patient: Thank you.
-Doctor: How are you now? Any bad side effects?
-Patient: No I feel much better.

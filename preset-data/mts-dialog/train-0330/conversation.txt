@@ -1,6 +1,0 @@
-Doctor: So I understand you had a fainting episode yesterday?
-Patient: Yes, I did.
-Doctor: Has this happened to you before?
-Patient: Yes. It happens whenever needles are involved.
-Doctor: You had a Vasovagal Syncope. How are you feeling today?
-Patient: I feel normal today.

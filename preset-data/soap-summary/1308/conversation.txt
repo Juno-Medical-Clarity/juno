@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1308
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Okay, so it looks like your blood work shows that your sodium levels are very low. This could explain some of the symptoms you've been having lately. What does that mean? Why are my sodium levels so low? It could be due to a number of- Should I start eating more salt? Not necessarily. But I believe it's partly due to the diuretic that you've been taking these past few weeks. Your blood work also shows anemia. I'd like to start you on some iron supplements for now and get you back in for another eval. The front desk has access to your orders and they can print you out a lab slip. Do you think the iron will help with my tiredness? I've been so exhausted and caffeine hasn't been helping one bit.

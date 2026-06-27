@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 1214
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Any past medical history I should be aware of? Nope.

@@ -1,2 +1,0 @@
-[ROS]
-IMMUNOLOGIC: Negative; Negative for steroids, chemotherapy, or cancer.

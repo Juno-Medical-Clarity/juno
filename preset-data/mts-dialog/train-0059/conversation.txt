@@ -1,6 +1,0 @@
-Doctor: Hello sir. How are you doing today? You still look a little uncomfortable. Is there still pain?
-Patient: Yeah. Still a good amount of pain. I did not take my pain medication this morning though. Not sure if that will make a huge difference.
-Doctor: That is possibly why you are still in pain. How is movement? Can you get out of the house and get around?
-Patient: Yes. I am quite happy that I can do my daily activities. I can get up with minimal assistance and do many activities out of the house. I think I am gaining muscle from moving around more too.
-Doctor: How is the home exercise program going?
-Patient: I am loving pool therapy. I really feel like that is helping. I do the home exercises sometimes twice a day. I really want to get back to normal.

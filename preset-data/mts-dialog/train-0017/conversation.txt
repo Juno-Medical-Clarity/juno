@@ -1,7 +1,0 @@
-Doctor: When did the nausea and vomiting start?
-Patient: About a few hours ago. I can't seem to stomach anything.
-Doctor: How many episodes of vomiting have you had?
-Patient: At least four.
-Doctor: Any abdominal pain, fever, chill, or other symptoms?
-Patient: Just nausea and vomiting. It's been so terrible.
-Doctor: I'll order you some Zofran to help bring the nausea to bay. One moment while I put the order in.

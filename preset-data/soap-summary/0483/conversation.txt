@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0483
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-It's surgery day! How are you feeling? Not as excited as you. Have you had a surgery before? Yeah. It was something with my chest. Guest_family: Hi Doctor. I'm the mother. He had a chest port placement. I see. Thank you for letting me know.

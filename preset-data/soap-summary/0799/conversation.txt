@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0799
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-What do you do for a living? Actually, I'm retired now, but I was an engineer, and I did some real estate brokering as well on the side. Wow, that's a lot. Congratulations on your retirement! Thank you, now I get to spend more time with my wife. Wonderful, do you have any children? Yes, five in total, it's a full house. Fantastic, do you drink or smoke? I don't smoke, but I drink a little. How many drinks would you say you have a week? Um, I'd say up to three drinks a week. Okay, and is there any history of drug or illicit substance abuse, sir? No, never anything like that.

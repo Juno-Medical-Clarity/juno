@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0567
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-I am in pain. I get these frequent episodes of pain and discomfort in my head. Is it in any side of head or is it overall? Sometimes it is overall and other times just on any one side. This sounds like it is a migraine headache.

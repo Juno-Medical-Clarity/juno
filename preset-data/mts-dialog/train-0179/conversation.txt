@@ -1,6 +1,0 @@
-Doctor: Hi there! Welcome to the clinic.
-Patient: Thank you.
-Doctor: Doctor Murphy sent your records over. I reviewed the ultrasound, and we did find a kidney stone that has become stuck in the ureter on the left side. The stone is large enough to block the flow of urine from the kidney to the bladder.  How much pain are you having and where is the pain located?
-Patient: I am in a great deal of pain. It is coming from my left side right here.
-Doctor: Okay. Let use discuss your treatment options.
-Patient: Okay.

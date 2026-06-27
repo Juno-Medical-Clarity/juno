@@ -1,8 +1,0 @@
-Doctor: Do you mind giving me a run down of his past medical history? I want to make sure it's all in his chart.
-Guest_family: Sure. I'll start with his surgeries. If I remember correctly, he had back surgery, a couple knee surgeries, and coronary artery bypass surgery with angioplasty.
-Doctor: I see. When did he have these done?
-Guest_family: I'd have to check, but I know he had back surgery in O nine. He has a history of high blood pressure and high cholesterol. He was recently diagnosed with B P H potentially linked to cancer. It's B P H, right? Or is it B H P?
-Doctor: If it's his prostate, then B P H is correct.
-Guest_family: Oh, he has high P S A levels, too. I think that's related to the prostate.
-Doctor: Is he currently experiencing any symptoms?
-Guest_family: He was complaining of pain earlier. He does have a history of fatigue, tiredness, and shortness of breath though. So far, he hasn't complained about the usual.

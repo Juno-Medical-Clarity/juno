@@ -1,5 +1,0 @@
-Doctor: Hello. Are you ready for your surgery today?
-Patient: I'm ready as can be. This isn't my first rodeo.
-Doctor: I see. Have you had surgeries before?
-Patient: Yeah, I have. I think it's in my report that you have with you.
-Doctor: You're right. It says here you've had some stripping of veins in your legs, a tonsillectomy, and a adenoidectomy.

@@ -1,8 +1,0 @@
-Doctor: Do you use tobacco products, alcohol, or recreational drugs, miss?
-Patient: I have a drink every once and a while.
-Doctor: How many drinks do you consume in a week?
-Patient: I don't even drink that often. I probably have one drink per month.
-Doctor: Are you married?
-Patient: I was engaged but that is not happening anymore. It is a long story.
-Doctor: I am sorry the hear that. What do you do for work?
-Patient: I am a metal grinder.

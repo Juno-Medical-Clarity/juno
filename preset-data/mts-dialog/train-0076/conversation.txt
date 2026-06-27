@@ -1,4 +1,0 @@
-Doctor: Can you tell me something about your mom and dad?  Like any diseases they have had?
-Patient: Sure, my dad died of heart attack when he was sixty five and my mom died of stroke when she was seventy.
-Doctor: How's about siblings, miss? Any health issues?
-Patient: No, my brother is healthy.

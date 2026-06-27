@@ -1,4 +1,0 @@
-# SOAP Summary Dataset — Sample 0416
-# Dataset: https://huggingface.co/datasets/SubashNeupane/dataset_SOAP_summary
-
-Can you tell me more about your parents, please? How are they doing? Thank you for asking, they're both doing very well. They're very healthy. That's great to hear. How old are they? My mom is fifty, and my dad is forty. Wonderful, do you have any siblings? Yeah, I have two sisters, one is a half sister, and the other we have the same mom and dad. How old are they? My half sister and I have the same mom, and she's thirty four. My other sister is ten. Do they have any history of medical conditions that you know about? My half sister, um, no. My other sister has had some yeast infections.
