@@ -6,7 +6,7 @@ This file combines two complementary parsers for the PriMock57 dataset:
 
   1. Conversation Parser (mode: conversations)
      Downloads TextGrid audio transcripts from GitHub and converts them into
-     readable conversation transcripts (preset-data/primock57-conversations/).
+     readable conversation transcripts (preset-data/primock57/).
      Dataset: https://github.com/babylonhealth/primock57
 
   2. Notes Parser (mode: notes)
@@ -53,7 +53,7 @@ GITHUB_BASE_URL = "https://raw.githubusercontent.com/babylonhealth/primock57/mai
 
 # Default output directory for conversations
 DEFAULT_CONVERSATIONS_OUTPUT_DIR = (
-    Path(__file__).parent.parent / "preset-data" / "primock57-conversations"
+    Path(__file__).parent.parent / "preset-data" / "primock57"
 )
 
 # All 57 consultations in the dataset

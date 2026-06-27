@@ -64,7 +64,7 @@ All `[OPEN]` items from all PRDs in one place.
 
 ### From SP1 (01-gcs-infrastructure-manifest/PRD.md)
 
-- **Q7**: primock57-conversations input ID format — [RESOLVED: uses same day{N}-consultation{NN} format as primock57, confirmed by inspection of preset-data/primock57-conversations/ directory names]
+- **Q7**: primock57 file types — [RESOLVED: each primock57 input has both consultation_notes.txt and conversation.txt]
 - **Q8**: file_types uniformity across inputs — [RESOLVED: file types are uniform across all inputs within a group — confirmed]
 - **Q12**: CI/test fixtures that read local preset-data dirs — [RESOLVED: no tests directly read from preset-data dirs; any that did were removed in this commit]
 

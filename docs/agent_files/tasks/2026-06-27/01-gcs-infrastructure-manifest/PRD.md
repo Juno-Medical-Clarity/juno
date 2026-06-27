@@ -9,7 +9,7 @@
 
 ## 1. Problem
 
-Seven medical research datasets (meqsum, mts-dialog, notechat, primock57, primock57-conversations, smith-collection, soap-summary) currently live as full file trees under `preset-data/` in the Juno git repo. Together they contain over 7,000 directories and 14,000+ files. This makes the repository heavyweight: clones are slow, CI pipelines pull unnecessary data, and dataset versioning is conflated with application versioning.
+Six medical research datasets (meqsum, mts-dialog, notechat, primock57, smith-collection, soap-summary) currently live as full file trees under `preset-data/` in the Juno git repo. Together they contain over 7,000 directories and 14,000+ files. This makes the repository heavyweight: clones are slow, CI pipelines pull unnecessary data, and dataset versioning is conflated with application versioning.
 
 The fix is to move dataset files to Google Cloud Storage and keep only a lightweight JSON manifest committed to the repo. The manifest is the single source of truth for listing and preview; GCS is the storage layer for full file retrieval (covered in SP2).
 
@@ -144,7 +144,6 @@ Exact shape. All fields are required.
 | mts-dialog | zero-padded integer | (TBD from inspection) |
 | notechat | (TBD) | |
 | primock57 | `day{N}-consultation{NN}` | `day1-consultation01` |
-| primock57-conversations | same as primock57 | |
 | smith-collection | `RES{NNNN}` | `RES0213` |
 | soap-summary | integer (unpadded) | `1468` |
 
@@ -314,7 +313,7 @@ Behavior: After a successful upload run (zero failures), delete each local `pres
 
 ```bash
 cd /root/projects/juno
-for group in meqsum mts-dialog notechat primock57 primock57-conversations smith-collection soap-summary; do
+for group in meqsum mts-dialog notechat primock57 smith-collection soap-summary; do
   rm -rf preset-data/$group
 done
 ```
@@ -444,7 +443,7 @@ In order from first to last:
    ```bash
    python scripts/preset-data-scripts/upload_to_gcs.py --delete-local
    # OR manually:
-   for g in meqsum mts-dialog notechat primock57 primock57-conversations smith-collection soap-summary; do rm -rf preset-data/$g; done
+   for g in meqsum mts-dialog notechat primock57 smith-collection soap-summary; do rm -rf preset-data/$g; done
    ```
 
 8. **Update deployment env vars** — add `DATASETS_BUCKET_NAME=juno-preset-data` to the Cloud Run service configuration (or GCP Secret Manager, depending on how other env vars are managed).
@@ -463,7 +462,7 @@ In order from first to last:
 | Q4 | What HTTP status should the backend return for non-sample input_id preview before SP2? | [RESOLVED: HTTP 503 with `{"error": "On-demand GCS fetch not yet implemented (SP2)"}` — clearly signals "coming soon" vs. 404 "not found"] |
 | Q5 | Should the manifest cache be invalidated across requests (e.g. on SIGHUP)? | [RESOLVED: No — manifest is static per deployment. Process restart (Cloud Run redeploy) is the natural invalidation mechanism.] |
 | Q6 | Should `total_inputs` be included in the manifest given it's redundant with `len(inputs)`? | [RESOLVED: Yes — retained for convenience when reading the manifest file directly without parsing the full inputs list] |
-| Q7 | Does `primock57` and `primock57-conversations` share the same input ID format? | [RESOLVED: primock57-conversations uses the same day{N}-consultation{NN} format as primock57, confirmed by inspection of preset-data/primock57-conversations/ directory names] |
+| Q7 | Does `primock57` contain both consultation notes and conversation transcripts? | [RESOLVED: yes — each primock57 input has both consultation_notes.txt and conversation.txt] |
 | Q8 | Are all files in a given group's inputs guaranteed to have the same set of file types (i.e., is `file_types` uniform across inputs)? | [RESOLVED: file types are uniform across all inputs within a group — confirmed] |
 | Q9 | Should the upload script skip already-uploaded blobs (idempotent re-run)? | [RESOLVED: Yes — check `blob.exists()` before uploading; log as "skipped". Makes re-runs safe.] |
 | Q10 | Optional FE patch to always preview from `inputs[0]` during SP1/SP2 gap — in scope for SP1? | [DEFERRED — SP2 landing shortly after SP1 makes the gap brief; only patch if SP2 is delayed] |
