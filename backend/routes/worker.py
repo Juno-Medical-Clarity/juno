@@ -4,6 +4,7 @@ import logging
 import os
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 
 from flask import Blueprint, request
 
@@ -32,7 +33,8 @@ PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
 # allowed values ("file" | "text" | "doc_id").
 _INPUT_TYPE_MAP = {
     "upload": "file",
-    "batch_dataset": "text",
+    "batch_dataset": "text",       # legacy, pre-extracted text
+    "gcs_batch_dataset": "text",   # new, downloads from GCS at worker time
     "doc_id": "doc_id",
     "text": "text",
 }
@@ -62,6 +64,20 @@ def _build_error_data(code: PipelineErrorCode, detail: str = "") -> dict:
     dict with code, message, user_hint, retryable, and detail fields.
     """
     return build_error_data(code, detail)
+
+
+def _extract_text_from_downloaded(
+    base_dir: Path, group: str, input_id: str, files: list[str]
+) -> str:
+    parts: list[str] = []
+    has_text = False
+    for filename in files:
+        local_path = base_dir / group / input_id / filename
+        file_bytes = local_path.read_bytes()
+        text = _extract_text_from_bytes(file_bytes, filename).strip()
+        has_text = has_text or bool(text)
+        parts.append(f"\n\n--- {filename} ---\n\n{text}")
+    return "".join(parts) if has_text else ""
 
 
 def _verify_oidc_token() -> bool:
@@ -139,6 +155,9 @@ def execute_job(job_id: str):
     if not _verify_oidc_token():
         return "", 403
 
+    gcs_temp_dir: Path | None = None
+    is_gcs_dataset_job = False
+
     try:
         job_doc = get_job_doc(job_id)
         if job_doc is None:
@@ -176,14 +195,32 @@ def execute_job(job_id: str):
                 return True
             return False
 
-        text = _resolve_input_from_job_doc(job_doc)
+        source_kind = job_doc.get("input_source_kind", "text")
+
+        if source_kind == "gcs_batch_dataset":
+            is_gcs_dataset_job = True
+            from utils.gcs_datasets import download_dataset_inputs
+            gcs_temp_dir = download_dataset_inputs(
+                group=job_doc["dataset_group"],
+                input_id=job_doc["dataset_input_id"],
+                files=job_doc["dataset_files"],
+                job_id=job_id,
+            )
+            text = _extract_text_from_downloaded(
+                gcs_temp_dir,
+                job_doc["dataset_group"],
+                job_doc["dataset_input_id"],
+                job_doc["dataset_files"],
+            )
+        else:
+            text = _resolve_input_from_job_doc(job_doc)
+
         if not text.strip():
             fail_job(job_id, _build_error_data(PipelineErrorCode.EMPTY_DOCUMENT))
             return "", 200
 
         version = job_doc.get("input_version", "v1-2")
         grading_enabled = job_doc.get("grading_enabled", False)
-        source_kind = job_doc.get("input_source_kind", "text")
         is_batch = _is_batch_item(job_doc)
 
         pipeline_fn = PIPELINES.get(version, PIPELINES["v1-2"])
@@ -271,6 +308,10 @@ def execute_job(job_id: str):
         except Exception:
             pass
         return "", 500
+    finally:
+        if is_gcs_dataset_job:
+            from utils.gcs_datasets import cleanup_dataset_inputs
+            cleanup_dataset_inputs(job_id)
 
 
 def _derive_name(care_plan_data: dict, source_filename: str) -> str:

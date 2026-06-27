@@ -40,11 +40,10 @@ MOCK_RUNS = [
 })
 @patch("routes.batch_jobs.enqueue_job")
 @patch("routes.batch_jobs.create_job_doc")
-@patch("routes.batch_jobs._combined_text_for_dataset_input", return_value="patient text")
 @patch("routes.batch_jobs._batch_timestamp", return_value="20260101120000")
 @patch("routes.batch_jobs._resolve_requested_runs", return_value=MOCK_RUNS)
 def test_valid_batch_returns_202(
-    mock_resolve, mock_ts, mock_combined, mock_create_doc, mock_enqueue,
+    mock_resolve, mock_ts, mock_create_doc, mock_enqueue,
     client_batch_jobs, auth_ok
 ):
     resp = client_batch_jobs.post(
@@ -58,7 +57,7 @@ def test_valid_batch_returns_202(
     assert "job_ids" in body
     assert len(body["job_ids"]) == 2
 
-    # All jobs share the same batch_run_id
+    # All jobs share the same batch_run_id and carry SP2 GCS fields
     calls = mock_create_doc.call_args_list
     assert len(calls) == 2
     batch_run_id = body["batch_run_id"]
@@ -66,12 +65,43 @@ def test_valid_batch_returns_202(
         payload = call.kwargs["payload"]
         assert payload["batch_run_id"] == batch_run_id
         assert payload["status"] == "not_started"
+        assert payload["input_source_kind"] == "gcs_batch_dataset"
+        assert payload["input_text"] is None
+        assert "dataset_input_id" in payload
+        assert "dataset_files" in payload
 
     # enqueue called with batch_run_id
     enqueue_calls = mock_enqueue.call_args_list
     assert len(enqueue_calls) == 2
     for call in enqueue_calls:
         assert call.kwargs["batch_run_id"] == batch_run_id
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.batch_jobs.enqueue_job")
+@patch("routes.batch_jobs.create_job_doc")
+@patch("routes.batch_jobs._batch_timestamp", return_value="20260101120000")
+@patch("routes.batch_jobs._resolve_requested_runs", return_value=MOCK_RUNS)
+def test_batch_dataset_does_not_read_local_files(
+    mock_resolve, mock_ts, mock_create_doc, mock_enqueue,
+    client_batch_jobs, auth_ok,
+):
+    """After SP2, _combined_text_for_dataset_input must never be called.
+
+    The route returns 202 without reading any local dataset files.  If the old
+    text-extraction function were still invoked it would fail (no longer imported),
+    causing a non-202 response.
+    """
+    resp = client_batch_jobs.post(
+        "/care_plan/batch/jobs",
+        json={"selections": VALID_SELECTIONS, "version": "v1-2"},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 202
 
 
 @patch.dict("os.environ", {

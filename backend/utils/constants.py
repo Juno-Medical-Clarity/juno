@@ -22,6 +22,11 @@ class Constants:
     # ── GCS / Cloud config ────────────────────────────────────────────────
     GCS_BUCKET_ENV_VAR: str = "GCP_BUCKET_NAME"
 
+    # ── Dataset GCS config ─────────────────────────────────────────────────────
+    DATASETS_BUCKET_NAME_ENV_VAR: str = "DATASETS_BUCKET_NAME"
+    DATASETS_BUCKET_NAME_DEFAULT: str = "juno-preset-data"
+    DATASETS_BUCKET_ENV_VAR: str = "DATASETS_BUCKET_NAME"
+
     # ── Pipeline registry ─────────────────────────────────────────────────
     PIPELINE_VERSION_V1_2: str = "v1-2"
     ALLOWED_VERSIONS: frozenset[str] = frozenset({"v1-2"})

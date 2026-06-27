@@ -35,6 +35,7 @@ class ErrorCode(StrEnum):
     BATCH_TOO_LARGE         = "BATCH_TOO_LARGE"
     BATCH_INVALID_SELECTION = "BATCH_INVALID_SELECTION"
     DATASET_NOT_FOUND       = "DATASET_NOT_FOUND"
+    DATASET_DOWNLOAD_ERROR  = "DATASET_DOWNLOAD_ERROR"
     # Grading / saving
     NO_SOURCE_TEXT          = "NO_SOURCE_TEXT"
     SAVE_FAILED             = "SAVE_FAILED"
@@ -64,6 +65,7 @@ _REGISTRY: dict[ErrorCode, tuple[str, str]] = {
     ErrorCode.BATCH_TOO_LARGE:         ("Batch request too large",                      "Requested {count} runs; maximum is {max_runs}"),
     ErrorCode.BATCH_INVALID_SELECTION: ("Invalid batch selection",                      "{detail}"),
     ErrorCode.DATASET_NOT_FOUND:       ("Dataset not found",                            "Dataset {group}/{input_id} does not exist"),
+    ErrorCode.DATASET_DOWNLOAD_ERROR:  ("GCS dataset download failed",                  "Failed to download {group}/{input_id} from GCS: {detail}"),
     ErrorCode.NO_SOURCE_TEXT:          ("No source text available",                     "Saved output {saved_id} has no raw text to re-grade"),
     ErrorCode.SAVE_FAILED:             ("Failed to save output",                        "Firestore write failed: {detail}"),
     ErrorCode.PDF_URL_UNAVAILABLE:     ("No input PDF stored for this output",          "Output {doc_id} has no associated PDF"),

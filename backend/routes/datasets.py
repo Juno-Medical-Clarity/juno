@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify
 
 from routes.care_plan import _extract_text_from_bytes
 from utils.firebase import verify_firebase_token
-from utils.preset_data import list_datasets, read_dataset_file
+from utils.preset_data import list_datasets, read_dataset_file, GCSFetchRequired
 
 datasets_bp = Blueprint("datasets", __name__)
 
@@ -25,6 +25,8 @@ def get_dataset_file_route(user_id: str, group: str, input_id: str, filename: st
     try:
         file_bytes = read_dataset_file(group, input_id, filename)
         content = _extract_text_from_bytes(file_bytes, filename)
+    except GCSFetchRequired:
+        return jsonify({"error": "On-demand GCS fetch not yet implemented (SP2)"}), 503
     except FileNotFoundError:
         return jsonify({"error": "Not found"}), 404
 

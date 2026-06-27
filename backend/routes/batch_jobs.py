@@ -8,7 +8,7 @@ from flask import Blueprint, jsonify, request
 
 from utils.firebase import create_job_doc, verify_firebase_token
 from utils.cloud_tasks import enqueue_job, require_env, MissingJobConfigError
-from routes.batch import _resolve_requested_runs, _combined_text_for_dataset_input, _batch_timestamp
+from routes.batch import _resolve_requested_runs, _batch_timestamp
 from utils.constants import Constants
 from utils.error_codes import make_error_response, ErrorCode
 
@@ -68,16 +68,6 @@ def create_care_plan_batch_jobs(user_id: str):
     deadline_s = int(os.environ.get("JOB_TIMEOUT_SECONDS_BATCH", "900"))
 
     for group, input_id, files in runs:
-        try:
-            text = _combined_text_for_dataset_input(group, input_id, files)
-        except Exception:
-            logger.exception("batch_jobs: failed to read dataset input %s/%s", group, input_id)
-            return make_error_response(
-                ErrorCode.DATASET_NOT_FOUND,
-                request.path,
-                {"group": group, "input_id": input_id},
-            ).to_dict(), 400
-
         job_id = str(uuid.uuid4())
         batch_group_id = batch_group_ids[group]
         source_filename = ", ".join(files)
@@ -97,8 +87,10 @@ def create_care_plan_batch_jobs(user_id: str):
             "batch_run_id": batch_run_id,
             "batch_group_id": batch_group_id,
             "dataset_group": group,
-            "input_source_kind": "batch_dataset",
-            "input_text": text,
+            "dataset_input_id": input_id,
+            "dataset_files": files,
+            "input_source_kind": "gcs_batch_dataset",
+            "input_text": None,
             "input_doc_id": None,
             "input_source_filename": source_filename,
             "input_pdf_gcs_uri": None,
