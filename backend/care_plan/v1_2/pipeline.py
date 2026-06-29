@@ -144,22 +144,19 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
         """
         # Deterministic detections are used to constrain rewrite behavior.
         term_data = detect_terms(text)
-        substitution_candidates = term_data["substitution_candidates"]
-        preserve_and_define_terms = term_data["preserve_and_define_terms"]
-        abbreviations = term_data["abbreviations"]
 
         simplified = self.simplify_language_with_term_plan(
             text,
-            substitution_candidates,
-            preserve_and_define_terms,
-            abbreviations,
+            term_data["substitution_candidates"],
+            term_data["preserve_and_define_terms"],
+            term_data["abbreviations"],
         )
-        clarified = self.clarify_and_action(simplified, abbreviations)
+        clarified = self.clarify_and_action(simplified, term_data["abbreviations"])
         structured = self.structure_appointment_note(clarified)
         # Glossary contains only preserved terms still present in final text.
         terms_glossary = build_glossary_from_simplified_text(
             clarified,
-            preserve_and_define_terms,
+            term_data["preserve_and_define_terms"],
         )
 
         # Merge structured output with deterministic glossary, intermediary raw data,

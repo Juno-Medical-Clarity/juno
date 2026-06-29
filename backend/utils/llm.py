@@ -15,6 +15,15 @@ import logging
 import os
 import re
 
+import vertexai
+from vertexai.preview.generative_models import (
+    FinishReason,
+    GenerationConfig as VertexGenerationConfig,
+    GenerativeModel,
+    HarmBlockThreshold,
+    HarmCategory,
+)
+
 from error_codes import ErrorCode
 from utils.pipeline_errors import JunoError, classify_finish_reason, classify_vertex_exception
 
@@ -34,14 +43,6 @@ class LLMClient:
         if model_name is None:
             model_name = os.environ.get("VERTEX_AI_MODEL", "gemini-1.5-pro")
 
-        import vertexai
-        from vertexai.preview.generative_models import (
-            FinishReason,
-            GenerationConfig as VertexGenerationConfig,
-            GenerativeModel,
-            HarmBlockThreshold,
-            HarmCategory,
-        )
         project_id = os.environ.get("GCP_PROJECT_ID", "")
         location = os.environ.get("GCP_LOCATION", "us-central1")
         vertexai.init(project=project_id, location=location)
