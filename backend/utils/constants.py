@@ -67,8 +67,13 @@ class Constants:
         MAX_RETRIES: int = 3
 
         class AthenaSourceKind(StrEnum):
-            ATHENA_ENCOUNTER = "athena_encounter"
+            ATHENA_ENCOUNTER    = "athena_encounter"
             ATHENA_CLINICAL_DOC = "athena_clinical_doc"
+            GCS_BATCH_DATASET   = "gcs_batch_dataset"
+            UPLOAD              = "upload"
+            TEXT                = "text"
+            DOC_ID              = "doc_id"
+            BATCH_DATASET       = "batch_dataset"   # legacy
 
     class Storage:
         GCS_BUCKET_ENV_VAR: str = "GCP_BUCKET_NAME"
