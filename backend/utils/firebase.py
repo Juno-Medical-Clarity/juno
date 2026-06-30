@@ -13,7 +13,7 @@ from functools import wraps
 import firebase_admin
 from firebase_admin import auth, credentials, firestore
 from flask import g, request
-from utils.error_codes import make_error_response, ErrorCode
+from errors import make_error_response, ErrorCode
 
 from dotenv import load_dotenv
 

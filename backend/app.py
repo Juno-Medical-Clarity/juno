@@ -9,7 +9,7 @@ from opentelemetry import trace
 
 import os as _os
 from routes import API_BLUEPRINTS, WORKER_BLUEPRINTS
-from utils.error_codes import make_error_response, ErrorCode
+from errors import make_error_response, ErrorCode
 from utils.firebase import initialize_firebase
 from logging_config import setup_logging
 from telemetry import init_telemetry

@@ -18,7 +18,7 @@ from routes.care_plan import (
     _allowed,
 )
 from utils.constants import Constants
-from utils.error_codes import make_error_response, ErrorCode
+from errors import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
 care_plan_jobs_bp = Blueprint("care_plan_jobs", __name__)

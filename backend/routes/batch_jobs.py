@@ -10,7 +10,7 @@ from utils.firebase import create_job_doc, verify_firebase_token
 from utils.cloud_tasks import enqueue_job, require_env, MissingJobConfigError
 from routes.batch import _resolve_requested_runs, _batch_timestamp
 from utils.constants import Constants
-from utils.error_codes import make_error_response, ErrorCode
+from errors import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
 batch_jobs_bp = Blueprint("batch_jobs", __name__)

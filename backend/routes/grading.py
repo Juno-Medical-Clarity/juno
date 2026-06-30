@@ -4,7 +4,7 @@ import logging
 import os
 
 from flask import Blueprint, jsonify, request
-from utils.error_codes import make_error_response, ErrorCode
+from errors import make_error_response, ErrorCode
 
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
 from utils.scoring import score_text

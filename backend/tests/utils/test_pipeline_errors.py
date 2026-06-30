@@ -1,7 +1,6 @@
 import pytest
 from datetime import datetime
-from error_codes import ErrorCode
-from utils.pipeline_errors import JunoError, build_error_data, build_error_data_from_exc
+from errors import ErrorCode, JunoError, build_error_data, build_error_data_from_exc
 
 
 def test_build_error_data_includes_timestamp():

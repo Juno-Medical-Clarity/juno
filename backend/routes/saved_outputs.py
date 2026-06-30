@@ -19,7 +19,7 @@ from firebase_admin import firestore
 from google.cloud import storage as gcs
 
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
-from utils.error_codes import make_error_response, ErrorCode
+from errors import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
 saved_outputs_bp = Blueprint("saved_outputs", __name__)

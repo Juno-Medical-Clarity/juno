@@ -24,8 +24,7 @@ from vertexai.preview.generative_models import (
     HarmCategory,
 )
 
-from error_codes import ErrorCode
-from utils.pipeline_errors import JunoError, classify_finish_reason, classify_vertex_exception
+from errors import ErrorCode, JunoError, classify_finish_reason, classify_vertex_exception
 
 logger = logging.getLogger(__name__)
 
