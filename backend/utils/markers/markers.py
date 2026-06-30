@@ -31,6 +31,9 @@ class Markers:
         @code_marker("grading.run")
         class Run(CodeMarker): pass
 
+        @code_marker("grading.route")
+        class Route(CodeMarker): pass
+
     class Http:
         @code_marker("http.request")
         class Request(CodeMarker): pass
@@ -45,9 +48,42 @@ class Markers:
         @code_marker("athena.fetch_clinical_doc")
         class FetchClinicalDoc(CodeMarker): pass
 
+        @code_marker("athena.api_call")
+        class ApiCall(CodeMarker): pass
+
     class Batch:
         @code_marker("batch.create_jobs")
         class CreateJobs(CodeMarker): pass
 
         @code_marker("batch.create_single_job")
         class CreateSingleJob(CodeMarker): pass
+
+    class Worker:
+        @code_marker("worker.job_execute")
+        class JobExecute(CodeMarker): pass
+
+        @code_marker("worker.job_stage")
+        class JobStage(CodeMarker): pass
+
+    class SavedOutputs:
+        @code_marker("saved_outputs.list")
+        class List(CodeMarker): pass
+
+        @code_marker("saved_outputs.get")
+        class Get(CodeMarker): pass
+
+        @code_marker("saved_outputs.rename")
+        class Rename(CodeMarker): pass
+
+        @code_marker("saved_outputs.delete")
+        class Delete(CodeMarker): pass
+
+        @code_marker("saved_outputs.get_pdf_url")
+        class GetPdfUrl(CodeMarker): pass
+
+        @code_marker("saved_outputs.toggle_share")
+        class ToggleShare(CodeMarker): pass
+
+    class Firestore:
+        @code_marker("firestore.job_write")
+        class JobWrite(CodeMarker): pass
