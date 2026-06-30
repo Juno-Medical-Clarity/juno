@@ -8,10 +8,9 @@ from pathlib import Path
 
 from google.cloud import storage as gcs
 
-logger = logging.getLogger(__name__)
+from utils.constants import Constants
 
-GCS_PRESET_PREFIX = "preset-data"        # blob path prefix inside the bucket
-TEMP_BASE = Path("/tmp/juno-datasets")   # job-scoped temp root
+logger = logging.getLogger(__name__)
 
 
 def download_dataset_inputs(
@@ -40,7 +39,7 @@ def download_dataset_inputs(
     client = gcs.Client(project=project_id)
     bucket = client.bucket(bucket_name)
 
-    job_dir = TEMP_BASE / job_id
+    job_dir = Path(Constants.Storage.TEMP_BASE) / job_id
 
     def _download_one(blob_name: str, local_path: Path) -> None:
         local_path.parent.mkdir(parents=True, exist_ok=True)
@@ -48,7 +47,7 @@ def download_dataset_inputs(
 
     tasks = [
         (
-            f"{GCS_PRESET_PREFIX}/{group}/{input_id}/{f}",
+            f"{Constants.Storage.GCS_PRESET_PREFIX}/{group}/{input_id}/{f}",
             job_dir / group / input_id / f,
         )
         for f in files
@@ -78,7 +77,7 @@ def cleanup_dataset_inputs(job_id: str) -> None:
     Idempotent — safe to call even if the directory was never created.
     Logs but does not raise on errors (best-effort cleanup).
     """
-    job_dir = TEMP_BASE / job_id
+    job_dir = Path(Constants.Storage.TEMP_BASE) / job_id
     if not job_dir.exists():
         return
     try:
@@ -95,10 +94,10 @@ def sweep_stale_dataset_dirs(max_age_seconds: int = 86400) -> None:
     left by a container that crashed mid-job.
     Uses os.stat(dir).st_mtime for age comparison.
     """
-    if not TEMP_BASE.exists():
+    if not Path(Constants.Storage.TEMP_BASE).exists():
         return
     now = time.time()
-    for entry in TEMP_BASE.iterdir():
+    for entry in Path(Constants.Storage.TEMP_BASE).iterdir():
         if not entry.is_dir():
             continue
         try:
