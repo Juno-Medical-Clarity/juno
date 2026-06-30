@@ -64,16 +64,37 @@ def test_source_kind_param_in_pipeline():
 # ---------------------------------------------------------------------------
 
 def _make_pipeline_stub():
-    """Return a minimal CarePlanV1_2Pipeline stub."""
+    """Return a minimal CarePlanV1_2Pipeline stub with iter_steps support."""
+    from models.pipeline_events import PipelineRunResult, StepEvent
+
     stub = MagicMock()
-    stub.simplify_language_with_term_plan.return_value = "simplified text"
-    stub.clarify_and_action.return_value = "clarified text"
-    stub.structure_appointment_note.return_value = {
-        "title": "Appointment",
-        "summary": "summary",
-        "sections": [],
-    }
-    return stub
+    care_plan_mock = MagicMock()
+
+    def fake_iter_steps(text, wrap_step=None):
+        for step in (2, 3, 4, 5):
+            yield StepEvent(step=step, status="active", label=f"Step {step}")
+            if wrap_step is not None:
+                # Call wrap_step so Markers get triggered for each step
+                wrap_step(step, f"Step {step}", lambda s=step: {
+                    "substitution_candidates": [],
+                    "preserve_and_define_terms": [],
+                    "abbreviations": [],
+                } if s == 2 else "output")
+            yield StepEvent(step=step, status="done", label=f"Step {step}")
+        yield PipelineRunResult(
+            care_plan=care_plan_mock,
+            term_data={
+                "substitution_candidates": [],
+                "preserve_and_define_terms": [],
+                "abbreviations": [],
+            },
+            simplified="simplified text",
+            clarified="clarified text",
+            raw_text=text,
+        )
+
+    stub.iter_steps.side_effect = fake_iter_steps
+    return stub, care_plan_mock
 
 
 def _make_grading_stub(n_methods=6):
@@ -111,20 +132,13 @@ def test_pipeline_marker_has_source_kind_grading_enabled_is_batch(_clean_sink):
     register_sink(sink)
 
     metrics = Metrics.start("sess-1", "v1-2", "text")
-    pipeline_stub = _make_pipeline_stub()
+    pipeline_stub, _ = _make_pipeline_stub()
     grading_stub = _make_grading_stub()
 
     with (
         patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan.detect_terms", return_value={
-            "substitution_candidates": [],
-            "preserve_and_define_terms": [],
-            "abbreviations": [],
-        }),
-        patch("routes.care_plan.build_glossary_from_simplified_text", return_value=[]),
         patch("routes.care_plan._score_or_none", return_value={"composite": 72.5, "dimensions": {}}),
         patch("routes.care_plan.build_grading", return_value=grading_stub),
-        patch("routes.care_plan.CarePlan.from_pipeline_result", return_value=MagicMock()),
     ):
         _exhaust(run_care_plan_pipeline(
             "some medical text",
@@ -152,19 +166,12 @@ def test_pipeline_marker_batch_dimensions(_clean_sink):
     register_sink(sink)
 
     metrics = Metrics.start("sess-2", "v1-2", "text")
-    pipeline_stub = _make_pipeline_stub()
+    pipeline_stub, _ = _make_pipeline_stub()
 
     with (
         patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan.detect_terms", return_value={
-            "substitution_candidates": [],
-            "preserve_and_define_terms": [],
-            "abbreviations": [],
-        }),
-        patch("routes.care_plan.build_glossary_from_simplified_text", return_value=[]),
         patch("routes.care_plan._score_or_none", return_value=None),
         patch("routes.care_plan.build_grading", return_value=MagicMock()),
-        patch("routes.care_plan.CarePlan.from_pipeline_result", return_value=MagicMock()),
     ):
         _exhaust(run_care_plan_pipeline(
             "batch medical text",
@@ -220,20 +227,13 @@ def test_grading_run_marker_fired_when_grading_enabled(_clean_sink):
     register_sink(sink)
 
     metrics = Metrics.start("sess-3", "v1-2", "text")
-    pipeline_stub = _make_pipeline_stub()
+    pipeline_stub, _ = _make_pipeline_stub()
     grading_stub = _make_grading_stub(n_methods=6)
 
     with (
         patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan.detect_terms", return_value={
-            "substitution_candidates": [],
-            "preserve_and_define_terms": [],
-            "abbreviations": [],
-        }),
-        patch("routes.care_plan.build_glossary_from_simplified_text", return_value=[]),
         patch("routes.care_plan._score_or_none", return_value={"composite": 85.0, "dimensions": {}}),
         patch("routes.care_plan.build_grading", return_value=grading_stub),
-        patch("routes.care_plan.CarePlan.from_pipeline_result", return_value=MagicMock()),
     ):
         _exhaust(run_care_plan_pipeline(
             "text for grading",
@@ -263,19 +263,12 @@ def test_grading_run_marker_not_fired_when_grading_disabled(_clean_sink):
     register_sink(sink)
 
     metrics = Metrics.start("sess-4", "v1-2", "text")
-    pipeline_stub = _make_pipeline_stub()
+    pipeline_stub, _ = _make_pipeline_stub()
 
     with (
         patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan.detect_terms", return_value={
-            "substitution_candidates": [],
-            "preserve_and_define_terms": [],
-            "abbreviations": [],
-        }),
-        patch("routes.care_plan.build_glossary_from_simplified_text", return_value=[]),
         patch("routes.care_plan._score_or_none", return_value=None),
         patch("routes.care_plan.build_grading", return_value=MagicMock()),
-        patch("routes.care_plan.CarePlan.from_pipeline_result", return_value=MagicMock()),
     ):
         _exhaust(run_care_plan_pipeline(
             "text without grading",
