@@ -68,33 +68,6 @@ def test_get_input_pdf_url_new_path(mock_get_bucket, mock_firestore_client, _ver
     mock_bucket.blob.assert_called_with("care_plan/user-1/inputs/abc.pdf")
 
 
-@patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
-@patch("routes.saved_outputs.firestore.client")
-@patch("routes.saved_outputs.get_gcs_bucket")
-@patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
-def test_get_input_pdf_url_legacy_fallback(mock_get_bucket, mock_firestore_client, _verify_token, client):
-    """Doc with only top-level input_pdf_gcs set (legacy) → uses fallback, returns URL."""
-    doc = _make_owned_doc({
-        "input_pdf_gcs": "gs://my-bucket/care_plan/user-1/inputs/legacy.pdf",
-        # no output_data.input.pdf_gcs_url
-    })
-    _wire_get_owned(mock_firestore_client, doc)
-
-    mock_blob = MagicMock()
-    mock_blob.generate_signed_url.return_value = "https://signed.url/legacy"
-    mock_bucket = MagicMock()
-    mock_bucket.blob.return_value = mock_blob
-    mock_get_bucket.return_value = mock_bucket
-
-    response = client.get(
-        "/care_plan/saved/doc-1/input-pdf-url",
-        headers={"Authorization": "Bearer token"},
-    )
-
-    assert response.status_code == 200
-    assert response.get_json()["url"] == "https://signed.url/legacy"
-    mock_bucket.blob.assert_called_with("care_plan/user-1/inputs/legacy.pdf")
-
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
 @patch("routes.saved_outputs.firestore.client")
@@ -251,3 +224,24 @@ def test_toggle_share_returns_500_on_update_error(client, mock_firebase_token):
     assert response.status_code == 500
     data = response.get_json()
     assert data["status"] == "error"
+
+
+def test_get_input_pdf_url_returns_404_without_legacy_fallback(client, mock_firebase_token):
+    """A doc with only input_pdf_gcs (no output_data.input.pdf_gcs_url) returns 404."""
+    from unittest.mock import MagicMock, patch
+
+    mock_doc = MagicMock()
+    mock_doc.to_dict.return_value = {
+        "uid": "test-user",
+        "input_pdf_gcs": "gs://bucket/old-style-path.pdf",
+        # No output_data.input.pdf_gcs_url
+    }
+
+    with patch("routes.saved_outputs.get_owned_doc_or_403", return_value=(mock_doc, None)), \
+         patch("routes.saved_outputs.firestore_client"):
+        response = client.get(
+            "/care_plan/saved/test-doc/input-pdf-url",
+            headers={"Authorization": "Bearer testtoken"},
+        )
+
+    assert response.status_code == 404
