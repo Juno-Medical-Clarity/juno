@@ -1,75 +1,104 @@
-import json
-from unittest.mock import patch
+"""Tests for run_care_plan_pipeline — the thin adapter over CarePlanV1_2Pipeline.iter_steps()."""
+from unittest.mock import patch, MagicMock
 
 from models.metrics import Metrics
-import routes.care_plan as care_plan_module
+from routes.care_plan import run_care_plan_pipeline
+from models.pipeline_events import (
+    StepEvent,
+    PipelineRunResult,
+    PipelineStepError,
+    AdapterStepEvent,
+    AdapterResult,
+    AdapterError,
+)
+from models.grading import Grading
+
+
+def _make_metrics():
+    return Metrics.start(session_id="session-1", pipeline_version="v1-2", input_type="text")
+
+
+def _make_run_result(text="plain note"):
+    """Return a PipelineRunResult with a minimal stub care_plan."""
+    return PipelineRunResult(
+        care_plan=MagicMock(),
+        term_data={"substitution_candidates": [], "preserve_and_define_terms": [], "abbreviations": []},
+        simplified="simplified",
+        clarified="clarified",
+        raw_text=text,
+    )
 
 
 class FakePipeline:
-    def simplify_language_with_term_plan(self, text, substitution_candidates, preserve_terms, abbreviations):
-        return f"simplified: {text}"
+    """Fake pipeline that yields typed events from iter_steps without calling wrap_step."""
 
-    def clarify_and_action(self, simplified, abbreviations):
-        return f"clarified: {simplified}"
-
-    def structure_appointment_note(self, clarified):
-        return {"summary": clarified}
-
-
-def _events_from_chunks(chunks):
-    events = []
-    for chunk in chunks:
-        if isinstance(chunk, tuple):
-            continue  # skip __result__ sentinel
-        for block in chunk.strip().split("\n\n"):
-            if block.startswith("data: "):
-                events.append(json.loads(block.removeprefix("data: ")))
-    return events
+    def iter_steps(self, text, wrap_step=None):
+        for step in (2, 3, 4, 5):
+            yield StepEvent(step=step, status="active", label=f"Step {step}")
+            yield StepEvent(step=step, status="done", label=f"Step {step}")
+        yield _make_run_result(text)
 
 
-@patch("routes.care_plan.score_text", return_value={"composite": 70, "grade_estimate": 6.0, "label": "Patient-friendly", "word_count": 100, "dimensions": {"grade_level": {"score": 70, "raw": 6.0, "label": "Grade Level", "unit": "grade"}, "jargon_density": {"score": 70, "raw": 0.1, "label": "Jargon Density", "unit": "proportion"}, "sentence_complexity": {"score": 70, "raw": 12.0, "label": "Sentence Length", "unit": "words/sentence"}, "passive_voice": {"score": 70, "raw": 0.1, "label": "Active Voice", "unit": "passive ratio"}, "actionability": {"score": 70, "raw": 0.05, "label": "Actionability", "unit": "you-rate"}, "numeracy_clarity": {"score": 70, "raw": 1.0, "label": "Numeric Clarity", "unit": "vague count"}, "structural_clarity": {"score": 70, "raw": 30.0, "label": "Structure", "unit": "words/paragraph"}}})
-@patch("routes.care_plan.build_glossary_from_simplified_text", return_value={})
-@patch(
-    "routes.care_plan.detect_terms",
-    return_value={
-        "substitution_candidates": [],
-        "preserve_and_define_terms": [],
-        "abbreviations": [],
-    },
-)
-@patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline())
-def test_run_care_plan_pipeline_direct_text_yields_steps_and_result_sentinel(
-    _pipeline,
-    _detect_terms,
-    _glossary,
-    _score,
-):
-    metrics = Metrics.start(
-        session_id="session-1",
-        pipeline_version="v1-2",
-        input_type="text",
-    )
+class FailingPipeline:
+    """Fake pipeline that yields a step error."""
 
-    chunks = list(care_plan_module.run_care_plan_pipeline(
-        "plain note",
-        metrics,
-        grading_enabled=False,
-    ))
+    def iter_steps(self, text, wrap_step=None):
+        yield PipelineStepError(step=3, exc=RuntimeError("fail"))
 
-    # All string chunks should be step SSE events (not result events)
-    str_chunks = [c for c in chunks if isinstance(c, str)]
-    events = _events_from_chunks(str_chunks)
-    assert [(event["step"], event.get("status")) for event in events] == [
-        (2, "active"),
-        (2, "done"),
-        (3, "active"),
-        (3, "done"),
-        (4, "active"),
-        (4, "done"),
-        (5, "active"),
-        (5, "done"),
+
+def _mock_markers():
+    """Return a mock_scope and side_effect setter for Markers.CarePlan.Pipeline.execute."""
+    mock_scope = MagicMock()
+    return mock_scope
+
+
+def test_run_care_plan_pipeline_yields_typed_step_events():
+    metrics = _make_metrics()
+    mock_scope = _mock_markers()
+
+    with patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline()), \
+         patch("routes.care_plan.Markers") as mock_markers:
+        mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
+
+        events = list(run_care_plan_pipeline("plain note", metrics, grading_enabled=False))
+
+    step_events = [e for e in events if isinstance(e, AdapterStepEvent)]
+    assert [(e.step, e.status) for e in step_events] == [
+        (2, "active"), (2, "done"),
+        (3, "active"), (3, "done"),
+        (4, "active"), (4, "done"),
+        (5, "active"), (5, "done"),
     ]
-    # The last chunk should be the __result__ sentinel tuple, not an SSE event
-    tuple_chunks = [c for c in chunks if isinstance(c, tuple)]
-    assert len(tuple_chunks) == 1
-    assert tuple_chunks[0][0] == "__result__"
+
+
+def test_run_care_plan_pipeline_yields_adapter_result():
+    metrics = _make_metrics()
+    mock_scope = _mock_markers()
+
+    with patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline()), \
+         patch("routes.care_plan.Markers") as mock_markers:
+        mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
+
+        events = list(run_care_plan_pipeline("plain note", metrics, grading_enabled=False))
+
+    result_events = [e for e in events if isinstance(e, AdapterResult)]
+    assert len(result_events) == 1
+    result = result_events[0]
+    assert result.raw_text == "plain note"
+    assert result.care_plan is not None
+    assert isinstance(result.grading, Grading)
+    assert result.grading.enabled is False
+
+
+def test_run_care_plan_pipeline_step_error_yields_adapter_error():
+    metrics = _make_metrics()
+    mock_scope = _mock_markers()
+
+    with patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FailingPipeline()), \
+         patch("routes.care_plan.Markers") as mock_markers:
+        mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
+
+        events = list(run_care_plan_pipeline("text", metrics, grading_enabled=False))
+
+    error_events = [e for e in events if isinstance(e, AdapterError)]
+    assert len(error_events) == 1
