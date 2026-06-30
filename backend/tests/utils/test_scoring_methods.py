@@ -175,7 +175,7 @@ def test_no_items_met_when_low_scores():
 def test_returns_all_six_methods():
     full_score = score_text(LONG_TEXT)
     result = compute_method_scores(LONG_TEXT, full_score["dimensions"])
-    expected_keys = set(Constants.GRADING_METHODS)
+    expected_keys = set(Constants.Grading.GRADING_METHODS)
     assert set(result.keys()) == expected_keys
 
 
@@ -191,5 +191,5 @@ def test_each_method_has_score_in_range():
 def test_smog_insufficient_sample_for_short_text():
     full_score = score_text(SHORT_TEXT)
     result = compute_method_scores(SHORT_TEXT, full_score["dimensions"])
-    assert result[Constants.GRADING_METHODS.SMOG]["insufficient_sample"]
-    assert result[Constants.GRADING_METHODS.SMOG]["score"] == 0
+    assert result[Constants.Grading.GRADING_METHODS.SMOG]["insufficient_sample"]
+    assert result[Constants.Grading.GRADING_METHODS.SMOG]["score"] == 0

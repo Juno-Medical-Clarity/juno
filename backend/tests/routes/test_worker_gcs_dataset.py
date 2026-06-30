@@ -71,7 +71,7 @@ def _make_success_pipeline_items():
     care_plan_mock = MagicMock()
     care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
     grading_mock = MagicMock()
-    return (Constants.RESULT_SENTINEL, care_plan_mock, grading_mock, "text", "text")
+    return (Constants.Pipeline.RESULT_SENTINEL, care_plan_mock, grading_mock, "text", "text")
 
 
 def _fake_success_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):

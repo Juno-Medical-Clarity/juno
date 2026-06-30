@@ -60,8 +60,11 @@ def test_env_vars_namespace_deduplicated():
     assert Constants.EnvVars.DATASETS_BUCKET == "DATASETS_BUCKET_NAME"
 
 
-def test_flat_shims_still_work():
-    assert Constants.RESULT_SENTINEL == Constants.Pipeline.RESULT_SENTINEL
-    assert Constants.MAX_BATCH_RUNS == Constants.Batch.MAX_BATCH_RUNS
-    assert Constants.GRADING_METHODS is Constants.Grading.GRADING_METHODS
-    assert Constants.ATHENA_BASE_URL == Constants.Athena.BASE_URL
+def test_pipeline_v1_2_steps_enum():
+    steps = Constants.Pipeline.PIPELINE_V1_2_STEPS
+    assert steps.DETECT_TERMS.number == 2
+    assert steps.DETECT_TERMS.label == "Finding difficult and medical terms"
+    assert steps.READ_NOTE.number == 1
+    assert steps.SIMPLIFY_LANGUAGE.number == 3
+    assert steps.CLARIFY_AND_ACTION.number == 4
+    assert steps.STRUCTURE_DOCUMENT.number == 5

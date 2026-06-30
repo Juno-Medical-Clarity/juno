@@ -39,10 +39,10 @@ def test_care_plan_v1_2_rejects_extra_nested_key(full_v12_fixture):
 
 def test_care_plan_v1_2_minimal_payload_uses_pipeline_defaults():
     model = CarePlanV1_2.model_validate(
-        {"version": Constants.CARE_PLAN_VERSIONS.V1_2.value, "doc_type": "care_plan"}
+        {"version": Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value, "doc_type": "care_plan"}
     )
 
-    assert model.version == Constants.CARE_PLAN_VERSIONS.V1_2.value
+    assert model.version == Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value
     assert model.doc_type == "care_plan"
     assert model.urgency == "normal"
     assert model.summary == ""
@@ -63,27 +63,27 @@ def test_care_plan_v1_2_minimal_payload_uses_pipeline_defaults():
 def test_care_plan_v1_2_rejects_appointment_note_doc_type():
     with pytest.raises(ValidationError):
         CarePlanV1_2.model_validate(
-            {"version": Constants.CARE_PLAN_VERSIONS.V1_2.value, "doc_type": "appointment_note"}
+            {"version": Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value, "doc_type": "appointment_note"}
         )
 
 
 def test_care_plan_from_dict_dispatches_to_v1_2():
-    model = CarePlan.from_dict({"version": Constants.CARE_PLAN_VERSIONS.V1_2.value, "doc_type": "care_plan"})
+    model = CarePlan.from_dict({"version": Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value, "doc_type": "care_plan"})
 
     assert isinstance(model, CarePlanV1_2)
 
 
 def test_care_plan_from_pipeline_result_merges_version_and_validates():
-    model = CarePlan.from_pipeline_result(Constants.CARE_PLAN_VERSIONS.V1_2.value, {"doc_type": "care_plan"})
+    model = CarePlan.from_pipeline_result(Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value, {"doc_type": "care_plan"})
 
     assert isinstance(model, CarePlanV1_2)
-    assert model.version == Constants.CARE_PLAN_VERSIONS.V1_2.value
+    assert model.version == Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value
 
 
 def test_care_plan_from_pipeline_result_validates_drift():
     with pytest.raises(ValidationError):
         CarePlan.from_pipeline_result(
-            Constants.CARE_PLAN_VERSIONS.V1_2.value, {"doc_type": "care_plan", "extra": "drift"}
+            Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value, {"doc_type": "care_plan", "extra": "drift"}
         )
 
 

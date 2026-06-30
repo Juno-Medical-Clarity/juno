@@ -27,7 +27,7 @@ def test_structure_appointment_note_validates_and_returns_json_model_dump():
     structured = pipeline.structure_appointment_note("clarified text")
 
     assert structured["doc_type"] == "care_plan"
-    assert structured["version"] == Constants.CARE_PLAN_VERSIONS.V1_2.value
+    assert structured["version"] == Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value
     assert structured["summary"] == "You came in for care."
     assert structured["reason_for_visit"] == []
 
@@ -65,7 +65,7 @@ def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
     pipeline.clarify_and_action = lambda simplified, abbreviations: "clarified"
     pipeline.structure_appointment_note = lambda clarified: {
         "doc_type": "care_plan",
-        "version": Constants.CARE_PLAN_VERSIONS.V1_2.value,
+        "version": Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value,
         "summary": "You came in for care.",
     }
 
