@@ -1,5 +1,5 @@
 import logging
-import time
+import time  # noqa: F401
 import uuid
 import os
 

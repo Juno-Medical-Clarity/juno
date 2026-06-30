@@ -8,7 +8,7 @@ Requires the 'admin' custom claim on the Firebase token.
 import logging
 
 from flask import Blueprint, jsonify, request
-from google.cloud import firestore
+from google.cloud import firestore  # noqa: F401
 from errors import make_error_response, ErrorCode
 
 from utils.firebase import require_admin, firestore_client

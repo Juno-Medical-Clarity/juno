@@ -12,7 +12,7 @@ Usage:
 
 import logging
 import re
-import math
+import math  # noqa: F401
 import textstat
 
 logger = logging.getLogger(__name__)

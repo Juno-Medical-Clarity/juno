@@ -67,18 +67,19 @@ def test_save_care_plan_output_accepts_batch_metadata(
 
 @patch.dict("routes.care_plan.os.environ", {"GCP_BUCKET_NAME": "bucket", "GCP_PROJECT_ID": "project"})
 @patch("routes.care_plan.uuid.uuid4")
-@patch("routes.care_plan.gcs.Client")
-def test_upload_combined_pdf_uses_care_plan_gcs_path(gcs_client, uuid4):
+@patch("routes.care_plan.get_gcs_bucket")
+def test_upload_combined_pdf_uses_care_plan_gcs_path(get_gcs_bucket, uuid4):
     from routes.care_plan import upload_combined_pdf
 
     uuid4.return_value = "input-456"
     blob = MagicMock()
-    bucket = gcs_client.return_value.bucket.return_value
+    bucket = get_gcs_bucket.return_value
     bucket.blob.return_value = blob
 
     uri = upload_combined_pdf(b"%PDF", "user-1")
 
     assert uri == "gs://bucket/care_plan/user-1/inputs/input-456.pdf"
+    get_gcs_bucket.assert_called_once_with("bucket")
     bucket.blob.assert_called_once_with("care_plan/user-1/inputs/input-456.pdf")
     blob.upload_from_string.assert_called_once_with(
         b"%PDF", content_type="application/pdf"

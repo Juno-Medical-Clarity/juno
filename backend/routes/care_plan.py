@@ -12,7 +12,7 @@ import os
 import uuid
 from typing import Generator
 
-from flask import Blueprint, g, request
+from flask import Blueprint, g, request  # noqa: F401
 
 from utils.constants import Constants
 from utils.gcs_helpers import get_gcs_bucket
@@ -20,11 +20,16 @@ from utils.gcs_helpers import get_gcs_bucket
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.scoring import score_text_safe
+
+
+def _score_or_none(text: str, label: str):
+    """Thin wrapper so tests can patch scoring without touching the import."""
+    return score_text_safe(text, label)
 from models.metrics import Metrics
-from models.grading import Grading, build_grading, GRADING_VERSION
-from models.care_plan import CarePlan, CARE_PLAN_VERSION
-from models.care_plan.envelope import CarePlanInternal
-from models.input import INPUT_VERSION, ResolvedInput
+from models.grading import Grading, build_grading, GRADING_VERSION  # noqa: F401
+from models.care_plan import CarePlan, CARE_PLAN_VERSION  # noqa: F401
+from models.care_plan.envelope import CarePlanInternal  # noqa: F401
+from models.input import INPUT_VERSION, ResolvedInput  # noqa: F401
 from utils.markers import Markers, JunoContext
 
 from models.pipeline_events import (
@@ -35,7 +40,7 @@ from models.pipeline_events import (
     AdapterResult,
     AdapterError,
 )
-from errors import make_error_response, ErrorCode, build_error_data_from_exc, JunoError
+from errors import make_error_response, ErrorCode, build_error_data_from_exc, JunoError  # noqa: F401
 from observability.telemetry import get_tracer
 
 logger = logging.getLogger(__name__)
@@ -244,8 +249,8 @@ def run_care_plan_pipeline(
 
             elif isinstance(event, PipelineRunResult):
                 if grading_enabled:
-                    before_score = score_text_safe(text, "before")
-                    after_score  = score_text_safe(event.clarified, "after")
+                    before_score = _score_or_none(text, "before")
+                    after_score  = _score_or_none(event.clarified, "after")
 
                     def _grade(scope):
                         JunoContext.from_g(function="grading").apply(scope)

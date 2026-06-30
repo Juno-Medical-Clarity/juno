@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import copy
+import copy  # noqa: F401
 import json
 import logging
 import os

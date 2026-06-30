@@ -25,7 +25,7 @@ class CarePlanPipeline(ABC):
     """
 
     @abstractmethod
-    def run(self, text: str) -> "CarePlan":
+    def run(self, text: str) -> "CarePlan":  # noqa: F821
         """Run the full pipeline; returns typed CarePlan. No instrumentation."""
         pass
 

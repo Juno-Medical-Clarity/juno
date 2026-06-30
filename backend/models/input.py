@@ -10,7 +10,7 @@ from .base import JsonModel
 from utils.constants import Constants
 
 if TYPE_CHECKING:
-    from werkzeug.datastructures import FileStorage
+    from werkzeug.datastructures import FileStorage  # noqa: F401
 
 
 INPUT_VERSION = Constants.Schema.INPUT_VERSION

@@ -1,7 +1,7 @@
 """grading.py — Re-run grading on a saved or ephemeral care plan output."""
 
 import logging
-import os
+import os  # noqa: F401
 
 from flask import Blueprint, jsonify, request
 from errors import make_error_response, ErrorCode

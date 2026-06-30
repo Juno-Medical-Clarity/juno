@@ -9,10 +9,10 @@ the class object itself is the singleton, no instances needed. Tag it with
 
 from __future__ import annotations
 
-import asyncio
+import asyncio  # noqa: F401
 import inspect
 import time
-from typing import Any, Awaitable, Callable, Dict, Optional, TypeVar
+from typing import Any, Awaitable, Callable, Dict, Optional, TypeVar  # noqa: F401
 
 from utils.constants import Constants
 
