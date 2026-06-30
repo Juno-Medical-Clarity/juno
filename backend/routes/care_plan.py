@@ -46,12 +46,6 @@ _juno_error_logger = logging.getLogger("utils.juno_logger")
 care_plan_bp = Blueprint("care_plan", __name__)
 
 
-# ── Scoring helpers ────────────────────────────────────────────────────────────
-def _score_or_none(text: str, label: str):
-    """Thin wrapper so tests can patch scoring without touching the import."""
-    return score_text_safe(text, label)
-
-
 # ── GCS upload helpers ─────────────────────────────────────────────────────────
 def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     """Upload combined input PDF bytes and return a gs:// URI."""
@@ -250,8 +244,8 @@ def run_care_plan_pipeline(
 
             elif isinstance(event, PipelineRunResult):
                 if grading_enabled:
-                    before_score = _score_or_none(text, "before")
-                    after_score  = _score_or_none(event.clarified, "after")
+                    before_score = score_text_safe(text, "before")
+                    after_score  = score_text_safe(event.clarified, "after")
 
                     def _grade(scope):
                         JunoContext.from_g(function="grading").apply(scope)

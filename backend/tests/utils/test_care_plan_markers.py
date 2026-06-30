@@ -137,7 +137,7 @@ def test_pipeline_marker_has_source_kind_grading_enabled_is_batch(_clean_sink):
 
     with (
         patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan._score_or_none", return_value={"composite": 72.5, "dimensions": {}}),
+        patch("routes.care_plan.score_text_safe", return_value={"composite": 72.5, "dimensions": {}}),
         patch("routes.care_plan.build_grading", return_value=grading_stub),
     ):
         _exhaust(run_care_plan_pipeline(
@@ -170,7 +170,7 @@ def test_pipeline_marker_batch_dimensions(_clean_sink):
 
     with (
         patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan._score_or_none", return_value=None),
+        patch("routes.care_plan.score_text_safe", return_value=None),
         patch("routes.care_plan.build_grading", return_value=MagicMock()),
     ):
         _exhaust(run_care_plan_pipeline(
@@ -232,7 +232,7 @@ def test_grading_run_marker_fired_when_grading_enabled(_clean_sink):
 
     with (
         patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan._score_or_none", return_value={"composite": 85.0, "dimensions": {}}),
+        patch("routes.care_plan.score_text_safe", return_value={"composite": 85.0, "dimensions": {}}),
         patch("routes.care_plan.build_grading", return_value=grading_stub),
     ):
         _exhaust(run_care_plan_pipeline(
@@ -267,7 +267,7 @@ def test_grading_run_marker_not_fired_when_grading_disabled(_clean_sink):
 
     with (
         patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan._score_or_none", return_value=None),
+        patch("routes.care_plan.score_text_safe", return_value=None),
         patch("routes.care_plan.build_grading", return_value=MagicMock()),
     ):
         _exhaust(run_care_plan_pipeline(
