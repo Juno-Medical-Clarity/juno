@@ -106,10 +106,10 @@ class RawArtifacts(JsonModel):
 
 
 class CarePlanV1_2(CarePlan):
-    version_value: ClassVar[str] = Constants.CARE_PLAN_VERSIONS.V1_2.value
+    version_value: ClassVar[str] = Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value
 
     doc_type: Literal["care_plan"] = "care_plan"
-    version: Literal["1.2"] = Constants.CARE_PLAN_VERSIONS.V1_2.value
+    version: Literal["1.2"] = Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value
     urgency: Literal["normal", "caution", "concern", "urgent"] = "normal"
     summary: str = ""
     reason_for_visit: list[ReasonForVisit] = Field(default_factory=list)
