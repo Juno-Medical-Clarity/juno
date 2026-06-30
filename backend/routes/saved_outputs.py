@@ -16,9 +16,9 @@ from datetime import datetime, timezone, timedelta
 
 from flask import Blueprint, jsonify, request
 from firebase_admin import firestore
-from google.cloud import storage as gcs
 
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
+from utils.gcs_helpers import get_gcs_bucket
 from errors import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
@@ -179,8 +179,7 @@ def delete_saved(user_id: str, doc_id: str):
     )
     if gcs_uri and _BUCKET_NAME:
         try:
-            client = gcs.Client(project=os.environ.get('GCP_PROJECT_ID') or None)
-            bucket = client.bucket(_BUCKET_NAME)
+            bucket = get_gcs_bucket()
             blob_name = gcs_uri.replace(f"gs://{_BUCKET_NAME}/", "")
             bucket.blob(blob_name).delete()
         except Exception:
@@ -215,8 +214,7 @@ def get_input_pdf_url(user_id: str, doc_id: str):
         ).to_dict(), 404
 
     try:
-        client = gcs.Client(project=os.environ.get('GCP_PROJECT_ID') or None)
-        bucket = client.bucket(_BUCKET_NAME)
+        bucket = get_gcs_bucket()
         blob_name = gcs_uri.replace(f"gs://{_BUCKET_NAME}/", "")
         blob = bucket.blob(blob_name)
         signed_url = blob.generate_signed_url(

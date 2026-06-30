@@ -13,9 +13,9 @@ import uuid
 from typing import Generator
 
 from flask import Blueprint, g, request
-from google.cloud import storage as gcs
 
 from utils.constants import Constants
+from utils.gcs_helpers import get_gcs_bucket
 
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
@@ -53,12 +53,10 @@ def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     if not bucket_name:
         raise RuntimeError("GCP_BUCKET_NAME is not configured")
 
-    project_id = os.environ.get("GCP_PROJECT_ID", "") or None
     object_id = str(uuid.uuid4())
     blob_name = f"care_plan/{user_id}/inputs/{object_id}.pdf"
 
-    client = gcs.Client(project=project_id)
-    bucket = client.bucket(bucket_name)
+    bucket = get_gcs_bucket(bucket_name)
     blob = bucket.blob(blob_name)
     blob.upload_from_string(pdf_bytes, content_type="application/pdf")
     return f"gs://{bucket_name}/{blob_name}"
@@ -171,9 +169,7 @@ def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     if not _gcs_bucket_name:
         raise RuntimeError("GCP_BUCKET_NAME is not configured")
 
-    project_id = os.environ.get("GCP_PROJECT_ID", "")
-    client = gcs.Client(project=project_id or None)
-    bucket = client.bucket(_gcs_bucket_name)
+    bucket = get_gcs_bucket(_gcs_bucket_name)
     prefix = f"{Constants.Uploads.UPLOAD_PREFIX}/{doc_id}/"
     blobs = list(bucket.list_blobs(prefix=prefix))
 

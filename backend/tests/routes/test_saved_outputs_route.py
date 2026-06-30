@@ -34,9 +34,9 @@ def _wire_get_owned(mock_firestore_client, doc: MagicMock):
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
 @patch("routes.saved_outputs.firestore.client")
-@patch("routes.saved_outputs.gcs.Client")
+@patch("routes.saved_outputs.get_gcs_bucket")
 @patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
-def test_get_input_pdf_url_new_path(mock_gcs_client, mock_firestore_client, _verify_token, client):
+def test_get_input_pdf_url_new_path(mock_get_bucket, mock_firestore_client, _verify_token, client):
     """Doc with output_data.input.pdf_gcs_url set → uses new path, returns signed URL."""
     doc = _make_owned_doc({
         "output_data": {"input": {"pdf_gcs_url": "gs://my-bucket/care_plan/user-1/inputs/abc.pdf"}},
@@ -47,7 +47,7 @@ def test_get_input_pdf_url_new_path(mock_gcs_client, mock_firestore_client, _ver
     mock_blob.generate_signed_url.return_value = "https://signed.url/new-path"
     mock_bucket = MagicMock()
     mock_bucket.blob.return_value = mock_blob
-    mock_gcs_client.return_value.bucket.return_value = mock_bucket
+    mock_get_bucket.return_value = mock_bucket
 
     response = client.get(
         "/care_plan/saved/doc-1/input-pdf-url",
@@ -61,9 +61,9 @@ def test_get_input_pdf_url_new_path(mock_gcs_client, mock_firestore_client, _ver
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
 @patch("routes.saved_outputs.firestore.client")
-@patch("routes.saved_outputs.gcs.Client")
+@patch("routes.saved_outputs.get_gcs_bucket")
 @patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
-def test_get_input_pdf_url_legacy_fallback(mock_gcs_client, mock_firestore_client, _verify_token, client):
+def test_get_input_pdf_url_legacy_fallback(mock_get_bucket, mock_firestore_client, _verify_token, client):
     """Doc with only top-level input_pdf_gcs set (legacy) → uses fallback, returns URL."""
     doc = _make_owned_doc({
         "input_pdf_gcs": "gs://my-bucket/care_plan/user-1/inputs/legacy.pdf",
@@ -75,7 +75,7 @@ def test_get_input_pdf_url_legacy_fallback(mock_gcs_client, mock_firestore_clien
     mock_blob.generate_signed_url.return_value = "https://signed.url/legacy"
     mock_bucket = MagicMock()
     mock_bucket.blob.return_value = mock_blob
-    mock_gcs_client.return_value.bucket.return_value = mock_bucket
+    mock_get_bucket.return_value = mock_bucket
 
     response = client.get(
         "/care_plan/saved/doc-1/input-pdf-url",
@@ -89,9 +89,9 @@ def test_get_input_pdf_url_legacy_fallback(mock_gcs_client, mock_firestore_clien
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
 @patch("routes.saved_outputs.firestore.client")
-@patch("routes.saved_outputs.gcs.Client")
+@patch("routes.saved_outputs.get_gcs_bucket")
 @patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
-def test_get_input_pdf_url_new_path_takes_priority(mock_gcs_client, mock_firestore_client, _verify_token, client):
+def test_get_input_pdf_url_new_path_takes_priority(mock_get_bucket, mock_firestore_client, _verify_token, client):
     """Doc with both fields set → new path (output_data.input.pdf_gcs_url) takes priority."""
     doc = _make_owned_doc({
         "output_data": {"input": {"pdf_gcs_url": "gs://my-bucket/care_plan/user-1/inputs/new.pdf"}},
@@ -103,7 +103,7 @@ def test_get_input_pdf_url_new_path_takes_priority(mock_gcs_client, mock_firesto
     mock_blob.generate_signed_url.return_value = "https://signed.url/priority"
     mock_bucket = MagicMock()
     mock_bucket.blob.return_value = mock_blob
-    mock_gcs_client.return_value.bucket.return_value = mock_bucket
+    mock_get_bucket.return_value = mock_bucket
 
     response = client.get(
         "/care_plan/saved/doc-1/input-pdf-url",
