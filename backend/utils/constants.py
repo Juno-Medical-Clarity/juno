@@ -11,8 +11,6 @@ class Constants:
 
     class Schema:
         SUMMARY_SCHEMA_VERSION_1_2: str = "1.2"
-        SUMMARY_SCHEMA_VERSION_1_3: str = "1.3"
-        SUMMARY_SCHEMA_VERSION_1_4: str = "1.4"
         INPUT_VERSION: str = "1.0"
         GRADING_VERSION: str = "1.0"
         CARE_PLAN_VERSION: str = "1.2"
@@ -26,7 +24,6 @@ class Constants:
 
     class Pipeline:
         PIPELINE_VERSION_V1_2: str = "v1-2"
-        ALLOWED_VERSIONS: frozenset[str] = frozenset({"v1-2"})
         STEPS: dict[int, str] = {
             1: "Reading your note",
             2: "Finding difficult and medical terms",
@@ -151,7 +148,6 @@ Constants.MAX_FILE_BYTES               = Constants.Uploads.MAX_FILE_BYTES
 Constants.MAX_FILE_COUNT               = Constants.Uploads.MAX_FILE_COUNT
 Constants.MAX_AGGREGATE_FILE_BYTES     = Constants.Uploads.MAX_AGGREGATE_FILE_BYTES
 Constants.PIPELINE_VERSION_V1_2        = Constants.Pipeline.PIPELINE_VERSION_V1_2
-Constants.ALLOWED_VERSIONS             = Constants.Pipeline.ALLOWED_VERSIONS
 Constants.STEPS                        = Constants.Pipeline.STEPS
 Constants.CARE_PLAN_VERSIONS           = Constants.Pipeline.CARE_PLAN_VERSIONS
 Constants.GRADING_METHODS              = Constants.Grading.GRADING_METHODS

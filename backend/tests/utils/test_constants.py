@@ -4,7 +4,7 @@ from utils.constants import Constants
 def test_schema_namespace():
     assert Constants.Schema.INPUT_VERSION == "1.0"
     assert Constants.Schema.GRADING_VERSION == "1.0"
-    assert Constants.Schema.SUMMARY_SCHEMA_VERSION_1_4 == "1.4"
+    assert Constants.Schema.SUMMARY_SCHEMA_VERSION_1_2 == "1.2"
 
 
 def test_uploads_namespace():
