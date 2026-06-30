@@ -5,7 +5,8 @@ from unittest.mock import MagicMock, patch, call
 
 import pytest
 
-from utils.athena_client import AthenaClient, AthenaAPIError, BATCH_SIZE, BATCH_SLEEP_S
+from utils.athena_client import AthenaClient, AthenaAPIError
+from utils.constants import Constants
 
 
 @pytest.fixture
@@ -137,7 +138,7 @@ def test_fetch_items_rate_limit_sleeps_between_batches_not_after_last(client):
         results = client.fetch_items_with_rate_limit(items)
 
     assert mock_sleep.call_count == 1
-    assert mock_sleep.call_args == call(BATCH_SLEEP_S)
+    assert mock_sleep.call_args == call(Constants.Athena.BATCH_SLEEP_S)
     assert len(results) == 3
 
 
