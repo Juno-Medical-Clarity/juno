@@ -118,6 +118,9 @@ def test_no_emission_when_sink_is_none(monkeypatch):
 
 def test_register_sink_called_in_app():
     """After importing app, the global sink must be a JunoSink instance."""
+    import sys
+    # Remove cached module so module-level register_sink(JunoSink()) always re-runs.
+    sys.modules.pop("app", None)
     with patch("utils.firebase.initialize_firebase"):
         import app  # noqa: F401 — module-level register_sink(JunoSink()) runs here
 

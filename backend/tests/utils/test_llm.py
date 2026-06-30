@@ -57,6 +57,8 @@ def vertex_env():
              "vertexai.preview": MagicMock(),
              "vertexai.preview.generative_models": mock_preview_models,
          }):
+        # Ensure utils.llm is re-imported fresh so it binds to the mocked vertexai.
+        sys.modules.pop("utils.llm", None)
         yield mock_vertexai, mock_GenerativeModel, mock_HarmBlockThreshold, mock_HarmCategory, mock_FinishReason, mock_preview_models
 
     sys.modules.pop("utils.llm", None)

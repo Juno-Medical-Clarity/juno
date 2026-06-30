@@ -15,6 +15,7 @@ class Constants:
         SUMMARY_SCHEMA_VERSION_1_4: str = "1.4"
         INPUT_VERSION: str = "1.0"
         GRADING_VERSION: str = "1.0"
+        CARE_PLAN_VERSION: str = "1.2"
 
     class Uploads:
         ALLOWED_EXTENSIONS: frozenset[str] = frozenset({"pdf", "txt", "docx", "html", "htm"})

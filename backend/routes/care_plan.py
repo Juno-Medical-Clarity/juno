@@ -23,7 +23,7 @@ from utils.scoring import score_text
 from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from models.metrics import Metrics
 from models.grading import Grading, build_grading, GRADING_VERSION
-from models.care_plan import CarePlan
+from models.care_plan import CarePlan, CARE_PLAN_VERSION
 from models.care_plan.envelope import CarePlanInternal
 from models.input import INPUT_VERSION, ResolvedInput
 from utils.markers import Markers, JunoContext
