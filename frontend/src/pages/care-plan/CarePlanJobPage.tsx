@@ -52,7 +52,7 @@ export default function CarePlanJobPage() {
 
   const baseResult: CarePlanInternal | null =
     jobDoc?.status === 'completed' && jobDoc.output_data
-      ? (jobDoc.output_data as CarePlanInternal)
+      ? (jobDoc.output_data as unknown as CarePlanInternal)
       : null;
   const result: CarePlanInternal | null =
     baseResult && gradingOverride ? { ...baseResult, grading: gradingOverride } : baseResult;
