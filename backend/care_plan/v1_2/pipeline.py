@@ -21,8 +21,17 @@ import copy
 import json
 import logging
 from pathlib import Path
+from typing import Any, Callable, Generator
 
 from pydantic import ValidationError
+
+from models.pipeline_events import (
+    StepEvent,
+    PipelineRunResult,
+    PipelineStepError,
+)
+
+WrapStepFn = Callable[[int, str, Callable[[], Any]], Any]
 
 from models.care_plan import CarePlan
 from care_plan.interface import CarePlanPipeline
@@ -137,31 +146,90 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
 
         return model.model_dump(mode="json", exclude={"terms", "raw"})
 
-    def run(self, text: str) -> CarePlanV1_2:
+    def iter_steps(
+        self,
+        text: str,
+        wrap_step: WrapStepFn | None = None,
+    ) -> Generator[StepEvent | PipelineRunResult | PipelineStepError, None, None]:
         """
-        Run the full V1.2 pipeline.
+        Run the full V1.2 pipeline, yielding step progress and the final result.
 
-        Returns the typed Simplify V1.2 care-plan model.
+        Yields StepEvent(step, "active") before each step and StepEvent(step, "done")
+        after each step. On success, yields a single PipelineRunResult. On an
+        unrecoverable step failure, yields PipelineStepError and returns.
+
+        Args:
+            text:      Plain text to process.
+            wrap_step: Optional hook called as wrap_step(step_num, label, fn) and
+                       must return fn(). The adapter uses this to attach Markers,
+                       JunoContext, and tracing spans without the pipeline importing
+                       Flask or g. If None, steps are called directly.
         """
-        # Deterministic detections are used to constrain rewrite behavior.
-        term_data = detect_terms(text)
 
-        simplified = self.simplify_language_with_term_plan(
-            text,
-            term_data["substitution_candidates"],
-            term_data["preserve_and_define_terms"],
-            term_data["abbreviations"],
-        )
-        clarified = self.clarify_and_action(simplified, term_data["abbreviations"])
-        structured = self.structure_appointment_note(clarified)
-        # Glossary contains only preserved terms still present in final text.
+        def _call(step: int, label: str, fn: Callable[[], Any]) -> Any:
+            if wrap_step is not None:
+                return wrap_step(step, label, fn)
+            return fn()
+
+        # Step 2: term detection (deterministic, no LLM)
+        yield StepEvent(step=2, status="active", label=Constants.STEPS[2])
+        try:
+            term_data = _call(2, Constants.STEPS[2], lambda: detect_terms(text))
+        except Exception:
+            logger.exception("pipeline: term detection failed — continuing with empty terms")
+            term_data = {
+                "substitution_candidates": [],
+                "preserve_and_define_terms": [],
+                "abbreviations": [],
+            }
+        yield StepEvent(step=2, status="done", label=Constants.STEPS[2])
+
+        # Step 3: simplify language
+        yield StepEvent(step=3, status="active", label=Constants.STEPS[3])
+        try:
+            simplified = _call(
+                3, Constants.STEPS[3],
+                lambda: self.simplify_language_with_term_plan(
+                    text,
+                    term_data["substitution_candidates"],
+                    term_data["preserve_and_define_terms"],
+                    term_data["abbreviations"],
+                ),
+            )
+        except Exception as exc:
+            logger.exception("pipeline: simplification failed")
+            yield PipelineStepError(step=3, exc=exc)
+            return
+        yield StepEvent(step=3, status="done", label=Constants.STEPS[3])
+
+        # Step 4: clarify and action
+        yield StepEvent(step=4, status="active", label=Constants.STEPS[4])
+        try:
+            clarified = _call(
+                4, Constants.STEPS[4],
+                lambda: self.clarify_and_action(simplified, term_data["abbreviations"]),
+            )
+        except Exception:
+            logger.exception("pipeline: clarify step failed — using simplified text")
+            clarified = simplified   # non-fatal: fall back to simplified
+        yield StepEvent(step=4, status="done", label=Constants.STEPS[4])
+
+        # Step 5: structure appointment note
+        yield StepEvent(step=5, status="active", label=Constants.STEPS[5])
+        try:
+            structured = _call(
+                5, Constants.STEPS[5],
+                lambda: self.structure_appointment_note(clarified),
+            )
+        except Exception as exc:
+            logger.exception("pipeline: structuring failed")
+            yield PipelineStepError(step=5, exc=exc)
+            return
+        yield StepEvent(step=5, status="done", label=Constants.STEPS[5])
+
         terms_glossary = build_glossary_from_simplified_text(
-            clarified,
-            term_data["preserve_and_define_terms"],
+            clarified, term_data["preserve_and_define_terms"]
         )
-
-        # Merge structured output with deterministic glossary, intermediary raw data,
-        # and optional scores.
         result = {
             **structured,
             "terms": terms_glossary,
@@ -174,4 +242,20 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
         care_plan = CarePlan.from_pipeline_result(Constants.CARE_PLAN_VERSIONS.V1_2.value, result)
         if not isinstance(care_plan, CarePlanV1_2):
             raise TypeError(f"Expected CarePlanV1_2, got {type(care_plan).__name__}")
-        return care_plan
+
+        yield PipelineRunResult(
+            care_plan=care_plan,
+            term_data=term_data,
+            simplified=simplified,
+            clarified=clarified,
+            raw_text=text,
+        )
+
+    def run(self, text: str) -> CarePlanV1_2:
+        """Run the full pipeline without instrumentation. Used in tests and batch pre-checks."""
+        for event in self.iter_steps(text):
+            if isinstance(event, PipelineRunResult):
+                return event.care_plan
+            if isinstance(event, PipelineStepError):
+                raise event.exc
+        raise RuntimeError("iter_steps completed without yielding a result")
