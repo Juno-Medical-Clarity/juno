@@ -217,16 +217,6 @@ def _score_or_none(text: str, label: str) -> dict | None:
         return None
 
 
-def _grading_enabled_from_request() -> bool:
-    json_data = request.get_json(silent=True) or {}
-    raw_value = request.form.get("grading_enabled")
-    if raw_value is None:
-        raw_value = json_data.get("grading_enabled", True)
-    if isinstance(raw_value, bool):
-        return raw_value
-    return str(raw_value).strip().lower() in {"1", "true", "yes", "on"}
-
-
 def run_care_plan_pipeline(
     text: str,
     metrics: Metrics,
