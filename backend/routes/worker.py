@@ -23,6 +23,7 @@ from models.job import JobDoc
 from models.input import TextInput, DocIdInput
 from models.metrics import Metrics
 from utils.constants import Constants
+from utils.output_helpers import derive_output_name
 from errors import ErrorCode, build_error_data, build_error_data_from_exc
 
 logger = logging.getLogger(__name__)
@@ -318,7 +319,7 @@ def execute_job(job_id: str):
             care_plan_dict["additional_info"] = athena_additional_info
             output_data["care_plan"] = care_plan_dict
 
-        name = _derive_name(output_data.get("care_plan", {}), job.input_source_filename)
+        name = derive_output_name(output_data.get("care_plan", {}), job.input_source_filename)
         output_data["metrics"]["saved_id"] = job_id
 
         complete_job(job_id, output_data, name)
@@ -337,30 +338,3 @@ def execute_job(job_id: str):
         if is_gcs_dataset_job:
             from utils.gcs_datasets import cleanup_dataset_inputs
             cleanup_dataset_inputs(job_id)
-
-
-# ── Name derivation ────────────────────────────────────────────────────────────
-def _derive_name(care_plan_data: dict, source_filename: str) -> str:
-    try:
-        rfv = care_plan_data.get("reason_for_visit")
-        if rfv and isinstance(rfv, list):
-            reason = (rfv[0].get("reason") or "").strip()
-            if reason:
-                return reason.title()[:60]
-        diagnosis = care_plan_data.get("diagnosis") or {}
-        main = (diagnosis.get("main_conclusion") or "").strip()
-        if main:
-            first_sentence = main.split(".")[0].strip()
-            if first_sentence:
-                return first_sentence[:60]
-    except Exception:
-        pass
-    filename = source_filename or ""
-    if filename and filename != "text_input":
-        stem = filename.split(",")[0].strip()
-        if "." in stem:
-            stem = stem.rsplit(".", 1)[0]
-        stem = stem.replace("_", " ").replace("-", " ").strip()
-        if stem:
-            return stem.title()[:60]
-    return "Appointment"
