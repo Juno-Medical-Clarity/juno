@@ -295,8 +295,10 @@ def test_grading_run_marker_not_fired_when_grading_disabled(_clean_sink):
 # ---------------------------------------------------------------------------
 
 def test_batch_passes_is_batch_true_and_source_kind():
-    """batch.py calls run_care_plan_pipeline with is_batch=True and source_kind='batch_dataset'."""
-    batch_src = pathlib.Path(__file__).parent.parent.parent / "routes" / "batch.py"
-    batch_source = batch_src.read_text()
-    assert "is_batch=True" in batch_source
-    assert 'source_kind="batch_dataset"' in batch_source
+    """worker.py passes is_batch and source_kind (incl. 'batch_dataset') to run_care_plan_pipeline."""
+    worker_src = pathlib.Path(__file__).parent.parent.parent / "routes" / "worker.py"
+    worker_source = worker_src.read_text()
+    # The pipeline is called with the dynamic is_batch kwarg derived from _is_batch_item.
+    assert "is_batch=is_batch" in worker_source
+    # 'batch_dataset' must remain a recognised source_kind value in the worker.
+    assert "batch_dataset" in worker_source
