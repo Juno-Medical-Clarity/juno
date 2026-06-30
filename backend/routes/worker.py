@@ -15,6 +15,7 @@ from routes.care_plan import (
     _extract_text_from_bytes,
 )
 from models.care_plan.envelope import CarePlanInternal
+from models.job import JobDoc
 from models.input import TextInput, DocIdInput
 from models.metrics import Metrics
 from utils.constants import Constants
@@ -42,17 +43,15 @@ def _canonical_input_type(source_kind: str) -> str:
     return _INPUT_TYPE_MAP.get(source_kind, "text")
 
 
-def _is_batch_item(job_doc: dict) -> bool:
-    return job_doc.get("batch_group_id") is not None
+def _is_batch_item(job: JobDoc) -> bool:
+    return job.batch_group_id is not None
 
 
-def _resolve_input_from_job_doc(job_doc: dict) -> str:
-    source_kind = job_doc.get("input_source_kind", "text")
-    if source_kind == "doc_id":
-        doc_id = job_doc["input_doc_id"]
-        file_bytes, filename = _fetch_from_gcs(doc_id)
+def _resolve_input_from_job_doc(job: JobDoc) -> str:
+    if job.input_source_kind == "doc_id":
+        file_bytes, filename = _fetch_from_gcs(job.input_doc_id)
         return _extract_text_from_bytes(file_bytes, filename)
-    return job_doc.get("input_text") or ""
+    return job.input_text or ""
 
 
 def _build_error_data(code: ErrorCode, detail: str = "") -> dict:
@@ -162,12 +161,14 @@ def execute_job(job_id: str):
             logger.warning("worker: job doc not found for job_id=%s — skipping", job_id)
             return "", 200
 
-        if job_doc.get("status") in ("completed", "error"):
-            logger.info("worker: job %s already in terminal state %s — idempotent return", job_id, job_doc["status"])
+        job = JobDoc.from_firestore(job_doc)
+
+        if job.status in ("completed", "error"):
+            logger.info("worker: job %s already in terminal state %s — idempotent return", job_id, job.status)
             return "", 200
 
-        uid = job_doc.get("uid")
-        batch_run_id = job_doc.get("batch_run_id")
+        uid = job.uid
+        batch_run_id = job.batch_run_id
 
         from utils.firebase import firestore_client
         now = datetime.now(timezone.utc)
@@ -180,7 +181,7 @@ def execute_job(job_id: str):
 
         deadline_s = (
             Constants.Deadlines.BATCH_ITEM_INTERNAL_DEADLINE_S
-            if _is_batch_item(job_doc)
+            if _is_batch_item(job)
             else Constants.Deadlines.SINGLE_JOB_INTERNAL_DEADLINE_S
         )
         start = time.monotonic()
@@ -193,7 +194,7 @@ def execute_job(job_id: str):
                 return True
             return False
 
-        source_kind = job_doc.get("input_source_kind", "text")
+        source_kind = job.input_source_kind
 
         athena_additional_info: list[str] = []
 
@@ -201,31 +202,31 @@ def execute_job(job_id: str):
             is_gcs_dataset_job = True
             from utils.gcs_datasets import download_dataset_inputs
             gcs_temp_dir = download_dataset_inputs(
-                group=job_doc["dataset_group"],
-                input_id=job_doc["dataset_input_id"],
-                files=job_doc["dataset_files"],
+                group=job.dataset_group,
+                input_id=job.dataset_input_id,
+                files=job.dataset_files,
                 job_id=job_id,
             )
             text = _extract_text_from_downloaded(
                 gcs_temp_dir,
-                job_doc["dataset_group"],
-                job_doc["dataset_input_id"],
-                job_doc["dataset_files"],
+                job.dataset_group,
+                job.dataset_input_id,
+                job.dataset_files,
             )
         elif source_kind in ("athena_encounter", "athena_clinical_doc"):
             from services.external_api import athena_client, AthenaAPIError
-            practice_id = job_doc.get("athena_practice_id") or Constants.ATHENA_PRACTICE_ID
-            api_path = job_doc.get("athena_api_path", "")
+            practice_id = job.athena_practice_id or Constants.ATHENA_PRACTICE_ID
+            api_path = job.athena_api_path or ""
             try:
                 if source_kind == "athena_encounter":
                     text = athena_client.fetch_encounter_summary(
-                        practice_id, job_doc["athena_encounter_id"]
+                        practice_id, job.athena_encounter_id
                     )
                 else:
                     text = athena_client.fetch_clinical_doc(
                         practice_id,
-                        job_doc["athena_patient_id"],
-                        job_doc["athena_document_id"],
+                        job.athena_patient_id,
+                        job.athena_document_id,
                     )
             except AthenaAPIError as exc:
                 fail_job(job_id, build_error_data_from_exc(exc))
@@ -234,15 +235,15 @@ def execute_job(job_id: str):
             if api_path:
                 athena_additional_info = [api_path]
         else:
-            text = _resolve_input_from_job_doc(job_doc)
+            text = _resolve_input_from_job_doc(job)
 
         if not text.strip():
             fail_job(job_id, _build_error_data(ErrorCode.EMPTY_DOCUMENT))
             return "", 200
 
-        version = job_doc.get("input_version", "v1-2")
-        grading_enabled = job_doc.get("grading_enabled", False)
-        is_batch = _is_batch_item(job_doc)
+        version = job.input_version
+        grading_enabled = job.grading_enabled
+        is_batch = _is_batch_item(job)
 
         pipeline_fn = PIPELINES.get(version, PIPELINES["v1-2"])
 
@@ -302,7 +303,7 @@ def execute_job(job_id: str):
         _, care_plan, grading, _raw_text, _clarified_text = pipeline_result
 
         if source_kind == "doc_id":
-            input_model = DocIdInput(doc_id=job_doc["input_doc_id"])
+            input_model = DocIdInput(doc_id=job.input_doc_id)
         else:
             input_model = TextInput(text=text)
 
@@ -320,7 +321,7 @@ def execute_job(job_id: str):
             care_plan_dict["additional_info"] = athena_additional_info
             output_data["care_plan"] = care_plan_dict
 
-        name = _derive_name(output_data.get("care_plan", {}), job_doc.get("input_source_filename", ""))
+        name = _derive_name(output_data.get("care_plan", {}), job.input_source_filename)
         output_data["metrics"]["saved_id"] = job_id
 
         complete_job(job_id, output_data, name)
