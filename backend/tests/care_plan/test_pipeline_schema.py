@@ -6,6 +6,7 @@ import pytest
 
 from care_plan.v1_2 import pipeline as pipeline_module
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
+from errors import JunoError, ErrorCode
 from models.care_plan_versions.v1_2 import CarePlanV1_2
 from utils.constants import Constants
 from care_plan.v1_2.pipeline import _llm_schema
@@ -38,8 +39,9 @@ def test_structure_appointment_note_rejects_extra_llm_key():
         "unexpected": "drift",
     }
 
-    with pytest.raises(ValueError, match="LLM structure output failed validation"):
+    with pytest.raises(JunoError) as exc_info:
         pipeline.structure_appointment_note("clarified text")
+    assert exc_info.value.error_code == ErrorCode.PIPELINE_VALIDATION_FAILED
 
 
 def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):

@@ -33,7 +33,7 @@ from models.input import INPUT_VERSION
 from utils.markers import Markers, JunoContext
 
 CARE_PLAN_VERSION = Constants.CARE_PLAN_VERSIONS.V1_2.value
-from errors import make_error_response, ErrorCode, build_error_data_from_exc
+from errors import make_error_response, ErrorCode, build_error_data_from_exc, JunoError
 from telemetry import get_tracer
 
 logger = logging.getLogger(__name__)
@@ -137,7 +137,7 @@ def _extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
         from utils.html import extract_text_from_html
         return extract_text_from_html(file_bytes)
 
-    raise ValueError(f"Unsupported file extension: {ext}")
+    raise JunoError(ErrorCode.UNSUPPORTED_FILE_TYPE, detail=f"extension: {ext}")
 
 
 def _source_separator(filename: str) -> str:
@@ -220,7 +220,7 @@ def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     blobs = list(bucket.list_blobs(prefix=prefix))
 
     if not blobs:
-        raise FileNotFoundError(f"No file found for doc_id={doc_id}")
+        raise JunoError(ErrorCode.RESOURCE_NOT_FOUND, detail=f"doc_id={doc_id}")
 
     if len(blobs) > 1:
         blobs.sort(key=lambda b: b.updated, reverse=True)

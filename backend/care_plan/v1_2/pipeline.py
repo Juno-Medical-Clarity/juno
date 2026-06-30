@@ -36,6 +36,7 @@ from utils.term_detection import (
     format_substitution_candidates_for_prompt,
 )
 from utils.constants import Constants
+from errors import JunoError, ErrorCode
 
 logger = logging.getLogger(__name__)
 
@@ -127,12 +128,12 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
         prompt = _STRUCTURE_PROMPT.format(schema=_STRUCTURING_SCHEMA, text=text)
         raw = self._generate_json(prompt, temperature=0.2, max_tokens=8192)
         if not isinstance(raw, dict):
-            raise ValueError(f"Expected dict from structure step, got {type(raw)}")
+            raise JunoError(ErrorCode.LLM_INVALID_JSON, detail=f"expected dict, got {type(raw)}")
 
         try:
             model = CarePlanV1_2.model_validate(raw)
         except ValidationError as e:
-            raise ValueError(f"LLM structure output failed validation: {e}") from e
+            raise JunoError(ErrorCode.PIPELINE_VALIDATION_FAILED, detail=str(e), original=e)
 
         return model.model_dump(mode="json", exclude={"terms", "raw"})
 
