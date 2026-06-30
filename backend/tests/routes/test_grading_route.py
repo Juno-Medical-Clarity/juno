@@ -160,3 +160,35 @@ def test_grade_malformed_auth_returns_401(client):
         headers={"Authorization": "NotBearer token"},
     )
     assert resp.status_code == 401
+
+
+def test_run_grading_returns_500_on_firestore_update_error(client, auth_ok):
+    """saved_id path: Firestore update raises → 500 INTERNAL_ERROR."""
+    from unittest.mock import MagicMock, patch
+
+    mock_doc = MagicMock()
+    mock_doc.to_dict.return_value = {
+        "output_data": {
+            "care_plan": {
+                "raw": {"text": "patient has hypertension", "clarified_text": ""}
+            }
+        }
+    }
+    mock_doc.reference.update.side_effect = Exception("Firestore failure")
+
+    mock_grading = MagicMock()
+    mock_grading.to_dict.return_value = {}
+
+    with patch("routes.grading.get_owned_doc_or_403", return_value=(mock_doc, None)), \
+         patch("routes.grading.firestore_client"), \
+         patch("routes.grading.score_text_safe", return_value={"composite": 5.0}), \
+         patch("routes.grading.build_grading", return_value=mock_grading):
+        response = client.post(
+            "/care_plan/grade",
+            json={"saved_id": "some-id"},
+            headers=auth_ok,
+        )
+    assert response.status_code == 500
+    data = response.get_json()
+    assert data["status"] == "error"
+    assert data["error"]["code"] == "INTERNAL_ERROR"
