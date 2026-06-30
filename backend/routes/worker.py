@@ -213,7 +213,7 @@ def execute_job(job_id: str):
                 job_doc["dataset_files"],
             )
         elif source_kind in ("athena_encounter", "athena_clinical_doc"):
-            from utils.athena_client import athena_client, AthenaAPIError
+            from services.external_api import athena_client, AthenaAPIError
             practice_id = job_doc.get("athena_practice_id") or Constants.ATHENA_PRACTICE_ID
             api_path = job_doc.get("athena_api_path", "")
             try:
