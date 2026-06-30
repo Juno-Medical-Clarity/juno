@@ -5,7 +5,7 @@ from unittest.mock import MagicMock, patch, call
 
 import pytest
 
-from utils.athena_client import AthenaClient
+from services.external_api import AthenaClient
 from models.external_api.athena_errors import AthenaAPIError
 from utils.constants import Constants
 
@@ -39,7 +39,7 @@ def test_get_token_success(client, monkeypatch):
     """get_token() calls POST /oauth2/v1/token and returns access_token."""
     monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_ID", "cid")
     monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_SECRET", "csec")
-    with patch("utils.athena_client.requests.post", return_value=_mock_token_response("tok1")) as mock_post:
+    with patch("services.external_api.athena_client.requests.post", return_value=_mock_token_response("tok1")) as mock_post:
         token = client.get_token()
     assert token == "tok1"
     mock_post.assert_called_once()
@@ -52,7 +52,7 @@ def test_get_token_cached_within_ttl(client, monkeypatch):
     """get_token() called twice within TTL makes only one HTTP call."""
     monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_ID", "cid")
     monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_SECRET", "csec")
-    with patch("utils.athena_client.requests.post", return_value=_mock_token_response("tok_cached")) as mock_post:
+    with patch("services.external_api.athena_client.requests.post", return_value=_mock_token_response("tok_cached")) as mock_post:
         t1 = client.get_token()
         t2 = client.get_token()
     assert t1 == t2 == "tok_cached"
@@ -65,7 +65,7 @@ def test_get_token_refresh_when_expiry_within_buffer(client, monkeypatch):
     monkeypatch.setenv("ATHENA_HEALTH_TEST_CLIENT_SECRET", "csec")
     client._token = "old_token"
     client._token_expires_at = time.time() + 10  # 10s < 20s buffer
-    with patch("utils.athena_client.requests.post", return_value=_mock_token_response("new_token")) as mock_post:
+    with patch("services.external_api.athena_client.requests.post", return_value=_mock_token_response("new_token")) as mock_post:
         token = client.get_token()
     assert token == "new_token"
     mock_post.assert_called_once()
@@ -77,7 +77,7 @@ def test_get_token_does_not_refresh_when_fresh(client, monkeypatch):
     monkeypatch.setenv("ATHENA_HEALTH_CLIENT_SECRET", "csec")
     client._token = "fresh_token"
     client._token_expires_at = time.time() + 100  # 100s > 20s buffer
-    with patch("utils.athena_client.requests.post") as mock_post:
+    with patch("services.external_api.athena_client.requests.post") as mock_post:
         token = client.get_token()
     assert token == "fresh_token"
     mock_post.assert_not_called()
@@ -135,7 +135,7 @@ def test_fetch_items_rate_limit_sleeps_between_batches_not_after_last(client):
         {"source_kind": "athena_encounter", "practice_id": "195900", "encounter_id": "62281"},
     ]
     with patch.object(client, "fetch_encounter_summary", return_value="text") as mock_fetch, \
-         patch("utils.athena_client.time.sleep") as mock_sleep:
+         patch("services.external_api.athena_client.time.sleep") as mock_sleep:
         results = client.fetch_items_with_rate_limit(items)
 
     assert mock_sleep.call_count == 1
@@ -150,7 +150,7 @@ def test_fetch_items_no_sleep_for_single_batch(client):
         {"source_kind": "athena_encounter", "practice_id": "195900", "encounter_id": "61456"},
     ]
     with patch.object(client, "fetch_encounter_summary", return_value="text"), \
-         patch("utils.athena_client.time.sleep") as mock_sleep:
+         patch("services.external_api.athena_client.time.sleep") as mock_sleep:
         results = client.fetch_items_with_rate_limit(items)
     mock_sleep.assert_not_called()
     assert len(results) == 2
