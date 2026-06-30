@@ -141,6 +141,36 @@ Phase 4 (Final sweep)
 
 ---
 
+## Sub-Projects (Follow-up Round — SP11-14, dated 2026-06-29/30)
+
+A code-review pass on SP01-10 surfaced several "no legacy" violations (kept shims, leftover dead code, a real classification bug). Four independent follow-up PRDs were authored to address them. These are a second, later round of design docs in the same directory tree — not part of the original Phase 1-4 sequencing above.
+
+| SP # | Name | Scope (one-line) | Status |
+|------|------|-------|--------|
+| SP11 | Legacy Shim Purge & Pipeline Step Versioning | Delete the flat `Constants` backward-compat shim block; version-qualify `Constants.Pipeline.STEPS` as a typed `Step` enum; delete the dead `_score_or_none`/`_juno_error_logger` shims in `routes/care_plan.py`. | Planning — no implementation started |
+| SP12 | Error System & Athena External API Consolidation | Move `AthenaAPIError` into `errors/`, add `VertexAPIError`, fix the real 429→`ATHENA_API_ERROR` (should be `ATHENA_RATE_LIMIT_ERROR`) misclassification bug via a `classify()` classmethod, rename `models/errors.py` → `models/api_response.py`. | Planning — no implementation started |
+| SP13 | Observability/Logging Reconciliation & Routes-Utils-Services Boundary Cleanup | Delete `JunoLogger` (superseded by `Markers`/`JunoContext`); merge small single-purpose `utils/` files; delete `routes/care_plan.py` and `routes/batch_utils.py` as non-route files, relocating their logic into `services/`/`utils/`. | Planning — no implementation started |
+| SP14 | Test Infra Fix & CI Lint Gate | Root `backend/tests/` as a package (`tests/__init__.py`) to fix the SP04 `__init__.py`-omission workaround at its actual cause; add a Ruff lint step to CI so lint regressions block PRs. | Planning — no implementation started |
+
+**Dependency notes (SP11-14):**
+- **SP11** — standalone, no dependencies on SP12/13/14 or on each other within this round.
+- **SP12** — standalone, no dependencies. Shares one file with SP13 (`routes/worker.py`) but at non-overlapping lines (see below).
+- **SP13** — soft-depends on **SP11** landing first in `routes/care_plan.py`: SP11 deletes the `_juno_error_logger`/`_score_or_none` lines (~42-52) before SP13 deletes the entire file. SP13 also shares `routes/worker.py` with **SP12**, but the two PRDs touch disjoint lines — SP12 edits a local import inside `execute_job`'s Athena branch (~line 231, inside the function body), while SP13 only edits the module's top-level import block (outside `execute_job`); both PRDs' own §9/§3 sections independently confirm this same non-overlapping boundary.
+- **SP14** — fully standalone; touches no file owned by SP11/12/13.
+
+### Consolidated [OPEN] Questions (SP11-14, human resolution needed)
+
+- **SP11 Q1**: Should `build_grading` (`models/grading.py`) be renamed (e.g. `build_grading_with_before_after_score`)? Low-priority cosmetic, touches ~4 call sites if done.
+- **SP12 Q8**: Should `tests/models/test_errors.py` be renamed to `tests/models/test_api_response.py` to mirror the `models/errors.py` → `models/api_response.py` rename, or just have its imports updated in place?
+- **SP13 Q5**: `utils/env.py`'s `get_env()` has zero production call sites today (dead code), but the PRD recommends keeping it (merged into the new `utils/misc.py`) rather than deleting it, on the theory it's "intentional but not yet adopted" infra rather than obsolete code. The PRD itself flags this as in tension with the initiative's locked "delete dead code outright" rule — needs an explicit human call: delete now, or keep.
+- **SP14 Q5**: Is there any GitHub branch-protection / required-status-check configuration (not stored in-repo) that pins individual CI step names rather than the job name? If so, adding the new "Run ruff lint" step may need a corresponding branch-protection update outside this repo.
+
+### Consolidated "Manual Intervention Required From You" (§8, SP11-14)
+
+All four new PRDs report **None** in their §8 — no environment variables, secrets, GCP console actions, deploy steps, or data migrations are required for SP11, SP12, SP13, or SP14. (SP14's §8 separately notes the same branch-protection caveat as its Q5 above, but characterizes it as low-risk/likely-unnecessary rather than a required action.)
+
+---
+
 ## Next Step
 
 Reviewer resolves or triages each Open Question IN the relevant PRD's §9 (mark `[RESOLVED: decision]` or `[DEFERRED]`), then runs `/dev-tasks` to generate `TASKS.md` per approved PRD. Tasks are NOT generated yet.
