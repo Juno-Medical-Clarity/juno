@@ -1,20 +1,21 @@
 """Athena Health API error types."""
-
 from errors import ErrorCode, JunoError
 
 
 class AthenaAPIError(JunoError):
-    """Raised when an Athena API call returns a non-200 status."""
+    """Raised when an Athena API call returns a non-200 HTTP status.
 
-    def __init__(self, status_code: int, body: str) -> None:
+    Inherits JunoError so pipeline callers catch it uniformly. The
+    status_code and body attributes are Athena-specific and remain
+    available directly; the detail string also encodes them.
+    """
+
+    def __init__(
+        self,
+        status_code: int,
+        body: str,
+        code: ErrorCode = ErrorCode.ATHENA_API_ERROR,
+    ) -> None:
         self.status_code = status_code
         self.body = body
-        if status_code == 401:
-            code = ErrorCode.ATHENA_AUTH_FAILED
-        elif status_code == 429:
-            code = ErrorCode.ATHENA_RATE_LIMIT_ERROR
-        elif status_code == 404:
-            code = ErrorCode.ATHENA_PATIENT_NOT_FOUND
-        else:
-            code = ErrorCode.ATHENA_API_ERROR
         super().__init__(code, detail=f"status={status_code} body={body[:200]}")
