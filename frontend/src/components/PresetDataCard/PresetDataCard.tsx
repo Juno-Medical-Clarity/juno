@@ -35,6 +35,7 @@ function toBatchSelections(
     if (files.length === 0) return [];
 
     return [{
+      input_source_kind: "gcs_dataset" as const,
       group: dataset.group,
       inputs,
       files,

@@ -88,16 +88,18 @@ export default function CarePlanPage() {
     if (hasPresetDataSelection) {
       try {
         const { job_ids } = await createBatchJobs({
-          selections: presetDataSelection,
-          athena_selections: athenaPresetSelection.map(sel => ({
-            input_source_kind: sel.source_kind,
-            athena_practice_id: sel.entry.practice_id,
-            athena_patient_id: sel.entry.patient_id,
-            ...(sel.source_kind === 'athena_encounter'
-              ? { athena_encounter_id: sel.entry.encounter_id }
-              : { athena_document_id: sel.entry.document_id }),
-            athena_api_path: sel.entry.api_path,
-          })),
+          selections: [
+            ...presetDataSelection,
+            ...athenaPresetSelection.map(sel => ({
+              input_source_kind: sel.source_kind,
+              athena_practice_id: sel.entry.practice_id,
+              athena_patient_id: sel.entry.patient_id,
+              ...(sel.source_kind === 'athena_encounter'
+                ? { athena_encounter_id: sel.entry.encounter_id }
+                : { athena_document_id: sel.entry.document_id }),
+              athena_api_path: sel.entry.api_path,
+            })),
+          ],
           version: selectedVersion,
           grading_enabled: gradingEnabled,
         });
