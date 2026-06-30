@@ -7,7 +7,7 @@ from flask import Blueprint, jsonify, request
 from errors import make_error_response, ErrorCode
 
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
-from utils.scoring import score_text
+from utils.scoring import score_text_safe
 from models.grading import build_grading
 
 logger = logging.getLogger(__name__)
@@ -48,8 +48,8 @@ def run_care_plan_grading(user_id: str):
                 {"saved_id": saved_id},
             ).to_dict(), 400
 
-        before_score = _score_safe(raw_text, "before")
-        after_score = _score_safe(clarified_text, "after") if clarified_text else None
+        before_score = score_text_safe(raw_text, "before")
+        after_score = score_text_safe(clarified_text, "after") if clarified_text else None
         grading = build_grading(before_score, raw_text, after_score, clarified_text or None)
 
         doc.reference.update({"output_data.grading": grading.to_dict()})
@@ -66,16 +66,8 @@ def run_care_plan_grading(user_id: str):
             {"field": "text", "reason": "provide either 'saved_id' or 'text'"},
         ).to_dict(), 400
 
-    before_score = _score_safe(text, "before")
-    after_score = _score_safe(clarified_text, "after") if clarified_text else None
+    before_score = score_text_safe(text, "before")
+    after_score = score_text_safe(clarified_text, "after") if clarified_text else None
     grading = build_grading(before_score, text, after_score, clarified_text or None)
 
     return jsonify({"grading": grading.to_dict()})
-
-
-def _score_safe(text: str, label: str) -> dict | None:
-    try:
-        return score_text(text)
-    except Exception:
-        logger.exception("grading: %s-score failed", label)
-        return None

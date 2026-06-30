@@ -10,9 +10,12 @@ Usage:
     result = score_text("The patient was diagnosed with hypertension...")
 """
 
+import logging
 import re
 import math
 import textstat
+
+logger = logging.getLogger(__name__)
 
 # ── Optional spaCy for better passive-voice detection ─────────────────────────
 try:
@@ -299,3 +302,12 @@ def score_text(text: str) -> dict | None:
         result["low_confidence"] = True
 
     return result
+
+
+def score_text_safe(text: str, label: str) -> dict | None:
+    """Call score_text; return None and log on any failure."""
+    try:
+        return score_text(text)
+    except Exception:
+        logger.exception("scoring: %s-score failed", label)
+        return None

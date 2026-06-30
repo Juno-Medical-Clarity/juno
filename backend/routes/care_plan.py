@@ -19,7 +19,7 @@ from utils.constants import Constants
 
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
-from utils.scoring import score_text
+from utils.scoring import score_text_safe
 from models.metrics import Metrics
 from models.grading import Grading, build_grading, GRADING_VERSION
 from models.care_plan import CarePlan, CARE_PLAN_VERSION
@@ -187,15 +187,6 @@ def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     return blob.download_as_bytes(), filename
 
 
-# ── Scoring helpers ────────────────────────────────────────────────────────────
-def _score_or_none(text: str, label: str) -> dict | None:
-    try:
-        return score_text(text)
-    except Exception:
-        logger.exception("care_plan: %s-score failed - continuing without score", label)
-        return None
-
-
 # ── Pipeline adapter ───────────────────────────────────────────────────────────
 def run_care_plan_pipeline(
     text: str,
@@ -257,8 +248,8 @@ def run_care_plan_pipeline(
 
             elif isinstance(event, PipelineRunResult):
                 if grading_enabled:
-                    before_score = _score_or_none(text, "before")
-                    after_score  = _score_or_none(event.clarified, "after")
+                    before_score = score_text_safe(text, "before")
+                    after_score  = score_text_safe(event.clarified, "after")
 
                     def _grade(scope):
                         JunoContext.from_g(function="grading").apply(scope)

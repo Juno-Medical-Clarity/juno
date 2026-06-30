@@ -138,5 +138,21 @@ class TestWeights(unittest.TestCase):
         self.assertEqual(set(WEIGHTS.keys()), EXPECTED_DIMENSION_KEYS)
 
 
+def test_score_text_safe_returns_dict_on_success():
+    from unittest.mock import patch
+    from utils.scoring import score_text_safe
+    with patch("utils.scoring.score_text", return_value={"score": 5}):
+        result = score_text_safe("some text", "before")
+    assert result == {"score": 5}
+
+
+def test_score_text_safe_returns_none_on_exception():
+    from unittest.mock import patch
+    from utils.scoring import score_text_safe
+    with patch("utils.scoring.score_text", side_effect=RuntimeError("fail")):
+        result = score_text_safe("some text", "before")
+    assert result is None
+
+
 if __name__ == "__main__":
     unittest.main()
