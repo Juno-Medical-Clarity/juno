@@ -1,5 +1,6 @@
 """TDD tests for POST /internal/jobs/execute/<job_id>."""
 import json
+from datetime import datetime, timezone
 import pytest
 from unittest.mock import MagicMock, patch, call
 from flask import Flask
@@ -33,6 +34,10 @@ def client_worker(app_worker):
 def _make_job_doc(status="not_started", stage=None, batch_group_id=None, source_kind="text"):
     return {
         "uid": "user-1",
+        "name": "Jan 15, 2026 10:00",
+        "source_filename": "text_input",
+        "created_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
+        "updated_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
         "status": status,
         "stage": stage,
         "batch_group_id": batch_group_id,
@@ -157,8 +162,9 @@ def test_timeout_fails_job_with_job_timeout_code(
 
     # First monotonic() call records the start; the next (inside _check_timeout)
     # jumps far past the single-job deadline so the timeout triggers.
-    from routes.worker import SINGLE_JOB_INTERNAL_DEADLINE_S
-    monotonic_values = iter([0.0, SINGLE_JOB_INTERNAL_DEADLINE_S + 100.0])
+    from utils.constants import Constants
+    deadline = Constants.Deadlines.SINGLE_JOB_INTERNAL_DEADLINE_S
+    monotonic_values = iter([0.0, deadline + 100.0])
 
     with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline_slow(*a, **kw)}):
         with patch("routes.worker.time.monotonic", side_effect=lambda: next(monotonic_values)):
@@ -176,7 +182,7 @@ def test_timeout_fails_job_with_job_timeout_code(
 
 @patch("routes.worker.get_job_doc")
 def test_idempotent_completed_job_returns_200(mock_get_doc, client_worker):
-    mock_get_doc.return_value = {"status": "completed", "uid": "user-1"}
+    mock_get_doc.return_value = _make_job_doc(status="completed")
     resp = client_worker.post(
         "/internal/jobs/execute/job-1",
         headers=QUEUE_HEADER,
@@ -186,7 +192,7 @@ def test_idempotent_completed_job_returns_200(mock_get_doc, client_worker):
 
 @patch("routes.worker.get_job_doc")
 def test_idempotent_error_job_returns_200(mock_get_doc, client_worker):
-    mock_get_doc.return_value = {"status": "error", "uid": "user-1"}
+    mock_get_doc.return_value = _make_job_doc(status="error")
     resp = client_worker.post(
         "/internal/jobs/execute/job-1",
         headers=QUEUE_HEADER,

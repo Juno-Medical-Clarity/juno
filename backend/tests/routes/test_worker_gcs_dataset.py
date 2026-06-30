@@ -4,6 +4,7 @@ These tests exercise the download → extract → pipeline → cleanup flow that
 added in SP2 for jobs whose input_source_kind is "gcs_batch_dataset".
 """
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -45,6 +46,10 @@ def _make_gcs_job_doc(status="not_started"):
     """Job document for a gcs_batch_dataset job."""
     return {
         "uid": "user-1",
+        "name": "Jan 15, 2026 10:00",
+        "source_filename": "notes.txt",
+        "created_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
+        "updated_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
         "status": status,
         "stage": None,
         "batch_group_id": "GroupA-20260101",
@@ -248,6 +253,10 @@ def test_execute_job_legacy_batch_dataset_uses_stored_text(
     """input_source_kind='batch_dataset' uses input_text directly; download is never called."""
     legacy_doc = {
         "uid": "user-1",
+        "name": "Jan 15, 2026 10:00",
+        "source_filename": "notes.txt",
+        "created_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
+        "updated_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
         "status": "not_started",
         "stage": None,
         "batch_group_id": "GroupA-20260101",
