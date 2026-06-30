@@ -324,8 +324,8 @@ No Cloud Run config changes, no GCS changes, no Firebase console actions are req
 
 | # | Item | Status |
 |---|---|---|
-| Q1 | Are there any Firestore `care_plan_outputs` documents in production that lack the `care_plan` top-level key (i.e., the legacy flat shape that `isLegacyShape()` detects)? Backend team (SP05/SP07) must confirm before `normalizeOutput.ts` is deleted. | [OPEN] |
-| Q2 | Should the `CarePlanJobPage.tsx` component split (§4f) be included in this SP or deferred to a follow-on? | [OPEN] |
+| Q1 | Are there any Firestore `care_plan_outputs` documents in production that lack the `care_plan` top-level key (i.e., the legacy flat shape that `isLegacyShape()` detects)? Backend team (SP05/SP07) must confirm before `normalizeOutput.ts` is deleted. | [RESOLVED: nothing legacy remains; we do NOT inspect Firestore and assume no legacy documents exist, so `normalizeOutput.ts` is retired unconditionally (not gated). Per TASKS.md "USER DECISIONS applied" note.] |
+| Q2 | Should the `CarePlanJobPage.tsx` component split (§4f) be included in this SP or deferred to a follow-on? | [RESOLVED: the `CarePlanJobPage.tsx` component split is INCLUDED in this SP. Per TASKS.md "USER DECISIONS applied" note.] |
 | Q3 | Retire the listed legacy error/output shims (`JobErrorData`, stale comment, `processingIds` stub, logger TODO) once SP01 and SP07 land. | [RESOLVED: yes, retire all non-gated items in SP10; gate `normalizeOutput.ts` retirement on Q1 + SP07 merge] |
 | Q4 | Sequencing: SP10 non-gated changes (`processingIds`, `logger.ts`) may land before SP01/SP07 without risk. SP10 gated changes must wait for SP01 (error shape) and SP07 (output shape). | [RESOLVED: implement in two commits — (a) no-dependency cleanups first, (b) SP01/SP07-gated deletions after both SPs are merged] |
 | Q5 | Does the `useJobStatuses` hook need a loading state guard in `CarePlanPage.tsx` before passing `processingIds` to Sidebar? | [RESOLVED: no — `useJobStatuses` initialises with an empty `Map` and the Sidebar handles an empty `Set` gracefully (no spinners shown). No loading gate needed.] |
