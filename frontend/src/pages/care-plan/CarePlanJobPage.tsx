@@ -1,12 +1,8 @@
 import './CarePlanPage.css';
 import { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useJobSnapshot } from '../../hooks/useJobSnapshot';
-import CarePlanView from '../../components/CarePlanView';
 import NavBar from '../../components/NavBar';
-import Sidebar from '../../components/Sidebar';
-import OutputGradingCard from '../../components/OutputGradingCard';
-import SplitView from '../../components/SplitView';
 import { buildPdfHtml } from '../../utils/buildPdfHtml';
 import { authenticatedFetchJson } from '../../api/apiClient';
 import { shareOutput, updateCarePlanNote, updateCarePlanGrading } from '../../api/savedOutputs';
@@ -14,8 +10,10 @@ import { ApiError } from '../../types/errors';
 import { API_URL } from '../../api/firebase';
 import { useAuth } from '../../auth/AuthContext';
 import type { CarePlanInternal, Grading } from '../../types/envelope';
-import { INITIAL_STEPS, outputHasInputPdf, outputHasInputText } from './CarePlanPage';
+import { INITIAL_STEPS } from './CarePlanPage';
 import type { PipelineStep } from '../../types/carePlan';
+import CarePlanJobErrorView from './CarePlanJobErrorView';
+import CarePlanJobResultView from './CarePlanJobResultView';
 
 function stepsFromStage(stage: number | null): PipelineStep[] {
   return INITIAL_STEPS.map(step => ({
@@ -38,7 +36,6 @@ function stepIcon(status: string): string {
 
 export default function CarePlanJobPage() {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
   const { user, getIdToken } = useAuth();
   const { jobDoc, loading, error } = useJobSnapshot(id ?? null);
   const [gradingOverride, setGradingOverride] = useState<Grading | null>(null);
@@ -196,322 +193,42 @@ export default function CarePlanJobPage() {
   }
 
   if (jobDoc.status === 'completed' && result) {
-    const hasInput = (!isPublicView && outputHasInputPdf(result)) || outputHasInputText(result);
-    const sessionId = jobDoc.session_id ?? result.metrics.session_id ?? null;
-    const traceId = jobDoc.trace_id;
-    const sessionLogUrl = sessionId
-      ? `https://console.cloud.google.com/logs/query;query=jsonPayload.session_id%3D"${sessionId}";project=juno-medical-clarity`
-      : null;
-    const traceUrl = traceId
-      ? `https://console.cloud.google.com/traces/list?project=juno-medical-clarity&tid=${traceId}`
-      : null;
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        {!isPublicView && <NavBar />}
-        <div style={{ display: 'flex', flex: 1 }}>
-          {!isPublicView && (
-            <Sidebar
-              activeId={id ?? null}
-              onSelect={(selectedId) => navigate(`/carePlan/${selectedId}`)}
-              refreshTrigger={0}
-            />
-          )}
-          <div style={{ flex: 1, marginLeft: isPublicView ? 0 : 'var(--sidebar-width, 240px)', minWidth: 0, paddingTop: isPublicView ? '40px' : 'calc(48px + 40px)' }}>
-            <div className="page-wrapper">
-              <div className="container">
-                <section className="result-section">
-                  <div className="result-header">
-                    <div>
-                      <h2 className="result-title">Your Care Plan</h2>
-                      {result.metrics.created_at && (
-                        <p className="result-timestamp">
-                          Simplified on {new Date(result.metrics.created_at).toLocaleDateString('en-US', {
-                            month: 'long', day: 'numeric', year: 'numeric',
-                          })}
-                        </p>
-                      )}
-                    </div>
-                    {hasInput && (
-                      <button
-                        onClick={() => setShowSplitView(true)}
-                        style={{
-                          background: 'none', border: '1px solid var(--border)',
-                          borderRadius: 'var(--radius-pill)', padding: '6px 14px',
-                          fontSize: '0.8rem', cursor: 'pointer',
-                          color: 'var(--text-secondary)', fontFamily: 'Inter, sans-serif',
-                        }}
-                      >
-                        Show Original
-                      </button>
-                    )}
-                  </div>
-
-                  <CarePlanView result={result.care_plan} grading={result.grading} />
-
-                  {(sessionId || traceId) && (
-                    <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: '1.8' }}>
-                      {sessionId && (
-                        <div>
-                          Session ID:{' '}
-                          {sessionLogUrl
-                            ? <a href={sessionLogUrl} target="_blank" rel="noopener noreferrer">{sessionId}</a>
-                            : sessionId}
-                        </div>
-                      )}
-                      <div>
-                        Trace ID:{' '}
-                        {traceId && traceUrl
-                          ? <a href={traceUrl} target="_blank" rel="noopener noreferrer">{traceId}</a>
-                          : '—'}
-                      </div>
-                    </div>
-                  )}
-
-                  {!isPublicView && (
-                    <div style={{ marginTop: '32px', textAlign: 'center' }}>
-                      <button
-                        onClick={() => navigate('/')}
-                        style={{
-                          background: 'none',
-                          border: '1px solid var(--border)',
-                          borderRadius: 'var(--radius-pill)',
-                          color: 'var(--text-secondary)',
-                          fontSize: '0.85rem',
-                          padding: '8px 20px',
-                          cursor: 'pointer',
-                          fontFamily: 'Inter, sans-serif',
-                        }}
-                      >
-                        ← Create another care plan
-                      </button>
-                    </div>
-                  )}
-
-                  {gradingLoading && (
-                    <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>
-                      Recalculating…
-                    </p>
-                  )}
-                  <div style={gradingLoading ? { opacity: 0.5, pointerEvents: 'none' } : undefined}>
-                    <OutputGradingCard grading={result.grading} error={gradingError} />
-                  </div>
-
-                  {!isPublicView && (
-                    <div className="note-card">
-                      {result.care_plan.note
-                        ? <p className="note-card-text">{result.care_plan.note}</p>
-                        : <p className="note-card-placeholder">--Notes--</p>
-                      }
-                      <button
-                        className="download-btn-note note-card-btn"
-                        onClick={() => {
-                          if (!showCommentArea) {
-                            setCommentText(result.care_plan.note ?? '');
-                            setCommentSaved(false);
-                          }
-                          setShowCommentArea(v => !v);
-                        }}
-                      >
-                        {result.care_plan.note ? '✏ Edit Note' : '+ Add Note'}
-                      </button>
-                      {showCommentArea && (
-                        <div className="comment-area">
-                          <textarea
-                            value={commentText}
-                            onChange={e => setCommentText(e.target.value)}
-                            placeholder="Add a note about this care plan…"
-                            maxLength={2000}
-                          />
-                          <div className="comment-actions">
-                            <button
-                              className="comment-cancel-btn"
-                              onClick={() => setShowCommentArea(false)}
-                            >
-                              Cancel
-                            </button>
-                            <button
-                              className="comment-save-btn"
-                              onClick={handleSaveComment}
-                              disabled={commentSaving}
-                            >
-                              {commentSaved ? 'Saved!' : commentSaving ? 'Saving…' : 'Save'}
-                            </button>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  <div className="download-bar">
-                    <div className="download-actions">
-                      <button className="download-btn-json" onClick={handleDownloadJson}>
-                        ↓ JSON
-                      </button>
-                      <button className="download-btn-pdf" onClick={handleDownloadPdf}>
-                        ↓ Report
-                      </button>
-                      {!isPublicView && (
-                        <button
-                          className="download-btn-grading"
-                          onClick={handleRunGrading}
-                          disabled={gradingLoading}
-                        >
-                          {gradingLoading ? 'Grading…' : '◎ Grade'}
-                        </button>
-                      )}
-                      {user && (
-                        <button
-                          className="download-btn-share"
-                          onClick={handleToggleShare}
-                          disabled={shareLoading}
-                          aria-label={shareLoading ? 'Saving…' : jobDoc.shared ? 'Stop sharing' : 'Share'}
-                          title={shareLoading ? 'Saving…' : jobDoc.shared ? 'Stop sharing' : 'Share'}
-                        >
-                          {shareLoading ? 'Saving…' : jobDoc.shared ? '🔒 Stop sharing' : '🔗 Share'}
-                        </button>
-                      )}
-                    </div>
-                    {gradingError && (
-                      <p style={{ marginTop: '6px', color: 'var(--error, #DC2626)', fontSize: '0.78rem', textAlign: 'center' }}>
-                        {gradingError}
-                      </p>
-                    )}
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-        {showSplitView && (
-          <SplitView
-            savedId={!isPublicView && result.input.mode === 'file' ? id ?? null : null}
-            originalText={
-              (result.input.mode === 'text' || result.input.mode === 'batch_dataset')
-                ? result.input.text ?? null
-                : null
-            }
-            simplifiedContent={<CarePlanView result={result.care_plan} grading={result.grading} />}
-            onClose={() => setShowSplitView(false)}
-          />
-        )}
-      </div>
+      <CarePlanJobResultView
+        result={result}
+        jobDoc={jobDoc}
+        id={id}
+        isPublicView={isPublicView}
+        user={user}
+        gradingLoading={gradingLoading}
+        gradingError={gradingError}
+        shareLoading={shareLoading}
+        showSplitView={showSplitView}
+        setShowSplitView={setShowSplitView}
+        showCommentArea={showCommentArea}
+        setShowCommentArea={setShowCommentArea}
+        commentText={commentText}
+        setCommentText={setCommentText}
+        commentSaving={commentSaving}
+        commentSaved={commentSaved}
+        setCommentSaved={setCommentSaved}
+        handleSaveComment={handleSaveComment}
+        handleDownloadJson={handleDownloadJson}
+        handleDownloadPdf={handleDownloadPdf}
+        handleRunGrading={handleRunGrading}
+        handleToggleShare={handleToggleShare}
+      />
     );
   }
 
   if (jobDoc.status === 'error') {
-    const errData = jobDoc.error_data;
-    // Prefer user_hint (new rich format) over message for user-facing text
-    const userMessage = errData?.user_hint ?? errData?.message ?? 'An error occurred processing your care plan.';
-    const errorCode = errData?.code ?? null;
-    const devMessage = errData?.message ?? null;
-    const retryable = errData?.retryable ?? false;
-    // Technical detail string from FirestoreJobError.
-    const technicalDetail = errData?.details ?? null;
-    const sessionId = jobDoc.session_id ?? null;
-    const traceId = jobDoc.trace_id ?? null;
-    const sessionLogUrl = sessionId
-      ? `https://console.cloud.google.com/logs/query;query=jsonPayload.session_id%3D"${sessionId}";project=juno-medical-clarity`
-      : null;
-    const traceUrl = traceId
-      ? `https://console.cloud.google.com/traces/list?project=juno-medical-clarity&tid=${traceId}`
-      : null;
     return (
-      <>
-        {!isPublicView && <NavBar />}
-        <div style={{ padding: '80px 32px', maxWidth: '640px', margin: '0 auto' }}>
-          {/* Primary user-facing error message */}
-          <div style={{ textAlign: 'center', color: 'var(--error, #DC2626)', fontWeight: 500, marginBottom: '16px' }}>
-            {userMessage}
-          </div>
-
-          {/* Error code badge */}
-          {errorCode && (
-            <div style={{ textAlign: 'center', marginBottom: '8px' }}>
-              <code style={{
-                background: 'var(--surface-2, #f3f4f6)',
-                padding: '2px 10px',
-                borderRadius: '4px',
-                fontSize: '0.75rem',
-                color: 'var(--text-secondary)',
-                fontFamily: 'monospace',
-              }}>
-                {errorCode}
-              </code>
-            </div>
-          )}
-
-          {/* Retryable indicator */}
-          {errData && (
-            <div style={{ textAlign: 'center', fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '8px' }}>
-              Retryable: {retryable ? 'Yes' : 'No'}
-            </div>
-          )}
-
-          {/* Developer-facing message (muted, italic) */}
-          {devMessage && (
-            <div style={{
-              textAlign: 'center',
-              fontSize: '0.73rem',
-              color: 'var(--text-muted)',
-              fontStyle: 'italic',
-              marginBottom: '16px',
-              lineHeight: '1.5',
-            }}>
-              {devMessage}
-            </div>
-          )}
-
-          {/* Technical detail — collapsible monospace box */}
-          {technicalDetail && (
-            <details style={{ marginTop: '12px', textAlign: 'left' }}>
-              <summary style={{
-                fontSize: '0.75rem',
-                color: 'var(--text-secondary)',
-                cursor: 'pointer',
-                userSelect: 'none',
-              }}>
-                Technical detail
-              </summary>
-              <pre style={{
-                marginTop: '8px',
-                padding: '12px',
-                background: 'var(--surface-2, #f3f4f6)',
-                borderRadius: '6px',
-                fontSize: '0.7rem',
-                overflowX: 'auto',
-                whiteSpace: 'pre-wrap',
-                wordBreak: 'break-word',
-                maxHeight: '200px',
-                overflowY: 'auto',
-                color: 'var(--text-secondary)',
-                fontFamily: 'monospace',
-              }}>
-                {technicalDetail}
-              </pre>
-            </details>
-          )}
-
-          {/* Session ID and Trace ID links */}
-          {(sessionId || traceId) && (
-            <div style={{ marginTop: '24px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: '1.8' }}>
-              {sessionId && (
-                <div>
-                  Session ID:{' '}
-                  {sessionLogUrl
-                    ? <a href={sessionLogUrl} target="_blank" rel="noopener noreferrer">{sessionId}</a>
-                    : sessionId}
-                </div>
-              )}
-              <div>
-                Trace ID:{' '}
-                {traceId && traceUrl
-                  ? <a href={traceUrl} target="_blank" rel="noopener noreferrer">{traceId}</a>
-                  : '—'}
-              </div>
-            </div>
-          )}
-        </div>
-      </>
+      <CarePlanJobErrorView
+        errorData={jobDoc.error_data}
+        sessionId={jobDoc.session_id ?? null}
+        traceId={jobDoc.trace_id ?? null}
+        isPublicView={isPublicView}
+      />
     );
   }
 
