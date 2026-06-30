@@ -16,6 +16,8 @@ import os
 import logging
 
 from opentelemetry import trace
+
+from utils.constants import Constants
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor, ConsoleSpanExporter
 from opentelemetry.sdk.resources import Resource
@@ -61,7 +63,7 @@ def init_telemetry(flask_app):
     # SERVICE_VERSION should be set to the git SHA or semver on each deploy so
     # version-segmented latency comparisons in Cloud Trace work correctly.
     resource = Resource.create({
-        "service.name": os.getenv("K_SERVICE", "backend-processing"),
+        "service.name": os.getenv(Constants.EnvVars.K_SERVICE, Constants.Observability.SERVICE_NAME_DEFAULT),
         "service.version": SERVICE_VERSION,
     })
 
@@ -93,6 +95,6 @@ def init_telemetry(flask_app):
     logger.info("OpenTelemetry: Initialization complete")
 
 
-def get_tracer(name: str = "backend-processing"):
+def get_tracer(name: str = Constants.Observability.SERVICE_NAME_DEFAULT):
     """Return an OpenTelemetry tracer for manual span creation."""
     return trace.get_tracer(name)

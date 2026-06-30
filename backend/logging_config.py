@@ -28,15 +28,7 @@ import sys
 
 from opentelemetry import trace
 
-
-_EXTRA_KEYS = [
-    "user_id", "function", "care_plan_version", "grading_version", "input_version",
-    "operation", "metric", "metric_type", "duration_ms", "success", "outcome",
-    "step_name", "status", "http_method", "http_path", "http_status",
-    "http_status_code", "total_duration_ms", "saved_id", "input_chars",
-    "error", "labels", "duration_ms_observed", "OpOutcome",
-    "service", "environment",
-]
+from utils.constants import Constants
 
 _SENTINEL = object()
 
@@ -87,7 +79,7 @@ class StructuredJsonFormatter(logging.Formatter):
             log_entry["session_id"] = session_id
 
         # Add whitelisted extra fields (marker events, version fields, metrics, etc.)
-        for key in _EXTRA_KEYS:
+        for key in Constants.Observability.LOG_EXTRA_KEYS:
             val = getattr(record, key, _SENTINEL)
             if val is not _SENTINEL:
                 log_entry[key] = val

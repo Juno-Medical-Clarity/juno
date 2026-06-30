@@ -21,7 +21,9 @@ import os
 import time
 from typing import Any
 
-_SERVICE = os.getenv("K_SERVICE", "juno-backend")
+from utils.constants import Constants
+
+_SERVICE = os.getenv(Constants.EnvVars.K_SERVICE, "juno-backend")
 _ENVIRONMENT = "production" if os.getenv("K_SERVICE") else "development"
 
 
