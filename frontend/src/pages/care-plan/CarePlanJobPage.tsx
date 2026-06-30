@@ -2,7 +2,6 @@ import './CarePlanPage.css';
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useJobSnapshot } from '../../hooks/useJobSnapshot';
-import { normalizeCarePlanOutput } from '../../utils/normalizeOutput';
 import CarePlanView from '../../components/CarePlanView';
 import NavBar from '../../components/NavBar';
 import Sidebar from '../../components/Sidebar';
@@ -56,7 +55,7 @@ export default function CarePlanJobPage() {
 
   const baseResult: CarePlanInternal | null =
     jobDoc?.status === 'completed' && jobDoc.output_data
-      ? normalizeCarePlanOutput(jobDoc.output_data)
+      ? (jobDoc.output_data as CarePlanInternal)
       : null;
   const result: CarePlanInternal | null =
     baseResult && gradingOverride ? { ...baseResult, grading: gradingOverride } : baseResult;
