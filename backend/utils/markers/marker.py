@@ -14,12 +14,9 @@ import inspect
 import time
 from typing import Any, Awaitable, Callable, Dict, Optional, TypeVar
 
-T = TypeVar("T")
+from utils.constants import Constants
 
-# Well-known dimension keys (a tiny convention — feel free to ignore).
-DIM_OUTCOME = "OpOutcome"
-DIM_STATUS_CODE = "StatusCode"
-DIM_CORRELATION_ID = "CorrelationId"
+T = TypeVar("T")
 
 
 class Scope:
@@ -50,7 +47,7 @@ class Scope:
     def _finalize(self, raised: bool) -> tuple[int, bool, Dict[str, Any]]:
         duration_ms = (time.perf_counter_ns() - self._start_ns) // 1_000_000
         success = not (raised or self._failed)
-        self._dims[DIM_OUTCOME] = "Succeeded" if success else "Failed"
+        self._dims[Constants.Observability.DIM_OUTCOME] = "Succeeded" if success else "Failed"
         return duration_ms, success, self._dims
 
 

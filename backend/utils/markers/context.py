@@ -16,7 +16,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, Optional
 
-from .marker import DIM_CORRELATION_ID, DIM_STATUS_CODE, Scope
+from utils.constants import Constants
+from .marker import Scope
 
 
 @dataclass
@@ -29,11 +30,11 @@ class Context:
     def apply(self, scope: Scope) -> None:
         """Push every non-empty field onto the scope."""
         if self.correlation_id:
-            scope.add(DIM_CORRELATION_ID, self.correlation_id)
+            scope.add(Constants.Observability.DIM_CORRELATION_ID, self.correlation_id)
         if self.user_id:
             scope.add("UserId", self.user_id)
         if self.status_code is not None:
-            scope.add(DIM_STATUS_CODE, str(self.status_code))
+            scope.add(Constants.Observability.DIM_STATUS_CODE, str(self.status_code))
         scope.add_many(self.dimensions)
 
 
