@@ -100,91 +100,49 @@ def rename_saved(user_id: str, doc_id: str):
     """Update a saved output. Body may include {"name": "new name"} and/or {"comment": "text"}."""
     def _run(scope):
         JunoContext.from_g(function="rename_saved").apply(scope)
+        from pydantic import ValidationError
+        from models.saved_outputs import RenameOutputRequest
+
         db = firestore_client()
         doc, err = get_owned_doc_or_403(db, "care_plan_outputs", doc_id, user_id, path=request.path)
         if err:
             return err
-        body = request.get_json(silent=True) or {}
 
-        updates: dict = {'updated_at': datetime.now(timezone.utc)}
+        try:
+            req = RenameOutputRequest(**(request.get_json(silent=True) or {}))
+        except ValidationError as exc:
+            first_err = exc.errors()[0]
+            loc = first_err.get("loc", ("unknown",))
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                f"/care_plan/saved/{doc_id}",
+                {"field": str(loc[0]) if loc else "unknown", "reason": first_err["msg"]},
+            ).to_dict(), 400
 
-        # Handle optional name update
-        if 'name' in body:
-            new_name = (body.get('name') or '').strip()
-            if not new_name:
-                return make_error_response(
-                    ErrorCode.INPUT_VALIDATION_ERROR,
-                    f"/care_plan/saved/{doc_id}",
-                    {"field": "name", "reason": "required"},
-                ).to_dict(), 400
-            if len(new_name) > 200:
-                return make_error_response(
-                    ErrorCode.INPUT_VALIDATION_ERROR,
-                    f"/care_plan/saved/{doc_id}",
-                    {"field": "name", "reason": "max 200 chars"},
-                ).to_dict(), 400
-            updates['name'] = new_name
-
-        # Handle optional comment update
-        if 'comment' in body:
-            comment = body.get('comment')
-            if not isinstance(comment, str):
-                return make_error_response(
-                    ErrorCode.INPUT_VALIDATION_ERROR,
-                    f"/care_plan/saved/{doc_id}",
-                    {"field": "comment", "reason": "must be a string"},
-                ).to_dict(), 400
-            if len(comment) > 2000:
-                return make_error_response(
-                    ErrorCode.INPUT_VALIDATION_ERROR,
-                    f"/care_plan/saved/{doc_id}",
-                    {"field": "comment", "reason": "max 2000 chars"},
-                ).to_dict(), 400
-            updates['comment'] = comment
-
-        # Handle optional note update (stored inside output_data.care_plan.note)
-        if 'note' in body:
-            note = body.get('note')
-            if not isinstance(note, str):
-                return make_error_response(
-                    ErrorCode.INPUT_VALIDATION_ERROR,
-                    f"/care_plan/saved/{doc_id}",
-                    {"field": "note", "reason": "must be a string"},
-                ).to_dict(), 400
-            if len(note) > 2000:
-                return make_error_response(
-                    ErrorCode.INPUT_VALIDATION_ERROR,
-                    f"/care_plan/saved/{doc_id}",
-                    {"field": "note", "reason": "max 2000 chars"},
-                ).to_dict(), 400
-            updates['output_data.care_plan.note'] = note
-
-        # Handle optional grading update (stored inside output_data.grading)
-        if 'grading' in body:
-            grading = body.get('grading')
-            if not isinstance(grading, dict):
-                return make_error_response(
-                    ErrorCode.INPUT_VALIDATION_ERROR,
-                    f"/care_plan/saved/{doc_id}",
-                    {"field": "grading", "reason": "must be an object"},
-                ).to_dict(), 400
-            updates['output_data.grading'] = grading
-
-        if len(updates) == 1:
-            # Only updated_at was set — no actual fields were provided
+        if all(v is None for v in (req.name, req.comment, req.note, req.grading)):
             return make_error_response(
                 ErrorCode.INPUT_VALIDATION_ERROR,
                 f"/care_plan/saved/{doc_id}",
                 {"reason": "at least one of 'name', 'comment', 'note', or 'grading' is required"},
             ).to_dict(), 400
 
+        updates: dict = {'updated_at': datetime.now(timezone.utc)}
+        if req.name is not None:
+            updates['name'] = req.name
+        if req.comment is not None:
+            updates['comment'] = req.comment
+        if req.note is not None:
+            updates['output_data.care_plan.note'] = req.note
+        if req.grading is not None:
+            updates['output_data.grading'] = req.grading
+
         try:
             db.collection('care_plan_outputs').document(doc_id).update(updates)
-            return jsonify({'id': doc_id, **{k: v for k, v in updates.items() if k != 'updated_at'}})
         except Exception:
             scope.mark_failed()
             logger.exception("rename_saved: Firestore update failed for doc_id=%s", doc_id)
             return make_error_response(ErrorCode.INTERNAL_ERROR, request.path).to_dict(), 500
+        return jsonify({'id': doc_id, **{k: v for k, v in updates.items() if k != 'updated_at'}})
     return Markers.SavedOutputs.Rename.execute(_run)
 
 
