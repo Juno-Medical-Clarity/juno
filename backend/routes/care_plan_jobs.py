@@ -9,7 +9,7 @@ from opentelemetry import trace as otel_trace
 from models.batch_requests import SingleJobRequest
 from models.job import JobDoc
 from utils.firebase import create_job_doc, verify_firebase_token
-from utils.cloud_tasks import enqueue_job, require_env, MissingJobConfigError
+from utils.cloud_tasks import enqueue_job_safe, require_env, MissingJobConfigError
 from utils.markers.markers import Markers
 from utils.markers.marker import Scope
 from routes.care_plan import (
@@ -128,27 +128,21 @@ def create_care_plan_job(user_id: str):
             create_job_doc(user_id=user_id, job_id=job_id, payload=job_doc.to_firestore())
 
             try:
-                enqueue_job(
-                    job_id,
-                    queue_name=require_env("CLOUD_TASKS_QUEUE"),
-                    worker_url=require_env("WORKER_URL"),
-                    service_account=require_env("WORKER_SERVICE_ACCOUNT"),
-                    deadline_seconds=Constants.Deadlines.JOB_TIMEOUT_SECONDS_SINGLE,
-                )
+                queue_name = require_env("CLOUD_TASKS_QUEUE")
+                worker_url = require_env("WORKER_URL")
+                service_account = require_env("WORKER_SERVICE_ACCOUNT")
             except MissingJobConfigError:
-                logger.exception(
-                    "care_plan_jobs: missing Cloud Tasks config; cannot enqueue job %s", job_id
-                )
-                return make_error_response(
-                    ErrorCode.INTERNAL_ERROR,
-                    request.path,
-                ).to_dict(), 500
-            except Exception:
-                logger.exception("care_plan_jobs: failed to enqueue Cloud Task for job %s", job_id)
-                return make_error_response(
-                    ErrorCode.INTERNAL_ERROR,
-                    request.path,
-                ).to_dict(), 500
+                logger.exception("care_plan_jobs: missing Cloud Tasks config; cannot enqueue job %s", job_id)
+                return make_error_response(ErrorCode.INTERNAL_ERROR, request.path).to_dict(), 500
+            if err := enqueue_job_safe(
+                job_id,
+                queue_name=queue_name,
+                worker_url=worker_url,
+                service_account=service_account,
+                deadline_seconds=Constants.Deadlines.JOB_TIMEOUT_SECONDS_SINGLE,
+                path=request.path,
+            ):
+                return err
 
             return jsonify({"job_id": job_id}), 202
 
