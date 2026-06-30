@@ -29,9 +29,21 @@ def run_care_plan_grading(user_id: str):
     """
     def _run(scope):
         JunoContext.from_g(function="run_care_plan_grading").apply(scope)
-        body = request.get_json(silent=True) or {}
+        from pydantic import ValidationError
+        from models.grading import GradingRequest
 
-        saved_id = body.get("saved_id")
+        try:
+            req = GradingRequest(**(request.get_json(silent=True) or {}))
+        except ValidationError as exc:
+            first_err = exc.errors()[0]
+            loc = first_err.get("loc", ("unknown",))
+            return make_error_response(
+                ErrorCode.INPUT_VALIDATION_ERROR,
+                request.path,
+                {"field": str(loc[0]) if loc else "unknown", "reason": first_err["msg"]},
+            ).to_dict(), 400
+
+        saved_id = req.saved_id
         if saved_id:
             db = firestore_client()
             doc, err = get_owned_doc_or_403(db, "care_plan_outputs", saved_id, user_id, path=request.path)
@@ -63,8 +75,8 @@ def run_care_plan_grading(user_id: str):
 
             return jsonify({"grading": grading.to_dict()})
 
-        text = body.get("text", "").strip()
-        clarified_text = body.get("clarified_text", "").strip()
+        text = (req.text or "").strip()
+        clarified_text = (req.clarified_text or "").strip()
 
         if not text:
             return make_error_response(

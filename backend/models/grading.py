@@ -1,8 +1,8 @@
 import enum
 from datetime import datetime, timezone
-from typing import Literal
+from typing import Literal, Optional
 
-from pydantic import Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from .base import JsonModel
 from utils.constants import Constants
@@ -67,3 +67,10 @@ def build_grading(
         enabled=True,
         graded_at=datetime.now(timezone.utc).isoformat(),
     )
+
+
+class GradingRequest(BaseModel):
+    saved_id: Optional[str] = None
+    text: Optional[str] = None
+    clarified_text: Optional[str] = None
+    model_config = ConfigDict(strict=True)

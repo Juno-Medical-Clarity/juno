@@ -192,3 +192,16 @@ def test_run_grading_returns_500_on_firestore_update_error(client, auth_ok):
     data = response.get_json()
     assert data["status"] == "error"
     assert data["error"]["code"] == "INTERNAL_ERROR"
+
+
+def test_run_grading_validates_body_with_pydantic(client, auth_ok):
+    """POST with saved_id as int (not str) should return 400 validation error."""
+    response = client.post(
+        "/care_plan/grade",
+        json={"saved_id": 123},
+        headers=auth_ok,
+    )
+    assert response.status_code == 400
+    data = response.get_json()
+    assert data["status"] == "error"
+    assert data["error"]["code"] == "INPUT_VALIDATION_ERROR"
