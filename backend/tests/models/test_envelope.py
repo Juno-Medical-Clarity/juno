@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 from pydantic import ValidationError
 
-from models.care_plan_versions.v1_2 import CarePlanV1_2
+from models.care_plan.versions.v1_2 import CarePlanV1_2
 from models.grading import Grading
 from models.input import TextInput
 from models.metrics import Metrics
@@ -43,7 +43,7 @@ def _envelope_dict() -> dict:
 
 
 def test_care_plan_internal_serializes_with_care_plan_key_and_scores_absent():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     model = CarePlanInternal(
         metrics=_metrics(),
@@ -68,7 +68,7 @@ def test_care_plan_internal_serializes_with_care_plan_key_and_scores_absent():
 
 
 def test_care_plan_internal_rejects_extra_score_kwargs():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     with pytest.raises((ValidationError, TypeError)):
         CarePlanInternal(
@@ -82,7 +82,7 @@ def test_care_plan_internal_rejects_extra_score_kwargs():
 
 
 def test_care_plan_internal_from_dict_requires_care_plan_key_without_alias():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     legacy_key_payload = {
         **_envelope_dict(),
@@ -95,7 +95,7 @@ def test_care_plan_internal_from_dict_requires_care_plan_key_without_alias():
 
 
 def test_care_plan_internal_scores_are_absent_from_envelope():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     model = CarePlanInternal(
         metrics=_metrics(),
@@ -112,12 +112,14 @@ def test_care_plan_internal_scores_are_absent_from_envelope():
 
 
 def test_simplify_output_import_fails():
-    envelope = importlib.import_module("models.envelope")
-
+    # models.envelope has been removed entirely; the module must not exist
     with pytest.raises(ImportError):
-        from models.envelope import SimplifyOutput  # noqa: F401
+        importlib.import_module("models.envelope")
 
-    assert not hasattr(envelope, "SimplifyOutput")
+    # The canonical models.care_plan package must not expose SimplifyOutput
+    import models.care_plan as care_plan_pkg
+
+    assert not hasattr(care_plan_pkg, "SimplifyOutput")
 
 
 def test_model_consuming_routes_import_without_removed_aliases():

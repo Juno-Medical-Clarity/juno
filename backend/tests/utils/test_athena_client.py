@@ -5,7 +5,8 @@ from unittest.mock import MagicMock, patch, call
 
 import pytest
 
-from utils.athena_client import AthenaClient, AthenaAPIError
+from utils.athena_client import AthenaClient
+from models.external_api.athena_errors import AthenaAPIError
 from utils.constants import Constants
 
 

@@ -7,7 +7,7 @@ import pytest
 from care_plan.v1_2 import pipeline as pipeline_module
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from errors import JunoError, ErrorCode
-from models.care_plan_versions.v1_2 import CarePlanV1_2
+from models.care_plan.versions.v1_2 import CarePlanV1_2
 from utils.constants import Constants
 from care_plan.v1_2.pipeline import _llm_schema
 
