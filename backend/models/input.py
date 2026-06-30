@@ -7,12 +7,13 @@ from typing import TYPE_CHECKING, Annotated, Any, Literal, Union
 from pydantic import Field
 
 from .base import JsonModel
+from utils.constants import Constants
 
 if TYPE_CHECKING:
     from werkzeug.datastructures import FileStorage
 
 
-INPUT_VERSION = "1.0"
+INPUT_VERSION = Constants.Schema.INPUT_VERSION
 
 
 class InputFile(JsonModel):

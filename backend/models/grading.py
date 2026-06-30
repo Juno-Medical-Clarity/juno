@@ -8,7 +8,7 @@ from .base import JsonModel
 from utils.constants import Constants
 
 
-GRADING_VERSION = "1.0"
+GRADING_VERSION = Constants.Schema.GRADING_VERSION
 
 
 class GradingEntry(JsonModel):
