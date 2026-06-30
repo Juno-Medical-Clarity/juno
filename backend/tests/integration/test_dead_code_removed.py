@@ -61,6 +61,10 @@ def test_config_py_deleted():
         "backend/config.py must not exist after SP02"
 
 
+def test_utils_athena_client_module_is_gone():
+    _assert_module_not_found("utils.athena_client")
+
+
 def test_backend_root_only_app():
     """After SP02: only app.py lives at backend/ root."""
     root = pathlib.Path(__file__).parent.parent.parent  # backend/
