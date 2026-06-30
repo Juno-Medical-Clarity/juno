@@ -5,8 +5,8 @@ Shared utilities for the async job workflow (care_plan_jobs.py, worker.py, batch
 The SSE streaming route (POST /care_plan) has been removed; use POST /care_plan/jobs instead.
 """
 
+# ── Imports & blueprint setup ──────────────────────────────────────────────────
 import io
-import json
 import logging
 import os
 import uuid
@@ -20,7 +20,6 @@ from utils.constants import Constants
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.scoring import score_text
-from utils.term_detection import build_glossary_from_simplified_text, detect_terms
 from models.metrics import Metrics
 from models.grading import Grading, build_grading, GRADING_VERSION
 from models.care_plan import CarePlan, CARE_PLAN_VERSION
@@ -28,6 +27,14 @@ from models.care_plan.envelope import CarePlanInternal
 from models.input import INPUT_VERSION, ResolvedInput
 from utils.markers import Markers, JunoContext
 
+from models.pipeline_events import (
+    StepEvent,
+    PipelineRunResult,
+    PipelineStepError,
+    AdapterStepEvent,
+    AdapterResult,
+    AdapterError,
+)
 from errors import make_error_response, ErrorCode, build_error_data_from_exc, JunoError
 from observability.telemetry import get_tracer
 
@@ -39,15 +46,7 @@ _juno_error_logger = logging.getLogger("utils.juno_logger")
 care_plan_bp = Blueprint("care_plan", __name__)
 
 
-@care_plan_bp.route("/care_plan", methods=["POST"])
-def care_plan_sse_deprecated():
-    """Deprecated SSE endpoint — use POST /care_plan/jobs instead."""
-    from flask import jsonify
-    return jsonify({
-        "error": "This SSE endpoint has been removed. Use POST /care_plan/jobs instead."
-    }), 410
-
-
+# ── GCS upload helpers ─────────────────────────────────────────────────────────
 def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     """Upload combined input PDF bytes and return a gs:// URI."""
     bucket_name = os.environ.get(Constants.GCS_BUCKET_ENV_VAR, "")
@@ -65,28 +64,7 @@ def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     return f"gs://{bucket_name}/{blob_name}"
 
 
-def _sse(payload: dict) -> str:
-    """Format a Python dict as an SSE data line."""
-    return f"data: {json.dumps(payload)}\n\n"
-
-
-def _sse_error(code: ErrorCode, path: str, details_vars: dict | None = None) -> str:
-    resp = make_error_response(code, path=path, details_vars=details_vars)
-    return _sse({"step": "error", "error_data": resp.error.to_dict()})
-
-
-def _sse_error_rich(exc: Exception) -> str:
-    """Emit a structured SSE error event using the rich error catalog.
-
-    Classifies *exc* via ``build_error_data_from_exc`` (which checks for
-    JunoError, Google API errors, and legacy RuntimeErrors), then emits an
-    SSE payload whose ``error_data`` contains the new rich fields:
-    ``code``, ``message``, ``user_hint``, ``retryable``, ``detail``.
-    The worker captures this and writes it directly to Firestore via fail_job.
-    """
-    return _sse({"step": "error", "error_data": build_error_data_from_exc(exc)})
-
-
+# ── Input resolution helpers ───────────────────────────────────────────────────
 def _allowed(filename: str) -> bool:
     return "." in filename and filename.rsplit(".", 1)[1].lower() in Constants.ALLOWED_EXTENSIONS
 
@@ -209,6 +187,7 @@ def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     return blob.download_as_bytes(), filename
 
 
+# ── Scoring helpers ────────────────────────────────────────────────────────────
 def _score_or_none(text: str, label: str) -> dict | None:
     try:
         return score_text(text)
@@ -217,156 +196,96 @@ def _score_or_none(text: str, label: str) -> dict | None:
         return None
 
 
+# ── Pipeline adapter ───────────────────────────────────────────────────────────
 def run_care_plan_pipeline(
     text: str,
     metrics: Metrics,
     grading_enabled: bool,
     source_kind: str = "upload",
     is_batch: bool = False,
-) -> Generator[str | tuple, None, None]:
+) -> Generator[AdapterStepEvent | AdapterResult | AdapterError, None, None]:
     try:
         try:
             pipeline = CarePlanV1_2Pipeline()
         except Exception as e:
-            yield _sse_error(ErrorCode.PIPELINE_INIT_ERROR, "/care_plan", {"detail": str(e)})
+            yield AdapterError(error_data=build_error_data_from_exc(e))
             return
 
-        # Step 2: Term detection (deterministic; no LLM)
-        yield _sse({"step": 2, "status": "active", "label": Constants.STEPS[2]})
-        try:
-            def _find(scope):
-                JunoContext.from_g(function="find_medical_terms").apply(scope)
-                try:
-                    result = detect_terms(text)
-                except Exception as exc:
-                    logger.exception("care_plan: term detection failed - continuing with empty terms")
-                    scope.mark_failed()
-                    result = {
-                        "substitution_candidates": [],
-                        "preserve_and_define_terms": [],
-                        "abbreviations": [],
-                    }
-                substitution_count = len(result.get("substitution_candidates", []))
-                preserve_count = len(result.get("preserve_and_define_terms", []))
-                scope.add("term_count", substitution_count + preserve_count)
-                scope.add("substitution_count", substitution_count)
+        _STEP_MARKER_MAP = {
+            2: (Markers.CarePlan.FindMedicalTerms, "find_medical_terms", None),
+            3: (Markers.CarePlan.SimplifyLanguage, "simplify_language", "care_plan.simplify_language"),
+            4: (Markers.CarePlan.ClarifyActions,   "clarify_actions",   "care_plan.clarify_actions"),
+            5: (Markers.CarePlan.StructureNote,    "structure_note",    "care_plan.structure_note"),
+        }
+
+        def wrap_step(step: int, label: str, fn):
+            marker, juno_fn, span_name = _STEP_MARKER_MAP.get(step, (None, None, None))
+            if marker is None:
+                return fn()
+
+            def _inner(scope):
+                JunoContext.from_g(function=juno_fn).apply(scope)
+                if span_name:
+                    with get_tracer().start_as_current_span(span_name) as span:
+                        try:
+                            span.set_attribute("session.id", g.session_id)
+                        except (AttributeError, RuntimeError):
+                            span.set_attribute("session.id", "")
+                        result = fn()
+                else:
+                    result = fn()
+                if step == 2:
+                    substitution_count = len((result or {}).get("substitution_candidates", []))
+                    preserve_count = len((result or {}).get("preserve_and_define_terms", []))
+                    scope.add("term_count", substitution_count + preserve_count)
+                    scope.add("substitution_count", substitution_count)
+                if step == 3:
+                    scope.add("input_chars", len(text))
                 return result
-            term_data = Markers.CarePlan.FindMedicalTerms.execute(_find)
-        except Exception as exc:
-            logger.exception("care_plan: term detection outer error")
-            term_data = {"substitution_candidates": [], "preserve_and_define_terms": [], "abbreviations": []}
-        yield _sse({"step": 2, "status": "done", "label": Constants.STEPS[2]})
 
-        # Step 3: Simplify language
-        yield _sse({"step": 3, "status": "active", "label": Constants.STEPS[3]})
-        try:
-            def _simplify(scope):
-                JunoContext.from_g(function="simplify_language").apply(scope)
-                scope.add("input_chars", len(text))
-                with get_tracer().start_as_current_span("care_plan.simplify_language") as span:
-                    try:
-                        span.set_attribute("session.id", g.session_id)
-                    except (AttributeError, RuntimeError):
-                        span.set_attribute("session.id", "")
-                    return pipeline.simplify_language_with_term_plan(
-                        text,
-                        term_data["substitution_candidates"],
-                        term_data["preserve_and_define_terms"],
-                        term_data["abbreviations"],
-                    )
-            simplified = Markers.CarePlan.SimplifyLanguage.execute(_simplify)
-        except Exception as exc:
-            logger.exception("care_plan: simplification failed")
-            yield _sse_error_rich(exc)
-            return
-        yield _sse({"step": 3, "status": "done", "label": Constants.STEPS[3]})
+            return marker.execute(_inner)
 
-        # Step 4: Clarify actions and numbers
-        yield _sse({"step": 4, "status": "active", "label": Constants.STEPS[4]})
-        try:
-            def _clarify(scope):
-                JunoContext.from_g(function="clarify_actions").apply(scope)
-                with get_tracer().start_as_current_span("care_plan.clarify_actions") as span:
-                    try:
-                        span.set_attribute("session.id", g.session_id)
-                    except (AttributeError, RuntimeError):
-                        span.set_attribute("session.id", "")
-                    try:
-                        return pipeline.clarify_and_action(simplified, term_data["abbreviations"])
-                    except Exception as exc:
-                        logger.exception("care_plan: clarify step failed - using simplified text")
-                        scope.mark_failed()
-                        return simplified
-            clarified = Markers.CarePlan.ClarifyActions.execute(_clarify)
-        except Exception as exc:
-            logger.exception("care_plan: clarify outer error")
-            clarified = simplified
-        yield _sse({"step": 4, "status": "done", "label": Constants.STEPS[4]})
+        for event in pipeline.iter_steps(text, wrap_step=wrap_step):
+            if isinstance(event, StepEvent):
+                yield AdapterStepEvent(
+                    step=event.step, status=event.status, label=event.label
+                )
 
-        # Step 5: Structure appointment note
-        yield _sse({"step": 5, "status": "active", "label": Constants.STEPS[5]})
-        try:
-            def _structure(scope):
-                JunoContext.from_g(function="structure_note").apply(scope)
-                with get_tracer().start_as_current_span("care_plan.structure_note") as span:
-                    try:
-                        span.set_attribute("session.id", g.session_id)
-                    except (AttributeError, RuntimeError):
-                        span.set_attribute("session.id", "")
-                    return pipeline.structure_appointment_note(clarified)
-            structured = Markers.CarePlan.StructureNote.execute(_structure)
-        except Exception as exc:
-            logger.exception("care_plan: structuring failed")
-            yield _sse_error_rich(exc)
-            return
-        yield _sse({"step": 5, "status": "done", "label": Constants.STEPS[5]})
+            elif isinstance(event, PipelineStepError):
+                yield AdapterError(error_data=build_error_data_from_exc(event.exc))
+                return
 
-        terms_glossary = build_glossary_from_simplified_text(
-            clarified,
-            term_data["preserve_and_define_terms"],
-        )
-        if grading_enabled:
-            before_score = _score_or_none(text, "before")
-            after_score = _score_or_none(clarified, "after")
-        else:
-            before_score = None
-            after_score = None
+            elif isinstance(event, PipelineRunResult):
+                if grading_enabled:
+                    before_score = _score_or_none(text, "before")
+                    after_score  = _score_or_none(event.clarified, "after")
 
-        care_plan = CarePlan.from_pipeline_result("1.2", {
-            **structured,
-            "terms": terms_glossary,
-            "raw": {
-                "text": text,
-                "simplified_text": simplified,
-                "clarified_text": clarified,
-            },
-        })
+                    def _grade(scope):
+                        JunoContext.from_g(function="grading").apply(scope)
+                        result = build_grading(before_score, text, after_score, event.clarified)
+                        scope.add("before_composite", (before_score or {}).get("composite", 0.0))
+                        scope.add("after_composite",  (after_score  or {}).get("composite", 0.0))
+                        scope.add("grading_method_count", len({e.name for e in result.entries if e.name != "combined"}))
+                        return result
 
-        if grading_enabled:
-            def _grade(scope):
-                JunoContext.from_g(function="grading").apply(scope)
-                result = build_grading(before_score, text, after_score, clarified)
-                scope.add("before_composite", (before_score or {}).get("composite", 0.0))
-                scope.add("after_composite", (after_score or {}).get("composite", 0.0))
-                method_names = {e.name for e in result.entries if e.name != "combined"}
-                scope.add("grading_method_count", len(method_names))
-                return result
-            grading = Markers.Grading.Run.execute(_grade)
-        else:
-            grading = Grading(enabled=False)
+                    grading = Markers.Grading.Run.execute(_grade)
+                else:
+                    grading = Grading(enabled=False)
 
-        # Record the pipeline-total marker
-        def _pipeline_done(scope):
-            JunoContext.from_g(function="pipeline").apply(scope)
-            scope.add("input_chars", len(text))
-            scope.add("source_kind", source_kind)
-            scope.add("grading_enabled", grading_enabled)
-            scope.add("is_batch", is_batch)
-        Markers.CarePlan.Pipeline.execute(_pipeline_done)
+                def _pipeline_done(scope):
+                    JunoContext.from_g(function="pipeline").apply(scope)
+                    scope.add("input_chars", len(text))
+                    scope.add("source_kind", source_kind)
+                    scope.add("grading_enabled", grading_enabled)
+                    scope.add("is_batch", is_batch)
+                Markers.CarePlan.Pipeline.execute(_pipeline_done)
 
-        # Non-SSE sentinel: the route intercepts these typed objects and is
-        # the only layer that composes/serializes the response envelope.
-        yield (Constants.RESULT_SENTINEL, care_plan, grading, text, clarified)
+                yield AdapterResult(
+                    care_plan=event.care_plan,
+                    grading=grading,
+                    raw_text=event.raw_text,
+                    clarified_text=event.clarified,
+                )
 
     except Exception as exc:
         def _pipeline_fail(scope):
@@ -374,4 +293,4 @@ def run_care_plan_pipeline(
             scope.mark_failed()
         Markers.CarePlan.Pipeline.execute(_pipeline_fail)
         logger.exception("care_plan: unexpected pipeline error")
-        yield _sse_error_rich(exc)
+        yield AdapterError(error_data=build_error_data_from_exc(exc))
