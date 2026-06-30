@@ -39,9 +39,6 @@ from errors import make_error_response, ErrorCode, build_error_data_from_exc, Ju
 from observability.telemetry import get_tracer
 
 logger = logging.getLogger(__name__)
-# Secondary error logger routed to utils.juno_logger for compatibility with existing
-# log-assertion tests that predate the Markers migration.
-_juno_error_logger = logging.getLogger("utils.juno_logger")
 
 care_plan_bp = Blueprint("care_plan", __name__)
 
