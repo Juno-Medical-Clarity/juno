@@ -16,13 +16,13 @@ for p in (str(BACKEND_DIR), str(PROJECT_DIR)):
     sys.path.insert(0, p)
 
 from flask import Flask
-from routes import all_blueprints
+from routes import API_BLUEPRINTS
 
 
 @pytest.fixture
 def app():
     app = Flask(__name__)
-    for bp in all_blueprints:
+    for bp in API_BLUEPRINTS:
         app.register_blueprint(bp)
     return app
 

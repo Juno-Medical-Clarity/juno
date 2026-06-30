@@ -16,15 +16,9 @@ API_BLUEPRINTS = [
     saved_outputs_bp,
     datasets_bp,
     grading_bp,
-    admin_bp,        # ← added; was only in ADMIN_BLUEPRINTS before
+    admin_bp,
 ]
 
 WORKER_BLUEPRINTS = [
     worker_bp,
 ]
-
-ADMIN_BLUEPRINTS = [
-    admin_bp,
-]
-
-all_blueprints = API_BLUEPRINTS

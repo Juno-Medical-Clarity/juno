@@ -4,12 +4,12 @@ from flask import Flask
 def test_routes_package_registers_care_plan_blueprints_and_new_paths_only():
     import routes
 
-    assert [bp.name for bp in routes.all_blueprints] == [
+    assert [bp.name for bp in routes.API_BLUEPRINTS] == [
         "care_plan", "batch", "care_plan_jobs", "batch_jobs", "saved_outputs", "datasets", "grading", "admin"
     ]
 
     app = Flask(__name__)
-    for blueprint in routes.all_blueprints:
+    for blueprint in routes.API_BLUEPRINTS:
         app.register_blueprint(blueprint)
 
     rules = {rule.rule for rule in app.url_map.iter_rules()}
