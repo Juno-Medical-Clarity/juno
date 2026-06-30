@@ -1,4 +1,4 @@
-"""Batch utilities: timestamp helper, GCS selection resolver, and deprecated 410 stub (removal: SP07)."""
+"""Batch utilities: timestamp helper and GCS selection resolver."""
 
 from datetime import datetime, timezone
 
@@ -8,15 +8,6 @@ from utils.preset_data import list_datasets
 
 
 batch_bp = Blueprint("batch", __name__)
-
-
-@batch_bp.route("/care_plan/batch", methods=["POST"])
-def care_plan_batch_sse_deprecated():
-    """Deprecated SSE batch endpoint — use POST /care_plan/batch/jobs instead."""
-    from flask import jsonify
-    return jsonify({
-        "error": "This SSE endpoint has been removed. Use POST /care_plan/batch/jobs instead."
-    }), 410
 
 
 def _batch_timestamp() -> str:

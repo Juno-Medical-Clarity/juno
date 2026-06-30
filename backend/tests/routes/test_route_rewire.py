@@ -14,13 +14,11 @@ def test_routes_package_registers_care_plan_blueprints_and_new_paths_only():
 
     rules = {rule.rule for rule in app.url_map.iter_rules()}
     expected_care_plan_rules = {
-        "/care_plan",
         "/care_plan/saved",
         "/care_plan/saved/<doc_id>",
         "/care_plan/saved/<doc_id>/input-pdf-url",
         "/care_plan/datasets",
         "/care_plan/datasets/<group>/<input_id>/<string:filename>",
-        "/care_plan/batch",
         "/care_plan/grade",
         "/care_plan/jobs",
         "/care_plan/batch/jobs",

@@ -1,7 +1,4 @@
-"""Tests for routes.batch_utils — lock post-rename module surface and 410 stub."""
-import importlib
-import pytest
-from flask import Flask
+"""Tests for routes.batch_utils — lock post-rename module surface."""
 
 
 def test_resolve_requested_runs_importable():
@@ -33,10 +30,3 @@ def test_dead_helpers_removed():
         assert not hasattr(m, fn), f"{fn} still exists in routes.batch_utils"
 
 
-def test_deprecated_410_stub_returns_410():
-    from routes.batch_utils import batch_bp
-    app = Flask(__name__)
-    app.register_blueprint(batch_bp)
-    client = app.test_client()
-    resp = client.post("/care_plan/batch")
-    assert resp.status_code == 410
