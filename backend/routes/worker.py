@@ -18,8 +18,7 @@ from models.envelope import CarePlanInternal
 from models.input import TextInput, DocIdInput
 from models.metrics import Metrics
 from utils.constants import Constants
-from error_codes import ErrorCode as PipelineErrorCode
-from utils.pipeline_errors import build_error_data, build_error_data_from_exc
+from errors import ErrorCode, build_error_data, build_error_data_from_exc
 
 logger = logging.getLogger(__name__)
 worker_bp = Blueprint("worker", __name__)
@@ -59,7 +58,7 @@ def _resolve_input_from_job_doc(job_doc: dict) -> str:
     return job_doc.get("input_text") or ""
 
 
-def _build_error_data(code: PipelineErrorCode, detail: str = "") -> dict:
+def _build_error_data(code: ErrorCode, detail: str = "") -> dict:
     """Build the rich error_data dict for a worker-originated failure.
 
     Uses the new error catalog (error_codes.py) to produce a Firestore-ready
@@ -192,7 +191,7 @@ def execute_job(job_id: str):
         def _check_timeout(stage: int) -> bool:
             elapsed = time.monotonic() - start
             if elapsed > deadline_s:
-                fail_job(job_id, _build_error_data(PipelineErrorCode.JOB_TIMEOUT, f"Job timed out at stage {stage}"))
+                fail_job(job_id, _build_error_data(ErrorCode.JOB_TIMEOUT, f"Job timed out at stage {stage}"))
                 logger.warning("worker: job %s timed out at stage %d after %.1fs", job_id, stage, elapsed)
                 return True
             return False
@@ -232,14 +231,8 @@ def execute_job(job_id: str):
                         job_doc["athena_document_id"],
                     )
             except AthenaAPIError as exc:
-                from utils.error_codes import ErrorCode
-                fail_job(job_id, build_error_data(
-                    ErrorCode.ATHENA_API_ERROR,
-                    f"status={exc.status_code} path={api_path}",
-                ))
-                logger.error(
-                    "worker: Athena API error for job %s: %s", job_id, exc
-                )
+                fail_job(job_id, build_error_data_from_exc(exc))
+                logger.error("worker: Athena API error for job %s: %s", job_id, exc)
                 return "", 200
             if api_path:
                 athena_additional_info = [api_path]
@@ -247,7 +240,7 @@ def execute_job(job_id: str):
             text = _resolve_input_from_job_doc(job_doc)
 
         if not text.strip():
-            fail_job(job_id, _build_error_data(PipelineErrorCode.EMPTY_DOCUMENT))
+            fail_job(job_id, _build_error_data(ErrorCode.EMPTY_DOCUMENT))
             return "", 200
 
         version = job_doc.get("input_version", "v1-2")
@@ -299,13 +292,13 @@ def execute_job(job_id: str):
                 fail_job(job_id, pipeline_error_data)
             else:
                 fail_job(job_id, _build_error_data(
-                    PipelineErrorCode.UNKNOWN_ERROR, "Pipeline failed without an error message"
+                    ErrorCode.UNKNOWN_ERROR, "Pipeline failed without an error message"
                 ))
             return "", 200
 
         if pipeline_result is None:
             fail_job(job_id, _build_error_data(
-                PipelineErrorCode.UNKNOWN_ERROR, "Pipeline returned no result"
+                ErrorCode.UNKNOWN_ERROR, "Pipeline returned no result"
             ))
             return "", 200
 
