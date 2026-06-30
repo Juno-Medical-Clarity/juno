@@ -6,8 +6,8 @@ from typing import ClassVar, Literal
 
 from pydantic import Field
 
-from models.base import JsonModel
-from models.care_plan import CarePlan
+from ...base import JsonModel
+from ..care_plan import CarePlan
 from utils.constants import Constants
 
 

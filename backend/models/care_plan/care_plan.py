@@ -2,10 +2,10 @@
 
 from __future__ import annotations
 
-from .base import VersionedModel
+from ..base import VersionedModel
 
 class CarePlan(VersionedModel):
-    """Version-agnostic care-plan family base. Concrete versions live in care_plan/v*/models.py."""
+    """Version-agnostic care-plan family base. Concrete versions live in models/care_plan/versions/."""
 
     doc_type: str
     version: str
