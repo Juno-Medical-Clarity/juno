@@ -2,8 +2,7 @@
 jargon_db.py - JSON-backed helpers for deterministic jargon term detection.
 
 The source data is small enough to load directly from data/jargon/*.json at
-runtime. This module keeps the public lookup helpers used by term_detection,
-but no longer opens or queries a generated database.
+runtime. This module provides the public lookup helpers used by term_detection.
 """
 
 from functools import lru_cache

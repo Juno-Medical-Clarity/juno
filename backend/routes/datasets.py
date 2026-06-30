@@ -33,7 +33,7 @@ def get_dataset_file_route(user_id: str, group: str, input_id: str, filename: st
         return make_error_response(
             ErrorCode.DATASET_DOWNLOAD_ERROR,
             request.path,
-            {"group": group, "input_id": input_id, "detail": "GCS fetch not yet implemented (SP2)"},
+            {"group": group, "input_id": input_id, "detail": "On-demand GCS fetch unavailable"},
         ).to_dict(), 503
     except FileNotFoundError:
         return make_error_response(

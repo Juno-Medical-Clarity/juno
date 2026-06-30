@@ -31,6 +31,7 @@ class Constants:
             4: "Clarifying actions and numbers",
             5: "Organizing your care plan",
         }
+        # ── SSE stream result sentinel ───────────────────────────────────
         RESULT_SENTINEL: str = "__result__"
 
         class CARE_PLAN_VERSIONS(Enum):
