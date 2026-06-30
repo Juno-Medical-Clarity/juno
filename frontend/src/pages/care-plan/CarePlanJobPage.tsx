@@ -405,9 +405,8 @@ export default function CarePlanJobPage() {
     const userMessage = errData?.user_hint ?? errData?.message ?? 'An error occurred processing your care plan.';
     const errorCode = errData?.code ?? null;
     const devMessage = errData?.message ?? null;
-    // retryable is a boolean; check !== undefined so false renders correctly
-    const retryable = errData?.retryable;
-    // Use "details" field from FirestoreJobError / legacy ErrorDetail formats
+    const retryable = errData?.retryable ?? false;
+    // Technical detail string from FirestoreJobError.
     const technicalDetail = errData?.details ?? null;
     const sessionId = jobDoc.session_id ?? null;
     const traceId = jobDoc.trace_id ?? null;
@@ -443,7 +442,7 @@ export default function CarePlanJobPage() {
           )}
 
           {/* Retryable indicator */}
-          {retryable !== undefined && (
+          {errData && (
             <div style={{ textAlign: 'center', fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '8px' }}>
               Retryable: {retryable ? 'Yes' : 'No'}
             </div>
