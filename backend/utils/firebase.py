@@ -22,6 +22,10 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 
+class FirestoreError(RuntimeError):
+    """Raised when a Firestore operation fails in a firebase wrapper function."""
+
+
 def initialize_firebase():
     """Initialize Firebase Admin SDK"""
     if not firebase_admin._apps:
@@ -175,43 +179,63 @@ def save_care_plan_output(
 
 
 def create_job_doc(*, user_id: str, job_id: str, payload: dict) -> None:
-    db = firestore_client()
-    db.collection("care_plan_outputs").document(job_id).set(payload)
+    try:
+        db = firestore_client()
+        db.collection("care_plan_outputs").document(job_id).set(payload)
+    except Exception as exc:
+        logger.exception("firebase: create_job_doc failed for job_id=%s", job_id)
+        raise FirestoreError(f"create_job_doc failed: {exc}") from exc
 
 
 def update_job_stage(job_id: str, stage: int) -> None:
-    db = firestore_client()
-    db.collection("care_plan_outputs").document(job_id).update({
-        "stage": stage,
-        "updated_at": datetime.now(timezone.utc),
-    })
+    try:
+        db = firestore_client()
+        db.collection("care_plan_outputs").document(job_id).update({
+            "stage": stage,
+            "updated_at": datetime.now(timezone.utc),
+        })
+    except Exception as exc:
+        logger.exception("firebase: update_job_stage failed for job_id=%s stage=%d", job_id, stage)
+        raise FirestoreError(f"update_job_stage failed: {exc}") from exc
 
 
 def complete_job(job_id: str, output_data: dict, name: str) -> None:
-    now = datetime.now(timezone.utc)
-    db = firestore_client()
-    db.collection("care_plan_outputs").document(job_id).update({
-        "status": "completed",
-        "stage": 5,
-        "output_data": output_data,
-        "name": name,
-        "completed_at": now,
-        "updated_at": now,
-    })
+    try:
+        now = datetime.now(timezone.utc)
+        db = firestore_client()
+        db.collection("care_plan_outputs").document(job_id).update({
+            "status": "completed",
+            "stage": 5,
+            "output_data": output_data,
+            "name": name,
+            "completed_at": now,
+            "updated_at": now,
+        })
+    except Exception as exc:
+        logger.exception("firebase: complete_job failed for job_id=%s", job_id)
+        raise FirestoreError(f"complete_job failed: {exc}") from exc
 
 
 def fail_job(job_id: str, error_data: dict) -> None:
-    now = datetime.now(timezone.utc)
-    db = firestore_client()
-    db.collection("care_plan_outputs").document(job_id).update({
-        "status": "error",
-        "error_data": error_data,
-        "completed_at": now,
-        "updated_at": now,
-    })
+    try:
+        now = datetime.now(timezone.utc)
+        db = firestore_client()
+        db.collection("care_plan_outputs").document(job_id).update({
+            "status": "error",
+            "error_data": error_data,
+            "completed_at": now,
+            "updated_at": now,
+        })
+    except Exception as exc:
+        logger.exception("firebase: fail_job failed for job_id=%s", job_id)
+        raise FirestoreError(f"fail_job failed: {exc}") from exc
 
 
 def get_job_doc(job_id: str) -> dict | None:
-    db = firestore_client()
-    doc = db.collection("care_plan_outputs").document(job_id).get()
-    return doc.to_dict() if doc.exists else None
+    try:
+        db = firestore_client()
+        doc = db.collection("care_plan_outputs").document(job_id).get()
+        return doc.to_dict() if doc.exists else None
+    except Exception as exc:
+        logger.exception("firebase: get_job_doc failed for job_id=%s", job_id)
+        raise FirestoreError(f"get_job_doc failed: {exc}") from exc
