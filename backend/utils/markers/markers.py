@@ -44,3 +44,10 @@ class Markers:
 
         @code_marker("athena.fetch_clinical_doc")
         class FetchClinicalDoc(CodeMarker): pass
+
+    class Batch:
+        @code_marker("batch.create_jobs")
+        class CreateJobs(CodeMarker): pass
+
+        @code_marker("batch.create_single_job")
+        class CreateSingleJob(CodeMarker): pass
