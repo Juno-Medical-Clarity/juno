@@ -156,9 +156,7 @@ Constants.IMPORTANCE                   = Constants.Enums.IMPORTANCE
 Constants.ATHENA_BASE_URL              = Constants.Athena.BASE_URL
 Constants.ATHENA_PRACTICE_ID           = Constants.Athena.PRACTICE_ID
 Constants.GCS_BUCKET_ENV_VAR           = Constants.Storage.GCS_BUCKET_ENV_VAR
-Constants.DATASETS_BUCKET_NAME_ENV_VAR = Constants.EnvVars.DATASETS_BUCKET
-Constants.DATASETS_BUCKET_ENV_VAR      = Constants.EnvVars.DATASETS_BUCKET
-Constants.DATASETS_BUCKET_NAME_DEFAULT = Constants.EnvVars.DATASETS_BUCKET_DEFAULT
+
 Constants.CARE_PLAN_DEFAULT_VERSION_ENV_VAR     = Constants.EnvVars.CARE_PLAN_DEFAULT_VERSION
 Constants.CARE_PLAN_DEFAULT_VERSION_FALLBACK    = Constants.EnvVars.CARE_PLAN_DEFAULT_VERSION_FALLBACK
 Constants.ATHENA_CLIENT_ID_ENV_VAR     = Constants.EnvVars.ATHENA_CLIENT_ID
