@@ -1,5 +1,6 @@
 """POST /internal/jobs/execute/<job_id> — worker endpoint for Cloud Tasks."""
-import json
+
+# ── Imports & blueprint setup ──────────────────────────────────────────────────
 import logging
 import os
 import time
@@ -13,6 +14,9 @@ from routes.care_plan import (
     run_care_plan_pipeline,
     _fetch_from_gcs,
     _extract_text_from_bytes,
+    AdapterStepEvent,
+    AdapterResult,
+    AdapterError,
 )
 from models.care_plan.envelope import CarePlanInternal
 from models.job import JobDoc
@@ -26,6 +30,7 @@ worker_bp = Blueprint("worker", __name__)
 
 PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
 
+# ── Configuration constants ────────────────────────────────────────────────────
 # Map job-doc input_source_kind values onto the canonical Metrics.input_type
 # allowed values ("file" | "text" | "doc_id").
 _INPUT_TYPE_MAP = {
@@ -47,6 +52,7 @@ def _is_batch_item(job: JobDoc) -> bool:
     return job.batch_group_id is not None
 
 
+# ── Input resolution ───────────────────────────────────────────────────────────
 def _resolve_input_from_job_doc(job: JobDoc) -> str:
     if job.input_source_kind == "doc_id":
         file_bytes, filename = _fetch_from_gcs(job.input_doc_id)
@@ -77,6 +83,7 @@ def _extract_text_from_downloaded(
     return "".join(parts) if has_text else ""
 
 
+# ── OIDC token verification ────────────────────────────────────────────────────
 def _verify_oidc_token() -> bool:
     """Verify the Google-signed OIDC token Cloud Tasks attaches to worker requests.
 
@@ -142,6 +149,7 @@ def _verify_oidc_token() -> bool:
     return True
 
 
+# ── Job execution handler ──────────────────────────────────────────────────────
 @worker_bp.route("/internal/jobs/execute/<job_id>", methods=["POST"])
 def execute_job(job_id: str):
     queue_name_header = request.headers.get("X-CloudTasks-QueueName", "").strip()
@@ -257,27 +265,15 @@ def execute_job(job_id: str):
         pipeline_result = None
         pipeline_error_data: dict | None = None
 
-        for chunk in pipeline_fn(text, metrics, grading_enabled, source_kind=source_kind, is_batch=is_batch):
-            if isinstance(chunk, tuple) and chunk and chunk[0] == Constants.RESULT_SENTINEL:
-                pipeline_result = chunk
-                continue
-
-            if isinstance(chunk, str) and chunk.startswith("data: "):
-                try:
-                    payload = json.loads(chunk.removeprefix("data: ").strip())
-                except Exception:
-                    continue
-
-                if payload.get("step") == "error":
-                    # Real pipeline emits {"step": "error", "error_data": {<ErrorDetail>}}.
-                    # Capture the full SP2 ErrorDetail dict so code/message/details are preserved.
-                    pipeline_error_data = payload.get("error_data") or None
-                    break
-
-                step = payload.get("step")
-                status = payload.get("status")
-                if isinstance(step, int) and status == "active" and step != current_stage:
-                    current_stage = step
+        for event in pipeline_fn(text, metrics, grading_enabled, source_kind=source_kind, is_batch=is_batch):
+            if isinstance(event, AdapterResult):
+                pipeline_result = event
+            elif isinstance(event, AdapterError):
+                pipeline_error_data = event.error_data
+                break
+            elif isinstance(event, AdapterStepEvent):
+                if event.status == "active" and event.step != current_stage:
+                    current_stage = event.step
                     if _check_timeout(current_stage):
                         return "", 200
                     update_job_stage(job_id, current_stage)
@@ -300,7 +296,8 @@ def execute_job(job_id: str):
             ))
             return "", 200
 
-        _, care_plan, grading, _raw_text, _clarified_text = pipeline_result
+        care_plan = pipeline_result.care_plan
+        grading   = pipeline_result.grading
 
         if source_kind == "doc_id":
             input_model = DocIdInput(doc_id=job.input_doc_id)
@@ -342,6 +339,7 @@ def execute_job(job_id: str):
             cleanup_dataset_inputs(job_id)
 
 
+# ── Name derivation ────────────────────────────────────────────────────────────
 def _derive_name(care_plan_data: dict, source_filename: str) -> str:
     try:
         rfv = care_plan_data.get("reason_for_visit")
