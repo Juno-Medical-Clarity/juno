@@ -25,6 +25,7 @@ from vertexai.preview.generative_models import (
 )
 
 from errors import ErrorCode, JunoError, classify_finish_reason, classify_vertex_exception
+from utils.constants import Constants
 
 logger = logging.getLogger(__name__)
 
@@ -40,7 +41,7 @@ class LLMClient:
 
     def __init__(self, model_name: str | None = None):
         if model_name is None:
-            model_name = os.environ.get("VERTEX_AI_MODEL", "gemini-1.5-pro")
+            model_name = os.environ.get(Constants.EnvVars.VERTEX_AI_MODEL, Constants.Llm.MODEL_DEFAULT)
 
         project_id = os.environ.get("GCP_PROJECT_ID", "")
         location = os.environ.get("GCP_LOCATION", "us-central1")
@@ -56,7 +57,7 @@ class LLMClient:
         self._VertexGenerationConfig = VertexGenerationConfig
         logger.info("LLMClient: using Vertex AI")
 
-    def generate_text(self, prompt: str, temperature: float = 0.3, max_tokens: int = 8192) -> str:
+    def generate_text(self, prompt: str, temperature: float = Constants.Llm.TEMPERATURE_TEXT, max_tokens: int = Constants.Llm.MAX_TOKENS) -> str:
         """Generate text from a prompt. Returns the text string directly."""
         try:
             response = self._model.generate_content(
@@ -113,7 +114,7 @@ class LLMClient:
 
         return response.text.strip()
 
-    def generate_json(self, prompt: str, temperature: float = 0.2, max_tokens: int = 8192) -> dict | list:
+    def generate_json(self, prompt: str, temperature: float = Constants.Llm.TEMPERATURE_JSON, max_tokens: int = Constants.Llm.MAX_TOKENS) -> dict | list:
         """Generate JSON from a prompt. Strips markdown fences and parses JSON."""
         raw = self.generate_text(prompt, temperature, max_tokens)
         try:
