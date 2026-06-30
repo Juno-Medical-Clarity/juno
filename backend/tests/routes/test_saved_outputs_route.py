@@ -4,6 +4,15 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 
+@pytest.fixture
+def mock_firebase_token(monkeypatch):
+    """Bypass Firebase token verification: any Bearer token resolves to uid='test-user'."""
+    monkeypatch.setattr(
+        "utils.firebase.auth.verify_id_token",
+        lambda *a, **k: {"uid": "test-user"},
+    )
+
+
 def _make_doc(doc_id: str, data: dict) -> MagicMock:
     """Return a mock Firestore document snapshot."""
     doc = MagicMock()
@@ -192,3 +201,53 @@ def test_batch_group_id_round_trip(mock_firestore_client, _verify_token, client)
     # Second output: saved without batch_group_id — should be None/null
     assert outputs[1]["id"] == "output-2"
     assert outputs[1]["batch_group_id"] is None
+
+
+# ---------------------------------------------------------------------------
+# Error-handling tests — Firestore failures return 500 INTERNAL_ERROR
+# ---------------------------------------------------------------------------
+
+
+def test_list_saved_returns_500_on_firestore_error(client, mock_firebase_token):
+    with patch("routes.saved_outputs.firestore_client") as mock_fc:
+        mock_fc.return_value.collection.return_value.where.return_value.order_by.return_value.stream.side_effect = Exception("firestore down")
+        response = client.get(
+            "/care_plan/saved",
+            headers={"Authorization": "Bearer testtoken"},
+        )
+    assert response.status_code == 500
+    data = response.get_json()
+    assert data["status"] == "error"
+    assert data["error"]["code"] == "INTERNAL_ERROR"
+
+
+def test_rename_saved_returns_500_on_update_error(client, mock_firebase_token):
+    mock_doc = MagicMock()
+    mock_doc.to_dict.return_value = {"uid": "test-user"}
+    with patch("routes.saved_outputs.get_owned_doc_or_403", return_value=(mock_doc, None)), \
+         patch("routes.saved_outputs.firestore_client") as mock_fc:
+        mock_fc.return_value.collection.return_value.document.return_value.update.side_effect = Exception("firestore down")
+        response = client.patch(
+            "/care_plan/saved/test-doc",
+            json={"name": "New Name"},
+            headers={"Authorization": "Bearer testtoken"},
+        )
+    assert response.status_code == 500
+    data = response.get_json()
+    assert data["status"] == "error"
+
+
+def test_toggle_share_returns_500_on_update_error(client, mock_firebase_token):
+    mock_doc = MagicMock()
+    mock_doc.to_dict.return_value = {"uid": "test-user"}
+    with patch("routes.saved_outputs.get_owned_doc_or_403", return_value=(mock_doc, None)), \
+         patch("routes.saved_outputs.firestore_client") as mock_fc:
+        mock_fc.return_value.collection.return_value.document.return_value.update.side_effect = Exception("firestore down")
+        response = client.patch(
+            "/care_plan/saved/test-doc/share",
+            json={"shared": True},
+            headers={"Authorization": "Bearer testtoken"},
+        )
+    assert response.status_code == 500
+    data = response.get_json()
+    assert data["status"] == "error"
