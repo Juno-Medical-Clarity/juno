@@ -7,7 +7,7 @@ from flask import Blueprint, jsonify, request
 
 from utils.firebase import create_job_doc, verify_firebase_token
 from utils.cloud_tasks import enqueue_job, require_env, MissingJobConfigError
-from routes.batch import _resolve_requested_runs, _batch_timestamp
+from routes.batch_utils import _resolve_requested_runs, _batch_timestamp
 from utils.constants import Constants
 from errors import make_error_response, ErrorCode
 

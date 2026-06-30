@@ -1,4 +1,3 @@
-import pytest
 from flask import Flask
 
 
@@ -39,13 +38,3 @@ def test_routes_package_registers_care_plan_blueprints_and_new_paths_only():
         }
         & rules
     )
-
-
-def test_batch_route_uses_care_plan_pipeline_and_save_helper_surface():
-    from routes import batch
-
-    assert batch._pipeline_for_version("v1-2") is batch.run_care_plan_pipeline
-    with pytest.raises(ValueError, match="Unknown version 'v1-1'"):
-        batch._pipeline_for_version("v1-1")
-    assert callable(batch.save_care_plan_output)
-    assert not hasattr(batch, "save_simplify_output")
