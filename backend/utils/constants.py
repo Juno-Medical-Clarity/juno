@@ -57,8 +57,6 @@ class Constants:
         BASE_URL: str = "https://api.preview.platform.athenahealth.com"
         PRACTICE_ID: str = "195900"
         OAUTH_SCOPE: str = "athena/service/Athenanet.MDP.*"
-        BATCH_SIZE: int = 2
-        BATCH_SLEEP_S: int = 30
         TOKEN_TTL_S: int = 300
         TOKEN_REFRESH_BUFFER_S: int = 20
         HTTP_TIMEOUT_TOKEN_S: int = 30

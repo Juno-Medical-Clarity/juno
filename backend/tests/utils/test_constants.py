@@ -30,8 +30,6 @@ def test_llm_namespace():
 
 
 def test_athena_namespace():
-    assert Constants.Athena.BATCH_SIZE == 2
-    assert Constants.Athena.BATCH_SLEEP_S == 30
     assert Constants.Athena.TOKEN_TTL_S == 300
     assert Constants.Athena.TOKEN_REFRESH_BUFFER_S == 20
     assert Constants.Athena.HTTP_TIMEOUT_TOKEN_S == 30

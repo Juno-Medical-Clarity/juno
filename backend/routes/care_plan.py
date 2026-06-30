@@ -20,11 +20,6 @@ from utils.gcs_helpers import get_gcs_bucket
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.scoring import score_text_safe
-
-
-def _score_or_none(text: str, label: str):
-    """Thin wrapper so tests can patch scoring without touching the import."""
-    return score_text_safe(text, label)
 from models.metrics import Metrics
 from models.grading import Grading, build_grading, GRADING_VERSION  # noqa: F401
 from models.care_plan import CarePlan, CARE_PLAN_VERSION  # noqa: F401
@@ -49,6 +44,12 @@ logger = logging.getLogger(__name__)
 _juno_error_logger = logging.getLogger("utils.juno_logger")
 
 care_plan_bp = Blueprint("care_plan", __name__)
+
+
+# ── Scoring helpers ────────────────────────────────────────────────────────────
+def _score_or_none(text: str, label: str):
+    """Thin wrapper so tests can patch scoring without touching the import."""
+    return score_text_safe(text, label)
 
 
 # ── GCS upload helpers ─────────────────────────────────────────────────────────

@@ -71,3 +71,28 @@ def test_handle_exception_unclassified_returns_500():
     from errors import handle_exception
     result, status = handle_exception(Exception("boom"))
     assert status == 500
+
+
+def test_athena_api_error_is_juno_error():
+    from errors import JunoError, ErrorCode
+    from models.external_api.athena_errors import AthenaAPIError
+    exc = AthenaAPIError(429, "rate limited")
+    assert isinstance(exc, JunoError)
+    assert exc.error_code == ErrorCode.ATHENA_API_ERROR
+    assert exc.status_code == 429
+
+
+def test_missing_job_config_error_is_juno_error():
+    from errors import JunoError, ErrorCode
+    from utils.cloud_tasks import MissingJobConfigError
+    exc = MissingJobConfigError("CLOUD_TASKS_QUEUE")
+    assert isinstance(exc, JunoError)
+    assert exc.error_code == ErrorCode.INTERNAL_ERROR
+
+
+def test_gcs_fetch_required_is_juno_error():
+    from errors import JunoError, ErrorCode
+    from utils.preset_data import GCSFetchRequired
+    exc = GCSFetchRequired("group", "input-id", "file.pdf")
+    assert isinstance(exc, JunoError)
+    assert exc.error_code == ErrorCode.DATASET_DOWNLOAD_ERROR

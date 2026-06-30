@@ -20,6 +20,7 @@ from firebase_admin import firestore
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
 from utils.gcs_helpers import get_gcs_bucket
 from utils.markers import Markers, JunoContext
+from utils.constants import Constants
 from errors import make_error_response, ErrorCode
 
 logger = logging.getLogger(__name__)
@@ -222,7 +223,7 @@ def get_input_pdf_url(user_id: str, doc_id: str):
             blob = bucket.blob(blob_name)
             signed_url = blob.generate_signed_url(
                 version="v4",
-                expiration=timedelta(minutes=30),
+                expiration=timedelta(minutes=Constants.Storage.SIGNED_URL_TTL_MIN),
                 method="GET",
             )
             return jsonify({'url': signed_url})

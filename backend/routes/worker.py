@@ -285,7 +285,7 @@ def execute_job(job_id: str):
                         update_job_stage(job_id, current_stage)
 
             if pipeline_error_data is not None:
-                # error_data is a rich error dict from the pipeline SSE stream.
+                # error_data is a rich error dict emitted by the pipeline.
                 # Both old SP2 format (code+message+details) and new rich format
                 # (code+message+user_hint+retryable+detail) carry a "message" field.
                 if pipeline_error_data.get("code") or pipeline_error_data.get("message"):
