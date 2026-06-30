@@ -2,6 +2,8 @@ import json
 import os
 from pathlib import Path
 
+from errors import JunoError, ErrorCode
+
 
 PRESET_DATA_ROOT = Path(
     os.environ.get("PRESET_DATA_PATH")
@@ -13,14 +15,17 @@ MANIFEST_PATH = PRESET_DATA_ROOT / "manifest.json"
 _manifest_cache: dict | None = None
 
 
-class GCSFetchRequired(Exception):
-    """Raised when the requested file is not in the manifest and requires GCS fetch (SP2)."""
+class GCSFetchRequired(JunoError):
+    """Raised when the requested file requires a live GCS fetch."""
 
-    def __init__(self, group: str, input_id: str, filename: str):
+    def __init__(self, group: str, input_id: str, filename: str) -> None:
         self.group = group
         self.input_id = input_id
         self.filename = filename
-        super().__init__(f"GCS fetch required for {group}/{input_id}/{filename}")
+        super().__init__(
+            ErrorCode.DATASET_DOWNLOAD_ERROR,
+            detail=f"GCS fetch required for {group}/{input_id}/{filename}",
+        )
 
 
 def _load_manifest() -> dict:

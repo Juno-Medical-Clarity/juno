@@ -5,13 +5,17 @@ import os
 from google.cloud import tasks_v2
 from google.protobuf import duration_pb2
 
+from errors import JunoError, ErrorCode
 
-class MissingJobConfigError(RuntimeError):
-    """Raised when a required Cloud Tasks env var is unset/empty.
 
-    The message names the missing variable so server-side logs are diagnosable
-    instead of surfacing an opaque KeyError.
-    """
+class MissingJobConfigError(JunoError):
+    """Raised when a required Cloud Tasks env var is unset/empty."""
+
+    def __init__(self, var_name: str) -> None:
+        super().__init__(
+            ErrorCode.INTERNAL_ERROR,
+            detail=f"Required environment variable '{var_name}' is not set.",
+        )
 
 
 def require_env(name: str) -> str:
@@ -23,11 +27,7 @@ def require_env(name: str) -> str:
     """
     value = os.environ.get(name)
     if not value:
-        raise MissingJobConfigError(
-            f"Required environment variable '{name}' is not set. "
-            "Async job dispatch requires CLOUD_TASKS_QUEUE, WORKER_URL, and "
-            "WORKER_SERVICE_ACCOUNT to be configured on this service."
-        )
+        raise MissingJobConfigError(name)
     return value
 
 
