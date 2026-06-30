@@ -11,7 +11,7 @@ import importlib
 
 def test_build_version_reads_file():
     """_build_version() returns a non-empty string that is not 'unknown'."""
-    from telemetry import _build_version
+    from observability.telemetry import _build_version
     version = _build_version()
     assert isinstance(version, str)
     assert version != ""
@@ -22,7 +22,7 @@ def test_build_version_reads_file():
 
 def test_build_version_returns_semver():
     """_build_version() returns the exact semver string from backend/VERSION."""
-    from telemetry import _build_version
+    from observability.telemetry import _build_version
     version = _build_version()
     # Must look like a semver (at least two dots, all numeric parts)
     parts = version.split(".")
@@ -49,7 +49,7 @@ def test_service_version_env_wins():
 
 def test_service_version_falls_back_to_file():
     """When SERVICE_VERSION env var is absent, logic falls back to _build_version()."""
-    from telemetry import _build_version
+    from observability.telemetry import _build_version
     # Simulate: os.environ.get("SERVICE_VERSION") is None/empty → use _build_version()
     file_version = _build_version()
     env_value = None  # env var absent
@@ -60,7 +60,7 @@ def test_service_version_falls_back_to_file():
 
 def test_module_constant_is_set():
     """SERVICE_VERSION module constant is importable and non-empty."""
-    import telemetry
+    from observability import telemetry
     assert hasattr(telemetry, "SERVICE_VERSION")
     assert isinstance(telemetry.SERVICE_VERSION, str)
     assert telemetry.SERVICE_VERSION != ""

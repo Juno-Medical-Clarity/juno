@@ -12,7 +12,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from logging_config import StructuredJsonFormatter
+from observability.logging_config import StructuredJsonFormatter
 
 
 # ---------------------------------------------------------------------------
@@ -94,7 +94,7 @@ def test_trace_fields_still_present():
     formatter = StructuredJsonFormatter()
     formatter.gcp_project_id = "my-project"
 
-    with patch("logging_config.trace.get_current_span", return_value=mock_span):
+    with patch("observability.logging_config.trace.get_current_span", return_value=mock_span):
         result = json.loads(formatter.format(make_record()))
 
     assert "trace_id" in result

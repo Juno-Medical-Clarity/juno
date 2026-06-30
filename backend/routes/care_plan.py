@@ -30,7 +30,7 @@ from models.input import INPUT_VERSION
 from utils.markers import Markers, JunoContext
 
 from errors import make_error_response, ErrorCode, build_error_data_from_exc, JunoError
-from telemetry import get_tracer
+from observability.telemetry import get_tracer
 
 logger = logging.getLogger(__name__)
 # Secondary error logger routed to utils.juno_logger for compatibility with existing

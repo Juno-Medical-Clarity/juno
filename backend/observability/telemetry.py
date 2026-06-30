@@ -28,10 +28,10 @@ logger = logging.getLogger(__name__)
 
 
 def _build_version() -> str:
-    """Read baked version constant from the VERSION file adjacent to this module."""
+    """Read baked version constant from the VERSION file in the backend root."""
     try:
         import pathlib
-        version_file = pathlib.Path(__file__).parent / "VERSION"
+        version_file = pathlib.Path(__file__).parent.parent / "VERSION"
         return version_file.read_text().strip()
     except Exception:
         return "unknown"

@@ -11,8 +11,7 @@ import os as _os
 from routes import API_BLUEPRINTS, WORKER_BLUEPRINTS
 from errors import make_error_response, ErrorCode
 from utils.firebase import initialize_firebase
-from logging_config import setup_logging
-from telemetry import init_telemetry
+from observability import setup_logging, init_telemetry
 from utils.juno_logger import JunoLogger, monotonic_ms
 
 # ---------------------------------------------------------------------------
