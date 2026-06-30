@@ -24,13 +24,25 @@ class Constants:
 
     class Pipeline:
         PIPELINE_VERSION_V1_2: str = "v1-2"
-        STEPS: dict[int, str] = {
-            1: "Reading your note",
-            2: "Finding difficult and medical terms",
-            3: "Simplifying language",
-            4: "Clarifying actions and numbers",
-            5: "Organizing your care plan",
-        }
+
+        class PIPELINE_V1_2_STEPS(Enum):
+            """Named steps of the v1_2 care-plan pipeline. Each member carries its
+            1-based step number (`.number`) and its user-facing progress label
+            (`.label`); replaces the old bare `dict[int, str]` so call sites
+            reference named members instead of int literals."""
+            READ_NOTE          = (1, "Reading your note")
+            DETECT_TERMS       = (2, "Finding difficult and medical terms")
+            SIMPLIFY_LANGUAGE  = (3, "Simplifying language")
+            CLARIFY_AND_ACTION = (4, "Clarifying actions and numbers")
+            STRUCTURE_DOCUMENT = (5, "Organizing your care plan")
+
+            def __new__(cls, number: int, label: str):
+                obj = object.__new__(cls)
+                obj._value_ = number
+                obj.number = number
+                obj.label = label
+                return obj
+
         # ── SSE stream result sentinel ───────────────────────────────────
         RESULT_SENTINEL: str = "__result__"
 
@@ -134,29 +146,3 @@ class Constants:
         DIM_OUTCOME: str = "OpOutcome"
         DIM_STATUS_CODE: str = "StatusCode"
         DIM_CORRELATION_ID: str = "CorrelationId"
-
-
-# ---------------------------------------------------------------------------
-# Backward-compat flat shims — kept for callsites not yet migrated.
-# TODO(SP03+): remove each shim once its consumer migrates to Constants.<Namespace>.<NAME>.
-# ---------------------------------------------------------------------------
-Constants.RESULT_SENTINEL               = Constants.Pipeline.RESULT_SENTINEL
-Constants.MAX_BATCH_RUNS               = Constants.Batch.MAX_BATCH_RUNS
-Constants.ALLOWED_EXTENSIONS           = Constants.Uploads.ALLOWED_EXTENSIONS
-Constants.MAX_FILE_BYTES               = Constants.Uploads.MAX_FILE_BYTES
-Constants.MAX_FILE_COUNT               = Constants.Uploads.MAX_FILE_COUNT
-Constants.MAX_AGGREGATE_FILE_BYTES     = Constants.Uploads.MAX_AGGREGATE_FILE_BYTES
-Constants.PIPELINE_VERSION_V1_2        = Constants.Pipeline.PIPELINE_VERSION_V1_2
-Constants.STEPS                        = Constants.Pipeline.STEPS
-Constants.CARE_PLAN_VERSIONS           = Constants.Pipeline.CARE_PLAN_VERSIONS
-Constants.GRADING_METHODS              = Constants.Grading.GRADING_METHODS
-Constants.SOURCE                       = Constants.Enums.SOURCE
-Constants.IMPORTANCE                   = Constants.Enums.IMPORTANCE
-Constants.ATHENA_BASE_URL              = Constants.Athena.BASE_URL
-Constants.ATHENA_PRACTICE_ID           = Constants.Athena.PRACTICE_ID
-Constants.GCS_BUCKET_ENV_VAR           = Constants.Storage.GCS_BUCKET_ENV_VAR
-
-Constants.CARE_PLAN_DEFAULT_VERSION_ENV_VAR     = Constants.EnvVars.CARE_PLAN_DEFAULT_VERSION
-Constants.CARE_PLAN_DEFAULT_VERSION_FALLBACK    = Constants.EnvVars.CARE_PLAN_DEFAULT_VERSION_FALLBACK
-Constants.ATHENA_CLIENT_ID_ENV_VAR     = Constants.EnvVars.ATHENA_CLIENT_ID
-Constants.ATHENA_CLIENT_SECRET_ENV_VAR = Constants.EnvVars.ATHENA_CLIENT_SECRET
