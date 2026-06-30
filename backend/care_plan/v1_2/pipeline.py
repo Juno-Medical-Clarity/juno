@@ -47,6 +47,8 @@ from utils.term_detection import (
 from utils.constants import Constants
 from errors import JunoError, ErrorCode
 
+_STEP = Constants.Pipeline.PIPELINE_V1_2_STEPS
+
 logger = logging.getLogger(__name__)
 
 
@@ -172,9 +174,12 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
             return fn()
 
         # Step 2: term detection (deterministic, no LLM)
-        yield StepEvent(step=2, status="active", label=Constants.STEPS[2])
+        yield StepEvent(step=_STEP.DETECT_TERMS.number, status="active", label=_STEP.DETECT_TERMS.label)
         try:
-            term_data = _call(2, Constants.STEPS[2], lambda: detect_terms(text))
+            term_data = _call(
+                _STEP.DETECT_TERMS.number, _STEP.DETECT_TERMS.label,
+                lambda: detect_terms(text),
+            )
         except Exception:
             logger.exception("pipeline: term detection failed — continuing with empty terms")
             term_data = {
@@ -182,13 +187,13 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
                 "preserve_and_define_terms": [],
                 "abbreviations": [],
             }
-        yield StepEvent(step=2, status="done", label=Constants.STEPS[2])
+        yield StepEvent(step=_STEP.DETECT_TERMS.number, status="done", label=_STEP.DETECT_TERMS.label)
 
         # Step 3: simplify language
-        yield StepEvent(step=3, status="active", label=Constants.STEPS[3])
+        yield StepEvent(step=_STEP.SIMPLIFY_LANGUAGE.number, status="active", label=_STEP.SIMPLIFY_LANGUAGE.label)
         try:
             simplified = _call(
-                3, Constants.STEPS[3],
+                _STEP.SIMPLIFY_LANGUAGE.number, _STEP.SIMPLIFY_LANGUAGE.label,
                 lambda: self.simplify_language_with_term_plan(
                     text,
                     term_data["substitution_candidates"],
@@ -198,34 +203,34 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
             )
         except Exception as exc:
             logger.exception("pipeline: simplification failed")
-            yield PipelineStepError(step=3, exc=exc)
+            yield PipelineStepError(step=_STEP.SIMPLIFY_LANGUAGE.number, exc=exc)
             return
-        yield StepEvent(step=3, status="done", label=Constants.STEPS[3])
+        yield StepEvent(step=_STEP.SIMPLIFY_LANGUAGE.number, status="done", label=_STEP.SIMPLIFY_LANGUAGE.label)
 
         # Step 4: clarify and action
-        yield StepEvent(step=4, status="active", label=Constants.STEPS[4])
+        yield StepEvent(step=_STEP.CLARIFY_AND_ACTION.number, status="active", label=_STEP.CLARIFY_AND_ACTION.label)
         try:
             clarified = _call(
-                4, Constants.STEPS[4],
+                _STEP.CLARIFY_AND_ACTION.number, _STEP.CLARIFY_AND_ACTION.label,
                 lambda: self.clarify_and_action(simplified, term_data["abbreviations"]),
             )
         except Exception:
             logger.exception("pipeline: clarify step failed — using simplified text")
             clarified = simplified   # non-fatal: fall back to simplified
-        yield StepEvent(step=4, status="done", label=Constants.STEPS[4])
+        yield StepEvent(step=_STEP.CLARIFY_AND_ACTION.number, status="done", label=_STEP.CLARIFY_AND_ACTION.label)
 
         # Step 5: structure appointment note
-        yield StepEvent(step=5, status="active", label=Constants.STEPS[5])
+        yield StepEvent(step=_STEP.STRUCTURE_DOCUMENT.number, status="active", label=_STEP.STRUCTURE_DOCUMENT.label)
         try:
             structured = _call(
-                5, Constants.STEPS[5],
+                _STEP.STRUCTURE_DOCUMENT.number, _STEP.STRUCTURE_DOCUMENT.label,
                 lambda: self.structure_appointment_note(clarified),
             )
         except Exception as exc:
             logger.exception("pipeline: structuring failed")
-            yield PipelineStepError(step=5, exc=exc)
+            yield PipelineStepError(step=_STEP.STRUCTURE_DOCUMENT.number, exc=exc)
             return
-        yield StepEvent(step=5, status="done", label=Constants.STEPS[5])
+        yield StepEvent(step=_STEP.STRUCTURE_DOCUMENT.number, status="done", label=_STEP.STRUCTURE_DOCUMENT.label)
 
         terms_glossary = build_glossary_from_simplified_text(
             clarified, term_data["preserve_and_define_terms"]
@@ -239,7 +244,7 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
                 "clarified_text": clarified,
             },
         }
-        care_plan = CarePlan.from_pipeline_result(Constants.CARE_PLAN_VERSIONS.V1_2.value, result)
+        care_plan = CarePlan.from_pipeline_result(Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value, result)
         if not isinstance(care_plan, CarePlanV1_2):
             raise TypeError(f"Expected CarePlanV1_2, got {type(care_plan).__name__}")
 
