@@ -23,9 +23,6 @@ from errors import ErrorCode, build_error_data, build_error_data_from_exc
 logger = logging.getLogger(__name__)
 worker_bp = Blueprint("worker", __name__)
 
-SINGLE_JOB_INTERNAL_DEADLINE_S = 270
-BATCH_ITEM_INTERNAL_DEADLINE_S = 870
-
 PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
 
 # Map job-doc input_source_kind values onto the canonical Metrics.input_type
@@ -182,9 +179,9 @@ def execute_job(job_id: str):
         })
 
         deadline_s = (
-            BATCH_ITEM_INTERNAL_DEADLINE_S
+            Constants.Deadlines.BATCH_ITEM_INTERNAL_DEADLINE_S
             if _is_batch_item(job_doc)
-            else SINGLE_JOB_INTERNAL_DEADLINE_S
+            else Constants.Deadlines.SINGLE_JOB_INTERNAL_DEADLINE_S
         )
         start = time.monotonic()
 
