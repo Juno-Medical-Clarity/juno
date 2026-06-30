@@ -34,3 +34,13 @@ class Markers:
     class Http:
         @code_marker("http.request")
         class Request(CodeMarker): pass
+
+    class Athena:
+        @code_marker("athena.get_token")
+        class GetToken(CodeMarker): pass
+
+        @code_marker("athena.fetch_encounter_summary")
+        class FetchEncounterSummary(CodeMarker): pass
+
+        @code_marker("athena.fetch_clinical_doc")
+        class FetchClinicalDoc(CodeMarker): pass
