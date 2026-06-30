@@ -25,6 +25,17 @@ class ErrorDetail(JsonModel):
     - `timestamp` is an ISO-8601 UTC string; callers use datetime.now(timezone.utc).isoformat().
     - `code` is always a string (ErrorCode.value), not the enum, so it is JSON-serializable
       without extra config and safe to store in Firestore.
+
+    User-facing fields (safe to display in client UI):
+        code: Public error code string (ErrorCode.value).
+        message: Short developer/user-facing error message.
+        user_hint: Optional guidance for the end user on how to resolve the error.
+        retryable: Whether the client should retry the request.
+
+    Internal fields (suitable for logs and support diagnostics; may be omitted from client UI):
+        details: Additional internal context string (stack info, upstream error text, etc.).
+        timestamp: ISO-8601 UTC timestamp of when the error was generated.
+        path: Request path where the error occurred (None for non-HTTP contexts such as workers).
     """
     code: str
     message: str
