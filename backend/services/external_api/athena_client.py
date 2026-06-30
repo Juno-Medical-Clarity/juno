@@ -36,8 +36,8 @@ class AthenaClient:
             return self._token
 
         def _fetch(scope: Scope) -> str:
-            client_id = os.environ[Constants.ATHENA_CLIENT_ID_ENV_VAR]
-            client_secret = os.environ[Constants.ATHENA_CLIENT_SECRET_ENV_VAR]
+            client_id = os.environ[Constants.EnvVars.ATHENA_CLIENT_ID]
+            client_secret = os.environ[Constants.EnvVars.ATHENA_CLIENT_SECRET]
             resp = requests.post(
                 f"{Constants.Athena.BASE_URL}/oauth2/v1/token",
                 auth=(client_id, client_secret),

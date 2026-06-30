@@ -70,7 +70,7 @@ Selection = Annotated[
 
 class BatchJobsRequest(BaseModel):
     selections: list[Selection] = Field(min_length=1)
-    version: str = Constants.PIPELINE_VERSION_V1_2
+    version: str = Constants.Pipeline.PIPELINE_VERSION_V1_2
     grading_enabled: bool = False
 
     @model_validator(mode="before")
@@ -82,7 +82,7 @@ class BatchJobsRequest(BaseModel):
 
 
 class SingleJobRequest(BaseModel):
-    version: str = Constants.PIPELINE_VERSION_V1_2
+    version: str = Constants.Pipeline.PIPELINE_VERSION_V1_2
     grading_enabled: bool = True
 
     @model_validator(mode="before")

@@ -40,8 +40,8 @@ class Medication(JsonModel):
     duration: str = ""
     instructions: str = ""
     side_effects_to_watch: str = ""
-    importance: Constants.IMPORTANCE = Constants.IMPORTANCE.LOW
-    source: Constants.SOURCE | None = None
+    importance: Constants.Enums.IMPORTANCE = Constants.Enums.IMPORTANCE.LOW
+    source: Constants.Enums.SOURCE | None = None
     change: bool = False
     change_description: str = ""
 
@@ -52,8 +52,8 @@ class Test(JsonModel):
     why: str = ""
     description: str = ""
     preparation: str = ""
-    importance: Constants.IMPORTANCE = Constants.IMPORTANCE.LOW
-    source: Constants.SOURCE | None = None
+    importance: Constants.Enums.IMPORTANCE = Constants.Enums.IMPORTANCE.LOW
+    source: Constants.Enums.SOURCE | None = None
 
 
 class Procedure(JsonModel):
@@ -62,8 +62,8 @@ class Procedure(JsonModel):
     why: str = ""
     what_to_expect: str = ""
     timeframe: str = ""
-    importance: Constants.IMPORTANCE = Constants.IMPORTANCE.LOW
-    source: Constants.SOURCE | None = None
+    importance: Constants.Enums.IMPORTANCE = Constants.Enums.IMPORTANCE.LOW
+    source: Constants.Enums.SOURCE | None = None
 
 
 class OtherInstruction(JsonModel):
@@ -73,8 +73,8 @@ class OtherInstruction(JsonModel):
     description: str = ""
     frequency: str = ""
     duration: str = ""
-    importance: Constants.IMPORTANCE = Constants.IMPORTANCE.LOW
-    source: Constants.SOURCE | None = None
+    importance: Constants.Enums.IMPORTANCE = Constants.Enums.IMPORTANCE.LOW
+    source: Constants.Enums.SOURCE | None = None
 
 
 class FollowUp(JsonModel):
@@ -88,8 +88,8 @@ class WarningSign(JsonModel):
     what_to_do: str = ""
     urgency: Literal["emergency", "call_doctor", "monitor", "normal_side_effect"] = "monitor"
     related_to: str = ""
-    importance: Constants.IMPORTANCE = Constants.IMPORTANCE.LOW
-    source: Constants.SOURCE | None = None
+    importance: Constants.Enums.IMPORTANCE = Constants.Enums.IMPORTANCE.LOW
+    source: Constants.Enums.SOURCE | None = None
 
 
 class GlossaryTerm(JsonModel):

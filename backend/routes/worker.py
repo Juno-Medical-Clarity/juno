@@ -30,7 +30,7 @@ from errors import ErrorCode, build_error_data, build_error_data_from_exc
 logger = logging.getLogger(__name__)
 worker_bp = Blueprint("worker", __name__)
 
-PIPELINES = {Constants.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
+PIPELINES = {Constants.Pipeline.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
 
 # ── Configuration constants ────────────────────────────────────────────────────
 # Map job-doc input_source_kind values onto the canonical Metrics.input_type
@@ -229,7 +229,7 @@ def execute_job(job_id: str):
                 )
             elif source_kind in ("athena_encounter", "athena_clinical_doc"):
                 from services.external_api import athena_client, AthenaAPIError
-                practice_id = job.athena_practice_id or Constants.ATHENA_PRACTICE_ID
+                practice_id = job.athena_practice_id or Constants.Athena.PRACTICE_ID
                 api_path = job.athena_api_path or ""
                 try:
                     if source_kind == "athena_encounter":

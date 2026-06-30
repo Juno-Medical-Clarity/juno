@@ -78,7 +78,7 @@ def _resolve_input_for_job(user_id: str) -> dict:
         file_bytes, filename = _fetch_from_gcs(doc_id)
         if not _allowed(filename):
             raise ValueError("Stored file must be PDF, TXT, or DOCX")
-        if len(file_bytes) > Constants.MAX_FILE_BYTES:
+        if len(file_bytes) > Constants.Uploads.MAX_FILE_BYTES:
             raise ValueError(f"Stored file exceeds {Constants.Uploads.MAX_FILE_BYTES // (1024 * 1024)} MB limit")
         text = _extract_text_from_bytes(file_bytes, filename)
         return {

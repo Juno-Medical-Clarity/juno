@@ -55,7 +55,7 @@ def _score_or_none(text: str, label: str):
 # ── GCS upload helpers ─────────────────────────────────────────────────────────
 def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     """Upload combined input PDF bytes and return a gs:// URI."""
-    bucket_name = os.environ.get(Constants.GCS_BUCKET_ENV_VAR, "")
+    bucket_name = os.environ.get(Constants.Storage.GCS_BUCKET_ENV_VAR, "")
     if not bucket_name:
         raise RuntimeError("GCP_BUCKET_NAME is not configured")
 
@@ -70,7 +70,7 @@ def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
 
 # ── Input resolution helpers ───────────────────────────────────────────────────
 def _allowed(filename: str) -> bool:
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in Constants.ALLOWED_EXTENSIONS
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in Constants.Uploads.ALLOWED_EXTENSIONS
 
 
 def _extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
@@ -114,8 +114,8 @@ def _resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
     files = [upload for upload in uploads if upload and upload.filename]
     if not files:
         raise ValueError("Uploaded file is missing a filename")
-    if len(files) > Constants.MAX_FILE_COUNT:
-        raise ValueError(f"Upload supports at most {Constants.MAX_FILE_COUNT} files")
+    if len(files) > Constants.Uploads.MAX_FILE_COUNT:
+        raise ValueError(f"Upload supports at most {Constants.Uploads.MAX_FILE_COUNT} files")
 
     text_parts: list[str] = []
     merge_candidates: list[tuple[bytes, str]] = []
@@ -128,7 +128,7 @@ def _resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
             raise ValueError("File must be PDF, TXT, DOCX, or HTML")
 
         file_bytes = upload.read()
-        if len(file_bytes) > Constants.MAX_FILE_BYTES:
+        if len(file_bytes) > Constants.Uploads.MAX_FILE_BYTES:
             raise ValueError("File exceeds 10 MB limit")
         aggregate_bytes += len(file_bytes)
         if aggregate_bytes > Constants.Uploads.MAX_AGGREGATE_FILE_BYTES:
@@ -171,7 +171,7 @@ def _resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
 
 def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     """Fetch uploaded file bytes from GCS by doc_id. Returns (bytes, filename)."""
-    _gcs_bucket_name = os.environ.get(Constants.GCS_BUCKET_ENV_VAR, "")
+    _gcs_bucket_name = os.environ.get(Constants.Storage.GCS_BUCKET_ENV_VAR, "")
     if not _gcs_bucket_name:
         raise RuntimeError("GCP_BUCKET_NAME is not configured")
 

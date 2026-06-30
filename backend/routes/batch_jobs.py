@@ -74,11 +74,11 @@ def create_care_plan_batch_jobs(user_id: str):
 
             # ── Check total job count ─────────────────────────────────────────
             total_count = len(runs) + len(athena_selections)
-            if total_count > Constants.MAX_BATCH_RUNS:
+            if total_count > Constants.Batch.MAX_BATCH_RUNS:
                 return make_error_response(
                     ErrorCode.BATCH_TOO_LARGE,
                     request.path,
-                    {"count": total_count, "max_runs": Constants.MAX_BATCH_RUNS},
+                    {"count": total_count, "max_runs": Constants.Batch.MAX_BATCH_RUNS},
                 ).to_dict(), 400
 
             scope.add_many({

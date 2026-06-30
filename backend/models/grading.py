@@ -39,7 +39,7 @@ def build_grading(
         if score is None or text is None:
             continue
         methods = compute_method_scores(text, score["dimensions"])
-        for method in Constants.GRADING_METHODS:
+        for method in Constants.Grading.GRADING_METHODS:
             m = methods[method]
             breakdown = {k: v for k, v in m.items() if k != "score"}
             entries.append(GradingEntry(
