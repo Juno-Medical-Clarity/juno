@@ -18,9 +18,6 @@ from google.cloud import storage as gcs
 
 from utils.constants import Constants
 
-RESULT_SENTINEL = Constants.RESULT_SENTINEL
-MAX_AGGREGATE_FILE_BYTES = Constants.MAX_AGGREGATE_FILE_BYTES
-
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.scoring import score_text
@@ -32,7 +29,6 @@ from models.envelope import CarePlanInternal
 from models.input import INPUT_VERSION
 from utils.markers import Markers, JunoContext
 
-CARE_PLAN_VERSION = Constants.CARE_PLAN_VERSIONS.V1_2.value
 from errors import make_error_response, ErrorCode, build_error_data_from_exc, JunoError
 from telemetry import get_tracer
 
@@ -42,7 +38,6 @@ logger = logging.getLogger(__name__)
 _juno_error_logger = logging.getLogger("utils.juno_logger")
 
 care_plan_bp = Blueprint("care_plan", __name__)
-_UPLOAD_PREFIX = "care_plan-uploads"
 
 
 @care_plan_bp.route("/care_plan", methods=["POST"])
@@ -170,8 +165,8 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
         if len(file_bytes) > Constants.MAX_FILE_BYTES:
             raise ValueError("File exceeds 10 MB limit")
         aggregate_bytes += len(file_bytes)
-        if aggregate_bytes > MAX_AGGREGATE_FILE_BYTES:
-            limit_mb = MAX_AGGREGATE_FILE_BYTES // (1024 * 1024)
+        if aggregate_bytes > Constants.Uploads.MAX_AGGREGATE_FILE_BYTES:
+            limit_mb = Constants.Uploads.MAX_AGGREGATE_FILE_BYTES // (1024 * 1024)
             raise ValueError(f"combined upload size exceeds {limit_mb} MB limit")
 
         filenames.append(filename)
@@ -216,7 +211,7 @@ def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     project_id = os.environ.get("GCP_PROJECT_ID", "")
     client = gcs.Client(project=project_id or None)
     bucket = client.bucket(_gcs_bucket_name)
-    prefix = f"{_UPLOAD_PREFIX}/{doc_id}/"
+    prefix = f"{Constants.Uploads.UPLOAD_PREFIX}/{doc_id}/"
     blobs = list(bucket.list_blobs(prefix=prefix))
 
     if not blobs:

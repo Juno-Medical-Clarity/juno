@@ -7,7 +7,6 @@ from flask import Blueprint
 
 from utils.constants import Constants
 
-MAX_BATCH_RUNS = Constants.MAX_BATCH_RUNS
 from routes.care_plan import _extract_text_from_bytes, run_care_plan_pipeline
 from utils.firebase import save_care_plan_output
 from utils.preset_data import list_datasets, read_dataset_file
