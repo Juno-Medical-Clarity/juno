@@ -1,6 +1,5 @@
 """POST /care_plan/jobs — create a single async care-plan job."""
 import logging
-import os
 import uuid
 from datetime import datetime, timezone
 
@@ -65,7 +64,7 @@ def _resolve_input_for_job(user_id: str) -> dict:
         if not _allowed(filename):
             raise ValueError("Stored file must be PDF, TXT, or DOCX")
         if len(file_bytes) > Constants.MAX_FILE_BYTES:
-            raise ValueError("Stored file exceeds 10 MB limit")
+            raise ValueError(f"Stored file exceeds {Constants.Uploads.MAX_FILE_BYTES // (1024 * 1024)} MB limit")
         text = _extract_text_from_bytes(file_bytes, filename)
         return {
             "input_source_kind": "doc_id",
@@ -126,7 +125,7 @@ def create_care_plan_job(user_id: str):
             queue_name=require_env("CLOUD_TASKS_QUEUE"),
             worker_url=require_env("WORKER_URL"),
             service_account=require_env("WORKER_SERVICE_ACCOUNT"),
-            deadline_seconds=int(os.environ.get("JOB_TIMEOUT_SECONDS_SINGLE", "300")),
+            deadline_seconds=Constants.Deadlines.JOB_TIMEOUT_SECONDS_SINGLE,
         )
     except MissingJobConfigError:
         logger.exception(

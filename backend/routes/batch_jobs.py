@@ -1,6 +1,5 @@
 """POST /care_plan/batch/jobs — create async batch care-plan jobs."""
 import logging
-import os
 import uuid
 from datetime import datetime, timezone
 
@@ -75,7 +74,7 @@ def create_care_plan_batch_jobs(user_id: str):
     timestamp = _batch_timestamp()
     now = datetime.now(timezone.utc)
     job_ids: list[str] = []
-    deadline_s = int(os.environ.get("JOB_TIMEOUT_SECONDS_BATCH", "900"))
+    deadline_s = Constants.Deadlines.JOB_TIMEOUT_SECONDS_BATCH
 
     # ── GCS dataset job docs ────────────────────────────────────────────────
     gcs_groups = sorted({group for group, _, _ in runs})
