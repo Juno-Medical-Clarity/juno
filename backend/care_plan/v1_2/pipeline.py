@@ -26,7 +26,7 @@ from pydantic import ValidationError
 
 from models.care_plan import CarePlan
 from care_plan.interface import CarePlanPipeline
-from models.care_plan_versions.v1_2 import CarePlanV1_2
+from models.care_plan.versions.v1_2 import CarePlanV1_2
 from utils.llm import LLMClient
 from utils.term_detection import (
     build_glossary_from_simplified_text,

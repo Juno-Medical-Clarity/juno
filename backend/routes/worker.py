@@ -14,7 +14,7 @@ from routes.care_plan import (
     _fetch_from_gcs,
     _extract_text_from_bytes,
 )
-from models.envelope import CarePlanInternal
+from models.care_plan.envelope import CarePlanInternal
 from models.input import TextInput, DocIdInput
 from models.metrics import Metrics
 from utils.constants import Constants

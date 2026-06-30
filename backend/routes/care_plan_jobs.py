@@ -44,10 +44,10 @@ def _resolve_input_for_job(user_id: str) -> dict:
     if not uploads and "file" in request.files:
         uploads = [request.files["file"]]
     if uploads:
-        resolved = _resolve_uploaded_files(uploads)
+        resolved, raw_pdf_bytes = _resolve_uploaded_files(uploads)
         pdf_gcs_uri = None
-        if resolved.combined_pdf_bytes:
-            pdf_gcs_uri = upload_combined_pdf(resolved.combined_pdf_bytes, user_id)
+        if raw_pdf_bytes:
+            pdf_gcs_uri = upload_combined_pdf(raw_pdf_bytes, user_id)
         return {
             "input_source_kind": "upload",
             "input_text": resolved.text,

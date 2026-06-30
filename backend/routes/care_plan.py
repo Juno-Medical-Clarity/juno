@@ -10,7 +10,6 @@ import json
 import logging
 import os
 import uuid
-from dataclasses import dataclass
 from typing import Generator
 
 from flask import Blueprint, g, request
@@ -25,8 +24,8 @@ from utils.term_detection import build_glossary_from_simplified_text, detect_ter
 from models.metrics import Metrics
 from models.grading import Grading, build_grading, GRADING_VERSION
 from models.care_plan import CarePlan
-from models.envelope import CarePlanInternal
-from models.input import INPUT_VERSION
+from models.care_plan.envelope import CarePlanInternal
+from models.input import INPUT_VERSION, ResolvedInput
 from utils.markers import Markers, JunoContext
 
 from errors import make_error_response, ErrorCode, build_error_data_from_exc, JunoError
@@ -64,21 +63,6 @@ def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     blob = bucket.blob(blob_name)
     blob.upload_from_string(pdf_bytes, content_type="application/pdf")
     return f"gs://{bucket_name}/{blob_name}"
-
-
-@dataclass
-class ResolvedInput:
-    text: str
-    source_description: str
-    source_filename: str
-    combined_pdf_bytes: bytes | None = None
-    source_kind: str = "upload"
-    file_count: int = 0
-    file_types: list = None
-
-    def __post_init__(self):
-        if self.file_types is None:
-            self.file_types = []
 
 
 def _sse(payload: dict) -> str:
@@ -144,7 +128,7 @@ def _text_artifact_filename(filename: str) -> str:
     return f"{stem}.txt"
 
 
-def _resolve_uploaded_files(uploads) -> ResolvedInput:
+def _resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
     files = [upload for upload in uploads if upload and upload.filename]
     if not files:
         raise ValueError("Uploaded file is missing a filename")
@@ -192,14 +176,15 @@ def _resolve_uploaded_files(uploads) -> ResolvedInput:
     file_types = sorted({f.filename.rsplit(".", 1)[1].lower() for f in files if "." in f.filename})
 
     source_filename = ", ".join(filenames)
+    combined_pdf_size = float(len(combined_pdf_bytes)) if combined_pdf_bytes is not None else None
     return ResolvedInput(
         text="\n".join(text_parts).strip(),
         source_description=source_filename,
         source_filename=source_filename,
-        combined_pdf_bytes=combined_pdf_bytes,
+        combined_pdf_size=combined_pdf_size,
         file_count=file_count,
         file_types=file_types,
-    )
+    ), combined_pdf_bytes
 
 
 def _fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:

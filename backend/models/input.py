@@ -73,3 +73,24 @@ Input = Annotated[
     Union[FileInput, TextInput, DocIdInput, BatchDatasetInput],
     Field(discriminator="mode"),
 ]
+
+
+class ResolvedInput(JsonModel):
+    """Structured representation of a resolved pipeline input.
+
+    Built in route helpers before the pipeline is invoked; carries the extracted
+    text, metadata about the source, and (for file inputs) the size in bytes of
+    the merged PDF that was produced and uploaded to GCS.
+
+    combined_pdf_size stores the byte count of the merged PDF as a float for
+    observability. The raw bytes are uploaded to GCS by the caller before this
+    object is constructed; this model never holds binary data directly.
+    """
+
+    text: str
+    source_description: str
+    source_filename: str
+    combined_pdf_size: float | None = None
+    source_kind: str = "upload"
+    file_count: int = 0
+    file_types: list[str] = Field(default_factory=list)

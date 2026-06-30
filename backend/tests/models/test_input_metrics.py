@@ -156,8 +156,8 @@ def test_type_adapter_rejects_unknown_mode():
 # ---------------------------------------------------------------------------
 
 def _make_internal(input_obj):
-    from models.care_plan_versions.v1_2 import CarePlanV1_2
-    from models.envelope import CarePlanInternal
+    from models.care_plan.versions.v1_2 import CarePlanV1_2
+    from models.care_plan.envelope import CarePlanInternal
     from models.grading import Grading
     from models.metrics import Metrics
 
@@ -173,7 +173,7 @@ def _make_internal(input_obj):
 
 
 def test_care_plan_internal_round_trips_text_input():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     c = _make_internal(TextInput(text="hi"))
     restored = CarePlanInternal.model_validate(c.to_dict())
@@ -182,7 +182,7 @@ def test_care_plan_internal_round_trips_text_input():
 
 
 def test_care_plan_internal_round_trips_file_input():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     c = _make_internal(FileInput(files=[InputFile(filename="f.pdf", content_type="application/pdf", size_bytes=10)]))
     restored = CarePlanInternal.model_validate(c.to_dict())
@@ -191,7 +191,7 @@ def test_care_plan_internal_round_trips_file_input():
 
 
 def test_care_plan_internal_round_trips_doc_id_input():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     c = _make_internal(DocIdInput(doc_id="gs://bucket/doc.pdf"))
     restored = CarePlanInternal.model_validate(c.to_dict())
@@ -200,7 +200,7 @@ def test_care_plan_internal_round_trips_doc_id_input():
 
 
 def test_care_plan_internal_round_trips_batch_dataset_input():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     c = _make_internal(BatchDatasetInput(
         text="t", dataset_group="g", dataset_input="i",
