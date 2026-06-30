@@ -1,5 +1,6 @@
 """Tests for utils/firebase.py — TDD: write tests first, then create the module."""
 
+import pytest
 from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch, call
 
@@ -340,3 +341,28 @@ def test_save_care_plan_output_persists_output_data_verbatim(mock_client, mock_u
     payload = doc_ref.set.call_args.args[0]
     assert payload["output_data"] is nested_output
     assert payload["output_data"]["input"]["pdf_gcs_url"] == "gs://my-bucket/care_plan/user-1/inputs/abc.pdf"
+
+
+# ── _extract_bearer_token ──────────────────────────────────────────────────────
+
+def test_extract_bearer_token_missing_header():
+    from utils.firebase import _extract_bearer_token
+    token, err = _extract_bearer_token(None)
+    assert token is None
+    assert err is not None
+    assert err[1] == 401
+
+
+def test_extract_bearer_token_malformed():
+    from utils.firebase import _extract_bearer_token
+    token, err = _extract_bearer_token("Token abc")
+    assert token is None
+    assert err is not None
+    assert err[1] == 401
+
+
+def test_extract_bearer_token_valid():
+    from utils.firebase import _extract_bearer_token
+    token, err = _extract_bearer_token("Bearer mytoken")
+    assert token == "mytoken"
+    assert err is None

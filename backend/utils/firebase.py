@@ -52,6 +52,16 @@ def firestore_client():
     return firestore.client(database_id=db_id)
 
 
+def _extract_bearer_token(auth_header: str | None) -> tuple[str | None, tuple | None]:
+    """Parse 'Bearer <token>'. Returns (token, None) or (None, (error_dict, status))."""
+    if not auth_header:
+        return None, (make_error_response(ErrorCode.MISSING_AUTH_HEADER, None).to_dict(), 401)
+    parts = auth_header.split(" ", 1)
+    if len(parts) != 2 or parts[0] != "Bearer":
+        return None, (make_error_response(ErrorCode.MALFORMED_AUTH_HEADER, None).to_dict(), 401)
+    return parts[1], None
+
+
 def verify_firebase_token(f):
     """Decorator to verify Firebase ID token from Authorization header"""
     @wraps(f)
@@ -60,18 +70,11 @@ def verify_firebase_token(f):
         if request.method == 'OPTIONS':
             return '', 204
 
-        auth_header = request.headers.get('Authorization')
-
-        if not auth_header:
-            return make_error_response(ErrorCode.MISSING_AUTH_HEADER, request.path).to_dict(), 401
+        token, err = _extract_bearer_token(request.headers.get("Authorization"))
+        if err:
+            return err
 
         try:
-            # Extract token from "Bearer <token>"
-            parts = auth_header.split(' ', 1)
-            if len(parts) != 2 or parts[0] != 'Bearer':
-                return make_error_response(ErrorCode.MALFORMED_AUTH_HEADER, request.path).to_dict(), 401
-            token = parts[1]
-
             # Verify the token
             decoded_token = auth.verify_id_token(token)
             user_id = decoded_token['uid']
@@ -99,18 +102,11 @@ def require_admin(f):
         if request.method == 'OPTIONS':
             return '', 204
 
-        auth_header = request.headers.get('Authorization')
-
-        if not auth_header:
-            return make_error_response(ErrorCode.MISSING_AUTH_HEADER, request.path).to_dict(), 401
+        token, err = _extract_bearer_token(request.headers.get("Authorization"))
+        if err:
+            return err
 
         try:
-            # Extract token from "Bearer <token>"
-            parts = auth_header.split(' ', 1)
-            if len(parts) != 2 or parts[0] != 'Bearer':
-                return make_error_response(ErrorCode.MALFORMED_AUTH_HEADER, request.path).to_dict(), 401
-            token = parts[1]
-
             # Verify the token
             decoded_token = auth.verify_id_token(token)
 
