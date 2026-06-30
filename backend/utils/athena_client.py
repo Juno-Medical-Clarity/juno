@@ -13,6 +13,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
+from errors import JunoError, ErrorCode
 from utils.constants import Constants
 
 logger = logging.getLogger(__name__)
@@ -21,13 +22,21 @@ BATCH_SIZE = 2
 BATCH_SLEEP_S = 30
 
 
-class AthenaAPIError(Exception):
+class AthenaAPIError(JunoError):
     """Raised when an Athena API call returns a non-200 status."""
 
     def __init__(self, status_code: int, body: str) -> None:
         self.status_code = status_code
         self.body = body
-        super().__init__(f"Athena API error {status_code}: {body[:200]}")
+        if status_code == 401:
+            code = ErrorCode.ATHENA_AUTH_FAILED
+        elif status_code == 429:
+            code = ErrorCode.ATHENA_RATE_LIMIT_ERROR
+        elif status_code == 404:
+            code = ErrorCode.ATHENA_PATIENT_NOT_FOUND
+        else:
+            code = ErrorCode.ATHENA_API_ERROR
+        super().__init__(code, detail=f"status={status_code} body={body[:200]}")
 
 
 class AthenaClient:
