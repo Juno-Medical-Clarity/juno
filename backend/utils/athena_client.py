@@ -18,10 +18,6 @@ from utils.constants import Constants
 
 logger = logging.getLogger(__name__)
 
-BATCH_SIZE = 2
-BATCH_SLEEP_S = 30
-
-
 class AthenaAPIError(JunoError):
     """Raised when an Athena API call returns a non-200 status."""
 
@@ -46,9 +42,6 @@ class AthenaClient:
     refreshing when fewer than TOKEN_REFRESH_BUFFER_S seconds remain.
     """
 
-    TOKEN_TTL_S: int = 300
-    TOKEN_REFRESH_BUFFER_S: int = 20
-
     def __init__(self) -> None:
         self._token: str | None = None
         self._token_expires_at: float = 0.0
@@ -56,7 +49,7 @@ class AthenaClient:
     def get_token(self) -> str:
         """Return a valid Bearer token, refreshing if within 20s of expiry."""
         now = time.time()
-        if self._token and now < self._token_expires_at - self.TOKEN_REFRESH_BUFFER_S:
+        if self._token and now < self._token_expires_at - Constants.Athena.TOKEN_REFRESH_BUFFER_S:
             return self._token
         client_id = os.environ[Constants.ATHENA_CLIENT_ID_ENV_VAR]
         client_secret = os.environ[Constants.ATHENA_CLIENT_SECRET_ENV_VAR]
@@ -65,25 +58,25 @@ class AthenaClient:
             auth=(client_id, client_secret),
             data={
                 "grant_type": "client_credentials",
-                "scope": "athena/service/Athenanet.MDP.*",
+                "scope": Constants.Athena.OAUTH_SCOPE,
             },
-            timeout=30,
+            timeout=Constants.Athena.HTTP_TIMEOUT_TOKEN_S,
         )
         if resp.status_code != 200:
             raise AthenaAPIError(resp.status_code, resp.text)
         self._token = resp.json()["access_token"]
-        self._token_expires_at = now + self.TOKEN_TTL_S
-        logger.info("athena_client: obtained new access token (expires in %ds)", self.TOKEN_TTL_S)
+        self._token_expires_at = now + Constants.Athena.TOKEN_TTL_S
+        logger.info("athena_client: obtained new access token (expires in %ds)", Constants.Athena.TOKEN_TTL_S)
         return self._token
 
-    def _get(self, path: str, retries: int = 3) -> dict:
+    def _get(self, path: str, retries: int = Constants.Athena.MAX_RETRIES) -> dict:
         """GET with retry on 429; raises AthenaAPIError on other non-200."""
         for attempt in range(retries + 1):
             token = self.get_token()
             resp = requests.get(
                 f"{Constants.ATHENA_BASE_URL}{path}",
                 headers={"Authorization": f"Bearer {token}"},
-                timeout=60,
+                timeout=Constants.Athena.HTTP_TIMEOUT_GET_S,
             )
             if resp.status_code == 429:
                 wait = int(resp.headers.get("Retry-After", 60))
@@ -124,19 +117,19 @@ class AthenaClient:
     def fetch_items_with_rate_limit(
         self, items: list[dict]
     ) -> list[tuple[dict, str]]:
-        """Fetch Athena items in batches of BATCH_SIZE with BATCH_SLEEP_S between batches.
+        """Fetch Athena items in batches of Constants.Athena.BATCH_SIZE with Constants.Athena.BATCH_SLEEP_S between batches.
 
         Each item dict must contain: source_kind, practice_id, and either
         encounter_id (for athena_encounter) or patient_id + document_id
         (for athena_clinical_doc).
 
         Returns list of (item, text) pairs in arbitrary order.
-        Sleeps BATCH_SLEEP_S seconds between batches but NOT after the last batch.
+        Sleeps Constants.Athena.BATCH_SLEEP_S seconds between batches but NOT after the last batch.
         """
         results: list[tuple[dict, str]] = []
 
-        for i in range(0, len(items), BATCH_SIZE):
-            batch = items[i : i + BATCH_SIZE]
+        for i in range(0, len(items), Constants.Athena.BATCH_SIZE):
+            batch = items[i : i + Constants.Athena.BATCH_SIZE]
 
             def _fetch_one(item: dict) -> str:
                 if item["source_kind"] == "athena_encounter":
@@ -147,20 +140,20 @@ class AthenaClient:
                     item["practice_id"], item["patient_id"], item["document_id"]
                 )
 
-            with ThreadPoolExecutor(max_workers=BATCH_SIZE) as pool:
+            with ThreadPoolExecutor(max_workers=Constants.Athena.BATCH_SIZE) as pool:
                 futures = {pool.submit(_fetch_one, item): item for item in batch}
                 for future in as_completed(futures):
                     results.append((futures[future], future.result()))
 
-            is_last_batch = (i + BATCH_SIZE) >= len(items)
+            is_last_batch = (i + Constants.Athena.BATCH_SIZE) >= len(items)
             if not is_last_batch:
                 logger.info(
                     "athena_client: batch %d/%d done; sleeping %ds before next batch",
-                    i // BATCH_SIZE + 1,
-                    (len(items) + BATCH_SIZE - 1) // BATCH_SIZE,
-                    BATCH_SLEEP_S,
+                    i // Constants.Athena.BATCH_SIZE + 1,
+                    (len(items) + Constants.Athena.BATCH_SIZE - 1) // Constants.Athena.BATCH_SIZE,
+                    Constants.Athena.BATCH_SLEEP_S,
                 )
-                time.sleep(BATCH_SLEEP_S)
+                time.sleep(Constants.Athena.BATCH_SLEEP_S)
 
         return results
 
