@@ -33,6 +33,10 @@ _BUCKET_NAME = os.environ.get('GCP_BUCKET_NAME', '')
 # Create via Firebase console or firestore.indexes.json
 
 
+# ---------------------------------------------------------------------------
+# List / Get
+# ---------------------------------------------------------------------------
+
 @saved_outputs_bp.route('/care_plan/saved', methods=['GET'])
 @verify_firebase_token
 def list_saved(user_id: str):
@@ -94,6 +98,10 @@ def get_saved(user_id: str, doc_id: str):
     return Markers.SavedOutputs.Get.execute(_run)
 
 
+# ---------------------------------------------------------------------------
+# Rename (PATCH)
+# ---------------------------------------------------------------------------
+
 @saved_outputs_bp.route('/care_plan/saved/<doc_id>', methods=['PATCH'])
 @verify_firebase_token
 def rename_saved(user_id: str, doc_id: str):
@@ -146,6 +154,10 @@ def rename_saved(user_id: str, doc_id: str):
     return Markers.SavedOutputs.Rename.execute(_run)
 
 
+# ---------------------------------------------------------------------------
+# Delete
+# ---------------------------------------------------------------------------
+
 @saved_outputs_bp.route('/care_plan/saved/<doc_id>', methods=['DELETE'])
 @verify_firebase_token
 def delete_saved(user_id: str, doc_id: str):
@@ -177,6 +189,10 @@ def delete_saved(user_id: str, doc_id: str):
             return make_error_response(ErrorCode.INTERNAL_ERROR, request.path).to_dict(), 500
     return Markers.SavedOutputs.Delete.execute(_run)
 
+
+# ---------------------------------------------------------------------------
+# Signed URL
+# ---------------------------------------------------------------------------
 
 @saved_outputs_bp.route('/care_plan/saved/<doc_id>/input-pdf-url', methods=['GET'])
 @verify_firebase_token
@@ -219,6 +235,10 @@ def get_input_pdf_url(user_id: str, doc_id: str):
             ).to_dict(), 500
     return Markers.SavedOutputs.GetPdfUrl.execute(_run)
 
+
+# ---------------------------------------------------------------------------
+# Share toggle
+# ---------------------------------------------------------------------------
 
 @saved_outputs_bp.route('/care_plan/saved/<doc_id>/share', methods=['PATCH'])
 @verify_firebase_token

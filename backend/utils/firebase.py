@@ -26,6 +26,10 @@ class FirestoreError(RuntimeError):
     """Raised when a Firestore operation fails in a firebase wrapper function."""
 
 
+# ---------------------------------------------------------------------------
+# Firebase / Firestore initialization
+# ---------------------------------------------------------------------------
+
 def initialize_firebase():
     """Initialize Firebase Admin SDK"""
     if not firebase_admin._apps:
@@ -55,6 +59,10 @@ def firestore_client():
     db_id = os.environ.get("FIRESTORE_DATABASE_ID", "(default)")
     return firestore.client(database_id=db_id)
 
+
+# ---------------------------------------------------------------------------
+# Auth decorators
+# ---------------------------------------------------------------------------
 
 def _extract_bearer_token(auth_header: str | None) -> tuple[str | None, tuple | None]:
     """Parse 'Bearer <token>'. Returns (token, None) or (None, (error_dict, status))."""
@@ -131,6 +139,10 @@ def require_admin(f):
     return decorated_function
 
 
+# ---------------------------------------------------------------------------
+# Document access helpers
+# ---------------------------------------------------------------------------
+
 def get_owned_doc_or_403(db, collection: str, doc_id: str, user_id: str, path: str | None = None):
     """Fetch a document from `collection`, verify ownership.
 
@@ -145,6 +157,10 @@ def get_owned_doc_or_403(db, collection: str, doc_id: str, user_id: str, path: s
         return None, (make_error_response(ErrorCode.RESOURCE_FORBIDDEN, path, {"collection": collection, "doc_id": doc_id}).to_dict(), 403)
     return doc, None
 
+
+# ---------------------------------------------------------------------------
+# Persistence: general outputs
+# ---------------------------------------------------------------------------
 
 def save_care_plan_output(
     *,
@@ -177,6 +193,10 @@ def save_care_plan_output(
     db.collection("care_plan_outputs").document(output_id).set(payload)
     return output_id
 
+
+# ---------------------------------------------------------------------------
+# Persistence: job lifecycle wrappers
+# ---------------------------------------------------------------------------
 
 def create_job_doc(*, user_id: str, job_id: str, payload: dict) -> None:
     try:
