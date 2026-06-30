@@ -73,8 +73,8 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
     def _generate_text(
         self,
         prompt: str,
-        temperature: float = 0.3,
-        max_tokens: int = 8192,
+        temperature: float = Constants.Llm.TEMPERATURE_TEXT,
+        max_tokens: int = Constants.Llm.MAX_TOKENS,
     ) -> str:
         # Delegate to shared LLM client.
         return self._llm.generate_text(prompt, temperature=temperature, max_tokens=max_tokens)
@@ -82,8 +82,8 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
     def _generate_json(
         self,
         prompt: str,
-        temperature: float = 0.2,
-        max_tokens: int = 8192,
+        temperature: float = Constants.Llm.TEMPERATURE_JSON,
+        max_tokens: int = Constants.Llm.MAX_TOKENS,
     ) -> dict | list:
         # Delegate to shared LLM client (includes fence-stripping and JSON parsing).
         return self._llm.generate_json(prompt, temperature=temperature, max_tokens=max_tokens)
@@ -106,7 +106,7 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
             abbrev_block=abbrev_block,
             text=text,
         )
-        return self._generate_text(prompt, temperature=0.3, max_tokens=65536)
+        return self._generate_text(prompt, temperature=Constants.Llm.TEMPERATURE_TEXT, max_tokens=Constants.Llm.MAX_TOKENS_LONG_FORM)
 
     def clarify_and_action(self, text: str, abbreviations: list[dict] | None = None) -> str:
         abbreviation_section = ""
@@ -122,11 +122,11 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
             abbreviation_section=abbreviation_section,
             text=text,
         )
-        return self._generate_text(prompt, temperature=0.2, max_tokens=65536)
+        return self._generate_text(prompt, temperature=Constants.Llm.TEMPERATURE_JSON, max_tokens=Constants.Llm.MAX_TOKENS_LONG_FORM)
 
     def structure_appointment_note(self, text: str) -> dict:
         prompt = _STRUCTURE_PROMPT.format(schema=_STRUCTURING_SCHEMA, text=text)
-        raw = self._generate_json(prompt, temperature=0.2, max_tokens=8192)
+        raw = self._generate_json(prompt, temperature=Constants.Llm.TEMPERATURE_JSON, max_tokens=Constants.Llm.MAX_TOKENS)
         if not isinstance(raw, dict):
             raise JunoError(ErrorCode.LLM_INVALID_JSON, detail=f"expected dict, got {type(raw)}")
 
