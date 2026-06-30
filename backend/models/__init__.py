@@ -2,14 +2,13 @@
 
 from .base import JsonModel, VersionedModel
 from .errors import ApiResponse, ErrorDetail, StatusEnum
-from .care_plan import CarePlan
+from .care_plan.care_plan import CarePlan
 from .care_plan.envelope import CarePlanInternal
 from .grading import Grading, GradingEntry, build_grading
 from .input import Input, InputFile, FileInput, TextInput, DocIdInput, BatchDatasetInput
 from .metrics import Metrics
-# Import models to trigger CarePlanV1_2 self-registration in CarePlan._registry.
+# Import to trigger CarePlanV1_2 self-registration in CarePlan._registry.
 from .care_plan.versions.v1_2 import CarePlanV1_2  # noqa: F401
-    
 __all__ = [
     "JsonModel",
     "VersionedModel",
