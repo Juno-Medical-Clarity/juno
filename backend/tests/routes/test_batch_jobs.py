@@ -24,7 +24,7 @@ def auth_ok(monkeypatch):
 
 
 VALID_SELECTIONS = [
-    {"group": "GroupA", "inputs": "all", "files": ["file1.txt"]},
+    {"input_source_kind": "gcs_dataset", "group": "GroupA", "inputs": "all", "files": ["file1.txt"]},
 ]
 
 MOCK_RUNS = [
@@ -113,7 +113,7 @@ def test_batch_dataset_does_not_read_local_files(
 def test_unknown_dataset_group_returns_400(mock_resolve, client_batch_jobs, auth_ok):
     resp = client_batch_jobs.post(
         "/care_plan/batch/jobs",
-        json={"selections": [{"group": "BadGroup", "inputs": "all", "files": ["f.txt"]}]},
+        json={"selections": [{"input_source_kind": "gcs_dataset", "group": "BadGroup", "inputs": "all", "files": ["f.txt"]}]},
         headers=auth_ok,
     )
     assert resp.status_code == 400
@@ -141,6 +141,8 @@ def test_missing_selections_returns_400(client_batch_jobs, auth_ok):
         headers=auth_ok,
     )
     assert resp.status_code == 400
+    body = resp.get_json()
+    assert body["error"]["code"] == "INPUT_VALIDATION_ERROR"
 
 
 @patch.dict("os.environ", {
@@ -155,3 +157,5 @@ def test_empty_selections_returns_400(client_batch_jobs, auth_ok):
         headers=auth_ok,
     )
     assert resp.status_code == 400
+    body = resp.get_json()
+    assert body["error"]["code"] == "INPUT_VALIDATION_ERROR"
