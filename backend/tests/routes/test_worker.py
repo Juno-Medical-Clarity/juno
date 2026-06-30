@@ -1,9 +1,9 @@
 """TDD tests for POST /internal/jobs/execute/<job_id>."""
-import json
 from datetime import datetime, timezone
 import pytest
 from unittest.mock import MagicMock, patch, call
 from flask import Flask
+from routes.care_plan import AdapterStepEvent, AdapterResult, AdapterError
 
 
 QUEUE_HEADER = {"X-CloudTasks-QueueName": "my-queue"}
@@ -65,8 +65,6 @@ def test_happy_path_completes_job(
     mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
     client_worker
 ):
-    from utils.constants import Constants
-
     mock_get_doc.return_value = _make_job_doc()
 
     # Mock Firestore client for status update
@@ -78,10 +76,15 @@ def test_happy_path_completes_job(
     care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
     grading_mock = MagicMock()
 
-    result_tuple = (Constants.RESULT_SENTINEL, care_plan_mock, grading_mock, "text", "text")
-
     def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
-        yield result_tuple
+        yield AdapterStepEvent(step=2, status="active", label="Terms")
+        yield AdapterStepEvent(step=2, status="done", label="Terms")
+        yield AdapterResult(
+            care_plan=care_plan_mock,
+            grading=grading_mock,
+            raw_text=text,
+            clarified_text="clarified",
+        )
 
     envelope_mock = MagicMock()
     envelope_mock.to_dict.return_value = {
@@ -116,16 +119,12 @@ def test_pipeline_error_fails_job(
     mock_fs_client.return_value = mock_db
 
     def fake_pipeline_error(text, metrics, grading_enabled, source_kind="text", is_batch=False):
-        # Real SSE error shape: {"step": "error", "error_data": {<ErrorDetail>}}.
-        yield "data: " + json.dumps({
-            "step": "error",
-            "error_data": {
-                "code": "PIPELINE_ERROR",
-                "message": "Pipeline error",
-                "details": "Pipeline exploded",
-                "timestamp": "2026-06-22T00:00:00+00:00",
-                "path": "/care_plan",
-            },
+        yield AdapterError(error_data={
+            "code": "PIPELINE_ERROR",
+            "message": "Pipeline error",
+            "details": "Pipeline exploded",
+            "timestamp": "2026-06-22T00:00:00+00:00",
+            "path": "/care_plan",
         })
 
     with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline_error(*a, **kw)}):
@@ -158,7 +157,7 @@ def test_timeout_fails_job_with_job_timeout_code(
 
     def fake_pipeline_slow(text, metrics, grading_enabled, source_kind="text", is_batch=False):
         # Emit a stage transition so _check_timeout runs.
-        yield "data: " + json.dumps({"step": 2, "status": "active"})
+        yield AdapterStepEvent(step=2, status="active", label="Terms")
 
     # First monotonic() call records the start; the next (inside _check_timeout)
     # jumps far past the single-job deadline so the timeout triggers.
