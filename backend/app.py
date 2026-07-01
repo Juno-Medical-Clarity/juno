@@ -12,7 +12,7 @@ from routes import API_BLUEPRINTS, WORKER_BLUEPRINTS
 from errors import make_error_response, ErrorCode
 from utils.firebase import initialize_firebase
 from observability import setup_logging, init_telemetry
-from utils.juno_logger import JunoLogger, monotonic_ms
+from utils.misc import monotonic_ms
 
 # ---------------------------------------------------------------------------
 # Bootstrap logging FIRST so all subsequent log calls use structured output
@@ -99,57 +99,40 @@ def extract_session_id():
     """
     session_id = request.headers.get("X-Session-Id", "") or str(uuid.uuid4())
     g.session_id = session_id
-
-    # Record start time for request duration logging in after_request
     g.request_start_ms = monotonic_ms()
 
-    # Attach to the current OTel span as a searchable attribute
     current_span = trace.get_current_span()
     if current_span and current_span.is_recording():
         current_span.set_attribute("session.id", session_id)
         current_span.set_attribute("http.route", request.path)
 
-    # Log the start of every request (health checks excluded to avoid noise)
-    if request.path != "/health":
-        juno_logger = JunoLogger(function="http_request")
-        juno_logger.log_request_start(
-            method=request.method,
-            path=request.path,
-        )
-
 
 @app.after_request
 def attach_session_id_header(response):
-    """Echo the session ID back to the client on every response."""
+    """Echo the session ID back to the client and emit the request-lifecycle marker."""
     session_id = getattr(g, "session_id", None)
     if session_id:
         response.headers["X-Session-Id"] = session_id
 
-    # Attach X-Trace-Id header from the current OTel span
     span_ctx = trace.get_current_span().get_span_context()
     if span_ctx and span_ctx.is_valid:
         response.headers["X-Trace-Id"] = format(span_ctx.trace_id, "032x")
 
-    # Log request completion with total duration (skip health checks)
-    if request.path != "/health":
+    # Record request-level metrics + timeline log via Markers (skip health checks
+    # and SSE routes — the latter emit their own per-chunk markers).
+    if request.path != "/health" and response.content_type != "text/event-stream":
         start_ms = getattr(g, "request_start_ms", None)
         duration_ms = (monotonic_ms() - start_ms) if start_ms is not None else 0.0
-        juno_logger = JunoLogger(function="http_request")
-        juno_logger.log_request_end(
-            status_code=response.status_code,
-            duration_ms=duration_ms,
-        )
-        # Record request-level metrics via Markers (skip SSE routes — they emit their own)
-        if request.path != "/health" and response.content_type != "text/event-stream":
-            def _emit(scope):
-                JunoContext.from_g(function="http_request").apply(scope)
-                scope.add("http_method", request.method)
-                scope.add("http_path", request.path)
-                scope.add("http_status", str(response.status_code))
-                scope.add("duration_ms_observed", round(duration_ms, 1))
-                if response.status_code >= 500:
-                    scope.mark_failed()
-            Markers.Http.Request.execute(_emit)
+
+        def _emit(scope):
+            JunoContext.from_g(function="http_request").apply(scope)
+            scope.add("http_method", request.method)
+            scope.add("http_path", request.path)
+            scope.add("http_status", str(response.status_code))
+            scope.add("duration_ms_observed", round(duration_ms, 1))
+            if response.status_code >= 500:
+                scope.mark_failed()
+        Markers.Http.Request.execute(_emit)
 
     return response
 

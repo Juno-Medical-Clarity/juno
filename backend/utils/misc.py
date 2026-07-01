@@ -3,6 +3,7 @@ share a cohesive domain (merged from output_helpers.py, html.py, env.py)."""
 
 import logging
 import os
+import time
 from typing import Optional
 
 logger = logging.getLogger(__name__)
@@ -132,3 +133,12 @@ def extract_text_from_html(html_content: bytes) -> str:
     text = target.get_text(separator="\n", strip=True)
     logger.info("html_extract: %d chars extracted", len(text))
     return text
+
+
+# ---------------------------------------------------------------------------
+# Timing helpers
+# ---------------------------------------------------------------------------
+
+def monotonic_ms() -> float:
+    """Return current time in milliseconds (monotonic clock). Use for measuring elapsed durations."""
+    return time.monotonic() * 1000

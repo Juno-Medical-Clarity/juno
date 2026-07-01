@@ -1,6 +1,6 @@
 """
 SP4 Task 8 — Source-level assertions that care_plan.py uses Markers
-instead of the old JunoMetrics / JunoLogger boilerplate.
+instead of the old JunoMetrics / structured-logger boilerplate.
 
 These tests are "grep the source" tests and run without Flask.
 """

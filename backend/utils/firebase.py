@@ -91,7 +91,7 @@ def verify_firebase_token(f):
             decoded_token = auth.verify_id_token(token)
             user_id = decoded_token['uid']
 
-            # Store on flask.g so JunoLogger / SessionIdFilter pick it up
+            # Store on flask.g so structured logging / SessionIdFilter pick it up
             # automatically on every structured log call in this request.
             g.user_id = user_id
 
