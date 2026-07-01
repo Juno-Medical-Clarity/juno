@@ -47,7 +47,6 @@ class TestDetectTermsJargonText(unittest.TestCase):
     def test_detects_ahrq_term_in_jargon_text(self):
         # "absence" is in ahrq_plain_language.json as a substitution candidate.
         result = detect_terms(JARGON_TEXT)
-        terms = [c["term"] for c in result["substitution_candidates"]]
         # At least one AHRQ hit should be found in text containing "absence".
         self.assertTrue(
             len(result["substitution_candidates"]) > 0,

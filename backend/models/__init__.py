@@ -1,15 +1,23 @@
 """Backend model exports."""
 
 from .base import JsonModel, VersionedModel
-from .errors import ApiResponse, ErrorDetail, StatusEnum
-from .care_plan import CarePlan
-from .envelope import CarePlanInternal
-from .grading import Grading, GradingEntry, build_grading
-from .input import Input, InputFile, FileInput, TextInput, DocIdInput, BatchDatasetInput
+from .api_response import ApiResponse, ErrorDetail, StatusEnum
+from .care_plan.care_plan import CarePlan
+from .care_plan.envelope import CarePlanInternal
+from .grading import Grading, GradingEntry, build_grading_with_before_after_score
+from .input import Input, TextInput, DocIdInput, ResolvedInput
 from .metrics import Metrics
-# Import models to trigger CarePlanV1_2 self-registration in CarePlan._registry.
-from .care_plan_versions.v1_2 import CarePlanV1_2  # noqa: F401
-    
+# Import to trigger CarePlanV1_2 self-registration in CarePlan._registry.
+from .care_plan.versions.v1_2 import CarePlanV1_2  # noqa: F401
+from .job import JobDoc
+from .pipeline_events import (
+    StepEvent,
+    PipelineRunResult,
+    PipelineStepError,
+    AdapterStepEvent,
+    AdapterResult,
+    AdapterError,
+)
 __all__ = [
     "JsonModel",
     "VersionedModel",
@@ -20,13 +28,18 @@ __all__ = [
     "CarePlanInternal",
     "Grading",
     "GradingEntry",
-    "build_grading",
+    "build_grading_with_before_after_score",
     "Input",
-    "InputFile",
-    "FileInput",
     "TextInput",
     "DocIdInput",
-    "BatchDatasetInput",
+    "ResolvedInput",
     "Metrics",
     "CarePlanV1_2",
+    "JobDoc",
+    "StepEvent",
+    "PipelineRunResult",
+    "PipelineStepError",
+    "AdapterStepEvent",
+    "AdapterResult",
+    "AdapterError",
 ]

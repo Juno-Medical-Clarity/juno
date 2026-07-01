@@ -4,6 +4,7 @@ These tests exercise the download → extract → pipeline → cleanup flow that
 added in SP2 for jobs whose input_source_kind is "gcs_batch_dataset".
 """
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -45,6 +46,10 @@ def _make_gcs_job_doc(status="not_started"):
     """Job document for a gcs_batch_dataset job."""
     return {
         "uid": "user-1",
+        "name": "Jan 15, 2026 10:00",
+        "source_filename": "notes.txt",
+        "created_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
+        "updated_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
         "status": status,
         "stage": None,
         "batch_group_id": "GroupA-20260101",
@@ -66,7 +71,7 @@ def _make_success_pipeline_items():
     care_plan_mock = MagicMock()
     care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
     grading_mock = MagicMock()
-    return (Constants.RESULT_SENTINEL, care_plan_mock, grading_mock, "text", "text")
+    return (Constants.Pipeline.RESULT_SENTINEL, care_plan_mock, grading_mock, "text", "text")
 
 
 def _fake_success_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
@@ -91,15 +96,15 @@ def _envelope_mock():
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
-@patch("utils.gcs_datasets.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
+@patch("routes.worker.extract_text_from_downloaded", return_value="patient text")
+@patch("utils.gcs.cleanup_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_downloads_and_extracts_text(
     mock_download, mock_cleanup, mock_extract, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
     client_worker,
 ):
-    """download_dataset_inputs and _extract_text_from_downloaded are called with correct args."""
+    """download_dataset_inputs and extract_text_from_downloaded are called with correct args."""
     mock_get_doc.return_value = _make_gcs_job_doc()
     mock_fs_client.return_value = MagicMock()
 
@@ -125,9 +130,9 @@ def test_execute_job_downloads_and_extracts_text(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
-@patch("utils.gcs_datasets.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
+@patch("routes.worker.extract_text_from_downloaded", return_value="patient text")
+@patch("utils.gcs.cleanup_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_success(
     mock_download, mock_cleanup, mock_extract, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -152,9 +157,9 @@ def test_execute_job_cleanup_called_on_success(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
-@patch("utils.gcs_datasets.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
+@patch("routes.worker.extract_text_from_downloaded", return_value="patient text")
+@patch("utils.gcs.cleanup_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_pipeline_error(
     mock_download, mock_cleanup, mock_extract, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -190,9 +195,9 @@ def test_execute_job_cleanup_called_on_pipeline_error(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
-@patch("utils.gcs_datasets.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
+@patch("routes.worker.extract_text_from_downloaded", return_value="patient text")
+@patch("utils.gcs.cleanup_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_unhandled_exception(
     mock_download, mock_cleanup, mock_extract, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -215,7 +220,7 @@ def test_execute_job_cleanup_called_on_unhandled_exception(
     mock_cleanup.assert_called_once_with("job-1")
 
 
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
+@patch("utils.gcs.cleanup_dataset_inputs")
 @patch("routes.worker.get_job_doc", return_value=None)
 def test_execute_job_cleanup_skipped_if_download_not_reached(
     mock_get_doc, mock_cleanup,
@@ -239,7 +244,7 @@ def test_execute_job_cleanup_skipped_if_download_not_reached(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("utils.gcs_datasets.download_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs")
 def test_execute_job_legacy_batch_dataset_uses_stored_text(
     mock_download, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -248,6 +253,10 @@ def test_execute_job_legacy_batch_dataset_uses_stored_text(
     """input_source_kind='batch_dataset' uses input_text directly; download is never called."""
     legacy_doc = {
         "uid": "user-1",
+        "name": "Jan 15, 2026 10:00",
+        "source_filename": "notes.txt",
+        "created_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
+        "updated_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
         "status": "not_started",
         "stage": None,
         "batch_group_id": "GroupA-20260101",
@@ -280,9 +289,9 @@ def test_execute_job_legacy_batch_dataset_uses_stored_text(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
+@patch("utils.gcs.cleanup_dataset_inputs")
 @patch(
-    "utils.gcs_datasets.download_dataset_inputs",
+    "utils.gcs.download_dataset_inputs",
     side_effect=RuntimeError("GCS unavailable"),
 )
 def test_execute_job_download_failure_marks_job_failed(

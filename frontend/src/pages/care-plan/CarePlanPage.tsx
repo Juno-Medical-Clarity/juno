@@ -11,6 +11,7 @@ import PresetDataCard from '../../components/PresetDataCard';
 import { DEFAULT_VERSION, carePlanPagePath } from '../../constants';
 import type { AthenaSelection, BatchDatasetSelection } from '../../types/datasets';
 import { createCarePlanJob, createBatchJobs } from '../../api/jobs';
+import { useJobStatuses } from '../../api/useJobStatuses';
 
 export const INITIAL_STEPS: PipelineStep[] = [
   { id: 1, label: 'Reading your note', description: 'Extracting text from your input', status: 'waiting' },
@@ -42,11 +43,12 @@ export default function CarePlanPage() {
   const [presetDataSelection, setPresetDataSelection] = useState<BatchDatasetSelection[]>([]);
   const [athenaPresetSelection, setAthenaPresetSelection] = useState<AthenaSelection[]>([]);
 
-  // processingIds: wired from SP1's useJobStatuses hook.
-  // When SP1 lands, import useJobStatuses from '../../api/useJobStatuses'
-  // and compute this set from statuses Map (status === 'not_started' | 'processing').
-  // Until then, undefined causes Sidebar to show no spinners (graceful degradation).
-  const processingIds: Set<string> | undefined = undefined; // TODO: wire SP1
+  const { statuses } = useJobStatuses();
+  const processingIds = new Set(
+    [...statuses.entries()]
+      .filter(([, status]) => status === 'not_started' || status === 'processing')
+      .map(([id]) => id),
+  );
 
   const handleFiles = useCallback((selectedFiles: File[]) => {
     const invalid = selectedFiles.filter(f => {
@@ -88,16 +90,18 @@ export default function CarePlanPage() {
     if (hasPresetDataSelection) {
       try {
         const { job_ids } = await createBatchJobs({
-          selections: presetDataSelection,
-          athena_selections: athenaPresetSelection.map(sel => ({
-            input_source_kind: sel.source_kind,
-            athena_practice_id: sel.entry.practice_id,
-            athena_patient_id: sel.entry.patient_id,
-            ...(sel.source_kind === 'athena_encounter'
-              ? { athena_encounter_id: sel.entry.encounter_id }
-              : { athena_document_id: sel.entry.document_id }),
-            athena_api_path: sel.entry.api_path,
-          })),
+          selections: [
+            ...presetDataSelection,
+            ...athenaPresetSelection.map(sel => ({
+              input_source_kind: sel.source_kind,
+              athena_practice_id: sel.entry.practice_id,
+              athena_patient_id: sel.entry.patient_id,
+              ...(sel.source_kind === 'athena_encounter'
+                ? { athena_encounter_id: sel.entry.encounter_id }
+                : { athena_document_id: sel.entry.document_id }),
+              athena_api_path: sel.entry.api_path,
+            })),
+          ],
           version: selectedVersion,
           grading_enabled: gradingEnabled,
         });

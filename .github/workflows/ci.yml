@@ -33,6 +33,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt -r requirements-dev.txt
 
+      - name: Run ruff lint
+        working-directory: backend
+        run: ruff check . --config pyproject.toml
+
       - name: Run backend tests
         working-directory: backend
         run: python -m pytest tests/ -q

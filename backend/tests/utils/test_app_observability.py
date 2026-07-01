@@ -17,7 +17,6 @@ from utils.markers import register_sink, resolve_sink, InMemorySink, JunoSink
 def _make_app_client():
     """Return a test client for the real Flask app with Firebase patched out."""
     with patch("utils.firebase.initialize_firebase"):
-        import importlib
         import app as app_module
         # Force re-import so module-level register_sink(JunoSink()) runs fresh.
         # Only importlib.reload touches the running module; the import cache
@@ -118,6 +117,9 @@ def test_no_emission_when_sink_is_none(monkeypatch):
 
 def test_register_sink_called_in_app():
     """After importing app, the global sink must be a JunoSink instance."""
+    import sys
+    # Remove cached module so module-level register_sink(JunoSink()) always re-runs.
+    sys.modules.pop("app", None)
     with patch("utils.firebase.initialize_firebase"):
         import app  # noqa: F401 — module-level register_sink(JunoSink()) runs here
 
@@ -141,14 +143,50 @@ def test_x_trace_id_cors_exposed():
         },
     )
     # The CORS expose_headers list must include X-Trace-Id
-    expose = response.headers.get("Access-Control-Expose-Headers", "")
+    response.headers.get("Access-Control-Expose-Headers", "")
     # Flask-CORS only sends Expose-Headers on simple GET/POST responses,
     # not on preflight (OPTIONS). Fall back: check the Flask-CORS config on app.
     from app import app as flask_app2
-    cors_config = flask_app2.extensions.get("cors", None)
+    flask_app2.extensions.get("cors", None)
     # As long as importing app doesn't raise, the CORS setup is in place.
     # The expose_headers list is verified via the app.py source (line ~30).
     assert True  # Import succeeded; CORS config is exercised
+
+
+def test_request_start_signal_logged(monkeypatch, caplog):
+    """A non-/health request must log a start-of-request signal from
+    before_request, independent of the after_request completion marker
+    (which only fires in a `finally` and is skipped for crashed requests)."""
+    import logging
+
+    with patch("utils.firebase.initialize_firebase"):
+        from app import app as flask_app
+
+    client = flask_app.test_client()
+    with caplog.at_level(logging.INFO, logger="app"):
+        response = client.get("/")
+    assert response.status_code == 200
+
+    start_records = [r for r in caplog.records if r.message == "app: request received"]
+    assert len(start_records) == 1
+    assert start_records[0].http_method == "GET"
+    assert start_records[0].http_path == "/"
+
+
+def test_health_check_skips_request_start_signal(monkeypatch, caplog):
+    """GET /health must NOT emit the request-start signal either."""
+    import logging
+
+    with patch("utils.firebase.initialize_firebase"):
+        from app import app as flask_app
+
+    client = flask_app.test_client()
+    with caplog.at_level(logging.INFO, logger="app"):
+        response = client.get("/health")
+    assert response.status_code == 200
+
+    start_records = [r for r in caplog.records if r.message == "app: request received"]
+    assert start_records == []
 
 
 def test_health_check_skips_http_marker(monkeypatch):

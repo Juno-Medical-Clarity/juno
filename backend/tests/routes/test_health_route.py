@@ -1,5 +1,4 @@
 """Tests for the /health endpoint defined in app.py."""
-import pytest
 from unittest.mock import patch
 
 

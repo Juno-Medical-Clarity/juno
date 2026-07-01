@@ -4,6 +4,15 @@ from unittest.mock import MagicMock, patch
 import pytest
 
 
+@pytest.fixture
+def mock_firebase_token(monkeypatch):
+    """Bypass Firebase token verification: any Bearer token resolves to uid='test-user'."""
+    monkeypatch.setattr(
+        "utils.firebase.auth.verify_id_token",
+        lambda *a, **k: {"uid": "test-user"},
+    )
+
+
 def _make_doc(doc_id: str, data: dict) -> MagicMock:
     """Return a mock Firestore document snapshot."""
     doc = MagicMock()
@@ -34,9 +43,9 @@ def _wire_get_owned(mock_firestore_client, doc: MagicMock):
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
 @patch("routes.saved_outputs.firestore.client")
-@patch("routes.saved_outputs.gcs.Client")
+@patch("routes.saved_outputs.get_gcs_bucket")
 @patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
-def test_get_input_pdf_url_new_path(mock_gcs_client, mock_firestore_client, _verify_token, client):
+def test_get_input_pdf_url_new_path(mock_get_bucket, mock_firestore_client, _verify_token, client):
     """Doc with output_data.input.pdf_gcs_url set → uses new path, returns signed URL."""
     doc = _make_owned_doc({
         "output_data": {"input": {"pdf_gcs_url": "gs://my-bucket/care_plan/user-1/inputs/abc.pdf"}},
@@ -47,7 +56,7 @@ def test_get_input_pdf_url_new_path(mock_gcs_client, mock_firestore_client, _ver
     mock_blob.generate_signed_url.return_value = "https://signed.url/new-path"
     mock_bucket = MagicMock()
     mock_bucket.blob.return_value = mock_blob
-    mock_gcs_client.return_value.bucket.return_value = mock_bucket
+    mock_get_bucket.return_value = mock_bucket
 
     response = client.get(
         "/care_plan/saved/doc-1/input-pdf-url",
@@ -59,39 +68,12 @@ def test_get_input_pdf_url_new_path(mock_gcs_client, mock_firestore_client, _ver
     mock_bucket.blob.assert_called_with("care_plan/user-1/inputs/abc.pdf")
 
 
-@patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
-@patch("routes.saved_outputs.firestore.client")
-@patch("routes.saved_outputs.gcs.Client")
-@patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
-def test_get_input_pdf_url_legacy_fallback(mock_gcs_client, mock_firestore_client, _verify_token, client):
-    """Doc with only top-level input_pdf_gcs set (legacy) → uses fallback, returns URL."""
-    doc = _make_owned_doc({
-        "input_pdf_gcs": "gs://my-bucket/care_plan/user-1/inputs/legacy.pdf",
-        # no output_data.input.pdf_gcs_url
-    })
-    _wire_get_owned(mock_firestore_client, doc)
-
-    mock_blob = MagicMock()
-    mock_blob.generate_signed_url.return_value = "https://signed.url/legacy"
-    mock_bucket = MagicMock()
-    mock_bucket.blob.return_value = mock_blob
-    mock_gcs_client.return_value.bucket.return_value = mock_bucket
-
-    response = client.get(
-        "/care_plan/saved/doc-1/input-pdf-url",
-        headers={"Authorization": "Bearer token"},
-    )
-
-    assert response.status_code == 200
-    assert response.get_json()["url"] == "https://signed.url/legacy"
-    mock_bucket.blob.assert_called_with("care_plan/user-1/inputs/legacy.pdf")
-
 
 @patch("utils.firebase.auth.verify_id_token", return_value={"uid": "user-1"})
 @patch("routes.saved_outputs.firestore.client")
-@patch("routes.saved_outputs.gcs.Client")
+@patch("routes.saved_outputs.get_gcs_bucket")
 @patch("routes.saved_outputs._BUCKET_NAME", "my-bucket")
-def test_get_input_pdf_url_new_path_takes_priority(mock_gcs_client, mock_firestore_client, _verify_token, client):
+def test_get_input_pdf_url_new_path_takes_priority(mock_get_bucket, mock_firestore_client, _verify_token, client):
     """Doc with both fields set → new path (output_data.input.pdf_gcs_url) takes priority."""
     doc = _make_owned_doc({
         "output_data": {"input": {"pdf_gcs_url": "gs://my-bucket/care_plan/user-1/inputs/new.pdf"}},
@@ -103,7 +85,7 @@ def test_get_input_pdf_url_new_path_takes_priority(mock_gcs_client, mock_firesto
     mock_blob.generate_signed_url.return_value = "https://signed.url/priority"
     mock_bucket = MagicMock()
     mock_bucket.blob.return_value = mock_blob
-    mock_gcs_client.return_value.bucket.return_value = mock_bucket
+    mock_get_bucket.return_value = mock_bucket
 
     response = client.get(
         "/care_plan/saved/doc-1/input-pdf-url",
@@ -192,3 +174,74 @@ def test_batch_group_id_round_trip(mock_firestore_client, _verify_token, client)
     # Second output: saved without batch_group_id — should be None/null
     assert outputs[1]["id"] == "output-2"
     assert outputs[1]["batch_group_id"] is None
+
+
+# ---------------------------------------------------------------------------
+# Error-handling tests — Firestore failures return 500 INTERNAL_ERROR
+# ---------------------------------------------------------------------------
+
+
+def test_list_saved_returns_500_on_firestore_error(client, mock_firebase_token):
+    with patch("routes.saved_outputs.firestore_client") as mock_fc:
+        mock_fc.return_value.collection.return_value.where.return_value.order_by.return_value.stream.side_effect = Exception("firestore down")
+        response = client.get(
+            "/care_plan/saved",
+            headers={"Authorization": "Bearer testtoken"},
+        )
+    assert response.status_code == 500
+    data = response.get_json()
+    assert data["status"] == "error"
+    assert data["error"]["code"] == "INTERNAL_ERROR"
+
+
+def test_rename_saved_returns_500_on_update_error(client, mock_firebase_token):
+    mock_doc = MagicMock()
+    mock_doc.to_dict.return_value = {"uid": "test-user"}
+    with patch("routes.saved_outputs.get_owned_doc_or_403", return_value=(mock_doc, None)), \
+         patch("routes.saved_outputs.firestore_client") as mock_fc:
+        mock_fc.return_value.collection.return_value.document.return_value.update.side_effect = Exception("firestore down")
+        response = client.patch(
+            "/care_plan/saved/test-doc",
+            json={"name": "New Name"},
+            headers={"Authorization": "Bearer testtoken"},
+        )
+    assert response.status_code == 500
+    data = response.get_json()
+    assert data["status"] == "error"
+
+
+def test_toggle_share_returns_500_on_update_error(client, mock_firebase_token):
+    mock_doc = MagicMock()
+    mock_doc.to_dict.return_value = {"uid": "test-user"}
+    with patch("routes.saved_outputs.get_owned_doc_or_403", return_value=(mock_doc, None)), \
+         patch("routes.saved_outputs.firestore_client") as mock_fc:
+        mock_fc.return_value.collection.return_value.document.return_value.update.side_effect = Exception("firestore down")
+        response = client.patch(
+            "/care_plan/saved/test-doc/share",
+            json={"shared": True},
+            headers={"Authorization": "Bearer testtoken"},
+        )
+    assert response.status_code == 500
+    data = response.get_json()
+    assert data["status"] == "error"
+
+
+def test_get_input_pdf_url_returns_404_without_legacy_fallback(client, mock_firebase_token):
+    """A doc with only input_pdf_gcs (no output_data.input.pdf_gcs_url) returns 404."""
+    from unittest.mock import MagicMock, patch
+
+    mock_doc = MagicMock()
+    mock_doc.to_dict.return_value = {
+        "uid": "test-user",
+        "input_pdf_gcs": "gs://bucket/old-style-path.pdf",
+        # No output_data.input.pdf_gcs_url
+    }
+
+    with patch("routes.saved_outputs.get_owned_doc_or_403", return_value=(mock_doc, None)), \
+         patch("routes.saved_outputs.firestore_client"):
+        response = client.get(
+            "/care_plan/saved/test-doc/input-pdf-url",
+            headers={"Authorization": "Bearer testtoken"},
+        )
+
+    assert response.status_code == 404

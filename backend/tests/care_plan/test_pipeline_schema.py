@@ -6,7 +6,8 @@ import pytest
 
 from care_plan.v1_2 import pipeline as pipeline_module
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
-from models.care_plan_versions.v1_2 import CarePlanV1_2
+from errors import JunoError, ErrorCode
+from models.care_plan.versions.v1_2 import CarePlanV1_2
 from utils.constants import Constants
 from care_plan.v1_2.pipeline import _llm_schema
 
@@ -26,7 +27,7 @@ def test_structure_appointment_note_validates_and_returns_json_model_dump():
     structured = pipeline.structure_appointment_note("clarified text")
 
     assert structured["doc_type"] == "care_plan"
-    assert structured["version"] == Constants.CARE_PLAN_VERSIONS.V1_2.value
+    assert structured["version"] == Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value
     assert structured["summary"] == "You came in for care."
     assert structured["reason_for_visit"] == []
 
@@ -38,8 +39,9 @@ def test_structure_appointment_note_rejects_extra_llm_key():
         "unexpected": "drift",
     }
 
-    with pytest.raises(ValueError, match="LLM structure output failed validation"):
+    with pytest.raises(JunoError) as exc_info:
         pipeline.structure_appointment_note("clarified text")
+    assert exc_info.value.error_code == ErrorCode.PIPELINE_VALIDATION_FAILED
 
 
 def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
@@ -63,7 +65,7 @@ def test_run_returns_care_plan_model_without_internal_scores(monkeypatch):
     pipeline.clarify_and_action = lambda simplified, abbreviations: "clarified"
     pipeline.structure_appointment_note = lambda clarified: {
         "doc_type": "care_plan",
-        "version": Constants.CARE_PLAN_VERSIONS.V1_2.value,
+        "version": Constants.Pipeline.CARE_PLAN_VERSIONS.V1_2.value,
         "summary": "You came in for care.",
     }
 

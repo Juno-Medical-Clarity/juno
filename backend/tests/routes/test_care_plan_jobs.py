@@ -1,6 +1,6 @@
 """TDD tests for POST /care_plan/jobs."""
 import pytest
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 from flask import Flask
 
 
@@ -28,7 +28,7 @@ def auth_ok(monkeypatch):
     "WORKER_URL": "https://worker.run.app",
     "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
 })
-@patch("routes.care_plan_jobs.enqueue_job")
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
 @patch("routes.care_plan_jobs.create_job_doc")
 def test_post_text_returns_202_and_job_id(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
     resp = client_jobs.post(
@@ -59,7 +59,7 @@ def test_post_text_returns_202_and_job_id(mock_create_doc, mock_enqueue, client_
     "WORKER_URL": "https://worker.run.app",
     "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
 })
-@patch("routes.care_plan_jobs.enqueue_job")
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
 @patch("routes.care_plan_jobs.create_job_doc")
 def test_post_no_input_returns_400(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
     resp = client_jobs.post(
@@ -85,7 +85,7 @@ def test_unauthenticated_request_returns_401(client_jobs):
     "WORKER_URL": "https://worker.run.app",
     "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
 })
-@patch("routes.care_plan_jobs.enqueue_job", side_effect=Exception("Queue error"))
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=({"status": "error", "error": {"code": "INTERNAL_ERROR"}}, 500))
 @patch("routes.care_plan_jobs.create_job_doc")
 def test_enqueue_failure_returns_500(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
     resp = client_jobs.post(
@@ -96,3 +96,57 @@ def test_enqueue_failure_returns_500(mock_create_doc, mock_enqueue, client_jobs,
     assert resp.status_code == 500
     body = resp.get_json()
     assert "error" in body
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_grading_enabled_false_string_coercion(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        json={"text": "hello", "grading_enabled": "false"},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 202
+    payload = mock_create_doc.call_args.kwargs["payload"]
+    assert payload["grading_enabled"] is False
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_grading_enabled_default_true(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        json={"text": "hello"},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 202
+    payload = mock_create_doc.call_args.kwargs["payload"]
+    assert payload["grading_enabled"] is True
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.create_job_doc", side_effect=RuntimeError("db exploded"))
+def test_unhandled_exception_returns_500_json(mock_create_doc, client_jobs, auth_ok):
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        json={"text": "hello"},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 500
+    body = resp.get_json()
+    assert body is not None, "Response must be JSON, not HTML"
+    assert body["error"]["code"] == "INTERNAL_ERROR"

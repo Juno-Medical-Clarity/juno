@@ -16,9 +16,10 @@ export interface AthenaJobInput {
   athena_api_path: string;
 }
 
+export type SelectionInput = BatchDatasetSelection | AthenaJobInput;
+
 export interface CreateBatchJobsRequest {
-  selections: BatchDatasetSelection[];
-  athena_selections?: AthenaJobInput[];
+  selections: SelectionInput[];
   version?: string;
   grading_enabled?: boolean;
 }

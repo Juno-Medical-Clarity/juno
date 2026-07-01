@@ -1,17 +1,24 @@
 """Cloud Tasks enqueue helper for juno-worker dispatch."""
 import json
+import logging
 import os
 
 from google.cloud import tasks_v2
 from google.protobuf import duration_pb2
 
+from errors import JunoError, ErrorCode, make_error_response
 
-class MissingJobConfigError(RuntimeError):
-    """Raised when a required Cloud Tasks env var is unset/empty.
+logger = logging.getLogger(__name__)
 
-    The message names the missing variable so server-side logs are diagnosable
-    instead of surfacing an opaque KeyError.
-    """
+
+class MissingJobConfigError(JunoError):
+    """Raised when a required Cloud Tasks env var is unset/empty."""
+
+    def __init__(self, var_name: str) -> None:
+        super().__init__(
+            ErrorCode.INTERNAL_ERROR,
+            detail=f"Required environment variable '{var_name}' is not set.",
+        )
 
 
 def require_env(name: str) -> str:
@@ -23,11 +30,7 @@ def require_env(name: str) -> str:
     """
     value = os.environ.get(name)
     if not value:
-        raise MissingJobConfigError(
-            f"Required environment variable '{name}' is not set. "
-            "Async job dispatch requires CLOUD_TASKS_QUEUE, WORKER_URL, and "
-            "WORKER_SERVICE_ACCOUNT to be configured on this service."
-        )
+        raise MissingJobConfigError(name)
     return value
 
 
@@ -58,3 +61,32 @@ def enqueue_job(
         "dispatch_deadline": duration_pb2.Duration(seconds=deadline_seconds),
     }
     client.create_task(request={"parent": queue_name, "task": task})
+
+
+def enqueue_job_safe(
+    job_id: str,
+    *,
+    queue_name: str,
+    worker_url: str,
+    service_account: str,
+    deadline_seconds: int,
+    batch_run_id: str | None = None,
+    path: str | None = None,
+) -> tuple[dict, int] | None:
+    """Enqueue a job; return (error_response_dict, status) on failure, None on success."""
+    try:
+        enqueue_job(
+            job_id,
+            queue_name=queue_name,
+            worker_url=worker_url,
+            service_account=service_account,
+            deadline_seconds=deadline_seconds,
+            batch_run_id=batch_run_id,
+        )
+        return None
+    except MissingJobConfigError:
+        logger.exception("enqueue_job_safe: missing Cloud Tasks config for job_id=%s", job_id)
+        return make_error_response(ErrorCode.INTERNAL_ERROR, path).to_dict(), 500
+    except Exception:
+        logger.exception("enqueue_job_safe: failed to enqueue Cloud Task for job_id=%s", job_id)
+        return make_error_response(ErrorCode.INTERNAL_ERROR, path).to_dict(), 500

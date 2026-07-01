@@ -25,16 +25,6 @@ vi.mock('../../../hooks/useJobSnapshot', () => ({
   useJobSnapshot: (id: string) => mockUseJobSnapshot(id),
 }));
 
-// Mock normalizeOutput
-vi.mock('../../../utils/normalizeOutput', () => ({
-  normalizeCarePlanOutput: (data: unknown) => ({
-    care_plan: data,
-    grading: { entries: [], enabled: false, graded_at: null },
-    metrics: { session_id: '', pipeline_version: 'v1-2', input_type: 'text', created_at: '', total_duration_ms: null, step_durations_ms: {}, saved_id: null },
-    input: { mode: 'text', files: [], text: 'test', doc_id: null },
-  }),
-}));
-
 // Mock CarePlanView
 vi.mock('../../../components/CarePlanView', () => ({
   default: () => <div data-testid="care-plan-view">CarePlanView</div>,
@@ -90,7 +80,12 @@ describe('CarePlanJobPage', () => {
       jobDoc: {
         status: 'completed',
         stage: 5,
-        output_data: { care_plan: { summary: 'ok' } },
+        output_data: {
+          care_plan: { summary: 'ok' },
+          grading: { entries: [], enabled: false, graded_at: null },
+          metrics: { session_id: '', pipeline_version: 'v1-2', input_type: 'text', created_at: '', total_duration_ms: null, step_durations_ms: {}, saved_id: null },
+          input: { mode: 'text', files: [], text: 'test', doc_id: null },
+        },
         error_data: null,
         name: 'Test Plan',
         batch_run_id: null,

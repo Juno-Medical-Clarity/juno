@@ -113,3 +113,23 @@ gcloud run deploy simplify-backend \
 ```
 
 For GitHub Actions, store a deploy service account JSON key in the `GCP_SA_KEY` repository secret. Store the Firebase Admin SDK JSON in Secret Manager as `firebase-service-account` so Cloud Run can inject `FIREBASE_SERVICE_ACCOUNT_JSON`.
+
+## Linting
+
+The backend uses [ruff](https://docs.astral.sh/ruff/) for static analysis (pyflakes F rules).
+
+Run locally from `backend/`:
+
+```bash
+pip install -r requirements-dev.txt
+ruff check . --config pyproject.toml
+```
+
+A pre-commit hook (`.pre-commit-config.yaml` at repo root) runs `ruff check` automatically on staged `.py` files before every commit. Install it once with:
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+To add stricter rules (E, I, UP) in the future, update the `select` list in `[tool.ruff.lint]` inside `pyproject.toml`.

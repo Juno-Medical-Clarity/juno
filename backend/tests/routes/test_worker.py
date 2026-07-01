@@ -1,8 +1,9 @@
 """TDD tests for POST /internal/jobs/execute/<job_id>."""
-import json
+from datetime import datetime, timezone
 import pytest
-from unittest.mock import MagicMock, patch, call
+from unittest.mock import MagicMock, patch
 from flask import Flask
+from models.pipeline_events import AdapterStepEvent, AdapterResult, AdapterError
 
 
 QUEUE_HEADER = {"X-CloudTasks-QueueName": "my-queue"}
@@ -33,6 +34,10 @@ def client_worker(app_worker):
 def _make_job_doc(status="not_started", stage=None, batch_group_id=None, source_kind="text"):
     return {
         "uid": "user-1",
+        "name": "Jan 15, 2026 10:00",
+        "source_filename": "text_input",
+        "created_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
+        "updated_at": datetime(2026, 1, 15, 10, 0, 0, tzinfo=timezone.utc),
         "status": status,
         "stage": stage,
         "batch_group_id": batch_group_id,
@@ -60,8 +65,6 @@ def test_happy_path_completes_job(
     mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
     client_worker
 ):
-    from utils.constants import Constants
-
     mock_get_doc.return_value = _make_job_doc()
 
     # Mock Firestore client for status update
@@ -73,10 +76,15 @@ def test_happy_path_completes_job(
     care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
     grading_mock = MagicMock()
 
-    result_tuple = (Constants.RESULT_SENTINEL, care_plan_mock, grading_mock, "text", "text")
-
     def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
-        yield result_tuple
+        yield AdapterStepEvent(step=2, status="active", label="Terms")
+        yield AdapterStepEvent(step=2, status="done", label="Terms")
+        yield AdapterResult(
+            care_plan=care_plan_mock,
+            grading=grading_mock,
+            raw_text=text,
+            clarified_text="clarified",
+        )
 
     envelope_mock = MagicMock()
     envelope_mock.to_dict.return_value = {
@@ -111,16 +119,12 @@ def test_pipeline_error_fails_job(
     mock_fs_client.return_value = mock_db
 
     def fake_pipeline_error(text, metrics, grading_enabled, source_kind="text", is_batch=False):
-        # Real SSE error shape: {"step": "error", "error_data": {<ErrorDetail>}}.
-        yield "data: " + json.dumps({
-            "step": "error",
-            "error_data": {
-                "code": "PIPELINE_ERROR",
-                "message": "Pipeline error",
-                "details": "Pipeline exploded",
-                "timestamp": "2026-06-22T00:00:00+00:00",
-                "path": "/care_plan",
-            },
+        yield AdapterError(error_data={
+            "code": "PIPELINE_ERROR",
+            "message": "Pipeline error",
+            "details": "Pipeline exploded",
+            "timestamp": "2026-06-22T00:00:00+00:00",
+            "path": "/care_plan",
         })
 
     with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline_error(*a, **kw)}):
@@ -153,12 +157,13 @@ def test_timeout_fails_job_with_job_timeout_code(
 
     def fake_pipeline_slow(text, metrics, grading_enabled, source_kind="text", is_batch=False):
         # Emit a stage transition so _check_timeout runs.
-        yield "data: " + json.dumps({"step": 2, "status": "active"})
+        yield AdapterStepEvent(step=2, status="active", label="Terms")
 
     # First monotonic() call records the start; the next (inside _check_timeout)
     # jumps far past the single-job deadline so the timeout triggers.
-    from routes.worker import SINGLE_JOB_INTERNAL_DEADLINE_S
-    monotonic_values = iter([0.0, SINGLE_JOB_INTERNAL_DEADLINE_S + 100.0])
+    from utils.constants import Constants
+    deadline = Constants.Deadlines.SINGLE_JOB_INTERNAL_DEADLINE_S
+    monotonic_values = iter([0.0, deadline + 100.0])
 
     with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline_slow(*a, **kw)}):
         with patch("routes.worker.time.monotonic", side_effect=lambda: next(monotonic_values)):
@@ -176,7 +181,7 @@ def test_timeout_fails_job_with_job_timeout_code(
 
 @patch("routes.worker.get_job_doc")
 def test_idempotent_completed_job_returns_200(mock_get_doc, client_worker):
-    mock_get_doc.return_value = {"status": "completed", "uid": "user-1"}
+    mock_get_doc.return_value = _make_job_doc(status="completed")
     resp = client_worker.post(
         "/internal/jobs/execute/job-1",
         headers=QUEUE_HEADER,
@@ -186,7 +191,7 @@ def test_idempotent_completed_job_returns_200(mock_get_doc, client_worker):
 
 @patch("routes.worker.get_job_doc")
 def test_idempotent_error_job_returns_200(mock_get_doc, client_worker):
-    mock_get_doc.return_value = {"status": "error", "uid": "user-1"}
+    mock_get_doc.return_value = _make_job_doc(status="error")
     resp = client_worker.post(
         "/internal/jobs/execute/job-1",
         headers=QUEUE_HEADER,
@@ -265,3 +270,35 @@ def test_oidc_enabled_valid_claims_passes_auth_gate(mock_get_doc, client_worker,
 
     assert resp.status_code == 200
     mock_get_doc.assert_called_once()
+
+
+@patch("routes.worker.get_job_doc")
+def test_oidc_enabled_strips_extra_whitespace_in_bearer_header(mock_get_doc, client_worker, monkeypatch):
+    """A Bearer header with extra internal whitespace (e.g. 'Bearer  <token>')
+    must have the token stripped before verification, not passed through with
+    a leading space (regression: _extract_bearer_token's split(" ", 1) used to
+    leave the leading space in place, silently corrupting the token)."""
+    monkeypatch.setenv("WORKER_VERIFY_OIDC", "true")
+    monkeypatch.setenv("WORKER_SERVICE_ACCOUNT", "worker@proj.iam.gserviceaccount.com")
+    mock_get_doc.return_value = None  # missing doc → idempotent 200
+
+    headers = {
+        **QUEUE_HEADER,
+        "Authorization": "Bearer  valid-token",  # two spaces after "Bearer"
+        "X-Forwarded-Proto": "https",
+    }
+    valid_claims = {
+        "email_verified": True,
+        "email": "worker@proj.iam.gserviceaccount.com",
+        "aud": "https://localhost/internal/jobs/execute/job-1",
+    }
+    with patch(
+        "google.oauth2.id_token.verify_oauth2_token", return_value=valid_claims
+    ) as mock_verify:
+        resp = client_worker.post("/internal/jobs/execute/job-1", headers=headers)
+
+    assert resp.status_code == 200
+    mock_get_doc.assert_called_once()
+    # The token passed to google-auth must be stripped, not " valid-token".
+    called_token = mock_verify.call_args[0][0]
+    assert called_token == "valid-token"

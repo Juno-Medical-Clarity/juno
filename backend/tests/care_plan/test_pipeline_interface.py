@@ -12,7 +12,7 @@ def test_task5_removes_legacy_pipelines_and_renames_interface():
     interface_source = (BACKEND_DIR / "care_plan" / "interface.py").read_text()
     assert "class CarePlanPipeline(ABC):" in interface_source
     assert "class SimplifyPipeline" not in interface_source
-    assert "routes/care_plan.py" in interface_source
+    assert "routes/worker.py" in interface_source
     assert "routes/simplify_v<X>.py" not in interface_source
 
     v1_2_source = (BACKEND_DIR / "care_plan" / "v1_2" / "pipeline.py").read_text()

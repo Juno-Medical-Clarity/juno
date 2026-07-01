@@ -2,8 +2,7 @@
 jargon_db.py - JSON-backed helpers for deterministic jargon term detection.
 
 The source data is small enough to load directly from data/jargon/*.json at
-runtime. This module keeps the public lookup helpers used by term_detection,
-but no longer opens or queries a generated database.
+runtime. This module provides the public lookup helpers used by term_detection.
 """
 
 from functools import lru_cache
@@ -21,6 +20,10 @@ from utils.text_normalization import (
 
 logger = logging.getLogger(__name__)
 
+# ---------------------------------------------------------------------------
+# Data paths and loader
+# ---------------------------------------------------------------------------
+
 _DATA_DIR = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "data", "jargon")
 )
@@ -35,6 +38,10 @@ def _load_json(path: str):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
+# ---------------------------------------------------------------------------
+# Source metadata
+# ---------------------------------------------------------------------------
+
 @lru_cache(maxsize=1)
 def _sources() -> list:
     # Read once per process; source metadata is static.
@@ -47,6 +54,10 @@ def _get_source_name(source_key: str) -> str:
         return next(source["name"] for source in _sources() if source["id"] == source_key)
     except StopIteration:
         raise ValueError(f"Source with key '{source_key}' not found")
+
+# ---------------------------------------------------------------------------
+# Abbreviation lookups
+# ---------------------------------------------------------------------------
 
 def _abbreviation_pattern(normalized_abbreviation: str) -> str:
     if normalized_abbreviation.isalpha():
@@ -171,6 +182,10 @@ def _abbreviation_rows() -> tuple[dict, ...]:
     logger.info("jargon_db: loaded %d abbreviation aliases from JSON", len(rows))
     return tuple(rows)
 
+
+# ---------------------------------------------------------------------------
+# Term detection helpers
+# ---------------------------------------------------------------------------
 
 def lookup_plain_language_terms(normalized_text: str) -> list[dict]:
     """

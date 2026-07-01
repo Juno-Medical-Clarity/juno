@@ -94,10 +94,10 @@ def compute_method_scores(text: str, dimensions: dict) -> dict:
     """Compute all six method-level scores for a given text + precomputed dimension dict."""
     
     return {
-        Constants.GRADING_METHODS.SMOG:           score_smog(text),
-        Constants.GRADING_METHODS.FLESCH_KINCAID: score_flesch_kincaid(text),
-        Constants.GRADING_METHODS.DALE_CHALL:     score_dale_chall(text),
-        Constants.GRADING_METHODS.PEMAT:          score_pemat(dimensions),
-        Constants.GRADING_METHODS.SAM:            score_sam(dimensions),
-        Constants.GRADING_METHODS.CDC_CCI:        score_cdc_cci(dimensions),
+        Constants.Grading.GRADING_METHODS.SMOG:           score_smog(text),
+        Constants.Grading.GRADING_METHODS.FLESCH_KINCAID: score_flesch_kincaid(text),
+        Constants.Grading.GRADING_METHODS.DALE_CHALL:     score_dale_chall(text),
+        Constants.Grading.GRADING_METHODS.PEMAT:          score_pemat(dimensions),
+        Constants.Grading.GRADING_METHODS.SAM:            score_sam(dimensions),
+        Constants.Grading.GRADING_METHODS.CDC_CCI:        score_cdc_cci(dimensions),
     }

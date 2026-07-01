@@ -8,10 +8,8 @@ import logging
 import pytest
 
 from utils.markers import (
-    CodeMarker, Scope, code_marker,
-    register_sink, resolve_sink,
-    Sink, ConsoleSink, InMemorySink, JunoSink,
-    Context, JunoContext,
+    Scope, register_sink, InMemorySink, JunoSink,
+    JunoContext,
     Markers,
 )
 

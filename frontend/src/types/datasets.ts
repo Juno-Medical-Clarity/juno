@@ -5,6 +5,7 @@ export interface Dataset {
 }
 
 export interface BatchDatasetSelection {
+  input_source_kind: "gcs_dataset";
   group: string;
   inputs: 'all' | string[];
   files: string[];

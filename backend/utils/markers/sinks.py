@@ -48,7 +48,7 @@ class InMemorySink:
 
 
 import logging
-from typing import Any, Dict
+from typing import Any, Dict  # noqa: F811
 
 
 _metric_logger = logging.getLogger("juno.metrics")

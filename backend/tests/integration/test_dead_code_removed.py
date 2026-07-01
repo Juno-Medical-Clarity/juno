@@ -5,6 +5,8 @@ Each test asserts that the corresponding module raises ModuleNotFoundError on
 import, confirming it has been permanently removed from the codebase.
 """
 
+import importlib.util
+import pathlib
 import sys
 import pytest
 
@@ -48,5 +50,21 @@ def test_utils_save_output_not_importable():
     _assert_module_not_found("utils.save_output")
 
 
-def test_utils_gcs_not_importable():
-    _assert_module_not_found("utils.gcs")
+def test_config_py_deleted():
+    import sys
+    sys.modules.pop("config", None)
+    assert importlib.util.find_spec("config") is None, \
+        "backend/config.py must not exist after SP02"
+
+
+def test_utils_athena_client_module_is_gone():
+    _assert_module_not_found("utils.athena_client")
+
+
+def test_backend_root_only_app():
+    """After SP02: only app.py lives at backend/ root."""
+    root = pathlib.Path(__file__).parent.parent.parent  # backend/
+    py_files = {f.name for f in root.glob("*.py") if f.is_file()}
+    allowed = {"app.py"}
+    unexpected = py_files - allowed
+    assert not unexpected, f"Unexpected .py files at backend root: {unexpected}"

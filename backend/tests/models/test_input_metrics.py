@@ -1,18 +1,12 @@
 """Tests for the discriminated Input union and metrics model."""
 
-from io import BytesIO
-
 import pytest
 from pydantic import TypeAdapter, ValidationError
-from werkzeug.datastructures import FileStorage
 
 import models.input as input_models
 from models.input import (
-    BatchDatasetInput,
     DocIdInput,
-    FileInput,
     Input,
-    InputFile,
     TextInput,
 )
 from models.metrics import Metrics
@@ -22,34 +16,6 @@ _input_adapter = TypeAdapter(Input)
 
 def test_input_version_constant():
     assert input_models.INPUT_VERSION == "1.0"
-
-
-# ---------------------------------------------------------------------------
-# FileInput
-# ---------------------------------------------------------------------------
-
-def test_file_input_from_file_uploads_exact_shape_and_resets_stream():
-    upload = FileStorage(
-        stream=BytesIO(b"pdf bytes"),
-        filename="visit.pdf",
-        content_type="application/pdf",
-    )
-    model = FileInput.from_file_uploads([upload])
-    assert model.to_dict() == {
-        "mode": "file",
-        "files": [{"filename": "visit.pdf", "content_type": "application/pdf", "size_bytes": 9}],
-        "pdf_gcs_url": None,
-    }
-    assert upload.read() == b"pdf bytes"
-
-
-def test_file_input_default_pdf_gcs_url_is_none():
-    assert FileInput(files=[]).to_dict()["pdf_gcs_url"] is None
-
-
-def test_file_input_rejects_stray_text_field():
-    with pytest.raises(ValidationError):
-        FileInput(mode="file", text="oops")
 
 
 # ---------------------------------------------------------------------------
@@ -89,40 +55,8 @@ def test_doc_id_input_rejects_stray_files():
 
 
 # ---------------------------------------------------------------------------
-# BatchDatasetInput
-# ---------------------------------------------------------------------------
-
-def test_batch_dataset_input_exact_shape_and_mode_is_batch_dataset():
-    result = BatchDatasetInput(
-        text="Combined text",
-        dataset_group="cardiology",
-        dataset_input="sample-1",
-        selected_files=["a.pdf", "b.txt"],
-        batch_group_id="batch-123",
-    ).to_dict()
-    assert result == {
-        "mode": "batch_dataset",
-        "text": "Combined text",
-        "dataset_group": "cardiology",
-        "dataset_input": "sample-1",
-        "selected_files": ["a.pdf", "b.txt"],
-        "batch_group_id": "batch-123",
-    }
-
-
-def test_batch_dataset_input_requires_all_fields():
-    with pytest.raises(ValidationError):
-        BatchDatasetInput(text="x", dataset_group="g")
-
-
-# ---------------------------------------------------------------------------
 # Union dispatch via TypeAdapter
 # ---------------------------------------------------------------------------
-
-def test_type_adapter_dispatches_file():
-    result = _input_adapter.validate_python({"mode": "file", "files": []})
-    assert isinstance(result, FileInput)
-
 
 def test_type_adapter_dispatches_text():
     result = _input_adapter.validate_python({"mode": "text", "text": "x"})
@@ -132,18 +66,6 @@ def test_type_adapter_dispatches_text():
 def test_type_adapter_dispatches_doc_id():
     result = _input_adapter.validate_python({"mode": "doc_id", "doc_id": "gs://x"})
     assert isinstance(result, DocIdInput)
-
-
-def test_type_adapter_dispatches_batch_dataset():
-    result = _input_adapter.validate_python({
-        "mode": "batch_dataset",
-        "text": "t",
-        "dataset_group": "g",
-        "dataset_input": "i",
-        "selected_files": ["a.pdf"],
-        "batch_group_id": "g-ts",
-    })
-    assert isinstance(result, BatchDatasetInput)
 
 
 def test_type_adapter_rejects_unknown_mode():
@@ -156,8 +78,8 @@ def test_type_adapter_rejects_unknown_mode():
 # ---------------------------------------------------------------------------
 
 def _make_internal(input_obj):
-    from models.care_plan_versions.v1_2 import CarePlanV1_2
-    from models.envelope import CarePlanInternal
+    from models.care_plan.versions.v1_2 import CarePlanV1_2
+    from models.care_plan.envelope import CarePlanInternal
     from models.grading import Grading
     from models.metrics import Metrics
 
@@ -173,7 +95,7 @@ def _make_internal(input_obj):
 
 
 def test_care_plan_internal_round_trips_text_input():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     c = _make_internal(TextInput(text="hi"))
     restored = CarePlanInternal.model_validate(c.to_dict())
@@ -181,34 +103,13 @@ def test_care_plan_internal_round_trips_text_input():
     assert restored.input.text == "hi"
 
 
-def test_care_plan_internal_round_trips_file_input():
-    from models.envelope import CarePlanInternal
-
-    c = _make_internal(FileInput(files=[InputFile(filename="f.pdf", content_type="application/pdf", size_bytes=10)]))
-    restored = CarePlanInternal.model_validate(c.to_dict())
-    assert isinstance(restored.input, FileInput)
-    assert restored.input.files[0].filename == "f.pdf"
-
-
 def test_care_plan_internal_round_trips_doc_id_input():
-    from models.envelope import CarePlanInternal
+    from models.care_plan.envelope import CarePlanInternal
 
     c = _make_internal(DocIdInput(doc_id="gs://bucket/doc.pdf"))
     restored = CarePlanInternal.model_validate(c.to_dict())
     assert isinstance(restored.input, DocIdInput)
     assert restored.input.doc_id == "gs://bucket/doc.pdf"
-
-
-def test_care_plan_internal_round_trips_batch_dataset_input():
-    from models.envelope import CarePlanInternal
-
-    c = _make_internal(BatchDatasetInput(
-        text="t", dataset_group="g", dataset_input="i",
-        selected_files=["a.pdf"], batch_group_id="g-ts",
-    ))
-    restored = CarePlanInternal.model_validate(c.to_dict())
-    assert isinstance(restored.input, BatchDatasetInput)
-    assert restored.input.dataset_group == "g"
 
 
 # ---------------------------------------------------------------------------

@@ -1,14 +1,13 @@
-import enum
 from datetime import datetime, timezone
-from typing import Literal
+from typing import Literal, Optional
 
-from pydantic import Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from .base import JsonModel
 from utils.constants import Constants
 
 
-GRADING_VERSION = "1.0"
+GRADING_VERSION = Constants.Schema.GRADING_VERSION
 
 
 class GradingEntry(JsonModel):
@@ -26,7 +25,7 @@ class Grading(JsonModel):
     graded_at: str | None = None
 
 
-def build_grading(
+def build_grading_with_before_after_score(
     before_score: dict | None, before_text: str | None,
     after_score: dict | None, after_text: str | None,
 ) -> Grading:
@@ -40,7 +39,7 @@ def build_grading(
         if score is None or text is None:
             continue
         methods = compute_method_scores(text, score["dimensions"])
-        for method in Constants.GRADING_METHODS:
+        for method in Constants.Grading.GRADING_METHODS:
             m = methods[method]
             breakdown = {k: v for k, v in m.items() if k != "score"}
             entries.append(GradingEntry(
@@ -67,3 +66,10 @@ def build_grading(
         enabled=True,
         graded_at=datetime.now(timezone.utc).isoformat(),
     )
+
+
+class GradingRequest(BaseModel):
+    saved_id: Optional[str] = None
+    text: Optional[str] = None
+    clarified_text: Optional[str] = None
+    model_config = ConfigDict(strict=True)

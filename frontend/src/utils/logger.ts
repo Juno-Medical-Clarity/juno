@@ -3,11 +3,6 @@
  *
  * In development: pretty-prints structured log entries to the browser console.
  * In production: console output only (browser logs stay local).
- *
- * TODO: In a future iteration, add a `flush()` method that POSTs batched log
- * entries to a `/log` endpoint on the backend, or integrates with Firebase
- * Analytics for UX event tracking. The LogEntry interface is already structured
- * to support either approach without changes to call sites.
  */
 
 type LogLevel = 'debug' | 'info' | 'warn' | 'error';

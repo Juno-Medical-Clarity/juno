@@ -1,7 +1,8 @@
 """Tests for utils/firebase.py — TDD: write tests first, then create the module."""
 
+import pytest
 from datetime import datetime, timezone
-from unittest.mock import MagicMock, patch, call
+from unittest.mock import MagicMock, patch
 
 from flask import Flask
 
@@ -340,3 +341,71 @@ def test_save_care_plan_output_persists_output_data_verbatim(mock_client, mock_u
     payload = doc_ref.set.call_args.args[0]
     assert payload["output_data"] is nested_output
     assert payload["output_data"]["input"]["pdf_gcs_url"] == "gs://my-bucket/care_plan/user-1/inputs/abc.pdf"
+
+
+# ── _extract_bearer_token ──────────────────────────────────────────────────────
+
+def test_extract_bearer_token_missing_header():
+    from utils.firebase import _extract_bearer_token
+    token, err = _extract_bearer_token(None)
+    assert token is None
+    assert err is not None
+    assert err[1] == 401
+
+
+def test_extract_bearer_token_malformed():
+    from utils.firebase import _extract_bearer_token
+    token, err = _extract_bearer_token("Token abc")
+    assert token is None
+    assert err is not None
+    assert err[1] == 401
+
+
+def test_extract_bearer_token_valid():
+    from utils.firebase import _extract_bearer_token
+    token, err = _extract_bearer_token("Bearer mytoken")
+    assert token == "mytoken"
+    assert err is None
+
+
+# ── FirestoreError job-lifecycle wrappers ──────────────────────────────────────
+
+@patch("utils.firebase.firestore_client")
+def test_create_job_doc_raises_firestore_error_on_exception(mock_client):
+    from utils.firebase import create_job_doc, FirestoreError
+    mock_client.return_value.collection.return_value.document.return_value.set.side_effect = Exception("network")
+    with pytest.raises(FirestoreError) as exc_info:
+        create_job_doc(user_id="u1", job_id="j1", payload={})
+    assert "create_job_doc failed" in str(exc_info.value)
+
+
+@patch("utils.firebase.firestore_client")
+def test_update_job_stage_raises_firestore_error(mock_client):
+    from utils.firebase import update_job_stage, FirestoreError
+    mock_client.return_value.collection.return_value.document.return_value.update.side_effect = Exception("network")
+    with pytest.raises(FirestoreError):
+        update_job_stage("j1", 2)
+
+
+@patch("utils.firebase.firestore_client")
+def test_complete_job_raises_firestore_error(mock_client):
+    from utils.firebase import complete_job, FirestoreError
+    mock_client.return_value.collection.return_value.document.return_value.update.side_effect = Exception("network")
+    with pytest.raises(FirestoreError):
+        complete_job("j1", {}, "name")
+
+
+@patch("utils.firebase.firestore_client")
+def test_fail_job_raises_firestore_error(mock_client):
+    from utils.firebase import fail_job, FirestoreError
+    mock_client.return_value.collection.return_value.document.return_value.update.side_effect = Exception("network")
+    with pytest.raises(FirestoreError):
+        fail_job("j1", {})
+
+
+@patch("utils.firebase.firestore_client")
+def test_get_job_doc_raises_firestore_error(mock_client):
+    from utils.firebase import get_job_doc, FirestoreError
+    mock_client.return_value.collection.return_value.document.return_value.get.side_effect = Exception("network")
+    with pytest.raises(FirestoreError):
+        get_job_doc("j1")

@@ -2,7 +2,6 @@
 
 import pytest
 
-import care_plan.v1_2.pipeline as pipeline_module
 from care_plan.v1_2.pipeline import (
     _CLARIFY_PROMPT,
     _SIMPLIFY_PROMPT,
