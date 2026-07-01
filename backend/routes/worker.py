@@ -11,13 +11,11 @@ from flask import Blueprint, request
 
 from utils.firebase import get_job_doc, update_job_stage, complete_job, fail_job
 from routes.care_plan import (
-    run_care_plan_pipeline,
     _fetch_from_gcs,
     _extract_text_from_bytes,
-    AdapterStepEvent,
-    AdapterResult,
-    AdapterError,
 )
+from services.care_plan_pipeline import run_care_plan_pipeline
+from models.pipeline_events import AdapterStepEvent, AdapterResult, AdapterError
 from models.care_plan.envelope import CarePlanInternal
 from models.job import JobDoc
 from models.input import TextInput, DocIdInput

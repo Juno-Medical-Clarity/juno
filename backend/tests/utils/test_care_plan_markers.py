@@ -2,6 +2,14 @@
 SP4 Task 8 — Source-level assertions that care_plan.py uses Markers
 instead of the old JunoMetrics / structured-logger boilerplate.
 
+SP13 Task 13.5 moved the pipeline-execution adapter (run_care_plan_pipeline)
+out of routes/care_plan.py into services/care_plan_pipeline.py. Source-level
+assertions about that adapter (Markers usage, is_batch/source_kind params,
+term_count/substitution_count dimensions) now grep the new module; assertions
+about the remaining upload/input-resolution helpers in routes/care_plan.py
+(version-constant imports, file_count/file_types dimensions, and the absence
+of old JunoMetrics/log_step/monotonic_ms boilerplate) still grep that file.
+
 These tests are "grep the source" tests and run without Flask.
 """
 
@@ -10,8 +18,11 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-_SRC = pathlib.Path(__file__).parent.parent.parent / "routes" / "care_plan.py"
-_SOURCE = _SRC.read_text()
+_ROUTES_SRC = pathlib.Path(__file__).parent.parent.parent / "routes" / "care_plan.py"
+_SOURCE = _ROUTES_SRC.read_text()
+
+_PIPELINE_SRC = pathlib.Path(__file__).parent.parent.parent / "services" / "care_plan_pipeline.py"
+_PIPELINE_SOURCE = _PIPELINE_SRC.read_text()
 
 
 def test_no_juno_metrics_in_care_plan():
@@ -37,7 +48,7 @@ def test_version_constants_imported():
 
 
 def test_markers_used():
-    assert "Markers.CarePlan" in _SOURCE, "Markers.CarePlan must be used in care_plan.py"
+    assert "Markers.CarePlan" in _PIPELINE_SOURCE, "Markers.CarePlan must be used in services/care_plan_pipeline.py"
 
 
 # ---------------------------------------------------------------------------
@@ -45,17 +56,17 @@ def test_markers_used():
 # ---------------------------------------------------------------------------
 
 def test_grading_run_marker_called():
-    assert "Markers.Grading.Run" in _SOURCE, \
-        "Markers.Grading.Run must be called in care_plan.py"
+    assert "Markers.Grading.Run" in _PIPELINE_SOURCE, \
+        "Markers.Grading.Run must be called in services/care_plan_pipeline.py"
 
 
 def test_is_batch_param_present():
-    assert "is_batch" in _SOURCE, \
-        "is_batch parameter must appear in care_plan.py"
+    assert "is_batch" in _PIPELINE_SOURCE, \
+        "is_batch parameter must appear in services/care_plan_pipeline.py"
 
 
 def test_source_kind_param_in_pipeline():
-    assert "source_kind" in _SOURCE, \
+    assert "source_kind" in _PIPELINE_SOURCE, \
         "source_kind must be added to run_care_plan_pipeline"
 
 
@@ -126,7 +137,7 @@ def test_pipeline_marker_has_source_kind_grading_enabled_is_batch(_clean_sink):
     """run_care_plan_pipeline fires care_plan.pipeline with source_kind, grading_enabled, is_batch."""
     from utils.markers import InMemorySink, register_sink
     from models.metrics import Metrics
-    from routes.care_plan import run_care_plan_pipeline
+    from services.care_plan_pipeline import run_care_plan_pipeline
 
     sink = InMemorySink()
     register_sink(sink)
@@ -136,9 +147,9 @@ def test_pipeline_marker_has_source_kind_grading_enabled_is_batch(_clean_sink):
     grading_stub = _make_grading_stub()
 
     with (
-        patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan.score_text_safe", return_value={"composite": 72.5, "dimensions": {}}),
-        patch("routes.care_plan.build_grading_with_before_after_score", return_value=grading_stub),
+        patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=pipeline_stub),
+        patch("services.care_plan_pipeline.score_text_safe", return_value={"composite": 72.5, "dimensions": {}}),
+        patch("services.care_plan_pipeline.build_grading_with_before_after_score", return_value=grading_stub),
     ):
         _exhaust(run_care_plan_pipeline(
             "some medical text",
@@ -160,7 +171,7 @@ def test_pipeline_marker_batch_dimensions(_clean_sink):
     """Dimensions track passed values — source_kind=batch_dataset, is_batch=True."""
     from utils.markers import InMemorySink, register_sink
     from models.metrics import Metrics
-    from routes.care_plan import run_care_plan_pipeline
+    from services.care_plan_pipeline import run_care_plan_pipeline
 
     sink = InMemorySink()
     register_sink(sink)
@@ -169,9 +180,9 @@ def test_pipeline_marker_batch_dimensions(_clean_sink):
     pipeline_stub, _ = _make_pipeline_stub()
 
     with (
-        patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan.score_text_safe", return_value=None),
-        patch("routes.care_plan.build_grading_with_before_after_score", return_value=MagicMock()),
+        patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=pipeline_stub),
+        patch("services.care_plan_pipeline.score_text_safe", return_value=None),
+        patch("services.care_plan_pipeline.build_grading_with_before_after_score", return_value=MagicMock()),
     ):
         _exhaust(run_care_plan_pipeline(
             "batch medical text",
@@ -206,11 +217,11 @@ def test_file_types_in_source():
 # ---------------------------------------------------------------------------
 
 def test_term_count_in_source():
-    assert "term_count" in _SOURCE, "term_count dimension must appear in care_plan.py"
+    assert "term_count" in _PIPELINE_SOURCE, "term_count dimension must appear in services/care_plan_pipeline.py"
 
 
 def test_substitution_count_in_source():
-    assert "substitution_count" in _SOURCE, "substitution_count dimension must appear in care_plan.py"
+    assert "substitution_count" in _PIPELINE_SOURCE, "substitution_count dimension must appear in services/care_plan_pipeline.py"
 
 
 # ---------------------------------------------------------------------------
@@ -221,7 +232,7 @@ def test_grading_run_marker_fired_when_grading_enabled(_clean_sink):
     """Markers.Grading.Run fires with before/after composite and method count."""
     from utils.markers import InMemorySink, register_sink
     from models.metrics import Metrics
-    from routes.care_plan import run_care_plan_pipeline
+    from services.care_plan_pipeline import run_care_plan_pipeline
 
     sink = InMemorySink()
     register_sink(sink)
@@ -231,9 +242,9 @@ def test_grading_run_marker_fired_when_grading_enabled(_clean_sink):
     grading_stub = _make_grading_stub(n_methods=6)
 
     with (
-        patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan.score_text_safe", return_value={"composite": 85.0, "dimensions": {}}),
-        patch("routes.care_plan.build_grading_with_before_after_score", return_value=grading_stub),
+        patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=pipeline_stub),
+        patch("services.care_plan_pipeline.score_text_safe", return_value={"composite": 85.0, "dimensions": {}}),
+        patch("services.care_plan_pipeline.build_grading_with_before_after_score", return_value=grading_stub),
     ):
         _exhaust(run_care_plan_pipeline(
             "text for grading",
@@ -257,7 +268,7 @@ def test_grading_run_marker_not_fired_when_grading_disabled(_clean_sink):
     """Markers.Grading.Run must not fire when grading_enabled=False."""
     from utils.markers import InMemorySink, register_sink
     from models.metrics import Metrics
-    from routes.care_plan import run_care_plan_pipeline
+    from services.care_plan_pipeline import run_care_plan_pipeline
 
     sink = InMemorySink()
     register_sink(sink)
@@ -266,9 +277,9 @@ def test_grading_run_marker_not_fired_when_grading_disabled(_clean_sink):
     pipeline_stub, _ = _make_pipeline_stub()
 
     with (
-        patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=pipeline_stub),
-        patch("routes.care_plan.score_text_safe", return_value=None),
-        patch("routes.care_plan.build_grading_with_before_after_score", return_value=MagicMock()),
+        patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=pipeline_stub),
+        patch("services.care_plan_pipeline.score_text_safe", return_value=None),
+        patch("services.care_plan_pipeline.build_grading_with_before_after_score", return_value=MagicMock()),
     ):
         _exhaust(run_care_plan_pipeline(
             "text without grading",

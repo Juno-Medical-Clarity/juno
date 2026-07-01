@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 import pytest
 from unittest.mock import MagicMock, patch, call
 from flask import Flask
-from routes.care_plan import AdapterStepEvent, AdapterResult, AdapterError
+from models.pipeline_events import AdapterStepEvent, AdapterResult, AdapterError
 
 
 QUEUE_HEADER = {"X-CloudTasks-QueueName": "my-queue"}

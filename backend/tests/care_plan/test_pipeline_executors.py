@@ -2,7 +2,7 @@
 from unittest.mock import patch, MagicMock
 
 from models.metrics import Metrics
-from routes.care_plan import run_care_plan_pipeline
+from services.care_plan_pipeline import run_care_plan_pipeline
 from models.pipeline_events import (
     StepEvent,
     PipelineRunResult,
@@ -56,8 +56,8 @@ def test_run_care_plan_pipeline_yields_typed_step_events():
     metrics = _make_metrics()
     mock_scope = _mock_markers()
 
-    with patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline()), \
-         patch("routes.care_plan.Markers") as mock_markers:
+    with patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=FakePipeline()), \
+         patch("services.care_plan_pipeline.Markers") as mock_markers:
         mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
 
         events = list(run_care_plan_pipeline("plain note", metrics, grading_enabled=False))
@@ -75,8 +75,8 @@ def test_run_care_plan_pipeline_yields_adapter_result():
     metrics = _make_metrics()
     mock_scope = _mock_markers()
 
-    with patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FakePipeline()), \
-         patch("routes.care_plan.Markers") as mock_markers:
+    with patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=FakePipeline()), \
+         patch("services.care_plan_pipeline.Markers") as mock_markers:
         mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
 
         events = list(run_care_plan_pipeline("plain note", metrics, grading_enabled=False))
@@ -94,8 +94,8 @@ def test_run_care_plan_pipeline_step_error_yields_adapter_error():
     metrics = _make_metrics()
     mock_scope = _mock_markers()
 
-    with patch("routes.care_plan.CarePlanV1_2Pipeline", return_value=FailingPipeline()), \
-         patch("routes.care_plan.Markers") as mock_markers:
+    with patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=FailingPipeline()), \
+         patch("services.care_plan_pipeline.Markers") as mock_markers:
         mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
 
         events = list(run_care_plan_pipeline("text", metrics, grading_enabled=False))
