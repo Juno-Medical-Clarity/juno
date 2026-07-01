@@ -139,6 +139,71 @@ def require_admin(f):
     return decorated_function
 
 
+def verify_oidc_token() -> bool:
+    """Verify the Google-signed OIDC token Cloud Tasks attaches to worker requests.
+
+    Cloud Tasks signs each dispatch with an OIDC JWT issued for the worker service
+    account, using the full execute URL as the token audience (see
+    ``utils/cloud_tasks.enqueue_job``). This validates that signed token so the
+    publicly-reachable worker route cannot be invoked by arbitrary callers.
+
+    Returns True if the request is authorized, False otherwise. Callers should
+    translate a False result into an HTTP 403. Never logs token contents.
+
+    Behavior:
+      - Kill-switch: if ``WORKER_VERIFY_OIDC`` is false/0/no, verification is
+        skipped (for local/dev/tests). Verification is ENABLED by default.
+      - Requires an ``Authorization: Bearer <token>`` header.
+      - Verifies the JWT signature/issuer/expiry via google-auth.
+      - Requires ``email_verified`` to be truthy.
+      - If ``WORKER_SERVICE_ACCOUNT`` is set, requires the token ``email`` to match.
+      - Requires the token ``aud`` to equal the (proxy-aware) request URL.
+    """
+    if os.environ.get("WORKER_VERIFY_OIDC", "true").lower() in ("false", "0", "no"):
+        return True
+
+    auth_header = request.headers.get("Authorization", "")
+    if not auth_header.startswith("Bearer "):
+        logger.warning("worker: rejected request without Bearer Authorization header")
+        return False
+    token = auth_header[len("Bearer "):].strip()
+    if not token:
+        logger.warning("worker: rejected request with empty Bearer token")
+        return False
+
+    from google.oauth2 import id_token as google_id_token
+    from google.auth.transport import requests as google_requests
+
+    try:
+        claims = google_id_token.verify_oauth2_token(token, google_requests.Request())
+    except Exception as exc:
+        logger.warning("worker: OIDC token verification failed: %s", type(exc).__name__)
+        return False
+
+    if not claims.get("email_verified"):
+        logger.warning("worker: rejected OIDC token with unverified email")
+        return False
+
+    expected_email = os.environ.get("WORKER_SERVICE_ACCOUNT")
+    if expected_email and claims.get("email") != expected_email:
+        logger.warning(
+            "worker: rejected OIDC token with service-account email mismatch "
+            "(got=%s expected=%s)", claims.get("email"), expected_email
+        )
+        return False
+
+    proto = request.headers.get("X-Forwarded-Proto", request.scheme)
+    expected_aud = f"{proto}://{request.host}{request.path}"
+    if claims.get("aud") != expected_aud:
+        logger.warning(
+            "worker: rejected OIDC token with audience mismatch (got=%s expected=%s)",
+            claims.get("aud"), expected_aud
+        )
+        return False
+
+    return True
+
+
 # ---------------------------------------------------------------------------
 # Document access helpers
 # ---------------------------------------------------------------------------

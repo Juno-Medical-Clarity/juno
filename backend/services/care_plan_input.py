@@ -6,6 +6,7 @@ import io
 import logging
 import os
 import uuid
+from pathlib import Path
 
 from utils.constants import Constants
 from utils.gcs import get_gcs_bucket
@@ -140,3 +141,24 @@ def fetch_from_gcs(doc_id: str) -> tuple[bytes, str]:
     blob = blobs[0]
     filename = blob.name.split("/")[-1]
     return blob.download_as_bytes(), filename
+
+
+def resolve_input_from_job_doc(job) -> str:  # job: models.job.JobDoc
+    if job.input_source_kind == "doc_id":
+        file_bytes, filename = fetch_from_gcs(job.input_doc_id)
+        return extract_text_from_bytes(file_bytes, filename)
+    return job.input_text or ""
+
+
+def extract_text_from_downloaded(
+    base_dir: Path, group: str, input_id: str, files: list[str]
+) -> str:
+    parts: list[str] = []
+    has_text = False
+    for filename in files:
+        local_path = base_dir / group / input_id / filename
+        file_bytes = local_path.read_bytes()
+        text = extract_text_from_bytes(file_bytes, filename).strip()
+        has_text = has_text or bool(text)
+        parts.append(f"\n\n--- {filename} ---\n\n{text}")
+    return "".join(parts) if has_text else ""

@@ -2,19 +2,24 @@
 
 # ── Imports & blueprint setup ──────────────────────────────────────────────────
 import logging
-import os
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 
 from flask import Blueprint, request
 
-from utils.firebase import get_job_doc, update_job_stage, complete_job, fail_job
-from routes.care_plan import (
-    _fetch_from_gcs,
-    _extract_text_from_bytes,
+from utils.firebase import (
+    get_job_doc,
+    update_job_stage,
+    complete_job,
+    fail_job,
+    verify_oidc_token,
 )
 from services.care_plan_pipeline import run_care_plan_pipeline
+from services.care_plan_input import (
+    resolve_input_from_job_doc,
+    extract_text_from_downloaded,
+)
 from models.pipeline_events import AdapterStepEvent, AdapterResult, AdapterError
 from models.care_plan.envelope import CarePlanInternal
 from models.job import JobDoc
@@ -23,130 +28,13 @@ from models.metrics import Metrics
 from utils.constants import Constants
 from utils.misc import derive_output_name
 from utils.markers import Markers, JunoContext
+from utils.job_helpers import canonical_input_type, is_batch_item
 from errors import ErrorCode, build_error_data, build_error_data_from_exc
 
 logger = logging.getLogger(__name__)
 worker_bp = Blueprint("worker", __name__)
 
 PIPELINES = {Constants.Pipeline.PIPELINE_VERSION_V1_2: run_care_plan_pipeline}
-
-# ── Configuration constants ────────────────────────────────────────────────────
-# Map job-doc input_source_kind values onto the canonical Metrics.input_type
-# allowed values ("file" | "text" | "doc_id").
-_INPUT_TYPE_MAP = {
-    "upload": "file",
-    "batch_dataset": "text",       # legacy, pre-extracted text
-    "gcs_batch_dataset": "text",   # new, downloads from GCS at worker time
-    "doc_id": "doc_id",
-    "text": "text",
-    "athena_encounter": "text",    # new SP3 — live Athena encounter fetch
-    "athena_clinical_doc": "text", # new SP3 — live Athena clinical doc fetch
-}
-
-
-def _canonical_input_type(source_kind: str) -> str:
-    return _INPUT_TYPE_MAP.get(source_kind, "text")
-
-
-def _is_batch_item(job: JobDoc) -> bool:
-    return job.batch_group_id is not None
-
-
-# ── Input resolution ───────────────────────────────────────────────────────────
-def _resolve_input_from_job_doc(job: JobDoc) -> str:
-    if job.input_source_kind == "doc_id":
-        file_bytes, filename = _fetch_from_gcs(job.input_doc_id)
-        return _extract_text_from_bytes(file_bytes, filename)
-    return job.input_text or ""
-
-
-def _build_error_data(code: ErrorCode, detail: str = "") -> dict:
-    """Build the rich error_data dict for a worker-originated failure.
-
-    Uses the new error catalog (error_codes.py) to produce a Firestore-ready
-    dict with code, message, user_hint, retryable, and detail fields.
-    """
-    return build_error_data(code, detail)
-
-
-def _extract_text_from_downloaded(
-    base_dir: Path, group: str, input_id: str, files: list[str]
-) -> str:
-    parts: list[str] = []
-    has_text = False
-    for filename in files:
-        local_path = base_dir / group / input_id / filename
-        file_bytes = local_path.read_bytes()
-        text = _extract_text_from_bytes(file_bytes, filename).strip()
-        has_text = has_text or bool(text)
-        parts.append(f"\n\n--- {filename} ---\n\n{text}")
-    return "".join(parts) if has_text else ""
-
-
-# ── OIDC token verification ────────────────────────────────────────────────────
-def _verify_oidc_token() -> bool:
-    """Verify the Google-signed OIDC token Cloud Tasks attaches to worker requests.
-
-    Cloud Tasks signs each dispatch with an OIDC JWT issued for the worker service
-    account, using the full execute URL as the token audience (see
-    ``utils/cloud_tasks.enqueue_job``). This validates that signed token so the
-    publicly-reachable worker route cannot be invoked by arbitrary callers.
-
-    Returns True if the request is authorized, False otherwise. Callers should
-    translate a False result into an HTTP 403. Never logs token contents.
-
-    Behavior:
-      - Kill-switch: if ``WORKER_VERIFY_OIDC`` is false/0/no, verification is
-        skipped (for local/dev/tests). Verification is ENABLED by default.
-      - Requires an ``Authorization: Bearer <token>`` header.
-      - Verifies the JWT signature/issuer/expiry via google-auth.
-      - Requires ``email_verified`` to be truthy.
-      - If ``WORKER_SERVICE_ACCOUNT`` is set, requires the token ``email`` to match.
-      - Requires the token ``aud`` to equal the (proxy-aware) request URL.
-    """
-    if os.environ.get("WORKER_VERIFY_OIDC", "true").lower() in ("false", "0", "no"):
-        return True
-
-    auth_header = request.headers.get("Authorization", "")
-    if not auth_header.startswith("Bearer "):
-        logger.warning("worker: rejected request without Bearer Authorization header")
-        return False
-    token = auth_header[len("Bearer "):].strip()
-    if not token:
-        logger.warning("worker: rejected request with empty Bearer token")
-        return False
-
-    from google.oauth2 import id_token as google_id_token
-    from google.auth.transport import requests as google_requests
-
-    try:
-        claims = google_id_token.verify_oauth2_token(token, google_requests.Request())
-    except Exception as exc:
-        logger.warning("worker: OIDC token verification failed: %s", type(exc).__name__)
-        return False
-
-    if not claims.get("email_verified"):
-        logger.warning("worker: rejected OIDC token with unverified email")
-        return False
-
-    expected_email = os.environ.get("WORKER_SERVICE_ACCOUNT")
-    if expected_email and claims.get("email") != expected_email:
-        logger.warning(
-            "worker: rejected OIDC token with service-account email mismatch "
-            "(got=%s expected=%s)", claims.get("email"), expected_email
-        )
-        return False
-
-    proto = request.headers.get("X-Forwarded-Proto", request.scheme)
-    expected_aud = f"{proto}://{request.host}{request.path}"
-    if claims.get("aud") != expected_aud:
-        logger.warning(
-            "worker: rejected OIDC token with audience mismatch (got=%s expected=%s)",
-            claims.get("aud"), expected_aud
-        )
-        return False
-
-    return True
 
 
 # ── Job execution handler ──────────────────────────────────────────────────────
@@ -157,7 +45,7 @@ def execute_job(job_id: str):
         logger.warning("worker: rejected request without X-CloudTasks-QueueName")
         return "", 403
 
-    if not _verify_oidc_token():
+    if not verify_oidc_token():
         return "", 403
 
     def _run(scope):
@@ -193,7 +81,7 @@ def execute_job(job_id: str):
 
             deadline_s = (
                 Constants.Deadlines.BATCH_ITEM_INTERNAL_DEADLINE_S
-                if _is_batch_item(job)
+                if is_batch_item(job)
                 else Constants.Deadlines.SINGLE_JOB_INTERNAL_DEADLINE_S
             )
             start = time.monotonic()
@@ -201,7 +89,7 @@ def execute_job(job_id: str):
             def _check_timeout(stage: int) -> bool:
                 elapsed = time.monotonic() - start
                 if elapsed > deadline_s:
-                    fail_job(job_id, _build_error_data(ErrorCode.JOB_TIMEOUT, f"Job timed out at stage {stage}"))
+                    fail_job(job_id, build_error_data(ErrorCode.JOB_TIMEOUT, f"Job timed out at stage {stage}"))
                     logger.warning("worker: job %s timed out at stage %d after %.1fs", job_id, stage, elapsed)
                     return True
                 return False
@@ -219,7 +107,7 @@ def execute_job(job_id: str):
                     files=job.dataset_files,
                     job_id=job_id,
                 )
-                text = _extract_text_from_downloaded(
+                text = extract_text_from_downloaded(
                     gcs_temp_dir,
                     job.dataset_group,
                     job.dataset_input_id,
@@ -248,22 +136,22 @@ def execute_job(job_id: str):
                 if api_path:
                     athena_additional_info = [api_path]
             else:
-                text = _resolve_input_from_job_doc(job)
+                text = resolve_input_from_job_doc(job)
 
             if not text.strip():
-                fail_job(job_id, _build_error_data(ErrorCode.EMPTY_DOCUMENT))
+                fail_job(job_id, build_error_data(ErrorCode.EMPTY_DOCUMENT))
                 return "", 200
 
             version = job.input_version
             grading_enabled = job.grading_enabled
-            is_batch = _is_batch_item(job)
+            is_batch = is_batch_item(job)
 
             pipeline_fn = PIPELINES.get(version, PIPELINES["v1-2"])
 
             metrics = Metrics.start(
                 session_id=job_id,
                 pipeline_version=version,
-                input_type=_canonical_input_type(source_kind),
+                input_type=canonical_input_type(source_kind),
             )
 
             current_stage = 1
@@ -290,13 +178,13 @@ def execute_job(job_id: str):
                 if pipeline_error_data.get("code") or pipeline_error_data.get("message"):
                     fail_job(job_id, pipeline_error_data)
                 else:
-                    fail_job(job_id, _build_error_data(
+                    fail_job(job_id, build_error_data(
                         ErrorCode.UNKNOWN_ERROR, "Pipeline failed without an error message"
                     ))
                 return "", 200
 
             if pipeline_result is None:
-                fail_job(job_id, _build_error_data(
+                fail_job(job_id, build_error_data(
                     ErrorCode.UNKNOWN_ERROR, "Pipeline returned no result"
                 ))
                 return "", 200

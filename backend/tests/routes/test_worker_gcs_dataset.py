@@ -96,7 +96,7 @@ def _envelope_mock():
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
+@patch("routes.worker.extract_text_from_downloaded", return_value="patient text")
 @patch("utils.gcs.cleanup_dataset_inputs")
 @patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_downloads_and_extracts_text(
@@ -104,7 +104,7 @@ def test_execute_job_downloads_and_extracts_text(
     mock_fail, mock_update, mock_complete, mock_fs_client,
     client_worker,
 ):
-    """download_dataset_inputs and _extract_text_from_downloaded are called with correct args."""
+    """download_dataset_inputs and extract_text_from_downloaded are called with correct args."""
     mock_get_doc.return_value = _make_gcs_job_doc()
     mock_fs_client.return_value = MagicMock()
 
@@ -130,7 +130,7 @@ def test_execute_job_downloads_and_extracts_text(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
+@patch("routes.worker.extract_text_from_downloaded", return_value="patient text")
 @patch("utils.gcs.cleanup_dataset_inputs")
 @patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_success(
@@ -157,7 +157,7 @@ def test_execute_job_cleanup_called_on_success(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
+@patch("routes.worker.extract_text_from_downloaded", return_value="patient text")
 @patch("utils.gcs.cleanup_dataset_inputs")
 @patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_pipeline_error(
@@ -195,7 +195,7 @@ def test_execute_job_cleanup_called_on_pipeline_error(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
+@patch("routes.worker.extract_text_from_downloaded", return_value="patient text")
 @patch("utils.gcs.cleanup_dataset_inputs")
 @patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_unhandled_exception(
