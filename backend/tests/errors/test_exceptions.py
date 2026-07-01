@@ -74,12 +74,29 @@ def test_handle_exception_unclassified_returns_500():
 
 
 def test_athena_api_error_is_juno_error():
-    from errors import JunoError, ErrorCode
-    from models.external_api.athena_errors import AthenaAPIError
+    from errors import JunoError, ErrorCode, AthenaAPIError
     exc = AthenaAPIError(429, "rate limited")
     assert isinstance(exc, JunoError)
-    assert exc.error_code == ErrorCode.ATHENA_API_ERROR
+    assert exc.error_code == ErrorCode.ATHENA_RATE_LIMIT_ERROR
     assert exc.status_code == 429
+
+
+def test_athena_api_error_defaults_non_429_to_generic_api_error():
+    from errors import ErrorCode, AthenaAPIError
+    exc = AthenaAPIError(503, "service unavailable")
+    assert exc.error_code == ErrorCode.ATHENA_API_ERROR
+
+
+def test_athena_api_error_classify_directly():
+    from errors import ErrorCode, AthenaAPIError
+    assert AthenaAPIError.classify(429) == ErrorCode.ATHENA_RATE_LIMIT_ERROR
+    assert AthenaAPIError.classify(500) == ErrorCode.ATHENA_API_ERROR
+
+
+def test_athena_api_error_explicit_code_overrides_classification():
+    from errors import ErrorCode, AthenaAPIError
+    exc = AthenaAPIError(429, "token failure", code=ErrorCode.ATHENA_AUTH_FAILED)
+    assert exc.error_code == ErrorCode.ATHENA_AUTH_FAILED
 
 
 def test_missing_job_config_error_is_juno_error():

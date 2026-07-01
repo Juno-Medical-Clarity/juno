@@ -6,8 +6,7 @@ from unittest.mock import MagicMock, patch, call, ANY
 import pytest
 
 from services.external_api.athena_client import AthenaClient
-from models.external_api.athena_errors import AthenaAPIError
-from errors import ErrorCode
+from errors import AthenaAPIError, ErrorCode
 from utils.constants import Constants
 from utils.markers.registry import register_sink
 from utils.markers.sinks import InMemorySink
