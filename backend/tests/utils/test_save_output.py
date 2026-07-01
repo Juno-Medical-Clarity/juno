@@ -65,11 +65,11 @@ def test_save_care_plan_output_accepts_batch_metadata(
     assert payload["batch_group_id"] == "DocConv-20260616153012"
 
 
-@patch.dict("routes.care_plan.os.environ", {"GCP_BUCKET_NAME": "bucket", "GCP_PROJECT_ID": "project"})
-@patch("routes.care_plan.uuid.uuid4")
-@patch("routes.care_plan.get_gcs_bucket")
+@patch.dict("services.care_plan_input.os.environ", {"GCP_BUCKET_NAME": "bucket", "GCP_PROJECT_ID": "project"})
+@patch("services.care_plan_input.uuid.uuid4")
+@patch("services.care_plan_input.get_gcs_bucket")
 def test_upload_combined_pdf_uses_care_plan_gcs_path(get_gcs_bucket, uuid4):
-    from routes.care_plan import upload_combined_pdf
+    from services.care_plan_input import upload_combined_pdf
 
     uuid4.return_value = "input-456"
     blob = MagicMock()
