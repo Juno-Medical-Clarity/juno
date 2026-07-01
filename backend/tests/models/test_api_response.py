@@ -2,7 +2,7 @@ import pytest
 
 
 def test_api_response_error_round_trip():
-    from models.errors import ApiResponse, ErrorDetail, StatusEnum
+    from models.api_response import ApiResponse, ErrorDetail, StatusEnum
     detail = ErrorDetail(
         code="INTERNAL_ERROR", message="msg", details="det",
         timestamp="2026-01-01T00:00:00Z", path="/test"
@@ -17,7 +17,7 @@ def test_api_response_error_round_trip():
 
 
 def test_api_response_path_is_optional():
-    from models.errors import ApiResponse, ErrorDetail, StatusEnum
+    from models.api_response import ApiResponse, ErrorDetail, StatusEnum
     detail = ErrorDetail(code="TIMEOUT", message="timed out", details="",
                          timestamp="2026-01-01T00:00:00Z")
     resp = ApiResponse(status=StatusEnum.error, error=detail)
@@ -26,12 +26,12 @@ def test_api_response_path_is_optional():
 
 
 def test_api_response_extra_field_raises():
-    from models.errors import ApiResponse
+    from models.api_response import ApiResponse
     from pydantic import ValidationError
     with pytest.raises(ValidationError):
         ApiResponse(status="error", unknown_field="x")
 
 
 def test_status_enum_values():
-    from models.errors import StatusEnum
+    from models.api_response import StatusEnum
     assert set(e.value for e in StatusEnum) == {"error", "success", "not_started", "processing", "completed"}

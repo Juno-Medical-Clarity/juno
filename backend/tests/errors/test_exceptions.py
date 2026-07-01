@@ -1,6 +1,6 @@
 def test_make_error_response_returns_api_response():
     from errors import make_error_response, ErrorCode
-    from models.errors import ApiResponse, StatusEnum
+    from models.api_response import ApiResponse, StatusEnum
     resp = make_error_response(ErrorCode.RESOURCE_NOT_FOUND, path="/test")
     assert isinstance(resp, ApiResponse)
     assert resp.status == StatusEnum.error

@@ -7,7 +7,7 @@ from typing import Optional
 from pydantic import ConfigDict
 
 from .base import JsonModel
-from .errors import ErrorDetail, StatusEnum
+from .api_response import ErrorDetail, StatusEnum
 from .care_plan.envelope import CarePlanInternal
 from utils.constants import Constants
 

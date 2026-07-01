@@ -1,7 +1,7 @@
 """Backend model exports."""
 
 from .base import JsonModel, VersionedModel
-from .errors import ApiResponse, ErrorDetail, StatusEnum
+from .api_response import ApiResponse, ErrorDetail, StatusEnum
 from .care_plan.care_plan import CarePlan
 from .care_plan.envelope import CarePlanInternal
 from .grading import Grading, GradingEntry, build_grading_with_before_after_score

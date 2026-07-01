@@ -23,7 +23,7 @@ import logging
 from datetime import datetime, timezone
 
 from errors.codes import ERROR_CATALOG, ErrorCode, ErrorInfo
-from models.errors import ApiResponse, ErrorDetail, StatusEnum
+from models.api_response import ApiResponse, ErrorDetail, StatusEnum
 
 logger = logging.getLogger(__name__)
 

@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 from pydantic import ValidationError
 
 from models.job import JobDoc
-from models.errors import StatusEnum, ErrorDetail
+from models.api_response import StatusEnum, ErrorDetail
 from utils.constants import Constants
 
 AthenaSourceKind = Constants.Athena.AthenaSourceKind
