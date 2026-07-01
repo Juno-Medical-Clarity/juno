@@ -23,7 +23,7 @@ from models.job import JobDoc
 from models.input import TextInput, DocIdInput
 from models.metrics import Metrics
 from utils.constants import Constants
-from utils.output_helpers import derive_output_name
+from utils.misc import derive_output_name
 from utils.markers import Markers, JunoContext
 from errors import ErrorCode, build_error_data, build_error_data_from_exc
 

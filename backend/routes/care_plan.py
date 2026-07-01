@@ -86,7 +86,7 @@ def _extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
         return "\n".join(p.text for p in doc.paragraphs if p.text.strip())
 
     if ext in {"html", "htm"}:
-        from utils.html import extract_text_from_html
+        from utils.misc import extract_text_from_html
         return extract_text_from_html(file_bytes)
 
     raise JunoError(ErrorCode.UNSUPPORTED_FILE_TYPE, detail=f"extension: {ext}")
