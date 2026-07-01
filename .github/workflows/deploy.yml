@@ -105,13 +105,37 @@ jobs:
           VITE_DEFAULT_VERSION: v1-2
 
       - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-          projectId: juno-medical-clarity
-          channelId: live
-          entryPoint: ./frontend
+        working-directory: ./frontend
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          # Authenticate firebase-tools using the existing service-account secret.
+          creds_file="$RUNNER_TEMP/firebase-service-account.json"
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$creds_file"
+          export GOOGLE_APPLICATION_CREDENTIALS="$creds_file"
+
+          # Capture output and exit code so we can tolerate the benign no-op case
+          # where the built content is byte-for-byte identical to the current live
+          # version and Firebase refuses to re-release it (HTTP 400 FAILED_PRECONDITION).
+          set +e
+          deploy_output=$(npx firebase-tools deploy --only hosting \
+            --project juno-medical-clarity --non-interactive 2>&1)
+          deploy_exit=$?
+          set -e
+
+          rm -f "$creds_file"
+
+          # Always surface the full deploy output.
+          echo "$deploy_output"
+
+          if [ "$deploy_exit" -ne 0 ]; then
+            if echo "$deploy_output" | grep -q "is the current active version"; then
+              echo "::warning::Frontend build is identical to the current live Firebase Hosting version; nothing to release. Treating this no-op deploy as success."
+              exit 0
+            fi
+            # Any other failure (auth, quota, build, etc.) is a genuine error.
+            exit "$deploy_exit"
+          fi
 
   tag:
     needs: deploy-frontend
