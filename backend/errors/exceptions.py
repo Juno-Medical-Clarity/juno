@@ -8,7 +8,8 @@ This is the LOGIC layer for the Juno error system. It merges:
 Provides:
   - _SafeDict, _safe_format: safe template formatting helpers
   - JunoError: structured pipeline exception carrying an ErrorCode
-  - classify_vertex_exception: map google.api_core exceptions → ErrorCode
+  - (Athena/Vertex per-system error classes and their classify() classmethods live in
+    errors/athena_errors.py and errors/vertex_errors.py, not in this module.)
   - classify_finish_reason: map FinishReason strings → ErrorCode
   - _classify_exc: internal classifier (JunoError → Vertex → fallback)
   - make_error_response: canonical ApiResponse builder (the ONE response builder)
@@ -70,39 +71,6 @@ class JunoError(Exception):
 
 
 # ---------------------------------------------------------------------------
-# classify_vertex_exception — map google.api_core exceptions → ErrorCode
-# ---------------------------------------------------------------------------
-
-def classify_vertex_exception(exc: Exception) -> ErrorCode:
-    """
-    Map a ``google.api_core.exceptions.*`` instance to the matching ErrorCode.
-
-    Returns ``ErrorCode.UNKNOWN_ERROR`` if google-api-core is not installed
-    or the exception type is not in the mapping.
-    """
-    try:
-        from google.api_core import exceptions as _gexc
-    except ImportError:
-        return ErrorCode.UNKNOWN_ERROR
-
-    _TYPE_MAP = [
-        (_gexc.ResourceExhausted,   ErrorCode.VERTEX_QUOTA_EXCEEDED),
-        (_gexc.DeadlineExceeded,    ErrorCode.VERTEX_DEADLINE_EXCEEDED),
-        (_gexc.InvalidArgument,     ErrorCode.VERTEX_INVALID_ARGUMENT),
-        (_gexc.PermissionDenied,    ErrorCode.VERTEX_PERMISSION_DENIED),
-        (_gexc.NotFound,            ErrorCode.VERTEX_NOT_FOUND),
-        (_gexc.ServiceUnavailable,  ErrorCode.VERTEX_SERVICE_UNAVAILABLE),
-        (_gexc.InternalServerError, ErrorCode.VERTEX_INTERNAL_ERROR),
-        (_gexc.Unauthenticated,     ErrorCode.VERTEX_UNAUTHENTICATED),
-        (_gexc.Aborted,             ErrorCode.VERTEX_ABORTED),
-    ]
-    for exc_type, code in _TYPE_MAP:
-        if isinstance(exc, exc_type):
-            return code
-    return ErrorCode.UNKNOWN_ERROR
-
-
-# ---------------------------------------------------------------------------
 # classify_finish_reason — map FinishReason strings → ErrorCode
 # ---------------------------------------------------------------------------
 
@@ -139,18 +107,20 @@ def _classify_exc(exc: Exception) -> tuple[ErrorCode, str]:
 
     Priority:
     1. JunoError — already classified; use its error_code and detail.
-    2. google.api_core.exceptions.GoogleAPICallError → classify_vertex_exception.
+    2. google.api_core.exceptions.GoogleAPICallError → VertexAPIError.classify.
     3. Everything else → UNKNOWN_ERROR.
     """
     if isinstance(exc, JunoError):
         detail = exc.detail or str(exc.original or exc)
         return exc.error_code, detail
 
-    # Google API errors
+    # Google API errors — deferred import avoids a module-level cycle with
+    # errors.vertex_errors (which imports JunoError from this module).
     try:
         from google.api_core import exceptions as _gexc
+        from errors.vertex_errors import VertexAPIError
         if isinstance(exc, _gexc.GoogleAPICallError):
-            return classify_vertex_exception(exc), str(exc)
+            return VertexAPIError.classify(exc), str(exc)
     except ImportError:
         pass
 

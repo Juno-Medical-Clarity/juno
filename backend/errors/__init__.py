@@ -10,10 +10,10 @@ from errors.exceptions import (
     build_error_data,
     build_error_data_from_exc,
     handle_exception,
-    classify_vertex_exception,
     classify_finish_reason,
 )
 from errors.athena_errors import AthenaAPIError
+from errors.vertex_errors import VertexAPIError
 
 __all__ = [
     "ERROR_CATALOG", "ErrorCode", "ErrorInfo",
@@ -22,7 +22,7 @@ __all__ = [
     "build_error_data",
     "build_error_data_from_exc",
     "handle_exception",
-    "classify_vertex_exception",
     "classify_finish_reason",
     "AthenaAPIError",
+    "VertexAPIError",
 ]
