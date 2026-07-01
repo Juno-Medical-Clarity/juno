@@ -4,7 +4,7 @@ import pytest
 from pydantic import ValidationError
 
 import models.grading as grading_models
-from models.grading import Grading, GradingEntry, build_grading
+from models.grading import Grading, GradingEntry, build_grading_with_before_after_score
 from utils.scoring import score_text
 from utils.constants import Constants
 
@@ -101,7 +101,7 @@ def test_build_grading_returns_same_entries_and_no_descriptions():
     before_score = score_text(FIXTURE_TEXT)
     after_score = score_text(FIXTURE_CLARIFIED)
 
-    grading = build_grading(before_score, FIXTURE_TEXT, after_score, FIXTURE_CLARIFIED)
+    grading = build_grading_with_before_after_score(before_score, FIXTURE_TEXT, after_score, FIXTURE_CLARIFIED)
 
     assert [(entry.name, entry.target) for entry in grading.entries] == [
         (Constants.Grading.GRADING_METHODS.SMOG.value.value, "before"),

@@ -25,7 +25,7 @@ class Grading(JsonModel):
     graded_at: str | None = None
 
 
-def build_grading(
+def build_grading_with_before_after_score(
     before_score: dict | None, before_text: str | None,
     after_score: dict | None, after_text: str | None,
 ) -> Grading:

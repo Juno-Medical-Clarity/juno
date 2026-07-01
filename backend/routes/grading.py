@@ -8,7 +8,7 @@ from errors import make_error_response, ErrorCode
 
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
 from utils.scoring import score_text_safe
-from models.grading import build_grading
+from models.grading import build_grading_with_before_after_score
 from utils.markers import Markers, JunoContext
 
 logger = logging.getLogger(__name__)
@@ -65,7 +65,7 @@ def run_care_plan_grading(user_id: str):
 
             before_score = score_text_safe(raw_text, "before")
             after_score = score_text_safe(clarified_text, "after") if clarified_text else None
-            grading = build_grading(before_score, raw_text, after_score, clarified_text or None)
+            grading = build_grading_with_before_after_score(before_score, raw_text, after_score, clarified_text or None)
 
             try:
                 doc.reference.update({"output_data.grading": grading.to_dict()})
@@ -87,7 +87,7 @@ def run_care_plan_grading(user_id: str):
 
         before_score = score_text_safe(text, "before")
         after_score = score_text_safe(clarified_text, "after") if clarified_text else None
-        grading = build_grading(before_score, text, after_score, clarified_text or None)
+        grading = build_grading_with_before_after_score(before_score, text, after_score, clarified_text or None)
 
         return jsonify({"grading": grading.to_dict()})
 

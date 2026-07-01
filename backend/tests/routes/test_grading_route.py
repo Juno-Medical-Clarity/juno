@@ -182,7 +182,7 @@ def test_run_grading_returns_500_on_firestore_update_error(client, auth_ok):
     with patch("routes.grading.get_owned_doc_or_403", return_value=(mock_doc, None)), \
          patch("routes.grading.firestore_client"), \
          patch("routes.grading.score_text_safe", return_value={"composite": 5.0}), \
-         patch("routes.grading.build_grading", return_value=mock_grading):
+         patch("routes.grading.build_grading_with_before_after_score", return_value=mock_grading):
         response = client.post(
             "/care_plan/grade",
             json={"saved_id": "some-id"},

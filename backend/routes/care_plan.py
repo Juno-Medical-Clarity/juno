@@ -21,7 +21,7 @@ from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from utils.scoring import score_text_safe
 from models.metrics import Metrics
-from models.grading import Grading, build_grading, GRADING_VERSION  # noqa: F401
+from models.grading import Grading, build_grading_with_before_after_score, GRADING_VERSION  # noqa: F401
 from models.care_plan import CarePlan, CARE_PLAN_VERSION  # noqa: F401
 from models.care_plan.envelope import CarePlanInternal  # noqa: F401
 from models.input import INPUT_VERSION, ResolvedInput  # noqa: F401
@@ -246,7 +246,7 @@ def run_care_plan_pipeline(
 
                     def _grade(scope):
                         JunoContext.from_g(function="grading").apply(scope)
-                        result = build_grading(before_score, text, after_score, event.clarified)
+                        result = build_grading_with_before_after_score(before_score, text, after_score, event.clarified)
                         scope.add("before_composite", (before_score or {}).get("composite", 0.0))
                         scope.add("after_composite",  (after_score  or {}).get("composite", 0.0))
                         scope.add("grading_method_count", len({e.name for e in result.entries if e.name != "combined"}))
