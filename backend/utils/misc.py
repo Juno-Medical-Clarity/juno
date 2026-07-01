@@ -136,7 +136,7 @@ def extract_text_from_html(html_content: bytes) -> str:
 
 
 # ---------------------------------------------------------------------------
-# String formatting (rescued from routes/care_plan.py)
+# String formatting (used by services/care_plan_input.py)
 # ---------------------------------------------------------------------------
 
 def source_separator(filename: str) -> str:

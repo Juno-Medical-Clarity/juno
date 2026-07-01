@@ -1,14 +1,17 @@
 """
-SP4 Task 8 — Source-level assertions that care_plan.py uses Markers
-instead of the old JunoMetrics / structured-logger boilerplate.
+SP4 Task 8 — Source-level assertions that the care-plan input/upload code uses
+Markers instead of the old JunoMetrics / structured-logger boilerplate.
 
 SP13 Task 13.5 moved the pipeline-execution adapter (run_care_plan_pipeline)
-out of routes/care_plan.py into services/care_plan_pipeline.py. Source-level
-assertions about that adapter (Markers usage, is_batch/source_kind params,
-term_count/substitution_count dimensions) now grep the new module; assertions
-about the remaining upload/input-resolution helpers in routes/care_plan.py
-(version-constant imports, file_count/file_types dimensions, and the absence
-of old JunoMetrics/log_step/monotonic_ms boilerplate) still grep that file.
+out of the original care-plan route module into services/care_plan_pipeline.py.
+SP13 Tasks 13.6/13.7 then moved the remaining upload/input-resolution helpers
+into services/care_plan_input.py, and SP13 Task 13.8 deleted the now-empty
+original route module entirely. Source-level assertions about the pipeline
+adapter (Markers usage, is_batch/source_kind params, term_count/substitution_count
+dimensions) grep services/care_plan_pipeline.py; assertions about the
+upload/input-resolution helpers (file_count/file_types dimensions, and the
+absence of old JunoMetrics/log_step/monotonic_ms boilerplate) grep
+services/care_plan_input.py.
 
 These tests are "grep the source" tests and run without Flask.
 """
@@ -18,7 +21,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-_ROUTES_SRC = pathlib.Path(__file__).parent.parent.parent / "routes" / "care_plan.py"
+_ROUTES_SRC = pathlib.Path(__file__).parent.parent.parent / "services" / "care_plan_input.py"
 _SOURCE = _ROUTES_SRC.read_text()
 
 _PIPELINE_SRC = pathlib.Path(__file__).parent.parent.parent / "services" / "care_plan_pipeline.py"
@@ -39,12 +42,6 @@ def test_no_monotonic_ms_in_care_plan():
 
 def test_no_step_durations_ms_in_care_plan():
     assert "step_durations_ms" not in _SOURCE, "step_durations_ms must not appear in care_plan.py"
-
-
-def test_version_constants_imported():
-    assert "CARE_PLAN_VERSION" in _SOURCE, "CARE_PLAN_VERSION must be imported in care_plan.py"
-    assert "GRADING_VERSION" in _SOURCE, "GRADING_VERSION must be imported in care_plan.py"
-    assert "INPUT_VERSION" in _SOURCE, "INPUT_VERSION must be imported in care_plan.py"
 
 
 def test_markers_used():

@@ -39,7 +39,7 @@ class PipelineStepError:
 
 
 # ---------------------------------------------------------------------------
-# Adapter-layer events (routes/care_plan.py yields these to routes/worker.py)
+# Adapter-layer events (services/care_plan_pipeline.py yields these to routes/worker.py)
 # ---------------------------------------------------------------------------
 
 @dataclass

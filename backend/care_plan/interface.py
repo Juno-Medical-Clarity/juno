@@ -4,7 +4,7 @@ interface.py - Base class for all care_plan pipeline versions.
 To add a new version:
 1. Create care_plan/v<X>/ with __init__.py and pipeline.py
 2. Subclass CarePlanPipeline, implement run()
-3. Register the pipeline in routes/care_plan.py
+3. Register the pipeline in routes/worker.py (PIPELINES dict)
 """
 
 from abc import ABC, abstractmethod

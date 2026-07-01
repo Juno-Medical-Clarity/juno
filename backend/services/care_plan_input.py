@@ -1,6 +1,6 @@
 """services/care_plan_input.py — input resolution and storage for the care-plan
 pipeline: GCS upload, file-type validation, text extraction, multi-file
-resolution, and GCS fetch (moved from routes/care_plan.py)."""
+resolution, and GCS fetch (moved out of the now-deleted care-plan route module)."""
 
 import io
 import logging

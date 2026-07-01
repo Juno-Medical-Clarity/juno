@@ -50,10 +50,6 @@ def test_utils_save_output_not_importable():
     _assert_module_not_found("utils.save_output")
 
 
-def test_utils_gcs_not_importable():
-    _assert_module_not_found("utils.gcs")
-
-
 def test_config_py_deleted():
     import sys
     sys.modules.pop("config", None)

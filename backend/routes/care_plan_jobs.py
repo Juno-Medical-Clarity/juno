@@ -12,12 +12,12 @@ from utils.firebase import create_job_doc, verify_firebase_token
 from utils.cloud_tasks import enqueue_job_safe, require_env, MissingJobConfigError
 from utils.markers.markers import Markers
 from utils.markers.marker import Scope
-from routes.care_plan import (
-    _resolve_uploaded_files,
+from services.care_plan_input import (
+    resolve_uploaded_files,
     upload_combined_pdf,
-    _fetch_from_gcs,
-    _extract_text_from_bytes,
-    _allowed,
+    fetch_from_gcs,
+    extract_text_from_bytes,
+    is_allowed_extension,
 )
 from utils.constants import Constants
 from errors import make_error_response, ErrorCode
@@ -59,7 +59,7 @@ def _resolve_input_for_job(user_id: str) -> dict:
     if not uploads and "file" in request.files:
         uploads = [request.files["file"]]
     if uploads:
-        resolved, raw_pdf_bytes = _resolve_uploaded_files(uploads)
+        resolved, raw_pdf_bytes = resolve_uploaded_files(uploads)
         pdf_gcs_uri = None
         if raw_pdf_bytes:
             pdf_gcs_uri = upload_combined_pdf(raw_pdf_bytes, user_id)
@@ -75,12 +75,12 @@ def _resolve_input_for_job(user_id: str) -> dict:
 
     doc_id = (request.form.get("doc_id") or json_data.get("doc_id") or "").strip()
     if doc_id:
-        file_bytes, filename = _fetch_from_gcs(doc_id)
-        if not _allowed(filename):
+        file_bytes, filename = fetch_from_gcs(doc_id)
+        if not is_allowed_extension(filename):
             raise ValueError("Stored file must be PDF, TXT, or DOCX")
         if len(file_bytes) > Constants.Uploads.MAX_FILE_BYTES:
             raise ValueError(f"Stored file exceeds {Constants.Uploads.MAX_FILE_BYTES // (1024 * 1024)} MB limit")
-        text = _extract_text_from_bytes(file_bytes, filename)
+        text = extract_text_from_bytes(file_bytes, filename)
         return {
             "input_source_kind": "doc_id",
             "input_text": text,

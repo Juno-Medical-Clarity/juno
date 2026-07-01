@@ -1,4 +1,3 @@
-from routes.care_plan import care_plan_bp
 from routes.saved_outputs import saved_outputs_bp
 from routes.datasets import datasets_bp
 from routes.grading import grading_bp
@@ -8,7 +7,6 @@ from routes.worker import worker_bp
 from routes.admin import admin_bp
 
 API_BLUEPRINTS = [
-    care_plan_bp,
     care_plan_jobs_bp,
     batch_jobs_bp,
     saved_outputs_bp,
