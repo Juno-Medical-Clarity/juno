@@ -15,8 +15,7 @@ from models.external_api.athena_models import (
     AthenaEncounterSummaryResponse,
     AthenaClinicalDocumentContentResponse,
 )
-from models.external_api.athena_errors import AthenaAPIError
-from errors import ErrorCode
+from errors import AthenaAPIError, ErrorCode
 
 logger = logging.getLogger(__name__)
 
@@ -69,7 +68,11 @@ class AthenaClient:
         retries: int | None = None,
         scope: Scope | None = None,
     ) -> dict:
-        """GET with retry on 429; raises AthenaAPIError on other non-200."""
+        """GET with retry on 429; raises AthenaAPIError on other non-200.
+
+        AthenaAPIError(status_code, body) now classifies 429 -> RATE_LIMIT
+        automatically (AthenaAPIError.classify) — no explicit code= needed here.
+        """
         if retries is None:
             retries = Constants.Athena.MAX_RETRIES
         for attempt in range(retries + 1):
@@ -85,11 +88,7 @@ class AthenaClient:
                     if scope:
                         scope.add(Constants.Observability.DIM_STATUS_CODE, 429)
                         scope.add("retries", attempt)
-                    raise AthenaAPIError(
-                        429,
-                        f"Rate limit exceeded after {retries} retries",
-                        code=ErrorCode.ATHENA_RATE_LIMIT_ERROR,
-                    )
+                    raise AthenaAPIError(429, f"Rate limit exceeded after {retries} retries")
                 logger.warning(
                     "athena_client: rate limited on %s (attempt %d/%d), sleeping %ds",
                     path, attempt + 1, retries, wait,
@@ -102,11 +101,10 @@ class AthenaClient:
             if resp.status_code != 200:
                 raise AthenaAPIError(resp.status_code, resp.text)
             return resp.json()
-        raise AthenaAPIError(
-            429,
-            "Rate limit: max retries exhausted",
-            code=ErrorCode.ATHENA_RATE_LIMIT_ERROR,
-        )
+        # Unreachable under valid configs (retries >= 0): every iteration above
+        # either returns or raises. Kept only as a defensive fallback for a
+        # hypothetical retries < 0 misconfiguration.
+        raise AthenaAPIError(429, "Rate limit: max retries exhausted")
 
     def fetch_encounter_summary(self, practice_id: str, encounter_id: str) -> str:
         """Fetch encounter summary HTML and return as stripped plain text."""

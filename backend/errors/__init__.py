@@ -13,6 +13,7 @@ from errors.exceptions import (
     classify_vertex_exception,
     classify_finish_reason,
 )
+from errors.athena_errors import AthenaAPIError
 
 __all__ = [
     "ERROR_CATALOG", "ErrorCode", "ErrorInfo",
@@ -23,4 +24,5 @@ __all__ = [
     "handle_exception",
     "classify_vertex_exception",
     "classify_finish_reason",
+    "AthenaAPIError",
 ]
