@@ -3,7 +3,7 @@
 import textstat
 
 from utils.constants import Constants
-from utils.scoring import _grade_to_score, score_text
+from utils.scoring import score_text
 from utils.scoring_methods import (
     compute_method_scores,
     score_cdc_cci,

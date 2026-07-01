@@ -33,13 +33,28 @@ def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
     return f"gs://{bucket_name}/{blob_name}"
 
 
+def _get_extension(filename: str) -> str:
+    """Return the lowercased extension of filename, or "" if it has no dot.
+
+    Centralizes extension parsing so callers never call ``rsplit(".", 1)[1]``
+    directly on a filename that might be dot-less (which raises IndexError).
+    """
+    if not filename or "." not in filename:
+        return ""
+    return filename.rsplit(".", 1)[1].lower()
+
+
 def is_allowed_extension(filename: str) -> bool:
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in Constants.Uploads.ALLOWED_EXTENSIONS
+    ext = _get_extension(filename)
+    return bool(ext) and ext in Constants.Uploads.ALLOWED_EXTENSIONS
 
 
 def extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
     """Extract plain text from PDF, TXT, DOCX, or HTML bytes."""
-    ext = filename.rsplit(".", 1)[1].lower()
+    ext = _get_extension(filename)
+
+    if not ext:
+        raise JunoError(ErrorCode.UNSUPPORTED_FILE_TYPE, detail=f"filename has no extension: {filename}")
 
     if ext == "txt":
         return file_bytes.decode("utf-8", errors="replace")
@@ -93,7 +108,7 @@ def resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
         extracted_text = extract_text_from_bytes(file_bytes, filename)
         text_parts.append(f"{source_separator(filename)}{extracted_text.strip()}")
 
-        ext = filename.rsplit(".", 1)[1].lower()
+        ext = _get_extension(filename)
         if ext in {"pdf", "txt"}:
             merge_candidates.append((file_bytes, filename))
         elif ext in {"docx", "html", "htm"} and extracted_text.strip():
@@ -109,7 +124,7 @@ def resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
             logger.exception("care_plan_input: failed to merge input files - continuing without combined PDF")
 
     file_count = len(files)
-    file_types = sorted({f.filename.rsplit(".", 1)[1].lower() for f in files if "." in f.filename})
+    file_types = sorted({ext for f in files if (ext := _get_extension(f.filename))})
 
     source_filename = ", ".join(filenames)
     combined_pdf_size = float(len(combined_pdf_bytes)) if combined_pdf_bytes is not None else None

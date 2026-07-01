@@ -9,7 +9,7 @@ markers = [
 [tool.ruff]
 line-length = 120
 target-version = "py312"
-exclude = [".venv", "__pycache__", "tests"]
+exclude = [".venv", "__pycache__"]
 
 [tool.ruff.lint]
 select = ["F"]

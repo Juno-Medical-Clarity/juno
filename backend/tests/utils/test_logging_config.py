@@ -10,7 +10,6 @@ import json
 import logging
 from unittest.mock import MagicMock, patch
 
-import pytest
 
 from observability.logging_config import StructuredJsonFormatter
 

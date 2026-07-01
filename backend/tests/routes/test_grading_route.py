@@ -1,7 +1,5 @@
 """Tests for routes/grading.py — POST /care_plan/grade endpoint."""
-import json
 import time
-import pytest
 from unittest.mock import MagicMock
 
 # A text long enough that score_text returns a real score.

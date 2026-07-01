@@ -1,6 +1,5 @@
 """Tests for utils/gcs.py (SP2 — on-demand GCS download helpers)."""
 import os
-import shutil
 import time
 import concurrent.futures
 from pathlib import Path
@@ -37,6 +36,10 @@ def mock_gcs_module(monkeypatch):
     mock_bucket.blob.return_value = mock_blob
 
     monkeypatch.setattr(mod, "gcs", mock_gcs)
+    # _gcs_client() caches its result at module level; reset it so this
+    # test's mock chain is what actually gets constructed and exercised,
+    # rather than a stale client cached by a prior test.
+    monkeypatch.setattr(mod, "_client", None)
     return mock_blob
 
 

@@ -6,7 +6,6 @@ are version-stamped even without a SERVICE_VERSION Cloud Run env var.
 """
 
 import os
-import importlib
 
 
 def test_build_version_reads_file():

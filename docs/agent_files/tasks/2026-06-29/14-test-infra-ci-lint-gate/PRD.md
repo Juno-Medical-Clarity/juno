@@ -282,12 +282,9 @@ already exists from SP04 and continues to exercise the path.)
 
 None. This SP requires no environment variables, secrets, GCP console steps, or
 migrations. The `__init__.py` additions are empty files; the CI edit takes effect on the
-next push with no repo settings changes (no new required-status-check registration
-needed unless branch protection rules pin specific step names — if `ci.yml`'s `backend`
-job is currently a required status check by job name rather than step name, no action is
-needed since the job name is unchanged; if anything pins the literal step list, you would
-need to update branch protection settings in GitHub, but nothing in this repo indicates
-that's the case).
+next push with no repo settings changes — confirmed (see §9 Q5) that no branch-protection
+/ required-status-check configuration names individual CI steps, so no action is needed
+since the `backend` job name is unchanged.
 
 ---
 
@@ -299,7 +296,7 @@ that's the case).
 | Q2 | Does adding `backend/tests/__init__.py` interact with `pytest-cov`'s `--cov=.` addopt (e.g. could it now also try to measure coverage of the empty `__init__.py` files themselves, or change coverage roots)? | **[RESOLVED: no impact]** — `--cov=.` measures source under the invocation directory (`backend/`) including `tests/`; the new empty `__init__.py` files contribute 0 executable lines and do not change any existing module's coverage percentage. `[tool.ruff] exclude` already excludes `tests` so there's no ruff interaction either. |
 | Q3 | Order of the new Ruff CI step relative to `Run backend tests` — lint-then-test vs. test-then-lint? | **[RESOLVED: lint before test]** — fast-fail principle; a lint error is cheaper to detect and fix than waiting for the full pytest run (~13s locally with coverage) to complete. No other ordering constraint exists since neither step depends on the other's output. |
 | Q4 | Should the Ruff CI step also run for the `frontend` job (e.g. ESLint) as part of this SP? | **[RESOLVED: no]** — out of scope per Non-Goals; frontend linting is SP10's territory (already shipped/in-flight separately), and the task explicitly scopes this SP to the Ruff/backend gate only. |
-| Q5 | Is there any branch-protection / required-status-check configuration outside this repo that names individual CI steps (rather than the job) that would need updating when this step is added? | **[OPEN — human-only, see §8]** — could not be verified from the repo; GitHub branch protection settings are not stored in-repo. Low risk since required checks are typically pinned to job name (`backend`), not step name, and the job name is unchanged. |
+| Q5 | Is there any branch-protection / required-status-check configuration outside this repo that names individual CI steps (rather than the job) that would need updating when this step is added? | **[RESOLVED: No — confirmed by the user, no branch-protection / required-status-check configuration names individual CI steps; nothing needs updating when the Ruff step is added.]** |
 
 **Dependencies:** None — this SP is fully self-contained and can land independently of
 SP11/SP12/SP13.

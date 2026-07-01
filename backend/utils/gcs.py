@@ -18,10 +18,23 @@ _DEFAULT_BUCKET = os.environ.get("GCP_BUCKET_NAME", "")
 # Module-level constant so tests can monkeypatch it.
 TEMP_BASE: Path = Path(Constants.Storage.TEMP_BASE)
 
+# Lazily-constructed, process-wide GCS client. Populated on first use by
+# _gcs_client(); see that function for details. Tests reset this to None
+# (via monkeypatch) so each test gets a fresh mocked client.
+_client: gcs.Client | None = None
+
 
 def _gcs_client() -> gcs.Client:
-    """Single construction point for the GCS client (project from GCP_PROJECT_ID env)."""
-    return gcs.Client(project=os.environ.get("GCP_PROJECT_ID") or None)
+    """Single construction point for the GCS client (project from GCP_PROJECT_ID env).
+
+    Lazily constructs the client on first call and caches it at module level,
+    so subsequent calls reuse the same instance instead of re-paying ADC
+    credential-resolution cost on every call.
+    """
+    global _client
+    if _client is None:
+        _client = gcs.Client(project=os.environ.get("GCP_PROJECT_ID") or None)
+    return _client
 
 
 # ---------------------------------------------------------------------------

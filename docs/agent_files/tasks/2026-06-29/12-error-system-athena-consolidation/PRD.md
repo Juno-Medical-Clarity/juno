@@ -518,7 +518,7 @@ Behavior is unchanged at the `ErrorCode` level (same mapping, now sourced from `
 | `tests/models/test_errors.py` (5 occurrences: lines 3, 5, 20, 29, 36) | `from models.errors import ...` | `from models.api_response import ...` |
 | `tests/models/test_job.py:7` | `from models.errors import StatusEnum, ErrorDetail` | `from models.api_response import StatusEnum, ErrorDetail` |
 
-**Test file rename (recommended, not load-bearing):** `tests/models/test_errors.py` → `tests/models/test_api_response.py`, to match the source file rename and avoid the same `errors.py`-vs-`errors/` ambiguity in the test tree. Not required for correctness — flagged for the implementation task to pick up.
+**Test file rename:** `tests/models/test_errors.py` → `tests/models/test_api_response.py`, to match the source file rename and avoid the same `errors.py`-vs-`errors/` ambiguity in the test tree. Confirmed by content inspection: every test in this file (`test_api_response_error_round_trip`, `test_api_response_path_is_optional`, `test_api_response_extra_field_raises`, `test_status_enum_values`) already exercises `ApiResponse`/`ErrorDetail`/`StatusEnum` only — the test names themselves already say `test_api_response_*`, so the file name is simply catching up to content that already moved on. This rename is now locked (see §9 Q8) and is part of this PRD's scope, not deferred to the implementation task's discretion.
 
 ---
 
@@ -691,7 +691,7 @@ This section describes testing **strategy**, not a task list (a separate TASKS.m
 
 **6. `models/external_api/__init__.py` / `services/external_api/__init__.py` export-surface tests**, if any exist asserting `__all__` contents, need updating to drop `AthenaAPIError`.
 
-**7. File move for tests, if `tests/models/test_errors.py` is renamed** (§4h) — update accordingly; no behavior change, pure path rename.
+**7. File move for tests.** `tests/models/test_errors.py` is renamed to `tests/models/test_api_response.py` (§4h, §9 Q8) — update accordingly; no behavior change, pure path rename.
 
 ---
 
@@ -714,7 +714,7 @@ This section describes testing **strategy**, not a task list (a separate TASKS.m
 | Q5 | [RESOLVED] | `AthenaEncounterSelection`/`AthenaClinicalDocSelection` stay in `models/batch_requests.py` — not moved into `models/external_api/`. See §4l for full reasoning (avoids fragmenting the `Selection` discriminated union; `models/external_api/` ends up flat at 1 file either way). |
 | Q6 | [RESOLVED] | `services/external_api/` (1 file: `athena_client.py`) and `models/external_api/` (1 file: `athena_models.py`) both stay flat — no `athena/` subfolder in either layer, per the locked file-count rule. |
 | Q7 | [RESOLVED] | `services/external_api/__init__.py` and `models/external_api/__init__.py` both stop re-exporting `AthenaAPIError` once it moves to `errors/`; all consumers import it from `errors` directly, matching every other error type. |
-| Q8 | [OPEN] | `tests/models/test_errors.py` → `tests/models/test_api_response.py` rename is recommended (§4h) but not strictly required for correctness. Confirm before the tasks pass whether to do the rename or just update imports in-place. |
+| Q8 | [RESOLVED: rename tests/models/test_errors.py to tests/models/test_api_response.py; the file's own test names already say `test_api_response_*` and it tests only ApiResponse/ErrorDetail/StatusEnum, so the filename should match the production module rename (§4h) and stop colliding with `errors/`.] | `tests/models/test_errors.py` → `tests/models/test_api_response.py` rename, alongside the import-path update in the same file (§4h). |
 | Q9 | [DEFERRED] | `ErrorCode.ATHENA_PATIENT_NOT_FOUND` remains unused after this PRD (confirmed out of scope) — wiring it up to a real patient-lookup-failure path is a future feature, not a cleanup item. |
 | Q10 | **SP13 coordination — not a question, a heads-up.** | This PRD changes exactly one line-group in `routes/worker.py`: the local import inside the `elif source_kind in ("athena_encounter", "athena_clinical_doc"):` branch (current line 231: `from services.external_api import athena_client, AthenaAPIError` → split into two lines, §4i). Nothing else in `worker.py` changes — not the `except AthenaAPIError as exc:` block, not the top-level `from errors import ErrorCode, build_error_data, build_error_data_from_exc` import, not any surrounding logic. SP13 (routes/utils/services boundary cleanup), which also touches `routes/worker.py`, should treat this one import line as already-changed when sequencing its own edits to this file, to avoid a merge clobber. |
 

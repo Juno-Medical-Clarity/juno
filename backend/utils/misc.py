@@ -2,45 +2,9 @@
 share a cohesive domain (merged from output_helpers.py, html.py, env.py)."""
 
 import logging
-import os
 import time
-from typing import Optional
 
 logger = logging.getLogger(__name__)
-
-
-# ---------------------------------------------------------------------------
-# Environment variable access
-# ---------------------------------------------------------------------------
-
-def get_env(key: str, default: Optional[str] = None, *, required: bool = False) -> Optional[str]:
-    """Return os.environ.get(key, default).
-
-    Args:
-        key: Environment variable name (use Constants.EnvVars.* for all names).
-        default: Value to return when the variable is absent. Ignored when
-            required=True.
-        required: If True and the variable is absent or empty, raise
-            EnvironmentError with a descriptive message.
-
-    Returns:
-        The variable value as a string, or default if absent (and not required).
-
-    Raises:
-        EnvironmentError: When required=True and the variable is absent or empty.
-
-    Kept despite zero current production call sites: this is a deliberate
-    single patch point for test mocking (mock utils.misc.get_env), intended
-    for future adoption across the codebase (see PRD SP13 §9 Q5). Not
-    adopted more broadly here — out of scope for this sub-project.
-    """
-    value = os.environ.get(key)
-    if required and not value:
-        raise EnvironmentError(
-            f"Required environment variable '{key}' is not set. "
-            f"Set it before starting the server."
-        )
-    return value if value is not None else default
 
 
 # ---------------------------------------------------------------------------

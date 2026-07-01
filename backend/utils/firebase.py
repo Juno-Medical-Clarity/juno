@@ -71,7 +71,10 @@ def _extract_bearer_token(auth_header: str | None) -> tuple[str | None, tuple | 
     parts = auth_header.split(" ", 1)
     if len(parts) != 2 or parts[0] != "Bearer":
         return None, (make_error_response(ErrorCode.MALFORMED_AUTH_HEADER, None).to_dict(), 401)
-    return parts[1], None
+    token = parts[1].strip()
+    if not token:
+        return None, (make_error_response(ErrorCode.MALFORMED_AUTH_HEADER, None).to_dict(), 401)
+    return token, None
 
 
 def verify_firebase_token(f):
@@ -162,13 +165,9 @@ def verify_oidc_token() -> bool:
     if os.environ.get("WORKER_VERIFY_OIDC", "true").lower() in ("false", "0", "no"):
         return True
 
-    auth_header = request.headers.get("Authorization", "")
-    if not auth_header.startswith("Bearer "):
-        logger.warning("worker: rejected request without Bearer Authorization header")
-        return False
-    token = auth_header[len("Bearer "):].strip()
-    if not token:
-        logger.warning("worker: rejected request with empty Bearer token")
+    token, err = _extract_bearer_token(request.headers.get("Authorization"))
+    if err:
+        logger.warning("worker: rejected request without a valid Bearer Authorization header")
         return False
 
     from google.oauth2 import id_token as google_id_token

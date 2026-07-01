@@ -1,7 +1,6 @@
 """Unit tests for models.job.JobDoc."""
 import pytest
 from datetime import datetime, timezone
-from pydantic import ValidationError
 
 from models.job import JobDoc
 from models.api_response import StatusEnum, ErrorDetail

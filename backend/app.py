@@ -106,6 +106,17 @@ def extract_session_id():
         current_span.set_attribute("session.id", session_id)
         current_span.set_attribute("http.route", request.path)
 
+    # Emit a start-of-request signal immediately (not deferred to
+    # after_request's `finally`) so there's log evidence a request was
+    # received even if the process crashes/OOMs/hard-times-out before the
+    # response completes. Skip /health to avoid health-check log spam,
+    # mirroring the after_request marker's gating.
+    if request.path != "/health":
+        logger.info(
+            "app: request received",
+            extra={"http_method": request.method, "http_path": request.path},
+        )
+
 
 @app.after_request
 def attach_session_id_header(response):

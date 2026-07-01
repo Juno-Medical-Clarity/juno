@@ -1,6 +1,6 @@
 """TDD tests for POST /care_plan/jobs."""
 import pytest
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 from flask import Flask
 
 

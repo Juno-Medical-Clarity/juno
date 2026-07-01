@@ -1,6 +1,5 @@
 """Tests for CarePlanV1_2Pipeline.iter_steps() — the canonical step-by-step generator."""
-import pytest
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from models.pipeline_events import StepEvent, PipelineRunResult, PipelineStepError
 

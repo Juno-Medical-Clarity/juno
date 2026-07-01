@@ -1,7 +1,7 @@
 """TDD tests for POST /internal/jobs/execute/<job_id>."""
 from datetime import datetime, timezone
 import pytest
-from unittest.mock import MagicMock, patch, call
+from unittest.mock import MagicMock, patch
 from flask import Flask
 from models.pipeline_events import AdapterStepEvent, AdapterResult, AdapterError
 
@@ -270,3 +270,35 @@ def test_oidc_enabled_valid_claims_passes_auth_gate(mock_get_doc, client_worker,
 
     assert resp.status_code == 200
     mock_get_doc.assert_called_once()
+
+
+@patch("routes.worker.get_job_doc")
+def test_oidc_enabled_strips_extra_whitespace_in_bearer_header(mock_get_doc, client_worker, monkeypatch):
+    """A Bearer header with extra internal whitespace (e.g. 'Bearer  <token>')
+    must have the token stripped before verification, not passed through with
+    a leading space (regression: _extract_bearer_token's split(" ", 1) used to
+    leave the leading space in place, silently corrupting the token)."""
+    monkeypatch.setenv("WORKER_VERIFY_OIDC", "true")
+    monkeypatch.setenv("WORKER_SERVICE_ACCOUNT", "worker@proj.iam.gserviceaccount.com")
+    mock_get_doc.return_value = None  # missing doc → idempotent 200
+
+    headers = {
+        **QUEUE_HEADER,
+        "Authorization": "Bearer  valid-token",  # two spaces after "Bearer"
+        "X-Forwarded-Proto": "https",
+    }
+    valid_claims = {
+        "email_verified": True,
+        "email": "worker@proj.iam.gserviceaccount.com",
+        "aud": "https://localhost/internal/jobs/execute/job-1",
+    }
+    with patch(
+        "google.oauth2.id_token.verify_oauth2_token", return_value=valid_claims
+    ) as mock_verify:
+        resp = client_worker.post("/internal/jobs/execute/job-1", headers=headers)
+
+    assert resp.status_code == 200
+    mock_get_doc.assert_called_once()
+    # The token passed to google-auth must be stripped, not " valid-token".
+    called_token = mock_verify.call_args[0][0]
+    assert called_token == "valid-token"

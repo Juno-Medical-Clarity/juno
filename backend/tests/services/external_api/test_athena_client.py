@@ -1,7 +1,6 @@
 """tests/services/external_api/test_athena_client.py — Unit tests for AthenaClient."""
 import time
-import unittest
-from unittest.mock import MagicMock, patch, call, ANY
+from unittest.mock import MagicMock, patch
 
 import pytest
 

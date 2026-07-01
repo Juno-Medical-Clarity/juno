@@ -579,9 +579,37 @@ No test changes are required for this deletion — confirmed via the grep above 
 
 ---
 
-### 4e. `build_grading` rename — explicitly deferred
+### 4e. Rename `build_grading` to `build_grading_with_before_after_score`
 
-No code change in this PRD. See §9 `[OPEN]` item.
+**Decision:** `[RESOLVED]` (see §9 Q1). Pure rename for clarity — no behavior, signature, or location change.
+
+**File (unchanged):** `backend/models/grading.py:28` — `build_grading` is already correctly colocated with the `Grading`/`GradingEntry` models in this file; the rename does not move it.
+
+**Rationale for the chosen name:** the function's body (`backend/models/grading.py:28-68`) takes exactly two `(score, text)` pairs — `(before_score, before_text)` and `(after_score, after_text)` — and builds a `Grading` whose entries are tagged `target="before"` / `target="after"`. `build_grading_with_before_after_score` accurately names both the before/after pairing and the fact that the `score` dicts (not just the texts) are the primary structured input driving the output (`score["dimensions"]`, `score["composite"]`, `score["grade_estimate"]`, etc., all flow directly into the returned entries). No more accurate alternative was found, so the originally floated name is adopted as-is.
+
+**Old → new call-site table (grep-verified via `grep -rn "build_grading" backend/`):**
+
+| File:Line | Kind | Old | New |
+|---|---|---|---|
+| `backend/models/grading.py:28` | definition | `def build_grading(` | `def build_grading_with_before_after_score(` |
+| `backend/models/__init__.py:7` | import | `from .grading import Grading, GradingEntry, build_grading` | `from .grading import Grading, GradingEntry, build_grading_with_before_after_score` |
+| `backend/models/__init__.py:31` | `__all__` entry | `"build_grading",` | `"build_grading_with_before_after_score",` |
+| `backend/routes/care_plan.py:24` | import | `from models.grading import Grading, build_grading, GRADING_VERSION  # noqa: F401` | `from models.grading import Grading, build_grading_with_before_after_score, GRADING_VERSION  # noqa: F401` |
+| `backend/routes/care_plan.py:258` | call | `result = build_grading(before_score, text, after_score, event.clarified)` | `result = build_grading_with_before_after_score(before_score, text, after_score, event.clarified)` |
+| `backend/routes/grading.py:11` | import | `from models.grading import build_grading` | `from models.grading import build_grading_with_before_after_score` |
+| `backend/routes/grading.py:68` | call | `grading = build_grading(before_score, raw_text, after_score, clarified_text or None)` | `grading = build_grading_with_before_after_score(before_score, raw_text, after_score, clarified_text or None)` |
+| `backend/routes/grading.py:90` | call | `grading = build_grading(before_score, text, after_score, clarified_text or None)` | `grading = build_grading_with_before_after_score(before_score, text, after_score, clarified_text or None)` |
+| `backend/tests/models/test_grading_model.py:7` | import | `from models.grading import Grading, GradingEntry, build_grading` | `from models.grading import Grading, GradingEntry, build_grading_with_before_after_score` |
+| `backend/tests/models/test_grading_model.py:104` | call | `grading = build_grading(before_score, FIXTURE_TEXT, after_score, FIXTURE_CLARIFIED)` | `grading = build_grading_with_before_after_score(before_score, FIXTURE_TEXT, after_score, FIXTURE_CLARIFIED)` |
+| `backend/tests/routes/test_grading_route.py:185` | patch target | `patch("routes.grading.build_grading", return_value=mock_grading):` | `patch("routes.grading.build_grading_with_before_after_score", return_value=mock_grading):` |
+| `backend/tests/utils/test_care_plan_markers.py:141` | patch target | `patch("routes.care_plan.build_grading", return_value=grading_stub),` | `patch("routes.care_plan.build_grading_with_before_after_score", return_value=grading_stub),` |
+| `backend/tests/utils/test_care_plan_markers.py:174` | patch target | `patch("routes.care_plan.build_grading", return_value=MagicMock()),` | `patch("routes.care_plan.build_grading_with_before_after_score", return_value=MagicMock()),` |
+| `backend/tests/utils/test_care_plan_markers.py:236` | patch target | `patch("routes.care_plan.build_grading", return_value=grading_stub),` | `patch("routes.care_plan.build_grading_with_before_after_score", return_value=grading_stub),` |
+| `backend/tests/utils/test_care_plan_markers.py:271` | patch target | `patch("routes.care_plan.build_grading", return_value=MagicMock()),` | `patch("routes.care_plan.build_grading_with_before_after_score", return_value=MagicMock()),` |
+
+That is 14 sites total (1 definition + 4 imports + 4 call sites + 5 patch targets) across 6 files (2 production, 4 test). Optional, non-required cosmetic follow-up: `backend/tests/models/test_grading_model.py:100`'s test function name `test_build_grading_returns_same_entries_and_no_descriptions` may also be renamed to match (e.g. `test_build_grading_with_before_after_score_returns_same_entries_and_no_descriptions`), but this is not load-bearing since pytest discovers it by file/prefix, not by the symbol it calls.
+
+No other files reference `build_grading` (confirmed via repo-wide grep above — Production code: `models/grading.py`, `models/__init__.py`, `routes/care_plan.py`, `routes/grading.py`. Tests: `test_grading_model.py`, `test_grading_route.py`, `test_care_plan_markers.py`).
 
 ---
 
@@ -629,7 +657,7 @@ None. This is a self-contained internal refactor with no environment variables, 
 
 | # | Item | Status |
 |---|---|---|
-| Q1 | Should `build_grading` (`backend/models/grading.py:28`) be renamed for clarity, e.g. to `build_grading_with_before_after_score`? Call sites that would need updating if renamed: `backend/routes/care_plan.py:258` (call) and `:24` (import); `backend/routes/grading.py:68,90` (calls) and `:11` (import); tests in `backend/tests/models/test_grading_model.py`, `backend/tests/routes/test_grading_route.py:185`, `backend/tests/utils/test_care_plan_markers.py:141,174,236,271`. | `[OPEN]` — low-priority cosmetic decision, not made in this PRD. `build_grading` is already correctly colocated with the `Grading` model (same file as `Grading`/`GradingEntry`), so no *move* is needed regardless of the rename decision. |
+| Q1 | Should `build_grading` (`backend/models/grading.py:28`) be renamed for clarity, e.g. to `build_grading_with_before_after_score`? Call sites that would need updating if renamed: `backend/routes/care_plan.py:258` (call) and `:24` (import); `backend/routes/grading.py:68,90` (calls) and `:11` (import); tests in `backend/tests/models/test_grading_model.py`, `backend/tests/routes/test_grading_route.py:185`, `backend/tests/utils/test_care_plan_markers.py:141,174,236,271`. | `[RESOLVED: rename build_grading to build_grading_with_before_after_score; the name now states what the function actually builds (a Grading) and from what (a before/after pair of score+text), matching its signature and the before/after target tagging in its output — see §4e for the full call-site table]` |
 | Q2 | Naming of the new pipeline-step construct: this PRD proposes `Constants.Pipeline.PIPELINE_V1_2_STEPS` as an `Enum` class (matching the existing `CARE_PLAN_VERSIONS`/`GRADING_METHODS` house style of SCREAMING_SNAKE `Enum` class names nested in `Constants`). | `[RESOLVED: use Enum class named PIPELINE_V1_2_STEPS with `.number`/`.label` per-member attributes, as designed in §4b]` |
 | Q3 | Should `READ_NOTE` (step 1, "Reading your note") be retained in the new enum even though no pipeline call site emits a `StepEvent` for it today? | `[RESOLVED: yes, retain it — it preserves the full 1–5 range of the original dict at zero cost, and `routes/worker.py:270`'s implicit `current_stage = 1` pre-pipeline stage conceptually corresponds to it]` |
 | Q4 | Overlap with SP13 (Observability/Logging Reconciliation & Routes-Utils-Services Boundary Cleanup): SP13 also touches `routes/care_plan.py` (relocating non-route helper functions out of it, and separately deleting the `JunoLogger` class). SP11 deletes exactly 3 things from that file: the `_juno_error_logger` line (44, plus its 2-line comment, lines 42–43), the `_score_or_none` function (lines 49–52, plus its 1-line section comment), and the two `_score_or_none(...)` call sites inside `run_care_plan_pipeline` (lines 253–254, content only, not structural). SP11 does **not** move, rename, or relocate any other function in this file (`upload_combined_pdf`, `_allowed`, `_extract_text_from_bytes`, `_resolve_uploaded_files`, `_fetch_from_gcs`, `run_care_plan_pipeline` itself) — those remain exactly where SP13 will find them. Whichever sub-project lands second should rebase past the other's diff in this file; the line ranges above should make that low-risk. | `[RESOLVED: scope boundary stated for SP13's author — see exact line ranges above]` |
