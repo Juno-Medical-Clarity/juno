@@ -24,7 +24,7 @@ from vertexai.preview.generative_models import (
     HarmCategory,
 )
 
-from errors import ErrorCode, JunoError, classify_finish_reason, classify_vertex_exception
+from errors import ErrorCode, JunoError, VertexAPIError, classify_finish_reason
 from utils.constants import Constants
 
 logger = logging.getLogger(__name__)
@@ -69,12 +69,11 @@ class LLMClient:
                 safety_settings=self._safety,
             )
         except Exception as api_exc:
-            # Classify google.api_core exceptions; re-raise others as UNKNOWN_ERROR
+            # Classify google.api_core exceptions via VertexAPIError; re-raise others as UNKNOWN_ERROR
             try:
                 from google.api_core import exceptions as _gexc
                 if isinstance(api_exc, _gexc.GoogleAPICallError):
-                    error_code = classify_vertex_exception(api_exc)
-                    raise JunoError(error_code, detail=str(api_exc), original=api_exc) from api_exc
+                    raise VertexAPIError(api_exc) from api_exc
             except ImportError:
                 pass
             raise JunoError(
