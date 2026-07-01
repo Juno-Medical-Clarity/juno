@@ -192,6 +192,22 @@ def test_generate_text_no_candidates_raises(vertex_env):
     assert exc_info.value.error_code == ErrorCode.LLM_NO_CANDIDATES
 
 
+def test_generate_text_vertex_failure_raises_vertex_api_error(vertex_env):
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    from google.api_core import exceptions as gexc
+    mock_model_instance.generate_content.side_effect = gexc.ResourceExhausted("quota exceeded")
+
+    from errors import ErrorCode, VertexAPIError
+    from utils.llm import LLMClient
+    client = LLMClient()
+    with pytest.raises(VertexAPIError) as exc_info:
+        client.generate_text("prompt")
+    assert exc_info.value.error_code == ErrorCode.VERTEX_QUOTA_EXCEEDED
+
+
 # ---------------------------------------------------------------------------
 # generate_json tests
 # ---------------------------------------------------------------------------

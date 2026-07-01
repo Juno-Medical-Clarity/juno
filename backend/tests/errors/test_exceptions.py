@@ -99,6 +99,40 @@ def test_athena_api_error_explicit_code_overrides_classification():
     assert exc.error_code == ErrorCode.ATHENA_AUTH_FAILED
 
 
+def test_vertex_api_error_classify_type_map():
+    from errors import ErrorCode, VertexAPIError
+    from google.api_core import exceptions as gexc
+
+    cases = [
+        (gexc.ResourceExhausted("x"), ErrorCode.VERTEX_QUOTA_EXCEEDED),
+        (gexc.DeadlineExceeded("x"), ErrorCode.VERTEX_DEADLINE_EXCEEDED),
+        (gexc.InvalidArgument("x"), ErrorCode.VERTEX_INVALID_ARGUMENT),
+        (gexc.PermissionDenied("x"), ErrorCode.VERTEX_PERMISSION_DENIED),
+        (gexc.NotFound("x"), ErrorCode.VERTEX_NOT_FOUND),
+        (gexc.ServiceUnavailable("x"), ErrorCode.VERTEX_SERVICE_UNAVAILABLE),
+        (gexc.InternalServerError("x"), ErrorCode.VERTEX_INTERNAL_ERROR),
+        (gexc.Unauthenticated("x"), ErrorCode.VERTEX_UNAUTHENTICATED),
+        (gexc.Aborted("x"), ErrorCode.VERTEX_ABORTED),
+    ]
+    for exc, expected_code in cases:
+        assert VertexAPIError.classify(exc) == expected_code
+
+
+def test_vertex_api_error_classify_unmapped_type_returns_unknown():
+    from errors import ErrorCode, VertexAPIError
+    assert VertexAPIError.classify(ValueError("not a google exception")) == ErrorCode.UNKNOWN_ERROR
+
+
+def test_vertex_api_error_is_juno_error():
+    from errors import JunoError, ErrorCode, VertexAPIError
+    from google.api_core import exceptions as gexc
+    original = gexc.ResourceExhausted("quota")
+    exc = VertexAPIError(original)
+    assert isinstance(exc, JunoError)
+    assert exc.error_code == ErrorCode.VERTEX_QUOTA_EXCEEDED
+    assert exc.original is original
+
+
 def test_missing_job_config_error_is_juno_error():
     from errors import JunoError, ErrorCode
     from utils.cloud_tasks import MissingJobConfigError
