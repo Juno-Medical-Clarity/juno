@@ -40,8 +40,8 @@ MOCK_RUNS = [
 })
 @patch("routes.batch_jobs.enqueue_job")
 @patch("routes.batch_jobs.create_job_doc")
-@patch("routes.batch_jobs._batch_timestamp", return_value="20260101120000")
-@patch("routes.batch_jobs._resolve_requested_runs", return_value=MOCK_RUNS)
+@patch("routes.batch_jobs.batch_timestamp", return_value="20260101120000")
+@patch("routes.batch_jobs.resolve_requested_runs", return_value=MOCK_RUNS)
 def test_valid_batch_returns_202(
     mock_resolve, mock_ts, mock_create_doc, mock_enqueue,
     client_batch_jobs, auth_ok
@@ -84,8 +84,8 @@ def test_valid_batch_returns_202(
 })
 @patch("routes.batch_jobs.enqueue_job")
 @patch("routes.batch_jobs.create_job_doc")
-@patch("routes.batch_jobs._batch_timestamp", return_value="20260101120000")
-@patch("routes.batch_jobs._resolve_requested_runs", return_value=MOCK_RUNS)
+@patch("routes.batch_jobs.batch_timestamp", return_value="20260101120000")
+@patch("routes.batch_jobs.resolve_requested_runs", return_value=MOCK_RUNS)
 def test_batch_dataset_does_not_read_local_files(
     mock_resolve, mock_ts, mock_create_doc, mock_enqueue,
     client_batch_jobs, auth_ok,
@@ -109,7 +109,7 @@ def test_batch_dataset_does_not_read_local_files(
     "WORKER_URL": "https://worker.run.app",
     "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
 })
-@patch("routes.batch_jobs._resolve_requested_runs", side_effect=ValueError("Dataset group not found: BadGroup"))
+@patch("routes.batch_jobs.resolve_requested_runs", side_effect=ValueError("Dataset group not found: BadGroup"))
 def test_unknown_dataset_group_returns_400(mock_resolve, client_batch_jobs, auth_ok):
     resp = client_batch_jobs.post(
         "/care_plan/batch/jobs",
@@ -190,8 +190,8 @@ def test_athena_clinical_doc_missing_document_id_returns_400(client_batch_jobs, 
 })
 @patch("routes.batch_jobs.enqueue_job")
 @patch("routes.batch_jobs.create_job_doc")
-@patch("routes.batch_jobs._batch_timestamp", return_value="20260101120000")
-@patch("routes.batch_jobs._resolve_requested_runs", return_value=MOCK_RUNS)
+@patch("routes.batch_jobs.batch_timestamp", return_value="20260101120000")
+@patch("routes.batch_jobs.resolve_requested_runs", return_value=MOCK_RUNS)
 def test_grading_enabled_string_coercion(
     mock_resolve, mock_ts, mock_create_doc, mock_enqueue,
     client_batch_jobs, auth_ok
@@ -213,8 +213,8 @@ def test_grading_enabled_string_coercion(
 })
 @patch("routes.batch_jobs.enqueue_job")
 @patch("routes.batch_jobs.create_job_doc")
-@patch("routes.batch_jobs._batch_timestamp", return_value="20260101120000")
-@patch("routes.batch_jobs._resolve_requested_runs", return_value=MOCK_RUNS)
+@patch("routes.batch_jobs.batch_timestamp", return_value="20260101120000")
+@patch("routes.batch_jobs.resolve_requested_runs", return_value=MOCK_RUNS)
 def test_version_defaults_to_v1_2(
     mock_resolve, mock_ts, mock_create_doc, mock_enqueue,
     client_batch_jobs, auth_ok
@@ -234,7 +234,7 @@ def test_version_defaults_to_v1_2(
     "WORKER_URL": "https://worker.run.app",
     "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
 })
-@patch("routes.batch_jobs._resolve_requested_runs", return_value=MOCK_RUNS)
+@patch("routes.batch_jobs.resolve_requested_runs", return_value=MOCK_RUNS)
 @patch("routes.batch_jobs.create_job_doc", side_effect=RuntimeError("db exploded"))
 def test_unhandled_exception_returns_500_json(
     mock_create_doc, mock_resolve, client_batch_jobs, auth_ok

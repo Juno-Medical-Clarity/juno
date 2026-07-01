@@ -8,7 +8,7 @@ from pydantic import ValidationError
 
 from utils.firebase import create_job_doc, verify_firebase_token
 from utils.cloud_tasks import enqueue_job, require_env, MissingJobConfigError
-from routes.batch_utils import _resolve_requested_runs, _batch_timestamp
+from utils.batch import resolve_requested_runs, batch_timestamp
 from utils.constants import Constants
 from errors import make_error_response, ErrorCode
 from models.batch_requests import (
@@ -64,7 +64,7 @@ def create_care_plan_batch_jobs(user_id: str):
             runs: list[tuple[str, str, list[str]]] = []
             if gcs_selections:
                 try:
-                    runs = _resolve_requested_runs([s.model_dump() for s in gcs_selections])
+                    runs = resolve_requested_runs([s.model_dump() for s in gcs_selections])
                 except (ValueError, FileNotFoundError) as exc:
                     return make_error_response(
                         ErrorCode.BATCH_INVALID_SELECTION,
@@ -91,7 +91,7 @@ def create_care_plan_batch_jobs(user_id: str):
             })
 
             batch_run_id = str(uuid.uuid4())
-            timestamp = _batch_timestamp()
+            timestamp = batch_timestamp()
             now = datetime.now(timezone.utc)
             job_ids: list[str] = []
             deadline_s = Constants.Deadlines.JOB_TIMEOUT_SECONDS_BATCH

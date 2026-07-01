@@ -1,20 +1,17 @@
-"""Batch utilities: timestamp helper and GCS selection resolver."""
+"""Batch-job business helpers: timestamp formatting and dataset-selection
+resolution (moved out of the routes package, which never registered any
+routes for these helpers)."""
 
 from datetime import datetime, timezone
-
-from flask import Blueprint
 
 from utils.preset_data import list_datasets
 
 
-batch_bp = Blueprint("batch", __name__)
-
-
-def _batch_timestamp() -> str:
+def batch_timestamp() -> str:
     return datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
 
 
-def _resolve_requested_runs(selections: list[dict]) -> list[tuple[str, str, list[str]]]:
+def resolve_requested_runs(selections: list[dict]) -> list[tuple[str, str, list[str]]]:
     datasets = list_datasets()
     datasets_by_group = {dataset["group"]: dataset for dataset in datasets}
     runs: list[tuple[str, str, list[str]]] = []

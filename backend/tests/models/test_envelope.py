@@ -123,7 +123,6 @@ def test_simplify_output_import_fails():
 
 
 def test_model_consuming_routes_import_without_removed_aliases():
-    import routes.batch_utils  # noqa: F401
     import routes.care_plan  # noqa: F401
     import routes.grading  # noqa: F401
     import routes.saved_outputs  # noqa: F401
