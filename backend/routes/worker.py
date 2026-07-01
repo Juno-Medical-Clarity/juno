@@ -214,7 +214,7 @@ def execute_job(job_id: str):
 
             if source_kind == "gcs_batch_dataset":
                 is_gcs_dataset_job = True
-                from utils.gcs_datasets import download_dataset_inputs
+                from utils.gcs import download_dataset_inputs
                 gcs_temp_dir = download_dataset_inputs(
                     group=job.dataset_group,
                     input_id=job.dataset_input_id,
@@ -343,7 +343,7 @@ def execute_job(job_id: str):
             return "", 500
         finally:
             if is_gcs_dataset_job:
-                from utils.gcs_datasets import cleanup_dataset_inputs
+                from utils.gcs import cleanup_dataset_inputs
                 cleanup_dataset_inputs(job_id)
 
     return Markers.Worker.JobExecute.execute(_run)

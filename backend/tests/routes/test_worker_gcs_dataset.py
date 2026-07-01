@@ -97,8 +97,8 @@ def _envelope_mock():
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
 @patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
-@patch("utils.gcs_datasets.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
+@patch("utils.gcs.cleanup_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_downloads_and_extracts_text(
     mock_download, mock_cleanup, mock_extract, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -131,8 +131,8 @@ def test_execute_job_downloads_and_extracts_text(
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
 @patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
-@patch("utils.gcs_datasets.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
+@patch("utils.gcs.cleanup_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_success(
     mock_download, mock_cleanup, mock_extract, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -158,8 +158,8 @@ def test_execute_job_cleanup_called_on_success(
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
 @patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
-@patch("utils.gcs_datasets.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
+@patch("utils.gcs.cleanup_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_pipeline_error(
     mock_download, mock_cleanup, mock_extract, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -196,8 +196,8 @@ def test_execute_job_cleanup_called_on_pipeline_error(
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
 @patch("routes.worker._extract_text_from_downloaded", return_value="patient text")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
-@patch("utils.gcs_datasets.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
+@patch("utils.gcs.cleanup_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs", return_value=Path("/tmp/juno-datasets/job-1"))
 def test_execute_job_cleanup_called_on_unhandled_exception(
     mock_download, mock_cleanup, mock_extract, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -220,7 +220,7 @@ def test_execute_job_cleanup_called_on_unhandled_exception(
     mock_cleanup.assert_called_once_with("job-1")
 
 
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
+@patch("utils.gcs.cleanup_dataset_inputs")
 @patch("routes.worker.get_job_doc", return_value=None)
 def test_execute_job_cleanup_skipped_if_download_not_reached(
     mock_get_doc, mock_cleanup,
@@ -244,7 +244,7 @@ def test_execute_job_cleanup_skipped_if_download_not_reached(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("utils.gcs_datasets.download_dataset_inputs")
+@patch("utils.gcs.download_dataset_inputs")
 def test_execute_job_legacy_batch_dataset_uses_stored_text(
     mock_download, mock_get_doc,
     mock_fail, mock_update, mock_complete, mock_fs_client,
@@ -289,9 +289,9 @@ def test_execute_job_legacy_batch_dataset_uses_stored_text(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-@patch("utils.gcs_datasets.cleanup_dataset_inputs")
+@patch("utils.gcs.cleanup_dataset_inputs")
 @patch(
-    "utils.gcs_datasets.download_dataset_inputs",
+    "utils.gcs.download_dataset_inputs",
     side_effect=RuntimeError("GCS unavailable"),
 )
 def test_execute_job_download_failure_marks_job_failed(

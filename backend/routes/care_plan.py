@@ -15,7 +15,7 @@ from typing import Generator
 from flask import Blueprint, g, request  # noqa: F401
 
 from utils.constants import Constants
-from utils.gcs_helpers import get_gcs_bucket
+from utils.gcs import get_gcs_bucket
 
 from care_plan.v1_2.pipeline import CarePlanV1_2Pipeline
 from utils.pdf import merge_pdfs, extract_text_from_pdf

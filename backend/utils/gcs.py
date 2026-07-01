@@ -1,4 +1,6 @@
-"""utils/gcs_datasets.py — GCS download helpers for batch dataset jobs (SP2)."""
+"""utils/gcs.py — GCS client construction, generic bucket access, and the
+batch-dataset download/cleanup workflow (merged from gcs_helpers.py + gcs_datasets.py)."""
+
 import logging
 import os
 import shutil
@@ -12,9 +14,29 @@ from utils.constants import Constants
 
 logger = logging.getLogger(__name__)
 
+_DEFAULT_BUCKET = os.environ.get("GCP_BUCKET_NAME", "")
 # Module-level constant so tests can monkeypatch it.
 TEMP_BASE: Path = Path(Constants.Storage.TEMP_BASE)
 
+
+def _gcs_client() -> gcs.Client:
+    """Single construction point for the GCS client (project from GCP_PROJECT_ID env)."""
+    return gcs.Client(project=os.environ.get("GCP_PROJECT_ID") or None)
+
+
+# ---------------------------------------------------------------------------
+# Generic bucket access
+# ---------------------------------------------------------------------------
+
+def get_gcs_bucket(bucket_name: str | None = None):
+    """Return a GCS Bucket for the given name (default: GCP_BUCKET_NAME env)."""
+    name = bucket_name or _DEFAULT_BUCKET
+    return _gcs_client().bucket(name)
+
+
+# ---------------------------------------------------------------------------
+# Batch dataset download / cleanup workflow (SP2)
+# ---------------------------------------------------------------------------
 
 def download_dataset_inputs(
     group: str,
@@ -38,9 +60,7 @@ def download_dataset_inputs(
     if not bucket_name:
         raise RuntimeError("DATASETS_BUCKET_NAME is not configured")
 
-    project_id = os.environ.get("GCP_PROJECT_ID") or None
-    client = gcs.Client(project=project_id)
-    bucket = client.bucket(bucket_name)
+    bucket = _gcs_client().bucket(bucket_name)
 
     job_dir = TEMP_BASE / job_id
 
@@ -68,7 +88,7 @@ def download_dataset_inputs(
             future.result()  # re-raises any download exception
 
     logger.info(
-        "gcs_datasets: downloaded %d file(s) for job %s (%s/%s)",
+        "gcs: downloaded %d file(s) for job %s (%s/%s)",
         len(files), job_id, group, input_id,
     )
     return job_dir
@@ -85,9 +105,9 @@ def cleanup_dataset_inputs(job_id: str) -> None:
         return
     try:
         shutil.rmtree(job_dir)
-        logger.info("gcs_datasets: cleaned up temp dir for job %s", job_id)
+        logger.info("gcs: cleaned up temp dir for job %s", job_id)
     except Exception:
-        logger.exception("gcs_datasets: failed to remove temp dir %s", job_dir)
+        logger.exception("gcs: failed to remove temp dir %s", job_dir)
 
 
 def sweep_stale_dataset_dirs(max_age_seconds: int = 86400) -> None:
@@ -108,7 +128,7 @@ def sweep_stale_dataset_dirs(max_age_seconds: int = 86400) -> None:
             if age > max_age_seconds:
                 shutil.rmtree(entry)
                 logger.info(
-                    "gcs_datasets: swept stale dir %s (age=%.0fs)", entry, age
+                    "gcs: swept stale dir %s (age=%.0fs)", entry, age
                 )
         except Exception:
-            logger.exception("gcs_datasets: error sweeping dir %s", entry)
+            logger.exception("gcs: error sweeping dir %s", entry)

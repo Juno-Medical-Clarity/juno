@@ -18,7 +18,7 @@ from flask import Blueprint, jsonify, request
 from firebase_admin import firestore
 
 from utils.firebase import verify_firebase_token, firestore_client, get_owned_doc_or_403
-from utils.gcs_helpers import get_gcs_bucket
+from utils.gcs import get_gcs_bucket
 from utils.markers import Markers, JunoContext
 from utils.constants import Constants
 from errors import make_error_response, ErrorCode

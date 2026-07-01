@@ -78,7 +78,7 @@ for bp in _blueprints:
 # Sweep stale GCS dataset temp dirs left by any previous container instance
 if JUNO_MODE in ("worker", "combined"):
     try:
-        from utils.gcs_datasets import sweep_stale_dataset_dirs
+        from utils.gcs import sweep_stale_dataset_dirs
         sweep_stale_dataset_dirs()
     except Exception:
         logger.exception("app: stale dataset dir sweep failed at startup")
