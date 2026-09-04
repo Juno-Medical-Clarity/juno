@@ -14,3 +14,12 @@ export const CARE_PLAN_JOBS_PATH = '/care_plan/jobs';
 export const CARE_PLAN_BATCH_JOBS_PATH = '/care_plan/batch/jobs';
 export const CARE_PLAN_PAGE_ROUTE = '/carePlan';
 export const carePlanPagePath = (id: string) => `/carePlan/${id}`;
+
+// Clinician Dataset — API paths
+export const CLINICIAN_NPI_PATH = '/clinician_dataset/npi/search';
+export const CLINICIAN_CMS_PATH = '/clinician_dataset/cms/search';
+
+// Clinician Dataset — client-side routes
+export const CLINICIAN_DATASET_ROUTE = '/clinician-dataset';
+export const CLINICIAN_NPI_ROUTE = '/clinician-dataset/npi';
+export const CLINICIAN_CMS_ROUTE = '/clinician-dataset/cms';

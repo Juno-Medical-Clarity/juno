@@ -1,6 +1,9 @@
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import ModelsPage from './pages/ModelsPage';
 import GradingVersionDetailPage from './pages/GradingVersionDetailPage';
+import ClinicianDatasetPage from './pages/ClinicianDatasetPage';
+import ClinicianNpiPage from './pages/ClinicianNpiPage';
+import ClinicianCmsPage from './pages/ClinicianCmsPage';
 import CarePlanPage from './pages/care-plan/CarePlanPage';
 import CarePlanJobPage from './pages/care-plan/CarePlanJobPage';
 import { useAuth } from './auth/AuthContext';
@@ -40,6 +43,9 @@ export default function App() {
           <Route path="/models/grading/:versionId" element={<GradingVersionDetailPage />} />
           <Route path="/docs" element={<DocsPage />} />
           <Route path="/docs/grading/:slug" element={<AlgorithmDocPage />} />
+          <Route path="/clinician-dataset" element={<ClinicianDatasetPage />} />
+          <Route path="/clinician-dataset/npi" element={<ClinicianNpiPage />} />
+          <Route path="/clinician-dataset/cms" element={<ClinicianCmsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
         {/* CarePlanPage manages its own NavBar */}

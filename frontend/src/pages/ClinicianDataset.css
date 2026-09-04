@@ -1,0 +1,190 @@
+/* Clinician Dataset feature styling. Reuses App.css tokens/classes where possible. */
+
+.clinician-intro {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 640px;
+}
+
+/* Landing page option cards */
+.clinician-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.clinician-card {
+  display: block;
+  padding: 28px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.clinician-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(124, 58, 237, 0.14), 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.clinician-card-title {
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.clinician-card-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.clinician-card-arrow {
+  color: var(--accent-violet);
+  font-weight: 700;
+  margin-top: 14px;
+  display: inline-block;
+}
+
+/* Filter form */
+.clinician-filters {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.clinician-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.clinician-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.clinician-field label {
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.clinician-field input,
+.clinician-field select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface, #fff);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 10px 12px;
+}
+
+.clinician-field input:focus,
+.clinician-field select:focus {
+  outline: none;
+  border-color: var(--accent-violet);
+}
+
+.clinician-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.clinician-btn {
+  border: none;
+  border-radius: var(--radius-md, 10px);
+  background: var(--accent-violet);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 11px 22px;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.clinician-btn:hover:not(:disabled) {
+  background: var(--accent-violet-dark, #6d28d9);
+}
+
+.clinician-btn.secondary {
+  background: transparent;
+  color: var(--accent-violet);
+  border: 1px solid var(--accent-violet);
+}
+
+.clinician-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.clinician-result-count {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.clinician-error {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-radius: var(--radius-sm);
+  background: rgba(220, 38, 38, 0.06);
+  color: var(--error, #dc2626);
+  font-size: 0.9rem;
+}
+
+.clinician-empty {
+  padding: 32px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* Results preview table */
+.clinician-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  margin-top: 8px;
+}
+
+.clinician-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1600px;
+}
+
+.clinician-table th,
+.clinician-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+
+.clinician-table th {
+  background: rgba(124, 58, 237, 0.06);
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  position: sticky;
+  top: 0;
+}
+
+.clinician-table td {
+  color: var(--text-secondary);
+}
+
+.clinician-table tr:last-child td {
+  border-bottom: none;
+}

@@ -84,6 +84,55 @@ class Constants:
             DOC_ID              = "doc_id"
             BATCH_DATASET       = "batch_dataset"   # legacy
 
+    class ClinicianDataset:
+        """Config for the Clinician Dataset feature (NPI Registry + CMS mj5m-pzi6)."""
+
+        # The exact 17-column output schema (order + spelling are load-bearing).
+        COLUMNS: list[str] = [
+            "NPI", "Type", "Name", "Speciality", "Address", "City", "State",
+            "Zip", "Website", "Phone #", "Email", "Creds", "Why Pilot", "EHR",
+            "Outreach status", "Contact date", "Notes",
+        ]
+
+        # Columns that never carry source data — always emitted as "".
+        BLANK_COLUMNS: frozenset[str] = frozenset({
+            "Website", "Email", "Why Pilot", "EHR", "Outreach status",
+            "Contact date", "Notes",
+        })
+
+        # US states + DC + territories (reused by both datasets' dropdowns).
+        US_STATE_CODES: frozenset[str] = frozenset({
+            "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI",
+            "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI",
+            "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC",
+            "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT",
+            "VT", "VA", "WA", "WV", "WI", "WY", "DC", "PR", "VI", "GU", "AS",
+            "MP",
+        })
+
+        class Npi:
+            """NPPES NPI Registry official API (public, no auth)."""
+            BASE_URL: str = "https://npiregistry.cms.hhs.gov/api/"
+            VERSION: str = "2.1"
+            HTTP_TIMEOUT_S: int = 30
+            MAX_RETRIES: int = 3
+            RETRY_BACKOFF_S: float = 1.0
+            DEFAULT_LIMIT: int = 200
+            MAX_LIMIT: int = 200
+            DEFAULT_SKIP: int = 0
+            MAX_SKIP: int = 1000
+
+        class Cms:
+            """CMS 'Doctors and Clinicians' datastore query API (public, no auth)."""
+            # Trailing /0 (distribution index) is REQUIRED — dataset-id-only 404s.
+            BASE_URL: str = "https://data.cms.gov/provider-data/api/1/datastore/query/mj5m-pzi6/0"
+            HTTP_TIMEOUT_S: int = 60
+            MAX_RETRIES: int = 3
+            RETRY_BACKOFF_S: float = 1.0
+            DEFAULT_LIMIT: int = 500
+            MAX_LIMIT: int = 1500
+            DEFAULT_OFFSET: int = 0
+
     class Storage:
         GCS_BUCKET_ENV_VAR: str = "GCP_BUCKET_NAME"
         GCS_PRESET_PREFIX: str = "preset-data"
