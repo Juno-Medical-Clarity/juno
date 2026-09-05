@@ -3,6 +3,23 @@
 @import '../../frontend/src/pages/care-plan/CarePlanPage.css';
 
 /* Trial-only additions below — centered single-column layout, no sidebar/nav offset */
+
+/* ── Glass card (trial) ──
+   .glass-card ships with no padding in the shared stylesheet — every usage in
+   the main app supplies its own (an inline style, or a more specific wrapper
+   class like .configuration-card). The trial screens render a bare glass-card
+   (ProcessingScreen, ResultScreen's error state), so give it sensible default
+   padding here instead. This keeps the card's contents — e.g. .section-title —
+   off the card's edges. */
+.glass-card {
+  padding: 32px 28px;
+}
+
+@media (max-width: 640px) {
+  .glass-card {
+    padding: 24px 20px;
+  }
+}
 .trial-page {
   max-width: 640px;
   margin: 0 auto;

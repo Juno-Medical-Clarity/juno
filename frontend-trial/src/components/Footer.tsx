@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="trial-footer">
       <p>No documents are saved — content is deleted immediately after processing.</p>
-      <p>This is a demo, not medical advice. Do not upload real patient information.</p>
+      <p>This is a demo, not medical advice.</p>
       <p>
         <Link to="/privacy" onClick={() => trackEvent({ name: 'legal_link_clicked', params: { link: 'privacy', source_screen: location.pathname } })}>
           Privacy Policy
