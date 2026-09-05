@@ -4,7 +4,9 @@ export const ALLOWED_UPLOAD_EXTENSIONS = [
 export const MAX_FILES = 5;
 export const MAX_FILE_BYTES = 10 * 1024 * 1024;
 export const MAX_AGGREGATE_BYTES = 25 * 1024 * 1024;
-export const MAX_TEXT_LENGTH = 100_000;
+// Mirrors backend Constants.Uploads.MAX_TEXT_LENGTH (backend/utils/constants.py) --
+// keep these two values in sync.
+export const MAX_TEXT_LENGTH = 500_000;
 
 /** Formats a byte count as a short human-readable string, e.g. `1.4 MB`, `320 KB`, `0 B`. */
 export function formatBytes(bytes: number): string {
