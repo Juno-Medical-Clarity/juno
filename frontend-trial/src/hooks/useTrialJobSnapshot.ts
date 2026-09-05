@@ -15,10 +15,20 @@ export interface TrialJobDoc {
 
 export function useTrialJobSnapshot(jobId: string | null): {
   jobDoc: TrialJobDoc | null;
+  // Null until the first snapshot callback arrives (loading/not-yet-known);
+  // true/false thereafter reflects the doc's actual existence. Callers must
+  // not treat `jobDoc === null` alone as "the job is gone" — the backend
+  // creates the Firestore doc BEFORE returning job_id to the client (see
+  // create_trial_job in backend/routes/trial.py), so a jobId always refers to
+  // a real doc, but the initial snapshot can arrive slightly after mount.
+  // Only `exists === false` (confirmed by a real snapshot callback) means
+  // the doc was actually deleted/expired out from under a live listener.
+  exists: boolean | null;
   loading: boolean;
   error: Error | null;
 } {
   const [jobDoc, setJobDoc] = useState<TrialJobDoc | null>(null);
+  const [exists, setExists] = useState<boolean | null>(null);
   const [loading, setLoading] = useState(jobId !== null);
   const [error, setError] = useState<Error | null>(null);
 
@@ -30,6 +40,7 @@ export function useTrialJobSnapshot(jobId: string | null): {
       // https://react.dev/learn/you-might-not-need-an-effect#subscribing-to-an-external-store
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setJobDoc(null);
+      setExists(null);
       setLoading(false);
       setError(null);
       return;
@@ -42,6 +53,7 @@ export function useTrialJobSnapshot(jobId: string | null): {
       (snapshot) => {
         if (!snapshot.exists()) {
           setJobDoc(null);
+          setExists(false);
           setLoading(false);
           return;
         }
@@ -53,6 +65,7 @@ export function useTrialJobSnapshot(jobId: string | null): {
           error_data: data.error_data ?? null,
           name: data.name ?? '',
         });
+        setExists(true);
         setLoading(false);
       },
       (err) => {
@@ -64,5 +77,5 @@ export function useTrialJobSnapshot(jobId: string | null): {
     return unsubscribe;
   }, [jobId]);
 
-  return { jobDoc, loading, error };
+  return { jobDoc, exists, loading, error };
 }

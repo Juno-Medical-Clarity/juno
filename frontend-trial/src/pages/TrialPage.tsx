@@ -21,7 +21,7 @@ export default function TrialPage() {
   // here tears down the Firestore listener (useTrialJobSnapshot's existing,
   // tested unsubscribe-on-null-id path) so a subsequent "document deleted"
   // event from the listener can never null out what we render.
-  const { jobDoc, error: snapshotError } = useTrialJobSnapshot(finalJobDoc ? null : jobId);
+  const { jobDoc, exists: jobExists, error: snapshotError } = useTrialJobSnapshot(finalJobDoc ? null : jobId);
   const deletedRef = useRef<Set<string>>(new Set());
 
   useUnloadCleanup(jobId, appState, deletedRef);
@@ -48,7 +48,12 @@ export default function TrialPage() {
         <UploadScreen authState={authState} onAuthRetry={retry} onJobCreated={handleJobCreated} />
       )}
       {appState === 'processing' && (
-        <ProcessingScreen jobDoc={jobDoc} snapshotError={snapshotError} />
+        <ProcessingScreen
+          jobDoc={jobDoc}
+          snapshotError={snapshotError}
+          jobExists={jobExists}
+          onRestart={handleRestart}
+        />
       )}
       {appState === 'result' && finalJobDoc && (
         <ResultScreen jobDoc={finalJobDoc} jobId={jobId} deletedRef={deletedRef} onRestart={handleRestart} />
