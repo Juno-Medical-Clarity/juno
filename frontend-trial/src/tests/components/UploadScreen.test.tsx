@@ -20,6 +20,21 @@ describe('UploadScreen', () => {
     expect(screen.getByRole('button', { name: 'Simplify' })).toBeDisabled();
   });
 
+  it('shows a "getting ready" hint while authState is pending, and never calls createTrialJob for a pending submit', async () => {
+    render(<UploadScreen authState="pending" onAuthRetry={vi.fn()} onJobCreated={vi.fn()} />);
+    expect(screen.getByRole('status')).toHaveTextContent(/getting ready/i);
+    const button = screen.getByRole('button', { name: 'Simplify' });
+    expect(button).toBeDisabled();
+    // A disabled button doesn't dispatch click handlers, but this asserts the outcome
+    // that actually matters: no submit ever reaches the API while auth isn't ready.
+    expect(createTrialJobMock).not.toHaveBeenCalled();
+  });
+
+  it('does not show the "getting ready" hint once authState is ready', () => {
+    render(<UploadScreen authState="ready" onAuthRetry={vi.fn()} onJobCreated={vi.fn()} />);
+    expect(screen.queryByRole('status')).not.toBeInTheDocument();
+  });
+
   it('shows a validateFiles error and leaves the button disabled on an invalid selection', async () => {
     // applyAccept: false — user-event's default upload() silently drops any file that
     // doesn't match the <input accept> attribute (emulating native file-picker

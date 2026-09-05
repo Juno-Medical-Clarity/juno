@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function TermsPage() {
   return (
     <div className="legal-page">
-      <Link to="/">← Back</Link>
+      <Link to="/">← Back to Simplify</Link>
       <article>
         <h1>Terms & Conditions — Simplify (Trial)</h1>
         <p>Last updated: September 4, 2026</p>

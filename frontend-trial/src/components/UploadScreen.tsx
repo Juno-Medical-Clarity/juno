@@ -85,6 +85,10 @@ export default function UploadScreen({ authState, onAuthRetry, onJobCreated }: U
   const totalBytes = files.reduce((sum, f) => sum + f.size, 0);
 
   async function handleSubmit() {
+    // Defense in depth: the Simplify button is already disabled while auth isn't ready
+    // (see `disabled` above), but guard here too so a submit can never fire while the
+    // anonymous session is still starting up.
+    if (authState !== 'ready') return;
     trackEvent({ name: 'simplify_clicked', params: { input_mode: mode, file_count: mode === 'file' ? files.length : 0 } });
     setSubmitting(true);
     setError(null);
@@ -125,6 +129,12 @@ export default function UploadScreen({ authState, onAuthRetry, onJobCreated }: U
         <div className="error-box">
           Couldn&apos;t start your session.{' '}
           <button onClick={onAuthRetry}>Retry</button>
+        </div>
+      )}
+
+      {authState === 'pending' && (
+        <div className="auth-pending-hint" role="status">
+          Getting ready…
         </div>
       )}
 
