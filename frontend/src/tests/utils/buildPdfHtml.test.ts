@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { buildPdfHtml, escapeHtml } from '../../utils/buildPdfHtml';
-import type { SimplifiedCarePlan } from '../../types/envelope';
+import type { SimplifiedCarePlan, Grading } from '../../types/envelope';
 
 function makeMinimalPlan(overrides: Partial<SimplifiedCarePlan> = {}): SimplifiedCarePlan {
   return {
@@ -146,5 +146,70 @@ describe('buildPdfHtml', () => {
     expect(html).toContain('Medical Terms Glossary');
     expect(html).toContain('hypertension');
     expect(html).toContain('High blood pressure');
+  });
+});
+
+describe('buildPdfHtml options', () => {
+  const planWithTermsAndLowPriority = makeMinimalPlan({
+    terms: { hypertension: { definition: 'High blood pressure', source: 'medical', imgUrl: null, altText: null } },
+    low_priority: ['Drink more water'],
+  });
+  const grading: Grading = {
+    enabled: true,
+    graded_at: null,
+    entries: [
+      { name: 'combined', target: 'before', grade: 42, grade_breakdown: null, reasoning: null },
+      { name: 'combined', target: 'after', grade: 78, grade_breakdown: null, reasoning: null },
+    ],
+  };
+
+  it('includes glossary, readability, and low-priority sections by default (no options passed)', () => {
+    const html = buildPdfHtml(planWithTermsAndLowPriority, grading);
+    expect(html).toContain('Medical Terms Glossary');
+    expect(html).toContain('Readability');
+    expect(html).toContain('Other Items');
+  });
+
+  it('includes all three sections when options are explicitly passed as true/undefined', () => {
+    const html = buildPdfHtml(planWithTermsAndLowPriority, grading, {
+      includeGlossary: true,
+      includeReadability: true,
+      includeLowPriority: true,
+    });
+    expect(html).toContain('Medical Terms Glossary');
+    expect(html).toContain('Readability');
+    expect(html).toContain('Other Items');
+  });
+
+  it('omits the glossary section when includeGlossary is false', () => {
+    const html = buildPdfHtml(planWithTermsAndLowPriority, grading, { includeGlossary: false });
+    expect(html).not.toContain('Medical Terms Glossary');
+    expect(html).toContain('Readability');
+    expect(html).toContain('Other Items');
+  });
+
+  it('omits the readability section when includeReadability is false', () => {
+    const html = buildPdfHtml(planWithTermsAndLowPriority, grading, { includeReadability: false });
+    expect(html).toContain('Medical Terms Glossary');
+    expect(html).not.toContain('Readability');
+    expect(html).toContain('Other Items');
+  });
+
+  it('omits the low-priority section when includeLowPriority is false', () => {
+    const html = buildPdfHtml(planWithTermsAndLowPriority, grading, { includeLowPriority: false });
+    expect(html).toContain('Medical Terms Glossary');
+    expect(html).toContain('Readability');
+    expect(html).not.toContain('Other Items');
+  });
+
+  it('omits all three sections when all flags are false', () => {
+    const html = buildPdfHtml(planWithTermsAndLowPriority, grading, {
+      includeGlossary: false,
+      includeReadability: false,
+      includeLowPriority: false,
+    });
+    expect(html).not.toContain('Medical Terms Glossary');
+    expect(html).not.toContain('Readability');
+    expect(html).not.toContain('Other Items');
   });
 });

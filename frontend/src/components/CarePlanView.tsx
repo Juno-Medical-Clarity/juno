@@ -91,9 +91,11 @@ function ResultCard({
 
 export default function CarePlanView({
   result,
+  hideLowPriority = false,
 }: {
   result: SimplifiedCarePlan;
   grading: Grading;
+  hideLowPriority?: boolean;
 }) {
   const terms = result.terms ?? {};
   const withTerms = (text: string) => renderTextWithTerms(text, terms);
@@ -299,7 +301,7 @@ export default function CarePlanView({
         </ResultCard>
       )}
 
-      {result.low_priority?.length > 0 && (
+      {!hideLowPriority && result.low_priority?.length > 0 && (
         <ResultCard color="gray" icon="ℹ️" title="Other Items From Your Visit" collapsible defaultOpen={false}>
           <ul className="result-list">
             {result.low_priority.map((item, i) => <li key={i}>{withTerms(item)}</li>)}

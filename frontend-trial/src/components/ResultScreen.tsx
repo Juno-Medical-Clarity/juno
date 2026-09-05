@@ -104,7 +104,7 @@ export default function ResultScreen({ jobDoc, jobId, deletedRef, onRestart }: R
       <h1>{jobDoc.name || 'Your care plan'}</h1>
       {formattedDate && <p>{formattedDate}</p>}
       {before != null && after != null && (
-        <p className="score-widget">{before} → {after}</p>
+        <p className="score-widget">Simplification score {before} (before) → {after} (after)</p>
       )}
       {care_plan ? (
         <>
@@ -114,7 +114,7 @@ export default function ResultScreen({ jobDoc, jobId, deletedRef, onRestart }: R
               a message here instead of losing the whole result screen (or,
               absent the app-root boundary, the whole page). */}
           <ErrorBoundary title="We couldn't display your care plan" onReset={onRestart}>
-            <CarePlanView result={care_plan} grading={grading} />
+            <CarePlanView result={care_plan} grading={grading} hideLowPriority />
           </ErrorBoundary>
           <button className="cta-btn" onClick={() => downloadReport(care_plan, grading)}>
             Download report

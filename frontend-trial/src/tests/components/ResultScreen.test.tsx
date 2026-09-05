@@ -47,8 +47,27 @@ describe('ResultScreen', () => {
     expect(screen.getByText('Jan 5 Care Plan')).toBeInTheDocument();
     expect(screen.getByText('January 5, 2026')).toBeInTheDocument();
     expect(screen.queryByText(/Simplified on/)).not.toBeInTheDocument();
-    expect(screen.getByText('42 → 78')).toBeInTheDocument();
+    expect(screen.getByText('Simplification score 42 (before) → 78 (after)')).toBeInTheDocument();
     expect(screen.getByText('Rest up.')).toBeInTheDocument();
+  });
+
+  it('does not render "Other Items From Your Visit" even when low_priority has entries', () => {
+    const jobDoc: TrialJobDoc = {
+      status: 'completed', stage: 5, name: 'With Low Priority', error_data: null,
+      output_data: {
+        metrics: { created_at: '2026-01-05T10:00:00Z' },
+        grading: { entries: [], enabled: false, graded_at: null },
+        care_plan: {
+          doc_type: 'care_plan', urgency: 'normal', version: '1.2', summary: 'Rest up.',
+          reason_for_visit: [], diagnosis: { details: [] }, medications: [], tests: [],
+          procedures: [], other: [], follow_up: [], warning_signs: [], questions: [],
+          low_priority: ['Drink more water'],
+        },
+      },
+    };
+    render(<ResultScreen jobDoc={jobDoc} jobId="job-5" deletedRef={deletedRef} onRestart={vi.fn()} />);
+    expect(screen.queryByText('Other Items From Your Visit')).not.toBeInTheDocument();
+    expect(screen.queryByText('Drink more water')).not.toBeInTheDocument();
   });
 
   it('renders the error message and Try again button on error, calling onRestart when clicked', async () => {

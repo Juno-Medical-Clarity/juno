@@ -90,7 +90,7 @@ describe('TrialPage', () => {
 
     // Result is visible and the primary delete trigger fired.
     expect(screen.getByText('Jan 5 Care Plan')).toBeInTheDocument();
-    expect(screen.getByText('42 → 78')).toBeInTheDocument();
+    expect(screen.getByText('Simplification score 42 (before) → 78 (after)')).toBeInTheDocument();
     expect(deleteTrialJobMock).toHaveBeenCalledWith('job-1');
     // Documented exclusion: no "Another care plan" button on the success view.
     expect(screen.queryByRole('button', { name: /another care plan/i })).not.toBeInTheDocument();
@@ -106,7 +106,7 @@ describe('TrialPage', () => {
 
     // The screen must NOT go blank — it renders from the captured copy.
     expect(screen.getByText('Jan 5 Care Plan')).toBeInTheDocument();
-    expect(screen.getByText('42 → 78')).toBeInTheDocument();
+    expect(screen.getByText('Simplification score 42 (before) → 78 (after)')).toBeInTheDocument();
     expect(screen.getByText('Rest up.')).toBeInTheDocument();
   });
 

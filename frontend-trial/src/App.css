@@ -4,6 +4,18 @@
 
 /* Trial-only additions below — centered single-column layout, no sidebar/nav offset */
 
+/* ── Score widget (trial) ──
+   No .score-widget rule existed before this file introduced one — the text
+   used to be a short "42 → 78" and rendered fine as a bare <p>. Now that it
+   reads "Simplification score 42 (before) → 78 (after)", give it a little
+   weight/color so it reads as a labeled stat rather than a plain paragraph,
+   consistent with the rest of the page's typography scale. */
+.score-widget {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
 /* ── Glass card (trial) ──
    .glass-card ships with no padding in the shared stylesheet — every usage in
    the main app supplies its own (an inline style, or a more specific wrapper

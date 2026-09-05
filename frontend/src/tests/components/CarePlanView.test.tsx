@@ -112,4 +112,23 @@ describe('CarePlanView (formerly AppointmentNoteV12View)', () => {
     expect(screen.getByText('What You Need to Know')).toBeInTheDocument();
     expect(screen.getByText('Important info')).toBeInTheDocument();
   });
+
+  it('renders "Other Items From Your Visit" by default when low_priority has entries', () => {
+    const result = { ...makeMinimalCarePlan(), low_priority: ['Drink more water'] };
+    render(<CarePlanView result={result} grading={makeEmptyGrading()} />);
+    expect(screen.getByText('Other Items From Your Visit')).toBeInTheDocument();
+    expect(screen.getByText('Drink more water')).toBeInTheDocument();
+  });
+
+  it('omits "Other Items From Your Visit" when hideLowPriority is true, even with low_priority entries', () => {
+    const result = { ...makeMinimalCarePlan(), low_priority: ['Drink more water'] };
+    render(<CarePlanView result={result} grading={makeEmptyGrading()} hideLowPriority />);
+    expect(screen.queryByText('Other Items From Your Visit')).not.toBeInTheDocument();
+    expect(screen.queryByText('Drink more water')).not.toBeInTheDocument();
+  });
+
+  it('does not render "Other Items From Your Visit" when hideLowPriority is false and low_priority is empty', () => {
+    render(<CarePlanView result={makeMinimalCarePlan()} grading={makeEmptyGrading()} hideLowPriority={false} />);
+    expect(screen.queryByText('Other Items From Your Visit')).not.toBeInTheDocument();
+  });
 });

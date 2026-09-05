@@ -9,7 +9,16 @@ export function escapeHtml(value: string): string {
     .replace(/'/g, '&#039;');
 }
 
-export function buildPdfHtml(result: SimplifiedCarePlan, grading?: Grading): string {
+export interface BuildPdfHtmlOptions {
+  includeGlossary?: boolean;
+  includeReadability?: boolean;
+  includeLowPriority?: boolean;
+}
+
+export function buildPdfHtml(result: SimplifiedCarePlan, grading?: Grading, options?: BuildPdfHtmlOptions): string {
+  const includeGlossary = options?.includeGlossary ?? true;
+  const includeReadability = options?.includeReadability ?? true;
+  const includeLowPriority = options?.includeLowPriority ?? true;
   const sections: string[] = [];
   const h2 = (title: string) =>
     `<h2 style="font-size:16px;font-weight:600;color:#1a1a2e;margin:20px 0 10px;padding-bottom:6px;border-bottom:2px solid #E5E7EB;">${escapeHtml(title)}</h2>`;
@@ -118,14 +127,14 @@ export function buildPdfHtml(result: SimplifiedCarePlan, grading?: Grading): str
     sections.push(`${h2('Follow-Up')}<ul style="margin:0;padding-left:20px;color:#374151;">${items}</ul>`);
   }
 
-  if (result.terms && Object.keys(result.terms).length > 0) {
+  if (includeGlossary && result.terms && Object.keys(result.terms).length > 0) {
     const items = Object.entries(result.terms).map(([term, glossary]) =>
       `<div style="margin-bottom:6px;"><strong>${escapeHtml(term)}:</strong> <span style="color:#6B7280;">${escapeHtml(glossary.definition)}</span></div>`,
     ).join('');
     sections.push(`${h2('Medical Terms Glossary')}${items}`);
   }
 
-  if (grading?.enabled && grading.entries?.length) {
+  if (includeReadability && grading?.enabled && grading.entries?.length) {
     // Group entries by name: collect before and after entries
     const methodMap: Record<string, { before?: string; after?: string }> = {};
     for (const entry of grading.entries) {
@@ -140,7 +149,7 @@ export function buildPdfHtml(result: SimplifiedCarePlan, grading?: Grading): str
     sections.push(`${h2('Readability')}${items}`);
   }
 
-  if (result.low_priority?.length) {
+  if (includeLowPriority && result.low_priority?.length) {
     const items = result.low_priority.map(item => `<li>${escapeHtml(item)}</li>`).join('');
     sections.push(`${h2('Other Items')}<ul style="margin:0;padding-left:20px;color:#6B7280;">${items}</ul>`);
   }
