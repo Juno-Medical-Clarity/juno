@@ -34,6 +34,13 @@ vi.mock('../../hooks/useTrialJobSnapshot', () => ({
 }));
 
 import TrialPage from '../../pages/TrialPage';
+// See ResultScreen.test.tsx for how this was generated (the real Pydantic
+// envelope/grading/care-plan models, not a hand-typed object) and why it
+// matters: it's the only fixture in this suite that renders CarePlanView's
+// hook-bearing branches (ResultCard, MedicalTerm), which is what actually
+// blank-screened in production when frontend/ and frontend-trial/ resolved
+// two separate copies of React.
+import realCarePlanOutput from '../fixtures/realCarePlanOutput.fixture.json';
 
 function makeFile(name: string) {
   return new File(['hello'], name, { type: 'text/plain' });
@@ -147,5 +154,26 @@ describe('TrialPage', () => {
     await user.click(screen.getByRole('button', { name: 'Start over' }));
     expect(screen.getByRole('button', { name: 'Simplify' })).toBeInTheDocument();
     expect(screen.queryByText(/session ended/i)).not.toBeInTheDocument();
+  });
+
+  it('renders a full, realistic completed care plan end to end without blanking the page', async () => {
+    const user = userEvent.setup();
+    const { rerender } = render(<MemoryRouter><TrialPage /></MemoryRouter>);
+
+    await createJob(user);
+    expect(useTrialJobSnapshotMock).toHaveBeenLastCalledWith('job-1');
+
+    const realCompletedDoc: TrialJobDoc = {
+      status: 'completed', stage: 5, name: 'High Blood Pressure', error_data: null,
+      output_data: realCarePlanOutput as unknown as Record<string, unknown>,
+    };
+    useTrialJobSnapshotMock.mockReturnValue({ jobDoc: realCompletedDoc, exists: true, loading: false, error: null });
+    await act(async () => { rerender(<MemoryRouter><TrialPage /></MemoryRouter>); });
+
+    expect(screen.getByText('High Blood Pressure')).toBeInTheDocument();
+    expect(screen.getByText(/Lisinopril/)).toBeInTheDocument();
+    // The page (Footer included) must still be there — not just the empty
+    // fragment left behind by an uncaught render exception.
+    expect(document.body).not.toBeEmptyDOMElement();
   });
 });

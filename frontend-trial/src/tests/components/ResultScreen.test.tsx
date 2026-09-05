@@ -10,6 +10,16 @@ vi.mock('../../analytics/ga', () => ({ trackEvent: vi.fn() }));
 
 import ResultScreen from '../../components/ResultScreen';
 import type { TrialJobDoc } from '../../hooks/useTrialJobSnapshot';
+// A real backend envelope (built by running the actual Pydantic pipeline
+// models — CarePlanV1_2, Grading/build_grading_with_before_after_score,
+// Metrics — against backend/tests/fixtures/care_plan_v1_2.json, not
+// hand-typed). Unlike the minimal fixtures below, this exercises the
+// non-empty reason_for_visit / medications / warning_signs / terms-glossary
+// branches of @main/components/CarePlanView, which is what actually renders
+// ResultCard (useState) and MedicalTerm (useState/useId/useRef/useEffect)
+// from the main app's React copy — the exact path that was blank-screening
+// in production (see vite.config.ts's react/react-dom aliases).
+import realCarePlanOutput from '../fixtures/realCarePlanOutput.fixture.json';
 
 const completedJobDoc: TrialJobDoc = {
   status: 'completed', stage: 5, name: 'Jan 5 Care Plan', error_data: null,
@@ -55,5 +65,55 @@ describe('ResultScreen', () => {
     render(<ResultScreen jobDoc={completedJobDoc} jobId="job-1" deletedRef={deletedRef} onRestart={vi.fn()} />);
     await user.click(screen.getByRole('button', { name: 'Download report' }));
     expect(downloadReportMock).toHaveBeenCalledOnce();
+  });
+
+  it('renders a full realistic backend payload (with terms glossary + medications + warning signs) without throwing', () => {
+    const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
+    const jobDoc: TrialJobDoc = {
+      status: 'completed', stage: 5, name: 'High Blood Pressure', error_data: null,
+      output_data: realCarePlanOutput as unknown as Record<string, unknown>,
+    };
+    const { container } = render(<ResultScreen jobDoc={jobDoc} jobId="job-real-1" deletedRef={deletedRef} onRestart={vi.fn()} />);
+    expect(screen.getByText('High Blood Pressure')).toBeInTheDocument();
+    // Renders a medication (exercises CarePlanView's list branches).
+    expect(screen.getByText(/Lisinopril/)).toBeInTheDocument();
+    // The summary text contains "hypertension", which is in the terms
+    // glossary — renderTextWithTerms wraps it in <MedicalTerm>, a component
+    // with useState/useId/useRef/useEffect. This is the exact render path
+    // that threw "Cannot read properties of null (reading 'useState')" in
+    // production before the react/react-dom aliases in vite.config.ts.
+    expect(container.querySelectorAll('.medical-term').length).toBeGreaterThan(0);
+    expect(consoleErrorSpy).not.toHaveBeenCalled();
+    consoleErrorSpy.mockRestore();
+  });
+
+  it('renders the care plan without crashing when grading is missing entirely', () => {
+    const jobDoc: TrialJobDoc = {
+      status: 'completed', stage: 5, name: 'No Grading', error_data: null,
+      output_data: {
+        metrics: { created_at: '2026-01-05T10:00:00Z' },
+        care_plan: { doc_type: 'care_plan', urgency: 'normal', version: '1.2', summary: 'Drink water.', reason_for_visit: [], diagnosis: { details: [] }, medications: [], tests: [], procedures: [], other: [], follow_up: [], warning_signs: [], questions: [], low_priority: [] },
+        // grading key omitted entirely — simulates a partial/malformed write.
+      },
+    };
+    render(<ResultScreen jobDoc={jobDoc} jobId="job-3" deletedRef={deletedRef} onRestart={vi.fn()} />);
+    expect(screen.getByText('No Grading')).toBeInTheDocument();
+    expect(screen.getByText('Drink water.')).toBeInTheDocument();
+    // No before/after score widget when there's nothing to compute it from.
+    expect(screen.queryByText(/→/)).not.toBeInTheDocument();
+  });
+
+  it('shows an explicit restart message — never a blank screen — when a completed job has null output_data', () => {
+    const onRestart = vi.fn();
+    const jobDoc: TrialJobDoc = {
+      status: 'completed', stage: 5, name: 'Ghost Job', error_data: null, output_data: null,
+    };
+    const { container } = render(
+      <ResultScreen jobDoc={jobDoc} jobId="job-4" deletedRef={deletedRef} onRestart={onRestart} />,
+    );
+    expect(container).not.toBeEmptyDOMElement();
+    expect(screen.getByText(/couldn't load your results/)).toBeInTheDocument();
+    screen.getByRole('button', { name: 'Start over' }).click();
+    expect(onRestart).toHaveBeenCalledOnce();
   });
 });
