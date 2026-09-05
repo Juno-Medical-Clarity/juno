@@ -1,0 +1,21 @@
+/* frontend-trial/src/App.css */
+@import '../../frontend/src/App.css';
+@import '../../frontend/src/pages/care-plan/CarePlanPage.css';
+
+/* Trial-only additions below — centered single-column layout, no sidebar/nav offset */
+.trial-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.trial-footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
