@@ -47,13 +47,20 @@ jobs:
             --substitutions "_BACKEND_IMAGE=$BACKEND_IMAGE,_REGION=$GCP_REGION" \
             ./backend
 
+      - name: Ensure trial Cloud Tasks queue exists
+        run: |
+          gcloud tasks queues create care-plan-jobs-trial \
+            --location "$GCP_REGION" --project "$GCP_PROJECT_ID" \
+            --max-concurrent-dispatches=5 --max-dispatches-per-second=2 \
+            || echo "queue already exists — continuing"
+
       - name: Configure juno-api env vars and secrets
         run: |
           WORKER_URL=$(gcloud run services describe juno-worker \
             --region "$GCP_REGION" --project "$GCP_PROJECT_ID" \
             --format='value(status.url)')
 
-          API_ENV_VARS="GCP_PROJECT_ID=$GCP_PROJECT_ID,GCP_BUCKET_NAME=$GCP_BUCKET_NAME,GCP_LOCATION=global,VERTEX_AI_MODEL=gemini-3.5-flash,SIMPLIFY_DEFAULT_VERSION=v1-2,FIRESTORE_DATABASE_ID=(default),CLOUD_TASKS_QUEUE=projects/$GCP_PROJECT_ID/locations/$GCP_REGION/queues/care-plan-jobs,WORKER_URL=$WORKER_URL,WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com,JOB_TIMEOUT_SECONDS_SINGLE=300,JOB_TIMEOUT_SECONDS_BATCH=900"
+          API_ENV_VARS="GCP_PROJECT_ID=$GCP_PROJECT_ID,GCP_BUCKET_NAME=$GCP_BUCKET_NAME,GCP_LOCATION=global,VERTEX_AI_MODEL=gemini-3.5-flash,SIMPLIFY_DEFAULT_VERSION=v1-2,FIRESTORE_DATABASE_ID=(default),CLOUD_TASKS_QUEUE=projects/$GCP_PROJECT_ID/locations/$GCP_REGION/queues/care-plan-jobs,WORKER_URL=$WORKER_URL,WORKER_SERVICE_ACCOUNT=juno-worker-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com,JOB_TIMEOUT_SECONDS_SINGLE=300,JOB_TIMEOUT_SECONDS_BATCH=900,CLOUD_TASKS_QUEUE_TRIAL=projects/$GCP_PROJECT_ID/locations/$GCP_REGION/queues/care-plan-jobs-trial,TRIAL_RATE_LIMIT_SALT=${{ secrets.TRIAL_RATE_LIMIT_SALT }}"
 
           gcloud run services update juno-api \
             --region "$GCP_REGION" \

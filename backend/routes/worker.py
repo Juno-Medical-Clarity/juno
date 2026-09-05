@@ -54,6 +54,7 @@ def execute_job(job_id: str):
 
         gcs_temp_dir: Path | None = None
         is_gcs_dataset_job = False
+        job: JobDoc | None = None
 
         try:
             job_doc = get_job_doc(job_id)
@@ -231,5 +232,8 @@ def execute_job(job_id: str):
             if is_gcs_dataset_job:
                 from utils.gcs import cleanup_dataset_inputs
                 cleanup_dataset_inputs(job_id)
+            if job is not None and getattr(job, "is_trial", False) and job.input_pdf_gcs_uri:
+                from utils.gcs import delete_gcs_object
+                delete_gcs_object(job.input_pdf_gcs_uri)
 
     return Markers.Worker.JobExecute.execute(_run)

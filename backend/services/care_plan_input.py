@@ -19,14 +19,17 @@ from errors import ErrorCode, JunoError
 logger = logging.getLogger(__name__)
 
 
-def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
-    """Upload combined input PDF bytes and return a gs:// URI."""
+def upload_combined_pdf(pdf_bytes: bytes, user_id: str, *, is_trial: bool = False) -> str:
+    """Upload combined input PDF bytes and return a gs:// URI. is_trial routes to a
+    visually distinct prefix (care_plan_trial/) so a GCS lifecycle rule can safely
+    target only trial uploads — see 05-retention-automation/PRD.md §4.10/§9 Q3."""
     bucket_name = os.environ.get(Constants.Storage.GCS_BUCKET_ENV_VAR, "")
     if not bucket_name:
         raise RuntimeError("GCP_BUCKET_NAME is not configured")
 
     object_id = str(uuid.uuid4())
-    blob_name = f"care_plan/{user_id}/inputs/{object_id}.pdf"
+    prefix = "care_plan_trial" if is_trial else "care_plan"
+    blob_name = f"{prefix}/{user_id}/inputs/{object_id}.pdf"
 
     bucket = get_gcs_bucket(bucket_name)
     blob = bucket.blob(blob_name)
