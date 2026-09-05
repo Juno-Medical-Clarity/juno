@@ -9,4 +9,14 @@ describe('PrivacyPage', () => {
     const link = screen.getByRole('link', { name: /back/i });
     expect(link).toHaveAttribute('href', '/');
   });
+
+  it('renders the approved Privacy Policy copy from the PRD', () => {
+    render(<MemoryRouter><PrivacyPage /></MemoryRouter>);
+    expect(
+      screen.getByRole('heading', { name: /privacy policy — juno care plan simplifier \(trial\)/i })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/do not upload real, identifiable patient health information \(phi\)/i)
+    ).toBeInTheDocument();
+  });
 });
