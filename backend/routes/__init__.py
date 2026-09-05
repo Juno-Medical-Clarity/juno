@@ -6,6 +6,7 @@ from routes.care_plan_jobs import care_plan_jobs_bp
 from routes.batch_jobs import batch_jobs_bp
 from routes.worker import worker_bp
 from routes.admin import admin_bp
+from routes.trial import trial_bp
 
 API_BLUEPRINTS = [
     care_plan_jobs_bp,
@@ -15,6 +16,7 @@ API_BLUEPRINTS = [
     clinician_dataset_bp,
     grading_bp,
     admin_bp,
+    trial_bp,
 ]
 
 WORKER_BLUEPRINTS = [
