@@ -94,6 +94,21 @@ jobs:
             --set-env-vars "$WORKER_ENV_VARS" \
             --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest,ATHENA_HEALTH_TEST_CLIENT_ID=athena-health-test-client-id:latest,ATHENA_HEALTH_TEST_CLIENT_SECRET=athena-health-test-client-secret:latest"
 
+      - name: Deploy anonymous-user-cleanup Cloud Run Job
+        run: |
+          gcloud run jobs deploy juno-trial-anon-cleanup \
+            --image="$BACKEND_IMAGE" \
+            --region="$GCP_REGION" \
+            --project="$GCP_PROJECT_ID" \
+            --command=python \
+            --args="-m,scripts.cleanup_anonymous_users" \
+            --update-env-vars="GCP_PROJECT_ID=$GCP_PROJECT_ID,FIRESTORE_DATABASE_ID=(default)" \
+            --update-secrets="FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest" \
+            --task-timeout=1800 \
+            --max-retries=0 \
+            --memory=512Mi \
+            --cpu=1
+
   deploy-frontend:
     needs: deploy-backend
     runs-on: ubuntu-latest
