@@ -47,6 +47,24 @@ def get_gcs_bucket(bucket_name: str | None = None):
     return _gcs_client().bucket(name)
 
 
+def delete_gcs_object(gcs_uri: str) -> None:
+    """Best-effort delete of a gs:// object. Swallows NotFound and logs any
+    other failure — GCS cleanup failing must never fail the caller (job
+    completion or the DELETE route); the expires_at TTL is the safety net."""
+    if not gcs_uri.startswith("gs://"):
+        logger.warning("gcs: delete_gcs_object called with non-gs:// uri=%s", gcs_uri)
+        return
+    _, _, rest = gcs_uri.partition("gs://")
+    bucket_name, _, blob_name = rest.partition("/")
+    try:
+        _gcs_client().bucket(bucket_name).blob(blob_name).delete()
+    except Exception as exc:
+        from google.api_core.exceptions import NotFound
+        if isinstance(exc, NotFound):
+            return
+        logger.exception("gcs: delete_gcs_object failed for uri=%s", gcs_uri)
+
+
 # ---------------------------------------------------------------------------
 # Batch dataset download / cleanup workflow (SP2)
 # ---------------------------------------------------------------------------
