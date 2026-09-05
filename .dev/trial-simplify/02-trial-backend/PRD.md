@@ -266,6 +266,56 @@ def delete_trial_job(job_id: str, user_id: str):
     return Markers.Trial.DeleteJob.execute(_handler)
 ```
 
+**GCS upload prefix — trial uploads get a distinct prefix (added 2026-09-05, resolves SP5
+§9 Q3):** `upload_combined_pdf` (`services/care_plan_input.py`) is shared with the main
+app's `POST /care_plan/jobs` route (the same helper this section's docstring already
+calls out). It originally wrote every caller's PDF to a single
+`care_plan/{user_id}/inputs/{object_id}.pdf` prefix — SP5's design pass
+(`05-retention-automation/PRD.md` §4.10) found this makes trial and main-app uploads
+indistinguishable by path, which blocks a safe GCS lifecycle-rule backstop (a lifecycle
+rule can only match by prefix/suffix/age, nothing collection- or field-aware). Per SP5 §9
+Q3 (approved by the user, 2026-09-05: "give a distinct prefix if you can, if cheap"),
+`upload_combined_pdf` gains an `is_trial` keyword and routes trial uploads to
+`care_plan_trial/{user_id}/inputs/{object_id}.pdf` instead:
+
+```python
+def upload_combined_pdf(pdf_bytes: bytes, user_id: str, *, is_trial: bool = False) -> str:
+    """Upload combined input PDF bytes and return a gs:// URI. is_trial routes to a
+    visually distinct prefix (care_plan_trial/) so a GCS lifecycle rule can safely
+    target only trial uploads — see 05-retention-automation/PRD.md §4.10/§9 Q3."""
+    bucket_name = os.environ.get(Constants.Storage.GCS_BUCKET_ENV_VAR, "")
+    if not bucket_name:
+        raise RuntimeError("GCP_BUCKET_NAME is not configured")
+
+    object_id = str(uuid.uuid4())
+    prefix = "care_plan_trial" if is_trial else "care_plan"
+    blob_name = f"{prefix}/{user_id}/inputs/{object_id}.pdf"
+
+    bucket = get_gcs_bucket(bucket_name)
+    blob = bucket.blob(blob_name)
+    blob.upload_from_string(pdf_bytes, content_type="application/pdf")
+    return f"gs://{bucket_name}/{blob_name}"
+```
+
+`is_trial` defaults to `False`, so every existing call site in `care_plan_jobs.py` /
+`batch_jobs.py` (main-app uploads) is byte-for-byte unaffected and keeps writing to
+`care_plan/` — this is purely additive to the shared function. **§4.1's
+`_resolve_trial_input` call site above changes to pass the new flag:**
+
+```python
+pdf_gcs_uri = upload_combined_pdf(raw_pdf_bytes, user_id, is_trial=True) if raw_pdf_bytes else None
+```
+
+(replaces the `upload_combined_pdf(raw_pdf_bytes, user_id)` line in `_resolve_trial_input`
+above.)
+
+**Worker-side cleanup still lines up:** `worker.py`'s `finally`-block cleanup (§4.5) calls
+`delete_gcs_object(job.input_pdf_gcs_uri)` on whatever URI is stored on the job doc — it
+never parses or depends on the prefix itself, only on the full `gs://` URI already written
+at upload time. Since `job.input_pdf_gcs_uri` for a trial job now simply *contains*
+`care_plan_trial/...` instead of `care_plan/...`, no change is needed to §4.5's or §4.6's
+delete logic — both retention layers keep working unmodified against the new path.
+
 ### 4.2 Rate limiter: new `backend/utils/rate_limit.py`
 
 **Why Firestore, not in-memory:** Cloud Run autoscales `juno-api` across N instances with
@@ -868,7 +918,7 @@ is tracked there, not here.)
 | Q4 | Does `GET /trial/jobs/<job_id>` need to exist? | **[RESOLVED: no, dropped from the contract.]** SP3 subscribes to Firestore directly via `onSnapshot`, identical to the main app's `useJobSnapshot` — see §5. |
 | Q5 | Fixed vs. sliding rate-limit window? | **[RESOLVED: fixed, hour-aligned UTC.]** Accepts a boundary-burst edge case (up to ~2× the nominal limit for requests straddling the hour mark) for a single-document atomic transaction per check; a sliding-log approach needs a timestamp subcollection and materially more reads/writes for no proportionate benefit at trial scale. |
 | Q6 | Firestore security rules changes for `is_trial` docs? | **[RESOLVED: none.]** `allow write: if false` already forces every write through the Admin SDK (bypasses rules); `allow get` already covers anon-auth same-uid reads with zero changes. See §4.11. |
-| Q7 | Should trial jobs use a separate Cloud Tasks queue, and is a Cloud Run `--max-instances` ceiling also needed? | **[RESOLVED: yes to the queue split (§4.9)]** — `care-plan-jobs-trial` with its own low `--max-concurrent-dispatches`/`--max-dispatches-per-second`, throughput-isolating trial traffic from the main `care-plan-jobs` queue even though both dispatch to the same `juno-worker` service. **[DEFERRED to SP4]** for `--max-instances`: still recommended as the final cost-ceiling layer on both `juno-api` and `juno-worker`, but it's a deploy-flag change belonging to SP4's Hosting/CI work, not a file this PRD's implementer touches. One dependency to flag now: whichever SP adds it must confirm the deploying service account already has the Cloud Tasks queue IAM role SP2's own new deploy step needs (§8 item 2) — same account, same ask, worth doing together. |
+| Q7 | Should trial jobs use a separate Cloud Tasks queue, and is a Cloud Run `--max-instances` ceiling also needed? | **[RESOLVED: yes to the queue split (§4.9)]** — `care-plan-jobs-trial` with its own low `--max-concurrent-dispatches`/`--max-dispatches-per-second`, throughput-isolating trial traffic from the main `care-plan-jobs` queue even though both dispatch to the same `juno-worker` service. **[RESOLVED for `--max-instances`, per user 2026-09-05]** — decided in SP4's PRD, not here (`04-hosting-split-and-legal/PRD.md` §4.6, since SP4 owns `deploy.yml`): `juno-api` = 10, `juno-worker` = 5. One dependency still to flag: whichever deploy step ends up creating `care-plan-jobs-trial` must confirm the deploying service account already has the Cloud Tasks queue IAM role SP2's own new deploy step needs (§8 item 2) — same account, same ask, worth doing together. |
 | Q8 | Should `TRIAL_RATE_LIMIT_SALT` live in Secret Manager or a plain env var/GitHub secret? | **[RESOLVED: plain env var/GitHub secret.]** The salt only raises the bar against trivial reversal of hashed IPs in Firestore — it is not protecting a high-value credential the way `FIREBASE_SERVICE_ACCOUNT_JSON` is. Secret Manager would add provisioning overhead (new secret resource, IAM binding, `--set-secrets` wiring) with no proportionate benefit here. |
 | Q9 | Does this PRD fix the pre-existing "orphan Firestore doc when Cloud Tasks config is missing" bug in `POST /care_plan/jobs`? | **[RESOLVED: no, out of scope for the existing route.]** The **new** trial route validates `require_env(...)` before writing the Firestore doc (§4.1), so it never has this bug itself. Fixing `care_plan_jobs.py`'s existing ordering is a separate, low-risk follow-up flagged here for a future SP, not bundled into this one to keep this PRD's diff scoped to purely additive trial code. |
 | Q10 | Firestore TTL policy risk on the shared `care_plan_outputs` collection — could enabling it accidentally delete main-app job docs? | **[RESOLVED: no, verified by construction — see §4.3.]** Firestore TTL only ever deletes a document where the target field is present and holds a Timestamp; a `null` value (which every main-app doc has, since `to_firestore()` writes `expires_at: null` explicitly) is permanently skipped. This is the single highest-blast-radius risk in this design and it is resolved structurally, not by operational discipline alone. |
@@ -876,3 +926,4 @@ is tracked there, not here.)
 | Q12 | Does the trial route accept `doc_id` input like the main app? | **[RESOLVED: no.]** The trial has no login and no prior uploads to reference by `doc_id`; `_resolve_trial_input` supports only `text` and `files`. |
 | Q13 | Is `X-Forwarded-For`'s last value always trustworthy? | **[RESOLVED for the current topology.]** Cloud Run is the only proxy hop today (no external HTTPS Load Balancer/Cloud Armor/CDN — confirmed against `deploy.yml`), so the rightmost XFF value is Google-appended and trustworthy. **[DEFERRED]**: if any future project change puts Cloud Run behind an additional external LB/CDN layer, `get_client_ip()`'s "take the last value" logic must change to "take the second-to-last value" — flagged here for whoever adds such a layer. |
 | Q14 | Should `grading_enabled`/`version` be client-controlled for the trial, matching the main app's request model? | **[RESOLVED: no.]** Hard-coded server-side (`grading_enabled=True`, `version="v1-2"`), any client-supplied value silently ignored — matches the product scope's "no grading option shown, grading always runs" (brainstorm §2). |
+| Q15 | Should trial GCS uploads move off the shared `care_plan/` prefix onto a distinct one? | **[RESOLVED: yes, per user 2026-09-05]** — raised by SP5's design pass (`05-retention-automation/PRD.md` §4.10/§9 Q3), which found `care_plan/{user_id}/inputs/{uuid}.pdf` indistinguishable between trial and main-app uploads, blocking a safe lifecycle-rule backstop. `upload_combined_pdf` now takes `is_trial` and writes trial uploads to `care_plan_trial/{user_id}/inputs/{uuid}.pdf` (§4.1); main-app behavior is unchanged (`is_trial` defaults `False`). Enables SP5's prefix-scoped lifecycle rule. |

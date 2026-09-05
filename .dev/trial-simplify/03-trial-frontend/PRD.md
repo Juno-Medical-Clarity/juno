@@ -764,6 +764,7 @@ export const ALLOWED_UPLOAD_EXTENSIONS = [
 export const MAX_FILES = 5;                          // SP2 Constants.Trial.MAX_FILE_COUNT
 export const MAX_FILE_BYTES = 10 * 1024 * 1024;       // Constants.Uploads.MAX_FILE_BYTES
 export const MAX_AGGREGATE_BYTES = 25 * 1024 * 1024;  // Constants.Uploads.MAX_AGGREGATE_FILE_BYTES
+export const MAX_TEXT_LENGTH = 100_000;               // §9 Q4 — client-side only, no server mirror
 
 export function validateFiles(selected: File[]): string | null {
   if (selected.length === 0) return null;
@@ -788,9 +789,17 @@ export function validateFiles(selected: File[]): string | null {
   }
   return null;
 }
+
+export function validateText(text: string): string | null {
+  if (text.length > MAX_TEXT_LENGTH) {
+    return `Pasted text is too long (max ${MAX_TEXT_LENGTH.toLocaleString()} characters, ` +
+      `got ${text.length.toLocaleString()}). Try shortening it or uploading a file instead.`;
+  }
+  return null;
+}
 ```
 
-These four numbers mirror SP2's server-side values (`Constants.Trial.MAX_FILE_COUNT=5`,
+These four file-related numbers mirror SP2's server-side values (`Constants.Trial.MAX_FILE_COUNT=5`,
 `Constants.Uploads.MAX_FILE_BYTES`/`MAX_AGGREGATE_FILE_BYTES`, unchanged from the main
 app) exactly, but there is **no shared source of truth across the Python/TypeScript
 boundary** — this is the same situation SP1's own Q4 already identified and deferred for
@@ -798,10 +807,14 @@ the main app's extension list. The server (SP2 §5) is authoritative regardless:
 here only degrades from "instant client feedback" to "a 400 after a wasted upload," never
 a correctness or security problem, since the server always re-validates independently.
 
-**Paste-text path:** no client-side length cap is applied. No `MAX_TEXT_LENGTH`-shaped
-constant exists anywhere in the backend (confirmed: `Constants.Uploads` only caps files),
-so there is no server value to mirror and no evidence a cap is needed. Left as an
-explicit open question rather than an invented threshold (§9 Q4).
+**Paste-text path (§9 Q4, resolved 2026-09-05):** a client-side cap of 100,000 characters
+(`MAX_TEXT_LENGTH`, roughly 15–20k words — far beyond any realistic care plan) is enforced
+via `validateText`, shown as an inline `.error-box` message on the Upload screen (§4.11)
+when exceeded, blocking submit the same way `validateFiles` does for the file path. No
+`MAX_TEXT_LENGTH`-shaped constant exists anywhere in the backend today (confirmed:
+`Constants.Uploads` only caps files), so this cap has no server value to mirror and is a
+purely client-side UX guard — the server remains authoritative regardless. Flagged to SP2
+as a possible follow-up if a matching server-side cap is judged worth adding later.
 
 ### 4.11 The three screens — component sketches and visual layout
 
@@ -823,8 +836,10 @@ brief excludes).
   WEBP/HEIC) · Up to 5 files". On a valid (post-validation) selection, fires
   `files_selected` (GA, `file_count` + sorted-unique `file_types`).
 - **Text mode:** `.text-input-area` textarea, same placeholder tone as the main app's.
-- Inline `.error-box` for validation errors (client-side, from `validateFiles`) and
-  submission errors (server 4xx/5xx, §4.14).
+  Capped client-side at 100,000 characters (`validateText`, §4.10, §9 Q4) — pasting past
+  the cap surfaces the inline error below rather than truncating silently.
+- Inline `.error-box` for validation errors (client-side, from `validateFiles`/`validateText`)
+  and submission errors (server 4xx/5xx, §4.14).
 - One button, `.cta-btn`, label **"Simplify"** — the *only* button on this screen (no
   grading toggle, no preset-data card, no version selector). `disabled` when
   `authState !== 'ready'` OR no valid input OR a submit is already in flight (label
@@ -1302,6 +1317,8 @@ projects' test runs together.
 - Rejects a valid-individually-sized set whose total exceeds 25MB.
 - Empty selection returns `null` (no error) — distinguishing "nothing selected yet" from
   "invalid selection."
+- `validateText` (§9 Q4): accepts text at/under 100,000 characters, rejects text over it
+  with the exact length in the message.
 
 **`src/tests/utils/downloadReport.test.ts`** (new):
 - Mocks `window.open` to return a fake window object with a `document` stub and a `print`
@@ -1449,9 +1466,9 @@ but vitest's transform does not run full `tsc` type-checking — flagged as a ga
 | # | Item | Status |
 |---|---|---|
 | Q1 | Should `ALLOWED_UPLOAD_EXTENSIONS` live in a new shared `frontend/src/constants.ts` entry both `frontend/` and `frontend-trial/` import, instead of two independently hardcoded copies? | **[DEFERRED]** — SP1's own PRD (§9 Q4) already raised and deferred exactly this for `frontend/`'s own hardcoded list, on the grounds that no shared constant currently exists and introducing one is a reasonable-but-not-required dedup. Now that SP3 exists and the duplication is real (not speculative), this is worth doing as a small follow-up — but it touches `frontend/src/constants.ts` (out of this PRD's "no changes to `frontend/`" non-goal) and is not required for SP3's own correctness, so it is left as a flagged follow-up rather than expanded into this PRD's scope. |
-| Q2 | If the `@main` alias fails `tsc -b` type-checking (§4.4) and the fallback (copying 5 files) is used instead, who keeps the copies in sync when `frontend/src`'s originals change? | **[OPEN]** — no automated drift-detection is proposed here (e.g. a CI diff check between the copy and the source). If the fallback is ever invoked, this should be revisited; the copy's header comment (§4.4) at least makes the staleness risk visible to the next person reading either file, which is the minimum viable mitigation, not a complete one. |
+| Q2 | If the `@main` alias fails `tsc -b` type-checking (§4.4) and the fallback (copying 5 files) is used instead, who keeps the copies in sync when `frontend/src`'s originals change? | **[RESOLVED: no drift detection — per user 2026-09-05]** — accepted risk for a prototype; no automated drift-detection (e.g. a CI diff check between the copy and the source) is added. The copy's header comment (§4.4) remains the only mitigation, making the staleness risk visible to the next person reading either file, but no machinery is built to detect or prevent drift if the fallback is ever invoked. |
 | Q3 | Step 3's pipeline-step label: this PRD uses the backend's `Constants.Pipeline.PIPELINE_V1_2_STEPS` label ("Simplifying language"), which differs from `frontend/`'s own hardcoded `INITIAL_STEPS` const ("Rewriting to plain language") for the same step id. | **[RESOLVED for this PRD: use the backend's label.]** The backend enum is the task brief's cited authoritative source; the main app's copy is a small, pre-existing, out-of-scope drift this PRD does not fix (that would be a `frontend/src` change, outside this PRD's non-goals). |
-| Q4 | Should the paste-text textarea have a client-side character/length cap? | **[OPEN]** — no server-side text-length limit exists to mirror (`Constants.Uploads` only caps files), so no cap is implemented; if a very large paste turns out to cause a real problem (slow request, a server-side limit added later by another SP), a cap can be added here without any coordination cost, since it's a purely client-side UX guard. |
+| Q4 | Should the paste-text textarea have a client-side character/length cap? | **[RESOLVED: yes, a generous 100,000-character cap — per user 2026-09-05]** — user's guidance: "Yes. Maybe a large limit?" 100,000 characters (roughly 15–20k words) is far beyond any realistic care plan while still bounding abuse and Gemini cost. Enforced client-side via a new `validateText` function alongside `validateFiles` in `validateFiles.ts` (§4.10), with a clear inline error message when exceeded. No server-side text-length limit exists to mirror (`Constants.Uploads` only caps files) — the server remains authoritative regardless, and this is flagged to SP2 as a possible follow-up if a matching server-side cap is needed. |
 | Q5 | Will `VITE_GA_MEASUREMENT_ID` be set in local dev / CI test runs, or only in `deploy.yml`'s production build? | **[RESOLVED, matches SP4's design]** — SP4's `deploy.yml` (§4.3 of that PRD) only sets this env var in the `Build trial (frontend-trial/)` CI step; local `npm run dev` and the `frontend-trial` CI test job (§7) will not have it set, so `analytics/ga.ts` is a no-op in both — exactly the intended behavior (§4.15, §7's `ga.test.ts`), not an oversight. |
 | Q6 | The "Try again" button on the *error* sub-view of the result screen (§4.11) — is this in tension with the brief's explicit "no Another care plan button" exclusion? | **[RESOLVED: Approved by user 2026-09-05 — the ERROR screen gets a "Try again" button returning to the upload screen. The SUCCESS/results screen keeps the original exclusion: no "Another care plan" button. Rationale: without it a failed run is a dead end requiring a manual page reload, which reads as broken on a publicly shared link.]** |
 | Q7 | Should a `tsc -b`/`npm run build` type-check step be added to `ci.yml`'s new `frontend-trial` job (§7), given `npm run test` alone doesn't fully re-verify the alias at the type level? | **[DEFERRED]** — reasonable follow-up (and would strengthen the exact alias-fragility concern §4.4 flags), but the existing `frontend` CI job also only runs `npm run test`, not a separate build/typecheck step, so adding one only to the new job would be an inconsistency between the two frontend CI jobs worth deciding for both at once, not unilaterally introduced here. |

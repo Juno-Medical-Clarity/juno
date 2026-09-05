@@ -243,6 +243,8 @@ def extract_text_from_image(image_bytes: bytes, ext: str) -> str:
     if mime_type is None:
         raise JunoError(ErrorCode.UNSUPPORTED_FILE_TYPE, detail=f"extension: {ext}")
 
+    image_bytes = _maybe_downscale(image_bytes, ext)  # optional, see below
+
     client = LLMClient()
     text = client.generate_text_from_image(
         image_bytes=image_bytes,
@@ -261,6 +263,36 @@ def extract_text_from_image(image_bytes: bytes, ext: str) -> str:
 
 `LLMClient()` is instantiated per call here (same pattern as `care_plan/v1_2/pipeline.py`
 already uses — no shared client caching exists today, so this introduces no new pattern).
+
+**Optional downscale (§9 Q3, resolved 2026-09-05):** `_maybe_downscale` is a small,
+*optional* helper — implement it only if it stays this cheap:
+
+```python
+_MAX_LONG_EDGE_PX = 2048
+
+def _maybe_downscale(image_bytes: bytes, ext: str) -> bytes:
+    """Resize an image to a max long-edge dimension before sending to Vertex.
+
+    Skips images already at or under the limit. Best-effort: on any decode
+    error, returns the original bytes unchanged rather than failing the job —
+    this is a cost/latency optimization, not a correctness requirement.
+    """
+    try:
+        image = PIL.Image.open(io.BytesIO(image_bytes))
+        if max(image.size) <= _MAX_LONG_EDGE_PX:
+            return image_bytes
+        image.thumbnail((_MAX_LONG_EDGE_PX, _MAX_LONG_EDGE_PX))
+        buf = io.BytesIO()
+        image.save(buf, format=image.format or "JPEG")
+        return buf.getvalue()
+    except Exception:
+        return image_bytes
+```
+
+This is explicitly optional, not a required part of this SP: if it interacts awkwardly
+with HEIC decoding, the `_image_to_pdf` merge path (§4.6), or otherwise adds real
+complexity, drop it entirely and call `extract_text_from_image` with the original bytes —
+the existing 10MB/file cap (§4.7) already bounds worst-case size regardless.
 
 **Why a new module instead of adding to `care_plan_input.py` directly:** every other format
 extractor (`extract_text_from_pdf`, `extract_text_from_html`) lives in `utils/`, not in
@@ -527,6 +559,7 @@ This closes survey question 5 as **[RESOLVED]** (§9).
 | `backend/requirements.txt` | Add `pillow-heif`. (`Pillow` itself already present transitively via `reportlab` — pin it explicitly here too since we now depend on it directly, not just transitively: add `Pillow` alongside.) |
 | `backend/routes/care_plan_jobs.py` | Update the two hardcoded error strings ("File must be PDF, TXT, DOCX, or HTML" / "Stored file must be PDF, TXT, or DOCX") to mention images — cosmetic, not behavioral (validation itself is driven by the now-widened `Constants.Uploads.ALLOWED_EXTENSIONS` via `is_allowed_extension`, no logic change needed there). |
 | `frontend/src/pages/care-plan/CarePlanPage.tsx` | §6. |
+| `frontend/src/constants.ts` | Add `ALLOWED_UPLOAD_EXTENSIONS` shared constant (§9 Q4, §6). |
 
 ---
 
@@ -543,8 +576,14 @@ gain image support automatically since both route through `extract_text_from_byt
 
 ## 6. Frontend Change Summary
 
-Single file, `frontend/src/pages/care-plan/CarePlanPage.tsx` (main app, not the not-yet-built
-trial app):
+Two files: `frontend/src/pages/care-plan/CarePlanPage.tsx` (main app, not the not-yet-built
+trial app) and `frontend/src/constants.ts`, which gains the shared extensions list per §9
+Q4 (resolved 2026-09-05):
+
+```ts
+// frontend/src/constants.ts — new export, alongside the existing DEFAULT_VERSION etc.
+export const ALLOWED_UPLOAD_EXTENSIONS = ['pdf', 'txt', 'docx', 'html', 'htm', 'png', 'jpg', 'jpeg', 'webp', 'heic'];
+```
 
 ```tsx
 // old (line 53-64)
@@ -563,8 +602,9 @@ const handleFiles = useCallback((selectedFiles: File[]) => {
 ```
 
 ```tsx
-// new
-const ALLOWED_UPLOAD_EXTENSIONS = ['pdf', 'txt', 'docx', 'html', 'htm', 'png', 'jpg', 'jpeg', 'webp', 'heic'];
+// new — ALLOWED_UPLOAD_EXTENSIONS now lives in frontend/src/constants.ts (§9 Q4,
+// resolved 2026-09-05), not inline here, since SP3's trial frontend needs the same list.
+import { ALLOWED_UPLOAD_EXTENSIONS } from '../../constants';
 
 const handleFiles = useCallback((selectedFiles: File[]) => {
   const invalid = selectedFiles.filter(f => {
@@ -705,10 +745,10 @@ None required to land this SP's code. Two items to be aware of, not blocking:
 
 | # | Item | Status |
 |---|---|---|
-| Q1 | Can `pillow-heif`'s prebuilt wheel actually decode HEIC on the `python:3.11-slim` deploy target, or does it need `libheif1` via apt? | **[OPEN]** — cannot be verified from the design phase without a build; blocks nothing in this PRD's code design (the fallback — one apt-get line — is fully specified in §4.6/§8) but should be verified as the first thing done in implementation, before writing the HEIC-specific test in §7. |
-| Q2 | Does Vertex's Gemini API actually accept `mime_type="image/heic"` for inline data on the specific deployed models (`gemini-1.5-pro` default, `gemini-3.5-flash` in production per `deploy.yml:56,68`), or does it need conversion to JPEG first? | **[OPEN]** — based on Google's published Gemini API image-understanding documentation, `image/heic` and `image/heif` are listed as natively supported inline-data MIME types for Gemini vision models generally; this PRD's design (§4.1, §4.3) sends raw HEIC bytes directly with no local conversion, relying on that documented support. Not independently verified against a live Vertex call in this sandbox (no network/live-credential access during design). **Fallback if wrong:** `extract_text_from_image` can decode via the same `pillow-heif`-registered `PIL.Image.open()` used in §4.6, re-encode to JPEG in-memory, and retry once with `mime_type="image/jpeg"` — a small, localized addition to `image_ocr.py` if Q2 resolves "no." Implementation must do a live smoke test against a real HEIC file through the actual deployed model before considering this SP done. |
-| Q3 | Should the frontend downscale/compress large images client-side before upload (to cut latency/cost for e.g. an uncompressed 20MB camera-RAW-adjacent photo)? | **[DEFERRED]** — out of scope for this SP (see Non-Goals §3); the existing 10MB cap already bounds worst-case size, and client-side image resizing is a meaningful independent feature (canvas resize, format re-encode) better scoped as its own follow-up if usage data shows it's needed. |
-| Q4 | Should `frontend/src/constants.ts` host a shared `ALLOWED_UPLOAD_EXTENSIONS` constant instead of the inline array added directly in `CarePlanPage.tsx` (§6), given SP3's trial frontend will need the same list? | **[DEFERRED]** — `constants.ts` currently holds only path-builder helpers (confirmed by reading the file), no extension lists; introducing a new shared constant is a reasonable dedup but not required for SP1's own correctness, since `CarePlanPage.tsx` is the only file-input in the main app today. Leave as inline in this SP; revisit when SP3 (`frontend-trial/`) is built and needs the same list, at which point sharing it becomes an actual (not speculative) duplication problem. |
+| Q1 | Can `pillow-heif`'s prebuilt wheel actually decode HEIC on the `python:3.11-slim` deploy target, or does it need `libheif1` via apt? | **[RESOLVED: proceed as designed; discover at implementation time — per user 2026-09-05]** — no need to pre-verify this from the design phase. Implementation should just try the `pillow-heif` wheel first (as designed in §4.3/§4.6) and find out empirically; the one-line `libheif1` apt-get fallback documented in §4.6/§8 already covers the case where the wheel doesn't decode HEIC on `python:3.11-slim`. Still worth confirming early in implementation, before writing the HEIC-specific test in §7, so the fallback (if needed) doesn't surprise a later step. |
+| Q2 | Does Vertex's Gemini API actually accept `mime_type="image/heic"` for inline data on the specific deployed models (`gemini-1.5-pro` default, `gemini-3.5-flash` in production per `deploy.yml:56,68`), or does it need conversion to JPEG first? | **[RESOLVED: assume supported, proceed with no pre-conversion step — per user 2026-09-05]** — per Google's published Gemini API image-understanding documentation, `image/heic`/`image/heif` are listed as natively supported inline-data MIME types, and the user's guidance is to assume that holds and build accordingly. This PRD's design (§4.1, §4.3) continues to send raw HEIC bytes directly with no local conversion. **Fallback stays in the design in case a smoke test disproves it:** `extract_text_from_image` can decode via the same `pillow-heif`-registered `PIL.Image.open()` used in §4.6, re-encode to JPEG in-memory, and retry once with `mime_type="image/jpeg"` — a small, localized addition to `image_ocr.py`. Implementation should still do a live smoke test against a real HEIC file through the actual deployed model before considering this SP done, so the fallback path is exercised for real if the assumption turns out wrong. |
+| Q3 | Should the frontend downscale/compress large images client-side before upload (to cut latency/cost for e.g. an uncompressed 20MB camera-RAW-adjacent photo)? | **[RESOLVED: optional, implement only if cheap — per user 2026-09-05]** — the user's guidance was "sure if it is easy to downscale, but if not then don't need it." A client-side (canvas-based) resize is *not* the easy path — it's real feature work (canvas resize, format re-encode, browser compatibility), which is why it was deferred originally, and that reasoning still holds: client-side downscaling remains out of scope. What *is* cheap enough to be worth doing under this same guidance is a small **backend**-side downscale in `image_ocr.py` (§4.3) before the bytes are sent to Vertex: a few lines of Pillow resizing to a sane max long-edge dimension (e.g. 2048px), skipping images already smaller. This is explicitly optional — if it turns out to add real complexity (e.g. interacting awkwardly with HEIC decoding or the `_image_to_pdf` merge path), the implementing agent has permission to drop it entirely; the existing 10MB/file cap already bounds the worst case. See §4.3 for where this would slot in. |
+| Q4 | Should `frontend/src/constants.ts` host a shared `ALLOWED_UPLOAD_EXTENSIONS` constant instead of the inline array added directly in `CarePlanPage.tsx` (§6), given SP3's trial frontend will need the same list? | **[RESOLVED: yes, put the allowed extensions in the shared constant — per user 2026-09-05]** — add `ALLOWED_UPLOAD_EXTENSIONS` to `frontend/src/constants.ts` (which already hosts small shared UI constants like `DEFAULT_VERSION`) and have `CarePlanPage.tsx` import it, rather than declaring the array inline. This gets ahead of the real duplication SP3's own PRD flags (its §9 Q1) once `frontend-trial/` needs the same list. See §6 for the updated snippet and §4.8 for the file-change entry. |
 | Q5 | Should `_image_to_pdf`'s per-image page size be letter (matching `_txt_to_pdf`'s existing convention) or should it preserve the image's native aspect ratio as a variable page size? | **[RESOLVED: letter, scaled-to-fit with aspect ratio preserved]** — matches `_txt_to_pdf`'s existing fixed-letter-page convention (§4.6 code), so the combined PDF's pages are visually consistent regardless of source format; the image itself is drawn at its native aspect ratio *within* that page (never stretched/distorted), just centered with margins. |
 | Q6 | Image size/count caps — reuse existing or add image-specific limits? | **[RESOLVED: reuse existing `MAX_FILE_BYTES`/`MAX_FILE_COUNT`/`MAX_AGGREGATE_FILE_BYTES` unchanged]** — see §4.7 for full rationale (typical photo size well under cap, Vertex's own inline-data limit is not the binding constraint, no concrete problem a new cap would solve today). |
 | Q7 | MIME detection — extension-based or magic-byte sniffing? | **[RESOLVED: extension-based]** — consistent with every other format in this codebase (`_get_extension` + `ALLOWED_EXTENSIONS` membership, no sniffing anywhere today); avoids a new `python-magic`/`libmagic1` dependency for a problem (mislabeled extension) that already exists identically for every other supported format and simply surfaces as a Vertex-side error instead of an upload-time one. |

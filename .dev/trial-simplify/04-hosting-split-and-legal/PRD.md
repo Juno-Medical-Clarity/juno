@@ -69,10 +69,10 @@ both frontends, and the legal-page copy + serving contract for SP3.
 - Any change to `frontend-trial/`'s own screens, GA instrumentation code, or job-flow
   logic — that's SP3. This PRD only defines the **contract** SP3 builds against (routes,
   footer text, env var name for the GA measurement ID).
-- The exact numeric value for Cloud Run `max-instances` — that's SP2's call (rate-limit /
-  cost-ceiling owner). This PRD specifies **where** the flag goes in `deploy.yml` and
-  proposes a starting value from existing precedent, but the final number is SP2's
-  decision (§9).
+- ~~The exact numeric value for Cloud Run `max-instances`~~ — **no longer a non-goal.**
+  SP2 and SP4 each deferred this number to the other and nobody picked one; per user
+  direction (2026-09-05) this PRD now decides it directly: `juno-api` = 10, `juno-worker`
+  = 5 (§4.6, resolves §9 Q3).
 - Firestore TTL / anonymous-account cleanup (SP5, stretch).
 - Changing `cloudbuild.yaml` / `cloudbuild-build.yaml` (backend container build) — out of
   scope, this PRD is Hosting/CORS/legal only.
@@ -429,6 +429,35 @@ deploy is recovered by re-running the normal `deploy.yml` (which always redeploy
 sites from the current `main`), not by the emergency rollback path, since "trial" has no
 historical prod-tag lineage before this initiative shipped it.
 
+**Second, independent fix in the same file — `--min-instances=1` on `juno-api` (resolves
+§9 Q4):** `rollback-production.yml`'s "Deploy rollback juno-api" step
+(`google-github-actions/deploy-cloudrun@v2`) sets `--min-instances=1` in its `flags:`
+block (lines 106-110 today) — a pre-existing inconsistency with D7's locked
+"min-instances=0, no cold-start masking" that the trial-hosting split didn't introduce,
+but which is resolved here per user direction (2026-09-05: "min instance = 0").
+
+**Old (`rollback-production.yml`, lines 106-110):**
+```yaml
+          flags: >-
+            --allow-unauthenticated
+            --memory 2Gi
+            --timeout 300
+            --min-instances=1
+```
+
+**New:**
+```yaml
+          flags: >-
+            --allow-unauthenticated
+            --memory 2Gi
+            --timeout 300
+            --min-instances=0
+```
+
+No other flag on this step changes. `juno-worker`'s rollback deploy step already sets
+`--min-instances=0` (alongside its existing `--max-instances=3`) — only `juno-api`'s
+value was inconsistent, and only `juno-api`'s changes here.
+
 ### 4.5 Cutover plan and risk
 
 This is the single riskiest step across the whole initiative (per `brainstorm.md`
@@ -482,6 +511,267 @@ before its replacement (`juno-app`) is live and reachable — worst case, for th
 seconds between step 4 and step 6, `juno-medical-clarity.web.app` still serves the *old*
 full app (not a 404, not a broken trial) while `juno-app.web.app` is already verifiable in
 parallel. The primary address only changes content at the very last deploy step.
+
+### 4.6 Cloud Run `--max-instances` — decided values (resolves §9 Q3)
+
+**Decision, per user direction (2026-09-05): `juno-api` = 10, `juno-worker` = 5.** SP2 and
+SP4 each deferred this number to the other (SP2 §9 Q7; this PRD's own §9 Q3) — nobody had
+actually picked one. Resolving it here, since this PRD is the one that owns `deploy.yml`.
+
+**Rationale:**
+- `juno-worker` is the real cost driver — it's the service making the Gemini/Vertex AI
+  calls (`JUNO_MODE=worker`), not `juno-api`, which only accepts requests and enqueues
+  Cloud Tasks. 5 concurrent worker instances is generous headroom against SP2's own
+  5-requests-per-IP-per-hour trial rate limit — even several distinct IPs bursting
+  simultaneously stays comfortably under 5 concurrent Gemini calls for realistic trial
+  traffic.
+- 5 is also consistent with existing precedent: `rollback-production.yml` already sets
+  `--max-instances=3` for `juno-worker` (§4.4) — 5 is a close, slightly more generous
+  sibling value for the primary deploy path, not an arbitrary new number.
+- `juno-api` gets a higher ceiling (10) since it's the thin, cheap, request-accepting
+  layer (no Gemini calls, no long-running work) — it can scale wider without materially
+  changing the cost picture, and a tighter `juno-api` ceiling would risk request-queueing
+  latency for legitimate traffic sharing the same service.
+
+**`deploy.yml`, `deploy-backend` job env block — old (lines 19-23):**
+```yaml
+    env:
+      GCP_PROJECT_ID: juno-medical-clarity
+      GCP_REGION: us-central1
+      GCP_BUCKET_NAME: juno-medical-clarity-backend
+      BACKEND_IMAGE: us-central1-docker.pkg.dev/juno-medical-clarity/juno/simplify-backend
+```
+
+**New:**
+```yaml
+    env:
+      GCP_PROJECT_ID: juno-medical-clarity
+      GCP_REGION: us-central1
+      GCP_BUCKET_NAME: juno-medical-clarity-backend
+      BACKEND_IMAGE: us-central1-docker.pkg.dev/juno-medical-clarity/juno/simplify-backend
+      API_MAX_INSTANCES: "10"
+      WORKER_MAX_INSTANCES: "5"
+```
+
+**`juno-api`'s `gcloud run services update` call — old (lines 58-64):**
+```yaml
+          gcloud run services update juno-api \
+            --region "$GCP_REGION" \
+            --project "$GCP_PROJECT_ID" \
+            --memory 2Gi \
+            --timeout 300 \
+            --set-env-vars "$API_ENV_VARS" \
+            --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest"
+```
+
+**New:**
+```yaml
+          gcloud run services update juno-api \
+            --region "$GCP_REGION" \
+            --project "$GCP_PROJECT_ID" \
+            --memory 2Gi \
+            --timeout 300 \
+            --max-instances "$API_MAX_INSTANCES" \
+            --set-env-vars "$API_ENV_VARS" \
+            --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest"
+```
+
+**`juno-worker`'s `gcloud run services update` call — old (lines 70-76):**
+```yaml
+          gcloud run services update juno-worker \
+            --region "$GCP_REGION" \
+            --project "$GCP_PROJECT_ID" \
+            --memory 2Gi \
+            --timeout 900 \
+            --set-env-vars "$WORKER_ENV_VARS" \
+            --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest,ATHENA_HEALTH_TEST_CLIENT_ID=athena-health-test-client-id:latest,ATHENA_HEALTH_TEST_CLIENT_SECRET=athena-health-test-client-secret:latest"
+```
+
+**New:**
+```yaml
+          gcloud run services update juno-worker \
+            --region "$GCP_REGION" \
+            --project "$GCP_PROJECT_ID" \
+            --memory 2Gi \
+            --timeout 900 \
+            --max-instances "$WORKER_MAX_INSTANCES" \
+            --set-env-vars "$WORKER_ENV_VARS" \
+            --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest,ATHENA_HEALTH_TEST_CLIENT_ID=athena-health-test-client-id:latest,ATHENA_HEALTH_TEST_CLIENT_SECRET=athena-health-test-client-secret:latest"
+```
+
+No other flag on either call changes.
+
+### 4.7 `ci.yml` — add a `frontend-trial` job (resolves §9 Q8)
+
+**Decision: extend the existing `ci.yml`, not a new workflow.** `ci.yml` already runs a
+`backend` job (ruff + pytest) and a `frontend` job (`npm run test` in `frontend/`) on
+every pull request into `main`. `frontend-trial/` needs the identical treatment once SP3
+lands it — a third job, not a rethink of the existing two.
+
+**Old (`ci.yml`, trigger):**
+```yaml
+on:
+  pull_request:
+    branches: [main]
+```
+
+**New:**
+```yaml
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+```
+
+**Why the trigger also gains `push: branches: [main]`:** not for its own sake (PR review
+already runs CI before merge) — this is a hard prerequisite for §4.8's automatic-deploy
+gate. `deploy.yml`'s new automatic trigger (§4.8) fires off *this workflow's* completion
+via `workflow_run`, which requires `ci.yml` to actually run against the post-merge `main`
+commit, not just the pre-merge PR commit (a PR's merge/squash commit on `main` is a
+different SHA than what the PR's own `pull_request`-triggered run validated).
+
+**New job, mirroring the existing `frontend` job:**
+```yaml
+  frontend-trial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: frontend-trial/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: frontend-trial
+
+      - name: Run frontend-trial tests
+        run: npm run test
+        working-directory: frontend-trial
+```
+
+Same shape as the existing `frontend` job, pointed at `frontend-trial/` — no lint step
+added beyond what `frontend`'s job already does (it has none either; `backend`'s `ruff
+check` is the only lint step today, and this PRD does not expand lint scope beyond
+matching existing precedent). Depends on SP3 actually producing a `frontend-trial/
+package-lock.json` and a `test` script — cannot be merged/tested until SP3 lands, same
+caveat as §4.3's build job.
+
+### 4.8 Automatic deploy on merge to `main` (redesigns the trigger in §4.3)
+
+**Decision, per user direction (2026-09-05):** CI should run on GitHub (§4.7, covering
+backend/frontend/frontend-trial); deploy should also run automatically once code lands on
+`main`, covering the **backend** and the **new `frontend-trial/` app** (the primary public
+address post-cutover, §4.1). **The relocated full app (`juno-app` site) explicitly does
+not get automatic deployment** — the user does not want a merge to `main` to risk that
+site, so it stays `workflow_dispatch`-only, same as `deploy.yml` is today. This is a real
+change to the trigger and job graph designed in §4.3, not just a value change — recorded
+here rather than rewritten into §4.3 to keep that section's own rationale (job ordering,
+why-one-job) intact; read the two together.
+
+**Risk, called out plainly:** automatic deploy on merge to `main` means an unreviewed (or
+review-bypassed) merge ships straight to the public trial site with no human gate in
+between. **Recommendation: gate the automatic deploy job on CI (§4.7) actually passing**,
+not merely on the push event firing — a plain `push: branches: [main]` trigger on
+`deploy.yml` would race an in-flight or failing CI run with no ordering guarantee between
+the two workflows. The design below implements this recommendation structurally (a real
+workflow dependency), rather than leaving it as an unenforced suggestion.
+
+**`deploy.yml` trigger — old:**
+```yaml
+on:
+  workflow_dispatch:
+    branches: [main]
+```
+
+**New:**
+```yaml
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+```
+
+`workflow_run` fires once `ci.yml` (§4.7) finishes running against a push to `main` —
+this is what makes "deploy depends on CI passing" a real job dependency instead of a
+convention. `workflow_dispatch` is retained unchanged, so a human can still trigger a full
+manual deploy (including the `app` target, below) at any time, exactly as today.
+
+**`deploy-backend` gains a top-level gate**, so an automatic run that followed a *failed*
+CI run never proceeds (a manual dispatch always proceeds — there is no `workflow_run`
+context to check in that event):
+```yaml
+  deploy-backend:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+```
+Because `deploy-frontend` (`needs: deploy-backend`) and `tag` (`needs: deploy-frontend`)
+already only run if their `needs:` job **succeeded** (GitHub's default `needs:` semantics
+— a skipped job does not count as success), gating `deploy-backend` alone cascades: a
+failed-CI automatic trigger skips the entire workflow, not just the first job.
+
+**Checkout must pin the exact commit CI validated**, not "whatever `main`'s HEAD happens
+to be by the time this job starts" (a second push could otherwise race ahead between CI
+finishing and deploy starting). Every job's `actions/checkout@v4` step gains:
+```yaml
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+```
+`github.event.workflow_run.head_sha` is the commit `ci.yml` actually ran against and
+reported success for; it's empty/absent on a `workflow_dispatch` run, where `github.sha`
+(the ref the dispatch was run against, `main` by default) is the correct fallback.
+
+**Within §4.3's `deploy-frontend` job, the `app`-target steps become manual-only** — the
+`trial`-target steps are unchanged and run on every trigger (automatic or manual):
+```yaml
+      - name: Install app dependencies
+        if: github.event_name == 'workflow_dispatch'
+        run: npm ci
+        working-directory: frontend
+
+      - name: Build app (frontend/)
+        if: github.event_name == 'workflow_dispatch'
+        run: npm run build
+        working-directory: frontend
+        env:
+          # unchanged from §4.3
+```
+And the combined "Deploy to Firebase Hosting" step's bash (§4.3) guards the `app` call
+the same way:
+```yaml
+          # Ordering: app before trial (§4.3) — the app branch is only reached at all on
+          # a manual dispatch, since the app target is never auto-deployed.
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            deploy_target app
+          fi
+          deploy_target trial
+```
+`deploy_target trial` always runs (both triggers) — this is the one line that makes
+"deploy to this new site for main changes" true regardless of whether the automatic
+trigger was caused by a backend-only or frontend-trial-only commit, per the user's own
+"BACKEND OR THE new frontend folder, doesn't matter" — the whole job graph runs on any
+push to `main` that passes CI, not on a path-filtered subset.
+
+**Net effect, stated plainly:**
+
+| Trigger | `deploy-backend` | `deploy-frontend`: build+deploy `trial` | `deploy-frontend`: build+deploy `app` | `tag` |
+|---|---|---|---|---|
+| Push to `main`, CI passes | Yes | Yes | **No** | Yes |
+| Push to `main`, CI fails | Skipped | Skipped | Skipped | Skipped |
+| Manual `workflow_dispatch` | Yes | Yes | Yes | Yes |
+
+The `app` site (relocated full app) is therefore only ever redeployed by a human
+explicitly running `workflow_dispatch` — exactly the "don't have to worry about deploying
+to the other site" instruction — while `trial` and the backend track `main` automatically
+once CI is green.
 
 ---
 
@@ -832,11 +1122,16 @@ subsequent normal deploy.
    still resolve to the correct project dashboards (sanity-check that the "no in-app
    change needed" conclusion holds in practice, not just in grep).
 
-**Every subsequent normal deploy (steady state):**
-1. `deploy.yml`'s Actions log shows both the `app` and `trial` deploy blocks running in
-   order, each either genuinely deploying or hitting the no-op-tolerance branch with the
-   `::warning::` message — never a silent skip of one target.
-2. Spot-check both live URLs after any deploy touching frontend code.
+**Every subsequent normal deploy (steady state), updated for §4.8's auto/manual split:**
+1. On an **automatic** run (push to `main`, CI passed, §4.8): `deploy.yml`'s Actions log
+   shows `deploy-backend` and the `trial` deploy block running — the `app`-target steps
+   show as skipped, which is correct by design, not a bug.
+2. On a **manual** `workflow_dispatch` run: the Actions log shows both the `app` and
+   `trial` deploy blocks running in order, each either genuinely deploying or hitting the
+   no-op-tolerance branch with the `::warning::` message — never a silent skip of one
+   target.
+3. Spot-check `https://juno-medical-clarity.web.app` (trial) after every automatic deploy;
+   spot-check both live URLs after any manual deploy touching frontend code.
 
 **Rollback drill (recommended once, not blocking launch):** trigger
 `rollback-production.yml` against a known-good `prod-*` tag in a low-stakes moment (e.g.
@@ -856,8 +1151,9 @@ it's ever needed for a real incident.
 2. **[RESOLVED]** Contact method supplied: `tejitpabari99@gmail.com`. Both the
    Privacy Policy (§6.2) and Terms & Conditions (§6.3) now list this address in
    place of the `[CONTACT — placeholder]` line.
-3. **Confirm the Cloud Run `max-instances` numbers** once SP2 proposes them (§9 Q4) — this
-   PRD defines *where* the flag goes in `deploy.yml` but not the final value.
+3. **[RESOLVED]** Cloud Run `max-instances` numbers are decided (`juno-api` = 10,
+   `juno-worker` = 5, per user 2026-09-05) and wired into `deploy.yml`'s design (§4.6) —
+   no further confirmation needed.
 4. **Run §4.2's one-time `firebase hosting:sites:create` / `target:apply` commands**
    (delegated to us per the brainstorm, but still requires a human to actually execute
    them with real GCP/Firebase credentials before this PRD's config changes can be merged
@@ -874,16 +1170,16 @@ it's ever needed for a real incident.
 |---|---|---|
 | Q1 | Does the existing `FIREBASE_SERVICE_ACCOUNT` secret's IAM role cover `hosting:sites:create` and `target:apply`, or only `hosting:deploy`? | **[RESOLVED]** — owner has confirmed the deploy service account's IAM already covers `hosting:sites:create` and `target:apply`; no role grant needed. See §8 item 5. |
 | Q2 | Should there be a manual-approval gate (GitHub Environment protection rule) between the `app` and `trial` deploy steps, so a human confirms `juno-app.web.app` looks right before `trial` overwrites the primary address? | **[DEFERRED]** — considered in §4.5 step 5 and rejected for now as over-engineering for a single-operator project where Hosting deploys are seconds, not minutes, and the rollback path (§4.4) is the accepted safety net. Revisit if this project ever has multiple deploy operators or the cutover risk tolerance changes. |
-| Q3 | Exact `max-instances` values for `juno-api` / `juno-worker` in `deploy.yml`'s `gcloud run services update` calls. | **[OPEN, owned by SP2]** — this PRD confirms *where* the flag belongs (a new `--max-instances "$N"` argument on both existing `gcloud run services update juno-api` / `juno-worker` calls in `deploy.yml`, using new workflow-level env vars e.g. `API_MAX_INSTANCES` / `WORKER_MAX_INSTANCES` next to `GCP_PROJECT_ID` etc.) but leaves the number itself to SP2 — note `rollback-production.yml` already uses `--max-instances=3` for `juno-worker` as one existing precedent, with no equivalent value set for `juno-api` anywhere today. |
-| Q4 | `rollback-production.yml`'s `juno-api` deploy sets `--min-instances=1`, contradicting D7's locked "min-instances=0, no cold-start masking" for the primary deploy pipeline. Pre-existing inconsistency, not introduced by this PRD. | **[OPEN, flagged for SP2]** — out of this PRD's scope (SP2 owns Cloud Run instance-count decisions per the brainstorm's D4/D7 areas), but worth resolving so an emergency rollback doesn't silently reintroduce always-warm-instance cost that D7 explicitly rejected for the trial's steady state. |
+| Q3 | Exact `max-instances` values for `juno-api` / `juno-worker` in `deploy.yml`'s `gcloud run services update` calls. | **[RESOLVED: `juno-api` = 10, `juno-worker` = 5, per user 2026-09-05]** — `juno-worker` is the real cost driver (it makes the Gemini calls); 5 concurrent is generous against SP2's 5-requests-per-IP-per-hour trial rate limit and consistent with `rollback-production.yml`'s existing `--max-instances=3` precedent for `juno-worker`. `juno-api` gets the higher ceiling (10) as the cheap, non-Gemini request layer. Wired into `deploy.yml` via new workflow-level env vars `API_MAX_INSTANCES` / `WORKER_MAX_INSTANCES` — see §4.6. |
+| Q4 | `rollback-production.yml`'s `juno-api` deploy sets `--min-instances=1`, contradicting D7's locked "min-instances=0, no cold-start masking" for the primary deploy pipeline. Pre-existing inconsistency, not introduced by this PRD. | **[RESOLVED: corrected to `--min-instances=0`, per user 2026-09-05]** — D7 is locked and applies everywhere, including the emergency rollback path; there is no reason a rollback should reintroduce always-warm-instance cost D7 explicitly rejected. See §4.4 for the exact line change. |
 | Q5 | Exact env var name (`VITE_GA_MEASUREMENT_ID`) SP3 should read for GA4 initialization. | **[RESOLVED for this PRD's purposes, confirm with SP3]** — this PRD picks the name and wires it into `deploy.yml`'s build step (§4.3) since SP3's PRD doesn't exist yet; SP3 should treat this as the contract unless SP3's own design has a strong reason to name it differently, in which case update §4.3's env var line to match. |
 | Q6 | Should `frontend-trial/vite.config.ts` pin `server.port` to `5174` explicitly? | **[RESOLVED, recommend to SP3]** — see §5's note; avoids depending on Vite's auto-increment behavior for a value baked into the backend's CORS allow-list. Not this PRD's file to edit (owned by SP3), but the CORS entry (§5) is written against this assumption and should be confirmed once SP3 exists. |
 | Q7 | Does the earlier `docs/public-version-scope.md` design (an `internal`/`public` two-target proposal with a `juno-public` site, predating the current brainstorm) need reconciling with this PRD? | **[RESOLVED: no]** — that document explored a similar idea under different names before D2 was locked; this PRD's target names (`trial`/`app`) and site ids (`juno-medical-clarity`/`juno-app`) supersede it. No code or config from that doc exists in the repo today (confirmed: `frontend/firebase.json` is still single-target), so there is nothing to migrate away from, only a naming precedent to note. |
-| Q8 | Does CI (`ci.yml`, the PR-triggered workflow, distinct from `deploy.yml`) need a `frontend-trial` test/build job? | **[DEFERRED]** — reasonable follow-up once SP3 exists and has its own test suite, but out of scope for this PRD, which is Hosting/CORS/legal-copy only; SP3's own PRD is the more natural place to decide whether `ci.yml` gains a third job. |
+| Q8 | Does CI (`ci.yml`, the PR-triggered workflow, distinct from `deploy.yml`) need a `frontend-trial` test/build job? | **[RESOLVED: yes, per user 2026-09-05]** — added as part of the automatic-deploy redesign (§4.7): the automatic deploy path (§4.8) is gated on CI passing, so CI must actually exercise `frontend-trial` for that gate to mean anything once SP3 lands it. |
 | Q9 | Does the deletion-timing language in the Privacy Policy, Terms, and footer copy (§6.2, §6.4) accurately reflect Firestore TTL's real latency? | [RESOLVED: Privacy/Terms deletion-timing wording corrected per SP5's finding — explicit DELETE is the primary, effectively-immediate path; Firestore TTL is a backstop described as "typically within a day" (documented TTL latency is up to 24h after expiry). Uploaded file deletion at extraction remains fast and is stated as such.] |
 
 **Dependencies:** Needs SP3's `frontend-trial/` to exist (with a `package-lock.json`,
 `vite.config.ts`, and a build producing `dist/`) before `deploy.yml`'s new build step can
 actually run — this PRD's CI design assumes that shape but cannot be merged/tested until
 SP3 lands. Coordinates with SP2 on CORS origin list content (§5, already includes SP2's
-trial dev port) and on the `max-instances` value (§9 Q3).
+trial dev port); the `max-instances` value SP2 deferred here is now resolved (§9 Q3, §4.6).

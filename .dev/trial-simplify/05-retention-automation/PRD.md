@@ -36,13 +36,13 @@ collection cannot leak main-app data through this mechanism, and (b) a daily job
 deletes anonymous Auth accounts older than 24 hours, designed defensively so it cannot
 touch a real user's account.
 
-**Blocking finding surfaced by this design pass (see §4.1 and §9 Q1):** SP4's drafted
-Privacy Policy text says the job record is deleted "generally within an hour." Firestore's
+**Finding surfaced by this design pass (see §4.1):** SP4's drafted Privacy Policy text
+originally said the job record is deleted "generally within an hour." Firestore's
 documented TTL behavior is deletion *within 24 hours of expiration* — not instant, and not
 bounded by "an hour." With SP2's 1-hour `expires_at` plus up to a further 24 hours of TTL
 sweep latency, an abandoned trial job's absolute worst-case lifetime is **~25 hours**, not
-"an hour." This is a real overclaim in health-adjacent public copy and should be fixed
-before launch — exact replacement text is proposed in §4.1.
+"an hour." This was a real overclaim in health-adjacent public copy; SP4 has since adopted
+the corrected wording proposed in §4.1 (see SP4 §9 Q9).
 
 ---
 
@@ -79,10 +79,12 @@ before launch — exact replacement text is proposed in §4.1.
 - **Not a general-purpose Firebase Auth admin tool.** The cleanup job does exactly one
   thing — delete anonymous accounts past a fixed age threshold — not account merging,
   not provider-linking cleanup, not any other Auth housekeeping.
-- **No GCS lifecycle rule on the existing `care_plan/` prefix** — investigated in §4.6 and
-  explicitly rejected as unsafe under the current path layout (trial and main-app uploads
-  are indistinguishable by path). A safe version requires an SP2 path change, flagged but
-  not implemented here.
+- ~~No GCS lifecycle rule on the existing `care_plan/` prefix~~ — **no longer a non-goal.**
+  Investigated in §4.10 and originally rejected as unsafe under the old path layout (trial
+  and main-app uploads were indistinguishable by path). Per user direction (2026-09-05,
+  §9 Q3), SP2 now writes trial uploads to a distinct `care_plan_trial/` prefix
+  (`02-trial-backend/PRD.md` §4.1/§9 Q15), which makes a prefix-scoped lifecycle rule
+  safe — designed as a third backstop in §4.10.
 - **No Terraform / IaC.** The repo has zero IaC today (confirmed: no `*.tf` file anywhere,
   `scripts/` holds only bash/Python one-off helpers). Introducing a new IaC toolchain for
   one small feature is disproportionate — see §9 Q7.
@@ -119,11 +121,10 @@ flag is required by the command regardless.
 **IAM required to run this command:** the Firestore Admin API method backing
 `fields ttls update` is `google.firestore.admin.v1.FirestoreAdmin.UpdateField`, gated by
 the `datastore.fields.update` permission. This is included in `roles/datastore.owner` (and
-broader roles like `roles/owner`/`roles/editor`). **Not verified against the live
-project's actual IAM bindings in this design-only pass** — flagged as [OPEN] in §9 Q1,
-mirroring SP4's identical caveat about `FIREBASE_SERVICE_ACCOUNT`'s role coverage. If the
-identity running this command (a human operator, or `GCP_SA_KEY` if wired into CI per
-§4.8) lacks it, grant `roles/datastore.owner` once.
+broader roles like `roles/owner`/`roles/editor`). **[RESOLVED, per user 2026-09-05]** —
+this design assumes the running identity already has it; the user will grant whatever
+role turns out to be missing when the command is actually run (§9 Q1). The exact
+one-time `gcloud` grant, if needed, is in §8's new "CI & IAM setup checklist."
 
 **Verifying the policy is active:**
 
@@ -139,7 +140,7 @@ Look for `ttlConfig.state: ACTIVE` in the output. A freshly-created policy start
 and the subsequent deletion sweep across already-existing documents, "can take up to 24
 hours" to fully take effect project-wide. Repeat for `trial_rate_limits`.
 
-**The latency mismatch — flagged, not resolved by this PRD (SP4's file to fix):**
+**The latency mismatch — flagged by this PRD, since resolved in SP4's file:**
 Firestore's documented TTL behavior is: *expired documents are deleted within 24 hours of
 their `expires_at` timestamp, with no stronger SLA*. This is a background sweep, not an
 instant trigger. Combined with SP2's values:
@@ -160,7 +161,7 @@ only for describing the field's *value* (1 hour), not the actual deletion event,
 trail by up to a further day. TTL is correctly understood as *the safety net for the case
 the primary path fails*, and the primary path (`DELETE /trial/jobs/<id>`, fired right after
 render) really is fast — but the copy currently reads as if TTL itself is fast, which it
-isn't. **Recommended replacement text for SP4 to adopt before launch:**
+isn't. **Replacement text SP4 has adopted:**
 
 > "The job record (including the simplified output) is deleted as soon as your browser has
 > finished displaying your results and you close or navigate away from the page. As a
@@ -168,10 +169,10 @@ isn't. **Recommended replacement text for SP4 to adopt before launch:**
 > an automatic backstop still removes it, typically within a day."
 
 This keeps the honest "we don't say nothing is stored, we say nothing is kept" framing
-SP4 already committed to, while not overclaiming TTL's speed. **This is the one blocking
-finding this PRD surfaces for a sibling SP's file** — SP4's PRD and its drafted copy should
-be amended; flagged again in §9 Q1 as `[OPEN]` since amending SP4's file is not this PRD's
-to do unilaterally.
+SP4 already committed to, while not overclaiming TTL's speed. **This was the one finding
+this PRD surfaced for a sibling SP's file** — SP4's PRD and its drafted copy have since
+been amended to adopt this exact wording; SP4's §9 now carries a `Q9` entry recording that
+resolution.
 
 ### 4.2 Re-verifying SP2's shared-collection safety claim (independent check)
 
@@ -316,8 +317,10 @@ def _is_anonymous(user: "auth.ExportedUserRecord") -> bool:
     block removing the last provider), this predicate would incorrectly treat
     it as anonymous; there is no additional signal available from
     ExportedUserRecord to distinguish that case. This is the one residual
-    risk in this design — see PRD §9 Q4 for why it's accepted rather than
-    engineered around."""
+    risk in this design — [RESOLVED: accepted risk per user 2026-09-05, no
+    additional guard] — see PRD §9 Q4. The defensive age check below
+    (_older_than) and the dry-run gate (§7, §8 item 2) remain as-is; nothing
+    further is added to engineer around this edge case."""
     return len(user.provider_data) == 0
 
 
@@ -492,8 +495,10 @@ Notes on these flags:
   service-account key is minted. **This does mean that existing service account needs the
   Firebase Authentication Admin IAM role** (`roles/firebaseauth.admin`, or the narrowest
   role that covers `identitytoolkit.accounts.list`/`.delete` — Firebase's own console
-  documents "Firebase Authentication Admin" as the intended role for exactly this) —
-  **not verified as already granted in this design-only pass; flagged §9 Q1/§8.**
+  documents "Firebase Authentication Admin" as the intended role for exactly this).
+  **[RESOLVED, per user 2026-09-05]** — this design assumes the role is already granted;
+  the user will grant it if the job's first dry-run shows an IAM error (§9 Q1, §8's new
+  "CI & IAM setup checklist").
 - `--max-retries=0`: a failed run should not auto-retry (retrying a partially-completed
   bulk-delete run adds no safety given §4.6's idempotency, and auto-retry could mask a
   persistent failure that deserves a human look rather than silent repeated attempts).
@@ -610,35 +615,91 @@ Following `docs/logging.md`'s existing conventions:
   built as part of this PRD — reusing the existing Logs Explorer query patterns is
   sufficient for a once-a-day job at this scale.
 
-### 4.10 Orphaned GCS objects — investigated, lifecycle rule rejected as unsafe
+### 4.10 Orphaned GCS objects — prefix fix adopted, lifecycle rule now designed as a third backstop (resolves §9 Q3)
 
-Traced the actual path layout (`services/care_plan_input.py::upload_combined_pdf`):
+Traced the original path layout (`services/care_plan_input.py::upload_combined_pdf`, as of
+this PRD's first draft):
 
 ```python
 blob_name = f"care_plan/{user_id}/inputs/{object_id}.pdf"
 ```
 
 **`user_id` here is a Firebase uid — indistinguishable in shape between a trial's
-anonymous uid and a main app's real (password-authenticated) uid.** There is no `is_trial`
-marker anywhere in the GCS path; trial and main-app uploads write to the exact same prefix
-pattern. GCS Object Lifecycle Management conditions (`age`, `createdBefore`, `matchesPrefix
-/matchesSuffix`, storage class, version count, etc. — the complete condition set) have no
-concept of "check this custom Firestore field before deleting," and prefix/suffix matching
-cannot separate the two use cases given this layout, because both would match
-`care_plan/**` identically.
+anonymous uid and a main app's real (password-authenticated) uid.** There was no
+`is_trial` marker anywhere in the GCS path; trial and main-app uploads wrote to the exact
+same prefix pattern. GCS Object Lifecycle Management conditions (`age`, `createdBefore`,
+`matchesPrefix`/`matchesSuffix`, storage class, version count, etc. — the complete
+condition set) have no concept of "check this custom Firestore field before deleting," and
+prefix/suffix matching could not separate the two use cases given that layout, because
+both would match `care_plan/**` identically. **This PRD originally rejected a lifecycle
+rule outright** for exactly this reason.
 
-**Decision: do not add a GCS lifecycle rule under the current path layout — it would be
-unsafe**, capable of deleting a main-app user's uploaded PDF still needed for Show-Original
-with no way to exclude it. **A safe version is possible but requires an SP2 change this
-PRD does not implement**: trial uploads would need a visually distinct prefix, e.g.
-`care_plan_trial/{user_id}/inputs/{uuid}.pdf` instead of sharing `care_plan/`. If that
-change lands, a lifecycle rule scoped to `matchesPrefix: ["care_plan_trial/"]` with `age:
-1` (day) becomes a safe, cheap third backstop for the residual "hard crash before the
-worker's `finally` block runs" risk (§9 Q3, flagged as a **potential future SP2 follow-up,
-not blocking this launch** — the existing two layers, worker `finally` + `DELETE` route,
-already cover every graceful exit path; only a true process-level SIGKILL between GCS
-upload and the `finally` block's execution is uncovered, which is rare and bounded — at
-most 25MB per orphaned object per incident).
+**Resolved 2026-09-05, per user direction ("give a distinct prefix if you can, if
+cheap"):** SP2 adopted the fix this PRD flagged as a would-be-safe path
+(`02-trial-backend/PRD.md` §4.1/§9 Q15) — `upload_combined_pdf` now takes an `is_trial`
+keyword, and trial uploads write to a visually distinct prefix,
+`care_plan_trial/{user_id}/inputs/{object_id}.pdf`, while every main-app call site
+(`is_trial` defaulting `False`) is unchanged and keeps writing `care_plan/...`. This makes
+a prefix-scoped lifecycle rule safe: `matchesPrefix: ["care_plan_trial/"]` can never match
+a main-app object, because no main-app object is ever written under that prefix.
+
+**Lifecycle rule design — a third backstop, not the primary or secondary path.** The two
+retention layers SP2 already ships (worker `finally`-block delete, §4.5's dependency; and
+the `DELETE /trial/jobs/<id>` route's best-effort delete) already cover every graceful
+job-completion path. This rule exists purely for the residual, rare case both of those
+miss: a hard process kill (SIGKILL/OOM/node preemption) between the GCS upload completing
+and the worker's `finally` block running. A short age keeps that residual exposure small
+without risking an in-flight upload being swept mid-job (the pipeline's own processing
+deadline is 300s single / 900s batch — comfortably inside a 1-day age condition).
+
+```bash
+# One-time: add a lifecycle rule to the existing bucket, scoped to the trial prefix only.
+# Age is in days; 1 day is deliberately short (a backstop for a rare failure mode, not the
+# primary deletion mechanism) but generous relative to the pipeline's own <=900s deadline.
+cat > /tmp/trial-lifecycle-rule.json <<'EOF'
+{
+  "rule": [
+    {
+      "action": {"type": "Delete"},
+      "condition": {
+        "age": 1,
+        "matchesPrefix": ["care_plan_trial/"]
+      }
+    }
+  ]
+}
+EOF
+
+# Inspect first — do not blindly overwrite if the bucket already has other lifecycle
+# rules (e.g. storage-class transitions); merge this rule into the existing "rule" array
+# instead of replacing it wholesale.
+gsutil lifecycle get gs://$GCP_BUCKET_NAME > /tmp/existing-lifecycle.json
+
+gsutil lifecycle set /tmp/trial-lifecycle-rule.json gs://$GCP_BUCKET_NAME
+```
+
+**Why `matchesPrefix: ["care_plan_trial/"]` and not the whole bucket:** the bucket
+(`juno-medical-clarity-backend`, per `deploy.yml`'s `GCP_BUCKET_NAME`) also holds
+main-app objects under `care_plan/` and any other prefixes the main app uses — a
+bucket-wide rule would delete those too. Scoping to `care_plan_trial/` is exactly what the
+prefix split above makes possible and safe.
+
+**Verification:** `gsutil lifecycle get gs://$GCP_BUCKET_NAME` after applying, confirm the
+`care_plan_trial/` rule is present; create one throwaway object under
+`care_plan_trial/test-uid/inputs/test.pdf` and confirm it disappears after the age window
+elapses, while a control object under `care_plan/` does not.
+
+**Cost:** negligible — this deletes at most a handful of ≤25MB objects/incident (the rare
+hard-crash case this backstops); GCS lifecycle-triggered deletes carry no separate
+API-call billing.
+
+**IAM required to run `gsutil lifecycle set`:** `storage.buckets.update`, covered by
+`roles/storage.admin` — already held by the CI service account
+(`github-actions-deploy@...`, confirmed, §8's new checklist) or the narrower
+`roles/storage.legacyBucketOwner`. Kept here as a one-time manual command (consistent with
+SP4's own `hosting:sites:create` and this PRD's own Cloud Scheduler setup, §4.8) rather
+than folded into `deploy.yml`'s idempotent-rerun pattern — bucket lifecycle config has no
+reason to change on every code deploy.
 
 ---
 
@@ -719,7 +780,8 @@ window, and confirm a doc with `expires_at: null` (simulating a main-app doc) do
    `FIREBASE_SERVICE_ACCOUNT_JSON` secret already used by `juno-api`/`juno-worker`) has the
    Firebase Authentication Admin IAM role**, or grant it once — needed for
    `auth.list_users`/`auth.delete_users` to succeed from the new Cloud Run Job (§4.7).
-   Cannot be verified from this design-only pass.
+   **[RESOLVED, per user 2026-09-05]** — assumed available; grant only if a dry-run
+   surfaces a permission error. Exact command in the new "CI & IAM setup checklist" below.
 2. **Flip `RETENTION_DRY_RUN` from `true` to `false`** on the Cloud Run Job, only after
    reviewing at least one real dry-run's log output (§7) and being satisfied the
    scanned/matched counts look right:
@@ -736,12 +798,137 @@ window, and confirm a doc with `expires_at: null` (simulating a main-app doc) do
 4. **Run §4.7's one-time `gcloud run jobs deploy` and §4.8's Scheduler/IAM setup once** —
    after that, `deploy.yml`'s new step (§4.7) keeps the Job's image/resources in sync
    automatically on every subsequent deploy.
-5. **Amend SP4's drafted Privacy Policy text** per §4.1's recommended replacement wording,
-   before launch — this PRD identifies the mismatch but the file to edit
-   (`04-hosting-split-and-legal/PRD.md` §6.2, and whatever `frontend-trial/` component
-   eventually renders it) belongs to SP4/SP3, not here.
+5. ~~Amend SP4's drafted Privacy Policy text per §4.1's recommended replacement wording~~
+   — **done.** SP4's Privacy Policy, Terms, and footer copy (§6.2, §6.4) have been
+   corrected to the wording proposed in §4.1; see SP4 §9 Q9. The still-open item is
+   whatever `frontend-trial/` component eventually renders that copy, which belongs to
+   SP3, not here.
 6. **Optional: set up the two recommended Cloud Monitoring alerting policies** (§4.9) —
    Console-only configuration, no code, not blocking launch.
+7. **Add the GCS lifecycle rule on the `care_plan_trial/` prefix** (§4.10, new per §9 Q3)
+   — one-time `gsutil lifecycle set` command, see the checklist below.
+
+### CI & IAM setup checklist (added 2026-09-05, resolves §9 Q1)
+
+**What CI can and can't already do.** The `GCP_SA_KEY` identity used throughout
+`deploy.yml`, `github-actions-deploy@juno-medical-clarity.iam.gserviceaccount.com`, was
+checked against the live project's IAM bindings (2026-09-05) and holds:
+`artifactregistry.writer`, `cloudbuild.builds.editor`, `iam.serviceAccountUser`,
+`run.admin`, `secretmanager.secretAccessor`, `storage.admin`. **Notably absent: any Cloud
+Tasks role.** This means CI cannot create SP2's `care-plan-jobs-trial` queue
+(`02-trial-backend/PRD.md` §4.9) despite that PRD's `deploy.yml` step attempting it —
+and because that step's `|| echo "queue already exists — continuing"` swallows *any*
+nonzero exit code, not just "already exists," **a permission-denied failure there will
+report green in CI while the queue was never actually created.** Decision: create the
+queue once, manually, below — not by granting CI a Cloud Tasks admin role it would only
+ever use once.
+
+Everything below is copy-pasteable. Items in §2 are one-time setup, run once with your own
+(Owner/Editor) `gcloud`/`firebase` login — not with CI's `GCP_SA_KEY` — matching the same
+"delegated to us, not owner-only, but still a human running it once" pattern SP4 and this
+PRD already use for `hosting:sites:create` and the Cloud Run Job/Scheduler setup.
+
+**1. GitHub repository secret to add** (Settings → Secrets and variables → Actions):
+```bash
+# SP2's trial rate-limit IP-hashing salt (02-trial-backend/PRD.md §8 item 1)
+openssl rand -hex 32
+# → paste the output as the value of a new secret named TRIAL_RATE_LIMIT_SALT
+```
+
+**2. One-time `gcloud`/`firebase` commands:**
+```bash
+export GCP_PROJECT_ID=juno-medical-clarity
+export GCP_REGION=us-central1
+
+# a. SP2's trial Cloud Tasks queue — CI cannot create this (see above). Create once:
+gcloud tasks queues create care-plan-jobs-trial \
+  --location="$GCP_REGION" --project="$GCP_PROJECT_ID" \
+  --max-concurrent-dispatches=5 --max-dispatches-per-second=2
+
+# Verify it actually exists — do not trust deploy.yml's own green checkmark for this one:
+gcloud tasks queues describe care-plan-jobs-trial \
+  --location="$GCP_REGION" --project="$GCP_PROJECT_ID"
+
+# b. Firestore TTL policy on both collections (§4.1):
+gcloud firestore fields ttls update expires_at \
+  --collection-group=care_plan_outputs --database="(default)" --project="$GCP_PROJECT_ID"
+gcloud firestore fields ttls update expires_at \
+  --collection-group=trial_rate_limits --database="(default)" --project="$GCP_PROJECT_ID"
+
+# Verify — state should read ACTIVE (may take time to transition from CREATING):
+gcloud firestore fields ttls describe expires_at \
+  --collection-group=care_plan_outputs --database="(default)" --project="$GCP_PROJECT_ID"
+
+# c. Anonymous-user cleanup Cloud Run Job — one-time create (§4.7):
+gcloud run jobs deploy juno-trial-anon-cleanup \
+  --image="us-central1-docker.pkg.dev/$GCP_PROJECT_ID/juno/simplify-backend:latest" \
+  --region="$GCP_REGION" --project="$GCP_PROJECT_ID" \
+  --command=python --args="-m,scripts.cleanup_anonymous_users" \
+  --set-env-vars="GCP_PROJECT_ID=$GCP_PROJECT_ID,FIRESTORE_DATABASE_ID=(default),RETENTION_DRY_RUN=true" \
+  --set-secrets="FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest" \
+  --task-timeout=1800 --max-retries=0 --memory=512Mi --cpu=1
+
+# d. Cloud Scheduler -> the Job above, daily at 09:00 UTC (§4.8):
+gcloud iam service-accounts create juno-scheduler-invoker \
+  --project="$GCP_PROJECT_ID" \
+  --display-name="Cloud Scheduler -> Cloud Run Jobs invoker"
+
+gcloud run jobs add-iam-policy-binding juno-trial-anon-cleanup \
+  --region="$GCP_REGION" --project="$GCP_PROJECT_ID" \
+  --member="serviceAccount:juno-scheduler-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com" \
+  --role="roles/run.invoker"
+
+gcloud scheduler jobs create http juno-trial-anon-cleanup-trigger \
+  --location="$GCP_REGION" --project="$GCP_PROJECT_ID" \
+  --schedule="0 9 * * *" \
+  --uri="https://$GCP_REGION-run.googleapis.com/apis/run.googleapis.com/v1/namespaces/$GCP_PROJECT_ID/jobs/juno-trial-anon-cleanup:run" \
+  --http-method=POST \
+  --oauth-service-account-email="juno-scheduler-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com"
+
+# e. GCS lifecycle rule on the trial upload prefix (§4.10):
+cat > /tmp/trial-lifecycle-rule.json <<'EOF'
+{"rule":[{"action":{"type":"Delete"},"condition":{"age":1,"matchesPrefix":["care_plan_trial/"]}}]}
+EOF
+gsutil lifecycle get gs://juno-medical-clarity-backend > /tmp/existing-lifecycle.json  # inspect first, merge if non-empty
+gsutil lifecycle set /tmp/trial-lifecycle-rule.json gs://juno-medical-clarity-backend
+
+# f. SP4's Firebase Hosting split — one-time site + target setup
+# (04-hosting-split-and-legal/PRD.md §4.2):
+firebase hosting:sites:create juno-app --project "$GCP_PROJECT_ID"
+firebase target:apply hosting trial juno-medical-clarity --project "$GCP_PROJECT_ID"
+firebase target:apply hosting app juno-app --project "$GCP_PROJECT_ID"
+```
+
+**3. IAM grants — only if a command above fails with a permission error (grant, then
+re-run the failing command):**
+```bash
+# a. If (2a) fails and you deliberately choose to let CI create the queue instead of you
+# (not the decision made above, but here for completeness):
+gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
+  --member="serviceAccount:github-actions-deploy@$GCP_PROJECT_ID.iam.gserviceaccount.com" \
+  --role="roles/cloudtasks.admin"
+
+# b. If (2b) fails (Firestore TTL commands need roles/datastore.owner):
+gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
+  --member="user:YOUR_EMAIL@example.com" \
+  --role="roles/datastore.owner"
+
+# c. If the deployed Cloud Run Job (2c) fails at runtime calling
+# auth.list_users/auth.delete_users — grant Firebase Authentication Admin to the identity
+# backing the firebase-service-account secret (find its email via the JSON key's
+# "client_email" field, or `gcloud iam service-accounts list --project="$GCP_PROJECT_ID"`):
+gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
+  --member="serviceAccount:FIREBASE_SERVICE_ACCOUNT_EMAIL" \
+  --role="roles/firebaseauth.admin"
+```
+
+**4. Only after reviewing at least one real dry-run's log output and being satisfied the
+scanned/matched counts look right (§7, §8 item 2) — flip the retention job live:**
+```bash
+gcloud run jobs update juno-trial-anon-cleanup \
+  --region=us-central1 --project=juno-medical-clarity \
+  --update-env-vars=RETENTION_DRY_RUN=false
+```
 
 ---
 
@@ -749,10 +936,10 @@ window, and confirm a doc with `expires_at: null` (simulating a main-app doc) do
 
 | # | Item | Status |
 |---|---|---|
-| Q1 | Does the existing `firebase-service-account` identity already have Firebase Authentication Admin (or equivalent) IAM, and does the identity running the one-time TTL commands have `roles/datastore.owner` (or equivalent)? | **[OPEN]** — cannot be verified from this design-only pass (no live IAM check performed); same category of caveat SP4 flagged for its own `hosting:sites:create` step. Grant once if missing (§8 items 1, 3). |
+| Q1 | Does the existing `firebase-service-account` identity already have Firebase Authentication Admin (or equivalent) IAM, and does the identity running the one-time TTL commands have `roles/datastore.owner` (or equivalent)? | **[RESOLVED, per user 2026-09-05: "it should have. Tell me what I need to do for CI after you finish all tasks."]** — this design assumes the roles are already available; if a dry-run or the TTL commands surface a permission error, the user grants whatever role is missing. Every IAM grant, secret, and one-time command needed for CI and this PRD's retention job to work is now enumerated in §8's new "CI & IAM setup checklist" (includes the finding that `GCP_SA_KEY`'s identity, `github-actions-deploy@juno-medical-clarity.iam.gserviceaccount.com`, holds no Cloud Tasks role — see that checklist for the consequence for SP2's `care-plan-jobs-trial` queue). |
 | Q2 | Should a regression test assert no non-trial `care_plan_outputs` write path ever sets a non-null `expires_at`? | **[RESOLVED: recommended, non-blocking]** — cheap insurance against the one true way this design could ever become unsafe in the future (§4.2). Better owned alongside SP2's own test suite (`backend/tests/models/test_job.py`, `backend/tests/routes/test_trial.py`) than duplicated in a retention-only test file; flagged here so it isn't lost, not implemented by this PRD. |
-| Q3 | Should SP2 change the GCS path layout to give trial uploads a distinct prefix, enabling a safe lifecycle-rule third backstop? | **[DEFERRED]** — investigated in §4.6 and explicitly not implemented here (would require an SP2 file change, out of this PRD's scope). The two existing backstops (worker `finally` + `DELETE` route) already cover every graceful exit path; only a hard process kill is uncovered, a rare, low-cost (≤25MB/incident) residual risk. Worth doing eventually, not blocking launch. |
-| Q4 | What if a real (non-anonymous) user somehow has empty `provider_data`? | **[OPEN, accepted risk, explicitly not engineered around]** — per §4.5's docstring: this project's only two sign-in paths are `signInAnonymously()` (trial) and `signInWithEmailAndPassword()` (main app, `LoginPage.tsx`), and Firebase always populates `provider_data` with a `password` entry for the latter — so this case does not arise under this codebase's actual auth flows today. It could only arise via an out-of-band Admin SDK action (e.g., manually unlinking every provider from a real account, which the Admin SDK permits even though the client SDK blocks it) that nothing in this codebase currently does. No additional signal exists on `ExportedUserRecord` to further disambiguate if it ever did happen. Mitigated operationally, not structurally: the dry-run gate (§7, §8 item 2) is the actual safety net — a real account with empty `provider_data` would show up in a dry-run's `matched` count before any live deletion ever occurs, giving a human a chance to notice before flipping `RETENTION_DRY_RUN=false`. |
+| Q3 | Should SP2 change the GCS path layout to give trial uploads a distinct prefix, enabling a safe lifecycle-rule third backstop? | **[RESOLVED: yes, per user 2026-09-05: "give a distinct prefix if you can, if cheap."]** — SP2 now writes trial uploads to `care_plan_trial/{user_id}/inputs/{uuid}.pdf` instead of the shared `care_plan/` prefix (`02-trial-backend/PRD.md` §4.1/§9 Q15). This makes a prefix-scoped GCS lifecycle rule (`age: 1` day) safe as a third backstop behind the two existing retention layers (worker `finally` + `DELETE` route) — designed in §4.10. |
+| Q4 | What if a real (non-anonymous) user somehow has empty `provider_data`? | **[RESOLVED: accepted risk per user 2026-09-05 — "nah dont worry about it" — no additional guard]** — per §4.5's docstring: this project's only two sign-in paths are `signInAnonymously()` (trial) and `signInWithEmailAndPassword()` (main app, `LoginPage.tsx`), and Firebase always populates `provider_data` with a `password` entry for the latter — so this case does not arise under this codebase's actual auth flows today. It could only arise via an out-of-band Admin SDK action (e.g., manually unlinking every provider from a real account, which the Admin SDK permits even though the client SDK blocks it) that nothing in this codebase currently does. No additional signal exists on `ExportedUserRecord` to further disambiguate if it ever did happen, and none is added. The existing defensive `_older_than` age check and the dry-run gate (§7, §8 item 2) remain the safety net: a real account with empty `provider_data` would show up in a dry-run's `matched` count before any live deletion ever occurs, giving a human a chance to notice before flipping `RETENTION_DRY_RUN=false`. |
 | Q5 | Should the cleanup job persist a `next_page_token` cursor across runs for faster resumption after a killed run? | **[DEFERRED]** — see §4.5. Not justified at this product's realistic daily volume (hundreds to low thousands of new anonymous accounts/day); a full daily re-sweep is simpler and has no stale-cursor edge cases. Revisit only if actual production volume is later observed to approach the 100k+ stress case regularly (which would itself indicate the job had been failing to run for an extended period — a bigger problem than cursor design). |
 | Q6 | Should overlapping/concurrent job runs be prevented with an explicit lock (e.g. a Firestore transaction doc)? | **[DEFERRED]** — see §4.6. Cloud Scheduler triggers a single cron cadence; accidental overlap (e.g. a manual `gcloud run jobs execute` colliding with the scheduled run) wastes duplicate work but is not unsafe given `delete_users`' tolerance of already-deleted uids (§7 test coverage). Add a lock only if overlap is ever observed to actually cause problems in practice. |
 | Q7 | Should this whole SP5 stack (TTL policies, Cloud Run Job, Cloud Scheduler, IAM bindings) be captured in Terraform instead of one-time `gcloud`/CI steps? | **[RESOLVED: no]** — the repo has zero IaC today (confirmed: no `*.tf` anywhere; `scripts/` holds only bash/Python helpers, `deploy.yml` itself is the closest thing to "infra as code" this project has, via idempotent `gcloud ... || echo already exists` steps). Introducing Terraform for one small stretch feature would be a disproportionate new toolchain for a single-operator project — consistent with SP4's own §9 Q2 reasoning about not over-engineering for a team size of one. Follow the exact same convention SP2 and SP4 already established. |
@@ -764,4 +951,5 @@ window, and confirm a doc with `expires_at: null` (simulating a main-app doc) do
 independently re-verified safe in §4.2) and `trial_rate_limits` collection to exist before
 §4.1's TTL commands act on real data — no code dependency, since the TTL policy can be
 enabled at any time (it simply has nothing to act on until SP2 ships). Coordinates with
-SP4 on the one legal-copy fix flagged in §4.1/§9 Q1, which is SP4's file to change.
+SP4 on the one legal-copy fix flagged in §4.1 — SP4 has since adopted the corrected
+wording (SP4 §9 Q9).

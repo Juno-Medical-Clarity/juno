@@ -56,6 +56,28 @@ Distilled from `brainstorm.md`'s decision log (D1–D11) plus items settled sinc
 - **Search indexing (settled 2026-09-05):** allowed. No `robots noindex` meta tag on the
   trial's `index.html`. Cost exposure from organic search traffic is bounded only by
   D11's rate limit and the Cloud Run `max-instances` ceiling.
+- **Paste-text cap (settled 2026-09-05):** the trial's paste-text textarea gets a
+  client-side cap of **100,000 characters** (SP3 §9 Q4) — generous, but bounds abuse and
+  Gemini cost. No server-side text-length limit exists to mirror it.
+- **Pipeline version (settled 2026-09-05):** the trial hard-codes `version="v1-2"`
+  server-side (SP2 §9 Q14) — no client-controllable version, and no version selector in
+  the trial UI. Any client-supplied `version`/`grading_enabled`/`doc_id` is silently
+  ignored.
+- **Trial GCS upload prefix (settled 2026-09-05):** trial uploads move off the shared
+  `care_plan/` prefix onto a distinct `care_plan_trial/{user_id}/inputs/{object_id}.pdf`
+  prefix (SP2 §9 Q15, `upload_combined_pdf`'s new `is_trial` flag) — main-app uploads are
+  unaffected. This is what makes SP5's GCS lifecycle-rule backstop (§4.10) safe.
+- **`max-instances` (settled 2026-09-05):** `juno-api` = 10, `juno-worker` = 5 (SP4 §9
+  Q3), wired into `deploy.yml` via `API_MAX_INSTANCES`/`WORKER_MAX_INSTANCES`.
+- **`min-instances=0` everywhere (settled 2026-09-05):** D7's "no cold-start masking"
+  rule now applies with no exceptions — `rollback-production.yml`'s pre-existing
+  `--min-instances=1` on `juno-api` is corrected to `0` (SP4 §9 Q4), matching every other
+  deploy path.
+- **Auto-deploy trigger (settled 2026-09-05):** merging to `main` automatically deploys
+  the backend and the trial frontend (`frontend-trial/`), gated structurally on CI
+  passing via a `workflow_run` trigger (SP4 §4.8) — not a bare `push` trigger. The
+  relocated full app (`app` target, `juno-app.web.app`) is **never** auto-deployed; it
+  stays `workflow_dispatch`-only, so a merge to `main` cannot risk that site.
 
 ---
 
@@ -106,43 +128,54 @@ Already **DONE**, per `brainstorm.md` §8:
 - Merging prerequisite PR #35.
 - Enabling the **Anonymous** sign-in provider in the Firebase console.
 
-Still outstanding:
+**The single authoritative list of remaining IAM grants, GitHub secrets, and one-time
+`gcloud`/`firebase` commands the user must run lives in
+`05-retention-automation/PRD.md` §8, under "### CI & IAM setup checklist" (around line
+810).** It supersedes the individual per-SP manual-step lists below wherever they
+overlap (the trial rate-limit salt secret, the Cloud Tasks queue, the Firestore TTL
+commands, the anonymous-cleanup Job/Scheduler setup, the Hosting site/target setup, and
+the GCS lifecycle rule are all copy-pasteable there in one place, in dependency order).
+Run through that checklist top to bottom; the numbered items below are the remaining
+status of each individual PRD's own manual-steps section for cross-reference.
 
-1. **[RESOLVED]** Contact method supplied: `tejitpabari99@gmail.com` (SP4 §8#2).
+1. **[RESOLVED/DONE]** Contact method supplied: `tejitpabari99@gmail.com` (SP4 §8#2).
    Both the Privacy Policy and Terms & Conditions now list this address in place
    of the `[CONTACT — placeholder]` line.
 2. **Review and approve the Privacy Policy and Terms & Conditions copy before launch**
-   (D8, SP4 §8#1) — first drafts, not lawyer-reviewed. Confirm the stated rate limit
-   ("5 per hour") matches what SP2 ships, and confirm comfort with the liability/warranty
-   language for a health-adjacent public tool. SP5 additionally requires **amending the
-   deletion-timing wording** SP4 drafted (SP5 §8#5) — see Cross-cutting risks below.
-3. **[RESOLVED]** Deploy service account's IAM has been confirmed by the owner to
+   (D8, SP4 §8#1) — still outstanding; first drafts, not lawyer-reviewed. Confirm the
+   stated rate limit ("5 per hour") matches what SP2 ships, and confirm comfort with the
+   liability/warranty language for a health-adjacent public tool. (The deletion-timing
+   wording SP5 flagged is already corrected — see SP4 §9 Q9 — so this review is about
+   tone/liability only, not a pending text fix.)
+3. **[RESOLVED/DONE]** Deploy service account's IAM has been confirmed by the owner to
    cover `firebase hosting:sites:create` and `target:apply` (SP4 §8#4-5) — no role
    grant needed before creating the new `juno-app` Hosting site.
-4. **Add a new GitHub Actions secret `TRIAL_RATE_LIMIT_SALT`** (SP2 §8#1) — any random
-   32+ byte value (`openssl rand -hex 32`), used to HMAC-hash client IPs before they're
-   stored.
-5. **Confirm the `GCP_SA_KEY` service account can create Cloud Tasks queues**
-   (`cloudtasks.queues.create`/`.get`) (SP2 §8#2) — needed once, the first time the new
-   trial Cloud Tasks queue deploy step runs. Grant `roles/cloudtasks.admin` (or a
-   narrower custom role) if the step fails with a permission error.
-6. **Confirm the Cloud Run `max-instances` numbers** for `juno-api`/`juno-worker` once
-   SP2 proposes them (SP4 §8#3, SP4 §9 Q3) — SP4 defines where the flag goes in
-   `deploy.yml`, not the final value.
+4. **Add a new GitHub Actions secret `TRIAL_RATE_LIMIT_SALT`** (SP2 §8#1) — see the CI &
+   IAM checklist's item 1 for the exact command.
+5. **Create the trial Cloud Tasks queue manually, once** (SP2 §8#2) — the CI & IAM
+   checklist's investigation found `GCP_SA_KEY` holds no Cloud Tasks role, so this is a
+   one-time human step (checklist item 2a), not a CI grant.
+6. **[RESOLVED/DONE]** Cloud Run `max-instances` numbers: `juno-api` = 10, `juno-worker`
+   = 5 (SP4 §8#3, SP4 §9 Q3, per user 2026-09-05) — wired into `deploy.yml` via
+   `API_MAX_INSTANCES`/`WORKER_MAX_INSTANCES`.
 7. **Confirm the Firebase service account has the Firebase Authentication Admin IAM
-   role** (SP5 §8#1) — needed for `auth.list_users`/`auth.delete_users` from the new
-   Cloud Run Job.
+   role** (SP5 §8#1) — assumed already granted; grant only if a dry-run surfaces a
+   permission error (checklist item 3c).
 8. **Flip `RETENTION_DRY_RUN` from `true` to `false`** on the cleanup Cloud Run Job (SP5
    §8#2), only after reviewing at least one real dry-run's log output and confirming the
-   scanned/matched counts look right. Deliberately manual, not automated.
+   scanned/matched counts look right. Deliberately manual, not automated (checklist
+   item 4).
 9. **Run the two one-time `gcloud firestore fields ttls update` commands** and confirm
-   both report `ACTIVE` (SP5 §8#3).
+   both report `ACTIVE` (SP5 §8#3, checklist item 2b).
 10. **Run the one-time `gcloud run jobs deploy` and Cloud Scheduler/IAM setup** for the
-    anonymous-cleanup job (SP5 §8#4) — `deploy.yml` keeps it in sync automatically
-    afterward.
+    anonymous-cleanup job (SP5 §8#4, checklist items 2c-2d) — `deploy.yml` keeps it in
+    sync automatically afterward.
 11. **Optional: set up the two recommended Cloud Monitoring alerting policies** (SP5
     §8#6) — console-only, not blocking launch.
-12. **(Not blocking, awareness only) Verify `pillow-heif` wheel compatibility** with the
+12. **Run the one-time GCS lifecycle-rule command** on the `care_plan_trial/` prefix
+    (SP5 §8#7, checklist item 2e) — now safe since trial uploads have their own distinct
+    prefix (SP2 §9 Q15).
+13. **(Not blocking, awareness only) Verify `pillow-heif` wheel compatibility** with the
     `python:3.11-slim` deploy image once the dependency is added (SP1 §8#1) — a
     build-time check the implementing agent can do directly; falls back to one added
     `apt-get install libheif1` line in `backend/Dockerfile` if needed.
@@ -151,48 +184,43 @@ Still outstanding:
 
 ## Consolidated Open Questions
 
-Every remaining `[OPEN]` item across all five PRDs (excludes `[RESOLVED]` and
-`[DEFERRED]` items):
-
-**SP1 — Image Input Support**
-- Q1: Can `pillow-heif`'s prebuilt wheel actually decode HEIC on the `python:3.11-slim`
-  deploy target, or does it need `libheif1` via apt? Cannot be verified from the design
-  phase; verify first thing in implementation, before the HEIC-specific test.
-- Q2: Does Vertex's Gemini API actually accept `mime_type="image/heic"` for inline data on
-  the specific deployed models, or does it need conversion to JPEG first? Not
-  independently verified against a live Vertex call during design; requires a live smoke
-  test before considering SP1 done.
+Re-derived by grepping all five PRDs' §9 sections for `[OPEN]` (2026-09-05): **there are
+none.** Every §9 item across SP1–SP5 is now either `[RESOLVED]` or `[DEFERRED]`. The
+`[DEFERRED]` items are listed below so none of them silently disappear:
 
 **SP2 — Trial Backend Route, Rate Limiting & Retention**
-- (None open — all 14 questions in SP2 §9 are `[RESOLVED]`.)
+- Q13: Is `X-Forwarded-For`'s last value always trustworthy? **[DEFERRED]** — true for the
+  current topology (Cloud Run is the only proxy hop, no external LB/CDN/Cloud Armor); if a
+  future change puts Cloud Run behind an additional external proxy layer,
+  `get_client_ip()`'s "take the last value" logic must change to "take the
+  second-to-last value."
 
 **SP3 — Trial Frontend App**
-- Q2: If the `@main` alias fails `tsc -b` type-checking and the fallback (copying 5
-  files) is used instead, who keeps the copies in sync when `frontend/src`'s originals
-  change? No automated drift-detection proposed.
-- Q4: Should the paste-text textarea have a client-side character/length cap? No
-  server-side text-length limit exists to mirror; left uncapped unless a real problem
-  surfaces.
+- Q1: Should `ALLOWED_UPLOAD_EXTENSIONS` live in one shared `frontend/src/constants.ts`
+  entry both `frontend/` and `frontend-trial/` import, instead of two hardcoded copies?
+  **[DEFERRED]** — real duplication now that SP3 exists, but touches `frontend/src`
+  (outside this PRD's non-goals) and isn't required for SP3's correctness; left as a
+  flagged follow-up.
+- Q7: Should a `tsc -b`/`npm run build` type-check step be added to `ci.yml`'s new
+  `frontend-trial` job? **[DEFERRED]** — the existing `frontend` CI job also only runs
+  `npm run test`, so adding a build/typecheck step only to the new job would be an
+  inconsistency between the two frontend CI jobs worth deciding for both at once, not
+  unilaterally here.
 
 **SP4 — Hosting Split, CI & Legal Pages**
-- Q1: **[RESOLVED]** Does the existing `FIREBASE_SERVICE_ACCOUNT` secret's IAM role
-  cover `hosting:sites:create` and `target:apply`, or only `hosting:deploy`? Owner has
-  confirmed the IAM role covers both (see Manual Steps #3).
-- Q3: Exact `max-instances` values for `juno-api`/`juno-worker` in `deploy.yml`. This PRD
-  confirms where the flag goes; SP2 owns the number (see Manual Steps #6).
-- Q4: `rollback-production.yml`'s `juno-api` deploy sets `--min-instances=1`,
-  contradicting D7's locked "min-instances=0" for the primary pipeline. Pre-existing
-  inconsistency, flagged for SP2 to resolve so an emergency rollback doesn't silently
-  reintroduce always-warm-instance cost.
+- Q2: Should there be a manual-approval gate between the `app` and `trial` deploy steps?
+  **[DEFERRED]** — rejected for now as over-engineering for a single-operator project
+  where Hosting deploys are seconds, not minutes, and the rollback path (§4.4) is the
+  accepted safety net. Revisit if this project ever has multiple deploy operators.
 
 **SP5 — Retention Automation**
-- Q1: Does the existing `firebase-service-account` identity already have Firebase
-  Authentication Admin IAM, and does the identity running the one-time TTL commands have
-  `roles/datastore.owner` (or equivalent)? Cannot be verified without a live IAM check
-  (see Manual Steps #7, #9).
-- Q4: What if a real (non-anonymous) user somehow has empty `provider_data`? Accepted
-  risk, not engineered around — cannot arise via this codebase's actual sign-in paths
-  today; mitigated operationally by the dry-run gate, not structurally.
+- Q5: Should the cleanup job persist a `next_page_token` cursor across runs for faster
+  resumption after a killed run? **[DEFERRED]** — not justified at this product's
+  realistic daily volume; revisit only if actual volume approaches the 100k+ stress case.
+- Q6: Should overlapping/concurrent job runs be prevented with an explicit lock?
+  **[DEFERRED]** — a single Cloud Scheduler cadence makes accidental overlap unlikely and
+  not unsafe (`delete_users` tolerates already-deleted uids); add a lock only if overlap
+  is ever observed to actually cause problems.
 
 ---
 
@@ -205,23 +233,28 @@ Every remaining `[OPEN]` item across all five PRDs (excludes `[RESOLVED]` and
   the rollback path; do not deviate from it during the actual cutover.
 - **`rollback-production.yml` is a second, independent Hosting deploy path** that breaks
   the moment `firebase.json` becomes multi-target (fixed in SP4 §4.4) — without that fix,
-  a rollback would deploy to the wrong (or no) target. It also sets
-  `--min-instances=1` for `juno-worker`, contradicting the locked D7 decision
-  (`min-instances=0`, no cold-start masking) — flagged as SP4 §9 Q4, unresolved.
-- **GCS lifecycle rules were investigated and rejected** as a retention backstop (SP5
-  §9 Q3) because trial and main-app uploads share an identical GCS path shape — a
-  lifecycle rule has no safe way to distinguish them. Deletion instead depends entirely
-  on SP2's explicit worker cleanup (immediately after extraction) plus the Firestore TTL
-  backstop (SP5) as defense in depth; there is no GCS-level third layer.
+  a rollback would deploy to the wrong (or no) target. It also pre-existingly set
+  `--min-instances=1` for `juno-api`, contradicting the locked D7 decision
+  (`min-instances=0`, no cold-start masking) — **corrected to `0`** (SP4 §9 Q4,
+  §4.4), so `min-instances=0` now holds with no exceptions across every deploy path.
+- **GCS lifecycle rules were initially investigated and rejected**, then revisited once
+  SP2 adopted a distinct trial upload prefix: the original `care_plan/` path shape was
+  identical for trial and main-app uploads, giving a lifecycle rule no safe way to
+  distinguish them. Per user direction (SP2 §9 Q15), trial uploads now write to
+  `care_plan_trial/...` instead, which makes a prefix-scoped lifecycle rule (`age: 1`
+  day) safe as a third backstop (SP5 §4.10) behind SP2's explicit worker cleanup and the
+  Firestore TTL policy. See Locked Decisions above and Manual Steps #12 for the one-time
+  command.
 - **Deletion-timing wording was corrected across SP4's legal copy** after SP5's design
   pass found a real overclaim: SP4's original Privacy Policy draft said job records are
   deleted "generally within an hour," but Firestore's documented TTL behavior allows
   deletion up to 24 hours after expiration. With SP2's 1-hour `expires_at` plus TTL sweep
   latency, worst-case lifetime is ~25 hours, not "an hour." The corrected framing: an
   explicit `DELETE` call is the primary path and is effectively immediate; the TTL
-  backstop is described as "typically within a day." This amendment still needs to be
-  applied to SP4's PRD text and the actual `frontend-trial/` legal-page copy before
-  launch (see Manual Steps #2).
+  backstop is described as "typically within a day." **This amendment is done** — SP4's
+  Privacy Policy, Terms, and footer copy (§6.2, §6.4) carry the corrected wording, and
+  SP4 §9 Q9 records the resolution. The only remaining step is the owner's routine
+  pre-launch legal-copy review (Manual Steps #2), not a pending text fix.
 
 ---
 
