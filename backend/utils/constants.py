@@ -16,9 +16,12 @@ class Constants:
         CARE_PLAN_VERSION: str = "1.2"
 
     class Uploads:
-        ALLOWED_EXTENSIONS: frozenset[str] = frozenset({"pdf", "txt", "docx", "html", "htm"})
-        MAX_FILE_BYTES: int = 10 * 1024 * 1024
-        MAX_FILE_COUNT: int = 10
+        IMAGE_EXTENSIONS: frozenset[str] = frozenset({"png", "jpg", "jpeg", "webp", "heic"})
+        ALLOWED_EXTENSIONS: frozenset[str] = frozenset(
+            {"pdf", "txt", "docx", "html", "htm"} | IMAGE_EXTENSIONS
+        )
+        MAX_FILE_BYTES: int = 10 * 1024 * 1024        # unchanged, PRD §4.7
+        MAX_FILE_COUNT: int = 10                       # unchanged
         MAX_AGGREGATE_FILE_BYTES: int = 25 * 1024 * 1024
         UPLOAD_PREFIX: str = "care_plan-uploads"
 
@@ -64,6 +67,21 @@ class Constants:
         MAX_TOKENS_LONG_FORM: int = 65536
         TEMPERATURE_TEXT: float = 0.3
         TEMPERATURE_JSON: float = 0.2
+        IMAGE_OCR_PROMPT: str = (
+            "You are extracting clinical text from a photographed or scanned medical "
+            "document image.\n\n"
+            "Transcribe ALL visible text from the image exactly as written, preserving:\n"
+            "- Section headers and structure, as plain text (no markdown, no HTML)\n"
+            "- Medication names, dosages, frequencies, and instructions verbatim\n"
+            "- Dates, numbers, units, and clinician/patient names exactly as they appear\n"
+            "- Line breaks between distinct sections, list items, or table rows\n\n"
+            "Do not summarize, interpret, correct, or add any text that is not visibly "
+            "present in the image. Do not describe the image (for example, never write "
+            "\"this is a photo of...\"). Output ONLY the transcribed text.\n\n"
+            "If the image contains no legible text at all (blank, illegibly blurry, or a "
+            "non-document photo), respond with exactly this token and nothing else:\n"
+            "NO_TEXT_FOUND"
+        )
 
     class Athena:
         BASE_URL: str = "https://api.preview.platform.athenahealth.com"

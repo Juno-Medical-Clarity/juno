@@ -9,6 +9,11 @@ import textwrap
 import PyPDF2
 from pypdf import PdfReader, PdfWriter
 
+import pillow_heif
+pillow_heif.register_heif_opener()
+
+from utils.constants import Constants
+
 logger = logging.getLogger(__name__)
 
 
@@ -59,6 +64,32 @@ def _txt_to_pdf(file_bytes: bytes, filename: str) -> bytes:
     return buffer.getvalue()
 
 
+def _image_to_pdf(file_bytes: bytes, filename: str) -> bytes:
+    from reportlab.lib.pagesizes import letter
+    from reportlab.pdfgen import canvas
+    from reportlab.lib.utils import ImageReader
+    from PIL import Image, ImageOps
+
+    img = Image.open(io.BytesIO(file_bytes))
+    img = ImageOps.exif_transpose(img)          # respect phone-camera EXIF rotation
+    if img.mode not in ("RGB", "L"):
+        img = img.convert("RGB")
+
+    buffer = io.BytesIO()
+    page_w, page_h = letter
+    margin = 36
+    max_w, max_h = page_w - 2 * margin, page_h - 2 * margin
+    scale = min(max_w / img.width, max_h / img.height, 1.0)
+    draw_w, draw_h = img.width * scale, img.height * scale
+
+    pdf = canvas.Canvas(buffer, pagesize=letter)
+    x = (page_w - draw_w) / 2
+    y = (page_h - draw_h) / 2
+    pdf.drawImage(ImageReader(img), x, y, width=draw_w, height=draw_h)
+    pdf.save()
+    return buffer.getvalue()
+
+
 def _append_pdf(writer: PdfWriter, file_bytes: bytes, filename: str) -> int:
     reader = PdfReader(io.BytesIO(file_bytes))
     page_count = 0
@@ -82,6 +113,8 @@ def merge_pdfs(file_list: list[tuple[bytes, str]]) -> bytes:
                 merged_pages += _append_pdf(writer, file_bytes, filename)
             elif ext == "txt":
                 merged_pages += _append_pdf(writer, _txt_to_pdf(file_bytes, filename), filename)
+            elif ext in Constants.Uploads.IMAGE_EXTENSIONS:
+                merged_pages += _append_pdf(writer, _image_to_pdf(file_bytes, filename), filename)
             else:
                 logger.warning("pdf_merge: skipping unsupported file %s", filename)
         except Exception:

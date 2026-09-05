@@ -8,7 +8,7 @@ import type { CarePlanInternal } from '../../types/envelope';
 import NavBar from '../../components/NavBar';
 import ConfigurationCard from '../../components/ConfigurationCard';
 import PresetDataCard from '../../components/PresetDataCard';
-import { DEFAULT_VERSION, carePlanPagePath } from '../../constants';
+import { ALLOWED_UPLOAD_EXTENSIONS, DEFAULT_VERSION, carePlanPagePath } from '../../constants';
 import type { AthenaSelection, BatchDatasetSelection } from '../../types/datasets';
 import { createCarePlanJob, createBatchJobs } from '../../api/jobs';
 import { useJobStatuses } from '../../api/useJobStatuses';
@@ -53,10 +53,10 @@ export default function CarePlanPage() {
   const handleFiles = useCallback((selectedFiles: File[]) => {
     const invalid = selectedFiles.filter(f => {
       const ext = f.name.split('.').pop()?.toLowerCase();
-      return !['pdf', 'txt', 'docx', 'html', 'htm'].includes(ext ?? '');
+      return !ALLOWED_UPLOAD_EXTENSIONS.includes(ext ?? '');
     });
     if (invalid.length > 0) {
-      setError(`Unsupported file type: ${invalid.map(f => f.name).join(', ')}. Use PDF, TXT, DOCX, or HTML.`);
+      setError(`Unsupported file type: ${invalid.map(f => f.name).join(', ')}. Use PDF, TXT, DOCX, HTML, or an image (PNG/JPG/WEBP/HEIC).`);
       return;
     }
     setError(null);
@@ -183,7 +183,7 @@ export default function CarePlanPage() {
                 >
                   <input
                     type="file"
-                    accept=".pdf,.txt,.docx,.html,.htm"
+                    accept=".pdf,.txt,.docx,.html,.htm,.png,.jpg,.jpeg,.webp,.heic"
                     multiple
                     onChange={e => {
                       if (e.target.files) handleFiles(Array.from(e.target.files));
@@ -199,7 +199,7 @@ export default function CarePlanPage() {
                   ) : (
                     <>
                       <p className="upload-title">Drag & drop your document(s) here</p>
-                      <p className="upload-hint">PDF, TXT, DOCX, or HTML · Multiple files = one combined process</p>
+                      <p className="upload-hint">PDF, TXT, DOCX, HTML, or image (PNG/JPG/WEBP/HEIC) · Multiple files = one combined process</p>
                     </>
                   )}
                 </div>
