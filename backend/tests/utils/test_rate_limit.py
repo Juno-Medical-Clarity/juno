@@ -153,6 +153,38 @@ def test_hash_ip_differs_across_salts(monkeypatch):
 
 
 # ---------------------------------------------------------------------------
+# _hash_ip fallback salt when TRIAL_RATE_LIMIT_SALT is unset (Finding 9)
+# ---------------------------------------------------------------------------
+
+def test_hash_ip_missing_salt_does_not_equal_unsalted_sha256(monkeypatch):
+    """Regression: previously, a missing salt fell back to an EMPTY HMAC key
+    (hmac.new(b"", ...)), which is trivially reversible against the small
+    IPv4 address space. It must no longer produce that exact unsalted value."""
+    import hashlib
+    import hmac as hmac_module
+
+    monkeypatch.delenv("TRIAL_RATE_LIMIT_SALT", raising=False)
+    unsalted = hmac_module.new(b"", b"1.2.3.4", hashlib.sha256).hexdigest()[:20]
+    assert _hash_ip("1.2.3.4") != unsalted
+
+
+def test_hash_ip_missing_salt_still_deterministic_within_process(monkeypatch):
+    """The process-local fallback salt must be stable across calls within
+    the same process (so rate-limit buckets are at least self-consistent
+    for the lifetime of one instance)."""
+    monkeypatch.delenv("TRIAL_RATE_LIMIT_SALT", raising=False)
+    assert _hash_ip("1.2.3.4") == _hash_ip("1.2.3.4")
+
+
+def test_hash_ip_missing_salt_logs_error(monkeypatch, caplog):
+    import logging
+    monkeypatch.delenv("TRIAL_RATE_LIMIT_SALT", raising=False)
+    with caplog.at_level(logging.ERROR, logger="utils.rate_limit"):
+        _hash_ip("1.2.3.4")
+    assert any("TRIAL_RATE_LIMIT_SALT" in rec.message for rec in caplog.records)
+
+
+# ---------------------------------------------------------------------------
 # check_rate_limit — uses fake_firestore-style in-memory counter, not the
 # emulator (no emulator is configured in this test suite's CI setup).
 # ---------------------------------------------------------------------------

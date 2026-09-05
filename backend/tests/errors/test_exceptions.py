@@ -60,6 +60,29 @@ def test_build_error_data_from_exc_juno_error():
     assert result["code"] == "LLM_MAX_TOKENS"
     assert result.get("user_hint") is not None
 
+
+def test_build_error_data_from_exc_juno_error_detail_is_preserved():
+    """A JunoError's own `detail` IS curated by our own code (unlike a raw,
+    unclassified exception's message) and must still reach error_data.details."""
+    from errors import build_error_data_from_exc, JunoError, ErrorCode
+    try:
+        raise JunoError(ErrorCode.FILE_PARSE_FAILED, "notes.pdf could not be read")
+    except JunoError as exc:
+        result = build_error_data_from_exc(exc)
+    assert result["details"] == "notes.pdf could not be read"
+
+
+def test_build_error_data_from_exc_unclassified_exception_strips_details():
+    """Regression for Finding 10: an unclassified (UNKNOWN_ERROR) exception's
+    raw message must never reach error_data.details, which the frontend's
+    live listener reads -- some exception messages (e.g. certain Pydantic
+    ValidationErrors) embed the actual invalid value. The full exception is
+    still captured server-side via logger.exception at the call site."""
+    from errors import build_error_data_from_exc
+    result = build_error_data_from_exc(ValueError("some possibly-sensitive internal detail"))
+    assert result["code"] == "UNKNOWN_ERROR"
+    assert result["details"] is None
+
 def test_build_error_data_athena_api_error_no_key_error():
     """Regression test for the worker.py KeyError bug (SP01)."""
     from errors import build_error_data, ErrorCode
