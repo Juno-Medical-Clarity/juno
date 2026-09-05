@@ -93,13 +93,17 @@ jobs:
           fi
 
           # Pull the channel URL straight out of firebase-tools' human-readable
-          # output (a bare https://<site>--<channel>-<hash>.web.app string).
+          # output. It prints two web.app URLs: an FYI "Hosting URL: https://
+          # <site>.web.app" (the LIVE site, no "--") ahead of the actual
+          # "Channel URL (...): https://<site>--<channel>-<hash>.web.app" line
+          # we want — require the "--" so the live URL's single hyphens (e.g.
+          # juno-medical-clarity.web.app) can never match this pattern.
           # Deliberately not using --json here: npx/npm's own stderr chatter
           # (e.g. "npm warn exec ...") gets merged ahead of firebase-tools'
           # stdout when both streams are captured together, which breaks JSON
           # parsing in practice — a plain grep has no such fragility.
           preview_url=$(echo "$deploy_output" \
-            | grep -oE 'https://[a-zA-Z0-9.-]+\.web\.app[a-zA-Z0-9/_.-]*' \
+            | grep -oE 'https://[a-zA-Z0-9-]+--[a-zA-Z0-9-]+\.web\.app[a-zA-Z0-9/_.-]*' \
             | head -n1)
 
           if [ -z "$preview_url" ]; then
