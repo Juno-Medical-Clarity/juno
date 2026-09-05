@@ -1,8 +1,11 @@
 name: Deploy
 
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -15,6 +18,9 @@ concurrency:
 
 jobs:
   deploy-backend:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     env:
       GCP_PROJECT_ID: juno-medical-clarity
@@ -25,6 +31,8 @@ jobs:
       WORKER_MAX_INSTANCES: "5"
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
 
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
@@ -91,6 +99,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
 
       - uses: actions/setup-node@v4
         with:
@@ -101,10 +111,12 @@ jobs:
             frontend-trial/package-lock.json
 
       - name: Install app dependencies
+        if: github.event_name == 'workflow_dispatch'
         run: npm ci
         working-directory: frontend
 
       - name: Build app (frontend/)
+        if: github.event_name == 'workflow_dispatch'
         run: npm run build
         working-directory: frontend
         env:
@@ -160,7 +172,9 @@ jobs:
             fi
           }
 
-          deploy_target app
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            deploy_target app
+          fi
           deploy_target trial
 
           rm -f "$creds_file"
@@ -171,6 +185,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
           fetch-depth: 0
 
       - name: Tag production deploy
