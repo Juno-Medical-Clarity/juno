@@ -12,7 +12,7 @@
 
 Per the brainstorm's **D2 (locked)**, the trial app takes over the primary public address
 `juno-medical-clarity.web.app`, and the existing full app relocates to a new Firebase
-Hosting site, `juno-app` (`juno-app.web.app`), in the same Firebase/GCP project
+Hosting site, `juno-app-99` (`juno-app-99.web.app`), in the same Firebase/GCP project
 (`juno-medical-clarity`). No custom domain exists or is planned.
 
 Today the repo is single-site, single-app, across three places that must all change
@@ -36,7 +36,7 @@ together:
    `frontend/src` or elsewhere). Per **D8 (locked)**, Claude drafts these; the user
    reviews and approves before launch (§8).
 
-Additionally, moving the full app to a new origin (`juno-app.web.app`) breaks its own API
+Additionally, moving the full app to a new origin (`juno-app-99.web.app`) breaks its own API
 calls unless `backend/app.py`'s CORS allow-list is widened first — a hard ordering
 constraint (§5).
 
@@ -48,13 +48,13 @@ both frontends, and the legal-page copy + serving contract for SP3.
 ## 2. Goals
 
 1. `juno-medical-clarity.web.app` serves the trial app (SP3's `frontend-trial/`);
-   `juno-app.web.app` serves the existing full app (`frontend/`) — same Firebase project,
+   `juno-app-99.web.app` serves the existing full app (`frontend/`) — same Firebase project,
    two Hosting sites, via Hosting **deploy targets**.
 2. CI (`deploy.yml`) builds and deploys both frontends on every run, preserving the
    existing no-op-tolerance behavior for each site independently.
 3. `backend/app.py`'s CORS origins are widened, deployed **before** the frontend cutover,
    so the relocated full app's API calls keep working.
-4. A safe, explicit cutover plan: create and verify `juno-app` **before** the trial
+4. A safe, explicit cutover plan: create and verify `juno-app-99` **before** the trial
    overwrites the currently-live `juno-medical-clarity.web.app`, plus a rollback path.
 5. Full draft Privacy Policy and Terms & Conditions text, a footer-copy contract, and a
    precise "where do these pages live" contract for SP3 to implement against.
@@ -142,7 +142,10 @@ splitting Firebase config across two files in two directories.
 }
 ```
 
-**New — `/root/projects/juno/.firebaserc`:**
+**New — `/root/projects/juno/.firebaserc`** (matches what `firebase target:apply` actually
+wrote and what is now committed — the CLI expands each target's site-id array onto its own
+line rather than the compact single-line form; it also appended an empty `"etags": {}` key,
+confirmed to be harmless CLI bookkeeping and removed before commit):
 ```json
 {
   "projects": {
@@ -151,8 +154,12 @@ splitting Firebase config across two files in two directories.
   "targets": {
     "juno-medical-clarity": {
       "hosting": {
-        "trial": ["juno-medical-clarity"],
-        "app": ["juno-app"]
+        "trial": [
+          "juno-medical-clarity"
+        ],
+        "app": [
+          "juno-app-99"
+        ]
       }
     }
   }
@@ -164,7 +171,7 @@ splitting Firebase config across two files in two directories.
 The target name `trial` maps to site id `juno-medical-clarity` — every Firebase project's
 **default Hosting site id equals the project id**, which is why the trial (taking over the
 primary address) doesn't need a new site at all, only a target label pointing at the
-already-existing default site. `app` maps to the **new** site id `juno-app`, created in
+already-existing default site. `app` maps to the **new** site id `juno-app-99`, created in
 §4.4.
 
 ### 4.2 One-time target setup — exact command sequence
@@ -184,13 +191,13 @@ verify at execution time (flagged §9 Q1), not something checkable from this des
 export GOOGLE_APPLICATION_CREDENTIALS=/path/to/firebase-service-account.json
 
 # 2. Create the new Hosting site for the relocated full app.
-firebase hosting:sites:create juno-app --project juno-medical-clarity
+firebase hosting:sites:create juno-app-99 --project juno-medical-clarity
 
 # 3. Map local target names to site ids — this is what writes the "targets" block
 #    into .firebaserc. Run from the repo root (or pass --config) so it edits the
 #    root .firebaserc, not a stray one.
 firebase target:apply hosting trial juno-medical-clarity --project juno-medical-clarity
-firebase target:apply hosting app juno-app --project juno-medical-clarity
+firebase target:apply hosting app juno-app-99 --project juno-medical-clarity
 
 # 4. Confirm the resulting .firebaserc matches §4.1's "New" block exactly, then commit it.
 cat .firebaserc
@@ -470,30 +477,30 @@ not something CI does automatically the first time):**
 1. Land this PRD's config changes (§4.1–§4.4) and SP3's `frontend-trial/` on a branch, but
    **do not merge to `main`** yet (CI only runs on `workflow_dispatch` against `main` per
    the existing trigger, so this is naturally gated).
-2. Run §4.2's one-time `firebase hosting:sites:create juno-app` +
+2. Run §4.2's one-time `firebase hosting:sites:create juno-app-99` +
    `target:apply` commands. Confirm `.firebaserc` matches §4.1.
 3. **Deploy the backend CORS change (§5) to production first, alone**, ahead of any
-   frontend change — the relocated app's origin (`https://juno-app.web.app`) must already
+   frontend change — the relocated app's origin (`https://juno-app-99.web.app`) must already
    be an allowed CORS origin before anything is ever served from it, or its very first
    page load will fail every API call.
 4. Merge to `main`, trigger `deploy.yml`. Because `deploy-frontend` deploys `app` before
-   `trial` (§4.3), the very first thing that happens is: `juno-app.web.app` goes live with
+   `trial` (§4.3), the very first thing that happens is: `juno-app-99.web.app` goes live with
    the full app, **while `juno-medical-clarity.web.app` still serves the pre-cutover full
    app, unchanged**, since a partially-completed workflow run has not reached the `trial`
    deploy step yet.
-5. **Verify `juno-app.web.app` end-to-end before the workflow continues** — since the two
+5. **Verify `juno-app-99.web.app` end-to-end before the workflow continues** — since the two
    deploy steps are sequential within the same job and there's no manual gate between
    them today, this verification is really: watch the `deploy_target app` step's log
    succeed, then, once `deploy_target trial` also completes (seconds later — Firebase
    Hosting deploys are fast), immediately do the verification checklist in §7 against
-   `juno-app.web.app`. Because both targets deploy in one workflow run with no built-in
+   `juno-app-99.web.app`. Because both targets deploy in one workflow run with no built-in
    pause, the practical safety net is **§4.4's rollback path**, not a manual approval gate
    — flagged as an explicit design tradeoff in §9 (a `workflow_dispatch` input or GitHub
    Environment manual-approval gate between the two deploy steps was considered and
    rejected as over-engineering for a single-operator project; see §9 Q2).
 6. Verify `juno-medical-clarity.web.app` now serves the trial correctly (input → live
    steps → results, end to end, with a non-PHI sample document).
-7. If anything is wrong with `juno-app.web.app`: re-run `deploy.yml` after fixing forward
+7. If anything is wrong with `juno-app-99.web.app`: re-run `deploy.yml` after fixing forward
    (fast — Hosting deploys are seconds, not minutes), or use `rollback-production.yml`
    with the last known-good `prod-*` tag (§4.4) to restore the full app's *backend and
    frontend* to a previous working state. Rollback only restores `app` (§4.4) — the trial
@@ -507,9 +514,9 @@ not something CI does automatically the first time):**
    checklist in §7.
 
 **Ordering summary (why this is safe):** the pre-existing full app is never taken down
-before its replacement (`juno-app`) is live and reachable — worst case, for the few
+before its replacement (`juno-app-99`) is live and reachable — worst case, for the few
 seconds between step 4 and step 6, `juno-medical-clarity.web.app` still serves the *old*
-full app (not a 404, not a broken trial) while `juno-app.web.app` is already verifiable in
+full app (not a 404, not a broken trial) while `juno-app-99.web.app` is already verifiable in
 parallel. The primary address only changes content at the very last deploy step.
 
 ### 4.6 Cloud Run `--max-instances` — decided values (resolves §9 Q3)
@@ -665,7 +672,7 @@ caveat as §4.3's build job.
 **Decision, per user direction (2026-09-05):** CI should run on GitHub (§4.7, covering
 backend/frontend/frontend-trial); deploy should also run automatically once code lands on
 `main`, covering the **backend** and the **new `frontend-trial/` app** (the primary public
-address post-cutover, §4.1). **The relocated full app (`juno-app` site) explicitly does
+address post-cutover, §4.1). **The relocated full app (`juno-app-99` site) explicitly does
 not get automatic deployment** — the user does not want a merge to `main` to risk that
 site, so it stays `workflow_dispatch`-only, same as `deploy.yml` is today. This is a real
 change to the trigger and job graph designed in §4.3, not just a value change — recorded
@@ -802,8 +809,8 @@ CORS(
     origins=[
         "https://juno-medical-clarity.web.app",       # trial app (SP3), primary address post-cutover
         "https://juno-medical-clarity.firebaseapp.com",
-        "https://juno-app.web.app",                    # relocated full app — NEW
-        "https://juno-app.firebaseapp.com",             # NEW
+        "https://juno-app-99.web.app",                    # relocated full app — NEW
+        "https://juno-app-99.firebaseapp.com",             # NEW
         "http://localhost:3000",
         "http://localhost:5173",                       # frontend/ (full app) dev server
         "http://localhost:5174",                       # frontend-trial/ dev server — NEW, see note
@@ -1075,7 +1082,7 @@ in-app code change:
   Firebase Auth's `authDomain` is tied to the **project**, not to which Hosting site
   serves the page — it stays `juno-medical-clarity.firebaseapp.com` (or whatever the
   existing secret value already is) regardless of whether the app is served from
-  `juno-medical-clarity.web.app` or `juno-app.web.app`. **No change needed** — the same
+  `juno-medical-clarity.web.app` or `juno-app-99.web.app`. **No change needed** — the same
   `VITE_FIREBASE_*` secrets already used for `frontend/`'s build are reused unmodified in
   §4.3's new `Build trial` step (same project, same Firebase config, both frontends are
   clients of the same one Firebase project).
@@ -1099,16 +1106,16 @@ subsequent normal deploy.
 
 **Pre-cutover (one-time):**
 1. `firebase hosting:sites:list --project juno-medical-clarity` shows both
-   `juno-medical-clarity` and `juno-app` as existing sites, after §4.2's
+   `juno-medical-clarity` and `juno-app-99` as existing sites, after §4.2's
    `hosting:sites:create`.
 2. `cat .firebaserc` matches §4.1's "New" block exactly.
 3. `firebase deploy --only hosting:app --project juno-medical-clarity --non-interactive
    --dry-run` (if the installed firebase-tools version supports `--dry-run`; otherwise
    skip straight to a real deploy against `app` only, verified in isolation before ever
-   touching `trial`) resolves to the `juno-app` site, not the default one.
+   touching `trial`) resolves to the `juno-app-99` site, not the default one.
 
 **Cutover verification (§4.5 step 5-6), against the live URLs:**
-1. Visit `https://juno-app.web.app` — full app loads, sign-in / auth flow (whatever the
+1. Visit `https://juno-app-99.web.app` — full app loads, sign-in / auth flow (whatever the
    full app currently requires) works, a care-plan job can be submitted and completes
    successfully (proves CORS §5 took effect and Firebase Auth's `authDomain` still
    resolves correctly per §6.5).
@@ -1118,7 +1125,7 @@ subsequent normal deploy.
 3. Visit `https://juno-medical-clarity.web.app/privacy` and `.../terms` directly (deep
    link, not via footer click) — both render the correct full text, proving the SPA
    rewrite (§6.1) handles direct navigation, not just in-app `<Link>` clicks.
-4. Confirm `https://juno-app.web.app`'s Cloud Console deep links (`AdminPage.tsx`, §6.5)
+4. Confirm `https://juno-app-99.web.app`'s Cloud Console deep links (`AdminPage.tsx`, §6.5)
    still resolve to the correct project dashboards (sanity-check that the "no in-app
    change needed" conclusion holds in practice, not just in grep).
 
@@ -1135,7 +1142,7 @@ subsequent normal deploy.
 
 **Rollback drill (recommended once, not blocking launch):** trigger
 `rollback-production.yml` against a known-good `prod-*` tag in a low-stakes moment (e.g.
-right after the cutover, once `juno-app.web.app` is confirmed healthy) to confirm the
+right after the cutover, once `juno-app-99.web.app` is confirmed healthy) to confirm the
 `target: app` / `entryPoint: .` fix (§4.4) actually works end-to-end before the first time
 it's ever needed for a real incident.
 
@@ -1169,12 +1176,12 @@ it's ever needed for a real incident.
 | # | Item | Status |
 |---|---|---|
 | Q1 | Does the existing `FIREBASE_SERVICE_ACCOUNT` secret's IAM role cover `hosting:sites:create` and `target:apply`, or only `hosting:deploy`? | **[RESOLVED]** — owner has confirmed the deploy service account's IAM already covers `hosting:sites:create` and `target:apply`; no role grant needed. See §8 item 5. |
-| Q2 | Should there be a manual-approval gate (GitHub Environment protection rule) between the `app` and `trial` deploy steps, so a human confirms `juno-app.web.app` looks right before `trial` overwrites the primary address? | **[DEFERRED]** — considered in §4.5 step 5 and rejected for now as over-engineering for a single-operator project where Hosting deploys are seconds, not minutes, and the rollback path (§4.4) is the accepted safety net. Revisit if this project ever has multiple deploy operators or the cutover risk tolerance changes. |
+| Q2 | Should there be a manual-approval gate (GitHub Environment protection rule) between the `app` and `trial` deploy steps, so a human confirms `juno-app-99.web.app` looks right before `trial` overwrites the primary address? | **[DEFERRED]** — considered in §4.5 step 5 and rejected for now as over-engineering for a single-operator project where Hosting deploys are seconds, not minutes, and the rollback path (§4.4) is the accepted safety net. Revisit if this project ever has multiple deploy operators or the cutover risk tolerance changes. |
 | Q3 | Exact `max-instances` values for `juno-api` / `juno-worker` in `deploy.yml`'s `gcloud run services update` calls. | **[RESOLVED: `juno-api` = 10, `juno-worker` = 5, per user 2026-09-05]** — `juno-worker` is the real cost driver (it makes the Gemini calls); 5 concurrent is generous against SP2's 5-requests-per-IP-per-hour trial rate limit and consistent with `rollback-production.yml`'s existing `--max-instances=3` precedent for `juno-worker`. `juno-api` gets the higher ceiling (10) as the cheap, non-Gemini request layer. Wired into `deploy.yml` via new workflow-level env vars `API_MAX_INSTANCES` / `WORKER_MAX_INSTANCES` — see §4.6. |
 | Q4 | `rollback-production.yml`'s `juno-api` deploy sets `--min-instances=1`, contradicting D7's locked "min-instances=0, no cold-start masking" for the primary deploy pipeline. Pre-existing inconsistency, not introduced by this PRD. | **[RESOLVED: corrected to `--min-instances=0`, per user 2026-09-05]** — D7 is locked and applies everywhere, including the emergency rollback path; there is no reason a rollback should reintroduce always-warm-instance cost D7 explicitly rejected. See §4.4 for the exact line change. |
 | Q5 | Exact env var name (`VITE_GA_MEASUREMENT_ID`) SP3 should read for GA4 initialization. | **[RESOLVED for this PRD's purposes, confirm with SP3]** — this PRD picks the name and wires it into `deploy.yml`'s build step (§4.3) since SP3's PRD doesn't exist yet; SP3 should treat this as the contract unless SP3's own design has a strong reason to name it differently, in which case update §4.3's env var line to match. |
 | Q6 | Should `frontend-trial/vite.config.ts` pin `server.port` to `5174` explicitly? | **[RESOLVED, recommend to SP3]** — see §5's note; avoids depending on Vite's auto-increment behavior for a value baked into the backend's CORS allow-list. Not this PRD's file to edit (owned by SP3), but the CORS entry (§5) is written against this assumption and should be confirmed once SP3 exists. |
-| Q7 | Does the earlier `docs/public-version-scope.md` design (an `internal`/`public` two-target proposal with a `juno-public` site, predating the current brainstorm) need reconciling with this PRD? | **[RESOLVED: no]** — that document explored a similar idea under different names before D2 was locked; this PRD's target names (`trial`/`app`) and site ids (`juno-medical-clarity`/`juno-app`) supersede it. No code or config from that doc exists in the repo today (confirmed: `frontend/firebase.json` is still single-target), so there is nothing to migrate away from, only a naming precedent to note. |
+| Q7 | Does the earlier `docs/public-version-scope.md` design (an `internal`/`public` two-target proposal with a `juno-public` site, predating the current brainstorm) need reconciling with this PRD? | **[RESOLVED: no]** — that document explored a similar idea under different names before D2 was locked; this PRD's target names (`trial`/`app`) and site ids (`juno-medical-clarity`/`juno-app-99`) supersede it. No code or config from that doc exists in the repo today (confirmed: `frontend/firebase.json` is still single-target), so there is nothing to migrate away from, only a naming precedent to note. |
 | Q8 | Does CI (`ci.yml`, the PR-triggered workflow, distinct from `deploy.yml`) need a `frontend-trial` test/build job? | **[RESOLVED: yes, per user 2026-09-05]** — added as part of the automatic-deploy redesign (§4.7): the automatic deploy path (§4.8) is gated on CI passing, so CI must actually exercise `frontend-trial` for that gate to mean anything once SP3 lands it. |
 | Q9 | Does the deletion-timing language in the Privacy Policy, Terms, and footer copy (§6.2, §6.4) accurately reflect Firestore TTL's real latency? | [RESOLVED: Privacy/Terms deletion-timing wording corrected per SP5's finding — explicit DELETE is the primary, effectively-immediate path; Firestore TTL is a backstop described as "typically within a day" (documented TTL latency is up to 24h after expiry). Uploaded file deletion at extraction remains fast and is stated as such.] |
 

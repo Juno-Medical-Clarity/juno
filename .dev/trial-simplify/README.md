@@ -7,7 +7,7 @@ generated later via `/dev-tasks`) of the Juno Trial App initiative: a bare-bones
 public, no-login, no-retained-data trial of Juno's care-plan simplification, hosted at
 the project's primary web address, `juno-medical-clarity.web.app`. The existing full app
 (auth, navbar, dataset/Athena presets, grading UI, admin surface) relocates to a new
-Firebase Hosting site, `juno-app.web.app`, in the same Firebase/GCP project
+Firebase Hosting site, `juno-app-99.web.app`, in the same Firebase/GCP project
 (`juno-medical-clarity`). The work is additive — existing frontend and backend code is
 not overridden — and splits into five sub-projects: image input support, a trial backend
 route with rate limiting and retention, a standalone trial frontend, the hosting split
@@ -23,8 +23,8 @@ Distilled from `brainstorm.md`'s decision log (D1–D11) plus items settled sinc
   `@verify_firebase_token` and job pipeline work unchanged; the trial user never sees a
   login screen.
 - **D2 — Hosting layout:** The trial takes over the primary site
-  `juno-medical-clarity.web.app`. The full app moves to a new site, `juno-app`
-  (`juno-app.web.app`), same Firebase project. No custom domain.
+  `juno-medical-clarity.web.app`. The full app moves to a new site, `juno-app-99`
+  (`juno-app-99.web.app`), same Firebase project. No custom domain.
 - **D3 — Frontend structure:** A separate Vite build, `frontend-trial/`, in the same
   repo, sharing exactly `CarePlanView`, `MedicalTerm`, `buildPdfHtml`, and `types/` from
   `frontend/src` via a path alias — nothing else.
@@ -76,7 +76,7 @@ Distilled from `brainstorm.md`'s decision log (D1–D11) plus items settled sinc
 - **Auto-deploy trigger (settled 2026-09-05):** merging to `main` automatically deploys
   the backend and the trial frontend (`frontend-trial/`), gated structurally on CI
   passing via a `workflow_run` trigger (SP4 §4.8) — not a bare `push` trigger. The
-  relocated full app (`app` target, `juno-app.web.app`) is **never** auto-deployed; it
+  relocated full app (`app` target, `juno-app-99.web.app`) is **never** auto-deployed; it
   stays `workflow_dispatch`-only, so a merge to `main` cannot risk that site.
 
 ---
@@ -88,7 +88,7 @@ Distilled from `brainstorm.md`'s decision log (D1–D11) plus items settled sinc
 | SP1 | Image Input Support | P1 | Add `png/jpg/jpeg/webp/heic` to the shared `ALLOWED_EXTENSIONS`; a Gemini-vision (Vertex) extraction path in `care_plan_input.py`; images embedded into the combined PDF. Benefits main app + trial. | None | `01-image-input/PRD.md` |
 | SP2 | Trial Backend Route, Rate Limiting & Retention | P1 | New `/trial` route family (`POST`/`DELETE /trial/jobs/<id>`) reusing existing job-creation helpers; Firestore-backed per-IP rate limit (5/hr); `is_trial`/`expires_at` fields on the shared `care_plan_outputs` collection; GCS input cleanup after extraction. | None | `02-trial-backend/PRD.md` |
 | SP3 | Trial Frontend App | P2 | New `frontend-trial/` Vite app: upload → processing (live steps) → results screens, anonymous-auth wiring, GA4 instrumentation, download-report reuse, best-effort `DELETE` on unload. | SP2 (API contract) | `03-trial-frontend/PRD.md` |
-| SP4 | Hosting Split, CI & Legal Pages | P3 | Multi-target `firebase.json`/`.firebaserc` (`app` + `trial`); `deploy.yml` gains a trial build/deploy job and fixes `rollback-production.yml`; CORS widened for `juno-app.web.app`; Privacy Policy + Terms & Conditions copy. | SP3 (build output); coordinates with SP2 (CORS, max-instances) | `04-hosting-split-and-legal/PRD.md` |
+| SP4 | Hosting Split, CI & Legal Pages | P3 | Multi-target `firebase.json`/`.firebaserc` (`app` + `trial`); `deploy.yml` gains a trial build/deploy job and fixes `rollback-production.yml`; CORS widened for `juno-app-99.web.app`; Privacy Policy + Terms & Conditions copy. | SP3 (build output); coordinates with SP2 (CORS, max-instances) | `04-hosting-split-and-legal/PRD.md` |
 | SP5 | Retention Automation | P5 | Enables Firestore native TTL on `care_plan_outputs`/`trial_rate_limits`; daily Cloud Scheduler → Cloud Run Job deleting anonymous Auth users older than 24h. | SP2 (`expires_at` fields, `trial_rate_limits`); coordinates with SP4 (deploy workflow, legal copy accuracy) | `05-retention-automation/PRD.md` |
 
 ---
@@ -122,6 +122,31 @@ settled.
 
 ---
 
+## Infrastructure already provisioned (as of 2026-09-05)
+
+Verified to exist in GCP/Firebase, ahead of any SP5/SP4 code landing:
+
+- **Firebase Hosting sites:** `juno-medical-clarity` (primary/default site — currently
+  serving the full app; will serve the **trial** after cutover) and `juno-app-99`
+  (created, empty — will receive the relocated full app).
+- **`.firebaserc` hosting targets:** `trial` → `juno-medical-clarity`, `app` →
+  `juno-app-99` — applied via `firebase target:apply` and committed to the repo root.
+- **Cloud Tasks queue `care-plan-jobs-trial`** — created and `RUNNING`, alongside the
+  existing `care-plan-jobs` queue (max 5 concurrent dispatches, 2/sec).
+- **GitHub repository secret `TRIAL_RATE_LIMIT_SALT`** — added by the user.
+
+**Not yet created** (correctly — these depend on SP5 code that doesn't exist yet):
+- The Firestore TTL policies on `care_plan_outputs`/`trial_rate_limits`. The user's
+  first attempt failed with `ERROR: (gcloud.firestore.fields.ttls.update) Exactly one
+  of (--disable-ttl | [--enable-ttl : --expiration-offset]) must be specified.` — the
+  missing `--enable-ttl` flag has since been corrected in SP5 §8 (and §4.1).
+- The `juno-trial-anon-cleanup` Cloud Run Job.
+- The Cloud Scheduler trigger for that Job — blocked on the Cloud Scheduler API not yet
+  being enabled on the project.
+- The GCS lifecycle rule on the `care_plan_trial/` prefix.
+
+---
+
 ## Consolidated Manual Steps (owner-only)
 
 Already **DONE**, per `brainstorm.md` §8:
@@ -149,7 +174,7 @@ status of each individual PRD's own manual-steps section for cross-reference.
    tone/liability only, not a pending text fix.)
 3. **[RESOLVED/DONE]** Deploy service account's IAM has been confirmed by the owner to
    cover `firebase hosting:sites:create` and `target:apply` (SP4 §8#4-5) — no role
-   grant needed before creating the new `juno-app` Hosting site.
+   grant needed before creating the new `juno-app-99` Hosting site.
 4. **Add a new GitHub Actions secret `TRIAL_RATE_LIMIT_SALT`** (SP2 §8#1) — see the CI &
    IAM checklist's item 1 for the exact command.
 5. **Create the trial Cloud Tasks queue manually, once** (SP2 §8#2) — the CI & IAM
@@ -228,7 +253,7 @@ none.** Every §9 item across SP1–SP5 is now either `[RESOLVED]` or `[DEFERRED
 
 - **The cutover is the riskiest single step.** Deploying the trial to
   `juno-medical-clarity.web.app` overwrites the currently-live app at that address.
-  Backend CORS must include `juno-app.web.app` **before** the relocated full app can work
+  Backend CORS must include `juno-app-99.web.app` **before** the relocated full app can work
   at its new address — a hard ordering constraint. SP4 defines the safe deploy order and
   the rollback path; do not deviate from it during the actual cutover.
 - **`rollback-production.yml` is a second, independent Hosting deploy path** that breaks

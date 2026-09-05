@@ -104,12 +104,14 @@ the corrected wording proposed in §4.1 (see SP4 §9 Q9).
 gcloud firestore fields ttls update expires_at \
   --collection-group=care_plan_outputs \
   --database="(default)" \
+  --enable-ttl \
   --project=juno-medical-clarity
 
 # trial_rate_limits — SP2's per-IP counter collection.
 gcloud firestore fields ttls update expires_at \
   --collection-group=trial_rate_limits \
   --database="(default)" \
+  --enable-ttl \
   --project=juno-medical-clarity
 ```
 
@@ -851,9 +853,11 @@ gcloud tasks queues describe care-plan-jobs-trial \
 
 # b. Firestore TTL policy on both collections (§4.1):
 gcloud firestore fields ttls update expires_at \
-  --collection-group=care_plan_outputs --database="(default)" --project="$GCP_PROJECT_ID"
+  --collection-group=care_plan_outputs --database="(default)" \
+  --enable-ttl --project="$GCP_PROJECT_ID"
 gcloud firestore fields ttls update expires_at \
-  --collection-group=trial_rate_limits --database="(default)" --project="$GCP_PROJECT_ID"
+  --collection-group=trial_rate_limits --database="(default)" \
+  --enable-ttl --project="$GCP_PROJECT_ID"
 
 # Verify — state should read ACTIVE (may take time to transition from CREATING):
 gcloud firestore fields ttls describe expires_at \
@@ -894,9 +898,9 @@ gsutil lifecycle set /tmp/trial-lifecycle-rule.json gs://juno-medical-clarity-ba
 
 # f. SP4's Firebase Hosting split — one-time site + target setup
 # (04-hosting-split-and-legal/PRD.md §4.2):
-firebase hosting:sites:create juno-app --project "$GCP_PROJECT_ID"
+firebase hosting:sites:create juno-app-99 --project "$GCP_PROJECT_ID"
 firebase target:apply hosting trial juno-medical-clarity --project "$GCP_PROJECT_ID"
-firebase target:apply hosting app juno-app --project "$GCP_PROJECT_ID"
+firebase target:apply hosting app juno-app-99 --project "$GCP_PROJECT_ID"
 ```
 
 **3. IAM grants — only if a command above fails with a permission error (grant, then

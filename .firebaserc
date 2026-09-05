@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "juno-medical-clarity"
+  },
+  "targets": {
+    "juno-medical-clarity": {
+      "hosting": {
+        "trial": [
+          "juno-medical-clarity"
+        ],
+        "app": [
+          "juno-app-99"
+        ]
+      }
+    }
   }
 }

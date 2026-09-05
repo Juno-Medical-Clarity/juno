@@ -94,7 +94,7 @@ count, silently multiplying the effective limit by the instance count).
   Cloud Tasks config before writing anything (§4.1), so it never has this bug itself, but
   fixing the existing main-app route is a separate, out-of-scope follow-up (§9 Q9).
 - **No CORS origin changes.** The trial serves from `juno-medical-clarity.web.app`,
-  already in `app.py`'s allow-list. Adding `juno-app.web.app` (where the main app
+  already in `app.py`'s allow-list. Adding `juno-app-99.web.app` (where the main app
   relocates to per D2) is SP4's job when it does the Hosting split — flagged here as a
   cross-cutting dependency, not implemented in this PRD.
 - **No Cloud Run `--max-instances` flag change.** Recommended (§4.9, §9 Q7) as a
