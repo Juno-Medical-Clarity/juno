@@ -117,7 +117,7 @@ export default function UploadScreen({ authState, onAuthRetry, onJobCreated }: U
   return (
     <div>
       <header style={{ textAlign: 'center' }}>
-        <h1>Juno</h1>
+        <h1>Simplify</h1>
         <p>Turn your care plan into plain language</p>
       </header>
 

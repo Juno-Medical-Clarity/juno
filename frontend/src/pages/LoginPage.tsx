@@ -33,9 +33,9 @@ export default function LoginPage() {
       <main className="auth-page">
         <form className="auth-card glass-card" onSubmit={handleSubmit}>
           <div>
-            <p className="eyebrow">Juno</p>
+            <p className="eyebrow">Simplify</p>
             <h1>Sign in</h1>
-            <p className="auth-copy">Use your Juno account to create patient care plans.</p>
+            <p className="auth-copy">Use your Simplify account to create patient care plans.</p>
           </div>
 
           <label className="auth-field">

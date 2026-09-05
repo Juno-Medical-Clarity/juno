@@ -4,7 +4,7 @@
 
 ## How it works
 
-Juno computes an automated approximation of PEMAT using five internal dimension scores:
+Simplify computes an automated approximation of PEMAT using five internal dimension scores:
 
 - **Understandability** is a weighted combination of: jargon density (25%), sentence complexity (25%), passive voice (20%), numeracy clarity (15%), and structural clarity (15%).
 - **Actionability** maps directly to the internal actionability dimension score.

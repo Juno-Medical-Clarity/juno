@@ -4,7 +4,7 @@
 
 ## How it works
 
-Juno computes an automated approximation of three SAM domains using internal dimension scores:
+Simplify computes an automated approximation of three SAM domains using internal dimension scores:
 
 - **Content** (0–8 points): weighted combination of grade level and jargon density.
 - **Literacy demand** (0–14 points): weighted combination of grade level, sentence complexity, and passive voice.

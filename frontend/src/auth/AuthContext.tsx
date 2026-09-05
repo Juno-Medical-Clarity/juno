@@ -104,7 +104,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       loading,
       getIdToken: async () => {
         if (!firebaseAuth.currentUser) {
-          throw new Error('You must be signed in to use Juno.');
+          throw new Error('You must be signed in to use Simplify.');
         }
         return firebaseAuth.currentUser.getIdToken();
       },

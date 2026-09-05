@@ -5,7 +5,7 @@ import { ApiError } from '../types/errors';
 export async function authenticatedFetch(input: RequestInfo | URL, init: RequestInit = {}) {
   const user = firebaseAuth.currentUser;
   if (!user) {
-    throw new Error('You must be signed in to use Juno.');
+    throw new Error('You must be signed in to use Simplify.');
   }
 
   const token = await user.getIdToken();

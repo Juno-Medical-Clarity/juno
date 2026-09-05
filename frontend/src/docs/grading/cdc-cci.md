@@ -4,7 +4,7 @@ The **CDC Clear Communication Index** (CDC CCI) is a research-based tool develop
 
 ## How it works
 
-Juno computes an automated approximation of four CDC CCI items using internal dimension scores:
+Simplify computes an automated approximation of four CDC CCI items using internal dimension scores:
 
 - **Main message present**: actionability score >= 50
 - **Behavioral recommendation present**: average of actionability + numeracy clarity >= 50
@@ -20,7 +20,7 @@ The score is the percentage of the four items met (0, 25, 50, 75, or 100).
 - **`numbers`**: 1 if numeracy criterion met, else 0
 - **`call_to_action`**: 1 if call-to-action criterion met, else 0
 
-Note: Full CDC CCI has 20 scored items. Juno approximates the 4 most automatable items from text alone.
+Note: Full CDC CCI has 20 scored items. Simplify approximates the 4 most automatable items from text alone.
 
 ## External reference
 

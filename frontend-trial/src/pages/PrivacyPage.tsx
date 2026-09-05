@@ -5,11 +5,11 @@ export default function PrivacyPage() {
     <div className="legal-page">
       <Link to="/">← Back</Link>
       <article>
-        <h1>Privacy Policy — Juno Care Plan Simplifier (Trial)</h1>
+        <h1>Privacy Policy — Simplify (Trial)</h1>
         <p>Last updated: September 4, 2026</p>
 
         <p>
-          This page describes how the Juno Care Plan Simplifier trial ("this tool," "the
+          This page describes how the Simplify trial ("this tool," "the
           Service") handles your information. This is a free demo product. Please read this
           before uploading anything.
         </p>

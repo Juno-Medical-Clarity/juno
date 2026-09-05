@@ -5,14 +5,14 @@ export default function TermsPage() {
     <div className="legal-page">
       <Link to="/">← Back</Link>
       <article>
-        <h1>Terms & Conditions — Juno Care Plan Simplifier (Trial)</h1>
+        <h1>Terms & Conditions — Simplify (Trial)</h1>
         <p>Last updated: September 4, 2026</p>
 
         <p>By using this tool, you agree to the following terms.</p>
 
         <h2>1. What this is</h2>
         <p>
-          This is a free, public demonstration of Juno's care-plan simplification technology
+          This is a free, public demonstration of Simplify's care-plan simplification technology
           ("the Service"). It is provided for evaluation and demonstration purposes only.
         </p>
 

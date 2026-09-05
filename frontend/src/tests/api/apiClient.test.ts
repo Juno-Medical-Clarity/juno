@@ -28,7 +28,7 @@ describe('authenticatedFetch', () => {
     (firebaseModule.firebaseAuth as { currentUser: unknown }).currentUser = null;
 
     await expect(authenticatedFetch('/care_plan/saved')).rejects.toThrow(
-      'You must be signed in to use Juno.',
+      'You must be signed in to use Simplify.',
     );
     expect(fetchSpy).not.toHaveBeenCalled();
   });

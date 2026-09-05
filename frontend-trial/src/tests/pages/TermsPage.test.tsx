@@ -13,7 +13,7 @@ describe('TermsPage', () => {
   it('renders the approved Terms & Conditions copy from the PRD, including the rate limit', () => {
     render(<MemoryRouter><TermsPage /></MemoryRouter>);
     expect(
-      screen.getByRole('heading', { name: /terms & conditions — juno care plan simplifier \(trial\)/i })
+      screen.getByRole('heading', { name: /terms & conditions — simplify \(trial\)/i })
     ).toBeInTheDocument();
     expect(screen.getByText(/currently 5 per hour, subject to change without notice/i)).toBeInTheDocument();
   });

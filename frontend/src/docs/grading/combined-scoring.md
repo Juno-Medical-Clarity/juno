@@ -1,6 +1,6 @@
 # Combined Score (Patient Accessibility Score)
 
-The **Combined Score** is Juno's primary readability metric — a composite Patient Accessibility Score (0–100) that aggregates seven evidence-based dimensions of health-literacy difficulty into a single actionable number.
+The **Combined Score** is Simplify's primary readability metric — a composite Patient Accessibility Score (0–100) that aggregates seven evidence-based dimensions of health-literacy difficulty into a single actionable number.
 
 Unlike any individual readability formula, the combined score accounts for vocabulary complexity, sentence structure, passive voice, actionability, numeracy, and document layout simultaneously. This multi-dimensional approach reflects how real patients experience a document: a text that scores well on grade level alone can still be confusing if it is passive, jargon-heavy, or poorly structured.
 
@@ -51,9 +51,9 @@ In addition to the composite score, the combined result reports a `grade_estimat
 When grading is run on a completed care plan, two composite scores are computed:
 
 - **Before** — scored against the original input text (the raw clinical note or document)
-- **After** — scored against Juno's clarified output (the plain-language care plan)
+- **After** — scored against Simplify's clarified output (the plain-language care plan)
 
-The delta between these two scores shows the accessibility improvement Juno achieved for that document.
+The delta between these two scores shows the accessibility improvement Simplify achieved for that document.
 
 ## Low-confidence flag
 

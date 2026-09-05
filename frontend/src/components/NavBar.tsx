@@ -26,7 +26,7 @@ export default function NavBar({ isPublicView = false }: NavBarProps) {
     <nav className="top-nav" aria-label="Main navigation">
       <div className="top-nav-brand">
         <Link to="/" className="top-nav-logo-link">
-          <span className="top-nav-logo">Juno</span>
+          <span className="top-nav-logo">Simplify</span>
         </Link>
       </div>
       <div className="top-nav-center">

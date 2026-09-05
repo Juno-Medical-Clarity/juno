@@ -24,7 +24,7 @@ export default function App() {
     return (
       <main className="auth-page">
         <div className="auth-card glass-card">
-          <p className="eyebrow">Juno</p>
+          <p className="eyebrow">Simplify</p>
           <h1>Loading...</h1>
         </div>
       </main>
