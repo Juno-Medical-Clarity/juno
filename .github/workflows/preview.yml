@@ -31,7 +31,19 @@ jobs:
         with:
           node-version: '24'
           cache: 'npm'
-          cache-dependency-path: frontend-trial/package-lock.json
+          cache-dependency-path: |
+            frontend/package-lock.json
+            frontend-trial/package-lock.json
+
+      # frontend-trial's tsconfig maps @main/* to ../frontend/src (its
+      # shared-component alias — CarePlanView, MedicalTerm, buildPdfHtml,
+      # types/); tsc resolves those files' own `react`/`react-dom` imports
+      # against frontend/node_modules, so it must be installed even though
+      # frontend/ itself is never built or deployed here. Matches the same
+      # fix in deploy.yml.
+      - name: Install app dependencies (for the @main alias's type-check)
+        run: npm ci
+        working-directory: frontend
 
       - name: Install trial dependencies
         run: npm ci

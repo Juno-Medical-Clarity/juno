@@ -125,8 +125,13 @@ jobs:
             frontend/package-lock.json
             frontend-trial/package-lock.json
 
+      # Always installed, even on the automatic workflow_run path where the
+      # app target itself is never built/deployed below: frontend-trial's
+      # tsconfig maps @main/* to ../frontend/src (its shared-component alias),
+      # and tsc resolves those files' own `react`/`react-dom` imports against
+      # frontend/node_modules — without it, "Build trial (frontend-trial/)"
+      # fails with "Cannot find module 'react'" on every automatic deploy.
       - name: Install app dependencies
-        if: github.event_name == 'workflow_dispatch'
         run: npm ci
         working-directory: frontend
 
