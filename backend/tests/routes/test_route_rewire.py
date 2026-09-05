@@ -5,7 +5,8 @@ def test_routes_package_registers_care_plan_blueprints_and_new_paths_only():
     import routes
 
     assert [bp.name for bp in routes.API_BLUEPRINTS] == [
-        "care_plan_jobs", "batch_jobs", "saved_outputs", "datasets", "grading", "admin"
+        "care_plan_jobs", "batch_jobs", "saved_outputs", "datasets",
+        "clinician_dataset", "grading", "admin", "trial",
     ]
 
     app = Flask(__name__)
