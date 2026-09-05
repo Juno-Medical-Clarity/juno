@@ -99,6 +99,32 @@ export default function CarePlanView({
 }) {
   const terms = result.terms ?? {};
   const withTerms = (text: string) => renderTextWithTerms(text, terms);
+  // Per-question copy feedback (edge-case review #4): navigator.clipboard can
+  // be undefined (very old WebViews, non-secure origins) and writeText can
+  // reject (permission denied), so this can't be a fire-and-forget onClick --
+  // give the user a brief "Copied"/"Copy failed" affordance either way.
+  const [copyStatus, setCopyStatus] = useState<Record<number, 'copied' | 'failed'>>({});
+  function handleCopyQuestion(i: number, text: string) {
+    const clearAfterDelay = (status: 'copied' | 'failed') => {
+      setCopyStatus(prev => ({ ...prev, [i]: status }));
+      setTimeout(() => {
+        setCopyStatus(prev => {
+          if (prev[i] !== status) return prev;
+          const next = { ...prev };
+          delete next[i];
+          return next;
+        });
+      }, 2000);
+    };
+    if (!navigator.clipboard) {
+      clearAfterDelay('failed');
+      return;
+    }
+    navigator.clipboard.writeText(text).then(
+      () => clearAfterDelay('copied'),
+      () => clearAfterDelay('failed'),
+    );
+  }
   const URGENCY_COLORS: Record<string, string> = {
     emergency: '#DC2626',
     call_doctor: '#D97706',
@@ -268,7 +294,7 @@ export default function CarePlanView({
               <li key={i} style={{ color: '#0369A1', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
                 <span style={{ flex: 1 }}>{withTerms(q)}</span>
                 <button
-                  onClick={() => navigator.clipboard.writeText(q)}
+                  onClick={() => handleCopyQuestion(i, q)}
                   style={{
                     background: 'none',
                     border: '1px solid var(--border)',
@@ -282,7 +308,7 @@ export default function CarePlanView({
                     flexShrink: 0,
                   }}
                 >
-                  Copy
+                  {copyStatus[i] === 'copied' ? 'Copied' : copyStatus[i] === 'failed' ? 'Copy failed' : 'Copy'}
                 </button>
               </li>
             ))}
