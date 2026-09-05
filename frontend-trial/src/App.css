@@ -4,6 +4,40 @@
 
 /* Trial-only additions below — centered single-column layout, no sidebar/nav offset */
 
+/* ── Accessibility helpers (trial) ──
+   Visually-hidden but still announced by screen readers — used for the
+   aria-live status regions on ProcessingScreen/ResultScreen (edge-case
+   review #3), which have on-screen content of their own already and don't
+   need a second, visible copy of the announcement. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Processing watchdog notice (trial) ──
+   Shown above the step list once the client-side watchdog timer elapses
+   (edge-case review #1) — a job stuck this long is very unlikely to still be
+   alive, but the step list is left in place underneath since it technically
+   still could complete. */
+.watchdog-notice {
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.watchdog-notice p {
+  margin-bottom: 12px;
+}
+
 /* ── Score widget (trial) ──
    No .score-widget rule existed before this file introduced one — the text
    used to be a short "42 → 78" and rendered fine as a bare <p>. Now that it

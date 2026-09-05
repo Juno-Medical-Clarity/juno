@@ -4,6 +4,7 @@ import { useAnonAuth } from '../hooks/useAnonAuth';
 import { useTrialJobSnapshot } from '../hooks/useTrialJobSnapshot';
 import type { TrialJobDoc } from '../hooks/useTrialJobSnapshot';
 import { useUnloadCleanup } from '../hooks/useUnloadCleanup';
+import { deleteTrialJob } from '../api/trialApi';
 import UploadScreen from '../components/UploadScreen';
 import ProcessingScreen from '../components/ProcessingScreen';
 import ResultScreen from '../components/ResultScreen';
@@ -37,6 +38,16 @@ export default function TrialPage() {
   }
 
   function handleRestart() {
+    // "Start over" can now be reached from the processing screen's watchdog
+    // (job stuck, but not yet confirmed gone — see ProcessingScreen) as well
+    // as its jobGone/snapshotError branches. Best-effort clean up the
+    // abandoned job rather than leaving it solely to the TTL backstop;
+    // deletedRef is the same idempotency guard ResultScreen/useUnloadCleanup
+    // use, so this can never double-fire a delete for the same job.
+    if (jobId && !deletedRef.current.has(jobId)) {
+      deletedRef.current.add(jobId);
+      void deleteTrialJob(jobId).catch(() => { /* best-effort; expires_at is the safety net */ });
+    }
     setJobId(null);
     setFinalJobDoc(null);
     setAppState('upload');

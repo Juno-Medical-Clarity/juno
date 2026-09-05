@@ -51,6 +51,19 @@ describe('ResultScreen', () => {
     expect(screen.getByText('Rest up.')).toBeInTheDocument();
   });
 
+  it('moves focus to the heading and announces arrival via aria-live on a completed result (edge-case review #3)', () => {
+    render(<ResultScreen jobDoc={completedJobDoc} jobId="job-1" deletedRef={deletedRef} onRestart={vi.fn()} />);
+    expect(document.activeElement?.tagName).toBe('H1');
+    expect(document.activeElement).toHaveTextContent('Jan 5 Care Plan');
+    expect(document.querySelector('[aria-live="polite"]')).toHaveTextContent(/care plan is ready/i);
+  });
+
+  it('moves focus to the heading and announces the problem via aria-live on an error result', () => {
+    render(<ResultScreen jobDoc={errorJobDoc} jobId="job-2" deletedRef={deletedRef} onRestart={vi.fn()} />);
+    expect(document.activeElement?.tagName).toBe('H1');
+    expect(document.querySelector('[aria-live="polite"]')).toHaveTextContent(/problem creating your care plan/i);
+  });
+
   it('does not render "Other Items From Your Visit" even when low_priority has entries', () => {
     const jobDoc: TrialJobDoc = {
       status: 'completed', stage: 5, name: 'With Low Priority', error_data: null,
