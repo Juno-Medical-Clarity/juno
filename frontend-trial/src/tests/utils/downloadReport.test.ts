@@ -33,6 +33,16 @@ describe('downloadReport', () => {
     expect(printSpy).toHaveBeenCalledOnce();
   });
 
+  it('nulls printWindow.opener after opening the window (defense-in-depth vs stored XSS)', () => {
+    const fakeWindow = { document: { write: vi.fn(), close: vi.fn() }, print: vi.fn(), opener: { some: 'window' } };
+    vi.spyOn(window, 'open').mockReturnValue(fakeWindow as unknown as Window);
+
+    downloadReport(fixture, grading);
+
+    expect(fakeWindow.document.write).toHaveBeenCalledOnce();
+    expect(fakeWindow.opener).toBeNull();
+  });
+
   it('alerts and never calls document.write when the pop-up is blocked', () => {
     vi.spyOn(window, 'open').mockReturnValue(null);
     const alertSpy = vi.spyOn(window, 'alert').mockImplementation(() => {});
