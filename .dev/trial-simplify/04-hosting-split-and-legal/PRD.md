@@ -676,7 +676,7 @@ We may update this policy as the tool evolves. The "Last updated" date at the to
 reflect the most recent change.
 
 ## Contact
-Questions about this trial can be directed to [CONTACT — placeholder, see §8].
+Questions about this trial can be directed to tejitpabari99@gmail.com.
 ```
 
 ### 6.3 Terms & Conditions — full draft text
@@ -748,7 +748,7 @@ We may update these terms as the Service evolves. Continued use of the Service a
 change constitutes acceptance of the updated terms.
 
 ## 11. Contact
-Questions about these terms can be directed to [CONTACT — placeholder, see §8].
+Questions about these terms can be directed to tejitpabari99@gmail.com.
 ```
 
 ### 6.4 Footer copy — exact text
@@ -853,21 +853,18 @@ it's ever needed for a real incident.
    particular: confirm the rate-limit number stated in Terms §7 ("5 per hour") stays in
    sync with whatever SP2 ships, and confirm you're comfortable with the liability/
    warranty language as a non-lawyer-reviewed draft for a health-adjacent public tool.
-2. **Supply a real contact method** for the `[CONTACT — placeholder]` line in both
-   documents (§6.2, §6.3) — an email address, a GitHub issues link, or "no contact channel
-   provided" if that's the intentional choice. Cannot be resolved by Claude; there's no
-   existing support/contact channel referenced anywhere else in the repo to infer one
-   from.
+2. **[RESOLVED]** Contact method supplied: `tejitpabari99@gmail.com`. Both the
+   Privacy Policy (§6.2) and Terms & Conditions (§6.3) now list this address in
+   place of the `[CONTACT — placeholder]` line.
 3. **Confirm the Cloud Run `max-instances` numbers** once SP2 proposes them (§9 Q4) — this
    PRD defines *where* the flag goes in `deploy.yml` but not the final value.
 4. **Run §4.2's one-time `firebase hosting:sites:create` / `target:apply` commands**
    (delegated to us per the brainstorm, but still requires a human to actually execute
    them with real GCP/Firebase credentials before this PRD's config changes can be merged
    — they can't run from this design-only pass).
-5. **Confirm the assumption in §4.2** that the existing `FIREBASE_SERVICE_ACCOUNT` secret
-   already has sufficient IAM role (Firebase Hosting Admin or broader) to run
-   `hosting:sites:create`, not just `hosting:deploy` — if not, a role grant is a
-   GCP-console action only you can authorize.
+5. **[RESOLVED]** Owner has confirmed the deploy service account's IAM already
+   covers `firebase hosting:sites:create` (and `target:apply`) — no additional role
+   grant is needed before §4.2's one-time commands are run.
 
 ---
 
@@ -875,7 +872,7 @@ it's ever needed for a real incident.
 
 | # | Item | Status |
 |---|---|---|
-| Q1 | Does the existing `FIREBASE_SERVICE_ACCOUNT` secret's IAM role cover `hosting:sites:create` and `target:apply`, or only `hosting:deploy`? | **[OPEN]** — cannot be verified from this design-only pass (no live credential check performed). If insufficient, needs a one-time IAM role grant before §4.2 can run — see §8 item 5. |
+| Q1 | Does the existing `FIREBASE_SERVICE_ACCOUNT` secret's IAM role cover `hosting:sites:create` and `target:apply`, or only `hosting:deploy`? | **[RESOLVED]** — owner has confirmed the deploy service account's IAM already covers `hosting:sites:create` and `target:apply`; no role grant needed. See §8 item 5. |
 | Q2 | Should there be a manual-approval gate (GitHub Environment protection rule) between the `app` and `trial` deploy steps, so a human confirms `juno-app.web.app` looks right before `trial` overwrites the primary address? | **[DEFERRED]** — considered in §4.5 step 5 and rejected for now as over-engineering for a single-operator project where Hosting deploys are seconds, not minutes, and the rollback path (§4.4) is the accepted safety net. Revisit if this project ever has multiple deploy operators or the cutover risk tolerance changes. |
 | Q3 | Exact `max-instances` values for `juno-api` / `juno-worker` in `deploy.yml`'s `gcloud run services update` calls. | **[OPEN, owned by SP2]** — this PRD confirms *where* the flag belongs (a new `--max-instances "$N"` argument on both existing `gcloud run services update juno-api` / `juno-worker` calls in `deploy.yml`, using new workflow-level env vars e.g. `API_MAX_INSTANCES` / `WORKER_MAX_INSTANCES` next to `GCP_PROJECT_ID` etc.) but leaves the number itself to SP2 — note `rollback-production.yml` already uses `--max-instances=3` for `juno-worker` as one existing precedent, with no equivalent value set for `juno-api` anywhere today. |
 | Q4 | `rollback-production.yml`'s `juno-api` deploy sets `--min-instances=1`, contradicting D7's locked "min-instances=0, no cold-start masking" for the primary deploy pipeline. Pre-existing inconsistency, not introduced by this PRD. | **[OPEN, flagged for SP2]** — out of this PRD's scope (SP2 owns Cloud Run instance-count decisions per the brainstorm's D4/D7 areas), but worth resolving so an emergency rollback doesn't silently reintroduce always-warm-instance cost that D7 explicitly rejected for the trial's steady state. |

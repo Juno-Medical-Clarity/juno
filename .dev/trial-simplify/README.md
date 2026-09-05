@@ -108,20 +108,17 @@ Already **DONE**, per `brainstorm.md` §8:
 
 Still outstanding:
 
-1. **Provide a contact method** for the `[CONTACT — placeholder]` line in both the
-   Privacy Policy and Terms & Conditions (SP4 §8#2) — an email address, a GitHub issues
-   link, or an explicit "no contact channel" choice. No existing support channel exists
-   in the repo to infer one from.
+1. **[RESOLVED]** Contact method supplied: `tejitpabari99@gmail.com` (SP4 §8#2).
+   Both the Privacy Policy and Terms & Conditions now list this address in place
+   of the `[CONTACT — placeholder]` line.
 2. **Review and approve the Privacy Policy and Terms & Conditions copy before launch**
    (D8, SP4 §8#1) — first drafts, not lawyer-reviewed. Confirm the stated rate limit
    ("5 per hour") matches what SP2 ships, and confirm comfort with the liability/warranty
    language for a health-adjacent public tool. SP5 additionally requires **amending the
    deletion-timing wording** SP4 drafted (SP5 §8#5) — see Cross-cutting risks below.
-3. **Verify the deploy service account's IAM covers `firebase hosting:sites:create` and
-   `target:apply`** (SP4 §8#4-5) — needed once, to create the new `juno-app` Hosting
-   site; if the existing `FIREBASE_SERVICE_ACCOUNT` secret only has `hosting:deploy`,
-   grant the broader Firebase Hosting Admin role, or create the site manually from the
-   Firebase console.
+3. **[RESOLVED]** Deploy service account's IAM has been confirmed by the owner to
+   cover `firebase hosting:sites:create` and `target:apply` (SP4 §8#4-5) — no role
+   grant needed before creating the new `juno-app` Hosting site.
 4. **Add a new GitHub Actions secret `TRIAL_RATE_LIMIT_SALT`** (SP2 §8#1) — any random
    32+ byte value (`openssl rand -hex 32`), used to HMAC-hash client IPs before they're
    stored.
@@ -178,9 +175,9 @@ Every remaining `[OPEN]` item across all five PRDs (excludes `[RESOLVED]` and
   surfaces.
 
 **SP4 — Hosting Split, CI & Legal Pages**
-- Q1: Does the existing `FIREBASE_SERVICE_ACCOUNT` secret's IAM role cover
-  `hosting:sites:create` and `target:apply`, or only `hosting:deploy`? Cannot be verified
-  without a live credential check (see Manual Steps #3).
+- Q1: **[RESOLVED]** Does the existing `FIREBASE_SERVICE_ACCOUNT` secret's IAM role
+  cover `hosting:sites:create` and `target:apply`, or only `hosting:deploy`? Owner has
+  confirmed the IAM role covers both (see Manual Steps #3).
 - Q3: Exact `max-instances` values for `juno-api`/`juno-worker` in `deploy.yml`. This PRD
   confirms where the flag goes; SP2 owns the number (see Manual Steps #6).
 - Q4: `rollback-production.yml`'s `juno-api` deploy sets `--min-instances=1`,
