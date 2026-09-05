@@ -879,3 +879,87 @@ def test_trial_job_drops_non_dict_entries_and_filters_valid_non_combined_ones(
     assert saved_output_data["grading"]["entries"] == [
         {"name": "combined", "target": "before", "grade": 1},
     ]
+
+
+# ---------------------------------------------------------------------------
+# total_duration_ms population (06-trial-optimizations Task 2)
+# ---------------------------------------------------------------------------
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_completed_job_populates_total_duration_ms(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker, monkeypatch,
+):
+    mock_get_doc.return_value = _make_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    # Two calls to time.monotonic() happen before this task's read-back:
+    # once at worker.py:88 (`start`), once at this task's new line. Fake
+    # a fixed 2.5s gap between them.
+    clock = iter([100.0, 102.5])
+    monkeypatch.setattr("routes.worker.time.monotonic", lambda: next(clock))
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {"care_plan": {}, "metrics": {"saved_id": None}}
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal") as mock_envelope_cls:
+            mock_envelope_cls.return_value = envelope_mock
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    # Assert on the Metrics instance passed into CarePlanInternal(...),
+    # since envelope_mock.to_dict() is a fixed stub in this test.
+    passed_metrics = mock_envelope_cls.call_args.kwargs["metrics"]
+    assert passed_metrics.total_duration_ms == 2500.0
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_also_populates_total_duration_ms(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker, monkeypatch,
+):
+    """Regression guard: Task 2 is unconditional, not gated on is_trial."""
+    mock_get_doc.return_value = _make_trial_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    clock = iter([100.0, 102.5])
+    monkeypatch.setattr("routes.worker.time.monotonic", lambda: next(clock))
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {"care_plan": {}, "metrics": {"saved_id": None}}
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal") as mock_envelope_cls:
+            mock_envelope_cls.return_value = envelope_mock
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    passed_metrics = mock_envelope_cls.call_args.kwargs["metrics"]
+    assert passed_metrics.total_duration_ms == 2500.0

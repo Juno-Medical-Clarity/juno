@@ -198,6 +198,12 @@ def execute_job(job_id: str):
             else:
                 input_model = TextInput(text=text)
 
+            # Read back the timeout-check timer (started at `start = time.monotonic()`
+            # above) into the field that already exists on Metrics but was never
+            # populated anywhere — see PRD §4.2. Purely additive; no gating on is_trial,
+            # benefits every caller (trial and main app both).
+            metrics.total_duration_ms = (time.monotonic() - start) * 1000.0
+
             envelope = CarePlanInternal(
                 metrics=metrics,
                 input=input_model,
@@ -232,11 +238,11 @@ def execute_job(job_id: str):
                 # breakdown UI) but never rendered anywhere in frontend-trial/.
                 # Dropping them here, storage-side only, cuts ~38% off output_data
                 # (optimization-findings-2026-09-05.md, Finding 1 / PRD §4.1).
-                grading = output_data.get("grading")
-                if isinstance(grading, dict):
-                    entries = grading.get("entries")
+                grading_dict = output_data.get("grading")
+                if isinstance(grading_dict, dict):
+                    entries = grading_dict.get("entries")
                     if isinstance(entries, list):
-                        grading["entries"] = [
+                        grading_dict["entries"] = [
                             e for e in entries
                             if isinstance(e, dict) and e.get("name") == "combined"
                         ]
