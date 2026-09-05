@@ -85,6 +85,10 @@ def _resolve_trial_input(user_id: str) -> dict:
         "input_pdf_gcs_uri": pdf_gcs_uri,
         "input_version": Constants.Pipeline.PIPELINE_VERSION_V1_2,
         "grading_enabled": True,
+        # Surface which files (if any) were tolerated-skipped as unusable
+        # (Finding 8) -- computed by resolve_uploaded_files but previously
+        # discarded here, never reaching the job doc or the client at all.
+        "skipped_files": resolved.skipped_files,
     }
 
 

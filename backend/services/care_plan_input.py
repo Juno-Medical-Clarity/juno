@@ -270,6 +270,11 @@ def resolve_uploaded_files(
     merge_candidates: list[tuple[bytes, str]] = []
     filenames: list[str] = []
     skipped_files: list[str] = []
+    # Parallel to skipped_files: the actual exception raised for each
+    # skipped file, so a single-file request that fails can re-raise its
+    # own specific, already-classified error (see the `not filenames` check
+    # below) instead of always collapsing to a generic EMPTY_DOCUMENT.
+    skipped_errors: list[Exception] = []
     aggregate_bytes = 0
 
     for upload in files:
@@ -284,6 +289,7 @@ def resolve_uploaded_files(
             if tolerate_unusable_files:
                 logger.warning("care_plan_input: skipping unusable file %s: %s", filename, exc)
                 skipped_files.append(filename)
+                skipped_errors.append(exc)
                 continue
             raise exc
 
@@ -317,6 +323,7 @@ def resolve_uploaded_files(
             if tolerate_unusable_files:
                 logger.warning("care_plan_input: skipping unusable file %s: %s", filename, exc)
                 skipped_files.append(filename)
+                skipped_errors.append(exc)
                 continue
             raise
 
@@ -335,6 +342,17 @@ def resolve_uploaded_files(
         # Only reachable under tolerate_unusable_files (otherwise the loop
         # above would already have raised on the first unusable file) --
         # every uploaded file was individually unusable.
+        if len(files) == 1 and skipped_errors:
+            # A single-file request isn't really a "batch" -- collapsing its
+            # one specific, already-classified failure (corrupt/encrypted
+            # PDF, unsupported type, no-text-layer scan, etc.) into the
+            # generic "none of several files worked" EMPTY_DOCUMENT message
+            # discards the actionable detail scenario 5/6 of the trial
+            # scenario-validation review called out (e.g. a solo
+            # password-protected PDF used to surface as "make sure the file
+            # contains selectable text, not a scanned image" -- misleading
+            # for an encryption error). Re-raise the original error instead.
+            raise skipped_errors[0]
         raise JunoError(
             ErrorCode.EMPTY_DOCUMENT,
             detail="None of the uploaded files contained readable text.",
