@@ -24,10 +24,30 @@ class Constants:
         MAX_FILE_COUNT: int = 10                       # unchanged
         MAX_AGGREGATE_FILE_BYTES: int = 25 * 1024 * 1024
         UPLOAD_PREFIX: str = "care_plan-uploads"
-        MAX_TEXT_LENGTH: int = 100_000                # server-side mirror of the
-                                                        # frontend paste cap; enforced
-                                                        # in both _resolve_trial_input
-                                                        # and _resolve_input_for_job.
+        MAX_TEXT_LENGTH: int = 500_000                 # Upper bound on extracted/pasted
+                                                        # document text, enforced up front
+                                                        # (before any job is enqueued or
+                                                        # pipeline step runs) in
+                                                        # _resolve_trial_input,
+                                                        # _resolve_input_for_job, and
+                                                        # services.care_plan_input. Not
+                                                        # meant to be a practical limit on
+                                                        # real clinical documents -- an
+                                                        # ordinary multi-page note is a few
+                                                        # thousand characters, and even a
+                                                        # very long chart is well under
+                                                        # 100K. 500K characters (~125K
+                                                        # tokens at ~4 chars/token) covers
+                                                        # roughly 150+ pages of dense text
+                                                        # while leaving enormous headroom
+                                                        # inside gemini-3.5-flash's ~1M-token
+                                                        # input context; it exists only to
+                                                        # fail fast on a pathological input
+                                                        # (e.g. megabytes of pasted raw
+                                                        # data) rather than to constrain
+                                                        # legitimate documents. The actual
+                                                        # ceiling for pipeline output is
+                                                        # Llm.MAX_TOKENS_LONG_FORM, not this.
 
     class Pipeline:
         PIPELINE_VERSION_V1_2: str = "v1-2"

@@ -18,6 +18,7 @@ from services.care_plan_input import (
     fetch_from_gcs,
     extract_text_from_bytes,
     is_allowed_extension,
+    validate_extracted_text_length,
 )
 from utils.constants import Constants
 from errors import make_error_response, ErrorCode, JunoError
@@ -85,6 +86,7 @@ def _resolve_input_for_job(user_id: str) -> dict:
         if len(file_bytes) > Constants.Uploads.MAX_FILE_BYTES:
             raise ValueError(f"Stored file exceeds {Constants.Uploads.MAX_FILE_BYTES // (1024 * 1024)} MB limit")
         text = extract_text_from_bytes(file_bytes, filename)
+        validate_extracted_text_length(text)
         return {
             "input_source_kind": "doc_id",
             "input_text": text,

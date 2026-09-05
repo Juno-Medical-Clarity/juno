@@ -97,8 +97,10 @@ class LLMClient:
             raise JunoError(
                 ErrorCode.LLM_MAX_TOKENS,
                 detail=(
-                    f"LLM generation hit token limit before completing. "
-                    f"Consider reducing prompt size or increasing max_tokens. "
+                    f"LLM generation hit the output token limit before completing "
+                    f"(max_tokens={max_tokens} was in effect for this call). "
+                    f"This is an output-cap failure, not an input-length one -- "
+                    f"consider raising max_tokens for this call site. "
                     f"finish_reason={candidate.finish_reason!r}"
                 ),
             )

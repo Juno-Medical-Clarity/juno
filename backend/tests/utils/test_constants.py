@@ -12,6 +12,10 @@ def test_uploads_namespace():
     assert Constants.Uploads.MAX_AGGREGATE_FILE_BYTES == 25 * 1024 * 1024
     assert "pdf" in Constants.Uploads.ALLOWED_EXTENSIONS
     assert Constants.Uploads.UPLOAD_PREFIX == "care_plan-uploads"
+    # Generous by design (no practical limit on real clinical documents) --
+    # see the constant's own comment for the reasoning. Must stay comfortably
+    # below what fits in the model's input context.
+    assert Constants.Uploads.MAX_TEXT_LENGTH == 500_000
 
 
 def test_deadlines_namespace():

@@ -318,3 +318,26 @@ def test_post_text_over_max_length_returns_400(mock_create_doc, mock_enqueue, cl
     assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
     mock_create_doc.assert_not_called()
     mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", TRIAL_ENV)
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+def test_post_uploaded_file_extracted_text_over_max_length_returns_400(
+    mock_create_doc, mock_enqueue, client_trial, auth_ok
+):
+    """Regression: the uploaded-file path never checked extracted text length
+    (only the pasted-text path did), so an over-limit uploaded document used
+    to sail through every pipeline step before failing late with a
+    misleading MAX_TOKENS error. Must now be rejected up front, before any
+    job is created or enqueued -- the whole point of the fix."""
+    from utils.constants import Constants
+    oversized_text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    data = {"files": (BytesIO(oversized_text.encode("utf-8")), "note.txt")}
+    resp = client_trial.post(
+        "/trial/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
+    )
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()

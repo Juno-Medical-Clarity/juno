@@ -136,8 +136,15 @@ class CarePlanV1_2Pipeline(CarePlanPipeline):
         return self._generate_text(prompt, temperature=Constants.Llm.TEMPERATURE_JSON, max_tokens=Constants.Llm.MAX_TOKENS_LONG_FORM)
 
     def structure_appointment_note(self, text: str) -> dict:
+        # Long-form budget: this step emits the full structured care-plan JSON
+        # (medications, tests, warning signs, etc. for the whole document), which
+        # can easily exceed the default 8192-token cap on anything longer than a
+        # short note. It is also the LAST LLM step, so hitting the cap here means
+        # every earlier step already ran to completion before the user sees a
+        # failure — use the same long-form budget as the other prose-generating
+        # steps so a merely-longer (not actually huge) document doesn't fail late.
         prompt = _STRUCTURE_PROMPT.format(schema=_STRUCTURING_SCHEMA, text=text)
-        raw = self._generate_json(prompt, temperature=Constants.Llm.TEMPERATURE_JSON, max_tokens=Constants.Llm.MAX_TOKENS)
+        raw = self._generate_json(prompt, temperature=Constants.Llm.TEMPERATURE_JSON, max_tokens=Constants.Llm.MAX_TOKENS_LONG_FORM)
         if not isinstance(raw, dict):
             raise JunoError(ErrorCode.LLM_INVALID_JSON, detail=f"expected dict, got {type(raw)}")
 

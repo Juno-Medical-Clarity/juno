@@ -179,6 +179,32 @@ def test_generate_text_max_tokens_logs_warning(vertex_env):
     assert exc_info.value.error_code == ErrorCode.LLM_MAX_TOKENS
 
 
+def test_generate_text_max_tokens_detail_records_max_tokens_value(vertex_env):
+    """Regression: the detail must record which max_tokens value was in effect
+    so a MAX_TOKENS failure is diagnosable from logs (which call site, what
+    budget) without guessing."""
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    mock_candidate = MagicMock()
+    mock_FinishReason.MAX_TOKENS = "MAX_TOKENS"
+    mock_candidate.finish_reason = "MAX_TOKENS"
+
+    mock_response = MagicMock()
+    mock_response.candidates = [mock_candidate]
+    mock_response.text = "partial output"
+    mock_model_instance.generate_content.return_value = mock_response
+
+    from utils.llm import LLMClient
+    client = LLMClient()
+
+    with pytest.raises(JunoError) as exc_info:
+        client.generate_text("test prompt", max_tokens=65536)
+
+    assert "max_tokens=65536" in exc_info.value.detail
+
+
 def test_generate_text_no_candidates_raises(vertex_env):
     mock_vertexai, mock_GenerativeModel, *_ = vertex_env
     mock_model_instance = MagicMock()

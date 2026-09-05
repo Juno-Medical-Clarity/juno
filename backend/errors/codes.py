@@ -344,13 +344,20 @@ ERROR_CATALOG: dict[ErrorCode, ErrorInfo] = {
         http_status=500,
         message=(
             "LLM generation stopped at the output token limit (FinishReason.MAX_TOKENS) "
-            "before the response was complete. Prompt may be too large or max_tokens too low."
+            "before the response was complete. This is an output-length failure, not an "
+            "input-length one -- see `detail` for the max_tokens value that was in effect "
+            "and consider raising it for this call site."
         ),
+        # NOTE: this is NOT a document-length problem -- it means the model's own
+        # response was cut off while generating output, which can happen even for a
+        # short input document. Do not blame document length here; that was the bug
+        # (this error surfaced as "the document was too long" after every earlier
+        # pipeline step had already run, which was both wrong and confusing).
         user_hint=(
-            "The document was too long to process in full. "
-            "Try uploading a shorter document or splitting it into smaller sections."
+            "Something went wrong while finishing the response. Please try again. "
+            "If it keeps happening, try a smaller section of the document."
         ),
-        retryable=False,
+        retryable=True,
         details_template="",
     ),
 

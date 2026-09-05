@@ -13,8 +13,10 @@ from services.care_plan_input import (
     extract_text_from_bytes,
     is_allowed_extension,
     resolve_uploaded_files,
+    validate_extracted_text_length,
 )
 from errors import ErrorCode, JunoError
+from utils.constants import Constants
 
 # A minimal, valid 1x1 PNG (no network, no fixture file needed).
 _ONE_PX_PNG = bytes.fromhex(
@@ -78,3 +80,30 @@ def test_resolve_uploaded_files_image_becomes_raw_merge_candidate(mock_extract_i
 
     assert "Known OCR text from image" in resolved.text
     assert combined_pdf_bytes is not None
+
+
+# ---------------------------------------------------------------------------
+# validate_extracted_text_length / resolve_uploaded_files up-front size check
+# ---------------------------------------------------------------------------
+
+def test_validate_extracted_text_length_accepts_text_at_limit():
+    text = "a" * Constants.Uploads.MAX_TEXT_LENGTH
+    validate_extracted_text_length(text)  # must not raise
+
+
+def test_validate_extracted_text_length_rejects_text_over_limit():
+    text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    with pytest.raises(ValueError, match="too long"):
+        validate_extracted_text_length(text)
+
+
+def test_resolve_uploaded_files_rejects_extracted_text_over_limit():
+    """Regression: the uploaded-file path never checked extracted text length
+    at all (unlike the pasted-text path), so an over-limit document would run
+    every pipeline step before failing late with a misleading MAX_TOKENS
+    error. It must now be rejected up front, before any job is created."""
+    oversized_text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    fake_upload = _FakeUpload("notes.txt", oversized_text.encode("utf-8"))
+
+    with pytest.raises(ValueError, match="too long"):
+        resolve_uploaded_files([fake_upload])

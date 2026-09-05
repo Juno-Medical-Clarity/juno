@@ -53,6 +53,28 @@ def is_allowed_extension(filename: str) -> bool:
     return bool(ext) and ext in Constants.Uploads.ALLOWED_EXTENSIONS
 
 
+def validate_extracted_text_length(text: str) -> None:
+    """Raise ValueError if extracted document text exceeds the configured
+    maximum length.
+
+    Mirrors the pasted-text length check already applied in
+    routes/trial.py::_resolve_trial_input and
+    routes/care_plan_jobs.py::_resolve_input_for_job -- but for text that is
+    *extracted* from an upload or a previously-stored doc_id, which was never
+    checked. Callers must invoke this before enqueueing a job, so an
+    over-limit document is rejected at submission time with a clear,
+    accurate reason instead of failing deep into the pipeline (e.g. via
+    ErrorCode.LLM_MAX_TOKENS, which is an unrelated output-token-cap error).
+    """
+    length = len(text)
+    if length > Constants.Uploads.MAX_TEXT_LENGTH:
+        raise ValueError(
+            f"Extracted document text is too long to process "
+            f"({length:,} characters; limit is {Constants.Uploads.MAX_TEXT_LENGTH:,} characters). "
+            "Try uploading a shorter document or splitting it into smaller sections."
+        )
+
+
 def extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
     """Extract plain text from PDF, TXT, DOCX, HTML, or image bytes."""
     ext = _get_extension(filename)
@@ -123,6 +145,13 @@ def resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
                 (extracted_text.encode("utf-8"), text_artifact_filename(filename))
             )
 
+    combined_text = "\n".join(text_parts).strip()
+    # Fail fast: reject an over-limit document up front (before the (possibly
+    # slow) PDF merge below, before any job is enqueued, and before any
+    # pipeline/LLM step runs) rather than letting it run every pipeline step
+    # only to fail late on an unrelated output-token-cap error.
+    validate_extracted_text_length(combined_text)
+
     combined_pdf_bytes = None
     if merge_candidates:
         try:
@@ -136,7 +165,7 @@ def resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
     source_filename = ", ".join(filenames)
     combined_pdf_size = float(len(combined_pdf_bytes)) if combined_pdf_bytes is not None else None
     return ResolvedInput(
-        text="\n".join(text_parts).strip(),
+        text=combined_text,
         source_description=source_filename,
         source_filename=source_filename,
         combined_pdf_size=combined_pdf_size,

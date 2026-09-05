@@ -49,12 +49,16 @@ def extract_text_from_image(image_bytes: bytes, ext: str) -> str:
     image_bytes = _maybe_downscale(image_bytes, ext)
 
     client = LLMClient()
+    # Long-form budget: this call transcribes ALL visible text from a full
+    # document page image verbatim (see IMAGE_OCR_PROMPT) -- a dense scanned
+    # page can produce output well past the default 8192-token cap, so use the
+    # same long-form budget as the pipeline's other full-document text steps.
     text = client.generate_text_from_image(
         image_bytes=image_bytes,
         mime_type=mime_type,
         prompt=Constants.Llm.IMAGE_OCR_PROMPT,
         temperature=Constants.Llm.TEMPERATURE_TEXT,
-        max_tokens=Constants.Llm.MAX_TOKENS,
+        max_tokens=Constants.Llm.MAX_TOKENS_LONG_FORM,
     )
     if text.strip().upper() == _NO_TEXT_SENTINEL:
         raise JunoError(

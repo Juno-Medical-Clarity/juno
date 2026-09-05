@@ -308,3 +308,53 @@ def test_post_text_over_max_length_returns_400(mock_create_doc, mock_enqueue, cl
     assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
     mock_create_doc.assert_not_called()
     mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_uploaded_file_extracted_text_over_max_length_returns_400(
+    mock_create_doc, mock_enqueue, client_jobs, auth_ok
+):
+    """Regression: same gap as the trial route -- the uploaded-file path never
+    checked extracted text length. Must be rejected up front, before any job
+    is created or enqueued."""
+    from utils.constants import Constants
+    oversized_text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    data = {"files": (io.BytesIO(oversized_text.encode("utf-8")), "note.txt")}
+    resp = client_jobs.post(
+        "/care_plan/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
+    )
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+@patch("routes.care_plan_jobs.fetch_from_gcs")
+def test_post_doc_id_extracted_text_over_max_length_returns_400(
+    mock_fetch_from_gcs, mock_create_doc, mock_enqueue, client_jobs, auth_ok
+):
+    """The doc_id (previously-uploaded, referenced by id) path had the same
+    gap as the direct-upload path -- extracted text length was never
+    checked. Must be rejected up front, before any job is created."""
+    from utils.constants import Constants
+    oversized_text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    mock_fetch_from_gcs.return_value = (oversized_text.encode("utf-8"), "note.txt")
+
+    resp = client_jobs.post("/care_plan/jobs", json={"doc_id": "some-doc-id"}, headers=auth_ok)
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()

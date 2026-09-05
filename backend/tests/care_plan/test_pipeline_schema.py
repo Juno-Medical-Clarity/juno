@@ -32,6 +32,26 @@ def test_structure_appointment_note_validates_and_returns_json_model_dump():
     assert structured["reason_for_visit"] == []
 
 
+def test_structure_appointment_note_uses_long_form_token_budget():
+    """Regression: structure_appointment_note is the last LLM step and emits a
+    full structured JSON care plan, so it must use MAX_TOKENS_LONG_FORM (like
+    simplify_language_with_term_plan and clarify_and_action) rather than the
+    default MAX_TOKENS -- using the smaller default was the root cause of a
+    2-page document failing with a misleading "too long" error only after
+    every earlier pipeline step had already completed."""
+    pipeline = CarePlanV1_2Pipeline.__new__(CarePlanV1_2Pipeline)
+    captured_kwargs = {}
+
+    def _fake_generate_json(*args, **kwargs):
+        captured_kwargs.update(kwargs)
+        return {"summary": "You came in for care."}
+
+    pipeline._generate_json = _fake_generate_json
+    pipeline.structure_appointment_note("clarified text")
+
+    assert captured_kwargs["max_tokens"] == Constants.Llm.MAX_TOKENS_LONG_FORM
+
+
 def test_structure_appointment_note_rejects_extra_llm_key():
     pipeline = CarePlanV1_2Pipeline.__new__(CarePlanV1_2Pipeline)
     pipeline._generate_json = lambda *args, **kwargs: {
