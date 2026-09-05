@@ -4,6 +4,8 @@ import pytest
 from unittest.mock import MagicMock, patch
 from flask import Flask
 from models.pipeline_events import AdapterStepEvent, AdapterResult, AdapterError
+from models.grading import build_grading_with_before_after_score
+from utils.scoring import score_text_safe
 
 
 QUEUE_HEADER = {"X-CloudTasks-QueueName": "my-queue"}
@@ -503,3 +505,178 @@ def test_non_trial_job_completed_output_keeps_raw(
     mock_complete.assert_called_once()
     saved_output_data = mock_complete.call_args.args[1]
     assert saved_output_data["care_plan"]["raw"] == _RAW_TEXT_FIXTURE
+
+
+# ---------------------------------------------------------------------------
+# Trial jobs also drop the full document copy at `input.text` (this change)
+# ---------------------------------------------------------------------------
+
+_FULL_DOCUMENT_TEXT = "Patient has hypertension. Take your medicine daily. " * 50
+
+# A real Grading, built the same way care_plan_pipeline.py builds it (from
+# in-memory before/after text via score_text_safe + build_grading_with_before_
+# after_score), so the regression test below asserts on real combined scores
+# rather than a mocked stand-in.
+_REAL_GRADING_DICT = build_grading_with_before_after_score(
+    score_text_safe(_FULL_DOCUMENT_TEXT, "before"), _FULL_DOCUMENT_TEXT,
+    score_text_safe("Your blood pressure is high. Take your pill daily. " * 50, "after"),
+    "Your blood pressure is high. Take your pill daily. " * 50,
+).to_dict()
+
+
+@patch("utils.gcs.delete_gcs_object")
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_completed_output_strips_input_text(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    mock_delete_gcs, client_worker,
+):
+    """Trial jobs must not persist input.text (a second full copy of the
+    document, alongside care_plan.raw) in the completed job's output_data."""
+    mock_get_doc.return_value = _make_trial_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {
+        "reason_for_visit": [{"reason": "Hypertension"}],
+        "raw": dict(_RAW_TEXT_FIXTURE),
+    }
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {
+        "input": {"mode": "text", "text": _FULL_DOCUMENT_TEXT},
+        "care_plan": {
+            "reason_for_visit": [{"reason": "Hypertension"}],
+            "raw": dict(_RAW_TEXT_FIXTURE),
+        },
+        "grading": _REAL_GRADING_DICT,
+        "metrics": {"saved_id": None},
+    }
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    saved_output_data = mock_complete.call_args.args[1]
+
+    # No full document text survives anywhere in the persisted output: neither
+    # in input.text nor in care_plan.raw.
+    assert "text" not in saved_output_data["input"]
+    assert "raw" not in saved_output_data["care_plan"]
+    dumped = str(saved_output_data)
+    assert _FULL_DOCUMENT_TEXT not in dumped
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_non_trial_job_completed_output_keeps_input_text(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker,
+):
+    """Non-trial jobs are unaffected by the trial-only input.text-stripping
+    change: input.text must survive (non-trial saved outputs are long-lived
+    and the main app's saved-outputs flows rely on it)."""
+    mock_get_doc.return_value = _make_job_doc()  # is_trial defaults False
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {
+        "input": {"mode": "text", "text": _FULL_DOCUMENT_TEXT},
+        "care_plan": {"reason_for_visit": [{"reason": "Hypertension"}]},
+        "metrics": {"saved_id": None},
+    }
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    saved_output_data = mock_complete.call_args.args[1]
+    assert saved_output_data["input"]["text"] == _FULL_DOCUMENT_TEXT
+
+
+@patch("utils.gcs.delete_gcs_object")
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_grading_survives_input_and_raw_stripping(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    mock_delete_gcs, client_worker,
+):
+    """Regression guard for the input.text/care_plan.raw stripping above: the
+    before/after 'combined' grading scores shown on the trial result screen
+    (ResultScreen.tsx reads output_data.grading.entries) must be fully
+    unaffected, since grading is computed from in-memory pipeline text and
+    materialized into output_data before any trial stripping runs."""
+    mock_get_doc.return_value = _make_trial_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {
+        "reason_for_visit": [{"reason": "Hypertension"}],
+        "raw": dict(_RAW_TEXT_FIXTURE),
+    }
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {
+        "input": {"mode": "text", "text": _FULL_DOCUMENT_TEXT},
+        "care_plan": {
+            "reason_for_visit": [{"reason": "Hypertension"}],
+            "raw": dict(_RAW_TEXT_FIXTURE),
+        },
+        "grading": _REAL_GRADING_DICT,
+        "metrics": {"saved_id": None},
+    }
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    saved_output_data = mock_complete.call_args.args[1]
+
+    # Stripping must not have touched grading at all — it's byte-for-byte the
+    # same dict the pipeline produced.
+    assert saved_output_data["grading"] == _REAL_GRADING_DICT
+
+    entries = saved_output_data["grading"]["entries"]
+    combined = [e for e in entries if e["name"] == "combined"]
+    before = next(e for e in combined if e["target"] == "before")
+    after = next(e for e in combined if e["target"] == "after")
+    assert isinstance(before["grade"], (int, float))
+    assert isinstance(after["grade"], (int, float))
+    # Real, non-mocked scores from actual scoring logic — not zero/placeholder.
+    assert before["grade"] > 0
+    assert after["grade"] > 0

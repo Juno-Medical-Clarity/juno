@@ -216,11 +216,15 @@ def execute_job(job_id: str):
             output_data["metrics"]["saved_id"] = job_id
 
             # Trial jobs are short-lived and their UI never reads raw text/simplified_text/
-            # clarified_text — drop the whole (optional) `raw` key so completed trial docs
-            # stay well under Firestore's 1 MiB doc limit and don't risk the ~1500-byte
-            # auto-indexed field limit on these full-document-length strings.
+            # clarified_text, nor the original input text — drop the whole (optional) `raw`
+            # key and the (optional) `input.text` key so completed trial docs stay well
+            # under Firestore's 1 MiB doc limit and don't risk the ~1500-byte auto-indexed
+            # field limit on these full-document-length strings. `input.text` is popped
+            # rather than replacing the whole `input` dict so it round-trips cleanly back
+            # into TextInput (text: str | None = None) with no model or frontend change.
             if getattr(job, "is_trial", False):
                 output_data.get("care_plan", {}).pop("raw", None)
+                output_data.get("input", {}).pop("text", None)
 
             complete_job(job_id, output_data, name)
             logger.info("worker: job %s completed", job_id, extra={"job_id": job_id, "batch_run_id": batch_run_id, "uid": uid, "stage": 5})
