@@ -316,6 +316,13 @@ class ErrorCode(StrEnum):
     ATHENA_TIMEOUT = "ATHENA_TIMEOUT"
     """Athena Health API request timed out."""
 
+    # ------------------------------------------------------------------
+    # 12. Rate Limiting
+    # ------------------------------------------------------------------
+
+    RATE_LIMIT_EXCEEDED = "RATE_LIMIT_EXCEEDED"
+    """The caller's IP has exceeded the trial's per-hour simplification limit."""
+
 
 # ---------------------------------------------------------------------------
 # ERROR_CATALOG — main lookup table
@@ -1025,6 +1032,14 @@ ERROR_CATALOG: dict[ErrorCode, ErrorInfo] = {
         user_hint="Athena Health API request timed out",
         retryable=True,
         details_template="Request to {athena_api_path} exceeded the timeout of {timeout_s}s",
+    ),
+
+    ErrorCode.RATE_LIMIT_EXCEEDED: ErrorInfo(
+        code="RATE_LIMIT_EXCEEDED",
+        http_status=429,
+        message="Trial rate limit exceeded",
+        user_hint="You've reached the trial's limit of 5 simplifications per hour. Please try again later.",
+        retryable=True,
     ),
 }
 
