@@ -71,7 +71,19 @@ jobs:
         with:
           node-version: '24'
           cache: 'npm'
-          cache-dependency-path: frontend-trial/package-lock.json
+          cache-dependency-path: |
+            frontend/package-lock.json
+            frontend-trial/package-lock.json
+
+      # frontend-trial's @main/* alias resolves to ../frontend/src (its
+      # shared-component surface: CarePlanView, MedicalTerm, buildPdfHtml,
+      # types/), and both Vitest and tsc resolve those files' own
+      # react/react-dom imports against frontend/node_modules — without it,
+      # every test/build touching an aliased import fails to resolve
+      # react/jsx-dev-runtime. Matches the same fix in deploy.yml/preview.yml.
+      - name: Install app dependencies (for the @main alias)
+        run: npm ci
+        working-directory: frontend
 
       - name: Install dependencies
         run: npm ci
