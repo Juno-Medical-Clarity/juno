@@ -1,27 +1,25 @@
-// TEMPORARY — replaced by the real router in Task 18. Exists only to prove the
-// @main alias resolves and type-checks across the tsc -b project boundary
-// (PRD §4.4) before any real screen is written.
-import CarePlanView from '@main/components/CarePlanView';
-import type { SimplifiedCarePlan, Grading } from '@main/types/envelope';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import TrialPage from './pages/TrialPage';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
+import { trackEvent } from './analytics/ga';
 
-const EMPTY_CARE_PLAN: SimplifiedCarePlan = {
-  doc_type: 'care_plan',
-  urgency: 'normal',
-  version: '1.2',
-  summary: '',
-  reason_for_visit: [],
-  diagnosis: { details: [] },
-  medications: [],
-  tests: [],
-  procedures: [],
-  other: [],
-  follow_up: [],
-  warning_signs: [],
-  questions: [],
-  low_priority: [],
-};
-const EMPTY_GRADING: Grading = { entries: [], enabled: false, graded_at: null };
+function usePageViewTracking(): void {
+  const location = useLocation();
+  useEffect(() => {
+    trackEvent({ name: 'page_view', params: { page_path: location.pathname, page_title: document.title } });
+  }, [location.pathname]);
+}
 
 export default function App() {
-  return <CarePlanView result={EMPTY_CARE_PLAN} grading={EMPTY_GRADING} />;
+  usePageViewTracking();
+  return (
+    <Routes>
+      <Route path="/" element={<TrialPage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/terms" element={<TermsPage />} />
+      <Route path="*" element={<TrialPage />} />
+    </Routes>
+  );
 }
