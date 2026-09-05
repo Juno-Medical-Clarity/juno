@@ -107,7 +107,7 @@ jobs:
             --allow-unauthenticated
             --memory 2Gi
             --timeout 300
-            --min-instances=1
+            --min-instances=0
           env_vars: |
             JUNO_MODE=api
             GCP_PROJECT_ID=${{ env.GCP_PROJECT_ID }}
@@ -148,4 +148,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: juno-medical-clarity
           channelId: live
-          entryPoint: ./frontend
+          entryPoint: .
+          target: app
