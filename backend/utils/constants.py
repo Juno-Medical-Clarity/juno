@@ -52,6 +52,13 @@ class Constants:
     class Batch:
         MAX_BATCH_RUNS: int = 50
 
+    class Trial:
+        MAX_FILE_COUNT: int = 5
+        RATE_LIMIT_PER_IP_PER_HOUR: int = 5
+        RATE_LIMIT_COLLECTION: str = "trial_rate_limits"
+        RATE_LIMIT_COUNTER_TTL_HOURS: int = 2
+        JOB_TTL_HOURS: int = 1
+
     class Deadlines:
         SINGLE_JOB_INTERNAL_DEADLINE_S: int = 270
         BATCH_ITEM_INTERNAL_DEADLINE_S: int = 870
