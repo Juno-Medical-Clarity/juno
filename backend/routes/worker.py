@@ -215,6 +215,13 @@ def execute_job(job_id: str):
             name = derive_output_name(output_data.get("care_plan", {}), job.input_source_filename)
             output_data["metrics"]["saved_id"] = job_id
 
+            # Trial jobs are short-lived and their UI never reads raw text/simplified_text/
+            # clarified_text — drop the whole (optional) `raw` key so completed trial docs
+            # stay well under Firestore's 1 MiB doc limit and don't risk the ~1500-byte
+            # auto-indexed field limit on these full-document-length strings.
+            if getattr(job, "is_trial", False):
+                output_data.get("care_plan", {}).pop("raw", None)
+
             complete_job(job_id, output_data, name)
             logger.info("worker: job %s completed", job_id, extra={"job_id": job_id, "batch_run_id": batch_run_id, "uid": uid, "stage": 5})
             return "", 200

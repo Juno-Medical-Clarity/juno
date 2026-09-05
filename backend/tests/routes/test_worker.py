@@ -401,3 +401,105 @@ def test_non_trial_job_never_triggers_gcs_cleanup(
             )
 
     mock_delete_gcs.assert_not_called()
+
+
+# ---------------------------------------------------------------------------
+# Trial jobs drop `care_plan.raw` from the completed output (this change)
+# ---------------------------------------------------------------------------
+
+_RAW_TEXT_FIXTURE = {
+    "text": "full document text " * 50,
+    "simplified_text": "simplified document text " * 50,
+    "clarified_text": "clarified document text " * 50,
+}
+
+
+@patch("utils.gcs.delete_gcs_object")
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_completed_output_has_no_raw(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    mock_delete_gcs, client_worker,
+):
+    """Trial jobs must not persist care_plan.raw (text/simplified_text/
+    clarified_text each hold a full copy of the document) in the completed
+    job's output_data."""
+    mock_get_doc.return_value = _make_trial_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {
+        "reason_for_visit": [{"reason": "Hypertension"}],
+        "raw": dict(_RAW_TEXT_FIXTURE),
+    }
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {
+        "care_plan": {
+            "reason_for_visit": [{"reason": "Hypertension"}],
+            "raw": dict(_RAW_TEXT_FIXTURE),
+        },
+        "metrics": {"saved_id": None},
+    }
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    saved_output_data = mock_complete.call_args.args[1]
+    assert "raw" not in saved_output_data["care_plan"]
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_non_trial_job_completed_output_keeps_raw(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker,
+):
+    """Non-trial jobs are unaffected by the trial-only raw-stripping change:
+    care_plan.raw (used by the saved-outputs re-grade flow) must survive."""
+    mock_get_doc.return_value = _make_job_doc()  # is_trial defaults False
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {
+        "reason_for_visit": [{"reason": "Hypertension"}],
+        "raw": dict(_RAW_TEXT_FIXTURE),
+    }
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {
+        "care_plan": {
+            "reason_for_visit": [{"reason": "Hypertension"}],
+            "raw": dict(_RAW_TEXT_FIXTURE),
+        },
+        "metrics": {"saved_id": None},
+    }
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    saved_output_data = mock_complete.call_args.args[1]
+    assert saved_output_data["care_plan"]["raw"] == _RAW_TEXT_FIXTURE
