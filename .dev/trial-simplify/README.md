@@ -15,6 +15,17 @@ plus legal pages, and retention automation (TTL + anonymous-user cleanup).
 
 ---
 
+## Implementation status (as of 2026-09-05)
+
+SP1 (Image Input Support) and SP2 (Trial Backend Route, Rate Limiting & Retention) are
+**IMPLEMENTED** and merged into `users/tejitpabari/trial-app`. SP3-SP5 are not started;
+SP3 has no `TASKS.md` yet — run `/dev-tasks` for it before starting SP3. Run artifacts:
+[`01-image-input/code-2026-09-05-0554.md`](01-image-input/code-2026-09-05-0554.md),
+[`02-trial-backend/code-2026-09-05-0554.md`](02-trial-backend/code-2026-09-05-0554.md),
+[`review-2026-09-05-0554.md`](review-2026-09-05-0554.md).
+
+---
+
 ## Locked Decisions (apply across all SPs)
 
 Distilled from `brainstorm.md`'s decision log (D1–D11) plus items settled since:
