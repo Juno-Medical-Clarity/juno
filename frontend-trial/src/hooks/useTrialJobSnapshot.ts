@@ -24,6 +24,11 @@ export function useTrialJobSnapshot(jobId: string | null): {
 
   useEffect(() => {
     if (!jobId) {
+      // Resetting local snapshot state here is synchronizing with the Firestore
+      // listener lifecycle (torn down/not started because there's no jobId), not
+      // deriving state from a prop — the documented exception to this rule. See
+      // https://react.dev/learn/you-might-not-need-an-effect#subscribing-to-an-external-store
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setJobDoc(null);
       setLoading(false);
       setError(null);

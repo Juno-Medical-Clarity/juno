@@ -12,7 +12,6 @@ export function useAnonAuth(): { authState: AuthState; user: User | null; retry:
 
   useEffect(() => {
     let cancelled = false;
-    setAuthState('pending');
 
     const unsubscribe = onAuthStateChanged(firebaseAuth, (firebaseUser) => {
       if (cancelled || !firebaseUser) return;
@@ -34,5 +33,15 @@ export function useAnonAuth(): { authState: AuthState; user: User | null; retry:
     };
   }, [attempt]);
 
-  return { authState, user, retry: () => setAttempt(a => a + 1) };
+  return {
+    authState,
+    user,
+    // Reset to 'pending' here (in the event handler, not the effect) so the retry
+    // flow doesn't call setState synchronously within an effect body. The initial
+    // mount already starts at 'pending' via useState, so this only matters on retry.
+    retry: () => {
+      setAuthState('pending');
+      setAttempt(a => a + 1);
+    },
+  };
 }
