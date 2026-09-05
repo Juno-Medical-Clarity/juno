@@ -1,6 +1,6 @@
 """TDD tests for POST /internal/jobs/execute/<job_id>."""
 import copy
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import pytest
 from unittest.mock import MagicMock, patch
 from flask import Flask
@@ -963,3 +963,261 @@ def test_trial_job_also_populates_total_duration_ms(
     assert resp.status_code == 200
     passed_metrics = mock_envelope_cls.call_args.kwargs["metrics"]
     assert passed_metrics.total_duration_ms == 2500.0
+
+
+# ---------------------------------------------------------------------------
+# Worker idempotency lease on "processing" redelivery (Finding 7)
+# ---------------------------------------------------------------------------
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_processing_job_within_lease_window_skips_redelivery(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client, client_worker
+):
+    """A redelivered task for a job that's still within its own timeout
+    budget must be a no-op (no pipeline re-run, no Firestore writes) --
+    otherwise Cloud Tasks' at-least-once redelivery re-runs the whole
+    5-stage LLM pipeline a second time (double billing)."""
+    doc = _make_job_doc(status="processing")
+    doc["started_at"] = datetime.now(timezone.utc) - timedelta(seconds=5)
+    mock_get_doc.return_value = doc
+
+    resp = client_worker.post("/internal/jobs/execute/job-1", headers=QUEUE_HEADER)
+
+    assert resp.status_code == 200
+    mock_complete.assert_not_called()
+    mock_fail.assert_not_called()
+    mock_update_stage.assert_not_called()
+    mock_fs_client.assert_not_called()
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_processing_job_past_lease_window_is_retried_to_completion(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client, client_worker
+):
+    """A job stuck 'processing' well past its own deadline (crashed
+    container, etc.) must still be retryable -- the lease check must not
+    permanently strand a legitimately-failed job."""
+    from utils.constants import Constants
+
+    doc = _make_job_doc(status="processing")
+    doc["started_at"] = datetime.now(timezone.utc) - timedelta(
+        seconds=Constants.Deadlines.SINGLE_JOB_INTERNAL_DEADLINE_S + 10
+    )
+    mock_get_doc.return_value = doc
+    mock_fs_client.return_value = MagicMock()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {"care_plan": {}, "metrics": {"saved_id": None}}
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    mock_fail.assert_not_called()
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_processing_job_with_no_started_at_is_retried(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client, client_worker
+):
+    """Defensive fallback: 'processing' with no started_at (shouldn't happen
+    in practice, but must fail open to retry rather than strand the job)."""
+    doc = _make_job_doc(status="processing")  # started_at defaults to None
+    mock_get_doc.return_value = doc
+    mock_fs_client.return_value = MagicMock()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {"care_plan": {}, "metrics": {"saved_id": None}}
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+
+
+# ---------------------------------------------------------------------------
+# Defensive minimum-content guard (Finding 2)
+# ---------------------------------------------------------------------------
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_worker_rejects_text_below_min_meaningful_content_as_empty_document(
+    mock_get_doc, mock_fail, mock_complete, mock_fs_client, client_worker
+):
+    """Belt-and-suspenders alongside the resolve_uploaded_files-level check:
+    even if some other path put near-nothing into job.input_text, the worker
+    itself must never let it reach the LLM pipeline."""
+    doc = _make_job_doc()
+    doc["input_text"] = "short"  # < MIN_MEANINGFUL_CONTENT_CHARS (20)
+    mock_get_doc.return_value = doc
+    mock_fs_client.return_value = MagicMock()
+
+    resp = client_worker.post("/internal/jobs/execute/job-1", headers=QUEUE_HEADER)
+
+    assert resp.status_code == 200
+    mock_fail.assert_called_once()
+    error_data = mock_fail.call_args.args[1]
+    assert error_data["code"] == "EMPTY_DOCUMENT"
+    mock_complete.assert_not_called()
+
+
+# ---------------------------------------------------------------------------
+# Top-level input_text cleared for trial jobs on terminal state (Finding 4)
+# ---------------------------------------------------------------------------
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_completion_clears_top_level_input_text(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client, client_worker
+):
+    mock_get_doc.return_value = _make_trial_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {"care_plan": {}, "metrics": {"saved_id": None}}
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    assert mock_complete.call_args.kwargs["clear_input_text"] is True
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_non_trial_job_completion_does_not_clear_top_level_input_text(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client, client_worker
+):
+    mock_get_doc.return_value = _make_job_doc()  # is_trial defaults False
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {"care_plan": {}, "metrics": {"saved_id": None}}
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    assert mock_complete.call_args.kwargs["clear_input_text"] is False
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_failure_also_clears_top_level_input_text(
+    mock_get_doc, mock_fail, mock_fs_client, client_worker
+):
+    doc = _make_trial_job_doc()
+    doc["input_text"] = "short"  # triggers the MIN_MEANINGFUL_CONTENT_CHARS EMPTY_DOCUMENT path
+    mock_get_doc.return_value = doc
+    mock_fs_client.return_value = MagicMock()
+
+    resp = client_worker.post("/internal/jobs/execute/job-1", headers=QUEUE_HEADER)
+
+    assert resp.status_code == 200
+    mock_fail.assert_called_once()
+    assert mock_fail.call_args.kwargs["clear_input_text"] is True
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_non_trial_job_failure_does_not_clear_top_level_input_text(
+    mock_get_doc, mock_fail, mock_fs_client, client_worker
+):
+    doc = _make_job_doc()
+    doc["input_text"] = "short"
+    mock_get_doc.return_value = doc
+    mock_fs_client.return_value = MagicMock()
+
+    resp = client_worker.post("/internal/jobs/execute/job-1", headers=QUEUE_HEADER)
+
+    assert resp.status_code == 200
+    mock_fail.assert_called_once()
+    assert mock_fail.call_args.kwargs["clear_input_text"] is False
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_unexpected_exception_clears_top_level_input_text(
+    mock_get_doc, mock_fail, mock_fs_client, client_worker
+):
+    """The bottom except-Exception handler must also pass clear_input_text
+    for trial jobs, not just the "clean" fail paths."""
+    mock_get_doc.return_value = _make_trial_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    def fake_pipeline_raises(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        raise RuntimeError("boom")
+        yield  # pragma: no cover -- keeps this a generator function
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline_raises(*a, **kw)}):
+        resp = client_worker.post("/internal/jobs/execute/job-1", headers=QUEUE_HEADER)
+
+    assert resp.status_code == 500
+    mock_fail.assert_called_once()
+    assert mock_fail.call_args.kwargs["clear_input_text"] is True

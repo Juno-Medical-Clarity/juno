@@ -63,10 +63,52 @@ def execute_job(job_id: str):
                 return "", 200
 
             job = JobDoc.from_firestore(job_doc)
+            is_trial = getattr(job, "is_trial", False)
 
             if job.status in ("completed", "error"):
                 logger.info("worker: job %s already in terminal state %s — idempotent return", job_id, job.status)
                 return "", 200
+
+            # Computed here (before the processing-lease check below needs it)
+            # rather than after the "processing" transition further down --
+            # purely a reorder, is_batch_item(job) doesn't depend on anything
+            # set in between.
+            deadline_s = (
+                Constants.Deadlines.BATCH_ITEM_INTERNAL_DEADLINE_S
+                if is_batch_item(job)
+                else Constants.Deadlines.SINGLE_JOB_INTERNAL_DEADLINE_S
+            )
+
+            if job.status == "processing" and job.started_at is not None:
+                lease_elapsed_s = (datetime.now(timezone.utc) - job.started_at).total_seconds()
+                if lease_elapsed_s < deadline_s:
+                    # A prior attempt is still within its own timeout budget --
+                    # Cloud Tasks' at-least-once delivery redelivered this task
+                    # while that attempt may still legitimately be in flight
+                    # (or may have crashed without reaching a terminal state).
+                    # Re-running the pipeline here would re-execute the whole
+                    # 5-stage LLM pipeline a second time, double-billing every
+                    # Vertex AI call it already made (edge-case review Finding
+                    # 7). Treat this delivery as a no-op: the original attempt
+                    # (or its own _check_timeout below) will reach a terminal
+                    # state on its own. Returning 200 tells Cloud Tasks not to
+                    # retry again.
+                    logger.info(
+                        "worker: job %s already processing (leased %.1fs ago, "
+                        "budget %ds) — skipping redelivery", job_id, lease_elapsed_s, deadline_s,
+                    )
+                    return "", 200
+                # Lease expired: the original attempt almost certainly crashed
+                # or was killed before reaching a terminal state (a healthy
+                # attempt would have hit its own _check_timeout well before
+                # this). Deliberately does NOT give up on the job -- it's
+                # allowed to run again, exactly like a first attempt, so a
+                # transient crash doesn't permanently strand it.
+                logger.warning(
+                    "worker: job %s stuck in processing since %s (%.1fs, exceeds "
+                    "%ds budget) — treating as abandoned and allowing retry",
+                    job_id, job.started_at.isoformat(), lease_elapsed_s, deadline_s,
+                )
 
             uid = job.uid
             batch_run_id = job.batch_run_id
@@ -80,17 +122,15 @@ def execute_job(job_id: str):
                 "updated_at": now,
             })
 
-            deadline_s = (
-                Constants.Deadlines.BATCH_ITEM_INTERNAL_DEADLINE_S
-                if is_batch_item(job)
-                else Constants.Deadlines.SINGLE_JOB_INTERNAL_DEADLINE_S
-            )
             start = time.monotonic()
 
             def _check_timeout(stage: int) -> bool:
                 elapsed = time.monotonic() - start
                 if elapsed > deadline_s:
-                    fail_job(job_id, build_error_data(ErrorCode.JOB_TIMEOUT, f"Job timed out at stage {stage}"))
+                    fail_job(
+                        job_id, build_error_data(ErrorCode.JOB_TIMEOUT, f"Job timed out at stage {stage}"),
+                        clear_input_text=is_trial,
+                    )
                     logger.warning("worker: job %s timed out at stage %d after %.1fs", job_id, stage, elapsed)
                     return True
                 return False
@@ -131,7 +171,7 @@ def execute_job(job_id: str):
                             job.athena_document_id,
                         )
                 except AthenaAPIError as exc:
-                    fail_job(job_id, build_error_data_from_exc(exc))
+                    fail_job(job_id, build_error_data_from_exc(exc), clear_input_text=is_trial)
                     logger.error("worker: Athena API error for job %s: %s", job_id, exc)
                     return "", 200
                 if api_path:
@@ -139,8 +179,16 @@ def execute_job(job_id: str):
             else:
                 text = resolve_input_from_job_doc(job)
 
-            if not text.strip():
-                fail_job(job_id, build_error_data(ErrorCode.EMPTY_DOCUMENT))
+            # Defensive floor (belt-and-suspenders alongside the per-file check
+            # in services.care_plan_input.resolve_uploaded_files): reject not
+            # just an empty string but anything below a sane minimum of real
+            # content, so a document that is technically non-empty but is
+            # really just separator scaffolding around a scanned/no-text-layer
+            # file (or any other source_kind that doesn't go through
+            # resolve_uploaded_files, e.g. gcs_batch_dataset/Athena) can never
+            # silently reach the LLM pipeline (edge-case review Finding 2).
+            if len(text.strip()) < Constants.Uploads.MIN_MEANINGFUL_CONTENT_CHARS:
+                fail_job(job_id, build_error_data(ErrorCode.EMPTY_DOCUMENT), clear_input_text=is_trial)
                 return "", 200
 
             version = job.input_version
@@ -177,17 +225,17 @@ def execute_job(job_id: str):
                 # Both old SP2 format (code+message+details) and new rich format
                 # (code+message+user_hint+retryable+detail) carry a "message" field.
                 if pipeline_error_data.get("code") or pipeline_error_data.get("message"):
-                    fail_job(job_id, pipeline_error_data)
+                    fail_job(job_id, pipeline_error_data, clear_input_text=is_trial)
                 else:
                     fail_job(job_id, build_error_data(
                         ErrorCode.UNKNOWN_ERROR, "Pipeline failed without an error message"
-                    ))
+                    ), clear_input_text=is_trial)
                 return "", 200
 
             if pipeline_result is None:
                 fail_job(job_id, build_error_data(
                     ErrorCode.UNKNOWN_ERROR, "Pipeline returned no result"
-                ))
+                ), clear_input_text=is_trial)
                 return "", 200
 
             care_plan = pipeline_result.care_plan
@@ -228,7 +276,7 @@ def execute_job(job_id: str):
             # field limit on these full-document-length strings. `input.text` is popped
             # rather than replacing the whole `input` dict so it round-trips cleanly back
             # into TextInput (text: str | None = None) with no model or frontend change.
-            if getattr(job, "is_trial", False):
+            if is_trial:
                 output_data.get("care_plan", {}).pop("raw", None)
                 output_data.get("input", {}).pop("text", None)
 
@@ -247,7 +295,7 @@ def execute_job(job_id: str):
                             if isinstance(e, dict) and e.get("name") == "combined"
                         ]
 
-            complete_job(job_id, output_data, name)
+            complete_job(job_id, output_data, name, clear_input_text=is_trial)
             logger.info("worker: job %s completed", job_id, extra={"job_id": job_id, "batch_run_id": batch_run_id, "uid": uid, "stage": 5})
             return "", 200
 
@@ -256,7 +304,7 @@ def execute_job(job_id: str):
             logger.exception("worker: unexpected error for job %s", job_id, extra={"job_id": job_id})
             # Best-effort: mark the job as failed so the frontend doesn't show it as stuck.
             try:
-                fail_job(job_id, build_error_data_from_exc(exc))
+                fail_job(job_id, build_error_data_from_exc(exc), clear_input_text=getattr(job, "is_trial", False))
             except Exception:
                 pass
             return "", 500
