@@ -116,6 +116,58 @@ def test_for_single_sets_shared_comment_trace(now):
     assert job.batch_group_id is None
 
 
+def test_for_single_defaults_is_trial_false_and_expires_at_none(now):
+    input_fields = {
+        "input_source_kind": "text",
+        "input_text": "hello",
+        "input_doc_id": None,
+        "input_source_filename": "note.txt",
+        "input_pdf_gcs_uri": None,
+        "input_version": "v1-2",
+        "grading_enabled": False,
+    }
+    job = JobDoc.for_single(user_id="u2", now=now, trace_id=None, input_fields=input_fields)
+    assert job.is_trial is False
+    assert job.expires_at is None
+
+
+def test_for_single_accepts_trial_kwargs(now):
+    from datetime import timedelta
+    expires = now + timedelta(hours=1)
+    input_fields = {
+        "input_source_kind": "text",
+        "input_text": "hello",
+        "input_doc_id": None,
+        "input_source_filename": "note.txt",
+        "input_pdf_gcs_uri": None,
+        "input_version": "v1-2",
+        "grading_enabled": True,
+    }
+    job = JobDoc.for_single(
+        user_id="u2", now=now, trace_id=None, input_fields=input_fields,
+        is_trial=True, expires_at=expires,
+    )
+    assert job.is_trial is True
+    assert job.expires_at == expires
+
+
+def test_to_firestore_writes_explicit_null_expires_at_for_non_trial_doc(now):
+    input_fields = {
+        "input_source_kind": "text",
+        "input_text": "hello",
+        "input_doc_id": None,
+        "input_source_filename": "note.txt",
+        "input_pdf_gcs_uri": None,
+        "input_version": "v1-2",
+        "grading_enabled": False,
+    }
+    job = JobDoc.for_single(user_id="u2", now=now, trace_id=None, input_fields=input_fields)
+    d = job.to_firestore()
+    assert "expires_at" in d
+    assert d["expires_at"] is None
+    assert d["is_trial"] is False
+
+
 def test_to_firestore_returns_datetime_objects(gcs_kwargs):
     job = JobDoc.for_gcs_dataset(**gcs_kwargs)
     d = job.to_firestore()
