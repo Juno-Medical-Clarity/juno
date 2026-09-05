@@ -226,6 +226,21 @@ def execute_job(job_id: str):
                 output_data.get("care_plan", {}).pop("raw", None)
                 output_data.get("input", {}).pop("text", None)
 
+                # Trial UI (ResultScreen.tsx) reads only the two `combined` grading
+                # entries (before/after); the other 12 non-`combined` method entries
+                # are computed (grading is shared with the main app's per-method
+                # breakdown UI) but never rendered anywhere in frontend-trial/.
+                # Dropping them here, storage-side only, cuts ~38% off output_data
+                # (optimization-findings-2026-09-05.md, Finding 1 / PRD §4.1).
+                grading = output_data.get("grading")
+                if isinstance(grading, dict):
+                    entries = grading.get("entries")
+                    if isinstance(entries, list):
+                        grading["entries"] = [
+                            e for e in entries
+                            if isinstance(e, dict) and e.get("name") == "combined"
+                        ]
+
             complete_job(job_id, output_data, name)
             logger.info("worker: job %s completed", job_id, extra={"job_id": job_id, "batch_run_id": batch_run_id, "uid": uid, "stage": 5})
             return "", 200

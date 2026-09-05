@@ -1,4 +1,5 @@
 """TDD tests for POST /internal/jobs/execute/<job_id>."""
+import copy
 from datetime import datetime, timezone
 import pytest
 from unittest.mock import MagicMock, patch
@@ -556,7 +557,11 @@ def test_trial_job_completed_output_strips_input_text(
             "reason_for_visit": [{"reason": "Hypertension"}],
             "raw": dict(_RAW_TEXT_FIXTURE),
         },
-        "grading": _REAL_GRADING_DICT,
+        # Deep-copied so the trial-only in-place trim (`grading["entries"] = ...`)
+        # in routes/worker.py never mutates the shared module-level fixture —
+        # other tests in this file assert against the pristine, untrimmed
+        # _REAL_GRADING_DICT and must not be affected by test execution order.
+        "grading": copy.deepcopy(_REAL_GRADING_DICT),
         "metrics": {"saved_id": None},
     }
 
@@ -624,15 +629,15 @@ def test_non_trial_job_completed_output_keeps_input_text(
 @patch("routes.worker.update_job_stage")
 @patch("routes.worker.fail_job")
 @patch("routes.worker.get_job_doc")
-def test_trial_job_grading_survives_input_and_raw_stripping(
+def test_trial_job_grading_trimmed_to_combined_after_input_and_raw_stripping(
     mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
     mock_delete_gcs, client_worker,
 ):
     """Regression guard for the input.text/care_plan.raw stripping above: the
     before/after 'combined' grading scores shown on the trial result screen
-    (ResultScreen.tsx reads output_data.grading.entries) must be fully
-    unaffected, since grading is computed from in-memory pipeline text and
-    materialized into output_data before any trial stripping runs."""
+    (ResultScreen.tsx reads output_data.grading.entries) must survive, while
+    the other 12 non-'combined' method entries (computed but never rendered
+    in frontend-trial/) are trimmed away, storage-side only."""
     mock_get_doc.return_value = _make_trial_job_doc()
     mock_fs_client.return_value = MagicMock()
 
@@ -653,7 +658,11 @@ def test_trial_job_grading_survives_input_and_raw_stripping(
             "reason_for_visit": [{"reason": "Hypertension"}],
             "raw": dict(_RAW_TEXT_FIXTURE),
         },
-        "grading": _REAL_GRADING_DICT,
+        # Deep-copied so the trial-only in-place trim (`grading["entries"] = ...`)
+        # in routes/worker.py never mutates the shared module-level fixture —
+        # other tests in this file assert against the pristine, untrimmed
+        # _REAL_GRADING_DICT and must not be affected by test execution order.
+        "grading": copy.deepcopy(_REAL_GRADING_DICT),
         "metrics": {"saved_id": None},
     }
 
@@ -667,16 +676,206 @@ def test_trial_job_grading_survives_input_and_raw_stripping(
     mock_complete.assert_called_once()
     saved_output_data = mock_complete.call_args.args[1]
 
-    # Stripping must not have touched grading at all — it's byte-for-byte the
-    # same dict the pipeline produced.
-    assert saved_output_data["grading"] == _REAL_GRADING_DICT
-
     entries = saved_output_data["grading"]["entries"]
-    combined = [e for e in entries if e["name"] == "combined"]
-    before = next(e for e in combined if e["target"] == "before")
-    after = next(e for e in combined if e["target"] == "after")
+    assert len(entries) == 2
+    assert {e["name"] for e in entries} == {"combined"}
+    assert {e["target"] for e in entries} == {"before", "after"}
+
+    # Values, not just shape, must be unaffected by trimming: each surviving
+    # entry's grade must match what the untrimmed pipeline output originally
+    # computed for that (name, target) pair.
+    original_combined = {
+        (e["name"], e["target"]): e["grade"]
+        for e in _REAL_GRADING_DICT["entries"] if e["name"] == "combined"
+    }
+    for e in entries:
+        assert e["grade"] == original_combined[(e["name"], e["target"])]
+
+    before = next(e for e in entries if e["target"] == "before")
+    after = next(e for e in entries if e["target"] == "after")
     assert isinstance(before["grade"], (int, float))
     assert isinstance(after["grade"], (int, float))
     # Real, non-mocked scores from actual scoring logic — not zero/placeholder.
     assert before["grade"] > 0
     assert after["grade"] > 0
+
+
+# ---------------------------------------------------------------------------
+# Task 1 (06-trial-optimizations): trim trial grading entries to combined-only
+# ---------------------------------------------------------------------------
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_non_trial_job_completed_output_grading_is_byte_identical(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker,
+):
+    """Non-trial jobs must be provably unaffected by the trial-only grading
+    trim: output_data (including the full, untrimmed grading dict) passed to
+    complete_job must be identical to what envelope.to_dict() returned."""
+    mock_get_doc.return_value = _make_job_doc()  # is_trial defaults False
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    raw_envelope_dict = {
+        "care_plan": {"reason_for_visit": [{"reason": "Hypertension"}]},
+        # Deep-copied so the trial-only in-place trim (`grading["entries"] = ...`)
+        # in routes/worker.py never mutates the shared module-level fixture —
+        # other tests in this file assert against the pristine, untrimmed
+        # _REAL_GRADING_DICT and must not be affected by test execution order.
+        "grading": copy.deepcopy(_REAL_GRADING_DICT),
+        "metrics": {"saved_id": None},
+    }
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = dict(raw_envelope_dict)
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    saved_output_data = mock_complete.call_args.args[1]
+    assert saved_output_data["grading"] == _REAL_GRADING_DICT
+    assert len(saved_output_data["grading"]["entries"]) == 14
+
+
+def _trial_job_completes_with_grading(grading_value, has_grading_key, client_worker, mock_get_doc,
+                                       mock_complete):
+    mock_get_doc.return_value = _make_trial_job_doc()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    to_dict_value = {
+        "input": {"mode": "text", "text": "some text"},
+        "care_plan": {"reason_for_visit": [{"reason": "Hypertension"}]},
+        "metrics": {"saved_id": None},
+    }
+    if has_grading_key:
+        to_dict_value["grading"] = grading_value
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = to_dict_value
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_complete.assert_called_once()
+    return mock_complete.call_args.args[1]
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_completes_when_grading_key_missing(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker,
+):
+    """No `grading` key at all in envelope.to_dict() — must be a silent no-op,
+    never a KeyError."""
+    saved_output_data = _trial_job_completes_with_grading(
+        grading_value=None, has_grading_key=False,
+        client_worker=client_worker, mock_get_doc=mock_get_doc, mock_complete=mock_complete,
+    )
+    assert "grading" not in saved_output_data
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_completes_when_grading_is_none(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker,
+):
+    """`grading: None` — not a dict, so must be a silent no-op, never an
+    AttributeError from calling .get on None."""
+    saved_output_data = _trial_job_completes_with_grading(
+        grading_value=None, has_grading_key=True,
+        client_worker=client_worker, mock_get_doc=mock_get_doc, mock_complete=mock_complete,
+    )
+    assert saved_output_data["grading"] is None
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_completes_when_grading_dict_has_no_entries_key(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker,
+):
+    """`grading: {}` — dict present but no `entries` key — must be a silent
+    no-op, never a KeyError."""
+    saved_output_data = _trial_job_completes_with_grading(
+        grading_value={}, has_grading_key=True,
+        client_worker=client_worker, mock_get_doc=mock_get_doc, mock_complete=mock_complete,
+    )
+    assert saved_output_data["grading"] == {}
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_completes_when_entries_is_none(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker,
+):
+    """`grading: {"entries": None}` — entries present but not a list — must
+    be a silent no-op, never a TypeError from iterating None."""
+    saved_output_data = _trial_job_completes_with_grading(
+        grading_value={"entries": None}, has_grading_key=True,
+        client_worker=client_worker, mock_get_doc=mock_get_doc, mock_complete=mock_complete,
+    )
+    assert saved_output_data["grading"]["entries"] is None
+
+
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_drops_non_dict_entries_and_filters_valid_non_combined_ones(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    client_worker,
+):
+    """A mixed list of valid dict entries and non-dict junk: the non-dict
+    entry must simply be dropped (not raise), and the one valid non-`combined`
+    entry among them must still be filtered out."""
+    saved_output_data = _trial_job_completes_with_grading(
+        grading_value={"entries": [
+            {"name": "combined", "target": "before", "grade": 1},
+            "not-a-dict",
+            {"name": "smog", "target": "before", "grade": 2},
+        ]},
+        has_grading_key=True,
+        client_worker=client_worker, mock_get_doc=mock_get_doc, mock_complete=mock_complete,
+    )
+    assert saved_output_data["grading"]["entries"] == [
+        {"name": "combined", "target": "before", "grade": 1},
+    ]
