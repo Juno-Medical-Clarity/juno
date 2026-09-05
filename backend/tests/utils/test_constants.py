@@ -16,6 +16,17 @@ def test_uploads_namespace():
     # see the constant's own comment for the reasoning. Must stay comfortably
     # below what fits in the model's input context.
     assert Constants.Uploads.MAX_TEXT_LENGTH == 500_000
+    # Byte-based companion cap (Finding 1): must stay well under Firestore's
+    # 1 MiB doc limit and strictly below MAX_TEXT_LENGTH (bytes >= chars for
+    # any text, so the byte cap is the one that binds for ASCII).
+    assert Constants.Uploads.MAX_TEXT_BYTES == 350_000
+    assert Constants.Uploads.MAX_TEXT_BYTES < Constants.Uploads.MAX_TEXT_LENGTH
+    assert Constants.Uploads.MIN_MEANINGFUL_CONTENT_CHARS == 20
+
+
+def test_trial_namespace_upload_limits():
+    assert Constants.Trial.MAX_FILE_COUNT == 5
+    assert Constants.Trial.MAX_AGGREGATE_FILE_BYTES == 10 * 1024 * 1024
 
 
 def test_deadlines_namespace():
