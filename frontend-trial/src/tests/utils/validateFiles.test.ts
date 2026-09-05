@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { validateFiles, validateText, MAX_FILES, MAX_TEXT_LENGTH } from '../../utils/validateFiles';
+import { validateFiles, validateText, formatBytes, MAX_FILES, MAX_TEXT_LENGTH } from '../../utils/validateFiles';
 
 function fakeFile(name: string, sizeBytes: number): File {
   const file = new File([''], name);
@@ -38,6 +38,26 @@ describe('validateFiles', () => {
     const files = [fakeFile('a.pdf', 9 * 1024 * 1024), fakeFile('b.pdf', 9 * 1024 * 1024), fakeFile('c.pdf', 9 * 1024 * 1024)];
     const err = validateFiles(files);
     expect(err).toContain('25MB total');
+  });
+});
+
+describe('formatBytes', () => {
+  it('renders sub-KB sizes in bytes', () => {
+    expect(formatBytes(0)).toBe('0 B');
+    expect(formatBytes(512)).toBe('512 B');
+  });
+
+  it('renders KB sizes with no decimal once the value is 10 or more', () => {
+    expect(formatBytes(320 * 1024)).toBe('320 KB');
+  });
+
+  it('renders sub-10 KB/MB values with one decimal place', () => {
+    expect(formatBytes(Math.round(1.4 * 1024 * 1024))).toBe('1.4 MB');
+  });
+
+  it('formats the exported per-file and aggregate limits as whole megabytes', () => {
+    expect(formatBytes(10 * 1024 * 1024)).toBe('10 MB');
+    expect(formatBytes(25 * 1024 * 1024)).toBe('25 MB');
   });
 });
 

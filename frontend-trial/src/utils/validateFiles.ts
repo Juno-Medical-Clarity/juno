@@ -6,6 +6,20 @@ export const MAX_FILE_BYTES = 10 * 1024 * 1024;
 export const MAX_AGGREGATE_BYTES = 25 * 1024 * 1024;
 export const MAX_TEXT_LENGTH = 100_000;
 
+/** Formats a byte count as a short human-readable string, e.g. `1.4 MB`, `320 KB`, `0 B`. */
+export function formatBytes(bytes: number): string {
+  if (bytes < 1024) return `${bytes} B`;
+  const units = ['KB', 'MB', 'GB'];
+  let value = bytes / 1024;
+  let unitIndex = 0;
+  while (value >= 1024 && unitIndex < units.length - 1) {
+    value /= 1024;
+    unitIndex += 1;
+  }
+  const formatted = value >= 10 ? Math.round(value).toString() : value.toFixed(1);
+  return `${formatted} ${units[unitIndex]}`;
+}
+
 export function validateFiles(selected: File[]): string | null {
   if (selected.length === 0) return null;
   if (selected.length > MAX_FILES) {

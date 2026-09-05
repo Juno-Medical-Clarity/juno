@@ -34,6 +34,32 @@ describe('UploadScreen', () => {
     expect(screen.getByRole('button', { name: 'Simplify' })).toBeDisabled();
   });
 
+  it('surfaces the too-many-files error when a combined selection exceeds MAX_FILES, instead of silently dropping the extras', async () => {
+    const user = userEvent.setup();
+    render(<UploadScreen authState="ready" onAuthRetry={vi.fn()} onJobCreated={vi.fn()} />);
+    const input = document.querySelector('input[type="file"]') as HTMLInputElement;
+    const files = Array.from({ length: 6 }, (_, i) => makeFile(`f${i}.txt`));
+    await user.upload(input, files);
+
+    expect(screen.getByText('You can upload up to 5 files at a time (selected 6).')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Simplify' })).toBeDisabled();
+  });
+
+  it('de-duplicates an incoming file that matches one already selected by name, size, and lastModified', async () => {
+    const user = userEvent.setup();
+    render(<UploadScreen authState="ready" onAuthRetry={vi.fn()} onJobCreated={vi.fn()} />);
+    const input = document.querySelector('input[type="file"]') as HTMLInputElement;
+    const file = new File(['hello'], 'note.txt', { type: 'text/plain', lastModified: 1700000000000 });
+    await user.upload(input, file);
+    expect(screen.getByText('1 of 5 files · 5 B of 25 MB')).toBeInTheDocument();
+
+    const duplicate = new File(['hello'], 'note.txt', { type: 'text/plain', lastModified: 1700000000000 });
+    await user.upload(input, duplicate);
+
+    expect(screen.getByText('1 of 5 files · 5 B of 25 MB')).toBeInTheDocument();
+    expect(screen.getAllByText('note.txt')).toHaveLength(1);
+  });
+
   it('enables Simplify on a valid selection + ready auth, and calls onJobCreated on success', async () => {
     createTrialJobMock.mockResolvedValue({ job_id: 'job-1' });
     const onJobCreated = vi.fn();
