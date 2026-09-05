@@ -23,13 +23,14 @@ describe('useTrialJobSnapshot', () => {
     mockDoc.mockClear();
   });
 
-  it('starts loading=true, jobDoc=null when a jobId is provided', () => {
+  it('starts loading=true, jobDoc=null, exists=null when a jobId is provided', () => {
     const { result } = renderHook(() => useTrialJobSnapshot('job-1'));
     expect(result.current.loading).toBe(true);
     expect(result.current.jobDoc).toBeNull();
+    expect(result.current.exists).toBeNull();
   });
 
-  it('populates jobDoc on snapshot, defaulting missing fields', () => {
+  it('populates jobDoc and sets exists=true on snapshot, defaulting missing fields', () => {
     const { result } = renderHook(() => useTrialJobSnapshot('job-1'));
     const successCb = mockOnSnapshot.mock.calls[0][1];
     act(() => successCb({
@@ -39,23 +40,37 @@ describe('useTrialJobSnapshot', () => {
     expect(result.current.jobDoc).toEqual({
       status: 'processing', stage: 2, output_data: null, error_data: null, name: '',
     });
+    expect(result.current.exists).toBe(true);
     expect(result.current.loading).toBe(false);
   });
 
-  it('sets error and loading=false on the snapshot error callback', () => {
+  it('sets jobDoc=null and exists=false when the snapshot reports the doc missing', () => {
+    const { result } = renderHook(() => useTrialJobSnapshot('job-1'));
+    const successCb = mockOnSnapshot.mock.calls[0][1];
+    act(() => successCb({ exists: () => false }));
+    expect(result.current.jobDoc).toBeNull();
+    expect(result.current.exists).toBe(false);
+    expect(result.current.loading).toBe(false);
+  });
+
+  it('sets error and loading=false on the snapshot error callback, without confirming exists=false', () => {
     const { result } = renderHook(() => useTrialJobSnapshot('job-1'));
     const errorCb = mockOnSnapshot.mock.calls[0][2];
     const err = new Error('permission-denied');
     act(() => errorCb(err));
     expect(result.current.error).toBe(err);
     expect(result.current.loading).toBe(false);
+    // A connection/permission error is NOT the same as a confirmed-missing
+    // doc — exists must stay null (unknown), not flip to false.
+    expect(result.current.exists).toBeNull();
   });
 
-  it('clears jobDoc/error and sets loading=false when jobId is null', () => {
+  it('clears jobDoc/error/exists and sets loading=false when jobId is null', () => {
     const { result, rerender } = renderHook(({ id }) => useTrialJobSnapshot(id), { initialProps: { id: 'job-1' as string | null } });
     rerender({ id: null });
     expect(result.current.jobDoc).toBeNull();
     expect(result.current.error).toBeNull();
+    expect(result.current.exists).toBeNull();
     expect(result.current.loading).toBe(false);
   });
 

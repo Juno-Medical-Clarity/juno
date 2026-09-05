@@ -6,6 +6,12 @@ import { trackEvent } from '../analytics/ga';
 interface ProcessingScreenProps {
   jobDoc: TrialJobDoc | null;
   snapshotError: Error | null;
+  // Null until the first Firestore snapshot callback arrives; false only once
+  // a real callback has confirmed the doc is gone. See useTrialJobSnapshot's
+  // `exists` field — this is deliberately not derived from `jobDoc === null`,
+  // which is also true during ordinary initial load.
+  jobExists: boolean | null;
+  onRestart: () => void;
 }
 
 const TRIAL_STEPS: Omit<PipelineStep, 'status'>[] = [
@@ -33,7 +39,7 @@ function stepIcon(status: string): string {
   return '○';
 }
 
-export default function ProcessingScreen({ jobDoc, snapshotError }: ProcessingScreenProps) {
+export default function ProcessingScreen({ jobDoc, snapshotError, jobExists, onRestart }: ProcessingScreenProps) {
   const seenActive = useRef<Set<number>>(new Set());
   const seenDone = useRef<Set<number>>(new Set());
   const steps = stepsFromStage(jobDoc?.stage ?? null);
@@ -55,14 +61,30 @@ export default function ProcessingScreen({ jobDoc, snapshotError }: ProcessingSc
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [jobDoc?.stage]);
 
+  // A confirmed-missing doc (jobExists === false, set only after a real
+  // snapshot callback — see the prop comment above) means the job was
+  // deleted or expired out from under us: there is nothing left to wait for,
+  // so this is terminal and distinct from a transient connection error.
+  const jobGone = jobExists === false;
+
   return (
     <div className="glass-card">
       <p className="section-title">Creating your simplified care plan…</p>
-      {snapshotError ? (
-        <p>
-          We lost connection while checking your progress. Please check your
-          connection — this page will keep trying to reconnect.
-        </p>
+      {jobGone ? (
+        <>
+          <p className="error-box">
+            This session ended and your care plan was removed. Nothing was saved.
+          </p>
+          <button className="cta-btn" onClick={onRestart}>Start over</button>
+        </>
+      ) : snapshotError ? (
+        <>
+          <p>
+            We lost connection while checking your progress. Please check your
+            connection — this page will keep trying to reconnect.
+          </p>
+          <button className="cta-btn" onClick={onRestart}>Start over</button>
+        </>
       ) : (
         <div className="step-list">
           {steps.map(step => (

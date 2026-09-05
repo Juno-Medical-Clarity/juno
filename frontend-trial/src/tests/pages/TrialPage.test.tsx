@@ -66,7 +66,7 @@ describe('TrialPage', () => {
   beforeEach(() => {
     createTrialJobMock.mockReset().mockResolvedValue({ job_id: 'job-1' });
     deleteTrialJobMock.mockClear();
-    useTrialJobSnapshotMock.mockReset().mockReturnValue({ jobDoc: null, loading: false, error: null });
+    useTrialJobSnapshotMock.mockReset().mockReturnValue({ jobDoc: null, exists: null, loading: false, error: null });
   });
 
   it('keeps the completed result rendered after the listener reports the doc as gone (post-delete)', async () => {
@@ -127,5 +127,25 @@ describe('TrialPage', () => {
     expect(screen.getByRole('button', { name: 'Simplify' })).toBeInTheDocument();
     expect(screen.queryByText('Something went wrong. Please try again.')).not.toBeInTheDocument();
     expect(useTrialJobSnapshotMock).toHaveBeenLastCalledWith(null);
+  });
+
+  it('shows the "session ended" state while still processing when the listener confirms the doc is gone, and "Start over" fully resets', async () => {
+    const user = userEvent.setup();
+    const { rerender } = render(<MemoryRouter><TrialPage /></MemoryRouter>);
+
+    await createJob(user);
+    expect(useTrialJobSnapshotMock).toHaveBeenLastCalledWith('job-1');
+
+    // Job never reached a terminal status before the doc disappeared — e.g. a
+    // backgrounded-tab delete (the bug this fix addresses) or TTL expiry.
+    useTrialJobSnapshotMock.mockReturnValue({ jobDoc: null, exists: false, loading: false, error: null });
+    await act(async () => { rerender(<MemoryRouter><TrialPage /></MemoryRouter>); });
+
+    expect(screen.getByText(/session ended/i)).toBeInTheDocument();
+    expect(screen.getByText(/nothing was saved/i)).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'Start over' }));
+    expect(screen.getByRole('button', { name: 'Simplify' })).toBeInTheDocument();
+    expect(screen.queryByText(/session ended/i)).not.toBeInTheDocument();
   });
 });

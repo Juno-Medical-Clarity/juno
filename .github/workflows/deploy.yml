@@ -167,6 +167,18 @@ jobs:
           VITE_DEFAULT_VERSION: v1-2
           VITE_GA_MEASUREMENT_ID: G-4R0CDYKSPW
 
+      - name: Deploy Firestore rules
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          creds_file="$RUNNER_TEMP/firebase-service-account-rules.json"
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$creds_file"
+          export GOOGLE_APPLICATION_CREDENTIALS="$creds_file"
+          trap 'rm -f "$creds_file"' EXIT
+
+          npx firebase-tools deploy --only firestore:rules \
+            --project juno-medical-clarity --non-interactive
+
       - name: Deploy to Firebase Hosting
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
