@@ -31,10 +31,13 @@ app = Flask(__name__)
 CORS(
     app,
     origins=[
-        "https://juno-medical-clarity.web.app",
+        "https://juno-medical-clarity.web.app",       # trial app (SP3), primary address post-cutover
         "https://juno-medical-clarity.firebaseapp.com",
+        "https://juno-app-99.web.app",                    # relocated full app — NEW
+        "https://juno-app-99.firebaseapp.com",             # NEW
         "http://localhost:3000",
-        "http://localhost:5173",
+        "http://localhost:5173",                       # frontend/ (full app) dev server
+        "http://localhost:5174",                       # frontend-trial/ dev server — NEW
     ],
     methods=["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=["Content-Type", "Authorization", "X-Session-Id"],
