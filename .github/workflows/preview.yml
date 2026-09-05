@@ -81,7 +81,7 @@ jobs:
 
           set +e
           deploy_output=$(npx firebase-tools hosting:channel:deploy "$CHANNEL_ID" \
-            --project juno-medical-clarity --only trial --expires 7d --json 2>&1)
+            --project juno-medical-clarity --only trial --expires 7d 2>&1)
           deploy_exit=$?
           set -e
 
@@ -92,22 +92,15 @@ jobs:
             exit "$deploy_exit"
           fi
 
-          # firebase-tools' --json output nests the channel URL under
-          # result.<target>.url; walk it with jq (preinstalled on GitHub's
-          # ubuntu-latest runners) without hardcoding the target key, falling
-          # back to a plain regex scan of the raw output in case the JSON
-          # shape ever changes across firebase-tools versions.
-          preview_url=$(echo "$deploy_output" | jq -r '
-            if (.result | type) == "object" then
-              [.result[] | select(.url != null) | .url][0] // empty
-            else empty end
-          ' 2>/dev/null)
-
-          if [ -z "$preview_url" ] || [ "$preview_url" = "null" ]; then
-            preview_url=$(echo "$deploy_output" \
-              | grep -oE 'https://[a-zA-Z0-9.-]+\.web\.app[a-zA-Z0-9/_.-]*' \
-              | head -n1)
-          fi
+          # Pull the channel URL straight out of firebase-tools' human-readable
+          # output (a bare https://<site>--<channel>-<hash>.web.app string).
+          # Deliberately not using --json here: npx/npm's own stderr chatter
+          # (e.g. "npm warn exec ...") gets merged ahead of firebase-tools'
+          # stdout when both streams are captured together, which breaks JSON
+          # parsing in practice — a plain grep has no such fragility.
+          preview_url=$(echo "$deploy_output" \
+            | grep -oE 'https://[a-zA-Z0-9.-]+\.web\.app[a-zA-Z0-9/_.-]*' \
+            | head -n1)
 
           if [ -z "$preview_url" ]; then
             echo "::error::Could not extract a preview URL from firebase-tools output."
