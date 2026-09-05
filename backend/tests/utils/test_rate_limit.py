@@ -9,25 +9,125 @@ from utils.constants import Constants
 
 # ---------------------------------------------------------------------------
 # get_client_ip
+#
+# Topology (see utils.rate_limit.get_client_ip docstring for the full
+# citation): juno-api is reached directly on its `*.run.app` URL. There is no
+# External Application Load Balancer / Cloud Armor / CDN in front of it
+# (Compute Engine API -- required for any of those -- is disabled on the GCP
+# project; confirmed live via `gcloud compute url-maps list`). Cloud Run's own
+# front end is therefore the ONLY trusted proxy hop, so it appends exactly ONE
+# IP -- the real client's -- to the right of X-Forwarded-For. That makes
+# Constants.Trial.TRUSTED_PROXY_HOPS == 1 correct *for this topology*, and the
+# rightmost XFF value is the one Google appended. If this deployment is ever
+# put behind a GCLB (which appends TWO values --
+# "<existing>,<client-ip>,<lb-ip>" per Google's Cloud Load Balancing docs),
+# TRUSTED_PROXY_HOPS must become 2 -- via TRIAL_TRUSTED_PROXY_HOPS, no code
+# change required.
 # ---------------------------------------------------------------------------
 
-def test_get_client_ip_uses_last_xff_value(app):
+def test_get_client_ip_uses_rightmost_xff_value_for_single_trusted_hop(app):
+    """With TRUSTED_PROXY_HOPS=1 (this deployment's topology), the single
+    Google-appended value is the last one -- not necessarily 'the last two
+    values ago' as it would be behind an additional LB hop."""
     with app.test_request_context(headers={"X-Forwarded-For": "1.2.3.4, 5.6.7.8"}):
         assert get_client_ip() == "5.6.7.8"
 
 
-def test_get_client_ip_ignores_spoofed_first_value():
+def test_get_client_ip_ignores_spoofed_leading_values():
     from flask import Flask
     app = Flask(__name__)
-    with app.test_request_context(headers={"X-Forwarded-For": "attacker-spoofed, 9.9.9.9"}):
+    with app.test_request_context(headers={"X-Forwarded-For": "attacker-spoofed, also-fake, 9.9.9.9"}):
         assert get_client_ip() == "9.9.9.9"
 
 
-def test_get_client_ip_falls_back_to_remote_addr():
+def test_get_client_ip_single_value_header(app):
+    """No existing header from the client; Cloud Run appended exactly one
+    value -- the common case for most trial requests."""
+    with app.test_request_context(headers={"X-Forwarded-For": "203.0.113.7"}):
+        assert get_client_ip() == "203.0.113.7"
+
+
+def test_get_client_ip_tolerates_irregular_whitespace(app):
+    with app.test_request_context(headers={"X-Forwarded-For": "1.2.3.4 ,   5.6.7.8  "}):
+        assert get_client_ip() == "5.6.7.8"
+
+
+def test_get_client_ip_falls_back_to_remote_addr_when_header_absent():
     from flask import Flask
     app = Flask(__name__)
     with app.test_request_context(environ_base={"REMOTE_ADDR": "10.0.0.1"}):
         assert get_client_ip() == "10.0.0.1"
+
+
+def test_get_client_ip_falls_back_to_unknown_when_nothing_available():
+    from flask import Flask
+    app = Flask(__name__)
+    with app.test_request_context(environ_base={"REMOTE_ADDR": ""}):
+        assert get_client_ip() == "unknown"
+
+
+def test_get_client_ip_falls_back_when_header_present_but_empty():
+    """An XFF header that is present but empty/whitespace-only must not be
+    treated as a zero-length, always-satisfied list -- fall back safely."""
+    from flask import Flask
+    app = Flask(__name__)
+    with app.test_request_context(headers={"X-Forwarded-For": "   "}, environ_base={"REMOTE_ADDR": "10.0.0.2"}):
+        assert get_client_ip() == "10.0.0.2"
+
+
+def test_get_client_ip_handles_bracketed_ipv6_with_port(app):
+    with app.test_request_context(headers={"X-Forwarded-For": "1.2.3.4, [2001:db8::1]:54321"}):
+        assert get_client_ip() == "2001:db8::1"
+
+
+def test_get_client_ip_handles_bracketed_ipv6_without_port(app):
+    with app.test_request_context(headers={"X-Forwarded-For": "1.2.3.4, [2001:db8::1]"}):
+        assert get_client_ip() == "2001:db8::1"
+
+
+def test_get_client_ip_leaves_bare_ipv6_untouched(app):
+    """A bare (unbracketed) IPv6 address is indistinguishable from an
+    unbracketed 'IPv6:port' form -- stripping would corrupt the address, so
+    it must be passed through as-is."""
+    with app.test_request_context(headers={"X-Forwarded-For": "1.2.3.4, 2001:db8::1"}):
+        assert get_client_ip() == "2001:db8::1"
+
+
+def test_get_client_ip_strips_ipv4_port(app):
+    with app.test_request_context(headers={"X-Forwarded-For": "1.2.3.4:8080"}):
+        assert get_client_ip() == "1.2.3.4"
+
+
+def test_get_client_ip_honors_trusted_hops_env_override(monkeypatch):
+    """If this deployment is later put behind an additional trusted proxy
+    (e.g. a GCLB), bumping TRIAL_TRUSTED_PROXY_HOPS to 2 must select the
+    second-to-last value instead of the last, with no code change."""
+    monkeypatch.setenv("TRIAL_TRUSTED_PROXY_HOPS", "2")
+    from flask import Flask
+    app = Flask(__name__)
+    with app.test_request_context(headers={"X-Forwarded-For": "attacker-value, 9.9.9.9, 203.0.113.55"}):
+        assert get_client_ip() == "9.9.9.9"
+
+
+def test_get_client_ip_falls_back_when_header_shorter_than_trusted_hops(monkeypatch):
+    """A header with fewer comma-separated values than the configured trusted
+    hop count is malformed/truncated for this topology -- none of its values
+    can be trusted, so fall back rather than guessing which one is real."""
+    monkeypatch.setenv("TRIAL_TRUSTED_PROXY_HOPS", "2")
+    from flask import Flask
+    app = Flask(__name__)
+    with app.test_request_context(headers={"X-Forwarded-For": "9.9.9.9"}, environ_base={"REMOTE_ADDR": "10.0.0.3"}):
+        assert get_client_ip() == "10.0.0.3"
+
+
+def test_get_client_ip_ignores_non_numeric_env_override(monkeypatch):
+    """A garbage TRIAL_TRUSTED_PROXY_HOPS value must not crash request
+    handling -- fall back to the documented default for this topology."""
+    monkeypatch.setenv("TRIAL_TRUSTED_PROXY_HOPS", "not-a-number")
+    from flask import Flask
+    app = Flask(__name__)
+    with app.test_request_context(headers={"X-Forwarded-For": "1.2.3.4, 5.6.7.8"}):
+        assert get_client_ip() == "5.6.7.8"
 
 
 # ---------------------------------------------------------------------------

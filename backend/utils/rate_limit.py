@@ -19,15 +19,94 @@ from errors import make_error_response, ErrorCode
 logger = logging.getLogger(__name__)
 
 
+def _trusted_proxy_hops() -> int:
+    """Number of trusted reverse-proxy hops between the public internet and
+    this container -- i.e. how many IP addresses Google appends to the RIGHT
+    end of X-Forwarded-For before the request reaches Flask.
+
+    Deployment topology this value assumes (verified, not assumed on faith):
+    juno-api is reached directly on its `*.run.app` URL -- `.github/workflows/
+    deploy.yml` deploys it with a bare `gcloud run services update`, and the
+    frontend's VITE_API_PROCESSING_URL points straight at that `*.run.app`
+    host. There is no External Application/Classic Load Balancer, Cloud
+    Armor, or CDN in front of it: all of those require the Compute Engine
+    API, which a live `gcloud compute url-maps list --project
+    juno-medical-clarity` confirms is disabled on this project (PERMISSION_
+    DENIED / SERVICE_DISABLED). So Cloud Run's own front end is the ONLY
+    proxy hop, and per Google's documented behavior it appends exactly ONE
+    IP -- the real client's -- to the right of whatever X-Forwarded-For value
+    (if any) the client sent in. That makes 1 the correct hop count *today*.
+
+    Contrast with a Global External Application Load Balancer, which Google's
+    own docs (cloud.google.com/load-balancing/docs/https) describe as
+    appending TWO values in the form "<existing>,<client-ip>,<lb-ip>" -- if
+    this deployment is ever put behind a GCLB (or any other additional
+    trusted proxy), this must become 2, selecting the second-to-last value
+    instead of the last. Rather than hard-code a magic index, that knob is
+    exposed as TRIAL_TRUSTED_PROXY_HOPS so the topology can be corrected
+    without a code change.
+    """
+    override = os.environ.get(Constants.EnvVars.TRIAL_TRUSTED_PROXY_HOPS)
+    if override:
+        try:
+            hops = int(override)
+        except ValueError:
+            hops = None
+        if hops is not None and hops >= 1:
+            return hops
+        logger.warning(
+            "rate_limit: ignoring invalid %s=%r; using default %d",
+            Constants.EnvVars.TRIAL_TRUSTED_PROXY_HOPS, override, Constants.Trial.TRUSTED_PROXY_HOPS,
+        )
+    return Constants.Trial.TRUSTED_PROXY_HOPS
+
+
+def _strip_port(value: str) -> str:
+    """Best-effort removal of a trailing ':port' from a single X-Forwarded-For
+    entry. Handles bracketed IPv6 ('[::1]:8080' -> '::1', '[::1]' -> '::1')
+    and IPv4:port ('1.2.3.4:8080' -> '1.2.3.4'). Deliberately leaves a bare,
+    unbracketed IPv6 address ('2001:db8::1') untouched: it is indistinguishable
+    from an unbracketed 'IPv6:port' form, and guessing wrong would corrupt a
+    valid address, so only the unambiguous single-colon (IPv4:port) and
+    bracketed-IPv6 forms are stripped."""
+    if value.startswith("["):
+        closing = value.find("]")
+        return value[1:closing] if closing != -1 else value
+    if value.count(":") == 1:
+        host, _, port = value.rpartition(":")
+        if port.isdigit():
+            return host
+    return value
+
+
 def get_client_ip() -> str:
-    """Real client IP behind Cloud Run's proxy: the LAST X-Forwarded-For
-    value (Google-appended, trustworthy), never the first (client-supplied,
-    spoofable). Falls back to request.remote_addr if the header is absent."""
+    """Real client IP for this deployment's topology (see
+    _trusted_proxy_hops for the full citation): direct Cloud Run, one trusted
+    proxy hop, so the value TRUSTED_PROXY_HOPS positions from the right of
+    X-Forwarded-For is Google-appended and trustworthy -- values to its left
+    (including position 0, the traditional "first XFF value") are
+    client-supplied and spoofable, never trusted.
+
+    Falls back to request.remote_addr -- deliberately, not a shared constant
+    that would merge all callers into one rate-limit bucket -- when the
+    header is absent, empty, or has fewer values than the configured trusted
+    hop count (a malformed/truncated header we can't safely trust any part
+    of). remote_addr itself only reaches "unknown" if neither is available
+    (e.g. some non-HTTP test contexts), which intentionally is NOT a shared
+    bucket in production: Cloud Run always sets X-Forwarded-For for real
+    internet traffic, so that branch is not expected to be hit there.
+    """
     xff = request.headers.get("X-Forwarded-For", "")
     if xff:
-        parts = [p.strip() for p in xff.split(",") if p.strip()]
-        if parts:
-            return parts[-1]
+        parts = [_strip_port(p.strip()) for p in xff.split(",") if p.strip()]
+        hops = _trusted_proxy_hops()
+        if len(parts) >= hops:
+            return parts[-hops]
+        logger.warning(
+            "rate_limit: X-Forwarded-For has fewer values (%d) than trusted proxy hops (%d); "
+            "falling back to remote_addr rather than trusting an unverified hop",
+            len(parts), hops,
+        )
     return request.remote_addr or "unknown"
 
 
@@ -50,7 +129,17 @@ def _check_and_increment(transaction, ref, limit: int, now, expires_at) -> bool:
 
 def check_rate_limit() -> bool:
     """Returns True if this request is within budget (and has been counted),
-    False if the caller's IP is over the hourly limit."""
+    False if the caller's IP is over the hourly limit.
+
+    Known, accepted limitation: this is a fixed wall-clock-hour window (keyed
+    by `window_start`), not a sliding one. An IP that sends 5 requests just
+    before :00 and 5 more just after can get 10 requests through within
+    seconds of an hour boundary. A true sliding window would need either a
+    second Firestore read per request (a previous-window lookup, doubling
+    read cost) or additional fields on this document (a storage-shape
+    change) -- both outside this fix's scope, which is to keep the existing
+    single-document-per-window shape and read/write cost profile unchanged.
+    Reviewed and deliberately deferred rather than fixed here."""
     ip_hash = _hash_ip(get_client_ip())
     now = datetime.now(timezone.utc)
     window_start = now.replace(minute=0, second=0, microsecond=0)

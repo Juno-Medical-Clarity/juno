@@ -65,6 +65,14 @@ class Constants:
         RATE_LIMIT_COLLECTION: str = "trial_rate_limits"
         RATE_LIMIT_COUNTER_TTL_HOURS: int = 2
         JOB_TTL_HOURS: int = 1
+        # Number of trusted reverse-proxy hops between the public internet and
+        # this container -- i.e. how many IPs are Google-appended to the RIGHT
+        # end of X-Forwarded-For before the request reaches Flask. See the
+        # topology note on utils.rate_limit.get_client_ip for why this is 1
+        # today (direct Cloud Run, no external Load Balancer) and when it
+        # would need to change. Overridable via TRIAL_TRUSTED_PROXY_HOPS so a
+        # future topology change doesn't require a code change.
+        TRUSTED_PROXY_HOPS: int = 1
 
     class Deadlines:
         SINGLE_JOB_INTERNAL_DEADLINE_S: int = 270
@@ -210,6 +218,7 @@ class Constants:
         PORT: str = "PORT"
         FLASK_ENV: str = "FLASK_ENV"
         JUNO_MODE: str = "JUNO_MODE"
+        TRIAL_TRUSTED_PROXY_HOPS: str = "TRIAL_TRUSTED_PROXY_HOPS"
 
     class Observability:
         SERVICE_NAME_DEFAULT: str = "backend-processing"
