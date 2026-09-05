@@ -42,6 +42,9 @@ Run artifacts, one per sub-project:
 [`03-trial-frontend/code-2026-09-05-0741.md`](03-trial-frontend/code-2026-09-05-0741.md),
 [`04-hosting-split-and-legal/code-2026-09-05-0749.md`](04-hosting-split-and-legal/code-2026-09-05-0749.md),
 [`05-retention-automation/code-2026-09-05-0758.md`](05-retention-automation/code-2026-09-05-0758.md).
+SP6 (a separate follow-on branch, `users/tejitpabari/trial-optimizations`) has its own
+run artifact:
+[`06-trial-optimizations/code-2026-09-05-2131.md`](06-trial-optimizations/code-2026-09-05-2131.md).
 
 **Test totals at last review close** (re-run during verification, not carried forward
 from earlier runs): backend `python3 -m pytest tests/ -q` → 572 passed, 93% coverage;
@@ -137,6 +140,7 @@ Distilled from `brainstorm.md`'s decision log (D1–D11) plus items settled sinc
 | SP3 | Trial Frontend App | P2 | New `frontend-trial/` Vite app: upload → processing (live steps) → results screens, anonymous-auth wiring, GA4 instrumentation, download-report reuse, best-effort `DELETE` on unload. | SP2 (API contract) | `03-trial-frontend/PRD.md` | `03-trial-frontend/TASKS.md` |
 | SP4 | Hosting Split, CI & Legal Pages | P3 | Multi-target `firebase.json`/`.firebaserc` (`app` + `trial`); `deploy.yml` gains a trial build/deploy job and fixes `rollback-production.yml`; CORS widened for `juno-app-99.web.app`; Privacy Policy + Terms & Conditions copy. | SP3 (build output); coordinates with SP2 (CORS, max-instances) | `04-hosting-split-and-legal/PRD.md` | `04-hosting-split-and-legal/TASKS.md` |
 | SP5 | Retention Automation | P5 | Enables Firestore native TTL on `care_plan_outputs`/`trial_rate_limits`; daily Cloud Scheduler → Cloud Run Job deleting anonymous Auth users older than 24h. | SP2 (`expires_at` fields, `trial_rate_limits`); coordinates with SP4 (deploy workflow, legal copy accuracy) | `05-retention-automation/PRD.md` | `05-retention-automation/TASKS.md` |
+| SP6 | Trial Pipeline Optimizations | P6 | Backend-only follow-on (separate branch `users/tejitpabari/trial-optimizations`, off `main` post-SP1–SP5): trims trial grading output to `combined`-only entries, populates the previously-always-`None` `Metrics.total_duration_ms`, and overlaps the `before`-grading score computation with the pipeline's LLM calls. | None (SP1–SP5 already on `main`) | `06-trial-optimizations/PRD.md` | `06-trial-optimizations/TASKS.md` |
 
 ---
 
