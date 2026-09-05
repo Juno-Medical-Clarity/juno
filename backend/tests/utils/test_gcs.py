@@ -200,3 +200,49 @@ def test_sweep_is_noop_when_temp_base_missing(tmp_path, monkeypatch):
 
     from utils.gcs import sweep_stale_dataset_dirs
     sweep_stale_dataset_dirs()  # must not raise
+
+
+# ---------------------------------------------------------------------------
+# delete_gcs_object
+# ---------------------------------------------------------------------------
+
+def test_delete_gcs_object_parses_uri_and_deletes(mock_gcs_module):
+    from utils.gcs import delete_gcs_object
+    delete_gcs_object("gs://my-bucket/care_plan_trial/user-1/inputs/abc.pdf")
+    mock_gcs_module.delete.assert_called_once()
+
+
+def test_delete_gcs_object_uses_correct_bucket_and_blob_name(monkeypatch):
+    from unittest.mock import MagicMock
+    import utils.gcs as mod
+
+    mock_client = MagicMock()
+    monkeypatch.setattr(mod, "_client", mock_client)
+
+    from utils.gcs import delete_gcs_object
+    delete_gcs_object("gs://my-bucket/care_plan_trial/user-1/inputs/abc.pdf")
+
+    mock_client.bucket.assert_called_once_with("my-bucket")
+    mock_client.bucket.return_value.blob.assert_called_once_with(
+        "care_plan_trial/user-1/inputs/abc.pdf"
+    )
+
+
+def test_delete_gcs_object_swallows_not_found(mock_gcs_module):
+    from google.api_core.exceptions import NotFound
+    mock_gcs_module.delete.side_effect = NotFound("gone")
+
+    from utils.gcs import delete_gcs_object
+    delete_gcs_object("gs://my-bucket/some/path.pdf")  # must not raise
+
+
+def test_delete_gcs_object_logs_but_does_not_raise_on_other_error(mock_gcs_module):
+    mock_gcs_module.delete.side_effect = RuntimeError("boom")
+
+    from utils.gcs import delete_gcs_object
+    delete_gcs_object("gs://my-bucket/some/path.pdf")  # must not raise
+
+
+def test_delete_gcs_object_warns_and_noops_on_non_gs_uri(caplog):
+    from utils.gcs import delete_gcs_object
+    delete_gcs_object("not-a-gs-uri")  # must not raise

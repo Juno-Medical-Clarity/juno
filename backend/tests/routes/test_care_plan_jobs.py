@@ -1,7 +1,17 @@
 """TDD tests for POST /care_plan/jobs."""
+import io
 import pytest
 from unittest.mock import patch
 from flask import Flask
+
+from errors import ErrorCode, JunoError
+
+# A minimal, valid 1x1 PNG (no network, no fixture file needed).
+_ONE_PX_PNG = bytes.fromhex(
+    "89504e470d0a1a0a0000000d494844520000000100000001080600000"
+    "01f15c4890000000a49444154789c6300010000050001"
+    "0d0a2db40000000049454e44ae426082"
+)
 
 
 @pytest.fixture
@@ -139,6 +149,66 @@ def test_grading_enabled_default_true(mock_create_doc, mock_enqueue, client_jobs
     "WORKER_URL": "https://worker.run.app",
     "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
 })
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+@patch("routes.care_plan_jobs.upload_combined_pdf", return_value="gs://fake-bucket/fake.pdf")
+@patch("services.care_plan_input.extract_text_from_image", return_value="OCR'd image text")
+def test_create_care_plan_job_accepts_image_upload(
+    mock_extract_image, mock_upload_pdf, mock_create_doc, mock_enqueue, client_jobs, auth_ok
+):
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        data={"files": (io.BytesIO(_ONE_PX_PNG), "photo.png")},
+        content_type="multipart/form-data",
+        headers=auth_ok,
+    )
+    assert resp.status_code == 202
+    body = resp.get_json()
+    assert "job_id" in body
+
+    mock_create_doc.assert_called_once()
+    payload = mock_create_doc.call_args.kwargs["payload"]
+    assert "OCR'd image text" in payload["input_text"]
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+@patch(
+    "services.care_plan_input.extract_text_from_image",
+    side_effect=JunoError(
+        ErrorCode.EMPTY_DOCUMENT,
+        detail="Image contained no readable text (model returned NO_TEXT_FOUND).",
+    ),
+)
+def test_create_care_plan_job_blurry_image_returns_422_empty_document(
+    mock_extract_image, mock_create_doc, mock_enqueue, client_jobs, auth_ok
+):
+    """Regression test: extract_text_from_image raising JunoError(EMPTY_DOCUMENT)
+    for an unreadable/blurry image must surface as 422 EMPTY_DOCUMENT, not fall
+    through the generic `except Exception` to a 500 INTERNAL_ERROR."""
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        data={"files": (io.BytesIO(_ONE_PX_PNG), "photo.png")},
+        content_type="multipart/form-data",
+        headers=auth_ok,
+    )
+    assert resp.status_code == 422
+    body = resp.get_json()
+    assert body["error"]["code"] == "EMPTY_DOCUMENT"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
 @patch("routes.care_plan_jobs.create_job_doc", side_effect=RuntimeError("db exploded"))
 def test_unhandled_exception_returns_500_json(mock_create_doc, client_jobs, auth_ok):
     resp = client_jobs.post(
@@ -150,3 +220,91 @@ def test_unhandled_exception_returns_500_json(mock_create_doc, client_jobs, auth
     body = resp.get_json()
     assert body is not None, "Response must be JSON, not HTML"
     assert body["error"]["code"] == "INTERNAL_ERROR"
+
+
+# ---------------------------------------------------------------------------
+# Anonymous callers (Finding 1) — POST /care_plan/jobs is the primary attack
+# surface: an anonymous trial token must never work here.
+# ---------------------------------------------------------------------------
+
+@pytest.fixture
+def auth_anonymous(monkeypatch):
+    monkeypatch.setattr(
+        "utils.firebase.auth.verify_id_token",
+        lambda *a, **k: {"uid": "anon-1", "firebase": {"sign_in_provider": "anonymous", "identities": {}}},
+    )
+    return {"Authorization": "Bearer anon-token"}
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_anonymous_token_returns_403(mock_create_doc, mock_enqueue, client_jobs, auth_anonymous):
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        json={"text": "Patient has hypertension."},
+        headers=auth_anonymous,
+    )
+    assert resp.status_code == 403
+    assert resp.get_json()["error"]["code"] == "ANONYMOUS_ACCESS_FORBIDDEN"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_non_anonymous_token_still_accepted(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    """Regression guard: a normal signed-in user must be unaffected by the
+    anonymous-caller deny added for Finding 1."""
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        json={"text": "Patient has hypertension."},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 202
+    mock_create_doc.assert_called_once()
+
+
+# ---------------------------------------------------------------------------
+# Server-side max text length (Finding 2)
+# ---------------------------------------------------------------------------
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_text_at_max_length_is_accepted(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    from utils.constants import Constants
+    text = "a" * Constants.Uploads.MAX_TEXT_LENGTH
+    resp = client_jobs.post("/care_plan/jobs", json={"text": text}, headers=auth_ok)
+    assert resp.status_code == 202
+    mock_create_doc.assert_called_once()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_text_over_max_length_returns_400(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    from utils.constants import Constants
+    text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    resp = client_jobs.post("/care_plan/jobs", json={"text": text}, headers=auth_ok)
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()

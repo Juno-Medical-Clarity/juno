@@ -409,3 +409,112 @@ def test_get_job_doc_raises_firestore_error(mock_client):
     mock_client.return_value.collection.return_value.document.return_value.get.side_effect = Exception("network")
     with pytest.raises(FirestoreError):
         get_job_doc("j1")
+
+
+# ---------------------------------------------------------------------------
+# verify_firebase_token — anonymous-caller deny-by-default (Finding 1)
+# ---------------------------------------------------------------------------
+
+def _build_app_with_route(allow_anonymous=None):
+    """Build a minimal Flask app with one route guarded by verify_firebase_token.
+
+    allow_anonymous=None -> bare @verify_firebase_token (deny-by-default).
+    allow_anonymous=True/False -> @verify_firebase_token(allow_anonymous=...).
+    """
+    from utils.firebase import verify_firebase_token
+    from flask import g, jsonify
+
+    app = Flask(__name__)
+
+    if allow_anonymous is None:
+        @app.route("/protected", methods=["POST"])
+        @verify_firebase_token
+        def protected(user_id):
+            return jsonify({"user_id": user_id, "is_anonymous": g.get("is_anonymous")})
+    else:
+        @app.route("/protected", methods=["POST"])
+        @verify_firebase_token(allow_anonymous=allow_anonymous)
+        def protected(user_id):
+            return jsonify({"user_id": user_id, "is_anonymous": g.get("is_anonymous")})
+
+    return app
+
+
+def _anonymous_decoded_token(uid="anon-1"):
+    return {"uid": uid, "firebase": {"sign_in_provider": "anonymous", "identities": {}}}
+
+
+def _password_decoded_token(uid="user-1"):
+    return {"uid": uid, "firebase": {"sign_in_provider": "password", "identities": {}}}
+
+
+def test_verify_firebase_token_rejects_anonymous_by_default():
+    app = _build_app_with_route(allow_anonymous=None)
+    client = app.test_client()
+
+    with patch("utils.firebase.auth.verify_id_token", lambda *a, **k: _anonymous_decoded_token()):
+        resp = client.post("/protected", headers={"Authorization": "Bearer tok"})
+
+    assert resp.status_code == 403
+    body = resp.get_json()
+    assert body["error"]["code"] == "ANONYMOUS_ACCESS_FORBIDDEN"
+
+
+def test_verify_firebase_token_accepts_non_anonymous_by_default():
+    app = _build_app_with_route(allow_anonymous=None)
+    client = app.test_client()
+
+    with patch("utils.firebase.auth.verify_id_token", lambda *a, **k: _password_decoded_token()):
+        resp = client.post("/protected", headers={"Authorization": "Bearer tok"})
+
+    assert resp.status_code == 200
+    body = resp.get_json()
+    assert body["user_id"] == "user-1"
+    assert body["is_anonymous"] is False
+
+
+def test_verify_firebase_token_accepts_token_with_no_firebase_claim():
+    """Tokens with no 'firebase' claim at all (e.g. simple test mocks) are
+    treated as non-anonymous — only an explicit anonymous provider is denied."""
+    app = _build_app_with_route(allow_anonymous=None)
+    client = app.test_client()
+
+    with patch("utils.firebase.auth.verify_id_token", lambda *a, **k: {"uid": "user-1"}):
+        resp = client.post("/protected", headers={"Authorization": "Bearer tok"})
+
+    assert resp.status_code == 200
+    assert resp.get_json()["is_anonymous"] is False
+
+
+def test_verify_firebase_token_allow_anonymous_true_accepts_anonymous():
+    app = _build_app_with_route(allow_anonymous=True)
+    client = app.test_client()
+
+    with patch("utils.firebase.auth.verify_id_token", lambda *a, **k: _anonymous_decoded_token()):
+        resp = client.post("/protected", headers={"Authorization": "Bearer tok"})
+
+    assert resp.status_code == 200
+    body = resp.get_json()
+    assert body["user_id"] == "anon-1"
+    assert body["is_anonymous"] is True
+
+
+def test_verify_firebase_token_allow_anonymous_true_still_accepts_non_anonymous():
+    app = _build_app_with_route(allow_anonymous=True)
+    client = app.test_client()
+
+    with patch("utils.firebase.auth.verify_id_token", lambda *a, **k: _password_decoded_token()):
+        resp = client.post("/protected", headers={"Authorization": "Bearer tok"})
+
+    assert resp.status_code == 200
+    assert resp.get_json()["is_anonymous"] is False
+
+
+def test_verify_firebase_token_allow_anonymous_false_explicit_rejects_anonymous():
+    app = _build_app_with_route(allow_anonymous=False)
+    client = app.test_client()
+
+    with patch("utils.firebase.auth.verify_id_token", lambda *a, **k: _anonymous_decoded_token()):
+        resp = client.post("/protected", headers={"Authorization": "Bearer tok"})
+
+    assert resp.status_code == 403

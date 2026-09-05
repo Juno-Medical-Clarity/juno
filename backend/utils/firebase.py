@@ -77,36 +77,71 @@ def _extract_bearer_token(auth_header: str | None) -> tuple[str | None, tuple | 
     return token, None
 
 
-def verify_firebase_token(f):
-    """Decorator to verify Firebase ID token from Authorization header"""
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        # OPTIONS preflight must pass through so flask-cors can attach CORS headers
-        if request.method == 'OPTIONS':
-            return '', 204
+def _is_anonymous_token(decoded_token: dict) -> bool:
+    """True iff a decoded Firebase ID token belongs to an anonymous sign-in.
 
-        token, err = _extract_bearer_token(request.headers.get("Authorization"))
-        if err:
-            return err
+    Uses the token's own ``firebase.sign_in_provider`` claim rather than an
+    Admin SDK lookup (e.g. ``auth.get_user(uid).provider_data``) — that claim
+    is exactly what Firebase stamps onto every anonymous ID token, and reading
+    it costs nothing extra per request. A token with no ``firebase`` claim at
+    all (e.g. a minimal test double) is treated as non-anonymous.
+    """
+    return decoded_token.get('firebase', {}).get('sign_in_provider') == 'anonymous'
 
-        try:
-            # Verify the token
-            decoded_token = auth.verify_id_token(token)
-            user_id = decoded_token['uid']
 
-            # Store on flask.g so structured logging / SessionIdFilter pick it up
-            # automatically on every structured log call in this request.
-            g.user_id = user_id
+def verify_firebase_token(f=None, *, allow_anonymous: bool = False):
+    """Decorator to verify Firebase ID token from Authorization header.
 
-            # Also pass as a kwarg for route handlers that need it explicitly
-            kwargs['user_id'] = user_id
+    Deny-by-default for anonymous callers: a Firebase ID token minted by
+    ``signInAnonymously()`` on the public trial site is a valid credential
+    against this same backend/Firebase project, so every non-trial
+    authenticated route must reject it (403) or it becomes an unthrottled,
+    unbounded-cost backdoor around the trial's per-IP rate limit. Only the
+    /trial routes are meant to accept anonymous callers, and must opt in
+    explicitly via ``@verify_firebase_token(allow_anonymous=True)``.
 
-        except Exception as e:
-            return make_error_response(ErrorCode.UNAUTHORIZED, request.path, {"detail": str(e)}).to_dict(), 401
+    Usable either bare (``@verify_firebase_token``) or as a factory
+    (``@verify_firebase_token(allow_anonymous=True)``).
+    """
+    def decorator(func):
+        @wraps(func)
+        def decorated_function(*args, **kwargs):
+            # OPTIONS preflight must pass through so flask-cors can attach CORS headers
+            if request.method == 'OPTIONS':
+                return '', 204
 
-        return f(*args, **kwargs)
+            token, err = _extract_bearer_token(request.headers.get("Authorization"))
+            if err:
+                return err
 
-    return decorated_function
+            try:
+                # Verify the token
+                decoded_token = auth.verify_id_token(token)
+                user_id = decoded_token['uid']
+                is_anonymous = _is_anonymous_token(decoded_token)
+
+                # Store on flask.g so structured logging / SessionIdFilter pick it up
+                # automatically on every structured log call in this request.
+                g.user_id = user_id
+                g.is_anonymous = is_anonymous
+
+                # Also pass as a kwarg for route handlers that need it explicitly
+                kwargs['user_id'] = user_id
+
+            except Exception as e:
+                return make_error_response(ErrorCode.UNAUTHORIZED, request.path, {"detail": str(e)}).to_dict(), 401
+
+            if is_anonymous and not allow_anonymous:
+                return make_error_response(ErrorCode.ANONYMOUS_ACCESS_FORBIDDEN, request.path).to_dict(), 403
+
+            return func(*args, **kwargs)
+
+        return decorated_function
+
+    # Support both @verify_firebase_token and @verify_firebase_token(allow_anonymous=True)
+    if f is not None:
+        return decorator(f)
+    return decorator
 
 
 def require_admin(f):

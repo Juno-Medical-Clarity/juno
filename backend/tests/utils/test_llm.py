@@ -41,12 +41,15 @@ def vertex_env():
     hc.HARM_CATEGORY_HARASSMENT = "harassment"
     mock_HarmBlockThreshold.BLOCK_NONE = "BLOCK_NONE"
 
+    mock_Part = MagicMock()
+
     mock_preview_models = MagicMock()
     mock_preview_models.GenerativeModel = mock_GenerativeModel
     mock_preview_models.HarmBlockThreshold = mock_HarmBlockThreshold
     mock_preview_models.HarmCategory = mock_HarmCategory
     mock_preview_models.FinishReason = mock_FinishReason
     mock_preview_models.GenerationConfig = mock_GenerationConfig
+    mock_preview_models.Part = mock_Part
 
     # Ensure the non-compliant key is never present during tests
     env_override = {k: v for k, v in os.environ.items() if k != "GEMINI_API_KEY"}
@@ -59,7 +62,7 @@ def vertex_env():
          }):
         # Ensure utils.llm is re-imported fresh so it binds to the mocked vertexai.
         sys.modules.pop("utils.llm", None)
-        yield mock_vertexai, mock_GenerativeModel, mock_HarmBlockThreshold, mock_HarmCategory, mock_FinishReason, mock_preview_models
+        yield mock_vertexai, mock_GenerativeModel, mock_HarmBlockThreshold, mock_HarmCategory, mock_FinishReason, mock_preview_models, mock_Part
 
     sys.modules.pop("utils.llm", None)
 
@@ -112,7 +115,7 @@ def test_safety_settings_applied(vertex_env):
 # ---------------------------------------------------------------------------
 
 def test_generate_text_returns_stripped_text(vertex_env):
-    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 
@@ -134,7 +137,7 @@ def test_generate_text_returns_stripped_text(vertex_env):
 
 def test_generate_text_passes_safety_settings(vertex_env):
     """generate_text must always pass safety_settings to generate_content."""
-    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 
@@ -154,7 +157,7 @@ def test_generate_text_passes_safety_settings(vertex_env):
 
 def test_generate_text_max_tokens_logs_warning(vertex_env):
     """When finish_reason == MAX_TOKENS, raise JunoError with LLM_MAX_TOKENS code."""
-    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 
@@ -193,7 +196,7 @@ def test_generate_text_no_candidates_raises(vertex_env):
 
 
 def test_generate_text_vertex_failure_raises_vertex_api_error(vertex_env):
-    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 
@@ -208,12 +211,125 @@ def test_generate_text_vertex_failure_raises_vertex_api_error(vertex_env):
     assert exc_info.value.error_code == ErrorCode.VERTEX_QUOTA_EXCEEDED
 
 
+def test_generate_text_still_works_after_refactor(vertex_env):
+    """Regression: the _generate_content extraction must not change the
+    text-only path (copy of test_generate_text_returns_stripped_text)."""
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    mock_candidate = MagicMock()
+    mock_candidate.finish_reason = "OTHER"
+    mock_FinishReason.MAX_TOKENS = "MAX_TOKENS"
+
+    mock_response = MagicMock()
+    mock_response.candidates = [mock_candidate]
+    mock_response.text = "  vertex output  "
+    mock_model_instance.generate_content.return_value = mock_response
+
+    from utils.llm import LLMClient
+    client = LLMClient()
+    result = client.generate_text("test prompt")
+
+    assert result == "vertex output"
+
+
+# ---------------------------------------------------------------------------
+# generate_text_from_image tests
+# ---------------------------------------------------------------------------
+
+def test_generate_text_from_image_calls_generate_content_with_part_and_prompt(vertex_env):
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, mock_Part = vertex_env
+    mock_Part.from_data.return_value = "the-part-object"
+
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    mock_candidate = MagicMock()
+    mock_candidate.finish_reason = "OTHER"
+    mock_FinishReason.MAX_TOKENS = "MAX_TOKENS"
+
+    mock_response = MagicMock()
+    mock_response.candidates = [mock_candidate]
+    mock_response.text = "  extracted  "
+    mock_model_instance.generate_content.return_value = mock_response
+
+    from utils.llm import LLMClient
+    client = LLMClient()
+    result = client.generate_text_from_image(b"imgbytes", "image/png", "prompt text")
+
+    mock_Part.from_data.assert_called_once_with(data=b"imgbytes", mime_type="image/png")
+    assert mock_model_instance.generate_content.call_args[0][0] == ["the-part-object", "prompt text"]
+    assert result == "extracted"
+
+
+def test_generate_text_from_image_max_tokens_raises(vertex_env):
+    """Shares response handling: MAX_TOKENS scenario via generate_text_from_image."""
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, mock_Part = vertex_env
+    mock_Part.from_data.return_value = MagicMock()
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    mock_candidate = MagicMock()
+    mock_FinishReason.MAX_TOKENS = "MAX_TOKENS"
+    mock_candidate.finish_reason = "MAX_TOKENS"
+
+    mock_response = MagicMock()
+    mock_response.candidates = [mock_candidate]
+    mock_response.text = "  partial output  "
+    mock_model_instance.generate_content.return_value = mock_response
+
+    from utils.llm import LLMClient
+    client = LLMClient()
+
+    with pytest.raises(JunoError) as exc_info:
+        client.generate_text_from_image(b"x", "image/png", "p")
+
+    assert exc_info.value.error_code == ErrorCode.LLM_MAX_TOKENS
+
+
+def test_generate_text_from_image_no_candidates_raises(vertex_env):
+    """Shares response handling: no-candidates scenario via generate_text_from_image."""
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, mock_Part = vertex_env
+    mock_Part.from_data.return_value = MagicMock()
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    mock_response = MagicMock()
+    mock_response.candidates = []
+    mock_model_instance.generate_content.return_value = mock_response
+
+    from utils.llm import LLMClient
+    client = LLMClient()
+    with pytest.raises(JunoError) as exc_info:
+        client.generate_text_from_image(b"x", "image/png", "p")
+    assert exc_info.value.error_code == ErrorCode.LLM_NO_CANDIDATES
+
+
+def test_generate_text_from_image_vertex_failure_raises_vertex_api_error(vertex_env):
+    """Shares response handling: Vertex API failure scenario via generate_text_from_image."""
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, mock_Part = vertex_env
+    mock_Part.from_data.return_value = MagicMock()
+    mock_model_instance = MagicMock()
+    mock_GenerativeModel.return_value = mock_model_instance
+
+    from google.api_core import exceptions as gexc
+    mock_model_instance.generate_content.side_effect = gexc.ResourceExhausted("quota exceeded")
+
+    from errors import ErrorCode, VertexAPIError
+    from utils.llm import LLMClient
+    client = LLMClient()
+    with pytest.raises(VertexAPIError) as exc_info:
+        client.generate_text_from_image(b"x", "image/png", "p")
+    assert exc_info.value.error_code == ErrorCode.VERTEX_QUOTA_EXCEEDED
+
+
 # ---------------------------------------------------------------------------
 # generate_json tests
 # ---------------------------------------------------------------------------
 
 def test_generate_json_fenced_block(vertex_env):
-    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 
@@ -230,7 +346,7 @@ def test_generate_json_fenced_block(vertex_env):
 
 
 def test_generate_json_raw_json(vertex_env):
-    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 
@@ -247,7 +363,7 @@ def test_generate_json_raw_json(vertex_env):
 
 
 def test_generate_json_returns_list(vertex_env):
-    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 
@@ -264,7 +380,7 @@ def test_generate_json_returns_list(vertex_env):
 
 
 def test_generate_json_invalid_raises_value_error(vertex_env):
-    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _ = vertex_env
+    mock_vertexai, mock_GenerativeModel, _, _, mock_FinishReason, _, _ = vertex_env
     mock_model_instance = MagicMock()
     mock_GenerativeModel.return_value = mock_model_instance
 

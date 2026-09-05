@@ -97,6 +97,39 @@ describe('CarePlanJobPage', () => {
     expect(screen.getByTestId('care-plan-view')).toBeTruthy();
   });
 
+  it('nulls printWindow.opener after opening the PDF report window (defense-in-depth vs stored XSS)', () => {
+    mockUseJobSnapshot.mockReturnValue({
+      jobDoc: {
+        status: 'completed',
+        stage: 5,
+        output_data: {
+          care_plan: {
+            doc_type: 'care_plan', urgency: 'normal', version: '1.2', summary: 'ok',
+            reason_for_visit: [], diagnosis: { details: [] }, medications: [], tests: [],
+            procedures: [], other: [], follow_up: [], warning_signs: [], questions: [], low_priority: [],
+          },
+          grading: { entries: [], enabled: false, graded_at: null },
+          metrics: { session_id: '', pipeline_version: 'v1-2', input_type: 'text', created_at: '', total_duration_ms: null, step_durations_ms: {}, saved_id: null },
+          input: { mode: 'text', files: [], text: 'test', doc_id: null },
+        },
+        error_data: null,
+        name: 'Test Plan',
+        batch_run_id: null,
+      },
+      loading: false,
+      error: null,
+    });
+
+    const fakeWindow = { document: { write: vi.fn(), close: vi.fn() }, print: vi.fn(), opener: { some: 'window' } };
+    vi.spyOn(window, 'open').mockReturnValue(fakeWindow as unknown as Window);
+
+    render(<CarePlanJobPage />);
+    document.querySelector<HTMLButtonElement>('.download-btn-pdf')?.click();
+
+    expect(fakeWindow.document.write).toHaveBeenCalledOnce();
+    expect(fakeWindow.opener).toBeNull();
+  });
+
   it('shows error_data message when status is error', () => {
     mockUseJobSnapshot.mockReturnValue({
       jobDoc: {

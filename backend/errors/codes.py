@@ -221,6 +221,11 @@ class ErrorCode(StrEnum):
     MALFORMED_AUTH_HEADER = "MALFORMED_AUTH_HEADER"
     """The Authorization header did not match the expected format."""
 
+    ANONYMOUS_ACCESS_FORBIDDEN = "ANONYMOUS_ACCESS_FORBIDDEN"
+    """An anonymous (unauthenticated-identity) Firebase token was used against a
+    route that requires a non-anonymous account. Anonymous tokens are only
+    accepted on the /trial routes."""
+
     # ------------------------------------------------------------------
     # 5. Resource
     # ------------------------------------------------------------------
@@ -315,6 +320,13 @@ class ErrorCode(StrEnum):
 
     ATHENA_TIMEOUT = "ATHENA_TIMEOUT"
     """Athena Health API request timed out."""
+
+    # ------------------------------------------------------------------
+    # 12. Rate Limiting
+    # ------------------------------------------------------------------
+
+    RATE_LIMIT_EXCEEDED = "RATE_LIMIT_EXCEEDED"
+    """The caller's IP has exceeded the trial's per-hour simplification limit."""
 
 
 # ---------------------------------------------------------------------------
@@ -802,6 +814,15 @@ ERROR_CATALOG: dict[ErrorCode, ErrorInfo] = {
         details_template="Expected format: Authorization: Bearer <token>",
     ),
 
+    ErrorCode.ANONYMOUS_ACCESS_FORBIDDEN: ErrorInfo(
+        code="ANONYMOUS_ACCESS_FORBIDDEN",
+        http_status=403,
+        message="Anonymous access denied",
+        user_hint="Please sign in with an account to use this feature",
+        retryable=False,
+        details_template="This endpoint does not accept anonymous Firebase tokens",
+    ),
+
     # ------------------------------------------------------------------
     # Resource
     # ------------------------------------------------------------------
@@ -1025,6 +1046,14 @@ ERROR_CATALOG: dict[ErrorCode, ErrorInfo] = {
         user_hint="Athena Health API request timed out",
         retryable=True,
         details_template="Request to {athena_api_path} exceeded the timeout of {timeout_s}s",
+    ),
+
+    ErrorCode.RATE_LIMIT_EXCEEDED: ErrorInfo(
+        code="RATE_LIMIT_EXCEEDED",
+        http_status=429,
+        message="Trial rate limit exceeded",
+        user_hint="You've reached the trial's limit of 5 simplifications per hour. Please try again later.",
+        retryable=True,
     ),
 }
 

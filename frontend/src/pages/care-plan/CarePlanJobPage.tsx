@@ -93,6 +93,12 @@ export default function CarePlanJobPage() {
       alert('Pop-up blocked. Please allow pop-ups to download the report.');
       return;
     }
+    // Defense-in-depth: printWindow keeps a `window.opener` handle back into
+    // this tab even though we can't pass the 'noopener' feature (that would
+    // make window.open return null, and we need the handle for
+    // document.write). Null it out so injected markup in `html` can't reach
+    // back into this tab's storage/auth via window.opener.
+    printWindow.opener = null;
     printWindow.document.write(html);
     printWindow.document.close();
     setTimeout(() => printWindow.print(), 500);

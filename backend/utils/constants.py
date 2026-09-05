@@ -16,11 +16,18 @@ class Constants:
         CARE_PLAN_VERSION: str = "1.2"
 
     class Uploads:
-        ALLOWED_EXTENSIONS: frozenset[str] = frozenset({"pdf", "txt", "docx", "html", "htm"})
-        MAX_FILE_BYTES: int = 10 * 1024 * 1024
-        MAX_FILE_COUNT: int = 10
+        IMAGE_EXTENSIONS: frozenset[str] = frozenset({"png", "jpg", "jpeg", "webp", "heic"})
+        ALLOWED_EXTENSIONS: frozenset[str] = frozenset(
+            {"pdf", "txt", "docx", "html", "htm"} | IMAGE_EXTENSIONS
+        )
+        MAX_FILE_BYTES: int = 10 * 1024 * 1024        # unchanged, PRD §4.7
+        MAX_FILE_COUNT: int = 10                       # unchanged
         MAX_AGGREGATE_FILE_BYTES: int = 25 * 1024 * 1024
         UPLOAD_PREFIX: str = "care_plan-uploads"
+        MAX_TEXT_LENGTH: int = 100_000                # server-side mirror of the
+                                                        # frontend paste cap; enforced
+                                                        # in both _resolve_trial_input
+                                                        # and _resolve_input_for_job.
 
     class Pipeline:
         PIPELINE_VERSION_V1_2: str = "v1-2"
@@ -52,6 +59,21 @@ class Constants:
     class Batch:
         MAX_BATCH_RUNS: int = 50
 
+    class Trial:
+        MAX_FILE_COUNT: int = 5
+        RATE_LIMIT_PER_IP_PER_HOUR: int = 5
+        RATE_LIMIT_COLLECTION: str = "trial_rate_limits"
+        RATE_LIMIT_COUNTER_TTL_HOURS: int = 2
+        JOB_TTL_HOURS: int = 1
+        # Number of trusted reverse-proxy hops between the public internet and
+        # this container -- i.e. how many IPs are Google-appended to the RIGHT
+        # end of X-Forwarded-For before the request reaches Flask. See the
+        # topology note on utils.rate_limit.get_client_ip for why this is 1
+        # today (direct Cloud Run, no external Load Balancer) and when it
+        # would need to change. Overridable via TRIAL_TRUSTED_PROXY_HOPS so a
+        # future topology change doesn't require a code change.
+        TRUSTED_PROXY_HOPS: int = 1
+
     class Deadlines:
         SINGLE_JOB_INTERNAL_DEADLINE_S: int = 270
         BATCH_ITEM_INTERNAL_DEADLINE_S: int = 870
@@ -64,6 +86,21 @@ class Constants:
         MAX_TOKENS_LONG_FORM: int = 65536
         TEMPERATURE_TEXT: float = 0.3
         TEMPERATURE_JSON: float = 0.2
+        IMAGE_OCR_PROMPT: str = (
+            "You are extracting clinical text from a photographed or scanned medical "
+            "document image.\n\n"
+            "Transcribe ALL visible text from the image exactly as written, preserving:\n"
+            "- Section headers and structure, as plain text (no markdown, no HTML)\n"
+            "- Medication names, dosages, frequencies, and instructions verbatim\n"
+            "- Dates, numbers, units, and clinician/patient names exactly as they appear\n"
+            "- Line breaks between distinct sections, list items, or table rows\n\n"
+            "Do not summarize, interpret, correct, or add any text that is not visibly "
+            "present in the image. Do not describe the image (for example, never write "
+            "\"this is a photo of...\"). Output ONLY the transcribed text.\n\n"
+            "If the image contains no legible text at all (blank, illegibly blurry, or a "
+            "non-document photo), respond with exactly this token and nothing else:\n"
+            "NO_TEXT_FOUND"
+        )
 
     class Athena:
         BASE_URL: str = "https://api.preview.platform.athenahealth.com"
@@ -181,6 +218,7 @@ class Constants:
         PORT: str = "PORT"
         FLASK_ENV: str = "FLASK_ENV"
         JUNO_MODE: str = "JUNO_MODE"
+        TRIAL_TRUSTED_PROXY_HOPS: str = "TRIAL_TRUSTED_PROXY_HOPS"
 
     class Observability:
         SERVICE_NAME_DEFAULT: str = "backend-processing"

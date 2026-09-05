@@ -10,6 +10,7 @@ from pathlib import Path
 
 from utils.constants import Constants
 from utils.gcs import get_gcs_bucket
+from utils.image_ocr import extract_text_from_image
 from utils.misc import extract_text_from_html, source_separator, text_artifact_filename
 from utils.pdf import merge_pdfs, extract_text_from_pdf
 from models.input import ResolvedInput
@@ -18,14 +19,17 @@ from errors import ErrorCode, JunoError
 logger = logging.getLogger(__name__)
 
 
-def upload_combined_pdf(pdf_bytes: bytes, user_id: str) -> str:
-    """Upload combined input PDF bytes and return a gs:// URI."""
+def upload_combined_pdf(pdf_bytes: bytes, user_id: str, *, is_trial: bool = False) -> str:
+    """Upload combined input PDF bytes and return a gs:// URI. is_trial routes to a
+    visually distinct prefix (care_plan_trial/) so a GCS lifecycle rule can safely
+    target only trial uploads — see 05-retention-automation/PRD.md §4.10/§9 Q3."""
     bucket_name = os.environ.get(Constants.Storage.GCS_BUCKET_ENV_VAR, "")
     if not bucket_name:
         raise RuntimeError("GCP_BUCKET_NAME is not configured")
 
     object_id = str(uuid.uuid4())
-    blob_name = f"care_plan/{user_id}/inputs/{object_id}.pdf"
+    prefix = "care_plan_trial" if is_trial else "care_plan"
+    blob_name = f"{prefix}/{user_id}/inputs/{object_id}.pdf"
 
     bucket = get_gcs_bucket(bucket_name)
     blob = bucket.blob(blob_name)
@@ -50,7 +54,7 @@ def is_allowed_extension(filename: str) -> bool:
 
 
 def extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
-    """Extract plain text from PDF, TXT, DOCX, or HTML bytes."""
+    """Extract plain text from PDF, TXT, DOCX, HTML, or image bytes."""
     ext = _get_extension(filename)
 
     if not ext:
@@ -76,6 +80,9 @@ def extract_text_from_bytes(file_bytes: bytes, filename: str) -> str:
     if ext in {"html", "htm"}:
         return extract_text_from_html(file_bytes)
 
+    if ext in Constants.Uploads.IMAGE_EXTENSIONS:
+        return extract_text_from_image(file_bytes, ext)
+
     raise JunoError(ErrorCode.UNSUPPORTED_FILE_TYPE, detail=f"extension: {ext}")
 
 
@@ -94,7 +101,7 @@ def resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
     for upload in files:
         filename = upload.filename
         if not is_allowed_extension(filename):
-            raise ValueError("File must be PDF, TXT, DOCX, or HTML")
+            raise ValueError("File must be PDF, TXT, DOCX, HTML, or an image (PNG/JPG/WEBP/HEIC)")
 
         file_bytes = upload.read()
         if len(file_bytes) > Constants.Uploads.MAX_FILE_BYTES:
@@ -109,7 +116,7 @@ def resolve_uploaded_files(uploads) -> tuple[ResolvedInput, bytes | None]:
         text_parts.append(f"{source_separator(filename)}{extracted_text.strip()}")
 
         ext = _get_extension(filename)
-        if ext in {"pdf", "txt"}:
+        if ext in {"pdf", "txt"} or ext in Constants.Uploads.IMAGE_EXTENSIONS:
             merge_candidates.append((file_bytes, filename))
         elif ext in {"docx", "html", "htm"} and extracted_text.strip():
             merge_candidates.append(

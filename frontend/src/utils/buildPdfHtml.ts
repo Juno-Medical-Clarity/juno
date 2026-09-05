@@ -62,7 +62,7 @@ export function buildPdfHtml(result: SimplifiedCarePlan, grading?: Grading): str
         <strong>${escapeHtml(t.plain_name ? `${t.plain_name} (${t.title})` : t.title)}</strong>
         ${t.why ? `<br><span style="color:#1D4ED8;font-size:13px;">Why: ${escapeHtml(t.why)}</span>` : ''}
         ${t.description ? `<br><span style="color:#6B7280;font-size:13px;">${escapeHtml(t.description)}</span>` : ''}
-        ${t.preparation ? `<p><strong>Preparation:</strong> ${t.preparation}</p>` : ''}
+        ${t.preparation ? `<p><strong>Preparation:</strong> ${escapeHtml(t.preparation)}</p>` : ''}
       </div>`,
     ).join('');
     sections.push(`${h2('Tests')}${items}`);

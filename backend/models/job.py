@@ -73,6 +73,10 @@ class JobDoc(JsonModel):
     comment: Optional[str] = None
     trace_id: Optional[str] = None
 
+    # ── Trial (SP2) ───────────────────────────────────────────────────────
+    is_trial: bool = False
+    expires_at: Optional[datetime] = None
+
     # ── Factories ─────────────────────────────────────────────────────────
 
     @classmethod
@@ -156,6 +160,8 @@ class JobDoc(JsonModel):
         now: datetime,
         trace_id: Optional[str],
         input_fields: dict,
+        is_trial: bool = False,
+        expires_at: Optional[datetime] = None,
     ) -> "JobDoc":
         """Build a job doc for a single (non-batch) care-plan job.
 
@@ -174,6 +180,8 @@ class JobDoc(JsonModel):
             shared=False,
             comment="",
             trace_id=trace_id,
+            is_trial=is_trial,
+            expires_at=expires_at,
             **input_fields,
         )
 

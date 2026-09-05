@@ -126,6 +126,19 @@ describe('buildPdfHtml', () => {
     expect(emergencyIdx).toBeLessThan(monitorIdx);
   });
 
+  it('escapes markup in a test\'s preparation field (stored XSS regression)', () => {
+    const html = buildPdfHtml(makeMinimalPlan({
+      tests: [{
+        title: 'Blood test',
+        description: 'Checks blood sugar',
+        preparation: '<img src=x onerror=alert(1)>Fast for 8 hours',
+        importance: 'high',
+      }],
+    }));
+    expect(html).not.toContain('<img src=x onerror=alert(1)>');
+    expect(html).toContain('&lt;img src=x onerror=alert(1)&gt;Fast for 8 hours');
+  });
+
   it('includes glossary section when terms are provided', () => {
     const html = buildPdfHtml(makeMinimalPlan({
       terms: { hypertension: { definition: 'High blood pressure', source: 'medical', imgUrl: null, altText: null } },

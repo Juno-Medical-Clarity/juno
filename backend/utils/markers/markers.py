@@ -58,6 +58,13 @@ class Markers:
         @code_marker("batch.create_single_job")
         class CreateSingleJob(CodeMarker): pass
 
+    class Trial:
+        @code_marker("trial.create_job")
+        class CreateJob(CodeMarker): pass
+
+        @code_marker("trial.delete_job")
+        class DeleteJob(CodeMarker): pass
+
     class Worker:
         @code_marker("worker.job_execute")
         class JobExecute(CodeMarker): pass
@@ -87,3 +94,7 @@ class Markers:
     class Firestore:
         @code_marker("firestore.job_write")
         class JobWrite(CodeMarker): pass
+
+    class Retention:
+        @code_marker("retention.anon_user_cleanup")
+        class AnonUserCleanup(CodeMarker): pass

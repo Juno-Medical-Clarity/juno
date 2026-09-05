@@ -153,6 +153,53 @@ def test_x_trace_id_cors_exposed():
     assert True  # Import succeeded; CORS config is exercised
 
 
+def test_cors_allows_trial_preview_channel_origin():
+    """Firebase Hosting preview-channel origins for the trial site (created by
+    .github/workflows/preview.yml, e.g. pr-12-abc123de) must be allowed by CORS."""
+    client = _make_app_client()
+    response = client.open(
+        "/health",
+        method="OPTIONS",
+        headers={
+            "Origin": "https://juno-medical-clarity--pr-12-abc123de.web.app",
+            "Access-Control-Request-Method": "GET",
+            "Access-Control-Request-Headers": "content-type",
+        },
+    )
+    assert response.status_code == 200, response.status_code
+    assert (
+        response.headers.get("Access-Control-Allow-Origin")
+        == "https://juno-medical-clarity--pr-12-abc123de.web.app"
+    )
+
+
+@pytest.mark.parametrize(
+    "hostile_origin",
+    [
+        # Subdomain of an attacker-controlled domain, not *.web.app at all.
+        "https://juno-medical-clarity--evil.attacker.com",
+        # Prefixed lookalike — real suffix is *-juno-medical-clarity--x.web.app,
+        # which must NOT match a regex anchored with ^ at the start.
+        "https://evil-juno-medical-clarity--x.web.app",
+    ],
+)
+def test_cors_rejects_preview_channel_lookalike_origins(hostile_origin):
+    """Hostile origins that merely resemble a trial preview-channel URL must
+    be rejected — the regex is anchored at both ends and scoped to the
+    juno-medical-clarity site's own *.web.app preview channels only."""
+    client = _make_app_client()
+    response = client.open(
+        "/health",
+        method="OPTIONS",
+        headers={
+            "Origin": hostile_origin,
+            "Access-Control-Request-Method": "GET",
+            "Access-Control-Request-Headers": "content-type",
+        },
+    )
+    assert "Access-Control-Allow-Origin" not in response.headers
+
+
 def test_request_start_signal_logged(monkeypatch, caplog):
     """A non-/health request must log a start-of-request signal from
     before_request, independent of the after_request completion marker

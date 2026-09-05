@@ -1,0 +1,162 @@
+"""backend/routes/trial.py — POST /trial/jobs, DELETE /trial/jobs/<job_id>.
+
+Thin, additive trial surface. Delegates to the same input-resolution and
+job-creation helpers as care_plan_jobs.py (resolve_uploaded_files,
+upload_combined_pdf, JobDoc, create_job_doc, enqueue_job_safe) — forks nothing
+from the pipeline itself. Rate-limited and retention-scoped; auth uses the same
+verify_firebase_token decorator as every other route, with allow_anonymous=True
+opted in explicitly here — these are the only two routes in the app that accept
+an anonymous Firebase token (see utils/firebase.py).
+"""
+import logging
+import uuid
+from datetime import datetime, timezone, timedelta
+
+from flask import Blueprint, jsonify, request
+
+from models.job import JobDoc
+from utils.firebase import create_job_doc, verify_firebase_token, firestore_client
+from utils.cloud_tasks import enqueue_job_safe, require_env, MissingJobConfigError
+from utils.rate_limit import rate_limit_trial
+from utils.gcs import delete_gcs_object
+from utils.constants import Constants
+from services.care_plan_input import resolve_uploaded_files, upload_combined_pdf
+from utils.markers.markers import Markers
+from utils.markers.marker import Scope
+from errors import make_error_response, ErrorCode, JunoError
+
+logger = logging.getLogger(__name__)
+trial_bp = Blueprint("trial", __name__)
+
+
+def _resolve_trial_input(user_id: str) -> dict:
+    """Trial-scoped fork of care_plan_jobs._resolve_input_for_job: text or
+    <=5 files only (no doc_id — trial has no login, so no prior upload to
+    reference). grading_enabled/version are pinned, never client-settable."""
+    json_data = request.get_json(silent=True) or {}
+    text_input = (request.form.get("text") or json_data.get("text") or "").strip()
+    if text_input:
+        if len(text_input) > Constants.Uploads.MAX_TEXT_LENGTH:
+            raise ValueError(
+                f"Text input exceeds {Constants.Uploads.MAX_TEXT_LENGTH} character limit"
+            )
+        return {
+            "input_source_kind": "text",
+            "input_text": text_input,
+            "input_doc_id": None,
+            "input_source_filename": "text_input",
+            "input_pdf_gcs_uri": None,
+            "input_version": Constants.Pipeline.PIPELINE_VERSION_V1_2,
+            "grading_enabled": True,
+        }
+
+    uploads = request.files.getlist("files")
+    if not uploads:
+        raise ValueError("Request must include 'files' or 'text'")
+    if len(uploads) > Constants.Trial.MAX_FILE_COUNT:
+        raise ValueError(f"Trial supports at most {Constants.Trial.MAX_FILE_COUNT} files")
+
+    # Unchanged: still enforces MAX_FILE_BYTES / MAX_AGGREGATE_FILE_BYTES /
+    # ALLOWED_EXTENSIONS exactly as the main app does (main-app behavior untouched).
+    resolved, raw_pdf_bytes = resolve_uploaded_files(uploads)
+    pdf_gcs_uri = upload_combined_pdf(raw_pdf_bytes, user_id, is_trial=True) if raw_pdf_bytes else None
+    return {
+        "input_source_kind": "upload",
+        "input_text": resolved.text,
+        "input_doc_id": None,
+        "input_source_filename": resolved.source_filename,
+        "input_pdf_gcs_uri": pdf_gcs_uri,
+        "input_version": Constants.Pipeline.PIPELINE_VERSION_V1_2,
+        "grading_enabled": True,
+    }
+
+
+@trial_bp.route("/trial/jobs", methods=["POST"])
+@rate_limit_trial          # outermost: runs before auth, keyed on IP only (§4.4)
+@verify_firebase_token(allow_anonymous=True)   # trial callers are anonymous by design
+def create_trial_job(user_id: str):
+    def _handler(scope: Scope):
+        try:
+            try:
+                input_fields = _resolve_trial_input(user_id)
+            except (ValueError, FileNotFoundError) as exc:
+                return make_error_response(
+                    ErrorCode.INPUT_VALIDATION_ERROR, request.path,
+                    {"field": "input", "reason": str(exc)},
+                ).to_dict(), 400
+            except JunoError as exc:
+                # e.g. EMPTY_DOCUMENT from image OCR finding no text — a known,
+                # already-classified failure. Use its own error_code/http_status
+                # rather than letting it fall through to the generic 500 below.
+                return make_error_response(exc.error_code, request.path).to_dict(), exc.info.http_status
+
+            # Validate Cloud Tasks config BEFORE writing anything to Firestore —
+            # unlike POST /care_plan/jobs, this route never orphans a doc (§9 Q9).
+            try:
+                queue_name = require_env("CLOUD_TASKS_QUEUE_TRIAL")
+                worker_url = require_env("WORKER_URL")
+                service_account = require_env("WORKER_SERVICE_ACCOUNT")
+            except MissingJobConfigError:
+                logger.exception("trial: missing Cloud Tasks config; refusing job")
+                return make_error_response(ErrorCode.INTERNAL_ERROR, request.path).to_dict(), 500
+
+            job_id = str(uuid.uuid4())
+            now = datetime.now(timezone.utc)
+            job_doc = JobDoc.for_single(
+                user_id=user_id, now=now, trace_id=None, input_fields=input_fields,
+                is_trial=True,
+                expires_at=now + timedelta(hours=Constants.Trial.JOB_TTL_HOURS),
+            )
+            create_job_doc(user_id=user_id, job_id=job_id, payload=job_doc.to_firestore())
+
+            if err := enqueue_job_safe(
+                job_id, queue_name=queue_name, worker_url=worker_url,
+                service_account=service_account,
+                deadline_seconds=Constants.Deadlines.JOB_TIMEOUT_SECONDS_SINGLE,
+                path=request.path,
+            ):
+                return err
+
+            return jsonify({"job_id": job_id}), 202
+        except Exception:
+            logger.exception("create_trial_job: unexpected error")
+            return make_error_response(ErrorCode.INTERNAL_ERROR, request.path).to_dict(), 500
+
+    return Markers.Trial.CreateJob.execute(_handler)
+
+
+@trial_bp.route("/trial/jobs/<job_id>", methods=["DELETE"])
+@verify_firebase_token(allow_anonymous=True)      # NOT rate-limited — see §9 Q2; trial callers are anonymous by design
+def delete_trial_job(job_id: str, user_id: str):
+    def _handler(scope: Scope):
+        try:
+            db = firestore_client()
+            ref = db.collection("care_plan_outputs").document(job_id)
+            doc = ref.get()
+            if not doc.exists:
+                return make_error_response(
+                    ErrorCode.RESOURCE_NOT_FOUND, request.path,
+                    {"collection": "care_plan_outputs", "doc_id": job_id},
+                ).to_dict(), 404
+
+            data = doc.to_dict()
+            # Both checks required: ownership AND is_trial. A trial-scoped delete
+            # must never be usable to delete a main-app (non-trial) doc, even if
+            # uid happens to match.
+            if data.get("uid") != user_id or not data.get("is_trial"):
+                return make_error_response(
+                    ErrorCode.RESOURCE_FORBIDDEN, request.path,
+                    {"collection": "care_plan_outputs", "doc_id": job_id},
+                ).to_dict(), 403
+
+            gcs_uri = data.get("input_pdf_gcs_uri")
+            if gcs_uri:
+                delete_gcs_object(gcs_uri)  # best-effort; logs+swallows, never raises
+
+            ref.delete()
+            return "", 204
+        except Exception:
+            logger.exception("delete_trial_job: unexpected error for job_id=%s", job_id)
+            return make_error_response(ErrorCode.INTERNAL_ERROR, request.path).to_dict(), 500
+
+    return Markers.Trial.DeleteJob.execute(_handler)

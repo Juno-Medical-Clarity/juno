@@ -248,3 +248,30 @@ def test_unhandled_exception_returns_500_json(
     body = resp.get_json()
     assert body is not None, "Response must be JSON, not HTML"
     assert body["error"]["code"] == "INTERNAL_ERROR"
+
+
+# ---------------------------------------------------------------------------
+# Anonymous callers (Finding 1) — POST /care_plan/batch/jobs is a second,
+# independent non-trial authenticated route confirming the deny-by-default
+# mechanism generalizes beyond /care_plan/jobs.
+# ---------------------------------------------------------------------------
+
+@pytest.fixture
+def auth_anonymous(monkeypatch):
+    monkeypatch.setattr(
+        "utils.firebase.auth.verify_id_token",
+        lambda *a, **k: {"uid": "anon-1", "firebase": {"sign_in_provider": "anonymous", "identities": {}}},
+    )
+    return {"Authorization": "Bearer anon-token"}
+
+
+@patch("routes.batch_jobs.create_job_doc")
+def test_post_anonymous_token_returns_403(mock_create_doc, client_batch_jobs, auth_anonymous):
+    resp = client_batch_jobs.post(
+        "/care_plan/batch/jobs",
+        json={"selections": VALID_SELECTIONS, "version": "v1-2"},
+        headers=auth_anonymous,
+    )
+    assert resp.status_code == 403
+    assert resp.get_json()["error"]["code"] == "ANONYMOUS_ACCESS_FORBIDDEN"
+    mock_create_doc.assert_not_called()

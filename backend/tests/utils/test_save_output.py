@@ -84,3 +84,20 @@ def test_upload_combined_pdf_uses_care_plan_gcs_path(get_gcs_bucket, uuid4):
     blob.upload_from_string.assert_called_once_with(
         b"%PDF", content_type="application/pdf"
     )
+
+
+@patch.dict("services.care_plan_input.os.environ", {"GCP_BUCKET_NAME": "bucket", "GCP_PROJECT_ID": "project"})
+@patch("services.care_plan_input.uuid.uuid4")
+@patch("services.care_plan_input.get_gcs_bucket")
+def test_upload_combined_pdf_is_trial_uses_trial_gcs_path(get_gcs_bucket, uuid4):
+    from services.care_plan_input import upload_combined_pdf
+
+    uuid4.return_value = "input-789"
+    blob = MagicMock()
+    bucket = get_gcs_bucket.return_value
+    bucket.blob.return_value = blob
+
+    uri = upload_combined_pdf(b"%PDF", "user-1", is_trial=True)
+
+    assert uri == "gs://bucket/care_plan_trial/user-1/inputs/input-789.pdf"
+    bucket.blob.assert_called_once_with("care_plan_trial/user-1/inputs/input-789.pdf")
