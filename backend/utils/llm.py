@@ -22,6 +22,7 @@ from vertexai.preview.generative_models import (
     GenerativeModel,
     HarmBlockThreshold,
     HarmCategory,
+    Part,
 )
 
 from errors import ErrorCode, JunoError, VertexAPIError, classify_finish_reason
@@ -57,11 +58,14 @@ class LLMClient:
         self._VertexGenerationConfig = VertexGenerationConfig
         logger.info("LLMClient: using Vertex AI")
 
-    def generate_text(self, prompt: str, temperature: float = Constants.Llm.TEMPERATURE_TEXT, max_tokens: int = Constants.Llm.MAX_TOKENS) -> str:
-        """Generate text from a prompt. Returns the text string directly."""
+    def _generate_content(self, contents, temperature: float, max_tokens: int) -> str:
+        """Shared Vertex call + response handling for both text-only and
+        multimodal (image + prompt) generation. `contents` is passed straight
+        through to GenerativeModel.generate_content, which accepts a bare str
+        or a list of [Part, str, ...]."""
         try:
             response = self._model.generate_content(
-                prompt,
+                contents,
                 generation_config=self._VertexGenerationConfig(
                     temperature=temperature,
                     max_output_tokens=max_tokens,
@@ -112,6 +116,23 @@ class LLMClient:
             )
 
         return response.text.strip()
+
+    def generate_text(self, prompt: str, temperature: float = Constants.Llm.TEMPERATURE_TEXT, max_tokens: int = Constants.Llm.MAX_TOKENS) -> str:
+        """Generate text from a prompt. Returns the text string directly."""
+        return self._generate_content(prompt, temperature, max_tokens)
+
+    def generate_text_from_image(
+        self,
+        image_bytes: bytes,
+        mime_type: str,
+        prompt: str,
+        temperature: float = Constants.Llm.TEMPERATURE_TEXT,
+        max_tokens: int = Constants.Llm.MAX_TOKENS,
+    ) -> str:
+        """Generate text from an image + instruction prompt (Gemini vision).
+        Shares all response/error handling with generate_text via _generate_content."""
+        part = Part.from_data(data=image_bytes, mime_type=mime_type)
+        return self._generate_content([part, prompt], temperature, max_tokens)
 
     def generate_json(self, prompt: str, temperature: float = Constants.Llm.TEMPERATURE_JSON, max_tokens: int = Constants.Llm.MAX_TOKENS) -> dict | list:
         """Generate JSON from a prompt. Strips markdown fences and parses JSON."""
