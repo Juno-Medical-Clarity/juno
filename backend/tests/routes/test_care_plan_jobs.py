@@ -4,6 +4,8 @@ import pytest
 from unittest.mock import patch
 from flask import Flask
 
+from errors import ErrorCode, JunoError
+
 # A minimal, valid 1x1 PNG (no network, no fixture file needed).
 _ONE_PX_PNG = bytes.fromhex(
     "89504e470d0a1a0a0000000d494844520000000100000001080600000"
@@ -167,6 +169,39 @@ def test_create_care_plan_job_accepts_image_upload(
     mock_create_doc.assert_called_once()
     payload = mock_create_doc.call_args.kwargs["payload"]
     assert "OCR'd image text" in payload["input_text"]
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+@patch(
+    "services.care_plan_input.extract_text_from_image",
+    side_effect=JunoError(
+        ErrorCode.EMPTY_DOCUMENT,
+        detail="Image contained no readable text (model returned NO_TEXT_FOUND).",
+    ),
+)
+def test_create_care_plan_job_blurry_image_returns_422_empty_document(
+    mock_extract_image, mock_create_doc, mock_enqueue, client_jobs, auth_ok
+):
+    """Regression test: extract_text_from_image raising JunoError(EMPTY_DOCUMENT)
+    for an unreadable/blurry image must surface as 422 EMPTY_DOCUMENT, not fall
+    through the generic `except Exception` to a 500 INTERNAL_ERROR."""
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        data={"files": (io.BytesIO(_ONE_PX_PNG), "photo.png")},
+        content_type="multipart/form-data",
+        headers=auth_ok,
+    )
+    assert resp.status_code == 422
+    body = resp.get_json()
+    assert body["error"]["code"] == "EMPTY_DOCUMENT"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
 
 
 @patch.dict("os.environ", {

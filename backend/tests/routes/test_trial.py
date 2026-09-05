@@ -5,6 +5,8 @@ from io import BytesIO
 from unittest.mock import patch, MagicMock
 from flask import Flask
 
+from errors import ErrorCode, JunoError
+
 
 TRIAL_ENV = {
     "CLOUD_TASKS_QUEUE_TRIAL": "trial-queue",
@@ -83,6 +85,34 @@ def test_post_multipart_upload_within_limit_returns_202(
     mock_create_doc.assert_called_once()
     payload = mock_create_doc.call_args.kwargs["payload"]
     assert payload["input_pdf_gcs_uri"].startswith("gs://test-bucket/care_plan_trial/")
+
+
+@patch.dict("os.environ", {**TRIAL_ENV, "GCP_BUCKET_NAME": "test-bucket"})
+@patch("services.care_plan_input.get_gcs_bucket")
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+@patch(
+    "services.care_plan_input.extract_text_from_image",
+    side_effect=JunoError(
+        ErrorCode.EMPTY_DOCUMENT,
+        detail="Image contained no readable text (model returned NO_TEXT_FOUND).",
+    ),
+)
+def test_post_blurry_image_returns_422_empty_document(
+    mock_extract_image, mock_create_doc, mock_enqueue, mock_get_gcs_bucket, client_trial, auth_ok
+):
+    """Regression test: extract_text_from_image raising JunoError(EMPTY_DOCUMENT)
+    for an unreadable/blurry image must surface as 422 EMPTY_DOCUMENT, not fall
+    through the generic `except Exception` to a 500 INTERNAL_ERROR."""
+    data = {"files": (BytesIO(b"fake-jpeg-bytes"), "photo.jpg")}
+    resp = client_trial.post(
+        "/trial/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
+    )
+    assert resp.status_code == 422
+    body = resp.get_json()
+    assert body["error"]["code"] == "EMPTY_DOCUMENT"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
 
 
 @patch.dict("os.environ", TRIAL_ENV)

@@ -20,7 +20,7 @@ from services.care_plan_input import (
     is_allowed_extension,
 )
 from utils.constants import Constants
-from errors import make_error_response, ErrorCode
+from errors import make_error_response, ErrorCode, JunoError
 
 logger = logging.getLogger(__name__)
 care_plan_jobs_bp = Blueprint("care_plan_jobs", __name__)
@@ -107,6 +107,11 @@ def create_care_plan_job(user_id: str):
                     request.path,
                     {"field": "input", "reason": str(exc)},
                 ).to_dict(), 400
+            except JunoError as exc:
+                # e.g. EMPTY_DOCUMENT from image OCR finding no text — a known,
+                # already-classified failure. Use its own error_code/http_status
+                # rather than letting it fall through to the generic 500 below.
+                return make_error_response(exc.error_code, request.path).to_dict(), exc.info.http_status
 
             scope.add_many({
                 "grading_enabled": input_fields.get("grading_enabled"),

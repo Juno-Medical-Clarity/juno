@@ -21,7 +21,7 @@ from utils.constants import Constants
 from services.care_plan_input import resolve_uploaded_files, upload_combined_pdf
 from utils.markers.markers import Markers
 from utils.markers.marker import Scope
-from errors import make_error_response, ErrorCode
+from errors import make_error_response, ErrorCode, JunoError
 
 logger = logging.getLogger(__name__)
 trial_bp = Blueprint("trial", __name__)
@@ -78,6 +78,11 @@ def create_trial_job(user_id: str):
                     ErrorCode.INPUT_VALIDATION_ERROR, request.path,
                     {"field": "input", "reason": str(exc)},
                 ).to_dict(), 400
+            except JunoError as exc:
+                # e.g. EMPTY_DOCUMENT from image OCR finding no text — a known,
+                # already-classified failure. Use its own error_code/http_status
+                # rather than letting it fall through to the generic 500 below.
+                return make_error_response(exc.error_code, request.path).to_dict(), exc.info.http_status
 
             # Validate Cloud Tasks config BEFORE writing anything to Firestore —
             # unlike POST /care_plan/jobs, this route never orphans a doc (§9 Q9).
