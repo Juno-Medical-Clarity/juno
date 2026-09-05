@@ -253,3 +253,45 @@ def test_health_check_skips_http_marker(monkeypatch):
     assert http_request_events == [], (
         f"Expected no http.request marker for /health, got: {http_request_events}"
     )
+
+
+# ---------------------------------------------------------------------------
+# MAX_CONTENT_LENGTH / 413 handler (edge-case review, item A upstream-413 check)
+# ---------------------------------------------------------------------------
+
+def test_max_content_length_is_configured():
+    """A global body-size cap must be configured -- otherwise Flask/Werkzeug
+    never raises 413 on its own, so an oversized request is fully buffered
+    into memory before any of our own per-route checks run."""
+    client = _make_app_client()
+    assert client.application.config.get("MAX_CONTENT_LENGTH")
+
+
+def test_oversized_body_returns_standard_json_error_envelope_not_raw_413(monkeypatch):
+    """A request over MAX_CONTENT_LENGTH must get our standard JSON error
+    envelope (via the @app.errorhandler(413) handler), not Werkzeug's
+    default HTML error page.
+
+    Auth is patched through (rather than hitting the 401 auth gate first) so
+    the route handler actually attempts to read the body -- Werkzeug only
+    enforces MAX_CONTENT_LENGTH lazily, when something reads the request
+    stream (e.g. request.get_json()/request.form), not automatically before
+    view dispatch.
+    """
+    client = _make_app_client()
+    monkeypatch.setattr("utils.firebase.auth.verify_id_token", lambda *a, **k: {"uid": "user-1"})
+
+    limit = client.application.config["MAX_CONTENT_LENGTH"]
+    oversized_body = b"x" * (limit + 1)
+
+    response = client.post(
+        "/care_plan/jobs",
+        data=oversized_body,
+        content_type="application/octet-stream",
+        headers={"Authorization": "Bearer test-token"},
+    )
+
+    assert response.status_code == 413
+    body = response.get_json()
+    assert body is not None
+    assert body["error"]["code"] == "FILE_TOO_LARGE"

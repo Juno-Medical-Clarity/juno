@@ -77,7 +77,9 @@ def test_post_multipart_upload_within_limit_returns_202(
     bucket = mock_get_gcs_bucket.return_value
     bucket.blob.return_value = MagicMock()
 
-    data = {"files": (BytesIO(b"hello world"), "note.txt")}
+    # Content must clear MIN_MEANINGFUL_CONTENT_CHARS (20) -- "hello world"
+    # alone (11 chars) would now be treated as not-really-a-document (Finding 2).
+    data = {"files": (BytesIO(b"hello world, this is a real clinical note"), "note.txt")}
     resp = client_trial.post(
         "/trial/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
     )
@@ -85,6 +87,58 @@ def test_post_multipart_upload_within_limit_returns_202(
     mock_create_doc.assert_called_once()
     payload = mock_create_doc.call_args.kwargs["payload"]
     assert payload["input_pdf_gcs_uri"].startswith("gs://test-bucket/care_plan_trial/")
+
+
+@patch.dict("os.environ", {**TRIAL_ENV, "GCP_BUCKET_NAME": "test-bucket"})
+@patch("services.care_plan_input.get_gcs_bucket")
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+def test_post_multipart_one_blank_file_among_several_still_succeeds(
+    mock_create_doc, mock_enqueue, mock_get_gcs_bucket, client_trial, auth_ok
+):
+    """Regression for Finding 8: one unusable file (here, a blank txt) among
+    several must NOT abort the whole trial submission -- the good file's
+    text is used and the request still succeeds."""
+    bucket = mock_get_gcs_bucket.return_value
+    bucket.blob.return_value = MagicMock()
+
+    data = {
+        "files": [
+            (BytesIO(b"This is a perfectly good clinical note about hypertension."), "good.txt"),
+            (BytesIO(b"   "), "blank.txt"),
+        ]
+    }
+    resp = client_trial.post(
+        "/trial/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
+    )
+    assert resp.status_code == 202
+    mock_create_doc.assert_called_once()
+    payload = mock_create_doc.call_args.kwargs["payload"]
+    assert "perfectly good clinical note" in payload["input_text"]
+
+
+@patch.dict("os.environ", {**TRIAL_ENV, "GCP_BUCKET_NAME": "test-bucket"})
+@patch("services.care_plan_input.get_gcs_bucket")
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+def test_post_multipart_all_files_blank_returns_422_empty_document(
+    mock_create_doc, mock_enqueue, mock_get_gcs_bucket, client_trial, auth_ok
+):
+    """Only when NO file yields usable content does the request fail
+    (Finding 8's flip side -- tolerance must not silently accept an
+    all-unusable batch)."""
+    data = {
+        "files": [
+            (BytesIO(b"   "), "blank1.txt"),
+            (BytesIO(b""), "blank2.txt"),
+        ]
+    }
+    resp = client_trial.post(
+        "/trial/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
+    )
+    assert resp.status_code == 422
+    assert resp.get_json()["error"]["code"] == "EMPTY_DOCUMENT"
+    mock_create_doc.assert_not_called()
 
 
 @patch.dict("os.environ", {**TRIAL_ENV, "GCP_BUCKET_NAME": "test-bucket"})
@@ -301,7 +355,9 @@ def test_post_anonymous_token_accepted_on_trial_jobs(mock_create_doc, mock_enque
 @patch("routes.trial.create_job_doc")
 def test_post_text_at_max_length_is_accepted(mock_create_doc, mock_enqueue, client_trial, auth_ok):
     from utils.constants import Constants
-    text = "a" * Constants.Uploads.MAX_TEXT_LENGTH
+    # MAX_TEXT_BYTES (not MAX_TEXT_LENGTH) is the binding cap for ASCII text
+    # (1 byte/char) -- see Finding 1.
+    text = "a" * Constants.Uploads.MAX_TEXT_BYTES
     resp = client_trial.post("/trial/jobs", json={"text": text}, headers=auth_ok)
     assert resp.status_code == 202
     mock_create_doc.assert_called_once()
@@ -312,7 +368,29 @@ def test_post_text_at_max_length_is_accepted(mock_create_doc, mock_enqueue, clie
 @patch("routes.trial.create_job_doc")
 def test_post_text_over_max_length_returns_400(mock_create_doc, mock_enqueue, client_trial, auth_ok):
     from utils.constants import Constants
-    text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    text = "a" * (Constants.Uploads.MAX_TEXT_BYTES + 1)
+    resp = client_trial.post("/trial/jobs", json={"text": text}, headers=auth_ok)
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", TRIAL_ENV)
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+def test_post_cjk_text_under_char_cap_but_over_byte_cap_returns_400(
+    mock_create_doc, mock_enqueue, client_trial, auth_ok
+):
+    """Regression for edge-case review Finding 1: CJK text well under the
+    500,000-character cap (so the old char-only check would have let it
+    through) is 3 bytes/char in UTF-8 and so can exceed MAX_TEXT_BYTES --
+    must now be rejected with a clean 400, not an uncaught Firestore write
+    failure surfacing as an opaque 500."""
+    from utils.constants import Constants
+    char_count = (Constants.Uploads.MAX_TEXT_BYTES // 3) + 100
+    assert char_count < Constants.Uploads.MAX_TEXT_LENGTH
+    text = "中" * char_count
     resp = client_trial.post("/trial/jobs", json={"text": text}, headers=auth_ok)
     assert resp.status_code == 400
     assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
@@ -332,10 +410,33 @@ def test_post_uploaded_file_extracted_text_over_max_length_returns_400(
     misleading MAX_TOKENS error. Must now be rejected up front, before any
     job is created or enqueued -- the whole point of the fix."""
     from utils.constants import Constants
-    oversized_text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    oversized_text = "a" * (Constants.Uploads.MAX_TEXT_BYTES + 1)
     data = {"files": (BytesIO(oversized_text.encode("utf-8")), "note.txt")}
     resp = client_trial.post(
         "/trial/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
+    )
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
+
+
+# ---------------------------------------------------------------------------
+# Lone UTF-16 surrogate in pasted text (Finding 5)
+# ---------------------------------------------------------------------------
+
+@patch.dict("os.environ", TRIAL_ENV)
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+def test_post_text_with_lone_surrogate_returns_400_not_500(mock_create_doc, mock_enqueue, client_trial, auth_ok):
+    """Regression for Finding 5: {"text": "...\\ud800..."} decodes via
+    json.loads into a Python str containing an unpaired surrogate, which
+    can't be UTF-8 encoded. Must be rejected with a clean 400 before ever
+    reaching create_job_doc, not an uncaught UnicodeEncodeError -> 500."""
+    resp = client_trial.post(
+        "/trial/jobs",
+        data='{"text": "hello \\ud800 world"}',
+        headers={**auth_ok, "Content-Type": "application/json"},
     )
     assert resp.status_code == 400
     assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
