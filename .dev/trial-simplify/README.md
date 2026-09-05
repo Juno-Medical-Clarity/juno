@@ -18,8 +18,9 @@ plus legal pages, and retention automation (TTL + anonymous-user cleanup).
 ## Implementation status (as of 2026-09-05)
 
 SP1 (Image Input Support) and SP2 (Trial Backend Route, Rate Limiting & Retention) are
-**IMPLEMENTED** and merged into `users/tejitpabari/trial-app`. SP3-SP5 are not started;
-SP3 has no `TASKS.md` yet — run `/dev-tasks` for it before starting SP3. Run artifacts:
+**IMPLEMENTED** and merged into `users/tejitpabari/trial-app`. SP3-SP5 are not started, but
+each now has a generated `TASKS.md` (SP3: 20 tasks, SP4: 9 tasks, SP5: 7 tasks), ready for
+`/dev-code`. Run artifacts:
 [`01-image-input/code-2026-09-05-0554.md`](01-image-input/code-2026-09-05-0554.md),
 [`02-trial-backend/code-2026-09-05-0554.md`](02-trial-backend/code-2026-09-05-0554.md),
 [`review-2026-09-05-0554.md`](review-2026-09-05-0554.md).
@@ -94,13 +95,13 @@ Distilled from `brainstorm.md`'s decision log (D1–D11) plus items settled sinc
 
 ## Sub-Projects
 
-| SP # | Name | Phase | Scope (one line) | Depends On | PRD path |
-|------|------|-------|-------------------|------------|----------|
-| SP1 | Image Input Support | P1 | Add `png/jpg/jpeg/webp/heic` to the shared `ALLOWED_EXTENSIONS`; a Gemini-vision (Vertex) extraction path in `care_plan_input.py`; images embedded into the combined PDF. Benefits main app + trial. | None | `01-image-input/PRD.md` |
-| SP2 | Trial Backend Route, Rate Limiting & Retention | P1 | New `/trial` route family (`POST`/`DELETE /trial/jobs/<id>`) reusing existing job-creation helpers; Firestore-backed per-IP rate limit (5/hr); `is_trial`/`expires_at` fields on the shared `care_plan_outputs` collection; GCS input cleanup after extraction. | None | `02-trial-backend/PRD.md` |
-| SP3 | Trial Frontend App | P2 | New `frontend-trial/` Vite app: upload → processing (live steps) → results screens, anonymous-auth wiring, GA4 instrumentation, download-report reuse, best-effort `DELETE` on unload. | SP2 (API contract) | `03-trial-frontend/PRD.md` |
-| SP4 | Hosting Split, CI & Legal Pages | P3 | Multi-target `firebase.json`/`.firebaserc` (`app` + `trial`); `deploy.yml` gains a trial build/deploy job and fixes `rollback-production.yml`; CORS widened for `juno-app-99.web.app`; Privacy Policy + Terms & Conditions copy. | SP3 (build output); coordinates with SP2 (CORS, max-instances) | `04-hosting-split-and-legal/PRD.md` |
-| SP5 | Retention Automation | P5 | Enables Firestore native TTL on `care_plan_outputs`/`trial_rate_limits`; daily Cloud Scheduler → Cloud Run Job deleting anonymous Auth users older than 24h. | SP2 (`expires_at` fields, `trial_rate_limits`); coordinates with SP4 (deploy workflow, legal copy accuracy) | `05-retention-automation/PRD.md` |
+| SP # | Name | Phase | Scope (one line) | Depends On | PRD path | TASKS path |
+|------|------|-------|-------------------|------------|----------|------------|
+| SP1 | Image Input Support | P1 | Add `png/jpg/jpeg/webp/heic` to the shared `ALLOWED_EXTENSIONS`; a Gemini-vision (Vertex) extraction path in `care_plan_input.py`; images embedded into the combined PDF. Benefits main app + trial. | None | `01-image-input/PRD.md` | `01-image-input/TASKS.md` |
+| SP2 | Trial Backend Route, Rate Limiting & Retention | P1 | New `/trial` route family (`POST`/`DELETE /trial/jobs/<id>`) reusing existing job-creation helpers; Firestore-backed per-IP rate limit (5/hr); `is_trial`/`expires_at` fields on the shared `care_plan_outputs` collection; GCS input cleanup after extraction. | None | `02-trial-backend/PRD.md` | `02-trial-backend/TASKS.md` |
+| SP3 | Trial Frontend App | P2 | New `frontend-trial/` Vite app: upload → processing (live steps) → results screens, anonymous-auth wiring, GA4 instrumentation, download-report reuse, best-effort `DELETE` on unload. | SP2 (API contract) | `03-trial-frontend/PRD.md` | `03-trial-frontend/TASKS.md` |
+| SP4 | Hosting Split, CI & Legal Pages | P3 | Multi-target `firebase.json`/`.firebaserc` (`app` + `trial`); `deploy.yml` gains a trial build/deploy job and fixes `rollback-production.yml`; CORS widened for `juno-app-99.web.app`; Privacy Policy + Terms & Conditions copy. | SP3 (build output); coordinates with SP2 (CORS, max-instances) | `04-hosting-split-and-legal/PRD.md` | `04-hosting-split-and-legal/TASKS.md` |
+| SP5 | Retention Automation | P5 | Enables Firestore native TTL on `care_plan_outputs`/`trial_rate_limits`; daily Cloud Scheduler → Cloud Run Job deleting anonymous Auth users older than 24h. | SP2 (`expires_at` fields, `trial_rate_limits`); coordinates with SP4 (deploy workflow, legal copy accuracy) | `05-retention-automation/PRD.md` | `05-retention-automation/TASKS.md` |
 
 ---
 
@@ -296,6 +297,6 @@ none.** Every §9 item across SP1–SP5 is now either `[RESOLVED]` or `[DEFERRED
 
 ## Next step
 
-Run `/dev-tasks` against these five approved PRDs to generate a `TASKS.md` per
-sub-project, in the dependency order above. **No `TASKS.md` exists in this directory yet
-— by design:** this round was PRDs (design) only.
+All five sub-projects now have both a PRD and a `TASKS.md`. SP1 and SP2 are implemented.
+The next step is running `/dev-code` on SP3, then SP4, then SP5, in that dependency
+order.
