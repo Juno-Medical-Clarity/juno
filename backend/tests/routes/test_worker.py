@@ -302,3 +302,102 @@ def test_oidc_enabled_strips_extra_whitespace_in_bearer_header(mock_get_doc, cli
     # The token passed to google-auth must be stripped, not " valid-token".
     called_token = mock_verify.call_args[0][0]
     assert called_token == "valid-token"
+
+
+# ---------------------------------------------------------------------------
+# Trial GCS cleanup (SP2)
+# ---------------------------------------------------------------------------
+
+def _make_trial_job_doc(status="not_started", input_pdf_gcs_uri="gs://b/p.pdf"):
+    doc = _make_job_doc(status=status)
+    doc["is_trial"] = True
+    doc["input_pdf_gcs_uri"] = input_pdf_gcs_uri
+    return doc
+
+
+@patch("utils.gcs.delete_gcs_object")
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_success_triggers_gcs_cleanup(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    mock_delete_gcs, client_worker,
+):
+    mock_get_doc.return_value = _make_trial_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {"reason_for_visit": [{"reason": "Hypertension"}]}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {"care_plan": {}, "metrics": {"saved_id": None}}
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            resp = client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    assert resp.status_code == 200
+    mock_delete_gcs.assert_called_once_with("gs://b/p.pdf")
+
+
+@patch("utils.gcs.delete_gcs_object")
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_trial_job_pipeline_failure_still_triggers_gcs_cleanup(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    mock_delete_gcs, client_worker,
+):
+    mock_get_doc.return_value = _make_trial_job_doc()
+    mock_fs_client.return_value = MagicMock()
+
+    def fake_pipeline_error(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterError(error_data={"code": "PIPELINE_ERROR", "message": "boom"})
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline_error(*a, **kw)}):
+        resp = client_worker.post("/internal/jobs/execute/job-1", headers=QUEUE_HEADER)
+
+    assert resp.status_code == 200
+    mock_delete_gcs.assert_called_once_with("gs://b/p.pdf")
+
+
+@patch("utils.gcs.delete_gcs_object")
+@patch("utils.firebase.firestore.client")
+@patch("routes.worker.complete_job")
+@patch("routes.worker.update_job_stage")
+@patch("routes.worker.fail_job")
+@patch("routes.worker.get_job_doc")
+def test_non_trial_job_never_triggers_gcs_cleanup(
+    mock_get_doc, mock_fail, mock_update_stage, mock_complete, mock_fs_client,
+    mock_delete_gcs, client_worker,
+):
+    mock_get_doc.return_value = _make_job_doc()  # is_trial defaults False, no input_pdf_gcs_uri key
+    mock_fs_client.return_value = MagicMock()
+
+    care_plan_mock = MagicMock()
+    care_plan_mock.to_dict.return_value = {}
+    grading_mock = MagicMock()
+
+    def fake_pipeline(text, metrics, grading_enabled, source_kind="text", is_batch=False):
+        yield AdapterResult(care_plan=care_plan_mock, grading=grading_mock, raw_text=text, clarified_text="c")
+
+    envelope_mock = MagicMock()
+    envelope_mock.to_dict.return_value = {"care_plan": {}, "metrics": {"saved_id": None}}
+
+    with patch.dict("routes.worker.PIPELINES", {"v1-2": lambda *a, **kw: fake_pipeline(*a, **kw)}):
+        with patch("routes.worker.CarePlanInternal", return_value=envelope_mock):
+            client_worker.post(
+                "/internal/jobs/execute/job-1", headers=QUEUE_HEADER, content_type="application/json",
+            )
+
+    mock_delete_gcs.assert_not_called()
