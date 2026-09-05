@@ -272,3 +272,39 @@ def test_post_non_anonymous_token_still_accepted(mock_create_doc, mock_enqueue, 
     )
     assert resp.status_code == 202
     mock_create_doc.assert_called_once()
+
+
+# ---------------------------------------------------------------------------
+# Server-side max text length (Finding 2)
+# ---------------------------------------------------------------------------
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_text_at_max_length_is_accepted(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    from utils.constants import Constants
+    text = "a" * Constants.Uploads.MAX_TEXT_LENGTH
+    resp = client_jobs.post("/care_plan/jobs", json={"text": text}, headers=auth_ok)
+    assert resp.status_code == 202
+    mock_create_doc.assert_called_once()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_text_over_max_length_returns_400(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    from utils.constants import Constants
+    text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    resp = client_jobs.post("/care_plan/jobs", json={"text": text}, headers=auth_ok)
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()

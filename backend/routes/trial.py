@@ -36,6 +36,10 @@ def _resolve_trial_input(user_id: str) -> dict:
     json_data = request.get_json(silent=True) or {}
     text_input = (request.form.get("text") or json_data.get("text") or "").strip()
     if text_input:
+        if len(text_input) > Constants.Uploads.MAX_TEXT_LENGTH:
+            raise ValueError(
+                f"Text input exceeds {Constants.Uploads.MAX_TEXT_LENGTH} character limit"
+            )
         return {
             "input_source_kind": "text",
             "input_text": text_input,

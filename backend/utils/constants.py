@@ -24,6 +24,10 @@ class Constants:
         MAX_FILE_COUNT: int = 10                       # unchanged
         MAX_AGGREGATE_FILE_BYTES: int = 25 * 1024 * 1024
         UPLOAD_PREFIX: str = "care_plan-uploads"
+        MAX_TEXT_LENGTH: int = 100_000                # server-side mirror of the
+                                                        # frontend paste cap; enforced
+                                                        # in both _resolve_trial_input
+                                                        # and _resolve_input_for_job.
 
     class Pipeline:
         PIPELINE_VERSION_V1_2: str = "v1-2"

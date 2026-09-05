@@ -289,3 +289,32 @@ def test_post_anonymous_token_accepted_on_trial_jobs(mock_create_doc, mock_enque
     assert resp.status_code == 202
     assert "job_id" in resp.get_json()
     mock_create_doc.assert_called_once()
+    assert mock_create_doc.call_args.kwargs["user_id"] == "anon-1"
+
+
+# ---------------------------------------------------------------------------
+# Server-side max text length (Finding 2)
+# ---------------------------------------------------------------------------
+
+@patch.dict("os.environ", TRIAL_ENV)
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+def test_post_text_at_max_length_is_accepted(mock_create_doc, mock_enqueue, client_trial, auth_ok):
+    from utils.constants import Constants
+    text = "a" * Constants.Uploads.MAX_TEXT_LENGTH
+    resp = client_trial.post("/trial/jobs", json={"text": text}, headers=auth_ok)
+    assert resp.status_code == 202
+    mock_create_doc.assert_called_once()
+
+
+@patch.dict("os.environ", TRIAL_ENV)
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+def test_post_text_over_max_length_returns_400(mock_create_doc, mock_enqueue, client_trial, auth_ok):
+    from utils.constants import Constants
+    text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    resp = client_trial.post("/trial/jobs", json={"text": text}, headers=auth_ok)
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
