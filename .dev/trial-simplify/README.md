@@ -17,13 +17,48 @@ plus legal pages, and retention automation (TTL + anonymous-user cleanup).
 
 ## Implementation status (as of 2026-09-05)
 
-SP1 (Image Input Support) and SP2 (Trial Backend Route, Rate Limiting & Retention) are
-**IMPLEMENTED** and merged into `users/tejitpabari/trial-app`. SP3-SP5 are not started, but
-each now has a generated `TASKS.md` (SP3: 20 tasks, SP4: 9 tasks, SP5: 7 tasks), ready for
-`/dev-code`. Run artifacts:
+**All five sub-projects (SP1–SP5) are IMPLEMENTED, reviewed, and fix-verified** on
+`users/tejitpabari/trial-app`. Two review rounds have run against the branch:
+
+- `review-2026-09-05-0554.md` — SP1 (Image Input) + SP2 (Trial Backend), merged. One
+  must-fix finding (a `JunoError` fall-through to a bare 500 on illegible-image uploads),
+  fixed in `cba4b5ed` and verified.
+- `review-2026-09-05-0835.md` — the full branch, SP1–SP5, three personas (Bug Hunter,
+  Security/Adversarial, Architect). Five findings (three blocking, one of which was
+  downgraded after its premise was independently re-investigated and did not hold for
+  this deployment's topology; two must-fix), all fixed and independently re-verified by
+  a fourth agent that re-ran every check rather than trusting the fixing agents' reports.
+  The six fix commits: `fec11a37` (deny anonymous Firebase tokens on non-trial
+  authenticated routes), `93df2a08` (keep trial results rendered after the job doc is
+  deleted), `5585ef4d` (make the trusted-proxy-hop count for per-IP rate limiting an
+  explicit, documented constant), `5d1c226e` (escape all `buildPdfHtml` fields and drop
+  the report window's `opener`), `e45b04a6` (enforce server-side max text length on job
+  creation), `dd5fd3eb` (tag the deployed commit, not the branch head, in `deploy.yml`).
+  Verdict: **PASS**.
+
+Run artifacts, one per sub-project:
 [`01-image-input/code-2026-09-05-0554.md`](01-image-input/code-2026-09-05-0554.md),
 [`02-trial-backend/code-2026-09-05-0554.md`](02-trial-backend/code-2026-09-05-0554.md),
-[`review-2026-09-05-0554.md`](review-2026-09-05-0554.md).
+[`03-trial-frontend/code-2026-09-05-0741.md`](03-trial-frontend/code-2026-09-05-0741.md),
+[`04-hosting-split-and-legal/code-2026-09-05-0749.md`](04-hosting-split-and-legal/code-2026-09-05-0749.md),
+[`05-retention-automation/code-2026-09-05-0758.md`](05-retention-automation/code-2026-09-05-0758.md).
+
+**Test totals at last review close** (re-run during verification, not carried forward
+from earlier runs): backend `python3 -m pytest tests/ -q` → 572 passed, 93% coverage;
+`frontend-trial` → 14 files / 43 tests, lint clean, build clean; `frontend` → 180 passed.
+
+**Outstanding, owner-only (see `review-2026-09-05-0835.md`'s "Still requires you" for the
+full consolidated list with exact commands):**
+- **Legal-copy review and approval (D8) — this is the one item that gates launch.** The
+  Privacy Policy and Terms rendered in `frontend-trial/src/pages/` are Claude's first
+  draft, not yet reviewed by a lawyer.
+- All of SP5's live-GCP steps: Firestore native TTL on `care_plan_outputs` /
+  `trial_rate_limits`, one-time creation of the `juno-trial-anon-cleanup` Cloud Run Job
+  (`RETENTION_DRY_RUN=true` first), Cloud Scheduler + IAM, a dry-run execution and log
+  review before flipping `RETENTION_DRY_RUN=false`, the GCS lifecycle rule on
+  `care_plan_trial/`, and optional Cloud Monitoring alerts.
+- The production cutover ordering from SP4 PRD §4.5, and watching the first automatic
+  `deploy.yml` run once this branch lands on `main`.
 
 ---
 
@@ -297,6 +332,8 @@ none.** Every §9 item across SP1–SP5 is now either `[RESOLVED]` or `[DEFERRED
 
 ## Next step
 
-All five sub-projects now have both a PRD and a `TASKS.md`. SP1 and SP2 are implemented.
-The next step is running `/dev-code` on SP3, then SP4, then SP5, in that dependency
-order.
+All five sub-projects are implemented, reviewed, and fix-verified (see "Implementation
+status" above) — there is no more code to write. The next step is entirely owner-only:
+legal-copy review and approval (D8, the launch gate), SP5's live-GCP setup, and the
+production cutover per SP4 PRD §4.5. See `review-2026-09-05-0835.md`'s "Still requires
+you" section for the consolidated, exact-command version of this list.
