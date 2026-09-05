@@ -102,3 +102,116 @@ def test_run_care_plan_pipeline_step_error_yields_adapter_error():
 
     error_events = [e for e in events if isinstance(e, AdapterError)]
     assert len(error_events) == 1
+
+
+# ── Task 3: concurrent before-score computation ─────────────────────────────────
+
+
+class RaisingConstructorPipeline:
+    """Not actually instantiated — CarePlanV1_2Pipeline() itself raises."""
+    pass
+
+
+def test_grading_enabled_still_computes_before_and_after_scores():
+    metrics = _make_metrics()
+    mock_scope = _mock_markers()
+
+    with patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=FakePipeline()), \
+         patch("services.care_plan_pipeline.Markers") as mock_markers, \
+         patch("services.care_plan_pipeline.score_text_safe") as mock_score, \
+         patch("services.care_plan_pipeline.build_grading_with_before_after_score") as mock_build:
+        mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
+        mock_markers.Grading.Run.execute.side_effect = lambda fn: fn(mock_scope)
+        mock_score.side_effect = lambda text, label: {"composite": 50.0, "dimensions": {}}
+        mock_build.return_value = MagicMock(entries=[])
+
+        list(run_care_plan_pipeline("plain note", metrics, grading_enabled=True))
+
+    assert mock_score.call_count == 2
+    called_args = {c.args for c in mock_score.call_args_list}
+    assert ("plain note", "before") in called_args
+    assert ("clarified", "after") in called_args
+
+
+def test_grading_disabled_never_creates_a_threadpool():
+    metrics = _make_metrics()
+    mock_scope = _mock_markers()
+
+    with patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=FakePipeline()), \
+         patch("services.care_plan_pipeline.Markers") as mock_markers, \
+         patch("services.care_plan_pipeline.ThreadPoolExecutor") as mock_pool:
+        mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
+
+        list(run_care_plan_pipeline("plain note", metrics, grading_enabled=False))
+
+    mock_pool.assert_not_called()
+
+
+def test_step_error_with_grading_enabled_does_not_hang_or_leak_thread():
+    metrics = _make_metrics()
+    mock_scope = _mock_markers()
+
+    with patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", return_value=FailingPipeline()), \
+         patch("services.care_plan_pipeline.Markers") as mock_markers:
+        mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
+
+        events = list(run_care_plan_pipeline("text", metrics, grading_enabled=True))
+
+    error_events = [e for e in events if isinstance(e, AdapterError)]
+    assert len(error_events) == 1
+
+
+def test_pipeline_constructor_failure_with_grading_enabled_does_not_hang_or_leak_thread():
+    metrics = _make_metrics()
+
+    with patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", side_effect=RuntimeError("boom")):
+        events = list(run_care_plan_pipeline("text", metrics, grading_enabled=True))
+
+    error_events = [e for e in events if isinstance(e, AdapterError)]
+    assert len(error_events) == 1
+
+
+def test_before_score_submitted_before_pipeline_construction():
+    """Ordering proof: the before-score work is submitted to the executor before
+    the pipeline is even constructed — i.e. before any of the three sequential
+    LLM calls inside iter_steps() can start — not merely before before_score is
+    consumed at the end."""
+    order = []
+    metrics = _make_metrics()
+    mock_scope = _mock_markers()
+
+    class OrderTrackingPipeline:
+        def __init__(self):
+            order.append("pipeline_constructed")
+
+        def iter_steps(self, text, wrap_step=None):
+            order.append("pipeline_iter_start")
+            yield _make_run_result(text)
+
+    mock_executor = MagicMock()
+
+    def fake_submit(fn, *args, **kwargs):
+        order.append("submit_before_score")
+        fut = MagicMock()
+        fut.result.return_value = {"composite": 1.0, "dimensions": {}}
+        return fut
+
+    mock_executor.submit.side_effect = fake_submit
+
+    with patch("services.care_plan_pipeline.ThreadPoolExecutor", return_value=mock_executor), \
+         patch("services.care_plan_pipeline.CarePlanV1_2Pipeline", side_effect=OrderTrackingPipeline), \
+         patch("services.care_plan_pipeline.Markers") as mock_markers, \
+         patch("services.care_plan_pipeline.score_text_safe") as mock_score, \
+         patch("services.care_plan_pipeline.build_grading_with_before_after_score") as mock_build:
+        mock_markers.CarePlan.Pipeline.execute.side_effect = lambda fn: fn(mock_scope)
+        mock_markers.Grading.Run.execute.side_effect = lambda fn: fn(mock_scope)
+        mock_build.return_value = MagicMock(entries=[])
+
+        list(run_care_plan_pipeline("plain note", metrics, grading_enabled=True))
+
+    assert order.index("submit_before_score") < order.index("pipeline_constructed")
+    assert order.index("submit_before_score") < order.index("pipeline_iter_start")
+    mock_executor.shutdown.assert_called_once_with(wait=True)
+    # after-score is still computed synchronously via a direct call, not via the
+    # executor — only "before" is offloaded to the background thread.
+    mock_score.assert_called_once_with("clarified", "after")
