@@ -94,3 +94,7 @@ class Markers:
     class Firestore:
         @code_marker("firestore.job_write")
         class JobWrite(CodeMarker): pass
+
+    class Retention:
+        @code_marker("retention.anon_user_cleanup")
+        class AnonUserCleanup(CodeMarker): pass
