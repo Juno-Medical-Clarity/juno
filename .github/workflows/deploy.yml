@@ -21,6 +21,8 @@ jobs:
       GCP_REGION: us-central1
       GCP_BUCKET_NAME: juno-medical-clarity-backend
       BACKEND_IMAGE: us-central1-docker.pkg.dev/juno-medical-clarity/juno/simplify-backend
+      API_MAX_INSTANCES: "10"
+      WORKER_MAX_INSTANCES: "5"
     steps:
       - uses: actions/checkout@v4
 
@@ -67,6 +69,7 @@ jobs:
             --project "$GCP_PROJECT_ID" \
             --memory 2Gi \
             --timeout 300 \
+            --max-instances "$API_MAX_INSTANCES" \
             --set-env-vars "$API_ENV_VARS" \
             --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest"
 
@@ -79,6 +82,7 @@ jobs:
             --project "$GCP_PROJECT_ID" \
             --memory 2Gi \
             --timeout 900 \
+            --max-instances "$WORKER_MAX_INSTANCES" \
             --set-env-vars "$WORKER_ENV_VARS" \
             --set-secrets "FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest,ATHENA_HEALTH_TEST_CLIENT_ID=athena-health-test-client-id:latest,ATHENA_HEALTH_TEST_CLIENT_SECRET=athena-health-test-client-secret:latest"
 
