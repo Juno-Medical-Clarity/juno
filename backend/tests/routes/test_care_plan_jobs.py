@@ -220,3 +220,55 @@ def test_unhandled_exception_returns_500_json(mock_create_doc, client_jobs, auth
     body = resp.get_json()
     assert body is not None, "Response must be JSON, not HTML"
     assert body["error"]["code"] == "INTERNAL_ERROR"
+
+
+# ---------------------------------------------------------------------------
+# Anonymous callers (Finding 1) — POST /care_plan/jobs is the primary attack
+# surface: an anonymous trial token must never work here.
+# ---------------------------------------------------------------------------
+
+@pytest.fixture
+def auth_anonymous(monkeypatch):
+    monkeypatch.setattr(
+        "utils.firebase.auth.verify_id_token",
+        lambda *a, **k: {"uid": "anon-1", "firebase": {"sign_in_provider": "anonymous", "identities": {}}},
+    )
+    return {"Authorization": "Bearer anon-token"}
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_anonymous_token_returns_403(mock_create_doc, mock_enqueue, client_jobs, auth_anonymous):
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        json={"text": "Patient has hypertension."},
+        headers=auth_anonymous,
+    )
+    assert resp.status_code == 403
+    assert resp.get_json()["error"]["code"] == "ANONYMOUS_ACCESS_FORBIDDEN"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_non_anonymous_token_still_accepted(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    """Regression guard: a normal signed-in user must be unaffected by the
+    anonymous-caller deny added for Finding 1."""
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        json={"text": "Patient has hypertension."},
+        headers=auth_ok,
+    )
+    assert resp.status_code == 202
+    mock_create_doc.assert_called_once()

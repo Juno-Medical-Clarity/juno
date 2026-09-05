@@ -3,8 +3,10 @@
 Thin, additive trial surface. Delegates to the same input-resolution and
 job-creation helpers as care_plan_jobs.py (resolve_uploaded_files,
 upload_combined_pdf, JobDoc, create_job_doc, enqueue_job_safe) — forks nothing
-from the pipeline itself. Rate-limited and retention-scoped; auth is unchanged
-(verify_firebase_token, same as every other route).
+from the pipeline itself. Rate-limited and retention-scoped; auth uses the same
+verify_firebase_token decorator as every other route, with allow_anonymous=True
+opted in explicitly here — these are the only two routes in the app that accept
+an anonymous Firebase token (see utils/firebase.py).
 """
 import logging
 import uuid
@@ -67,7 +69,7 @@ def _resolve_trial_input(user_id: str) -> dict:
 
 @trial_bp.route("/trial/jobs", methods=["POST"])
 @rate_limit_trial          # outermost: runs before auth, keyed on IP only (§4.4)
-@verify_firebase_token
+@verify_firebase_token(allow_anonymous=True)   # trial callers are anonymous by design
 def create_trial_job(user_id: str):
     def _handler(scope: Scope):
         try:
@@ -120,7 +122,7 @@ def create_trial_job(user_id: str):
 
 
 @trial_bp.route("/trial/jobs/<job_id>", methods=["DELETE"])
-@verify_firebase_token      # NOT rate-limited — see §9 Q2
+@verify_firebase_token(allow_anonymous=True)      # NOT rate-limited — see §9 Q2; trial callers are anonymous by design
 def delete_trial_job(job_id: str, user_id: str):
     def _handler(scope: Scope):
         try:

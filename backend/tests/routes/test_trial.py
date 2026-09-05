@@ -266,3 +266,26 @@ def test_delete_is_not_rate_limited(mock_fs, client_trial, auth_ok):
     for _ in range(10):
         resp = client_trial.delete("/trial/jobs/job-1", headers=auth_ok)
         assert resp.status_code in (204, 404)  # never 429
+
+
+# ---------------------------------------------------------------------------
+# Anonymous callers (Finding 1) — /trial routes must keep working for them
+# ---------------------------------------------------------------------------
+
+@pytest.fixture
+def auth_anonymous(monkeypatch):
+    monkeypatch.setattr(
+        "utils.firebase.auth.verify_id_token",
+        lambda *a, **k: {"uid": "anon-1", "firebase": {"sign_in_provider": "anonymous", "identities": {}}},
+    )
+    return {"Authorization": "Bearer anon-token"}
+
+
+@patch.dict("os.environ", TRIAL_ENV)
+@patch("routes.trial.enqueue_job_safe", return_value=None)
+@patch("routes.trial.create_job_doc")
+def test_post_anonymous_token_accepted_on_trial_jobs(mock_create_doc, mock_enqueue, client_trial, auth_anonymous):
+    resp = client_trial.post("/trial/jobs", json={"text": "Patient has hypertension."}, headers=auth_anonymous)
+    assert resp.status_code == 202
+    assert "job_id" in resp.get_json()
+    mock_create_doc.assert_called_once()

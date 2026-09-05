@@ -221,6 +221,11 @@ class ErrorCode(StrEnum):
     MALFORMED_AUTH_HEADER = "MALFORMED_AUTH_HEADER"
     """The Authorization header did not match the expected format."""
 
+    ANONYMOUS_ACCESS_FORBIDDEN = "ANONYMOUS_ACCESS_FORBIDDEN"
+    """An anonymous (unauthenticated-identity) Firebase token was used against a
+    route that requires a non-anonymous account. Anonymous tokens are only
+    accepted on the /trial routes."""
+
     # ------------------------------------------------------------------
     # 5. Resource
     # ------------------------------------------------------------------
@@ -807,6 +812,15 @@ ERROR_CATALOG: dict[ErrorCode, ErrorInfo] = {
         user_hint="Malformed Authorization header",
         retryable=False,
         details_template="Expected format: Authorization: Bearer <token>",
+    ),
+
+    ErrorCode.ANONYMOUS_ACCESS_FORBIDDEN: ErrorInfo(
+        code="ANONYMOUS_ACCESS_FORBIDDEN",
+        http_status=403,
+        message="Anonymous access denied",
+        user_hint="Please sign in with an account to use this feature",
+        retryable=False,
+        details_template="This endpoint does not accept anonymous Firebase tokens",
     ),
 
     # ------------------------------------------------------------------
