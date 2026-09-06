@@ -46,9 +46,67 @@ SP6 (a separate follow-on branch, `users/tejitpabari/trial-optimizations`) has i
 run artifact:
 [`06-trial-optimizations/code-2026-09-05-2131.md`](06-trial-optimizations/code-2026-09-05-2131.md).
 
-**Test totals at last review close** (re-run during verification, not carried forward
-from earlier runs): backend `python3 -m pytest tests/ -q` → 572 passed, 93% coverage;
-`frontend-trial` → 14 files / 43 tests, lint clean, build clean; `frontend` → 180 passed.
+**SP6 branch, same day (2026-09-05/06): a deep edge-case review pass, fixes, scenario
+validation, and an independent final verification.** After SP6's three optimization
+tasks landed, the trial pathway (`routes/trial.py` + `routes/worker.py` +
+`services/care_plan_input.py`/`care_plan_pipeline.py` + `frontend-trial/`) went through:
+- [`edge-case-review-backend-2026-09-05.md`](edge-case-review-backend-2026-09-05.md) —
+  10 findings (3 BLOCKING, 5 SHOULD FIX, 2 NICE TO HAVE): a char-count text cap that
+  didn't bound Firestore's byte-based 1 MiB limit, a no-text-layer document silently
+  bypassing `EMPTY_DOCUMENT`, the GCS-lifecycle/anon-cleanup retention backstops never
+  having been deployed (BLOCKING, infra-only — see below), `input_text` never cleared
+  for trial jobs, a lone UTF-16 surrogate crashing job creation, corrupt/encrypted PDFs
+  500ing instead of returning a clean error, a worker idempotency gap letting a Cloud
+  Tasks redelivery re-run (and re-bill) the whole LLM pipeline, one bad file aborting an
+  entire multi-file trial upload, an unsalted-IP-hash fallback, and raw exception text
+  reaching the client.
+- [`edge-case-review-frontend-2026-09-05.md`](edge-case-review-frontend-2026-09-05.md)
+  — no BLOCKING findings; 8 SHOULD-FIX/NICE-TO-HAVE items: no client-side watchdog or
+  escape hatch for a job stuck in `processing`, `useAnonAuth`'s pending state having no
+  timeout, missing a11y announcements across screen transitions, `CarePlanView`'s Copy
+  button lacking error/success feedback, Privacy Policy deletion-timing wording, no
+  guard on a missing `VITE_API_PROCESSING_URL`, the client's text-length mirror not
+  matching the backend's byte-based cap, and raw Firebase SDK error text reaching the
+  UI.
+- All applicable findings (everything except BLOCKING #3, deliberately left as an infra
+  step — see "Still requires you" below) were fixed across 13 commits (`74efe230`
+  through `eac5dc84`): trial-only upload limits (5 files/10MB aggregate/no per-file cap)
+  plus a shared byte-based text cap and min-content threshold, a clean 413 JSON envelope
+  for oversized requests, a defensive min-content guard plus `input_text` clearing on
+  trial completion plus the worker processing-lease idempotency check, a fail-safe
+  rate-limit IP salt fallback and stripped unclassified-exception detail, a
+  corrupt-image-bytes rejection before the Vertex AI call, and on the frontend: a
+  processing watchdog with restart cleanup and a11y announcements, a bounded
+  `useAnonAuth` pending-state timeout, `CarePlanView` Copy-button error handling, tighter
+  Privacy Policy wording, a `VITE_API_PROCESSING_URL` guard, a Firebase SDK error mapper,
+  and a `MAX_TEXT_BYTES` mirror of the backend's byte cap.
+- [`scenario-validation-2026-09-05.md`](scenario-validation-2026-09-05.md) — 11
+  end-to-end scenarios (typical discharge summary, phone-photo OCR, mixed-batch limits,
+  multibyte-near-limits, degenerate inputs, partial-failure batches, filename
+  hostility, lifecycle races, failure surfaces, rate limiting, access control) run
+  against the fixed code; two bugs found during validation itself were fixed
+  (surfaced in the same commit range above), all 11 scenarios PASS.
+- [`final-verification-2026-09-05.md`](final-verification-2026-09-05.md) — an
+  independent re-verification pass (re-ran every suite and re-derived every integration
+  claim rather than trusting the above reports): confirms all three test suites are
+  100% green at the totals below, confirms every checked integration point (upload
+  limits per call site, `clear_input_text` lifecycle, worker lease/retry safety, the 413
+  path, the `VITE_API_PROCESSING_URL` guard) behaves as intended, found and fixed one
+  minor comment-accuracy bug (`MIN_MEANINGFUL_CONTENT_CHARS`'s justifying comment used a
+  16-character example while claiming `>20 chars`), and flagged one **unresolved product
+  decision, not fixed**: the new `MAX_TEXT_BYTES=350,000` cap is enforced globally, not
+  just on the trial route, silently narrowing the main app's effective pasted-text/
+  upload ceiling from 500,000 characters to ~350,000 bytes (~350,000 ASCII characters)
+  for documents that previously fit. Verdict: **NOT RELEASE-READY** — blocked on the
+  pre-existing BLOCKING #3 retention-automation deploy gap (unchanged from before
+  today), plus this text-limit question needing an owner call.
+
+**Test totals** (from `final-verification-2026-09-05.md`'s independent re-run, the most
+current numbers as of 2026-09-06 — supersedes the "at last review close" totals this
+line used to carry): backend `python3 -m pytest tests/ -q` → **684 passed**, 1
+pre-existing warning (unrelated `PyPDF2` deprecation), 94% coverage; `frontend-trial` →
+**19 files / 103 tests** passed, `tsc --noEmit` clean, lint clean, build clean;
+`frontend` → **23 files / 189 tests** passed, `tsc --noEmit` clean, build clean.
 
 **Outstanding, owner-only (see `review-2026-09-05-0835.md`'s "Still requires you" for the
 full consolidated list with exact commands):**
@@ -336,8 +394,19 @@ none.** Every §9 item across SP1–SP5 is now either `[RESOLVED]` or `[DEFERRED
 
 ## Next step
 
-All five sub-projects are implemented, reviewed, and fix-verified (see "Implementation
-status" above) — there is no more code to write. The next step is entirely owner-only:
-legal-copy review and approval (D8, the launch gate), SP5's live-GCP setup, and the
-production cutover per SP4 PRD §4.5. See `review-2026-09-05-0835.md`'s "Still requires
-you" section for the consolidated, exact-command version of this list.
+All five sub-projects plus SP6's optimizations and today's edge-case-review fixes are
+implemented and independently re-verified (see "Implementation status" above and
+`final-verification-2026-09-05.md`). Most of what remains is owner-only: legal-copy
+review and approval (D8, the launch gate), SP5's live-GCP setup (in particular the GCS
+lifecycle rule and anonymous-account cleanup automation — still not deployed, the one
+BLOCKING item today's verification pass reconfirmed), and the production cutover per SP4
+PRD §4.5. See `review-2026-09-05-0835.md`'s "Still requires you" section for the
+consolidated, exact-command version of that list.
+
+One item is **not** owner-only and needs a product decision before or shortly after
+shipping: `final-verification-2026-09-05.md` §3 found that the new
+`MAX_TEXT_BYTES=350,000` cap (added for the trial route's Firestore-size safety) is
+enforced globally, including on the main app's pasted-text, upload, and `doc_id` paths —
+narrowing the main app's effective text ceiling from 500,000 characters to ~350,000
+bytes for ASCII text. This was deliberately left unchanged pending an explicit owner
+call on whether that's acceptable or should be scoped to trial only.

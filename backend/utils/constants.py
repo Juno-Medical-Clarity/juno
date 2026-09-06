@@ -145,8 +145,8 @@ class Constants:
                                                         # source_kind produced it) before any
                                                         # pipeline/LLM step runs. Chosen well
                                                         # below any realistic clinical note --
-                                                        # even a terse "Take Tylenol BID" is
-                                                        # >20 chars -- but well above what a
+                                                        # even a terse "Take Tylenol 500mg BID"
+                                                        # is >20 chars -- but well above what a
                                                         # scanned/no-text-layer PDF, a blank
                                                         # docx/txt/html, or stray OCR noise on a
                                                         # truly blank image produces (0, or a
