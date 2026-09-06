@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 
 from flask import Blueprint, jsonify, request
 from opentelemetry import trace as otel_trace
+from werkzeug.exceptions import HTTPException
 
 from models.batch_requests import SingleJobRequest
 from models.job import JobDoc
@@ -46,10 +47,10 @@ def _resolve_input_for_job(user_id: str) -> dict:
 
     text_input = (request.form.get("text") or json_data.get("text") or "").strip()
     if text_input:
-        if len(text_input) > Constants.Uploads.MAX_TEXT_LENGTH:
-            raise ValueError(
-                f"Text input exceeds {Constants.Uploads.MAX_TEXT_LENGTH} character limit"
-            )
+        # Shared with routes/trial.py's identical pasted-text check -- enforces
+        # the char cap, the UTF-8 byte cap (Finding 1), and rejects unstorable
+        # text such as a lone UTF-16 surrogate (Finding 5).
+        validate_extracted_text_length(text_input)
         return {
             "input_source_kind": "text",
             "input_text": text_input,
@@ -157,6 +158,14 @@ def create_care_plan_job(user_id: str):
 
             return jsonify({"job_id": job_id}), 202
 
+        except HTTPException:
+            # e.g. werkzeug.exceptions.RequestEntityTooLarge raised lazily by
+            # request.form/request.get_json() the first time the body is read,
+            # once it exceeds app.config["MAX_CONTENT_LENGTH"] -- a bare
+            # `except Exception` below would swallow this and misreport it as
+            # a generic 500 instead of letting Flask's own @app.errorhandler
+            # (413, 404, etc.) produce the correct, standard JSON envelope.
+            raise
         except Exception:
             logger.exception("create_care_plan_job: unexpected error")
             return make_error_response(ErrorCode.INTERNAL_ERROR, request.path).to_dict(), 500

@@ -318,33 +318,52 @@ def update_job_stage(job_id: str, stage: int) -> None:
         raise FirestoreError(f"update_job_stage failed: {exc}") from exc
 
 
-def complete_job(job_id: str, output_data: dict, name: str) -> None:
+def complete_job(job_id: str, output_data: dict, name: str, *, clear_input_text: bool = False) -> None:
+    """Mark a job completed. clear_input_text (trial jobs only) deletes the
+    top-level input_text field in the SAME update -- the raw pasted/extracted
+    document text is write-once (by create_job_doc) and read-once (by
+    resolve_input_from_job_doc at worker start), never needed again after
+    this point. This is a *separate* field from output_data["input"]["text"]
+    (already popped by the caller for trial jobs, see routes/worker.py) --
+    without also clearing this one, the full-length top-level copy survives
+    untouched for the entire trial job TTL, undermining the "stay under 1
+    MiB" intent and compounding the byte-vs-char cap bug (edge-case review
+    Finding 4)."""
     try:
         now = datetime.now(timezone.utc)
         db = firestore_client()
-        db.collection("care_plan_outputs").document(job_id).update({
+        update_fields: dict = {
             "status": "completed",
             "stage": 5,
             "output_data": output_data,
             "name": name,
             "completed_at": now,
             "updated_at": now,
-        })
+        }
+        if clear_input_text:
+            update_fields["input_text"] = firestore.DELETE_FIELD
+        db.collection("care_plan_outputs").document(job_id).update(update_fields)
     except Exception as exc:
         logger.exception("firebase: complete_job failed for job_id=%s", job_id)
         raise FirestoreError(f"complete_job failed: {exc}") from exc
 
 
-def fail_job(job_id: str, error_data: dict) -> None:
+def fail_job(job_id: str, error_data: dict, *, clear_input_text: bool = False) -> None:
+    """Mark a job failed. clear_input_text -- see complete_job's docstring;
+    applies equally on the failure path since the raw text is no longer
+    needed once the job has reached ANY terminal state."""
     try:
         now = datetime.now(timezone.utc)
         db = firestore_client()
-        db.collection("care_plan_outputs").document(job_id).update({
+        update_fields: dict = {
             "status": "error",
             "error_data": error_data,
             "completed_at": now,
             "updated_at": now,
-        })
+        }
+        if clear_input_text:
+            update_fields["input_text"] = firestore.DELETE_FIELD
+        db.collection("care_plan_outputs").document(job_id).update(update_fields)
     except Exception as exc:
         logger.exception("firebase: fail_job failed for job_id=%s", job_id)
         raise FirestoreError(f"fail_job failed: {exc}") from exc

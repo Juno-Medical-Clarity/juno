@@ -102,12 +102,69 @@ jobs:
             --project="$GCP_PROJECT_ID" \
             --command=python \
             --args="-m,scripts.cleanup_anonymous_users" \
-            --update-env-vars="GCP_PROJECT_ID=$GCP_PROJECT_ID,FIRESTORE_DATABASE_ID=(default)" \
+            --update-env-vars="GCP_PROJECT_ID=$GCP_PROJECT_ID,FIRESTORE_DATABASE_ID=(default),RETENTION_DRY_RUN=false" \
             --update-secrets="FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest" \
             --task-timeout=1800 \
             --max-retries=0 \
             --memory=512Mi \
             --cpu=1
+
+      # Cloud Scheduler -> Cloud Run Job trigger. `jobs create` is NOT idempotent (fails
+      # if the resource exists), so try `update` first (idempotent on every re-run once
+      # the job exists) and only fall back to `create` the first time it doesn't. Both
+      # branches use the same args, so this can't silently drift out of sync with itself,
+      # and a normal re-run always succeeds via the `update` branch alone.
+      #
+      # Auth: the `:run` target is the Cloud Run Admin API (run.googleapis.com), not a
+      # Cloud Run *service* URL — it's authenticated like any other Google Cloud API, via
+      # an OAuth access token (IAM-checked, `run.jobs.run`), not an OIDC identity token.
+      # `--oauth-service-account-email` is therefore correct here (OIDC is for invoking a
+      # Cloud Run service's own HTTPS endpoint, not this control-plane API).
+      #
+      # One-time manual setup (NOT codified here — infrequent, and safer as an explicit
+      # human action per PRD .dev/trial-simplify/05-retention-automation/PRD.md §4.8):
+      #   gcloud iam service-accounts create juno-scheduler-invoker ...
+      #   gcloud run jobs add-iam-policy-binding juno-trial-anon-cleanup \
+      #     --member="serviceAccount:juno-scheduler-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com" \
+      #     --role="roles/run.invoker"
+      # Already applied and verified live in prod as of 2026-09-06.
+      #
+      # This step itself needs the CI service account to hold cloudscheduler.* permissions,
+      # which it had none of by default. One-time project setup applied 2026-09-06: a minimal
+      # custom role `ciCloudSchedulerJobManager` (jobs.get/create/update, locations.get) bound
+      # to github-actions-deploy@$GCP_PROJECT_ID.iam.gserviceaccount.com — see PRD §8 checklist
+      # item "3d" for the exact commands. A PERMISSION_DENIED here likely means that binding
+      # is missing or was reverted.
+      - name: Ensure Cloud Scheduler trigger for anonymous-user-cleanup exists
+        run: |
+          SCHEDULER_URI="https://$GCP_REGION-run.googleapis.com/apis/run.googleapis.com/v1/namespaces/$GCP_PROJECT_ID/jobs/juno-trial-anon-cleanup:run"
+          SCHEDULER_SA="juno-scheduler-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com"
+
+          gcloud scheduler jobs update http juno-trial-anon-cleanup-daily \
+            --project="$GCP_PROJECT_ID" \
+            --location="$GCP_REGION" \
+            --schedule="0 4 * * *" \
+            --time-zone="Etc/UTC" \
+            --uri="$SCHEDULER_URI" \
+            --http-method=POST \
+            --oauth-service-account-email="$SCHEDULER_SA" \
+          || gcloud scheduler jobs create http juno-trial-anon-cleanup-daily \
+            --project="$GCP_PROJECT_ID" \
+            --location="$GCP_REGION" \
+            --schedule="0 4 * * *" \
+            --time-zone="Etc/UTC" \
+            --uri="$SCHEDULER_URI" \
+            --http-method=POST \
+            --oauth-service-account-email="$SCHEDULER_SA"
+
+      - name: Apply GCS lifecycle rule for trial uploads
+        run: |
+          cat > /tmp/trial-lifecycle-rule.json <<'EOF'
+          {"rule":[{"action":{"type":"Delete"},"condition":{"age":1,"matchesPrefix":["care_plan_trial/"]}}]}
+          EOF
+          gcloud storage buckets update "gs://$GCP_BUCKET_NAME" \
+            --lifecycle-file=/tmp/trial-lifecycle-rule.json \
+            --project="$GCP_PROJECT_ID"
 
   deploy-frontend:
     needs: deploy-backend

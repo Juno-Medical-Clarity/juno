@@ -13,6 +13,7 @@ import uuid
 from datetime import datetime, timezone, timedelta
 
 from flask import Blueprint, jsonify, request
+from werkzeug.exceptions import HTTPException
 
 from models.job import JobDoc
 from utils.firebase import create_job_doc, verify_firebase_token, firestore_client
@@ -20,7 +21,11 @@ from utils.cloud_tasks import enqueue_job_safe, require_env, MissingJobConfigErr
 from utils.rate_limit import rate_limit_trial
 from utils.gcs import delete_gcs_object
 from utils.constants import Constants
-from services.care_plan_input import resolve_uploaded_files, upload_combined_pdf
+from services.care_plan_input import (
+    resolve_uploaded_files,
+    upload_combined_pdf,
+    validate_extracted_text_length,
+)
 from utils.markers.markers import Markers
 from utils.markers.marker import Scope
 from errors import make_error_response, ErrorCode, JunoError
@@ -36,10 +41,10 @@ def _resolve_trial_input(user_id: str) -> dict:
     json_data = request.get_json(silent=True) or {}
     text_input = (request.form.get("text") or json_data.get("text") or "").strip()
     if text_input:
-        if len(text_input) > Constants.Uploads.MAX_TEXT_LENGTH:
-            raise ValueError(
-                f"Text input exceeds {Constants.Uploads.MAX_TEXT_LENGTH} character limit"
-            )
+        # Shared with routes/care_plan_jobs.py's identical pasted-text check --
+        # enforces the char cap, the UTF-8 byte cap (Finding 1), and rejects
+        # unstorable text such as a lone UTF-16 surrogate (Finding 5).
+        validate_extracted_text_length(text_input)
         return {
             "input_source_kind": "text",
             "input_text": text_input,
@@ -53,12 +58,24 @@ def _resolve_trial_input(user_id: str) -> dict:
     uploads = request.files.getlist("files")
     if not uploads:
         raise ValueError("Request must include 'files' or 'text'")
-    if len(uploads) > Constants.Trial.MAX_FILE_COUNT:
-        raise ValueError(f"Trial supports at most {Constants.Trial.MAX_FILE_COUNT} files")
 
-    # Unchanged: still enforces MAX_FILE_BYTES / MAX_AGGREGATE_FILE_BYTES /
-    # ALLOWED_EXTENSIONS exactly as the main app does (main-app behavior untouched).
-    resolved, raw_pdf_bytes = resolve_uploaded_files(uploads)
+    # Trial-only upload limits (explicit product decision): max 5 files, max
+    # 10 MB TOTAL across all files, and NO per-file size limit -- deliberately
+    # more permissive per file, tighter in aggregate, than the main app's
+    # Constants.Uploads limits (10 files / 10 MB per file / 25 MB aggregate),
+    # which this call does not touch (routes/care_plan_jobs.py calls
+    # resolve_uploaded_files with no overrides, so it keeps those defaults).
+    # tolerate_unusable_files=True: a single unusable file (blank scan,
+    # corrupt/encrypted PDF, unsupported type, etc.) is skipped rather than
+    # aborting the whole multi-file submission (Finding 8); the request only
+    # fails if none of the files yield usable content (then EMPTY_DOCUMENT).
+    resolved, raw_pdf_bytes = resolve_uploaded_files(
+        uploads,
+        max_file_count=Constants.Trial.MAX_FILE_COUNT,
+        max_aggregate_bytes=Constants.Trial.MAX_AGGREGATE_FILE_BYTES,
+        enforce_per_file_limit=False,
+        tolerate_unusable_files=True,
+    )
     pdf_gcs_uri = upload_combined_pdf(raw_pdf_bytes, user_id, is_trial=True) if raw_pdf_bytes else None
     return {
         "input_source_kind": "upload",
@@ -68,6 +85,10 @@ def _resolve_trial_input(user_id: str) -> dict:
         "input_pdf_gcs_uri": pdf_gcs_uri,
         "input_version": Constants.Pipeline.PIPELINE_VERSION_V1_2,
         "grading_enabled": True,
+        # Surface which files (if any) were tolerated-skipped as unusable
+        # (Finding 8) -- computed by resolve_uploaded_files but previously
+        # discarded here, never reaching the job doc or the client at all.
+        "skipped_files": resolved.skipped_files,
     }
 
 
@@ -118,6 +139,14 @@ def create_trial_job(user_id: str):
                 return err
 
             return jsonify({"job_id": job_id}), 202
+        except HTTPException:
+            # e.g. werkzeug.exceptions.RequestEntityTooLarge raised lazily by
+            # request.form/request.get_json() the first time the body is read,
+            # once it exceeds app.config["MAX_CONTENT_LENGTH"] -- a bare
+            # `except Exception` below would swallow this and misreport it as
+            # a generic 500 instead of letting Flask's own @app.errorhandler
+            # (413, 404, etc.) produce the correct, standard JSON envelope.
+            raise
         except Exception:
             logger.exception("create_trial_job: unexpected error")
             return make_error_response(ErrorCode.INTERNAL_ERROR, request.path).to_dict(), 500

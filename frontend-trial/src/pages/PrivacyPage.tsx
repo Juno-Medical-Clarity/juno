@@ -65,10 +65,10 @@ export default function PrivacyPage() {
           <li>The underlying file is deleted from our storage as soon as text has been extracted from it.</li>
           <li>
             The job record (including the simplified output) is deleted as soon as your
-            browser has finished displaying your results and you close or navigate away from
-            the page. As a safety net — in case that never happens, for example if you close
-            the tab mid-process — an automatic backstop still removes it, typically within a
-            day.
+            browser has finished displaying your results — you don't need to close the tab or
+            navigate away for this to happen. As a safety net — in case results are never
+            displayed, for example if you close the tab mid-process — an automatic backstop
+            still removes it, typically within a day.
           </li>
           <li>
             We do not keep a permanent copy, we do not use your content to train any model,

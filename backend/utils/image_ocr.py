@@ -46,6 +46,27 @@ def extract_text_from_image(image_bytes: bytes, ext: str) -> str:
     if mime_type is None:
         raise JunoError(ErrorCode.UNSUPPORTED_FILE_TYPE, detail=f"extension: {ext}")
 
+    # Validate the bytes actually decode as an image before spending a Vertex
+    # AI call on them. Without this, corrupt/zero-byte/garbage image bytes
+    # were silently passed through by _maybe_downscale (which swallows decode
+    # errors as "best effort, fall back to original bytes" -- appropriate for
+    # its own resize-only job, not for detecting a genuinely unreadable file)
+    # straight into generate_text_from_image, producing either a confusing
+    # Vertex API error or unreliable model behavior instead of a clean,
+    # actionable 400 (edge-case review Finding 6 -- verified for PyPDF2;
+    # image bytes have the same class of gap). Image.verify() invalidates
+    # the object for further use, which is fine: _maybe_downscale below opens
+    # its own fresh Image from the same bytes.
+    try:
+        PIL.Image.open(io.BytesIO(image_bytes)).verify()
+    except Exception as exc:
+        raise JunoError(
+            ErrorCode.FILE_PARSE_FAILED,
+            detail=f"Image could not be decoded -- it may be corrupted or not actually "
+                   f"a {ext.upper()} file ({type(exc).__name__}).",
+            original=exc,
+        ) from exc
+
     image_bytes = _maybe_downscale(image_bytes, ext)
 
     client = LLMClient()

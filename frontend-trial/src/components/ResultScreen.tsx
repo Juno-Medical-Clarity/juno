@@ -16,6 +16,15 @@ interface ResultScreenProps {
 
 export default function ResultScreen({ jobDoc, jobId, deletedRef, onRestart }: ResultScreenProps) {
   const trackedRef = useRef(false);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
+  // Move focus to this screen's heading on arrival (edge-case review #3):
+  // ResultScreen mounts fresh exactly once per completed/errored job, so this
+  // announces "results have arrived" to screen-reader users regardless of
+  // which of the three branches below actually renders.
+  useEffect(() => {
+    headingRef.current?.focus();
+  }, []);
 
   // Primary DELETE trigger (PRD §4.13, layer 1) — fires once, on reaching this
   // screen, sharing deletedRef with TrialPage's safety-net trigger so the two
@@ -62,6 +71,8 @@ export default function ResultScreen({ jobDoc, jobId, deletedRef, onRestart }: R
       ?? 'Something went wrong while creating your care plan.';
     return (
       <div className="glass-card">
+        <h1 ref={headingRef} tabIndex={-1} className="section-title">{jobDoc.name || 'Your care plan'}</h1>
+        <p className="sr-only" role="status" aria-live="polite">There was a problem creating your care plan.</p>
         <p className="error-box">{message}</p>
         <button className="cta-btn" onClick={onRestart}>Try again</button>
       </div>
@@ -75,7 +86,8 @@ export default function ResultScreen({ jobDoc, jobId, deletedRef, onRestart }: R
   if (!outputData) {
     return (
       <div className="glass-card">
-        <p className="section-title">{jobDoc.name || 'Your care plan'}</p>
+        <h1 ref={headingRef} tabIndex={-1} className="section-title">{jobDoc.name || 'Your care plan'}</h1>
+        <p className="sr-only" role="status" aria-live="polite">There was a problem creating your care plan.</p>
         <p className="error-box">
           Processing finished, but we couldn't load your results. Nothing was saved.
         </p>
@@ -101,7 +113,8 @@ export default function ResultScreen({ jobDoc, jobId, deletedRef, onRestart }: R
 
   return (
     <div>
-      <h1>{jobDoc.name || 'Your care plan'}</h1>
+      <h1 ref={headingRef} tabIndex={-1}>{jobDoc.name || 'Your care plan'}</h1>
+      <p className="sr-only" role="status" aria-live="polite">Your care plan is ready.</p>
       {formattedDate && <p>{formattedDate}</p>}
       {before != null && after != null && (
         <p className="score-widget">Simplification score {before} (before) → {after} (after)</p>

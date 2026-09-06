@@ -86,15 +86,49 @@ def test_resolve_uploaded_files_image_becomes_raw_merge_candidate(mock_extract_i
 # validate_extracted_text_length / resolve_uploaded_files up-front size check
 # ---------------------------------------------------------------------------
 
-def test_validate_extracted_text_length_accepts_text_at_limit():
-    text = "a" * Constants.Uploads.MAX_TEXT_LENGTH
+def test_validate_extracted_text_length_accepts_text_at_char_limit():
+    """ASCII text at the byte-cap boundary (MAX_TEXT_BYTES, the binding
+    constraint for 1-byte-per-char text) must still be accepted -- proves the
+    new byte cap doesn't shrink the previously-allowed ASCII length."""
+    text = "a" * Constants.Uploads.MAX_TEXT_BYTES
     validate_extracted_text_length(text)  # must not raise
 
 
-def test_validate_extracted_text_length_rejects_text_over_limit():
+def test_validate_extracted_text_length_rejects_text_over_char_limit():
     text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
     with pytest.raises(ValueError, match="too long"):
         validate_extracted_text_length(text)
+
+
+def test_validate_extracted_text_length_rejects_text_over_byte_limit():
+    text = "a" * (Constants.Uploads.MAX_TEXT_BYTES + 1)
+    with pytest.raises(ValueError, match="too long"):
+        validate_extracted_text_length(text)
+
+
+def test_validate_extracted_text_length_rejects_cjk_text_under_char_cap_but_over_byte_cap():
+    """Regression for edge-case review Finding 1: CJK text well under the
+    500,000-character cap (so the old char-only check would have passed it)
+    is 3 bytes/char in UTF-8, so it can exceed MAX_TEXT_BYTES while staying
+    far under MAX_TEXT_LENGTH -- and must now be rejected by the byte check."""
+    char_count = (Constants.Uploads.MAX_TEXT_BYTES // 3) + 100
+    assert char_count < Constants.Uploads.MAX_TEXT_LENGTH
+    text = "中" * char_count  # CJK character, 3 bytes each in UTF-8
+    with pytest.raises(ValueError, match="too long"):
+        validate_extracted_text_length(text)
+
+
+def test_validate_extracted_text_length_rejects_lone_surrogate():
+    """Regression for Finding 5: a lone UTF-16 surrogate can't be UTF-8
+    encoded; must be rejected with a clean ValueError, not an uncaught
+    UnicodeEncodeError deep inside Firestore's client."""
+    with pytest.raises(ValueError, match="cannot be saved"):
+        validate_extracted_text_length("hello \ud800 world")
+
+
+def test_validate_extracted_text_length_rejects_null_byte():
+    with pytest.raises(ValueError, match="null byte"):
+        validate_extracted_text_length("hello \x00 world")
 
 
 def test_resolve_uploaded_files_rejects_extracted_text_over_limit():
@@ -102,8 +136,143 @@ def test_resolve_uploaded_files_rejects_extracted_text_over_limit():
     at all (unlike the pasted-text path), so an over-limit document would run
     every pipeline step before failing late with a misleading MAX_TOKENS
     error. It must now be rejected up front, before any job is created."""
-    oversized_text = "a" * (Constants.Uploads.MAX_TEXT_LENGTH + 1)
+    oversized_text = "a" * (Constants.Uploads.MAX_TEXT_BYTES + 1)
     fake_upload = _FakeUpload("notes.txt", oversized_text.encode("utf-8"))
 
     with pytest.raises(ValueError, match="too long"):
+        resolve_uploaded_files([fake_upload])
+
+
+# ---------------------------------------------------------------------------
+# Minimum meaningful content (Finding 2 -- scanned/no-text-layer bypass)
+# ---------------------------------------------------------------------------
+
+def test_resolve_uploaded_files_blank_txt_raises_empty_document():
+    """A blank/whitespace-only txt file must raise EMPTY_DOCUMENT rather than
+    silently becoming a non-empty '--- Source: ... ---'-only document."""
+    fake_upload = _FakeUpload("blank.txt", b"   \n\n  ")
+    with pytest.raises(JunoError) as exc_info:
+        resolve_uploaded_files([fake_upload])
+    assert exc_info.value.error_code == ErrorCode.EMPTY_DOCUMENT
+
+
+def test_resolve_uploaded_files_near_empty_txt_below_min_content_raises_empty_document():
+    """A handful of stray characters (well under MIN_MEANINGFUL_CONTENT_CHARS)
+    also counts as "no real content", not just a literal empty string."""
+    fake_upload = _FakeUpload("blank.txt", b"x")
+    with pytest.raises(JunoError) as exc_info:
+        resolve_uploaded_files([fake_upload])
+    assert exc_info.value.error_code == ErrorCode.EMPTY_DOCUMENT
+
+
+def test_resolve_uploaded_files_accepts_text_at_min_content_length():
+    text = "a" * Constants.Uploads.MIN_MEANINGFUL_CONTENT_CHARS
+    fake_upload = _FakeUpload("notes.txt", text.encode("utf-8"))
+    resolved, _ = resolve_uploaded_files([fake_upload])
+    assert text in resolved.text
+
+
+# ---------------------------------------------------------------------------
+# tolerate_unusable_files (trial-only multi-file tolerance -- Finding 8)
+# ---------------------------------------------------------------------------
+
+def test_resolve_uploaded_files_non_tolerant_mode_aborts_on_first_bad_file():
+    """Default (main-app) behavior is unchanged: one bad file among several
+    aborts the whole request."""
+    good = _FakeUpload("good.txt", b"This is a perfectly good clinical note.")
+    blank = _FakeUpload("blank.txt", b"   ")
+    with pytest.raises(JunoError) as exc_info:
+        resolve_uploaded_files([good, blank])
+    assert exc_info.value.error_code == ErrorCode.EMPTY_DOCUMENT
+
+
+def test_resolve_uploaded_files_tolerant_mode_skips_bad_file_and_keeps_good_ones():
+    good = _FakeUpload("good.txt", b"This is a perfectly good clinical note.")
+    blank = _FakeUpload("blank.txt", b"   ")
+
+    resolved, _ = resolve_uploaded_files([good, blank], tolerate_unusable_files=True)
+
+    assert "perfectly good clinical note" in resolved.text
+    assert resolved.skipped_files == ["blank.txt"]
+
+
+def test_resolve_uploaded_files_tolerant_mode_raises_empty_document_when_all_files_bad():
+    blank1 = _FakeUpload("blank1.txt", b"   ")
+    blank2 = _FakeUpload("blank2.txt", b"")
+
+    with pytest.raises(JunoError) as exc_info:
+        resolve_uploaded_files([blank1, blank2], tolerate_unusable_files=True)
+    assert exc_info.value.error_code == ErrorCode.EMPTY_DOCUMENT
+
+
+def test_resolve_uploaded_files_tolerant_mode_skips_unsupported_extension():
+    good = _FakeUpload("good.txt", b"This is a perfectly good clinical note.")
+    bad_ext = _FakeUpload("virus.exe", b"whatever")
+
+    resolved, _ = resolve_uploaded_files([good, bad_ext], tolerate_unusable_files=True)
+
+    assert "perfectly good clinical note" in resolved.text
+    assert resolved.skipped_files == ["virus.exe"]
+
+
+# ---------------------------------------------------------------------------
+# Trial-scoped upload limits (Finding A -- parameterized limits)
+# ---------------------------------------------------------------------------
+
+def test_resolve_uploaded_files_respects_custom_max_file_count():
+    uploads = [_FakeUpload(f"f{i}.txt", b"a" * 30) for i in range(3)]
+    with pytest.raises(ValueError, match="at most 2 files"):
+        resolve_uploaded_files(uploads, max_file_count=2)
+
+
+def test_resolve_uploaded_files_enforce_per_file_limit_false_skips_per_file_check():
+    """enforce_per_file_limit=False (trial) allows a single file larger than
+    max_file_bytes as long as the aggregate cap isn't exceeded."""
+    big = _FakeUpload("big.txt", b"a" * 2000)
+    resolved, _ = resolve_uploaded_files(
+        [big], max_file_bytes=1024, enforce_per_file_limit=False, max_aggregate_bytes=10 * 1024 * 1024,
+    )
+    assert len(resolved.text) > 0
+
+
+def test_resolve_uploaded_files_custom_aggregate_limit_still_enforced_when_per_file_disabled():
+    big = _FakeUpload("big.txt", b"a" * (2 * 1024 * 1024))
+    with pytest.raises(ValueError, match="too large"):
+        resolve_uploaded_files(
+            [big], enforce_per_file_limit=False, max_aggregate_bytes=1024 * 1024,
+        )
+
+
+# ---------------------------------------------------------------------------
+# Corrupt/unstorable file handling (Finding 5 / 6)
+# ---------------------------------------------------------------------------
+
+def test_extract_text_from_bytes_corrupt_pdf_raises_file_parse_failed():
+    with pytest.raises(JunoError) as exc_info:
+        extract_text_from_bytes(b"not a real pdf, just garbage bytes", "notes.pdf")
+    assert exc_info.value.error_code == ErrorCode.FILE_PARSE_FAILED
+
+
+def test_extract_text_from_bytes_empty_pdf_raises_file_parse_failed():
+    with pytest.raises(JunoError) as exc_info:
+        extract_text_from_bytes(b"", "empty.pdf")
+    assert exc_info.value.error_code == ErrorCode.FILE_PARSE_FAILED
+
+
+def test_extract_text_from_bytes_corrupt_docx_raises_file_parse_failed():
+    with pytest.raises(JunoError) as exc_info:
+        extract_text_from_bytes(b"not a real docx, just garbage bytes", "notes.docx")
+    assert exc_info.value.error_code == ErrorCode.FILE_PARSE_FAILED
+
+
+@patch(
+    "services.care_plan_input.extract_text_from_bytes",
+    return_value="hello \ud800 world -- padding so this clears MIN_MEANINGFUL_CONTENT_CHARS",
+)
+def test_resolve_uploaded_files_rejects_extracted_text_containing_lone_surrogate(mock_extract):
+    """PDF/OCR extraction output can contain a lone surrogate just like pasted
+    JSON text (Finding 5) -- resolve_uploaded_files must reject it at the
+    per-file boundary regardless of source format, not just for pasted text."""
+    fake_upload = _FakeUpload("notes.pdf", b"irrelevant -- extract_text_from_bytes is mocked")
+    with pytest.raises(ValueError, match="cannot be saved"):
         resolve_uploaded_files([fake_upload])

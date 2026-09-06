@@ -20,6 +20,12 @@ describe('UploadScreen', () => {
     expect(screen.getByRole('button', { name: 'Simplify' })).toBeDisabled();
   });
 
+  it('moves focus to the "Simplify" heading on mount (edge-case review #3)', () => {
+    render(<UploadScreen authState="ready" onAuthRetry={vi.fn()} onJobCreated={vi.fn()} />);
+    expect(document.activeElement?.tagName).toBe('H1');
+    expect(document.activeElement).toHaveTextContent('Simplify');
+  });
+
   it('shows a "getting ready" hint while authState is pending, and never calls createTrialJob for a pending submit', async () => {
     render(<UploadScreen authState="pending" onAuthRetry={vi.fn()} onJobCreated={vi.fn()} />);
     expect(screen.getByRole('status')).toHaveTextContent(/getting ready/i);
@@ -66,12 +72,12 @@ describe('UploadScreen', () => {
     const input = document.querySelector('input[type="file"]') as HTMLInputElement;
     const file = new File(['hello'], 'note.txt', { type: 'text/plain', lastModified: 1700000000000 });
     await user.upload(input, file);
-    expect(screen.getByText('1 of 5 files · 5 B of 25 MB')).toBeInTheDocument();
+    expect(screen.getByText('1 of 5 files · 5 B of 10 MB')).toBeInTheDocument();
 
     const duplicate = new File(['hello'], 'note.txt', { type: 'text/plain', lastModified: 1700000000000 });
     await user.upload(input, duplicate);
 
-    expect(screen.getByText('1 of 5 files · 5 B of 25 MB')).toBeInTheDocument();
+    expect(screen.getByText('1 of 5 files · 5 B of 10 MB')).toBeInTheDocument();
     expect(screen.getAllByText('note.txt')).toHaveLength(1);
   });
 

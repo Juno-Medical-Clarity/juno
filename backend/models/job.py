@@ -4,7 +4,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Optional
 
-from pydantic import ConfigDict
+from pydantic import ConfigDict, Field
 
 from .base import JsonModel
 from .api_response import ErrorDetail, StatusEnum
@@ -76,6 +76,17 @@ class JobDoc(JsonModel):
     # ── Trial (SP2) ───────────────────────────────────────────────────────
     is_trial: bool = False
     expires_at: Optional[datetime] = None
+    # Filenames from a tolerant multi-file trial upload that were individually
+    # unusable (corrupt/encrypted/blank/unsupported) and skipped rather than
+    # aborting the whole batch -- see services.care_plan_input.
+    # resolve_uploaded_files's tolerate_unusable_files param and
+    # models.input.ResolvedInput.skipped_files. Previously computed and
+    # unit-tested at the service layer but never persisted anywhere the
+    # client could observe it (scenario-validation-2026-09-05.md); this
+    # field closes that gap so a future trial UI can show the user which
+    # of their uploaded files were skipped. Always [] for non-trial jobs
+    # and for trial jobs with no skipped files.
+    skipped_files: list[str] = Field(default_factory=list)
 
     # ── Factories ─────────────────────────────────────────────────────────
 

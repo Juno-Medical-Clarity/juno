@@ -3,6 +3,10 @@
 AI-powered medical appointment note simplification. Converts clinical provider notes
 (SOAP notes, appointment summaries) into plain-language summaries a patient can understand.
 
+There are two frontends on top of the same backend pipeline: the full authenticated app
+(`frontend/`), and a public, no-login trial (`frontend-trial/`) that lets anyone try the
+Simplify pipeline without an account. See [Documentation](#documentation) below.
+
 ## What It Does
 
 1. User uploads a PDF, TXT, or DOCX provider note (or pastes text)
@@ -16,7 +20,11 @@ AI-powered medical appointment note simplification. Converts clinical provider n
 ```
 juno/
 ├── backend/          Python Flask API (deployed on Cloud Run)
-├── frontend/         React + Vite web app (deployed on Firebase Hosting)
+├── frontend/         React + Vite web app — full authenticated app
+│                     (deployed to Firebase Hosting site juno-app-99.web.app)
+├── frontend-trial/   React + Vite web app — public, no-login trial
+│                     (deployed to Firebase Hosting site juno-medical-clarity.web.app)
+├── docs/             Architecture and reference docs — see docs/README.md
 └── README.md
 ```
 
@@ -45,6 +53,20 @@ npm run dev
 
 See `backend/README.md` for Cloud Run deployment and `frontend/README.md` for Firebase Hosting.
 See `docs/logging.md` for logging setup, developer logging conventions, and Cloud Logging queries.
+
+## Documentation
+
+`docs/README.md` is the index and reading guide for all project documentation. Start
+there. It includes reading paths for understanding the trial version, the processing
+pipeline, local development, deployment/operations, and data/privacy/compliance.
+
+Three docs added for the public trial version are the most current architectural
+reference:
+- `docs/trial-overview.md` — what the trial is and how it works, in brief.
+- `docs/trial-architecture.md` — the trial's topology, auth, API surface, rate
+  limiting, data lifecycle, frontend, analytics, and CI/CD, in depth.
+- `docs/care-plan-pipeline.md` — the backend processing pipeline shared by the
+  authenticated app and the trial, in depth.
 
 ## Required Environment Variables
 

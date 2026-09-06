@@ -184,8 +184,24 @@ def build_error_data_from_exc(exc: Exception) -> dict:
     Classify any exception and return a Firestore-ready ``error_data`` dict.
 
     Shorthand for ``build_error_data(*_classify_exc(exc))``.
+
+    Defense in depth for UNKNOWN_ERROR (the catch-all classification for any
+    exception _classify_exc doesn't recognize): _classify_exc's fallback
+    returns ``str(exc)`` as the detail, which lands verbatim in
+    ``error_data.details`` on the Firestore job doc -- a field the frontend's
+    live listener reads. Most such messages are innocuous library/network
+    error text, but some exception types (certain Pydantic ValidationErrors,
+    for instance) embed the actual invalid value in their message, and this
+    is the one branch where the underlying exception was never classified/
+    curated by our own code (contrast a JunoError's `detail`, which IS
+    written by us and is safe to show). Rather than pass arbitrary exception
+    text through to a public, health-adjacent client, drop it here; the full
+    exception is still captured server-side via `logger.exception` at every
+    call site that leads here (see edge-case review Finding 10).
     """
     error_code, detail = _classify_exc(exc)
+    if error_code is ErrorCode.UNKNOWN_ERROR:
+        detail = ""
     return build_error_data(error_code, detail)
 
 

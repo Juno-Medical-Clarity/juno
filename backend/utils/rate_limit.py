@@ -6,6 +6,7 @@ import hashlib
 import hmac
 import logging
 import os
+import secrets
 from datetime import datetime, timezone, timedelta
 from functools import wraps
 
@@ -15,6 +16,13 @@ from google.cloud import firestore
 from utils.firebase import firestore_client
 from utils.constants import Constants
 from errors import make_error_response, ErrorCode
+
+# Process-local fallback HMAC key, used ONLY if TRIAL_RATE_LIMIT_SALT is
+# unset -- see _hash_ip. Generated once per process at import time (not
+# module-level None + lazy-init) so it's stable for the life of this
+# instance but never written anywhere or derivable from outside the
+# process.
+_FALLBACK_IP_HASH_SALT = secrets.token_bytes(32)
 
 logger = logging.getLogger(__name__)
 
@@ -111,10 +119,38 @@ def get_client_ip() -> str:
 
 
 def _hash_ip(ip: str) -> str:
+    """HMAC-SHA256 the client IP, truncated to 20 hex chars, for use as (part
+    of) a Firestore document ID.
+
+    If TRIAL_RATE_LIMIT_SALT is unset, this used to silently fall back to an
+    empty HMAC key -- i.e. unsalted SHA-256 over the IP. That's trivially
+    reversible against the small IPv4 address space (rainbow-table/brute-
+    force), turning trial_rate_limits' document IDs into an effectively
+    plaintext IP log (edge-case review Finding 9). Rather than fail the
+    whole trial feature closed on a missing env var (rate_limit_trial's own
+    design deliberately fails OPEN on any check_rate_limit() error --
+    availability over strict enforcement for a free-feature abuse guard, not
+    a security boundary), fall back to a random, process-local salt: it
+    still isn't guessable/reversible externally, at the cost of not being
+    stable across process restarts/instances (a known, accepted limitation
+    of this fallback -- rate-limit buckets for the same IP may not match
+    between instances until the env var is set). Logs at ERROR (not WARNING)
+    since this is a misconfiguration that must be fixed in production, not a
+    routine/expected condition.
+    """
     secret = os.environ.get("TRIAL_RATE_LIMIT_SALT", "")
-    if not secret:
-        logger.warning("rate_limit: TRIAL_RATE_LIMIT_SALT not set — hashing unsalted")
-    return hmac.new(secret.encode(), ip.encode(), hashlib.sha256).hexdigest()[:20]
+    if secret:
+        key = secret.encode()
+    else:
+        logger.error(
+            "rate_limit: TRIAL_RATE_LIMIT_SALT is not set in this environment -- "
+            "falling back to a random, process-local salt so IP hashes are not a "
+            "trivially reversible unsalted SHA-256. Set TRIAL_RATE_LIMIT_SALT in "
+            "production; until then, rate-limit buckets for the same IP will not "
+            "necessarily match across process restarts/instances."
+        )
+        key = _FALLBACK_IP_HASH_SALT
+    return hmac.new(key, ip.encode(), hashlib.sha256).hexdigest()[:20]
 
 
 @firestore.transactional

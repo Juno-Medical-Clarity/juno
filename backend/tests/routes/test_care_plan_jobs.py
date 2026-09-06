@@ -152,7 +152,7 @@ def test_grading_enabled_default_true(mock_create_doc, mock_enqueue, client_jobs
 @patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
 @patch("routes.care_plan_jobs.create_job_doc")
 @patch("routes.care_plan_jobs.upload_combined_pdf", return_value="gs://fake-bucket/fake.pdf")
-@patch("services.care_plan_input.extract_text_from_image", return_value="OCR'd image text")
+@patch("services.care_plan_input.extract_text_from_image", return_value="OCR'd image text from the clinical scan")
 def test_create_care_plan_job_accepts_image_upload(
     mock_extract_image, mock_upload_pdf, mock_create_doc, mock_enqueue, client_jobs, auth_ok
 ):
@@ -168,7 +168,7 @@ def test_create_care_plan_job_accepts_image_upload(
 
     mock_create_doc.assert_called_once()
     payload = mock_create_doc.call_args.kwargs["payload"]
-    assert "OCR'd image text" in payload["input_text"]
+    assert "OCR'd image text from the clinical scan" in payload["input_text"]
 
 
 @patch.dict("os.environ", {
@@ -287,7 +287,7 @@ def test_post_non_anonymous_token_still_accepted(mock_create_doc, mock_enqueue, 
 @patch("routes.care_plan_jobs.create_job_doc")
 def test_post_text_at_max_length_is_accepted(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
     from utils.constants import Constants
-    text = "a" * Constants.Uploads.MAX_TEXT_LENGTH
+    text = "a" * Constants.Uploads.MAX_TEXT_BYTES
     resp = client_jobs.post("/care_plan/jobs", json={"text": text}, headers=auth_ok)
     assert resp.status_code == 202
     mock_create_doc.assert_called_once()
@@ -358,3 +358,99 @@ def test_post_doc_id_extracted_text_over_max_length_returns_400(
     assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
     mock_create_doc.assert_not_called()
     mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_cjk_text_under_char_cap_but_over_byte_cap_returns_400(mock_create_doc, mock_enqueue, client_jobs, auth_ok):
+    """Regression for edge-case review Finding 1, applies to the main app
+    too (validate_extracted_text_length is shared): CJK text under the
+    500,000-char cap but over the UTF-8 byte cap must be rejected cleanly."""
+    from utils.constants import Constants
+    char_count = (Constants.Uploads.MAX_TEXT_BYTES // 3) + 100
+    assert char_count < Constants.Uploads.MAX_TEXT_LENGTH
+    text = "中" * char_count
+    resp = client_jobs.post("/care_plan/jobs", json={"text": text}, headers=auth_ok)
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_text_with_lone_surrogate_returns_400_not_500(mock_create_doc, client_jobs, auth_ok):
+    """Regression for Finding 5, applies to the main app too."""
+    resp = client_jobs.post(
+        "/care_plan/jobs",
+        data='{"text": "hello \\ud800 world"}',
+        headers={**auth_ok, "Content-Type": "application/json"},
+    )
+    assert resp.status_code == 400
+    assert resp.get_json()["error"]["code"] == "INPUT_VALIDATION_ERROR"
+    mock_create_doc.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.enqueue_job_safe", return_value=None)
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_multipart_one_blank_file_among_several_still_aborts_main_app(
+    mock_create_doc, mock_enqueue, client_jobs, auth_ok
+):
+    """Regression guard: main-app behavior for Finding 8 is UNCHANGED -- one
+    unusable file among several still aborts the whole request (tolerant
+    multi-file handling is trial-only)."""
+    data = {
+        "files": [
+            (io.BytesIO(b"This is a perfectly good clinical note about hypertension."), "good.txt"),
+            (io.BytesIO(b"   "), "blank.txt"),
+        ]
+    }
+    resp = client_jobs.post(
+        "/care_plan/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
+    )
+    assert resp.status_code == 422
+    assert resp.get_json()["error"]["code"] == "EMPTY_DOCUMENT"
+    mock_create_doc.assert_not_called()
+    mock_enqueue.assert_not_called()
+
+
+@patch.dict("os.environ", {
+    "CLOUD_TASKS_QUEUE": "my-queue",
+    "WORKER_URL": "https://worker.run.app",
+    "WORKER_SERVICE_ACCOUNT": "sa@proj.iam",
+})
+@patch("routes.care_plan_jobs.create_job_doc")
+def test_post_corrupt_pdf_returns_400_not_500(mock_create_doc, client_jobs, auth_ok):
+    """Regression for Finding 6, applies to the main app too."""
+    data = {"files": (io.BytesIO(b"garbage, not a real pdf"), "notes.pdf")}
+    resp = client_jobs.post(
+        "/care_plan/jobs", data=data, content_type="multipart/form-data", headers=auth_ok,
+    )
+    assert resp.status_code == 422
+    assert resp.get_json()["error"]["code"] == "FILE_PARSE_FAILED"
+    mock_create_doc.assert_not_called()
+
+
+def test_resolve_uploaded_files_main_app_call_site_uses_default_limits():
+    """Regression guard: routes.care_plan_jobs must call resolve_uploaded_files
+    with NO overrides, so it keeps Constants.Uploads' main-app defaults (10
+    files / 10 MB per file / 25 MB aggregate) exactly as before this change."""
+    import inspect
+    from routes import care_plan_jobs as care_plan_jobs_module
+
+    source = inspect.getsource(care_plan_jobs_module._resolve_input_for_job)
+    assert "resolve_uploaded_files(uploads)" in source

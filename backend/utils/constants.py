@@ -49,6 +49,117 @@ class Constants:
                                                         # ceiling for pipeline output is
                                                         # Llm.MAX_TOKENS_LONG_FORM, not this.
 
+        MAX_TEXT_BYTES: int = 350_000                  # UTF-8-ENCODED BYTE budget, enforced
+                                                        # ALONGSIDE (not instead of) the char-
+                                                        # based MAX_TEXT_LENGTH above, via
+                                                        # `len(text.encode("utf-8"))` in
+                                                        # validate_extracted_text_length. Exists
+                                                        # because MAX_TEXT_LENGTH alone doesn't
+                                                        # bound Firestore's 1,048,576-byte
+                                                        # (1 MiB) per-document hard limit:
+                                                        # Firestore/gRPC measures document size
+                                                        # in UTF-8-encoded bytes, but
+                                                        # `len(text)` counts codepoints, so
+                                                        # non-ASCII text passes the char check
+                                                        # while still being oversized in bytes
+                                                        # -- 500,000 chars of CJK is ~1.5 MB in
+                                                        # UTF-8 (3 bytes/char), emoji/
+                                                        # supplementary-plane text ~2 MB (4
+                                                        # bytes/char). Both previously produced
+                                                        # an uncaught Firestore write failure
+                                                        # (500) instead of a clean 400 (verified
+                                                        # empirically; see .dev/trial-simplify/
+                                                        # edge-case-review-backend-2026-09-05.md
+                                                        # Finding 1).
+                                                        #
+                                                        # Sized against the FULL completed
+                                                        # care_plan_outputs doc, not just
+                                                        # input_text, per that same review:
+                                                        #   1,048,576 B  hard Firestore doc limit
+                                                        #   -   ~2,000 B  job metadata (uid,
+                                                        #                 timestamps, status,
+                                                        #                 filenames, flags, etc.
+                                                        #                 -- all small scalars)
+                                                        #   - ~150,000 B  output_data reserve:
+                                                        #                 for TRIAL jobs (the
+                                                        #                 only ones where
+                                                        #                 input_text and
+                                                        #                 output_data can appear
+                                                        #                 in the doc together --
+                                                        #                 see complete_job's
+                                                        #                 clear_input_text
+                                                        #                 param), output_data
+                                                        #                 has already had
+                                                        #                 care_plan.raw,
+                                                        #                 input.text, and all
+                                                        #                 non-"combined" grading
+                                                        #                 entries stripped (see
+                                                        #                 routes/worker.py's
+                                                        #                 is_trial branch); what
+                                                        #                 remains is the
+                                                        #                 structured care_plan
+                                                        #                 (medications/tests/
+                                                        #                 procedures/warning_
+                                                        #                 signs/terms/etc.,
+                                                        #                 fixed-shape items each
+                                                        #                 a few hundred bytes)
+                                                        #                 plus 2 grading entries
+                                                        #                 and metrics -- 150 KB
+                                                        #                 is a generous multiple
+                                                        #                 of even a dense real
+                                                        #                 visit's structured
+                                                        #                 output (consistent
+                                                        #                 with this file's own
+                                                        #                 note above that even a
+                                                        #                 "very long chart" is
+                                                        #                 well under 100K chars)
+                                                        #   = ~896,576 B  bytes actually
+                                                        #                 available for
+                                                        #                 input_text alone
+                                                        # 350,000 B leaves >2.5x that computed
+                                                        # margin unused (~546 KB spare) as a
+                                                        # deliberate additional safety buffer --
+                                                        # e.g. if the input_text-clearing fix
+                                                        # (complete_job/fail_job's
+                                                        # clear_input_text) were ever skipped or
+                                                        # raced, a 350,000-byte input_text
+                                                        # co-existing with a full 150 KB
+                                                        # output_data reserve would still fit
+                                                        # comfortably under the 1 MiB ceiling.
+                                                        # Also comfortably covers every
+                                                        # legitimate document per this file's
+                                                        # MAX_TEXT_LENGTH note (350,000 bytes is
+                                                        # ~116,000 CJK characters or ~350,000
+                                                        # ASCII characters -- either far exceeds
+                                                        # "even a very long chart").
+
+        MIN_MEANINGFUL_CONTENT_CHARS: int = 20         # Minimum stripped-text length (chars)
+                                                        # for a single extracted file, or the
+                                                        # final combined document, to count as
+                                                        # "real content" rather than noise or
+                                                        # separator scaffolding. Applied at
+                                                        # services.care_plan_input.
+                                                        # resolve_uploaded_files (per file) and
+                                                        # again defensively in routes/worker.py
+                                                        # (on the fully-resolved text, whichever
+                                                        # source_kind produced it) before any
+                                                        # pipeline/LLM step runs. Chosen well
+                                                        # below any realistic clinical note --
+                                                        # even a terse "Take Tylenol 500mg BID"
+                                                        # is >20 chars -- but well above what a
+                                                        # scanned/no-text-layer PDF, a blank
+                                                        # docx/txt/html, or stray OCR noise on a
+                                                        # truly blank image produces (0, or a
+                                                        # handful of characters at most).
+                                                        # Without this floor, such inputs were
+                                                        # silently treated as valid, non-empty
+                                                        # documents and the full 5-stage LLM
+                                                        # pipeline would run on essentially
+                                                        # nothing, very plausibly returning a
+                                                        # fabricated "completed" care plan
+                                                        # instead of failing with EMPTY_DOCUMENT
+                                                        # (see edge-case review Finding 2).
+
     class Pipeline:
         PIPELINE_VERSION_V1_2: str = "v1-2"
 
@@ -81,6 +192,13 @@ class Constants:
 
     class Trial:
         MAX_FILE_COUNT: int = 5
+        # Trial-only aggregate upload cap: 5 files / 10 MB combined / NO per-file
+        # cap (an explicit product decision -- deliberately more permissive per
+        # file, tighter in aggregate, than the main app's Constants.Uploads
+        # limits, which are unchanged by this). Mirrors
+        # frontend-trial/src/utils/validateFiles.ts's MAX_AGGREGATE_BYTES --
+        # keep these two values in sync.
+        MAX_AGGREGATE_FILE_BYTES: int = 10 * 1024 * 1024
         RATE_LIMIT_PER_IP_PER_HOUR: int = 5
         RATE_LIMIT_COLLECTION: str = "trial_rate_limits"
         RATE_LIMIT_COUNTER_TTL_HOURS: int = 2

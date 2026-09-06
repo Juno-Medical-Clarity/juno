@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { ChangeEvent, DragEvent } from 'react';
 import type { AuthState } from '../hooks/useAnonAuth';
 import { createTrialJob } from '../api/trialApi';
@@ -6,7 +6,6 @@ import {
   validateFiles,
   validateText,
   MAX_FILES,
-  MAX_FILE_BYTES,
   MAX_AGGREGATE_BYTES,
   formatBytes,
 } from '../utils/validateFiles';
@@ -40,6 +39,14 @@ export default function UploadScreen({ authState, onAuthRetry, onJobCreated }: U
   const [submitting, setSubmitting] = useState(false);
   const [dragActive, setDragActive] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
+  // Move focus to this screen's heading on arrival (edge-case review #3) --
+  // this component mounts fresh both on initial load and every time "Start
+  // over"/"Try again" brings the user back here from processing/result.
+  useEffect(() => {
+    headingRef.current?.focus();
+  }, []);
 
   function selectMode(next: InputMode) {
     setMode(next);
@@ -121,7 +128,7 @@ export default function UploadScreen({ authState, onAuthRetry, onJobCreated }: U
   return (
     <div>
       <header style={{ textAlign: 'center' }}>
-        <h1>Simplify</h1>
+        <h1 ref={headingRef} tabIndex={-1}>Simplify</h1>
         <p>Turn your care plan into plain language</p>
       </header>
 
@@ -195,38 +202,30 @@ export default function UploadScreen({ authState, onAuthRetry, onJobCreated }: U
                 PDF, TXT, DOCX, HTML, or an image (PNG/JPG/WEBP/HEIC)
               </span>
               <span className="upload-zone-limits">
-                Up to {MAX_FILES} files · {formatBytes(MAX_FILE_BYTES)} per file · {formatBytes(MAX_AGGREGATE_BYTES)} total
+                Up to {MAX_FILES} files · {formatBytes(MAX_AGGREGATE_BYTES)} total
               </span>
             </button>
           </div>
 
           {files.length > 0 && (
             <div className="file-list">
-              {files.map((f, i) => {
-                const tooLarge = f.size > MAX_FILE_BYTES;
-                return (
-                  <div key={`${f.name}-${f.lastModified}-${i}`} className={`file-card ${tooLarge ? 'file-card-error' : ''}`}>
-                    <span className="file-card-icon" aria-hidden="true">{fileExtBadge(f.name)}</span>
-                    <span className="file-card-info">
-                      <span className="file-card-name" title={f.name}>{f.name}</span>
-                      <span className="file-card-size">
-                        {formatBytes(f.size)}
-                        {tooLarge && (
-                          <span className="file-card-warning"> · Too large (max {formatBytes(MAX_FILE_BYTES)})</span>
-                        )}
-                      </span>
-                    </span>
-                    <button
-                      type="button"
-                      className="file-card-remove"
-                      aria-label={`Remove ${f.name}`}
-                      onClick={() => removeFile(i)}
-                    >
-                      ✕
-                    </button>
-                  </div>
-                );
-              })}
+              {files.map((f, i) => (
+                <div key={`${f.name}-${f.lastModified}-${i}`} className="file-card">
+                  <span className="file-card-icon" aria-hidden="true">{fileExtBadge(f.name)}</span>
+                  <span className="file-card-info">
+                    <span className="file-card-name" title={f.name}>{f.name}</span>
+                    <span className="file-card-size">{formatBytes(f.size)}</span>
+                  </span>
+                  <button
+                    type="button"
+                    className="file-card-remove"
+                    aria-label={`Remove ${f.name}`}
+                    onClick={() => removeFile(i)}
+                  >
+                    ✕
+                  </button>
+                </div>
+              ))}
               <div className="file-list-footer">
                 {files.length} of {MAX_FILES} files · {formatBytes(totalBytes)} of {formatBytes(MAX_AGGREGATE_BYTES)}
               </div>

@@ -8,6 +8,7 @@ step events into Adapter* events for the job worker.
 """
 
 import logging
+from concurrent.futures import ThreadPoolExecutor
 from typing import Generator
 
 from flask import g
@@ -39,6 +40,16 @@ def run_care_plan_pipeline(
     source_kind: str = "upload",
     is_batch: bool = False,
 ) -> Generator[AdapterStepEvent | AdapterResult | AdapterError, None, None]:
+    # Kick off the CPU-only "before" grading score immediately: it depends
+    # only on `text` (already available, before the pipeline's first LLM
+    # call even starts), not on any pipeline step's output — so it runs
+    # concurrently with the three sequential Vertex AI calls below instead
+    # of serially after all of them (PRD §4.3 / findings doc Finding 3).
+    # score_text_safe already swallows its own exceptions and returns None
+    # on failure (utils/scoring.py:307-313), so no new exception handling
+    # is needed across the thread boundary.
+    executor = ThreadPoolExecutor(max_workers=1) if grading_enabled else None
+    before_score_future = executor.submit(score_text_safe, text, "before") if executor else None
     try:
         try:
             pipeline = CarePlanV1_2Pipeline()
@@ -92,7 +103,7 @@ def run_care_plan_pipeline(
 
             elif isinstance(event, PipelineRunResult):
                 if grading_enabled:
-                    before_score = score_text_safe(text, "before")
+                    before_score = before_score_future.result()
                     after_score  = score_text_safe(event.clarified, "after")
 
                     def _grade(scope):
@@ -129,3 +140,6 @@ def run_care_plan_pipeline(
         Markers.CarePlan.Pipeline.execute(_pipeline_fail)
         logger.exception("care_plan: unexpected pipeline error")
         yield AdapterError(error_data=build_error_data_from_exc(exc))
+    finally:
+        if executor is not None:
+            executor.shutdown(wait=True)

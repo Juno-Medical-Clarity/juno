@@ -27,6 +27,23 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 app = Flask(__name__)
 
+# Cap the raw request body size Flask/Werkzeug will buffer, so a wildly
+# oversized request (e.g. a client bug, or a body far beyond anything our own
+# per-route checks are sized for) is rejected before being fully read into
+# memory, rather than only after our own resolve_uploaded_files/
+# validate_extracted_text_length checks run on an already-buffered body.
+# Deliberately global (Flask has no native per-route MAX_CONTENT_LENGTH) and
+# sized ABOVE the largest legitimate request across every route -- the main
+# app's Constants.Uploads.MAX_AGGREGATE_FILE_BYTES (25 MB) plus multipart/
+# form overhead -- and comfortably BELOW Cloud Run's own ~32 MiB platform
+# request-size ceiling (a request over that limit never reaches this
+# container at all; that's an infra-level concern, not something a Flask
+# config can affect). This is a resource-safety net, not the primary
+# enforcement -- routes/trial.py (10 MB total) and services/care_plan_input.py
+# (main app: 10 MB/file, 25 MB aggregate) remain the real, user-facing limits
+# and run first for any request under this cap.
+app.config["MAX_CONTENT_LENGTH"] = 30 * 1024 * 1024
+
 # Enable CORS for all routes with explicit origin/header/method allow-lists
 CORS(
     app,
@@ -219,6 +236,20 @@ def internal_error(error):
         ErrorCode.INTERNAL_ERROR,
         request.path,
     ).to_dict(), 500
+
+@app.errorhandler(413)
+def request_entity_too_large(error):
+    # Reached only if Werkzeug itself rejects an oversized body against
+    # MAX_CONTENT_LENGTH above, before any route handler runs -- without this
+    # handler, that would be Werkzeug's default HTML error page rather than
+    # our standard JSON error envelope (edge-case review, item A's upstream-413
+    # check).
+    limit_mb = (app.config.get("MAX_CONTENT_LENGTH") or 0) // (1024 * 1024)
+    return make_error_response(
+        ErrorCode.FILE_TOO_LARGE,
+        request.path,
+        {"size_mb": f">{limit_mb}", "limit_mb": limit_mb},
+    ).to_dict(), 413
 
 
 # ---------------------------------------------------------------------------

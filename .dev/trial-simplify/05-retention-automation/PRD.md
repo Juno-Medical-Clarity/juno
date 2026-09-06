@@ -546,6 +546,18 @@ resource limits in sync with every commit the same way `juno-api`/`juno-worker` 
 
 ### 4.8 Cloud Scheduler — one-time setup
 
+**[GO-LIVE UPDATE, 2026-09-06]** Deployed to prod with two deliberate deviations from
+the exact names/schedule below: the job is named `juno-trial-anon-cleanup-daily` (not
+`...-trigger`) and runs `0 4 * * *` (04:00 UTC, not 09:00) — functionally equivalent,
+no correctness impact per the "arbitrary but reasonable" rationale two paragraphs down.
+Verified live and end-to-end (forced `gcloud scheduler jobs run` → HTTP 200 → Job
+execution succeeded with `dry_run=False`, `scanned=6 matched=0 deleted=0`). The
+create-or-update for the Scheduler trigger itself **has now been added to
+`deploy.yml`** (update-then-create-on-failure, safe to re-run) — superseding this
+section's "not added to `deploy.yml`" reasoning below, which no longer reflects the
+current CI. The SA-creation and IAM-binding commands remain one-time manual setup, as
+originally designed here.
+
 ```bash
 # Small, single-purpose invoker identity — mirrors the existing
 # juno-worker-invoker@... naming convention (deploy.yml's WORKER_SERVICE_ACCOUNT).
@@ -618,6 +630,12 @@ Following `docs/logging.md`'s existing conventions:
   sufficient for a once-a-day job at this scale.
 
 ### 4.10 Orphaned GCS objects — prefix fix adopted, lifecycle rule now designed as a third backstop (resolves §9 Q3)
+
+**Status: [DONE, 2026-09-06]** — the lifecycle rule below is applied to
+`gs://juno-medical-clarity-backend` (verified via `buckets describe`) and re-applied
+idempotently by a new `deploy.yml` step (`Apply GCS lifecycle rule for trial uploads`)
+on every production deploy, so it no longer depends solely on the one-time command
+below.
 
 Traced the original path layout (`services/care_plan_input.py::upload_combined_pdf`, as of
 this PRD's first draft):
@@ -784,22 +802,23 @@ window, and confirm a doc with `expires_at: null` (simulating a main-app doc) do
    `auth.list_users`/`auth.delete_users` to succeed from the new Cloud Run Job (§4.7).
    **[RESOLVED, per user 2026-09-05]** — assumed available; grant only if a dry-run
    surfaces a permission error. Exact command in the new "CI & IAM setup checklist" below.
-2. **Flip `RETENTION_DRY_RUN` from `true` to `false`** on the Cloud Run Job, only after
-   reviewing at least one real dry-run's log output (§7) and being satisfied the
-   scanned/matched counts look right:
-   ```bash
-   gcloud run jobs update juno-trial-anon-cleanup \
-     --region=us-central1 --project=juno-medical-clarity \
-     --update-env-vars=RETENTION_DRY_RUN=false
-   ```
-   This is a deliberate one-time manual step, not automated by `deploy.yml` (§4.7) —
-   destructive-by-design behavior should never silently activate itself.
+2. **[DONE, 2026-09-06]** Flipped `RETENTION_DRY_RUN` from `true` to `false` on the
+   Cloud Run Job, after reviewing a real dry-run's log output (§7, `scanned=6
+   matched=0`) and confirming the counts looked right. Verified live via `jobs
+   describe` and end-to-end via a forced execution (`dry_run=False`, `scanned=6
+   matched=0 deleted=0 errors=0`). Now also codified in `deploy.yml`'s Cloud Run Job
+   deploy step so a future deploy no longer reverts it to dry-run.
 3. **Run §4.1's two `gcloud firestore fields ttls update` commands once**, and confirm
    both report `ACTIVE` via `fields ttls describe` (may need to check back — the
    transition can take time per Google's own documentation).
-4. **Run §4.7's one-time `gcloud run jobs deploy` and §4.8's Scheduler/IAM setup once** —
-   after that, `deploy.yml`'s new step (§4.7) keeps the Job's image/resources in sync
-   automatically on every subsequent deploy.
+4. **[DONE, 2026-09-06]** Ran §4.7's one-time `gcloud run jobs deploy` and §4.8's
+   Scheduler/IAM setup — verified live (Scheduler `ENABLED`, OAuth via
+   `juno-scheduler-invoker`, `roles/run.invoker` bound) and end-to-end via a forced
+   `gcloud scheduler jobs run` (HTTP 200, Job execution succeeded). `deploy.yml`'s
+   existing step (§4.7) keeps the Job's image/resources in sync automatically on every
+   subsequent deploy, and a new create-or-update step now does the same for the
+   Scheduler trigger (§4.8 GO-LIVE UPDATE); the SA + IAM binding remain one-time manual
+   setup.
 5. ~~Amend SP4's drafted Privacy Policy text per §4.1's recommended replacement wording~~
    — **done.** SP4's Privacy Policy, Terms, and footer copy (§6.2, §6.4) have been
    corrected to the wording proposed in §4.1; see SP4 §9 Q9. The still-open item is
@@ -807,8 +826,9 @@ window, and confirm a doc with `expires_at: null` (simulating a main-app doc) do
    SP3, not here.
 6. **Optional: set up the two recommended Cloud Monitoring alerting policies** (§4.9) —
    Console-only configuration, no code, not blocking launch.
-7. **Add the GCS lifecycle rule on the `care_plan_trial/` prefix** (§4.10, new per §9 Q3)
-   — one-time `gsutil lifecycle set` command, see the checklist below.
+7. **[DONE, 2026-09-06]** GCS lifecycle rule on the `care_plan_trial/` prefix (§4.10,
+   new per §9 Q3) — applied via the checklist's item 2e command and verified live; now
+   also codified as an idempotent `deploy.yml` step so it's kept applied automatically.
 
 ### CI & IAM setup checklist (added 2026-09-05, resolves §9 Q1)
 
@@ -890,6 +910,10 @@ gcloud scheduler jobs create http juno-trial-anon-cleanup-trigger \
   --oauth-service-account-email="juno-scheduler-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com"
 
 # e. GCS lifecycle rule on the trial upload prefix (§4.10):
+# [DONE, 2026-09-06] — applied via `gcloud storage buckets update --lifecycle-file=...`
+# and verified live via `buckets describe`; also codified as an idempotent step in
+# deploy.yml ("Apply GCS lifecycle rule for trial uploads") so it's kept in sync on
+# every production deploy without relying on this one-time command alone.
 cat > /tmp/trial-lifecycle-rule.json <<'EOF'
 {"rule":[{"action":{"type":"Delete"},"condition":{"age":1,"matchesPrefix":["care_plan_trial/"]}}]}
 EOF
@@ -924,6 +948,22 @@ gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
 gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
   --member="serviceAccount:FIREBASE_SERVICE_ACCOUNT_EMAIL" \
   --role="roles/firebaseauth.admin"
+
+# d. [DONE, 2026-09-06] `deploy.yml`'s "Ensure Cloud Scheduler trigger" step runs
+# `gcloud scheduler jobs update http ... || gcloud scheduler jobs create http ...`
+# against the trial anon-cleanup trigger on every deploy (idempotent, mirroring the
+# Job step above). `github-actions-deploy@...` held zero cloudscheduler.* permissions,
+# so that step would fail the whole deploy-backend job. Created and bound a minimal
+# custom role rather than `roles/cloudscheduler.admin`:
+gcloud iam roles create ciCloudSchedulerJobManager \
+  --project="$GCP_PROJECT_ID" \
+  --title="CI Cloud Scheduler Job Manager" \
+  --description="Minimal permissions for CI to create/update the trial anon-cleanup scheduler job" \
+  --permissions=cloudscheduler.jobs.get,cloudscheduler.jobs.create,cloudscheduler.jobs.update,cloudscheduler.locations.get
+
+gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
+  --member="serviceAccount:github-actions-deploy@$GCP_PROJECT_ID.iam.gserviceaccount.com" \
+  --role="projects/$GCP_PROJECT_ID/roles/ciCloudSchedulerJobManager"
 ```
 
 **4. Only after reviewing at least one real dry-run's log output and being satisfied the

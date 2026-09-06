@@ -154,6 +154,12 @@ describe('TrialPage', () => {
     await user.click(screen.getByRole('button', { name: 'Start over' }));
     expect(screen.getByRole('button', { name: 'Simplify' })).toBeInTheDocument();
     expect(screen.queryByText(/session ended/i)).not.toBeInTheDocument();
+    // Best-effort cleanup for the abandoned job, rather than leaving it solely
+    // to the TTL backstop -- see TrialPage's handleRestart. This same
+    // handleRestart is what ProcessingScreen's watchdog "Start over" button
+    // (tested in isolation in ProcessingScreen.test.tsx) also calls.
+    expect(deleteTrialJobMock).toHaveBeenCalledWith('job-1');
+    expect(deleteTrialJobMock).toHaveBeenCalledTimes(1);
   });
 
   it('renders a full, realistic completed care plan end to end without blanking the page', async () => {

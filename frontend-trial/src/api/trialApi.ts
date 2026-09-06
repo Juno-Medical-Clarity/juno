@@ -72,7 +72,19 @@ async function getCurrentUser(): Promise<User> {
 
 async function getAuthHeader(): Promise<Record<string, string>> {
   const user = await getCurrentUser();
-  const token = await user.getIdToken();
+  let token: string;
+  try {
+    token = await user.getIdToken();
+  } catch (err) {
+    // getIdToken() can reject with a raw Firebase SDK error (e.g. "Firebase:
+    // Error (auth/network-request-failed)."), which would otherwise reach
+    // UploadScreen's catch-all `err instanceof Error` branch and be shown to
+    // the trial visitor verbatim (edge-case review #8). Log the real error,
+    // surface a plain-English one -- and, per the no-login requirement, this
+    // must never mention "signing in".
+    console.error('trialApi: user.getIdToken() failed', err);
+    throw new Error('Something went wrong starting your session. Please try again.');
+  }
   return { Authorization: `Bearer ${token}` };
 }
 

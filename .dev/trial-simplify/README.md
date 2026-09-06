@@ -42,21 +42,83 @@ Run artifacts, one per sub-project:
 [`03-trial-frontend/code-2026-09-05-0741.md`](03-trial-frontend/code-2026-09-05-0741.md),
 [`04-hosting-split-and-legal/code-2026-09-05-0749.md`](04-hosting-split-and-legal/code-2026-09-05-0749.md),
 [`05-retention-automation/code-2026-09-05-0758.md`](05-retention-automation/code-2026-09-05-0758.md).
+SP6 (a separate follow-on branch, `users/tejitpabari/trial-optimizations`) has its own
+run artifact:
+[`06-trial-optimizations/code-2026-09-05-2131.md`](06-trial-optimizations/code-2026-09-05-2131.md).
 
-**Test totals at last review close** (re-run during verification, not carried forward
-from earlier runs): backend `python3 -m pytest tests/ -q` → 572 passed, 93% coverage;
-`frontend-trial` → 14 files / 43 tests, lint clean, build clean; `frontend` → 180 passed.
+**SP6 branch, same day (2026-09-05/06): a deep edge-case review pass, fixes, scenario
+validation, and an independent final verification.** After SP6's three optimization
+tasks landed, the trial pathway (`routes/trial.py` + `routes/worker.py` +
+`services/care_plan_input.py`/`care_plan_pipeline.py` + `frontend-trial/`) went through:
+- [`edge-case-review-backend-2026-09-05.md`](edge-case-review-backend-2026-09-05.md) —
+  10 findings (3 BLOCKING, 5 SHOULD FIX, 2 NICE TO HAVE): a char-count text cap that
+  didn't bound Firestore's byte-based 1 MiB limit, a no-text-layer document silently
+  bypassing `EMPTY_DOCUMENT`, the GCS-lifecycle/anon-cleanup retention backstops never
+  having been deployed (BLOCKING, infra-only — see below), `input_text` never cleared
+  for trial jobs, a lone UTF-16 surrogate crashing job creation, corrupt/encrypted PDFs
+  500ing instead of returning a clean error, a worker idempotency gap letting a Cloud
+  Tasks redelivery re-run (and re-bill) the whole LLM pipeline, one bad file aborting an
+  entire multi-file trial upload, an unsalted-IP-hash fallback, and raw exception text
+  reaching the client.
+- [`edge-case-review-frontend-2026-09-05.md`](edge-case-review-frontend-2026-09-05.md)
+  — no BLOCKING findings; 8 SHOULD-FIX/NICE-TO-HAVE items: no client-side watchdog or
+  escape hatch for a job stuck in `processing`, `useAnonAuth`'s pending state having no
+  timeout, missing a11y announcements across screen transitions, `CarePlanView`'s Copy
+  button lacking error/success feedback, Privacy Policy deletion-timing wording, no
+  guard on a missing `VITE_API_PROCESSING_URL`, the client's text-length mirror not
+  matching the backend's byte-based cap, and raw Firebase SDK error text reaching the
+  UI.
+- All applicable findings (everything except BLOCKING #3, deliberately left as an infra
+  step — see "Still requires you" below) were fixed across 13 commits (`74efe230`
+  through `eac5dc84`): trial-only upload limits (5 files/10MB aggregate/no per-file cap)
+  plus a shared byte-based text cap and min-content threshold, a clean 413 JSON envelope
+  for oversized requests, a defensive min-content guard plus `input_text` clearing on
+  trial completion plus the worker processing-lease idempotency check, a fail-safe
+  rate-limit IP salt fallback and stripped unclassified-exception detail, a
+  corrupt-image-bytes rejection before the Vertex AI call, and on the frontend: a
+  processing watchdog with restart cleanup and a11y announcements, a bounded
+  `useAnonAuth` pending-state timeout, `CarePlanView` Copy-button error handling, tighter
+  Privacy Policy wording, a `VITE_API_PROCESSING_URL` guard, a Firebase SDK error mapper,
+  and a `MAX_TEXT_BYTES` mirror of the backend's byte cap.
+- [`scenario-validation-2026-09-05.md`](scenario-validation-2026-09-05.md) — 11
+  end-to-end scenarios (typical discharge summary, phone-photo OCR, mixed-batch limits,
+  multibyte-near-limits, degenerate inputs, partial-failure batches, filename
+  hostility, lifecycle races, failure surfaces, rate limiting, access control) run
+  against the fixed code; two bugs found during validation itself were fixed
+  (surfaced in the same commit range above), all 11 scenarios PASS.
+- [`final-verification-2026-09-05.md`](final-verification-2026-09-05.md) — an
+  independent re-verification pass (re-ran every suite and re-derived every integration
+  claim rather than trusting the above reports): confirms all three test suites are
+  100% green at the totals below, confirms every checked integration point (upload
+  limits per call site, `clear_input_text` lifecycle, worker lease/retry safety, the 413
+  path, the `VITE_API_PROCESSING_URL` guard) behaves as intended, found and fixed one
+  minor comment-accuracy bug (`MIN_MEANINGFUL_CONTENT_CHARS`'s justifying comment used a
+  16-character example while claiming `>20 chars`), and flagged one **unresolved product
+  decision, not fixed**: the new `MAX_TEXT_BYTES=350,000` cap is enforced globally, not
+  just on the trial route, silently narrowing the main app's effective pasted-text/
+  upload ceiling from 500,000 characters to ~350,000 bytes (~350,000 ASCII characters)
+  for documents that previously fit. Verdict: **NOT RELEASE-READY** — blocked on the
+  pre-existing BLOCKING #3 retention-automation deploy gap (unchanged from before
+  today), plus this text-limit question needing an owner call.
+
+**Test totals** (from `final-verification-2026-09-05.md`'s independent re-run, the most
+current numbers as of 2026-09-06 — supersedes the "at last review close" totals this
+line used to carry): backend `python3 -m pytest tests/ -q` → **684 passed**, 1
+pre-existing warning (unrelated `PyPDF2` deprecation), 94% coverage; `frontend-trial` →
+**19 files / 103 tests** passed, `tsc --noEmit` clean, lint clean, build clean;
+`frontend` → **23 files / 189 tests** passed, `tsc --noEmit` clean, build clean.
 
 **Outstanding, owner-only (see `review-2026-09-05-0835.md`'s "Still requires you" for the
 full consolidated list with exact commands):**
 - **Legal-copy review and approval (D8) — this is the one item that gates launch.** The
   Privacy Policy and Terms rendered in `frontend-trial/src/pages/` are Claude's first
   draft, not yet reviewed by a lawyer.
-- All of SP5's live-GCP steps: Firestore native TTL on `care_plan_outputs` /
+- All of SP5's remaining live-GCP steps: Firestore native TTL on `care_plan_outputs` /
   `trial_rate_limits`, one-time creation of the `juno-trial-anon-cleanup` Cloud Run Job
   (`RETENTION_DRY_RUN=true` first), Cloud Scheduler + IAM, a dry-run execution and log
-  review before flipping `RETENTION_DRY_RUN=false`, the GCS lifecycle rule on
-  `care_plan_trial/`, and optional Cloud Monitoring alerts.
+  review before flipping `RETENTION_DRY_RUN=false`, and optional Cloud Monitoring alerts.
+  (The GCS lifecycle rule on `care_plan_trial/` is **done** — applied to prod and
+  codified in `deploy.yml` on 2026-09-06.)
 - The production cutover ordering from SP4 PRD §4.5, and watching the first automatic
   `deploy.yml` run once this branch lands on `main`.
 
@@ -137,6 +199,7 @@ Distilled from `brainstorm.md`'s decision log (D1–D11) plus items settled sinc
 | SP3 | Trial Frontend App | P2 | New `frontend-trial/` Vite app: upload → processing (live steps) → results screens, anonymous-auth wiring, GA4 instrumentation, download-report reuse, best-effort `DELETE` on unload. | SP2 (API contract) | `03-trial-frontend/PRD.md` | `03-trial-frontend/TASKS.md` |
 | SP4 | Hosting Split, CI & Legal Pages | P3 | Multi-target `firebase.json`/`.firebaserc` (`app` + `trial`); `deploy.yml` gains a trial build/deploy job and fixes `rollback-production.yml`; CORS widened for `juno-app-99.web.app`; Privacy Policy + Terms & Conditions copy. | SP3 (build output); coordinates with SP2 (CORS, max-instances) | `04-hosting-split-and-legal/PRD.md` | `04-hosting-split-and-legal/TASKS.md` |
 | SP5 | Retention Automation | P5 | Enables Firestore native TTL on `care_plan_outputs`/`trial_rate_limits`; daily Cloud Scheduler → Cloud Run Job deleting anonymous Auth users older than 24h. | SP2 (`expires_at` fields, `trial_rate_limits`); coordinates with SP4 (deploy workflow, legal copy accuracy) | `05-retention-automation/PRD.md` | `05-retention-automation/TASKS.md` |
+| SP6 | Trial Pipeline Optimizations | P6 | Backend-only follow-on (separate branch `users/tejitpabari/trial-optimizations`, off `main` post-SP1–SP5): trims trial grading output to `combined`-only entries, populates the previously-always-`None` `Metrics.total_duration_ms`, and overlaps the `before`-grading score computation with the pipeline's LLM calls. | None (SP1–SP5 already on `main`) | `06-trial-optimizations/PRD.md` | `06-trial-optimizations/TASKS.md` |
 
 ---
 
@@ -187,10 +250,21 @@ Verified to exist in GCP/Firebase, ahead of any SP5/SP4 code landing:
   first attempt failed with `ERROR: (gcloud.firestore.fields.ttls.update) Exactly one
   of (--disable-ttl | [--enable-ttl : --expiration-offset]) must be specified.` — the
   missing `--enable-ttl` flag has since been corrected in SP5 §8 (and §4.1).
-- The `juno-trial-anon-cleanup` Cloud Run Job.
-- The Cloud Scheduler trigger for that Job — blocked on the Cloud Scheduler API not yet
-  being enabled on the project.
-- The GCS lifecycle rule on the `care_plan_trial/` prefix.
+
+**Since done:**
+- The GCS lifecycle rule on the `care_plan_trial/` prefix — applied to prod and
+  codified as an idempotent step in `deploy.yml` (2026-09-06).
+- **[GO-LIVE, 2026-09-06]** The `juno-trial-anon-cleanup` Cloud Run Job, flipped to
+  `RETENTION_DRY_RUN=false`; the `juno-scheduler-invoker` service account and its
+  `roles/run.invoker` binding on the Job; and the daily
+  `juno-trial-anon-cleanup-daily` Cloud Scheduler trigger (`0 4 * * *`, `Etc/UTC`,
+  OAuth-authenticated via that service account). Verified end-to-end with a forced
+  `gcloud scheduler jobs run`: the scheduler attempt returned HTTP 200, a new Job
+  execution ran with `dry_run=False`, and logged `scanned=6 matched=0 deleted=0
+  errors=0` — zero eligible accounts, so nothing was deleted. The Scheduler
+  create-or-update step is now codified idempotently in `deploy.yml`; the one-time SA
+  + IAM binding creation remains a documented manual step (see the comment above that
+  step in `deploy.yml`).
 
 ---
 
@@ -233,20 +307,31 @@ status of each individual PRD's own manual-steps section for cross-reference.
 7. **Confirm the Firebase service account has the Firebase Authentication Admin IAM
    role** (SP5 §8#1) — assumed already granted; grant only if a dry-run surfaces a
    permission error (checklist item 3c).
-8. **Flip `RETENTION_DRY_RUN` from `true` to `false`** on the cleanup Cloud Run Job (SP5
-   §8#2), only after reviewing at least one real dry-run's log output and confirming the
-   scanned/matched counts look right. Deliberately manual, not automated (checklist
-   item 4).
+8. **[DONE, 2026-09-06]** Flipped `RETENTION_DRY_RUN` from `true` to `false` on the
+   cleanup Cloud Run Job (SP5 §8#2), after reviewing the dry-run's log output
+   (`scanned=6 matched=0`) and confirming the counts looked right. Codified in
+   `deploy.yml`'s "Deploy anonymous-user-cleanup Cloud Run Job" step so a future deploy
+   no longer reverts it to dry-run.
 9. **Run the two one-time `gcloud firestore fields ttls update` commands** and confirm
    both report `ACTIVE` (SP5 §8#3, checklist item 2b).
-10. **Run the one-time `gcloud run jobs deploy` and Cloud Scheduler/IAM setup** for the
-    anonymous-cleanup job (SP5 §8#4, checklist items 2c-2d) — `deploy.yml` keeps it in
-    sync automatically afterward.
+10. **[DONE, 2026-09-06]** Ran the one-time `gcloud run jobs deploy` and Cloud
+    Scheduler/IAM setup for the anonymous-cleanup job (SP5 §8#4, checklist items
+    2c-2d) — verified live (scheduler `ENABLED`, `0 4 * * *` `Etc/UTC`, OAuth via
+    `juno-scheduler-invoker`, `roles/run.invoker` bound) and end-to-end with a forced
+    run (HTTP 200, execution succeeded, `dry_run=False`, `scanned=6 matched=0
+    deleted=0`). `deploy.yml` now keeps the Cloud Run Job config and the Scheduler
+    trigger both in sync automatically on every deploy; the SA + IAM binding remain
+    one-time manual setup, documented in `deploy.yml`. **[DONE, 2026-09-06]** That
+    create-or-update step also needed the CI SA (`github-actions-deploy@...`) itself
+    to hold `cloudscheduler.*` permissions, which it had none of — created and bound a
+    minimal custom role, `ciCloudSchedulerJobManager` (see checklist item "3d" in
+    `05-retention-automation/PRD.md` §8 for the exact commands).
 11. **Optional: set up the two recommended Cloud Monitoring alerting policies** (SP5
     §8#6) — console-only, not blocking launch.
-12. **Run the one-time GCS lifecycle-rule command** on the `care_plan_trial/` prefix
-    (SP5 §8#7, checklist item 2e) — now safe since trial uploads have their own distinct
-    prefix (SP2 §9 Q15).
+12. **[DONE, 2026-09-06]** GCS lifecycle rule on the `care_plan_trial/` prefix (SP5
+    §8#7, checklist item 2e) — applied to `gs://juno-medical-clarity-backend` and
+    verified live, and now also re-applied idempotently by `deploy.yml` on every
+    production deploy so it no longer relies on this one-time manual step alone.
 13. **(Not blocking, awareness only) Verify `pillow-heif` wheel compatibility** with the
     `python:3.11-slim` deploy image once the dependency is added (SP1 §8#1) — a
     build-time check the implementing agent can do directly; falls back to one added
@@ -332,8 +417,22 @@ none.** Every §9 item across SP1–SP5 is now either `[RESOLVED]` or `[DEFERRED
 
 ## Next step
 
-All five sub-projects are implemented, reviewed, and fix-verified (see "Implementation
-status" above) — there is no more code to write. The next step is entirely owner-only:
-legal-copy review and approval (D8, the launch gate), SP5's live-GCP setup, and the
+All five sub-projects plus SP6's optimizations and today's edge-case-review fixes are
+implemented and independently re-verified (see "Implementation status" above and
+`final-verification-2026-09-05.md`). **[GO-LIVE, 2026-09-06]** SP5's anonymous-account
+cleanup automation — the one BLOCKING item the prior verification pass had flagged — is
+now deployed and verified end-to-end (Cloud Run Job live at `RETENTION_DRY_RUN=false`,
+Cloud Scheduler trigger `ENABLED` and firing successfully, a forced run confirmed
+`scanned=6 matched=0 deleted=0`); the GCS lifecycle rule half was already done. What
+remains is owner-only: legal-copy review and approval (D8, the launch gate) and the
 production cutover per SP4 PRD §4.5. See `review-2026-09-05-0835.md`'s "Still requires
-you" section for the consolidated, exact-command version of this list.
+you" section for the consolidated, exact-command version of that list (now partially
+superseded by this go-live for the anon-cleanup items).
+
+One item is **not** owner-only and needs a product decision before or shortly after
+shipping: `final-verification-2026-09-05.md` §3 found that the new
+`MAX_TEXT_BYTES=350,000` cap (added for the trial route's Firestore-size safety) is
+enforced globally, including on the main app's pasted-text, upload, and `doc_id` paths —
+narrowing the main app's effective text ceiling from 500,000 characters to ~350,000
+bytes for ASCII text. This was deliberately left unchanged pending an explicit owner
+call on whether that's acceptable or should be scoped to trial only.

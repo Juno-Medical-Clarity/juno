@@ -48,3 +48,9 @@ class ResolvedInput(JsonModel):
     source_kind: str = "upload"
     file_count: int = 0
     file_types: list[str] = Field(default_factory=list)
+    # Filenames excluded from `text` because they yielded no usable content
+    # (e.g. a scanned/no-text-layer PDF, a corrupt/encrypted file). Only ever
+    # non-empty when the caller opted into tolerant multi-file handling (see
+    # services.care_plan_input.resolve_uploaded_files's
+    # tolerate_unusable_files param) -- main-app callers never populate this.
+    skipped_files: list[str] = Field(default_factory=list)

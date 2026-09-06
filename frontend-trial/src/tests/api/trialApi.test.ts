@@ -122,6 +122,30 @@ describe('trialApi', () => {
 
       expect(fetchSpy).not.toHaveBeenCalled();
     });
+
+    it('maps a raw Firebase SDK error from getIdToken() to a plain-English message, logging the original (edge-case review #8)', async () => {
+      const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
+      const rawFirebaseError = new Error('Firebase: Error (auth/network-request-failed).');
+      const mockUser = { getIdToken: vi.fn().mockRejectedValue(rawFirebaseError) };
+      setCurrentUser(mockUser);
+
+      let caught: unknown;
+      try {
+        await createTrialJob(new FormData());
+      } catch (err) {
+        caught = err;
+      }
+
+      expect(caught).toBeInstanceOf(Error);
+      const message = (caught as Error).message;
+      expect(message).toBe('Something went wrong starting your session. Please try again.');
+      // Never leak the raw SDK text, and never mention signing in -- this is a
+      // no-login app.
+      expect(message).not.toMatch(/firebase|sign.?in|log.?in/i);
+      expect(fetchSpy).not.toHaveBeenCalled();
+      expect(consoleErrorSpy).toHaveBeenCalledWith('trialApi: user.getIdToken() failed', rawFirebaseError);
+      consoleErrorSpy.mockRestore();
+    });
   });
 
   describe('deleteTrialJob', () => {
