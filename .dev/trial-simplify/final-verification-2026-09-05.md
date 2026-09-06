@@ -135,10 +135,13 @@ Confirmed accurate and complete, cross-checked against
 `edge-case-review-backend-2026-09-05.md`'s BLOCKING #3 and the existing
 `.dev/trial-simplify/README.md`:
 
-1. **GCS lifecycle rule on `care_plan_trial/`** — not deployed. Deliberately left as a
-   code-level no-op; `services/retention.py` needs no changes per the backend review,
-   this is a one-time `gcloud storage buckets update ... --lifecycle-file=...`
-   (or console) step.
+1. ~~**GCS lifecycle rule on `care_plan_trial/`** — not deployed.~~ **[DONE,
+   2026-09-06]** — applied to `gs://juno-medical-clarity-backend` via
+   `gcloud storage buckets update --lifecycle-file=...` (`Delete` action, `age: 1`,
+   `matchesPrefix: ["care_plan_trial/"]`, verified live via `buckets describe`) and
+   codified as an idempotent step in `deploy.yml` (`Apply GCS lifecycle rule for trial
+   uploads`, in the `deploy-backend` job) so it's re-applied on every production deploy.
+   `services/retention.py` needed no changes per the backend review.
 2. **Anonymous-account cleanup automation** — the Cloud Run Job
    (`juno-trial-anon-cleanup`), its Cloud Scheduler trigger, and the IAM bindings for it
    are not deployed (Cloud Scheduler API itself is disabled on the project per the
@@ -155,12 +158,13 @@ Confirmed accurate and complete, cross-checked against
    component reads it) — not a regression, just an acknowledged gap per the model's own
    comment ("a future trial UI can show..."). Not blocking.
 
-Net effect: until items 1-2 are done, an abandoned/never-completed trial upload's raw
-document (potential PHI) and its anonymous Firebase Auth account persist indefinitely,
-contradicting the "no-retention trial" framing given to users. This was already flagged
-BLOCKING in the backend edge-case review and was **deliberately not addressed in code**
-(it's pure infra/deploy work) — I confirm that characterization is accurate and still
-true as of this verification pass.
+Net effect: until item 2 is also done (item 1, the GCS lifecycle rule, is now done as of
+2026-09-06), an abandoned/never-completed trial upload's anonymous Firebase Auth account
+persists indefinitely, contradicting the "no-retention trial" framing given to users. The
+raw-document exposure item 1 backstopped is now closed. This was already flagged BLOCKING
+in the backend edge-case review and was **deliberately not addressed in code** (it's pure
+infra/deploy work) — I confirm that characterization is accurate for the remaining
+anonymous-account cleanup item as of this verification pass.
 
 ---
 
@@ -173,12 +177,13 @@ true as of this verification pass.
   integration point I could independently verify (upload limits per route, text-length
   enforcement, `clear_input_text` lifecycle, worker lease/retry safety, the 413 path,
   the `VITE_API_PROCESSING_URL` guard) behaves correctly and matches its stated intent.
-- **Blocker (infra, owner-only):** the GCS lifecycle rule and anonymous-account cleanup
-  automation (edge-case review BLOCKING #3) are still not deployed. Until they are, the
-  "no-retention trial" claim made to users is not actually true for any job that doesn't
-  reach a terminal state or an explicit delete. This is not a code fix — it's a
-  deployment step that must happen before public launch, same as it was flagged before
-  today's work.
+- **Blocker (infra, owner-only):** anonymous-account cleanup automation (edge-case
+  review BLOCKING #3) is still not deployed. **The GCS lifecycle rule half of that same
+  item is now done (2026-09-06)** — applied to prod and codified in `deploy.yml` (see §5
+  item 1). Until the cleanup automation is also deployed, the "no-retention trial" claim
+  made to users is not actually true for an abandoned trial's anonymous Firebase Auth
+  account. This is not a code fix — it's a deployment step that must happen before
+  public launch, same as it was flagged before today's work.
 - **Decision needed (product, not a blocker to *some* release, but should be resolved
   before or shortly after shipping):** confirm whether narrowing the main app's
   effective text-input ceiling from 500,000 characters to ~350,000 UTF-8 bytes (an
@@ -187,6 +192,6 @@ true as of this verification pass.
 - **Legal-copy review** (pre-existing gate, unchanged) is still outstanding and remains
   the other pre-launch gate per the existing README.
 
-If the GCS lifecycle rule + cleanup job are deployed (or the owner explicitly accepts
-shipping without them for now) and the main-app text-limit question is resolved one way
-or the other, this branch is ready to merge.
+If the cleanup job is deployed (the GCS lifecycle rule is already done, 2026-09-06; or the
+owner explicitly accepts shipping without the cleanup job for now) and the main-app
+text-limit question is resolved one way or the other, this branch is ready to merge.

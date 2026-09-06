@@ -619,6 +619,12 @@ Following `docs/logging.md`'s existing conventions:
 
 ### 4.10 Orphaned GCS objects — prefix fix adopted, lifecycle rule now designed as a third backstop (resolves §9 Q3)
 
+**Status: [DONE, 2026-09-06]** — the lifecycle rule below is applied to
+`gs://juno-medical-clarity-backend` (verified via `buckets describe`) and re-applied
+idempotently by a new `deploy.yml` step (`Apply GCS lifecycle rule for trial uploads`)
+on every production deploy, so it no longer depends solely on the one-time command
+below.
+
 Traced the original path layout (`services/care_plan_input.py::upload_combined_pdf`, as of
 this PRD's first draft):
 
@@ -807,8 +813,9 @@ window, and confirm a doc with `expires_at: null` (simulating a main-app doc) do
    SP3, not here.
 6. **Optional: set up the two recommended Cloud Monitoring alerting policies** (§4.9) —
    Console-only configuration, no code, not blocking launch.
-7. **Add the GCS lifecycle rule on the `care_plan_trial/` prefix** (§4.10, new per §9 Q3)
-   — one-time `gsutil lifecycle set` command, see the checklist below.
+7. **[DONE, 2026-09-06]** GCS lifecycle rule on the `care_plan_trial/` prefix (§4.10,
+   new per §9 Q3) — applied via the checklist's item 2e command and verified live; now
+   also codified as an idempotent `deploy.yml` step so it's kept applied automatically.
 
 ### CI & IAM setup checklist (added 2026-09-05, resolves §9 Q1)
 
@@ -890,6 +897,10 @@ gcloud scheduler jobs create http juno-trial-anon-cleanup-trigger \
   --oauth-service-account-email="juno-scheduler-invoker@$GCP_PROJECT_ID.iam.gserviceaccount.com"
 
 # e. GCS lifecycle rule on the trial upload prefix (§4.10):
+# [DONE, 2026-09-06] — applied via `gcloud storage buckets update --lifecycle-file=...`
+# and verified live via `buckets describe`; also codified as an idempotent step in
+# deploy.yml ("Apply GCS lifecycle rule for trial uploads") so it's kept in sync on
+# every production deploy without relying on this one-time command alone.
 cat > /tmp/trial-lifecycle-rule.json <<'EOF'
 {"rule":[{"action":{"type":"Delete"},"condition":{"age":1,"matchesPrefix":["care_plan_trial/"]}}]}
 EOF

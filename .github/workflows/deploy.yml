@@ -109,6 +109,15 @@ jobs:
             --memory=512Mi \
             --cpu=1
 
+      - name: Apply GCS lifecycle rule for trial uploads
+        run: |
+          cat > /tmp/trial-lifecycle-rule.json <<'EOF'
+          {"rule":[{"action":{"type":"Delete"},"condition":{"age":1,"matchesPrefix":["care_plan_trial/"]}}]}
+          EOF
+          gcloud storage buckets update "gs://$GCP_BUCKET_NAME" \
+            --lifecycle-file=/tmp/trial-lifecycle-rule.json \
+            --project="$GCP_PROJECT_ID"
+
   deploy-frontend:
     needs: deploy-backend
     runs-on: ubuntu-latest

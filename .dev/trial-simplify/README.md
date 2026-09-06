@@ -113,11 +113,12 @@ full consolidated list with exact commands):**
 - **Legal-copy review and approval (D8) — this is the one item that gates launch.** The
   Privacy Policy and Terms rendered in `frontend-trial/src/pages/` are Claude's first
   draft, not yet reviewed by a lawyer.
-- All of SP5's live-GCP steps: Firestore native TTL on `care_plan_outputs` /
+- All of SP5's remaining live-GCP steps: Firestore native TTL on `care_plan_outputs` /
   `trial_rate_limits`, one-time creation of the `juno-trial-anon-cleanup` Cloud Run Job
   (`RETENTION_DRY_RUN=true` first), Cloud Scheduler + IAM, a dry-run execution and log
-  review before flipping `RETENTION_DRY_RUN=false`, the GCS lifecycle rule on
-  `care_plan_trial/`, and optional Cloud Monitoring alerts.
+  review before flipping `RETENTION_DRY_RUN=false`, and optional Cloud Monitoring alerts.
+  (The GCS lifecycle rule on `care_plan_trial/` is **done** — applied to prod and
+  codified in `deploy.yml` on 2026-09-06.)
 - The production cutover ordering from SP4 PRD §4.5, and watching the first automatic
   `deploy.yml` run once this branch lands on `main`.
 
@@ -252,7 +253,10 @@ Verified to exist in GCP/Firebase, ahead of any SP5/SP4 code landing:
 - The `juno-trial-anon-cleanup` Cloud Run Job.
 - The Cloud Scheduler trigger for that Job — blocked on the Cloud Scheduler API not yet
   being enabled on the project.
-- The GCS lifecycle rule on the `care_plan_trial/` prefix.
+
+**Since done:**
+- The GCS lifecycle rule on the `care_plan_trial/` prefix — applied to prod and
+  codified as an idempotent step in `deploy.yml` (2026-09-06).
 
 ---
 
@@ -306,9 +310,10 @@ status of each individual PRD's own manual-steps section for cross-reference.
     sync automatically afterward.
 11. **Optional: set up the two recommended Cloud Monitoring alerting policies** (SP5
     §8#6) — console-only, not blocking launch.
-12. **Run the one-time GCS lifecycle-rule command** on the `care_plan_trial/` prefix
-    (SP5 §8#7, checklist item 2e) — now safe since trial uploads have their own distinct
-    prefix (SP2 §9 Q15).
+12. **[DONE, 2026-09-06]** GCS lifecycle rule on the `care_plan_trial/` prefix (SP5
+    §8#7, checklist item 2e) — applied to `gs://juno-medical-clarity-backend` and
+    verified live, and now also re-applied idempotently by `deploy.yml` on every
+    production deploy so it no longer relies on this one-time manual step alone.
 13. **(Not blocking, awareness only) Verify `pillow-heif` wheel compatibility** with the
     `python:3.11-slim` deploy image once the dependency is added (SP1 §8#1) — a
     build-time check the implementing agent can do directly; falls back to one added
@@ -397,9 +402,10 @@ none.** Every §9 item across SP1–SP5 is now either `[RESOLVED]` or `[DEFERRED
 All five sub-projects plus SP6's optimizations and today's edge-case-review fixes are
 implemented and independently re-verified (see "Implementation status" above and
 `final-verification-2026-09-05.md`). Most of what remains is owner-only: legal-copy
-review and approval (D8, the launch gate), SP5's live-GCP setup (in particular the GCS
-lifecycle rule and anonymous-account cleanup automation — still not deployed, the one
-BLOCKING item today's verification pass reconfirmed), and the production cutover per SP4
+review and approval (D8, the launch gate), SP5's remaining live-GCP setup (in particular
+anonymous-account cleanup automation — still not deployed, the one BLOCKING item today's
+verification pass reconfirmed; the GCS lifecycle rule half is now done, 2026-09-06), and
+the production cutover per SP4
 PRD §4.5. See `review-2026-09-05-0835.md`'s "Still requires you" section for the
 consolidated, exact-command version of that list.
 
