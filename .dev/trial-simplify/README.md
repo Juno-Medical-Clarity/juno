@@ -321,7 +321,11 @@ status of each individual PRD's own manual-steps section for cross-reference.
     run (HTTP 200, execution succeeded, `dry_run=False`, `scanned=6 matched=0
     deleted=0`). `deploy.yml` now keeps the Cloud Run Job config and the Scheduler
     trigger both in sync automatically on every deploy; the SA + IAM binding remain
-    one-time manual setup, documented in `deploy.yml`.
+    one-time manual setup, documented in `deploy.yml`. **[DONE, 2026-09-06]** That
+    create-or-update step also needed the CI SA (`github-actions-deploy@...`) itself
+    to hold `cloudscheduler.*` permissions, which it had none of — created and bound a
+    minimal custom role, `ciCloudSchedulerJobManager` (see checklist item "3d" in
+    `05-retention-automation/PRD.md` §8 for the exact commands).
 11. **Optional: set up the two recommended Cloud Monitoring alerting policies** (SP5
     §8#6) — console-only, not blocking launch.
 12. **[DONE, 2026-09-06]** GCS lifecycle rule on the `care_plan_trial/` prefix (SP5

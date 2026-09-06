@@ -948,6 +948,22 @@ gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
 gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
   --member="serviceAccount:FIREBASE_SERVICE_ACCOUNT_EMAIL" \
   --role="roles/firebaseauth.admin"
+
+# d. [DONE, 2026-09-06] `deploy.yml`'s "Ensure Cloud Scheduler trigger" step runs
+# `gcloud scheduler jobs update http ... || gcloud scheduler jobs create http ...`
+# against the trial anon-cleanup trigger on every deploy (idempotent, mirroring the
+# Job step above). `github-actions-deploy@...` held zero cloudscheduler.* permissions,
+# so that step would fail the whole deploy-backend job. Created and bound a minimal
+# custom role rather than `roles/cloudscheduler.admin`:
+gcloud iam roles create ciCloudSchedulerJobManager \
+  --project="$GCP_PROJECT_ID" \
+  --title="CI Cloud Scheduler Job Manager" \
+  --description="Minimal permissions for CI to create/update the trial anon-cleanup scheduler job" \
+  --permissions=cloudscheduler.jobs.get,cloudscheduler.jobs.create,cloudscheduler.jobs.update,cloudscheduler.locations.get
+
+gcloud projects add-iam-policy-binding "$GCP_PROJECT_ID" \
+  --member="serviceAccount:github-actions-deploy@$GCP_PROJECT_ID.iam.gserviceaccount.com" \
+  --role="projects/$GCP_PROJECT_ID/roles/ciCloudSchedulerJobManager"
 ```
 
 **4. Only after reviewing at least one real dry-run's log output and being satisfied the
