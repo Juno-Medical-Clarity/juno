@@ -102,7 +102,7 @@ jobs:
             --project="$GCP_PROJECT_ID" \
             --command=python \
             --args="-m,scripts.cleanup_anonymous_users" \
-            --update-env-vars="GCP_PROJECT_ID=$GCP_PROJECT_ID,FIRESTORE_DATABASE_ID=(default)" \
+            --update-env-vars="GCP_PROJECT_ID=$GCP_PROJECT_ID,FIRESTORE_DATABASE_ID=(default),RETENTION_DRY_RUN=true" \
             --update-secrets="FIREBASE_SERVICE_ACCOUNT_JSON=firebase-service-account:latest" \
             --task-timeout=1800 \
             --max-retries=0 \
