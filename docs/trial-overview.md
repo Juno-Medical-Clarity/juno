@@ -135,13 +135,15 @@ trial-specific prompt or model exists").
    composite 0–100, before vs. after — care-plan-pipeline.md §7). The user can
    **download a report** (a standalone HTML file, generated client-side) or the result
    is simply left on screen; the job is deleted the moment this screen mounts (§4).
-4. **First-load latency.** Both Cloud Run services run `min-instances=0`
-   (`docs/trial-architecture.md` §1, with a caveat about the actual deploy path — see
-   §7 below): the first request after a period of no traffic can take roughly
-   **15–30 seconds** for the container to cold-start before processing even begins.
-   This is a deliberate cost/latency trade-off for a free, unauthenticated trial, not a
-   bug — see `docs/trial-architecture.md` §8 for the exact mechanism and a
-   qualification about whether it is currently true in practice.
+4. **First-load latency.** The design intends `min-instances=0` on both Cloud Run
+   services (`docs/trial-architecture.md` §1), but **`juno-api` is confirmed live at
+   `min-instances=1`, not 0** (verified 2026-09-06, §7 below) — only `juno-worker` is
+   actually at 0. In practice this means the API front door itself rarely cold-starts;
+   a cold start (roughly **15–30 seconds**) is still possible for `juno-worker` picking
+   up a task after idle time. The `min-instances=0` design was a deliberate
+   cost/latency trade-off for a free, unauthenticated trial, not a bug — see
+   `docs/trial-architecture.md` §8 for the exact mechanism behind why `juno-api`
+   deviates from it in practice.
 
 For the full screen-by-screen frontend structure, see `docs/trial-architecture.md` §6.
 
@@ -190,7 +192,7 @@ for how long:
 | `input_text` clearing on job completion | `complete_job`/`fail_job` with `clear_input_text=is_trial` | At the moment the job reaches a terminal status |
 | Firestore native TTL sweep | `expires_at` = 1 hour after job creation | SLA "typically within 24h" of expiry — worst case ≈ **25 hours** |
 | GCS lifecycle rule on `care_plan_trial/` | Bucket-level rule, `age: 1` day | Confirmed live in production (§7) |
-| Daily anonymous-Auth-account cleanup | Intended Cloud Scheduler → Cloud Run Job | See §7 — this trigger is not currently set up |
+| Daily anonymous-Auth-account cleanup | Cloud Scheduler → Cloud Run Job | Confirmed live and end-to-end verified in production, including an actual scheduler-triggered run (§7) |
 
 Worst-case data lifetime for an abandoned job (browser closed mid-processing, user
 never returns): **≈25 hours**, driven by the Firestore TTL sweep SLA, not by anything
@@ -253,30 +255,33 @@ both companion documents, cross-checked directly against the current code.
   both review docs) calls this the one item gating launch. Unchanged as of this
   writing.
 
-- **Retention automation deployment status is only partly settled, and the sources
-  disagree with each other.** Three things are true independently:
-  - The **GCS lifecycle rule** on `care_plan_trial/` (age-1-day delete) is applied to
-    production and codified idempotently in `.github/workflows/deploy.yml`. This one
-    is unambiguous.
-  - The **Cloud Scheduler trigger** for the daily anonymous-Auth-user cleanup job does
-    not exist in any checked-in workflow, and a dedicated read-only live-GCP check
-    (`.dev/trial-simplify/gcp-verification-2026-09-05.md`) found the Cloud Scheduler
-    API itself disabled on the project at the time of that check. Every source that
-    addresses this specific piece agrees it was not set up.
-  - Whether the **Firestore TTL policies** and the **`juno-trial-anon-cleanup` Cloud
-    Run Job** exist live in GCP is genuinely contradictory across the repo's own
-    records: `.dev/trial-simplify/README.md`'s status sections list both as
-    outstanding/not-yet-created, while
-    `.dev/trial-simplify/gcp-verification-2026-09-05.md` (a live, read-only check)
-    found the TTL configs `ACTIVE`, and commit `8f3e4693` ("ci(retention): pin
-    RETENTION_DRY_RUN=true in anon-cleanup job deploy") together with
-    `final-verification-2026-09-05.md` claim the Cloud Run Job was created, the
-    Scheduler trigger enabled, and a dry-run executed and reviewed in production. These
-    are not reconcilable from the repository alone. This document reports the
-    inconsistency rather than picking a side — see `docs/trial-architecture.md` §5.4
-    for the full, source-by-source breakdown, and verify current state directly
-    against GCP (`gcloud firestore fields ttls list`, `gcloud run jobs list`,
-    `gcloud scheduler jobs list`) before relying on any one document.
+- **Retention automation is fully deployed and live, verified directly against GCP on
+  2026-09-06** (`.dev/trial-simplify/gcp-verification-2026-09-06.md`), resolving the
+  prior disagreement between `.dev/trial-simplify/README.md` (said not yet created),
+  `gcp-verification-2026-09-05.md` (found TTL active, Scheduler API disabled), and
+  `final-verification-2026-09-05.md` (claimed job created and Scheduler enabled):
+  - The **GCS lifecycle rule** on `care_plan_trial/` (age-1-day delete) is live on
+    production and codified idempotently in `.github/workflows/deploy.yml`. Uncontested
+    by any source.
+  - The **Firestore TTL policies** on `care_plan_outputs.expires_at` and
+    `trial_rate_limits.expires_at` are both live and `ACTIVE`
+    (`gcloud firestore fields ttls list`, re-confirmed 2026-09-06). README's
+    "not-yet-created" status for this item is stale.
+  - The **`juno-trial-anon-cleanup` Cloud Run Job** exists and has two successful
+    executions in production: a dry run (`dry_run=True`, scanned=6/matched=0/deleted=0,
+    matching `final-verification-2026-09-05.md`'s reported numbers exactly) and, since
+    then, a live non-dry-run execution (`dry_run=False`, same scanned=6/matched=0/
+    deleted=0) triggered by Cloud Scheduler itself. Its current live config has
+    `RETENTION_DRY_RUN=false`.
+  - The **Cloud Scheduler trigger** (`juno-trial-anon-cleanup-daily`, `0 4 * * *`
+    `Etc/UTC`) exists, is `ENABLED`, and has a recorded real invocation whose timestamp
+    matches the Cloud Run Job execution run by `juno-scheduler-invoker` to the
+    millisecond — genuine end-to-end proof, not just a config claim. The Cloud Scheduler
+    API, found disabled in the 2026-09-05 check, is enabled now; that finding was
+    accurate for its own point in time but has since changed.
+  See `docs/trial-architecture.md` §5.4 for the full item-by-item breakdown and
+  `.dev/trial-simplify/gcp-verification-2026-09-06.md` for the exact commands and
+  output this is based on.
 
 - **`MAX_TEXT_BYTES=350,000` is enforced globally, not trial-only — an open product
   decision.** This cap was added for the trial's Firestore document-size safety, but
@@ -294,10 +299,14 @@ both companion documents, cross-checked directly against the current code.
   `rollback-production.yml` only — the far more frequently run automatic deploy path
   (`deploy.yml` → `cloudbuild.yaml`) was never updated, and `deploy.yml`'s subsequent
   `gcloud run services update` step does not pass `--min-instances`, so it never resets
-  the value `cloudbuild.yaml` set. Net effect: every merge-to-main auto-deploy
-  currently leaves `juno-api` with at least one always-warm instance — better cold-start
-  behavior than documented, but an unreviewed deviation from the stated design (full
-  detail: `docs/trial-architecture.md` §8).
+  the value `cloudbuild.yaml` set. **Confirmed live on 2026-09-06**
+  (`.dev/trial-simplify/gcp-verification-2026-09-06.md`): `juno-api`'s live
+  `autoscaling.knative.dev/minScale` is `1`, not `0` — this is not a theoretical
+  reading of the deploy config, it is the value actually running in production right
+  now. `juno-worker` is live at effectively `min-instances=0`, as intended. Net effect:
+  every merge-to-main auto-deploy currently leaves `juno-api` with at least one
+  always-warm instance — better cold-start behavior than documented, but an unreviewed
+  deviation from the stated design (full detail: `docs/trial-architecture.md` §8).
 
 - **The `X-Forwarded-For` trusted-hop assumption is topology-specific.** The rate
   limiter reads the client IP from a fixed position in `X-Forwarded-For`

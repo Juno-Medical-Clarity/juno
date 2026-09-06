@@ -39,7 +39,7 @@ because code alone cannot prove what is actually deployed.
                                           ▼
                        ┌──────────────────────────────────────┐
                        │  Cloud Run: juno-api (JUNO_MODE=api)   │  max-instances=10
-                       │  allow-unauthenticated, public HTTPS   │  min-instances=0
+                       │  allow-unauthenticated, public HTTPS   │  min-instances=1 (live; §8)
                        │  routes/trial.py, care_plan_jobs.py,…  │
                        └───────────────┬────────────────────────┘
                                        │ create job doc            │ enqueue Cloud Task
@@ -65,9 +65,9 @@ because code alone cannot prove what is actually deployed.
                                       │                            care_plan_trial/{uid}/inputs/… (trial)
                                       └──────────────────────────────────┘
 
-  Daily (intended): Cloud Scheduler ──► Cloud Run Job juno-trial-anon-cleanup ──► Firebase Auth
-  (see §6.4 — this trigger does not currently exist in checked-in code or, per the most
-  recent live-infra check, in GCP)
+  Daily: Cloud Scheduler ──► Cloud Run Job juno-trial-anon-cleanup ──► Firebase Auth
+  (confirmed live and ENABLED in GCP, with a real recorded invocation — see §5.4; not
+  yet created by any checked-in workflow, so a from-scratch deploy would not recreate it)
 ```
 
 **Hosting split.** `firebase.json` declares two hosting targets, each with its own
@@ -92,8 +92,10 @@ list it registers (`routes/__init__.py`; see care-plan-pipeline.md §1 for the
 API/worker split itself). `juno-api` is `--allow-unauthenticated` (it's the public
 front door for both the trial and the full app) with `max-instances=10`; `juno-worker`
 is `--no-allow-unauthenticated --ingress=internal` (reachable only via Cloud
-Tasks-signed OIDC requests) with `max-instances=5`. Both run `min-instances=0` — see §9.
-These numbers are wired into `.github/workflows/deploy.yml` via `API_MAX_INSTANCES`/
+Tasks-signed OIDC requests) with `max-instances=5`. The design intends
+`min-instances=0` for both; `juno-worker` is live at effectively 0, but **`juno-api` is
+confirmed live at `min-instances=1`, not 0** — see §8 for why. These max-instances
+numbers are wired into `.github/workflows/deploy.yml` via `API_MAX_INSTANCES`/
 `WORKER_MAX_INSTANCES` env vars in the `deploy-backend` job.
 
 **Cloud Tasks queues.** Two separate queues exist so trial traffic cannot starve or be
@@ -398,63 +400,68 @@ actual TTL SLA; that correction is what's live in the current file.
 
 ### 5.4 Deployment status — what is actually live, and what is code-complete but unconfirmed
 
-This is the section where the code, the planning docs, and a dedicated live-GCP
-verification pass do not all agree, and it is worth being precise about what each source
-actually says rather than picking one.
+This section previously reported a three-way disagreement between the code, the
+planning docs, and a dedicated live-GCP verification pass. That disagreement is now
+resolved: a fresh, dated, read-only live-GCP check
+(`.dev/trial-simplify/gcp-verification-2026-09-06.md`) directly queried every piece of
+this infrastructure on 2026-09-06 and found all of it live. What follows states the
+verified live state and which prior source it vindicates.
 
 - **GCS lifecycle rule on `care_plan_trial/` — confirmed live.** `deploy.yml`'s
   "Apply GCS lifecycle rule for trial uploads" step (added in commit `ce7aace2`,
   2026-09-06) applies the age-1-day delete rule idempotently on every production deploy.
-  `.dev/trial-simplify/README.md` and that commit's own message both state it was
-  verified live against `gs://juno-medical-clarity-backend` on 2026-09-06. This is the
-  one retention mechanism this document can call unambiguously done.
+  Re-confirmed directly (`gsutil lifecycle get`) on 2026-09-06: exactly one rule, delete
+  at age 1 day, scoped to `care_plan_trial/`. Uncontested by any source, live or
+  otherwise.
 - **Firestore native TTL on `care_plan_outputs.expires_at` / `trial_rate_limits.expires_at`
-  — sources disagree.** `.dev/trial-simplify/README.md`'s "Infrastructure already
-  provisioned" section and its numbered manual-steps checklist (item 9) both still list
-  the `gcloud firestore fields ttls update` commands as an outstanding one-time step,
-  citing an earlier failed attempt (missing `--enable-ttl` flag). But a separate,
-  dedicated document, `.dev/trial-simplify/gcp-verification-2026-09-05.md` — a read-only
-  live-GCP check performed the same day, explicitly scoped to verifying exactly this —
-  reports both TTL configs as `ttlConfig.state: ACTIVE` in production. Nothing in the
-  repo shows this second document's finding was ever folded back into the README's own
-  status sections. This document cannot independently query live Firestore state, so it
-  reports the contradiction rather than asserting either claim: **the checked-in
-  narrative in the README's summary sections is stale relative to at least one
-  contemporaneous live-infra check**, and a reader should re-verify current TTL state
-  directly (`gcloud firestore fields ttls list --project=juno-medical-clarity`) rather
-  than trust either document.
-- **`juno-trial-anon-cleanup` Cloud Run Job — code deploys it; a commit message claims
-  it has already run.** `deploy.yml`'s "Deploy anonymous-user-cleanup Cloud Run Job"
-  step (`deploy.yml:97-110`) unconditionally runs `gcloud run jobs deploy
-  juno-trial-anon-cleanup` on every production deploy, pinned to
-  `RETENTION_DRY_RUN=true` as of commit `8f3e4693` ("ci(retention): pin
-  RETENTION_DRY_RUN=true in anon-cleanup job deploy"). That commit's own message states
-  the Job "was just manually set to `RETENTION_DRY_RUN=true` and verified with a dry-run
-  execution (6 users scanned, 0 matched, 0 deleted)" in prod, on 2026-09-06 — which
-  contradicts the same README's "Not yet created" bullet for this item, again not
-  updated. So: the deploy automation for this Job is real and checked in, and there is a
-  first-hand claim (in a commit message, not independently reproducible from the repo
-  alone) that it has been created and dry-run tested in prod. Treat "the Job exists and
-  has been dry-run tested" as plausible-but-not-independently-verifiable from code, and
-  "the README's own status tables reflect this" as false — they don't.
-- **Cloud Scheduler trigger for that Job — genuinely absent, on every source that
-  addresses it.** No file in this repository (`deploy.yml` or otherwise) creates a Cloud
-  Scheduler job, an invoker service account, or an IAM binding for
-  `juno-trial-anon-cleanup`. `gcp-verification-2026-09-05.md`'s live check found the
-  Cloud Scheduler API itself disabled on the project and the intended
-  `juno-scheduler-invoker` service account absent. Unlike the TTL question above, there
-  is no conflicting claim anywhere that this piece is done — every source that mentions
-  it agrees it is not. **Practical consequence: even granting the most optimistic
-  reading of the Cloud Run Job's status above, nothing currently invokes it on a
-  schedule.** It would need to be triggered manually (`gcloud run jobs execute
-  juno-trial-anon-cleanup`) until a Scheduler job exists.
+  — EXISTS, confirmed live.** `gcloud firestore fields ttls list`, re-run on 2026-09-06,
+  reports both fields' `ttlConfig.state` as `ACTIVE`. This vindicates
+  `.dev/trial-simplify/gcp-verification-2026-09-05.md`'s finding from the prior day;
+  `.dev/trial-simplify/README.md`'s "Infrastructure already provisioned" section and its
+  manual-steps checklist item 9, which still list the `gcloud firestore fields ttls
+  update` commands as outstanding, are stale and were never folded back to reflect the
+  live state.
+- **`juno-trial-anon-cleanup` Cloud Run Job — EXISTS, dry-run tested, and now live-run
+  tested too.** `deploy.yml`'s "Deploy anonymous-user-cleanup Cloud Run Job" step
+  (`deploy.yml:97-110`) deploys `gcloud run jobs deploy juno-trial-anon-cleanup` on every
+  production deploy. Direct inspection on 2026-09-06 (`gcloud run jobs
+  executions list` + `gcloud logging read`) found two completed executions: a dry run
+  (`dry_run=True`, `scanned=6 matched=0 deleted=0`, run manually) — matching commit
+  `8f3e4693`'s and `final-verification-2026-09-05.md`'s reported numbers exactly — and,
+  since then, a live non-dry-run execution (`dry_run=False`, same
+  `scanned=6 matched=0 deleted=0`) triggered by `juno-scheduler-invoker`, i.e. by Cloud
+  Scheduler itself, not a human. The Job's current live env var is
+  `RETENTION_DRY_RUN=false` (flipped after commit `8f3e4693` pinned it to `true`,
+  consistent with README's own Manual Steps item 8 recording that flip). This
+  contradicts and supersedes the README's "Not yet created" bullet for this item, and
+  goes beyond `final-verification-2026-09-05.md`'s claim — the live check found an
+  actual production (non-dry-run) execution, not just a dry run.
+- **Cloud Scheduler trigger for that Job — EXISTS, ENABLED, and end-to-end verified with
+  a real invocation.** `gcloud services list --enabled` on 2026-09-06 shows
+  `cloudscheduler.googleapis.com` enabled (the 2026-09-05 check found it disabled — an
+  accurate snapshot of an earlier state, since changed). `gcloud scheduler jobs list
+  --location=us-central1` shows `juno-trial-anon-cleanup-daily`, schedule `0 4 * * *`
+  `Etc/UTC`, state `ENABLED`, targeting the Cloud Run Job's `:run` endpoint via OAuth as
+  `juno-scheduler-invoker@juno-medical-clarity.iam.gserviceaccount.com`. Its
+  `lastAttemptTime` (`2026-09-06T01:31:43.592078Z`) matches the Cloud Run Job execution
+  `juno-trial-anon-cleanup-p4jg4`'s creation time to the millisecond, and that
+  execution's `RUN BY` is the scheduler's own invoker service account — direct,
+  first-hand proof of a real scheduler-triggered invocation, not merely a config that
+  claims to be wired up. This vindicates `final-verification-2026-09-05.md`'s claim that
+  the trigger is `ENABLED` and end-to-end verified. **No file in this repository
+  (`deploy.yml` or otherwise) creates this Scheduler job or its IAM binding as checked-in
+  infrastructure-as-code** — it exists live in GCP but not (yet) reproducibly from a
+  fresh deploy; that gap is worth tracking even though the live resource itself is
+  confirmed present and working.
 
-**Net honest statement:** the GCS lifecycle rule is live. The Firestore TTL and the
-cleanup Job's own existence are asserted done by at least one source each but not
-consistently reflected across the planning docs — verify directly against GCP before
-relying on either. The Cloud Scheduler trigger that would make the cleanup Job run
-automatically does not exist anywhere in this repo's history, and no source claims
-otherwise.
+**Net honest statement, updated 2026-09-06:** all four retention mechanisms — the GCS
+lifecycle rule, both Firestore TTL policies, the cleanup Cloud Run Job, and its Cloud
+Scheduler trigger — are live in production and have been directly verified with
+read-only GCP commands (`.dev/trial-simplify/gcp-verification-2026-09-06.md`). The
+Scheduler trigger has already fired once for real and deleted nothing (because nothing
+matched, per its own logs). The one remaining gap is that the Scheduler job and its IAM
+binding are not created by any checked-in workflow — a re-deploy from scratch would not
+recreate them.
 
 ---
 
@@ -604,8 +611,8 @@ restores the full app's static assets, not the trial's; rolling back a bad trial
 frontend deploy would need a separate, ordinary `deploy.yml` run pointed at an earlier
 commit rather than this workflow.
 
-**`min-instances=0`, no cold-start-masking (D7) — and a code-vs-planning-doc
-contradiction found while verifying this.** The Locked Decisions record in
+**`min-instances=0`, no cold-start-masking (D7) — confirmed live-contradicted, not just
+a code-vs-planning-doc disagreement.** The Locked Decisions record in
 `.dev/trial-simplify/README.md` states D7 ("min-instances=0, no cold-start masking") now
 "applies with no exceptions," citing a fix that corrected `rollback-production.yml`'s
 `juno-api` step from a pre-existing `--min-instances=1` to `--min-instances=0`
@@ -620,16 +627,23 @@ pre-trial commits `a2cf8832`/`b16e9751`). `deploy.yml`'s subsequent `gcloud run 
 update juno-api` step (the one that sets `max-instances`, env vars, and secrets) does not
 pass `--min-instances` at all, and `gcloud run services update` only changes flags it is
 given — so the `min-instances=1` set by `cloudbuild.yaml` is never reset to `0` on any
-automatic trial deploy. **Net effect: every merge-to-main auto-deploy currently leaves
-`juno-api` configured with at least one always-warm instance, contradicting D7's "no
-exceptions" claim** — only the rarely-used manual rollback path actually deploys `juno-api`
-at `min-instances=0`. `juno-worker`'s `cloudbuild.yaml` step does correctly set
-`--min-instances=0` (`cloudbuild.yaml:35`), so this discrepancy is specific to `juno-api`.
-Whatever cold-start behavior a fresh visitor experiences today is therefore better than
-the documented "no masking, ~15–30s wait after idle" description — `juno-api` itself is
-being kept at least one instance warm — which may be a harmless side effect or may be an
-unbudgeted, unreviewed cost the planning docs never accounted for; this document does not
-resolve which, only that the two disagree.
+automatic trial deploy. **This was confirmed directly against live GCP on 2026-09-06**
+(`.dev/trial-simplify/gcp-verification-2026-09-06.md`): `juno-api`'s live
+`autoscaling.knative.dev/minScale` annotation is `1`, not `0` — not a theoretical
+reading of the deploy config, the value actually running in production. **Net effect:
+every merge-to-main auto-deploy currently leaves `juno-api` configured with at least one
+always-warm instance, contradicting D7's "no exceptions" claim, and this is live right
+now, not just latent in the deploy config** — only the rarely-used manual rollback path
+actually deploys `juno-api` at `min-instances=0`. `juno-worker`'s `cloudbuild.yaml` step
+does correctly set `--min-instances=0` (`cloudbuild.yaml:35`), confirmed live
+(`juno-worker`'s live `minScale` is unset, i.e. effectively 0), so this discrepancy is
+specific to `juno-api`. Whatever cold-start behavior a fresh visitor experiences today is
+therefore better than the documented "no masking, ~15–30s wait after idle" description —
+`juno-api` itself is being kept at least one instance warm in production — which may be a
+harmless side effect or may be an unbudgeted, unreviewed cost the planning docs never
+accounted for; this document does not resolve which, only that the two disagree and that
+the live state, now confirmed, matches the code's `min-instances=1`, not D7's stated
+intent.
 
 ---
 
@@ -669,9 +683,13 @@ Sourced from `.dev/trial-simplify/edge-case-review-backend-2026-09-05.md`,
 `edge-case-review-frontend-2026-09-05.md`, `final-verification-2026-09-05.md`, and
 `review-2026-09-05-0835.md`, cross-checked against the current code.
 
-- **Retention automation deployment status is genuinely unsettled** — see §5.4 in full;
-  this is the single largest open item and the one place this document declines to give
-  a confident yes/no.
+- **Retention automation is fully deployed and live, verified directly against GCP on
+  2026-09-06** — see §5.4 in full. This is no longer an open item: the GCS lifecycle
+  rule, both Firestore TTL policies, the `juno-trial-anon-cleanup` Cloud Run Job, and
+  its Cloud Scheduler trigger are all confirmed live, and the Scheduler trigger has
+  already fired for real. The one remaining gap is that the Scheduler job and its IAM
+  binding are not created by any checked-in workflow, so a from-scratch deploy would not
+  recreate them.
 - **`MAX_TEXT_BYTES=350,000` is enforced globally, not trial-only — an unresolved product
   decision.** This cap was added specifically for the trial's Firestore document-size
   safety (care-plan-pipeline.md §2.8), but `validate_extracted_text_length` is shared
@@ -685,9 +703,11 @@ Sourced from `.dev/trial-simplify/edge-case-review-backend-2026-09-05.md`,
 - **`juno-api` deploys at `min-instances=1` on every automatic trial deploy, not `0`
   as D7 claims "with no exceptions"** (§8) — the primary deploy path
   (`backend/cloudbuild.yaml`, invoked from `deploy.yml`) was never updated when the
-  rollback-only version of this same bug was fixed; verified directly in the current
-  file, not sourced from any planning doc (none of the reviewed `.dev/` documents
-  mention this instance of the issue).
+  rollback-only version of this same bug was fixed. Verified two ways: directly in the
+  current `cloudbuild.yaml`, and directly against live GCP on 2026-09-06
+  (`juno-api`'s live `minScale` annotation is `1`,
+  `.dev/trial-simplify/gcp-verification-2026-09-06.md`) — this is a live production
+  fact, not just a latent deploy-config issue.
 - **Rate limiting is a fixed window, not sliding** (§4) — accepted, documented
   limitation, not a bug.
 - **The rate limiter fails open** (§4) — a deliberate availability choice, not a gap, but

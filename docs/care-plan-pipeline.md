@@ -729,14 +729,15 @@ called out as such.
   design, but it means a term detected in the source document that the LLM rewrote away
   entirely will not appear in the final glossary even though it was in the original
   note.
-- **Retention automation for the trial (Firestore native TTL, the anonymous-user
-  cleanup Cloud Run Job) is described in the planning docs as not yet deployed as of
-  the last recorded status in `.dev/trial-simplify/README.md`** — the GCS lifecycle
-  rule half is recorded as done, but the Firestore TTL and Cloud Scheduler pieces are
-  recorded as outstanding, owner-only infrastructure steps. This document cannot verify
-  live infrastructure state from the code alone; treat the `.dev/` README as the source
-  of truth for what has actually been deployed, and confirm current status
-  independently before relying on it.
+- **Retention automation for the trial is fully deployed and live, verified directly
+  against GCP on 2026-09-06** (`.dev/trial-simplify/gcp-verification-2026-09-06.md`):
+  the GCS lifecycle rule, both Firestore native TTL policies
+  (`care_plan_outputs.expires_at`, `trial_rate_limits.expires_at`), the
+  `juno-trial-anon-cleanup` Cloud Run Job, and its daily Cloud Scheduler trigger are
+  all confirmed live, and the Scheduler trigger has already fired a real,
+  successfully-completed invocation in production. This supersedes
+  `.dev/trial-simplify/README.md`'s "not yet deployed" status for this item, which was
+  stale. See `docs/trial-architecture.md` §5.4 for the full breakdown.
 - **Legal-copy review is explicitly called out in the planning docs as the one item
   gating trial launch** — unrelated to the pipeline itself, noted here only because it
   appears in the same planning documents this review consulted.
