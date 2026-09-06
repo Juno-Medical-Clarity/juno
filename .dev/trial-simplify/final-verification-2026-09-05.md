@@ -142,12 +142,21 @@ Confirmed accurate and complete, cross-checked against
    codified as an idempotent step in `deploy.yml` (`Apply GCS lifecycle rule for trial
    uploads`, in the `deploy-backend` job) so it's re-applied on every production deploy.
    `services/retention.py` needed no changes per the backend review.
-2. **Anonymous-account cleanup automation** — the Cloud Run Job
+2. ~~**Anonymous-account cleanup automation** — the Cloud Run Job
    (`juno-trial-anon-cleanup`), its Cloud Scheduler trigger, and the IAM bindings for it
-   are not deployed (Cloud Scheduler API itself is disabled on the project per the
-   backend review's cited verification). `scripts/cleanup_anonymous_users.py` exists and
-   is unit-tested (`tests/scripts/test_cleanup_anonymous_users.py`, passing) but nothing
-   invokes it in production yet.
+   are not deployed.~~ **[DONE, 2026-09-06]** — the Cloud Run Job is live at
+   `RETENTION_DRY_RUN=false`, the `juno-scheduler-invoker` service account holds
+   `roles/run.invoker` on the Job, and the daily `juno-trial-anon-cleanup-daily` Cloud
+   Scheduler trigger (`0 4 * * *`, `Etc/UTC`, OAuth-authenticated) is `ENABLED`.
+   Verified end-to-end with a forced `gcloud scheduler jobs run`: the scheduler attempt
+   returned HTTP 200, a new Job execution completed successfully, and its log line read
+   `scanned=6 matched=0 deleted=0 errors=0 dry_run=False` — zero eligible accounts, so
+   nothing was deleted. Both the `RETENTION_DRY_RUN=false` value and a create-or-update
+   step for the Scheduler trigger are now codified idempotently in `deploy.yml`; the
+   one-time SA + IAM binding creation remains documented manual setup.
+   `scripts/cleanup_anonymous_users.py` (unit-tested,
+   `tests/scripts/test_cleanup_anonymous_users.py`) is now genuinely invoked in
+   production.
 3. Only the Firestore native TTL policies (`care_plan_outputs.expires_at`,
    `trial_rate_limits.expires_at`) are confirmed active — this is the one retention
    backstop that *is* live.
@@ -158,32 +167,33 @@ Confirmed accurate and complete, cross-checked against
    component reads it) — not a regression, just an acknowledged gap per the model's own
    comment ("a future trial UI can show..."). Not blocking.
 
-Net effect: until item 2 is also done (item 1, the GCS lifecycle rule, is now done as of
-2026-09-06), an abandoned/never-completed trial upload's anonymous Firebase Auth account
-persists indefinitely, contradicting the "no-retention trial" framing given to users. The
-raw-document exposure item 1 backstopped is now closed. This was already flagged BLOCKING
-in the backend edge-case review and was **deliberately not addressed in code** (it's pure
-infra/deploy work) — I confirm that characterization is accurate for the remaining
-anonymous-account cleanup item as of this verification pass.
+Net effect: **[UPDATED, 2026-09-06]** item 2 is now also done (item 1, the GCS
+lifecycle rule, was already done as of 2026-09-06) — both retention backstops for an
+abandoned/never-completed trial upload are now live, closing the gap in the
+"no-retention trial" framing given to users. This was flagged BLOCKING in the backend
+edge-case review and, at the time of this verification pass, was deliberately not
+addressed in code (pure infra/deploy work); that gap has since been closed by the
+owner's manual go-live plus this session's CI codification and end-to-end verification.
 
 ---
 
 ## 6. Release verdict
 
-**NOT RELEASE-READY — one infra blocker, one product decision needed before shipping the code as-is.**
+**[UPDATED, 2026-09-06] Infra blocker cleared — one product decision and legal-copy
+review remain before shipping the code as-is.**
 
 - **Code quality / test coverage: READY.** All three suites are 100% green
   (684 / 103 / 189 tests), `tsc`, lint, and both frontend builds are clean, and every
   integration point I could independently verify (upload limits per route, text-length
   enforcement, `clear_input_text` lifecycle, worker lease/retry safety, the 413 path,
   the `VITE_API_PROCESSING_URL` guard) behaves correctly and matches its stated intent.
-- **Blocker (infra, owner-only):** anonymous-account cleanup automation (edge-case
-  review BLOCKING #3) is still not deployed. **The GCS lifecycle rule half of that same
-  item is now done (2026-09-06)** — applied to prod and codified in `deploy.yml` (see §5
-  item 1). Until the cleanup automation is also deployed, the "no-retention trial" claim
-  made to users is not actually true for an abandoned trial's anonymous Firebase Auth
-  account. This is not a code fix — it's a deployment step that must happen before
-  public launch, same as it was flagged before today's work.
+- **[RESOLVED, 2026-09-06] Former blocker (infra, owner-only):** anonymous-account
+  cleanup automation (edge-case review BLOCKING #3) is now deployed and verified
+  end-to-end — Cloud Run Job live at `RETENTION_DRY_RUN=false`, Cloud Scheduler trigger
+  `ENABLED` and firing successfully via OAuth, a forced run confirming
+  `scanned=6 matched=0 deleted=0`. Combined with the GCS lifecycle rule (already done
+  2026-09-06, §5 item 1), the "no-retention trial" claim made to users is now actually
+  true for an abandoned trial's anonymous Firebase Auth account.
 - **Decision needed (product, not a blocker to *some* release, but should be resolved
   before or shortly after shipping):** confirm whether narrowing the main app's
   effective text-input ceiling from 500,000 characters to ~350,000 UTF-8 bytes (an
@@ -192,6 +202,6 @@ anonymous-account cleanup item as of this verification pass.
 - **Legal-copy review** (pre-existing gate, unchanged) is still outstanding and remains
   the other pre-launch gate per the existing README.
 
-If the cleanup job is deployed (the GCS lifecycle rule is already done, 2026-09-06; or the
-owner explicitly accepts shipping without the cleanup job for now) and the main-app
-text-limit question is resolved one way or the other, this branch is ready to merge.
+With the cleanup-automation infra blocker now cleared, this branch is ready to merge once
+the main-app text-limit question is resolved one way or the other and the legal-copy
+review is complete.

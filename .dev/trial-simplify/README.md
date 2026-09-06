@@ -250,13 +250,21 @@ Verified to exist in GCP/Firebase, ahead of any SP5/SP4 code landing:
   first attempt failed with `ERROR: (gcloud.firestore.fields.ttls.update) Exactly one
   of (--disable-ttl | [--enable-ttl : --expiration-offset]) must be specified.` — the
   missing `--enable-ttl` flag has since been corrected in SP5 §8 (and §4.1).
-- The `juno-trial-anon-cleanup` Cloud Run Job.
-- The Cloud Scheduler trigger for that Job — blocked on the Cloud Scheduler API not yet
-  being enabled on the project.
 
 **Since done:**
 - The GCS lifecycle rule on the `care_plan_trial/` prefix — applied to prod and
   codified as an idempotent step in `deploy.yml` (2026-09-06).
+- **[GO-LIVE, 2026-09-06]** The `juno-trial-anon-cleanup` Cloud Run Job, flipped to
+  `RETENTION_DRY_RUN=false`; the `juno-scheduler-invoker` service account and its
+  `roles/run.invoker` binding on the Job; and the daily
+  `juno-trial-anon-cleanup-daily` Cloud Scheduler trigger (`0 4 * * *`, `Etc/UTC`,
+  OAuth-authenticated via that service account). Verified end-to-end with a forced
+  `gcloud scheduler jobs run`: the scheduler attempt returned HTTP 200, a new Job
+  execution ran with `dry_run=False`, and logged `scanned=6 matched=0 deleted=0
+  errors=0` — zero eligible accounts, so nothing was deleted. The Scheduler
+  create-or-update step is now codified idempotently in `deploy.yml`; the one-time SA
+  + IAM binding creation remains a documented manual step (see the comment above that
+  step in `deploy.yml`).
 
 ---
 
@@ -299,15 +307,21 @@ status of each individual PRD's own manual-steps section for cross-reference.
 7. **Confirm the Firebase service account has the Firebase Authentication Admin IAM
    role** (SP5 §8#1) — assumed already granted; grant only if a dry-run surfaces a
    permission error (checklist item 3c).
-8. **Flip `RETENTION_DRY_RUN` from `true` to `false`** on the cleanup Cloud Run Job (SP5
-   §8#2), only after reviewing at least one real dry-run's log output and confirming the
-   scanned/matched counts look right. Deliberately manual, not automated (checklist
-   item 4).
+8. **[DONE, 2026-09-06]** Flipped `RETENTION_DRY_RUN` from `true` to `false` on the
+   cleanup Cloud Run Job (SP5 §8#2), after reviewing the dry-run's log output
+   (`scanned=6 matched=0`) and confirming the counts looked right. Codified in
+   `deploy.yml`'s "Deploy anonymous-user-cleanup Cloud Run Job" step so a future deploy
+   no longer reverts it to dry-run.
 9. **Run the two one-time `gcloud firestore fields ttls update` commands** and confirm
    both report `ACTIVE` (SP5 §8#3, checklist item 2b).
-10. **Run the one-time `gcloud run jobs deploy` and Cloud Scheduler/IAM setup** for the
-    anonymous-cleanup job (SP5 §8#4, checklist items 2c-2d) — `deploy.yml` keeps it in
-    sync automatically afterward.
+10. **[DONE, 2026-09-06]** Ran the one-time `gcloud run jobs deploy` and Cloud
+    Scheduler/IAM setup for the anonymous-cleanup job (SP5 §8#4, checklist items
+    2c-2d) — verified live (scheduler `ENABLED`, `0 4 * * *` `Etc/UTC`, OAuth via
+    `juno-scheduler-invoker`, `roles/run.invoker` bound) and end-to-end with a forced
+    run (HTTP 200, execution succeeded, `dry_run=False`, `scanned=6 matched=0
+    deleted=0`). `deploy.yml` now keeps the Cloud Run Job config and the Scheduler
+    trigger both in sync automatically on every deploy; the SA + IAM binding remain
+    one-time manual setup, documented in `deploy.yml`.
 11. **Optional: set up the two recommended Cloud Monitoring alerting policies** (SP5
     §8#6) — console-only, not blocking launch.
 12. **[DONE, 2026-09-06]** GCS lifecycle rule on the `care_plan_trial/` prefix (SP5
@@ -401,13 +415,15 @@ none.** Every §9 item across SP1–SP5 is now either `[RESOLVED]` or `[DEFERRED
 
 All five sub-projects plus SP6's optimizations and today's edge-case-review fixes are
 implemented and independently re-verified (see "Implementation status" above and
-`final-verification-2026-09-05.md`). Most of what remains is owner-only: legal-copy
-review and approval (D8, the launch gate), SP5's remaining live-GCP setup (in particular
-anonymous-account cleanup automation — still not deployed, the one BLOCKING item today's
-verification pass reconfirmed; the GCS lifecycle rule half is now done, 2026-09-06), and
-the production cutover per SP4
-PRD §4.5. See `review-2026-09-05-0835.md`'s "Still requires you" section for the
-consolidated, exact-command version of that list.
+`final-verification-2026-09-05.md`). **[GO-LIVE, 2026-09-06]** SP5's anonymous-account
+cleanup automation — the one BLOCKING item the prior verification pass had flagged — is
+now deployed and verified end-to-end (Cloud Run Job live at `RETENTION_DRY_RUN=false`,
+Cloud Scheduler trigger `ENABLED` and firing successfully, a forced run confirmed
+`scanned=6 matched=0 deleted=0`); the GCS lifecycle rule half was already done. What
+remains is owner-only: legal-copy review and approval (D8, the launch gate) and the
+production cutover per SP4 PRD §4.5. See `review-2026-09-05-0835.md`'s "Still requires
+you" section for the consolidated, exact-command version of that list (now partially
+superseded by this go-live for the anon-cleanup items).
 
 One item is **not** owner-only and needs a product decision before or shortly after
 shipping: `final-verification-2026-09-05.md` §3 found that the new
